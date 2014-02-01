@@ -1,0 +1,51 @@
+syntax: glob
+
+# NeL cache
+*.packed_sheets
+
+# Ryzom save
+save_shard
+last_loaded_char.bin
+*.binprim
+*.string_cache
+graphs_output
+default_c
+
+# Log dump files
+report_refused
+report_failed
+exception_catched
+*.stat
+*.log
+log.txt
+
+# Mac OS X garbage
+.DS_Store
+
+# Wine garbage
+.windows-serial
+
+# Ryzom server garbage
+aes_alias_name.cfg
+aes_nagios_report.txt
+aes_state.txt
+*.launch_ctrl
+*.state
+*.start_count
+
+# Vim and kwrite cache
+*~
+
+# Python cache
+*.pyd
+*.pyc
+
+# Sync garbage
+.SyncID
+.SyncIgnore
+.SyncArchive
+
+#Dumps
+*.dmp
+
+
