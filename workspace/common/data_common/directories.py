@@ -67,7 +67,12 @@ PacsPrimExportSourceDirectories += [ "ecosystems/lacustre/pacs_prim" ]
 PacsPrimExportSourceDirectories += [ "ecosystems/primes_racines/pacs_prim" ]
 
 
+# *** BUILD DIRECTORIES FOR THE BUILD PIPELINE ***
+PacsPrimListBuildDirectory = CommonPath + "/pacs_prim_list"
+
+
 # *** INSTALL DIRECTORIES IN THE CLIENT DATA ***
 
 # Common data install directory
+PacsPrimListInstallDirectory = CommonName
 CopyInstallDirectory = CommonName
