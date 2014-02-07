@@ -305,17 +305,17 @@ COMBAT_PARRY_SPECTATOR(entity actor, entity defender)
 
 COMBAT_MISS_ATTACKER(entity e)
 {
-	combat_parry_attacker	[&MISM& Vous avez raté $e.da$ $e$.]
+	combat_miss_attacker	[&MISM& Vous avez raté $e.da$ $e$.]
 }
 
 COMBAT_MISS_DEFENDER(entity e)
 {
-	combat_parry_defender	[&MIS&$e.da$ $e$ vous a raté.]
+	combat_miss_defender	[&MIS&$e.da$ $e$ vous a raté.]
 }
 
 COMBAT_MISS_SPECTATOR(entity actor, entity defender)
 {
-	combat_parry_spectator	[&SYS&$actor.ia$ $actor$ a raté  $defender.ia$ $defender$.]
+	combat_miss_spectator	[&SYS&$actor.ia$ $actor$ a raté  $defender.ia$ $defender$.]
 }
 
 // damage shield related

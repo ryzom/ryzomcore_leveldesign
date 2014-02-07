@@ -907,24 +907,54 @@ COMBAT_LOSE_STA_TARGET (entity e, int i)
 
 }
 
-// HASH_VALUE 6C07AD9570D680FF
+/* OLD VALUE : [
+	COMBAT_MISS_ATTACKER (entity e)
+	{
+			combat_parry_attacker	[&MISM& Vous avez raté $e.da$ $e$.]
+	
+	}
+	
+
+] */
+// Clause 0 : identifier changed.
+// HASH_VALUE FA9A714B0E35EB47
 COMBAT_MISS_ATTACKER (entity e)
 {
-		combat_parry_attacker	[&MISM& Vous avez raté $e.da$ $e$.]
+		combat_miss_attacker	[&MISM& Vous avez raté $e.da$ $e$.]
 
 }
 
-// HASH_VALUE 1338A0A24074CE66
+/* OLD VALUE : [
+	COMBAT_MISS_DEFENDER (entity e)
+	{
+			combat_parry_defender	[&MIS&$e.da$ $e$ vous a raté.]
+	
+	}
+	
+
+] */
+// Clause 0 : identifier changed.
+// HASH_VALUE 94447E095028939A
 COMBAT_MISS_DEFENDER (entity e)
 {
-		combat_parry_defender	[&MIS&$e.da$ $e$ vous a raté.]
+		combat_miss_defender	[&MIS&$e.da$ $e$ vous a raté.]
 
 }
 
-// HASH_VALUE 3089B6C331E8E842
+/* OLD VALUE : [
+	COMBAT_MISS_SPECTATOR (entity actor, entity defender)
+	{
+			combat_parry_spectator	[&SYS&$actor.ia$ $actor$ a raté  $defender.ia$ $defender$.]
+	
+	}
+	
+
+] */
+// Clause 0 : identifier changed.
+// HASH_VALUE 29BAC69453042BD5
 COMBAT_MISS_SPECTATOR (entity actor, entity defender)
 {
-		combat_parry_spectator	[&SYS&$actor.ia$ $actor$ a raté  $defender.ia$ $defender$.]
+		combat_miss_spectator	[&SYS&$actor.ia$ $actor$ a raté  $defender.ia$ $defender$.]
 
 }
 
@@ -970,17 +1000,37 @@ COMBAT_PARRY_SPECTATOR (entity actor, entity defender)
 
 }
 
-// HASH_VALUE 3A6736D8361AF90C
+/* OLD VALUE : [
+	COMBAT_PROC_VAMPIRISM_ATTACKER (entity defender, int drain)
+	{
+			combat_proc_vampirism_spectators_n	[&ISE&Déclenchement de l'effet vol de vie, votre arme vous donne $drain$ des points de vie de $defender.da$ $defender$.]
+	
+	}
+	
+
+] */
+// Clause 0 : identifier changed.
+// HASH_VALUE D2B8E2CE971ACF37
 COMBAT_PROC_VAMPIRISM_ATTACKER (entity defender, int drain)
 {
-		combat_proc_vampirism_spectators_n	[&ISE&Déclenchement de l'effet vol de vie, votre arme vous donne $drain$ des points de vie de $defender.da$ $defender$.]
+		combat_proc_vampirism_attackers_n	[&ISE&Déclenchement de l'effet vol de vie, votre arme vous donne $drain$ des points de vie de $defender.da$ $defender$.]
 
 }
 
-// HASH_VALUE 502E4552E71E4FC0
+/* OLD VALUE : [
+	COMBAT_PROC_VAMPIRISM_DEFENDER (entity attacker, int drain)
+	{
+			combat_proc_vampirism_spectators_n	[&ISE&L'arme de $attacker.da$ $attacker$ lui donne $drain$ de vos points de vie.]
+	
+	}
+	
+
+] */
+// Clause 0 : identifier changed.
+// HASH_VALUE BD4FE2D630F8371F
 COMBAT_PROC_VAMPIRISM_DEFENDER (entity attacker, int drain)
 {
-		combat_proc_vampirism_spectators_n	[&ISE&L'arme de $attacker.da$ $attacker$ lui donne $drain$ de vos points de vie.]
+		combat_proc_vampirism_defenders_n	[&ISE&L'arme de $attacker.da$ $attacker$ lui donne $drain$ de vos points de vie.]
 
 }
 
@@ -15030,10 +15080,20 @@ PROGRESS_DEATH_PENALTY_PAYBACK (int i, skill s, int j, int k)
 
 }
 
-// HASH_VALUE 08471ED16EEEBED3
+/* OLD VALUE : [
+	PROGRESS_FREE_TRIAL_LIMIT (skill s)
+	{
+			progress_normal_gain_0	[&XP&Vous ne gagnez pas d'expérience en '$s$' car vous avez atteint la limite de la FREETRIAL. Pour progresser davantage dans cette compétence vous devez vous abonner.]
+	
+	}
+	
+
+] */
+// Clause 0 : identifier changed.
+// HASH_VALUE EF3B3CD841ADD4EA
 PROGRESS_FREE_TRIAL_LIMIT (skill s)
 {
-		progress_normal_gain_0	[&XP&Vous ne gagnez pas d'expérience en '$s$' car vous avez atteint la limite de la FREETRIAL. Pour progresser davantage dans cette compétence vous devez vous abonner.]
+		progress_free_trial_limit	[&XP&You gain no experience in '$s$' because you have reached the free trial limit. To progress further in this skill you must upgrade your account.]
 
 }
 
@@ -15583,26 +15643,57 @@ RRP_GAIN (int ptsNow, int sessionType, int ptsTotal)
 
 }
 
-// HASH_VALUE F0B8FC08FCC1911B
+/* OLD VALUE : [
+	RRP_GAIN2 (int ptsNow, int sessionType, int nbPlayers, int time)
+	{
+		(sessionType = 0) 
+			rrp_gain_novice	[&XP&You earn $ptsNow$ Novice RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	
+		(sessionType = 1) 
+			rrp_gain_apprentice	[&XP&You earn $ptsNow$ Apprentice RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	
+		(sessionType = 2) 
+			rrp_gain_confirmed	[&XP&You earn $ptsNow$ Confirmed RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	
+		(sessionType = 3) 
+			rrp_gain_advanced	[&XP&You earn $ptsNow$ Advanced RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	
+		(sessionType = 4) 
+			rrp_gain_expert	[&XP&You earn $ptsNow$ Expert RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	
+		(sessionType = 5) 
+			rrp_gain_master	[&XP&You earn $ptsNow$ Master RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	
+	}
+	
+
+] */
+// Clause 0 : identifier changed.
+// Clause 1 : identifier changed.
+// Clause 2 : identifier changed.
+// Clause 3 : identifier changed.
+// Clause 4 : identifier changed.
+// Clause 5 : identifier changed.
+// HASH_VALUE B7B0DCC083B1E395
 RRP_GAIN2 (int ptsNow, int sessionType, int nbPlayers, int time)
 {
 	(sessionType = 0) 
-		rrp_gain_novice	[&XP&You earn $ptsNow$ Novice RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+		rrp_gain2_novice	[&XP&You earn $ptsNow$ Novice RRP (with $nbPlayers$ players after $time$ seconds of activity)]
 
 	(sessionType = 1) 
-		rrp_gain_apprentice	[&XP&You earn $ptsNow$ Apprentice RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+		rrp_gain2_apprentice	[&XP&You earn $ptsNow$ Apprentice RRP (with $nbPlayers$ players after $time$ seconds of activity)]
 
 	(sessionType = 2) 
-		rrp_gain_confirmed	[&XP&You earn $ptsNow$ Confirmed RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+		rrp_gain2_confirmed	[&XP&You earn $ptsNow$ Confirmed RRP (with $nbPlayers$ players after $time$ seconds of activity)]
 
 	(sessionType = 3) 
-		rrp_gain_advanced	[&XP&You earn $ptsNow$ Advanced RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+		rrp_gain2_advanced	[&XP&You earn $ptsNow$ Advanced RRP (with $nbPlayers$ players after $time$ seconds of activity)]
 
 	(sessionType = 4) 
-		rrp_gain_expert	[&XP&You earn $ptsNow$ Expert RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+		rrp_gain2_expert	[&XP&You earn $ptsNow$ Expert RRP (with $nbPlayers$ players after $time$ seconds of activity)]
 
 	(sessionType = 5) 
-		rrp_gain_master	[&XP&You earn $ptsNow$ Master RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+		rrp_gain2_master	[&XP&You earn $ptsNow$ Master RRP (with $nbPlayers$ players after $time$ seconds of activity)]
 
 }
 

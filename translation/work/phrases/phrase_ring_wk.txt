@@ -16,12 +16,12 @@ RRP_GAIN(int ptsNow, int sessionType, int ptsTotal)
 
 RRP_GAIN2(int ptsNow, int sessionType, int nbPlayers, int time)
 {
-	(sessionType = 0) rrp_gain_novice	[&XP&You earn $ptsNow$ Novice RRP (with $nbPlayers$ players after $time$ seconds of activity)]
-	(sessionType = 1) rrp_gain_apprentice	[&XP&You earn $ptsNow$ Apprentice RRP (with $nbPlayers$ players after $time$ seconds of activity)]
-	(sessionType = 2) rrp_gain_confirmed	[&XP&You earn $ptsNow$ Confirmed RRP (with $nbPlayers$ players after $time$ seconds of activity)]
-	(sessionType = 3) rrp_gain_advanced	[&XP&You earn $ptsNow$ Advanced RRP (with $nbPlayers$ players after $time$ seconds of activity)]
-	(sessionType = 4) rrp_gain_expert	[&XP&You earn $ptsNow$ Expert RRP (with $nbPlayers$ players after $time$ seconds of activity)]
-	(sessionType = 5) rrp_gain_master	[&XP&You earn $ptsNow$ Master RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	(sessionType = 0) rrp_gain2_novice	[&XP&You earn $ptsNow$ Novice RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	(sessionType = 1) rrp_gain2_apprentice	[&XP&You earn $ptsNow$ Apprentice RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	(sessionType = 2) rrp_gain2_confirmed	[&XP&You earn $ptsNow$ Confirmed RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	(sessionType = 3) rrp_gain2_advanced	[&XP&You earn $ptsNow$ Advanced RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	(sessionType = 4) rrp_gain2_expert	[&XP&You earn $ptsNow$ Expert RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	(sessionType = 5) rrp_gain2_master	[&XP&You earn $ptsNow$ Master RRP (with $nbPlayers$ players after $time$ seconds of activity)]
 }
 
 RRP_BONUS(int ptsBonus, int sessionType, int ptsTotal)

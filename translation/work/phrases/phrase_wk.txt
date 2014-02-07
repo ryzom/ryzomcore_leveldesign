@@ -671,12 +671,12 @@ XP_CATALYSER_CONSUME(int i, int j)
 
 COMBAT_PROC_VAMPIRISM_ATTACKER(entity defender, int drain)
 {
-	combat_proc_vampirism_spectators_n [&ISE&Déclenchement de l'effet vol de vie, votre arme vous donne $drain$ des points de vie de $defender.da$ $defender$.]
+	combat_proc_vampirism_attackers_n [&ISE&Déclenchement de l'effet vol de vie, votre arme vous donne $drain$ des points de vie de $defender.da$ $defender$.]
 }
 
 COMBAT_PROC_VAMPIRISM_DEFENDER(entity attacker, int drain)
 {
-	combat_proc_vampirism_spectators_n [&ISE&L'arme de $attacker.da$ $attacker$ lui donne $drain$ de vos points de vie.]
+	combat_proc_vampirism_defenders_n [&ISE&L'arme de $attacker.da$ $attacker$ lui donne $drain$ de vos points de vie.]
 }
 
 COMBAT_PROC_VAMPIRISM_SPECTATORS(entity attacker, entity defender, int drain)

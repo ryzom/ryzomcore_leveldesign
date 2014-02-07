@@ -33,7 +33,7 @@ PROGRESS_DEATH_PENALTY_COMPLETE()
 
 PROGRESS_FREE_TRIAL_LIMIT(skill s)
 {
-	progress_normal_gain_0 [&XP&You gain no experience in '$s$' because you have reached the free trial limit. To progress further in this skill you must upgrade your account.]
+	progress_free_trial_limit [&XP&You gain no experience in '$s$' because you have reached the free trial limit. To progress further in this skill you must upgrade your account.]
 }
 
 //*PROGRESS_MUCH_GAIN(skill s)
