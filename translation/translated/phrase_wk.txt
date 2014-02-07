@@ -455,6 +455,42 @@ CHARGE_GOT (dyn_string_id id)
 
 }
 
+// HASH_VALUE 21D2F06FB30EFA3A
+CHIANG_1 ()
+{
+			[&bbl&The freedom to run the program, for any purpose (freedom 0).]
+
+}
+
+// HASH_VALUE 7609BC467E25E790
+CHIANG_2 ()
+{
+			[&bbl&The freedom to study how the program works, and change it to make it do what you wish (freedom 1). Access to the source code is a precondition for this.]
+
+}
+
+// HASH_VALUE FA377248CE23559D
+CHIANG_3 ()
+{
+			[&bbl&The freedom to redistribute copies so you can help your neighbor (freedom 2).]
+
+}
+
+// HASH_VALUE F4FEAD9FEA803723
+CHIANG_4 ()
+{
+			[&bbl&The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.]
+
+}
+
+// HASH_VALUE 2CEA49D63B5696E2
+CHIANG_WELCOME ()
+{
+			[Greetings Freesoftware Fellow,\n
+			I'm the welcomer on this Ryzom Core shard. This server is here to do some test, tweak and hack on the source code. Happy Hacking!]
+
+}
+
 // HASH_VALUE AAB0EDFE15B088FD
 COMBAT_ACTOR_CRITICAL_HIT (entity e)
 {
@@ -22687,6 +22723,20 @@ WEAPONS_ONLY_CAN_BEEN_ENCHANTED ()
 WEAPONS_ONLY_CAN_BEEN_RECHARGED ()
 {
 		weapons_only_can_been_recharged	[&CHK&Only weapons can be recharged.]
+
+}
+
+// HASH_VALUE 2C740B4DAB9A9E5F
+WELCOME_RYZOM_CORE_DESC ()
+{
+			[Kill yubo and earn money!]
+
+}
+
+// HASH_VALUE 5831C8655A767F6D
+WELCOME_RYZOM_CORE_TITLE ()
+{
+			[Need Money?]
 
 }
 
