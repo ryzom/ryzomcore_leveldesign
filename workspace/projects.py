@@ -46,6 +46,7 @@ ProjectsToProcess += [ "common/fonts" ]
 ProjectsToProcess += [ "common/gamedev" ]
 ProjectsToProcess += [ "common/leveldesign" ]
 ProjectsToProcess += [ "common/data_common" ]
+ProjectsToProcess += [ "common/data_shard" ]
 ProjectsToProcess += [ "common/exedll" ]
 ProjectsToProcess += [ "common/cfg" ]
 
@@ -65,7 +66,10 @@ ProjectsToProcess += [ "continents/indoors" ] # Note: must be after other contin
 
 
 InstallShardDataDirectories = [ ]
+InstallShardDataDirectories += [ "data_shard" ]
+InstallShardDataDirectories += [ "data_common" ]
 
+InstallShardDataCollisionsDirectory = "data_shard/collisions"
 InstallShardDataCollisionsDirectories = [ ]
 InstallShardDataCollisionsDirectories += [ "newbieland_ai" ]
 InstallShardDataCollisionsDirectories += [ "newbieland_ig" ]

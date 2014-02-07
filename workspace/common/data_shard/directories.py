@@ -29,7 +29,7 @@
 from buildsite import *
 
 # *** COMMON NAMES AND PATHS ***
-CommonName = "data_common"
+CommonName = "data_shard"
 CommonPath = "common/" + CommonName
 
 
@@ -37,8 +37,8 @@ CommonPath = "common/" + CommonName
 
 # Copy dir directories
 CopyDirectSourceDirectories = [ ]
-CopyDirectSourceDirectories += [ DataCommonDirectory ]
-CopyDirectSourceDirectories += [ LeveldesignDataCommonDirectory ]
+CopyDirectSourceDirectories += [ DataShardDirectory ]
+CopyDirectSourceDirectories += [ LeveldesignDataShardDirectory ]
 CopyDirectSourceFiles = [ ]
 
 
@@ -58,22 +58,7 @@ CopyDatabaseSourceDirectories = [ ]
 CopyDatabaseSourceFiles = [ ]
 
 
-# *** SOURCE DIRECTORIES IN THE EXPORT/BUILD ***
-
-# Pacs prim list source directories
-PacsPrimExportSourceDirectories = [ ]
-PacsPrimExportSourceDirectories += [ "ecosystems/desert/pacs_prim" ]
-PacsPrimExportSourceDirectories += [ "ecosystems/jungle/pacs_prim" ]
-PacsPrimExportSourceDirectories += [ "ecosystems/lacustre/pacs_prim" ]
-PacsPrimExportSourceDirectories += [ "ecosystems/primes_racines/pacs_prim" ]
-
-
-# *** BUILD DIRECTORIES FOR THE BUILD PIPELINE ***
-PacsPrimListBuildDirectory = CommonPath + "/pacs_prim_list"
-
-
 # *** INSTALL DIRECTORIES IN THE CLIENT DATA ***
 
 # Common data install directory
-PacsPrimListInstallDirectory = CommonName
 CopyInstallDirectory = CommonName
