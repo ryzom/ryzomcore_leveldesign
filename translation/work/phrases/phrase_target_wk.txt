@@ -1,0 +1,21 @@
+
+////////////////////////////////////////////////////////////////////////////////////
+// sentences related to target slection
+////////////////////////////////////////////////////////////////////////////////////
+TARGET_NEW(entity e)
+{
+	target_new	[&SYS&You target $e.ia$ $e$.]
+}
+TARGET_SELF()
+{
+	target_self	[&SYS&You target yourself.]
+}
+TARGET_NONE()
+{
+	target_none	[&SYS&You now have no target .]
+}
+
+INVALID_TARGET()
+{
+	[&CHK&Invalid Target.]
+}

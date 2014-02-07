@@ -1,0 +1,115 @@
+﻿/** this file contains test phrases only. */
+
+TEST_ITEM (item i)
+{
+	[Voici le nom de l'item $i$]
+}
+TEST_PLAYER(player p)
+{
+	[Voici le nom du player : '$p$']
+}
+TEST_ENTITY(entity e)
+{
+	[Voici le nom de l'entité : '$e$']
+}
+TEST_SBRICK (sbrick b)
+{
+	[Voici le nom de la sbrick $b$]
+}
+TEST_ECO (ecosystem e)
+{
+	[Voici le nom de l'ecosystem $e$]
+}
+TEST_CREATURE_MODEL(creature_model c)
+{
+	[Le nom de la creature est '$c$']
+}
+TEST_RACE (race r)
+{
+	[Voici le nom de la race $r$]
+}
+TEST_ROLE (role r)
+{
+	[Voici le nom du role $r$]
+}
+TEST_SKILL (skill s)
+{
+	[Voici le nom du skill $s$]
+}
+TEST_SELF ()
+{
+	[Le nom self est $self$]
+}
+TEST_DYN_STRING (dyn_string_id m)
+{
+	[La chaine dynamique est "$m$"]
+}
+TEST_STRING (string_id m)
+{
+	[La chaine dynamique est $m$]
+}
+TEST_BODYPART(bodypart b)
+{
+	[The bodypart is $b$]
+}
+TEST_SCORE(score s)
+{
+	[The score is $s$]
+}
+TEST_SPHRASE(sphrase s)
+{
+	[The sphrase name is $s$]
+}
+TEST_CHARAC(characteristic c)
+{
+	[The characteristic is $c$]
+}
+TEST_damagetype (damagetype d)
+{
+	[The damage type is $d$]
+}
+
+TEST_BOT_NAME (bot_name b)
+{
+	[The bot name is '$b$']
+}
+
+TEST_POWER_TYPE (powertype p)
+{
+	[The power type is '$p$']
+}
+
+TEST_LITERAL (literal s)
+{
+	[The literal string is '$s$']
+}
+
+TEST_TITLE (title t)
+{
+	[The title is '$t$']
+}
+
+TEST_BIG_PHRASE ()
+{
+	[En la komenco Dio kreis la 
+		ielon kaj la teron. Kaj la tero 
+		estis senforma kaj dezerta, kaj 
+		mallumo estis super la abismo; 
+		{break}
+		kaj la spirito de Dio 
+		vebis super la akvo. \n
+		Kaj Dio diris: Estu lumo; kaj fari
+		is lumo. 
+		{break}
+		Kaj Dio vidis la lumon, ke 
+		i estas bona; kaj Dio apartigis 
+		la lumon de la mallumo. 
+		Kaj Dio nomis la lumon Tago, kaj 
+		la mallumon Li nomis Nokto. 
+		{break}
+		Kaj estis vespero, kaj estis mateno, unu tago.
+		Kaj Dio diris: Estu firma
+		o inter la akvo, kaj 
+		i apartigu akvon de akvo.]
+}
+

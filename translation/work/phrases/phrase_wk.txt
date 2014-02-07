@@ -1,0 +1,812 @@
+
+LITERAL ( literal lit )
+{
+	[$lit$]
+}
+
+SHOPKEEPER_NO_SELL(bot b)
+{
+	shopkeeper_no_sell	[I have nothing to sell right now, come back later.]
+}
+
+
+TOO_ENCUMBERED()
+{ 
+	too_encumbered [&CHK& You are too encumbered.]
+}
+
+ROOM_TOO_ENCUMBERED ()
+{ 
+	[&CHK& Your appartment is too encumbered.]
+}
+
+ANIMAL_PACKER_TOO_ENCUMBERED ()
+{ 
+	[&CHK& Your mektoub is too encumbered.]
+}
+
+TELEPORT_USED ( int i )
+{
+	[&SYS& You will be teleported in $i$ seconds.]
+}
+
+TELEPORT_CANCELED()
+{
+	[&SYS&Teleportation has been canceled.]
+}
+
+ABANDON_TEAM_MISSION_REFUSED()
+{
+	abandon_team_mission_refused [&CHK& only leaders can abandon a team mission.]
+}
+
+NO_ACTION_WHILE_EQUIPPING()
+{
+	[&CHK&you cannot use an action while equipping.]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// item decay messages
+////////////////////////////////////////////////////////////////////////////////////
+ITEM_UNSPOILED(item item)
+{
+	[&ITMF&Your $item$ is unspoiled.]
+}
+ITEM_WORN_STATE_1(item item)
+{
+	[&ITMF&Your $item$ is slightly worned.]
+}
+ITEM_WORN_STATE_2(item item)
+{
+	[&ITMF&Your $item$ is moderately worned.]
+}
+ITEM_WORN_STATE_3(item item)
+{
+	[&ITMF&Your $item$ is heavily worned. You should start to think about replacing it.]
+}
+ITEM_WORN_STATE_4(item item)
+{
+	[&ITMF&Your $item$ is nearly completely worned. You should replace it as soon as possible.]
+}
+ITEM_WORNED(item item)
+{
+	[&ITMF&Your $item$ is now completely worned and you can no longer progress by using it. You should find a new one as soon as possible.]
+}
+ITEM_WORNED_DESTROYED(item item)
+{
+	[&ITMF&Your $item$ was so worned it has been destroyed.]
+}
+
+GMOTD (literal s)
+{
+	// Guilde Message Of The Day
+	[&MTD&Guild message of the day: $s$]
+}
+
+MOTD (literal s)
+{
+	// Message Of The Day
+	[&MTD&MOTD: $s$]
+}
+
+BROADCAST (literal s)
+{
+	// broadcast message
+	[&BC&$s$]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// generic system messages
+////////////////////////////////////////////////////////////////////////////////////
+CHARACTER_SAVED (player p)
+{
+	[&SYS&"$p$" has been saved.]
+}
+
+WHO_GM_INTRO()
+{
+	[&SYS&Afficher les CSRs en ligne : ]
+}
+
+WHO_INVISIBLE_GM_INTRO()
+{
+	[&SYS&Displaying invisible online gamemasters and guides :.]
+}
+
+WHO_SGM_LIST( player p )
+{
+	[&SYS&<senior GM>$p$.]
+}
+WHO_GM_LIST( player p )
+{
+	[&SYS&<GM>$p$.]
+}
+WHO_VG_LIST( player p )
+{
+	[&SYS&<veteran Guide>$p$.]
+}
+WHO_SG_LIST( player p )
+{
+	[&SYS&<senior Guide>$p$.]
+}
+WHO_G_LIST( player p )
+{
+	[&SYS&<Guide>$p$.]
+}
+
+WHO_REGION_INTRO(place pl)
+{
+	[&SYS&Displaying online characters in region "$pl$"]
+}
+
+WHO_REGION_LIST( player p )
+{
+	[&SYS&$p$.]
+}
+
+WHO_NO_ANSWER ()
+{
+	[&SYS&No character found.]
+}
+
+
+TELL_PLAYER_AFK( player p )
+{
+	[&SYS&$p$ is "away from keybord".]
+}
+
+TELL_PLAYER_UNKNOWN( literal name )
+{
+	[&SYS&$name$ is unknown or not online. Your message cannot be delivered.]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// compass related messages
+////////////////////////////////////////////////////////////////////////////////////
+NEW_COMPASS ()
+{
+	new_compass [&SYS&New target added to the compass.]
+}
+
+COMPASS_BOT (bot b)
+{
+	[$b$]
+}
+COMPASS_PLACE (place p)
+{
+	[$p$]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// CSR related messages
+////////////////////////////////////////////////////////////////////////////////////
+CSR_BAD_TARGET ()
+{
+	[&CHK&<CSR COMMAND ERROR> Invalid command target.]
+}
+
+CSR_PENDING_CHARACTER_LOG ()
+{
+	[&SYS&<CSR COMMAND PENDING> Target not found, your command are fowarded to pending system for later execution when your target are login.]
+}
+
+CSR_NOT_SUMMONED ()
+{
+	[&CHK&<CSR COMMAND ERROR> command target was not previously summoned.]
+}
+
+CSR_NAME_EXISTS ()
+{
+	[&CHK&<CSR COMMAND ERROR> new name already attributed. Please try another one.]
+}
+
+CSR_BAD_GUILD ()
+{
+	[&CHK&<CSR COMMAND ERROR> Invalid guild.]
+}
+
+CSR_NOT_ATTACKABLE ()
+{
+	[&CHK&<CSR COMMAND ERROR> Cant kill non attackable bot.]
+}
+
+CSR_ROOT_ENDS ()
+{
+	[&SPL&The root effect placed on you by a GM has vanished.]
+}
+
+CSR_ALREADY_ROOTED ( player p )
+{
+	[&CHK&<CSR COMMAND ERROR>$p$ is already rooted by a GM command.]
+}
+CSR_ROOT_OK( player p )
+{
+	[&SYS&$p$ is now rooted.]
+}
+CSR_IS_ROOTED_BY( player p )
+{
+	[&SPL&$p$ has rooted you through a gamemaster power.]
+}
+
+CSR_UNROOT_OK( player p )
+{
+	[&SYS&$p$ was successfully unrooted.]
+}
+CSR_IS_UNROOTED_BY( player p )
+{
+	[&SPL&$p$ has successfully unrooted you.]
+}
+CSR_NOT_ROOTED( player p )
+{
+	[&CHK&<CSR COMMAND ERROR>$p$ is not rooted.]
+}
+
+CSR_HAS_MISSION ()
+{
+	[&CHK&<CSR COMMAND ERROR>Cant monitor another player mission if you have a mission.]
+}
+
+CSR_BAD_MISSION ()
+{
+	[&CHK&<CSR COMMAND ERROR>The chosen mission is invalid.]
+}
+
+CSR_BAD_RIGHTS()
+{
+	[&CHK&<CSR COMMAND ERROR>You dont have the right to affect this player.]
+}
+
+CSR_BAD_NAME()
+{
+	[&CHK&<CSR COMMAND ERROR>The name you are trying to assign to this player is invalid or is already taken.]
+}
+
+CSR_UNKNOWN_PLAYER (literal p)
+{
+	[&CHK&<CSR COMMAND ERROR> Unknown player: $p$.]
+}
+
+CSR_OFFLINE_PLAYER (literal p)
+{
+	[&CHK&<CSR COMMAND ERROR> $p$ is offline.]
+}
+
+CSR_GUILD_NOT_MEMBER (literal p, string_id guild)
+{
+	[&CHK&<CSR COMMAND ERROR> $p$ is not a member of the guild '$guild$'.]
+}
+
+CSR_GUILD_UNKNOWN_GRADE ()
+{
+	[&CHK&<CSR COMMAND ERROR> Unknown grade.]
+}
+
+CSR_GUILD_ALREADY_HAS_GRADE (literal p)
+{
+	[&CHK&<CSR COMMAND ERROR> $p$ already has this grade.]
+}
+
+CSR_GUILD_MAX_GRADE_COUNT (int i)
+{
+	[&CHK&<CSR COMMAND ERROR> Maximum count for this grade ($i$) has been reached.]
+}
+
+CSR_GUILD_ALREADY_MEMBER (player p)
+{
+	[&CHK&<CSR COMMAND ERROR> $p$ already is member of a guild.]
+}
+
+CSR_GUILD_NEW_GRADE (literal p, literal grade)
+{
+	[&SPL&$p$ now has grade $grade$.]
+}
+
+CSR_GUILD_NEW_MEMBER (player p, string_id guild)
+{
+	[&SPL&$p$ now is a member of guild '$guild$'.]
+}
+
+CSR_GUILD_MEMBER_LIST (literal p, literal grade)
+{
+	[&SYS&<CSR> $p$: $grade$.]
+}
+
+CSR_START_EVENT (literal e)
+{
+	[&SYS&<CSR> event '$e$' has been started.]
+}
+
+CSR_STOP_EVENT (literal e)
+{
+	[&SYS&<CSR> event '$e$' has been stoped.]
+}
+
+CSR_CLEAR_EVENT_FACTION (player p)
+{
+	[&SYS&<CSR> $p$ now has no event faction.]
+}
+
+CSR_GET_EVENT_FACTION (player p, event_faction ef)
+{
+	[&SYS&<CSR> $p$ is in event faction '$ef$'.]
+}
+
+CSR_UNKNOWN_RESPAWN_POINT ()
+{
+	[&CHK&<CSR> Unknown respawn point.]
+}
+
+CSR_MUTE_OK(player p)
+{
+	[&SYS&Vous avez rendu muet le joueur $p$.]
+}
+
+CSR_IS_MUTED_BY(player p)
+{
+	[&SYS&CSR $p$ vous a rendu muet.]
+}
+
+CSR_UNMUTE_OK(player p)
+{
+	[&SYS&Vous avez rendu la parole au joueur $p$.]
+}
+
+CSR_IS_UNMUTED_BY(player p)
+{
+	[&SYS&CSR $p$ vous a rendu la parole.]
+}
+
+CSR_NOT_MUTED(player p)
+{
+	[&SYS&Le joueur $p$ n'est pas muet, vous ne pouvez donc pas lui rendre la parole.]
+}
+
+CSR_MUTE_ENDS()
+{
+	[&SYS&Vous n'êtes plus muet.]
+}
+
+CSR_UNIVERSE_MUTE_OK(player p)
+{
+	[&SYS&Vous avez rendu muet le joueur $p$ sur le channel universe.]
+}
+
+CSR_IS_UNIVERSE_MUTED_BY(player p)
+{
+	[&SYS&CSR $p$ vous a rendu muet sur le channel universe.]
+}
+
+CSR_UNIVERSE_UNMUTE_OK(player p)
+{
+	[&SYS&Vous avez rendu la parole au joueur $p$ sur le channel universe.]
+}
+
+CSR_IS_UNIVERSE_UNMUTED_BY(player p)
+{
+	[&SYS&CSR $p$ vous a rendu la parole sur le channel universe.]
+}
+
+CSR_NOT_UNIVERSE_MUTED(player p)
+{
+	[&SYS&Le joueur $p$ n'est pas muet sur le channel universe, vous ne pouvez donc pas lui rendre la parole.]
+}
+
+CSR_UNIVERSE_MUTE_ENDS()
+{
+	[&SYS&Vous n'êtes plus muet sur le channel universe.]
+}
+
+OPS_TEAM_MAX_SIZE_REACHED ()
+{
+	[&CHK&The team has reached its size limit and cannot accept anymore players.]
+}
+
+EGS_CANT_SELL_ANYTHING ()
+{
+	[&SYS&I have nothing of interest for you to buy, sorry but come back later.]
+}
+
+EGS_CANT_CONSTRUCT_ANYTHING ()
+{
+	[&CHK&Vous ne pouvez plus rien construire.]
+}
+
+OPS_WELCOME ()
+{
+	[&AROUND&Welcome to Ryzom !]
+}
+
+EGS_USE_LAST_AMMO ()
+{
+	[&CHKCB&You have used your last ammo.]
+}
+
+OPS_NOT_ENOUGHT_SEED () 
+{
+	[&CHK&You are not rich enough to buy this.]
+}
+
+EGS_NOT_ENOUGHT_SP ()
+{
+	[&CHK&You do not have enough skill points to buy this.]
+}
+
+OPS_PACT_GAIN_U (int i) 
+{
+	[&SYS&You have won a survival pact of level $i$.]
+}
+
+EGS_NOT_ENOUGH_AMMO ()
+{
+	[&CHKCB&This strategy needs more ammunition.]
+}
+
+BS_NO_AMMO ()
+{
+	[&CHKCB&This weapon needs ammo.]
+}
+
+COMBAT_TARGET_DEAD ()
+{
+	[&CHKCB&You cannot attack a corpse.]
+}
+
+BS_TARGET_TOO_FAR_OR ()
+{
+	[&CHKCB&Your target is too far away or you are not facing it.]
+}
+
+BS_TARGET_TOO_FAR ()
+{
+	[&CHKCB&Your target is too far away.]
+}
+
+EGS_TOO_EXPENSIVE_STAMINA ()
+{
+	[&CHKCB&You do not have enough stamina for this action.]
+}
+
+EGS_TOO_EXPENSIVE_HP ()
+{
+	[&CHKCB&You do not have enough hp to pay this action cost.]
+}
+
+EGS_TOO_EXPENSIVE_FOCUS ()
+{
+	[&CHKCB&You do not have enough focus to pay this action cost.]
+}
+
+BS_ITEM_INCOMPATIBLE ()
+{
+	[&CHKCB&This formula or action phrase is incompatible with the item in your hand.]
+}
+
+EGS_OPENING_SUCCESS ()
+{
+	[&SPLM&You successfully take the opening.]
+}
+
+EGS_FORAGE_INTERRUPTED ()
+{
+	[&CHK&Your foraging action has been interrupted.]
+}
+
+EGS_QUARTER_INTERRUPTED ()
+{
+	[&CHK&Your quartering action has been interrupted.]
+}
+
+EGS_ACTOR_CASTING_INTERUPT ()
+{
+	[&MISM&The incantation of your spell is broken.]
+}
+
+EGS_HARVEST_CORPSE_TOO_FAR ()
+{
+	[&CHK&The corpse you are trying to skin is too far away, get closer.]
+}
+
+EGS_CANNOT_ATTACK_IN_WATER ()
+{
+	[&CHKCB&You cannot attack while you are near water.]
+}
+
+OPS_HARVEST_MP_IN_PROGRESS_E (entity entity)
+{
+	[&CHK&You are already harvesting raw material on $entity$.]
+}
+
+MIS_FAME_GAIN (faction faction)
+{
+	[&TSK&You gain fame with $faction.da$ $faction$]
+}
+
+NO_ACTION_WHILE_SWIMMING()
+{
+	no_action_while_swimming	[&CHK&You cannot use actions while you are near water.]
+}
+
+NO_ACTION_WHEN_SITTING()
+{
+	no_action_when_sitting	[&CHK&You cannot use actions when sitting.]
+}
+
+NO_ACTION_WHILE_INTANGIBLE()
+{
+	no_action_while_intangible	[&CHK&You cannot use actions while you are intangible.]
+}
+
+NO_ACTION_WHILE_MOUNTED()
+{
+	no_action_while_mounted		[&CHK&You cannot use actions while you are mounted.]
+}
+
+NO_ACTION_WHILE_TRANSACTION()
+{
+	no_action_while_transaction	[&CHK&You cannot use actions while you have a bot chat or a transaction in progress.]
+}
+
+MAGIC_CAN_ONLY_CAST_ON_PLAYERS()
+{
+	magic_can_only_cast_on_players	[&CHKCB&You can only use this spell on other players.]
+}
+
+KILLED_BY_GOO()
+{
+	[&CHKCB&You have been killed by GOO !.]
+}
+
+SUFFER_GOO_DAMAGE()
+{
+	[&CHKCB&You suffer GOO damage!.]
+}
+
+DISCONNECT_CANCELED()
+{
+	[&CHK&Disconnection canceled.]
+}
+
+OPERATION_OFFLINE()
+{
+	[&CHK&Le joueur n'existe pas ou n'est pas actuellement connecté.]
+}
+
+NON_DROPABLE_ITEM()
+{
+	[&CHK&You cannot drop this item.]
+}
+
+CRAFT_NEED_CRAFTING_TOOL()
+{
+	[&CHK&You need appropriate tool to craft this item.]
+}
+
+
+EGS_COSMETIC_SAME_HAIR_COLOR()
+{
+	[&CHK&You cannot buy this hair color : this is your current one.]
+}
+
+EGS_COSMETIC_SAME_HAIR()
+{
+	[&CHK&You cannot buy this hair cut : this is your current one.]
+}
+
+EGS_COSMETIC_SAME_TATOO()
+{
+	[&CHK&You cannot buy this tatoo : this is your current one.]
+}
+
+TRADE_FAME_TOO_LOW(bot b)
+{
+	[&CHK&$b$ refuses to trade with you because of your bad reputation.]
+}
+
+ALREADY_TELEPORTING()
+{
+	[&CHK&You are already using a teleport ticket.]
+}
+
+TP_FORBIDEN_IN_RING_INSTANCE()
+{
+	[&CHK&Vous ne pouvez pas utiliser un ticket de TP pendant une aventure Ring ou une session d'edition Ring.]
+}
+
+MOUNT_CANT_WHILE_TP()
+{
+	[&CHK&Vous ne pouvez pas monter sur votre monture pendant une téléportation.]
+}
+
+ONLY_ENCHANTED_ITEMS_CAN_BE_RECHARGED()
+{
+	[&CHK&Only enchanted items can be recharged.]
+}
+
+ROLL_DICE(entity e, int min, int max, int roll)
+{
+	[$e.da$ $e$ a fait $roll$ sur un tirage entre $min$ et $max$.]
+}
+
+CONSUMABLE_OVERDOSE_TIMER(item item, int m, int s)
+{
+    (m>0)
+	[&CHK&Vous ne pouvez pas utiliser votre $item$ avant $m$ minutes et $s$ secondes.]
+    [&CHK&Vous ne pouvez pas utiliser votre $item$ avant $s$ secondes.]
+}
+
+CONSUMABLE_CONSUME_ITEM_BEGIN(item item)
+{
+	[Vous utilisez votre $item$.]
+}
+
+CONSUMABLE_NOT_STAND_UP()
+{
+	[&CHK&Vous ne pouvez pas utiliser cet objet en étant debout.]
+}
+
+CONSUMABLE_CANCEL()
+{
+	[&SYS&L'action est annulée et l'objet n'est pas consommé.]
+}
+
+XP_CATALYSER_NO_MORE_ACTIVE()
+{
+	[&SYS&Vous n'avez plus de catalyseur d'expérience actif.]
+}
+
+XP_CATALYSER_ACTIVE(int i)
+{
+	[&SYS&Vous activez un catalyseur d'expérience de niveau $i$.]
+}
+
+XP_CATALYSER_PROGRESS_NORMAL_GAIN(skill s, int i, int j)
+{
+	[&XP&You gain $i$($j$) experience points in '$s$'.]
+}
+
+XP_CATALYSER_CONSUME(int i, int j)
+{
+	[&SYS&Vous consommez $i$ catalyseurs d'expérience de niveau $j$.]
+}
+
+COMBAT_PROC_VAMPIRISM_ATTACKER(entity defender, int drain)
+{
+	combat_proc_vampirism_spectators_n [&ISE&Déclenchement de l'effet vol de vie, votre arme vous donne $drain$ des points de vie de $defender.da$ $defender$.]
+}
+
+COMBAT_PROC_VAMPIRISM_DEFENDER(entity attacker, int drain)
+{
+	combat_proc_vampirism_spectators_n [&ISE&L'arme de $attacker.da$ $attacker$ lui donne $drain$ de vos points de vie.]
+}
+
+COMBAT_PROC_VAMPIRISM_SPECTATORS(entity attacker, entity defender, int drain)
+{
+	combat_proc_vampirism_spectators_n [&ISE&L'arme de $attacker.da$ $attacker$ lui donne $drain$ des points de vie de $defender.da$ $defender$.]
+}
+
+ISE_MAGIC_DIVINE_INTERVENTION()
+{
+	[&ISE&Déclenchement de l'effet intervention divine, les crédits de votre sort ne sont pas consommés.]
+}
+
+ISE_MAGIC_SHOOT_AGAIN()
+{
+	[&ISE&Déclenchement de l'effet feu gratuit, votre prochain sort sera incanté en un temps minimum.]
+}
+
+// ISE2 is for an additional display on the center of the screen (as there is no flying text for craft)
+ISE_CRAFT_ADD_STAT_BONUS(score s, int param)
+{
+	[&ISE2&Déclenchement de l'effet bonus de stat, l'item que vous avez créé a un bonus de $s$ de $param$.]
+}
+
+// ISE2 is for an additional display on the center of the screen (as there is no flying text for craft)
+ISE_CRAFT_ADD_LIMIT(int param)
+{
+	[&ISE2&Déclenchement de l'effet limites étendues, les limites de l'item que vous avez créé sont étendues de $param$%.]
+}
+
+ISE_FORAGE_ADD_RM(int param)
+{
+	[&ISE&Déclenchement de l'effet bonus de récolte, vous avez récolté $param$% de ressources supplémentaires sur cette action.]
+}
+
+ISE_FORAGE_NO_RISK()
+{
+	[&ISE&Déclenchement de l'effet source sans risque, une des sources que vous avez trouvées ne peux pas exploser.]
+}
+
+MAGIC_YOU_BREAK_ENEMY_CAST(entity e)
+{
+	[&SYS&Vous interrompez $e.da$ $e$.]
+}
+
+OUTPOST_LEAVE_ZONE(outpost o)
+{
+	[&SYS&Vous quittez l'avant poste $o.name$.]
+}
+
+GUILD_CANT_INVITE_OUTPOST_ENEMY()
+{
+	[&CHK&Vous ne pouvez pas inviter un ennemi d'avant-poste dans votre guilde]
+}
+MENU_OUTPOST()
+{
+	[Consulter l'enseigne d'avant-poste]
+}
+
+MISSION_GOAL_STEP_ANY_OR(dyn_string_id id)
+{
+	[Soit $id$]
+}
+
+MENU_RING_ENTRY()
+{
+	[Choisir sa destination Ring]
+}
+
+UNIVERSE_NOT_AVAILABLE_ON_RING()
+{
+	[Le canal univers est réservé aux éditeurs et animateurs Ring.]
+}
+
+RING_ANI()
+{
+	[Ring Channel ani.]
+}
+RING_LEA()
+{
+	[Ring Channel lea.]
+}
+RING_ARI()
+{
+	[Ring Channel ari.]
+}
+RING_CHO()
+{
+	[Ring Channel cho.]
+}
+RING_SEA()
+{
+	[Ring Channel sea.]
+}
+RING_CSR()
+{
+	[Ring Channel CSR]
+}
+RING_TOO()
+{
+	[Ring Channel too]
+}
+RING_TRE()
+{
+	[Ring Channel tre.]
+}
+YES()
+{
+	[Oui.]
+}
+NO()
+{
+	[Non.]
+}
+
+SHUTDOWN_WARNING(int delay)
+{
+	[&SYS&The shard will be shutdown in $delay$ seconds, please disconnect ASAP.]
+}
+
+AMMO_BUYING_QUANTITY_TOO_LOW(int magazineSize)
+{
+	[&CHK&Ce type de munition ne peut être acheté que par un ou plusieurs lots de $magazineSize$ munitions.]
+}
+
+AMMO_SELLING_QUANTITY_TOO_LOW(int magazineSize)
+{
+	[&CHK&Ce type de munition ne peut être vendu que par un ou plusieurs lots de $magazineSize$ munitions.]
+}
+
+TRAITRE_CORSAIRE_ARRIVE()
+{
+	[Que faites-vous ici ?! Voleur ! Laissez cette perle là où elle est !]
+}

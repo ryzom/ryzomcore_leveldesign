@@ -1,0 +1,354 @@
+
+
+// // Obsolete stuff
+//
+//GUILD_OUTPOST_VICTORY()
+//{
+//	[&SYS&Your guild won an outpost after a bloody war.]
+//}
+//
+//GUILD_OUTPOST_DEFEAT()
+//{
+//	[&SYS&Your guild was humiliated by a tribe and could not gain the aimed outpost!]
+//}
+//
+//GUILD_OUTPOST_PEACE_WON()
+//{
+//	[&SYS&Your guild successfully took control of an outpost!]
+//}
+//GUILD_DECLARE_WAR()
+//{
+//	[&SYS&Your guild declared war to the tribe owning the aimed outpost.]
+//}
+//GUILD_OUTPOST_CONTROL ()
+//{
+//	[&TSK&Your guild gained control of an outpost]
+//}
+//GUILD_OUTPOST_BUILDING ()
+//{
+//	[&ITM&Your guild gained an outpost building]
+//}
+
+OUTPOST_EVENT_Challenged()
+{
+	[&SYS&The outpost is challenged.]
+}
+OUTPOST_EVENT_OwnerVanished()
+{
+	[&SYS&The owner of the outpost has vanished.]
+}
+OUTPOST_EVENT_AttackerVanished()
+{
+	[&SYS&The attacker of the outpost has vanished.]
+}
+OUTPOST_EVENT_TimerEnd()
+{
+	[&SYS&The time is elapsed in the outpost.]
+}
+OUTPOST_EVENT_AttackerGiveUp()
+{
+	[&SYS&The attacker of the outpost gave up.]
+}
+OUTPOST_EVENT_OwnerGiveUp()
+{
+	[&SYS&The owner of the outpost gave up.]
+}
+OUTPOST_EVENT_AllSquadsKilled()
+{
+	[&SYS&All the squads of the outpost have been killed.]
+}
+
+OUTPOST_STATE_Peace()
+{
+	[&SYS&The outpost is now peaceful.]
+}
+OUTPOST_STATE_WarDeclaration()
+{
+	[&SYS&A conflict is now declared in the outpost.]
+}
+OUTPOST_STATE_Attack()
+{
+	[&SYS&The outpost is now sustaining an attack.]
+}
+OUTPOST_STATE_WarTransition()
+{
+	[&SYS&A counterattack will begin soon in the outpost...]
+}
+OUTPOST_STATE_CounterAttack()
+{
+	[&SYS&The outpost is now sustaining a counterattack.]
+}
+
+OUTPOST_OWNER(string_id str)
+{
+	[&SYS&$str$ owns the outpost now.]
+}
+
+OUTPOST_ATTACKER(string_id str)
+{
+	[&SYS&$str$ attacks the outpost now.]
+}
+
+NEED_MORE_GUILD_MONEY()
+{
+	[&CHK&Your guild does not have enough money.]
+}
+
+OUTPOST_CANT_PAY_SQUAD_WAGE(string_id str)
+{
+	[&CHK&$str$ n'a pas assez d'argent pour payer le salaire de l'escouade. Celle-ci quitte l'avant-poste !]
+}
+
+OUTPOST_CANT_FREE_LAST_SQUAD()
+{
+	[&CHK&Vous ne pouvez pas supprimer la dernière escouade sinon l'avant-poste sera perdu.]
+}
+
+GUILD_CHALLENGE_OUTPOST_ALREADY_ATTACKED()
+{
+	[&CHK&The outpost is already under attack.]
+}
+
+GUILD_GIVEUP_OUTPOST_ATTACK_NOT_ATTACKED()
+{
+	[&CHK&The outpost is not under attack.]
+}
+
+OUTPOST_SQUAD_RECRUITED()
+{
+	[&SYS&A new squad was recruited.]
+}
+
+OUTPOST_VERSION_NOT_SYNC()
+{
+	[&CHK&Votre action sur l'outpost a été rejetée car une autre action était en cours.]
+}
+
+OUTPOST_EDITING_CONCURRENCY_ISSUE(player p)
+{
+	[&CHK&$p$ est en train d'éditer l'avant-poste, réessayez dans un moment.]
+}
+
+OUTPOST_NO_MORE_IN_CONFLICT()
+{
+	[&SYS&Vous n'êtes plus engagé dans un conflit d'outpost.]
+}
+
+OUTPOST_IN_CONFLICT()
+{
+	[&SYS&Vous participez au conflit sur cet outpost.]
+}
+
+OUTPOST_CANT_PARTICIPATE()
+{
+	[&CHK&Vous êtes banni de cet outpost, vous ne pouvez pas participer au conflit en cours.]
+}
+
+OUTPOST_CANT_PARTICIPATE_ATTACK()
+{
+	[&CHK&Vous êtes banni de cet outpost, vous ne pouvez pas participer à l'attaque en cours.]
+}
+
+OUTPOST_CANT_PARTICIPATE_DEFENSE()
+{
+	[&CHK&Vous êtes banni de cet outpost, vous ne pouvez pas participer la defense de celui-ci.]
+}
+
+OUTPOST_PLAYER_BANISHED_ATTACK()
+{
+	[&SYS&Vous venez d'être banni de l'attack de cet outpost.]
+}
+
+OUTPOST_PLAYER_BANISHED_DEFENSE()
+{
+	[&SYS&Vous venez d'être banni de la defense de cet outpost.]
+}
+
+OUTPOST_GUILD_BANISHED_ATTACK()
+{
+	[&SYS&Votre guilde vient d'être banni de l'attaque de cet outpost.]
+}
+
+OUTPOST_GUILD_BANISHED_DEFENSE()
+{
+	[&SYS&Votre guilde vient d'être banni de la defense de cet outpost.]
+}
+
+OUTPOST_CANNOT_BUY_SQUADS_A(int n)
+{
+	[&CHK&$n$ escouades n'ont pas pu être achetées et ont été remplacées par des gratuites.]
+}
+
+OUTPOST_CANNOT_BUY_SQUADS_B()
+{
+	[&CHK&L'escouade n'a pas pu être achetée et a été remplacée par une gratuite.]
+}
+
+// Si pas d'erreur inutile de le préciser (à priori).
+OUTPOST_ERROR_NONE()
+{
+	[]
+}
+
+OUTPOST_ERROR_INVALID_USER()
+{
+	[Votre id de joueur n'est pas valide (bug).]
+}
+
+OUTPOST_ERROR_INVALID_OUTPOST()
+{
+	[Cet outpost n'est pas valide (bug).]
+}
+
+OUTPOST_ERROR_NO_GUILD_MODULE()
+{
+	[Vous devez faire partie d'une guilde pour attaquer un outpost.]
+}
+
+OUTPOST_ERROR_BAD_GUILD_GRADE()
+{
+	[Vous n'avez pas le grade nécessaire au sein de votre guilde pour attaquer cet outpost.]
+}
+
+
+OUTPOST_ERROR_BAD_MEMBER_LEVEL()
+{
+	[Vous devez avoir un joueur en ligne dans la guilde d'un niveau et d'une ancienneté suffisante pour défier cet avant-poste. Le niveau requis ainsi que l'ancienneté dépendent du niveau de l'avant-poste.]
+}
+
+OUTPOST_ERROR_NOT_ENOUGH_MONEY()
+{
+	[Vous et votre guilde n'avez pas assez d'argent pour attaquer cet outpost.]
+}
+
+OUTPOST_ERROR_ALREADY_ATTACKED()
+{
+	[Cet outpost fait déjà l'objet d'une attaque.]
+}
+
+OUTPOST_ERROR_ALREADY_OWNED()
+{
+	[Vous possédez déjà cet outpost.]
+}
+
+OUTPOST_ERROR_TIME_PERIOD_ESTIMATION_CHANGED()
+{
+	[La période d'attaque estimée a changé depuis l'ouverture de la fenêtre.]
+}
+
+OUTPOST_ERROR_TOO_MANY_GUILD_OUTPOSTS()
+{
+	[Votre guilde ne peut pas acquérir plus d'avant-postes.]
+}
+
+OUTPOST_ERROR_UNKNOWN()
+{
+	[Erreur d'outpost inconnue (bug).]
+}
+
+// side: 0=owner, 1=attacker
+// guild_owner: 0=no (tribe owner), 1=yes (guild owner)
+OUTPOST_BCP_UNKNOWN_TITLE(outpost o, int side) { [Erreur : message d'outpost inconnu] }
+OUTPOST_BCP_UNKNOWN(outpost o, int side) { [Ce message ne devrait pas être visible. Merci de signaler ce bug.] }
+OUTPOST_BCM_UNKNOWN(outpost o, int side) { [&OSM&Erreur : message d'outpost inconnu.] }
+
+OUTPOST_BCM_ROUND_NEAR_END(outpost o, int side) { [&OSM&Le round va se terminer dans une minute.] }
+OUTPOST_BCM_ROUND_LOST(outpost o, int side) { [&OSM&Vous avez perdu le round.] }
+OUTPOST_BCM_ROUND_WON(outpost o, int side) { [&OSM&Vous avez gagné le round.] }
+OUTPOST_BCM_LAST_ROUND_LOST(outpost o, int side) { [&OSM&Vous avez perdu le round.] }
+OUTPOST_BCM_LAST_ROUND_WON(outpost o, int side) { [&OSM&Vous avez gagné le round.] }
+
+OUTPOST_BCP_ATTACK_FAILED_TITLE(outpost o, int side)
+{
+	(side = 0)
+		[Victoire !]
+	(side = 1)
+		[Echec !]
+	[Fin de l'attaque]
+}
+OUTPOST_BCP_ATTACK_FAILED(outpost o, int side)
+{
+	(side = 0)
+		[L'attaque de l'avant-poste $o.name$ a échoué, vous conservez le contrôle de l'outpost.]
+	(side = 1)
+		[L'attaque de l'avant-poste $o.name$ a échoué, votre tentive de prise de l'outpost a échoué.]
+	[L'attaque de l'outpost a échoué.]
+}
+OUTPOST_BCP_ATTACK_SUCCEEDED_TITLE(outpost o, int side)
+{
+	(side = 0)
+		[Echec !]
+	(side = 1)
+		[Victoire !]
+	[Fin de l'attaque]
+}
+OUTPOST_BCP_ATTACK_SUCCEEDED(outpost o, int side, int guild_owner)
+{
+	(guild_owner = 1)
+		[L'attaque de l'avant-poste $o.name$ a réussi, préparez vous pour la phase de défense.]
+	(guild_owner = 0 and side = 1)
+		[L'attaque de l'avant-poste $o.name$ a réussi, vous allez gagner le contrôle de l'outpost.]
+	[L'attaque de l'outpost a réussi.]
+}
+OUTPOST_BCP_DEFENSE_FAILED_TITLE(outpost o, int side)
+{
+	(side = 0)
+		[Echec !]
+	(side = 1)
+		[Victoire !]
+	[Fin de la défense]
+}
+OUTPOST_BCP_DEFENSE_FAILED(outpost o, int side)
+{
+	(side = 0)
+		[La défense de l'avant-poste $o.name$ a échoué, vous allez perdre le contrôle de l'outpost.]
+	(side = 1)
+		[La défense de l'avant-poste $o.name$ a échoué, vous allez gagner le contrôle de l'outpost.]
+	[La défense de l'outpost a échoué.]
+}
+OUTPOST_BCP_DEFENSE_SUCEEDED_TITLE(outpost o, int side)
+{
+	(side = 0)
+		[Victoire !]
+	(side = 1)
+		[Echec !]
+	[Fin de la défense]
+}
+OUTPOST_BCP_DEFENSE_SUCEEDED(outpost o, int side)
+{
+	(side = 0)
+		[La défense de l'avant-poste $o.name$ a réussi, vous conservez le contrôle de l'outpost.]
+	(side = 1)
+		[La défense de l'avant-poste $o.name$ a réussi, votre tentive de prise de l'outpost a échoué.]
+	[La défense de l'outpost a réussi.]
+}
+OUTPOST_BCP_ATTACK_ROUNDS_TITLE(outpost o, int side)
+{
+	[Début de la période d'attaque]
+}
+OUTPOST_BCP_ATTACK_ROUNDS(outpost o, int side)
+{
+	(side = 0)
+		[La période d'attaque contre votre avant-poste $o.name$ a commencé !]
+	[La période d'attaque contre l'avant-poste $o.name$ a commencé !]
+}
+OUTPOST_BCP_DEFENSE_ROUNDS_TITLE(outpost o, int side)
+{
+	[Début de la période de défense]
+}
+OUTPOST_BCP_DEFENSE_ROUNDS(outpost o, int side)
+{
+	(side = 0)
+		[La période de défense de votre avant-poste $o.name$ a commencé !]
+	[La période de défense de l'avant-poste $o.name$ a commencé !]
+}
+OUTPOST_BCP_WAR_DECLARED_TITLE(outpost o, int side)
+{
+	[La guerre est déclarée]
+}
+OUTPOST_BCP_WAR_DECLARED(outpost o, int side)
+{
+	(side = 0)
+		[La guerre est déclarée sur votre avant-poste $o.name$.]
+	[Votre guilde a déclaré la guerre à l'avant-poste $o.name$.]
+}

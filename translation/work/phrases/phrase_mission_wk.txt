@@ -1,0 +1,221 @@
+
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+
+
+MISSION_FAILED ()
+{
+	mission_failed	[&TSK&You failed in a mission.]
+}
+
+ABANDON_MISSION ()
+{
+	abandon_mission	[&TSK&You have abandonned a mission.]
+}
+
+// Mission message 
+
+REQ_LEADER_TO_ABANDON_MISSION ()
+{
+	[&CHK& You must be the leader of your team to abandon or finish a team mission.]
+}
+
+ABANDON_GROUP_MISSION ()
+{
+	[&SYS& The leader of your team has abandoned a team mission.]
+}
+
+MISSION_MAX_SOLO_REACHED ()
+{
+	[&CHK&You have already picked the maximum number of solo missions]
+}
+
+MISSION_MAX_GROUP_REACHED ()
+{
+	[&CHK&You have already picked the maximum number of group missions]
+}
+
+EGS_MISSION_SUCCESS ()
+{
+	[&TSK&You have completed a mission]
+}
+
+EGS_MISSION_STEP_SUCCESS ()
+{
+	[&TSK&You have finished a mission step]
+}
+
+EGS_TASK_ENCYCLO_SUCCESS ()
+{
+	[&TSK&Task successfull.Check your encyclopedia.]
+}
+
+EGS_UNLOCK_ENCYCLO ()
+{
+	[&TSK&Thema unlocked.Check your encyclopedia.]
+}
+
+MISSION_PREREQ_TEAM()
+{
+	[Vous devez être membre d'une équipe.]	
+}
+
+MISSION_PREREQ_TEAM_LEADER()
+{
+	[Vous devez être le chef de votre équipe.]	
+}
+
+MISSION_PREREQ_TEAM_SIZE(int n)
+{
+	[Votre équipe doit comporter au moins $n$ membres.]	
+}
+
+MISSION_PREREQ_NEED_ITEM_BAG(item item)
+{
+	[Vous devez posséder $item.ia$ $item$ dans votre sac.]
+}
+
+MISSION_PREREQ_NEED_ITEM_WORN(item item)
+{
+	[Vous devez être équipé avec $item.ia$ $item$.]
+}
+
+MISSION_PREREQ_SKILL_LEVEL(skill skill, int min, int max)
+{
+ (max >= 250)
+	[Votre niveau dans la compétence '$skill$' doit être supérieur à $min$.]
+ (min = 0)
+	[Votre niveau dans la compétence '$skill$' doit être inférieur à $max$.]
+
+    [Votre niveau dans la compétence '$skill$' doit être supérieur à $min$ et inférieur à $max$.]
+}
+
+MISSION_PREREQ_EVENT_FACTION (event_faction ef)
+{
+	[Your must be in event faction '$ef$'.]
+}
+
+MISSION_PREREQ_FAME_FACTION (faction f, int level)
+{
+	[Votre réputation auprès de la faction "$f$" doit être au moins égale à $level$.]
+}
+
+MISSION_PREREQ_KAMI ()
+{
+	[Votre réputation auprès des Kamis doit être supérieure à votre réputation auprès de la Karavan.]
+}
+
+MISSION_PREREQ_KARAVAN ()
+{
+	[Votre réputation auprès de la Karavan doit être supérieure à votre réputation auprès des Kamis.]
+}
+
+MISSION_PREREQ_SEASON_SPRING()
+{
+	[Cette mission n'est disponible qu'au printemps.]
+}
+MISSION_PREREQ_SEASON_SUMMER()
+{
+	[Cette mission n'est disponible qu'en été.]
+}
+MISSION_PREREQ_SEASON_AUTUMN()
+{
+	[Cette mission n'est disponible qu'en automne.]
+}
+MISSION_PREREQ_SEASON_WINTER()
+{
+	[Cette mission n'est disponible qu'en hiver.]
+}
+
+MISSION_PREREQ_ACTION(sbrick s)
+{
+	[Cette mission nécessite que vous connaissiez la stanza "$s$".]
+}
+
+MISSION_PREREQ_MISSION_DONE (dyn_string_id str)
+{
+	[Cette mission nécessite la réussite de la mission '$str$'.]
+}
+
+MISSION_PREREQ_MISSION_RUNNING (dyn_string_id str)
+{
+	[Cette mission nécessite la prise de la mission '$str$'.]
+}
+
+MISSION_PREREQ_MISSION_NOTDONE (dyn_string_id str)
+{
+	[Cette mission nécessite que la mission '$str$' ne soit pas accomplie.]
+}
+
+MISSION_PREREQ_MISSION_NOTRUNNING (dyn_string_id str)
+{
+	[Cette mission nécessite que la mission '$str$' ne soit pas en cours.]
+}
+
+MISSION_PREREQ_CAN_NO_LONGER_TAKE ()
+{
+	[Vous ne pouvez plus prendre cette mission.]
+}
+
+MISSION_PREREQ_TIMER (int days, int h, int m)
+{
+	(days > 0 )
+		mission_prereq_timer_dhm [Cette mission sera disponible dans $days$ jours, $h$ heures et $m$ minutes.]
+	(days = 0 & h > 0 )
+		mission_prereq_timer_hm	[Cette mission sera disponible dans $h$ heures et $m$ minutes.]
+
+	mission_prereq_timer_m	[Cette mission sera disponible dans $m$ minutes.]
+}
+
+MISSION_PREREQ_ALREADY_DONE()
+{
+	[Cette mission ne peut être prise qu'une seule fois.]
+}
+
+MISSION_PREREQ_MONO()
+{
+	[Cette mission ne peut être prise pour le moment, revenez plus tard.]
+}
+
+MISSION_PREREQ_ENCYCLO_ALL_DONE (dyn_string_id thema, dyn_string_id album)
+{
+	[Toutes les tâches rituelles relatives au thème "$thema$" dans l'album "$album$" doivent avoir été réussies.]
+}
+
+MISSION_PREREQ_TITLE (title title)
+{
+	[Vous devez afficher le titre "$title$".]
+}
+
+MISSION_ENTER_CRITITAL_PART_TIMEOUT(dyn_string_id str)
+{
+	[Vous n'avez pas répondu assez vite, vous etes maintenant en mode sommeil pour la mission $str$.]
+}
+
+MISSION_QUEUE_WAIT(int nbWaiters, int onlineWaiters, int days, int hours, int m)
+{
+	(nbWaiters = 0 & days > 0)
+		[Vous etes en tête de la file d'attente pour cette mission. Temps d'attende estimé : $days$ jours $hours$ heures et $m$ minutes.]
+	(nbWaiters = 0 & hours > 0)
+		[Vous etes en tête de la file d'attente pour cette mission. Temps d'attende estimé : $hours$ heures et $m$ minutes.]
+	(nbWaiters = 0)
+		[Vous etes en tête de la file d'attente pour cette mission. Temps d'attende estimé : $m$ minutes.]
+
+	(days>0)
+		[Il y a devant vous $nbWaiters$ personnes (dont $onlineWaiters$ online) dans la file d'attente pour cette mission. Temps d'attende estimé : $days$ jours $hours$ heures et $m$ minutes.]
+
+	(hours > 0)
+		[Il y a devant vous $nbWaiters$ personnes (dont $onlineWaiters$ online) dans la file d'attente pour cette mission. Temps d'attende estimé : $hours$ heures et $m$ minutes.]
+
+	[Il y a devant vous $nbWaiters$ personnes (dont $onlineWaiters$ online) dans la file d'attente pour cette mission. Temps d'attende estimé : $m$ minutes.]
+}
+
+MISSION_ENTER_CRITITAL_PART_DECLINE(dyn_string_id str)
+{
+	[Vous avez décliné la proposition, vous etes maintenant en mode sommeil pour la mission $str$.]
+}
+
+MISSION_ENTER_CRITITAL_PART_PROPOSAL(dyn_string_id str)
+{
+	[Voulez vous entrer dans la partie critique de la mission $str$ ?]
+}

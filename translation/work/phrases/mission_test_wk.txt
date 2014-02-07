@@ -1,0 +1,401 @@
+///////////// tests
+
+
+
+////TEST 1
+TEST_1_TITLE (bot b1, bot b2, player p )
+{
+	[TEST1 : mission de test de titres / description : Salut $p$, je suis $b1$ ( je suis aussi le mission_giver : $b2$ ). ]
+}
+
+TEST_1_DESC ( bot dummy, item i, place p, skill s, race r, sbrick sb, faction f, bot b, creature_model cm, sphrase sp )
+{
+	[ item "$i$" \n place "$p$" \n skill "$s$" \n race "$r$"\n sbrick "$sb$"\n faction "$f$"\n bot "$b$"\n creature_model "$cm$"\n sphrase "$sp$"]
+}
+
+TEST_1_TALK_TO ( bot b, player p )
+{
+	[Hey $b$! Je suis $p$. Je veux te parler.]
+}
+
+////TEST 2 
+TEST_2_TITLE (bot b)
+{
+	[TEST2 : jump /failure /end ]
+}
+
+TEST_2_DESC (bot dummy) 
+{
+	[TEST2 : ooo/ any /jump /failure /end ]
+}
+
+TEST_2_TALK_TO_1 ()
+{
+	[Il faut dire les 3 phrases pour avancer. 1ere phrase]
+}
+
+TEST_2_TALK_TO_2 ()
+{
+	[Il faut dire les 3 phrases pour avancer. 2eme phrase]
+}
+
+TEST_2_TALK_TO_3 ()
+{
+	[Il faut dire les 3 phrases pour avancer. 3eme phrase]
+}
+
+
+TEST_2_TALK_TO_4 ()
+{
+	[Il faut dire une des  3 phrases pour avancer. 1ere phrase]
+}
+
+TEST_2_TALK_TO_5 ()
+{
+	[Il faut dire une des 3 phrases pour avancer. 2eme phrase]
+}
+
+TEST_2_TALK_TO_6 ()
+{
+	[Il faut dire une des 3 phrases pour avancer. 3eme phrase]
+}
+
+TEST_2_TALK_TO_7 ()
+{
+	[retour au debut de la mission]
+}
+
+TEST_2_TALK_TO_8 ()
+{
+	[retour juste apres la premiere etape ( apres avoir dit les 3 phrases )]
+}
+
+TEST_2_TALK_TO_9 ()
+{
+	[dire ceci permet de ne jamais Ã©chouÃ© dans la mission mais de la recommencer en cas d'echec]
+}
+
+TEST_2_TALK_TO_10 ()
+{
+	[echec de la mission]
+}
+
+TEST_2_TALK_TO_11 ()
+{
+	[succes de la mission]
+}
+
+////TEST 3 
+TEST_3_AUTO ()
+{
+	[test de mission auto]
+}
+TEST_3_BOT_1 ()
+{
+	[cette mission ne doit pas apparaitre dans le journal. parle moi pour la finir.]
+}
+
+TEST_3_TALK_TO_1 ()
+{
+	[finir mission auto]
+}
+
+
+////TEST 4
+TEST_4_TITLE (bot b)
+{
+	[TEST4 : kill / target ]
+}
+
+TEST_4_DESC (bot dummy) 
+{
+	[Mission faite pour tester les objectifs de target / kill]
+}
+
+TEST_4_KILL_GROUP ()
+{
+	[ kill people in the group nearby ( green seed tribe ) ]
+}
+
+
+////TEST 5
+TEST_5_TITLE (bot b)
+{
+	[TEST5 : misc objectives 1]
+}
+
+TEST_5_DESC (bot dummy) 
+{
+	[ Mission faite pour tester des objectifs généraux ]
+}
+
+TEST_5_MISSION_DONE ()
+{
+	[ Complete the auto mission ]
+}
+
+////TEST 6
+TEST_6_TITLE (bot b)
+{
+	[TEST6 : misc objectives 2]
+}
+
+TEST_6_DESC (bot dummy) 
+{
+	[ Mission faite pour tester des objectifs généraux ]
+}
+
+TEST_6_TALK_TO () 
+{
+	[Test de talk to pour la mission TEST 6]
+}
+
+
+////TEST 7
+TEST_7_TITLE (bot b)
+{
+	[TEST7 : misc actions]
+}
+
+TEST_7_NEXT ()
+{
+	[TEST7 : tester l'action suivante]
+}
+
+TEST_7_CHAT ()
+{
+	[TEST7 : je te réponds]
+}
+
+TEST_7_DESC (bot dummy) 
+{
+	[ Mission faite pour tester les actions. A chaque fois que l'on parle au bot une nouvelle action est déclenchée. Liste des actions : recv_item\nlearn_action\nlearn_brick\nrecv_money : 10000\nrecv_fame : tribe_green_seed 1000\nbot_chat : tell\nbot_chat : say\nbot_chat : shout\nsystem message\nadd_compass_npc\nadd_compass_place\n ]
+}
+
+
+////TEST 10
+TEST_10_TITLE (bot b)
+{
+	[TEST10: dyn_chat / special items]
+}
+
+TEST_10_DESC (bot dummy) 
+{
+	[ Mission faite pour tester dyn chat , items spéciaux et changement de description. Global replay timer de 300 ticks ]
+}
+
+TEST_10_DYN () 
+{
+	[ Choisis une réponse il y en a 3 ]
+}
+TEST_10_A1 () 
+{
+	[ retour au début de la mission(1) ]
+}
+TEST_10_A2 () 
+{
+	[ retour au début de la mission(2) ]
+}
+TEST_10_A3() 
+{
+	[ fin de la mission.]
+}
+
+TEST_10_B1 () 
+{
+	[ retour au début de la mission(1) ]
+}
+TEST_10_B2 () 
+{
+	[ Changement du texte de descriptionretour au début de la mission(2) ]
+}
+TEST_10_B3() 
+{
+	[On recoit un item avec les propriétés suivantes Attention : l'item a un nom custom: \nfiche : icmm2sa.sitem \n qualité :  16\n Durability :  1 \n Speed 10; \n Range 0.9 \n enchantement\n abm_ml_fire_00140\n ]
+}
+
+TEST_10_DESC_NEW( bot b)
+{
+	[$b$ est content : ceci est la nouvelle description.]
+}
+
+TEST_10_ITEM ()
+{
+	[Hache de la mort.]
+}
+
+
+
+////TEST 11
+TEST_11_TITLE (bot b)
+{
+	[TEST11 : temporalité]
+}
+
+TEST_11_DESC (bot dummy) 
+{
+	[ On ne peut remplir le premier objectif que l'été de 17h30 à 23h30. On ne peut faire la mission qu'une fois et elle ne peut etre prise que par un joueur.  Player replay timer de 300 ticks. Apres le 2eme objectif, la mission est un échec au bout de 20 secondes ]
+}
+
+TEST_11_TALK_TO_1 ()
+{
+	[ enleve contrainte de temps / saison ]
+}
+
+TEST_11_TALK_TO_2 ()
+{
+	[ apres il reste 20 secondes pour accomplir la mission sinon echec ]
+}
+
+TEST_11_TALK_TO_3 ()
+{
+	[ success de mission 11 ]
+}
+
+////TEST 12
+TEST_12_TITLE (bot b)
+{
+	[TEST112 : conditions / teleportation / ojectif caché / compass]
+}
+
+TEST_12_DESC (bot dummy) 
+{
+	[ au moment ou on prend la missionon a des messages sur l'état du joueur (skill /mission / brick). Verifier qu'ils sont vrais. changer skill /mission / brick pour voir si les messages changent quand on prend la mission ]
+}
+
+TEST12_HIDE_OBJ ()
+{
+	[Le prochain objectif ( parler au bot ) n'apparait pas dans le journal. Une fois cela fiat, le bot proposera 2 teleportations. La 2eme a un texte particulier et ne peut etre prise qu'une fois]
+}
+
+TEST_12_TALK_TO_1 ()
+{
+	[ activer les teleports et le compass ]
+}
+
+TEST_12_TALK_TO_2 ()
+{
+	[ finir mission 12 ]
+}
+
+
+TEST12_BRICK ( sbrick b )
+{
+	[ vous possedez $b$ ]
+}
+
+TEST12_PAS_BRICK ( sbrick b )
+{
+	[ vous ne possedez pas $b$ ]
+}
+
+
+TEST12_PAS_MISSION ()
+{
+	[ vous n'avez pas fait la mission auto ]
+}
+
+TEST12_MISSION ()
+{
+	[ vous n'avez pas fait la mission auto ]
+}
+
+TEST12_SKILL (skill s, int i)
+{
+	[ vous avez $s$ à au moins $i$ ]
+}
+
+
+TEST12_PAS_SKILL (skill s, int i)
+{
+	[ vous n'avez pas $s$ à au moins $i$ ]
+}
+
+
+
+////TEST 13
+TEST_13_TITLE (bot b)
+{
+	[TEST13 : inside / outside places]
+}
+
+TEST_13_DESC (bot dummy, int i, int ql, int qu, item it) 
+{
+	[on doit d'abord rester dans Aegus, sinon echec de la mission au bout de 30 secondes. Parler au bot annule la condition. On doit ensuite rester hors de Aegus sinon echec apres 60 sec., TEST de variable de prix: $qu$ $it$ de qualité $ql$ =  $i$ dappers ]
+}
+
+TEST_13_TALK_TO_1 ()
+{
+	[TEST 13 : cansel inside, trigger outside]
+}
+
+TEST_13_TALK_TO_2 ()
+{
+	[TEST 13 : cancel outside]
+}
+
+TEST_13_TALK_TO_3 ()
+{
+	[TEST 13 : fin]
+}
+
+
+////TEST 14
+TEST_14_TITLE (bot b)
+{
+	[TEST14 : Newbie mission]
+}
+
+TEST_14_DESC (bot dummy, int i, int ql, int qu, item it) 
+{
+	[mission assignée à tout nouveau personnage]
+}
+
+TEST_14_TALK_TO_1 ()
+{
+	[TEST 14 : end]
+}
+
+
+
+////TEST 15
+TEST_15_TITLE (bot b)
+{
+	[TEST15 : missions chainées.]
+}
+
+TEST_15_DESC (bot dummy, int i, int ql, int qu, item it) 
+{
+	[parler au bot pour acquérir automatiquement une mission. Lui reparler pour acquérir une autre mission et arreter cette mission]
+}
+
+TEST_15_TALK_TO_1 ()
+{
+	[TEST 15 : spawner une autre mission]
+}
+
+TEST_15_TALK_TO_2 ()
+{
+	[TEST 15 : spawner une autre mission et réussir celle ci]
+}
+
+SPAWN_MISSION_TITLE(bot b)
+{
+	[SPAWN mission]
+}
+SPAWN_MISSION_DESC(bot b)
+{
+	[SPAWN mission]
+}
+
+CHAIN_MISSION_TITLE(bot dummy) 
+{
+	[CHAINED mission]
+}
+
+CHAIN_MISSION_DESC(bot dummy) 
+{
+	[CHAINED mission]
+}
+
+

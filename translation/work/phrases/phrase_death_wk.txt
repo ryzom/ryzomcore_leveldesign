@@ -1,0 +1,65 @@
+
+
+/////////////////////////////////////////////////////////////////////////
+// sentences related to entity's death
+/////////////////////////////////////////////////////////////////////////
+
+DEATH_XP_DEATH( int i, int j )
+{
+	[&XP&Your death penalty reached the amount of $j$ points. You have currently earned $i$.]
+}
+
+DEATH_KILLER(entity e)
+{
+	death_killer	[&SYS&You have killed $e.da$ $e$.]
+}
+
+DEATH_VICTIM(entity e)
+{
+	(e = 0)
+		death_victim_0	[&SYS&You have been killed.]
+	death_victim	[&SYS&You have been killed by $e.da$ $e$.]
+}
+
+DEATH_SELF_KILL()
+{
+	death_self_kill	[&SYS&You killed yourself.]
+}
+DEATH_SELF_KILL_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		death_self_kill_spectators_pm	[&SYS&$p$ killed himself.]
+	death_self_kill_spectators_pf	[&SYS&$p$ killed herself.]
+}
+DEATH_SELF_KILL_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		death_self_kill_spectators_bm	[&SYS&$b.da$ $b$ killed himself.]
+	death_self_kill_spectators_bf	[&SYS&$b.da$ $b$ killed herself.]
+}
+DEATH_SELF_KILL_SPECTATORS_CREATURE(creature c)
+{
+	death_self_kill_spectators_c	[&SYS&$c.da$ $c$ killed itself.]
+}
+
+DEATH_SPECTATORS(entity killer, entity victim)
+{
+	death_spectators	[&SYS&$victim.da$ $victim$ have been killed by $killer.da$ $killer$.]
+}
+
+// death messages
+OPS_DEATH_KAMI_RESURECT ()
+{
+	[&SYS&The Kamis honor the pact:  Sap flows through you once again as you resuscitate.]
+}
+
+OPS_DEATH_CARAVAN_RESURECT ()
+{
+	[&SYS&The Karavan works its craft and you exist once more.]
+}
+
+OPS_DEATH_PERMANENT_KILLED ()
+{
+	[&CHK&You no longer have a valid resurrection pact. You return to the humus from which you first emerged.]
+}
+

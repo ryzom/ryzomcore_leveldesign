@@ -1,0 +1,24 @@
+﻿
+#include "phrase_ency_alb_00_wk.txt"
+
+/** this file contains encyclopedia texts for all albums */
+
+ENCY_THM_PREREQ_NO ()
+{
+	[You must carry out certain tasks before you can accomplish the mission linked to this theme.]
+}
+
+ENCY_THM_PREREQ_YES ()
+{
+	[You are ready to accomplish the mission linked to this theme.]
+}
+
+ENCY_ALB_PREREQ_NO()
+{
+	[You have to discover all of the themes of this album to complete it.]
+}
+
+ENCY_THEMA_FINISHED()
+{
+	[&THM& You have finished a theme of the encyclopaedia.]
+}

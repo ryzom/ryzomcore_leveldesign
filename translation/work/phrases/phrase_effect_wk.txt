@@ -1,0 +1,868 @@
+
+////////////////////////////////////////////////////////////////////////////////////
+// these sentences are related to effects
+////////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * DOT BLEED
+ */
+EFFECT_BLEED_BEGIN()
+{
+	effect_bleed_begin [&DG&Your wounds are bleeding massively.]
+}
+EFFECT_BLEED_BEGIN_ACTOR(entity e)
+{
+	effect_bleed_begin_actor [&SYS&$e.da$ $e$ wounds are bleeding massively.]
+}
+
+EFFECT_BLEED_LOSE_HP(int i)
+{
+	effect_bleed_lose_hp [&DG&You are bleeding and lose $i$ hit points.]
+}
+EFFECT_BLEED_LOSE_HP_ACTOR(entity e, int i)
+{
+	effect_bleed_lose_hp_actor [&SYS&$e.da$ $e$ is bleeding and loses $i$ hit points.]
+}
+EFFECT_BLEED_ENDED()
+{
+	effect_bleed_ended [&DG&You are no longer bleeding.]
+}
+EFFECT_BLEED_ENDED_ACTOR(entity e)
+{
+	effect_bleed_ended_actor [&SYS&$e.da$ $e$ is no longer bleeding.]
+}
+
+/**
+ * DOT POISON
+ */
+EFFECT_POISON_BEGIN()
+{
+	effect_poison_begin [&SPL&You are poisoned.]
+}
+EFFECT_POISON_BEGIN_CASTER(entity e)
+{
+	effect_poison_begin_caster [&SYS&$e.da$ $e$ is poisoned.]
+}
+EFFECT_POISON_LOSE_HP(int i)
+{
+	effect_poison_lose_hp [&DG&You lose $i$ hit points because of the poison flowing in your veins.]
+}
+EFFECT_POISON_LOSE_HP_CASTER(entity e, int i)
+{
+	effect_poison_lose_hp_caster [&SYS&$e.da$ $e$ is suffering poison effects and loses $i$ hit points.]
+}
+EFFECT_POISON_ENDS()
+{
+	effect_poison_ends [&SPL&You are no longer poisoned.]
+}
+EFFECT_POISON_ENDS_CASTER(entity e)
+{
+	effect_poison_ends_caster [&SYS&$e.da$ $e$ is no longer poisoned.]
+}
+
+/**
+ * STUN
+ */
+EFFECT_STUN_BEGIN_CREATOR(entity e)
+{
+	effect_stun_begin_actor	[&SPLM&You stun $e.da$ $e$.]
+}
+EFFECT_STUN_BEGIN_TARGET(entity e)
+{
+	effect_stun_begin_target	[&SPL&$e.da$ $e$ has stunned you.]
+}
+EFFECT_STUN_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_stun_begin_spectator	[&SYS&$actor.da$ $actor$ has stunned $target.da$ $target$.]
+}
+EFFECT_STUN_SELF_BEGIN_CREATOR()
+{
+	effect_stun_self_begin_actor	[&SPLM&You have stunned yourself.]
+}
+EFFECT_STUN_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_stun_self_begin_spectator_player_m	[&SYS&$p$ has stunned himself.]
+	(p.gender = female)
+		effect_stun_self_begin_spectator_player_f	[&SYS&$p$ has stunned herself.]
+}
+EFFECT_STUN_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_stun_self_begin_spectator_npc_m	[&SYS&$b.da$ $b$ has stunned himself.]
+	(b.gender = female)
+		effect_stun_self_begin_spectator_npc_f	[&SYS&$b.da$ $b$ has stunned herself.]
+}
+EFFECT_STUN_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_stun_self_begin_spectator_creature	[&SYS&$c.da$ $c$ has stunned itself.]
+}
+
+EFFECT_STUN_END_TARGET()
+{
+	effect_stun_end_target	[&SPL&You are no longer stunned.]
+}
+EFFECT_STUN_END_CREATOR(entity e)
+{
+	effect_stun_end_actor	[&SYS&$e.da$ $e$ is no longer stunned.]
+}
+EFFECT_STUN_END_SPECTATORS(entity e)
+{
+	effect_stun_end_spectator	[&SYS&$e.da$ $e$ is no longer stunned.]
+}
+
+/**
+ * SLOW MOVE
+ */
+EFFECT_SLOW_MOVE_BEGIN_CREATOR(entity e)
+{
+	effect_slow_move_begin_actor	[&SPLM&You have slowed $e.da$ $e$.]
+}
+EFFECT_SLOW_MOVE_BEGIN_TARGET(entity e)
+{
+	effect_slow_move_begin_target	[&SPL&$e.da$ $e$ has slowed you.]
+}
+EFFECT_SLOW_MOVE_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_slow_move_begin_spectator	[&SYS&$actor.da$ $actor$ has slowed $target.da$ $target$.]
+}
+
+EFFECT_SLOW_MOVE_END_CREATOR(entity e)
+{
+	effect_slow_move_end_actor	[&SYS&$e.da$ $e$ is no longer slowed.]
+}
+EFFECT_SLOW_MOVE_END_TARGET()
+{
+	effect_slow_move_end_target	[&SPL&You are no longer slowed.]
+}
+EFFECT_SLOW_MOVE_END_SPECTATORS(entity e)
+{
+	effect_slow_move_end_spectator	[&SYS&$e.da$ $e$ is no longer slowed.]
+}
+
+EFFECT_SLOW_MOVE_SELF_BEGIN_CREATOR()
+{
+	effect_slow_move_self_begin_creator	[&SPLM&Vous vous ralentissez vous même.]
+}
+EFFECT_SLOW_MOVE_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_slow_move_self_begin_spectator_player_m	[&SYS&$p$ s'est ralentit lui-même.]
+	(p.gender = female)
+		effect_slow_move_self_begin_spectator_player_f	[&SYS&$p$ s'est ralentit elle-même.]
+}
+EFFECT_SLOW_MOVE_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_slow_move_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ s'est ralentit lui-même.]
+	(b.gender = female)
+		effect_slow_move_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ s'est ralentit elle-même.]
+}
+EFFECT_SLOW_MOVE_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_slow_move_self_begin_spectators_creature	[&SYS&$c.da$ $c$ s'est ralentit lui-même.]
+}
+
+/**
+ * SLOW attacks (combat)
+ */
+EFFECT_SLOW_ATTACKS_BEGIN_CREATOR(entity e)
+{
+	effect_slow_attacks_begin_creator	[&SPLM&You have slowed $e.da$ $e$'s attacks.]
+}
+EFFECT_SLOW_ATTACKS_BEGIN_TARGET(entity e)
+{
+	effect_slow_attacks_begin_target	[&SPL&$e.da$ $e$ has slowed your attacks.]
+}
+EFFECT_SLOW_ATTACKS_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_slow_attacks_begin_spectators	[&SYS&$actor.da$ $actor$ has slowed $target.da$ $target$'s attacks.]
+}
+
+EFFECT_SLOW_ATTACKS_END_CREATOR(entity e)
+{
+	effect_slow_attacks_end_creator	[&SYS&$e.da$ $e$'s attacks are no longer slowed.]
+}
+EFFECT_SLOW_ATTACKS_END_TARGET()
+{
+	effect_slow_attacks_end_target	[&SPL&Your attacks are no longer slowed.]
+}
+EFFECT_SLOW_ATTACKS_END_SPECTATORS(entity e)
+{
+	effect_slow_attacks_end_spectators	[&SYS&$e.da$ $e$'s attacks are no longer slowed.]
+}
+
+EFFECT_SLOW_ATTACKS_SELF_BEGIN_CREATOR()
+{
+	effect_slow_attacks_self_begin_actor	[&SPLM&Vous ralentissez vos propres attaques.]
+}
+EFFECT_SLOW_ATTACKS_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_slow_attacks_self_begin_spectator_player_m	[&SYS&$p$ ralentit ses propres attaques.]
+	(p.gender = female)
+		effect_slow_attacks_self_begin_spectator_player_f	[&SYS&$p$ ralentit ses propres attaques.]
+}
+EFFECT_SLOW_ATTACKS_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_slow_attacks_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ ralentit ses propres attaques.]
+	(b.gender = female)
+		effect_slow_attacks_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ ralentit ses propres attaques.]
+}
+EFFECT_SLOW_ATTACKS_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_slow_attacks_self_begin_spectators_creature	[&SYS&$c.da$ $c$ ralentit ses propres attaques.]
+}
+
+/**
+ * Debuff combat skills
+ */
+EFFECT_DEBUFF_COMBAT_BEGIN_CREATOR(entity e)
+{
+	effect_debuff_combat_begin_creator	[&SYS&$e.da$ $e$ souffre maintenant d'un malus sur ses compétences de combat.]
+}
+EFFECT_DEBUFF_COMBAT_BEGIN_TARGET(entity e)
+{
+	effect_debuff_combat_begin_target	[&SPL&Vous souffrez maintenant d'un malus sur vos compétences de combat.]
+}
+EFFECT_DEBUFF_COMBAT_BEGIN_SPECTATORS(entity creator, entity target)
+{
+	effect_debuff_combat_begin_spectators	[&SYS&$target.da$ $target$ souffre maintenant d'un malus sur ses compétences de combat.]
+}
+
+EFFECT_DEBUFF_COMBAT_END_CREATOR(entity e)
+{
+	effect_debuff_combat_end_creator	[&SYS&$e.da$ $e$ ne souffre plus de malus sur ses compétences de combat.]
+}
+EFFECT_DEBUFF_COMBAT_END_TARGET()
+{
+	effect_debuff_combat_end_target		[&SPL&Vous n'avez plus de malus sur vos compétences de combat.]
+}
+EFFECT_DEBUFF_COMBAT_END_SPECTATORS(entity e)
+{
+	effect_debuff_combat_end_spectators	[&SYS&$e.da$ $e$ ne souffre plus de malus sur ses compétences de combat.]
+}
+
+EFFECT_DEBUFF_COMBAT_SELF_BEGIN_CREATOR()
+{
+	effect_debuff_combat_self_begin_actor	[&SPL&Vous souffrez maintenant d'un malus sur vos compétences de combat.]
+}
+EFFECT_DEBUFF_COMBAT_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_debuff_combat_self_begin_spectator_player_m	[&SYS&$p$ souffre maintenant d'un malus sur ses compétences de combat.]
+	(p.gender = female)
+		effect_debuff_combat_self_begin_spectator_player_f	[&SYS&$p$ souffre maintenant d'un malus sur ses compétences de combat.]
+}
+EFFECT_DEBUFF_COMBAT_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_debuff_combat_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ souffre maintenant d'un malus sur ses compétences de combat.]
+	(b.gender = female)
+		effect_debuff_combat_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ souffre maintenant d'un malus sur ses compétences de combat.]
+}
+EFFECT_DEBUFF_COMBAT_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_debuff_combat_self_begin_spectators_creature	[&SYS&$c.da$ $c$ souffre maintenant d'un malus sur ses compétences de combat.]
+}
+
+
+/**
+ * Debuff combat defense skills
+ */
+EFFECT_DEBUFF_DEFENSE_BEGIN_CREATOR(entity e)
+{
+	effect_debuff_defense_begin_creator	[&SYS&$e.da$ $e$ souffre maintenant d'un malus en défense.]
+}
+EFFECT_DEBUFF_DEFENSE_BEGIN_TARGET(entity e)
+{
+	effect_debuff_defense_begin_target	[&SPL&Vous souffrez maintenant d'un malus en défense.]
+}
+EFFECT_DEBUFF_DEFENSE_BEGIN_SPECTATORS(entity creator, entity target)
+{
+	effect_debuff_defense_begin_spectators	[&SYS&$target.da$ $target$ souffre maintenant d'un malus en défense.]
+}
+
+EFFECT_DEBUFF_DEFENSE_END_CREATOR(entity e)
+{
+	effect_debuff_defense_end_creator	[&SYS&$e.da$ $e$ ne souffre plus de malus en défense.]
+}
+EFFECT_DEBUFF_DEFENSE_END_TARGET()
+{
+	effect_debuff_defense_end_target		[&SPL&Vous n'avez plus de malus en défense.]
+}
+EFFECT_DEBUFF_DEFENSE_END_SPECTATORS(entity e)
+{
+	effect_debuff_defense_end_spectators	[&SYS&$e.da$ $e$ ne souffre plus de malus en défense.]
+}
+
+EFFECT_DEBUFF_DEFENSE_SELF_BEGIN_CREATOR()
+{
+	effect_debuff_defense_self_begin_actor	[&SPL&Vous souffrez maintenant d'un malus en défense.]
+}
+EFFECT_DEBUFF_DEFENSE_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_debuff_defense_self_begin_spectator_player_m	[&SYS&$p$ souffre maintenant d'un malus en défense.]
+	(p.gender = female)
+		effect_debuff_defense_self_begin_spectator_player_f	[&SYS&$p$ souffre maintenant d'un malus en défense.]
+}
+EFFECT_DEBUFF_DEFENSE_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_debuff_defense_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ souffre maintenant d'un malus en défense.]
+	(b.gender = female)
+		effect_debuff_defense_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ souffre maintenant d'un malus en défense.]
+}
+EFFECT_DEBUFF_DEFENSE_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_debuff_defense_self_begin_spectators_creature	[&SYS&$c.da$ $c$ souffre maintenant d'un malus en défense.]
+}
+
+/**
+ * Debuff dodge skill
+ */
+EFFECT_DEBUFF_DODGE_BEGIN_CREATOR(entity e)
+{
+	effect_debuff_dodge_begin_creator	[&SYS&$e.da$ $e$ souffre maintenant d'un malus en esquive.]
+}
+EFFECT_DEBUFF_DODGE_BEGIN_TARGET(entity e)
+{
+	effect_debuff_dodge_begin_target	[&SPL&Vous souffrez maintenant d'un malus en esquive.]
+}
+EFFECT_DEBUFF_DODGE_BEGIN_SPECTATORS(entity creator, entity target)
+{
+	effect_debuff_dodge_begin_spectators	[&SYS&$target.da$ $target$ souffre maintenant d'un malus en esquive.]
+}
+
+EFFECT_DEBUFF_DODGE_END_CREATOR(entity e)
+{
+	effect_debuff_dodge_end_creator		[&SYS&$e.da$ $e$ ne souffre plus de malus en esquive.]
+}
+EFFECT_DEBUFF_DODGE_END_TARGET()
+{
+	effect_debuff_dodge_end_target		[&SPL&Vous n'avez plus de malus en esquive.]
+}
+EFFECT_DEBUFF_DODGE_END_SPECTATORS(entity e)
+{
+	effect_debuff_dodge_end_spectators	[&SYS&$e.da$ $e$ ne souffre plus de malus en esquive.]
+}
+
+EFFECT_DEBUFF_DODGE_SELF_BEGIN_CREATOR()
+{
+	effect_debuff_dodge_self_begin_actor	[&SYS&Vous souffrez maintenant d'un malus en esquive.]
+}
+EFFECT_DEBUFF_DODGE_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_debuff_dodge_self_begin_spectator_player_m	[&SYS&$p$ souffre maintenant d'un malus en esquive.]
+	(p.gender = female)
+		effect_debuff_dodge_self_begin_spectator_player_f	[&SYS&$p$ souffre maintenant d'un malus en esquive.]
+}
+EFFECT_DEBUFF_DODGE_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_debuff_dodge_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ souffre maintenant d'un malus en esquive.]
+	(b.gender = female)
+		effect_debuff_dodge_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ souffre maintenant d'un malus en esquive.]
+}
+EFFECT_DEBUFF_DODGE_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_debuff_dodge_self_begin_spectators_creature	[&SYS&$c.da$ $c$ souffre maintenant d'un malus en esquive.]
+}
+
+/**
+ * FEAR
+ */
+EFFECT_FEAR_BEGIN_CREATOR(entity e)
+{
+	effect_fear_begin_creator	[&SYS&$e.da$ $e$ est paralysé par la peur et ne peut plus agir.]
+}
+EFFECT_FEAR_BEGIN_TARGET(entity e)
+{
+	effect_fear_begin_target	[&SPL&$e.da$ $e$ vous a terrorisé, vous ne pouvez plus agir.]
+}
+EFFECT_FEAR_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_fear_begin_spectators	[&SYS&$actor.da$ $actor$ terrorise $target.da$ $target$ qui ne peut plus attaquer.]
+}
+
+EFFECT_FEAR_END_CREATOR(entity e)
+{
+	effect_fear_end_creator	[&SYS&$e.da$ $e$ retrouve son sang froid et peut a nouveau agir.]
+}
+EFFECT_FEAR_END_TARGET()
+{
+	effect_fear_end_target	[&SPL&Vous retrouvez votre sang froid et pouvez a nouveau agir.]
+}
+EFFECT_FEAR_END_SPECTATORS(entity e)
+{
+	effect_fear_end_spectators	[&SYS&$e.da$ $e$ retrouve son sang froid et peut a nouveau agir.]
+}
+
+EFFECT_FEAR_SELF_BEGIN_CREATOR()
+{
+	effect_fear_self_begin_actor	[&SPL&Vous etes terrorisé et ne pouvez plus agir.]
+}
+EFFECT_FEAR_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_fear_self_begin_spectator_player_m	[&SYS&$p$ est terrorisé et ne peut plus agir.]
+	(p.gender = female)
+		effect_fear_self_begin_spectator_player_f	[&SYS&$p$ est terrorisé et ne peut plus agir.]
+}
+EFFECT_FEAR_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_fear_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ est terrorisé et ne peut plus agir.]
+	(b.gender = female)
+		effect_fear_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ est terrorisé et ne peut plus agir.]
+}
+EFFECT_FEAR_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_fear_self_begin_spectators_creature	[&SYS&$c.da$ $c$ est terrorisé et ne peut plus agir.]
+}
+
+/**
+ * MEZZ
+ */
+EFFECT_MEZZ_BEGIN_CREATOR(entity e)
+{
+	effect_mezz_begin_creator	[&SYS&$e.da$ $e$ is now mesmerized and cannot act or move.]
+}
+EFFECT_MEZZ_BEGIN_TARGET(entity e)
+{
+	effect_mezz_begin_target	[&SYS&$e.da$ $e$ has mesmerized you and you can no longer act or move.]
+}
+EFFECT_MEZZ_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_mezz_begin_spectators	[&SYS&$target.da$ $target$ has been mesmerized by $actor.da$ $actor$ and can no longer act or move.]
+}
+
+EFFECT_MEZZ_END_CREATOR(entity e)
+{
+	effect_mezz_end_creator	[&SYS&$e.da$ $e$ is no longer mesmerized.]
+}
+EFFECT_MEZZ_END_TARGET()
+{
+	effect_mezz_end_target	[&SPL&You are no longer mesmerized.]
+}
+EFFECT_MEZZ_END_SPECTATORS(entity e)
+{
+	effect_mezz_end_spectators	[&SYS&$e.da$ $e$ is no longer mesmerized.]
+}
+
+EFFECT_MEZZ_SELF_BEGIN_CREATOR()
+{
+	effect_mezz_self_begin_actor	[&SPLM&You mesmerized yourself and can no longer act or move.]
+}
+EFFECT_MEZZ_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_mezz_self_begin_spectator_player_m	[&SYS&$p$ mesmerized himself and can no longer act or move.]
+	(p.gender = female)
+		effect_mezz_self_begin_spectator_player_f	[&SYS&$p$ mesmerized herself and can no longer act or move.]
+}
+EFFECT_MEZZ_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_mezz_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ mesmerized himself and can no longer act or move.]
+	(b.gender = female)
+		effect_mezz_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ mesmerized herself and can no longer act or move.]
+}
+EFFECT_MEZZ_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_mezz_self_begin_spectators_creature	[&SYS&$c.da$ $c$ mesmerized itself and can no longer act or move.]
+}
+
+
+
+/**
+ * ROOT
+ */
+EFFECT_ROOT_BEGIN_CREATOR(entity e)
+{
+	effect_root_begin_creator	[&SYS&$e.da$ $e$ is now rooted and cannot move.]
+}
+EFFECT_ROOT_BEGIN_TARGET(entity e)
+{
+	effect_root_begin_target	[&SPL&$e.da$ $e$ has rooted you and you can no longer move.]
+}
+EFFECT_ROOT_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_root_begin_spectators	[&SYS&$target.da$ $target$ has been rooted by $actor.da$ $actor$ and can no longer move.]
+}
+
+EFFECT_ROOT_END_CREATOR(entity e)
+{
+	effect_root_end_creator	[&SYS&$e.da$ $e$ is no longer rooted.]
+}
+EFFECT_ROOT_END_TARGET()
+{
+	effect_root_end_target	[&SPL&You are no longer rooted.]
+}
+EFFECT_ROOT_END_SPECTATORS(entity e)
+{
+	effect_root_end_spectators	[&SYS&$e.da$ $e$ is no longer rooted.]
+}
+
+EFFECT_ROOT_SELF_BEGIN_CREATOR()
+{
+	effect_root_self_begin_actor	[&SPLM&You rooted yourself and can no longer move.]
+}
+EFFECT_ROOT_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_root_self_begin_spectator_player_m	[&SYS&$p$ rooted himself and can no longer move.]
+	(p.gender = female)
+		effect_root_self_begin_spectator_player_f	[&SYS&$p$ rooted herself and can no longer move.]
+}
+EFFECT_ROOT_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_root_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ rooted himself and can no longer move.]
+	(b.gender = female)
+		effect_root_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ rooted herself and can no longer move.]
+}
+EFFECT_ROOT_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_root_self_begin_spectators_creature	[&SYS&$c.da$ $c$ rooted itself and can no longer move.]
+}
+
+
+/**
+ * INVULNERABILITY
+ */
+EFFECT_INVULNERABILITY_BEGIN_CREATOR(entity e)
+{
+	effect_invulnerability_begin_creator	[&SYS&$e.da$ $e$ est invulnérable mais ne peut plus utiliser d'action.]
+}
+EFFECT_INVULNERABILITY_BEGIN_TARGET(entity e)
+{
+	effect_invulnerability_begin_target	[&SPLM&$e.da$ $e$ vous a rendu invulnérable mais vous ne pouvez plus utiliser d'action.]
+}
+EFFECT_INVULNERABILITY_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_invulnerability_begin_spectators	[&SYS&$actor.da$ $actor$ a rendu $target.da$ $target$ invulnérable qui ne peut plus utiliser d'action.]
+}
+
+EFFECT_INVULNERABILITY_END_CREATOR(entity e)
+{
+	effect_invulnerability_end_creator	[&SYS&$e.da$ $e$ n'est plus invulnérable et peut a nouveau agir.]
+}
+EFFECT_INVULNERABILITY_END_TARGET()
+{
+	effect_invulnerability_end_target	[&SPLM&Vous n'etes plus invulnérable et pouvez a nouveau agir.]
+}
+EFFECT_INVULNERABILITY_END_SPECTATORS(entity e)
+{
+	effect_invulnerability_end_spectators	[&SYS&$e.da$ $e$ n'est plus invulnérable et peut a nouveau agir.]
+}
+
+EFFECT_INVULNERABILITY_SELF_BEGIN_CREATOR()
+{
+	effect_invulnerability_self_begin_actor	[&SPLM&Vous etes invulnérable mais ne pouvez plus utiliser d'action.]
+}
+EFFECT_INVULNERABILITY_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_invulnerability_self_begin_spectator_player_m	[&SYS&$p$ est invulnérable mais ne peut plus utiliser d'action.]
+	(p.gender = female)
+		effect_invulnerability_self_begin_spectator_player_f	[&SYS&$p$ est invulnérable mais ne peut plus utiliser d'action.]
+}
+EFFECT_INVULNERABILITY_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_invulnerability_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ est invulnérable mais ne peut plus utiliser d'action.]
+	(b.gender = female)
+		effect_invulnerability_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ est invulnérable mais ne peut plus utiliser d'action.]
+}
+EFFECT_INVULNERABILITY_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_invulnerability_self_begin_spectators_creature	[&SYS&$c.da$ $c$ est invulnérable mais ne peut plus utiliser d'action.]
+}
+
+
+/**
+ * MADNESS
+ */
+EFFECT_MADNESS_BEGIN_CREATOR(entity e)
+{
+	effect_madness_begin_creator	[&SYS&$e.da$ $e$ est devenu fou et peut se prendre pour cible au lieu de son adversaire.]
+}
+EFFECT_MADNESS_BEGIN_TARGET(entity e)
+{
+	effect_madness_begin_target	[&SPL&$e.da$ $e$ vous a rendu fou. Vous pouvez maintenant vous prendre pour cible pour vos attaques ou vos sorts.]
+}
+EFFECT_MADNESS_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_madness_begin_spectators	[&SYS&$target.da$ $target$ a été rendu fou par $actor.da$ $actor$.]
+}
+
+EFFECT_MADNESS_END_CREATOR(entity e)
+{
+	effect_madness_end_creator	[&SYS&$e.da$ $e$ n'est plus atteint de folie.]
+}
+EFFECT_MADNESS_END_TARGET()
+{
+	effect_madness_end_target	[&SPL&Vous n'etes plus atteint de folie.]
+}
+EFFECT_MADNESS_END_SPECTATORS(entity e)
+{
+	effect_madness_end_spectators	[&SYS&$e.da$ $e$ n'est plus atteint de folie.]
+}
+
+EFFECT_MADNESS_SELF_BEGIN_CREATOR()
+{
+	effect_madness_self_begin_actor	[&SPL&Vous vous rendez fou.]
+}
+EFFECT_MADNESS_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_madness_self_begin_spectator_player_m	[&SYS&$p$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lançant un sort.]
+	(p.gender = female)
+		effect_madness_self_begin_spectator_player_f	[&SYS&$p$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lançant un sort.]
+}
+EFFECT_MADNESS_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_root_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lançant un sort.]
+	(b.gender = female)
+		effect_root_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lançant un sort.]
+}
+EFFECT_MADNESS_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_madness_self_begin_spectators_creature	[&SYS&$c.da$ $c$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lançant un sort.]
+}
+
+/**
+ * BLIND
+ */
+EFFECT_BLIND_BEGIN_CREATOR (entity e)
+{
+	(e.gender = male) 
+		effect_blind_begin_creator_m	[&SYS&$e.da$ $e$ is blinded and now runs the risk of failing in his actions.]
+
+	(e.gender = female) 
+		effect_blind_begin_creator_f	[&SYS&$e.da$ $e$ is blinded and now runs the risk of failing in her actions.]
+
+}
+
+EFFECT_BLIND_BEGIN_TARGET (entity e)
+{
+		effect_blind_begin_target	[&SPL&$e.da$ $e$ has blinded you, you now run the risk of failing in your actions.]
+
+}
+
+EFFECT_BLIND_BEGIN_SPECTATORS (entity actor, entity target)
+{
+	(actor.gender = male) 
+		effect_blind_begin_spectators_m	[&SYS&$actor.da$ $actor$ has blinded $target.da$ $target$ who now runs the risk of failing in his actions.]
+
+	(actor.gender = female) 
+		effect_blind_begin_spectators_f	[&SYS&$actor.da$ $actor$ has blinded $target.da$ $target$ who now runs the risk of failing in his actions.]
+
+}
+
+EFFECT_BLIND_END_CREATOR (entity e)
+{
+		effect_blind_end_creator	[&SYS&$e.da$ $e$ is no longer blinded.]
+
+}
+
+EFFECT_BLIND_END_TARGET ()
+{
+		effect_blind_end_target	[&SPL&You are no longer blinded.]
+
+}
+
+EFFECT_BLIND_END_SPECTATORS (entity e)
+{
+		effect_blind_end_spectators	[&SYS&$e.da$ $e$ is no longer blinded.]
+
+}
+
+EFFECT_BLIND_SELF_BEGIN_CREATOR ()
+{
+		effect_blind_self_begin_actor	[&SPLM&You have blinded yourself and stand a greater chance of failing in your actions.]
+
+}
+
+EFFECT_BLIND_SELF_BEGIN_SPECTATORS_PLAYER (player p)
+{
+	(p.gender = male) 
+		effect_blind_self_begin_spectator_player_m	[&SYS&$p$ has blinded himself and stands a greater chance of failing in his actions.]
+
+	(p.gender = female) 
+		effect_blind_self_begin_spectator_player_f	[&SYS&$p$ has blinded herself and stands a greater chance of failing in her actions.]
+
+}
+
+EFFECT_BLIND_SELF_BEGIN_SPECTATORS_NPC (bot b)
+{
+	(b.gender = male) 
+		effect_blind_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ has blinded himself and stands a greater chance of failing in his actions.]
+
+	(b.gender = female) 
+		effect_blind_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ has blinded herself and stands a greater chance of failing in her actions.]
+
+}
+
+EFFECT_BLIND_SELF_BEGIN_SPECTATORS_CREATURE (creature c)
+{
+		effect_blind_self_begin_spectators_creature	[&SYS&$c.da$ $c$ has blinded itself and stands a greater chance of failing in its actions.]
+
+}
+
+/**
+ * STINK/STENCH
+ */
+EFFECT_STENCH_BEGIN_CREATOR (entity e)
+{
+	(e.gender = male) 
+		effect_stench_begin_creator_m	[&SYS&$e.da$ $e$ stinks so much that it makes most living beings sicks.]
+
+	(e.gender = female) 
+		effect_stench_begin_creator_f	[&SYS&$e.da$ $e$ stinks so much that it makes most living beings sick.]
+
+}
+
+EFFECT_STENCH_BEGIN_TARGET (entity e)
+{
+		effect_stench_begin_target	[&SPL&$e.da$ $e$ makes you stinks horribly, nearby living beings can suffer from it.]
+
+}
+
+EFFECT_STENCH_BEGIN_SPECTATORS (entity actor, entity target)
+{
+	(actor.gender = male) 
+		effect_stench_begin_spectators_m	[&SYS&$actor.da$ $actor$ makes $target.da$ $target$ stinks horribly, nearby living beings can suffer from it.]
+
+	(actor.gender = female) 
+		effect_stench_begin_spectators_f	[&SYS&$actor.da$ $actor$ makes $target.da$ $target$ stinks horribly, nearby living beings can suffer from it.]
+
+}
+
+EFFECT_STENCH_END_CREATOR (entity e)
+{
+	effect_stench_end_creator	[&SYS&$e.da$ $e$ no longer stinks.]
+}
+
+EFFECT_STENCH_END_TARGET ()
+{
+	effect_stench_end_target	[&SPL&You no longer stink.]
+}
+
+EFFECT_STENCH_END_SPECTATORS (entity e)
+{
+	effect_stench_end_spectators	[&SYS&$e.da$ $e$ no longer stinks.]
+}
+
+EFFECT_STENCH_SELF_BEGIN_CREATOR ()
+{
+	effect_stench_self_begin_actor	[&SPLM&You make yourself stink and nearby living beings can suffer from it.]
+}
+
+EFFECT_STENCH_SELF_BEGIN_SPECTATORS_PLAYER (player p)
+{
+	(p.gender = male) 
+		effect_stench_self_begin_spectator_player_m	[&SYS&$p$ has made himself stinks, nearby living beings can suffer from it.]
+
+	(p.gender = female) 
+		effect_stench_self_begin_spectator_player_f	[&SYS&$p$ has made herself stinks, nearby living beings can suffer from it.]
+}
+
+EFFECT_STENCH_SELF_BEGIN_SPECTATORS_NPC (bot b)
+{
+	(b.gender = male) 
+		effect_stench_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ has made himself stinks, nearby living beings can suffer from it.]
+
+	(b.gender = female) 
+		effect_stench_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ has made herself stinks, nearby living beings can suffer from it.]
+}
+
+EFFECT_STENCH_SELF_BEGIN_SPECTATORS_CREATURE (creature c)
+{
+	effect_stench_self_begin_spectators_creature	[&SYS&$c.da$ $c$ has made itself stinks, nearby living beings can suffer from it.]
+}
+
+EFFECT_STENCH_LOSE_HP(entity e, int i)
+{
+	effect_stench_lose_hp [&SPL&$e.da$ $e$ stinks so much that you feel sick and lose $i$ hit points.]
+}
+EFFECT_STENCH_LOSE_HP_ACTOR(entity e, int i)
+{
+	effect_stench_lose_hp_actor [&SPL&You stink so much that $e.da$ $e$ feels sick and loses $i$ hit points.]
+}
+
+
+/**
+ * DoT effects
+ */
+EFFECT_DOT_BEGIN_CREATOR (entity e)
+{
+	(e.gender = male) 
+		effect_dot_begin_creator_m	[&SYS& TODO.]
+	effect_dot_begin_creator_f	[&SYS& TODO.]
+}
+
+EFFECT_DOT_BEGIN_TARGET (entity e)
+{
+	effect_dot_begin_target	[&SYS& TODO.]
+}
+
+EFFECT_DOT_BEGIN_SPECTATORS (entity actor, entity target)
+{
+	(actor.gender = male) 
+		effect_dot_begin_spectators_m	[&SYS&$actor.da$ $actor$ makes $target.da$ $target$ stinks horribly, nearby living beings can suffer from it.]
+	effect_dot_begin_spectators_f	[&SYS&$actor.da$ $actor$ makes $target.da$ $target$ stinks horribly, nearby living beings can suffer from it.]
+}
+
+EFFECT_DOT_END_CREATOR (entity e)
+{
+	effect_dot_end_creator	[&SYS&$e.da$ $e$ no longer stinks.]
+}
+
+EFFECT_DOT_END_TARGET ()
+{
+	effect_dot_end_target	[&SPL&You no longer stink.]
+}
+
+EFFECT_DOT_END_SPECTATORS (entity e)
+{
+	effect_dot_end_spectators	[&SYS&$e.da$ $e$ no longer stinks.]
+}
+
+EFFECT_DOT_SELF_BEGIN_CREATOR ()
+{
+	effect_dot_self_begin_actor	[&SPLM&You make yourself stink and nearby living beings can suffer from it.]
+}
+
+EFFECT_DOT_SELF_BEGIN_SPECTATORS_PLAYER (player p)
+{
+	(p.gender = male) 
+		effect_dot_self_begin_spectator_player_m	[&SYS&$p$ has made himself stinks, nearby living beings can suffer from it.]
+	effect_dot_self_begin_spectator_player_f	[&SYS&$p$ has made herself stinks, nearby living beings can suffer from it.]
+}
+
+EFFECT_DOT_SELF_BEGIN_SPECTATORS_NPC (bot b)
+{
+	(b.gender = male) 
+		effect_dot_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ has made himself stinks, nearby living beings can suffer from it.]
+	effect_dot_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ has made herself stinks, nearby living beings can suffer from it.]
+}
+
+EFFECT_DOT_SELF_BEGIN_SPECTATORS_CREATURE (creature c)
+{
+	effect_dot_self_begin_spectators_creature	[&SYS&$c.da$ $c$ has made itself stinks, nearby living beings can suffer from it.]
+}
+
+EFFECT_DOT_LOSE_HP(entity e, int i)
+{
+	effect_dot_lose_hp [&SPL&$e.da$ $e$ stinks so much that you feel sick and lose $i$ hit points.]
+}
+EFFECT_DOT_LOSE_HP_ACTOR(entity e, int i)
+{
+	effect_dot_lose_hp_actor [&SPL&You stink so much that $e.da$ $e$ feels sick and loses $i$ hit points.]
+}

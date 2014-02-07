@@ -1,0 +1,1697 @@
+﻿/** this file contains all generic mission texts */
+
+
+/********************************************************************************************
+	HARD CODED
+
+********************************************************************************************/
+
+MIS_INSIDE_WARN( place p, int i)
+{
+	[Warning! You have to stay in place $p$. Othewise you will fail in a mission in $i$ seconds.]
+}
+
+MIS_OUTSIDE_WARN( place p, int i)
+{
+	[Warning! You have to stay in place $p$. Othewise you will fail in a mission in $i$ seconds.]
+}
+
+
+
+/////////////////////////////////STEPS//////////////////////////////////////////////////////
+
+//forage raw materials-------------------------------------------------------------------------
+MIS_FORAGE_1(item i, int qt,int ql )
+{
+	mis_forage_1	[Forage $qt$ $i$ of at least quality $ql$]
+}
+
+MIS_FORAGE_2(item i1, int qt1,int ql1, item i2, int qt2,int ql2 )
+{
+	mis_forage_2	[Forage :\n
+					 - $qt1$ $i1$ of at least quality $ql1$\n
+					 - $qt2$ $i2$ of at least quality $ql2$]
+}
+
+MIS_FORAGE_3(item i1, int qt1,int ql1, item i2, int qt2,int ql2, item i3, int qt3,int ql3 )
+{
+	mis_forage_3	[Forage :\n
+					 - $qt1$ $i1$ of at least quality $ql1$\n
+					 - $qt2$ $i2$ of at least quality $ql2$\n
+					 - $qt3$ $i3$ of at least quality $ql3$]
+}
+
+MIS_FORAGE_4(item i1, int qt1,int ql1, item i2, int qt2,int ql2, item i3, int qt3,int ql3, item i4, int qt4,int ql4 )
+{
+	mis_forage_4	[Forage :\n
+					 - $qt1$ $i1$ of at least quality $ql1$\n
+					 - $qt2$ $i2$ of at least quality $ql2$\n
+					 - $qt3$ $i3$ of at least quality $ql3$\n
+					 - $qt4$ $i4$ of at least quality $ql4$]
+}
+
+MIS_FORAGE_5(item i1, int qt1,int ql1, item i2, int qt2,int ql2, item i3, int qt3,int ql3, item i4, int qt4,int ql4, item i5, int qt5,int ql5)
+{
+	mis_forage_5	[Forage :\n
+					 - $qt1$ $i1$ of at least quality $ql1$\n
+					 - $qt2$ $i2$ of at least quality $ql2$\n
+					 - $qt3$ $i3$ of at least quality $ql3$\n
+					 - $qt4$ $i4$ of at least quality $ql4$\n
+					 - $qt5$ $i5$ of at least quality $ql5$]
+}
+
+//loot items---------------------------------------------------------------------------------
+MIS_LOOT_MP_1(item i1, int qt1, int ql1)
+{
+	mis_loot_mp_1	[Loot $qt1$ $i1$ of at least quality $ql1$ on a dead creature.]
+}
+
+MIS_LOOT_MP_2(item i1, int qt1, int ql1, item i2, int qt2, int ql2)
+{
+	mis_loot_mp_2	[Loot :\n
+					 - $qt1$ $i1$ of at least quality $ql1$\n
+					 - $qt2$ $i2$ of at least quality $ql2$\n
+					 on a dead creature.]
+}
+
+MIS_LOOT_MP_3(item i1, int qt1, int ql1, item i2, int qt2, int ql2, item i3, int qt3, int ql3)
+{
+	mis_loot_mp_3	[Loot :\n
+					 - $qt1$ $i1$ of at least quality $ql1$\n
+					 - $qt2$ $i2$ of at least quality $ql2$\n
+					 - $qt3$ $i3$ of at least quality $ql3$\n
+					 on a dead creature.]
+}
+
+MIS_LOOT_MP_4(item i1, int qt1, int ql1, item i2, int qt2, int ql2, item i3, int qt3, int ql3, item i4, int qt4, int ql4)
+{
+	mis_loot_mp_4	[Loot :\n
+					 - $qt1$ $i1$ of at least quality $ql1$\n
+					 - $qt2$ $i2$ of at least quality $ql2$\n
+					 - $qt3$ $i3$ of at least quality $ql3$\n
+					 - $qt4$ $i4$ of at least quality $ql4$\n
+					 on a dead creature.]
+}
+
+MIS_LOOT_ITEM_1(item i1)
+{
+	mis_loot_item_1	[Loot $i1.ia$ $i1$ on a dead target.]
+}
+
+MIS_LOOT_ITEM_2(item i1, item i2)
+{
+	mis_loot_item_2	[Loot :\n
+					 - $i1.ia$ $i1$\n
+					 - $i2.ia$ $i2$\n
+					 on a dead target.]
+}
+
+MIS_LOOT_ITEM_3(item i1, item i2, item i3)
+{
+	mis_loot_item_3	[Loot :\n
+					 - $i1.ia$ $i1$\n
+					 - $i2.ia$ $i2$\n
+					 - $i3.ia$ $i3$\n
+					 on a dead target.]
+}
+
+MIS_LOOT_ITEM_4(item i1, item i2, item i3, item i4)
+{
+	mis_loot_item_4	[Loot :\n
+					 - $i1.ia$ $i1$\n
+					 - $i2.ia$ $i2$\n
+					 - $i3.ia$ $i3$\n
+					 - $i4.ia$ $i4$\n
+					 on a dead target.]
+}
+
+//craft items---------------------------------------------------------------------------------
+MIS_CRAFT_1(item i, int qt,int ql )
+{
+	mis_craft_1	[Craft $qt$ $i$ of at least quality $ql$]
+}
+
+MIS_CRAFT_2(item i1, int qt1,int ql1, item i2, int qt2,int ql2 )
+{
+	mis_craft_2	[Craft :\n
+				 - $qt1$ $i1$ of at least quality $ql1$\n
+				 - $qt2$ $i2$ of at least quality $ql2$]
+}
+
+MIS_CRAFT_3(item i1, int qt1,int ql1, item i2, int qt2,int ql2, item i3, int qt3,int ql3 )
+{
+	mis_craft_3	[Craft :\n
+				 - $qt1$ $i1$ of at least quality $ql1$\n
+				 - $qt2$ $i2$ of at least quality $ql2$\n
+				 - $qt3$ $i3$ of at least quality $ql3$]
+}
+
+MIS_CRAFT_4(item i1, int qt1,int ql1, item i2, int qt2,int ql2, item i3, int qt3,int ql3, item i4, int qt4,int ql4 )
+{
+	mis_craft_4	[Craft :\n
+				 - $qt1$ $i1$ of at least quality $ql1$\n
+				 - $qt2$ $i2$ of at least quality $ql2$\n
+				 - $qt3$ $i3$ of at least quality $ql3$\n
+				 - $qt4$ $i4$ of at least quality $ql4$]
+}
+
+MIS_CRAFT_5 (item i1, int qt1,int ql1, item i2, int qt2,int ql2, item i3, int qt3,int ql3, item i4, int qt4,int ql4 , item i5, int qt5,int ql5)
+{
+		mis_craft_5	[Craft :\n
+			 - $qt1$ $i1$ of at least quality $ql1$\n
+			 - $qt2$ $i2$ of at least quality $ql2$\n
+			 - $qt3$ $i3$ of at least quality $ql3$\n
+			 - $qt4$ $i4$ of at least quality $ql4$\n
+			 - $qt5$ $i5$ of at least quality $ql5$\n]
+
+}
+
+MIS_CRAFT_6 (item i1, int qt1,int ql1, item i2, int qt2,int ql2, item i3, int qt3,int ql3, item i4, int qt4,int ql4 , item i5, int qt5,int ql5, item i6, int qt6,int ql6)
+{
+		mis_craft_6	[Craft :\n
+			 - $qt1$ $i1$ of at least quality $ql1$\n
+			 - $qt2$ $i2$ of at least quality $ql2$\n
+			 - $qt3$ $i3$ of at least quality $ql3$\n
+			 - $qt4$ $i4$ of at least quality $ql4$\n
+			 - $qt5$ $i5$ of at least quality $ql5$\n
+			 - $qt6$ $i6$ of at least quality $ql6$]
+
+}
+
+//talk to specific bot---------------------------------------------------------------------------
+MIS_TALK_TO(bot b)
+{
+	mis_talk_to	[Talk to $b$]
+}
+
+MIS_TALK_TO_MENU(bot b)
+{
+	mis_talk_to_menu	[Talk to $b$]
+}
+
+//kill fauna------------------------------------------------------------------------------------
+MIS_KILL_FAUNA_1(creature_model c1,int q1)
+{
+	(q1 = 1) 
+		mis_kill_fauna_1	[Eliminez $q1$ $c1$]
+
+		mis_kill_fauna_1_p	[Eliminez $q1$ $c1.p$]
+}
+
+MIS_KILL_FAUNA_2(creature_model c1,int q1, creature_model c2,int q2)
+{
+	mis_kill_fauna_2	[Kill :\n
+						 - $q1$ $c1$\n
+						 - $q2$ $c2$]
+}
+
+MIS_KILL_FAUNA_3(creature_model c1,int q1, creature_model c2,int q2, creature_model c3,int q3)
+{
+	mis_kill_fauna_3	[Kill :\n
+						 - $q1$ $c1$\n
+						 - $q2$ $c2$\n
+						 - $q3$ $c3$]
+}
+
+MIS_KILL_FAUNA_4(creature_model c1,int q1, creature_model c2,int q2, creature_model c3,int q3, creature_model c4,int q4)
+{
+	mis_kill_fauna_4	[Kill :\n
+						 - $q1$ $c1$\n
+						 - $q2$ $c2$\n
+						 - $q3$ $c3$\n
+						 - $q4$ $c4$]
+}
+
+//kill fauna in specific place-----------------------------------------------------------------------
+MIS_KILL_FAUNA_LOC_1(creature_model c1,int q1, place p)
+{
+	mis_kill_fauna_loc_1	[Go to $p$ and kill $q1$ $c1$]
+}
+
+MIS_KILL_FAUNA_LOC_2(creature_model c1,int q1, creature_model c2,int q2, place p)
+{
+	mis_kill_fauna_loc_2	[Go to $p$ and kill :\n
+							 - $q1$ $c1$\n
+							 - $q2$ $c2$]
+}
+
+MIS_KILL_FAUNA_LOC_3(creature_model c1,int q1, creature_model c2,int q2, creature_model c3,int q3, place p)
+{
+	mis_kill_fauna_loc_3	[Go to $p$ and kill :\n
+							 - $q1$ $c1$\n
+							 - $q2$ $c2$\n
+							 - $q3$ $c3$]
+}
+
+MIS_KILL_FAUNA_LOC_4(creature_model c1,int q1, creature_model c2,int q2, creature_model c3,int q3, creature_model c4,int q4, place p)
+{
+	mis_kill_fauna_loc_4	[Go to $p$ and kill :\n
+							 - $q1$ $c1$\n
+							 - $q2$ $c2$\n
+							 - $q3$ $c3$\n
+							 - $q4$ $c4$]
+}
+
+MIS_KILL_FAUNA_LOC_5(creature_model c1,int q1, creature_model c2,int q2, creature_model c3,int q3, creature_model c4,int q4, creature_model c5,int q5, place p)
+{
+	mis_kill_fauna_loc_5	[Go to $p$ and kill :\n
+							 - $q1$ $c1$\n
+							 - $q2$ $c2$\n
+							 - $q3$ $c3$\n
+							 - $q4$ $c4$\n
+							 - $q5$ $c5$]
+}
+
+MIS_KILL_FAUNA_LOC_6(creature_model c1,int q1, creature_model c2,int q2, creature_model c3,int q3, creature_model c4,int q4, creature_model c5,int q5, creature_model c6,int q6, place p)
+{
+	mis_kill_fauna_loc_6	[Go to $p$ and kill :\n
+							 - $q1$ $c1$\n
+							 - $q2$ $c2$\n
+							 - $q3$ $c3$\n
+							 - $q4$ $c4$\n
+							 - $q5$ $c5$\n
+							 - $q6$ $c6$]
+}
+
+MIS_KILL_FAUNA_LOC_7(creature_model c1,int q1, creature_model c2,int q2, creature_model c3,int q3, creature_model c4,int q4, creature_model c5,int q5, creature_model c6,int q6, creature_model c7,int q7, place p)
+{
+	mis_kill_fauna_loc_7	[Go to $p$ and kill :\n
+							 - $q1$ $c1$\n
+							 - $q2$ $c2$\n
+							 - $q3$ $c3$\n
+							 - $q4$ $c4$\n
+							 - $q5$ $c5$\n
+							 - $q6$ $c6$\n
+							 - $q7$ $c7$]
+}
+
+MIS_KILL_FAUNA_LOC_8(creature_model c1,int q1, creature_model c2,int q2, creature_model c3,int q3, creature_model c4,int q4, creature_model c5,int q5, creature_model c6,int q6, creature_model c7,int q7, creature_model c8,int q8, place p)
+{
+	mis_kill_fauna_loc_8	[Go to $p$ and kill :\n
+							 - $q1$ $c1$\n
+							 - $q2$ $c2$\n
+							 - $q3$ $c3$\n
+							 - $q4$ $c4$\n
+							 - $q5$ $c5$\n
+							 - $q6$ $c6$\n
+							 - $q7$ $c7$\n
+							 - $q8$ $c8$]
+}
+//kill species------------------------------------------------------------------------------------
+MIS_KILL_RACE_1(race c1,int q1)
+{
+	mis_kill_race_1	[Kill $q1$ of any type of $c1$]
+}
+
+MIS_KILL_RACE_2(race c1,int q1, race c2,int q2)
+{
+	mis_kill_race_2	[Kill :\n
+						 - $q1$ of any type of $c1$\n
+						 - $q2$ of any type of $c2$]
+}
+
+MIS_KILL_RACE_3(race c1,int q1, race c2,int q2, race c3,int q3)
+{
+	mis_kill_race_3	[Kill :\n
+						 - $q1$ of any type of $c1$\n
+						 - $q2$ of any type of $c2$\n
+						 - $q3$ of any type of $c3$]
+}
+
+MIS_KILL_RACE_4(race c1,int q1, race c2,int q2, race c3,int q3, race c4,int q4)
+{
+	mis_kill_race_4	[Kill :\n
+						 - $q1$ of any type of $c1$\n
+						 - $q2$ of any type of $c2$\n
+						 - $q3$ of any type of $c3$\n
+						 - $q4$ of any type of $c4$]
+}
+
+// kill species in specific place-------------------------------------------------------------------
+MIS_KILL_RACE_LOC_1(race c1,int q1, place p)
+{
+	mis_kill_race_loc_1	[Go to $p$ and kill $q1$ of any type of $c1$]
+}
+
+MIS_KILL_RACE_LOC_2(race c1,int q1, race c2,int q2, place p)
+{
+	mis_kill_race_loc_2	[Go to $p$ and kill :\n
+							 - $q1$ of any type of $c1$\n
+							 - $q2$ of any type of $c2$]
+}
+
+MIS_KILL_RACE_LOC_3(race c1,int q1, race c2,int q2, race c3,int q3, place p)
+{
+	mis_kill_race_loc_3	[Go to $p$ and kill :\n
+							 - $q1$ of any type of $c1$\n
+							 - $q2$ of any type of $c2$\n
+							 - $q3$ of any type of $c3$]
+}
+
+MIS_KILL_RACE_LOC_4(race c1,int q1, race c2,int q2, race c3,int q3, race c4,int q4, place p)
+{
+	mis_kill_race_loc_4	[Go to $p$ and kill :\n
+							 - $q1$ of any type of $c1$\n
+							 - $q2$ of any type of $c2$\n
+							 - $q3$ of any type of $c3$\n
+							 - $q4$ of any type of $c4$]
+}
+
+//kill group of NPCs-------------------------------------------------------------------------------
+MIS_KILL_GROUP(bot_name group_name)
+{
+	mis_kill_group	[Eliminez $group_name$]
+}
+
+//kill npc-----------------------------------------------------------------------------------------
+MIS_KILL_NPC_1(bot b1)
+{
+	mis_kill_npc_1		[Kill $b1$]
+}
+
+MIS_KILL_NPC_2(bot b1, bot b2)
+{
+	mis_kill_npc_2		[Kill :\n
+						 - $b1$\n
+						 - $b2$]
+}
+
+MIS_KILL_NPC_3(bot b1, bot b2, bot b3)
+{
+	mis_kill_npc_3		[Kill :\n
+						 - $b1$\n
+						 - $b2$\n
+						 - $b3$]
+}
+
+MIS_KILL_NPC_4(bot b1, bot b2, bot b3, bot b4)
+{
+	mis_kill_npc_4		[Kill :\n
+						 - $b1$\n
+						 - $b2$\n
+						 - $b3$\n
+						 - $b4$]
+}
+
+//kill npc in specific place-----------------------------------------------------------------------
+MIS_KILL_NPC_LOC_1(bot b1, place p)
+{
+	mis_kill_npc_loc_1		[Go to $p$ and kill $b1$]
+}
+
+MIS_KILL_NPC_LOC_2(bot b1, bot b2, place p)
+{
+	mis_kill_npc_loc_2		[Go to $p$ and kill :\n
+							 - $b1$\n
+							 - $b2$]
+}
+
+MIS_KILL_NPC_LOC_3(bot b1, bot b2, bot b3, place p)
+{
+	mis_kill_npc_loc_3		[Go to $p$ and kill :\n
+							 - $b1$\n
+							 - $b2$\n
+							 - $b3$]
+}
+
+MIS_KILL_NPC_LOC_4(bot b1, bot b2, bot b3, bot b4, place p)
+{
+	mis_kill_npc_loc_4		[Go to $p$ and kill :\n
+							 - $b1$\n
+							 - $b2$\n
+							 - $b3$\n
+							 - $b4$]
+}
+
+//give item------------------------------------------------------------------------------------
+MIS_GIVE_ITEM_1(item i1, int q1, bot b)
+{
+	mis_give_item_1	[Give $q1$ $i1$ to $b$]
+}
+
+MIS_GIVE_ITEM_2(item i1, int q1, item i2, int q2, bot b)
+{
+	mis_give_item_2	[Give :\n
+					 - $q1$ $i1$\n
+					 - $q2$ $i2$\n
+					 to $b$]
+}
+
+MIS_GIVE_ITEM_3(item i1, int q1, item i2, int q2, item i3, int q3, bot b)
+{
+	mis_give_item_3	[Give :\n
+					 - $q1$ $i1$\n
+					 - $q2$ $i2$\n
+					 - $q3$ $i3$\n
+					 to $b$]
+}
+
+MIS_GIVE_ITEM_4(item i1, int q1, item i2, int q2, item i3, int q3, item i4, int q4, bot b)
+{
+	mis_give_item_4	[Give :\n
+					 - $q1$ $i1$\n
+					 - $q2$ $i2$\n
+					 - $q3$ $i3$\n
+					 - $q4$ $i4$\n
+					 to $b$]
+}
+
+MIS_GIVE_ITEM_5(item i1, int q1, item i2, int q2, item i3, int q3, item i4, int q4, item i5, int q5, bot b)
+{
+	mis_give_item_5	[Give :\n
+					 - $q1$ $i1$\n
+					 - $q2$ $i2$\n
+					 - $q3$ $i3$\n
+					 - $q4$ $i4$\n
+					 - $q5$ $i5$\n
+					 to $b$]
+}
+
+MIS_GIVE_ITEM_6(item i1, int q1, item i2, int q2, item i3, int q3, item i4, int q4, item i5, int q5, item i6, int q6, bot b)
+{
+	mis_give_item_6	[Give :\n
+					 - $q1$ $i1$\n
+					 - $q2$ $i2$\n
+					 - $q3$ $i3$\n
+					 - $q4$ $i4$\n
+					 - $q5$ $i5$\n
+					 - $q6$ $i6$\n
+					 to $b$]
+}
+MIS_GIVE_ITEM_7(item i1, int q1, item i2, int q2, item i3, int q3, item i4, int q4, item i5, int q5, item i6, int q6, item i7, int q7, bot b)
+{
+	mis_give_item_7	[Give :\n
+					 - $q1$ $i1$\n
+					 - $q2$ $i2$\n
+					 - $q3$ $i3$\n
+					 - $q4$ $i4$\n
+					 - $q5$ $i5$\n
+					 - $q6$ $i6$\n
+					 - $q7$ $i7$\n
+					 to $b$]
+}
+MIS_GIVE_ITEM_8(item i1, int q1, item i2, int q2, item i3, int q3, item i4, int q4, item i5, int q5, item i6, int q6, item i7, int q7, item i8, int q8, bot b)
+{
+	mis_give_item_8	[Give :\n
+					 - $q1$ $i1$\n
+					 - $q2$ $i2$\n
+					 - $q3$ $i3$\n
+					 - $q4$ $i4$\n
+					 - $q5$ $i5$\n
+					 - $q6$ $i6$\n
+					 - $q7$ $i7$\n
+					 - $q8$ $i8$\n
+					 to $b$]
+}
+MIS_GIVE_ITEM_9(item i1, int q1, item i2, int q2, item i3, int q3, item i4, int q4, item i5, int q5, item i6, int q6, item i7, int q7, item i8, int q8, item i9, int q9, bot b)
+{
+	mis_give_item_9	[Give :\n
+					 - $q1$ $i1$\n
+					 - $q2$ $i2$\n
+					 - $q3$ $i3$\n
+					 - $q4$ $i4$\n
+					 - $q5$ $i5$\n
+					 - $q6$ $i6$\n
+					 - $q7$ $i7$\n
+					 - $q8$ $i8$\n
+					 - $q9$ $i9$\n
+					 to $b$]
+}
+MIS_GIVE_ITEM_10(item i1, int q1, item i2, int q2, item i3, int q3, item i4, int q4, item i5, int q5, item i6, int q6, item i7, int q7, item i8, int q8, item i9, int q9, item i10, int q10, bot b)
+{
+	mis_give_item_10	[Give :\n
+					 - $q1$ $i1$\n
+					 - $q2$ $i2$\n
+					 - $q3$ $i3$\n
+					 - $q4$ $i4$\n
+					 - $q5$ $i5$\n
+					 - $q6$ $i6$\n
+					 - $q7$ $i7$\n
+					 - $q8$ $i8$\n
+					 - $q9$ $i9$\n
+					 - $q10$ $i10$\n
+					 to $b$]
+}
+MIS_GIVE_ITEM_11(item i1, int q1, item i2, int q2, item i3, int q3, item i4, int q4, item i5, int q5, item i6, int q6, item i7, int q7, item i8, int q8, item i9, int q9, item i10, int q10, item i11, int q11, bot b)
+{
+	mis_give_item_11	[Give :\n
+					 - $q1$ $i1$\n
+					 - $q2$ $i2$\n
+					 - $q3$ $i3$\n
+					 - $q4$ $i4$\n
+					 - $q5$ $i5$\n
+					 - $q6$ $i6$\n
+					 - $q7$ $i7$\n
+					 - $q8$ $i8$\n
+					 - $q9$ $i9$\n
+					 - $q10$ $i10$\n
+					 - $q11$ $i11$\n
+					 to $b$]
+}
+MIS_GIVE_ITEM_12(item i1, int q1, item i2, int q2, item i3, int q3, item i4, int q4, item i5, int q5, item i6, int q6, item i7, int q7, item i8, int q8, item i9, int q9, item i10, int q10, item i11, int q11, item i12, int q12, bot b)
+{
+	mis_give_item_12	[Give :\n
+					 - $q1$ $i1$\n
+					 - $q2$ $i2$\n
+					 - $q3$ $i3$\n
+					 - $q4$ $i4$\n
+					 - $q5$ $i5$\n
+					 - $q6$ $i6$\n
+					 - $q7$ $i7$\n
+					 - $q8$ $i8$\n
+					 - $q9$ $i9$\n
+					 - $q10$ $i10$\n
+					 - $q11$ $i11$\n
+					 - $q12$ $i12$\n
+					 to $b$]
+}
+//give item of specific quality-------------------------------------------------------------------
+MIS_GIVE_ITEM_QUAL_1(item i1, int q1, int ql1, bot b)
+{
+	mis_give_item_qual_1	[Give $q1$ $i1$ of at least quality $ql1$ to $b$]
+}
+
+MIS_GIVE_ITEM_QUAL_2(item i1, int q1, int ql1, item i2, int q2, int ql2, bot b)
+{
+	mis_give_item_qual_2	[Give :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 to $b$]
+}
+
+MIS_GIVE_ITEM_QUAL_3(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, bot b)
+{
+	mis_give_item_qual_3	[Give :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$\n
+							 to $b$]
+}
+
+MIS_GIVE_ITEM_QUAL_4(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4, bot b)
+{
+	mis_give_item_qual_4	[Give :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$\n
+							 - $q4$ $i4$ of at least quality $ql4$\n
+							 to $b$]
+}
+
+MIS_GIVE_ITEM_QUAL_5(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4, item i5, int q5, int ql5, bot b)
+{
+	mis_give_item_qual_5	[Give :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$\n
+							 - $q4$ $i4$ of at least quality $ql4$\n
+							 - $q5$ $i5$ of at least quality $ql5$\n
+							 to $b$]
+}
+
+MIS_GIVE_ITEM_QUAL_6(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4, item i5, int q5, int ql5, item i6, int q6, int ql6, bot b)
+{
+	mis_give_item_qual_6	[Give :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$\n
+							 - $q4$ $i4$ of at least quality $ql4$\n
+							 - $q5$ $i5$ of at least quality $ql5$\n
+							 - $q6$ $i6$ of at least quality $ql6$\n
+							 to $b$]
+}
+MIS_GIVE_ITEM_QUAL_7(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4, item i5, int q5, int ql5, item i6, int q6, int ql6, item i7, int q7, int ql7, bot b)
+{
+	mis_give_item_qual_7	[Give :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$\n
+							 - $q4$ $i4$ of at least quality $ql4$\n
+							 - $q5$ $i5$ of at least quality $ql5$\n
+							 - $q6$ $i6$ of at least quality $ql6$\n
+							 - $q7$ $i7$ of at least quality $ql7$\n
+							 to $b$]
+}
+MIS_GIVE_ITEM_QUAL_8(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4, item i5, int q5, int ql5, item i6, int q6, int ql6, item i7, int q7, int ql7, item i8, int q8, int ql8, bot b)
+{
+	mis_give_item_qual_8	[Give :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$\n
+							 - $q4$ $i4$ of at least quality $ql4$\n
+							 - $q5$ $i5$ of at least quality $ql5$\n
+							 - $q6$ $i6$ of at least quality $ql6$\n
+							 - $q7$ $i7$ of at least quality $ql7$\n
+							 - $q8$ $i8$ of at least quality $ql8$\n
+							 to $b$]
+}
+MIS_GIVE_ITEM_QUAL_9(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4, item i5, int q5, int ql5, item i6, int q6, int ql6, item i7, int q7, int ql7, item i8, int q8, int ql8, item i9, int q9, int ql9, bot b)
+{
+	mis_give_item_qual_9	[Give :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$\n
+							 - $q4$ $i4$ of at least quality $ql4$\n
+							 - $q5$ $i5$ of at least quality $ql5$\n
+							 - $q6$ $i6$ of at least quality $ql6$\n
+							 - $q7$ $i7$ of at least quality $ql7$\n
+							 - $q8$ $i8$ of at least quality $ql8$\n
+							 - $q9$ $i9$ of at least quality $ql9$\n
+							 to $b$]
+}
+MIS_GIVE_ITEM_QUAL_10(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4, item i5, int q5, int ql5, item i6, int q6, int ql6, item i7, int q7, int ql7, item i8, int q8, int ql8, item i9, int q9, int ql9, item i10, int q10, int ql10, bot b)
+{
+	mis_give_item_qual_10	[Give :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$\n
+							 - $q4$ $i4$ of at least quality $ql4$\n
+							 - $q5$ $i5$ of at least quality $ql5$\n
+							 - $q6$ $i6$ of at least quality $ql6$\n
+							 - $q7$ $i7$ of at least quality $ql7$\n
+							 - $q8$ $i8$ of at least quality $ql8$\n
+							 - $q9$ $i9$ of at least quality $ql9$\n
+							 - $q10$ $i10$ of at least quality $ql10$\n
+							 to $b$]
+}
+MIS_GIVE_ITEM_QUAL_11(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4, item i5, int q5, int ql5, item i6, int q6, int ql6, item i7, int q7, int ql7, item i8, int q8, int ql8, item i9, int q9, int ql9, item i10, int q10, int ql10, item i11, int q11, int ql11, bot b)
+{
+	mis_give_item_qual_11	[Give :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$\n
+							 - $q4$ $i4$ of at least quality $ql4$\n
+							 - $q5$ $i5$ of at least quality $ql5$\n
+							 - $q6$ $i6$ of at least quality $ql6$\n
+							 - $q7$ $i7$ of at least quality $ql7$\n
+							 - $q8$ $i8$ of at least quality $ql8$\n
+							 - $q9$ $i9$ of at least quality $ql9$\n
+							 - $q10$ $i10$ of at least quality $ql10$\n
+							 - $q11$ $i11$ of at least quality $ql11$\n
+							 to $b$]
+}
+MIS_GIVE_ITEM_QUAL_12(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4, item i5, int q5, int ql5, item i6, int q6, int ql6, item i7, int q7, int ql7, item i8, int q8, int ql8, item i9, int q9, int ql9, item i10, int q10, int ql10, item i11, int q11, int ql11, item i12, int q12, int ql12, bot b)
+{
+	mis_give_item_qual_12	[Give :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$\n
+							 - $q4$ $i4$ of at least quality $ql4$\n
+							 - $q5$ $i5$ of at least quality $ql5$\n
+							 - $q6$ $i6$ of at least quality $ql6$\n
+							 - $q7$ $i7$ of at least quality $ql7$\n
+							 - $q8$ $i8$ of at least quality $ql8$\n
+							 - $q9$ $i9$ of at least quality $ql9$\n
+							 - $q10$ $i10$ of at least quality $ql10$\n
+							 - $q11$ $i11$ of at least quality $ql11$\n
+							 - $q12$ $i12$ of at least quality $ql12$\n
+							 to $b$]
+}
+//teach action------------------------------------------------------------------------------------
+MIS_TEACH_ACTION(sphrase action, bot b)
+{
+	mis_teach_action		[Teach $action$ to $b$]
+}
+
+//target npc------------------------------------------------------------------------------------
+MIS_TARGET_NPC_1(bot b1)
+{
+	mis_target_npc_1		[Find and target $b1$]
+}
+
+MIS_TARGET_NPC_2(bot b1, bot b2)
+{
+	mis_target_npc_2		[Find and target :\n
+							 - $b1$\n
+							 - $b2$]
+}
+
+MIS_TARGET_NPC_3(bot b1, bot b2, bot b3)
+{
+	mis_target_npc_3		[Find and target :\n
+							 - $b1$\n
+							 - $b2$\n
+							 - $b3$]
+}
+
+MIS_TARGET_NPC_4(bot b1, bot b2, bot b3, bot b4)
+{
+	mis_target_npc_4		[Find and target :\n
+							 - $b1$\n
+							 - $b2$\n
+							 - $b3$\n
+							 - $b4$]
+}
+
+MIS_TARGET_NPC_PLACE_1(bot b1, place p)
+{
+	mis_target_npc_place_1		[Find and target $b1$ in $p$]
+}
+
+MIS_TARGET_NPC_PLACE_2(bot b1, bot b2, place p)
+{
+	mis_target_npc_place_2		[Find and target :\n
+							 - $b1$\n
+							 - $b2$\n
+					in $p$]
+}
+
+MIS_TARGET_NPC_PLACE_3(bot b1, bot b2, bot b3, place p)
+{
+	mis_target_npc_place_3		[Find and target :\n
+							 - $b1$\n
+							 - $b2$\n
+							 - $b3$\n
+					in $p$]
+}
+
+MIS_TARGET_NPC_PLACE_4(bot b1, bot b2, bot b3, bot b4, place p)
+{
+	mis_target_npc_place_4		[Find and target :\n
+							 - $b1$\n
+							 - $b2$\n
+							 - $b3$\n
+							 - $b4$\n
+					in $p$]
+}
+
+//target fauna------------------------------------------------------------------------------------
+MIS_TARGET_FAUNA_1(creature_model c1)
+{
+	mis_target_fauna_1		[Find and target $c1.ia$ $c1$]
+}
+
+MIS_TARGET_FAUNA_2(creature_model c1, creature_model c2)
+{
+	mis_target_fauna_2		[Find and target :\n
+							 - $c1.ia$ $c1$\n
+							 - $c2.ia$ $c2$]
+}
+
+MIS_TARGET_FAUNA_3(creature_model c1, creature_model c2, creature_model c3)
+{
+	mis_target_fauna_3		[Find and target :\n
+							 - $c1.ia$ $c1$\n
+							 - $c2.ia$ $c2$\n
+							 - $c3.ia$ $c3$]
+}
+
+MIS_TARGET_FAUNA_4(creature_model c1, creature_model c2, creature_model c3, creature_model c4)
+{
+	mis_target_fauna_4		[Find and target :\n
+							 - $c1.ia$ $c1$\n
+							 - $c2.ia$ $c2$\n
+							 - $c3.ia$ $c3$\n
+							 - $c4.ia$ $c4$]
+}
+
+MIS_TARGET_FAUNA_PLACE_1(creature_model c1, place p)
+{
+	mis_target_fauna_place_1		[Find and target $c1.ia$ $c1$ in $p$]
+}
+
+MIS_TARGET_FAUNA_PLACE_2(creature_model c1, creature_model c2, place p)
+{
+	mis_target_fauna_place_2		[Find and target :\n
+							 - $c1.ia$ $c1$\n
+							 - $c2.ia$ $c2$\n
+					in $p$]
+}
+
+MIS_TARGET_FAUNA_PLACE_3(creature_model c1, creature_model c2, creature_model c3, place p)
+{
+	mis_target_fauna_place_3		[Find and target :\n
+							 - $c1.ia$ $c1$\n
+							 - $c2.ia$ $c2$\n
+							 - $c3.ia$ $c3$\n
+					in $p$]
+}
+
+MIS_TARGET_FAUNA_PLACE_4(creature_model c1, creature_model c2, creature_model c3, creature_model c4, place p)
+{
+	mis_target_fauna_place_4		[Find and target :\n
+							 - $c1.ia$ $c1$\n
+							 - $c2.ia$ $c2$\n
+							 - $c3.ia$ $c3$\n
+							 - $c4.ia$ $c4$\n
+					in $p$]
+}
+
+//target species--------------------------------------------------------------------------------
+MIS_TARGET_SPECIES_1(race r1)
+{
+	mis_target_species_1		[Find and target $r1.ia$ $r1$]
+}
+
+MIS_TARGET_SPECIES_2(race r1, race r2)
+{
+	mis_target_species_2		[Find and target :\n
+							 - $r1.ia$ $r1$\n
+							 - $r2.ia$ $r2$]
+}
+
+MIS_TARGET_SPECIES_3(race r1, race r2, race r3)
+{
+	mis_target_species_3		[Find and target :\n
+							 - $r1.ia$ $r1$\n
+							 - $r2.ia$ $r2$\n
+							 - $r3.ia$ $r3$]
+}
+
+MIS_TARGET_SPECIES_4(race r1, race r2, race r3, race r4)
+{
+	mis_target_species_4		[Find and target :\n
+							 - $r1.ia$ $r1$\n
+							 - $r2.ia$ $r2$\n
+							 - $r3.ia$ $r3$\n
+							 - $r4.ia$ $r4$]
+}
+
+MIS_TARGET_SPECIES_PLACE_1(race r1, place p)
+{
+	mis_target_species_place_1		[Find and target $r1.ia$ $r1$ in $p$]
+}
+
+MIS_TARGET_SPECIES_PLACE_2(race r1, race r2, place p)
+{
+	mis_target_species_place_2		[Find and target :\n
+							 - $r1.ia$ $r1$\n
+							 - $r2.ia$ $r2$\n
+					in $p$]
+}
+
+MIS_TARGET_SPECIES_PLACE_3(race r1, race r2, race r3, place p)
+{
+	mis_target_species_place_3		[Find and target :\n
+							 - $r1.ia$ $r1$\n
+							 - $r2.ia$ $r2$\n
+							 - $r3.ia$ $r3$\n
+					in $p$]
+}
+
+MIS_TARGET_SPECIES_PLACE_4(race r1, race r2, race r3, race r4, place p)
+{
+	mis_target_species_place_4		[Find and target :\n
+							 - $r1.ia$ $r1$\n
+							 - $r2.ia$ $r2$\n
+							 - $r3.ia$ $r3$\n
+							 - $r4.ia$ $r4$\n
+					in $p$]
+}
+
+//sell item--------------------------------------------------------------------------------
+MIS_SELL_1(item i1, int q1, int ql1)
+{
+	mis_sell_1				[Sell $q1$ $i1$ of at least quality $ql1$]
+}
+
+MIS_SELL_2(item i1, int q1, int ql1, item i2, int q2, int ql2)
+{
+	mis_sell_2				[Sell :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$]
+}
+
+MIS_SELL_3(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3)
+{
+	mis_sell_3				[Sell :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$]
+}
+
+MIS_SELL_4(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4)
+{
+	mis_sell_4				[Sell :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$\n
+							 - $q4$ $i4$ of at least quality $ql4$]
+}
+
+//sell item to specific NPC------------------------------------------------------------------
+MIS_SELL_NPC_1(item i1, int q1, int ql1, bot b)
+{
+	mis_sell_npc_1				[Sell $q1$ $i1$ of at least quality $ql1$ to $b$]
+}
+
+MIS_SELL_NPC_2(item i1, int q1, int ql1, item i2, int q2, int ql2, bot b)
+{
+	mis_sell_npc_2				[Sell :\n
+								 - $q1$ $i1$ of at least quality $ql1$\n
+								 - $q2$ $i2$ of at least quality $ql2$\n
+								 to $b$]
+}
+
+MIS_SELL_NPC_3(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, bot b)
+{
+	mis_sell_npc_3				[Sell :\n
+								 - $q1$ $i1$ of at least quality $ql1$\n
+								 - $q2$ $i2$ of at least quality $ql2$\n
+								 - $q3$ $i3$ of at least quality $ql3$\n
+								 to $b$]
+}
+
+MIS_SELL_NPC_4(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4, bot b)
+{
+	mis_sell_npc_4				[Sell :\n
+								 - $q1$ $i1$ of at least quality $ql1$\n
+								 - $q2$ $i2$ of at least quality $ql2$\n
+								 - $q3$ $i3$ of at least quality $ql3$\n
+								 - $q4$ $i4$ of at least quality $ql4$\n
+								 to $b$]
+}
+
+//buy item--------------------------------------------------------------------------------
+MIS_BUY_1(item i1, int q1, int ql1)
+{
+	mis_buy_1				[Buy $q1$ $i1$ of at least quality $ql1$]
+}
+
+MIS_BUY_2(item i1, int q1, int ql1, item i2, int q2, int ql2)
+{
+	mis_buy_2				[Buy :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$]
+}
+
+MIS_BUY_3(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3)
+{
+	mis_buy_3				[Buy :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$]
+}
+
+MIS_BUY_4(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4)
+{
+	mis_buy_4				[Buy :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$\n
+							 - $q4$ $i4$ of at least quality $ql4$]
+}
+
+MIS_BUY_5(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4, item i5, int q5, int ql5)
+{
+	mis_buy_5				[Buy :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$\n
+							 - $q4$ $i4$ of at least quality $ql4$\n
+							 - $q5$ $i5$ of at least quality $ql5$]
+}
+
+MIS_BUY_6(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4, item i5, int q5, int ql5, item i6, int q6, int ql6)
+{
+	mis_buy_6				[Buy :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$\n
+							 - $q4$ $i4$ of at least quality $ql4$\n
+							 - $q5$ $i5$ of at least quality $ql5$\n
+							 - $q6$ $i6$ of at least quality $ql6$]
+}
+
+MIS_BUY_7(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4, item i5, int q5, int ql5, item i6, int q6, int ql6, item i7, int q7, int ql7)
+{
+	mis_buy_7				[Buy :\n
+							 - $q1$ $i1$ of at least quality $ql1$\n
+							 - $q2$ $i2$ of at least quality $ql2$\n
+							 - $q3$ $i3$ of at least quality $ql3$\n
+							 - $q4$ $i4$ of at least quality $ql4$\n
+							 - $q5$ $i5$ of at least quality $ql5$\n
+							 - $q6$ $i6$ of at least quality $ql6$\n
+							 - $q7$ $i7$ of at least quality $ql7$]
+}
+
+//buy item from specific NPC------------------------------------------------------------------
+MIS_BUY_NPC_1(item i1, int q1, int ql1, bot b)
+{
+	mis_buy_npc_1				[Buy $q1$ $i1$ of at least quality $ql1$ from $b$]
+}
+
+MIS_BUY_NPC_2(item i1, int q1, int ql1, item i2, int q2, int ql2, bot b)
+{
+	mis_buy_npc_2				[Buy :\n
+								 - $q1$ $i1$ of at least quality $ql1$\n
+								 - $q2$ $i2$ of at least quality $ql2$\n
+								 from $b$]
+}
+
+MIS_BUY_NPC_3(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, bot b)
+{
+	mis_buy_npc_3				[Buy :\n
+								 - $q1$ $i1$ of at least quality $ql1$\n
+								 - $q2$ $i2$ of at least quality $ql2$\n
+								 - $q3$ $i3$ of at least quality $ql3$\n
+								 from $b$]
+}
+
+MIS_BUY_NPC_4(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q3, int ql3, item i4, int q4, int ql4, bot b)
+{
+	mis_buy_npc_4				[Buy :\n
+								 - $q1$ $i1$ of at least quality $ql1$\n
+								 - $q2$ $i2$ of at least quality $ql2$\n
+								 - $q3$ $i3$ of at least quality $ql3$\n
+								 - $q4$ $i4$ of at least quality $ql4$\n
+								 from $b$]
+}	
+
+//escort npc group------------------------------------------------------------------
+MIS_ESCORT()
+{
+	mis_escort	[!!! TO DO!!!]
+}
+
+//visit place-----------------------------------------------------------------------
+MIS_VISIT(place p)
+{
+	mis_visit			[Go to $p$]
+}
+
+//visit place wearing items----------------------------------------------------------
+MIS_VISIT_WEAR_1(place p, item i1)
+{
+	mis_visit_wear_1	[Equip $i1.ia$ $i1$ and go to $p$]
+}
+
+MIS_VISIT_WEAR_2(place p, item i1, item i2)
+{
+	mis_visit_wear_2	[Equip :\n
+						 - $i1.ia$ $i1$\n
+						 - $i2.ia$ $i2$\n
+						 and go to $p$]
+}
+
+MIS_VISIT_WEAR_3(place p, item i1, item i2, item i3)
+{
+	mis_visit_wear_3	[Equip :\n
+						 - $i1.ia$ $i1$\n
+						 - $i2.ia$ $i2$\n
+						 - $i3.ia$ $i3$\n
+						 and go to $p$]
+}
+
+MIS_VISIT_WEAR_4(place p, item i1, item i2, item i3, item i4)
+{
+	mis_visit_wear_4	[Equip :\n
+						 - $i1.ia$ $i1$\n
+						 - $i2.ia$ $i2$\n
+						 - $i3.ia$ $i3$\n
+						 - $i4.ia$ $i4$\n
+						 and go to $p$]
+}
+
+//use item-----------------------------------------------------------------------------
+MIS_USE_1(item i1)
+{
+	mis_use_1			[Use $i1.ia$ $i1$]
+}
+
+MIS_USE_2(item i1, item i2)
+{
+	mis_use_2			[Use :\n
+						 - $i1.ia$ $i1$\n
+						 - $i2.ia$ $i2$]
+}
+
+MIS_USE_3(item i1, item i2, item i3)
+{
+	mis_use_3			[Use :\n
+						 - $i1.ia$ $i1$\n
+						 - $i2.ia$ $i2$\n
+						 - $i3.ia$ $i3$]
+}
+
+MIS_USE_4(item i1, item i2, item i3, item i4)
+{
+	mis_use_4			[Use :\n
+						 - $i1.ia$ $i1$\n
+						 - $i2.ia$ $i2$\n
+						 - $i3.ia$ $i3$\n
+						 - $i4.ia$ $i4$]
+}
+
+//use item at a specific place------------------------------------------------------------------
+MIS_USE_LOC_1(item i1, place p)
+{
+	mis_use_loc_1			[Go to $p$ and use $i1.ia$ $i1$]
+}
+
+MIS_USE_LOC_2(item i1, item i2, place p)
+{
+	mis_use_loc_2			[Go to $p$ and use :\n
+							 - $i1.ia$ $i1$\n
+							 - $i2.ia$ $i2$]
+}
+
+MIS_USE_LOC_3(item i1, item i2, item i3, place p)
+{
+	mis_use_loc_3			[Go to $p$ and use :\n
+							 - $i1.ia$ $i1$\n
+							 - $i2.ia$ $i2$\n
+							 - $i3.ia$ $i3$]
+}
+
+MIS_USE_LOC_4(item i1, item i2, item i3, item i4, place p)
+{
+	mis_use_loc_4			[Go to $p$ and use :\n
+							 - $i1.ia$ $i1$\n
+							 - $i2.ia$ $i2$\n
+							 - $i3.ia$ $i3$\n
+							 - $i4.ia$ $i4$]
+}
+
+//cast spell-----------------------------------------------------------------------------
+MIS_CAST_1(sbrick i1)
+{
+	mis_cast_1			[Cast $i1$]
+}
+
+MIS_CAST_2(sbrick i1, sbrick i2)
+{
+	mis_cast_2			[Cast :\n
+						 - $i1$\n
+						 - $i2$]
+}
+
+MIS_CAST_3(sbrick i1, sbrick i2, sbrick i3)
+{
+	mis_cast_3			[Cast :\n
+						 - $i1$\n
+						 - $i2$\n
+						 - $i3$]
+}
+
+MIS_CAST_4(sbrick i1, sbrick i2, sbrick i3, sbrick i4)
+{
+	mis_cast_4			[Cast :\n
+						 - $i1$\n
+						 - $i2$\n
+						 - $i3$\n
+						 - $i4$]
+}
+
+//cast spell at a specific place------------------------------------------------------------------
+MIS_CAST_LOC_1(sbrick i1, place p)
+{
+	mis_cast_loc_1			[Go to $p$ and cast $i1$]
+}
+
+MIS_CAST_LOC_2(sbrick i1, sbrick i2, place p)
+{
+	mis_cast_loc_2			[Go to $p$ and cast :\n
+							 - $i1$\n
+							 - $i2$]
+}
+
+MIS_CAST_LOC_3(sphrase i1, sphrase i2, sphrase i3, place p)
+{
+	mis_cast_loc_3			[Go to $p$ and cast :\n
+							 - $i1$\n
+							 - $i2$\n
+							 - $i3$]
+}
+
+MIS_CAST_LOC_4(sbrick i1, sbrick i2, sbrick i3, sbrick i4, place p)
+{
+	mis_cast_loc_4			[Go to $p$ and cast :\n
+							 - $i1$\n
+							 - $i2$\n
+							 - $i3$\n
+							 - $i4$]
+}
+
+//reach a specific level in specific skill-----------------------------------------------------
+MIS_SKILL_1(skill s1, int l1)
+{
+	mis_skill_1				[Reach level $l1$ in your $s1$ skill]
+}
+
+MIS_SKILL_2(skill s1, int l1, skill s2, int l2)
+{
+	mis_skill_2				[Reach :\n
+							 - level $l1$ in your $s1$ skill\n
+							 - level $l2$ in your $s2$ skill]
+}
+
+MIS_SKILL_3(skill s1, int l1, skill s2, int l2, skill s3, int l3)
+{
+	mis_skill_3				[Reach :\n
+							 - level $l1$ in your $s1$ skill\n
+							 - level $l2$ in your $s2$ skill\n
+							 - level $l3$ in your $s3$ skill]
+}
+
+MIS_SKILL_4(skill s1, int l1, skill s2, int l2, skill s3, int l3, skill s4, int l4)
+{
+	mis_skill_4				[Reach :\n
+							 - level $l1$ in your $s1$ skill\n
+							 - level $l2$ in your $s2$ skill\n
+							 - level $l3$ in your $s3$ skill\n
+							 - level $l4$ in your $s4$ skill]
+}
+
+//wait time----------------------------------------------------------------------------------------
+MIS_WAIT_TIME()
+{
+	mis_wait_time	[!!! TO DO !!!]
+}
+
+//wait season--------------------------------------------------------------------------------------
+MIS_WAIT_SEASON()
+{
+	mis_wait_season	[!!! TO DO !!!]
+}
+
+//give money---------------------------------------------------------------------------------------
+MIS_GIVE_MONEY(int amount, bot b)
+{
+	mis_give_money	[Give $amount$ <money X> to $b$]
+}
+
+//kill faction-------------------------------------------------------------------------------------
+MIS_KILL_FACTION (faction f, int qt)
+{
+	mis_kill_faction [Kill $qt$ $f.member$.]
+}
+
+MIS_KILL_FACTION_LOC (faction f, int qt, place p)
+{
+	mis_kill_faction_loc [Kill $qt$ $f.member$ in $p$.]
+}
+
+//kill npc by name-------------------------------------------------------------------------------------
+MIS_KILL_NPC_BY_NAME ( bot_name b, int qt )
+{
+	[Kill $qt$ $b$]
+}
+
+MIS_KILL_NPC_BY_NAME_LOC ( bot_name b, int qt, place p )
+{
+	[Go to $p$ and Kill $qt$ $b$]
+}
+
+/////////////////////////////////CONSTRAINTS//////////////////////////////////////////////////////
+
+//place constraints------------------------------------------------------------------------
+//generic inside place constraint 3d message
+MIS_INSIDE(place p)
+{
+	mis_inside	[You must go back quickly to $p$]
+}
+
+//generic outside place constraint 3d message
+MIS_OUTSIDE(place p)
+{
+	mis_outside	[You must quit $p$ quickly]
+}
+
+//wear------------------------------------------------------------------------------------
+MIS_WEAR_1(item i1)
+{
+	mis_wear_1	[You must wear $i1.ia$ $i1$]
+}
+
+MIS_WEAR_2(item i1, item i2)
+{
+	mis_wear_2	[You must wear :\n
+				 - $i1.ia$ $i1$\n
+				 - $i2.ia$ $i2$]
+}
+
+MIS_WEAR_3(item i1, item i2, item i3)
+{
+	mis_wear_3	[You must wear :\n
+				 - $i1.ia$ $i1$\n
+				 - $i2.ia$ $i2$\n
+				 - $i3.ia$ $i3$]
+}
+
+MIS_WEAR_4(item i1, item i2, item i3, item i4)
+{
+	mis_wear_4	[You must wear :\n
+				 - $i1.ia$ $i1$\n
+				 - $i2.ia$ $i2$\n
+				 - $i3.ia$ $i3$\n
+				 - $i4.ia$ $i4$]
+}
+
+/////////////////////////////////MENUS//////////////////////////////////////////////////////
+	
+//generic mission teleport menu------------------------------------------------------------
+MIS_TELEPORT(place p)
+{
+	mis_teleport		[Teleport to $p$]
+}
+
+//generic give item menu--------------------------------------------------------------------
+MIS_GIVE_ITEM_MENU(int item_count)
+{
+	mis_give_item_menu [Give $item_count$ item]
+}
+
+
+//generic give money menu--------------------------------------------------------------------
+MIS_GIVE_MONEY_MENU()
+{
+	mis_give_money_menu [Give Money]
+}
+
+//generic teach action menu-----------------------------------------------------------------
+MIS_TEACH_ACTION_MENU()
+{
+	mis_teach_action_menu	[Teach action]
+}
+
+/////////////////////////////////ACTIONS//////////////////////////////////////////////////////
+
+//generic receive item------------------------------------------------------------------------
+MIS_RECV_ITEM(item i, int qt, int ql)
+{
+	(qt = 1)
+		mis_recv_item_1 [You received $i.ia$ $i$ of quality $ql$]
+		
+	mis_recv_item_some [You received $qt$ $i.p$ of quality $ql$]
+}
+
+//generic receive named item
+MIS_RECV_NAMED_ITEM(dyn_string_id id, int qt)
+{
+	(qt = 1)
+		mis_recv_named_item_1 [You received '$id$']
+		
+	mis_recv_named_item_some [You received $qt$ '$id$']
+}
+
+//generic destroy items
+MIS_DESTROY_ITEM(bot b, item i, int qt, int ql)
+{
+	(qt = 1)
+		mis_destroy_item_1 [$b$ vous a pris $i.ia$ $i$ de qualité $ql$ ou plus]
+		
+	mis_destroy_item_some [$b$ vous a pris $qt$ $i.p$ de qualité $ql$ ou plus]
+}
+
+//generic receive item from specific NPC----------------------------------------------------------
+MIS_RECV_ITEM_NPC(item i, int qt, int ql, bot b)
+{
+	(qt = 1)
+		mis_recv_item_npc_1 [$b$ gives you $i.ia$ $i$ of quality $ql$]
+		
+	mis_recv_item_npc_some [$b$ gives you $qt$ $i.p$ of quality $ql$]
+}
+
+//generic receive action---------------------------------------------------------------------------
+MIS_RECV_ACTION_1(sphrase a1)
+{	
+	mis_recv_action_1	[You learn $a1$]
+}
+
+MIS_RECV_ACTION_2(sphrase a1, sphrase a2)
+{	
+	mis_recv_action_2	[You learn :\n
+						 - $a1$\n
+						 - $a2$]
+}
+
+MIS_RECV_ACTION_3(sphrase a1, sphrase a2, sphrase a3)
+{	
+	mis_recv_action_3	[You learn :\n
+						 - $a1$\n
+						 - $a2$\n
+						 - $a3$]
+}
+
+MIS_RECV_ACTION_4(sphrase a1, sphrase a2, sphrase a3, sphrase a4)
+{	
+	mis_recv_action_4	[You learn :\n
+						 - $a1$\n
+						 - $a2$\n
+						 - $a3$\n
+						 - $a4$]
+}
+
+//generic receive action from specific NPC-------------------------------------------------------------
+MIS_RECV_ACTION_NPC_1(sphrase a1, bot b)
+{	
+	mis_recv_action_npc_1	[$b$ teaches you $a1$]
+}
+
+MIS_RECV_ACTION_NPC_2(sphrase a1, sphrase a2, bot b)
+{	
+	mis_recv_action_npc_2	[$b$ teaches you :\n
+							 - $a1$\n
+							 - $a2$]
+}
+
+MIS_RECV_ACTION_NPC_3(sphrase a1, sphrase a2, sphrase a3, bot b)
+{	
+	mis_recv_action_npc_3	[$b$ teaches you :\n
+							 - $a1$\n
+							 - $a2$\n
+							 - $a3$]
+}
+
+MIS_RECV_ACTION_NPC_4(sphrase a1, sphrase a2, sphrase a3, sphrase a4, bot b)
+{	
+	mis_recv_action_npc_4	[$b$ teaches you :\n
+							 - $a1$\n
+							 - $a2$\n
+							 - $a3$\n
+							 - $a4$]
+}
+
+//generic receive brick---------------------------------------------------------------------------
+MIS_RECV_BRICK_1(sbrick b1)
+{	
+	mis_recv_brick_1	[You learn $b1$]
+}
+
+MIS_RECV_BRICK_2(sbrick b1, sbrick b2)
+{	
+	mis_recv_brick_2	[You learn :\n
+						 - $b1$\n
+						 - $b2$]
+}
+
+MIS_RECV_BRICK_3(sbrick b1, sbrick b2, sbrick b3)
+{	
+	mis_recv_brick_3	[You learn :\n
+						 - $b1$\n
+						 - $b2$\n
+						 - $b3$]
+}
+
+MIS_RECV_BRICK_4(sbrick b1, sbrick b2, sbrick b3, sbrick b4)
+{	
+	mis_recv_brick_4	[You learn :\n
+						 - $b1$\n
+						 - $b2$\n
+						 - $b3$\n
+						 - $b4$]
+}
+
+//generic receive action from specific NPC-------------------------------------------------------------
+MIS_RECV_BRICK_NPC_1(sbrick b1, bot b)
+{	
+	mis_recv_brick_npc_1	[$b$ teaches you $b1$]
+}
+
+MIS_RECV_BRICK_NPC_2(sbrick b1, sbrick b2, bot b)
+{	
+	mis_recv_brick_npc_2	[$b$ teaches you :\n
+							 - $b1$\n
+							 - $b2$]
+}
+
+MIS_RECV_BRICK_NPC_3(sbrick b1, sbrick b2, sbrick b3, bot b)
+{	
+	mis_recv_brick_npc_3	[$b$ teaches you :\n
+							 - $b1$\n
+							 - $b2$\n
+							 - $b3$]
+}
+
+MIS_RECV_BRICK_NPC_4(sbrick b1, sbrick b2, sbrick b3, sbrick b4, bot b)
+{	
+	mis_recv_brick_npc_4	[$b$ teaches you :\n
+							 - $b1$\n
+							 - $b2$\n
+							 - $b3$\n
+							 - $b4$]
+}
+//generic receive xp--------------------------------------------------------------------------------
+MIS_RECV_XP(int xp)
+{
+	mis_recv_xp [You gained $xp$ skill points]
+}
+
+//generic receive money-----------------------------------------------------------------------------
+MIS_RECV_MONEY(int money)
+{
+	mis_recv_money [You gained $money$ <money X>]
+}
+
+//generic receive fame-----------------------------------------------------------------------------
+MIS_RECV_FAME()
+{
+	mis_recv_fame	[!!! TO DO !!!]
+}
+
+//mission failed-----------------------------------------------------------------------------------
+MIS_FAIL()
+{
+	mis_fail		[!!! TO DO !!!]
+}
+
+/********************************************************************************************
+	NOT HARD CODED : mission specific
+
+********************************************************************************************/
+
+/////////////////////////////////MENUS//////////////////////////////////////////////////////
+	
+DEFAULT_KILLED_CREATURE_TALKMENU(bot target, creature_model killed)
+{
+	default_killed_creature_talkmenu	[I killed $killed.ia$ $killed$.]
+}
+
+DEFAULT_KILLED_CREATURES_TALKMENU(bot target)
+{
+	default_killed_creatures_talkmenu	[I killed the creatures.]
+}
+
+DEFAULT_KILLED_SPECIES_TALKMENU(bot target, race species)
+{
+	default_killed_species_talkmenu	[I killed $species.da$ $species.p$.]
+}
+
+DEFAULT_FOUND_RM_TALKMENU(bot target, item rawmat)
+{
+	default_found_rm_talkmenu	[I found $rawmat.ia$ $rawmat$.]
+}
+
+DEFAULT_FOUND_RMS_TALKMENU(bot target)
+{
+	default_found_rms_talkmenu		[I found the raw materials.]
+}
+
+DEFAULT_CRAFTED_ITEM_TALKMENU(bot target, item crafted)
+{
+	default_crafted_item_talkmenu	[I crafted $crafted.da$ $crafted$]
+}
+
+DEFAULT_CRAFTED_ITEMS_TALKMENU(bot target)
+{
+	default_crafted_items_talkmenu	[I crafted the items]
+}
+
+DEFAULT_SENT_ME_TALKMENU(bot target, bot previous)
+{
+	default_sent_me_talkmenu	[$previous$ sent me...]
+}
+
+DEFAULT_SENT_ME_NAME_TALKMENU(bot target, bot_name previous)
+{
+	default_sent_me_name_talkmenu	[$previous$ sent me...]
+}
+
+DEFAULT_PROGRESS_TALKMENU(bot target, skill s)
+{
+	default_progress_talkmenu	[I progressed in $s$]
+}
+
+DEFAULT_GIVE_1_ITEM_MENU(int item_count, item i)
+{
+	default_give_1_item_menu	[Give $i$]
+}
+
+DEFAULT_KILLED_CREATURE_GROUP_TALKMENU(bot target, creature_model target)
+{
+	default_killed_creature_group_talkmenu	[We killed $target.ia$ $target$.]
+}
+
+DEFAULT_KILLED_CREATURES_GROUP_TALKMENU(bot target)
+{
+	default_killed_creatures_group_talkmenu	[We killed the creatures.]
+}
+DEFAULT_SENT_US_TALKMENU(bot target, bot previous)
+{
+	default_sent_us_talkmenu	[$previous$ sent us...]
+}
+
+DEFAULT_DID_IT_TALKMENU(bot target)
+{
+	default_did_it_talkmenu		[I did it...]
+}
+/////////////////////////////////OBJECTIFS//////////////////////////////////////////////////////
+
+MIS_GIVE_MISSION_ITEM(item i, int qt, bot b)
+{
+	mis_give_mission_item		[Give $i$ to $b$]
+}
+
+DEFAULT_TALK_TO_BOT_NAME (bot b, bot_name bn)
+{
+	default_talk_to_bot_name	[Talk to $bn$]
+}
+
+/////////////////////////////////ACTIONS//////////////////////////////////////////////////////
+
+
+/////////////////////////////////INTERACTIVE BOT CHAT/////////////////////////////////////////////////////////
+
+ANSWER_NEXT ()
+{
+	answer_next	[Tell me more]
+}
+
+ANSWER_BYE ()
+{
+	answer_bye	[Bye!]
+}
+
+ANSWER_OK ()
+{
+	answer_ok	[Ok]
+}
+
+ANSWER_SKIP ()
+{
+	answer_skip	[Don't bother me...]
+}
+
+ANSWER_NO ()
+{
+	answer_no	[I'm not interested.]
+}
+
+ANSWER_GROUP_NO ()
+{
+	answer_group_no	[We're not interested.]
+}
+
+
+/////////////////////////////// Charge & outpost related ///////////////////////////////
+MIS_GAIN_CONTROL(place outpost_name)
+{
+	mis_gain_control [Prendre le contrôle de $outpost_name$]
+}
+
+MIS_GIVE_CONTROL(place outpost_name)
+{
+	mis_give_control [Votre guilde a acquis le contrôle de $outpost_name$]
+}
+
+MIS_CHARGE_POINT (int point_needed, int percent_realized)
+{
+	mis_charge_point [Marquer $point_needed$ point de charge\n
+						Vous en avez marquer $percent_realized$%.]
+}
+
+MIS_RECV_CHARGE_POINT (int nb_point)
+{
+	mis_recv_charge_point [Vous avez gagné $nb_point$ point(s) de charge pour votre guilde.]
+}

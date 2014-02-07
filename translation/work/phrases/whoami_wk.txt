@@ -1,0 +1,26 @@
+﻿/**************************************************************************************************************************
+MENUS PHRASES
+**************************************************************************************************************************/
+
+MENU_WHOAMI(player p, bot b)
+{
+		menu_who_am_i			[Who are you?]	
+}
+
+MENU_WHOISKARAVAN(player p, bot b)
+{
+(b.race = karavan)
+menu_who_is_karavan				[What is the Karavan?]	
+}
+
+////////////////////////////////////////////// NEWBIELAND GUARDS /////////////////////////////////////////////////////////////////////////
+WHOAMI_NEWBGUARD 		(player p, bot b)
+{
+	whoami_newbguard	[Greetings, young homin. If you get into bother come and find me and I shall rally to your defense.]
+}
+
+////////////////////////////////////////////// NEWBIELAND MERCHANTS ///////////////////////////////////////////////////////////////////////////
+WHOAMI_NEWBMERCHANT_WEAPON 	()
+{
+whoami_newbmerchant_weapon	[Greetings, young newcomer ! I sell a terrific selection of hand weapons. You'll need a weapon to fight the dangerous animals roaming the area!]
+}

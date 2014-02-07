@@ -1,0 +1,3050 @@
+﻿/** Emotes */
+
+EMOTE_ABSENTMINDED_TARGET (entity a, entity t)
+{
+	emote_absentminded_target	[&EMT&$a$ forgot, $t$.]
+}
+EMOTE_ABSENTMINDED_NOBODY (entity a)
+{
+	emote_absentminded_nobody	[&EMT&$a$ seems like s/he is about to do something, but isn't sure what.]
+}
+EMOTE_ABSENTMINDED_SELF (entity a)
+{
+	emote_absentminded_self	[&EMT&$a$ forgot something. Just doesn't know what.]
+}
+EMOTE_ADVENTUROUS_TARGET (entity a, entity t)
+{
+	emote_adventurous_target	[&EMT&$a$ wants to go adventuring with $t$.]
+}
+EMOTE_ADVENTUROUS_NOBODY (entity a)
+{
+	emote_adventurous_nobody	[&EMT&$a$ needs someone to adventure with!]
+}
+EMOTE_ADVENTUROUS_SELF (entity a)
+{
+	emote_adventurous_self	[&EMT&$a$ is off on another adventure!]
+}
+EMOTE_AGGRESSIVE_TARGET (entity a, entity t)
+{
+	emote_aggressive_target	[&EMT&$a$ gets in $t$'s face.]
+}
+EMOTE_AGGRESSIVE_NOBODY (entity a)
+{
+	emote_aggressive_nobody	[&EMT&$a$ looks ready to start something.]
+}
+EMOTE_AGGRESSIVE_SELF (entity a)
+{
+	emote_aggressive_self	[&EMT&$a$ isn't in the mood to back down.]
+}
+EMOTE_AGREE_TARGET (entity a, entity t)
+{
+	emote_agree_target	[&EMT&$a$ agrees with $t$.]
+}
+EMOTE_AGREE_NOBODY (entity a)
+{
+	emote_agree_nobody	[&EMT&$a$ appears to be agreeable.]
+}
+EMOTE_AGREE_SELF (entity a)
+{
+	emote_agree_self	[&EMT&$a$ agrees with him/herself, so there's no argument.]
+}
+EMOTE_ALERT_TARGET (entity a, entity t)
+{
+	emote_alert_target	[&EMT&$a$ alerts $t$.]
+}
+EMOTE_ALERT_NOBODY (entity a)
+{
+	emote_alert_nobody	[&EMT&$a$ puts everyone on alert.]
+}
+EMOTE_ALERT_SELF (entity a)
+{
+	emote_alert_self	[&EMT&$a$ notifies him/herself of something important.]
+}
+EMOTE_ALTRUIST_TARGET (entity a, entity t)
+{
+	emote_altruist_target	[&EMT&$a$ is impressed at $t$'s generous nature.]
+}
+EMOTE_ALTRUIST_NOBODY (entity a)
+{
+	emote_altruist_nobody	[&EMT&$a$ provides for everyone.]
+}
+EMOTE_ALTRUIST_SELF (entity a)
+{
+	emote_altruist_self	[&EMT&$a$ shares liberally without taking any for him/herself.]
+}
+EMOTE_AMAZED_TARGET (entity a, entity t)
+{
+	emote_amazed_target	[&EMT&$a$ finds $t$ never fails to amaze.]
+}
+EMOTE_AMAZED_NOBODY (entity a)
+{
+	emote_amazed_nobody	[&EMT&$a$ looks around, amazed.]
+}
+EMOTE_AMAZED_SELF (entity a)
+{
+	emote_amazed_self	[&EMT&$a$ ends up amazing him/herself.]
+}
+EMOTE_AMBIVALENT_TARGET (entity a, entity t)
+{
+	emote_ambivalent_target	[&EMT&$a$ indicates to $t$ it doesn't really matter.]
+}
+EMOTE_AMBIVALENT_NOBODY (entity a)
+{
+	emote_ambivalent_nobody	[&EMT&$a$ doesn't have a preference.]
+}
+EMOTE_AMBIVALENT_SELF (entity a)
+{
+	emote_ambivalent_self	[&EMT&$a$ could go either way.]
+}
+EMOTE_AMUSED_TARGET (entity a, entity t)
+{
+	emote_amused_target	[&EMT&$a$ finds $t$ amusing.]
+}
+EMOTE_AMUSED_NOBODY (entity a)
+{
+	emote_amused_nobody	[&EMT&$a$ is amused.]
+}
+EMOTE_AMUSED_SELF (entity a)
+{
+	emote_amused_self	[&EMT&$a$ amuses him/herself.]
+}
+EMOTE_ANGRY_TARGET (entity a, entity t)
+{
+	emote_angry_target	[&EMT&$a$ is quite angry at $t$.]
+}
+EMOTE_ANGRY_NOBODY (entity a)
+{
+	emote_angry_nobody	[&EMT&$a$ frowns, clearly angry.]
+}
+EMOTE_ANGRY_SELF (entity a)
+{
+	emote_angry_self	[&EMT&$a$ can't believe s/he did that, and is so angry at him/herself.]
+}
+EMOTE_ANNOYED_TARGET (entity a, entity t)
+{
+	emote_annoyed_target	[&EMT&$a$ is annoyed at $t$.]
+}
+EMOTE_ANNOYED_NOBODY (entity a)
+{
+	emote_annoyed_nobody	[&EMT&$a$ is annoyed.]
+}
+EMOTE_ANNOYED_SELF (entity a)
+{
+	emote_annoyed_self	[&EMT&$a$ annoys everyone, including him/herself.]
+}
+EMOTE_APATHETIC_TARGET (entity a, entity t)
+{
+	emote_apathetic_target	[&EMT&$a$ knows how $t$ feels, just doesn't seem to care much.]
+}
+EMOTE_APATHETIC_NOBODY (entity a)
+{
+	emote_apathetic_nobody	[&EMT&$a$ doesn't care.]
+}
+EMOTE_APATHETIC_SELF (entity a)
+{
+	emote_apathetic_self	[&EMT&$a$ attempts to muster up a bit of care, and fails.]
+}
+EMOTE_APPROVE_TARGET (entity a, entity t)
+{
+	emote_approve_target	[&EMT&$a$ gives $t$ his/her approval.]
+}
+EMOTE_APPROVE_NOBODY (entity a)
+{
+	emote_approve_nobody	[&EMT&$a$ approves. Thumbs up!]
+}
+EMOTE_APPROVE_SELF (entity a)
+{
+	emote_approve_self	[&EMT&$a$ gives him/herself a seal of approval.]
+}
+EMOTE_ARROGANT_TARGET (entity a, entity t)
+{
+	emote_arrogant_target	[&EMT&$a$ detects a bit of arrogance in $t$, perhaps?]
+}
+EMOTE_ARROGANT_NOBODY (entity a)
+{
+	emote_arrogant_nobody	[&EMT&$a$ can't believe people can be so arrogant.]
+}
+EMOTE_ARROGANT_SELF (entity a)
+{
+	emote_arrogant_self	[&EMT&$a$ is unstoppable.]
+}
+EMOTE_ASHAMED_TARGET (entity a, entity t)
+{
+	emote_ashamed_target	[&EMT&$a$ is ashamed of $t$.]
+}
+EMOTE_ASHAMED_NOBODY (entity a)
+{
+	emote_ashamed_nobody	[&EMT&$a$ is ashamed of all of you!]
+}
+EMOTE_ASHAMED_SELF (entity a)
+{
+	emote_ashamed_self	[&EMT&$a$ is ashamed of him/herself.]
+}
+EMOTE_BELLIGERENT_TARGET (entity a, entity t)
+{
+	emote_belligerent_target	[&EMT&$a$ is wearied by $t$'s belligerent disposition]
+}
+EMOTE_BELLIGERENT_NOBODY (entity a)
+{
+	emote_belligerent_nobody	[&EMT&$a$ looks ready for a fight.]
+}
+EMOTE_BELLIGERENT_SELF (entity a)
+{
+	emote_belligerent_self	[&EMT&$a$ is in obvious disagreement with him/herself.]
+}
+EMOTE_BITTER_TARGET (entity a, entity t)
+{
+	emote_bitter_target	[&EMT&$a$ isn't bitter, $t$, why do you ask?]
+}
+EMOTE_BITTER_NOBODY (entity a)
+{
+	emote_bitter_nobody	[&EMT&$a$ is bitter.]
+}
+EMOTE_BITTER_SELF (entity a)
+{
+	emote_bitter_self	[&EMT&$a$ smiles bitterly.]
+}
+EMOTE_BLOODTHIRSTY_TARGET (entity a, entity t)
+{
+	emote_bloodthirsty_target	[&EMT&$a$ wonders when $t$ got bloodthirsty.]
+}
+EMOTE_BLOODTHIRSTY_NOBODY (entity a)
+{
+	emote_bloodthirsty_nobody	[&EMT&$a$ charges.]
+}
+EMOTE_BLOODTHIRSTY_SELF (entity a)
+{
+	emote_bloodthirsty_self	[&EMT&$a$ isn't afraid of a little blood, in fact, prefers it.]
+}
+EMOTE_BORED_TARGET (entity a, entity t)
+{
+	emote_bored_target	[&EMT&$a$ considers $t$ boring.]
+}
+EMOTE_BORED_NOBODY (entity a)
+{
+	emote_bored_nobody	[&EMT&$a$ is bored]
+}
+EMOTE_BORED_SELF (entity a)
+{
+	emote_bored_self	[&EMT&$a$ is bored with what s/he is doing.]
+}
+EMOTE_BOW_TARGET (entity a, entity t)
+{
+	emote_bow_target	[&EMT&$a$ bows to $t$.]
+}
+EMOTE_BOW_NOBODY (entity a)
+{
+	emote_bow_nobody	[&EMT&$a$ bows respectfully.]
+}
+EMOTE_BOW_SELF (entity a)
+{
+	emote_bow_self	[&EMT&$a$ bows at no one in particular, but ends up touching his/her toes.]
+}
+EMOTE_BRAVE_TARGET (entity a, entity t)
+{
+	emote_brave_target	[&EMT&$a$ thinks $t$ is very brave.]
+}
+EMOTE_BRAVE_NOBODY (entity a)
+{
+	emote_brave_nobody	[&EMT&$a$ gives everyone a speech, encouraging them to be brave.]
+}
+EMOTE_BRAVE_SELF (entity a)
+{
+	emote_brave_self	[&EMT&$a$ gathers up all his/her courage.]
+}
+EMOTE_RICE_TARGET (entity a, entity t)
+{
+	emote_rice_target	[&EMT&$a$ tosses rice at $t$.]
+}
+EMOTE_RICE_NOBODY (entity a)
+{
+	emote_rice_nobody	[&EMT&$a$ tosses rice in celebration.]
+}
+EMOTE_RICE_SELF (entity a)
+{
+	emote_rice_self	[&EMT&$a$ sprinkles rice over him/herself to celebrate.]
+}
+EMOTE_BUBBLY_TARGET (entity a, entity t)
+{
+	emote_bubbly_target	[&EMT&$a$ is amused at how bubbly $t$ is.]
+}
+EMOTE_BUBBLY_NOBODY (entity a)
+{
+	emote_bubbly_nobody	[&EMT&$a$ bubbles over with enthusiasm, which seems catching.]
+}
+EMOTE_BUBBLY_SELF (entity a)
+{
+	emote_bubbly_self	[&EMT&$a$ pours bubbly on him/herself. Oops.]
+}
+EMOTE_BURP_TARGET (entity a, entity t)
+{
+	emote_burp_target	[&EMT&$a$ excuses $t$. That was a loud one!]
+}
+EMOTE_BURP_NOBODY (entity a)
+{
+	emote_burp_nobody	[&EMT&$a$ burps loudly.]
+}
+EMOTE_BURP_SELF (entity a)
+{
+	emote_burp_self	[&EMT&$a$ burps.]
+}
+EMOTE_CALM_TARGET (entity a, entity t)
+{
+	emote_calm_target	[&EMT&$a$ tries to calm $t$.]
+}
+EMOTE_CALM_NOBODY (entity a)
+{
+	emote_calm_nobody	[&EMT&$a$ radiates serenity.]
+}
+EMOTE_CALM_SELF (entity a)
+{
+	emote_calm_self	[&EMT&$a$ is perfectly tranquil and calm.]
+}
+EMOTE_CALMDOWN_TARGET (entity a, entity t)
+{
+	emote_calmdown_target	[&EMT&$a$ looks concerned at $t$ and tells them to calm down.]
+}
+EMOTE_CALMDOWN_NOBODY (entity a)
+{
+	emote_calmdown_nobody	[&EMT&$a$ attempts to calm everyone down.]
+}
+EMOTE_CALMDOWN_SELF (entity a)
+{
+	emote_calmdown_self	[&EMT&$a$ calms down. No sense getting worked up.]
+}
+EMOTE_CAREFUL_TARGET (entity a, entity t)
+{
+	emote_careful_target	[&EMT&$a$ warns $t$ to be careful.]
+}
+EMOTE_CAREFUL_NOBODY (entity a)
+{
+	emote_careful_nobody	[&EMT&$a$ thinks caution is needed here.]
+}
+EMOTE_CAREFUL_SELF (entity a)
+{
+	emote_careful_self	[&EMT&$a$ proceeds, carefully.]
+}
+EMOTE_CARELESS_TARGET (entity a, entity t)
+{
+	emote_careless_target	[&EMT&$a$ wants to know how $t$ could be so careless.]
+}
+EMOTE_CARELESS_NOBODY (entity a)
+{
+	emote_careless_nobody	[&EMT&$a$ thinks someone was careless, but isn't naming names.]
+}
+EMOTE_CARELESS_SELF (entity a)
+{
+	emote_careless_self	[&EMT&$a$ shrugs carelessly.]
+}
+EMOTE_CASUAL_TARGET (entity a, entity t)
+{
+	emote_casual_target	[&EMT&$a$ asks $t$ what's up.]
+}
+EMOTE_CASUAL_NOBODY (entity a)
+{
+	emote_casual_nobody	[&EMT&$a$ looks around casually.]
+}
+EMOTE_CASUAL_SELF (entity a)
+{
+	emote_casual_self	[&EMT&$a$ hangs out.]
+}
+EMOTE_CHAOTIC_TARGET (entity a, entity t)
+{
+	emote_chaotic_target	[&EMT&$a$ wonders if $t$ finds things just as chaotic as s/he does.]
+}
+EMOTE_CHAOTIC_NOBODY (entity a)
+{
+	emote_chaotic_nobody	[&EMT&$a$ finds all of this rather chaotic.]
+}
+EMOTE_CHAOTIC_SELF (entity a)
+{
+	emote_chaotic_self	[&EMT&$a$ revels in the chaos s/he has made.]
+}
+EMOTE_CHEER_TARGET (entity a, entity t)
+{
+	emote_cheer_target	[&EMT&$a$ cheers $t$ on. Go $t$!]
+}
+EMOTE_CHEER_NOBODY (entity a)
+{
+	emote_cheer_nobody	[&EMT&$a$ cheers everyone on.]
+}
+EMOTE_CHEER_SELF (entity a)
+{
+	emote_cheer_self	[&EMT&$a$ cheers. Yay!]
+}
+EMOTE_CLINICAL_TARGET (entity a, entity t)
+{
+	emote_clinical_target	[&EMT&$a$ observes $t$, taking notes.]
+}
+EMOTE_CLINICAL_NOBODY (entity a)
+{
+	emote_clinical_nobody	[&EMT&$a$ surveys the scene with a clinical air.]
+}
+EMOTE_CLINICAL_SELF (entity a)
+{
+	emote_clinical_self	[&EMT&$a$ examines him/herself.]
+}
+EMOTE_COLD_TARGET (entity a, entity t)
+{
+	emote_cold_target	[&EMT&$a$ eyes $t$ coldly.]
+}
+EMOTE_COLD_NOBODY (entity a)
+{
+	emote_cold_nobody	[&EMT&$a$ stares coldly.]
+}
+EMOTE_COLD_SELF (entity a)
+{
+	emote_cold_self	[&EMT&$a$ is cold as ice.]
+}
+EMOTE_COMPASSIONATE_TARGET (entity a, entity t)
+{
+	emote_compassionate_target	[&EMT&$a$ shows great compassion to $t$.]
+}
+EMOTE_COMPASSIONATE_NOBODY (entity a)
+{
+	emote_compassionate_nobody	[&EMT&$a$ smiles sympathetically.]
+}
+EMOTE_COMPASSIONATE_SELF (entity a)
+{
+	emote_compassionate_self	[&EMT&$a$ takes care of him/herself.]
+}
+EMOTE_CONDESCENDING_TARGET (entity a, entity t)
+{
+	emote_condescending_target	[&EMT&$a$ speaks very slowly at $t$.]
+}
+EMOTE_CONDESCENDING_NOBODY (entity a)
+{
+	emote_condescending_nobody	[&EMT&$a$ glances around, feeling superior.]
+}
+EMOTE_CONDESCENDING_SELF (entity a)
+{
+	emote_condescending_self	[&EMT&$a$ doesn't like condescending people.]
+}
+EMOTE_CONFIDENT_TARGET (entity a, entity t)
+{
+	emote_confident_target	[&EMT&$a$ has full confidence in $t$.]
+}
+EMOTE_CONFIDENT_NOBODY (entity a)
+{
+	emote_confident_nobody	[&EMT&$a$ struts about confidently.]
+}
+EMOTE_CONFIDENT_SELF (entity a)
+{
+	emote_confident_self	[&EMT&$a$ has all the confidence s/he needs.]
+}
+EMOTE_CONFUSED_TARGET (entity a, entity t)
+{
+	emote_confused_target	[&EMT&$a$ admits $t$ has him/her confused.]
+}
+EMOTE_CONFUSED_NOBODY (entity a)
+{
+	emote_confused_nobody	[&EMT&$a$ ponders for a while, but ends up confused regardless.]
+}
+EMOTE_CONFUSED_SELF (entity a)
+{
+	emote_confused_self	[&EMT&$a$ has managed to confuse him/herself.]
+}
+EMOTE_CONTEMPTUOUS_TARGET (entity a, entity t)
+{
+	emote_contemptuous_target	[&EMT&$a$ holds $t$ in bitter contempt.]
+}
+EMOTE_CONTEMPTUOUS_NOBODY (entity a)
+{
+	emote_contemptuous_nobody	[&EMT&$a$ scowls contemptuously.]
+}
+EMOTE_CONTEMPTUOUS_SELF (entity a)
+{
+	emote_contemptuous_self	[&EMT&$a$ holds everything in contempt.]
+}
+EMOTE_CONTENT_TARGET (entity a, entity t)
+{
+	emote_content_target	[&EMT&$a$ sighs contentedly at $t$.]
+}
+EMOTE_CONTENT_NOBODY (entity a)
+{
+	emote_content_nobody	[&EMT&$a$ is content.]
+}
+EMOTE_CONTENT_SELF (entity a)
+{
+	emote_content_self	[&EMT&$a$ relaxes, and wouldn't change a thing.]
+}
+EMOTE_COURAGEOUS_TARGET (entity a, entity t)
+{
+	emote_courageous_target	[&EMT&$a$ is inspired by the courageousness of $t$.]
+}
+EMOTE_COURAGEOUS_NOBODY (entity a)
+{
+	emote_courageous_nobody	[&EMT&$a$ goes first, as an example of courage.]
+}
+EMOTE_COURAGEOUS_SELF (entity a)
+{
+	emote_courageous_self	[&EMT&$a$ summons up all his/her courage.]
+}
+EMOTE_COURTLY_TARGET (entity a, entity t)
+{
+	emote_courtly_target	[&EMT&$a$ flourishes at $t$ in a most courtly bow.]
+}
+EMOTE_COURTLY_NOBODY (entity a)
+{
+	emote_courtly_nobody	[&EMT&$a$ bows deeply.]
+}
+EMOTE_COURTLY_SELF (entity a)
+{
+	emote_courtly_self	[&EMT&$a$ proceeds in a regal fashion.]
+}
+EMOTE_COWARD_TARGET (entity a, entity t)
+{
+	emote_coward_target	[&EMT&$a$ calls $t$ a coward.]
+}
+EMOTE_COWARD_NOBODY (entity a)
+{
+	emote_coward_nobody	[&EMT&$a$ isn't a coward.]
+}
+EMOTE_COWARD_SELF (entity a)
+{
+	emote_coward_self	[&EMT&$a$ trembles, and looks for something to hide behind.]
+}
+EMOTE_CRAZY_TARGET (entity a, entity t)
+{
+	emote_crazy_target	[&EMT&$a$ believes $t$ is crazy.]
+}
+EMOTE_CRAZY_NOBODY (entity a)
+{
+	emote_crazy_nobody	[&EMT&$a$ goes crazy.]
+}
+EMOTE_CRAZY_SELF (entity a)
+{
+	emote_crazy_self	[&EMT&$a$ is crazy, but everyone knows it.]
+}
+EMOTE_CRUDE_TARGET (entity a, entity t)
+{
+	emote_crude_target	[&EMT&$a$ makes a crude gesture at $t$.]
+}
+EMOTE_CRUDE_NOBODY (entity a)
+{
+	emote_crude_nobody	[&EMT&$a$ makes a crude gesture to everyone.]
+}
+EMOTE_CRUDE_SELF (entity a)
+{
+	emote_crude_self	[&EMT&$a$ makes a few crude comments to him/herself.]
+}
+EMOTE_CRUEL_TARGET (entity a, entity t)
+{
+	emote_cruel_target	[&EMT&$a$ taunts $t$ cruelly.]
+}
+EMOTE_CRUEL_NOBODY (entity a)
+{
+	emote_cruel_nobody	[&EMT&$a$ narrows his/her eyes, unleashing an unusual amount of cruelty.]
+}
+EMOTE_CRUEL_SELF (entity a)
+{
+	emote_cruel_self	[&EMT&$a$ teases, torments, and taunts. How cruel!]
+}
+EMOTE_CURIOUS_TARGET (entity a, entity t)
+{
+	emote_curious_target	[&EMT&$a$ is curious of $t$.]
+}
+EMOTE_CURIOUS_NOBODY (entity a)
+{
+	emote_curious_nobody	[&EMT&$a$ is curious.]
+}
+EMOTE_CURIOUS_SELF (entity a)
+{
+	emote_curious_self	[&EMT&$a$ wonders about him/herself sometimes.]
+}
+EMOTE_CYNICAL_TARGET (entity a, entity t)
+{
+	emote_cynical_target	[&EMT&$a$ doesn't quite trust $t$.]
+}
+EMOTE_CYNICAL_NOBODY (entity a)
+{
+	emote_cynical_nobody	[&EMT&$a$ generally has a low opinion of the nature of homins.]
+}
+EMOTE_CYNICAL_SELF (entity a)
+{
+	emote_cynical_self	[&EMT&$a$ reaches new levels of cynicism.]
+}
+EMOTE_DAINTY_TARGET (entity a, entity t)
+{
+	emote_dainty_target	[&EMT&$a$ wonders how a dainty creature like $t$ can kill something so big.]
+}
+EMOTE_DAINTY_NOBODY (entity a)
+{
+	emote_dainty_nobody	[&EMT&$a$ only looks dainty, trust him/her.]
+}
+EMOTE_DAINTY_SELF (entity a)
+{
+	emote_dainty_self	[&EMT&$a$ fusses about in a dainty fashion.]
+}
+EMOTE_DANCE_TARGET (entity a, entity t)
+{
+	emote_dance_target	[&EMT&$a$ extends a hand. Would $t$ like to dance?]
+}
+EMOTE_DANCE_NOBODY (entity a)
+{
+	emote_dance_nobody	[&EMT&$a$ gets this party started!]
+}
+EMOTE_DANCE_SELF (entity a)
+{
+	emote_dance_self	[&EMT&$a$ is poetry in motion.]
+}
+EMOTE_DEFENSIVE_TARGET (entity a, entity t)
+{
+	emote_defensive_target	[&EMT&$a$ gets defensive at $t$.]
+}
+EMOTE_DEFENSIVE_NOBODY (entity a)
+{
+	emote_defensive_nobody	[&EMT&$a$ is put on the defensive.]
+}
+EMOTE_DEFENSIVE_SELF (entity a)
+{
+	emote_defensive_self	[&EMT&$a$ defends him/herself.]
+}
+EMOTE_DEPRESSED_TARGET (entity a, entity t)
+{
+	emote_depressed_target	[&EMT&$a$ asks $t$ if s/he is depressed.]
+}
+EMOTE_DEPRESSED_NOBODY (entity a)
+{
+	emote_depressed_nobody	[&EMT&$a$ is depressed.]
+}
+EMOTE_DEPRESSED_SELF (entity a)
+{
+	emote_depressed_self	[&EMT&$a$ could use a good listener.]
+}
+EMOTE_DESIRE_TARGET (entity a, entity t)
+{
+	emote_desire_target	[&EMT&$a$ knows what s/he wants, and it happens to be $t$.]
+}
+EMOTE_DESIRE_NOBODY (entity a)
+{
+	emote_desire_nobody	[&EMT&$a$ figures out what s/he wants.]
+}
+EMOTE_DESIRE_SELF (entity a)
+{
+	emote_desire_self	[&EMT&$a$ knows what s/he wants, and isn't afraid to go get it.]
+}
+EMOTE_DESPAIRED_TARGET (entity a, entity t)
+{
+	emote_despaired_target	[&EMT&$a$ lets $t$ know things are hopeless.]
+}
+EMOTE_DESPAIRED_NOBODY (entity a)
+{
+	emote_despaired_nobody	[&EMT&$a$ is filled with despair.]
+}
+EMOTE_DESPAIRED_SELF (entity a)
+{
+	emote_despaired_self	[&EMT&$a$ despairs; things couldn't get worse.]
+}
+EMOTE_DESTRUCTIVE_TARGET (entity a, entity t)
+{
+	emote_destructive_target	[&EMT&$a$ warns $t$ to stay back.]
+}
+EMOTE_DESTRUCTIVE_NOBODY (entity a)
+{
+	emote_destructive_nobody	[&EMT&$a$ looks ready to destroy something.]
+}
+EMOTE_DESTRUCTIVE_SELF (entity a)
+{
+	emote_destructive_self	[&EMT&$a$ throws things around, raises a fuss, and is in a destructive mood.]
+}
+EMOTE_DIE_TARGET (entity a, entity t)
+{
+	emote_die_target	[&EMT&$a$ checks $t$'s expiration date.]
+}
+EMOTE_DIE_NOBODY (entity a)
+{
+	emote_die_nobody	[&EMT&$a$ faces certain death. Onward!]
+}
+EMOTE_DIE_SELF (entity a)
+{
+	emote_die_self	[&EMT&$a$ wants to have a little fun before s/he dies.]
+}
+EMOTE_DIGNIFIED_TARGET (entity a, entity t)
+{
+	emote_dignified_target	[&EMT&$a$ notes the dignified manner $t$ carries him/herself and acts accordingly.]
+}
+EMOTE_DIGNIFIED_NOBODY (entity a)
+{
+	emote_dignified_nobody	[&EMT&$a$ maintains composure.]
+}
+EMOTE_DIGNIFIED_SELF (entity a)
+{
+	emote_dignified_self	[&EMT&$a$ acts dignified, regardless of the situation at hand.]
+}
+EMOTE_DIPLOMATIC_TARGET (entity a, entity t)
+{
+	emote_diplomatic_target	[&EMT&$a$ engages in diplomatic relations with $t$.]
+}
+EMOTE_DIPLOMATIC_NOBODY (entity a)
+{
+	emote_diplomatic_nobody	[&EMT&$a$ believes some diplomacy would help here.]
+}
+EMOTE_DIPLOMATIC_SELF (entity a)
+{
+	emote_diplomatic_self	[&EMT&$a$ engages in diplomacy with him/herself. Surprisingly, all parties come to an agreement.]
+}
+EMOTE_DISAPPOINTED_TARGET (entity a, entity t)
+{
+	emote_disappointed_target	[&EMT&$a$ lowers his/her head, disappointed at $t$.]
+}
+EMOTE_DISAPPOINTED_NOBODY (entity a)
+{
+	emote_disappointed_nobody	[&EMT&$a$ is clearly disappointed.]
+}
+EMOTE_DISAPPOINTED_SELF (entity a)
+{
+	emote_disappointed_self	[&EMT&$a$ is disappointed in him/herself, and sighs.]
+}
+EMOTE_DISCREET_TARGET (entity a, entity t)
+{
+	emote_discreet_target	[&EMT&$a$ asks $t$ to be discreet.]
+}
+EMOTE_DISCREET_NOBODY (entity a)
+{
+	emote_discreet_nobody	[&EMT&$a$ looks about discreetly.]
+}
+EMOTE_DISCREET_SELF (entity a)
+{
+	emote_discreet_self	[&EMT&$a$ is the very soul of discretion.]
+}
+EMOTE_DISDAINFUL_TARGET (entity a, entity t)
+{
+	emote_disdainful_target	[&EMT&$a$ glares at $t$ distainfully.]
+}
+EMOTE_DISDAINFUL_NOBODY (entity a)
+{
+	emote_disdainful_nobody	[&EMT&$a$ rolls his/her eyes.]
+}
+EMOTE_DISDAINFUL_SELF (entity a)
+{
+	emote_disdainful_self	[&EMT&$a$ knows you all are beneath him/her.]
+}
+EMOTE_DISGRUNTLED_TARGET (entity a, entity t)
+{
+	emote_disgruntled_target	[&EMT&$a$ is disgruntled at $t$.]
+}
+EMOTE_DISGRUNTLED_NOBODY (entity a)
+{
+	emote_disgruntled_nobody	[&EMT&$a$ is just plain disgruntled.]
+}
+EMOTE_DISGRUNTLED_SELF (entity a)
+{
+	emote_disgruntled_self	[&EMT&$a$ grumbles a lot, but proceeds.]
+}
+EMOTE_DISGUSTED_TARGET (entity a, entity t)
+{
+	emote_disgusted_target	[&EMT&$a$ is disgusted at $t$.]
+}
+EMOTE_DISGUSTED_NOBODY (entity a)
+{
+	emote_disgusted_nobody	[&EMT&$a$ is disgusted.]
+}
+EMOTE_DISGUSTED_SELF (entity a)
+{
+	emote_disgusted_self	[&EMT&$a$ tsks, disgusted.]
+}
+EMOTE_DISILLUSIONED_TARGET (entity a, entity t)
+{
+	emote_disillusioned_target	[&EMT&$a$ has his/her illusions shattered by $t$.]
+}
+EMOTE_DISILLUSIONED_NOBODY (entity a)
+{
+	emote_disillusioned_nobody	[&EMT&$a$ isn't quite as hopeful as s/he used to be.]
+}
+EMOTE_DISILLUSIONED_SELF (entity a)
+{
+	emote_disillusioned_self	[&EMT&$a$ is completely disillusioned.]
+}
+EMOTE_DISMAYED_TARGET (entity a, entity t)
+{
+	emote_dismayed_target	[&EMT&$a$ looks dismayed at $t$.]
+}
+EMOTE_DISMAYED_NOBODY (entity a)
+{
+	emote_dismayed_nobody	[&EMT&$a$ is dismayed. This wasn't how things were supposed to go.]
+}
+EMOTE_DISMAYED_SELF (entity a)
+{
+	emote_dismayed_self	[&EMT&$a$ is dismayed at him/herself. This was not what s/he was expecting.]
+}
+EMOTE_DISORIENTED_TARGET (entity a, entity t)
+{
+	emote_disoriented_target	[&EMT&$a$ finds $t$'s instructions a bit disorienting.]
+}
+EMOTE_DISORIENTED_NOBODY (entity a)
+{
+	emote_disoriented_nobody	[&EMT&$a$ turns 'round and 'round and..]
+}
+EMOTE_DISORIENTED_SELF (entity a)
+{
+	emote_disoriented_self	[&EMT&$a$ looks every direction, but is lost.]
+}
+EMOTE_DISTRACTED_TARGET (entity a, entity t)
+{
+	emote_distracted_target	[&EMT&$a$ is distracted by $t$.]
+}
+EMOTE_DISTRACTED_NOBODY (entity a)
+{
+	emote_distracted_nobody	[&EMT&$a$ gazes off into the middle distance.]
+}
+EMOTE_DISTRACTED_SELF (entity a)
+{
+	emote_distracted_self	[&EMT&$a$ isn't paying attention right now, can you come back later?]
+}
+EMOTE_DOUBTFUL_TARGET (entity a, entity t)
+{
+	emote_doubtful_target	[&EMT&$a$ doesn't believe $t$.]
+}
+EMOTE_DOUBTFUL_NOBODY (entity a)
+{
+	emote_doubtful_nobody	[&EMT&$a$ doubts it.]
+}
+EMOTE_DOUBTFUL_SELF (entity a)
+{
+	emote_doubtful_self	[&EMT&$a$ isn't quite sure about things.]
+}
+EMOTE_DRAMATIC_TARGET (entity a, entity t)
+{
+	emote_dramatic_target	[&EMT&$a$ puts on a show for $t$.]
+}
+EMOTE_DRAMATIC_NOBODY (entity a)
+{
+	emote_dramatic_nobody	[&EMT&$a$ strikes a pose.]
+}
+EMOTE_DRAMATIC_SELF (entity a)
+{
+	emote_dramatic_self	[&EMT&$a$ would make a great actor/actress, don't you think?]
+}
+EMOTE_DREAMY_TARGET (entity a, entity t)
+{
+	emote_dreamy_target	[&EMT&$a$ gazes dreamily at $t$.]
+}
+EMOTE_DREAMY_NOBODY (entity a)
+{
+	emote_dreamy_nobody	[&EMT&$a$ stares off into the distance.]
+}
+EMOTE_DREAMY_SELF (entity a)
+{
+	emote_dreamy_self	[&EMT&$a$ has a dreamy look about him/her.]
+}
+EMOTE_DRUNK_TARGET (entity a, entity t)
+{
+	emote_drunk_target	[&EMT&$a$ hands $t$ another drink.]
+}
+EMOTE_DRUNK_NOBODY (entity a)
+{
+	emote_drunk_nobody	[&EMT&$a$ hiccups and gets another drink.]
+}
+EMOTE_DRUNK_SELF (entity a)
+{
+	emote_drunk_self	[&EMT&$a$ staggers around, possibly drunk.]
+}
+EMOTE_DUTIFUL_TARGET (entity a, entity t)
+{
+	emote_dutiful_target	[&EMT&$a$ follows $t$, as is his/her duty.]
+}
+EMOTE_DUTIFUL_NOBODY (entity a)
+{
+	emote_dutiful_nobody	[&EMT&$a$ will do his/her duty.]
+}
+EMOTE_DUTIFUL_SELF (entity a)
+{
+	emote_dutiful_self	[&EMT&$a$ is unswavering in dedication to his/her duty.]
+}
+EMOTE_EAGER_TARGET (entity a, entity t)
+{
+	emote_eager_target	[&EMT&$a$ nods eagerly at $t$.]
+}
+EMOTE_EAGER_NOBODY (entity a)
+{
+	emote_eager_nobody	[&EMT&$a$ is eager and ready!]
+}
+EMOTE_EAGER_SELF (entity a)
+{
+	emote_eager_self	[&EMT&$a$ is self motivated.]
+}
+EMOTE_EARNEST_TARGET (entity a, entity t)
+{
+	emote_earnest_target	[&EMT&$a$ eyes $t$ seriously.]
+}
+EMOTE_EARNEST_NOBODY (entity a)
+{
+	emote_earnest_nobody	[&EMT&$a$ looks intent.]
+}
+EMOTE_EARNEST_SELF (entity a)
+{
+	emote_earnest_self	[&EMT&$a$ expresses the importance of being earnest.]
+}
+EMOTE_ECSTATIC_TARGET (entity a, entity t)
+{
+	emote_ecstatic_target	[&EMT&$a$ is so very happy for $t$!]
+}
+EMOTE_ECSTATIC_NOBODY (entity a)
+{
+	emote_ecstatic_nobody	[&EMT&$a$ couldn't be happier.]
+}
+EMOTE_ECSTATIC_SELF (entity a)
+{
+	emote_ecstatic_self	[&EMT&$a$ is so happy with him/herself!]
+}
+EMOTE_EGOISTIC_TARGET (entity a, entity t)
+{
+	emote_egoistic_target	[&EMT&$a$ pumps up $t$'s ego, not that s/he needs it.]
+}
+EMOTE_EGOISTIC_NOBODY (entity a)
+{
+	emote_egoistic_nobody	[&EMT&$a$ watches his/her ego soar.]
+}
+EMOTE_EGOISTIC_SELF (entity a)
+{
+	emote_egoistic_self	[&EMT&$a$ believes in him/herself, and his/her ego.]
+}
+EMOTE_EMBARRASSED_TARGET (entity a, entity t)
+{
+	emote_embarrassed_target	[&EMT&$a$ is embarrassed by $t$.]
+}
+EMOTE_EMBARRASSED_NOBODY (entity a)
+{
+	emote_embarrassed_nobody	[&EMT&$a$ blushes, embarassed.]
+}
+EMOTE_EMBARRASSED_SELF (entity a)
+{
+	emote_embarrassed_self	[&EMT&$a$ embarasses him/herself.]
+}
+EMOTE_EMOTIONAL_TARGET (entity a, entity t)
+{
+	emote_emotional_target	[&EMT&$a$ tries to comfort $t$.]
+}
+EMOTE_EMOTIONAL_NOBODY (entity a)
+{
+	emote_emotional_nobody	[&EMT&$a$ is overcome with emotion.]
+}
+EMOTE_EMOTIONAL_SELF (entity a)
+{
+	emote_emotional_self	[&EMT&$a$ could use some comfort.]
+}
+EMOTE_EMOTIONLESS_TARGET (entity a, entity t)
+{
+	emote_emotionless_target	[&EMT&$a$ looks vacantly at $t$.]
+}
+EMOTE_EMOTIONLESS_NOBODY (entity a)
+{
+	emote_emotionless_nobody	[&EMT&$a$ shows no emotion.]
+}
+EMOTE_EMOTIONLESS_SELF (entity a)
+{
+	emote_emotionless_self	[&EMT&$a$ remains emotionless. There's nothing to be said or done.]
+}
+EMOTE_EMPHATIC_TARGET (entity a, entity t)
+{
+	emote_emphatic_target	[&EMT&$a$ empathizes with $t$. "I know just how you feel."]
+}
+EMOTE_EMPHATIC_NOBODY (entity a)
+{
+	emote_emphatic_nobody	[&EMT&$a$ looks ready to listen.]
+}
+EMOTE_EMPHATIC_SELF (entity a)
+{
+	emote_emphatic_self	[&EMT&$a$ is willing to lend an empahatic ear, knowing how you feel.]
+}
+EMOTE_ENCOURAGING_TARGET (entity a, entity t)
+{
+	emote_encouraging_target	[&EMT&$a$ encourages $t$.]
+}
+EMOTE_ENCOURAGING_NOBODY (entity a)
+{
+	emote_encouraging_nobody	[&EMT&$a$ finds the situation encouraging.]
+}
+EMOTE_ENCOURAGING_SELF (entity a)
+{
+	emote_encouraging_self	[&EMT&$a$ is encouraged.]
+}
+EMOTE_ENRAGED_TARGET (entity a, entity t)
+{
+	emote_enraged_target	[&EMT&$a$ seethes with rage at $t$.]
+}
+EMOTE_ENRAGED_NOBODY (entity a)
+{
+	emote_enraged_nobody	[&EMT&$a$ is furious, watch out.]
+}
+EMOTE_ENRAGED_SELF (entity a)
+{
+	emote_enraged_self	[&EMT&$a$ fumes, enraged.]
+}
+EMOTE_ENTHUSIASTIC_TARGET (entity a, entity t)
+{
+	emote_enthusiastic_target	[&EMT&$a$ agrees enthusiastically with $t$.]
+}
+EMOTE_ENTHUSIASTIC_NOBODY (entity a)
+{
+	emote_enthusiastic_nobody	[&EMT&$a$ looks enthusiastic.]
+}
+EMOTE_ENTHUSIASTIC_SELF (entity a)
+{
+	emote_enthusiastic_self	[&EMT&$a$ is enthusiastic.]
+}
+EMOTE_ENVIOUS_TARGET (entity a, entity t)
+{
+	emote_envious_target	[&EMT&$a$ wants to be just like you, $t$.]
+}
+EMOTE_ENVIOUS_NOBODY (entity a)
+{
+	emote_envious_nobody	[&EMT&$a$ seethes with envy.]
+}
+EMOTE_ENVIOUS_SELF (entity a)
+{
+	emote_envious_self	[&EMT&$a$ is probably the envy of everyone right now.]
+}
+EMOTE_EVIL_TARGET (entity a, entity t)
+{
+	emote_evil_target	[&EMT&$a$ grins evilly at $t$.]
+}
+EMOTE_EVIL_NOBODY (entity a)
+{
+	emote_evil_nobody	[&EMT&$a$ rubs his/her hands together evilly.]
+}
+EMOTE_EVIL_SELF (entity a)
+{
+	emote_evil_self	[&EMT&$a$ considers him/herself evil.]
+}
+EMOTE_EXCITED_TARGET (entity a, entity t)
+{
+	emote_excited_target	[&EMT&$a$ gets excited at $t$.]
+}
+EMOTE_EXCITED_NOBODY (entity a)
+{
+	emote_excited_nobody	[&EMT&$a$ smiles, excited.]
+}
+EMOTE_EXCITED_SELF (entity a)
+{
+	emote_excited_self	[&EMT&$a$ is so excited!]
+}
+EMOTE_EXERCISE_TARGET (entity a, entity t)
+{
+	emote_exercise_target	[&EMT&$a$ encourages $t$ to exercise.]
+}
+EMOTE_EXERCISE_NOBODY (entity a)
+{
+	emote_exercise_nobody	[&EMT&$a$ exercises. One, two..]
+}
+EMOTE_EXERCISE_SELF (entity a)
+{
+	emote_exercise_self	[&EMT&$a$ engages in a complete workout.]
+}
+EMOTE_EXHAUSTED_TARGET (entity a, entity t)
+{
+	emote_exhausted_target	[&EMT&$a$ thinks $t$ is exhausted and should take a break.]
+}
+EMOTE_EXHAUSTED_NOBODY (entity a)
+{
+	emote_exhausted_nobody	[&EMT&$a$ should probably take a break.]
+}
+EMOTE_EXHAUSTED_SELF (entity a)
+{
+	emote_exhausted_self	[&EMT&$a$ is extremely exhausted and needs to rest.]
+}
+EMOTE_EXUBERANT_TARGET (entity a, entity t)
+{
+	emote_exuberant_target	[&EMT&$a$ dances with $t$, extremely pleased.]
+}
+EMOTE_EXUBERANT_NOBODY (entity a)
+{
+	emote_exuberant_nobody	[&EMT&$a$ has happiness in abundance.]
+}
+EMOTE_EXUBERANT_SELF (entity a)
+{
+	emote_exuberant_self	[&EMT&$a$ dances about, joyously unrestrained and enthusiastic.]
+}
+EMOTE_FAITHFUL_TARGET (entity a, entity t)
+{
+	emote_faithful_target	[&EMT&$a$ is faithful to $t$, and $t$ alone.]
+}
+EMOTE_FAITHFUL_NOBODY (entity a)
+{
+	emote_faithful_nobody	[&EMT&$a$ is faithful to no one.]
+}
+EMOTE_FAITHFUL_SELF (entity a)
+{
+	emote_faithful_self	[&EMT&$a$ is faithful only to his/herself.]
+}
+EMOTE_FANATICAL_TARGET (entity a, entity t)
+{
+	emote_fanatical_target	[&EMT&$a$ has unswerving devotion to $t$, and $t$ alone.]
+}
+EMOTE_FANATICAL_NOBODY (entity a)
+{
+	emote_fanatical_nobody	[&EMT&$a$ strongly believes in what s/he does.]
+}
+EMOTE_FANATICAL_SELF (entity a)
+{
+	emote_fanatical_self	[&EMT&$a$ is a homin with a cause. To the death!]
+}
+EMOTE_FASTIDIOUS_TARGET (entity a, entity t)
+{
+	emote_fastidious_target	[&EMT&$a$ fastidiously brushes a bit of dirt off $t$.]
+}
+EMOTE_FASTIDIOUS_NOBODY (entity a)
+{
+	emote_fastidious_nobody	[&EMT&$a$ fastidiously makes sure everything is in its place.]
+}
+EMOTE_FASTIDIOUS_SELF (entity a)
+{
+	emote_fastidious_self	[&EMT&$a$ brushes him/herself off.]
+}
+EMOTE_FBT_TARGET (entity a, entity t)
+{
+	emote_fbt_target	[.]
+}
+EMOTE_FBT_NOBODY (entity a)
+{
+	emote_fbt_nobody	[.]
+}
+EMOTE_FBT_SELF (entity a)
+{
+	emote_fbt_self	[.]
+}
+EMOTE_FEARFUL_TARGET (entity a, entity t)
+{
+	emote_fearful_target	[&EMT&$a$ fears $t$.]
+}
+EMOTE_FEARFUL_NOBODY (entity a)
+{
+	emote_fearful_nobody	[&EMT&$a$ looks around, eyes wide with fear.]
+}
+EMOTE_FEARFUL_SELF (entity a)
+{
+	emote_fearful_self	[&EMT&$a$ fears no one but possibly him/herself.]
+}
+EMOTE_FIRM_TARGET (entity a, entity t)
+{
+	emote_firm_target	[&EMT&$a$ is firm on this, $t$.]
+}
+EMOTE_FIRM_NOBODY (entity a)
+{
+	emote_firm_nobody	[&EMT&$a$ stands firm.]
+}
+EMOTE_FIRM_SELF (entity a)
+{
+	emote_firm_self	[&EMT&$a$ is unbending.]
+}
+EMOTE_FORGIVE_TARGET (entity a, entity t)
+{
+	emote_forgive_target	[&EMT&$a$ forgives $t$.]
+}
+EMOTE_FORGIVE_NOBODY (entity a)
+{
+	emote_forgive_nobody	[&EMT&$a$ is in a forgiving mood.]
+}
+EMOTE_FORGIVE_SELF (entity a)
+{
+	emote_forgive_self	[&EMT&$a$ decides to act first, and ask for forgiveness later.]
+}
+EMOTE_FRATERNAL_TARGET (entity a, entity t)
+{
+	emote_fraternal_target	[&EMT&$a$ consider $t$ like a brother.]
+}
+EMOTE_FRATERNAL_NOBODY (entity a)
+{
+	emote_fraternal_nobody	[&EMT&$a$ considers everyone here family.]
+}
+EMOTE_FRATERNAL_SELF (entity a)
+{
+	emote_fraternal_self	[&EMT&$a$ is glad to be treated like family here.]
+}
+EMOTE_FRIENDLY_TARGET (entity a, entity t)
+{
+	emote_friendly_target	[&EMT&$a$ is friendly to $t$.]
+}
+EMOTE_FRIENDLY_NOBODY (entity a)
+{
+	emote_friendly_nobody	[&EMT&$a$ is friendly to everyone.]
+}
+EMOTE_FRIENDLY_SELF (entity a)
+{
+	emote_friendly_self	[&EMT&$a$ is considered friendly.]
+}
+EMOTE_FRUSTRATED_TARGET (entity a, entity t)
+{
+	emote_frustrated_target	[&EMT&$a$ is frustrated with $t$. Grrr.]
+}
+EMOTE_FRUSTRATED_NOBODY (entity a)
+{
+	emote_frustrated_nobody	[&EMT&$a$ is visibly frustrated.]
+}
+EMOTE_FRUSTRATED_SELF (entity a)
+{
+	emote_frustrated_self	[&EMT&$a$ is frustrated with him/herself.]
+}
+EMOTE_FUNNY_TARGET (entity a, entity t)
+{
+	emote_funny_target	[&EMT&$a$ tells $t$ how funny s/he is.]
+}
+EMOTE_FUNNY_NOBODY (entity a)
+{
+	emote_funny_nobody	[&EMT&$a$ tells a joke.]
+}
+EMOTE_FUNNY_SELF (entity a)
+{
+	emote_funny_self	[&EMT&$a$ laughs at him/herself.]
+}
+EMOTE_GENEROUS_TARGET (entity a, entity t)
+{
+	emote_generous_target	[&EMT&$a$ shares generously with $t$.]
+}
+EMOTE_GENEROUS_NOBODY (entity a)
+{
+	emote_generous_nobody	[&EMT&$a$ shares with everyone!]
+}
+EMOTE_GENEROUS_SELF (entity a)
+{
+	emote_generous_self	[&EMT&$a$ distributes things not-so-evenly. One for you, one for me, two for you, one, two for me…]
+}
+EMOTE_GIMME5_TARGET (entity a, entity t)
+{
+	emote_gimme5_target	[&EMT&$a$ gives $t$ a high-five.]
+}
+EMOTE_GIMME5_NOBODY (entity a)
+{
+	emote_gimme5_nobody	[&EMT&$a$ says, "Gimme 5!"]
+}
+EMOTE_GIMME5_SELF (entity a)
+{
+	emote_gimme5_self	[&EMT&$a$ wonders if giving him/herself a high-five results in a clapping sound.]
+}
+EMOTE_GLOOMY_TARGET (entity a, entity t)
+{
+	emote_gloomy_target	[&EMT&$a$ mopes at $t$.]
+}
+EMOTE_GLOOMY_NOBODY (entity a)
+{
+	emote_gloomy_nobody	[&EMT&$a$ looks gloomy.]
+}
+EMOTE_GLOOMY_SELF (entity a)
+{
+	emote_gloomy_self	[&EMT&$a$ mutters something about doom, gloom, and certain destruction.]
+}
+EMOTE_GOOFY_TARGET (entity a, entity t)
+{
+	emote_goofy_target	[&EMT&$a$ smiles goofily at $t$.]
+}
+EMOTE_GOOFY_NOBODY (entity a)
+{
+	emote_goofy_nobody	[&EMT&$a$ lets out a goofy laugh.]
+}
+EMOTE_GOOFY_SELF (entity a)
+{
+	emote_goofy_self	[&EMT&$a$ acts pretty goofy sometimes. This is one of those times.]
+}
+EMOTE_GREAT_TARGET (entity a, entity t)
+{
+	emote_great_target	[&EMT&$a$ tells $t$ how great s/he is.]
+}
+EMOTE_GREAT_NOBODY (entity a)
+{
+	emote_great_nobody	[&EMT&$a$ grins. This is great!]
+}
+EMOTE_GREAT_SELF (entity a)
+{
+	emote_great_self	[&EMT&$a$ is great. You?]
+}
+EMOTE_GRIN_TARGET (entity a, entity t)
+{
+	emote_grin_target	[&EMT&$a$ grins at $t$.]
+}
+EMOTE_GRIN_NOBODY (entity a)
+{
+	emote_grin_nobody	[&EMT&$a$ grins widely.]
+}
+EMOTE_GRIN_SELF (entity a)
+{
+	emote_grin_self	[&EMT&$a$ grins at him/herself, making everyone wonder.]
+}
+EMOTE_GRUMPY_TARGET (entity a, entity t)
+{
+	emote_grumpy_target	[&EMT&$a$ grumps at $t$.]
+}
+EMOTE_GRUMPY_NOBODY (entity a)
+{
+	emote_grumpy_nobody	[&EMT&$a$ scowls, grumpy.]
+}
+EMOTE_GRUMPY_SELF (entity a)
+{
+	emote_grumpy_self	[&EMT&$a$ isn't in a great mood. Are you sure you want to proceed?]
+}
+EMOTE_GUILTY_TARGET (entity a, entity t)
+{
+	emote_guilty_target	[&EMT&$a$ looks guilty at $t$.]
+}
+EMOTE_GUILTY_NOBODY (entity a)
+{
+	emote_guilty_nobody	[&EMT&$a$ did it.]
+}
+EMOTE_GUILTY_SELF (entity a)
+{
+	emote_guilty_self	[&EMT&$a$ confesses. "I did it."]
+}
+EMOTE_HAPPY_TARGET (entity a, entity t)
+{
+	emote_happy_target	[&EMT&$a$ is happy for $t$.]
+}
+EMOTE_HAPPY_NOBODY (entity a)
+{
+	emote_happy_nobody	[&EMT&$a$ is happy.]
+}
+EMOTE_HAPPY_SELF (entity a)
+{
+	emote_happy_self	[&EMT&$a$ looks very happy with him/herself.]
+}
+EMOTE_HARDSILENCE_TARGET (entity a, entity t)
+{
+	emote_hardsilence_target	[&EMT&$a$ is giving $t$ the silent treatment.]
+}
+EMOTE_HARDSILENCE_NOBODY (entity a)
+{
+	emote_hardsilence_nobody	[&EMT&$a$ gazes around in stony silence.]
+}
+EMOTE_HARDSILENCE_SELF (entity a)
+{
+	emote_hardsilence_self	[&EMT&$a$ is finding it hard to be silent.]
+}
+EMOTE_HAUGHTY_TARGET (entity a, entity t)
+{
+	emote_haughty_target	[&EMT&$a$ puts his/her nose up at $t$.]
+}
+EMOTE_HAUGHTY_NOBODY (entity a)
+{
+	emote_haughty_nobody	[&EMT&$a$ puts on haughty airs.]
+}
+EMOTE_HAUGHTY_SELF (entity a)
+{
+	emote_haughty_self	[&EMT&$a$ isn't going to lower his/herself to your level.]
+}
+EMOTE_HELPFUL_TARGET (entity a, entity t)
+{
+	emote_helpful_target	[&EMT&$a$ tries to be helpful to $t$.]
+}
+EMOTE_HELPFUL_NOBODY (entity a)
+{
+	emote_helpful_nobody	[&EMT&$a$ is here to be helpful.]
+}
+EMOTE_HELPFUL_SELF (entity a)
+{
+	emote_helpful_self	[&EMT&$a$ helps him/herself.]
+}
+EMOTE_HEROIC_TARGET (entity a, entity t)
+{
+	emote_heroic_target	[&EMT&$a$ claims $t$ is a hero.]
+}
+EMOTE_HEROIC_NOBODY (entity a)
+{
+	emote_heroic_nobody	[&EMT&$a$ strikes a heroic pose.]
+}
+EMOTE_HEROIC_SELF (entity a)
+{
+	emote_heroic_self	[&EMT&$a$ rescues him/herself, true hero style.]
+}
+EMOTE_HIHA_TARGET (entity a, entity t)
+{
+	emote_hiha_target	[&EMT&$a$ says to $t$, "Hi! How are you?"]
+}
+EMOTE_HIHA_NOBODY (entity a)
+{
+	emote_hiha_nobody	[&EMT&$a$ says hi.]
+}
+EMOTE_HIHA_SELF (entity a)
+{
+	emote_hiha_self	[&EMT&$a$ waves. Hiya!]
+}
+EMOTE_HONEST_TARGET (entity a, entity t)
+{
+	emote_honest_target	[&EMT&$a$ has been nothing but honest with $t$.]
+}
+EMOTE_HONEST_NOBODY (entity a)
+{
+	emote_honest_nobody	[&EMT&$a$ is honest, trustworthy and true.]
+}
+EMOTE_HONEST_SELF (entity a)
+{
+	emote_honest_self	[&EMT&$a$ is always honest with him/herself.]
+}
+EMOTE_HOPEFUL_TARGET (entity a, entity t)
+{
+	emote_hopeful_target	[&EMT&$a$ looks hopefully at $t$.]
+}
+EMOTE_HOPEFUL_NOBODY (entity a)
+{
+	emote_hopeful_nobody	[&EMT&$a$ is hopeful.]
+}
+EMOTE_HOPEFUL_SELF (entity a)
+{
+	emote_hopeful_self	[&EMT&$a$ holds on to hope.]
+}
+EMOTE_HOPELESS_TARGET (entity a, entity t)
+{
+	emote_hopeless_target	[&EMT&$a$ thinks $t$ is hopeless.]
+}
+EMOTE_HOPELESS_NOBODY (entity a)
+{
+	emote_hopeless_nobody	[&EMT&$a$ has no hope.]
+}
+EMOTE_HOPELESS_SELF (entity a)
+{
+	emote_hopeless_self	[&EMT&$a$ wails. Things are doomed, it's hopeless!]
+}
+EMOTE_HUMBLE_TARGET (entity a, entity t)
+{
+	emote_humble_target	[&EMT&$a$ has been unquestionably humbled by $t$.]
+}
+EMOTE_HUMBLE_NOBODY (entity a)
+{
+	emote_humble_nobody	[&EMT&$a$ looks about modestly.]
+}
+EMOTE_HUMBLE_SELF (entity a)
+{
+	emote_humble_self	[&EMT&$a$ is too humble to say how modest s/he is.]
+}
+EMOTE_HUNGRY_TARGET (entity a, entity t)
+{
+	emote_hungry_target	[&EMT&$a$ looks at $t$ like lunch.]
+}
+EMOTE_HUNGRY_NOBODY (entity a)
+{
+	emote_hungry_nobody	[&EMT&$a$ could use some food.]
+}
+EMOTE_HUNGRY_SELF (entity a)
+{
+	emote_hungry_self	[&EMT&$a$ is hungry enough to eat his/her equipment.]
+}
+EMOTE_HURRIED_TARGET (entity a, entity t)
+{
+	emote_hurried_target	[&EMT&$a$ is fairly hurried as is, $t$.]
+}
+EMOTE_HURRIED_NOBODY (entity a)
+{
+	emote_hurried_nobody	[&EMT&$a$ moves around in a hurried state.]
+}
+EMOTE_HURRIED_SELF (entity a)
+{
+	emote_hurried_self	[&EMT&$a$ is already hurrying.]
+}
+EMOTE_HURRY_TARGET (entity a, entity t)
+{
+	emote_hurry_target	[&EMT&$a$ asks $t$ is to hurry up.]
+}
+EMOTE_HURRY_NOBODY (entity a)
+{
+	emote_hurry_nobody	[&EMT&$a$ doesn't have time to waste.]
+}
+EMOTE_HURRY_SELF (entity a)
+{
+	emote_hurry_self	[&EMT&$a$ hurries up, since people are waiting.]
+}
+EMOTE_HYSTERICAL_TARGET (entity a, entity t)
+{
+	emote_hysterical_target	[&EMT&$a$ slaps $t$, who has become hysterical.]
+}
+EMOTE_HYSTERICAL_NOBODY (entity a)
+{
+	emote_hysterical_nobody	[&EMT&$a$ laughs hysterically.]
+}
+EMOTE_HYSTERICAL_SELF (entity a)
+{
+	emote_hysterical_self	[&EMT&$a$ goes into hysterics.]
+}
+EMOTE_IMPLORING_TARGET (entity a, entity t)
+{
+	emote_imploring_target	[&EMT&$a$ implores $t$ to stop.]
+}
+EMOTE_IMPLORING_NOBODY (entity a)
+{
+	emote_imploring_nobody	[&EMT&$a$ is begging.]
+}
+EMOTE_IMPLORING_SELF (entity a)
+{
+	emote_imploring_self	[&EMT&$a$ isn't too proud to beg.]
+}
+EMOTE_INDIFFERENT_TARGET (entity a, entity t)
+{
+	emote_indifferent_target	[&EMT&$a$ tells $t$ things are neither good nor bad.]
+}
+EMOTE_INDIFFERENT_NOBODY (entity a)
+{
+	emote_indifferent_nobody	[&EMT&$a$ shrugs, indifferently.]
+}
+EMOTE_INDIFFERENT_SELF (entity a)
+{
+	emote_indifferent_self	[&EMT&$a$ is impartial.]
+}
+EMOTE_INDIGNANT_TARGET (entity a, entity t)
+{
+	emote_indignant_target	[&EMT&$a$ can't believe you said that, $t$.]
+}
+EMOTE_INDIGNANT_NOBODY (entity a)
+{
+	emote_indignant_nobody	[&EMT&$a$ storms around indignantly.]
+}
+EMOTE_INDIGNANT_SELF (entity a)
+{
+	emote_indignant_self	[&EMT&$a$ became indignant at the topic.]
+}
+EMOTE_INDULGENT_TARGET (entity a, entity t)
+{
+	emote_indulgent_target	[&EMT&$a$ indulges $t$, because its fun.]
+}
+EMOTE_INDULGENT_NOBODY (entity a)
+{
+	emote_indulgent_nobody	[&EMT&$a$ smiles indulgently.]
+}
+EMOTE_INDULGENT_SELF (entity a)
+{
+	emote_indulgent_self	[&EMT&$a$ indulges grandly.]
+}
+EMOTE_INNOCENT_TARGET (entity a, entity t)
+{
+	emote_innocent_target	[&EMT&$a$ looks at $t$ innocently.]
+}
+EMOTE_INNOCENT_NOBODY (entity a)
+{
+	emote_innocent_nobody	[&EMT&$a$ is innocent.]
+}
+EMOTE_INNOCENT_SELF (entity a)
+{
+	emote_innocent_self	[&EMT&$a$ adjusts his/her halo.]
+}
+EMOTE_INSECURE_TARGET (entity a, entity t)
+{
+	emote_insecure_target	[&EMT&$a$ feels so insecure around $t$.]
+}
+EMOTE_INSECURE_NOBODY (entity a)
+{
+	emote_insecure_nobody	[&EMT&$a$ could use assurance.]
+}
+EMOTE_INSECURE_SELF (entity a)
+{
+	emote_insecure_self	[&EMT&$a$ isn't too sure about him/herself.]
+}
+EMOTE_INTERESTED_TARGET (entity a, entity t)
+{
+	emote_interested_target	[&EMT&$a$ is interested in what $t$ has to say.]
+}
+EMOTE_INTERESTED_NOBODY (entity a)
+{
+	emote_interested_nobody	[&EMT&$a$ pays full attention.]
+}
+EMOTE_INTERESTED_SELF (entity a)
+{
+	emote_interested_self	[&EMT&$a$ is interested in him/herself.]
+}
+EMOTE_JEALOUS_TARGET (entity a, entity t)
+{
+	emote_jealous_target	[&EMT&$a$ is jealous of $t$.]
+}
+EMOTE_JEALOUS_NOBODY (entity a)
+{
+	emote_jealous_nobody	[&EMT&$a$ is deep green with jealousy.]
+}
+EMOTE_JEALOUS_SELF (entity a)
+{
+	emote_jealous_self	[&EMT&$a$ burns with jealousy.]
+}
+EMOTE_JOYFUL_TARGET (entity a, entity t)
+{
+	emote_joyful_target	[&EMT&$a$ is overjoyed for $t$.]
+}
+EMOTE_JOYFUL_NOBODY (entity a)
+{
+	emote_joyful_nobody	[&EMT&$a$ makes a joyful noise.]
+}
+EMOTE_JOYFUL_SELF (entity a)
+{
+	emote_joyful_self	[&EMT&$a$ is overcome with joy.]
+}
+EMOTE_KIND_TARGET (entity a, entity t)
+{
+	emote_kind_target	[&EMT&$a$ smiles kindly at $t$.]
+}
+EMOTE_KIND_NOBODY (entity a)
+{
+	emote_kind_nobody	[&EMT&$a$ is kind to everyone. Why not?]
+}
+EMOTE_KIND_SELF (entity a)
+{
+	emote_kind_self	[&EMT&$a$ remembers kindness starts with being kind to yourself.]
+}
+EMOTE_LAZY_TARGET (entity a, entity t)
+{
+	emote_lazy_target	[&EMT&$a$ calls $t$ lazy.]
+}
+EMOTE_LAZY_NOBODY (entity a)
+{
+	emote_lazy_nobody	[&EMT&$a$ lounges about.]
+}
+EMOTE_LAZY_SELF (entity a)
+{
+	emote_lazy_self	[&EMT&$a$ is being lazy at the moment, try later.]
+}
+EMOTE_LOATHING_TARGET (entity a, entity t)
+{
+	emote_loathing_target	[&EMT&$a$ regards $t$ with utter contempt and loathing.]
+}
+EMOTE_LOATHING_NOBODY (entity a)
+{
+	emote_loathing_nobody	[&EMT&$a$ hates you all.]
+}
+EMOTE_LOATHING_SELF (entity a)
+{
+	emote_loathing_self	[&EMT&$a$ can't stand him/herself.]
+}
+EMOTE_LOGICAL_TARGET (entity a, entity t)
+{
+	emote_logical_target	[&EMT&$a$ finds $t$ to be very logical.]
+}
+EMOTE_LOGICAL_NOBODY (entity a)
+{
+	emote_logical_nobody	[&EMT&$a$ looks for the logic here.]
+}
+EMOTE_LOGICAL_SELF (entity a)
+{
+	emote_logical_self	[&EMT&$a$ makes perfect and logical sense to him/herself.]
+}
+EMOTE_LONELY_TARGET (entity a, entity t)
+{
+	emote_lonely_target	[&EMT&$a$ keeps $t$ from being lonely.]
+}
+EMOTE_LONELY_NOBODY (entity a)
+{
+	emote_lonely_nobody	[&EMT&$a$ could use some company.]
+}
+EMOTE_LONELY_SELF (entity a)
+{
+	emote_lonely_self	[&EMT&$a$ is so lonely s/he is talking to her/himself.]
+}
+EMOTE_LOUD_TARGET (entity a, entity t)
+{
+	emote_loud_target	[&EMT&$a$ says $t$ is too loud.]
+}
+EMOTE_LOUD_NOBODY (entity a)
+{
+	emote_loud_nobody	[&EMT&$a$ gets loud and proud.]
+}
+EMOTE_LOUD_SELF (entity a)
+{
+	emote_loud_self	[&EMT&$a$ pumps up the volume.]
+}
+EMOTE_LOVE_TARGET (entity a, entity t)
+{
+	emote_love_target	[&EMT&$a$ loves $t$.]
+}
+EMOTE_LOVE_NOBODY (entity a)
+{
+	emote_love_nobody	[&EMT&$a$ is in love.]
+}
+EMOTE_LOVE_SELF (entity a)
+{
+	emote_love_self	[&EMT&$a$ checks a mirror. Perfectly loveable.]
+}
+EMOTE_LOYAL_TARGET (entity a, entity t)
+{
+	emote_loyal_target	[&EMT&$a$ is 100% loyal to $t$.]
+}
+EMOTE_LOYAL_NOBODY (entity a)
+{
+	emote_loyal_nobody	[&EMT&$a$ is loyal, brave and true.]
+}
+EMOTE_LOYAL_SELF (entity a)
+{
+	emote_loyal_self	[&EMT&$a$ is loyal to no one but him/herself.]
+}
+EMOTE_LUSTFUL_TARGET (entity a, entity t)
+{
+	emote_lustful_target	[&EMT&$a$ gives $t$ a look up and down of pure lust.]
+}
+EMOTE_LUSTFUL_NOBODY (entity a)
+{
+	emote_lustful_nobody	[&EMT&$a$ has a lusty look about him/her.]
+}
+EMOTE_LUSTFUL_SELF (entity a)
+{
+	emote_lustful_self	[&EMT&$a$ lusts after him/herself, which helps his/her ego.]
+}
+EMOTE_MALEVOLENT_TARGET (entity a, entity t)
+{
+	emote_malevolent_target	[&EMT&$a$ studies $t$ malevolently.]
+}
+EMOTE_MALEVOLENT_NOBODY (entity a)
+{
+	emote_malevolent_nobody	[&EMT&$a$ carries an expression of intense hatred.]
+}
+EMOTE_MALEVOLENT_SELF (entity a)
+{
+	emote_malevolent_self	[&EMT&$a$ is quite capable of evil.]
+}
+EMOTE_MALICIOUS_TARGET (entity a, entity t)
+{
+	emote_malicious_target	[&EMT&$a$ taunts $t$ maliciously.]
+}
+EMOTE_MALICIOUS_NOBODY (entity a)
+{
+	emote_malicious_nobody	[&EMT&$a$ seeks to cause trouble.]
+}
+EMOTE_MALICIOUS_SELF (entity a)
+{
+	emote_malicious_self	[&EMT&$a$ really means to be that malicious.]
+}
+EMOTE_MEAN_TARGET (entity a, entity t)
+{
+	emote_mean_target	[&EMT&$a$ is mean to $t$.]
+}
+EMOTE_MEAN_NOBODY (entity a)
+{
+	emote_mean_nobody	[&EMT&$a$ is so mean.]
+}
+EMOTE_MEAN_SELF (entity a)
+{
+	emote_mean_self	[&EMT&$a$ is the meanest homin around.]
+}
+EMOTE_MEGALOMANIAC_TARGET (entity a, entity t)
+{
+	emote_megalomaniac_target	[&EMT&$a$ claims $t$ is a megalomaniac.]
+}
+EMOTE_MEGALOMANIAC_NOBODY (entity a)
+{
+	emote_megalomaniac_nobody	[&EMT&$a$ is the best, without doubt.]
+}
+EMOTE_MEGALOMANIAC_SELF (entity a)
+{
+	emote_megalomaniac_self	[&EMT&$a$ says, "I'm just the best. No doubt about it."]
+}
+EMOTE_MERCIFUL_TARGET (entity a, entity t)
+{
+	emote_merciful_target	[&EMT&$a$ shows $t$ some mercy.]
+}
+EMOTE_MERCIFUL_NOBODY (entity a)
+{
+	emote_merciful_nobody	[&EMT&$a$ is merciful.]
+}
+EMOTE_MERCIFUL_SELF (entity a)
+{
+	emote_merciful_self	[&EMT&$a$ takes mercy on him/herself.]
+}
+EMOTE_MISCHIEVOUS_TARGET (entity a, entity t)
+{
+	emote_mischievous_target	[&EMT&$a$ smiles mischieviously at $t$.]
+}
+EMOTE_MISCHIEVOUS_NOBODY (entity a)
+{
+	emote_mischievous_nobody	[&EMT&$a$ is up to something.]
+}
+EMOTE_MISCHIEVOUS_SELF (entity a)
+{
+	emote_mischievous_self	[&EMT&$a$ has trouble in mind, and a plan at hand.]
+}
+EMOTE_MOCKING_TARGET (entity a, entity t)
+{
+	emote_mocking_target	[&EMT&$a$ starts mocking $t$, doing everything s/he does.]
+}
+EMOTE_MOCKING_NOBODY (entity a)
+{
+	emote_mocking_nobody	[&EMT&$a$ mocks the people around him/her.]
+}
+EMOTE_MOCKING_SELF (entity a)
+{
+	emote_mocking_self	[&EMT&$a$ mocks him/herself, doing a perfect imitation.]
+}
+EMOTE_NERVOUS_TARGET (entity a, entity t)
+{
+	emote_nervous_target	[&EMT&$a$ tells $t$ s/he is making him/her nervous.]
+}
+EMOTE_NERVOUS_NOBODY (entity a)
+{
+	emote_nervous_nobody	[&EMT&$a$ paces nervously.]
+}
+EMOTE_NERVOUS_SELF (entity a)
+{
+	emote_nervous_self	[&EMT&$a$ makes him/herself nervous.]
+}
+EMOTE_NEUTRAL_TARGET (entity a, entity t)
+{
+	emote_neutral_target	[&EMT&$a$ is neutral in this matter, $t$.]
+}
+EMOTE_NEUTRAL_NOBODY (entity a)
+{
+	emote_neutral_nobody	[&EMT&$a$ is neutral.]
+}
+EMOTE_NEUTRAL_SELF (entity a)
+{
+	emote_neutral_self	[&EMT&$a$ refuses to take sides.]
+}
+EMOTE_NICE_TARGET (entity a, entity t)
+{
+	emote_nice_target	[&EMT&$a$ tells $t$ how nice s/he is.]
+}
+EMOTE_NICE_NOBODY (entity a)
+{
+	emote_nice_nobody	[&EMT&$a$ is nice.]
+}
+EMOTE_NICE_SELF (entity a)
+{
+	emote_nice_self	[&EMT&$a$ is one of the nicest homins s/he knows.]
+}
+EMOTE_NOCLUE_TARGET (entity a, entity t)
+{
+	emote_noclue_target	[&EMT&$a$ shrugs at $t$, because s/he has no clue.]
+}
+EMOTE_NOCLUE_NOBODY (entity a)
+{
+	emote_noclue_nobody	[&EMT&$a$ hasn't a clue.]
+}
+EMOTE_NOCLUE_SELF (entity a)
+{
+	emote_noclue_self	[&EMT&$a$ is clueless.]
+}
+EMOTE_NONE_TARGET (entity a, entity t)
+{
+	emote_none_target	[&EMT&$a$ is in no mood for $t$'s antics.]
+}
+EMOTE_NONE_NOBODY (entity a)
+{
+	emote_none_nobody	[&EMT&$a$ isn't in the mood to do anything.]
+}
+EMOTE_NONE_SELF (entity a)
+{
+	emote_none_self	[&EMT&$a$ hasn't decided what to do.]
+}
+EMOTE_NOSTALGIC_TARGET (entity a, entity t)
+{
+	emote_nostalgic_target	[&EMT&$a$ reminices with $t$.]
+}
+EMOTE_NOSTALGIC_NOBODY (entity a)
+{
+	emote_nostalgic_nobody	[&EMT&$a$ gets nostalgic and wants to tell a story.]
+}
+EMOTE_NOSTALGIC_SELF (entity a)
+{
+	emote_nostalgic_self	[&EMT&$a$ reminices quietly to him/herself.]
+}
+EMOTE_OBNOXIOUS_TARGET (entity a, entity t)
+{
+	emote_obnoxious_target	[&EMT&$a$ finds $t$ obnoxious.]
+}
+EMOTE_OBNOXIOUS_NOBODY (entity a)
+{
+	emote_obnoxious_nobody	[&EMT&$a$ gets obnoxious]
+}
+EMOTE_OBNOXIOUS_SELF (entity a)
+{
+	emote_obnoxious_self	[&EMT&$a$ is so obnoxious, s/he can barely stand him/herself.]
+}
+EMOTE_OBSCURE_TARGET (entity a, entity t)
+{
+	emote_obscure_target	[&EMT&$a$ impresses $t$ with obscure facts.]
+}
+EMOTE_OBSCURE_NOBODY (entity a)
+{
+	emote_obscure_nobody	[&EMT&$a$ has a mind for the obscure.]
+}
+EMOTE_OBSCURE_SELF (entity a)
+{
+	emote_obscure_self	[&EMT&$a$ knows some really obscure stuff.]
+}
+EMOTE_OBSESSED_TARGET (entity a, entity t)
+{
+	emote_obsessed_target	[&EMT&$a$ is obsessed with $t$.]
+}
+EMOTE_OBSESSED_NOBODY (entity a)
+{
+	emote_obsessed_nobody	[&EMT&$a$ obsesses quietly over something.. Or someone.]
+}
+EMOTE_OBSESSED_SELF (entity a)
+{
+	emote_obsessed_self	[&EMT&$a$ looks preoccupied, probably obsessed with something or other.]
+}
+EMOTE_OFFENDED_TARGET (entity a, entity t)
+{
+	emote_offended_target	[&EMT&$a$ is so offended because of $t$.]
+}
+EMOTE_OFFENDED_NOBODY (entity a)
+{
+	emote_offended_nobody	[&EMT&$a$ is definitely offended at the goings on here.]
+}
+EMOTE_OFFENDED_SELF (entity a)
+{
+	emote_offended_self	[&EMT&$a$ will probably be offended.]
+}
+EMOTE_OPTIMISTIC_TARGET (entity a, entity t)
+{
+	emote_optimistic_target	[&EMT&$a$ tells $t$ things could always be worse]
+}
+EMOTE_OPTIMISTIC_NOBODY (entity a)
+{
+	emote_optimistic_nobody	[&EMT&$a$ remains optimistic.]
+}
+EMOTE_OPTIMISTIC_SELF (entity a)
+{
+	emote_optimistic_self	[&EMT&$a$ thinks things will work.]
+}
+EMOTE_OVER_TARGET (entity a, entity t)
+{
+	emote_over_target	[&EMT&$a$ is over $t$.]
+}
+EMOTE_OVER_NOBODY (entity a)
+{
+	emote_over_nobody	[&EMT&$a$ says, "Get over it."]
+}
+EMOTE_OVER_SELF (entity a)
+{
+	emote_over_self	[&EMT&$a$ tells him/herself to get over it.]
+}
+EMOTE_PACIFIC_TARGET (entity a, entity t)
+{
+	emote_pacific_target	[&EMT&$a$ tells $t$ to "Chill out, man. Watch the waves, fer sure."]
+}
+EMOTE_PACIFIC_NOBODY (entity a)
+{
+	emote_pacific_nobody	[&EMT&$a$ catches a wave. Surf's up, dudes!]
+}
+EMOTE_PACIFIC_SELF (entity a)
+{
+	emote_pacific_self	[&EMT&$a$ looks for a beach.]
+}
+EMOTE_PAINFUL_TARGET (entity a, entity t)
+{
+	emote_painful_target	[&EMT&$a$ realizes this is painful, $t$.]
+}
+EMOTE_PAINFUL_NOBODY (entity a)
+{
+	emote_painful_nobody	[&EMT&$a$ ouches.]
+}
+EMOTE_PAINFUL_SELF (entity a)
+{
+	emote_painful_self	[&EMT&$a$ is very wounded, and yes, it hurts.]
+}
+EMOTE_PANIC_TARGET (entity a, entity t)
+{
+	emote_panic_target	[&EMT&$a$ panics, right in front of $t$.]
+}
+EMOTE_PANIC_NOBODY (entity a)
+{
+	emote_panic_nobody	[&EMT&$a$ panics.]
+}
+EMOTE_PANIC_SELF (entity a)
+{
+	emote_panic_self	[&EMT&$a$ puts him/herself into a panic.]
+}
+EMOTE_PATIENT_TARGET (entity a, entity t)
+{
+	emote_patient_target	[&EMT&$a$ is patient with $t$.]
+}
+EMOTE_PATIENT_NOBODY (entity a)
+{
+	emote_patient_nobody	[&EMT&$a$ waits patiently.]
+}
+EMOTE_PATIENT_SELF (entity a)
+{
+	emote_patient_self	[&EMT&$a$ shows the patience worthy of a Jena disciple.]
+}
+EMOTE_PATRIOTIC_TARGET (entity a, entity t)
+{
+	emote_patriotic_target	[&EMT&$a$ wonders if $t$ has any patrotism these days.]
+}
+EMOTE_PATRIOTIC_NOBODY (entity a)
+{
+	emote_patriotic_nobody	[&EMT&$a$ shows devotion to his/her home city.]
+}
+EMOTE_PATRIOTIC_SELF (entity a)
+{
+	emote_patriotic_self	[&EMT&$a$ waves a flag.]
+}
+EMOTE_PEDANTIC_TARGET (entity a, entity t)
+{
+	emote_pedantic_target	[&EMT&$a$ lectures $t$ pedantically.]
+}
+EMOTE_PEDANTIC_NOBODY (entity a)
+{
+	emote_pedantic_nobody	[&EMT&$a$ refuses to use his/her imagination.]
+}
+EMOTE_PEDANTIC_SELF (entity a)
+{
+	emote_pedantic_self	[&EMT&$a$ keeps a narrow view, and likes it that way.]
+}
+EMOTE_PERTURBED_TARGET (entity a, entity t)
+{
+	emote_perturbed_target	[&EMT&$a$ is perturbed at $t$.]
+}
+EMOTE_PERTURBED_NOBODY (entity a)
+{
+	emote_perturbed_nobody	[&EMT&$a$ has a peturbed scowl.]
+}
+EMOTE_PERTURBED_SELF (entity a)
+{
+	emote_perturbed_self	[&EMT&$a$ is just not pleased.]
+}
+EMOTE_PESSIMISTIC_TARGET (entity a, entity t)
+{
+	emote_pessimistic_target	[&EMT&$a$ doesn't think it'll work, $t$.]
+}
+EMOTE_PESSIMISTIC_NOBODY (entity a)
+{
+	emote_pessimistic_nobody	[&EMT&$a$ is everything but optimistic.]
+}
+EMOTE_PESSIMISTIC_SELF (entity a)
+{
+	emote_pessimistic_self	[&EMT&$a$ knows it isn't going to work.]
+}
+EMOTE_PETULANT_TARGET (entity a, entity t)
+{
+	emote_petulant_target	[&EMT&$a$ goes on at $t$ petuantly over the topic.]
+}
+EMOTE_PETULANT_NOBODY (entity a)
+{
+	emote_petulant_nobody	[&EMT&$a$ gets insolent.]
+}
+EMOTE_PETULANT_SELF (entity a)
+{
+	emote_petulant_self	[&EMT&$a$ is known for his/her ill sort of humor.]
+}
+EMOTE_PHILOSOPHICAL_TARGET (entity a, entity t)
+{
+	emote_philosophical_target	[&EMT&$a$ waxes philosophical with $t$.]
+}
+EMOTE_PHILOSOPHICAL_NOBODY (entity a)
+{
+	emote_philosophical_nobody	[&EMT&$a$ contemplates the meaning of many things.]
+}
+EMOTE_PHILOSOPHICAL_SELF (entity a)
+{
+	emote_philosophical_self	[&EMT&$a$ comes up with a few theories.]
+}
+EMOTE_PITYING_TARGET (entity a, entity t)
+{
+	emote_pitying_target	[&EMT&$a$ gives $t$ a pitying look.]
+}
+EMOTE_PITYING_NOBODY (entity a)
+{
+	emote_pitying_nobody	[&EMT&$a$ pities you all.]
+}
+EMOTE_PITYING_SELF (entity a)
+{
+	emote_pitying_self	[&EMT&$a$ is in a self-pitying mood, don't mind him/her.]
+}
+EMOTE_PLAYFUL_TARGET (entity a, entity t)
+{
+	emote_playful_target	[&EMT&$a$ eyes $t$ playfully.]
+}
+EMOTE_PLAYFUL_NOBODY (entity a)
+{
+	emote_playful_nobody	[&EMT&$a$ is in a playful mood.]
+}
+EMOTE_PLAYFUL_SELF (entity a)
+{
+	emote_playful_self	[&EMT&$a$ toys with random objects idly.]
+}
+EMOTE_PLEASED_TARGET (entity a, entity t)
+{
+	emote_pleased_target	[&EMT&$a$ is pleased with $t$.]
+}
+EMOTE_PLEASED_NOBODY (entity a)
+{
+	emote_pleased_nobody	[&EMT&$a$ smiles, pleased.]
+}
+EMOTE_PLEASED_SELF (entity a)
+{
+	emote_pleased_self	[&EMT&$a$ is clearly pleased with him/herself.]
+}
+EMOTE_POINT_TARGET (entity a, entity t)
+{
+	emote_point_target	[&EMT&$a$ points at $t$.]
+}
+EMOTE_POINT_NOBODY (entity a)
+{
+	emote_point_nobody	[&EMT&$a$ points.]
+}
+EMOTE_POINT_SELF (entity a)
+{
+	emote_point_self	[&EMT&$a$ points at him/herself. "Me."]
+}
+EMOTE_POINTBACK_TARGET (entity a, entity t)
+{
+	emote_pointback_target	[&EMT&$a$ points behind him/herself. "Back there, $t$."]
+}
+EMOTE_POINTBACK_NOBODY (entity a)
+{
+	emote_pointback_nobody	[&EMT&$a$ points back there.]
+}
+EMOTE_POINTBACK_SELF (entity a)
+{
+	emote_pointback_self	[&EMT&$a$ points behind him/herself. "I was just over there."]
+}
+EMOTE_POINTFRONT_TARGET (entity a, entity t)
+{
+	emote_pointfront_target	[&EMT&$a$ points right in front of him/herself. "Straight ahead, $t$."]
+}
+EMOTE_POINTFRONT_NOBODY (entity a)
+{
+	emote_pointfront_nobody	[&EMT&$a$ points straight ahead.]
+}
+EMOTE_POINTFRONT_SELF (entity a)
+{
+	emote_pointfront_self	[&EMT&$a$ points straight ahead. "I'm going there."]
+}
+EMOTE_POINTLEFT_TARGET (entity a, entity t)
+{
+	emote_pointleft_target	[&EMT&$a$ points left. "That way, $t$."]
+}
+EMOTE_POINTLEFT_NOBODY (entity a)
+{
+	emote_pointleft_nobody	[&EMT&$a$ points left. That way.]
+}
+EMOTE_POINTLEFT_SELF (entity a)
+{
+	emote_pointleft_self	[&EMT&$a$ points left. "I'm going that way."]
+}
+EMOTE_POINTRIGHT_TARGET (entity a, entity t)
+{
+	emote_pointright_target	[&EMT&$a$ points right. "This way, $t$."]
+}
+EMOTE_POINTRIGHT_NOBODY (entity a)
+{
+	emote_pointright_nobody	[&EMT&$a$ points right. This way.]
+}
+EMOTE_POINTRIGHT_SELF (entity a)
+{
+	emote_pointright_self	[&EMT&$a$ points right. "I'm going this way."]
+}
+EMOTE_POLITE_TARGET (entity a, entity t)
+{
+	emote_polite_target	[&EMT&$a$ smiles politely at $t$.]
+}
+EMOTE_POLITE_NOBODY (entity a)
+{
+	emote_polite_nobody	[&EMT&$a$ waits politely.]
+}
+EMOTE_POLITE_SELF (entity a)
+{
+	emote_polite_self	[&EMT&$a$ is much too polite to do anything to anyone.]
+}
+EMOTE_POMPOUS_TARGET (entity a, entity t)
+{
+	emote_pompous_target	[&EMT&$a$ calls $t$ a pompous showoff.]
+}
+EMOTE_POMPOUS_NOBODY (entity a)
+{
+	emote_pompous_nobody	[&EMT&$a$ struts about pompously.]
+}
+EMOTE_POMPOUS_SELF (entity a)
+{
+	emote_pompous_self	[&EMT&$a$ puffs up, thinking him/herself the greatest there is.]
+}
+EMOTE_POWERFUL_TARGET (entity a, entity t)
+{
+	emote_powerful_target	[&EMT&$a$ knows $t$ is powerful.]
+}
+EMOTE_POWERFUL_NOBODY (entity a)
+{
+	emote_powerful_nobody	[&EMT&$a$ radiates power.]
+}
+EMOTE_POWERFUL_SELF (entity a)
+{
+	emote_powerful_self	[&EMT&$a$ is the most powerful in the area!]
+}
+EMOTE_PRAYING_TARGET (entity a, entity t)
+{
+	emote_praying_target	[&EMT&$a$ seeks Jena's enlightenment for $t$.]
+}
+EMOTE_PRAYING_NOBODY (entity a)
+{
+	emote_praying_nobody	[&EMT&$a$ looks to Jena for guidance.]
+}
+EMOTE_PRAYING_SELF (entity a)
+{
+	emote_praying_self	[&EMT&$a$ appears to need divine intervention.]
+}
+EMOTE_PROUD_TARGET (entity a, entity t)
+{
+	emote_proud_target	[&EMT&$a$ is so proud of $t$.]
+}
+EMOTE_PROUD_NOBODY (entity a)
+{
+	emote_proud_nobody	[&EMT&$a$ stands proud and beams.]
+}
+EMOTE_PROUD_SELF (entity a)
+{
+	emote_proud_self	[&EMT&$a$ looks proud of him/herself.]
+}
+EMOTE_PROVOCATIVE_TARGET (entity a, entity t)
+{
+	emote_provocative_target	[&EMT&$a$ attempts to provoke $t$.]
+}
+EMOTE_PROVOCATIVE_NOBODY (entity a)
+{
+	emote_provocative_nobody	[&EMT&$a$ strikes a provocative pose.]
+}
+EMOTE_PROVOCATIVE_SELF (entity a)
+{
+	emote_provocative_self	[&EMT&$a$ is fairly easy to provoke at the moment.]
+}
+EMOTE_PUZZLED_TARGET (entity a, entity t)
+{
+	emote_puzzled_target	[&EMT&$a$ eyes $t$ with a puzzled look.]
+}
+EMOTE_PUZZLED_NOBODY (entity a)
+{
+	emote_puzzled_nobody	[&EMT&$a$ is trying to figure something out.]
+}
+EMOTE_PUZZLED_SELF (entity a)
+{
+	emote_puzzled_self	[&EMT&$a$ occasionally manages to even puzzle him/herself.]
+}
+EMOTE_QUIET_TARGET (entity a, entity t)
+{
+	emote_quiet_target	[&EMT&$a$ needs $t$ to be quiet.]
+}
+EMOTE_QUIET_NOBODY (entity a)
+{
+	emote_quiet_nobody	[&EMT&$a$ gets quiet.]
+}
+EMOTE_QUIET_SELF (entity a)
+{
+	emote_quiet_self	[&EMT&$a$ stays quiet.]
+}
+EMOTE_READY_TARGET (entity a, entity t)
+{
+	emote_ready_target	[&EMT&$a$ turns to $t$. "Ready?"]
+}
+EMOTE_READY_NOBODY (entity a)
+{
+	emote_ready_nobody	[&EMT&$a$ is ready for anything.]
+}
+EMOTE_READY_SELF (entity a)
+{
+	emote_ready_self	[&EMT&$a$ lets everyone know s/he is ready.]
+}
+EMOTE_REASSURED_TARGET (entity a, entity t)
+{
+	emote_reassured_target	[&EMT&$a$ nods to $t$, reassured.]
+}
+EMOTE_REASSURED_NOBODY (entity a)
+{
+	emote_reassured_nobody	[&EMT&$a$ finds the situation reassuring.]
+}
+EMOTE_REASSURED_SELF (entity a)
+{
+	emote_reassured_self	[&EMT&$a$ has no worries, and is reassured.]
+}
+EMOTE_REBELLIOUS_TARGET (entity a, entity t)
+{
+	emote_rebellious_target	[&EMT&$a$ tries to get $t$ to rebel.]
+}
+EMOTE_REBELLIOUS_NOBODY (entity a)
+{
+	emote_rebellious_nobody	[&EMT&$a$ looks to incite a rebellion.]
+}
+EMOTE_REBELLIOUS_SELF (entity a)
+{
+	emote_rebellious_self	[&EMT&$a$ decides to become a rebel, perhaps with a cause.]
+}
+EMOTE_RECKLESS_TARGET (entity a, entity t)
+{
+	emote_reckless_target	[&EMT&$a$ proceeds, without regard to $t$.]
+}
+EMOTE_RECKLESS_NOBODY (entity a)
+{
+	emote_reckless_nobody	[&EMT&$a$ charges onward recklessly.]
+}
+EMOTE_RECKLESS_SELF (entity a)
+{
+	emote_reckless_self	[&EMT&$a$ goes full speed ahead, without any thought.]
+}
+EMOTE_REGRETFUL_TARGET (entity a, entity t)
+{
+	emote_regretful_target	[&EMT&$a$ knows $t$ is going to regret it.]
+}
+EMOTE_REGRETFUL_NOBODY (entity a)
+{
+	emote_regretful_nobody	[&EMT&$a$ knows s/he is going to regret this.]
+}
+EMOTE_REGRETFUL_SELF (entity a)
+{
+	emote_regretful_self	[&EMT&$a$ regrets what s/he did, immediately.]
+}
+EMOTE_RELAXED_TARGET (entity a, entity t)
+{
+	emote_relaxed_target	[&EMT&$a$ is relaxed and thinks $t$ needs to relax, too.]
+}
+EMOTE_RELAXED_NOBODY (entity a)
+{
+	emote_relaxed_nobody	[&EMT&$a$ is perfectly relaxed.]
+}
+EMOTE_RELAXED_SELF (entity a)
+{
+	emote_relaxed_self	[&EMT&$a$ always finds a way to relax.]
+}
+EMOTE_RELIEVED_TARGET (entity a, entity t)
+{
+	emote_relieved_target	[&EMT&$a$ sighs, relieved at $t$.]
+}
+EMOTE_RELIEVED_NOBODY (entity a)
+{
+	emote_relieved_nobody	[&EMT&$a$ is relieved.]
+}
+EMOTE_RELIEVED_SELF (entity a)
+{
+	emote_relieved_self	[&EMT&$a$ feels a wave of relief wash over him/her.]
+}
+EMOTE_RELUCTANT_TARGET (entity a, entity t)
+{
+	emote_reluctant_target	[&EMT&$a$ follows $t$ reluctantly.]
+}
+EMOTE_RELUCTANT_NOBODY (entity a)
+{
+	emote_reluctant_nobody	[&EMT&$a$ goes along, reluctantly.]
+}
+EMOTE_RELUCTANT_SELF (entity a)
+{
+	emote_reluctant_self	[&EMT&$a$ doesn't really want to do this, but is anyway.]
+}
+EMOTE_REMORSEFUL_TARGET (entity a, entity t)
+{
+	emote_remorseful_target	[&EMT&$a$ feels bad for $t$.]
+}
+EMOTE_REMORSEFUL_NOBODY (entity a)
+{
+	emote_remorseful_nobody	[&EMT&$a$ looks down, remorseful.]
+}
+EMOTE_REMORSEFUL_SELF (entity a)
+{
+	emote_remorseful_self	[&EMT&$a$ shows signs of remorse.]
+}
+EMOTE_RESIGNED_TARGET (entity a, entity t)
+{
+	emote_resigned_target	[&EMT&$a$ gives in to $t$.]
+}
+EMOTE_RESIGNED_NOBODY (entity a)
+{
+	emote_resigned_nobody	[&EMT&$a$ resigns.]
+}
+EMOTE_RESIGNED_SELF (entity a)
+{
+	emote_resigned_self	[&EMT&$a$ is resigned to the inevitable.]
+}
+EMOTE_RESPECTFUL_TARGET (entity a, entity t)
+{
+	emote_respectful_target	[&EMT&$a$ respects $t$.]
+}
+EMOTE_RESPECTFUL_NOBODY (entity a)
+{
+	emote_respectful_nobody	[&EMT&$a$ stays quiet, in a respectful fashion.]
+}
+EMOTE_RESPECTFUL_SELF (entity a)
+{
+	emote_respectful_self	[&EMT&$a$ stays quiet, in a respectful fashion.]
+}
+EMOTE_REVENGEFUL_TARGET (entity a, entity t)
+{
+	emote_revengeful_target	[&EMT&$a$ enacts his/her plan of revenge on $t$.]
+}
+EMOTE_REVENGEFUL_NOBODY (entity a)
+{
+	emote_revengeful_nobody	[&EMT&$a$ takes revenge.]
+}
+EMOTE_REVENGEFUL_SELF (entity a)
+{
+	emote_revengeful_self	[&EMT&$a$ will have his/her revenge! Just you wait!]
+}
+EMOTE_RIDICULE_TARGET (entity a, entity t)
+{
+	emote_ridicule_target	[&EMT&$a$ makes fun of $t$.]
+}
+EMOTE_RIDICULE_NOBODY (entity a)
+{
+	emote_ridicule_nobody	[&EMT&$a$ thinks things are getting ridiculous.]
+}
+EMOTE_RIDICULE_SELF (entity a)
+{
+	emote_ridicule_self	[&EMT&$a$ makes fun of him/herself before someone else does.]
+}
+EMOTE_RIGHTEOUS_TARGET (entity a, entity t)
+{
+	emote_righteous_target	[&EMT&$a$ unleashes a fury of righteousness on $t$.]
+}
+EMOTE_RIGHTEOUS_NOBODY (entity a)
+{
+	emote_righteous_nobody	[&EMT&$a$ walks along a path of righteousness.]
+}
+EMOTE_RIGHTEOUS_SELF (entity a)
+{
+	emote_righteous_self	[&EMT&$a$ is free from guilt or sin.]
+}
+EMOTE_ROMANTIC_TARGET (entity a, entity t)
+{
+	emote_romantic_target	[&EMT&$a$ composes an epic, romantic ode to $t$.]
+}
+EMOTE_ROMANTIC_NOBODY (entity a)
+{
+	emote_romantic_nobody	[&EMT&$a$ breaks out the candles, flowers, and liquor.]
+}
+EMOTE_ROMANTIC_SELF (entity a)
+{
+	emote_romantic_self	[&EMT&$a$ treats him/herself to something special.]
+}
+EMOTE_RUDE_TARGET (entity a, entity t)
+{
+	emote_rude_target	[&EMT&$a$ makes a rude gesture at $t$.]
+}
+EMOTE_RUDE_NOBODY (entity a)
+{
+	emote_rude_nobody	[&EMT&$a$ snorts rudely.]
+}
+EMOTE_RUDE_SELF (entity a)
+{
+	emote_rude_self	[&EMT&$a$ isn't paying attention to you. How rude.]
+}
+EMOTE_SAD_TARGET (entity a, entity t)
+{
+	emote_sad_target	[&EMT&$a$ shakes his/her head sadly at $t$.]
+}
+EMOTE_SAD_NOBODY (entity a)
+{
+	emote_sad_nobody	[&EMT&$a$ looks around sadly.]
+}
+EMOTE_SAD_SELF (entity a)
+{
+	emote_sad_self	[&EMT&$a$ could probably use some cheering up.]
+}
+EMOTE_SARCASTIC_TARGET (entity a, entity t)
+{
+	emote_sarcastic_target	[&EMT&$a$ wonders if $t$ was being sarcastic.]
+}
+EMOTE_SARCASTIC_NOBODY (entity a)
+{
+	emote_sarcastic_nobody	[&EMT&$a$ smiles sarcastically.]
+}
+EMOTE_SARCASTIC_SELF (entity a)
+{
+	emote_sarcastic_self	[&EMT&$a$ was being sarcastic.]
+}
+EMOTE_SCARED_TARGET (entity a, entity t)
+{
+	emote_scared_target	[&EMT&$a$ is scared of $t$.]
+}
+EMOTE_SCARED_NOBODY (entity a)
+{
+	emote_scared_nobody	[&EMT&$a$ trembles, just a bit scared.]
+}
+EMOTE_SCARED_SELF (entity a)
+{
+	emote_scared_self	[&EMT&$a$ scares him/herself. Boo!]
+}
+EMOTE_SCOLDING_TARGET (entity a, entity t)
+{
+	emote_scolding_target	[&EMT&$a$ scolds $t$. Bad $t$!]
+}
+EMOTE_SCOLDING_NOBODY (entity a)
+{
+	emote_scolding_nobody	[&EMT&$a$ looks ready to chew someone out.]
+}
+EMOTE_SCOLDING_SELF (entity a)
+{
+	emote_scolding_self	[&EMT&$a$ chastises him/herself. "Bad me."]
+}
+EMOTE_SEDATE_TARGET (entity a, entity t)
+{
+	emote_sedate_target	[&EMT&$a$ sedates $t$.]
+}
+EMOTE_SEDATE_NOBODY (entity a)
+{
+	emote_sedate_nobody	[&EMT&$a$ is quite sedate.]
+}
+EMOTE_SEDATE_SELF (entity a)
+{
+	emote_sedate_self	[&EMT&$a$ needs to be sedated.]
+}
+EMOTE_SELFISH_TARGET (entity a, entity t)
+{
+	emote_selfish_target	[&EMT&$a$ considers $t$ selfish.]
+}
+EMOTE_SELFISH_NOBODY (entity a)
+{
+	emote_selfish_nobody	[&EMT&$a$ thinks selfish thoughts.]
+}
+EMOTE_SELFISH_SELF (entity a)
+{
+	emote_selfish_self	[&EMT&$a$ is being selfish right now.]
+}
+EMOTE_SERIOUS_TARGET (entity a, entity t)
+{
+	emote_serious_target	[&EMT&$a$ tells $t$ to be serious.]
+}
+EMOTE_SERIOUS_NOBODY (entity a)
+{
+	emote_serious_nobody	[&EMT&$a$ gets serious.]
+}
+EMOTE_SERIOUS_SELF (entity a)
+{
+	emote_serious_self	[&EMT&$a$ straightens up and acts serious.]
+}
+EMOTE_SHAMELESS_TARGET (entity a, entity t)
+{
+	emote_shameless_target	[&EMT&$a$ wonders if $t$ has any shame whatsoever.]
+}
+EMOTE_SHAMELESS_NOBODY (entity a)
+{
+	emote_shameless_nobody	[&EMT&$a$ has no shame.]
+}
+EMOTE_SHAMELESS_SELF (entity a)
+{
+	emote_shameless_self	[&EMT&$a$ struts shamelessly.]
+}
+EMOTE_SHEEPISH_TARGET (entity a, entity t)
+{
+	emote_sheepish_target	[&EMT&$a$ looks sheepishly at $t$.]
+}
+EMOTE_SHEEPISH_NOBODY (entity a)
+{
+	emote_sheepish_nobody	[&EMT&$a$ looks suddenly sheepish.]
+}
+EMOTE_SHEEPISH_SELF (entity a)
+{
+	emote_sheepish_self	[&EMT&$a$ shuffles his/her foot and looks sheepish.]
+}
+EMOTE_SHIFTY_TARGET (entity a, entity t)
+{
+	emote_shifty_target	[&EMT&$a$ regards $t$ as shifty.]
+}
+EMOTE_SHIFTY_NOBODY (entity a)
+{
+	emote_shifty_nobody	[&EMT&$a$ shifts, perhaps suspiciously, or perhaps tectonically.]
+}
+EMOTE_SHIFTY_SELF (entity a)
+{
+	emote_shifty_self	[&EMT&$a$ looks around like a shifty sort.]
+}
+EMOTE_SHOCKED_TARGET (entity a, entity t)
+{
+	emote_shocked_target	[&EMT&$a$ looks shocked at $t$.]
+}
+EMOTE_SHOCKED_NOBODY (entity a)
+{
+	emote_shocked_nobody	[&EMT&$a$ is shocking.]
+}
+EMOTE_SHOCKED_SELF (entity a)
+{
+	emote_shocked_self	[&EMT&$a$ is too shocked to respond.]
+}
+EMOTE_SHUTUP_TARGET (entity a, entity t)
+{
+	emote_shutup_target	[&EMT&$a$ wants $t$ to shut up.]
+}
+EMOTE_SHUTUP_NOBODY (entity a)
+{
+	emote_shutup_nobody	[&EMT&$a$ is having problems thinking clearly. Could everyone please shut up?]
+}
+EMOTE_SHUTUP_SELF (entity a)
+{
+	emote_shutup_self	[&EMT&$a$ mutters that s/he should probably shut up now.]
+}
+EMOTE_SHY_TARGET (entity a, entity t)
+{
+	emote_shy_target	[&EMT&$a$ glances shyly at $t$]
+}
+EMOTE_SHY_NOBODY (entity a)
+{
+	emote_shy_nobody	[&EMT&$a$ is not saying much.]
+}
+EMOTE_SHY_SELF (entity a)
+{
+	emote_shy_self	[&EMT&$a$ mumbles quietly about being very shy.]
+}
+EMOTE_SIGH_TARGET (entity a, entity t)
+{
+	emote_sigh_target	[&EMT&$a$ sighs loudly at $t$.]
+}
+EMOTE_SIGH_NOBODY (entity a)
+{
+	emote_sigh_nobody	[&EMT&$a$ sighs.]
+}
+EMOTE_SIGH_SELF (entity a)
+{
+	emote_sigh_self	[&EMT&$a$ sighs softly to him/herself.]
+}
+EMOTE_SILENCE_TARGET (entity a, entity t)
+{
+	emote_silence_target	[&EMT&$a$ motions at $t$. Shh.]
+}
+EMOTE_SILENCE_NOBODY (entity a)
+{
+	emote_silence_nobody	[&EMT&$a$ calls for silence.]
+}
+EMOTE_SILENCE_SELF (entity a)
+{
+	emote_silence_self	[&EMT&$a$ hasn't said anything.]
+}
+EMOTE_SILLY_TARGET (entity a, entity t)
+{
+	emote_silly_target	[&EMT&$a$ calls $t$ silly.]
+}
+EMOTE_SILLY_NOBODY (entity a)
+{
+	emote_silly_nobody	[&EMT&$a$ finds this silly.]
+}
+EMOTE_SILLY_SELF (entity a)
+{
+	emote_silly_self	[&EMT&$a$ is silly, and knows it.]
+}
+EMOTE_SINCERELY_TARGET (entity a, entity t)
+{
+	emote_sincerely_target	[&EMT&$a$ nods sincerely to $t$.]
+}
+EMOTE_SINCERELY_NOBODY (entity a)
+{
+	emote_sincerely_nobody	[&EMT&$a$ means what s/he says.]
+}
+EMOTE_SINCERELY_SELF (entity a)
+{
+	emote_sincerely_self	[&EMT&$a$ is sincere.]
+}
+EMOTE_SLEEPY_TARGET (entity a, entity t)
+{
+	emote_sleepy_target	[&EMT&$a$ wonders if $t$ is sleepy.]
+}
+EMOTE_SLEEPY_NOBODY (entity a)
+{
+	emote_sleepy_nobody	[&EMT&$a$ is becoming sleepy.]
+}
+EMOTE_SLEEPY_SELF (entity a)
+{
+	emote_sleepy_self	[&EMT&$a$ yawns and stretches. Perhaps it's time for bed.]
+}
+EMOTE_SLY_TARGET (entity a, entity t)
+{
+	emote_sly_target	[&EMT&$a$ gives $t$ a sly glance.]
+}
+EMOTE_SLY_NOBODY (entity a)
+{
+	emote_sly_nobody	[&EMT&$a$ eyes the area, subtly.]
+}
+EMOTE_SLY_SELF (entity a)
+{
+	emote_sly_self	[&EMT&$a$ lets out a slow, sly smile. What is s/he up to?]
+}
+EMOTE_SMACK_TARGET (entity a, entity t)
+{
+	emote_smack_target	[&EMT&$a$ smacks $t$ around.]
+}
+EMOTE_SMACK_NOBODY (entity a)
+{
+	emote_smack_nobody	[&EMT&$a$ gets ready to smack someone.]
+}
+EMOTE_SMACK_SELF (entity a)
+{
+	emote_smack_self	[&EMT&$a$ smacks him/herself, then realizes that hurts and stops.]
+}
+EMOTE_SMUG_TARGET (entity a, entity t)
+{
+	emote_smug_target	[&EMT&$a$ smirks smugly at $t$.]
+}
+EMOTE_SMUG_NOBODY (entity a)
+{
+	emote_smug_nobody	[&EMT&$a$ looks smug.]
+}
+EMOTE_SMUG_SELF (entity a)
+{
+	emote_smug_self	[&EMT&$a$ smirks.]
+}
+EMOTE_SORRY_TARGET (entity a, entity t)
+{
+	emote_sorry_target	[&EMT&$a$ is sorry, $t$. Please forgive him/her?]
+}
+EMOTE_SORRY_NOBODY (entity a)
+{
+	emote_sorry_nobody	[&EMT&$a$ apologizes.]
+}
+EMOTE_SORRY_SELF (entity a)
+{
+	emote_sorry_self	[&EMT&$a$ is in a sorry mess.]
+}
+EMOTE_SPITEFUL_TARGET (entity a, entity t)
+{
+	emote_spiteful_target	[&EMT&$a$ does it to spite $t$.]
+}
+EMOTE_SPITEFUL_NOBODY (entity a)
+{
+	emote_spiteful_nobody	[&EMT&$a$ needs to get back at someone.]
+}
+EMOTE_SPITEFUL_SELF (entity a)
+{
+	emote_spiteful_self	[&EMT&$a$ is just being spiteful.]
+}
+EMOTE_SQUEAMISH_TARGET (entity a, entity t)
+{
+	emote_squeamish_target	[&EMT&$a$ squirms at $t$.]
+}
+EMOTE_SQUEAMISH_NOBODY (entity a)
+{
+	emote_squeamish_nobody	[&EMT&$a$ squirms at something.]
+}
+EMOTE_SQUEAMISH_SELF (entity a)
+{
+	emote_squeamish_self	[&EMT&$a$ is squeamish.]
+}
+EMOTE_STOP_TARGET (entity a, entity t)
+{
+	emote_stop_target	[&EMT&$a$ wants $t$ to stop.]
+}
+EMOTE_STOP_NOBODY (entity a)
+{
+	emote_stop_nobody	[&EMT&$a$ yells "Stop!"]
+}
+EMOTE_STOP_SELF (entity a)
+{
+	emote_stop_self	[&EMT&$a$ stops him/herself from doing something foolish.]
+}
+EMOTE_STRONG_TARGET (entity a, entity t)
+{
+	emote_strong_target	[&EMT&$a$ bets $t$ is really strong.]
+}
+EMOTE_STRONG_NOBODY (entity a)
+{
+	emote_strong_nobody	[&EMT&$a$ is the strongest in the area!]
+}
+EMOTE_STRONG_SELF (entity a)
+{
+	emote_strong_self	[&EMT&$a$ flexes.]
+}
+EMOTE_STUBBORN_TARGET (entity a, entity t)
+{
+	emote_stubborn_target	[&EMT&$a$ glares stubbornly at $t$.]
+}
+EMOTE_STUBBORN_NOBODY (entity a)
+{
+	emote_stubborn_nobody	[&EMT&$a$ glares around stubbornly.]
+}
+EMOTE_STUBBORN_SELF (entity a)
+{
+	emote_stubborn_self	[&EMT&$a$ is stubborn, and you're not changing his/her mind.]
+}
+EMOTE_SUFFERING_TARGET (entity a, entity t)
+{
+	emote_suffering_target	[&EMT&$a$ wants $t$ to know how much s/he makes him/her suffer.]
+}
+EMOTE_SUFFERING_NOBODY (entity a)
+{
+	emote_suffering_nobody	[&EMT&$a$ suffers, loudly.]
+}
+EMOTE_SUFFERING_SELF (entity a)
+{
+	emote_suffering_self	[&EMT&$a$ lets everyone know s/he is suffering.]
+}
+EMOTE_SURPRISED_TARGET (entity a, entity t)
+{
+	emote_surprised_target	[&EMT&$a$ is surprised by $t$.]
+}
+EMOTE_SURPRISED_NOBODY (entity a)
+{
+	emote_surprised_nobody	[&EMT&$a$ looks surprised.]
+}
+EMOTE_SURPRISED_SELF (entity a)
+{
+	emote_surprised_self	[&EMT&$a$ is surprised.]
+}
+EMOTE_SUSPICIOUS_TARGET (entity a, entity t)
+{
+	emote_suspicious_target	[&EMT&$a$ peers at $t$ suspiciously.]
+}
+EMOTE_SUSPICIOUS_NOBODY (entity a)
+{
+	emote_suspicious_nobody	[&EMT&$a$ looks at everyone suspiciously.]
+}
+EMOTE_SUSPICIOUS_SELF (entity a)
+{
+	emote_suspicious_self	[&EMT&$a$ ]
+}
+EMOTE_TAUNTING_TARGET (entity a, entity t)
+{
+	emote_taunting_target	[&EMT&$a$ taunts $t$.]
+}
+EMOTE_TAUNTING_NOBODY (entity a)
+{
+	emote_taunting_nobody	[&EMT&$a$ taunts the crowd.]
+}
+EMOTE_TAUNTING_SELF (entity a)
+{
+	emote_taunting_self	[&EMT&$a$ taunts him/herself and is appropriately intimidated.]
+}
+EMOTE_TERRIFIED_TARGET (entity a, entity t)
+{
+	emote_terrified_target	[&EMT&$a$ widens his/her eyes at $t$, visibly terrified.]
+}
+EMOTE_TERRIFIED_NOBODY (entity a)
+{
+	emote_terrified_nobody	[&EMT&$a$ recoils in horror, terrified.]
+}
+EMOTE_TERRIFIED_SELF (entity a)
+{
+	emote_terrified_self	[&EMT&$a$ tries to be terrifying to him/herself, and fails.]
+}
+EMOTE_THANKFUL_TARGET (entity a, entity t)
+{
+	emote_thankful_target	[&EMT&$a$ is thankful for $t$.]
+}
+EMOTE_THANKFUL_NOBODY (entity a)
+{
+	emote_thankful_nobody	[&EMT&$a$ is thankful.]
+}
+EMOTE_THANKFUL_SELF (entity a)
+{
+	emote_thankful_self	[&EMT&$a$ is thankful for being here.]
+}
+EMOTE_THIRSTY_TARGET (entity a, entity t)
+{
+	emote_thirsty_target	[&EMT&$a$ asks $t$ for something to drink.]
+}
+EMOTE_THIRSTY_NOBODY (entity a)
+{
+	emote_thirsty_nobody	[&EMT&$a$ is thirsty. Drinks, anyone?]
+}
+EMOTE_THIRSTY_SELF (entity a)
+{
+	emote_thirsty_self	[&EMT&$a$ swigs down a drink.]
+}
+EMOTE_THOUGHTFUL_TARGET (entity a, entity t)
+{
+	emote_thoughtful_target	[&EMT&$a$ looks thoughtfully at $t$.]
+}
+EMOTE_THOUGHTFUL_NOBODY (entity a)
+{
+	emote_thoughtful_nobody	[&EMT&$a$ mulls it over.]
+}
+EMOTE_THOUGHTFUL_SELF (entity a)
+{
+	emote_thoughtful_self	[&EMT&$a$ gave it a lot of thought.]
+}
+EMOTE_TIRED_TARGET (entity a, entity t)
+{
+	emote_tired_target	[&EMT&$a$ is really tired of $t$.]
+}
+EMOTE_TIRED_NOBODY (entity a)
+{
+	emote_tired_nobody	[&EMT&$a$ is tired of this.]
+}
+EMOTE_TIRED_SELF (entity a)
+{
+	emote_tired_self	[&EMT&$a$ is tired.]
+}
+EMOTE_TOLERANT_TARGET (entity a, entity t)
+{
+	emote_tolerant_target	[&EMT&$a$ tolerates $t$, to a point.]
+}
+EMOTE_TOLERANT_NOBODY (entity a)
+{
+	emote_tolerant_nobody	[&EMT&$a$ is extremely tolerant.]
+}
+EMOTE_TOLERANT_SELF (entity a)
+{
+	emote_tolerant_self	[&EMT&$a$ puts up with him/herself.]
+}
+EMOTE_TROUBLED_TARGET (entity a, entity t)
+{
+	emote_troubled_target	[&EMT&$a$ is troubled by $t$.]
+}
+EMOTE_TROUBLED_NOBODY (entity a)
+{
+	emote_troubled_nobody	[&EMT&$a$ appears troubled.]
+}
+EMOTE_TROUBLED_SELF (entity a)
+{
+	emote_troubled_self	[&EMT&$a$ is deeply troubled.]
+}
+EMOTE_UNCERTAIN_TARGET (entity a, entity t)
+{
+	emote_uncertain_target	[&EMT&$a$ shrugs uncertainly at $t$.]
+}
+EMOTE_UNCERTAIN_NOBODY (entity a)
+{
+	emote_uncertain_nobody	[&EMT&$a$ just doesn't know.]
+}
+EMOTE_UNCERTAIN_SELF (entity a)
+{
+	emote_uncertain_self	[&EMT&$a$ was sure, but is now not so certain.]
+}
+EMOTE_UNHAPPY_TARGET (entity a, entity t)
+{
+	emote_unhappy_target	[&EMT&$a$ is unhappy at $t$.]
+}
+EMOTE_UNHAPPY_NOBODY (entity a)
+{
+	emote_unhappy_nobody	[&EMT&$a$ looks unhappy.]
+}
+EMOTE_UNHAPPY_SELF (entity a)
+{
+	emote_unhappy_self	[&EMT&$a$ is unhappy with him/herself.]
+}
+EMOTE_UNWILLING_TARGET (entity a, entity t)
+{
+	emote_unwilling_target	[&EMT&$a$ is unwilling to comply with $t$.]
+}
+EMOTE_UNWILLING_NOBODY (entity a)
+{
+	emote_unwilling_nobody	[&EMT&$a$ stays put, unwilling.]
+}
+EMOTE_UNWILLING_SELF (entity a)
+{
+	emote_unwilling_self	[&EMT&$a$ is unwilling. Try someone else.]
+}
+EMOTE_VENGEFUL_TARGET (entity a, entity t)
+{
+	emote_vengeful_target	[&EMT&$a$ seeks vengence for $t$.]
+}
+EMOTE_VENGEFUL_NOBODY (entity a)
+{
+	emote_vengeful_nobody	[&EMT&$a$ is eager for revenge.]
+}
+EMOTE_VENGEFUL_SELF (entity a)
+{
+	emote_vengeful_self	[&EMT&$a$ seeks to avenge him/herself.]
+}
+EMOTE_WAIT_TARGET (entity a, entity t)
+{
+	emote_wait_target	[&EMT&$a$ wants to wait for $t$.]
+}
+EMOTE_WAIT_NOBODY (entity a)
+{
+	emote_wait_nobody	[&EMT&$a$ waits around.]
+}
+EMOTE_WAIT_SELF (entity a)
+{
+	emote_wait_self	[&EMT&$a$ yells, "Wait for me!"]
+}
+EMOTE_WARM_TARGET (entity a, entity t)
+{
+	emote_warm_target	[&EMT&$a$ gives $t$ a warm welcome.]
+}
+EMOTE_WARM_NOBODY (entity a)
+{
+	emote_warm_nobody	[&EMT&$a$ lets out a warm smile.]
+}
+EMOTE_WARM_SELF (entity a)
+{
+	emote_warm_self	[&EMT&$a$ warms up.]
+}
+EMOTE_WARY_TARGET (entity a, entity t)
+{
+	emote_wary_target	[&EMT&$a$ gives $t$ a wary look.]
+}
+EMOTE_WARY_NOBODY (entity a)
+{
+	emote_wary_nobody	[&EMT&$a$ peers about warily.]
+}
+EMOTE_WARY_SELF (entity a)
+{
+	emote_wary_self	[&EMT&$a$ looks at him/herself warily.]
+}
+EMOTE_WAVE_TARGET (entity a, entity t)
+{
+	emote_wave_target	[&EMT&$a$ waves at $t$.]
+}
+EMOTE_WAVE_NOBODY (entity a)
+{
+	emote_wave_nobody	[&EMT&$a$ attempts to start a wave. Everybody now!]
+}
+EMOTE_WAVE_SELF (entity a)
+{
+	emote_wave_self	[&EMT&$a$ waves her/his hands in the air like s/he just doesn't care.]
+}
+EMOTE_WHINE_TARGET (entity a, entity t)
+{
+	emote_whine_target	[&EMT&$a$ whines at $t$.]
+}
+EMOTE_WHINE_NOBODY (entity a)
+{
+	emote_whine_nobody	[&EMT&$a$ is whining.]
+}
+EMOTE_WHINE_SELF (entity a)
+{
+	emote_whine_self	[&EMT&$a$ whines to no one in particular, but knows it probably won't help.]
+}
+EMOTE_WICKED_TARGET (entity a, entity t)
+{
+	emote_wicked_target	[&EMT&$a$ thinks $t$ is positively wicked.]
+}
+EMOTE_WICKED_NOBODY (entity a)
+{
+	emote_wicked_nobody	[&EMT&$a$ has a wicked look.]
+}
+EMOTE_WICKED_SELF (entity a)
+{
+	emote_wicked_self	[&EMT&$a$ couldn't be more wicked if s/he tried.]
+}
+EMOTE_WISE_TARGET (entity a, entity t)
+{
+	emote_wise_target	[&EMT&$a$ considers $t$ wise.]
+}
+EMOTE_WISE_NOBODY (entity a)
+{
+	emote_wise_nobody	[&EMT&$a$ considers things, wisely.]
+}
+EMOTE_WISE_SELF (entity a)
+{
+	emote_wise_self	[&EMT&$a$ chooses wisely.]
+}
+EMOTE_WISTFUL_TARGET (entity a, entity t)
+{
+	emote_wistful_target	[&EMT&$a$ looks wistfully at $t$.]
+}
+EMOTE_WISTFUL_NOBODY (entity a)
+{
+	emote_wistful_nobody	[&EMT&$a$ looks wistfully into the distance.]
+}
+EMOTE_WISTFUL_SELF (entity a)
+{
+	emote_wistful_self	[&EMT&$a$ sighs wistfully, lost in thought.]
+}
+EMOTE_WORRIED_TARGET (entity a, entity t)
+{
+	emote_worried_target	[&EMT&$a$ worries about $t$.]
+}
+EMOTE_WORRIED_NOBODY (entity a)
+{
+	emote_worried_nobody	[&EMT&$a$ worries, generically.]
+}
+EMOTE_WORRIED_SELF (entity a)
+{
+	emote_worried_self	[&EMT&$a$ worries about him/herself sometimes.]
+}
+EMOTE_WOUNDED_TARGET (entity a, entity t)
+{
+	emote_wounded_target	[&EMT&$a$ has wounded $t$.]
+}
+EMOTE_WOUNDED_NOBODY (entity a)
+{
+	emote_wounded_nobody	[&EMT&$a$ staggers, wounded.]
+}
+EMOTE_WOUNDED_SELF (entity a)
+{
+	emote_wounded_self	[&EMT&$a$ has managed to wound his/herself. Heal?]
+}
+EMOTE_YAWN_TARGET (entity a, entity t)
+{
+	emote_yawn_target	[&EMT&$a$ yawns straight at $t$.]
+}
+EMOTE_YAWN_NOBODY (entity a)
+{
+	emote_yawn_nobody	[&EMT&$a$ yawns noticeably.]
+}
+EMOTE_YAWN_SELF (entity a)
+{
+	emote_yawn_self	[&EMT&$a$ yawns. Could be bored, could be tired.]
+}
+EMOTE_YOUANDME_TARGET (entity a, entity t)
+{
+	emote_youandme_target	[&EMT&$a$ says, "It's just you and me, $t$."]
+}
+EMOTE_YOUANDME_NOBODY (entity a)
+{
+	emote_youandme_nobody	[&EMT&$a$ knows its just you and him/her out here.]
+}
+EMOTE_YOUANDME_SELF (entity a)
+{
+	emote_youandme_self	[&EMT&$a$ wonders if "it's just you and me", where everyone went.]
+}

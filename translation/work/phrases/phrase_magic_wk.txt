@@ -1,0 +1,601 @@
+
+/////////////////////////////////////////////////////////////////////////
+// sentences related to magic
+/////////////////////////////////////////////////////////////////////////
+
+MAGIC_BEGIN_CAST_GOOD_ACTOR(entity e)
+{
+	magic_begin_good_actor	[&SPLM&You invoke a beneficial spell on $e.ia$ $e$.]
+}
+MAGIC_BEGIN_CAST_NEUTRAL_ACTOR(entity e)
+{
+	magic_begin_neutral_actor	[&SPLM&You invoke a neutral spell on $e.ia$ $e$.]
+}
+MAGIC_BEGIN_CAST_BAD_ACTOR(entity e)
+{
+	magic_begin_bad_actor	[&SPLM&You invoke an offensive spell on $e.ia$ $e$.]
+}
+
+MAGIC_BEGIN_SELFCAST_GOOD_ACTOR()
+{
+	magic_begin_selfcast_good_actor	[&SPL&You invoke a beneficial spell on yourself.]
+}
+MAGIC_BEGIN_SELFCAST_NEUTRAL_ACTOR()
+{
+	magic_begin_selfcast_neutral_actor	[&SPL&You invoke a neutral spell on yourself.]
+}
+MAGIC_BEGIN_SELFCAST_BAD_ACTOR()
+{
+	magic_begin_selfcast_bad_actor	[&SPL&You invoke an offensive spell on yourself.]
+}
+
+MAGIC_BEGIN_CAST_GOOD_TARGET(entity e)
+{
+	magic_begin_cast_good_target	[&SPL&$e.ia$ $e$ invokes a beneficial spell on you.]
+}
+MAGIC_BEGIN_CAST_NEUTRAL_TARGET(entity e)
+{
+	magic_begin_cast_neutral_target	[&SPL&$e.ia$ $e$ invokes a neutral spell on you.]
+}
+MAGIC_BEGIN_CAST_BAD_TARGET(entity e)
+{
+	magic_begin_cast_bad_target	[&SPL&$e.ia$ $e$ invokes an offensive spell on you.]
+}
+
+MAGIC_BEGIN_CAST_GOOD_SPECTATOR(entity actor, entity target)
+{
+	magic_begin_cast_good_spectator	[&SYS&$actor.ia$ $actor$ invokes a beneficial spell on $target.ia$ $target$.]
+}
+MAGIC_BEGIN_CAST_NEUTRAL_SPECTATOR(entity actor, entity target)
+{
+	magic_begin_cast_neutral_spectator	[&SYS&$actor.ia$ $actor$ invokes a neutral spell on $target.ia$ $target$.]
+}
+MAGIC_BEGIN_CAST_BAD_SPECTATOR(entity actor, entity target)
+{
+	magic_begin_cast_bad_spectator	[&SYS&$actor.ia$ $actor$ invokes an offensive spell on $target.ia$ $target$.]
+}
+
+MAGIC_BEGIN_SELFCAST_GOOD_SPECTATOR_PLAYER(player actor)
+{
+	(actor.gender = male)
+		magic_begin_good_spectator_pm	[&SYS&$actor$ invokes a beneficial spell on himself.]
+	(actor.gender = female)
+		magic_begin_good_spectator_pf	[&SYS&$actor$ invokes a beneficial spell on herself.]
+}
+MAGIC_BEGIN_SELFCAST_NEUTRAL_SPECTATOR_PLAYER(player actor)
+{
+	(actor.gender = male)
+		magic_begin_neutral_spectator_pm	[&SYS&$actor$ invokes a neutral spell on himself.]
+	(actor.gender = female)
+		magic_begin_neutral_spectator_pf	[&SYS&$actor$ invokes a neutral spell on herself.]
+}
+MAGIC_BEGIN_SELFCAST_BAD_SPECTATOR_PLAYER(player actor)
+{
+	(actor.gender = male)
+		magic_begin_bad_spectator_pm	[&SYS&$actor$ invokes an offensive spell on himself.]
+	(actor.gender = female)
+		magic_begin_bad_spectator_pf	[&SYS&$actor$ invokes an offensive spell on herself.]
+}
+
+MAGIC_BEGIN_SELFCAST_GOOD_SPECTATOR_NPC(bot actor)
+{
+	(actor.gender = male)
+		magic_begin_good_spectator_nm	[&SYS&$actor.ia$ $actor$ invokes a beneficial spell on himself.]
+	(actor.gender = female)
+		magic_begin_good_spectator_nf	[&SYS&$actor.ia$ $actor$ invokes a beneficial spell on herself.]
+}
+MAGIC_BEGIN_SELFCAST_NEUTRAL_SPECTATOR_NPC(bot actor)
+{
+	(actor.gender = male)
+		magic_begin_neutral_spectator_nm	[&SYS&$actor.ia$ $actor$ invokes a neutral spell on himself.]
+	(actor.gender = female)
+		magic_begin_neutral_spectator_nf	[&SYS&$actor.ia$ $actor$ invokes a neutral spell on herself.]
+}
+MAGIC_BEGIN_SELFCAST_BAD_SPECTATOR_NPC(bot actor)
+{
+	(actor.gender = male)
+		magic_begin_bad_spectator_nm	[&SYS&$actor.ia$ $actor$ invokes an offensive spell on himself.]
+	(actor.gender = female)
+		magic_begin_bad_spectator_nf	[&SYS&$actor.ia$ $actor$ invokes an offensive spell on herself.]
+}
+
+MAGIC_BEGIN_SELFCAST_GOOD_SPECTATOR_CREATURE(creature actor)
+{
+	magic_begin_good_spectator_c	[&SYS&$actor.ia$ $actor$ invokes a beneficial spell on itself.]
+}
+MAGIC_BEGIN_SELFCAST_NEUTRAL_SPECTATOR_CREATURE(creature actor)
+{
+	magic_begin_neutral_spectator_c	[&SYS&$actor.ia$ $actor$ invokes a neutral spell on itself.]
+}
+MAGIC_BEGIN_SELFCAST_BAD_SPECTATOR_CREATURE(creature actor)
+{
+	magic_begin_bad_spectator_c	[&SYS&$actor.ia$ $actor$ invokes an offensive spell on itself.]
+}
+
+MAGIC_END_CAST_SUCCESS_ACTOR()
+{
+	magic_end_cast_success_actor	[&SPLM&You succesfully cast your spell.]
+}
+MAGIC_END_CAST_FAILED_ACTOR()
+{
+	magic_end_cast_failed_actor	[&MISM&You failed your incantation.]
+}
+MAGIC_END_CAST_FUMBLE_ACTOR()
+{
+	magic_end_cast_fumble_actor	[&MISM&You made a blunder.]
+}
+
+MAGIC_END_CAST_SUCCESS_TARGET(entity e)
+{
+	magic_end_cast_success_target	[&SPL&$e.da$ $e$ succesfully cast a spell on you.]
+}
+MAGIC_END_CAST_FAILED_TARGET(entity e)
+{
+	magic_end_cast_failed_target	[&MIS&$e.da$ $e$'s incantation failed.]
+}
+MAGIC_END_CAST_FUMBLE_TARGET(entity e)
+{
+	magic_end_cast_fumble_target	[&MIS&$e.da$ $e$'s incantation fumbled.]
+}
+
+MAGIC_END_CAST_SUCCESS_SPECTATORS(entity caster, entity target)
+{
+	magic_end_cast_success_spectators	[&SYS&$caster.da$ $caster$ succesfully cast a spell on $target.da$ $target$.]
+}
+MAGIC_END_SELFCAST_SUCCESS_SPECTATORS_PLAYER(player caster)
+{
+	(caster.gender = male)
+		magic_end_selfcast_success_spectators_pm	[&SYS&$caster$ succesfully cast a spell on himself.]
+	(caster.gender = female)
+		magic_end_selfcast_success_spectators_pf	[&SYS&$caster$ succesfully cast a spell on herself.]
+}
+MAGIC_END_SELFCAST_SUCCESS_SPECTATORS_NPC(bot caster)
+{
+	(caster.gender = male)
+		magic_end_selfcast_success_spectators_bm	[&SYS&$caster.da$ $caster$ succesfully cast a spell on himself.]
+	(caster.gender = female)
+		magic_end_selfcast_success_spectators_bf	[&SYS&$caster.da$ $caster$ succesfully cast a spell on herself.]
+}
+MAGIC_END_SELFCAST_SUCCESS_SPECTATORS_CREATURE(creature c)
+{
+	magic_end_selfcast_success_spectators_c	[&SYS&$c.da$ $c$ succesfully cast a spell on itself.]
+}
+MAGIC_END_CAST_FAILED_SPECTATORS(entity e)
+{
+	magic_end_cast_failed_spectators	[&SYS&$e.da$ $e$'s incantation failed.]
+}
+MAGIC_END_CAST_FUMBLE_SPECTATORS(entity e)
+{
+	magic_end_cast_fumble_spectators	[&SYS&$e.da$ $e$'s incantation fumbled.]
+}
+
+MAGIC_RESIST_CASTER(entity e)
+{
+	magic_resist_caster	[&MISM&$e.da$ $e$ resists the effects of your spell.]
+}
+MAGIC_RESIST_TARGET(entity e)
+{
+	magic_resist_target	[&MIS&You resist the effects of the spell invoked by $e.da$ $e$.]
+}
+MAGIC_RESIST_SPECTATORS(entity caster, entity target)
+{
+	magic_resist_spectators	[&SYS&$target.da$ $target$ resists the effects of the spell invoked by $caster.da$ $caster$.]
+}
+
+MAGIC_TARGET_OUT_OF_RANGE(entity e)
+{
+	magic_target_out_of_range	[&CHKCB&$e.da$ $e$ is out of range for your spell.]
+}
+MAGIC_BAD_TARGET()
+{
+	magic_bad_target	[&CHKCB&Target missing or invalid.]
+}
+MAGIC_LACK_HP()
+{
+	magic_lack_hp	[&CHKCB&You do not have enough hit points to cast this spell.]
+}
+MAGIC_LACK_SAP()
+{
+	magic_lack_sap	[&CHKCB&You do not have enough sap points to cast this spell.]
+}
+
+MAGIC_NEW_LINK_CASTER(entity e)
+{
+	magic_new_link_caster	[&SPLM&You have created a new magic link with $e.da$ $e$.]
+}
+MAGIC_NEW_LINK_TARGET(entity e)
+{
+	magic_new_link_target	[&SPL&$e.da$ $e$ has created a new magic link with you.]
+}
+
+MAGIC_DESTROY_LINK_CASTER(entity e)
+{
+	magic_destroy_link_caster	[&SPLM&A link you created with $e.da$ $e$ has been broken.]
+}
+MAGIC_DESTROY_LINK_TARGET(entity e)
+{
+	magic_destroy_link_target	[&SPL&A link created with you by $e.da$ $e$ has been broken.]
+}
+
+MAGIC_DAMAGE_SAP_TARGET(entity e, int n, int m)
+{
+	magic_damage_sap_target	[&SPL&$e.da$ $e$ inflicts you $n$($m$) magic sap damage.]
+}
+MAGIC_DAMAGE_SAP_CASTER(entity e, int n, int m)
+{
+	magic_damage_sap_caster	[&SPLM&You inflict $n$($m$) magic sap damage to $e.da$ $e$.]
+}
+MAGIC_DAMAGE_SAP_SPECTATORS(entity caster, entity target, int n)
+{
+	magic_damage_sap_spectators	[&SYS&$caster.da$ $caster$ inflicts $n$ magic sap damage to $target.da$ $target$.]
+}
+MAGIC_DAMAGE_STA_TARGET(entity e, int n, int m)
+{
+	magic_damage_sta_target	[&SPL&$e.da$ $e$ inflicts you $n$($m$) magic stamina damage.]
+}
+MAGIC_DAMAGE_STA_CASTER(entity e, int n, int m)
+{
+	magic_damage_sta_caster	[&SPLM&You inflict $n$($m$) magic stamina damage to $e.da$ $e$.]
+}
+MAGIC_DAMAGE_STA_SPECTATORS(entity caster, entity target, int n)
+{
+	magic_damage_sta_spectators	[&SYS&$caster.da$ $caster$ inflicts $n$ magic stamina damage to $target.da$ $target$.]
+}
+MAGIC_DAMAGE_HP_TARGET(entity e, int n, int m)
+{
+	magic_damage_hp_target	[&DMG&$e.da$ $e$ inflicts you $n$($m$) magic hit points damage.]
+}
+MAGIC_DAMAGE_HP_CASTER(entity e, int n, int m)
+{
+	magic_damage_hp_caster	[&DGM&You inflict $n$($m$) magic hit points damage to $e.da$ $e$.]
+}
+MAGIC_DAMAGE_HP_SPECTATORS(entity caster, entity target, int n)
+{
+	magic_damage_hp_spectators	[&SYS&$caster.da$ $caster$ inflicts $n$ magic hit points damage to $target.da$ $target$.]
+}
+
+MAGIC_SELF_DAMAGE_SAP(int n, int m)
+{
+	magic_self_damage_sap	[&SPL&You inflict yourself $n$($m$) magic sap points damage.]
+}
+MAGIC_SELF_DAMAGE_STA(int n, int m)
+{
+	magic_self_damage_sta	[&SPL&You inflict yourself $n$($m$) magic stamina points damage.]
+}
+MAGIC_SELF_DAMAGE_HP(int n, int m)
+{
+	magic_self_damage_hp	[&DMG&You inflict yourself $n$($m$) magic hit points damage.]
+}
+
+MAGIC_SELF_DAMAGE_SAP_SPECTATORS_PLAYER(player p, int n)
+{
+	(p.gender = male)
+		magic_self_damage_sap_spectators_pm	[&SYS&$p$ inflict himself $n$ magic sap points damage.]
+	(p.gender = female)
+		magic_self_damage_sap_spectators_pf	[&SYS&$p$ inflict herself $n$ magic sap points damage.]
+}
+MAGIC_SELF_DAMAGE_SAP_SPECTATORS_NPC(bot b, int n)
+{
+	(b.gender = male)
+		magic_self_damage_sap_spectators_bm	[&SYS&$b.da$ $b$ inflict himself $n$ magic sap points damage.]
+	(b.gender = female)
+		magic_self_damage_sap_spectators_bf	[&SYS&$b.da$ $b$ inflict herself $n$ magic sap points damage.]
+}
+MAGIC_SELF_DAMAGE_SAP_SPECTATORS_CREATURE(creature c, int n)
+{
+	magic_self_damage_sap_spectators_c	[&SYS&$c.da$ $c$ inflict itself $n$ magic sap points damage.]
+}
+
+MAGIC_SELF_DAMAGE_STA_SPECTATORS_PLAYER(player p, int n)
+{
+	(p.gender = male)
+		magic_self_damage_sta_spectators_pm	[&SYS&$p$ inflict himself $n$ magic stamina points damage.]
+	(p.gender = female)
+		magic_self_damage_sta_spectators_pf	[&SYS&$p$ inflict herself $n$ magic stamina points damage.]
+}
+MAGIC_SELF_DAMAGE_STA_SPECTATORS_NPC(bot b, int n)
+{
+	(b.gender = male)
+		magic_self_damage_sta_spectators_bm	[&SYS&$b.da$ $b$ inflict himself $n$ magic stamina points damage.]
+	(b.gender = female)
+		magic_self_damage_sta_spectators_bf	[&SYS&$b.da$ $b$ inflict herself $n$ magic stamina points damage.]
+}
+MAGIC_SELF_DAMAGE_STA_SPECTATORS_CREATURE(creature c, int n)
+{
+	magic_self_damage_sta_spectators_c	[&SYS&$c.da$ $c$ inflict itself $n$ magic stamina points damage.]
+}
+
+MAGIC_SELF_DAMAGE_HP_SPECTATORS_PLAYER(player p, int n)
+{
+	(p.gender = male)
+		magic_self_damage_hp_spectators_pm	[&SYS&$p$ inflict himself $n$ magic hit points damage.]
+	(p.gender = female)
+		magic_self_damage_hp_spectators_pf	[&SYS&$p$ inflict herself $n$ magic hit points damage.]
+}
+MAGIC_SELF_DAMAGE_HP_SPECTATORS_NPC(bot b, int n)
+{
+	(b.gender = male)
+		magic_self_damage_hp_spectators_bm	[&SYS&$b.da$ $b$ inflict himself $n$ magic hit points damage.]
+	(b.gender = female)
+		magic_self_damage_hp_spectators_bf	[&SYS&$b.da$ $b$ inflict herself $n$ magic hit points damage.]
+}
+MAGIC_SELF_DAMAGE_HP_SPECTATORS_CREATURE(creature c, int n)
+{
+	magic_self_damage_hp_spectators_c	[&SYS&$c.da$ $c$ inflict itself $n$ magic hit points damage.]
+}
+
+
+MAGIC_SPECIAL_DAMAGE_ACTOR(entity e, int i, damagetype d)
+{
+	magic_special_damage_actor	[&DGM&You inflict $i$ $d$ damage on $e.da$ $e$.]
+}
+MAGIC_SPECIAL_DAMAGE_TARGET(entity e, int i, damagetype d)
+{
+	magic_special_damage_target	[&DMG&$e.da$ $e$ inflicts you $i$ $d$ damage.]
+}
+MAGIC_SPECIAL_DAMAGE_SPECTATORS(entity caster, entity target, int i, damagetype d)
+{
+	magic_special_damage_spectators	[&SYS&$caster.da$ $caster$ inflicts $i$ $d$ damage on $target.da$ $target$.]
+}
+MAGIC_SPECIAL_DAMAGE_SELF(int i, damagetype d)
+{
+	magic_special_damage_self	[&DMG&You inflict yourself $i$ $d$ damage.]
+}
+MAGIC_SPECIAL_DAMAGE_SELF_SPECTATORS_PLAYER(player p, int n, damagetype d)
+{
+	(p.gender = male)
+		magic_special_damage_self_spectators_pm	[&SYS&$p$ inflict himself $n$ $d$ damage.]
+	(p.gender = female)
+		magic_special_damage_self_spectators_pf	[&SYS&$p$ inflict herself $n$ $d$ damage.]
+}
+MAGIC_SPECIAL_DAMAGE_SELF_SPECTATORS_NPC(bot b, int n, damagetype d)
+{
+	(b.gender = male)
+		magic_special_damage_self_spectators_bm	[&SYS&$b.da$ $b$ inflict himself $n$ $d$ damage.]
+	(b.gender = female)
+		magic_special_damage_self_spectators_bf	[&SYS&$b.da$ $b$ inflict herself $n$ $d$ damage.]
+}
+MAGIC_SPECIAL_DAMAGE_SELF_SPECTATORS_CREATURE(creature c, int n, damagetype d)
+{
+	magic_special_damage_self_spectators_c	[&SYS&$c.da$ $c$ inflict itself $n$ $d$ damage.]
+}
+
+
+
+MAGIC_HEAL_SAP_CASTER(entity e, int i)
+{
+	magic_heal_sap_caster	[&SPLM&You restore $e.da$ $e$ $i$ sap points.]
+}
+MAGIC_HEAL_SAP_TARGET(entity e, int i)
+{
+	magic_heal_sap_target	[&SPL&$e.da$ $e$ restores you $i$ sap points.]
+}
+MAGIC_HEAL_SAP_SPECTATORS(entity caster, entity target, int i)
+{
+	magic_heal_sap_spectators	[&SYS&$caster.da$ $caster$ restores $target.da$ $target$ $i$ sap points.]
+}
+MAGIC_SELF_HEAL_SAP(int i)
+{
+	magic_self_heal_sap	[&SPLM&You restore yourself $i$ sap points.]
+}
+MAGIC_SELF_HEAL_SAP_SPECTATORS_PLAYER(player p, int i)
+{
+	(p.gender = male)
+		magic_self_heal_sap_spectators_pm	[&SYS&$p$ restores himself $i$ sap points.]
+	(p.gender = female)
+		magic_self_heal_sap_spectators_pf	[&SYS&$p$ restores herself $i$ sap points.]
+}
+MAGIC_SELF_HEAL_SAP_SPECTATORS_NPC(bot b, int i)
+{
+	(b.gender = male)
+		magic_self_heal_sap_spectators_bm	[&SYS&$b.da$ $b$ restores himself $i$ sap points.]
+	(b.gender = female)
+		magic_self_heal_sap_spectators_bf	[&SYS&$b.da$ $b$ restores herself $i$ sap points.]
+}
+MAGIC_SELF_HEAL_SAP_SPECTATORS_CREATURE(creature c, int i)
+{
+	magic_self_heal_sap_spectators_c	[&SYS&$c.da$ $c$ restores itself $i$ sap points.]
+}
+
+MAGIC_HEAL_STA_CASTER(entity e, int i)
+{
+	magic_heal_stamina_caster	[&SPLM&You restore $e.da$ $e$ $i$ stamina points.]
+}
+MAGIC_HEAL_STA_TARGET(entity e, int i)
+{
+	magic_heal_stamina_target	[&SPL&$e.da$ $e$ restores you $i$ stamina points.]
+}
+MAGIC_HEAL_STA_SPECTATORS(entity caster, entity target, int i)
+{
+	magic_heal_sta_spectators	[&SYS&$caster.da$ $caster$ restores $target.da$ $target$ $i$ stamina points.]
+}
+MAGIC_SELF_HEAL_STA(int i)
+{
+	magic_self_heal_sta	[&SPLM&You restore yourself $i$ stamina points.]
+}
+MAGIC_SELF_HEAL_STA_SPECTATORS_PLAYER(player p, int i)
+{
+	(p.gender = male)
+		magic_self_heal_sta_spectators_pm	[&SYS&$p$ restores himself $i$ stamina points.]
+	(p.gender = female)
+		magic_self_heal_sta_spectators_pf	[&SYS&$p$ restores herself $i$ stamina points.]
+}
+MAGIC_SELF_HEAL_STA_SPECTATORS_NPC(bot b, int i)
+{
+	(b.gender = male)
+		magic_self_heal_sta_spectators_bm	[&SYS&$b.da$ $b$ restores himself $i$ stamina points.]
+	(b.gender = female)
+		magic_self_heal_sta_spectators_bf	[&SYS&$b.da$ $b$ restores herself $i$ stamina points.]
+}
+MAGIC_SELF_HEAL_STA_SPECTATORS_CREATURE(creature c, int i)
+{
+	magic_self_heal_sta_spectators_c	[&SYS&$c.da$ $c$ restores itself $i$ stamina points.]
+}
+
+MAGIC_HEAL_FOCUS_CASTER(entity e, int i)
+{
+	magic_heal_focus_caster	[&SPLM&You restore $e.da$ $e$ $i$ focus points.]
+}
+MAGIC_HEAL_FOCUS_TARGET(entity e, int i)
+{
+	magic_heal_focus_target	[&SPL&$e.da$ $e$ restores you $i$ focus points.]
+}
+MAGIC_HEAL_FOCUS_SPECTATORS(entity caster, entity target, int i)
+{
+	magic_heal_focus_spectators	[&SYS&$caster.da$ $caster$ restores $target.da$ $target$ $i$ focus points.]
+}
+MAGIC_SELF_HEAL_FOCUS(int i)
+{
+	magic_self_heal_focus	[&SPLM&You restore yourself $i$ focus points.]
+}
+MAGIC_SELF_HEAL_FOCUS_SPECTATORS_PLAYER(player p, int i)
+{
+	(p.gender = male)
+		magic_self_heal_focus_spectators_pm	[&SYS&$p$ restores himself $i$ focus points.]
+	(p.gender = female)
+		magic_self_heal_focus_spectators_pf	[&SYS&$p$ restores herself $i$ focus points.]
+}
+MAGIC_SELF_HEAL_FOCUS_SPECTATORS_NPC(bot b, int i)
+{
+	(b.gender = male)
+		magic_self_heal_focus_spectators_bm	[&SYS&$b.da$ $b$ restores himself $i$ focus points.]
+	(b.gender = female)
+		magic_self_heal_focus_spectators_bf	[&SYS&$b.da$ $b$ restores herself $i$ focus points.]
+}
+MAGIC_SELF_HEAL_FOCUS_SPECTATORS_CREATURE(creature c, int i)
+{
+	magic_self_heal_focus_spectators_c	[&SYS&$c.da$ $c$ restores itself $i$ focus points.]
+}
+
+MAGIC_HEAL_HP_CASTER(entity e, int i)
+{
+	magic_heal_hp_caster	[&SPLM&You heal $e.da$ $e$ $i$ hit points.]
+}
+MAGIC_HEAL_HP_TARGET(entity e, int i)
+{
+	magic_heal_hp_target	[&SPL&$e.da$ $e$ heals you $i$ hit points.]
+}
+MAGIC_HEAL_HP_SPECTATORS(entity caster, entity target, int i)
+{
+	magic_heal_hp_spectators	[&SYS&$caster.da$ $caster$ heals $target.da$ $target$ $i$ hit points.]
+}
+MAGIC_SELF_HEAL_HP(int i)
+{
+	magic_self_heal_hp	[&SPLM&You heal yourself $i$ hit points.]
+}
+MAGIC_SELF_HEAL_HP_SPECTATORS_PLAYER(player p, int i)
+{
+	(p.gender = male)
+		magic_self_heal_hp_spectators_pm	[&SYS&$p$ heals himself $i$ hit points.]
+	(p.gender = female)
+		magic_self_heal_hp_spectators_pf	[&SYS&$p$ heals herself $i$ hit points.]
+}
+MAGIC_SELF_HEAL_HP_SPECTATORS_NPC(bot b, int i)
+{
+	(b.gender = male)
+		magic_self_heal_hp_spectators_bm	[&SYS&$b.da$ $b$ heals himself $i$ hit points.]
+	(b.gender = female)
+		magic_self_heal_hp_spectators_bf	[&SYS&$b.da$ $b$ heals herself $i$ hit points.]
+}
+MAGIC_SELF_HEAL_HP_SPECTATORS_CREATURE(creature c, int i)
+{
+	magic_self_heal_hp_spectators_c	[&SYS&$c.da$ $c$ heals itself $i$ hit points.]
+}
+
+MAGIC_HEAL_FULL_SCORE_TARGET(score s)
+{
+	(s.score_ID = hit_points)	
+		magic_heal_full_score_target_hp	[&SYS&You are now at full health and no longer need healing.]
+
+	magic_heal_full_score_target	[&SYS&You are now at full $s$.]
+}
+MAGIC_HEAL_FULL_SCORE_ACTOR(entity e, score s)
+{
+	magic_heal_full_score_actor	[&SYS&$e.da$ $e$ is now at full $s$ and no longer needs $s$ recovery spells.]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+/// sentences used as error codes in magic system
+////////////////////////////////////////////////////////////////////////////////////
+MAGIC_NEED_TARGET()
+{
+	magic_need_target	[&CHKCB&This spell needs a target.]
+}
+MAGIC_CANNOT_CAST_ON_ENEMY()
+{
+	magic_cannot_cast_on_enemy	[&CHKCB&This spell cannot be cast on an enemy.]
+}
+MAGIC_CAN_ONLY_CAST_ON_ENEMY()
+{
+	magic_can_only_cast_on_enemy	[&CHKCB&This spell can only be cast on an enemy.]
+}
+MAGIC_TARGET_DEAD()
+{
+	magic_target_dead	[&CHKCB&You cannot cast on a corpse.]
+}
+
+MAGIC_CANNOT_CAST_YET()
+{
+	magic_cannot_cast_yet	[&CHKCB&You cannot cast yet.]
+}
+
+MAGIC_CANNOT_SELFCAST()
+{
+	magic_cannot_selfcast	[&CHKCB&You cannot cast this spell on yourself.]
+}
+
+MAGIC_TARGET_INVULNERABLE_OFFENSIVE(entity e)
+{
+	magic_target_invulnerable_offensive	[&CHKCB&$e.da$ $e$ is invulnerable to offensive spells.]
+}
+
+MAGIC_TARGET_INVULNERABLE_ALL_MAGIC(entity e)
+{
+	magic_target_invulnerable_all_magic	[&CHKCB&$e.da$ $e$ is unaffected by magic.]
+}
+
+MAGIC_TARGET_IMMUNE(entity e)
+{
+	magic_target_immune	[&CHKCB&$e.da$ $e$ is immune to this kind of magic.]
+}
+
+MAGIC_MAGICIAN_STAFF_LOW_REQ()
+{
+	magic_magician_staff_low_req	[&CHK&Your gloves quality is too low to canalyse the power of your spell, you won't benefits your gloves bonuses.]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// Magic related messages
+////////////////////////////////////////////////////////////////////////////////////
+EGS_MAGIC_LACK_HP ()
+{
+	egs_magic_lack_hp [&CHKCB&You do not have enough hit points to cast this spell.]
+}
+EGS_MAGIC_LACK_SAP ()
+{
+	egs_magic_lack_sap [&CHKCB&You do not have enough sap points to cast this spell.]
+}
+EGS_MAGIC_LACK_MONEY ()
+{
+	egs_magic_lack_money [&CHKCB&You do not have enough sap load/money/seeds to cast this spell.]
+}
+
+EGS_MAGIC_TARGET_OUT_OF_RANGE ()
+{
+	[&CHKCB&Your target is out of range for your spell.]
+}
+
+EGS_MAGIC_BAD_TARGET ()
+{
+	[&CHKCB&Target missing or invalid.]
+}
+
+UNEFFICENT_RANGE ()
+{
+	[&SYS&Vous êtes trop loin pour toucher efficacement cette cible.]
+}
+
+EGS_ACTOR_VAMPIRISE_EI (entity target, int vampirise)
+{
+	[&SPLM&You vampirise $vampirise$ from $target$]
+}
