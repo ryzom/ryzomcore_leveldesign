@@ -119,7 +119,7 @@ LigoTileBankFile = "landscape/_texture_tiles/" + EcosystemName + "/" + Ecosystem
 # *** RBANK OPTIONS ***
 
 # Options
-RBankVerbose = 0
+RBankVerbose = 1
 RBankConsistencyCheck = 0
 RbankReduceSurfaces = 1
 RbankSmoothBorders = 1

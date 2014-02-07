@@ -123,7 +123,7 @@ ZoneRegions += [ [ "65_bz" ] + [ "77_cs" ] ]
 # *** RBANK OPTIONS ***
 
 # Options
-RBankVerbose = 0
+RBankVerbose = 1
 RBankConsistencyCheck = 0
 RbankReduceSurfaces = 1
 RbankSmoothBorders = 1
