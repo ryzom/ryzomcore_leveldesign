@@ -1,4 +1,4 @@
-
+Ôªø
 
 /////////////////////////////////////////////////////////////////////////
 // sentences related to combat
@@ -80,22 +80,22 @@ COMBAT_SPECTATOR_HIT(entity actor, entity defender, int damage, int maxDamage)
 COMBAT_ACTOR_HIT_SELF(int damage, int maxDamage)
 {
 	(maxDamage = 0 & damage > 1) 
-		combat_actor_hit_self_p		[&DG&Vous vous blessez, infligeant $damage$ points de dÈg‚ts.]
+		combat_actor_hit_self_p		[&DG&Vous vous blessez, infligeant $damage$ points de d√©g√¢ts.]
 
 	(maxDamage = 0 & damage = 1) 
-		combat_actor_hit_self_1		[&DG&Vous vous blessez, infligeant 1 point de dÈg‚ts.]
+		combat_actor_hit_self_1		[&DG&Vous vous blessez, infligeant 1 point de d√©g√¢ts.]
 
 	(maxDamage = 0 & damage = 0) 
-		combat_actor_hit_self_0		[&DG&Vous vous blessez mais n'infligez pas de dÈg‚ts.]
+		combat_actor_hit_self_0		[&DG&Vous vous blessez mais n'infligez pas de d√©g√¢ts.]
 
 	(damage>1) 
-		combat_actor_hit_self_pm	[&DG&Vous vous blessez, infligeant $damage$ ($maxDamage$) points de dÈg‚ts.]
+		combat_actor_hit_self_pm	[&DG&Vous vous blessez, infligeant $damage$ ($maxDamage$) points de d√©g√¢ts.]
 
 	(damage=1) 
-		combat_actor_hit_self_1m	[&DG&Vous vous blessez, infligeant 1 ($maxDamage$) point de dÈg‚ts.]
+		combat_actor_hit_self_1m	[&DG&Vous vous blessez, infligeant 1 ($maxDamage$) point de d√©g√¢ts.]
 
 	(damage=0) 
-		combat_actor_hit_self_0m	[&DG&Vous vous blessez mais n'infligez pas de dÈg‚ts ($maxDamage$).]
+		combat_actor_hit_self_0m	[&DG&Vous vous blessez mais n'infligez pas de d√©g√¢ts ($maxDamage$).]
 }
 
 COMBAT_SPECTATOR_HIT_SELF_CREATURE(creature e, int damage)
@@ -305,17 +305,17 @@ COMBAT_PARRY_SPECTATOR(entity actor, entity defender)
 
 COMBAT_MISS_ATTACKER(entity e)
 {
-	combat_parry_attacker	[&MISM& Vous avez ratÈ $e.da$ $e$.]
+	combat_parry_attacker	[&MISM& Vous avez rat√© $e.da$ $e$.]
 }
 
 COMBAT_MISS_DEFENDER(entity e)
 {
-	combat_parry_defender	[&MIS&$e.da$ $e$ vous a ratÈ.]
+	combat_parry_defender	[&MIS&$e.da$ $e$ vous a rat√©.]
 }
 
 COMBAT_MISS_SPECTATOR(entity actor, entity defender)
 {
-	combat_parry_spectator	[&SYS&$actor.ia$ $actor$ a ratÈ  $defender.ia$ $defender$.]
+	combat_parry_spectator	[&SYS&$actor.ia$ $actor$ a rat√©  $defender.ia$ $defender$.]
 }
 
 // damage shield related

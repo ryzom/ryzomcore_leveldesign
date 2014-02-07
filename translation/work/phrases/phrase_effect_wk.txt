@@ -1,4 +1,4 @@
-
+ï»¿
 ////////////////////////////////////////////////////////////////////////////////////
 // these sentences are related to effects
 ////////////////////////////////////////////////////////////////////////////////////
@@ -142,25 +142,25 @@ EFFECT_SLOW_MOVE_END_SPECTATORS(entity e)
 
 EFFECT_SLOW_MOVE_SELF_BEGIN_CREATOR()
 {
-	effect_slow_move_self_begin_creator	[&SPLM&Vous vous ralentissez vous même.]
+	effect_slow_move_self_begin_creator	[&SPLM&Vous vous ralentissez vous mÃªme.]
 }
 EFFECT_SLOW_MOVE_SELF_BEGIN_SPECTATORS_PLAYER(player p)
 {
 	(p.gender = male)
-		effect_slow_move_self_begin_spectator_player_m	[&SYS&$p$ s'est ralentit lui-même.]
+		effect_slow_move_self_begin_spectator_player_m	[&SYS&$p$ s'est ralentit lui-mÃªme.]
 	(p.gender = female)
-		effect_slow_move_self_begin_spectator_player_f	[&SYS&$p$ s'est ralentit elle-même.]
+		effect_slow_move_self_begin_spectator_player_f	[&SYS&$p$ s'est ralentit elle-mÃªme.]
 }
 EFFECT_SLOW_MOVE_SELF_BEGIN_SPECTATORS_NPC(bot b)
 {
 	(b.gender = male)
-		effect_slow_move_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ s'est ralentit lui-même.]
+		effect_slow_move_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ s'est ralentit lui-mÃªme.]
 	(b.gender = female)
-		effect_slow_move_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ s'est ralentit elle-même.]
+		effect_slow_move_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ s'est ralentit elle-mÃªme.]
 }
 EFFECT_SLOW_MOVE_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
 {
-	effect_slow_move_self_begin_spectators_creature	[&SYS&$c.da$ $c$ s'est ralentit lui-même.]
+	effect_slow_move_self_begin_spectators_creature	[&SYS&$c.da$ $c$ s'est ralentit lui-mÃªme.]
 }
 
 /**
@@ -220,51 +220,51 @@ EFFECT_SLOW_ATTACKS_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
  */
 EFFECT_DEBUFF_COMBAT_BEGIN_CREATOR(entity e)
 {
-	effect_debuff_combat_begin_creator	[&SYS&$e.da$ $e$ souffre maintenant d'un malus sur ses compétences de combat.]
+	effect_debuff_combat_begin_creator	[&SYS&$e.da$ $e$ souffre maintenant d'un malus sur ses compÃ©tences de combat.]
 }
 EFFECT_DEBUFF_COMBAT_BEGIN_TARGET(entity e)
 {
-	effect_debuff_combat_begin_target	[&SPL&Vous souffrez maintenant d'un malus sur vos compétences de combat.]
+	effect_debuff_combat_begin_target	[&SPL&Vous souffrez maintenant d'un malus sur vos compÃ©tences de combat.]
 }
 EFFECT_DEBUFF_COMBAT_BEGIN_SPECTATORS(entity creator, entity target)
 {
-	effect_debuff_combat_begin_spectators	[&SYS&$target.da$ $target$ souffre maintenant d'un malus sur ses compétences de combat.]
+	effect_debuff_combat_begin_spectators	[&SYS&$target.da$ $target$ souffre maintenant d'un malus sur ses compÃ©tences de combat.]
 }
 
 EFFECT_DEBUFF_COMBAT_END_CREATOR(entity e)
 {
-	effect_debuff_combat_end_creator	[&SYS&$e.da$ $e$ ne souffre plus de malus sur ses compétences de combat.]
+	effect_debuff_combat_end_creator	[&SYS&$e.da$ $e$ ne souffre plus de malus sur ses compÃ©tences de combat.]
 }
 EFFECT_DEBUFF_COMBAT_END_TARGET()
 {
-	effect_debuff_combat_end_target		[&SPL&Vous n'avez plus de malus sur vos compétences de combat.]
+	effect_debuff_combat_end_target		[&SPL&Vous n'avez plus de malus sur vos compÃ©tences de combat.]
 }
 EFFECT_DEBUFF_COMBAT_END_SPECTATORS(entity e)
 {
-	effect_debuff_combat_end_spectators	[&SYS&$e.da$ $e$ ne souffre plus de malus sur ses compétences de combat.]
+	effect_debuff_combat_end_spectators	[&SYS&$e.da$ $e$ ne souffre plus de malus sur ses compÃ©tences de combat.]
 }
 
 EFFECT_DEBUFF_COMBAT_SELF_BEGIN_CREATOR()
 {
-	effect_debuff_combat_self_begin_actor	[&SPL&Vous souffrez maintenant d'un malus sur vos compétences de combat.]
+	effect_debuff_combat_self_begin_actor	[&SPL&Vous souffrez maintenant d'un malus sur vos compÃ©tences de combat.]
 }
 EFFECT_DEBUFF_COMBAT_SELF_BEGIN_SPECTATORS_PLAYER(player p)
 {
 	(p.gender = male)
-		effect_debuff_combat_self_begin_spectator_player_m	[&SYS&$p$ souffre maintenant d'un malus sur ses compétences de combat.]
+		effect_debuff_combat_self_begin_spectator_player_m	[&SYS&$p$ souffre maintenant d'un malus sur ses compÃ©tences de combat.]
 	(p.gender = female)
-		effect_debuff_combat_self_begin_spectator_player_f	[&SYS&$p$ souffre maintenant d'un malus sur ses compétences de combat.]
+		effect_debuff_combat_self_begin_spectator_player_f	[&SYS&$p$ souffre maintenant d'un malus sur ses compÃ©tences de combat.]
 }
 EFFECT_DEBUFF_COMBAT_SELF_BEGIN_SPECTATORS_NPC(bot b)
 {
 	(b.gender = male)
-		effect_debuff_combat_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ souffre maintenant d'un malus sur ses compétences de combat.]
+		effect_debuff_combat_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ souffre maintenant d'un malus sur ses compÃ©tences de combat.]
 	(b.gender = female)
-		effect_debuff_combat_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ souffre maintenant d'un malus sur ses compétences de combat.]
+		effect_debuff_combat_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ souffre maintenant d'un malus sur ses compÃ©tences de combat.]
 }
 EFFECT_DEBUFF_COMBAT_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
 {
-	effect_debuff_combat_self_begin_spectators_creature	[&SYS&$c.da$ $c$ souffre maintenant d'un malus sur ses compétences de combat.]
+	effect_debuff_combat_self_begin_spectators_creature	[&SYS&$c.da$ $c$ souffre maintenant d'un malus sur ses compÃ©tences de combat.]
 }
 
 
@@ -273,51 +273,51 @@ EFFECT_DEBUFF_COMBAT_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
  */
 EFFECT_DEBUFF_DEFENSE_BEGIN_CREATOR(entity e)
 {
-	effect_debuff_defense_begin_creator	[&SYS&$e.da$ $e$ souffre maintenant d'un malus en défense.]
+	effect_debuff_defense_begin_creator	[&SYS&$e.da$ $e$ souffre maintenant d'un malus en dÃ©fense.]
 }
 EFFECT_DEBUFF_DEFENSE_BEGIN_TARGET(entity e)
 {
-	effect_debuff_defense_begin_target	[&SPL&Vous souffrez maintenant d'un malus en défense.]
+	effect_debuff_defense_begin_target	[&SPL&Vous souffrez maintenant d'un malus en dÃ©fense.]
 }
 EFFECT_DEBUFF_DEFENSE_BEGIN_SPECTATORS(entity creator, entity target)
 {
-	effect_debuff_defense_begin_spectators	[&SYS&$target.da$ $target$ souffre maintenant d'un malus en défense.]
+	effect_debuff_defense_begin_spectators	[&SYS&$target.da$ $target$ souffre maintenant d'un malus en dÃ©fense.]
 }
 
 EFFECT_DEBUFF_DEFENSE_END_CREATOR(entity e)
 {
-	effect_debuff_defense_end_creator	[&SYS&$e.da$ $e$ ne souffre plus de malus en défense.]
+	effect_debuff_defense_end_creator	[&SYS&$e.da$ $e$ ne souffre plus de malus en dÃ©fense.]
 }
 EFFECT_DEBUFF_DEFENSE_END_TARGET()
 {
-	effect_debuff_defense_end_target		[&SPL&Vous n'avez plus de malus en défense.]
+	effect_debuff_defense_end_target		[&SPL&Vous n'avez plus de malus en dÃ©fense.]
 }
 EFFECT_DEBUFF_DEFENSE_END_SPECTATORS(entity e)
 {
-	effect_debuff_defense_end_spectators	[&SYS&$e.da$ $e$ ne souffre plus de malus en défense.]
+	effect_debuff_defense_end_spectators	[&SYS&$e.da$ $e$ ne souffre plus de malus en dÃ©fense.]
 }
 
 EFFECT_DEBUFF_DEFENSE_SELF_BEGIN_CREATOR()
 {
-	effect_debuff_defense_self_begin_actor	[&SPL&Vous souffrez maintenant d'un malus en défense.]
+	effect_debuff_defense_self_begin_actor	[&SPL&Vous souffrez maintenant d'un malus en dÃ©fense.]
 }
 EFFECT_DEBUFF_DEFENSE_SELF_BEGIN_SPECTATORS_PLAYER(player p)
 {
 	(p.gender = male)
-		effect_debuff_defense_self_begin_spectator_player_m	[&SYS&$p$ souffre maintenant d'un malus en défense.]
+		effect_debuff_defense_self_begin_spectator_player_m	[&SYS&$p$ souffre maintenant d'un malus en dÃ©fense.]
 	(p.gender = female)
-		effect_debuff_defense_self_begin_spectator_player_f	[&SYS&$p$ souffre maintenant d'un malus en défense.]
+		effect_debuff_defense_self_begin_spectator_player_f	[&SYS&$p$ souffre maintenant d'un malus en dÃ©fense.]
 }
 EFFECT_DEBUFF_DEFENSE_SELF_BEGIN_SPECTATORS_NPC(bot b)
 {
 	(b.gender = male)
-		effect_debuff_defense_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ souffre maintenant d'un malus en défense.]
+		effect_debuff_defense_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ souffre maintenant d'un malus en dÃ©fense.]
 	(b.gender = female)
-		effect_debuff_defense_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ souffre maintenant d'un malus en défense.]
+		effect_debuff_defense_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ souffre maintenant d'un malus en dÃ©fense.]
 }
 EFFECT_DEBUFF_DEFENSE_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
 {
-	effect_debuff_defense_self_begin_spectators_creature	[&SYS&$c.da$ $c$ souffre maintenant d'un malus en défense.]
+	effect_debuff_defense_self_begin_spectators_creature	[&SYS&$c.da$ $c$ souffre maintenant d'un malus en dÃ©fense.]
 }
 
 /**
@@ -377,11 +377,11 @@ EFFECT_DEBUFF_DODGE_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
  */
 EFFECT_FEAR_BEGIN_CREATOR(entity e)
 {
-	effect_fear_begin_creator	[&SYS&$e.da$ $e$ est paralysé par la peur et ne peut plus agir.]
+	effect_fear_begin_creator	[&SYS&$e.da$ $e$ est paralysÃ© par la peur et ne peut plus agir.]
 }
 EFFECT_FEAR_BEGIN_TARGET(entity e)
 {
-	effect_fear_begin_target	[&SPL&$e.da$ $e$ vous a terrorisé, vous ne pouvez plus agir.]
+	effect_fear_begin_target	[&SPL&$e.da$ $e$ vous a terrorisÃ©, vous ne pouvez plus agir.]
 }
 EFFECT_FEAR_BEGIN_SPECTATORS(entity actor, entity target)
 {
@@ -403,25 +403,25 @@ EFFECT_FEAR_END_SPECTATORS(entity e)
 
 EFFECT_FEAR_SELF_BEGIN_CREATOR()
 {
-	effect_fear_self_begin_actor	[&SPL&Vous etes terrorisé et ne pouvez plus agir.]
+	effect_fear_self_begin_actor	[&SPL&Vous etes terrorisÃ© et ne pouvez plus agir.]
 }
 EFFECT_FEAR_SELF_BEGIN_SPECTATORS_PLAYER(player p)
 {
 	(p.gender = male)
-		effect_fear_self_begin_spectator_player_m	[&SYS&$p$ est terrorisé et ne peut plus agir.]
+		effect_fear_self_begin_spectator_player_m	[&SYS&$p$ est terrorisÃ© et ne peut plus agir.]
 	(p.gender = female)
-		effect_fear_self_begin_spectator_player_f	[&SYS&$p$ est terrorisé et ne peut plus agir.]
+		effect_fear_self_begin_spectator_player_f	[&SYS&$p$ est terrorisÃ© et ne peut plus agir.]
 }
 EFFECT_FEAR_SELF_BEGIN_SPECTATORS_NPC(bot b)
 {
 	(b.gender = male)
-		effect_fear_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ est terrorisé et ne peut plus agir.]
+		effect_fear_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ est terrorisÃ© et ne peut plus agir.]
 	(b.gender = female)
-		effect_fear_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ est terrorisé et ne peut plus agir.]
+		effect_fear_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ est terrorisÃ© et ne peut plus agir.]
 }
 EFFECT_FEAR_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
 {
-	effect_fear_self_begin_spectators_creature	[&SYS&$c.da$ $c$ est terrorisé et ne peut plus agir.]
+	effect_fear_self_begin_spectators_creature	[&SYS&$c.da$ $c$ est terrorisÃ© et ne peut plus agir.]
 }
 
 /**
@@ -536,51 +536,51 @@ EFFECT_ROOT_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
  */
 EFFECT_INVULNERABILITY_BEGIN_CREATOR(entity e)
 {
-	effect_invulnerability_begin_creator	[&SYS&$e.da$ $e$ est invulnérable mais ne peut plus utiliser d'action.]
+	effect_invulnerability_begin_creator	[&SYS&$e.da$ $e$ est invulnÃ©rable mais ne peut plus utiliser d'action.]
 }
 EFFECT_INVULNERABILITY_BEGIN_TARGET(entity e)
 {
-	effect_invulnerability_begin_target	[&SPLM&$e.da$ $e$ vous a rendu invulnérable mais vous ne pouvez plus utiliser d'action.]
+	effect_invulnerability_begin_target	[&SPLM&$e.da$ $e$ vous a rendu invulnÃ©rable mais vous ne pouvez plus utiliser d'action.]
 }
 EFFECT_INVULNERABILITY_BEGIN_SPECTATORS(entity actor, entity target)
 {
-	effect_invulnerability_begin_spectators	[&SYS&$actor.da$ $actor$ a rendu $target.da$ $target$ invulnérable qui ne peut plus utiliser d'action.]
+	effect_invulnerability_begin_spectators	[&SYS&$actor.da$ $actor$ a rendu $target.da$ $target$ invulnÃ©rable qui ne peut plus utiliser d'action.]
 }
 
 EFFECT_INVULNERABILITY_END_CREATOR(entity e)
 {
-	effect_invulnerability_end_creator	[&SYS&$e.da$ $e$ n'est plus invulnérable et peut a nouveau agir.]
+	effect_invulnerability_end_creator	[&SYS&$e.da$ $e$ n'est plus invulnÃ©rable et peut a nouveau agir.]
 }
 EFFECT_INVULNERABILITY_END_TARGET()
 {
-	effect_invulnerability_end_target	[&SPLM&Vous n'etes plus invulnérable et pouvez a nouveau agir.]
+	effect_invulnerability_end_target	[&SPLM&Vous n'etes plus invulnÃ©rable et pouvez a nouveau agir.]
 }
 EFFECT_INVULNERABILITY_END_SPECTATORS(entity e)
 {
-	effect_invulnerability_end_spectators	[&SYS&$e.da$ $e$ n'est plus invulnérable et peut a nouveau agir.]
+	effect_invulnerability_end_spectators	[&SYS&$e.da$ $e$ n'est plus invulnÃ©rable et peut a nouveau agir.]
 }
 
 EFFECT_INVULNERABILITY_SELF_BEGIN_CREATOR()
 {
-	effect_invulnerability_self_begin_actor	[&SPLM&Vous etes invulnérable mais ne pouvez plus utiliser d'action.]
+	effect_invulnerability_self_begin_actor	[&SPLM&Vous etes invulnÃ©rable mais ne pouvez plus utiliser d'action.]
 }
 EFFECT_INVULNERABILITY_SELF_BEGIN_SPECTATORS_PLAYER(player p)
 {
 	(p.gender = male)
-		effect_invulnerability_self_begin_spectator_player_m	[&SYS&$p$ est invulnérable mais ne peut plus utiliser d'action.]
+		effect_invulnerability_self_begin_spectator_player_m	[&SYS&$p$ est invulnÃ©rable mais ne peut plus utiliser d'action.]
 	(p.gender = female)
-		effect_invulnerability_self_begin_spectator_player_f	[&SYS&$p$ est invulnérable mais ne peut plus utiliser d'action.]
+		effect_invulnerability_self_begin_spectator_player_f	[&SYS&$p$ est invulnÃ©rable mais ne peut plus utiliser d'action.]
 }
 EFFECT_INVULNERABILITY_SELF_BEGIN_SPECTATORS_NPC(bot b)
 {
 	(b.gender = male)
-		effect_invulnerability_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ est invulnérable mais ne peut plus utiliser d'action.]
+		effect_invulnerability_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ est invulnÃ©rable mais ne peut plus utiliser d'action.]
 	(b.gender = female)
-		effect_invulnerability_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ est invulnérable mais ne peut plus utiliser d'action.]
+		effect_invulnerability_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ est invulnÃ©rable mais ne peut plus utiliser d'action.]
 }
 EFFECT_INVULNERABILITY_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
 {
-	effect_invulnerability_self_begin_spectators_creature	[&SYS&$c.da$ $c$ est invulnérable mais ne peut plus utiliser d'action.]
+	effect_invulnerability_self_begin_spectators_creature	[&SYS&$c.da$ $c$ est invulnÃ©rable mais ne peut plus utiliser d'action.]
 }
 
 
@@ -597,7 +597,7 @@ EFFECT_MADNESS_BEGIN_TARGET(entity e)
 }
 EFFECT_MADNESS_BEGIN_SPECTATORS(entity actor, entity target)
 {
-	effect_madness_begin_spectators	[&SYS&$target.da$ $target$ a été rendu fou par $actor.da$ $actor$.]
+	effect_madness_begin_spectators	[&SYS&$target.da$ $target$ a Ã©tÃ© rendu fou par $actor.da$ $actor$.]
 }
 
 EFFECT_MADNESS_END_CREATOR(entity e)
@@ -620,20 +620,20 @@ EFFECT_MADNESS_SELF_BEGIN_CREATOR()
 EFFECT_MADNESS_SELF_BEGIN_SPECTATORS_PLAYER(player p)
 {
 	(p.gender = male)
-		effect_madness_self_begin_spectator_player_m	[&SYS&$p$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lançant un sort.]
+		effect_madness_self_begin_spectator_player_m	[&SYS&$p$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lanÃ§ant un sort.]
 	(p.gender = female)
-		effect_madness_self_begin_spectator_player_f	[&SYS&$p$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lançant un sort.]
+		effect_madness_self_begin_spectator_player_f	[&SYS&$p$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lanÃ§ant un sort.]
 }
 EFFECT_MADNESS_SELF_BEGIN_SPECTATORS_NPC(bot b)
 {
 	(b.gender = male)
-		effect_root_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lançant un sort.]
+		effect_root_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lanÃ§ant un sort.]
 	(b.gender = female)
-		effect_root_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lançant un sort.]
+		effect_root_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lanÃ§ant un sort.]
 }
 EFFECT_MADNESS_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
 {
-	effect_madness_self_begin_spectators_creature	[&SYS&$c.da$ $c$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lançant un sort.]
+	effect_madness_self_begin_spectators_creature	[&SYS&$c.da$ $c$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lanÃ§ant un sort.]
 }
 
 /**

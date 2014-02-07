@@ -1,4 +1,4 @@
-
+ï»¿
 EGS_ALREADY_HAVE_MOUNT ()
 {
 	[&CHK&You can only have one mektoub mount.]
@@ -26,22 +26,22 @@ ANIMAL_PLAYER_HAVE_MAX()
 
 ANIMAL_MOUNTED()
 {
-	[&CHK&Vous ne pouvez pas échanger un animal sur lequel vous êtes monté.]
+	[&CHK&Vous ne pouvez pas Ã©changer un animal sur lequel vous Ãªtes montÃ©.]
 }
 
 ANIMAL_INVENTORY_INACCESSIBLE(int number)
 {
-	[&SYS&Votre animal #$number$ est trop loin pour que vous puissiez acceder à son inventaire.]
+	[&SYS&Votre animal #$number$ est trop loin pour que vous puissiez acceder Ã  son inventaire.]
 }
 
 ANIMAL_DEAD (int number)
 {
-	[&SYS&Votre animal #$number$ vient de mourir, vous avez trois jours pour recupérer les items qui sont dans son inventaire avant qu'il ne disparaisse par pourrissement.]
+	[&SYS&Votre animal #$number$ vient de mourir, vous avez trois jours pour recupÃ©rer les items qui sont dans son inventaire avant qu'il ne disparaisse par pourrissement.]
 }
 
 ANIMAL_DISEAPER (int number)
 {
-	[&SYS&Votre animal #$number$ à disparu car cela fait trois jour qu'il est mort, tout ce qu'il contenait encore dans son inventaire à disparu avec lui.]
+	[&SYS&Votre animal #$number$ Ã  disparu car cela fait trois jour qu'il est mort, tout ce qu'il contenait encore dans son inventaire Ã  disparu avec lui.]
 }
 
 ANIMAL_HUNGRY()

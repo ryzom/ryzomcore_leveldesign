@@ -1,4 +1,4 @@
-
+ï»¿
 
 ////////////////////////////////////////////////////////////////////////////////////
 // sentences related to Inventory/items management
@@ -124,12 +124,12 @@ ITEM_PUT_IN_RESELLER( item item, int qty, int basePrice, int sellPrice )
 
 ITEM_SERVICE_NOT_AVAILABLE(item service)
 {
-	[&CHK&Achat refusé, $service.da$ $service$ n'est plus disponible.]
+	[&CHK&Achat refusÃ©, $service.da$ $service$ n'est plus disponible.]
 }
 
 ITEM_SERVICE_CONSUMED(item service)
 {
-	[&ITM&$service.da$ $service$ a été consommé.]
+	[&ITM&$service.da$ $service$ a Ã©tÃ© consommÃ©.]
 }
 
 //INVENTORY_MOVE_TO(item item, int qty)
@@ -153,6 +153,6 @@ ITEM_NOT_AVAILABLE()
 
 ALTAR_RESTRICTION()
 {
-	[&SYS& Votre allégeance ou votre niveau de renommée ne vous permet pas d'avoir accès aux pactes de cet autel.]
+	[&SYS& Votre allÃ©geance ou votre niveau de renommÃ©e ne vous permet pas d'avoir accÃ¨s aux pactes de cet autel.]
 }
 

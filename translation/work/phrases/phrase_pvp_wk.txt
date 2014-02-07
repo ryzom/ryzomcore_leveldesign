@@ -1,4 +1,4 @@
-
+ï»¿
 ////////////////////////////////////////////////////////////////////////////////////
 // PVP
 ////////////////////////////////////////////////////////////////////////////////////
@@ -183,7 +183,7 @@ DUEL_ABANDON()
 
 DUEL_INVITATION_EXPIRE()
 {
-	[&SYS&L'invitation au duel a expiré.]
+	[&SYS&L'invitation au duel a expirÃ©.]
 }
 
 PVP_FREE_ZONE_ENTER()
@@ -258,17 +258,17 @@ PVP_CANT_HELP_ENEMY()
 
 PVP_CANT_HELP_NEUTRAL_PVP()
 {
-	[&CHKCB&Vous ne pouvez pas aider un personnage joueur qui est impliqué dans un conflit PVP qui ne vous concerne pas.]
+	[&CHKCB&Vous ne pouvez pas aider un personnage joueur qui est impliquÃ© dans un conflit PVP qui ne vous concerne pas.]
 }
 
 PVP_CANT_HELP_UNKNOWN()
 {
-	[&CHKCB&Vous ne pouvez pas aider cette entité.]
+	[&CHKCB&Vous ne pouvez pas aider cette entitÃ©.]
 }
 
 PVP_CANT_ATTACK_ALLY()
 {
-	[&CHKCB&Vous ne pouvez pas attaquer votre allié.]
+	[&CHKCB&Vous ne pouvez pas attaquer votre alliÃ©.]
 }
 
 PVP_CANT_ATTACK_NEUTRAL()
@@ -278,43 +278,43 @@ PVP_CANT_ATTACK_NEUTRAL()
 
 PVP_TP_FORBIDEN()
 {
-	[&CHK&Vous ne pouvez pas vous teleporter alors que vous avez été impliqué dans des actions de PVP faction recement.]
+	[&CHK&Vous ne pouvez pas vous teleporter alors que vous avez Ã©tÃ© impliquÃ© dans des actions de PVP faction recement.]
 }
 
 PVP_TP_ENEMY_REGION_FORBIDEN()
 {
-	[&CHK&Vous ne pouvez pas vous teleporter dans une region controlée par une faction enemie.]
+	[&CHK&Vous ne pouvez pas vous teleporter dans une region controlÃ©e par une faction enemie.]
 }
 
 CHARACTER_MADE_THE_FINAL_BLOW(player p)
 {
-	[Vous avez porté le coup fatal au personnage joueur $p$.]
+	[Vous avez portÃ© le coup fatal au personnage joueur $p$.]
 }
 
 PVP_FLAG_ALREADY_IN_THIS_MODE( int i )
 {
 	(i = 0)
-		[&CHK&Vous avez déjà désactivé votre tag pvp.]
+		[&CHK&Vous avez dÃ©jÃ  dÃ©sactivÃ© votre tag pvp.]
 	(i != 0)
-		[&CHK&Vous avez déjà activé votre tag pvp.]
+		[&CHK&Vous avez dÃ©jÃ  activÃ© votre tag pvp.]
 }
 
 PVP_FLAG_WAIT_FOR_TIMER( int i )
 {
 	(i = 0)
-		[&CHK&Vous avez déjà demandé à desactiver votre tag pvp, vous devez attendre la fin du timer pour que ce soit effectif.]
+		[&CHK&Vous avez dÃ©jÃ  demandÃ© Ã  desactiver votre tag pvp, vous devez attendre la fin du timer pour que ce soit effectif.]
 	(i != 0)
-		[&CHK&Vous avez déjà demandé à activer votre tag pvp, vous devez attendre la fin du timer pour que ce soit effectif.]
+		[&CHK&Vous avez dÃ©jÃ  demandÃ© Ã  activer votre tag pvp, vous devez attendre la fin du timer pour que ce soit effectif.]
 }
 
 PVP_TAG_PVP_NEED_ALLEGIANCE()
 {
-	[&CHK&Vous ne pouvez pas être taggé PVP sans avoir déclaré une allegeance au préalable.]
+	[&CHK&Vous ne pouvez pas Ãªtre taggÃ© PVP sans avoir dÃ©clarÃ© une allegeance au prÃ©alable.]
 }
 
 PVP_FLAG_RESET_TAG_MINIMAL_TIME( time totalTimer, time timerLeft )
 {
-	[&CHK&Vous ne pouvez pas enlever votre tag PvP car il à été activé il y a moins de $totalTimer$ secondes. Il vous reste $timerLeft$ secondes avant de pouvoir enlever votre tag.]
+	[&CHK&Vous ne pouvez pas enlever votre tag PvP car il Ã  Ã©tÃ© activÃ© il y a moins de $totalTimer$ secondes. Il vous reste $timerLeft$ secondes avant de pouvoir enlever votre tag.]
 }
 
 PVP_FLAG_RESET_NEED_NO_RECENT_PVP_ACTION( time totalTimer, time timerLeft )
@@ -326,33 +326,33 @@ PVP_FLAG_RESET_NEED_NO_RECENT_PVP_ACTION( time totalTimer, time timerLeft )
 PVP_SPIRE_START_BUILDING(place region_name, faction f, int m, int s)
 {
 	(s != 0)
-		[&ZON&Une spire $f$ apparaîtra dans $region_name.da$ $region_name$ dans $m$ minutes $s$ secondes.]
+		[&ZON&Une spire $f$ apparaÃ®tra dans $region_name.da$ $region_name$ dans $m$ minutes $s$ secondes.]
 	(s = 0)
-		[&ZON&Une spire $f$ apparaîtra dans $region_name.da$ $region_name$ dans $m$ minutes.]
+		[&ZON&Une spire $f$ apparaÃ®tra dans $region_name.da$ $region_name$ dans $m$ minutes.]
 }
 
 PVP_SPIRE_BUILD_FINISHED(place region_name, faction f, int audience)
 {
 	(audience = 0) //channel system & plein ecrant
-		[&ZON&Une spire $f$ est apparue dans $region_name.da$ $region_name$. Désormais la faction $f$ domine $region_name.da$ $region_name$ et a recruté des gardiens pour veiller sur sa spire.]
+		[&ZON&Une spire $f$ est apparue dans $region_name.da$ $region_name$. DÃ©sormais la faction $f$ domine $region_name.da$ $region_name$ et a recrutÃ© des gardiens pour veiller sur sa spire.]
 	(audience = 1) //channel faction
-		[&SYS&Une spire $f$ est apparue dans $region_name.da$ $region_name$. Désormais la faction $f$ domine $region_name.da$ $region_name$ et a recruté des gardiens pour veiller sur sa spire.]
+		[&SYS&Une spire $f$ est apparue dans $region_name.da$ $region_name$. DÃ©sormais la faction $f$ domine $region_name.da$ $region_name$ et a recrutÃ© des gardiens pour veiller sur sa spire.]
 }
 
 PVP_SPIRE_DESTROYED(place region_name, faction f, int audience)
 {
 	(audience = 0) //channel system & plein ecrant
-		[&ZON&Une spire $f$ a été détruite dans $region_name.da$ $region_name$. Désormais la faction $f$ ne domine plus $region_name.da$ $region_name$.]
+		[&ZON&Une spire $f$ a Ã©tÃ© dÃ©truite dans $region_name.da$ $region_name$. DÃ©sormais la faction $f$ ne domine plus $region_name.da$ $region_name$.]
 	(audience = 1) // channel faction
-		[&SYS&Une spire $f$ a été détruite dans $region_name.da$ $region_name$. Désormais la faction $f$ ne domine plus $region_name.da$ $region_name$.]
+		[&SYS&Une spire $f$ a Ã©tÃ© dÃ©truite dans $region_name.da$ $region_name$. DÃ©sormais la faction $f$ ne domine plus $region_name.da$ $region_name$.]
 }
 
 PVP_SPIRE_REBUILD_DELAY(int m, int s)
 {
 	(m > 0)
-		[&CHK&Une nouvelle spire ne peut être invoquée sur ce socle par votre faction avant $m$ minutes $s$ seconds.]
+		[&CHK&Une nouvelle spire ne peut Ãªtre invoquÃ©e sur ce socle par votre faction avant $m$ minutes $s$ seconds.]
 	(m = 0)
-		[&CHK&Une nouvelle spire ne peut être invoquée sur ce socle par votre faction avant $s$ secondes.]
+		[&CHK&Une nouvelle spire ne peut Ãªtre invoquÃ©e sur ce socle par votre faction avant $s$ secondes.]
 }
 
 PVP_SPIRE_SPEND_FACTION_POINT(int q)
@@ -362,12 +362,12 @@ PVP_SPIRE_SPEND_FACTION_POINT(int q)
 
 PVP_SPIRE_FACTION_POINT(int q)
 {
-	[&XP&Vous avez détruit une spire ennemie ! Vous gagnez $q$ points de faction.]
+	[&XP&Vous avez dÃ©truit une spire ennemie ! Vous gagnez $q$ points de faction.]
 }
 
 PVP_SPIRE_ATTACKED(place region_name, faction faction)
 {
-	[&SYS&La spire $faction$ dans $region_name.da$ $region_name$ est attaquée !.]
+	[&SYS&La spire $faction$ dans $region_name.da$ $region_name$ est attaquÃ©e !.]
 }
 
 

@@ -1,4 +1,4 @@
-
+ï»¿
 ////////////////////////////////////////////////////////////////////////////////////
 // team related messages
 ////////////////////////////////////////////////////////////////////////////////////
@@ -85,19 +85,19 @@ TEAM_KICKED(player p)
 }
 TEAM_PVP_ATTACKER_KICKED_YOU(player v)
 {
-	[&SYS& Vous avez attaqué $v$ de votre team, un enemie de votre faction. Vous ne pouvez pas rester dans cette team.]
+	[&SYS& Vous avez attaquÃ© $v$ de votre team, un enemie de votre faction. Vous ne pouvez pas rester dans cette team.]
 }
 TEAM_PVP_ATTACKER_KICKED(player a, player v)
 {
-	[&SYS& $a$ a attaqué $v$, un enemie de sa faction. $a$ ne peut pas rester dans la même team que $v$.]
+	[&SYS& $a$ a attaquÃ© $v$, un enemie de sa faction. $a$ ne peut pas rester dans la mÃªme team que $v$.]
 }
 TEAM_PVP_HELPER_KICKED_YOU(player v)
 {
-	[&SYS& Vous avez aidé $v$, un allié de votre faction qui n'est pas dans votre team, vous ne pouvez pas rester dans une team.]
+	[&SYS& Vous avez aidÃ© $v$, un alliÃ© de votre faction qui n'est pas dans votre team, vous ne pouvez pas rester dans une team.]
 }
 TEAM_PVP_HELPER_KICKED(player a, player v)
 {
-	[&SYS& $a$ a aidé $v$, un allié de sa faction. $a$ ne peut pas rester dans une team.] 
+	[&SYS& $a$ a aidÃ© $v$, un alliÃ© de sa faction. $a$ ne peut pas rester dans une team.] 
 }
 TEAM_MAX_SIZE_REACHED()
 {

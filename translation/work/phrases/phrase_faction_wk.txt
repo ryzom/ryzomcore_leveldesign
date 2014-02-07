@@ -1,4 +1,4 @@
-
+ï»¿
 
 ////////////////////////////////////////////////////////////////////////////////////
 // these sentences are used in the faction point gain system
@@ -37,11 +37,11 @@ FACTION_POINT_LOSE (faction faction, int fp)
 FACTION_POINT_CANNOT_GAIN_YET (player victim, int m, int s)
 {
 	(m = 1)
-		faction_points_cannot_gain_yet_1m [&XP&1 minute est nécessaire avant de pouvoir gagner des points d'honneur en combattant $victim$.]
+		faction_points_cannot_gain_yet_1m [&XP&1 minute est nÃ©cessaire avant de pouvoir gagner des points d'honneur en combattant $victim$.]
 	(m > 1)
-		faction_points_cannot_gain_yet_xm [&XP&$m$ minutes sont nécessaires avant de pouvoir gagner des points d'honneur en combattant $victim$.]
+		faction_points_cannot_gain_yet_xm [&XP&$m$ minutes sont nÃ©cessaires avant de pouvoir gagner des points d'honneur en combattant $victim$.]
 	(s = 1)
-		faction_points_cannot_gain_yet_1s [&XP&1 seconde est nécessaire avant de pouvoir gagner des points d'honneur en combattant $victim$.]
+		faction_points_cannot_gain_yet_1s [&XP&1 seconde est nÃ©cessaire avant de pouvoir gagner des points d'honneur en combattant $victim$.]
 
-	faction_points_cannot_gain_yet_xs [&XP&$s$ secondes sont nécessaires avant de pouvoir gagner des points d'honneur en combattant $victim$.]
+	faction_points_cannot_gain_yet_xs [&XP&$s$ secondes sont nÃ©cessaires avant de pouvoir gagner des points d'honneur en combattant $victim$.]
 }

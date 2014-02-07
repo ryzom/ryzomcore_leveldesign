@@ -1,4 +1,4 @@
-
+ï»¿
 ////////////////////////////////////////////////////////////////////////////////////
 // guild related messages
 ////////////////////////////////////////////////////////////////////////////////////
@@ -54,7 +54,7 @@ GUILD_INVITED_CHARACTER_MUST_BE_ONLINE()
 
 GUILD_INVITE_ONLY_LOCAL_GUILD()
 {
-	[&CHK&Vous ne pouvez pas inviter quelqu'un dans votre guilde si vous n'êtes pas sur le continent.]
+	[&CHK&Vous ne pouvez pas inviter quelqu'un dans votre guilde si vous n'Ãªtes pas sur le continent.]
 }
 
 GUILD_ALREADY_IN_A_GUILD()
@@ -75,7 +75,7 @@ GUILD_NOT_ENOUGH_MONEY (int m)
 }
 GUILD_CREATED ()
 {
-	[&AROUND&Vous avez réussi à créer une guilde.]	
+	[&AROUND&Vous avez rÃ©ussi Ã  crÃ©er une guilde.]	
 }
 GUILD_DESTROYED()
 {
@@ -139,11 +139,11 @@ GUILD_NEW_LEADER(string_id a)
 }
 GUILD_KICK_MEMBER(player a, string_id b)
 {
-	[&AROUND&$a$ a chassé $b$ de votre guilde.]
+	[&AROUND&$a$ a chassÃ© $b$ de votre guilde.]
 }
 GUILD_QUIT(player a)
 {
-	[&AROUND&$a$ a quitté votre guilde.]
+	[&AROUND&$a$ a quittÃ© votre guilde.]
 }
 GUILD_YOU_QUIT(string_id str)
 {
@@ -155,7 +155,7 @@ GUILD_MAX_MEMBER_COUNT ( int i )
 }
 GUILD_MAX_MEMBER_COUNT_INVITE ( int i )
 {
-	[&CHK&Votre guilde a déjà atteint le nombre maximum de membres ($i$).]
+	[&CHK&Votre guilde a dÃ©jÃ  atteint le nombre maximum de membres ($i$).]
 }
 GUILD_ICOMPATIBLE_ALLEGIANCE( player p, faction b)
 {
@@ -172,7 +172,7 @@ GUILD_USER_DELETED ( player a )
 }
 GUILD_IS_PROXY()
 {
-	[&CHK&Vous ne pouvez executer cette action qu'à partir du teritoire du jeu, hors vous êtes dans une instance.]
+	[&CHK&Vous ne pouvez executer cette action qu'Ã  partir du teritoire du jeu, hors vous Ãªtes dans une instance.]
 }
 
 SOLE_PLACE( place p )
@@ -289,7 +289,7 @@ CHARGE_APPLY(dyn_string_id str)
 
 CANT_ACCESS_GUILD_INVENTORY()
 {
-	[&SYS&Vous devez être dans le bâtiment ou prêt d'un avant poste de votre guilde pour pouvoir accéder à son inventaire.]
+	[&SYS&Vous devez Ãªtre dans le bÃ¢timent ou prÃªt d'un avant poste de votre guilde pour pouvoir accÃ©der Ã  son inventaire.]
 }
 
 GUILD_GAIN_CHARGE_POINT (int points)
