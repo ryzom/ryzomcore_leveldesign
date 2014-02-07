@@ -71,7 +71,7 @@ ShapeExportOptLightmapLog = "true"
 # Coarse mesh texture mul size
 TextureMulSizeValue = "1.5"
 
-DoBuildShadowSkin = 0
+BuildShadowSkinEnabled = False
 
 ClodConfigFile = ""
 

@@ -6,7 +6,7 @@
 # 
 # \file directories.py
 # \brief Directories configuration
-# \date 2014-02-06-23-18-GMT
+# \date 2014-02-07-16-00-GMT
 # \author Jan Boon (Kaetemi)
 # \date 2001-2005
 # \author Nevrax

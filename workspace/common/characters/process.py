@@ -70,8 +70,6 @@ ShapeExportOptLightmapLog = "true"
 # Coarse mesh texture mul size
 TextureMulSizeValue = "1.5"
 
-DoBuildShadowSkin = 0
-
 
 #panoply_file_list = panoply_files.txt ???
 #hls_bank_file_name = characters.hlsbank ???
@@ -98,7 +96,7 @@ MultipleTilesPostfix += [ "_wi" ]
 
 # *** SHADOW SKIN OPTIONS ***
 # Characters are made of approx 4000 polys with multiple Skins binded (legs, short, torso...). 35% => 1400 polys.
-BuildShadowSkin = 1
+BuildShadowSkinEnabled = True
 BuildShadowSkinRatio = 35
 BuildShadowSkinMaxface = 2000
 

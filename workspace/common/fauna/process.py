@@ -71,8 +71,6 @@ ShapeExportOptLightmapLog = "true"
 # Coarse mesh texture mul size
 TextureMulSizeValue = "1.5"
 
-DoBuildShadowSkin = 0
-
 
 # *** CLODBANK OPTIONS ***
 
@@ -103,7 +101,7 @@ MapHlsBankFileName = None
 
 # *** SHADOW SKIN OPTIONS ***
 # Fauna are made of a single skin. Allow only 1000 faces for each monster (whatever the original nb faces)
-BuildShadowSkin = 1
+BuildShadowSkinEnabled = True
 BuildShadowSkinRatio = 100
 BuildShadowSkinMaxface = 1000
 

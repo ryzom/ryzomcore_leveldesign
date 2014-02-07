@@ -6,7 +6,7 @@
 # 
 # \file config.py
 # \brief Process configuration
-# \date 2014-02-06-23-18-GMT
+# \date 2014-02-07-16-00-GMT
 # \author Jan Boon (Kaetemi)
 # Python port of game data build pipeline.
 # Process configuration for 'primes_racines' ecosystem.
@@ -82,8 +82,6 @@ ShapeExportOptLightmapLog = "true"
 # Coarse mesh texture mul size
 TextureMulSizeValue = "1.5"
 
-DoBuildShadowSkin = 0
-
 ClodConfigFile = ""
 
 # *** COARSE MESH TEXTURE NAME ***
@@ -125,7 +123,7 @@ MapHlsBankFileName = None
 
 # *** SHAPE BUILD OPTIONS *
 
-DoBuildShadowSkin = False
+BuildShadowSkinEnabled = False
 ClodConfigFile = ""
 
 # *** PACS_PRIM OPTIONS ***

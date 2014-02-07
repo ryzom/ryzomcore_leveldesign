@@ -162,6 +162,7 @@ MapPanoplyCacheBuildDirectory = CommonPath + "/map_panoply_cache"
 MapTagBuildDirectory = CommonPath + "/map_tag"
 
 # Shape directories
+ShapeShadowSkinBuildDirectory = CommonPath + "/shape_shadow_skin_build"
 ShapeClodtexBuildDirectory = CommonPath + "/shape_clodtex_build"
 ShapeWithCoarseMeshBuildDirectory = CommonPath + "/shape_with_coarse_mesh_builded"
 ShapeLightmapBuildDirectory = CommonPath + "/shape_lightmap"
