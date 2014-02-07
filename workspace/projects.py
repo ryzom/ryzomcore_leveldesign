@@ -81,12 +81,33 @@ InstallShardDataCollisionsDirectories += [ "indoors_pacs" ]
 
 InstallClientData = [ ]
 
+ICMain = { }
+ICMain["Name"] = "main"
+ICMain["UnpackTo"] = None
+ICMain["IsOptional"] = 0
+ICMain["IsIncremental"] = 1
+ICMain["Packages"] = [ ]
+ICMain["Packages"] += [ [ "data_common", [ ] ] ]
+ICMain["Packages"] += [ [ "gamedev", [ ] ] ]
+ICMain["Packages"] += [ [ "interfaces", [ ] ] ]
+ICMain["Packages"] += [ [ "leveldesign", [ ] ] ]
+ICMain["Packages"] += [ [ "outgame", [ ] ] ]
+ICMain["Refs"] = [ ]
+ICMain["Refs"] += [ "cfg" ]
+ICMain["Refs"] += [ "exedll" ]
+ICMain["Refs"] += [ "fonts" ]
+ICMain["Refs"] += [ "packedsheets" ]
+ICMain["Refs"] += [ "user" ]
+ICMain["Refs"] += [ "examples" ]
+InstallClientData += [ ICMain ]
+
 ICMainCfg = { }
 ICMainCfg["Name"] = "main_cfg"
 ICMainCfg["UnpackTo"] = "cfg" # ->  = "./cfg/"
 ICMainCfg["IsOptional"] = 0
 ICMainCfg["IsIncremental"] = 0
 ICMainCfg["Packages"] = [ [ "cfg", [ ] ] ]
+ICMainCfg["Refs"] = [ ]
 InstallClientData += [ ICMainCfg ]
 
 ICMainExedll = { }
@@ -95,6 +116,7 @@ ICMainExedll["UnpackTo"] = "" # -> "./", to not unpack set to None
 ICMainExedll["IsOptional"] = 0
 ICMainExedll["IsIncremental"] = 0
 ICMainExedll["Packages"] = [ [ "exedll", [ ] ] ]
+ICMainExedll["Refs"] = [ ]
 InstallClientData += [ ICMainExedll ]
 
 ICMainFonts = { }
@@ -103,6 +125,7 @@ ICMainFonts["UnpackTo"] = "data/fonts"
 ICMainFonts["IsOptional"] = 0
 ICMainFonts["IsIncremental"] = 0
 ICMainFonts["Packages"] = [ [ "fonts", [ ] ] ]
+ICMainFonts["Refs"] = [ ]
 InstallClientData += [ ICMainFonts ]
 
 ICMainPacked = { }
@@ -111,6 +134,7 @@ ICMainPacked["UnpackTo"] = "data"
 ICMainPacked["IsOptional"] = 0
 ICMainPacked["IsIncremental"] = 0
 ICMainPacked["Packages"] = [ [ "packedsheets", [ ] ] ]
+ICMainPacked["Refs"] = [ ]
 InstallClientData += [ ICMainPacked ]
 
 ICUser = { }
@@ -119,6 +143,7 @@ ICUser["UnpackTo"] = "user"
 ICUser["IsOptional"] = 0
 ICUser["IsIncremental"] = 0
 ICUser["Packages"] = [ [ "user", [ ] ] ]
+ICUser["Refs"] = [ ]
 InstallClientData += [ ICUser ]
 
 ICExamples = { }
@@ -127,6 +152,7 @@ ICExamples["UnpackTo"] = "examples"
 ICExamples["IsOptional"] = 0
 ICExamples["IsIncremental"] = 0
 ICExamples["Packages"] = [ [ "examples", [ ] ] ]
+ICExamples["Refs"] = [ ]
 InstallClientData += [ ICExamples ]
 
 ICCommon = { }
@@ -135,21 +161,17 @@ ICCommon["UnpackTo"] = None
 ICCommon["IsOptional"] = 0
 ICCommon["IsIncremental"] = 1
 ICCommon["Packages"] = [ ]
-ICCommon["Packages"] += [ [ "sound", [ ] ] ]
-ICCommon["Packages"] += [ [ "sky", [ ] ] ]
-ICCommon["Packages"] += [ [ "sfx", [ ] ] ]
-ICCommon["Packages"] += [ [ "objects", [ ] ] ]
 ICCommon["Packages"] += [ [ "construction", [ ] ] ]
-ICCommon["Packages"] += [ [ "outgame", [ ] ] ]
-ICCommon["Packages"] += [ [ "leveldesign", [ ] ] ]
-ICCommon["Packages"] += [ [ "interfaces", [ ] ] ]
-ICCommon["Packages"] += [ [ "gamedev", [ ] ] ]
-ICCommon["Packages"] += [ [ "data_common", [ ] ] ]
-ICCommon["Packages"] += [ [ "fauna_swt", [ ] ] ]
-ICCommon["Packages"] += [ [ "fauna_skeletons", [ ] ] ]
-ICCommon["Packages"] += [ [ "fauna_shapes", [ ] ] ]
-ICCommon["Packages"] += [ [ "fauna_maps", [ ] ] ]
+ICCommon["Packages"] += [ [ "objects", [ ] ] ]
 ICCommon["Packages"] += [ [ "fauna_animations", [ ] ] ]
+ICCommon["Packages"] += [ [ "fauna_maps", [ ] ] ]
+ICCommon["Packages"] += [ [ "fauna_shapes", [ ] ] ]
+ICCommon["Packages"] += [ [ "fauna_skeletons", [ ] ] ]
+ICCommon["Packages"] += [ [ "fauna_swt", [ ] ] ] # CHECK IF NECESSARY
+ICCommon["Packages"] += [ [ "sfx", [ ] ] ]
+ICCommon["Packages"] += [ [ "sky", [ ] ] ]
+ICCommon["Packages"] += [ [ "sound", [ ] ] ]
+ICCommon["Refs"] = [ ]
 InstallClientData += [ ICCommon ]
 
 ICCharacterArmors = [ ]
@@ -242,6 +264,7 @@ for armor in ICCharacterArmors:
 ICCharacter["Packages"] += [ [ "characters_maps_hr", [ "characters_maps_hr.bnp" ] + ICCharacterMapsConditions, "characters.hlsbank" ] ]
 for armor in ICCharacterArmors:
 	ICCharacter["Packages"] += [ [ "characters_maps_hr", [ "characters_maps_" + armor + "_hr.bnp", "-if", armor + "*" ], "characters.hlsbank" ] ]
+ICCharacter["Refs"] = [ ]
 InstallClientData += [ ICCharacter ]
 
 ICEsPrimesRacines = { }
@@ -259,6 +282,7 @@ ICEsPrimesRacines["Packages"] += [ [ "primes_racines_maps", [ ] ] ]
 ICEsPrimesRacines["Packages"] += [ [ "primes_racines_lightmaps", [ ] ] ]
 ICEsPrimesRacines["Packages"] += [ [ "primes_racines_displaces", [ ] ] ]
 ICEsPrimesRacines["Packages"] += [ [ "primes_racines_bank", [ ] ] ]
+ICEsPrimesRacines["Refs"] = [ ]
 InstallClientData += [ ICEsPrimesRacines ]
 
 ICEsDesert = { }
@@ -276,6 +300,7 @@ ICEsDesert["Packages"] += [ [ "desert_maps", [ ] ] ]
 ICEsDesert["Packages"] += [ [ "desert_lightmaps", [ ] ] ]
 ICEsDesert["Packages"] += [ [ "desert_displaces", [ ] ] ]
 ICEsDesert["Packages"] += [ [ "desert_bank", [ ] ] ]
+ICEsDesert["Refs"] = [ ]
 InstallClientData += [ ICEsDesert ]
 
 ICEsLacustre = { }
@@ -293,6 +318,7 @@ ICEsLacustre["Packages"] += [ [ "lacustre_maps", [ ] ] ]
 ICEsLacustre["Packages"] += [ [ "lacustre_lightmaps", [ ] ] ]
 ICEsLacustre["Packages"] += [ [ "lacustre_displaces", [ ] ] ]
 ICEsLacustre["Packages"] += [ [ "lacustre_bank", [ ] ] ]
+ICEsLacustre["Refs"] = [ ]
 InstallClientData += [ ICEsLacustre ]
 
 ICEsJungle = { }
@@ -310,6 +336,7 @@ ICEsJungle["Packages"] += [ [ "jungle_maps", [ ] ] ]
 ICEsJungle["Packages"] += [ [ "jungle_lightmaps", [ ] ] ]
 ICEsJungle["Packages"] += [ [ "jungle_displaces", [ ] ] ]
 ICEsJungle["Packages"] += [ [ "jungle_bank", [ ] ] ]
+ICEsJungle["Refs"] = [ ]
 InstallClientData += [ ICEsJungle ]
 
 ICFyros = { }
@@ -330,6 +357,7 @@ ICFyros["Packages"] += [ [ "fyros_newbie_ig", [ ] ] ]
 ICFyros["Packages"] += [ [ "fyros_island_zones", [ ] ] ]
 ICFyros["Packages"] += [ [ "fyros_island_pacs", [ ] ] ]
 ICFyros["Packages"] += [ [ "fyros_island_ig", [ ] ] ]
+ICFyros["Refs"] = [ ]
 InstallClientData += [ ICFyros ]
 
 ICMatis = { }
@@ -347,6 +375,7 @@ ICMatis["Packages"] += [ [ "matis_ig", [ ] ] ]
 ICMatis["Packages"] += [ [ "matis_island_zones", [ ] ] ]
 ICMatis["Packages"] += [ [ "matis_island_pacs", [ ] ] ]
 ICMatis["Packages"] += [ [ "matis_island_ig", [ ] ] ]
+ICMatis["Refs"] = [ ]
 InstallClientData += [ ICMatis ]
 
 ICZorai = { }
@@ -364,6 +393,7 @@ ICZorai["Packages"] += [ [ "zorai_ig", [ ] ] ]
 ICZorai["Packages"] += [ [ "zorai_island_zones", [ ] ] ]
 ICZorai["Packages"] += [ [ "zorai_island_pacs", [ ] ] ]
 ICZorai["Packages"] += [ [ "zorai_island_ig", [ ] ] ]
+ICZorai["Refs"] = [ ]
 InstallClientData += [ ICZorai ]
 
 ICTryker = { }
@@ -386,6 +416,7 @@ ICTryker["Packages"] += [ [ "tryker_island_zones", [ ] ] ]
 ICTryker["Packages"] += [ [ "tryker_island_shapes", [ ] ] ]
 ICTryker["Packages"] += [ [ "tryker_island_pacs", [ ] ] ]
 ICTryker["Packages"] += [ [ "tryker_island_ig", [ ] ] ]
+ICTryker["Refs"] = [ ]
 InstallClientData += [ ICTryker ]
 
 ICSources = { }
@@ -400,6 +431,7 @@ ICSources["Packages"] += [ [ "sources_pacs", [ ] ] ]
 ICSources["Packages"] += [ [ "sources_maps", [ ] ] ]
 ICSources["Packages"] += [ [ "sources_lightmaps", [ ] ] ]
 ICSources["Packages"] += [ [ "sources_ig", [ ] ] ]
+ICSources["Refs"] = [ ]
 InstallClientData += [ ICSources ]
 
 ICRouteGouffre = { }
@@ -414,6 +446,7 @@ ICRouteGouffre["Packages"] += [ [ "route_gouffre_pacs", [ ] ] ]
 ICRouteGouffre["Packages"] += [ [ "route_gouffre_maps", [ ] ] ]
 ICRouteGouffre["Packages"] += [ [ "route_gouffre_lightmaps", [ ] ] ]
 ICRouteGouffre["Packages"] += [ [ "route_gouffre_ig", [ ] ] ]
+ICRouteGouffre["Refs"] = [ ]
 InstallClientData += [ ICRouteGouffre ]
 
 ICBagne = { }
@@ -428,6 +461,7 @@ ICBagne["Packages"] += [ [ "bagne_pacs", [ ] ] ]
 ICBagne["Packages"] += [ [ "bagne_maps", [ ] ] ]
 ICBagne["Packages"] += [ [ "bagne_lightmaps", [ ] ] ]
 ICBagne["Packages"] += [ [ "bagne_ig", [ ] ] ]
+ICBagne["Refs"] = [ ]
 InstallClientData += [ ICBagne ]
 
 ICTerre = { }
@@ -442,6 +476,7 @@ ICTerre["Packages"] += [ [ "terre_pacs", [ ] ] ]
 ICTerre["Packages"] += [ [ "terre_maps", [ ] ] ]
 ICTerre["Packages"] += [ [ "terre_lightmaps", [ ] ] ]
 ICTerre["Packages"] += [ [ "terre_ig", [ ] ] ]
+ICTerre["Refs"] = [ ]
 InstallClientData += [ ICTerre ]
 
 ICNexus = { }
@@ -456,6 +491,7 @@ ICNexus["Packages"] += [ [ "nexus_pacs", [ ] ] ]
 ICNexus["Packages"] += [ [ "nexus_maps", [ ] ] ]
 ICNexus["Packages"] += [ [ "nexus_lightmaps", [ ] ] ]
 ICNexus["Packages"] += [ [ "nexus_ig", [ ] ] ]
+ICNexus["Refs"] = [ ]
 InstallClientData += [ ICNexus ]
 
 ICNewbieland = { }
@@ -469,6 +505,7 @@ ICNewbieland["Packages"] += [ [ "newbieland_shapes", [ ] ] ]
 ICNewbieland["Packages"] += [ [ "newbieland_pacs", [ ] ] ]
 ICNewbieland["Packages"] += [ [ "newbieland_maps", [ ] ] ]
 ICNewbieland["Packages"] += [ [ "newbieland_ig", [ ] ] ]
+ICNewbieland["Refs"] = [ ]
 InstallClientData += [ ICNewbieland ]
 
 ICIndoors = { }
@@ -481,6 +518,7 @@ ICIndoors["Packages"] += [ [ "indoors_shapes", [ ] ] ]
 ICIndoors["Packages"] += [ [ "indoors_pacs", [ ] ] ]
 ICIndoors["Packages"] += [ [ "indoors_lightmaps", [ ] ] ]
 ICIndoors["Packages"] += [ [ "indoors_ig", [ ] ] ]
+ICIndoors["Refs"] = [ ]
 InstallClientData += [ ICIndoors ]
 
 ICR2 = { }
@@ -510,6 +548,7 @@ ICR2["Packages"] += [ [ "r2_lakes_pz", [ ] ] ]
 ICR2["Packages"] += [ [ "r2_jungle_pz", [ ] ] ]
 ICR2["Packages"] += [ [ "r2_forest_pz", [ ] ] ]
 ICR2["Packages"] += [ [ "r2_desert_pz", [ ] ] ]
+ICR2["Refs"] = [ ]
 InstallClientData += [ ICR2 ]
 
 
