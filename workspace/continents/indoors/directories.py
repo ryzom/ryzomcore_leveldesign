@@ -152,6 +152,12 @@ PacsPrimLookupDirectories += [ "ecosystems/desert/pacs_prim" ]
 PacsPrimLookupDirectories += [ "ecosystems/jungle/pacs_prim" ]
 PacsPrimLookupDirectories += [ "ecosystems/lacustre/pacs_prim" ]
 
+# Properties search paths
+PropertiesExportBuildSearchPaths = [ ]
+PropertiesExportBuildSearchPaths += IgLookupDirectories
+PropertiesExportBuildSearchPaths += ShapeLookupDirectories
+PropertiesExportBuildSearchPaths += MapLookupDirectories
+
 
 # *** EXPORT DIRECTORIES FOR THE BUILD PIPELINE ***
 

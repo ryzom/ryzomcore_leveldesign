@@ -99,6 +99,16 @@ MapLookupDirectories = [ ]
 MapLookupDirectories += [ CommonPath + "/map_export" ]
 MapLookupDirectories += [ CommonPath + "/map_uncompressed" ]
 
+# Properties search paths
+PropertiesExportBuildSearchPaths = [ ]
+PropertiesExportBuildSearchPaths += ShapeLookupDirectories
+PropertiesExportBuildSearchPaths += MapLookupDirectories
+PropertiesExportBuildSearchPaths += [ "common/sfx/ps" ]
+PropertiesExportBuildSearchPaths += [ "common/sfx/shape_clodtex_build" ]
+PropertiesExportBuildSearchPaths += [ "common/sfx/shape_with_coarse_mesh" ]
+PropertiesExportBuildSearchPaths += [ "common/sfx/map_export" ]
+PropertiesExportBuildSearchPaths += [ "common/sfx/map_uncompressed" ]
+
 
 # *** EXPORT DIRECTORIES FOR THE BUILD PIPELINE ***
 

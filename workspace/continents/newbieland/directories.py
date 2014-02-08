@@ -121,6 +121,12 @@ MapLookupDirectories += [ "ecosystems/lacustre/map_uncompressed" ] # additional
 PacsPrimLookupDirectories = [ ]
 PacsPrimLookupDirectories += [ EcosystemPath + "/pacs_prim" ]
 
+# Properties search paths
+PropertiesExportBuildSearchPaths = [ ]
+PropertiesExportBuildSearchPaths += IgLookupDirectories
+PropertiesExportBuildSearchPaths += ShapeLookupDirectories
+PropertiesExportBuildSearchPaths += MapLookupDirectories
+
 
 # *** EXPORT DIRECTORIES FOR THE BUILD PIPELINE ***
 
