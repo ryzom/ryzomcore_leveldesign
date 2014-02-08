@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision$" State="modified">
+  <STRUCT>
+    <ATOM Name="HighestPriorityReserve" Value="2"/>
+    <ATOM Name="HighPriorityReserve" Value="4"/>
+    <ATOM Name="MidPriorityReserve" Value="6"/>
+    <ATOM Name="LowPriorityReserve" Value="8"/>
+    <ARRAY Name="SampleBanks">
+      <ATOM Value="__fauna"/>
+      <ATOM Value="__fauna_generic"/>
+      <ATOM Value="__step"/>
+      <ATOM Value="__common"/>
+      <ATOM Value="_ps"/>
+      <ATOM Value="__homins"/>
+    </ARRAY>
+    <ARRAY Name="BackgroundFlags">
+      <STRUCT>
+        <ATOM Name="Name" Value="Day"/>
+        <ATOM Name="ShortName" Value="D"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="Night"/>
+        <ATOM Name="ShortName" Value="N"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="Morning"/>
+        <ATOM Name="ShortName" Value="M"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="Dusk"/>
+        <ATOM Name="ShortName" Value="D"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="Spring"/>
+        <ATOM Name="ShortName" Value="S"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="Summer"/>
+        <ATOM Name="ShortName" Value="S"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="Autumn"/>
+        <ATOM Name="ShortName" Value="A"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="Winter"/>
+        <ATOM Name="ShortName" Value="W"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="mist"/>
+        <ATOM Name="ShortName" Value="m"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="fair1"/>
+        <ATOM Name="ShortName" Value="f1"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="fair2"/>
+        <ATOM Name="ShortName" Value="f2"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="fair3"/>
+        <ATOM Name="ShortName" Value="f3"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="clouds"/>
+        <ATOM Name="ShortName" Value="c"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="rain1"/>
+        <ATOM Name="ShortName" Value="r1"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="rain2"/>
+        <ATOM Name="ShortName" Value="r2"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="snow1"/>
+        <ATOM Name="ShortName" Value="s1"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="thunder1"/>
+        <ATOM Name="ShortName" Value="t1"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="thunderseve1"/>
+        <ATOM Name="ShortName" Value="tv1"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="thundersand1"/>
+        <ATOM Name="ShortName" Value="ts1"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="thundersand2"/>
+        <ATOM Name="ShortName" Value="ts2"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="thundersand3"/>
+        <ATOM Name="ShortName" Value="ts3"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="Bad Atmosphere"/>
+        <ATOM Name="ShortName" Value="B"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="Good Atmosphere"/>
+        <ATOM Name="ShortName" Value="G"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="10*1000"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="Name" Value="Quick Mute"/>
+        <ATOM Name="ShortName" Value="Q"/>
+        <ATOM Name="FadeIn" Value="10*1000"/>
+        <ATOM Name="FadeOut" Value="100"/>
+        <ATOM Name="InitialState" Value="false"/>
+      </STRUCT>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>
