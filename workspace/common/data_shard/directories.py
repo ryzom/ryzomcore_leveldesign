@@ -39,6 +39,7 @@ CommonPath = "common/" + CommonName
 CopyDirectSourceDirectories = [ ]
 CopyDirectSourceDirectories += [ DataShardDirectory ]
 CopyDirectSourceDirectories += [ LeveldesignDataShardDirectory ]
+CopyDirectSourceDirectories += [ TranslationDirectory + "/translated" ]
 CopyDirectSourceFiles = [ ]
 
 
