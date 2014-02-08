@@ -1,4 +1,18 @@
-﻿// HASH_VALUE A88E3FF35D2C1D1B
+﻿// HASH_VALUE 8857DE7C383C5498
+ABANDON_GROUP_MISSION ()
+{
+			[&SYS& The leader of your team has abandoned a team mission.]
+
+}
+
+// HASH_VALUE 4E34C9C7A3251E27
+ABANDON_MISSION ()
+{
+		abandon_mission	[&TSK&You have abandonned a mission.]
+
+}
+
+// HASH_VALUE A88E3FF35D2C1D1B
 ABANDON_TEAM_MISSION_REFUSED ()
 {
 		abandon_team_mission_refused	[&CHK& only leaders can abandon a team mission.]
@@ -451,6 +465,26 @@ CHARGE_GOT (dyn_string_id id)
 
 }
 
+/* OLD VALUE : [
+	CHIANG_1 ()
+	{
+				[&bbl&Notre objectif est de t'enseigner; ton devoir est d'apprendre.]
+	
+	}
+	
+
+] */
+// Clause 0 : text changed.
+/* OLD VALUE : [
+	CHIANG_1 ()
+	{
+				[&bbl&Our objective is to teach; your duty is to learn.]
+	
+	}
+	
+
+] */
+// Clause 0 : text changed.
 // HASH_VALUE 21D2F06FB30EFA3A
 CHIANG_1 ()
 {
@@ -458,6 +492,26 @@ CHIANG_1 ()
 
 }
 
+/* OLD VALUE : [
+	CHIANG_2 ()
+	{
+				[&bbl&Il existe un monde brisé qui demande à être repris en mains, il y a beaucoup à faire. Allez, au travail.]
+	
+	}
+	
+
+] */
+// Clause 0 : text changed.
+/* OLD VALUE : [
+	CHIANG_2 ()
+	{
+				[&bbl&Atys is a broken world which must be put back together; there is a lot to do. To work!]
+	
+	}
+	
+
+] */
+// Clause 0 : text changed.
 // HASH_VALUE 7609BC467E25E790
 CHIANG_2 ()
 {
@@ -465,6 +519,26 @@ CHIANG_2 ()
 
 }
 
+/* OLD VALUE : [
+	CHIANG_3 ()
+	{
+				[&bbl&Parle au chef de chaque camp, et vois ce qu'ils ont à t'apprendre.]
+	
+	}
+	
+
+] */
+// Clause 0 : text changed.
+/* OLD VALUE : [
+	CHIANG_3 ()
+	{
+				[&bbl&Go and speak to the chief of each camp, and see what they have to teach you.]
+	
+	}
+	
+
+] */
+// Clause 0 : text changed.
 // HASH_VALUE FA377248CE23559D
 CHIANG_3 ()
 {
@@ -472,6 +546,26 @@ CHIANG_3 ()
 
 }
 
+/* OLD VALUE : [
+	CHIANG_4 ()
+	{
+				[&bbl&Coopération. Développement. Vigilance.]
+	
+	}
+	
+
+] */
+// Clause 0 : text changed.
+/* OLD VALUE : [
+	CHIANG_4 ()
+	{
+				[&bbl&Cooperation. Development. Vigilance.]
+	
+	}
+	
+
+] */
+// Clause 0 : text changed.
 // HASH_VALUE F4FEAD9FEA803723
 CHIANG_4 ()
 {
@@ -3385,6 +3479,21 @@ EGS_MAGIC_TARGET_OUT_OF_RANGE ()
 
 }
 
+// HASH_VALUE BE5F19F4AA54D3D3
+EGS_MISSION_STEP_SUCCESS ()
+{
+			[&TSK&You have finished a mission step.]
+
+}
+
+// Mission message 
+// HASH_VALUE 22E7EB821B084772
+EGS_MISSION_SUCCESS ()
+{
+			[&TSK&You have completed a mission.]
+
+}
+
 // HASH_VALUE FAFAB2233F97F220
 EGS_NOT_ENOUGHT_SP ()
 {
@@ -3420,6 +3529,13 @@ EGS_QUARTER_INTERRUPTED ()
 
 }
 
+// HASH_VALUE 84A521F949BD9848
+EGS_TASK_ENCYCLO_SUCCESS ()
+{
+			[&TSK&Task successful. Check your encyclopedia.]
+
+}
+
 // HASH_VALUE 262A330B61EBB9DB
 EGS_TOO_EXPENSIVE_FOCUS ()
 {
@@ -3446,6 +3562,13 @@ EGS_TRADE_BAD_FAME ( bot b )
 {
 	// I have included a bot in this phrase cause it is a bot chat ( variation according the bot race and so on,...)
 			[I don't want to trade with you because you have too bad a reputation.]
+
+}
+
+// HASH_VALUE F8C11D3BBBDB29B8
+EGS_UNLOCK_ENCYCLO ()
+{
+			[&TSK&Theme unlocked. Check your encyclopedia.]
 
 }
 
@@ -12086,10 +12209,263 @@ MENU_WHOISKARAVAN (player p, bot b)
 
 }
 
+// HASH_VALUE 7C2623A06F834E6E
+MISSION_ENTER_CRITITAL_PART_DECLINE (dyn_string_id str)
+{
+			[You have turned down the offer, so you are now in sleep mode for the $str$ mission.]
+
+}
+
+// HASH_VALUE 90D54834ED1955F4
+MISSION_ENTER_CRITITAL_PART_PROPOSAL (dyn_string_id str)
+{
+			[Would you now like to take on the critical section of mission $str$?]
+
+}
+
+// HASH_VALUE F03A78365DD65C11
+MISSION_ENTER_CRITITAL_PART_TIMEOUT (dyn_string_id str)
+{
+			[You have not replied quickly enough, so you are now in sleep mode for the $str$ mission.]
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+// HASH_VALUE 01D93A167A17700A
+MISSION_FAILED ()
+{
+		mission_failed	[&TSK&You failed in a mission.]
+
+}
+
 // HASH_VALUE E908D049289AAE56
 MISSION_GOAL_STEP_ANY_OR (dyn_string_id id)
 {
 			[Or $id$]
+
+}
+
+// HASH_VALUE CF0BAC5D4564E2D4
+MISSION_MAX_GROUP_REACHED ()
+{
+			[&CHK&You have already picked the maximum number of group missions.]
+
+}
+
+// HASH_VALUE D2AC9C3772F3EEC7
+MISSION_MAX_SOLO_REACHED ()
+{
+			[&CHK&You have already picked the maximum number of solo missions.]
+
+}
+
+// HASH_VALUE 923525270019F64B
+MISSION_PREREQ_ACTION (sbrick s)
+{
+			[This mission requires you to know stanza "$s$".]
+
+}
+
+// HASH_VALUE 55C5DF440C5D5E93
+MISSION_PREREQ_ALREADY_DONE ()
+{
+			[This mission can only be taken once.]
+
+}
+
+// HASH_VALUE E3115069B78BCDCB
+MISSION_PREREQ_CAN_NO_LONGER_TAKE ()
+{
+			[You can no longer take this mission.]
+
+}
+
+// HASH_VALUE 7E5B5144EEF618DF
+MISSION_PREREQ_ENCYCLO_ALL_DONE (dyn_string_id thema, dyn_string_id album)
+{
+			[All ritual tasks for thema "$thema$" in album "$album$" must have been completed.]
+
+}
+
+// HASH_VALUE AA972AC236D15732
+MISSION_PREREQ_EVENT_FACTION (event_faction ef)
+{
+			[You must be in event faction '$ef$'.]
+
+}
+
+// HASH_VALUE 0DFCF30ED9F115FD
+MISSION_PREREQ_FAME_FACTION (faction f, int level)
+{
+			[Your fame with faction "$f$" must be at least level $level$.]
+
+}
+
+// HASH_VALUE 94DD0E9B083FF5F4
+MISSION_PREREQ_KAMI ()
+{
+			[Your fame with the Kami must be greater than your fame with Karavan.]
+
+}
+
+// HASH_VALUE 9D95C86D2895AE00
+MISSION_PREREQ_KARAVAN ()
+{
+			[Your fame with the Karavan must be greater than your fame with the Kami.]
+
+}
+
+// HASH_VALUE 09011928A0D4164C
+MISSION_PREREQ_MISSION_DONE (dyn_string_id str)
+{
+			[This mission requires the accomplishment of mission '$str$'.]
+
+}
+
+// HASH_VALUE 1482BE95C1942C5D
+MISSION_PREREQ_MISSION_NOTDONE (dyn_string_id str)
+{
+			[This mission requires mission '$str$' not to be accomplished.]
+
+}
+
+// HASH_VALUE 96E3D297BE60A02A
+MISSION_PREREQ_MISSION_NOTRUNNING (dyn_string_id str)
+{
+			[This mission requires mission '$str$' not to be in progress.]
+
+}
+
+// HASH_VALUE DE884FAF3DAD0B98
+MISSION_PREREQ_MISSION_RUNNING (dyn_string_id str)
+{
+			[This mission requires taking mission '$str$'.]
+
+}
+
+// HASH_VALUE 231F493A834B9768
+MISSION_PREREQ_MONO ()
+{
+			[This mission cannot be taken for the moment, come back later.]
+
+}
+
+// HASH_VALUE 8699709165C95345
+MISSION_PREREQ_NEED_ITEM_BAG (item item)
+{
+			[You must have $item.da$ $item$ in your bag.]
+
+}
+
+// HASH_VALUE AA98C59B39EA8F8B
+MISSION_PREREQ_NEED_ITEM_WORN (item item)
+{
+			[You must be equipped with $item.da$ $item$.]
+
+}
+
+// HASH_VALUE 8CF6396EB84CBFF1
+MISSION_PREREQ_SEASON_AUTUMN ()
+{
+			[This mission is only available in autumn.]
+
+}
+
+// HASH_VALUE 5026556DF5FEC833
+MISSION_PREREQ_SEASON_SPRING ()
+{
+			[This mission is only available in spring.]
+
+}
+
+// HASH_VALUE 3310842D153CE1C3
+MISSION_PREREQ_SEASON_SUMMER ()
+{
+			[This mission is only available in summer.]
+
+}
+
+// HASH_VALUE 33F24D64388BDBC3
+MISSION_PREREQ_SEASON_WINTER ()
+{
+			[This mission is only available in winter.]
+
+}
+
+// HASH_VALUE 63705C6A9D3C64DD
+MISSION_PREREQ_SKILL_LEVEL (skill skill, int min, int max)
+{
+	(max >= 250) 
+			[Your skill level in '$skill$' must be above $min$.]
+
+	(min = 0) 
+			[Your skill level in '$skill$' must be below $max$.]
+
+			[Your skill level in '$skill$' must be above $min$ and below $max$.]
+
+}
+
+// HASH_VALUE 126BD1B81BC59626
+MISSION_PREREQ_TEAM ()
+{
+			[You must be a member of a team.]
+
+}
+
+// HASH_VALUE 687477AB918F81D4
+MISSION_PREREQ_TEAM_LEADER ()
+{
+			[You must be the leader of your team.]
+
+}
+
+// HASH_VALUE 345611AFA150C5BE
+MISSION_PREREQ_TEAM_SIZE (int n)
+{
+			[Your team must have at least $n$ members.]
+
+}
+
+// HASH_VALUE 54045059ABC0533C
+MISSION_PREREQ_TIMER (int days, int h, int m)
+{
+	(days > 0 ) 
+		mission_prereq_timer_dhm	[This mission will be available in $days$ days, $h$ hours and $m$ minutes.]
+
+	(days = 0 & h > 0 ) 
+		mission_prereq_timer_hm	[This mission will be available in $h$ hours and $m$ minutes.]
+
+		mission_prereq_timer_m	[This mission will be available in $m$ minutes.]
+
+}
+
+// HASH_VALUE D7C8585B2742189B
+MISSION_PREREQ_TITLE (title title)
+{
+			[You must display the title "$title$".]
+
+}
+
+// HASH_VALUE 59E5493B4604882F
+MISSION_QUEUE_WAIT (int nbWaiters, int onlineWaiters, int days, int hours, int m)
+{
+	(nbWaiters = 0 & days > 0) 
+			[You are first in the queue for this mission. Estimated wait time : $days$ days $hours$ hours et $m$ minutes.]
+
+	(nbWaiters = 0 & hours > 0) 
+			[You are first in the queue for this mission. Estimated wait time : $hours$ hours and $m$ minutes.]
+
+	(nbWaiters = 0) 
+			[You are first in the queue for this mission. Estimated wait time : $m$ minutes.]
+
+	(days>0) 
+			[There are $nbWaiters$ people (of whom $onlineWaiters$ are online) in the queue for this mission. Estimated wait time : $days$ days $hours$ hours and $m$ minutes.]
+
+	(hours > 0) 
+			[There are $nbWaiters$ people (of whom $onlineWaiters$  are online) in the queue for this mission. Estimated wait time : $hours$ hours and $m$ minutes.]
+
+			[There are $nbWaiters$ people (of whom $onlineWaiters$ are online) in the queue for this mission. Estimated wait time : $m$ minutes.]
 
 }
 
@@ -15416,6 +15792,14 @@ PVP_ZONE_LEAVE_TIME_REPEAT (int time)
 REQUIRED_EQUIP ()
 {
 			[&CHK&Your characteristics are not sufficiently high for you to use this item.]
+
+}
+
+// Mission message 
+// HASH_VALUE 845DAFAE3E3E7ACC
+REQ_LEADER_TO_ABANDON_MISSION ()
+{
+			[&CHK& You must be the leader of your team to abandon or finish a team mission.]
 
 }
 
