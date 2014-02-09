@@ -66,6 +66,7 @@ CopyDatabaseSourceFiles = [ ]
 
 # Sheets
 SheetsBuildDirectory = CommonPath + "/sheets"
+VisualSlotTabBuildDirectory = CommonPath + "/visual_slot_tab"
 
 
 # *** INSTALL DIRECTORIES IN THE CLIENT DATA ***
