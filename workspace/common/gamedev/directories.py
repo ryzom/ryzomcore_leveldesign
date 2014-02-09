@@ -27,6 +27,7 @@
 # 
 
 from buildsite import *
+import os
 
 # *** COMMON NAMES AND PATHS ***
 CommonName = "gamedev"
@@ -39,6 +40,11 @@ CommonPath = "common/" + CommonName
 CopyDirectSourceDirectories = [ ]
 CopyDirectSourceDirectories += [ GamedevDirectory ]
 CopyDirectSourceFiles = [ ]
+translationFileList = os.listdir(TranslationDirectory + "/translated")
+for fileName in translationFileList:
+	if fileName != ".svn" and fileName != ".." and fileName != "." and fileName != "*.*":
+		if fileName.endswith(".uxt") or (fileName.endswith(".txt") and (fileName.startswith("skill_") or fileName.startswith("item_") or fileName.startswith("creature_") or fileName.startswith("sbrick_") or fileName.startswith("sphrase_") or fileName.startswith("place_") or fileName.startswith("faction_") or fileName.startswith("title_") or fileName.startswith("outpost_"))):
+			CopyDirectSourceFiles += [ TranslationDirectory + "/translated/" + fileName ]
 
 
 # *** SOURCE DIRECTORIES IN LEVELDESIGN ***

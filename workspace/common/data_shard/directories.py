@@ -27,6 +27,7 @@
 # 
 
 from buildsite import *
+import os
 
 # *** COMMON NAMES AND PATHS ***
 CommonName = "data_shard"
@@ -39,8 +40,12 @@ CommonPath = "common/" + CommonName
 CopyDirectSourceDirectories = [ ]
 CopyDirectSourceDirectories += [ DataShardDirectory ]
 CopyDirectSourceDirectories += [ LeveldesignDataShardDirectory ]
-CopyDirectSourceDirectories += [ TranslationDirectory + "/translated" ]
 CopyDirectSourceFiles = [ ]
+translationFileList = os.listdir(TranslationDirectory + "/translated")
+for fileName in translationFileList:
+	if fileName != ".svn" and fileName != ".." and fileName != "." and fileName != "*.*":
+		if fileName.endswith(".txt"):
+			CopyDirectSourceFiles += [ TranslationDirectory + "/translated/" + fileName ]
 
 
 # *** SOURCE DIRECTORIES IN LEVELDESIGN ***
