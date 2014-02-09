@@ -70,6 +70,7 @@ PacsPrimExportSourceDirectories += [ "ecosystems/primes_racines/pacs_prim" ]
 
 # *** BUILD DIRECTORIES FOR THE BUILD PIPELINE ***
 PacsPrimListBuildDirectory = CommonPath + "/pacs_prim_list"
+VisualSlotTabBuildDirectory = CommonPath + "/visual_slot_tab"
 
 
 # *** INSTALL DIRECTORIES IN THE CLIENT DATA ***
