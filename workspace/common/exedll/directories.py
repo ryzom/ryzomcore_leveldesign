@@ -64,6 +64,12 @@ CopyWindowsExeDllCfgSourceFiles += [ "Microsoft.VC90.CRT.manifest" ]
 CopyWindowsExeDllCfgSourceFiles += [ "msvcp90.dll" ]
 CopyWindowsExeDllCfgSourceFiles += [ "msvcr90.dll" ]
 
+CopyWindowsExeDllCfgSourceFiles += [ "Microsoft.VC100.CRT.manifest" ]
+CopyWindowsExeDllCfgSourceFiles += [ "msvcp100.dll" ]
+CopyWindowsExeDllCfgSourceFiles += [ "msvcr100.dll" ]
+
+CopyWindowsExeDllCfgSourceFiles += [ "stlport.5.2.dll" ]
+
 CopyWindowsExeDllCfgSourceFiles += [ "fmod.dll" ]
 CopyWindowsExeDllCfgSourceFiles += [ "expat.dll" ]
 CopyWindowsExeDllCfgSourceFiles += [ "libogg.dll" ]
