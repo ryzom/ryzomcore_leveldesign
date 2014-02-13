@@ -2,15 +2,13 @@
 # 
 # \file directories.py
 # \brief Directories configuration
-# \date 2010-08-27 17:13GMT
+# \date 2014-02-13 20:32GMT
 # \author Jan Boon (Kaetemi)
-# \date 2001-2005
-# \author Nevrax
 # Python port of game data build pipeline.
 # Directories configuration.
 # 
 # NeL - MMORPG Framework <http://dev.ryzom.com/projects/nel/>
-# Copyright (C) 2010  Winch Gate Property Limited
+# Copyright (C) 2014  by authors
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -30,16 +28,14 @@ from buildsite import *
 import os
 
 # *** COMMON NAMES AND PATHS ***
-CommonName = "data_shard"
-CommonPath = "common/" + CommonName
+CommonName = "data_language"
+CommonPath = "shard/" + CommonName
 
 
 # *** DIRECT SOURCE DIRECTORIES ***
 
 # Copy dir directories
 CopyDirectSourceDirectories = [ ]
-CopyDirectSourceDirectories += [ DataShardDirectory ]
-CopyDirectSourceDirectories += [ LeveldesignDataShardDirectory ]
 CopyDirectSourceFiles = [ ]
 translationFileList = os.listdir(TranslationDirectory + "/translated")
 for fileName in translationFileList:

@@ -46,9 +46,12 @@ ProjectsToProcess += [ "common/fonts" ]
 ProjectsToProcess += [ "common/gamedev" ]
 ProjectsToProcess += [ "common/leveldesign" ]
 ProjectsToProcess += [ "common/data_common" ]
-ProjectsToProcess += [ "common/data_shard" ]
 ProjectsToProcess += [ "common/exedll" ]
 ProjectsToProcess += [ "common/cfg" ]
+
+# Shard specific
+ProjectsToProcess += [ "shard/data_shard" ]
+ProjectsToProcess += [ "shard/data_language" ]
 
 # Ecosystem projects
 ProjectsToProcess += [ "ecosystems/desert" ]
@@ -66,17 +69,18 @@ ProjectsToProcess += [ "continents/indoors" ] # Note: must be after other contin
 
 
 InstallShardDataDirectories = [ ]
-InstallShardDataDirectories += [ "data_shard" ]
 InstallShardDataDirectories += [ "data_common" ]
+InstallShardDataDirectories += [ "data_language" ]
 
-InstallShardDataCollisionsDirectory = "data_shard/collisions"
-InstallShardDataCollisionsDirectories = [ ]
-InstallShardDataCollisionsDirectories += [ "newbieland_ai" ]
-InstallShardDataCollisionsDirectories += [ "newbieland_ig" ]
-InstallShardDataCollisionsDirectories += [ "newbieland_pacs" ]
-InstallShardDataCollisionsDirectories += [ "indoors_ai" ]
-InstallShardDataCollisionsDirectories += [ "indoors_ig" ]
-InstallShardDataCollisionsDirectories += [ "indoors_pacs" ]
+InstallShardDataMultiDirectories = [ ]
+InstallShardDataMultiDirectories += [ [ "cfg", [ "data_shard" ] ] ]
+InstallShardDataMultiDirectories += [ [ "data_newbieland", [ "newbieland_ai", "newbieland_ig", "newbieland_pacs" ] ] ]
+InstallShardDataMultiDirectories += [ [ "data_indoors", [ "indoors_ai", "indoors_ig", "indoors_pacs" ] ] ]
+InstallShardDataMultiDirectories += [ [ "data_pacs_prim", [ "desert_pacs_prim", "jungle_pacs_prim", "lacustre_pacs_prim", "primes_racines_pacs_prim" ] ] ]
+
+InstallShardDataPrimitivesDirectories = [ ]
+InstallShardDataPrimitivesDirectories += [ [ "data_mainland_common_primitives", [ "" ] ] ]
+InstallShardDataPrimitivesDirectories += [ [ "data_newbieland_primitives", [ "newbieland" ] ] ]
 
 
 InstallClientData = [ ]

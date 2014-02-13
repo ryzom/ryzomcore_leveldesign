@@ -2,13 +2,13 @@
 # 
 # \file config.py
 # \brief Process configuration
-# \date 2010-08-27 17:02GMT
+# \date 2014-02-13 20:32GMT
 # \author Jan Boon (Kaetemi)
 # Python port of game data build pipeline.
 # Process configuration.
 # 
 # NeL - MMORPG Framework <http://dev.ryzom.com/projects/nel/>
-# Copyright (C) 2010  Winch Gate Property Limited
+# Copyright (C) 2014  by authors
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as
@@ -33,7 +33,7 @@ ProcessToComplete += [ "copy" ]
 
 # *** COMMON NAMES AND PATHS ***
 CommonName = "data_shard"
-CommonPath = "common/" + CommonName
+CommonPath = "shard/" + CommonName
 
 
 # *** PACS PRIM LIST OPTIONS ***
