@@ -39,11 +39,6 @@ CopyDirectSourceDirectories = [ ]
 CopyDirectSourceDirectories += [ DataShardDirectory ]
 CopyDirectSourceDirectories += [ LeveldesignDataShardDirectory ]
 CopyDirectSourceFiles = [ ]
-translationFileList = os.listdir(TranslationDirectory + "/translated")
-for fileName in translationFileList:
-	if fileName != ".svn" and fileName != ".." and fileName != "." and fileName != "*.*":
-		if fileName.endswith(".txt"):
-			CopyDirectSourceFiles += [ TranslationDirectory + "/translated/" + fileName ]
 
 
 # *** SOURCE DIRECTORIES IN LEVELDESIGN ***
