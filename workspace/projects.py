@@ -91,7 +91,7 @@ InstallShardDataPrimitivesDirectories += [ [ "data_newbieland_primitives", [ "ne
 InstallShardDataExecutables = [ ]
 # Unifier
 InstallShardDataExecutables += [ [ "service_ryzom_admin_service", [ "ryzom_admin_service", "ryzom_admin_service" ], [ "ryzom_as.cfg" ], [ ] ] ]
-InstallShardDataExecutables += [ [ "service_shard_unifier_service", [ "shard_unifier_service", "ryzom_shard_unifier_service" ], [ "shard_unifier_service.cfg" ], [ "data_shard/reserved_names.xml", "data_shard/dev_gm_names.xml" ] ] ]
+InstallShardDataExecutables += [ [ "service_shard_unifier_service", [ "shard_unifier_service", "ryzom_shard_unifier_service" ], [ "shard_unifier_service.cfg" ], [ "data_shard/reserved_names.xml", "data_shard/dev_gm_names.xml", "data_shard/invalid_entity_names.txt" ] ] ]
 InstallShardDataExecutables += [ [ "service_mail_forum_service", [ "mail_forum_service", "ryzom_mail_forum_service" ], [ "mail_forum_service.cfg" ], [ ] ] ]
 InstallShardDataExecutables += [ [ "service_logger_service", [ "logger_service", "ryzom_logger_service" ], [ "logger_service.cfg" ], [ ] ] ]
 InstallShardDataExecutables += [ [ "service_backup_service", [ "backup_service", "ryzom_backup_service" ], [ "backup_service.cfg" ], [ ] ] ]
@@ -103,7 +103,9 @@ InstallShardDataExecutables += [ [ "service_mirror_service", [ "mirror_service",
 InstallShardDataExecutables += [ [ "service_input_output_service", [ "input_output_service", "ryzom_ios_service" ], [ "input_output_service.cfg" ], [ ] ] ]
 InstallShardDataExecutables += [ [ "service_gpm_service", [ "gpm_service", "ryzom_gpm_service" ], [ "gpm_service.cfg" ], [ ] ] ]
 InstallShardDataExecutables += [ [ "service_session_browser_server", [ "session_browser_server", "ryzom_session_browser_service" ], [ ], [ ] ] ]
-InstallShardDataExecutables += [ [ "service_entities_game_service", [ "entities_game_service", "ryzom_entities_game_service" ], [ "entities_game_service.cfg" ], [ "data_shard/shop_category.cfg", "data_shard/client_commands_privileges.txt", "data_shard/named_items.txt" ] ] ]
+InstallShardDataExecutables += [ [ "service_entities_game_service", [ "entities_game_service", "ryzom_entities_game_service" ], [ "entities_game_service.cfg" ], [ "data_shard/shop_category.cfg", "data_shard/client_commands_privileges.txt", "data_shard/named_items.txt", "data_shard/mission_queues.txt", "data_shard/game_event.txt" ] ] ]
+InstallShardDataExecutables += [ [ "service_ai_service", [ "ai_service", "ryzom_ai_service" ], [ "ai_service.cfg" ], [ ] ] ]
+InstallShardDataExecutables += [ [ "service_frontend_service", [ "frontend_service", "ryzom_frontend_service" ], [ "frontend_service.cfg" ], [ ] ] ]
 
 
 InstallClientData = [ ]
