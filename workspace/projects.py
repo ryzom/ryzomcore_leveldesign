@@ -76,7 +76,8 @@ InstallShardDataDirectories += [ "data_language" ]
 
 # [ [ "<target_package>", [ "<source_dir>", "<source_dir>" ] ] ] target_dir under shard data, source_dir under install
 InstallShardDataMultiDirectories = [ ]
-InstallShardDataMultiDirectories += [ [ "cfg", [ ] ] ] # [ "data_shard" ] ] ]
+InstallShardDataMultiDirectories += [ [ "cfg", [ ] ] ]
+InstallShardDataMultiDirectories += [ [ "data_www", [ ] ] ]
 InstallShardDataMultiDirectories += [ [ "data_newbieland", [ "newbieland_ai", "newbieland_ig", "newbieland_pacs" ] ] ]
 InstallShardDataMultiDirectories += [ [ "data_indoors", [ "indoors_ai", "indoors_ig", "indoors_pacs" ] ] ]
 InstallShardDataMultiDirectories += [ [ "data_pacs_prim", [ "desert_pacs_prim", "jungle_pacs_prim", "lacustre_pacs_prim", "primes_racines_pacs_prim" ] ] ]
@@ -97,9 +98,12 @@ InstallShardDataExecutables += [ [ "service_backup_service", [ "backup_service",
 # Mainland
 InstallShardDataExecutables += [ [ "service_ryzom_naming_service", [ "ryzom_naming_service", "ryzom_naming_service" ], [ "naming_service.cfg" ], [ ] ] ]
 InstallShardDataExecutables += [ [ "service_ryzom_welcome_service", [ "ryzom_welcome_service", "ryzom_welcome_service" ], [ "welcome_service.cfg" ], [ ] ] ]
-InstallShardDataExecutables += [ [ "service_tick_service", [ "tick_service", "ryzom_tick_service" ], [ "welcome_service.cfg" ], [ ] ] ]
+InstallShardDataExecutables += [ [ "service_tick_service", [ "tick_service", "ryzom_tick_service" ], [ "tick_service.cfg" ], [ ] ] ]
 InstallShardDataExecutables += [ [ "service_mirror_service", [ "mirror_service", "ryzom_mirror_service" ], [ "mirror_service.cfg" ], [ ] ] ]
 InstallShardDataExecutables += [ [ "service_input_output_service", [ "input_output_service", "ryzom_ios_service" ], [ "input_output_service.cfg" ], [ ] ] ]
+InstallShardDataExecutables += [ [ "service_gpm_service", [ "gpm_service", "ryzom_gpm_service" ], [ "gpm_service.cfg" ], [ ] ] ]
+InstallShardDataExecutables += [ [ "service_session_browser_server", [ "session_browser_server", "ryzom_session_browser_service" ], [ ], [ ] ] ]
+InstallShardDataExecutables += [ [ "service_entities_game_service", [ "entities_game_service", "ryzom_entities_game_service" ], [ "entities_game_service.cfg" ], [ "data_shard/shop_category.cfg", "data_shard/client_commands_privileges.txt", "data_shard/named_items.txt" ] ] ]
 
 
 InstallClientData = [ ]
