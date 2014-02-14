@@ -465,118 +465,38 @@ CHARGE_GOT (dyn_string_id id)
 
 }
 
-/* OLD VALUE : [
-	CHIANG_1 ()
-	{
-				[&bbl&Notre objectif est de t'enseigner; ton devoir est d'apprendre.]
-	
-	}
-	
-
-] */
-// Clause 0 : text changed.
-/* OLD VALUE : [
-	CHIANG_1 ()
-	{
-				[&bbl&Our objective is to teach; your duty is to learn.]
-	
-	}
-	
-
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 21D2F06FB30EFA3A
+// HASH_VALUE 796891D2FF0397A8
 CHIANG_1 ()
 {
-			[&bbl&The freedom to run the program, for any purpose (freedom 0).]
+		chiang_1	[&bbl&The freedom to run the program, for any purpose (freedom 0).]
 
 }
 
-/* OLD VALUE : [
-	CHIANG_2 ()
-	{
-				[&bbl&Il existe un monde brisé qui demande à être repris en mains, il y a beaucoup à faire. Allez, au travail.]
-	
-	}
-	
-
-] */
-// Clause 0 : text changed.
-/* OLD VALUE : [
-	CHIANG_2 ()
-	{
-				[&bbl&Atys is a broken world which must be put back together; there is a lot to do. To work!]
-	
-	}
-	
-
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 7609BC467E25E790
+// HASH_VALUE CE9F5DA90A1A84FE
 CHIANG_2 ()
 {
-			[&bbl&The freedom to study how the program works, and change it to make it do what you wish (freedom 1). Access to the source code is a precondition for this.]
+		chiang_2	[&bbl&The freedom to study how the program works, and change it to make it do what you wish (freedom 1). Access to the source code is a precondition for this.]
 
 }
 
-/* OLD VALUE : [
-	CHIANG_3 ()
-	{
-				[&bbl&Parle au chef de chaque camp, et vois ce qu'ils ont à t'apprendre.]
-	
-	}
-	
-
-] */
-// Clause 0 : text changed.
-/* OLD VALUE : [
-	CHIANG_3 ()
-	{
-				[&bbl&Go and speak to the chief of each camp, and see what they have to teach you.]
-	
-	}
-	
-
-] */
-// Clause 0 : text changed.
-// HASH_VALUE FA377248CE23559D
+// HASH_VALUE 52CD13AB9A18F20B
 CHIANG_3 ()
 {
-			[&bbl&The freedom to redistribute copies so you can help your neighbor (freedom 2).]
+		chiang_3	[&bbl&The freedom to redistribute copies so you can help your neighbor (freedom 2).]
 
 }
 
-/* OLD VALUE : [
-	CHIANG_4 ()
-	{
-				[&bbl&Coopération. Développement. Vigilance.]
-	
-	}
-	
-
-] */
-// Clause 0 : text changed.
-/* OLD VALUE : [
-	CHIANG_4 ()
-	{
-				[&bbl&Cooperation. Development. Vigilance.]
-	
-	}
-	
-
-] */
-// Clause 0 : text changed.
-// HASH_VALUE F4FEAD9FEA803723
+// HASH_VALUE 4C944E02F775D491
 CHIANG_4 ()
 {
-			[&bbl&The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.]
+		chiang_4	[&bbl&The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.]
 
 }
 
-// HASH_VALUE 2CEA49D63B5696E2
+// HASH_VALUE 5663A8D03DAC6ABA
 CHIANG_WELCOME ()
 {
-			[Greetings Freesoftware Fellow,\n
+		chiang_welcome	[Greetings Freesoftware Fellow,\n
 			I'm the welcomer on this Ryzom Core shard. This server is here to do some test, tweak and hack on the source code. Happy Hacking!]
 
 }
