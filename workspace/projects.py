@@ -52,6 +52,7 @@ ProjectsToProcess += [ "common/cfg" ]
 # Shard specific
 ProjectsToProcess += [ "shard/data_shard" ]
 ProjectsToProcess += [ "shard/data_language" ]
+ProjectsToProcess += [ "shard/data_game_share" ]
 
 # Ecosystem projects
 ProjectsToProcess += [ "ecosystems/desert" ]
@@ -69,12 +70,13 @@ ProjectsToProcess += [ "continents/indoors" ] # Note: must be after other contin
 
 
 InstallShardDataDirectories = [ ]
+InstallShardDataDirectories += [ "data_game_share" ]
 InstallShardDataDirectories += [ "data_common" ]
 InstallShardDataDirectories += [ "data_language" ]
 
 # [ [ "<target_package>", [ "<source_dir>", "<source_dir>" ] ] ] target_dir under shard data, source_dir under install
 InstallShardDataMultiDirectories = [ ]
-InstallShardDataMultiDirectories += [ [ "cfg", [ "data_shard" ] ] ]
+InstallShardDataMultiDirectories += [ [ "cfg", [ ] ] ] # [ "data_shard" ] ] ]
 InstallShardDataMultiDirectories += [ [ "data_newbieland", [ "newbieland_ai", "newbieland_ig", "newbieland_pacs" ] ] ]
 InstallShardDataMultiDirectories += [ [ "data_indoors", [ "indoors_ai", "indoors_ig", "indoors_pacs" ] ] ]
 InstallShardDataMultiDirectories += [ [ "data_pacs_prim", [ "desert_pacs_prim", "jungle_pacs_prim", "lacustre_pacs_prim", "primes_racines_pacs_prim" ] ] ]
@@ -86,11 +88,18 @@ InstallShardDataPrimitivesDirectories += [ [ "data_newbieland_primitives", [ "ne
 
 # [ [ "<target_package>", [ "<target_executable>", "<source_executable>" ], [ "<default_config>", "<default_config>" ], [ "<data_file>", "<data_file>" ] ] ]
 InstallShardDataExecutables = [ ]
+# Unifier
 InstallShardDataExecutables += [ [ "service_ryzom_admin_service", [ "ryzom_admin_service", "ryzom_admin_service" ], [ "ryzom_as.cfg" ], [ ] ] ]
-InstallShardDataExecutables += [ [ "service_shard_unifier_service", [ "shard_unifier_service", "ryzom_shard_unifier_service" ], [ "shard_unifier_service.cfg" ], [ ] ] ]
+InstallShardDataExecutables += [ [ "service_shard_unifier_service", [ "shard_unifier_service", "ryzom_shard_unifier_service" ], [ "shard_unifier_service.cfg" ], [ "data_shard/reserved_names.xml", "data_shard/dev_gm_names.xml" ] ] ]
 InstallShardDataExecutables += [ [ "service_mail_forum_service", [ "mail_forum_service", "ryzom_mail_forum_service" ], [ "mail_forum_service.cfg" ], [ ] ] ]
 InstallShardDataExecutables += [ [ "service_logger_service", [ "logger_service", "ryzom_logger_service" ], [ "logger_service.cfg" ], [ ] ] ]
 InstallShardDataExecutables += [ [ "service_backup_service", [ "backup_service", "ryzom_backup_service" ], [ "backup_service.cfg" ], [ ] ] ]
+# Mainland
+InstallShardDataExecutables += [ [ "service_ryzom_naming_service", [ "ryzom_naming_service", "ryzom_naming_service" ], [ "naming_service.cfg" ], [ ] ] ]
+InstallShardDataExecutables += [ [ "service_ryzom_welcome_service", [ "ryzom_welcome_service", "ryzom_welcome_service" ], [ "welcome_service.cfg" ], [ ] ] ]
+InstallShardDataExecutables += [ [ "service_tick_service", [ "tick_service", "ryzom_tick_service" ], [ "welcome_service.cfg" ], [ ] ] ]
+InstallShardDataExecutables += [ [ "service_mirror_service", [ "mirror_service", "ryzom_mirror_service" ], [ "mirror_service.cfg" ], [ ] ] ]
+InstallShardDataExecutables += [ [ "service_input_output_service", [ "input_output_service", "ryzom_ios_service" ], [ "input_output_service.cfg" ], [ ] ] ]
 
 
 InstallClientData = [ ]
