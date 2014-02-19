@@ -25,6 +25,10 @@
 # 
 
 
+from buildsite import *
+import os
+
+
 ProductName = "ryzom"
 
 
@@ -87,6 +91,22 @@ InstallShardDataPrimitivesDirectories += [ [ "data_mainland_common_primitives", 
 InstallShardDataPrimitivesDirectories += [ [ "data_newbieland_primitives", [ "newbieland" ] ] ]
 
 # [ [ "<target_package>", [ "<target_executable>", "<source_executable>" ], [ "<default_config>", "<default_config>" ], [ "<data_file>", "<data_file>" ] ] ]
+psFileList = os.listdir(InstallDirectory + "/data_shard")
+psDatasets = [ "data_shard/datasets.packed_sheets" ]
+psIOS = [ "data_shard/ios_sheets.packed_sheets" ]
+psGPMS = [ "data_shard/gpms.packed_sheets" ]
+psContinents = [ "data_shard/continents.packed_sheets" ]
+psEGS = [ ]
+for fileName in psFileList:
+	if fileName != ".svn" and fileName != ".." and fileName != "." and fileName != "*.*":
+		if ("egs_" in fileName) or ("egs." in fileName):
+			psEGS += [ "data_shard/" + fileName ]
+psLightCycles = [ "data_shard/light_cycles.packed_sheets" ]
+psAIS = [ ]
+for fileName in psFileList:
+	if fileName != ".svn" and fileName != ".." and fileName != "." and fileName != "*.*":
+		if ("ais_" in fileName) or ("ais." in fileName):
+			psAIS += [ "data_shard/" + fileName ]
 InstallShardDataExecutables = [ ]
 # Unifier
 InstallShardDataExecutables += [ [ "service_ryzom_admin_service", [ "ryzom_admin_service", "ryzom_admin_service" ], [ "ryzom_as.cfg" ], [ ] ] ]
@@ -97,14 +117,14 @@ InstallShardDataExecutables += [ [ "service_backup_service", [ "backup_service",
 # Mainland
 InstallShardDataExecutables += [ [ "service_ryzom_naming_service", [ "ryzom_naming_service", "ryzom_naming_service" ], [ "naming_service.cfg" ], [ ] ] ]
 InstallShardDataExecutables += [ [ "service_ryzom_welcome_service", [ "ryzom_welcome_service", "ryzom_welcome_service" ], [ "welcome_service.cfg" ], [ ] ] ]
-InstallShardDataExecutables += [ [ "service_tick_service", [ "tick_service", "ryzom_tick_service" ], [ "tick_service.cfg" ], [ ] ] ]
-InstallShardDataExecutables += [ [ "service_mirror_service", [ "mirror_service", "ryzom_mirror_service" ], [ "mirror_service.cfg" ], [ ] ] ]
-InstallShardDataExecutables += [ [ "service_input_output_service", [ "input_output_service", "ryzom_ios_service" ], [ "input_output_service.cfg" ], [ ] ] ]
-InstallShardDataExecutables += [ [ "service_gpm_service", [ "gpm_service", "ryzom_gpm_service" ], [ "gpm_service.cfg" ], [ ] ] ]
+InstallShardDataExecutables += [ [ "service_tick_service", [ "tick_service", "ryzom_tick_service" ], [ "tick_service.cfg" ], [ ] + psDatasets ] ]
+InstallShardDataExecutables += [ [ "service_mirror_service", [ "mirror_service", "ryzom_mirror_service" ], [ "mirror_service.cfg" ], [ ] + psDatasets ] ]
+InstallShardDataExecutables += [ [ "service_input_output_service", [ "input_output_service", "ryzom_ios_service" ], [ "input_output_service.cfg" ], [ ] + psDatasets + psIOS ] ]
+InstallShardDataExecutables += [ [ "service_gpm_service", [ "gpm_service", "ryzom_gpm_service" ], [ "gpm_service.cfg" ], [ ] + psDatasets + psGPMS + psContinents ] ]
 InstallShardDataExecutables += [ [ "service_session_browser_server", [ "session_browser_server", "ryzom_session_browser_service" ], [ ], [ ] ] ]
-InstallShardDataExecutables += [ [ "service_entities_game_service", [ "entities_game_service", "ryzom_entities_game_service" ], [ "entities_game_service.cfg" ], [ "data_shard/shop_category.cfg", "data_shard/client_commands_privileges.txt", "data_shard/named_items.txt", "data_shard/mission_queues.txt", "data_shard/game_event.txt" ] ] ]
-InstallShardDataExecutables += [ [ "service_ai_service", [ "ai_service", "ryzom_ai_service" ], [ "ai_service.cfg" ], [ ] ] ]
-InstallShardDataExecutables += [ [ "service_frontend_service", [ "frontend_service", "ryzom_frontend_service" ], [ "frontend_service.cfg" ], [ ] ] ]
+InstallShardDataExecutables += [ [ "service_entities_game_service", [ "entities_game_service", "ryzom_entities_game_service" ], [ "entities_game_service.cfg" ], [ "data_shard/shop_category.cfg", "data_shard/client_commands_privileges.txt", "data_shard/named_items.txt", "data_shard/mission_queues.txt", "data_shard/game_event.txt" ] + psEGS + psDatasets + psLightCycles ] ]
+InstallShardDataExecutables += [ [ "service_ai_service", [ "ai_service", "ryzom_ai_service" ], [ "ai_service.cfg" ], [ ] + psAIS + psDatasets + psLightCycles ] ]
+InstallShardDataExecutables += [ [ "service_frontend_service", [ "frontend_service", "ryzom_frontend_service" ], [ "frontend_service.cfg" ], [ ] + psDatasets ] ]
 
 
 InstallClientData = [ ]
