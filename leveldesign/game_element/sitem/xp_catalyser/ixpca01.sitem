@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.8 $" State="modified">
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="xp catalyser"/>
+      <ATOM Name="family" Value="xp catalyser"/>
+      <ATOM Name="stackable" Value="999"/>
+      <ATOM Name="ShardExchangeable" Value="false"/>
+      <ATOM Name="Drop or Sell" Value="true"/>
+      <ATOM Name="Bulk" Value="0.01"/>
+      <ATOM Name="Saleable" Value="true"/>
+      <ATOM Name="Consumable" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="icon" Value="ICO_Cataliseur_XP.tga"/>
+      <ATOM Name="icon background" Value="BK_Common.tga"/>
+    </STRUCT>
+    <STRUCT Name="Consumable">
+      <ATOM Name="EffectPhrase" Value="absp_heal_focus_01.sphrase"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

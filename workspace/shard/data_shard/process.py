@@ -29,6 +29,7 @@
 # *** PROCESS CONFIG ***
 ProcessToComplete = [ ]
 ProcessToComplete += [ "copy" ]
+ProcessToComplete += [ "sheets_shard" ]
 
 
 # *** COMMON NAMES AND PATHS ***
@@ -36,9 +37,9 @@ CommonName = "data_shard"
 CommonPath = "shard/" + CommonName
 
 
-# *** PACS PRIM LIST OPTIONS ***
-
-
 # *** COPY DIR OPTIONS ***
+
+
+# *** SHEETS SHARD OPTIONS ***
 
 

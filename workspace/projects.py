@@ -52,7 +52,6 @@ ProjectsToProcess += [ "common/cfg" ]
 # Shard specific
 ProjectsToProcess += [ "shard/data_shard" ]
 ProjectsToProcess += [ "shard/data_language" ]
-ProjectsToProcess += [ "shard/data_game_share" ]
 
 # Ecosystem projects
 ProjectsToProcess += [ "ecosystems/desert" ]

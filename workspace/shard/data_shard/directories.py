@@ -40,6 +40,9 @@ CopyDirectSourceDirectories += [ DataShardDirectory ]
 CopyDirectSourceDirectories += [ LeveldesignDataShardDirectory ]
 CopyDirectSourceFiles = [ ]
 
+# Sheets shard directories
+VisualSlotTabBuildDirectory = "common/leveldesign/visual_slot_tab"
+
 
 # *** SOURCE DIRECTORIES IN LEVELDESIGN ***
 CopyLeveldesignSourceDirectories = [ ]
@@ -56,8 +59,12 @@ CopyLeveldesignDfnSourceFiles = [ ]
 CopyDatabaseSourceDirectories = [ ]
 CopyDatabaseSourceFiles = [ ]
 
+# Sheets shard directories
+SheetsShardBuildDirectory = CommonPath + "/sheets_shard"
+
 
 # *** INSTALL DIRECTORIES IN THE CLIENT DATA ***
 
 # Common data install directory
 CopyInstallDirectory = CommonName
+SheetsShardInstallDirectory = CommonName
