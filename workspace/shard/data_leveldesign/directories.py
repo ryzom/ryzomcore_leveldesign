@@ -44,8 +44,8 @@ CopyLeveldesignSourceDirectories = [ "game_element/emotes" ]
 CopyLeveldesignSourceFiles = [ "game_elem/sheet_id.bin", "game_elem/localisation.localisation_table" ]
 CopyLeveldesignWorldSourceDirectories = [ "" ]
 CopyLeveldesignWorldSourceFiles = [ ]
-CopyLeveldesignDfnSourceDirectories = [ "basics", "game_elem/_item", "world", "game_elem/_emote" ]
-CopyLeveldesignDfnSourceFiles = [ "game_elem/light_cycle.dfn", "game_elem/_season_light_cycle.dfn", "game_elem/localisation_table.dfn", "game_elem/_localisation_table_line.dfn", "_light.dfn", "_rgba.dfn", "_vector.dfn", "game_elem/weather_function.dfn", "game_elem/weather_function_modifier.dfn", "game_elem/weather_function_params.dfn", "game_elem/weather_function_visual.dfn" ]
+CopyLeveldesignDfnSourceDirectories = [ "basics", "game_elem/_emote", "world" ]
+CopyLeveldesignDfnSourceFiles = [ "game_elem/localisation_table.dfn", "game_elem/_localisation_table_line.dfn", "game_elem/_item/item_shield_category.typ", "game_elem/_item/item_slot.typ", "game_elem/_item/item_mp_group.typ", "_light.dfn", "_rgba.dfn", "_vector.dfn", "game_elem/weather_function.dfn", "game_elem/weather_function_modifier.dfn", "game_elem/weather_function_params.dfn", "game_elem/weather_function_visual.dfn" ]
 
 
 # *** SOURCE DIRECTORIES IN THE DATABASE ***

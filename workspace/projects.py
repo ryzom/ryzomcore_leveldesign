@@ -57,7 +57,6 @@ ProjectsToProcess += [ "common/cfg" ]
 ProjectsToProcess += [ "shard/data_shard" ]
 ProjectsToProcess += [ "shard/data_language" ]
 ProjectsToProcess += [ "shard/data_leveldesign" ]
-ProjectsToProcess += [ "shard/data_game_share" ]
 
 # Ecosystem projects
 ProjectsToProcess += [ "ecosystems/desert" ]
@@ -75,7 +74,7 @@ ProjectsToProcess += [ "continents/indoors" ] # Note: must be after other contin
 
 
 InstallShardDataDirectories = [ ]
-InstallShardDataDirectories += [ "data_game_share" ]
+InstallShardDataDirectories += [ "data_mainland_common_primitives" ]
 InstallShardDataDirectories += [ "data_common" ]
 InstallShardDataDirectories += [ "data_language" ]
 InstallShardDataDirectories += [ "data_leveldesign" ]
@@ -99,14 +98,14 @@ InstallShardDataMultiDirectories += [ [ "data_r2_roots", [ ] ] ] # TODO
 
 # [ [ "<target_package>", [ "<source_dir>", "<source_dir>" ] ] ] target_dir under shard data, source_dir under primitives
 InstallShardDataPrimitivesDirectories = [ ]
-InstallShardDataPrimitivesDirectories += [ [ "data_mainland_common_primitives", [ "" ] ] ]
+InstallShardDataPrimitivesDirectories += [ [ "data_game_share", [ "" ] ] ]
 InstallShardDataPrimitivesDirectories += [ [ "data_newbieland_primitives", [ "newbieland" ] ] ]
 
 # [ [ "<target_package>", [ "<target_executable>", "<source_executable>" ], [ "<default_config>", "<default_config>" ], [ "<data_file>", "<data_file>" ] ] ]
 psFileList = [ ]
 if os.path.isdir(InstallDirectory + "/data_shard"):
 	psFileList = os.listdir(InstallDirectory + "/data_shard")
-psDatasets = [ ] # [ "data_shard/datasets.packed_sheets" ]
+psDatasets = [ "data_shard/datasets.packed_sheets" ]
 psIOS = [ "data_shard/ios_sheets.packed_sheets" ]
 psGPMS = [ "data_shard/gpms.packed_sheets" ]
 psContinents = [ "data_shard/continents.packed_sheets" ]
