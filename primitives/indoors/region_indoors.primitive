@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<PRIMITIVES VERSION="1">
+  <ROOT_PRIMITIVE TYPE="CPrimNode">
+    <ALIAS LAST_GENERATED="1"/>
+    <CHILD TYPE="CPrimZone">
+      <PT X="19997.003906" Y="-319.947723" Z="0.000000"/>
+      <PT X="19997.003906" Y="-641.147705" Z="0.000000"/>
+      <PT X="21281.804688" Y="-638.947693" Z="0.000000"/>
+      <PT X="21279.603516" Y="-319.947723" Z="0.000000" SELECTED="true"/>
+      <PROPERTY TYPE="string">
+        <NAME>alias</NAME>
+        <STRING>26956687</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>continent</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>id</NAME>
+        <STRING>indoors</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>continent_indoors</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimAlias">
+        <ALIAS VALUE="1"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+      </CHILD>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+      </CHILD>
+    </CHILD>
+  </ROOT_PRIMITIVE>
+</PRIMITIVES>

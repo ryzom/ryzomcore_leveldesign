@@ -29,7 +29,7 @@
 
 # *** ECOSYSTEM AND CONTINENT NAMES ***
 
-EcosystemName = "desert"
+EcosystemName = "jungle"
 EcosystemPath = "ecosystems/" + EcosystemName
 ContinentName = "indoors"
 ContinentPath = "continents/" + ContinentName

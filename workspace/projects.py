@@ -74,7 +74,6 @@ ProjectsToProcess += [ "continents/indoors" ] # Note: must be after other contin
 
 
 InstallShardDataDirectories = [ ]
-InstallShardDataDirectories += [ "data_mainland_common_primitives" ]
 InstallShardDataDirectories += [ "data_common" ]
 InstallShardDataDirectories += [ "data_language" ]
 InstallShardDataDirectories += [ "data_leveldesign" ]
@@ -99,6 +98,7 @@ InstallShardDataMultiDirectories += [ [ "data_r2_roots", [ ] ] ] # TODO
 # [ [ "<target_package>", [ "<source_dir>", "<source_dir>" ] ] ] target_dir under shard data, source_dir under primitives
 InstallShardDataPrimitivesDirectories = [ ]
 InstallShardDataPrimitivesDirectories += [ [ "data_game_share", [ "" ] ] ]
+InstallShardDataPrimitivesDirectories += [ [ "data_mainland_common_primitives", [ "indoors" ] ] ]
 InstallShardDataPrimitivesDirectories += [ [ "data_newbieland_primitives", [ "newbieland" ] ] ]
 
 # [ [ "<target_package>", [ "<target_executable>", "<source_executable>" ], [ "<default_config>", "<default_config>" ], [ "<data_file>", "<data_file>" ] ] ]
