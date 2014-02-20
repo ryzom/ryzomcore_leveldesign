@@ -102,7 +102,9 @@ InstallShardDataPrimitivesDirectories += [ [ "data_mainland_common_primitives", 
 InstallShardDataPrimitivesDirectories += [ [ "data_newbieland_primitives", [ "newbieland" ] ] ]
 
 # [ [ "<target_package>", [ "<target_executable>", "<source_executable>" ], [ "<default_config>", "<default_config>" ], [ "<data_file>", "<data_file>" ] ] ]
-psFileList = os.listdir(InstallDirectory + "/data_shard")
+psFileList = [ ]
+if os.path.isdir(InstallDirectory + "/data_shard"):
+	psFileList = os.listdir(InstallDirectory + "/data_shard")
 psDatasets = [ "data_shard/datasets.packed_sheets" ]
 psIOS = [ "data_shard/ios_sheets.packed_sheets" ]
 psGPMS = [ "data_shard/gpms.packed_sheets" ]
