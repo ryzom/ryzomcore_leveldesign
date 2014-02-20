@@ -56,6 +56,7 @@ ProjectsToProcess += [ "common/cfg" ]
 # Shard specific
 ProjectsToProcess += [ "shard/data_shard" ]
 ProjectsToProcess += [ "shard/data_language" ]
+ProjectsToProcess += [ "shard/data_leveldesign" ]
 
 # Ecosystem projects
 ProjectsToProcess += [ "ecosystems/desert" ]
@@ -76,14 +77,24 @@ InstallShardDataDirectories = [ ]
 InstallShardDataDirectories += [ "data_game_share" ]
 InstallShardDataDirectories += [ "data_common" ]
 InstallShardDataDirectories += [ "data_language" ]
+InstallShardDataDirectories += [ "data_leveldesign" ]
+InstallShardDataDirectories += [ "data_www" ] # TODO
 
-# [ [ "<target_package>", [ "<source_dir>", "<source_dir>" ] ] ] target_dir under shard data, source_dir under install
+# [ [ "<target_package>", [ "<source_file>", "<source_file>" ] ] ] target_package under shard data, source_file under install
+InstallShardDataFiles = [ ]
+
+# [ [ "<target_package>", [ "<source_dir>", "<source_dir>" ] ] ] target_package under shard data, source_dir under install
 InstallShardDataMultiDirectories = [ ]
 InstallShardDataMultiDirectories += [ [ "cfg", [ ] ] ]
 InstallShardDataMultiDirectories += [ [ "data_www", [ ] ] ]
 InstallShardDataMultiDirectories += [ [ "data_newbieland", [ "newbieland_ai", "newbieland_ig", "newbieland_pacs" ] ] ]
 InstallShardDataMultiDirectories += [ [ "data_indoors", [ "indoors_ai", "indoors_ig", "indoors_pacs" ] ] ]
 InstallShardDataMultiDirectories += [ [ "data_pacs_prim", [ "desert_pacs_prim", "jungle_pacs_prim", "lacustre_pacs_prim", "primes_racines_pacs_prim" ] ] ]
+InstallShardDataMultiDirectories += [ [ "data_r2_desert", [ ] ] ] # TODO
+InstallShardDataMultiDirectories += [ [ "data_r2_forest", [ ] ] ] # TODO
+InstallShardDataMultiDirectories += [ [ "data_r2_jungle", [ ] ] ] # TODO
+InstallShardDataMultiDirectories += [ [ "data_r2_lakes", [ ] ] ] # TODO
+InstallShardDataMultiDirectories += [ [ "data_r2_roots", [ ] ] ] # TODO
 
 # [ [ "<target_package>", [ "<source_dir>", "<source_dir>" ] ] ] target_dir under shard data, source_dir under primitives
 InstallShardDataPrimitivesDirectories = [ ]
