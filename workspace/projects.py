@@ -57,6 +57,7 @@ ProjectsToProcess += [ "common/cfg" ]
 ProjectsToProcess += [ "shard/data_shard" ]
 ProjectsToProcess += [ "shard/data_language" ]
 ProjectsToProcess += [ "shard/data_leveldesign" ]
+ProjectsToProcess += [ "shard/data_game_share" ]
 
 # Ecosystem projects
 ProjectsToProcess += [ "ecosystems/desert" ]
@@ -105,7 +106,7 @@ InstallShardDataPrimitivesDirectories += [ [ "data_newbieland_primitives", [ "ne
 psFileList = [ ]
 if os.path.isdir(InstallDirectory + "/data_shard"):
 	psFileList = os.listdir(InstallDirectory + "/data_shard")
-psDatasets = [ "data_shard/datasets.packed_sheets" ]
+psDatasets = [ ] # [ "data_shard/datasets.packed_sheets" ]
 psIOS = [ "data_shard/ios_sheets.packed_sheets" ]
 psGPMS = [ "data_shard/gpms.packed_sheets" ]
 psContinents = [ "data_shard/continents.packed_sheets" ]

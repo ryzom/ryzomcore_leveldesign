@@ -28,7 +28,7 @@ from buildsite import *
 import os
 
 # *** COMMON NAMES AND PATHS ***
-CommonName = "data_leveldesign"
+CommonName = "data_game_share"
 CommonPath = "shard/" + CommonName
 
 
@@ -36,16 +36,21 @@ CommonPath = "shard/" + CommonName
 
 # Copy dir directories
 CopyDirectSourceDirectories = [ ]
-CopyDirectSourceFiles = [ WorldEditorFilesDirectory + "/world_editor_classes.xml" ]
+CopyDirectSourceFiles = [ ]
+fileList = os.listdir(DataShardDirectory + "/mirror_sheets")
+for fileName in fileList:
+	if fileName != ".svn" and fileName != ".." and fileName != "." and fileName != "*.*":
+		if fileName.endswith(".dataset"):
+			CopyDirectSourceFiles += [ DataShardDirectory + "/mirror_sheets/" + fileName ]
 
 
 # *** SOURCE DIRECTORIES IN LEVELDESIGN ***
 CopyLeveldesignSourceDirectories = [ ]
-CopyLeveldesignSourceFiles = [ "game_elem/sheet_id.bin", "game_elem/localisation.localisation_table" ]
+CopyLeveldesignSourceFiles = [ ]
 CopyLeveldesignWorldSourceDirectories = [ ]
-CopyLeveldesignWorldSourceFiles = [ "ryzom.light_cycle" ]
-CopyLeveldesignDfnSourceDirectories = [ "basics", "game_elem/_item" ]
-CopyLeveldesignDfnSourceFiles = [ "game_elem/light_cycle.dfn", "game_elem/_season_light_cycle.dfn", "game_elem/localisation_table.dfn", "game_elem/_localisation_table_line.dfn" ]
+CopyLeveldesignWorldSourceFiles = [ ]
+CopyLeveldesignDfnSourceDirectories = [ ]
+CopyLeveldesignDfnSourceFiles = [ ]
 
 
 # *** SOURCE DIRECTORIES IN THE DATABASE ***
