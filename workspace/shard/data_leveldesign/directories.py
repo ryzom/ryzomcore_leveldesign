@@ -42,9 +42,9 @@ CopyDirectSourceFiles = [ WorldEditorFilesDirectory + "/world_editor_classes.xml
 # *** SOURCE DIRECTORIES IN LEVELDESIGN ***
 CopyLeveldesignSourceDirectories = [ ]
 CopyLeveldesignSourceFiles = [ "game_elem/sheet_id.bin", "game_elem/localisation.localisation_table" ]
-CopyLeveldesignWorldSourceDirectories = [ ]
-CopyLeveldesignWorldSourceFiles = [ "ryzom.light_cycle" ]
-CopyLeveldesignDfnSourceDirectories = [ "basics", "game_elem/_item" ]
+CopyLeveldesignWorldSourceDirectories = [ "" ]
+CopyLeveldesignWorldSourceFiles = [ ]
+CopyLeveldesignDfnSourceDirectories = [ "basics", "game_elem/_item", "world" ]
 CopyLeveldesignDfnSourceFiles = [ "game_elem/light_cycle.dfn", "game_elem/_season_light_cycle.dfn", "game_elem/localisation_table.dfn", "game_elem/_localisation_table_line.dfn" ]
 
 
