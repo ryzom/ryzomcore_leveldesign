@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="origin" Value="common"/>
+      <ATOM Name="family" Value="cosmetic"/>
+      <ATOM Name="ItemType" Value="Hair Color"/>
+      <ATOM Name="Drop or Sell" Value="false"/>
+      <ATOM Name="Price" Value="5000"/>
+      <ATOM Name="Consumable" Value="FALSE"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="icon" Value="ICO_Haircolor.tga"/>
+    </STRUCT>
+    <STRUCT Name="Cosmetics">
+      <ATOM Name="Visual Property Value" Value="$filename"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Nov 25 16:37:20 2004 (peloille) .basics.Drop or Sell = false
+Thu Nov 25 16:37:20 2004 (peloille) .basics.ItemType = Hair Color
+Thu Nov 25 16:37:20 2004 (peloille) .basics.Price = 5000
+Thu Nov 25 16:37:20 2004 (peloille) .basics.family = cosmetic
+Thu Nov 25 16:38:27 2004 (peloille) .3d.icon = ICO_Haircolor.tga
+Fri Nov 26 09:45:09 2004 (peloille) .Cosmetics.Visual Property Value = $filename</LOG>
+</FORM>

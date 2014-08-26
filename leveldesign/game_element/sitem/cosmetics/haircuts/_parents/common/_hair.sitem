@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="family" Value="cosmetic"/>
+      <ATOM Name="Drop or Sell" Value="false"/>
+      <ATOM Name="Saleable" Value="true"/>
+      <ATOM Name="Consumable" Value="FALSE"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="icon" Value="ICO_Haircut.tga"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Wed Nov 24 14:42:34 2004 (peloille) .basics.Consumable = true
+Wed Nov 24 14:42:34 2004 (peloille) .basics.ItemType = Hair
+Wed Nov 24 14:42:34 2004 (peloille) .basics.family = cosmetic
+Wed Nov 24 15:58:16 2004 (peloille) .basics.Drop or Sell = false
+Wed Nov 24 15:58:16 2004 (peloille) .basics.Saleable = true
+Wed Nov 24 16:05:05 2004 (peloille) .basics.Consumable = false
+Wed Nov 24 17:03:00 2004 (peloille) .3d.icon overlay = ICO_Haircut.tga
+Wed Nov 24 17:03:26 2004 (peloille) .3d.icon = ICO_Haircut.tga
+Wed Nov 24 17:03:26 2004 (peloille) .3d.icon overlay = </LOG>
+</FORM>

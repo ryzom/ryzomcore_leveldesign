@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.3 $" State="modified">
+  <PARENT Filename="_zo_hair_style.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="origin" Value="zorai"/>
+      <ATOM Name="family" Value="cosmetic"/>
+      <ATOM Name="ItemType" Value="HairFemale"/>
+      <ATOM Name="Price" Value="20000"/>
+      <ATOM Name="Consumable" Value="FALSE"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="ZO_HOF_cheveux_medium01.shape"/>
+      <ATOM Name="shape_female" Value="ZO_HOF_cheveux_medium01.shape"/>
+      <ATOM Name="icon" Value="ICO_Haircut.tga"/>
+      <ATOM Name="icon background" Value="BK_zorai.tga"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Tue Nov 30 12:30:35 2004 (tran) .3d.shape_female = ZO_HOF_cheveux_medium01.shape</LOG>
+</FORM>

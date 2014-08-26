@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_fy_hair_artistic.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="origin" Value="fyros"/>
+      <ATOM Name="family" Value="cosmetic"/>
+      <ATOM Name="ItemType" Value="HairMale"/>
+      <ATOM Name="Price" Value="30000"/>
+      <ATOM Name="Consumable" Value="FALSE"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="FY_HOM_cheveux_long02.shape"/>
+      <ATOM Name="icon" Value="ICO_Haircut.tga"/>
+      <ATOM Name="icon background" Value="BK_fyros.tga"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Fri Nov 26 11:35:29 2004 (peloille) .basics.ItemType = HairMale</LOG>
+</FORM>
