@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="origin" Value="common"/>
+      <ATOM Name="family" Value="cosmetic"/>
+      <ATOM Name="ItemType" Value="Tatoo"/>
+      <ATOM Name="Saleable" Value="false"/>
+      <ATOM Name="Price" Value="10000"/>
+      <ATOM Name="Consumable" Value="FALSE"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="icon" Value="ICO_Tatoo.tga"/>
+    </STRUCT>
+    <STRUCT Name="Cosmetics">
+      <ATOM Name="Visual Property Value" Value="$filename"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Fri Nov 26 10:58:04 2004 (peloille) .Cosmetics.Visual Property Value = $filename
+Wed Dec 08 16:48:48 2004 (peloille) .basics.Saleable = false</LOG>
+</FORM>

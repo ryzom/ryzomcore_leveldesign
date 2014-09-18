@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.9 $" State="modified">
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="axe"/>
+      <ATOM Name="family" Value="melee weapon"/>
+      <ATOM Name="ItemType" Value="Axe"/>
+      <STRUCT Name="EquipmentInfo">
+        <ARRAY Name="EquipmentSlots">
+          <ATOM Name="right hand" Value="Right Hand"/>
+        </ARRAY>
+        <ATOM Name="WearEquipmentMalus" Value="0.3"/>
+      </STRUCT>
+      <ATOM Name="Bulk" Value="10"/>
+      <ATOM Name="Time to Equip In Ticks" Value="20"/>
+      <ATOM Name="RequiredCharac" Value="Strength"/>
+      <ATOM Name="RequiredCharacQualityFactor" Value="1"/>
+      <ATOM Name="RequiredCharacQualityOffset" Value="-10"/>
+    </STRUCT>
+    <STRUCT Name="melee weapon">
+      <ATOM Name="category" Value="medium"/>
+      <ATOM Name="skill" Value="SFM1SAM"/>
+      <ATOM Name="damage type" Value="Slashing"/>
+    </STRUCT>
+    <STRUCT Name="crafting tool">
+      <ATOM Name="type" Value="Sharpener"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="icon" Value="MW_axe.tga"/>
+      <ATOM Name="anim_set" Value="1H"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Aug 22 20:03:18 2002 (receveur) .basics.name = axe
+Thu Aug 22 20:03:49 2002 (receveur) .melee weapon.category = medium
+Thu Aug 22 20:03:49 2002 (receveur) .melee weapon.damage type = Slashing
+Thu Aug 22 20:03:49 2002 (receveur) .melee weapon.skill = Axe
+Thu Aug 22 20:04:25 2002 (receveur) .melee weapon.latency = 6
+Thu Aug 22 20:04:25 2002 (receveur) .melee weapon.rate of fire = 2
+Thu Aug 22 20:09:43 2002 (receveur) .basics.quality level = $filename
+Tue Aug 27 14:55:43 2002 (wuibout) .3d.icon = MW_axe.tga
+Thu Oct 03 15:18:57 2002 (receveur) .basics.weight = heavy
+Thu Dec 12 11:58:57 2002 (favre) formName Pasted = 
+Fri Jan 03 15:55:08 2003 (receveur) .melee weapon.skill = axe
+Thu Feb 20 18:04:12 2003 (favre) .faber.Career = faber
+Thu Feb 20 18:04:12 2003 (favre) .faber.Skill = make melee weapons
+Thu Feb 20 18:04:12 2003 (favre) .faber.Specialization = make axe
+Wed Feb 26 17:38:17 2003 (favre) .faber.Tool type = Sharpener
+Wed Feb 26 17:38:23 2003 (favre) .crafting tool.type = Sharpener
+Thu Feb 27 17:21:21 2003 (receveur) .faber.Create.MP 2 = yellow_amber.item
+Thu Feb 27 17:22:17 2003 (receveur) .faber.Create.MP 1 = desert_pod.item
+Mon Mar 03 15:28:59 2003 (receveur) .melee weapon.latency = 
+Mon Mar 03 15:28:59 2003 (receveur) .melee weapon.rate of fire = 
+Thu Sep 18 18:57:46 2003 (coutelas) .AsBrick.Basics.FamilyId = RootFaber
+Fri Sep 19 10:35:25 2003 (coutelas) .basics.ItemType = Axe
+Fri Sep 19 10:35:25 2003 (coutelas) .basics.family = melee weapon
+Fri Sep 19 10:39:19 2003 (coutelas) .faber.Create.MP 1 = Raw Material for Blade
+Fri Sep 19 10:39:19 2003 (coutelas) .faber.Create.MP 2 = Raw Material for Shaft
+Fri Sep 19 10:39:19 2003 (coutelas) .faber.Create.MP 2 Property = Stiff
+Fri Sep 19 10:39:19 2003 (coutelas) .faber.Create.MP 3 = Raw Material for Grip
+Fri Sep 19 10:39:19 2003 (coutelas) .faber.Create.MP 3 Property = Grip
+Fri Sep 19 10:39:19 2003 (coutelas) .faber.Create.MP 4 = Raw Material for Counterweight
+Fri Sep 19 10:39:19 2003 (coutelas) .faber.Create.MP 4 Property = Dense
+Fri Sep 19 10:39:19 2003 (coutelas) .faber.Create.Quantity 1 = 1
+Fri Sep 19 10:39:19 2003 (coutelas) .faber.Create.Quantity 2 = 1
+Fri Sep 19 10:39:19 2003 (coutelas) .faber.Create.Quantity 3 = 1
+Fri Sep 19 10:39:19 2003 (coutelas) .faber.Create.Quantity 4 = 1
+Fri Sep 19 10:51:34 2003 (coutelas) .AsBrick.Client.Icon = MW_axe.tga
+Fri Sep 19 11:39:40 2003 (coutelas) .AsBrick.Client.IconOver = item_plan_over.tga
+Tue Sep 23 17:18:41 2003 (coutelas) .faber.Skill = craft
+Fri Jan 30 11:11:10 2004 (coutelas) .basics.Bulk = 20
+Fri Feb 06 17:30:01 2004 (coutelas) .basics.Time to Equip In Ticks = 20
+Thu Apr 21 14:32:53 2005 (peloille) .basics.RequiredCharac = Strength
+Thu Apr 21 14:32:53 2005 (peloille) .basics.RequiredCharacQualityFactor = 1
+Thu Apr 21 14:32:53 2005 (peloille) .basics.RequiredCharacQualityOffset = -10</LOG>
+</FORM>

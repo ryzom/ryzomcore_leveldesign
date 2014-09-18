@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_haircolor.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="origin" Value="matis"/>
+      <ATOM Name="family" Value="cosmetic"/>
+      <ATOM Name="ItemType" Value="HairColorMale"/>
+      <ATOM Name="Price" Value="5000"/>
+      <ATOM Name="Consumable" Value="FALSE"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="icon" Value="ICO_Haircolor.tga"/>
+      <ATOM Name="icon background" Value="BK_matis.tga"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+</FORM>

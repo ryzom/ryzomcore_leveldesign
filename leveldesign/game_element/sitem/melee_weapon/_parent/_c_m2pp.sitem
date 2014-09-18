@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.11 $" State="modified">
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="pike"/>
+      <ATOM Name="family" Value="melee weapon"/>
+      <ATOM Name="ItemType" Value="Pike"/>
+      <STRUCT Name="EquipmentInfo">
+        <ARRAY Name="EquipmentSlots">
+          <ATOM Name="two_hands" Value="Two Hands"/>
+        </ARRAY>
+        <ATOM Name="WearEquipmentMalus" Value="0.5"/>
+      </STRUCT>
+      <ATOM Name="Bulk" Value="15"/>
+      <ATOM Name="Time to Equip In Ticks" Value="30"/>
+      <ATOM Name="RequiredCharac" Value="Strength"/>
+      <ATOM Name="RequiredCharacQualityFactor" Value="1"/>
+      <ATOM Name="RequiredCharacQualityOffset" Value="-10"/>
+    </STRUCT>
+    <STRUCT Name="melee weapon">
+      <ATOM Name="category" Value="Heavy"/>
+      <ATOM Name="skill" Value="SFM2PPM"/>
+      <ATOM Name="damage type" Value="Piercing"/>
+      <ATOM Name="latency" Value="6"/>
+      <ATOM Name="melee range" Value="20"/>
+    </STRUCT>
+    <STRUCT Name="crafting tool">
+      <ATOM Name="type" Value="Sharpener"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="icon" Value="MW_2h_lance.tga"/>
+      <ATOM Name="anim_set" Value="2HLance"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Aug 22 20:07:12 2002 (receveur) .basics.name = pike
+Thu Aug 22 20:07:30 2002 (receveur) .melee weapon.category = Heavy
+Thu Aug 22 20:07:30 2002 (receveur) .melee weapon.skill = Pike
+Thu Aug 22 20:07:40 2002 (receveur) .melee weapon.damage type = Piercing
+Thu Aug 22 20:07:40 2002 (receveur) .melee weapon.latency = 6
+Thu Aug 22 20:07:40 2002 (receveur) .melee weapon.rate of fire = 2
+Thu Aug 22 20:09:30 2002 (receveur) .basics.quality level = $filename
+Tue Aug 27 14:56:07 2002 (wuibout) .3d.icon = MW_2h_lance.tga
+Thu Oct 03 15:20:11 2002 (receveur) .basics.weight = middle
+Thu Oct 03 15:20:23 2002 (receveur) .basics.hit points = very low
+Fri Oct 25 10:57:56 2002 (mauduit) .3d.anim_set = 2HLance
+Thu Dec 12 11:51:17 2002 (favre) formName Pasted = 
+Fri Jan 03 15:56:02 2003 (receveur) .melee weapon.skill = pike
+Thu Feb 20 18:08:54 2003 (favre) .faber.Career = faber
+Thu Feb 20 18:08:54 2003 (favre) .faber.Skill = make two_hands melee weapons
+Thu Feb 20 18:08:54 2003 (favre) .faber.Specialization = make pike
+Wed Feb 26 17:36:32 2003 (favre) .faber.Tool type = Sharpener
+Wed Feb 26 17:36:40 2003 (favre) .crafting tool.type = Sharpener
+Thu Feb 27 17:05:43 2003 (receveur) .faber.Create.MP 1 = desert_branch.item
+Thu Feb 27 17:06:14 2003 (receveur) .faber.Create.Quantity 1 = 6
+Thu Feb 27 17:06:14 2003 (receveur) .faber.Create.Quantity 2 = 5
+Thu Feb 27 17:06:38 2003 (receveur) .faber.Create.MP 2 = sea_clay.item
+Mon Mar 03 15:29:37 2003 (receveur) .melee weapon.latency = 4
+Mon Mar 03 15:29:37 2003 (receveur) .melee weapon.rate of fire = 
+Thu May 29 16:05:53 2003 (fleury) .melee weapon.latency = 6
+Thu Sep 18 14:10:54 2003 (coutelas) .basics.ItemType = Pike
+Thu Sep 18 14:10:54 2003 (coutelas) .basics.family = melee weapon
+Thu Sep 18 14:12:03 2003 (coutelas) .faber.Create.MP 1 = Raw Material for Point
+Thu Sep 18 14:12:03 2003 (coutelas) .faber.Create.MP 2 = Raw Material for Shaft
+Thu Sep 18 14:12:03 2003 (coutelas) .faber.Create.MP 2 Property = Stiff
+Thu Sep 18 14:12:03 2003 (coutelas) .faber.Create.MP 3 = Raw Material for Grip
+Thu Sep 18 14:12:03 2003 (coutelas) .faber.Create.MP 3 Property = Grip
+Thu Sep 18 14:12:03 2003 (coutelas) .faber.Create.Quantity 1 = 1
+Thu Sep 18 14:12:03 2003 (coutelas) .faber.Create.Quantity 2 = 1
+Thu Sep 18 14:12:03 2003 (coutelas) .faber.Create.Quantity 3 = 1
+Thu Sep 18 14:12:22 2003 (coutelas) .AsBrick.Client.Icon = MW_2h_lance.tga
+Thu Sep 18 18:58:04 2003 (coutelas) .AsBrick.Basics.FamilyId = RootFaber
+Fri Sep 19 11:39:58 2003 (coutelas) .AsBrick.Client.IconOver = item_plan_over.tga
+Tue Sep 23 17:19:05 2003 (coutelas) .faber.Skill = craft
+Fri Jan 30 11:10:27 2004 (coutelas) .basics.Bulk = 30
+Fri Feb 06 17:28:54 2004 (coutelas) .basics.Time to Equip In Ticks = 3
+Mon May 10 17:22:50 2004 (coutelas) .melee weapon.melee range = 15
+Thu Apr 21 14:31:49 2005 (peloille) .basics.RequiredCharac = Strength
+Thu Apr 21 14:31:49 2005 (peloille) .basics.RequiredCharacQualityFactor = 1
+Thu Apr 21 14:31:49 2005 (peloille) .basics.RequiredCharacQualityOffset = -10</LOG>
+</FORM>
