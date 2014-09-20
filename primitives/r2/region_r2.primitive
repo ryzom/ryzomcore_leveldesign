@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<PRIMITIVES VERSION="1">
+  <ROOT_PRIMITIVE TYPE="CPrimNode">
+    <ALIAS LAST_GENERATED="4"/>
+    <PROPERTY TYPE="string">
+      <NAME>name</NAME>
+      <STRING>Region_r2.primitive</STRING>
+    </PROPERTY>
+    <PROPERTY TYPE="string">
+      <NAME>path</NAME>
+      <STRING>\\Davidb\data_leveldesign\primitives\r2\region_r2.primitive</STRING>
+    </PROPERTY>
+    <CHILD TYPE="CPrimZone">
+      <PT X="40959.000000" Y="-20800.000000" Z="0.000000"/>
+      <PT X="30960.000000" Y="-20800.000000" Z="0.000000"/>
+      <PT X="30960.000000" Y="-30799.000000" Z="0.000000"/>
+      <PT X="40959.000000" Y="-30799.000000" Z="0.000000"/>
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>continent</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>hidden</NAME>
+        <STRING></STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>id</NAME>
+        <STRING>r2_roots</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>continent_r2_roots</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>sheet</NAME>
+        <STRING>r2_roots</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+      </CHILD>
+      <CHILD TYPE="CPrimAlias">
+        <ALIAS VALUE="1"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+      </CHILD>
+    </CHILD>
+    <CHILD TYPE="CPrimZone">
+      <PT X="30959.000000" Y="-800.000000" Z="0.000000"/>
+      <PT X="20960.000000" Y="-800.000000" Z="0.000000"/>
+      <PT X="20960.000000" Y="-10799.000000" Z="0.000000"/>
+      <PT X="30959.000000" Y="-10799.000000" Z="0.000000"/>
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>continent</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>hidden</NAME>
+        <STRING></STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>id</NAME>
+        <STRING>r2_desert</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>continent_r2_desert</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>sheet</NAME>
+        <STRING>r2_desert</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+      </CHILD>
+      <CHILD TYPE="CPrimAlias">
+        <ALIAS VALUE="1"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+      </CHILD>
+    </CHILD>
+    <CHILD TYPE="CPrimZone">
+      <PT X="40959.000000" Y="-800.000000" Z="0.000000"/>
+      <PT X="30960.000000" Y="-800.000000" Z="0.000000"/>
+      <PT X="30960.000000" Y="-10799.000000" Z="0.000000"/>
+      <PT X="40959.000000" Y="-10799.000000" Z="0.000000"/>
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>continent</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>hidden</NAME>
+        <STRING></STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>id</NAME>
+        <STRING>r2_lakes</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>continent_r2_lakes</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>sheet</NAME>
+        <STRING>r2_lakes</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+      </CHILD>
+      <CHILD TYPE="CPrimAlias">
+        <ALIAS VALUE="2"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+      </CHILD>
+    </CHILD>
+    <CHILD TYPE="CPrimZone">
+      <PT X="30959.000000" Y="-10800.000000" Z="0.000000"/>
+      <PT X="20960.000000" Y="-10800.000000" Z="0.000000"/>
+      <PT X="20960.000000" Y="-20799.000000" Z="0.000000"/>
+      <PT X="30959.000000" Y="-20799.000000" Z="0.000000"/>
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>continent</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>hidden</NAME>
+        <STRING></STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>id</NAME>
+        <STRING>r2_forest</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>continent_r2_forest</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>sheet</NAME>
+        <STRING>r2_forest</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+      </CHILD>
+      <CHILD TYPE="CPrimAlias">
+        <ALIAS VALUE="3"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+      </CHILD>
+    </CHILD>
+    <CHILD TYPE="CPrimZone">
+      <PT X="40959.000000" Y="-10800.000000" Z="0.000000"/>
+      <PT X="30960.000000" Y="-10800.000000" Z="0.000000"/>
+      <PT X="30960.000000" Y="-20799.000000" Z="0.000000"/>
+      <PT X="40959.000000" Y="-20799.000000" Z="0.000000"/>
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>continent</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>hidden</NAME>
+        <STRING></STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>id</NAME>
+        <STRING>r2_jungle</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>continent_r2_jungle</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>sheet</NAME>
+        <STRING>r2_jungle</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+      </CHILD>
+      <CHILD TYPE="CPrimAlias">
+        <ALIAS VALUE="4"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+      </CHILD>
+    </CHILD>
+  </ROOT_PRIMITIVE>
+</PRIMITIVES>
