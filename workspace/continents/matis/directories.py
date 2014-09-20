@@ -58,13 +58,13 @@ MapUncompressedSourceDirectories = [ ]
 # Shape lookup directories used by rbank
 ShapeLookupDirectories = [ ]
 ShapeLookupDirectories += [ "common/sfx/ps" ]
-ShapeLookupDirectories += [ "common/sfx/shape_clodtex_build" ]
+ShapeLookupDirectories += [ "common/sfx/shape_optimized" ]
 ShapeLookupDirectories += [ "common/sfx/shape_with_coarse_mesh" ]
-ShapeLookupDirectories += [ "common/construction/shape_clodtex_build" ]
+ShapeLookupDirectories += [ "common/construction/shape_optimized" ]
 ShapeLookupDirectories += [ "common/construction/shape_with_coarse_mesh" ]
-ShapeLookupDirectories += [ EcosystemPath + "/shape_clodtex_build" ]
+ShapeLookupDirectories += [ EcosystemPath + "/shape_optimized" ]
 ShapeLookupDirectories += [ EcosystemPath + "/shape_with_coarse_mesh" ]
-ShapeLookupDirectories += [ ContinentPath + "/shape_clodtex_build" ]
+ShapeLookupDirectories += [ ContinentPath + "/shape_optimized" ]
 ShapeLookupDirectories += [ ContinentPath + "/shape_with_coarse_mesh" ]
 # ShapeLookupDirectories += [ ContinentName + "/zone_light/water_shapes_lighted" ] huh?
 
@@ -106,6 +106,7 @@ MapTagBuildDirectory = CommonPath + "/map_tag"
 
 # Shape directories
 ShapeClodtexBuildDirectory = CommonPath + "/shape_clodtex_build"
+ShapeOptimizedBuildDirectory = CommonPath + "/shape_optimized"
 ShapeWithCoarseMeshBuildDirectory = CommonPath + "/shape_with_coarse_mesh_builded"
 ShapeLightmapBuildDirectory = CommonPath + "/shape_lightmap"
 ShapeLightmap16BitsBuildDirectory = CommonPath + "/shape_lightmap_16_bits"

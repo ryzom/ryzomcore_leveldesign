@@ -94,10 +94,10 @@ LandscapeName = ""
 # *** LIGO OPTIONS ***
 LigoExportLand = ""
 LigoExportOnePass = 0
-LigoExportColormap = "colormap_invalid.png"
-LigoExportHeightmap1 = "big_invalid.png"
+LigoExportColormap = "colormap_invalid.tga"
+LigoExportHeightmap1 = "big_invalid.tga"
 LigoExportZFactor1 = "1.0"
-LigoExportHeightmap2 = "noise_invalid.png"
+LigoExportHeightmap2 = "noise_invalid.tga"
 LigoExportZFactor2 = "0.5"
 LigoTileBankFile = ""
 

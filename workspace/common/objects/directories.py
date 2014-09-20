@@ -64,7 +64,7 @@ IgLookupDirectories = [ ]
 # Shape lookup directories used by rbank
 ShapeLookupDirectories = [ ]
 # ShapeLookupDirectories += [ CommonPath + "/ps" ]
-ShapeLookupDirectories += [ CommonPath + "/shape_clodtex_build" ]
+ShapeLookupDirectories += [ CommonPath + "/shape_optimized" ]
 ShapeLookupDirectories += [ CommonPath + "/shape_with_coarse_mesh" ]
 
 # Map lookup directories not yet used
@@ -99,6 +99,7 @@ MapTagBuildDirectory = CommonPath + "/map_tag"
 
 # Shape directories
 ShapeClodtexBuildDirectory = CommonPath + "/shape_clodtex_build"
+ShapeOptimizedBuildDirectory = CommonPath + "/shape_optimized"
 ShapeWithCoarseMeshBuildDirectory = CommonPath + "/shape_with_coarse_mesh_builded"
 ShapeLightmapBuildDirectory = CommonPath + "/shape_lightmap"
 ShapeLightmap16BitsBuildDirectory = CommonPath + "/shape_lightmap_16_bits"

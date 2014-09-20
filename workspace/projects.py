@@ -69,6 +69,13 @@ ProjectsToProcess += [ "continents/fyros" ] # Note: dummy for shape and map expo
 ProjectsToProcess += [ "continents/matis" ] # Note: dummy for shape and map export
 ProjectsToProcess += [ "continents/zorai" ] # Note: dummy for shape and map export
 ProjectsToProcess += [ "continents/tryker" ] # Note: dummy for shape and map export
+# ProjectsToProcess += [ "continents/fyros_newbie" ] # Depends on continents/fyros
+# ProjectsToProcess += [ "continents/tryker_newbie" ] # Depends on continents/tryker
+ProjectsToProcess += [ "continents/r2_desert" ] # Depends on continents/fyros
+# ProjectsToProcess += [ "continents/r2_forest" ] # Depends on continents/tryker
+# ProjectsToProcess += [ "continents/r2_jungle" ] # Depends on continents/tryker
+# ProjectsToProcess += [ "continents/r2_lakes" ] # Depends on continents/tryker
+# ProjectsToProcess += [ "continents/r2_roots" ] # Depends on continents/tryker
 ProjectsToProcess += [ "continents/newbieland" ] # Note: must be after other continents due to dependencies on fy/ma/zo/tr
 ProjectsToProcess += [ "continents/indoors" ] # Note: must be after other continents due to dependencies on fy/ma/zo/tr
 
@@ -89,7 +96,7 @@ InstallShardDataMultiDirectories += [ [ "data_www", [ ] ] ]
 InstallShardDataMultiDirectories += [ [ "data_newbieland", [ "newbieland_ai", "newbieland_ig", "newbieland_pacs" ] ] ]
 InstallShardDataMultiDirectories += [ [ "data_indoors", [ "indoors_ai", "indoors_ig", "indoors_pacs" ] ] ]
 InstallShardDataMultiDirectories += [ [ "data_pacs_prim", [ "desert_pacs_prim", "jungle_pacs_prim", "lacustre_pacs_prim", "primes_racines_pacs_prim" ] ] ]
-InstallShardDataMultiDirectories += [ [ "data_r2_desert", [ ] ] ] # TODO
+InstallShardDataMultiDirectories += [ [ "data_r2_desert", [ "r2_desert_ai", "r2_desert_ig", "r2_desert_pacs" ] ] ]
 InstallShardDataMultiDirectories += [ [ "data_r2_forest", [ ] ] ] # TODO
 InstallShardDataMultiDirectories += [ [ "data_r2_jungle", [ ] ] ] # TODO
 InstallShardDataMultiDirectories += [ [ "data_r2_lakes", [ ] ] ] # TODO
@@ -125,8 +132,12 @@ InstallShardDataExecutables = [ ]
 InstallShardDataExecutables += [ [ "service_ryzom_admin_service", [ "ryzom_admin_service", "ryzom_admin_service" ], [ "ryzom_as.cfg" ], [ ] ] ]
 InstallShardDataExecutables += [ [ "service_shard_unifier_service", [ "shard_unifier_service", "ryzom_shard_unifier_service" ], [ "shard_unifier_service.cfg" ], [ "data_shard/reserved_names.xml", "data_shard/dev_gm_names.xml", "data_shard/invalid_entity_names.txt" ] ] ]
 InstallShardDataExecutables += [ [ "service_mail_forum_service", [ "mail_forum_service", "ryzom_mail_forum_service" ], [ "mail_forum_service.cfg" ], [ ] ] ]
+# Backup
 InstallShardDataExecutables += [ [ "service_logger_service", [ "logger_service", "ryzom_logger_service" ], [ "logger_service.cfg" ], [ ] ] ]
 InstallShardDataExecutables += [ [ "service_backup_service", [ "backup_service", "ryzom_backup_service" ], [ "backup_service.cfg" ], [ ] ] ]
+InstallShardDataExecutables += [ [ "service_pd_support_service", [ "pd_support_service", "ryzom_pd_support_service" ], [ ], [ ] ] ]
+# LAS
+# InstallShardDataExecutables += [ [ "service_log_analyser_service", [ "log_analyser_service", "ryzom_log_analyser_service" ], [ "log_analyser_service.cfg" ], [ ] ] ]
 # Mainland
 InstallShardDataExecutables += [ [ "service_ryzom_naming_service", [ "ryzom_naming_service", "ryzom_naming_service" ], [ "naming_service.cfg" ], [ ] ] ]
 InstallShardDataExecutables += [ [ "service_ryzom_welcome_service", [ "ryzom_welcome_service", "ryzom_welcome_service" ], [ "welcome_service.cfg" ], [ ] ] ]
@@ -136,8 +147,17 @@ InstallShardDataExecutables += [ [ "service_input_output_service", [ "input_outp
 InstallShardDataExecutables += [ [ "service_gpm_service", [ "gpm_service", "ryzom_gpm_service" ], [ "gpm_service.cfg" ], [ ] + psDatasets + psGPMS + psContinents ] ]
 InstallShardDataExecutables += [ [ "service_session_browser_server", [ "session_browser_server", "ryzom_session_browser_service" ], [ ], [ ] ] ]
 InstallShardDataExecutables += [ [ "service_entities_game_service", [ "entities_game_service", "ryzom_entities_game_service" ], [ "entities_game_service.cfg" ], [ "data_shard/shop_category.cfg", "data_shard/client_commands_privileges.txt", "data_shard/named_items.txt", "data_shard/mission_queues.txt", "data_shard/game_event.txt" ] + psEGS + psDatasets + psLightCycles ] ]
-InstallShardDataExecutables += [ [ "service_ai_service", [ "ai_service", "ryzom_ai_service" ], [ "ai_service.cfg" ], [ "data_shard/shop_category.cfg" ] + psAIS + psDatasets + psLightCycles ] ]
+InstallShardDataExecutables += [ [ "service_ai_service", [ "ai_service", "ryzom_ai_service" ], [ "ai_service.cfg" ], [ ] + psAIS + psDatasets + psLightCycles ] ]
 InstallShardDataExecutables += [ [ "service_frontend_service", [ "frontend_service", "ryzom_frontend_service" ], [ "frontend_service.cfg" ], [ ] + psDatasets ] ]
+# Ring
+InstallShardDataExecutables += [ [ "service_dynamic_scenario_service", [ "dynamic_scenario_service", "ryzom_dynamic_scenario_service" ], [ "dynamic_scenario_service.cfg" ], [ ] ] ]
+
+
+WorldEditEcosystems = [ ]
+WorldEditEcosystems += [ [ "desert", [ "r2_desert" ] ] ]
+WorldEditEcosystems += [ [ "jungle", [ "indoors", "newbieland" ] ] ]
+WorldEditEcosystems += [ [ "primes_racines", [ ] ] ]
+WorldEditEcosystems += [ [ "lacustre", [ ] ] ]
 
 
 InstallClientData = [ ]

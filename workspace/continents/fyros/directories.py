@@ -46,17 +46,17 @@ ContinentLeveldesignWorldDirectory = ContinentName
 # Shape directories
 ShapeSourceDirectories = [ ]
 ShapeSourceDirectories += [ "stuff/fyros/decors/constructions" ]
+ShapeSourceDirectories += [ "stuff/" + ContinentName + "/sky" ]
+ShapeSourceDirectories += [ "landscape/water/meshes/" + EcosystemName ]
 ShapeSourceDirectories += [ "stuff/fyros/city" ]
-ShapeSourceDirectories += [ "stuff/fyros/sky" ]
-ShapeSourceDirectories += [ "landscape/water/meshes/desert" ]
 ShapeSourceDirectories += [ "stuff/fyros/decors/constructions/fy_cn_mairie" ]
 
 # Maps directories
 MapSourceDirectories = [ ]
 MapSourceDirectories += [ "stuff/fyros/decors/_textures/batiments" ]
+MapSourceDirectories += [ "stuff/" + ContinentName + "/sky" ]
+MapSourceDirectories += [ "landscape/water/meshes/" + EcosystemName ]
 MapSourceDirectories += [ "stuff/fyros/city/_textures" ]
-MapSourceDirectories += [ "stuff/fyros/sky" ]
-MapSourceDirectories += [ "landscape/water/meshes/desert" ]
 MapUncompressedSourceDirectories = [ ]
 
 
@@ -65,15 +65,17 @@ MapUncompressedSourceDirectories = [ ]
 # Shape lookup directories used by rbank
 ShapeLookupDirectories = [ ]
 ShapeLookupDirectories += [ "common/sfx/ps" ]
-ShapeLookupDirectories += [ "common/sfx/shape_clodtex_build" ]
+ShapeLookupDirectories += [ "common/sfx/shape_optimized" ]
 ShapeLookupDirectories += [ "common/sfx/shape_with_coarse_mesh" ]
-ShapeLookupDirectories += [ "common/construction/shape_clodtex_build" ]
+ShapeLookupDirectories += [ "common/construction/shape_optimized" ]
 ShapeLookupDirectories += [ "common/construction/shape_with_coarse_mesh" ]
-ShapeLookupDirectories += [ EcosystemPath + "/shape_clodtex_build" ]
+ShapeLookupDirectories += [ EcosystemPath + "/shape_optimized" ]
 ShapeLookupDirectories += [ EcosystemPath + "/shape_with_coarse_mesh" ]
-ShapeLookupDirectories += [ ContinentPath + "/shape_clodtex_build" ]
+ShapeLookupDirectories += [ ContinentPath + "/shape_optimized" ]
 ShapeLookupDirectories += [ ContinentPath + "/shape_with_coarse_mesh" ]
 # ShapeLookupDirectories += [ ContinentName + "/zone_light/water_shapes_lighted" ] huh?
+ShapeLookupDirectories += [ "ecosystems/lacustre/shape_optimized" ] # additional
+ShapeLookupDirectories += [ "ecosystems/lacustre/shape_with_coarse_mesh" ] # additional
 
 # Map lookup directories used by shape
 MapLookupDirectories = [ ]
@@ -85,6 +87,8 @@ MapLookupDirectories += [ EcosystemPath + "/map_export" ]
 MapLookupDirectories += [ EcosystemPath + "/map_uncompressed" ]
 MapLookupDirectories += [ ContinentPath + "/map_export" ]
 MapLookupDirectories += [ ContinentPath + "/map_uncompressed" ]
+MapLookupDirectories += [ "ecosystems/lacustre/map_export" ] # additional
+MapLookupDirectories += [ "ecosystems/lacustre/map_uncompressed" ] # additional
 
 
 # *** EXPORT DIRECTORIES FOR THE BUILD PIPELINE ***
@@ -113,6 +117,7 @@ MapTagBuildDirectory = CommonPath + "/map_tag"
 
 # Shape directories
 ShapeClodtexBuildDirectory = CommonPath + "/shape_clodtex_build"
+ShapeOptimizedBuildDirectory = CommonPath + "/shape_optimized"
 ShapeWithCoarseMeshBuildDirectory = CommonPath + "/shape_with_coarse_mesh_builded"
 ShapeLightmapBuildDirectory = CommonPath + "/shape_lightmap"
 ShapeLightmap16BitsBuildDirectory = CommonPath + "/shape_lightmap_16_bits"

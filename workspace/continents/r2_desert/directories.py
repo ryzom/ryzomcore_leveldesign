@@ -29,9 +29,9 @@
 
 # *** ECOSYSTEM AND CONTINENT NAMES ***
 
-EcosystemName = "jungle"
+EcosystemName = "desert"
 EcosystemPath = "ecosystems/" + EcosystemName
-ContinentName = "indoors"
+ContinentName = "r2_desert"
 ContinentPath = "continents/" + ContinentName
 CommonName = ContinentName
 CommonPath = ContinentPath
@@ -45,22 +45,11 @@ ContinentLeveldesignWorldDirectory = ContinentName
 
 # Shape directories
 ShapeSourceDirectories = [ ]
-ShapeSourceDirectories += [ "stuff/fyros/decors/constructions/fy_cn_appart_joueur" ]
-ShapeSourceDirectories += [ "stuff/fyros/decors/constructions/fy_cn_hall_conseil" ]
-ShapeSourceDirectories += [ "stuff/fyros/decors/constructions/fy_cn_hall_reunion_vitrine" ]
-ShapeSourceDirectories += [ "stuff/fyros/decors/constructions/fy_cn_salle_npc" ]
-ShapeSourceDirectories += [ "stuff/matis/decors/constructions/appart_joueur" ]
-ShapeSourceDirectories += [ "stuff/matis/decors/constructions/hall_du_conseil" ]
-ShapeSourceDirectories += [ "stuff/matis/decors/constructions/hall_vitrine_hall_reunion" ]
-ShapeSourceDirectories += [ "stuff/matis/decors/constructions/salle_npc" ]
-ShapeSourceDirectories += [ "stuff/tryker/decors/constructions/hall_conseil" ]
-ShapeSourceDirectories += [ "stuff/tryker/decors/constructions/hall_vitrine_reunion" ]
-ShapeSourceDirectories += [ "stuff/tryker/decors/constructions/piece_npc" ]
-ShapeSourceDirectories += [ "stuff/tryker/decors/constructions/tr_appart" ]
-ShapeSourceDirectories += [ "stuff/zorai/decors/constructions/appart_joueur" ]
-ShapeSourceDirectories += [ "stuff/zorai/decors/constructions/hall_conseil" ]
-ShapeSourceDirectories += [ "stuff/zorai/decors/constructions/hall_reunion_vitrine" ]
-ShapeSourceDirectories += [ "stuff/zorai/decors/constructions/salle_npc" ]
+
+# Maps directories
+MapSourceDirectories = [ ]
+
+MapUncompressedSourceDirectories = [ ]
 
 # Ligo directories
 LigoBaseSourceDirectory = "landscape/ligo/" + EcosystemName
@@ -69,17 +58,19 @@ LigoMaxSourceDirectory = LigoBaseSourceDirectory + "/max"
 # Zone directories
 ZoneSourceDirectory = [ "landscape/zones/" + ContinentName ] # For old snowballs style landscape when not using ligo
 
-# Ig directories
-IgLandSourceDirectories = [ ]
-IgOtherSourceDirectories = [ ]
-for dir in ShapeSourceDirectories:
-	IgOtherSourceDirectories += [ dir ]
-IgPrimitiveSourceDirectories = [ ]
+# ZoneLight directories
+WaterMapSourceDirectories = [ ]
+WaterMapSourceDirectories += [ "landscape/water/meshes/" + EcosystemName ]
 
 # RBank directories
 RBankCmbSourceDirectories = [ ]
-for dir in ShapeSourceDirectories:
-	RBankCmbSourceDirectories += [ dir ]
+
+# Ig directories
+IgLandSourceDirectories = [ ]
+# IgLandSourceDirectories += [ "landscape/zones/" + ContinentName ] # For old snowballs style landscape when not using ligo
+IgOtherSourceDirectories = [ ]
+IgPrimitiveSourceDirectories = [ ]
+IgPrimitiveSourceDirectories += [ "primitive/" + ContinentName ] # Contains plants (trees, etc) primitive made with world editor
 
 # Tiles root directory
 TileRootSourceDirectory = "landscape/_texture_tiles/" + EcosystemName
@@ -106,60 +97,48 @@ ShapeLookupDirectories += [ "common/sfx/shape_optimized" ]
 ShapeLookupDirectories += [ "common/sfx/shape_with_coarse_mesh" ]
 ShapeLookupDirectories += [ "common/construction/shape_optimized" ]
 ShapeLookupDirectories += [ "common/construction/shape_with_coarse_mesh" ]
-ShapeLookupDirectories += [ "ecosystems/desert/shape_optimized" ]
-ShapeLookupDirectories += [ "ecosystems/desert/shape_with_coarse_mesh" ]
-ShapeLookupDirectories += [ "ecosystems/jungle/shape_optimized" ]
-ShapeLookupDirectories += [ "ecosystems/jungle/shape_with_coarse_mesh" ]
-ShapeLookupDirectories += [ "ecosystems/lacustre/shape_optimized" ]
-ShapeLookupDirectories += [ "ecosystems/lacustre/shape_with_coarse_mesh" ]
+ShapeLookupDirectories += [ EcosystemPath + "/shape_optimized" ]
+ShapeLookupDirectories += [ EcosystemPath + "/shape_with_coarse_mesh" ]
 ShapeLookupDirectories += [ ContinentPath + "/shape_optimized" ]
 ShapeLookupDirectories += [ ContinentPath + "/shape_with_coarse_mesh" ]
-ShapeLookupDirectories += [ "continents/fyros/shape_optimized" ]
-ShapeLookupDirectories += [ "continents/fyros/shape_with_coarse_mesh" ]
-ShapeLookupDirectories += [ "continents/matis/shape_optimized" ]
-ShapeLookupDirectories += [ "continents/matis/shape_with_coarse_mesh" ]
-ShapeLookupDirectories += [ "continents/zorai/shape_optimized" ]
-ShapeLookupDirectories += [ "continents/zorai/shape_with_coarse_mesh" ]
-ShapeLookupDirectories += [ "continents/tryker/shape_optimized" ]
-ShapeLookupDirectories += [ "continents/tryker/shape_with_coarse_mesh" ]
+# ShapeLookupDirectories += [ ContinentName + "/zone_light/water_shapes_lighted" ] huh?
+ShapeLookupDirectories += [ "ecosystems/lacustre/shape_optimized" ] # additional
+ShapeLookupDirectories += [ "ecosystems/lacustre/shape_with_coarse_mesh" ] # additional
+ShapeLookupDirectories += [ "continents/fyros/shape_optimized" ] # additional
+ShapeLookupDirectories += [ "continents/fyros/shape_with_coarse_mesh" ] # additional
 
-# Map lookup directories not yet used
+# Map lookup directories used by shape
 MapLookupDirectories = [ ]
 MapLookupDirectories += [ "common/sfx/map_export" ]
 MapLookupDirectories += [ "common/sfx/map_uncompressed" ]
 MapLookupDirectories += [ "common/construction/map_export" ]
 MapLookupDirectories += [ "common/construction/map_uncompressed" ]
-MapLookupDirectories += [ "ecosystems/desert/map_export" ]
-MapLookupDirectories += [ "ecosystems/desert/map_uncompressed" ]
-MapLookupDirectories += [ "ecosystems/jungle/map_export" ]
-MapLookupDirectories += [ "ecosystems/jungle/map_uncompressed" ]
-MapLookupDirectories += [ "ecosystems/lacustre/map_export" ]
-MapLookupDirectories += [ "ecosystems/lacustre/map_uncompressed" ]
-MapLookupDirectories += [ ContinentPath + "/map_export" ]
-MapLookupDirectories += [ ContinentPath + "/map_uncompressed" ]
-MapLookupDirectories += [ "continents/fyros/map_export" ]
-MapLookupDirectories += [ "continents/fyros/map_uncompressed" ]
-MapLookupDirectories += [ "continents/matis/map_export" ]
-MapLookupDirectories += [ "continents/matis/map_uncompressed" ]
-MapLookupDirectories += [ "continents/zorai/map_export" ]
-MapLookupDirectories += [ "continents/zorai/map_uncompressed" ]
-MapLookupDirectories += [ "continents/tryker/map_export" ]
-MapLookupDirectories += [ "continents/tryker/map_uncompressed" ]
+MapLookupDirectories += [ EcosystemPath + "/map_export" ]
+MapLookupDirectories += [ EcosystemPath + "/map_uncompressed" ]
+# MapLookupDirectories += [ ContinentPath + "/map_export" ]
+# MapLookupDirectories += [ ContinentPath + "/map_uncompressed" ]
+MapLookupDirectories += [ "ecosystems/lacustre/map_export" ] # additional
+MapLookupDirectories += [ "ecosystems/lacustre/map_uncompressed" ] # additional
+MapLookupDirectories += [ "continents/fyros/map_export" ] # additional
+MapLookupDirectories += [ "continents/fyros/map_uncompressed" ] # additional
 
 # PacsPrim lookup directories used by ai_wmap
 PacsPrimLookupDirectories = [ ]
-PacsPrimLookupDirectories += [ "ecosystems/desert/pacs_prim" ]
-PacsPrimLookupDirectories += [ "ecosystems/jungle/pacs_prim" ]
-PacsPrimLookupDirectories += [ "ecosystems/lacustre/pacs_prim" ]
+PacsPrimLookupDirectories += [ EcosystemPath + "/pacs_prim" ]
 
 # Properties search paths
 PropertiesExportBuildSearchPaths = [ ]
 PropertiesExportBuildSearchPaths += IgLookupDirectories
 PropertiesExportBuildSearchPaths += ShapeLookupDirectories
 PropertiesExportBuildSearchPaths += MapLookupDirectories
+PropertiesExportBuildSearchPaths += PacsPrimLookupDirectories
 
 
 # *** EXPORT DIRECTORIES FOR THE BUILD PIPELINE ***
+
+# Map directories
+MapExportDirectory = CommonPath + "/map_export"
+MapUncompressedExportDirectory = CommonPath + "/map_uncompressed"
 
 # Shape directories
 ShapeTagExportDirectory = CommonPath + "/shape_tag"
@@ -178,7 +157,6 @@ LigoEcosystemTagExportDirectory = EcosystemPath + "/ligo_es_tag"
 
 # Zone directories
 ZoneExportDirectory = ContinentPath + "/zone"
-WaterMapSourceDirectories = [ ]
 
 # RBank directories
 RBankCmbExportDirectory = CommonPath + "/rbank_cmb_export"
@@ -187,8 +165,14 @@ RBankCmbTagExportDirectory = CommonPath + "/rbank_cmb_tag_export"
 # Smallbank directories
 SmallbankExportDirectory = EcosystemPath + "/smallbank"
 
+# Farbank directories
+FarbankBuildDirectory = EcosystemPath + "/farbank"
+
 # Tiles directories
 DisplaceExportDirectory = EcosystemPath + "/diplace"
+
+# Tiles directories
+TilesExportDirectory = EcosystemPath + "/tiles"
 
 # Ig directories
 IgStaticLandExportDirectory = ContinentPath + "/ig_static_land" # Landscape IG eported from 3dsmax not elevated by the heightmap
@@ -200,6 +184,14 @@ PsExportDirectory = CommonPath + "/ps"
 
 
 # *** BUILD DIRECTORIES FOR THE BUILD PIPELINE ***
+
+# Map directories
+MapBuildDirectory = CommonPath + "/map"
+MapPanoplyBuildDirectory = CommonPath + "/map_panoply"
+MapPanoplyHlsInfoBuildDirectory = CommonPath + "/map_panoply_hls_info"
+MapPanoplyHlsBankBuildDirectory = CommonPath + "/map_panoply_hls_bank"
+MapPanoplyCacheBuildDirectory = CommonPath + "/map_panoply_cache"
+MapTagBuildDirectory = CommonPath + "/map_tag"
 
 # Shape directories
 ShapeClodtexBuildDirectory = CommonPath + "/shape_clodtex_build"
@@ -247,17 +239,33 @@ RbankOutputBuildDirectory = CommonPath + "/rbank_output"
 AiWmapBuildDirectory = CommonPath + "/ai_wmap"
 AiWmapBuildTagDirectory = CommonPath + "/ai_wmap_tag"
 
+# Packed zone directories
+PackedZoneCacheBuildDirectory = CommonPath + "/pz_cache_zone"
+PackedZoneCWMapCacheBuildDirectory = CommonPath + "/pz_cache_cwmap"
+PackedZoneBuildDirectory = CommonPath + "/pz_col_meshes"
+
+# Cartographer directories
+CartographerBuildDirectory = CommonPath + "/cartographer"
+
 
 # *** INSTALL DIRECTORIES IN THE CLIENT DATA ***
+
+# Map directory
+MapInstallDirectory = CommonName + "_maps"
+BitmapInstallDirectory = MapInstallDirectory
 
 # Shape directory
 ShapeInstallDirectory = CommonName + "_shapes"
 
 # Shape lightmaps directory
-LightmapInstallDirectory = CommonName + "_lightmaps"
+LightmapInstallDirectory = ShapeInstallDirectory
 
 # Ig directory
 IgInstallDirectory = CommonName + "_ig"
+
+# Zone directory
+ZoneInstallDirectory = CommonName + "_zones"
+WaterMapsInstallDirectory = ZoneInstallDirectory
 
 # PACS directory
 PacsInstallDirectory = CommonName + "_pacs"
@@ -267,3 +275,9 @@ PsInstallDirectory = CommonName + "_ig"
 
 # AI Wmap directory
 AiWmapInstallDirectory = CommonName + "_ai"
+
+# PZ directory
+PackedZoneInstallDirectory = CommonName + "_pz"
+
+# Cartographer directory
+CartographerInstallDirectory = MapInstallDirectory

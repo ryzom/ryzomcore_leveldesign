@@ -30,19 +30,23 @@
 # *** PROCESS CONFIG ***
 ProcessToComplete = [ ]
 ProcessToComplete += [ "properties" ]
-ProcessToComplete += [ "shape" ]
+ProcessToComplete += [ "ligo" ]
+ProcessToComplete += [ "zone" ]
 ProcessToComplete += [ "ig" ]
+ProcessToComplete += [ "zone_light" ]
 ProcessToComplete += [ "rbank" ]
 ProcessToComplete += [ "ig_light" ]
 ProcessToComplete += [ "ps" ]
 ProcessToComplete += [ "ai_wmap" ]
+ProcessToComplete += [ "pz" ]
+ProcessToComplete += [ "cartographer" ]
 
 
 # *** ECOSYSTEM AND CONTINENT NAMES ***
 
-EcosystemName = "jungle"
+EcosystemName = "desert"
 EcosystemPath = "ecosystems/" + EcosystemName
-ContinentName = "indoors"
+ContinentName = "r2_desert"
 ContinentPath = "continents/" + ContinentName
 CommonName = ContinentName
 CommonPath = ContinentPath
@@ -103,7 +107,7 @@ BankTileBankName = EcosystemName
 
 
 # *** LIGO OPTIONS ***
-LigoExportLand = ""
+LigoExportLand = ContinentName + ".land"
 LigoExportOnePass = 0
 LigoExportColormap = "colormap_" + ContinentName + ".tga"
 LigoExportHeightmap1 = "big_" + ContinentName + ".tga"
@@ -113,8 +117,8 @@ LigoExportZFactor2 = "0.5"
 LigoTileBankFile = "landscape/_texture_tiles/" + EcosystemName + "/" + EcosystemName + ".bank"
 
 # *** ZONE REGIONS ( up-left, down-right ) ***
-#ZoneRegions = [ ] 
-#ZoneRegions += [ [ "1_aa" ] + [ "2_ai" ] ]
+ZoneRegions = [ ] 
+ZoneRegions += [ [ "6_fb" ] + [ "67_hk" ] ]
 
 # *** RBANK OPTIONS ***
 
@@ -130,38 +134,40 @@ RbankCutEdges = 1
 RbankUseZoneSquare = 0
 
 # Region to compute ( ALPHA UPPER CASE! )
-RbankZoneUl = "1_AA"
-RbankZoneDr = "2_AI"
+RbankZoneUl = "6_FB"
+RbankZoneDr = "67_HK"
 
 # Output names
 RbankRbankName = LandscapeName
 
+# *** MAPS OPTIONS ***
+ReduceBitmapFactor = 0
+# list all panoply files
+MapPanoplyFileList = None
+# name of the .hlsbank to build.
+MapHlsBankFileName = None
 
 # *** AI WMAP OPTIONS ***
 AiWmapContinentName = ContinentName
 AiWmapVerbose = 0
 AiWmapStartPoints = [ ]
+# AiWmapStartPoints += [ ContinentName + " 21508 -1332" ]
+# AiWmapStartPoints += [ ContinentName + " 22043 -1083" ]
+AiWmapStartPoints += [ ContinentName + " 22996 -1253" ]
+AiWmapStartPoints += [ ContinentName + " 23605 -1206" ]
+# AiWmapStartPoints += [ ContinentName + " 24545 -1245" ] # CRASH
+# AiWmapStartPoints += [ ContinentName + " 25396 -1319" ]
+# AiWmapStartPoints += [ ContinentName + " 25930 -1250" ]
+# AiWmapStartPoints += [ ContinentName + " 26804 -1283" ] # CRASH
+# AiWmapStartPoints += [ ContinentName + " 27645 -1237" ]
+AiWmapStartPoints += [ ContinentName + " 28935 -1353" ]
+AiWmapStartPoints += [ ContinentName + " 29736 -1234" ]
+AiWmapStartPoints += [ ContinentName + " 30596 -1353" ]
+AiWmapStartPoints += [ ContinentName + " 30574 -2090" ]
+# AiWmapStartPoints += [ ContinentName + " 28992 -2053" ]
 
-# matis
-AiWmapStartPoints += [ ContinentName + " 20025 -432" ] # player room
-AiWmapStartPoints += [ ContinentName + " 20120 -439" ] # hall room
-AiWmapStartPoints += [ ContinentName + " 20190 -454" ] # guild room
-AiWmapStartPoints += [ ContinentName + " 20281 -439" ] # role master/npc room
+# *** PZ OPTIONS ***
+PackedZoneCWMap = ContinentName + "_0.cwmap2"
 
-# zorai
-AiWmapStartPoints += [ ContinentName + " 20363 -439" ] # player room
-AiWmapStartPoints += [ ContinentName + " 20440 -444" ] # hall room
-AiWmapStartPoints += [ ContinentName + " 20519 -466" ] # guild room
-AiWmapStartPoints += [ ContinentName + " 20591 -442" ] # role master/npc room
-
-# tryker
-AiWmapStartPoints += [ ContinentName + " 20682 -439" ] # player room
-AiWmapStartPoints += [ ContinentName + " 20755 -440" ] # hall room
-# AiWmapStartPoints += [ ContinentName + " 20833 -439" ] # guild room
-AiWmapStartPoints += [ ContinentName + " 20920 -439" ] # role master/npc room
-
-# fyros
-AiWmapStartPoints += [ ContinentName + " 20998 -441" ] # player room
-AiWmapStartPoints += [ ContinentName + " 21079 -443" ] # hall room
-AiWmapStartPoints += [ ContinentName + " 21162 -443" ] # guild room
-AiWmapStartPoints += [ ContinentName + " 21239 -439" ] # role master/npc room
+# *** CARTOGRAPHER OPTIONS ***
+CartographerContinent = ContinentName

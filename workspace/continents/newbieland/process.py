@@ -109,10 +109,10 @@ BankTileBankName = EcosystemName
 # *** LIGO OPTIONS ***
 LigoExportLand = ContinentName + ".land"
 LigoExportOnePass = 0
-LigoExportColormap = "colormap_" + ContinentName + ".png"
-LigoExportHeightmap1 = "big_" + ContinentName + ".png"
+LigoExportColormap = "colormap_" + ContinentName + ".tga"
+LigoExportHeightmap1 = "big_" + ContinentName + ".tga"
 LigoExportZFactor1 = "1.0"
-LigoExportHeightmap2 = "noise_" + ContinentName + ".png"
+LigoExportHeightmap2 = "noise_" + ContinentName + ".tga"
 LigoExportZFactor2 = "0.5"
 LigoTileBankFile = "landscape/_texture_tiles/" + EcosystemName + "/" + EcosystemName + ".bank"
 
@@ -139,20 +139,6 @@ RbankZoneDr = "77_CS"
 
 # Output names
 RbankRbankName = LandscapeName
-
-# Import ig pathes
-#RbankIgPaths = [ ] # ExportBuildDirectory/...
-#RbankIgPaths += [ "continents/" + ContinentName + "/ig_other" ]
-#RbankIgPaths += [ "continents/" + ContinentName + "/ig_land" ]
-
-# Import shape pathes
-#RbankShapePaths = [ ] # ExportBuildDirectory/...
-#RbankShapePaths += [ "continents/" + ContinentName + "/shape" ]
-#RbankShapePaths += [ "continents/" + ContinentName + "/shape_with_coarse_mesh_builded" ]
-#RbankShapePaths += [ "ecosystems/" + EcosystemName + "/shape" ]
-#RbankShapePaths += [ "ecosystems/" + EcosystemName + "/shape_with_coarse_mesh_builded" ]
-#RbankShapePaths += [ "common/sfx/ps" ]
-# RbankShapePaths += [ "l:/leveldesign/world_edit_files" ]
 
 # *** MAPS OPTIONS ***
 ReduceBitmapFactor = 0
