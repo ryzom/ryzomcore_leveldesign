@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.4 $" State="modified">
+  <PARENT Filename="fyros.continent"/>
+  <STRUCT>
+    <ATOM Name="Name" Value="r2_desert"/>
+    <ATOM Name="PacsRBank" Value="r2_desert.rbank"/>
+    <ATOM Name="PacsGR" Value="r2_desert.gr"/>
+    <ATOM Name="LandscapeIG" Value="r2_desert_ig.txt"/>
+    <ATOM Name="FogDistMap" Value="fog_r2_desert_dist.tga"/>
+    <ATOM Name="FogDepthMap" Value="fog_r2_desert_depth.tga"/>
+    <ATOM Name="NoRainMap" Value="r2_desert_no_rain.tga"/>
+    <ATOM Name="ZoneMin" Value="6_FB"/>
+    <ATOM Name="ZoneMax" Value="67_HK"/>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Fri Dec 30 16:28:22 2005 (rousseau) .FogDepthMap = fog_r2_desert_depth.tga
+Fri Dec 30 16:28:22 2005 (rousseau) .FogDistMap = fog_r2_desert_dist.tga
+Fri Dec 30 16:28:22 2005 (rousseau) .NoRainMap = r2_desert_no_rain.tga</LOG>
+</FORM>
