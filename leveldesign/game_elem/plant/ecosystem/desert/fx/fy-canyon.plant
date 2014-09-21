@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <ATOM Name="Plant Name" Value="Leaves"/>
+    <ATOM Name="Comment" Value="This is an FX"/>
+    <STRUCT Name="3D">
+      <ATOM Name="Bounding Radius" Value="0.5"/>
+      <ATOM Name="LOD 0 min"/>
+      <ATOM Name="Collision Radius" Value="0.5"/>
+      <STRUCT Name="SpringFX">
+        <ATOM Name="FXName" Value="Fy_Canyon.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value="1"/>
+        <ATOM Name="StartHourMin" Value="0"/>
+        <ATOM Name="StartHourMax" Value=".9"/>
+        <ATOM Name="EndHourMin" Value="0"/>
+        <ATOM Name="EndHourMax" Value="0"/>
+      </STRUCT>
+      <STRUCT Name="SummerFX">
+        <ATOM Name="FXName" Value="Fy_Canyon.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value="1"/>
+        <ATOM Name="StartHourMin" Value="0"/>
+        <ATOM Name="StartHourMax" Value=".9"/>
+        <ATOM Name="EndHourMin" Value="0"/>
+        <ATOM Name="EndHourMax" Value="0"/>
+      </STRUCT>
+      <STRUCT Name="AutomnFX">
+        <ATOM Name="FXName" Value="Fy_Canyon.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value="1"/>
+        <ATOM Name="StartHourMin" Value="0"/>
+        <ATOM Name="StartHourMax" Value=".9"/>
+        <ATOM Name="EndHourMin" Value="0"/>
+        <ATOM Name="EndHourMax" Value="0"/>
+      </STRUCT>
+      <STRUCT Name="WinterFX">
+        <ATOM Name="FXName" Value="Fy_Canyon.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value="1"/>
+        <ATOM Name="StartHourMin" Value="0"/>
+        <ATOM Name="StartHourMax" Value=".9"/>
+        <ATOM Name="EndHourMin" Value="0"/>
+        <ATOM Name="EndHourMax" Value="0"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:17:51 2002 (corvazier) File converted from old format
+Tue Jul 29 11:20:04 2003 (firroloni) .3D.Shape = Desert-SandBlast.ps
+Tue Jul 29 11:22:34 2003 (firroloni) .3D.Shape = Desert-SandBlastB.ps
+Tue Jul 29 11:23:34 2003 (firroloni) .3D.Shape = Fy-SandBlastADesert.ps
+Tue Jul 29 11:23:51 2003 (firroloni) .3D.Shape = Fy-SandBlastDesert.ps
+Wed Aug 06 11:53:50 2003 (firroloni) .3D.Shape = 
+Wed Aug 06 11:53:50 2003 (firroloni) .3D.SpringFX.FXName = Fy-SandBlastDesert.ps
+Wed Aug 06 11:53:50 2003 (firroloni) .3D.SpringFX.Mode = Spawn
+Wed Aug 06 11:53:50 2003 (firroloni) .3D.SpringFX.StartHourMax = 23.9
+Wed Aug 06 15:08:24 2003 (firroloni) .3D.SpringFX.CycleDuration = 1
+Wed Aug 06 15:08:24 2003 (firroloni) .3D.SpringFX.StartHourMax = .99
+Tue Aug 12 10:21:56 2003 (firroloni) .3D.SpringFX.CycleDuration = 24
+Tue Aug 12 10:21:56 2003 (firroloni) .3D.SpringFX.FXName = De_Scorpion2.ps
+Tue Aug 12 10:21:56 2003 (firroloni) .3D.SpringFX.StartHourMax = 20
+Tue Aug 12 10:21:56 2003 (firroloni) .3D.SpringFX.StartHourMin = 12
+Tue Aug 12 10:21:56 2003 (firroloni) formName Pasted = 
+Tue Aug 12 12:23:01 2003 (firroloni) .3D.Shape = FY_S1_baobab_A.shape
+Fri Oct 17 17:36:11 2003 (firroloni) .3D.Shape = 
+Tue Nov 18 11:09:22 2003 (firroloni) .3D.AutomnFX.EndHourMax = 17
+Tue Nov 18 11:09:22 2003 (firroloni) .3D.AutomnFX.EndHourMin = 16
+Tue Nov 18 11:09:22 2003 (firroloni) .3D.AutomnFX.StartHourMax = 14
+Tue Nov 18 11:09:22 2003 (firroloni) .3D.AutomnFX.StartHourMin = 13
+Tue Nov 18 11:09:22 2003 (firroloni) .3D.SpringFX.EndHourMax = 20
+Tue Nov 18 11:09:22 2003 (firroloni) .3D.SpringFX.EndHourMin = 18
+Tue Nov 18 11:09:22 2003 (firroloni) .3D.SpringFX.FXName = Fy-CricketA.ps
+Tue Nov 18 11:09:22 2003 (firroloni) .3D.SpringFX.Mode = UseEndHour
+Tue Nov 18 11:09:22 2003 (firroloni) .3D.SpringFX.StartHourMax = 11
+Tue Nov 18 11:09:22 2003 (firroloni) .3D.SpringFX.StartHourMin = 10
+Tue Nov 18 11:09:22 2003 (firroloni) .3D.WinterFX.EndHourMax = 17
+Tue Nov 18 11:09:22 2003 (firroloni) .3D.WinterFX.EndHourMin = 16
+Tue Nov 18 11:09:22 2003 (firroloni) .3D.WinterFX.StartHourMax = 15
+Tue Nov 18 11:09:22 2003 (firroloni) .3D.WinterFX.StartHourMin = 14
+Tue Nov 18 11:09:22 2003 (firroloni) formName Pasted = 
+Tue Dec 02 17:24:53 2003 (firroloni) .3D.AutomnFX.FXName = Fy_Canyon.ps
+Tue Dec 02 17:24:53 2003 (firroloni) .3D.SpringFX.FXName = Fy_Canyon.ps
+Tue Dec 02 17:24:53 2003 (firroloni) .3D.SummerFX.FXName = Fy_Canyon.ps
+Tue Dec 02 17:24:53 2003 (firroloni) .3D.WinterFX.FXName = Fy_Canyon.ps
+Tue Dec 02 17:24:53 2003 (firroloni) .3D.WinterFX.Mode = AlwaysStarted
+Tue Dec 02 17:24:53 2003 (firroloni) formName Pasted = 
+Thu Dec 04 10:57:58 2003 (firroloni) .3D.SpringFX.CycleDuration = 1
+Thu Dec 04 10:57:58 2003 (firroloni) .3D.SpringFX.EndHourMax = 0
+Thu Dec 04 10:57:58 2003 (firroloni) .3D.SpringFX.EndHourMin = 0
+Thu Dec 04 10:57:58 2003 (firroloni) .3D.SpringFX.Mode = Spawn
+Thu Dec 04 10:57:58 2003 (firroloni) .3D.SpringFX.StartHourMax = .9
+Thu Dec 04 10:57:58 2003 (firroloni) .3D.SpringFX.StartHourMin = 0
+Thu Dec 04 10:57:58 2003 (firroloni) formName Pasted = </LOG>
+</FORM>

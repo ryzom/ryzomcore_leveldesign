@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.6 $" State="modified">
+  <STRUCT>
+    <ATOM Name="Plant Name" Value="Big tree"/>
+    <ATOM Name="Comment" Value="Big tree forest"/>
+    <STRUCT Name="3D">
+      <ATOM Name="Shape" Value="fo_s2_big_tree.shape"/>
+      <ATOM Name="Shadow Shape"/>
+      <ATOM Name="Bounding Radius" Value="2"/>
+      <ATOM Name="Collision Radius" Value="6"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:17:44 2002 (corvazier) File converted from old format
+Thu Oct 31 17:31:07 2002 (Schnittger) .3D.Collision Radius = 2
+Thu Oct 31 17:47:21 2002 (Schnittger) .3D.Bounding Radius = 2
+Thu Oct 31 17:47:21 2002 (Schnittger) .3D.Collision Radius = 6</LOG>
+</FORM>

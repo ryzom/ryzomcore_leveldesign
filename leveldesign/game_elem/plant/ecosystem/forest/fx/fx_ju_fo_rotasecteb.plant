@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <STRUCT>
+    <ATOM Name="Plant Name" Value="Leaves"/>
+    <ATOM Name="Comment" Value="This is an FX"/>
+    <STRUCT Name="3D">
+      <ATOM Name="Bounding Radius" Value="0.5"/>
+      <ATOM Name="LOD 0 min"/>
+      <ATOM Name="Collision Radius" Value="0.5"/>
+      <STRUCT Name="SpringFX">
+        <ATOM Name="FXName" Value="ju_Fo_RotasecteB.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="CycleDuration" Value="24"/>
+        <ATOM Name="StartHourMin" Value="12"/>
+        <ATOM Name="StartHourMax" Value="16"/>
+        <ATOM Name="EndHourMin" Value="18"/>
+        <ATOM Name="EndHourMax" Value="21"/>
+        <ATOM Name="InheritRot" Value="false"/>
+      </STRUCT>
+      <STRUCT Name="SummerFX">
+        <ATOM Name="FXName" Value="ju_Fo_RotasecteB.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="CycleDuration" Value="24"/>
+        <ATOM Name="StartHourMin" Value="12"/>
+        <ATOM Name="StartHourMax" Value="16"/>
+        <ATOM Name="EndHourMin" Value="18"/>
+        <ATOM Name="EndHourMax" Value="21"/>
+        <ATOM Name="InheritRot" Value="false"/>
+      </STRUCT>
+      <STRUCT Name="AutomnFX">
+        <ATOM Name="FXName" Value="ju_Fo_RotasecteB.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="CycleDuration" Value="24"/>
+        <ATOM Name="StartHourMin" Value="12"/>
+        <ATOM Name="StartHourMax" Value="16"/>
+        <ATOM Name="EndHourMin" Value="18"/>
+        <ATOM Name="EndHourMax" Value="21"/>
+        <ATOM Name="InheritRot" Value="false"/>
+      </STRUCT>
+      <STRUCT Name="WinterFX">
+        <ATOM Name="FXName" Value="ju_Fo_RotasecteB.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="CycleDuration" Value="24"/>
+        <ATOM Name="StartHourMin" Value="12"/>
+        <ATOM Name="StartHourMax" Value="16"/>
+        <ATOM Name="EndHourMin" Value="18"/>
+        <ATOM Name="EndHourMax" Value="21"/>
+        <ATOM Name="InheritRot" Value="false"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:17:39 2002 (corvazier) File converted from old format
+Wed Jul 23 16:53:21 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_Fee.ps
+Wed Jul 23 16:53:21 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_Fee.ps
+Wed Jul 23 16:53:21 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_Fee.ps
+Wed Jul 23 16:53:21 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_Fee.ps
+Thu Jul 24 10:37:33 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_bibubirdB.ps
+Thu Jul 24 10:37:33 2003 (firroloni) .3D.Shape = 
+Thu Jul 24 10:37:33 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_bibubirdB.ps
+Thu Jul 24 10:37:33 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_bibubirdB.ps
+Thu Jul 24 10:37:33 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_bibubirdB.ps
+Thu Jul 24 10:41:24 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_brumes.ps
+Thu Jul 24 10:41:24 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_brumes.ps
+Thu Jul 24 10:41:24 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_brumes.ps
+Thu Jul 24 10:41:24 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_brumes.ps
+Thu Jul 24 10:42:04 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_brumesB.ps
+Thu Jul 24 10:42:04 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_brumesB.ps
+Thu Jul 24 10:42:04 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_brumesB.ps
+Thu Jul 24 10:42:04 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_brumesB.ps
+Thu Jul 24 10:48:39 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_Geyser4A.ps
+Thu Jul 24 10:48:39 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_Geyser4A.ps
+Thu Jul 24 10:48:39 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_Geyser4A.ps
+Thu Jul 24 10:48:39 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_Geyser4A.ps
+Thu Jul 24 10:49:10 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_Geyser4B.ps
+Thu Jul 24 10:49:10 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_Geyser4B.ps
+Thu Jul 24 10:49:10 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_Geyser4B.ps
+Thu Jul 24 10:49:10 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_Geyser4B.ps
+Thu Jul 24 10:49:51 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_Geyser4C.ps
+Thu Jul 24 10:49:51 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_Geyser4C.ps
+Thu Jul 24 10:49:51 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_Geyser4C.ps
+Thu Jul 24 10:49:51 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_Geyser4C.ps
+Thu Jul 24 10:54:02 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_Grenouille3.ps
+Thu Jul 24 10:54:02 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_Grenouille3.ps
+Thu Jul 24 10:54:02 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_Grenouille3.ps
+Thu Jul 24 10:54:02 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_Grenouille3.ps
+Thu Jul 24 10:54:47 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_GrenouilleB3.ps
+Thu Jul 24 10:54:47 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_GrenouilleB3.ps
+Thu Jul 24 10:54:47 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_GrenouilleB3.ps
+Thu Jul 24 10:54:47 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_GrenouilleB3.ps
+Thu Jul 24 10:55:20 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_GrenouilleC3.ps
+Thu Jul 24 10:55:20 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_GrenouilleC3.ps
+Thu Jul 24 10:55:20 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_GrenouilleC3.ps
+Thu Jul 24 10:55:20 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_GrenouilleC3.ps
+Thu Jul 24 11:00:37 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_ratsC.ps
+Thu Jul 24 11:00:37 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_ratsC.ps
+Thu Jul 24 11:00:37 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_ratsC.ps
+Thu Jul 24 11:00:37 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_ratsC.ps
+Thu Jul 24 11:34:37 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_Rotasecte.ps
+Thu Jul 24 11:34:37 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_Rotasecte.ps
+Thu Jul 24 11:34:37 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_Rotasecte.ps
+Thu Jul 24 11:34:37 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_Rotasecte.ps
+Thu Jul 24 17:46:02 2003 (firroloni) .3D.Shape = Ju_Fo_Rotasecte.ps
+Thu Jul 24 18:30:51 2003 (firroloni) .3D.AutomnFX.FXName = 
+Thu Jul 24 18:30:51 2003 (firroloni) .3D.SpringFX.FXName = 
+Thu Jul 24 18:30:51 2003 (firroloni) .3D.SummerFX.FXName = 
+Thu Jul 24 18:30:51 2003 (firroloni) .3D.WinterFX.FXName = 
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.AutomnFX.EndHourMax = 18
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.AutomnFX.EndHourMin = 15
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.AutomnFX.StartHourMax = 10
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.AutomnFX.StartHourMin = 8
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.Shape = 
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.SpringFX.EndHourMax = 8
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.SpringFX.EndHourMin = 7
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_Rotasecte.ps
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.SpringFX.Mode = UseEndHour
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.SpringFX.StartHourMax = 6
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.SpringFX.StartHourMin = 5
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.SummerFX.EndHourMax = 20
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.SummerFX.EndHourMin = 18
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.SummerFX.StartHourMax = 10
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.SummerFX.StartHourMin = 8
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.WinterFX.EndHourMax = 16
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.WinterFX.EndHourMin = 14
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.WinterFX.StartHourMax = 12
+Wed Aug 06 11:45:39 2003 (firroloni) .3D.WinterFX.StartHourMin = 10
+Mon Aug 11 10:25:48 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_Rotasecte.ps
+Mon Aug 11 10:25:48 2003 (firroloni) .3D.AutomnFX.Mode = UseEndHour
+Mon Aug 11 10:25:48 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_Rotasecte.ps
+Mon Aug 11 10:25:48 2003 (firroloni) .3D.SummerFX.Mode = UseEndHour
+Mon Aug 11 10:25:48 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_Rotasecte.ps
+Mon Aug 11 10:25:48 2003 (firroloni) .3D.WinterFX.Mode = UseEndHour
+Tue Nov 18 17:11:35 2003 (firroloni) .3D.SpringFX.EndHourMax = 20
+Tue Nov 18 17:11:35 2003 (firroloni) .3D.SpringFX.EndHourMin = 16
+Tue Nov 18 17:11:35 2003 (firroloni) .3D.SpringFX.StartHourMax = 5
+Tue Nov 18 17:11:35 2003 (firroloni) .3D.SpringFX.StartHourMin = 4
+Thu Feb 26 12:07:17 2004 (gatto) .3D.AutomnFX.FXName = Ju_Fo_RotasecteB.ps
+Thu Feb 26 12:07:17 2004 (gatto) .3D.SpringFX.FXName = Ju_Fo_RotasecteB.ps
+Thu Feb 26 12:07:17 2004 (gatto) .3D.SummerFX.FXName = Ju_Fo_RotasecteB.ps
+Thu Feb 26 12:07:17 2004 (gatto) .3D.WinterFX.FXName = Ju_Fo_RotasecteB.ps
+Thu Feb 26 14:37:06 2004 (rang) .3D.SpringFX.EndHourMax = 23
+Thu Feb 26 14:37:06 2004 (rang) .3D.SpringFX.EndHourMin = 19
+Thu Feb 26 14:37:06 2004 (rang) .3D.SpringFX.FXName = ju_fo_RotasecteB.ps
+Thu Feb 26 14:37:06 2004 (rang) .3D.SpringFX.StartHourMin = 1
+Thu Feb 26 14:37:06 2004 (rang) formName Pasted = 
+Thu Feb 26 14:50:47 2004 (rang) .3D.SpringFX.FXName = ju_Fo_RotasecteB.ps
+Thu Feb 26 14:50:47 2004 (rang) .3D.SummerFX.FXName = ju_Fo_RotasecteB.ps
+Thu Feb 26 14:50:47 2004 (rang) formName Pasted = 
+Thu Feb 26 15:28:57 2004 (rang) .3D.SpringFX.CycleDuration = 24
+Thu Feb 26 15:28:57 2004 (rang) .3D.SpringFX.EndHourMax = 17
+Thu Feb 26 15:28:57 2004 (rang) .3D.SpringFX.EndHourMin = 15
+Thu Feb 26 15:28:57 2004 (rang) .3D.SpringFX.StartHourMax = 14
+Thu Feb 26 15:28:57 2004 (rang) .3D.SpringFX.StartHourMin = 13
+Thu Feb 26 15:28:57 2004 (rang) formName Pasted = 
+Thu Feb 26 15:34:47 2004 (rang) .3D.WinterFX.InheritRot = false
+Thu Feb 26 15:35:34 2004 (rang) formName Pasted = 
+Thu Feb 26 15:40:39 2004 (rang) .3D.SpringFX.CycleDuration = 6
+Thu Feb 26 15:40:39 2004 (rang) .3D.SpringFX.EndHourMax = 6
+Thu Feb 26 15:40:39 2004 (rang) .3D.SpringFX.EndHourMin = 5
+Thu Feb 26 15:40:39 2004 (rang) .3D.SpringFX.StartHourMax = 3
+Thu Feb 26 15:40:39 2004 (rang) .3D.SpringFX.StartHourMin = 2
+Thu Feb 26 15:40:45 2004 (rang) formName Pasted = 
+Thu Feb 26 16:12:00 2004 (rang) .3D.SpringFX.EndHourMax = 3
+Thu Feb 26 16:12:00 2004 (rang) .3D.SpringFX.EndHourMin = 2
+Thu Feb 26 16:12:00 2004 (rang) .3D.SpringFX.StartHourMax = 6
+Thu Feb 26 16:12:00 2004 (rang) .3D.SpringFX.StartHourMin = 5
+Thu Feb 26 16:12:00 2004 (rang) .3D.WinterFX.EndHourMax = 2
+Thu Feb 26 16:12:00 2004 (rang) .3D.WinterFX.EndHourMin = 1
+Thu Feb 26 16:12:00 2004 (rang) formName Pasted = 
+Thu Feb 26 16:16:03 2004 (rang) .3D.SpringFX.CycleDuration = 24
+Thu Feb 26 16:16:03 2004 (rang) .3D.SpringFX.EndHourMax = 17
+Thu Feb 26 16:16:03 2004 (rang) .3D.SpringFX.EndHourMin = 15
+Thu Feb 26 16:16:03 2004 (rang) .3D.SpringFX.StartHourMax = 12
+Thu Feb 26 16:16:03 2004 (rang) .3D.SpringFX.StartHourMin = 11
+Thu Feb 26 16:16:03 2004 (rang) formName Pasted = 
+Thu Feb 26 16:16:05 2004 (rang) formName Pasted = formName Pasted
+Thu Feb 26 16:16:15 2004 (rang) formName Pasted = 
+Thu Feb 26 16:27:38 2004 (rang) .3D.WinterFX.EndHourMax = 16
+Thu Feb 26 16:28:39 2004 (rang) .3D.WinterFX.EndHourMax = 17
+Thu Feb 26 16:28:39 2004 (rang) .3D.WinterFX.EndHourMin = 16
+Thu Feb 26 16:28:39 2004 (rang) .3D.WinterFX.StartHourMax = 13
+Thu Feb 26 16:28:39 2004 (rang) .3D.WinterFX.StartHourMin = 12
+Thu Feb 26 16:29:43 2004 (rang) .3D.WinterFX.EndHourMax = 18
+Thu Feb 26 16:29:43 2004 (rang) .3D.WinterFX.EndHourMin = 17
+Thu Feb 26 16:29:43 2004 (rang) .3D.WinterFX.StartHourMax = 15
+Thu Feb 26 16:29:43 2004 (rang) .3D.WinterFX.StartHourMin = 14
+Thu Feb 26 16:33:04 2004 (rang) .3D.WinterFX.EndHourMax = 19
+Thu Feb 26 16:33:04 2004 (rang) .3D.WinterFX.EndHourMin = 18
+Thu Feb 26 16:33:04 2004 (rang) .3D.WinterFX.StartHourMax = 16
+Thu Feb 26 16:33:04 2004 (rang) .3D.WinterFX.StartHourMin = 15
+Thu Feb 26 16:33:04 2004 (rang) formName Pasted = 
+Thu Feb 26 16:43:08 2004 (rang) .3D.SpringFX.EndHourMax = 21
+Thu Feb 26 16:43:08 2004 (rang) .3D.SpringFX.StartHourMin = 13
+Thu Feb 26 16:54:21 2004 (rang) .3D.SpringFX.StartHourMin = 12
+Thu Feb 26 16:54:21 2004 (rang) formName Pasted = 
+Thu Feb 26 17:07:00 2004 (rang) formName Pasted = 
+Thu Feb 26 18:47:00 2004 (rang) .3D.SpringFX.FXName = ju_Fo_RotasecteB.ps</LOG>
+</FORM>

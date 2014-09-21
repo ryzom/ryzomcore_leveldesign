@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.3 $" State="modified">
+  <STRUCT>
+    <ATOM Name="Plant Name" Value="Leaves"/>
+    <ATOM Name="Comment" Value="This is an FX"/>
+    <STRUCT Name="3D">
+      <ATOM Name="Bounding Radius" Value="0.5"/>
+      <ATOM Name="LOD 0 min"/>
+      <ATOM Name="Collision Radius" Value="0.5"/>
+      <STRUCT Name="SpringFX">
+        <ATOM Name="FXName" Value="Ju_Fo_BirdsC.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="StartHourMin" Value="19"/>
+        <ATOM Name="StartHourMax" Value="20"/>
+        <ATOM Name="EndHourMin" Value="6"/>
+        <ATOM Name="EndHourMax" Value="7"/>
+      </STRUCT>
+      <STRUCT Name="SummerFX">
+        <ATOM Name="FXName" Value="Ju_Fo_BirdsC.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="StartHourMin" Value="19"/>
+        <ATOM Name="StartHourMax" Value="20"/>
+        <ATOM Name="EndHourMin" Value="6"/>
+        <ATOM Name="EndHourMax" Value="7"/>
+      </STRUCT>
+      <STRUCT Name="AutomnFX">
+        <ATOM Name="FXName" Value="Ju_Fo_BirdsC.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="StartHourMin" Value="19"/>
+        <ATOM Name="StartHourMax" Value="20"/>
+        <ATOM Name="EndHourMin" Value="6"/>
+        <ATOM Name="EndHourMax" Value="7"/>
+      </STRUCT>
+      <STRUCT Name="WinterFX">
+        <ATOM Name="FXName" Value="Ju_Fo_BirdsC.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="StartHourMin" Value="19"/>
+        <ATOM Name="StartHourMax" Value="20"/>
+        <ATOM Name="EndHourMin" Value="6"/>
+        <ATOM Name="EndHourMax" Value="7"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:17:39 2002 (corvazier) File converted from old format
+Wed Jul 23 16:53:21 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_Fee.ps
+Wed Jul 23 16:53:21 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_Fee.ps
+Wed Jul 23 16:53:21 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_Fee.ps
+Wed Jul 23 16:53:21 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_Fee.ps
+Thu Jul 24 10:37:33 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_bibubirdB.ps
+Thu Jul 24 10:37:33 2003 (firroloni) .3D.Shape = 
+Thu Jul 24 10:37:33 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_bibubirdB.ps
+Thu Jul 24 10:37:33 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_bibubirdB.ps
+Thu Jul 24 10:37:33 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_bibubirdB.ps
+Thu Jul 24 10:41:24 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_brumes.ps
+Thu Jul 24 10:41:24 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_brumes.ps
+Thu Jul 24 10:41:24 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_brumes.ps
+Thu Jul 24 10:41:24 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_brumes.ps
+Thu Jul 24 10:42:04 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_brumesB.ps
+Thu Jul 24 10:42:04 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_brumesB.ps
+Thu Jul 24 10:42:04 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_brumesB.ps
+Thu Jul 24 10:42:04 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_brumesB.ps
+Thu Jul 24 10:48:39 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_Geyser4A.ps
+Thu Jul 24 10:48:39 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_Geyser4A.ps
+Thu Jul 24 10:48:39 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_Geyser4A.ps
+Thu Jul 24 10:48:39 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_Geyser4A.ps
+Thu Jul 24 10:49:10 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_Geyser4B.ps
+Thu Jul 24 10:49:10 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_Geyser4B.ps
+Thu Jul 24 10:49:10 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_Geyser4B.ps
+Thu Jul 24 10:49:10 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_Geyser4B.ps
+Thu Jul 24 10:49:51 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_Geyser4C.ps
+Thu Jul 24 10:49:51 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_Geyser4C.ps
+Thu Jul 24 10:49:51 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_Geyser4C.ps
+Thu Jul 24 10:49:51 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_Geyser4C.ps
+Thu Jul 24 10:54:02 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_Grenouille3.ps
+Thu Jul 24 10:54:02 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_Grenouille3.ps
+Thu Jul 24 10:54:02 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_Grenouille3.ps
+Thu Jul 24 10:54:02 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_Grenouille3.ps
+Thu Jul 24 10:54:47 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_GrenouilleB3.ps
+Thu Jul 24 10:54:47 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_GrenouilleB3.ps
+Thu Jul 24 10:54:47 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_GrenouilleB3.ps
+Thu Jul 24 10:54:47 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_GrenouilleB3.ps
+Thu Jul 24 10:55:20 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_GrenouilleC3.ps
+Thu Jul 24 10:55:20 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_GrenouilleC3.ps
+Thu Jul 24 10:55:20 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_GrenouilleC3.ps
+Thu Jul 24 10:55:20 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_GrenouilleC3.ps
+Thu Jul 24 11:00:37 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_ratsC.ps
+Thu Jul 24 11:00:37 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_ratsC.ps
+Thu Jul 24 11:00:37 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_ratsC.ps
+Thu Jul 24 11:00:37 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_ratsC.ps
+Thu Jul 24 11:34:37 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_Rotasecte.ps
+Thu Jul 24 11:34:37 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_Rotasecte.ps
+Thu Jul 24 11:34:37 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_Rotasecte.ps
+Thu Jul 24 11:34:37 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_Rotasecte.ps
+Thu Jul 24 17:46:02 2003 (firroloni) .3D.Shape = Ju_Fo_Rotasecte.ps
+Thu Jul 24 18:30:51 2003 (firroloni) .3D.AutomnFX.FXName = 
+Thu Jul 24 18:30:51 2003 (firroloni) .3D.SpringFX.FXName = 
+Thu Jul 24 18:30:51 2003 (firroloni) .3D.SummerFX.FXName = 
+Thu Jul 24 18:30:51 2003 (firroloni) .3D.WinterFX.FXName = 
+Mon Jul 28 16:47:02 2003 (firroloni) .3D.Shape = Ju_Fo_Birds.ps
+Mon Jul 28 16:48:48 2003 (firroloni) .3D.Shape = Ju_Fo_BirdsB.ps
+Mon Jul 28 16:49:51 2003 (firroloni) .3D.Shape = Ju_Fo_BirdsC.ps
+Wed Aug 06 11:04:37 2003 (firroloni) .3D.Shape = 
+Wed Aug 06 11:04:37 2003 (firroloni) .3D.SpringFX.EndHourMax = 21
+Wed Aug 06 11:04:37 2003 (firroloni) .3D.SpringFX.EndHourMin = 21
+Wed Aug 06 11:04:37 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_BirdsC.ps
+Wed Aug 06 11:04:37 2003 (firroloni) .3D.SpringFX.Mode = Spawn
+Wed Aug 06 11:04:37 2003 (firroloni) .3D.SpringFX.StartHourMax = 19
+Wed Aug 06 11:04:37 2003 (firroloni) .3D.SpringFX.StartHourMin = 9
+Wed Aug 06 11:04:37 2003 (firroloni) .3D.SpringFX.UserParam0 = .80
+Wed Aug 06 11:04:37 2003 (firroloni) formName Pasted = 
+Tue Mar 02 16:50:04 2004 (millas) .3D.SpringFX.EndHourMax = 7
+Tue Mar 02 16:50:04 2004 (millas) .3D.SpringFX.EndHourMin = 6
+Tue Mar 02 16:50:04 2004 (millas) .3D.SpringFX.StartHourMax = 20
+Tue Mar 02 16:50:04 2004 (millas) .3D.SpringFX.StartHourMin = 19
+Tue Mar 02 16:50:04 2004 (millas) formName Pasted = </LOG>
+</FORM>

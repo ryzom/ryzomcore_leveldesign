@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.6 $" State="modified">
+  <STRUCT>
+    <ATOM Name="Plant Name" Value="Leaves"/>
+    <ATOM Name="Comment" Value="This is an FX"/>
+    <STRUCT Name="3D">
+      <ATOM Name="Bounding Radius" Value="0.5"/>
+      <ATOM Name="LOD 0 min"/>
+      <ATOM Name="Collision Radius" Value="0.5"/>
+      <STRUCT Name="SpringFX">
+        <ATOM Name="FXName" Value="Desert-SandBlastA.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value=".1"/>
+        <ATOM Name="StartHourMax" Value=".09"/>
+      </STRUCT>
+      <STRUCT Name="SummerFX">
+        <ATOM Name="FXName" Value="Desert-SandBlastA.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value=".1"/>
+        <ATOM Name="StartHourMax" Value=".09"/>
+      </STRUCT>
+      <STRUCT Name="AutomnFX">
+        <ATOM Name="FXName" Value="Desert-SandBlastA.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value=".1"/>
+        <ATOM Name="StartHourMax" Value=".09"/>
+      </STRUCT>
+      <STRUCT Name="WinterFX">
+        <ATOM Name="FXName" Value="Desert-SandBlastA.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value=".1"/>
+        <ATOM Name="StartHourMax" Value=".09"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:17:51 2002 (corvazier) File converted from old format
+Wed Aug 06 11:53:10 2003 (firroloni) .3D.Shape = 
+Wed Aug 06 11:53:10 2003 (firroloni) .3D.SpringFX.FXName = Desert-SandBlastA.ps
+Wed Aug 06 11:53:10 2003 (firroloni) .3D.SpringFX.Mode = Spawn
+Wed Aug 06 11:53:10 2003 (firroloni) .3D.SpringFX.StartHourMax = 23.9
+Wed Aug 06 11:53:10 2003 (firroloni) formName Pasted = 
+Wed Aug 06 15:07:41 2003 (firroloni) .3D.SpringFX.CycleDuration = 1
+Wed Aug 06 15:07:41 2003 (firroloni) .3D.SpringFX.StartHourMax = .99
+Wed Aug 06 15:07:41 2003 (firroloni) formName Pasted = 
+Mon Nov 17 18:38:42 2003 (firroloni) .3D.SpringFX.CycleDuration = .05
+Mon Nov 17 18:38:42 2003 (firroloni) .3D.SpringFX.StartHourMax = .04
+Mon Nov 17 18:38:42 2003 (firroloni) formName Pasted = 
+Mon Dec 08 11:39:59 2003 (firroloni) .3D.SpringFX.CycleDuration = .2
+Mon Dec 08 11:39:59 2003 (firroloni) .3D.SpringFX.StartHourMax = .19
+Mon Dec 08 11:39:59 2003 (firroloni) formName Pasted = 
+Mon Dec 08 19:12:06 2003 (firroloni) .3D.SpringFX.CycleDuration = .1
+Mon Dec 08 19:12:06 2003 (firroloni) .3D.SpringFX.StartHourMax = .09
+Mon Dec 08 19:12:06 2003 (firroloni) formName Pasted = </LOG>
+</FORM>

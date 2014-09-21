@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <ATOM Name="Plant Name" Value="Leaves"/>
+    <ATOM Name="Comment" Value="This is an FX"/>
+    <STRUCT Name="3D">
+      <ATOM Name="Bounding Radius" Value="0.5"/>
+      <ATOM Name="LOD 0 min"/>
+      <ATOM Name="Collision Radius" Value="0.5"/>
+      <STRUCT Name="SpringFX">
+        <ATOM Name="FXName" Value="ju_fo_Pollen.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="StartHourMin" Value="20"/>
+        <ATOM Name="StartHourMax" Value="21"/>
+        <ATOM Name="EndHourMin" Value="5"/>
+        <ATOM Name="EndHourMax" Value="6"/>
+      </STRUCT>
+      <STRUCT Name="SummerFX">
+        <ATOM Name="FXName" Value="ju_fo_Pollen.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="StartHourMin" Value="20"/>
+        <ATOM Name="StartHourMax" Value="21"/>
+        <ATOM Name="EndHourMin" Value="5"/>
+        <ATOM Name="EndHourMax" Value="6"/>
+      </STRUCT>
+      <STRUCT Name="AutomnFX">
+        <ATOM Name="FXName" Value="ju_fo_PollenB.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="StartHourMin" Value="20"/>
+        <ATOM Name="StartHourMax" Value="21"/>
+        <ATOM Name="EndHourMin" Value="5"/>
+        <ATOM Name="EndHourMax" Value="6"/>
+      </STRUCT>
+      <STRUCT Name="WinterFX">
+        <ATOM Name="FXName" Value="ju_fo_PollenB.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="StartHourMin" Value="20"/>
+        <ATOM Name="StartHourMax" Value="21"/>
+        <ATOM Name="EndHourMin" Value="5"/>
+        <ATOM Name="EndHourMax" Value="6"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:17:46 2002 (corvazier) File converted from old format
+Wed Aug 06 10:29:31 2003 (firroloni) .3D.AutomnFX.FXName = Fo-SolBirthA.ps
+Wed Aug 06 10:29:31 2003 (firroloni) .3D.Shape = 
+Wed Aug 06 10:29:31 2003 (firroloni) .3D.SpringFX.FXName = Fo-SolBirthA.ps
+Wed Aug 06 10:29:31 2003 (firroloni) .3D.SummerFX.FXName = Fo-SolBirthA.ps
+Wed Aug 06 10:29:31 2003 (firroloni) .3D.WinterFX.FXName = Fo-SolBirthA.ps
+Wed Aug 06 10:36:58 2003 (firroloni) .3D.SpringFX.FXName = Fo-SolBirthB.ps
+Wed Aug 06 10:36:58 2003 (firroloni) formName Pasted = 
+Wed Aug 06 10:37:38 2003 (firroloni) .3D.SpringFX.EndHourMax = 20
+Wed Aug 06 10:37:38 2003 (firroloni) .3D.SpringFX.EndHourMin = 18
+Wed Aug 06 10:37:38 2003 (firroloni) .3D.SpringFX.StartHourMax = 10
+Wed Aug 06 10:37:38 2003 (firroloni) .3D.SpringFX.StartHourMin = 8
+Wed Aug 06 10:37:38 2003 (firroloni) formName Pasted = 
+Wed Aug 06 10:44:50 2003 (firroloni) .3D.SpringFX.Mode = UseEndHour
+Wed Aug 06 10:44:50 2003 (firroloni) formName Pasted = 
+Tue Mar 02 17:04:31 2004 (millas) .3D.SpringFX.EndHourMax = 6
+Tue Mar 02 17:04:31 2004 (millas) .3D.SpringFX.EndHourMin = 5
+Tue Mar 02 17:04:31 2004 (millas) .3D.SpringFX.FXName = ju_fo_Pollen.ps
+Tue Mar 02 17:04:31 2004 (millas) .3D.SpringFX.StartHourMax = 21
+Tue Mar 02 17:04:31 2004 (millas) .3D.SpringFX.StartHourMin = 20
+Tue Mar 02 17:04:31 2004 (millas) formName Pasted = 
+Wed Mar 03 10:33:45 2004 (rang) .3D.AutomnFX.FXName = ju_fo_PollenB.ps
+Wed Mar 03 10:33:45 2004 (rang) .3D.SpringFX.FXName = 
+Wed Mar 03 11:16:10 2004 (rang) .3D.WinterFX.FXName = 
+Wed Mar 03 11:19:21 2004 (rang) .3D.SpringFX.FXName = ju_fo_Pollen.ps
+Wed Mar 03 15:52:48 2004 (rang) formName Pasted = 
+Wed Mar 03 16:32:47 2004 (rang) .3D.AutomnFX.FXName = ju_fo_Pollen.ps
+Wed Mar 03 16:32:54 2004 (rang) formName Pasted = 
+Wed Mar 03 18:12:40 2004 (rang) .3D.AutomnFX.FXName = ju_fo_PollenB.ps
+Wed Mar 03 18:12:40 2004 (rang) .3D.WinterFX.FXName = ju_fo_PollenB.ps
+Thu Mar 04 09:32:15 2004 (rang) .3D.AutomnFX.FXName = ju_fo_PollenB.ps
+Thu Mar 04 09:32:15 2004 (rang) .3D.WinterFX.FXName = ju_fo_PollenB.ps
+Thu Mar 04 11:22:49 2004 (rang) formName Pasted = 
+Thu Mar 04 11:24:52 2004 (rang) .3D.SpringFX.FXName = ju_fo_Pollen.ps
+Thu Mar 04 11:24:52 2004 (rang) .3D.SummerFX.FXName = ju_fo_Pollen.ps</LOG>
+</FORM>

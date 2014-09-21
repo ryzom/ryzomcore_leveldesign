@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.4 $" State="modified">
+  <STRUCT>
+    <ATOM Name="Plant Name" Value="Leaves"/>
+    <ATOM Name="Comment" Value="This is an FX"/>
+    <STRUCT Name="3D">
+      <ATOM Name="Bounding Radius" Value="0.5"/>
+      <ATOM Name="LOD 0 min"/>
+      <ATOM Name="Collision Radius" Value="0.5"/>
+      <STRUCT Name="SpringFX">
+        <ATOM Name="FXName" Value="Ju_Fo_brumes.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="StartHourMin" Value="4"/>
+        <ATOM Name="StartHourMax" Value="5"/>
+        <ATOM Name="EndHourMin" Value="9.5"/>
+        <ATOM Name="EndHourMax" Value="10.5"/>
+      </STRUCT>
+      <STRUCT Name="SummerFX">
+        <ATOM Name="FXName" Value="Ju_Fo_brumes.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="StartHourMin" Value="4"/>
+        <ATOM Name="StartHourMax" Value="5"/>
+        <ATOM Name="EndHourMin" Value="9.5"/>
+        <ATOM Name="EndHourMax" Value="10.5"/>
+      </STRUCT>
+      <STRUCT Name="AutomnFX">
+        <ATOM Name="FXName" Value="Ju_Fo_brumes.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="StartHourMin" Value="4"/>
+        <ATOM Name="StartHourMax" Value="5"/>
+        <ATOM Name="EndHourMin" Value="9.5"/>
+        <ATOM Name="EndHourMax" Value="10.5"/>
+      </STRUCT>
+      <STRUCT Name="WinterFX">
+        <ATOM Name="FXName" Value="Ju_Fo_brumes.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="StartHourMin" Value="4"/>
+        <ATOM Name="StartHourMax" Value="5"/>
+        <ATOM Name="EndHourMin" Value="9.5"/>
+        <ATOM Name="EndHourMax" Value="10.5"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:17:39 2002 (corvazier) File converted from old format
+Wed Jul 23 16:53:21 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_Fee.ps
+Wed Jul 23 16:53:21 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_Fee.ps
+Wed Jul 23 16:53:21 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_Fee.ps
+Wed Jul 23 16:53:21 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_Fee.ps
+Thu Jul 24 10:37:33 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_bibubirdB.ps
+Thu Jul 24 10:37:33 2003 (firroloni) .3D.Shape = 
+Thu Jul 24 10:37:33 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_bibubirdB.ps
+Thu Jul 24 10:37:33 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_bibubirdB.ps
+Thu Jul 24 10:37:33 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_bibubirdB.ps
+Thu Jul 24 10:41:24 2003 (firroloni) .3D.AutomnFX.FXName = Ju_Fo_brumes.ps
+Thu Jul 24 10:41:24 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_brumes.ps
+Thu Jul 24 10:41:24 2003 (firroloni) .3D.SummerFX.FXName = Ju_Fo_brumes.ps
+Thu Jul 24 10:41:24 2003 (firroloni) .3D.WinterFX.FXName = Ju_Fo_brumes.ps
+Thu Jul 24 17:43:49 2003 (firroloni) .3D.Shape = Ju_Fo_brumes.ps
+Thu Jul 24 18:30:33 2003 (firroloni) .3D.AutomnFX.FXName = 
+Thu Jul 24 18:30:33 2003 (firroloni) .3D.SpringFX.FXName = 
+Thu Jul 24 18:30:33 2003 (firroloni) .3D.SummerFX.FXName = 
+Thu Jul 24 18:30:33 2003 (firroloni) .3D.WinterFX.FXName = 
+Wed Aug 06 11:05:32 2003 (firroloni) .3D.Shape = 
+Wed Aug 06 11:05:32 2003 (firroloni) .3D.SpringFX.EndHourMax = 11
+Wed Aug 06 11:05:32 2003 (firroloni) .3D.SpringFX.EndHourMin = 10
+Wed Aug 06 11:05:32 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_brumes.ps
+Wed Aug 06 11:05:32 2003 (firroloni) .3D.SpringFX.Mode = UseEndHour
+Wed Aug 06 11:05:32 2003 (firroloni) .3D.SpringFX.StartHourMax = 5
+Wed Aug 06 11:05:32 2003 (firroloni) .3D.SpringFX.StartHourMin = 4
+Wed Aug 06 11:05:32 2003 (firroloni) formName Pasted = 
+Wed Aug 06 11:06:40 2003 (firroloni) .3D.SpringFX.EndHourMax = 10.5
+Wed Aug 06 11:06:40 2003 (firroloni) .3D.SpringFX.EndHourMin = 9.5
+Wed Aug 06 11:06:40 2003 (firroloni) formName Pasted = </LOG>
+</FORM>
