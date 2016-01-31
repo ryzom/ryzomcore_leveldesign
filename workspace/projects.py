@@ -338,11 +338,11 @@ ICCharacter["Packages"] += [ [ "characters_shapes", [ ] ] ]
 ICCharacter["Packages"] += [ [ "characters_animations", [ ] ] ]
 ICCharacterMapsConditions = [ ]
 for armor in ICCharacterArmors:
-	ICCharacterMapsConditions += [ "-ifnot" ]
+	ICCharacterMapsConditions += [ "--ifnot" ]
 	ICCharacterMapsConditions += [ armor + "*" ]
 ICCharacter["Packages"] += [ [ "characters_maps_hr", [ "characters_maps_hr.bnp" ] + ICCharacterMapsConditions, "characters.hlsbank" ] ]
 for armor in ICCharacterArmors:
-	ICCharacter["Packages"] += [ [ "characters_maps_hr", [ "characters_maps_" + armor + "_hr.bnp", "-if", armor + "*" ], "characters.hlsbank" ] ]
+	ICCharacter["Packages"] += [ [ "characters_maps_hr", [ "characters_maps_" + armor + "_hr.bnp", "--if", armor + "*" ], "characters.hlsbank" ] ]
 ICCharacter["Refs"] = [ ]
 InstallClientData += [ ICCharacter ]
 
