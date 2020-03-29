@@ -36,6 +36,9 @@ ContinentPath = "continents/" + ContinentName
 CommonName = ContinentName
 CommonPath = ContinentPath
 
+ParentName = "matis"
+ParentPath = "continents/" + ParentName
+
 
 # *** SOURCE DIRECTORIES LEVELDESIGN/WORLD ***
 ContinentLeveldesignWorldDirectory = ContinentName
@@ -46,11 +49,12 @@ ContinentLeveldesignWorldDirectory = ContinentName
 # Shape directories
 ShapeSourceDirectories = [ ]
 ShapeSourceDirectories += [ "stuff/" + ContinentName + "/sky" ]
+ShapeSourceDirectories += [ "landscape/water/meshes/" + EcosystemName + "/" + ContinentName ]
 
 # Maps directories
 MapSourceDirectories = [ ]
 MapSourceDirectories += [ "stuff/" + ContinentName + "/sky" ]
-
+#MapSourceDirectories += [ "landscape/water/meshes/" + EcosystemName + "/" + ContinentName ]
 MapUncompressedSourceDirectories = [ ]
 
 # Ligo directories
@@ -60,14 +64,19 @@ LigoMaxSourceDirectory = LigoBaseSourceDirectory + "/max"
 # Zone directories
 ZoneSourceDirectory = [ "landscape/zones/" + ContinentName ] # For old snowballs style landscape when not using ligo
 
+# ZoneLight directories
+WaterMapSourceDirectories = [ ]
+WaterMapSourceDirectories += [ "landscape/water/meshes/" + EcosystemName ]
+
 # RBank directories
 RBankCmbSourceDirectories = [ ]
 
 # Ig directories
 IgLandSourceDirectories = [ ]
-# IgLandSourceDirectories += [ "landscape/zones/" + ContinentName ] # For old snowballs style landscape when not using ligo
+#IgLandSourceDirectories += [ "landscape/zones/" + ContinentName ] # For old snowballs style landscape when not using ligo
 IgOtherSourceDirectories = [ ]
 IgOtherSourceDirectories += [ "stuff/" + ContinentName + "/sky" ] # The canopee in the sky
+#IgOtherSourceDirectories += [ "landscape/water/meshes/" + EcosystemName + "/" + ContinentName ]
 IgPrimitiveSourceDirectories = [ ]
 IgPrimitiveSourceDirectories += [ "primitive/" + ContinentName ] # Contains plants (trees, etc) primitive made with world editor
 
@@ -100,9 +109,11 @@ ShapeLookupDirectories += [ EcosystemPath + "/shape_optimized" ]
 ShapeLookupDirectories += [ EcosystemPath + "/shape_with_coarse_mesh" ]
 ShapeLookupDirectories += [ ContinentPath + "/shape_optimized" ]
 ShapeLookupDirectories += [ ContinentPath + "/shape_with_coarse_mesh" ]
-# ShapeLookupDirectories += [ ContinentName + "/zone_light/water_shapes_lighted" ] huh?
-ShapeLookupDirectories += [ "ecosystems/lacustre/shape_optimized" ] # additional
-ShapeLookupDirectories += [ "ecosystems/lacustre/shape_with_coarse_mesh" ] # additional
+#ShapeLookupDirectories += [ ContinentName + "/zone_light/water_shapes_lighted" ] huh?
+ShapeLookupDirectories += [ ParentPath + "/shape_optimized" ] # additional
+ShapeLookupDirectories += [ ParentPath + "/shape_with_coarse_mesh" ] # additional
+#ShapeLookupDirectories += [ "ecosystems/lacustre/shape_optimized" ] # additional
+#ShapeLookupDirectories += [ "ecosystems/lacustre/shape_with_coarse_mesh" ] # additional
 
 # Map lookup directories used by shape
 MapLookupDirectories = [ ]
@@ -114,8 +125,10 @@ MapLookupDirectories += [ EcosystemPath + "/map_export" ]
 MapLookupDirectories += [ EcosystemPath + "/map_uncompressed" ]
 MapLookupDirectories += [ ContinentPath + "/map_export" ]
 MapLookupDirectories += [ ContinentPath + "/map_uncompressed" ]
-MapLookupDirectories += [ "ecosystems/lacustre/map_export" ] # additional
-MapLookupDirectories += [ "ecosystems/lacustre/map_uncompressed" ] # additional
+MapLookupDirectories += [ ParentPath + "/map_export" ] # additional
+MapLookupDirectories += [ ParentPath + "/map_uncompressed" ] # additional
+#MapLookupDirectories += [ "ecosystems/lacustre/map_export" ] # additional
+#MapLookupDirectories += [ "ecosystems/lacustre/map_uncompressed" ] # additional
 
 # PacsPrim lookup directories used by ai_wmap
 PacsPrimLookupDirectories = [ ]
@@ -126,6 +139,7 @@ PropertiesExportBuildSearchPaths = [ ]
 PropertiesExportBuildSearchPaths += IgLookupDirectories
 PropertiesExportBuildSearchPaths += ShapeLookupDirectories
 PropertiesExportBuildSearchPaths += MapLookupDirectories
+PropertiesExportBuildSearchPaths += PacsPrimLookupDirectories
 
 
 # *** EXPORT DIRECTORIES FOR THE BUILD PIPELINE ***
@@ -151,7 +165,6 @@ LigoEcosystemTagExportDirectory = EcosystemPath + "/ligo_es_tag"
 
 # Zone directories
 ZoneExportDirectory = ContinentPath + "/zone"
-WaterMapSourceDirectories = [ ]
 
 # RBank directories
 RBankCmbExportDirectory = CommonPath + "/rbank_cmb_export"
@@ -160,8 +173,14 @@ RBankCmbTagExportDirectory = CommonPath + "/rbank_cmb_tag_export"
 # Smallbank directories
 SmallbankExportDirectory = EcosystemPath + "/smallbank"
 
+# Farbank directories
+FarbankBuildDirectory = EcosystemPath + "/farbank"
+
 # Tiles directories
 DisplaceExportDirectory = EcosystemPath + "/diplace"
+
+# Tiles directories
+TilesExportDirectory = EcosystemPath + "/tiles"
 
 # Ig directories
 IgStaticLandExportDirectory = ContinentPath + "/ig_static_land" # Landscape IG eported from 3dsmax not elevated by the heightmap

@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <STRUCT>
+    <ARRAY Name="Include_patats">
+      <ATOM Value="flora_test-roots-001"/>
+    </ARRAY>
+    <ARRAY Name="Plants">
+      <STRUCT>
+        <ATOM Name="File name" Value="FO_S2_bigroot_A.plant"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="File name" Value="FO_S2_bigroot_B.plant"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="File name" Value="FO_S2_bigroot_C.plant"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="File name" Value="fo_S3_champignou_B.plant"/>
+        <ATOM Name="Density" Value="0.001"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="File name" Value="fo_S3_champignou_A.plant"/>
+        <ATOM Name="Density" Value="0.001"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="File name" Value="FX_Fo-SolBirthA.plant"/>
+        <ATOM Name="Density" Value="FX"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="File name" Value="FX_Ju-SolbirthA.plant"/>
+        <ATOM Name="Density" Value="FX"/>
+      </STRUCT>
+    </ARRAY>
+    <ATOM Name="Jitter_Pos" Value="1"/>
+    <ATOM Name="Scale_Min" Value="0.5"/>
+    <ATOM Name="Scale_Max" Value="5"/>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Wed Oct 23 14:44:00 2002 (Schnittger) .Include_patats[0] = verdant_heights-forest-001
+Wed Oct 23 14:44:00 2002 (Schnittger) .Include_patats[1] = verdant_heights-forest-002
+Wed Oct 23 14:44:00 2002 (Schnittger) .Include_patats[2] = verdant_heights-forest-003
+Wed Oct 23 14:44:00 2002 (Schnittger) .Include_patats[3] = verdant_heights-forest-004
+Wed Oct 23 14:44:00 2002 (Schnittger) .Include_patats[4] = verdant_heights-forest-005
+Wed Oct 23 14:44:00 2002 (Schnittger) .Include_patats[5] = verdant_heights-forest-006
+Wed Oct 23 14:44:00 2002 (Schnittger) Form Parents = 
+Wed Oct 23 14:44:00 2002 (Schnittger) formName Resized = 6
+Wed Oct 23 14:44:51 2002 (Schnittger) .Jitter_Pos = 1
+Wed Oct 23 15:41:42 2002 (Schnittger) Form Parents = 
+Wed Oct 23 17:47:20 2002 (Schnittger) .Include_patats[0] = verdant_heights-bush-001
+Wed Oct 23 17:47:20 2002 (Schnittger) formName Resized = 1
+Wed Oct 23 17:47:40 2002 (Schnittger) Form Parents = 
+Wed Oct 23 18:02:27 2002 (Schnittger) .Include_patats[0] = verdant_heights-forest_edge-001
+Wed Oct 23 18:10:50 2002 (Schnittger) .Include_patats[0] = verdant_heights-bush-001
+Wed Oct 23 18:11:49 2002 (Schnittger) .Include_patats[0] = verdant_heights-forest_edge-001
+Wed Oct 23 18:11:49 2002 (Schnittger) Form Parents = 
+Wed Oct 23 18:13:32 2002 (Schnittger) .Include_patats[0] = verdant_heights-forest_edge-001
+Thu Oct 24 15:53:24 2002 (Schnittger) .Plants[0].File name = FO_S2_bigroot_A.plant
+Thu Oct 24 15:53:24 2002 (Schnittger) .Plants[1].File name = FO_S2_bigroot_B.plant
+Thu Oct 24 15:53:24 2002 (Schnittger) Form Parents = 
+Thu Oct 24 15:53:24 2002 (Schnittger) formName Resized = 2
+Thu Oct 24 15:53:43 2002 (Schnittger) .Include_patats[0] = verdant_heights-roots-001
+Thu Oct 24 15:54:38 2002 (Schnittger) .Scale_Max = 1.5
+Thu Oct 24 15:54:38 2002 (Schnittger) .Scale_Min = 0.4
+Thu Oct 24 16:04:52 2002 (Schnittger) .Scale_Max = 3.0
+Thu Oct 24 16:04:52 2002 (Schnittger) .Scale_Min = 0.2
+Thu Oct 24 16:22:25 2002 (Schnittger) .Scale_Max = 5
+Thu Oct 24 16:22:25 2002 (Schnittger) .Scale_Min = 0.5
+Thu Oct 24 17:11:43 2002 (Schnittger) .Include_patats[1] = verdant_heights-roots-002
+Thu Oct 24 17:11:43 2002 (Schnittger) formName Resized = 2
+Fri Oct 25 15:07:42 2002 (Schnittger) .Plants[2].File name = FO_S2_bigroot_C.plant
+Fri Oct 25 15:07:43 2002 (Schnittger) formName Resized = 3
+Fri Oct 25 15:57:06 2002 (Schnittger) .Plants[3].Density = Normal
+Fri Oct 25 15:57:06 2002 (Schnittger) .Plants[3].File name = FO_S3_fougere.plant
+Fri Oct 25 15:57:06 2002 (Schnittger) .Plants[4].File name = fo_S3_champignou_B.plant
+Fri Oct 25 15:57:06 2002 (Schnittger) .Plants[5].File name = fo_S3_champignou_A.plant
+Fri Oct 25 15:57:06 2002 (Schnittger) formName Resized = 6
+Fri Oct 25 16:15:26 2002 (Schnittger) .Plants[3].Density = VeryRare
+Fri Oct 25 16:15:26 2002 (Schnittger) .Plants[4].Density = VeryRare
+Fri Oct 25 16:15:26 2002 (Schnittger) .Plants[5].Density = VeryRare
+Fri Oct 25 16:31:48 2002 (Schnittger) .Plants[3].Density = 0.005
+Fri Oct 25 16:31:48 2002 (Schnittger) .Plants[4].Density = 0.005
+Fri Oct 25 16:31:48 2002 (Schnittger) formName Deleted = 
+Tue Oct 29 10:49:28 2002 (Schnittger) .Include_patats[2] = verdant_heights-roots-003
+Tue Oct 29 10:49:28 2002 (Schnittger) formName Resized = 3
+Tue Oct 29 11:33:51 2002 (Schnittger) .Plants[3].Density = 0.001
+Tue Oct 29 11:33:51 2002 (Schnittger) .Plants[4].Density = 0.001
+Tue Oct 29 11:33:51 2002 (Schnittger) .Plants[5].Density = FX
+Tue Oct 29 11:33:51 2002 (Schnittger) .Plants[5].File name = FX_Fo-SolBirthA.plant
+Tue Oct 29 11:33:51 2002 (Schnittger) .Plants[6].Density = FX
+Tue Oct 29 11:33:51 2002 (Schnittger) .Plants[6].File name = FX_Ju-SolbirthA.plant
+Tue Oct 29 11:33:51 2002 (Schnittger) formName Resized = 7
+Wed Nov 06 18:08:01 2002 (Schnittger) .Include_patats[0] = flora_test-roots-001
+Wed Nov 06 18:08:01 2002 (Schnittger) formName Deleted = </LOG>
+</FORM>

@@ -29,8 +29,17 @@
 
 # *** PROCESS CONFIG ***
 ProcessToComplete = [ ]
+ProcessToComplete += [ "properties" ]
 ProcessToComplete += [ "map" ]
 ProcessToComplete += [ "shape" ]
+ProcessToComplete += [ "ligo" ]
+ProcessToComplete += [ "zone" ]
+ProcessToComplete += [ "ig" ]
+ProcessToComplete += [ "zone_light" ]
+ProcessToComplete += [ "rbank" ]
+ProcessToComplete += [ "ig_light" ]
+ProcessToComplete += [ "ps" ]
+ProcessToComplete += [ "ai_wmap" ]
 
 
 # *** ECOSYSTEM AND CONTINENT NAMES ***
@@ -41,6 +50,14 @@ ContinentName = "matis"
 ContinentPath = "continents/" + ContinentName
 CommonName = ContinentName
 CommonPath = ContinentPath
+
+
+# *** LANDSCAPE NAME ***
+LandscapeName = ContinentName
+
+# *** CONTINENT FILE ***
+ContinentSheet = "lesfalaises"
+ContinentFile = "lesfalaises(matis)/" + ContinentSheet + ".continent"
 
 
 # *** SHAPE EXPORT OPTIONS ***
@@ -73,9 +90,65 @@ MultipleTilesPostfix += [ "_su" ]
 MultipleTilesPostfix += [ "_au" ]
 MultipleTilesPostfix += [ "_wi" ]
 
+# Name of the tilebank to use
+BankTileBankName = EcosystemName
+
+
+# *** LIGO OPTIONS ***
+LigoExportLand = ContinentName + ".land"
+LigoExportOnePass = 0
+LigoExportColormap = "colormap_" + ContinentName + ".tga"
+LigoExportHeightmap1 = "big_" + ContinentName + ".tga"
+LigoExportZFactor1 = "1.0"
+LigoExportHeightmap2 = "noise_" + ContinentName + ".tga"
+LigoExportZFactor2 = "0.5"
+LigoTileBankFile = "landscape/_texture_tiles/" + EcosystemName + "/" + EcosystemName + ".bank"
+
+# *** ZONE REGIONS ( up-left, down-right ) ***
+ZoneRegions = [ ] 
+ZoneRegions += [ [ "3_ac" ] + [ "50_dd" ] ]
+
+
+# *** RBANK OPTIONS ***
+
+# Options
+RBankVerbose = 1
+RBankConsistencyCheck = 0
+RbankReduceSurfaces = 1
+RbankSmoothBorders = 1
+RbankComputeElevation = 0
+RbankComputeLevels = 1
+RbankLinkElements = 1
+RbankCutEdges = 1
+RbankUseZoneSquare = 0
+
+# Region to compute ( ALPHA UPPER CASE! )
+RbankZoneUl = "3_AC"
+RbankZoneDr = "50_DD"
+
+# Output names
+RbankRbankName = LandscapeName
+
+
 # *** MAPS OPTIONS ***
 ReduceBitmapFactor = 0
 # list all panoply files
 MapPanoplyFileList = None
 # name of the .hlsbank to build.
 MapHlsBankFileName = None
+
+
+# *** AI WMAP OPTIONS ***
+AiWmapContinentName = ContinentName
+AiWmapVerbose = 0
+AiWmapStartPoints = [ ]
+AiWmapStartPoints += [ ContinentName + " 4240 -4180" ] # matis main land
+AiWmapStartPoints += [ ContinentName + " 3563 -6446" ] # matis main land
+AiWmapStartPoints += [ ContinentName + " 3781 -6834" ] # matis main land
+AiWmapStartPoints += [ ContinentName + " 4248 -6772" ] # matis main land
+AiWmapStartPoints += [ ContinentName + " 4421 -6602" ] # matis main land
+AiWmapStartPoints += [ ContinentName + " 5356 -7620" ] # matis main land
+AiWmapStartPoints += [ ContinentName + " 5524 -7424" ] # matis main land
+AiWmapStartPoints += [ ContinentName + " 1569 -6841" ] # matis newbieland
+AiWmapStartPoints += [ ContinentName + " 1745 -4927" ] # test room (aka the GM play ground)
+

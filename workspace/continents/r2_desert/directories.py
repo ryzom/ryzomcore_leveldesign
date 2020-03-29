@@ -246,6 +246,7 @@ PackedZoneBuildDirectory = CommonPath + "/pz_col_meshes"
 
 # Cartographer directories
 CartographerBuildDirectory = CommonPath + "/cartographer"
+CartographerMapBuildDirectory = CommonPath + "/cartographer_map"
 
 
 # *** INSTALL DIRECTORIES IN THE CLIENT DATA ***
@@ -281,3 +282,4 @@ PackedZoneInstallDirectory = CommonName + "_pz"
 
 # Cartographer directory
 CartographerInstallDirectory = MapInstallDirectory
+IslandsInstallDirectory = PackedZoneInstallDirectory

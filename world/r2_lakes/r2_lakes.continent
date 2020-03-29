@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.5 $" State="modified">
+  <PARENT Filename="tryker.continent"/>
+  <STRUCT>
+    <ATOM Name="Name" Value="r2_lakes"/>
+    <ATOM Name="PacsRBank" Value="r2_lakes.rbank"/>
+    <ATOM Name="PacsGR" Value="r2_lakes.gr"/>
+    <ATOM Name="LandscapeIG" Value="r2_lakes_ig.txt"/>
+    <ARRAY Name="Villages">
+      <STRUCT>
+        <ATOM Name="Zone" Value="34_hm"/>
+        <ATOM Name="ForceLoadDist" Value="10000"/>
+        <ATOM Name="LoadDist" Value="10000"/>
+        <ATOM Name="UnloadDist" Value="10000"/>
+        <ATOM Name="CenterX" Value="4000"/>
+        <ATOM Name="CenterY" Value="2220"/>
+        <ARRAY Name="IgList">
+          <STRUCT>
+            <ATOM Name="IgName" Value="Water_r2_lacustre.ig"/>
+          </STRUCT>
+        </ARRAY>
+      </STRUCT>
+    </ARRAY>
+    <ARRAY Name="ZCs"/>
+    <ATOM Name="FogDistMap" Value="fog_r2_lakes_dist.tga"/>
+    <ATOM Name="FogDepthMap" Value="fog_r2_lakes_depth.tga"/>
+    <ATOM Name="NoRainMap" Value="r2_lakes_no_rain.tga"/>
+    <ATOM Name="ZoneMin" Value="6_HM"/>
+    <ATOM Name="ZoneMax" Value="67_JV"/>
+    <ARRAY Name="MicroLifePrimitives"/>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Fri Dec 30 16:31:28 2005 (rousseau) .FogDepthMap = fog_r2_lakes_depth.tga
+Fri Dec 30 16:31:28 2005 (rousseau) .FogDistMap = fog_r2_lakes_dist.tga
+Fri Dec 30 16:31:28 2005 (rousseau) .NoRainMap = r2_lakes_no_rain.tga
+Mon Mar 20 18:46:12 2006 (puzin) .Villages[0].Altitude = 0
+Mon Mar 20 18:46:12 2006 (puzin) .Villages[0].CenterX = 4000
+Mon Mar 20 18:46:12 2006 (puzin) .Villages[0].CenterY = 2000
+Mon Mar 20 18:46:12 2006 (puzin) .Villages[0].Zone = 26_hm
+Mon Mar 20 18:52:28 2006 (puzin) formName Resized = 1
+Mon Mar 20 19:31:32 2006 (puzin) .Villages[0].Altitude = 
+Tue Mar 21 16:29:07 2006 (puzin) .Villages[0].Zone = 34_hm
+Tue Mar 21 16:30:16 2006 (puzin) .Villages[0].CenterY = 2220</LOG>
+</FORM>

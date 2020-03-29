@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.7 $" State="modified">
+  <STRUCT>
+    <ATOM Name="Name" Value="les iles vivantes"/>
+    <STRUCT Name="LandscapePointLightMaterial">
+      <ATOM Name="R" Value="255"/>
+      <ATOM Name="G" Value="255"/>
+      <ATOM Name="B" Value="255"/>
+      <ATOM Name="A" Value="255"/>
+    </STRUCT>
+    <STRUCT Name="SpringWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="fair1.weather_setup"/>
+        <ATOM Value="fair2.weather_setup"/>
+        <ATOM Value="fair3.weather_setup"/>
+        <ATOM Value="clouds1.weather_setup"/>
+        <ATOM Value="clouds2.weather_setup"/>
+        <ATOM Value="thunder_storm.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="10"/>
+        <ATOM Value="10"/>
+        <ATOM Value="30"/>
+        <ATOM Value="30"/>
+        <ATOM Value="20"/>
+        <ATOM/>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="SummerWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="fair1.weather_setup"/>
+        <ATOM Value="fair2.weather_setup"/>
+        <ATOM Value="fair3.weather_setup"/>
+        <ATOM Value="clouds1.weather_setup"/>
+        <ATOM Value="clouds2.weather_setup"/>
+        <ATOM Value="thunder_storm.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="30"/>
+        <ATOM Value="20"/>
+        <ATOM Value="10"/>
+        <ATOM Value="20"/>
+        <ATOM Value="10"/>
+        <ATOM Value="10"/>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="AutumnWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="fair1.weather_setup"/>
+        <ATOM Value="fair2.weather_setup"/>
+        <ATOM Value="fair3.weather_setup"/>
+        <ATOM Value="clouds1.weather_setup"/>
+        <ATOM Value="clouds2.weather_setup"/>
+        <ATOM Value="thunder_storm.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="5"/>
+        <ATOM Value="5"/>
+        <ATOM Value="30"/>
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="WinterWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="fair1.weather_setup"/>
+        <ATOM Value="fair2.weather_setup"/>
+        <ATOM Value="fair3.weather_setup"/>
+        <ATOM Value="clouds1.weather_setup"/>
+        <ATOM Value="clouds2.weather_setup"/>
+        <ATOM Value="thunder_storm.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="10"/>
+        <ATOM Value="5"/>
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="30"/>
+      </ARRAY>
+    </STRUCT>
+    <ATOM Name="LocalizedName" Value="uiContinentLesIlesVivantes"/>
+    <ATOM Name="SkySheetSpring" Value="fo_mainland_sp.sky"/>
+    <ATOM Name="SkySheetSummer" Value="fo_mainland_su.sky"/>
+    <ATOM Name="SkySheetAutumn" Value="fo_mainland_au.sky"/>
+    <ATOM Name="SkySheetWinter" Value="fo_mainland_wi.sky"/>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:17:01 2002 (corvazier) File converted from old format
+Fri Oct 18 11:26:21 2002 (corvazier) formName Pasted = 
+Wed Nov 12 15:13:32 2003 (corvazier) .LocalizedName = uiContinentLesIlesVivantes
+Tue May 25 14:58:49 2004 (gatto) .SkySheetAutumn = fo_mainland_au.sky
+Tue May 25 14:58:49 2004 (gatto) .SkySheetSpring = fo_mainland_sp.sky
+Tue May 25 14:58:49 2004 (gatto) .SkySheetSummer = fo_mainland_su.sky
+Tue May 25 14:58:49 2004 (gatto) .SkySheetWinter = fo_mainland_wi.sky
+Wed May 26 11:36:07 2004 (gatto) formName Pasted = 
+Wed May 26 12:10:20 2004 (gatto) formName Pasted = </LOG>
+</FORM>

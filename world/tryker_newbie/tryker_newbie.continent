@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.20 $" State="modified">
+  <PARENT Filename="tryker.continent"/>
+  <STRUCT>
+    <ATOM Name="Name" Value="tryker_newbie"/>
+    <STRUCT Name="LightLandscapeDay">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.5"/>
+        <ATOM Name="Y" Value="0.0"/>
+        <ATOM Name="Z" Value="-0.85"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="R" Value="255"/>
+        <ATOM Name="G" Value="255"/>
+        <ATOM Name="B" Value="255"/>
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+      <STRUCT Name="Specular">
+        <ATOM Name="R" Value="255"/>
+        <ATOM Name="G" Value="255"/>
+        <ATOM Name="B" Value="255"/>
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightLandscapeNight">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.5"/>
+        <ATOM Name="Y" Value="0.0"/>
+        <ATOM Name="Z" Value="-0.85"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+      <STRUCT Name="Specular">
+        <ATOM Name="R" Value="0"/>
+        <ATOM Name="G" Value="0"/>
+        <ATOM Name="B" Value="0"/>
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightEntityDay">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.5"/>
+        <ATOM Name="Y" Value="0.0"/>
+        <ATOM Name="Z" Value="-0.85"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="R" Value="255"/>
+        <ATOM Name="G" Value="255"/>
+        <ATOM Name="B" Value="255"/>
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+      <STRUCT Name="Specular">
+        <ATOM Name="R" Value="255"/>
+        <ATOM Name="G" Value="255"/>
+        <ATOM Name="B" Value="255"/>
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightEntityNight">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.5"/>
+        <ATOM Name="Y" Value="0.0"/>
+        <ATOM Name="Z" Value="-0.85"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="B" Value="37"/>
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+      <STRUCT Name="Specular">
+        <ATOM Name="R" Value="0"/>
+        <ATOM Name="G" Value="0"/>
+        <ATOM Name="B" Value="0"/>
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightRootDay">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.5"/>
+        <ATOM Name="Y" Value="0.0"/>
+        <ATOM Name="Z" Value="-0.85"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="R" Value="255"/>
+        <ATOM Name="G" Value="255"/>
+        <ATOM Name="B" Value="255"/>
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+      <STRUCT Name="Specular">
+        <ATOM Name="R" Value="255"/>
+        <ATOM Name="G" Value="255"/>
+        <ATOM Name="B" Value="255"/>
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightRootDusk">
+      <STRUCT Name="Ambiant">
+        <ATOM Name="R" Value="61"/>
+        <ATOM Name="G" Value="29"/>
+        <ATOM Name="B" Value="71"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightRootNight">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.5"/>
+        <ATOM Name="Y" Value="0.0"/>
+        <ATOM Name="Z" Value="-0.85"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+      <STRUCT Name="Specular">
+        <ATOM Name="R" Value="0"/>
+        <ATOM Name="G" Value="0"/>
+        <ATOM Name="B" Value="0"/>
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LandscapePointLightMaterial">
+      <ATOM Name="R" Value="255"/>
+      <ATOM Name="G" Value="255"/>
+      <ATOM Name="B" Value="255"/>
+      <ATOM Name="A" Value="255"/>
+    </STRUCT>
+    <ATOM Name="PacsRBank" Value="tryker_newbie.rbank"/>
+    <ATOM Name="PacsGR" Value="tryker_newbie.gr"/>
+    <ATOM Name="Ecosystem" Value="lacustre.ecosystem"/>
+    <ATOM Name="LandscapeIG" Value="tryker_newbie_ig.txt"/>
+    <ATOM Name="SkyDay" Value="tr_sky_day.shape"/>
+    <ATOM Name="SkyNight" Value="tr_sky_day.shape"/>
+    <ATOM Name="SkyIg" Value="canope_tryker.ig"/>
+    <ARRAY Name="Villages">
+      <STRUCT Name="tr_village_nb_01">
+        <ATOM Name="Zone" Value="212_fc"/>
+        <ATOM Name="Altitude" Value="0"/>
+        <ATOM Name="ForceLoadDist" Value="400"/>
+        <ATOM Name="LoadDist" Value="500"/>
+        <ATOM Name="UnloadDist" Value="600"/>
+        <ATOM Name="CenterX" Value="160"/>
+        <ATOM Name="CenterY" Value="160"/>
+        <ARRAY Name="IgList">
+          <STRUCT>
+            <ATOM Name="IgName" Value="tr_village_nb_01.ig"/>
+          </STRUCT>
+        </ARRAY>
+      </STRUCT>
+      <STRUCT Name="tr_village_nb_02">
+        <ATOM Name="Zone" Value="217_fd"/>
+        <ATOM Name="ForceLoadDist" Value="400"/>
+        <ATOM Name="LoadDist" Value="500"/>
+        <ATOM Name="UnloadDist" Value="600"/>
+        <ARRAY Name="IgList">
+          <STRUCT>
+            <ATOM Name="IgName" Value="tr_village_nb_02.ig"/>
+          </STRUCT>
+        </ARRAY>
+        <ATOM Name="Rotation" Value="0"/>
+      </STRUCT>
+      <STRUCT Name="tr_village_nb_03">
+        <ATOM Name="Zone" Value="212_fi"/>
+        <ATOM Name="ForceLoadDist" Value="400"/>
+        <ATOM Name="LoadDist" Value="500"/>
+        <ATOM Name="UnloadDist" Value="600"/>
+        <ARRAY Name="IgList">
+          <STRUCT>
+            <ATOM Name="IgName" Value="tr_village_nb_03.ig"/>
+          </STRUCT>
+        </ARRAY>
+        <ATOM Name="Rotation" Value="0"/>
+      </STRUCT>
+      <STRUCT Name="tr_village_nb_04">
+        <ATOM Name="Zone" Value="217_fl"/>
+        <ATOM Name="ForceLoadDist" Value="400"/>
+        <ATOM Name="LoadDist" Value="500"/>
+        <ATOM Name="UnloadDist" Value="600"/>
+        <ARRAY Name="IgList">
+          <STRUCT>
+            <ATOM Name="IgName" Value="tr_village_nb_04.ig"/>
+          </STRUCT>
+        </ARRAY>
+        <ATOM Name="Rotation" Value="0"/>
+      </STRUCT>
+      <STRUCT Name="tr_village_nb_05">
+        <ATOM Name="Zone" Value="210_fm"/>
+        <ATOM Name="ForceLoadDist" Value="400"/>
+        <ATOM Name="LoadDist" Value="500"/>
+        <ATOM Name="UnloadDist" Value="600"/>
+        <ARRAY Name="IgList">
+          <STRUCT>
+            <ATOM Name="IgName" Value="tr_village_nb_05.ig"/>
+          </STRUCT>
+        </ARRAY>
+        <ATOM Name="Rotation" Value="0"/>
+      </STRUCT>
+      <STRUCT Name="tr_water_nb">
+        <ATOM Name="Zone" Value="215_fd"/>
+        <ATOM Name="Altitude" Value="0"/>
+        <ATOM Name="ForceLoadDist" Value="1000"/>
+        <ATOM Name="LoadDist" Value="1500"/>
+        <ATOM Name="UnloadDist" Value="2000"/>
+        <ATOM Name="CenterX" Value="400"/>
+        <ATOM Name="CenterY" Value="240"/>
+        <ARRAY Name="IgList">
+          <STRUCT>
+            <ATOM Name="IgName" Value="tr_water_nb.ig"/>
+          </STRUCT>
+        </ARRAY>
+      </STRUCT>
+    </ARRAY>
+    <ARRAY Name="ZCs">
+      <STRUCT/>
+    </ARRAY>
+    <ATOM Name="FogDayMap" Value="fog_tryker_day.tga"/>
+    <ATOM Name="FogDuskMap" Value="fog_tryker_day.tga"/>
+    <ATOM Name="FogNightMap" Value="fog_tryker_night.tga"/>
+    <ATOM Name="FogDistMap" Value="fog_tryker_dist.tga"/>
+    <ATOM Name="FogDepthMap" Value="fog_tryker_depth.tga"/>
+    <ATOM Name="NoRainMap" Value="tryker_newbie_no_rain.tga"/>
+    <ATOM Name="ZoneMin" Value="207_FA"/>
+    <ATOM Name="ZoneMax" Value="218_FO"/>
+    <ATOM Name="RootFogStart" Value="1000000"/>
+    <ATOM Name="RootFogEnd" Value="1000000"/>
+    <STRUCT Name="SpringWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="la_fair1.weather_setup"/>
+        <ATOM Value="la_fair2.weather_setup"/>
+        <ATOM Value="la_fair3.weather_setup"/>
+        <ATOM Value="la_clouds1.weather_setup"/>
+        <ATOM Value="la_clouds2.weather_setup"/>
+        <ATOM Value="la_thunder_storm.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="30"/>
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="5"/>
+        <ATOM Value="5"/>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="SummerWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="la_fair1.weather_setup"/>
+        <ATOM Value="la_fair2.weather_setup"/>
+        <ATOM Value="la_fair3.weather_setup"/>
+        <ATOM Value="la_clouds1.weather_setup"/>
+        <ATOM Value="la_clouds2.weather_setup"/>
+        <ATOM Value="la_thunder_storm.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="40"/>
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="10"/>
+        <ATOM Value="5"/>
+        <ATOM Value="5"/>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="AutumnWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="la_fair1.weather_setup"/>
+        <ATOM Value="la_fair2.weather_setup"/>
+        <ATOM Value="la_fair3.weather_setup"/>
+        <ATOM Value="la_clouds1.weather_setup"/>
+        <ATOM Value="la_clouds2.weather_setup"/>
+        <ATOM Value="la_thunder_storm.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="30"/>
+        <ATOM Value="10"/>
+        <ATOM Value="10"/>
+        <ATOM Value="10"/>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="WinterWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="la_fair1.weather_setup"/>
+        <ATOM Value="la_fair2.weather_setup"/>
+        <ATOM Value="la_fair3.weather_setup"/>
+        <ATOM Value="la_clouds1.weather_setup"/>
+        <ATOM Value="la_clouds2.weather_setup"/>
+        <ATOM Value="la_thunder_snow.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="30"/>
+        <ATOM Value="10"/>
+        <ATOM Value="10"/>
+        <ATOM Value="20"/>
+        <ATOM Value="10"/>
+        <ATOM Value="20"/>
+      </ARRAY>
+    </STRUCT>
+    <ATOM Name="SkyFogPart" Value="tr_sky_day_fog.shape"/>
+    <ATOM Name="SpringCanopyIG" Value="canope_tryker.ig"/>
+    <ATOM Name="SummerCanopyIG" Value="canope_tryker.ig"/>
+    <ATOM Name="AutumnCanopyIG" Value="canope_tryker.ig"/>
+    <ATOM Name="WinterCanopyIG" Value="canope_tryker.ig"/>
+    <ATOM Name="WorldMap" Value="tryker_newbie_map.tga"/>
+    <ATOM Name="LocalizedName" Value="uiContinentTryker"/>
+    <ARRAY Name="MicroLifePrimitives">
+      <ATOM Value="fx_tr_newbieland.primitive"/>
+    </ARRAY>
+    <ATOM Name="SkySheetSpring" Value="la_mainland_sp.sky"/>
+    <ATOM Name="SkySheetSummer" Value="la_mainland_su.sky"/>
+    <ATOM Name="SkySheetAutumn" Value="la_mainland_au.sky"/>
+    <ATOM Name="SkySheetWinter" Value="la_mainland_wi.sky"/>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:17:07 2002 (corvazier) File converted from old format
+Tue Jul 02 15:21:42 2002 (tran) .Villages[0].Altitude = -3
+Tue Jul 02 15:25:27 2002 (tran) .Villages[1].CenterX = 240
+Tue Jul 02 15:25:27 2002 (tran) .Villages[1].CenterY = 320
+Tue Jul 02 15:25:27 2002 (tran) .Villages[1].ForceLoadDist = 500
+Tue Jul 02 15:25:27 2002 (tran) .Villages[1].LoadDist = 700
+Tue Jul 02 15:25:27 2002 (tran) .Villages[1].UnloadDist = 1000
+Tue Jul 02 15:25:27 2002 (tran) .Villages[1].Zone = 208_ec
+Tue Jul 02 15:25:27 2002 (tran) formName Resized = 1
+Tue Jul 02 15:45:52 2002 (tran) .Villages[1].IgList[0].IgName = tr_villagea.ig
+Tue Jul 02 15:45:52 2002 (tran) .Villages[2].CenterX = 160
+Tue Jul 02 15:45:52 2002 (tran) .Villages[2].CenterY = 160
+Tue Jul 02 15:45:52 2002 (tran) .Villages[2].ForceLoadDist = 500
+Tue Jul 02 15:45:52 2002 (tran) .Villages[2].IgList[0].IgName = tr_villageb.ig
+Tue Jul 02 15:45:52 2002 (tran) .Villages[2].LoadDist = 700
+Tue Jul 02 15:45:52 2002 (tran) .Villages[2].UnloadDist = 1000
+Tue Jul 02 15:45:52 2002 (tran) .Villages[2].Zone = 200_eh
+Tue Jul 02 15:45:52 2002 (tran) .Villages[3].CenterX = 240
+Tue Jul 02 15:45:52 2002 (tran) .Villages[3].CenterY = 240
+Tue Jul 02 15:45:52 2002 (tran) .Villages[3].ForceLoadDist = 500
+Tue Jul 02 15:45:52 2002 (tran) .Villages[3].IgList[0].IgName = tr_villagec.ig
+Tue Jul 02 15:45:52 2002 (tran) .Villages[3].LoadDist = 700
+Tue Jul 02 15:45:52 2002 (tran) .Villages[3].UnloadDist = 1000
+Tue Jul 02 15:45:52 2002 (tran) .Villages[3].Zone = 208_eh
+Tue Jul 02 15:45:52 2002 (tran) .Villages[4].CenterX = 240
+Tue Jul 02 15:45:52 2002 (tran) .Villages[4].CenterY = 240
+Tue Jul 02 15:45:52 2002 (tran) .Villages[4].ForceLoadDist = 500
+Tue Jul 02 15:45:52 2002 (tran) .Villages[4].IgList[0].IgName = tr_villaged.ig
+Tue Jul 02 15:45:52 2002 (tran) .Villages[4].LoadDist = 700
+Tue Jul 02 15:45:52 2002 (tran) .Villages[4].UnloadDist = 1000
+Tue Jul 02 15:45:52 2002 (tran) .Villages[4].Zone = 208_ds
+Tue Jul 02 15:45:52 2002 (tran) formName Resized = 1
+Tue Jul 02 18:23:16 2002 (tran) .LightEntityDay.Ambiant.B = 90
+Tue Jul 02 18:23:16 2002 (tran) .LightEntityDay.Ambiant.G = 80
+Tue Jul 02 18:23:16 2002 (tran) .LightEntityDay.Ambiant.R = 65
+Wed Jul 03 16:13:25 2002 (tran) .LightLandscapeNight.Ambiant.B = 103
+Wed Jul 03 16:13:25 2002 (tran) .LightLandscapeNight.Ambiant.G = 78
+Wed Jul 03 16:13:25 2002 (tran) .LightLandscapeNight.Ambiant.R = 35
+Wed Jul 03 16:15:21 2002 (tran) .LightLandscapeDay.Ambiant.G = 78
+Wed Jul 03 16:15:21 2002 (tran) .LightLandscapeDay.Ambiant.R = 35
+Wed Jul 03 16:15:21 2002 (tran) .LightLandscapeNight.Ambiant.B = 120
+Wed Jul 03 16:15:21 2002 (tran) .LightLandscapeNight.Ambiant.G = 50
+Wed Jul 03 16:15:21 2002 (tran) .LightLandscapeNight.Ambiant.R = 20
+Wed Jul 03 16:15:21 2002 (tran) formName Pasted = 
+Wed Jul 03 16:16:11 2002 (tran) formName Pasted = 
+Wed Jul 03 17:21:33 2002 (tran) .LightEntityDay.Ambiant.B = 124
+Wed Jul 03 17:21:33 2002 (tran) .LightEntityDay.Ambiant.G = 103
+Wed Jul 03 17:21:33 2002 (tran) .LightEntityDay.Ambiant.R = 65
+Wed Jul 03 17:53:08 2002 (tran) .LightEntityDay.Ambiant.B = 64
+Wed Jul 03 17:53:08 2002 (tran) .LightEntityDay.Ambiant.G = 92
+Wed Jul 03 17:53:08 2002 (tran) .LightEntityDay.Ambiant.R = 109
+Wed Jul 03 17:53:08 2002 (tran) formName Pasted = 
+Tue Jul 30 15:25:47 2002 (corvazier) .FogDay.Color.A = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .FogEnd = 550.0
+Tue Jul 30 15:25:47 2002 (corvazier) .FogNight.Color.A = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityDay.Diffuse.A = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityDay.Diffuse.B = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityDay.Diffuse.G = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityDay.Diffuse.R = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityDay.Direction.X = -0.5
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityDay.Direction.Y = 0.0
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityDay.Direction.Z = -0.85
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityDay.Specular.A = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityDay.Specular.B = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityDay.Specular.G = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityDay.Specular.R = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityNight.Ambiant.A = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityNight.Diffuse.A = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityNight.Diffuse.B = 80
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityNight.Diffuse.G = 20
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityNight.Diffuse.R = 0
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityNight.Direction.X = -0.5
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityNight.Direction.Y = 0.0
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityNight.Direction.Z = -0.85
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityNight.Specular.A = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityNight.Specular.B = 0
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityNight.Specular.G = 0
+Tue Jul 30 15:25:47 2002 (corvazier) .LightEntityNight.Specular.R = 0
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeDay.Diffuse.A = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeDay.Diffuse.B = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeDay.Diffuse.G = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeDay.Diffuse.R = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeDay.Direction.X = -0.5
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeDay.Direction.Y = 0.0
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeDay.Direction.Z = -0.85
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeDay.Specular.A = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeDay.Specular.B = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeDay.Specular.G = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeDay.Specular.R = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeNight.Diffuse.A = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeNight.Diffuse.B = 80
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeNight.Diffuse.G = 20
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeNight.Diffuse.R = 0
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeNight.Direction.X = -0.5
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeNight.Direction.Y = 0.0
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeNight.Direction.Z = -0.85
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeNight.Specular.A = 255
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeNight.Specular.B = 0
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeNight.Specular.G = 0
+Tue Jul 30 15:25:47 2002 (corvazier) .LightLandscapeNight.Specular.R = 0
+
+Tue Jul 30 15:25:47 2002 (corvazier) .SkyIg = 
+Tue Jul 30 15:25:47 2002 (corvazier) Form Parents = 
+Tue Jul 30 15:25:47 2002 (corvazier) formName Pasted = 
+Fri Oct 18 11:25:55 2002 (corvazier) formName Pasted =
+Tue Jul 30 15:25:47 2002 (corvazier) formName Pasted = 
+Tue Oct 29 14:52:30 2002 (tran) .FogDay.Far = 500
+Tue Oct 29 14:52:30 2002 (tran) .LandscapeIG = tryker_ig.txt
+Tue Oct 29 15:57:23 2002 (tran) .FogDay.Color.B = 255
+Tue Oct 29 15:57:23 2002 (tran) .FogDay.Color.G = 230
+Tue Oct 29 15:57:23 2002 (tran) .FogDay.Color.R = 155
+Tue Oct 29 15:58:51 2002 (tran) .FogDay.Far = 450
+Tue Oct 29 16:11:02 2002 (tran) .FogDayMap = 
+Tue Oct 29 16:14:38 2002 (tran) .FogDayMap = fog_tryker_day.tga
+Tue Oct 29 17:21:43 2002 (tran) .FogDay.Near = 200
+Tue Oct 29 17:22:25 2002 (tran) .FogNight.Far = 450
+Tue Oct 29 17:22:37 2002 (tran) .FogNight.Near = 200
+Wed Oct 30 11:36:04 2002 (tran) .FogEnd = 500
+Wed Oct 30 11:36:04 2002 (tran) .FogStart = 300
+Wed Oct 30 11:48:13 2002 (tran) .FogStart = 200
+Fri Nov 29 11:37:44 2002 (gatto) .SpringWeatherFunction.WeatherSetups[0] = fair1.weather_setup
+Fri Nov 29 11:37:44 2002 (gatto) formName Resized = 6
+Fri Nov 29 11:37:53 2002 (gatto) .SpringWeatherFunction.WeatherSetups[1] = fair3.weather_setup
+Fri Nov 29 11:38:27 2002 (gatto) .SpringWeatherFunction.WeatherSetups[1] = fair2.weather_setup
+Fri Nov 29 11:38:27 2002 (gatto) .SpringWeatherFunction.WeatherSetups[2] = fair3.weather_setup
+Fri Nov 29 11:38:27 2002 (gatto) .SpringWeatherFunction.WeatherSetups[3] = clouds.weather_setup
+Fri Nov 29 11:38:27 2002 (gatto) .SpringWeatherFunction.WeatherSetups[4] = rain1.weather_setup
+Fri Nov 29 11:38:27 2002 (gatto) .SpringWeatherFunction.WeatherSetups[5] = rain2.weather_setup
+Fri Nov 29 11:39:10 2002 (gatto) .SummerWeatherFunction.WeatherSetups[0] = mist.weather_setup
+Fri Nov 29 11:39:10 2002 (gatto) .SummerWeatherFunction.WeatherSetups[1] = fair1.weather_setup
+Fri Nov 29 11:39:10 2002 (gatto) .SummerWeatherFunction.WeatherSetups[2] = fair2.weather_setup
+Fri Nov 29 11:39:10 2002 (gatto) .SummerWeatherFunction.WeatherSetups[3] = fair3.weather_setup
+Fri Nov 29 11:39:10 2002 (gatto) .SummerWeatherFunction.WeatherSetups[4] = rain1.weather_setup
+Fri Nov 29 11:39:10 2002 (gatto) .SummerWeatherFunction.WeatherSetups[5] = rain3.weather_setup
+Fri Nov 29 11:40:18 2002 (gatto) .AutomnWeatherFunction.WeatherSetups[0] = fair2.weather_setup
+Fri Nov 29 11:40:18 2002 (gatto) .AutomnWeatherFunction.WeatherSetups[1] = clouds.weather_setup
+Fri Nov 29 11:40:18 2002 (gatto) .AutomnWeatherFunction.WeatherSetups[2] = rain1.weather_setup
+Fri Nov 29 11:40:18 2002 (gatto) .AutomnWeatherFunction.WeatherSetups[3] = rain2.weather_setup
+Fri Nov 29 11:40:18 2002 (gatto) .AutomnWeatherFunction.WeatherSetups[4] = rain3.weather_setup
+Fri Nov 29 11:40:18 2002 (gatto) formName Resized = 5
+Fri Nov 29 11:40:59 2002 (gatto) .WinterWeatherFunction.WeatherSetups[0] = mist.weather_setup
+Fri Nov 29 11:40:59 2002 (gatto) .WinterWeatherFunction.WeatherSetups[1] = fair2.weather_setup
+Fri Nov 29 11:40:59 2002 (gatto) .WinterWeatherFunction.WeatherSetups[2] = clouds.weather_setup
+Fri Nov 29 11:40:59 2002 (gatto) .WinterWeatherFunction.WeatherSetups[3] = rain1.weather_setup
+Fri Nov 29 11:40:59 2002 (gatto) .WinterWeatherFunction.WeatherSetups[4] = rain2.weather_setup
+Fri Nov 29 11:40:59 2002 (gatto) .WinterWeatherFunction.WeatherSetups[5] = rain3.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .AutomnWeatherFunction.WeatherSetups[0] = TR_fair2.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .AutomnWeatherFunction.WeatherSetups[1] = TR_clouds.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .AutomnWeatherFunction.WeatherSetups[2] = TR_rain1.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .AutomnWeatherFunction.WeatherSetups[3] = TR_rain2.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .AutomnWeatherFunction.WeatherSetups[4] = TR_rain3.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .SpringWeatherFunction.WeatherSetups[0] = TR_fair1.weather_setup
+
+Fri Dec 06 14:14:48 2002 (gatto) .SpringWeatherFunction.WeatherSetups[1] = TR_fair2.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .SpringWeatherFunction.WeatherSetups[2] = TR_fair3.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .SpringWeatherFunction.WeatherSetups[3] = TR_clouds.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .SpringWeatherFunction.WeatherSetups[4] = TR_rain1.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .SpringWeatherFunction.WeatherSetups[5] = TR_rain2.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .SummerWeatherFunction.WeatherSetups[0] = TR_mist.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .SummerWeatherFunction.WeatherSetups[1] = TR_fair1.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .SummerWeatherFunction.WeatherSetups[2] = TR_fair2.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .SummerWeatherFunction.WeatherSetups[3] = TR_fair3.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .SummerWeatherFunction.WeatherSetups[4] = TR_rain1.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .SummerWeatherFunction.WeatherSetups[5] = TR_rain3.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .WinterWeatherFunction.WeatherSetups[0] = TR_mist.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .WinterWeatherFunction.WeatherSetups[1] = TR_fair2.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .WinterWeatherFunction.WeatherSetups[2] = TR_clouds.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .WinterWeatherFunction.WeatherSetups[3] = TR_rain1.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .WinterWeatherFunction.WeatherSetups[4] = TR_rain2.weather_setup
+Fri Dec 06 14:14:48 2002 (gatto) .WinterWeatherFunction.WeatherSetups[5] = TR_rain3.weather_setup
+Fri Dec 06 15:32:17 2002 (gatto) .AutumnCanopyIG = canope_tryker.ig
+Fri Dec 06 15:32:17 2002 (gatto) .FogDuskMap = fog_tryker_day.tga
+Fri Dec 06 15:32:17 2002 (gatto) .FogNightMap = fog_tryker_day.tga
+Fri Dec 06 15:32:17 2002 (gatto) .SkyDay = tr_sky_day.shape
+Fri Dec 06 15:32:17 2002 (gatto) .SkyFogPart = tr_sky_day_fog.shape
+Fri Dec 06 15:32:17 2002 (gatto) .SkyIg = canope_tryker.ig
+Fri Dec 06 15:32:17 2002 (gatto) .SkyNight = tr_sky_day.shape
+Fri Dec 06 15:32:17 2002 (gatto) .SpringCanopyIG = canope_tryker.ig
+Fri Dec 06 15:32:17 2002 (gatto) .SummerCanopyIG = canope_tryker.ig
+Fri Dec 06 15:32:17 2002 (gatto) .WinterCanopyIG = canope_tryker.ig
+Mon Dec 30 14:59:12 2002 (gatto) .LightLandscapeNight.Ambiant.B = 90
+Mon Dec 30 15:23:43 2002 (gatto) .LightLandscapeNight.Ambiant.B = 50
+Mon Dec 30 15:23:43 2002 (gatto) .LightLandscapeNight.Ambiant.G = 20
+Mon Dec 30 15:23:43 2002 (gatto) .LightLandscapeNight.Ambiant.R = 0
+Mon Dec 30 15:23:43 2002 (gatto) .LightLandscapeNight.Diffuse.B = 70
+Mon Dec 30 15:23:43 2002 (gatto) .LightLandscapeNight.Diffuse.G = 50
+Mon Dec 30 15:30:27 2002 (gatto) .LightLandscapeNight.Ambiant.B = 60
+Mon Dec 30 15:30:27 2002 (gatto) .LightLandscapeNight.Ambiant.G = 30
+Mon Dec 30 15:30:27 2002 (gatto) .LightLandscapeNight.Ambiant.R = 10
+Mon Dec 30 15:30:27 2002 (gatto) .LightLandscapeNight.Diffuse.B = 90
+Mon Dec 30 15:30:27 2002 (gatto) .LightLandscapeNight.Diffuse.G = 70
+Mon Dec 30 15:30:27 2002 (gatto) .LightLandscapeNight.Diffuse.R = 20
+Mon Dec 30 16:07:49 2002 (gatto) .LightRootNight.Ambiant.B = 60
+Mon Dec 30 16:07:49 2002 (gatto) .LightRootNight.Ambiant.G = 30
+Mon Dec 30 16:07:49 2002 (gatto) .LightRootNight.Ambiant.R = 10
+Mon Dec 30 16:07:49 2002 (gatto) .LightRootNight.Diffuse.B = 90
+Mon Dec 30 16:07:49 2002 (gatto) .LightRootNight.Diffuse.G = 70
+Mon Dec 30 16:07:49 2002 (gatto) .LightRootNight.Diffuse.R = 20
+Mon Dec 30 16:12:21 2002 (gatto) .LightRootDusk.Ambiant.B = 50
+Mon Dec 30 16:12:21 2002 (gatto) .LightRootDusk.Ambiant.G = 20
+Mon Dec 30 16:12:21 2002 (gatto) .LightRootDusk.Ambiant.R = 80
+Mon Dec 30 16:12:21 2002 (gatto) .LightRootDusk.Diffuse.B = 70
+Mon Dec 30 16:12:21 2002 (gatto) .LightRootDusk.Diffuse.G = 50
+Mon Dec 30 16:12:21 2002 (gatto) .LightRootDusk.Diffuse.R = 100
+Mon Dec 30 16:13:11 2002 (gatto) .LightRootDay.Ambiant.B = 103
+Mon Dec 30 16:13:11 2002 (gatto) .LightRootDay.Ambiant.G = 78
+Mon Dec 30 16:13:11 2002 (gatto) .LightRootDay.Ambiant.R = 35
+Mon Dec 30 16:14:55 2002 (gatto) .LightRootNight.Ambiant.B = 30
+Mon Dec 30 16:14:55 2002 (gatto) .LightRootNight.Ambiant.G = 15
+Mon Dec 30 16:15:06 2002 (gatto) .LightRootNight.Diffuse.B = 50
+Mon Dec 30 16:15:06 2002 (gatto) .LightRootNight.Diffuse.G = 30
+Mon Dec 30 16:30:23 2002 (gatto) .LightLandscapeDusk.Ambiant.B = 50
+Mon Dec 30 16:30:23 2002 (gatto) .LightLandscapeDusk.Ambiant.G = 20
+Mon Dec 30 16:30:23 2002 (gatto) .LightLandscapeDusk.Ambiant.R = 80
+Mon Dec 30 16:30:23 2002 (gatto) .LightLandscapeDusk.Diffuse.B = 70
+
+Mon Dec 30 16:30:23 2002 (gatto) .LightLandscapeDusk.Diffuse.G = 50
+Mon Dec 30 16:30:23 2002 (gatto) .LightLandscapeDusk.Diffuse.R = 100
+Mon Dec 30 16:30:23 2002 (gatto) .LightRootNight.Ambiant.B = 60
+Mon Dec 30 16:30:23 2002 (gatto) .LightRootNight.Ambiant.G = 30
+Mon Dec 30 16:30:23 2002 (gatto) .LightRootNight.Diffuse.B = 90
+Mon Dec 30 16:30:23 2002 (gatto) .LightRootNight.Diffuse.G = 70
+Tue Dec 31 15:34:19 2002 (gatto) .LightLandscapeDusk.Ambiant.B = 71
+Tue Dec 31 15:34:19 2002 (gatto) .LightLandscapeDusk.Ambiant.G = 29
+Tue Dec 31 15:34:19 2002 (gatto) .LightLandscapeDusk.Ambiant.R = 61
+Tue Dec 31 15:34:19 2002 (gatto) .LightLandscapeDusk.Diffuse.B = 124
+Tue Dec 31 15:34:19 2002 (gatto) .LightLandscapeDusk.Diffuse.G = 88
+Tue Dec 31 15:34:19 2002 (gatto) .LightLandscapeDusk.Diffuse.R = 116
+Tue Dec 31 15:42:48 2002 (gatto) .LightLandscapeNight.Ambiant.B = 30
+Tue Dec 31 15:42:48 2002 (gatto) .LightLandscapeNight.Ambiant.G = 13
+Tue Dec 31 15:42:48 2002 (gatto) .LightLandscapeNight.Ambiant.R = 17
+Tue Dec 31 15:42:48 2002 (gatto) .LightLandscapeNight.Diffuse.B = 83
+Tue Dec 31 15:42:48 2002 (gatto) .LightLandscapeNight.Diffuse.G = 56
+Tue Dec 31 15:42:48 2002 (gatto) .LightLandscapeNight.Diffuse.R = 45
+Tue Dec 31 15:43:51 2002 (gatto) .LightEntityNight.Ambiant.B = 43
+Tue Dec 31 15:43:51 2002 (gatto) .LightEntityNight.Ambiant.G = 28
+Tue Dec 31 15:43:51 2002 (gatto) .LightEntityNight.Ambiant.R = 15
+Tue Dec 31 15:43:51 2002 (gatto) .LightRootNight.Ambiant.B = 43
+Tue Dec 31 15:43:51 2002 (gatto) .LightRootNight.Ambiant.G = 28
+Tue Dec 31 15:43:51 2002 (gatto) .LightRootNight.Ambiant.R = 15
+Tue Dec 31 15:44:23 2002 (gatto) .LightEntityNight.Diffuse.B = 137
+Tue Dec 31 15:44:23 2002 (gatto) .LightEntityNight.Diffuse.G = 94
+Tue Dec 31 15:44:23 2002 (gatto) .LightEntityNight.Diffuse.R = 75
+Tue Dec 31 15:44:23 2002 (gatto) .LightRootNight.Diffuse.B = 137
+Tue Dec 31 15:44:23 2002 (gatto) .LightRootNight.Diffuse.G = 94
+Tue Dec 31 15:44:23 2002 (gatto) .LightRootNight.Diffuse.R = 75
+Tue Dec 31 15:46:56 2002 (gatto) .LightEntityDusk.Ambiant.B = 71
+Tue Dec 31 15:46:56 2002 (gatto) .LightEntityDusk.Ambiant.G = 29
+Tue Dec 31 15:46:56 2002 (gatto) .LightEntityDusk.Ambiant.R = 61
+Tue Dec 31 15:46:56 2002 (gatto) .LightEntityDusk.Diffuse.B = 24
+Tue Dec 31 15:46:56 2002 (gatto) .LightEntityDusk.Diffuse.G = 88
+Tue Dec 31 15:46:56 2002 (gatto) .LightEntityDusk.Diffuse.R = 116
+Tue Dec 31 15:46:56 2002 (gatto) .LightRootDusk.Ambiant.B = 71
+Tue Dec 31 15:46:56 2002 (gatto) .LightRootDusk.Ambiant.G = 29
+Tue Dec 31 15:46:56 2002 (gatto) .LightRootDusk.Ambiant.R = 61
+Tue Dec 31 15:46:56 2002 (gatto) .LightRootDusk.Diffuse.B = 84
+Tue Dec 31 15:46:56 2002 (gatto) .LightRootDusk.Diffuse.G = 28
+Tue Dec 31 15:46:56 2002 (gatto) .LightRootDusk.Diffuse.R = 116
+Thu Jan 02 12:18:09 2003 (gatto) .WinterWeatherFunction.WeatherSetups[5] = TR_snow1.weather_setup
+Tue Feb 04 14:49:48 2003 (corvazier) .NoRainMap = tryker_no_rain.tga
+Mon Feb 10 13:49:39 2003 (tran) .RootFogEnd = 1000000
+Mon Feb 10 13:49:39 2003 (tran) .RootFogStart = 1000000
+Tue Feb 11 14:40:01 2003 (gatto) .SummerWeatherFunction.WeatherSetups[5] = TR_thunder1.weather_setup
+Tue Feb 11 14:40:11 2003 (gatto) .AutomnWeatherFunction.WeatherSetups[4] = TR_thunder1.weather_setup
+Wed Feb 26 14:21:41 2003 (tran) .FogNightMap = fog_tryker_night.tga
+Wed Nov 12 15:12:17 2003 (corvazier) .LocalizedName = uiContinentTryker
+Wed Dec 24 12:00:34 2003 (tran) .FogDayMap = fog_tryker_day.tga
+
+Wed Dec 24 12:00:34 2003 (tran) .FogDepthMap = fog_tryker_depth.tga
+Wed Dec 24 12:00:34 2003 (tran) .FogDistMap = fog_tryker_dist.tga
+Wed Dec 24 12:00:34 2003 (tran) .FogDuskMap = fog_tryker_day.tga
+Wed Dec 24 12:00:34 2003 (tran) .FogNightMap = fog_tryker_night.tga
+Wed Dec 24 12:00:34 2003 (tran) .NoRainMap = tryker_no_rain.tga
+Wed Dec 24 12:00:34 2003 (tran) .SkyIg = canope_tryker.ig
+Wed Dec 24 12:00:34 2003 (tran) .ZoneMax = 207_FA
+Wed Dec 24 12:00:34 2003 (tran) .ZoneMin = 219_FP
+Wed Dec 24 12:15:01 2003 (tran) .Villages[0] Renamed = tr_village_nb_01
+Wed Dec 24 12:15:01 2003 (tran) .Villages[0].Zone = 212_fc
+Wed Dec 24 12:15:01 2003 (tran) .Villages[1] Renamed = tr_village_nb_02
+Wed Dec 24 12:15:01 2003 (tran) .Villages[1].Zone = 217_fd
+Wed Dec 24 12:15:01 2003 (tran) .Villages[2] Renamed = tr_village_nb_03
+Wed Dec 24 12:15:01 2003 (tran) .Villages[2].Zone = 212_fi
+Wed Dec 24 12:15:01 2003 (tran) .Villages[3] Renamed = tr_village_nb_04
+Wed Dec 24 12:15:01 2003 (tran) .Villages[3].Zone = 217_fl
+Wed Dec 24 12:15:01 2003 (tran) .Villages[4] Renamed = tr_village_nb_05
+Wed Dec 24 12:15:01 2003 (tran) .Villages[4].Zone = 210_fm
+Wed Dec 24 12:15:01 2003 (tran) formName Pasted = 
+Wed Dec 24 12:15:01 2003 (tran) formName Resized = 1
+Wed Dec 24 12:32:11 2003 (tran) .Villages[0].IgList[0].IgName = tr_village_nb_01.ig
+Wed Dec 24 12:32:11 2003 (tran) .Villages[1].IgList[0].IgName = tr_village_nb_02.ig
+Wed Dec 24 12:32:11 2003 (tran) .Villages[2].IgList[0].IgName = tr_village_nb_03.ig
+Wed Dec 24 12:32:11 2003 (tran) .Villages[3].IgList[0].IgName = tr_village_nb_04.ig
+Wed Dec 24 12:32:11 2003 (tran) .Villages[4].IgList[0].IgName = tr_village_nb_05.ig
+Mon Jan 05 17:56:58 2004 (tran) .Villages[5] Renamed = tr_water_nb
+Mon Jan 05 17:56:58 2004 (tran) .Villages[5].Altitude = 0
+Mon Jan 05 17:56:58 2004 (tran) .Villages[5].CenterX = 400
+Mon Jan 05 17:56:58 2004 (tran) .Villages[5].CenterY = 240
+Mon Jan 05 17:56:58 2004 (tran) .Villages[5].ForceLoadDist = 1000
+Mon Jan 05 17:56:58 2004 (tran) .Villages[5].IgList[0].IgName = tr_water_nb.ig
+Mon Jan 05 17:56:58 2004 (tran) .Villages[5].LoadDist = 1500
+Mon Jan 05 17:56:58 2004 (tran) .Villages[5].UnloadDist = 2000
+Mon Jan 05 17:56:58 2004 (tran) .Villages[5].Zone = 215_fd
+Mon Jan 05 17:56:58 2004 (tran) formName Pasted = 
+Mon Jan 05 17:56:58 2004 (tran) formName Resized = 6
+Tue Jan 06 20:25:37 2004 (tran) .Villages[1].Rotation = 1
+Tue Jan 06 20:25:37 2004 (tran) .Villages[2].Rotation = 2
+Tue Jan 06 20:25:37 2004 (tran) .Villages[3].Rotation = 1
+Tue Jan 06 20:25:37 2004 (tran) .Villages[4].Rotation = 2
+Tue Jan 06 20:26:48 2004 (tran) .Villages[0].ForceLoadDist = 400
+Tue Jan 06 20:26:48 2004 (tran) .Villages[0].LoadDist = 500
+Tue Jan 06 20:26:48 2004 (tran) .Villages[0].UnloadDist = 600
+Tue Jan 06 20:26:48 2004 (tran) .Villages[1].ForceLoadDist = 400
+Tue Jan 06 20:26:48 2004 (tran) .Villages[1].LoadDist = 500
+Tue Jan 06 20:26:48 2004 (tran) .Villages[1].UnloadDist = 600
+Tue Jan 06 20:26:48 2004 (tran) .Villages[2].ForceLoadDist = 400
+Tue Jan 06 20:26:48 2004 (tran) .Villages[2].LoadDist = 500
+Tue Jan 06 20:26:48 2004 (tran) .Villages[2].UnloadDist = 600
+Tue Jan 06 20:26:48 2004 (tran) .Villages[3].ForceLoadDist = 400
+Tue Jan 06 20:26:48 2004 (tran) .Villages[3].LoadDist = 500
+Tue Jan 06 20:26:48 2004 (tran) .Villages[3].UnloadDist = 600
+Tue Jan 06 20:26:48 2004 (tran) .Villages[4].ForceLoadDist = 400
+Tue Jan 06 20:26:48 2004 (tran) .Villages[4].LoadDist = 500
+Tue Jan 06 20:26:48 2004 (tran) .Villages[4].UnloadDist = 600
+Fri Jan 09 15:09:12 2004 (tran) .Villages[1].Rotation = 0
+Fri Jan 09 15:09:12 2004 (tran) .Villages[2].Rotation = 0
+Fri Jan 09 15:09:12 2004 (tran) .Villages[3].Rotation = 0
+Fri Jan 09 15:09:12 2004 (tran) .Villages[4].Rotation = 0
+Fri Feb 20 16:01:46 2004 (tran) .WorldMap = tryker_newbie_map.tga
+Fri Mar 19 18:23:41 2004 (rang) .MicroLifePrimitives[0] = fx_tr_newbieland.primitive 
+Wed Jun 16 12:15:51 2004 (gatto) formName Pasted = 
+Wed Sep 08 15:53:33 2004 (tran) .FogEnd = 
+Wed Sep 08 15:53:33 2004 (tran) .FogStart = 
+
+Wed Sep 08 15:53:33 2004 (tran) .LightEntityDay.Ambiant.B = 
+Wed Sep 08 15:53:33 2004 (tran) .LightEntityDay.Ambiant.G = 
+Wed Sep 08 15:53:33 2004 (tran) .LightEntityDay.Ambiant.R = 
+Wed Sep 08 15:53:33 2004 (tran) .LightEntityDusk.Ambiant.B = 
+Wed Sep 08 15:53:33 2004 (tran) .LightEntityDusk.Ambiant.G = 
+Wed Sep 08 15:53:33 2004 (tran) .LightEntityDusk.Ambiant.R = 
+Wed Sep 08 15:53:33 2004 (tran) .LightEntityDusk.Diffuse.B = 
+Wed Sep 08 15:53:33 2004 (tran) .LightEntityDusk.Diffuse.G = 
+Wed Sep 08 15:53:33 2004 (tran) .LightEntityDusk.Diffuse.R = 
+Wed Sep 08 15:53:33 2004 (tran) .LightEntityNight.Ambiant.B = 
+Wed Sep 08 15:53:33 2004 (tran) .LightEntityNight.Ambiant.G = 
+Wed Sep 08 15:53:33 2004 (tran) .LightEntityNight.Ambiant.R = 
+Wed Sep 08 15:53:33 2004 (tran) .LightEntityNight.Diffuse.B = 37
+Wed Sep 08 15:53:33 2004 (tran) .LightEntityNight.Diffuse.G = 
+Wed Sep 08 15:53:33 2004 (tran) .LightEntityNight.Diffuse.R = 
+Wed Sep 08 15:53:33 2004 (tran) .LightLandscapeDay.Ambiant.B = 
+Wed Sep 08 15:53:33 2004 (tran) .LightLandscapeDay.Ambiant.G = 
+Wed Sep 08 15:53:33 2004 (tran) .LightLandscapeDay.Ambiant.R = 
+Wed Sep 08 15:53:33 2004 (tran) .LightLandscapeDusk.Ambiant.B = 
+Wed Sep 08 15:53:33 2004 (tran) .LightLandscapeDusk.Ambiant.G = 
+Wed Sep 08 15:53:33 2004 (tran) .LightLandscapeDusk.Ambiant.R = 
+Wed Sep 08 15:53:33 2004 (tran) .LightLandscapeDusk.Diffuse.B = 
+Wed Sep 08 15:53:33 2004 (tran) .LightLandscapeDusk.Diffuse.G = 
+Wed Sep 08 15:53:33 2004 (tran) .LightLandscapeDusk.Diffuse.R = 
+Wed Sep 08 15:53:33 2004 (tran) .LightLandscapeNight.Ambiant.B = 
+Wed Sep 08 15:53:33 2004 (tran) .LightLandscapeNight.Ambiant.G = 
+Wed Sep 08 15:53:33 2004 (tran) .LightLandscapeNight.Ambiant.R = 
+Wed Sep 08 15:53:33 2004 (tran) .LightLandscapeNight.Diffuse.B = 
+Wed Sep 08 15:53:33 2004 (tran) .LightLandscapeNight.Diffuse.G = 
+Wed Sep 08 15:53:33 2004 (tran) .LightLandscapeNight.Diffuse.R = 
+Wed Sep 08 15:53:33 2004 (tran) .LightRootDay.Ambiant.B = 
+Wed Sep 08 15:53:33 2004 (tran) .LightRootDay.Ambiant.G = 
+Wed Sep 08 15:53:33 2004 (tran) .LightRootDay.Ambiant.R = 
+Wed Sep 08 15:53:33 2004 (tran) .LightRootDusk.Diffuse.B = 
+Wed Sep 08 15:53:33 2004 (tran) .LightRootDusk.Diffuse.G = 
+Wed Sep 08 15:53:33 2004 (tran) .LightRootDusk.Diffuse.R = 
+Wed Sep 08 15:53:33 2004 (tran) .LightRootNight.Ambiant.B = 
+Wed Sep 08 15:53:33 2004 (tran) .LightRootNight.Ambiant.G = 
+Wed Sep 08 15:53:33 2004 (tran) .LightRootNight.Ambiant.R = 
+Wed Sep 08 15:53:33 2004 (tran) .LightRootNight.Diffuse.B = 
+Wed Sep 08 15:53:33 2004 (tran) .LightRootNight.Diffuse.G = 
+Wed Sep 08 15:53:33 2004 (tran) .LightRootNight.Diffuse.R = 
+Wed Sep 08 15:53:33 2004 (tran) Form Parents = 
+Thu Sep 09 15:46:45 2004 (tran) .Villages[0].CenterX = 160
+Thu Sep 09 15:46:45 2004 (tran) .Villages[0].CenterY = 160
+Fri Sep 24 11:07:31 2004 (gatto) formName Pasted = 
+Wed Oct 13 16:53:03 2004 (tran) formName Resized = 1
+Mon Jun 27 12:25:21 2005 (tran) .Villages[0].Altitude = 0</LOG>
+</FORM>
