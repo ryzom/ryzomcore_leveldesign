@@ -1,0 +1,9 @@
+*		text=auto linguist-language=XML
+*.txt	text=auto linguist-language=Text
+*.uxt	text=auto linguist-language=Text
+*.py	text=auto linguist-language=Python
+*.bin	-text -linguist-language linguist-vendored
+*.xls	-text -linguist-language linguist-vendored
+*.doc	-text -linguist-language linguist-vendored
+*.cfg	text=auto linguist-language=C linguist-vendored
+*.csv	text linguist-language=CSV
