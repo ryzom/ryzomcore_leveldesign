@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.4 $" State="modified">
+  <PARENT Filename="bagne.continent"/>
+  <STRUCT>
+    <ATOM Name="Name" Value="r2_roots"/>
+    <ATOM Name="PacsRBank" Value="r2_roots.rbank"/>
+    <ATOM Name="PacsGR" Value="r2_roots.gr"/>
+    <ATOM Name="LandscapeIG" Value="r2_roots_ig.txt"/>
+    <ATOM Name="FogDistMap" Value="fog_r2_roots_dist.tga"/>
+    <ATOM Name="FogDepthMap" Value="fog_r2_roots_depth.tga"/>
+    <ATOM Name="NoRainMap" Value="r2_roots_no_rain.tga"/>
+    <ATOM Name="ZoneMin" Value="131_HL"/>
+    <ATOM Name="ZoneMax" Value="193_JV"/>
+    <ARRAY Name="Villages"/>
+    <ARRAY Name="ZCs"/>
+    <ARRAY Name="MicroLifePrimitives"/>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Fri Dec 30 16:31:55 2005 (rousseau) .FogDepthMap = fog_r2_roots_depth.tga
+Fri Dec 30 16:31:55 2005 (rousseau) .FogDistMap = fog_r2_roots_dist.tga
+Fri Dec 30 16:31:55 2005 (rousseau) .NoRainMap = r2_roots_no_rain.tga</LOG>
+</FORM>

@@ -51,12 +51,16 @@ ContinentPath = "continents/" + ContinentName
 CommonName = ContinentName
 CommonPath = ContinentPath
 
+ParentName = "matis"
+ParentPath = "continents/" + ParentName
+
 
 # *** LANDSCAPE NAME ***
 LandscapeName = ContinentName
 
 # *** CONTINENT FILE ***
-ContinentFile = ContinentName + "/" + ContinentName + ".continent"
+ContinentSheet = ContinentName
+ContinentFile = ContinentName + "/" + ContinentSheet + ".continent"
 
 
 

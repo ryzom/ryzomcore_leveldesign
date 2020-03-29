@@ -1,0 +1,995 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.5 $" State="modified">
+  <PARENT Filename="lesfalaises.continent"/>
+  <STRUCT>
+    <ATOM Name="Name" Value="Le pays malade"/>
+    <STRUCT Name="LightLandscapeDay">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.77"/>
+        <ATOM Name="Y" Value="0.21"/>
+        <ATOM Name="Z" Value="-0.59"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="R" Value="100"/>
+        <ATOM Name="G" Value="100"/>
+        <ATOM Name="B" Value="100"/>
+        <ATOM Name="A" Value="0"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="R" Value="255"/>
+        <ATOM Name="G" Value="255"/>
+        <ATOM Name="B" Value="255"/>
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+      <STRUCT Name="Specular">
+        <ATOM Name="R" Value="255"/>
+        <ATOM Name="G" Value="255"/>
+        <ATOM Name="B" Value="255"/>
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightLandscapeNight">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.77"/>
+        <ATOM Name="Y" Value="0.21"/>
+        <ATOM Name="Z" Value="-0.59"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightEntityDay">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.77"/>
+        <ATOM Name="Y" Value="0.21"/>
+        <ATOM Name="Z" Value="-0.59"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="A" Value="0"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+      <STRUCT Name="Specular">
+        <ATOM Name="R" Value="255"/>
+        <ATOM Name="G" Value="255"/>
+        <ATOM Name="B" Value="255"/>
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightEntityNight">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.77"/>
+        <ATOM Name="Y" Value="0.21"/>
+        <ATOM Name="Z" Value="-0.59"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightRootDay">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.77"/>
+        <ATOM Name="Y" Value="0.21"/>
+        <ATOM Name="Z" Value="-0.59"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="A" Value="0"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="B" Value="255"/>
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+      <STRUCT Name="Specular">
+        <ATOM Name="R" Value="255"/>
+        <ATOM Name="G" Value="255"/>
+        <ATOM Name="B" Value="255"/>
+        <ATOM Name="A" Value="255"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightRootNight">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.77"/>
+        <ATOM Name="Y" Value="0.21"/>
+        <ATOM Name="Z" Value="-0.59"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LandscapePointLightMaterial">
+      <ATOM Name="R" Value="255"/>
+      <ATOM Name="G" Value="255"/>
+      <ATOM Name="B" Value="255"/>
+      <ATOM Name="A" Value="255"/>
+    </STRUCT>
+    <ATOM Name="PacsRBank" Value="zorai.rbank"/>
+    <ATOM Name="PacsGR" Value="zorai.gr"/>
+    <ATOM Name="Ecosystem" Value="jungle.ecosystem"/>
+    <ATOM Name="LandscapeIG" Value="zorai_ig.txt"/>
+    <ATOM Name="SkyDay" Value="ma_sky_day.shape"/>
+    <ATOM Name="SkyNight" Value="ma_sky_day.shape"/>
+    <ATOM Name="SkyIg" Value="canope_zorai.ig"/>
+    <ARRAY Name="Villages">
+      <STRUCT Name="ville">
+        <ATOM Name="Zone" Value="19_cb"/>
+        <ATOM Name="Altitude" Value="0.0"/>
+        <ATOM Name="ForceLoadDist" Value="100.0"/>
+        <ATOM Name="LoadDist" Value="200.0"/>
+        <ATOM Name="UnloadDist" Value="300.0"/>
+        <ATOM Name="CenterX" Value="160"/>
+        <ATOM Name="CenterY" Value="160"/>
+        <ARRAY Name="IgList">
+          <STRUCT Name="zo_mairie_village_a.ig">
+            <ATOM Name="IgName" Value="zo_mairie_village_a.ig"/>
+          </STRUCT>
+          <STRUCT Name="zo_imm_1_village_a">
+            <ATOM Name="IgName" Value="zo_imm_1_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_imm_2_village_a">
+            <ATOM Name="IgName" Value="zo_imm_2_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_imm_3_village_a">
+            <ATOM Name="IgName" Value="zo_imm_3_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_imm_4_village_a">
+            <ATOM Name="IgName" Value="zo_imm_4_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_agora_village_a">
+            <ATOM Name="IgName" Value="zo_agora_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_bar_village_a">
+            <ATOM Name="IgName" Value="zo_bar_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_autel_village_a">
+            <ATOM Name="IgName" Value="zo_autel_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_porte_village_a">
+            <ATOM Name="IgName" Value="zo_porte_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_porte_2_village_a">
+            <ATOM Name="IgName" Value="zo_porte_2_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_monastere_village_a">
+            <ATOM Name="IgName" Value="zo_monastere_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_mod_mairie_1_village_a">
+            <ATOM Name="IgName" Value="zo_mod_mairie_1_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_mod_mairie_2_village_a">
+            <ATOM Name="IgName" Value="zo_mod_mairie_2_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_mod_mairie_3_village_a">
+            <ATOM Name="IgName" Value="zo_mod_mairie_3_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_mod_mairie_4_village_a">
+            <ATOM Name="IgName" Value="zo_mod_mairie_4_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_mod_mairie_5_village_a">
+            <ATOM Name="IgName" Value="zo_mod_mairie_5_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_mod_mairie_6_village_a">
+            <ATOM Name="IgName" Value="zo_mod_mairie_6_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_comm_1_village_a">
+            <ATOM Name="IgName" Value="zo_comm_1_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_comm_2_village_a">
+            <ATOM Name="IgName" Value="zo_comm_2_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_comm_3_village_a">
+            <ATOM Name="IgName" Value="zo_comm_3_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_comm_4_village_a">
+            <ATOM Name="IgName" Value="zo_comm_4_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_comm_5_village_a">
+            <ATOM Name="IgName" Value="zo_comm_5_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_atelier_1_village_a">
+            <ATOM Name="IgName" Value="zo_atelier_1_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_atelier_2_village_a">
+            <ATOM Name="IgName" Value="zo_atelier_2_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_atelier_3_village_a">
+            <ATOM Name="IgName" Value="zo_atelier_3_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_atelier_4_village_a">
+            <ATOM Name="IgName" Value="zo_atelier_4_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_atelier_5_village_a">
+            <ATOM Name="IgName" Value="zo_atelier_5_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_atelier_6_village_a">
+            <ATOM Name="IgName" Value="zo_atelier_6_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_atelier_7_village_a">
+            <ATOM Name="IgName" Value="zo_atelier_7_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_atelier_8_village_a">
+            <ATOM Name="IgName" Value="zo_atelier_8_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_atelier_9_village_a">
+            <ATOM Name="IgName" Value="zo_atelier_9_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_atelier_10_village_a">
+            <ATOM Name="IgName" Value="zo_atelier_10_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_atelier_11_village_a">
+            <ATOM Name="IgName" Value="zo_atelier_11_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_atelier_12_village_a">
+            <ATOM Name="IgName" Value="zo_atelier_12_village_a"/>
+          </STRUCT>
+          <STRUCT Name="zo_ecurie_village_a">
+            <ATOM Name="IgName" Value="zo_ecurie_village_a"/>
+          </STRUCT>
+        </ARRAY>
+        <ATOM Name="Width" Value="2"/>
+        <ATOM Name="Height" Value="2"/>
+        <ATOM Name="Rotation" Value="3"/>
+      </STRUCT>
+      <STRUCT Name="village_b">
+        <ATOM Name="Zone" Value="27_cj"/>
+        <ATOM Name="Altitude" Value="0.0"/>
+        <ATOM Name="ForceLoadDist" Value="100.0"/>
+        <ATOM Name="LoadDist" Value="200.0"/>
+        <ATOM Name="UnloadDist" Value="300.0"/>
+        <ATOM Name="CenterX" Value="160"/>
+        <ATOM Name="CenterY" Value="160"/>
+        <ARRAY Name="IgList">
+          <STRUCT Name="zo_imm_1_village_b">
+            <ATOM Name="IgName" Value="zo_imm_1_village_b"/>
+          </STRUCT>
+          <STRUCT Name="zo_imm_2_village_b">
+            <ATOM Name="IgName" Value="zo_imm_2_village_b"/>
+          </STRUCT>
+          <STRUCT Name="zo_bar_village_b">
+            <ATOM Name="IgName" Value="zo_bar_village_b"/>
+          </STRUCT>
+          <STRUCT Name="zo_porte_village_b">
+            <ATOM Name="IgName" Value="zo_porte_village_b"/>
+          </STRUCT>
+          <STRUCT Name="zo_porte_2_village_b">
+            <ATOM Name="IgName" Value="zo_porte_2_village_b"/>
+          </STRUCT>
+          <STRUCT Name="zo_comm_1_village_b">
+            <ATOM Name="IgName" Value="zo_comm_1_village_b"/>
+          </STRUCT>
+          <STRUCT Name="zo_comm_2_village_b">
+            <ATOM Name="IgName" Value="zo_comm_2_village_b"/>
+          </STRUCT>
+          <STRUCT Name="zo_comm_3_village_b">
+            <ATOM Name="IgName" Value="zo_comm_3_village_b"/>
+          </STRUCT>
+          <STRUCT Name="zo_ecurie_village_b">
+            <ATOM Name="IgName" Value="zo_ecurie_village_b"/>
+          </STRUCT>
+        </ARRAY>
+      </STRUCT>
+      <STRUCT Name="village_c">
+        <ATOM Name="Zone" Value="23_ch"/>
+        <ARRAY Name="IgList">
+          <STRUCT Name="zo_imm_1_village_b">
+            <ATOM Name="IgName" Value="zo_imm_1_village_c"/>
+          </STRUCT>
+          <STRUCT Name="zo_imm_2_village_b">
+            <ATOM Name="IgName" Value="zo_imm_2_village_c"/>
+          </STRUCT>
+          <STRUCT Name="zo_bar_village_b">
+            <ATOM Name="IgName" Value="zo_bar_village_c"/>
+          </STRUCT>
+          <STRUCT Name="zo_porte_village_b">
+            <ATOM Name="IgName" Value="zo_porte_village_c"/>
+          </STRUCT>
+          <STRUCT Name="zo_porte_2_village_b">
+            <ATOM Name="IgName" Value="zo_porte_2_village_c"/>
+          </STRUCT>
+          <STRUCT Name="zo_comm_1_village_b">
+            <ATOM Name="IgName" Value="zo_comm_1_village_c"/>
+          </STRUCT>
+          <STRUCT Name="zo_comm_2_village_b">
+            <ATOM Name="IgName" Value="zo_comm_2_village_c"/>
+          </STRUCT>
+          <STRUCT Name="zo_comm_3_village_b">
+            <ATOM Name="IgName" Value="zo_comm_3_village_c"/>
+          </STRUCT>
+          <STRUCT Name="zo_ecurie_village_b">
+            <ATOM Name="IgName" Value="zo_ecurie_village_c"/>
+          </STRUCT>
+        </ARRAY>
+      </STRUCT>
+      <STRUCT Name="village_d">
+        <ATOM Name="Zone" Value="24_cc"/>
+        <ARRAY Name="IgList">
+          <STRUCT Name="zo_imm_1_village_b">
+            <ATOM Name="IgName" Value="zo_imm_1_village_d"/>
+          </STRUCT>
+          <STRUCT Name="zo_imm_2_village_b">
+            <ATOM Name="IgName" Value="zo_imm_2_village_d"/>
+          </STRUCT>
+          <STRUCT Name="zo_bar_village_b">
+            <ATOM Name="IgName" Value="zo_bar_village_d"/>
+          </STRUCT>
+          <STRUCT Name="zo_porte_village_b">
+            <ATOM Name="IgName" Value="zo_porte_village_d"/>
+          </STRUCT>
+          <STRUCT Name="zo_porte_2_village_b">
+            <ATOM Name="IgName" Value="zo_porte_2_village_d"/>
+          </STRUCT>
+          <STRUCT Name="zo_comm_1_village_b">
+            <ATOM Name="IgName" Value="zo_comm_1_village_d"/>
+          </STRUCT>
+          <STRUCT Name="zo_comm_2_village_b">
+            <ATOM Name="IgName" Value="zo_comm_2_village_d"/>
+          </STRUCT>
+          <STRUCT Name="zo_comm_3_village_b">
+            <ATOM Name="IgName" Value="zo_comm_3_village_d"/>
+          </STRUCT>
+          <STRUCT Name="zo_ecurie_village_b">
+            <ATOM Name="IgName" Value="zo_ecurie_village_d"/>
+          </STRUCT>
+        </ARRAY>
+      </STRUCT>
+      <STRUCT Name="village_nb_01">
+        <ATOM Name="Zone" Value="28_bt"/>
+        <ARRAY Name="IgList">
+          <STRUCT Name="zo_imm_village_nb_01.ig">
+            <ATOM Name="IgName" Value="zo_imm_village_nb_01.ig"/>
+          </STRUCT>
+          <STRUCT Name="zo_com_village_nb_01.ig">
+            <ATOM Name="IgName" Value="zo_com_village_nb_01.ig"/>
+          </STRUCT>
+        </ARRAY>
+      </STRUCT>
+      <STRUCT Name="village_nb_02">
+        <ATOM Name="Zone" Value="29_ca"/>
+        <ARRAY Name="IgList">
+          <STRUCT Name="zo_imm_village_nb_02.ig">
+            <ATOM Name="IgName" Value="zo_imm_village_nb_02.ig"/>
+          </STRUCT>
+          <STRUCT Name="zo_com_village_nb_02.ig">
+            <ATOM Name="IgName" Value="zo_com_village_nb_02.ig"/>
+          </STRUCT>
+        </ARRAY>
+      </STRUCT>
+      <STRUCT Name="village_nb_03">
+        <ATOM Name="Zone" Value="31_bw"/>
+        <ARRAY Name="IgList">
+          <STRUCT Name="zo_imm_village_nb_03.ig">
+            <ATOM Name="IgName" Value="zo_imm_village_nb_03.ig"/>
+          </STRUCT>
+          <STRUCT Name="zo_com_village_nb_03.ig">
+            <ATOM Name="IgName" Value="zo_com_village_nb_03.ig"/>
+          </STRUCT>
+        </ARRAY>
+      </STRUCT>
+      <STRUCT Name="village_nb_04">
+        <ATOM Name="Zone" Value="33_ca"/>
+        <ARRAY Name="IgList">
+          <STRUCT Name="zo_imm_village_nb_04.ig">
+            <ATOM Name="IgName" Value="zo_imm_village_nb_04.ig"/>
+          </STRUCT>
+          <STRUCT Name="zo_com_village_nb_04.ig">
+            <ATOM Name="IgName" Value="zo_com_village_nb_04.ig"/>
+          </STRUCT>
+        </ARRAY>
+      </STRUCT>
+      <STRUCT Name="village_nb_05">
+        <ATOM Name="Zone" Value="34_bu"/>
+        <ARRAY Name="IgList">
+          <STRUCT Name="zo_imm_village_nb_05.ig">
+            <ATOM Name="IgName" Value="zo_imm_village_nb_05.ig"/>
+          </STRUCT>
+          <STRUCT Name="zo_com_village_nb_05.ig">
+            <ATOM Name="IgName" Value="zo_com_village_nb_05.ig"/>
+          </STRUCT>
+        </ARRAY>
+      </STRUCT>
+    </ARRAY>
+    <ARRAY Name="ZCs"/>
+    <ATOM Name="FogDayMap" Value="fog_zorai_day.tga"/>
+    <ATOM Name="FogNightMap" Value="fog_zorai_night.tga"/>
+    <ATOM Name="FogDistMap" Value="fog_zorai_dist.tga"/>
+    <ATOM Name="FogDepthMap" Value="fog_zorai_depth.tga"/>
+    <ATOM Name="NoRainMap" Value="zorai_no_rain.tga"/>
+    <ATOM Name="ZoneMin" Value="35_BR"/>
+    <ATOM Name="ZoneMax" Value="9_CX"/>
+    <STRUCT Name="SpringWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="ju_fair1.weather_setup"/>
+        <ATOM Value="ju_fair2.weather_setup"/>
+        <ATOM Value="ju_fair3.weather_setup"/>
+        <ATOM Value="ju_clouds1.weather_setup"/>
+        <ATOM Value="ju_clouds2.weather_setup"/>
+        <ATOM Value="ju_thunder_storm.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="30"/>
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="5"/>
+        <ATOM Value="5"/>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="SummerWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="ju_fair1.weather_setup"/>
+        <ATOM Value="ju_fair2.weather_setup"/>
+        <ATOM Value="ju_fair3.weather_setup"/>
+        <ATOM Value="ju_clouds1.weather_setup"/>
+        <ATOM Value="ju_clouds2.weather_setup"/>
+        <ATOM Value="ju_thunder_storm.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="40"/>
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="10"/>
+        <ATOM Value="5"/>
+        <ATOM Value="5"/>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="AutumnWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="ju_fair1.weather_setup"/>
+        <ATOM Value="ju_fair2.weather_setup"/>
+        <ATOM Value="ju_fair3.weather_setup"/>
+        <ATOM Value="ju_clouds1.weather_setup"/>
+        <ATOM Value="ju_clouds2.weather_setup"/>
+        <ATOM Value="ju_thunder_storm.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="30"/>
+        <ATOM Value="10"/>
+        <ATOM Value="10"/>
+        <ATOM Value="10"/>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="WinterWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="ju_fair1.weather_setup"/>
+        <ATOM Value="ju_fair2.weather_setup"/>
+        <ATOM Value="ju_fair3.weather_setup"/>
+        <ATOM Value="ju_clouds1.weather_setup"/>
+        <ATOM Value="ju_clouds2.weather_setup"/>
+        <ATOM Value="ju_thunder_snow.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="30"/>
+        <ATOM Value="10"/>
+        <ATOM Value="10"/>
+        <ATOM Value="20"/>
+        <ATOM Value="10"/>
+        <ATOM Value="20"/>
+      </ARRAY>
+    </STRUCT>
+    <ATOM Name="SpringCanopyIG" Value="canope_zorai.ig"/>
+    <ATOM Name="SummerCanopyIG" Value="canope_zorai.ig"/>
+    <ATOM Name="AutumnCanopyIG" Value="canope_zorai.ig"/>
+    <ATOM Name="WinterCanopyIG" Value="canope_zorai.ig"/>
+    <ATOM Name="WorldMap" Value="Zorai_Map.tga"/>
+    <ARRAY Name="LandMarks">
+      <STRUCT Name="qai-lo">
+        <ATOM Name="X" Value="7273.0"/>
+        <ATOM Name="Y" Value="-4412.0"/>
+        <ATOM Name="Name" Value="place_qai_lo"/>
+      </STRUCT>
+      <STRUCT Name="sheng-wo">
+        <ATOM Name="X" Value="7783.0"/>
+        <ATOM Name="Y" Value="-4889.0"/>
+        <ATOM Name="Name" Value="place_sheng_wo"/>
+      </STRUCT>
+      <STRUCT Name="men-xing">
+        <ATOM Name="X" Value="8374.0"/>
+        <ATOM Name="Y" Value="-4579.0"/>
+        <ATOM Name="Name" Value="place_men_xing"/>
+      </STRUCT>
+      <STRUCT Name="koi-zun">
+        <ATOM Name="X" Value="7421.0"/>
+        <ATOM Name="Y" Value="-5337.0"/>
+        <ATOM Name="Name" Value="place_koi_zun"/>
+      </STRUCT>
+      <STRUCT Name="yin-piang">
+        <ATOM Name="X" Value="8440.0"/>
+        <ATOM Name="Y" Value="-5194.0"/>
+        <ATOM Name="Name" Value="place_yin_piang"/>
+      </STRUCT>
+      <STRUCT Name="zora">
+        <ATOM Name="X" Value="8696.0"/>
+        <ATOM Name="Y" Value="-2845.0"/>
+        <ATOM Name="Name" Value="place_zora"/>
+      </STRUCT>
+      <STRUCT Name="jen-lai">
+        <ATOM Name="X" Value="8788.0"/>
+        <ATOM Name="Y" Value="-3777.0"/>
+        <ATOM Name="Name" Value="place_jen_lai"/>
+      </STRUCT>
+      <STRUCT Name="min-cho">
+        <ATOM Name="X" Value="9850.0"/>
+        <ATOM Name="Y" Value="-4235.0"/>
+        <ATOM Name="Name" Value="place_min_cho"/>
+      </STRUCT>
+      <STRUCT Name="hoi-cho">
+        <ATOM Name="X" Value="9629.0"/>
+        <ATOM Name="Y" Value="-3438.0"/>
+        <ATOM Name="Name" Value="place_hoi_cho"/>
+      </STRUCT>
+    </ARRAY>
+    <ATOM Name="LocalizedName" Value="uiContinentLePaysMalade"/>
+    <ARRAY Name="MicroLifePrimitives">
+      <ATOM Value="zorai_land_goo.primitive"/>
+      <ATOM Value="zorai_land_fx.primitive"/>
+      <ATOM Value="zorai_land_desert_fx.primitive"/>
+      <ATOM Value="zorai_land_aqua_fx.primitive"/>
+    </ARRAY>
+    <ATOM Name="WinterTileColorMono" Value="true"/>
+    <ATOM Name="WinterTileColorFactor" Value="2"/>
+    <ATOM Name="SpringStaticLightingFactor" Value="1.1"/>
+    <ATOM Name="SummerStaticLightingFactor" Value="1.2"/>
+    <ATOM Name="WinterStaticLightingFactor" Value="1.1"/>
+    <ATOM Name="SkySheetSpring" Value="ju_mainland_sp.sky"/>
+    <ATOM Name="SkySheetSummer" Value="ju_mainland_su.sky"/>
+    <ATOM Name="SkySheetAutumn" Value="ju_mainland_au.sky"/>
+    <ATOM Name="SkySheetWinter" Value="ju_mainland_wi.sky"/>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:17:11 2002 (corvazier) File converted from old format
+Wed Jul 24 16:38:38 2002 (tran) .SkyDay = ma_sky_day.shape
+Mon Aug 26 15:33:53 2002 (tran) .Villages[0].IgList[0].IgName = zo_mairie_ext_village_a.ig
+Mon Aug 26 15:33:53 2002 (tran) .Villages[0].IgList[1].IgName = zo_comm_village_a.ig
+Mon Aug 26 15:33:53 2002 (tran) formName Resized = 2
+Tue Oct 01 17:07:02 2002 (tran) formName Pasted = 
+Fri Oct 18 11:25:27 2002 (corvazier) formName Pasted = 
+Thu Nov 07 11:51:08 2002 (tran) .Villages[0].CenterX = 160
+Thu Nov 07 11:51:08 2002 (tran) .Villages[0].CenterY = 160
+Thu Nov 07 11:51:08 2002 (tran) .Villages[0].IgList[0].IgName = zo_mairie_village_a.ig
+Thu Nov 07 11:51:08 2002 (tran) .Villages[0].IgList[1].IgName = zo_annexe_village_a.ig
+Thu Nov 07 11:51:08 2002 (tran) .Villages[0].Zone = 24_cd
+Tue Nov 12 19:26:08 2002 (tran) .Villages[0].IgList[2].IgName = zo_imm_village_a
+Tue Nov 12 19:26:08 2002 (tran) .Villages[0].IgList[3].IgName = zo_imm_2_village_a
+Tue Nov 12 19:26:08 2002 (tran) .Villages[0].IgList[4].IgName = zo_agora_village_a
+Tue Nov 12 19:26:08 2002 (tran) .Villages[0].IgList[5].IgName = zo_bar_village_a
+Tue Nov 12 19:26:08 2002 (tran) .Villages[0].IgList[6].IgName = zo_autel_village_a
+Tue Nov 12 19:26:08 2002 (tran) .Villages[0].IgList[7].IgName = zo_porte_village_a
+Tue Nov 12 19:26:08 2002 (tran) formName Resized = 8
+Thu Nov 21 18:30:35 2002 (tran) formName Deleted = 
+Tue Nov 26 14:39:15 2002 (gatto) .SkyNight = ma_sky_day.shape
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[0] Renamed = zo_mairie_village_a.ig
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[10] Renamed = zo_mod_mairie_1_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[10].IgName = zo_mod_mairie_1_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[11] Renamed = zo_mod_mairie_2_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[11].IgName = zo_mod_mairie_2_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[12] Renamed = zo_mod_mairie_3_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[12].IgName = zo_mod_mairie_3_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[13] Renamed = zo_mod_mairie_4_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[13].IgName = zo_mod_mairie_4_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[14] Renamed = zo_mod_mairie_5_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[14].IgName = zo_mod_mairie_5_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[15] Renamed = zo_mod_mairie_6_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[15].IgName = zo_mod_mairie_6_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[16] Renamed = zo_comm_1_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[16].IgName = zo_comm_1_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[17] Renamed = zo_comm_2_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[17].IgName = zo_comm_2_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[18] Renamed = zo_comm_2_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[18].IgName = zo_comm_3_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[19] Renamed = zo_comm_4_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[19].IgName = zo_comm_4_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[1] Renamed = zo_imm_1_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[1].IgName = zo_imm_1_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[20] Renamed = zo_comm_5_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[20].IgName = zo_comm_5_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[21] Renamed = zo_atelier_1_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[21].IgName = zo_atelier_1_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[22] Renamed = zo_atelier_2_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[22].IgName = zo_atelier_2_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[23] Renamed = zo_atelier_3_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[23].IgName = zo_atelier_3_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[24] Renamed = zo_atelier_4_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[24].IgName = zo_atelier_4_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[25] Renamed = zo_atelier_5_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[25].IgName = zo_atelier_5_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[26] Renamed = zo_atelier_6_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[26].IgName = zo_atelier_6_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[27] Renamed = zo_atelier_7_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[27].IgName = zo_atelier_7_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[28] Renamed = zo_atelier_8_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[28].IgName = zo_atelier_8_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[29] Renamed = zo_atelier_9_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[29].IgName = zo_atelier_9_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[2] Renamed = zo_imm_2_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[2].IgName = zo_imm_2_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[30] Renamed = zo_atelier_10_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[30].IgName = zo_atelier_10_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[31] Renamed = zo_atelier_11_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[31].IgName = zo_atelier_11_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[32] Renamed = zo_atelier_12_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[32].IgName = zo_atelier_12_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[33] Renamed = zo_ecurie_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[33].IgName = zo_ecurie_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[3] Renamed = zo_imm_3_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[3].IgName = zo_imm_3_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[4] Renamed = zo_imm_4_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[4].IgName = zo_imm_4_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[5] Renamed = zo_agora_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[6] Renamed = zo_bar_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[7] Renamed = zo_autel_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[8] Renamed = zo_porte_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[9] Renamed = zo_monastere_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].IgList[9].IgName = zo_monastere_village_a
+Thu Dec 05 19:20:42 2002 (tran) .Villages[0].Zone = 22_ce
+Thu Dec 05 19:20:42 2002 (tran) Array Insert = 2
+Thu Dec 05 19:20:42 2002 (tran) formName Resized = 34
+Thu Dec 12 15:50:20 2002 (gatto) .AutumnCanopyIG = canope_zorai.ig
+Thu Dec 12 15:50:20 2002 (gatto) .SkyIg = canope_zorai.ig
+Thu Dec 12 15:50:20 2002 (gatto) .SpringCanopyIG = canope_zorai.ig
+Thu Dec 12 15:50:20 2002 (gatto) .SummerCanopyIG = canope_zorai.ig
+Thu Dec 12 15:50:20 2002 (gatto) .WinterCanopyIG = canope_zorai.ig
+Tue Dec 17 13:54:57 2002 (tran) .Villages[0].IgList[9] Renamed = zo_porte_2_village_a
+Tue Dec 17 13:54:57 2002 (tran) .Villages[0].IgList[9].IgName = zo_porte_2_village_a
+Tue Dec 17 13:54:57 2002 (tran) Array Insert = 9
+Mon Dec 30 18:28:19 2002 (corvazier) .Villages[0].Rotation = 3
+Fri Jan 03 10:51:22 2003 (tran) .Villages[0].Height = 320
+Fri Jan 03 10:51:22 2003 (tran) .Villages[0].Rotation = 3
+Fri Jan 03 10:51:22 2003 (tran) .Villages[0].Width = 320
+Fri Jan 03 14:05:54 2003 (tran) .Villages[0].Height = 2
+Fri Jan 03 14:05:54 2003 (tran) .Villages[0].Width = 2
+Mon Jan 13 18:52:41 2003 (tran) .Villages[0].Zone = 20_ce
+Tue Jan 14 19:19:20 2003 (tran) .Villages[0] Renamed = ville
+Tue Jan 14 19:19:20 2003 (tran) .Villages[0].IgList[0].IgName = zo_mairie_village_b.ig
+Tue Jan 14 19:19:20 2003 (tran) .Villages[0].IgList[10].IgName = zo_comm_1_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[0].IgList[11].IgName = zo_comm_2_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[0].IgList[12].IgName = zo_comm_3_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[0].IgList[19] Renamed = zo_comm_3_village_a
+Tue Jan 14 19:19:20 2003 (tran) .Villages[0].IgList[1].IgName = zo_imm_1_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[0].IgList[2].IgName = zo_imm_2_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[0].IgList[3].IgName = zo_agora_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[0].IgList[4].IgName = zo_bar_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[0].IgList[5].IgName = zo_autel_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[0].IgList[6].IgName = zo_porte_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[0].IgList[7].IgName = zo_porte_2_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[0].IgList[8].IgName = zo_mod_mairie_1_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[0].IgList[9].IgName = zo_mod_mairie_2_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1] Renamed = village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[0] Renamed = zo_mairie_village_b.ig
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[10] Renamed = zo_comm_1_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[11] Renamed = zo_comm_2_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[12] Renamed = zo_comm_3_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[13] Renamed = zo_atelier_1_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[13].IgName = zo_atelier_1_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[14] Renamed = zo_atelier_2_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[14].IgName = zo_atelier_2_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[15] Renamed = zo_atelier_3_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[15].IgName = zo_atelier_3_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[16] Renamed = zo_ecurie_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[16].IgName = zo_ecurie_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[1] Renamed = zo_imm_1_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[2] Renamed = zo_imm_2_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[3] Renamed = zo_agora_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[4] Renamed = zo_bar_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[5] Renamed = zo_autel_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[6] Renamed = zo_porte_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[7] Renamed = zo_porte_2_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[8] Renamed = zo_mod_mairie_1_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].IgList[9] Renamed = zo_mod_mairie_2_village_b
+Tue Jan 14 19:19:20 2003 (tran) .Villages[1].Zone = 27_cj
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[0].IgName = zo_mairie_village_c.ig
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[10].IgName = zo_comm_1_village_c
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[11].IgName = zo_comm_2_village_c
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[12].IgName = zo_comm_3_village_c
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[13].IgName = zo_atelier_1_village_c
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[14].IgName = zo_atelier_2_village_c
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[15].IgName = zo_atelier_3_village_c
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[16].IgName = zo_ecurie_village_c
+
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[1].IgName = zo_imm_1_village_c
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[2].IgName = zo_imm_2_village_c
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[3].IgName = zo_agora_village_c
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[4].IgName = zo_bar_village_c
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[5].IgName = zo_autel_village_c
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[6].IgName = zo_porte_village_c
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[7].IgName = zo_porte_2_village_c
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[8].IgName = zo_mod_mairie_1_village_c
+Tue Jan 14 19:19:20 2003 (tran) .Villages[2].IgList[9].IgName = zo_mod_mairie_2_village_c
+Tue Jan 14 19:19:20 2003 (tran) formName Deleted = 
+Tue Jan 14 19:19:20 2003 (tran) formName Pasted = 
+Tue Jan 14 19:19:20 2003 (tran) formName Resized = 4
+Tue Jan 14 19:22:31 2003 (tran) .Villages[2] Renamed = village_c
+Tue Jan 14 19:22:31 2003 (tran) .Villages[2].Zone = 23_ci
+
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3] Renamed = village_d
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[0].IgName = zo_mairie_village_d.ig
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[10].IgName = zo_comm_1_village_d
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[11].IgName = zo_comm_2_village_d
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[12].IgName = zo_comm_3_village_d
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[13].IgName = zo_atelier_1_village_d
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[14].IgName = zo_atelier_2_village_d
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[15].IgName = zo_atelier_3_village_d
+
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[16].IgName = zo_ecurie_village_d
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[1].IgName = zo_imm_1_village_d
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[2].IgName = zo_imm_2_village_d
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[3].IgName = zo_agora_village_d
+
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[4].IgName = zo_bar_village_d
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[5].IgName = zo_autel_village_d
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[6].IgName = zo_autel_village_d
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[7].IgName = zo_porte_2_village_d
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[8].IgName = zo_mod_mairie_1_village_d
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].IgList[9].IgName = zo_mod_mairie_2_village_d
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].Zone = 24_cd
+Tue Feb 04 14:49:39 2003 (corvazier) .NoRainMap = zorai_no_rain.tga
+Tue Jan 14 19:22:31 2003 (tran) .Villages[3].Zone = 24_cd
+Wed Jan 29 10:47:44 2003 (tran) .Villages[1].Rotation = 1
+Thu Mar 13 16:05:07 2003 (gatto) .LightRootDay.Ambiant.B = 89
+Thu Mar 13 16:05:07 2003 (gatto) .LightRootDay.Ambiant.G = 89
+Thu Mar 13 16:05:07 2003 (gatto) .LightRootDay.Ambiant.R = 89
+Mon Mar 17 14:48:50 2003 (tran) .Villages[1].Rotation = 0
+Mon Mar 17 14:51:24 2003 (tran) .Villages[1].Height = 
+Mon Mar 17 14:51:24 2003 (tran) .Villages[1].Rotation = 
+Mon Mar 17 14:51:24 2003 (tran) .Villages[1].Width = 
+Thu Jul 24 17:29:52 2003 (tran) .Villages[3].IgList[6].IgName = zo_porte_village_d
+Tue Sep 23 16:24:50 2003 (tran) formName Pasted = 
+Wed Sep 24 14:44:17 2003 (tran) .Villages[4] Renamed = village_nb_01
+Wed Sep 24 14:44:17 2003 (tran) .Villages[4].IgList[0] Renamed = zo_imm_village_nb_01.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[4].IgList[0].IgName = zo_imm_village_nb_01.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[4].IgList[1] Renamed = zo_com_village_nb_01.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[4].IgList[1].IgName = zo_com_village_nb_01.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[4].Zone = 28_bt
+Wed Sep 24 14:44:17 2003 (tran) .Villages[5] Renamed = village_nb_02
+Wed Sep 24 14:44:17 2003 (tran) .Villages[5].IgList[0] Renamed = zo_imm_village_nb_02.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[5].IgList[0].IgName = zo_imm_village_nb_02.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[5].IgList[1] Renamed = zo_com_village_nb_02.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[5].IgList[1].IgName = zo_com_village_nb_02.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[5].Zone = 29_ca
+Wed Sep 24 14:44:17 2003 (tran) .Villages[6] Renamed = village_nb_03
+Wed Sep 24 14:44:17 2003 (tran) .Villages[6].IgList[0] Renamed = zo_imm_village_nb_03.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[6].IgList[0].IgName = zo_imm_village_nb_03.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[6].IgList[1] Renamed = zo_com_village_nb_03.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[6].IgList[1].IgName = zo_com_village_nb_03.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[6].Zone = 31_bw
+Wed Sep 24 14:44:17 2003 (tran) .Villages[7] Renamed = village_nb_04
+Wed Sep 24 14:44:17 2003 (tran) .Villages[7].IgList[0] Renamed = zo_imm_village_nb_04.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[7].IgList[0].IgName = zo_imm_village_nb_04.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[7].IgList[1] Renamed = zo_com_village_nb_04.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[7].IgList[1].IgName = zo_com_village_nb_04.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[7].Zone = 33_ca
+Wed Sep 24 14:44:17 2003 (tran) .Villages[8] Renamed = village_nb_05
+Wed Sep 24 14:44:17 2003 (tran) .Villages[8].IgList[0] Renamed = zo_imm_village_nb_05.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[8].IgList[0].IgName = zo_imm_village_nb_05.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[8].IgList[1] Renamed = zo_com_village_nb_05.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[8].IgList[1].IgName = zo_com_village_nb_05.ig
+Wed Sep 24 14:44:17 2003 (tran) .Villages[8].Zone = 34_bu
+
+Wed Sep 24 14:44:17 2003 (tran) formName Pasted = 
+Wed Sep 24 14:44:17 2003 (tran) formName Resized = 9
+
+
+Tue Nov 04 15:50:37 2003 (wuibout) .WorldMap = Zorai_Map.tga
+Wed Nov 12 15:12:31 2003 (corvazier) .LocalizedName = uiContinentLePaysMalade
+Tue Dec 09 16:24:41 2003 (tran) formName Deleted = 
+Wed Dec 10 17:33:24 2003 (tran) .Villages[0].Zone = 19_cb
+Wed Dec 10 17:33:24 2003 (tran) .Villages[2].Zone = 23_ch
+Wed Dec 10 17:33:24 2003 (tran) .Villages[3].Zone = 24_cc
+Wed Dec 10 17:33:24 2003 (tran) .Villages[3].Zone = 24_cc
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[0].Zone = 11_cb
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[10].Zone = 17_co
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[11].Zone = 17_cs
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[12].Zone = 19_bx
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[13].Zone = 19_ci
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[14].Zone = 20_ci
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[15].Zone = 20_cw
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[16].Zone = 21_cl
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[17].Zone = 22_cp
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[18].Zone = 23_bz
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[19].Zone = 23_cs
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[1].Zone = 13_bs
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[20].Zone = 24_cm
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[21].Zone = 25_cv
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[22].Zone = 27_co
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[23].Zone = 27_cr
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[24].Zone = 29_cv
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[25].Zone = 30_co
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[26].Zone = 31_ck
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[27].Zone = 31_cs
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[28].Zone = 33_cw
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[2].Zone = 13_bv
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[3].Zone = 14_cg
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[4].Zone = 14_cp
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[5].Zone = 14_cs
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[6].Zone = 15_bz
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[7].Zone = 16_bv
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[8].Zone = 16_cj
+Wed Jan 07 15:32:20 2004 (tran) .ZCs[9].Zone = 17_cf
+Wed Jan 07 15:32:20 2004 (tran) formName Pasted = 
+Wed Jan 07 15:32:20 2004 (tran) formName Resized = 29
+Thu Feb 05 16:55:42 2004 (tran) .WinterTileColorFactor = 5
+
+Thu Feb 05 16:55:42 2004 (tran) .WinterTileColorMono = true
+Fri Feb 06 15:57:26 2004 (tran) .WinterTileColorFactor = 3
+Fri Feb 06 16:01:18 2004 (tran) .LightLandscapeDay.Ambiant.B = 89
+Fri Feb 06 16:01:18 2004 (tran) .LightLandscapeDay.Ambiant.G = 89
+Fri Feb 06 16:01:18 2004 (tran) .LightLandscapeDay.Ambiant.R = 89
+Fri Feb 06 16:04:51 2004 (tran) .LightLandscapeDay.Ambiant.G = 7
+Fri Feb 06 16:04:51 2004 (tran) .LightLandscapeDay.Ambiant.R = 189
+Fri Feb 06 16:09:23 2004 (tran) .LightLandscapeDay.Ambiant.B = 227
+Fri Feb 06 16:09:23 2004 (tran) .LightLandscapeDay.Ambiant.G = 225
+Fri Feb 06 16:09:23 2004 (tran) .LightLandscapeDay.Ambiant.R = 212
+Fri Feb 06 16:15:15 2004 (tran) .WinterTileColorFactor = 2
+Fri Feb 06 16:44:41 2004 (tran) .LightLandscapeDay.Ambiant.B = 226
+Fri Feb 06 16:44:41 2004 (tran) .LightLandscapeDay.Ambiant.G = 193
+Fri Feb 06 16:44:41 2004 (tran) .LightLandscapeDay.Ambiant.R = 209
+Fri Feb 06 16:46:49 2004 (tran) .SummerStaticLightingFactor = 1.3
+Fri Feb 06 16:47:44 2004 (tran) .SpringStaticLightingFactor = 1.3
+Fri Feb 06 16:47:48 2004 (tran) .SummerStaticLightingFactor = 1.5
+Fri Feb 06 17:52:50 2004 (tran) .SpringStaticLightingFactor = 1
+Fri Feb 06 17:52:50 2004 (tran) .SummerStaticLightingFactor = 1
+Fri Feb 06 17:52:50 2004 (tran) .WinterStaticLightingFactor = 1
+Fri Feb 06 17:53:08 2004 (tran) .LightLandscapeDay.Ambiant.B = 89
+Fri Feb 06 17:53:08 2004 (tran) .LightLandscapeDay.Ambiant.G = 89
+Fri Feb 06 17:53:08 2004 (tran) .LightLandscapeDay.Ambiant.R = 89
+Fri Feb 06 19:49:45 2004 (tran) .SpringStaticLightingFactor = 1.1
+Fri Feb 06 19:49:45 2004 (tran) .SummerStaticLightingFactor = 1.2
+Fri Feb 06 19:49:45 2004 (tran) .WinterStaticLightingFactor = 1.1
+Tue Feb 17 15:13:11 2004 (tran) .LightEntityDay.Ambiant.B = 100
+Tue Feb 17 15:13:11 2004 (tran) .LightEntityDay.Ambiant.G = 100
+Tue Feb 17 15:13:11 2004 (tran) .LightEntityDay.Ambiant.R = 100
+Tue Feb 24 15:29:15 2004 (rang) .MicroLifePrimitives[0] = zorai_land_goo.primitive
+Tue Feb 24 15:29:15 2004 (rang) formName Resized = 1
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[0] Renamed = qai-lo
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[0].Name = place_qai_lo
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[0].X = 7273.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[0].Y = -4412.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[1] Renamed = sheng-wo
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[1].Name = place_sheng_wo
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[1].X = 7783.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[1].Y = -4889.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[2] Renamed = men-xing
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[2].Name = place_men_xing
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[2].X = 8374.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[2].Y = -4579.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[3] Renamed = koi-zun
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[3].Name = place_koi_zun
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[3].X = 7421.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[3].Y = -5337.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[4] Renamed = yin-piang
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[4].Name = place_yin_piang
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[4].X = 8440.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[4].Y = -5194.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[5] Renamed = zora
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[5].Name = place_zora
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[5].X = 8696.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[5].Y = -2845.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[6] Renamed = jen-lai
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[6].Name = place_jen_lai
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[6].X = 8788.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[6].Y = -3777.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[7] Renamed = min-cho
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[7].Name = place_min_cho
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[7].X = 9850.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[7].Y = -4235.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[8] Renamed = hoi-cho
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[8].Name = place_hoi_cho
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[8].X = 9629.0
+Fri Feb 27 16:41:57 2004 (besson) .LandMarks[8].Y = -3438.0
+Fri Feb 27 16:41:57 2004 (besson) formName Deleted = 
+Fri Feb 27 16:41:57 2004 (besson) formName Resized = 9
+Mon Mar 01 14:52:18 2004 (rang) .MicroLifePrimitives[1] = zorai_land_fx.primitive
+Mon Mar 01 14:52:18 2004 (rang) formName Resized = 4
+Mon Mar 01 14:52:28 2004 (rang) .MicroLifePrimitives[2] = zorai_land_desert_fx.primitive
+Mon Mar 01 14:52:41 2004 (rang) .MicroLifePrimitives[3] = zorai_land_aqua_fx.primitive
+Mon Mar 01 19:44:58 2004 (tran) .LightLandscapeDay.Ambiant.B = 100
+Mon Mar 01 19:44:58 2004 (tran) .LightLandscapeDay.Ambiant.G = 100
+Mon Mar 01 19:44:58 2004 (tran) .LightLandscapeDay.Ambiant.R = 100
+Tue Mar 02 14:11:00 2004 (tran) .SpringStaticLightingFactor = 1.2
+Tue Mar 02 14:11:00 2004 (tran) .SummerStaticLightingFactor = 1.3
+Tue Mar 02 14:11:26 2004 (tran) .LightLandscapeDay.Ambiant.B = 110
+Tue Mar 02 14:11:26 2004 (tran) .LightLandscapeDay.Ambiant.G = 110
+Tue Mar 02 14:11:26 2004 (tran) .LightLandscapeDay.Ambiant.R = 110
+Tue Mar 02 14:11:41 2004 (tran) .SpringStaticLightingFactor = 1.1
+Tue Mar 02 14:11:41 2004 (tran) .SummerStaticLightingFactor = 1.2
+Tue Mar 02 14:35:04 2004 (tran) .LightLandscapeDay.Ambiant.B = 100
+Tue Mar 02 14:35:04 2004 (tran) .LightLandscapeDay.Ambiant.G = 100
+Tue Mar 02 14:35:04 2004 (tran) .LightLandscapeDay.Ambiant.R = 100
+Mon Mar 08 14:16:53 2004 (tran) .ZCs[14].Zone = 20_ct
+Wed Mar 31 15:16:12 2004 (martin) formName Resized = 30
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[0].Zone = 33_cw
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[0].outpost_number = 1
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[1].Zone = 31_cs
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[1].outpost_number = 2
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[2].Zone = 31_ck
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[2].outpost_number = 3
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[3].Zone = 30_co
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[3].outpost_number = 4
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[4].Zone = 29_cv
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[4].outpost_number = 5
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[5].Zone = 27_cr
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[5].outpost_number = 6
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[6].Zone = 27_co
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[6].outpost_number = 7
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[7].Zone = 24_cm
+Wed Mar 31 15:20:10 2004 (martin) .ZCs[7].outpost_number = 8
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[10].Zone = 22_cp
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[10].outpost_number = 11
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[11].Zone = 21_cl
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[11].outpost_number = 12
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[12].Zone = 20_cw
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[12].outpost_number = 13
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[13].Zone = 20_ct
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[13].outpost_number = 14
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[14].Zone = 17_cs
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[14].outpost_number = 15
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[15].Zone = 17_co
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[15].outpost_number = 16
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[16].Zone = 14_cs
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[16].outpost_number = 17
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[17].Zone = 14_cp
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[17].outpost_number = 18
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[18].Zone = 12_cv
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[18].outpost_number = 19
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[19].Zone = 19_ci
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[19].outpost_number = 20
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[20].Zone = 17_cf
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[20].outpost_number = 21
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[21].Zone = 16_cj
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[21].outpost_number = 22
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[22].Zone = 14_cg
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[22].outpost_number = 23
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[23].Zone = 23_bz
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[23].outpost_number = 24
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[24].Zone = 19_bx
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[24].outpost_number = 25
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[25].Zone = 16_bv
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[25].outpost_number = 26
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[26].Zone = 15_bz
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[26].outpost_number = 27
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[27].Zone = 13_bv
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[27].outpost_number = 28
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[28].Zone = 13_bs
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[28].outpost_number = 29
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[29].Zone = 11_cb
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[29].outpost_number = 30
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[8].Zone = 25_cv
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[8].outpost_number = 9
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[9].Zone = 23_cs
+Wed Mar 31 15:34:46 2004 (martin) .ZCs[9].outpost_number = 10
+Mon May 17 17:11:09 2004 (gatto) .SkySheetAutumn = ju_mainland_au.sky
+Mon May 17 17:11:09 2004 (gatto) .SkySheetSpring = ju_mainland_sp.sky
+Mon May 17 17:11:09 2004 (gatto) .SkySheetSummer = ju_mainland_su.sky
+Mon May 17 17:11:09 2004 (gatto) .SkySheetWinter = ju_mainland_wi.sky
+Mon May 17 17:36:16 2004 (gatto) formName Pasted = 
+Wed May 26 11:36:30 2004 (gatto) formName Pasted = 
+Wed Sep 08 15:38:45 2004 (tran) .FogEnd = 
+Wed Sep 08 15:38:45 2004 (tran) .FogStart = 
+Wed Sep 08 15:38:45 2004 (tran) .LightEntityDay.Ambiant.B = 
+Wed Sep 08 15:38:45 2004 (tran) .LightEntityDay.Ambiant.G = 
+Wed Sep 08 15:38:45 2004 (tran) .LightEntityDay.Ambiant.R = 
+Wed Sep 08 15:38:45 2004 (tran) .LightEntityDay.Diffuse.B = 
+Wed Sep 08 15:38:45 2004 (tran) .LightEntityDay.Diffuse.G = 
+Wed Sep 08 15:38:45 2004 (tran) .LightEntityDay.Diffuse.R = 
+Wed Sep 08 15:38:45 2004 (tran) .LightEntityDusk.Ambiant.R = 
+Wed Sep 08 15:38:45 2004 (tran) .LightEntityNight.Ambiant.B = 
+Wed Sep 08 15:38:45 2004 (tran) .LightEntityNight.Ambiant.G = 
+Wed Sep 08 15:38:45 2004 (tran) .LightEntityNight.Ambiant.R = 
+Wed Sep 08 15:38:45 2004 (tran) .LightEntityNight.Diffuse.B = 
+Wed Sep 08 15:38:45 2004 (tran) .LightEntityNight.Diffuse.G = 
+Wed Sep 08 15:38:45 2004 (tran) .LightEntityNight.Diffuse.R = 
+Wed Sep 08 15:38:45 2004 (tran) .LightLandscapeNight.Ambiant.B = 
+Wed Sep 08 15:38:45 2004 (tran) .LightLandscapeNight.Ambiant.G = 
+Wed Sep 08 15:38:45 2004 (tran) .LightLandscapeNight.Ambiant.R = 
+Wed Sep 08 15:38:45 2004 (tran) .LightLandscapeNight.Diffuse.B = 
+Wed Sep 08 15:38:45 2004 (tran) .LightLandscapeNight.Diffuse.G = 
+Wed Sep 08 15:38:45 2004 (tran) .LightLandscapeNight.Diffuse.R = 
+Wed Sep 08 15:38:45 2004 (tran) .LightRootDay.Ambiant.B = 
+Wed Sep 08 15:38:45 2004 (tran) .LightRootDay.Ambiant.G = 
+Wed Sep 08 15:38:45 2004 (tran) .LightRootDay.Ambiant.R = 
+Wed Sep 08 15:38:45 2004 (tran) .LightRootDay.Diffuse.G = 
+Wed Sep 08 15:38:45 2004 (tran) .LightRootDay.Diffuse.R = 
+Wed Sep 08 15:38:45 2004 (tran) .LightRootNight.Ambiant.B = 
+Wed Sep 08 15:38:45 2004 (tran) .LightRootNight.Ambiant.G = 
+Wed Sep 08 15:38:45 2004 (tran) .LightRootNight.Ambiant.R = 
+Wed Sep 08 15:38:45 2004 (tran) .LightRootNight.Diffuse.B = 
+Wed Sep 08 15:38:45 2004 (tran) .LightRootNight.Diffuse.G = 
+Wed Sep 08 15:38:45 2004 (tran) .LightRootNight.Diffuse.R = 
+Fri Sep 24 10:58:56 2004 (gatto) formName Pasted = </LOG>
+</FORM>

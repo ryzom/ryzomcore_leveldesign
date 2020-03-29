@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.31 $" State="modified">
+  <STRUCT>
+    <ATOM Name="Name" Value="les sources interdites"/>
+    <STRUCT Name="LightLandscapeDay">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.77"/>
+        <ATOM Name="Y" Value="0.21"/>
+        <ATOM Name="Z" Value="-0.59"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="R" Value="96"/>
+        <ATOM Name="G" Value="127"/>
+        <ATOM Name="B" Value="145"/>
+        <ATOM Name="A"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="R" Value="96"/>
+        <ATOM Name="G" Value="127"/>
+        <ATOM Name="B" Value="145"/>
+        <ATOM Name="A"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightLandscapeNight">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.77"/>
+        <ATOM Name="Y" Value="0.21"/>
+        <ATOM Name="Z" Value="-0.59"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="R" Value="96"/>
+        <ATOM Name="G" Value="127"/>
+        <ATOM Name="B" Value="145"/>
+        <ATOM Name="A"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="R" Value="96"/>
+        <ATOM Name="G" Value="127"/>
+        <ATOM Name="B" Value="145"/>
+        <ATOM Name="A"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightLandscapeDusk">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.77"/>
+        <ATOM Name="Y" Value="0.21"/>
+        <ATOM Name="Z" Value="-0.59"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="R" Value="96"/>
+        <ATOM Name="G" Value="127"/>
+        <ATOM Name="B" Value="145"/>
+        <ATOM Name="A"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="R" Value="96"/>
+        <ATOM Name="G" Value="127"/>
+        <ATOM Name="B" Value="145"/>
+        <ATOM Name="A"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightEntityDay">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.77"/>
+        <ATOM Name="Y" Value="0.21"/>
+        <ATOM Name="Z" Value="-0.59"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="R" Value="50"/>
+        <ATOM Name="G" Value="110"/>
+        <ATOM Name="B" Value="150"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="R" Value="96"/>
+        <ATOM Name="G" Value="127"/>
+        <ATOM Name="B" Value="145"/>
+        <ATOM Name="A"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightEntityDusk">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.77"/>
+        <ATOM Name="Y" Value="0.21"/>
+        <ATOM Name="Z" Value="-0.59"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="R" Value="50"/>
+        <ATOM Name="G" Value="110"/>
+        <ATOM Name="B" Value="150"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="R" Value="96"/>
+        <ATOM Name="G" Value="127"/>
+        <ATOM Name="B" Value="145"/>
+        <ATOM Name="A"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightEntityNight">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.77"/>
+        <ATOM Name="Y" Value="0.21"/>
+        <ATOM Name="Z" Value="-0.59"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="R" Value="50"/>
+        <ATOM Name="G" Value="110"/>
+        <ATOM Name="B" Value="150"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="R" Value="96"/>
+        <ATOM Name="G" Value="127"/>
+        <ATOM Name="B" Value="145"/>
+        <ATOM Name="A"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightRootDay">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.77"/>
+        <ATOM Name="Y" Value="0.21"/>
+        <ATOM Name="Z" Value="-0.59"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="R" Value="35"/>
+        <ATOM Name="G" Value="78"/>
+        <ATOM Name="B" Value="103"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="R" Value="96"/>
+        <ATOM Name="G" Value="127"/>
+        <ATOM Name="B" Value="145"/>
+        <ATOM Name="A"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightRootDusk">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.77"/>
+        <ATOM Name="Y" Value="0.21"/>
+        <ATOM Name="Z" Value="-0.59"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="R" Value="35"/>
+        <ATOM Name="G" Value="78"/>
+        <ATOM Name="B" Value="103"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="R" Value="96"/>
+        <ATOM Name="G" Value="127"/>
+        <ATOM Name="B" Value="145"/>
+        <ATOM Name="A"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LightRootNight">
+      <STRUCT Name="Direction">
+        <ATOM Name="X" Value="-0.77"/>
+        <ATOM Name="Y" Value="0.21"/>
+        <ATOM Name="Z" Value="-0.59"/>
+      </STRUCT>
+      <STRUCT Name="Ambiant">
+        <ATOM Name="R" Value="35"/>
+        <ATOM Name="G" Value="78"/>
+        <ATOM Name="B" Value="103"/>
+      </STRUCT>
+      <STRUCT Name="Diffuse">
+        <ATOM Name="R" Value="96"/>
+        <ATOM Name="G" Value="127"/>
+        <ATOM Name="B" Value="145"/>
+        <ATOM Name="A"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="LandscapePointLightMaterial">
+      <ATOM Name="R" Value="255"/>
+      <ATOM Name="G" Value="255"/>
+      <ATOM Name="B" Value="255"/>
+      <ATOM Name="A" Value="255"/>
+    </STRUCT>
+    <ATOM Name="PacsRBank" Value="sources.rbank"/>
+    <ATOM Name="PacsGR" Value="sources.gr"/>
+    <ATOM Name="Ecosystem" Value="primes_roots.ecosystem"/>
+    <ATOM Name="LandscapeIG" Value="sources_ig.txt"/>
+    <ATOM Name="SkyDay" Value="sky_primes_racines_sources.shape"/>
+    <ATOM Name="SkyNight" Value="sky_primes_racines_sources.shape"/>
+    <ATOM Name="SkyIg" Value="canope_source.ig"/>
+    <ARRAY Name="Villages">
+      <STRUCT>
+        <ATOM Name="Zone" Value="67_au"/>
+        <ATOM Name="ForceLoadDist" Value="200"/>
+        <ATOM Name="LoadDist" Value="300"/>
+        <ATOM Name="UnloadDist" Value="500"/>
+        <ATOM Name="CenterX" Value="80"/>
+        <ATOM Name="CenterY" Value="80"/>
+        <ARRAY Name="IgList">
+          <STRUCT Name="pr_ruine_fyros_d">
+            <ATOM Name="IgName" Value="pr_ruine_fyros_d"/>
+          </STRUCT>
+        </ARRAY>
+      </STRUCT>
+    </ARRAY>
+    <ARRAY Name="ZCs">
+      <STRUCT>
+        <ATOM Name="outpost_number" Value="17"/>
+        <ATOM Name="Zone" Value="64_at"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="outpost_number" Value="18"/>
+        <ATOM Name="Zone" Value="66_av"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="outpost_number" Value="19"/>
+        <ATOM Name="Zone" Value="68_as"/>
+      </STRUCT>
+    </ARRAY>
+    <ATOM Name="FogDayMap" Value="fog_sources_day.tga"/>
+    <ATOM Name="FogNightMap" Value="fog_sources_night.tga"/>
+    <ATOM Name="FogDistMap" Value="fog_sources_dist.tga"/>
+    <ATOM Name="FogDepthMap" Value="fog_sources_depth.tga"/>
+    <ATOM Name="NoRainMap" Value="sources_no_rain.tga"/>
+    <ATOM Name="ZoneMin" Value="62_AQ"/>
+    <ATOM Name="ZoneMax" Value="71_AX"/>
+    <ATOM Name="FogStart" Value="50.0"/>
+    <ATOM Name="FogEnd" Value="200.0"/>
+    <ATOM Name="RootFogStart" Value="350"/>
+    <ATOM Name="RootFogEnd" Value="500"/>
+    <STRUCT Name="SpringWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="PR_fair1.weather_setup"/>
+        <ATOM Value="PR_fair2.weather_setup"/>
+        <ATOM Value="PR_wind1.weather_setup"/>
+        <ATOM Value="PR_humidity1.weather_setup"/>
+        <ATOM Value="PR_humidity2.weather_setup"/>
+        <ATOM Value="PR_thunderseve.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="15"/>
+        <ATOM Value="15"/>
+        <ATOM Value="10"/>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="SummerWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="PR_fair1.weather_setup"/>
+        <ATOM Value="PR_fair2.weather_setup"/>
+        <ATOM Value="PR_wind1.weather_setup"/>
+        <ATOM Value="PR_humidity1.weather_setup"/>
+        <ATOM Value="PR_humidity2.weather_setup"/>
+        <ATOM Value="PR_thunderseve.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="15"/>
+        <ATOM Value="15"/>
+        <ATOM Value="10"/>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="AutumnWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="PR_fair1.weather_setup"/>
+        <ATOM Value="PR_fair2.weather_setup"/>
+        <ATOM Value="PR_wind1.weather_setup"/>
+        <ATOM Value="PR_humidity1.weather_setup"/>
+        <ATOM Value="PR_humidity2.weather_setup"/>
+        <ATOM Value="PR_thunderseve.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="15"/>
+        <ATOM Value="15"/>
+        <ATOM Value="10"/>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="WinterWeatherFunction">
+      <ARRAY Name="WeatherSetups">
+        <ATOM Value="PR_fair1.weather_setup"/>
+        <ATOM Value="PR_fair2.weather_setup"/>
+        <ATOM Value="PR_wind1.weather_setup"/>
+        <ATOM Value="PR_humidity1.weather_setup"/>
+        <ATOM Value="PR_humidity2.weather_setup"/>
+        <ATOM Value="PR_thunderseve.weather_setup"/>
+      </ARRAY>
+      <ARRAY Name="SetupsWeights">
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="20"/>
+        <ATOM Value="15"/>
+        <ATOM Value="15"/>
+        <ATOM Value="10"/>
+      </ARRAY>
+    </STRUCT>
+    <ATOM Name="SpringCanopyIG" Value="canope_source.ig"/>
+    <ATOM Name="SummerCanopyIG" Value="canope_source.ig"/>
+    <ATOM Name="AutumnCanopyIG" Value="canope_source.ig"/>
+    <ATOM Name="WinterCanopyIG" Value="canope_source.ig"/>
+    <ATOM Name="WorldMap" Value="pr_source_map.tga"/>
+    <ATOM Name="LocalizedName" Value="uiContinentSources"/>
+    <ARRAY Name="MicroLifePrimitives">
+      <ATOM Value="fx_primeracine_sources.primitive"/>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:16:59 2002 (corvazier) File converted from old format
+Tue Oct 01 18:36:42 2002 (tran) formName Pasted = 
+Fri Oct 18 11:26:32 2002 (corvazier) formName Pasted =
+Tue Oct 01 18:36:42 2002 (tran) formName Pasted = 
+Tue Oct 29 16:35:58 2002 (tran) .SkyIg = canope_source.ig
+Wed Nov 06 18:50:37 2002 (tran) .RootFogEnd = 500
+Wed Nov 06 18:50:37 2002 (tran) .RootFogStart = 350
+Fri Jan 03 11:54:47 2003 (gatto) .AutumnCanopyIG = canope_source.ig
+Fri Jan 03 11:54:47 2003 (gatto) .SkyFogPart = PR_sky_day_fog.shape
+Fri Jan 03 11:54:47 2003 (gatto) .SpringCanopyIG = canope_source.ig
+Fri Jan 03 11:54:47 2003 (gatto) .SummerCanopyIG = canope_source.ig
+Fri Jan 03 11:54:47 2003 (gatto) .WinterCanopyIG = canope_source.ig
+Fri Jan 03 11:55:31 2003 (gatto) .AutomnWeatherFunction.WeatherSetups[0] = PR_fair1.weather
+Fri Jan 03 11:55:31 2003 (gatto) .AutomnWeatherFunction.WeatherSetups[1] = PR_thunderseve.weather
+Fri Jan 03 11:55:31 2003 (gatto) .SpringWeatherFunction.WeatherSetups[0] = PR_fair1.weather
+Fri Jan 03 11:55:31 2003 (gatto) .SpringWeatherFunction.WeatherSetups[1] = PR_thunderseve.weather
+Fri Jan 03 11:55:31 2003 (gatto) .SummerWeatherFunction.WeatherSetups[0] = PR_fair1.weather
+Fri Jan 03 11:55:31 2003 (gatto) .SummerWeatherFunction.WeatherSetups[1] = PR_thunderseve.weather
+Fri Jan 03 11:55:31 2003 (gatto) .WinterWeatherFunction.WeatherSetups[0] = PR_fair1.weather
+Fri Jan 03 11:55:31 2003 (gatto) .WinterWeatherFunction.WeatherSetups[1] = PR_thunderseve.weather
+Fri Jan 03 11:55:31 2003 (gatto) formName Resized = 2
+Fri Jan 03 12:15:01 2003 (gatto) .SkyNight = sky_primes_racines_bagne.shape
+Fri Jan 03 12:16:56 2003 (gatto) .SkyNight = sky_primes_racines_sources.shape
+Tue Feb 04 14:50:08 2003 (corvazier) .NoRainMap = sources_no_rain.tga
+Wed Mar 12 18:59:32 2003 (tran) .Villages[0].IgList[0] Renamed = pr_ruine_fyros_d
+Wed Mar 12 18:59:32 2003 (tran) .Villages[0].IgList[0].IgName = pr_ruine_fyros_d
+Wed Mar 12 18:59:32 2003 (tran) .Villages[0].Zone = 67_au
+Wed Mar 12 18:59:32 2003 (tran) formName Pasted = 
+Wed Mar 12 18:59:32 2003 (tran) formName Resized = 1
+Mon Mar 17 18:49:47 2003 (gatto) formName Pasted = 
+Mon Mar 17 18:56:56 2003 (gatto) formName Pasted = 
+Wed Mar 19 15:26:28 2003 (tran) .LightLandscapeNight.Ambiant.G = 79
+Thu Mar 20 14:19:50 2003 (gatto) .SkyFogPart = 
+Wed Nov 12 15:13:23 2003 (corvazier) .LocalizedName = uiContinentSources
+Wed Nov 12 15:13:23 2003 (corvazier) .LocalizedName = uiContinentSources
+Thu Feb 05 16:05:35 2004 (tran) .ZCs[0].Zone = 64_at
+Thu Feb 05 16:05:35 2004 (tran) .ZCs[1].Zone = 66_av
+Thu Feb 05 16:05:35 2004 (tran) .ZCs[2].Zone = 68_as
+Thu Feb 05 16:05:35 2004 (tran) formName Resized = 3
+Thu Mar 04 20:22:09 2004 (tran) .WorldMap = Pr_Source_Map.tga
+Fri Mar 19 17:19:30 2004 (millas) .MicroLifePrimitives[0] = FX_primeracine_sources.primitive
+Fri Mar 19 17:19:30 2004 (millas) formName Resized = 1
+Wed Mar 31 16:28:22 2004 (martin) .ZCs[0].Zone = 64_at
+Wed Mar 31 16:28:22 2004 (martin) .ZCs[0].outpost_number = 17
+Wed Mar 31 16:28:22 2004 (martin) .ZCs[1].Zone = 66_av
+Wed Mar 31 16:28:22 2004 (martin) .ZCs[1].outpost_number = 18
+Wed Mar 31 16:28:22 2004 (martin) .ZCs[2].Zone = 68_as
+Wed Mar 31 16:28:22 2004 (martin) .ZCs[2].outpost_number = 19
+Wed Mar 31 16:28:22 2004 (martin) formName Resized = 3
+Wed Sep 08 19:25:00 2004 (tran) formName Pasted = 
+Wed Sep 08 19:49:24 2004 (tran) formName Pasted = 
+Mon Sep 27 14:51:56 2004 (gatto) formName Pasted = 
+Tue Sep 28 10:16:06 2004 (gatto) formName Pasted = </LOG>
+</FORM>

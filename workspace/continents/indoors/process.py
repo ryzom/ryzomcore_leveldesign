@@ -52,7 +52,8 @@ CommonPath = ContinentPath
 LandscapeName = ContinentName
 
 # *** CONTINENT FILE ***
-ContinentFile = ContinentName + "/" + ContinentName + ".continent"
+ContinentSheet = ContinentName
+ContinentFile = ContinentName + "/" + ContinentSheet + ".continent"
 
 
 

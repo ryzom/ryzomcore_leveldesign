@@ -1,0 +1,68 @@
+ 	
+// les palais macro test based on the demo
+
+//
+
+// link the common configuration file
+RootConfigFilename = "common.cfg";
+
+DisplayedVariables += {"GlobalActorCount","GlobalActorMoves","GlobalActorUpdates"};
+
+// by default, use localhost to find the naming service
+//NSHost = "ldserver:50000";
+//NSHost = "gamedev4";
+
+// load all continents
+UsedContinents =
+{
+//	"fyros",
+//	"tryker",
+	"matis",
+//	"zorai",
+};
+
+Paths = { "data_leveldesign", "data_common", "data_shard", "data/3d/continents" };
+
+StartCommands = {
+	"loadPrim test_charge.prim",
+
+		"macroRecord test",
+	
+	
+					
+			"actorCreatePosition test_charge-bigpatat-001",      
+			"actorCreateWandering",       
+			"actorSetPatatEvolution test_charge-bigpatat-001",
+			"actorCreateGroup filin_jun_lvl_01.creature filin_01_ 2000",  
+			
+			"actorCreatePosition test_charge-bigpatat-001",      
+			"actorCreateWandering",       
+			"actorSetPatatEvolution test_charge-bigpatat-001",
+			"actorCreateGroup filin_jun_lvl_01.creature filin_02_ 2000",  
+		
+			"actorCreatePosition test_charge-bigpatat-003",      
+			"actorCreateWandering",       
+			"actorSetPatatEvolution test_charge-bigpatat-003",
+			"actorCreateGroup filin_jun_lvl_01.creature filin_03_ 2000",  
+		
+			"actorCreatePosition test_charge-bigpatat-004",      
+			"actorCreateWandering",       
+			"actorSetPatatEvolution test_charge-bigpatat-004",
+			"actorCreateGroup filin_jun_lvl_01.creature filin_04_ 2000",  
+		
+			"actorCreatePosition test_charge-bigpatat-005",      
+			"actorCreateWandering",       
+			"actorSetPatatEvolution test_charge-bigpatat-005",
+			"actorCreateGroup filin_jun_lvl_01.creature filin_05 2000",  
+		
+			
+			
+
+	"macroStopRecord",
+	"macroDisplay",
+	""
+};	
+	  
+	  
+	  
+	  

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.4 $" State="modified">
+  <PARENT Filename="lepaysmalade.continent"/>
+  <STRUCT>
+    <ATOM Name="Name" Value="r2_jungle"/>
+    <ATOM Name="PacsRBank" Value="r2_jungle.rbank"/>
+    <ATOM Name="PacsGR" Value="r2_jungle.gr"/>
+    <ATOM Name="LandscapeIG" Value="r2_jungle_ig.txt"/>
+    <ATOM Name="FogDistMap" Value="fog_r2_jungle_dist.tga"/>
+    <ATOM Name="FogDepthMap" Value="fog_r2_jungle_depth.tga"/>
+    <ATOM Name="NoRainMap" Value="r2_jungle_no_rain.tga"/>
+    <ATOM Name="ZoneMin" Value="69_HM"/>
+    <ATOM Name="ZoneMax" Value="130_JV"/>
+    <ARRAY Name="Villages"/>
+    <ARRAY Name="ZCs"/>
+    <ARRAY Name="MicroLifePrimitives"/>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Fri Dec 30 16:29:00 2005 (rousseau) .FogDepthMap = fog_r2_jungle_depth.tga
+Fri Dec 30 16:29:00 2005 (rousseau) .FogDistMap = fog_r2_jungle_dist.tga
+Fri Dec 30 16:29:00 2005 (rousseau) .NoRainMap = r2_jungle_no_rain.tga</LOG>
+</FORM>

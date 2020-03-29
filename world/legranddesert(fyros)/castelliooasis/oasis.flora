@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<FORM Version="0.1" State="modified">
+  <STRUCT>
+    <ARRAY Name="Include_patats">
+      <ATOM Value="oasis-flora-007"/>
+      <ATOM Value="oasis-flora-008"/>
+      <ATOM Value="oasis-flora-009"/>
+    </ARRAY>
+    <ARRAY Name="Exclude_patats"/>
+    <ARRAY Name="Plants">
+      <STRUCT>
+        <ATOM Name="File name" Value="baobab_a_1.plant"/>
+        <ATOM Name="Density" Value="0.01"/>
+        <ATOM Name="Falloff"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="File name" Value="baobab_b_1.plant"/>
+        <ATOM Name="Density" Value="0.01"/>
+        <ATOM Name="Falloff"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="File name" Value="palmtree_a_1.plant"/>
+        <ATOM Name="Density" Value="Normal"/>
+        <ATOM Name="Falloff"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="File name" Value="palmtree_a_2.plant"/>
+        <ATOM Name="Density" Value="Rare"/>
+        <ATOM Name="Falloff"/>
+      </STRUCT>
+    </ARRAY>
+    <ATOM Name="Jitter_Pos" Value="1.0"/>
+    <ATOM Name="Scale_Min" Value="0.7"/>
+    <ATOM Name="Scale_Max" Value="1.0"/>
+    <ATOM Name="Random_Seed" Value="Matt"/>
+  </STRUCT>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:17:18 2002 (corvazier) File converted from old format</LOG>
+</FORM>
