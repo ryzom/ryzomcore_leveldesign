@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.3 $" State="modified">
+  <PARENT Filename="_parent_botobject.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="ge_mission_rucksack.ps"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="AttackLevel" Value="0"/>
+      <ATOM Name="DefenseLevel" Value="0"/>
+      <ATOM Name="XPLevel" Value="0"/>
+      <ATOM Name="TauntLevel" Value="0"/>
+      <ATOM Name="MeleeReachValue" Value="0"/>
+      <ATOM Name="XPGainOnCreature" Value="0"/>
+    </STRUCT>
+    <STRUCT Name="Collision">
+      <ATOM Name="CollisionRadius" Value="0"/>
+      <ATOM Name="Length" Value="1.4"/>
+      <ATOM Name="Width" Value="2.6"/>
+      <ATOM Name="NotTraversable" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="Properties">
+      <ATOM Name="Selectable" Value="true"/>
+      <ATOM Name="LootHarvestState" Value="Lootable"/>
+      <ATOM Name="SelectableBySpace" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="Resists">
+      <ATOM Name="Fear" Value="0"/>
+      <ATOM Name="Sleep" Value="0"/>
+      <ATOM Name="Stun" Value="0"/>
+      <ATOM Name="Root" Value="0"/>
+      <ATOM Name="Blind" Value="0"/>
+      <ATOM Name="Madness" Value="0"/>
+      <ATOM Name="Snare" Value="0"/>
+      <ATOM Name="Slow" Value="0"/>
+      <ATOM Name="Acid" Value="0"/>
+      <ATOM Name="Cold" Value="0"/>
+      <ATOM Name="Electricity" Value="0"/>
+      <ATOM Name="Fire" Value="0"/>
+      <ATOM Name="Poison" Value="0"/>
+      <ATOM Name="Rot" Value="0"/>
+      <ATOM Name="Shockwave" Value="0"/>
+    </STRUCT>
+    <ATOM Name="attack_list0" Value="void.attack_list"/>
+    <ATOM Name="attack_list1" Value="void.attack_list"/>
+    <ATOM Name="attack_list2" Value="void.attack_list"/>
+    <ATOM Name="attack_list3" Value="void.attack_list"/>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.3 $" State="modified">
+  <PARENT Filename="_parent_botobject.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="ge_treasure_box_ma.shape"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="AttackLevel" Value="0"/>
+      <ATOM Name="DefenseLevel" Value="0"/>
+      <ATOM Name="XPLevel" Value="0"/>
+      <ATOM Name="TauntLevel" Value="0"/>
+      <ATOM Name="MeleeReachValue" Value="0"/>
+      <ATOM Name="XPGainOnCreature" Value="0"/>
+    </STRUCT>
+    <STRUCT Name="Collision">
+      <ATOM Name="CollisionRadius" Value="0"/>
+      <ATOM Name="Length" Value="1"/>
+      <ATOM Name="Width" Value="1"/>
+      <ATOM Name="Height" Value="1"/>
+    </STRUCT>
+    <STRUCT Name="Properties">
+      <ATOM Name="Selectable" Value="true"/>
+      <ATOM Name="Attackable" Value="true"/>
+    </STRUCT>
+    <ATOM Name="attack_list0" Value="void.attack_list"/>
+    <ATOM Name="attack_list1" Value="void.attack_list"/>
+    <ATOM Name="attack_list2" Value="void.attack_list"/>
+    <ATOM Name="attack_list3" Value="void.attack_list"/>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>
