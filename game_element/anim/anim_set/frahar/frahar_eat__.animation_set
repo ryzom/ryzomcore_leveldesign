@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_manger.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="FY_MO_Frahar_idle.anim"/>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_marcher.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="FY_MO_Frahar_marcher.anim"/>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_courir.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="FY_MO_Frahar_courir.anim"/>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_reculer.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_tournegauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_demitour_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_tournedroite.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_demitour_droit.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_tournegauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_demitour_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_tournedroite.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_demitour_droit.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_tournegauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_demitour_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_tournedroite.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_demitour_droit.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="impact">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_impact.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_begin">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_stun_init.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_stun_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_stun_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="default_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_mort.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="rest_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_dormir_init.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 14:46:07 2002 (puzin)
+Thu Apr 10 16:32:00 2003 (arnaudb) Form Parents = 
+Thu Apr 10 16:32:00 2003 (arnaudb) formName Resized = 3
+Thu Apr 10 16:32:53 2003 (arnaudb) .idle.animations[0].filename = TR_MO_Cute_Idle.anim
+Thu Apr 10 16:32:53 2003 (arnaudb) .idle.animations[1].filename = TR_MO_Cute_Idle_Occupation1.anim
+Thu Apr 10 16:32:53 2003 (arnaudb) .idle.animations[2].filename = TR_MO_Cute_Idle_Crier.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .backward.animations[0].filename = TR_MO_Cute_Atk_Recule.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .idle.LodCharacterAnimation = TR_MO_Cute_Idle.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .run.LodCharacterAnimation = TR_MO_Cute_Run.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .run.animations[0].filename = TR_MO_Cute_Run.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left.animations[0].filename = TR_MO_Cute_Idle_Tourne_G.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left.animations[1].filename = TR_MO_Cute_Idle_DemiTour_G.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left_to_backward.animations[0].filename = TR_MO_Cute_Idle_Tourne_G.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = TR_MO_Cute_Idle_DemiTour_G
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left_to_walk.animations[0].filename = TR_MO_Cute_Idle_Tourne_G.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = TR_MO_Cute_Idle_DemiTour_G
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right.animations[0].filename = TR_MO_Cute_Idle_Tourne_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right.animations[1].filename = TR_MO_Cute_Idle_DemiTour_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right_to_backward.animations[0].filename = TR_MO_Cute_Idle_Tourne_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right_to_backward.animations[1].filename = TR_MO_Cute_Idle_DemiTour_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right_to_walk.animations[0].filename = TR_MO_Cute_Idle_Tourne_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right_to_walk.animations[1].filename = TR_MO_Cute_Idle_DemiTour_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .walk.LodCharacterAnimation = TR_MO_Cute_Walk.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .walk.animations[0].filename = TR_MO_Cute_Walk.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) formName Resized = 2
+Thu Apr 10 16:57:53 2003 (arnaudb) .death.LodCharacterAnimation = TR_MO_Cute_Idle_Death.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .death.animations[0].filename = TR_MO_Cute_Idle_Death.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .death_idle.LodCharacterAnimation = TR_MO_Cute_Atk_dead.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .death_idle.animations[0].filename = TR_MO_Cute_Atk_dead.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .idle.animations[3].filename = TR_MO_Cute_Idle_Regarde_D.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .idle.animations[4].filename = TR_MO_Cute_Idle_Regarde_G.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .impact.animations[0].filename = TR_MO_Cute_Idle_Impact.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .rest_mode.animations[0].filename = TR_MO_Cute_Idle_To_Sleep.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) formName Resized = 1
+Thu Apr 10 17:27:57 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = TR_MO_Cute_Idle_DemiTour_G.anim
+Thu Apr 10 17:27:57 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = TR_MO_Cute_Idle_DemiTour_G.anim
+Thu Apr 10 17:44:55 2003 (arnaudb) .combat_mode.animations[0].filename = TR_MO_Cute_Idle_To_Idle_Atk.anim
+Thu Apr 10 17:44:55 2003 (arnaudb) .idle_to_walk.animations[0].filename = TR_MO_Cute_Idle_To_Walk.anim
+Thu Apr 10 17:44:55 2003 (arnaudb) formName Resized = 1
+Thu Apr 10 18:17:38 2003 (arnaudb) .backward.animations[0].filename = FY_MO_Frahar_reculer.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .death.animations[0].filename = FY_MO_Frahar_mort.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .death_idle.animations[0].filename = FY_MO_Frahar_mort_idle.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .idle.LodCharacterAnimation = FY_MO_Frahar_idle.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .idle.animations[0].filename = FY_MO_Frahar_idle.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .idle.animations[1].filename = FY_MO_Frahar_idle_attente.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .idle.animations[2].filename = FY_MO_Frahar_idle_attente2.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .idle.animations[3].filename = FY_MO_Frahar_crier.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .impact.animations[0].filename = FY_MO_Frahar_impact.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .rest_mode.animations[0].filename = FY_MO_Frahar_dormir_init.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .run.animations[0].filename = FY_MO_Frahar_courir.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_left.animations[0].filename = FY_MO_Frahar_tournegauche.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_left.animations[1].filename = FY_MO_Frahar_demitour_gauche.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_left_to_backward.animations[0].filename = FY_MO_Frahar_tournegauche.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = FY_MO_Frahar_demitour_gauche.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_left_to_walk.animations[0].filename = FY_MO_Frahar_tournegauche.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = FY_MO_Frahar_demitour_gauche.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_right.animations[0].filename = FY_MO_Frahar_tournedroite.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_right.animations[1].filename = FY_MO_Frahar_demitour_droit.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_right_to_backward.animations[0].filename = FY_MO_Frahar_tournedroite.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_right_to_backward.animations[1].filename = FY_MO_Frahar_demitour_droit.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_right_to_walk.animations[0].filename = FY_MO_Frahar_tournedroite.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_right_to_walk.animations[1].filename = FY_MO_Frahar_demitour_droit.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .walk.LodCharacterAnimation = FY_MO_Frahar_marcher.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .walk.animations[0].filename = FY_MO_Frahar_marcher.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) formName Resized = 0
+Thu Apr 10 18:21:58 2003 (arnaudb) .death.LodCharacterAnimation = FY_MO_Frahar_mort.anim
+Thu Apr 10 18:21:58 2003 (arnaudb) .death_idle.LodCharacterAnimation = FY_MO_Frahar_mort_idle.anim
+Thu Apr 10 18:21:58 2003 (arnaudb) .run.LodCharacterAnimation = FY_MO_Frahar_courir.anim
+Thu Apr 10 18:26:40 2003 (arnaudb) .idle.animations[0].filename = FY_MO_Frahar_sentir_danger.anim
+Thu Apr 10 18:26:40 2003 (arnaudb) .idle.animations[1].filename = FY_MO_Frahar_idle.anim
+Thu Apr 10 18:26:40 2003 (arnaudb) formName Resized = 2
+Thu Apr 10 18:28:12 2003 (arnaudb) .idle.animations[0].filename = FY_MO_Frahar_manger.anim
+Thu Apr 10 18:28:12 2003 (arnaudb) .idle.animations[1].filename = FY_MO_Frahar_chercher_manger.anim
+Thu Apr 10 18:28:12 2003 (arnaudb) .idle.animations[2].filename = FY_MO_Frahar_idle.anim
+Thu Apr 10 18:28:12 2003 (arnaudb) formName Resized = 3
+Fri Jun 06 11:38:20 2003 (beaume) .default_mode.animations[0].filename = FY_MO_Frahar_mort.anim
+Fri Jun 06 11:38:20 2003 (beaume) formName Resized = 1
+Tue Jun 24 15:01:47 2003 (beaume) .idle.animations[1].filename = FY_MO_Frahar_idle.anim
+Tue Jun 24 15:01:47 2003 (beaume) formName Resized = 2
+Mon Dec 01 12:07:00 2003 (beaume) .stun_begin.animations[0].filename = FY_MO_Frahar_stun_init.anim
+Mon Dec 01 12:07:00 2003 (beaume) .stun_end.animations[0].filename = FY_MO_Frahar_stun_end.anim
+Mon Dec 01 12:07:00 2003 (beaume) .stun_loop.animations[0].filename = FY_MO_Frahar_stun_loop.anim
+Mon Dec 01 12:07:00 2003 (beaume) formName Resized = 1
+Wed Jan 28 18:50:35 2004 (beaume) .defaultHeadControl = false</LOG>
+</FORM>

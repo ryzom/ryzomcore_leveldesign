@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_ryzomian_big_combat__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="attack2">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_C06_Atk_Spe.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.583"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 14:46:07 2002 (puzin)
+Fri Jan 16 16:08:10 2004 (beaume) .attack2.animations[0].filename = TR_MO_Ryzoholok_attack_speciale.anim
+Fri Jan 16 16:08:10 2004 (beaume) formName Resized = 1
+Wed May 12 14:17:36 2004 (beaume) .attack2.animations[0].filename = TR_MO_C06_Atk_Spe.anim</LOG>
+</FORM>

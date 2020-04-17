@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_magic_projectile_kami.animation_fx_set"/>
+  <STRUCT>
+    <STRUCT Name="FX0">
+      <ATOM Name="PSName" Value="mag_off_missile_kami.ps"/>
+      <ATOM Name="Color" Value="255,255,255"/>
+      <STRUCT Name="StickMode">
+        <ATOM Name="StickMode" Value="UserBone"/>
+        <ATOM Name="UserBone" Value="Bip01 Head"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Feb 05 19:15:32 2004 (vizerie) .FX0.PSName = fdsfdsf
+Fri Feb 06 10:42:10 2004 (vizerie) Form Parents = 
+Fri Feb 06 10:42:29 2004 (vizerie) Form Parents = 
+Tue Feb 17 16:06:47 2004 (gatto) .FX0.StickMode.UserBone = Dummy07
+Mon Feb 23 19:33:58 2004 (gatto) .FX0.PSName = mag_off_missile_kami.ps
+Mon Feb 23 19:34:44 2004 (gatto) .FX0.Color = 255,255,255
+Mon Feb 23 19:34:44 2004 (gatto) .FX0.StickMode.StickMode = UserBone
+Mon Feb 23 19:34:44 2004 (gatto) .FX0.StickMode.UserBone = Bip01 Head
+Tue Feb 24 10:54:59 2004 (gatto) .FX1.PSName = 
+Tue Feb 24 10:58:23 2004 (gatto) Form Parents = </LOG>
+</FORM>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_mort_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="ZO_MO_Gibbai_mort_idle.anim"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Fri Jun 06 10:25:00 2003 (puzin)
+Wed Jan 28 18:51:13 2004 (beaume) .defaultHeadControl = false
+Tue Nov 30 17:25:30 2004 (beaume) .idle.animations[0].filename = ZO_MO_Gibbai_A_mort_idle.anim</LOG>
+</FORM>

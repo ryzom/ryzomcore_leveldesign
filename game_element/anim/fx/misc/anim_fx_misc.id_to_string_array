@@ -1,9 +1,43 @@
 <?xml version="1.0"?>
-<FORM Revision="" State="modified">
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <ARRAY Name="Array">
+      <STRUCT>
+        <ATOM Name="ID" Value="0"/>
+        <ATOM Name="String" Value="range_impact_generic_lvl_1.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="1"/>
+        <ATOM Name="String" Value="range_impact_generic_lvl_2.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="2"/>
+        <ATOM Name="String" Value="range_impact_generic_lvl_3.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="3"/>
+        <ATOM Name="String" Value="range_impact_generic_lvl_4.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="4"/>
+        <ATOM Name="String" Value="range_impact_generic_lvl_5.animation_fx"/>
+      </STRUCT>
+    </ARRAY>
+  </STRUCT>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
-  <STRUCT/>
-  <LOG></LOG>
+  <LOG>Mon Jan 12 12:24:41 2004 (vizerie) .Array[0].ID = 0
+Mon Jan 12 12:24:41 2004 (vizerie) .Array[0].String = range_impact_generic_lvl_1.animation_fx
+Mon Jan 12 12:24:41 2004 (vizerie) formName Resized = 5
+Mon Jan 12 12:25:24 2004 (vizerie) .Array[1].ID = 1
+Mon Jan 12 12:25:24 2004 (vizerie) .Array[1].String = range_impact_generic_lvl_2.animation_fx
+Mon Jan 12 12:25:24 2004 (vizerie) .Array[2].ID = 2
+Mon Jan 12 12:25:24 2004 (vizerie) .Array[2].String = range_impact_generic_lvl_3.animation_fx
+Mon Jan 12 12:25:24 2004 (vizerie) .Array[3].ID = 3
+Mon Jan 12 12:25:24 2004 (vizerie) .Array[3].String = range_impact_generic_lvl_4.animation_fx
+Mon Jan 12 12:25:24 2004 (vizerie) .Array[4].ID = 4
+Mon Jan 12 12:25:24 2004 (vizerie) .Array[4].String = range_impact_generic_lvl_5.animation_fx
+Mon Jan 12 12:25:24 2004 (vizerie) formName Pasted = </LOG>
 </FORM>

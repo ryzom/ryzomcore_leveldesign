@@ -1,7 +1,29 @@
 <?xml version="1.0"?>
-<FORM Revision="" State="modified">
+<FORM Revision="$Revision: 1.5 $" State="modified">
   <STRUCT>
     <ARRAY Name="Attacks">
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="HealHP"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_cur_healhp_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_cur_healhp_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_cur_healhp_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_cur_healhp_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_healhp_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="healhp_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+          <ATOM Name="PlayImpactAnim" Value="false"/>
+        </STRUCT>
+      </STRUCT>
       <STRUCT>
         <STRUCT Name="ID">
           <ATOM Name="AttackType" Value="Magic"/>
@@ -24,11 +46,216 @@
           <ATOM Name="PlayImpactAnim" Value="false"/>
         </STRUCT>
       </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="HealHP"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_cur_healhp_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_cur_healhp_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_cur_healhp_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_cur_healhp_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_healhp_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="healhp_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+          <ATOM Name="PlayImpactAnim" Value="false"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="HealSAP"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_cur_healsap_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_cur_healsap_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_cur_healsap_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_cur_healsap_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_healhp_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="healhp_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+          <ATOM Name="PlayImpactAnim" Value="false"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="HealSAP"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_cur_healsap_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_cur_healsap_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_cur_healsap_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_cur_healsap_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_healhp_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="healhp_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+          <ATOM Name="PlayImpactAnim" Value="false"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="HealSAP"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_cur_healsap_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_cur_healsap_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_cur_healsap_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_cur_healsap_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_healhp_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="healhp_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+          <ATOM Name="PlayImpactAnim" Value="false"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="HealSTA"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_cur_healsta_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_cur_healsta_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_cur_healsta_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_cur_healsta_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_healhp_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="healhp_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+          <ATOM Name="PlayImpactAnim" Value="false"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="HealSTA"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_cur_healsta_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_cur_healsta_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_cur_healsta_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_cur_healsta_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_healsta_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="healsta_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+          <ATOM Name="PlayImpactAnim" Value="false"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="HealSTA"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_cur_healsta_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_cur_healsta_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_cur_healsta_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_cur_healsta_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_healsta_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="healsta_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+          <ATOM Name="PlayImpactAnim" Value="false"/>
+        </STRUCT>
+      </STRUCT>
     </ARRAY>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
-  <LOG></LOG>
+  <LOG>Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackBeginFX = cast_cur_begin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackEndFX = cast_cur_end.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackFailFX = cast_cur_fail.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackLoopFX = cast_cur_loop.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ImpactFX = acid_impact.animation_fx_set
+
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileDelay = 0.14
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileFX = magic_projectile_acid_bomb.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileMode = Bomb
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.AttackType = Magic
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.SpellID = Acid
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.SpellMode = Bomb
+Fri Feb 06 12:19:49 2004 (vizerie) formName Resized = 60
+Mon Feb 09 10:59:27 2004 (vizerie) .Attacks[0].Attack.PlayImpactAnim = false
+Tue Feb 10 10:45:06 2004 (vizerie) .Attacks[0].Attack.DefaultAimingPoint.StickMode = UserBone
+Tue Feb 10 10:45:06 2004 (vizerie) .Attacks[0].Attack.DefaultAimingPoint.UserBone = Bip01 Head
+Mon Jul 19 14:57:23 2004 (gatto) .Attacks[0].Attack.AttackBeginFX = cast_cur_healhp_begin.animation_fx_set
+Mon Jul 19 14:57:23 2004 (gatto) .Attacks[0].Attack.AttackEndFX = cast_cur_healhp_end.animation_fx_set
+Mon Jul 19 14:57:23 2004 (gatto) .Attacks[0].Attack.AttackFailFX = cast_cur_healhp_fail.animation_fx_set
+Mon Jul 19 14:57:23 2004 (gatto) .Attacks[0].Attack.AttackLoopFX = cast_cur_healhp_loop.animation_fx_set
+Mon Jul 19 14:58:15 2004 (gatto) .Attacks[1].Attack.AttackBeginFX = cast_cur_healsap_begin.animation_fx_set
+Mon Jul 19 14:58:15 2004 (gatto) .Attacks[1].Attack.AttackEndFX = cast_cur_healsap_end.animation_fx_set
+Mon Jul 19 14:58:15 2004 (gatto) .Attacks[1].Attack.AttackFailFX = cast_cur_healsap_fail.animation_fx_set
+Mon Jul 19 14:58:15 2004 (gatto) .Attacks[1].Attack.AttackLoopFX = cast_cur_healsap_loop.animation_fx_set
+Mon Jul 19 15:00:37 2004 (gatto) .Attacks[2].Attack.AttackBeginFX = cast_cur_healsta_begin.animation_fx_set
+Mon Jul 19 15:00:37 2004 (gatto) .Attacks[6].Attack.AttackBeginFX = cast_cur_healsta_begin.animation_fx_set
+Mon Jul 19 15:00:37 2004 (gatto) .Attacks[6].Attack.AttackEndFX = cast_cur_healsta_end.animation_fx_set
+Mon Jul 19 15:00:37 2004 (gatto) .Attacks[6].Attack.AttackFailFX = cast_cur_healsta_fail.animation_fx_set
+Mon Jul 19 15:00:37 2004 (gatto) .Attacks[6].Attack.AttackLoopFX = cast_cur_healsta_loop.animation_fx_set
+Mon Jul 19 15:00:37 2004 (gatto) formName Pasted = 
+Mon Jul 19 15:01:53 2004 (gatto) .Attacks[2].Attack.AttackBeginFX = cast_cur_healhp_begin.animation_fx_set
+Mon Jul 19 15:01:53 2004 (gatto) .Attacks[2].Attack.AttackEndFX = cast_cur_healhp_end.animation_fx_set
+Mon Jul 19 15:01:53 2004 (gatto) .Attacks[2].Attack.AttackFailFX = cast_cur_healhp_fail.animation_fx_set
+Mon Jul 19 15:01:53 2004 (gatto) .Attacks[2].Attack.AttackLoopFX = cast_cur_healhp_loop.animation_fx_set
+Mon Jul 19 15:02:09 2004 (gatto) .Attacks[1].Attack.AttackBeginFX = cast_cur_healhp_begin.animation_fx_set
+Mon Jul 19 15:02:09 2004 (gatto) .Attacks[1].Attack.AttackEndFX = cast_cur_healhp_end.animation_fx_set
+Mon Jul 19 15:02:09 2004 (gatto) .Attacks[1].Attack.AttackFailFX = cast_cur_healhp_fail.animation_fx_set
+Mon Jul 19 15:02:09 2004 (gatto) .Attacks[1].Attack.AttackLoopFX = cast_cur_healhp_loop.animation_fx_set
+Mon Jul 19 15:02:24 2004 (gatto) .Attacks[3].Attack.ProjectileFX = magic_projectile_healhp_bomb.animation_fx_set
+Mon Jul 19 15:02:24 2004 (gatto) .Attacks[3].Attack.ProjectileMode = Bomb
+Mon Jul 19 15:02:48 2004 (gatto) .Attacks[5].Attack.ProjectileFX = magic_projectile_healhp_spray.animation_fx_set
+Mon Jul 19 15:02:48 2004 (gatto) .Attacks[5].Attack.ProjectileMode = Spray
+Mon Jul 19 15:04:09 2004 (gatto) .Attacks[6].Attack.ProjectileFX = magic_projectile_healhp_bomb.animation_fx_set
+Mon Jul 19 15:04:09 2004 (gatto) .Attacks[6].Attack.ProjectileMode = Bomb
+Mon Jul 19 15:04:09 2004 (gatto) .Attacks[7].Attack.AttackBeginFX = cast_cur_healsta_begin.animation_fx_set
+Mon Jul 19 15:04:09 2004 (gatto) .Attacks[7].Attack.AttackEndFX = cast_cur_healsta_end.animation_fx_set
+Mon Jul 19 15:04:09 2004 (gatto) .Attacks[7].Attack.AttackFailFX = cast_cur_healsta_fail.animation_fx_set
+Mon Jul 19 15:04:09 2004 (gatto) .Attacks[7].Attack.AttackLoopFX = cast_cur_healsta_loop.animation_fx_set
+Mon Jul 19 15:04:09 2004 (gatto) .Attacks[8].Attack.AttackBeginFX = cast_cur_healsta_begin.animation_fx_set
+Mon Jul 19 15:04:09 2004 (gatto) .Attacks[8].Attack.AttackEndFX = cast_cur_healsta_end.animation_fx_set
+Mon Jul 19 15:04:09 2004 (gatto) .Attacks[8].Attack.AttackFailFX = cast_cur_healsta_fail.animation_fx_set
+Mon Jul 19 15:04:09 2004 (gatto) .Attacks[8].Attack.AttackLoopFX = cast_cur_healsta_loop.animation_fx_set</LOG>
 </FORM>

@@ -1,12 +1,131 @@
 <?xml version="1.0"?>
-<FORM Revision="" State="modified">
+<FORM Revision="$Revision: 1.2 $" State="modified">
   <STRUCT>
     <ARRAY Name="Attacks">
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="DamageShield"/>
+          <ATOM Name="DamageShieldType" Value="BasicDamageShield"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="AttackEndFX" Value="damage_shield_basic_hit.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="fire_impact.animation_fx_set"/>
+          <ATOM Name="IsImpactLocalised" Value="false"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="DamageShield"/>
+          <ATOM Name="DamageShieldType" Value="GooDamageShield"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="AttackEndFX" Value="damage_shield_goo_hit.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="fire_impact.animation_fx_set"/>
+          <ATOM Name="IsImpactLocalised" Value="false"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="DamageShield"/>
+          <ATOM Name="DamageShieldType" Value="FireWall"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="AttackEndFX" Value="damage_shield_firewall_hit.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="fire_impact.animation_fx_set"/>
+          <ATOM Name="IsImpactLocalised" Value="false"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="DamageShield"/>
+          <ATOM Name="DamageShieldType" Value="ThornWall"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="AttackEndFX" Value="damage_shield_thornwall_hit.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="fire_impact.animation_fx_set"/>
+          <ATOM Name="IsImpactLocalised" Value="false"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="DamageShield"/>
+          <ATOM Name="DamageShieldType" Value="WaterWall"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="AttackEndFX" Value="damage_shield_waterwall_hit.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="fire_impact.animation_fx_set"/>
+          <ATOM Name="IsImpactLocalised" Value="false"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="DamageShield"/>
+          <ATOM Name="DamageShieldType" Value="LightningWall"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="AttackEndFX" Value="damage_shield_lightningwall_hit.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="fire_impact.animation_fx_set"/>
+          <ATOM Name="IsImpactLocalised" Value="false"/>
+        </STRUCT>
+      </STRUCT>
     </ARRAY>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
-  <LOG></LOG>
+  <LOG>Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackBeginFX = cast_off_begin_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackEndFX = cast_off_end_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackFailFX = cast_off_fail_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackLoopFX = cast_off_loop_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ImpactFX = acid_impact.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileDelay = 0.14
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileFX = magic_projectile_acid_bomb.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileMode = Bomb
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.AttackType = Magic
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.SpellID = Acid
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.SpellMode = Bomb
+Fri Feb 06 12:19:49 2004 (vizerie) formName Resized = 60
+Mon Feb 09 10:59:27 2004 (vizerie) .Attacks[0].Attack.PlayImpactAnim = false
+Mon Feb 09 15:21:20 2004 (vizerie) .Attacks[0].Attack.IsImpactLocalised = true
+Mon Feb 09 15:21:20 2004 (vizerie) .Attacks[0].ID.AttackType = Melee
+Mon Feb 09 15:21:20 2004 (vizerie) formName Resized = 1
+Tue Feb 10 14:59:35 2004 (vizerie) .Attacks[0].Attack.ProjectileMode = Bomb
+Thu Feb 19 16:28:50 2004 (gatto) .Attacks[1].Attack.IsImpactLocalised = true
+Thu Feb 19 16:28:50 2004 (gatto) .Attacks[1].Attack.PlayImpactFXOnlyOnMainTarget = false
+Thu Feb 19 16:28:50 2004 (gatto) .Attacks[1].ID.AttackType = CreatureAttack
+Thu Feb 19 16:28:50 2004 (gatto) .Attacks[1].ID.CreatureAttackIndex = 0
+Thu Feb 19 16:28:50 2004 (gatto) formName Resized = 3
+Thu Feb 19 16:29:19 2004 (gatto) .Attacks[2].ID.CreatureAttackIndex = 1
+Thu Feb 19 16:29:19 2004 (gatto) formName Pasted = 
+Tue Mar 29 16:46:34 2005 (vizerie) .Attacks[0].Attack.AttackEndFX = dmagae_shield_firewall_hit.animation_fx_set
+Tue Mar 29 16:46:34 2005 (vizerie) .Attacks[0].ID.AttackType = DamageShield
+Tue Mar 29 16:46:34 2005 (vizerie) .Attacks[0].ID.DamageShieldType = FireWall
+Tue Mar 29 16:46:34 2005 (vizerie) formName Deleted = 
+Tue Mar 29 16:46:57 2005 (vizerie) .Attacks[0].Attack.ImpactFX = fire_impact.animation_fx_set
+Tue Mar 29 16:48:02 2005 (vizerie) .Attacks[0].Attack.AttackEndFX = damage_shield_firewall_hit.animation_fx_set
+Tue Mar 29 18:23:02 2005 (vizerie) .Attacks[0].Attack.IsImpactLocalised = false
+Tue Apr 26 16:14:14 2005 (vizerie) .Attacks[0].Attack.AttackEndFX = damage_shield_basic_hit.animation_fx_set
+Tue Apr 26 16:14:14 2005 (vizerie) .Attacks[0].ID.DamageShieldType = BasicDamageShield
+Tue Apr 26 16:14:47 2005 (vizerie) .Attacks[1].Attack.AttackEndFX = damage_shield_goo_hit.animation_fx_set
+Tue Apr 26 16:14:47 2005 (vizerie) .Attacks[1].ID.DamageShieldType = GooDamageShield
+Tue Apr 26 16:14:47 2005 (vizerie) formName Pasted = 
+Tue Apr 26 16:14:47 2005 (vizerie) formName Resized = 6
+Tue Apr 26 16:16:08 2005 (vizerie) .Attacks[2].Attack.AttackEndFX = damage_shield_firewall_hit.animation_fx_set
+Tue Apr 26 16:16:08 2005 (vizerie) .Attacks[2].ID.DamageShieldType = FireWall
+Tue Apr 26 16:16:08 2005 (vizerie) .Attacks[3].Attack.AttackEndFX = damage_shield_thornwall_hit.animation_fx_set
+Tue Apr 26 16:16:08 2005 (vizerie) .Attacks[3].ID.DamageShieldType = ThornWall
+Tue Apr 26 16:16:08 2005 (vizerie) formName Pasted = 
+Tue Apr 26 16:16:31 2005 (vizerie) .Attacks[4].Attack.AttackEndFX = damage_shield_waterwall_hit.animation_fx_set
+Tue Apr 26 16:16:31 2005 (vizerie) .Attacks[4].ID.DamageShieldType = WaterWall
+Tue Apr 26 16:16:31 2005 (vizerie) formName Pasted = 
+Tue Apr 26 16:17:35 2005 (vizerie) .Attacks[5].Attack.AttackEndFX = damage_shield_lightningwall_hit.animation_fx_set
+Tue Apr 26 16:17:35 2005 (vizerie) .Attacks[5].ID.DamageShieldType = LightningWall
+Tue Apr 26 16:17:35 2005 (vizerie) formName Pasted = </LOG>
 </FORM>

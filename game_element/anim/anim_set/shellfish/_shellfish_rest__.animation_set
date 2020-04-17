@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_rest.animation_set"/>
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_dormir_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Crustace_dormir_loop.anim"/>
+    </STRUCT>
+    <STRUCT Name="combat_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_dormir_to_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_mort.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="default_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_dormir_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri Dec 13 16:13:41 2002 (puzin)
+Mon Jan 20 10:46:36 2003 (oldbeaume) .death.animations[0].filename = TR_MO_Crustace_mort.anim
+Mon Jan 20 10:46:36 2003 (oldbeaume) .death_idle.animations[0].filename = TR_MO_Crustace_mort_idle.anim
+Mon Jan 20 10:46:36 2003 (oldbeaume) .default_mode.animations[0].filename = TR_MO_Crustace_dormir_end.anim
+Mon Jan 20 10:46:36 2003 (oldbeaume) .idle.animations[0].filename = TR_MO_Crustace_dormir_loop.anim
+Mon Jan 20 12:16:27 2003 (oldbeaume) .death.LodCharacterAnimation = TR_MO_Crustace_mort.anim
+Mon Jan 20 12:16:27 2003 (oldbeaume) .death_idle.LodCharacterAnimation = TR_MO_Crustace_mort_idle.anim
+Mon Jan 20 12:16:27 2003 (oldbeaume) .idle.LodCharacterAnimation = TR_MO_Crustace_dormir_loop.anim
+Wed Feb 12 15:11:07 2003 (arnaudb) .combat_mode.animations[0].filename = TR_MO_Crustace_dormir_to_engarde.anim
+Wed Feb 12 15:11:07 2003 (arnaudb) formName Resized = 1
+Fri Jun 06 18:10:14 2003 (beaume) .death_mode.animations[0].filename = TR_MO_Crustace_mort.anim
+Fri Jun 06 18:10:14 2003 (beaume) formName Resized = 1
+Thu Jul 03 12:20:24 2003 (puzin) Form Parents = 
+Fri Mar 19 11:56:50 2004 (beaume) .defaultHeadControl = false</LOG>
+</FORM>

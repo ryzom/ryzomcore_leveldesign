@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.3 $" State="modified">
+  <STRUCT>
+    <STRUCT Name="FX0">
+      <ATOM Name="PSName" Value="mo_vampignon_specialatk.ps"/>
+      <ATOM Name="ScaleFX" Value="true"/>
+      <STRUCT Name="StickMode">
+        <ATOM Name="StickMode" Value="UserBone"/>
+        <ATOM Name="UserBone" Value="Bip01 Spine1"/>
+      </STRUCT>
+      <ATOM Name="RepeatMode" Value="Respawn"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Feb 12 11:14:32 2004 (gatto) .FX0.PSName = mo_kakty_specialatk.ps
+Thu Feb 12 11:14:32 2004 (gatto) .FX0.RepeatMode = Respawn
+Thu Feb 12 11:14:32 2004 (gatto) .FX0.ScaleFX = true
+Thu Feb 12 11:15:03 2004 (gatto) .FX0.StickMode.StickMode = UserBone
+Thu Feb 12 11:15:03 2004 (gatto) .FX0.StickMode.UserBone = BIP01 Spine1
+Thu Feb 12 12:25:22 2004 (gatto) .FX0.PSName = mo_vampignon_specialatk.ps
+Thu Feb 12 12:28:14 2004 (gatto) .FX0.StickMode.UserBone = Bip01 Spine1
+Thu Feb 12 17:22:15 2004 (gatto) .FX0.ScaleFX = false
+Thu Mar 25 14:46:16 2004 (gatto) .FX0.ScaleFX = true</LOG>
+</FORM>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <PARENT Filename="_magic_projectile_off_bomb.animation_fx_set"/>
+  <PARENT Filename="_magic_projectile_hatred.animation_fx_set"/>
+  <STRUCT>
+    <STRUCT Name="FX0">
+      <STRUCT Name="StickMode">
+        <ATOM Name="UserBone" Value="Box02"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="FX1">
+      <STRUCT Name="StickMode">
+        <ATOM Name="UserBone" Value="Box02"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Feb 05 19:15:32 2004 (vizerie) .FX0.PSName = fdsfdsf
+Fri Feb 06 10:42:10 2004 (vizerie) Form Parents = 
+Fri Feb 06 10:42:29 2004 (vizerie) Form Parents = 
+Tue Feb 17 16:03:00 2004 (gatto) .FX0.StickMode.UserBone = Box02
+Tue Feb 17 16:03:08 2004 (gatto) .FX1.StickMode.UserBone = Box02</LOG>
+</FORM>

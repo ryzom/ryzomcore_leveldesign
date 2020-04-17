@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_hungry.animation_set"/>
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_renifler.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Coureur_idle.anim"/>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_trot.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Coureur_trot.anim"/>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_gallop.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Coureur_gallop.anim"/>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_Recule.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_PetitPas_G.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_demi_tour.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_PetitPas_D.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_demi_tour_Droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_PetitPas_G.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_demi_tour.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_PetitPas_D.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_demi_tour_Droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_PetitPas_G.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_demi_tour.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_PetitPas_D.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_demi_tour_Droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="impact">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_idle_Impact.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_begin">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_Stun_init.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_Stun_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_Stun_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Coureur_Mort_en_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 16:14:11 2002 (puzin)
+Mon Dec 16 17:20:14 2002 (beaume) .death.LodCharacterAnimation = TR_MO_Coureur_Meurt.anim
+Mon Dec 16 17:20:14 2002 (beaume) .death_idle.LodCharacterAnimation = TR_MO_Coureur_Idle_Dead.anim
+Mon Dec 16 17:20:14 2002 (beaume) .idle.LodCharacterAnimation = TR_MO_Coureur_idle.anim
+Mon Dec 16 17:20:14 2002 (beaume) .idle.animations[1].filename = TR_MO_Coureur_renifler.anim
+Mon Dec 16 17:20:14 2002 (beaume) .idle.animations[2].filename = TR_MO_Coureur_idle.anim
+Mon Dec 16 17:20:14 2002 (beaume) .run.LodCharacterAnimation = TR_MO_Coureur_gallop.anim
+Mon Dec 16 17:20:14 2002 (beaume) .walk.LodCharacterAnimation = TR_MO_Coureur_trot.anim
+Mon Dec 16 17:20:14 2002 (beaume) formName Resized = 3
+Fri Mar 21 11:02:20 2003 (arnaudb) .impact.animations[0].filename = TR_MO_Coureur_idle_Impact.anim
+Fri Mar 21 11:02:20 2003 (arnaudb) formName Resized = 1
+Fri Jun 06 17:42:34 2003 (beaume) .death_mode.animations[0].filename = TR_MO_Coureur_Meurt.anim
+Fri Jun 06 17:42:34 2003 (beaume) formName Resized = 1
+Tue Jun 24 15:11:18 2003 (beaume) .idle.animations[0].filename = TR_MO_Coureur_renifler.anim
+Tue Jun 24 15:11:18 2003 (beaume) .idle.animations[1].filename = TR_MO_Coureur_idle.anim
+Tue Jun 24 15:11:18 2003 (beaume) formName Resized = 2
+Thu Jul 03 12:16:47 2003 (puzin) Form Parents = 
+Fri Jul 04 15:13:55 2003 (beaume) .death_mode.animations[0].filename = TR_MO_Coureur_Mort_en_idle.anim
+Mon Dec 01 15:03:41 2003 (beaume) .stun_begin.animations[0].filename = TR_MO_Coureur_Stun_init.anim
+Mon Dec 01 15:03:41 2003 (beaume) .stun_end.animations[0].filename = TR_MO_Coureur_Stun_end.anim
+Mon Dec 01 15:03:41 2003 (beaume) .stun_loop.animations[0].filename = TR_MO_Coureur_Stun_loop.anim
+Mon Dec 01 15:03:41 2003 (beaume) formName Resized = 1
+Thu Dec 18 15:46:43 2003 (beaume) .defaultHeadControl = false</LOG>
+</FORM>

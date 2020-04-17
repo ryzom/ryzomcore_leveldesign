@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_death.animation_set"/>
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_mort_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Ryzomien_dormir.anim"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri Dec 13 16:13:41 2002 (puzin)
+Mon Dec 16 17:43:49 2002 (beaume) .death.LodCharacterAnimation = TR_MO_Ryzomien_mort.anim
+Mon Dec 16 17:43:49 2002 (beaume) .death_idle.LodCharacterAnimation = TR_MO_Ryzomien_mort_idle.anim
+Mon Dec 16 17:43:49 2002 (beaume) .idle.LodCharacterAnimation = TR_MO_Ryzomien_dormir.anim
+Wed Feb 12 15:08:59 2003 (arnaudb) .combat_mode.animations[0].filename = TR_MO_Ryzomien_dormir_to_engarde.anim
+Fri Jun 06 17:50:38 2003 (beaume) .idle.animations[0].filename = TR_MO_Ryzomien_mort_idle.anim
+Fri Jun 06 17:50:38 2003 (beaume) formName Resized = 0
+Thu Jul 03 12:17:38 2003 (puzin) Form Parents = 
+Fri Mar 19 11:53:29 2004 (beaume) .defaultHeadControl = false</LOG>
+</FORM>

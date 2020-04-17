@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <PARENT Filename="_shellfish_hungry__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_chercher_manger.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_marche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_course.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_reculer.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_left.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_180_left.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_right.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_180_right.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_left.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_180_left.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_right.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_180_right.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_left.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_180_left.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_right.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_180_right.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_mort.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_mort_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 16:14:11 2002 (puzin)
+Mon Jan 20 10:48:59 2003 (oldbeaume) .backward.animations[0].filename = TR_MO_Crustace_reculer.anim
+Mon Jan 20 10:48:59 2003 (oldbeaume) .death.animations[0].filename = TR_MO_Crustace_mort.anim
+Mon Jan 20 10:48:59 2003 (oldbeaume) .death_idle.animations[0].filename = TR_MO_Crustace_mort_idle.anim
+Mon Jan 20 10:48:59 2003 (oldbeaume) .idle.animations[0].filename = TR_MO_Crustace_manger.anim
+Mon Jan 20 10:48:59 2003 (oldbeaume) .idle.animations[1].filename = TR_MO_Crustace_chercher_manger
+Mon Jan 20 10:48:59 2003 (oldbeaume) .idle.animations[2].filename = TR_MO_Crustace_idle.anim
+Mon Jan 20 10:48:59 2003 (oldbeaume) formName Resized = 3
+Mon Jan 20 10:56:31 2003 (oldbeaume) Form Parents = 
+Tue Jun 24 15:39:20 2003 (beaume) .idle.animations[1].filename = TR_MO_Crustace_idle.anim
+Tue Jun 24 15:39:20 2003 (beaume) Form Parents = 
+Tue Jun 24 15:39:20 2003 (beaume) formName Resized = 2
+Tue Jun 24 15:40:03 2003 (beaume) .idle.animations[0].filename = TR_MO_Crustace_chercher_manger.anim
+Tue Jun 24 15:40:03 2003 (beaume) Form Parents = </LOG>
+</FORM>

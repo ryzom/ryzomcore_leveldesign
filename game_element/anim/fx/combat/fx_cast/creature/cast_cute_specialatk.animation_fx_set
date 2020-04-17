@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.4 $" State="modified">
+  <STRUCT>
+    <STRUCT Name="FX0">
+      <ATOM Name="PSName" Value="MO_cute_specialatk.ps"/>
+      <ATOM Name="ScaleFX" Value="true"/>
+      <STRUCT Name="StickMode">
+        <ATOM Name="StickMode" Value="UserBone"/>
+        <ATOM Name="UserBone" Value="Bip01 R Hand"/>
+      </STRUCT>
+      <ATOM Name="RepeatMode" Value="Respawn"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Feb 12 11:14:32 2004 (gatto) .FX0.PSName = mo_kakty_specialatk.ps
+Thu Feb 12 11:14:32 2004 (gatto) .FX0.RepeatMode = Respawn
+Thu Feb 12 11:14:32 2004 (gatto) .FX0.ScaleFX = true
+Thu Feb 12 11:15:03 2004 (gatto) .FX0.StickMode.StickMode = UserBone
+Thu Feb 12 11:15:03 2004 (gatto) .FX0.StickMode.UserBone = BIP01 Spine1
+Thu Feb 12 12:12:59 2004 (gatto) .FX0.PSName = MO_cute_specialatk.ps
+Thu Feb 12 12:12:59 2004 (gatto) .FX0.StickMode.UserBone = BIP01 R hand
+Thu Feb 12 12:29:33 2004 (gatto) .FX0.StickMode.UserBone = Bip01 R hand
+Fri Feb 13 13:42:11 2004 (gatto) .FX0.ScaleFX = false
+Fri Feb 13 17:23:51 2004 (gatto) .FX0.StickMode.UserBone = Bip01 R Hand
+Thu Mar 25 12:07:02 2004 (gatto) .FX0.ScaleFX = true</LOG>
+</FORM>

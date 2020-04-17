@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <PARENT Filename="_shellfish_alert__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_dormir_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_mort.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_mort_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="default_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_dormir_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri Dec 13 16:13:41 2002 (puzin)
+Mon Jan 20 10:46:36 2003 (oldbeaume) .death.animations[0].filename = TR_MO_Crustace_mort.anim
+Mon Jan 20 10:46:36 2003 (oldbeaume) .death_idle.animations[0].filename = TR_MO_Crustace_mort_idle.anim
+Mon Jan 20 10:46:36 2003 (oldbeaume) .default_mode.animations[0].filename = TR_MO_Crustace_dormir_end.anim
+Mon Jan 20 10:46:36 2003 (oldbeaume) .idle.animations[0].filename = TR_MO_Crustace_dormir_loop.anim
+Mon Jan 20 10:56:54 2003 (oldbeaume) Form Parents = </LOG>
+</FORM>

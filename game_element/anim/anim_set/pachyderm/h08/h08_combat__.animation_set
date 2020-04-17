@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_pachyderm_combat__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="attack2">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_H08_Atk_Spe.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.875"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri Dec 13 15:08:03 2002 (puzin)
+Thu Feb 12 19:32:18 2004 (beaume) .attack2.animations[0].filename = TR_MO_Bull_coup_corne2.anim
+Thu Feb 12 19:32:18 2004 (beaume) formName Resized = 1
+Wed May 12 14:26:57 2004 (beaume) .attack2.animations[0].filename = TR_MO_H08_Atk_Spe.anim</LOG>
+</FORM>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_cast_base.animation_fx_set"/>
+  <STRUCT>
+    <STRUCT Name="FX0">
+      <ATOM Name="PSName" Value="mag_off_kami_gd_g2_cast_end.ps"/>
+      <ATOM Name="ScaleFX" Value="true"/>
+      <STRUCT Name="StickMode">
+        <ATOM Name="StickMode" Value="UserBone"/>
+        <ATOM Name="UserBone" Value="Bip01 Spine"/>
+      </STRUCT>
+      <ATOM Name="RepeatMode" Value="Loop"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Feb 05 19:15:32 2004 (vizerie) .FX0.PSName = fdsfdsf
+Mon Feb 23 18:58:12 2004 (gatto) .FX0.StickMode.UserBone = Bip01 Spine
+Mon Feb 23 19:25:55 2004 (gatto) .FX0.ScaleFX = true</LOG>
+</FORM>

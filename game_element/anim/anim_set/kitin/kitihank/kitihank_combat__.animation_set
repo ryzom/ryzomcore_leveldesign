@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_kitin_combat__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="attack2">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitinhank_Atk_Canon.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.817"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 14:46:07 2002 (puzin)
+Thu Dec 12 16:18:35 2002 (puzin) .attack2.animations[0].filename = TR_MO_Kitinhank_Atk_Canon.anim
+Thu Dec 12 16:18:35 2002 (puzin) formName Resized = 1</LOG>
+</FORM>

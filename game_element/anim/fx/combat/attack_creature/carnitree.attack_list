@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.4 $" State="modified">
+  <STRUCT>
+    <ARRAY Name="Attacks">
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="CreatureAttack"/>
+          <ATOM Name="SpellID" Value="Piercing"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.9"/>
+          <ATOM Name="AttackEndFX" Value="cast_carnitree_specialatk1.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_piercing_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="piercing_impact.animation_fx_set"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="CreatureAttack"/>
+          <ATOM Name="SpellID" Value="Poison"/>
+          <ATOM Name="CreatureAttackIndex" Value="1"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.9"/>
+          <ATOM Name="AttackEndFX" Value="cast_carnitree_specialatk2.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_poison_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="poison_impact.animation_fx_set"/>
+        </STRUCT>
+      </STRUCT>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Feb 12 11:02:09 2004 (gatto) .Attacks[0].ID.AttackType = CreatureAttack
+Thu Feb 12 11:02:09 2004 (gatto) .Attacks[1].ID.AttackType = CreatureAttack
+Thu Feb 12 11:02:09 2004 (gatto) .Attacks[1].ID.CreatureAttackIndex = 1
+Thu Feb 12 11:02:09 2004 (gatto) formName Resized = 2
+Thu Feb 12 11:05:18 2004 (gatto) .Attacks[0].Attack.ProjectileMode = 
+Thu Feb 12 11:12:13 2004 (gatto) .Attacks[1].Attack.ProjectileMode = Bomb
+Thu Feb 12 11:15:32 2004 (gatto) .Attacks[1].Attack.AttackEndFX = cast_kakty_specialatk.animation_fx_set
+Fri Feb 13 18:26:38 2004 (gatto) .Attacks[0].Attack.AttackEndFX = cast_carnitree_specialatk1.animation_fx_set
+Fri Feb 13 18:26:38 2004 (gatto) .Attacks[0].Attack.ProjectileFX = range_projectile_blunt_carnitree_missile.animation_fx_set
+Fri Feb 13 18:26:38 2004 (gatto) .Attacks[1].Attack.AttackEndFX = cast_carnitree_specialatk2.animation_fx_set
+Fri Feb 13 18:26:38 2004 (gatto) .Attacks[1].Attack.ImpactFX = poison_impact.animation_fx_set
+Fri Feb 13 18:26:38 2004 (gatto) .Attacks[1].Attack.ProjectileFX = magic_projectile_poison_bomb.animation_fx_set
+Fri Feb 13 18:26:55 2004 (gatto) .Attacks[0].Attack.ProjectileMode = Bomb
+Mon Feb 16 10:07:21 2004 (gatto) .Attacks[0].Attack.ImpactFX = blunt_impact.animation_fx_set
+Mon Feb 16 10:07:21 2004 (gatto) .Attacks[0].Attack.ProjectileFX = magic_projectile_blunt_bomb.animation_fx_set
+Mon Feb 16 10:07:58 2004 (gatto) .Attacks[0].Attack.ImpactFX = piercing_impact.animation_fx_set
+Mon Feb 16 10:07:58 2004 (gatto) .Attacks[0].Attack.ProjectileFX = magic_projectile_piercing_bomb.animation_fx_set
+Tue Feb 17 17:41:26 2004 (gatto) .Attacks[0].ID.SpellID = Piercing
+Tue Feb 17 17:41:26 2004 (gatto) .Attacks[0].ID.SpellMode = Bomb
+Tue Feb 17 17:41:26 2004 (gatto) .Attacks[1].ID.SpellID = Poison
+Tue Feb 17 17:41:26 2004 (gatto) .Attacks[1].ID.SpellMode = Bomb
+Wed Feb 18 16:16:18 2004 (gatto) .Attacks[1].Attack.ProjectileDelay = 0.9
+Wed Feb 18 16:16:22 2004 (gatto) .Attacks[0].Attack.ProjectileDelay = 0.9</LOG>
+</FORM>

@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.3 $" State="modified">
+  <PARENT Filename="_shellfish_alert__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_idle.anim"/>
+          <ATOM Name="next1" Value="0"/>
+          <ATOM Name="next1 weight" Value="30"/>
+          <ATOM Name="next2" Value="1"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_crier.anim"/>
+          <ATOM Name="next1" Value="0"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_marche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_course.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_reculer.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_left.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_180_left.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_right.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_180_right.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_left.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_180_left.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_right.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_180_right.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_left.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_180_left.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_right.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turn_180_right.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_mort.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_mort_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="rest_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_dormir_init.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 16:14:11 2002 (puzin)
+Fri Jan 17 15:15:39 2003 (oldbeaume) .backward.animations[0].filename = TR_MO_Crustace_reculer.anim
+Fri Jan 17 15:15:39 2003 (oldbeaume) .death.animations[0].filename = TR_MO_Crustace_mort.anim
+Fri Jan 17 15:15:39 2003 (oldbeaume) .death_idle.animations[0].filename = TR_MO_Crustace_mort_idle.anim
+Fri Jan 17 15:15:39 2003 (oldbeaume) .idle.animations[1].filename = TR_MO_Crustace_crier.anim
+Fri Jan 17 15:15:39 2003 (oldbeaume) formName Resized = 0
+Mon Jan 20 10:26:52 2003 (oldbeaume) .rest_mode.animations[0].filename = TR_MO_Crustace_dormir_init.anim
+Mon Jan 20 10:56:18 2003 (oldbeaume) Form Parents = 
+Thu Jan 25 13:56:01 2007 (nouveau) .idle.animations[0].next1 = 0
+Thu Jan 25 13:56:01 2007 (nouveau) .idle.animations[0].next1 weight = 40
+Thu Jan 25 13:56:01 2007 (nouveau) .idle.animations[0].next2 = 1
+Thu Jan 25 13:56:01 2007 (nouveau) .idle.animations[1].next1 = 0</LOG>
+</FORM>

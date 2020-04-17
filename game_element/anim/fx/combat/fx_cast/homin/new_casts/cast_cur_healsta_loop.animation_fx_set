@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_cast_base.animation_fx_set"/>
+  <STRUCT>
+    <STRUCT Name="FX0">
+      <ATOM Name="PSName" Value="mag_cur_healsta_loop.ps"/>
+      <ATOM Name="ScaleFX" Value="true"/>
+      <STRUCT Name="StickMode">
+        <ATOM Name="StickMode" Value="UserBone"/>
+        <ATOM Name="UserBone" Value="Bip01 Spine1"/>
+      </STRUCT>
+      <ATOM Name="RepeatMode" Value="Respawn"/>
+    </STRUCT>
+    <STRUCT Name="FX1">
+      <ATOM Name="ScaleFX" Value="true"/>
+      <ATOM Name="RepeatMode" Value="Respawn"/>
+    </STRUCT>
+    <STRUCT Name="FX2">
+      <ATOM Name="RepeatMode" Value="Respawn"/>
+    </STRUCT>
+    <STRUCT Name="FX3">
+      <ATOM Name="RepeatMode" Value="Respawn"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Feb 05 19:15:32 2004 (vizerie) .FX0.PSName = fdsfdsf
+Wed Jul 21 10:22:13 2004 (gatto) .FX0.RepeatMode = Respawn
+Wed Jul 21 10:22:13 2004 (gatto) .FX1.RepeatMode = Respawn
+Wed Jul 21 10:22:13 2004 (gatto) .FX2.RepeatMode = Respawn
+Wed Jul 21 10:22:13 2004 (gatto) .FX3.RepeatMode = Respawn
+Wed Jul 21 10:43:32 2004 (gatto) .FX0.ScaleFX = true
+Wed Jul 21 10:43:35 2004 (gatto) .FX1.ScaleFX = true</LOG>
+</FORM>

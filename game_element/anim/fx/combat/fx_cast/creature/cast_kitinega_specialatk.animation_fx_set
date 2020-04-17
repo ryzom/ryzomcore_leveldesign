@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.4 $" State="modified">
+  <STRUCT>
+    <STRUCT Name="FX0">
+      <ATOM Name="PSName" Value="mo_kitinega_specialatk.ps"/>
+      <ATOM Name="ScaleFX" Value="true"/>
+      <STRUCT Name="StickMode">
+        <ATOM Name="StickMode" Value="UserBone"/>
+        <ATOM Name="UserBone" Value="Bip01 TailNub"/>
+      </STRUCT>
+      <ATOM Name="RepeatMode" Value="Respawn"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Feb 12 11:14:32 2004 (gatto) .FX0.PSName = mo_kakty_specialatk.ps
+Thu Feb 12 11:14:32 2004 (gatto) .FX0.RepeatMode = Respawn
+Thu Feb 12 11:14:32 2004 (gatto) .FX0.ScaleFX = true
+Thu Feb 12 11:15:03 2004 (gatto) .FX0.StickMode.StickMode = UserBone
+Thu Feb 12 11:15:03 2004 (gatto) .FX0.StickMode.UserBone = BIP01 Spine1
+Thu Feb 12 12:23:36 2004 (gatto) .FX0.PSName = mo_kitinega_specialatk.ps
+Thu Feb 12 12:23:36 2004 (gatto) .FX0.StickMode.UserBone = BIP01TailNub
+Thu Feb 12 12:28:53 2004 (gatto) .FX0.StickMode.UserBone = Bip01TailNub
+Fri Feb 13 13:41:30 2004 (gatto) .FX0.ScaleFX = false
+Fri Feb 13 17:21:00 2004 (gatto) .FX0.StickMode.UserBone = Bip01 TailNub
+Thu Mar 25 14:48:06 2004 (gatto) .FX0.ScaleFX = true</LOG>
+</FORM>

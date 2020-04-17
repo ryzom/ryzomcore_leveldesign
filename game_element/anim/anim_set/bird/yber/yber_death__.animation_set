@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_bird_death__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_idle_mort.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Yber_idle_mort.anim"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Fri Jun 06 10:25:00 2003 (puzin)
+Fri Jun 06 11:24:30 2003 (beaume) Form Parents = 
+Mon Oct 04 15:05:09 2004 (beaume) .idle.LodCharacterAnimation = TR_MO_Yber_idle_mort.anim</LOG>
+</FORM>

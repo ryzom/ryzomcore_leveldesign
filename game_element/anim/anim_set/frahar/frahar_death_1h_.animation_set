@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_MO_Frahar_A_engarde_to_dead_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="FY_MO_Frahar_mort_idle.anim"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Fri Jun 06 10:25:00 2003 (puzin)
+Wed Jan 28 18:50:22 2004 (beaume) .defaultHeadControl = false
+Thu Dec 02 10:42:38 2004 (beaume) .idle.animations[0].filename = FY_MO_Frahar_A_engarde_to_dead_idle.anim</LOG>
+</FORM>

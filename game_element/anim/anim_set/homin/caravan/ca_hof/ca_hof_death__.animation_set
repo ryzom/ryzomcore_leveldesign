@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <PARENT Filename="_homin_death__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_mort_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="CA_HOF_mort_idle.anim"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Dec 19 10:24:18 2002 (beaume) formName Resized = 0
+Thu Dec 19 10:32:24 2002 (beaume) .backward.animations[0].filename = CA_HOF_marche_arriere.anim
+Thu Dec 19 10:32:24 2002 (beaume) .death.animations[0].filename = CA_HOF_mort.anim
+Thu Dec 19 10:32:24 2002 (beaume) .death_idle.animations[0].filename = CA_HOF_mort_idle.anim
+Thu Dec 19 10:32:24 2002 (beaume) .idle.animations[0].filename = CA_HOF_idle.anim
+Thu Dec 19 10:32:24 2002 (beaume) .idle.animations[1].filename = CA_HOF_idle_regarde_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .idle.animations[2].filename = CA_HOF_idle_regarde_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .run.animations[0].filename = CA_HOF_course.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left.animations[0].filename = CA_HOF_tourne_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left.animations[1].filename = CA_HOF_demitour_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left_to_backward.animations[0].filename = CA_HOF_tourne_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left_to_backward.animations[1].filename = CA_HOF_demitour_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left_to_walk.animations[0].filename = CA_HOF_tourne_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left_to_walk.animations[1].filename = CA_HOF_demitour_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right.animations[0].filename = CA_HOF_tourne_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right.animations[1].filename = CA_HOF_demitour_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right_to_backward.animations[0].filename = CA_HOF_tourne_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right_to_backward.animations[1].filename = CA_HOF_demitour_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right_to_walk.animations[0].filename = CA_HOF_tourne_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right_to_walk.animations[1].filename = CA_HOF_demitour_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .walk.animations[0].filename = CA_HOF_marche.anim
+Thu Dec 19 10:32:24 2002 (beaume) formName Resized = 1
+Tue Jun 10 11:47:13 2003 (beaume) .idle.LodCharacterAnimation = CA_HOF_mort_idle.anim
+Tue Jun 10 11:47:13 2003 (beaume) .idle.animations[0].filename = CA_HOF_mort_idle.anim
+Tue Jun 10 11:47:13 2003 (beaume) formName Resized = 0</LOG>
+</FORM>

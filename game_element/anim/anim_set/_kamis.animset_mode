@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <PARENT Filename="_creatures.animset_mode"/>
+  <STRUCT>
+    <STRUCT Name="alert">
+      <ATOM Name="__" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="eat">
+      <ATOM Name="__" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="hungry">
+      <ATOM Name="__" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="rest">
+      <ATOM Name="__" Value="false"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Tue Jul 08 13:54:44 2003 (puzin) Form Parents = 
+Fri Oct 03 17:42:41 2003 (puzin) .alert.__ = false
+Fri Oct 03 17:43:01 2003 (puzin) .eat.__ = false
+Fri Oct 03 17:43:04 2003 (puzin) .hungry.__ = false
+Fri Oct 03 17:43:08 2003 (puzin) .rest.__ = false</LOG>
+</FORM>

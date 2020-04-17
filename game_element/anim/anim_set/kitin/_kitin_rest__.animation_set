@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_rest.animation_set"/>
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Sleep.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kitin_Sleep.anim"/>
+    </STRUCT>
+    <STRUCT Name="alert_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Sleep_TO_Idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="combat_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Sleep_TO_Idle_ATK.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Death.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="default_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Sleep_TO_Idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="eat_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Sleep_TO_Idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri Dec 13 16:13:41 2002 (puzin)
+Mon Dec 16 16:51:59 2002 (beaume) .death.LodCharacterAnimation = TR_MO_Kitin_Death.anim
+Mon Dec 16 16:51:59 2002 (beaume) .death_idle.LodCharacterAnimation = TR_MO_Kitin_Idle_Dead.anim
+Mon Dec 16 16:51:59 2002 (beaume) .idle.LodCharacterAnimation = TR_MO_Kitin_Sleep.anim
+Wed Feb 12 15:05:44 2003 (arnaudb) .combat_mode.animations[0].filename = TR_MO_Kitin_Sleep_TO_Idle_ATK.anim
+Fri Jun 06 14:53:40 2003 (beaume) .death_mode.animations[0].filename = TR_MO_Kitin_Death.anim
+Fri Jun 06 14:53:40 2003 (beaume) formName Resized = 1
+Thu Jul 03 12:03:29 2003 (puzin) Form Parents = 
+Thu Dec 18 15:50:53 2003 (beaume) .defaultHeadControl = false</LOG>
+</FORM>

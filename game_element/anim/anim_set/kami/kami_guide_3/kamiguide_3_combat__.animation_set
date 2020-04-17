@@ -1,0 +1,391 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.9 $" State="modified">
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_idle_attack.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_intimidation1.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_idle.anim"/>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_marche.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_KamiGuard_marche.anim"/>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_course.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_KamiGuard_course.anim"/>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_marche_arriere.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack_tourne_gauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack_demitour_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack_tourne_droite.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack_demitour_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack_tourne_gauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack_demitour_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack_tourne_droite.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack_demitour_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack_tourne_gauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack_demitour_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack_tourne_droite.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack_demitour_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack_straffgauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack_straffdroit.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="impact">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_idle_impact.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="attack1">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.408"/>
+    </STRUCT>
+    <STRUCT Name="attack2">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack2.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.408"/>
+    </STRUCT>
+    <STRUCT Name="offensive_cast_begin">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="offensive_cast_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="offensive_cast_success">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_attack_mort.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+
+<!-- CAST -->
+<!-- Offensive Cast -->
+<STRUCT Name="offensive_cast_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="offensive_cast_begin"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="offensive_cast_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="offensive_cast_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="offensive_cast_fumble"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="offensive_cast_success"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="offensive_cast_link"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="offensive_cast_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Curative Cast -->
+<STRUCT Name="curative_cast_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="curative_cast_begin"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="curative_cast_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="curative_cast_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="curative_cast_fumble"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="curative_cast_success"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="curative_cast_link"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="curative_cast_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Mixed Cast -->
+<STRUCT Name="mixed_cast_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="mixed_cast_begin"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="mixed_cast_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="mixed_cast_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="mixed_cast_fumble"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="mixed_cast_success"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="mixed_cast_link"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="mixed_cast_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+
+<!-- Acid -->
+<STRUCT Name="cast_acid_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_acid_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_acid_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_acid_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Blind -->
+<STRUCT Name="cast_blind_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_blind_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_blind_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_blind_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Cold -->
+<STRUCT Name="cast_cold_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_cold_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_cold_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_cold_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Elec -->
+<STRUCT Name="cast_elec_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_elec_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_elec_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_elec_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Fear -->
+<STRUCT Name="cast_fear_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_fear_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_fear_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_fear_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Fire -->
+<STRUCT Name="cast_fire_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_fire_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_fire_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_fire_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Heal HP -->
+<STRUCT Name="cast_healhp_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_healhp_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_healhp_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_healhp_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Mad -->
+<STRUCT Name="cast_mad_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_mad_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_mad_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_mad_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Poison -->
+<STRUCT Name="cast_poison_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_poison_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_poison_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_poison_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Root -->
+<STRUCT Name="cast_root_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_root_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_root_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_root_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Rot -->
+<STRUCT Name="cast_rot_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_rot_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_rot_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_rot_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Shock -->
+<STRUCT Name="cast_shock_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_shock_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_shock_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_shock_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Sleep -->
+<STRUCT Name="cast_sleep_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_sleep_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_sleep_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_sleep_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Slow -->
+<STRUCT Name="cast_slow_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_slow_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_slow_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_slow_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<!-- Stun -->
+<STRUCT Name="cast_stun_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_stun_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_stun_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_stun_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_magie_end_ok.anim"/></STRUCT>
+
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:24:36 2002 (corvazier) File converted from old format
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[0].filename = TR_MO_Ryzoholo_idle.anim
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[1].max_speed_factor = 1.1
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[1].min_speed_factor = 0.9
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[2].max_speed_factor = 1.1
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[2].min_speed_factor = 0.9
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[3].max_speed_factor = 1.1
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[3].min_speed_factor = 0.9
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[4].filename = TR_MO_Ryzomien_respire.anim
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[4].max_speed_factor = 1.1
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[4].min_speed_factor = 0.9
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[5].filename = TR_MO_Ryzomien_manger.anim
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[5].max_speed_factor = 1.1
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[5].min_speed_factor = 0.9
+Wed Jun 19 10:27:24 2002 (potet) formName Resized = 6
+Wed Jun 19 10:28:50 2002 (potet) .idle.animations[0].filename = TR_MO_Ryzomien_idle_attack.anim
+Wed Jun 19 10:33:56 2002 (potet) .attack1.animations[0].filename = TR_MO_Ryzomien_coup_de_griffe.anim
+Wed Jun 19 10:33:56 2002 (potet) .attack1.animations[0].max_speed_factor = 1.1
+Wed Jun 19 10:33:56 2002 (potet) .attack1.animations[0].min_speed_factor = 0.9
+Wed Jun 19 10:33:56 2002 (potet) .attack2.animations[0].filename = TR_MO_Ryzoholo_attaque_speciale.anim
+Wed Jun 19 10:33:56 2002 (potet) .attack2.animations[0].max_speed_factor = 1.1
+Wed Jun 19 10:33:56 2002 (potet) .attack2.animations[0].min_speed_factor = 0.9
+Wed Jun 19 10:33:56 2002 (potet) .death.animations[0].filename = TR_MO_Ryzomien_mort.anim
+Wed Jun 19 10:33:56 2002 (potet) .death.animations[0].max_speed_factor = 1.1
+Wed Jun 19 10:33:56 2002 (potet) .death.animations[0].min_speed_factor = 0.9
+Wed Jun 19 10:33:56 2002 (potet) .death_idle.animations[0].filename = TR_MO_Ryzomien_mort_idle.anim
+Wed Jun 19 10:33:56 2002 (potet) .death_idle.animations[0].max_speed_factor = 1.1
+Wed Jun 19 10:33:56 2002 (potet) .death_idle.animations[0].min_speed_factor = 0.9
+Wed Jun 19 10:33:56 2002 (potet) .idle.animations[1].filename = TR_MO_Ryzomien_intimidation.anim
+Wed Jun 19 10:33:56 2002 (potet) .strafe_left.animations[0].filename = TR_MO_Ryzomien_strafe_gauche.anim
+Wed Jun 19 10:33:56 2002 (potet) .strafe_left.animations[0].max_speed_factor = 1.1
+Wed Jun 19 10:33:56 2002 (potet) .strafe_left.animations[0].min_speed_factor = 0.9
+Wed Jun 19 10:33:56 2002 (potet) .strafe_right.animations[0].filename = TR_MO_Ryzomien_strafe_droit.anim
+Wed Jun 19 10:33:56 2002 (potet) .strafe_right.animations[0].max_speed_factor = 1.1
+Wed Jun 19 10:33:56 2002 (potet) .strafe_right.animations[0].min_speed_factor = 0.9
+Wed Jun 19 10:33:56 2002 (potet) formName Resized = 1
+Fri Jul 26 17:43:00 2002 (potet) .backward.animations[0].filename = TR_MO_Ryzomien_recule.max
+Fri Jul 26 17:43:00 2002 (potet) .backward.animations[0].max_speed_factor = 1.1
+Fri Jul 26 17:43:00 2002 (potet) .backward.animations[0].min_speed_factor = 0.9
+Fri Jul 26 17:43:00 2002 (potet) .walk.animations[0].filename = TR_MO_Ryzomien_avance.anim
+Fri Jul 26 17:43:00 2002 (potet) formName Resized = 1
+Thu Aug 01 11:33:00 2002 (potet) .turn_left.animations[0].filename = TR_MO_Ryzomien_attack_tourne_gauche.anim
+Thu Aug 01 11:33:00 2002 (potet) .turn_right.animations[0].filename = TR_MO_Ryzomien_attack_tourne_droite.anim
+Thu Aug 01 18:36:43 2002 (potet) .about_face_left.animations[0].filename = TR_MO_KamiGuard_demi_tour_gauche.anim
+Thu Aug 01 18:36:43 2002 (potet) .idle.animations[0].filename = TR_MO_KamiGuard_idle_attack.anim
+Thu Aug 01 18:36:43 2002 (potet) .idle.animations[1].filename = TR_MO_KamiGuard_idle_intimidation.anim
+Thu Aug 01 18:36:43 2002 (potet) .idle.animations[2].filename = TR_MO_KamiGuard_idle_intimidation2.anim
+Thu Aug 01 18:36:43 2002 (potet) .idle.animations[2].max_speed_factor = 1.1
+Thu Aug 01 18:36:43 2002 (potet) .idle.animations[2].min_speed_factor = 0.9
+Thu Aug 01 18:36:43 2002 (potet) .run.animations[0].filename = TR_MO_KamiGuard_course.anim
+Thu Aug 01 18:36:43 2002 (potet) .turn_left.animations[0].filename = TR_MO_KamiGuard_tourne_gauche.anim
+Thu Aug 01 18:36:43 2002 (potet) .walk.animations[0].filename = TR_MO_KamiGuard_marche.anim
+Thu Aug 01 18:36:43 2002 (potet) formName Resized = 0
+Thu Aug 01 18:38:09 2002 (potet) .about_face_right.animations[0].filename = TR_MO_KamiGuard_demi_tour_gauche.anim
+Thu Aug 01 18:38:09 2002 (potet) .attack1.animations[0].filename = TR_MO_KamiGuard_coup_de_poing.anim
+Thu Aug 01 18:38:09 2002 (potet) .attack2.animations[0].filename = TR_MO_KamiGuard_belier.anim
+Thu Aug 01 18:38:09 2002 (potet) .turn_right.animations[0].filename = TR_MO_KamiGuard_tourne_droite.anim
+Thu Aug 01 18:38:09 2002 (potet) formName Resized = 0
+Thu Aug 29 17:40:52 2002 (gomes) .about_face_left_to_backward.animations[0].filename = TR_MO_KamiGuard_demi_tour_gauche.anim
+Thu Aug 29 17:40:52 2002 (gomes) .about_face_left_to_walk.animations[0].filename = TR_MO_KamiGuard_demi_tour_gauche.anim
+Thu Aug 29 17:40:52 2002 (gomes) .about_face_right_to_backward.animations[0].filename = TR_MO_KamiGuard_demi_tour_gauche.anim
+Thu Aug 29 17:40:52 2002 (gomes) .about_face_right_to_walk.animations[0].filename = TR_MO_KamiGuard_demi_tour_gauche.anim
+Thu Aug 29 17:40:52 2002 (gomes) .turn_left_to_backward.animations[0].filename = TR_MO_KamiGuard_tourne_gauche.anim
+Thu Aug 29 17:40:52 2002 (gomes) .turn_left_to_walk.animations[0].filename = TR_MO_KamiGuard_tourne_gauche.anim
+Thu Aug 29 17:40:52 2002 (gomes) .turn_right_to_backward.animations[0].filename = TR_MO_KamiGuard_tourne_droite.anim
+Thu Aug 29 17:40:52 2002 (gomes) .turn_right_to_walk.animations[0].filename = TR_MO_KamiGuard_tourne_droite.anim
+Thu Aug 29 17:40:52 2002 (gomes) formName Resized = 1
+Tue Dec 17 11:43:26 2002 (beaume) .run.LodCharacterAnimation = TR_MO_KamiGuard_course.anim
+Tue Dec 17 11:43:26 2002 (beaume) .walk.LodCharacterAnimation = TR_MO_KamiGuard_marche.anim
+Tue Mar 11 15:52:27 2003 (arnaudb) .turn_left.animations[1].filename = TR_MO_KamiGuard_attack_demi_tour_gauche.anim
+Tue Mar 11 15:52:27 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = TR_MO_KamiGuard_attack_demi_tour_gauche.anim
+Tue Mar 11 15:52:27 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = TR_MO_KamiGuard_attack_demi_tour_gauche.anim
+Tue Mar 11 15:52:27 2003 (arnaudb) .turn_right.animations[1].filename = TR_MO_KamiGuard_attack_demi_tour_droite.anim
+Tue Mar 11 15:52:27 2003 (arnaudb) .turn_right_to_backward.animations[1].filename = TR_MO_KamiGuard_attack_demi_tour_droite.anim
+Tue Mar 11 15:52:27 2003 (arnaudb) .turn_right_to_walk.animations[1].filename = TR_MO_KamiGuard_attack_demi_tour_droite.anim
+Tue Mar 11 15:52:27 2003 (arnaudb) formName Resized = 2
+Tue Mar 11 16:11:09 2003 (arnaudb) .attack1.animations[0].filename = TR_Mo_Kami_guide_3_attack.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .attack2.animations[0].filename = TR_Mo_Kami_guide_3_attack2.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .idle.animations[0].filename = TR_Mo_Kami_guide_3_idle_attack.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .idle.animations[1].filename = TR_Mo_Kami_guide_3_intimidation1.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .run.animations[0].filename = TR_Mo_Kami_guide_3_course.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_left.animations[0].filename = TR_Mo_Kami_guide_3_attack_tourne_gauche.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_left.animations[1].filename = TR_Mo_Kami_guide_3_attack_demitour_gauche.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_left_to_backward.animations[0].filename = TR_Mo_Kami_guide_3_attack_tourne_gauche.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = TR_Mo_Kami_guide_3_attack_demitour_gauche.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_left_to_walk.animations[0].filename = TR_Mo_Kami_guide_3_attack_tourne_gauche.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = TR_Mo_Kami_guide_3_attack_demitour_gauche.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_right.animations[0].filename = TR_Mo_Kami_guide_3_attack_tourne_droite.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_right.animations[1].filename = TR_Mo_Kami_guide_3_attack_demitour_droite.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_right_to_backward.animations[0].filename = TR_Mo_Kami_guide_3_attack_tourne_droite.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_right_to_backward.animations[1].filename = TR_Mo_Kami_guide_3_attack_demitour_droite.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_right_to_walk.animations[0].filename = TR_Mo_Kami_guide_3_attack_tourne_droite.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_right_to_walk.animations[1].filename = TR_Mo_Kami_guide_3_attack_demitour_droite.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .walk.animations[0].filename = TR_Mo_Kami_guide_3_marche.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) formName Resized = 2
+Tue Mar 18 12:20:58 2003 (arnaudb) .impact.animations[0].filename = TR_Mo_Kami_guide_3_impact.anim
+Tue Mar 18 12:20:58 2003 (arnaudb) formName Resized = 1
+Tue Apr 22 11:08:03 2003 (arnaudb) .idle.LodCharacterAnimation = TR_Mo_Kami_guide_3_idle.anim
+Thu Jan 08 14:51:15 2004 (beaume) .curative_cast_begin.animations[0].filename = TR_Mo_Kami_guide_3_magie_init.anim
+Thu Jan 08 14:51:15 2004 (beaume) .curative_cast_loop.animations[0].filename = TR_Mo_Kami_guide_3_magie_loop.anim
+Thu Jan 08 14:51:15 2004 (beaume) .curative_cast_success.animations[0].filename = TR_Mo_Kami_guide_3_magie_end_ok.anim
+Thu Jan 08 14:51:15 2004 (beaume) .offensive_cast_begin.animations[0].filename = TR_Mo_Kami_guide_3_magie_init.anim
+Thu Jan 08 14:51:15 2004 (beaume) .offensive_cast_loop.animations[0].filename = TR_Mo_Kami_guide_3_magie_loop.anim
+Thu Jan 08 14:51:15 2004 (beaume) .offensive_cast_success.animations[0].filename = TR_Mo_Kami_guide_3_magie_end_ok.anim
+Thu Jan 08 14:51:15 2004 (beaume) formName Resized = 1
+Fri Jan 16 14:13:35 2004 (beaume) .backward.animations[0].filename = TR_Mo_Kami_guide_3_marche_arriere.anim
+Fri Jan 16 14:13:35 2004 (beaume) .impact.animations[0].filename = TR_Mo_Kami_guide_3_idle_impact.anim
+Fri Jan 16 14:13:35 2004 (beaume) .strafe_left.animations[0].filename = TR_Mo_Kami_guide_3_attack_straffgauche.anim
+Fri Jan 16 14:13:35 2004 (beaume) .strafe_right.animations[0].filename = TR_Mo_Kami_guide_3_attack_straffdroit.anim
+Fri Jan 16 14:13:35 2004 (beaume) formName Resized = 1
+Fri Jan 16 14:15:24 2004 (beaume) .death_mode.animations[0].filename = TR_Mo_Kami_guide_3_mort.anim
+Fri Jan 16 14:15:24 2004 (beaume) formName Resized = 1
+Tue Jan 20 17:39:56 2004 (beaume) .death_mode.animations[0].filename = TR_Mo_Kami_guide_3_attack_mort.anim
+Fri Jan 23 10:30:38 2004 (beaume) formName Resized = 0
+Tue Feb 24 14:51:36 2004 (beaume) .defaultHeadControl = false</LOG>
+</FORM>

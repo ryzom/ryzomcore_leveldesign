@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.5 $" State="modified">
+  <PARENT Filename="_plant_combat__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="PR_MO_phytopsy_idle.anim"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="MO_Phytopsy_Idle.ps"/>
+              <ATOM Name="ScaleFX" Value="true"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="PR_MO_phytopsy_intimidation.anim"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="MO_Phytopsy_Intm.ps"/>
+              <ATOM Name="ScaleFX" Value="true"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="PR_MO_phytopsy_idle.anim"/>
+    </STRUCT>
+    <STRUCT Name="impact">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="PR_MO_phytopsy_impacte.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="PR_MO_phytopsy_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="attack1">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="PR_MO_phytopsy_attack.anim"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="ScaleFX" Value="true"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.992"/>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="PR_MO_phytopsy_mort.anim"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="MO_Phytopsy_Death.ps"/>
+              <ATOM Name="ScaleFX" Value="true"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="UserBone"/>
+                <ATOM Name="UserBone" Value="Dummy05"/>
+              </STRUCT>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="PR_MO_phytopsy_mort.anim"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 16:14:11 2002 (puzin)
+Mon Dec 22 16:53:29 2003 (gatto) .attack1.animations[0].fx_set.FX0.PSName = MO_Phytopsy_Reveil.ps
+Mon Dec 22 16:53:32 2003 (gatto) .attack1.animations[0].fx_set.FX0.ScaleFX = true
+Mon Dec 22 16:54:19 2003 (gatto) .idle.animations[0].fx_set.FX0.PSName = MO_Phytopsy_Idle.ps
+Mon Dec 22 16:54:19 2003 (gatto) .idle.animations[1].fx_set.FX0.PSName = MO_Phytopsy_Idle.ps
+Mon Dec 22 16:54:25 2003 (gatto) .idle.animations[0].fx_set.FX0.ScaleFX = true
+Mon Dec 22 16:54:25 2003 (gatto) .idle.animations[1].fx_set.FX0.ScaleFX = true
+Mon Dec 22 16:58:08 2003 (gatto) .death_mode.animations[0].fx_set.FX0.PSName = MO_Phytopsy_Death.ps
+Mon Dec 22 16:58:08 2003 (gatto) .death_mode.animations[0].fx_set.FX0.StickMode.StickMode = UserBone
+Mon Dec 22 16:58:08 2003 (gatto) .death_mode.animations[0].fx_set.FX0.StickMode.UserBone = Dummy05
+Mon Dec 22 16:58:15 2003 (gatto) .death_mode.animations[0].fx_set.FX0.ScaleFX = true
+Mon Dec 22 16:58:57 2003 (gatto) .idle.animations[1].fx_set.FX0.PSName = MO_Phytopsy_Intm.ps
+Tue Feb 17 17:36:16 2004 (gatto) .attack1.animations[0].fx_set.FX0.PSName = 
+Thu Feb 26 16:31:15 2004 (beaume) .stun_loop.animations[0].filename = PR_MO_phytopsy_idle.anim
+Thu Feb 26 16:31:15 2004 (beaume) formName Resized = 1</LOG>
+</FORM>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.4 $" State="modified">
+  <PARENT Filename="_cast_base.animation_fx_set"/>
+  <STRUCT>
+    <STRUCT Name="FX0">
+      <ATOM Name="PSName" Value="mag_off_kami_gd_g2_cast_init.ps"/>
+      <ATOM Name="ScaleFX" Value="true"/>
+      <STRUCT Name="StickMode">
+        <ATOM Name="StickMode" Value="UserBone"/>
+        <ATOM Name="UserBone" Value="Bip01 Head"/>
+      </STRUCT>
+      <ATOM Name="RepeatMode" Value="Loop"/>
+    </STRUCT>
+    <STRUCT Name="FX1">
+      <ATOM Name="ScaleFX" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="FX2">
+      <ATOM Name="ScaleFX" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="FX3">
+      <ATOM Name="ScaleFX" Value="true"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Feb 05 19:15:32 2004 (vizerie) .FX0.PSName = fdsfdsf
+Mon Feb 23 18:55:02 2004 (gatto) .FX0.StickMode.UserBone = bip01 Head
+Mon Feb 23 19:29:01 2004 (gatto) .FX0.StickMode.UserBone = Bip01 Head
+Mon Feb 23 19:29:10 2004 (gatto) .FX0.ScaleFX = true
+Tue Feb 24 09:51:56 2004 (gatto) .FX0.PSName = mag_off_kami_gd_g2_cast_init.ps
+Thu Mar 25 14:37:09 2004 (gatto) .FX1.ScaleFX = true
+Thu Mar 25 14:37:12 2004 (gatto) .FX2.ScaleFX = true
+Thu Mar 25 14:37:14 2004 (gatto) .FX3.ScaleFX = true</LOG>
+</FORM>

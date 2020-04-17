@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="Ma_roadsign_2_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="FY_HOM_mort_devant_idle.anim"/>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ATOM Name="LodCharacterAnimation" Value="FY_HOM_A_mort.anim"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:24:35 2002 (corvazier) File converted from old format
+Tue Jul 30 23:45:06 2002 (puzin) Form Parents = 
+Thu Aug 29 16:02:38 2002 (beaume) .about_face_left_to_backward.animations[0].filename = FY_HOM_A_demitour_go.anim
+Thu Aug 29 16:02:38 2002 (beaume) .about_face_left_to_walk.animations[0].filename = FY_HOM_A_demitour_go.anim
+Thu Aug 29 16:02:38 2002 (beaume) .about_face_right_to_backward.animations[0].filename = FY_HOM_A_demitour_dr.anim
+Thu Aug 29 16:02:38 2002 (beaume) .about_face_right_to_walk.animations[0].filename = FY_HOM_A_demitour_dr.anim
+Thu Aug 29 16:02:38 2002 (beaume) .backward.animations[0].filename = FY_HOM_A_marche_arriere.anim
+Thu Aug 29 16:02:38 2002 (beaume) .idle.animations[1].filename = FY_HOM_A_idle_attente1.anim
+Thu Aug 29 16:02:38 2002 (beaume) .idle.animations[2].filename = FY_HOM_A_idle_attente2.anim
+Thu Aug 29 16:02:38 2002 (beaume) .turn_left_to_backward.animations[0].filename = FY_HOM_A_tourne_gauche.anim
+Thu Aug 29 16:02:38 2002 (beaume) .turn_left_to_walk.animations[0].filename = FY_HOM_A_tourne_gauche.anim
+Thu Aug 29 16:02:38 2002 (beaume) .turn_right_to_backward.animations[0].filename = FY_HOM_A_tourne_droite.anim
+Thu Aug 29 16:02:38 2002 (beaume) .turn_right_to_walk.animations[0].filename = FY_HOM_A_tourne_droite.anim
+Thu Aug 29 16:02:38 2002 (beaume) formName Resized = 1
+Fri Dec 20 11:20:34 2002 (miller) .idle.animations[0].head controlable = true
+Mon Jan 06 12:06:01 2003 (beaume) .idle.animations[2].filename = FY_HOM_A_idle_attente3.anim
+Mon Jan 06 12:06:01 2003 (beaume) .idle.animations[3].filename = FY_HOM_A_idle_attente4.anim
+Mon Jan 06 12:06:01 2003 (beaume) .idle.animations[4].filename = FY_HOM_A_idle_attente2.anim
+Mon Jan 06 12:06:01 2003 (beaume) formName Resized = 5
+Mon Jan 06 17:55:42 2003 (beaume) .turn_left.animations[1].filename = FY_HOM_AB_demitour_go.anim
+Mon Jan 06 17:55:42 2003 (beaume) .turn_left_to_backward.animations[1].filename = FY_HOM_AB_demitour_go.anim
+Mon Jan 06 17:55:42 2003 (beaume) .turn_left_to_walk.animations[1].filename = FY_HOM_AB_demitour_go.anim
+Mon Jan 06 17:55:42 2003 (beaume) .turn_right.animations[1].filename = FY_HOM_AB_demitour_dr.anim
+Mon Jan 06 17:55:42 2003 (beaume) .turn_right_to_backward.animations[1].filename = FY_HOM_AB_demitour_dr.anim
+Mon Jan 06 17:55:42 2003 (beaume) .turn_right_to_walk.animations[1].filename = FY_HOM_AB_demitour_dr.anim
+Mon Jan 06 17:55:42 2003 (beaume) formName Resized = 2
+Mon Jan 06 17:58:51 2003 (beaume) .turn_left.animations[1].filename = FY_HOM_A_demitour_go.anim
+Mon Jan 06 17:58:51 2003 (beaume) .turn_left_to_backward.animations[1].filename = FY_HOM_A_demitour_go.anim
+Mon Jan 06 17:58:51 2003 (beaume) .turn_left_to_walk.animations[1].filename = FY_HOM_A_demitour_go.anim
+Mon Jan 06 17:58:51 2003 (beaume) .turn_right.animations[1].filename = FY_HOM_A_demitour_dr.anim
+Mon Jan 06 17:58:51 2003 (beaume) .turn_right_to_backward.animations[1].filename = FY_HOM_A_demitour_dr.anim
+Mon Jan 06 17:58:51 2003 (beaume) .turn_right_to_walk.animations[1].filename = FY_HOM_A_demitour_dr.anim
+Fri Feb 21 14:27:43 2003 (arnaudb) formName Resized = 4
+Wed Mar 19 14:37:09 2003 (arnaudb) .impact.animations[0].filename = FY_HOM_A_impact.anim
+Wed Mar 19 14:37:09 2003 (arnaudb) formName Resized = 1
+Thu Apr 17 11:33:26 2003 (arnaudb) .combat_mode.animations[0].filename = FY_HOM_A_to_engarde.anim
+Thu Apr 17 11:33:26 2003 (arnaudb) .idle_to_walk.animations[0].filename = FY_HOM_A_idle_to_walk.anim
+Thu Apr 17 11:33:26 2003 (arnaudb) .walk_to_run.animations[0].filename = FY_HOM_A_walk_to_run.anim
+Thu Apr 17 11:33:26 2003 (arnaudb) formName Resized = 1
+Fri Apr 18 18:54:29 2003 (arnaudb) Form Parents = 
+Tue Jun 10 17:50:35 2003 (beaume) .death_mode.LodCharacterAnimation = FY_HOM_A_mort.anim
+Tue Jun 10 17:50:35 2003 (beaume) .death_mode.animations[0].filename = FY_HOM_A_mort.anim
+Tue Jun 10 17:50:35 2003 (beaume) formName Resized = 1
+Tue Jun 10 18:32:42 2003 (beaume) .idle.animations[0].filename = FY_HOM_A_mort_idle.anim
+Tue Jun 10 18:32:42 2003 (beaume) formName Resized = 1
+Tue Jun 10 18:34:18 2003 (beaume) .idle.LodCharacterAnimation = FY_HOM_A_mort_idle.anim
+Tue Jun 10 18:34:18 2003 (beaume) formName Resized = 0
+Tue Jun 10 18:38:24 2003 (beaume) .idle.LodCharacterAnimation = FY_HOM_mort_devant_idle.anim
+Tue Jun 10 18:38:24 2003 (beaume) .idle.animations[0].filename = FY_HOM_mort_devant_idle.anim
+Mon Sep 15 16:08:56 2003 (beaume) .idle.animations[0].filename = CA_spaceship_idle_bas.anim
+Mon Sep 15 16:08:56 2003 (beaume) .turn_left.animations[0].filename = CA_spaceship_tourne_gauche_bas.anim
+Mon Sep 15 16:08:56 2003 (beaume) .turn_right.animations[0].filename = CA_spaceship_tourne_droite_bas.anim
+Mon Sep 15 16:08:56 2003 (beaume) .walk.animations[0].filename = CA_spaceship_vol_bas.anim
+Mon Sep 15 16:08:56 2003 (beaume) Form Parents = 
+Mon Sep 15 16:08:56 2003 (beaume) formName Resized = 1
+Mon Sep 15 16:10:44 2003 (beaume) .idle.animations[0].filename = Ma_roadsign_1_idle.anim
+Mon Sep 15 16:10:44 2003 (beaume) formName Resized = 0
+Mon Sep 15 16:11:02 2003 (beaume) .idle.animations[0].filename = Ma_roadsign_2_idle.anim</LOG>
+</FORM>

@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_sagass_selle_idle.anim"/>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_nage.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_sagass_selle_nage.anim"/>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_recul.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_tourne_gauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_demitour_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_tourne_droit.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_demitour_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_tourne_gauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_demitour_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_tourne_droit.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_demitour_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_tourne_gauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_demitour_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_tourne_droit.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_demitour_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_straff_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_sagass_selle_tourne_droit.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="attack1">
+      <ARRAY Name="animations"/>
+    </STRUCT>
+    <STRUCT Name="attack2">
+      <ARRAY Name="animations"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:24:36 2002 (corvazier) File converted from old format
+Thu Jul 04 14:01:47 2002 (beaume) .idle.animations[0].filename = TR_MO_mektoub_selle_idle.anim
+Thu Jul 04 14:01:47 2002 (beaume) .run.animations[0].filename = TR_MO_mektoub_selle_course.anim
+Thu Jul 04 14:01:47 2002 (beaume) .walk.animations[0].filename = TR_MO_mektoub_selle_marche.anim
+Thu Aug 29 14:14:04 2002 (gomes) .about_face_left_to_backward.animations[0].filename = TR_MO_mektoub_selle_demitour.anim
+Thu Aug 29 14:14:04 2002 (gomes) .about_face_left_to_walk.animations[0].filename = TR_MO_mektoub_selle_demitour.anim
+Thu Aug 29 14:14:04 2002 (gomes) .about_face_right_to_backward.animations[0].filename = TR_MO_mektoub_selle_demitour.anim
+Thu Aug 29 14:14:04 2002 (gomes) .about_face_right_to_walk.animations[0].filename = TR_MO_mektoub_selle_demitour.anim
+Thu Aug 29 14:14:04 2002 (gomes) .backward.animations[0].filename = TR_MO_mektoub_selle_marche_arriere.anim
+Thu Aug 29 14:14:04 2002 (gomes) .turn_left_to_backward.animations[0].filename = TR_MO_mektoub_selle_tournegauche.anim
+Thu Aug 29 14:14:04 2002 (gomes) .turn_left_to_walk.animations[0].filename = TR_MO_mektoub_selle_tournegauche.anim
+Thu Aug 29 14:14:04 2002 (gomes) .turn_right_to_backward.animations[0].filename = TR_MO_mektoub_selle_tournedroite.anim
+Thu Aug 29 14:14:04 2002 (gomes) .turn_right_to_walk.animations[0].filename = TR_MO_mektoub_selle_tournedroite.anim
+Thu Aug 29 14:14:04 2002 (gomes) formName Resized = 1
+Tue Sep 03 11:59:09 2002 (puzin) .about_face_right.animations[0].filename = TR_MO_mektoub_selle_demitour_droit_alone.anim
+Tue Sep 03 11:59:09 2002 (puzin) .about_face_right_to_backward.animations[0].filename = TR_MO_mektoub_selle_demitour_droit_alone.anim
+Tue Sep 03 11:59:09 2002 (puzin) .about_face_right_to_walk.animations[0].filename = TR_MO_mektoub_selle_demitour_droit_alone.anim
+Fri Nov 29 16:28:31 2002 (beaume) .turn_left.animations[1].filename = TR_MO_mektoub_selle_demitour_gauche.anim
+Fri Nov 29 16:28:31 2002 (beaume) .turn_left_to_backward.animations[1].filename = TR_MO_mektoub_selle_demitour_gauche.anim
+Fri Nov 29 16:28:31 2002 (beaume) .turn_left_to_walk.animations[1].filename = TR_MO_mektoub_selle_demitour_gauche.anim
+Fri Nov 29 16:28:31 2002 (beaume) .turn_right.animations[1].filename = TR_MO_mektoub_selle_demitour_droit.anim
+Fri Nov 29 16:28:31 2002 (beaume) .turn_right_to_backward.animations[1].filename = TR_MO_mektoub_selle_demitour_droit.anim
+Fri Nov 29 16:28:31 2002 (beaume) .turn_right_to_walk.animations[1].filename = TR_MO_mektoub_selle_demitour_droit.anim
+Fri Nov 29 16:28:31 2002 (beaume) formName Resized = 2
+Tue Apr 22 10:59:05 2003 (arnaudb) .idle.LodCharacterAnimation = TR_MO_mektoub_selle_idle.anim
+Tue Apr 22 10:59:05 2003 (arnaudb) .run.LodCharacterAnimation = TR_MO_mektoub_selle_course.anim
+Tue Apr 22 10:59:05 2003 (arnaudb) .walk.LodCharacterAnimation = TR_MO_mektoub_selle_marche.anim
+Wed Nov 19 12:19:56 2003 (beaume) .backward.animations[0].filename = TR_MO_sagass_selle_recul.anim
+Wed Nov 19 12:19:56 2003 (beaume) .idle.LodCharacterAnimation = TR_MO_sagass_selle_idle.anim
+Wed Nov 19 12:19:56 2003 (beaume) .idle.animations[0].filename = TR_MO_sagass_selle_idle.anim
+Wed Nov 19 12:19:56 2003 (beaume) .run.LodCharacterAnimation = 
+Wed Nov 19 12:19:56 2003 (beaume) .strafe_left.animations[0].filename = TR_MO_sagass_selle_straff_gauche.anim
+Wed Nov 19 12:19:56 2003 (beaume) .strafe_right.animations[0].filename = TR_MO_sagass_selle_tourne_droit.anim
+Wed Nov 19 12:19:56 2003 (beaume) .turn_left.animations[0].filename = TR_MO_sagass_selle_tourne_gauche.anim
+Wed Nov 19 12:19:56 2003 (beaume) .turn_left.animations[1].filename = TR_MO_sagass_selle_demitour_gauche.anim
+Wed Nov 19 12:19:56 2003 (beaume) .turn_left_to_backward.animations[0].filename = TR_MO_sagass_selle_tourne_gauche.anim
+Wed Nov 19 12:19:56 2003 (beaume) .turn_left_to_backward.animations[1].filename = TR_MO_sagass_selle_demitour_gauche.anim
+Wed Nov 19 12:19:56 2003 (beaume) .turn_left_to_walk.animations[0].filename = TR_MO_sagass_selle_tourne_gauche.anim
+Wed Nov 19 12:19:56 2003 (beaume) .turn_left_to_walk.animations[1].filename = TR_MO_sagass_selle_demitour_gauche.anim
+Wed Nov 19 12:19:56 2003 (beaume) .turn_right.animations[0].filename = TR_MO_sagass_selle_tourne_droit.anim
+Wed Nov 19 12:19:56 2003 (beaume) .turn_right.animations[1].filename = TR_MO_sagass_selle_demitour_droite.anim
+Wed Nov 19 12:19:56 2003 (beaume) .turn_right_to_backward.animations[0].filename = TR_MO_sagass_selle_tourne_droit.anim
+Wed Nov 19 12:19:56 2003 (beaume) .turn_right_to_backward.animations[1].filename = TR_MO_sagass_selle_demitour_droite.anim
+Wed Nov 19 12:19:56 2003 (beaume) .turn_right_to_walk.animations[0].filename = TR_MO_sagass_selle_tourne_droit.anim
+Wed Nov 19 12:19:56 2003 (beaume) .turn_right_to_walk.animations[1].filename = TR_MO_sagass_selle_demitour_droite.anim
+Wed Nov 19 12:19:56 2003 (beaume) .walk.LodCharacterAnimation = TR_MO_sagass_selle_nage.anim
+Wed Nov 19 12:19:56 2003 (beaume) .walk.animations[0].filename = TR_MO_sagass_selle_nage.anim
+Wed Nov 19 12:19:56 2003 (beaume) formName Resized = 1</LOG>
+</FORM>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_death.animation_set"/>
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_mort_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Chien_dormir.anim"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri Dec 13 16:13:41 2002 (puzin)
+Mon Dec 16 16:40:14 2002 (beaume) .death.LodCharacterAnimation = TR_MO_Chien_mort.anim
+Mon Dec 16 16:40:14 2002 (beaume) .death_idle.LodCharacterAnimation = TR_MO_Chien_mort_idle.anim
+Mon Dec 16 16:40:14 2002 (beaume) .idle.LodCharacterAnimation = TR_MO_Chien_dormir.anim
+Mon Dec 16 19:15:55 2002 (puzin) formName Pasted = 
+Wed Feb 12 14:49:09 2003 (arnaudb) .combat_mode.animations[0].filename = TR_MO_Chien_dormir_to_engarde.anim
+Fri Jun 06 11:48:30 2003 (beaume) .death_mode.animations[0].filename = TR_MO_Chien_mort.anim
+Fri Jun 06 11:48:30 2003 (beaume) formName Resized = 1
+Fri Jun 06 11:50:11 2003 (beaume) .idle.animations[0].filename = TR_MO_Chien_mort_idle.anim
+Fri Jun 06 11:53:05 2003 (beaume) formName Resized = 0
+Thu Jul 03 11:59:49 2003 (puzin) Form Parents = 
+Thu Dec 18 15:48:18 2003 (beaume) .defaultHeadControl = false</LOG>
+</FORM>

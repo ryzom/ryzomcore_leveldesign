@@ -384,12 +384,6 @@
       </ARRAY>
       <ATOM Name="LodCharacterAnimation" Value="FY_HOF_AD_Mort.anim"/>
     </STRUCT>
-    <STRUCT Name="bow">
-      <ATOM Name="Display Objects" Value="false"/>
-    </STRUCT>
-    <STRUCT Name="wave">
-      <ATOM Name="Display Objects" Value="false"/>
-    </STRUCT>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>
@@ -546,7 +540,5 @@ Tue Jul 20 18:17:49 2004 (beaume) .idle.animations[8].next3 weight = 5
 Tue Jul 20 18:17:49 2004 (beaume) .idle.animations[8].next4 weight = 50
 Fri Sep 24 18:30:17 2004 (beaume) Form Parents = 
 Thu Jan 25 14:42:01 2007 (nouveau) .idle.animations[1].next1 weight = 10
-Thu Jan 25 14:42:01 2007 (nouveau) .idle.animations[2].next1 weight = 10
-Thu Oct 07 13:33:50 2010 (sywindt) .bow.Display Objects = false
-Thu Oct 07 13:33:50 2010 (sywindt) .wave.Display Objects = false</LOG>
+Thu Jan 25 14:42:01 2007 (nouveau) .idle.animations[2].next1 weight = 10</LOG>
 </FORM>

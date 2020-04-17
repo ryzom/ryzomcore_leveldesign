@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.4 $" State="modified">
+  <PARENT Filename="_kitin_aerial_combat__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="attack1">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_volant_attack_melee.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.630"/>
+    </STRUCT>
+    <STRUCT Name="attack2">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_volant_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.747"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 14:46:07 2002 (puzin)
+Fri Feb 13 17:15:46 2004 (beaume) .attack2.animations[0].filename = TR_MO_Kitin_volant_attack.anim
+Fri Feb 13 17:15:46 2004 (beaume) formName Resized = 1
+Mon Feb 16 11:34:14 2004 (beaume) .attack1.animations[0].filename = TR_MO_Kitin_volant_attack_melee.anim
+Mon Feb 16 11:34:14 2004 (beaume) formName Resized = 1</LOG>
+</FORM>

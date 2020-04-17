@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <STRUCT>
+    <ARRAY Name="Attacks">
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="CreatureAttack"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="CreatureAttack"/>
+          <ATOM Name="CreatureAttackIndex" Value="1"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="0"/>
+          <ATOM Name="AttackEndFX" Value="cast_h11_specialatk.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Feb 12 11:02:09 2004 (gatto) .Attacks[0].ID.AttackType = CreatureAttack
+Thu Feb 12 11:02:09 2004 (gatto) .Attacks[1].ID.AttackType = CreatureAttack
+Thu Feb 12 11:02:09 2004 (gatto) .Attacks[1].ID.CreatureAttackIndex = 1
+Thu Feb 12 11:02:09 2004 (gatto) formName Resized = 2
+Thu Feb 12 11:05:18 2004 (gatto) .Attacks[0].Attack.ProjectileMode = 
+Thu Feb 12 11:12:13 2004 (gatto) .Attacks[1].Attack.ProjectileMode = Bomb
+Thu Feb 12 11:15:32 2004 (gatto) .Attacks[1].Attack.AttackEndFX = cast_kakty_specialatk.animation_fx_set
+Thu Feb 12 13:40:13 2004 (gatto) .Attacks[1].Attack.AttackEndFX = cast_zerx_specialatk.animation_fx_set
+Thu Feb 12 13:40:13 2004 (gatto) .Attacks[1].Attack.ProjectileFX = range_projectile_acid_missile.animation_fx_set
+Fri Feb 13 13:36:07 2004 (gatto) .Attacks[1].Attack.DefaultAimingPoint.StickMode = UserBone
+Fri Feb 13 13:36:07 2004 (gatto) .Attacks[1].Attack.DefaultAimingPoint.UserBone = Bip01 Footsteps
+Fri Feb 13 16:22:57 2004 (gatto) .Attacks[1].Attack.ProjectileDelay = 1.05
+Fri Feb 13 17:28:54 2004 (gatto) .Attacks[1].Attack.ProjectileDelay = 0
+Tue Feb 17 18:22:25 2004 (gatto) .Attacks[1].Attack.DefaultAimingPoint.UserBone = Bip01 Head
+Wed Feb 18 16:13:58 2004 (gatto) .Attacks[1].Attack.ProjectileDelay = 1.05
+Mon Jun 14 09:21:38 2004 (gatto) .Attacks[1].Attack.AttackEndFX = cast_h11_specialatk.animation_fx_set
+Mon Jun 14 09:21:38 2004 (gatto) .Attacks[1].Attack.ProjectileDelay = 
+Mon Jun 14 09:21:38 2004 (gatto) .Attacks[1].Attack.ProjectileFX = 
+Mon Jun 14 09:21:38 2004 (gatto) .Attacks[1].Attack.ProjectileMode = 0</LOG>
+</FORM>

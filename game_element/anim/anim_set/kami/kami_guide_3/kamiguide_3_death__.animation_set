@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.6 $" State="modified">
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_Mo_Kami_guide_3_mort_end.anim"/>
+          <ATOM Name="hide_at_end_anim" Value="true"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="kami_guide3_guide4_dead.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="UserBone"/>
+                <ATOM Name="UserBone" Value="Bip01"/>
+              </STRUCT>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_Mo_Kami_guide_3_idle.anim"/>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_KamiGuard_marche.anim"/>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_KamiGuard_course.anim"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:24:36 2002 (corvazier) File converted from old format
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[0].filename = TR_MO_Ryzoholo_idle.anim
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[1].max_speed_factor = 1.1
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[1].min_speed_factor = 0.9
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[2].max_speed_factor = 1.1
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[2].min_speed_factor = 0.9
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[3].max_speed_factor = 1.1
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[3].min_speed_factor = 0.9
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[4].filename = TR_MO_Ryzomien_respire.anim
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[4].max_speed_factor = 1.1
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[4].min_speed_factor = 0.9
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[5].filename = TR_MO_Ryzomien_manger.anim
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[5].max_speed_factor = 1.1
+Wed Jun 19 10:27:24 2002 (potet) .idle.animations[5].min_speed_factor = 0.9
+Wed Jun 19 10:27:24 2002 (potet) formName Resized = 6
+Wed Jun 19 10:28:50 2002 (potet) .idle.animations[0].filename = TR_MO_Ryzomien_idle_attack.anim
+Wed Jun 19 10:33:56 2002 (potet) .attack1.animations[0].filename = TR_MO_Ryzomien_coup_de_griffe.anim
+Wed Jun 19 10:33:56 2002 (potet) .attack1.animations[0].max_speed_factor = 1.1
+Wed Jun 19 10:33:56 2002 (potet) .attack1.animations[0].min_speed_factor = 0.9
+Wed Jun 19 10:33:56 2002 (potet) .attack2.animations[0].filename = TR_MO_Ryzoholo_attaque_speciale.anim
+Wed Jun 19 10:33:56 2002 (potet) .attack2.animations[0].max_speed_factor = 1.1
+Wed Jun 19 10:33:56 2002 (potet) .attack2.animations[0].min_speed_factor = 0.9
+Wed Jun 19 10:33:56 2002 (potet) .death.animations[0].filename = TR_MO_Ryzomien_mort.anim
+Wed Jun 19 10:33:56 2002 (potet) .death.animations[0].max_speed_factor = 1.1
+Wed Jun 19 10:33:56 2002 (potet) .death.animations[0].min_speed_factor = 0.9
+Wed Jun 19 10:33:56 2002 (potet) .death_idle.animations[0].filename = TR_MO_Ryzomien_mort_idle.anim
+Wed Jun 19 10:33:56 2002 (potet) .death_idle.animations[0].max_speed_factor = 1.1
+Wed Jun 19 10:33:56 2002 (potet) .death_idle.animations[0].min_speed_factor = 0.9
+Wed Jun 19 10:33:56 2002 (potet) .idle.animations[1].filename = TR_MO_Ryzomien_intimidation.anim
+Wed Jun 19 10:33:56 2002 (potet) .strafe_left.animations[0].filename = TR_MO_Ryzomien_strafe_gauche.anim
+Wed Jun 19 10:33:56 2002 (potet) .strafe_left.animations[0].max_speed_factor = 1.1
+Wed Jun 19 10:33:56 2002 (potet) .strafe_left.animations[0].min_speed_factor = 0.9
+Wed Jun 19 10:33:56 2002 (potet) .strafe_right.animations[0].filename = TR_MO_Ryzomien_strafe_droit.anim
+Wed Jun 19 10:33:56 2002 (potet) .strafe_right.animations[0].max_speed_factor = 1.1
+Wed Jun 19 10:33:56 2002 (potet) .strafe_right.animations[0].min_speed_factor = 0.9
+Wed Jun 19 10:33:56 2002 (potet) formName Resized = 1
+Fri Jul 26 17:43:00 2002 (potet) .backward.animations[0].filename = TR_MO_Ryzomien_recule.max
+Fri Jul 26 17:43:00 2002 (potet) .backward.animations[0].max_speed_factor = 1.1
+Fri Jul 26 17:43:00 2002 (potet) .backward.animations[0].min_speed_factor = 0.9
+Fri Jul 26 17:43:00 2002 (potet) .walk.animations[0].filename = TR_MO_Ryzomien_avance.anim
+Fri Jul 26 17:43:00 2002 (potet) formName Resized = 1
+Thu Aug 01 11:33:00 2002 (potet) .turn_left.animations[0].filename = TR_MO_Ryzomien_attack_tourne_gauche.anim
+Thu Aug 01 11:33:00 2002 (potet) .turn_right.animations[0].filename = TR_MO_Ryzomien_attack_tourne_droite.anim
+Thu Aug 01 18:36:43 2002 (potet) .about_face_left.animations[0].filename = TR_MO_KamiGuard_demi_tour_gauche.anim
+Thu Aug 01 18:36:43 2002 (potet) .idle.animations[0].filename = TR_MO_KamiGuard_idle_attack.anim
+Thu Aug 01 18:36:43 2002 (potet) .idle.animations[1].filename = TR_MO_KamiGuard_idle_intimidation.anim
+Thu Aug 01 18:36:43 2002 (potet) .idle.animations[2].filename = TR_MO_KamiGuard_idle_intimidation2.anim
+Thu Aug 01 18:36:43 2002 (potet) .idle.animations[2].max_speed_factor = 1.1
+Thu Aug 01 18:36:43 2002 (potet) .idle.animations[2].min_speed_factor = 0.9
+Thu Aug 01 18:36:43 2002 (potet) .run.animations[0].filename = TR_MO_KamiGuard_course.anim
+Thu Aug 01 18:36:43 2002 (potet) .turn_left.animations[0].filename = TR_MO_KamiGuard_tourne_gauche.anim
+Thu Aug 01 18:36:43 2002 (potet) .walk.animations[0].filename = TR_MO_KamiGuard_marche.anim
+Thu Aug 01 18:36:43 2002 (potet) formName Resized = 0
+Thu Aug 01 18:38:09 2002 (potet) .about_face_right.animations[0].filename = TR_MO_KamiGuard_demi_tour_gauche.anim
+Thu Aug 01 18:38:09 2002 (potet) .attack1.animations[0].filename = TR_MO_KamiGuard_coup_de_poing.anim
+Thu Aug 01 18:38:09 2002 (potet) .attack2.animations[0].filename = TR_MO_KamiGuard_belier.anim
+Thu Aug 01 18:38:09 2002 (potet) .turn_right.animations[0].filename = TR_MO_KamiGuard_tourne_droite.anim
+Thu Aug 01 18:38:09 2002 (potet) formName Resized = 0
+Thu Aug 29 17:40:52 2002 (gomes) .about_face_left_to_backward.animations[0].filename = TR_MO_KamiGuard_demi_tour_gauche.anim
+Thu Aug 29 17:40:52 2002 (gomes) .about_face_left_to_walk.animations[0].filename = TR_MO_KamiGuard_demi_tour_gauche.anim
+Thu Aug 29 17:40:52 2002 (gomes) .about_face_right_to_backward.animations[0].filename = TR_MO_KamiGuard_demi_tour_gauche.anim
+Thu Aug 29 17:40:52 2002 (gomes) .about_face_right_to_walk.animations[0].filename = TR_MO_KamiGuard_demi_tour_gauche.anim
+Thu Aug 29 17:40:52 2002 (gomes) .turn_left_to_backward.animations[0].filename = TR_MO_KamiGuard_tourne_gauche.anim
+Thu Aug 29 17:40:52 2002 (gomes) .turn_left_to_walk.animations[0].filename = TR_MO_KamiGuard_tourne_gauche.anim
+Thu Aug 29 17:40:52 2002 (gomes) .turn_right_to_backward.animations[0].filename = TR_MO_KamiGuard_tourne_droite.anim
+Thu Aug 29 17:40:52 2002 (gomes) .turn_right_to_walk.animations[0].filename = TR_MO_KamiGuard_tourne_droite.anim
+Thu Aug 29 17:40:52 2002 (gomes) formName Resized = 1
+Tue Dec 17 11:43:26 2002 (beaume) .run.LodCharacterAnimation = TR_MO_KamiGuard_course.anim
+Tue Dec 17 11:43:26 2002 (beaume) .walk.LodCharacterAnimation = TR_MO_KamiGuard_marche.anim
+Tue Mar 11 15:52:27 2003 (arnaudb) .turn_left.animations[1].filename = TR_MO_KamiGuard_attack_demi_tour_gauche.anim
+Tue Mar 11 15:52:27 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = TR_MO_KamiGuard_attack_demi_tour_gauche.anim
+Tue Mar 11 15:52:27 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = TR_MO_KamiGuard_attack_demi_tour_gauche.anim
+Tue Mar 11 15:52:27 2003 (arnaudb) .turn_right.animations[1].filename = TR_MO_KamiGuard_attack_demi_tour_droite.anim
+Tue Mar 11 15:52:27 2003 (arnaudb) .turn_right_to_backward.animations[1].filename = TR_MO_KamiGuard_attack_demi_tour_droite.anim
+Tue Mar 11 15:52:27 2003 (arnaudb) .turn_right_to_walk.animations[1].filename = TR_MO_KamiGuard_attack_demi_tour_droite.anim
+Tue Mar 11 15:52:27 2003 (arnaudb) formName Resized = 2
+Tue Mar 11 16:11:09 2003 (arnaudb) .attack1.animations[0].filename = TR_Mo_Kami_guide_3_attack.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .attack2.animations[0].filename = TR_Mo_Kami_guide_3_attack2.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .idle.animations[0].filename = TR_Mo_Kami_guide_3_idle_attack.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .idle.animations[1].filename = TR_Mo_Kami_guide_3_intimidation1.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .run.animations[0].filename = TR_Mo_Kami_guide_3_course.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_left.animations[0].filename = TR_Mo_Kami_guide_3_attack_tourne_gauche.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_left.animations[1].filename = TR_Mo_Kami_guide_3_attack_demitour_gauche.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_left_to_backward.animations[0].filename = TR_Mo_Kami_guide_3_attack_tourne_gauche.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = TR_Mo_Kami_guide_3_attack_demitour_gauche.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_left_to_walk.animations[0].filename = TR_Mo_Kami_guide_3_attack_tourne_gauche.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = TR_Mo_Kami_guide_3_attack_demitour_gauche.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_right.animations[0].filename = TR_Mo_Kami_guide_3_attack_tourne_droite.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_right.animations[1].filename = TR_Mo_Kami_guide_3_attack_demitour_droite.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_right_to_backward.animations[0].filename = TR_Mo_Kami_guide_3_attack_tourne_droite.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_right_to_backward.animations[1].filename = TR_Mo_Kami_guide_3_attack_demitour_droite.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_right_to_walk.animations[0].filename = TR_Mo_Kami_guide_3_attack_tourne_droite.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .turn_right_to_walk.animations[1].filename = TR_Mo_Kami_guide_3_attack_demitour_droite.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) .walk.animations[0].filename = TR_Mo_Kami_guide_3_marche.anim
+Tue Mar 11 16:11:09 2003 (arnaudb) formName Resized = 2
+Tue Mar 18 12:20:58 2003 (arnaudb) .impact.animations[0].filename = TR_Mo_Kami_guide_3_impact.anim
+Tue Mar 18 12:20:58 2003 (arnaudb) formName Resized = 1
+Tue Apr 22 11:08:03 2003 (arnaudb) .idle.LodCharacterAnimation = TR_Mo_Kami_guide_3_idle.anim
+Thu Jan 08 14:51:15 2004 (beaume) .curative_cast_begin.animations[0].filename = TR_Mo_Kami_guide_3_magie_init.anim
+Thu Jan 08 14:51:15 2004 (beaume) .curative_cast_loop.animations[0].filename = TR_Mo_Kami_guide_3_magie_loop.anim
+Thu Jan 08 14:51:15 2004 (beaume) .curative_cast_success.animations[0].filename = TR_Mo_Kami_guide_3_magie_end_ok.anim
+Thu Jan 08 14:51:15 2004 (beaume) .offensive_cast_begin.animations[0].filename = TR_Mo_Kami_guide_3_magie_init.anim
+Thu Jan 08 14:51:15 2004 (beaume) .offensive_cast_loop.animations[0].filename = TR_Mo_Kami_guide_3_magie_loop.anim
+Thu Jan 08 14:51:15 2004 (beaume) .offensive_cast_success.animations[0].filename = TR_Mo_Kami_guide_3_magie_end_ok.anim
+Thu Jan 08 14:51:15 2004 (beaume) formName Resized = 1
+Fri Jan 16 14:13:35 2004 (beaume) .backward.animations[0].filename = TR_Mo_Kami_guide_3_marche_arriere.anim
+Fri Jan 16 14:13:35 2004 (beaume) .impact.animations[0].filename = TR_Mo_Kami_guide_3_idle_impact.anim
+Fri Jan 16 14:13:35 2004 (beaume) .strafe_left.animations[0].filename = TR_Mo_Kami_guide_3_attack_straffgauche.anim
+Fri Jan 16 14:13:35 2004 (beaume) .strafe_right.animations[0].filename = TR_Mo_Kami_guide_3_attack_straffdroit.anim
+Fri Jan 16 14:13:35 2004 (beaume) formName Resized = 1
+Fri Jan 16 14:15:24 2004 (beaume) .death_mode.animations[0].filename = TR_Mo_Kami_guide_3_mort.anim
+Fri Jan 16 14:15:24 2004 (beaume) formName Resized = 1
+Fri Jan 16 14:17:39 2004 (beaume) formName Resized = 0
+Fri Jan 16 14:28:46 2004 (beaume) .idle.animations[0].filename = TR_Mo_Kami_guide_3_mort_end.anim
+Fri Jan 16 14:28:46 2004 (beaume) formName Resized = 1
+Tue Jan 20 15:10:43 2004 (gatto) .idle.animations[0].fx_set.FX0.PSName = kami_guide3_guide4_dead.ps
+Tue Jan 20 15:15:41 2004 (gatto) .idle.animations[0].fx_set.FX0.StickMode.StickMode = UserBone
+Tue Jan 20 15:15:41 2004 (gatto) .idle.animations[0].fx_set.FX0.StickMode.UserBone = bip01
+Tue Feb 24 10:49:27 2004 (gatto) .idle.animations[0].fx_set.FX0.StickMode.UserBone = Bip01
+Tue Feb 24 15:14:03 2004 (beaume) .defaultHeadControl = false
+Wed Apr 28 14:48:32 2004 (puzin) .idle.animations[0].hide_at_end_anim = true</LOG>
+</FORM>

@@ -1,9 +1,190 @@
 <?xml version="1.0"?>
-<FORM Revision="" State="modified">
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <STRUCT>
+    <ARRAY Name="Array">
+      <STRUCT>
+        <ATOM Name="ID" Value="1"/>
+        <ATOM Name="String" Value="link_piercing.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="2"/>
+        <ATOM Name="String" Value="link_blunt.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="3"/>
+        <ATOM Name="String" Value="link_slashing.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="4"/>
+        <ATOM Name="String" Value="link_cold.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="5"/>
+        <ATOM Name="String" Value="link_rot.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="6"/>
+        <ATOM Name="String" Value="link_acid.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="7"/>
+        <ATOM Name="String" Value="link_fire.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="8"/>
+        <ATOM Name="String" Value="link_shockwave.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="9"/>
+        <ATOM Name="String" Value="link_electric.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="10"/>
+        <ATOM Name="String" Value="link_poison.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="11"/>
+        <ATOM Name="String" Value="link_curse.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="12"/>
+        <ATOM Name="String" Value="link_sickness.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="13"/>
+        <ATOM Name="String" Value="link_hatred.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="14"/>
+        <ATOM Name="String" Value="link_mezz.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="15"/>
+        <ATOM Name="String" Value="link_root.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="16"/>
+        <ATOM Name="String" Value="link_healhp.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="17"/>
+        <ATOM Name="String" Value="link_healsap.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="18"/>
+        <ATOM Name="String" Value="link_healsta.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="19"/>
+        <ATOM Name="String" Value="link_fear.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="20"/>
+        <ATOM Name="String" Value="link_stun.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="0"/>
+        <ATOM Name="String" Value="link_break.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="21"/>
+        <ATOM Name="String" Value="link_slowaction.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="22"/>
+        <ATOM Name="String" Value="link_slowmvt.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="23"/>
+        <ATOM Name="String" Value="link_blind.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="24"/>
+        <ATOM Name="String" Value="link_madness.animation_fx"/>
+      </STRUCT>
+    </ARRAY>
+  </STRUCT>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
-  <STRUCT/>
-  <LOG></LOG>
+  <LOG>Wed Dec 10 15:11:18 2003 (vizerie) .Array[0].ID = link_piercing.animation_fx
+Wed Dec 10 15:11:18 2003 (vizerie) .Array[1].ID = 1
+Wed Dec 10 15:11:18 2003 (vizerie) .Array[1].String = link_blunt.animation_fx
+Wed Dec 10 15:11:18 2003 (vizerie) .Array[2].ID = 2
+Wed Dec 10 15:11:18 2003 (vizerie) .Array[2].String = link_slashing.animation_fx
+Wed Dec 10 15:11:18 2003 (vizerie) .Array[3].ID = 3
+Wed Dec 10 15:11:18 2003 (vizerie) .Array[3].String = link_cold.animation_fx
+Wed Dec 10 15:11:18 2003 (vizerie) formName Resized = 20
+Wed Dec 10 15:11:43 2003 (vizerie) .Array[4].ID = 4
+Wed Dec 10 15:11:43 2003 (vizerie) .Array[4].String = link_rot.animation_fx
+Wed Dec 10 15:11:55 2003 (vizerie) .Array[5].ID = 5
+Wed Dec 10 15:11:55 2003 (vizerie) .Array[5].String = link_acid.animation_fx
+Wed Dec 10 15:12:32 2003 (vizerie) .Array[6].ID = 6
+Wed Dec 10 15:12:32 2003 (vizerie) .Array[6].String = link_fire.animation_fx
+Wed Dec 10 15:12:32 2003 (vizerie) .Array[7].ID = 7
+Wed Dec 10 15:12:32 2003 (vizerie) .Array[7].String = link_shockwave.animation_fx
+Wed Dec 10 15:12:32 2003 (vizerie) .Array[8].String = link_electric.animation_fx
+Wed Dec 10 15:12:50 2003 (vizerie) .Array[8].ID = 8
+Wed Dec 10 15:12:50 2003 (vizerie) .Array[9].ID = 9
+Wed Dec 10 15:12:50 2003 (vizerie) .Array[9].String = link_poison.animation_fx
+Wed Dec 10 15:13:08 2003 (vizerie) .Array[10].ID = 10
+Wed Dec 10 15:13:08 2003 (vizerie) .Array[10].String = link_curse.animation_fx
+Wed Dec 10 15:13:22 2003 (vizerie) .Array[11].ID = 11
+Wed Dec 10 15:13:22 2003 (vizerie) .Array[11].String = link_sickness.animation_fx
+Wed Dec 10 15:13:36 2003 (vizerie) .Array[12].ID = 12
+Wed Dec 10 15:13:36 2003 (vizerie) .Array[12].String = link_hatred.animation_fx
+Wed Dec 10 15:13:50 2003 (vizerie) .Array[13].ID = 13
+Wed Dec 10 15:13:50 2003 (vizerie) .Array[13].String = link_mezz.animation_fx
+Wed Dec 10 15:14:02 2003 (vizerie) .Array[14].ID = 14
+Wed Dec 10 15:14:02 2003 (vizerie) .Array[14].String = link_root.animation_fx
+Wed Dec 10 15:14:28 2003 (vizerie) .Array[14].ID = 15
+Wed Dec 10 15:14:28 2003 (vizerie) .Array[14].String = link_healhp.animation_fx
+Wed Dec 10 15:14:57 2003 (vizerie) .Array[14].ID = 14
+Wed Dec 10 15:14:57 2003 (vizerie) .Array[14].String = link_root.animation_fx
+Wed Dec 10 15:14:57 2003 (vizerie) .Array[15].ID = 15
+Wed Dec 10 15:14:57 2003 (vizerie) .Array[15].String = link_healhp.animation_fx
+Wed Dec 10 15:22:52 2003 (vizerie) .Array[16].ID = 16
+Wed Dec 10 15:22:52 2003 (vizerie) .Array[16].String = link_healsap.animation_fx
+Wed Dec 10 15:23:14 2003 (vizerie) .Array[17].ID = 17
+Wed Dec 10 15:23:14 2003 (vizerie) .Array[17].String = link_healsta.animation_fx
+Wed Dec 10 15:23:58 2003 (vizerie) .Array[18].ID = 18
+Wed Dec 10 15:23:58 2003 (vizerie) .Array[18].String = link_fear.animation_fx
+Wed Dec 10 15:23:58 2003 (vizerie) .Array[19].ID = 19
+Wed Dec 10 15:23:58 2003 (vizerie) .Array[19].String = link_stun.animation_fx
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[0].ID = 1
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[0].String = link_piercing.animation_fx
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[10].ID = 11
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[11].ID = 12
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[12].ID = 13
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[13].ID = 14
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[14].ID = 15
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[15].ID = 16
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[16].ID = 17
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[17].ID = 18
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[18].ID = 19
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[19].ID = 20
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[1].ID = 2
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[20].ID = 0
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[2].ID = 3
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[3].ID = 4
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[4].ID = 5
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[5].ID = 6
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[6].ID = 7
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[7].ID = 8
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[8].ID = 9
+Wed Dec 10 17:29:31 2003 (vizerie) .Array[9].ID = 10
+Wed Dec 10 17:29:31 2003 (vizerie) formName Resized = 21
+Wed Dec 10 17:30:18 2003 (vizerie) .Array[20].String = mag_off_impact_loop_break.ps
+Wed Dec 10 17:30:43 2003 (vizerie) .Array[20].String = link_break.animation_fx
+Thu Aug 19 11:47:29 2004 (gatto) .Array[21].ID = 21
+Thu Aug 19 11:47:29 2004 (gatto) .Array[21].String = link_slowaction.animation_fx
+Thu Aug 19 11:47:29 2004 (gatto) .Array[22].ID = 22
+Thu Aug 19 11:47:29 2004 (gatto) .Array[22].String = link_slowmvt.animation_fx
+Thu Aug 19 11:47:29 2004 (gatto) .Array[23].ID = 23
+Thu Aug 19 11:47:29 2004 (gatto) .Array[23].String = link_blind.animation_fx
+Thu Aug 19 11:47:29 2004 (gatto) .Array[24].ID = 24
+Thu Aug 19 11:47:29 2004 (gatto) .Array[24].String = link_madness.animation_fx
+Thu Aug 19 11:47:29 2004 (gatto) formName Pasted = 
+Thu Aug 19 11:47:29 2004 (gatto) formName Resized = 25</LOG>
 </FORM>

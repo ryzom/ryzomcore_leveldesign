@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_mektoub.animset_mode"/>
+  <STRUCT>
+    <STRUCT Name="alert">
+      <ATOM Name="__" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="combat">
+      <ATOM Name="__" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="eat">
+      <ATOM Name="__" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="hungry">
+      <ATOM Name="__" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="mount_default">
+      <ATOM Name="__" Value="true"/>
+    </STRUCT>
+	<STRUCT Name="mount_swim">
+      <ATOM Name="__" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="rest">
+      <ATOM Name="__" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="swim">
+      <ATOM Name="__" Value="true"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Tue Jul 08 11:10:37 2003 (puzin) Form Parents = 
+Tue Jul 08 15:51:23 2003 (puzin) .alert.__ = false
+Tue Jul 08 15:51:23 2003 (puzin) .combat.__ = false
+Tue Jul 08 15:51:23 2003 (puzin) .default.__ = 
+Tue Jul 08 15:51:23 2003 (puzin) .eat.__ = false
+Tue Jul 08 15:51:23 2003 (puzin) .hungry.__ = false
+Tue Jul 08 15:51:23 2003 (puzin) .mount_default.__ = true
+Tue Jul 08 15:51:23 2003 (puzin) .rest.__ = false
+Thu Dec 09 14:28:14 2004 (fleury) .swim.__ = true</LOG>
+</FORM>

@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_hungry.animation_set"/>
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_cherche_manger.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Chien_idle.anim"/>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_marche.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Chien_trot.anim"/>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_course.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Chien_course.anim"/>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_marche_arriere.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_tourne_gauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_demi_tour.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_tourne_droit.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_demi_tour_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_tourne_gauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_demi_tour.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_tourne_droit.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_demi_tour_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_tourne_gauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_demi_tour.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_tourne_droit.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_demi_tour_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="impact">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_idle_impact.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_begin">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_Stun_init.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_Stun_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_Stun_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Chien_mort_default.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 16:14:11 2002 (puzin)
+Mon Dec 16 16:39:14 2002 (beaume) .death.LodCharacterAnimation = TR_MO_Chien_mort.anim
+Mon Dec 16 16:39:14 2002 (beaume) .death_idle.LodCharacterAnimation = TR_MO_Chien_mort_idle.anim
+Mon Dec 16 16:39:14 2002 (beaume) .idle.LodCharacterAnimation = TR_MO_Chien_idle.anim
+Mon Dec 16 16:39:14 2002 (beaume) .run.LodCharacterAnimation = TR_MO_Chien_course.anim
+Mon Dec 16 16:39:14 2002 (beaume) .walk.LodCharacterAnimation = TR_MO_Chien_marche.anim
+Wed Feb 12 14:41:19 2003 (arnaudb) .idle.animations[0].filename = TR_MO_Chien_cherche_manger.anim
+Wed Feb 12 14:41:19 2003 (arnaudb) .idle.animations[1].filename = TR_MO_Chien_idle.anim
+Wed Feb 12 14:41:19 2003 (arnaudb) formName Resized = 2
+Fri Mar 21 10:30:43 2003 (arnaudb) .impact.animations[0].filename = TR_MO_Chien_idle_impact.anim
+Fri Mar 21 10:30:43 2003 (arnaudb) formName Resized = 1
+Tue May 13 15:14:42 2003 (beaume) .walk.LodCharacterAnimation = TR_MO_Chien_trot.anim
+Fri Jun 06 11:44:56 2003 (beaume) .death_mode.animations[0].filename = TR_MO_Chien_mort.anim
+Fri Jun 06 11:44:56 2003 (beaume) formName Resized = 1
+Thu Jul 03 12:00:17 2003 (puzin) Form Parents = 
+Fri Jul 04 15:00:27 2003 (beaume) .death_mode.animations[0].filename = TR_MO_Chien_mort_default.anim
+Mon Dec 01 12:16:26 2003 (beaume) .stun_begin.animations[0].filename = TR_MO_Chien_Stun_init.anim
+Mon Dec 01 12:16:26 2003 (beaume) .stun_end.animations[0].filename = TR_MO_Chien_Stun_end.anim
+Mon Dec 01 12:16:26 2003 (beaume) .stun_loop.animations[0].filename = TR_MO_Chien_Stun_loop.anim
+Mon Dec 01 12:16:26 2003 (beaume) formName Resized = 1
+Thu Dec 18 15:48:52 2003 (beaume) .defaultHeadControl = false</LOG>
+</FORM>

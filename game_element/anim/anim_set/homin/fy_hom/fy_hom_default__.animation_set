@@ -497,10 +497,709 @@
         </STRUCT>
       </ARRAY>
     </STRUCT>
+    <STRUCT Name="afk">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_AFK.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="agree">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_oui.anim"/>
+          <ATOM Name="head controlable" Value="false"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="alert">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="angry">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_levee_poing.anim"/>
+          <ATOM Name="head controlable" Value="false"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="apologize">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emote_Sorry.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="applaud">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_applaudire.anim"/>
+          <ATOM Name="head controlable" Value="false"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="ashamed_disgusted_desillusioned_loathing_pitying">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="blush">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_Blush.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="bow">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_salut_incline.anim"/>
+          <ATOM Name="head controlable" Value="false"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="brave_great">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="burp">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="bye">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_salut.anim"/>
+          <ATOM Name="head controlable" Value="false"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="calm">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_Calm.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cheer">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_Cheer.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cold_contemptuous_disdainful_haughty_megalomaniac_obnoxious">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="cry">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_Cry.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="curious">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="dance">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_dance.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="disagree">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_non.anim"/>
+          <ATOM Name="head controlable" Value="false"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="discreet_hardsilence">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="doubtful">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="dramatic">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="drunk">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="exercise">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="FBT">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="fearful_insecure_nervous_panic_scared">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="firm">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="follow">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_follow.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="forgive">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="gesture">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_gesture.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="giggle">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_Giggle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="go_away">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_laisse_moi.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="guilty">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="heroic">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="hungry">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="impatient">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_Impatient.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="indifferent_neutral_noclue_resigned">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="interested">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="kiss">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_kiss.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="kneel">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_salut2.anim"/>
+          <ATOM Name="head controlable" Value="false"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="laugh">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_rire.anim"/>
+          <ATOM Name="head controlable" Value="false"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="lol">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_rire.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="none">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="over">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="petulant">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="playful">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="point">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_pointer.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="pointback">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="pointleft">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="pointright">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="pompous">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="praying">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="puzzled_thoughtful_troubled">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="relaxed">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="relieved_sigh">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="revengeful_spitful">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="rice">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="righteous">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="roar">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_roar.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="sad">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_shoot_poussiere.anim"/>
+          <ATOM Name="head controlable" Value="false"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="serious">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="shifty">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="shocked">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="silly">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="sincerely">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="sleepy_yawn_tired">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="smack">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="smile">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_Smile.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="squeamish">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="surprised">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="suspicious">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="thank">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_salut_incline.anim"/>
+          <ATOM Name="head controlable" Value="false"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="thirsty">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="unhappy">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_poing_contre_poing.anim"/>
+          <ATOM Name="head controlable" Value="false"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="unwilling">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="victory">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_victory.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="wait">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="wave">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOM_Emot_Bow.anim"/>
+          <ATOM Name="head controlable" Value="false"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="wicked">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="youandme">
+      <ATOM Name="Display Objects" Value="true"/>
+    </STRUCT>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
-  <LOG></LOG>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Wed Aug 13 12:00:00 2003 (puzin)
+Wed Oct 29 10:43:09 2003 (beaume) .curative_cast_end.animations[0].filename = FY_HOM_mn_maoff_preinit.anim
+Wed Oct 29 10:43:09 2003 (beaume) .curative_cast_end.animations[0].reverse = true
+Wed Oct 29 10:43:09 2003 (beaume) .curative_cast_init.animations[0].filename = FY_HOM_mn_maoff_preinit.anim
+Wed Oct 29 10:43:09 2003 (beaume) .mixed_cast_end.animations[0].filename = FY_HOM_mn_maoff_preinit.anim
+Wed Oct 29 10:43:09 2003 (beaume) .mixed_cast_end.animations[0].reverse = true
+Wed Oct 29 10:43:09 2003 (beaume) .mixed_cast_init.animations[0].filename = FY_HOM_mn_maoff_preinit.anim
+
+
+Wed Oct 29 10:43:09 2003 (beaume) .offensive_cast_end.animations[0].filename = FY_HOM_mn_maoff_preinit.anim
+Wed Oct 29 10:43:09 2003 (beaume) .offensive_cast_end.animations[0].reverse = true
+Wed Oct 29 10:43:09 2003 (beaume) .offensive_cast_init.animations[0].filename = FY_HOM_mn_maoff_preinit.anim
+Wed Oct 29 10:43:09 2003 (beaume) Form Parents = 
+Thu Dec 04 16:17:04 2003 (beaume) .use_begin.animations[0].filename = FY_HOM_quartering_init.anim
+Thu Dec 04 16:17:04 2003 (beaume) .use_end.animations[0].filename = FY_HOM_quartering_end.anim
+Thu Dec 04 16:17:04 2003 (beaume) .use_init.animations[0].filename = FY_HOM_mn_maoff_preinit.anim
+Thu Dec 04 16:17:04 2003 (beaume) .use_loop.animations[0].filename = FY_HOM_quartering_loop.anim
+Thu Dec 04 16:17:04 2003 (beaume) .use_post_end.animations[0].filename = FY_HOM_mn_maoff_preinit.anim
+Thu Dec 04 16:17:04 2003 (beaume) .use_post_end.animations[0].reverse = true
+Thu Dec 04 16:17:04 2003 (beaume) formName Resized = 1
+Tue Jan 20 17:05:05 2004 (beaume) .loot_init.animations[0].filename = FY_HOM_mn_maoff_preinit.anim
+Tue Jan 20 17:05:05 2004 (beaume) .loot_post_end.animations[0].filename = FY_HOM_mn_maoff_preinit.anim
+Tue Jan 20 17:05:05 2004 (beaume) .loot_post_end.animations[0].reverse = true
+Tue Jan 20 17:05:05 2004 (beaume) formName Resized = 0
+Mon Feb 02 17:00:55 2004 (beaume) .idle.animations[4].filename = fy_hof_idle_attente.anim
+Mon Feb 02 17:00:55 2004 (beaume) .idle.animations[5].filename = fy_hof_idle_attente2.anim
+Mon Feb 02 17:00:55 2004 (beaume) .idle.animations[6].filename = fy_hof_idle_attente3.anim
+Mon Feb 02 17:00:55 2004 (beaume) .idle.animations[7].filename = fy_hof_idle1_attitude1.anim
+Mon Feb 02 17:00:55 2004 (beaume) .idle.animations[8].filename = fy_hof_tousser.anim
+Mon Feb 02 17:00:55 2004 (beaume) formName Resized = 9
+Mon Feb 02 17:04:06 2004 (beaume) .idle.animations[10].filename = fy_hom_idle3_attitude1.anim
+Mon Feb 02 17:04:06 2004 (beaume) .idle.animations[11].filename = fy_hom_idle3_attitude2.anim
+Mon Feb 02 17:04:06 2004 (beaume) .idle.animations[12].filename = fy_hom_tousser2.anim
+Mon Feb 02 17:04:06 2004 (beaume) .idle.animations[4].filename = fy_hom_idle_malaucou.anim
+Mon Feb 02 17:04:06 2004 (beaume) .idle.animations[5].filename = fy_hom_idle2.anim
+Mon Feb 02 17:04:06 2004 (beaume) .idle.animations[6].filename = fy_hom_idle2_attitude1.anim
+Mon Feb 02 17:04:06 2004 (beaume) .idle.animations[7].filename = fy_hom_idle2_attitude2.anim
+Mon Feb 02 17:04:06 2004 (beaume) .idle.animations[8].filename = fy_hom_idle2_attitude3.anim
+Mon Feb 02 17:04:06 2004 (beaume) .idle.animations[9].filename = fy_hom_idle3.anim
+Mon Feb 02 17:04:06 2004 (beaume) formName Resized = 13
+Mon Feb 02 17:07:11 2004 (beaume) formName Resized = 0
+Wed Feb 18 14:25:51 2004 (beaume) .afk.animations[0].filename = FY_HOM_Emot_AFK.anim
+Wed Feb 18 14:25:51 2004 (beaume) .apologize.animations[0].filename = FY_HOM_Emote_Sorry.anim
+Wed Feb 18 14:25:51 2004 (beaume) .blush.animations[0].filename = FY_HOM_Emot_Blush.anim
+Wed Feb 18 14:25:51 2004 (beaume) .calm.animations[0].filename = FY_HOM_Emot_Calm.anim
+Wed Feb 18 14:25:51 2004 (beaume) .cheer.animations[0].filename = FY_HOM_Emot_Cheer.anim
+Wed Feb 18 14:25:51 2004 (beaume) .cry.animations[0].filename = FY_HOM_Emot_Cry.anim
+Wed Feb 18 14:25:51 2004 (beaume) .dance.animations[0].filename = FY_HOM_Emot_dance.anim
+Wed Feb 18 14:25:51 2004 (beaume) .follow.animations[0].filename = FY_HOM_Emot_follow.anim
+Wed Feb 18 14:25:51 2004 (beaume) .gesture.animations[0].filename = FY_HOM_Emot_gesture.anim
+Wed Feb 18 14:25:51 2004 (beaume) .giggle.animations[0].filename = FY_HOM_Emot_Giggle.anim
+Wed Feb 18 14:25:51 2004 (beaume) .go_away.animations[0].filename = FY_HOM_Emot_laisse_moi.anim
+Wed Feb 18 14:25:51 2004 (beaume) .impatient.animations[0].filename = FY_HOM_Emot_Impatient.anim
+Wed Feb 18 14:25:51 2004 (beaume) .kiss.animations[0].filename = FY_HOM_Emot_kiss.anim
+Wed Feb 18 14:25:51 2004 (beaume) .lol.animations[0].filename = FY_HOM_Emot_Rofl.anim
+Wed Feb 18 14:25:51 2004 (beaume) .point.animations[0].filename = FY_HOM_Emot_pointer.anim
+Wed Feb 18 14:25:51 2004 (beaume) .roar.animations[0].filename = FY_HOM_Emot_roar.anim
+Wed Feb 18 14:25:51 2004 (beaume) .smile.animations[0].filename = FY_HOM_Emot_Smile.anim
+Wed Feb 18 14:25:51 2004 (beaume) .victory.animations[0].filename = FY_HOM_Emot_victory.anim
+Wed Feb 18 14:25:51 2004 (beaume) formName Resized = 1
+Wed Feb 18 16:39:13 2004 (beaume) formName Resized = 0
+Wed Feb 18 16:39:47 2004 (beaume) .lol.animations[0].filename = FY_HOM_rire.anim
+Wed Feb 18 16:39:47 2004 (beaume) formName Resized = 1
+Wed Feb 18 16:43:40 2004 (beaume) .wave.animations[0].filename = FY_HOM_Emot_Bow.anim
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[0].next1 = 1
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[0].next2 = 2
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[0].next3 = 3
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[0].next4 = 17
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[10] Renamed = 10 Idle_To_Idle3
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[10].filename = FY_HOM_Idle_To_Idle3.anim
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[11].filename = FY_HOM_Idle3.anim
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[12].filename = FY_HOM_Idle3_attitude1.anim
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[13].filename = FY_HOM_Idle3_attitude2.anim
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[14].filename = FY_HOM_Idle3_attitude3.anim
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[15] Renamed = 15 Idle3_To_Idle
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[15].filename = FY_HOM_Idle3_To_Idle.anim
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[16] Renamed = 16 Idle3_To_Idle2
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[16].filename = FY_HOM_Idle3_To_Idle2.anim
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[17].filename = FY_HOM_idle_malaucou.anim
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[1].next1 = 0
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[1].next2 = 2
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[1].next3 = 17
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[2].next1 = 0
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[2].next2 = 1
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[2].next3 = 17
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[3] Renamed = 3 Idle_To_Idle2
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[3].filename = FY_HOM_Idle_To_Idle2.anim
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[3].next1 = 4
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[3].next2 = 5
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[3].next3 = 6
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[3].next4 = 7
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[4].filename = FY_HOM_Idle2.anim
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[4].next1 = 5
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[4].next2 = 6
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[4].next3 = 7
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[4].next4 = 8
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[4].next5 = 9
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[5].filename = FY_HOM_Idle2_attitude1.anim
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[5].next1 = 4
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[5].next2 = 6
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[5].next3 = 7
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[5].next4 = 8
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[5].next5 = 9
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[6].filename = FY_HOM_Idle2_attitude2.anim
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[6].next1 = 4
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[6].next2 = 5
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[6].next3 = 7
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[6].next4 = 8
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[6].next5 = 9
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[7].filename = FY_HOM_Idle2_attitude3.anim
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[7].next1 = 4
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[7].next2 = 5
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[7].next3 = 6
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[7].next4 = 8
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[7].next5 = 9
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[8] Renamed = 8 Idle2_To_Idle
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[8].filename = FY_HOM_Idle2_To_Idle.anim
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[8].next1 = 1
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[8].next2 = 2
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[9] Renamed = 9 Idle2_To_Idle3
+Mon Mar 29 11:51:41 2004 (beaume) .idle.animations[9].filename = FY_HOM_Idle2_To_Idle3.anim
+Mon Mar 29 11:51:41 2004 (beaume) formName Resized = 18
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[10].next1 = 11
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[10].next2 = 12
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[10].next3 = 13
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[10].next4 = 14
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[11].next1 = 12
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[11].next2 = 13
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[11].next3 = 14
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[11].next4 = 15
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[11].next5 = 16
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[12].next1 = 11
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[12].next2 = 13
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[12].next3 = 14
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[12].next4 = 15
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[12].next5 = 16
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[13].next1 = 11
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[13].next2 = 12
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[13].next3 = 14
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[13].next4 = 15
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[13].next5 = 16
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[14].next1 = 11
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[14].next2 = 12
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[14].next3 = 13
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[14].next4 = 15
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[14].next5 = 16
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[15].next1 = 1
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[15].next2 = 2
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[15].next3 = 17
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[16].next1 = 4
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[16].next2 = 5
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[16].next3 = 6
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[17].next1 = 0
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[17].next2 = 1
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[17].next3 = 2
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[8].next3 = 17
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[9].next1 = 11
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[9].next2 = 12
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[9].next3 = 13
+Mon Mar 29 12:12:25 2004 (beaume) .idle.animations[9].next4 = 14
+Wed Mar 31 14:09:52 2004 (beaume) .idle.animations[0].next5 = 10
+Wed Mar 31 14:09:52 2004 (beaume) .idle.animations[17].next4 = 3
+Wed Mar 31 14:09:52 2004 (beaume) .idle.animations[17].next5 = 10
+Wed Mar 31 14:09:52 2004 (beaume) .idle.animations[1].next4 = 10
+Wed Mar 31 14:09:52 2004 (beaume) .idle.animations[1].next5 = 3
+Wed Mar 31 14:09:52 2004 (beaume) .idle.animations[2].next4 = 10
+Wed Mar 31 14:09:52 2004 (beaume) .idle.animations[2].next5 = 3
+Wed Jun 16 11:20:51 2004 (beaume) .idle.animations[15].filename = FY_HOM_Idle_To_Idle3.anim
+Wed Jun 16 11:20:51 2004 (beaume) .idle.animations[15].reverse = true
+Wed Jun 16 14:11:46 2004 (beaume) .idle.animations[15].filename = FY_HOM_Idle3_To_Idle.anim
+Wed Jun 16 14:11:46 2004 (beaume) .idle.animations[15].reverse = false
+Thu Jul 08 16:52:31 2004 (coutelas) .idle.animations[0].next1 = 0
+Thu Jul 08 16:52:31 2004 (coutelas) .idle.animations[0].next1 weight = 10
+Thu Jul 08 16:52:31 2004 (coutelas) .idle.animations[0].next2 = 1
+Thu Jul 08 16:52:31 2004 (coutelas) .idle.animations[0].next3 = 2
+Thu Jul 08 16:52:31 2004 (coutelas) .idle.animations[0].next4 = 3
+Thu Jul 08 16:52:31 2004 (coutelas) .idle.animations[0].next5 = 17
+Thu Jul 08 16:58:27 2004 (coutelas) .idle.animations[1].next1 weight = 10
+Thu Jul 08 16:58:27 2004 (coutelas) .idle.animations[2].next1 weight = 10
+Thu Jul 08 17:00:54 2004 (coutelas) .idle.animations[3].next2 = -1
+Thu Jul 08 17:00:54 2004 (coutelas) .idle.animations[3].next3 = -1
+Thu Jul 08 17:00:54 2004 (coutelas) .idle.animations[3].next4 = -1
+Thu Jul 08 17:03:03 2004 (coutelas) .idle.animations[4].next1 = 4
+Thu Jul 08 17:03:03 2004 (coutelas) .idle.animations[4].next1 weight = 10
+Thu Jul 08 17:03:03 2004 (coutelas) .idle.animations[4].next2 = 5
+Thu Jul 08 17:03:03 2004 (coutelas) .idle.animations[4].next3 = 6
+Thu Jul 08 17:03:03 2004 (coutelas) .idle.animations[4].next4 = 7
+Thu Jul 08 17:06:13 2004 (coutelas) .idle.animations[5].next1 weight = 5
+Thu Jul 08 17:06:13 2004 (coutelas) .idle.animations[6].next1 weight = 5
+Thu Jul 08 17:07:03 2004 (coutelas) .idle.animations[7].next1 weight = 5
+Thu Jul 08 17:08:53 2004 (coutelas) .idle.animations[8].next1 = 0
+Thu Jul 08 17:08:53 2004 (coutelas) .idle.animations[8].next2 = -1
+Thu Jul 08 17:08:53 2004 (coutelas) .idle.animations[8].next3 = -1
+Thu Jul 08 17:09:14 2004 (coutelas) .idle.animations[9].next2 = -1
+Thu Jul 08 17:09:14 2004 (coutelas) .idle.animations[9].next3 = -1
+Thu Jul 08 17:09:14 2004 (coutelas) .idle.animations[9].next4 = -1
+Thu Jul 08 17:10:02 2004 (coutelas) .idle.animations[10].next2 = -1
+Thu Jul 08 17:10:02 2004 (coutelas) .idle.animations[10].next3 = -1
+Thu Jul 08 17:10:02 2004 (coutelas) .idle.animations[10].next4 = -1
+Thu Jul 08 17:10:58 2004 (coutelas) .idle.animations[11].next1 = 11
+Thu Jul 08 17:10:58 2004 (coutelas) .idle.animations[11].next1 weight = 10
+Thu Jul 08 17:10:58 2004 (coutelas) .idle.animations[11].next2 = 12
+Thu Jul 08 17:10:58 2004 (coutelas) .idle.animations[11].next3 = 13
+Thu Jul 08 17:10:58 2004 (coutelas) .idle.animations[11].next4 = 14
+Thu Jul 08 17:10:58 2004 (coutelas) .idle.animations[11].next5 = 15
+Thu Jul 08 17:11:16 2004 (coutelas) .idle.animations[11].next5 = -1
+Thu Jul 08 17:12:21 2004 (coutelas) .idle.animations[12].next1 weight = 5
+Thu Jul 08 17:12:21 2004 (coutelas) .idle.animations[13].next1 weight = 5
+Thu Jul 08 17:12:21 2004 (coutelas) .idle.animations[14].next1 weight = 5
+Thu Jul 08 17:12:21 2004 (coutelas) .idle.animations[15].next1 = 0
+Thu Jul 08 17:12:21 2004 (coutelas) .idle.animations[15].next2 = -1
+Thu Jul 08 17:12:21 2004 (coutelas) .idle.animations[15].next3 = -1
+Thu Jul 08 17:12:51 2004 (coutelas) .idle.animations[16].next2 = -1
+Thu Jul 08 17:12:51 2004 (coutelas) .idle.animations[16].next3 = -1
+Thu Jul 08 17:12:51 2004 (coutelas) .idle.animations[17].next1 weight = 10
+Thu Jul 08 17:40:26 2004 (coutelas) .idle.animations[11].next1 weight = 5
+Fri Sep 03 17:53:57 2004 (beaume) Form Parents = 
+Fri Sep 24 17:47:20 2004 (beaume) .FBT.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .afk.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .agree.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .alert.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .angry.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .apologize.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .applaud.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .ashamed_disgusted_desillusioned_loathing_pitying.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .blush.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .bow.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .brave_great.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .burp.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .bye.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .calm.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .cheer.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .cold_contemptuous_disdainful_haughty_megalomaniac_obnoxious.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .cry.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .curious.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .dance.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .disagree.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .discreet_hardsilence.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .doubtful.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .dramatic.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .drunk.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .exercise.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .fearful_insecure_nervous_panic_scared.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .firm.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .follow.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .forgive.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .gesture.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .giggle.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .go_away.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .guilty.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .heroic.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .hungry.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .impatient.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .indifferent_neutral_noclue_resigned.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .interested.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .kiss.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .kneel.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .laugh.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .lol.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .none.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .over.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .petulant.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .playful.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .point.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .pointback.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .pointleft.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .pointright.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .pompous.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .praying.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .puzzled_thoughtful_troubled.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .relaxed.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .relieved_sigh.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .revengeful_spitful.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .rice.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .righteous.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .roar.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .sad.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .serious.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .shifty.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .shocked.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .silly.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .sincerely.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .sleepy_yawn_tired.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .smack.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .smile.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .squeamish.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .surprised.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .suspicious.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .thank.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .thirsty.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .unhappy.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .unwilling.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .victory.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .wait.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .wave.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .wicked.Display Objects = true
+Fri Sep 24 17:47:20 2004 (beaume) .youandme.Display Objects = true</LOG>
 </FORM>

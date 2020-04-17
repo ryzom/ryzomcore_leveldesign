@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.4 $" State="modified">
+  <STRUCT>
+    <ARRAY Name="Attacks">
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="CreatureAttack"/>
+          <ATOM Name="SpellID" Value="ShockWave"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileDelay" Value="0.5"/>
+          <ATOM Name="AttackEndFX" Value="cast_phytopsy_specialatk1.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="creature_mag_proj_shockwave_bomb_phytopsy.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="shockwave_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Spine1"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="CreatureAttack"/>
+          <ATOM Name="SpellID" Value="Electric"/>
+          <ATOM Name="CreatureAttackIndex" Value="1"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.5"/>
+          <ATOM Name="AttackEndFX" Value="cast_phytopsy_specialatk2.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="creature_mag_proj_electric_bomb_phytopsy.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="electric_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Spine1"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Feb 12 11:02:09 2004 (gatto) .Attacks[0].ID.AttackType = CreatureAttack
+Thu Feb 12 11:02:09 2004 (gatto) .Attacks[1].ID.AttackType = CreatureAttack
+Thu Feb 12 11:02:09 2004 (gatto) .Attacks[1].ID.CreatureAttackIndex = 1
+Thu Feb 12 11:02:09 2004 (gatto) formName Resized = 2
+Thu Feb 12 11:05:18 2004 (gatto) .Attacks[0].Attack.ProjectileMode = 
+Thu Feb 12 11:12:13 2004 (gatto) .Attacks[1].Attack.ProjectileMode = Bomb
+Thu Feb 12 11:15:32 2004 (gatto) .Attacks[1].Attack.AttackEndFX = cast_kakty_specialatk.animation_fx_set
+Mon Feb 16 09:57:19 2004 (gatto) .Attacks[0].Attack.AttackEndFX = cast_phytopsy_specialatk1.animation_fx_set
+Mon Feb 16 09:57:19 2004 (gatto) .Attacks[0].ID.SpellID = ShockWave
+Mon Feb 16 09:57:19 2004 (gatto) .Attacks[1].Attack.AttackEndFX = cast_phytopsy_specialatk2.animation_fx_set
+Mon Feb 16 09:57:19 2004 (gatto) .Attacks[1].ID.SpellID = Electric
+Mon Feb 16 09:57:41 2004 (gatto) .Attacks[0].ID.SpellMode = Bomb
+Mon Feb 16 09:57:41 2004 (gatto) .Attacks[1].ID.SpellMode = Bomb
+Mon Feb 16 09:59:35 2004 (gatto) .Attacks[0].Attack.ImpactFX = shockwave_impact.animation_fx_set
+Mon Feb 16 09:59:35 2004 (gatto) .Attacks[0].Attack.ProjectileFX = magic_projectile_shockwave_bomb.animation_fx_set
+Mon Feb 16 09:59:35 2004 (gatto) .Attacks[1].Attack.ImpactFX = electric_impact.animation_fx_set
+Mon Feb 16 09:59:35 2004 (gatto) .Attacks[1].Attack.ProjectileFX = magic_projectile_electric_bomb.animation_fx_set
+Tue Feb 17 16:05:16 2004 (gatto) .Attacks[0].Attack.ProjectileFX = creature_mag_proj_shockwave_bomb_phytopsy.animation_fx_set
+Tue Feb 17 16:05:16 2004 (gatto) .Attacks[1].Attack.ProjectileFX = creature_mag_proj_electric_bomb_phytopsy.animation_fx_set
+Tue Feb 17 16:06:13 2004 (gatto) .Attacks[0].Attack.DefaultAimingPoint.StickMode = UserBone
+Tue Feb 17 16:06:13 2004 (gatto) .Attacks[0].Attack.DefaultAimingPoint.UserBone = Bip01 Spine1
+Tue Feb 17 16:06:22 2004 (gatto) .Attacks[1].Attack.DefaultAimingPoint.StickMode = UserBone
+Tue Feb 17 16:06:22 2004 (gatto) .Attacks[1].Attack.DefaultAimingPoint.UserBone = Bip01 Spine1
+Wed Feb 18 16:14:53 2004 (gatto) .Attacks[1].Attack.ProjectileDelay = 0.5
+Wed Feb 18 16:14:57 2004 (gatto) .Attacks[0].Attack.ProjectileDelay = 0.5</LOG>
+</FORM>

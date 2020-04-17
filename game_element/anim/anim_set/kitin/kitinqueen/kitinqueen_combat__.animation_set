@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.5 $" State="modified">
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Queen_Idle_Attak.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kitin_Queen_Idle_Attak.anim"/>
+    </STRUCT>
+    <STRUCT Name="impact">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="attack1">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Queen_Attak.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kitin_Queen_Attak.anim"/>
+    </STRUCT>
+    <STRUCT Name="attack2">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Queen_Attak_special.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kitin_Queen_Attak_special.anim"/>
+    </STRUCT>
+    <STRUCT Name="default atk low">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Queen_Attak.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kitin_Queen_Attak.anim"/>
+    </STRUCT>
+    <STRUCT Name="default atk middle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Queen_Attak.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kitin_Queen_Attak.anim"/>
+    </STRUCT>
+    <STRUCT Name="default atk high">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Queen_Attak.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kitin_Queen_Attak.anim"/>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Queen_Idle_to_death.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 14:46:07 2002 (puzin)
+Mon Jul 24 22:22:58 2006 (puzin) .idle.animations[0].filename = TR_MO_Kitin_Queen_idle.anim
+Mon Aug 28 15:18:44 2006 (gueney) .attack1.LodCharacterAnimation = TR_MO_Kitin_Queen_Attak.anim
+Mon Aug 28 15:18:44 2006 (gueney) .attack1.animations[0].filename = TR_MO_Kitin_Queen_Attak.anim
+Mon Aug 28 15:18:44 2006 (gueney) .attack2.LodCharacterAnimation = TR_MO_Kitin_Queen_Attak_special.anim
+Mon Aug 28 15:18:44 2006 (gueney) .attack2.animations[0].filename = TR_MO_Kitin_Queen_Attak_special.anim
+Mon Aug 28 15:18:44 2006 (gueney) .default atk high.LodCharacterAnimation = TR_MO_Kitin_Queen_Attak.anim
+Mon Aug 28 15:18:44 2006 (gueney) .default atk high.animations[0].filename = TR_MO_Kitin_Queen_Attak.anim
+Mon Aug 28 15:18:44 2006 (gueney) .default atk low.LodCharacterAnimation = TR_MO_Kitin_Queen_Attak.anim
+
+Mon Aug 28 15:18:44 2006 (gueney) .default atk low.animations[0].filename = TR_MO_Kitin_Queen_Attak.anim
+Mon Aug 28 15:18:44 2006 (gueney) .default atk middle.LodCharacterAnimation = TR_MO_Kitin_Queen_Attak.anim
+Mon Aug 28 15:18:44 2006 (gueney) .default atk middle.animations[0].filename = TR_MO_Kitin_Queen_Attak.anim
+Mon Aug 28 15:18:44 2006 (gueney) formName Resized = 1
+Mon Aug 28 15:19:33 2006 (gueney) .idle.LodCharacterAnimation = TR_MO_Kitin_Queen_Idle_Attak.anim
+Mon Aug 28 15:19:33 2006 (gueney) .idle.animations[0].filename = TR_MO_Kitin_Queen_Idle_Attak.anim
+Tue Sep 19 16:36:55 2006 (gueney) .death_mode.animations[0].filename = TR_MO_Kitin_Queen_Idle_to_death.anim
+Tue Sep 19 16:44:44 2006 (gueney) .impact.animations[0].filename = TR_MO_Kitin_Impact.anim000
+Tue Sep 19 16:44:44 2006 (gueney) formName Resized = 0
+Tue Sep 19 16:47:32 2006 (gueney) Form Parents = 
+Tue Sep 19 16:48:01 2006 (gueney) .defaultHeadControl = false</LOG>
+</FORM>

@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.4 $" State="modified">
+  <PARENT Filename="_combat.animation_set"/>
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_idle_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_marche.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Pachyderme_marche.anim"/>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_course.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Pachyderme_course.anim"/>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_reculer.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_tourne_gauche_engarde.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_demitour_gauche_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_tourne_droite_engarde.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_demitour_droite_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_tourne_gauche_engarde.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_demitour_gauche_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_tourne_droite_engarde.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_demitour_droite_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_tourne_gauche_engarde.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_demitour_gauche_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_tourne_droite_engarde.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_demitour_droite_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_strafe_gauche_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_strafe_droite_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="impact">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_pachyderme_impact_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_begin">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_pachyderme_engarde_stun_init.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_pachyderme_engarde_stun_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_pachyderme_engarde_stun_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="attack1">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Bull_coup_corne.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="walk atk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_pachyderme_marche_ATK.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="run atk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_pachyderme_course_ATK.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="backward atk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_pachyderme_reculer__ATK.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Pachyderme_mort.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri Dec 13 15:53:18 2002 (puzin)
+Mon Dec 16 18:24:28 2002 (beaume) .death.LodCharacterAnimation = TR_MO_Pachyderme_mort.anim
+Mon Dec 16 18:24:28 2002 (beaume) .death_idle.LodCharacterAnimation = TR_MO_Pachyderme_mort_idle.anim
+Mon Dec 16 18:24:28 2002 (beaume) .run.LodCharacterAnimation = TR_MO_Pachyderme_course.anim
+Mon Dec 16 18:24:28 2002 (beaume) .run.animations[0].filename = TR_MO_Pachyderme_course.anim
+Mon Dec 16 18:24:28 2002 (beaume) .walk.LodCharacterAnimation = TR_MO_Pachyderme_marche.anim
+Wed Feb 26 12:05:14 2003 (arnaudb) .attack1.animations[0].filename = TR_MO_Bull_coup_corne.anim
+Tue Mar 18 12:05:21 2003 (arnaudb) .impact.animations[0].filename = TR_MO_pachyderme_impact.anim
+Tue Mar 18 12:05:21 2003 (arnaudb) formName Resized = 1
+Fri Mar 21 10:48:21 2003 (arnaudb) .impact.animations[0].filename = TR_MO_pachyderme_impact_engarde.anim
+Fri Jun 06 16:20:55 2003 (beaume) .death_mode.animations[0].filename = TR_MO_Pachyderme_mort.anim
+Fri Jun 06 16:20:55 2003 (beaume) formName Resized = 1
+Tue Jun 10 14:33:18 2003 (beaume) .strafe_right.animations[0].filename = TR_MO_Pachyderme_strafe_droite_engarde.anim
+Thu Jul 03 16:35:23 2003 (beaume) Form Parents = 
+Thu Jul 03 16:43:20 2003 (beaume) .backward atk.animations[0].filename = TR_MO_pachyderme_reculer__ATK.anim
+Thu Jul 03 16:43:20 2003 (beaume) .run atk.animations[0].filename = TR_MO_pachyderme_course_ATK.anim
+Thu Jul 03 16:43:20 2003 (beaume) .walk atk.animations[0].filename = TR_MO_pachyderme_marche_ATK.anim
+Thu Jul 03 16:43:20 2003 (beaume) formName Resized = 1
+Mon Dec 01 14:17:44 2003 (beaume) .stun_begin.animations[0].filename = TR_MO_pachyderme_engarde_stun_init.anim
+Mon Dec 01 14:17:44 2003 (beaume) .stun_end.animations[0].filename = TR_MO_pachyderme_engarde_stun_end.anim
+Mon Dec 01 14:17:44 2003 (beaume) .stun_loop.animations[0].filename = TR_MO_pachyderme_engarde_stun_loop.anim
+Mon Dec 01 14:17:44 2003 (beaume) formName Resized = 1
+Wed Dec 17 18:01:31 2003 (beaume) .defaultHeadControl = false
+Mon Dec 29 15:27:23 2003 (beaume) .attack2.animations[0].filename = TR_MO_Bull_coup_corne2.anim
+Thu Feb 12 19:30:48 2004 (beaume) formName Resized = 0</LOG>
+</FORM>

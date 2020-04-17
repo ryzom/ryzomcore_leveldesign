@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_ryzomian_big_rest__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="tr_mo_mamouth_dormir_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="alert_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="tr_mo_mamouth_dormir_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="combat_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="tr_mo_mamouth_dormir_to_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="default_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="tr_mo_mamouth_dormir_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="eat_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="tr_mo_mamouth_dormir_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 14:46:07 2002 (puzin)
+Fri Oct 01 17:04:53 2004 (beaume) .alert_mode.animations[0].filename = tr_mo_mamouth_dormir_end.anim
+Fri Oct 01 17:04:53 2004 (beaume) .combat_mode.animations[0].filename = tr_mo_mamouth_dormir_to_engarde.anim
+Fri Oct 01 17:04:53 2004 (beaume) .default_mode.animations[0].filename = tr_mo_mamouth_dormir_end.anim
+Fri Oct 01 17:04:53 2004 (beaume) .eat_mode.animations[0].filename = tr_mo_mamouth_dormir_end.anim
+Fri Oct 01 17:04:53 2004 (beaume) .idle.animations[0].filename = tr_mo_mamouth_dormir_loop.anim</LOG>
+</FORM>

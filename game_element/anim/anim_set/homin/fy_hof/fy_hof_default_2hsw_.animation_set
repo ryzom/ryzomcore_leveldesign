@@ -395,14 +395,6 @@
       </ARRAY>
       <ATOM Name="LodCharacterAnimation" Value="FY_HOF_A_mort.anim"/>
     </STRUCT>
-    <STRUCT Name="bow">
-      <ATOM Name="Display Objects" Value="true"/>
-      <ATOM Name="Essential" Value="true"/>
-    </STRUCT>
-    <STRUCT Name="wave">
-      <ATOM Name="Display Objects" Value="true"/>
-      <ATOM Name="Essential" Value="true"/>
-    </STRUCT>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>
@@ -584,11 +576,5 @@ Mon Sep 13 19:20:18 2004 (coutelas) .idle.animations[6].next3 =
 Mon Sep 13 19:20:18 2004 (coutelas) .idle.animations[6].next3 weight = 
 Mon Sep 13 19:20:18 2004 (coutelas) .idle.animations[7].next1 weight = 1
 Mon Sep 13 19:20:18 2004 (coutelas) .idle.animations[7].next2 = 
-Mon Sep 13 19:20:18 2004 (coutelas) .idle.animations[7].next2 weight = 
-Thu Oct 07 12:40:51 2010 (sywindt) .bow.Display Objects = false
-Thu Oct 07 12:40:51 2010 (sywindt) .bow.Essential = true
-Thu Oct 07 12:40:51 2010 (sywindt) .wave.Display Objects = false
-Thu Oct 07 12:40:51 2010 (sywindt) .wave.Essential = true
-Thu Oct 07 13:19:11 2010 (sywindt) .bow.Display Objects = true
-Thu Oct 07 13:19:11 2010 (sywindt) .wave.Display Objects = true</LOG>
+Mon Sep 13 19:20:18 2004 (coutelas) .idle.animations[7].next2 weight = </LOG>
 </FORM>

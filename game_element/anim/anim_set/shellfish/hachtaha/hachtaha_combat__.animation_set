@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_shellfish_alert__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_idle_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_marche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_course.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_engarde_reculer.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turnleft_engarde.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turnleft180_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turnright_engarde.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turnright180_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turnleft_engarde.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turnleft180_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turnright_engarde.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turnright180_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turnleft_engarde.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turnleft180_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turnright_engarde.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_turnright180_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_strafeleft_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_strafright_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="attack1">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_attaque_pinces.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.525"/>
+    </STRUCT>
+    <STRUCT Name="attack2">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Hachtaha_attkspeciale.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.583"/>
+    </STRUCT>
+    <STRUCT Name="walk atk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_engarde_avancer_ATK.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.175"/>
+    </STRUCT>
+    <STRUCT Name="run atk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_course_Atk.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.373"/>
+    </STRUCT>
+    <STRUCT Name="backward atk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_engarde_reculer_Atk.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.350"/>
+    </STRUCT>
+    <STRUCT Name="death">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_mort_engarde.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Crustace_mort_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 16:14:11 2002 (puzin)
+Mon Jan 20 10:38:44 2003 (oldbeaume) .attack1.animations[0].filename = TR_MO_Crustace_attaque pinces.anim
+Mon Jan 20 10:38:44 2003 (oldbeaume) .backward.animations[0].filename = TR_MO_Crustace_reculer.anim
+Mon Jan 20 10:40:46 2003 (oldbeaume) .backward atk.animations[0].filename = TR_MO_Crustace_engarde_reculer_Atk.anim
+Mon Jan 20 10:40:46 2003 (oldbeaume) .backward.animations[0].filename = TR_MO_Crustace_engarde_reculer.anim
+Mon Jan 20 10:40:46 2003 (oldbeaume) .run atk.animations[0].filename = TR_MO_Crustace_course_Atk.anim
+Mon Jan 20 10:40:46 2003 (oldbeaume) .walk atk.animations[0].filename = TR_MO_Crustace_engarde_avancer_ATK.anim
+Mon Jan 20 10:40:46 2003 (oldbeaume) formName Resized = 1
+Mon Jan 20 10:56:02 2003 (oldbeaume) Form Parents = 
+Mon Jan 20 11:08:39 2003 (oldbeaume) .attack2.animations[0].filename = TR_MO_Hachtaha_attkspeciale.anim
+Mon Jan 20 11:08:39 2003 (oldbeaume) formName Resized = 1
+Mon Jan 20 11:18:45 2003 (oldbeaume) .death.animations[0].filename = TR_MO_Crustace_mort_engarde.anim
+Mon Jan 20 11:18:45 2003 (oldbeaume) .death_idle.animations[0].filename = TR_MO_Crustace_mort_idle.anim
+Tue Jun 10 14:56:55 2003 (beaume) .attack1.animations[0].filename = TR_MO_Crustace_attaque_pinces.anim
+Tue Jun 10 14:58:06 2003 (beaume) .idle.animations[0].filename = TR_MO_Crustace_idle_engarde.anim</LOG>
+</FORM>

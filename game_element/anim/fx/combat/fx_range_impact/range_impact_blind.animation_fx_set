@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <STRUCT Name="FX0">
+      <ATOM Name="PSName" Value="mel_ran_impact_blind.ps"/>
+      <STRUCT Name="StickMode">
+        <ATOM Name="StickMode" Value="OrientedTowardTargeter"/>
+        <ATOM Name="UserBone" Value="Bip01 Spine1"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Mon Jan 12 11:39:56 2004 (vizerie) Form Parents = 
+Tue Feb 10 16:27:01 2004 (vizerie) .FX0.StickMode.StickMode = UserBoneOrientedTowardTargeter
+Tue Feb 10 16:27:01 2004 (vizerie) .FX0.StickMode.UserBone = Bip01 Head
+Tue Feb 10 16:27:37 2004 (vizerie) .FX0.PSName = ran_impact.ps
+Thu Feb 12 13:09:13 2004 (gatto) .FX0.PSName = mel_ran_impact_electric.ps
+Thu Feb 12 13:09:20 2004 (gatto) .FX0.StickMode.StickMode = Follow
+Thu Feb 12 13:09:36 2004 (gatto) .FX0.StickMode.UserBone = 
+Thu Feb 12 13:32:43 2004 (gatto) .FX0.PSName = mel_ran_impact_blind.ps
+Thu Feb 12 13:34:00 2004 (gatto) .FX0.StickMode.StickMode = OrientedTowardTargeter
+Thu Feb 12 13:34:00 2004 (gatto) .FX0.StickMode.UserBone = Bip01 Spine1</LOG>
+</FORM>

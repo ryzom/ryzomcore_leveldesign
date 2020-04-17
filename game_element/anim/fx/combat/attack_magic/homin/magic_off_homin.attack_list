@@ -1,7 +1,28 @@
 <?xml version="1.0"?>
-<FORM Revision="" State="modified">
+<FORM Revision="$Revision: 1.6 $" State="modified">
   <STRUCT>
     <ARRAY Name="Attacks">
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Acid"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_acid_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_acid_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_acid_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_acid_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_acid_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="acid_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
       <STRUCT>
         <STRUCT Name="ID">
           <ATOM Name="AttackType" Value="Magic"/>
@@ -23,11 +44,1521 @@
           </STRUCT>
         </STRUCT>
       </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Acid"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_acid_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_acid_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_acid_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_acid_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_acid_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="acid_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Blunt"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_blunt_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_blunt_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_blunt.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_blunt_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_blunt_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="blunt_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Blunt"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_blunt_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_blunt_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_blunt_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_blunt_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_blunt_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="blunt_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Blunt"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_blunt_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_blunt_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_blunt_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_blunt_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_blunt_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="blunt_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Cold"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_cold_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_cold_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_cold_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_cold_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_cold_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="cold_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Cold"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_cold_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_cold_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_cold_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_cold_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_cold_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="cold_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Cold"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_cold_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_cold_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_cold_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_cold_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_cold_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="cold_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Curse"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_curse_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_curse_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_curse_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_curse_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_curse_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="curse_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Curse"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_curse_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_curse_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_curse_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_curse_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_curse_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="curse_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Curse"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_curse_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_curse_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_curse_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_curse_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_curse_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="curse_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Electric"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_electric_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_electric_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_electric_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_electric_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_electric_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="electric_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Electric"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_electric_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_electric_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_electric_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_electric_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_electric_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="electric_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Electric"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_electric_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_electric_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_electric_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_electric_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_electric_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="electric_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Fear"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_fear_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_fear_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_fear_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_fear_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_fear_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="fear_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Fear"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_fear_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_fear_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_fear_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_fear_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_fear_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="fear_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Fear"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_fear_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_fear_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_fear_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_fear_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_fear_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="fear_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Fire"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_fire_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_fire_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_fire_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_fire_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_fire_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="fire_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Fire"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_fire_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_fire_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_fire_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_fire_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_fire_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="fire_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Fire"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_fire_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_fire_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_fire_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_fire_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_fire_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="fire_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Hatred"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_hatred_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_hatred_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_hatred_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_hatred_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_hatred_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="hatred_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Hatred"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_hatred_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_hatred_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_hatred_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_hatred_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_hatred_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="hatred_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Hatred"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_hatred_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_hatred_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_hatred_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_hatred_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_hatred_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="hatred_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Mezz"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_sleep_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_sleep_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_sleep_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_sleep_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_mezz_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="mezz_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Mezz"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_sleep_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_sleep_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_sleep_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_sleep_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_mezz_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="mezz_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Mezz"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_sleep_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_sleep_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_sleep_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_sleep_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_mezz_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="mezz_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Piercing"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_piercing_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_piercing_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_piercing_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_piercing_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_piercing_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="piercing_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Piercing"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_piercing_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_piercing_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_piercing_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_piercing_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_piercing_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="piercing_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Piercing"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_piercing_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_piercing_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_piercing_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_piercing_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_piercing_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="piercing_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Poison"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_poison_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_poison_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_poison_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_poison_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_poison_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="poison_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Poison"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_poison_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_poison_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_poison_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_poison_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_poison_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="poison_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Poison"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_poison_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_poison_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_poison_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_poison_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_poison_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="poison_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Root"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_root_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_root_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_root_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_root_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_root_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="root_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Root"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_root_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_root_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_root_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_root_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_root_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="root_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Root"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_root_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_root_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_root_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_root_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_root_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="root_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Rot"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_rot_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_rot_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_rot_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_rot_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_rot_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="rot_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Rot"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_rot_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_rot_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_rot_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_rot_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_rot_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="rot_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Rot"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_rot_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_rot_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_rot_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_rot_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_rot_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="rot_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Shockwave"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_shock_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_shock_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_shock_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_shock_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_shockwave_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="shockwave_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Shockwave"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_shockwave_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_shockwave_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_shockwave_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_shockwave_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_shockwave_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="shockwave_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Shockwave"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_shockwave_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_shockwave_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_shockwave_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_shockwave_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_shockwave_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="shockwave_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Sickness"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_sickness_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_sickness_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_sickness_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_sickness_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_sickness_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="sickness_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Sickness"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_sickness_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_sickness_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_sickness_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_sickness_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_sickness_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="sickness_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Sickness"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_sickness_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_sickness_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_sickness_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_sickness_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_sickness_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="sickness_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Slashing"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_slashing_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_slashing_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_slashing_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_slashing_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_slashing_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="slashing_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Slashing"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_slashing_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_slashing_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_slashing_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_slashing_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_slashing_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="slashing_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Slashing"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_slashing_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_slashing_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_slashing_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_slashing_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_slashing_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="slashing_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Stun"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_stun_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_stun_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_stun_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_stun_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_stun_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="stun_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Stun"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_stun_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_stun_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_stun_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_stun_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_stun_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="stun_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Stun"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_stun_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_stun_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_stun_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_stun_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_stun_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="stun_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Madness"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_madness_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_madness_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_madness_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_madness_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_madness_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="madness_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Madness"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_madness_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_madness_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_madness_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_madness_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_madness_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="madness_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Madness"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_madness_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_madness_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_madness_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_madness_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_madness_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="madness_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="SlowAttack"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_slowaction_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_slowaction_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_slowaction_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_slowaction_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_slowaction_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="slowaction_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="SlowAttack"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_slowaction_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_slowaction_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_slowaction_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_slowaction_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_slowaction_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="slowaction_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="SlowAttack"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_slowaction_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_slowaction_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_slowaction_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_slowaction_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_slowaction_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="slowaction_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="SlowMove"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_slowmvt_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_slowmvt_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_slowmvt_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_slowmvt_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_slowmvt_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="slowmvt_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="SlowMove"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_slowmvt_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_slowmvt_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_slowmvt_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_slowmvt_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_slowmvt_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="slowmvt_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="SlowMove"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_slowmvt_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_slowmvt_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_slowmvt_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_slowmvt_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_slowmvt_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="slowmvt_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Blind"/>
+          <ATOM Name="SpellMode" Value="Bomb"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_blind_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_blind_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_blind_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_blind_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_blind_bomb.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="blind_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Blind"/>
+          <ATOM Name="SpellMode" Value="Chain"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_blind_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_blind_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_blind_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_blind_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_blind_chain.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="blind_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Magic"/>
+          <ATOM Name="SpellID" Value="Blind"/>
+          <ATOM Name="SpellMode" Value="Spray"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.14"/>
+          <ATOM Name="AttackBeginFX" Value="cast_off_blind_begin.animation_fx_set"/>
+          <ATOM Name="AttackLoopFX" Value="cast_off_blind_loop.animation_fx_set"/>
+          <ATOM Name="AttackEndFX" Value="cast_off_blind_end.animation_fx_set"/>
+          <ATOM Name="AttackFailFX" Value="cast_off_blind_fail.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="magic_projectile_blind_spray.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="blind_impact.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
     </ARRAY>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
-  <LOG></LOG>
+  <LOG>Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackBeginFX = cast_off_begin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackEndFX = cast_off_end.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackFailFX = cast_off_fail.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackLoopFX = cast_off_loop.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ImpactFX = acid_impact.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileDelay = 0.14
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileFX = magic_projectile_acid_bomb.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileMode = Bomb
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.AttackType = Magic
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.SpellID = Acid
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.SpellMode = Bomb
+Fri Feb 06 12:19:49 2004 (vizerie) formName Resized = 60
+Tue Feb 10 10:45:50 2004 (vizerie) .Attacks[0].Attack.DefaultAimingPoint.StickMode = UserBone
+Tue Feb 10 10:45:50 2004 (vizerie) .Attacks[0].Attack.DefaultAimingPoint.UserBone = Bip01 Head
+Mon Jul 19 15:05:19 2004 (gatto) .Attacks[0].Attack.AttackBeginFX = cast_off_acid_begin.animation_fx_set
+Mon Jul 19 15:05:19 2004 (gatto) .Attacks[0].Attack.AttackEndFX = cast_off_acid_end.animation_fx_set
+Mon Jul 19 15:05:19 2004 (gatto) .Attacks[0].Attack.AttackFailFX = cast_off_acid_fail.animation_fx_set
+Mon Jul 19 15:05:19 2004 (gatto) .Attacks[0].Attack.AttackLoopFX = cast_off_acid_loop.animation_fx_set
+Mon Jul 19 15:05:42 2004 (gatto) .Attacks[0].Attack.AttackFailFX = cast_off_acid_ail.animation_fx_set
+Mon Jul 19 15:05:46 2004 (gatto) .Attacks[0].Attack.AttackFailFX = cast_off_acid_fail.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[1].Attack.AttackBeginFX = cast_off_acid_begin.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[1].Attack.AttackEndFX = cast_off_acid_end.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[1].Attack.AttackFailFX = cast_off_acid_fail.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[1].Attack.AttackLoopFX = cast_off_acid_loop.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[2].Attack.AttackBeginFX = cast_off_acid_begin.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[2].Attack.AttackEndFX = cast_off_acid_end.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[2].Attack.AttackFailFX = cast_off_acid_fail.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[2].Attack.AttackLoopFX = cast_off_acid_loop.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[3].Attack.AttackBeginFX = cast_off_blunt_begin.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[3].Attack.AttackEndFX = cast_off_blunt.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[3].Attack.AttackFailFX = cast_off_blunt_fail.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[3].Attack.AttackLoopFX = cast_off_blunt_loop.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[4].Attack.AttackBeginFX = cast_off_blunt_begin.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[4].Attack.AttackEndFX = cast_off_blunt_end.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[4].Attack.AttackFailFX = cast_off_blunt_fail.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[4].Attack.AttackLoopFX = cast_off_blunt_loop.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[5].Attack.AttackBeginFX = cast_off_blunt_begin.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[5].Attack.AttackEndFX = cast_off_blunt_end.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[5].Attack.AttackFailFX = cast_off_blunt_fail.animation_fx_set
+Mon Jul 19 15:07:29 2004 (gatto) .Attacks[5].Attack.AttackLoopFX = cast_off_blunt_loop.animation_fx_set
+Mon Jul 19 15:07:49 2004 (gatto) .Attacks[6].Attack.AttackBeginFX = cast_off_cold_begin.animation_fx_set
+Mon Jul 19 15:07:49 2004 (gatto) .Attacks[6].Attack.AttackEndFX = cast_off_cold_end.animation_fx_set
+Mon Jul 19 15:07:49 2004 (gatto) .Attacks[6].Attack.AttackFailFX = cast_off_cold_fail.animation_fx_set
+Mon Jul 19 15:07:49 2004 (gatto) .Attacks[6].Attack.AttackLoopFX = cast_off_cold_loop.animation_fx_set
+Mon Jul 19 15:08:03 2004 (gatto) .Attacks[7].Attack.AttackBeginFX = cast_off_cold_begin.animation_fx_set
+Mon Jul 19 15:08:03 2004 (gatto) .Attacks[7].Attack.AttackEndFX = cast_off_cold_end.animation_fx_set
+Mon Jul 19 15:08:03 2004 (gatto) .Attacks[7].Attack.AttackFailFX = cast_off_cold_fail.animation_fx_set
+Mon Jul 19 15:08:03 2004 (gatto) .Attacks[7].Attack.AttackLoopFX = cast_off_cold_loop.animation_fx_set
+Mon Jul 19 15:08:19 2004 (gatto) .Attacks[8].Attack.AttackBeginFX = cast_off_cold_begin.animation_fx_set
+Mon Jul 19 15:08:19 2004 (gatto) .Attacks[8].Attack.AttackEndFX = cast_off_cold_end.animation_fx_set
+Mon Jul 19 15:08:19 2004 (gatto) .Attacks[8].Attack.AttackFailFX = cast_off_cold_fail.animation_fx_set
+Mon Jul 19 15:08:19 2004 (gatto) .Attacks[8].Attack.AttackLoopFX = cast_off_cold_loop.animation_fx_set
+Mon Jul 19 15:08:34 2004 (gatto) .Attacks[9].Attack.AttackBeginFX = cast_off_cold_begin.animation_fx_set
+Mon Jul 19 15:08:34 2004 (gatto) .Attacks[9].Attack.AttackEndFX = cast_off_cold_end.animation_fx_set
+Mon Jul 19 15:08:34 2004 (gatto) .Attacks[9].Attack.AttackFailFX = cast_off_cold_fail.animation_fx_set
+Mon Jul 19 15:08:34 2004 (gatto) .Attacks[9].Attack.AttackLoopFX = cast_off_cold_loop.animation_fx_set
+Mon Jul 19 15:09:39 2004 (gatto) .Attacks[10].Attack.AttackBeginFX = cast_off_curse_begin.animation_fx_set
+Mon Jul 19 15:09:39 2004 (gatto) .Attacks[10].Attack.AttackEndFX = cast_off_curse_end.animation_fx_set
+Mon Jul 19 15:09:39 2004 (gatto) .Attacks[10].Attack.AttackFailFX = cast_off_curse_fail.animation_fx_set
+Mon Jul 19 15:09:39 2004 (gatto) .Attacks[10].Attack.AttackLoopFX = cast_off_curse_loop.animation_fx_set
+Mon Jul 19 15:09:39 2004 (gatto) .Attacks[9].Attack.AttackBeginFX = cast_off_curse_begin.animation_fx_set
+Mon Jul 19 15:09:39 2004 (gatto) .Attacks[9].Attack.AttackEndFX = cast_off_curse_end.animation_fx_set
+Mon Jul 19 15:09:39 2004 (gatto) .Attacks[9].Attack.AttackFailFX = cast_off_curse_fail.animation_fx_set
+Mon Jul 19 15:09:39 2004 (gatto) .Attacks[9].Attack.AttackLoopFX = cast_off_curse_loop.animation_fx_set
+Mon Jul 19 15:10:01 2004 (gatto) .Attacks[11].Attack.AttackBeginFX = cast_off_curse_begin.animation_fx_set
+Mon Jul 19 15:10:01 2004 (gatto) .Attacks[11].Attack.AttackEndFX = cast_off_curse_end.animation_fx_set
+Mon Jul 19 15:10:01 2004 (gatto) .Attacks[11].Attack.AttackFailFX = cast_off_curse_fail.animation_fx_set
+Mon Jul 19 15:10:01 2004 (gatto) .Attacks[11].Attack.AttackLoopFX = cast_off_curse_loop.animation_fx_set
+Mon Jul 19 15:10:35 2004 (gatto) .Attacks[12].Attack.AttackBeginFX = cast_off_electric_begin.animation_fx_set
+Mon Jul 19 15:10:35 2004 (gatto) .Attacks[12].Attack.AttackEndFX = cast_off_electric_end.animation_fx_set
+Mon Jul 19 15:10:35 2004 (gatto) .Attacks[12].Attack.AttackFailFX = cast_off_electric_fail.animation_fx_set
+Mon Jul 19 15:10:35 2004 (gatto) .Attacks[12].Attack.AttackLoopFX = cast_off_electric_loop.animation_fx_set
+Mon Jul 19 15:10:51 2004 (gatto) .Attacks[13].Attack.AttackBeginFX = cast_off_electric_begin.animation_fx_set
+Mon Jul 19 15:10:51 2004 (gatto) .Attacks[13].Attack.AttackEndFX = cast_off_electric_end.animation_fx_set
+Mon Jul 19 15:10:51 2004 (gatto) .Attacks[13].Attack.AttackFailFX = cast_off_electric_fail.animation_fx_set
+Mon Jul 19 15:10:51 2004 (gatto) .Attacks[13].Attack.AttackLoopFX = cast_off_electric_loop.animation_fx_set
+Mon Jul 19 15:11:08 2004 (gatto) .Attacks[14].Attack.AttackBeginFX = cast_off_electric_begin.animation_fx_set
+Mon Jul 19 15:11:08 2004 (gatto) .Attacks[14].Attack.AttackEndFX = cast_off_electric_end.animation_fx_set
+Mon Jul 19 15:11:08 2004 (gatto) .Attacks[14].Attack.AttackFailFX = cast_off_electric_fail.animation_fx_set
+Mon Jul 19 15:11:08 2004 (gatto) .Attacks[14].Attack.AttackLoopFX = cast_off_electric_loop.animation_fx_set
+Mon Jul 19 15:11:26 2004 (gatto) .Attacks[15].Attack.AttackBeginFX = cast_off_electric_begin.animation_fx_set
+Mon Jul 19 15:11:26 2004 (gatto) .Attacks[15].Attack.AttackEndFX = cast_off_electric_end.animation_fx_set
+Mon Jul 19 15:11:26 2004 (gatto) .Attacks[15].Attack.AttackFailFX = cast_off_electric_fail.animation_fx_set
+Mon Jul 19 15:11:26 2004 (gatto) .Attacks[15].Attack.AttackLoopFX = cast_off_electric_loop.animation_fx_set
+Mon Jul 19 15:11:51 2004 (gatto) .Attacks[15].Attack.AttackBeginFX = cast_off_fear_begin.animation_fx_set
+Mon Jul 19 15:11:51 2004 (gatto) .Attacks[15].Attack.AttackEndFX = cast_off_fear_end.animation_fx_set
+Mon Jul 19 15:11:51 2004 (gatto) .Attacks[15].Attack.AttackFailFX = cast_off_fear_fail.animation_fx_set
+Mon Jul 19 15:11:51 2004 (gatto) .Attacks[15].Attack.AttackLoopFX = cast_off_fear_loop.animation_fx_set
+Mon Jul 19 15:12:23 2004 (gatto) .Attacks[16].Attack.AttackBeginFX = cast_off_fear_begin.animation_fx_set
+Mon Jul 19 15:12:23 2004 (gatto) .Attacks[16].Attack.AttackEndFX = cast_off_fear_end.animation_fx_set
+Mon Jul 19 15:12:23 2004 (gatto) .Attacks[16].Attack.AttackFailFX = cast_off_fear_fail.animation_fx_set
+Mon Jul 19 15:12:23 2004 (gatto) .Attacks[16].Attack.AttackLoopFX = cast_off_fear_loop.animation_fx_set
+Mon Jul 19 15:12:23 2004 (gatto) .Attacks[17].Attack.AttackBeginFX = cast_off_fear_begin.animation_fx_set
+Mon Jul 19 15:12:23 2004 (gatto) .Attacks[17].Attack.AttackEndFX = cast_off_fear_end.animation_fx_set
+Mon Jul 19 15:12:23 2004 (gatto) .Attacks[17].Attack.AttackFailFX = cast_off_fear_fail.animation_fx_set
+Mon Jul 19 15:12:23 2004 (gatto) .Attacks[17].Attack.AttackLoopFX = cast_off_fear_loop.animation_fx_set
+Mon Jul 19 15:12:52 2004 (gatto) .Attacks[18].Attack.AttackBeginFX = cast_off_fire_begin.animation_fx_set
+Mon Jul 19 15:12:52 2004 (gatto) .Attacks[18].Attack.AttackEndFX = cast_off_fire_end.animation_fx_set
+Mon Jul 19 15:12:52 2004 (gatto) .Attacks[18].Attack.AttackFailFX = cast_off_fire_fail.animation_fx_set
+Mon Jul 19 15:12:52 2004 (gatto) .Attacks[18].Attack.AttackLoopFX = cast_off_fire_loop.animation_fx_set
+Mon Jul 19 15:13:08 2004 (gatto) .Attacks[19].Attack.AttackBeginFX = cast_off_fire_begin.animation_fx_set
+Mon Jul 19 15:13:08 2004 (gatto) .Attacks[19].Attack.AttackEndFX = cast_off_fire_end.animation_fx_set
+Mon Jul 19 15:13:08 2004 (gatto) .Attacks[19].Attack.AttackFailFX = cast_off_fire_fail.animation_fx_set
+Mon Jul 19 15:13:08 2004 (gatto) .Attacks[19].Attack.AttackLoopFX = cast_off_fire_loop.animation_fx_set
+Mon Jul 19 15:13:25 2004 (gatto) .Attacks[20].Attack.AttackBeginFX = cast_off_fire_begin.animation_fx_set
+Mon Jul 19 15:13:25 2004 (gatto) .Attacks[20].Attack.AttackEndFX = cast_off_fire_end.animation_fx_set
+Mon Jul 19 15:13:25 2004 (gatto) .Attacks[20].Attack.AttackFailFX = cast_off_fire_fail.animation_fx_set
+Mon Jul 19 15:13:25 2004 (gatto) .Attacks[20].Attack.AttackLoopFX = cast_off_fire_loop.animation_fx_set
+Mon Jul 19 15:13:50 2004 (gatto) .Attacks[21].Attack.AttackBeginFX = cast_off_hatred_begin.animation_fx_set
+Mon Jul 19 15:13:50 2004 (gatto) .Attacks[21].Attack.AttackEndFX = cast_off_hatred_end.animation_fx_set
+Mon Jul 19 15:13:50 2004 (gatto) .Attacks[21].Attack.AttackFailFX = cast_off_hatred_fail.animation_fx_set
+Mon Jul 19 15:13:50 2004 (gatto) .Attacks[21].Attack.AttackLoopFX = cast_off_hatred_loop.animation_fx_set
+Mon Jul 19 15:16:25 2004 (gatto) .Attacks[22].Attack.AttackBeginFX = cast_off_hatred_begin.animation_fx_set
+Mon Jul 19 15:16:25 2004 (gatto) .Attacks[22].Attack.AttackEndFX = cast_off_hatred_end.animation_fx_set
+Mon Jul 19 15:16:25 2004 (gatto) .Attacks[22].Attack.AttackFailFX = cast_off_hatred_fail.animation_fx_set
+Mon Jul 19 15:16:25 2004 (gatto) .Attacks[22].Attack.AttackLoopFX = cast_off_hatred_loop.animation_fx_set
+Mon Jul 19 15:16:39 2004 (gatto) .Attacks[23].Attack.AttackBeginFX = cast_off_hatred_begin.animation_fx_set
+Mon Jul 19 15:16:39 2004 (gatto) .Attacks[23].Attack.AttackEndFX = cast_off_hatred_end.animation_fx_set
+Mon Jul 19 15:16:39 2004 (gatto) .Attacks[23].Attack.AttackFailFX = cast_off_hatred_fail.animation_fx_set
+Mon Jul 19 15:16:39 2004 (gatto) .Attacks[23].Attack.AttackLoopFX = cast_off_hatred_loop.animation_fx_set
+Mon Jul 19 15:17:04 2004 (gatto) .Attacks[24].Attack.AttackBeginFX = cast_off_sleep_begin.animation_fx_set
+Mon Jul 19 15:17:04 2004 (gatto) .Attacks[24].Attack.AttackEndFX = cast_off_sleep_end.animation_fx_set
+Mon Jul 19 15:17:04 2004 (gatto) .Attacks[24].Attack.AttackFailFX = cast_off_sleep_fail.animation_fx_set
+Mon Jul 19 15:17:04 2004 (gatto) .Attacks[24].Attack.AttackLoopFX = cast_off_sleep_loop.animation_fx_set
+Mon Jul 19 15:17:17 2004 (gatto) .Attacks[25].Attack.AttackBeginFX = cast_off_sleep_begin.animation_fx_set
+Mon Jul 19 15:17:17 2004 (gatto) .Attacks[25].Attack.AttackEndFX = cast_off_sleep_end.animation_fx_set
+Mon Jul 19 15:17:17 2004 (gatto) .Attacks[25].Attack.AttackFailFX = cast_off_sleep_fail.animation_fx_set
+Mon Jul 19 15:17:17 2004 (gatto) .Attacks[25].Attack.AttackLoopFX = cast_off_sleep_loop.animation_fx_set
+Mon Jul 19 15:17:35 2004 (gatto) .Attacks[26].Attack.AttackBeginFX = cast_off_sleep_begin.animation_fx_set
+Mon Jul 19 15:17:35 2004 (gatto) .Attacks[26].Attack.AttackEndFX = cast_off_sleep_end.animation_fx_set
+Mon Jul 19 15:17:35 2004 (gatto) .Attacks[26].Attack.AttackFailFX = cast_off_sleep_fail.animation_fx_set
+Mon Jul 19 15:17:35 2004 (gatto) .Attacks[26].Attack.AttackLoopFX = cast_off_sleep_loop.animation_fx_set
+Mon Jul 19 15:18:06 2004 (gatto) .Attacks[27].Attack.AttackBeginFX = cast_off_piercing_begin.animation_fx_set
+Mon Jul 19 15:18:06 2004 (gatto) .Attacks[27].Attack.AttackEndFX = cast_off_piercing_end.animation_fx_set
+Mon Jul 19 15:18:06 2004 (gatto) .Attacks[27].Attack.AttackFailFX = cast_off_piercing_fail.animation_fx_set
+Mon Jul 19 15:18:06 2004 (gatto) .Attacks[27].Attack.AttackLoopFX = cast_off_piercing_loop.animation_fx_set
+Mon Jul 19 15:18:20 2004 (gatto) .Attacks[28].Attack.AttackBeginFX = cast_off_piercing_begin.animation_fx_set
+Mon Jul 19 15:18:20 2004 (gatto) .Attacks[28].Attack.AttackEndFX = cast_off_piercing_end.animation_fx_set
+Mon Jul 19 15:18:20 2004 (gatto) .Attacks[28].Attack.AttackFailFX = cast_off_piercing_fail.animation_fx_set
+Mon Jul 19 15:18:20 2004 (gatto) .Attacks[28].Attack.AttackLoopFX = cast_off_piercing_loop.animation_fx_set
+Mon Jul 19 15:18:33 2004 (gatto) .Attacks[29].Attack.AttackBeginFX = cast_off_piercing_begin.animation_fx_set
+Mon Jul 19 15:18:33 2004 (gatto) .Attacks[29].Attack.AttackEndFX = cast_off_piercing_end.animation_fx_set
+Mon Jul 19 15:18:33 2004 (gatto) .Attacks[29].Attack.AttackFailFX = cast_off_piercing_fail.animation_fx_set
+Mon Jul 19 15:18:33 2004 (gatto) .Attacks[29].Attack.AttackLoopFX = cast_off_piercing_loop.animation_fx_set
+Mon Jul 19 15:18:59 2004 (gatto) .Attacks[29].Attack.AttackFailFX = cast_off_piercing_fail.animation_fx_set
+Mon Jul 19 15:19:21 2004 (gatto) .Attacks[30].Attack.AttackBeginFX = cast_off_poison_begin.animation_fx_set
+Mon Jul 19 15:19:21 2004 (gatto) .Attacks[30].Attack.AttackEndFX = cast_off_poison_end.animation_fx_set
+Mon Jul 19 15:19:21 2004 (gatto) .Attacks[30].Attack.AttackFailFX = cast_off_poison_fail.animation_fx_set
+Mon Jul 19 15:19:21 2004 (gatto) .Attacks[30].Attack.AttackLoopFX = cast_off_poison_loop.animation_fx_set
+Mon Jul 19 15:19:36 2004 (gatto) .Attacks[31].Attack.AttackBeginFX = cast_off_poison_begin.animation_fx_set
+Mon Jul 19 15:19:36 2004 (gatto) .Attacks[31].Attack.AttackEndFX = cast_off_poison_end.animation_fx_set
+Mon Jul 19 15:19:36 2004 (gatto) .Attacks[31].Attack.AttackFailFX = cast_off_poison_fail.animation_fx_set
+Mon Jul 19 15:19:36 2004 (gatto) .Attacks[31].Attack.AttackLoopFX = cast_off_poison_loop.animation_fx_set
+Mon Jul 19 15:20:02 2004 (gatto) .Attacks[32].Attack.AttackBeginFX = cast_off_poison_begin.animation_fx_set
+Mon Jul 19 15:20:02 2004 (gatto) .Attacks[32].Attack.AttackEndFX = cast_off_poison_end.animation_fx_set
+Mon Jul 19 15:20:02 2004 (gatto) .Attacks[32].Attack.AttackFailFX = cast_off_poison_fail.animation_fx_set
+Mon Jul 19 15:20:02 2004 (gatto) .Attacks[32].Attack.AttackLoopFX = cast_off_poison_loop.animation_fx_set
+Mon Jul 19 15:20:30 2004 (gatto) .Attacks[33].Attack.AttackBeginFX = cast_off_root_begin.animation_fx_set
+Mon Jul 19 15:20:30 2004 (gatto) .Attacks[33].Attack.AttackEndFX = cast_off_root_end.animation_fx_set
+Mon Jul 19 15:20:30 2004 (gatto) .Attacks[33].Attack.AttackFailFX = cast_off_root_fail.animation_fx_set
+Mon Jul 19 15:20:30 2004 (gatto) .Attacks[33].Attack.AttackLoopFX = cast_off_root_loop.animation_fx_set
+Mon Jul 19 15:20:45 2004 (gatto) .Attacks[34].Attack.AttackBeginFX = cast_off_root_begin.animation_fx_set
+Mon Jul 19 15:20:45 2004 (gatto) .Attacks[34].Attack.AttackEndFX = cast_off_root_end.animation_fx_set
+Mon Jul 19 15:20:45 2004 (gatto) .Attacks[34].Attack.AttackFailFX = cast_off_root_fail.animation_fx_set
+Mon Jul 19 15:20:45 2004 (gatto) .Attacks[34].Attack.AttackLoopFX = cast_off_root_loop.animation_fx_set
+Mon Jul 19 15:20:58 2004 (gatto) .Attacks[35].Attack.AttackBeginFX = cast_off_root_begin.animation_fx_set
+Mon Jul 19 15:20:58 2004 (gatto) .Attacks[35].Attack.AttackEndFX = cast_off_root_end.animation_fx_set
+Mon Jul 19 15:20:58 2004 (gatto) .Attacks[35].Attack.AttackFailFX = cast_off_root_fail.animation_fx_set
+Mon Jul 19 15:20:58 2004 (gatto) .Attacks[35].Attack.AttackLoopFX = cast_off_root_loop.animation_fx_set
+Mon Jul 19 15:21:36 2004 (gatto) .Attacks[36].Attack.AttackBeginFX = cast_off_rot_begin.animation_fx_set
+Mon Jul 19 15:21:36 2004 (gatto) .Attacks[36].Attack.AttackEndFX = cast_off_rot_end.animation_fx_set
+Mon Jul 19 15:21:36 2004 (gatto) .Attacks[36].Attack.AttackFailFX = cast_off_rot_fail.animation_fx_set
+Mon Jul 19 15:21:36 2004 (gatto) .Attacks[36].Attack.AttackLoopFX = cast_off_root_lop.animation_fx_set
+Mon Jul 19 15:21:57 2004 (gatto) .Attacks[37].Attack.AttackBeginFX = cast_off_rot_begin.animation_fx_set
+Mon Jul 19 15:21:57 2004 (gatto) .Attacks[37].Attack.AttackEndFX = cast_off_rot_end.animation_fx_set
+Mon Jul 19 15:21:57 2004 (gatto) .Attacks[37].Attack.AttackFailFX = cast_off_rot_fail.animation_fx_set
+Mon Jul 19 15:21:57 2004 (gatto) .Attacks[37].Attack.AttackLoopFX = cast_off_rot_loop.animation_fx_set
+Mon Jul 19 15:22:11 2004 (gatto) .Attacks[38].Attack.AttackBeginFX = cast_off_rot_begin.animation_fx_set
+Mon Jul 19 15:22:11 2004 (gatto) .Attacks[38].Attack.AttackEndFX = cast_off_rot_end.animation_fx_set
+Mon Jul 19 15:22:11 2004 (gatto) .Attacks[38].Attack.AttackFailFX = cast_off_rot_fail.animation_fx_set
+Mon Jul 19 15:22:11 2004 (gatto) .Attacks[38].Attack.AttackLoopFX = cast_off_rot_loop.animation_fx_set
+Mon Jul 19 15:22:38 2004 (gatto) .Attacks[39].Attack.AttackBeginFX = cast_off_shockwave_begin.animation_fx_set
+Mon Jul 19 15:22:38 2004 (gatto) .Attacks[39].Attack.AttackEndFX = cast_off_shockwave_end.animation_fx_set
+Mon Jul 19 15:22:38 2004 (gatto) .Attacks[39].Attack.AttackFailFX = cast_off_shockwave_fail.animation_fx_set
+Mon Jul 19 15:22:38 2004 (gatto) .Attacks[39].Attack.AttackLoopFX = cast_off_shockwave_loop.animation_fx_set
+Mon Jul 19 15:22:51 2004 (gatto) .Attacks[40].Attack.AttackBeginFX = cast_off_shockwave_begin.animation_fx_set
+Mon Jul 19 15:22:51 2004 (gatto) .Attacks[40].Attack.AttackEndFX = cast_off_shockwave_end.animation_fx_set
+Mon Jul 19 15:22:51 2004 (gatto) .Attacks[40].Attack.AttackFailFX = cast_off_shockwave_fail.animation_fx_set
+Mon Jul 19 15:22:51 2004 (gatto) .Attacks[40].Attack.AttackLoopFX = cast_off_shockwave_loop.animation_fx_set
+Mon Jul 19 15:23:07 2004 (gatto) .Attacks[41].Attack.AttackBeginFX = cast_off_shockwave_begin.animation_fx_set
+Mon Jul 19 15:23:07 2004 (gatto) .Attacks[41].Attack.AttackEndFX = cast_off_shockwave_end.animation_fx_set
+Mon Jul 19 15:23:07 2004 (gatto) .Attacks[41].Attack.AttackFailFX = cast_off_shockwave_fail.animation_fx_set
+Mon Jul 19 15:23:07 2004 (gatto) .Attacks[41].Attack.AttackLoopFX = cast_off_shockwave_loop.animation_fx_set
+Mon Jul 19 15:23:34 2004 (gatto) .Attacks[42].Attack.AttackBeginFX = cast_off_sickness_begin.animation_fx_set
+Mon Jul 19 15:23:34 2004 (gatto) .Attacks[42].Attack.AttackEndFX = cast_off_sickness_end.animation_fx_set
+Mon Jul 19 15:23:34 2004 (gatto) .Attacks[42].Attack.AttackFailFX = cast_off_sickness.animation_fx_set
+Mon Jul 19 15:23:34 2004 (gatto) .Attacks[42].Attack.AttackLoopFX = cast_off_sickness_loop.animation_fx_set
+Mon Jul 19 15:23:44 2004 (gatto) .Attacks[42].Attack.AttackFailFX = cast_off_sickness_fail.animation_fx_set
+Mon Jul 19 15:23:58 2004 (gatto) .Attacks[43].Attack.AttackBeginFX = cast_off_sickness_begin.animation_fx_set
+Mon Jul 19 15:23:58 2004 (gatto) .Attacks[43].Attack.AttackEndFX = cast_off_sickness_end.animation_fx_set
+Mon Jul 19 15:23:58 2004 (gatto) .Attacks[43].Attack.AttackFailFX = cast_off_sickness_fail.animation_fx_set
+Mon Jul 19 15:23:58 2004 (gatto) .Attacks[43].Attack.AttackLoopFX = cast_off_sickness_loop.animation_fx_set
+Mon Jul 19 15:24:20 2004 (gatto) .Attacks[44].Attack.AttackBeginFX = cast_off_sickness_begin.animation_fx_set
+Mon Jul 19 15:24:20 2004 (gatto) .Attacks[44].Attack.AttackEndFX = cast_off_sickness_end.animation_fx_set
+Mon Jul 19 15:24:20 2004 (gatto) .Attacks[44].Attack.AttackFailFX = cast_off_sickness_fail.animation_fx_set
+Mon Jul 19 15:24:20 2004 (gatto) .Attacks[44].Attack.AttackLoopFX = cast_off_sickness_loop.animation_fx_set
+Mon Jul 19 15:24:56 2004 (gatto) .Attacks[45].Attack.AttackBeginFX = cast_off_slashing_begin.animation_fx_set
+Mon Jul 19 15:24:56 2004 (gatto) .Attacks[45].Attack.AttackEndFX = cast_off_slashing_end.animation_fx_set
+Mon Jul 19 15:24:56 2004 (gatto) .Attacks[45].Attack.AttackFailFX = cast_off_slashing_fail.animation_fx_set
+Mon Jul 19 15:24:56 2004 (gatto) .Attacks[45].Attack.AttackLoopFX = cast_off_slashing_loop.animation_fx_set
+Mon Jul 19 15:25:10 2004 (gatto) .Attacks[46].Attack.AttackBeginFX = cast_off_slashing_begin.animation_fx_set
+Mon Jul 19 15:25:10 2004 (gatto) .Attacks[46].Attack.AttackEndFX = cast_off_slashing_end.animation_fx_set
+Mon Jul 19 15:25:10 2004 (gatto) .Attacks[46].Attack.AttackFailFX = cast_off_slashing_fail.animation_fx_set
+Mon Jul 19 15:25:10 2004 (gatto) .Attacks[46].Attack.AttackLoopFX = cast_off_slashing_loop.animation_fx_set
+Mon Jul 19 15:25:27 2004 (gatto) .Attacks[47].Attack.AttackBeginFX = cast_off_slashing_begin.animation_fx_set
+Mon Jul 19 15:25:27 2004 (gatto) .Attacks[47].Attack.AttackEndFX = cast_off_slashing_end.animation_fx_set
+Mon Jul 19 15:25:27 2004 (gatto) .Attacks[47].Attack.AttackFailFX = cast_off_slashing_fail.animation_fx_set
+Mon Jul 19 15:25:27 2004 (gatto) .Attacks[47].Attack.AttackLoopFX = cast_off_slashing_loop.animation_fx_set
+Mon Jul 19 15:26:00 2004 (gatto) .Attacks[48].Attack.AttackBeginFX = cast_off_stun_begin.animation_fx_set
+Mon Jul 19 15:26:00 2004 (gatto) .Attacks[48].Attack.AttackEndFX = cast_off_stun_end.animation_fx_set
+Mon Jul 19 15:26:00 2004 (gatto) .Attacks[48].Attack.AttackFailFX = cast_off_stun_fail.animation_fx_set
+Mon Jul 19 15:26:00 2004 (gatto) .Attacks[48].Attack.AttackLoopFX = cast_off_stun_loop.animation_fx_set
+Mon Jul 19 15:26:00 2004 (gatto) .Attacks[49].Attack.AttackBeginFX = cast_off_stun_begin.animation_fx_set
+Mon Jul 19 15:26:00 2004 (gatto) .Attacks[49].Attack.AttackEndFX = cast_off_stun_end.animation_fx_set
+Mon Jul 19 15:26:00 2004 (gatto) .Attacks[49].Attack.AttackFailFX = cast_off_stun_fail.animation_fx_set
+Mon Jul 19 15:26:00 2004 (gatto) .Attacks[49].Attack.AttackLoopFX = cast_off_stun_loop.animation_fx_set
+Mon Jul 19 15:26:15 2004 (gatto) .Attacks[50].Attack.AttackBeginFX = cast_off_stun_begin.animation_fx_set
+Mon Jul 19 15:26:15 2004 (gatto) .Attacks[50].Attack.AttackEndFX = cast_off_stun_end.animation_fx_set
+Mon Jul 19 15:26:15 2004 (gatto) .Attacks[50].Attack.AttackFailFX = cast_off_stun_fail.animation_fx_set
+Mon Jul 19 15:26:15 2004 (gatto) .Attacks[50].Attack.AttackLoopFX = cast_off_stun_loop.animation_fx_set</LOG>
 </FORM>

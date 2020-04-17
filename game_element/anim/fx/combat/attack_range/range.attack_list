@@ -2,11 +2,86 @@
 <FORM Revision="$Revision: 1.3 $" State="modified">
   <STRUCT>
     <ARRAY Name="Attacks">
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Range"/>
+          <ATOM Name="RangeWeaponType" Value="Generic"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ImpactFX" Value="range_impact_generic.animation_fx_set"/>
+          <ATOM Name="IsImpactLocalised" Value="true"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Range"/>
+          <ATOM Name="RangeWeaponType" Value="Gatlin"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ImpactFX" Value="range_impact_gatlin.animation_fx_set"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Range"/>
+          <ATOM Name="RangeWeaponType" Value="Missile"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Bomb"/>
+          <ATOM Name="PlayImpactFXOnlyOnMainTarget" Value="true"/>
+          <ATOM Name="ProjectileFX" Value="range_projectile_missile.animation_fx_set"/>
+          <ATOM Name="ImpactFX" Value="range_impact_missile.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
     </ARRAY>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
-  <LOG></LOG>
+  <LOG>Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackBeginFX = cast_off_begin_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackEndFX = cast_off_end_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackFailFX = cast_off_fail_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackLoopFX = cast_off_loop_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ImpactFX = acid_impact.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileDelay = 0.14
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileFX = magic_projectile_acid_bomb.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileMode = Bomb
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.AttackType = Magic
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.SpellID = Acid
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.SpellMode = Bomb
+Fri Feb 06 12:19:49 2004 (vizerie) formName Resized = 60
+Mon Feb 09 10:59:27 2004 (vizerie) .Attacks[0].Attack.PlayImpactAnim = false
+Mon Feb 09 15:21:20 2004 (vizerie) .Attacks[0].Attack.IsImpactLocalised = true
+Mon Feb 09 15:21:20 2004 (vizerie) .Attacks[0].ID.AttackType = Melee
+Mon Feb 09 15:21:20 2004 (vizerie) formName Resized = 1
+Mon Feb 09 15:47:10 2004 (vizerie) .Attacks[0].Attack.ImpactFX = range_impact_generic.animation_fx
+Mon Feb 09 15:47:10 2004 (vizerie) .Attacks[0].ID.AttackType = Range
+Mon Feb 09 15:47:10 2004 (vizerie) formName Resized = 3
+Mon Feb 09 15:54:24 2004 (vizerie) .Attacks[1].ID.AttackType = Range
+Mon Feb 09 15:54:24 2004 (vizerie) .Attacks[1].ID.RangeWeaponType = Gatlin
+Mon Feb 09 15:56:18 2004 (vizerie) .Attacks[1].Attack.ImpactFX = range_impact_gatlin.animation_fx
+Mon Feb 09 15:56:18 2004 (vizerie) .Attacks[2].Attack.ImpactFX = range_impact_missile.animation_fx
+Mon Feb 09 15:56:18 2004 (vizerie) .Attacks[2].Attack.PlayImpactFXOnlyOnMainTarget = true
+Mon Feb 09 15:56:18 2004 (vizerie) .Attacks[2].Attack.ProjectileFX = range_projectile_missile.animation_fx
+Mon Feb 09 15:56:18 2004 (vizerie) .Attacks[2].Attack.ProjectileMode = Chain
+Mon Feb 09 15:56:18 2004 (vizerie) .Attacks[2].ID.AttackType = Range
+Mon Feb 09 15:56:18 2004 (vizerie) .Attacks[2].ID.RangeWeaponType = Missile
+Tue Feb 10 15:00:01 2004 (vizerie) .Attacks[0].Attack.ProjectileMode = Spray
+Tue Feb 10 15:00:01 2004 (vizerie) .Attacks[1].Attack.ProjectileMode = Spray
+Tue Feb 10 15:00:01 2004 (vizerie) .Attacks[2].Attack.ProjectileMode = Spray
+Tue Feb 10 15:42:31 2004 (vizerie) .Attacks[0].Attack.ImpactFX = range_impact_generic.animation_fx_set
+Tue Feb 10 15:42:31 2004 (vizerie) .Attacks[1].Attack.ImpactFX = range_impact_gatlin.animation_fx_set
+Tue Feb 10 15:42:31 2004 (vizerie) .Attacks[2].Attack.ImpactFX = range_impact_missile.animation_fx_set
+Tue Feb 10 15:42:31 2004 (vizerie) .Attacks[2].Attack.ProjectileFX = range_projectile_missile.animation_fx_set
+Tue Feb 10 18:27:36 2004 (vizerie) .Attacks[2].Attack.DefaultAimingPoint.StickMode = UserBone
+Tue Feb 10 18:27:36 2004 (vizerie) .Attacks[2].Attack.DefaultAimingPoint.UserBone = Bip01 Head
+Wed Apr 21 18:53:36 2004 (nouveau) .Attacks[0].ID.RangeWeaponType = 0
+Wed Apr 21 18:54:55 2004 (nouveau) .Attacks[0].ID.RangeWeaponType = Generic</LOG>
 </FORM>

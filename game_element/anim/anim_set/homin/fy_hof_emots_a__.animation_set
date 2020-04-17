@@ -14,10 +14,1509 @@
     <STRUCT Name="run">
       <ATOM Name="LodCharacterAnimation" Value="FY_HOF_A_course.anim"/>
     </STRUCT>
+    <STRUCT Name="afk">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_AFK.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="agree">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_oui.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="alert">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Alert.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="angry">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Angry.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="apologize">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Sorry.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="applaud">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_applaudire.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="ashamed_disgusted_desillusioned_loathing_pitying">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_ashemed.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="blush">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Blush.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="bow">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Bow.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="brave_great">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Heroic.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="burp">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_burp.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="bye">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Bye.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="calm">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Calm.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cheer">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Cheer.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cold_contemptuous_disdainful_haughty_megalomaniac_obnoxious">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Cold.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cry">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Cry.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="curious">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Puzzled.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="dance">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_dance.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="disagree">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_non.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="discreet_hardsilence">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Discreet.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="doubtful">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_doubtful.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="dramatic">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_dramatic.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="drunk">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_drunk.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="exercise">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Exercise.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="FBT">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_BETA_testeur.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="fearful_insecure_nervous_panic_scared">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_fearful.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firm">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_firm.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="follow">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_folow.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="forgive">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Sorry.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="gesture">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_gesture.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="giggle">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Giggle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="go_away">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Laisse_moi.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="guilty">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_guilty.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="heroic">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Heroic.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="hungry">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_hungry.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="impatient">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Impatient.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="indifferent_neutral_noclue_resigned">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Indifferent.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="interested">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_interested.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="kiss">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kiss.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="kneel">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="laugh">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Rofl.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="lol">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Rofl.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="none">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_non.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="over">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Over.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="petulant">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_petulant.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="playful">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_playfull.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="point">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Pointer.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="pointback">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_pointback.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="pointleft">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_pointleft.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="pointright">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_pointright.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="pompous">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Pompous.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="praying">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_praying.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="puzzled_thoughtful_troubled">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Puzzled.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="relaxed">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Relaxed.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="relieved_sigh">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Relieved.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="revengeful_spitful">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_revengeful.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="rice">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_rice.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="righteous">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_righteous.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="roar">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Roar.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="sad">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_shoote_poussiere.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="serious">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_serious.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="shifty">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_shifty.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="shocked">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Shocked.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="silly">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_silly.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="sincerely">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_sincerely.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="sleepy_yawn_tired">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_sleepy.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="smack">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_smack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="smile">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Smile.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="squeamish">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_squeamish.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="surprised">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Surprised.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="suspicious">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Suspicious.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="thank">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Bow.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="thirsty">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_thirsty.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="unhappy">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Veto.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="unwilling">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_unwilling.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="victory">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_victory.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="wait">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Impatient.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="wave">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Bow.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="wicked">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_Wicked.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="youandme">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emote_youandme.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_01">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkA.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkA.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_02">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkB.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkB.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_03">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkC.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkC.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_04">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkD.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkD.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_05">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkE.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkE.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_06">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkF.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkF.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_07">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkG.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkG.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_08">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkH.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkH.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_09">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkI.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkI.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_10">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkJ.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkJ.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_11">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkK.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkK.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_12">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkL.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkL.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_13">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkM.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkM.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_14">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkN.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkN.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_15">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkO.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkO.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_16">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkP.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkP.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_17">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkQ.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkQ.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_18">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkR.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkR.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_19">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkS.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkS.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_20">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkA.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkA.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_21">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkA.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkA.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_22">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkA.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkA.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_23">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkA.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkA.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_24">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkA.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkA.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_25">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkA.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkA.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_26">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkA.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkA.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_27">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkA.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkA.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_28">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkA.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkA.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_29">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkA.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkA.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="firework_30">
+      <ATOM Name="Display Objects" Value="false"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_Kneel.anim"/>
+          <ATOM Name="fx" Value="fireworkA.ps"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="fireworkA.ps"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="SpawnPermanent"/>
+              </STRUCT>
+              <ATOM Name="RepeatMode" Value="Respawn"/>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
-  <LOG></LOG>
+  <LOG>Thu Dec 19 10:24:18 2002 (beaume) formName Resized = 0
+Thu Dec 19 10:32:24 2002 (beaume) .backward.animations[0].filename = CA_HOF_marche_arriere.anim
+Thu Dec 19 10:32:24 2002 (beaume) .death.animations[0].filename = CA_HOF_mort.anim
+Thu Dec 19 10:32:24 2002 (beaume) .death_idle.animations[0].filename = CA_HOF_mort_idle.anim
+Thu Dec 19 10:32:24 2002 (beaume) .idle.animations[0].filename = CA_HOF_idle.anim
+Thu Dec 19 10:32:24 2002 (beaume) .idle.animations[1].filename = CA_HOF_idle_regarde_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .idle.animations[2].filename = CA_HOF_idle_regarde_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .run.animations[0].filename = CA_HOF_course.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left.animations[0].filename = CA_HOF_tourne_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left.animations[1].filename = CA_HOF_demitour_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left_to_backward.animations[0].filename = CA_HOF_tourne_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left_to_backward.animations[1].filename = CA_HOF_demitour_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left_to_walk.animations[0].filename = CA_HOF_tourne_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left_to_walk.animations[1].filename = CA_HOF_demitour_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right.animations[0].filename = CA_HOF_tourne_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right.animations[1].filename = CA_HOF_demitour_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right_to_backward.animations[0].filename = CA_HOF_tourne_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right_to_backward.animations[1].filename = CA_HOF_demitour_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right_to_walk.animations[0].filename = CA_HOF_tourne_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right_to_walk.animations[1].filename = CA_HOF_demitour_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .walk.animations[0].filename = CA_HOF_marche.anim
+Thu Dec 19 10:32:24 2002 (beaume) formName Resized = 1
+Fri Apr 18 18:18:17 2003 (arnaudb) formName Resized = 0
+Fri Apr 18 18:24:32 2003 (arnaudb) .death.LodCharacterAnimation = FY_HOF_A_mort.anim
+Fri Apr 18 18:24:32 2003 (arnaudb) .death_idle.LodCharacterAnimation = FY_HOF_A_mort_idle.anim
+Fri Apr 18 18:24:32 2003 (arnaudb) .idle.LodCharacterAnimation = FY_HOF_A_idle.anim
+Fri Apr 18 18:24:32 2003 (arnaudb) .run.LodCharacterAnimation = FY_HOF_A_course.anim
+Fri Apr 18 18:24:32 2003 (arnaudb) .walk.LodCharacterAnimation = FY_HOF_A_marche.anim
+Fri Apr 18 20:00:36 2003 (berenguier) .walk_to_run.LodCharacterAnimation = FY_HOF_A_marche.anim
+Mon Sep 15 14:52:30 2003 (beaume) .curative_cast_begin.animations[0].filename = FY_HOM_Offensive_Init.anim
+Mon Sep 15 14:52:30 2003 (beaume) .curative_cast_fail.animations[0].filename = FY_HOM_Offensive_End_Echec.anim
+Mon Sep 15 14:52:30 2003 (beaume) .curative_cast_fumble.animations[0].filename = FY_HOM_Offensive_End_Fumble.anim
+Mon Sep 15 14:52:30 2003 (beaume) .curative_cast_link.animations[0].filename = FY_HOM_Offensive_End_Ok_link.anim
+Mon Sep 15 14:52:30 2003 (beaume) .curative_cast_loop.animations[0].filename = FY_HOM_Offensive_Loop.anim
+Mon Sep 15 14:52:30 2003 (beaume) .curative_cast_success.animations[0].filename = FY_HOM_Offensive_End_Ok.anim
+Mon Sep 15 14:52:30 2003 (beaume) .mixed_cast_begin.animations[0].filename = FY_HOM_Offensive_Init.anim
+Mon Sep 15 14:52:30 2003 (beaume) .mixed_cast_fail.animations[0].filename = FY_HOM_Offensive_End_Echec.anim
+Mon Sep 15 14:52:30 2003 (beaume) .mixed_cast_fumble.animations[0].filename = FY_HOM_Offensive_End_Fumble.anim
+Mon Sep 15 14:52:30 2003 (beaume) .mixed_cast_link.animations[0].filename = FY_HOM_Offensive_End_Ok_link.anim
+Mon Sep 15 14:52:30 2003 (beaume) .mixed_cast_loop.animations[0].filename = FY_HOM_Offensive_Loop.anim
+Mon Sep 15 14:52:30 2003 (beaume) .mixed_cast_success.animations[0].filename = FY_HOM_Offensive_End_Ok.anim
+Mon Sep 15 14:52:30 2003 (beaume) .offensive_cast_begin.animations[0].filename = FY_HOM_Offensive_Init.anim
+Mon Sep 15 14:52:30 2003 (beaume) .offensive_cast_fail.animations[0].filename = FY_HOM_Offensive_End_Echec.anim
+Mon Sep 15 14:52:30 2003 (beaume) .offensive_cast_fumble.animations[0].filename = FY_HOM_Offensive_End_Fumble.anim
+Mon Sep 15 14:52:30 2003 (beaume) .offensive_cast_link.animations[0].filename = FY_HOM_Offensive_End_Ok_link.anim
+Mon Sep 15 14:52:30 2003 (beaume) .offensive_cast_loop.animations[0].filename = FY_HOM_Offensive_Loop.anim
+Mon Sep 15 14:52:30 2003 (beaume) .offensive_cast_success.animations[0].filename = FY_HOM_Offensive_End_Ok.anim
+Mon Sep 15 14:52:30 2003 (beaume) formName Resized = 1
+Wed Sep 24 17:52:03 2003 (beaume) .offensive_cast_begin.animations[0].filename = FY_HOF_off_init.anim
+Wed Sep 24 17:52:03 2003 (beaume) .offensive_cast_fail.animations[0].filename = FY_HOF_off_end_echec.anim
+Wed Sep 24 17:52:03 2003 (beaume) .offensive_cast_fumble.animations[0].filename = FY_HOF_off_end_fumble.anim
+Wed Sep 24 17:52:03 2003 (beaume) .offensive_cast_link.animations[0].filename = FY_HOF_off_end_ok_link.anim
+Wed Sep 24 17:52:03 2003 (beaume) .offensive_cast_loop.animations[0].filename = FY_HOF_co_mag_off_loop.anim
+Wed Sep 24 17:52:03 2003 (beaume) .offensive_cast_success.animations[0].filename = FY_HOF_off_end_ok.anim
+Wed Sep 24 18:10:10 2003 (beaume) .curative_cast_begin.animations[0].filename = FY_HOF_cur_Init.anim
+Wed Sep 24 18:10:10 2003 (beaume) .curative_cast_fail.animations[0].filename = FY_HOF_cur_End_Echec.anim
+Wed Sep 24 18:10:10 2003 (beaume) .curative_cast_fumble.animations[0].filename = FY_HOF_cur_End_Fumble.anim
+Wed Sep 24 18:10:10 2003 (beaume) .curative_cast_link.animations[0].filename = FY_HOF_cur_end_ok_link.anim
+Wed Sep 24 18:10:10 2003 (beaume) .curative_cast_loop.animations[0].filename = FY_HOF_Co_magie_cur_Loop.anim
+Wed Sep 24 18:10:10 2003 (beaume) .curative_cast_success.animations[0].filename = FY_HOF_cur_End_Ok.anim
+Wed Sep 24 18:12:22 2003 (beaume) .mixed_cast_begin.animations[0].filename = FY_HOF_mix_init.anim
+Wed Sep 24 18:12:22 2003 (beaume) .mixed_cast_fail.animations[0].filename = FY_HOF_mix_end_echec.anim
+Wed Sep 24 18:12:22 2003 (beaume) .mixed_cast_fumble.animations[0].filename = FY_HOF_mix_end_fumble.anim
+Wed Sep 24 18:12:22 2003 (beaume) .mixed_cast_link.animations[0].filename = FY_HOF_mix_end_ok_link.anim
+Wed Sep 24 18:12:22 2003 (beaume) .mixed_cast_loop.animations[0].filename = FY_HOF_co_mag_mix_loop.anim
+Wed Sep 24 18:12:22 2003 (beaume) .mixed_cast_success.animations[0].filename = FY_HOF_mix_end_ok.anim
+Mon Oct 27 12:10:47 2003 (beaume) formName Resized = 1
+Mon Oct 27 12:19:58 2003 (beaume) .offensive_cast_begin.animations[0].filename = FY_HOF_maoff_Init.anim
+Mon Oct 27 12:19:58 2003 (beaume) .offensive_cast_loop.animations[0].filename = FY_HOF_maoff_Loop.anim
+Mon Oct 27 12:19:58 2003 (beaume) .offensive_cast_success.animations[0].filename = FY_HOF_maoff_End.anim
+Mon Oct 27 13:58:56 2003 (beaume) formName Resized = 1
+Mon Oct 27 14:12:50 2003 (beaume) .curative_cast_begin.animations[0].filename = FY_HOF_macur_init.anim
+Mon Oct 27 14:12:50 2003 (beaume) .curative_cast_loop.animations[0].filename = FY_HOF_macur_loop.anim
+Mon Oct 27 14:12:50 2003 (beaume) .curative_cast_success.animations[0].filename = FY_HOF_macur_end.anim
+Mon Oct 27 14:12:50 2003 (beaume) .mixed_cast_begin.animations[0].filename = FY_HOF_mamix_init.anim
+Mon Oct 27 14:12:50 2003 (beaume) .mixed_cast_loop.animations[0].filename = FY_HOF_mamix_loop.anim
+Mon Oct 27 14:12:50 2003 (beaume) .mixed_cast_success.animations[0].filename = FY_HOF_mamix_end.anim
+Thu Dec 04 14:06:02 2003 (beaume) .use_begin.animations[0].filename = FY_HOF_quartering_init.anim
+Thu Dec 04 14:06:02 2003 (beaume) .use_end.animations[0].filename = FY_HOF_quartering_end.anim
+Thu Dec 04 14:06:02 2003 (beaume) .use_loop.animations[0].filename = FY_HOF_quartering_loop.anim
+
+Thu Dec 04 14:06:02 2003 (beaume) formName Resized = 1
+Thu Dec 18 15:43:56 2003 (beaume) .defaultHeadControl = false
+Wed Dec 31 14:09:27 2003 (beaume) .care_begin.animations[0].filename = FY_HOF_Pioche_Init.anim
+Wed Dec 31 14:09:27 2003 (beaume) .care_end.animations[0].filename = FY_HOF_Pioche_end.anim
+Wed Dec 31 14:09:27 2003 (beaume) .care_loop.animations[0].filename = FY_HOF_Pioche_Soins_loop.anim
+Wed Dec 31 14:09:27 2003 (beaume) .prospecting_begin.animations[0].filename = FY_HOF_Pioche_Prospection_Init.anim
+Wed Dec 31 14:09:27 2003 (beaume) .prospecting_end.animations[0].filename = FY_HOF_Pioche_Prospection_End.anim
+Wed Dec 31 14:09:27 2003 (beaume) .prospecting_loop.animations[0].filename = FY_HOF_Pioche_Prospection_Loop.anim
+Wed Dec 31 14:09:27 2003 (beaume) formName Resized = 1
+Wed Dec 31 14:27:09 2003 (gatto) .care_loop.animations[0].fx_set.FX0.PSName = FOR_cure.ps
+Wed Dec 31 14:27:09 2003 (gatto) .care_loop.animations[0].fx_set.FX0.StickMode.StickMode = UserBone
+Wed Dec 31 14:27:09 2003 (gatto) .care_loop.animations[0].fx_set.FX0.StickMode.UserBone = box_arme
+Wed Jan 07 17:41:11 2004 (vizerie) .offensive_cast_fail.animations[0].filename = fy_hof_off_end_echec.anim
+Wed Jan 07 17:41:11 2004 (vizerie) formName Resized = 1
+Wed Jan 07 17:42:18 2004 (vizerie) .curative_cast_fail.animations[0].filename = fy_hof_cur_end_echec.anim
+Wed Jan 07 17:42:18 2004 (vizerie) .mixed_cast_fail.animations[0].filename = fy_hof_mix_end_echec.anim
+Wed Jan 07 17:42:18 2004 (vizerie) formName Resized = 1
+Mon Jan 12 17:02:26 2004 (beaume) .curative_cast_fail.animations[0].filename = FY_HOF_macur_fail.anim
+Mon Jan 12 17:02:26 2004 (beaume) .offensive_cast_fail.animations[0].filename = FY_HOF_maoff_fail.anim
+Fri Jan 16 14:23:10 2004 (beaume) .care_begin.animations[0].filename = FY_HOM_Pioche_Init.anim
+Fri Jan 16 14:23:10 2004 (beaume) .care_end.animations[0].filename = FY_HOM_Pioche_end.anim
+Fri Jan 16 14:23:10 2004 (beaume) .care_loop.animations[0].filename = FY_HOM_Pioche_Soins_loop.anim
+Fri Jan 16 14:23:10 2004 (beaume) .prospecting_begin.animations[0].filename = FY_HOM_Pioche_Prospection_Init.anim
+Fri Jan 16 14:23:10 2004 (beaume) .prospecting_end.animations[0].filename = FY_HOM_Pioche_Prospection_End.anim
+Fri Jan 16 14:23:10 2004 (beaume) .prospecting_loop.animations[0].filename = FY_HOM_Pioche_Prospection_Loop.anim
+Mon Jan 19 14:47:06 2004 (beaume) .loot_begin.animations[0].filename = FY_HOF_quartering_init.anim
+Mon Jan 19 14:47:06 2004 (beaume) .loot_end.animations[0].filename = FY_HOF_quartering_end.anim
+Mon Jan 19 14:47:06 2004 (beaume) .loot_loop.animations[0].filename = FY_HOF_quartering_loop.anim
+Mon Jan 19 14:47:06 2004 (beaume) formName Resized = 0
+Mon Jan 19 15:10:48 2004 (beaume) .care_begin.animations[0].filename = FY_HOF_Pioche_Init.anim
+Mon Jan 19 15:10:48 2004 (beaume) .care_end.animations[0].filename = FY_HOF_Pioche_end.anim
+Mon Jan 19 15:10:48 2004 (beaume) .care_loop.animations[0].filename = FY_HOF_Pioche_Soins_loop.anim
+Mon Jan 19 15:10:48 2004 (beaume) .prospecting_begin.animations[0].filename = FY_HOF_Pioche_Prospection_Init.anim
+Mon Jan 19 15:10:48 2004 (beaume) .prospecting_end.animations[0].filename = FY_HOF_Pioche_Prospection_End.anim
+Mon Jan 19 15:10:48 2004 (beaume) .prospecting_loop.animations[0].filename = FY_HOF_Pioche_Prospection_Loop.anim
+Thu Feb 19 13:58:37 2004 (beaume) formName Resized = 0
+Thu Feb 19 14:02:11 2004 (beaume) Form Parents = 
+Thu Feb 19 14:02:11 2004 (beaume) formName Resized = 0
+Thu Feb 19 14:14:34 2004 (beaume) .afk.animations[0].filename = FY_HOF_Emot_A_AFK.anim
+Thu Feb 19 14:14:34 2004 (beaume) .agree.animations[0].filename = FY_HOF_Emot_A_oui.anim
+Thu Feb 19 14:14:34 2004 (beaume) .angry.animations[0].filename = FY_HOF_Emot_A_Angry.anim
+Thu Feb 19 14:14:34 2004 (beaume) .apologize.animations[0].filename = FY_HOF_Emot_A_sorry.anim
+Thu Feb 19 14:14:34 2004 (beaume) .blush.animations[0].filename = FY_HOF_Emot_A_Blush.anim
+Thu Feb 19 14:14:34 2004 (beaume) .bow.animations[0].filename = FY_HOF_Emot_A_Bow.anim
+Thu Feb 19 14:14:34 2004 (beaume) .bye.animations[0].filename = FY_HOF_Emot_A_Bye.anim
+Thu Feb 19 14:14:34 2004 (beaume) .calm.animations[0].filename = FY_HOF_Emot_A_Calm.anim
+Thu Feb 19 14:14:34 2004 (beaume) .cheer.animations[0].filename = FY_HOF_Emot_A_Cheer.anim
+Thu Feb 19 14:14:34 2004 (beaume) .cry.animations[0].filename = FY_HOF_Emot_A_Cry.anim
+Thu Feb 19 14:14:34 2004 (beaume) .dance.animations[0].filename = FY_HOF_Emot_A_dance.anim
+Thu Feb 19 14:14:34 2004 (beaume) .disagree.animations[0].filename = FY_HOF_Emot_A_non.anim
+Thu Feb 19 14:14:34 2004 (beaume) .follow.animations[0].filename = FY_HOF_Emot_A_folow.anim
+Thu Feb 19 14:14:34 2004 (beaume) .gesture.animations[0].filename = FY_HOF_Emot_A_gesture.anim
+Thu Feb 19 14:14:34 2004 (beaume) .giggle.animations[0].filename = FY_HOF_Emot_A_Giggle.anim
+Thu Feb 19 14:14:34 2004 (beaume) .go_away.animations[0].filename = FY_HOF_Emot_A_Laisse_moi.anim
+Thu Feb 19 14:14:34 2004 (beaume) .impatient.animations[0].filename = FY_HOF_Emot_A_Impatient.anim
+Thu Feb 19 14:14:34 2004 (beaume) .kiss.animations[0].filename = FY_HOF_Emot_A_Kiss.anim
+Thu Feb 19 14:14:34 2004 (beaume) .kneel.animations[0].filename = FY_HOF_Emot_A_Kneel.anim
+Thu Feb 19 14:14:34 2004 (beaume) .laugh.animations[0].filename = FY_HOF_Emot_A_Rofl.anim
+Thu Feb 19 14:14:34 2004 (beaume) .lol.animations[0].filename = FY_HOF_Emot_A_Rofl.anim
+Thu Feb 19 14:14:34 2004 (beaume) .point.animations[0].filename = FY_HOF_Emot_A_Pointer.anim
+Thu Feb 19 14:14:34 2004 (beaume) .roar.animations[0].filename = FY_HOF_Emot_A_Roar.anim
+Thu Feb 19 14:14:34 2004 (beaume) .sad.animations[0].filename = FY_HOF_Emot_A_shootpoussiere.anim
+Thu Feb 19 14:14:34 2004 (beaume) .smile.animations[0].filename = FY_HOF_Emot_A_smile.anim
+Thu Feb 19 14:14:34 2004 (beaume) .thank.animations[0].filename = FY_HOF_Emot_A_Bow.anim
+Thu Feb 19 14:14:34 2004 (beaume) .unhappy.animations[0].filename = FY_HOF_Emot_A_veto.anim
+Thu Feb 19 14:14:34 2004 (beaume) .victory.animations[0].filename = FY_HOF_Emot_A_Victory.anim
+Thu Feb 19 14:14:34 2004 (beaume) .wave.animations[0].filename = FY_HOF_Emot_A_Bow.anim
+Thu Feb 19 14:14:34 2004 (beaume) formName Resized = 1
+Fri Sep 03 16:24:37 2004 (beaume) .FBT.animations[0].filename = FY_HOF_Emote_BETA_testeur.anim
+Fri Sep 03 16:24:37 2004 (beaume) .afk.animations[0].filename = FY_HOF_Emot_AFK.anim
+Fri Sep 03 16:24:37 2004 (beaume) .agree.animations[0].filename = FY_HOF_oui.anim
+Fri Sep 03 16:24:37 2004 (beaume) .alert.animations[0].filename = FY_HOF_Emote_Alert.anim
+Fri Sep 03 16:24:37 2004 (beaume) .angry.animations[0].filename = FY_HOF_Emot_Angry.anim
+Fri Sep 03 16:24:37 2004 (beaume) .apologize.animations[0].filename = FY_HOF_Emote_Sorry.anim
+Fri Sep 03 16:24:37 2004 (beaume) .applaud.animations[0].filename = FY_HOF_applaudire.anim
+Fri Sep 03 16:24:37 2004 (beaume) .ashamed_disgusted_desillusioned_loathing_pitying.animations[0].filename = FY_HOF_Emote_ashemed.anim
+Fri Sep 03 16:24:37 2004 (beaume) .blush.animations[0].filename = FY_HOF_Emot_Blush.anim
+Fri Sep 03 16:24:37 2004 (beaume) .bow.animations[0].filename = FY_HOF_Emot_Bow.anim
+Fri Sep 03 16:24:37 2004 (beaume) .brave_great.animations[0].filename = FY_HOF_Emote_Heroic.anim
+Fri Sep 03 16:24:37 2004 (beaume) .burp.animations[0].filename = FY_HOF_Emote_burp.anim
+Fri Sep 03 16:24:37 2004 (beaume) .bye.animations[0].filename = FY_HOF_Emot_Bye.anim
+Fri Sep 03 16:24:37 2004 (beaume) .calm.animations[0].filename = FY_HOF_Emot_Calm.anim
+Fri Sep 03 16:24:37 2004 (beaume) .calm.animations[1].filename = FY_HOF_Emote_Calm.anim
+Fri Sep 03 16:24:37 2004 (beaume) .cheer.animations[0].filename = FY_HOF_Emot_Cheer.anim
+Fri Sep 03 16:24:37 2004 (beaume) .cold_contemptuous_disdainful_haughty_megalomaniac_obnoxious.animations[0].filename = FY_HOF_Emote_Cold.anim
+Fri Sep 03 16:24:37 2004 (beaume) .cry.animations[0].filename = FY_HOF_Emot_Cry.anim
+Fri Sep 03 16:24:37 2004 (beaume) .curious.animations[0].filename = FY_HOF_Emote_Puzzled.anim
+Fri Sep 03 16:24:37 2004 (beaume) .dance.animations[0].filename = FY_HOF_Emot_dance.anim
+Fri Sep 03 16:24:37 2004 (beaume) .disagree.animations[0].filename = FY_HOF_non.anim
+Fri Sep 03 16:24:37 2004 (beaume) .discreet_hardsilence.animations[0].filename = FY_HOF_Emote_Discreet.anim
+Fri Sep 03 16:24:37 2004 (beaume) .doubtful.animations[0].filename = FY_HOF_Emote_doubtful.anim
+Fri Sep 03 16:24:37 2004 (beaume) .dramatic.animations[0].filename = FY_HOF_Emote_dramatic.anim
+Fri Sep 03 16:24:37 2004 (beaume) .drunk.animations[0].filename = FY_HOF_Emote_drunk.anim
+Fri Sep 03 16:24:37 2004 (beaume) .exercise.animations[0].filename = FY_HOF_Emote_Exercise.anim
+Fri Sep 03 16:24:37 2004 (beaume) .fearful_insecure_nervous_panic_scared.animations[0].filename = FY_HOF_Emote_fearful.anim
+Fri Sep 03 16:24:37 2004 (beaume) .firm.animations[0].filename = FY_HOF_Emote_firm.anim
+Fri Sep 03 16:24:37 2004 (beaume) .follow.animations[0].filename = FY_HOF_Emot_folow.anim
+Fri Sep 03 16:24:37 2004 (beaume) .forgive.animations[0].filename = FY_HOF_Emote_Sorry.anim
+Fri Sep 03 16:24:37 2004 (beaume) .gesture.animations[0].filename = FY_HOF_Emot_gesture.anim
+Fri Sep 03 16:24:37 2004 (beaume) .giggle.animations[0].filename = FY_HOF_Emot_Giggle.anim
+Fri Sep 03 16:24:37 2004 (beaume) .go_away.animations[0].filename = FY_HOF_Emot_Laisse_moi.anim
+Fri Sep 03 16:24:37 2004 (beaume) .guilty.animations[0].filename = FY_HOF_Emote_guilty.anim
+Fri Sep 03 16:24:37 2004 (beaume) .heroic.animations[0].filename = FY_HOF_Emote_Heroic.anim
+Fri Sep 03 16:24:37 2004 (beaume) .hungry.animations[0].filename = FY_HOF_Emote_hungry.anim
+Fri Sep 03 16:24:37 2004 (beaume) .impatient.animations[0].filename = FY_HOF_Emot_Impatient.anim
+Fri Sep 03 16:24:37 2004 (beaume) .indifferent_neutral_noclue_resigned.animations[0].filename = FY_HOF_Emote_Indifferent.anim
+Fri Sep 03 16:24:37 2004 (beaume) .interested.animations[0].filename = FY_HOF_Emote_interested.anim
+Fri Sep 03 16:24:37 2004 (beaume) .kiss.animations[0].filename = FY_HOF_Emot_Kiss.anim
+Fri Sep 03 16:24:37 2004 (beaume) .kneel.animations[0].filename = FY_HOF_Emot_Kneel.anim
+Fri Sep 03 16:24:37 2004 (beaume) .laugh.animations[0].filename = FY_HOF_Emot_Rofl.anim
+Fri Sep 03 16:24:37 2004 (beaume) .lol.animations[0].filename = FY_HOF_Emot_Rofl.anim
+Fri Sep 03 16:24:37 2004 (beaume) .none.animations[0].filename = FY_HOF_non.anim
+Fri Sep 03 16:24:37 2004 (beaume) .over.animations[0].filename = FY_HOF_Emote_Over.anim
+Fri Sep 03 16:24:37 2004 (beaume) .petulant.animations[0].filename = FY_HOF_Emote_petulant.anim
+Fri Sep 03 16:24:37 2004 (beaume) .playful.animations[0].filename = FY_HOF_Emote_playfull.anim
+Fri Sep 03 16:24:37 2004 (beaume) .point.animations[0].filename = FY_HOF_Emot_Pointer.anim
+Fri Sep 03 16:24:37 2004 (beaume) formName Resized = 1
+Fri Sep 03 16:43:28 2004 (beaume) .pointback.animations[0].filename = FY_HOF_Emote_pointback.anim
+Fri Sep 03 16:43:28 2004 (beaume) .pointleft.animations[0].filename = FY_HOF_Emote_pointleft.anim
+Fri Sep 03 16:43:28 2004 (beaume) .pointright.animations[0].filename = FY_HOF_Emote_pointright.anim
+Fri Sep 03 16:43:28 2004 (beaume) .pompous.animations[0].filename = FY_HOF_Emote_Pompous.anim
+Fri Sep 03 16:43:28 2004 (beaume) .praying.animations[0].filename = FY_HOF_Emote_praying.anim
+Fri Sep 03 16:43:28 2004 (beaume) .puzzled_thoughtful_troubled.animations[0].filename = FY_HOF_Emote_Puzzled.anim
+Fri Sep 03 16:43:28 2004 (beaume) .relaxed.animations[0].filename = FY_HOF_Emote_Relaxed.anim
+Fri Sep 03 16:43:28 2004 (beaume) .relieved_sigh.animations[0].filename = FY_HOF_Emote_Relieved.anim
+Fri Sep 03 16:43:28 2004 (beaume) .revengeful_spitful.animations[0].filename = FY_HOF_Emote_revengeful.anim
+Fri Sep 03 16:43:28 2004 (beaume) .rice.animations[0].filename = FY_HOF_Emote_rice.anim
+Fri Sep 03 16:43:28 2004 (beaume) .righteous.animations[0].filename = FY_HOF_Emote_righteous.anim
+Fri Sep 03 16:43:28 2004 (beaume) .roar.animations[0].filename = FY_HOF_Emot_Roar.anim
+Fri Sep 03 16:43:28 2004 (beaume) .sad.animations[0].filename = FY_HOF_shoote_poussiere.anim
+Fri Sep 03 16:43:28 2004 (beaume) .serious.animations[0].filename = FY_HOF_Emote_serious.anim
+Fri Sep 03 16:43:28 2004 (beaume) .shocked.animations[0].filename = FY_HOF_Emote_Shocked.anim
+Fri Sep 03 16:43:28 2004 (beaume) .silly.animations[0].filename = FY_HOF_Emote_silly.anim
+Fri Sep 03 16:43:28 2004 (beaume) .sincerely.animations[0].filename = FY_HOF_Emote_sincerely.anim
+Fri Sep 03 16:43:28 2004 (beaume) .sleepy_yawn_tired.animations[0].filename = FY_HOF_Emote_sleepy.anim
+Fri Sep 03 16:43:28 2004 (beaume) .smack.animations[0].filename = FY_HOF_Emote_smack.anim
+Fri Sep 03 16:43:28 2004 (beaume) .smile.animations[0].filename = FY_HOF_Emot_Smile.anim
+Fri Sep 03 16:43:28 2004 (beaume) .squeamish.animations[0].filename = FY_HOF_Emote_squeamish.anim
+Fri Sep 03 16:43:28 2004 (beaume) .surprised.animations[0].filename = FY_HOF_Emote_Surprised.anim
+Fri Sep 03 16:43:28 2004 (beaume) .suspicious.animations[0].filename = FY_HOF_Emote_Suspicious.anim
+Fri Sep 03 16:43:28 2004 (beaume) .thank.animations[0].filename = FY_HOF_Emot_Bow.anim
+
+Fri Sep 03 16:43:28 2004 (beaume) .thirsty.animations[0].filename = FY_HOF_Emote_thirsty.anim
+Fri Sep 03 16:43:28 2004 (beaume) .unhappy.animations[0].filename = FY_HOF_Emote_Veto.anim
+Fri Sep 03 16:43:28 2004 (beaume) .unwilling.animations[0].filename = FY_HOF_Emote_unwilling.anim
+Fri Sep 03 16:43:28 2004 (beaume) .victory.animations[0].filename = FY_HOF_Emote_victory.anim
+Fri Sep 03 16:43:28 2004 (beaume) .wait.animations[0].filename = FY_HOF_Emot_Impatient.anim
+Fri Sep 03 16:43:28 2004 (beaume) .wave.animations[0].filename = FY_HOF_Emot_Bow.anim
+Fri Sep 03 16:43:28 2004 (beaume) .wicked.animations[0].filename = FY_HOF_Emote_Wicked.anim
+Fri Sep 03 16:43:28 2004 (beaume) .youandme.animations[0].filename = FY_HOF_Emote_youandme.anim
+Fri Sep 03 16:43:28 2004 (beaume) formName Resized = 1
+Fri Sep 03 17:03:29 2004 (beaume) .shifty.animations[0].filename = FY_HOF_Emote_shifty.anim
+Fri Sep 03 17:03:29 2004 (beaume) formName Resized = 1
+Fri Sep 24 18:18:04 2004 (beaume) .FBT.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .afk.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .agree.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .alert.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .angry.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .apologize.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .applaud.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .ashamed_disgusted_desillusioned_loathing_pitying.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .blush.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .bow.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .brave_great.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .burp.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .bye.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .calm.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .cheer.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .cold_contemptuous_disdainful_haughty_megalomaniac_obnoxious.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .cry.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .curious.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .dance.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .disagree.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .discreet_hardsilence.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .doubtful.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .dramatic.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .drunk.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .exercise.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .fearful_insecure_nervous_panic_scared.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .firm.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .follow.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .forgive.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .gesture.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .giggle.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .go_away.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .guilty.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .heroic.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .hungry.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .impatient.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .indifferent_neutral_noclue_resigned.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .interested.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .kiss.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .kneel.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .laugh.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .lol.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .none.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .over.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .petulant.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .playful.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .point.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .pointback.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .pointleft.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .pointright.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .pompous.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .praying.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .puzzled_thoughtful_troubled.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .relaxed.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .relieved_sigh.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .revengeful_spitful.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .rice.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .righteous.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .roar.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .sad.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .serious.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .shifty.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .shocked.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .silly.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .sincerely.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .sleepy_yawn_tired.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .smack.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .smile.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .squeamish.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .surprised.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .suspicious.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .thank.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .thirsty.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .unhappy.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .unwilling.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .victory.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .wait.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .wave.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .wicked.Display Objects = false
+Fri Sep 24 18:18:04 2004 (beaume) .youandme.Display Objects = false
+Wed Apr 11 11:26:41 2007 (nouveau) .firework_01.animations[0].fx_set.FX0.PSName = fireworkA.ps
+Wed Apr 11 11:26:42 2007 (nouveau) .firework_01.animations[0].fx_set.FX0.RepeatMode = Respawn
+Wed Apr 11 11:26:42 2007 (nouveau) .firework_01.animations[0].fx_set.FX0.StickMode.StickMode = Spawn
+Wed Apr 11 17:37:41 2007 (nouveau) .firework_01.animations[0].fx_set.FX0.StickMode.StickMode = SpawnPermanent
+Wed Apr 11 17:50:52 2007 (nouveau) .firework_02.animations[0].fx_set.FX0.PSName = fireworkB.ps
+Fri Jan 02 11:38:28 2009 (kervala) formName Deleted = </LOG>
 </FORM>

@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.6 $" State="modified">
+  <PARENT Filename="_homin.animset_mode"/>
+  <STRUCT>
+    <STRUCT Name="combat">
+      <ATOM Name="__s" Value="false"/>
+      <ATOM Name="__d" Value="false"/>
+      <ATOM Name="_1h_" Value="false"/>
+      <ATOM Name="_1h_d" Value="false"/>
+      <ATOM Name="_1h_s" Value="false"/>
+      <ATOM Name="_1hsw_" Value="false"/>
+      <ATOM Name="_1hsw_d" Value="false"/>
+      <ATOM Name="_1hsw_s" Value="false"/>
+      <ATOM Name="_d_" Value="false"/>
+      <ATOM Name="_d_d" Value="false"/>
+      <ATOM Name="_d_s" Value="false"/>
+      <ATOM Name="_2h_" Value="false"/>
+      <ATOM Name="_2hsw_" Value="false"/>
+      <ATOM Name="_g_" Value="true"/>
+      <ATOM Name="_sg_" Value="false"/>
+      <ATOM Name="_sgga_" Value="false"/>
+      <ATOM Name="_l2m_" Value="false"/>
+      <ATOM Name="_br_" Value="false"/>
+      <ATOM Name="_gr_" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="death">
+      <ATOM Name="__s" Value="false"/>
+      <ATOM Name="__d" Value="false"/>
+      <ATOM Name="_1h_" Value="false"/>
+      <ATOM Name="_1h_d" Value="false"/>
+      <ATOM Name="_1h_s" Value="false"/>
+      <ATOM Name="_1hsw_" Value="false"/>
+      <ATOM Name="_1hsw_d" Value="false"/>
+      <ATOM Name="_1hsw_s" Value="false"/>
+      <ATOM Name="_d_" Value="false"/>
+      <ATOM Name="_d_d" Value="false"/>
+      <ATOM Name="_d_s" Value="false"/>
+      <ATOM Name="_2h_" Value="false"/>
+      <ATOM Name="_2hsw_" Value="false"/>
+      <ATOM Name="_g_" Value="true"/>
+      <ATOM Name="_sg_" Value="false"/>
+      <ATOM Name="_sgga_" Value="false"/>
+      <ATOM Name="_l2m_" Value="false"/>
+      <ATOM Name="_br_" Value="false"/>
+      <ATOM Name="_gr_" Value="false"/>
+      <ATOM Name="_dig_" Value="false"/>
+      <ATOM Name="_dis_" Value="false"/>
+      <ATOM Name="_ga_" Value="false"/>
+      <ATOM Name="_fi_" Value="false"/>
+      <ATOM Name="_sh_" Value="false"/>
+      <ATOM Name="_ho_" Value="false"/>
+      <ATOM Name="_pa_" Value="false"/>
+      <ATOM Name="_cu1_" Value="false"/>
+      <ATOM Name="_cu2_" Value="false"/>
+      <ATOM Name="_co_" Value="false"/>
+      <ATOM Name="_bu_" Value="false"/>
+      <ATOM Name="_mix_" Value="false"/>
+      <ATOM Name="_tr_" Value="false"/>
+      <ATOM Name="_trstr_" Value="false"/>
+      <ATOM Name="_mclo_" Value="false"/>
+      <ATOM Name="_mtoo_" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="default">
+      <ATOM Name="__s" Value="false"/>
+      <ATOM Name="__d" Value="false"/>
+      <ATOM Name="_1h_" Value="false"/>
+      <ATOM Name="_1h_d" Value="false"/>
+      <ATOM Name="_1h_s" Value="false"/>
+      <ATOM Name="_1hsw_" Value="false"/>
+      <ATOM Name="_1hsw_d" Value="false"/>
+      <ATOM Name="_1hsw_s" Value="false"/>
+      <ATOM Name="_d_" Value="false"/>
+      <ATOM Name="_d_d" Value="false"/>
+      <ATOM Name="_d_s" Value="false"/>
+      <ATOM Name="_2h_" Value="false"/>
+      <ATOM Name="_2hsw_" Value="false"/>
+      <ATOM Name="_g_" Value="true"/>
+      <ATOM Name="_sg_" Value="false"/>
+      <ATOM Name="_sgga_" Value="false"/>
+      <ATOM Name="_l2m_" Value="false"/>
+      <ATOM Name="_br_" Value="false"/>
+      <ATOM Name="_gr_" Value="false"/>
+      <ATOM Name="_dig_" Value="false"/>
+      <ATOM Name="_dis_" Value="false"/>
+      <ATOM Name="_ga_" Value="false"/>
+      <ATOM Name="_fi_" Value="false"/>
+      <ATOM Name="_sh_" Value="false"/>
+      <ATOM Name="_ho_" Value="false"/>
+      <ATOM Name="_pa_" Value="false"/>
+      <ATOM Name="_cu1_" Value="false"/>
+      <ATOM Name="_cu2_" Value="false"/>
+      <ATOM Name="_co_" Value="false"/>
+      <ATOM Name="_bu_" Value="false"/>
+      <ATOM Name="_mix_" Value="false"/>
+      <ATOM Name="_tr_" Value="false"/>
+      <ATOM Name="_trstr_" Value="false"/>
+      <ATOM Name="_mclo_" Value="false"/>
+      <ATOM Name="_mtoo_" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="mount_default">
+      <ATOM Name="__" Value="false"/>
+      <ATOM Name="__s" Value="false"/>
+      <ATOM Name="__d" Value="false"/>
+      <ATOM Name="_1h_" Value="false"/>
+      <ATOM Name="_1h_d" Value="false"/>
+      <ATOM Name="_1h_s" Value="false"/>
+      <ATOM Name="_d_" Value="false"/>
+      <ATOM Name="_d_d" Value="false"/>
+      <ATOM Name="_d_s" Value="false"/>
+      <ATOM Name="_2h_" Value="false"/>
+      <ATOM Name="_g_" Value="false"/>
+      <ATOM Name="_sg_" Value="false"/>
+      <ATOM Name="_l2m_" Value="false"/>
+      <ATOM Name="_br_" Value="false"/>
+      <ATOM Name="_gr_" Value="false"/>
+      <ATOM Name="_dig_" Value="false"/>
+      <ATOM Name="_dis_" Value="false"/>
+      <ATOM Name="_ga_" Value="false"/>
+      <ATOM Name="_fi_" Value="false"/>
+      <ATOM Name="_sh_" Value="false"/>
+      <ATOM Name="_ho_" Value="false"/>
+      <ATOM Name="_pa_" Value="false"/>
+      <ATOM Name="_cu1_" Value="false"/>
+      <ATOM Name="_cu2_" Value="false"/>
+      <ATOM Name="_co_" Value="false"/>
+      <ATOM Name="_bu_" Value="false"/>
+      <ATOM Name="_mix_" Value="false"/>
+      <ATOM Name="_tr_" Value="false"/>
+      <ATOM Name="_trstr_" Value="false"/>
+      <ATOM Name="_mclo_" Value="false"/>
+      <ATOM Name="_mtoo_" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="mount_swim">
+      <ATOM Name="__" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="sit">
+      <ATOM Name="__" Value="false"/>
+      <ATOM Name="__s" Value="false"/>
+      <ATOM Name="__d" Value="false"/>
+      <ATOM Name="_1h_" Value="false"/>
+      <ATOM Name="_1h_d" Value="false"/>
+      <ATOM Name="_1h_s" Value="false"/>
+      <ATOM Name="_d_" Value="false"/>
+      <ATOM Name="_d_d" Value="false"/>
+      <ATOM Name="_d_s" Value="false"/>
+      <ATOM Name="_2h_" Value="false"/>
+      <ATOM Name="_g_" Value="false"/>
+      <ATOM Name="_sg_" Value="false"/>
+      <ATOM Name="_l2m_" Value="false"/>
+      <ATOM Name="_br_" Value="false"/>
+      <ATOM Name="_gr_" Value="false"/>
+      <ATOM Name="_dig_" Value="false"/>
+      <ATOM Name="_dis_" Value="false"/>
+      <ATOM Name="_ga_" Value="false"/>
+      <ATOM Name="_fi_" Value="false"/>
+      <ATOM Name="_sh_" Value="false"/>
+      <ATOM Name="_ho_" Value="false"/>
+      <ATOM Name="_pa_" Value="false"/>
+      <ATOM Name="_cu1_" Value="false"/>
+      <ATOM Name="_cu2_" Value="false"/>
+      <ATOM Name="_co_" Value="false"/>
+      <ATOM Name="_bu_" Value="false"/>
+      <ATOM Name="_mix_" Value="false"/>
+      <ATOM Name="_tr_" Value="false"/>
+      <ATOM Name="_trstr_" Value="false"/>
+      <ATOM Name="_mclo_" Value="false"/>
+      <ATOM Name="_mtoo_" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="swim">
+      <ATOM Name="__" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="swim_death">
+      <ATOM Name="__" Value="false"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Tue Jul 08 11:10:37 2003 (puzin) Form Parents = 
+Tue Jul 08 18:06:14 2003 (puzin) formName Pasted = 
+Tue Jul 08 18:06:32 2003 (puzin) formName Pasted = 
+Tue Jul 08 18:54:35 2003 (puzin) .combat._1h_ = false
+Tue Jul 08 18:54:35 2003 (puzin) .combat._1h_d = false
+Tue Jul 08 18:54:35 2003 (puzin) .combat._1h_s = false
+Tue Jul 08 18:54:35 2003 (puzin) .combat.__ = 
+Tue Jul 08 18:54:35 2003 (puzin) .combat.__d = false
+Tue Jul 08 18:54:35 2003 (puzin) .combat.__s = false
+Tue Jul 08 18:54:35 2003 (puzin) .combat._d_ = false
+Tue Jul 08 18:55:00 2003 (puzin) .combat._2h_ = false
+Tue Jul 08 18:55:00 2003 (puzin) .combat._br_ = false
+Tue Jul 08 18:55:00 2003 (puzin) .combat._d_d = false
+Tue Jul 08 18:55:00 2003 (puzin) .combat._d_s = false
+Tue Jul 08 18:55:00 2003 (puzin) .combat._dig_ = 
+Tue Jul 08 18:55:00 2003 (puzin) .combat._g_ = false
+Tue Jul 08 18:55:00 2003 (puzin) .combat._gr_ = false
+Tue Jul 08 18:55:00 2003 (puzin) .combat._l2m_ = false
+Tue Jul 08 18:55:00 2003 (puzin) .combat._sg_ = false
+Tue Jul 08 18:55:51 2003 (puzin) .combat._co_ = 
+Tue Jul 08 18:57:09 2003 (puzin) .death._bu_ = false
+Tue Jul 08 18:57:09 2003 (puzin) .death._co_ = false
+Tue Jul 08 18:57:09 2003 (puzin) .death._cu1_ = false
+Tue Jul 08 18:57:09 2003 (puzin) .death._cu2_ = false
+Tue Jul 08 18:57:09 2003 (puzin) .death._dig_ = false
+Tue Jul 08 18:57:09 2003 (puzin) .death._dis_ = false
+Tue Jul 08 18:57:09 2003 (puzin) .death._fi_ = false
+Tue Jul 08 18:57:09 2003 (puzin) .death._ga_ = false
+Tue Jul 08 18:57:09 2003 (puzin) .death._ho_ = false
+Tue Jul 08 18:57:09 2003 (puzin) .death._mclo_ = false
+Tue Jul 08 18:57:09 2003 (puzin) .death._mix_ = false
+Tue Jul 08 18:57:09 2003 (puzin) .death._mtoo_ = false
+Tue Jul 08 18:57:09 2003 (puzin) .death._pa_ = false
+Tue Jul 08 18:57:09 2003 (puzin) .death._sh_ = false
+Tue Jul 08 18:57:09 2003 (puzin) .death._tr_ = false
+Tue Jul 08 18:57:09 2003 (puzin) formName Pasted = 
+Tue Jul 08 18:57:15 2003 (puzin) .death._trstr_ = false
+Tue Jul 08 18:57:43 2003 (puzin) formName Pasted = 
+Tue Jul 08 18:58:08 2003 (puzin) .mount_default.__ = false
+Tue Jul 08 18:58:08 2003 (puzin) formName Pasted = 
+Tue Jul 08 18:58:25 2003 (puzin) formName Pasted = 
+Wed Apr 21 18:06:12 2004 (fleury) .combat._1hsw_ = false
+Wed Apr 21 18:06:12 2004 (fleury) .combat._1hsw_d = false
+Wed Apr 21 18:06:12 2004 (fleury) .combat._1hsw_s = false
+Wed Apr 21 18:06:12 2004 (fleury) .combat._d_ = false
+Wed Apr 21 18:06:12 2004 (fleury) .combat._d_d = false
+Wed Apr 21 18:06:12 2004 (fleury) .combat._g_ = true
+Wed Aug 11 19:03:11 2004 (puzin) .combat._2hsw_ = false
+Wed Aug 11 19:03:11 2004 (puzin) .combat._sgga_ = false
+Wed Aug 11 19:03:21 2004 (puzin) .death._2hsw_ = false
+Wed Aug 11 19:03:21 2004 (puzin) .death._sgga_ = false
+Wed Aug 11 19:03:50 2004 (puzin) .default._2hsw_ = false
+Wed Aug 11 19:03:50 2004 (puzin) .default._sgga_ = false
+Wed Aug 11 19:12:30 2004 (puzin) .death._1hsw_ = false
+Wed Aug 11 19:12:30 2004 (puzin) .death._1hsw_d = false
+Wed Aug 11 19:12:30 2004 (puzin) .death._1hsw_s = false
+Wed Aug 11 19:12:42 2004 (puzin) .default._1hsw_ = false
+Wed Aug 11 19:12:42 2004 (puzin) .default._1hsw_d = false
+Wed Aug 11 19:12:42 2004 (puzin) .default._1hsw_s = false
+Mon Aug 16 12:27:20 2004 (puzin) .swim.__ = false
+Mon Aug 16 12:27:23 2004 (puzin) .swim_death.__ = false
+Thu Apr 14 10:56:27 2005 (puzin) .death._g_ = true
+Thu Apr 14 10:56:27 2005 (puzin) .default._g_ = true</LOG>
+</FORM>

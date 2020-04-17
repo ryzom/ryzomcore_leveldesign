@@ -1,9 +1,116 @@
 <?xml version="1.0"?>
-<FORM Revision="" State="modified">
+<FORM Revision="$Revision: 1.8 $" State="modified">
+  <STRUCT>
+    <ARRAY Name="Array">
+      <STRUCT>
+        <ATOM Name="ID" Value="0"/>
+        <ATOM Name="String" Value="aura_recept.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="1"/>
+        <ATOM Name="String" Value="aura_divinity.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="2"/>
+        <ATOM Name="String" Value="aura_speedmove.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="3"/>
+        <ATOM Name="String" Value="aura_sap.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="4"/>
+        <ATOM Name="String" Value="aura_sta.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="5"/>
+        <ATOM Name="String" Value="aura_hp.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="6"/>
+        <ATOM Name="String" Value="aura_protection_melee.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="7"/>
+        <ATOM Name="String" Value="aura_protection_range.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="8"/>
+        <ATOM Name="String" Value="aura_protection_magic.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="9"/>
+        <ATOM Name="String" Value="aura_warcry.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="10"/>
+        <ATOM Name="String" Value="aura_wall_fy.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="11"/>
+        <ATOM Name="String" Value="aura_wall_tr.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="12"/>
+        <ATOM Name="String" Value="aura_wall_ma.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="13"/>
+        <ATOM Name="String" Value="aura_wall_zo.animation_fx"/>
+      </STRUCT>
+      <STRUCT>
+        <ATOM Name="ID" Value="14"/>
+        <ATOM Name="String" Value="aura_firewall.animation_fx"/>
+      </STRUCT>
+    </ARRAY>
+  </STRUCT>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
-  <STRUCT/>
-  <LOG></LOG>
+  <LOG>Wed Dec 10 15:06:52 2003 (vizerie) .Array[0].ID = 1
+Wed Dec 10 15:06:52 2003 (vizerie) .Array[0].String = aura_divinity.animation_fx
+Wed Dec 10 15:06:52 2003 (vizerie) formName Resized = 4
+Wed Dec 10 15:07:21 2003 (vizerie) .Array[1].ID = 2
+Wed Dec 10 15:07:21 2003 (vizerie) .Array[1].String = aura_protection.animation_fx
+Wed Dec 10 15:07:44 2003 (vizerie) .Array[2].ID = 3
+Wed Dec 10 15:07:44 2003 (vizerie) .Array[2].String = aura_sapstahp.animation_fx
+Wed Dec 10 15:08:10 2003 (vizerie) .Array[3].ID = 4
+Wed Dec 10 15:08:10 2003 (vizerie) .Array[3].String = aura_speedmove.animation_fx
+Wed Dec 10 17:31:53 2003 (vizerie) .Array[4].ID = 0
+Wed Dec 10 17:31:53 2003 (vizerie) .Array[4].String = aura_recept.animation_fx
+Wed Dec 10 17:31:53 2003 (vizerie) formName Resized = 5
+Wed Feb 18 17:37:25 2004 (vizerie) .Array[2].ID = 2
+Wed Feb 18 17:37:25 2004 (vizerie) .Array[3].ID = 3
+Wed Feb 18 17:37:25 2004 (vizerie) .Array[4].ID = 4
+Wed Feb 18 17:37:25 2004 (vizerie) .Array[5].ID = 5
+Wed Feb 18 17:37:25 2004 (vizerie) .Array[6].ID = 6
+Wed Feb 18 17:37:25 2004 (vizerie) .Array[6].String = aura_protection_melee.animation_fx
+Wed Feb 18 17:37:25 2004 (vizerie) .Array[7].ID = 7
+Wed Feb 18 17:37:25 2004 (vizerie) .Array[7].String = aura_protection_range.animation_fx
+Wed Feb 18 17:37:25 2004 (vizerie) .Array[8].ID = 8
+Wed Feb 18 17:37:25 2004 (vizerie) .Array[8].String = aura_protection_magic.animation_fx
+Wed Feb 18 17:37:25 2004 (vizerie) formName Deleted = 
+Wed Feb 18 17:37:25 2004 (vizerie) formName Resized = 9
+Mon Sep 27 18:22:28 2004 (gatto) .Array[9].String = aura_warcry.animation_fx
+Mon Sep 27 18:22:28 2004 (gatto) formName Pasted = 
+Mon Sep 27 18:22:28 2004 (gatto) formName Resized = 10
+Thu Sep 30 14:53:23 2004 (gatto) .Array[9].ID = 9
+Tue Nov 23 18:05:08 2004 (gatto) .Array[10].ID = 10
+Tue Nov 23 18:05:08 2004 (gatto) .Array[10].String = aura_wall_fy.ps
+Tue Nov 23 18:05:08 2004 (gatto) .Array[11].ID = 11
+Tue Nov 23 18:05:08 2004 (gatto) .Array[11].String = aura_wall_tr.ps
+Tue Nov 23 18:05:08 2004 (gatto) .Array[12].ID = 12
+Tue Nov 23 18:05:08 2004 (gatto) .Array[12].String = aura_wall_ma.ps
+Tue Nov 23 18:05:08 2004 (gatto) .Array[13].ID = 13
+Tue Nov 23 18:05:08 2004 (gatto) .Array[13].String = aura_wall_zo.ps
+Tue Nov 23 18:05:08 2004 (gatto) formName Resized = 14
+Thu Mar 03 17:02:38 2005 (peloille) .Array[10].String = aura_wall_fy.animation_fx
+Thu Mar 03 17:02:38 2005 (peloille) .Array[11].String = aura_wall_tr.animation_fx
+Thu Mar 03 17:02:38 2005 (peloille) .Array[12].String = aura_wall_ma.animation_fx
+Thu Mar 03 17:02:38 2005 (peloille) .Array[13].String = aura_wall_zo.animation_fx
+Tue Mar 29 16:51:00 2005 (vizerie) .Array[14].ID = 14
+Tue Mar 29 16:51:00 2005 (vizerie) .Array[14].String = aura_firewall.animation_fx
+Tue Mar 29 16:51:00 2005 (vizerie) formName Resized = 15
+Tue Mar 29 17:19:10 2005 (vizerie) .Array[14].String = aura_firewall.animation_fx</LOG>
 </FORM>

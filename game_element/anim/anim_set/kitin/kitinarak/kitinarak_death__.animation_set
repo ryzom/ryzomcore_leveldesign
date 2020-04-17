@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <PARENT Filename="_kitin_death__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Idle_Dead.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kitin_Sleep.anim"/>
+    </STRUCT>
+    <STRUCT Name="death">
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kitin_Death.anim"/>
+    </STRUCT>
+    <STRUCT Name="death_idle">
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kitin_Idle_Dead.anim"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri Dec 13 16:13:41 2002 (puzin)
+Mon Dec 16 16:51:59 2002 (beaume) .death.LodCharacterAnimation = TR_MO_Kitin_Death.anim
+Mon Dec 16 16:51:59 2002 (beaume) .death_idle.LodCharacterAnimation = TR_MO_Kitin_Idle_Dead.anim
+Mon Dec 16 16:51:59 2002 (beaume) .idle.LodCharacterAnimation = TR_MO_Kitin_Sleep.anim
+Wed Feb 12 15:05:44 2003 (arnaudb) .combat_mode.animations[0].filename = TR_MO_Kitin_Sleep_TO_Idle_ATK.anim
+Fri Jun 06 14:34:00 2003 (beaume) .idle.animations[0].filename = TR_MO_Kitin_Idle_Dead.anim
+Fri Jun 06 14:34:00 2003 (beaume) formName Resized = 0
+Fri Jun 06 15:29:20 2003 (beaume) Form Parents = </LOG>
+</FORM>

@@ -1,0 +1,735 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="gibbai_spell__.animation_set"/>
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_attack_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_marche_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_course_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_recule_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_tourner_gauche_attack.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_demitour_gauche_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_tourner_droite_attack.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_demitour_droite_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_tourner_gauche_attack.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_demitour_gauche_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_tourner_droite_attack.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_demitour_droite_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_tourner_gauche_attack.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_demitour_gauche_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_tourner_droite_attack.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_demitour_droite_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_straff_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_straff_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="impact">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_impact_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_begin">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_attack_stun_init.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_attack_stun_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_attack_stun_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="attack1">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_attack_1.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_attack_2.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="1.050"/>
+    </STRUCT>
+    <STRUCT Name="attack2">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_coup_magie.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="1.050"/>
+    </STRUCT>
+    <STRUCT Name="walk atk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_marche_coup.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.513"/>
+    </STRUCT>
+    <STRUCT Name="run atk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_course_coup.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.350"/>
+    </STRUCT>
+    <STRUCT Name="backward atk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_recule_coup.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.513"/>
+    </STRUCT>
+    <STRUCT Name="cast_acid_init">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_init_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_acid_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_acid_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_blind_init">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_init_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_blind_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_blind_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_cold_init">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_init_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_cold_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_cold_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_elec_init">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_init_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_elec_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_elec_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_fear_init">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_init_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_fear_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_fear_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_fire_init">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_init_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_fire_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_fire_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_healhp_init">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_init_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_healhp_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_healhp_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_mad_init">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_init_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_mad_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_mad_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_poison_init">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_init_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_poison_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_poison_end">
+      <ARRAY Name="animations">
+        <STRUCT/>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_root_init">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_init_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_root_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_root_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_rot_init">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_init_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_rot_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_rot_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_shock_init">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_init_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_shock_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_shock_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_sleep_init">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_init_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_sleep_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_sleep_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_slow_init">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_init_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_slow_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_slow_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_stun_init">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_init_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_stun_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cast_stun_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_magie_loop_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="ZO_MO_Gibbai_A_mort_attack.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 14:46:07 2002 (puzin)
+Thu Apr 10 16:32:00 2003 (arnaudb) Form Parents = 
+Thu Apr 10 16:32:00 2003 (arnaudb) formName Resized = 3
+Thu Apr 10 16:32:53 2003 (arnaudb) .idle.animations[0].filename = TR_MO_Cute_Idle.anim
+Thu Apr 10 16:32:53 2003 (arnaudb) .idle.animations[1].filename = TR_MO_Cute_Idle_Occupation1.anim
+Thu Apr 10 16:32:53 2003 (arnaudb) .idle.animations[2].filename = TR_MO_Cute_Idle_Crier.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .backward.animations[0].filename = TR_MO_Cute_Atk_Recule.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .idle.LodCharacterAnimation = TR_MO_Cute_Idle.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .run.LodCharacterAnimation = TR_MO_Cute_Run.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .run.animations[0].filename = TR_MO_Cute_Run.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left.animations[0].filename = TR_MO_Cute_Idle_Tourne_G.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left.animations[1].filename = TR_MO_Cute_Idle_DemiTour_G.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left_to_backward.animations[0].filename = TR_MO_Cute_Idle_Tourne_G.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = TR_MO_Cute_Idle_DemiTour_G
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left_to_walk.animations[0].filename = TR_MO_Cute_Idle_Tourne_G.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = TR_MO_Cute_Idle_DemiTour_G
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right.animations[0].filename = TR_MO_Cute_Idle_Tourne_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right.animations[1].filename = TR_MO_Cute_Idle_DemiTour_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right_to_backward.animations[0].filename = TR_MO_Cute_Idle_Tourne_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right_to_backward.animations[1].filename = TR_MO_Cute_Idle_DemiTour_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right_to_walk.animations[0].filename = TR_MO_Cute_Idle_Tourne_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right_to_walk.animations[1].filename = TR_MO_Cute_Idle_DemiTour_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .walk.LodCharacterAnimation = TR_MO_Cute_Walk.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .walk.animations[0].filename = TR_MO_Cute_Walk.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) formName Resized = 2
+Thu Apr 10 16:57:53 2003 (arnaudb) .death.LodCharacterAnimation = TR_MO_Cute_Idle_Death.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .death.animations[0].filename = TR_MO_Cute_Idle_Death.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .death_idle.LodCharacterAnimation = TR_MO_Cute_Atk_dead.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .death_idle.animations[0].filename = TR_MO_Cute_Atk_dead.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .idle.animations[3].filename = TR_MO_Cute_Idle_Regarde_D.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .idle.animations[4].filename = TR_MO_Cute_Idle_Regarde_G.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .impact.animations[0].filename = TR_MO_Cute_Idle_Impact.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .rest_mode.animations[0].filename = TR_MO_Cute_Idle_To_Sleep.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) formName Resized = 1
+Thu Apr 10 17:27:57 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = TR_MO_Cute_Idle_DemiTour_G.anim
+Thu Apr 10 17:27:57 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = TR_MO_Cute_Idle_DemiTour_G.anim
+Thu Apr 10 17:44:55 2003 (arnaudb) .combat_mode.animations[0].filename = TR_MO_Cute_Idle_To_Idle_Atk.anim
+Thu Apr 10 17:44:55 2003 (arnaudb) .idle_to_walk.animations[0].filename = TR_MO_Cute_Idle_To_Walk.anim
+Thu Apr 10 17:44:55 2003 (arnaudb) formName Resized = 1
+Thu Apr 10 18:17:38 2003 (arnaudb) .backward.animations[0].filename = FY_MO_Frahar_reculer.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .death.animations[0].filename = FY_MO_Frahar_mort.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .death_idle.animations[0].filename = FY_MO_Frahar_mort_idle.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .idle.LodCharacterAnimation = FY_MO_Frahar_idle.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .idle.animations[0].filename = FY_MO_Frahar_idle.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .idle.animations[1].filename = FY_MO_Frahar_idle_attente.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .idle.animations[2].filename = FY_MO_Frahar_idle_attente2.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .idle.animations[3].filename = FY_MO_Frahar_crier.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .impact.animations[0].filename = FY_MO_Frahar_impact.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .rest_mode.animations[0].filename = FY_MO_Frahar_dormir_init.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .run.animations[0].filename = FY_MO_Frahar_courir.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_left.animations[0].filename = FY_MO_Frahar_tournegauche.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_left.animations[1].filename = FY_MO_Frahar_demitour_gauche.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_left_to_backward.animations[0].filename = FY_MO_Frahar_tournegauche.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = FY_MO_Frahar_demitour_gauche.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_left_to_walk.animations[0].filename = FY_MO_Frahar_tournegauche.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = FY_MO_Frahar_demitour_gauche.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_right.animations[0].filename = FY_MO_Frahar_tournedroite.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_right.animations[1].filename = FY_MO_Frahar_demitour_droit.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_right_to_backward.animations[0].filename = FY_MO_Frahar_tournedroite.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_right_to_backward.animations[1].filename = FY_MO_Frahar_demitour_droit.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_right_to_walk.animations[0].filename = FY_MO_Frahar_tournedroite.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .turn_right_to_walk.animations[1].filename = FY_MO_Frahar_demitour_droit.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .walk.LodCharacterAnimation = FY_MO_Frahar_marcher.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) .walk.animations[0].filename = FY_MO_Frahar_marcher.anim
+Thu Apr 10 18:17:38 2003 (arnaudb) formName Resized = 0
+Thu Apr 10 18:21:58 2003 (arnaudb) .death.LodCharacterAnimation = FY_MO_Frahar_mort.anim
+Thu Apr 10 18:21:58 2003 (arnaudb) .death_idle.LodCharacterAnimation = FY_MO_Frahar_mort_idle.anim
+Thu Apr 10 18:21:58 2003 (arnaudb) .run.LodCharacterAnimation = FY_MO_Frahar_courir.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .backward.animations[0].filename = ZO_MO_Gibbai_recule.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .death.LodCharacterAnimation = ZO_MO_Gibbai_mort.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .death.animations[0].filename = ZO_MO_Gibbai_mort.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .death_idle.LodCharacterAnimation = ZO_MO_Gibbai_mort_idle.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .death_idle.animations[0].filename = ZO_MO_Gibbai_mort_idle.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .idle.LodCharacterAnimation = ZO_MO_Gibbai_idle.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .idle.animations[0].filename = ZO_MO_Gibbai_idle.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .idle.animations[1].filename = ZO_MO_Gibbai_crier.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .impact.animations[0].filename = ZO_MO_Gibbai_impact.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .rest_mode.animations[0].filename = ZO_MO_Gibbai_dormir_init.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .run.LodCharacterAnimation = ZO_MO_Gibbai_course.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .run.animations[0].filename = ZO_MO_Gibbai_course.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .turn_left.animations[0].filename = ZO_MO_Gibbai_tourner_gauche.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .turn_left_to_backward.animations[0].filename = ZO_MO_Gibbai_tourner_gauche.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .turn_left_to_walk.animations[0].filename = ZO_MO_Gibbai_tourner_gauche.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .turn_right.animations[0].filename = ZO_MO_Gibbai_tourner_droite.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .turn_right_to_backward.animations[0].filename = ZO_MO_Gibbai_tourner_droite.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .turn_right_to_walk.animations[0].filename = ZO_MO_Gibbai_tourner_droite.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .walk.LodCharacterAnimation = ZO_MO_Gibbai_marche.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) .walk.animations[0].filename = ZO_MO_Gibbai_marche.anim
+Thu Apr 10 19:01:14 2003 (arnaudb) formName Resized = 2
+Fri Apr 11 11:29:50 2003 (arnaudb) .attack1.animations[0].filename = ZO_MO_Gibbai_coup_griffe.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .backward atk.animations[0].filename = ZO_MO_Gibbai_recule_attack_coup.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .backward.animations[0].filename = ZO_MO_Gibbai_recule_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .death.animations[0].filename = ZO_MO_Gibbai_mort_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .idle.LodCharacterAnimation = 
+Fri Apr 11 11:29:50 2003 (arnaudb) .idle.animations[0].filename = ZO_MO_Gibbai_idle_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .impact.animations[0].filename = ZO_MO_Gibbai_impact_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .run atk.animations[0].filename = ZO_MO_Gibbai_course_attack_coup.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .run.LodCharacterAnimation = 
+Fri Apr 11 11:29:50 2003 (arnaudb) .run.animations[0].filename = ZO_MO_Gibbai_course_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .strafe_left.animations[0].filename = ZO_MO_Gibbai_straff_gauche.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .strafe_right.animations[0].filename = ZO_MO_Gibbai_straff_droite.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .turn_left.animations[0].filename = ZO_MO_Gibbai_tourner_gauche_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .turn_left.animations[1].filename = FY_MO_Frahar_demitour_gauche_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .turn_left_to_backward.animations[0].filename = ZO_MO_Gibbai_tourner_gauche_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = FY_MO_Frahar_demitour_gauche_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .turn_left_to_walk.animations[0].filename = ZO_MO_Gibbai_tourner_gauche_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = FY_MO_Frahar_demitour_gauche_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .turn_right.animations[0].filename = ZO_MO_Gibbai_tourner_droite_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .turn_right.animations[1].filename = FY_MO_Frahar_demitour_droit_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .turn_right_to_backward.animations[0].filename = ZO_MO_Gibbai_tourner_droite_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .turn_right_to_backward.animations[1].filename = FY_MO_Frahar_demitour_droit_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .turn_right_to_walk.animations[0].filename = ZO_MO_Gibbai_tourner_droite_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .turn_right_to_walk.animations[1].filename = FY_MO_Frahar_demitour_droit_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .walk atk.animations[0].filename = ZO_MO_Gibbai_marche_attack_coup.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) .walk.LodCharacterAnimation = 
+Fri Apr 11 11:29:50 2003 (arnaudb) .walk.animations[0].filename = ZO_MO_Gibbai_marche_attack.anim
+Fri Apr 11 11:29:50 2003 (arnaudb) formName Resized = 0
+Fri Apr 11 14:21:02 2003 (arnaudb) .turn_left.animations[1].filename = ZO_MO_Gibbai_demitour_gauche_attack.anim
+Fri Apr 11 14:21:02 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = ZO_MO_Gibbai_demitour_gauche_attack.anim
+Fri Apr 11 14:21:02 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = ZO_MO_Gibbai_demitour_gauche_attack.anim
+Fri Apr 11 14:21:02 2003 (arnaudb) .turn_right.animations[1].filename = ZO_MO_Gibbai_demitour_droite_attack.anim
+Fri Apr 11 14:21:02 2003 (arnaudb) .turn_right_to_backward.animations[1].filename = ZO_MO_Gibbai_demitour_droite_attack.anim
+Fri Apr 11 14:21:02 2003 (arnaudb) .turn_right_to_walk.animations[1].filename = ZO_MO_Gibbai_demitour_droite_attack.anim
+
+Mon Dec 01 12:18:47 2003 (beaume) .stun_begin.animations[0].filename = ZO_MO_Gibbai_stun_attack_init.anim
+Mon Dec 01 12:18:47 2003 (beaume) .stun_end.animations[0].filename = ZO_MO_Gibbai_stun_attack_end.anim
+Mon Dec 01 12:18:47 2003 (beaume) .stun_loop.animations[0].filename = ZO_MO_Gibbai_stun_attack_loop.anim
+Mon Dec 01 12:18:47 2003 (beaume) formName Resized = 1
+Thu Dec 04 11:12:43 2003 (beaume) .death_mode.animations[0].filename = ZO_MO_Gibbai_mort_attack.anim
+Thu Dec 04 11:12:43 2003 (beaume) formName Resized = 1
+Thu Jan 15 17:15:35 2004 (beaume) .attack2.animations[0].filename = ZO_MO_Gibbai_coup_magie.anim
+Thu Jan 15 17:15:35 2004 (beaume) formName Resized = 1
+Wed Jan 28 18:51:07 2004 (beaume) .defaultHeadControl = false
+Tue Nov 30 17:18:39 2004 (beaume) .attack1.animations[0].filename = ZO_MO_Gibbai_A_attack_1.anim
+Tue Nov 30 17:18:39 2004 (beaume) .attack1.animations[1].filename = ZO_MO_Gibbai_A_attack_2.anim
+Tue Nov 30 17:18:39 2004 (beaume) .attack2.animations[0].filename = ZO_MO_Gibbai_A_coup_magie.anim
+Tue Nov 30 17:18:39 2004 (beaume) .backward atk.animations[0].filename = ZO_MO_Gibbai_A_recule_coup.anim
+Tue Nov 30 17:18:39 2004 (beaume) .backward.animations[0].filename = ZO_MO_Gibbai_A_recule.anim
+Tue Nov 30 17:18:39 2004 (beaume) .death_mode.animations[0].filename = ZO_MO_Gibbai_A_mort.anim
+Tue Nov 30 17:18:39 2004 (beaume) .idle.animations[0].filename = ZO_MO_Gibbai_A_idle.anim
+Tue Nov 30 17:18:39 2004 (beaume) .impact.animations[0].filename = ZO_MO_Gibbai_A_impact.anim
+Tue Nov 30 17:18:39 2004 (beaume) .run atk.animations[0].filename = ZO_MO_Gibbai_A_course_coup.anim
+Tue Nov 30 17:18:39 2004 (beaume) .run.animations[0].filename = ZO_MO_Gibbai_A_course.anim
+Tue Nov 30 17:18:39 2004 (beaume) .strafe_left.animations[0].filename = ZO_MO_Gibbai_A_straff_gauche.anim
+Tue Nov 30 17:18:39 2004 (beaume) .strafe_right.animations[0].filename = ZO_MO_Gibbai_A_straff_droite.anim
+Tue Nov 30 17:18:39 2004 (beaume) .stun_begin.animations[0].filename = ZO_MO_Gibbai_A_stun_init.anim
+Tue Nov 30 17:18:39 2004 (beaume) .stun_end.animations[0].filename = ZO_MO_Gibbai_A_stun_end.anim
+Tue Nov 30 17:18:39 2004 (beaume) .stun_loop.animations[0].filename = ZO_MO_Gibbai_A_stun_loop.anim
+Tue Nov 30 17:18:39 2004 (beaume) .turn_left.animations[0].filename = ZO_MO_Gibbai_A_tourner_gauche.anim
+Tue Nov 30 17:18:39 2004 (beaume) .turn_left.animations[1].filename = ZO_MO_Gibbai_A_demitour_gauche.anim
+Tue Nov 30 17:18:39 2004 (beaume) .turn_left_to_backward.animations[0].filename = ZO_MO_Gibbai_A_tourner_gauche.anim
+Tue Nov 30 17:18:39 2004 (beaume) .turn_left_to_backward.animations[1].filename = ZO_MO_Gibbai_A_demitour_gauche.anim
+Tue Nov 30 17:18:39 2004 (beaume) .turn_left_to_walk.animations[0].filename = ZO_MO_Gibbai_A_tourner_gauche.anim
+Tue Nov 30 17:18:39 2004 (beaume) .turn_left_to_walk.animations[1].filename = ZO_MO_Gibbai_A_demitour_gauche.anim
+Tue Nov 30 17:18:39 2004 (beaume) .turn_right.animations[0].filename = ZO_MO_Gibbai_A_tourner_droite.anim
+Tue Nov 30 17:18:39 2004 (beaume) .turn_right.animations[1].filename = ZO_MO_Gibbai_A_demitour_droite.anim
+Tue Nov 30 17:18:39 2004 (beaume) .turn_right_to_backward.animations[0].filename = ZO_MO_Gibbai_A_tourner_droite.anim
+Tue Nov 30 17:18:39 2004 (beaume) .turn_right_to_backward.animations[1].filename = ZO_MO_Gibbai_A_demitour_droite.anim
+Tue Nov 30 17:18:39 2004 (beaume) .turn_right_to_walk.animations[0].filename = ZO_MO_Gibbai_A_tourner_droite.anim
+Tue Nov 30 17:18:39 2004 (beaume) .turn_right_to_walk.animations[1].filename = ZO_MO_Gibbai_A_demitour_droite.anim
+Tue Nov 30 17:18:39 2004 (beaume) .walk atk.animations[0].filename = ZO_MO_Gibbai_A_marche_coup.anim
+Tue Nov 30 17:18:39 2004 (beaume) .walk.animations[0].filename = ZO_MO_Gibbai_A_marche.anim
+Tue Nov 30 17:18:39 2004 (beaume) formName Resized = 2
+Tue Nov 30 18:30:21 2004 (beaume) .backward.animations[0].filename = ZO_MO_Gibbai_A_recule_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .death_mode.animations[0].filename = ZO_MO_Gibbai_A_mort_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .idle.animations[0].filename = ZO_MO_Gibbai_A_attack_idle.anim
+Tue Nov 30 18:30:21 2004 (beaume) .impact.animations[0].filename = ZO_MO_Gibbai_A_impact_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .run.animations[0].filename = ZO_MO_Gibbai_A_course_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .stun_begin.animations[0].filename = ZO_MO_Gibbai_A_attack_stun_init.anim
+Tue Nov 30 18:30:21 2004 (beaume) .stun_end.animations[0].filename = ZO_MO_Gibbai_A_attack_stun_end.anim
+Tue Nov 30 18:30:21 2004 (beaume) .stun_loop.animations[0].filename = ZO_MO_Gibbai_A_attack_stun_loop.anim
+Tue Nov 30 18:30:21 2004 (beaume) .turn_left.animations[0].filename = ZO_MO_Gibbai_A_tourner_gauche_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .turn_left.animations[1].filename = ZO_MO_Gibbai_A_demitour_gauche_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .turn_left_to_backward.animations[0].filename = ZO_MO_Gibbai_A_tourner_gauche_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .turn_left_to_backward.animations[1].filename = ZO_MO_Gibbai_A_demitour_gauche_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .turn_left_to_walk.animations[0].filename = ZO_MO_Gibbai_A_tourner_gauche_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .turn_left_to_walk.animations[1].filename = ZO_MO_Gibbai_A_demitour_gauche_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .turn_right.animations[0].filename = ZO_MO_Gibbai_A_tourner_droite_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .turn_right.animations[1].filename = ZO_MO_Gibbai_A_demitour_droite_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .turn_right_to_backward.animations[0].filename = ZO_MO_Gibbai_A_tourner_droite_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .turn_right_to_backward.animations[1].filename = ZO_MO_Gibbai_A_demitour_droite_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .turn_right_to_walk.animations[0].filename = ZO_MO_Gibbai_A_tourner_droite_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .turn_right_to_walk.animations[1].filename = ZO_MO_Gibbai_A_demitour_droite_attack.anim
+Tue Nov 30 18:30:21 2004 (beaume) .walk.animations[0].filename = ZO_MO_Gibbai_A_marche_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_acid_end.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_acid_init.animations[0].filename = ZO_MO_Gibbai_A_magie_init_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_acid_loop.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_blind_end.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_blind_init.animations[0].filename = ZO_MO_Gibbai_A_magie_init_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_blind_loop.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_cold_end.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_cold_init.animations[0].filename = ZO_MO_Gibbai_A_magie_init_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_cold_loop.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_elec_end.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_elec_init.animations[0].filename = ZO_MO_Gibbai_A_magie_init_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_elec_loop.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_fear_end.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_fear_init.animations[0].filename = ZO_MO_Gibbai_A_magie_init_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_fear_loop.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_fire_end.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_fire_init.animations[0].filename = ZO_MO_Gibbai_A_magie_init_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_fire_loop.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_healhp_end.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_healhp_init.animations[0].filename = ZO_MO_Gibbai_A_magie_init_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_healhp_loop.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_mad_end.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_mad_init.animations[0].filename = ZO_MO_Gibbai_A_magie_init_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_mad_loop.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_poison_init.animations[0].filename = ZO_MO_Gibbai_A_magie_init_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_poison_loop.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_root_end.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_root_init.animations[0].filename = ZO_MO_Gibbai_A_magie_init_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_root_loop.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_rot_end.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_rot_init.animations[0].filename = ZO_MO_Gibbai_A_magie_init_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_rot_loop.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_shock_end.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_shock_init.animations[0].filename = ZO_MO_Gibbai_A_magie_init_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_shock_loop.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_sleep_end.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_sleep_init.animations[0].filename = ZO_MO_Gibbai_A_magie_init_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_sleep_loop.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_slow_end.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_slow_init.animations[0].filename = ZO_MO_Gibbai_A_magie_init_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_slow_loop.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_stun_end.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_stun_init.animations[0].filename = ZO_MO_Gibbai_A_magie_init_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) .cast_stun_loop.animations[0].filename = ZO_MO_Gibbai_A_magie_loop_attack.anim
+Wed Dec 01 11:29:44 2004 (beaume) formName Resized = 1
+Wed Dec 01 12:06:41 2004 (beaume) Form Parents = </LOG>
+</FORM>

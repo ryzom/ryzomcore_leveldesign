@@ -1,0 +1,390 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.8 $" State="modified">
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_idle.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_applause.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_chasser.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_grattete.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_mainsurgenou.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_menacant.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_montre_sol.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_montre_homme.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_salut.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_non.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_oui.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kamiforet_Idle.anim"/>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_marche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_marche_destructurer.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kamiforet_Walk.anim"/>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_course.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_course_destructure.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kamiforet_Run.anim"/>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_tourne_gauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_demitour_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_tourne_droite.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_demitour_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_tourne_gauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_demitour_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_tourne_droite.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_demitour_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_tourne_gauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_demitour_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_tourne_droite.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_demitour_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="offensive_cast_begin">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="offensive_cast_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="offensive_cast_success">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kami_preacher_mort.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+
+
+<!-- CAST -->
+<!-- Offensive Cast -->
+<STRUCT Name="offensive_cast_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="offensive_cast_begin"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="offensive_cast_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="offensive_cast_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="offensive_cast_fumble"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="offensive_cast_success"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="offensive_cast_link"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="offensive_cast_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Curative Cast -->
+<STRUCT Name="curative_cast_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="curative_cast_begin"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="curative_cast_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="curative_cast_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="curative_cast_fumble"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="curative_cast_success"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="curative_cast_link"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="curative_cast_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Mixed Cast -->
+<STRUCT Name="mixed_cast_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="mixed_cast_begin"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="mixed_cast_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="mixed_cast_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="mixed_cast_fumble"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="mixed_cast_success"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="mixed_cast_link"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="mixed_cast_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+
+<!-- Acid -->
+<STRUCT Name="cast_acid_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_acid_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_acid_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_acid_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Blind -->
+<STRUCT Name="cast_blind_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_blind_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_blind_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_blind_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Cold -->
+<STRUCT Name="cast_cold_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_cold_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_cold_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_cold_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Elec -->
+<STRUCT Name="cast_elec_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_elec_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_elec_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_elec_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Fear -->
+<STRUCT Name="cast_fear_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_fear_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_fear_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_fear_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Fire -->
+<STRUCT Name="cast_fire_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_fire_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_fire_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_fire_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Heal HP -->
+<STRUCT Name="cast_healhp_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_healhp_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_healhp_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_healhp_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Mad -->
+<STRUCT Name="cast_mad_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_mad_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_mad_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_mad_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Poison -->
+<STRUCT Name="cast_poison_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_poison_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_poison_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_poison_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Root -->
+<STRUCT Name="cast_root_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_root_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_root_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_root_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Rot -->
+<STRUCT Name="cast_rot_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_rot_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_rot_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_rot_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Shock -->
+<STRUCT Name="cast_shock_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_shock_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_shock_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_shock_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Sleep -->
+<STRUCT Name="cast_sleep_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_sleep_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_sleep_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_sleep_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Slow -->
+<STRUCT Name="cast_slow_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_slow_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_slow_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_slow_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<!-- Stun -->
+<STRUCT Name="cast_stun_init"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_init.anim"/></STRUCT>
+<STRUCT Name="cast_stun_loop"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_loop.anim"/></STRUCT>
+<STRUCT Name="cast_stun_end"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+<STRUCT Name="cast_stun_fail"><ARRAY Name="animations"><STRUCT><ATOM Name="filename" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT></ARRAY><ATOM Name="LodCharacterAnimation" Value="TR_MO_Kami_preacher_magie_end_ok.anim"/></STRUCT>
+
+
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:24:36 2002 (corvazier) File converted from old format
+Thu Jun 20 17:51:25 2002 (gomes) .death_idle.animations[0].filename = TR_MO_Coureur_Idle_Dead.anim
+Thu Jun 20 17:51:25 2002 (gomes) .death_idle.animations[0].max_speed_factor = 1.1
+Thu Jun 20 17:51:25 2002 (gomes) .death_idle.animations[0].min_speed_factor = 0.9
+Thu Jun 20 17:51:25 2002 (gomes) formName Resized = 1
+Wed Jul 03 17:37:43 2002 (gomes) .idle.animations[0].filename = TR_MO_kamiforet_Idle.max
+Wed Jul 03 17:39:38 2002 (gomes) .about_face_left.animations[0].filename = TR_MO_kamiforet_DemiTourG.max
+Wed Jul 03 17:39:38 2002 (gomes) .about_face_right.animations[0].filename = TR_MO_kamiforet_DemiTourG.max
+
+Wed Jul 03 17:39:38 2002 (gomes) .run.animations[0].filename = TR_MO_kamiforet_Run.max
+Wed Jul 03 17:39:38 2002 (gomes) .strafe_right.animations[0].min_speed_factor = -0.1
+Wed Jul 03 17:39:38 2002 (gomes) .turn_left.animations[0].filename = TR_MO_kamiforet_TurnG.max
+Wed Jul 03 17:39:38 2002 (gomes) .turn_right.animations[0].filename = TR_MO_kamiforet_TurnD.max
+Wed Jul 03 17:39:38 2002 (gomes) .walk.animations[0].filename = TR_MO_kamiforet_walk.max
+
+Wed Jul 03 17:39:38 2002 (gomes) formName Resized = 0
+Wed Jul 03 17:52:26 2002 (gomes) .about_face_left.animations[0].filename = TR_MO_Kamiforet_DemiTourG.anim
+Wed Jul 03 17:52:26 2002 (gomes) .about_face_right.animations[0].filename = TR_MO_Kamiforet_DemiTourG.anim
+Wed Jul 03 17:52:26 2002 (gomes) .idle.animations[0].filename = TR_MO_Kamiforet_Idle.anim
+Wed Jul 03 17:52:26 2002 (gomes) .run.animations[0].filename = TR_MO_Kamiforet_Walk.anim
+Wed Jul 03 17:52:26 2002 (gomes) .turn_left.animations[0].filename = TR_MO_Kamiforet_TurnG.anim
+Wed Jul 03 17:52:26 2002 (gomes) .turn_right.animations[0].filename = TR_MO_Kamiforet_TurnD.anim
+Wed Jul 03 17:52:26 2002 (gomes) .walk.animations[0].filename = TR_MO_Kamiforet_Walk.anim
+Wed Jul 03 17:52:26 2002 (gomes) formName Resized = 0
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[10].filename = TR_MO_kamiforet_Oui.anim
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[10].max_speed_factor = 1.1
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[10].min_speed_factor = 0.9
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[11].filename = TR_MO_kamiforet_Rire.anim
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[11].max_speed_factor = 1.1
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[11].min_speed_factor = 0.9
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[1].filename = TR_MO_kamiforet_Applause.anim
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[1].max_speed_factor = 1.1
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[1].min_speed_factor = 0.9
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[2].filename = TR_MO_kamiforet_bonjour.anim
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[2].max_speed_factor = 1.1
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[2].min_speed_factor = 0.9
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[3].filename = TR_MO_kamiforet_Chasser.anim
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[3].max_speed_factor = 1.1
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[3].min_speed_factor = 0.9
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[4].filename = TR_MO_kamiforet_Grate_menton.anim
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[4].max_speed_factor = 1.1
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[4].min_speed_factor = 0.9
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[5].filename = TR_MO_kamiforet_mains_hanche.anim
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[5].max_speed_factor = 1.1
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[5].min_speed_factor = 0.9
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[6].filename = TR_MO_kamiforet_Mena&#x786E;t.anim
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[6].max_speed_factor = 1.1
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[6].min_speed_factor = 0.9
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[7].filename = TR_MO_kamiforet_MontrerBas.anim
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[7].max_speed_factor = 1.1
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[7].min_speed_factor = 0.9
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[8].filename = TR_MO_kamiforet_MontrerHaut.anim
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[8].max_speed_factor = 1.1
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[8].min_speed_factor = 0.9
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[9].filename = TR_MO_kamiforet_Non.anim
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[9].max_speed_factor = 1.1
+Wed Jul 24 14:06:28 2002 (gomes) .idle.animations[9].min_speed_factor = 0.9
+Wed Jul 24 14:06:28 2002 (gomes) formName Resized = 12
+Fri Aug 02 17:23:01 2002 (gomes) .idle.animations[6].filename = TR_MO_kamiforet_Mena&#x786E;t.anim
+Fri Aug 02 17:24:06 2002 (gomes) .idle.animations[6].filename = TR_MO_kamiforet_Mena&#x786E;t.anim
+Fri Aug 02 17:25:28 2002 (gomes) .idle.animations[6].filename = TR_MO_kamiforet_Mena&#x786E;t.anim
+Fri Aug 02 17:27:03 2002 (gomes) .idle.animations[6].filename = TR_MO_kamiforet_Menacant.anim
+Thu Aug 29 17:48:24 2002 (gomes) .about_face_left_to_backward.animations[0].filename = TR_MO_Kamiforet_DemiTourG.anim
+Thu Aug 29 17:48:24 2002 (gomes) .about_face_left_to_walk.animations[0].filename = TR_MO_Kamiforet_DemiTourG.anim
+Thu Aug 29 17:48:24 2002 (gomes) .about_face_right.animations[0].filename = TR_MO_Kamiforet_DemiTourD.anim
+Thu Aug 29 17:48:24 2002 (gomes) .about_face_right_to_backward.animations[0].filename = TR_MO_Kamiforet_DemiTourD.anim
+Thu Aug 29 17:48:24 2002 (gomes) .about_face_right_to_walk.animations[0].filename = TR_MO_Kamiforet_DemiTourD.anim
+Thu Aug 29 17:48:24 2002 (gomes) .run.animations[0].filename = TR_MO_Kamiforet_Run.anim
+Thu Aug 29 17:48:24 2002 (gomes) .turn_left_to_backward.animations[0].filename = TR_MO_Kamiforet_TurnG.anim
+Thu Aug 29 17:48:24 2002 (gomes) .turn_left_to_walk.animations[0].filename = TR_MO_Kamiforet_TurnG.anim
+Thu Aug 29 17:48:24 2002 (gomes) .turn_right_to_backward.animations[0].filename = TR_MO_Kamiforet_TurnD.anim
+Thu Aug 29 17:48:24 2002 (gomes) .turn_right_to_walk.animations[0].filename = TR_MO_Kamiforet_TurnD.anim
+Thu Aug 29 17:48:24 2002 (gomes) formName Resized = 1
+Tue Dec 17 10:59:52 2002 (beaume) .idle.LodCharacterAnimation = TR_MO_Kamiforet_Idle.anim
+Tue Dec 17 10:59:52 2002 (beaume) .run.LodCharacterAnimation = TR_MO_Kamiforet_Run.anim
+Tue Dec 17 10:59:52 2002 (beaume) .walk.LodCharacterAnimation = TR_MO_Kamiforet_Walk.anim
+Tue Mar 11 15:41:55 2003 (arnaudb) .turn_left.animations[1].filename = TR_MO_kamiforet_DemiTourG.anim
+Tue Mar 11 15:41:55 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = TR_MO_kamiforet_DemiTourG.anim
+Tue Mar 11 15:41:55 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = TR_MO_kamiforet_DemiTourG.anim
+Tue Mar 11 15:41:55 2003 (arnaudb) .turn_right.animations[1].filename = TR_MO_kamiforet_DemiTourD.anim
+Tue Mar 11 15:41:55 2003 (arnaudb) .turn_right_to_backward.animations[1].filename = TR_MO_kamiforet_DemiTourD.anim
+Tue Mar 11 15:41:55 2003 (arnaudb) .turn_right_to_walk.animations[1].filename = TR_MO_kamiforet_DemiTourD.anim
+Tue Mar 11 15:41:55 2003 (arnaudb) formName Resized = 2
+Tue Mar 11 18:02:27 2003 (arnaudb) .idle.animations[0].filename = TR_MO_Kami_preacher_idle.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .idle.animations[11].filename = TR_MO_Kami_preacher_montre_homme.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .idle.animations[1].filename = TR_MO_Kami_preacher_applause.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .idle.animations[2].filename = TR_MO_Kami_preacher_chasser.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .idle.animations[3].filename = TR_MO_Kami_preacher_grattete.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .idle.animations[4].filename = TR_MO_Kami_preacher_mainsurgenou.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .idle.animations[5].filename = TR_MO_Kami_preacher_menacant.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .idle.animations[6].filename = TR_MO_Kami_preacher_montre_sol.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .idle.animations[7].filename = TR_MO_Kami_preacher_montre_homme.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .idle.animations[8].filename = TR_MO_Kami_preacher_salut.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .idle.animations[9].filename = TR_MO_Kami_preacher_non.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .run.animations[0].filename = TR_MO_Kami_preacher_course.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .run.animations[1].filename = TR_MO_Kami_preacher_course_destructure.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .turn_left.animations[0].filename = TR_MO_Kami_preacher_tourne_gauche.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .turn_left.animations[1].filename = TR_MO_Kami_preacher_demitour_gauche.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .turn_left_to_backward.animations[0].filename = TR_MO_Kami_preacher_tourne_gauche.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = TR_MO_Kami_preacher_demitour_gauche.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .turn_left_to_walk.animations[0].filename = TR_MO_Kami_preacher_tourne_gauche.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = TR_MO_Kami_preacher_demitour_gauche.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .turn_right.animations[0].filename = TR_MO_Kami_preacher_tourne_droite.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .turn_right.animations[1].filename = TR_MO_Kami_preacher_demitour_droite.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .turn_right_to_backward.animations[0].filename = TR_MO_Kami_preacher_tourne_droite.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .turn_right_to_backward.animations[1].filename = TR_MO_Kami_preacher_demitour_droite.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .turn_right_to_walk.animations[0].filename = TR_MO_Kami_preacher_tourne_droite.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .turn_right_to_walk.animations[1].filename = TR_MO_Kami_preacher_demitour_droite.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .walk.animations[0].filename = TR_MO_Kami_preacher_marche.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) .walk.animations[1].filename = TR_MO_Kami_preacher_marche_destructurer.anim
+Tue Mar 11 18:02:27 2003 (arnaudb) formName Resized = 2
+Tue Jan 20 17:57:31 2004 (beaume) .death_mode.animations[0].filename = TR_MO_Kami_preacher_mort.anim
+Tue Jan 20 17:57:31 2004 (beaume) formName Resized = 1
+Thu Jan 22 19:02:57 2004 (beaume) .curative_cast_begin.animations[0].filename = TR_MO_Kami_preacher_magie_init.anim
+Thu Jan 22 19:02:57 2004 (beaume) .curative_cast_loop.animations[0].filename = TR_MO_Kami_preacher_magie_loop.anim
+Thu Jan 22 19:02:57 2004 (beaume) .curative_cast_success.animations[0].filename = TR_MO_Kami_preacher_magie_end_ok.anim
+Thu Jan 22 19:02:57 2004 (beaume) .offensive_cast_begin.animations[0].filename = TR_MO_Kami_preacher_magie_init.anim
+Thu Jan 22 19:02:57 2004 (beaume) .offensive_cast_loop.animations[0].filename = TR_MO_Kami_preacher_magie_loop.anim
+Thu Jan 22 19:02:57 2004 (beaume) .offensive_cast_success.animations[0].filename = TR_MO_Kami_preacher_magie_end_ok.anim
+Thu Jan 22 19:02:57 2004 (beaume) formName Resized = 1
+Fri Jan 23 10:34:00 2004 (beaume) formName Resized = 0
+Tue Feb 24 14:53:24 2004 (beaume) .defaultHeadControl = false
+Wed Mar 17 14:59:39 2004 (beaume) .idle.animations[10].filename = TR_MO_Kami_preacher_oui.anim</LOG>
+</FORM>

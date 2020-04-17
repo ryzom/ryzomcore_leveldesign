@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackBeginFX = cast_off_begin_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackEndFX = cast_off_end_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackFailFX = cast_off_fail_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackLoopFX = cast_off_loop_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ImpactFX = acid_impact.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileDelay = 0.14
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileFX = magic_projectile_acid_bomb.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileMode = Bomb
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.AttackType = Magic
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.SpellID = Acid
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.SpellMode = Bomb
+Fri Feb 06 12:19:49 2004 (vizerie) formName Resized = 60
+Mon Feb 09 10:59:27 2004 (vizerie) .Attacks[0].Attack.PlayImpactAnim = false
+Mon Feb 09 15:21:20 2004 (vizerie) .Attacks[0].Attack.IsImpactLocalised = true
+Mon Feb 09 15:21:20 2004 (vizerie) .Attacks[0].ID.AttackType = Melee
+Mon Feb 09 15:21:20 2004 (vizerie) formName Resized = 1
+Tue Feb 10 14:59:35 2004 (vizerie) .Attacks[0].Attack.ProjectileMode = Bomb
+Thu Feb 19 16:28:50 2004 (gatto) .Attacks[1].Attack.IsImpactLocalised = true
+Thu Feb 19 16:28:50 2004 (gatto) .Attacks[1].Attack.PlayImpactFXOnlyOnMainTarget = false
+Thu Feb 19 16:28:50 2004 (gatto) .Attacks[1].ID.AttackType = CreatureAttack
+Thu Feb 19 16:28:50 2004 (gatto) .Attacks[1].ID.CreatureAttackIndex = 0
+Thu Feb 19 16:28:50 2004 (gatto) formName Resized = 3
+Thu Feb 19 16:29:19 2004 (gatto) .Attacks[2].ID.CreatureAttackIndex = 1
+Thu Feb 19 16:29:19 2004 (gatto) formName Pasted = 
+Mon Feb 20 15:17:15 2006 (gueney) formName Resized = 0</LOG>
+</FORM>

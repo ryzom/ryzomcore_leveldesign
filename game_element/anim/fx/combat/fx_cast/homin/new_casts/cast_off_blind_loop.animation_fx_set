@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_cast_base.animation_fx_set"/>
+  <STRUCT>
+    <STRUCT Name="FX0">
+      <ATOM Name="PSName" Value="mag_off_blind_loop.ps"/>
+      <ATOM Name="Color" Value="255, 255, 255"/>
+      <ATOM Name="ScaleFX" Value="true"/>
+      <STRUCT Name="StickMode">
+        <ATOM Name="StickMode" Value="UserBone"/>
+        <ATOM Name="UserBone" Value="Bip01 Spine1"/>
+      </STRUCT>
+      <ATOM Name="RepeatMode" Value="Respawn"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Feb 05 19:15:32 2004 (vizerie) .FX0.PSName = fdsfdsf
+Wed Jul 21 10:28:15 2004 (gatto) .FX0.RepeatMode = Respawn
+Wed Jul 21 10:28:40 2004 (gatto) .FX0.PSName = mag_off_blind_loop.ps
+Wed Jul 21 10:42:18 2004 (gatto) .FX0.ScaleFX = true</LOG>
+</FORM>

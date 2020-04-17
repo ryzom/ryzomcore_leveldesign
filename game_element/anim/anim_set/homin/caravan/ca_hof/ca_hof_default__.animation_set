@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <STRUCT>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_idle.anim"/>
+          <ATOM Name="next1" Value="0"/>
+          <ATOM Name="next1 weight" Value="10"/>
+          <ATOM Name="next2" Value="1"/>
+          <ATOM Name="next3" Value="2"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_idle_regarde_dr.anim"/>
+          <ATOM Name="next1" Value="0"/>
+          <ATOM Name="next1 weight" Value="10"/>
+          <ATOM Name="next2" Value="2"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_idle_regarde_go.anim"/>
+          <ATOM Name="next1" Value="0"/>
+          <ATOM Name="next1 weight" Value="10"/>
+          <ATOM Name="next2" Value="1"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_marche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_course.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_marche_arriere.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_tourne_go.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_demitour_go.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_tourne_dr.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_demitour_dr.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_tourne_go.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_demitour_go.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_tourne_dr.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_demitour_dr.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_tourne_go.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_demitour_go.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_tourne_dr.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_demitour_dr.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_straf_go.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_straf_dr.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="impact">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_idle_impact.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_begin">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_stun_init.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_stun_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_stun_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="CA_HOF_mort.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="kneel">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_salut_incline.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Dec 19 10:24:18 2002 (beaume) formName Resized = 0
+Thu Dec 19 10:32:24 2002 (beaume) .backward.animations[0].filename = CA_HOF_marche_arriere.anim
+Thu Dec 19 10:32:24 2002 (beaume) .death.animations[0].filename = CA_HOF_mort.anim
+Thu Dec 19 10:32:24 2002 (beaume) .death_idle.animations[0].filename = CA_HOF_mort_idle.anim
+Thu Dec 19 10:32:24 2002 (beaume) .idle.animations[0].filename = CA_HOF_idle.anim
+Thu Dec 19 10:32:24 2002 (beaume) .idle.animations[1].filename = CA_HOF_idle_regarde_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .idle.animations[2].filename = CA_HOF_idle_regarde_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .run.animations[0].filename = CA_HOF_course.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left.animations[0].filename = CA_HOF_tourne_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left.animations[1].filename = CA_HOF_demitour_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left_to_backward.animations[0].filename = CA_HOF_tourne_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left_to_backward.animations[1].filename = CA_HOF_demitour_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left_to_walk.animations[0].filename = CA_HOF_tourne_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_left_to_walk.animations[1].filename = CA_HOF_demitour_go.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right.animations[0].filename = CA_HOF_tourne_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right.animations[1].filename = CA_HOF_demitour_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right_to_backward.animations[0].filename = CA_HOF_tourne_dr.anim
+
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right_to_backward.animations[1].filename = CA_HOF_demitour_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right_to_walk.animations[0].filename = CA_HOF_tourne_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .turn_right_to_walk.animations[1].filename = CA_HOF_demitour_dr.anim
+Thu Dec 19 10:32:24 2002 (beaume) .walk.animations[0].filename = CA_HOF_marche.anim
+Thu Dec 19 10:32:24 2002 (beaume) formName Resized = 1
+Tue Jun 10 11:47:42 2003 (beaume) .death_mode.animations[0].filename = CA_HOF_mort.anim
+Tue Jun 10 11:47:42 2003 (beaume) formName Resized = 1
+Wed Jul 09 15:36:46 2003 (beaume) .impact.animations[0].filename = CA_HOF_idle_impact.anim
+Wed Jul 09 15:36:46 2003 (beaume) .strafe_left.animations[0].filename = CA_HOF_straf_go.anim
+Wed Jul 09 15:36:46 2003 (beaume) .strafe_right.animations[0].filename = CA_HOF_straf_dr.anim
+Wed Jul 09 15:36:46 2003 (beaume) .stun_begin.animations[0].filename = CA_HOF_stun_init.anim
+Wed Jul 09 15:36:46 2003 (beaume) .stun_end.animations[0].filename = CA_HOF_stun_end.anim
+Wed Jul 09 15:36:46 2003 (beaume) .stun_loop.animations[0].filename = CA_HOF_stun_loop.anim
+Wed Jul 09 15:36:46 2003 (beaume) formName Resized = 1
+Tue Sep 30 14:27:44 2003 (beaume) .kneel.animations[0].filename = FY_HOF_salut_incline.anim
+Tue Sep 30 14:27:44 2003 (beaume) formName Resized = 1
+Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[0].next1 = 0
+Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[0].next1 weight = 10
+Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[0].next2 = 1
+Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[0].next3 = 2
+Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[1].next1 = 0
+Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[1].next1 weight = 10
+Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[1].next2 = 2
+Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[2].next1 = 0
+Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[2].next1 weight = 10
+Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[2].next2 = 1</LOG>
+</FORM>

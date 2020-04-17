@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.4 $" State="modified">
+  <PARENT Filename="_plant_combat__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FO_S3_carnitree_Idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="FO_S3_carnitree_Idle.anim"/>
+    </STRUCT>
+    <STRUCT Name="impact">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FO_S3_carnitree_Impact.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="attack1">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FO_S3_carnitree_Atk1.anim"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="PSName" Value="MO_Carnitree_ATK.ps"/>
+              <ATOM Name="ScaleFX" Value="true"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="UserBone"/>
+                <ATOM Name="UserBone" Value="dard"/>
+              </STRUCT>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="1.610"/>
+    </STRUCT>
+    <STRUCT Name="attack2">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FO_S3_carnitree_Atk2.anim"/>
+          <STRUCT Name="fx_set">
+            <STRUCT Name="FX0">
+              <ATOM Name="ScaleFX" Value="true"/>
+              <STRUCT Name="StickMode">
+                <ATOM Name="StickMode" Value="UserBone"/>
+                <ATOM Name="UserBone" Value="dard"/>
+              </STRUCT>
+            </STRUCT>
+          </STRUCT>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="1.610"/>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FO_S3_carnitree_Death.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="FO_S3_carnitree_Death.anim"/>
+    </STRUCT>
+    <STRUCT Name="rest_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FO_S3_carnitree_Faible.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 16:14:11 2002 (puzin)
+Mon Dec 22 16:32:25 2003 (gatto) .attack1.animations[0].fx_set.FX0.PSName = MO_Carnitree_ATK.ps
+Mon Dec 22 16:32:25 2003 (gatto) .attack1.animations[0].fx_set.FX0.ScaleFX = true
+Mon Dec 22 16:32:25 2003 (gatto) .attack1.animations[0].fx_set.FX0.StickMode.StickMode = UserBone
+Mon Dec 22 16:32:25 2003 (gatto) .attack1.animations[0].fx_set.FX0.StickMode.UserBone = dard
+Mon Dec 22 16:32:25 2003 (gatto) .attack2.animations[0].fx_set.FX0.PSName = MO_Carnitree_ATK.ps
+Mon Dec 22 16:32:25 2003 (gatto) .attack2.animations[0].fx_set.FX0.ScaleFX = true
+Mon Dec 22 16:32:25 2003 (gatto) .attack2.animations[0].fx_set.FX0.StickMode.StickMode = UserBone
+Mon Dec 22 16:32:25 2003 (gatto) .attack2.animations[0].fx_set.FX0.StickMode.UserBone = dard
+Tue Feb 17 17:33:38 2004 (gatto) .attack2.animations[0].fx_set.FX0.PSName = </LOG>
+</FORM>

@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <ARRAY Name="Attacks">
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="Range"/>
+          <ATOM Name="RangeWeaponType" Value="Generic"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Spray"/>
+          <ATOM Name="ProjectileDelay" Value="0.65"/>
+          <ATOM Name="ImpactFX" Value="range_impact_karavan.animation_fx_set"/>
+          <ATOM Name="IsImpactLocalised" Value="true"/>
+          <STRUCT Name="DefaultCastingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 R Forearm"/>
+          </STRUCT>
+          <ATOM Name="ForceUseProjectileDelay" Value="true"/>
+          <ATOM Name="AdditionnalStartOffsetX" Value="0.25"/>
+          <ATOM Name="AdditionnalStartOffsetZ" Value="-0.07"/>
+        </STRUCT>
+      </STRUCT>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackBeginFX = cast_off_begin_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackEndFX = cast_off_end_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackFailFX = cast_off_fail_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.AttackLoopFX = cast_off_loop_homin.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ImpactFX = acid_impact.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileDelay = 0.14
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileFX = magic_projectile_acid_bomb.animation_fx_set
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].Attack.ProjectileMode = Bomb
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.AttackType = Magic
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.SpellID = Acid
+Fri Feb 06 12:19:49 2004 (vizerie) .Attacks[0].ID.SpellMode = Bomb
+Fri Feb 06 12:19:49 2004 (vizerie) formName Resized = 60
+Mon Feb 09 10:59:27 2004 (vizerie) .Attacks[0].Attack.PlayImpactAnim = false
+Mon Feb 09 15:21:20 2004 (vizerie) .Attacks[0].Attack.IsImpactLocalised = true
+Mon Feb 09 15:21:20 2004 (vizerie) .Attacks[0].ID.AttackType = Melee
+Mon Feb 09 15:21:20 2004 (vizerie) formName Resized = 1
+Mon Feb 09 15:47:10 2004 (vizerie) .Attacks[0].Attack.ImpactFX = range_impact_generic.animation_fx
+Mon Feb 09 15:47:10 2004 (vizerie) .Attacks[0].ID.AttackType = Range
+Mon Feb 09 15:47:10 2004 (vizerie) formName Resized = 3
+Mon Feb 09 15:54:24 2004 (vizerie) .Attacks[1].ID.AttackType = Range
+Mon Feb 09 15:54:24 2004 (vizerie) .Attacks[1].ID.RangeWeaponType = Gatlin
+Mon Feb 09 15:56:18 2004 (vizerie) .Attacks[1].Attack.ImpactFX = range_impact_gatlin.animation_fx
+Mon Feb 09 15:56:18 2004 (vizerie) .Attacks[2].Attack.ImpactFX = range_impact_missile.animation_fx
+Mon Feb 09 15:56:18 2004 (vizerie) .Attacks[2].Attack.PlayImpactFXOnlyOnMainTarget = true
+Mon Feb 09 15:56:18 2004 (vizerie) .Attacks[2].Attack.ProjectileFX = range_projectile_missile.animation_fx
+Mon Feb 09 15:56:18 2004 (vizerie) .Attacks[2].Attack.ProjectileMode = Chain
+Mon Feb 09 15:56:18 2004 (vizerie) .Attacks[2].ID.AttackType = Range
+Mon Feb 09 15:56:18 2004 (vizerie) .Attacks[2].ID.RangeWeaponType = Missile
+Tue Feb 10 15:00:01 2004 (vizerie) .Attacks[0].Attack.ProjectileMode = Spray
+Tue Feb 10 15:00:01 2004 (vizerie) .Attacks[1].Attack.ProjectileMode = Spray
+Tue Feb 10 15:00:01 2004 (vizerie) .Attacks[2].Attack.ProjectileMode = Spray
+Tue Feb 10 15:42:31 2004 (vizerie) .Attacks[0].Attack.ImpactFX = range_impact_generic.animation_fx_set
+Tue Feb 10 15:42:31 2004 (vizerie) .Attacks[1].Attack.ImpactFX = range_impact_gatlin.animation_fx_set
+Tue Feb 10 15:42:31 2004 (vizerie) .Attacks[2].Attack.ImpactFX = range_impact_missile.animation_fx_set
+Tue Feb 10 15:42:31 2004 (vizerie) .Attacks[2].Attack.ProjectileFX = range_projectile_missile.animation_fx_set
+Tue Feb 10 18:27:36 2004 (vizerie) .Attacks[2].Attack.DefaultAimingPoint.StickMode = UserBone
+Tue Feb 10 18:27:36 2004 (vizerie) .Attacks[2].Attack.DefaultAimingPoint.UserBone = Bip01 Head
+Wed Apr 21 18:53:36 2004 (nouveau) .Attacks[0].ID.RangeWeaponType = 0
+Wed Apr 21 18:54:55 2004 (nouveau) .Attacks[0].ID.RangeWeaponType = Generic
+Wed Mar 23 14:55:44 2005 (tran) .Attacks[0].Attack.AdditionnalStartOffsetX = 0.25
+Wed Mar 23 14:55:44 2005 (tran) .Attacks[0].Attack.AdditionnalStartOffsetY = 
+Wed Mar 23 14:55:44 2005 (tran) .Attacks[0].Attack.AdditionnalStartOffsetZ = -0.07
+Wed Mar 23 14:55:44 2005 (tran) .Attacks[0].Attack.DefaultCastingPoint.StickMode = UserBone
+Wed Mar 23 14:55:44 2005 (tran) .Attacks[0].Attack.DefaultCastingPoint.UserBone = Bip01 R Forearm
+Wed Mar 23 14:55:44 2005 (tran) .Attacks[0].Attack.ImpactFX = range_impact_karavan.animation_fx_set
+Wed Mar 23 14:56:47 2005 (tran) formName Resized = 1
+Tue Mar 29 17:18:46 2005 (tran) .Attacks[0].Attack.ProjectileDelay = 0.5
+Tue Mar 29 18:04:06 2005 (tran) .Attacks[0].Attack.ProjectileDelay = 0.3
+Tue Mar 29 18:19:51 2005 (tran) .Attacks[0].Attack.ProjectileDelay = 0.2
+Tue Mar 29 18:45:12 2005 (tran) .Attacks[0].Attack.ProjectileDelay = 0.1
+Tue Mar 29 18:55:08 2005 (tran) .Attacks[0].Attack.ProjectileDelay = 0
+Wed Mar 30 16:59:51 2005 (tran) .Attacks[0].Attack.DefaultCastingPoint.UserBone = Bip01 L Forearm
+Wed Mar 30 17:27:07 2005 (tran) .Attacks[0].Attack.DefaultCastingPoint.UserBone = Bip01 R Forearm
+Thu Mar 31 15:21:57 2005 (tran) .Attacks[0].Attack.ForceUseProjectileDelay = true
+Thu Mar 31 15:21:57 2005 (tran) .Attacks[0].Attack.ProjectileDelay = 0.8
+Fri Apr 01 16:01:20 2005 (tran) .Attacks[0].Attack.ProjectileDelay = 0.3</LOG>
+</FORM>

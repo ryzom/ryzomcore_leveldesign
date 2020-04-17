@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.3 $" State="modified">
+  <PARENT Filename="_combat.animation_set"/>
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_idle_engarde.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_intimidation.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_intimidation2.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_marche.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Ryzoholok_marche.anim"/>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_course.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Ryzoholok_course.anim"/>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_recule.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_engarde_tourneG.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_engarde_demitourG.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_engarde_tourneD.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_engarde_demitourD.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_engarde_tourneG.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_engarde_demitourG.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_engarde_tourneD.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_engarde_demitourD.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_engarde_tourneG.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_engarde_demitourG.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_engarde_tourneD.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_engarde_demitourD.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_strafG.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_tourneD.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="impact">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_impact.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_begin">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_stun_engarde_init.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_stun_engarde_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_stun_engarde_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="attack1">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_morsure.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="walk atk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_EnGarde_Avance_Atk.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="run atk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_course_Atk.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="backward atk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_recule_Atk.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_mort.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 16:14:11 2002 (puzin)
+Mon Dec 16 18:06:09 2002 (beaume) .death.LodCharacterAnimation = TR_MO_Ryzoholok_mort.anim
+Mon Dec 16 18:06:09 2002 (beaume) .death_idle.LodCharacterAnimation = TR_MO_Ryzoholok_idle_mort.anim
+Mon Dec 16 18:06:09 2002 (beaume) .run.LodCharacterAnimation = TR_MO_Ryzoholok_course.anim
+Mon Dec 16 18:06:09 2002 (beaume) .walk.LodCharacterAnimation = TR_MO_Ryzoholok_marche.anim
+Tue Jan 07 14:14:31 2003 (beaume) .backward atk.animations[0].filename = TR_MO_Ryzoholok_recule_Atk.anim
+Tue Jan 07 14:14:31 2003 (beaume) .run atk.animations[0].filename = TR_MO_Ryzoholok_course_Atk.anim
+Tue Jan 07 14:14:31 2003 (beaume) .walk atk.animations[0].filename = TR_MO_Ryzoholok_EnGarde_Avance_Atk.anim
+Tue Jan 07 14:14:31 2003 (beaume) formName Resized = 1
+Tue Mar 18 12:07:53 2003 (arnaudb) .impact.animations[0].filename = TR_MO_Ryzoholok_impact.anim
+Tue Mar 18 12:07:53 2003 (arnaudb) formName Resized = 1
+Fri Jun 06 18:03:18 2003 (beaume) .death_mode.animations[0].filename = TR_MO_Ryzoholok_mort.anim
+Fri Jun 06 18:03:18 2003 (beaume) formName Resized = 1
+Thu Jul 03 12:18:43 2003 (puzin) Form Parents = 
+Mon Dec 01 15:12:37 2003 (beaume) .stun_begin.animations[0].filename = TR_MO_Ryzoholok_stun_engarde_init.anim
+Mon Dec 01 15:12:37 2003 (beaume) .stun_end.animations[0].filename = TR_MO_Ryzoholok_stun_engarde_end.anim
+Mon Dec 01 15:12:37 2003 (beaume) .stun_loop.animations[0].filename = TR_MO_Ryzoholok_stun_engarde_loop.anim
+Mon Dec 01 15:12:37 2003 (beaume) formName Resized = 1
+Thu Jan 15 17:28:32 2004 (beaume) formName Resized = 0
+Fri Mar 19 11:54:36 2004 (beaume) .defaultHeadControl = false</LOG>
+</FORM>

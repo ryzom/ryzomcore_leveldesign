@@ -385,10 +385,475 @@
       </ARRAY>
       <ATOM Name="LodCharacterAnimation" Value="FY_HOF_A_mort.anim"/>
     </STRUCT>
+    <STRUCT Name="afk">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_AFK.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="agree">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_oui.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="angry">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Angry.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="apologize">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_sorry.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="blush">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Blush.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="bow">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Bow.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="bye">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Bye.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="calm">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Calm.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cheer">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Cheer.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="cry">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Cry.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="dance">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_dance.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="disagree">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_non.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="follow">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_folow.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="gesture">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_gesture.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="giggle">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Giggle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="go_away">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Laisse_moi.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="impatient">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Impatient.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="kiss">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Kiss.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="kneel">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Kneel.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="laugh">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Rofl.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="lol">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Rofl.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="point">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Pointer.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="roar">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Roar.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="sad">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_shootpoussiere.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="smile">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_smile.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="thank">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Bow.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="unhappy">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_veto.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="victory">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Victory.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="wave">
+      <ATOM Name="Display Objects" Value="true"/>
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="FY_HOF_Emot_A_Bow.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
-  <LOG></LOG>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:24:35 2002 (corvazier) File converted from old format
+Thu Jul 11 19:17:22 2002 (beaume) .run.animations[0].filename = FY_HOF_A_course.anim
+Tue Jul 30 23:47:00 2002 (puzin) Form Parents = 
+Thu Aug 29 11:32:54 2002 (beaume) .about_face_left.animations[0].filename = FY_HOF_A_demitour_go.anim
+Thu Aug 29 11:32:54 2002 (beaume) .about_face_right.animations[0].filename = FY_HOF_A_demitour_dr.anim
+Thu Aug 29 11:32:54 2002 (beaume) .attack1.animations[0].filename = FY_HOF_Co_A1m_coup1.anim
+Thu Aug 29 11:32:54 2002 (beaume) .attack2.animations[0].filename = FY_HOF_Co_A1m_coup2.anim
+Thu Aug 29 11:32:54 2002 (beaume) .backward.animations[0].filename = FY_HOF_A_marche_arriere.anim
+Thu Aug 29 11:32:54 2002 (beaume) .death.animations[0].filename = FY_HOF_A_mort.anim
+Thu Aug 29 11:32:54 2002 (beaume) .death_idle.animations[0].filename = FY_HOF_A_mort_idle.anim
+Thu Aug 29 11:32:54 2002 (beaume) .idle.animations[0].filename = FY_HOF_A_idle.anim
+Thu Aug 29 11:32:54 2002 (beaume) .strafe_left.animations[0].filename = FY_HOF_A_strafgauche.anim
+Thu Aug 29 11:32:54 2002 (beaume) .strafe_right.animations[0].filename = FY_HOF_A_strafdroite.anim
+Thu Aug 29 11:32:54 2002 (beaume) .turn_left.animations[0].filename = FY_HOF_A_tourne_gauche.anim
+Thu Aug 29 11:32:54 2002 (beaume) .turn_right.animations[0].filename = FY_HOF_A_tourne_droite.anim
+Thu Aug 29 11:32:54 2002 (beaume) .walk.animations[0].filename = FY_HOF_A_marche.anim
+Thu Aug 29 11:32:54 2002 (beaume) formName Resized = 1
+Thu Aug 29 11:33:52 2002 (beaume) formName Resized = 1
+
+Thu Aug 29 11:45:53 2002 (beaume) .about_face_left_to_backward.animations[0].filename = FY_HOF_A_demitour_go.anim
+Thu Aug 29 11:45:53 2002 (beaume) .about_face_left_to_walk.animations[0].filename = FY_HOF_A_demitour_go.anim
+Thu Aug 29 11:45:53 2002 (beaume) .about_face_right_to_backward.animations[0].filename = FY_HOF_A_demitour_dr.anim
+Thu Aug 29 11:45:53 2002 (beaume) .about_face_right_to_walk.animations[0].filename = FY_HOF_A_demitour_dr.anim
+Thu Aug 29 11:45:53 2002 (beaume) .turn_left_to_backward.animations[0].filename = FY_HOF_A_tourne_gauche.anim
+Thu Aug 29 11:45:53 2002 (beaume) .turn_left_to_walk.animations[0].filename = FY_HOF_A_tourne_gauche.anim
+Thu Aug 29 11:45:53 2002 (beaume) .turn_right_to_backward.animations[0].filename = FY_HOF_A_tourne_droite.anim
+Thu Aug 29 11:45:53 2002 (beaume) .turn_right_to_walk.animations[0].filename = FY_HOF_A_tourne_droite.anim
+Thu Aug 29 12:04:18 2002 (beaume) .idle.animations[1].filename = FY_HOF_A_idle_attente.anim
+Thu Aug 29 12:04:18 2002 (beaume) .idle.animations[2].filename = FY_HOF_A_idle_attente2.anim
+Thu Aug 29 12:04:18 2002 (beaume) formName Resized = 3
+Tue Jan 07 11:32:19 2003 (beaume) .turn_left.animations[1].filename = FY_HOF_A_demitour_go.anim
+Tue Jan 07 11:32:19 2003 (beaume) .turn_left_to_backward.animations[1].filename = FY_HOF_A_demitour_go.anim
+Tue Jan 07 11:32:19 2003 (beaume) .turn_left_to_walk.animations[1].filename = FY_HOF_A_demitour_go.anim
+Tue Jan 07 11:32:19 2003 (beaume) .turn_right.animations[1].filename = FY_HOF_A_demitour_dr.anim
+Tue Jan 07 11:32:19 2003 (beaume) .turn_right_to_backward.animations[1].filename = FY_HOF_A_demitour_dr.anim
+Tue Jan 07 11:32:19 2003 (beaume) .turn_right_to_walk.animations[1].filename = FY_HOF_A_demitour_dr.anim
+Tue Jan 07 11:32:19 2003 (beaume) formName Resized = 2
+Fri Feb 21 14:02:26 2003 (arnaudb) .idle.animations[1].filename = FY_HOF_A_idle_attente3.anim
+Fri Feb 21 14:02:26 2003 (arnaudb) .idle.animations[2].filename = FY_HOF_A_idle_attente4.anim
+
+Wed Mar 19 15:10:46 2003 (arnaudb) .impact.animations[0].filename = FY_HOF_A_impact.anim
+Wed Mar 19 15:10:46 2003 (arnaudb) formName Resized = 1
+Tue Apr 15 23:49:02 2003 (puzin) .turn_left.animations[0].max_speed_factor = 4.0
+Tue Apr 15 23:49:02 2003 (puzin) .turn_left.animations[0].min_speed_factor = 0.5
+Tue Apr 15 23:49:02 2003 (puzin) .turn_left.animations[1].max_speed_factor = 4.0
+Tue Apr 15 23:49:02 2003 (puzin) .turn_left.animations[1].min_speed_factor = 0.5
+Tue Apr 15 23:49:02 2003 (puzin) .turn_right.animations[0].max_speed_factor = 4.0
+Tue Apr 15 23:49:02 2003 (puzin) .turn_right.animations[0].min_speed_factor = 0.5
+Tue Apr 15 23:49:02 2003 (puzin) .turn_right.animations[1].max_speed_factor = 4.0
+Tue Apr 15 23:49:02 2003 (puzin) .turn_right.animations[1].min_speed_factor = 0.5
+Tue Apr 15 23:49:02 2003 (puzin) formName Pasted = 
+Fri Apr 18 18:30:44 2003 (arnaudb) Form Parents = 
+Tue Jun 10 13:54:26 2003 (beaume) .death_mode.LodCharacterAnimation = FY_HOF_A_mort.anim
+Tue Jun 10 13:54:26 2003 (beaume) .death_mode.animations[0].filename = FY_HOF_A_mort.anim
+Tue Jun 10 13:54:26 2003 (beaume) formName Resized = 1
+Thu Jul 10 11:42:56 2003 (beaume) .stun_begin.animations[0].filename = FY_HOF_A_stun_init.anim
+Thu Jul 10 11:42:56 2003 (beaume) .stun_end.animations[0].filename = FY_HOF_A_stun_end.anim
+Thu Jul 10 11:42:56 2003 (beaume) .stun_loop.animations[0].filename = FY_HOF_A_stun_loop.anim
+Thu Jul 10 11:42:56 2003 (beaume) formName Resized = 1
+Tue Oct 28 10:44:46 2003 (beaume) Form Parents = 
+Tue Oct 28 10:52:11 2003 (beaume) .curative_cast_end.animations[0].filename = FY_HOF_A_preinit.anim
+Tue Oct 28 10:52:11 2003 (beaume) .curative_cast_end.animations[0].reverse = true
+Tue Oct 28 10:52:11 2003 (beaume) .curative_cast_init.animations[0].filename = FY_HOF_A_preinit.anim
+Tue Oct 28 10:52:11 2003 (beaume) .mixed_cast_end.animations[0].filename = FY_HOF_A_preinit.anim
+Tue Oct 28 10:52:11 2003 (beaume) .mixed_cast_end.animations[0].reverse = true
+Tue Oct 28 10:52:11 2003 (beaume) .mixed_cast_init.animations[0].filename = FY_HOF_A_preinit.anim
+Tue Oct 28 10:52:11 2003 (beaume) .offensive_cast_end.animations[0].filename = FY_HOF_A_preinit.anim
+Tue Oct 28 10:52:11 2003 (beaume) .offensive_cast_end.animations[0].reverse = true
+Tue Oct 28 10:52:11 2003 (beaume) .offensive_cast_init.animations[0].filename = FY_HOF_A_preinit.anim
+Fri Nov 28 14:50:08 2003 (beaume) .use_begin.animations[0].filename = FY_HOF_A_idle.anim
+Fri Nov 28 14:50:08 2003 (beaume) .use_end.animations[0].filename = FY_HOF_A_idle.anim
+Fri Nov 28 14:50:08 2003 (beaume) .use_loop.animations[0].filename = FY_HOF_A_idle.anim
+Fri Nov 28 14:50:08 2003 (beaume) formName Resized = 1
+Thu Dec 04 14:09:50 2003 (beaume) .use_init.animations[0].filename = FY_HOF_A_preinit.anim
+Thu Dec 04 14:09:50 2003 (beaume) .use_post_end.animations[0].filename = FY_HOF_A_preinit.anim
+Thu Dec 04 14:09:50 2003 (beaume) .use_post_end.animations[0].reverse = true
+Thu Dec 04 14:09:50 2003 (beaume) formName Resized = 1
+Thu Dec 04 14:17:21 2003 (beaume) .use_begin.animations[0].filename = FY_HOF_quartering_init.anim
+Thu Dec 04 14:17:21 2003 (beaume) .use_end.animations[0].filename = FY_HOF_quartering_end.anim
+Thu Dec 04 14:17:21 2003 (beaume) .use_loop.animations[0].filename = FY_HOF_quartering_loop.anim
+Tue Jan 20 10:49:54 2004 (beaume) .loot_init.animations[0].filename = FY_HOF_A_preinit.anim
+Tue Jan 20 10:49:54 2004 (beaume) .loot_post_end.animations[0].filename = FY_HOF_A_preinit.anim
+Tue Jan 20 10:49:54 2004 (beaume) .loot_post_end.animations[0].reverse = true
+Tue Jan 20 10:49:54 2004 (beaume) formName Resized = 0
+Thu Feb 19 12:21:34 2004 (beaume) .afk.animations[0].filename = FY_HOF_Emot_A_AFK.anim
+
+Thu Feb 19 12:21:34 2004 (beaume) .agree.animations[0].filename = FY_HOF_Emot_A_oui.anim
+Thu Feb 19 12:21:34 2004 (beaume) .angry.animations[0].filename = FY_HOF_Emot_A_Angry.anim
+Thu Feb 19 12:21:34 2004 (beaume) .apologize.animations[0].filename = FY_HOF_Emot_A_sorry.anim
+Thu Feb 19 12:21:34 2004 (beaume) .blush.animations[0].filename = FY_HOF_Emot_A_Blush.anim
+Thu Feb 19 12:21:34 2004 (beaume) .bow.animations[0].filename = FY_HOF_Emot_A_Bow.anim
+Thu Feb 19 12:21:34 2004 (beaume) .bye.animations[0].filename = FY_HOF_Emot_A_Bye.anim
+Thu Feb 19 12:21:34 2004 (beaume) .calm.animations[0].filename = FY_HOF_Emot_A_Calm.anim
+Thu Feb 19 12:21:34 2004 (beaume) .cheer.animations[0].filename = FY_HOF_Emot_A_Cheer.anim
+Thu Feb 19 12:21:34 2004 (beaume) .cry.animations[0].filename = FY_HOF_Emot_A_Cry.anim
+Thu Feb 19 12:21:34 2004 (beaume) .dance.animations[0].filename = FY_HOF_Emot_A_dance.anim
+Thu Feb 19 12:21:34 2004 (beaume) .disagree.animations[0].filename = FY_HOF_Emot_A_non.anim
+Thu Feb 19 12:21:34 2004 (beaume) .follow.animations[0].filename = FY_HOF_Emot_A_folow.anim
+Thu Feb 19 12:21:34 2004 (beaume) .gesture.animations[0].filename = FY_HOF_Emot_A_gesture.anim
+Thu Feb 19 12:21:34 2004 (beaume) .giggle.animations[0].filename = FY_HOF_Emot_A_Giggle.anim
+Thu Feb 19 12:21:34 2004 (beaume) .go_away.animations[0].filename = FY_HOF_Emot_A_Laisse_moi.anim
+Thu Feb 19 12:21:34 2004 (beaume) .impatient.animations[0].filename = FY_HOF_Emot_A_Impatient.anim
+Thu Feb 19 12:21:34 2004 (beaume) .kiss.animations[0].filename = FY_HOF_Emot_A_Kiss.anim
+Thu Feb 19 12:21:34 2004 (beaume) .kneel.animations[0].filename = FY_HOF_Emot_A_Kneel.anim
+Thu Feb 19 12:21:34 2004 (beaume) .laugh.animations[0].filename = FY_HOF_Emot_A_Rofl.anim
+Thu Feb 19 12:21:34 2004 (beaume) .lol.animations[0].filename = FY_HOF_Emot_A_Rofl.anim
+Thu Feb 19 12:21:34 2004 (beaume) .point.animations[0].filename = FY_HOF_Emot_A_Pointer.anim
+Thu Feb 19 12:21:34 2004 (beaume) .roar.animations[0].filename = FY_HOF_Emot_A_Roar.anim
+Thu Feb 19 12:21:34 2004 (beaume) .sad.animations[0].filename = FY_HOF_Emot_A_shootpoussiere.anim
+Thu Feb 19 12:21:34 2004 (beaume) .smile.animations[0].filename = FY_HOF_Emot_A_smile.anim
+Thu Feb 19 12:21:34 2004 (beaume) .thank.animations[0].filename = FY_HOF_Emot_A_Bow.anim
+Thu Feb 19 12:21:34 2004 (beaume) .unhappy.animations[0].filename = FY_HOF_Emot_A_veto.anim
+Thu Feb 19 12:21:34 2004 (beaume) .victory.animations[0].filename = FY_HOF_Emot_A_Victory.anim
+Thu Feb 19 12:21:34 2004 (beaume) .wave.animations[0].filename = FY_HOF_Emot_A_Bow.anim
+Thu Feb 19 12:21:34 2004 (beaume) formName Resized = 1
+Thu Feb 19 14:37:05 2004 (beaume) Form Parents = 
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[0].next1 = 1
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[0].next2 = 2
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[1].next1 = 2
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[1].next2 = 3
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[1].next3 = 0
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[2].next1 = 1
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[2].next2 = 3
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[3].filename = fy_hof_a_idle_idle1.anim
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[3].next1 = 4
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[3].next2 = 5
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[3].next3 = 6
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[4].filename = fy_hof_a_idle_idle1_1.anim
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[4].next1 = 5
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[4].next2 = 6
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[4].next3 = 7
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[5].filename = fy_hof_a_idle_idle1_2.anim
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[5].next1 = 4
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[5].next2 = 6
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[5].next3 = 7
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[6].filename = fy_hof_a_idle_idle1_3.anim
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[6].next1 = 4
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[6].next2 = 5
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[7].filename = fy_hof_a_idle_idle1.anim
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[7].next1 = 1
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[7].next2 = 2
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[7].next3 = 0
+Mon May 10 17:27:57 2004 (beaume) .idle.animations[7].reverse = true
+Mon May 10 17:27:57 2004 (beaume) formName Resized = 8
+Thu Jul 08 12:15:08 2004 (coutelas) .idle.animations[0].next1 = 0
+Thu Jul 08 12:15:08 2004 (coutelas) .idle.animations[0].next1 weight = 10
+Thu Jul 08 12:15:08 2004 (coutelas) .idle.animations[0].next2 = 1
+Thu Jul 08 12:15:08 2004 (coutelas) .idle.animations[0].next3 = 2
+Thu Jul 08 12:15:08 2004 (coutelas) .idle.animations[0].next4 = 3
+Thu Jul 08 12:15:48 2004 (coutelas) .idle.animations[1].next1 = 0
+Thu Jul 08 12:15:48 2004 (coutelas) .idle.animations[1].next1 weight = 10
+Thu Jul 08 12:15:48 2004 (coutelas) .idle.animations[1].next2 = 2
+Thu Jul 08 12:15:48 2004 (coutelas) .idle.animations[1].next3 = -1
+Thu Jul 08 12:16:07 2004 (coutelas) .idle.animations[2].next1 = 0
+Thu Jul 08 12:16:07 2004 (coutelas) .idle.animations[2].next1 weight = 10
+Thu Jul 08 12:16:07 2004 (coutelas) .idle.animations[2].next2 = 1
+Thu Jul 08 12:16:52 2004 (coutelas) .idle.animations[3].next1 weight = 10
+Thu Jul 08 12:16:52 2004 (coutelas) .idle.animations[3].next2 = -1
+Thu Jul 08 12:16:52 2004 (coutelas) .idle.animations[3].next3 = -1
+Thu Jul 08 12:17:34 2004 (coutelas) .idle.animations[4].next1 = 4
+Thu Jul 08 12:17:34 2004 (coutelas) .idle.animations[4].next1 weight = 10
+Thu Jul 08 12:17:34 2004 (coutelas) .idle.animations[4].next2 = 5
+Thu Jul 08 12:17:34 2004 (coutelas) .idle.animations[4].next3 = 6
+Thu Jul 08 12:17:57 2004 (coutelas) .idle.animations[5].next2 = 7
+Thu Jul 08 12:17:57 2004 (coutelas) .idle.animations[5].next2 weight = 2
+Thu Jul 08 12:17:57 2004 (coutelas) .idle.animations[5].next3 = -1
+Thu Jul 08 12:18:11 2004 (coutelas) .idle.animations[6].next2 = 7
+Thu Jul 08 12:18:11 2004 (coutelas) .idle.animations[6].next2 weight = 2
+Thu Jul 08 12:18:28 2004 (coutelas) .idle.animations[7].next1 = 0
+Thu Jul 08 12:18:28 2004 (coutelas) .idle.animations[7].next2 = -1
+Thu Jul 08 12:18:28 2004 (coutelas) .idle.animations[7].next3 = -1
+Fri Jul 09 10:47:02 2004 (coutelas) .idle.animations[0].next4 weight = 2
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[0].next2 weight = 40
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[0].next3 weight = 20
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[0].next4 = -1
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[0].next4 weight = 1
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[1].next2 weight = 30
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[1].next3 = 3
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[1].next3 weight = 20
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[2].next2 weight = 30
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[2].next3 = 3
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[2].next3 weight = 40
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[3].next1 weight = 30
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[3].next2 = 5
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[3].next2 weight = 10
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[3].next3 = 6
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[3].next3 weight = 20
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[4].next2 weight = 20
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[4].next3 weight = 30
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[5].next1 = 6
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[5].next1 weight = 30
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[5].next2 weight = 20
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[6].next1 weight = 20
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[6].next2 weight = 40
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[6].next3 = 5
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[6].next3 weight = 15
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[7].next1 weight = 50
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[7].next2 = 1
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[7].next2 weight = 30
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[7].next3 = 2
+Tue Jul 20 18:12:29 2004 (beaume) .idle.animations[7].next3 weight = 20
+Fri Sep 03 18:00:04 2004 (beaume) .idle.animations[3].next2 weight = 1
+Fri Sep 03 18:00:04 2004 (beaume) .idle.animations[4].next2 weight = 2
+Fri Sep 03 18:00:04 2004 (beaume) .idle.animations[6].next3 weight = 5
+Thu Feb 05 11:31:33 2009 (kervala) .afk.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .agree.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .angry.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .apologize.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .blush.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .bow.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .bye.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .calm.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .cheer.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .cry.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .dance.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .disagree.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .follow.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .gesture.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .giggle.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .go_away.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .impatient.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .kiss.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .kneel.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .laugh.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .lol.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .point.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .roar.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .sad.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .smile.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .thank.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .unhappy.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .victory.Display Objects = true
+Thu Feb 05 11:31:33 2009 (kervala) .wave.Display Objects = true</LOG>
 </FORM>

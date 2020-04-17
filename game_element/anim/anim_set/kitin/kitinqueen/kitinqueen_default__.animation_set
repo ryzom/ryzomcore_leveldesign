@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.5 $" State="modified">
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Queen_Idle_Attak.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kitin_Queen_Idle_Attak.anim"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 14:46:07 2002 (puzin)
+Mon Jul 24 22:21:37 2006 (puzin) .idle.animations[0].filename = TR_MO_Kitin_Queen_idle.anim
+Mon Jul 24 22:21:37 2006 (puzin) formName Resized = 1
+Mon Aug 28 15:20:43 2006 (gueney) .idle.LodCharacterAnimation = TR_MO_Kitin_Queen_Idle_Attak.anim
+Mon Aug 28 15:20:43 2006 (gueney) .idle.animations[0].filename = TR_MO_Kitin_Queen_Idle_Attak.anim
+Tue Sep 19 16:37:14 2006 (gueney) .death_mode.animations[0].filename = TR_MO_Kitin_Queen_Idle_to_death.anim
+Tue Sep 19 16:47:43 2006 (gueney) Form Parents = 
+Tue Sep 19 16:47:56 2006 (gueney) .defaultHeadControl = false
+Tue Sep 19 16:47:56 2006 (gueney) Form Parents = </LOG>
+</FORM>

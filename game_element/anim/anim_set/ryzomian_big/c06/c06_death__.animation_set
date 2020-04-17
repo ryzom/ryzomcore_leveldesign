@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <PARENT Filename="_ryzomian_big_death__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholok_idle_mort.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Ryzoholok_dormir_loop.anim"/>
+    </STRUCT>
+    <STRUCT Name="death">
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Ryzoholok_mort.anim"/>
+    </STRUCT>
+    <STRUCT Name="death_idle">
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Ryzoholok_idle_mort.anim"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri Dec 13 16:13:41 2002 (puzin)
+Mon Dec 16 18:09:41 2002 (beaume) .death.LodCharacterAnimation = TR_MO_Ryzoholok_mort.anim
+Mon Dec 16 18:09:41 2002 (beaume) .death_idle.LodCharacterAnimation = TR_MO_Ryzoholok_idle_mort.anim
+Mon Dec 16 18:09:41 2002 (beaume) .idle.LodCharacterAnimation = TR_MO_Ryzoholok_dormir_loop.anim
+Wed Feb 12 15:09:52 2003 (arnaudb) .eat_mode.animations[0].filename = TR_MO_Ryzoholok_dormir_to_engarde.anim
+Thu Feb 13 16:55:31 2003 (puzin) .combat_mode.animations[0].filename = TR_MO_Ryzoholok_dormir_to_engarde.anim
+Thu Feb 13 16:55:31 2003 (puzin) .eat_mode.animations[0].filename = TR_MO_Ryzoholok_dormir_end.anim
+Fri Jun 06 18:01:50 2003 (beaume) .idle.animations[0].filename = TR_MO_Ryzoholok_idle_mort.anim
+Fri Jun 06 18:01:50 2003 (beaume) formName Resized = 0
+Fri Jun 06 18:06:34 2003 (beaume) Form Parents = </LOG>
+</FORM>

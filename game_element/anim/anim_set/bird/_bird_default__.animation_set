@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.3 $" State="modified">
+  <PARENT Filename="_default.animation_set"/>
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Yber_idle.anim"/>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_Avance.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Yber_vol.anim"/>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_Avance.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Yber_vol.anim"/>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_recule.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_tourne_G.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_demitour_G.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_tourne_D.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_demitour_D.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_tourne_G.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_demitour_G.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_tourne_D.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_demitour_D.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_tourne_G.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_demitour_G.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_tourne_D.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_demitour_D.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="impact">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_impact.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_begin">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_stun_init.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_stun_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_stun_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_mort.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 16:14:11 2002 (puzin)
+Mon Dec 16 18:43:50 2002 (beaume) .death.LodCharacterAnimation = TR_MO_Kitin_volant_mort.anim
+Mon Dec 16 18:43:50 2002 (beaume) .death_idle.LodCharacterAnimation = TR_MO_Kitin_volant_mort_idle.anim
+Mon Dec 16 18:43:50 2002 (beaume) .idle.LodCharacterAnimation = TR_MO_Kitin_volant_idle.anim
+Mon Dec 16 18:43:50 2002 (beaume) .run.LodCharacterAnimation = TR_MO_Kitin_volant_vol_rapide.anim
+Mon Dec 16 18:43:50 2002 (beaume) .walk.LodCharacterAnimation = TR_MO_Kitin_volant_vol.anim
+Wed Feb 26 16:08:02 2003 (arnaudb) .backward.animations[0].filename = TR_MO_Yber_recule.anim
+Wed Feb 26 16:08:02 2003 (arnaudb) .idle.animations[0].filename = TR_MO_Yber_idle.anim
+Wed Feb 26 16:08:02 2003 (arnaudb) .run.animations[0].filename = TR_MO_Yber_vol.anim
+Wed Feb 26 16:08:02 2003 (arnaudb) .walk.animations[0].filename = TR_MO_Yber_vol.anim
+Wed Feb 26 16:08:02 2003 (arnaudb) formName Resized = 1
+Wed Feb 26 16:12:29 2003 (arnaudb) .death.animations[0].filename = TR_MO_Yber_mort.anim
+Wed Feb 26 16:12:29 2003 (arnaudb) .death_idle.animations[0].filename = TR_MO_Yber_idle_mort.anim
+Wed Feb 26 16:12:29 2003 (arnaudb) .turn_left.animations[0].filename = TR_MO_Yber_tourne_G.anim
+Wed Feb 26 16:12:29 2003 (arnaudb) .turn_left.animations[1].filename = TR_MO_Yber_demitour_G.anim
+Wed Feb 26 16:12:29 2003 (arnaudb) .turn_left_to_backward.animations[0].filename = TR_MO_Yber_tourne_G.anim
+Wed Feb 26 16:12:29 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = TR_MO_Yber_demitour_G.anim
+Wed Feb 26 16:12:29 2003 (arnaudb) .turn_left_to_walk.animations[0].filename = TR_MO_Yber_tourne_G.anim
+Wed Feb 26 16:12:29 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = TR_MO_Yber_demitour_G.anim
+Wed Feb 26 16:12:29 2003 (arnaudb) .turn_right.animations[0].filename = TR_MO_Yber_tourne_D.anim
+Wed Feb 26 16:12:29 2003 (arnaudb) .turn_right.animations[1].filename = TR_MO_Yber_demitour_D.anim
+Wed Feb 26 16:12:29 2003 (arnaudb) .turn_right_to_backward.animations[0].filename = TR_MO_Yber_tourne_D.anim
+Wed Feb 26 16:12:29 2003 (arnaudb) .turn_right_to_backward.animations[1].filename = TR_MO_Yber_demitour_D.anim
+Wed Feb 26 16:12:29 2003 (arnaudb) .turn_right_to_walk.animations[0].filename = TR_MO_Yber_tourne_D.anim
+Wed Feb 26 16:12:29 2003 (arnaudb) .turn_right_to_walk.animations[1].filename = TR_MO_Yber_demitour_D.anim
+Wed Feb 26 16:53:32 2003 (arnaudb) .death.LodCharacterAnimation = TR_MO_Yber_mort.anim
+Wed Feb 26 16:53:32 2003 (arnaudb) .death_idle.LodCharacterAnimation = TR_MO_Yber_idle_mort.anim
+Wed Feb 26 16:53:32 2003 (arnaudb) .idle.LodCharacterAnimation = TR_MO_Yber_idle.anim
+Wed Feb 26 16:53:32 2003 (arnaudb) .run.LodCharacterAnimation = TR_MO_Yber_vol.anim
+Wed Feb 26 16:53:32 2003 (arnaudb) .walk.LodCharacterAnimation = TR_MO_Yber_vol.anim
+Fri Mar 21 10:14:18 2003 (arnaudb) .impact.animations[0].filename = TR_MO_Yber_impact.anim
+Fri Mar 21 10:14:18 2003 (arnaudb) formName Resized = 1
+Fri Jun 06 11:21:32 2003 (beaume) .death_mode.animations[0].filename = TR_MO_Yber_mort.anim
+Fri Jun 06 11:21:32 2003 (beaume) formName Resized = 1
+Thu Jul 03 11:57:42 2003 (puzin) Form Parents = 
+Mon Dec 01 11:54:57 2003 (beaume) .stun_begin.animations[0].filename = TR_MO_Yber_stun_init.anim
+Mon Dec 01 11:54:57 2003 (beaume) .stun_end.animations[0].filename = TR_MO_Yber_stun_end.anim
+Mon Dec 01 11:54:57 2003 (beaume) .stun_loop.animations[0].filename = TR_MO_Yber_stun_loop.anim
+Mon Dec 01 11:54:57 2003 (beaume) formName Resized = 1
+Fri Mar 19 11:44:41 2004 (beaume) .defaultHeadControl = false
+Thu May 06 11:37:57 2004 (beaume) .run.animations[0].filename = TR_MO_Yber_Avance.anim
+Thu May 06 11:37:57 2004 (beaume) .walk.animations[0].filename = TR_MO_Yber_Avance.anim</LOG>
+</FORM>

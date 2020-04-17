@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <STRUCT Name="FX0">
+      <ATOM Name="PSName" Value="rayon.ps"/>
+      <STRUCT Name="StickMode">
+        <ATOM Name="StickMode" Value="UserBoneRay"/>
+        <ATOM Name="UserBone" Value="Bip01 R Forearm"/>
+      </STRUCT>
+      <ATOM Name="RayRefLength" Value="2"/>
+    </STRUCT>
+    <STRUCT Name="FX1">
+      <ATOM Name="PSName" Value="ran_impact.ps"/>
+      <STRUCT Name="StickMode">
+        <ATOM Name="StickMode" Value="UserBoneOrientedTowardTargeter"/>
+        <ATOM Name="UserBone" Value="Bip01 Head"/>
+      </STRUCT>
+    </STRUCT>
+    <ATOM Name="CanReplaceStickMode0" Value="false"/>
+    <ATOM Name="CanReplaceStickBone1" Value="true"/>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Feb 05 19:15:32 2004 (vizerie) .FX0.PSName = fdsfdsf
+Wed Mar 23 15:09:02 2005 (tran) .FX0.RayRefLength = 2
+Wed Mar 23 15:09:18 2005 (tran) .FX0.PSName = rayon.ps
+Wed Mar 23 15:11:42 2005 (tran) .CanReplaceStickMode0 = false
+Wed Mar 23 15:11:42 2005 (tran) .FX0.StickMode.StickMode = UserBoneRay
+Wed Mar 23 15:11:42 2005 (tran) .FX0.StickMode.UserBone = Bip01 R Forearm
+Wed Mar 23 15:13:38 2005 (tran) .CanReplaceStickBone1 = true
+Wed Mar 23 15:13:38 2005 (tran) formName Pasted = </LOG>
+</FORM>

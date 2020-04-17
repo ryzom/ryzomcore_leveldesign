@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <PARENT Filename="_alert.animation_set"/>
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Feel_Danger.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kitin_Idle.anim"/>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Walk.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kitin_Walk.anim"/>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Run.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Kitin_Run.anim"/>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_recule.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_petitPas_G.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Demi_Tour.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_petitPas_D.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Demi_Tour_Droit.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_petitPas_G.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Demi_Tour.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_petitPas_D.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Demi_Tour_Droit.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_petitPas_G.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Demi_Tour.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_petitPas_D.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Demi_Tour_Droit.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_StrafeG.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_StrafeD.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="impact">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Idle_Impact.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_begin">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_stun_init.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_stun_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_stun_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="combat_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Idle_TO_Idle_Attak.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Kitin_Death.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Tue Dec 17 11:59:44 2002 (beaume) .death.LodCharacterAnimation = TR_MO_Kitin_Death.anim
+Tue Dec 17 11:59:44 2002 (beaume) .death_idle.LodCharacterAnimation = TR_MO_Kitin_Idle_Dead.anim
+Tue Dec 17 11:59:44 2002 (beaume) .idle.LodCharacterAnimation = TR_MO_Kitin_Idle.anim
+Tue Dec 17 11:59:44 2002 (beaume) .run.LodCharacterAnimation = TR_MO_Kitin_Run.anim
+Tue Dec 17 11:59:44 2002 (beaume) .walk.LodCharacterAnimation = TR_MO_Kitin_Walk.anim
+Fri Mar 21 10:32:46 2003 (arnaudb) .impact.animations[0].filename = TR_MO_Kitin_Idle_Impact.anim
+Fri Mar 21 10:32:46 2003 (arnaudb) formName Resized = 1
+Wed Apr 23 17:52:16 2003 (arnaudb) .combat_mode.animations[0].filename = TR_MO_Kitin_Idle_TO_Idle_Attak.anim
+Wed Apr 23 17:52:16 2003 (arnaudb) .turn_right.animations[1].filename = TR_MO_Kitin_Demi_Tour_Droit.anim
+Wed Apr 23 17:52:16 2003 (arnaudb) .turn_right_to_backward.animations[1].filename = TR_MO_Kitin_Demi_Tour_Droit.anim
+Wed Apr 23 17:52:16 2003 (arnaudb) .turn_right_to_walk.animations[1].filename = TR_MO_Kitin_Demi_Tour_Droit.anim
+Wed Apr 23 17:52:16 2003 (arnaudb) formName Resized = 1
+Fri Jun 06 14:40:53 2003 (beaume) .death_mode.animations[0].filename = TR_MO_Kitin_Death.anim
+Fri Jun 06 14:40:53 2003 (beaume) formName Resized = 1
+Thu Jul 03 12:02:38 2003 (puzin) Form Parents = 
+Mon Dec 01 13:45:57 2003 (beaume) .stun_begin.animations[0].filename = TR_MO_Kitin_stun_init.anim
+Mon Dec 01 13:45:57 2003 (beaume) .stun_end.animations[0].filename = TR_MO_Kitin_stun_end.anim
+Mon Dec 01 13:45:57 2003 (beaume) .stun_loop.animations[0].filename = TR_MO_Kitin_stun_loop.anim
+Mon Dec 01 13:45:58 2003 (beaume) formName Resized = 1
+Thu Dec 18 15:50:02 2003 (beaume) .defaultHeadControl = false</LOG>
+</FORM>

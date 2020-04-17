@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.5 $" State="modified">
+  <STRUCT>
+    <ARRAY Name="Attacks">
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="CreatureAttack"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="ID">
+          <ATOM Name="AttackType" Value="CreatureAttack"/>
+          <ATOM Name="CreatureAttackIndex" Value="1"/>
+        </STRUCT>
+        <STRUCT Name="Attack">
+          <ATOM Name="ProjectileMode" Value="Chain"/>
+          <ATOM Name="AttackEndFX" Value="cast_kitihank_specialatk.animation_fx_set"/>
+          <ATOM Name="ProjectileFX" Value="range_projectile_acid_kitihank_missile.animation_fx_set"/>
+          <STRUCT Name="DefaultAimingPoint">
+            <ATOM Name="StickMode" Value="UserBone"/>
+            <ATOM Name="UserBone" Value="Bip01 Head"/>
+          </STRUCT>
+        </STRUCT>
+      </STRUCT>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Feb 12 11:02:09 2004 (gatto) .Attacks[0].ID.AttackType = CreatureAttack
+Thu Feb 12 11:02:09 2004 (gatto) .Attacks[1].ID.AttackType = CreatureAttack
+Thu Feb 12 11:02:09 2004 (gatto) .Attacks[1].ID.CreatureAttackIndex = 1
+Thu Feb 12 11:02:09 2004 (gatto) formName Resized = 2
+Thu Feb 12 11:05:18 2004 (gatto) .Attacks[0].Attack.ProjectileMode = 
+Thu Feb 12 11:12:13 2004 (gatto) .Attacks[1].Attack.ProjectileMode = Bomb
+Thu Feb 12 11:15:32 2004 (gatto) .Attacks[1].Attack.AttackEndFX = cast_kakty_specialatk.animation_fx_set
+Thu Feb 12 12:57:49 2004 (gatto) .Attacks[1].Attack.AttackEndFX = cast_kitihank_specialatk.animation_fx_set
+Thu Feb 12 12:57:49 2004 (gatto) .Attacks[1].Attack.ProjectileFX = range_projectile_acid_missile.animation_fx_set
+Thu Feb 12 12:57:49 2004 (gatto) .Attacks[1].ID.AttackType = Range
+Thu Feb 12 12:57:56 2004 (gatto) .Attacks[1].Attack.ProjectileMode = Chain
+Thu Feb 12 18:20:40 2004 (gatto) .Attacks[1].ID.AttackType = CreatureAttack
+Fri Feb 13 12:13:37 2004 (gatto) .Attacks[1].Attack.DefaultAimingPoint.StickMode = UserBone
+Fri Feb 13 12:13:37 2004 (gatto) .Attacks[1].Attack.DefaultAimingPoint.UserBone = Bip01 Footsteps
+Fri Feb 13 12:14:44 2004 (gatto) .Attacks[1].Attack.DefaultAimingPoint.StickMode = Follow
+Fri Feb 13 12:14:44 2004 (gatto) .Attacks[1].Attack.DefaultAimingPoint.UserBone = 
+Fri Feb 13 13:36:50 2004 (gatto) .Attacks[1].Attack.DefaultAimingPoint.StickMode = UserBone
+Fri Feb 13 13:36:50 2004 (gatto) .Attacks[1].Attack.DefaultAimingPoint.UserBone = Bip01 Footsteps
+Fri Feb 13 15:40:05 2004 (gatto) .Attacks[1].Attack.ProjectileFX = range_projectile_acid_kitihank_missile.animation_fx_set
+Tue Feb 17 18:30:41 2004 (gatto) .Attacks[1].Attack.DefaultAimingPoint.UserBone = Bip01 Head</LOG>
+</FORM>

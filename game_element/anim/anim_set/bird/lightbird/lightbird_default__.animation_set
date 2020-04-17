@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <PARENT Filename="_bird_default__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT/>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_lightbird_joueavecsaqueue.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 14:46:07 2002 (puzin)
+Wed Feb 26 15:00:40 2003 (arnaudb) Form Parents = 
+Wed Feb 26 16:48:35 2003 (arnaudb) .idle.animations[1].filename = TR_MO_lightbird_joueavecsaqueue.anim
+Wed Feb 26 16:48:35 2003 (arnaudb) formName Resized = 2</LOG>
+</FORM>

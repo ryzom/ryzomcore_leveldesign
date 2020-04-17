@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Cute_Idle_Sleep.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Cute_Idle_Sleep.anim"/>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Cute_Walk.anim"/>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Cute_Run.anim"/>
+    </STRUCT>
+    <STRUCT Name="alert_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Cute_Sleep_To_Idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="combat_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Cute_Sleep_To_Idle_Atk.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Cute_Idle_Death.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="default_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Cute_Sleep_To_Idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="eat_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Cute_Sleep_To_Idle.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 14:46:07 2002 (puzin)
+Thu Apr 10 16:32:00 2003 (arnaudb) Form Parents = 
+Thu Apr 10 16:32:00 2003 (arnaudb) formName Resized = 3
+Thu Apr 10 16:32:53 2003 (arnaudb) .idle.animations[0].filename = TR_MO_Cute_Idle.anim
+Thu Apr 10 16:32:53 2003 (arnaudb) .idle.animations[1].filename = TR_MO_Cute_Idle_Occupation1.anim
+Thu Apr 10 16:32:53 2003 (arnaudb) .idle.animations[2].filename = TR_MO_Cute_Idle_Crier.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .backward.animations[0].filename = TR_MO_Cute_Atk_Recule.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .idle.LodCharacterAnimation = TR_MO_Cute_Idle.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .run.LodCharacterAnimation = TR_MO_Cute_Run.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .run.animations[0].filename = TR_MO_Cute_Run.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left.animations[0].filename = TR_MO_Cute_Idle_Tourne_G.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left.animations[1].filename = TR_MO_Cute_Idle_DemiTour_G.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left_to_backward.animations[0].filename = TR_MO_Cute_Idle_Tourne_G.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left_to_backward.animations[1].filename = TR_MO_Cute_Idle_DemiTour_G
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left_to_walk.animations[0].filename = TR_MO_Cute_Idle_Tourne_G.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_left_to_walk.animations[1].filename = TR_MO_Cute_Idle_DemiTour_G
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right.animations[0].filename = TR_MO_Cute_Idle_Tourne_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right.animations[1].filename = TR_MO_Cute_Idle_DemiTour_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right_to_backward.animations[0].filename = TR_MO_Cute_Idle_Tourne_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right_to_backward.animations[1].filename = TR_MO_Cute_Idle_DemiTour_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right_to_walk.animations[0].filename = TR_MO_Cute_Idle_Tourne_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .turn_right_to_walk.animations[1].filename = TR_MO_Cute_Idle_DemiTour_D.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .walk.LodCharacterAnimation = TR_MO_Cute_Walk.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) .walk.animations[0].filename = TR_MO_Cute_Walk.anim
+Thu Apr 10 16:36:48 2003 (arnaudb) formName Resized = 2
+Thu Apr 10 16:57:53 2003 (arnaudb) .death.LodCharacterAnimation = TR_MO_Cute_Idle_Death.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .death.animations[0].filename = TR_MO_Cute_Idle_Death.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .death_idle.LodCharacterAnimation = TR_MO_Cute_Atk_dead.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .death_idle.animations[0].filename = TR_MO_Cute_Atk_dead.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .idle.animations[3].filename = TR_MO_Cute_Idle_Regarde_D.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .idle.animations[4].filename = TR_MO_Cute_Idle_Regarde_G.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .impact.animations[0].filename = TR_MO_Cute_Idle_Impact.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) .rest_mode.animations[0].filename = TR_MO_Cute_Idle_To_Sleep.anim
+Thu Apr 10 16:57:53 2003 (arnaudb) formName Resized = 1
+Thu Apr 10 17:00:03 2003 (arnaudb) .idle.animations[0].filename = TR_MO_Cute_Idle_Sentir_Danger.anim
+Thu Apr 10 17:00:03 2003 (arnaudb) formName Resized = 1
+Thu Apr 10 17:00:56 2003 (arnaudb) .idle.animations[1].filename = TR_MO_Cute_Idle.anim
+Thu Apr 10 17:00:56 2003 (arnaudb) formName Resized = 2
+Thu Apr 10 17:02:06 2003 (arnaudb) .idle.animations[0].filename = TR_MO_Cute_Idle_Chercher_Manger.anim
+Thu Apr 10 17:02:06 2003 (arnaudb) .idle.animations[1].filename = TR_MO_Cute_Idle_Manger.anim
+Thu Apr 10 17:02:06 2003 (arnaudb) .idle.animations[2].filename = TR_MO_Cute_Idle.anim
+Thu Apr 10 17:02:06 2003 (arnaudb) formName Resized = 3
+Thu Apr 10 17:03:05 2003 (arnaudb) .idle.animations[0].filename = TR_MO_Cute_Idle_Manger.anim
+Thu Apr 10 17:03:05 2003 (arnaudb) .idle.animations[1].filename = TR_MO_Cute_Idle_Chercher_Manger.anim
+Thu Apr 10 17:04:10 2003 (arnaudb) formName Resized = 0
+Thu Apr 10 17:06:23 2003 (arnaudb) .alert_mode.animations[0].filename = TR_MO_Cute_Sleep_To_Idle.anim
+Thu Apr 10 17:06:23 2003 (arnaudb) .combat_mode.animations[0].filename = TR_MO_Cute_Sleep_To_Idle_Atk.anim
+Thu Apr 10 17:06:23 2003 (arnaudb) .default_mode.animations[0].filename = TR_MO_Cute_Sleep_To_Idle.anim
+Thu Apr 10 17:06:23 2003 (arnaudb) .eat_mode.animations[0].filename = TR_MO_Cute_Sleep_To_Idle.anim
+Thu Apr 10 17:06:23 2003 (arnaudb) .idle.LodCharacterAnimation = TR_MO_Cute_Idle_Sleep..anim
+Thu Apr 10 17:06:23 2003 (arnaudb) .idle.animations[0].filename = TR_MO_Cute_Idle_Sleep..anim
+Thu Apr 10 17:06:23 2003 (arnaudb) formName Resized = 1
+Thu Apr 10 17:33:42 2003 (arnaudb) .idle.LodCharacterAnimation = TR_MO_Cute_Idle_Sleep.anim
+Thu Apr 10 17:33:42 2003 (arnaudb) .idle.animations[0].filename = TR_MO_Cute_Idle_Sleep.anim
+Fri Jun 06 11:32:11 2003 (beaume) .death_mode.animations[0].filename = TR_MO_Cute_Idle_Death.anim
+Fri Jun 06 11:32:11 2003 (beaume) formName Resized = 1
+Wed Jan 28 18:49:58 2004 (beaume) .defaultHeadControl = false</LOG>
+</FORM>

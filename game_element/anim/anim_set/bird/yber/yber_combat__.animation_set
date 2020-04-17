@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.3 $" State="modified">
+  <PARENT Filename="_bird_combat__.animation_set"/>
+  <STRUCT>
+    <STRUCT Name="attack2">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Yber_coupdaile.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.385"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 14:46:07 2002 (puzin)
+Wed Feb 26 15:01:35 2003 (arnaudb) Form Parents = 
+Thu Jan 15 17:00:39 2004 (beaume) .attack2.animations[0].filename = TR_MO_Yber_coupdaile.anim
+Thu Jan 15 17:00:39 2004 (beaume) formName Resized = 1</LOG>
+</FORM>

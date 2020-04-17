@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.3 $" State="modified">
+  <PARENT Filename="_default.animation_set"/>
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_idle.anim"/>
+          <ATOM Name="next1" Value="0"/>
+          <ATOM Name="next1 weight" Value="10"/>
+          <ATOM Name="next2" Value="1"/>
+          <ATOM Name="next2 weight" Value="10"/>
+          <ATOM Name="next3" Value="2"/>
+          <ATOM Name="next4" Value="3"/>
+          <ATOM Name="next4 weight" Value="10"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_etirement.anim"/>
+          <ATOM Name="next1" Value="0"/>
+          <ATOM Name="next1 weight" Value="10"/>
+          <ATOM Name="next2" Value="2"/>
+          <ATOM Name="next3" Value="3"/>
+          <ATOM Name="next3 weight" Value="10"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_cri.anim"/>
+          <ATOM Name="next1" Value="0"/>
+          <ATOM Name="next2" Value="1"/>
+          <ATOM Name="next3" Value="3"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzoholo_respire.anim"/>
+          <ATOM Name="next1" Value="0"/>
+          <ATOM Name="next1 weight" Value="10"/>
+          <ATOM Name="next2" Value="1"/>
+          <ATOM Name="next2 weight" Value="10"/>
+          <ATOM Name="next3" Value="2"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Ryzomien_idle.anim"/>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_marche.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Ryzomien_marche.anim"/>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_course.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_Ryzomien_course.anim"/>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_recule.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_tourne_gauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_turn_180_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_tourne_droite.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_turn_180_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_tourne_gauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_turn_180_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_tourne_droite.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_turn_180_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_tourne_gauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_turn_180_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_tourne_droite.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_turn_180_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="impact">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_idle_impact.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_begin">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_stun_init.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_loop">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_stun_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="stun_end">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_stun_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_mort.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="rest_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_Ryzomien_se_couche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Thu Dec 12 16:14:11 2002 (puzin)
+Mon Dec 16 17:41:39 2002 (beaume) .death.LodCharacterAnimation = TR_MO_Ryzomien_mort.anim
+Mon Dec 16 17:41:39 2002 (beaume) .death_idle.LodCharacterAnimation = TR_MO_Ryzomien_mort_idle.anim
+Mon Dec 16 17:41:39 2002 (beaume) .idle.LodCharacterAnimation = TR_MO_Ryzomien_idle.anim
+Mon Dec 16 17:41:39 2002 (beaume) .run.LodCharacterAnimation = TR_MO_Ryzomien_course.anim
+Mon Dec 16 17:41:39 2002 (beaume) .walk.LodCharacterAnimation = TR_MO_Ryzomien_marche.anim
+Fri Mar 21 11:14:52 2003 (arnaudb) .impact.animations[0].filename = TR_MO_Ryzomien_idle_impact.anim
+Fri Mar 21 11:14:52 2003 (arnaudb) formName Resized = 1
+Fri Jun 06 17:52:38 2003 (beaume) .death_mode.animations[0].filename = TR_MO_Ryzomien_mort.anim
+Fri Jun 06 17:52:38 2003 (beaume) formName Resized = 1
+Thu Jul 03 12:17:46 2003 (puzin) Form Parents = 
+Mon Dec 01 15:07:21 2003 (beaume) .stun_begin.animations[0].filename = TR_MO_Ryzomien_stun_init.anim
+Mon Dec 01 15:07:21 2003 (beaume) .stun_end.animations[0].filename = TR_MO_Ryzomien_stun_end.anim
+Mon Dec 01 15:07:21 2003 (beaume) .stun_loop.animations[0].filename = TR_MO_Ryzomien_stun_loop.anim
+Mon Dec 01 15:07:21 2003 (beaume) formName Resized = 1
+Fri Mar 19 11:53:36 2004 (beaume) .defaultHeadControl = false
+Thu Jan 25 11:46:28 2007 (nouveau) .idle.animations[0].next1 = 0
+Thu Jan 25 11:46:28 2007 (nouveau) .idle.animations[0].next1 weight = 10
+Thu Jan 25 11:46:28 2007 (nouveau) .idle.animations[0].next2 = 1
+Thu Jan 25 11:46:28 2007 (nouveau) .idle.animations[0].next2 weight = 10
+Thu Jan 25 11:46:28 2007 (nouveau) .idle.animations[0].next3 = 2
+Thu Jan 25 11:46:28 2007 (nouveau) .idle.animations[0].next4 = 3
+Thu Jan 25 11:46:28 2007 (nouveau) .idle.animations[0].next4 weight = 10
+Thu Jan 25 11:47:33 2007 (nouveau) .idle.animations[1].next1 = 0
+Thu Jan 25 11:47:33 2007 (nouveau) .idle.animations[1].next1 weight = 10
+Thu Jan 25 11:47:33 2007 (nouveau) .idle.animations[1].next2 = 2
+Thu Jan 25 11:47:33 2007 (nouveau) .idle.animations[1].next3 = 3
+Thu Jan 25 11:47:33 2007 (nouveau) .idle.animations[1].next3 weight = 10
+Thu Jan 25 11:48:35 2007 (nouveau) .idle.animations[2].next1 = 0
+Thu Jan 25 11:48:35 2007 (nouveau) .idle.animations[2].next2 = 1
+Thu Jan 25 11:48:35 2007 (nouveau) .idle.animations[2].next3 = 3
+Thu Jan 25 11:50:02 2007 (nouveau) .idle.animations[3].next1 = 0
+Thu Jan 25 11:50:02 2007 (nouveau) .idle.animations[3].next1 weight = 10
+Thu Jan 25 11:50:02 2007 (nouveau) .idle.animations[3].next2 = 1
+Thu Jan 25 11:50:02 2007 (nouveau) .idle.animations[3].next2 weight = 10
+Thu Jan 25 11:50:02 2007 (nouveau) .idle.animations[3].next3 = 2</LOG>
+</FORM>

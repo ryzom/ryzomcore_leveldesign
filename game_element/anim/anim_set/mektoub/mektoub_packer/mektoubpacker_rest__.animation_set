@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.3 $" State="modified">
+  <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
+    <STRUCT Name="idle">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_dormir_loop.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_mektoub_dormir_loop.anim"/>
+    </STRUCT>
+    <STRUCT Name="walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_packer_marche.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_mektoub_packer_marche.anim"/>
+    </STRUCT>
+    <STRUCT Name="run">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_packer_course.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="LodCharacterAnimation" Value="TR_MO_mektoub_packer_course.anim"/>
+    </STRUCT>
+    <STRUCT Name="backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_selle_marche_arriere.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_selle_tournegauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_selle_demitour_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_selle_tournedroite.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_selle_demitour_droit.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_selle_tournegauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_selle_demitour_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_walk">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_selle_tournedroite.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_selle_demitour_droit.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_left_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_selle_tournegauche.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_selle_demitour_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="turn_right_to_backward">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_selle_tournedroite.anim"/>
+        </STRUCT>
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_selle_demitour_droit.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_left">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_selle_straf_gauche.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="strafe_right">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_selle_straf_droite.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="attack1">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_coup_griffe.anim"/>
+        </STRUCT>
+      </ARRAY>
+      <ATOM Name="MeleeImpactDelay" Value="0.467"/>
+    </STRUCT>
+    <STRUCT Name="attack2">
+      <ARRAY Name="animations"/>
+    </STRUCT>
+    <STRUCT Name="death_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_mort.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+    <STRUCT Name="default_mode">
+      <ARRAY Name="animations">
+        <STRUCT>
+          <ATOM Name="filename" Value="TR_MO_mektoub_dormir_end.anim"/>
+        </STRUCT>
+      </ARRAY>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:24:36 2002 (corvazier) File converted from old format
+Thu Jul 04 14:01:47 2002 (beaume) .idle.animations[0].filename = TR_MO_mektoub_selle_idle.anim
+Thu Jul 04 14:01:47 2002 (beaume) .run.animations[0].filename = TR_MO_mektoub_selle_course.anim
+Thu Jul 04 14:01:47 2002 (beaume) .walk.animations[0].filename = TR_MO_mektoub_selle_marche.anim
+Thu Aug 29 14:14:04 2002 (gomes) .about_face_left_to_backward.animations[0].filename = TR_MO_mektoub_selle_demitour.anim
+Thu Aug 29 14:14:04 2002 (gomes) .about_face_left_to_walk.animations[0].filename = TR_MO_mektoub_selle_demitour.anim
+Thu Aug 29 14:14:04 2002 (gomes) .about_face_right_to_backward.animations[0].filename = TR_MO_mektoub_selle_demitour.anim
+Thu Aug 29 14:14:04 2002 (gomes) .about_face_right_to_walk.animations[0].filename = TR_MO_mektoub_selle_demitour.anim
+Thu Aug 29 14:14:04 2002 (gomes) .backward.animations[0].filename = TR_MO_mektoub_selle_marche_arriere.anim
+Thu Aug 29 14:14:04 2002 (gomes) .turn_left_to_backward.animations[0].filename = TR_MO_mektoub_selle_tournegauche.anim
+Thu Aug 29 14:14:04 2002 (gomes) .turn_left_to_walk.animations[0].filename = TR_MO_mektoub_selle_tournegauche.anim
+Thu Aug 29 14:14:04 2002 (gomes) .turn_right_to_backward.animations[0].filename = TR_MO_mektoub_selle_tournedroite.anim
+Thu Aug 29 14:14:04 2002 (gomes) .turn_right_to_walk.animations[0].filename = TR_MO_mektoub_selle_tournedroite.anim
+Thu Aug 29 14:14:04 2002 (gomes) formName Resized = 1
+Tue Sep 03 11:59:09 2002 (puzin) .about_face_right.animations[0].filename = TR_MO_mektoub_selle_demitour_droit_alone.anim
+Tue Sep 03 11:59:09 2002 (puzin) .about_face_right_to_backward.animations[0].filename = TR_MO_mektoub_selle_demitour_droit_alone.anim
+Tue Sep 03 11:59:09 2002 (puzin) .about_face_right_to_walk.animations[0].filename = TR_MO_mektoub_selle_demitour_droit_alone.anim
+Tue Jan 07 12:18:11 2003 (beaume) .turn_left.animations[1].filename = TR_MO_mektoub_selle_demitour_gauche.anim
+Tue Jan 07 12:18:11 2003 (beaume) .turn_left_to_backward.animations[1].filename = TR_MO_mektoub_selle_demitour_gauche.anim
+Tue Jan 07 12:18:11 2003 (beaume) .turn_left_to_walk.animations[1].filename = TR_MO_mektoub_selle_demitour_gauche.anim
+Tue Jan 07 12:18:11 2003 (beaume) .turn_right.animations[1].filename = TR_MO_mektoub_selle_demitour_droit.anim
+Tue Jan 07 12:18:11 2003 (beaume) .turn_right_to_backward.animations[1].filename = TR_MO_mektoub_selle_demitour_droit.anim
+Tue Jan 07 12:18:11 2003 (beaume) .turn_right_to_walk.animations[1].filename = TR_MO_mektoub_selle_demitour_droit.anim
+Tue Jan 07 12:18:11 2003 (beaume) formName Resized = 2
+Tue Jan 07 13:39:13 2003 (beaume) formName Resized = 1
+Tue Jan 07 13:55:32 2003 (beaume) .attack1.animations[0].filename = TR_MO_mektoub_coup_griffe.anim
+Tue Jan 07 13:55:32 2003 (beaume) .death.animations[0].filename = TR_MO_mektoub_mort.anim
+Tue Jan 07 13:55:32 2003 (beaume) .death_idle.animations[0].filename = TR_MO_mektoub_mort_idle.anim
+Tue Jan 07 13:55:32 2003 (beaume) .idle.animations[1].filename = TR_MO_mektoub_segratte.anim
+Tue Jan 07 13:55:32 2003 (beaume) .rest_mode.animations[0].filename = TR_MO_mektoub_dormir_init.anim
+Tue Jan 07 13:55:32 2003 (beaume) .strafe_left.animations[0].filename = TR_MO_mektoub_selle_straf_gauche.anim
+Tue Jan 07 13:55:32 2003 (beaume) .strafe_right.animations[0].filename = TR_MO_mektoub_selle_straf_droite.anim
+Tue Jan 07 13:55:32 2003 (beaume) formName Resized = 1
+Tue Jan 07 14:00:48 2003 (beaume) .default_mode.animations[0].filename = TR_MO_mektoub_dormir_end.anim
+Tue Jan 07 14:00:48 2003 (beaume) .idle.animations[0].filename = TR_MO_mektoub_dormir_loop.anim
+Tue Jan 07 14:00:48 2003 (beaume) formName Resized = 1
+Thu Mar 06 16:20:05 2003 (arnaudb) .run.animations[0].filename = TR_MO_mektoub_packer_course.anim
+Thu Mar 06 16:20:05 2003 (arnaudb) .walk.animations[0].filename = TR_MO_mektoub_packer_marche.anim
+Tue Apr 22 11:00:30 2003 (arnaudb) .death.LodCharacterAnimation = TR_MO_mektoub_mort.anim
+Tue Apr 22 11:00:30 2003 (arnaudb) .death_idle.LodCharacterAnimation = TR_MO_mektoub_mort_idle.anim
+Tue Apr 22 11:00:30 2003 (arnaudb) .idle.LodCharacterAnimation = TR_MO_mektoub_dormir_loop.anim
+Tue Apr 22 11:00:30 2003 (arnaudb) .run.LodCharacterAnimation = TR_MO_mektoub_packer_course.anim
+Tue Apr 22 11:00:30 2003 (arnaudb) .walk.LodCharacterAnimation = TR_MO_mektoub_packer_marche.anim
+Fri Jun 06 16:16:20 2003 (beaume) .death_mode.animations[0].filename = TR_MO_mektoub_mort.anim
+Fri Jun 06 16:16:20 2003 (beaume) formName Resized = 1
+Fri Mar 19 11:52:24 2004 (beaume) .defaultHeadControl = false</LOG>
+</FORM>
