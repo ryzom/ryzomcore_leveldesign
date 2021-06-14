@@ -42,6 +42,10 @@ CommonPath = ContinentPath
 MapSourceDirectories = [ ]
 MapSourceDirectories += [ "stuff/caravan/agents/_textures/actors" ]
 MapSourceDirectories += [ "stuff/caravan/agents/_textures/actors/visages" ]
+MapSourceDirectories += [ "stuff/fyros/agents/_textures/actors/lead_maps" ]
+MapSourceDirectories += [ "stuff/matis/agents/_textures/actors/lead_maps" ]
+MapSourceDirectories += [ "stuff/tryker/agents/_textures/actors/lead_maps" ]
+MapSourceDirectories += [ "stuff/zorai/agents/_textures/actors/lead_maps" ]
 
 MapUncompressedSourceDirectories = [ ]
 

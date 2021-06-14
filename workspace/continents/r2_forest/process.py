@@ -30,6 +30,7 @@
 # *** PROCESS CONFIG ***
 ProcessToComplete = [ ]
 ProcessToComplete += [ "properties" ]
+ProcessToComplete += [ "map" ]
 ProcessToComplete += [ "ligo" ]
 ProcessToComplete += [ "zone" ]
 ProcessToComplete += [ "ig" ]
@@ -118,6 +119,7 @@ LigoExportHeightmap1 = "big_" + ContinentName + ".tga"
 LigoExportZFactor1 = "1.0"
 LigoExportHeightmap2 = "noise_" + ContinentName + ".tga"
 LigoExportZFactor2 = "0.5"
+LigoExportExtendCoords = 1
 LigoTileBankFile = "landscape/_texture_tiles/" + EcosystemName + "/" + EcosystemName + ".bank"
 
 # *** ZONE REGIONS ( up-left, down-right ) ***
@@ -127,7 +129,7 @@ ZoneRegions += [ [ "69_fb" ] + [ "130_hk" ] ]
 # *** RBANK OPTIONS ***
 
 # Options
-RBankVerbose = 1
+RBankVerbose = 0
 RBankConsistencyCheck = 0
 RbankReduceSurfaces = 1
 RbankSmoothBorders = 1
@@ -185,6 +187,22 @@ AiWmapStartPoints += [ ContinentName + " 21100 -12600" ]
 AiWmapStartPoints += [ ContinentName + " 21622 -12713" ]
 AiWmapStartPoints += [ ContinentName + " 22306 -12674" ]
 AiWmapStartPoints += [ ContinentName + " 22800 -12800" ]
+AiWmapStartPoints += [ ContinentName + " 23501 -12801" ]
+AiWmapStartPoints += [ ContinentName + " 24701 -12901" ]
+AiWmapStartPoints += [ ContinentName + " 25301 -12901" ]
+AiWmapStartPoints += [ ContinentName + " 26201 -12901" ]
+AiWmapStartPoints += [ ContinentName + " 27001 -12901" ]
+AiWmapStartPoints += [ ContinentName + " 27801 -12901" ]
+AiWmapStartPoints += [ ContinentName + " 29001 -12901" ]
+AiWmapStartPoints += [ ContinentName + " 29601 -12901" ]
+AiWmapStartPoints += [ ContinentName + " 30201 -12901" ]
+AiWmapStartPoints += [ ContinentName + " 21201 -13301" ] # 40
+AiWmapStartPoints += [ ContinentName + " 22201 -13301" ]
+AiWmapStartPoints += [ ContinentName + " 22801 -13501" ]
+AiWmapStartPoints += [ ContinentName + " 24001 -13501" ]
+AiWmapStartPoints += [ ContinentName + " 24701 -13501" ]
+AiWmapStartPoints += [ ContinentName + " 25801 -13501" ]
+AiWmapStartPoints += [ ContinentName + " 27001 -13501" ]
 
 # *** PZ OPTIONS ***
 PackedZoneCWMap = ContinentName + "_0.cwmap2"
@@ -192,3 +210,4 @@ PackedZoneCWMap = ContinentName + "_0.cwmap2"
 # *** CARTOGRAPHER OPTIONS ***
 CartographerContinent = ContinentName
 IslandsXmlFile = ContinentName + "_islands.xml"
+CartographerSeasonSuffixes = [ "_sp" ]

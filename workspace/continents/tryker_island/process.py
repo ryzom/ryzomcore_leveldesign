@@ -120,6 +120,7 @@ LigoExportHeightmap1 = "big_" + ContinentName + ".tga"
 LigoExportZFactor1 = "1.0"
 LigoExportHeightmap2 = "noise_" + ContinentName + ".tga"
 LigoExportZFactor2 = "0.5"
+LigoExportExtendCoords = 0
 LigoTileBankFile = "landscape/_texture_tiles/" + EcosystemName + "/" + EcosystemName + ".bank"
 
 # *** ZONE REGIONS ( up-left, down-right ) ***
@@ -129,7 +130,7 @@ ZoneRegions += [ [ "185_fc" ] + [ "192_go" ] ]
 # *** RBANK OPTIONS ***
 
 # Options
-RBankVerbose = 1
+RBankVerbose = 0
 RBankConsistencyCheck = 0
 RbankReduceSurfaces = 1
 RbankSmoothBorders = 1

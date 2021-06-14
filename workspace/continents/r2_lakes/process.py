@@ -32,7 +32,7 @@
 # *** PROCESS CONFIG ***
 ProcessToComplete = [ ]
 ProcessToComplete += [ "properties" ]
-#ProcessToComplete += [ "map" ]
+ProcessToComplete += [ "map" ]
 ProcessToComplete += [ "shape" ]
 ProcessToComplete += [ "ligo" ]
 ProcessToComplete += [ "zone" ]
@@ -122,6 +122,7 @@ LigoExportHeightmap1 = "big_" + ContinentName + ".tga"
 LigoExportZFactor1 = "1.0"
 LigoExportHeightmap2 = "noise_" + ContinentName + ".tga"
 LigoExportZFactor2 = "0.5"
+LigoExportExtendCoords = 1
 LigoTileBankFile = "landscape/_texture_tiles/" + EcosystemName + "/" + EcosystemName + ".bank"
 
 # *** ZONE REGIONS ( up-left, down-right ) ***
@@ -131,7 +132,7 @@ ZoneRegions += [ [ "6_hm" ] + [ "67_jv" ] ]
 # *** RBANK OPTIONS ***
 
 # Options
-RBankVerbose = 1
+RBankVerbose = 0
 RBankConsistencyCheck = 0
 RbankReduceSurfaces = 1
 RbankSmoothBorders = 1
@@ -159,20 +160,47 @@ MapHlsBankFileName = None
 AiWmapContinentName = ContinentName
 AiWmapVerbose = 0
 AiWmapStartPoints = [ ]
-AiWmapStartPoints += [ ContinentName + " 31330 -1280" ]
-AiWmapStartPoints += [ ContinentName + " 32069 -1340" ]
-AiWmapStartPoints += [ ContinentName + " 33000 -1000" ]
-AiWmapStartPoints += [ ContinentName + " 34000 -1076" ]
-AiWmapStartPoints += [ ContinentName + " 34850 -1100" ]
-AiWmapStartPoints += [ ContinentName + " 35550 -1000" ]
-AiWmapStartPoints += [ ContinentName + " 36271 -1105" ]
-AiWmapStartPoints += [ ContinentName + " 37150 -1290" ]
-AiWmapStartPoints += [ ContinentName + " 38000 -1215" ]
-AiWmapStartPoints += [ ContinentName + " 38628 -1213" ]
-AiWmapStartPoints += [ ContinentName + " 31341 -2077" ]
-AiWmapStartPoints += [ ContinentName + " 32187 -2200" ]
-AiWmapStartPoints += [ ContinentName + " 32983 -2200" ]
-AiWmapStartPoints += [ ContinentName + " 33465 -2164" ]
+AiWmapStartPoints += [ ContinentName + " 31330 -1280" ] # 1
+AiWmapStartPoints += [ ContinentName + " 32069 -1340" ] # 2
+AiWmapStartPoints += [ ContinentName + " 33000 -1000" ] # 3
+AiWmapStartPoints += [ ContinentName + " 34000 -1076" ] # 4
+AiWmapStartPoints += [ ContinentName + " 34850 -1100" ] # 5
+AiWmapStartPoints += [ ContinentName + " 35550 -1000" ] # 6
+AiWmapStartPoints += [ ContinentName + " 36271 -1105" ] # 7
+AiWmapStartPoints += [ ContinentName + " 37150 -1290" ] # 8
+AiWmapStartPoints += [ ContinentName + " 38000 -1215" ] # 9
+AiWmapStartPoints += [ ContinentName + " 38628 -1213" ] # 10
+AiWmapStartPoints += [ ContinentName + " 31341 -2077" ] # 11
+AiWmapStartPoints += [ ContinentName + " 32187 -2200" ] # 12
+AiWmapStartPoints += [ ContinentName + " 32983 -2200" ] # 13
+AiWmapStartPoints += [ ContinentName + " 33465 -2164" ] # 14
+AiWmapStartPoints += [ ContinentName + " 34300 -2000" ] # 15
+AiWmapStartPoints += [ ContinentName + " 35200 -2100" ] # 16
+AiWmapStartPoints += [ ContinentName + " 35900 -2000" ] # 17
+AiWmapStartPoints += [ ContinentName + " 36700 -2050" ] # 18
+AiWmapStartPoints += [ ContinentName + " 37500 -2050" ] # 19
+AiWmapStartPoints += [ ContinentName + " 38400 -2000" ] # 20
+AiWmapStartPoints += [ ContinentName + " 31200 -2800" ] # 21
+AiWmapStartPoints += [ ContinentName + " 32000 -2800" ] # 22
+AiWmapStartPoints += [ ContinentName + " 32700 -2800" ] # 23
+AiWmapStartPoints += [ ContinentName + " 33300 -2800" ] # 24
+AiWmapStartPoints += [ ContinentName + " 34000 -2800" ] # 25
+AiWmapStartPoints += [ ContinentName + " 34700 -2800" ] # 26
+AiWmapStartPoints += [ ContinentName + " 35100 -2800" ] # 27
+AiWmapStartPoints += [ ContinentName + " 36500 -2800" ] # 28
+AiWmapStartPoints += [ ContinentName + " 37400 -2800" ] # 29
+AiWmapStartPoints += [ ContinentName + " 38100 -2800" ] # 30
+AiWmapStartPoints += [ ContinentName + " 31400 -3800" ] # 31
+AiWmapStartPoints += [ ContinentName + " 32100 -3800" ] # 32
+AiWmapStartPoints += [ ContinentName + " 32550 -3800" ] # 33
+AiWmapStartPoints += [ ContinentName + " 33440 -3800" ] # 34
+AiWmapStartPoints += [ ContinentName + " 34250 -3800" ] # 35
+AiWmapStartPoints += [ ContinentName + " 35000 -3800" ] # 36
+AiWmapStartPoints += [ ContinentName + " 35800 -3800" ] # 37
+AiWmapStartPoints += [ ContinentName + " 36300 -3800" ] # 38
+AiWmapStartPoints += [ ContinentName + " 37530 -3820" ] # 39
+AiWmapStartPoints += [ ContinentName + " 38400 -3800" ] # 40
+AiWmapStartPoints += [ ContinentName + " 31200 -4600" ] # 41
 
 # *** PZ OPTIONS ***
 PackedZoneCWMap = ContinentName + "_0.cwmap2"
@@ -180,3 +208,4 @@ PackedZoneCWMap = ContinentName + "_0.cwmap2"
 # *** CARTOGRAPHER OPTIONS ***
 CartographerContinent = ContinentName
 IslandsXmlFile = ContinentName + "_islands.xml"
+CartographerSeasonSuffixes = [ "_sp" ]

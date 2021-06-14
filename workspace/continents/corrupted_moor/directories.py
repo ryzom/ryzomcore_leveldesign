@@ -126,8 +126,8 @@ MapLookupDirectories += [ EcosystemPath + "/map_export" ]
 MapLookupDirectories += [ EcosystemPath + "/map_uncompressed" ]
 MapLookupDirectories += [ ContinentPath + "/map_export" ]
 MapLookupDirectories += [ ContinentPath + "/map_uncompressed" ]
-MapLookupDirectories += [ ParentPath + "/map_export" ] # additional
-MapLookupDirectories += [ ParentPath + "/map_uncompressed" ] # additional
+#MapLookupDirectories += [ ParentPath + "/map_export" ] # additional
+#MapLookupDirectories += [ ParentPath + "/map_uncompressed" ] # additional
 #MapLookupDirectories += [ "ecosystems/lacustre/map_export" ] # additional
 #MapLookupDirectories += [ "ecosystems/lacustre/map_uncompressed" ] # additional
 

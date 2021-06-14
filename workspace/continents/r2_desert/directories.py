@@ -48,6 +48,7 @@ ShapeSourceDirectories = [ ]
 
 # Maps directories
 MapSourceDirectories = [ ]
+MapSourceDirectories += [ "stuff/" + ContinentName + "/sky" ]
 
 MapUncompressedSourceDirectories = [ ]
 

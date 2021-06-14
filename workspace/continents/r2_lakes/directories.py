@@ -56,7 +56,7 @@ ShapeSourceDirectories += [ "landscape/water/meshes/" + EcosystemName + "/r2_lac
 # Maps directories
 MapSourceDirectories = [ ]
 #MapSourceDirectories += [ "stuff/" + ContinentName + "/decors/_textures/batiments" ]
-#MapSourceDirectories += [ "stuff/" + ContinentName + "/sky" ]
+MapSourceDirectories += [ "stuff/" + ContinentName + "/sky" ]
 #MapSourceDirectories += [ "landscape/water/meshes/" + EcosystemName ]
 #MapSourceDirectories += [ "landscape/water/meshes/" + EcosystemName + "/r2_lacustre" ]
 MapUncompressedSourceDirectories = [ ]

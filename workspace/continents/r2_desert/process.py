@@ -30,6 +30,7 @@
 # *** PROCESS CONFIG ***
 ProcessToComplete = [ ]
 ProcessToComplete += [ "properties" ]
+ProcessToComplete += [ "map" ]
 ProcessToComplete += [ "ligo" ]
 ProcessToComplete += [ "zone" ]
 ProcessToComplete += [ "ig" ]
@@ -115,6 +116,7 @@ LigoExportHeightmap1 = "big_" + ContinentName + ".tga"
 LigoExportZFactor1 = "1.0"
 LigoExportHeightmap2 = "noise_" + ContinentName + ".tga"
 LigoExportZFactor2 = "0.5"
+LigoExportExtendCoords = 1
 LigoTileBankFile = "landscape/_texture_tiles/" + EcosystemName + "/" + EcosystemName + ".bank"
 
 # *** ZONE REGIONS ( up-left, down-right ) ***
@@ -124,7 +126,7 @@ ZoneRegions += [ [ "6_fb" ] + [ "67_hk" ] ]
 # *** RBANK OPTIONS ***
 
 # Options
-RBankVerbose = 1
+RBankVerbose = 0
 RBankConsistencyCheck = 0
 RbankReduceSurfaces = 1
 RbankSmoothBorders = 1
@@ -152,8 +154,9 @@ MapHlsBankFileName = None
 AiWmapContinentName = ContinentName
 AiWmapVerbose = 0
 AiWmapStartPoints = [ ]
-AiWmapStartPoints += [ ContinentName + " 22791 -1289" ]
-AiWmapStartPoints += [ ContinentName + " 25980 -2015" ]
+AiWmapStartPoints += [ ContinentName + " 21500 -1300" ] # 1
+AiWmapStartPoints += [ ContinentName + " 22791 -1289" ] # 3
+AiWmapStartPoints += [ ContinentName + " 25980 -2015" ] # 21
 AiWmapStartPoints += [ ContinentName + " 28070 -2340" ]
 AiWmapStartPoints += [ ContinentName + " 22383 -1512" ]
 AiWmapStartPoints += [ ContinentName + " 28923 -1434" ]
@@ -191,3 +194,4 @@ PackedZoneCWMap = ContinentName + "_0.cwmap2"
 # *** CARTOGRAPHER OPTIONS ***
 CartographerContinent = ContinentName
 IslandsXmlFile = ContinentName + "_islands.xml"
+CartographerSeasonSuffixes = [ "_sp" ]

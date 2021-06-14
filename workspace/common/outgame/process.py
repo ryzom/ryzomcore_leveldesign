@@ -99,6 +99,7 @@ LigoExportHeightmap1 = "big_invalid.tga"
 LigoExportZFactor1 = "1.0"
 LigoExportHeightmap2 = "noise_invalid.tga"
 LigoExportZFactor2 = "0.5"
+LigoExportExtendCoords = 0
 LigoTileBankFile = ""
 
 # *** MAPS OPTIONS ***
