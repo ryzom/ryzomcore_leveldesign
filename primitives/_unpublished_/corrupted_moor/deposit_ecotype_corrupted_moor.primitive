@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<PRIMITIVES VERSION="1">
+  <ROOT_PRIMITIVE TYPE="CPrimNode">
+    <ALIAS LAST_GENERATED="1"/>
+    <CHILD TYPE="CPrimNode">
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>ecotypezone_list</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>ecotypezone_corrupted_moor</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimZone">
+        <PT X="12886.145508" Y="-9323.687500" Z="0.000000"/>
+        <PT X="12516.545898" Y="-10366.487305" Z="0.000000"/>
+        <PT X="12952.145508" Y="-12174.887695" Z="0.000000"/>
+        <PT X="14615.344727" Y="-12434.487305" Z="0.000000"/>
+        <PT X="15724.143555" Y="-11972.487305" Z="0.000000"/>
+        <PT X="15816.543945" Y="-10978.086914" Z="0.000000"/>
+        <PT X="15803.343750" Y="-9618.487305" Z="0.000000" SELECTED="true"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>ecotypezone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>ecotype</NAME>
+          <STRING>primaryroot</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>ecotype_main</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="1"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+    </CHILD>
+  </ROOT_PRIMITIVE>
+</PRIMITIVES>

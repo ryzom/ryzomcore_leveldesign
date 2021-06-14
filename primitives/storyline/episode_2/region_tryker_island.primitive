@@ -1,0 +1,277 @@
+<?xml version="1.0"?>
+<PRIMITIVES VERSION="1">
+  <ROOT_PRIMITIVE TYPE="CPrimNode">
+    <ALIAS LAST_GENERATED="6"/>
+    <CHILD TYPE="CPrimZone">
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>continent</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>id</NAME>
+        <STRING>tryker_island</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>tryker_island_episode2</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+      </CHILD>
+      <CHILD TYPE="CPrimAlias">
+        <ALIAS VALUE="1"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+      </CHILD>
+      <CHILD TYPE="CPrimZone">
+        <PT X="25725.730469" Y="-30386.304688" Z="0.000000"/>
+        <PT X="25676.228516" Y="-30405.457031" Z="0.000000"/>
+        <PT X="25642.544922" Y="-30417.833984" Z="0.000000"/>
+        <PT X="25641.941406" Y="-30419.640625" Z="0.000000"/>
+        <PT X="25618.748047" Y="-30432.894531" Z="0.000000"/>
+        <PT X="25616.238281" Y="-30432.593750" Z="0.000000"/>
+        <PT X="25587.625000" Y="-30526.166016" Z="0.000000"/>
+        <PT X="25642.042969" Y="-30551.470703" Z="0.000000"/>
+        <PT X="25731.755859" Y="-30495.521484" Z="0.000000" SELECTED="true"/>
+        <PT X="25741.691406" Y="-30414.996094" Z="0.000000"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>place</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>episode2_camp_karavan_tryker_island</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="2"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimZone">
+        <PT X="24960.978516" Y="-29738.396484" Z="0.000000"/>
+        <PT X="25006.128906" Y="-29697.109375" Z="0.000000"/>
+        <PT X="25003.763672" Y="-29628.380859" Z="0.000000"/>
+        <PT X="24920.228516" Y="-29608.400391" Z="0.000000"/>
+        <PT X="24827.728516" Y="-29663.740234" Z="0.000000"/>
+        <PT X="24819.441406" Y="-29728.037109" Z="0.000000"/>
+        <PT X="24826.123047" Y="-29802.707031" Z="0.000000" SELECTED="true"/>
+        <PT X="24892.794922" Y="-29801.298828" Z="0.000000"/>
+        <PT X="24944.703125" Y="-29753.404297" Z="0.000000"/>
+        <PT X="24944.554688" Y="-29752.048828" Z="0.000000"/>
+        <PT X="24959.603516" Y="-29738.574219" Z="0.000000"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>place</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>episode_2_camp_kami_tryker_island</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="3"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimZone">
+        <PT X="24802.511719" Y="-29601.888672" Z="0.000000" SELECTED="true"/>
+        <PT X="24804.710938" Y="-30555.587891" Z="0.000000"/>
+        <PT X="25755.111328" Y="-30555.587891" Z="0.000000"/>
+        <PT X="25756.210938" Y="-29604.085938" Z="0.000000"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>pvp_zone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>pvp_faction_tryker_island</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>type</NAME>
+          <STRING>VersusZone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>versus_clan1</NAME>
+          <STRING>Kami</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>versus_clan2</NAME>
+          <STRING>Karavan</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>versus_give_faction_points</NAME>
+          <STRING>true</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="4"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>safe_zones</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>safe_zones_6</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimPoint">
+          <PT X="25684.916016" Y="-30474.031250" Z="0.000000"/>
+          <ANGLE VALUE="-0.029452"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>safe_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>tryker_island_safe_zone_karavan</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>radius</NAME>
+            <STRING>40</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>safe_from_pvp</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="5"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimPoint">
+          <PT X="24890.302734" Y="-29676.681641" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>safe_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>tryker_island_safe_zone_kami</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>radius</NAME>
+            <STRING>40</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>safe_from_pvp</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="6"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimZone">
+        <PT X="25735.810547" Y="-29606.785156" Z="0.000000"/>
+        <PT X="24792.468750" Y="-29606.785156" Z="0.000000"/>
+        <PT X="24792.468750" Y="-30567.384766" Z="0.000000"/>
+        <PT X="25758.820313" Y="-30567.384766" Z="0.000000" SELECTED="true"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>place</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>displayed</NAME>
+          <STRING>false</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>main place</NAME>
+          <STRING>false</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>tp_tryker_island_ep 7</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>reported</NAME>
+          <STRING>false</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="13"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimPoint">
+          <PT X="25697.958984" Y="-30482.597656" Z="0.000000"/>
+          <ANGLE VALUE="-3.436117"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>teleport_spawn_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>tp_tryker_island_karavan_ep2</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimPoint">
+          <PT X="24885.048828" Y="-29673.710938" Z="0.000000"/>
+          <ANGLE VALUE="-0.451604"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>teleport_spawn_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>tp_tryker_island_kami_ep2</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+    </CHILD>
+  </ROOT_PRIMITIVE>
+</PRIMITIVES>

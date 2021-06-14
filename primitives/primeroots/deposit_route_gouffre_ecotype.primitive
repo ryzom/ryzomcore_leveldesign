@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<PRIMITIVES VERSION="1">
+  <ROOT_PRIMITIVE TYPE="CPrimNode">
+    <ALIAS LAST_GENERATED="1"/>
+    <CHILD TYPE="CPrimNode">
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>ecotypezone_list</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>ecotypezone_routegouffre</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimZone">
+        <PT X="5281.600098" Y="-9470.400391" Z="0.000000"/>
+        <PT X="5378.399902" Y="-17020.800781" Z="0.000000"/>
+        <PT X="7314.399902" Y="-17047.199219" Z="0.000000"/>
+        <PT X="7736.799805" Y="-12647.200195" Z="0.000000"/>
+        <PT X="6276.000000" Y="-9488.000000" Z="0.000000" SELECTED="true"/>
+        <PROPERTY TYPE="string">
+          <NAME>alias</NAME>
+          <STRING>29309113</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>ecotypezone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>ecotype</NAME>
+          <STRING>primaryroot</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>hidden</NAME>
+          <STRING></STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>routegouffre</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="1"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+    </CHILD>
+  </ROOT_PRIMITIVE>
+</PRIMITIVES>

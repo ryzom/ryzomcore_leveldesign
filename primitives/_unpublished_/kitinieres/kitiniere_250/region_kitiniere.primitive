@@ -1,0 +1,1382 @@
+<?xml version="1.0"?>
+<PRIMITIVES VERSION="1">
+  <ROOT_PRIMITIVE TYPE="CPrimNode">
+    <ALIAS LAST_GENERATED="39"/>
+    <CHILD TYPE="CPrimZone">
+      <PT X="1728.873047" Y="-16274.684570" Z="0.000000"/>
+      <PT X="1724.472900" Y="-17469.283203" Z="0.000000" SELECTED="true"/>
+      <PT X="2976.272949" Y="-17447.285156" Z="0.000000"/>
+      <PT X="2938.873047" Y="-16276.884766" Z="0.000000"/>
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>continent</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>id</NAME>
+        <STRING>kitiniere</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>continent_kitiniere</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>sheet</NAME>
+        <STRING>kitiniere</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+      </CHILD>
+      <CHILD TYPE="CPrimAlias">
+        <ALIAS VALUE="1"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+      </CHILD>
+      <CHILD TYPE="CPrimZone">
+        <PT X="1753.072998" Y="-16292.284180" Z="0.000000"/>
+        <PT X="1746.473022" Y="-17445.083984" Z="0.000000" SELECTED="true"/>
+        <PT X="2967.472900" Y="-17438.484375" Z="0.000000"/>
+        <PT X="2936.672852" Y="-16283.484375" Z="0.000000"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>region</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>kitiniere</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="8"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2608.528076" Y="-17089.503906" Z="0.000000"/>
+          <PT X="2703.525879" Y="-17249.357422" Z="0.000000"/>
+          <PT X="2863.378174" Y="-17230.173828" Z="0.000000"/>
+          <PT X="2851.503418" Y="-17144.310547" Z="0.000000"/>
+          <PT X="2732.756104" Y="-16999.988281" Z="0.000000"/>
+          <PT X="2659.680664" Y="-16999.988281" Z="0.000000" SELECTED="true"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>kitiniere_cattle_room</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="11"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="1763.595337" Y="-16809.986328" Z="0.000000"/>
+          <PT X="1782.777588" Y="-16943.347656" Z="0.000000"/>
+          <PT X="1932.581909" Y="-16915.031250" Z="0.000000"/>
+          <PT X="2012.964600" Y="-16848.349609" Z="0.000000"/>
+          <PT X="2135.365723" Y="-16835.562500" Z="0.000000" SELECTED="true"/>
+          <PT X="2268.728027" Y="-16742.384766" Z="0.000000"/>
+          <PT X="2262.333984" Y="-16694.886719" Z="0.000000"/>
+          <PT X="2268.728027" Y="-16467.439453" Z="0.000000"/>
+          <PT X="2061.376953" Y="-16464.699219" Z="0.000000"/>
+          <PT X="1866.814087" Y="-16490.279297" Z="0.000000"/>
+          <PT X="1783.690918" Y="-16714.072266" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>kitiniere_dark_mines</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="10"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="1893.303955" Y="-16928.738281" Z="0.000000"/>
+          <PT X="1902.438354" Y="-17011.861328" Z="0.000000"/>
+          <PT X="2007.484009" Y="-17104.119141" Z="0.000000"/>
+          <PT X="2077.819092" Y="-17101.378906" Z="0.000000"/>
+          <PT X="2141.759766" Y="-17018.255859" Z="0.000000"/>
+          <PT X="2160.942139" Y="-16963.449219" Z="0.000000"/>
+          <PT X="2094.260986" Y="-16873.931641" Z="0.000000"/>
+          <PT X="2030.320068" Y="-16854.750000" Z="0.000000"/>
+          <PT X="2002.003418" Y="-16861.142578" Z="0.000000"/>
+          <PT X="1953.591064" Y="-16912.296875" Z="0.000000" SELECTED="true"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>kitiniere_eggs_room</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="13"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2391.829590" Y="-17221.126953" Z="0.000000"/>
+          <PT X="2410.098633" Y="-17275.021484" Z="0.000000"/>
+          <PT X="2474.039307" Y="-17319.779297" Z="0.000000"/>
+          <PT X="2486.827637" Y="-17390.113281" Z="0.000000"/>
+          <PT X="2496.875488" Y="-17419.343750" Z="0.000000"/>
+          <PT X="2550.768311" Y="-17425.738281" Z="0.000000"/>
+          <PT X="2595.527100" Y="-17400.162109" Z="0.000000"/>
+          <PT X="2614.709229" Y="-17349.009766" Z="0.000000"/>
+          <PT X="2611.968994" Y="-17282.328125" Z="0.000000"/>
+          <PT X="2640.285645" Y="-17224.781250" Z="0.000000"/>
+          <PT X="2665.862061" Y="-17208.339844" Z="0.000000"/>
+          <PT X="2663.121582" Y="-17199.205078" Z="0.000000"/>
+          <PT X="2618.363037" Y="-17125.216797" Z="0.000000"/>
+          <PT X="2544.374268" Y="-17182.763672" Z="0.000000"/>
+          <PT X="2471.299072" Y="-17163.580078" Z="0.000000" SELECTED="true"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>true</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>kitiniere_entrance</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="15"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimPoint">
+            <PT X="2542.080322" Y="-17400.638672" Z="0.000000"/>
+            <ANGLE VALUE="2.532909"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>teleport_spawn_zone</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>tp_spawn_entrance_kitiniere</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>type</NAME>
+              <STRING>respawnable</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2518.002686" Y="-16550.988281" Z="0.000000"/>
+          <PT X="2456.802002" Y="-16672.476563" Z="0.000000"/>
+          <PT X="2498.820313" Y="-16818.626953" Z="0.000000"/>
+          <PT X="2607.519775" Y="-16860.646484" Z="0.000000"/>
+          <PT X="2616.654297" Y="-16911.798828" Z="0.000000"/>
+          <PT X="2645.884277" Y="-16975.738281" Z="0.000000"/>
+          <PT X="2735.401611" Y="-16994.921875" Z="0.000000"/>
+          <PT X="2792.948242" Y="-17055.208984" Z="0.000000"/>
+          <PT X="2863.283203" Y="-17135.591797" Z="0.000000"/>
+          <PT X="2878.811768" Y="-17212.320313" Z="0.000000"/>
+          <PT X="2929.964355" Y="-17110.015625" Z="0.000000"/>
+          <PT X="2942.752686" Y="-17020.498047" Z="0.000000"/>
+          <PT X="2789.294434" Y="-16793.964844" Z="0.000000"/>
+          <PT X="2671.460693" Y="-16677.957031" Z="0.000000"/>
+          <PT X="2643.144043" Y="-16570.171875" Z="0.000000" SELECTED="true"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>kitiniere_old_mines</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="9"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2318.872314" Y="-16301.615234" Z="0.000000"/>
+          <PT X="2271.373291" Y="-16332.671875" Z="0.000000"/>
+          <PT X="2296.036377" Y="-16413.054688" Z="0.000000"/>
+          <PT X="2280.507813" Y="-16479.736328" Z="0.000000"/>
+          <PT X="2277.767334" Y="-16553.724609" Z="0.000000"/>
+          <PT X="2277.767334" Y="-16614.011719" Z="0.000000"/>
+          <PT X="2286.901855" Y="-16684.347656" Z="0.000000"/>
+          <PT X="2338.054443" Y="-16704.443359" Z="0.000000"/>
+          <PT X="2444.013672" Y="-16697.134766" Z="0.000000"/>
+          <PT X="2482.378174" Y="-16602.136719" Z="0.000000"/>
+          <PT X="2494.252930" Y="-16582.955078" Z="0.000000"/>
+          <PT X="2513.435303" Y="-16531.802734" Z="0.000000"/>
+          <PT X="2527.136719" Y="-16349.114258" Z="0.000000"/>
+          <PT X="2479.637939" Y="-16296.131836" Z="0.000000" SELECTED="true"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>kitiniere_princes_room</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="12"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2341.708252" Y="-16814.058594" Z="0.000000"/>
+          <PT X="2239.402832" Y="-16865.210938" Z="0.000000"/>
+          <PT X="2216.566895" Y="-16951.074219" Z="0.000000"/>
+          <PT X="2213.826416" Y="-17008.621094" Z="0.000000"/>
+          <PT X="2235.749023" Y="-17066.167969" Z="0.000000"/>
+          <PT X="2277.767334" Y="-17117.320313" Z="0.000000"/>
+          <PT X="2402.908691" Y="-17101.791016" Z="0.000000"/>
+          <PT X="2504.300781" Y="-17003.140625" Z="0.000000"/>
+          <PT X="2530.790527" Y="-16865.210938" Z="0.000000"/>
+          <PT X="2479.637695" Y="-16794.875000" Z="0.000000" SELECTED="true"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>kitiniere_queen_room</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="14"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2449.530762" Y="-17062.525391" Z="0.000000"/>
+          <PT X="2455.574951" Y="-17099.421875" Z="0.000000"/>
+          <PT X="2500.658936" Y="-17094.314453" Z="0.000000"/>
+          <PT X="2493.284668" Y="-17059.667969" Z="0.000000" SELECTED="true"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>mission_visiter_salle_reine_1</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="17"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2541.953613" Y="-16888.335938" Z="0.000000"/>
+          <PT X="2543.670410" Y="-16934.818359" Z="0.000000"/>
+          <PT X="2572.161865" Y="-16934.568359" Z="0.000000"/>
+          <PT X="2570.742188" Y="-16888.496094" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>mission_visiter_salle_reine_2</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="19"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2354.220947" Y="-16835.246094" Z="0.000000"/>
+          <PT X="2354.793213" Y="-16870.398438" Z="0.000000" SELECTED="true"/>
+          <PT X="2423.703125" Y="-16863.919922" Z="0.000000"/>
+          <PT X="2421.733398" Y="-16831.101563" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>mission_visiter_salle_reine_3</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="20"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2572.019531" Y="-16932.023438" Z="0.000000"/>
+          <PT X="2578.063721" Y="-16968.919922" Z="0.000000"/>
+          <PT X="2623.147705" Y="-16963.812500" Z="0.000000"/>
+          <PT X="2615.773438" Y="-16929.166016" Z="0.000000" SELECTED="true"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>mission_cartographie_1</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="21"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2839.893066" Y="-17009.867188" Z="0.000000"/>
+          <PT X="2845.937256" Y="-17046.763672" Z="0.000000"/>
+          <PT X="2891.021240" Y="-17041.656250" Z="0.000000"/>
+          <PT X="2883.646973" Y="-17007.009766" Z="0.000000" SELECTED="true"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>mission_cartographie_2</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="22"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2600.638428" Y="-16745.427734" Z="0.000000"/>
+          <PT X="2606.682617" Y="-16782.324219" Z="0.000000"/>
+          <PT X="2651.766602" Y="-16777.216797" Z="0.000000"/>
+          <PT X="2644.392334" Y="-16742.570313" Z="0.000000" SELECTED="true"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>mission_cartographie_3</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="23"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2112.219482" Y="-16595.421875" Z="0.000000"/>
+          <PT X="2118.263672" Y="-16632.318359" Z="0.000000"/>
+          <PT X="2163.347656" Y="-16627.210938" Z="0.000000"/>
+          <PT X="2155.973389" Y="-16592.564453" Z="0.000000" SELECTED="true"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>mission_cartographie_4</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="24"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="1827.319580" Y="-16658.125000" Z="0.000000"/>
+          <PT X="1833.363770" Y="-16695.021484" Z="0.000000"/>
+          <PT X="1878.447754" Y="-16689.914063" Z="0.000000"/>
+          <PT X="1871.073486" Y="-16655.267578" Z="0.000000" SELECTED="true"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>mission_cartographie_5</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="25"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2184.819580" Y="-16738.423828" Z="0.000000"/>
+          <PT X="2190.863770" Y="-16775.320313" Z="0.000000"/>
+          <PT X="2235.947754" Y="-16770.212891" Z="0.000000"/>
+          <PT X="2228.573486" Y="-16735.566406" Z="0.000000" SELECTED="true"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>mission_cartographie_6</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="26"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2404.819336" Y="-17178.421875" Z="0.000000"/>
+          <PT X="2410.863770" Y="-17215.318359" Z="0.000000"/>
+          <PT X="2455.947754" Y="-17210.210938" Z="0.000000"/>
+          <PT X="2448.573242" Y="-17175.564453" Z="0.000000" SELECTED="true"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>mission_cartographie_7</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="27"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="1946.674561" Y="-16491.771484" Z="0.000000"/>
+          <PT X="1921.329102" Y="-16510.146484" Z="0.000000"/>
+          <PT X="1928.711426" Y="-16523.894531" Z="0.000000"/>
+          <PT X="1934.211426" Y="-16524.855469" Z="0.000000"/>
+          <PT X="1940.055176" Y="-16529.531250" Z="0.000000"/>
+          <PT X="1942.783447" Y="-16534.275391" Z="0.000000"/>
+          <PT X="1965.834595" Y="-16534.132813" Z="0.000000"/>
+          <PT X="1967.760864" Y="-16532.750000" Z="0.000000"/>
+          <PT X="1973.673340" Y="-16529.863281" Z="0.000000"/>
+          <PT X="1978.623291" Y="-16529.726563" Z="0.000000"/>
+          <PT X="1987.354614" Y="-16531.445313" Z="0.000000"/>
+          <PT X="1995.147827" Y="-16519.332031" Z="0.000000"/>
+          <PT X="1969.485352" Y="-16487.652344" Z="0.000000"/>
+          <PT X="1963.086914" Y="-16486.699219" Z="0.000000" SELECTED="true"/>
+          <PT X="1952.293213" Y="-16487.455078" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>mission_source_magique</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="29"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2548.222656" Y="-17216.451172" Z="0.000000"/>
+          <PT X="2542.588867" Y="-17217.521484" Z="0.000000"/>
+          <PT X="2537.501465" Y="-17218.072266" Z="0.000000"/>
+          <PT X="2532.826416" Y="-17219.859375" Z="0.000000"/>
+          <PT X="2529.388916" Y="-17219.722656" Z="0.000000" SELECTED="true"/>
+          <PT X="2527.872803" Y="-17246.839844" Z="0.000000"/>
+          <PT X="2530.489014" Y="-17248.597656" Z="0.000000"/>
+          <PT X="2531.451416" Y="-17252.722656" Z="0.000000"/>
+          <PT X="2531.589111" Y="-17257.396484" Z="0.000000"/>
+          <PT X="2533.651611" Y="-17257.671875" Z="0.000000"/>
+          <PT X="2537.089111" Y="-17257.533203" Z="0.000000"/>
+          <PT X="2540.251465" Y="-17257.121094" Z="0.000000"/>
+          <PT X="2544.376465" Y="-17256.708984" Z="0.000000"/>
+          <PT X="2549.188965" Y="-17256.984375" Z="0.000000"/>
+          <PT X="2550.697510" Y="-17259.626953" Z="0.000000"/>
+          <PT X="2576.960205" Y="-17260.037109" Z="0.000000"/>
+          <PT X="2586.726563" Y="-17255.197266" Z="0.000000"/>
+          <PT X="2590.851563" Y="-17251.484375" Z="0.000000"/>
+          <PT X="2592.226563" Y="-17248.734375" Z="0.000000"/>
+          <PT X="2594.013916" Y="-17245.160156" Z="0.000000"/>
+          <PT X="2597.726318" Y="-17242.683594" Z="0.000000"/>
+          <PT X="2598.826416" Y="-17239.796875" Z="0.000000"/>
+          <PT X="2599.651367" Y="-17236.634766" Z="0.000000"/>
+          <PT X="2600.338867" Y="-17232.097656" Z="0.000000"/>
+          <PT X="2601.989014" Y="-17228.246094" Z="0.000000"/>
+          <PT X="2602.397705" Y="-17226.078125" Z="0.000000"/>
+          <PT X="2603.776367" Y="-17224.671875" Z="0.000000"/>
+          <PT X="2601.438965" Y="-17216.558594" Z="0.000000"/>
+          <PT X="2593.739014" Y="-17218.072266" Z="0.000000"/>
+          <PT X="2583.289063" Y="-17217.521484" Z="0.000000"/>
+          <PT X="2573.664063" Y="-17216.697266" Z="0.000000"/>
+          <PT X="2564.451416" Y="-17216.558594" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>mission_extrait_substance</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="31"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2693.142334" Y="-17011.580078" Z="0.000000"/>
+          <PT X="2685.687744" Y="-17016.173828" Z="0.000000"/>
+          <PT X="2665.917236" Y="-17034.404297" Z="0.000000"/>
+          <PT X="2662.175781" Y="-17036.939453" Z="0.000000"/>
+          <PT X="2659.975830" Y="-17039.962891" Z="0.000000"/>
+          <PT X="2660.388184" Y="-17044.363281" Z="0.000000"/>
+          <PT X="2663.688232" Y="-17047.251953" Z="0.000000"/>
+          <PT X="2667.538330" Y="-17051.238281" Z="0.000000"/>
+          <PT X="2670.425781" Y="-17054.539063" Z="0.000000" SELECTED="true"/>
+          <PT X="2676.200684" Y="-17051.513672" Z="0.000000"/>
+          <PT X="2675.513184" Y="-17047.939453" Z="0.000000"/>
+          <PT X="2676.338379" Y="-17044.501953" Z="0.000000"/>
+          <PT X="2678.292236" Y="-17041.554688" Z="0.000000"/>
+          <PT X="2685.137939" Y="-17038.861328" Z="0.000000"/>
+          <PT X="2691.600342" Y="-17038.173828" Z="0.000000"/>
+          <PT X="2700.704834" Y="-17038.117188" Z="0.000000"/>
+          <PT X="2716.792480" Y="-17029.455078" Z="0.000000"/>
+          <PT X="2718.825439" Y="-17029.923828" Z="0.000000"/>
+          <PT X="2720.337891" Y="-17033.775391" Z="0.000000"/>
+          <PT X="2721.575439" Y="-17036.525391" Z="0.000000"/>
+          <PT X="2721.987793" Y="-17039.275391" Z="0.000000"/>
+          <PT X="2720.887939" Y="-17041.611328" Z="0.000000"/>
+          <PT X="2730.100342" Y="-17043.261719" Z="0.000000"/>
+          <PT X="2731.200195" Y="-17041.062500" Z="0.000000"/>
+          <PT X="2734.225342" Y="-17037.761719" Z="0.000000"/>
+          <PT X="2736.287842" Y="-17033.224609" Z="0.000000"/>
+          <PT X="2736.287842" Y="-17029.099609" Z="0.000000"/>
+          <PT X="2736.700195" Y="-17022.912109" Z="0.000000"/>
+          <PT X="2735.737793" Y="-17018.787109" Z="0.000000"/>
+          <PT X="2731.612793" Y="-17015.900391" Z="0.000000"/>
+          <PT X="2725.700195" Y="-17014.525391" Z="0.000000"/>
+          <PT X="2720.642578" Y="-17013.503906" Z="0.000000"/>
+          <PT X="2709.337891" Y="-17011.636719" Z="0.000000"/>
+          <PT X="2703.837891" Y="-17010.400391" Z="0.000000"/>
+          <PT X="2698.475342" Y="-17010.400391" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>mission_substance_royale</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="32"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2021.530151" Y="-16955.724609" Z="0.000000"/>
+          <PT X="2018.708496" Y="-16954.628906" Z="0.000000"/>
+          <PT X="2009.977173" Y="-16961.228516" Z="0.000000"/>
+          <PT X="2010.527222" Y="-16963.015625" Z="0.000000"/>
+          <PT X="2010.598877" Y="-16965.349609" Z="0.000000"/>
+          <PT X="2009.633423" Y="-16969.066406" Z="0.000000"/>
+          <PT X="2007.436523" Y="-16971.123047" Z="0.000000"/>
+          <PT X="2013.758423" Y="-16977.935547" Z="0.000000"/>
+          <PT X="2017.195923" Y="-16977.316406" Z="0.000000"/>
+          <PT X="2021.324097" Y="-16977.246094" Z="0.000000"/>
+          <PT X="2025.102173" Y="-16978.623047" Z="0.000000"/>
+          <PT X="2032.595947" Y="-16971.060547" Z="0.000000"/>
+          <PT X="2032.117676" Y="-16969.337891" Z="0.000000"/>
+          <PT X="2032.320923" Y="-16966.248047" Z="0.000000"/>
+          <PT X="2033.145996" Y="-16963.359375" Z="0.000000"/>
+          <PT X="2034.658447" Y="-16961.435547" Z="0.000000"/>
+          <PT X="2031.498901" Y="-16957.101563" Z="0.000000"/>
+          <PT X="2028.745972" Y="-16953.666016" Z="0.000000"/>
+          <PT X="2027.645874" Y="-16954.283203" Z="0.000000" SELECTED="true"/>
+          <PT X="2026.133423" Y="-16955.109375" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>endroit_residu_oeuf</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="33"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="1816.087402" Y="-16853.714844" Z="0.000000"/>
+          <PT X="1810.960571" Y="-16853.439453" Z="0.000000"/>
+          <PT X="1805.735474" Y="-16856.464844" Z="0.000000"/>
+          <PT X="1798.487305" Y="-16863.064453" Z="0.000000"/>
+          <PT X="1790.197998" Y="-16862.925781" Z="0.000000"/>
+          <PT X="1784.697998" Y="-16864.027344" Z="0.000000"/>
+          <PT X="1781.437378" Y="-16868.839844" Z="0.000000"/>
+          <PT X="1779.473022" Y="-16871.589844" Z="0.000000"/>
+          <PT X="1777.960571" Y="-16877.089844" Z="0.000000"/>
+          <PT X="1777.227173" Y="-16881.150391" Z="0.000000"/>
+          <PT X="1778.412476" Y="-16884.240234" Z="0.000000"/>
+          <PT X="1780.664673" Y="-16887.750000" Z="0.000000"/>
+          <PT X="1786.508423" Y="-16892.630859" Z="0.000000"/>
+          <PT X="1790.512329" Y="-16894.689453" Z="0.000000"/>
+          <PT X="1800.739624" Y="-16901.570313" Z="0.000000"/>
+          <PT X="1804.468628" Y="-16901.978516" Z="0.000000"/>
+          <PT X="1811.395386" Y="-16901.113281" Z="0.000000" SELECTED="true"/>
+          <PT X="1816.345337" Y="-16898.912109" Z="0.000000"/>
+          <PT X="1819.112427" Y="-16895.240234" Z="0.000000"/>
+          <PT X="1826.262573" Y="-16883.962891" Z="0.000000"/>
+          <PT X="1830.142090" Y="-16876.439453" Z="0.000000"/>
+          <PT X="1832.067139" Y="-16869.908203" Z="0.000000"/>
+          <PT X="1832.724976" Y="-16864.988281" Z="0.000000"/>
+          <PT X="1833.373047" Y="-16861.138672" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>emplacement_materiau1</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="34"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2621.483398" Y="-17167.064453" Z="0.000000"/>
+          <PT X="2612.133301" Y="-17173.939453" Z="0.000000"/>
+          <PT X="2607.977295" Y="-17176.111328" Z="0.000000"/>
+          <PT X="2603.608398" Y="-17183.289063" Z="0.000000"/>
+          <PT X="2605.258301" Y="-17191.263672" Z="0.000000"/>
+          <PT X="2610.452393" Y="-17197.011719" Z="0.000000" SELECTED="true"/>
+          <PT X="2612.408203" Y="-17200.064453" Z="0.000000"/>
+          <PT X="2615.158203" Y="-17207.763672" Z="0.000000"/>
+          <PT X="2621.452393" Y="-17214.611328" Z="0.000000"/>
+          <PT X="2622.858398" Y="-17213.814453" Z="0.000000"/>
+          <PT X="2637.295898" Y="-17203.914063" Z="0.000000"/>
+          <PT X="2640.427246" Y="-17203.199219" Z="0.000000"/>
+          <PT X="2633.552246" Y="-17197.699219" Z="0.000000"/>
+          <PT X="2630.389893" Y="-17198.111328" Z="0.000000"/>
+          <PT X="2627.258301" Y="-17196.212891" Z="0.000000"/>
+          <PT X="2623.927246" Y="-17192.474609" Z="0.000000"/>
+          <PT X="2623.958252" Y="-17188.513672" Z="0.000000"/>
+          <PT X="2623.652344" Y="-17184.224609" Z="0.000000"/>
+          <PT X="2625.608398" Y="-17179.988281" Z="0.000000"/>
+          <PT X="2632.483398" Y="-17176.689453" Z="0.000000"/>
+          <PT X="2637.539795" Y="-17178.587891" Z="0.000000"/>
+          <PT X="2640.152344" Y="-17183.261719" Z="0.000000"/>
+          <PT X="2641.114746" Y="-17188.212891" Z="0.000000"/>
+          <PT X="2639.739746" Y="-17192.199219" Z="0.000000"/>
+          <PT X="2637.402344" Y="-17195.224609" Z="0.000000"/>
+          <PT X="2634.789795" Y="-17197.423828" Z="0.000000"/>
+          <PT X="2641.389893" Y="-17202.923828" Z="0.000000"/>
+          <PT X="2643.314941" Y="-17201.962891" Z="0.000000"/>
+          <PT X="2647.989746" Y="-17200.173828" Z="0.000000"/>
+          <PT X="2651.839844" Y="-17196.324219" Z="0.000000"/>
+          <PT X="2652.664795" Y="-17192.750000" Z="0.000000"/>
+          <PT X="2654.589844" Y="-17188.761719" Z="0.000000"/>
+          <PT X="2653.627197" Y="-17184.636719" Z="0.000000"/>
+          <PT X="2652.527344" Y="-17181.199219" Z="0.000000"/>
+          <PT X="2649.227295" Y="-17178.173828" Z="0.000000"/>
+          <PT X="2646.614746" Y="-17175.150391" Z="0.000000"/>
+          <PT X="2642.902344" Y="-17170.886719" Z="0.000000"/>
+          <PT X="2638.364746" Y="-17166.074219" Z="0.000000"/>
+          <PT X="2632.589844" Y="-17162.361328" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>emplacement_materiau2</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="35"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2588.242432" Y="-16927.642578" Z="0.000000"/>
+          <PT X="2586.042480" Y="-16920.355469" Z="0.000000"/>
+          <PT X="2582.328613" Y="-16915.068359" Z="0.000000"/>
+          <PT X="2573.115967" Y="-16911.494141" Z="0.000000"/>
+          <PT X="2569.404785" Y="-16906.330078" Z="0.000000"/>
+          <PT X="2568.440918" Y="-16900.906250" Z="0.000000"/>
+          <PT X="2562.666016" Y="-16899.394531" Z="0.000000"/>
+          <PT X="2558.128662" Y="-16899.119141" Z="0.000000"/>
+          <PT X="2554.003662" Y="-16899.394531" Z="0.000000"/>
+          <PT X="2551.528564" Y="-16904.482422" Z="0.000000"/>
+          <PT X="2551.253662" Y="-16911.906250" Z="0.000000"/>
+          <PT X="2551.803467" Y="-16918.505859" Z="0.000000"/>
+          <PT X="2554.416016" Y="-16923.730469" Z="0.000000"/>
+          <PT X="2557.578613" Y="-16926.480469" Z="0.000000"/>
+          <PT X="2560.878662" Y="-16927.855469" Z="0.000000"/>
+          <PT X="2564.729980" Y="-16927.642578" Z="0.000000"/>
+          <PT X="2570.642334" Y="-16927.644531" Z="0.000000"/>
+          <PT X="2575.865967" Y="-16927.855469" Z="0.000000"/>
+          <PT X="2579.303467" Y="-16931.431641" Z="0.000000"/>
+          <PT X="2582.603516" Y="-16937.480469" Z="0.000000"/>
+          <PT X="2583.978516" Y="-16943.806641" Z="0.000000"/>
+          <PT X="2583.979980" Y="-16951.429688" Z="0.000000"/>
+          <PT X="2580.267334" Y="-16957.617188" Z="0.000000" SELECTED="true"/>
+          <PT X="2569.541016" Y="-16964.019531" Z="0.000000"/>
+          <PT X="2565.966064" Y="-16970.619141" Z="0.000000"/>
+          <PT X="2564.041016" Y="-16982.994141" Z="0.000000"/>
+          <PT X="2564.592773" Y="-16989.380859" Z="0.000000"/>
+          <PT X="2567.203613" Y="-16994.818359" Z="0.000000"/>
+          <PT X="2573.803467" Y="-16994.267578" Z="0.000000"/>
+          <PT X="2578.892334" Y="-16990.203125" Z="0.000000"/>
+          <PT X="2583.016113" Y="-16976.943359" Z="0.000000"/>
+          <PT X="2583.704834" Y="-16967.791016" Z="0.000000"/>
+          <PT X="2586.179932" Y="-16951.841797" Z="0.000000"/>
+          <PT X="2586.042480" Y="-16940.292969" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>emplacement_materiau3</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="36"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2433.509277" Y="-16633.929688" Z="0.000000"/>
+          <PT X="2418.659180" Y="-16633.035156" Z="0.000000"/>
+          <PT X="2418.707520" Y="-16634.097656" Z="0.000000"/>
+          <PT X="2419.284180" Y="-16638.050781" Z="0.000000"/>
+          <PT X="2420.246582" Y="-16644.652344" Z="0.000000"/>
+          <PT X="2421.684082" Y="-16650.083984" Z="0.000000"/>
+          <PT X="2423.271484" Y="-16652.914063" Z="0.000000"/>
+          <PT X="2427.740234" Y="-16655.800781" Z="0.000000"/>
+          <PT X="2431.916504" Y="-16655.912109" Z="0.000000"/>
+          <PT X="2441.154053" Y="-16655.072266" Z="0.000000"/>
+          <PT X="2447.472168" Y="-16654.904297" Z="0.000000"/>
+          <PT X="2453.710449" Y="-16653.710938" Z="0.000000"/>
+          <PT X="2456.409668" Y="-16652.498047" Z="0.000000"/>
+          <PT X="2461.985352" Y="-16650.601563" Z="0.000000"/>
+          <PT X="2467.410400" Y="-16646.792969" Z="0.000000"/>
+          <PT X="2469.610352" Y="-16644.386719" Z="0.000000"/>
+          <PT X="2471.172852" Y="-16641.130859" Z="0.000000"/>
+          <PT X="2471.810303" Y="-16638.818359" Z="0.000000"/>
+          <PT X="2474.704346" Y="-16635.478516" Z="0.000000"/>
+          <PT X="2465.216797" Y="-16634.310547" Z="0.000000"/>
+          <PT X="2457.241699" Y="-16633.486328" Z="0.000000"/>
+          <PT X="2446.791992" Y="-16633.480469" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>emplacement_2_materiau1</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="37"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2335.147949" Y="-16632.931641" Z="0.000000"/>
+          <PT X="2323.323242" Y="-16632.107422" Z="0.000000"/>
+          <PT X="2312.722412" Y="-16631.230469" Z="0.000000"/>
+          <PT X="2306.960449" Y="-16631.832031" Z="0.000000"/>
+          <PT X="2304.266113" Y="-16634.941406" Z="0.000000"/>
+          <PT X="2308.679199" Y="-16649.847656" Z="0.000000"/>
+          <PT X="2315.884766" Y="-16651.761719" Z="0.000000"/>
+          <PT X="2324.560547" Y="-16653.761719" Z="0.000000"/>
+          <PT X="2329.909668" Y="-16654.787109" Z="0.000000"/>
+          <PT X="2340.441895" Y="-16655.550781" Z="0.000000"/>
+          <PT X="2347.372314" Y="-16655.335938" Z="0.000000"/>
+          <PT X="2356.391602" Y="-16653.488281" Z="0.000000"/>
+          <PT X="2358.996826" Y="-16651.158203" Z="0.000000"/>
+          <PT X="2360.165527" Y="-16644.832031" Z="0.000000"/>
+          <PT X="2360.371826" Y="-16638.232422" Z="0.000000"/>
+          <PT X="2360.302979" Y="-16635.550781" Z="0.000000" SELECTED="true"/>
+          <PT X="2356.804443" Y="-16635.406250" Z="0.000000"/>
+          <PT X="2353.848145" Y="-16635.679688" Z="0.000000"/>
+          <PT X="2349.723389" Y="-16635.683594" Z="0.000000"/>
+          <PT X="2345.047852" Y="-16634.859375" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>emplacement_2_materiau2</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="38"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="2390.489258" Y="-16634.031250" Z="0.000000"/>
+          <PT X="2383.201904" Y="-16634.716797" Z="0.000000"/>
+          <PT X="2374.677002" Y="-16634.304688" Z="0.000000" SELECTED="true"/>
+          <PT X="2373.208740" Y="-16637.193359" Z="0.000000"/>
+          <PT X="2372.889404" Y="-16638.359375" Z="0.000000"/>
+          <PT X="2372.521240" Y="-16641.318359" Z="0.000000"/>
+          <PT X="2372.521240" Y="-16645.511719" Z="0.000000"/>
+          <PT X="2372.796387" Y="-16650.324219" Z="0.000000"/>
+          <PT X="2374.883057" Y="-16653.556641" Z="0.000000"/>
+          <PT X="2378.433838" Y="-16655.068359" Z="0.000000"/>
+          <PT X="2384.370605" Y="-16655.824219" Z="0.000000"/>
+          <PT X="2388.677734" Y="-16655.619141" Z="0.000000"/>
+          <PT X="2393.902588" Y="-16654.312500" Z="0.000000"/>
+          <PT X="2397.408936" Y="-16652.732422" Z="0.000000"/>
+          <PT X="2401.489258" Y="-16650.597656" Z="0.000000"/>
+          <PT X="2402.947266" Y="-16642.996094" Z="0.000000"/>
+          <PT X="2405.201904" Y="-16637.261719" Z="0.000000"/>
+          <PT X="2404.857666" Y="-16633.414063" Z="0.000000"/>
+          <PT X="2397.615234" Y="-16633.962891" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>place</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>displayed</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>main place</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>emplacement_2_materiau3</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>reported</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="39"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>teleport_triggers</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>teleport_triggers_kitiniere</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>auto_teleport</NAME>
+            <STRING>true</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>teleport_trigger</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>TT_kitiniere_almati</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>pacs_trigger_id</NAME>
+            <STRING>411</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>teleport_destination</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>TD_kitiniere_almati</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>pets_allowed</NAME>
+              <STRING>true</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>teleport_spawn_zone</NAME>
+              <STRING>tp_exit_kitiniere</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>safe_zones</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>safe_zones_5</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimPoint">
+          <PT X="2541.396729" Y="-17400.744141" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>safe_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>safe_zone_entrance_kitiniere</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>radius</NAME>
+            <STRING>17</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="16"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>teleport_spawn_zones</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>teleport_spawn_zones_6</STRING>
+        </PROPERTY>
+      </CHILD>
+    </CHILD>
+  </ROOT_PRIMITIVE>
+</PRIMITIVES>

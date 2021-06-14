@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<PRIMITIVES VERSION="1">
+  <ROOT_PRIMITIVE TYPE="CPrimNode">
+    <ALIAS LAST_GENERATED="3"/>
+    <CHILD TYPE="CPrimNode">
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>ecotypezone_list</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>hidden</NAME>
+        <STRING></STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>ecotypezone_list_1</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimZone">
+        <PT X="14605.200195" Y="-29604.000000" Z="0.000000"/>
+        <PT X="13906.500000" Y="-30445.199219" Z="0.000000"/>
+        <PT X="13642.500000" Y="-31334.000000" Z="0.000000"/>
+        <PT X="13730.500000" Y="-33402.000000" Z="0.000000"/>
+        <PT X="14407.200195" Y="-34945.601563" Z="0.000000"/>
+        <PT X="18640.000000" Y="-34954.398438" Z="0.000000"/>
+        <PT X="19837.699219" Y="-32530.800781" Z="0.000000"/>
+        <PT X="20136.000000" Y="-31069.199219" Z="0.000000"/>
+        <PT X="20057.699219" Y="-29380.400391" Z="0.000000"/>
+        <PT X="17549.699219" Y="-29336.400391" Z="0.000000" SELECTED="true"/>
+        <PROPERTY TYPE="string">
+          <NAME>alias</NAME>
+          <STRING>27480866</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>ecotypezone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>ecotype</NAME>
+          <STRING>lacustre</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>hidden</NAME>
+          <STRING></STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>lacustre_mainland</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="2"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimZone">
+        <PT X="23384.099609" Y="-32896.703125" Z="0.000000" SELECTED="true"/>
+        <PT X="20691.300781" Y="-32892.300781" Z="0.000000"/>
+        <PT X="20647.300781" Y="-35013.097656" Z="0.000000"/>
+        <PT X="23353.300781" Y="-35026.300781" Z="0.000000"/>
+        <PROPERTY TYPE="string">
+          <NAME>alias</NAME>
+          <STRING>3278091</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>ecotypezone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>ecotype</NAME>
+          <STRING>lacustre</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>hidden</NAME>
+          <STRING></STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>lacustre_newbieland_tryker</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="1"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimZone">
+        <PT X="25759.439453" Y="-30416.634766" Z="0.000000" SELECTED="true"/>
+        <PT X="25760.726563" Y="-29729.351563" Z="0.000000"/>
+        <PT X="24857.218750" Y="-29731.925781" Z="0.000000"/>
+        <PT X="24852.072266" Y="-30416.634766" Z="0.000000"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>ecotypezone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>ecotype</NAME>
+          <STRING>lacustre</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>island_tryker</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="3"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+    </CHILD>
+  </ROOT_PRIMITIVE>
+</PRIMITIVES>

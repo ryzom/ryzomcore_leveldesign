@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<PRIMITIVES VERSION="1">
+  <ROOT_PRIMITIVE TYPE="CPrimNode">
+    <ALIAS LAST_GENERATED="14"/>
+    <CHILD TYPE="CPrimZone">
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>continent</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>id</NAME>
+        <STRING>fyros_island</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>fyros_island</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>sheet</NAME>
+        <STRING>fyros_island</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>start_villages</STRING>
+        </PROPERTY>
+      </CHILD>
+      <CHILD TYPE="CPrimAlias">
+        <ALIAS VALUE="5"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+      </CHILD>
+      <CHILD TYPE="CPrimZone">
+        <PT X="25905.064453" Y="-23836.964844" Z="0.000000"/>
+        <PT X="24769.865234" Y="-23841.365234" Z="0.000000"/>
+        <PT X="24796.263672" Y="-24505.765625" Z="0.000000"/>
+        <PT X="25913.865234" Y="-24505.765625" Z="0.000000" SELECTED="true"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>place</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>displayed</NAME>
+          <STRING>false</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>main place</NAME>
+          <STRING>false</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>tp_fyros_island_ep2</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>reported</NAME>
+          <STRING>false</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="1"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimPoint">
+          <PT X="25850.816406" Y="-24286.707031" Z="0.000000"/>
+          <ANGLE VALUE="-2.542727"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>teleport_spawn_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>tp_fyros_island_karavan_ep2</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimPoint">
+          <PT X="24870.582031" Y="-23995.281250" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>teleport_spawn_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>tp_fyros_island_kami_ep2</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>safe_zones</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>safe_zones_4</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimPoint">
+          <PT X="25846.277344" Y="-24285.054688" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>safe_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>fyros_island_safe_zone_karavan</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>radius</NAME>
+            <STRING>40</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>safe_from_pvp</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="6"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimPoint">
+          <PT X="24868.671875" Y="-23998.093750" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>safe_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>fyros_island_safe_zone_kami</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>radius</NAME>
+            <STRING>40</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>safe_from_pvp</NAME>
+            <STRING>false</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="7"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimZone">
+        <PT X="25785.361328" Y="-24195.751953" Z="0.000000" SELECTED="true"/>
+        <PT X="25780.076172" Y="-24220.095703" Z="0.000000"/>
+        <PT X="25779.187500" Y="-24244.439453" Z="0.000000"/>
+        <PT X="25780.884766" Y="-24245.808594" Z="0.000000"/>
+        <PT X="25781.207031" Y="-24279.357422" Z="0.000000"/>
+        <PT X="25778.988281" Y="-24280.394531" Z="0.000000"/>
+        <PT X="25779.417969" Y="-24316.957031" Z="0.000000"/>
+        <PT X="25787.955078" Y="-24362.009766" Z="0.000000"/>
+        <PT X="25820.957031" Y="-24368.349609" Z="0.000000"/>
+        <PT X="25890.402344" Y="-24345.705078" Z="0.000000"/>
+        <PT X="25895.871094" Y="-24193.791016" Z="0.000000"/>
+        <PT X="25825.482422" Y="-24187.941406" Z="0.000000"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>place</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>episode2_camp_karavan_fyros_island</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="10"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimZone">
+        <PT X="24943.453125" Y="-24017.648438" Z="0.000000"/>
+        <PT X="24944.785156" Y="-24017.125000" Z="0.000000"/>
+        <PT X="24973.541016" Y="-23965.162109" Z="0.000000"/>
+        <PT X="24899.535156" Y="-23955.216797" Z="0.000000"/>
+        <PT X="24830.792969" Y="-23967.873047" Z="0.000000"/>
+        <PT X="24831.701172" Y="-24020.607422" Z="0.000000" SELECTED="true"/>
+        <PT X="24861.583984" Y="-24066.322266" Z="0.000000"/>
+        <PT X="24898.199219" Y="-24068.468750" Z="0.000000"/>
+        <PT X="24935.474609" Y="-24030.417969" Z="0.000000"/>
+        <PT X="24935.636719" Y="-24028.695313" Z="0.000000"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>place</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>episode2_camp_kami_fyros_island</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="11"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimZone">
+        <PT X="24905.951172" Y="-24121.058594" Z="0.000000"/>
+        <PT X="24912.550781" Y="-24286.060547" Z="0.000000"/>
+        <PT X="24969.751953" Y="-24308.060547" Z="0.000000"/>
+        <PT X="24981.851563" Y="-24455.460938" Z="0.000000"/>
+        <PT X="25188.652344" Y="-24462.060547" Z="0.000000"/>
+        <PT X="25275.550781" Y="-24377.359375" Z="0.000000"/>
+        <PT X="25417.451172" Y="-24463.160156" Z="0.000000"/>
+        <PT X="25670.451172" Y="-24465.359375" Z="0.000000"/>
+        <PT X="25832.152344" Y="-24388.359375" Z="0.000000"/>
+        <PT X="25903.652344" Y="-24361.958984" Z="0.000000"/>
+        <PT X="25906.951172" Y="-24174.958984" Z="0.000000"/>
+        <PT X="25757.351563" Y="-24169.458984" Z="0.000000"/>
+        <PT X="25715.550781" Y="-24064.958984" Z="0.000000"/>
+        <PT X="25639.652344" Y="-23869.158203" Z="0.000000"/>
+        <PT X="25569.251953" Y="-23860.359375" Z="0.000000"/>
+        <PT X="25436.152344" Y="-23946.160156" Z="0.000000"/>
+        <PT X="25295.351563" Y="-23857.060547" Z="0.000000"/>
+        <PT X="25099.550781" Y="-23862.560547" Z="0.000000"/>
+        <PT X="25007.152344" Y="-23939.560547" Z="0.000000"/>
+        <PT X="24821.251953" Y="-23951.660156" Z="0.000000"/>
+        <PT X="24816.851563" Y="-24053.960938" Z="0.000000" SELECTED="true"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>pvp_zone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>pvp_faction_fyros_island</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>type</NAME>
+          <STRING>VersusZone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>versus_clan1</NAME>
+          <STRING>Kami</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>versus_clan2</NAME>
+          <STRING>Karavan</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>versus_give_faction_points</NAME>
+          <STRING>true</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="12"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+    </CHILD>
+  </ROOT_PRIMITIVE>
+</PRIMITIVES>

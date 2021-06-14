@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<PRIMITIVES VERSION="1">
+  <ROOT_PRIMITIVE TYPE="CPrimNode">
+    <ALIAS LAST_GENERATED="1"/>
+    <CHILD TYPE="CPrimNode">
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>ecotypezone_list</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>ecotypezone_kitiniere</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimZone">
+        <PT X="1642.410645" Y="-16210.803711" Z="0.000000"/>
+        <PT X="1629.210693" Y="-17473.603516" Z="0.000000"/>
+        <PT X="3046.010498" Y="-17473.603516" Z="0.000000"/>
+        <PT X="3028.410645" Y="-16197.603516" Z="0.000000" SELECTED="true"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>ecotypezone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>ecotype</NAME>
+          <STRING>primaryroot</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>ecotypezone_kitiniere</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="1"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+    </CHILD>
+  </ROOT_PRIMITIVE>
+</PRIMITIVES>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<PRIMITIVES VERSION="1">
+  <ROOT_PRIMITIVE TYPE="CPrimNode">
+    <ALIAS LAST_GENERATED="1"/>
+    <CHILD TYPE="CPrimNode">
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>ecotypezone_list</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>ecotypezone_terre</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimZone">
+        <PT X="-23.841301" Y="-12974.200195" Z="0.000000"/>
+        <PT X="121.359001" Y="-15887.000000" Z="0.000000"/>
+        <PT X="3306.959961" Y="-16062.999023" Z="0.000000" SELECTED="true"/>
+        <PT X="3082.560059" Y="-13075.400391" Z="0.000000"/>
+        <PROPERTY TYPE="string">
+          <NAME>alias</NAME>
+          <STRING>28901504</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>ecotypezone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>ecotype</NAME>
+          <STRING>primaryroot</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>terre</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="1"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+    </CHILD>
+  </ROOT_PRIMITIVE>
+</PRIMITIVES>

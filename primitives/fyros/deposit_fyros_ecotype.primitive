@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<PRIMITIVES VERSION="1">
+  <ROOT_PRIMITIVE TYPE="CPrimNode">
+    <ALIAS LAST_GENERATED="3"/>
+    <CHILD TYPE="CPrimNode">
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>ecotypezone_list</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>hidden</NAME>
+        <STRING></STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>ecotypezone_list_1</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimZone">
+        <PT X="15562.299805" Y="-23650.300781" Z="0.000000"/>
+        <PT X="15576.700195" Y="-27240.500000" Z="0.000000"/>
+        <PT X="20586.500000" Y="-27226.000000" Z="0.000000"/>
+        <PT X="20591.300781" Y="-23655.199219" Z="0.000000" SELECTED="true"/>
+        <PROPERTY TYPE="string">
+          <NAME>alias</NAME>
+          <STRING>28662339</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>ecotypezone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>ecotype</NAME>
+          <STRING>desert</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>hidden</NAME>
+          <STRING></STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>mainland</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="2"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimZone">
+        <PT X="20755.199219" Y="-25099.699219" Z="0.000000"/>
+        <PT X="20762.699219" Y="-27185.599609" Z="0.000000"/>
+        <PT X="23407.300781" Y="-27200.699219" Z="0.000000"/>
+        <PT X="23402.199219" Y="-25114.800781" Z="0.000000" SELECTED="true"/>
+        <PROPERTY TYPE="string">
+          <NAME>alias</NAME>
+          <STRING>28662340</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>ecotypezone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>ecotype</NAME>
+          <STRING>desert</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>hidden</NAME>
+          <STRING></STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>newbieland_fyros</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="1"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimZone">
+        <PT X="25697.705078" Y="-23728.150391" Z="0.000000"/>
+        <PT X="24879.646484" Y="-23723.367188" Z="0.000000"/>
+        <PT X="24881.242188" Y="-24507.939453" Z="0.000000"/>
+        <PT X="25691.328125" Y="-24507.939453" Z="0.000000"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>ecotypezone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>ecotype</NAME>
+          <STRING>desert</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>island_fyros</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="3"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+    </CHILD>
+  </ROOT_PRIMITIVE>
+</PRIMITIVES>
