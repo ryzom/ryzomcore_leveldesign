@@ -1,0 +1,95 @@
+﻿R_05_33_MIS_TITLE (bot giver, race clopper)
+{
+	r_05_33_mis_title	[Catching $clopper.ia$ $clopper$]
+}
+
+R_05_33_MIS_DESC (bot giver, race clopper, place crystabell)
+{
+	r_05_33_mis_desc	[Le chef des gardes $crystabell.pr$ $crystabell$ dresse une liste des différents carnivores de la région et espère posséder $clopper.ia$ $clopper$.]
+}
+
+R_05_33_P_LDF_INTRO_1 (race clopper, place place_creek_1, place windsofmuse)
+{
+	r_05_33_p_ldf_intro_1	[We'd really love to get a closer look at $clopper.pda$ $clopper.p$. Shouldn't be too hard finding one in $windsofmuse$...{break} Get yourself over to $place_creek_1$, and with a bit of luck you'll be able to catch a specimen and bring it back to me. Use brute force to make the creature yield and obey.{break} In return, I'll teach you a secret technique of our defensive magic.{break}<**Beware as this is a dangerous mission, you may need a little help.**>]
+}
+
+R_05_33_O_KI_FAKE_1_1 (creature_model r1, int q1, race clopper)
+{
+	r_05_33_o_ki_fake_1_1	[Subdue $clopper.ia$ $clopper$ by force.]
+}
+
+R_05_33_O_CRAFTER (bot old_crafter_1)
+{
+	r_05_33_o_crafter	[The old crafter nearby looks like he wants to talk to you.]
+}
+
+R_05_33_M_T2_CRAFTER (bot old_crafter_1)
+{
+	r_05_33_m_t2_crafter	[What do you want ?]
+}
+
+R_05_33_P_LDR_CRATER_1 ()
+{
+	r_05_33_p_ldr_crater_1	[Pourquoi venez-vous faire tout ce bazar et troubler ma concentration ? Cet endroit doit rester calme pour que je puisse crafter en paix. Quel est votre but ici ?]
+}
+
+R_05_33_P_DA_CAPTURE_1 (race clopper)
+{
+	r_05_33_p_da_capture_1	[To catch $clopper.ia$ $clopper$.]
+}
+
+R_05_33_P_BC_FAVOR_1 (race clopper)
+{
+	r_05_33_p_bc_favor_1	[To catch $clopper.ia$ bleedin' $clopper$? Well you don't catch 'em like that, you know! Hum, I know a way to help you, but you gotta do me a little favor first.]
+}
+
+R_05_33_P_BC_FLUTE_1 (race clopper)
+{
+	r_05_33_p_bc_flute_1	[Alright, I'll make one of our ceremonial flutes which'll charm $clopper.ia$ $clopper$ and make it follow you. But don't dawdle on your way back, coz the enchantment won't last forever...{break} Here, I'm done carving the flute. <**It's tuned for $clopper.pda$ $clopper.p$ of this region, use it around here and you will surely catch one.**>]
+}
+
+R_05_33_P_SM_PLAYFLUTE (item clopper_flute)
+{
+	r_05_33_p_sm_playflute	[&AMB&Vous jouez de $clopper_flute.da$ $clopper_flute$...]
+}
+
+R_05_33_P_SM_WAIT (race clopper)
+{
+	r_05_33_p_sm_wait	[&AMB&...mais aucun $clopper$ ne semble répondre à votre appel, repassez plus tard]
+}
+
+R_05_33_O_WM_WAIT (race clopper, place place_creek_1)
+{
+	r_05_33_o_wm_wait	[Attendez qu'il y ait $clopper.ia$ $clopper$ à dompter à $place_creek_1$]
+}
+
+R_05_33_P_SM_ENDWAIT (race clopper, place place_creek_1)
+{
+	r_05_33_p_sm_endwait	[&AMB&Il est temps d'aller vérifier s'il y a $clopper.pia$ $clopper.p$ à dompter à $place_creek_1$]
+}
+
+R_05_33_P_SM_ESCORT_START (race clopper)
+{
+	r_05_33_p_sm_escort_start	[&AMB&Il semblerait qu'$clopper.ia$ $clopper$ ait répondu à votre appel.]
+}
+
+R_05_33_O_WM_WAITCLOPPER (bot_name clopper_npc_1_name)
+{
+	r_05_33_o_wm_waitclopper	[Laissez $clopper_npc_1_name$ venir jusqu'à vous.]
+}
+
+R_05_33_P_T2_CLOPPER_TALK ()
+{
+	r_05_33_p_t2_clopper_talk	[Crrrr... Crrrr....]
+}
+
+R_05_33_O_ES_CLOPPER_1 (bot_name clopper_npc_1_name, place crystabell)
+{
+	r_05_33_o_es_clopper_1	[Take $clopper_npc_1_name$ o $crystabell$ before the charm is broken.]
+}
+
+R_05_33_P_BC_DEBRIEF_1 (race clopper)
+{
+	r_05_33_p_bc_debrief_1	[My word, you've achieved a veritable feat of strength! The creatures are normally so stupid that it's impossible to catch 'em without killing them.{break} I'm gonna give you this here cube of amber and teach you our Tryker technique of defense magic. By the way, the cube'll give you information on $clopper.da$ $clopper$.]
+}
+

@@ -1,0 +1,178 @@
+﻿//////////////////Zorai villageB Min-Cho missions/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Mission 01 : KNOWLEDGE MISSION
+/*
+ZB_KNOWLEDGE_MIS_01
+*/
+ZB_KNOWLEDGE_MIS_01_TITLE (bot giver)
+{
+	zb_knowledge_mis_01_title	[A Zoraï tale, Tears of serenity]
+
+}
+
+ZB_KNOWLEDGE_MIS_01_DESC (bot giver)
+{
+	zb_knowledge_mis_01_desc	[<**Vous allez partager le repas d'un conteur zoraï, et écouter l'histoire des Tears of Serenity.**>]
+
+}
+
+ZB_KNOWLEDGE_MIS_01_STEP_1 (player p, item rm1, item rm2, item rm3, item rm4)
+{
+//Dialogue sage
+	zb_knowledge_mis_01_step_1			[Bienvenue à toi, $p$. <**Laisse-moi te raconter une histoire.**><**>\n
+							Many years ago, when hominkind had barely ventured forth from the darkness of pre-existence, 
+							a nomadic tribe was camped in the heart of the ancient forest lands. The chieftain, 
+							whose name was Cho, was set back from the campfire under a tree in contemplation 
+							of the night sky when a strange presence enlivened the fiber in his body, warmed 
+							the liquid within his temples. He closed his eyes. He experienced an inner completion 
+							which soothed the wounds within as his eyes welled exuding the first Tears of Serenity.\n
+							Afin que nous partagions un peu plus qu'une histoire, je t'invite à prendre un repas avec moi. 
+							Pour le préparer, j'ai besoin que tu me rapportes quelques ingrédients : un peu de <**$rm1$**>, 
+							quelques <**$rm2.p$, $rm3.pia$ $rm3.p$**> à la saveur <**encore jeune**>, et de la <**$rm4$**>. 
+							Arpente la <**jungle**> pour trouver tout cela. Quand tu auras fini, reviens ici, 
+							et nous partagerons saveurs et savoir.]
+
+}
+
+ZB_KNOWLEDGE_MIS_01_CUSTOM_OBJ (item i1, int qt1,int ql1, item i2, int qt2,int ql2, item i3, int qt3,int ql3, item i4, int qt4,int ql4)
+{
+//Objectif
+	zb_knowledge_mis_01_custom_obj		[Forage :\n
+				 			- $qt1$ $i1$ of at least quality $ql1$\n
+				 			- $qt2$ $i2$ of at least quality $ql2$\n
+				 			- $qt3$ $i3$ of at least quality $ql3$\n
+						Loot :\n
+				 			- $qt4$ $i4$ of at least quality $ql4$]
+
+}
+
+ZB_KNOWLEDGE_MIS_01_TALKMENU (bot giver)
+{
+	zb_knowledge_mis_01_talkmenu			[<**J'ai tous les ingrédients.**>]
+
+}
+
+ZB_KNOWLEDGE_MIS_01_STEP_2 (player p)
+{
+	zb_knowledge_mis_01_step_2			[Bien, les esprits de la forêt ont su te guider, $p$. Installons-nous et mangeons. 
+							Donne-moi donc le pollen et les larves d'insectes, nous allons commencer par cela.]
+
+}
+
+ZB_KNOWLEDGE_MIS_01_GIVE_ITEM_MENU_1 (int item_count)
+{
+	zb_knowledge_mis_01_give_item_menu_1		[<**Give pollen and insect larvae**>]
+
+}
+
+ZB_KNOWLEDGE_MIS_01_STEP_3 (race bul)
+{
+	zb_knowledge_mis_01_step_3			[Les larves saupoudrées de pollen aiguisent l'appétit et les sens, et leur acidité 
+							fait parfois perler des larmes aux coins des yeux... ce qui nous ramène à l'histoire de Cho.\n
+							Cho slowly opened his eyes and through the blurred vision he saw the source of his inner peace 
+							and harmony established upon a tree. The visitation blinked back at him, vanished and then 
+							reappeared in from of him. Cho bowed in an act of prostration and the entity spoke : "Kami, hungry," 
+							and placed its hand on its chest. Instinctively realizing that the Kami was hungry of heart, 
+							Cho rose to his knees and moved his hand to his heart likewise : "Yes, Cho desires more friendship, 
+							divine Kami, how can I earn your love?"\n
+							Nous sommes nous aussi affamés. Partageons à présent la viande de <**$bul$**>, je vais y ajouter 
+							<**un mélange d'herbes de ma composition**>.]
+
+}
+
+ZB_KNOWLEDGE_MIS_01_GIVE_ITEM_MENU_2 (int item_count, race bul)
+{
+	zb_knowledge_mis_01_give_item_menu_2		[<**Give $bul$ meat**>]
+
+}
+
+ZB_KNOWLEDGE_MIS_01_STEP_4 ()
+{
+	zb_knowledge_mis_01_step_4			[Nourrir le corps est important, mais nourrir l'esprit et le coeur l'est davantage. 
+							Et la force apportée par les largesses d'Atys permet de combattre le mal qui la ronge.\n
+							The Kami pointed to the tree upon which it had first appeared and Cho immediately understood 
+							that the infection of Goo there gave rise to the Kami's concern. "I shall settle here, Kami, 
+							my people shall serve you and cleanse the land of the devouring sickness as you have cleansed my spirit."\n
+							Purifions nos corps et nos âmes en goûtant les <**jeunes fruits**> d'Atys. 
+							Ainsi allons-nous terminer notre repas.]
+
+}
+
+ZB_KNOWLEDGE_MIS_01_GIVE_ITEM_MENU_3 (int item_count)
+{
+	zb_knowledge_mis_01_give_item_menu_3		[<**Give fruits**>]
+
+}
+
+ZB_KNOWLEDGE_MIS_01_END (player p)
+{
+	zb_knowledge_mis_01_end				[Cho spread the word to his brethren throughout the lands to bring them together around the Kami 
+							experience so they too might feel the peace and ease their anguish within. The first magnificent 
+							temple to the glory of Jena and her Kami Guardians was built on the very spot of Cho's enlightenment 
+							and grew into Zora, the ancient capital of the Zoraï. And let us remember Cho's words : "It is 
+							within the grasp of every homin to feel the Tears of Serenity."\n
+							Merci pour cet instant de communion, $p$. L'histoire de Cho fait désormais partie de toi, 
+							puisse-t-elle t'accompagner dans les chemins que tu suivras.]
+
+}
+
+//reward 1 action knowledge + fame zorai
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+/*
+ZB_CRAFT_MIS_01
+*/
+ZB_CRAFT_MIS_01_TITLE (bot giver)
+{
+	zb_craft_mis_01_title			[Some gloves for the craftman.]
+
+}
+
+ZB_CRAFT_MIS_01_DESC (bot giver)
+{
+	zb_craft_mis_01_desc			[Help $giver$ to recover his order.]
+
+}
+ZB_CRAFT_MIS_01_STEP_1 (bot target, place Jen_Lai)
+{
+	zb_craft_mis_01_step_1			[You probably kow that our best artisants devotes their lives to crafting holy objects of veneration for the Kamis.\n
+									But with the arrival of refugees we aslo need a great quantity of usual objects.{break}
+									For this kind of objects we are working with members of the icon worshipers, a tribe of young Zoraïs who are learning the art of crafting.\n
+									With objects that they supply we are less dependent of others Homins crafts.\n
+									I am waiting for an order from $target$, a member of the icone worshipers but he is very late.\n
+									It's not usual.\n
+									Someone told me that $target$ is actually in the village of $Jen_Lai$.\n
+									Please, help me to retrieve my order.\n
+									Find him and speak to him.]
+
+}
+ZB_CRAFT_MIS_01_STEP_2 (bot giver, bot target, place Hoi_Cho, place Maiden_Grove)
+{
+	zb_craft_mis_01_step_2			[Oh! $giver$ is waiting for his order?\n
+									Unfortunately I haven't it.{break}
+									As you could saw our commercial roads are pretty dangerous since weeks.\n
+									During my travel I have been attacked by a group of bandits.\n
+									They kept me alive but they stole all my merchandise.\n
+									I knew that it could be dangerous to come here so I gave my crafting plan to a member of a friendly tribe.\n
+									The amazans of dead seed.\n
+									Go speak to $target$, she is the one I gave my plan.\n
+									You will find here est of $Hoi_Cho$, in the region of $Maiden_Grove$.
+									Once you got the plan you will craft five pairs of gloves, it's what I need to complete my order.\n 
+									Thanks for your help and good luck.]
+
+}
+ZB_CRAFT_MIS_01_STEP_3 (bot previous)
+{
+	zb_craft_mis_01_step_3			[$previous$?\n
+									Yes I remember.\n
+									Take his plan and go away.\n
+									I lost enough time, I got things to do.]
+
+}
+ZB_CRAFT_MIS_01_END ()
+{
+	zb_craft_mis_01_end				[Ah, my order!\n
+									Thanks a lot, now I am able to supply the supplier of our city.{break}
+									He will share it to the local merchants.\n
+									Please accept a little reward and keep the plan.]
+
+}

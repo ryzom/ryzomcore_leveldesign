@@ -1,0 +1,50 @@
+﻿R_08_19_MIS_TITLE (bot giver)
+{
+	r_08_19_mis_title	[Les réserves de guerre]
+}
+
+R_08_19_MIS_DESC (bot giver, faction faction_karavan)
+{
+	r_08_19_mis_desc	[Aider la $faction_karavan$ à alimenter son stock de matières premières]
+}
+
+R_08_19_P_LDF_INTRO (faction faction_karavan, item mp_anete_fiber, item mp_becker_bark, item mp_big_shell, item mp_dante_sap, bot player, bot prospector_liberty, int qty)
+{
+	r_08_19_p_ldf_intro	[Bonjour $player$, vous n'êtes plus un inconnu pour la $faction_karavan$ et vous avez prouvé à plusieurs reprises votre dévouement à notre faction. Vous êtes digne de notre confiance, je vais donc vous confier une mission de la plus haute importance.{break}Je ne sais pas si vous êtes initié aux arcanes de la politique, mais je vais vous énoncer, dans le doute, une règle d'or : nulle faction, quelle qu'elle soit, ne peut dominer un conflit sans alliés.{break}Cette règle vous parait peut être triviale, mais dans la pratique, elle implique une organisation rigoureuse. En prévision d'un éventuel conflit de grande ampleur, nous stockons d'importantes quantités de matières premières propres à la confection d'armes. Cela nous permet ainsi de fournir une faction ou une tribu alliée en des temps records afin qu'elle s'arme et se batte à nos cotés.{break}Et pourquoi attendre un conflit pour redistribuer ces ressources, me demanderez vous ? Pour la simple et bonne raison qu'un allié n'est jamais acquis : armer un allié d'aujourd'hui, ennemi de demain, serait une lourde erreur tactique. Voici donc la raison de ces stocks de matières premières.{break}Je vous demanderai donc, en raison de vos talents de foreur et de notre rapport privilégié, de contribuer à cet effort de guerre. Bien entendu, la discrétion est de rigueur.{break}Ramenez-moi les matériaux suivants :\n
+- $qty$ $mp_big_shell$\n
+- $qty$ $mp_becker_bark$\n
+- $qty$ $mp_anete_fiber$\n
+- $qty$ $mp_dante_sap$\n
+et bien entendu de qualité excellente. Pour trouver ces matières, adressez vous à $prospector_liberty$, il sera vous aiguiller.{break}Pour vous récompenser, je vous donnerai accès à un nouvel autel d'où vous pourrez passer des pactes de téléportation. Maintenant partez !]
+}
+
+R_08_19_P_T2_PROSPECTOR_LIBERTY (bot prospector_liberty)
+{
+	r_08_19_p_t2_prospector_liberty	[Bonjour, je cherche des matériaux de très grande qualité]
+}
+
+R_08_19_P_BC_PROSPECTOR_LIBERTY (place lieu_enchanted, bot prospector)
+{
+	r_08_19_p_bc_prospector_liberty	[Vous devriez plutôt vous adresser à ma consoeur $prospector$, il sera plus à même de vous répondre. Vous le trouverez dans la région de $lieu_enchanted$.]
+}
+
+R_08_19_P_T2_PROSPECTOR (bot prospector)
+{
+	r_08_19_p_t2_prospector	[Bonjour, je cherche des matériaux de très grande qualité]
+}
+
+R_08_19_P_BC_P2 ()
+{
+	r_08_19_p_bc_p2	[]
+}
+
+R_08_19_P_BC_PROSPECTOR (place lieu_lieudit, place lieu_outpost, place lieu_outpost_2, item mp_anete_fiber, item mp_becker_bark, item mp_big_shell, item mp_dante_sap)
+{
+	r_08_19_p_bc_prospector	[Vous recherchez les matériaux suivants me dites vous : $mp_big_shell$, $mp_becker_bark$, $mp_anete_fiber$ et $mp_dante_sap$, c'est bien cela ? Très bien, ouvrez grand vos oreilles. Tout d'abord, sachez que vous trouverez tout ce que vous cherchez dans la région, mais uniquement au printemps !{break}Pour trouver $mp_big_shell.pia$ $mp_big_shell.p$, à partir du grand lac, partez en direction du nord et parcourez environ 250 mètres. Vous devriez trouver à mi-chemin, si vous ne vous êtes pas trompé de route, un gigantesque monolithe pointant vers le ciel. Allez-y de jour, soit par très beau temps, soit par très mauvais temps.{break}Concernant $mp_becker_bark.pda$ $mp_becker_bark.p$, allez jusqu'à $lieu_outpost$, à partir de là, partez vers l'ouest jusqu'à un petit campement, prenez ensuite vers le nord-ouest sur quelques dizaines de mètres. Là encore, allez-y de jour, lorsque le temps est mitigé.{break}Ensuite, vous trouverez $mp_anete_fiber.pia$ $mp_anete_fiber.p$ à 150 mètres de $lieu_outpost_2$. Cette fois, allez-y de nuit, soit par très beau temps, soit par temps gris.{break}Et enfin, vous trouverez $mp_dante_sap.pia$ $mp_dante_sap.p$ à un peu plus de 150 mètres au sud de $lieu_lieudit$, pendant la journée et uniquement par mauvais temps.]
+}
+
+R_08_19_P_BC_DEBRIEF ()
+{
+	r_08_19_p_bc_debrief	[Parfait, je savais que vous réussiriez. Je n'ai pas pour habitude de me tromper lorsque je place ma confiance en quelqu'un. Et comme promis, voici votre récompense.]
+}
+

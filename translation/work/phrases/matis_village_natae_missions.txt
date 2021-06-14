@@ -1,0 +1,520 @@
+﻿/*
+MA_FIGHT_01
+
+*/
+MA_FIGHT_01_TITLE (bot giver)
+{
+		ma_fight_01_title	[Strange howling.]
+
+}
+MA_FIGHT_01_DESC (bot giver)
+{
+		ma_fight_01_desc		[<**Find the origin of the strange howling.**>]
+}
+
+MA_FIGHT_01_STEP_1 (player p)
+{
+		ma_fight_step_1 [Guards told me that they heard strange howling last night in the forest, in the vicinity of the village.{break} They saw nothing but they know about roaming animals and it seems that this howling may come from an unknown beast.\n
+	I asked the <**hunter**> chief to deal with the situation, you should speak to him, <**he's hunting to the west of the village**>.\n
+	I bid you good luck, $p$.]
+}
+
+
+MA_FIGHT_01_STEP_2 ()
+{
+		ma_fight_step_2 [Can't you see that you're disturbing us, we're tracking a dangerous animal, and we don't need a rookie like you around making noises.\n
+						Farewell now, I only deal with experienced people, become a real fighter and perhaps then we can speak.]
+
+}
+
+MA_FIGHT_01_STEP_3 (bot target)
+{
+		ma_fight_step_3 [Hum, that's better. I think I can speak to you now.<**{break}**>
+						But first you must understand that this mission is really important for us. If we succeed the guard chief of the village will certainly employ us as guards.\n
+						We've always wanted to become strong and proud guards, so don't do anything that could upset our project.\n
+						About the beast now, we discovered that it could be a herbivore pet that has returned to a wild state after contracting a disease.\n
+						We heard that $target$ of Natae is an expert in the art of animal taming, you should try to find him.]
+
+}
+
+MA_FIGHT_01_STEP_3_HIGHER_LEVEL (bot target)
+{
+		ma_fight_step_3_higher_level [<**You look strong, you could lend us a hand**>.{break} But first you must understand that this mission is really important for us. If we succeed the guard chief of the village will certainly employ us as guards.\n
+	We've always wanted to become strong and proud guards, so don't do anything that could upset our project.\n
+	About the beast now, we discovered that it could be a herbivore pet that has returned to a wild state after contracting a disease.\n
+	We heard that $target$ of Natae is an expert in the art of animal taming, you should try to find him.]
+
+}
+
+MA_FIGHT_01_STEP_4 ()
+{
+		ma_fight_step_4 [Yes, I'm the owner of the animal you're looking for. You're talking about my dear Lilbodocus, it's the name I gave him.<**{break}**>
+						But I'll never tell you how to find him, my Lilbodocus is sick and if you find him I know you will be sure to kill him !/n
+						I found him when he was just a baby, I saved him from kitins during a kitin raid.\n
+						We went on the great trek together.\n
+						I will never let you kill him.\n
+						Get out now!]
+}
+
+MA_FIGHT_01_OBJ_STEP_5 (bot target)
+{
+		ma_fight_01_obj_step_5 [<**Talk to $target$ about what you learnt.**>]
+}
+MA_FIGHT_01_TALKMENU_STEP_5 (bot current, bot previous)
+{
+		ma_fight_01_talkmenu_step_5 [Talk about $previous$]
+}
+
+MA_FIGHT_01_STEP_5 (race bodoc)
+{
+		ma_fight_step_5 [Oh very interesting news. But we must find a way of making him speak, naturally we can't use force for that.\n
+						Hum,let's see.<**{break}**>
+						He told you that the animal we're looking for is a $bodoc$.\n
+						I've got it! I really am a genius!\n
+						What if we show him proof, false proof of course, of the death of his $bodoc$. It could be a real emotional shock for him and I bet he'll become more talkative.\n
+						Go and get some $bodoc$ meat, <**give**> the meat to the stableboy and tell him that it comes from his pet $bodoc$!\n
+						I'm a genius, and soon a guard!]
+
+}
+
+MA_FIGHT_01_STEP_6 ()
+{
+		ma_fight_step_6 [Noooo! You killed my dear Lilbodocus!<**{break}**>
+						I thought nobody could find him. I taught him to roam only at night, and I thought that the south of Avalae would be safe for him, what an idiot!\n
+						Get out now! Leave me alone with my sorrow.]
+
+}
+
+
+MA_FIGHT_01_END (player p)
+{
+		ma_fight_end [Really nice job $p$ the village is now safe from disease.\n
+					You really did great job!\n
+					You will always be welcome in our village.]
+
+}
+
+//onclick_npcs_mis_01
+
+
+//guards
+
+ONCLICK_HUNTER1()
+{
+onclick_hunter1   				[Don't distrub me!]
+}
+
+ONCLICK_HUNTER2()
+{
+onclick_hunter2   				[Stop making noise! I'm hunting.]
+}
+
+ONCLICK_HUNTER3()
+{
+onclick_hunter3   				[As you can see, I am a great hunter!]
+}
+
+/*
+MA_KNOW_02
+
+*/
+MA_KNOW_02_TITLE (bot giver)
+{
+		ma_know_02_title	[A Karavan story.]
+
+}
+MA_KNOW_02_DESC (bot giver)
+{
+		ma_know_02_desc		[listen the story of $giver$]
+}
+MA_KNOW_02_STEP_1 (item rm1)
+{
+		ma_know_02_step_1 [Love the Kamis Guardians as you love your brethren, young homin, and you too shall be thankful to their generosity...{break}
+					Indeed, if I live today in this old sack of bones it is thanks to a mighty Karavan Guardian who took myself and my loved ones under his wing, broken though it was.\n
+					I was but a young girl and my father with the other men was away on campaign to recover our lands to the west when an army of kitins swarmed in from the north bent the destruction of hominkind.\n
+					humm, I am always happy to tell a story or two to young Matisians like you, but I am a little pressed for time.\n
+					And I have a reputation to live up to, I am known as the best cook of the village and I was about to go searching for the ingredients for my famous mektoub trunk stew.\n
+					If you could bring me back these ingredients for me I will tell you the next part of my story.\n
+					Now, first and foremost I'll be needing a $rm1$.]
+
+}
+
+MA_KNOW_02_STEP_2 (item rm1, race fledgling_yubo, player p)
+{
+		ma_know_02_step_2 [Very nice, that's just want I need, now listen to the rest of my story...{break}
+					My grandmother, mother, my elder sisters, our maids and myself evacuated our majestic 
+					city merely hours before it fell taking with us but a single mektoub packer and provisions for a week.\n
+					We trekked to the east for days until we came to the Great Falls of Ria where my grandmother knew we could find refuge in the caverns there.\n
+					We were foraging for the season's mushrooms amid the fallen leaves when all of a sudden the birds and the animals made an awful din, then, all went silent as before a 
+					storm...That's enough for now, $p$, it's time for you to find the second ingredient of my stew.\n
+					I got the trunk but now I need some meat, some $rm1$ meat from a $fledgling_yubo$.\n
+					Good luck and see you soon for the next part of the story.]
+
+}
+
+MA_KNOW_02_STEP_3 (item rm1, player p)
+{
+		ma_know_02_step_3 [Thank you! Are you listening carefuly?{break} 
+					There came to my ears and then to my eyes the appalling thumping of a thousand feet marching down in the valley below.\n
+					An awful tide of giant insects was rolling up fast scything and flattening the beautiful flora and crushing the slower animals under foot...\n
+					My grandmother called us together and we waded into the cold river for some distance before crossing further upstream to avoid leaving our scent, then we climbed 
+					behind the pummeling waterfall...\n
+					About my stew now, I have the 2 main ingredients but now I need to prepare the sauce.\n
+					The main ingredient needed for my sauce is some $rm1$.\n
+					If y ou'd run along, $p$, and find it...]
+
+}
+
+MA_KNOW_02_STEP_4 (item rm1, player p)
+{
+		ma_know_02_step_4 [That's lovely, $p${break}
+					 Now, from our vantage point we could spy, between the gushing rivulets, the kitins romping through our camp ravaging our make-shift habitat and spoiling our hard 
+					 earned provisions.\n
+					 But to our relief the terrifying legions continued their march on over the hills towards the south.\n
+					 We remained behind the chilly but protective curtain of water the whole night through clustered together to keep warm.\n
+					 The following morning the kitins were gone and we returned to our make-shift camp to find the surrounding area devastated where the mass of destruction had trooped.\n
+					 There wasn't a sound to be heard, not a single bird, the frightened animals having all moved on...\n
+					 Well, you know the rules by now, $p$, a $rm1$ for the next part...]
+
+}
+
+MA_KNOW_02_STEP_5 (item rm1)
+{
+		ma_know_02_step_5 [I am a little confused my young friend, I was so excited about my story that I made a mistake in the composition of my stew, the egg you found isn't the 
+					right one.{break}
+					In fact I need an $rm1$, not a fresh one, it's more tasty.\n 
+					But listen to the next part of my story and then you can look for the egg... Of noble heart and strong of fiber, we dallied not on our sorrows, we were still alive and
+					we mucked in to recover some order though exhausted we were.\n
+					But then, horror struck thrice...\n
+					Three enormous kitin scouts suddenly appeared from three points to surround us as we backed towards a cavern.\n
+					I was petrified, one of the evil creatures came and snapped at me, but my grandmother dragged me back behind her telling me to run to my mother...\n
+					In the shallow cavern my mother told us to kneel and pray for the soul of our grandmother and for our saviour when another sound, more familiar, met our ears and we 
+					looked up at the godsend... Time for you to search for the egg now, the right one.]
+
+}
+
+MA_KNOW_02_STEP_6 (item rm1)
+{
+		ma_know_02_step_6 [Ah, it's better with this one...{break} 
+					A Karavan vessel lurched into view and shielded us against the kitins that were crawling upon us as well knelt.\n
+					The craft sent a massive lightening charge through the kitins as they tried to butt it out of their way. A Karavan Guardian, wounded in the arm, jumped out of the vessel 
+					and fired into the eyes of the stunned creatures who were still fumbling to reach us.\n
+					The Guardian gave us some life seed to revive our sunken spirits and told us to follow him into the vessel before the main kitin force was upon our heels.\n
+					But the vessel was wounded too and would not take to the air... Though I still conserve the memory of the magic inside, the cold flashing lights and the warm vroom of 
+					the vessel's waning heart...\n
+					Good news for you my young friend, it's time to find the last ingredient but one, some $rm1$.]
+
+}
+
+MA_KNOW_02_STEP_7 (item rm1, race kipee)
+{
+		ma_know_02_step_7 [Thanks, this oil is the secret of my fabulous sauce, I'll go on with the next part of my story...{break} We continued on foot in the cold driving rain. For two days he led us on to the east, hunted game for us, protected us from the wild bests, and healed our wounds calmly, silently in his tranquil force.\n
+	 Every morning we prayed to Jena to help us through the day.\n
+	Then after a week of traveling we came to a vast plain and in the distance our eyes caught a glimmering sheen of an ark of many colors.\n
+	 My Guardian lowered me from his shoulders to the ground and spoke for the first time in a deep but tender voice: "There, you are safe now," he said.\n
+	 "Go through the rainbow, I will stand and watch you till you are all through." I plucked up my courage and asked if he would come too. My story will soon be over, for you to hear the end I need the last ingredient of my stew.\n
+	 Hum, I need you to be very discreet about the last one, it's the secret of my famous stew. Moreover people will certainly misunderstand its necessity. Hum...I need... some $rm1$...\n
+	 Please, be very discreet about it... <**I think you understand why.\n Usually you can't find any around here, but I've seen a small group of $kipee.p$ passing to the southwest of this peninsula, recently. You should look there.**>]
+
+}
+
+
+MA_KNOW_02_END ()
+{
+		ma_know_02_end [Nice... very nice... I hope nobody saw you, we don't want to ruin my reputation.{break}
+					Here is the end of my story... He said there were many more children of Atys to be saved, that his mission had only just begun.\n
+					I could not resist jumping up to him and throwing my arms around his neck, for he had carried me when my little legs had failed, despite his ailing limb.\n
+					He put me down and pushed me on and I followed the others reassured in the aura of his smell. When I looked back from the rainbow he was still watching as he said he would be, and as if to urge us through the rainbow, he gave a flick of the hand which he turned into a wave, I am sure.\n
+					I am the last survivor of that expedition of nearly three generations ago and everyday I give thanks to Jena for my children, and my children's children, and for sending 
+					us our great Karavan Guardian.]
+
+}
+/*
+MA_FIGHT_03
+
+*/
+
+MA_FIGHT_03_TITLE (bot giver)
+{
+		MA_FIGHT_03_TITLE[Indesirable docile gibbaïs.]
+
+}
+MA_FIGHT_03_DESC (bot giver, creature_model target)
+{
+		ma_foght_03_desc		[<**find and kill $target$**>]
+}
+MA_FIGHT_03_STEP_1 (player p, creature_model target)
+{
+		ma_fight_03_step_1 [Hello $p$, my brave guards are having problems fighting off $target$!{break}
+					These strange creatures seem to possess an extra form of intelligence, or perhaps just have a more developped instinct. They have learnt how to recognize my guards and 
+					it's become very difficult to hunt them down.\n
+					If you could help us we would be very grateful, but I must warn you, $target$ are ferocious and they are rarely alone!\n
+					You should ask for help from your friends.]				
+
+}
+
+MA_FIGHT_03_END ()
+{
+		ma_fight_03_end [Impressive! you could become a good Matis guard if you wanted to./n
+					Please take this little reward for your troubles.]				
+
+}
+/*
+MA_FIGHT_04
+
+*/
+
+MA_FIGHT_04_TITLE (bot giver)
+{
+		ma_fight_04_title	[Learning about animals.]
+
+}
+MA_FIGHT_04_DESC (bot giver)
+{
+		ma_fight_04_desc	[<**Learning about animals.**>]
+
+}
+MA_FIGHT_04_STEP_1 (creature_model target, player p)
+{
+		ma_fight_04_step_1 [Hello $p$, the best way to become a good fighter is to know how to evaluate your adversary.{break}
+						I am sure that there are many animals around that you never saw before.\n
+						I'm not going to tell you to kill animals, just find them and become more familiar with their appearance and their behaviour. You should try to target a 
+						$target$, it's a dangerous plant with strange psychic powers so keep well back from it.]				
+
+}
+
+MA_FIGHT_04_STEP_2 (race gingos, creature_model target)
+{
+		ma_fight_04_step_2 [As you see, plants can be dangerous on Atys.{break}
+						Animals can be dangerous too, specially carnivorous ones.\n
+						Try to find and target a $target$, a middle sized carnivore.\n
+						Stay on your guard as $gingos$ move in flocks.]			
+
+}
+
+MA_FIGHT_04_STEP_3 (race gibbais, creature_model target)
+{
+		ma_fight_04_step_3 [Nice, your knowledge in animal identification is improving.{break}
+						Now it's time to observe one of the most dangerous creatures of the region.\n
+						$gibbais$ are <**slow**> but formidable opponents due to their high <**resistance**>.\n
+						Target a $target$ but never stay in its way.]			
+
+}
+
+
+MA_FIGHT_04_END (player p)
+{
+		ma_fight_04_end [I hope you've learnt a lot about the animals around.{break}
+						But there are still many more creatures you have certainly never seen before and you should always remember to size up your adversary before engaging in fight.\n
+						I wish you good luck, $p$.]			
+
+}
+
+/*
+MA_SUPPLY_05
+
+*/
+MA_SUPPLY_05_TITLE (bot giver)
+{
+		ma_supply_05_title	[Some pollen for the tea.]
+
+}
+MA_SUPPLY_05_DESC (bot giver)
+{
+		ma_supply_05_desc	[<**Help $giver$ to supply his customers.**>]
+
+}
+MA_SUPPLY_05_STEP_1 (bot target, player p)
+{
+		ma_supply_05_step_1 [Hello $p$, if you are intersted in a supply mission I have something for you.{break}
+						$target$ is one of my best customers, she placed an order with me to be delivered today but I am busy right now, I am looking for someone who could help me./n
+						If you help me I will give you a nice reward.\n
+						Interested? So go and speak to her, she will give you more details on her order./n
+						But don't forget that failure in the mission would be very annoying, my reputation must not be tarnished, so don't disappoint me, $p$.]				
+
+}
+
+MA_SUPPLY_05_STEP_2 (bot giver, item rm1)
+{
+		ma_supply_05_step_2 [Oh I can see that $giver$ has found an assistant, I hope you are as experienced as him.{break}
+					 	Let me tell you what I need, I am a great tea lover, I make an original tea recipe based on $rm1$.\n
+					 	This kind of pollen can be found everywhere but it's pretty rare and you can go for hours without finding any.\n
+					 	Fortunatly $giver$ found a place where conditions are optimum for harvesting $rm1$ but he never wants to tell me the location of this spot.\n
+					 	To my mind he wants to protect his business. You should ask him for more details.]				
+
+}
+
+MA_SUPPLY_05_STEP_3 (item rm1, player p)
+{
+		ma_supply_05_step_3 [Hum, she wants fresh pollen?{break}
+						I have no other choice but to reveal the location of my secret pollen spot to you, but discretion is the word, you must keep it to yourself\n
+						Well, listen carefuly, from our <**city gate follow the main road through to the arena, it's not very far.\n
+						When the arena is behind you head north west and leave the road,**> keep to this direction until you come to a hill, and there you will find my secret spot.\n
+						You should be able to easily find $rm1$ on this hill.\n
+						Good luck, $p$.]				
+
+}
+
+MA_SUPPLY_05_STEP_4 (bot giver)
+{
+		ma_supply_05_step_4 [Nice...very nice, you did it.{break}
+						I must admit that I had doubts about your skills, I feel reassured now.\n
+						Hum, we could work together some time, and perhaps you could even tell me more about the secret pollen spot of my friend.\n
+						I already paid $giver$, go and see him and he will give you a reward.]				
+
+}
+
+MA_SUPPLY_05_END (player p)
+{
+		ma_supply_05_end [Nice job, young $p$, take this reward and don't <**forget**> what I said about the hill.]				
+
+}
+
+
+/*
+MA_KNOW_06
+
+*/
+MA_KNOW_06_TITLE (bot giver)
+{
+		ma_know_06_title	[Drama in the prime roots.]
+}		
+MA_KNOW_06_DESC (bot giver)
+{
+		ma_know_06_desc	[<**Learn more about Lenardi Bravichi.**>]
+
+}
+MA_KNOW_06_STEP_1 (bot target)
+{
+		ma_know_06_step_1 [Has as anyone told you about the story of Lenardi Bravichi?\n
+						Ah, so listen carefully.{break}
+						One day, Lenardi Bravichi set the Fyros miners to work on an interesting chamber which stepped down into a perfectly symmetrical corridor.\n
+						The Fyros maintained that the site could only have been created by the hands of homins long ago for this was no work of nature! Gaylus, the Fyros master miner, began 
+						the excavation until his pick axe hit upon a strange sounding object tougher than anything known to the homin eye.\n
+						However, Lenardi, true to his temperament, was set on his work schedule and finding no use for the object did not desire to lose time on his works.\n
+						But the Fyros insisted and dug a trench around the strange object uncovering a concave oblong ten foot wide. But the discovery was doomed...\n
+						I have heard that $target$, a merchant, is in one of our villages on business at present, rumors recount that his family was very close to Lenardi's.\n
+						Find him and he'll be glad to tell you the rest of the story.]
+
+}
+
+MA_KNOW_06_STEP_2 (bot giver)
+{
+		ma_know_06_step_2 [Yes, young adventurer, Lenardi was well known to my family. If you want to find out more about what happened in the Prime Roots then listen carefully.{break}
+						Well, after Gaylus' discovery a Tryker stamping the ground to see where to place the airing machine put his foot clean through a transparent panel and nearly fell 
+						into the hollow beneath.\n
+						The strange material had cutting properties harder than thorn and sharper than wood that ripped through the Tryker's skin and later caused gangrene to set in.\n
+						He had to have his leg off! There was worse to come...\n
+						This is not what you'd call a pleasant story and it pains me each time I relate it.\n
+						You told me that $giver$ sent you, she is a wonderful cook.\n
+						If you could ask her for a portion of her delicious mektoub trunk stew and bring it to me, it might make me forget the unpleasantness and I could tell you the rest 
+						of the story.]
+
+}
+
+
+MA_KNOW_06_STEP_3 ()
+{
+		ma_know_06_step_3 [Well, what about that! I knew my cooking was prized in our village, but I didn't know that people in other villages had heard about it.{break}
+						That just goes to show you that the Matis palate at large is indeed a delicate one, don't you think?!\n
+						Here is a piece of my 'special' stew.]
+
+}
+
+MA_KNOW_06_END (player p)
+{
+		ma_know_06_end [Very nice, $p$, the aftertaste is so... indescribable... really delicious.{break}
+					 Now then, here's the end of my story.\n
+					 The Fyros, Gaylus, despite Zoraï foreboding, went ahead with his plan to fully uncover the object and in his enthusiasm undercut the wall of an upper chamber which caved 
+					 in on top of him!\n
+					 With this second unfortunate accident and no more backing, the whole area was closed and a tombstone planted in memory of Gaylus Cetheus, so bitterly stung for his 
+					 enflamed curiosity which some say tipped the balance of his reason.\n
+					 Interesting story isn't it?\n
+					 Who knows what kind of strange and unknown objects are waiting to be found in the Prime Roots.\n
+					 Now I will finish my stew before it gets cold... and please take this reward.]
+
+}
+
+/*
+MA_CRAFT_1
+*/
+MA_CRAFT_1_TITLE (bot giver)
+{
+	ma_craft_1_title	[Help $giver$ maintain his delays.]
+}
+
+MA_CRAFT_1_DESC(bot giver, item gloves, place yrkanis)
+{
+	ma_craft_1_desc		[Help $giver$ deliver his order in time by crafting the missing $gloves.p$. Buy what you need at $yrkanis$ market, $giver$ will refund you.]
+}
+
+MA_CRAFT_1_STEP_1 (bot giver, item gloves, int qt, int ql, place yrkanis, player p)
+{
+	ma_craft_1_step_1	[Hey $p$, I need your help :<**{break}**>
+						I've got a big order to deliver in one day for our 
+						guards and I could use a little help as I won't have enough time alone. They need some new full 
+						sets of heavy armor, I'm finishing the boots right now but I don't have time to craft the 
+						$gloves.p$.<**\n**>
+						I need $qt$ pieces of quality $ql$ at least. You don't have time to search for the raw 
+						material, so go and buy them at $yrkanis$, north or south market, I can't remember which one.<**\n**> 
+						Don't worry, I'll refund you. Here is the list of raw materials you need, please be quick !]
+}
+
+MA_CRAFT_1_OBJ1_1	(item rm1, int qt1, int ql1, place yrkanis)
+{
+	ma_craft_1_obj1_1		[Go to $yrkanis$ market and buy $qt1$ $rm1$ of at least quality $ql1$.]
+}
+
+MA_CRAFT_1_OBJ1_2	(item rm1, int qt1, int ql1, item rm2, int qt2, int ql2, place yrkanis)
+{
+	ma_craft_1_obj1_2		[Go to $yrkanis$ market and buy :\n
+	 - $qt1$ $rm1$\n
+	 - $qt2$ $rm2$\n
+	 of at least quality $ql1$.]
+}
+
+MA_CRAFT_1_OBJ1_3	(item rm1, int qt1, int ql1, item rm2, int qt2, int ql2, item rm3, int qt3, int ql3, place yrkanis)
+{
+	ma_craft_1_obj1_3		[Go to $yrkanis$ market and buy :\n
+	 - $qt1$ $rm1$\n
+	 - $qt2$ $rm2$\n
+	 - $qt3$ $rm3$\n
+	 of at least quality $ql1$.]
+}
+
+MA_CRAFT_1_OBJ1_4	(item rm1, int qt1, int ql1, item rm2, int qt2, int ql2, item rm3, int qt3, int ql3, item rm4, int qt4, int ql4, place yrkanis)
+{
+	ma_craft_1_obj1_4		[Go to $yrkanis$ market and buy :\n
+	 - $qt1$ $rm1$\n
+	 - $qt2$ $rm2$\n
+	 - $qt3$ $rm3$\n
+	 - $qt4$ $rm4$\n
+	 of at least quality $ql1$.]
+}
+
+MA_CRAFT_1_STEP_2 (item gloves)
+{
+	ma_craft_1_step_2	[Good, I see you have all we need, now take this plan and start crafting the $gloves.p$ quick, 
+						we're running out of time !]
+}
+
+MA_CRAFT_1_OBJ2	(item gloves, int qt, int ql, bot giver)
+{
+	ma_craft_1_obj2		[Craft $qt$ $gloves.p$ of at least quality $ql$, be careful as misses won't be refunded by $giver$.]
+}
+
+MA_CRAFT_1_OBJ3	(bot giver, item gloves)
+{
+	ma_craft_1_obj3		[Now return quickly to $giver$ and give him the $gloves$ you just crafted.]
+}
+
+MA_CRAFT_1_MENU1()
+{
+	ma_craft_1_menu1	[Give the gloves]
+}
+
+MA_CRAFT_1_END ()
+{
+	ma_craft_1_end		[Thank you ! You helped me a lot ! Here take this refund for the raw materials with a bonus
+						for your work. And you can keep the plan too, I still have copies of it.]
+}

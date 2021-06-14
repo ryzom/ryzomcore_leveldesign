@@ -1,0 +1,20 @@
+﻿R_08_14_MIS_TITLE (bot giver)
+{
+	r_08_14_mis_title	[Echantillons de goo]
+}
+
+R_08_14_MIS_DESC (bot giver, faction fact_zorai)
+{
+	r_08_14_mis_desc	[Rapporter 3 échantillons de goo provenant de 3 régions $fact_zorai$]
+}
+
+R_08_14_P_LDC_INTRO (faction fact_zorai, faction faction, place lieu_dit_void, place lieu_groveofumbra, place lieu_knotofdementia, place lieu_void, faction tribu_antikami)
+{
+	r_08_14_p_ldc_intro	[Salutations. Je vais vous confier une mission de la plus haute importance, et je n'accepterai aucun échec. Je ne vous apprends pas ce qu'est la goo : ce fléau qui ronge notre planète de l'intérieur, nous savons tous de quoi il s'agit. Cela dit, nous sommes loin d'avoir percé tous ses secrets. Il est bien connu que celui qui connaît son ennemi a plus de chances de le vaincre.{break}Le continent $fact_zorai$ est idéal pour étudier la goo, car infesté par celle-ci. Vous allez donc nous en rapporter des échantillons provenant de trois régions différentes : $lieu_void$, $lieu_groveofumbra$ et $lieu_knotofdementia$.{break}Dans la région de $lieu_void$, allez jusqu'à $lieu_dit_void$. A quelques dizaines de mètres à l'est, vous trouverez un imposant monticule de terre. Vous devriez trouver des résidus de goo en creusant au pied du versant sud de ce monticule.{break}Dans la région de $lieu_groveofumbra$, allez jusqu'au village des $tribu_antikami$. Au sud-est de ce village, vous trouverez un passage s'engouffrant entre deux monticules de terre. Prenez ce passage et suivez le en direction du sud jusqu'à ce que vous arriviez à une cascade d'eau. Le chemin s'oriente alors vers l'est, suivez-le jusqu'à ce que vous trouviez un campement de bandits. Ce campement est installé autour d'un petit lac. Vous trouverez des résidus de goo au bord de ce lac, côté est.{break}Et enfin, au nord de la région de $lieu_knotofdementia$, vous trouverez un téléporteur de $faction.da$ $faction$. Vous trouverez des résidus de goo à une trentaine de mètres de ce point vers l'est.{break}Je vous conseille de vous faire escorter pour effectuer ce périple. A vrai dire, faite comme bon vous semble, seul le résultat m'importe. Si vous réussissez, je vous donnerai accès un nouveau point de téléport.]
+}
+
+R_08_14_P_BC_DEBRIEF ()
+{
+	r_08_14_p_bc_debrief	[Vous avez rempli votre mission comme il fallait. Voici donc la récompense que je vous avais promise.]
+}
+

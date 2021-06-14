@@ -1,0 +1,36 @@
+﻿R_04_06_MIS_TITLE (bot giver)
+{
+	r_04_06_mis_title	[La collectionneuse de résines]
+}
+
+R_04_06_MIS_DESC (bot giver)
+{
+	r_04_06_mis_desc	[Prospecter et collecter des matières premières pour l'intendance.]
+}
+
+R_04_06_P_LDF_INTENDANT_INTRO (item my_dung_resin, item my_fung_resin, item my_glue_resin, item my_moon_resin, bot prospecteur)
+{
+	r_04_06_p_ldf_intendant_intro	[Bonjour cher ami, je suis à la recherche d'un talentueux prospecteur. Je suis collectionneuse de résines et il m'en manque certaines pour compléter ma collection. Comme vous devez le savoir, la résine entre dans la confection des armures Matis et offre une très bonne résistance aux coups. Chaque sorte de résine offre de la protection contre un type d'arme, c'est pourquoi je tiens à en avoir une de chaque pour pouvoir étudier leurs résistances. {break}
+Actuellement il me manque 4 types de résines.\n
+\n $my_glue_resin$
+\n $my_moon_resin$
+\n $my_fung_resin$
+\n $my_dung_resin$ \n \n
+Apportez moi 10 résines de chaque sorte, et en retour, je vous enseignerai une technique vous permettant de vous concentrer sur votre tâche plus facilement.{break}Avant de vous lancer à la recherche de ces matériaux, vous devriez aller voir $prospecteur$, c'est une excellente prospectrice, qui je pense, saura aisément vous orienter dans votre quête.]
+}
+
+R_04_06_P_T2_PARLER_PROSPECTEUR (bot prospecteur)
+{
+	r_04_06_p_t2_parler_prospecteur	[Bonjour, je suis à la recherche de différentes catégories de résines.]
+}
+
+R_04_06_P_LDC_PARLER_PROSPECTEUR (faction fact_matisian, place lieu_knoll, place lieu_place_01, place lieu_place_02, place lieu_source, item my_dung_resin, item my_fung_resin, item my_glue_resin, item my_moon_resin)
+{
+	r_04_06_p_ldc_parler_prospecteur	[Normalement, vous devriez pouvoir trouvez tous les éléments que vous recherchez dans cette région.{break}Pour $my_glue_resin.da$ $my_glue_resin$, allez près de la frontière sud de la région de $lieu_knoll$ en restant à l'ouest du village des $fact_matisian.member$.{break}Pour $my_moon_resin.da$ $my_moon_resin$, allez à l'extrême ouest de la région de $lieu_knoll$, au sud de la région de $lieu_source$.{break}Pour $my_dung_resin.da$ $my_dung_resin$, allez à l'extrême est de $lieu_knoll$.{break}Et enfin, vous trouverez $my_fung_resin.da$ $my_fung_resin$ à mi-chemin entre $lieu_place_01$ et $lieu_place_02$.{break}Bon courage et bonne route.]
+}
+
+R_04_06_P_BC_ENDRITE ()
+{
+	r_04_06_p_bc_endrite	[Merci pour votre aide, je vais vous enseigner la technique vous permettant de mieux vous concentrer.]
+}
+

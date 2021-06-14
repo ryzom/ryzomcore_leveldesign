@@ -1,0 +1,30 @@
+﻿R_09_01_MIS_TITLE (bot giver)
+{
+	r_09_01_mis_title	[Les gants magiques]
+}
+
+R_09_01_MIS_DESC (bot giver)
+{
+	r_09_01_mis_desc	[Trouvez les ressources nécessaires à la création de gants magiques.]
+}
+
+R_09_01_P_LDF_INTRO (faction faction_fyros, bot foreman)
+{
+	r_09_01_p_ldf_intro	[Les combats contre les Kitins lors de la reconquête nous montrèrent que n'étions pas de forts guerriers comme les $faction_fyros.member$. Alors, nous développâmes des techniques magiques inédites qui nous permirent de dominer notre ennemi. Ce savoir se puise dans Atys elle-même.{break}Je t'invite à découvrir les terres d'Atys et à y puiser la force magique qu'y s'y trouve. Quand tu auras puisé suffisamment dans les ressources d'Atys, je te montrerai comment les utiliser pour renforcer ta magie. Cependant, si nos aînés ont mis longtemps avant de découvrir ces ressources, tu mettras moins de temps en allant voir $foreman$.]
+}
+
+R_09_01_P_T2_FOREMAN (bot foreman)
+{
+	r_09_01_p_t2_foreman	[Je viens prendre des informations sur les ressources locales.]
+}
+
+R_09_01_P_BC_FOREMAN (faction faction_matis, place lieu_rep_oil_01, place lieu_rep_oil_02, place lieu_rep_oil_03, place lieu_rep_resin, place lieu_rep_sap, place lieu_rep_wood, item mp_dung_resin, item mp_enola_sap, item mp_gulatch_oil, item mp_motega_wood)
+{
+	r_09_01_p_bc_foreman	[Je peux vous indiquer où trouver ce que vous cherchez, mais sachez avant tout que vous ne trouverez ces matériaux qu'en hiver. Si vous suivez mes instructions à la lettre, vous devriez vous en sortir très bien. Vous devez réunir les matériaux de base pour crafter les fameux gants de mages $faction_matis$. Pour cela vous aurez besoin des matériaux suivants : $mp_dung_resin$, $mp_enola_sap$, $mp_motega_wood$ et $mp_gulatch_oil$. Notez bien ce que je vais vous indiquer maintenant.{break}Vous trouverez $mp_dung_resin.pia$ $mp_dung_resin.p$ à quelques dizaines de mètres de $lieu_rep_resin$ en direction de l'ouest, de nuit et par beau temps.{break}Vous trouverez ensuite $mp_enola_sap.pia$ $mp_enola_sap.p$ à une centaine de mètres au nord-ouest de $lieu_rep_sap$, de jour et par beau temps.{break}Vous trouverez $mp_motega_wood.pia$ $mp_motega_wood.p$ à 150 mètre environ, au sud de $lieu_rep_wood$, de jour et par mauvais temps.{break}Enfin, vous trouverez $mp_gulatch_oil.pia$ $mp_gulatch_oil.p$ au centre d'un triangle formé par les lieux suivants : $lieu_rep_oil_01$, $lieu_rep_oil_02$ et $lieu_rep_oil_03$. Allez-y de nuit, soit par très beau temps, soit par temps couvert. Bonne chance à vous.]
+}
+
+R_09_01_P_BC_DEBRIEF (bot player)
+{
+	r_09_01_p_bc_debrief	[C'est impressionnant $player$, maintenant que tu sais comment puiser dans les forces d'Atys, je vais t'enseigner une partie de notre passé ainsi que la technique donc je t'avais parlé.]
+}
+

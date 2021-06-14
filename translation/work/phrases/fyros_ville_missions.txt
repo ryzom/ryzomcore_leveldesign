@@ -1,0 +1,1382 @@
+﻿//////////////////Fyros ville missions//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Mission 01 : FIGHT MISSION
+/*
+FV_FIGHT_MIS_01
+*/
+FV_FIGHT_MIS_01_TITLE (bot giver)
+{
+	fv_fight_mis_01_title	[Fighting smugglers]
+
+}
+
+FV_FIGHT_MIS_01_DESC (bot giver)
+{
+	fv_fight_mis_01_desc	[Vous allez combattre des contrebandiers découverts par la tribu des Taxeurs.]
+
+}
+
+FV_FIGHT_MIS_01_STEP_1 (bot_name target)
+{
+//Dialogue guardchief
+	fv_fight_mis_01_step_1				[Vous cherchez du travail ? Voilà qui tombe bien ! Je cherche quant à moi des combattants qui n'ont pas
+							froid aux yeux !{break}\n
+							Il y a quelques nuits, des jeunes de la tribu des Taxeurs ont aperçu des contrebandiers, non
+							loin des portes de la cité. Ils ont eu la présence d'esprit de les suivre sans se faire remarquer, et ils ont
+							ainsi pu localiser le camp de ces vermines. Nous devons agir et débarrasser la région de cette engeance !
+							Ils dépouillent notre peuple de ses plus beaux objets pour les revendre à bas prix aux étrangers.
+							Nous ne pouvons tolérer cela !\n
+							Rassemblez votre groupe, et nettoyez-moi le camp des contrebandiers. $target$, un Taxeur,
+							vous montrera le chemin, retrouvez-le près des portes de la ville.]
+
+}
+
+FV_FIGHT_MIS_01_STEP_2 (bot previous)
+{
+//Dialogue fyros tribu des Taxeurs
+	fv_fight_mis_01_step_2				[Vous êtes les combattants engagés par $previous$ ? Suivez-moi, je vais vous mener au camp des
+							contrebandiers.]
+
+}
+
+FV_FIGHT_MIS_01_END_ESCORT ()
+{
+//Dialogue Fyros tribu des Taxeurs
+	fv_fight_mis_01_end_escort			[Voilà, à vous de jouer maintenant ! Prenez garde, ils se battront jusqu'au bout : ils préfèrent
+							mourir plutôt que de se rendre. Je retourne vers la cité. Bonne chance !]
+
+}
+
+FV_FIGHT_MIS_01_CUSTOM_OBJ (string_id g1, place p)
+{
+//Objectif
+	fv_fight_mis_01_custom_obj			[Tuer les contrebandiers]
+
+}
+
+FV_FIGHT_MIS_01_BEGIN_FIGHT ()
+{
+//Dialogue contrebandier
+	fv_fight_mis_01_begin_fight			[On nous attaque ! Défendez-vous jusqu'à la mort !]
+
+}
+
+FV_FIGHT_MIS_01_TALKMENU (bot giver)
+{
+//Menu pour parler au guardchief
+	fv_fight_mis_01_talkmenu			[Les contrebandiers sont morts.]
+
+}
+
+FV_FIGHT_MIS_01_END ()
+{
+// Dialogue guardchief
+	fv_fight_mis_01_end				[Vous avez mis fin aux activités de ces brigands ? Bravo ! Vous avez bien mérité votre récompense.
+							Gageons que les vauriens en tous genres réfléchiront à deux fois à présent avant de défier l'autorité
+							de la cité !]
+
+}
+
+//reward 2000 + fame Fyros + fame tribu Leviers
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+FV_SUPPLY_MIS_01
+*/
+FV_SUPPLY_MIS_01_TITLE (bot giver)
+{
+	fv_supply_mis_01_title		[The lost list.]
+
+}
+
+FV_SUPPLY_MIS_01_DESC (bot giver)
+{
+	fv_supply_mis_01_desc		[Help $giver$ to deliver the merchants.]
+
+}
+
+FV_SUPPLY_MIS_01_STEP_1 (player p, bot target)
+{
+
+	fv_supply_mis_01_step_1		[Hello $p$, could you help me?\n
+								Today I must supply some merchants of our city but unfortunatly I lose my supply list.{break}
+								I can't remember what happens to me last night,\n
+								I woke up this morning on the floor of the great market place with an incredible headache and my list was no longer in my pockets.\n
+								I could have been attacked by bandits, I can't remember.\n
+								The only thing that I can remember is that I had a date with the beautiful $target$, the raw material merchant.\n
+								Her shop is in the parallel street of this one.\n
+								Speak to her, perhaps she could tell you more about what happens to me last night.]
+
+}
+FV_SUPPLY_MIS_01_STEP_2 (bot giver, bot target)
+{
+
+	fv_supply_mis_01_step_2		[$giver$? Of course I know him! What this boor wants?{break}
+								What? Attacked by bandits? Let me laugh!\n
+								This boor asked me to dinner yesturday night and he gave me an appointment in the bar of the town.\n
+								When I arrived to the bar, yes indeed I was a little late, he was already totaly drunk!\n
+								He was dancing half nude on the little dancefloor!\n
+								All customers were laughing at him!\n
+								I didn't stay anylonger!
+								I will be not surpised if he lost his supply list in the bar.\n
+								You should ask to $target$ the barman.\n
+								And never speak me again of $giver$!]
+
+}
+FV_SUPPLY_MIS_01_STEP_3 (bot giver)
+{
+
+	fv_supply_mis_01_step_3		[$giver$? You are one of his friends?
+								He made us laugh a lot yesturday, I haven't see a good atmosphere like this since a long time in my bar.\n
+								When he arrived he was dressed with his best outfits, he certainly has a date with a lady.\n
+								But after a pack of hours, and a pack of bottles, the person he was waiting for wasn't arrived.\n
+								$giver$ quit my bar with the first sunbeams, but in the state he was he couldn't go very far.\n
+								Oh, I remember, he forgot this note.\n
+								Take it and give him back.]
+
+}
+FV_SUPPLY_MIS_01_STEP_4 (item rm1, item rm2, item boots, bot Vata, bot Soa, bot Guyofio)
+{
+
+	fv_supply_mis_01_step_4		[Oh! you have found my list! congratulations.{break}
+								You will tell me how you found it later, for now you have to help me to deliver all merchandises of the list.\n
+								Well, let's see.\n
+								I got it, listen carefuly:\n
+								Some $rm1$ for $Vata$ on the little place near the bar.\n
+								Some $rm2$ for $Soa$, he got a shop near the great market place.\n
+								And a pair of $boots$ for $Guyofio$ on the south esplanade of the town hall.\n
+								Be quick, you don't have a lot of time.]
+
+}
+FV_SUPPLY_MIS_01_END (item rm1, item rm2, item boots, bot Vata, bot Soa, bot Guyofio)
+{
+
+	fv_supply_mis_01_end		[Congratulations, everything have been delivered.{break}
+								For my part...hum...My headache is gone and my memory is back.\n
+								Take thie nice reward for your job...and this little bonus...for you to be discreet on my misadventure.]
+
+}
+///txts merchants and menus
+
+FV_SUPPLY_MIS_01_TALKMENU (bot giver)
+{
+	fv_supply_mis_01_talkmenu			[$giver$ was here yesturday?]
+
+}
+FV_SUPPLY_MIS_01_MERCHANT_1 (bot giver)
+{
+	fv_supply_mis_01_merchant_1			[Thanks, You deliver it just in time.]
+
+}
+FV_SUPPLY_MIS_01_MERCHANT_2 (bot giver)
+{
+	fv_supply_mis_01_merchant_2			[You're a great supplier, thanks.]
+
+}
+FV_SUPPLY_MIS_01_MERCHANT_3 (bot giver)
+{
+	fv_supply_mis_01_merchant_3			[Exactly what I need.]
+
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+FV_KNOW_MIS_01
+*/
+FV_KNOW_MIS_01_TITLE (bot giver)
+{
+	fv_know_mis_01_title		[Ram jam kanny with the Kami.]
+
+}
+
+FV_KNOW_MIS_01_DESC (bot giver)
+{
+	fv_know_mis_01_desc		[Listen the story of $giver$.]
+
+}
+
+FV_KNOW_MIS_01_STEP_1 (bot target)
+{
+
+	fv_know_mis_01_step_1		[Have you already seen a Kami young adventurer?\n
+								It could be very surprising to see a Kami for the first time.\n
+								Indeed, it was for me.\n
+								Do you want me to tell you a little story about it?{break}.
+								Well Listen:\n
+								Towards the end of the kitin wars the kids were allowed out to play in the open air at certain times of the day after years of Prime Root confinement.\n
+								We were playing ram jam kanny and I was the ram as usual, being the youngest.\n
+								I'd just finished counting behind a tree and the kids were hiding when I got a strange but agreeable feeling of solitude out there in the fresh air and
+								the sun	streaming down through the branches.\n
+								I went looking for the others when I heard a rustle in the trees and then a chill kind of trickled down my spine.\n
+								I stepped round a bush and I nearly jumped out of my skin!\n
+								But my memory si lacking and I forgot the names of my Tryker mate and her Zoraï friend who intervened in the next step of the story.\n
+								It will be disrespectful to continue this story without naming them.\n
+								Hum...You should try to find $target$ my daughter.\n
+								When she was younger I told her this story a lot of time.\n
+								She certainly remember these names.\n
+								$target$ really love to spend all her money with new clothes.\n
+								To my mind you will find her near one of our market places.\n]
+
+}
+FV_KNOW_MIS_01_STEP_2 ()
+{
+
+	fv_know_mis_01_step_2		[Oh my father found a new listener for his stories?{break}
+								His memory is regressing days after days, it's really sad.\n
+		 						He have so much things to tell.\n
+		 						The names he is looking for are Leary O'Codger and Lin-Ti.\n
+		 						Tell him and he will continue his story.\n]
+
+}
+FV_KNOW_MIS_01_END ()
+{
+
+	fv_know_mis_01_end			[Leary and Lin-Ti?
+								Yes, that's their names.\n
+								How can't I remember the names of so pleasant people?
+								Aging is a sad my friend...Well listen the rest of my story.{break}
+		 						There, starring at me, a strange creature I'd never seen before.\n
+		 						I'd been lucky enough to have never seen one before and I thought for a second it was a species of kitin.\n
+		 						I eyed a good stick on the ground, reached for it and just as I was about to throw it my little Tryker mate, Leary O'Codger, came bolting out of his hiding
+		 						place followed by Lin-Ti, a Zoraï girl who threw herself on her knees in prostration while the creature sat there blinking!\n
+		 						Leary explained to me that it was a Kami and that we must be kind to it, but I had other things on my mind...\n
+		 						I threw down the stick and raced to my tree shouting ram jam kanny and got out of being the ram all afternoon!
+		 						That was the first time I saw a Kami my young friend.]
+
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+FV_KNOW_MIS_02
+*/
+FV_KNOW_MIS_02_TITLE (bot giver)
+{
+	fv_know_mis_02_title		[First encounter with kitins.]
+
+}
+
+FV_KNOW_MIS_02_DESC (bot giver)
+{
+	fv_know_mis_02_desc		[Listen the story of $giver$.]
+
+}
+
+FV_KNOW_MIS_02_STEP_1 (bot target)
+{
+
+	fv_know_mis_02_step_1		[I will tell you the first encounter me made with kitins.\n
+								A very sad day.{break}
+								One day a team of miners, under the reign of Cerakos II, struck upon a pothole leading to a fabulous cavern where a strange thirty foot relic lay entrapped
+								in the roots like a giant forsaken buckler shield.\n
+								The captain cautiously climbed to the top of the great buckler where a nauseating smell came from a nine foot wide hole.\n
+								Sword drawn, he approached the soundless orifice and looked over the rim.
+								The captain became a real legend and an exemple of courage for all new recruit of our army.\n
+								You should speak to $target$, the guard chief of the city.\n
+								He will tell you what happened to the captain.]
+
+}
+FV_KNOW_MIS_02_STEP_2 ()
+{
+
+	fv_know_mis_02_step_2		[The story of the first encounter with kitins?\n
+								You want to know what did the captain discover in the hole?\n
+								Listen.{break}
+								He looked over the rim but then he let out a short cry before he was seized and silenced and dragged inside!\n
+								The other miners called out but only the sound of munching returned their call.\n
+								They escaladed the buckler and to their horror, there lumbered from within a horrible six legged creature followed by others.\n
+								The miners had seen their first kitins!\n
+								They smote the creatures easily one by one as they came out of the hole, but little did they know these were only infant kitins, and suddenly, from a gaping
+								hole in the wall came a horde of great kitin soldiers.
+								Do you know the tradition about this story?\n
+								Each time that this story is told a Kitin must die!\n
+								And when every Homin will heard one hundred times this story, Kitins will be no longer a danger.\n
+								Now, for the end of the story, you have to kill a kitin.]
+
+}
+FV_KNOW_MIS_02_END ()
+{
+
+	fv_know_mis_02_end			[Nice! A dead kitin is a good kitin!\n
+								Now listen the end of the story.{break}
+								The miners sent a fireball down the tunnel to block the monsters' progress and were able to escape on their mektoubs.\n
+								The alert was raised and the mayor of Coriolis mustered up  a fighting force.\n
+								But horror met their eyes on the horizon as they were just leaving the town.\n
+								In the distance, a legion of great kitins was coming up fast so marking the start of the Great Swarming and the end of an Empire.\n
+								To this day, many believe that the kitins were protecting some hidden secret of Atys.
+								This is the end of the story.\n
+								Take this little reward for the dead kitin and don't forget to kill some each time it's possible.]
+
+}
+
+
+//reward 500 + fame Fyros
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+FV_KNOW_MIS_03
+*/
+
+FV_KNOW_MIS_03_TITLE (bot giver)
+{
+	fv_know_mis_03_titre	[Story of the prime roots.]
+}
+
+FV_KNOW_MIS_03_DESC(bot giver, bot_name escorted)
+{
+	fv_know_mis_03_desc		[$escorted$, an old friend of $giver$, needs an escort to travel to an outpost to the southeast.
+							He has spent the most of his life in the prime roots digging for ancient artefacts and could give you
+							some useful information if you listen to his story.]
+}
+
+FV_KNOW_MIS_03_STEP_1 (player p, bot_name escorted)
+{
+	fv_know_mis_03_step_1	[Greetings, $p$. An old friend of mine, $escorted$ needs an escort to reach an outpost close to the southeast.{break}
+							He's getting old and the routes are unsafe these troubled days. He was a great prime roots digger in his youth
+							and he saw many strange things down there. This trip could be an interesting occasion to learn some useful information
+							about our planet and what lies under its surface... He waits on the place to the south of the town, just in front of the bar.]
+}
+
+FV_KNOW_MIS_03_STEP_2 (bot giver)
+{
+	fv_know_mis_03_step_2	[Ah, you're the bodyguard $giver$ sent !{break} I would have preferred going the road alone like I used to, but I'm getting
+							really to old now... My legs are too, so you won't mind if we stop often to rest a little, I'll tell you my story along the way,
+							the trip will look shorter this way.]
+}
+
+FV_KNOW_MIS_03_STEP_3 (bot escorted)
+{
+	fv_know_mis_03_step_3	[My name is $escorted$, son of Galeus. Like my father and my father's father I spent my early working life as a miner.{break}
+							When I was but a lad of thirteen I spent two full years of my apprenticeship under my father who was in charge of excavation
+							in the Prime Roots with the Company of Lenardi Bravichi, the great Matis artisan, whose ignorance is the source of my life's
+							torment.\n\n
+							I was with my father digging out a new chamber of curiously systematical dimensions when he discovered an artifact.
+							If fact, it was I who hit upon the strange sounding body first with my pick. My father was at my side even before I thought
+							to call on him for it was a sound he instantly recognized from his mining in the ancient lands where many artifacts had been
+							discovered under his charge. Only, this one looked in excellent condition and at least ten times bigger than any
+							fragments discovered before !]
+}
+
+FV_KNOW_MIS_03_STEP_4 ()
+{
+	fv_know_mis_03_step_4	[My father informed Lenardi of the fantastic discovery but Lenardi was too bent on his aesthetic creations and was not
+							the man to give it the attention it deserved.{break} Nevertheless, my father persuaded him to give him twenty four hours to
+							uncover a span of the surface. We worked all night through carefully excavating and brushing the debris and organic
+							matter away so as not to spoil a single inch of the inscriptions. By morning we had uncovered about ten foot square
+							and were gladdened in the thought that the inscriptions alone would provoke enough interest to allow us to go on.
+							For one inscription once translated distinctly read M G   OR S, which my father filled in to make up the word MEGA CORP !]
+}
+
+FV_KNOW_MIS_03_STEP_5 ()
+{
+	fv_know_mis_03_step_5	[But Bravichi considered it a mere whim of nature and maintained that keen fancy often leads one to see the most
+							amazing features in the most run of the mill objects.{break} To uphold his argument he recalled a time when he came across
+							some roots of an evening whose silhouette seen form a certain angle took the exact form of a mektoub drooping its trunk,
+							and a tuber that looked exactly like a baldusa. The whole company laughed, for Bravichi, true to his race, was an excellent
+							orator which my father was not. A verdict was pronounced, the consensus was that we should not lose anymore precious time,
+							that we should forge ahead with the present conversion to alleviate the cramped conditions, as homins were arriving from
+							the kitin ravaged lands even as we spoke.]
+}
+
+FV_KNOW_MIS_03_STEP_6 ()
+{
+	fv_know_mis_03_step_6	[Dally Baily, the Tryker craft master, sent in his team to install the ventilation system vital for the stability of
+							the walls as well as the new floral installations.{break} But a clumsy fat Tryker laborer went and put his foot clean through
+							a panel that my father had specifically ordered not to be touched, and which he had paid particular attention to.
+							The Tryker was badly cut by the incredible cutting properties of the broken material, and was taken to the Zoraï medical
+							bay where he had his anguish soothed and later had his leg cut off ! While he was being lifted out I saw my father look
+							in wonder at something that had caught his eye in the hollow made by the fall, he discreetly directed my eyes with a sign
+							to keep it under my cap.]
+}
+
+FV_KNOW_MIS_03_STEP_7 ()
+{
+	fv_know_mis_03_step_7	[There were bones, encrusted in the side of the hollow that continued under the cavern wall, not just any bones,
+							but a complete primate skeleton not indifferent to the Fyros in stature!{break} I remember how vexed and frustrated he was
+							on getting home to our quarters and describing the vote against him to my mother, he told her he was going in that
+							night anyway to get to the bottom of it, despite the usual Zoraï foreboding. My mother gently tried to calm his
+							nerves as only she knew how saying he was always thinking of his work, never of romantic thoughts and his family.]
+}
+
+FV_KNOW_MIS_03_STEP_8 ()
+{
+	fv_know_mis_03_step_8	[Late during the night while everyone else was asleep I opened my eyes to my father tussling my hair : {break}"Up you get,
+							lumper! The greatest discovery of hominkind is about to put the Cetheus' in the Chroniclers' books" We took up our tools and set
+							off to the site. I knew my dad had hardly slept for he had brought with him a plan that he had been working on,
+							a plan that resumed his other discoveries into some kind of logic and now incorporating our discovery.]
+}
+
+FV_KNOW_MIS_03_STEP_9 ()
+{
+	fv_know_mis_03_step_9	[We carefully dug into the wall and slowly but surely we began to uncover not one but several skeletons seemingly set
+							in a fetus position, no doubt a burial ritual of the epoch.{break} Around their necks we uncovered a ceremonial necklace made
+							of a hard shiny substance with an inscription followed by the initials MC : Mega Corp! This is all we needed to persuade
+							the chiefs to stop the works and uncover the rest of such an important discovery which, no doubt, would give us answers
+							about past civilizations of Atys. It was my father's theory that all homins had a common ancestor. But then disaster struck...]
+}
+
+FV_KNOW_MIS_03_STEP_10 ()
+{
+	fv_know_mis_03_step_10	[I had kept excavating while my father was frantically getting down his notes and sketches when I struck upon a hollow in
+							the side of  the wall.{break} I heard a horrible crack coming from within, my father looked up in horror and understood what
+							was happening... He threw down his pad and picked me up with his huge hands and literally threw me across the room to
+							the doorway.]
+}
+
+FV_KNOW_MIS_03_STEP_11 ()
+{
+	fv_know_mis_03_step_11	[There was an awful rumbling, the last thing I saw was my father reaching for the necklace when the whole wall crumbled
+							and the ceiling collapsed on top of him.{break} I desperately reached out for him when I realized I was being held back by
+							two Trykers who dragged me out of the chamber and probably saved my life.]
+}
+
+FV_KNOW_MIS_03_STEP_12 ()
+{
+	fv_know_mis_03_step_12	[I was too young for my words to have any sway on Bravichi's proud ignorance which I shall regret to the end of my days.{break}
+							I wanted so much for my father's genius to be recognized and I felt I owed it to him to recover the proof.
+							But, when I went back there some time after I too fell victim to a subsidence and my legs were badly hurt.
+							I would so much like to see the proof again to honor my father's memory before I join him in the lands above, but my legs won't
+							carry me that far anymore.]
+}
+
+FV_KNOW_MIS_03_END ()
+{
+	fv_know_mis_03_end		[Thank you for the escort, I hope I haven't bored you too much with my mumbling.{break} Here, take this for your pain, and if
+							you come across some ancient artifacts containing skeletons one day, please say a prayer as one of them could be the
+							remains of my father.]
+}
+
+FV_KNOW_MIS_03_BOTCHAT()
+{
+	fv_know_mis_03_botchat	[Now let's go !]
+
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+FV_KNOW_MIS_04
+*/
+
+FV_KNOW_MIS_04_TITLE (bot giver)
+{
+	fv_know_mis_04_titre		[The Legend of Nemys Rydon, the route to safe haven.]
+}
+
+FV_KNOW_MIS_04_DESC(bot giver)
+{
+	fv_know_mis_04_desc			[Learn about the legend of Nemys Rydon.]
+}
+
+FV_KNOW_MIS_04_STEP_1 (player p, bot target)
+{
+	fv_know_mis_04_step_1		[Hello $p$, Have you already heard the legend of Nemys Rydon?{break}
+								If not, it's a must known story.\n
+								The best storyteller for this legend is, without a doubt, $target$ the merchant.\n
+								You should try to find him, on the town hall south market place.]
+}
+
+FV_KNOW_MIS_04_STEP_2 (bot target)
+{
+	fv_know_mis_04_step_2		[The Legend of Nemys Rydon?\n
+								Of course I will tell you! I'm always enthusiast about telling this story.{break}
+								But it's a pretty long story and I've got business to to.\n
+								So I will ask you to help me in my business to compensate for the lost time.\n
+								Listen carefuly now, I will begin the story.\n
+								Nemys Rydon had been a great traveller in the old lands and during the great kitin swarming he shepherded thousands of Fyros from the capital city away
+								from danger into the wilderness.\n
+								On the morning of the seventh day he went to the crest of a dune to find his bearings when a halo of light came from the heavens and a great one spoke to
+								him :\n
+								"I am Elias,  the father of your condition, I will help you in this moment of need."
+								Interesting begining of story isn't it?\n
+								To pursuit my story, you have to help me now.\n
+								$target$, the armor  merchant of the great market place is in debt with me.\n
+								He have to give me 250 of money.\n
+								Please find him and bring me back the money.]
+}
+FV_KNOW_MIS_04_STEP_3 (bot previous)
+{
+	fv_know_mis_04_step_3		[Oh yes, my debt.\n
+								well take this, it's what's $previous$ is waiting for.\n]
+}
+
+FV_KNOW_MIS_04_STEP_4 (player p, bot target)
+{
+	fv_know_mis_04_step_4		[Thanks for your help $p$.
+								Listen:{break}
+								"Take your people to the east to the Ridge of Baldos where you will find a rainbow on the plain. Be swift, Nemys," said Elias.\n
+								On his bended knees, Nemys gave his reply: "You have my word, Elias, and as long as breath shall fill my lungs it shall ring true."\n
+								There was no time to lose, the wind could change direction at any moment and carry the Fyros scent to the kitin armies that were at present travelling south.\n
+								Nemys knew the land like the back of his hand and, true to his word, led the multitude wisely to the Ridge of Baldos where, sure enough, there stood the
+								rainbow of Elias which took them far away to the Prime Roots on another land.\n
+								But little did Nemys know that there could be no return once through the rainbow.\n
+								There could be no return! That also what I said to $target$, one of my customers.\n
+								He bought me a pair of pants yesturday and now he tell me that it's not his size!\n
+								Please find him, he lives near the bar of the city, and explain him that my merchandises can't be returned!\n]
+}
+
+FV_KNOW_MIS_04_STEP_5 (bot previous)
+{
+	fv_know_mis_04_step_5		[HU! $previous$ is too coward for speak himfelf?\n
+								I don't want makes problems, so I will keep the pair of pants.\n
+								But he lost a customer, and I will ruin his fame!\n]
+}
+
+FV_KNOW_MIS_04_STEP_6 (item rm1)
+{
+	fv_know_mis_04_step_6		[Now that this little problem is fixed, I can continue the story.{break}
+								By and by as more homins made it through to the Prime Roots with tales of horror and destruction it became clear to Nemys that even the rainbows would soon
+								be destroyed by kitins.\n
+								The remaining multitudes of homins stranded in the kitin infested areas would never know the way to the sanctuary.\n
+								But how to bring them back? To bring anyone back is to find them first!\n
+								Again the answer came from the sky, this time at night.\n
+								Throughout his life travels Nemys had developed a love for stargazing and could tell where the clusters would appear according to the season.\n
+								In this way he concluded that the Prime Root sanctuary must be situated far to the west of the ancient lands even though many thought they were to the east,
+								as the rainbows had been located to the east of all the territories.\n
+								Now I need some $rm1$ please find some and bring it to me.]
+}
+
+FV_KNOW_MIS_04_STEP_7 (player p, bot target)
+{
+	fv_know_mis_04_step_7		[Exactly what I need.\n
+								Thanks $p$.{break}
+								In defiance of his advancing years, Nemys set out guided by the stars at night on the greatest trek.\n
+		 						Every so often he planted posts that pointed the way back to the newfound lands.\n
+		 						After many adventures, twice nearly losing his life and three full years of arduous travel at last he came to a place he thought he knew:\n
+		 						The plains of Coriolis, where Fyros history had so often been made, stood before him scarred and maimed after years of kitin devastation.\n
+		 						My official merchant's acreditation will be out of date tommorow and, as usual, $target$ the supplier is late!\n
+		 						Find him and bring me my new acreditation please.]
+}
+
+FV_KNOW_MIS_04_STEP_8 (bot previous)
+{
+	fv_know_mis_04_step_8		[$previous$'s acreditation?\n
+								Let's see...he is an armor merchant?\n
+								I got it, here is his acreditation.]
+}
+
+FV_KNOW_MIS_04_END (player p, bot target)
+{
+	fv_know_mis_04_end			[Ah, my acreditation! thanks.\n
+								Now I have no more business to give you, I will tell you the end of the story.{break}
+								He went from desert to forest, forest to lake lands, lake lands to jungle spreading the word of the route to safe haven.\n
+								I, with my parents, was among the first to take that route which opened the way for the Exodus.\n
+								My greatest regret is that Nemys Rydon, the savior of so many, never saw the rebirth of our civilization.\n
+								But I sometimes fancy he is up there looking down from a cloud with Elias.\n
+								And it's the end of the story.\n
+								I am  grateful to you for your help in my business.\n
+								Take this reward.]
+}
+
+//reward 1000 + fame Fyros + fame negative renegade
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+FV_FIGHT_MIS_02
+*/
+
+FV_FIGHT_MIS_02_TITLE (bot giver)
+{
+	fv_fight_mis_02_title	[The renegade spy.]
+}
+
+FV_FIGHT_MIS_02_DESC(bot giver, place city)
+{
+	fv_fight_mis_02_desc	[A spy of the renegade tribe has been sighted around $city$. Find him and either drive him away or kill him if he resists.]
+}
+
+FV_FIGHT_MIS_02_STEP_1()
+{
+	fv_fight_mis_02_step_1	[I need your help, I've got a little problem : a spy coming from the renegade tribe has been sighted around the city lately.{break}
+							It seems that he tries to enter despite the total prohibition for the member of this cursed tribe. I don't know if you
+							already crossed their path, but they are honourless traitors that have been bannished from our city for having conspired
+							against the authorities.\n\n
+							Since that ban, they are lurking around in the desert, always building new plans to take over the city.
+							This spy sighted around here is no good news as we can expect one of their treacherous moves soon. So I need you to
+							find him, and either drive him away or kill him.\n\n
+							My informants said he has been seen several times to the north and west of the city. Good luck, these guy are really dangerous !]
+}
+
+FV_FIGHT_MIS_02_TALKMENU(bot target)
+{
+	//"the" because target is called "renegade spy"
+	fv_fight_mis_02_talkmenu	[I killed the $target$]
+}
+
+FV_FIGHT_MIS_02_END()
+{
+	fv_fight_mis_02_end			[You killed him ? Good, that will be one less of them. Here, take your reward.]
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+FV_GROUP_MIS_01
+*/
+
+FV_GROUP_MIS_01_TITLE (bot giver)
+{
+	fv_group_mis_01_title				[The conspiracy.]
+}
+
+FV_GROUP_MIS_01_DESC(bot giver)
+{
+	fv_group_mis_01_desc				[The autority of the city needs help to spoil the renegades conspiracy.]
+}
+
+FV_GROUP_MIS_01_STEP_1(bot target)
+//"the renegades" est le nom d'une tribue: ne pas remplacer par un autre nom lors de la traduction.
+{
+	fv_group_mis_01_step_1				[As you should know, a lot of ambitious and bad intentioned people are ready to the worse actions for taking the control of our great city.{break}
+							 			Perhaps you already heard about the renegades.\n
+							 			It's a realy powerful group of dissidents. According to our spies they are actually ploting against the autority of the city.\n
+							 			They have a lot of members, they are rich, and have a good organization.\n
+							 			It's a real meance!\n
+							 			Our spies haven't got more informations, it's not easy to obtain the renegades's confidence.\n
+							 			We need the help of couragous and effective adventurers like you to obtain informations about their plans.\n
+							 			First, speak to $target$, the guard chief.\n
+							 			He will tell you the last news from our spies.\n
+							 			Good luck!]
+}
+FV_GROUP_MIS_01_STEP_2()
+{
+	fv_group_mis_01_step_2				[Informations about the renagades?{break}
+										Yes, smart mektoub, our infiltrated spy gave me some news.\n
+										It seems that a meeting have been organized between a great member of the renegades and one of their informants in town.\n
+										The meeting took place in the sauna.\n
+										You should make investigations in the neighbourhood of this place.\n
+										Perhaps some people have seen something.\n]
+}
+FV_GROUP_MIS_01_CUSTOM_OBJ_1 (bot target)
+{
+//Texte d'objectif
+	fv_group_mis_01_custom_obj_1 		[Find clues on the meeting.]
+
+}
+FV_GROUP_MIS_01_TALKMENU_1(bot target)
+{
+	fv_group_mis_01_talkmenu_1			[Have you notice something unusual around the sauna.]
+}
+//////////////
+/*
+FV_GROUP_MIS_01_AUTO_1
+
+*/
+FV_GROUP_MIS_01_AUTO_1_TITLE (bot giver)
+{
+	fv_group_mis_01_auto_1_title				[Find clues on the meeting.]
+
+}
+
+FV_GROUP_MIS_01_AUTO_1_END ()
+{
+	fv_group_mis_01_auto_1_end 				[Around the sauna?\n
+										Nothing at all!\n
+										I don't lose my time with spying people!]
+
+}
+///////////////
+/*
+FV_GROUP_MIS_01_AUTO_2
+
+*/
+FV_GROUP_MIS_01_AUTO_2_TITLE (bot giver)
+{
+	fv_group_mis_01_auto_2_title				[Find clues on the meeting.]
+
+}
+
+FV_GROUP_MIS_01_AUTO_2_END ()
+{
+	fv_group_mis_01_auto_2_end 				[Oh yes!\n
+										I noticed that people who come from the sauna are...wet.\n
+										That's all.]
+
+}
+///////////////
+/*
+FV_GROUP_MIS_01_AUTO_3
+
+*/
+FV_GROUP_MIS_01_AUTO_3_TITLE (bot giver)
+{
+	fv_group_mis_01_auto_3_title				[Find clues on the meeting.]
+
+}
+
+FV_GROUP_MIS_01_AUTO_3_END ()
+{
+	fv_group_mis_01_auto_3_end 				[I saw nothing, leave me alone!]
+
+}
+///////////////
+
+FV_GROUP_MIS_01_STEP_3 (bot traitor)
+{
+	fv_group_mis_01_step_3				[Last night I saw some customers who leaved the sauna very late.\n
+										A very unusual hour.\n
+										They were two, I recognized $traitor$ a citizen who live near the great market place.\n
+										I don't know the other person, but he was weird.]
+
+}
+FV_GROUP_MIS_01_CUSTOM_OBJ_2 (bot target)
+{
+//Texte d'objectif
+	fv_group_mis_01_custom_obj_2 		[Find and speak to $target$]
+
+}
+FV_GROUP_MIS_01_TALKMENU_2(bot target)
+{
+	fv_group_mis_01_talkmenu_2			[Were you in the sauna last night?]
+}
+FV_GROUP_MIS_01_STEP_4()
+{
+	fv_group_mis_01_step_4				[In the sauna?\n
+										Yes and then?\n
+										It's not forbiden as I know!{break}
+										I have nothing to tell you! Well nothing for free I mean.\n
+										Show more cooperation and perhaps I will be a little more talkative.]
+}
+FV_GROUP_MIS_01_STEP_5(bot target)
+{
+	fv_group_mis_01_step_5				[Thanks, this little gift should refresh my memory.{break}
+										The name of the man I was with in the sauna is $target$.\n
+										He is a member of the the renegades, a powerful tribe who is conspiracing against the establisment of the city.\n
+										He contacts me because of some of my famly members who are working as personal guards of the king's councelor.\n
+										He wants to know about their number, their timetable and their relieve.\n
+										But you have to know that I'm not a traitor and I'm sure that he's trying to get informations for ploting something bad.\n
+										I was about to gave him wrong informations but he gave me an other meeting.\n
+										I will meet him in a disceet place outside of the city.\n
+										I was about to start, follow me and I will lead you to him.]
+}
+FV_GROUP_MIS_01_CUSTOM_OBJ_3 (bot traitor)
+{
+//Texte d'objectif
+	fv_group_mis_01_custom_obj_3 		[Follow $traitor$ to the place of the meeting with the renegades.]
+
+}
+FV_GROUP_MIS_01_STEP_6(bot target)
+{
+	fv_group_mis_01_step_6				[They are spying!\n
+										Kill them all! It's an order!]
+}
+FV_GROUP_MIS_01_STEP_7(bot killer1, bot killer2, bot killer3)
+{
+	fv_group_mis_01_step_7				[A traitor in town?\n
+										I am not surprised, we mustn't underestimate the determination of the renegades.{break}
+										I have some news about their plans.\n
+										It seems that they will try to eliminate me.
+										They engaged a group of killers for doing this job, and I am their target.\n
+										You must find them and eliminate them.\n
+										They are three and are already in town.\n
+										Fortunatly we have their names. It's $killer1$, $killer2$ and $killer3$
+										Be quick, we haven't a lot of time.]
+}
+FV_GROUP_MIS_01_END_1(bot target)
+{
+//1ere fin:echec
+	fv_group_mis_01_end_1				[You were unable to stop them!{break}
+										Fortunatly my personal guards are more efficient than you! They stop them.\n
+										I no longer need your help.\n
+										Take this reward and get out, I am not congratulate you.]
+}
+FV_GROUP_MIS_01_STEP_8(place village_a, bot target)
+{
+	fv_group_mis_01_step_8				[Congratulation, this group of killers is no longer a danger.{break}
+										But we must counter attack!\n
+										The renegats mustn't think that they could ploting against us without take the consequences.\n
+										Our spies told us that one of their military chief, $target$, has been located south of $village_a$.\n
+										Find him and kill him!\n
+										It certainly calm them down for a moment!\n
+										But beware, he's not traveling alone.]
+}
+FV_GROUP_MIS_01_END_2(bot target)
+{
+	fv_group_mis_01_end_2				[Congratulations! You really impress me.{break}
+										You are some precious people.\n
+										I will talk myself about your exploits to the king.\n
+										Concerning the renegades, we are going tu use all the informations we recently got to eliminate this menace.\n
+										Please take these rewards in the name of our king.]
+}
+REWARD_FV_GROUP_MIS_01_AUTOLAUNCHER1()
+{
+	reward_fv_group_mis_01_autolauncher1		[The calcinator.]
+}
+
+REWARD_FV_GROUP_MIS_01_AUTOLAUNCHER2()
+{
+	reward_fv_group_mis_01_autolauncher2		[The faraway pain giver.]
+}
+
+REWARD_FV_GROUP_MIS_01_VEST()
+{
+	reward_fv_group_mis_01_vest				[The incandescent vest.]
+}
+
+REWARD_FV_GROUP_MIS_01_BUCKLER()
+{
+	reward_fv_group_mis_01_buckler			[The wind's protector.]
+}
+
+REWARD_FV_GROUP_MIS_01_AUTOLAUNCHER3()
+{
+	reward_fv_group_mis_01_autolauncher3		[The fire rain launcher.]
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//mission solo high level
+//reward : une cuirasse unique (en métal, immunise presque à un type de dégats, mais très lourde), fame fyros, fame négative avec scorchers
+/*
+FV_SOLO_MIS_01
+*/
+
+FV_SOLO_MIS_01_TITLE (bot giver)
+{
+	fv_solo_mis_01_title	[The missing artefacts.]
+}
+
+FV_SOLO_MIS_01_DESC(bot giver)
+{
+	fv_solo_mis_01_desc		[$giver$ wants you to find out what happened to a convoy that has disapperared without a trace.
+							The cargo they carried was very important as they were miners coming back from an expedition in the prime roots where
+							they had found several ancient artefacts.]
+}
+
+FV_SOLO_MIS_01_STEP_1(player p, place village, bot_name kidnapped)
+{
+	fv_solo_mis_01_step_1	[Greetings $p$, people tell good about your skills here and there, and I'm afraid they could be of use in the case that
+							worries me right now.\n\n{break}
+							Lately, a mining expedition directed by $kidnapped$ finished its period in the Prime Roots. They were expected to arrive
+							here two weeks ago but we haven't seen any sign.\n
+							I sent some men on their route, but it seems nobody has seen them since they camped near $village$.
+							I need someone discreet and efficient to investigate and you seem to be the man, would you accept ?]
+}
+
+FV_SOLO_MIS_01_OBJ_1_1(bot b, place village)
+{
+	fv_solo_mis_01_obj_1_1	[Investigate on the disappearance of the miners convoy.\n
+							You should start in $village$ as it is the last place where they have been seen.]
+}
+
+FV_SOLO_MIS_01_AUTO_TITLE()
+{
+	fv_solo_mis_01_auto_title	[Ask about missing convoy]
+}
+
+FV_SOLO_MIS_01_AUTO_1()
+{
+	fv_solo_mis_01_auto_1	[Sorry, i don't remember this convoy, we have so many of them that stop nearby...]
+}
+
+FV_SOLO_MIS_01_AUTO_2()
+{
+	fv_solo_mis_01_auto_2	[Yes, I remember a convoy that stopped here, but there was nothing special about it.]
+}
+
+FV_SOLO_MIS_01_AUTO_3(bot suspect)
+{
+	fv_solo_mis_01_auto_3	[So this convoy disappeared ? Then I'm sure $suspect$ is the culprit, this man would kill anyone for free.\n{break}
+							I'm sure he did it... And yes, now I remember, I saw him leaving the village the same day as the convoy and coming
+							back late at night !]
+}
+
+FV_SOLO_MIS_01_AUTO_4()
+{
+	fv_solo_mis_01_auto_4	[Sorry, I don't have time to answer questions, I'm too busy right now.]
+}
+
+FV_SOLO_MIS_01_AUTO_TITLE_2()
+{
+	fv_solo_mis_01_auto_title_2	[Ask FIRMLY about missing convoy]
+}
+
+FV_SOLO_MIS_01_AUTO_5(bot accusator)
+{
+	fv_solo_mis_01_auto_5	[You believed what this moron told you ? Listen, I'm just a honest merchant, I have nothing to do with this disappearance.{break}
+							$accusator$ is stupid and naughty, he can't bear me since I settled here, managed to run my shop and started living out of it
+							when he tried during ten years then went bankrupt as he hadn't got enough clients. Nobody wanted to buy him anything
+							because he was unpleasant with anybody entering his shop !\n
+							Believe it or not, I have nothing to do with this affair ! You should look on his side, he's twisted enough to have done it,
+							maybe, and now please let me go back to my work, my clients are waiting.]
+}
+
+FV_SOLO_MIS_01_STEP_2(place city)
+{
+	fv_solo_mis_01_step_2	[I remember well this convoy, I was on faction this day. I remember they spent the night here, then left at dawn directly
+							to the north, towards $city$]
+}
+
+FV_SOLO_MIS_01_OBJ_1_2(place p, place city)
+{
+	fv_solo_mis_01_obj_1_2	[Apparently nothing special happened here, they certainly had a problem along the road to $city$.]
+}
+
+FV_SOLO_MIS_01_AMBIENT_1()
+{
+	fv_solo_mis_01_ambient_1	[This bridge looks weird, there are strange burnt marks in the wood, and you can notice some arrowheads stuck
+								in the pillars.\n
+								There are also some traces on the ground indicating that several chariots went back east after covering half the distance
+								over the bridge.]
+}
+
+FV_SOLO_MIS_01_AMBIENT_2()
+{
+	fv_solo_mis_01_ambient_2	[The traces become blurred here as other convoys passed since, but you can notice they turned back to the south
+								after failing to cross the bridge.]
+}
+
+FV_SOLO_MIS_01_AMBIENT_3()
+{
+	fv_solo_mis_01_ambient_3	[You can't perceive the traces anymore, too many convoys passed since then. But when you look around, you notice
+								a strange glow further to the west.]
+}
+
+FV_SOLO_MIS_01_AMBIENT_4()
+{
+	fv_solo_mis_01_ambient_4	[There's something half buried in the ground here. You catch it and notice some traces going along the road to the west.]
+}
+
+FV_SOLO_MIS_01_AMBIENT_5()
+{
+	fv_solo_mis_01_ambient_5	[For any reason they had to enter the canyon. But you can't find any sign indicating which direction they took
+								on this hard ground.]
+}
+
+FV_SOLO_MIS_01_OBJ_2(bot giver)
+{
+	fv_solo_mis_01_obj_2	[You should report to $giver$ the information you found.]
+}
+
+FV_SOLO_MIS_01_TALKMENU_1()
+{
+	fv_solo_mis_01_talkmenu_1	[Report about what you found]
+}
+
+FV_SOLO_MIS_01_STEP_3(item seal, bot_name kidnapped, bot guardchief)
+{
+	fv_solo_mis_01_step_3	[How's your investigation doing ?\n{break}
+							So you found a $seal$, I recognize it, it's $kidnapped$'s one indicating they had to enter the canyon...
+							$kidnapped$ would never have lost his seal by accident.\n
+							No, I think the right hypothesis is they have been attacked on the bridge, they surrendered and were
+							driven back to the canyon entry. You should talk with $guardchief$ about that, he might recognize the tactics used for the
+							ambush.]
+}
+
+FV_SOLO_MIS_01_TALKMENU_2()
+{
+	fv_solo_mis_01_talkmenu_2	[Ask about ambush tactics]
+}
+
+FV_SOLO_MIS_01_STEP_4(item arrowhead, bot_name badguy)
+{
+	fv_solo_mis_01_step_4	[You say they have ambushed the convoy on the bridge ? I'm afraid anyone could use this obvious tactics.\n{break}
+							But the other things you found could lead us to the culprit : the burnt traces in the wood of the bridge let me
+							guess that the attackers were magic users.\n
+							This $arrowhead$ is badly damaged, but if you look well, you can notice its shape is not fyros.\n
+							And the last thing : they entered the canyon... All of this can lead nearly surely to a conclusion :
+							the attackers are member of the <scorcher> tribe, and this looks particularly like the technique of a particular
+							small group of rogues led by $badguy$. Unfortunately, I can't tell you more as I wasn't confronted often to them...
+							Except the times I had one in my aimer...\n
+							The only thing I can remember is a woman that was captured by them some years ago, she might be able to guide you back to their
+							hideout. What was her name ? Yes ! Deuxius. But I can't remember her first name, you'll have to pursue by yourself.]
+}
+
+FV_SOLO_MIS_01_OBJ_3(bot b)
+{
+	fv_solo_mis_01_obj_3	[Find the woman named Deuxius that can guide you to the <scorchers>.]
+}
+
+FV_SOLO_MIS_01_TALKMENU_3()
+{
+	fv_solo_mis_01_auto_title_3	[Ask about <scorchers>]
+}
+
+FV_SOLO_MIS_01_NOT_THE_ONE()
+{
+	fv_solo_mis_01_auto_6	[No, sorry, I'm not the person you are looking for.]
+}
+
+FV_SOLO_MIS_01_STEP_5(bot current)
+{
+	fv_solo_mis_01_step_5	[Yes, I'm $current$, and I was kidnapped by <scorchers> a few years ago...\n{break}
+							What you ask is not a little service, this would mean returning to a place which I tried all I could to forget...\n
+							But I definitely need money, so if you can pay me 50 000, I'll guide you there.]
+}
+
+FV_SOLO_MIS_01_STEP_6()
+{
+	fv_solo_mis_01_step_6	[Ok, let's go. But please protect me, these madmen are really powerful and I don't want to die...]
+}
+
+FV_SOLO_MIS_01_OBJ_4(string_id groupname, bot escorted)
+{
+	fv_solo_mis_01_obj_4	[Follow $escorted$ to the hideout of the <scorcher> rogues.]
+}
+
+FV_SOLO_MIS_01_STEP_7()
+{
+	fv_solo_mis_01_step_7	[Here we are, they usually hide in that hole.\n{break}
+							Be careful if you go down there, they are well trained, well equipped, and totally crazy.
+							Now if you don't mind, I will go back to the city as I don't want to stay here any longer.\n
+							Don't worry, I can find the path alone.]
+}
+
+FV_SOLO_MIS_01_OBJ_5(bot b)
+{
+	fv_solo_mis_01_obj_5	[Go inside this stinky hole and see what you find.]
+}
+
+FV_SOLO_MIS_01_THUG_1()
+{
+	fv_solo_mis_01_thug_1	[INTRUDERS !]
+}
+
+FV_SOLO_MIS_01_THUG_2()
+{
+	fv_solo_mis_01_thug_2	[ATTACK !]
+}
+
+FV_SOLO_MIS_01_THUG_3()
+{
+	fv_solo_mis_01_thug_3	[BURN !]
+}
+
+FV_SOLO_MIS_01_THUG_4()
+{
+	fv_solo_mis_01_thug_4	[You 'll never go out of my cavern ! Die !]
+}
+
+FV_SOLO_MIS_01_MINERS_BOTSAY()
+{
+	fv_solo_mis_01_miners_botsay		[Please, talk to our leader]
+}
+
+FV_SOLO_MIS_01_MINERS_LEADER_BOTSAY()
+{
+	fv_solo_mis_01_miners_leader_botsay	[There are still thugs alive, please, kill them !]
+}
+
+FV_SOLO_MIS_01_TALKMENU_END()
+{
+	fv_solo_mis_01_talkmenu_end		[I'm here to free you]
+}
+
+FV_SOLO_MIS_01_END(place city)
+{
+	fv_solo_mis_01_end		[Thank Jena, you found us ! These crazy people attacked and kidnapped us two weeks ago then kept us here...\n{break}
+							They probably would have killed us soon as they only wanted the artefacts we were transporting back for study to $city$.
+							Now we can finally finish our trip as we recovered nearly all our cargo.\n
+							And here, take this. I know it's illegal to give ancient artefacts to civilians, but you saved our lives and this object
+							is just a sample of a huge set we found. I'm glad to offer it to you !\n
+							Maybe our path will cross again, let's just hope it won't be in another stinky cavern !]
+}
+
+FV_SOLO_MIS_01_REWARD()
+{
+	fv_solo_mis_01_reward	[Hard shiny armor]
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//FIGHT MISSION
+/*
+FV_FIGHT_MIS_03
+*/
+FV_FIGHT_MIS_03_TITLE (bot giver, race kitin)
+{
+	fv_fight_mis_03_title	[Hunting $kitin.p$ for shells]
+
+}
+
+FV_FIGHT_MIS_03_DESC (bot giver, race kitin)
+{
+	fv_fight_mis_03_desc	[Votre groupe va chasser des $kitin.p$ afin de trouver des carapaces.]
+
+}
+
+FV_FIGHT_MIS_03_STEP_1 (race kitin, creature_model ckhdb2, item mckhdbsho01)
+{
+//Dialogue guardchief
+	fv_fight_mis_03_step_1				[Je cherche des volontaires pour partir sur-le-champ à la chasse aux $kitin.p$. Plus précisément, aux
+							$ckhdb2.p$.{break} L'un de nos artisans a besoin immédiatement de $mckhdbsho01.p$ en bonne quantité,
+							afin de poursuivre ses expérimentations. Il cherche à fabriquer de nouvelles cuirasses, plus légères et
+							plus résistantes. Il lui faut des carapaces prélevées depuis très peu de temps, il a insisté sur ce point.
+							Vous devrez donc vous dépêcher ! Vous êtes intéressés ? Parfait ! Hâtez-vous, je compte sur votre célérité !]
+
+}
+
+FV_FIGHT_MIS_03_GIVE_ITEM_MENU (int item_count)
+{
+//Menu pour donner les carapaces au guard chief
+	fv_fight_mis_03_give_item_menu			[Donner les carapaces.]
+
+}
+
+FV_FIGHT_MIS_03_END ()
+{
+//Dialogue guardchief
+	fv_fight_mis_03_end				[Très bien, je vois que vous n'avez pas perdu de temps ! Grâce à votre aide, peut-être verrons-nous
+							bientôt de nouvelles cuirasses orner la poitrine de nos fiers guerriers ! Prenez ceci en récompense.]
+
+}
+
+//reward 2000 + fame Fyros
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+FV_CRAFT_MIS_01
+*/
+FV_CRAFT_MIS_01_TITLE (bot giver)
+{
+	fv_craft_mis_01_title			[A dangerous spot.]
+
+}
+FV_CRAFT_MIS_01_DESC (bot giver)
+{
+	fv_craft_mis_01_desc			[Forage some oil for the craftsman.]
+
+}
+FV_CRAFT_MIS_01_STEP_1 (item rm1, bot target)
+{
+	fv_craft_mis_01_step_1			[I need a special material and unfortunatly, because of my business, I can't leave the city.{break}
+									To finish my current work I need some $rm1$.\n
+									It's a pretty rare material\n
+									I found a spot where it's more present than elswhere and, above all, with a good quality.\n
+									But I must warn you!\n
+									Foraging in this place could be dangerous\n
+									The last person I sent in this spot is...dead!\n
+									The guards of the city have found his dead body few hours ago.\n
+									I don't want you to have the same issue, so I will ask you to find informations about the cause of its death.\n
+									Find $target$, he is a guard of the south gate of the city.\n
+									he is the one who find the body.]
+
+}
+FV_CRAFT_MIS_01_STEP_2 ()
+{
+	fv_craft_mis_01_step_2			[Oh yes I see what you're talking about.\n
+									Yes indeed, I have found his body not so far of the gate.{break}
+									I can tell you without a doubt that this poor man was escaping something when he have been killed.\n
+									He has a lethal injurie on the back and he sprained one's ankle.\n
+									I have already saw a lot of injuries like this one.\n
+									And I'm sure that it's an injury caused by a kitin!\n
+									Believe me, this man have been killed by a kitin.]
+
+}
+FV_CRAFT_MIS_01_STEP_3 (item rm1)
+{
+	fv_craft_mis_01_step_3			[A kitin!\n
+									You will need to be very prudent.{break}
+									But I will deserve you a reward in consequence if you bring me some oil.\n
+									Listen, I'm going to tell you the localization of the spot:\n
+									First, take the the south gate of the city.\n
+									Once you are outside find a dry irrigation canal.\n
+									Follow this canal up to a junction.\n
+									At the junction follow the the west canal, it hugs the city.\n
+									You will find another junction, it's at the center of this junction that you will find some $rm1$.\n
+									But beware of the kitin who seems to wander in the aera.\n]
+
+}
+FV_CRAFT_MIS_01_END ()
+{
+	fv_craft_mis_01_end			[I'm happy to see you alive!\n
+								Thanks for the oil.\n
+								Here's your reward.]
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//FIGHT MISSION
+/*
+FV_FIGHT_MIS_04
+*/
+FV_FIGHT_MIS_04_TITLE (bot giver, race frahar)
+{
+	fv_fight_mis_04_title	[La menace des $frahar.p$]
+
+}
+
+FV_FIGHT_MIS_04_DESC (bot giver, race frahar)
+{
+	fv_fight_mis_04_desc	[Vous allez mettre fin aux exactions d'un groupe de $frahar.p$.]
+
+}
+
+FV_FIGHT_MIS_04_STEP_1 (race frahar, place region_frahartowers, place region_imperialdunes, creature_model cdcdc1)
+{
+//Dialogue guardchief
+	fv_fight_mis_04_step_1				[Je viens de recevoir un message d'un membre de la tribu des chasseurs de $frahar$. Un groupe conséquent
+							de ces créatures a quitté la région des $region_frahartowers$ et s'est déplacé vers l'est,
+							attaquant les voyageurs isolés.{break}
+							Il semblerait que le gros de la meute se trouve maintenant près de la frontière ouest des $region_imperialdunes$.
+							Je ne tiens pas à ce qu'ils s'approchent de la ville et sèment le désordre, ou pire. J'ai donc décidé d'envoyer
+							un groupe solide pour me débarrasser d'eux... Vous êtes partants ? Trouvez des $cdcdc1.p$,
+							et tuez-en un bon nombre, ça devrait décourager la meute, et ils repartiront vers l'ouest.
+							En route, et bonne chance, revenez victorieux !]
+
+}
+
+FV_FIGHT_MIS_04_TALKMENU (bot giver, race frahar)
+{
+//Menu pour parler au guard chief
+	fv_fight_mis_04_talkmenu			[Un bon nombre de $frahar.p$ sont morts.]
+
+}
+
+FV_FIGHT_MIS_04_END ()
+{
+//Dialogue guardchief
+	fv_fight_mis_04_end				[Eh bien, je doute qu'ils reviennent de sitôt. Vous avez fait du bon travail. Voici votre récompense.]
+
+}
+
+//reward 3000 + fame Fyros
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+FV_CRAFT_MIS_02
+*/
+FV_CRAFT_MIS_02_TITLE (bot giver)
+{
+	fv_craft_mis_02_title			[foraging the cannals.]
+
+}
+FV_CRAFT_MIS_02_DESC (bot giver)
+{
+	fv_craft_mis_02_desc			[Find materials for the craftsman.]
+
+}
+FV_CRAFT_MIS_02_STEP_1 (item rm1, item rm2, item rm3, item rm4)
+{
+	fv_craft_mis_02_step_1			[As you saw, our teritory is grooved by dry irrigation canals.{break}
+									When the water was present in these canals a lot af raw material were carried by the current.\n
+									Nowadays there is no longer water and canals are dry, but there is still some maretials.\n
+									I need some of them.\n
+									I need some $rm1$, some $rm2$, some $rm3$ and some $rm4$.\n
+									Follow the cannals and try to find the most propitious spot for the deposits of materials.\n
+									You will find what I need only in these spots.]
+
+}
+FV_CRAFT_MIS_02_END (player p)
+{
+	fv_craft_mis_02_end				[You are a great forager, thanks a lot $p$.\n
+									Take this reward for your good job.\n]
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//reward 3500 + fame fyros
+/*
+FV_CRAFT_MIS_03
+*/
+FV_CRAFT_MIS_03_TITLE (bot giver, item mace)
+{
+	fv_craft_mis_03_title			[New $mace.p$ for the rookie guards.]
+}
+
+FV_CRAFT_MIS_03_DESC (bot giver, int qt)
+{
+	fv_craft_mis_03_desc			[You have one day to craft and deliver $qt$ new maces to the rookie guards that just enlisted.]
+}
+
+FV_CRAFT_MIS_03_STEP_1 (bot guardchief, item mace, int qt, int ql, player p)
+{
+	fv_craft_mis_03_step_1			[Ah, $p$. I've heard your crafting skill improved, so I have some work for you.{break}\n\n
+									$guardchief$ just ordered $qt$ new training $mace.p$ for the rookies. They must be of quality $ql$ at least, and
+									you have one day to deliver them. I'll pay you well if you do that for me, I'm overflowed by work and can't match
+									the delays alone...]
+}
+
+FV_CRAFT_MIS_03_OBJ_1 ()
+{
+	fv_craft_mis_03_obj_1			[Now you have the maces, give one to each of the training rookies.]
+}
+
+FV_CRAFT_MIS_03_ROOKIE_1 ()
+{
+	fv_craft_mis_03_rookie_1			[Thank you.]
+}
+
+FV_CRAFT_MIS_03_ROOKIE_2 ()
+{
+	fv_craft_mis_03_rookie_2			[Yes ! A new toy !.]
+}
+
+FV_CRAFT_MIS_03_ROOKIE_3 ()
+{
+	fv_craft_mis_03_rookie_3			[This one is better than the former I had.]
+}
+
+FV_CRAFT_MIS_03_ROOKIE_4 ()
+{
+	fv_craft_mis_03_rookie_4			[Thank you. Sorry, I must return to the exercice.]
+}
+
+FV_CRAFT_MIS_03_ROOKIE_5 ()
+{
+	//running
+	fv_craft_mis_03_rookie_5			[hfff...hfff...Thank...you...tired...running...hfff]
+}
+
+FV_CRAFT_MIS_03_END ()
+{
+	fv_craft_mis_03_end				[Good, you did it in time. Here's the refund for raw materials and a bonus for your work.\n
+									Now please excuse me but I must return to my other orders.]
+}
+
+//botsay pour les rookies et le trainer
+FV_CRAFT_MIS_03_SIR_YES_SIR ()
+{
+	fv_craft_mis_03_sir_yes_sir		[SIR ! YES ! SIR !]
+}
+
+FV_CRAFT_MIS_03_TRAINERTAUNT_1 ()
+{
+	fv_craft_mis_03_trainertaunt_1		[You're just a swarm of crawling maggots !]
+}
+
+FV_CRAFT_MIS_03_TRAINERTAUNT_2 ()
+{
+	fv_craft_mis_03_trainertaunt_2		[My grandmother runs faster than you all ! You should be ashamed !]
+}
+
+FV_CRAFT_MIS_03_TRAINERTAUNT_3 ()
+{
+	fv_craft_mis_03_trainertaunt_3		[You run like a pack of paralyzed bodocs !]
+}
+
+FV_CRAFT_MIS_03_TRAINERTAUNT_4 ()
+{
+	fv_craft_mis_03_trainertaunt_4		[One ! Two ! One ! Two !]
+}
+
+FV_CRAFT_MIS_03_TRAINERTAUNT_5 ()
+{
+	fv_craft_mis_03_trainertaunt_5		[The Fyros guards are here to train,\n
+										The ennemy will soon be slain !\n
+										My Fyros axe I keep so close,\n
+										I will smash it on your nose !]
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+FV_CRAFT_MIS_04
+*/
+FV_CRAFT_MIS_04_TITLE (bot giver)
+{
+	fv_craft_mis_04_title			[Bones and blades.]
+
+}
+FV_CRAFT_MIS_04_DESC (bot giver)
+{
+	fv_craft_mis_04_desc			[Find some bones for the craftman.]
+
+}
+FV_CRAFT_MIS_04_STEP_1 (item rm1, item rm2, item rm3, item rm4)
+{
+	fv_craft_mis_04_step_1			[I'm actualy working on a prototype of blade sor swords.{break}
+									I notice that heating up some animal's bones to a precise temperature is procuring some really interesting propeties to them.\n
+									Especially on their hardness.\n
+									Now that I know the right temperature I'd like to compare the results with differents kind of bones.\n
+									Can you help me to find some?\n
+									I need a $rm1$, a $rm2$, a $rm3$ and a $rm4$.\n
+									If you could bring it back to me I will be grateful to you.]
+
+}
+
+FV_CRAFT_MIS_04_END ()
+{
+	fv_craft_mis_04_end				[Thanks, I will be able to continue the making of my prototype.\n
+									Take this reward my young friend.]
+}

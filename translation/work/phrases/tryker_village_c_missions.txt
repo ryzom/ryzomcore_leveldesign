@@ -1,0 +1,285 @@
+﻿/*
+TC_CRAFT_MIS_01
+
+*/
+TC_CRAFT_MIS_01_TITLE (bot giver)
+{
+		tc_craft_mis_01_title		[Foraging in a secret place.]
+
+}
+TC_CRAFT_MIS_01_DESC (bot giver)
+{
+		tc_craft_mis_01_desc		[Find the ressouces that the craftman wants.]
+}
+
+TC_CRAFT_MIS_01_STEP_1 (bot target, item rm1, item rm2, item rm3)
+{
+		tc_craft_mis_01_step_1 		[Until this day I used to work with $target$, an excellent forager.\n
+						Unfortunatly he just decided to stop his activities.{break}
+						I'm working on an important order and I need some special raw materials.\n
+						The problem is that I really don't know where to find them, habitually $target$ bring them to me.\n
+						He is in the village, could you ask him where to find these ressources?\n
+						I need some $rm1$, some $rm2$ and some $rm3$.\n]
+}
+
+TC_CRAFT_MIS_01_STEP_2 (bot giver)
+{
+		tc_craft_mis_01_step_2 		[Oh, $giver$ need some materials?\n
+						And he wants to know where to find them?{break}
+						I never tell anyone the location of this place, it was important for my businees to keep it secret.\n
+						But now I'm no more a forager and I think that I can tell you more about this place.\n
+						Listen carefuly:\n
+						Exit the village by the south door, the one who leads to a little isle.\n
+						Once you're on the isle you will see another isle in the south-west direction.\n
+						It'a a bigger isle, you will recognize it, there's a lake in its center.\n
+						The materials you're looking for are round the lake.\n
+						If you decide to exploit this vein, don't forget to give me some royalties my friend!]
+}
+
+TC_CRAFT_MIS_01_END (bot previous)
+{
+		tc_craft_mis_01_end 		[So, $previous$ finaly told you about the location of his secret place?\n
+						Nice, you bring me all the materials I need.\n
+						Take this reward, you are a great forager.]
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+TC_FIGHT_MIS_01
+
+*/
+TC_FIGHT_MIS_01_TITLE (bot giver)
+{
+		tc_fight_mis_01_title		[Learning about creatures.]
+
+}
+TC_FIGHT_MIS_01_DESC (bot giver)
+{
+		tc_fight_mis_01_desc		[Learn about the creatures of the region.]
+}
+
+TC_FIGHT_MIS_01_STEP_1 (race ragus, race torbak)
+{
+		tc_fight_mis_01_step_1 		[As you have seen, traveling on Atys could be dangerous,\n
+									you may encounter agressive creatures.{break}
+									Somes are placid herbivores and are not dangerous if you don't attack first.\n
+									Somes are agressives and will attack you if you are too close.
+									Knowledge about your opponent is the best way to win a fight.\n
+									I can teach you, if you want, how to recognize the dangerous creatures of the region and their fightning tactics.\n
+									Let's begin with $ragus.p$!\n
+									These carnivores sometines use a surprising fightning method.\n
+									They stand up on their hind legs and hit the head of their opponent with their forelegs!\n
+									$torbak.p$ are surprising their opponent with their powerful horns, they use it like a piercing weapon!\n
+									Now you have to recognize these creatures, find them and observe them...but keep your distances.]
+}
+
+TC_FIGHT_MIS_01_STEP_2 (race cute)
+{
+		tc_fight_mis_01_step_2 		[Have you already heard about $cute.p$?{break}
+									These little creatures are formidable opponents!\n
+									They are moving in group and are really quick and vicious.\n
+									Moreover their primal inteligence allow them to learn a basic form of magic!\n
+									They are able, sometimes, to cast some spells!\n
+									go and try to observe them.]
+}
+
+TC_FIGHT_MIS_01_STEP_3 (race kitin, race kipee)
+{
+		tc_fight_mis_01_step_3 		[Very nice, now it's time to learn about our worst enemy...the $kitin$.{break}
+									There is a lot of different $kitin.p$\n
+									In our region the most known is the $kipee$.\n
+									These creature is easy to recognize, it looks like a gigantic crab.
+									The real danger when you are fightning against a $kipee$ is the powerful head's shock that this creature gives.\n
+									These shocks are so strong that you could be stunned for seconds!\n
+									Find a $kipee$ but this time you will have to kill it!]
+}
+
+TC_FIGHT_MIS_01_END (race kitin)
+{
+		tc_fight_mis_01_end 		[Congratulation, you are now able to recognize the most dangerous creatures of the region.{break}
+									You also learnt about their figtning tactics.\n
+									Take this reward for the dead $kitin$.]
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//KNOWLEDGE MISSION
+/*
+TC_KNOWLEDGE_MIS_01
+*/
+TC_KNOWLEDGE_MIS_01_TITLE (bot giver)
+{
+	tc_knowledge_mis_01_title		[A camp of thirsty storytellers]
+
+}
+
+TC_KNOWLEDGE_MIS_01_DESC (bot giver)
+{
+	tc_knowledge_mis_01_desc		[Une bande de chasseurs va vous raconter une histoire datant du retrait des homins dans les primes racines.]
+
+}
+
+TC_KNOWLEDGE_MIS_01_STEP_1 (player p, bot_name target, bot barman)
+{
+//sage
+	tc_knowledge_mis_01_step_1		[Tu es un amateur d'histoires anciennes, $p$ ? Dans ce cas, tu devrais bien t'entendre avec $target$ et ses 
+						compagnons.{break} Il va souvent chasser avec ses amis, et le soir,  la veille, rien ne leur plait davantage que 
+						de partager une vieille histoire agrmente d'une boisson forte. Si tu parviens  trouver leur campement 
+						 la nuit tombe, n'oublie pas d'apporter avec toi une bonne bouteille... $barman$ devrait pouvoir te 
+						fournir cela.]
+
+}
+
+TC_KNOWLEDGE_MIS_01_STEP_2 (bot_name target)
+{
+//barman
+	tc_knowledge_mis_01_step_2		[Alors, tu veux rencontrer $target$ et ses compagnons de chasse ? Dans ce cas, il te faut une bouteille de ma spcialit ! 
+						Ils en raffolent, et te feront bon accueil. Je t'en vends une pour une somme fort modique !]
+
+}
+
+TC_KNOWLEDGE_MIS_01_GIVE_MONEY_MENU(int amount)
+{
+//donner monnaie x au barman pour acheter la bouteille
+	tc_knowledge_mis_01_give_money_menu		[Voici le prix demand.]
+
+}
+
+TC_KNOWLEDGE_MIS_01_STEP_3 (player p)
+{
+//barman
+	tc_knowledge_mis_01_step_3		[Merci bien, $p$ ! Tu salueras les chasseurs de ma part, quand tu les auras trouv !]
+
+}
+
+TC_KNOWLEDGE_MIS_01_TALKMENU_1(bot target, bot barman)
+{
+//parler au chasseur tryker
+	tc_knowledge_mis_01_talkmenu_1		[Salut  tous ! Vous avez le bonsoir de $barman$.]
+
+}
+
+TC_KNOWLEDGE_MIS_01_STEP_4 (player p)
+{
+//chasseur tryker
+	tc_knowledge_mis_01_step_4		[Tiens donc ! Eh bien, $p$, si tu viens de sa part, je prsume que tu n'es pas venu les mains vides... en tout cas je 
+						l'espre !{break} Nous avons fini notre dernire bouteille la nuit dernire, et nos gosiers sont desschs 
+						par une dure journe de chasse !]
+
+}
+
+TC_KNOWLEDGE_MIS_01_GIVE_ITEM_MENU_1(int item_count)
+{
+//Dialogue pour donner la bouteille au chasseur tryker
+	tc_knowledge_mis_01_give_item_menu_1		[J'ai ce qu'il vous faut.]
+
+}
+
+TC_KNOWLEDGE_MIS_01_STEP_5 (player p, race kitin, bot target)
+{
+//chasseur tryker
+	tc_knowledge_mis_01_step_5		[Magnifique ! Superbe ! Joins-toi  nous, $p$ ! Aimes-tu les histoires ? Nous voir tous runis ici me 
+						rappelle une histoire  propos d'une autre runion, qui s'est droule dans les profondeurs des 
+						Primes racines il y a quelques dcades...{break}\n
+						During the homin period of refuge in the prime roots, following the great swarming of $kitin.p$, in their 
+						mutual suffering the four civilizations came together despite the Karavan predicating that homins 
+						shouldnt mix. They were no doubt worried that the survivors of the swarming would fall into discord, 
+						kill each other outright and deprive Jena of her offerings.\n
+						Mais les choses ne se passrent pas ainsi.\n
+						Tiens, $p$, passe donc la bouteille  $target$, afin qu'elle prenne une bonne lampe et raconte pour nous 
+						la suite de cette histoire !]
+
+}
+
+TC_KNOWLEDGE_MIS_01_GIVE_ITEM_MENU_2(int item_count, bot target)
+{
+//Dialogue pour donner la bouteille  la chasseresse tryker
+	tc_knowledge_mis_01_give_item_menu_2		[Donner la bouteille  $target$]
+
+}
+
+TC_KNOWLEDGE_MIS_01_STEP_6 (bot target, player p)
+{
+//chasseresse tryker
+	tc_knowledge_mis_01_step_6		[Merci, $p$ ! Haaa, excellente cuve !\n
+						Nevertheless, for perhaps the first time in history, homins came together to make life as best as possible 
+						for one another.{break} We Trykers dealt with the water supply, making sure it was fresh and plentiful, 
+						the Fyros set up sentry posts and dug out chambers in the caverns, the Matis made some real comfy 
+						furniture and the Zoras magnetized places with their music to ward off bad air. All in all people made 
+						every effort to keep their grievances under their bonnets. That is, except on one particular occasion\n
+						$target$, prends donc la parole, on ne t'a pas beaucoup entendu aujourd'hui ! $p$ va te donner  boire pour 
+						te drider !]
+
+}
+
+TC_KNOWLEDGE_MIS_01_STEP_7 (bot target, player p)
+{
+//chasseur fyros
+	tc_knowledge_mis_01_step_7		[Je ne suis gure bavard, mais comme nous avons un invit...{break}\n
+						In order to take measures to avoid it happening again, there was a great debate among the leaders over the 
+						homin disaster to understand why they had been punished so. That was asking for trouble. It was the Fyros 
+						who started the ball rolling, as per usual, saying that they were skeptical of the Karavan and even of Jena. 
+						Because if Jena was all she was made out to be how could she have let homins be massacred in their hundreds 
+						of thousands?\n
+						Demande  $target$ la suite de l'histoire, $p$. Il est bien meilleur conteur que moi. Et il a sans doute 
+						trs soif...]
+
+}
+
+TC_KNOWLEDGE_MIS_01_STEP_8 (bot previous, bot target)
+{
+//chasseur tryker 2
+	tc_knowledge_mis_01_step_8		[$previous$ est plus  l'aise face  son gibier que face  un auditoire... Je vais poursuivre le rcit.{break}\n
+						The Matis royal court was flabbergasted and claimed that it was talk like that that had made Jena less 
+						attentive to homin suffering, and that the Fyros ought to be more coy in airing their infidelity. 
+						After all it was they who had triggered off the whole invasion in the first place! Besides, were not the 
+						Karavan at present clearing the lands to enable homins to resurface? Then it was the turn of the Zora 
+						leader, Hoi-Cho, to put in his two seed worth\n
+						$target$,  toi l'honneur ! Je sais que tu aimes cette partie de l'histoire. Et les bouteilles au contenu 
+						gnreux !]
+
+}
+
+TC_KNOWLEDGE_MIS_01_STEP_9 (race kitin, bot target)
+{
+//chasseur tryker
+	tc_knowledge_mis_01_step_9		[Hoi-Cho said that the Karavan were unable to react as they didnt have the spiritual aura of the Kamis, 
+						and if Jenas high spiritual guardians, meaning the Kamis, did not act immediately it was because of the 
+						weak communion between them and the homin people in the wild lands at large, meaning everyone except 
+						themselves.{break} Things were getting pretty rowdy when suddenly, above the uproar there came the sound of a 
+						great gong, and upon a pedestal there stood, as serene as the summer sun and sage as the stars, 
+						the Tryker leader who called for silence and cupped his ear towards the main door. Everyone stopped their 
+						cackle and listened for fear of the appalling thumping of $kitin$ feet.\n
+						Que se passa-t-il ensuite ? $target$, dis-le  notre invit !]
+
+}
+
+TC_KNOWLEDGE_MIS_01_STEP_10 (race kitin, bot target)
+{
+//chasseur tryker 2
+	tc_knowledge_mis_01_step_10		[But there was no $kitin$ feet, just the sound of windy silence.{break} Then the Tryker intoned these words which 
+						have since remained engraved in Tryker memory : In silence shall the notes of reason resound loudest! 
+						Then as if by magic there came the shuffling of feet and four kids, a Tryker, a Fyros, a Matis and a Zora, 
+						who, panicked by the sudden silence, burst into the debate chamber in one block. This was followed by 
+						hearty laughter all round to what the Matis king raised his cup and called a toast : Pray, let us labor 
+						for our children!\n
+						Nous aussi, portons un toast ! Aux histoires d'hier, qui ont forg les histoires d'aujourd'hui ! Laissons 
+						$target$ conclure le rcit.]
+
+}
+
+TC_KNOWLEDGE_MIS_01_END (player p)
+{
+//chasseur tryker
+	tc_knowledge_mis_01_end			[Alas the short silence was not enough to seep into all homin hearts for shortly after, they were able to 
+						quit the Prime Roots under Karavan assurance and protection to rebuild their villages and once again form 
+						their own territories.{break}\n
+						Il est maintenant temps de nous reposer. Nous sommes heureux d'avoir partag cette histoire avec toi, $p$. 
+						Que la bonne fortune t'accompagne, o que tu ailles. Et n'oublie pas de toujours te munir d'une bonne 
+						bouteille !]
+
+}
+
+//reward 1 action knowledge + fame Tryker
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

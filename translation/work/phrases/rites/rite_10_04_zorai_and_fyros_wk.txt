@@ -1,0 +1,105 @@
+﻿R_10_04_MIS_TITLE (bot giver, faction tutors)
+{
+	r_10_04_mis_title	[Echange diplomatique avec la tribu des $tutors.member$]
+}
+
+R_10_04_MIS_DESC (bot giver, place lieu_jen_lai)
+{
+	r_10_04_mis_desc	[Effectuer un échange diplomatique pour le compte du sage de $lieu_jen_lai$]
+}
+
+R_10_04_P_LDF_INTRO (bot tribe_chief, faction tutors)
+{
+	r_10_04_p_ldf_intro	[Je vous salue. J'aurais bien besoin de vos services : pourriez-vous transmettre ce message à $tribe_chief$, chef de la tribu des $tutors.member$, afin de consolider nos relations diplomatiques ? En échange, je vous ferai progresser dans le domaine de la magie.]
+}
+
+R_10_04_P_OVL_CHOIX (bot tribe_chief)
+{
+	r_10_04_p_ovl_choix	[Allez parler à l'intendant ou directement à $tribe_chief$]
+}
+
+R_10_04_P_BC_CONSEIL (faction tutors)
+{
+	r_10_04_p_bc_conseil	[Cet Homin n'est pas réputé pour avoir bon caractère. Notre intendant le connait bien. Je vous recomande donc de lui demander conseil avant d'aller chez les $tutors.member$]
+}
+
+R_10_04_P_T2_REQUETE_INTENDANT (bot givervar_help, bot givervar)
+{
+	r_10_04_p_t2_requete_intendant	[Bonjour, $givervar$ m'envoie...]
+}
+
+R_10_04_P_T2_CONSEIL2 (faction tutors)
+{
+	r_10_04_p_t2_conseil2	[Je sais, il vous a chargé de rencontrer le chef de la tribu des $tutors.member$. En effet, ce n'est pas un Homin facile.{break}Quoiqu'il arrive, lorsque vous le rencontrerez, restez courtois, mais surtout, restez fier, ne le laissez pas vous traiter par le mépris. Soyez respectueux et respecté.]
+}
+
+R_10_04_P_T2_CHIEF_1 (bot tribe_chief, faction tutors)
+{
+	r_10_04_p_t2_chief_1	[Salutations, chef et gardien des $tutors.member$]
+}
+
+R_10_04_P_DC_DIPLO ()
+{
+	r_10_04_p_dc_diplo	[Quel être misérable se permet donc de m'interpeller ainsi ?]
+}
+
+R_10_04_P_DA_AGRESSIVE ()
+{
+	r_10_04_p_da_agressive	[Je ne pense pas être plus misérable que les voleurs de mektoubs que vous prétendez commander.]
+}
+
+R_10_04_P_DA_CORRECT ()
+{
+	r_10_04_p_da_correct	[Sauf votre respect, je ne pense pas mériter votre mépris, je viens en ami, et non en ennemi.]
+}
+
+R_10_04_P_DA_EXCUSE (faction faction, faction tutors)
+{
+	r_10_04_p_da_excuse	[Oh chef respecté des $tutors.member$, veuillez pardonner ma présence importune et accepter ce message des $faction.member$]
+}
+
+R_10_04_P_DA_DEPART ()
+{
+	r_10_04_p_da_depart	[J'ai dû faire erreur, je n'ai plus rien à faire ici]
+}
+
+R_10_04_P_BC_DEGAGE_MECHANT ()
+{
+	r_10_04_p_bc_degage_mechant	[Disparais immédiatement de ma vue !]
+}
+
+R_10_04_P_PDC_QUEL_SUJET ()
+{
+	r_10_04_p_pdc_quel_sujet	[Et que me vaut donc cette visite... ami ?]
+}
+
+R_10_04_P_DA_RAISON_VENUE (faction faction)
+{
+	r_10_04_p_da_raison_venue	[Je vous prie d'accépter ce message des $faction.member$.]
+}
+
+R_10_04_P_BC_MISSION_RETOUR (bot givervar)
+{
+	r_10_04_p_bc_mission_retour	[Bien, merci, veuillez rapporter cette réponse à $givervar$]
+}
+
+R_10_04_P_SMG_SARCASME ()
+{
+	r_10_04_p_smg_sarcasme	[Il vous regarde d'un air sarcastique]
+}
+
+R_10_04_P_BC_DEGAGE_CARPET ()
+{
+	r_10_04_p_bc_degage_carpet	[Merci mais je n'ai pas besoin des services d'un esclave, va donc ramper ailleurs]
+}
+
+R_10_04_P_T2_MISSION_OK (bot givervar)
+{
+	r_10_04_p_t2_mission_ok	[Me voici de retour, ma mission est acomplie.]
+}
+
+R_10_04_P_BC_MISSION_REUSSIE ()
+{
+	r_10_04_p_bc_mission_reussie	[Merci pour cette précieuse aide. Et voici la récompense que je vous avais promise.]
+}
+

@@ -1,0 +1,50 @@
+﻿R_02_05_MIS_TITLE (bot giver)
+{
+	r_02_05_mis_title	[Livraison d'armes pour la garnison]
+}
+
+R_02_05_MIS_DESC (bot giver, place crystabell)
+{
+	r_02_05_mis_desc	[Vous allez aider une négociante de $crystabell$ à répondre à une commande urgente, suite à la perte d'une cargaison d'armes.]
+}
+
+R_02_05_P_LDF_INTENDANT_INTRO (bot blacksmith, place crystabell)
+{
+	r_02_05_p_ldf_intendant_intro	[Je vous salue, $self$. Dame $blacksmith$, qui négocie des marchandises à $crystabell$, recherche des artisans pour honorer une commande importante. C'est une armurière de renom, qui a fait fortune dans le commerce de dagues. Si le coeur vous en dit et si vous avez les compétences nécessaires, elle saura vous récompenser.]
+}
+
+R_02_05_P_DC_T2_BLACKSMITH (bot blacksmith)
+{
+	r_02_05_p_dc_t2_blacksmith	[Bonjour, vous cherchez l'aide d'un artisan ?]
+}
+
+R_02_05_P_DC_BLACKSMITH_START (place avendale, race yber)
+{
+	r_02_05_p_dc_blacksmith_start	[Salut à toi, homin ! Je cherche un armurier pour m'assister dans la fabrication d'un stock de dagues, que je dois livrer rapidement. Ce n'est pas dans mes habitudes de travailler dans l'urgence : mes armes sont célèbres pour leur légèreté, et je préfère prendre mon temps pour obtenir la meilleure qualité possible. Mais les voies du destin sont tortueuses, et je dois faire face à un problème inattendu.{break} En effet, la garnison d'$avendale$ m'a commandé, le mois dernier, un grand nombre de dagues de qualité supérieure. Hélas, le convoi qui devait l'acheminer a été attaqué par des kitins sur la route, et toutes les armes sont maintenant au fond d'un lac. Que Jena maudisse ces infectes créatures ! {break} J'ai à présent besoin d'un artisan talentueux pour me fabriquer une dizaine de dagues de bonne qualité, afin de compléter la commande. En paiement, je t'enseignerai ma technique pour réaliser une dague légère comme une plume d'$yber$. Acceptes-tu cette tâche ?]
+}
+
+R_02_05_DA_YES ()
+{
+	r_02_05_da_yes	[Oui, je vais vous aider]
+}
+
+R_02_05_DA_NO ()
+{
+	r_02_05_da_no	[Non, ça ne m'intéresse pas]
+}
+
+R_02_05_P_BC_BLACKSMITH_NO ()
+{
+	r_02_05_p_bc_blacksmith_no	[Dans ce cas, au revoir.]
+}
+
+R_02_05_P_BC_BLACKSMITH_RITE ()
+{
+	r_02_05_p_bc_blacksmith_rite	[Très bien, j'attends ta livraison.]
+}
+
+R_02_05_P_BC_ENDRITE ()
+{
+	r_02_05_p_bc_endrite	[Merci pour ton aide, $self$ ! Grâce à toi, la garnison aura son matériel dans les temps. Je t'ai préparé les plans de réalisation de ma fameuse dague. Prends également ce cube d'ambre. Des informations précieuses sur les dagues fabriquées par les homins sont conservées à l'intérieur. Que les vents de la fortune t'accompagnent, $self$ !]
+}
+

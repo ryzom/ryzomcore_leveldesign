@@ -1,0 +1,35 @@
+﻿R_06_06_MIS_TITLE (bot giver)
+{
+	r_06_06_mis_title	[Le Récolteur des abysses]
+}
+
+R_06_06_MIS_DESC (bot giver, creature_model kiban_lector, place lieu_terre)
+{
+	r_06_06_mis_desc	[Trouver et tuer $kiban_lector.ia$ $kiban_lector$ dans les profondeurs de $lieu_terre$]
+}
+
+R_06_06_P_LDC_INTRO (race crea_kiban, creature_model kiban_lector, place lieu_terre, race race_kitins)
+{
+	r_06_06_p_ldc_intro	[Salut à toi, $self$. Souhaites-tu prouver ta valeur ? Dans ce cas prépare tes armes, car tu vas combattre nos plus féroces ennemis... $race_kitins.pda$ $race_kitins.p$ ! Nous voulons porter un coup dur à leur capacité d'extraction d'extraction de ressources. Les récolteurs $race_kitins$ sont $crea_kiban.pda$ $crea_kiban.p$, et c'est l'un d'entre eux que tu vas affronter. Mais pas n'importe lequel... il te faut un adversaire digne de toi.{break}Va dans les Primes Racines, dans l'obscurité des $lieu_terre$, et trouve $kiban_lector.ia$ $kiban_lector$. Tue-le, et rapporte-moi ses mandibules pour me prouver que le travail a bien été fait.{break}Si je puis me permettre de te donner un conseil : n'y va pas seul ! $kiban_lector.pda$ $kiban_lector.p$ sont non seulement des foreurs exceptionnels, mais aussi de formidables combattants. {break}Pars, et reviens lorsque tu auras gagné ton trophée ! Je te récompenserai en t'enseignant à tirer le meilleur parti de tes armes... si elles sont suffisamment solides.]
+}
+
+R_06_06_P_OVL_DEBRIEF (bot givervar, creature_model kiban_lector)
+{
+	r_06_06_p_ovl_debrief	[Rapportez les mandibules du $kiban_lector$ à $givervar$]
+}
+
+R_06_06_P_T2_DEBRIEF (bot givervar)
+{
+	r_06_06_p_t2_debrief	[Me voici de retour avec le trophée !]
+}
+
+R_06_06_P_OVL_DONNER_TROPHEE_1 (item i1, int qt1, int qual1, bot givervar)
+{
+	r_06_06_p_ovl_donner_trophee_1	[Donner les mandibules à $givervar$]
+}
+
+R_06_06_P_BC_DEBRIEF (race crea_kiban)
+{
+	r_06_06_p_bc_debrief	[Bravo, $self$, je ne doutais pas que tu réussirais. Beau travail ! Reçois mon enseignement, et apprends comment porter de puissants coups à tes adversaires. Prends aussi ce cube d'ambre, et tu en sauras autant que moi sur $crea_kiban.pda$ $crea_kiban.p$.]
+}
+

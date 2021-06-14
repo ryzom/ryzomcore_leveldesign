@@ -1,0 +1,55 @@
+﻿R_08_16_MIS_TITLE (bot giver)
+{
+	r_08_16_mis_title	[Le châtiment exemplaire]
+}
+
+R_08_16_MIS_DESC (bot giver, bot givervar, place majesticgarden, faction sacredsap)
+{
+	r_08_16_mis_desc	[Le $givervar$ de $majesticgarden$ veut lancer des représailles contre la tribu des $sacredsap.member$ afin de les soumettre à l'autorité de la Karavan.]
+}
+
+R_08_16_P_LDF_INTRO_1 (place fleetinggarden, faction sacredsap)
+{
+	r_08_16_p_ldf_intro_1	[Homin, le moment est venu de prouver ton allégeance envers Jena et ses disciples. $sacredsap.da$ $sacredsap$, une tribu du $fleetinggarden$, défie notre autorité. Ses chefs de guerre n'hésitent pas à attaquer les prospecteurs qui se déplacent dans la région. C'est intolérable, et nous ne permettrons pas cela ! {break} Tu auras l'honneur d'être notre représentant, et de montrer à ces fanatiques possédés par les Kamis que Jena ne saurait être défiée impunément. En récompense pour ta loyauté, tu recevras une bénédiction qui affermira ton endurance pour les combats à venir. {break}Ton objectif est de tendre une embuscade à l'un des chefs de guerre de la tribu. Pour l'attirer hors de son campement, traque des récolteurs de la $sacredsap$. Ne montre aucune pitié. Cela devrait faire sortir le chef de sa tanière. Quand il se montrera, tue-le,  ainsi que son escorte. Tu dois te montrer impitoyable, sans quoi toute la région finira par tomber aux mains de ces barbares. Ne me déçois pas, homin !]
+}
+
+R_08_16_P_OVL_VISIT_FIRST_PLACE (place place_2)
+{
+	r_08_16_p_ovl_visit_first_place	[Trouver le premier groupe de récolteurs]
+}
+
+R_08_16_P_OVL_ATTACK_FIRST_1 ()
+{
+	r_08_16_p_ovl_attack_first_1	[Eliminer le premier groupe de récolteurs de la tribu.]
+}
+
+R_08_16_P_OVL_VISIT_SECOND_PLACE (place place_4)
+{
+	r_08_16_p_ovl_visit_second_place	[Trouver le second groupe de récolteurs]
+}
+
+R_08_16_P_OVL_ATTACK_SECOND_1 ()
+{
+	r_08_16_p_ovl_attack_second_1	[Eliminer le second groupe de récolteurs de la tribu.]
+}
+
+R_08_16_P_OVL_VISIT_CHIEF_PLACE (place place_5)
+{
+	r_08_16_p_ovl_visit_chief_place	[Trouver le chef de guerre]
+}
+
+R_08_16_P_OVL_ATTACK_CHIEF_1 ()
+{
+	r_08_16_p_ovl_attack_chief_1	[Eliminer le chef de guerre]
+}
+
+R_08_16_M_T2_DEBRIEF_1 (bot giver)
+{
+	r_08_16_m_t2_debrief_1	[Le chef de guerre est mort]
+}
+
+R_08_16_P_BC_DEBRIEF ()
+{
+	r_08_16_p_bc_debrief	[Parfait, homin ! Ces fanatiques savent maintenant à qui ils ont affaire. Tu as fidèlement servi la Karavan, reçois donc cette bénédiction, elle te sera utile dans les longs combats que tu devras mener. Je vais aussi te remettre un précieux cube d'ambre. Il te révélera l'importance de la Karavan au travers d'une histoire.]
+}
+

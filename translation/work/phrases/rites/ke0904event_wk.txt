@@ -1,0 +1,231 @@
+﻿KE0904_FYROS_FORAGE1_100_TITLE (bot giver, place camp_name, int quality)
+{
+	ke0904_fyros_forage1_100_title	[Apporter pour le camp $camp_name$ des matières de qualité $quality$]
+}
+
+KE0904_FYROS_FORAGE1_100_DESC (bot giver)
+{
+	ke0904_fyros_forage1_100_desc	[Apporter des ressources pour le camp afin de les raffiner.]
+}
+
+KE0904_FYROS_TRANSSTART1_TITLE (bot giver)
+{
+	ke0904_fyros_transstart1_title	[La tournée de camps avec son mektoub]
+}
+
+KE0904_FYROS_TRANSSTART1_DESC (bot giver)
+{
+	ke0904_fyros_transstart1_desc	[Apportez un paquet aux campements. (Nécessite un mektoub à proximité !)]
+}
+
+KE0904_FYROS_TRANS1_100_TITLE (bot giver)
+{
+	ke0904_fyros_trans1_100_title	[Un colis pour le camp d'observation.]
+}
+
+KE0904_FYROS_TRANS1_100_DESC (bot giver, place camp_name)
+{
+	ke0904_fyros_trans1_100_desc	[Apportez le colis au camp $camp_name$]
+}
+
+KE0904_FYROS_TRANS1_100_OBJ_WANT_ABANDON (bot npc_phase_1)
+{
+	ke0904_fyros_trans1_100_obj_want_abandon	[(Note : Si vous souhaitez abandonner la mission retournez voir $npc_phase_1$)]
+}
+
+KE0904_FYROS_TRANS1_100_WANT_ABANDON (bot npc_phase_1)
+{
+	ke0904_fyros_trans1_100_want_abandon	[Je ne souhaite plus continuer à transporter les colis.]
+}
+
+KE0904_FYROS_TRANS1_100_OBJ_WANT_ABANDON_2 (bot npc_phase_2)
+{
+	ke0904_fyros_trans1_100_obj_want_abandon_2	[(Note : Si vous souhaitez abandonner la mission retournez voir $npc_phase_2$)]
+}
+
+KE0904_FYROS_TRANS1_100_WANT_ABANDON_2 (bot npc_phase_2)
+{
+	ke0904_fyros_trans1_100_want_abandon_2	[Je ne souhaite plus continuer à transporter les colis.]
+}
+
+KE0904_FYROS_TRANS1_100_WAIT_INSPECT_PACKAGE (place camp_name)
+{
+	ke0904_fyros_trans1_100_wait_inspect_package	[Veuillez patienter.\nLe chef du camp $camp_name$ récupère son colis...]
+}
+
+KE0904_FYROS_TRANS1_100_THANKS_FOR_PACKAGE ()
+{
+	ke0904_fyros_trans1_100_thanks_for_package	[Merci de votre aide, ceci nous permet de combattre efficacement les kitins.]
+}
+
+KE0904_FYROS_TRANS1_100_NEED_MORE_PACKAGE ()
+{
+	ke0904_fyros_trans1_100_need_more_package	[Merci de votre aide. Malheureusement, il n'y as pas assez de matérieux pour nous permettre d'avancer. Si vous pouviez demander aux foreurs de fournir plus de matières premières nous pourrions avancer plus rapidement.]
+}
+
+KE0904_FYROS_TRANS1_100_CAMP_FINISHED ()
+{
+	ke0904_fyros_trans1_100_camp_finished	[Bravo ! Tout est là ! Le camp sera fini dans quelques instants]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_TITLE (bot giver)
+{
+	ke0904_fyros_instructions_phase_1_title	[En savoir plus sur ce qu'il se passe...]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_DESC (bot giver)
+{
+	ke0904_fyros_instructions_phase_1_desc	[Obtenez des informations sur les évènements en cours.]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_AUTO ()
+{
+	ke0904_fyros_instructions_phase_1_auto	[J'aimerai savoir ce qu'il se passe...]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_CHOOSE_QUESTION ()
+{
+	ke0904_fyros_instructions_phase_1_choose_question	[Tu sembles ne pas être au courant de ce qui se met en place ? Puis-je t'aider ?]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_P_WHAT_DOING ()
+{
+	ke0904_fyros_instructions_phase_1_p_what_doing	[Que se passe-t-il ?]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_P_HOW_CAN_HELP ()
+{
+	ke0904_fyros_instructions_phase_1_p_how_can_help	[Comment puis-je aider ?]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_P_WHO_PAY_ME ()
+{
+	ke0904_fyros_instructions_phase_1_p_who_pay_me	[Qui se charge de ma Rémunération ?]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_P_SUPER_PIKE ()
+{
+	ke0904_fyros_instructions_phase_1_p_super_pike	[Qu'est-ce que la récompense du mérite ?]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_P_THANKS_BRIEF ()
+{
+	ke0904_fyros_instructions_phase_1_p_thanks_brief	[Je n'ai plus de questions.]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_P_END_WHAT_DOING ()
+{
+	ke0904_fyros_instructions_phase_1_p_end_what_doing	[Oren Pyr $self.race$ ! Tu n'es pas sans remarquer l'agitation de ces derniers jours ! L'empereur Dexton souhaite affermir notre présence en différents points stratégiques du Désert ! Six nouvelles tours de gardes sont en cours de construction, elles permettront de garder un œil sur ces maudits kitins. Certains rapports de nos éclaireurs semblent indiquer que leur présence s'est intensifiée ces derniers temps. Nous ne devons rien négliger, mais pas d'inquiétudes le désert est entre de bonnes mains.]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_P_END_HOW_CAN_HELP (bot camp_giver)
+{
+	ke0904_fyros_instructions_phase_1_p_end_how_can_help	[Nous avons besoin de bras pour bâtir de nouvelles tours de garde, principalement de vaillants foreurs pour rassembler les matières premières nécessaires. Si tu en fais partie, va voir $camp_giver$, il aura surement du travail pour toi. A moins que tu ne préfères te charger de la livraison des matériaux raffinés, dans ce cas, présente-toi également à lui, mais mène un animal de Bât ou de Monte avec toi, et il te confiera de lourdes charges à transporter sur chacun des sites de construction.]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_P_END_WHO_PAY_ME_NO_CIV (bot reward_giver)
+{
+	ke0904_fyros_instructions_phase_1_p_end_who_pay_me_no_civ	[Ah je vois que tu n'es pas Patriote Fyros, mais la tâche est rude et les homins de bonne volonté sont les bienvenus. L'empereur n'est pas un ingrat, si tu travailles vraiment très dur, $reward_giver$ ne te laissera pas repartir les mains vides.]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_P_END_WHO_PAY_ME_CIV (bot reward_giver)
+{
+	ke0904_fyros_instructions_phase_1_p_end_who_pay_me_civ	[L'empereur à toujours su remercier ses valeureux Patriotes. Va voir $reward_giver$ dès que tu auras fais tes preuves et il te récompensera généreusement pour ton labeur.]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_P_END_HOW_GAIN_SUPER_PIKE (bot reward_giver)
+{
+	ke0904_fyros_instructions_phase_1_p_end_how_gain_super_pike	[Comme je t'en ai déjà parlé, $reward_giver$ propose diverses récompenses,  notamment des pioches aux propriétés particulières. Si tu m'apportes un exemplaire de chaque, je te les échangerai contre un objet spécial qui sera la preuve de ton dévouement envers notre peuple.]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_P_END_CANNOT_GAIN_SUPER_PIKE ()
+{
+	ke0904_fyros_instructions_phase_1_p_end_cannot_gain_super_pike	[Il te manque certains exemplaires, reviens me voir lorsque tu les auras tous réunis.]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_P_END_GAIN_SUPER_PIKE ()
+{
+	ke0904_fyros_instructions_phase_1_p_end_gain_super_pike	[Félicitations, je vois que tu as réussi à te procurer un exemplaire de chaque pioche !]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_1_P_END_RECEIVE_SUPER_PIKE ()
+{
+	ke0904_fyros_instructions_phase_1_p_end_receive_super_pike	[Voici comme promis ta récompense]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_2_P_END_WHAT_DOING ()
+{
+	ke0904_fyros_instructions_phase_2_p_end_what_doing	[Des nuées de Kitins s'abattent sur nos terres, nos postes avancés sont assiégés et plusieurs villages ont du être évacués, les réfugies affluent dans les villes. Nos lieux de récolte sont pour la plupart ravagés, les entrepôts détruits et les caravanes de ravitaillement éventrées. Les vivres viennent déjà à manquer, nous devons repousser l'invasion !]
+}
+
+KE0904_FYROS_INSTRUCTIONS_PHASE_2_P_END_HOW_CAN_HELP (bot camp_giver)
+{
+	ke0904_fyros_instructions_phase_2_p_end_how_can_help	[Les kitins déciment les troupeaux et détruisent tout sur leur passage. Nos valeureux guerriers sont bien trop occupés à repousser la menace pour se soucier de la chasse. Nous craignions une effroyable pénurie de nourriture qui affaiblirai encore davantage nos défenses. Si tu es récolteur, va te mettre au service de $camp_giver$ il te dira ce qui nous fait le plus cruellement défaut. Si tu possèdes un Animal de Bât, entoure-toi de compagnons, et mène le lui, nos postes avancés comptent sur la livraison de nourriture et matériaux nécessaires à leur survie.]
+}
+
+KE0904_MATIS_INSTRUCTIONS_PHASE_1_P_END_WHAT_DOING ()
+{
+	( self.gender = male )
+		ke0904_matis_instructions_phase_1_p_end_what_doing_m	[Deles silam Homin! J'ai fort à faire, notre noble roi Yrkanis a décidé de renforcer la surveillance de nos Majestueuses Forets, notamment certaines activités kitin, jugées suspectes. Nos meilleurs architectes ont été sélectionnés pour mener à bien la création de six nouveaux postes avancés et j'ai l'honneur d'avoir été choisi pour coordonner les opérations.]
+	( self.gender = female )
+		ke0904_matis_instructions_phase_1_p_end_what_doing_f	[Deles silam Homine! J'ai fort à faire, notre noble roi Yrkanis a décidé de renforcer la surveillance de nos Majestueuses Forets, notamment certaines activités kitin, jugées suspectes. Nos meilleurs architectes ont été sélectionnés pour mener à bien la création de six nouveaux postes avancés et j'ai l'honneur d'avoir été choisi pour coordonner les opérations.]
+}
+
+KE0904_MATIS_INSTRUCTIONS_PHASE_1_P_END_HOW_CAN_HELP (bot camp_giver)
+{
+	ke0904_matis_instructions_phase_1_p_end_how_can_help	[Les besoins en matériaux de construction sont importants si tu crois pouvoir nous en fournir, adresse toi à $camp_giver$, il te donnera la liste exacte des matières à forer , répondant aux exigences de nos maitres d'oeuvre. Nous recherchons également des livreurs pouvant approvisionner les différents postes, si tu as un animal de Bât, ce travail est à ta portée, conduit le à lui et il te remettra les paquetages de ravitaillement.]
+}
+
+KE0904_MATIS_INSTRUCTIONS_PHASE_1_P_END_WHO_PAY_ME_NO_CIV (bot reward_giver)
+{
+	ke0904_matis_instructions_phase_1_p_end_who_pay_me_no_civ	[Je constate que tu n'es pas un Sujet Matis... enfin, nous avons besoin de main d'oeuvre, meme peu qualifiée. $reward_giver$ te dédommagera à hauteur des tes compétences, si tu parviens à t'acquitter des tâches qui te seront confiées.]
+}
+
+KE0904_MATIS_INSTRUCTIONS_PHASE_1_P_END_WHO_PAY_ME_CIV (bot reward_giver)
+{
+	ke0904_matis_instructions_phase_1_p_end_who_pay_me_civ	[Satisfaire notre roi est déjà un honneur et une récompense en soi, enfin, $reward_giver$ se charge de l'intendance et il pourra te remettre diverses fournitures lorsque tu te seras montré digne de notre confiance.]
+}
+
+KE0904_TRYKER_INSTRUCTIONS_PHASE_1_P_END_WHAT_DOING ()
+{
+	ke0904_tryker_instructions_phase_1_p_end_what_doing	[Lordoy ! J'imagine que tu sais que nous observons constamment les mouvements des kitins dans les régions avoisinantes, afin de préparer nos défenses, on ne sait jamais en cas d'invasion. Eh bien figure-toi que quelques Tours de Gardes supplémentaires ne seraient pas superflues, Six nouvelles tours sont prévues en tout, Un véritable chantier ! Nos ingénieurs sont déjà sur place, je suis chargé de leurs envoyer tous les volontaires que je pourrai recruter.]
+}
+
+KE0904_TRYKER_INSTRUCTIONS_PHASE_1_P_END_HOW_CAN_HELP (bot camp_giver)
+{
+	ke0904_tryker_instructions_phase_1_p_end_how_can_help	[C'est rassurant de constater que des homins se soucient de la sécurité de nos îlots! Si tu sais manier une pioche, tu es notre homin, $camp_giver$ a une liste impressionnante de matières premières à rassembler ! Si tu as plus l'âme d'un explorateur, et que tu es propriétaire d'un mektoub de Bât vaillant, emmène le avec toi. $camp_giver$ cherche aussi des Livreurs pour faire la tournée des chantiers et les ravitailler en matériaux de construction, obtenus à partir des matières premières raffinées.]
+}
+
+KE0904_TRYKER_INSTRUCTIONS_PHASE_1_P_END_WHO_PAY_ME_NO_CIV (bot reward_giver)
+{
+	ke0904_tryker_instructions_phase_1_p_end_who_pay_me_no_civ	[Tu ne semble pas être un Citoyen Tryker, mais tu auras toute notre reconnaissance... et de la bière à volonté pour fêter notre réussite lorsque tout cela sera terminé ! Si tu nous montres que tu mérites plus qu'une simple poignée de main, tu arriveras surement à négocier un petit quelque chose auprès de $reward_giver$.]
+}
+
+KE0904_TRYKER_INSTRUCTIONS_PHASE_1_P_END_WHO_PAY_ME_CIV (bot reward_giver)
+{
+	ke0904_tryker_instructions_phase_1_p_end_who_pay_me_civ	[A la bonne heure, tout travail mérite salaire ! $reward_giver$ se chargera de compenser matériellement ce fier service rendu aux Lacs. Va le voir il a tout un tas d'objets intéressants à te proposer si tu lui prouves que tu es assez débrouillard pour avoir la chance t'en servir !]
+}
+
+KE0904_ZORAI_INSTRUCTIONS_PHASE_1_P_END_WHAT_DOING (bot player)
+{
+	( self.gender = male )
+		ke0904_zorai_instructions_phase_1_p_end_what_doing_m	[Kamia'ata frere ! Notre grand Sage Mabreka a su porter l'attention nécessaire aux paroles avisées du Conseil de Défense, qui lui recommande de faire ériger 6 nouvelles tours de gardes. Une Sage décision car le passé nous a appris que nous ne sommes jamais assez prudent, les kitins rôdent encore, et le mal peut s'étendre à tout moment. Je suis chargé d'orienter les homins désireux de contribuer à l'accomplissement de cette tâche. Que Ma-Duk nous guide, $player$ !]
+	( self.gender = female )
+		ke0904_zorai_instructions_phase_1_p_end_what_doing_f	[Kamia'ata soeur ! Notre grand Sage Mabreka a su porter l'attention nécessaire aux paroles avisées du Conseil de Défense, qui lui recommande de faire ériger 6 nouvelles tours de gardes. Une Sage décision car le passé nous a appris que nous ne sommes jamais assez prudent, les kitins rôdent encore, et le mal peut s'étendre à tout moment. Je suis chargé d'orienter les homins désireux de contribuer à l'accomplissement de cette tâche. Que Ma-Duk nous guide, $player$ !]
+}
+
+KE0904_ZORAI_INSTRUCTIONS_PHASE_1_P_END_HOW_CAN_HELP (bot camp_giver)
+{
+	ke0904_zorai_instructions_phase_1_p_end_how_can_help	[Si ton souhait est de prouver ton attachement envers le peuple zoraï, alors ta ferveur pourra s'exprimer à travers plusieurs missions que nous avons à te confier. $camp_giver$ détient la connaissance des matériaux nécessaire à la construction de ces nouvelles tours de garde, il la partagera certainement avec toi. Mais n'oublie pas de rester en harmonie avec la nature Kamique lorsque tu devras extraire ces ressources du sol, au risque de déclencher la colère des Kamis. Lorsque les matières premières auront été transformées en matériaux de construction par nos soins, ces lourdes charges devront être livrées à chacun des sites de construction. Il te faudra un animal de Bât pour cela, pense à bien le nourrir et mène le avec toi à $camp_giver$.]
+}
+
+KE0904_ZORAI_INSTRUCTIONS_PHASE_1_P_END_WHO_PAY_ME_NO_CIV (bot reward_giver)
+{
+	ke0904_zorai_instructions_phase_1_p_end_who_pay_me_no_civ	[En tant que non-initié, tu ne pourras pas accéder aux même récompenses que nos frères et soeurs zoraï, mais tout homin désireux de porter assistance au peuple zorai doit être guidé sur le chemin de l'Illumination. Si ta dévotion est grande, $reward_giver$ te prouvera notre gratitude.]
+}
+
+KE0904_ZORAI_INSTRUCTIONS_PHASE_1_P_END_WHO_PAY_ME_CIV (bot reward_giver)
+{
+	ke0904_zorai_instructions_phase_1_p_end_who_pay_me_civ	[Nous serons heureux de prouver notre gratitude envers les Initiés. Lorsque tu auras porté assistance au peuple Zorai, tu pourras recevoir quelques objets précieux de la part de $reward_giver$, ils affermiront tes aptitudes et t'aideront dans ta tâche. Que Ma-Duk te bénisse, $self$.]
+}
+

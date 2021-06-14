@@ -1,0 +1,808 @@
+﻿MF50_TITLE (bot giver)
+{
+	mf50_title	[(Le trésor de Jinovitch) Le pire des tyrans]
+}
+
+MF50_DESC (bot giver)
+{
+	mf50_desc	[Partir à la recherche des secrets du tyran]
+}
+
+MF50_PROPOSITION (bot player)
+{
+	mf50_proposition	[Je vous salue, $player$. Je vois que vos compétences de combat ne cessent de s'améliorer. Dans ce cas, peut-être seriez-vous intéressé par l'histoire de Jinovitch, le tyran qui assassina notre regretté roi Yasson ? On dit qu'il cacha quelques secrets avant de mourir...]
+}
+
+MF50_OUI ()
+{
+	mf50_oui	[Dites-m'en davantage.]
+}
+
+MF50_NON ()
+{
+	mf50_non	[Ca ne m'intéresse pas.]
+}
+
+MF50_INSTRUCTIONS (bot NPC1)
+{
+	mf50_instructions	[Quelqu'un dans la ville pourra vous en dire davantage. Son nom est $NPC1$.]
+}
+
+MF50_SI_OUBLI ()
+{
+	mf50_si_oubli	[Ah, une dernière chose : cette mission risque d'être assez longue. Si vous oubliez qui vous devez aller voir pour la suite, n'hésitez pas à venir me le demander.]
+}
+
+MF50_STEP1_OVERLOAD (bot NPC1)
+{
+	mf50_step1_overload	[Demandez à $NPC1$ des informations sur Jinovitch.]
+}
+
+MF50_STEP1_PHRASE (bot NPC1)
+{
+	mf50_step1_phrase	[Bonjour, j'aimerais que vous partagiez avec moi vos connaissances sur Jinovitch.]
+}
+
+MF50_STEP_1_BOTCHAT (creature_model gingo)
+{
+	mf50_step_1_botchat	[Jinovitch... le pire tyran dans l'histoire des Matis. Un roi fou et avide, qui méprisait tous les autres peuples et souhaitait les voir disparaître. Il n'hésita pas à assassiner son demi-frère Yasson, ni à tenter de se débarrasser de son demi-neveu Yrkanis. Mais on dit aussi que, comme la plupart des tyrans, il était paranoïaque... et qu'il cacha beaucoup de choses par peur de se les voir volées. {break}Si vous voulez en savoir davantage, commencez par me montrer que vous savez vous battre. Cette enquête pourrait se révéler fort dangereuse, et il est indispensable que celui qui la mène dispose de solides compétences de combat. Tuez cinq $gingo.p$ pour me donner la preuve que c'est votre cas.]
+}
+
+MF50_STEP3_OVERLOAD (bot NPC1)
+{
+	mf50_step3_overload	[Retournez voir $NPC1$.]
+}
+
+MF50_STEP3_PHRASE (bot NPC1)
+{
+	mf50_step3_phrase	[J'ai tué les Gingos comme vous me l'avez demandé.]
+}
+
+MF50_STEP3_BOTCHAT (bot AMI1, bot AMI2, bot AMI3)
+{
+	mf50_step3_botchat	[Vous semblez compétent ; j'espère que c'est bien le cas. A propos de Jinovitch, je n'en sais pas beaucoup plus, mais j'ai des amis qui pourraient peut-être nous aider davantage. Leurs noms sont $AMI1$ à Natae, $AMI2$ à Davae, et $AMI3$ à Avalae. Allez voir chacun d'eux pour en apprendre davantage sur Jinovitch.]
+}
+
+MF50_STEP4_OVERLOAD (bot AMI1, bot AMI2, bot AMI3)
+{
+	mf50_step4_overload	[Se renseigner sur Jinovitch. $AMI1$ à Natae, $AMI2$ à Davae, et $AMI3$ à Avalae pourraient avoir des informations sur lui.]
+}
+
+MF50_STEP4_PHRASE (bot AMI1)
+{
+	mf50_step4_phrase	[Bonjour, je recherche des informations sur Jinovitch.]
+}
+
+MF50_STEP4_BOTCHAT ()
+{
+	mf50_step4_botchat	[Jinovitch ? Je n'aime pas évoquer ce nom... mais je vous dirai tout ce que je sais. On dit que Jinovitch détestait la plupart des gens et ne se confiait pratiquement à personne. Il avait néanmoins un conseiller, un homme en qui il avait une certaine confiance, et à qui il aurait révélé des secrets. Mais j'ignore le nom que portait ce conseiller.]
+}
+
+MF50_STEP4_BOTCHAT2 ()
+{
+	mf50_step4_botchat2	[Jinovitch... il craignait tellement les espions que les messages qu'il envoyait à ses prétendus amis étaient toujours codés. Bien sûr, personne n'a jamais compris la nature de ces codes.]
+}
+
+MF50_STEP4_BOTCHAT3 ()
+{
+	mf50_step4_botchat3	[Ah, Jinovitch... l'un des plus dangereux fous que notre histoire ait connu. Des secrets ? Je ne sais que ceci : un jour, après une bataille, ses soldats l'ont vu récupérer un objet. Cet objet semblait être précieux, car il s'empressa de l'envoyer à Jino - la ville d'Yrkanis qu'il avait rebaptisée - avant de continuer son voyage.]
+}
+
+MF50_FINISH_OVERLOAD (bot NPC1)
+{
+	mf50_finish_overload	[Retournez voir $NPC1$ pour lui parler de ce que vous avez appris sur Jinovitch.]
+}
+
+MF50_FINISH_PHRASE (bot NPC1)
+{
+	mf50_finish_phrase	[J'ai trouvé plusieurs informations sur Jinovitch...]
+}
+
+MF50_REFUS (bot player)
+{
+	mf50_refus	[C'est dommage, $player$. Cela nous aurait peut-être permis d'en apprendre davantage sur Jinovitch...]
+}
+
+MF50_FINISH_REWARD ()
+{
+	mf50_finish_reward	[Hmmm... c'est très intéressant. Ces informations vont m'être utiles. Nous pouvons en tirer une conclusion... mais il va certainement falloir se battre pour connaître la suite.]
+}
+
+MF60_TITLE (bot giver)
+{
+	mf60_title	[(Le trésor de Jinovitch) Le conseiller du tyran]
+}
+
+MF60_DESC (bot giver)
+{
+	mf60_desc	[Continuer l'enquête sur Jinovitch]
+}
+
+MF60_MF60_AUTO_MENU ()
+{
+	mf60_mf60_auto_menu	[Bonjour, vous avez du nouveau au sujet du secret de Jinovitch ?]
+}
+
+MF60_PAS_ASSEZ_FORT ()
+{
+	mf60_pas_assez_fort	[Avant de continuer, vous devriez vous entrainer encore un peu en combat.]
+}
+
+MF60_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	mf60_step0_no_overload_1	[Passer le niveau 60 en combat avant d'aller voir $givervar$]
+}
+
+MF60_STEP0_OVERLOAD (bot givervar)
+{
+	mf60_step0_overload	[Parler à $givervar$]
+}
+
+MF60_STEP0_PHRASE (bot givervar)
+{
+	mf60_step0_phrase	[Bonjour, vous avez du nouveau au sujet du secret de Jinovitch ?]
+}
+
+MF60_INSTRUCTIONS (bot NPC2)
+{
+	mf60_instructions	[Bien, résumons ce que nous savons... Jinovitch semblait avoir un conseiller en qui il avait confiance, il utilisait des messages codés pour transmettre ses ordres, et il aurait un jour trouvé un objet précieux lors d'une bataille, qu'il aurait envoyé à la capitale. On peut supposer qu'il a parlé à son conseiller de cet objet... mais si son message était codé, ça complique les choses. {break}Je connais quelqu'un qui a un jour trouvé, par hasard, l'un des messages de Jinovitch. Son nom est $NPC2$ : vous devriez aller le rencontrer. Il habite à Avalae. Mais c'est un ancien guerrier, et j'ai peur qu'il ne vous demande de montrer votre valeur avant de vous laisser continuer.]
+}
+
+MF60_STEP1_OVERLOAD (bot NPC2)
+{
+	mf60_step1_overload	[Vérifiez que $NPC2$ a bien trouvé un message de Jinovitch.]
+}
+
+MF60_STEP1_PHRASE (bot NPC2)
+{
+	mf60_step1_phrase	[Bonjour. Est-il vrai que vous avez trouvé une lettre du tyran, Jinovitch ?]
+}
+
+MF60_STEP_1_BOTCHAT (place fleeting_garden, creature_model gingo)
+{
+	mf60_step_1_botchat	[Jinovitch ? J'ai effectivement des informations intéressantes à son sujet... mais je ne les remets pas à des êtres faibles comme vous ! Comment, vous voulez me montrer votre courage ? Très bien. Partez pour le $fleeting_garden$ et tuez trois $gingo.p$. Nous verrons alors si vous êtes assez méritant pour ces informations !]
+}
+
+MF60_STEP3_OVERLOAD (bot NPC2)
+{
+	mf60_step3_overload	[Retournez voir $NPC2$.]
+}
+
+MF60_STEP3_PHRASE (bot NPC2)
+{
+	( self.gender = male )
+		mf60_step3_phrase_m	[C'est fait. Suis-je assez méritant, finalement ?]
+	( self.gender = female )
+		mf60_step3_phrase_f	[C'est fait. Suis-je assez méritante, finalement ?]
+}
+
+MF60_STEP3_BOTCHAT ()
+{
+	mf60_step3_botchat	[Je reconnais mon erreur. Je vais vous dire tout ce que je sais sur Jinovitch. J'ai un jour trouvé une lettre alors que je me promenais à Yrkanis. Cette lettre avait sans aucun doute été écrite par Jinovitch. Voici son contenu... {break}<J'ai trouvé cet objet récemment. Myatar, je veux que vous m'en disiez le plus possible sur lui. Puis, cachez-le à l'endroit convenu.> {break}J'ai fais mon enquête : personne n'a jamais entendu parler d'un Myatar. Je suppose que c'était quelqu'un de discret et qui n'avait pas une haute fonction ni un haut rang dans la hiérarchie. Mais dans ce cas, j'ignore pourquoi Jinovitch lui aurait écrit...]
+}
+
+MF60_FINISH_OVERLOAD (bot givervar)
+{
+	mf60_finish_overload	[Parlez de la lettre de Jinovitch à $givervar$.]
+}
+
+MF60_FINISH_PHRASE (bot givervar, bot NPC2)
+{
+	mf60_finish_phrase	[$NPC2$ m'a confié le contenu de la lettre...]
+}
+
+MF60_FINISH_BOTCHAT (bot player)
+{
+	mf60_finish_botchat	[Myatar ? Non, ça ne me dit rien. Mais ce que je ne comprends pas, c'est que... Jinovitch avait apparemment pour habitude d'envoyer des messages codés... en-dehors de l'endroit convenu dont nous ne savons rien, tout est clair dans ce message. Réflechissons... {break}Je crois que j'ai une idée... vous m'aidez beaucoup à élucider ce mystère, $player$. Voici une récompense à titre d'encouragement.]
+}
+
+MF60_REWARD_SYSMES (bot givervar)
+{
+	mf60_reward_sysmes	[&AMB&$givervar$ vous remet quelques dappers en remerciement]
+}
+
+MF70_TITLE (bot giver)
+{
+	mf70_title	[(Le trésor de Jinovitch) Message codé]
+}
+
+MF70_MF70_AUTO_MENU ()
+{
+	mf70_mf70_auto_menu	[Bonjour, avez-vous réussi à décrypter le message ?]
+}
+
+MF70_PAS_ASSEZ_FORT ()
+{
+	mf70_pas_assez_fort	[Avant de continuer, vous devriez vous entrainer encore un peu en combat.]
+}
+
+MF70_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	mf70_step0_no_overload_1	[Passer le niveau 70 en combat avant d'aller voir $givervar$]
+}
+
+MF70_STEP0_OVERLOAD (bot givervar)
+{
+	mf70_step0_overload	[Parler à $givervar$]
+}
+
+MF70_STEP0_PHRASE (bot givervar)
+{
+	mf70_step0_phrase	[Bonjour, avez-vous réussi à décrypter le message ?]
+}
+
+MF70_INSTRUCTIONS (bot HIST1, bot HIST2, bot HIST3, bot HIST4, bot HIST5)
+{
+	mf70_instructions	[Voilà : je crois que le code, dans ce message, n'est pas le message lui-même mais uniquement son destinataire ! Cela expliquerait que personne ne connaisse ce Myatar. Mais maintenant, nous devons trouver qui était réellement le destinataire de ce message. Je pense que c'était l'un des hauts placés dans la société de l'époque. {break}J'ai certains amis historiens qui pourraient nous renseigner... vous devriez aller les voir. Il y a... $HIST1$, $HIST2$ et $HIST4$ à Davae... $HIST3$ à Natae... et $HIST5$ à Avalae. Si l'un d'eux vous cite un nom et que vous pensez que ça pourrait être notre homme, revenez immédiatement me voir.]
+}
+
+MF70_STEP1_1_OVERLOAD (bot HIST1)
+{
+	mf70_step1_1_overload	[Parler à $HIST1$ à Davae]
+}
+
+MF70_STEP1_PHRASE (bot HIST1)
+{
+	mf70_step1_phrase	[Bonjour, j'ai besoin d'un renseignement particulier...]
+}
+
+MF70_STEP1_BOTCHAT ()
+{
+	mf70_step1_botchat	[Des personnes importantes sous l'époque de Jinovitch ? Voyons... je me souviens de deux noms : Tiralo et Mallas.]
+}
+
+MF70_STEP1_2_OVERLOAD (bot HIST2)
+{
+	mf70_step1_2_overload	[Parler à $HIST2$ à Davae]
+}
+
+MF70_STEP1_BOTCHAT2 ()
+{
+	mf70_step1_botchat2	[Des personnes importantes sous l'époque de Jinovitch ? Voyons... je me souviens de deux noms : Zarino et Moltar.]
+}
+
+MF70_STEP1_3_OVERLOAD (bot HIST3)
+{
+	mf70_step1_3_overload	[Parler à $HIST3$ à Natae]
+}
+
+MF70_STEP1_BOTCHAT3 ()
+{
+	mf70_step1_botchat3	[Des personnes importantes sous l'époque de Jinovitch ? Voyons... je me souviens de deux noms : Yamrat et Vabris.]
+}
+
+MF70_STEP1_4_OVERLOAD (bot HIST4)
+{
+	mf70_step1_4_overload	[Parler à $HIST4$ à Davae]
+}
+
+MF70_STEP1_BOTCHAT4 ()
+{
+	mf70_step1_botchat4	[Des personnes importantes sous l'époque de Jinovitch ? Voyons... je me souviens de deux noms : Saralo et Gadora.]
+}
+
+MF70_STEP1_5_OVERLOAD (bot HIST5)
+{
+	mf70_step1_5_overload	[Parler à $HIST5$ à Avalae]
+}
+
+MF70_STEP1_BOTCHAT5 ()
+{
+	mf70_step1_botchat5	[Des personnes importantes sous l'époque de Jinovitch ? Voyons... je me souviens de deux noms : Varamo et Sarcio.]
+}
+
+MF70_STEP2_GIVER_OVERLOAD (bot givervar)
+{
+	mf70_step2_giver_overload	[Donner les informations à $givervar$]
+}
+
+MF70_STEP2_PHRASE2 (bot givervar)
+{
+	mf70_step2_phrase2	[Je pense avoir trouvé le bon...]
+}
+
+MF70_STEP2_BOTCHAT6 ()
+{
+	mf70_step2_botchat6	[Non... je ne vois aucun rapport entre ces deux noms et Myatar. Continuez vos recherches...]
+}
+
+MF70_STEP3_BOTCHAT6 (place fleeting_garden, item fragments_kipee, creature_model kipee)
+{
+	mf70_step3_botchat6	[Yamrat ? Yamrat... mais oui. C'est bien ça. Myatar, c'est l'anagramme Yamrat. Il semble que nous tenons notre conseiller. {break}Nous devons maintenant nous renseigner sur ce Yamrat. Mais cela risque de nous mener dans des zones dangereuses, et je préfère vérifier vos capacités de combat maintenant. Allez tuer des $kipee.p$ dans le $fleeting_garden$, et ramenez-m'en des fragments. Disons, trois $fragments_kipee$]
+}
+
+MF70_STEP4_OVERLOAD_1 (item i1, int qt1, int qual1, place fleeting_garden, item fragments_kipee, creature_model kipee)
+{
+	mf70_step4_overload_1	[Tuez des $kipee.p$ dans le $fleeting_garden$ jusqu'à trouver trois $fragments_kipee$ de qualité 90 minimum.]
+}
+
+MF70_STEP5_OVERLOAD_1 (item i1, int qt1, int qual1, bot givervar, item fragments_kipee)
+{
+	mf70_step5_overload_1	[Amenez les $fragments_kipee$ à $givervar$.]
+}
+
+MF70_STEP5_BOTCHAT ()
+{
+	mf70_step5_botchat	[Ah, de beaux fragments, en effet. J'ai quelques compétences en artisanat... laissez-moi vous faire une boucle d'oreille avec. Elle pourrait vous servir par la suite. Je ne vous demande rien en échange, il me restera des fragments à la fin.]
+}
+
+MF70_ATTENTE_OVERLOAD_1 (bot givervar)
+{
+	mf70_attente_overload_1	[Attendez que $givervar$ ait terminé.]
+}
+
+MF70_FINISH_OVERLOAD (bot givervar)
+{
+	mf70_finish_overload	[Parlez de la lettre de Jinovitch à $givervar$.]
+}
+
+MF70_FINISH_PHRASE (bot givervar)
+{
+	mf70_finish_phrase	[Avez-vous terminé ?]
+}
+
+MF70_OUTOFROOM_OVERLOAD (bot givervar)
+{
+	mf70_outofroom_overload	[Faites de la place avant d'aller parler à $givervar$.]
+}
+
+MF70_OUTOFROOM_PHRASE (bot givervar)
+{
+	mf70_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+MF70_OUTOFROOM_BOTCHAT ()
+{
+	mf70_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+MF70_FINISH_BOTCHAT ()
+{
+	mf70_finish_botchat	[J'ai fini. Voici les bijoux... et maintenant, il va falloir se renseigner sur Yamrat...]
+}
+
+MF80_TITLE (bot giver)
+{
+	mf80_title	[(Le trésor de Jinovitch) L'enquête avance]
+}
+
+MF80_MF80_AUTO_MENU ()
+{
+	mf80_mf80_auto_menu	[Bonjour, avez-vous trouvé des informations sur Yamrat ?]
+}
+
+MF80_PAS_ASSEZ_FORT ()
+{
+	mf80_pas_assez_fort	[Avant de continuer, vous devriez vous entrainer encore un peu en combat.]
+}
+
+MF80_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	mf80_step0_no_overload_1	[Passer le niveau 80 en combat avant d'aller voir $givervar$]
+}
+
+MF80_STEP0_OVERLOAD (bot givervar)
+{
+	mf80_step0_overload	[Parler à $givervar$]
+}
+
+MF80_STEP0_PHRASE (bot givervar)
+{
+	mf80_step0_phrase	[Bonjour, avez-vous trouvé des informations sur Yamrat ?]
+}
+
+MF80_INSTRUCTIONS (bot NPC2)
+{
+	mf80_instructions	[Retournez voir $NPC2$. S'il y a une personne qui saura quelque chose sur ce Yamrat, c'est lui. J'espère qu'il ne vous demandera pas à nouveau de faire vos preuves...]
+}
+
+MF80_STEP1_OVERLOAD (bot NPC2)
+{
+	mf80_step1_overload	[Retournez voir $NPC2$.]
+}
+
+MF80_STEP1_PHRASE (bot NPC2)
+{
+	mf80_step1_phrase	[J'ai de nouvelles informations sur Jinovitch.]
+}
+
+MF80_STEP1_BOTCHAT (place fleeting_garden, creature_model psykopla)
+{
+	mf80_step1_botchat	[Vraiment ? Le Myatar du message était en réalité Yamrat ? Très intéressant. Mais ça, c'est une information pour laquelle vous allez à nouveau devoir vous battre ! Cette fois, vous allez tuer, disons... cinq $psykopla.p$. Toujours dans le $fleeting_garden$. Ne revenez pas avant d'avoir réussi !]
+}
+
+MF80_STEP3_OVERLOAD (bot NPC2)
+{
+	mf80_step3_overload	[Retournez voir $NPC2$ pour qu'il vous en apprenne davantage sur Yamrat.]
+}
+
+MF80_STEP3_PHRASE (bot NPC2)
+{
+	mf80_step3_phrase	[J'ai fini.]
+}
+
+MF80_STEP3_BOTCHAT (bot givervar)
+{
+	mf80_step3_botchat	[Vous êtes décidément plus tenace que je ne pensais. Très bien, je vais vous dire ce que je sais sur Yamrat... en fait, je ne sais que peu de choses : Yamrat était le forgeron personnel de Jinovitch. C'est lui qui était chargé non seulement de fabriquer les armures et les armes de l'élite des soldats de Jinovitch, mais aussi d'identifier les objets inconnus trouvés par Jinovitch lors de ses batailles. {break}Avant que vous ne partiez... je ne vous en ai pas parlé car je ne vous pensais pas digne de confiance. Mais vous avez gagné celle de mon ami $givervar$, alors je vais vous le dire. Il y a un autre message qui a été découvert récemment. Un message qui date de l'époque de Jinovitch. Je n'ai pas ce message : c'est le barman d'Yrkanis qui l'a trouvé.]
+}
+
+MF80_STEP4_OVERLOAD (bot givervar)
+{
+	mf80_step4_overload	[Apportez les informations obtenues à $givervar$.]
+}
+
+MF80_STEP4_PHRASE (bot givervar, bot NPC2)
+{
+	mf80_step4_phrase	[$NPC2$ m'a donné des renseignements sur Yamrat.]
+}
+
+MF80_STEP4_BOTCHAT ()
+{
+	mf80_step4_botchat	[Un forgeron ? Le forgeron personnel du roi ? Voilà qui soulève plusieurs questions... cet objet, serait-ce une arme ou une armure ? Et Yamrat, était-il réellement le conseiller de Jinovitch ? {break}Et surtout... y a-t-il un indice qui permettrait de découvrir où ce fameux objet a été caché ? Jinovitch ne l'aurait jamais écrit, même sur un message codé... il était bien trop méfiant pour ça. Pour ce Yamrat, peut-être l'a-t-il indiqué ? Il va être difficile de le savoir. Comment ? Vous avez une autre information ? {break}Un autre message !? Voilà qui pourrait être la clé de toute cette affaire ! Ce serait le barman qui le détiendrait ? Nous devons absolument le lire.]
+}
+
+MF80_STEP5_OVERLOAD (bot barman)
+{
+	mf80_step5_overload	[Renseignez-vous auprès du barman d'Yrkanis à propos du message.]
+}
+
+MF80_STEP5_PHRASE (bot barman)
+{
+	mf80_step5_phrase	[Bonjour, il parrait que vous auriez trouvé un message...]
+}
+
+MF80_STEP5_BOTCHAT (place fleeting_garden, creature_model javing)
+{
+	mf80_step5_botchat	[Un message ? Un message de Jinovitch ? Et bien, ce n'est pas exactement un message de Jinovitch, mais... écoutez, je veux bien vous le confier, mais pour ça vous allez devoir m'aider. J'ai besoin d'ailes de Javing en ce moment. Allez dans le $fleeting_garden$, et récupérez-en sur des $javing$. Il va m'en falloir... au moins trois..]
+}
+
+MF80_STEP6_OVERLOAD_1 (item i1, int qt1, int qual1, item ailes_javing, creature_model javing)
+{
+	mf80_step6_overload_1	[Tuez des $javing$ pour récupérer trois $ailes_javing$ de qualité 80 minimum.]
+}
+
+MF80_STEP7_OVERLOAD_1 (item i1, int qt1, int qual1, bot barman)
+{
+	mf80_step7_overload_1	[Apportez les ailes de Javing au barman d'Yrkanis.]
+}
+
+MF80_STEP7_BOTCHAT ()
+{
+	mf80_step7_botchat	[Bien, bien. Alors, voilà le message... {break}<Matériau lourd mais puissant. Excellente qualité, mais faite pour un guerrier moins expérimenté que vos soldats. Comme convenu, cachée à l'endroit où a eu lieu votre pire souvenir. Myatar.> {break}Je vais vous dire, je n'y comprends strictement rien. Peut-être que vous, ça vous dit quelque chose... {break}Oh, et j'ai aussi trouvé ces objets avec le message. Je ne sais pas à quoi ils servent, mais pour vous remercier de m'avoir apporté les ailes, je vous les donne aussi.]
+}
+
+MF80_STEP8_OVERLOAD (bot givervar)
+{
+	mf80_step8_overload	[Faites passer le message à $givervar$.]
+}
+
+MF80_STEP8_PHRASE (bot givervar)
+{
+	mf80_step8_phrase	[J'ai pu me renseigner sur le message.]
+}
+
+MF80_STEP8_BOTCHAT (bot NPC2)
+{
+	mf80_step8_botchat	[Myatar ? C'est un message de Myatar... enfin, Yamrat ? Nous touchons au but ! L'objet dont il est fait mention dans ce message est certainement celui que nous recherchons. Mais... l'endroit où a eu lieu son pire souvenir ? Je ne vois pas du tout de quoi il peut s'agir. Et je ne pense pas que $NPC2$ puisse nous aider... {break}Le barman vous a donné des objets ? Montrez-les moi, je pourrai peut-être vous dire ce que c'est.]
+}
+
+MF80_FINISH_OVERLOAD_1 (item i1, int qt1, int qual1, bot givervar)
+{
+	mf80_finish_overload_1	[Donnez les objets étranges à $givervar$.]
+}
+
+MF80_OUTOFROOM_OVERLOAD (bot givervar)
+{
+	mf80_outofroom_overload	[Faites de la place avant d'aller parler à $givervar$.]
+}
+
+MF80_OUTOFROOM_PHRASE (bot givervar)
+{
+	mf80_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+MF80_OUTOFROOM_BOTCHAT ()
+{
+	mf80_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+MF80_FINISH_BOTCHAT (item fleur)
+{
+	mf80_finish_botchat	[Ah... elles n'en ont pas l'air, mais ce sont des $fleur$. Je pense qu'elles pourraient vous servir. Pour la suite...]
+}
+
+MF90_TITLE (bot giver)
+{
+	mf90_title	[(Le trésor de Jinovitch) La déclaration de Yasson]
+}
+
+MF90_MF90_AUTO_MENU ()
+{
+	mf90_mf90_auto_menu	[Bonjour, vous-avez une idée pour la suite de l'enquête sur Myatar ?]
+}
+
+MF90_PAS_ASSEZ_FORT ()
+{
+	mf90_pas_assez_fort	[Vous devriez vous entrainer encore un peu en combat avant de continuer.]
+}
+
+MF90_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	mf90_step0_no_overload_1	[Passer le niveau 90 en combat avant d'aller voir $givervar$]
+}
+
+MF90_STEP0_OVERLOAD (bot givervar)
+{
+	mf90_step0_overload	[Parler à $givervar$]
+}
+
+MF90_STEP0_PHRASE (bot givervar)
+{
+	mf90_step0_phrase	[Bonjour, vous-avez une idée pour la suite de l'enquête sur Myatar ?]
+}
+
+MF90_INSTRUCTIONS (bot NPC3)
+{
+	mf90_instructions	[J'aurais préféré éviter d'avoir affaire à lui, car c'est quelqu'un d'irritable et qui déteste partager ce qu'il sait. Mais comme vous en savez déjà beaucoup, peut-être qu'il acceptera. C'est l'un des plus grands historiens concernant Jinovitch. Son nom est $NPC3$ ; il habite à Natae.]
+}
+
+MF90_STEP1_OVERLOAD (bot NPC3)
+{
+	mf90_step1_overload	[Parler à $NPC3$ de Jinovitch. Il n'aime pas partager ses connaissances, mais peut-être qu'en lui montrant ce que vous savez déjà sur Jinovitch...]
+}
+
+MF90_STEP1_PHRASE (bot NPC3)
+{
+	mf90_step1_phrase	[J'ai besoin de quelques informations...]
+}
+
+MF90_STEP1_BOTCHAT ()
+{
+	mf90_step1_botchat	[Non, non et non ! Je ne dirai RIEN à propos de Jinovitch. Vous me faites perdre mon temps, et le vôtre avec.]
+}
+
+MF90_STEP2_PHRASE (bot NPC3)
+{
+	mf90_step2_phrase	[Mais je me suis déjà beaucoup renseigné !]
+}
+
+MF90_STEP2_BOTCHAT (faction border_guards, place knollofdissent, place zone_souvenir)
+{
+	mf90_step2_botchat	[Je viens de vous dire que... oh, quel est ce message ? Un message de Jinovitch ? Hum... je vois. Vous, au moins, vous en savez déjà quelque chose. Le pire souvenir de Jinovitch... oui, je pense savoir ce que c'est. Bien sûr, il ne l'a jamais confié à quiconque, sauf peut-être à ce Yamrat, mais on peut le déduire assez facilement... {break}Oui... je suppose que c'est le jour où Yasson, son demi-frère, lui annonça que lui, Jinovitch, était démi de ses fonctions de conseiller à la cour. Jinovitch devint alors fou furieux, et les gardes de Yasson eurent du mal à contenir sa fureur. Yasson avait fait cette déclaration dans un endroit précis du $knollofdissent$, juste au sud du camp des $border_guards$ dans une racine geante qu'on appelle $zone_souvenir$.]
+}
+
+MF90_STEP3_OVERLOAD (bot givervar, bot NPC3)
+{
+	mf90_step3_overload	[Répétez à $givervar$ que vous a dit $NPC3$.]
+}
+
+MF90_STEP3_PHRASE (bot givervar)
+{
+	mf90_step3_phrase	[Il a finalement accepté de m'en parler.]
+}
+
+MF90_STEP3_BOTCHAT (place zone_souvenir)
+{
+	mf90_step3_botchat	[Il connaît l'endroit !? Alors il n'y a pas un instant à perdre. Rendez vous à $zone_souvenir$ et fouillez tout ce que vous pouvez afin de trouver un indice.]
+}
+
+MF90_STEP4_OVERLOAD (place knollofdissent, place zone_souvenir)
+{
+	mf90_step4_overload	[Fouillez $zone_souvenir$ dans le $knollofdissent$ pour essayer de trouver un indice]
+}
+
+MF90_STEP4_PHRASE (bot monticule1)
+{
+	mf90_step4_phrase	[Fouiller le monticule]
+}
+
+MF90_STEP4_MSG ()
+{
+	mf90_step4_msg	[&AMB&Vous fouillez partout mais aucune trace d'un objet à cet endroit ! Est-ce bien le lieu du pire souvenir de Jinovitch ?]
+}
+
+MF90_STEP5_OVERLOAD (bot givervar)
+{
+	mf90_step5_overload	[Retournez voir $givervar$ et dites lui que vous n'avez rien trouvé.]
+}
+
+MF90_STEP5_PHRASE (bot givervar, place zone_souvenir)
+{
+	mf90_step5_phrase	[Je n'ai rien trouvé à $zone_souvenir$]
+}
+
+MF90_STEP5_BOTCHAT (bot NPC3)
+{
+	mf90_step5_botchat	[Comment ? Rien ? Alors, je suppose que ce n'était pas le bon endroit... retournez voir $NPC3$ pour l'en informer. Peut-être qu'en réfléchissant, il pourra trouver un souvenir encore pire...]
+}
+
+MF90_FINISH_OVERLOAD (bot NPC3)
+{
+	mf90_finish_overload	[Retournez voir $NPC3$ pour lui dire que ce n'était pas le bon endroit.]
+}
+
+MF90_FINISH_PHRASE (bot NPC3)
+{
+	mf90_finish_phrase	[Etes-vous certain de ce dont vous m'avez parlé ?]
+}
+
+MF90_OUTOFROOM_OVERLOAD (bot NPC3)
+{
+	mf90_outofroom_overload	[Faites de la place avant d'aller parler à $NPC3$.]
+}
+
+MF90_OUTOFROOM_PHRASE (bot NPC3)
+{
+	mf90_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+MF90_OUTOFROOM_BOTCHAT ()
+{
+	mf90_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+MF90_FINISH_BOTCHAT (bot NPC4, bot givervar)
+{
+	mf90_finish_botchat	[Quoi ? Ce n'était pas le bon endroit ? Impossible. Je suis certain que c'est bien le pire souvenir qu'ait connu Jinovitch. A moins que... {break}Non... cette étrange histoire serait-elle vraie ? Je ne peux pas le croire... enfin... je suppose que si. Hmm, peut être que $NPC4$ connaît des détails au sujet de cette... histoire. {break} Retournez voir $givervar$, il vous enverra vers elle. Au fait, j'ai trouvé ça, je me suis dit que ça pourrait vous être utile.]
+}
+
+MF90_STEP_FIN_OJECTIVE (bot givervar)
+{
+	mf90_step_fin_ojective	[Retourner voir $givervar$]
+}
+
+MF90_STEP_FIN_PHRASE (bot givervar)
+{
+	mf90_step_fin_phrase	[Ce n'était pas le bon endroit...]
+}
+
+MF100_TITLE (bot giver)
+{
+	mf100_title	[(Le trésor de Jinovitch) Le pire souvenir]
+}
+
+MF100_MF100_AUTO_MENU ()
+{
+	mf100_mf100_auto_menu	[Je suis prêt]
+}
+
+MF100_PAS_ASSEZ_FORT (bot NPC4)
+{
+	mf100_pas_assez_fort	[Très bien, entrainez-vous encore un peu et je vous enverrai voir $NPC4$.]
+}
+
+MF100_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	mf100_step0_no_overload_1	[Passer le niveau 100 en combat avant d'aller voir $givervar$]
+}
+
+MF100_STEP0_OVERLOAD (bot givervar)
+{
+	mf100_step0_overload	[Parler à $givervar$]
+}
+
+MF100_STEP0_PHRASE (bot givervar, bot NPC4)
+{
+	mf100_step0_phrase	[Bonjour, je pense être prêt à aller voir $NPC4$]
+}
+
+MF100_INSTRUCTIONS (bot NPC4)
+{
+	mf100_instructions	[Très bien, dans ce cas allez voir $NPC4$ à Avalae de ma part, et demandez lui de vous parler de Jinovitch. Elle devrait avoir une histoire intéressante à vous raconter...]
+}
+
+MF100_STEP0_OVERLOAD2 (bot NPC4)
+{
+	mf100_step0_overload2	[Allez parler de Jonovitch à $NPC4$ à Avalae]
+}
+
+MF100_STEP0_PHRASE2 (bot NPC4)
+{
+	mf100_step0_phrase2	[Bonjour, savez-vous quel était le pire souvenir de Jinovitch ?]
+}
+
+MF100_SOUVENIR_PHRASE (faction arid_matis, place hiddensource, place majestic_garden)
+{
+	mf100_souvenir_phrase	[Le pire souvenir de Jinovitch... oui... il y a une histoire qui en parle. Personne ne sait si elle est réelle ou pas, car si c'est vraiment arrivé, Jinovitch a certainement tout fait pour qu'on l'oublie. Voici donc son histoire... {break}Bien avant l'empoisonnement de son demi-frère... bien avant même d'être le conseiller à la cour... Jinovitch, lors d'un déplacement, rencontra une jeune fille appelée Virginia dans le $majestic_garden$. Ils devinrent amis, et Jinovitch lui demanda un jour de le retrouver dans la $hiddensource$. {break}On ne sait pas vraiment ce qui s'est passé là-bas, mais des habitants se souviennent avoir vu la jeune fille revenir à Yrkanis... seule. Il parait que Jinovitch resta assis, immobile,  pendant plusieurs heures. {break}On dit que c'est suite à cette histoire que Jinovitch devint amer et tyrannique. J'ignore si c'est l'endroit que vous recherchez, mais... c'était à un endroit précis de la $hiddensource$. Au Nord-Est du lac, non loin du camp des $arid_matis$, près de la falaise. Mais soyez prudents. La faune locale est très dangereuse, et les $arid_matis$ voient des espions partout...]
+}
+
+MF100_STEP1_OVERLOAD (bot eboulis, bot NPC4, place hiddensource)
+{
+	mf100_step1_overload	[Fouillez l'endroit où a eu lieu le pire souvenir de Jinovitch. D'après $NPC4$, il se trouve au Nord-Est du lac, près de la falaise à $hiddensource$.]
+}
+
+MF100_STEP1_PHRASE (bot eboulis)
+{
+	mf100_step1_phrase	[Fouiller les éboulis]
+}
+
+MF100_STEP1_MSG ()
+{
+	mf100_step1_msg	[&AMB&Vous fouillez la zone où s'était jadis rendu Jinovitch… En creusant, vous tombez sur un coffre. Serait-ce... le trésor caché de Jinovitch ?]
+}
+
+MF100_OUTOFROOM_MSG ()
+{
+	mf100_outofroom_msg	[&SYS&Votre inventaire est plein. Faites de la place avant de revenir.]
+}
+
+MF100_STEP2_OVERLOAD (bot givervar)
+{
+	mf100_step2_overload	[Montrez votre trouvaille à $givervar$.]
+}
+
+MF100_STEP2_PHRASE (bot givervar)
+{
+	mf100_step2_phrase	[J'ai trouvé un coffre !]
+}
+
+MF100_STEP2_BOTCHAT (bot NPC5)
+{
+	mf100_step2_botchat	[Un coffre ! Contiendrait-il l'arme... ou l'armure... dont parlait Yamrat ? Mais... nous n'avons pas la clé ! Que faire ? {break}Oui... nous allons devoir forcer ce coffre. Allez voir mon vieil ami, $NPC5$. Il se trouve ici, à Yrkanis. Il pourra ouvrir ce coffre sans aucun problème, j'en suis certain. Oh... et pourriez-vous me montrer le contenu du coffre quand il sera ouvert ? J'aimerais vraiment voir.]
+}
+
+MF100_STEP3_OVERLOAD_1 (item i1, int qt1, int qual1, bot NPC5)
+{
+	mf100_step3_overload_1	[Apportez le coffre à $NPC5$ pour qu'il l'ouvre.]
+}
+
+MF100_STEP3_BOTCHAT ()
+{
+	mf100_step3_botchat	[Un coffre ? Laissez-moi faire, je vais m'en occuper. {break}Et voilà... quelle superbe pique ! C'est une des plus belles armes qu'il m'ait été donné de voir. Vous devez avoir eu du mal à la trouver... félicitations !]
+}
+
+MF100_STEP4_OVERLOAD_1 (item i1, int qt1, int qual1, bot givervar)
+{
+	mf100_step4_overload_1	[Montrez le coffre et son contenu à $givervar$.]
+}
+
+MF100_OUTOFROOM_OVERLOAD (bot givervar)
+{
+	mf100_outofroom_overload	[Faites de la place avant d'aller parler à $givervar$.]
+}
+
+MF100_OUTOFROOM_PHRASE (bot givervar)
+{
+	mf100_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+MF100_OUTOFROOM_BOTCHAT ()
+{
+	mf100_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+MF100_PROPOSITION_NOANSWER_PHRASE (bot givervar)
+{
+	mf100_proposition_noanswer_phrase	[Je vais choisir maintenant.]
+}
+
+MF100_PROPOSITION_BOTCHAT ()
+{
+	mf100_proposition_botchat	[Quelle splendide pique ! Je comprends pourquoi Jinovitch a fait preuve d'autant de discrétion à son sujet... accepteriez-vous de me l'échanger contre ce fusil ? Il a lui aussi appartenu à Jinovitch]
+}
+
+MF100_PROPOSITION_DAGUE ()
+{
+	mf100_proposition_dague	[Non merci, je vais garder la pique.]
+}
+
+MF100_PROPOSITION_PISTOLET ()
+{
+	mf100_proposition_pistolet	[Oui, je prends le fusil.]
+}
+
+MF100_FINISH_BOTCHAT ()
+{
+	mf100_finish_botchat	[Très bien. Voici pour vous.]
+}
+
+MF_ORIENTATION_SAGE_AUTO_MENU ()
+{
+	mf_orientation_sage_auto_menu	[Qui dois-je aller voir pour la suite de (Le trésor de Jinovitch) ?]
+}
+
+MF_ORIENTATION_SAGE_SAGE_ORIENTE (bot 100)
+{
+	mf_orientation_sage_sage_oriente	[La personne que vous recherchez est $100$. Je vais vous indiquer où la trouver.]
+}
+

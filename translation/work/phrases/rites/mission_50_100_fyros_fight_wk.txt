@@ -1,0 +1,714 @@
+﻿FF50_TITLE (bot giver)
+{
+	ff50_title	[(Les Révélateurs) L'organisation]
+}
+
+FF50_DESC (bot giver)
+{
+	ff50_desc	[Enquêter sur l'organisation secrète]
+}
+
+FF50_PROPOSITION (bot player)
+{
+	ff50_proposition	[Je te salue, $player$ ! Tes compétences de combat s'améliorent de jour en jour. Continue ainsi, et tu seras digne de rejoindre nos plus grands combattants. As-tu entendu parler de l'organisation appelée les Révélateurs des Héros ? Leur objectif était de repérer les guerriers les plus méritants et de les guider vers leur gloire. Cette organisation est censée avoir disparu aujourd'hui, mais certains pensent que ce n'est pas le cas. Veux-tu en savoir plus ?]
+}
+
+FF50_OUI ()
+{
+	ff50_oui	[Dis-moi tout sur cette organisation !]
+}
+
+FF50_NON ()
+{
+	ff50_non	[Ca ne m'intéresse pas.]
+}
+
+FF50_INSTRUCTIONS (bot NPC1)
+{
+	ff50_instructions	[Cherche $NPC1$ dans la ville. Je crois qu'il en sait davantage.]
+}
+
+FF50_STEP1_OVERLOAD (bot NPC1)
+{
+	ff50_step1_overload	[Renseignez-vous auprès de $NPC1$ à propos de l'organisation.]
+}
+
+FF50_STEP1_PHRASE (bot NPC1)
+{
+	ff50_step1_phrase	[Sais-tu quelque chose sur les Révélateurs des Héros ?]
+}
+
+FF50_STEP1_BOTCHAT (creature_model goari, place impdunes)
+{
+	ff50_step1_botchat	[Aaaah... les Révélateurs. J'ai beaucoup étudié cette organisation. Ses membres cherchaient en permanence les guerriers Fyros les plus talentueux. Lorsqu'ils en trouvaient un, ils lui faisaient passer plusieurs épreuves pour tester sa force et son courage, puis ils le récompensaient en cas de victoire... en échange de son silence. {break}Hum... on dit que cette organisation a aujourd'hui disparu. Moi, je suis convaincu du contraire. En réalité, on dit qu'un de ses membres habiterait actuellement ici, à Pyr ! Je vois que tu es doué au combat, peut-être pourrait-il te faire passer ces épreuves ? {break}Mais je ne sais pas du tout qui il est... et puis, je dois d'abord vérifier que tu as les capacités nécessaires. Commence par tuer quelques $goari.p$ ; on les trouve ici, dans les $impdunes$ à l'ouest de la cité. Pendant ce temps, je vais faire des recherches supplémentaires sur ce membre...]
+}
+
+FF50_STEP3_OVERLOAD (bot NPC1, creature_model goari)
+{
+	ff50_step3_overload	[Dites à $NPC1$ que vous avez triomphé des $goari.p$.]
+}
+
+FF50_STEP3_PHRASE (bot NPC1)
+{
+	ff50_step3_phrase	[J'ai tué les Goaris comme tu me l'as demandé.]
+}
+
+FF50_STEP3_BOTCHAT (bot NPC2)
+{
+	( self.gender = male )
+		ff50_step3_botchat_m	[Tu es revenu... et victorieux. Je n'ai pas trouvé qui était ce membre de l'organisation, mais j'ai trouvé quelqu'un qui en sait beaucoup plus que moi. Cependant, il a... refusé de m'en parler. Peut-être pourrais-tu essayer à ma place ? Son nom est $NPC2$, il habite également à Pyr.]
+	( self.gender = female )
+		ff50_step3_botchat_f	[Tu es revenue... et victorieuse. Je n'ai pas trouvé qui était ce membre de l'organisation, mais j'ai trouvé quelqu'un qui en sait beaucoup plus que moi. Cependant, il a... refusé de m'en parler. Peut-être pourrais-tu essayer à ma place ? Son nom est $NPC2$, il habite également à Pyr.]
+}
+
+FF50_STEP4_OVERLOAD (bot NPC2)
+{
+	ff50_step4_overload	[Demandez des renseigments supplémentaires à $NPC2$, à Pyr.]
+}
+
+FF50_STEP4_PHRASE (bot NPC2)
+{
+	ff50_step4_phrase	[Il parait que tu en sais beaucoup sur les Révélateurs des Héros.]
+}
+
+FF50_STEP4_BOTCHAT (creature_model clopper, place oasis)
+{
+	( self.gender = male )
+		ff50_step4_botchat_m	[Les Révélateurs des Héros, hein ? Oui, j'en sais pas mal sur eux. Mais tu vas d'abord devoir me montrer que tu n'es pas n'importe qui. Pars pour l'$oasis$ et tues-y plusieurs $clopper.p$ qui se trouvent au nord. Nous verrons alors si tu es toujours aussi partant !]
+	( self.gender = female )
+		ff50_step4_botchat_f	[Les Révélateurs des Héros, hein ? Oui, j'en sais pas mal sur eux. Mais tu vas d'abord devoir me montrer que tu n'es pas n'importe qui. Pars pour l'$oasis$ et tues-y plusieurs $clopper.p$ qui se trouvent au nord. Nous verrons alors si tu es toujours aussi partante !]
+}
+
+FF50_STEP6_OVERLOAD (bot NPC2)
+{
+	ff50_step6_overload	[Annoncez à $NPC2$ que vous avez tué les cloppers.]
+}
+
+FF50_STEP6_PHRASE (bot NPC2)
+{
+	ff50_step6_phrase	[J'ai tué ces cloppers.]
+}
+
+FF50_STEP6_BOTCHAT ()
+{
+	ff50_step6_botchat	[T'es solide, en tout cas. J'aime ça. Je vais te dire ce que je sais sur les Révélateurs. {break}Cette organisation a été créée par Leanon, la soeur de Cerakos II - le père de notre empereur Dexton. Leanon souhaitait que les jeunes talents puissent avoir accès à la meilleure éducation possible, plutôt que d'apprendre par eux-même ou, pire, par de mauvais instructeurs. Mais cette éducation devait rester secrète, car beaucoup auraient eu à y gagner si les noms de ces guerriers était connus. C'est ainsi que les Révélateurs des Héros sont nés. {break}A la mort de Leanon, l'organisation n'avait plus personne sur qui compter, et le nombre de ses membres diminua lentement. Personne ne sait vraiment ce qu'il en est aujourd'hui, mais il est très possible qu'il reste des gens isolés qui agissent dans l'ombre... pour perpétuer la mémoire de l'organisation.]
+}
+
+FF50_FINISH_OVERLOAD (bot NPC1)
+{
+	ff50_finish_overload	[Retournez voir $NPC1$ pour lui dire ce que vous avez appris.]
+}
+
+FF50_FINISH_PHRASE (bot NPC1)
+{
+	ff50_finish_phrase	[J'ai appris beaucoup sur les Révélateurs.]
+}
+
+FF50_REFUS ()
+{
+	ff50_refus	[Sérieusement ? Si elle existe encore, cette organisation pourrait beaucoup t'aider !]
+}
+
+FF50_FINISH_BOTCHAT (bot player)
+{
+	ff50_finish_botchat	[Je vois... c'est très intéressant, $player$. Nous allons pouvoir continuer nos recherches...]
+}
+
+FF60_TITLE (bot giver)
+{
+	ff60_title	[(Les Révélateurs) A la recherche du membre]
+}
+
+FF60_DESC (bot giver)
+{
+	ff60_desc	[Continuer l'enquête sur les Révélateurs]
+}
+
+FF60_FF60_AUTO_MENU ()
+{
+	ff60_ff60_auto_menu	[Vous avez du nouveau ?]
+}
+
+FF60_PAS_ASSEZ_FORT ()
+{
+	ff60_pas_assez_fort	[Avant de continuer, entraine toi encore un peu en combat.]
+}
+
+FF60_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	ff60_step0_no_overload_1	[Passer le niveau 60 en combat avant d'aller voir $givervar$]
+}
+
+FF60_STEP0_OVERLOAD (bot givervar)
+{
+	ff60_step0_overload	[Parler à $givervar$]
+}
+
+FF60_STEP0_PHRASE (bot givervar)
+{
+	ff60_step0_phrase	[Bonjour, vous avez du nouveau au sujet des Révélateurs ?]
+}
+
+FF60_INSTRUCTIONS (bot NPC2, bot player)
+{
+	ff60_instructions	[J'ai trouvé des informations supplémentaires à partir de ce que tu as pu me dire, $player$. Il semble que l'organisation utilisait un système de messages pour communiquer des informations, des messages qu'ils enterraient dans le sable à un endroit bien précis. Malheureusement, je n'ai aucune idée de l'emplacement de cet endroit. Peut-être $NPC2$ le saurait-il ?]
+}
+
+FF60_STEP1_OVERLOAD (bot NPC2)
+{
+	ff60_step1_overload	[Demandez à $NPC2$ s'il connait l'emplacement où les Révélateurs s'échangeaient des messages.]
+}
+
+FF60_STEP1_PHRASE (bot NPC2)
+{
+	ff60_step1_phrase	[Sais-tu quelque chose sur les messages des Révélateurs ?]
+}
+
+FF60_STEP1_BOTCHAT (bot NPC3)
+{
+	ff60_step1_botchat	[Des messages ? Je ne suis pas au courant, mais je crois que mon amie $NPC3$ a effectué des recherches là-dessus. $NPC3$ ? Elle doit être à Pyr, actuellement.]
+}
+
+FF60_STEP2_OVERLOAD (bot NPC3)
+{
+	ff60_step2_overload	[$NPC3$, à Pyr, devrait savoir quelque chose sur les messages.]
+}
+
+FF60_STEP2_PHRASE (bot NPC3, bot NPC2)
+{
+	ff60_step2_phrase	[$NPC2$ m'a aiguillé vers toi...]
+}
+
+FF60_STEP2_BOTCHAT (creature_model arma, place oasis)
+{
+	ff60_step2_botchat	[Les messages des Révélateurs... eh bien, j'ai effectivement quelque chose d'intéressant là-dessus, mais... {break}Chaque information a son prix ! Un ami artisan m'a récemment demandé de lui apporter de la graisse d'$arma$. Je n'ai pas eu le temps de m'en occuper. Fais-le à ma place, et je te dirai tout ce que je sais. Les $arma.p$ sont au centre de l'$oasis$. {break}Attention, je n'ai pas besoin de beaucoup de graisse, mais les $arma.p$ sont assez forts. Si tu as du mal à t'en débarrasser, demande à un ami de t'aider.]
+}
+
+FF60_STEP3_OVERLOAD_1 (creature_model arma, int q1)
+{
+	ff60_step3_overload_1	[Tuez deux $arma.p$ pour récupérer leur graisse.1/2]
+}
+
+FF60_STEP3_5_OVERLOAD_1 (creature_model arma, int q1)
+{
+	ff60_step3_5_overload_1	[Tuez deux $arma.p$ pour récupérer leur graisse.2/2]
+}
+
+FF60_STEP4_OVERLOAD_1 (item i1, int qt1, int qual1, bot NPC3)
+{
+	ff60_step4_overload_1	[Donnez la graisse d'arma à $NPC3$.]
+}
+
+FF60_STEP4_BOTCHAT (faction WB, place oasis)
+{
+	ff60_step4_botchat	[Bien, j'aurai déjà ça de moins à faire. Alors, l'emplacement des messages... Dans l'$oasis$, au nord du camp des $WB$... une zone de sable parmi l'herbe.]
+}
+
+FF60_STEP5_OVERLOAD (bot givervar)
+{
+	ff60_step5_overload	[Annoncez les nouvelles à $givervar$.]
+}
+
+FF60_STEP5_PHRASE (bot givervar)
+{
+	ff60_step5_phrase	[J'ai du nouveau.]
+}
+
+FF60_STEP5_BOTCHAT (bot player)
+{
+	ff60_step5_botchat	[Tu as donc trouvé l'endroit des messages ? Très intéressant. Je pense que tu devrais t'y rendre, $player$. Qui sait, si l'organisation existe toujours, peut-être utilise-t-elle encore cet endroit...]
+}
+
+FF60_STEP6_OVERLOAD (place emplacement_message, faction WB, place oasis)
+{
+	ff60_step6_overload	[Allez à l'emplacement des messages : Dans l'$oasis$, au nord du camp des $WB$... une zone de sable parmi l'herbe.]
+}
+
+FF60_STEP6_MSG (bot givervar, bot player)
+{
+	ff60_step6_msg	[&AMB&Vous trouvez un message enfoui dans le sable. Il y a marqué... <$player$, il semble que tu as réussi à trouver ce message. Je te félicite pour ce succès ; reviens me voir pour que je te souhaite la bienvenue en tant que nouvel espoir de l'organisation. $givervar$.>]
+}
+
+FF60_FINISH_OVERLOAD_1 (item i1, int qt1, int qual1, bot givervar)
+{
+	ff60_finish_overload_1	[Apportez le message à $givervar$.]
+}
+
+FF60_FAILURE1_MSG ()
+{
+	ff60_failure1_msg	[Vous n'avez plus de place dans votre inventaire. Faites de la place avant de revenir.]
+}
+
+FF60_FINISH_BOTCHAT (bot givervar, bot player)
+{
+	( self.gender = male )
+		ff60_finish_botchat_m	[Ah... tu as donc trouvé le message. Surpris ? Je suis $givervar$, l'un des derniers membres des Révélateurs des Héros. Tu es digne de tenter nos épreuves, $player$. Je te remets ces quelques dappers comme cadeau de bienvenue... et d'encouragement pour ce qui t'attend !]
+	( self.gender = female )
+		ff60_finish_botchat_f	[Ah... tu as donc trouvé le message. Surprise ? Je suis $givervar$, l'un des derniers membres des Révélateurs des Héros. Tu es digne de tenter nos épreuves, $player$. Je te remets ces quelques dappers comme cadeau de bienvenue... et d'encouragement pour ce qui t'attend !]
+}
+
+FF60_REWARD_SYSMES (bot givervar)
+{
+	ff60_reward_sysmes	[&AMB&$givervar$ vous remet quelques dappers en remerciement]
+}
+
+FF70_TITLE (bot giver)
+{
+	ff70_title	[(Les Révélateurs) Première]
+}
+
+FF70_DESC (bot giver)
+{
+	ff70_desc	[Continuer à passer les épreuves des Révélateurs]
+}
+
+FF70_FF70_AUTO_MENU ()
+{
+	ff70_ff70_auto_menu	[Bonjours, je voudrais passer les épreuves des Révélateurs.]
+}
+
+FF70_PAS_ASSEZ_FORT ()
+{
+	ff70_pas_assez_fort	[Avant de continuer, entraine toi encore un peu en combat et revient me voir quand tu seras prêt.]
+}
+
+FF70_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	ff70_step0_no_overload_1	[Passer le niveau 70 en combat avant d'aller voir $givervar$]
+}
+
+FF70_STEP0_OVERLOAD (bot givervar)
+{
+	ff70_step0_overload	[Parler à $givervar$]
+}
+
+FF70_STEP0_PHRASE (bot givervar)
+{
+	ff70_step0_phrase	[Bonjour, je suis prêt à passer les épreuves des Révélateurs.]
+}
+
+FF70_INSTRUCTIONS (faction WB, creature_model creature1, creature_model creature2, creature_model creature3, creature_model creature4, creature_model creature5, creature_model creature6, creature_model creature7, creature_model creature8, creature_model creature9)
+{
+	ff70_instructions	[Tu as passé le test, et je vais maintenant te donner les épreuves à réussir. En voici les règles... {break}Chaque épreuve comporte deux étapes. Tu dois revenir me voir entre chaque étape pour que je t'indique la suivante. {break}Tu as le droit de demander de l'aide à n'importe quel moment. L'entraide est toujours la bienvenue pour nous, même si elle rend les choses plus faciles. {break}Si tu échoues à une étape, tu peux réessayer autant de fois que tu le souhaites. {break}La première épreuve est celle de rapidité. Pour la première étape, rend-toi au camp des $WB$ et tue trois créatures parmi les suivantes en moins de cinq minutes : $creature1$, $creature2$, $creature3$, $creature4$, $creature5$, $creature6$, $creature7$, $creature8$ ou $creature9$. Si tu échoues, retourne au camp des $WB$ et essaye à nouveau.]
+}
+
+FF70_STEP1_OVERLOAD (place camp_WB, faction WB, place oasis)
+{
+	ff70_step1_overload	[Allez au camp des $WB$, dans l'$oasis$.]
+}
+
+FF70_STEP2_1_OVERLOAD (creature_model creature1, creature_model creature2, creature_model creature3, creature_model creature4, creature_model creature5, creature_model creature6, creature_model creature7, creature_model creature8, creature_model creature9)
+{
+	ff70_step2_1_overload	[Encore trois créatures à tuer parmi les suivantes : $creature1$, $creature2$, $creature3$, $creature4$, $creature5$, $creature6$, $creature7$, $creature8$ ou $creature9$.]
+}
+
+FF70_STEP2_2_OVERLOAD (creature_model creature1, creature_model creature2, creature_model creature3, creature_model creature4, creature_model creature5, creature_model creature6, creature_model creature7, creature_model creature8, creature_model creature9)
+{
+	ff70_step2_2_overload	[Encore deux créatures à tuer parmi les suivantes : $creature1$, $creature2$, $creature3$, $creature4$, $creature5$, $creature6$, $creature7$, $creature8$ ou $creature9$.]
+}
+
+FF70_STEP2_3_OVERLOAD (creature_model creature1, creature_model creature2, creature_model creature3, creature_model creature4, creature_model creature5, creature_model creature6, creature_model creature7, creature_model creature8, creature_model creature9)
+{
+	ff70_step2_3_overload	[Encore une créature à tuer parmi les suivantes : $creature1$, $creature2$, $creature3$, $creature4$, $creature5$, $creature6$, $creature7$, $creature8$ ou $creature9$.]
+}
+
+FF70_STEP3_OVERLOAD (bot givervar)
+{
+	ff70_step3_overload	[Retournez voir $givervar$.]
+}
+
+FF70_STEP3_PHRASE (bot givervar)
+{
+	( self.gender = male )
+		ff70_step3_phrase_m	[Je suis prêt pour la suite.]
+	( self.gender = female )
+		ff70_step3_phrase_f	[Je suis prête pour la suite.]
+}
+
+FF70_STEP3_BOTCHAT (place impdunes)
+{
+	ff70_step3_botchat	[Tu as réussi la première étape. Passons maintenant à la seconde. Tu dois faire preuve de rapidité au combat mais aussi dans tes déplacements. Rend-toi à la Flamme de l'Honneur, la Flamme de la Discipline, et la Flamme de la Vérité, dans les $impdunes$. Tu dois y parvenir en moins de dix minutes à partir de maintenant. Reviens me voir si tu échoues.]
+}
+
+FF70_STEP5_OVERLOAD (place impdunes)
+{
+	ff70_step5_overload	[Ciblez les trois Flammes des $impdunes$ en moins de dix minutes.]
+}
+
+FF70_FINISH_OVERLOAD (bot givervar)
+{
+	ff70_finish_overload	[Retournez voir $givervar$.]
+}
+
+FF70_FINISH_PHRASE (bot givervar)
+{
+	ff70_finish_phrase	[J'ai réussi.]
+}
+
+FF70_FINISH_BOTCHAT ()
+{
+	ff70_finish_botchat	[Tu as réussi l'épreuve de rapidité. Voici une récompense pour ton succès.]
+}
+
+FF80_TITLE (bot giver)
+{
+	ff80_title	[(Les Révélateurs) Deuxième]
+}
+
+FF80_FF80_AUTO_MISSION ()
+{
+	ff80_ff80_auto_mission	[Bonjour, je viens pour la seconde épreuve]
+}
+
+FF80_PAS_ASSEZ_FORT ()
+{
+	ff80_pas_assez_fort	[Tu devrais t'entrainer encore un peu avant de passer la seconde épreuve.]
+}
+
+FF80_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	ff80_step0_no_overload_1	[Passer le niveau 80 en combat avant d'aller voir $givervar$]
+}
+
+FF80_STEP0_OVERLOAD (bot givervar)
+{
+	ff80_step0_overload	[Parler à $givervar$]
+}
+
+FF80_STEP0_PHRASE (bot givervar)
+{
+	ff80_step0_phrase	[Bonjour, je suis prêt à passer la seconde épreuve.]
+}
+
+FF80_INSTRUCTIONS (creature_model frahar, place outlawcan)
+{
+	ff80_instructions	[L'épreuve suivante est celle du courage. Tu vas devoir explorer des contrées extrêmement dangereuses, dont la faune pourra probablement t'anéantir en un ou deux coups de patte. Pour la première étape, tu devras repérer une créature puissante - sans devoir la combattre. {break}Pour toi, ce sera... le $outlawcan$. Et tu devras apercevoir... un $frahar$. Bien sûr, tu peux te faire accompagner, même si, à mon avis, c'est beaucoup plus intéressant tout seul...]
+}
+
+FF80_STEP1_OVERLOAD_1 (creature_model frahar, place outlawcan)
+{
+	ff80_step1_overload_1	[Rendez-vous dans $outlawcan$ et ciblez un $frahar$.]
+}
+
+FF80_STEP2_OVERLOAD (bot givervar, creature_model frahar)
+{
+	ff80_step2_overload	[Dites à $givervar$ que vous avez vu le $frahar$.]
+}
+
+FF80_STEP2_PHRASE (bot givervar, creature_model frahar)
+{
+	ff80_step2_phrase	[J'ai vu un $frahar$.]
+}
+
+FF80_STEP2_BOTCHAT (place frahartower, bot player, creature_model savage)
+{
+	( self.gender = male )
+		ff80_step2_botchat_m	[Très bien, tu as réussi. Et maintenant, la seconde étape. Il s'agit d'attaquer et de vaincre une créature... une seule, mais une créature puissante : un $savage$... on les trouve dans $frahartower$. Ce sera difficile, $player$, même pour toi. Les $savage.p$ sont des créatures très dangereuses. Je te conseille d'être prudent... prudent, ou alors bien accompagné.]
+	( self.gender = female )
+		ff80_step2_botchat_f	[Très bien, tu as réussi. Et maintenant, la seconde étape. Il s'agit d'attaquer et de vaincre une créature... une seule, mais une créature puissante : un $savage$... on les trouve dans $frahartower$. Ce sera difficile, $player$, même pour toi. Les $savage.p$ sont des créatures très dangereuses. Je te conseille d'être prudente... prudente, ou alors bien accompagnée.]
+}
+
+FF80_STEP3_OVERLOAD_1 (creature_model savage, int q1, place frahartower)
+{
+	( self.gender = male )
+		ff80_step3_overload_1_m	[Tuez un $savage$ dans $frahartower$. C'est une créature très puissante, alors soyez prudent.]
+	( self.gender = female )
+		ff80_step3_overload_1_f	[Tuez un $savage$ dans $frahartower$. C'est une créature très puissante, alors soyez prudente.]
+}
+
+FF80_FINISH_OVERLOAD (bot givervar)
+{
+	ff80_finish_overload	[Retournez voir $givervar$.]
+}
+
+FF80_FINISH_PHRASE (bot givervar, creature_model savage)
+{
+	ff80_finish_phrase	[J'ai tué ce $savage$.]
+}
+
+FF80_FINISH_BOTCHAT ()
+{
+	( self.gender = male )
+		ff80_finish_botchat_m	[Tu es revenu, et tu es victorieux. Tu as réussi l'épreuve du courage, et tu as gagné cette récompense. Mais la prochaine épreuve est la plus difficile.]
+	( self.gender = female )
+		ff80_finish_botchat_f	[Tu es revenue, et tu es victorieuse. Tu as réussi l'épreuve du courage, et tu as gagné cette récompense. Mais la prochaine épreuve est la plus difficile.]
+}
+
+FF90_TITLE (bot giver)
+{
+	ff90_title	[(Les Révélateurs) Troisième]
+}
+
+FF90_FF90_AUTO_MISSION ()
+{
+	ff90_ff90_auto_mission	[Bonjour, je suis prêt pour la dernière épreuve]
+}
+
+FF90_PAS_ASSEZ_FORT ()
+{
+	ff90_pas_assez_fort	[Tu devrais t'entrainer encore un peu avant de passer la troisième épreuve.]
+}
+
+FF90_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	ff90_step0_no_overload_1	[Passer le niveau 90 en combat avant d'aller voir $givervar$]
+}
+
+FF90_STEP0_OVERLOAD (bot givervar)
+{
+	ff90_step0_overload	[Parler à $givervar$]
+}
+
+FF90_STEP0_PHRASE (bot givervar)
+{
+	ff90_step0_phrase	[Bonjour, je suis prêt à passer la dernière épreuve.]
+}
+
+FF90_INSTRUCTIONS (faction FH, place frahartowers)
+{
+	ff90_instructions	[Pour la dernière épreuve, celle de la Communication, tu vas devoir retourner dans $frahartowers$ et trouver la tribu locale, les $FH$. En plus de protéger la zone en surveillant les Frahars, ils font passer un entraînement particulier à ceux qui le désirent, et leur remettent un insigne en cas de réussite. Va trouver l'officier des $FH$, et ne reviens que lorsque tu auras cet insigne.]
+}
+
+FF90_STEP1_OVERLOAD (bot NPC4, faction FH, place frahartowers)
+{
+	ff90_step1_overload	[Trouvez le camp des $FH$, dans les $frahartowers$, et parlez à leur officier.]
+}
+
+FF90_STEP1_PHRASE (bot NPC4)
+{
+	ff90_step1_phrase	[J'aimerais passer votre entraînement.]
+}
+
+FF90_STEP1_BOTCHAT ()
+{
+	ff90_step1_botchat	[Eh... tu viens pour... l'entraînement !? {break}Eh, les gars ! Venez voir qui prétend être suffisamment fort pour suivre notre entraînement ! {break}Non mais, qu'est-ce que tu crois ? Nous n'avons pas besoin d'une demi-portion comme toi. Si tu veux vraiment te rendre utile, eh bien... voilà, tu pourrais commencer par nous montrer comment tu sais te battre. On verra ce qu'on peut faire pour toi!]
+}
+
+FF90_STEP2_2_OVERLOAD (bot NPC4, creature_model savage)
+{
+	ff90_step2_2_overload	[Annoncez à $NPC4$ que vous avez tué les $savage.p$.]
+}
+
+FF90_STEP2_2_PHRASE (bot NPC4, creature_model savage)
+{
+	ff90_step2_2_phrase	[Ca y est j'ai tué les 10 $savage$]
+}
+
+FF90_STEP2_BOTCHAT (creature_model kipee, place oasis)
+{
+	ff90_step2_botchat	[Eh bien... on dirait que tu t'en es pas trop mal sorti. Tu veux toujours suivre notre entraînement ? Mais tu n'as aucune chance face à des Frahars plus coriaces. Voyons, qu'est-ce que je pourrais te proposer ? {break}Oui, je ne vois rien de mieux... pars pour l'$oasis$, et tue dix $kipee.p$. Mais je ne sais pas si ça suffira pour qu'on t'accepte. Je dois m'entretenir un peu avec les autres pour en décider...]
+}
+
+FF90_STEP4_OVERLOAD (bot NPC4, creature_model kipee)
+{
+	ff90_step4_overload	[Annoncez à $NPC4$ que vous avez tué les $kipee.p$.]
+}
+
+FF90_STEP4_PHRASE (bot NPC4, creature_model kipee)
+{
+	ff90_step4_phrase	[C'est fait, j'ai tué les $kipee.p$.]
+}
+
+FF90_STEP4_BOTCHAT ()
+{
+	ff90_step4_botchat	[Bon... tu as réussi, mais malheureusement ça ne va pas être possible. Il a été décidé que nous n'accepterions pas de guerrier en-dessous d'un certain niveau, et nous ne pouvons pas faire d'exception. Tout ce que je peux faire pour toi, c'est te donner cet insigne d'honneur, qui atteste de ton aide auprès de notre tribu.]
+}
+
+FF90_FINISH_OVERLOAD_1 (item i1, int qt1, int qual1, bot givervar, faction FH)
+{
+	ff90_finish_overload_1	[Montrez l'insigne à $givervar$ en lui disant que les $FH$ ont refusé de vous entraîner.]
+}
+
+FF90_OUTOFROOM_OVERLOAD (bot givervar)
+{
+	ff90_outofroom_overload	[Faites de la place avant d'aller parler à $givervar$.]
+}
+
+FF90_OUTOFROOM_PHRASE (bot givervar)
+{
+	ff90_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+FF90_OUTOFROOM_BOTCHAT ()
+{
+	ff90_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+FF90_FINISH_BOTCHAT ()
+{
+	( self.gender = male )
+		ff90_finish_botchat_m	[Ah... je vois. Ils ne t'ont pas jugé assez fort pour eux, n'est-ce pas ? {break}Eh bien, en réalité, c'est tout à fait normal. L'épreuve consistait en ça : reconnaître ton infériorité au combat face à eux, et accepter les tâches qu'ils t'ont demandées, dans l'espoir d'atteindre un jour leur niveau. Et toi, tu ne t'es pas découragé ni fâché devant ce fait. Tu as réussi la première étape ! {break}Il ne te reste plus qu'une seule étape à franchir.]
+	( self.gender = female )
+		ff90_finish_botchat_f	[Ah... je vois. Ils ne t'ont pas jugé assez forte pour eux, n'est-ce pas ? {break}Eh bien, en réalité, c'est tout à fait normal. L'épreuve consistait en ça : reconnaître ton infériorité au combat face à eux, et accepter les tâches qu'ils t'ont demandées, dans l'espoir d'atteindre un jour leur niveau. Et toi, tu ne t'es pas découragée ni fâchée devant ce fait. Tu as réussi la première étape ! {break}Il ne te reste plus qu'une seule étape à franchir.]
+}
+
+FF100_TITLE (bot giver)
+{
+	ff100_title	[(Les Révélateurs) Fin]
+}
+
+FF100_FF100_AUTO_MENU ()
+{
+	ff100_ff100_auto_menu	[Je suis prêt pour l'étape finale]
+}
+
+FF100_PAS_ASSEZ_FORT ()
+{
+	ff100_pas_assez_fort	[Tu devrais t'entrainer encore un peu avant de commencer la dernière étape.]
+}
+
+FF100_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	ff100_step0_no_overload_1	[Passer le niveau 100 en combat avant d'aller voir $givervar$]
+}
+
+FF100_STEP0_OVERLOAD (bot givervar)
+{
+	ff100_step0_overload	[Parler à $givervar$]
+}
+
+FF100_STEP0_PHRASE (bot givervar)
+{
+	ff100_step0_phrase	[Bonjour, je suis prêt pour l'étape finale.]
+}
+
+FF100_INSTRUCTIONS (bot NPC5)
+{
+	ff100_instructions	[Tu vas avoir très peu d'informations pour cette dernière étape. En ville, cherche une femme du nom de $NPC5$. Elle détient une bague. Apporte-moi cette bague, et tu auras terminé cette épreuve. Attention, tu n'as pas le droit de la lui acheter, ni d'avoir recours à la violence ou au vol pour l'obtenir.]
+}
+
+FF100_STEP1_OVERLOAD (bot NPC6)
+{
+	ff100_step1_overload	[Cherchez quelqu'un dans la ville qui pourrait vous aider. Quelqu'un qui connaît beaucoup de gens.]
+}
+
+FF100_STEP1_PHRASE (bot NPC6, bot NPC5)
+{
+	ff100_step1_phrase	[Que pouvez-vous me dire sur $NPC5$ ?]
+}
+
+FF100_STEP1_BOTCHAT (bot NPC5, bot NPC7)
+{
+	ff100_step1_botchat	[$NPC5$ ? Une femme assez discrète. Mais elle est venue ici récemment... avec une amie... une amie qui s'appelait $NPC7$, si je me souviens bien. Mais cette amie était de voyage. Elle a dit qu'elle rentrerait bientôt à Dyron. Donc, j'imagine que c'est là-bas qu'elle se trouve...]
+}
+
+FF100_STEP2_OVERLOAD (bot NPC7)
+{
+	ff100_step2_overload	[Voyagez jusqu'à Dyron et trouvez $NPC7$.]
+}
+
+FF100_STEP2_PHRASE (bot NPC7, bot NPC5)
+{
+	ff100_step2_phrase	[Tu es une amie de $NPC5$, n'est-ce pas ?]
+}
+
+FF100_STEP2_BOTCHAT (bot NPC5)
+{
+	ff100_step2_botchat	[$NPC5$ ? Oui, je la connais bien. Amie par contre est un bien grand mot... Tu as besoin de quelque chose d'elle ? Sa bague...? Je vois. Elle ne va pas s'en séparer facilement. Mais si ça peut t'aider, je sais qu'elle a un faible pour les boissons exotiques. Peut-être qu'un barman pourrait s'en charger...]
+}
+
+FF100_STEP3_OVERLOAD (bot NPC6)
+{
+	ff100_step3_overload	[Demandez au barman de Pyr s'il peut vous faire une boisson exotique.]
+}
+
+FF100_STEP3_PHRASE (bot NPC6)
+{
+	ff100_step3_phrase	[J'aurais besoin d'une boisson exotique.]
+}
+
+FF100_STEP3_BOTCHAT (place frahartowers, creature_model kincher, item kinchersec)
+{
+	ff100_step3_botchat	[Une boisson ? Exotique ? J'imagine que je pourrais te faire ça. Moi aussi j'aurais besoin d'un petit service. Trouve moi 12 $kinchersec$ et je te preparerai ta boisson ! Tu trouveras des $kincher$ le long de la route Nord des $frahartowers$.]
+}
+
+FF100_STEP5_BOTCHAT ()
+{
+	ff100_step5_botchat	[Ah, parfait. Attends que je te fasse ça... {break}Et voilà, c'est prêt !]
+}
+
+FF100_STEP6_OVERLOAD_1 (item i1, int qt1, int qual1, bot NPC5)
+{
+	ff100_step6_overload_1	[Offrez la boisson à $NPC5$.]
+}
+
+FF100_STEP6_BOTCHAT ()
+{
+	ff100_step6_botchat	[Qu'est-ce que c'est ? C'est pour moi ? {break}Oh... délicieux ! Je n'ai jamais rien goûté d'aussi bon... c'est très gentil de ta part ! {break}Tu as besoin de ma bague pour une épreuve ? Tiens, prend-la. De toute façon, elle ne vaut pas grand-chose...]
+}
+
+FF100_STEP7_OVERLOAD_1 (item i1, int qt1, int qual1, bot givervar)
+{
+	ff100_step7_overload_1	[Donnez la bague à $givervar$ pour lui montrer que vous avez réussi.]
+}
+
+FF100_STEP7_BOTCHAT ()
+{
+	ff100_step7_botchat	[Et tu as également réussi cette épreuve. J'ignore comment ça va se terminer pour toi, mais tu es définitivement de la trempe des héros. Dis-moi, utilises-tu des armes de mélée ou des armes à distance ?]
+}
+
+FF100_PROPOSITION_LOURDES ()
+{
+	ff100_proposition_lourdes	[Des armes de mélée.]
+}
+
+FF100_PROPOSITION_MOYENNES ()
+{
+	ff100_proposition_moyennes	[Des armes à distance.]
+}
+
+FF100_LOURDES_BOTCHAT ()
+{
+	ff100_lourdes_botchat	[Bien. Retourne à l'endroit où nous faisons passer nos messages... il y aura une surprise pour toi là-bas.]
+}
+
+FF100_FINISH_OVERLOAD (place emplacement_message, faction WB)
+{
+	ff100_finish_overload	[Retournez à l'endroit qu'utilisent les Révélateurs pour leurs messages. Cet endroit est au nord du camp des $WB$, dans une zone de sable parmi l'herbe.]
+}
+
+FF100_FINISH_MSG ()
+{
+	ff100_finish_msg	[&AMB&Vous trouvez une magnifique hache à deux mains  enterrée dans le sol !]
+}
+
+FF100_MOYENNES_BOTCHAT ()
+{
+	ff100_moyennes_botchat	[Bien. Retourne à l'endroit où nous faisons passer nos messages... il y aura une surprise pour toi là-bas.]
+}
+
+FF100_FINISH2_OVERLOAD (place emplacement_message, faction WB)
+{
+	ff100_finish2_overload	[Retournez à l'endroit qu'utilisent les Révélateurs pour leurs messages. Cet endroit est au nord du camp des $WB$, dans une zone de sable parmi l'herbe.]
+}
+
+FF100_FINISH2_MSG ()
+{
+	ff100_finish2_msg	[&AMB&Vous trouvez une magnifique arme de tir enterrée dans le sol !]
+}
+
+FF100_PROPOSITION_NOANSWER_PHRASE (bot givervar)
+{
+	ff100_proposition_noanswer_phrase	[Je vais choisir maintenant.]
+}
+
+FF100_OUTOFROOM_OVERLOAD (bot givervar)
+{
+	ff100_outofroom_overload	[Faites de la place avant d'aller parler à $givervar$.]
+}
+
+FF100_OUTOFROOM_PHRASE (bot givervar)
+{
+	ff100_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+FF100_OUTOFROOM_BOTCHAT ()
+{
+	ff100_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+FF_ORIENTATION_SAGE_AUTO_MENU ()
+{
+	ff_orientation_sage_auto_menu	[Qui dois-je aller voir pour la suite de (Les Révélateurs) ?]
+}
+

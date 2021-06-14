@@ -1,0 +1,35 @@
+﻿R_01_28_MIS_TITLE (bot giver, place dew_drops)
+{
+	r_01_28_mis_title	[Repérage dans les $dew_drops$]
+}
+
+R_01_28_MIS_DESC (bot giver, place dew_drops, place fairhaven)
+{
+	r_01_28_mis_desc	[Dans la région $dew_drops$, vous trouverez des passages menant à d'autres régions. Le barman de $fairhaven$ aimerait avoir des informations toutes fraîches sur ces passages et les dangers potentiels aux alentours.]
+}
+
+R_01_28_P_LDF_INTRO_1 (place dew_drops)
+{
+	r_01_28_p_ldf_intro_1	[J'vais vous dire un truc : les $dew_drops$ sont un vrai gruyère avec tous ces passages menant à d'autres régions ! Il se trouve que j'dois en savoir plus sur ces passages et sur les animaux qui s'trouvent aux alentours.{break} J'veux qu'vous alliez là-bas, traversiez les passages, écriviez une note sur les animaux et reveniez ici avec un rapport bien fourni !{break} Si vous êtes compétent, j'vous enseignerai une technique qui vous aidera à vous repérer plus facilement.]
+}
+
+R_01_28_P_SM_TELEPORT ()
+{
+	r_01_28_p_sm_teleport	[&AMB&Vous devez maintenant traverser le vortex]
+}
+
+R_01_28_O_VP_PLACE_VORTEX (place place_tp_1a)
+{
+	r_01_28_o_vp_place_vortex	[Traversez le vortex]
+}
+
+R_01_28_M_T2_DEBRIEF_1 (bot giver)
+{
+	r_01_28_m_t2_debrief_1	[Voici mon rapport.]
+}
+
+R_01_28_P_BC_DEBRIEF_1 ()
+{
+	r_01_28_p_bc_debrief_1	[Parfait, $self$, il me sera bien utile ! J'pourrai donner des informations précises aux voyageurs qui veulent traverser cette partie du monde.{break} Voici un cube d'ambre pour votre peine, il vous en dira plus sur la région. Et comme promis, maintenant j'vais vous enseigner une technique qui vous permettra de placer vos propres repères lorsque vous explorerez des nouvelles terres.]
+}
+

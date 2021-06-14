@@ -1,0 +1,127 @@
+﻿R_03_26_MIS_TITLE ()
+{
+	r_03_26_mis_title	[Le nid d'espions]
+}
+
+R_03_26_MIS_DESC ()
+{
+	r_03_26_mis_desc	[Le chef des matisian border guards attend un message secret intercepté à des espions First_deserters.
+Il veut vous tester et voir si vous pouvez récupérer le document.]
+}
+
+R_03_26_P_LDF_INTRO_1 (bot spy_1)
+{
+	r_03_26_p_ldf_intro_1	[Notre tâche est d'intercepter les espions ennemis se rendant à Majestic Garden et de maintenir l'ordre dans la région. Nous sommes en guerre contre les First Deserters depuis bien longtemps, mais il se pourrait que leur fin soit imminente. En effet, nos espions ont réussi à intercepter un message de la plus haute importance. 
+Je vais te proposer une mission, pour voir de quel bois tu es fait : ramène moi ce document !
+Va rencontrer $spy_1$ et parles-lui au coucher du soleil.
+C'est un espion à nous.
+Il te posera une question, et tu répondras : traîtres. Cela te permettra de te faire reconnaître. A partir de là, suis ses instructions ; elles te mèneront au porteur du message.
+Un conseil, ne fait confiance à personne, les espions ennemis peuvent se cacher n'importe où ! Si tu y parviens, tu seras digne de recevoir l'arme de notre tribu.]
+}
+
+R_03_26_O_T2_SPY_1 (bot spy_1)
+{
+	r_03_26_o_t2_spy_1	[Parler à $spy_1$ au crépuscule]
+}
+
+R_03_26_M_T2_SPY_1 (bot spy_1)
+{
+	r_03_26_m_t2_spy_1	[Je viens en ami.]
+}
+
+R_03_26_P_BC_FAIL_1 ()
+{
+	r_03_26_p_bc_fail_1	[Tu n'as pas su répondre !
+Ta tête ne me revenais pas de toute façons.
+Tu va payer, sale espion !!!]
+}
+
+R_03_26_P_DC_SPY_1 ()
+{
+	r_03_26_p_dc_spy_1	[Halte là ! 
+Réponds à ma question : quelle est la plus grande menace envers le peuple Matis ?]
+}
+
+R_03_26_P_DA_KITINS_1 ()
+{
+	r_03_26_p_da_kitins_1	[Les kitins]
+}
+
+R_03_26_P_DA_1ST_DESERTERS_1 ()
+{
+	r_03_26_p_da_1st_deserters_1	[Les first deserters]
+}
+
+R_03_26_P_DA_TRAITORS_1 ()
+{
+	r_03_26_p_da_traitors_1	[Les traitres]
+}
+
+R_03_26_P_BC_SPY_1 (place place_1, item ring_1, bot spy_2)
+{
+	r_03_26_p_bc_spy_1	[Bienvenue à toi, ami.
+Tu dois te rendre à $place_1$, et donner cet anneau $ring_1$ à $spy_2$.
+Il te reconnaîtra alors, et tu devras suivre ses instructions.
+Bonne chance à toi et fais attention, les espions First Deserters sont à ta recherche.
+Bonne chance, et n'oublie pas : ne te fie à personne, même pas à ton ombre !]
+}
+
+R_03_26_P_BC_SPY_2 (place place_2)
+{
+	r_03_26_p_bc_spy_2	[Ah te voilà enfin ami !
+Nous devons nous dépêcher car le temps presse.
+L'ennemi est à tes trousses, tu dois faire preuve de vigilance.
+L'homme que tu cherches se trouve à $place_2$.
+Il te posera une question et tu ne devras pas lui répondre !]
+}
+
+R_03_26_M_T2_SPY_3 (bot spy_3)
+{
+	r_03_26_m_t2_spy_3	[...]
+}
+
+R_03_26_P_BC_FAIL_2 ()
+{
+	r_03_26_p_bc_fail_2	[Dommage pour toi l'ami, mais je ne pense pas que nous faisons partie du même camp.
+Adieu !]
+}
+
+R_03_26_P_DC_SPY_3 ()
+{
+	r_03_26_p_dc_spy_3	[Enfin te voilà !
+Je désespérais de te voir arriver.
+As-tu fais bon voyage ?]
+}
+
+R_03_26_P_DA_YES_1 ()
+{
+	r_03_26_p_da_yes_1	[Oui, la promenade fut agréable.]
+}
+
+R_03_26_P_DA_NO_1 ()
+{
+	r_03_26_p_da_no_1	[Non, c'était épuisant et dangereux.]
+}
+
+R_03_26_P_DA_VOID_1 ()
+{
+	r_03_26_p_da_void_1	[...]
+}
+
+R_03_26_P_BC_SPY_3 ()
+{
+	r_03_26_p_bc_spy_3	[Ah enfin, te voilà.
+Tu es bien sur que personne ne t'as suivi ? Tu en es bien sur ?
+Bon, voila le document, cache le sur toi et file discrètement le remettre à celui qui t'as envoyé.
+Bonne chance !]
+}
+
+R_03_26_P_BC_DEBRIEF_1 ()
+{
+	r_03_26_p_bc_debrief_1	[Bravo !
+Je ne pensais pas te voir revenir aussi vite, tu m'impressiones.
+Pour te recompenser, reçois ce cube d'ambre qui te fournira de précieuses informations sur notre tribu.
+Tu fais désormais partie de nos alliés, voici en récompense une de nos armes.
+Tu pourras de plus apprendre comment les fabriquer auprès du foreman de notre campement.]
+}
+

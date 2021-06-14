@@ -1,0 +1,527 @@
+﻿/*********************************************************************************************************************************************************
+*********************************						FORAGE AND QUARTER						**********************************************************
+********************************************************************************************************************************************************/
+/*
+OUTPOST_CHARGE_FOOD_1
+
+*/
+OUTPOST_CHARGE_FOOD_1_TITLE (bot giver, race ragus)
+{
+		outpost_charge_food_1_title		[Some food for the troops.]
+
+}
+OUTPOST_CHARGE_FOOD_1_DESC (bot giver, item rm1, item rm2)
+{
+		outpost_charge_food_1_desc		[Find some $rm1$ and some $rm2$ for the stock of food.]
+}
+
+OUTPOST_CHARGE_FOOD_1_STEP_1 (item rm1, item rm2)
+{
+		outpost_charge_food_1_step_1 		[Our stock of food is badly low, we must complete it as fast as possible.{break}
+											We have no longer $rm1$ and $rm2$.\n
+											Find a big quantity of each.]
+}
+
+OUTPOST_CHARGE_FOOD_1_END ()
+{
+		outpost_charge_food_1_end 		[Good job, we have enough food for a while now.]
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+OUTPOST_CHARGE_FORAGE_1
+*/
+OUTPOST_CHARGE_FORAGE_1_TITLE (bot giver)
+{
+	outpost_charge_forage_1_title	[Foraging for the outpost]
+
+}
+
+OUTPOST_CHARGE_FORAGE_1_DESC (bot giver)
+{
+	outpost_charge_forage_1_desc		[Vous devez prospecter pour ramasser certaines matières végétales nécessaires à l'entretien de l'avant-poste.]
+
+}
+
+OUTPOST_CHARGE_FORAGE_1_STEP_1 (player p)
+{
+//Outpost mission giver
+	outpost_charge_forage_1_step_1	[Salut à toi, $p$. Tu n'es pas sans avoir qu'entretenir un avant-poste demande beaucoup d'efforts... et 
+									certaines réparations nécessitent des matières premières locales, qui bien souvent ne se trouvent 
+									que dans les environs.{break} Si tu pouvais en localiser et m'en ramener une bonne 
+									quantité, cela me serait fort utile ! Tu es d'accord ? Parfait ! Bonne chance dans ta prospection !]
+
+}
+
+OUTPOST_CHARGE_FORAGE_1_GIVE_ITEM_MENU (int item_count)
+{
+	outpost_charge_forage_1_give_item_menu		[Donner les matières premières]
+
+}
+
+OUTPOST_CHARGE_FORAGE_1_END ()
+{
+//Outpost mission giver
+	outpost_charge_forage_1_end		[Merci de ton coup de main ! Il ne sera pas dit que notre guilde 
+									ne s'occupe pas de son avant-poste !]
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+OUTPOST_CHARGE_QUARTER_1
+*/
+OUTPOST_CHARGE_QUARTER_1_TITLE (bot giver)
+{
+	outpost_charge_quarter_1_title	[Hunting for the outpost]
+
+}
+
+OUTPOST_CHARGE_QUARTER_1_DESC (bot giver)
+{
+	outpost_charge_quarter_1_desc		[Partez à la chasse afin de ramener des matières animales nécessaires à l'entretien de l'outpost.]
+
+}
+
+OUTPOST_CHARGE_QUARTER_1_STEP_1 (item itema, item itemb)
+{
+//Outpost mission giver
+	outpost_charge_quarter_1_step_1	[Je viens d'inspecter l'avant-poste, et je pense que quelques réparations s'imposent.{break} Mais pour cela, 
+									j'ai besoin de certaines matières premières, que l'on trouve sur des espèces de la région. Il est 
+									temps de partir en chasse ! Apporte-moi des $itema.p$ et des $itemb.p$, je saurai quoi en faire !]
+
+}
+
+OUTPOST_CHARGE_QUARTER_1_GIVE_ITEM_MENU (int item_count)
+{
+	outpost_charge_quarter_1_give_item_menu		[Donner les matières premières]
+
+}
+
+OUTPOST_CHARGE_QUARTER_1_END (player p)
+{
+//Outpost mission giver
+	outpost_charge_quarter_1_end		[Je vois que la chasse a été bonne ! Merci de ta participation, $p$ !]					 		
+
+}
+
+/*********************************************************************************************************************************************************
+*********************************								FIGHT							**********************************************************
+********************************************************************************************************************************************************/
+/*
+OUTPOST_CHARGE_FIGHT_1
+*/
+OUTPOST_CHARGE_FIGHT_1_TITLE (bot giver)
+{
+	outpost_charge_fight_1_title			[Fighting bandits]
+
+}
+
+OUTPOST_CHARGE_FIGHT_1_DESC (bot giver)
+{
+	outpost_charge_fight_1_desc		[Quelques brigands ont été aperçus dans les environs : il vous faut les débusquer et les mettre hors d'état 
+									de nuire avant qu'ils ne quittent la région pour revenir en force.]
+
+}
+
+OUTPOST_CHARGE_FIGHT_1_STEP_1 (player p)
+{
+//Outpost mission giver
+	outpost_charge_fight_1_step_1	[Tiens, $p$ ! Dis-moi, te sens-tu d'humeur guerrière ? On m'a rapporté qu'une petite troupe de brigands se déplaçait 
+									depuis peu dans la région.{break} J'ai peur qu'ils ne fassent partie d'une bande de plus grande envergure, qui 
+									pourrait convoiter les richesses de notre avant-poste ! Trouve ces bandits et débarrasse-nous en, 
+									avant qu'ils ne prennent le large pour amener du renfort !]
+
+}
+
+OUTPOST_CHARGE_FIGHT_1_SETOBJ (bot current)
+{
+	outpost_charge_fight_1_setobj	[Trouvez et tuez les bandits.]
+
+}
+
+OUTPOST_CHARGE_FIGHT_1_TALKMENU (bot current)
+{
+	outpost_charge_fight_1_talkmenu	[Les bandits sont morts.]
+
+}
+
+OUTPOST_CHARGE_FIGHT_1_END ()
+{
+//Outpost mission giver
+	outpost_charge_fight_1_end		[Bien joué ! Il faudra se montrer vigilant, je suis prêt à parier que d'autres bandits se montreront très bientôt...]					 		
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+OUTPOST_CHARGE_FIGHT_2
+*/
+OUTPOST_CHARGE_FIGHT_2_TITLE (bot giver)
+{
+	outpost_charge_fight_2_title	[Fighting predators]
+
+}
+
+OUTPOST_CHARGE_FIGHT_2_DESC (bot giver)
+{
+	outpost_charge_fight_2_desc		[Vous allez combattre des créatures dangereuses afin de rendre la région de votre avant-poste plus sûre.]
+
+}
+
+OUTPOST_CHARGE_FIGHT_2_STEP_1 ()
+{
+//Outpost mission giver
+	outpost_charge_fight_2_step_1	[Je crains que notre avant-poste ne soit l'un des seuls endroits sûrs au sein de cette région sauvage.{break} 
+									Sans doute pourrions-nous améliorer un peu les choses en faisant la chasse aux prédateurs 
+									qui attaquent les voyageurs, qu'en dis-tu ? Je vois que tu es de mon avis ! Pars arpenter la forêt, 
+									et choisis ton gibier, mais prends garde à ne pas devenir toi-même leur proie !]
+
+}
+
+OUTPOST_CHARGE_FIGHT_2_END ()
+{
+//Outpost mission giver
+	outpost_charge_fight_2_end		[Parfait, grâce à notre guilde la région devrait être un peu moins dangereuse pour les voyageurs.]
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+OUTPOST_CHARGE_FIGHT_3
+
+*/
+OUTPOST_CHARGE_FIGHT_3_TITLE (bot giver, race gibbai)
+{
+		outpost_charge_fight_3_title		[Combat préventif contre les $gibbai.p$]
+
+}
+OUTPOST_CHARGE_FIGHT_3_DESC (bot giver, race gibbai)
+{
+		outpost_charge_fight_3_desc		[Assurez vous que les $gibbai.p$ de la région ne soient pas un danger pour le fonctionnement de l'outpost.]
+}
+
+OUTPOST_CHARGE_FIGHT_3_STEP_1 (race gibbai)
+{
+		outpost_charge_fight_3_step_1 		[Des $gibbai.p$ rodaient cette nuit pres de l'outpost, l'odeur de nos stocks de provisions a du attirer leur attention.{break}
+											Ils sont repartis mais je ne serai pas surpris de les voir revenir bientot en plus grand nombre d'ici peu.\n
+											Par prévention nous devrions leur montrer que s'aventurer pres de nos provisions peut etre dangereux pour eux.\n
+											Trouvez les et apprenez eux les bonnes manieres.]
+}
+
+OUTPOST_CHARGE_FIGHT_3_END ()
+{
+		outpost_charge_fight_3_end 		[Tres bien, si comme on le dit ces cratures sont intelligentes elles ont du comprendre la leçon.]
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+	OUTPOST_CHARGE_FIGHT_4
+*/
+OUTPOST_CHARGE_FIGHT_4_TITLE (bot giver)
+{
+	outpost_charge_fight_4_title	[Aidez les voyageurs.]
+
+}
+
+OUTPOST_CHARGE_FIGHT_4_DESC (bot giver)
+{
+	outpost_charge_fight_4_desc		[Allez à la rescousse de voyageurs qui sont tombés dans une embuscade.]
+
+}
+
+OUTPOST_CHARGE_FIGHT_4_STEP_1 ()
+{
+//Tribu mission giver
+	outpost_charge_fight_4_step_1	[Vite ! Un groupe de bandits a tendu une embuscade à un groupe de voyageurs de passage.\n
+									Allez les aider !]
+
+}
+
+OUTPOST_CHARGE_FIGHT_4_TALKMENU ()
+{
+	outpost_charge_fight_4_talkmenu		[Les voyageurs sont sains et saufs]
+}
+
+OUTPOST_CHARGE_FIGHT_4_END ()
+{
+	outpost_charge_fight_4_end		[Bravo, nous devons absolument assurer la sécurité des voyageurs tant que nous avons le contrôle de cet avant-poste.]
+}
+
+/*********************************************************************************************************************************************************
+*********************************								CRAFT							**********************************************************
+********************************************************************************************************************************************************/
+/*
+OUTPOST_CHARGE_CRAFT_1
+*/
+OUTPOST_CHARGE_CRAFT_1_TITLE (bot giver)
+{
+	outpost_charge_craft_1_title	[Crafting and selling armor for the outpost]
+
+}
+
+OUTPOST_CHARGE_CRAFT_1_DESC (bot giver, item itema, item itemb)
+{
+	outpost_charge_craft_1_desc		[L'entretien d'un avant-poste coûte cher : afin de financer les dépenses, vous allez fabriquer des $itema.p$ 
+									et des  $itemb.p$, puis les vendre à un marchand.]
+
+}
+
+OUTPOST_CHARGE_CRAFT_1_STEP_1 (place village, bot marchand, item itema, item itemb)
+{
+//Outpost mission giver
+	outpost_charge_craft_1_step_1	[L'entretien d'un avant-poste coûte fort cher, et je dois utiliser toutes les bonnes volontés 
+									pour participer à son financement.{break} Je connais un marchand à $village$, nommé $marchand$, qui achète 
+									un bon prix les armures de qualité raisonnable. Je sais que $marchand$ a besoin de $itema.p$ et de $itemb.p$ en ce moment. 
+									Puisque tu es artisan, pourquoi ne pas en fabriquer et les lui vendre ? Tu me remettras le fruit 
+									de la vente. Bon travail !]
+
+}
+
+OUTPOST_CHARGE_CRAFT_1_GIVE_ITEM_MENU (int item_count)
+{
+	outpost_charge_craft_1_give_item_menu		[Proposer les objets au marchand]
+
+}
+
+OUTPOST_CHARGE_CRAFT_1_STEP_2 ()
+{
+//Marchand
+	outpost_charge_craft_1_step_2	[Ces objets m'intéressent, je te les achète ! Prends cette bourse en retour, elle contient la somme correspondant 
+									au prix habituel pour ces marchandises.]
+
+}
+
+OUTPOST_CHARGE_CRAFT_1_END (player p)
+{
+//Outpost mission giver
+	outpost_charge_craft_1_end		[Bien, la vente a été fructueuse ! Ce qui arrange bien nos affaires. Merci, $p$ !]					 		
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+OUTPOST_CHARGE_CRAFT_2
+*/
+OUTPOST_CHARGE_CRAFT_2_TITLE (bot giver)
+{
+	outpost_charge_craft_2_title			[Crafting quickly good quality items]
+
+}
+
+OUTPOST_CHARGE_CRAFT_2_DESC (bot giver, item i)
+{
+	outpost_charge_craft_2_desc		[Afin d'honorer une commande en retard faite auprès de la guilde, il vous faut fabriquer rapidement quelques 
+									$i.p$ de bonne qualité.]
+
+}
+
+OUTPOST_CHARGE_CRAFT_2_STEP_1 (player p, item itema)
+{
+//Outpost mission giver
+	outpost_charge_craft_2_step_1	[Ah, $p$, tu tombes bien ! Tu as quelques compétences en artisanat je crois ? J'ai un problème urgent à résoudre ! 
+									Un marchand, sachant que nous avions pris le contrôle de cet avant-poste, a supposé que nous 
+									allions récupérer certaines matières premières, et les utiliser dans la fabrication d'objets de qualité.{break} Il a donc fait 
+									une commande importante à notre guilde... mais nous avons pris du retard dans la fabrication, et le délai de 
+									livraison expire bientôt ! J'ai donc besoin que tu fabriques de toute urgence des $itema.p$ de bonne qualité, 
+									afin de compléter la commande !]
+
+}
+
+OUTPOST_CHARGE_CRAFT_2_GIVE_ITEM_MENU (int item_count)
+{
+	outpost_charge_craft_2_give_item_menu		[Voici les objets.]
+
+}
+
+OUTPOST_CHARGE_CRAFT_2_END (player p)
+{
+//Outpost mission giver
+	outpost_charge_craft_2_end		[Bravo, $p$, tu me rends un fier service ! Je vais pouvoir envoyer la commande à temps. Le marchand ne regrettera 
+									pas la confiance placée en notre guilde, ce qui est tout à notre bénéfice !]					 		
+
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+OUTPOST_CHARGE_CRAFT_3
+
+*/
+OUTPOST_CHARGE_CRAFT_3_TITLE (bot giver)
+{
+	outpost_charge_craft_3_title			[Crafting some range weapons for the security of the outpost]
+
+}
+OUTPOST_CHARGE_CRAFT_3_DESC (bot giver)
+{
+	outpost_charge_craft_3_desc			[Craft some range weapons.]
+}
+
+OUTPOST_CHARGE_CRAFT_3_STEP_1 (item rangeweapon1, item rangeweapon2)
+{
+	outpost_charge_craft_3_step_1 			[Nous n'avons pas suffisamment d'armes de distance, si nous devions subir une attaque de bandits nous risquons d'en manquer.{break}
+															Nous devons completer notre stock au plus vite.\n
+															Fabriquez en rapidement.\n
+															Pour le moment il nous faudrait des $rangeweapon1.p$ et des $rangeweapon2.p$.]
+}
+
+OUTPOST_CHARGE_CRAFT_3_END ()
+{
+	outpost_charge_craft_3_end 			[Tres bien, ces armes seront utiles tôt ou tard.]
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+	OUTPOST_CHARGE_CRAFT_4
+*/
+OUTPOST_CHARGE_CRAFT_4_TITLE (bot giver)
+{
+	outpost_charge_craft_4_title	[Refaire les stocks de munitions.]
+
+}
+
+OUTPOST_CHARGE_CRAFT_4_DESC (bot giver)
+{
+	outpost_charge_craft_4_desc		[Aidez à alimenter le stock de munitions qui est mis à rude épreuve dans ces contrées hostiles.]
+		
+}
+
+OUTPOST_CHARGE_CRAFT_4_STEP_1 (item mun1, item mun2)
+{
+	outpost_charge_craft_4_step_1	[Notre stock de munitions diminue rapidement avec tous ces combats.\n
+									Aidez-nous à le renflouer, nous avons besoin principalement de $mun1$ et de $mun2$.]
+
+}
+
+OUTPOST_CHARGE_CRAFT_4_END ()
+{
+	outpost_charge_craft_4_end		[Merci, nous avons maintenant moins de chances de tomber à cours de munitions au beau milieu d'un combat.]	
+}
+
+/*********************************************************************************************************************************************************
+*********************************							GIVE MONEY							**********************************************************
+********************************************************************************************************************************************************/
+/*
+OUTPOST_CHARGE_GIVE_MONEY_1
+*/
+OUTPOST_CHARGE_GIVE_MONEY_1_TITLE (bot giver)
+{
+		outpost_charge_give_money_1_title		[La collecte.]
+
+}
+OUTPOST_CHARGE_GIVE_MONEY_1_DESC (bot giver)
+{
+		outpost_charge_give_money_1_desc		[Collectez suffisament de monnaie pour subvenir aux besoins de l'outpost.]
+}
+
+OUTPOST_CHARGE_GIVE_MONEY_1_STEP_1 ()
+{
+		outpost_charge_give_money_1_step_1 		[J'ai besoin d'une grande quantité de monnaie pour assurer l'entretien de l'outpost.{break}
+												C'est une somme importante et il sera difficile pour une seule personne de la réunir.\n
+												Je vous conseille de demander la participation des membres de votre guilde ou de commercer avec les marchands des villages alentours.\n
+												Revenez me voir quand vous aurez reuni la somme nécessaire.]
+}
+
+OUTPOST_CHARGE_GIVE_MONEY_1_END ()
+{
+		outpost_charge_give_money_1_end 		[Tres bon travail! C'est amplement suffisant pour le moment.]
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+OUTPOST_CHARGE_GIVE_MONEY_2
+*/
+OUTPOST_CHARGE_GIVE_MONEY_2_TITLE (bot giver)
+{
+    outpost_charge_give_money_2_title        [Paying a tax for the outpost]
+
+}
+
+OUTPOST_CHARGE_GIVE_MONEY_2_DESC (bot giver)
+{
+    outpost_charge_give_money_2_desc        [Trouvez le collecteur d'impôts afin de payer la taxe liée à la charge de l'avant-poste.]
+
+}
+
+OUTPOST_CHARGE_GIVE_MONEY_2_STEP_1 (place ville, bot target, place region)
+{
+//Outpost mission giver
+    outpost_charge_give_money_2_step_1    [Je viens de recevoir un message en provenance de $ville$. On nous rappelle qu'une ancienne coutume stipule que des taxes 
+											d'avant-poste doivent être versées au collecteur d'impôts.{break}
+											Nous ne sommes pas obligés de les payer, mais nous acquitter de ces dîmes nous ferait bien voir auprès des autorités de $ville$... 
+											ce qui est bénéfique pour la charge qui nous a été confiée !\n
+											J'encourage donc tous les membres de la guilde qui en ont les moyens à se montrer généreux 
+											envers le collecteur d'impôts.\n
+											Il se nomme $target$, et peut être trouvé la plupart du temps sur les routes de $region$.]
+
+}
+
+OUTPOST_CHARGE_GIVE_MONEY_2_STEP_2 ()
+{
+//Collecteur d'impôts
+    outpost_charge_give_money_2_step_2    	[Il est bon de voir que les anciennes coutumes sont respectées.\n
+    										Voici ton reçu pour ta participation au paiement de la taxe.]
+
+}
+
+OUTPOST_CHARGE_GIVE_MONEY_2_GIVE_ITEM_MENU ()
+{
+    outpost_charge_give_money_2_give_item_menu        [J'ai payé la taxe.]
+
+}
+
+OUTPOST_CHARGE_GIVE_MONEY_2_END (player p)
+{
+//Outpost mission giver
+    outpost_charge_give_money_2_end       	[Sois remercié de ta généreuse donation, $p$.\n
+    										Chaque participation est une pierre de plus à notre édifice !]
+
+}
+
+/*********************************************************************************************************************************************************
+*********************************							EXPLORE								**********************************************************
+********************************************************************************************************************************************************/
+/*
+OUTPOST_CHARGE_VISIT_1
+*/
+OUTPOST_CHARGE_VISIT_1_TITLE (bot giver)
+{
+	outpost_charge_visit_1_title			[Visiting a few places]
+
+}
+
+OUTPOST_CHARGE_VISIT_1_DESC (bot giver)
+{
+	outpost_charge_visit_1_desc		[Afin de préparer le rapport qui doit être fait sur la tenue de l'avant-poste, vous devez faire un repérage 
+									dans différentes zones de la région.]
+
+}
+
+OUTPOST_CHARGE_VISIT_1_STEP_1 (place ville)
+{
+//Outpost mission giver
+	outpost_charge_visit_1_step_1	[Tu sais sans doute que je dois faire un rapport sur la situation de l'avant-poste aux autorités de $ville$. 
+									Pour préparer ce document, J'ai besoin que des éclaireurs aillent faire quelques repérages au niveau de certains endroits 
+									particuliers de la région, afin d'en noter les points particuliers, tels que la faune et la flore présentes.{break} 
+									Plus j'aurais de relevés, mieux ce sera !\n
+									Prends ce parchemin, tu le complèteras de tes annotations.]
+
+}
+
+OUTPOST_CHARGE_VISIT_1_SYSTEM_MSG_1 ()
+{
+//Systeme_msg pour visite d'un endroit
+	outpost_charge_visit_1_system_msg_1 		[Vous observez l'endroit et inscrivez quelques notes sur le parchemin.]
+
+}
+
+OUTPOST_CHARGE_VISIT_1_GIVE_ITEM_MENU (int item_count)
+{
+	outpost_charge_visit_1_give_item_menu		[Voici le parchemin.]
+
+}
+
+OUTPOST_CHARGE_VISIT_1_END (player p)
+{
+//Outpost mission giver
+	outpost_charge_visit_1_end		[Bien, je manque encore d'informations, mais mon rapport va avancer ! Tu es un éclaireur hors-pair, $p$, 
+									encore merci de ton aide !]					 		
+}

@@ -1,0 +1,35 @@
+﻿R_09_19_MIS_TITLE (bot giver)
+{
+	r_09_19_mis_title	[Le Convoi ennemi]
+}
+
+R_09_19_MIS_DESC (bot giver)
+{
+	r_09_19_mis_desc	[Trouver et piller un convoi ennemi qui transporte des matières premières]
+}
+
+R_09_19_P_LDC_INTRO (bot chef_borderguards, faction fact_borderguards, faction fact_slashburn, faction faction, faction faction_fyros, place lieu_hiddensource, place lieu_knolldissent)
+{
+	r_09_19_p_ldc_intro	[Salut à vous, $self$. Vous m'avez l'air de quelqu'un de confiance. Tendez l'oreille je vous prie, je ne peux pas parler fort, je ne voudrais pas que l'on nous entende...{break}J'ai une mission importante pour vous. J'ai appris de source sûre que les $fact_slashburn.member$, une tribu ennemie du peuple $faction$, ont envoyé une équipe de foreurs sur le continent $faction_fyros$ afin d'en extraire des matières premières de qualité destinées à la création d'armes.{break}Cette équipe est évidemment encadrée par des gardes, cela dit le convoi ne doit pas être trop important : ils ne peuvent pas se permettre de se faire repérer par les $faction.member$.{break}Nous allons faire d'une pierre deux coups : nous enrichir d'une part, et faire échec aux plans de la tribu des $fact_slashburn.member$ d'autre part. Je pense que le convoi ne devrait pas tarder à prendre le chemin du retour. Il est donc temps d'agir : interceptez-le, tuez-les tous et emparez-vous de leur cargaison.{break}Vous pourrez garder la moitié des ressources. Je suis conscient que cette mission est dangereuse, aussi vous apprendrai-je en guise de récompense supplémentaire une technique qui augmentera votre résistance physique.{break}Maintenant, partez pour la région de $lieu_hiddensource$. L'idéal serait que vous les interceptiez là-bas. En chemin, arrêtez-vous au camp de la tribu des $fact_borderguards.member$, au sud de $lieu_knolldissent$, et parlez à leur chef de tribu, $chef_borderguards$. Il en saura sûrement plus sur la position actuelle du convoi.{break}Sans doute aurez-vous besoin d'aide pour cette mission, si vous connaissez d'autres combattants, n'hésitez pas à demander leur assistance... Bonne chance, $self$ !]
+}
+
+R_09_19_P_T2_PARLER_CHEF (bot chef_borderguards)
+{
+	r_09_19_p_t2_parler_chef	[Avez-vous des informations sur un convoi ennemi ?]
+}
+
+R_09_19_P_BC_PARLER_CHEF (faction fact_slashburn, faction faction, faction faction_fyros, faction faction_tryker, bot givervar, place lieu_hereticshovel)
+{
+	r_09_19_p_bc_parler_chef	[En effet... c'est $givervar$ qui vous envoie. Comme la plupart des $faction.member$, il est bien trop crédule. Il a été trompé par ses informateurs. {break}Vous devez immédiatement repartir vers le sud : le convoi ne revient pas du continent $faction_fyros$, mais du continent $faction_tryker$, et il est déjà sur le chemin du retour.{break}Vous devez faire vite, car nous avons appris que d'autres guerriers de la tribu des $fact_slashburn.member$ devaient le rejoindre dans la région de $lieu_hereticshovel$.{break}Interceptez le convoi dès son arrivée sur le continent $faction$, à la sortie du vortex. Hâtez-vous, sinon les $faction.member$ pâtiront de votre échec.]
+}
+
+R_09_19_P_OVL_KILL_CONVOI (bot_name convoi)
+{
+	r_09_19_p_ovl_kill_convoi	[Détruisez le convoi]
+}
+
+R_09_19_P_BC_DEBRIEF ()
+{
+	r_09_19_p_bc_debrief	[Vous avez réussi ! Bon travail, $self$. Comme convenu, vous gardez votre part du butin. Je vais vous apprendre la technique que je vous ai promise. Prenez aussi ce cube d'ambre, il contient une histoire se déroulant pendant l'Exil des homins dans les profondeurs d'Atys.]
+}
+

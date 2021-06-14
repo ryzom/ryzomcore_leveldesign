@@ -1,0 +1,55 @@
+﻿R_05_15_MIS_TITLE (bot giver)
+{
+	r_05_15_mis_title	[Sauver Weee'ly]
+}
+
+R_05_15_MIS_DESC (bot giver, place crystabell, race gnoof)
+{
+	r_05_15_mis_desc	[$gnoof.da$ $gnoof$ domestiqué d'un important citoyen de $crystabell$ a été volé par des bandits. Vous devez le sauver et le ramener en ville.]
+}
+
+R_05_15_P_LDF_INTRO_1 (place crystabell, bot destinataire, race gnoof, bot gnoof_1, faction tribe_silt, place winds)
+{
+	r_05_15_p_ldf_intro_1	[$self$, j'ai un problème urgent à résoudre ! $destinataire$, un notable de $crystabell$, est la proie d'un chantage ignoble. Weee'ly, son $gnoof$ domestique, a été enlevé par un groupe de bandits des $winds$. Ces fripouilles réclament une forte rançon, sans quoi ils égorgeront la pauvre bête. Nous avons besoin de vous !{break}Si vous libérez $gnoof.da$ $gnoof$, nous vous en serons très reconnaissants. Je vous enseignerai une technique d'entraînement qui vous donnera une vitalité sans pareille. {break}La tribu des $tribe_silt$, qui vit dans la région écumée par les brigands, saura vous aider à les débusquer. Bonne chance, $self$, n'oubliez pas, le destin de $gnoof_1$ dépend de vous !]
+}
+
+R_05_15_M_T2_TRIBECHIEF_1 (bot tribe_chief_1)
+{
+	r_05_15_m_t2_tribechief_1	[Je cherche une bande de brigands]
+}
+
+R_05_15_P_BC_TRIBECHIEF_1 (bot_name group_bandits_1)
+{
+	r_05_15_p_bc_tribechief_1	[Si vous recherchez les $group_bandits_1$, vous les trouverez probablement à l'ouest de notre campement. Faites bien attention, ce sont des Trykers sans foi ni loi, armés jusqu'aux dents. Ils abattent leurs ennemis sans poser de questions. {break} Je n'irais pas là-bas seul si j'étais vous, ce sont des durs à cuire...]
+}
+
+R_05_15_O_KI_BANDITS_1_1 ()
+{
+	r_05_15_o_ki_bandits_1_1	[Régler leur compte aux bandits]
+}
+
+R_05_15_O_ES_GNOOF_1 (place crystabell, bot gnoof_1)
+{
+	r_05_15_o_es_gnoof_1	[Ramener $gnoof_1$ à $crystabell$]
+}
+
+R_05_15_O_ES_GNOOF_2 (place crystabell, bot gnoof_1)
+{
+	r_05_15_o_es_gnoof_2	[Ramener $gnoof_1$ à $crystabell$]
+}
+
+R_05_15_P_T2_PARLER_DESTINATAIRE (bot destinataire, race gnoof)
+{
+	r_05_15_p_t2_parler_destinataire	[Votre $gnoof$ est sain et sauf]
+}
+
+R_05_15_P_BC_PARLER_DESTINATAIRE ()
+{
+	r_05_15_p_bc_parler_destinataire	[Mon petit Weee'ly ! Merci infiniment, $self$ ! Vous ne pouvez pas savoir comme je suis content de retrouver ce brave Weee'ly. Comme il a dû souffrir, retenu loin de son maître ! Mais son cauchemar est terminé, grâce à vous. Que Jena vous bénisse !]
+}
+
+R_05_15_P_BC_DEBRIEF_1 (race gnoof)
+{
+	r_05_15_p_bc_debrief_1	[Bravo, $self$, je n'en attendais pas moins de vous ! Ces infâmes brigands ont trouvé à qui parler ! Prenez ce cube d'ambre, vous l'avez bien mérité... Il vous en apprendra plus sur ces charmants animaux que sont $gnoof.pda$ $gnoof.p$. Comme promis, je vais vous apprendre une technique qui vous endurcira et vous aidera à revenir victorieux, comme aujourd'hui !]
+}
+

@@ -1,0 +1,70 @@
+﻿R_04_11_MIS_TITLE (bot giver)
+{
+	r_04_11_mis_title	[Un serum contre la goo]
+}
+
+R_04_11_MIS_DESC (bot giver)
+{
+	r_04_11_mis_desc	[Aider des scientifiques dans leur recherche en réunissant des ingrédients]
+}
+
+R_04_11_P_LDC_INTRO (bot chercheur_01, place lieu_quartier_chercheur_01, place lieu_zora)
+{
+	r_04_11_p_ldc_intro	[Bonjour. Nos chercheurs travaillent actuellement sur une substance permettant de protéger la sève de la goo. A long terme, ils pourraient nous apporter de nouvelles solutions pour lutter efficacement contre la goo, d'où l'importance capitale de ces travaux.{break}Nos chercheurs travaillent à $lieu_zora$. Je vous demanderais d'aller les trouver afin de leur venir en aide, car ils manquent de matières premières pour travailler : c'est là que vous interviendrez. Trouvez $chercheur_01$ dans le quartier de $lieu_quartier_chercheur_01$ à $lieu_zora$, il vous en dira plus. Si vous réussisez cette mission, je vous enseignerai une technique pour obtenir plus d'informations sur les sources de matières premières.]
+}
+
+R_04_11_P_OVL_RENCONTRER_CHERCHEUR_01 (bot chercheur_01, place lieu_quartier_chercheur_01, place lieu_zora)
+{
+	r_04_11_p_ovl_rencontrer_chercheur_01	[Trouver $chercheur_01$ dans le quartier de $lieu_quartier_chercheur_01$ à $lieu_zora$]
+}
+
+R_04_11_P_T2_RENCONTRER_CHERCHEUR_01 (bot chercheur_01, bot givervar)
+{
+	r_04_11_p_t2_rencontrer_chercheur_01	[Bonjour, je viens de la part de $givervar$]
+}
+
+R_04_11_P_BC_RENCONTRER_CHERCHEUR_01 (bot chercheur_02, item element_fish_good, item element_plant, bot givervar, place lieu_fish_good, place lieu_plant, place lieu_region_plant)
+{
+	r_04_11_p_bc_rencontrer_chercheur_01	[Je suis content de vous voir. Comme a dû vous le dire $givervar$, mon collègue $chercheur_02$ et moi même travaillons sur une potion permettant d'empêcher la contamination de la sève par la goo. J'ai là une potion qui devrait présenter de bons résultats sous peu, mais il me manque deux ingrédients importants : $element_plant.pia$ $element_plant.p$ et $element_fish_good.pia$ $element_fish_good.p$.{break}Vous trouverez $element_plant.pia$ $element_plant.p$ à $lieu_plant$ dans la région de $lieu_region_plant$, là bas, vous verrez un cercle runique : cherchez tout autour.{break}Quant aux $element_fish_good.p$, vous en trouverez dans la même région. Allez à $lieu_fish_good$ et de là, vous verrez un énorme monticule à quelques centaines de mètre au sud-est. Sur ce monticule, vous devriez trouver $element_fish_good.pia$ $element_fish_good.p$... Bon voyage.]
+}
+
+R_04_11_P_BC_RAPPORTER_INGREDIENTS_CHERCHEUR_01 (bot chercheur_02, place lieu_quartier_chercheur_02)
+{
+	r_04_11_p_bc_rapporter_ingredients_chercheur_01	[Parfait ! Voila, je rajoute ces deux éléments à ma potion et le tour est joué. Amenez cette potion à mon collègue $chercheur_02$, c'est lui qui se charge des tests. Vous le trouverez dans le quartier de $lieu_quartier_chercheur_02$.]
+}
+
+R_04_11_P_BC_APPORTER_POTION_CHERCHEUR_02 ()
+{
+	r_04_11_p_bc_apporter_potion_chercheur_02	[Bien, j'espère que cette fois sera la bonne. Mes tests risquent de prendre un peu de temps. En attendant, trouvez moi de la sève, je risque d'en manquer. Vous pouvez soit en extraire vous-même, soit en acheter, faites comme bon vous semble. A plus tard.]
+}
+
+R_04_11_P_BC_APPORTER_SAP_CHERCHEUR_02 (bot chercheur_01, place lieu_min_cho, place lieu_region_goo)
+{
+	r_04_11_p_bc_apporter_sap_chercheur_02	[Très bien, j'ai pu finir les tests, mais je n'ai plus de sève. Celle que vous venez de m'apporter me servira pour les prochains tests. Concernant la potion que vous m'avez portée précédemment, les résultats sont négatifs. $chercheur_01$ devrait revoir soit ses dosages soit ses ingrédients. J'ai noté toutes mes observations dans ce rapport. Donnez-le à $chercheur_01$.{break}De plus, lorsque vous m'apporterez une nouvelle potion, pensez à me ramener aussi des résidus de goo. Vous en trouverez dans la région de $lieu_region_goo$, près de la frontière, au sud-est de la ville de $lieu_min_cho$, dans un renfoncement de la colline qui borde la ville.]
+}
+
+R_04_11_P_BC_APPORTER_RAPPORT_CHERCHEUR_01 (item element_fish_best, item element_fish_good, place lieu_fish_best, place lieu_region_fish_best)
+{
+	r_04_11_p_bc_apporter_rapport_chercheur_01	[Intéressant ! Je pense qu'il faut réessayer en remplaçant $element_fish_good.pda$ $element_fish_good.p$ par $element_fish_best.pia$ $element_fish_best.p$. Allez m'en chercher. Vous en trouverez dans la région de $lieu_region_fish_best$, juste à l'ouest de $lieu_fish_best$.]
+}
+
+R_04_11_P_BC_RAPPORTER_INGREDIENTS_CHERCHEUR_01_B (bot chercheur_02)
+{
+	r_04_11_p_bc_rapporter_ingredients_chercheur_01_b	[Bon, voyons avec ce nouvel ingrédient. J'espère que cette fois ci ça marchera... Prenez cette nouvelle potion et apportez-la à $chercheur_02$.]
+}
+
+R_04_11_P_BC_RAPPORTER_GOO_ET_POTION (bot givervar, place lieu_min_cho)
+{
+	r_04_11_p_bc_rapporter_goo_et_potion	[Merci bien. Honnêtement je ne pense pas que nous soyons arrivés au bout de nos peines. Cela dit, vous en avez déjà fait beaucoup pour nous. Nous nous débrouillerons donc sans vous pour la suite de nos recherches. Merci pour tous vos efforts. Vous pouvez maintenant retourner voir $givervar$, l'intendant de $lieu_min_cho$ et lui dire que vous avez terminé votre part du travail. Bonne continuation.]
+}
+
+R_04_11_P_T2_DEBRIEF (bot givervar)
+{
+	r_04_11_p_t2_debrief	[Ma mission est terminée.]
+}
+
+R_04_11_P_BC_DEBRIEF ()
+{
+	r_04_11_p_bc_debrief	[Parfait ! Voici votre récompense, vous l'avez méritée.]
+}
+

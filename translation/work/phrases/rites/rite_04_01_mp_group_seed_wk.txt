@@ -1,0 +1,105 @@
+﻿R_04_01_MIS_TITLE (bot giver)
+{
+	r_04_01_mis_title	[En quête de graines]
+}
+
+R_04_01_MIS_DESC (bot giver)
+{
+	r_04_01_mis_desc	[Partir en expédition dans les Primes Racines afin de récolter de la graine]
+}
+
+R_04_01_P_LDC_INTRO (bot explorateur, place lieu_yrkanis)
+{
+	r_04_01_p_ldc_intro	[Bonjour à vous. Nos artisans se plaignent d'un manque de graine. Vous me direz qu'il n'est pas bien difficile de trouver de la graine dans la région, mais si nous voulons produire des objets de qualité, il nous faut des matières premières de qualité.{break}Vous allez donc partir en expédition dans les Primes Racines afin de nous rapporter des réserves de graines de qualité excellente et de tout types : silvio, saurona, caprice et sarina.{break}Je ne suis pas en mesure de vous dire ou vous pourrez en trouver avec exactitude, mais l'un de nos concitoyens, $explorateur$, a récemment effectué une expédition similaire : il saura sans aucun doute vous renseigner sur les sources existantes. Il habite $lieu_yrkanis$, dans la partie nord de la ville. Si vous ne le trouvez pas, n'hésitez pas à demander autour de vous.{break}Ah, j'oubliais... vous serez bien evidemment récompensé pour vos efforts, je vous enseignerai une technique pour préserver les sources de matières premières.]
+}
+
+R_04_01_P_OVL_TROUVER_EXPLORATEUR (bot explorateur)
+{
+	r_04_01_p_ovl_trouver_explorateur	[Trouver $explorateur$ à Yrkanis]
+}
+
+R_04_01_P_T2_PELLOS_01 (bot pellos_01, bot explorateur)
+{
+	r_04_01_p_t2_pellos_01	[Bonjour, je recherche $explorateur$]
+}
+
+R_04_01_P_BC_PELLOS_01 (bot explorateur)
+{
+	r_04_01_p_bc_pellos_01	[$explorateur$ ? Non, ce nom ne me dit rien, désolé.]
+}
+
+R_04_01_P_T2_PELLOS_02 (bot pellos_02, bot explorateur)
+{
+	r_04_01_p_t2_pellos_02	[Bonjour, je recherche $explorateur$]
+}
+
+R_04_01_P_BC_PELLOS_02 (bot pellos_03, bot pellos_04)
+{
+	r_04_01_p_bc_pellos_02	[Oui, ce nom me dit quelque chose. Voyer avec $pellos_03$ ou $pellos_04$, je crois bien qu'ils le connaissent.]
+}
+
+R_04_01_P_T2_PELLOS_03 (bot pellos_03, bot explorateur)
+{
+	r_04_01_p_t2_pellos_03	[Bonjour, je recherche $explorateur$]
+}
+
+R_04_01_P_BC_PELLOS_03 (bot explorateur)
+{
+	r_04_01_p_bc_pellos_03	[Oui, je connais $explorateur$, il me semble l'avoir vu dans la partie sud de la ville, du coté du marché.]
+}
+
+R_04_01_P_T2_PELLOS_04 (bot pellos_04, bot explorateur)
+{
+	r_04_01_p_t2_pellos_04	[Bonjour, je recherche $explorateur$]
+}
+
+R_04_01_P_BC_PELLOS_04 ()
+{
+	r_04_01_p_bc_pellos_04	[Oui je le connais, il est parti faire quelques courses au marché, au sud de la ville.]
+}
+
+R_04_01_P_T2_PELLOS_05 (bot pellos_05, bot explorateur)
+{
+	r_04_01_p_t2_pellos_05	[Bonjour, je recherche $explorateur$]
+}
+
+R_04_01_P_BC_PELLOS_05 (bot explorateur, bot pellos_03)
+{
+	r_04_01_p_bc_pellos_05	[Non, je ne connais pas $explorateur$ personnellement, mais $pellos_03$ le connais, demandez lui.]
+}
+
+R_04_01_P_T2_PELLOS_06 (bot pellos_06, bot explorateur)
+{
+	r_04_01_p_t2_pellos_06	[Bonjour, je recherche $explorateur$]
+}
+
+R_04_01_P_BC_PELLOS_06 (bot pellos_04)
+{
+	r_04_01_p_bc_pellos_06	[Demandez plutôt à $pellos_04$, lui saura vous répondre.]
+}
+
+R_04_01_P_T2_PELLOS_07 (bot pellos_07, bot explorateur)
+{
+	r_04_01_p_t2_pellos_07	[Bonjour, je recherche $explorateur$]
+}
+
+R_04_01_P_BC_PELLOS_07 ()
+{
+	r_04_01_p_bc_pellos_07	[Non, je suis navré, ce nom ne me dit rien.]
+}
+
+R_04_01_P_T2_EXPLORATEUR (bot explorateur)
+{
+	r_04_01_p_t2_explorateur	[Bonjour, je dois partir en expédition dans les Primes Racines]
+}
+
+R_04_01_P_BC_EXPLORATEUR (place lieu_dit_gateobscurity, place lieu_gateobscurity)
+{
+	r_04_01_p_bc_explorateur	[Vous vous préparez à partir en expédition pour récolter de la graine. Dans ce cas, je vous conseil d'aller dans la région de $lieu_gateobscurity$, au sud et au sud-est de $lieu_dit_gateobscurity$ vous trouverez votre bonheur.{break}Ce n'est bien sûr pas le seul endroit ou l'on peut trouver de la graine de qualité excellente, mais à l'endroit que je vous ai indiqué, vous trouverez un regroupement de tous les types de graines existants.{break}Par contre, vous ne pourrez accéder à toutes ces sources qu'en automne ou en hiver. Sur ce, je vous souhaite un bon voyage.]
+}
+
+R_04_01_P_BC_DEBRIEF ()
+{
+	r_04_01_p_bc_debrief	[Vous avez fait un excellent travail, vous avez bien mérité votre récompense.]
+}
+

@@ -1,0 +1,433 @@
+﻿MISSION_TRYKER_01_MIS_TITLE (bot giver)
+{
+	mission_tryker_01_mis_title	[L'art de la récolte #1]
+}
+
+MISSION_TRYKER_01_MIS_DESC (bot giver)
+{
+	mission_tryker_01_mis_desc	[Apprendre les rudiments de l'extraction de matières premières.]
+}
+
+MISSION_TRYKER_01_P_LDCC_INTRO (bot givervar, item mp_anete_fiber, item mp_dung_resin, item mp_horny_shell, item mp_koorin_oil, item mp_motega_wood)
+{
+	mission_tryker_01_p_ldcc_intro	[Tiens, salut ! C'est toujours un plaisir de voir de nouvelles têtes, et puis je dois dire que j'aime bien la tienne : profil aérodynamique, d'aspect robuste, bien fixée sur les épaules, même la couleur me plait. Je me présente, $givervar$, Maître Tryker, foreuse d'exception et grande aventurière.{break}Alors, laisse-moi deviner... Tu voudrais voir des contrées lointaines et exotiques, trouver de merveilleux trésors perdus, sauver des Homins en détresse, et tout ça en vitesse pour gagner de jolies sommes en récompense que tu t'obstineras à refuser mais que l'on te forcera à accepter, hein ? Génial, j'adore ! Alors c'est parti.{break}Pour le moment laissons les contrées lointaines, les Homins en détresse et les jolies sommes de côté. Nous allons commencer par plus simple, mais tout aussi excitant : creuser. L'extraction c'est la base de tout. Tu vas voir, y'a pas plus simple !{break}Tu as deux bras, un sac et une pioche, tu peux donc te jeter à l'eau dés maintenant. Et comme la pratique est toujours plus instructive que la parole, tu vas aller de ce pas me chercher quelques matières premières : $mp_motega_wood.pia$ $mp_motega_wood.p$, $mp_anete_fiber.pia$ $mp_anete_fiber.p$, $mp_horny_shell.pia$ $mp_horny_shell.p$, $mp_koorin_oil.pia$ $mp_koorin_oil.p$ et $mp_dung_resin.pia$ $mp_dung_resin.p$. Tu n'auras pas à aller bien loin, juste derrière moi à une trentaine de mètres, de l'autre côté des barrières se trouvent des gisements. File et ne reviens pas bredouille.]
+}
+
+MISSION_TRYKER_01_POPUP_TITLE_EXTRACT_MP ()
+{
+	mission_tryker_01_popup_title_extract_mp	[Extraire des matières premières]
+}
+
+MISSION_TRYKER_01_POPUP_DESC_EXTRACT_MP ()
+{
+	mission_tryker_01_popup_desc_extract_mp	[@{W500}Pour forer des matières premières, vous devez dans premier temps placer l'outil adéquat dans votre main droite. Pour ce faire, faites un clic gauche sur l'emplacement le plus à droite de l'@{F90F}Interface des Mains@{FFFF}, puis sélectionnez l'outil souhaité parmi ceux dont vous disposez. Dans le cas présent, vous aurez besoin de votre @{F90F}Outil de Forage@{FFFF}.\n\nVous devez maintenant trouver une source de matière première à forer. Une source ressemble à un amas au sol de bulles vertes phosphorescentes.\n\nPour en forer une, sélectionnez-la avec un clic gauche, puis, cliquez sur l'icône @{F90F}Extraction de Base@{FFFF} dans l'@{F90F}Interface des Mains@{FFFF}. Votre personnage se mettra alors au travail.\n\nVous pouvez observer, lorsque vous sélectionnez une source, qu'un encart comportant 5 jauges apparaît. Il s'agit des caractéristiques de la source, caractéristiques sur lesquelles vous allez influer en forant. Examinons-les de haut en bas :\n@{T5}- @{F90F}Temps d'extraction de la source@{FFFF} : c'est le temps restant avant que la source ne retourne sous terre\n@{T5}- @{F90F}Contenu de la source@{FFFF} : c'est la quantité totale de matière première présente à cet endroit\n@{T5}- @{F90F}Vie de la source@{FFFF} : lorsque vous forez, vous endommagez la source sur laquelle vous travaillez, lorsque son niveau de vie arrive à 0, vous ne pouvez plus l'extraire\n@{T5}- @{F90F}Risque d'extraction@{FFFF} : lorsque vous forez une source elle devient de plus en plus instable, une fois la jauge arrivée à 0, elle émet soit un nuage toxique, soit une explosion, ce qui n'empêche en rien de continuer son extraction\n@{T5}- @{F90F}Tolérance Kami@{FFFF} : soyez vigilent en forant, plus une zone est exploitée et plus les Kamis se fâchent, si la jauge arrive à 0, vous mourrez.@{T0}\n\nDurant l'extraction, une seconde fenêtre est affichée dans laquelle vous pouvez voir l'état d'avancement de votre travail : la quantité et la qualité des matières premières que vous avez extrait jusque là. Une fois l'extraction terminée, cliquez sur l'icône @{F90F}Prendre Tout@{FFFF} qui vient de se dégriser afin de ranger les matières premières que vous avez forées dans votre sac.]
+}
+
+MISSION_TRYKER_01_POPUP_TITLE_MP ()
+{
+	mission_tryker_01_popup_title_mp	[Les matières premières]
+}
+
+MISSION_TRYKER_01_POPUP_DESC_MP ()
+{
+	mission_tryker_01_popup_desc_mp	[@{W500}Chaque matière première se caractérise par @{F90F}3 grands critères@{FFFF} : son type, sa qualité et sa provenance.\n\n@{F90F}Le type@{FFFF} d'une matière première va déterminer son utilité, c'est-à-dire les éléments constitutifs d'un objet qu'elle permet de produire à un artisan. Prenons un exemple : une huile, quelle que soit sa provenance, servira toujours à fabriquer soit la partie explosive d'un projectile, soit le rembourrage d'une armure.\n\n@{F90F}La qualité@{FFFF} d'une matière première déterminera la qualité de l'objet final qu'elle aura servit à fabriquer, et est définie par une double échelle :\n@{T5}- une échelle de qualité, comportant 5 états, dans l'ordre croissant : Basic, Fin, de Choix, Excellent et Suprême.\n@{T5}- et une échelle de niveau chiffrée, graduée de 1 à 250.\nLa qualité la plus basse qui soit sera donc Basique de niveau 1, et la meilleure sera Suprême de niveau 250. Entre ces 2 extrêmes, toutes les combinaisons sont possibles.\n\n@{F90F}La provenance@{FFFF} d'une matière première va déterminer ses propriétés. Et bien entendu, les propriétés d'une matière première vont se répercuter sur l'objet final. Reprenons l'exemple de l'huile : l'huile de Gulatch permet d'accroître les dommages causés par un projectile alors que l'huile de Pilan permet de créer des projectiles plus légers.]
+}
+
+MISSION_TRYKER_01_P_T2_OVL_RETURN (bot giver, bot givervar)
+{
+	mission_tryker_01_p_t2_ovl_return	[Allez apporter ce que vous venez de récolter à $givervar$]
+}
+
+MISSION_TRYKER_01_P_T2_RETURN (bot giver)
+{
+	mission_tryker_01_p_t2_return	[J'ai récolté ce que vous m'aviez demandé !]
+}
+
+MISSION_TRYKER_01_P_BC_RETURN ()
+{
+	mission_tryker_01_p_bc_return	[Tu vois que ce n'était pas bien sorcier. Maintenant, donne moi ce que tu as récolté.]
+}
+
+MISSION_TRYKER_01_P_LDCC_DEBRIEF ()
+{
+	mission_tryker_01_p_ldcc_debrief	[C'est un bon début, tu te débrouilles pas trop mal. Avant qu'on passe à la suite tu vas aller voir un Entraîneur de Récolteurs, il te permettra d'exploiter l'expérience que tu as gagnée en forant. Demande lui qu'il t'enseigne la compétence Prospection de Base si tu ne l'as pas déjà. Sans ça, on ne pourra pas aller bien loin. Reviens me voir dés que c'est fait.]
+}
+
+MISSION_TRYKER_02_MIS_TITLE (bot giver)
+{
+	mission_tryker_02_mis_title	[L'art de la récolte #2]
+}
+
+MISSION_TRYKER_02_MIS_DESC (bot giver)
+{
+	mission_tryker_02_mis_desc	[Apprendre les rudiments de la prospection de matières premières.]
+}
+
+MISSION_TRYKER_02_POPUP_TITLE_XP_AND_TRAINERS ()
+{
+	mission_tryker_02_popup_title_xp_and_trainers	[Expérience et points de compétence]
+}
+
+MISSION_TRYKER_02_POPUP_DESC_XP_AND_TRAINERS ()
+{
+	mission_tryker_02_popup_desc_xp_and_trainers	[@{W500}Il est temps pour vous de convertir l'expérience que vous avez gagnée.\n\nVous avez dû le remarquer, lorsque vous effectuez certaines tâches (en magie, en combat, en artisanat ou en forage) vous gagnez de l'expérience, lorsque vous en avez acquis suffisamment, vous progressez d'un niveau dans la compétence correspondante. Ce passage d'un niveau à un autre vous est annoncé par une aura brillante entourant votre personnage, accompagnée d'un message. Pour consulter l'état d'avancement de votre expérience et de vos niveaux, allez dans la @{F90F}Fenêtre Actions@{FFFF} (@{F90F}touche B@{FFFF}).\n\nA chaque fois que vous gagnez un niveau, vous recevez 10 points de compétence. Ce sont ces points de compétence que vous pourrez échanger contre de nouvelles techniques, pouvoirs ou améliorations de caractéristiques, auprès d'un entraîneur. Pour voir la quantité de points de compétence dont vous disposez, consultez l'encart @{F90F}Points de Compétence@{FFFF} de la @{F90F}Fenêtre Identité@{FFFF} (@{F90F}touche P@{FFFF}).\n\nChaque entraîneur est spécialisé dans l'un des quatre principaux domaines d'actions (magie, combat, artisanat ou forage) et ne peux convertir que les points que vous avez acquis dans son domaine. Plus votre niveau dans l'un de ces domaines est élevé et plus large sera le choix de techniques que vous pourrez acquérir.]
+}
+
+MISSION_TRYKER_02_P_T2_OVL_INTRO (bot giver, bot givervar)
+{
+	mission_tryker_02_p_t2_ovl_intro	[Procurez-vous la compétence Prospection de Base auprès d'un entraîneur si vous ne l'avez pas déjà et retournez voir $givervar$]
+}
+
+MISSION_TRYKER_02_P_T2_INTRO (bot giver)
+{
+	mission_tryker_02_p_t2_intro	[J'ai la compétence Prospection de Base, on peut continuer]
+}
+
+MISSION_TRYKER_02_P_LDCC_BRICK_UNKNOWN ()
+{
+	mission_tryker_02_p_ldcc_brick_unknown	[Là, je crois que tu m'as prise pour un noeud. Je vois bien que tu n'as pas cette compétence, alors retournes-y et reviens avec cette fois.]
+}
+
+MISSION_TRYKER_02_P_LDCC_BRICK_KNOWN (item mp_caprice_seed)
+{
+	mission_tryker_02_p_ldcc_brick_known	[Très bien, avançons ! Tu t'imagines que pour trouver une source de matières premières il te suffit de te promener et d'ouvrir grand les yeux ? Et bien tu as tout faux.{break}Les sources qui émergent naturellement du sol comme celles que tu as trouvées sont non seulement rares mais en plus elles sont de très mauvaise qualité. Et quand je te parle de très mauvaise qualité, c'est pour rester polie. Personne n'en fera jamais rien de ces matières premières, des artisans débutants peut-être, et encore. La très grande majorité des sources sont enfouies bien profond dans le sol et c'est à toi de les faire émerger. C'est ce que l'on appelle la Prospection.{break}Tout d'abord, tu dois savoir que l'on ne trouve pas de sources de matières premières partout. De plus, toutes les sources ne sont pas de même qualité et ne renferment pas les mêmes matières. De manière générale, plus la source est de qualité et plus il sera difficile de la trouver. Certaines même, ne sont pas présentes en permanence : elles n'apparaissent qu'à certaines saisons, à certaines périodes de la journée, voir même, dépendent du climat. Mais tu n'en es pas encore là, ne nous emballons pas.{break}Sache en tout cas que plus tes techniques de Prospection et d'Extraction seront évoluées, meilleures seront les matières que tu pourras récolter. Il est temps pour toi de t'essayer à la prospection. Je voudrais que tu me ramènes $mp_caprice_seed.pia$ $mp_caprice_seed.p$. Regarde sur ta droite, en direction du nord, vois-tu la tour perchée sur une petite colline ? Et bien tu pourras trouver $mp_caprice_seed.pia$ $mp_caprice_seed.p$ autour de cette tour, il te suffit juste d'utiliser ta nouvelle compétence de Prospection. Va maintenant.]
+}
+
+MISSION_TRYKER_02_POPUP_TITLE_PROSPECT ()
+{
+	mission_tryker_02_popup_title_prospect	[La prospection]
+}
+
+MISSION_TRYKER_02_POPUP_DESC_PROSPECT ()
+{
+	mission_tryker_02_popup_desc_prospect	[@{W400}Pour prospecter, rien de plus simple, il vous suffit de vous rendre là où vous pensez pouvoir trouver des sources de matières premières et de cliquer sur l'action @{F90F}Prospection de Base@{FFFF}. Cette action prend un certain temps, soyez donc patient.\n\nL'action de prospection que vous possédez actuellement est extrêmement basique, et donc, de piètre qualité : le champ qu'elle inspecte, situé devant vous, a un angle très réduit et une portée très courte. De plus, cette action ne peut déceler que des matières de basse qualité.\n\nVous pourrez acquérir par la suite des actions de prospection plus puissantes mais il vous faudra pour cela acquérir de l'expérience.]
+}
+
+MISSION_TRYKER_02_P_T2_OVL_RETURN (bot giver, bot givervar)
+{
+	mission_tryker_02_p_t2_ovl_return	[Retournez voir $givervar$]
+}
+
+MISSION_TRYKER_02_P_T2_RETURN (bot giver)
+{
+	mission_tryker_02_p_t2_return	[J'ai trouvé les graines !]
+}
+
+MISSION_TRYKER_02_P_LDCC_DEBRIEF ()
+{
+	mission_tryker_02_p_ldcc_debrief	[C'est incroyable tout ce que l'on peut faire quand on a deux mains et deux pieds... et accessoirement : une pioche. Si tu veux, tu peux aller vendre ce que tu viens de récolter, ça te fera gagner quelques dappers.\nPassons à la suite, je sens que tu meurs d'impatience d'en savoir plus. Pour la leçon suivante, il va falloir que tu retournes harceler ton entraîneur. Rassure toi je le connais, il aime ça.{break}Demande lui de t'enseigner la technique Prospection de Matières Fines Uniquement sans quoi nous ne pourrons pas continuer la leçon. Profites-en pour lui demander au moins une autre technique relative à la Prospection telle que Prospection Accélérée ou encore Portée de Prospection. Si tu manques d'expérience, entraîne toi à extraire des matières premières. Reviens me voir une fois que tu as tout ça.]
+}
+
+MISSION_TRYKER_03_MIS_TITLE (bot giver)
+{
+	mission_tryker_03_mis_title	[L'art de la récolte #3]
+}
+
+MISSION_TRYKER_03_MIS_DESC (bot giver)
+{
+	mission_tryker_03_mis_desc	[Apprendre à créer ses propres actions d'extraction et de prospection.]
+}
+
+MISSION_TRYKER_03_P_T2_OVL_INTRO (bot giver, bot givervar)
+{
+	mission_tryker_03_p_t2_ovl_intro	[Vous devez acquérir la technique : Prospection de Matières Fines Uniquement, et ensuite, retourner voir $givervar$]
+}
+
+MISSION_TRYKER_03_P_T2_INTRO (bot giver)
+{
+	mission_tryker_03_p_t2_intro	[J'ai acquis la technique que vous m'avez demandée]
+}
+
+MISSION_TRYKER_03_P_LDCC_BRICK_UNKNOWN ()
+{
+	mission_tryker_03_p_ldcc_brick_unknown	[Je ne crois pas. Retourne voir ton entraîneur et arrête de te payer ma tête.]
+}
+
+MISSION_TRYKER_03_P_LDCC_BRICK_KNOWN (item mp_hash_amber, item mp_sarina_seed)
+{
+	mission_tryker_03_p_ldcc_brick_known	[Parfait ! Maintenant tu sais extraire et prospecter des matières premières. Au-delà de ça, un bon récolteur doit être capable de développer ses propres techniques d'extraction et de prospection. Et ça tu vas vite t'en rendre compte, c'est essentiel. Sers toi de toutes les techniques de prospection que tu as apprises pour créer ta technique à toi.{break}Il faut qu'avec cette technique tu puisses trouver des matières de qualité fine, car ton prochain objectif sera de me ramener quoi ? Des matières premières de qualité fine... quelle perspicacité ! Il va falloir que tu me trouves $mp_sarina_seed.pia$ $mp_sarina_seed.p$ et $mp_hash_amber.pia$ $mp_hash_amber.p$. Tu trouveras tout ça à quelques centaines de mètres au nord-est du campement, aide toi de ta boussole et ça devrait aller. Bon, j'en ai déjà trop dit, à toi maintenant de te dépatouiller ! Au boulot !]
+}
+
+MISSION_TRYKER_03_POPUP_TITLE_CREATE_ACTION_FORAGE ()
+{
+	mission_tryker_03_popup_title_create_action_forage	[Créer ses propres actions]
+}
+
+MISSION_TRYKER_03_POPUP_DESC_CREATE_ACTION_FORAGE ()
+{
+	mission_tryker_03_popup_desc_create_action_forage	[@{W500}Vous devez tout d'abord savoir qu'une @{F90F}Action@{FFFF}, quelle qu'elle soit, se compose de @{F90F}Stanzas@{FFFF}. Se procurer une Action auprès d'un entraîneur équivaut à se procurer l'ensemble des Stanzas qui la compose. L'acquisition d'une Stanza est définitive : vous ne pouvez pas la perdre et pouvez l'utiliser à l'infini, et ce, dans plusieurs actions simultanément.\n\nAvec l'ensemble des Stanzas que vous avez acquises jusqu'à présent, vous allez pouvoir commencer à créer vos propres Actions. Voyons ça ensemble.\n\nDans l'@{F90F}Interface des Mains@{FFFF}, cliquez bouton droit sur un emplacement vide et choisissez l'option @{F90F}Nouvelle Action@{FFFF}. Dans la fenêtre qui vient de s'ouvrir, vous allez devoir choisir le type d'Action que vous souhaitez créer, sélectionnez le @{F90F}Plan de Prospection@{FFFF}.\n\nNous avons la base de notre Action, il est temps d'y ajouter des @{FF0F}Options@{FFFF}, c'est-à-dire des Stanzas qui confèrent de nouvelles capacités à votre Action. Cliquez sur @{F90F}Ajouter Option@{FFFF} et sélectionnez @{F90F}Recherche de Meilleures Matières@{FFFF}. Assurez-vous que cette nouvelle Option vous permette de prospecter des @{F90F}Matières Fines@{FFFF}, vous pouvez la changer en cliquant sur l'icône représentant une étoile jaune sur un fond gris.\n\nVous pouvez, si vous le désirez, ajouter d'autres Options à votre Action en suivant le même processus : via l'icône @{F90F}Ajouter Option@{FFFF}. Une fois que vous aurez terminé le paramétrage de vos Options, vous devrez équilibrer votre Action pour qu'elle puisse fonctionner en ajoutant des @{0F0F}Crédits@{FFFF} via l'icône @{F90F}Ajouter Crédit@{FFFF}.\n\nComme vous pouvez le voir, les @{FF0F}Stanzas Options@{FFFF} apportent des @{FF0F}Points d'Option@{FFFF} (en @{FF0F}jaune@{FFFF}) et les @{0F0F}Stanzas Crédits@{FFFF} apportent des @{0F0F}Points de Crédit@{FFFF} (en @{0F0F}vert@{FFFF}). Pour que l'Action puisse fonctionner, le total de @{0F0F}Points de Crédits@{FFFF} doit être supérieur ou égal au total de @{FF0F}Points d'Option@{FFFF}.\n\nLes Stanzas de Crédit ont bien entendu un effet pénalisant : dans notre cas, la Stanza Contrepartie vous fera consommer des points de Concentration. Plus elle est de haut niveau, plus elle vous apporte de points de Crédit, et plus elle est gourmande en Concentration.\n\nUne fois votre Action équilibrée, vous pouvez la valider en cliquant sur @{F90F}Apprendre l'Action@{FFFF}.]
+}
+
+MISSION_TRYKER_03_P_T2_OVL_RETURN (bot giver, bot givervar)
+{
+	mission_tryker_03_p_t2_ovl_return	[Retournez voir $givervar$]
+}
+
+MISSION_TRYKER_03_P_T2_RETURN (bot giver)
+{
+	mission_tryker_03_p_t2_return	[Mission accomplie, j'ai tout trouvé]
+}
+
+MISSION_TRYKER_03_P_LDCC_DEBRIEF ()
+{
+	mission_tryker_03_p_ldcc_debrief	[Je constate que mon disciple est plutôt du genre dégourdi, ça fait plaisir à voir. Tu apprends vite, c'est bien. Alors continuons, ne nous arrêtons pas en si bon chemin. Pour ta prochaine leçon, il va falloir que tu fasses l'acquisition de la technique de Recherche de Gisement à 50 Mètres, à moins que tu ne l'ais déjà. Reviens me voir dés que tu l'as.]
+}
+
+MISSION_TRYKER_04_MIS_TITLE (bot giver)
+{
+	mission_tryker_04_mis_title	[L'art de la récolte #4]
+}
+
+MISSION_TRYKER_04_MIS_DESC (bot giver)
+{
+	mission_tryker_04_mis_desc	[Apprendre à localiser un gisement de matières premières.]
+}
+
+MISSION_TRYKER_04_P_T2_OVL_INTRO (bot giver, bot givervar)
+{
+	mission_tryker_04_p_t2_ovl_intro	[Procurez vous la compétence Recherche de Gisement à 50m auprès d'un entraîneur si vous ne l'avez pas déjà et retournez voir $givervar$]
+}
+
+MISSION_TRYKER_04_P_T2_INTRO (bot giver)
+{
+	mission_tryker_04_p_t2_intro	[J'ai la compétence Recherche de Gisement à 50 Mètres, on peut continuer]
+}
+
+MISSION_TRYKER_04_P_LDCC_BRICK_UNKNOWN ()
+{
+	mission_tryker_04_p_ldcc_brick_unknown	[Au cas où tu ne l'aurais pas remarqué, je ne suis pas aveugle. Et ce que je vois, c'est que tu n'as pas ce que je t'ai demandé. Tu sais ce qu'il te reste à faire.]
+}
+
+MISSION_TRYKER_04_P_LDCC_BRICK_KNOWN (item mp_zun_amber)
+{
+	mission_tryker_04_p_ldcc_brick_known	[C'est bien, avec ça tu vas vraiment pouvoir devenir autonome. Comme je te l'ai dit, des matières premières, on n'en trouve pas partout, à plus forte raison si tu recherches une matière bien spécifique. Je vais te poser un cas d'école : imagine que tu es sur une île ENORME et que quelque part sur cette île se trouve un gisement tout petit, minuscule, ridicule, et manque de chance, tu n'as pas la moindre idée de l'endroit où il se trouve. Comment fais-tu ?{break}La première méthode, appelée aussi méthode du Fyros, consiste à jeter ta pioche à terre en hurlant, puis à massacrer un malheureux Yubo qui passait par là afin d'apaiser ta rage. L'efficacité de cette méthode est très discutable.{break}La deuxième méthode, mieux connue sous le nom de méthode du Homin qui avait égaré son cerveau, consiste à quadriller l'île en prospectant tous les deux mètres. C'est une méthode comme une autre qui, je l'avoue, peut porter ses fruits. Mais il faut être très patient et très motivé.{break}La troisième méthode, ou méthode du Homin qui avait enfin retrouvé son cerveau, consiste à utiliser la technique que tu viens d'acquérir : la Recherche de Gisement ! Simple, rapide et efficace.{break}La Recherche de Gisement n'a rien à voir avec la Prospection, cette technique ne te permet pas de faire émerger des sources de matières premières du sol. Elle te permet juste de localiser un gisement.{break}Il est temps de te mettre à l'epreuve. Près du campement, à moins d'une centaine de mètres des barrières, se trouve un gisement de $mp_zun_amber$. Ce gisement n'est pas très gros, mais avec ta nouvelle technique, tu ne devrais pas avoir de mal à le trouver. Je te demanderai donc de me ramener un échantillon de $mp_zun_amber$. Va et bon courage !]
+}
+
+MISSION_TRYKER_04_POPUP_TITLE_FIND_SPOT ()
+{
+	mission_tryker_04_popup_title_find_spot	[La recherche de gisements]
+}
+
+MISSION_TRYKER_04_POPUP_FIND_SPOT ()
+{
+	mission_tryker_04_popup_find_spot	[@{W400}La technique @{F90F}Recherche de Gisement à 50 Mètres@{FFFF} vous permet de localiser une source de matières premières dans un rayon de 50 mètres.\n\nLancez cette action une première fois afin de mettre en route votre scanner. Un chiffre apparaît alors vous indiquant la distance vous séparant de la source la plus proche. La direction n'est pas indiquée, mais en vous déplaçant, vous verrez très vite si vous vous éloignez ou si vous vous rapprochez de la source. Pour stopper le scanner, il vous suffit de relancer votre action une seconde fois.\n\nUne action de @{F90F}Recherche de Gisement@{FFFF}, comme une action de @{F90F}Prospection@{FFFF}, peut se voir attribuer différentes options. Pour ce faire, vous devez l'éditer comme vous l'avez déjà fait pour votre action de Prospection. Vous pouvez, par exemple, greffer l'option de @{F90F}Recherche de Matières Fines@{FFFF} à votre action de Recherche de Gisement. L'action ainsi créée ne localisera alors que les sources de matières fines.]
+}
+
+MISSION_TRYKER_04_P_LDCC_DEBRIEF ()
+{
+	mission_tryker_04_p_ldcc_debrief	[Bien ! J'avais un peu peur que tu en viennes à la méthode Fyros. Mais je constate que tu te débrouilles vraiment bien. Vu tes progrès, on va pouvoir augmenter la difficulté de tes missions et partir à la recherche de matières plus intéressantes.]
+}
+
+MISSION_TRYKER_05_MIS_TITLE (bot giver)
+{
+	mission_tryker_05_mis_title	[Les ruines dévastées #1]
+}
+
+MISSION_TRYKER_05_MIS_DESC (bot giver)
+{
+	mission_tryker_05_mis_desc	[Partez à la recherche de meilleures matières premières, mais attention aux dangers !]
+}
+
+MISSION_TRYKER_05_P_LDCC_INTRO (place lieu_shattered_ruins)
+{
+	mission_tryker_05_p_ldcc_intro	[Tu vas maintenant pouvoir explorer une nouvelle région : $lieu_shattered_ruins$. Tu pourras trouver tout autour des ruines de l'ancienne cité de Silan de nombreuses sources de matières premières de meilleure qualité que celles que tu as pu extraire jusqu'à présent. Le tout n'étant pas de les trouver, il faut aussi pouvoir les extraire. Si tu n'as pas de quoi le faire, passe voir l'entraîneur, il t'enseignera la technique adéquate.{break}Ah, j'ai failli oublier un petit détail, rien de bien dramatique, mais il vaut mieux que je te tienne au courant. Il y'a dans cette région quelques bestioles dont la convivialité laisse à désirer : des Javings et des Gingos. Si tu t'en approches trop près, elles n'hésiteront pas à t'attaquer. Alors à moins que tu ai de bons gros biscotos et de quoi fendre des crânes, je te conseille d'être très vigilant et d'apprendre à zigzaguer entre les coins dangereux. Autre possibilité : tu te trouves une escorte de gros bras pour te protéger.{break}Voila, tout est dit. Tu n'as plus qu'à filer là bas et me trouver des ressources de qualité qui feront baver tes petits camarades récolteurs. Tu trouveras tout ce qu'il faut à l'interieur même des ruines de la cité de Silan.]
+}
+
+MISSION_TRYKER_05_P_SYS_MSG ()
+{
+	mission_tryker_05_p_sys_msg	[Procurez-vous une action d'extraction de niveau 20]
+}
+
+MISSION_TRYKER_05_POPUP_TITLE_EXTRACT_ACTION ()
+{
+	mission_tryker_05_popup_title_extract_action	[Les actions d'extraction]
+}
+
+MISSION_TRYKER_05_POPUP_EXTRACT_ACTION ()
+{
+	mission_tryker_05_popup_extract_action	[@{W500}Vous pouvez éditer et modifier une action d'Extraction de la même manière qu'une action de Prospection. L'action d'extraction a cependant une particularité. Elle nécessite @{F90F}trois effets@{FFFF} sans lesquels elle ne peut pas fonctionner : l'effet @{F90F}Vitesse@{FFFF}, l'effet @{F90F}Quantité@{FFFF} et l'effet @{F90F}Qualité@{FFFF}.\n\nL'effet @{F90F}Vitesse@{FFFF} détermine la rapidité d'exécution de l'action. Plus la Vitesse d'extraction est élevée et plus vous pourrez extraire de matières sur une même source, dans le temps qui vous est imparti.\n\nL'effet @{F90F}Quantité@{FFFF} détermine la quantité de matières premières que vous prélevez à chaque coup de pioche. Comme pour la Vitesse, plus la Quantité d'extraction est élevée et plus vous pourrez prélever de matières premières sur une même source, dans le temps qui vous est imparti.\n\nL'effet @{F90F}Qualité@{FFFF} détermine la qualité maximum des matières premières que vous allez pouvoir prélever. Mais notez bien qu'une source de matières premières a sa propre limite de qualité qui ne pourra pas être dépassée quelle que soit le niveau de votre action d'Extraction. Généralement, la qualité maximum d'une source dépend de la région dans laquelle elle se trouve.\n\nChacun de ces trois effets existe sous deux formes : @{F90F}Douce@{FFFF} et @{F90F}Nocive@{FFFF}. A même niveau, un effet Nocif sera moins coûteux qu'un effet Doux en terme de points d'action, mais endommagera la source plus vite.]
+}
+
+MISSION_TRYKER_05_P_T2_OVL_RETURN (bot giver, bot givervar)
+{
+	mission_tryker_05_p_t2_ovl_return	[Retournez voir $givervar$]
+}
+
+MISSION_TRYKER_05_P_T2_RETURN (bot giver)
+{
+	mission_tryker_05_p_t2_return	[Je ramène les matières premières que vous m'aviez commandées]
+}
+
+MISSION_TRYKER_05_P_LDCC_RETURN ()
+{
+	mission_tryker_05_p_ldcc_return	[Beau travail. Je te laisse ton butin, fais-en ce que tu veux.]
+}
+
+MISSION_TRYKER_06_MIS_TITLE (bot giver)
+{
+	mission_tryker_06_mis_title	[Les ruines dévastées #2]
+}
+
+MISSION_TRYKER_06_MIS_DESC (bot giver)
+{
+	mission_tryker_06_mis_desc	[Lancez-vous dans une chasse au trésor en explorant des ruines.]
+}
+
+MISSION_TRYKER_06_P_LDCC_INTRO ()
+{
+	mission_tryker_06_p_ldcc_intro	[T'ai-je déjà parlé du funeste destin de la cité de Silan ? Non, et bien il est grand temps. Il y'a bien longtemps, alors que les réfugiés Homins émergeaient des Primes Racines... en fait, tu ne sais peut-être pas pourquoi les Homins ont émergé des Primes Racines, ni pourquoi ils y sont allés ?!{break}Alors reprenons depuis le début. Il y'a très très longtemps, les Homins vivaient heureux quand les Fyros, gros costauds à petit cerveaux eurent la merveilleuse idée d'aller tripatouiller les entrailles d'Atys. A vrai dire, je ne sais pas bien ce qu'ils cherchaient, mais je sais ce qu'ils ont trouvé : le pire fléau que nous ayons connu, les Kitins. Ces derniers, créatures passablement sanguinaires, n'étaient pas vraiment décidés à faire des Homins leurs amis. Des hordes de Kitins ont alors surgies des profondeurs d'Atys, empruntant la brèche ouverte par les Fyros.{break}C'est là que tout est devenu moins drôle. Les Homins se sont fait traquer et massacrer par les Kitins, sans répit. Les survivants ont fuit dans les Primes Racines où ils se sont cachés. Nombre d'entre eux ont continué à périr. Les Homins ont survécus comme ils ont pu des années durant jusqu'au jour ou ils découvrirent de nouvelles terres, loin de celles que nous avions fuies. La première terre sur laquelle ils émergèrent est cette île.{break}Depuis, un flot continu de réfugiés suit leurs pas. Les Matis en arrivant ici, se pressèrent de bâtir une nouvelle cité. Et comme il est dans leur nature de vouloir faire plus que les autres et plus vite, ils tentèrent d'instaurer un système qui leur apporterait des matières premières en masse, et ce, sans avoir à bouger le petit doigt. C'est là qu'ils eurent la brillante idée de transformer des plantes afin d'en faire des extracteurs naturels, brillante idée qui se retourna contre eux et qui renvoya leur cité à l'état de ruines.{break}Une bien tragique histoire, qui à vrai dire, me fait plus rire que pleurer. Les Matis sont fous, ils se croient supérieurs, plus intelligents que les autres. La plupart d'entre eux n'arrivent d'ailleurs toujours pas à admettre que leur expérience était une erreur. De plus, les Matis ont fait de mon peuple des esclaves dans le passé. Je ne leur ferai donc pas l'honneur de m'apitoyer sur le destin funeste de leur cité.{break}Pour eux c'est une tragédie, pour moi, c'est une aubaine, car ces ruines regorgent encore de trésors oubliés. Il est donc temps pour toi de t'essayer à la chasse au trésor, tu vas voir, il n'y a rien de plus excitant. Va fouiner du côté des ruines et voles-y tout ce que tu peux.]
+}
+
+MISSION_TRYKER_06_P_VISIT_RUINS (place lieu_ruines)
+{
+	mission_tryker_06_p_visit_ruins	[Rendez-vous sur les ruines de la cité de Silan]
+}
+
+MISSION_TRYKER_06_P_OVL_LOOT_CRATE_1 (item i1, int qt1, int qual1)
+{
+	mission_tryker_06_p_ovl_loot_crate_1	[Fouillez les caisses des bandits jusqu'à trouver un objet intéressant.]
+}
+
+MISSION_TRYKER_06_P_OVL_GIVE_DIADEM_1 (item i1, int qt1, int qual1, bot giver, bot givervar)
+{
+	mission_tryker_06_p_ovl_give_diadem_1	[Rapportez le diadème à $givervar$]
+}
+
+MISSION_TRYKER_06_P_LDCC_DEBRIEF ()
+{
+	mission_tryker_06_p_ldcc_debrief	[Quel objet magnifique ! Je dois reconnaître que les Matis ont de réelles compétences en artisanat. Cela mérite une belle récompense. Prends ceci.]
+}
+
+MISSION_TRYKER_07_MIS_TITLE (bot giver)
+{
+	mission_tryker_07_mis_title	[Les ruines dévastées #3]
+}
+
+MISSION_TRYKER_07_MIS_DESC (bot giver)
+{
+	mission_tryker_07_mis_desc	[Explorer la tour du Haut Syndic]
+}
+
+MISSION_TRYKER_07_P_LDCC_INTRO (place lieu_tour)
+{
+	mission_tryker_07_p_ldcc_intro	[Fort bien, nous allons continuer à explorer les restes de Silan. Il y a encore tant de choses à chaparder à ces traîtres de Matis. Ne nous privons pas. Je voudrais cette fois que tu nous serves d'éclaireur. A l'époque où Silan ressemblait encore à quelque chose d'habitable, une grande tour dominait la ville : $lieu_tour.da$ $lieu_tour$. C'est là que les hautes autorités Matis rendaient leurs jugements. A vrai dire, je me fiche pas mal de savoir ce qu'ils pouvaient bien y faire, mais je me dis qu'un tel bâtiment devait abriter de bien beaux trésors, et ça, c'est très intéressant.{break}Qui dit trésors dit pillages en vue. Par contre, je ne sait pas trop ce qu'il reste de cette tour, avec un peu de chances, les fondations de base on tenu. Et si c'est le cas, tout n'a pas été enseveli. La tour, ou du moins ce qu'il en reste, se trouve au nord de la cité. Rends toi là-bas pour faire un état des lieux et reviens me faire ton rapport. Mais méfie toi, la région est dangereuse.]
+}
+
+MISSION_TRYKER_07_P_OVL_VISIT_TOUR (place lieu_tour)
+{
+	mission_tryker_07_p_ovl_visit_tour	[Rendez-vous dans la tour du Haut Syndic, au nord de Silan, afin de voir ce qu'il en reste]
+}
+
+MISSION_TRYKER_07_P_T2_OVL_RETURN (bot giver, bot givervar)
+{
+	mission_tryker_07_p_t2_ovl_return	[Retournez faire votre rapport à $givervar$]
+}
+
+MISSION_TRYKER_07_P_T2_RETURN (bot giver)
+{
+	mission_tryker_07_p_t2_return	[La salle principale de la tour est encore sur pieds]
+}
+
+MISSION_TRYKER_07_P_LDCC_DEBRIEF ()
+{
+	mission_tryker_07_p_ldcc_debrief	[Des dappers, plein de dappers ! On va pouvoir se remplir les poches de dappers. Quelle merveilleuse nouvelle ! Tu as fait du beau boulot. Merci à toi, merci à Jena et merci aux Matis pour tous ces beaux trésors qu'on va pouvoir récolter. Il n'y a rien de plus beau que le métier d'explorateur, et rien de plus rémunérateur non plus.]
+}
+
+MISSION_TRYKER_08_MIS_TITLE (bot giver)
+{
+	mission_tryker_08_mis_title	[Le joyeux récolteur #1]
+}
+
+MISSION_TRYKER_08_MIS_DESC (bot giver)
+{
+	mission_tryker_08_mis_desc	[Récolter des matières particulières dans une zone dangereuse.]
+}
+
+MISSION_TRYKER_08_P_LDCC_INTRO (item mp_dead_leaf)
+{
+	mission_tryker_08_p_ldcc_intro	[Tu as largement fait tes preuves, et c'est une très bonne chose. Des explorateurs débutants motivés, j'en ai plus qu'il n'en faut sous la main, tellement que je ne sais plus trop quoi en faire. Le problème c'est que j'ai besoin de quelqu'un de compétent, en fait, ce n'est pas vraiment un problème puisque tu corresponds exactement au profil que je recherche.{break}Je t'ai déjà parlé de Silan et des travaux que les Matis ont réalisés sur des plantes. Il se trouve que nous aussi avons fait nos expériences sur des plantes que nous avons ramenées de loin. La différence avec les Matis, c'est que nous, nous avons eu la présence d'esprit de ne pas le faire au pied de nos maisons. Ces expériences, nous les avons menées sur un îlot isolé au nord-ouest d'ici.{break}Nous avons tout de même rencontré un problème : notre terrain d'expérimentation a été envahit par des Crays. Il nous est donc difficile d'y accéder aujourd'hui. Je te demanderai d'aller y prélever des échantillons de nos travaux : $mp_dead_leaf.pia$ $mp_dead_leaf.p$, et je sais que tu te feras un grand plaisir de m'aider... merci, merci infiniment.{break}Tu te dis peut être que cette mission doit être dangereuse à cause de la présence de Crays. Je te rassure, à moins que tu ne les provoquent, les crays ne t'attaqueront pas. Cela dit, j'ai un conseil à te donner qui pourra t'éviter bien des misères. Si jamais tu te fais attaquer par un Cray, jette-toi dans l'eau, tu peux être sûr qu'il ne te suivra pas.{break}De plus, il existe une technique que tu pourras acquérir chez ton entraîneur que l'on nomme Accélération et qui permet de fuir très très vite, ça peut t'être très utile. Maintenant va, et bon courage, essaye de revenir en un seul morceau !]
+}
+
+MISSION_TRYKER_08_P_OVL_VISIT_ILOT (place lieu_ilot)
+{
+	mission_tryker_08_p_ovl_visit_ilot	[Rendez-vous sur l'îlot situé au nord ouest du campement]
+}
+
+MISSION_TRYKER_08_P_LDCC_DEBRIEF (item mp_dead_leaf)
+{
+	( self.gender = male )
+		mission_tryker_08_p_ldcc_debrief_m	[Non seulement tu as trouvé $mp_dead_leaf.pda$ $mp_dead_leaf.p$ mais en plus, tu reviens en un seul morceau. Honnêtement, je ne pensais pas que tu serais assez cinglé pour y aller. Je pense que Jena doit avoir un oeil sur toi.]
+	( self.gender = female )
+		mission_tryker_08_p_ldcc_debrief_f	[Non seulement tu as trouvé $mp_dead_leaf.pda$ $mp_dead_leaf.p$ mais en plus, tu reviens en un seul morceau. Honnêtement, je ne pensais pas que tu serais assez cinglée pour y aller. Je pense que Jena doit avoir un oeil sur toi.]
+}
+
+MISSION_TRYKER_09_MIS_TITLE (bot giver)
+{
+	mission_tryker_09_mis_title	[Le joyeux récolteur #2]
+}
+
+MISSION_TRYKER_09_MIS_DESC (bot giver)
+{
+	mission_tryker_09_mis_desc	[Aller saboter des gisements de Goo.]
+}
+
+MISSION_TRYKER_09_P_LDCC_INTRO (faction tribu_chlorogoo)
+{
+	mission_tryker_09_p_ldcc_intro	[As-tu remarqué la présence d'un groupe de bandits au nord de notre îlot ? Ce sont $tribu_chlorogoo.mia$ $tribu_chlorogoo.name$, de véritables dingues. Ils infectent les plantes comme les Slaveni ou les Cratcha avec de la Goo, et ensuite ils récoltent le résultat et se l'injecte pendant des rituels effrayants. Au cas où tu ne le saurais pas, la Goo est un mal qui contamine Atys. Sa progression est lente mais nous n'arrivons pas à la stopper. Ces bandits, $tribu_chlorogoo.mia$ $tribu_chlorogoo.name$, rendent la région impraticable, ils s'attaquent à tous ceux qui ont la mauvaise idée de s'y aventurer, c'est un véritable fléau. De plus, ils infectent les malheureux qu'ils ont fait prisonniers avec leur satanée drogue. Je ne te raconte pas l'état dans lequel on en a retrouvés.{break}Bref, je ne pense pas que l'on soit de taille à les affronter l'arme à la main mais je connais un moyen de leur pourrir la vie. Et cette mission je te la réserve... quel honneur ! Il faut que tu trouves les points de Goo à proximité de leur campement et que tu verses dessus un petit mélange de notre confection : un produit que l'on utilise pour sécher nos mixtures. Juste quelques gouttes suffiront à polluer la Goo. Alors fais moi plaisir et verse-y toute cette flasque, ils ne devraient plus pouvoir s'en servir pour leur drogue.]
+}
+
+MISSION_TRYKER_09_P_OVL_GIVE_MIXTURE (faction tribu_chlorogoo)
+{
+	mission_tryker_09_p_ovl_give_mixture	[Vider le contenu de votre flasque sur 4 spots de Goo situés à proximité du camp $tribu_chlorogoo.mcc$ $tribu_chlorogoo.name$, dans le lac]
+}
+
+MISSION_TRYKER_09_SYS_MSG_GOO ()
+{
+	mission_tryker_09_sys_msg_goo	[La Goo absorbe la mixture qui semble immédiatement faire effet.]
+}
+
+MISSION_TRYKER_09_P_T2_OVL_RETURN (bot giver, bot givervar)
+{
+	mission_tryker_09_p_t2_ovl_return	[Retournez voir $givervar$ et informez-la du succès de votre mission]
+}
+
+MISSION_TRYKER_09_P_T2_RETURN (bot giver)
+{
+	mission_tryker_09_p_t2_return	[Je crois que les Chlorogoos vont avoir une mauvaise surprise]
+}
+
+MISSION_TRYKER_09_P_LDCC_DEBRIEF ()
+{
+	mission_tryker_09_p_ldcc_debrief	[Ca a marché ? Formidable !! Ce n'est probablement pas ça qui nous débarrassera d'eux mais au moins, les imaginer face à de la Goo inutilisable me fait bien rire !{break}Tu as beaucoup fait pour nous les Trykers, et ça a été un immense plaisir que de t'apprendre ce que je sais et de travailler avec toi. Accepte ce modeste présent en remerciement de tous tes efforts, c'est le moins que je puisse faire pour toi.{break}C'est ici que nos routes se séparent, mais je ne suis pas inquiète pour toi, je pense que tu feras un grand récolteur. Ne perds pas ta curiosité et ton courage, et tu iras loin. Bon, côté adieux déchirants, je crois qu'on va stopper là, sinon je vais encore fondre en larmes. Aller file.{break}Ah, j'oubliais, tu devrais passer voir les gens de la Karavan, ils auront sûrement des missions intéressantes à te proposer.]
+}
+
+MISSION_TRYKER_01_GF_P_LDCC_INTRO (bot givervar, item mp_horny_shell)
+{
+	mission_tryker_01_gf_p_ldcc_intro	[Tiens, salut ! C'est toujours un plaisir de voir de nouvelles têtes, et puis je dois dire que j'aime bien la tienne : profil aérodynamique, d'aspect robuste, bien fixée sur les épaules, même la couleur me plait. Je me présente, $givervar$, Maître Tryker, foreuse d'exception et grande aventurière.{break}Alors, laisse-moi deviner... Tu voudrais voir des contrées lointaines et exotiques, trouver de merveilleux trésors perdus, sauver des Homins en détresse, et tout ça en vitesse pour gagner de jolies sommes en récompense que tu t'obstineras à refuser mais que l'on te forcera à accepter, hein ? Génial, j'adore ! Alors c'est parti.{break}Pour le moment laissons les contrées lointaines, les Homins en détresse et les jolies sommes de côté. Nous allons commencer par plus simple, mais tout aussi excitant : creuser. L'extraction c'est la base de tout. Tu vas voir, y'a pas plus simple !{break}Tu as deux bras, un sac et une pioche, tu peux donc te jeter à l'eau dés maintenant. Et comme la pratique est toujours plus instructive que la parole, tu vas aller de ce pas me chercher quelques matières premières : $mp_horny_shell.pia$ $mp_horny_shell.p$. Tu n'auras pas à aller bien loin, juste derrière moi à une trentaine de mètres, de l'autre côté des barrières se trouvent des gisements. File et ne reviens pas bredouille.]
+}
+
+MISSION_TRYKER_05_GF_MIS_DESC (bot giver, sphrase nocive)
+{
+	mission_tryker_05_gf_mis_desc	[Partez à la recherche de meilleures matières premières, utilisez $nocive$ , mais attention aux dangers !]
+}
+
+MISSION_TRYKER_10_MIS_TITLE (bot giver)
+{
+	mission_tryker_10_mis_title	[Essayer une autre profession]
+}
+
+MISSION_TRYKER_10_MIS_DESC (bot giver, bot guide)
+{
+	mission_tryker_10_mis_desc	[Retourner voir $guide$]
+}
+
+MISSION_TRYKER_10_P_LDC_INTROP (bot guide)
+{
+	mission_tryker_10_p_ldc_introp	[$guide$ t'indiquera ou te rendre]
+}
+
+MISSION_TRYKER_10_GOSEEMAYOR_1 (bot guide)
+{
+	mission_tryker_10_goseemayor_1	[Suivez votre radar pour trouver $guide$]
+}
+

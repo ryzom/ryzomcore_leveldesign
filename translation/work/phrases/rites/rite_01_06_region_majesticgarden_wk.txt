@@ -1,0 +1,81 @@
+﻿R_01_06_MIS_TITLE (bot giver, place majesticgarden)
+{
+	r_01_06_mis_title	[The hidden resources of $majesticgarden$]
+}
+
+R_01_06_MIS_DESC (bot giver)
+{
+	r_01_06_mis_desc	[Etudier les ressources de la region.]
+}
+
+R_01_06_P_LDF_INTRO_1 (place majesticgarden, bot prospector)
+{
+	r_01_06_p_ldf_intro_1	[Come now, friend, would you be interested in the natural wealth of the region? It is said that by knowing certain particuclar deposits, you may improve your extraction techniques. {break}If you're game, you should go and speak to $prospector$ on my behalf. He's a prospector and you will find him somewhere in $majesticgarden$.]
+}
+
+R_01_06_P_BC_INTRO_PROSPECTOR_1 (place arena, bot giver, race wombai)
+{
+	r_01_06_p_bc_intro_prospector_1	[So that wily $wombai$ $giver$ sent you, did he? Well, I do indeed know a technique that can improve your focus...{break} But before I show you, you first have to get to know the region in all its delights so you can actually grasp my teachings. There's a very special deposit which is only accessible under special circumstances!{break} Here's a pendant which contains a magic crystal. If the rays of the setting sun fall on it, it will shed light on the place where the deposit is accessible.{break} But beware, illumination will only last a short time before the magic of the crystal disappears. I can always enchant it again, but I won't be taken for granted, you hear!{break} Right, lastly, bear in mind that the enchantment will only work if you're on top of the big hill situated to the north of $arena.da$ $arena$, and only with rays of the setting sun!]
+}
+
+R_01_06_SYS_MSG_TIMED_OUT ()
+{
+	r_01_06_sys_msg_timed_out	[&AMB&La magie du cristal fini de disparaître et l'éclat s'éteint.]
+}
+
+R_01_06_O_VISIT_1 (place colline, item i1, place arena)
+{
+	r_01_06_o_visit_1	[Climb to the top of the big hill to the north of $arena.da$ $arena$ at sunset with the pendant.]
+}
+
+R_01_06_O_GI_REENCHANT_1_1 (item i1, int qt1, int qual1, bot prospector)
+{
+	r_01_06_o_gi_reenchant_1_1	[Ramener le pendentif au prospecteur pour le re-enchanter.]
+}
+
+R_01_06_P_BC_REECHANT_1 ()
+{
+	r_01_06_p_bc_reechant_1	[Tu as épuisé la magie du pendentif avant d'avoir pu forager ? Je vais ré-enchanter son cristal pour que tu puisse essayer a nouveau.]
+}
+
+R_01_06_SYS_MSG_RAY_1 ()
+{
+	r_01_06_sys_msg_ray_1	[&AMB&Les derniers rayons de soleil frappent le cristal et le font briller. Alors que l'enchantement commence à se diminuer lentement, vous apercevez un endroit illuminé quelques lieues plus loin.]
+}
+
+R_01_06_O_FORAGE_1_1 (item i1, int qt1, int qual1)
+{
+	r_01_06_o_forage_1_1	[Go to the place indicated by the pendant and collect $qt1$ $i1$ of quality $qual1$.]
+}
+
+R_01_06_O_FORAGE_1_2 (item i1, int qt1, int qual1, item i2, int qt2, int qual2)
+{
+	r_01_06_o_forage_1_2	[Go to the place indicated by the pendant and collect :\n  - $qt1$ $i1$ of quality $qual1$\n  - $qt2$ $i2$ of quality $qual2$.]
+}
+
+R_01_06_O_FORAGE_1_3 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3)
+{
+	r_01_06_o_forage_1_3	[Go to the place indicated by the pendant and collect :\n  - $qt1$ $i1$ of quality $qual1$\n  - $qt2$ $i2$ of quality $qual2$\n  - $qt3$ $i3$ of quality $qual3$.]
+}
+
+R_01_06_O_GI_LAST_1_1 (item i1, int qt1, int qual1, bot prospector)
+{
+	r_01_06_o_gi_last_1_1	[Ramener les ressources a $prospector$.]
+}
+
+R_01_06_O_GI_LAST_1_2 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, bot prospector)
+{
+	r_01_06_o_gi_last_1_2	[Ramener les ressources a $prospector$.]
+}
+
+R_01_06_O_GI_LAST_1_3 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, bot prospector)
+{
+	r_01_06_o_gi_last_1_3	[Ramener les ressources a $prospector$.]
+}
+
+R_01_06_P_BC_DEBRIEF_1 ()
+{
+	r_01_06_p_bc_debrief_1	[Bravo, vous avez réussi !
+C'est lorsque j'ai été guidé par l'éclat du cristal que j'ai moi-même découvert la façon de mieux me concentrer. Tu es digne de recevoir mon enseignement et ce cube d'ambre qui renseigne sur la région.]
+}
+

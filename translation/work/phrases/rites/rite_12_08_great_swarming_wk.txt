@@ -1,0 +1,65 @@
+﻿R_12_08_MIS_TITLE (bot giver)
+{
+	r_12_08_mis_title	[Coup de pied dans la fourmilière]
+}
+
+R_12_08_MIS_DESC (bot giver)
+{
+	r_12_08_mis_desc	[Aller tuer un grand nombre de Kitins]
+}
+
+R_12_08_P_LDC_INTRO (faction fact_fyros, faction fact_matis, faction fact_zorai, place lieu_fairhaven, bot player)
+{
+	r_12_08_p_ldc_intro	[Approche $player$, je suis contente de te voir, je t'attendais.{break}Je ne te ferai pas l'offense de te dire ce que sont les Kitins, tu le sais sans doute tout aussi bien que moi. Mais ce mot ne résonne pas de la même manière dans tous les esprits.{break}Pour les plus jeunes et les plus fougueux d'entre nous, les Kitins ne sont que les monstres légendaires, ennemis désignés d'un temps révolu que l'on combat aujourd'hui pour la gloire, pour le gain d'un trophée de chasse.{break}Mais pour nous autres, pour ceux qui ont connu l'exil et le grand essaim, ce mot est un poison qui ronge les plaies béantes du passé chaque fois qu'il parvient à nos oreilles.{break}J'étais une petite fille lorsque la soif aveugle de connaissances des $fact_fyros.member$ a libéré ces monstres des entrailles de notre planète. J'ai vu la sauvagerie, la barbarie de ces immondes créatures, et j'ai vu mes frères, mes soeurs, mes amis, nombre de ceux que j'aimais, massacrés, exterminés, les uns après les autres. Mais j'ai aussi vu, durant ces jours sanglants, la fourberie des $fact_matis.member$ et la lâcheté des $fact_zorai.member$ contribuer aux souffrances de notre peuple.{break}Je t'assure $player$, cela fait beaucoup de choses à porter pour une simple petite fille. J'ai gardé dans mon esprit tant de choses terribles. La seule chose dont je ne me souvienne pas, c'est la dernière nuit que j'ai pu passer à dormir sereinement.{break}Les Kitins sont toujours présents sur nos terre et nous avons besoin de Homins courageux tels que toi pour leur faire comprendre qu'ils n'y sont pas les bienvenus. Va rejoindre le chef de la garde de $lieu_fairhaven$, il te missionnera pour que tu nous aide à combattre ce fléau.{break}Mais avant de partir, promet moi une chose, lorsque la lame de ta dague ira percer les entrailles de ces monstres... regarde les bien dans les yeux et crie leur mon nom ! Qu'ils sachent, pour peu qu'ils aient une once d'intelligence, qu'il s'agit bien d'une vengeance personnelle... fais-le pour moi et je t'enseignerai une technique d'esquive.]
+}
+
+R_12_08_P_OVL_BRIEF (bot cg_fairhaven, place lieu_fairhaven)
+{
+	r_12_08_p_ovl_brief	[Aller voir $cg_fairhaven$, le chef de la garde de $lieu_fairhaven$]
+}
+
+R_12_08_P_T2_CG_FAIRHAVEN_BRIEF (bot cg_fairhaven, bot givervar)
+{
+	r_12_08_p_t2_cg_fairhaven_brief	[Salutation, je viens vous épauler sur ordre de $givervar$.]
+}
+
+R_12_08_P_BC_CG_FAIRHAVEN_BRIEF (place lieu_kitins)
+{
+	r_12_08_p_bc_cg_fairhaven_brief	[Bien ! Un volontaire pour aller nettoyer nos terres. Si tu souhaites aller papoter avec nos très chers voisins Kitins, n'oublie surtout pas la règle d'or de la courtoisie : tu commence par un coup de hache en travers du crâne, et ensuite tu salues !{break}Va dans la région de $lieu_kitins$ et mets moi en pièces une quinzaine de ces hérésies de la nature. Tu reviendras me faire ton rapport par la suite.]
+}
+
+R_12_08_P_OVL_VISIT (place lieu_kitins)
+{
+	r_12_08_p_ovl_visit	[Rend toi à $lieu_kitins$]
+}
+
+R_12_08_P_OVL_RAPPORT (bot cg_fairhaven)
+{
+	r_12_08_p_ovl_rapport	[Retourne faire ton rapport à $cg_fairhaven$]
+}
+
+R_12_08_P_T2_RAPPORT (bot cg_fairhaven)
+{
+	r_12_08_p_t2_rapport	[J'ai accompli ma mission]
+}
+
+R_12_08_P_BC_RAPPORT ()
+{
+	r_12_08_p_bc_rapport	[Bien, bien ! Joli travail. Quinze Kitins embrochés, voila une bonne chose de faite. Comme je le dis toujours : un bon Kitin est un Kitin mort !]
+}
+
+R_12_08_P_OVL_DEBRIEF (bot givervar)
+{
+	r_12_08_p_ovl_debrief	[Retourne voir $givervar$]
+}
+
+R_12_08_P_T2_DEBRIEF (bot givervar)
+{
+	r_12_08_p_t2_debrief	[J'ai transmis votre message aux Kitins]
+}
+
+R_12_08_P_BC_DEBRIEF ()
+{
+	r_12_08_p_bc_debrief	[Je t'en serai toujours reconnaissante. Que Jena te protège ! Et voici la récompense que je t'avais promise, tu l'as bien méritée.]
+}
+

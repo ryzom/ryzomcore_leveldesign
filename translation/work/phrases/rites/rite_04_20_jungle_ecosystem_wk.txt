@@ -1,0 +1,43 @@
+﻿R_04_20_MIS_TITLE (bot giver)
+{
+	r_04_20_mis_title	[Les ressources de la jungle]
+}
+
+R_04_20_MIS_DESC (bot giver, place zora)
+{
+	r_04_20_mis_desc	[The intendant of $zora$ has proposed his services to show the resources of the jungle to homins and teach a technique enabling them to preserve deposits.]
+}
+
+R_04_20_P_LDF_INTRO_1 ()
+{
+	r_04_20_p_ldf_intro_1	[Avant d'assumer la charge d'intendant aupres de nos prospecteurs, j'ai moi-meme pendant quelques temps gagné ma vie en tant que forager. Les bosquets d'arbres et collines qui forment notre beau pays regorgent de merveilles, de matieres délicates colorées de violet qui sont utilisées tant dans la fabrication d'objets de guerre que d'objets d'arts ou de décoration. L'une des premieres choses que l'on m'a enseignée est de préserver les endroits d'ou nous pouvons extraire ces matieres. Je peux a mon tour t'enseigner cette technique si tu le désires.
+
+Bien ! Mais avant de t'en apprendre davantage, il me faut voir dans quelle mesure tu connais bien les matieres caractéristiques de nos régions, ainsi que les chemins qui menent a elles. Je te propose un petit test. Pars a la recherche de ces matieres premieres, et rapporte-m'en en quantité et qualité suffisante. Tu as une semaine devant toi.
+]
+}
+
+R_04_20_P_BC_RECEIVE_ITEM_1 (place citiesofintuition, bot prospector_1)
+{
+	r_04_20_p_bc_receive_item_1	[I see you've passed the test! So you know enough about the jungles and their treasures to take in my teaching.{break} To fully grasp its importance, you have to see the results of an extraction assay that doesn't respect the ground of Atys and depletes the deposit.{break} Go and speak to $prospector_1$ on my behalf, he goes prospecting for the city in the region of $citiesofintuition$, and many a time has come upon deposits having undergone bad extraction.]
+}
+
+R_04_20_M_T2_PROSPECTOR_1 (bot prospector_1, bot giver)
+{
+	r_04_20_m_t2_prospector_1	[$giver$ sent me to see you.]
+}
+
+R_04_20_P_BC_PROSPECTOR_1 (bot giver, place maidengrove)
+{
+	r_04_20_p_bc_prospector_1	[$giver$ sent you, did he? You probably want to learn the famous technique used by every well-informed forager. But first you must realize that all too many foragers have no consideration for the ground that they pillage.{break} Some time ago I saw a dying deposit which was once a flourishing source of fibers. Go and forage there to see the disastrous state of the source for yourself. Use your compass to guide you.{break} Carry whatever you find to $giver$. And watch out for unpleasant surprises, $maidengrove$ is a dangerous place for a novice!]
+}
+
+R_04_20_SYS_MSG_WEAK_RESOURCE_1 ()
+{
+	r_04_20_sys_msg_weak_resource_1	[&AMB&Le sol que vous foulez semble exsangue. les sources meurent presque aussi vite qu'elles apparaissent.]
+}
+
+R_04_20_P_BC_DEBRIEF_1 ()
+{
+	r_04_20_p_bc_debrief_1	[Je vois malheureusement que certaines sources semblent taries pour de bon. J'espère que ce que tu as vu là-bas t'incitera à user sagement des ressources d'Atys. Il est temps maintenant pour toi de recevoir ton enseignement. Reçois également ce cube d'ambre, porteur de savoir sur nos contrées et la jungle qui les recouvre.]
+}
+

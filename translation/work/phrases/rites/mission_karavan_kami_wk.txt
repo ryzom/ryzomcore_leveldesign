@@ -1,0 +1,59 @@
+﻿EPISODE2_TP_KAMI_ACTE1_PYR_MIS_TITLE (bot giver)
+{
+	episode2_tp_kami_acte1_pyr_mis_title	[Téléportation]
+}
+
+EPISODE2_TP_KAMI_ACTE1_PYR_MIS_DESC (bot giver)
+{
+	episode2_tp_kami_acte1_pyr_mis_desc	[Téléportation]
+}
+
+EPISODE2_TP_KAMI_ACTE1_PYR_P_AUTO_TP ()
+{
+	episode2_tp_kami_acte1_pyr_p_auto_tp	[Téléportation]
+}
+
+EPISODE2_TP_KAMI_ACTE1_PYR_P_DC_TP (place city_destination)
+{
+	episode2_tp_kami_acte1_pyr_p_dc_tp	[Si tu viens de $city_destination$, t'y renvoyer je peux. Le souhaites-tu ?]
+}
+
+EPISODE2_TP_KARAVAN_ACTE1_PYR_P_DC_TP (place city_destination)
+{
+	episode2_tp_karavan_acte1_pyr_p_dc_tp	[Si tu viens de $city_destination$, je peux te renvoyer dans ton pays afin d'accomplir ta mission au service de Jena. Le veux-tu, homin ?]
+}
+
+FYROS_ACTE1_KAMI_TP_P_DC_TP_KAMI_ISLAND (place region_name)
+{
+	fyros_acte1_kami_tp_p_dc_tp_kami_island	[Dans les terres anciennes je peux t'envoyer. \n
+Là-bas, $region_name.pr$ $region_name$ où vivent les kitins, de précieuses matières premières tu trouveras. \n
+Elles serviront à la construction de nos sanctuaires. Es-tu prêt à partir ?]
+}
+
+FYROS_ACTE1_KAMI_TP_P_DA_TP_KAMI_ISLAND_OK ()
+{
+	fyros_acte1_kami_tp_p_da_tp_kami_island_ok	[Oui, envoie-moi là-bas !]
+}
+
+FYROS_ACTE1_KAMI_TP_P_DA_TP_KAMI_ISLAND_NOK ()
+{
+	fyros_acte1_kami_tp_p_da_tp_kami_island_nok	[Non, je préfère rester ici.]
+}
+
+FYROS_ACTE1_KARAVAN_TP_P_DC_TP_KARAVAN_ISLAND (place region_name)
+{
+	fyros_acte1_karavan_tp_p_dc_tp_karavan_island	[Homin, je peux te téléporter dans les terres anciennes, vers $region_name.da$ $region_name$.\n
+Dans cette région hantée par les kitins se trouvent les matières premières nécessaires à la construction des temples de Jena.\n
+Es-tu prêt à partir ?]
+}
+
+MATIS_ENDING_KAMI_TP_OPEN_ISLAND_TP (place region_name)
+{
+	matis_ending_kami_tp_open_island_tp	[Dans les terres anciennes je peux t'envoyer. Là-bas, $region_name.pr$ $region_name$, beaucoup de kitins rôdent. Les surveiller nous devons.{break}Contre les actions de la Karavan, $region_name.da$ $region_name$ a besoin d'être protégé. Les ennemis de Ma-Duk il te faudra combattre. $self$, es-tu prêt à partir ?]
+}
+
+MATIS_ENDING_KARAVAN_TP_OPEN_ISLAND_TP (place region_name)
+{
+	matis_ending_karavan_tp_open_island_tp	[Homin, je peux te téléporter dans les terres anciennes, vers $region_name.da$ $region_name$. La région est hantée par les kitins, il est important que leurs mouvements soient surveillés.{break}Autre chose : $region_name.da$ $region_name$ doit rester sous le contrôle des Karavaniers. Là-bas, il te faudra sans doute affronter des ennemis de Jena. Es-tu prêt à partir, homin ?]
+}
+

@@ -1,0 +1,150 @@
+﻿R_01_27_MIS_TITLE (bot giver)
+{
+	r_01_27_mis_title	[La tournée de réassort]
+}
+
+R_01_27_MIS_DESC (bot giver)
+{
+	r_01_27_mis_desc	[Un riche marchand souhaite faire la tournée de ses fournisseurs. A vous de l'escorter dans son périple.]
+}
+
+R_01_27_P_LDF_INTRO_1 (place libertylake)
+{
+	r_01_27_p_ldf_intro_1	[Hallo friend, I know a merchant who's lookin' for a hand with his rounds. He'll be covering the whole of $libertylake$...{break} I grant ya, by the time you get back, you'll know the region like the end of your nose! And better still, it'll give you extra experience in finding your bearings. Be careful, this is a dangerous mission and you may need a little help.]
+}
+
+R_01_27_O_VISIT_STABLE (place stable, bot_name merchant_1_name)
+{
+	r_01_27_o_visit_stable	[Go to $stable$ to find $merchant_1_name$]
+}
+
+R_01_27_M_T2_MERCHANT_1 (bot merchant_1, bot giver)
+{
+	r_01_27_m_t2_merchant_1	[$giver$ m'a dit que vous aviez besoin d'aide.]
+}
+
+R_01_27_P_BC_BRIEF_ESCORT_1 (faction corsairs, race mektoub)
+{
+	r_01_27_p_bc_brief_escort_1	[C'est exact... votre présence va me faciliter la tâche ! Je vends les produits des tribus locales et je dois passer par les avant-postes $corsairs.cc$ $corsairs$ pour récupérer des biens. J'ai un $mektoub$ pour m'aider à tout transporter, et votre travail consistera aussi à le protéger.]
+}
+
+R_01_27_O_ES_1 ()
+{
+	r_01_27_o_es_1	[Accompagnez la caravanne au premier outpost]
+}
+
+R_01_27_P_BC_BRIEF_ESCORT_1B (race clopper, place libertylake)
+{
+	r_01_27_p_bc_brief_escort_1b	[I'm glad you're comin' with me on me rounds, really. Oh, $libertylake$ is pretty tranquil, as long as you watch out for the $clopper.p$ that is, place is teaming with 'em. We'll have to watch our step as we go.]
+}
+
+R_01_27_P_T2_WHAT (bot merchant_1)
+{
+	r_01_27_p_t2_what	[What's happening ?]
+}
+
+R_01_27_P_LDC_CLOPPER (race mektoub)
+{
+	r_01_27_p_ldc_clopper	[The $mektoub$ seems on edge... Run ahead to the beach and make sure the coast is clear!]
+}
+
+R_01_27_O_VI_PLAGE (place place)
+{
+	r_01_27_o_vi_plage	[allez verifier s'il y a du danger sur la plage]
+}
+
+R_01_27_O_T2_BEACH (bot merchant_1)
+{
+	r_01_27_o_t2_beach	[Une fois la plage sécurisée, allez retrouvez le marchand]
+}
+
+R_01_27_P_BC_ES_1B ()
+{
+	r_01_27_p_bc_es_1b	[ok on repart]
+}
+
+R_01_27_M_T2_SUPPLIER_1 (bot supplier_1, item item_to_loot_1)
+{
+	r_01_27_m_t2_supplier_1	[Nous venons pour les $item_to_loot_1$.]
+}
+
+R_01_27_P_BC_LOAD_1 (item item_to_loot_1, int item_to_loot_quantity_1, race mektoub)
+{
+	r_01_27_p_bc_load_1	[Here's your order. These $item_to_loot_quantity_1$ $item_to_loot_1$ are of fine craftership, and you won't have any trouble sellin' 'em. Load 'em on your $mektoub$.]
+}
+
+R_01_27_O_GI_LOAD_1_1 (item i1, int qt1, int qual1, bot mektoub_1)
+{
+	r_01_27_o_gi_load_1_1	[Chargez les objets sur un mektoub]
+}
+
+R_01_27_P_BC_ES_2 ()
+{
+	r_01_27_p_bc_es_2	[- Allons au deuxième outpost]
+}
+
+R_01_27_O_ES_2 ()
+{
+	r_01_27_o_es_2	[Accompagnez la caravanne au second outpost]
+}
+
+R_01_27_P_LDC_CLOPPER_2 ()
+{
+	r_01_27_p_ldc_clopper_2	[Encore ces satanés bestioles...vous savez ce qu'il vous reste a faire!]
+}
+
+R_01_27_P_BC_ES_2B (race clopper)
+{
+	r_01_27_p_bc_es_2b	[If the  $clopper.p$ keep multipkying like this, it'll soon be impossible for us merchants to do our job right!... Ok, let's be on our way!]
+}
+
+R_01_27_M_T2_SUPPLIER_2 (bot supplier_2, item item_to_loot_2)
+{
+	r_01_27_m_t2_supplier_2	[Nous venons pour les $item_to_loot_2$.]
+}
+
+R_01_27_P_BC_LOAD_2 (item item_to_loot_2, int item_to_loot_quantity_2)
+{
+	r_01_27_p_bc_load_2	[J'ai pu vous avoir les $item_to_loot_2$ que vous avez commandé. Ces armes sont la fierté de notre tribu. Je vous recommande de les charger sur votre mektoub, ces $item_to_loot_quantity_2$ $item_to_loot_2$ pesent leur poids .]
+}
+
+R_01_27_P_BC_ESCORT_3 (faction corsairs)
+{
+	r_01_27_p_bc_escort_3	[The last supplier'is at the $corsairs$' camp.]
+}
+
+R_01_27_O_ES_3 ()
+{
+	r_01_27_o_es_3	[Accompagnez la caravanne au troisième outpost]
+}
+
+R_01_27_P_BC_ES_3B ()
+{
+	r_01_27_p_bc_es_3b	[Cet endroit tres particulier nous a servi lors de la lutte pour nous libérer de l'esclavage Matis. D'ici on domine en effet la région et nos sentinelles s'en servaient comme point d'observation. De nos jours cela reste un tres beau point de vue.]
+}
+
+R_01_27_M_T2_SUPPLIER_3 (bot supplier_3, item item_to_loot_3)
+{
+	r_01_27_m_t2_supplier_3	[Nous venons pour les $item_to_loot_3$.]
+}
+
+R_01_27_P_BC_LOAD_3 (item item_to_loot_3, int item_to_loot_quantity_3, race mektoub)
+{
+	r_01_27_p_bc_load_3	[Ah, there you are, at last... I was beginning to think you wouldn't honor our contract.\n Here's the cargo : $item_to_loot_quantity_3$ $item_to_loot_3$. Take your time in loading your $mektoub$.]
+}
+
+R_01_27_P_BC_ESCORT_4 (place fairhaven)
+{
+	r_01_27_p_bc_escort_4	[Bon, on n'a plus qu'à rentrer à $fairhaven$ maintenant. Vous savez ce que vous avez à faire, je vous fais confiance.]
+}
+
+R_01_27_O_ES_4 (place fairhaven)
+{
+	r_01_27_o_es_4	[Escort the convoy to $fairhaven$.]
+}
+
+R_01_27_P_BC_DEBRIEF_1 ()
+{
+	r_01_27_p_bc_debrief_1	[Ah, c'est une affaire qui roule, $self$ ! Vous devez connaître la région comme votre poche maintenant que vous avez su trouver votre chemin. Mais si vous avez un trou de mémoire, utilisez ce cube d'ambre qui contient de précieuses informations sur la région.]
+}
+

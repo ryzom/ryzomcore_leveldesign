@@ -1,0 +1,65 @@
+﻿R_05_39_MIS_TITLE ()
+{
+	r_05_39_mis_title	[Terreur dans Sawdust Mines]
+}
+
+R_05_39_MIS_DESC ()
+{
+	r_05_39_mis_desc	[Un prédateur rôde dans les Sawdust Mines, le chasseur qui réussira à récupérer sa crinière mettrait en avant sa valeur et son courage.]
+}
+
+R_05_39_P_LDF_INTRO_1 ()
+{
+	r_05_39_p_ldf_intro_1	[Une bête géante répand la mort dans la région de Sawdust Mines et soulève de nombreuses rumeurs. Certains parlent même d'un démon venu des primes racines. Si tu ramènes sa tête, tu prouveras ton honneur et je t'enseignerai une façon d'améliorer ton endurance. Il est apparu la dernière fois près de l'outpost qui se trouve le long de la falaise, au Nord Ouest d'ici, dans la région de Sawdust Mines.]
+}
+
+R_05_39_M_T2_CHIEF_1 (bot outpost_chief_1, bot giver)
+{
+	r_05_39_m_t2_chief_1	[$giver$ sent me.]
+}
+
+R_05_39_P_BC_CHIEF_BRIEF_1 ()
+{
+	r_05_39_p_bc_chief_brief_1	[Ainsi vous venez pour nous débarrasser de ce démon ? Vous êtes bien certain de vouloir lui donner la chasse seul ? Nombre de nos meilleurs guerriers y ont déjà laissé la vie, et cette horreur continue à dévorer les membres de notre tribu. Trouver la et débarrassez nous-en. Avec un peu de chance vous la trouverez dans les environs du village, mais méfiez vous, cette chose s'en prend à tout ceux qu'elle voit !
+
+La meilleure chance que vous ayez est de chercher des traces de la bête dans les environs de l'outpost.
+]
+}
+
+R_05_39_O_VISIT_PLACE_1 (place place_1)
+{
+	r_05_39_o_visit_place_1	[Trouver la trace de la bête autour de l'outpost]
+}
+
+R_05_39_O_SAVE_PEONS_1 ()
+{
+	r_05_39_o_save_peons_1	[Sauvez les paysans de la bête féroce]
+}
+
+R_05_39_M_T2_PEON_1 (bot group_peon)
+{
+	r_05_39_m_t2_peon_1	[Etes-vous blessé ?]
+}
+
+R_05_39_P_BC_CHASE_CREATURE_1 ()
+{
+	r_05_39_p_bc_chase_creature_1	[Par le grand feu de Coriolis ! Heureusement que vous étiez là pour nous sauver !
+A mon avis, cette créature a été bien affaiblie et va essayer de reprendre des forces. Il me semble que sa tanière se trouvait en contre bas dans le Outlaw Canyon. Vos plus grandes chances sont de la trouver là-bas avant qu'elle ne récupère.
+]
+}
+
+R_05_39_O_LOOT_HEAD_1_1 (item i1, int qual1, int qt1)
+{
+	r_05_39_o_loot_head_1_1	[Recupérez la tête du varinx comme trophé]
+}
+
+R_05_39_O_GI_HEAD_1_1 (item i1, int qt1, int qual1, bot giver)
+{
+	r_05_39_o_gi_head_1_1	[Ramenez la tete du varinx a $giver$]
+}
+
+R_05_39_P_BC_DEBRIEF_1 ()
+{
+	r_05_39_p_bc_debrief_1	[Vous avez agit avec beaucoup de courage en affrontant cette créature. Vous êtes digne de recevoir l'enseignement des Fyros.]
+}
+

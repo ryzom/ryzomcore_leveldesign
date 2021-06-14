@@ -1,0 +1,120 @@
+﻿R_05_44_MIS_TITLE (bot giver, race creature)
+{
+	r_05_44_mis_title	[L'étude des $creature.p$]
+}
+
+R_05_44_MIS_DESC (bot giver, race creature)
+{
+	r_05_44_mis_desc	[Ramener du sang de $creature$ pour un scientifique matis]
+}
+
+R_05_44_P_LDC_INTRO (race creature, place lieu_yrka, place lieu_yrka_quartier, bot scientifique)
+{
+	r_05_44_p_ldc_intro	[$self$, il est temps pour vous de prouver vos talents de chasseur.{break}Un vieil ami à moi, $scientifique$, se trouve être également l'un de nos plus éminents scientifiques.{break}Il étudie actuellement $creature.pda$ $creature.p$, des prédateurs plutôt vicieux, et il semblerait qu'il ait besoin de quelques spécimens. Ce qu'il veut en faire, je n'en ai pas la moindre idée, il vaut mieux que vous en discutiez directement avec lui.{break}Vous le trouverez à $lieu_yrka$, dans le quartier de $lieu_yrka_quartier$. Si je peux vous donner un conseil, soyez attentif à ce qu'il vous dit, et n'hésitez pas à le faire répéter si besoin est... Il a l'esprit un peu farfelu, et de gros problèmes de mémoire. Mais à sa façon, c'est un véritable génie !{break} Je compte sur vous, $self$. Si vous vous acquittez avec succès de cette mission de confiance, je vous montrerai comment faire bon usage de la magie pour se défendre contre un adversaire et le ralentir. Revenez me voir quand $scientifique$ sera satisfait.]
+}
+
+R_05_44_P_T2_SCI_01 (bot scientifique, bot givervar)
+{
+	r_05_44_p_t2_sci_01	[Je suis envoyé par $givervar$]
+}
+
+R_05_44_P_DC_SCI_01A (race creature_arma)
+{
+	r_05_44_p_dc_sci_01a	[Ah, très bien, très bien ! Cette charmante enfant m'avait dit qu'elle m'enverrait quelqu'un. Parfait, parfait ! Vous êtes au courant que je travaille actuellement sur l'étude des $creature_arma.p$...]
+}
+
+R_05_44_P_AN_SCI_01A (race creature, bot givervar)
+{
+	r_05_44_p_an_sci_01a	[Non, $givervar$ m'a parlé de $creature.p$]
+}
+
+R_05_44_P_DC_SCI_01B (race creature)
+{
+	r_05_44_p_dc_sci_01b	[Oui, c'est ce que je viens de vous dire à l'instant : sur l'étude des $creature.p$. Soyez un peu attentif, sinon on n'y arrivera jamais !]
+}
+
+R_05_44_P_AN_SCI_01B ()
+{
+	r_05_44_p_an_sci_01b	[Hem, excusez-moi...]
+}
+
+R_05_44_P_DC_SCI_01C (race creature_arma, place lieu_groveofconfusion)
+{
+	r_05_44_p_dc_sci_01c	[Qu'est-ce-que je disais ? Ah oui, je voudrais que vous me rameniez du sang d'$creature_arma$. Vous en trouverez dans la région de $lieu_groveofconfusion$.]
+}
+
+R_05_44_P_AN_SCI_01C (race creature, place lieu_groveofconfusion)
+{
+	r_05_44_p_an_sci_01c	[D'accord, ramener du sang de $creature$ de la région de $lieu_groveofconfusion$, c'est ça ?]
+}
+
+R_05_44_P_BC_SCI_01 ()
+{
+	r_05_44_p_bc_sci_01	[C'est bien ça ! Eh bien quoi, vous êtes encore là ? Pressons, pressons, j'ai de nombreuses découvertes à faire !]
+}
+
+R_05_44_P_DC_SCI_02A (race creature, place lieu_groveofconfusion)
+{
+	r_05_44_p_dc_sci_02a	[Que voulez vous que je fasse de ça ? On dirait que ça vient de $creature.p$  des forêts. Vous êtes allé chercher ça dans la région de $lieu_groveofconfusion$, si je ne me trompe ?]
+}
+
+R_05_44_P_AN_SCI_02A ()
+{
+	r_05_44_p_an_sci_02a	[Oui, c'est l'endroit que vous m'avez indiqué]
+}
+
+R_05_44_P_DC_SCI_02B (race creature_arma, place lieu_forbiddendepths)
+{
+	r_05_44_p_dc_sci_02b	[Comment ? Vous vous moquez de moi ! Ce n'est pas ce que je vous ai dit. On dirait que vous avez du mal à comprendre ! Je vais donc répéter ma requête avec des mots simples afin que votre esprit réduit puisse assimiler ce flot d'informations : vous rapporter moi sang d'$creature_arma$ vivant dans région $lieu_forbiddendepths$. Vous avez saisi ?]
+}
+
+R_05_44_P_AN_SCI_02B (race creature, place lieu_forbiddendepths)
+{
+	r_05_44_p_an_sci_02b	[...Moi ramener vous sang de $creature$ de région $lieu_forbiddendepths$]
+}
+
+R_05_44_P_DC_SCI_02C ()
+{
+	r_05_44_p_dc_sci_02c	[C'est ça ! Répétez-le encore une fois, afin que je sois sûr que vous avez bien compris.]
+}
+
+R_05_44_P_AN_SCI_02C (race creature, place lieu_forbiddendepths)
+{
+	r_05_44_p_an_sci_02c	[Grmbl... Sang, $creature$, $lieu_forbiddendepths$ !]
+}
+
+R_05_44_P_BC_SCI_02 ()
+{
+	r_05_44_p_bc_sci_02	[Eh bien, ça finit par rentrer ! Enfin, on ne va pas y passer la journée non plus... allez-y maintenant !]
+}
+
+R_05_44_P_DC_SCI_03A ()
+{
+	r_05_44_p_dc_sci_03a	[Ah, enfin ! Attendez... ce n'est pas vrai, je rêve !]
+}
+
+R_05_44_P_AN_SCI_03A ()
+{
+	r_05_44_p_an_sci_03a	[Ne me dites pas... Ce n'est pas ce que vous vouliez ?]
+}
+
+R_05_44_P_BC_SCI_03 (creature_model creature_02, creature_model creature_03, place lieu_forbiddendepths)
+{
+	r_05_44_p_bc_sci_03	[Je vous ai demandé du sang de $creature_03$, et non pas du sang de $creature_02$ ! Jena ait pitié de vous... Ce n'est pourtant pas compliqué : sang... $creature_03$... $lieu_forbiddendepths$.{break}Allez, allez, au travail ! Vous savez que vous mettez ma patience à rude épreuve !]
+}
+
+R_05_44_P_DCC_SANG_OK (race creature_arma)
+{
+	r_05_44_p_dcc_sang_ok	[Enfin, nous y voilà ! Vous voyez que ce n'était pas si compliqué. Laissez-moi maintenant, j'ai une autre étude sur les $creature_arma.p$ à mener. Ah, mais vous voulez peut-être m'aider pour... non ? Bon, tant pis !]
+}
+
+R_05_44_P_T2_DEBRIEF (bot givervar)
+{
+	r_05_44_p_t2_debrief	[Ma mission est terminée... j'ai bien cru mourir !]
+}
+
+R_05_44_P_BC_DEBRIEF (race creature, bot scientifique)
+{
+	r_05_44_p_bc_debrief	[Je vois à votre mine défaite que ça n'a pas dû être facile... mais vous vous en êtes bien tiré. Travailler pour $scientifique$ forge le caractère, et enseigne les vertus de la patience. Vous avez bien mérité votre récompense. Je vais vous apprendre la technique de défense dont je vous ai parlé. Prenez aussi ce cube d'ambre, afin d'en savoir plus sur $creature.pda$ $creature.p$.]
+}
+

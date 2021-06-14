@@ -1,0 +1,148 @@
+﻿//nbland_kamis
+////////////////zorai///////////////////////////////////
+/////////zorai qui guide le joueur jusqu'au kami////////
+
+//le joueur "target" le zorai
+ONCLICK_NEWB_ZORAI_ONCLICK_NEWB_ZORAI_KAMI()
+{
+	onclick_newb_zorai_onclick_newb_zorai_kami	[<**If you want to reach the capital on the Witherings, I can help you.**>]
+}
+
+//le joueur "follow" le zorai 
+ONFOLLOW_NEWB_ZORAI_ONCLICK_NEWB_ZORAI_KAMI()
+{
+	onfollow_newb_zorai_onclick_newb_zorai_kami	[Allons y, préparez vous à une rencontre exceptionelle.]
+}
+
+//le joueur "target" le zorai pendant le trajet
+ONCLICK_ONROAD_NEWB_KAMI()
+{
+	onclick_onroad_newb_kami	[Un peu de patience, nous allons bientôt arriver.]
+}
+
+//petites phrases courtes dites par le zorai pendant le trajet
+ZO_KAMI_WALKING_1()
+{
+	zo_kami_walking_1	[La magie des Kamis n'a pas d'égale sur Atys.]
+}
+
+ZO_KAMI_WALKING_2()
+{
+	zo_kami_walking_2	[Les Kamis sont de précieux guides, ils nous montrent la voie pour éradiquer la maladie qui ronge notre pays.]
+}
+
+ZO_KAMI_WALKING_3()
+{
+	zo_kami_walking_3	[Méfiez vous de la Karavan, ses membres ont de sombres ames.]
+}
+
+ZO_KAMI_WALKING_4()
+{
+	zo_kami_walking_4	[Respectez la nature et adorez les Kamis vous élevrez ainsi votre esprit.]
+}
+
+ZO_KAMI_WALKING_5()
+{
+	zo_kami_walking_5	[Les efforts de tous seront nécessaires pour combattre cette terrible maladie qu'est la Goo.]
+}
+
+ZO_KAMI_WALKING_6()
+{
+	zo_kami_walking_6	[De temps en temps les Kamis nous font l'honneur de demander notre assistance, n'hésitez pas à leur proposer votre aide quand vous en rencontrerez.]
+}
+
+//zorai arrive au kami priest
+SPONTANEOUS_ATDEST_KAMI()
+{
+	spontaneous_ardest_kami	[Nous sommes arrivés, voici le puissant Kami qui pourra vous transporter.]
+}
+
+//zorai arrive au kami priest (on click)
+ONCLICK_ATDEST_NEWB_KAMI()
+{
+	onclick_atdest_newb_kami	[Allez donc parler au Kami priest, ne soyez pas intimidé mon jeune ami.]
+}
+
+/////////////////kami priest/////////////////////////
+
+//kami priest (on click)
+ONCLICK_NEWB_ZORAI_KAMITELEPORT()
+{
+	onclick_newb_zorai_kamiteleport	[Kami pouvoir t'envoyer parmis les tiens...dans pays malade.]		
+}
+//kami priest (on click)
+ONCLICK_NEWB_ZORAI_KAMITELEPORT_BACK()
+{
+	onclick_newb_zorai_kamiteleport_back	[Toi vouloir retourner sur ile des réfugiés? Kami peut aider toi.]		
+}
+
+/////////////////////fyros////////////////////////////////////////////////////////////////////
+/////////fyros qui guide le joueur jusqu'au kami////////
+
+//le joueur "target" le FYROS
+ONCLICK_NEWB_FYROS_ONCLICK_NEWB_FYROS_KAMI()
+{
+	onclick_newb_fyros_onclick_newb_fyros_kami	[<**If you want to reach the capital on the Burning Desert, I can help you.**>]
+}
+
+//le joueur "follow" le FYROS
+ONFOLLOW_NEWB_FYROS_ONCLICK_NEWB_FYROS_KAMI()
+{
+	onfollow_newb_fyros_onclick_newb_fyros_kami	[Allons y, préparez vous à faire une rencontre étonnante.]
+}
+
+//le joueur "target" le FYROS pendant le trajet
+ONCLICK_ONROAD_NEWB_FYROS_KAMI()
+{
+	onclick_onroad_newb_fyros_kami	[Un peu de patience, nous allons bientôt arriver.]
+}
+
+//petites phrases courtes dites par le FYROS pendant le trajet
+FYROS_KAMI_WALKING_1()
+{
+	fyros_kami_walking_1	[La magie des Kamis a la réputation d'être tres puissante, ce sont eux qui nous en on appris les rudiments.]
+}
+
+FYROS_KAMI_WALKING_2()
+{
+	fyros_kami_walking_2	[Les Kamis sont des êtres intrigants mais amicaux. Ils veillent à ce que soit respecté l'équilibre naturel d'Atys.]
+}
+
+FYROS_KAMI_WALKING_3()
+{
+	fyros_kami_walking_3	[Méfiez vous de la Karavan, ses membres livrent une bataille sans mercie contre les Kamis. Ils sont puissants et imprévisible.]
+}
+
+FYROS_KAMI_WALKING_4()
+{
+	fyros_kami_walking_4	[Peut être en apprendrons nous d'avantage au sujet du dragon grace aux connaissances de Kamis.]
+}
+
+FYROS_KAMI_WALKING_5()
+{
+	fyros_kami_walking_5	[Si vous n'avez jamais vu de Kami auparavant leurs apparences pourrait vous surprendre.]
+}
+
+FYROS_KAMI_WALKING_6()
+{
+	fyros_kami_walking_6	[De temps en temps les Kamis nous font l'honneur de demander notre assistance, n'hésitez pas à leur proposer votre aide quand vous en rencontrerez.]
+}
+
+//FYROS arrive au kami priest
+SPONTANEOUS_ATDEST_FYROS_KAMI()
+{
+	spontaneous_ardest_fyros_kami	[Nous sommes arrivés, voici le puissant Kami qui pourra vous transporter.]
+}
+
+//FYROS arrive au kami priest (on click)
+ONCLICK_ATDEST_NEWB_FYROS_KAMI()
+{
+	onclick_atdest_newb_fyros_kami	[Allez donc parler au Kami, ne soyez pas intimidé mon jeune ami.]
+}
+/////////////////kami guid/////////////////////////
+
+//kami guid (on click)
+ONCLICK_NEWB_FYROS_KAMITELEPORT()
+{
+	onclick_newb_fyros_kamiteleport	[Kami pouvoir t'envoyer parmis les tiens, dans grand désert.]		
+}

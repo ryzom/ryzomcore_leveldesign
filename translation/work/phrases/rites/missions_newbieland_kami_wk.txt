@@ -1,0 +1,124 @@
+﻿MISSION_KAMI_01_MIS_TITLE (bot giver)
+{
+	mission_kami_01_mis_title	[Purger les terres #1]
+}
+
+MISSION_KAMI_01_MIS_DESC (bot giver)
+{
+	mission_kami_01_mis_desc	[Aider les Kamis dans la lutte contre la Goo.]
+}
+
+MISSION_KAMI_01_P_LDC_INTRO (bot player, race race_frippo)
+{
+	mission_kami_01_p_ldc_intro	[Kami observer $player$ depuis longtemps. $player$ aujourd'hui très fort. Maintenant $player$ pouvoir aider Kami. Kami combattre Goo. Goo très forte et Goo mauvaise pour Homins et pour Atys. Quand Goo toucher animal, Goo prendre son esprit et esprit plus pouvoir aller vers Ma-Duk. Quand Goo tuer esprit, Goo grandir. A l'ouest, beaucoup de Goo et toi aider Kami à détruire Goo.{break} Mais toi faire attention. Quand animal rongé par Goo, animal devenir plus fort et devenir complètement fou. A l'ouest, beaucoup de $race_frippo$. $race_frippo$ animal gentil. Mais quand $race_frippo$ toucher par Goo, $race_frippo$ devenir méchant, devenir agressif. Toi aller à l'ouest et toi tuer des $race_frippo$ malades.]
+}
+
+MISSION_KAMI_01_P_T2_KILL (bot giver, race race_frippo)
+{
+	mission_kami_01_p_t2_kill	[J'ai tué plusieurs $race_frippo$.]
+}
+
+MISSION_KAMI_01_P_LDC_END (race race_frippo)
+{
+	mission_kami_01_p_ldc_end	[Toi bien travailler. Kami content. $race_frippo$ touchés par Goo pas pouvoir être sauvés, alors devoir mourir. Toi avoir bien agi.]
+}
+
+MISSION_KAMI_02_MIS_TITLE (bot giver)
+{
+	mission_kami_02_mis_title	[Purger les terres #2]
+}
+
+MISSION_KAMI_02_MIS_DESC (bot giver)
+{
+	mission_kami_02_mis_desc	[Poursuivre la lutte au nom des Kamis.]
+}
+
+MISSION_KAMI_02_P_LDC_INTRO (race capryni)
+{
+	mission_kami_02_p_ldc_intro	[Travail pas fini. Autres créatures touchées par Goo. Toi devoir encore combattre. Toi connaître $capryni.p$ ? $capryni.p$ très bonnes creatures. $capryni.p$ aider autres creatures quand danger. Mais Kami malheureux parce que $capryni.p$ tomber aussi dans piège de Goo, comme Frippo. Toi tuer vite $capryni.p$ malades, sinon autres créatures en danger. Toi aider Kamis et vite.]
+}
+
+MISSION_KAMI_02_P_T2_KILL (bot giver)
+{
+	mission_kami_02_p_t2_kill	[J'ai tué quelques Caprynis.]
+}
+
+MISSION_KAMI_02_P_LDC_END ()
+{
+	mission_kami_02_p_ldc_end	[Toi être brave et fort. Toi pouvoir être fier. Toi faire très bon travail pour Kamis. Toi bien lutter contre Goo. Kamis contents de récompenser toi.]
+}
+
+MISSION_KAMI_03_MIS_TITLE (bot giver)
+{
+	mission_kami_03_mis_title	[Purger les terres #3]
+}
+
+MISSION_KAMI_03_MIS_DESC (bot giver)
+{
+	mission_kami_03_mis_desc	[Aider les Kamis à combattre une redoutable créature.]
+}
+
+MISSION_KAMI_03_P_LDC_INTRO ()
+{
+	mission_kami_03_p_ldc_intro	[Toi aider Kamis encore une fois. Toi peut-être déja vu Ocyx touché par Goo à l'ouest. Ocyx malade très puissant. Ocyx dangereux pour Homin. Toi éliminer Ocyx. Mais toi surement besoin d'aide. Toi pouvoir demander aide à Homins amis. Si Homins plusieurs, Homins plus forts.]
+}
+
+MISSION_KAMI_03_P_T2_KILL (bot giver)
+{
+	mission_kami_03_p_t2_kill	[L'ocyx n'est plus en état de nous ennuyer]
+}
+
+MISSION_KAMI_03_P_LDC_END (bot player)
+{
+	mission_kami_03_p_ldc_end	[Toi avoir fait grandes choses pour Kamis, toi bien combattu la Goo. Kamis toujours reconnaissants. Kami donner grande récompense à $player$.]
+}
+
+MISSION_FYROS_EMERGENCY_TP_MISSION_FYROS_EMERGENCY_TP_TITLE (bot giver)
+{
+	mission_fyros_emergency_tp_mission_fyros_emergency_tp_title	[Bring me back to Pyr]
+}
+
+MISSION_FYROS_EMERGENCY_TP_MISSION_FYROS_EMERGENCY_TP_DESC (bot giver, bot givervar)
+{
+	mission_fyros_emergency_tp_mission_fyros_emergency_tp_desc	[Talk with $givervar$ to finde a way back to Pyr]
+}
+
+MISSION_FYROS_EMERGENCY_TP_TP_FOR_DAPPER_TO_FYROS ()
+{
+	mission_fyros_emergency_tp_tp_for_dapper_to_fyros	[If you want i will Teleport you to Pyr, this will cost you 1000 Dapper , ok?]
+}
+
+MISSION_FYROS_EMERGENCY_TP_ANSWER_TP_OK ()
+{
+	mission_fyros_emergency_tp_answer_tp_ok	[I have understand, yes pleas]
+}
+
+MISSION_FYROS_EMERGENCY_TP_ANSWER_TP_NO ()
+{
+	mission_fyros_emergency_tp_answer_tp_no	[No Thanks i will stay here!]
+}
+
+MISSION_ZORAI_EMERGENCY_TP_MISSION_ZORAI_EMERGENCY_TP_TITLE (bot giver)
+{
+	mission_zorai_emergency_tp_mission_zorai_emergency_tp_title	[Bring me back to Zora]
+}
+
+MISSION_ZORAI_EMERGENCY_TP_MISSION_ZORAI_EMERGENCY_TP_DESC (bot giver, bot givervar)
+{
+	mission_zorai_emergency_tp_mission_zorai_emergency_tp_desc	[Talk with $givervar$ to finde a way back to Zora]
+}
+
+MISSION_ZORAI_EMERGENCY_TP_TP_FOR_DAPPER_TO_ZORAI ()
+{
+	mission_zorai_emergency_tp_tp_for_dapper_to_zorai	[If you want i will Teleport you to Zora, this will cost you 1000 Dapper , ok?]
+}
+
+MISSION_ZORAI_EMERGENCY_TP_ANSWER_TP_OK ()
+{
+	mission_zorai_emergency_tp_answer_tp_ok	[I have understand, yes pleas]
+}
+
+MISSION_ZORAI_EMERGENCY_TP_ANSWER_TP_NO ()
+{
+	mission_zorai_emergency_tp_answer_tp_no	[No Thanks i will stay here!]
+}

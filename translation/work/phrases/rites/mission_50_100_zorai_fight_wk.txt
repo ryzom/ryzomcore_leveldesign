@@ -1,0 +1,774 @@
+﻿ZF50_TITLE (bot giver)
+{
+	zf50_title	[(La nature menacée) Conflit de tribus]
+}
+
+ZF50_DESC (bot giver)
+{
+	zf50_desc	[Enquêter sur les offenses commises contre la nature]
+}
+
+ZF50_PROPOSITION (place maiden, bot player)
+{
+	zf50_proposition	[$player$, nous avons un sérieux problème. Nous avons détecté que la flore du $maiden$ est actuellement en déclin. Si cette situation continue, la végétation risque de dépérir, et la Goo d'apparaître. Souhaitez-vous nous porter assistance ?]
+}
+
+ZF50_OUI ()
+{
+	( self.gender = male )
+		zf50_oui_m	[Je suis toujours prêt à porter assistance à la nature.]
+	( self.gender = female )
+		zf50_oui_f	[Je suis toujours prête à porter assistance à la nature.]
+}
+
+ZF50_NON ()
+{
+	zf50_non	[J'ai plus important à faire.]
+}
+
+ZF50_INSTRUCTIONS (faction hamazan, place maiden, faction shadow)
+{
+	zf50_instructions	[Deux tribus ont élu domicile dans le $maiden$ : les $hamazan$ et les $shadow$. Selon les $shadow$, les $hamazan$ seraient responsables de cette offense envers la nature. Si vous êtes un véritable enfant d'Atys, allez vous renseigner auprès des $shadow$ afin d'en savoir un peu plus sur cette menace.]
+}
+
+ZF50_STEP1_OVERLOAD (bot NPC1, place maiden, faction shadow)
+{
+	zf50_step1_overload	[Trouvez le camp des $shadow$, au Nord-Est du $maiden$, et demandez-leur d'où ils tirent leurs accusations.]
+}
+
+ZF50_STEP1_PHRASE (bot NPC1)
+{
+	zf50_step1_phrase	[La nature des environs dépérit. Il parait que vous savez quelque chose...]
+}
+
+ZF50_STEP1_BOTCHAT (faction hamazan, place maiden)
+{
+	zf50_step1_botchat	[Oui, les $hamazan$ sont les coupables. Nous avons vu plusieurs d'entre elles effectuer des expérimentations sur la végétation du coin, la nuit : or, nous savons tous les deux que les Matis sont experts dans ce domaine. {break}Nous sommes donc convaincus qu'elles sont en train de détruire la nature du $maiden$. Mais nous n'osons pas les confronter directement. Si vous pouviez aller les raisonner... leur expliquer les conséquences si cela continue ainsi...]
+}
+
+ZF50_STEP2_OVERLOAD (bot NPC2, faction hamazan, place maiden)
+{
+	zf50_step2_overload	[Trouvez le camp des $hamazan$, dans le $maiden$, et interrogez-les sur les accusations qui pèsent sur elles.]
+}
+
+ZF50_STEP2_PHRASE (bot NPC2)
+{
+	zf50_step2_phrase	[Il parait que vous n'êtes pas étrangères aux problèmes récents...]
+}
+
+ZF50_STEP2_BOTCHAT (faction shadow)
+{
+	zf50_step2_botchat	[J'ignore ce que vous ont dit ces idiots de $shadow$, mais nous ne sommes pour rien dans ce qui se passe actuellement ici. D'ailleurs, nous sommes les premières à déplorer cette affaire ! {break}Des expérimentations ? Certainement pas ! Nous sommes des mercenaires, pas des chercheuses !]
+}
+
+ZF50_ATTENTE_OVERLOAD_1 (bot givervar)
+{
+	zf50_attente_overload_1	[Recherchez des indices permettant d'identifier les coupables.]
+}
+
+ZF50_SYSMSG_STEP_3 (bot NPC3, place maiden)
+{
+	zf50_sysmsg_step_3	[&AMB& En fouillant dans votre sac, vous repérez soudain une lettre : \n<Je peux vous aider sur l'enquête concernant la flore du $maiden$. Retrouvez-moi à Zora. $NPC3$.>]
+}
+
+ZF50_STEP3_OVERLOAD (bot NPC3)
+{
+	zf50_step3_overload	[Trouvez $NPC3$, qui dit vouloir vous aider.]
+}
+
+ZF50_STEP3_PHRASE (bot NPC3)
+{
+	zf50_step3_phrase	[Bonjour, j'ai trouvé un message signé de votre main.]
+}
+
+ZF50_STEP3_BOTCHAT (place maiden, creature_model messab, bot player)
+{
+	zf50_step3_botchat	[Ah... bonjour, $player$. On m'a demandé de mener une enquête sur la flore du $maiden$, mais comme c'est également ce que vous faites, autant allier nos forces. {break}Cependant... avant de commencer, j'ai impérativement besoin de quelques cornes de $messab.p$. Un ami m'en a demandé récemment, et si cette enquête venait à s'éterniser... vous trouverez des $messab.p$ au Nord-Ouest du $maiden$.]
+}
+
+ZF50_STEP4_OVERLOAD_1 (creature_model messab, int q1, place maiden)
+{
+	zf50_step4_overload_1	[Trouvez une corne sur des $messab.p$, dans le $maiden$.]
+}
+
+ZF50_SYSMSG_CORNE (creature_model messab)
+{
+	zf50_sysmsg_corne	[&AMB& Vous trouvez une corne sur le $messab$]
+}
+
+ZF50_FINISH_OVERLOAD_1 (item i1, int qt1, int qual1, bot NPC3)
+{
+	zf50_finish_overload_1	[Apportez la corne à $NPC3$.]
+}
+
+ZF50_REFUS ()
+{
+	zf50_refus	[Vraiment ? Très bien. Nous trouverons quelqu'un d'autre...]
+}
+
+ZF50_FINISH_BOTCHAT ()
+{
+	zf50_finish_botchat	[Ah, très bien. Voici quelque chose pour vous remercier. Maintenant, en ce qui concerne cette enquête...]
+}
+
+ZF60_TITLE (bot giver)
+{
+	zf60_title	[(La nature menacée) L'un, l'autre ou...?]
+}
+
+ZF60_DESC (bot giver, place maiden)
+{
+	zf60_desc	[Continuer l'enquête sur les problèmes du $maiden$]
+}
+
+ZF60_ZF60_AUTO_MENU ()
+{
+	zf60_zf60_auto_menu	[Continuons l'enquête]
+}
+
+ZF60_PAS_ASSEZ_FORT ()
+{
+	zf60_pas_assez_fort	[Vous devriez vous entrainer encore un peu en combat avant de continuer l'enquête.]
+}
+
+ZF60_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	zf60_step0_no_overload_1	[Passer le niveau 60 en combat avant d'aller voir $givervar$]
+}
+
+ZF60_STEP0_OVERLOAD (bot givervar)
+{
+	zf60_step0_overload	[Parler à $givervar$]
+}
+
+ZF60_STEP0_PHRASE (bot givervar)
+{
+	zf60_step0_phrase	[Bonjour, vous avez du nouveau au sujet du secret de Jinovitch ?]
+}
+
+ZF60_INSTRUCTIONS (faction hamazan, place maiden, place maidenpond, item seve)
+{
+	zf60_instructions	[Bien... nous allons devoir vérifier quelque chose. Partez pour le $maiden$ et trouvez de la $seve$. Elle nous permettra de découvrir si les $hamazan$ sont ou non responsables de cette affaire. {break}A partir du camp des $hamazan$, suivez la route vers l'ouest : vous arriverez rapidement à l'$maidenpond$. Au bord de l'eau, vous trouverez la sève dont j'ai besoin. Pour en obtenir il vous faudra forer. Si vous n'en avez pas les capacités vous devriez demander à quelqu'un de vous aider.]
+}
+
+ZF60_STEP2_OVERLOAD_1 (item i1, int qt1, int qual1, bot givervar, faction hamazan, place maidenpond, item seve)
+{
+	zf60_step2_overload_1	[Trouvez 5 doses de $seve$ puis la rapporter à $givervar$. On peut la forer au bord de l'$maidenpond$ à l'ouest du camp des $hamazan$.]
+}
+
+ZF60_STEP2_BOTCHAT (bot player)
+{
+	zf60_step2_botchat	[Vous avez la sève, $player$ : je vois que je peux vous faire confiance. Maintenant, il va me falloir étudier la faune et les plantes intelligentes. Vous allez devoir en tuer quelques représentants... voyons voir... {break}Pour la faune, récupérez des crocs de torbaks. Pour les plantes, de la mousse de slaveni. Quand vous reviendrez, j'aurai terminé d'analyser la sève que vous m'avez confiée...]
+}
+
+ZF60_STEP_3_1_OVERLOAD_1 (item i1, int qt1, int qual1, item crocs_torbak)
+{
+	zf60_step_3_1_overload_1	[Trouver 5 $crocs_torbak$ de qualité 80 minimum]
+}
+
+ZF60_STEP_3_2_OVERLOAD_1 (item i1, int qt1, int qual1, item feuilles_slaveni)
+{
+	zf60_step_3_2_overload_1	[Trouver 5 $feuilles_slaveni$ de qualité 80 minimum]
+}
+
+ZF60_FINISH_OVERLOAD (bot givervar)
+{
+	zf60_finish_overload	[Apporter les crocs et la mousse à $givervar$.]
+}
+
+ZF60_FINISH_BOTCHAT (faction hamazan, place maiden, faction shadow)
+{
+	zf60_finish_botchat	[Excellent. De mon côté, j'ai terminé l'analyse de la sève, et les résultats sont... intriguants. Cette sève a bien été atteinte par le mal qui ronge le $maiden$, mais... cela ne peut en aucun cas être l'oeuvre des $hamazan$. {break}La magie qui est à l'oeuvre est simplement trop évoluée. Les $hamazan$ n'auraient jamais pu la mettre au point... pas plus que les $shadow$, d'ailleurs. Je crois que la sève a été placée ici pour mettre les soupçons sur les $hamazan$... {break}Mais avant d'aller plus loin, il va nous falloir calmer le conflit qui se prépare entre ces deux tribus. Une bataille dans le $maiden$ est bien la dernière chose dont nous ayons besoin...]
+}
+
+ZF60_REWARD_SYSMES (bot givervar)
+{
+	zf60_reward_sysmes	[&AMB&$givervar$ vous remet quelques dappers en remerciement]
+}
+
+ZF70_0_TITLE (bot giver)
+{
+	zf70_0_title	[(La nature menacée) Convaincre les tribus]
+}
+
+ZF70_0_DESC (bot giver)
+{
+	zf70_0_desc	[Gagner la confiance des tribus pour qu'elles écoutent ce que vous avez à dire]
+}
+
+ZF70_0_ZF70_0_AUTO_MENU ()
+{
+	zf70_0_zf70_0_auto_menu	[Bonjour, que puis-je faire pour éviter le conflit ?]
+}
+
+ZF70_0_PAS_ASSEZ_FORT ()
+{
+	zf70_0_pas_assez_fort	[Avant de continuer vous devriez vous entrainer encore un peu en combat.]
+}
+
+ZF70_0_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	zf70_0_step0_no_overload_1	[Passer le niveau 70 en combat avant d'aller voir $givervar$]
+}
+
+ZF70_0_STEP0_OVERLOAD (bot givervar)
+{
+	zf70_0_step0_overload	[Parler à $givervar$]
+}
+
+ZF70_0_STEP0_PHRASE (bot givervar)
+{
+	zf70_0_step0_phrase	[Bonjour, que puis-je faire pour éviter le conflit ?]
+}
+
+ZF70_0_INSTRUCTIONS (place maiden)
+{
+	zf70_0_instructions	[Vous devez absolument convaincre les deux tribus de ne pas entâmer les hostilité. Nous avons aucunement besoin d'une guerre dans le $maiden$ en ce moment.]
+}
+
+ZF70_1_TITLE (bot giver, faction hamazan)
+{
+	zf70_1_title	[(La nature menacée) Convaincre les $hamazan$]
+}
+
+ZF70_1_DESC (bot giver, faction hamazan)
+{
+	zf70_1_desc	[Gagner la confiance des $hamazan$ pour qu'elles écoutent ce que vous avez à dire]
+}
+
+ZF70_1_ZF70_1_AUTO_MENU ()
+{
+	zf70_1_zf70_1_auto_menu	[J'ai une information importante à vous communiquer...]
+}
+
+ZF70_1_STEP1_OVERLOAD (bot givervar, faction hamazan)
+{
+	zf70_1_step1_overload	[Parler à $givervar$ chez les $hamazan$ pour la convaincre d'arreter le conflit]
+}
+
+ZF70_1_STEP1_PHRASE (bot givervar)
+{
+	zf70_1_step1_phrase	[J'ai une information importante à vous communiquer...]
+}
+
+ZF70_1_INSTRUCTIONS (creature_model ragus)
+{
+	zf70_1_instructions	[Nous n'écoutons que ceux qui donnent la preuve de leur puissance. Tuez trois $ragus.p$ et nous écouterons ce que vous avez à nous dire.]
+}
+
+ZF70_1_FINISH_OVERLOAD (bot givervar, faction hamazan)
+{
+	zf70_1_finish_overload	[Retournez voir $givervar$, au camp des $hamazan$.]
+}
+
+ZF70_1_FINISH_PHRASE (bot givervar)
+{
+	zf70_1_finish_phrase	[J'ai tué ces ragus.]
+}
+
+ZF70_1_LDC_FINISH (place maiden, faction shadow)
+{
+	zf70_1_ldc_finish	[Vous êtes digne de notre respect. Qu'avez-vous à dire ? {break}Le mal qui attaque le $maiden$ ne vient d'aucune de nos deux tribus...? Mais alors... d'où vient-il ? Très bien, nous allons cesser nos querelles avec les $shadow$ en attendant que les choses s'arrangent...]
+}
+
+ZF70_2_TITLE (bot giver, faction shadow)
+{
+	zf70_2_title	[(La nature menacée) Convaincre les $shadow$]
+}
+
+ZF70_2_DESC (bot giver, faction shadow)
+{
+	zf70_2_desc	[Gagner la confiance des $shadow$ pour qu'ils écoutent ce que vous avez à dire]
+}
+
+ZF70_2_ZF70_2_AUTO_MENU ()
+{
+	zf70_2_zf70_2_auto_menu	[J'ai une information importante à vous communiquer...]
+}
+
+ZF70_2_STEP1_OVERLOAD (bot givervar, faction shadow)
+{
+	zf70_2_step1_overload	[Parler à $givervar$ chez les $shadow$ pour le convaincre d'arreter le conflit]
+}
+
+ZF70_2_STEP1_PHRASE (bot givervar)
+{
+	zf70_2_step1_phrase	[J'ai une information importante à vous communiquer...]
+}
+
+ZF70_2_INSTRUCTIONS (item ailes)
+{
+	zf70_2_instructions	[Amenez-nous des matières premières. Trois $ailes$ feront un cadeau suffisant. Après seulement, nous vous écouterons.]
+}
+
+ZF70_2_STEP2_OVERLOAD_1 (item i1, int qt1, int qual1, bot givervar, item ailes, faction shadow)
+{
+	zf70_2_step2_overload_1	[Récupérez trois $ailes$ de qualité 80 minimum pour les $shadow$.]
+}
+
+ZF70_2_LDC_FINISH (faction hamazan)
+{
+	zf70_2_ldc_finish	[Bien, bien... que vouliez-vous nous dire ? {break}Hein ? Ce ne sont pas les $hamazan$ ? Mais alors, qui...? D'accord, d'accord, on va essayer de calmer les hostilités avec elles...]
+}
+
+ZF70_TITLE (bot giver)
+{
+	zf70_title	[(La nature menacée) Trêve]
+}
+
+ZF70_DESC (bot giver, place maiden)
+{
+	zf70_desc	[Continuer l'enquête sur les problèmes du $maiden$]
+}
+
+ZF70_ZF70_AUTO_MENU ()
+{
+	zf70_zf70_auto_menu	[Les deux tribus ont accepté de faire la paix]
+}
+
+ZF70_STEP1_OVERLOAD (bot givervar)
+{
+	zf70_step1_overload	[Faites votre rapport à $givervar$]
+}
+
+ZF70_STEP1_PHRASE (bot givervar)
+{
+	zf70_step1_phrase	[Les deux tribus ont accepté de faire la paix]
+}
+
+ZF70_INSTRUCTIONS (faction hamazan, bot player, faction shadow)
+{
+	zf70_instructions	[J'ai entendu parler de l'accalmie entre les $hamazan$ et les $shadow$. Vous avez bien oeuvré, $player$... une bataille sur cette terre déjà blessée aurait eu des conséquences désastreuses. Vous avez plus que mérité cet objet. {break}Mais maintenant, il nous reste à trouver les véritables coupables... et cela risque d'être fort périlleux.]
+}
+
+ZF70_OUTOFROOM_OVERLOAD (bot givervar)
+{
+	zf70_outofroom_overload	[Faites de la place avant d'aller parler à $givervar$.]
+}
+
+ZF70_OUTOFROOM_PHRASE (bot givervar)
+{
+	zf70_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+ZF70_OUTOFROOM_BOTCHAT ()
+{
+	zf70_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+ZF80_TITLE (bot giver)
+{
+	zf80_title	[(La nature menacée) Eclarcir le mystère]
+}
+
+ZF80_DESC (bot giver, place maiden)
+{
+	zf80_desc	[Continuer l'enquête sur les problèmes du $maiden$]
+}
+
+ZF80_ZF80_AUTO_MENU (place maiden)
+{
+	zf80_zf80_auto_menu	[Bonjour, savez-vous comment aider le $maiden$ ?]
+}
+
+ZF80_PAS_ASSEZ_FORT ()
+{
+	zf80_pas_assez_fort	[Vous devriez vous entrainer encore un peu en combat avant de continuer.]
+}
+
+ZF80_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	zf80_step0_no_overload_1	[Passer le niveau 80 en combat avant d'aller voir $givervar$]
+}
+
+ZF80_STEP0_OVERLOAD (bot givervar)
+{
+	zf80_step0_overload	[Parler à $givervar$]
+}
+
+ZF80_STEP0_PHRASE (bot givervar, place maiden)
+{
+	zf80_step0_phrase	[Bonjour, savez-vous comment aider le $maiden$ ?]
+}
+
+ZF80_INSTRUCTIONS (place haven, place maiden, bot player, creature_model psykopla)
+{
+	zf80_instructions	[J'ai une hypothèse concernant la source des ennuis du $maiden$. Allez au $haven$, tuez une $psykopla$ et ramenez-moi de la mousse. {break}Attention, $player$ ! Le $haven$ est un endroit très dangereux. Vous allez peut-être avoir besoin de vous faire accompagner pour cette tâche.]
+}
+
+ZF80_STEP1_OVERLOAD_1 (item i1, int qt1, int qual1, place haven, creature_model psykopla)
+{
+	zf80_step1_overload_1	[Allez dans le $haven$ et trouvez de la mousse sur des $psykopla$.]
+}
+
+ZF80_STEP2_OVERLOAD_1 (item i1, int qt1, int qual1, bot givervar)
+{
+	zf80_step2_overload_1	[Amenez la mousse de Psykopla à $givervar$.]
+}
+
+ZF80_STEP2_BOTCHAT (bot player)
+{
+	zf80_step2_botchat	[Très bien, $player$. Laissez-moi examiner cette mousse un instant...]
+}
+
+ZF80_ATTENTE_OVERLOAD_1 (bot givervar)
+{
+	zf80_attente_overload_1	[Attendez un instant que $givervar$ analyse les feuilles.]
+}
+
+ZF80_STEP3_MSG (bot givervar)
+{
+	zf80_step3_msg	[&AMB&$givervar$ semble fort troublée par ce qu'elle voit.]
+}
+
+ZF80_STEP3_PHRASE (bot givervar)
+{
+	zf80_step3_phrase	[Que se passe-t-il ?]
+}
+
+ZF80_STEP3_BOTCHAT (bot NPC1, bot NPC2, faction hamazan, faction shadow)
+{
+	zf80_step3_botchat	[C'est beaucoup plus complexe que je ne le pensais. Ce mal a été produit par des magiciens très puissants... comment faire ? {break}Vous avez bien dit que les $shadow$ avaient aperçu des homins la nuit ? Et si ce n'était pas les $hamazan$ mais ceux que nous recherchons ? Retournez voir $NPC1$ et $NPC2$ et demandez-leur de surveiller la zone.]
+}
+
+ZF80_STEP4_OVERLOAD (place maiden)
+{
+	zf80_step4_overload	[Demandez aux chefs des tribus du $maiden$ de surveiller la zone.]
+}
+
+ZF80_STEP4_PHRASE (bot NPC1)
+{
+	zf80_step4_phrase	[J'ai un service à vous demander.]
+}
+
+ZF80_STEP4_BOTCHAT1 ()
+{
+	zf80_step4_botchat1	[Surveiller la région ? Encore ? Bon, si ça peut régler le problème...]
+}
+
+ZF80_STEP4_PHRASE2 (bot NPC2)
+{
+	zf80_step4_phrase2	[J'ai un service à vous demander.]
+}
+
+ZF80_STEP4_BOTCHAT2 (place maiden)
+{
+	zf80_step4_botchat2	[Surveiller le $maiden$ ? Oui, sans problème. Ensemble, nous pourrons peut-être mettre la main sur ces individus...]
+}
+
+ZF80_STEP6_OVERLOAD (place maiden)
+{
+	zf80_step6_overload	[Assurez-vous que tout se passe bien dans le $maiden$]
+}
+
+ZF80_STEP6_PHRASE1 (bot NPC1)
+{
+	zf80_step6_phrase1	[Du nouveau ?]
+}
+
+ZF80_STEP6_BOTCHAT1 (bot player)
+{
+	zf80_step6_botchat1	[$player$ ! Nous avons repéré des individus louches ! Des hommes en noir sont arrivés pas loin d'ici. Ils ont utilisé une magie très bizarre... assez effrayante, aussi. Nous avons rapidement déguerpis, mais ça ne m'étonnerait pas que ce soit ceux qu'on cherche !]
+}
+
+ZF80_STEP6_PHRASE2 (bot NPC2)
+{
+	zf80_step6_phrase2	[Du nouveau ?]
+}
+
+ZF80_STEP6_BOTCHAT2 ()
+{
+	zf80_step6_botchat2	[Nous n'avons encore rien trouvé.]
+}
+
+ZF80_FINISH_OVERLOAD (bot givervar, faction shadow)
+{
+	zf80_finish_overload	[Rapportez à $givervar$ ce qu'ont vu les $shadow$.]
+}
+
+ZF80_FINISH_PHRASE (bot givervar, faction shadow)
+{
+	zf80_finish_phrase	[Les $shadow$ ont repéré quelque chose !]
+}
+
+ZF80_FINISH_BOTCHAT ()
+{
+	zf80_finish_botchat	[Des hommes en noir ? Une magie bizarre et effrayante ? Se pourrait-il que... non, ils n'iraient pas jusque-là... mais... nous devons vérifier... {break}Oui, nous allons procéder ainsi. Voici déjà une récompense pour vous...]
+}
+
+ZF90_TITLE (bot giver)
+{
+	zf90_title	[(La nature menacée) L'aide de la Compagnie]
+}
+
+ZF90_DESC (bot giver, place maiden)
+{
+	zf90_desc	[Continuer l'enquête sur les problèmes du $maiden$]
+}
+
+ZF90_ZF90_AUTO_MENU (place maiden)
+{
+	zf90_zf90_auto_menu	[Bonjour, que pouvons-nous faire pour aider le $maiden$ ?]
+}
+
+ZF90_PAS_ASSEZ_FORT ()
+{
+	zf90_pas_assez_fort	[Vous devriez vous entrainer encore un peu en combat avant de continuer.]
+}
+
+ZF90_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	zf90_step0_no_overload_1	[Passer le niveau 90 en combat avant d'aller voir $givervar$]
+}
+
+ZF90_STEP0_OVERLOAD (bot givervar)
+{
+	zf90_step0_overload	[Parler à $givervar$]
+}
+
+ZF90_STEP0_PHRASE (bot givervar, place maiden)
+{
+	zf90_step0_phrase	[Bonjour, que pouvons-nous faire pour aider le $maiden$ ?]
+}
+
+ZF90_INSTRUCTIONS (faction compagnie, place maiden)
+{
+	zf90_instructions	[Cette situation nous dépasse : nous allons devoir demander de l'aide. Je pense que la $compagnie$ sera tout à fait prête à nous aider. Je crois qu'ils ont déjà commencé une enquête sur les évènements, de leur côté. {break}Vous allez leur amener un échantillon de la flore du $maiden$. Prenez ces feuilles que j'ai ramassées et amenez les à la $compagnie$. Faites attention, la zone est très dangereuse, vous aurez peut-être besoin de compagnie pour vous y rendre.]
+}
+
+ZF90_STEP2_OVERLOAD (bot NPC4, faction compagnie, place haven, place maiden)
+{
+	zf90_step2_overload	[Parlez à l'officier de la $compagnie$, dans le $haven$, du problème du $maiden$.]
+}
+
+ZF90_STEP2_PHRASE (bot NPC4)
+{
+	zf90_step2_phrase	[Bonjour, il y a quelque chose dont je voudrais vous parler...]
+}
+
+ZF90_STEP2_BOTCHAT (place maiden)
+{
+	zf90_step2_botchat	[Bonjour. Vous voulez nous aider pour l'enquête sur la pollution du $maiden$ ?]
+}
+
+ZF90_STEP3_OVERLOAD_1 (item i1, int qt1, int qual1, bot NPC4)
+{
+	zf90_step3_overload_1	[Montrez les feuilles à $NPC4$.]
+}
+
+ZF90_STEP3_BOTCHAT (place maiden, bot player)
+{
+	zf90_step3_botchat	[Ces feuilles... mais oui, ce sont des feuilles du $maiden$. Il semble que vous ayez beaucoup à nous dire, $player$... racontez-moi tout.]
+}
+
+ZF90_STEP4_OVERLOAD (bot NPC4)
+{
+	zf90_step4_overload	[Racontez à $NPC4$ ce qui s'est passé.]
+}
+
+ZF90_STEP4_PHRASE (bot NPC4)
+{
+	zf90_step4_phrase	[Voilà...]
+}
+
+ZF90_STEP4_BOTCHAT (faction shadow)
+{
+	( self.gender = male )
+		zf90_step4_botchat_m	[Je vois. Vous avez fait beaucoup, et je crois que, grâce à votre aide, nous allons enfin pouvoir résoudre cette affaire. Avec ce que vous nous avez dit, nous pensons avoir identifié les coupables. {break}Nous devons néanmoins procéder à une dernière vérification... vous serez récompensé si vous le faites pour nous. Prenez cette sphère, et placez-la à l'endroit où les $shadow$ ont repéré ces individus.]
+	( self.gender = female )
+		zf90_step4_botchat_f	[Je vois. Vous avez fait beaucoup, et je crois que, grâce à votre aide, nous allons enfin pouvoir résoudre cette affaire. Avec ce que vous nous avez dit, nous pensons avoir identifié les coupables. {break}Nous devons néanmoins procéder à une dernière vérification... vous serez récompensée si vous le faites pour nous. Prenez cette sphère, et placez-la à l'endroit où les $shadow$ ont repéré ces individus.]
+}
+
+ZF90_STEP5_OVERLOAD (bot NPC1, faction shadow)
+{
+	zf90_step5_overload	[Demandez aux $shadow$ des précisions sur l'endroit où ils ont vu les silhouettes en noir.]
+}
+
+ZF90_STEP5_PHRASE (bot NPC1)
+{
+	zf90_step5_phrase	[Où avez-vous vu ces inconnus, exactement ?]
+}
+
+ZF90_STEP5_BOTCHAT (place tunnel)
+{
+	zf90_step5_botchat	[L'endroit où on les a vu ? Au sud de notre camp, il y a un tunnel, le $tunnel$. Entrez dedans, en sortant vous tomberez sur une tête squelettique. Suivez le chemin, et vous trouverez des pierres particulières. C'est à cet endroit-là...]
+}
+
+ZF90_STEP6_OVERLOAD (bot autel, faction shadow, place tunnel)
+{
+	zf90_step6_overload	[Rendez-vous à l'endroit où les silhouettes en noir ont été vues : au sud du camp des $shadow$, prenez le $tunnel$, sortez de l'autre côté et suivez le chemin jusqu'à arriver à des pierres étranges.]
+}
+
+ZF90_STEP6_PHRASE (bot autel)
+{
+	zf90_step6_phrase	[Placer la sphere sur l'autel]
+}
+
+ZF90_FINISH_MSG (bot NPC4)
+{
+	zf90_finish_msg	[&AMB&La sphère que vous a donné $NPC4$ commence à s'assombrir. Quelques instants plus tard, elle est devenue complètement noire.]
+}
+
+ZF90_FINISH_OVERLOAD_1 (item i1, int qt1, int qual1, bot NPC4)
+{
+	zf90_finish_overload_1	[Rapportez la sphère à $NPC4$.]
+}
+
+ZF90_OUTOFROOM_OVERLOAD (bot NPC4)
+{
+	zf90_outofroom_overload	[Faites de la place avant d'aller parler à $NPC4$.]
+}
+
+ZF90_OUTOFROOM_PHRASE (bot NPC4)
+{
+	zf90_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+ZF90_OUTOFROOM_BOTCHAT ()
+{
+	zf90_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+ZF90_FINISH_BOTCHAT (bot player)
+{
+	zf90_finish_botchat	[Elle est devenue noire. C'est bien ce que nous pensions. Vous avez bien agi, $player$. Nous tenons à vous récompenser dès maintenant, mais votre tâche n'est pas terminée. Revenez lorsque vous aurez encore perfectionné vos compétences de combat, car l'endroit où vous devrez aller demande encore plus de courage.]
+}
+
+ZF100_TITLE (bot giver)
+{
+	zf100_title	[(La nature menacée) L'avertissement de la Compagnie]
+}
+
+ZF100_DESC (bot giver, place maiden)
+{
+	zf100_desc	[Continuer l'enquête sur les problèmes du $maiden$]
+}
+
+ZF100_ZF100_AUTO_MENU ()
+{
+	zf100_zf100_auto_menu	[Qu'attendez-vous de moi ?]
+}
+
+ZF100_PAS_ASSEZ_FORT ()
+{
+	zf100_pas_assez_fort	[Vous devriez vous entrainer encore un peu en combat avant de continuer.]
+}
+
+ZF100_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	zf100_step0_no_overload_1	[Passer le niveau 90 en combat avant d'aller voir $givervar$]
+}
+
+ZF100_STEP0_OVERLOAD (bot givervar)
+{
+	zf100_step0_overload	[Parler à $givervar$]
+}
+
+ZF100_STEP0_PHRASE (bot givervar, place maiden)
+{
+	zf100_step0_phrase	[Bonjour, que pouvons-nous faire pour aider le $maiden$ ?]
+}
+
+ZF100_INSTRUCTIONS (faction BC, bot player, place umbra)
+{
+	zf100_instructions	[$player$, je vais maintenant vous dire ce que nous avons appris grâce à vous. L'assombrissement de la sphère que vous avez portée là-bas provient d'une magie facilement identifiable : celle de la Goo. {break}Plusieurs tribus s'intéressent à ce cataclysme qu'est la Goo, mais grâce à la sphère que vous nous avez ramenée, nous savons laquelle est coupable ici : ce sont les membres du $BC$. {break} Il est évident qu'ils doivent être arrêtés. Cependant... un conflit direct n'est pas souhaitable. Ils maîtrisent la magie de la Goo, et une bataille provoquerait d'irrémédiables dégâts sur la nature que nous voulons tant protéger. {break}Je souhaite donc que vous leur apportiez un... message. Tout est dans cette lettre. Apportez-la à leur chef. S'ils deviennent agressifs, fuyez. Mais je doute fort qu'ils tentent quoi que ce soit après l'avoir lue... {break}La tribu du $BC$ a un campement dans le $umbra$. C'est un endroit dangereux pour vous, $player$. Essayez de trouver de l'aide avant d'y pénétrer... à moins que vous ne vous sentiez de taille.]
+}
+
+ZF100_STEP1_OVERLOAD (bot NPC5, faction BC, place umbra)
+{
+	zf100_step1_overload	[Trouvez le camp du $BC$, dans le $umbra$, et parlez à leur chef.]
+}
+
+ZF100_STEP1_PHRASE (bot NPC5, faction BC)
+{
+	zf100_step1_phrase	[Vous êtes la tribu du $BC$, n'est-ce pas ?]
+}
+
+ZF100_STEP1_BOTCHAT (bot player)
+{
+	( self.gender = male )
+		zf100_step1_botchat_m	[Que voulez-vous, $player$ ? Vous n'êtes pas le bienvenu ici.]
+	( self.gender = female )
+		zf100_step1_botchat_f	[Que voulez-vous, $player$ ? Vous n'êtes pas la bienvenue ici.]
+}
+
+ZF100_STEP2_OVERLOAD_1 (item i1, int qt1, int qual1, bot NPC5, faction compagnie)
+{
+	zf100_step2_overload_1	[Donnez à $NPC5$ la lettre de la $compagnie$.]
+}
+
+ZF100_STEP2_MSG (bot NPC5)
+{
+	zf100_step2_msg	[$NPC5$ ouvre la lettre et fronce les sourcils. Mais un instant plus tard, c'est clairement la peur qui se lit sur son visage.]
+}
+
+ZF100_STEP3_OVERLOAD (bot NPC5)
+{
+	zf100_step3_overload	[Demandez à $NPC5$ ce qu'il compte faire.]
+}
+
+ZF100_STEP3_PHRASE (bot NPC5)
+{
+	zf100_step3_phrase	[Et donc ?]
+}
+
+ZF100_STEP3_BOTCHAT ()
+{
+	zf100_step3_botchat	[Hmm... Très bien, je crois que nous n'avons pas vraiment le choix. Dites à l'auteur de cette lettre que nous cessons immédiatement... les activités dont il parle.]
+}
+
+ZF100_STEP4_OVERLOAD (bot givervar, faction BC)
+{
+	zf100_step4_overload	[Rapportez à $givervar$ la réponse du $BC$.]
+}
+
+ZF100_STEP4_PHRASE (bot givervar)
+{
+	zf100_step4_phrase	[Le chef m'a dit qu'ils allaient tout de suite s'arrêter.]
+}
+
+ZF100_STEP4_BOTCHAT (faction hamazan, place maiden, bot player, faction shadow)
+{
+	zf100_step4_botchat	[Je crois que nous n'entendrons plus parler d'eux avant un moment... et en attendant, le $maiden$ est sauvé. Vous avez rendu un immense service à la nature, $player$. Prenez ceci. {break}C'est un matériau très convoité par les $hamazan$ et également par les $shadow$. Donnez-le à l'une de ces deux tribus, et elle vous donnera assurément une formidable récompense en échange. {break}Je crois que les $shadow$ disposent d'armes à distances, tandis que les $hamazan$ préfèrent les armes de mêlée...]
+}
+
+ZF100_FINISH_OVERLOAD (faction compagnie, faction hamazan, faction shadow)
+{
+	zf100_finish_overload	[Donnez le matériau offert par la $compagnie$ aux $hamazan$ pour obtenir une arme de mêlée, ou aux $shadow$ pour obtenir une arme à distance.]
+}
+
+ZF100_OUTOFROOM_OVERLOAD (bot NPC1)
+{
+	zf100_outofroom_overload	[Faites de la place avant d'aller parler à $NPC1$.]
+}
+
+ZF100_OUTOFROOM_PHRASE (bot NPC1)
+{
+	zf100_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+ZF100_OUTOFROOM_BOTCHAT ()
+{
+	zf100_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+ZF100_FINISH_BOTCHAT1 ()
+{
+	zf100_finish_botchat1	[Eh, c'est vraiment du... incroyable ! Nous en cherchons depuis si longtemps ! Prenez ceci en échange, je crois que ça va vous plaire !]
+}
+
+ZF100_FINISH_BOTCHAT2 (bot player)
+{
+	zf100_finish_botchat2	[Ce matériau, c'est... vous êtes décidément impressionnant, $player$. Ce matériau nous est très précieux. Acceptez ceci en échange, je pense que vous n'aurez pas à vous plaindre.]
+}
+
+ZF_ORIENTATION_SAGE_AUTO_MENU ()
+{
+	zf_orientation_sage_auto_menu	[Qui dois-je aller voir pour la suite de (La nature menacée) ?]
+}
+
+ZF_ORIENTATION_SAGE_SAGE_ORIENTE (bot 100)
+{
+	zf_orientation_sage_sage_oriente	[La personne que vous recherchez est $100$. Je vais vous indiquer où la trouver.]
+}
+

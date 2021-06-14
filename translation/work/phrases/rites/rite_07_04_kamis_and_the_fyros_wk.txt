@@ -1,0 +1,100 @@
+﻿R_07_04_MIS_TITLE (bot giver)
+{
+	r_07_04_mis_title	[Les offrandes Fyros aux Kamis]
+}
+
+R_07_04_MIS_DESC (bot giver)
+{
+	r_07_04_mis_desc	[L'eau est une denrée rare dans le désert brulant, et les kamis veillent a ce que les oasis ne se tarissent pas. Les Fyros leur font régulierement des offrandes pour les remercier.]
+}
+
+R_07_04_P_LDF_INTRO_1 (item item_to_loot_1, item item_to_loot_2, item item_to_loot_3, bot_name kami_adept_1_name)
+{
+	r_07_04_p_ldf_intro_1	[Bienvenue, homin. Servir les kamis tu désires ? Les gardiens d'Atys nous sommes, gardiens de l'eau du désert. Offrandes et rituels magiques par les Fyros sont accomplis pour nous remercier de protéger cette eau. Près de l'oasis, $kami_adept_1_name$ pour un rituel se prépare, et d'offrandes il a besoin.{break}Te rendre là-bas et aider $kami_adept_1_name$ tu dois. $item_to_loot_1$, $item_to_loot_2$ et $item_to_loot_3.da$ $item_to_loot_3$ tu lui ramèneras.{break}Les Kamis partagent le pouvoir avec leurs adeptes, de la sève tu recevras une fois le rituel accompli.]
+}
+
+R_07_04_O_VP_FETCH (place spawn_adept, item item_to_loot_1, item item_to_loot_2, item item_to_loot_3, int item_to_loot_quality_1, int item_to_loot_quality_2, int item_to_loot_quality_3, int item_to_loot_quantity_1, int item_to_loot_quantity_2, int item_to_loot_quantity_3, bot_name kami_adept_1_name)
+{
+	r_07_04_o_vp_fetch	[Rassemblez :
+	- $item_to_loot_quantity_1$ $item_to_loot_1$ de qualité $item_to_loot_quality_1$\n
+ 	- $item_to_loot_quantity_2$ $item_to_loot_2$ de qualité $item_to_loot_quality_2$\n
+	- $item_to_loot_quantity_3$ $item_to_loot_3$ de qualité $item_to_loot_quality_3$\n
+et donnez-les à $kami_adept_1_name$.]
+}
+
+R_07_04_P_BC_BRIEF_1 (bot giver, bot player)
+{
+	r_07_04_p_bc_brief_1	[Bienvenue dans cette oasis, $player$. Ainsi c'est $giver$ qui vous envoie ? Bien, je vous attendais. Vous allez m'aider à réaliser le rituel des offrandes afin que l'eau qui nous entoure ne tarisse jamais.{break} Les plantes qui poussent malgré la chaleur du désert, les bêtes sauvages qui viennent s'abreuver, les artisans qui fabriquent des objets merveilleux... tout dépend de cette source d'eau. Tout sera réuni au cours de notre rituel.{break}Mais d'abord, laissez-moi voir si vous avez tous les objets dont nous avons besoin.]
+}
+
+R_07_04_P_BC_ESCORT_1 (bot player)
+{
+	r_07_04_p_bc_escort_1	[-Perfect, you've brought all the offerings. We can begin the ritual. I want you to hold the offerings and give them to me as I need them, so they may be fittingly sacrificed to the spirits of Atys.{break} Are you ready, $player$? 
+-Good. Let's go back to the place where it all started.]
+}
+
+R_07_04_O_ES_ADEPT_1 (bot_name kami_adept_1_name)
+{
+	r_07_04_o_es_adept_1	[Escorter $kami_adept_1_name$.]
+}
+
+R_07_04_P_BC_RITUAL_1 ()
+{
+	r_07_04_p_bc_ritual_1	[Entendez-nous, o esprit tout puissants d'Atys ! C'est ici que selon les légendes, la source a jailli des yeux d'un kami, ému par la sécheresse du désert. Les plantes ont ainsi pu croitre avec une vigueur sans pareille. Recevez , o kamis, ce bois issu du mariage entre le soleil du désert et son reflet dans les eaux de l'oasis !]
+}
+
+R_07_04_P_BC_POST_RITUAL_1 ()
+{
+	r_07_04_p_bc_post_ritual_1	[May this gift, forged in the fire of magic, seal our alliance! The magic that flows in our veins, we give unto you, O Kamis! ]
+}
+
+R_07_04_M_T2_NEXT_1 ()
+{
+	r_07_04_m_t2_next_1	[Amen !]
+}
+
+R_07_04_P_BC_ESCORT_2 ()
+{
+	r_07_04_p_bc_escort_2	[Allons à présent au deuxième oasis, afin de poursuivre le rituel. Méfions-nous des bêtes sauvages qui pourraient nous guetter sur le chemin !]
+}
+
+R_07_04_O_ES_ADEPT_2 (bot_name kami_adept_1_name)
+{
+	r_07_04_o_es_adept_2	[Escortez $kami_adept_1_name$ pour la suite du rituel]
+}
+
+R_07_04_P_BC_RITUAL_2 ()
+{
+	r_07_04_p_bc_ritual_2	[Entendez-nous, ô esprit tout puissants d'Atys ! Grâce aux eaux dont vous êtes les gardiens, tous les êtres d'Atys peuvent étancher leur soif. Recevez, ô kamis, le sang de cette créature, que nous versons en cet endroit afin qu'il se mélange aux eaux de cet oasis !]
+}
+
+R_07_04_P_BC_ESCORT_3 ()
+{
+	r_07_04_p_bc_escort_3	[Rendons-nous à présent à quelques pas d'ici, pour faire notre dernière offrande.]
+}
+
+R_07_04_O_ES_ADEPT_3 (bot_name kami_adept_1_name)
+{
+	r_07_04_o_es_adept_3	[Escortez $kami_adept_1_name$ pour la fin du rituel]
+}
+
+R_07_04_P_BC_RITUAL_3 ()
+{
+	r_07_04_p_bc_ritual_3	[Entendez-nous, ô esprit tout puissants d'Atys ! L'eau et le feu sont des forces puissantes, que les Fyros savent utiliser pour créer des merveilles ! Sous votre protection, ces lieux sont le berceau des plus belles créations de notre peuple. Recevez, ô kamis, cette hache fyros, fruit du travail de nos artisans pour ceux qui se battent en votre nom !]
+}
+
+R_07_04_P_BC_END_RITUEL_2 (bot player)
+{
+	r_07_04_p_bc_end_rituel_2	[Le rituel est à présent achevé. Merci de ton aide, $player$. Les Kamis sont satisfaits, et sont généreux avec leurs adeptes. Parle à l'esprit pour recevoir ta récompense.]
+}
+
+R_07_04_M_T2_RITUAL_DONE_1 (bot giver)
+{
+	r_07_04_m_t2_ritual_done_1	[Le rituel est terminé.]
+}
+
+R_07_04_P_BC_DEBRIEF_1 ()
+{
+	r_07_04_p_bc_debrief_1	[Kami heureux d'avoir ami homin. Toi recevoir sève d'Atys, pour accomplir magie.]
+}
+

@@ -1,36 +1,6229 @@
-#include "phrases/phrase_test_wk.txt"
+﻿#include "phrases/phrase_test_wk.txt"
 #include "phrases/generic_missions_wk.txt"
 #include "phrases/emotes_wk.txt"
 #include "phrases/encyclopedia/phrase_ency_wk.txt"
 #include "phrases/rites/phrase_rites_wk.txt"
+#include "phrases/invasions/phrase_invasions_wk.txt"
 #include "phrases/whoami_wk.txt"
 #include "phrases/named_items_wk.txt"
-#include "phrases/mission_test_wk.txt"
-#include "phrases/nbland_missions_wk.txt"
-#include "phrases/generic_task_phrases_wk.txt"
-#include "phrases/phrase_wk.txt"
-#include "phrases/phrase_combat_wk.txt"
-#include "phrases/phrase_forage_wk.txt"
-#include "phrases/phrase_death_wk.txt"
-#include "phrases/phrase_magic_wk.txt"
-#include "phrases/phrase_xpgain_wk.txt"
-#include "phrases/phrase_faction_wk.txt"
-#include "phrases/phrase_loot_wk.txt"
-#include "phrases/phrase_ring_wk.txt"
-#include "phrases/phrase_target_wk.txt"
-#include "phrases/phrase_inventory_wk.txt"
-#include "phrases/phrase_sphrase_wk.txt"
-#include "phrases/phrase_mission_wk.txt"
-#include "phrases/phrase_craft_wk.txt"
-#include "phrases/phrase_effect_wk.txt"
-#include "phrases/phrase_team_wk.txt"
-#include "phrases/phrase_exchange_wk.txt"
-#include "phrases/phrase_zone_wk.txt"
-#include "phrases/phrase_power_wk.txt"
-#include "phrases/phrase_lift_wk.txt"
-#include "phrases/phrase_enchantment_wk.txt"
-#include "phrases/phrase_guild_wk.txt"
-#include "phrases/phrase_outpost_wk.txt"
-#include "phrases/phrase_pvp_wk.txt"
-#include "phrases/phrase_fame_wk.txt"
-#include "phrases/phrase_animal_wk.txt"
+#include "phrase_newbie_wk.txt"
+#include "phrases/casino_wk.txt"
+#include "phrases/rpjobs_wk.txt"
+
+#include "phrases/mission_test.txt"
+
+
+LITERAL ( literal lit )
+{
+	[$lit$]
+}
+
+SHOPKEEPER_NO_SELL(bot b)
+{
+	shopkeeper_no_sell	[I have nothing to sell right now, come back later.]
+}
+
+
+TOO_ENCUMBERED()
+{
+	too_encumbered [&CHK& You are too encumbered.]
+}
+
+ROOM_TOO_ENCUMBERED ()
+{
+	[&CHK& Your appartment is too encumbered.]
+}
+
+ANIMAL_PACKER_TOO_ENCUMBERED ()
+{
+	[&CHK& Your mektoub is too encumbered.]
+}
+
+TELEPORT_USED ( int i )
+{
+	[&SYS& You will be teleported in $i$ seconds.]
+}
+
+TELEPORT_CANCELED()
+{
+	[&SYS&Teleportation has been canceled.]
+}
+
+//*************************************************
+//*************************************************
+
+
+// 4 july
+RELEVESTATE1 ()
+{
+     relevestate1   [Glory and suffering! ]
+}
+
+RELEVESTATE2 ()
+{
+     relevestate2   [For the Matis! ]
+}
+
+RELEVESTATE3 ()
+{
+     relevestate3   [Let's get work! ]
+}
+
+RELEVESTATE4 ()
+{
+     relevestate4   [Here we go! ]
+}
+
+DRUNKSTATE1 ()
+{
+     drunkstate1   [Come on, let me in! Last drink i promise.]
+}
+
+DRUNKSTATE2 ()
+{
+     drunkstate2   [Drink! Drink! Drink!]
+}
+
+DRUNKSTATE3 ()
+{
+     drunkstate3   [And another drink for her, and another drink for me, let's get drunk together, just another drink for her...]
+}
+
+DRUNKSTATE4 ()
+{
+     drunkstate4   [Oh my head, my poor head...It hurts!]
+}
+
+STABLESTATE1 ()
+{
+     stablestate1   [Good price on mektoub, good price!]
+}
+
+STABLESTATE2 ()
+{
+     stablestate2   [New mektoub, come get one!]
+}
+
+SHIELDSTATE1 ()
+{
+     shieldstate1   [New shield available, come to check!]
+}
+
+SHIELDSTATE2 ()
+{
+     shieldstate2   [No more wasting time looking for a shield we got the best offer on market.]
+}
+
+CIVILSTATE1 ()
+{
+     civilstate1   [Good morning!]
+}
+
+CIVILSTATE2 ()
+{
+     civilstate2   [Good evening!]
+}
+
+CIVILSTATE3 ()
+{
+     civilstate3   [Good night!]
+}
+
+CIVILSTATE4 ()
+{
+     civilstate4   [Such a nice place!]
+}
+
+CIVILSTATE5 ()
+{
+     civilstate5   [Another glorious day for the matis!]
+}
+
+CIVILSTATE6 ()
+{
+     civilstate6   [Ack ! I always get lost in this city!]
+}
+
+///////////////////newbieland//////////////////////
+
+//newbie land mission
+#include"phrases/nbland_missions.txt"
+
+// nbland Karavan guard
+#include"phrases/nbland_karavan.txt"
+
+// nbland Kamis priest
+#include"phrases/nbland_kamis.txt"
+
+//nbland npcs village et bandits
+#include"phrases/nbland_npcs_village.txt"
+
+///////////////////tasks missions//////////////////////
+
+#include "phrases/generic_task_phrases.txt"
+
+/////////////////////////////////////////////////////////////////////////
+// sentences related to combat
+/////////////////////////////////////////////////////////////////////////
+COMBAT_ACTOR_HIT(entity e, int damage, int maxDamage)
+{
+	(maxDamage = 0 & damage > 1)
+		combat_actor_hit_p	[&DGM&You inflict $damage$ damage points on $e.da$ $e$.]
+	(maxDamage = 0 & damage=1)
+		combat_actor_hit_1	[&DGM&You inflict one damage point on $e$.]
+	(maxDamage = 0 & damage=0)
+		combat_actor_hit_0	[&DGM&You hit $e$ but do no damage.]
+
+	(damage>1)
+		combat_actor_hit_pm	[&DGM&You inflict $damage$ ($maxDamage$) damage points on $e.da$ $e$.]
+	(damage=1)
+		combat_actor_hit_1m	[&DGM&You inflict one damage ($maxDamage$) point on $e.da$ $e$.]
+	(damage=0)
+		combat_actor_hit_0m	[&DGM&You hit $e.da$ $e$ but do no damage ($maxDamage$).]
+}
+
+COMBAT_ACTOR_HIT_LOC(entity e, int damage, int maxDamage, bodypart b)
+{
+	(maxDamage = 0 & damage > 1)
+		combat_actor_hit_test_loc_p	[&DGM&You hit $e.da$ $e$'s $b$ for $damage$ points of damage.]
+	(maxDamage = 0 & damage = 1)
+		combat_actor_hit_test_loc_1	[&DGM&You You hit $e.da$ $e$'s $b$ for 1 point of damage.]
+	(maxDamage = 0 & damage = 0)
+		combat_actor_hit_test_loc_0	[&DGM&You You hit $e.da$ $e$'s $b$ but inflict no damage.]
+
+	(damage>1)
+		combat_actor_hit_test_loc_pm	[&DGM&You hit $e.da$ $e$'s $b$ for $damage$ ($maxDamage$) points of damage.]
+	(damage=1)
+		combat_actor_hit_test_loc_1m	[&DGM&You You hit $e.da$ $e$'s $b$ for 1 ($maxDamage$) point of damage.]
+	(damage=0)
+		combat_actor_hit_test_loc_0m	[&DGM&You You hit $e.da$ $e$'s $b$ but inflict no damage ($maxDamage$).]
+}
+
+
+COMBAT_DEFENDER_HIT(entity e, int damage, int maxDamage)
+{
+	(maxDamage = 0 & damage > 0)
+		combat_defender_hit	[&DG&$e.da$ $e$ hits you for $damage$ damage.]
+	(maxDamage = 0 & damage = 0)
+		combat_defender_hit_0	[&DG&$e.da$ $e$ hits you but does no damage.]
+
+	(damage>0)
+		combat_defender_hit_m	[&DG&$e.da$ $e$ hits you for $damage$ ($maxDamage$) damage.]
+	(damage=0)
+		combat_defender_hit_0m	[&DG&$e.da$ $e$ hits you but does no damage ($maxDamage$).]
+}
+
+COMBAT_DEFENDER_HIT_LOC(entity e, int damage, int maxDamage, bodypart b)
+{
+	(maxDamage = 0 & damage>0)
+		combat_defender_hit_loc	[&DG&$e.da$ $e$ hits your $b$ for $damage$ damage.]
+	(maxDamage = 0 & damage=0)
+		combat_defender_hit_loc_0	[&DG&$e.da$ $e$ hits your $b$ but does no damage.]
+
+	(damage>0)
+		combat_defender_hit_loc_m	[&DG&$e.da$ $e$ hits your $b$ for $damage$ ($maxDamage$) damage.]
+	(damage=0)
+		combat_defender_hit_loc_0m	[&DG&$e.da$ $e$ hits your $b$ but does no damage ($maxDamage$).]
+}
+
+COMBAT_SPECTATOR_HIT(entity actor, entity defender, int damage, int maxDamage)
+{
+	(maxDamage = 0 & damage>0)
+		combat_spectator_hit	[&SYS&$actor.da$ $actor$ hits $defender.da$ $defender$ for $damage$ damage.]
+	(maxDamage = 0 & damage=0)
+		combat_spectator_hit_0	[&SYS&$actor.da$ $actor$ hits $defender.da$ $defender$ but does no damage.]
+
+	(damage>0)
+		combat_spectator_hit_m	[&SYS&$actor.da$ $actor$ hits $defender.da$ $defender$ for $damage$ ($maxDamage$) damage.]
+	(damage=0)
+		combat_spectator_hit_0m	[&SYS&$actor.da$ $actor$ hits $defender.da$ $defender$ but does no damage ($maxDamage$).]
+}
+
+COMBAT_ACTOR_HIT_SELF(int damage, int maxDamage)
+{
+	(maxDamage = 0 & damage > 1)
+		combat_actor_hit_self_p		[&DG&Vous vous blessez, infligeant $damage$ points de dégâts.]
+
+	(maxDamage = 0 & damage = 1)
+		combat_actor_hit_self_1		[&DG&Vous vous blessez, infligeant 1 point de dégâts.]
+
+	(maxDamage = 0 & damage = 0)
+		combat_actor_hit_self_0		[&DG&Vous vous blessez mais n'infligez pas de dégâts.]
+
+	(damage>1)
+		combat_actor_hit_self_pm	[&DG&Vous vous blessez, infligeant $damage$ ($maxDamage$) points de dégâts.]
+
+	(damage=1)
+		combat_actor_hit_self_1m	[&DG&Vous vous blessez, infligeant 1 ($maxDamage$) point de dégâts.]
+
+	(damage=0)
+		combat_actor_hit_self_0m	[&DG&Vous vous blessez mais n'infligez pas de dégâts ($maxDamage$).]
+}
+
+COMBAT_SPECTATOR_HIT_SELF_CREATURE(creature e, int damage)
+{
+	(damage>0)
+		combat_spectator_hit_self_creature	[&DGM&$e$ hits itself for $damage$ damage.]
+	(damage=0)
+		combat_spectator_hit_self_creature_0	[&DGM&$e$ hits itself but does no damage.]
+}
+COMBAT_SPECTATOR_HIT_SELF_PLAYER(player p, int damage)
+{
+	(damage>0 & p.gender = male)
+		combat_spectator_hit_self_player_m	[&DGM&$p$ hits himself for $damage$ damage.]
+	(damage>0 & p.gender = female)
+		combat_spectator_hit_self_player_f	[&DGM&$p$ hits herself for $damage$ damage.]
+	(damage=0 & p.gender = male)
+		combat_spectator_hit_self_player_0_m	[&DGM&$p$ hits himself but does no damage.]
+	(damage=0 & p.gender = female)
+		combat_spectator_hit_self_player_0_f	[&DGM&$p$ hits herself but does no damage.]
+}
+COMBAT_SPECTATOR_HIT_SELF_NPC(bot p, int damage)
+{
+	(damage>0 & p.gender = male)
+		combat_spectator_hit_self_bot_m	[&DGM&$p$ hits himself for $damage$ damage.]
+	(damage>0 & p.gender = female)
+		combat_spectator_hit_self_bot_f	[&DGM&$p$ hits herself for $damage$ damage.]
+	(damage=0 & p.gender = male)
+		combat_spectator_hit_self_bot_0_m	[&DGM&$p$ hits himself but does no damage.]
+	(damage=0 & p.gender = female)
+		combat_spectator_hit_self_bot_0_f	[&DGM&$p$ hits herself but does no damage.]
+}
+
+COMBAT_LOSE_STA_ACTOR(entity e, int i)
+{
+	combat_lose_sta_actor [&SPLM&You make $e.da$ $e$ lose $i$ stamina points.]
+}
+COMBAT_LOSE_STA_TARGET(entity e, int i)
+{
+	combat_lose_sta_target [&SPL&$e.da$ $e$ makes you lose $i$ stamina points.]
+}
+COMBAT_LOSE_STA_SPECTATORS(entity actor, entity target, int i)
+{
+	combat_lose_sta_spectators [&SYS&$actor.da$ $actor$ makes $target.da$ $target$ lose $i$ stamina points.]
+}
+COMBAT_LOSE_STA_SELF(int i)
+{
+	combat_lose_sta_self [&SPL&You make yourself lose $i$ stamina points.]
+}
+COMBAT_LOSE_STA_SELF_SPECTATORS_PLAYER(player p, int i)
+{
+	(p.gender = male)
+		combat_lose_sta_self_spectators_pm [&SPLM&$p$ makes himself lose $i$ stamina points.]
+	(p.gender = female)
+		combat_lose_sta_self_spectators_pf [&SPLM&$p$ makes herself lose $i$ stamina points.]
+}
+COMBAT_LOSE_STA_SELF_SPECTATORS_NPC(bot b, int i)
+{
+	(b.gender = male)
+		combat_lose_sta_self_spectators_bm [&SPLM&$b.da$ $b$ makes himself lose $i$ stamina points.]
+	(b.gender = female)
+		combat_lose_sta_self_spectators_bf [&SPLM&$b.da$ $b$ makes herself lose $i$ stamina points.]
+}
+COMBAT_LOSE_STA_SELF_SPECTATORS_CREATURE(creature c, int i)
+{
+	combat_lose_sta_self_spectators_c [&SPLM&$c.da$ $c$ makes itself lose $i$ stamina points.]
+}
+
+COMBAT_LOSE_SAP_ACTOR(entity e, int i)
+{
+	combat_lose_sap_actor [&SPLM&You make $e.da$ $e$ lose $i$ sap points.]
+}
+COMBAT_LOSE_SAP_TARGET(entity e, int i)
+{
+	combat_lose_sap_target [&SPL&$e.da$ $e$ makes you lose $i$ sap points.]
+}
+COMBAT_LOSE_SAP_SPECTATORS(entity actor, entity target, int i)
+{
+	combat_lose_sap_spectators [&SYS&$actor.da$ $actor$ makes $target.da$ $target$ lose $i$ sap points.]
+}
+COMBAT_LOSE_SAP_SELF(int i)
+{
+	combat_lose_sap_self [&SPL&You make yourself lose $i$ sap points.]
+}
+COMBAT_LOSE_SAP_SELF_SPECTATORS_PLAYER(player p, int i)
+{
+	(p.gender = male)
+		combat_lose_sap_self_spectators_pm [&SPLM&$p$ makes himself lose $i$ sap points.]
+	(p.gender = female)
+		combat_lose_sap_self_spectators_pf [&SPLM&$p$ makes herself lose $i$ sap points.]
+}
+COMBAT_LOSE_SAP_SELF_SPECTATORS_NPC(bot b, int i)
+{
+	(b.gender = male)
+		combat_lose_sap_self_spectators_bm [&SPLM&$b.da$ $b$ makes himself lose $i$ sap points.]
+	(b.gender = female)
+		combat_lose_sap_self_spectators_bf [&SPLM&$b.da$ $b$ makes herself lose $i$ sap points.]
+}
+COMBAT_LOSE_SAP_SELF_SPECTATORS_CREATURE(creature c, int i)
+{
+	combat_lose_sap_self_spectators_c [&SPLM&$c.da$ $c$ makes itself lose $i$ sap points.]
+}
+
+COMBAT_ACTOR_MISS(entity e)
+{
+	combat_actor_miss	[&MISM&You miss $e$.]
+}
+
+COMBAT_DEFENDER_MISS(entity e)
+{
+	combat_defender_miss	[&MIS&$e$ misses you.]
+}
+
+COMBAT_SPECTATOR_MISS(entity actor, entity defender)
+{
+	combat_spectator_miss	[&SYS&$actor$ misses $defender$.]
+}
+
+COMBAT_ACTOR_CRITICAL_HIT(entity e)
+{
+	combat_actor_critical_hit	[&SPLM&You perform a critical strike on $e$.]
+}
+
+COMBAT_DEFENDER_CRITICAL_HIT(entity e)
+{
+	combat_defender_critical_hit	[&SPL&$e$ performs a critical strike on you.]
+}
+
+COMBAT_SPECTATOR_CRITICAL_HIT(entity actor, entity defender)
+{
+	combat_spectator_critical_hit	[&SYS&$actor$ performs a critical strike on $defender$.]
+}
+
+COMBAT_ACTOR_FUMBLE()
+{
+	combat_actor_fumble	[&MISM&You fumble.]
+}
+
+COMBAT_DEFENDER_FUMBLE(entity e)
+{
+	combat_defender_fumble	[&MIS&$e$ fumbles.]
+}
+
+COMBAT_SPECTATOR_FUMBLE(entity actor)
+{
+	combat_spectator_fumble	[&MIS&$actor$ fumbles.]
+}
+
+COMBAT_ATTACK_ACTOR(entity e)
+{
+	combat_attack_actor	[&SYS&You attack $e$.]
+}
+
+COMBAT_ATTACK_DEFENDER(entity e)
+{
+	combat_attack_defender	[&SYS&$e$ attacks you.]
+}
+
+COMBAT_ATTACK_SPECTATOR(entity actor, entity defender)
+{
+	combat_attack_spectator	[&SYS&$actor$ attacks $defender$.]
+}
+
+COMBAT_LEAVE_ACTOR(entity e)
+{
+	combat_leave_actor	[&SYS&You stop attacking $e$.]
+}
+
+COMBAT_LEAVE_DEFENDER(entity e)
+{
+	combat_leave_defender	[&SYS&$e$ leaves combat.]
+}
+
+COMBAT_LEAVE_SPECTATOR(entity actor, entity defender)
+{
+	combat_leave_spectator	[&SYS&$actor$ stops attacking $defender$.]
+}
+
+COMBAT_DODGE_ATTACKER(entity e)
+{
+	combat_dodge_attacker	[&MISM&$e.da$ $e$ has dodged your attack.]
+}
+
+COMBAT_DODGE_DEFENDER(entity e)
+{
+	combat_dodge_defender	[&MIS&You dodged $e.da$ $e$'s attack.]
+}
+
+COMBAT_DODGE_SPECTATOR(entity actor, entity defender)
+{
+	combat_dodge_spectator	[&SYS&$defender.ia$ $defender$ has dodged $actor.ia$ $actor$'s attack.]
+}
+
+COMBAT_PARRY_ATTACKER(entity e)
+{
+	combat_parry_attacker	[&MISM&$e.da$ $e$ has parried your attack.]
+}
+
+COMBAT_PARRY_DEFENDER(entity e)
+{
+	combat_parry_defender	[&MIS&You parry $e.da$ $e$'s attack.]
+}
+
+COMBAT_PARRY_SPECTATOR(entity actor, entity defender)
+{
+	combat_parry_spectator	[&SYS&$defender.ia$ $defender$ has parried $actor.ia$ $actor$'s attack.]
+}
+
+COMBAT_MISS_ATTACKER(entity e)
+{
+	combat_miss_attacker	[&MISM& Vous avez raté $e.da$ $e$.]
+}
+
+COMBAT_MISS_DEFENDER(entity e)
+{
+	combat_miss_defender	[&MIS&$e.da$ $e$ vous a raté.]
+}
+
+COMBAT_MISS_SPECTATOR(entity actor, entity defender)
+{
+	combat_miss_spectator	[&SYS&$actor.ia$ $actor$ a raté  $defender.ia$ $defender$.]
+}
+
+// damage shield related
+COMBAT_DMG_SHIELD_ATTACKER(entity defender, int damage, int drain)
+{
+	(drain > 0)
+		combat_dmg_shield_attacker [&DMG&$defender.da$ $defender$'s damage shield inflicts you $damage$ damage points and $defender.da$ $defender$ gains $drain$ hit points.]
+ 	combat_dmg_shield_attacker_0 [&DMG&$defender.da$ $defender$'s damage shield inflicts you $damage$ damage points.]
+}
+
+COMBAT_DMG_SHIELD_DEFENDER(entity attacker, int damage, int drain)
+{
+	(drain > 0)
+		combat_dmg_shield_defender [&DGM&Your damage shield inflicts $damage$ damage points to $attacker.da$ $attacker$ and you gain $drain$ hit points.]
+ 	combat_dmg_shield_defender_0 [&DGM&Your damage shield inflicts $damage$ damage points to $attacker.da$ $attacker$.]
+}
+
+COMBAT_DMG_SHIELD_SPECTATORS(entity defender, entity attacker, int damage, int drain)
+{
+	(drain > 0)
+		combat_dmg_shield_spectators [&SYS&$defender.da$ $defender$'s damage shield inflicts $damage$ damage points to $attacker.da$ $attacker$ and $defender.da$ $defender$ gains $drain$ hit points.]
+ 	combat_dmg_shield_spectators_0 [&SYS&$defender.da$ $defender$'s damage shield inflicts $damage$ damage points to $attacker.da$ $attacker$.]
+}
+
+//Disarm
+COMBAT_DISARM_NO_ITEM(player p)
+{
+	(p.gender = male)
+		combat_disarm_no_item_m	[&CHKCB&$p$ has no weapon equiped, so you cannot disarm him.]
+	combat_disarm_no_item_f	[&CHKCB&$p$ has no weapon equiped, so you cannot disarm her.]
+}
+
+COMBAT_DISARM_ATTACKER(player p)
+{
+	combat_disarm_attacker	[&SPLM&You have disarmed $p$.]
+}
+COMBAT_DISARM_DEFENDER(entity e)
+{
+	combat_disarm_defender	[&SPL&$e.pa$ $e$ disarmed you.]
+}
+
+// Feint
+COMBAT_FEINT_ACTOR(entity e)
+{
+	combat_feint_actor	[&SPLM&You make a successful feint against $e.da$ $e$.]
+}
+
+COMBAT_FEINT_TARGET(entity e)
+{
+	combat_feint_target 	[&SPL&$e.da$ $e$ makes a successful feint against you.]
+}
+
+COMBAT_FEINT_INVALID(entity e)
+{
+	combat_feint_invalid 	[&CHKCB&$e.da$ $e$ is not attacking you in melee combat, you cannot feint.]
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+/// sentences used as error codes in combat system
+////////////////////////////////////////////////////////////////////////////////////
+COMBAT_INVALID_TARGET()
+{
+	combat_invalid_target	[&CHKCB&Invalid target.]
+}
+COMBAT_NOT_AN_ENEMY()
+{
+	combat_not_an_enemy	[&CHKCB&You can only enter combat with your enemies.]
+}
+COMBAT_NOT_ENOUGH_STA()
+{
+	combat_not_enough_sta	[&CHKCB&You do not have enough stamina for this action.]
+}
+
+COMBAT_CANNOT_USE_ACTION_YET()
+{
+	combat_use_action_yet	[&CHKCB&You cannot use a combat action yet.]
+}
+
+COMBAT_NOT_A_WEAPON()
+{
+	combat_not_a_weapon	[&CHKCB&You cannot fight with this item in your hand.]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+/// sentences related to natural events (forage risks)
+////////////////////////////////////////////////////////////////////////////////////
+
+SOURCE_TOXIC_CLOUD()
+{
+	source_toxic_cloud	[&SPL&The forage source released a toxic cloud!]
+}
+
+SOURCE_EXPLOSION()
+{
+	source_explosion	[&SPL&The forage source blew up!]
+}
+
+SOURCE_DMG_REDUX_MISSED()
+{
+	source_dmg_redux_early	[&CHK&Damage reduction was done too early.]
+}
+
+SOURCE_EXPLOSION_DEFENDER_HIT(int damage, int maxDamage, int reduction)
+{
+	(reduction=0)
+		source_explosion_defender_hit	[&DMG&An explosion hits you for $damage$ ($maxDamage$) damage.]
+	source_explosion_defender_reducted_hit	[&DMG&An explosion hits you for $damage$ ($maxDamage$) damage (reduced by $reduction$).]
+}
+
+TOXIC_CLOUD_DEFENDER_HIT(int damage, int reduction)
+{
+	toxic_cloud_defender_hit	[&DMG&A toxic cloud hits you for $damage$ damage.]
+}
+
+
+HEAL_CLOUD_HIT(score s, int v)
+{
+	heal_cloud_hit	[&SPLM&You feel the effects of benevolent magic and get a bonus of $s$ of $v$.]
+}
+
+
+SOURCE_EXPLOSION_SPECTATOR_HIT(entity defender, int damage)
+{
+	source_explosion_spectator_hit	[&SYS&An explosion hits $defender$ for $damage$ damage.]
+}
+
+TOXIC_CLOUD_SPECTATOR_HIT(entity defender, int damage)
+{
+	toxic_cloud_spectator_hit	[&SYS&A toxic cloud hits $defender$ for $damage$ damage.]
+}
+
+KAMI_ANGER_DEFENDER_HIT(int damage, int reduction)
+{
+	kami_anger_defender_hit		[&DMG&A Kami punishes you for $damage$ damage.]
+}
+
+KAMI_ANGER_SPECTATOR_HIT(entity defender, int damage)
+{
+	kami_anger_spectator_hit	[&SYS&A Kami punishes $defender$ for $damage$ damage.]
+}
+
+FORAGE_ABSORB_DMG(int damage)
+{
+	forage_absorb_dmg	[&DMG&You absorb raw material source damage for $damage$ damage.]
+}
+
+/////////////////////////////////////////////////////////////////////////
+// sentences related to entity's death
+/////////////////////////////////////////////////////////////////////////
+
+DEATH_XP_DEATH( int i, int j )
+{
+	[&XP&Your death penalty reached the amount of $j$ points. You have currently earned $i$.]
+}
+
+DEATH_KILLER(entity e)
+{
+	death_killer	[&SYS&You have killed $e.da$ $e$.]
+}
+
+DEATH_VICTIM(entity e)
+{
+	(e = 0)
+		death_victim_0	[&SYS&You have been killed.]
+	death_victim	[&SYS&You have been killed by $e.da$ $e$.]
+}
+
+DEATH_SELF_KILL()
+{
+	death_self_kill	[&SYS&You killed yourself.]
+}
+DEATH_SELF_KILL_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		death_self_kill_spectators_pm	[&SYS&$p$ killed himself.]
+	death_self_kill_spectators_pf	[&SYS&$p$ killed herself.]
+}
+DEATH_SELF_KILL_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		death_self_kill_spectators_bm	[&SYS&$b.da$ $b$ killed himself.]
+	death_self_kill_spectators_bf	[&SYS&$b.da$ $b$ killed herself.]
+}
+DEATH_SELF_KILL_SPECTATORS_CREATURE(creature c)
+{
+	death_self_kill_spectators_c	[&SYS&$c.da$ $c$ killed itself.]
+}
+
+DEATH_SPECTATORS(entity killer, entity victim)
+{
+	death_spectators	[&SYS&$victim.da$ $victim$ have been killed by $killer.da$ $killer$.]
+}
+
+/////////////////////////////////////////////////////////////////////////
+// sentences related to magic
+/////////////////////////////////////////////////////////////////////////
+
+MAGIC_BEGIN_CAST_GOOD_ACTOR(entity e)
+{
+	magic_begin_good_actor	[&SPLM&You invoke a beneficial spell on $e.ia$ $e$.]
+}
+MAGIC_BEGIN_CAST_NEUTRAL_ACTOR(entity e)
+{
+	magic_begin_neutral_actor	[&SPLM&You invoke a neutral spell on $e.ia$ $e$.]
+}
+MAGIC_BEGIN_CAST_BAD_ACTOR(entity e)
+{
+	magic_begin_bad_actor	[&SPLM&You invoke an offensive spell on $e.ia$ $e$.]
+}
+
+MAGIC_BEGIN_SELFCAST_GOOD_ACTOR()
+{
+	magic_begin_selfcast_good_actor	[&SPL&You invoke a beneficial spell on yourself.]
+}
+MAGIC_BEGIN_SELFCAST_NEUTRAL_ACTOR()
+{
+	magic_begin_selfcast_neutral_actor	[&SPL&You invoke a neutral spell on yourself.]
+}
+MAGIC_BEGIN_SELFCAST_BAD_ACTOR()
+{
+	magic_begin_selfcast_bad_actor	[&SPL&You invoke an offensive spell on yourself.]
+}
+
+MAGIC_BEGIN_CAST_GOOD_TARGET(entity e)
+{
+	magic_begin_cast_good_target	[&SPL&$e.ia$ $e$ invokes a beneficial spell on you.]
+}
+MAGIC_BEGIN_CAST_NEUTRAL_TARGET(entity e)
+{
+	magic_begin_cast_neutral_target	[&SPL&$e.ia$ $e$ invokes a neutral spell on you.]
+}
+MAGIC_BEGIN_CAST_BAD_TARGET(entity e)
+{
+	magic_begin_cast_bad_target	[&SPL&$e.ia$ $e$ invokes an offensive spell on you.]
+}
+
+MAGIC_BEGIN_CAST_GOOD_SPECTATOR(entity actor, entity target)
+{
+	magic_begin_cast_good_spectator	[&SYS&$actor.ia$ $actor$ invokes a beneficial spell on $target.ia$ $target$.]
+}
+MAGIC_BEGIN_CAST_NEUTRAL_SPECTATOR(entity actor, entity target)
+{
+	magic_begin_cast_neutral_spectator	[&SYS&$actor.ia$ $actor$ invokes a neutral spell on $target.ia$ $target$.]
+}
+MAGIC_BEGIN_CAST_BAD_SPECTATOR(entity actor, entity target)
+{
+	magic_begin_cast_bad_spectator	[&SYS&$actor.ia$ $actor$ invokes an offensive spell on $target.ia$ $target$.]
+}
+
+MAGIC_BEGIN_SELFCAST_GOOD_SPECTATOR_PLAYER(player actor)
+{
+	(actor.gender = male)
+		magic_begin_good_spectator_pm	[&SYS&$actor$ invokes a beneficial spell on himself.]
+	(actor.gender = female)
+		magic_begin_good_spectator_pf	[&SYS&$actor$ invokes a beneficial spell on herself.]
+}
+MAGIC_BEGIN_SELFCAST_NEUTRAL_SPECTATOR_PLAYER(player actor)
+{
+	(actor.gender = male)
+		magic_begin_neutral_spectator_pm	[&SYS&$actor$ invokes a neutral spell on himself.]
+	(actor.gender = female)
+		magic_begin_neutral_spectator_pf	[&SYS&$actor$ invokes a neutral spell on herself.]
+}
+MAGIC_BEGIN_SELFCAST_BAD_SPECTATOR_PLAYER(player actor)
+{
+	(actor.gender = male)
+		magic_begin_bad_spectator_pm	[&SYS&$actor$ invokes an offensive spell on himself.]
+	(actor.gender = female)
+		magic_begin_bad_spectator_pf	[&SYS&$actor$ invokes an offensive spell on herself.]
+}
+
+MAGIC_BEGIN_SELFCAST_GOOD_SPECTATOR_NPC(bot actor)
+{
+	(actor.gender = male)
+		magic_begin_good_spectator_nm	[&SYS&$actor.ia$ $actor$ invokes a beneficial spell on himself.]
+	(actor.gender = female)
+		magic_begin_good_spectator_nf	[&SYS&$actor.ia$ $actor$ invokes a beneficial spell on herself.]
+}
+MAGIC_BEGIN_SELFCAST_NEUTRAL_SPECTATOR_NPC(bot actor)
+{
+	(actor.gender = male)
+		magic_begin_neutral_spectator_nm	[&SYS&$actor.ia$ $actor$ invokes a neutral spell on himself.]
+	(actor.gender = female)
+		magic_begin_neutral_spectator_nf	[&SYS&$actor.ia$ $actor$ invokes a neutral spell on herself.]
+}
+MAGIC_BEGIN_SELFCAST_BAD_SPECTATOR_NPC(bot actor)
+{
+	(actor.gender = male)
+		magic_begin_bad_spectator_nm	[&SYS&$actor.ia$ $actor$ invokes an offensive spell on himself.]
+	(actor.gender = female)
+		magic_begin_bad_spectator_nf	[&SYS&$actor.ia$ $actor$ invokes an offensive spell on herself.]
+}
+
+MAGIC_BEGIN_SELFCAST_GOOD_SPECTATOR_CREATURE(creature actor)
+{
+	magic_begin_good_spectator_c	[&SYS&$actor.ia$ $actor$ invokes a beneficial spell on itself.]
+}
+MAGIC_BEGIN_SELFCAST_NEUTRAL_SPECTATOR_CREATURE(creature actor)
+{
+	magic_begin_neutral_spectator_c	[&SYS&$actor.ia$ $actor$ invokes a neutral spell on itself.]
+}
+MAGIC_BEGIN_SELFCAST_BAD_SPECTATOR_CREATURE(creature actor)
+{
+	magic_begin_bad_spectator_c	[&SYS&$actor.ia$ $actor$ invokes an offensive spell on itself.]
+}
+
+MAGIC_END_CAST_SUCCESS_ACTOR()
+{
+	magic_end_cast_success_actor	[&SPLM&You succesfully cast your spell.]
+}
+MAGIC_END_CAST_FAILED_ACTOR()
+{
+	magic_end_cast_failed_actor	[&MISM&You failed your incantation.]
+}
+MAGIC_END_CAST_FUMBLE_ACTOR()
+{
+	magic_end_cast_fumble_actor	[&MISM&You made a blunder.]
+}
+
+MAGIC_END_CAST_SUCCESS_TARGET(entity e)
+{
+	magic_end_cast_success_target	[&SPL&$e.da$ $e$ succesfully cast a spell on you.]
+}
+MAGIC_END_CAST_FAILED_TARGET(entity e)
+{
+	magic_end_cast_failed_target	[&MIS&$e.da$ $e$'s incantation failed.]
+}
+MAGIC_END_CAST_FUMBLE_TARGET(entity e)
+{
+	magic_end_cast_fumble_target	[&MIS&$e.da$ $e$'s incantation fumbled.]
+}
+
+MAGIC_END_CAST_SUCCESS_SPECTATORS(entity caster, entity target)
+{
+	magic_end_cast_success_spectators	[&SYS&$caster.da$ $caster$ succesfully cast a spell on $target.da$ $target$.]
+}
+MAGIC_END_SELFCAST_SUCCESS_SPECTATORS_PLAYER(player caster)
+{
+	(caster.gender = male)
+		magic_end_selfcast_success_spectators_pm	[&SYS&$caster$ succesfully cast a spell on himself.]
+	(caster.gender = female)
+		magic_end_selfcast_success_spectators_pf	[&SYS&$caster$ succesfully cast a spell on herself.]
+}
+MAGIC_END_SELFCAST_SUCCESS_SPECTATORS_NPC(bot caster)
+{
+	(caster.gender = male)
+		magic_end_selfcast_success_spectators_bm	[&SYS&$caster.da$ $caster$ succesfully cast a spell on himself.]
+	(caster.gender = female)
+		magic_end_selfcast_success_spectators_bf	[&SYS&$caster.da$ $caster$ succesfully cast a spell on herself.]
+}
+MAGIC_END_SELFCAST_SUCCESS_SPECTATORS_CREATURE(creature c)
+{
+	magic_end_selfcast_success_spectators_c	[&SYS&$c.da$ $c$ succesfully cast a spell on itself.]
+}
+MAGIC_END_CAST_FAILED_SPECTATORS(entity e)
+{
+	magic_end_cast_failed_spectators	[&SYS&$e.da$ $e$'s incantation failed.]
+}
+MAGIC_END_CAST_FUMBLE_SPECTATORS(entity e)
+{
+	magic_end_cast_fumble_spectators	[&SYS&$e.da$ $e$'s incantation fumbled.]
+}
+
+MAGIC_RESIST_CASTER(entity e)
+{
+	magic_resist_caster	[&MISM&$e.da$ $e$ resists the effects of your spell.]
+}
+MAGIC_RESIST_TARGET(entity e)
+{
+	magic_resist_target	[&MIS&You resist the effects of the spell invoked by $e.da$ $e$.]
+}
+MAGIC_RESIST_SPECTATORS(entity caster, entity target)
+{
+	magic_resist_spectators	[&SYS&$target.da$ $target$ resists the effects of the spell invoked by $caster.da$ $caster$.]
+}
+
+MAGIC_TARGET_OUT_OF_RANGE(entity e)
+{
+	magic_target_out_of_range	[&CHKCB&$e.da$ $e$ is out of range for your spell.]
+}
+MAGIC_BAD_TARGET()
+{
+	magic_bad_target	[&CHKCB&Target missing or invalid.]
+}
+MAGIC_LACK_HP()
+{
+	magic_lack_hp	[&CHKCB&You do not have enough hit points to cast this spell.]
+}
+MAGIC_LACK_SAP()
+{
+	magic_lack_sap	[&CHKCB&You do not have enough sap points to cast this spell.]
+}
+
+MAGIC_NEW_LINK_CASTER(entity e)
+{
+	magic_new_link_caster	[&SPLM&You have created a new magic link with $e.da$ $e$.]
+}
+MAGIC_NEW_LINK_TARGET(entity e)
+{
+	magic_new_link_target	[&SPL&$e.da$ $e$ has created a new magic link with you.]
+}
+
+MAGIC_DESTROY_LINK_CASTER(entity e)
+{
+	magic_destroy_link_caster	[&SPLM&A link you created with $e.da$ $e$ has been broken.]
+}
+MAGIC_DESTROY_LINK_TARGET(entity e)
+{
+	magic_destroy_link_target	[&SPL&A link created with you by $e.da$ $e$ has been broken.]
+}
+
+MAGIC_DAMAGE_SAP_TARGET(entity e, int n, int m)
+{
+	magic_damage_sap_target	[&SPL&$e.da$ $e$ inflicts you $n$($m$) magic sap damage.]
+}
+MAGIC_DAMAGE_SAP_CASTER(entity e, int n, int m)
+{
+	magic_damage_sap_caster	[&SPLM&You inflict $n$($m$) magic sap damage to $e.da$ $e$.]
+}
+MAGIC_DAMAGE_SAP_SPECTATORS(entity caster, entity target, int n)
+{
+	magic_damage_sap_spectators	[&SYS&$caster.da$ $caster$ inflicts $n$ magic sap damage to $target.da$ $target$.]
+}
+MAGIC_DAMAGE_STA_TARGET(entity e, int n, int m)
+{
+	magic_damage_sta_target	[&SPL&$e.da$ $e$ inflicts you $n$($m$) magic stamina damage.]
+}
+MAGIC_DAMAGE_STA_CASTER(entity e, int n, int m)
+{
+	magic_damage_sta_caster	[&SPLM&You inflict $n$($m$) magic stamina damage to $e.da$ $e$.]
+}
+MAGIC_DAMAGE_STA_SPECTATORS(entity caster, entity target, int n)
+{
+	magic_damage_sta_spectators	[&SYS&$caster.da$ $caster$ inflicts $n$ magic stamina damage to $target.da$ $target$.]
+}
+MAGIC_DAMAGE_HP_TARGET(entity e, int n, int m)
+{
+	magic_damage_hp_target	[&DMG&$e.da$ $e$ inflicts you $n$($m$) magic hit points damage.]
+}
+MAGIC_DAMAGE_HP_CASTER(entity e, int n, int m)
+{
+	magic_damage_hp_caster	[&DGM&You inflict $n$($m$) magic hit points damage to $e.da$ $e$.]
+}
+MAGIC_DAMAGE_HP_SPECTATORS(entity caster, entity target, int n)
+{
+	magic_damage_hp_spectators	[&SYS&$caster.da$ $caster$ inflicts $n$ magic hit points damage to $target.da$ $target$.]
+}
+
+MAGIC_SELF_DAMAGE_SAP(int n, int m)
+{
+	magic_self_damage_sap	[&SPL&You inflict yourself $n$($m$) magic sap points damage.]
+}
+MAGIC_SELF_DAMAGE_STA(int n, int m)
+{
+	magic_self_damage_sta	[&SPL&You inflict yourself $n$($m$) magic stamina points damage.]
+}
+MAGIC_SELF_DAMAGE_HP(int n, int m)
+{
+	magic_self_damage_hp	[&DMG&You inflict yourself $n$($m$) magic hit points damage.]
+}
+
+MAGIC_SELF_DAMAGE_SAP_SPECTATORS_PLAYER(player p, int n)
+{
+	(p.gender = male)
+		magic_self_damage_sap_spectators_pm	[&SYS&$p$ inflict himself $n$ magic sap points damage.]
+	(p.gender = female)
+		magic_self_damage_sap_spectators_pf	[&SYS&$p$ inflict herself $n$ magic sap points damage.]
+}
+MAGIC_SELF_DAMAGE_SAP_SPECTATORS_NPC(bot b, int n)
+{
+	(b.gender = male)
+		magic_self_damage_sap_spectators_bm	[&SYS&$b.da$ $b$ inflict himself $n$ magic sap points damage.]
+	(b.gender = female)
+		magic_self_damage_sap_spectators_bf	[&SYS&$b.da$ $b$ inflict herself $n$ magic sap points damage.]
+}
+MAGIC_SELF_DAMAGE_SAP_SPECTATORS_CREATURE(creature c, int n)
+{
+	magic_self_damage_sap_spectators_c	[&SYS&$c.da$ $c$ inflict itself $n$ magic sap points damage.]
+}
+
+MAGIC_SELF_DAMAGE_STA_SPECTATORS_PLAYER(player p, int n)
+{
+	(p.gender = male)
+		magic_self_damage_sta_spectators_pm	[&SYS&$p$ inflict himself $n$ magic stamina points damage.]
+	(p.gender = female)
+		magic_self_damage_sta_spectators_pf	[&SYS&$p$ inflict herself $n$ magic stamina points damage.]
+}
+MAGIC_SELF_DAMAGE_STA_SPECTATORS_NPC(bot b, int n)
+{
+	(b.gender = male)
+		magic_self_damage_sta_spectators_bm	[&SYS&$b.da$ $b$ inflict himself $n$ magic stamina points damage.]
+	(b.gender = female)
+		magic_self_damage_sta_spectators_bf	[&SYS&$b.da$ $b$ inflict herself $n$ magic stamina points damage.]
+}
+MAGIC_SELF_DAMAGE_STA_SPECTATORS_CREATURE(creature c, int n)
+{
+	magic_self_damage_sta_spectators_c	[&SYS&$c.da$ $c$ inflict itself $n$ magic stamina points damage.]
+}
+
+MAGIC_SELF_DAMAGE_HP_SPECTATORS_PLAYER(player p, int n)
+{
+	(p.gender = male)
+		magic_self_damage_hp_spectators_pm	[&SYS&$p$ inflict himself $n$ magic hit points damage.]
+	(p.gender = female)
+		magic_self_damage_hp_spectators_pf	[&SYS&$p$ inflict herself $n$ magic hit points damage.]
+}
+MAGIC_SELF_DAMAGE_HP_SPECTATORS_NPC(bot b, int n)
+{
+	(b.gender = male)
+		magic_self_damage_hp_spectators_bm	[&SYS&$b.da$ $b$ inflict himself $n$ magic hit points damage.]
+	(b.gender = female)
+		magic_self_damage_hp_spectators_bf	[&SYS&$b.da$ $b$ inflict herself $n$ magic hit points damage.]
+}
+MAGIC_SELF_DAMAGE_HP_SPECTATORS_CREATURE(creature c, int n)
+{
+	magic_self_damage_hp_spectators_c	[&SYS&$c.da$ $c$ inflict itself $n$ magic hit points damage.]
+}
+
+
+MAGIC_SPECIAL_DAMAGE_ACTOR(entity e, int i, damagetype d)
+{
+	magic_special_damage_actor	[&DGM&You inflict $i$ $d$ damage on $e.da$ $e$.]
+}
+MAGIC_SPECIAL_DAMAGE_TARGET(entity e, int i, damagetype d)
+{
+	magic_special_damage_target	[&DMG&$e.da$ $e$ inflicts you $i$ $d$ damage.]
+}
+MAGIC_SPECIAL_DAMAGE_SPECTATORS(entity caster, entity target, int i, damagetype d)
+{
+	magic_special_damage_spectators	[&SYS&$caster.da$ $caster$ inflicts $i$ $d$ damage on $target.da$ $target$.]
+}
+MAGIC_SPECIAL_DAMAGE_SELF(int i, damagetype d)
+{
+	magic_special_damage_self	[&DMG&You inflict yourself $i$ $d$ damage.]
+}
+MAGIC_SPECIAL_DAMAGE_SELF_SPECTATORS_PLAYER(player p, int n, damagetype d)
+{
+	(p.gender = male)
+		magic_special_damage_self_spectators_pm	[&SYS&$p$ inflict himself $n$ $d$ damage.]
+	(p.gender = female)
+		magic_special_damage_self_spectators_pf	[&SYS&$p$ inflict herself $n$ $d$ damage.]
+}
+MAGIC_SPECIAL_DAMAGE_SELF_SPECTATORS_NPC(bot b, int n, damagetype d)
+{
+	(b.gender = male)
+		magic_special_damage_self_spectators_bm	[&SYS&$b.da$ $b$ inflict himself $n$ $d$ damage.]
+	(b.gender = female)
+		magic_special_damage_self_spectators_bf	[&SYS&$b.da$ $b$ inflict herself $n$ $d$ damage.]
+}
+MAGIC_SPECIAL_DAMAGE_SELF_SPECTATORS_CREATURE(creature c, int n, damagetype d)
+{
+	magic_special_damage_self_spectators_c	[&SYS&$c.da$ $c$ inflict itself $n$ $d$ damage.]
+}
+
+
+
+MAGIC_HEAL_SAP_CASTER(entity e, int i)
+{
+	magic_heal_sap_caster	[&SPLM&You restore $e.da$ $e$ $i$ sap points.]
+}
+MAGIC_HEAL_SAP_TARGET(entity e, int i)
+{
+	magic_heal_sap_target	[&SPL&$e.da$ $e$ restores you $i$ sap points.]
+}
+MAGIC_HEAL_SAP_SPECTATORS(entity caster, entity target, int i)
+{
+	magic_heal_sap_spectators	[&SYS&$caster.da$ $caster$ restores $target.da$ $target$ $i$ sap points.]
+}
+MAGIC_SELF_HEAL_SAP(int i)
+{
+	magic_self_heal_sap	[&SPLM&You restore yourself $i$ sap points.]
+}
+MAGIC_SELF_HEAL_SAP_SPECTATORS_PLAYER(player p, int i)
+{
+	(p.gender = male)
+		magic_self_heal_sap_spectators_pm	[&SYS&$p$ restores himself $i$ sap points.]
+	(p.gender = female)
+		magic_self_heal_sap_spectators_pf	[&SYS&$p$ restores herself $i$ sap points.]
+}
+MAGIC_SELF_HEAL_SAP_SPECTATORS_NPC(bot b, int i)
+{
+	(b.gender = male)
+		magic_self_heal_sap_spectators_bm	[&SYS&$b.da$ $b$ restores himself $i$ sap points.]
+	(b.gender = female)
+		magic_self_heal_sap_spectators_bf	[&SYS&$b.da$ $b$ restores herself $i$ sap points.]
+}
+MAGIC_SELF_HEAL_SAP_SPECTATORS_CREATURE(creature c, int i)
+{
+	magic_self_heal_sap_spectators_c	[&SYS&$c.da$ $c$ restores itself $i$ sap points.]
+}
+
+MAGIC_HEAL_STA_CASTER(entity e, int i)
+{
+	magic_heal_stamina_caster	[&SPLM&You restore $e.da$ $e$ $i$ stamina points.]
+}
+MAGIC_HEAL_STA_TARGET(entity e, int i)
+{
+	magic_heal_stamina_target	[&SPL&$e.da$ $e$ restores you $i$ stamina points.]
+}
+MAGIC_HEAL_STA_SPECTATORS(entity caster, entity target, int i)
+{
+	magic_heal_sta_spectators	[&SYS&$caster.da$ $caster$ restores $target.da$ $target$ $i$ stamina points.]
+}
+MAGIC_SELF_HEAL_STA(int i)
+{
+	magic_self_heal_sta	[&SPLM&You restore yourself $i$ stamina points.]
+}
+MAGIC_SELF_HEAL_STA_SPECTATORS_PLAYER(player p, int i)
+{
+	(p.gender = male)
+		magic_self_heal_sta_spectators_pm	[&SYS&$p$ restores himself $i$ stamina points.]
+	(p.gender = female)
+		magic_self_heal_sta_spectators_pf	[&SYS&$p$ restores herself $i$ stamina points.]
+}
+MAGIC_SELF_HEAL_STA_SPECTATORS_NPC(bot b, int i)
+{
+	(b.gender = male)
+		magic_self_heal_sta_spectators_bm	[&SYS&$b.da$ $b$ restores himself $i$ stamina points.]
+	(b.gender = female)
+		magic_self_heal_sta_spectators_bf	[&SYS&$b.da$ $b$ restores herself $i$ stamina points.]
+}
+MAGIC_SELF_HEAL_STA_SPECTATORS_CREATURE(creature c, int i)
+{
+	magic_self_heal_sta_spectators_c	[&SYS&$c.da$ $c$ restores itself $i$ stamina points.]
+}
+
+MAGIC_HEAL_FOCUS_CASTER(entity e, int i)
+{
+	magic_heal_focus_caster	[&SPLM&You restore $e.da$ $e$ $i$ focus points.]
+}
+MAGIC_HEAL_FOCUS_TARGET(entity e, int i)
+{
+	magic_heal_focus_target	[&SPL&$e.da$ $e$ restores you $i$ focus points.]
+}
+MAGIC_HEAL_FOCUS_SPECTATORS(entity caster, entity target, int i)
+{
+	magic_heal_focus_spectators	[&SYS&$caster.da$ $caster$ restores $target.da$ $target$ $i$ focus points.]
+}
+MAGIC_SELF_HEAL_FOCUS(int i)
+{
+	magic_self_heal_focus	[&SPLM&You restore yourself $i$ focus points.]
+}
+MAGIC_SELF_HEAL_FOCUS_SPECTATORS_PLAYER(player p, int i)
+{
+	(p.gender = male)
+		magic_self_heal_focus_spectators_pm	[&SYS&$p$ restores himself $i$ focus points.]
+	(p.gender = female)
+		magic_self_heal_focus_spectators_pf	[&SYS&$p$ restores herself $i$ focus points.]
+}
+MAGIC_SELF_HEAL_FOCUS_SPECTATORS_NPC(bot b, int i)
+{
+	(b.gender = male)
+		magic_self_heal_focus_spectators_bm	[&SYS&$b.da$ $b$ restores himself $i$ focus points.]
+	(b.gender = female)
+		magic_self_heal_focus_spectators_bf	[&SYS&$b.da$ $b$ restores herself $i$ focus points.]
+}
+MAGIC_SELF_HEAL_FOCUS_SPECTATORS_CREATURE(creature c, int i)
+{
+	magic_self_heal_focus_spectators_c	[&SYS&$c.da$ $c$ restores itself $i$ focus points.]
+}
+
+MAGIC_HEAL_HP_CASTER(entity e, int i)
+{
+	magic_heal_hp_caster	[&SPLM&You heal $e.da$ $e$ $i$ hit points.]
+}
+MAGIC_HEAL_HP_TARGET(entity e, int i)
+{
+	magic_heal_hp_target	[&SPL&$e.da$ $e$ heals you $i$ hit points.]
+}
+MAGIC_HEAL_HP_SPECTATORS(entity caster, entity target, int i)
+{
+	magic_heal_hp_spectators	[&SYS&$caster.da$ $caster$ heals $target.da$ $target$ $i$ hit points.]
+}
+MAGIC_SELF_HEAL_HP(int i)
+{
+	magic_self_heal_hp	[&SPLM&You heal yourself $i$ hit points.]
+}
+MAGIC_SELF_HEAL_HP_SPECTATORS_PLAYER(player p, int i)
+{
+	(p.gender = male)
+		magic_self_heal_hp_spectators_pm	[&SYS&$p$ heals himself $i$ hit points.]
+	(p.gender = female)
+		magic_self_heal_hp_spectators_pf	[&SYS&$p$ heals herself $i$ hit points.]
+}
+MAGIC_SELF_HEAL_HP_SPECTATORS_NPC(bot b, int i)
+{
+	(b.gender = male)
+		magic_self_heal_hp_spectators_bm	[&SYS&$b.da$ $b$ heals himself $i$ hit points.]
+	(b.gender = female)
+		magic_self_heal_hp_spectators_bf	[&SYS&$b.da$ $b$ heals herself $i$ hit points.]
+}
+MAGIC_SELF_HEAL_HP_SPECTATORS_CREATURE(creature c, int i)
+{
+	magic_self_heal_hp_spectators_c	[&SYS&$c.da$ $c$ heals itself $i$ hit points.]
+}
+
+MAGIC_HEAL_FULL_SCORE_TARGET(score s)
+{
+	(s.score_ID = hit_points)
+		magic_heal_full_score_target_hp	[&SYS&You are now at full health and no longer need healing.]
+
+	magic_heal_full_score_target	[&SYS&You are now at full $s$.]
+}
+MAGIC_HEAL_FULL_SCORE_ACTOR(entity e, score s)
+{
+	magic_heal_full_score_actor	[&SYS&$e.da$ $e$ is now at full $s$ and no longer needs $s$ recovery spells.]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+/// sentences used as error codes in magic system
+////////////////////////////////////////////////////////////////////////////////////
+MAGIC_NEED_TARGET()
+{
+	magic_need_target	[&CHKCB&This spell needs a target.]
+}
+MAGIC_CANNOT_CAST_ON_ENEMY()
+{
+	magic_cannot_cast_on_enemy	[&CHKCB&This spell cannot be cast on an enemy.]
+}
+MAGIC_CAN_ONLY_CAST_ON_ENEMY()
+{
+	magic_can_only_cast_on_enemy	[&CHKCB&This spell can only be cast on an enemy.]
+}
+MAGIC_TARGET_DEAD()
+{
+	magic_target_dead	[&CHKCB&You cannot cast on a corpse.]
+}
+
+MAGIC_CANNOT_CAST_YET()
+{
+	magic_cannot_cast_yet	[&CHKCB&You cannot cast yet.]
+}
+
+MAGIC_CANNOT_SELFCAST()
+{
+	magic_cannot_selfcast	[&CHKCB&You cannot cast this spell on yourself.]
+}
+
+MAGIC_TARGET_INVULNERABLE_OFFENSIVE(entity e)
+{
+	magic_target_invulnerable_offensive	[&CHKCB&$e.da$ $e$ is invulnerable to offensive spells.]
+}
+
+MAGIC_TARGET_INVULNERABLE_ALL_MAGIC(entity e)
+{
+	magic_target_invulnerable_all_magic	[&CHKCB&$e.da$ $e$ is unaffected by magic.]
+}
+
+MAGIC_TARGET_IMMUNE(entity e)
+{
+	magic_target_immune	[&CHKCB&$e.da$ $e$ is immune to this kind of magic.]
+}
+
+MAGIC_MAGICIAN_STAFF_LOW_REQ()
+{
+	magic_magician_staff_low_req	[&CHK&Your gloves quality is too low to canalyse the power of your spell, you won't benefits your gloves bonuses.]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// these sentences are used in the xp gain system
+////////////////////////////////////////////////////////////////////////////////////
+PROGRESS_NO_GAIN(skill s)
+{
+	progress_no_gain [&CHK&You don't gain experience in '$s$', this actions is too easy.]
+}
+//PROGRESS_LITTLE_GAIN(skill s)
+//{
+//	progress_little_gain [&XP&You gain a little experience in '$s$'.]
+//}
+PROGRESS_NORMAL_GAIN(skill s, int i)
+{
+	(i > 1)
+		progress_normal_gain_p [&XP&You gain $i$ experience points in '$s$'.]
+	(i = 1)
+		progress_normal_gain_1 [&XP&You gain 1 experience point in '$s$'.]
+
+	progress_normal_gain_0 [&XP&You gain no experience in '$s$'.]
+}
+
+PROGRESS_DEATH_PENALTY_PAYBACK(int i, skill s, int j, int k)
+{
+	progress_death_penalty_payback [&XP&You gain $i$ experience points in '$s$', which amounts to $j$ death penalty points. Your death penalty is now of $k$ points.]
+}
+
+PROGRESS_DEATH_PENALTY_COMPLETE()
+{
+	progress_death_penalty_complete [&XP&You no longer have a death experience penalty !]
+}
+
+PROGRESS_FREE_TRIAL_LIMIT(skill s)
+{
+	progress_free_trial_limit [&XP&You gain no experience in '$s$' because you have reached the free trial limit. To progress further in this skill you must upgrade your account.]
+}
+
+//*PROGRESS_MUCH_GAIN(skill s)
+//{
+//	progress_much_gain [&XP&You gain much experience in '$s$'.]
+//}
+PROGRESS_MISSION_GAIN(skill s)
+{
+	progress_mission_gain [&TSK&The success of this mission has given you experience for the '$s$' skill.]
+}
+
+PROGRESS_SKILL(skill s, int i)
+{
+	progress_skill	[&XP&Your '$s$' skill improves to $i$ points.]
+}
+PROGRESS_HP()
+{
+	progress_hp	[&XP&Your life force increases.]
+}
+PROGRESS_SAP()
+{
+	progress_sap	[&XP&Your Sap increases.]
+}
+PROGRESS_STA()
+{
+	progress_sta	[&XP&Your endurance increases.]
+}
+//PROGRESS_RESIST(??)
+//{
+//	progress_resist	[&XP&]
+//}
+PROGRESS_UNLOCK_SKILL(skill s, int i)
+{
+	progress_unlock_skill	[&XP&Well done! You gain the new advanced skill '$s$' starting to $i$ points.]
+}
+
+PROGRESS_MAX_DAMAGE_TRANSFERED(entity e)
+{
+	[&XP&The way you killed $e.da$ $e$ was too easy. You don't gain experience for that behaviour.]
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// these sentences are used in the faction point gain system
+////////////////////////////////////////////////////////////////////////////////////
+
+FACTION_POINT_GAIN (faction faction, int fp)
+{
+	(fp > 1)
+		faction_points_gain_p [&XP&Vous gagnez $fp$ points de faction avec $faction.da$ $faction$.]
+	(fp = 1)
+		faction_points_gain_1 [&XP&Vous gagnez 1 point de faction avec $faction.da$ $faction$.]
+
+	faction_points_gain_0 [&XP&Vous ne gagnez pas de point de faction.]
+}
+
+FACTION_POINT_GAIN_KILL (faction faction, int fp, player victim)
+{
+	(fp > 1)
+		[&XP&Vous avez vaincu $victim$, un ennemi de la faction $faction.da$ $faction$, votre faction ! Vous gagnez $fp$ points de faction.]
+	(fp = 1)
+		[&XP&Vous avez vaincu $victim$, un ennemi de la faction $faction.da$ $faction$, votre faction ! Vous gagnez un point de faction.]
+
+	[&XP&Vous ne gagnez pas de point de faction pour la mort de $victim$.]
+}
+
+FACTION_POINT_LOSE (faction faction, int fp)
+{
+	(fp > 1)
+		faction_points_lose_p [&XP&Vous perdez $fp$ points de faction avec $faction.da$ $faction$.]
+	(fp = 1)
+		faction_points_lose_1 [&XP&Vous perdez 1 point de faction avec $faction.da$ $faction$.]
+
+	faction_points_lose_0 [&XP&Vous ne perdez pas de point de faction.]
+}
+
+FACTION_POINT_CANNOT_GAIN_YET (player victim, int m, int s)
+{
+	(m = 1)
+		faction_points_cannot_gain_yet_1m [&XP&1 minute est nécessaire avant de pouvoir gagner des points d'honneur en combattant $victim$.]
+	(m > 1)
+		faction_points_cannot_gain_yet_xm [&XP&$m$ minutes sont nécessaires avant de pouvoir gagner des points d'honneur en combattant $victim$.]
+	(s = 1)
+		faction_points_cannot_gain_yet_1s [&XP&1 seconde est nécessaire avant de pouvoir gagner des points d'honneur en combattant $victim$.]
+
+	faction_points_cannot_gain_yet_xs [&XP&$s$ secondes sont nécessaires avant de pouvoir gagner des points d'honneur en combattant $victim$.]
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// these sentences are used during harvest/loot
+////////////////////////////////////////////////////////////////////////////////////
+HARVEST_NOTHING_TO_QUARTER(entity e)
+{
+	harvest_nothing_to_quarter	[&ITMF&There is nothing to quarter on $e.da$ $e$.]
+}
+HARVEST_NOTHING_TO_LOOT(entity e)
+{
+	harvest_nothing_to_loot	[&ITMF&There is nothing to loot on $e.da$ $e$.]
+}
+
+YOU_NOT_HAVE_LOOT_RIGHT()
+{
+	you_not_have_loot_right [&CHK&Vous n'avez pas le droit de looter ce corps pour le moment. ]
+}
+
+YOU_NOT_HAVE_QUARTER_RIGHT()
+{
+	you_not_have_quarter_right [&CHK&Vous n'avez pas le droit de dépecer ce corps pour le moment. ]
+}
+
+AUTO_LOOT_LEVEL_TOO_LOW()
+{
+	auto_loot_level_too_low	[&ITMF&For your mission, you need a material of higher quality.]
+}
+
+AUTO_LOOT_SUCCESS (int nb, item i, int level)
+{
+	(nb > 1)
+		auto_loot_success_pl	[&ITM&You obtain $nb$ $i.p$ of quality $level$ for your mission]
+	(nb = 1)
+		auto_loot_success_1	[&ITM&You obtain one $i$ of quality $level$ for your mission]
+}
+
+LOOT_SUCCESS (int nb, item item, int quality)
+{
+	(nb > 1)
+		loot_success_pl	[&ITM&You obtain $nb$ $item.p$ of quality $quality$.]
+	(nb = 1)
+		loot_success_1	[&ITM&You obtain one $item$ of quality $quality$.]
+}
+
+LOOT_SUCCESS_OTHER (player p, int nb, item item, int quality)
+{
+	(nb > 1)
+		loot_success_other_pl	[&ITMO&$p$ obtains $nb$ $item.p$ of quality $quality$.]
+	(nb = 1)
+		loot_success_other_1	[&ITMO&$p$ obtains one $item$ of quality $quality$.]
+}
+
+//R2LOOT_SUCCESS (int nb, literal lit, int quality)
+//{
+//	(nb > 1)
+//		r2loot_success_pl	[&ITM&You obtain $nb$ $lit$ of quality $quality$.]
+//	(nb = 1)
+//		r2loot_success_1	[&ITM&You obtain one $lit$ of quality $quality$.]
+//}
+
+HARVEST_SUCCESS (int nb, item item, int quality)
+{
+	(nb > 1)
+		harvest_success_pl	[&ITM&You obtain $nb$ $item.p$ of quality $quality$.]
+	(nb = 1)
+		harvest_success_1	[&ITM&You obtain one $item$ of quality $quality$.]
+}
+
+HARVEST_SUCCESS_OTHER (player p, int nb, item item, int quality)
+{
+	(nb > 1)
+		harvest_success_other_pl	[&ITMO&$p$ obtains $nb$ $item.p$ of quality $quality$.]
+	(nb = 1)
+		harvest_success_other_1		[&ITMO&$p$ obtains one $item$ of quality $quality$.]
+}
+
+HARVEST_QUARTER_ALREADY_IN_PROGRESS_OTHER(entity creature, entity harvester)
+{
+	harvest_quarter_already_in_progress_other	[&CHK&$creature.da$ $creature$ is already being quartered by $harvester$.]
+}
+
+HARVEST_QUARTER_ALREADY_IN_PROGRESS_SELF(entity e)
+{
+	harvest_quarter_already_in_progress_self	[&CHK&You are already quartering $e.da$ $e$.]
+}
+
+HARVEST_LOOT_ALREADY_IN_PROGRESS_OTHER(entity creature, entity harvester)
+{
+	harvest_loot_already_in_progress_other	[&CHK&$creature.da$ $creature$ is already being looted by $harvester$.]
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// sentences related to ring rewards
+////////////////////////////////////////////////////////////////////////////////////
+
+RRP_GAIN(int ptsNow, int sessionType, int ptsTotal)
+{
+	(sessionType = 0) rrp_gain_novice	[&XP&You earn $ptsNow$ Novice RRP]
+	(sessionType = 1) rrp_gain_apprentice	[&XP&You earn $ptsNow$ Apprentice RRP]
+	(sessionType = 2) rrp_gain_confirmed	[&XP&You earn $ptsNow$ Confirmed RRP]
+	(sessionType = 3) rrp_gain_advanced	[&XP&You earn $ptsNow$ Advanced RRP]
+	(sessionType = 4) rrp_gain_expert	[&XP&You earn $ptsNow$ Expert RRP]
+	(sessionType = 5) rrp_gain_master	[&XP&You earn $ptsNow$ Master RRP]
+}
+
+RRP_GAIN2(int ptsNow, int sessionType, int nbPlayers, int time)
+{
+	(sessionType = 0) rrp_gain2_novice	[&XP&You earn $ptsNow$ Novice RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	(sessionType = 1) rrp_gain2_apprentice	[&XP&You earn $ptsNow$ Apprentice RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	(sessionType = 2) rrp_gain2_confirmed	[&XP&You earn $ptsNow$ Confirmed RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	(sessionType = 3) rrp_gain2_advanced	[&XP&You earn $ptsNow$ Advanced RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	(sessionType = 4) rrp_gain2_expert	[&XP&You earn $ptsNow$ Expert RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+	(sessionType = 5) rrp_gain2_master	[&XP&You earn $ptsNow$ Master RRP (with $nbPlayers$ players after $time$ seconds of activity)]
+}
+
+RRP_BONUS(int ptsBonus, int sessionType, int ptsTotal)
+{
+	(sessionType = 0) rrp_bonus_novice	[&XP&You have gained a BONUS of $ptsBonus$ Novice RRP]
+	(sessionType = 1) rrp_bonus_apprentice	[&XP&You have gained a BONUS of $ptsBonus$ Apprentice RRP]
+	(sessionType = 2) rrp_bonus_confirmed	[&XP&You have gained a BONUS of $ptsBonus$ Confirmed RRP]
+	(sessionType = 3) rrp_bonus_advanced	[&XP&You have gained a BONUS of $ptsBonus$ Advanced RRP]
+	(sessionType = 4) rrp_bonus_expert	[&XP&You have gained a BONUS of $ptsBonus$ Expert RRP]
+	(sessionType = 5) rrp_bonus_master	[&XP&You have gained a BONUS of $ptsBonus$ Master RRP]
+}
+
+RRP_BAD_ACTION(int xpValue)
+{
+	rrp_bad_action[&XP&Action ignored because too easy (equivalent to $xpValue$ xp)]
+}
+
+RRP_BAD_SKILL(int sessionType)
+{
+	(sessionType = 0) rrp_bad_skill_novice		[&XP&Action below Novice level ignored]
+	(sessionType = 1) rrp_bad_skill_apprentice	[&XP&Action below Apprentice level ignored]
+	(sessionType = 2) rrp_bad_skill_confirmed	[&XP&Action below Confirmed level ignored]
+	(sessionType = 3) rrp_bad_skill_advanced	[&XP&Action below Advanced level ignored]
+	(sessionType = 4) rrp_bad_skill_expert		[&XP&Action below Expert level ignored]
+	(sessionType = 5) rrp_bad_skill_master		[&XP&Action below Master level ignored]
+}
+
+RRP_SESSION_LIMIT_REACHED()
+{
+	rrp_session_limit_reached[&XP&No more RRP points can be gained this session as you have reached the limit]
+}
+
+RRP_PROGRESS(int xpSoFar, int xpRequired, int xpValue)
+{
+	rrp_progress[&XP&Ring progress $xpSoFar$/$xpRequired$ of next reward points (equivalent to $xpValue$ xp)]
+}
+
+RRP_NO_PROGRESS(int time)
+{
+	rrp_no_progress[&XP&Next ring reward point not yet available ($time$ seconds to go)]
+}
+
+RRP_GENERATE_IGNORED()
+{
+	rrp_generate_ignored[&ITM&You cannot generate ring rewards at this time]
+}
+
+RRP_TOO_FEW_ACTIVE_PLAYERS()
+{
+	rrp_too_few_active_players[&XP&There are too few active players for you to earn Ring Reward Points]
+}
+
+RRP_GENERATE_LACK_POINTS(int sessionType,int ptsRequired,int ptsHeld)
+{
+	(sessionType = 0) rrp_generate_lack_points_novice	[&ITM&You require at least $ptsRequired$ Novice RRP to be worthy of a reward but you only have $ptsHeld$]
+	(sessionType = 1) rrp_generate_lack_points_apprentice	[&ITM&You require at least $ptsRequired$ Apprentice RRP to be worthy of a reward but you only have $ptsHeld$]
+	(sessionType = 2) rrp_generate_lack_points_confirmed	[&ITM&You require at least $ptsRequired$ Confirmed RRP to be worthy of a reward but you only have $ptsHeld$]
+	(sessionType = 3) rrp_generate_lack_points_advanced	[&ITM&You require at least $ptsRequired$ Advanced RRP to be worthy of a reward but you only have $ptsHeld$]
+	(sessionType = 4) rrp_generate_lack_points_expert	[&ITM&You require at least $ptsRequired$ Expert RRP to be worthy of a reward but you only have $ptsHeld$]
+	(sessionType = 5) rrp_generate_lack_points_master	[&ITM&You require at least $ptsRequired$ Master RRP to be worthy of a reward but you only have $ptsHeld$]
+}
+
+RRP_GENERATE_REWARD(int nb, item i, int level)
+{
+	(nb > 1)
+		rrp_generate_reward_pl	[&ITM&You obtain $nb$ $i.p$ of quality $level$ as a Ring Reward]
+	(nb = 1)
+		rrp_generate_reward_1	[&ITM&You obtain one $i$ of quality $level$ as a Ring Reward]
+}
+
+RRP_GENERATE_INVENTORY_FULL()
+{
+	rrp_generate_inventory_full[&ITM&Your inventory is too full to add any more ring rewards]
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// sentences related to target slection
+////////////////////////////////////////////////////////////////////////////////////
+TARGET_NEW(entity e)
+{
+	target_new	[&SYS&You target $e.ia$ $e$.]
+}
+TARGET_SELF()
+{
+	target_self	[&SYS&You target yourself.]
+}
+TARGET_NONE()
+{
+	target_none	[&SYS&You now have no target .]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// sentences related to Inventory/items management
+////////////////////////////////////////////////////////////////////////////////////
+INVENTORY_DESTROY_ITEM(item item, int qty)
+{
+	(qty=1)
+		inventory_destroy_item_1	[&ITM&You have destroyed $item.ia$ $item$.]
+	(qty>1)
+		inventory_destroy_item_p	[&ITM&You have destroyed $qty$ $item.p$.]
+}
+INVENTORY_DROP_ITEM(item item, int qty)
+{
+	(qty=1)
+		inventory_drop_item_1	[&ITM&You have dropped $item.ia$ $item$ on the ground.]
+	(qty>1)
+		inventory_drop_item_p	[&ITM&You have dropped $qty$ $item.p$ on the ground.]
+}
+INVENTORY_EQUIP(item item, int qty)
+{
+	(qty=1)
+		inventory_equip_item_1	[&SYS&You equip with your $item$.]
+	(qty>1)
+		inventory_equip_item_p	[&SYS&You equip with your $item.p$.]
+}
+INVENTORY_UNEQUIP(item item, int qty)
+{
+	(qty=1)
+		inventory_unequip_item_1	[&SYS&You unequip your $item$.]
+	(qty>1)
+		inventory_unequip_item_p	[&SYS&You unequip your $item.p$.]
+}
+
+REQUIRED_EQUIP()
+{
+	[&CHK&You haven't requipred characteristic for wear this item.]
+}
+
+REQUIRED_EQUIP_CIV_CULT_ORGA()
+{
+	[&CHK&You haven't requipred Civilisation/Cult/Organization for wear this item.]
+}
+
+INVENTORY_BUY_ITEM(item item, int qty, int cost, int fp)
+{
+	(qty=1 & fp=0)
+		inventory_buy_item_1	[&ITM&You have just bought $item.ia$ $item$ for $cost$ seeds.]
+	(qty>1 & fp=0)
+		inventory_buy_item_p	[&ITM&You have just bought $qty$ $item.p$ for $cost$ seeds.]
+	(qty=1 & fp>0 & cost>0)
+		inventory_buy_item_1fc	[&ITM&You have just bought $item.ia$ $item$ for $cost$ seeds and $fp$ faction points.]
+	(qty>1 & fp>0 & cost>0)
+		inventory_buy_item_pfc	[&ITM&You have just bought $qty$ $item.p$ for $cost$ seeds and $fp$ faction points.]
+	(qty=1 & fp>0 & cost=0)
+		inventory_buy_item_1f	[&ITM&You have just bought $item.ia$ $item$ for $fp$ faction points.]
+	(qty>1 & fp>0 & cost=0)
+		inventory_buy_item_pf	[&ITM&You have just bought $qty$ $item.p$ for $fp$ faction points.]
+}
+
+INVENTORY_BUY_ITEM_DAPPERS(item item, int qty, int cost)
+{
+	(qty=1)
+		[&ITM&You have just bought $item.ia$ $item$ for $cost$ seeds.]
+	(qty>1)
+		[&ITM&You have just bought $qty$ $item.p$ for $cost$ seeds.]
+}
+
+INVENTORY_BUY_ITEM_FP(item item, int qty, int fp)
+{
+	(qty=1)
+		[&ITM&You have just bought $item.ia$ $item$ for $fp$ faction points.]
+	(qty>1)
+		[&ITM&You have just bought $qty$ $item.p$ for $fp$ faction points.]
+}
+
+INVENTORY_BUY_ITEM_RRP(item item, int qty, int rrpLevel, int rrps)
+{
+	(qty=1)
+		[&ITM&You have just bought $item.ia$ $item$ for $rrps$ ring reward points of level $rrpLevel$.]
+	(qty>1)
+		[&ITM&You have just bought $qty$ $item.p$ for $rrps$ ring reward points of level $rrpLevel$.]
+}
+
+ITEM_SOLD(item item, int qty, entity buyer, int money, int moneyNow, int moneyPrevious )
+{
+	(qty=1)
+		item_sold_1	[&ITM&Vous vendez $item.ia$ $item$ pour $moneyNow$ dapper(s).]
+	(qty>1)
+		item_sold_2	[&ITM&Vous vendez $qty$ $item.p$ pour $moneyNow$ dapper(s).]
+}
+
+ITEM_SOLD_TO_MARKET(item item, int qty )
+{
+	(qty=1)
+		item_sold_market_1 [&ITM&Your $item$ is solded to market, reseller already give to you corresponding dappers.]
+	(qty>1)
+		item_sold_market_2 [&ITM&Your $qty$ $item.p$ are solded to market, reseller already give to you corresponding dappers.]
+}
+
+ITEM_CANT_BE_SOLD( item item, int qty, int qual )
+{
+	(qty=1)
+		item_can_be_solded_1 [&CHK&Your $item$ of quality $qual$ can't be solded in market.]
+	(qty>1)
+		item_can_be_solded_2 [&CHK&Your $qty$ $item.p$ of quality $qual$ can't be solded in market.]
+}
+
+ITEM_SHOP_LIMIT_REACHED( int qty )
+{
+	[&CHK&You can't put more items in reseller, you have reach the $qty$ items limits you can have in reseller in same time.]
+}
+
+ITEM_SOLDED_TO_NPC( item item, int qty, int price )
+{
+	(qty=1)
+		[&ITM&You sold $item$ to NPC for $price$ dappers.]
+	(qty>1)
+		[&ITM&You sold $qty$ $item.p$ to NPC for $price$ dappers.]
+}
+
+ITEM_PUT_IN_RESELLER( item item, int qty, int basePrice, int sellPrice )
+{
+	(qty=1)
+		[&ITM&You put $item$ in reseller, reseller give to you $basePrice$ Dappers now, and you received $sellPrice$ dappers when players buy our item.]
+	(qty>1)
+		[&ITM&You put $qty$ $item.p$ in reseller, reseller give to you $basePrice$ Dappers now, and you received $sellPrice$ dappers when players buy our items.]
+}
+
+ITEM_SERVICE_NOT_AVAILABLE(item service)
+{
+	[&CHK&Achat refusé, $service.da$ $service$ n'est plus disponible.]
+}
+
+ITEM_SERVICE_CONSUMED(item service)
+{
+	[&ITM&$service.da$ $service$ a été consommé.]
+}
+
+//INVENTORY_MOVE_TO(item item, int qty)
+//{
+//	(qty=1)
+//		inventory_equip_item_1	[&SYS&You equip your $item$.]
+//	(qty>1)
+//		inventory_equip_item_p	[&SYS&You equip your $item.p$.]
+//}
+
+
+BAG_FULL(int qty)
+{
+	bag_full	[&CHK&Your inventory is full, you have $qty$ items on it.]
+}
+
+ITEM_NOT_AVAILABLE()
+{
+	item_not_available [&CHK&Item you want buy is no more available.]
+}
+
+ALTAR_RESTRICTION()
+{
+	[&SYS& Votre allégeance ou votre niveau de renommée ne vous permet pas d'avoir accès aux pactes de cet autel.]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// phrases management
+////////////////////////////////////////////////////////////////////////////////////
+PHRASE_BUY(sphrase s, int cost)
+{
+	(cost>1)
+		phrase_buy	[&ITM&You have just learnt "$s$" for $cost$ skill points.]
+	phrase_buy_1	[&ITM&You have just learnt "$s$" for one skill point.]
+}
+PHRASE_BUY_COMBAT(sphrase s, int cost)
+{
+	(cost>1)
+		phrase_buy_combat	[&ITM&You learn the "$s$" combat action for $cost$ skill points.]
+	phrase_buy_combat_1	[&ITM&You learn the "$s$" combat action for one skill point.]
+}
+PHRASE_BUY_MAGIC(sphrase s, int cost)
+{
+	(cost>1)
+		phrase_buy_magic	[&ITM&You learn the "$s$" spell for $cost$ skill points.]
+	phrase_buy_magic_1	[&ITM&You learn the "$s$" spell for one skill point.]
+}
+PHRASE_BUY_FABER(sphrase s, int cost)
+{
+	(cost>1)
+		phrase_buy_faber	[&ITM&You learn the "$s$" craft plan for $cost$ skill points.]
+	phrase_buy_faber_1	[&ITM&You learn the "$s$" craft plan for one skill point.]
+}
+PHRASE_CHARAC_BUY(characteristic c, int value, int cost)
+{
+	phrase_characteristic_buy	[&ITM&You increase your $c$ at $value$ for $cost$ skill points.]
+}
+PHRASE_USE_PREDEF(sphrase s)
+{
+	phrase_use_predef	[&SPLM&You use $s$.]
+}
+PHRASE_NOT_ENOUGH_CREDIT()
+{
+	phrase_missing_credit	[&CHKCB&Not enough credit to validate the action.]
+}
+PHRASE_NOT_ENOUGH_FOCUS()
+{
+	phrase_not_enough_focus [&CHKCB&Not enough focus to validate the action.]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+
+
+MISSION_FAILED ()
+{
+	mission_failed	[&TSK&You failed in a mission.]
+}
+
+ABANDON_MISSION ()
+{
+	abandon_mission	[&TSK&You have abandonned a mission.]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// these sentences are used in the craft system
+////////////////////////////////////////////////////////////////////////////////////
+ONLY_ONE_ROOT_FABER()
+{
+	only_one_root_faber	[&CHK&Only one root brick is permitted in craft sentence, crafting action aborted!]
+}
+UNKNOWN_CRAFTED_ITEM()
+{
+	unknown_crafted_item	[&CHK&Item crafted by sentence is unknown by server! Crafting action aborted! Please report this bug with exact sentence used. Thanks!]
+}
+ONE_FABER_PLAN_ALLOWED_PER_SENTENCE()
+{
+	one_faber_plan_allowed_per_sentence	[&CHK&Only one craft plan (mandatory bricks) is allowed in craft sentence! Crafting action aborted!]
+}
+CRAFT_SENTENCE_INCORRECT()
+{
+	craft_sentence_incorrect	[&CHK&Craft sentence is incorrect! Crafting action aborted!]
+}
+CANT_CRAFT_ENGAGED_IN_MELEE()
+{
+	cant_craft_engaged_melee	[&CHK&You can't craft when you are engaged in melee fight! Crafting action aborted!]
+}
+CANT_CRAFT_WHEN_DEAD()
+{
+	cant_craft_when_dead	[&CHKCB&You died during crafting! Crafting action aborted!]
+}
+CANT_FOUND_RM()
+{
+	cant_found_rm		[&CHK&Toutes les matiéres premiéres selectionnées n'ont pu être trouvées dans le bag! l'action de craft est annulée!]
+}
+CANT_LOCK_RM()
+{
+	cant_lock_rm		[&CHK&Can't reserve all raw material you chose for crafting! Some of this is certainly already reserved for other usage or are inaccessible. Crafting action aborted!]
+}
+CANT_CRAFT_NOT_ENOUGHT_FOCUS()
+{
+	[&CHK& Can't craft this item now because you don't have enought focus energy!]
+}
+FABER_CANCEL()
+{
+	faber_cancel		[&ITMF&Your crafting action has been interrupted!]
+}
+ROOT_FABER_NOT_FIRST()
+{
+	root_faber_not_first	[&CHK&Root craft bricks must be in first position in sentence! Please report this bug with exact sentence used. Thanks!]
+}
+PLAN_FABER_NOT_SECOND()
+{
+	plan_faber_not_second	[&CHK&Craft plan bricks must be in second position in sentence! Please report this bug with exact sentence used. Thanks!]
+}
+FABER_FUMBLE()
+{
+	faber_fumble		[&ITMF&Your crafting action is a complete failure, you may lose some of the raw materials used for crafting!]
+}
+FABER_MISS()
+{
+	faber_miss		[&CHK&Your crafting action is a failure!, you may lose some of the raw materials used for crafting!]
+}
+FABER_PARTIAL_SUCCESS()
+{
+	faber_partial_sucess	[&ITMF&Your crafting action is a partial success! Crafted item is degraded!]
+}
+FABER_CRITICAL_SUCCESS()
+{
+ faber_critical_sucess	[&ITM&Your crafting action is a critical success! Crafted item is exceptional for this action and selected raw materials!]
+}
+FABER_SUCCESS()
+{
+	faber_sucess		[&ITM&Your crafting action is a success! Crafted item corresponding to your action and raw materials selected!]
+}
+FABER_CREATE_STACK_ITEM_FAIL()
+{
+	faber_stack_fail	[&CHK&Craft system failure: can't create stack item! Please report this bug with exact sentence used. Thanks!]
+}
+FABER_CREATE_ITEM_FAIL()
+{
+	faber_item_fail		[&CHK&Craft system failure: can't create crafted item! Please report this bug with exact sentence used. Thanks!]
+}
+FABER_TEMP_INVENTORY_FULL()
+{
+	[&CHK&Can't create crafted item! Your temporary inventory is full!]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// these sentences are related to forage
+////////////////////////////////////////////////////////////////////////////////////
+
+CANT_FORAGE_ENGAGED_IN_MELEE()
+{
+	cant_forage_engaged_in_melee	[&CHKCB&You can't forage when you are engaged in melee fight! Forage action aborted!]
+}
+
+INVALID_FORAGE_TOOL()
+{
+	invalid_forage_tool	[&CHK&You don't have a forage tool in hand.]
+}
+
+FORAGE_INVALID_PLACE()
+{
+	forage_invalid_place	[&CHK&You can't forage for raw materials in this place.]
+}
+
+
+FORAGE_DEPOSIT_DISTANCE(int distance)
+{
+	(distance=0)
+		forage_deposit_distance_0 [&FORLD&Deposit at less than 1 m]
+	forage_deposit_distance	[&FORLD&Deposit at $distance$ m]
+}
+
+FORAGE_DEPOSIT_LOCATED()
+{
+	forage_deposit_located		[&FORLD&A deposit is very close, thus the raw material you are searching for is in the surrounding area.]
+}
+
+FORAGE_DEP_TRACKG_STOPPED()
+{
+	forage_dep_trackg_stopped	[&FORLD&End of prospection]
+}
+
+FORAGE_FOUND_SOURCES(int n)
+{
+	(n=0)
+		forage_nothing_found	[&ITMF&You found nothing.]
+	(n=1)
+		forage_found_source	[&ITM&You found a raw material source.]
+	forage_found_sources	[&ITM&You found $n$ raw material sources.]
+}
+
+FORAGE_SOURCE_OBSTACLE()
+{
+	forage_source_obstacle	[&ITMF&You couldn't find a raw material source due to some obstacle.]
+}
+
+FORAGE_EXTRACTION_NEEDS_TARGET_SOURCE()
+{
+	forage_extraction_needs_target_source	[&CHK&You need to target a forage source to begin an extraction.]
+}
+
+FORAGE_ONLY_ONE_EXTRACTOR()
+{
+	forage_only_one_extractor	[&CHK&Someone is already extracting this forage source, you may apply only care actions.]
+}
+
+FORAGE_NO_CARE_FIRST()
+{
+	forage_no_care_first		[&CHK&You can't begin an extraction with a care action.]
+}
+
+
+FORAGE_TOO_FAR_FROM_SOURCE()
+{
+	forage_too_far_from_source	[&CHK&You are too far from the source to forage.]
+}
+
+FORAGE_DEPOSIT_IS_EMPTY()
+{
+	forage_deposit_is_empty	[&ITMF&There are no more raw materials in this deposit.]
+}
+
+FORAGE_QUALITY_TOO_LOW()
+{
+	forage_too_low			[&CHK&Your quality stanza is too low to be used on this forage source.]
+}
+
+FORAGE_TOOL_QUALITY_TOO_LOW()
+{
+	forage_tool_quality_too_low			[&CHK&Your quality pick is too low to be used on this forage source.]
+}
+
+CRAFT_NEED_RECOMMENDED_CRAFTING_TOOL()
+{
+	craft_need_recommended_crafting_tool			[&CHK&Your quality crafting tool is too low to craft this item.]
+}
+
+FORAGE_SOURCE_DEPLETED()
+{
+	forage_source_depleted	[&ITMF&The forage source was prematurely destroyed.]
+}
+
+FORAGE_SOURCE_SITE_DEPLETED()
+{
+	forage_source_site_depleted	[&ITMF&The forage source was prematurely destroyed and the area is exhausted!]
+}
+
+FORAGE_SOURCE_MAXLEVEL(int l)
+{
+	forage_source_maxlevel		[&SYS&The optimal quality available in this source is $l$.]
+}
+
+FORAGE_SOURCE_IMPACT_MODE(int m)
+{
+	forage_source_impact_mode0	[&SYS&The source mode is $m$.]
+}
+
+FORAGE_MISS()
+{
+	forage_miss			[&ITMF&Hard luck, part of your forage action failed!]
+}
+
+FORAGE_DROP_QUANTITY()
+{
+	forage_drop_quantity	[&ITMF&You failed to catch the material!]
+}
+
+FORAGE_DROP_QUALITY()
+{
+	forage_drop_quality	[&ITMF&You spoiled the quality of the material!]
+}
+
+FORAGE_FAIL()
+{
+	forage_fail			[&ITMF&You didn't manage to get any entire piece of raw material.]
+}
+
+FORAGE_NO_DEPOSIT_HERE()
+{
+	forage_no_deposit_here	[&ITMF&No raw materials were detected in this area.]
+}
+
+FORAGE_NO_DEPOSIT_IN_SEASON()
+{
+	forage_no_deposit_in_season	[&ITMF&No specified raw materials are present in the area in this season.]
+}
+
+FORAGE_NO_DEPOSIT_IN_WEATHER()
+{
+	forage_no_deposit_in_weather	[&ITMF&No specified raw materials are present in the area in these weather conditions.]
+}
+
+FORAGE_NO_DEPOSIT_IN_CONTEXT()
+{
+	forage_no_deposit_in_context	[&ITMF&No specified raw materials are present in the area at the moment.]
+}
+FORAGE_ECOTYPE_SPEC_NOT_MATCHING()
+{
+	forage_ecotype_spec_not_matching	[&CHK&The terrain specialization cannot be used here.]
+}
+
+FORAGE_MATERIAL_SPEC_NOT_MATCHING()
+{
+	forage_material_spec_not_matching	[&CHK&The material specialization does not match the material source.]
+}
+
+FORAGE_NO_DEPOSIT_MATERIAL_FILTER()
+{
+	forage_no_deposit_material_filter	[&ITMF&No specified raw materials are present in the area.]
+}
+
+FORAGE_NO_LOCAL_RM_MATERIAL_FILTER()
+{
+	forage_no_local_rm_material_filter	[&ITMF&Some specified raw materials were detected near by, though.]
+}
+
+FORAGE_NO_DEPOSIT_STATQUALITY()
+{
+	forage_no_deposit_statquality		[&ITMF&You could detect the presence of raw materials, but they have a higher class than your current prospecting action allows to find.]
+}
+
+FORAGE_NO_LOCAL_RM_STATQUALITY()
+{
+	forage_no_local_rm_statquality		[&ITMF&Some raw materials were detected here, but they have a higher class than your current prospecting action allows to find. Some lower class materials were detected near by, though.]
+}
+
+FORAGE_NO_DEPOSIT_EXACT_STATQUALITY()
+{
+	forage_no_deposit_exact_statquality	[&ITMF&You could detect the presence of raw materials, but they have a different class than the materials searched by your current prospecting action.]
+}
+
+FORAGE_NO_LOCAL_RM_EXACT_STATQUALITY()
+{
+	forage_no_local_rm_exact_statquality	[&ITMF&Some raw materials were detected here, but they have a different class than the materials searched by your current prospecting action. Some matching materials were detected near by, though.]
+}
+
+FORAGE_SITE_DEPLETED()
+{
+	forage_site_depleted	[&ITMF&Some raw materials used to be present here, but the place seems exhausted.]
+}
+
+FORAGE_DEPOSIT_DEPLETED()
+{
+	forage_deposit_depleted	[&ITMF&Some raw materials used to be present here, but all have been pulled out and the deposit is now empty for a while.]
+}
+
+FORAGE_CANT_ADD_SOURCE()
+{
+	forage_cant_add_source	[&ITMF&No more forage sources can be seen at the moment.]
+}
+
+FORAGE_KAMI_ANGER_WARNING()
+{
+	forage_kami_anger_warning	[&SYS&A Kami warns you: you steal the resources of this land. His anger is growing! Beware!]
+}
+
+FORAGE_KAMI_ANGER_PUNISH()
+{
+	forage_kami_anger_punish	[&SYS&A Kami tells you: I'm very angry! Take this!]
+}
+
+FORAGE_KAMI_OFFERING_NOT_ENOUGH_ITEMS()
+{
+	forage_kami_offering_not_enough_items	[&CHK&You don't have enough items to offer.]
+}
+
+FORAGE_KAMI_OFFERING_ITEM(item i)
+{
+	forage_kami_offering_item	[&SYS&You offer some $i$ to lower the kami anger.]
+}
+
+FORAGE_XP_PROSPECTION(int i)
+{
+	(i=0)
+		forage_xp_prospection_0		[&XP&This XP includes the prospecting.]
+	forage_xp_prospection_1		[&XP&This XP is for your useful prospecting.]
+}
+
+FORAGE_CARE_XP_NEEDS_TEAM()
+{
+	forage_care_xp_needs_team	[&XP&You must team with the extractor to earn XP from care actions.]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// these sentences are related to effects
+////////////////////////////////////////////////////////////////////////////////////
+
+/**
+ * DOT BLEED
+ */
+EFFECT_BLEED_BEGIN()
+{
+	effect_bleed_begin [&DG&Your wounds are bleeding massively.]
+}
+EFFECT_BLEED_BEGIN_ACTOR(entity e)
+{
+	effect_bleed_begin_actor [&SYS&$e.da$ $e$ wounds are bleeding massively.]
+}
+
+EFFECT_BLEED_LOSE_HP(int i)
+{
+	effect_bleed_lose_hp [&DG&You are bleeding and lose $i$ hit points.]
+}
+EFFECT_BLEED_LOSE_HP_ACTOR(entity e, int i)
+{
+	effect_bleed_lose_hp_actor [&SYS&$e.da$ $e$ is bleeding and loses $i$ hit points.]
+}
+EFFECT_BLEED_ENDED()
+{
+	effect_bleed_ended [&DG&You are no longer bleeding.]
+}
+EFFECT_BLEED_ENDED_ACTOR(entity e)
+{
+	effect_bleed_ended_actor [&SYS&$e.da$ $e$ is no longer bleeding.]
+}
+
+/**
+ * DOT POISON
+ */
+EFFECT_POISON_BEGIN()
+{
+	effect_poison_begin [&SPL&You are poisoned.]
+}
+EFFECT_POISON_BEGIN_CASTER(entity e)
+{
+	effect_poison_begin_caster [&SYS&$e.da$ $e$ is poisoned.]
+}
+EFFECT_POISON_LOSE_HP(int i)
+{
+	effect_poison_lose_hp [&DG&You lose $i$ hit points because of the poison flowing in your veins.]
+}
+EFFECT_POISON_LOSE_HP_CASTER(entity e, int i)
+{
+	effect_poison_lose_hp_caster [&SYS&$e.da$ $e$ is suffering poison effects and loses $i$ hit points.]
+}
+EFFECT_POISON_ENDS()
+{
+	effect_poison_ends [&SPL&You are no longer poisoned.]
+}
+EFFECT_POISON_ENDS_CASTER(entity e)
+{
+	effect_poison_ends_caster [&SYS&$e.da$ $e$ is no longer poisoned.]
+}
+
+/**
+ * STUN
+ */
+EFFECT_STUN_BEGIN_CREATOR(entity e)
+{
+	effect_stun_begin_actor	[&SPLM&You stun $e.da$ $e$.]
+}
+EFFECT_STUN_BEGIN_TARGET(entity e)
+{
+	effect_stun_begin_target	[&SPL&$e.da$ $e$ has stunned you.]
+}
+EFFECT_STUN_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_stun_begin_spectator	[&SYS&$actor.da$ $actor$ has stunned $target.da$ $target$.]
+}
+EFFECT_STUN_SELF_BEGIN_CREATOR()
+{
+	effect_stun_self_begin_actor	[&SPLM&You have stunned yourself.]
+}
+EFFECT_STUN_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_stun_self_begin_spectator_player_m	[&SYS&$p$ has stunned himself.]
+	(p.gender = female)
+		effect_stun_self_begin_spectator_player_f	[&SYS&$p$ has stunned herself.]
+}
+EFFECT_STUN_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_stun_self_begin_spectator_npc_m	[&SYS&$b.da$ $b$ has stunned himself.]
+	(b.gender = female)
+		effect_stun_self_begin_spectator_npc_f	[&SYS&$b.da$ $b$ has stunned herself.]
+}
+EFFECT_STUN_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_stun_self_begin_spectator_creature	[&SYS&$c.da$ $c$ has stunned itself.]
+}
+
+EFFECT_STUN_END_TARGET()
+{
+	effect_stun_end_target	[&SPL&You are no longer stunned.]
+}
+EFFECT_STUN_END_CREATOR(entity e)
+{
+	effect_stun_end_actor	[&SYS&$e.da$ $e$ is no longer stunned.]
+}
+EFFECT_STUN_END_SPECTATORS(entity e)
+{
+	effect_stun_end_spectator	[&SYS&$e.da$ $e$ is no longer stunned.]
+}
+
+/**
+ * SLOW MOVE
+ */
+EFFECT_SLOW_MOVE_BEGIN_CREATOR(entity e)
+{
+	effect_slow_move_begin_actor	[&SPLM&You have slowed $e.da$ $e$.]
+}
+EFFECT_SLOW_MOVE_BEGIN_TARGET(entity e)
+{
+	effect_slow_move_begin_target	[&SPL&$e.da$ $e$ has slowed you.]
+}
+EFFECT_SLOW_MOVE_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_slow_move_begin_spectator	[&SYS&$actor.da$ $actor$ has slowed $target.da$ $target$.]
+}
+
+EFFECT_SLOW_MOVE_END_CREATOR(entity e)
+{
+	effect_slow_move_end_actor	[&SYS&$e.da$ $e$ is no longer slowed.]
+}
+EFFECT_SLOW_MOVE_END_TARGET()
+{
+	effect_slow_move_end_target	[&SPL&You are no longer slowed.]
+}
+EFFECT_SLOW_MOVE_END_SPECTATORS(entity e)
+{
+	effect_slow_move_end_spectator	[&SYS&$e.da$ $e$ is no longer slowed.]
+}
+
+EFFECT_SLOW_MOVE_SELF_BEGIN_CREATOR()
+{
+	effect_slow_move_self_begin_creator	[&SPLM&Vous vous ralentissez vous même.]
+}
+EFFECT_SLOW_MOVE_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_slow_move_self_begin_spectator_player_m	[&SYS&$p$ s'est ralentit lui-même.]
+	(p.gender = female)
+		effect_slow_move_self_begin_spectator_player_f	[&SYS&$p$ s'est ralentit elle-même.]
+}
+EFFECT_SLOW_MOVE_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_slow_move_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ s'est ralentit lui-même.]
+	(b.gender = female)
+		effect_slow_move_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ s'est ralentit elle-même.]
+}
+EFFECT_SLOW_MOVE_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_slow_move_self_begin_spectators_creature	[&SYS&$c.da$ $c$ s'est ralentit lui-même.]
+}
+
+/**
+ * SLOW attacks (combat)
+ */
+EFFECT_SLOW_ATTACKS_BEGIN_CREATOR(entity e)
+{
+	effect_slow_attacks_begin_creator	[&SPLM&You have slowed $e.da$ $e$'s attacks.]
+}
+EFFECT_SLOW_ATTACKS_BEGIN_TARGET(entity e)
+{
+	effect_slow_attacks_begin_target	[&SPL&$e.da$ $e$ has slowed your attacks.]
+}
+EFFECT_SLOW_ATTACKS_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_slow_attacks_begin_spectators	[&SYS&$actor.da$ $actor$ has slowed $target.da$ $target$'s attacks.]
+}
+
+EFFECT_SLOW_ATTACKS_END_CREATOR(entity e)
+{
+	effect_slow_attacks_end_creator	[&SYS&$e.da$ $e$'s attacks are no longer slowed.]
+}
+EFFECT_SLOW_ATTACKS_END_TARGET()
+{
+	effect_slow_attacks_end_target	[&SPL&Your attacks are no longer slowed.]
+}
+EFFECT_SLOW_ATTACKS_END_SPECTATORS(entity e)
+{
+	effect_slow_attacks_end_spectators	[&SYS&$e.da$ $e$'s attacks are no longer slowed.]
+}
+
+EFFECT_SLOW_ATTACKS_SELF_BEGIN_CREATOR()
+{
+	effect_slow_attacks_self_begin_actor	[&SPLM&Vous ralentissez vos propres attaques.]
+}
+EFFECT_SLOW_ATTACKS_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_slow_attacks_self_begin_spectator_player_m	[&SYS&$p$ ralentit ses propres attaques.]
+	(p.gender = female)
+		effect_slow_attacks_self_begin_spectator_player_f	[&SYS&$p$ ralentit ses propres attaques.]
+}
+EFFECT_SLOW_ATTACKS_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_slow_attacks_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ ralentit ses propres attaques.]
+	(b.gender = female)
+		effect_slow_attacks_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ ralentit ses propres attaques.]
+}
+EFFECT_SLOW_ATTACKS_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_slow_attacks_self_begin_spectators_creature	[&SYS&$c.da$ $c$ ralentit ses propres attaques.]
+}
+
+/**
+ * Debuff combat skills
+ */
+EFFECT_DEBUFF_COMBAT_BEGIN_CREATOR(entity e)
+{
+	effect_debuff_combat_begin_creator	[&SYS&$e.da$ $e$ souffre maintenant d'un malus sur ses compétences de combat.]
+}
+EFFECT_DEBUFF_COMBAT_BEGIN_TARGET(entity e)
+{
+	effect_debuff_combat_begin_target	[&SPL&Vous souffrez maintenant d'un malus sur vos compétences de combat.]
+}
+EFFECT_DEBUFF_COMBAT_BEGIN_SPECTATORS(entity creator, entity target)
+{
+	effect_debuff_combat_begin_spectators	[&SYS&$target.da$ $target$ souffre maintenant d'un malus sur ses compétences de combat.]
+}
+
+EFFECT_DEBUFF_COMBAT_END_CREATOR(entity e)
+{
+	effect_debuff_combat_end_creator	[&SYS&$e.da$ $e$ ne souffre plus de malus sur ses compétences de combat.]
+}
+EFFECT_DEBUFF_COMBAT_END_TARGET()
+{
+	effect_debuff_combat_end_target		[&SPL&Vous n'avez plus de malus sur vos compétences de combat.]
+}
+EFFECT_DEBUFF_COMBAT_END_SPECTATORS(entity e)
+{
+	effect_debuff_combat_end_spectators	[&SYS&$e.da$ $e$ ne souffre plus de malus sur ses compétences de combat.]
+}
+
+EFFECT_DEBUFF_COMBAT_SELF_BEGIN_CREATOR()
+{
+	effect_debuff_combat_self_begin_actor	[&SPL&Vous souffrez maintenant d'un malus sur vos compétences de combat.]
+}
+EFFECT_DEBUFF_COMBAT_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_debuff_combat_self_begin_spectator_player_m	[&SYS&$p$ souffre maintenant d'un malus sur ses compétences de combat.]
+	(p.gender = female)
+		effect_debuff_combat_self_begin_spectator_player_f	[&SYS&$p$ souffre maintenant d'un malus sur ses compétences de combat.]
+}
+EFFECT_DEBUFF_COMBAT_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_debuff_combat_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ souffre maintenant d'un malus sur ses compétences de combat.]
+	(b.gender = female)
+		effect_debuff_combat_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ souffre maintenant d'un malus sur ses compétences de combat.]
+}
+EFFECT_DEBUFF_COMBAT_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_debuff_combat_self_begin_spectators_creature	[&SYS&$c.da$ $c$ souffre maintenant d'un malus sur ses compétences de combat.]
+}
+
+
+/**
+ * Debuff combat defense skills
+ */
+EFFECT_DEBUFF_DEFENSE_BEGIN_CREATOR(entity e)
+{
+	effect_debuff_defense_begin_creator	[&SYS&$e.da$ $e$ souffre maintenant d'un malus en défense.]
+}
+EFFECT_DEBUFF_DEFENSE_BEGIN_TARGET(entity e)
+{
+	effect_debuff_defense_begin_target	[&SPL&Vous souffrez maintenant d'un malus en défense.]
+}
+EFFECT_DEBUFF_DEFENSE_BEGIN_SPECTATORS(entity creator, entity target)
+{
+	effect_debuff_defense_begin_spectators	[&SYS&$target.da$ $target$ souffre maintenant d'un malus en défense.]
+}
+
+EFFECT_DEBUFF_DEFENSE_END_CREATOR(entity e)
+{
+	effect_debuff_defense_end_creator	[&SYS&$e.da$ $e$ ne souffre plus de malus en défense.]
+}
+EFFECT_DEBUFF_DEFENSE_END_TARGET()
+{
+	effect_debuff_defense_end_target		[&SPL&Vous n'avez plus de malus en défense.]
+}
+EFFECT_DEBUFF_DEFENSE_END_SPECTATORS(entity e)
+{
+	effect_debuff_defense_end_spectators	[&SYS&$e.da$ $e$ ne souffre plus de malus en défense.]
+}
+
+EFFECT_DEBUFF_DEFENSE_SELF_BEGIN_CREATOR()
+{
+	effect_debuff_defense_self_begin_actor	[&SPL&Vous souffrez maintenant d'un malus en défense.]
+}
+EFFECT_DEBUFF_DEFENSE_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_debuff_defense_self_begin_spectator_player_m	[&SYS&$p$ souffre maintenant d'un malus en défense.]
+	(p.gender = female)
+		effect_debuff_defense_self_begin_spectator_player_f	[&SYS&$p$ souffre maintenant d'un malus en défense.]
+}
+EFFECT_DEBUFF_DEFENSE_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_debuff_defense_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ souffre maintenant d'un malus en défense.]
+	(b.gender = female)
+		effect_debuff_defense_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ souffre maintenant d'un malus en défense.]
+}
+EFFECT_DEBUFF_DEFENSE_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_debuff_defense_self_begin_spectators_creature	[&SYS&$c.da$ $c$ souffre maintenant d'un malus en défense.]
+}
+
+/**
+ * Debuff dodge skill
+ */
+EFFECT_DEBUFF_DODGE_BEGIN_CREATOR(entity e)
+{
+	effect_debuff_dodge_begin_creator	[&SYS&$e.da$ $e$ souffre maintenant d'un malus en esquive.]
+}
+EFFECT_DEBUFF_DODGE_BEGIN_TARGET(entity e)
+{
+	effect_debuff_dodge_begin_target	[&SPL&Vous souffrez maintenant d'un malus en esquive.]
+}
+EFFECT_DEBUFF_DODGE_BEGIN_SPECTATORS(entity creator, entity target)
+{
+	effect_debuff_dodge_begin_spectators	[&SYS&$target.da$ $target$ souffre maintenant d'un malus en esquive.]
+}
+
+EFFECT_DEBUFF_DODGE_END_CREATOR(entity e)
+{
+	effect_debuff_dodge_end_creator		[&SYS&$e.da$ $e$ ne souffre plus de malus en esquive.]
+}
+EFFECT_DEBUFF_DODGE_END_TARGET()
+{
+	effect_debuff_dodge_end_target		[&SPL&Vous n'avez plus de malus en esquive.]
+}
+EFFECT_DEBUFF_DODGE_END_SPECTATORS(entity e)
+{
+	effect_debuff_dodge_end_spectators	[&SYS&$e.da$ $e$ ne souffre plus de malus en esquive.]
+}
+
+EFFECT_DEBUFF_DODGE_SELF_BEGIN_CREATOR()
+{
+	effect_debuff_dodge_self_begin_actor	[&SYS&Vous souffrez maintenant d'un malus en esquive.]
+}
+EFFECT_DEBUFF_DODGE_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_debuff_dodge_self_begin_spectator_player_m	[&SYS&$p$ souffre maintenant d'un malus en esquive.]
+	(p.gender = female)
+		effect_debuff_dodge_self_begin_spectator_player_f	[&SYS&$p$ souffre maintenant d'un malus en esquive.]
+}
+EFFECT_DEBUFF_DODGE_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_debuff_dodge_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ souffre maintenant d'un malus en esquive.]
+	(b.gender = female)
+		effect_debuff_dodge_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ souffre maintenant d'un malus en esquive.]
+}
+EFFECT_DEBUFF_DODGE_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_debuff_dodge_self_begin_spectators_creature	[&SYS&$c.da$ $c$ souffre maintenant d'un malus en esquive.]
+}
+
+/**
+ * FEAR
+ */
+EFFECT_FEAR_BEGIN_CREATOR(entity e)
+{
+	effect_fear_begin_creator	[&SYS&$e.da$ $e$ est paralysé par la peur et ne peut plus agir.]
+}
+EFFECT_FEAR_BEGIN_TARGET(entity e)
+{
+	effect_fear_begin_target	[&SPL&$e.da$ $e$ vous a terrorisé, vous ne pouvez plus agir.]
+}
+EFFECT_FEAR_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_fear_begin_spectators	[&SYS&$actor.da$ $actor$ terrorise $target.da$ $target$ qui ne peut plus attaquer.]
+}
+
+EFFECT_FEAR_END_CREATOR(entity e)
+{
+	effect_fear_end_creator	[&SYS&$e.da$ $e$ retrouve son sang froid et peut a nouveau agir.]
+}
+EFFECT_FEAR_END_TARGET()
+{
+	effect_fear_end_target	[&SPL&Vous retrouvez votre sang froid et pouvez a nouveau agir.]
+}
+EFFECT_FEAR_END_SPECTATORS(entity e)
+{
+	effect_fear_end_spectators	[&SYS&$e.da$ $e$ retrouve son sang froid et peut a nouveau agir.]
+}
+
+EFFECT_FEAR_SELF_BEGIN_CREATOR()
+{
+	effect_fear_self_begin_actor	[&SPL&Vous etes terrorisé et ne pouvez plus agir.]
+}
+EFFECT_FEAR_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_fear_self_begin_spectator_player_m	[&SYS&$p$ est terrorisé et ne peut plus agir.]
+	(p.gender = female)
+		effect_fear_self_begin_spectator_player_f	[&SYS&$p$ est terrorisé et ne peut plus agir.]
+}
+EFFECT_FEAR_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_fear_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ est terrorisé et ne peut plus agir.]
+	(b.gender = female)
+		effect_fear_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ est terrorisé et ne peut plus agir.]
+}
+EFFECT_FEAR_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_fear_self_begin_spectators_creature	[&SYS&$c.da$ $c$ est terrorisé et ne peut plus agir.]
+}
+
+/**
+ * MEZZ
+ */
+EFFECT_MEZZ_BEGIN_CREATOR(entity e)
+{
+	effect_mezz_begin_creator	[&SYS&$e.da$ $e$ is now mesmerized and cannot act or move.]
+}
+EFFECT_MEZZ_BEGIN_TARGET(entity e)
+{
+	effect_mezz_begin_target	[&SYS&$e.da$ $e$ has mesmerized you and you can no longer act or move.]
+}
+EFFECT_MEZZ_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_mezz_begin_spectators	[&SYS&$target.da$ $target$ has been mesmerized by $actor.da$ $actor$ and can no longer act or move.]
+}
+
+EFFECT_MEZZ_END_CREATOR(entity e)
+{
+	effect_mezz_end_creator	[&SYS&$e.da$ $e$ is no longer mesmerized.]
+}
+EFFECT_MEZZ_END_TARGET()
+{
+	effect_mezz_end_target	[&SPL&You are no longer mesmerized.]
+}
+EFFECT_MEZZ_END_SPECTATORS(entity e)
+{
+	effect_mezz_end_spectators	[&SYS&$e.da$ $e$ is no longer mesmerized.]
+}
+
+EFFECT_MEZZ_SELF_BEGIN_CREATOR()
+{
+	effect_mezz_self_begin_actor	[&SPLM&You mesmerized yourself and can no longer act or move.]
+}
+EFFECT_MEZZ_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_mezz_self_begin_spectator_player_m	[&SYS&$p$ mesmerized himself and can no longer act or move.]
+	(p.gender = female)
+		effect_mezz_self_begin_spectator_player_f	[&SYS&$p$ mesmerized herself and can no longer act or move.]
+}
+EFFECT_MEZZ_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_mezz_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ mesmerized himself and can no longer act or move.]
+	(b.gender = female)
+		effect_mezz_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ mesmerized herself and can no longer act or move.]
+}
+EFFECT_MEZZ_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_mezz_self_begin_spectators_creature	[&SYS&$c.da$ $c$ mesmerized itself and can no longer act or move.]
+}
+
+
+
+/**
+ * ROOT
+ */
+EFFECT_ROOT_BEGIN_CREATOR(entity e)
+{
+	effect_root_begin_creator	[&SYS&$e.da$ $e$ is now rooted and cannot move.]
+}
+EFFECT_ROOT_BEGIN_TARGET(entity e)
+{
+	effect_root_begin_target	[&SPL&$e.da$ $e$ has rooted you and you can no longer move.]
+}
+EFFECT_ROOT_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_root_begin_spectators	[&SYS&$target.da$ $target$ has been rooted by $actor.da$ $actor$ and can no longer move.]
+}
+
+EFFECT_ROOT_END_CREATOR(entity e)
+{
+	effect_root_end_creator	[&SYS&$e.da$ $e$ is no longer rooted.]
+}
+EFFECT_ROOT_END_TARGET()
+{
+	effect_root_end_target	[&SPL&You are no longer rooted.]
+}
+EFFECT_ROOT_END_SPECTATORS(entity e)
+{
+	effect_root_end_spectators	[&SYS&$e.da$ $e$ is no longer rooted.]
+}
+
+EFFECT_ROOT_SELF_BEGIN_CREATOR()
+{
+	effect_root_self_begin_actor	[&SPLM&You rooted yourself and can no longer move.]
+}
+EFFECT_ROOT_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_root_self_begin_spectator_player_m	[&SYS&$p$ rooted himself and can no longer move.]
+	(p.gender = female)
+		effect_root_self_begin_spectator_player_f	[&SYS&$p$ rooted herself and can no longer move.]
+}
+EFFECT_ROOT_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_root_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ rooted himself and can no longer move.]
+	(b.gender = female)
+		effect_root_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ rooted herself and can no longer move.]
+}
+EFFECT_ROOT_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_root_self_begin_spectators_creature	[&SYS&$c.da$ $c$ rooted itself and can no longer move.]
+}
+
+
+/**
+ * INVULNERABILITY
+ */
+EFFECT_INVULNERABILITY_BEGIN_CREATOR(entity e)
+{
+	effect_invulnerability_begin_creator	[&SYS&$e.da$ $e$ est invulnérable mais ne peut plus utiliser d'action.]
+}
+EFFECT_INVULNERABILITY_BEGIN_TARGET(entity e)
+{
+	effect_invulnerability_begin_target	[&SPLM&$e.da$ $e$ vous a rendu invulnérable mais vous ne pouvez plus utiliser d'action.]
+}
+EFFECT_INVULNERABILITY_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_invulnerability_begin_spectators	[&SYS&$actor.da$ $actor$ a rendu $target.da$ $target$ invulnérable qui ne peut plus utiliser d'action.]
+}
+
+EFFECT_INVULNERABILITY_END_CREATOR(entity e)
+{
+	effect_invulnerability_end_creator	[&SYS&$e.da$ $e$ n'est plus invulnérable et peut a nouveau agir.]
+}
+EFFECT_INVULNERABILITY_END_TARGET()
+{
+	effect_invulnerability_end_target	[&SPLM&Vous n'etes plus invulnérable et pouvez a nouveau agir.]
+}
+EFFECT_INVULNERABILITY_END_SPECTATORS(entity e)
+{
+	effect_invulnerability_end_spectators	[&SYS&$e.da$ $e$ n'est plus invulnérable et peut a nouveau agir.]
+}
+
+EFFECT_INVULNERABILITY_SELF_BEGIN_CREATOR()
+{
+	effect_invulnerability_self_begin_actor	[&SPLM&Vous etes invulnérable mais ne pouvez plus utiliser d'action.]
+}
+EFFECT_INVULNERABILITY_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_invulnerability_self_begin_spectator_player_m	[&SYS&$p$ est invulnérable mais ne peut plus utiliser d'action.]
+	(p.gender = female)
+		effect_invulnerability_self_begin_spectator_player_f	[&SYS&$p$ est invulnérable mais ne peut plus utiliser d'action.]
+}
+EFFECT_INVULNERABILITY_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_invulnerability_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ est invulnérable mais ne peut plus utiliser d'action.]
+	(b.gender = female)
+		effect_invulnerability_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ est invulnérable mais ne peut plus utiliser d'action.]
+}
+EFFECT_INVULNERABILITY_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_invulnerability_self_begin_spectators_creature	[&SYS&$c.da$ $c$ est invulnérable mais ne peut plus utiliser d'action.]
+}
+
+
+/**
+ * MADNESS
+ */
+EFFECT_MADNESS_BEGIN_CREATOR(entity e)
+{
+	effect_madness_begin_creator	[&SYS&$e.da$ $e$ est devenu fou et peut se prendre pour cible au lieu de son adversaire.]
+}
+EFFECT_MADNESS_BEGIN_TARGET(entity e)
+{
+	effect_madness_begin_target	[&SPL&$e.da$ $e$ vous a rendu fou. Vous pouvez maintenant vous prendre pour cible pour vos attaques ou vos sorts.]
+}
+EFFECT_MADNESS_BEGIN_SPECTATORS(entity actor, entity target)
+{
+	effect_madness_begin_spectators	[&SYS&$target.da$ $target$ a été rendu fou par $actor.da$ $actor$.]
+}
+
+EFFECT_MADNESS_END_CREATOR(entity e)
+{
+	effect_madness_end_creator	[&SYS&$e.da$ $e$ n'est plus atteint de folie.]
+}
+EFFECT_MADNESS_END_TARGET()
+{
+	effect_madness_end_target	[&SPL&Vous n'etes plus atteint de folie.]
+}
+EFFECT_MADNESS_END_SPECTATORS(entity e)
+{
+	effect_madness_end_spectators	[&SYS&$e.da$ $e$ n'est plus atteint de folie.]
+}
+
+EFFECT_MADNESS_SELF_BEGIN_CREATOR()
+{
+	effect_madness_self_begin_actor	[&SPL&Vous vous rendez fou.]
+}
+EFFECT_MADNESS_SELF_BEGIN_SPECTATORS_PLAYER(player p)
+{
+	(p.gender = male)
+		effect_madness_self_begin_spectator_player_m	[&SYS&$p$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lançant un sort.]
+	(p.gender = female)
+		effect_madness_self_begin_spectator_player_f	[&SYS&$p$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lançant un sort.]
+}
+EFFECT_MADNESS_SELF_BEGIN_SPECTATORS_NPC(bot b)
+{
+	(b.gender = male)
+		effect_root_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lançant un sort.]
+	(b.gender = female)
+		effect_root_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lançant un sort.]
+}
+EFFECT_MADNESS_SELF_BEGIN_SPECTATORS_CREATURE(creature c)
+{
+	effect_madness_self_begin_spectators_creature	[&SYS&$c.da$ $c$ s'est rendu fou et peut maintenant se prendre pour cible en attaquant ou lançant un sort.]
+}
+
+/**
+ * BLIND
+ */
+EFFECT_BLIND_BEGIN_CREATOR (entity e)
+{
+	(e.gender = male)
+		effect_blind_begin_creator_m	[&SYS&$e.da$ $e$ is blinded and now runs the risk of failing in his actions.]
+
+	(e.gender = female)
+		effect_blind_begin_creator_f	[&SYS&$e.da$ $e$ is blinded and now runs the risk of failing in her actions.]
+
+}
+
+EFFECT_BLIND_BEGIN_TARGET (entity e)
+{
+		effect_blind_begin_target	[&SPL&$e.da$ $e$ has blinded you, you now run the risk of failing in your actions.]
+
+}
+
+EFFECT_BLIND_BEGIN_SPECTATORS (entity actor, entity target)
+{
+	(actor.gender = male)
+		effect_blind_begin_spectators_m	[&SYS&$actor.da$ $actor$ has blinded $target.da$ $target$ who now runs the risk of failing in his actions.]
+
+	(actor.gender = female)
+		effect_blind_begin_spectators_f	[&SYS&$actor.da$ $actor$ has blinded $target.da$ $target$ who now runs the risk of failing in his actions.]
+
+}
+
+EFFECT_BLIND_END_CREATOR (entity e)
+{
+		effect_blind_end_creator	[&SYS&$e.da$ $e$ is no longer blinded.]
+
+}
+
+EFFECT_BLIND_END_TARGET ()
+{
+		effect_blind_end_target	[&SPL&You are no longer blinded.]
+
+}
+
+EFFECT_BLIND_END_SPECTATORS (entity e)
+{
+		effect_blind_end_spectators	[&SYS&$e.da$ $e$ is no longer blinded.]
+
+}
+
+EFFECT_BLIND_SELF_BEGIN_CREATOR ()
+{
+		effect_blind_self_begin_actor	[&SPLM&You have blinded yourself and stand a greater chance of failing in your actions.]
+
+}
+
+EFFECT_BLIND_SELF_BEGIN_SPECTATORS_PLAYER (player p)
+{
+	(p.gender = male)
+		effect_blind_self_begin_spectator_player_m	[&SYS&$p$ has blinded himself and stands a greater chance of failing in his actions.]
+
+	(p.gender = female)
+		effect_blind_self_begin_spectator_player_f	[&SYS&$p$ has blinded herself and stands a greater chance of failing in her actions.]
+
+}
+
+EFFECT_BLIND_SELF_BEGIN_SPECTATORS_NPC (bot b)
+{
+	(b.gender = male)
+		effect_blind_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ has blinded himself and stands a greater chance of failing in his actions.]
+
+	(b.gender = female)
+		effect_blind_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ has blinded herself and stands a greater chance of failing in her actions.]
+
+}
+
+EFFECT_BLIND_SELF_BEGIN_SPECTATORS_CREATURE (creature c)
+{
+		effect_blind_self_begin_spectators_creature	[&SYS&$c.da$ $c$ has blinded itself and stands a greater chance of failing in its actions.]
+
+}
+
+/**
+ * STINK/STENCH
+ */
+EFFECT_STENCH_BEGIN_CREATOR (entity e)
+{
+	(e.gender = male)
+		effect_stench_begin_creator_m	[&SYS&$e.da$ $e$ stinks so much that it makes most living beings sicks.]
+
+	(e.gender = female)
+		effect_stench_begin_creator_f	[&SYS&$e.da$ $e$ stinks so much that it makes most living beings sick.]
+
+}
+
+EFFECT_STENCH_BEGIN_TARGET (entity e)
+{
+		effect_stench_begin_target	[&SPL&$e.da$ $e$ makes you stinks horribly, nearby living beings can suffer from it.]
+
+}
+
+EFFECT_STENCH_BEGIN_SPECTATORS (entity actor, entity target)
+{
+	(actor.gender = male)
+		effect_stench_begin_spectators_m	[&SYS&$actor.da$ $actor$ makes $target.da$ $target$ stinks horribly, nearby living beings can suffer from it.]
+
+	(actor.gender = female)
+		effect_stench_begin_spectators_f	[&SYS&$actor.da$ $actor$ makes $target.da$ $target$ stinks horribly, nearby living beings can suffer from it.]
+
+}
+
+EFFECT_STENCH_END_CREATOR (entity e)
+{
+	effect_stench_end_creator	[&SYS&$e.da$ $e$ no longer stinks.]
+}
+
+EFFECT_STENCH_END_TARGET ()
+{
+	effect_stench_end_target	[&SPL&You no longer stink.]
+}
+
+EFFECT_STENCH_END_SPECTATORS (entity e)
+{
+	effect_stench_end_spectators	[&SYS&$e.da$ $e$ no longer stinks.]
+}
+
+EFFECT_STENCH_SELF_BEGIN_CREATOR ()
+{
+	effect_stench_self_begin_actor	[&SPLM&You make yourself stink and nearby living beings can suffer from it.]
+}
+
+EFFECT_STENCH_SELF_BEGIN_SPECTATORS_PLAYER (player p)
+{
+	(p.gender = male)
+		effect_stench_self_begin_spectator_player_m	[&SYS&$p$ has made himself stinks, nearby living beings can suffer from it.]
+
+	(p.gender = female)
+		effect_stench_self_begin_spectator_player_f	[&SYS&$p$ has made herself stinks, nearby living beings can suffer from it.]
+}
+
+EFFECT_STENCH_SELF_BEGIN_SPECTATORS_NPC (bot b)
+{
+	(b.gender = male)
+		effect_stench_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ has made himself stinks, nearby living beings can suffer from it.]
+
+	(b.gender = female)
+		effect_stench_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ has made herself stinks, nearby living beings can suffer from it.]
+}
+
+EFFECT_STENCH_SELF_BEGIN_SPECTATORS_CREATURE (creature c)
+{
+	effect_stench_self_begin_spectators_creature	[&SYS&$c.da$ $c$ has made itself stinks, nearby living beings can suffer from it.]
+}
+
+EFFECT_STENCH_LOSE_HP(entity e, int i)
+{
+	effect_stench_lose_hp [&SPL&$e.da$ $e$ stinks so much that you feel sick and lose $i$ hit points.]
+}
+EFFECT_STENCH_LOSE_HP_ACTOR(entity e, int i)
+{
+	effect_stench_lose_hp_actor [&SPL&You stink so much that $e.da$ $e$ feels sick and loses $i$ hit points.]
+}
+
+
+/**
+ * DoT effects
+ */
+EFFECT_DOT_BEGIN_CREATOR (entity e)
+{
+	(e.gender = male)
+		effect_dot_begin_creator_m	[&SYS& TODO.]
+	effect_dot_begin_creator_f	[&SYS& TODO.]
+}
+
+EFFECT_DOT_BEGIN_TARGET (entity e)
+{
+	effect_dot_begin_target	[&SYS& TODO.]
+}
+
+EFFECT_DOT_BEGIN_SPECTATORS (entity actor, entity target)
+{
+	(actor.gender = male)
+		effect_dot_begin_spectators_m	[&SYS&$actor.da$ $actor$ makes $target.da$ $target$ stinks horribly, nearby living beings can suffer from it.]
+	effect_dot_begin_spectators_f	[&SYS&$actor.da$ $actor$ makes $target.da$ $target$ stinks horribly, nearby living beings can suffer from it.]
+}
+
+EFFECT_DOT_END_CREATOR (entity e)
+{
+	effect_dot_end_creator	[&SYS&$e.da$ $e$ no longer stinks.]
+}
+
+EFFECT_DOT_END_TARGET ()
+{
+	effect_dot_end_target	[&SPL&You no longer stink.]
+}
+
+EFFECT_DOT_END_SPECTATORS (entity e)
+{
+	effect_dot_end_spectators	[&SYS&$e.da$ $e$ no longer stinks.]
+}
+
+EFFECT_DOT_SELF_BEGIN_CREATOR ()
+{
+	effect_dot_self_begin_actor	[&SPLM&You make yourself stink and nearby living beings can suffer from it.]
+}
+
+EFFECT_DOT_SELF_BEGIN_SPECTATORS_PLAYER (player p)
+{
+	(p.gender = male)
+		effect_dot_self_begin_spectator_player_m	[&SYS&$p$ has made himself stinks, nearby living beings can suffer from it.]
+	effect_dot_self_begin_spectator_player_f	[&SYS&$p$ has made herself stinks, nearby living beings can suffer from it.]
+}
+
+EFFECT_DOT_SELF_BEGIN_SPECTATORS_NPC (bot b)
+{
+	(b.gender = male)
+		effect_dot_self_begin_spectators_npc_m	[&SYS&$b.da$ $b$ has made himself stinks, nearby living beings can suffer from it.]
+	effect_dot_self_begin_spectators_npc_f	[&SYS&$b.da$ $b$ has made herself stinks, nearby living beings can suffer from it.]
+}
+
+EFFECT_DOT_SELF_BEGIN_SPECTATORS_CREATURE (creature c)
+{
+	effect_dot_self_begin_spectators_creature	[&SYS&$c.da$ $c$ has made itself stinks, nearby living beings can suffer from it.]
+}
+
+EFFECT_DOT_LOSE_HP(entity e, int i)
+{
+	effect_dot_lose_hp [&SPL&$e.da$ $e$ stinks so much that you feel sick and lose $i$ hit points.]
+}
+EFFECT_DOT_LOSE_HP_ACTOR(entity e, int i)
+{
+	effect_dot_lose_hp_actor [&SPL&You stink so much that $e.da$ $e$ feels sick and loses $i$ hit points.]
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// team related messages
+////////////////////////////////////////////////////////////////////////////////////
+
+TEAM_NEW_SUCCESSOR( player p)
+{
+	[&SYS&$p$ is the successor of the leader of your team.]
+}
+
+
+TEAM_ALREADY_IN_TEAM()
+{
+	team_already_in_team	[&CHK&You already belong to a team, leave your present team before joining another one.]
+}
+TEAM_GOD_FORBIDDEN()
+{
+	[&CHK&You or your target have unusual access right that forbid the formation of team.]
+}
+TEAM_CREATE()
+{
+	team_create	[&SYS&You have created a new team.]
+}
+TEAM_INVITE(player p)
+{
+	team_invite	[&AROUND&You offer $p$ to join your team.]
+}
+TEAM_PROPOSAL(player p)
+{
+	(p.gender = male)
+		team_proposal_m	[$p$ offers you to join his team.]
+	team_proposal_f	[$p$ offers you to join her team.]
+}
+TEAM_ACCEPT(player p)
+{
+	team_accept	[&AROUND&$p$ joins your team.]
+}
+TEAM_DECLINE(player p)
+{
+	team_decline	[&AROUND&$p$ declines your offer to join your team.]
+}
+TEAM_YOU_DECLINE(player p)
+{
+	team_you_decline	[&SYS&You refuse to join the team of $p$.]
+}
+TEAM_YOU_JOIN(player p)
+{
+	team_you_join	[&AROUND&You join the team of $p$.]
+}
+TEAM_YOU_LEAVE(player p)
+{
+	team_you_leave	[&AROUND&You left the team of $p$.]
+}
+TEAM_YOU_LEAVE_LEADER(player p)
+{
+	team_you_leave_leader	[&AROUND&You left your team, $p$ is the new leader.]
+}
+TEAM_YOU_LEAVE_DISOLVE(player p)
+{
+	team_you_leave_disolve	[&AROUND&You left your team and it has been disolved.]
+}
+TEAM_LEAVE(player p)
+{
+	team_leave	[&AROUND&$p$ left your team.]
+}
+TEAM_DISOLVED()
+{
+	team_disolved	[&SYS&Your were the last member of your team, so it has been disolved and you no longer belong to a team.]
+}
+TEAM_YOU_NEW_LEADER(player p)
+{
+	team_you_new_leader	[&SYS&You are now the team leader.]
+}
+TEAM_NEW_LEADER(player former, player new)
+{
+	team_new_leader		[&SYS&$new$ is now your team leader.]
+}
+TEAM_KICKED_YOU(player p)
+{
+	team_kicked_you	[&AROUND&You have been kicked out of the team of $p$.]
+}
+TEAM_KICKED(player p)
+{
+	team_kicked	[&AROUND&$p$ has been kicked out of your team.]
+}
+TEAM_PVP_ATTACKER_KICKED_YOU(player v)
+{
+	[&SYS& Vous avez attaqué $v$ de votre team, un enemie de votre faction. Vous ne pouvez pas rester dans cette team.]
+}
+TEAM_PVP_ATTACKER_KICKED(player a, player v)
+{
+	[&SYS& $a$ a attaqué $v$, un enemie de sa faction. $a$ ne peut pas rester dans la même team que $v$.]
+}
+TEAM_PVP_HELPER_KICKED_YOU(player v)
+{
+	[&SYS& Vous avez aidé $v$, un allié de votre faction qui n'est pas dans votre team, vous ne pouvez pas rester dans une team.]
+}
+TEAM_PVP_HELPER_KICKED(player a, player v)
+{
+	[&SYS& $a$ a aidé $v$, un allié de sa faction. $a$ ne peut pas rester dans une team.]
+}
+TEAM_MAX_SIZE_REACHED()
+{
+	team_max_size_reached	[&CHK&The team has reached its size limit and cannot accept anymore players.]
+}
+TEAM_NOT_A_PLAYER(entity e)
+{
+	team_not_a_player	[&CHK&$e.da$ $e$ isn't a player. Only players can be teammates.]
+}
+TEAM_ALREADY_HAS_TEAM(player p)
+{
+	team_already_has_team	[&CHK&$p$ already belongs to a team.]
+}
+TEAM_ALREADY_HAS_PROPOSAL(player p)
+{
+	team_already_has_proposal	[&CHK&$p$ is already answering an invitation.]
+}
+
+TEAM_INVITED_CHARACTER_MUST_BE_ONLINE()
+{
+	[&CHK&Invited character must be online.]
+}
+
+INVALID_TEAM_TARGET()
+{
+	[&CHK& Your target cant be invited in a team]
+}
+
+TEAM_ALREADY_INVITED()
+{
+	[&CHK& Your target is already being invited in a team]
+}
+
+TEAM_TARGET_ALREADY_IN_TEAM()
+{
+	[&CHK& Your target is already in a team]
+}
+TEAM_CANT_INVITE_ENEMIE()
+{
+	[&CHK& You can't invite an enemie in a team]
+}
+TEAM_CANT_INVITE()
+{
+	[&CHK& You must be team leader or not in a team to invite someone]
+}
+
+TEAM_KICKED_CHARACTER_MUST_BE_ONLINE()
+{
+	[&CHK&Character must be online.]
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// league related messages
+////////////////////////////////////////////////////////////////////////////////////
+
+LEAGUE_INVITOR_NOT_LEADER()
+{
+	[&CHK& You must be team leader to create or invite someone in your league]
+}
+INVALID_LEAGUE_TARGET()
+{
+	[&CHK& Your target cant be invited in a league]
+}
+LEAGUE_ALREADY_INVITED()
+{
+	[&CHK& Your target is already being invited in a league]
+}
+LEAGUE_ALREADY_IN_LEAGUE()
+{
+	[&CHK& Your target is already in a league]
+}
+LEAGUE_PROPOSAL(player p)
+{
+	(p.gender = male)
+		league_proposal_m	[$p$ offers you to join his league.]
+	league_proposal_f	[$p$ offers you to join her league.]
+}
+LEAGUE_INVITE(player p)
+{
+	legaue_invite	[&AROUND&You offer $p$ to join your league.]
+}
+LEAGUE_DECLINE(player p)
+{
+	league_decline	[&AROUND&$p$ declines your offer to join your league.]
+}
+LEAGUE_YOU_DECLINE(player p)
+{
+	league_you_decline	[&SYS&You refuse to join the league of $p$.]
+}
+TEAM_JOIN_LEAGUE()
+{
+	team_join_league	[&AROUND&You join a league.]
+}
+TEAM_QUIT_LEAGUE()
+{
+	team_quit_league	[&AROUND&You left the league.]
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// room related messages
+////////////////////////////////////////////////////////////////////////////////////
+
+ROOM_YOU_INVITE(player p)
+{
+	room_you_invite	[&AROUND&You invite $p$ into your room.]
+}
+ROOM_INVITED_BY(player p)
+{
+	(p.gender = male)
+		room_invited_by_m	[&AROUND&$p$ invites you into his room.]
+	room_invited_by_f	[&AROUND&$p$ invites you into her room.]
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// exchange related messages
+////////////////////////////////////////////////////////////////////////////////////
+
+EXCHANGE_MONEY_ERROR()
+{
+	[&SYS&Money was spent during this exchange. Please retry the operations.]
+}
+
+EXCHANGE_TITLE_PLAYER ( player p )
+{
+	[Exchange with $p$]
+}
+
+
+EXCHANGE_TITLE_BOT ( bot b )
+{
+	[Gift to $b$]
+}
+
+
+EXCHANGE_SEND_PROPOSAL(player p)
+{
+	exchange_send_proposal	[&SYS&You invite $p$ to exchange with you.]
+}
+
+EXCHANGE_INVITATION(player p)
+{
+	exchange_invitation	[$p$ invites you to exchange with him.]
+}
+
+EXCHANGE_ALREADY_TRADING()
+{
+	exchange_already_trading	[&CHK&You can't exchange with someone if you are already trading.]
+}
+EXCHANGE_BUSY(player p)
+{
+	exhange_busy	[&CHK&$p$ is already busy and cannot exchange with you.]
+}
+EXCHANGE_DECLINE(player p)
+{
+	exchange_decline	[&SYS&$p$ doesn't want to exchange with you.]
+}
+EXCHANGE_END(player p)
+{
+	exchange_end	[&SYS&$p$ ended exchange.]
+}
+EXCHANGE_ACCEPTED()
+{
+	exchange_accepted	[&ITM&Exchange accepted on both sides.]
+}
+EXCHANGE_TOO_FAR(player p)
+{
+	exchange_too_far	[&CHK&You are too far from $p$ to exchange something with him.]
+}
+EXCHANGE_ACCEPT_TOO_FAR(player p)
+{
+	exchange_accept_too_far	[&CHK&$p$ accepted the exchange but is too far from you.]
+}
+EXCHANGE_TEMP_INVENTORY_MUST_EMPTY()
+{
+	exchange_temp_inventory_must_empty[&CHK&You can't validate exchange if our temporary inventory are not empty!.]
+}
+TOO_ENCUMBERED_FOR_EXCHANGE()
+{
+	[&CHK&You are too encumbered for made this exchange.]
+}
+INTERLOCUTOR_TOO_ENCUMBERED_FOR_EXCHANGE(player p)
+{
+	[&CHK&Character $p$ are to encumbered for made this exchange.]
+}
+
+INVALID_EXCHANGE_IN_RING()
+{
+	[&CHK&ECHANGE REFUSE : Certains de ces items ne peuvent être échangé entre serveurs.]
+}
+
+EGS_ANSWER_WHERE (place c, place r, place p)
+{
+	egs_answer_where [&ZON&You are in the continent $c$ in the region $r$ in place $p$.]
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// zone management messages
+////////////////////////////////////////////////////////////////////////////////////
+EGS_ANSWER_WHERE_NO_PLACE (place c, place r)
+{
+	egs_answer_where_no_place [&ZON&You are in the continent $c$ in the region $r$.]
+}
+
+EGS_LEAVE_PLACE (place p)
+{
+	egs_leave_place  [&ZON&You have left $p$.]
+}
+
+EGS_LEAVE_NEUTRAL_REGION(place region_name)
+{
+	[&ZON&Vous quittez $region_name.da$ $region_name$. Vous sortez d'une région neutre.]
+}
+
+EGS_LEAVE_FACTION_REGION(place region_name, faction f)
+{
+	[&ZON&Vous quittez $region_name.da$ $region_name$. Vous sortez d'une région dominée par la faction $f$.]
+}
+
+EGS_LEAVE_CONTINENT (place p)
+{
+	egs_leave_continent  [&ZON&You have left $p$.]
+}
+
+EGS_ENTER_PLACE (place p)
+{
+	egs_enter_place  [&ZON&You have entered $p$.]
+}
+
+EGS_ENTER_NEUTRAL_REGION(place region_name)
+{
+	[&ZON&Vous êtes dans $region_name.da$ $region_name$. Cette région est neutre.]
+}
+
+EGS_ENTER_FACTION_REGION(place region_name, faction f)
+{
+	[&ZON&Vous êtes dans $region_name.da$ $region_name$. Cette région est dominée par la faction $f$.]
+}
+
+EGS_ENTER_CONTINENT (place p)
+{
+	egs_enter_continent  [&ZON&You have entered $p$.]
+}
+
+// Location place
+START_LOCATION( place cont, place region )
+{
+    start_location [&ZON&You are in the region of $region$ on the continent of $cont$.]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// Powers related messages
+////////////////////////////////////////////////////////////////////////////////////
+POWER_DISABLED(powertype p, int m, int s)
+{
+	(s > 0 & m > 0)
+		power_still_disabled_ms	[&CHKCB&Your "$p$" power is still disabled for $m$ minutes and $s$ seconds.]
+	(s = 0 & m > 0)
+		power_still_disabled_m	[&CHKCB&Your "$p$" power is still disabled for $m$ minutes.]
+	(s > 0 & m = 0)
+		power_still_disabled_s	[&CHKCB&Your "$p$" power is still disabled for $s$ seconds.]
+}
+
+
+POWER_TAUNT_LEVEL_TOO_HIGH(entity e)
+{
+	power_taunt_level_too_high	[&CHKCB&$e.da$ $e$ is too strong to be impressed by your action.]
+}
+POWER_TAUNT_TARGET_TOO_FAR(entity e)
+{
+	power_taunt_target_too_far	[&CHKCB&$e.da$ $e$ is too far away to be taunted by you.]
+}
+POWER_TAUNT_TARGET_NOT_ATTACKABLE()
+{
+	power_taunt_target_not_attackable	[&CHKCB&You can only taunt attackable creatures or npcs.]
+}
+
+POWER_TAUNT(entity e)
+{
+	power_taunt	[&SPLM&You taunt $e.da$ $e$.]
+}
+POWER_TAUNT_FAILED(entity e)
+{
+	power_taunt_failed	[&MISM&You failed to taunt $e.da$ $e$.]
+}
+
+POWER_AURA_ACTIVATE(powertype p)
+{
+	power_aura_activate	[&SPLM&Vous activez votre pouvoir "$p$".]
+}
+POWER_AURA_ACTIVATE_SPECTATORS(entity e, powertype p)
+{
+	power_aura_activate_spectators	[&SYS&$e.da$ $e$ active le pouvoir "$p$".]
+}
+
+POWER_USE_ON_TARGET(entity e, powertype p)
+{
+	power_use_on_target	[&SPLM&You use your power "$p$" on $e.da$ $e$.]
+}
+POWER_USE_ON_TARGET_FAILED(entity e, powertype p)
+{
+	power_use_on_target_failed	[&MISM&Your power "$p$" had no effect on $e.da$ $e$.]
+}
+POWER_USE_ON_TARGET_TARGET(entity user, powertype p)
+{
+	power_use_on_target_target	[&SYS&$user.da$ $user$ utilise le pouvoir "$p$" sur vous.]
+}
+POWER_USE_ON_TARGET_SPECTATORS(entity user, entity target, powertype p)
+{
+	power_use_on_target_spectators	[&SYS&$user.da$ $user$ utilise le pouvoir "$p$" sur $target.da$ $target$.]
+}
+
+POWER_USE(powertype p)
+{
+	power_use	[&SPLM&Vous utilisez le pouvoir "$p$".]
+}
+POWER_USE_SPECTATORS(entity e, powertype p)
+{
+	power_use_spectators	[&SYS&$e.da$ $e$ utilise le pouvoir "$p$".]
+}
+
+POWER_EFFECT_ENDS(powertype p)
+{
+	power_effect_ends	[&SPLM&The power "$p$" effects end.]
+}
+
+AURA_EFFECT_BEGIN(powertype p)
+{
+	aura_effect_begin	[&SPL&You begin to feel the effects of the $p$.]
+}
+AURA_EFFECT_END(powertype p)
+{
+	aura_effect_end		[&SPL&The $p$ effects have vanished.]
+}
+
+POWER_BALANCE_ACTOR ( powertype p, score s, int newVal )
+{
+	power_balance_actor [&SPLM&You use "$p$" power and affected members of your team now have $newVal$% of their max $s.points$.]
+}
+POWER_BALANCE_OTHERS ( entity e, powertype p,score s, int newVal )
+{
+	power_balance_others [&SYS&$e.da$ $e$ uses the power "$p$" and you now have $newVal$% of your $s.points$.]
+}
+
+POWER_BALANCE_NO_TEAM()
+{
+	power_balance_no_team	[&CHK&You must be in a team to use the Balance power.]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// Lifts related messages
+////////////////////////////////////////////////////////////////////////////////////
+
+LIFT_BOT_CRAFT (bot_name b)
+{
+	lift_bot_craft [$b$$$fct_guild_rm_craft$$]
+}
+
+LIFT_BOT_MAGIC (bot_name b)
+{
+	lift_bot_magic [$b$$$fct_guild_rm_magic$$]
+}
+
+LIFT_BOT_FIGHT (bot_name b)
+{
+	lift_bot_fight [$b$$$fct_guild_rm_fight$$]
+}
+
+LIFT_EXIT ()
+{
+	lift_exit [Exit$$exit$$]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// Magic related messages
+////////////////////////////////////////////////////////////////////////////////////
+EGS_MAGIC_LACK_HP ()
+{
+	egs_magic_lack_hp [&CHKCB&You do not have enough hit points to cast this spell.]
+}
+EGS_MAGIC_LACK_SAP ()
+{
+	egs_magic_lack_sap [&CHKCB&You do not have enough sap points to cast this spell.]
+}
+EGS_MAGIC_LACK_MONEY ()
+{
+	egs_magic_lack_money [&CHKCB&You do not have enough sap load/money/seeds to cast this spell.]
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// enchantment related messages
+////////////////////////////////////////////////////////////////////////////////////
+RIGHT_HAND_EMPTY ()
+{
+	right_hand_empty [&CHK&You must carry an item in your right hand to enchant it]
+}
+
+ITEM_IS_NOT_CRYSTALLIZED_ACTION (item i)
+{
+	item_is_not_crystallized_action [&CHK&item $i$ is not an action cristal]
+}
+
+CANT_FOUND_ITEM (int i)
+{
+	cant_found_item [&CHK&item in slot $i$ was not found.]
+}
+
+WEAPONS_ONLY_CAN_BEEN_ENCHANTED()
+{
+	weapons_only_can_been_enchanted [&CHK&Only weapons can be enchanted.]
+}
+
+ITEM_IS_NOW_ENCHANTED(item i)
+{
+	item_is_now_enchanted [&SPLM&You have enchanted item $i$.]
+}
+
+ITEM_IS_NOT_CRYSTALLIZED_SAPLOAD_RECHARGE(item i)
+{
+	item_is_not_crystallized_sapload_recharge [&CHK&Item $i$ is not a recharge cristal.]
+}
+
+WEAPONS_ONLY_CAN_BEEN_RECHARGED ()
+{
+	weapons_only_can_been_recharged [&CHK&Only weapons can be recharged.]
+}
+
+ITEM_IN_RIGHT_HAND_HAVE_NOT_EBOUGHT_SAP ()
+{
+	item_in_right_hand_have_not_ebought_sap [&CHK&The item in your right hand has not enough sap.]
+}
+CANT_BE_ENCHANTED ()
+{
+	[&CHK&This item cant be enchanted.]
+}
+
+
+ITEM_IS_RECHARGED (item it, int current, int max )
+{
+	item_is_recharged [&ITM&Item $it$ is now recharged. Sap load is $current$ on $max$.]
+}
+
+
+ABANDON_TEAM_MISSION_REFUSED()
+{
+	abandon_team_mission_refused [&CHK& only leaders can abandon a team mission.]
+}
+
+NO_ACTION_WHILE_EQUIPPING()
+{
+	[&CHK&you cannot use an action while equipping.]
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// guild related messages
+////////////////////////////////////////////////////////////////////////////////////
+
+GUILD_PLAYER_BAG_FULL ()
+{
+	[You cannot take this item from your guild : your bag is full]
+}
+
+
+GUILD_NAME_ALREADY_EXISTS ()
+{
+	[&CHK&This Name is already used. Please choose another One]
+}
+
+
+GUILD_NAME_BAD_SIZE()
+{
+	[&CHK&Guild names must have a length of at least three characters, and no more than fifty.]
+}
+
+GUILD_NAME_BAD_CHAR()
+{
+	[&CHK&Guild names must contains only alphabetic characters and blanks. Names cant start or end with a Blank.]
+}
+
+
+GUILD_DESC_BAD_SIZE()
+{
+	[&CHK&Guild descriptions length cant exceed two hundred characters]
+}
+
+GUILD_DESC_BAD_CHAR()
+{
+	[&CHK&Guild descriptions must contains only alphabetic characters and blanks. Descriptions cannot start or end with a Blank. A blank cannot follow another one]
+}
+
+
+GUILD_NAME_BAD_WORD()
+{
+	[&CHK&The name you chose contains forbidden words]
+}
+
+GUILD_DESCRIPTION_BAD_WORD()
+{
+	[&CHK&The description you chose contains forbidden words]
+}
+
+GUILD_INVITED_CHARACTER_MUST_BE_ONLINE()
+{
+	[&CHK&Invited character must be online.]
+}
+
+GUILD_INVITE_ONLY_LOCAL_GUILD()
+{
+	[&CHK&Vous ne pouvez pas inviter quelqu'un dans votre guilde si vous n'êtes pas sur le continent.]
+}
+
+GUILD_ALREADY_IN_A_GUILD()
+{
+	[&CHK&You are already in a guild.]
+}
+GUILD_INVALID_NAME ()
+{
+	[&CHK&Invalid guild name.]
+}
+GUILD_INVALID_DESCRIPTION ()
+{
+	[&CHK&Invalid guild description.]
+}
+GUILD_NOT_ENOUGH_MONEY (int m)
+{
+	[&CHK&You need $m$ seeds to create a guild.]
+}
+GUILD_CREATED ()
+{
+	[&AROUND&Vous avez réussi à créer une guilde.]
+}
+GUILD_DESTROYED()
+{
+	[&SYS& you were the last member of your guild. So it is destroyed.]
+}
+GUILD_BAD_SESSION ()
+{
+	[&CHK&Please retry this operation : guild parameters have just been modified by someone.]
+}
+GUILD_INSUFFICIENT_GRADE ()
+{
+	[&CHK&You dont have a sufficient grade in your guild.]
+}
+GUILD_SET_GRADE_OFFICER(player a, string_id b, string_id str)
+{
+	[&SYS&$a$ named $b$ officer of your guild $str$.]
+}
+GUILD_SET_GRADE_HIGHOFFICER(player a, string_id b, string_id str)
+{
+	[&SYS&$a$ named $b$ high officer of your guild $str$.]
+}
+GUILD_SET_GRADE_MEMBER(player a, string_id b, string_id str)
+{
+	[&SYS&$a$ degraded $b$ as member of your guild $str$.]
+}
+GUILD_SET_LEADER(player a, string_id b, string_id str)
+{
+	[&SYS&$a$ named $b$ leader of your guild $str$.]
+}
+GUILD_GRADE_FULL (string_id p)
+{
+	[&CHK&There are not enough members in your guild to change the grade of $p$ to the one you chose.]
+}
+GUILD_ALREADY_HAS_JOIN_PROPOSAL (player p)
+{
+	[&CHK&$p$ already has a guild join proposal.]
+}
+GUILD_ALREADY_MEMBER(player p)
+{
+	[&CHK&$p$ is already member of a guild.]
+}
+GUILD_JOIN_PROPOSAL (player p, string_id g)
+{
+	[$p$ invites you to join the guild $g$.]
+}
+GUILD_REFUSE_JOIN(player a)
+{
+	[&AROUND&$a$ refuse de rejoindre votre guilde.]
+}
+GUILD_YOU_JOIN(string_id str)
+{
+	[&AROUND&Vous rejoignez la guilde $str$.]
+}
+GUILD_JOIN(player a)
+{
+	[&AROUND&$a$ rejoint votre guilde.]
+}
+GUILD_NEW_LEADER(string_id a)
+{
+	[&SYS&$a$ is now the new leader of your guild.]
+}
+GUILD_KICK_MEMBER(player a, string_id b)
+{
+	[&AROUND&$a$ a chassé $b$ de votre guilde.]
+}
+GUILD_QUIT(player a)
+{
+	[&AROUND&$a$ a quitté votre guilde.]
+}
+GUILD_YOU_QUIT(string_id str)
+{
+	[&AROUND&Vous quittez la guilde $str$.]
+}
+GUILD_MAX_MEMBER_COUNT ( int i )
+{
+	[&CHK&Votre guilde a atteint le nombre maximum de membres ($i$).]
+}
+GUILD_MAX_MEMBER_COUNT_INVITE ( int i )
+{
+	[&CHK&Votre guilde a déjà atteint le nombre maximum de membres ($i$).]
+}
+GUILD_INCOMPATIBLE_ALLEGIANCE( player p, faction b)
+{
+	[&CHK&Le joueur $p$ a une allegeance $b$ incompatible avec les allegeances de votre guilde.]
+}
+
+GUILD_NOT_MEMBER ()
+{
+	[&SYS&You are not member of any guild.]
+}
+GUILD_USER_DELETED ( player a )
+{
+	[&SYS&$a$ was deleted by its player.]
+}
+GUILD_IS_PROXY()
+{
+	[&CHK&Vous ne pouvez executer cette action qu'à partir du teritoire du jeu, hors vous êtes dans une instance.]
+}
+
+
+
+
+SOLE_PLACE( place p )
+{
+        place_lonely_param[$p$]
+}
+
+SOLE_STRING_ID( string_id i )
+{
+	[$i$]
+}
+
+GUILD_ROOM( string_id i )
+{
+	[To Guild "$i$".]
+}
+
+PLAYER_ROOM( player p )
+{
+	[Apartment of "$p$".]
+}
+
+TELEPORT_NO_PET ()
+{
+	[&CHK&You must put all your animals in a stable before using this teleport.]
+}
+
+TELEPORT_BAD_SESSION ()
+{
+	[&CHK&The destinations of this teleporter have been updated. Please re-enter this teleport.]
+}
+
+GUILD_BUILDING_BAD_GRADE()
+{
+	[&CHK&Your guild grade is not sufficient to perform this action.]
+}
+
+GUILD_BUILDING_ALREADY_BOUGHT()
+{
+	[&CHK&Your guild already has a building.]
+}
+
+GUILD_RM_ALREADY_BOUGHT()
+{
+	[&CHK&Your guild already bought this rolemaster.]
+}
+
+GUILD_BUILDING_NEEDED()
+{
+	[&CHK&You need a guild building to perform this action.]
+}
+
+PLAYER_BUILDING_BAD_FAME( int i, race r )
+{
+	[&CHK&To buy a building here, you need a fame of $i$ toward the $r$ people .]
+}
+
+GUILD_BUILDING_BAD_FAME( int i, race r )
+{
+	[&CHK&To buy a building here, your guild need a fame of $i$ toward the $r$ people .]
+}
+GUILD_BUILDING_BAD_MONEY( int i )
+{
+	[&CHK&To buy a building here, you need $i$ seeds.]
+}
+
+
+CHARGE_BAD_GRADE ()
+{
+	[&CHK&You don't have a sufficient guild grade to perform this operation.]
+}
+
+CHARGE_END (dyn_string_id id)
+{
+	[&SYS&Your guild lose control of charge $id$.]
+}
+
+CHARGE_GOT (dyn_string_id id)
+{
+	[&SYS&Your guild was selected for the following charge : $id$.]
+}
+
+MAX_CHARGE_REACHED ()
+{
+	[&CHK&your guild has already applied for the maximum number of charges.]
+}
+
+GUILD_ITEM_CANT_BE_PUT()
+{
+	[&CHK&This item cannot be put in the guild inventory.]
+}
+
+GUILD_ITEM_BAD_SESSION()
+{
+	[&CHK&Someone is manipulating this item. Please retry.]
+}
+
+GUILD_ITEM_DONT_HAVE_RIGHTS()
+{
+	[&CHK&you are not allowed to perform that action]
+}
+
+
+GUILD_ITEM_MAX_BULK()
+{
+	[&CHK&The guild warehouse id full.]
+}
+
+
+CHARGE_APPLY(dyn_string_id str)
+{
+	[&SYS&  your guild applied for the charge "$str$".]
+}
+
+CANT_ACCESS_GUILD_INVENTORY()
+{
+	[&SYS&Vous devez être dans le bâtiment ou prêt d'un avant poste de votre guilde pour pouvoir accéder à son inventaire.]
+}
+
+// // Obsolete stuff
+//
+//GUILD_OUTPOST_VICTORY()
+//{
+//	[&SYS&Your guild won an outpost after a bloody war.]
+//}
+//
+//GUILD_OUTPOST_DEFEAT()
+//{
+//	[&SYS&Your guild was humiliated by a tribe and could not gain the aimed outpost!]
+//}
+//
+//GUILD_OUTPOST_PEACE_WON()
+//{
+//	[&SYS&Your guild successfully took control of an outpost!]
+//}
+//GUILD_DECLARE_WAR()
+//{
+//	[&SYS&Your guild declared war to the tribe owning the aimed outpost.]
+//}
+//GUILD_OUTPOST_CONTROL ()
+//{
+//	[&TSK&Your guild gained control of an outpost]
+//}
+//GUILD_OUTPOST_BUILDING ()
+//{
+//	[&ITM&Your guild gained an outpost building]
+//}
+
+OUTPOST_EVENT_Challenged()
+{
+	[&SYS&The outpost is challenged.]
+}
+OUTPOST_EVENT_OwnerVanished()
+{
+	[&SYS&The owner of the outpost has vanished.]
+}
+OUTPOST_EVENT_AttackerVanished()
+{
+	[&SYS&The attacker of the outpost has vanished.]
+}
+OUTPOST_EVENT_TimerEnd()
+{
+	[&SYS&The time is elapsed in the outpost.]
+}
+OUTPOST_EVENT_AttackerGiveUp()
+{
+	[&SYS&The attacker of the outpost gave up.]
+}
+OUTPOST_EVENT_OwnerGiveUp()
+{
+	[&SYS&The owner of the outpost gave up.]
+}
+OUTPOST_EVENT_AllSquadsKilled()
+{
+	[&SYS&All the squads of the outpost have been killed.]
+}
+
+OUTPOST_STATE_Peace()
+{
+	[&SYS&The outpost is now peaceful.]
+}
+OUTPOST_STATE_WarDeclaration()
+{
+	[&SYS&A conflict is now declared in the outpost.]
+}
+OUTPOST_STATE_Attack()
+{
+	[&SYS&The outpost is now sustaining an attack.]
+}
+OUTPOST_STATE_WarTransition()
+{
+	[&SYS&A counterattack will begin soon in the outpost...]
+}
+OUTPOST_STATE_CounterAttack()
+{
+	[&SYS&The outpost is now sustaining a counterattack.]
+}
+
+OUTPOST_OWNER(string_id str)
+{
+	[&SYS&$str$ owns the outpost now.]
+}
+
+OUTPOST_ATTACKER(string_id str)
+{
+	[&SYS&$str$ attacks the outpost now.]
+}
+
+NEED_MORE_GUILD_MONEY()
+{
+	[&CHK&Your guild does not have enough money.]
+}
+
+OUTPOST_CANT_PAY_SQUAD_WAGE(string_id str)
+{
+	[&CHK&$str$ n'a pas assez d'argent pour payer le salaire de l'escouade. Celle-ci quitte l'avant-poste !]
+}
+
+OUTPOST_CANT_FREE_LAST_SQUAD()
+{
+	[&CHK&Vous ne pouvez pas supprimer la dernière escouade sinon l'avant-poste sera perdu.]
+}
+
+GUILD_CHALLENGE_OUTPOST_ALREADY_ATTACKED()
+{
+	[&CHK&The outpost is already under attack.]
+}
+
+GUILD_GIVEUP_OUTPOST_ATTACK_NOT_ATTACKED()
+{
+	[&CHK&The outpost is not under attack.]
+}
+
+OUTPOST_SQUAD_RECRUITED()
+{
+	[&SYS&A new squad was recruited.]
+}
+
+OUTPOST_VERSION_NOT_SYNC()
+{
+	[&CHK&Votre action sur l'outpost a été rejetée car une autre action était en cours.]
+}
+
+OUTPOST_EDITING_CONCURRENCY_ISSUE(player p)
+{
+	[&CHK&$p$ est en train d'éditer l'avant-poste, réessayez dans un moment.]
+}
+
+OUTPOST_NO_MORE_IN_CONFLICT()
+{
+	[&SYS&Vous n'êtes plus engagé dans un conflit d'outpost.]
+}
+
+OUTPOST_IN_CONFLICT()
+{
+	[&SYS&Vous participez au conflit sur cet outpost.]
+}
+
+OUTPOST_CANT_PARTICIPATE()
+{
+	[&CHK&Vous êtes banni de cet outpost, vous ne pouvez pas participer au conflit en cours.]
+}
+
+OUTPOST_CANT_PARTICIPATE_ATTACK()
+{
+	[&CHK&Vous êtes banni de cet outpost, vous ne pouvez pas participer à l'attaque en cours.]
+}
+
+OUTPOST_CANT_PARTICIPATE_DEFENSE()
+{
+	[&CHK&Vous êtes banni de cet outpost, vous ne pouvez pas participer la defense de celui-ci.]
+}
+
+OUTPOST_PLAYER_BANISHED_ATTACK()
+{
+	[&SYS&Vous venez d'être banni de l'attack de cet outpost.]
+}
+
+OUTPOST_PLAYER_BANISHED_DEFENSE()
+{
+	[&SYS&Vous venez d'être banni de la defense de cet outpost.]
+}
+
+OUTPOST_GUILD_BANISHED_ATTACK()
+{
+	[&SYS&Votre guilde vient d'être banni de l'attaque de cet outpost.]
+}
+
+OUTPOST_GUILD_BANISHED_DEFENSE()
+{
+	[&SYS&Votre guilde vient d'être banni de la defense de cet outpost.]
+}
+
+OUTPOST_CANNOT_BUY_SQUADS_A(int n)
+{
+	[&CHK&$n$ escouades n'ont pas pu être achetées et ont été remplacées par des gratuites.]
+}
+
+OUTPOST_CANNOT_BUY_SQUADS_B()
+{
+	[&CHK&L'escouade n'a pas pu être achetée et a été remplacée par une gratuite.]
+}
+
+GUILD_GAIN_CHARGE_POINT (int points)
+{
+	[&SYS&Your guild gained $points$ charge points]
+}
+GUILD_XP_GAIN ()
+{
+	[&XP&Your guild gained experience points]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// item decay messages
+////////////////////////////////////////////////////////////////////////////////////
+ITEM_UNSPOILED(item item)
+{
+	[&ITMF&Your $item$ is unspoiled.]
+}
+ITEM_WORN_STATE_1(item item)
+{
+	[&ITMF&Your $item$ is slightly worned.]
+}
+ITEM_WORN_STATE_2(item item)
+{
+	[&ITMF&Your $item$ is moderately worned.]
+}
+ITEM_WORN_STATE_3(item item)
+{
+	[&ITMF&Your $item$ is heavily worned. You should start to think about replacing it.]
+}
+ITEM_WORN_STATE_4(item item)
+{
+	[&ITMF&Your $item$ is nearly completely worned. You should replace it as soon as possible.]
+}
+ITEM_WORNED(item item)
+{
+	[&ITMF&Your $item$ is now completely worned and you can no longer progress by using it. You should find a new one as soon as possible.]
+}
+ITEM_WORNED_DESTROYED(item item)
+{
+	[&ITMF&Your $item$ was so worned it has been destroyed.]
+}
+
+GMOTD (literal s)
+{
+	// Guilde Message Of The Day
+	[&MTD&Guild message of the day: $s$]
+}
+
+MOTD (literal s)
+{
+	// Message Of The Day
+	[&MTD&MOTD: $s$]
+}
+
+BROADCAST (literal s)
+{
+	// broadcast message
+	[&BC&$s$]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// generic system messages
+////////////////////////////////////////////////////////////////////////////////////
+CHARACTER_SAVED (player p)
+{
+	[&SYS&"$p$" has been saved.]
+}
+
+WHO_GM_INTRO()
+{
+	[&SYS&Afficher les CSRs en ligne : ]
+}
+
+WHO_INVISIBLE_GM_INTRO()
+{
+	[&SYS&Displaying invisible online gamemasters and guides :.]
+}
+
+WHO_SGM_LIST( player p )
+{
+	[&SYS&<senior GM>$p$.]
+}
+WHO_GM_LIST( player p )
+{
+	[&SYS&<GM>$p$.]
+}
+WHO_VG_LIST( player p )
+{
+	[&SYS&<veteran Guide>$p$.]
+}
+WHO_SG_LIST( player p )
+{
+	[&SYS&<senior Guide>$p$.]
+}
+WHO_G_LIST( player p )
+{
+	[&SYS&<Guide>$p$.]
+}
+
+WHO_REGION_INTRO(place pl)
+{
+	[&SYS&Displaying online characters in region "$pl$"]
+}
+
+WHO_REGION_LIST( player p )
+{
+	[&SYS&$p$.]
+}
+
+WHO_NO_ANSWER ()
+{
+	[&SYS&No character found.]
+}
+
+WHO_CHANNEL_NOT_FOUND ()
+{
+	[&SYS&Channel not found.]
+}
+
+WHO_CHANNEL_NOT_CONNECTED (literal name)
+{
+	[&SYS&You are not connected to channel "$name$".]
+}
+
+
+TELL_PLAYER_AFK( player p )
+{
+	[&SYS&$p$ is "away from keybord".]
+}
+
+TELL_PLAYER_UNKNOWN( literal name )
+{
+	[&SYS&$name$ is unknown or not online. Your message cannot be delivered.]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// compass related messages
+////////////////////////////////////////////////////////////////////////////////////
+NEW_COMPASS ()
+{
+	new_compass [&SYS&New target added to the compass.]
+}
+
+COMPASS_BOT (bot b)
+{
+	[$b$]
+}
+COMPASS_PLACE (place p)
+{
+	[$p$]
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+// CSR related messages
+////////////////////////////////////////////////////////////////////////////////////
+CSR_BAD_TARGET ()
+{
+	[&CHK&<CSR COMMAND ERROR> Invalid command target.]
+}
+
+CSR_PENDING_CHARACTER_LOG ()
+{
+	[&SYS&<CSR COMMAND PENDING> Target not found, your command are fowarded to pending system for later execution when your target are login.]
+}
+
+CSR_NOT_SUMMONED ()
+{
+	[&CHK&<CSR COMMAND ERROR> command target was not previously summoned.]
+}
+
+CSR_NAME_EXISTS ()
+{
+	[&CHK&<CSR COMMAND ERROR> new name already attributed. Please try another one.]
+}
+
+CSR_BAD_GUILD ()
+{
+	[&CHK&<CSR COMMAND ERROR> Invalid guild.]
+}
+
+CSR_NOT_ATTACKABLE ()
+{
+	[&CHK&<CSR COMMAND ERROR> Cant kill non attackable bot.]
+}
+
+CSR_ROOT_ENDS ()
+{
+	[&SPL&The root effect placed on you by a GM has vanished.]
+}
+
+CSR_ALREADY_ROOTED ( player p )
+{
+	[&CHK&<CSR COMMAND ERROR>$p$ is already rooted by a GM command.]
+}
+CSR_ROOT_OK( player p )
+{
+	[&SYS&$p$ is now rooted.]
+}
+CSR_IS_ROOTED_BY( player p )
+{
+	[&SPL&$p$ has rooted you through a gamemaster power.]
+}
+
+CSR_UNROOT_OK( player p )
+{
+	[&SYS&$p$ was successfully unrooted.]
+}
+CSR_IS_UNROOTED_BY( player p )
+{
+	[&SPL&$p$ has successfully unrooted you.]
+}
+CSR_NOT_ROOTED( player p )
+{
+	[&CHK&<CSR COMMAND ERROR>$p$ is not rooted.]
+}
+
+CSR_HAS_MISSION ()
+{
+	[&CHK&<CSR COMMAND ERROR>Cant monitor another player mission if you have a mission.]
+}
+
+CSR_BAD_MISSION ()
+{
+	[&CHK&<CSR COMMAND ERROR>The chosen mission is invalid.]
+}
+
+CSR_BAD_RIGHTS()
+{
+	[&CHK&<CSR COMMAND ERROR>You dont have the right to affect this player.]
+}
+
+CSR_BAD_NAME()
+{
+	[&CHK&<CSR COMMAND ERROR>The name you are trying to assign to this player is invalid or is already taken.]
+}
+
+CSR_UNKNOWN_PLAYER (literal p)
+{
+	[&CHK&<CSR COMMAND ERROR> Unknown player: $p$.]
+}
+
+CSR_OFFLINE_PLAYER (literal p)
+{
+	[&CHK&<CSR COMMAND ERROR> $p$ is offline.]
+}
+
+CSR_GUILD_NOT_MEMBER (literal p, string_id guild)
+{
+	[&CHK&<CSR COMMAND ERROR> $p$ is not a member of the guild '$guild$'.]
+}
+
+CSR_GUILD_UNKNOWN_GRADE ()
+{
+	[&CHK&<CSR COMMAND ERROR> Unknown grade.]
+}
+
+CSR_GUILD_ALREADY_HAS_GRADE (literal p)
+{
+	[&CHK&<CSR COMMAND ERROR> $p$ already has this grade.]
+}
+
+CSR_GUILD_MAX_GRADE_COUNT (int i)
+{
+	[&CHK&<CSR COMMAND ERROR> Maximum count for this grade ($i$) has been reached.]
+}
+
+CSR_GUILD_ALREADY_MEMBER (player p)
+{
+	[&CHK&<CSR COMMAND ERROR> $p$ already is member of a guild.]
+}
+
+CSR_GUILD_NEW_GRADE (literal p, literal grade)
+{
+	[&SPL&$p$ now has grade $grade$.]
+}
+
+CSR_GUILD_NEW_MEMBER (player p, string_id guild)
+{
+	[&SPL&$p$ now is a member of guild '$guild$'.]
+}
+
+CSR_GUILD_MEMBER_LIST (literal p, literal grade)
+{
+	[&SYS&<CSR> $p$: $grade$.]
+}
+
+CSR_START_EVENT (literal e)
+{
+	[&SYS&<CSR> event '$e$' has been started.]
+}
+
+CSR_STOP_EVENT (literal e)
+{
+	[&SYS&<CSR> event '$e$' has been stoped.]
+}
+
+CSR_CLEAR_EVENT_FACTION (player p)
+{
+	[&SYS&<CSR> $p$ now has no event faction.]
+}
+
+CSR_GET_EVENT_FACTION (player p, event_faction ef)
+{
+	[&SYS&<CSR> $p$ is in event faction '$ef$'.]
+}
+
+CSR_UNKNOWN_RESPAWN_POINT ()
+{
+	[&CHK&<CSR> Unknown respawn point.]
+}
+
+CSR_MUTE_OK(player p)
+{
+	[&SYS&Vous avez rendu muet le joueur $p$.]
+}
+
+CSR_IS_MUTED_BY(player p)
+{
+	[&SYS&CSR $p$ vous a rendu muet.]
+}
+
+CSR_UNMUTE_OK(player p)
+{
+	[&SYS&Vous avez rendu la parole au joueur $p$.]
+}
+
+CSR_IS_UNMUTED_BY(player p)
+{
+	[&SYS&CSR $p$ vous a rendu la parole.]
+}
+
+CSR_NOT_MUTED(player p)
+{
+	[&SYS&Le joueur $p$ n'est pas muet, vous ne pouvez donc pas lui rendre la parole.]
+}
+
+CSR_MUTE_ENDS()
+{
+	[&SYS&Vous n'êtes plus muet.]
+}
+
+CSR_UNIVERSE_MUTE_OK(player p)
+{
+	[&SYS&Vous avez rendu muet le joueur $p$ sur le channel universe.]
+}
+
+CSR_IS_UNIVERSE_MUTED_BY(player p)
+{
+	[&SYS&CSR $p$ vous a rendu muet sur le channel universe.]
+}
+
+CSR_UNIVERSE_UNMUTE_OK(player p)
+{
+	[&SYS&Vous avez rendu la parole au joueur $p$ sur le channel universe.]
+}
+
+CSR_IS_UNIVERSE_UNMUTED_BY(player p)
+{
+	[&SYS&CSR $p$ vous a rendu la parole sur le channel universe.]
+}
+
+CSR_NOT_UNIVERSE_MUTED(player p)
+{
+	[&SYS&Le joueur $p$ n'est pas muet sur le channel universe, vous ne pouvez donc pas lui rendre la parole.]
+}
+
+CSR_UNIVERSE_MUTE_ENDS()
+{
+	[&SYS&Vous n'êtes plus muet sur le channel universe.]
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// PVP
+////////////////////////////////////////////////////////////////////////////////////
+
+PVP_CHALLENGE_DISABLED()
+{
+	[&CHK&PvP challenge has been disabled.]
+}
+
+PVP_DUEL_DISABLED()
+{
+	[&CHK&PvP duel has been disabled.]
+}
+
+CHALLENGE_YOU_AGGRO()
+{
+	[&CHK&You cant propose any challenge if you are attacked by a creature.]
+}
+
+CHALLENGE_TEAM_AGGRO(player p)
+{
+	[&CHK&You cant propose any challenge because $p$, your team mate is under attack by a creature.]
+}
+
+CHALLENGE_OTHER_TEAM_AGGRO()
+{
+	[&CHK&You cant propose any challenge because a member of the opponent team is under attack by a creature.]
+}
+
+CHALLENGE_TARGET_AGGRO(player p)
+{
+	[&CHK&You cant challenge $p$, because this player is under attack by a creature.]
+}
+
+
+CHALLENGE_LOST()
+{
+	[&CHK&You lose the challenge.]
+}
+
+CHALLENGE_WON()
+{
+	[&CHK&You won the challenge.]
+}
+CHALLENGE_ACCEPTED( player p )
+{
+	[&CHK&$p$and you are now in a PVP challenge.]
+}
+
+CHALLENGE_STARTS()
+{
+	[&CHK&You are now in a challenge versus other players. You will be teleported back when the challenge is over.]
+}
+
+CHALLENGE_YOU_ABANDON( player p )
+{
+	[&CHK&$p$ abandonned the challenge.]
+}
+
+CHALLENGE_HE_ABANDON( player p )
+{
+	[&CHK&$p$ abandonned the challenge.]
+}
+
+CHALLENGE_ABANDON_NOT_LEADER()
+{
+	[&CHK&You must be team leader to abandon the challenge.]
+}
+
+CHALLENGE_SAME_TEAM( player p )
+{
+	[&CHK&$p$ is your teammate, you cant challenge him.]
+}
+
+PVP_CHALLENGE_INVITATION( player p )
+{
+	[$p$ and his team challenges you and your team.]
+}
+
+DUEL_YOU_ALREADY_IN_PVP(player p)
+{
+	[&CHK& You cant fight $p$ as you are already engaged against other players.]
+}
+
+CHALLENGE_TEAM_MEMBER_ALREADY_IN_PVP(player p)
+{
+	[&CHK& $p$, your teammate, is already engaged in combat against other players.]
+}
+
+DUEL_TARGET_ALREADY_IN_PVP(player p)
+{
+	[&CHK& You cant fight $p$ as this player is already engaged against other players.]
+}
+
+DUEL_TARGET_TEAM_ALREADY_IN_PVP (player p)
+{
+	[&CHK& You cant start a challenge because $p$, a member of the opponent team is already in combat against other players.]
+}
+
+DUEL_FORBIDDEN_PLACE()
+{
+	[&CHK& Vous ne pouvez pas vous battre ici.]
+}
+
+DUEL_YOU_CANCEL_INVITATION(player p)
+{
+	[&SYS&By proposing a duel, you have canceled the duel proposed to $p$.]
+}
+
+DUEL_CANCEL_INVITATION(player p)
+{
+	[&SYS&$p$ cancel his duel proposition.]
+}
+
+DUEL_ALREADY_INVITED(player p)
+{
+	[&CHK&you are already invited to duel.]
+}
+
+DUEL_TARGET_ALREADY_INVITED(player p)
+{
+	[&CHK&$p$ is already invited to duel by someone else.]
+}
+
+DUEL_ACCEPTED(player p)
+{
+	[&SYS&you are now in duel with $p$.]
+}
+
+DUEL_REFUSE_INVITATION (player p)
+{
+	[&SYS&$p$ refuses your duel.]
+}
+
+DUEL_INVITATION(player p)
+{
+	[$p$ invites you to duel. Do you accept?]
+}
+
+DUEL_DISCONNECT ()
+{
+	[&SYS&Your duel opponant has disconnected.]
+}
+
+DUEL_LOST ()
+{
+	[&SYS&Your have lost the duel.]
+}
+DUEL_WON()
+{
+	[&SYS&Your have won a duel.]
+}
+
+DUEL_YOU_TELEPORT()
+{
+	[&SYS&Your have lost your duel because you have teleported yourself.]
+}
+DUEL_TELEPORT()
+{
+	[&SYS&Your have won a duel because your opponant has teleported himself.]
+}
+
+DUEL_YOU_ENTER_PVP_ZONE()
+{
+	[&SYS&Your have lost your duel because you have entered a PVP zone.]
+}
+
+DUEL_ENTER_PVP_ZONE()
+{
+	[&SYS&Your have won your duel because your opponant has entered a PVP zone.]
+}
+
+DUEL_YOU_ABANDON()
+{
+	[&SYS&Your have abandonned your duel.]
+}
+
+DUEL_ABANDON()
+{
+	[&SYS&Your have won the duel because your opponant has abandonned.]
+}
+
+DUEL_INVITATION_EXPIRE()
+{
+	[&SYS&L'invitation au duel a expiré.]
+}
+
+PVP_FREE_ZONE_ENTER()
+{
+	[&CHK&You are now in a Free PVP Zone : no rules there.. be careful!]
+}
+
+PVP_VERSUS_ZONE_ENTER()
+{
+	[&CHK&You are now in a Versus PVP Zone : your clan is determined by your factions.]
+}
+
+PVP_GUILD_ZONE_ENTER()
+{
+	[&CHK&You are now in a Guild PVP Zone : there guilds can confront each other.]
+}
+
+PVP_ZONE_CANNOT_ENTER()
+{
+	[&CHK&You cannot fight in this PVP Zone : you are in another PVP mode.]
+}
+
+PVP_ZONE_ENTER_TIME(int time)
+{
+	[&CHK&You will be attackable in $time$ seconds.]
+}
+
+PVP_ZONE_ENTER_TIME_REPEAT(int time)
+{
+	[&PVPTM&You will be attackable in $time$ seconds.]
+}
+
+PVP_ZONE_ENTER_TIMEOUT()
+{
+	[&CHK&Now you are attackable , be careful.]
+}
+
+PVP_ZONE_LEAVE_TIME(int time)
+{
+	[&CHK&You left the PVP Zone. You are still attackable for $time$ seconds.]
+}
+
+PVP_ZONE_LEAVE_TIME_REPEAT(int time)
+{
+	[&PVPTM&You are still attackable for $time$ seconds.]
+}
+
+PVP_ZONE_LEAVE_TIMEOUT()
+{
+	[&CHK&Now you are safe.]
+}
+
+PVP_ZONE_ENTER_BACK()
+{
+	[&CHK&You are back in the PVP Zone.]
+}
+
+PVP_ZONE_LEAVE_BEFORE_TIMEOUT()
+{
+	[&CHK&You left the PVP Zone before timeout. Now you are safe.]
+}
+
+PVP_SAFE_ZONE()
+{
+	[&CHK&Vous tes dans une zone protg du pvp, tant que vous y restez ou que vous n'initiez pas d'action pvp si vous la quitez, vous restez proteg.]
+}
+
+PVP_CANT_HELP_ENEMY()
+{
+	[&CHKCB&Vous ne pouvez pas aider un enemie.]
+}
+
+PVP_CANT_HELP_NEUTRAL_PVP()
+{
+	[&CHKCB&Vous ne pouvez pas aider un personnage joueur qui est impliqué dans un conflit PVP qui ne vous concerne pas.]
+}
+
+PVP_CANT_HELP_UNKNOWN()
+{
+	[&CHKCB&Vous ne pouvez pas aider cette entité.]
+}
+
+PVP_CANT_ATTACK_ALLY()
+{
+	[&CHKCB&Vous ne pouvez pas attaquer votre allié.]
+}
+
+PVP_CANT_ATTACK_NEUTRAL()
+{
+	[&CHKCB&Vous ne pouvez pas attaquer un personnage neutre.]
+}
+
+PVP_TP_FORBIDEN()
+{
+	[&CHK&Vous ne pouvez pas vous teleporter alors que vous avez été impliqué dans des actions de PVP faction recement.]
+}
+
+PVP_TP_ENEMY_REGION_FORBIDEN()
+{
+	[&CHK&Vous ne pouvez pas vous teleporter dans une region controlée par une faction enemie.]
+}
+
+CHARACTER_MADE_THE_FINAL_BLOW(player p)
+{
+	[Vous avez porté le coup fatal au personnage joueur $p$.]
+}
+
+RANGESTATE1 ()
+{
+     rangestate1   [Good range weapon, have a look.]
+}
+
+RANGESTATE2 ()
+{
+     rangestate2   [Don't want a sword ? Come check our goods!]
+}
+
+RANGESTATE3 ()
+{
+     rangestate3   [Ammo and gun, arrow and bow, feel free to check.]
+}
+
+RANGESTATE4 ()
+{
+     rangestate4   [Best gun of Natae, get a look!]
+}
+
+RANGESTATE5 ()
+{
+     rangestate5   [New pistolarc and bowgun!]
+}
+
+RANGESTATE6 ()
+{
+     rangestate6   [Best launcher on market, get yours now!]
+}
+
+RANGESTATE7 ()
+{
+     rangestate7   [Large variety of range weapon, feel free to check.]
+}
+
+MELEESTATE1 ()
+{
+     meleestate1   [You have a hand ? Come buy a sword. Best quality on market!]
+}
+
+MELEESTATE2 ()
+{
+     meleestate2   [Need a new mace ? We got what you want.]
+}
+
+MELEESTATE3 ()
+{
+     meleestate3   [Get a weapon, get a sword. Best prices!]
+}
+
+MELEESTATE4 ()
+{
+     meleestate4   [Axe and two hand sword at best price.]
+}
+
+MELEESTATE5 ()
+{
+     meleestate5   [Staff and dagger nice quality. Be sure to check!]
+}
+
+MELEESTATE6 ()
+{
+     meleestate6   [Lance, sword, mace, only best weapon at low price.]
+}
+
+
+EGS_TRADE_BAD_FAME( bot b )
+{
+	// I have included a bot in this phrase cause it is a bot chat ( variation according the bot race and so on,...)
+	[I dont want to trade with you because your réputation is too bad.]
+}
+
+FAME_GAIN_CHAR (faction faction, int propagation_type)
+{
+	(propagation_type = 0)
+		fame_gain_char		[You gain fame with $faction.da$ $faction$]
+	(propagation_type = 1)
+		fame_gain_char_ally	[You gain fame with their allies $faction.da$ $faction$]
+	(propagation_type = 2)
+		fame_gain_char_enemy	[You gain fame with their enemies $faction.da$ $faction$]
+}
+
+FAME_LOST_CHAR (faction faction, int propagation_type)
+{
+	(propagation_type = 0)
+		fame_lost_char		[You lost fame with $faction.da$ $faction$]
+	(propagation_type = 1)
+		fame_lost_char_ally	[You lost fame with their allies $faction.da$ $faction$]
+	(propagation_type = 2)
+		fame_lost_char_enemy	[You lost fame with their enemies $faction.da$ $faction$]
+}
+
+FAME_GAIN_GUILD (faction faction, int propagation_type)
+{
+	(propagation_type = 0)
+		fame_gain_guild		[Your guild gain fame with $faction.da$ $faction$]
+	(propagation_type = 1)
+		fame_gain_guild_ally	[Your guild gain fame with their allies $faction.da$ $faction$]
+	(propagation_type = 2)
+		fame_gain_guild_enemy	[Your guild gain fame with their enemies $faction.da$ $faction$]
+}
+
+FAME_LOST_GUILD (faction faction, int propagation_type)
+{
+	(propagation_type = 0)
+		fame_lost_guild		[Your guild lost fame with $faction.da$ $faction$]
+	(propagation_type = 1)
+		fame_lost_guild_ally	[Your guild lost fame with their allies $faction.da$ $faction$]
+	(propagation_type = 2)
+		fame_lost_guild_enemy	[Your guild lost fame with their enemies $faction.da$ $faction$]
+}
+
+FAME_LOW_WARNING_FOR_ALLIANCE(faction faction)
+{
+	[&CHK&Your fame is almost too low for membership with the $faction.member$.  You may be removed if your fame continues to drop.]
+}
+
+FAME_TOO_LOW_FOR_ALLEGIANCE(faction faction)
+{
+	[&SYS&The $faction.member$ no longer accept you due to your low fame.]
+}
+
+FAME_CULT_NOT_GOOD_FOR_GUILD()
+{
+	[&CHK&Vous ne pouvez pas vous declarer d'un cult en contradiction avec l'allegeance de votre guilde.]
+}
+
+FAME_CIV_NOT_GOOD_FOR_GUILD()
+{
+	[&CHK&Vous ne pouvez pas vous declarer d'une civilisation en contradiction avec l'allegeance de votre guilde.]
+}
+
+PVP_FLAG_ALREADY_IN_THIS_MODE( int i )
+{
+	(i = 0)
+		[&CHK&Vous avez déjà désactivé votre tag pvp.]
+	(i != 0)
+		[&CHK&Vous avez déjà activé votre tag pvp.]
+}
+
+PVP_FLAG_WAIT_FOR_TIMER( int i )
+{
+	(i = 0)
+		[&CHK&Vous avez déjà demandé à desactiver votre tag pvp, vous devez attendre la fin du timer pour que ce soit effectif.]
+	(i != 0)
+		[&CHK&Vous avez déjà demandé à activer votre tag pvp, vous devez attendre la fin du timer pour que ce soit effectif.]
+}
+
+PVP_TAG_PVP_NEED_ALLEGIANCE()
+{
+	[&CHK&Vous ne pouvez pas activer le mode PVP sans avoir au moins une renommée supérieure ou égale à 25 ou inférieure ou égale a -25.]
+}
+
+PVP_FLAG_RESET_TAG_MINIMAL_TIME( time totalTimer, time timerLeft )
+{
+	[&CHK&Vous ne pouvez pas enlever votre tag PvP car il à été activé il y a moins de $totalTimer$ secondes. Il vous reste $timerLeft$ secondes avant de pouvoir enlever votre tag.]
+}
+
+PVP_FLAG_RESET_NEED_NO_RECENT_PVP_ACTION( time totalTimer, time timerLeft )
+{
+	[&CHK&Vous ne pouvez pas enlever votre tag PvP car vous avez fait un action PvP de faction il y a moins de $totalTimer$ secondes. Il vous reste $timerLeft$ secondes avant de pouvoir enlever votre tag.]
+}
+
+
+PVP_SPIRE_START_BUILDING(place region_name, faction f, int m, int s)
+{
+	(s != 0)
+		[&ZON&Une spire $f$ apparaîtra dans $region_name.da$ $region_name$ dans $m$ minutes $s$ secondes.]
+	(s = 0)
+		[&ZON&Une spire $f$ apparaîtra dans $region_name.da$ $region_name$ dans $m$ minutes.]
+}
+
+PVP_SPIRE_BUILD_FINISHED(place region_name, faction f, int audience)
+{
+	(audience = 0) //channel system & plein ecrant
+		[&ZON&Une spire $f$ est apparue dans $region_name.da$ $region_name$. Désormais la faction $f$ domine $region_name.da$ $region_name$ et a recruté des gardiens pour veiller sur sa spire.]
+	(audience = 1) //channel faction
+		[&SYS&Une spire $f$ est apparue dans $region_name.da$ $region_name$. Désormais la faction $f$ domine $region_name.da$ $region_name$ et a recruté des gardiens pour veiller sur sa spire.]
+}
+
+PVP_SPIRE_DESTROYED(place region_name, faction f, int audience)
+{
+	(audience = 0) //channel system & plein ecrant
+		[&ZON&Une spire $f$ a été détruite dans $region_name.da$ $region_name$. Désormais la faction $f$ ne domine plus $region_name.da$ $region_name$.]
+	(audience = 1) // channel faction
+		[&SYS&Une spire $f$ a été détruite dans $region_name.da$ $region_name$. Désormais la faction $f$ ne domine plus $region_name.da$ $region_name$.]
+}
+
+PVP_SPIRE_REBUILD_DELAY(int m, int s)
+{
+	(m > 0)
+		[&CHK&Une nouvelle spire ne peut être invoquée sur ce socle par votre faction avant $m$ minutes $s$ seconds.]
+	(m = 0)
+		[&CHK&Une nouvelle spire ne peut être invoquée sur ce socle par votre faction avant $s$ secondes.]
+}
+
+PVP_SPIRE_SPEND_FACTION_POINT(int q)
+{
+	[&SYS&Vous sacrifiez $q$ points de faction pour invoquer une spire.]
+}
+
+PVP_SPIRE_FACTION_POINT(int q)
+{
+	[&XP&Vous avez détruit une spire ennemie ! Vous gagnez $q$ points de faction.]
+}
+
+PVP_SPIRE_ATTACKED(place region_name, faction faction)
+{
+	[&SYS&La spire $faction$ dans $region_name.da$ $region_name$ est attaquée !.]
+}
+
+
+FACTION_KAMI()
+{
+	[Faction Kami]
+}
+
+FACTION_KARAVAN()
+{
+	[Faction Karavan]
+}
+
+FACTION_FYROS()
+{
+	[Faction Fyros]
+}
+
+FACTION_MATIS()
+{
+	[Faction Matis]
+}
+
+FACTION_TRYKER()
+{
+	[Faction Tryker]
+}
+
+FACTION_ZORAI()
+{
+	[Faction Zorai]
+}
+
+FACTION_HOMINISTS()
+{
+	[Tenant]
+}
+
+FACTION_MARAUDERS()
+{
+	[Marauder]
+}
+FACTION_RANGER()
+{
+	[Ranger]
+}
+
+FACTION_AGNOS()
+{
+	[Antithe]
+}
+
+FACTION_URASIES()
+{
+	[Gnost]
+}
+
+// harvest messages
+WOS_HARVEST_FOUND_NOTHING ()
+{
+	[&CHK&You found nothing.]
+}
+
+WOS_HARVEST_SEARCHING ()
+{
+	[&SYS&Looking for resources ...]
+}
+
+WOS_HARVEST_FOUND_MP ()
+{
+	[&SYS&You found resources.]
+}
+
+WOS_HARVEST_FOUND_MP_S (item i)
+{
+	[&ITM&You found $i$.]
+}
+
+WOS_HARVEST_FAILED ()
+{
+	[&CHK&You failed to take the ressources you were trying to harvest.]
+}
+
+// Mission message
+
+REQ_LEADER_TO_ABANDON_MISSION ()
+{
+	[&CHK& You must be the leader of your team to abandon or finish a team mission.]
+}
+
+ABANDON_GROUP_MISSION ()
+{
+	[&SYS& The leader of your team has abandoned a team mission.]
+}
+
+MISSION_MAX_SOLO_REACHED ()
+{
+	[&CHK&You have already picked the maximum number of solo missions]
+}
+
+MISSION_MAX_GROUP_REACHED ()
+{
+	[&CHK&You have already picked the maximum number of group missions]
+}
+
+EGS_MISSION_SUCCESS ()
+{
+	[&TSK&You have completed a mission]
+}
+
+EGS_MISSION_STEP_SUCCESS ()
+{
+	[&TSK&You have finished a mission step]
+}
+
+EGS_TASK_ENCYCLO_SUCCESS ()
+{
+	[&TSK&Task successfull.Check your encyclopedia.]
+}
+
+EGS_UNLOCK_ENCYCLO ()
+{
+	[&TSK&Thema unlocked.Check your encyclopedia.]
+}
+
+EGS_MAGIC_TARGET_OUT_OF_RANGE ()
+{
+	[&CHKCB&Your target is out of range for your spell.]
+}
+
+EGS_MAGIC_BAD_TARGET ()
+{
+	[&CHKCB&Target missing or invalid.]
+}
+
+UNEFFICENT_RANGE ()
+{
+	[&SYS&Vous êtes trop loin pour toucher efficacement cette cible.]
+}
+
+OPS_TEAM_MAX_SIZE_REACHED ()
+{
+	[&CHK&The team has reached its size limit and cannot accept anymore players.]
+}
+
+EGS_ACTOR_VAMPIRISE_EI (entity target, int vampirise)
+{
+	[&SPLM&You vampirise $vampirise$ from $target$]
+}
+
+EGS_CANT_SELL_ANYTHING ()
+{
+	[&SYS&I have nothing of interest for you to buy, sorry but come back later.]
+}
+
+EGS_CANT_CONSTRUCT_ANYTHING ()
+{
+	[&CHK&Vous ne pouvez plus rien construire.]
+}
+
+OPS_WELCOME ()
+{
+	[&AROUND&Welcome to Ryzom !]
+}
+
+EGS_ITEM_ALREADY_BEING_LOOTED_E (entity e)
+{
+	[&CHK&This bag is already being looted by $e$.]
+}
+
+EGS_ALREADY_HAVE_MOUNT ()
+{
+	[&CHK&You can only have one mektoub mount.]
+}
+
+EGS_CANT_BUY_ANOTHER_PACKER ()
+{
+	[&CHK&You can't buy another mektoub packer.]
+}
+
+PACK_ANIMAL_INVENTORY_MUST_BE_EMPTY ()
+{
+	[&CHK&You can't exchange an animal with something in his bag.]
+}
+
+ANIMAL_INTERLOCUTOR_HAVE_MAX()
+{
+	[&CHK&Votre interlocuteur a trop d'animaux pour que vous puissiez lui en donner d'autres.]
+}
+
+ANIMAL_PLAYER_HAVE_MAX()
+{
+	[&CHK&Vous avez trop d'animaux pour que vous puissiez en accepter d'autres.]
+}
+
+ANIMAL_MOUNTED()
+{
+	[&CHK&Vous ne pouvez pas échanger un animal sur lequel vous êtes monté.]
+}
+
+ANIMAL_INVENTORY_INACCESSIBLE(int number)
+{
+	[&SYS&Votre animal #$number$ est trop loin pour que vous puissiez acceder à son inventaire.]
+}
+
+ANIMAL_DEAD (int number)
+{
+	[&SYS&Votre animal #$number$ vient de mourir, vous avez trois jours pour recupérer les items qui sont dans son inventaire avant qu'il ne disparaisse par pourrissement.]
+}
+
+ANIMAL_DISEAPER (int number)
+{
+	[&SYS&Votre animal #$number$ à disparu car cela fait trois jour qu'il est mort, tout ce qu'il contenait encore dans son inventaire à disparu avec lui.]
+}
+
+
+EGS_LOOT_MONEY (money m)
+{
+	[&ITM&You loot $m$ dappers.]
+}
+
+EGS_USE_LAST_AMMO ()
+{
+	[&CHKCB&You have used your last ammo.]
+}
+
+OPS_NOT_ENOUGHT_SEED ()
+{
+	[&CHK&You are not rich enough to buy this.]
+}
+
+EGS_NOT_ENOUGHT_SP ()
+{
+	[&CHK&You do not have enough skill points to buy this.]
+}
+
+OPS_PACT_GAIN_U (int i)
+{
+	[&SYS&You have won a survival pact of level $i$.]
+}
+
+OPS_EXCHANGE_IMPOSSIBLE ()
+{
+	[&CHK&You can't invite someone to exchange if you are already trading]
+}
+
+// death messages
+OPS_DEATH_KAMI_RESURECT ()
+{
+	[&SYS&The Kamis honor the pact:  Sap flows through you once again as you resuscitate.]
+}
+
+OPS_DEATH_CARAVAN_RESURECT ()
+{
+	[&SYS&The Karavan works its craft and you exist once more.]
+}
+
+OPS_DEATH_PERMANENT_KILLED ()
+{
+	[&CHK&You no longer have a valid resurrection pact. You return to the humus from which you first emerged.]
+}
+
+INVALID_TARGET()
+{
+	[&CHK&Invalid Target.]
+}
+
+EGS_PVP_NOT_ALLOWED ()
+{
+	[&CHKCB&You connat use offensive action against this player character.]
+}
+
+BS_TARGET_NOT_ATTACKABLE ()
+{
+	[&CHKCB&You cannot use offensive action against your current target.]
+}
+
+MAGIC_CANNOT_CAST_ON_PVP ()
+{
+	[&CHKCB&You cannot cast this spell on an opponent.]
+}
+
+EGS_NOT_ENOUGH_AMMO ()
+{
+	[&CHKCB&This strategy needs more ammunition.]
+}
+
+BS_NO_AMMO ()
+{
+	[&CHKCB&This weapon needs ammo.]
+}
+
+COMBAT_TARGET_DEAD ()
+{
+	[&CHKCB&You cannot attack a corpse.]
+}
+
+BS_TARGET_TOO_FAR_OR ()
+{
+	[&CHKCB&Your target is too far away or you are not facing it.]
+}
+
+BS_TARGET_TOO_FAR ()
+{
+	[&CHKCB&Your target is too far away.]
+}
+
+EGS_TOO_EXPENSIVE_STAMINA ()
+{
+	[&CHKCB&You do not have enough stamina for this action.]
+}
+
+EGS_TOO_EXPENSIVE_HP ()
+{
+	[&CHKCB&You do not have enough hp to pay this action cost.]
+}
+
+EGS_TOO_EXPENSIVE_FOCUS ()
+{
+	[&CHKCB&You do not have enough focus to pay this action cost.]
+}
+
+BS_ITEM_INCOMPATIBLE ()
+{
+	[&CHKCB&This formula or action phrase is incompatible with the item in your hand.]
+}
+
+EGS_OPENING_SUCCESS ()
+{
+	[&SPLM&You successfully take the opening.]
+}
+
+EGS_FORAGE_INTERRUPTED ()
+{
+	[&CHK&Your foraging action has been interrupted.]
+}
+
+EGS_QUARTER_INTERRUPTED ()
+{
+	[&CHK&Your quartering action has been interrupted.]
+}
+
+EGS_ACTOR_CASTING_INTERUPT ()
+{
+	[&MISM&The incantation of your spell is broken.]
+}
+
+EGS_HARVEST_CORPSE_TOO_FAR ()
+{
+	[&CHK&The corpse you are trying to skin is too far away, get closer.]
+}
+
+EGS_CANNOT_ATTACK_IN_WATER ()
+{
+	[&CHKCB&You cannot attack while you are near water.]
+}
+
+OPS_HARVEST_MP_IN_PROGRESS_E (entity entity)
+{
+	[&CHK&You are already harvesting raw material on $entity$.]
+}
+
+MIS_FAME_GAIN (faction faction)
+{
+	[&TSK&You gain fame with $faction.da$ $faction$]
+}
+
+
+NO_ACTION_WHILE_PVP()
+{
+	no_action_while_pvp	[&CHK&You cannot use actions if you have recently been involved in PvP actions.]
+}
+NO_ACTION_WHILE_SWIMMING()
+{
+	no_action_while_swimming	[&CHK&You cannot use actions while you are near water.]
+}
+
+NO_ACTION_WHEN_SITTING()
+{
+	no_action_when_sitting	[&CHK&You cannot use actions when sitting.]
+}
+
+NO_ACTION_WHILE_INTANGIBLE()
+{
+	no_action_while_intangible	[&CHK&You cannot use actions while you are intangible.]
+}
+
+NO_ACTION_WHILE_MOUNTED()
+{
+	no_action_while_mounted		[&CHK&You cannot use actions while you are mounted.]
+}
+
+NO_ACTION_WHILE_TRANSACTION()
+{
+	no_action_while_transaction	[&CHK&You cannot use actions while you have a bot chat or a transaction in progress.]
+}
+
+MAGIC_CAN_ONLY_CAST_ON_PLAYERS()
+{
+	magic_can_only_cast_on_players	[&CHKCB&You can only use this spell on other players.]
+}
+
+KILLED_BY_GOO()
+{
+	[&CHKCB&You have been killed by GOO !.]
+}
+
+SUFFER_GOO_DAMAGE()
+{
+	[&CHKCB&You suffer GOO damage!.]
+}
+
+DISCONNECT_CANCELED()
+{
+	[&CHK&Disconnection canceled.]
+}
+
+OPERATION_OFFLINE()
+{
+	[&CHK&That character is offline.]
+}
+
+OPERATION_NOTEXIST()
+{
+	[&CHK&That character does not exist.]
+}
+
+NON_DROPABLE_ITEM()
+{
+	[&CHK&You cannot drop this item.]
+}
+
+CRAFT_NEED_CRAFTING_TOOL()
+{
+	[&CHK&You need appropriate tool to craft this item.]
+}
+
+
+EGS_COSMETIC_SAME_HAIR_COLOR()
+{
+	[&CHK&You cannot buy this hair color : this is your current one.]
+}
+
+EGS_COSMETIC_SAME_HAIR()
+{
+	[&CHK&You cannot buy this hair cut : this is your current one.]
+}
+
+EGS_COSMETIC_SAME_TATOO()
+{
+	[&CHK&You cannot buy this tatoo : this is your current one.]
+}
+
+TRADE_FAME_TOO_LOW(bot b)
+{
+	[&CHK&$b$ refuses to trade with you because of your bad reputation.]
+}
+
+ALREADY_TELEPORTING()
+{
+	[&CHK&You are already using a teleport ticket.]
+}
+
+TP_FORBIDEN_IN_RING_INSTANCE()
+{
+	[&CHK&Vous ne pouvez pas utiliser un ticket de TP pendant une aventure Ring ou une session d'edition Ring.]
+}
+
+ANIMAL_HUNGRY()
+{
+	[&CHK&Your mektoub is hungry, and can't run any longer.]
+}
+
+ANIMAL_HAS_EATEN()
+{
+	[&ITM&Your mektoub has eaten some food from his inventory, and can now run.]
+}
+
+ANIMAL_FOLLOW_TOO_FAR()
+{
+	[&CHK&Your following mektoub is too far from you and can't follow you any longer.]
+}
+
+MISSION_PREREQ_TEAM()
+{
+	[Vous devez être membre d'une équipe.]
+}
+
+MISSION_PREREQ_TEAM_LEADER()
+{
+	[Vous devez être le chef de votre équipe.]
+}
+
+MISSION_PREREQ_TEAM_SIZE(int n)
+{
+	[Votre équipe doit comporter au moins $n$ membres.]
+}
+
+MISSION_PREREQ_NEED_ITEM_BAG(item item)
+{
+	[Vous devez posséder $item.ia$ $item$ dans votre sac.]
+}
+
+MISSION_PREREQ_NEED_ITEM_WORN(item item)
+{
+	[Vous devez être équipé avec $item.ia$ $item$.]
+}
+
+MISSION_PREREQ_SKILL_LEVEL(skill skill, int min, int max)
+{
+ (max >= 250)
+	[Votre niveau dans la compétence '$skill$' doit être supérieur à $min$.]
+ (min = 0)
+	[Votre niveau dans la compétence '$skill$' doit être inférieur à $max$.]
+
+    [Votre niveau dans la compétence '$skill$' doit être supérieur à $min$ et inférieur à $max$.]
+}
+
+MISSION_PREREQ_EVENT_FACTION (event_faction ef)
+{
+	[Your must be in event faction '$ef$'.]
+}
+
+MISSION_PREREQ_FAME_FACTION (faction f, int level)
+{
+	[Votre réputation auprès de la faction "$f$" doit être au moins égale à $level$.]
+}
+
+MISSION_PREREQ_KAMI ()
+{
+	[Votre réputation auprès des Kamis doit être supérieure à votre réputation auprès de la Karavan.]
+}
+
+MISSION_PREREQ_KARAVAN ()
+{
+	[Votre réputation auprès de la Karavan doit être supérieure à votre réputation auprès des Kamis.]
+}
+
+MISSION_PREREQ_SEASON_SPRING()
+{
+	[Cette mission n'est disponible qu'au printemps.]
+}
+MISSION_PREREQ_SEASON_SUMMER()
+{
+	[Cette mission n'est disponible qu'en été.]
+}
+MISSION_PREREQ_SEASON_AUTUMN()
+{
+	[Cette mission n'est disponible qu'en automne.]
+}
+MISSION_PREREQ_SEASON_WINTER()
+{
+	[Cette mission n'est disponible qu'en hiver.]
+}
+
+MISSION_PREREQ_ACTION(sbrick s)
+{
+	[Cette mission nécessite que vous connaissiez la stanza "$s$".]
+}
+
+MISSION_PREREQ_MISSION_DONE (dyn_string_id str)
+{
+	[Cette mission nécessite la réussite de la mission '$str$'.]
+}
+
+MISSION_PREREQ_MISSION_RUNNING (dyn_string_id str)
+{
+	[Cette mission nécessite la prise de la mission '$str$'.]
+}
+
+MISSION_PREREQ_MISSION_NOTDONE (dyn_string_id str)
+{
+	[Cette mission nécessite que la mission '$str$' ne soit pas accomplie.]
+}
+
+MISSION_PREREQ_MISSION_NOTRUNNING (dyn_string_id str)
+{
+	[Cette mission nécessite que la mission '$str$' ne soit pas en cours.]
+}
+
+MISSION_PREREQ_CAN_NO_LONGER_TAKE ()
+{
+	[Vous ne pouvez plus prendre cette mission.]
+}
+
+MISSION_PREREQ_TIMER (int days, int h, int m)
+{
+	(days > 0 )
+		mission_prereq_timer_dhm [Cette mission sera disponible dans $days$ jours, $h$ heures et $m$ minutes.]
+	(days = 0 & h > 0 )
+		mission_prereq_timer_hm	[Cette mission sera disponible dans $h$ heures et $m$ minutes.]
+
+	mission_prereq_timer_m	[Cette mission sera disponible dans $m$ minutes.]
+}
+
+MISSION_PREREQ_ALREADY_DONE()
+{
+	[Cette mission ne peut être prise qu'une seule fois.]
+}
+
+MISSION_PREREQ_MONO()
+{
+	[Cette mission ne peut être prise pour le moment, revenez plus tard.]
+}
+
+MISSION_PREREQ_ENCYCLO_ALL_DONE (dyn_string_id thema, dyn_string_id album)
+{
+	[Toutes les tâches rituelles relatives au thème "$thema$" dans l'album "$album$" doivent avoir été réussies.]
+}
+
+MISSION_PREREQ_TITLE (title title)
+{
+	[Vous devez afficher le titre "$title$".]
+}
+
+MISSION_ENTER_CRITITAL_PART_TIMEOUT(dyn_string_id str)
+{
+	[Vous n'avez pas répondu assez vite, vous etes maintenant en mode sommeil pour la mission $str$.]
+}
+
+MISSION_QUEUE_WAIT(int nbWaiters, int onlineWaiters, int days, int hours, int m)
+{
+	(nbWaiters = 0 & days > 0)
+		[Vous etes en tête de la file d'attente pour cette mission. Temps d'attende estimé : $days$ jours $hours$ heures et $m$ minutes.]
+	(nbWaiters = 0 & hours > 0)
+		[Vous etes en tête de la file d'attente pour cette mission. Temps d'attende estimé : $hours$ heures et $m$ minutes.]
+	(nbWaiters = 0)
+		[Vous etes en tête de la file d'attente pour cette mission. Temps d'attende estimé : $m$ minutes.]
+
+	(days>0)
+		[Il y a devant vous $nbWaiters$ personnes (dont $onlineWaiters$ online) dans la file d'attente pour cette mission. Temps d'attende estimé : $days$ jours $hours$ heures et $m$ minutes.]
+
+	(hours > 0)
+		[Il y a devant vous $nbWaiters$ personnes (dont $onlineWaiters$ online) dans la file d'attente pour cette mission. Temps d'attende estimé : $hours$ heures et $m$ minutes.]
+
+	[Il y a devant vous $nbWaiters$ personnes (dont $onlineWaiters$ online) dans la file d'attente pour cette mission. Temps d'attende estimé : $m$ minutes.]
+}
+
+MISSION_ENTER_CRITITAL_PART_DECLINE(dyn_string_id str)
+{
+	[Vous avez décliné la proposition, vous etes maintenant en mode sommeil pour la mission $str$.]
+}
+
+MISSION_ENTER_CRITITAL_PART_PROPOSAL(dyn_string_id str)
+{
+	[Voulez vous entrer dans la partie critique de la mission $str$ ?]
+}
+
+MOUNT_CANT_WHILE_TP()
+{
+	[&CHK&Vous ne pouvez pas monter sur votre monture pendant une téléportation.]
+}
+
+ONLY_ENCHANTED_ITEMS_CAN_BE_RECHARGED()
+{
+	[&CHK&Only enchanted items can be recharged.]
+}
+
+ROLL_DICE(entity e, int min, int max, int roll)
+{
+	[&AROUND&$e.da$ $e$ a fait $roll$ sur un tirage entre $min$ et $max$.]
+}
+
+CONSUMABLE_OVERDOSE_TIMER(item item, int m, int s)
+{
+    (m>0)
+	[&CHK&Vous ne pouvez pas utiliser votre $item$ avant $m$ minutes et $s$ secondes.]
+    [&CHK&Vous ne pouvez pas utiliser votre $item$ avant $s$ secondes.]
+}
+
+CONSUMABLE_CONSUME_ITEM_BEGIN(item item)
+{
+	[Vous utilisez votre $item$.]
+}
+
+CONSUMABLE_NOT_STAND_UP()
+{
+	[&CHK&Vous ne pouvez pas utiliser cet objet en étant debout.]
+}
+
+CONSUMABLE_CANCEL()
+{
+	[&SYS&L'action est annulée et l'objet n'est pas consommé.]
+}
+
+XP_CATALYSER_NO_MORE_ACTIVE()
+{
+	[&SYS&Vous n'avez plus de catalyseur d'expérience actif.]
+}
+
+XP_CATALYSER_ACTIVE(int i)
+{
+	[&SYS&Vous activez un catalyseur d'expérience de niveau $i$.]
+}
+
+XP_CATALYSER_PROGRESS_NORMAL_GAIN(skill s, int i, int j)
+{
+	[&XP&You gain $i$($j$) experience points in '$s$'.]
+}
+
+XP_CATALYSER_CONSUME(int i, int j)
+{
+	[&SYS&Vous consommez $i$ catalyseurs d'expérience de niveau $j$.]
+}
+
+P_EPISODE2_KARAVAN_FORMATION_LEADER_1()
+{
+	[Soyez prêts à donner votre vie pour la Déesse !]
+}
+
+P_EPISODE2_KARAVAN_FORMATION_LEADER_2()
+{
+	[Section, en formation !]
+}
+
+P_EPISODE2_KARAVAN_FORMATION_LEADER_3()
+{
+	[Les Kamistes seront sans pitié, préparez vous à un long combat !]
+}
+
+P_EPISODE2_KARAVAN_FORMATION_LEADER_4()
+{
+	[Serrez les rangs !]
+}
+
+P_EPISODE2_KARAVAN_FORMATION_LEADER_5()
+{
+	[Pour Jena !]
+}
+MENU_HOF()
+{
+	[Consulter la Stèle de Valeur]
+}
+
+MENU_STELE()
+{
+	[Lire l'inscription]
+}
+
+MENU_HELLO()
+{
+	[Hello!]
+}
+
+MENU_ROOM_ACCESS()
+{
+	[Old apartment and Guild Hall access]
+}
+
+P_LEVIERS_DOUANE_PYR_1()
+{
+	[Toute marchandise Fyros qui sort du pays sera taxée.]
+}
+
+P_LEVIERS_DOUANE_PYR_2()
+{
+	[Ne faites pas confiance aux marchands étrangers !]
+}
+
+// Si pas d'erreur inutile de le préciser (à priori).
+OUTPOST_ERROR_NONE()
+{
+	[]
+}
+
+OUTPOST_ERROR_INVALID_USER()
+{
+	[Votre id de joueur n'est pas valide (bug).]
+}
+
+OUTPOST_ERROR_INVALID_OUTPOST()
+{
+	[Cet outpost n'est pas valide (bug).]
+}
+
+OUTPOST_ERROR_NO_GUILD_MODULE()
+{
+	[Vous devez faire partie d'une guilde pour attaquer un outpost.]
+}
+
+OUTPOST_ERROR_BAD_GUILD_GRADE()
+{
+	[Vous n'avez pas le grade nécessaire au sein de votre guilde pour attaquer cet outpost.]
+}
+
+
+OUTPOST_ERROR_BAD_MEMBER_LEVEL()
+{
+	[Vous devez avoir un joueur en ligne dans la guilde d'un niveau et d'une ancienneté suffisante pour défier cet avant-poste. Le niveau requis ainsi que l'ancienneté dépendent du niveau de l'avant-poste.]
+}
+
+OUTPOST_ERROR_NOT_ENOUGH_MONEY()
+{
+	[Vous et votre guilde n'avez pas assez d'argent pour attaquer cet outpost.]
+}
+
+OUTPOST_ERROR_ALREADY_ATTACKED()
+{
+	[Cet outpost fait déjà l'objet d'une attaque.]
+}
+
+OUTPOST_ERROR_ALREADY_OWNED()
+{
+	[Vous possédez déjà cet outpost.]
+}
+
+OUTPOST_ERROR_TIME_PERIOD_ESTIMATION_CHANGED()
+{
+	[La période d'attaque estimée a changé depuis l'ouverture de la fenêtre.]
+}
+
+OUTPOST_ERROR_TOO_MANY_GUILD_OUTPOSTS()
+{
+	[Votre guilde ne peut pas acquérir plus d'avant-postes.]
+}
+
+OUTPOST_ERROR_UNKNOWN()
+{
+	[Erreur d'outpost inconnue (bug).]
+}
+
+// side: 0=owner, 1=attacker
+// guild_owner: 0=no (tribe owner), 1=yes (guild owner)
+OUTPOST_BCP_UNKNOWN_TITLE(outpost o, int side) { [Erreur : message d'outpost inconnu] }
+OUTPOST_BCP_UNKNOWN(outpost o, int side) { [Ce message ne devrait pas être visible. Merci de signaler ce bug.] }
+OUTPOST_BCM_UNKNOWN(outpost o, int side) { [&OSM&Erreur : message d'outpost inconnu.] }
+
+OUTPOST_BCM_ROUND_NEAR_END(outpost o, int side) { [&OSM&Le round va se terminer dans une minute.] }
+OUTPOST_BCM_ROUND_LOST(outpost o, int side) { [&OSM&Vous avez perdu le round.] }
+OUTPOST_BCM_ROUND_WON(outpost o, int side) { [&OSM&Vous avez gagné le round.] }
+OUTPOST_BCM_LAST_ROUND_LOST(outpost o, int side) { [&OSM&Vous avez perdu le round.] }
+OUTPOST_BCM_LAST_ROUND_WON(outpost o, int side) { [&OSM&Vous avez gagné le round.] }
+
+OUTPOST_BCP_ATTACK_FAILED_TITLE(outpost o, int side)
+{
+	(side = 0)
+		[Victoire !]
+	(side = 1)
+		[Echec !]
+	[Fin de l'attaque]
+}
+OUTPOST_BCP_ATTACK_FAILED(outpost o, int side)
+{
+	(side = 0)
+		[L'attaque de l'avant-poste $o.name$ a échoué, vous conservez le contrôle de l'outpost.]
+	(side = 1)
+		[L'attaque de l'avant-poste $o.name$ a échoué, votre tentive de prise de l'outpost a échoué.]
+	[L'attaque de l'outpost a échoué.]
+}
+OUTPOST_BCP_ATTACK_SUCCEEDED_TITLE(outpost o, int side)
+{
+	(side = 0)
+		[Echec !]
+	(side = 1)
+		[Victoire !]
+	[Fin de l'attaque]
+}
+OUTPOST_BCP_ATTACK_SUCCEEDED(outpost o, int side, int guild_owner)
+{
+	(guild_owner = 1)
+		[L'attaque de l'avant-poste $o.name$ a réussi, préparez vous pour la phase de défense.]
+	(guild_owner = 0 and side = 1)
+		[L'attaque de l'avant-poste $o.name$ a réussi, vous allez gagner le contrôle de l'outpost.]
+	[L'attaque de l'outpost a réussi.]
+}
+OUTPOST_BCP_DEFENSE_FAILED_TITLE(outpost o, int side)
+{
+	(side = 0)
+		[Echec !]
+	(side = 1)
+		[Victoire !]
+	[Fin de la défense]
+}
+OUTPOST_BCP_DEFENSE_FAILED(outpost o, int side)
+{
+	(side = 0)
+		[La défense de l'avant-poste $o.name$ a échoué, vous allez perdre le contrôle de l'outpost.]
+	(side = 1)
+		[La défense de l'avant-poste $o.name$ a échoué, vous allez gagner le contrôle de l'outpost.]
+	[La défense de l'outpost a échoué.]
+}
+OUTPOST_BCP_DEFENSE_SUCEEDED_TITLE(outpost o, int side)
+{
+	(side = 0)
+		[Victoire !]
+	(side = 1)
+		[Echec !]
+	[Fin de la défense]
+}
+OUTPOST_BCP_DEFENSE_SUCEEDED(outpost o, int side)
+{
+	(side = 0)
+		[La défense de l'avant-poste $o.name$ a réussi, vous conservez le contrôle de l'outpost.]
+	(side = 1)
+		[La défense de l'avant-poste $o.name$ a réussi, votre tentive de prise de l'outpost a échoué.]
+	[La défense de l'outpost a réussi.]
+}
+OUTPOST_BCP_ATTACK_ROUNDS_TITLE(outpost o, int side)
+{
+	[Début de la période d'attaque]
+}
+OUTPOST_BCP_ATTACK_ROUNDS(outpost o, int side)
+{
+	(side = 0)
+		[La période d'attaque contre votre avant-poste $o.name$ a commencé !]
+	[La période d'attaque contre l'avant-poste $o.name$ a commencé !]
+}
+OUTPOST_BCP_DEFENSE_ROUNDS_TITLE(outpost o, int side)
+{
+	[Début de la période de défense]
+}
+OUTPOST_BCP_DEFENSE_ROUNDS(outpost o, int side)
+{
+	(side = 0)
+		[La période de défense de votre avant-poste $o.name$ a commencé !]
+	[La période de défense de l'avant-poste $o.name$ a commencé !]
+}
+OUTPOST_BCP_WAR_DECLARED_TITLE(outpost o, int side)
+{
+	[La guerre est déclarée]
+}
+OUTPOST_BCP_WAR_DECLARED(outpost o, int side)
+{
+	(side = 0)
+		[La guerre est déclarée sur votre avant-poste $o.name$.]
+	[Votre guilde a déclaré la guerre à l'avant-poste $o.name$.]
+}
+
+COMBAT_PROC_VAMPIRISM_ATTACKER(entity defender, int drain)
+{
+	combat_proc_vampirism_attacker	[&ISE&Déclenchement de l'effet vol de vie, votre arme vous donne $drain$ des points de vie de $defender.da$ $defender$.]
+}
+
+COMBAT_PROC_VAMPIRISM_DEFENDER(entity attacker, int drain)
+{
+	combat_proc_vampirism_defender	[&ISE&L'arme de $attacker.da$ $attacker$ lui donne $drain$ de vos points de vie.]
+}
+
+COMBAT_PROC_VAMPIRISM_SPECTATORS(entity attacker, entity defender, int drain)
+{
+	combat_proc_vampirism_spectators_n	[&ISE&L'arme de $attacker.da$ $attacker$ lui donne $drain$ des points de vie de $defender.da$ $defender$.]
+}
+
+ISE_MAGIC_DIVINE_INTERVENTION()
+{
+	[&ISE&Déclenchement de l'effet intervention divine, les crédits de votre sort ne sont pas consommés.]
+}
+
+ISE_MAGIC_SHOOT_AGAIN()
+{
+	[&ISE&Déclenchement de l'effet feu gratuit, votre prochain sort sera incanté en un temps minimum.]
+}
+
+// ISE2 is for an additional display on the center of the screen (as there is no flying text for craft)
+ISE_CRAFT_ADD_STAT_BONUS(score s, int param)
+{
+	[&ISE2&Déclenchement de l'effet bonus de stat, l'item que vous avez créé a un bonus de $s$ de $param$.]
+}
+
+// ISE2 is for an additional display on the center of the screen (as there is no flying text for craft)
+ISE_CRAFT_ADD_LIMIT(int param)
+{
+	[&ISE2&Déclenchement de l'effet limites étendues, les limites de l'item que vous avez créé sont étendues de $param$%.]
+}
+
+ISE_FORAGE_ADD_RM(int param)
+{
+	[&ISE&Déclenchement de l'effet bonus de récolte, vous avez récolté $param$% de ressources supplémentaires sur cette action.]
+}
+
+ISE_FORAGE_NO_RISK()
+{
+	[&ISE&Déclenchement de l'effet source sans risque, une des sources que vous avez trouvées ne peux pas exploser.]
+}
+
+MAGIC_YOU_BREAK_ENEMY_CAST(entity e)
+{
+	[&SYS&Vous interrompez $e.da$ $e$.]
+}
+
+OUTPOST_LEAVE_ZONE(outpost o)
+{
+	[&SYS&Vous quittez l'avant poste $o.name$.]
+}
+
+GUILD_CANT_INVITE_OUTPOST_ENEMY()
+{
+	[&CHK&Vous ne pouvez pas inviter un ennemi d'avant-poste dans votre guilde]
+}
+MENU_OUTPOST()
+{
+	[Consulter l'enseigne d'avant-poste]
+}
+
+MISSION_GOAL_STEP_ANY_OR(dyn_string_id id)
+{
+	[Soit $id$]
+}
+
+MENU_RING_ENTRY()
+{
+	[Choisir sa destination Ring]
+}
+
+UNIVERSE_NOT_AVAILABLE_ON_RING()
+{
+	[Le canal univers est réservé aux éditeurs et animateurs Ring.]
+}
+
+RING_ANI()
+{
+	[Ring Channel ani.]
+}
+RING_LEA()
+{
+	[Ring Channel lea.]
+}
+RING_ARI()
+{
+	[Ring Channel ari.]
+}
+RING_CHO()
+{
+	[Ring Channel cho.]
+}
+RING_SEA()
+{
+	[Ring Channel sea.]
+}
+RING_CSR()
+{
+	[Ring Channel CSR]
+}
+RING_TOO()
+{
+	[Ring Channel too]
+}
+RING_TRE()
+{
+	[Ring Channel tre.]
+}
+YES()
+{
+	[Oui.]
+}
+NO()
+{
+	[Non.]
+}
+
+NO_TIME()
+{
+	[I doesn't have time to waste.]
+}
+
+SHUTDOWN_WARNING(int delay)
+{
+	[&SYS&The shard will be shutdown in $delay$ seconds, please disconnect ASAP.]
+}
+
+
+AMMO_BUYING_QUANTITY_TOO_LOW(int magazineSize)
+{
+	[&CHK&Ce type de munition ne peut être acheté que par un ou plusieurs lots de $magazineSize$ munitions.]
+}
+
+AMMO_SELLING_QUANTITY_TOO_LOW(int magazineSize)
+{
+	[&CHK&Ce type de munition ne peut être vendu que par un ou plusieurs lots de $magazineSize$ munitions.]
+}
+
+TRAITRE_CORSAIRE_ARRIVE()
+{
+	[Que faites-vous ici ?! Voleur ! Laissez cette perle là où elle est !]
+}
+
+INFORMATION()
+{
+	[INFORMATION]
+}
+
+MENU_FIND_IT ()
+{
+		menu_find_it	[Montrez votre trouvaille]
+}
+
+MENU_GET_FLOWER ()
+{
+		menu_get_flower	[Cueillir une fleur]
+}
+
+EGS_CANT_BUY_PACKER_IS_TRIAL_PLAYER()
+{
+	[&CHK&You cannot buy a mektoub packer because you are in free trial. You must upgrade your account to be able to do that.]
+}
+
+EGS_CANT_USE_GUILD_INV_IS_TRIAL_PLAYER()
+{
+	[&CHK&You cannot take items from the guild inventory because you are in free trial. You must upgrade your account to be able to do that.]
+}
+
+EGS_CANT_USE_ROOM_INV_IS_TRIAL_PLAYER()
+{
+	[&CHK&You cannot use your room inventory because you are in free trial. You must upgrade your account to be able to do that.]
+}
+
+EGS_CANT_EQUIP_ITEM_IS_TRIAL_PLAYER()
+{
+	[&CHK&You cannot equip this item because you are in free trial. You must upgrade your account to be able to do that.]
+}
+
+EGS_CHANNEL_INVALID_NAME (literal name)
+{
+	[&SYS&Invalid channel name "$name$".]
+}
+
+EGS_CHANNEL_NO_RIGHTS (literal name)
+{
+	[&SYS&You don't have rights to connect to channel "$name$".]
+}
+
+WHO_CHANNEL_INTRO(literal name)
+{
+	[&SYS&Characters in channel "$name$":]
+}
+
+FACTION_EN()
+{
+	[English Uni]
+}
+
+FACTION_FR()
+{
+	[Uni Français]
+}
+
+FACTION_DE()
+{
+	[Deutsch Uni]
+}
+
+FACTION_ES()
+{
+	[Español Uni]
+}
+
+FACTION_RU()
+{
+	[русский Uni]
+}
+OPEN_SILAN_ANNOUNCE_TEXT()
+{
+	[Did you know we can reach Silan over the bark ? It seems that Rangers are maintaining a path whose entrance is at grove of confusion’s very end.]
+}
+
+MENU_HELLO_LEADER()
+{
+	[Hello?]
+}
+MENU_AN_OPENING()
+{
+	[An Opening?]
+}
+MENU_OPEN_CHEST()
+{
+	[Open the Chest]
+}
+MENU_HELPER_NPC()
+{
+	[Hello]
+}
+MENU_RESCUE_TEAM_1()
+{
+	[kami'ata]
+}
+MENU_RESCUE_TEAM_2()
+{
+	[deles silam]
+}
+MENU_RESCUE_TEAM_3()
+{
+	[oren pyr]
+}
+MENU_RESCUE_TEAM_4()
+{
+	[lordoy]
+}
+MENU_RESCUE_TEAM_5()
+{
+	[lordoy]
+}
+MENU_SCENARIO_EDITOR_TP()
+{
+	[Open the Scenario Editor.]
+}
+MENU_OREN_PYR()
+{
+	[oren pyr !]
+}
+MENU_GLOWING_COAL()
+{
+	[Glowing Coal]
+}
+MENU_MATISPOETRY()
+{
+	[Collection of Matis poetry.]
+}
+MENU_BUY_PVP()
+{
+	[Buy Special Items]
+}
+MENU_CASINO_INSERT_COIN()
+{
+	[Play a token]
+}
+MENU_TRADE()
+{
+	[EXCHANGE]
+}
+
+MENU_LIGHT_UP()
+{
+	[Light]
+}
+
+MENU_SIT()
+{
+	[Sit down]
+}
+MENU_BUY_NATION_ITEMS()
+{
+	[Buy Nation Items]
+}
+
+MENU_USE_PA()
+{
+	[use your involvement]
+}
+MENU_HAVE_MISSION()
+{
+	[Do you have any mission to assign me?]
+}
+MENU_CAN_I_HELP_YOU()
+{
+	[Can you help me?]
+}
+MENU_HAVE_SOMETHINH_FOR_ME()
+{
+	[Have you something for me?]
+}
+MENU_NEED_SOME_INFORMATIONS()
+{
+	[I need some informations...]
+}
+
+FACTION_RF()
+{
+	[Forge]
+}
+
+MENU_ZIGA()
+{
+	[Caress Ari.]
+}
+MENU_ZIGB()
+{
+	[Caress Tynee.]
+}
+MENU_OPEN_IT()
+{
+	[Open it!]
+}
+MENU_WOHA()
+{
+	[Woha]
+}
+MENU_LORDOY()
+{
+	[Lordoy]
+}
+MENU_DELES_SILAM()
+{
+	[Deles Silam]
+}
+MENU_BANARC()
+{
+	[Banarc]
+}
+MENU_WOREN_SILOY()
+{
+	[Woren Siloy]
+}
+
+MENU_DANGER()
+{
+	[Danger]
+}
+
+MENU_KAMIA_ATA()
+{
+	[Kamia'ata]
+}
+
+FACTION_USR_EN()
+{
+	[EN]
+}
+
+FACTION_USR_FR()
+{
+	[FR]
+}
+
+FACTION_USR_DE()
+{
+	[DE]
+}
+
+FACTION_USR_ES()
+{
+	[ES]
+}
+
+FACTION_USR_RU()
+{
+	[RU]
+}
+
+ALLEGORY_EFFECT_TRIGGERED (sbrick s)
+{
+	[&ISE2&The Allegorical "$s$" effect has been triggered]
+
+}
+
+
+JEWEL_WITH_ALLEGORIES ()
+{
+	[&CHK&You can't exchange a piece of jewelry with an Allegorical power engraved on it]
+
+}
+
+
+

@@ -1,0 +1,45 @@
+﻿R_07_09_MIS_TITLE (bot giver)
+{
+	r_07_09_mis_title	[Le respect de la nature]
+}
+
+R_07_09_MIS_DESC (bot giver, faction faction)
+{
+	r_07_09_mis_desc	[Les $faction.member$ respectent la nature plus que tout et ils font toujours attention à ce que les écosystèmes soient préservés et que l'équilibre naturel subsiste contre tous les maux.]
+}
+
+R_07_09_P_LDC_INTRO (faction faction, bot imposteur)
+{
+	r_07_09_p_ldc_intro	[Toi ami $faction$, aider $faction$ à répondre appel loi toi pouvoir. Voir $imposteur$ toi aller.]
+}
+
+R_07_09_M_T2_IMPOSTEUR_1 (bot imposteur, bot givervar)
+{
+	r_07_09_m_t2_imposteur_1	[Je viens de la part de $givervar$.]
+}
+
+R_07_09_P_LDC_BRIEF_IMPOSTEUR (faction faction, bot givervar)
+{
+	r_07_09_p_ldc_brief_imposteur	[C'est $givervar$ qui t'envoie à moi ? Je ne vois pas trop pourquoi, je ne traite pas avec les $faction.member$...{break}Ah mais oui bien sûr, je dois tuer quelques créatures pour lui. Tu n'as qu'à aller accomplir cette tâche et je pense qu'il pourra être fier de toi.]
+}
+
+R_07_09_M_T2_KAMIMASTER_1 (bot giver, bot imposteur)
+{
+	r_07_09_m_t2_kamimaster_1	[J'ai tué les créatures pour $imposteur$.]
+}
+
+R_07_09_P_LDC_RETOUR_KAMIMASTER (faction faction, bot imposteur)
+{
+	r_07_09_p_ldc_retour_kamimaster	[Tuer créatures toi avoir ? Mais non ! Mais pas bien du tout, homin ! Déséquilibrée maintenant Nature être. Toi méchant.{break}$faction$ compris, vrai méchant Matis $imposteur$ être et utiliser toi pour faire mal à Nature lui avoir. Là-bas toi retourner et vérifier créatures toujours là-bas pour pas déséquilibrer Nature toi devoir. Sinon se fâcher Nature et quand Nature pas contente, $faction$ peur.]
+}
+
+R_07_09_M_T2_DEBRIEF (bot giver)
+{
+	r_07_09_m_t2_debrief	[Je viens de compter toutes les créatures que vous m'aviez demandées.]
+}
+
+R_07_09_P_BC_DEBRIEF (faction faction)
+{
+	r_07_09_p_bc_debrief	[Bonne nouvelle si Nature tranquille. Cassé Nature toi avoir mais réparé toi avoir. $faction$ content. Toi ami $faction$.{break}Cube d'ambre $faction$ donner toi, magique être cube d'ambre, grande connaissance cube d'ambre contenir. Acheter pactes magiques téléportation maintenant moi permettre toi.]
+}
+

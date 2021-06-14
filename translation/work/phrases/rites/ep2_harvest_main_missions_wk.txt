@@ -1,0 +1,90 @@
+﻿FYROS_KARAVAN_NPC_T2_T7_HARVEST_MAIN_MIS_TITLE (bot giver)
+{
+	fyros_karavan_npc_t2_t7_harvest_main_mis_title	[Aider à la construction du temple]
+}
+
+FYROS_KARAVAN_NPC_T2_T7_HARVEST_MAIN_MIS_DESC (bot giver, bot givervar)
+{
+	fyros_karavan_npc_t2_t7_harvest_main_mis_desc	[Vous devez récolter des matières premières nécessaires à la construction des temples de Jena, et les remettre au $givervar$]
+}
+
+FYROS_KARAVAN_NPC_T2_T7_HARVEST_MAIN_P_LDC_INTRO (bot player, place region_name)
+{
+	fyros_karavan_npc_t2_t7_harvest_main_p_ldc_intro	[Es-tu un récolteur, $player$ ? Si tel est le cas, l'Église de la Lumière a besoin de toi ! Avec ton aide, nous allons construire un temple pour honorer Jena. La mission que je vais te confier consiste à rapporter de précieuses matières premières provenant des terres anciennes, de la région appelée $region_name$.{break}Ces différentes matières premières seront utilisées par les artisans dans la construction du temple. En accomplissant cette mission, ton honneur en sortira grandi. Les plus honorables seront récompensés une fois le sanctuaire construit.{break}Alors qu'attends-tu, $player$ ? Accepte la tâche qui t'est confiée, et va trouver le Téléporteur Karavan, il te transportera  vers $region_name.da$ $region_name$.]
+}
+
+FYROS_KARAVAN_NPC_T2_T7_HARVEST_MAIN_P_ANSWER_TELL_ME_MORE ()
+{
+	fyros_karavan_npc_t2_t7_harvest_main_p_answer_tell_me_more	[Dis m'en davantage sur la mission]
+}
+
+FYROS_KARAVAN_NPC_T2_T7_HARVEST_MAIN_P_ANSWER_ACCEPT_MISSION ()
+{
+	fyros_karavan_npc_t2_t7_harvest_main_p_answer_accept_mission	[J'accepte la mission]
+}
+
+FYROS_KARAVAN_NPC_T2_T7_HARVEST_MAIN_P_ANSWER_NO_THANKS ()
+{
+	fyros_karavan_npc_t2_t7_harvest_main_p_answer_no_thanks	[Je n'accomplirai pas cette tâche, au revoir]
+}
+
+FYROS_KARAVAN_NPC_T2_T7_HARVEST_MAIN_P_LDC_TELL_MORE (bot player)
+{
+	fyros_karavan_npc_t2_t7_harvest_main_p_ldc_tell_more	[Les ressources qui se trouvent dans les terres anciennes sont exceptionnelles, elles permettront d'ériger des temples dignes de la Déesse. Elles devront être extraites en grandes quantités, pour être rapportées sur les chantiers de construction des temples. {break}Je suis chargé de collecter les matières premières, afin de les remettre à la Karavan pour qu'elles soient raffinées. C'est seulement après ce traitement que les ressources pourront être utilisées par les artisans homins. {break}Il s'agit de récolter le maximum de ressources le plus vite possible, car les gisements sont limités, et des prospecteurs ennemis tenteront de les exploiter pour le compte des Kamis. Les homins serviteurs de Ma-Duk veulent construire des sanctuaires pour détourner les autres homins de la lumière de Jena. Le temps presse ! Acceptes-tu la mission qui t'est confiée, $player$ ?]
+}
+
+FYROS_KARAVAN_NPC_T2_T7_HARVEST_MAIN_P_ANSWER_ACCEPT_MISSION_2 ()
+{
+	fyros_karavan_npc_t2_t7_harvest_main_p_answer_accept_mission_2	[J'accepte la mission]
+}
+
+FYROS_KARAVAN_NPC_T2_T7_HARVEST_MAIN_P_ANSWER_NO_THANKS_2 ()
+{
+	fyros_karavan_npc_t2_t7_harvest_main_p_answer_no_thanks_2	[Je n'accomplirai pas cette tâche, au revoir]
+}
+
+FYROS_KAMI_NPC_T2_T7_HARVEST_MAIN_MIS_TITLE (bot giver)
+{
+	fyros_kami_npc_t2_t7_harvest_main_mis_title	[Aider à la construction du sanctuaire]
+}
+
+FYROS_KAMI_NPC_T2_T7_HARVEST_MAIN_MIS_DESC (bot giver, bot givervar)
+{
+	fyros_kami_npc_t2_t7_harvest_main_mis_desc	[Vous devez récolter des matières premières nécessaires à la construction des sanctuaires de Ma-Duk, et les remettre au $givervar$]
+}
+
+FYROS_KAMI_NPC_T2_T7_HARVEST_MAIN_P_LDC_INTRO (bot player, place region_name)
+{
+	fyros_kami_npc_t2_t7_harvest_main_p_ldc_intro	[Si tu es un récolteur, $player$, le Grand Ordre de Ma-Duk a besoin de toi ! Avec ton aide, nous allons ériger un sanctuaire pour honorer Ma-Duk. La mission que je vais te confier consiste à rapporter de précieuses matières premières provenant des terres anciennes, de la région appelée $region_name$.{break}Ces différentes matières premières seront utilisées par les artisans dans la construction du sanctuaire. En accomplissant cette mission, ton honneur en sortira grandi. Les plus honorables seront récompensés une fois le sanctuaire construit.{break}Alors qu'attends-tu, $player$ ? Accepte la tâche qui t'est confiée, et va trouver le Prêcheur Kami, il te téléportera  vers $region_name.da$ $region_name$.]
+}
+
+FYROS_KAMI_NPC_T2_T7_HARVEST_MAIN_P_ANSWER_TELL_ME_MORE ()
+{
+	fyros_kami_npc_t2_t7_harvest_main_p_answer_tell_me_more	[Dis m'en davantage sur la mission]
+}
+
+FYROS_KAMI_NPC_T2_T7_HARVEST_MAIN_P_ANSWER_ACCEPT_MISSION ()
+{
+	fyros_kami_npc_t2_t7_harvest_main_p_answer_accept_mission	[J'accepte la mission]
+}
+
+FYROS_KAMI_NPC_T2_T7_HARVEST_MAIN_P_ANSWER_NO_THANKS ()
+{
+	fyros_kami_npc_t2_t7_harvest_main_p_answer_no_thanks	[Je n'accomplirai pas cette tâche, au revoir]
+}
+
+FYROS_KAMI_NPC_T2_T7_HARVEST_MAIN_P_LDC_TELL_MORE (bot player)
+{
+	fyros_kami_npc_t2_t7_harvest_main_p_ldc_tell_more	[Les ressources qui se trouvent dans les terres anciennes sont exceptionnelles, elles sont bénies par le Grand Géniteur.  Ma-Duk accepte qu'elles soient extraites en grandes quantités, pour être rapportées sur les chantiers de construction des sanctuaires. {break}Je suis chargé de collecter les matières premières, afin de les remettre aux Kamis pour qu'elles soient transformées. C'est seulement après cette transformation magique que les ressources pourront être utilisées par les artisans homins. {break}Il s'agit de récolter le maximum de ressources le plus vite possible, car les gisements sont limités, et des prospecteurs ennemis tenteront de les exploiter pour le compte de la Karavan. Les homins serviteurs de Jena veulent construire des temples pour détourner les autres homins des chemins de Ma-Duk. Le temps presse ! Acceptes-tu la mission qui t'est confiée, $player$ ?]
+}
+
+FYROS_KAMI_NPC_T2_T7_HARVEST_MAIN_P_ANSWER_ACCEPT_MISSION_2 ()
+{
+	fyros_kami_npc_t2_t7_harvest_main_p_answer_accept_mission_2	[J'accepte la mission]
+}
+
+FYROS_KAMI_NPC_T2_T7_HARVEST_MAIN_P_ANSWER_NO_THANKS_2 ()
+{
+	fyros_kami_npc_t2_t7_harvest_main_p_answer_no_thanks_2	[Je n'accomplirai pas cette tâche, au revoir]
+}
+

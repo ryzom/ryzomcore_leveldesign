@@ -1,0 +1,40 @@
+﻿R_06_12_MIS_TITLE (bot giver)
+{
+	r_06_12_mis_title	[Connais ton ennemi]
+}
+
+R_06_12_MIS_DESC (bot giver, race race_kitin)
+{
+	r_06_12_mis_desc	[La lutte contre $race_kitin.pda$ $race_kitin.p$]
+}
+
+R_06_12_P_LDF_INTRO_1 (bot barman_1, faction faction_zorai)
+{
+	r_06_12_p_ldf_intro_1	[Nos aînés furent prudents lors de la reconquête d'Atys, comme eux étudie ton ennemi avant de le combattre. Abats les plus faibles d'entre eux pour percer à jour le secret de leurs faiblesses et rapporte moi le fruit de ta victoire. Montre-toi digne de ce défi et je t'enseignerai les techniques des mages $faction_zorai$. Va parler à $barman_1$ qui peut t'aider dans ta quête.]
+}
+
+R_06_12_P_T2_BARMAN_1 (bot barman_1, creature_model creature_to_kill_1)
+{
+	r_06_12_p_t2_barman_1	[J'aimerai savoir où je peux trouver $creature_to_kill_1.pia$ $creature_to_kill_1.p$.]
+}
+
+R_06_12_P_BC_BARMAN_1 (bot marchand_1)
+{
+	r_06_12_p_bc_barman_1	[Vous savez, je ne quitte que rarement mon comptoir, mais $marchand_1$ qui voyage beaucoup en a certainement croisés plusieurs. Allez la voir de ma part.]
+}
+
+R_06_12_P_T2_MARCHAND_1 (bot marchand_1, bot barman_1, creature_model creature_to_kill_1)
+{
+	r_06_12_p_t2_marchand_1	[$barman_1$ m'a dit que vous saviez ou je pouvais trouver $creature_to_kill_1.pia$ $creature_to_kill_1.p$.]
+}
+
+R_06_12_P_BC_MARCHAND_1 ()
+{
+	r_06_12_p_bc_marchand_1	[C'est exact, j'en ai croisés à plusieurs reprises. Je vais indiquer sur votre carte un endroit ou je crois en avoir vu.]
+}
+
+R_06_12_P_BC_1 (race race_kitin)
+{
+	r_06_12_p_bc_1	[Bien, la connaissance des ennemis $race_kitin.p$ fut vitale pour notre survie. Votre succès dans votre mission montre votre engagement à suivre les pas de vos pairs. Vous avez mérité de recevoir mon enseignement.{break}Prenez également ceci, cet objet contient un fragment de notre passé. Etudiez-le.]
+}
+

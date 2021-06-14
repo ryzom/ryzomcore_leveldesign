@@ -1,0 +1,45 @@
+﻿R_05_02_MIS_TITLE (bot giver, place crystabell)
+{
+	r_05_02_mis_title	[Des provisions pour $crystabell$]
+}
+
+R_05_02_MIS_DESC (bot giver)
+{
+	r_05_02_mis_desc	[Aider l'intendance à refaire un stock de provisions.]
+}
+
+R_05_02_P_LDF_INTENDANT_INTRO (race bodoc, place crystabell, bot raw_merchant)
+{
+	r_05_02_p_ldf_intendant_intro	[Je vous salue, $self$. Je suis préoccupé, les réserves de nourriture de $crystabell$ sont au plus bas. Nous avons grand besoin de viande de $bodoc$, ainsi que d'un moyen fiable pour la conserver. Si vous voulez venir en aide à la population du village, allez voir $raw_merchant$, elle vous en dira davantage. En retour, je vous enseignerai une technique magique de défense très utile.]
+}
+
+R_05_02_P_T2_RAW_MERCHANT (bot raw_merchant, bot giver)
+{
+	r_05_02_p_t2_raw_merchant	[$giver$ m'envoit.]
+}
+
+R_05_02_P_BC_RAW_STEP_HARVEST (int qty)
+{
+	r_05_02_p_bc_raw_step_harvest	[Bonjour ! Merci à vous de nous aider, $self$. Le village a non seulement besoin de viande, mais aussi d'un ingrédient pour la conserver, sans quoi le soleil qui brille sur nos lacs aura tôt fait de la rendre malsaine. J'ai récemment découvert dans une crique au nord-est une mousse végétale qui semble conserver à merveille les aliments. Ramenez-moi $qty$ morceaux de cette mousse. J'aurais ensuite une autre tâche à vous confier. Bonne récolte, $self$ !]
+}
+
+R_05_02_P_BC_NEXTMISSION (race bodoc, int qty, place zoneabodoc)
+{
+	r_05_02_p_bc_nextmission	[Merci ! Cette mousse est vraiment un formidable conservateur. A présent, nous avons besoin de viande de $bodoc$ pour remplir les réserves. Amenez-moi $qty$ morceaux de viande de $bodoc$ et nous en aurons fini. Il va de soi que la viande doit être bien fraîche ! Vous trouverez des $bodoc$ dans la région de $zoneabodoc$.]
+}
+
+R_05_02_P_BC_GIVEBODOC (bot giver)
+{
+	r_05_02_p_bc_givebodoc	[Merci à nouveau, votre aide a été très précieuse. Retournez voir $giver$, il vous récompensera pour votre efficacité.]
+}
+
+R_05_02_T2_GIVERVAR (bot giver, bot raw_merchant)
+{
+	r_05_02_t2_givervar	[J'ai fait ce que m'a demandé $raw_merchant$.]
+}
+
+R_05_02_P_BC_ENDRITE (race bodoc, bot raw_merchant)
+{
+	r_05_02_p_bc_endrite	[Magnifique ! Grâce à la trouvaille de $raw_merchant$, et grâce à votre aide,  nos stocks de nourriture seront bien approvisionnés. En remerciement, je vais vous enseigner une technique magique qui contribuera à vous protéger lors de vos aventures. Prenez aussi ce cube d'ambre, il vous en apprendra beaucoup sur les $bodoc.p$.]
+}
+

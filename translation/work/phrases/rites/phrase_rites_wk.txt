@@ -1,2 +1,148 @@
-﻿
-#include "rite_00_01_first_rite_wk.txt"
+﻿#include "unlock_rite_wk.txt"
+#include "rite_00_01_amber_cubes_wk.txt"
+#include "mission_ref_code_wk.txt"
+#include "gmisland_wk.txt"
+#include "fyros_city_guide_wk.txt"
+#include "matis_city_guide_wk.txt"
+#include "tryker_city_guide_wk.txt"
+#include "zorai_city_guide_wk.txt"
+
+#include "rite_01_06_region_majesticgarden_wk.txt"
+#include "rite_01_07_pelerinage_in_fleetinggarden_wk.txt"
+#include "rite_01_13_region_citiesofintuition_wk.txt"
+#include "rite_01_19_region_imperialdunes_wk.txt"
+#include "rite_01_27_region_libertylake_wk.txt"
+#include "rite_01_28_region_dewdrops_wk.txt"
+
+#include "rite_02_01_melee_weapons_wk.txt"
+#include "rite_02_02_range_weapons_wk.txt"
+#include "rite_02_03_armors_and_shields_wk.txt"
+#include "rite_02_04_jewelry_wk.txt"
+#include "rite_02_05_dagger_tryker_wk.txt"
+
+#include "rite_03_09_tribe_corsair_wk.txt"
+#include "rite_03_26_tribe_matisian_border_guards_wk.txt"
+#include "rite_03_38_tribe_shadow_runners_wk.txt"
+#include "rite_03_47_tribe_water_breakers_wk.txt"
+
+#include "rite_04_02_mp_group_fiber_wk.txt"
+#include "rite_04_06_matis_collect_resin_wk.txt"
+#include "rite_04_12_mp_group_food_wk.txt"
+#include "rite_04_20_jungle_ecosystem_wk.txt"
+#include "rite_04_22_lake_ecosystem_wk.txt"
+
+#include "rite_05_01_arma_wk.txt"
+#include "rite_05_02_tryker_hunt_and_collect_wk.txt"
+#include "rite_05_12_bawaab_wk.txt"
+#include "rite_05_15_gnoof_wk.txt"
+#include "rite_05_21_arana_wk.txt"
+#include "rite_05_24_izam_wk.txt"
+#include "rite_05_29_slaveni_wk.txt"
+#include "rite_05_33_clopper_wk.txt"
+#include "rite_05_34_goari_wk.txt"
+#include "rite_05_36_ragus_wk.txt"
+#include "rite_05_39_varinx_wk.txt"
+#include "rite_05_41_javing_wk.txt"
+#include "rite_05_44_jugula_wk.txt"
+
+#include "rite_06_06_kyban_harvester_wk.txt"
+//#include "rite_06_08_kitin_and_tryker_wk.txt"
+#include "rite_06_08_kincher_wk.txt"
+#include "rite_06_09_kizoar_wk.txt"
+#include "rite_06_13_kitins_in_continent_fyros_wk.txt"
+#include "rite_06_14_kitins_in_continent_tryker_wk.txt"
+#include "rite_06_20_kitin_story_2_wk.txt"
+
+#include "rite_07_04_kamis_and_the_fyros_wk.txt"
+#include "rite_07_05_kamis_and_the_trykers_wk.txt"
+
+#include "rite_08_16_karavan_story_wk.txt"
+
+#include "rite_09_09_matis_history_exile_wk.txt"
+#include "rite_09_19_matis_story_4_wk.txt"
+
+#include "rite_10_10_zorai_new_beginning_wk.txt"
+#include "rite_10_11_zorai_culture_religion_wk.txt"
+#include "rite_10_17_zorai_story_2_wk.txt"
+
+#include "rite_11_10_fyros_history_new_beginning_wk.txt"
+#include "rite_11_12_fyros_culture_technology_wk.txt"
+#include "rite_11_17_fyros_story_2_wk.txt"
+
+#include "rite_12_18_tryker_story_3_wk.txt"
+
+#include "rite_13_00_ranger_wk.txt"
+
+#include "mission_dialogues_ep2_ilots_wk.txt"
+#include "mission_dialogues_ep2_continents_wk.txt"
+#include "mission_karavan_kami_wk.txt"
+
+#include "ep2_craft_acte_1_wk.txt"
+#include "ep2_craft_acte_2_wk.txt"
+#include "ep2_craft_acte_3_wk.txt"
+
+#include "ep2_harvest_acte_1_wk.txt"
+#include "ep2_harvest_acte_2_wk.txt"
+#include "ep2_harvest_acte_3_wk.txt"
+
+#include "ep2_harvest_main_missions_wk.txt"
+#include "ep2_fight_wk.txt"
+#include "ep2_craft_main_missions_wk.txt"
+
+#include "dialogues_outposts_wk.txt"
+#include "mission_citizenship_wk.txt"
+
+// Newbieland
+#include "missions_fyros_wk.txt"
+#include "missions_matis_wk.txt"
+#include "missions_tryker_wk.txt"
+#include "missions_zorai_wk.txt"
+#include "missions_newbieland_kami_wk.txt"
+#include "missions_newbieland_rangers_wk.txt"
+#include "missions_karavan_wk.txt"
+
+#include "encyclopedia_tutorial_fyros_wk.txt"
+#include "encyclopedia_tutorial_matis_wk.txt"
+#include "encyclopedia_tutorial_tryker_wk.txt"
+#include "encyclopedia_tutorial_zorai_wk.txt"
+
+#include "mission_slaughter_week_wk.txt"
+
+#include "phrase_boss_mainland.txt"
+#include "mission_boss_marauder_armor_wk.txt"
+
+// Kitiniere
+//#include "mission_kitiniere_200_250_wk.txt"
+#include "kitiniere_rangers.txt"
+
+// The Corrupted Moor tcm
+/*
+#include "phrase_tcm_company.txt"
+#include "phrase_tcm_karavan.txt"
+#include "mission_corrupted_moor_wk.txt"
+#include "phrase_tcm_karavan_honor.txt"
+#include "phrase_tcm_karavan_invasion_start.txt"
+#include "phrase_tcm_karavan_valcor_dead.txt"
+#include "phrase_tcm_karavan_kitin_killed.txt"
+#include "phrase_tcm_company_ola.txt"
+#include "phrase_tcm_company_shaman_dead.txt"
+#include "phrase_tcm_company_invasion_start.txt"
+#include "phrase_tcm_company_kitin_dead.txt"
+#include "phrase_tcm_company_valcor_dead.txt"
+#include "phrase_tcm_choloroprison.txt"
+*/
+
+// New mission for level 30-100 (made by jimmy)
+
+#include "mission_50_100_fyros_fight_wk.txt"
+#include "mission_50_100_matis_fight_wk.txt"
+#include "mission_50_100_tryker_fight_wk.txt"
+#include "mission_50_100_zorai_fight_wk.txt"
+#include "missions_30_50_fyros_wk.txt"
+#include "missions_30_50_matis_wk.txt"
+#include "missions_30_50_tryker_wk.txt"
+#include "missions_30_50_zorai_wk.txt"
+
+// Kitin Event 09 / 04
+#include "ke0904event_wk.txt"
+#include "ke0904_extra_dialogs_wk.txt"

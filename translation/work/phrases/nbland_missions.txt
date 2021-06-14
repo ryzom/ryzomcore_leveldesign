@@ -1,0 +1,5324 @@
+﻿///////phrase_nbland
+
+//									---------------------------------
+//													FYROS
+//									---------------------------------
+
+//Mission Welcome Fyros Newbieland -----------------------------------------------------------------------------------------------------------------
+FYROS_NEWB_WELCOME_AUTOMENU()
+{
+	fyros_newb_welcome_automenu 	[Welcome!]
+}
+
+FYROS_NEWB_WELCOME_TITLE (bot giver, place place_aegus)
+{
+	fyros_newb_welcome_title		[Welcome to $place_aegus$.]
+}
+
+FYROS_NEWB_WELCOME_DESC (bot giver)
+{
+	fyros_newb_welcome_desc		[Follow the indications of $giver$ to find out who can help you and how.]
+}
+
+FYROS_NEWB_WELCOME_SYSTEM_MSG_1 (bot target)
+{
+	(target.gender = female)
+		fyros_newb_welcome_system_msg_1_f	[&AROUND&$target$, one of the village welcomers, would like to bif you welcome. Go speak to her.]
+
+
+	fyros_newb_welcome_system_msg_1_m	[&AROUND&$target$, one of the village welcomers, would like to bif you welcome. Go speak to him.]
+}
+
+FYROS_NEWB_WELCOME_CUSTOM_OBJ_1 (bot target)
+{
+	fyros_newb_welcome_custom_obj_1	[Speak to $target$.]
+}
+
+FYROS_NEWB_WELCOME_TALKMENU_1 ()
+{
+	fyros_newb_welcome_talkmenu_1	[Hello, I'm new round here.]
+}
+
+FYROS_NEWB_WELCOME_STEP_1_1 ()
+{
+	fyros_newb_welcome_step_1_1		[I bid you welcome, $self$. It is time for you to start understanding more about your own people.]
+}
+
+FYROS_NEWB_WELCOME_STEP_1_1b ()
+{
+	fyros_newb_welcome_step_1_1b		[I salute your valor in taking the perilous journey to help rebuild
+						our great Fyros Empire.]
+}
+
+FYROS_NEWB_WELCOME_STEP_1_1c ()
+{
+	fyros_newb_welcome_step_1_1c		[You are on a small island, not far from the Fyros mainland.
+										We have five small villages on this island, and this is one of them.]
+}
+
+FYROS_NEWB_WELCOME_STEP_1_2 (bot target, place capital)
+{
+	(target.gender = female)
+		fyros_newb_welcome_step_1_2_f		[Before you depart for $capital$, the Fyros capital,
+											I recommend you seek training from our esteemed Masters here.
+											You should first speak to $target$.]
+
+
+	fyros_newb_welcome_step_1_2_m		[Before you depart for $capital$, the Fyros capital,
+										I recommend you seek training from our esteemed Masters here.
+										You should first speak to $target$.]
+}
+
+FYROS_NEWB_WELCOME_STEP_1_2b (bot target)
+{
+	(target.gender = female)
+		fyros_newb_welcome_step_1_2b_f		[$target$ is our Fighter Trainer. She will give you coaching in our many deadly techniques...\n
+											You will find her in the lodge, here.]
+
+
+	fyros_newb_welcome_step_1_2b_m		[$target$ is our Fighter Trainer. He will give you coaching in our many deadly techniques...\n
+										You will find him in the lodge, here.]
+}
+
+FYROS_NEWB_WELCOME_STEP_2_1 (race kitins)
+{
+	fyros_newb_welcome_step_2_1			[Ah! At last you come. I wanted to see you to warn you
+										against our greatest enemy, $kitins.da$ $kitins$...]
+}
+
+FYROS_NEWB_WELCOME_STEP_2_1_b ()
+{
+	fyros_newb_welcome_step_2_1_b		[Never think twice if you come up against one: Strike first or flee as fast as you can.]
+}
+
+FYROS_NEWB_WELCOME_STEP_2_1_c ()
+{
+	fyros_newb_welcome_step_2_1_c		[It is they who wiped out our entire Empire in the lands of old.
+										And never forget, it was the Fyros who first bore the full brunt
+										of their wrath three generations ago!]
+}
+
+FYROS_NEWB_WELCOME_STEP_2_2 ()
+{
+		fyros_newb_welcome_step_2_2		[But before you find out more about our past on the mainland,
+										you must first develop your skills and equipment to be able to survive.]
+}
+
+FYROS_NEWB_WELCOME_STEP_2_2_b ()
+{
+		fyros_newb_welcome_step_2_2_b	[I will always be here to help you improve your fighting techniques.]
+}
+
+FYROS_NEWB_WELCOME_STEP_2_2_c (bot target)
+{
+	(target.gender = female)
+		fyros_newb_welcome_step_2_2_c_f		[Now I urge you to meet $target$, our Magician Trainer.
+											She always has the right word for a situation.]
+
+
+		fyros_newb_welcome_step_2_2_c_m		[Now I urge you to meet $target$, our Magician Trainer.
+											He always has the right word for a situation.]
+}
+
+FYROS_NEWB_WELCOME_STEP_3_1 ()
+{
+	fyros_newb_welcome_step_3_1			[I must warn you, $self$, you will meet the Kamis who will open up
+										their mysterious paths to you when the time comes...]
+}
+
+FYROS_NEWB_WELCOME_STEP_3_1_b ()
+{
+	fyros_newb_welcome_step_3_1_b			[The Kamis are strange creatures whose powerful magic is held in esteem.]
+}
+
+FYROS_NEWB_WELCOME_STEP_3_2 ()
+{
+	fyros_newb_welcome_step_3_2		[When you're ready, Kami magic will transport you to the Fyros newfound lands.]
+}
+
+FYROS_NEWB_WELCOME_STEP_3_2_b ()
+{
+	fyros_newb_welcome_step_3_2_b		[Meantime, I will always be here to teach you how to enhance your magic power and wisdom.]
+}
+
+FYROS_NEWB_WELCOME_STEP_3_3 ()
+{
+		fyros_newb_welcome_step_3_3		[One more thing, on the mainland you may come across members of the Karavan.
+										They claim to be disciples of Jena, and indeed, their magic is strong.]
+}
+
+FYROS_NEWB_WELCOME_STEP_3_3_b (bot target)
+{
+	(target.gender = female)
+		fyros_newb_welcome_step_3_3_b_f		[Now, $target$ is waiting to see you, she is the Harvester Trainer here.
+											She's a moody character, but she has traveled widely and knows many secrets !]
+
+
+	fyros_newb_welcome_step_3_3_b_m		[Now, $target$ is waiting to see you, he is the Harvester Trainer here. He's a moody character,
+										but he has traveled widely and knows many secrets !]
+}
+
+
+FYROS_NEWB_WELCOME_STEP_4_1 (bot current)
+{
+	fyros_newb_welcome_step_4_1		[I am $current$. My father was a great Harvester himself, and I hold all his secrets and many more...]
+}
+
+FYROS_NEWB_WELCOME_STEP_4_1_b ()
+{
+	fyros_newb_welcome_step_4_1_b	[For unlike him I have traveled all over the world. I have met the proud Matis, and the mysterious Zoraïs.]
+}
+
+FYROS_NEWB_WELCOME_STEP_4_1_c ()
+{
+	fyros_newb_welcome_step_4_1_c	[And of course, I have spoken with Trykers around the Lake Lands and learned some of their secrets.]
+}
+
+
+FYROS_NEWB_WELCOME_STEP_4_2 ()
+{
+	fyros_newb_welcome_step_4_2		[You too may experience the same freedom if that be your choice.\n
+									You will be able to travel throughout Atys to extract her natural resources,
+									crucial for the life of homins.]
+}
+
+FYROS_NEWB_WELCOME_STEP_4_2_b ()
+{
+		fyros_newb_welcome_step_4_2_b	[But you must take guard, prospecting and extraction can be dangerous.]
+}
+
+FYROS_NEWB_WELCOME_STEP_4_2_c (bot target)
+{
+	(target.gender = female)
+		fyros_newb_welcome_step_4_2_c_f	[Now go see $target$, she's our Master Crafter.]
+
+
+	fyros_newb_welcome_step_4_2_c_m		[Now go see $target$, he's our Master Crafter.]
+}
+
+
+FYROS_NEWB_WELCOME_STEP_5_1 ()
+{
+	fyros_newb_welcome_step_5_1		[Hail, young $self$. Did you know that most living creatures fear the destructive power of dragon fire?]
+}
+
+FYROS_NEWB_WELCOME_STEP_5_1_b ()
+{
+	fyros_newb_welcome_step_5_1_b		[This is not so for the Fyros, for we know how to tame it and use it to our own ends.]
+}
+
+FYROS_NEWB_WELCOME_STEP_5_1_c ()
+{
+	fyros_newb_welcome_step_5_1_c		[The items we make are unique on Atys. As you will see, crafters are at the very heart of homin life.]
+}
+
+FYROS_NEWB_WELCOME_STEP_5_1_d ()
+{
+	fyros_newb_welcome_step_5_1_d		[They stengthen the warrior's arm and protect the weak with their strong armor.]
+}
+
+FYROS_NEWB_WELCOME_STEP_5_2 (bot target)
+{
+	(target.gender = female)
+		fyros_newb_welcome_step_5_2_f	[Now you should pay a visit to $target$, the Merchant. She will sell you everything you will need.]
+
+
+	fyros_newb_welcome_step_5_2_m		[Now you should pay a visit to $target$, the Merchant. He will sell you everything you will need.]
+}
+
+FYROS_NEWB_WELCOME_STEP_5_2_b (bot target)
+{
+	(target.gender = female)
+		fyros_newb_welcome_step_5_2_b_f	[I first met her down under, in the second layer of the Prime Roots.\n
+										\n
+										$target$ is near the shop.]
+
+
+	fyros_newb_welcome_step_5_2_b_m		[I first met him down under, in the second layer of the Prime Roots.\n
+										\n
+										$target$ is near the shop]
+}
+
+FYROS_NEWB_WELCOME_STEP_6_1 (bot previous)
+{
+	(previous.gender = female)
+		fyros_newb_welcome_step_6_1_f	[So, $previous$ sent you, did she ? We have worked together many times, she knows I sell nothing but the best...]
+
+
+	fyros_newb_welcome_step_6_1_m	[So, $previous$ sent you, did he ? We have worked together many times, he knows I sell nothing but the best...]
+}
+
+FYROS_NEWB_WELCOME_STEP_6_1_b ()
+{
+	fyros_newb_welcome_step_6_1_b	[You will need to replace or upgrade your weaponry and equipment as you make progress.
+									The merchants will sell you what you need at a reasonable price.]
+}
+
+FYROS_NEWB_WELCOME_STEP_6_2 (bot target)
+{
+	(target.gender = female)
+		fyros_newb_welcome_step_6_2_f	[I suggest you go and see $target$, the local supplier.
+										She's always ready to hire keen homins to help her in her work. So go and speak to her.]
+
+
+	fyros_newb_welcome_step_6_2_m	[I suggest you go and see $target$, the local supplier.
+									He's always ready to hire keen homins to help him in his work. So go and speak to him.]
+}
+
+FYROS_NEWB_WELCOME_STEP_7_1 ()
+{
+	fyros_newb_welcome_step_7_1		[Look's like you're new round here. Well, welcome! When you start looking for
+									work to earn a few dappers, come and see me ! I've always a task or two to propose.]
+}
+
+FYROS_NEWB_WELCOME_STEP_7_1_b ()
+{
+	fyros_newb_welcome_step_7_1_b		[I mostly deal in trade and escorting goods. If you prefer fighting or foraging, the corporal will give you a mission or two.]
+}
+
+FYROS_NEWB_WELCOME_STEP_7_2 ()
+{
+		fyros_newb_welcome_step_7_2		[If crafting is your line, the foreman will no doubt be interested by your talents.]
+}
+
+FYROS_NEWB_WELCOME_STEP_7_2_b (bot giver)
+{
+	(giver.gender = female)
+		fyros_newb_welcome_step_7_2_b_f	[You can return to $giver$ now, she most likely has some more advice to give you.]
+
+
+		fyros_newb_welcome_step_7_2_b_m	[You can return to $giver$ now, he most likely has some more advice to give you.]
+}
+
+FYROS_NEWB_WELCOME_STEP_8_1 ()
+{
+	fyros_newb_welcome_step_8_1		[Good ! Now you know our village a little better.
+									But before facing the dangers on the mainland, you've got to become
+									stronger and increase your knowledge.]
+}
+
+FYROS_NEWB_WELCOME_STEP_8_1_b ()
+{
+	fyros_newb_welcome_step_8_1_b	[If you want, I can give you a few tasks to do in different fields to help you progress.
+									Tu n'auras qu'à me dire ce qui t'intéresse.]
+}
+
+FYROS_NEWB_WELCOME_STEP_8_2 ()
+{
+	fyros_newb_welcome_step_8_2		[When you're ready, young $self$,
+									I'll tell you how to join the Fyros capital on the mainland.]
+}
+
+FYROS_NEWB_WELCOME_TALKMENU_3 ()
+{
+	fyros_newb_welcome_talkmenu_3	[Help me to progress]
+}
+
+FYROS_NEWB_WELCOME_STEP_8_3 ()
+{
+	fyros_newb_welcome_step_8_3		[Dans quel domaine souhaites-tu progresser ?]
+}
+
+FYROS_NEWB_WELCOME_TEAM_ANSWER()
+{
+	fyros_newb_welcome_team_answer 	[fighting in team with homins]
+}
+
+FYROS_NEWB_WELCOME_TEAM_STEP_1 ()
+{
+	fyros_newb_welcome_team_step_1		[Good choice! With the help of others you will progress faster.]
+}
+
+FYROS_NEWB_WELCOME_TEAM_STEP_2 ()
+{
+	fyros_newb_welcome_team_step_2		[Make a team, then I will give you a fighting mission. ]
+}
+
+FYROS_NEWB_WELCOME_TEAM_SYSTEM_MSG_1 ()
+{
+		fyros_newb_welcome_team_system_msg_1	[If you're in team, select the team mission in the right-click menu of the welcomer]
+}
+
+FYROS_NEWB_WELCOME_TALKMENU_4 ()
+{
+	fyros_newb_welcome_talkmenu_4	[Je suis prêt à progresser]
+}
+
+FYROS_NEWB_WELCOME_DESC_2 (bot giver)
+{
+	fyros_newb_welcome_desc_2		[Progress in your main skill in order to get ready to join the Fyros mainland.]
+}
+
+FYROS_NEWB_WELCOME_SYSTEM_MSG_3 ()
+{
+		fyros_newb_welcome_system_msg_3	[&AROUND&You must have 20 in the main skill of your choice to finish this mission step.]
+}
+
+FYROS_NEWB_WELCOME_CUSTOM_OBJ_2 (bot giver)
+{
+	fyros_newb_welcome_custom_obj_2	[Progress in your main skill. You can speak to $giver$ if you want help.]
+}
+
+FYROS_NEWB_WELCOME_SYSTEM_MSG_2 (bot giver)
+{
+	fyros_newb_welcome_system_msg_2	[&AROUND&You are ready to join the Fyros mainland! Go and speak to $giver$ to find out more.]
+}
+
+FYROS_NEWB_WELCOME_DESC_3 (bot giver)
+{
+	fyros_newb_welcome_desc_3		[Join the Fyros capital to continue your adventures.]
+}
+
+FYROS_NEWB_WELCOME_TALKMENU_2 ()
+{
+	fyros_newb_welcome_talkmenu_2	[I would like to leave for the mainland.]
+}
+
+FYROS_NEWB_WELCOME_STEP_9_1 ()
+{
+	fyros_newb_welcome_step_9_1	[I can see you have progressed well. Congratulations, $self$ !
+								You are now tough enough to help our Fyros people rebuild our empire!]
+}
+
+FYROS_NEWB_WELCOME_STEP_9_1_b (place place_pyr)
+{
+	fyros_newb_welcome_step_9_1_b	[The time has come for you to walk the ground of $place_pyr$, the capital of the Fyros of the desert!
+									Mais attention : tu ne pourras revenir ici après ton départ. Sois donc sûr de ton choix.]
+}
+
+FYROS_NEWB_WELCOME_STEP_9_1_c ()
+{
+	fyros_newb_welcome_step_9_1_c	[In the village you will find a guide who can lead you to a Kami who has the power to teleport you to the mainland. When you will be in the capital, talk to the city welcomer.]
+}
+
+FYROS_NEWB_WELCOME_STEP_9_2 (bot kguide)
+{
+	(kguide.gender = female)
+		fyros_newb_welcome_step_9_2_f	[Go and see $kguide$, the Kami Adept, on my behalf. She will guide you to the Kami Preacher. Tell her I sent you.\n
+			\n
+			May Jena light up your way!]
+
+		fyros_newb_welcome_step_9_2_m	[Go and see $kguide$, the Kami Adept, on my behalf. He will guide you to the Kami Preacher. Tell him I sent you.\n
+			\n
+			May Jena light up your way!]
+}
+
+FYROS_NEWB_WELCOME_STEP_10_1 (bot previous)
+{
+	fyros_newb_welcome_step_10_1	[$previous$ is a brave homin and a friend of the mighty Kamis...
+									It is told that the Kamis were sent on Atys by the goddess Jena
+									to preserve her creation.]
+}
+
+FYROS_NEWB_WELCOME_STEP_10_1_b ()
+{
+	fyros_newb_welcome_step_10_1_b	[It is thanks to the Kamis that magic became an important part of Fyros culture.]
+}
+
+FYROS_NEWB_WELCOME_STEP_10_2 ()
+{
+	fyros_newb_welcome_step_10_2	[You must speak to the Kami for him to show you the way that leads to the mainland.
+									If you don't know where to find him, follow your compass, it will guide you to him.]
+}
+
+FYROS_NEWB_WELCOME_STEP_11 ()
+{
+	fyros_newb_welcome_step_11	[You want to join great Fyros city? If you make offering, me give you magic item to send you there.]
+}
+
+FYROS_NEWB_WELCOME_STEP_11_TEMP ()
+{
+	fyros_newb_welcome_step_11_temp	[Me can teleport. Just ask.]
+}
+
+FYROS_NEWB_WELCOME_CUSTOM_OBJ_3_1 (item i1, int qt1, int qual1, bot kami)
+{
+	fyros_newb_welcome_custom_obj_3_1	[Buy $i1$ from $kami$.]
+}
+
+FYROS_NEWB_WELCOME_STEP_12 ()
+{
+	fyros_newb_welcome_step_12	[You must use magic item for leave to desert.
+								Remember, there is no return.]
+}
+
+FYROS_NEWB_WELCOME_CUSTOM_OBJ_4 (item i1, place place_pyr)
+{
+	fyros_newb_welcome_custom_obj_4	[Use $i1$ to join $place_pyr$.]
+}
+
+FYROS_NEWB_WELCOME_END_1 (place place_pyr)
+{
+	fyros_newb_welcome_end_1	[Welcome to $place_pyr$, $self$! I'm always glad to see newcomers here. Don't be afraid to visit our great city, there is a lot of wonders to discover.]
+}
+
+FYROS_NEWB_WELCOME_END_2 (bot barman, place place_pyr)
+{
+	(barman.gender = female)
+	fyros_newb_welcome_end_2_f	[$barman$, barman of $place_pyr$, has important things to say to you. Go and talk to her. See you soon, $self$!]
+
+	(barman.gender = male)
+	fyros_newb_welcome_end_2_m	[$barman$, barman of $place_pyr$, has important things to say to you. Go and talk to him. See you soon, $self$!]
+}
+
+FYROS_NEWB_WELCOME_SYSTEM_MSG_END (place continent_fyros)
+{
+	fyros_newb_welcome_system_msg_end	[&AROUND&You have finished your training with success.
+										Aventure awaits you in $continent_fyros.da$ $continent_fyros$ !]
+}
+
+//mission temporaire auto teleport kami ----------------------------------------------------------------------------------------------------------------
+FYROS_NEWB_TP_KAMI_TEMP_AUTOMENU(place place_pyr)
+{
+	fyros_newb_tp_kami_temp_automenu 	[Teleport to $place_pyr$.]
+}
+
+FYROS_NEWB_TP_KAMI_TEMP_TITLE(place place_pyr)
+{
+	fyros_newb_tp_kami_temp_title 	[Teleport to $place_pyr$.]
+}
+
+
+FYROS_NEWB_TP_KAMI_TEMP_DESC(place place_pyr)
+{
+	fyros_newb_tp_kami_temp_desc 	[Teleport to $place_pyr$.]
+}
+
+
+FYROS_NEWB_TP_KAMI_TEMP_1 ()
+{
+	fyros_newb_tp_kami_temp_1	[You want to join great Fyros city? Me can send you there but there is no return
+								and big desert can be dangerous. You sure?]
+}
+
+ANSWER_KAMI_TEMP_YES ()
+{
+	answer_kami_temp_yes	[Yes, I want to leave]
+}
+
+ANSWER_KAMI_TEMP_NO ()
+{
+	answer_kami_no	[No, I'll stay here]
+}
+
+FYROS_NEWB_TP_KAMI_TEMP_2 ()
+{
+	fyros_newb_tp_kami_temp_2	[Come back later, when you are ready.]
+}
+
+//Fight tutorial missions -------------------------------------------------------------------------------
+
+//mission 1
+FYROS_NEWB_FIGHT_1_AUTOMENU()
+{
+	fyros_newb_fight_1_automenu 	[I wanna learn how to fight.]
+}
+
+FYROS_NEWB_FIGHT_ANSWER()
+{
+	fyros_newb_fight_answer 	[Melee fighting.]
+}
+
+FYROS_NEWB_FIGHT_1_TITLE(bot giver)
+{
+	fyros_newb_fight_1_title		[Initiation to combat 1]
+}
+
+FYROS_NEWB_FIGHT_1_DESC(bot giver)
+{
+	fyros_newb_fight_1_desc		[Follow the instructions of $giver$ to progress in techniques of combat.]
+}
+
+FYROS_NEWB_FIGHT_1_STEP_1_1()
+{
+	fyros_newb_fight_1_step_1_1	[Surviving on Atys can be very hard, you need to know how to fight if you want to live long.]
+}
+
+FYROS_NEWB_FIGHT_1_STEP_1_2(creature_model yubo)
+{
+	fyros_newb_fight_1_step_1_2	[You must start your training by facing an easy opponent : find a small herbivore,
+								$yubo.ia$ $yubo$, and kill it.]
+}
+
+FYROS_NEWB_FIGHT_1_END(creature_model yubo)
+{
+	fyros_newb_fight_1_end	[Good ! But remember that $yubo$ is an easy prey, the next killings
+							won't be so easy as you will be up against tougher beasts.]
+}
+
+
+//mission 2
+FYROS_NEWB_FIGHT_2_AUTOMENU()
+{
+	fyros_newb_fight_2_automenu 	[I'd like to learn more about combat.]
+}
+
+FYROS_NEWB_FIGHT_2_TITLE(bot giver)
+{
+	fyros_newb_fight_2_title		[Initiation to combat 2]
+}
+
+FYROS_NEWB_FIGHT_2_DESC(bot giver)
+{
+	fyros_newb_fight_2_desc		[Follow the instructions of $giver$ to continue to progress in techniques of combat.]
+}
+
+FYROS_NEWB_FIGHT_2_PREREQ (bot target, sphrase increasedamage)
+{
+	(target.gender = female)
+		fyros_newb_fight_2_prereq_f		[To continue to progress, you need to learn a new technique of $increasedamage$. Go and see $target$, she can teach you.]
+
+
+		fyros_newb_fight_2_prereq_m		[To continue to progress, you need to learn a new technique of $increasedamage$. Go and see $target$, he can teach you.]
+}
+
+FYROS_NEWB_FIGHT_2_CUSTOM_OBJ_1(bot giver, bot target, sphrase increasedamage)
+{
+ 	fyros_newb_fight_2_custom_obj_1	[Apprendre une nouvelle technique, $increasedamage$, auprès de $target$, et retourner parler à $giver$]
+}
+
+FYROS_NEWB_FIGHT_2_STEP_1_1(creature_model ragus)
+{
+	fyros_newb_fight_2_step_1_1	[Now we need to get rid of a few predators. There are too many $ragus$ on our island,
+								and they prey on the herbivores.]
+}
+
+FYROS_NEWB_FIGHT_2_STEP_1_2()
+{
+ 	fyros_newb_fight_2_step_1_2	[I would be grateful if you managed to kill one by yourself, you shall earn a good deal of experience
+								if you do. But be really careful...]
+}
+
+FYROS_NEWB_FIGHT_2_END()
+{
+	fyros_newb_fight_2_end		[Good. Here's a tip for you. If you want more fighting tasks, you should go and talk to a corporal.]
+}
+
+
+//Magic tutorial mission -------------------------------------------------------------------------------
+
+//mission 1
+FYROS_NEWB_MAGIC_1_AUTOMENU()
+{
+	fyros_newb_magic_1_automenu 	[I'd like to learn some magic.]
+}
+
+FYROS_NEWB_MAGIC_ANSWER()
+{
+	fyros_newb_magic_answer 	[Magic.]
+}
+
+FYROS_NEWB_MAGIC_1_TITLE(bot giver)
+{
+	fyros_newb_magic_1_title		[Initiation to magic 1]
+}
+
+FYROS_NEWB_MAGIC_1_DESC(bot giver)
+{
+	fyros_newb_magic_1_desc		[Follow the instructions of $giver$ to progress in magic.]
+}
+
+FYROS_NEWB_MAGIC_1_PREREQ (sphrase selfheal)
+{
+		fyros_newb_magic_1_prereq		[Pour continuer à progresser, tu as besoin d'apprendre un nouveau sort, $selfheal$.
+										Va voir l'un des trainers afin qu'il te l'enseigne.]
+}
+
+FYROS_NEWB_MAGIC_1_CUSTOM_OBJ_1(sphrase selfheal, bot giver)
+{
+ 	fyros_newb_magic_1_custom_obj_1	[Apprendre un nouveau sort, $selfheal$, et retourner parler à $giver$]
+}
+
+FYROS_NEWB_MAGIC_1_STEP_1_1()
+{
+	fyros_newb_magic_1_step_1_1	[Magic training can be long and difficult, but it offers a very good means to survive here.]
+}
+
+FYROS_NEWB_MAGIC_1_STEP_1_2(sbrick heal)
+{
+	fyros_newb_magic_1_step_1_2	[To start with, show me what you know, cast $heal.ia$ $heal$.]
+}
+
+FYROS_NEWB_MAGIC_1_END_1()
+{
+	fyros_newb_magic_1_end_1	[Good ! If you want to concentrate on healing spells you'll have to make up a team with some fighters...]
+}
+
+FYROS_NEWB_MAGIC_1_END_2()
+{
+	fyros_newb_magic_1_end_2	[... they will need your services, it's the best way to progress in this line.]
+}
+
+//mission 2
+FYROS_NEWB_MAGIC_2_AUTOMENU()
+{
+	fyros_newb_magic_2_automenu 	[I'd like to learn more about magic.]
+}
+
+FYROS_NEWB_MAGIC_2_TITLE(bot giver)
+{
+	fyros_newb_magic_2_title		[Initiation to magic]
+}
+
+FYROS_NEWB_MAGIC_2_DESC(bot giver)
+{
+	fyros_newb_magic_2_desc		[Follow the instructions of $giver$ to progress in magic.]
+}
+
+FYROS_NEWB_MAGIC_2_PREREQ (bot target, sphrase aciddamage)
+{
+	(target.gender = female)
+		fyros_newb_magic_2_prereq_f		[To continue to progress, you need to learn a new spell : $aciddamage$. Go and see $target$, she can teach you.]
+
+
+		fyros_newb_magic_2_prereq_m		[To continue to progress, you need to learn a new spell : $aciddamage$. Go and see $target$, he can teach you.]
+}
+
+FYROS_NEWB_MAGIC_2_CUSTOM_OBJ_1(bot target, bot giver, sphrase aciddamage)
+{
+ 	fyros_newb_magic_2_custom_obj_1	[Apprendre un nouveau sort, $aciddamage$, auprès de $target$, et retourner parler à $giver$]
+}
+
+FYROS_NEWB_MAGIC_2_STEP_1_1()
+{
+	fyros_newb_magic_2_step_1_1	[The first use for magic is to combat with it.]
+}
+
+FYROS_NEWB_MAGIC_2_STEP_1_2(sbrick nuke, creature_model yubo)
+{
+ 	fyros_newb_magic_2_step_1_2	[Let's try : use $nuke.ia$ $nuke$ to kill $yubo.ia$ $yubo$.]
+}
+
+FYROS_NEWB_MAGIC_2_OBJ_1_1(sbrick nuke, creature_model yubo)
+{
+	fyros_newb_magic_2_obj_1		[Use $nuke.ia$ $nuke$ to kill $yubo.ia$ $yubo$]
+}
+
+FYROS_NEWB_MAGIC_2_OBJ_2_1(creature_model yubo, int qt)
+{
+	fyros_newb_magic_2_obj_2		[Kill $yubo.ia$ $yubo$.]
+}
+
+FYROS_NEWB_MAGIC_2_END()
+{
+	fyros_newb_magic_2_end		[Good job! Magic training can be long and difficult, but it offers a very good means to fight and to survive here.]
+}
+
+FYROS_NEWB_MAGIC_3_STEP_1_1()
+{
+	fyros_newb_magic_3_step_1_1	[Destructive magic is powerful, but healing spells can be strong too, although
+								to take profit out of them you'll have to make up a team with some fighters.]
+}
+
+FYROS_NEWB_MAGIC_3_STEP_1_2(sbrick heal)
+{
+	fyros_newb_magic_3_step_1_2	[Fortunately, they will often need your services, so it's the best way to progress in this line. Go fight with others, and cast $heal.ia$ $heal$.]
+}
+
+FYROS_NEWB_MAGIC_3_END()
+{
+	fyros_newb_magic_3_end		[Healing and helping others is a way leading to victory. Here's a little money for you. And if you're still looking for work, go and see the corporal, he's always got something on.]
+}
+
+
+//Harvest tutorial mission -------------------------------------------------------------------------------
+
+//mission 1
+FYROS_NEWB_HARVEST_1_AUTOMENU()
+{
+	fyros_newb_harvest_1_automenu 	[I'd like to progress in harvesting.]
+}
+
+FYROS_NEWB_HARVEST_ANSWER()
+{
+	fyros_newb_harvest_answer 	[Harvesting.]
+}
+
+FYROS_NEWB_HARVEST_1_TITLE(bot giver)
+{
+	fyros_newb_harvest_1_title		[Initiation to harvesting 1]
+}
+
+FYROS_NEWB_HARVEST_1_DESC(bot giver)
+{
+	fyros_newb_harvest_1_desc		[Follow the instructions of $giver$ to progress in harvesting.]
+}
+
+FYROS_NEWB_HARVEST_1_PREREQ (sphrase basicextraction)
+{
+		fyros_newb_harvest_1_prereq		[Pour continuer à progresser, tu as besoin d'apprendre une nouvelle technique, $basicextraction$.
+										Va voir l'un des trainers afin qu'il te l'enseigne.]
+}
+
+FYROS_NEWB_HARVEST_1_CUSTOM_OBJ_1(sphrase basicextraction, bot giver)
+{
+ 	fyros_newb_harvest_1_custom_obj_1	[Apprendre une nouvelle technique, $basicextraction$, et retourner parler à $giver$]
+}
+
+FYROS_NEWB_HARVEST_1_STEP_1_1()
+{
+	fyros_newb_harvest_1_step_1_1	[To progress in harvesting, you'll have to learn to locate sources, and extract their contents.]
+}
+
+FYROS_NEWB_HARVEST_1_STEP_1_2(item rm1, item rm2)
+{
+	fyros_newb_harvest_1_step_1_2	[Let's start with something easy, bring me back $rm1.ia$ $rm1$ and $rm2.ia$ $rm2$
+									which you'll find in the ground in the village.]
+}
+
+FYROS_NEWB_HARVEST_1_END()
+{
+	fyros_newb_harvest_1_end	[Excellent. But that was easy because here the sources glow above ground and are easy to spot.]
+}
+
+//mission 2
+FYROS_NEWB_HARVEST_2_AUTOMENU()
+{
+	fyros_newb_harvest_2_automenu 	[I'd like to learn more about harvesting.]
+}
+
+FYROS_NEWB_HARVEST_2_TITLE(bot giver)
+{
+	fyros_newb_harvest_2_title		[Initiation to harvesting 2]
+}
+
+FYROS_NEWB_HARVEST_2_DESC(bot giver)
+{
+	fyros_newb_harvest_2_desc		[Follow the instructions of $giver$ to continue to progress in harvesting.]
+}
+
+FYROS_NEWB_HARVEST_2_PREREQ (sphrase basicprospection, bot target)
+{
+	(target.gender = female)
+		fyros_newb_harvest_2_prereq_f		[To continue to progress, you need to learn a new technique : $basicprospection$. Go and see $target$, she can teach you.]
+
+
+		fyros_newb_harvest_2_prereq_m		[To continue to progress, you need to learn a new technique : $basicprospection$. Go and see $target$, he can teach you.]
+}
+
+FYROS_NEWB_HARVEST_2_CUSTOM_OBJ_1(sphrase basicprospection, bot target, bot giver)
+{
+ 	fyros_newb_harvest_2_custom_obj_1	[Apprendre une nouvelle technique, $basicprospection$, auprès de $target$, et retourner parler à $giver$]
+}
+
+FYROS_NEWB_HARVEST_2_STEP_1_1()
+{
+	fyros_newb_harvest_2_step_1_1	[Let's continue then : your ability to extract correctly will have a bearing on the quality of the materials...]
+}
+
+FYROS_NEWB_HARVEST_2_STEP_1_2()
+{
+	fyros_newb_harvest_2_step_1_2	[...but take great care because it can be dangerous, there are many pockets of gas on Atys.]
+}
+
+FYROS_NEWB_HARVEST_2_STEP_1_3(item rm3, int ql)
+{
+ 	fyros_newb_harvest_2_step_1_3	[Remember to think about it when you go and fetch me $rm3.ia$ $rm3$ of quality $ql$.
+									Theses will only be found along the cliffs to the south of this region.]
+}
+
+FYROS_NEWB_HARVEST_2_STEP_1_4()
+{
+ 	fyros_newb_harvest_2_step_1_4	[You'll have to locate the sources by yourself by prospecting else their glow won't become visible.]
+}
+
+FYROS_NEWB_HARVEST_2_END()
+{
+	fyros_newb_harvest_2_end		[Good, here's a little money for you. And if you're after more work,
+									go and see a corporal, they've always something going.]
+}
+
+//Craft tutorial mission -------------------------------------------------------------------------------
+
+//mission 1
+FYROS_NEWB_CRAFT_1_AUTOMENU()
+{
+	fyros_newb_craft_1_automenu 	[I'd like to progress in crafting.]
+}
+
+FYROS_NEWB_CRAFT_ANSWER()
+{
+	fyros_newb_craft_answer 	[Crafting.]
+}
+
+FYROS_NEWB_CRAFT_1_TITLE(bot giver)
+{
+	fyros_newb_craft_1_title		[Initiation to crafting 1]
+}
+
+FYROS_NEWB_CRAFT_1_DESC(bot giver)
+{
+	fyros_newb_craft_1_desc			[Follow the instructions of $giver$ to progress in crafting.]
+}
+
+FYROS_NEWB_CRAFT_1_PREREQ (sphrase fyrosarmor)
+{
+		fyros_newb_craft_1_prereq		[Pour continuer à progresser, tu as besoin d'apprendre une nouvelle technique, $fyrosarmor$.
+										Va voir l'un des trainers afin qu'il te l'enseigne.]
+}
+
+FYROS_NEWB_CRAFT_1_CUSTOM_OBJ_1(sphrase fyrosarmor, bot giver)
+{
+ 	fyros_newb_craft_1_custom_obj_1	[Apprendre une nouvelle technique, $fyrosarmor$, et retourner parler à $giver$]
+}
+
+FYROS_NEWB_CRAFT_1_STEP_1_1()
+{
+	fyros_newb_craft_1_step_1_1	[Crafting is more difficult that it might seem, but with willpower everything is possible.]
+}
+
+FYROS_NEWB_CRAFT_1_STEP_1_2(item boots, int ql)
+{
+	fyros_newb_craft_1_step_1_2	[Let's begin by finding out what you know : make $boots.ia$ $boots$ of quality $ql$. You will need a tool. If you don't already have one, there is a merchant who sell tools in the village.]
+}
+
+FYROS_NEWB_CRAFT_1_END_1()
+{
+	fyros_newb_craft_1_end_1	[Very good ! To progress, the best means is to practice making items... ]
+}
+
+FYROS_NEWB_CRAFT_1_END_2()
+{
+	fyros_newb_craft_1_end_2	[...it's only by analysing mistakes made during tests that the quality crafter
+								will develop his or her techniques.]
+}
+
+//mission 2
+FYROS_NEWB_CRAFT_2_AUTOMENU()
+{
+	fyros_newb_craft_2_automenu 	[I'd like to learn more about crafting.]
+}
+
+FYROS_NEWB_CRAFT_2_TITLE(bot giver)
+{
+	fyros_newb_craft_2_title		[Initiation to crafting 2]
+}
+
+FYROS_NEWB_CRAFT_2_DESC(bot giver)
+{
+	fyros_newb_craft_2_desc			[Follow the instructions of $giver$ to continue to progress in crafting.]
+}
+
+FYROS_NEWB_CRAFT_2_PREREQ (bot target, sbrick fyrosgloves)
+{
+	(target.gender = female)
+		fyros_newb_craft_2_prereq_f		[To continue to progress, you need to learn a new crafting plan, $fyrosgloves$. Go and see $target$, she can teach you.]
+
+
+		fyros_newb_craft_2_prereq_m		[To continue to progress, you need to learn a new crafting plan, $fyrosgloves$. Go and see $target$, he can teach you.]
+}
+
+FYROS_NEWB_CRAFT_2_CUSTOM_OBJ_1(bot target, bot giver, sbrick fyrosgloves)
+{
+ 	fyros_newb_craft_2_custom_obj_1	[Apprendre un nouveau schéma de fabrication, $fyrosgloves$, auprès de $target$, et retourner parler à $giver$]
+}
+
+FYROS_NEWB_CRAFT_2_STEP_1_1()
+{
+ 	fyros_newb_craft_2_step_1_1	[A crafter may get hampered by the quality of materials used.]
+}
+
+FYROS_NEWB_CRAFT_2_STEP_1_2()
+{
+ 	fyros_newb_craft_2_step_1_2	[So besides training, you need to get yourself a good supplier if you want to make fine objects.]
+}
+
+FYROS_NEWB_CRAFT_2_STEP_1_3(item gloves, int ql)
+{
+ 	fyros_newb_craft_2_step_1_3	[When you're ready, make $gloves.ia$ $gloves$ of quality $ql$ for me.]
+}
+
+FYROS_NEWB_CRAFT_2_END()
+{
+	fyros_newb_craft_2_end		[Excellent, here's a little reward for your efforts.
+								And if you're looking for more work, go and see a foreman,
+								they've always got something going.]
+}
+
+//									---------------------------------
+//													MATIS
+//									---------------------------------
+
+//Mission Welcome Matis Newbieland -----------------------------------------------------------------------------------------------------------------
+MATIS_NEWB_WELCOME_AUTOMENU()
+{
+	matis_newb_welcome_automenu 	[Welcome!]
+}
+
+MATIS_NEWB_WELCOME_TITLE (bot giver, place place_stalli)
+{
+	matis_newb_welcome_title		[Welcome to $place_stalli$.]
+}
+
+MATIS_NEWB_WELCOME_DESC (bot giver)
+{
+	matis_newb_welcome_desc		[Follow the indications of $giver$ to find out who can help you and how.]
+}
+
+MATIS_NEWB_WELCOME_SYSTEM_MSG_1 (bot target)
+{
+	(target.gender = female)
+		matis_newb_welcome_system_msg_1_f	[&AROUND&$target$, one of the village welcomers, would like to bif you welcome. Go speak to her.]
+
+
+	matis_newb_welcome_system_msg_1	[&AROUND&$target$, one of the village welcomers, would like to bif you welcome. Go speak to him.]
+}
+
+MATIS_NEWB_WELCOME_CUSTOM_OBJ_1 (bot target)
+{
+	matis_newb_welcome_custom_obj_1	[Speak to $target$.]
+}
+
+MATIS_NEWB_WELCOME_TALKMENU_1 ()
+{
+	matis_newb_welcome_talkmenu_1	[Hello, I'm new round here.]
+}
+
+MATIS_NEWB_WELCOME_STEP_1_1 ()
+{
+	matis_newb_welcome_step_1_1		[I bid you welcome, $self$. The time has come for you to start understanding more about your own people.]
+}
+
+MATIS_NEWB_WELCOME_STEP_1_1b ()
+{
+	matis_newb_welcome_step_1_1b		[Vast knowledge has been passed down to us from our ancestors, and we intend to use it to
+										rebuild our noble Kingdom.]
+}
+
+MATIS_NEWB_WELCOME_STEP_1_1c ()
+{
+	matis_newb_welcome_step_1_1c		[You are on a small island, not far from the Matis mainland. We have five small villages on this
+										island, and this is one of them.]
+}
+
+MATIS_NEWB_WELCOME_STEP_1_2 (bot target, place capital)
+{
+	(target.gender = female)
+		matis_newb_welcome_step_1_2_f		[But I have said enough. You have yet to meet the highly esteemed
+											personalities of this village.
+											Before you decide to leave for $capital$, the Matis capital,
+											I want you to meet $target$.]
+
+
+	matis_newb_welcome_step_1_2_m		[But I have said enough. You have yet to meet the highly esteemed
+										personalities of this village.
+										Before you decide to leave for $capital$, the Matis capital,
+										I want you to meet $target$.]
+}
+
+MATIS_NEWB_WELCOME_STEP_1_2b (bot target)
+{
+	(target.gender = female)
+		matis_newb_welcome_step_1_2b_f		[$target$ is our Fighter Trainer. She will give you coaching in our many deadly techniques...\n
+											You will find her in the tree.]
+
+
+	matis_newb_welcome_step_1_2b_m		[$target$ is our Fighter Trainer. He will give you coaching in our many deadly techniques...\n
+										You will find him in the tree.]
+}
+
+MATIS_NEWB_WELCOME_STEP_2_1 (race kitins)
+{
+	matis_newb_welcome_step_2_1			[Ah ! I was beginning to think you'd already got yourself lost.
+										Now, I must warn you against our greatest enemy, $kitins.da$ $kitins$.]
+}
+
+MATIS_NEWB_WELCOME_STEP_2_1_b ()
+{
+	matis_newb_welcome_step_2_1_b		[Never think twice if you come up against one:
+										Strike first or flee as fast as you can.]
+}
+
+MATIS_NEWB_WELCOME_STEP_2_1_c ()
+{
+	matis_newb_welcome_step_2_1_c		[It is they who wiped out our entire Kingdom in the lands of old.
+										And never forget this,
+										it was the Fyros who first provoked their wrath and stirred
+										them from their underground nests!]
+}
+
+MATIS_NEWB_WELCOME_STEP_2_2 ()
+{
+		matis_newb_welcome_step_2_2		[But before you find out more about our past on the mainland, you
+										must first develop your skills
+										and equipment to be able to survive.]
+}
+
+MATIS_NEWB_WELCOME_STEP_2_2_b ()
+{
+		matis_newb_welcome_step_2_2_b	[I will always be here to help you improve your fighting techniques.]
+}
+
+MATIS_NEWB_WELCOME_STEP_2_2_c (bot target)
+{
+	(target.gender = female)
+		matis_newb_welcome_step_2_2_c_f		[Now I urge you to meet $target$, our Magician Trainer. She always
+											has the right word for a situation.]
+
+
+		matis_newb_welcome_step_2_2_c_m		[Now I urge you to meet $target$, our Magician Trainer. He always
+											has the right word for a situation.]
+}
+
+MATIS_NEWB_WELCOME_STEP_3_1 ()
+{
+	matis_newb_welcome_step_3_1			[Welcome to our village, I'm pleased to meet you ! These are such crucial times.]
+}
+
+MATIS_NEWB_WELCOME_STEP_3_1_b ()
+{
+	matis_newb_welcome_step_3_1_b			[The Great Matis people is gathering evermore, and the presence of the Karavan
+											bolsters our courage,
+											for we are able to teleport again. Our villages shall grow in
+											strength rapidly.]
+}
+
+MATIS_NEWB_WELCOME_STEP_3_2 ()
+{
+	matis_newb_welcome_step_3_2		[When you feel ready to leave our village, the Karavan will guide you. His members
+									are strange, dark individuals, no homin has yet seen their true face. But they are not
+									to be feared, at least that is my opinion.]
+}
+
+MATIS_NEWB_WELCOME_STEP_3_2_b ()
+{
+	matis_newb_welcome_step_3_2_b		[As a magician I must warn you that the paths of the Karavan are mysterious and obscure.
+										But there is another way that you will discover soon.]
+}
+
+MATIS_NEWB_WELCOME_STEP_3_3 ()
+{
+		matis_newb_welcome_step_3_3		[If you develop your magic skills, you will meet the Kamis and with a little luck,
+										they will open your eyes upon another world. Atys has many faces...]
+}
+
+MATIS_NEWB_WELCOME_STEP_3_3_b (bot target)
+{
+	(target.gender = female)
+		matis_newb_welcome_step_3_3_b_f		[But I must be getting on ! You had better leave now, but promise me you'll stop by $target$.
+											She's the harvester trainer. She's a moody character, but she has traveled widely and knows many secrets!]
+
+
+	matis_newb_welcome_step_3_3_b_m		[But I must be getting on ! You had better leave now, but promise me you'll stop by $target$.
+										He's the harvester trainer. He's a moody character, but he has traveled widely and knows many secrets!]
+}
+
+
+MATIS_NEWB_WELCOME_STEP_4_1 (bot current)
+{
+	matis_newb_welcome_step_4_1		[I am $current$. My father was a great Harvester himself, and I hold all his secrets and
+									many more...]
+}
+
+MATIS_NEWB_WELCOME_STEP_4_1_b ()
+{
+	matis_newb_welcome_step_4_1_b	[For unlike him I have traveled all over the world. I have met the proud Fyros,
+									and the mysterious Zoraïs.]
+}
+
+MATIS_NEWB_WELCOME_STEP_4_1_c ()
+{
+	matis_newb_welcome_step_4_1_c	[And of course, I have spoken with Trykers around the Lake Lands and learned some of their secrets.]
+}
+
+
+MATIS_NEWB_WELCOME_STEP_4_2 ()
+{
+	matis_newb_welcome_step_4_2		[You too may experience the same freedom if that be your choice.\n
+									You will be able to travel throughout Atys to extract her natural resources,
+									crucial for the life of homins.]
+}
+
+MATIS_NEWB_WELCOME_STEP_4_2_b ()
+{
+		matis_newb_welcome_step_4_2_b	[But you must take guard, prospecting and extraction can be dangerous.]
+}
+
+MATIS_NEWB_WELCOME_STEP_4_2_c (bot target)
+{
+	(target.gender = female)
+		matis_newb_welcome_step_4_2_c_f	[Now go see $target$, she's our Master Crafter.]
+
+
+	matis_newb_welcome_step_4_2_c_m		[Now go see $target$, he's our Master Crafter.]
+}
+
+
+MATIS_NEWB_WELCOME_STEP_5_1 ()
+{
+	matis_newb_welcome_step_5_1		[Je te salue, jeune $self$. Sais-tu ce qui fait la gloire des artisans Matis ? C'est la faculté
+									de modeler la matière vivante selon leur désir.]
+}
+
+MATIS_NEWB_WELCOME_STEP_5_1_b ()
+{
+	matis_newb_welcome_step_5_1_b		[Nous connaissons les secrets des plantes, et nous les utilisons pour façonner des objets vivants, dont
+										la beauté est sans égale.]
+}
+
+MATIS_NEWB_WELCOME_STEP_5_1_c ()
+{
+	matis_newb_welcome_step_5_1_c		[The items we make are unique on Atys. As you will see, crafters are at the very heart of homin life.]
+}
+
+MATIS_NEWB_WELCOME_STEP_5_1_d ()
+{
+	matis_newb_welcome_step_5_1_d		[Ils sculptent la nature sauvage pour lui donner de nouveaux aspects, afin qu'elle serve
+										au mieux les besoins des peuples d'Atys.]
+}
+
+MATIS_NEWB_WELCOME_STEP_5_2 (bot target)
+{
+	(target.gender = female)
+		matis_newb_welcome_step_5_2_f	[Now you should pay a visit to $target$, the Merchant. She will sell you everything you will need.]
+
+
+	matis_newb_welcome_step_5_2_m		[Now you should pay a visit to $target$, the Merchant. He will sell you everything you will need.]
+}
+
+MATIS_NEWB_WELCOME_STEP_5_2_b (bot target)
+{
+	(target.gender = female)
+		matis_newb_welcome_step_5_2_b_f	[I first met
+										her down under, in the second layer of the Prime Roots.\n
+										\n
+										$target$ is near the shop.]
+
+
+	matis_newb_welcome_step_5_2_b_m		[I first met
+										him down under, in the second layer of the Prime Roots.\n
+										\n
+										$target$ is near the shop.]
+}
+
+MATIS_NEWB_WELCOME_STEP_6_1 (bot previous)
+{
+	(previous.gender = female)
+		matis_newb_welcome_step_6_1_f	[So, $previous$ sent you, did she ? We have worked together many times, she knows I sell nothing but the best...]
+
+
+	matis_newb_welcome_step_6_1_m	[So, $previous$ sent you, did he ? We have worked together many times, he knows I sell nothing but the best...]
+}
+
+MATIS_NEWB_WELCOME_STEP_6_1_b ()
+{
+	matis_newb_welcome_step_6_1_b	[You will need to replace or upgrade your weaponry and equipment
+									as you make progress. The merchants will sell
+									you what you need at a reasonable price.]
+}
+
+MATIS_NEWB_WELCOME_STEP_6_2 (bot target)
+{
+	(target.gender = female)
+		matis_newb_welcome_step_6_2_f	[I suggest you go and see $target$, the local supplier.
+										She's always ready to hire keen homins to help her in her work.
+										So go and speak to her.]
+
+
+	matis_newb_welcome_step_6_2_m	[I suggest you go and see $target$, the local supplier.
+									He's always ready to hire keen homins to help him in his work.
+									So go and speak to him.]
+}
+
+MATIS_NEWB_WELCOME_STEP_7_1 ()
+{
+	matis_newb_welcome_step_7_1		[Look's like you're new round here. Well, welcome! When you start looking for work
+									to earn a few dappers, come and see me ! I've always a task or two to propose.]
+}
+
+MATIS_NEWB_WELCOME_STEP_7_1_b ()
+{
+	matis_newb_welcome_step_7_1_b		[I mostly deal in trade and escorting goods.
+										If you prefer fighting or foraging, the corporal will give you a mission or two.]
+}
+
+
+MATIS_NEWB_WELCOME_STEP_7_2 ()
+{
+		matis_newb_welcome_step_7_2		[If crafting is your line, the foreman will no doubt be interested by your talents.]
+}
+
+MATIS_NEWB_WELCOME_STEP_7_2_b (bot giver)
+{
+	(giver.gender = female)
+		matis_newb_welcome_step_7_2_b_f	[You can return to $giver$ now, she most likely has some more advice to give you.]
+
+
+		matis_newb_welcome_step_7_2_b_m	[You can return to $giver$ now, he most likely has some more advice to give you.]
+}
+
+MATIS_NEWB_WELCOME_STEP_8_1 ()
+{
+	matis_newb_welcome_step_8_1		[Good ! Now you know our village a little better.
+									But before facing the dangers on the mainland, you've got to become stronger
+									and increase your knowledge.]
+}
+
+MATIS_NEWB_WELCOME_STEP_8_1_b ()
+{
+	matis_newb_welcome_step_8_1_b	[If you want, I can give you a few tasks to do in different fields to help you progress.
+									Tu n'auras qu'à me dire ce qui t'intéresse.]
+}
+
+MATIS_NEWB_WELCOME_STEP_8_2 ()
+{
+	matis_newb_welcome_step_8_2		[When you're ready, young $self$,
+									I'll tell you how to join the Matis capital on the mainland.]
+}
+
+MATIS_NEWB_WELCOME_TALKMENU_3 ()
+{
+	matis_newb_welcome_talkmenu_3	[Help me to progress]
+}
+
+MATIS_NEWB_WELCOME_STEP_8_3 ()
+{
+	matis_newb_welcome_step_8_3		[Dans quel domaine souhaites-tu progresser ?]
+}
+
+MATIS_NEWB_WELCOME_TEAM_ANSWER()
+{
+	matis_newb_welcome_team_answer 	[fighting in team with homins]
+}
+
+MATIS_NEWB_WELCOME_TEAM_STEP_1 ()
+{
+	matis_newb_welcome_team_step_1		[Good choice! With the help of others you will progress faster.]
+}
+
+MATIS_NEWB_WELCOME_TEAM_STEP_2 ()
+{
+	matis_newb_welcome_team_step_2		[Make a team, then I will give you a fighting mission. ]
+}
+
+MATIS_NEWB_WELCOME_TEAM_SYSTEM_MSG_1 ()
+{
+		matis_newb_welcome_team_system_msg_1	[If you're in team, select the team mission in the right-click menu of the welcomer]
+}
+
+MATIS_NEWB_WELCOME_TALKMENU_4 ()
+{
+	matis_newb_welcome_talkmenu_4	[Je suis prêt à progresser]
+}
+
+MATIS_NEWB_WELCOME_DESC_2 (bot giver)
+{
+	matis_newb_welcome_desc_2		[Progress in your main skill in order to get ready to join the Matis mainland.]
+}
+
+MATIS_NEWB_WELCOME_SYSTEM_MSG_3 ()
+{
+		matis_newb_welcome_system_msg_3	[&AROUND&You must have 20 in the main skill of your choice to finish this mission step.]
+}
+
+MATIS_NEWB_WELCOME_CUSTOM_OBJ_2 (bot giver)
+{
+	matis_newb_welcome_custom_obj_2	[Progress in your main skill. You can speak to $giver$ if you want help.]
+}
+
+MATIS_NEWB_WELCOME_SYSTEM_MSG_2 (bot giver)
+{
+	matis_newb_welcome_system_msg_2	[&AROUND&You are ready to join the Matis mainland! Go and speak to $giver$ to find out more.]
+}
+
+MATIS_NEWB_WELCOME_DESC_3 (bot giver)
+{
+	matis_newb_welcome_desc_3		[Join the Matis capital to continue your adventures.]
+}
+
+MATIS_NEWB_WELCOME_TALKMENU_2 ()
+{
+	matis_newb_welcome_talkmenu_2	[I would like to leave for the mainland.]
+}
+
+MATIS_NEWB_WELCOME_STEP_9_1 ()
+{
+	matis_newb_welcome_step_9_1	[I can see you have progressed well. Congratulations, $self$ ! You are now tough enough to help
+								our Matis people rebuild our kingdom!]
+}
+
+MATIS_NEWB_WELCOME_STEP_9_1_b (place place_yrkanis)
+{
+	matis_newb_welcome_step_9_1_b	[The time has come for you to walk the ground of $place_yrkanis$, the capital of the Matis!
+									Mais attention : tu ne pourras revenir ici après ton départ. Sois donc sûr de ton choix.]
+}
+
+MATIS_NEWB_WELCOME_STEP_9_1_c ()
+{
+	matis_newb_welcome_step_9_1_c	[In the village you will find a guide who can lead you
+									to the Karavan who has the power to teleport you to the mainland. When you will be in the capital, talk to the city welcomer.]
+}
+
+MATIS_NEWB_WELCOME_STEP_9_2 (bot kguide)
+{
+	(kguide.gender = female)
+		matis_newb_welcome_step_9_2_f	[Go and see $kguide$, on my behalf. She will guide you to the Karavan Teleporter. Tell her I sent you.\n
+								\n
+								May the forces of Atys spread through your veins!]
+
+		matis_newb_welcome_step_9_2_m	[Go and see $kguide$, on my behalf. He will guide you to the Karavan Teleporter. Tell him I sent you.\n
+								\n
+								May the forces of Atys spread through your veins!]
+}
+
+MATIS_NEWB_WELCOME_STEP_10_1 (bot previous)
+{
+	matis_newb_welcome_step_10_1	[Greetings, young Matis. $previous$ is a good homin. And we are proud to
+									count him among the Children of Jena.
+									We are glad to help him in return for his support.]
+}
+
+MATIS_NEWB_WELCOME_STEP_10_1_b ()
+{
+	matis_newb_welcome_step_10_1_b	[Teleportation is among Jena's many talents invested in us which you shall discover
+									in due course.\n
+									But to benefit from her favor you must prove your qualities
+									through faithful offerings or services to her church.]
+}
+
+MATIS_NEWB_WELCOME_STEP_10_2 (bot target)
+{
+	(target.gender = female)
+		matis_newb_welcome_step_10_2_f	[You must speak to $target$ for her to show you the way that leads to the mainland.
+										If you don't know where to find her, follow your compass, it will guide you to her.]
+
+	matis_newb_welcome_step_10_2_m	[You must speak to $target$ for him to show you the way that leads to the mainland.
+										If you don't know where to find him, follow your compass, it will guide you to him.]
+}
+
+MATIS_NEWB_WELCOME_STEP_11 ()
+{
+	matis_newb_welcome_step_11	[Si tu souhaites rejoindre la cité matis, fais-nous une offrande. En retour,
+								nous te donnerons le moyen de voyager grâce à la toute-puissance de Jena.]
+}
+
+MATIS_NEWB_WELCOME_STEP_11_TEMP ()
+{
+	matis_newb_welcome_step_11_temp	[Le pouvoir de Jena peut te téléporter. Tu n'as qu'à le demander.]
+}
+
+MATIS_NEWB_WELCOME_CUSTOM_OBJ_3_1 (item i1, int qt1, int qual1, bot karavan)
+{
+	matis_newb_welcome_custom_obj_3_1	[Buy $i1$ from $karavan$.]
+}
+
+MATIS_NEWB_WELCOME_STEP_12 ()
+{
+	matis_newb_welcome_step_12	[Sers-toi de cet objet pour ton voyage. Mais souviens-toi, il n'y a pas de retour possible.]
+}
+
+MATIS_NEWB_WELCOME_CUSTOM_OBJ_4 (item i1, place place_yrkanis)
+{
+	matis_newb_welcome_custom_obj_4	[Use $i1$ to join $place_yrkanis$.]
+}
+
+MATIS_NEWB_WELCOME_END_1 (place place_yrkanis)
+{
+	matis_newb_welcome_end_1	[Welcome to $place_yrkanis$, $self$! I'm always glad to see newcomers here. Don't be afraid to visit our great city, there is a lot of wonders to discover.]
+}
+
+MATIS_NEWB_WELCOME_END_2 (bot barman, place place_yrkanis)
+{
+	(barman.gender = female)
+	matis_newb_welcome_end_2_f	[$barman$, barman of $place_yrkanis$, has important things to say to you. Go and talk to her. See you soon, $self$!]
+
+	(barman.gender = male)
+	matis_newb_welcome_end_2_m	[$barman$, barman of $place_yrkanis$, has important things to say to you. Go and talk to him. See you soon, $self$!]
+}
+
+MATIS_NEWB_WELCOME_SYSTEM_MSG_END (place continent_matis)
+{
+	matis_newb_welcome_system_msg_end	[&AROUND&You have finished your training with success. Aventure awaits you
+										in $continent_matis.da$ $continent_matis$ !]
+}
+
+//mission temporaire auto teleport karavan ----------------------------------------------------------------------------------------------------------------
+MATIS_NEWB_TP_KARAVAN_TEMP_AUTOMENU(place place_pyr)
+{
+	matis_newb_tp_karavan_temp_automenu 	[Teleport to $place_pyr$.]
+}
+
+MATIS_NEWB_TP_KARAVAN_TEMP_TITLE(place place_pyr)
+{
+	matis_newb_tp_karavan_temp_title 	[Teleport to $place_pyr$.]
+}
+
+
+MATIS_NEWB_TP_KARAVAN_TEMP_DESC(place place_pyr)
+{
+	matis_newb_tp_karavan_temp_desc 	[Teleport to $place_pyr$.]
+}
+
+
+MATIS_NEWB_TP_KARAVAN_TEMP_1 ()
+{
+	matis_newb_tp_karavan_temp_1	[You want to join the Matis city? I can send you there but there is no return,
+									and the Matisian Forest can be dangerous. Are you sure?]
+}
+
+ANSWER_KARAVAN_TEMP_YES ()
+{
+	answer_karavan_temp_yes	[Yes, I want to leave]
+}
+
+ANSWER_KARAVAN_TEMP_NO ()
+{
+	answer_karavan_no	[No, I'll stay here]
+}
+
+MATIS_NEWB_TP_KARAVAN_TEMP_2 ()
+{
+	matis_newb_tp_karavan_temp_2	[Come back later, when you are ready.]
+}
+
+
+//Fight tutorial missions -------------------------------------------------------------------------------
+
+//mission 1
+MATIS_NEWB_FIGHT_1_AUTOMENU()
+{
+	matis_newb_fight_1_automenu 	[I wanna learn how to fight.]
+}
+
+MATIS_NEWB_FIGHT_ANSWER()
+{
+	matis_newb_fight_answer 	[Melee fighting.]
+}
+
+MATIS_NEWB_FIGHT_1_TITLE(bot giver)
+{
+	matis_newb_fight_1_title		[Initiation to combat 1]
+}
+
+MATIS_NEWB_FIGHT_1_DESC(bot giver)
+{
+	matis_newb_fight_1_desc		[Follow the instructions of $giver$ to progress in techniques of combat.]
+}
+
+MATIS_NEWB_FIGHT_1_STEP_1_1()
+{
+	matis_newb_fight_1_step_1_1	[Surviving on Atys can be very hard, you need to know how to fight if you want to live long.]
+}
+
+MATIS_NEWB_FIGHT_1_STEP_1_2(creature_model yubo)
+{
+	matis_newb_fight_1_step_1_2	[You must start your training by facing an easy opponent : find a small herbivore,
+								$yubo.ia$ $yubo$, and kill it.]
+}
+
+MATIS_NEWB_FIGHT_1_END(creature_model yubo)
+{
+	matis_newb_fight_1_end	[Good ! But remember that $yubo$ is an easy prey, the next killings
+							won't be so easy as you will be up against tougher beasts.]
+}
+
+
+//mission 2
+MATIS_NEWB_FIGHT_2_AUTOMENU()
+{
+	matis_newb_fight_2_automenu 	[I'd like to learn more about combat.]
+}
+
+MATIS_NEWB_FIGHT_2_TITLE(bot giver)
+{
+	matis_newb_fight_2_title		[Initiation to combat 2]
+}
+
+MATIS_NEWB_FIGHT_2_DESC(bot giver)
+{
+	matis_newb_fight_2_desc		[Follow the instructions of $giver$ to continue to progress in techniques of combat.]
+}
+
+MATIS_NEWB_FIGHT_2_PREREQ (bot target, sphrase increasedamage)
+{
+	(target.gender = female)
+		matis_newb_fight_2_prereq_f		[To continue to progress, you need to learn a new technique of $increasedamage$. Go and see $target$, she can teach you.]
+
+
+		matis_newb_fight_2_prereq_m		[To continue to progress, you need to learn a new technique of $increasedamage$. Go and see $target$, he can teach you.]
+}
+
+MATIS_NEWB_FIGHT_2_CUSTOM_OBJ_1(bot giver, bot target, sphrase increasedamage)
+{
+ 	matis_newb_fight_2_custom_obj_1	[Apprendre une nouvelle technique, $increasedamage$, auprès de $target$, et retourner parler à $giver$]
+}
+
+
+MATIS_NEWB_FIGHT_2_STEP_1_1(creature_model ragus)
+{
+	matis_newb_fight_2_step_1_1	[Now we need to get rid of a few predators. There are too many $ragus$ on our island,
+								and they prey on the herbivores.]
+}
+
+MATIS_NEWB_FIGHT_2_STEP_1_2()
+{
+ 	matis_newb_fight_2_step_1_2	[I would be grateful if you managed to kill one by yourself, you shall earn a good deal of experience
+								if you do. But be really careful...]
+}
+
+MATIS_NEWB_FIGHT_2_END()
+{
+	matis_newb_fight_2_end		[Good. Here's a tip for you. If you want more fighting tasks, you should go and talk to a corporal.]
+}
+
+
+//Magic tutorial mission -------------------------------------------------------------------------------
+
+//mission 1
+MATIS_NEWB_MAGIC_1_AUTOMENU()
+{
+	matis_newb_magic_1_automenu 	[I'd like to learn some magic.]
+}
+
+MATIS_NEWB_MAGIC_ANSWER()
+{
+	matis_newb_magic_answer 	[Magic.]
+}
+
+MATIS_NEWB_MAGIC_1_TITLE(bot giver)
+{
+	matis_newb_magic_1_title		[Initiation to magic 1]
+}
+
+MATIS_NEWB_MAGIC_1_DESC(bot giver)
+{
+	matis_newb_magic_1_desc		[Follow the instructions of $giver$ to progress in magic.]
+}
+
+MATIS_NEWB_MAGIC_1_PREREQ (sphrase selfheal)
+{
+		matis_newb_magic_1_prereq		[Pour continuer à progresser, tu as besoin d'apprendre un nouveau sort, $selfheal$.
+										Va voir l'un des trainers afin qu'il te l'enseigne.]
+}
+
+MATIS_NEWB_MAGIC_1_CUSTOM_OBJ_1(sphrase selfheal, bot giver)
+{
+ 	matis_newb_magic_1_custom_obj_1	[Apprendre un nouveau sort, $selfheal$, et retourner parler à $giver$]
+}
+
+
+MATIS_NEWB_MAGIC_1_STEP_1_1()
+{
+	matis_newb_magic_1_step_1_1	[Magic training can be long and difficult, but it offers a very good means to survive here.]
+}
+
+MATIS_NEWB_MAGIC_1_STEP_1_2(sbrick heal)
+{
+	matis_newb_magic_1_step_1_2	[To start with, show me what you know, cast $heal.ia$ $heal$.]
+}
+
+MATIS_NEWB_MAGIC_1_END_1()
+{
+	matis_newb_magic_1_end_1	[Good ! If you want to concentrate on healing spells you'll have to make up a team with some fighters...]
+}
+
+MATIS_NEWB_MAGIC_1_END_2()
+{
+	matis_newb_magic_1_end_2	[... they will need your services, it's the best way to progress in this line.]
+}
+
+//mission 2
+MATIS_NEWB_MAGIC_2_AUTOMENU()
+{
+	matis_newb_magic_2_automenu 	[I'd like to learn more about magic.]
+}
+
+MATIS_NEWB_MAGIC_2_TITLE(bot giver)
+{
+	matis_newb_magic_2_title		[Initiation to magic]
+}
+
+MATIS_NEWB_MAGIC_2_DESC(bot giver)
+{
+	matis_newb_magic_2_desc		[Follow the instructions of $giver$ to progress in magic.]
+}
+
+MATIS_NEWB_MAGIC_2_PREREQ (bot target, sphrase aciddamage)
+{
+	(target.gender = female)
+		matis_newb_magic_2_prereq_f		[To continue to progress, you need to learn a new spell : $aciddamage$. Go and see $target$, she can teach you.]
+
+
+		matis_newb_magic_2_prereq_m		[To continue to progress, you need to learn a new spell : $aciddamage$. Go and see $target$, he can teach you.]
+}
+
+MATIS_NEWB_MAGIC_2_CUSTOM_OBJ_1(bot target, bot giver, sphrase aciddamage)
+{
+ 	matis_newb_magic_2_custom_obj_1	[Apprendre un nouveau sort, $aciddamage$, auprès de $target$, et retourner parler à $giver$]
+}
+
+MATIS_NEWB_MAGIC_2_STEP_1_1()
+{
+	matis_newb_magic_2_step_1_1	[The first use for magic is to combat with it.]
+}
+
+MATIS_NEWB_MAGIC_2_STEP_1_2(sbrick nuke, creature_model yubo)
+{
+ 	matis_newb_magic_2_step_1_2	[Let's try : use $nuke.ia$ $nuke$ to kill $yubo.ia$ $yubo$.]
+}
+
+MATIS_NEWB_MAGIC_2_OBJ_1_1(sbrick nuke, creature_model yubo)
+{
+	matis_newb_magic_2_obj_1		[Use $nuke.ia$ $nuke$ to kill $yubo.ia$ $yubo$.]
+}
+
+MATIS_NEWB_MAGIC_2_OBJ_2_1(creature_model yubo, int qt)
+{
+	matis_newb_magic_2_obj_2		[Kill $yubo.ia$ $yubo$.]
+}
+
+MATIS_NEWB_MAGIC_2_END()
+{
+	matis_newb_magic_2_end		[Good job! Magic training can be long and difficult, but it offers a very good means to fight and to survive here.]
+}
+
+MATIS_NEWB_MAGIC_3_STEP_1_1()
+{
+	matis_newb_magic_3_step_1_1	[Destructive magic is powerful, but healing spells can be strong too, although
+								to take profit out of them you'll have to make up a team with some fighters.]
+}
+
+MATIS_NEWB_MAGIC_3_STEP_1_2(sbrick heal)
+{
+	matis_newb_magic_3_step_1_2	[Fortunately, they will often need your services, so it's the best way to progress in this line. Go fight with others, and cast $heal.ia$ $heal$.]
+}
+
+MATIS_NEWB_MAGIC_3_END()
+{
+	matis_newb_magic_3_end		[Healing and helping others is a way leading to victory. Here's a little money for you. And if you're still looking for work, go and see the corporal, he's always got something on.]
+}
+
+
+//Harvest tutorial mission -------------------------------------------------------------------------------
+
+//mission 1
+MATIS_NEWB_HARVEST_1_AUTOMENU()
+{
+	matis_newb_harvest_1_automenu 	[I'd like to progress in harvesting.]
+}
+
+MATIS_NEWB_HARVEST_ANSWER()
+{
+	matis_newb_harvest_answer 	[Harvesting.]
+}
+
+MATIS_NEWB_HARVEST_1_TITLE(bot giver)
+{
+	matis_newb_harvest_1_title		[Initiation to harvesting 1]
+}
+
+MATIS_NEWB_HARVEST_1_DESC(bot giver)
+{
+	matis_newb_harvest_1_desc		[Follow the instructions of $giver$ to progress in harvesting.]
+}
+
+MATIS_NEWB_HARVEST_1_PREREQ (sphrase basicextraction)
+{
+		matis_newb_harvest_1_prereq		[Pour continuer à progresser, tu as besoin d'apprendre une nouvelle technique, $basicextraction$.
+										Va voir l'un des trainers afin qu'il te l'enseigne.]
+}
+
+MATIS_NEWB_HARVEST_1_CUSTOM_OBJ_1(sphrase basicextraction, bot giver)
+{
+ 	matis_newb_harvest_1_custom_obj_1	[Apprendre une nouvelle technique, $basicextraction$, et retourner parler à $giver$]
+}
+
+MATIS_NEWB_HARVEST_1_STEP_1_1()
+{
+	matis_newb_harvest_1_step_1_1	[To progress in harvesting, you'll have to learn to locate sources, and extract their contents.]
+}
+
+MATIS_NEWB_HARVEST_1_STEP_1_2(item rm1, item rm2)
+{
+	matis_newb_harvest_1_step_1_2	[Let's start with something easy, bring me back $rm1.ia$ $rm1$ and $rm2.ia$ $rm2$
+									which you'll find in the ground in the village.]
+}
+
+MATIS_NEWB_HARVEST_1_END()
+{
+	matis_newb_harvest_1_end	[Excellent. But that was easy because here the sources glow above ground and are easy to spot.]
+}
+
+//mission 2
+MATIS_NEWB_HARVEST_2_AUTOMENU()
+{
+	matis_newb_harvest_2_automenu 	[I'd like to learn more about harvesting.]
+}
+
+MATIS_NEWB_HARVEST_2_TITLE(bot giver)
+{
+	matis_newb_harvest_2_title		[Initiation to harvesting 2]
+}
+
+MATIS_NEWB_HARVEST_2_DESC(bot giver)
+{
+	matis_newb_harvest_2_desc		[Follow the instructions of $giver$ to continue to progress in harvesting.]
+}
+
+MATIS_NEWB_HARVEST_2_PREREQ (sphrase basicprospection, bot target)
+{
+	(target.gender = female)
+		matis_newb_harvest_2_prereq_f		[To continue to progress, you need to learn a new technique : $basicprospection$. Go and see $target$, she can teach you.]
+
+
+		matis_newb_harvest_2_prereq_m		[To continue to progress, you need to learn a new technique : $basicprospection$. Go and see $target$, he can teach you.]
+}
+
+MATIS_NEWB_HARVEST_2_CUSTOM_OBJ_1(sphrase basicprospection, bot target, bot giver)
+{
+ 	matis_newb_harvest_2_custom_obj_1	[Apprendre une nouvelle technique, $basicprospection$, auprès de $target$, et retourner parler à $giver$]
+}
+
+
+MATIS_NEWB_HARVEST_2_STEP_1_1()
+{
+	matis_newb_harvest_2_step_1_1	[Let's continue then : your ability to extract correctly will have a bearing on the quality of the materials...]
+}
+
+MATIS_NEWB_HARVEST_2_STEP_1_2()
+{
+	matis_newb_harvest_2_step_1_2	[...but take great care because it can be dangerous, there are many pockets of gas on Atys.]
+}
+
+MATIS_NEWB_HARVEST_2_STEP_1_3(item rm3, int ql)
+{
+ 	matis_newb_harvest_2_step_1_3	[Remember to think about it when you go and fetch me $rm3.ia$ $rm3$ of quality $ql$.
+									Theses will only be found along the cliffs to the south of this region.]
+}
+
+MATIS_NEWB_HARVEST_2_STEP_1_4()
+{
+ 	matis_newb_harvest_2_step_1_4	[You'll have to locate the sources by yourself by prospecting else their glow won't become visible.]
+}
+
+MATIS_NEWB_HARVEST_2_END()
+{
+	matis_newb_harvest_2_end		[Good, here's a little money for you. And if you're after more work,
+									go and see a corporal, they've always something going.]
+}
+
+//Craft tutorial mission -------------------------------------------------------------------------------
+
+//mission 1
+MATIS_NEWB_CRAFT_1_AUTOMENU()
+{
+	matis_newb_craft_1_automenu 	[I'd like to progress in crafting.]
+}
+
+MATIS_NEWB_CRAFT_ANSWER()
+{
+	matis_newb_craft_answer 	[Crafting.]
+}
+
+MATIS_NEWB_CRAFT_1_TITLE(bot giver)
+{
+	matis_newb_craft_1_title		[Initiation to crafting 1]
+}
+
+MATIS_NEWB_CRAFT_1_DESC(bot giver)
+{
+	matis_newb_craft_1_desc			[Follow the instructions of $giver$ to progress in crafting.]
+}
+
+MATIS_NEWB_CRAFT_1_PREREQ (sphrase matisarmor)
+{
+		matis_newb_craft_1_prereq		[Pour continuer à progresser, tu as besoin d'apprendre une nouvelle technique, $matisarmor$.
+										Va voir l'un des trainers afin qu'il te l'enseigne.]
+}
+
+MATIS_NEWB_CRAFT_1_CUSTOM_OBJ_1(sphrase matisarmor, bot giver)
+{
+ 	matis_newb_craft_1_custom_obj_1	[Apprendre une nouvelle technique, $matisarmor$, et retourner parler à $giver$]
+}
+
+MATIS_NEWB_CRAFT_1_STEP_1_1()
+{
+	matis_newb_craft_1_step_1_1	[Crafting is more difficult that it might seem, but with willpower everything is possible.]
+}
+
+MATIS_NEWB_CRAFT_1_STEP_1_2(item boots, int ql)
+{
+	matis_newb_craft_1_step_1_2	[Let's begin by finding out what you know : make $boots.ia$ $boots$ of quality $ql$. You will need a tool. If you don't already have one, there is a merchant who sell tools in the village.]
+}
+
+MATIS_NEWB_CRAFT_1_END_1()
+{
+	matis_newb_craft_1_end_1	[Very good ! To progress, the best means is to practice making items... ]
+}
+
+MATIS_NEWB_CRAFT_1_END_2()
+{
+	matis_newb_craft_1_end_2	[...it's only by analysing mistakes made during tests that the quality crafter
+								will develop his or her techniques.]
+}
+
+//mission 2
+MATIS_NEWB_CRAFT_2_AUTOMENU()
+{
+	matis_newb_craft_2_automenu 	[I'd like to learn more about crafting.]
+}
+
+MATIS_NEWB_CRAFT_2_TITLE(bot giver)
+{
+	matis_newb_craft_2_title		[Initiation to crafting 2]
+}
+
+MATIS_NEWB_CRAFT_2_DESC(bot giver)
+{
+	matis_newb_craft_2_desc			[Follow the instructions of $giver$ to continue to progress in crafting.]
+}
+
+MATIS_NEWB_CRAFT_2_PREREQ (bot target, sbrick matisgloves)
+{
+	(target.gender = female)
+		matis_newb_craft_2_prereq_f		[To continue to progress, you need to learn a new crafting plan, $matisgloves$. Go and see $target$, she can teach you.]
+
+
+		matis_newb_craft_2_prereq_m		[To continue to progress, you need to learn a new crafting plan, $matisgloves$. Go and see $target$, he can teach you.]
+}
+
+MATIS_NEWB_CRAFT_2_CUSTOM_OBJ_1(bot target, bot giver, sbrick matisgloves)
+{
+ 	matis_newb_craft_2_custom_obj_1	[Apprendre un nouveau schéma de fabrication, $matisgloves$, auprès de $target$, et retourner parler à $giver$]
+}
+
+MATIS_NEWB_CRAFT_2_STEP_1_1()
+{
+ 	matis_newb_craft_2_step_1_1	[A crafter may get hampered by the quality of materials used.]
+}
+
+MATIS_NEWB_CRAFT_2_STEP_1_2()
+{
+ 	matis_newb_craft_2_step_1_2	[So besides training, you need to get yourself a good supplier if you want to make fine objects.]
+}
+
+MATIS_NEWB_CRAFT_2_STEP_1_3(item gloves, int ql)
+{
+ 	matis_newb_craft_2_step_1_3	[When you're ready, make $gloves.ia$ $gloves$ of quality $ql$ for me.]
+}
+
+MATIS_NEWB_CRAFT_2_END()
+{
+	matis_newb_craft_2_end		[Excellent, here's a little reward for your efforts.
+								And if you're looking for more work, go and see a foreman,
+								they've always got something going.]
+}
+
+//									---------------------------------
+//													ZORAI
+//									---------------------------------
+
+//Mission Welcome Zorai Newbieland -----------------------------------------------------------------------------------------------------------------
+ZORAI_NEWB_WELCOME_AUTOMENU()
+{
+	zorai_newb_welcome_automenu 	[Welcome!]
+}
+
+ZORAI_NEWB_WELCOME_TITLE (bot giver, place place_qai_lo)
+{
+	zorai_newb_welcome_title		[Welcome to $place_qai_lo$.]
+}
+
+ZORAI_NEWB_WELCOME_DESC (bot giver)
+{
+	zorai_newb_welcome_desc		[Follow the indications of $giver$ to find out who can help you and how.]
+}
+
+ZORAI_NEWB_WELCOME_SYSTEM_MSG_1 (bot target)
+{
+	(target.gender = female)
+		zorai_newb_welcome_system_msg_1_f	[&AROUND&$target$, one of the village welcomers, would like to bif you welcome. Go speak to her.]
+
+
+	zorai_newb_welcome_system_msg_1	[&AROUND&$target$, one of the village welcomers, would like to bif you welcome. Go speak to him.]
+}
+
+ZORAI_NEWB_WELCOME_CUSTOM_OBJ_1 (bot target)
+{
+	zorai_newb_welcome_custom_obj_1	[Speak to $target$.]
+}
+
+ZORAI_NEWB_WELCOME_TALKMENU_1 ()
+{
+	zorai_newb_welcome_talkmenu_1	[Hello, I'm new round here.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_1_1 ()
+{
+	zorai_newb_welcome_step_1_1		[Your spirit is welcome here, $self$. It is time for you to start understanding more about your own people.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_1_1b ()
+{
+	zorai_newb_welcome_step_1_1b		[I salute your courage in taking the perilous journey to
+									help rebuild our great Zoraï dynasty...]
+}
+
+ZORAI_NEWB_WELCOME_STEP_1_1c ()
+{
+	zorai_newb_welcome_step_1_1c		[You are on a small island, not far from the Zoraï mainland. We have five small villages on this
+										island, and this is one of them.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_1_2 (bot target, place capital)
+{
+	(target.gender = female)
+		zorai_newb_welcome_step_1_2_f		[Before you depart for $capital$, the Zoraï capital,
+											I recommend you seek training from our esteemed Masters here.
+											You should first speak to $target$.]
+
+
+	zorai_newb_welcome_step_1_2_m		[Before you depart for $capital$, the Zoraï capital,
+										I recommend you seek training from our esteemed Masters here.
+										You should first speak to $target$.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_1_2b (bot target)
+{
+	(target.gender = female)
+		zorai_newb_welcome_step_1_2b_f		[$target$ is our Fighter Trainer. She will give you coaching in our many lethal techniques...\n
+											You will find her in the pit.]
+
+
+	zorai_newb_welcome_step_1_2b_m		[$target$ is our Fighter Trainer. He will give you coaching in our many lethal techniques...\n
+										You will find him in the pit.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_2_1 (race kitins)
+{
+	zorai_newb_welcome_step_2_1			[Ah! At last you come. I wanted to see you to warn you
+										against our greatest enemy, $kitins.da$ $kitins$...]
+}
+
+ZORAI_NEWB_WELCOME_STEP_2_1_b ()
+{
+	zorai_newb_welcome_step_2_1_b		[Never think twice if you come up against one:
+										Strike first or flee as fast as you can.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_2_1_c ()
+{
+	zorai_newb_welcome_step_2_1_c		[It is they who wiped out our entire civilization in the lands of old.
+										And never forget, it was the Fyros who first provoked their wrath and stirred
+										them from their underground nests three generations ago!]
+}
+
+ZORAI_NEWB_WELCOME_STEP_2_2 ()
+{
+		zorai_newb_welcome_step_2_2		[But before you find out more about our past on the mainland, you
+										must first develop your skills
+										and equipment to be able to survive.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_2_2_b ()
+{
+		zorai_newb_welcome_step_2_2_b	[I will always be here to help you improve your fighting techniques.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_2_2_c (bot target)
+{
+	(target.gender = female)
+		zorai_newb_welcome_step_2_2_c_f		[Now I urge you to meet $target$, our Magician Trainer. She always
+											has the right word for a situation.]
+
+
+		zorai_newb_welcome_step_2_2_c_m		[Now I urge you to meet $target$, our Magician Trainer. He always
+											has the right word for a situation.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_3_1 ()
+{
+	zorai_newb_welcome_step_3_1			[I am pleased to meet you. You must know, $self$, that even in these parts the
+										land is rife with the goo...]
+}
+
+ZORAI_NEWB_WELCOME_STEP_3_1_b ()
+{
+	zorai_newb_welcome_step_3_1_b			[This is the strange infection that steadily nibbles
+											away at the vegetaion. The Kamis, sent by our goddess Jena, are precious allies
+											in our fight against this plague.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_3_2 ()
+{
+	zorai_newb_welcome_step_3_2		[The Kamis are strange creatures whose powerful magic is held in esteem.
+									When you're ready, Kami magic will transport you to the Zoraï newfound lands.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_3_2_b ()
+{
+	zorai_newb_welcome_step_3_2_b		[Meantime, I will always be here to teach you how to enhance your magic power and wisdom.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_3_3 ()
+{
+		zorai_newb_welcome_step_3_3		[One more thing, on the mainland you may see members of the Karavan, their magic is strong,
+										but remember they are nonetheless lesser disciples of Jena.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_3_3_b (bot target)
+{
+	(target.gender = female)
+		zorai_newb_welcome_step_3_3_b_f		[Now, $target$ is waiting to see you, she is the Harvester Trainer here.
+											She's a moody character, but she has traveled widely and knows many secrets !]
+
+
+	zorai_newb_welcome_step_3_3_b_m		[Now, $target$ is waiting to see you, he is the Harvester Trainer here. He's a moody character,
+										but he has traveled widely and knows many secrets !]
+}
+
+
+ZORAI_NEWB_WELCOME_STEP_4_1 (bot current)
+{
+	zorai_newb_welcome_step_4_1		[I am $current$. My father was a great Harvester himself, and I hold all his secrets and
+									many more...]
+}
+
+ZORAI_NEWB_WELCOME_STEP_4_1_b ()
+{
+	zorai_newb_welcome_step_4_1_b	[For unlike him I have traveled all over the world. I have met the proud Fyros,
+									and the noble Matis.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_4_1_c ()
+{
+	zorai_newb_welcome_step_4_1_c	[I have spoken with Trykers around the Lake Lands and learned some of their secrets.]
+}
+
+
+ZORAI_NEWB_WELCOME_STEP_4_2 ()
+{
+	zorai_newb_welcome_step_4_2		[You too may experience the same freedom if that be your choice.\n
+									You will be able to travel throughout Atys to extract her natural resources,
+									crucial for the life of homins.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_4_2_b ()
+{
+		zorai_newb_welcome_step_4_2_b	[But you must take guard, prospecting and extraction can be dangerous.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_4_2_c (bot target)
+{
+	(target.gender = female)
+		zorai_newb_welcome_step_4_2_c_f	[Now go see $target$, she's our Master Crafter.]
+
+
+	zorai_newb_welcome_step_4_2_c_m		[Now go see $target$, he's our Master Crafter.]
+}
+
+
+ZORAI_NEWB_WELCOME_STEP_5_1 ()
+{
+	zorai_newb_welcome_step_5_1		[Je te salue, jeune $self$. Sais-tu que le monde qui nous entoure
+									est empli d'énergie invisible pour la plupart des homins ? Mais pas pour les Zoraïs...]
+}
+
+ZORAI_NEWB_WELCOME_STEP_5_1_b ()
+{
+	zorai_newb_welcome_step_5_1_b		[En contrôlant cette énergie, nous pouvons réaliser des miracles...
+										ou causer de grands dommages quand cela est nécessaire.
+										Il nous suffit de la canaliser à travers des objets.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_5_1_c ()
+{
+	zorai_newb_welcome_step_5_1_c		[The items we make are unique on Atys. As you will see, crafters are at the very heart of homin life.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_5_1_d ()
+{
+	zorai_newb_welcome_step_5_1_d		[Ils parviennent par leurs créations à élever leur esprit, et celui de notre peuple tout entier.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_5_2 (bot target)
+{
+	(target.gender = female)
+		zorai_newb_welcome_step_5_2_f	[Now you should pay a visit to $target$, the Merchant. She will sell you everything you will need.]
+
+
+	zorai_newb_welcome_step_5_2_m		[Now you should pay a visit to $target$, the Merchant. He will sell you everything you will need.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_5_2_b (bot target)
+{
+	(target.gender = female)
+		zorai_newb_welcome_step_5_2_b_f	[I first met
+										her down under, in the second layer of the Prime Roots.\n
+										\n
+										$target$ is near the shop.]
+
+
+	zorai_newb_welcome_step_5_2_b_m		[I first met
+										him down under, in the second layer of the Prime Roots.\n
+										\n
+										$target$ is near the shop.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_6_1 (bot previous)
+{
+	(previous.gender = female)
+		zorai_newb_welcome_step_6_1_f	[So, $previous$ sent you, did she ? We have worked together many times, she knows I sell nothing but the best...]
+
+
+	zorai_newb_welcome_step_6_1_m	[So, $previous$ sent you, did he ? We have worked together many times, he knows I sell nothing but the best...]
+}
+
+ZORAI_NEWB_WELCOME_STEP_6_1_b ()
+{
+	zorai_newb_welcome_step_6_1_b	[You will need to replace or upgrade your weaponry and equipment
+									as you make progress. The merchants will sell
+									you what you need at a reasonable price.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_6_2 (bot target)
+{
+	(target.gender = female)
+		zorai_newb_welcome_step_6_2_f	[I suggest you go and see $target$, the local supplier.
+										She's always ready to hire keen homins to help her in her work.
+										So go and speak to her.]
+
+
+	zorai_newb_welcome_step_6_2_m	[I suggest you go and see $target$, the local supplier.
+									He's always ready to hire keen homins to help him in his work.
+									So go and speak to him.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_7_1 ()
+{
+	zorai_newb_welcome_step_7_1		[Look's like you're new round here. Well, welcome! When you start looking for work
+									to earn a few dappers, come and see me ! I've always a task or two to propose.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_7_1_b ()
+{
+	zorai_newb_welcome_step_7_1_b		[I mostly deal in trade and escorting goods.
+										If you prefer fighting or foraging, the corporal will give you a mission or two.]
+}
+
+
+ZORAI_NEWB_WELCOME_STEP_7_2 ()
+{
+		zorai_newb_welcome_step_7_2		[If crafting is your line, the foreman will no doubt be interested by your talents.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_7_2_b (bot giver)
+{
+	(giver.gender = female)
+		zorai_newb_welcome_step_7_2_b_f	[You can return to $giver$ now, she most likely has some more advice to give you.]
+
+
+		zorai_newb_welcome_step_7_2_b_m	[You can return to $giver$ now, he most likely has some more advice to give you.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_8_1 ()
+{
+	zorai_newb_welcome_step_8_1		[Good ! Now you know our village a little better.
+									But before facing the dangers on the mainland, you've got to become stronger
+									and increase your knowledge.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_8_1_b ()
+{
+	zorai_newb_welcome_step_8_1_b	[If you want, I can give you a few tasks to do in different fields to help you progress.
+									Tu n'auras qu'à me dire ce qui t'intéresse.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_8_2 ()
+{
+	zorai_newb_welcome_step_8_2		[When you're ready, young $self$,
+									I'll tell you how to join the Zoraï capital on the mainland.]
+}
+
+ZORAI_NEWB_WELCOME_TALKMENU_3 ()
+{
+	zorai_newb_welcome_talkmenu_3	[Help me to progress]
+}
+
+ZORAI_NEWB_WELCOME_STEP_8_3 ()
+{
+	zorai_newb_welcome_step_8_3		[Dans quel domaine souhaites-tu progresser ?]
+}
+
+ZORAI_NEWB_WELCOME_TEAM_ANSWER()
+{
+	zorai_newb_welcome_team_answer 	[fighting in team with homins]
+}
+
+ZORAI_NEWB_WELCOME_TEAM_STEP_1 ()
+{
+	zorai_newb_welcome_team_step_1		[Good choice! With the help of others you will progress faster.]
+}
+
+ZORAI_NEWB_WELCOME_TEAM_STEP_2 ()
+{
+	zorai_newb_welcome_team_step_2		[Make a team, then I will give you a fighting mission. ]
+}
+
+ZORAI_NEWB_WELCOME_TEAM_SYSTEM_MSG_1 ()
+{
+		zorai_newb_welcome_team_system_msg_1	[If you're in team, select the team mission in the right-click menu of the welcomer]
+}
+
+ZORAI_NEWB_WELCOME_TALKMENU_4 ()
+{
+	zorai_newb_welcome_talkmenu_4	[Je suis prêt à progresser]
+}
+
+ZORAI_NEWB_WELCOME_DESC_2 (bot giver)
+{
+	zorai_newb_welcome_desc_2		[Progress in your main skill in order to get ready to join the Zoraï mainland.]
+}
+
+ZORAI_NEWB_WELCOME_SYSTEM_MSG_3 ()
+{
+		zorai_newb_welcome_system_msg_3	[&AROUND&You must have 20 in the main skill of your choice to finish this mission step.]
+}
+
+ZORAI_NEWB_WELCOME_CUSTOM_OBJ_2 (bot giver)
+{
+	zorai_newb_welcome_custom_obj_2	[Progress in your main skill. You can speak to $giver$ if you want help.]
+}
+
+ZORAI_NEWB_WELCOME_SYSTEM_MSG_2 (bot giver)
+{
+	zorai_newb_welcome_system_msg_2	[&AROUND&You are ready to join the Zoraï mainland! Go and speak to $giver$ to find out more.]
+}
+
+ZORAI_NEWB_WELCOME_DESC_3 (bot giver)
+{
+	zorai_newb_welcome_desc_3		[Join the Zoraï capital to continue your adventures.]
+}
+
+ZORAI_NEWB_WELCOME_TALKMENU_2 ()
+{
+	zorai_newb_welcome_talkmenu_2	[I would like to leave for the mainland.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_9_1 ()
+{
+	zorai_newb_welcome_step_9_1	[I can see you have progressed well. Congratulations, $self$ ! You are now tough enough to help
+								our Zoraï people rebuild our dynasty!]
+}
+
+ZORAI_NEWB_WELCOME_STEP_9_1_b (place place_zora)
+{
+	zorai_newb_welcome_step_9_1_b	[The time has come for you to walk the ground of $place_zora$, the capital of the Zoraïs!
+									Mais attention : tu ne pourras revenir ici après ton départ. Sois donc sûr de ton choix.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_9_1_c ()
+{
+	zorai_newb_welcome_step_9_1_c	[In the village you will find a guide who can lead you to a Kami
+									who has the power to teleport you to the mainland. When you will be in the capital, talk to the city welcomer.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_9_2 (bot kguide)
+{
+	(kguide.gender = female)
+	zorai_newb_welcome_step_9_2_f	[Go and see $kguide$, the Kamis Adept, on my behalf.
+								She will guide you to the Kami Preacher. Tell her I sent you.\n
+								\n
+								May the forces of Atys spread through your veins!]
+
+	zorai_newb_welcome_step_9_2_m	[Go and see $kguide$, the Kamis Adept, on my behalf.
+								He will guide you to the Kami Preacher. Tell him I sent you.\n
+								\n
+								May the forces of Atys spread through your veins!]
+}
+
+ZORAI_NEWB_WELCOME_STEP_10_1 (bot previous)
+{
+	zorai_newb_welcome_step_10_1	[$previous$ is a devote homin, he is much appreciated by the Kamis.
+									The Kamis are disciples of Jena...]
+}
+
+ZORAI_NEWB_WELCOME_STEP_10_1_b ()
+{
+	zorai_newb_welcome_step_10_1_b	[It is our duty to serve the Kamis
+									who preserve Atys from harm. By retaining the pure energy on Atys will shall attain enlightenment.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_10_2 ()
+{
+	zorai_newb_welcome_step_10_2	[You must speak to the Kami for him to show you the way that leads to the mainland.
+									If you don't know where to find him, follow your compass, it will guide you to him.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_11 ()
+{
+	zorai_newb_welcome_step_11	[You want to join great Zoraï city? If you make offering, me give you magic item to send you there.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_11_TEMP ()
+{
+	zorai_newb_welcome_step_11_temp	[Me can teleport. Just ask.]
+}
+
+ZORAI_NEWB_WELCOME_CUSTOM_OBJ_3_1 (item i1, int qt1, int qual1, bot kami)
+{
+	zorai_newb_welcome_custom_obj_3_1	[Buy $i1$ from $kami$.]
+}
+
+ZORAI_NEWB_WELCOME_STEP_12 ()
+{
+	zorai_newb_welcome_step_12	[You must use magic item for leave to jungle.
+								Remember, there is no return.]
+}
+
+ZORAI_NEWB_WELCOME_CUSTOM_OBJ_4 (item i1, place place_zora)
+{
+	zorai_newb_welcome_custom_obj_4	[Use $i1$ to join $place_zora$.]
+}
+
+ZORAI_NEWB_WELCOME_END_1 (place place_zora)
+{
+	zorai_newb_welcome_end_1	[Welcome to $place_zora$, $self$! I'm always glad to see newcomers here. Don't be afraid to visit our great city, there is a lot of wonders to discover.]
+}
+
+ZORAI_NEWB_WELCOME_END_2 (bot barman, place place_zora)
+{
+	(barman.gender = female)
+	zorai_newb_welcome_end_2_f	[$barman$, barman of $place_zora$, has important things to say to you. Go and talk to her. See you soon, $self$!]
+
+	(barman.gender = male)
+	zorai_newb_welcome_end_2_m	[$barman$, barman of $place_zora$, has important things to say to you. Go and talk to him. See you soon, $self$!]
+}
+
+ZORAI_NEWB_WELCOME_SYSTEM_MSG_END (place continent_zorai)
+{
+	zorai_newb_welcome_system_msg_end	[&AROUND&You have finished your training with success. Aventure awaits you
+										in $continent_zorai.da$ $continent_zorai$ !]
+}
+
+//mission temporaire auto teleport kami ----------------------------------------------------------------------------------------------------------------
+ZORAI_NEWB_TP_KAMI_TEMP_AUTOMENU(place place_zora)
+{
+	zorai_newb_tp_kami_temp_automenu 	[Teleport to $place_zora$.]
+}
+
+ZORAI_NEWB_TP_KAMI_TEMP_TITLE(place place_zora)
+{
+	zorai_newb_tp_kami_temp_title 	[Teleport to $place_zora$.]
+}
+
+
+ZORAI_NEWB_TP_KAMI_TEMP_DESC(place place_zora)
+{
+	zorai_newb_tp_kami_temp_desc 	[Teleport to $place_zora$.]
+}
+
+
+ZORAI_NEWB_TP_KAMI_TEMP_1 ()
+{
+	zorai_newb_tp_kami_temp_1	[You want to join great Zoraï city? Me can send you there but there is no return
+								and big jungle can be dangerous. You sure?]
+}
+
+ZORAI_NEWB_TP_KAMI_TEMP_2 ()
+{
+	zorai_newb_tp_kami_temp_2	[Come back later, when you are ready.]
+}
+
+//Fight tutorial missions -------------------------------------------------------------------------------
+
+//mission 1
+ZORAI_NEWB_FIGHT_1_AUTOMENU()
+{
+	zorai_newb_fight_1_automenu 	[I wanna learn how to fight.]
+}
+
+ZORAI_NEWB_FIGHT_ANSWER()
+{
+	zorai_newb_fight_answer 	[Melee fighting.]
+}
+
+ZORAI_NEWB_FIGHT_1_TITLE(bot giver)
+{
+	zorai_newb_fight_1_title		[Initiation to combat 1]
+}
+
+ZORAI_NEWB_FIGHT_1_DESC(bot giver)
+{
+	zorai_newb_fight_1_desc		[Follow the instructions of $giver$ to progress in techniques of combat.]
+}
+
+ZORAI_NEWB_FIGHT_1_STEP_1_1()
+{
+	zorai_newb_fight_1_step_1_1	[Surviving on Atys can be very hard, you need to know how to fight if you want to live long.]
+}
+
+ZORAI_NEWB_FIGHT_1_STEP_1_2(creature_model yubo)
+{
+	zorai_newb_fight_1_step_1_2	[You must start your training by facing an easy opponent : find a small herbivore,
+								$yubo.ia$ $yubo$, and kill it.]
+}
+
+ZORAI_NEWB_FIGHT_1_END(creature_model yubo)
+{
+	zorai_newb_fight_1_end	[Good ! But remember that $yubo$ is an easy prey, the next killings
+							won't be so easy as you will be up against tougher beasts.]
+}
+
+
+//mission 2
+ZORAI_NEWB_FIGHT_2_AUTOMENU()
+{
+	zorai_newb_fight_2_automenu 	[I'd like to learn more about combat.]
+}
+
+ZORAI_NEWB_FIGHT_2_TITLE(bot giver)
+{
+	zorai_newb_fight_2_title		[Initiation to combat 2]
+}
+
+ZORAI_NEWB_FIGHT_2_DESC(bot giver)
+{
+	zorai_newb_fight_2_desc		[Follow the instructions of $giver$ to continue to progress in techniques of combat.]
+}
+
+ZORAI_NEWB_FIGHT_2_PREREQ (bot target, sphrase increasedamage)
+{
+	(target.gender = female)
+		zorai_newb_fight_2_prereq_f		[To continue to progress, you need to learn a new technique of $increasedamage$. Go and see $target$, she can teach you.]
+
+
+		zorai_newb_fight_2_prereq_m		[To continue to progress, you need to learn a new technique of $increasedamage$. Go and see $target$, he can teach you.]
+}
+
+ZORAI_NEWB_FIGHT_2_CUSTOM_OBJ_1(bot giver, bot target, sphrase increasedamage)
+{
+ 	zorai_newb_fight_2_custom_obj_1	[Apprendre une nouvelle technique, $increasedamage$, auprès de $target$, et retourner parler à $giver$]
+}
+
+
+ZORAI_NEWB_FIGHT_2_STEP_1_1(creature_model ragus)
+{
+	zorai_newb_fight_2_step_1_1	[Now we need to get rid of a few predators. There are too many $ragus$ on our island,
+								and they prey on the herbivores.]
+}
+
+ZORAI_NEWB_FIGHT_2_STEP_1_2()
+{
+ 	zorai_newb_fight_2_step_1_2	[I would be grateful if you managed to kill one by yourself, you shall earn a good deal of experience
+								if you do. But be really careful...]
+}
+
+ZORAI_NEWB_FIGHT_2_END()
+{
+	zorai_newb_fight_2_end		[Good. Here's a tip for you. If you want more fighting tasks, you should go and talk to a corporal.]
+}
+
+
+//Magic tutorial mission -------------------------------------------------------------------------------
+
+//mission 1
+ZORAI_NEWB_MAGIC_1_AUTOMENU()
+{
+	zorai_newb_magic_1_automenu 	[I'd like to learn some magic.]
+}
+
+ZORAI_NEWB_MAGIC_ANSWER()
+{
+	zorai_newb_magic_answer 	[Magic.]
+}
+
+ZORAI_NEWB_MAGIC_1_TITLE(bot giver)
+{
+	zorai_newb_magic_1_title		[Initiation to magic 1]
+}
+
+ZORAI_NEWB_MAGIC_1_DESC(bot giver)
+{
+	zorai_newb_magic_1_desc		[Follow the instructions of $giver$ to progress in magic.]
+}
+
+ZORAI_NEWB_MAGIC_1_PREREQ (sphrase selfheal)
+{
+		zorai_newb_magic_1_prereq		[Pour continuer à progresser, tu as besoin d'apprendre un nouveau sort, $selfheal$.
+										Va voir l'un des trainers afin qu'il te l'enseigne.]
+}
+
+ZORAI_NEWB_MAGIC_1_CUSTOM_OBJ_1(sphrase selfheal, bot giver)
+{
+ 	zorai_newb_magic_1_custom_obj_1	[Apprendre un nouveau sort, $selfheal$, et retourner parler à $giver$]
+}
+
+ZORAI_NEWB_MAGIC_1_STEP_1_1()
+{
+	zorai_newb_magic_1_step_1_1	[Magic training can be long and difficult, but it offers a very good means to survive here.]
+}
+
+ZORAI_NEWB_MAGIC_1_STEP_1_2(sbrick heal)
+{
+	zorai_newb_magic_1_step_1_2	[To start with, show me what you know, cast $heal.ia$ $heal$.]
+}
+
+ZORAI_NEWB_MAGIC_1_END_1()
+{
+	zorai_newb_magic_1_end_1	[Good ! If you want to concentrate on healing spells you'll have to make up a team with some fighters...]
+}
+
+ZORAI_NEWB_MAGIC_1_END_2()
+{
+	zorai_newb_magic_1_end_2	[... they will need your services, it's the best way to progress in this line.]
+}
+
+//mission 2
+ZORAI_NEWB_MAGIC_2_AUTOMENU()
+{
+	zorai_newb_magic_2_automenu 	[I'd like to learn more about magic.]
+}
+
+ZORAI_NEWB_MAGIC_2_TITLE(bot giver)
+{
+	zorai_newb_magic_2_title		[Initiation to magic]
+}
+
+ZORAI_NEWB_MAGIC_2_DESC(bot giver)
+{
+	zorai_newb_magic_2_desc		[Follow the instructions of $giver$ to progress in magic.]
+}
+
+ZORAI_NEWB_MAGIC_2_PREREQ (bot target, sphrase aciddamage)
+{
+	(target.gender = female)
+		zorai_newb_magic_2_prereq_f		[To continue to progress, you need to learn a new spell : $aciddamage$. Go and see $target$, she can teach you.]
+
+
+		zorai_newb_magic_2_prereq_m		[To continue to progress, you need to learn a new spell : $aciddamage$. Go and see $target$, he can teach you.]
+}
+
+ZORAI_NEWB_MAGIC_2_CUSTOM_OBJ_1(bot target, bot giver, sphrase aciddamage)
+{
+ 	zorai_newb_magic_2_custom_obj_1	[Apprendre un nouveau sort, $aciddamage$, auprès de $target$, et retourner parler à $giver$]
+}
+
+ZORAI_NEWB_MAGIC_2_STEP_1_1()
+{
+	zorai_newb_magic_2_step_1_1	[The first use for magic is to combat with it.]
+}
+
+ZORAI_NEWB_MAGIC_2_STEP_1_2(sbrick nuke, creature_model yubo)
+{
+ 	zorai_newb_magic_2_step_1_2	[Let's try : use $nuke.ia$ $nuke$ to kill $yubo.ia$ $yubo$.]
+}
+
+ZORAI_NEWB_MAGIC_2_OBJ_1_1(sbrick nuke, creature_model yubo)
+{
+	zorai_newb_magic_2_obj_1		[Use $nuke.ia$ $nuke$ to kill $yubo.ia$ $yubo$.]
+}
+
+ZORAI_NEWB_MAGIC_2_OBJ_2_1(creature_model yubo, int qt)
+{
+	zorai_newb_magic_2_obj_2		[Kill $yubo.ia$ $yubo$.]
+}
+
+ZORAI_NEWB_MAGIC_2_END()
+{
+	zorai_newb_magic_2_end		[Good job! Magic training can be long and difficult, but it offers a very good means to fight and to survive here.]
+}
+
+ZORAI_NEWB_MAGIC_3_STEP_1_1()
+{
+	zorai_newb_magic_3_step_1_1	[Destructive magic is powerful, but healing spells can be strong too, although
+								to take profit out of them you'll have to make up a team with some fighters.]
+}
+
+ZORAI_NEWB_MAGIC_3_STEP_1_2(sbrick heal)
+{
+	zorai_newb_magic_3_step_1_2	[Fortunately, they will often need your services, so it's the best way to progress in this line. Go fight with others, and cast $heal.ia$ $heal$.]
+}
+
+ZORAI_NEWB_MAGIC_3_END()
+{
+	zorai_newb_magic_3_end		[Healing and helping others is a way leading to victory. Here's a little money for you. And if you're still looking for work, go and see the corporal, he's always got something on.]
+}
+
+
+//Harvest tutorial mission -------------------------------------------------------------------------------
+
+//missionn 1
+ZORAI_NEWB_HARVEST_1_AUTOMENU()
+{
+	zorai_newb_harvest_1_automenu 	[I'd like to progress in harvesting.]
+}
+
+ZORAI_NEWB_HARVEST_ANSWER()
+{
+	zorai_newb_harvest_answer 	[Harvesting.]
+}
+
+ZORAI_NEWB_HARVEST_1_TITLE(bot giver)
+{
+	zorai_newb_harvest_1_title		[Initiation to harvesting 1]
+}
+
+ZORAI_NEWB_HARVEST_1_DESC(bot giver)
+{
+	zorai_newb_harvest_1_desc		[Follow the instructions of $giver$ to progress in harvesting.]
+}
+
+ZORAI_NEWB_HARVEST_1_PREREQ (sphrase basicextraction)
+{
+		zorai_newb_harvest_1_prereq		[Pour continuer à progresser, tu as besoin d'apprendre une nouvelle technique, $basicextraction$.
+										Va voir l'un des trainers afin qu'il te l'enseigne.]
+}
+
+ZORAI_NEWB_HARVEST_1_CUSTOM_OBJ_1(sphrase basicextraction, bot giver)
+{
+ 	zorai_newb_harvest_1_custom_obj_1	[Apprendre une nouvelle technique, $basicextraction$, et retourner parler à $giver$]
+}
+
+ZORAI_NEWB_HARVEST_1_STEP_1_1()
+{
+	zorai_newb_harvest_1_step_1_1	[To progress in harvesting, you'll have to learn to locate sources, and extract their contents.]
+}
+
+ZORAI_NEWB_HARVEST_1_STEP_1_2(item rm1, item rm2)
+{
+	zorai_newb_harvest_1_step_1_2	[Let's start with something easy, bring me back $rm1.ia$ $rm1$ and $rm2.ia$ $rm2$
+									which you'll find in the ground in the village.]
+}
+
+ZORAI_NEWB_HARVEST_1_END()
+{
+	zorai_newb_harvest_1_end	[Excellent. But that was easy because here the sources glow above ground and are easy to spot.]
+}
+
+//mission 2
+ZORAI_NEWB_HARVEST_2_AUTOMENU()
+{
+	zorai_newb_harvest_2_automenu 	[I'd like to learn more about harvesting.]
+}
+
+ZORAI_NEWB_HARVEST_2_TITLE(bot giver)
+{
+	zorai_newb_harvest_2_title		[Initiation to harvesting 2]
+}
+
+ZORAI_NEWB_HARVEST_2_DESC(bot giver)
+{
+	zorai_newb_harvest_2_desc		[Follow the instructions of $giver$ to continue to progress in harvesting.]
+}
+
+ZORAI_NEWB_HARVEST_2_PREREQ (sphrase basicprospection, bot target)
+{
+	(target.gender = female)
+		zorai_newb_harvest_2_prereq_f		[To continue to progress, you need to learn a new technique : $basicprospection$. Go and see $target$, she can teach you.]
+
+
+		zorai_newb_harvest_2_prereq_m		[To continue to progress, you need to learn a new technique : $basicprospection$. Go and see $target$, he can teach you.]
+}
+
+ZORAI_NEWB_HARVEST_2_CUSTOM_OBJ_1(sphrase basicprospection, bot target, bot giver)
+{
+ 	zorai_newb_harvest_2_custom_obj_1	[Apprendre une nouvelle technique, $basicprospection$, auprès de $target$, et retourner parler à $giver$]
+}
+
+ZORAI_NEWB_HARVEST_2_STEP_1_1()
+{
+	zorai_newb_harvest_2_step_1_1	[Let's continue then : your ability to extract correctly will have a bearing on the quality of the materials...]
+}
+
+ZORAI_NEWB_HARVEST_2_STEP_1_2()
+{
+	zorai_newb_harvest_2_step_1_2	[...but take great care because it can be dangerous, there are many pockets of gas on Atys.]
+}
+
+ZORAI_NEWB_HARVEST_2_STEP_1_3(item rm3, int ql)
+{
+ 	zorai_newb_harvest_2_step_1_3	[Remember to think about it when you go and fetch me $rm3.ia$ $rm3$ of quality $ql$.
+									Theses will only be found along the cliffs to the south of this region.]
+}
+
+ZORAI_NEWB_HARVEST_2_STEP_1_4()
+{
+ 	zorai_newb_harvest_2_step_1_4	[You'll have to locate the sources by yourself by prospecting else their glow won't become visible.]
+}
+
+ZORAI_NEWB_HARVEST_2_END()
+{
+	zorai_newb_harvest_2_end		[Good, here's a little money for you. And if you're after more work,
+									go and see a corporal, they've always something going.]
+}
+
+//Craft tutorial mission -------------------------------------------------------------------------------
+
+//mission 1
+ZORAI_NEWB_CRAFT_1_AUTOMENU()
+{
+	zorai_newb_craft_1_automenu 	[I'd like to progress in crafting.]
+}
+
+ZORAI_NEWB_CRAFT_ANSWER()
+{
+	zorai_newb_craft_answer 	[Crafting.]
+}
+
+ZORAI_NEWB_CRAFT_1_TITLE(bot giver)
+{
+	zorai_newb_craft_1_title		[Initiation to crafting 1]
+}
+
+ZORAI_NEWB_CRAFT_1_DESC(bot giver)
+{
+	zorai_newb_craft_1_desc			[Follow the instructions of $giver$ to progress in crafting.]
+}
+
+ZORAI_NEWB_CRAFT_1_PREREQ (sphrase zoraiarmor)
+{
+		zorai_newb_craft_1_prereq		[Pour continuer à progresser, tu as besoin d'apprendre une nouvelle technique, $zoraiarmor$.
+										Va voir l'un des trainers afin qu'il te l'enseigne.]
+}
+
+ZORAI_NEWB_CRAFT_1_CUSTOM_OBJ_1(sphrase zoraiarmor, bot giver)
+{
+ 	zorai_newb_craft_1_custom_obj_1	[Apprendre une nouvelle technique, $zoraiarmor$, et retourner parler à $giver$]
+}
+
+ZORAI_NEWB_CRAFT_1_STEP_1_1()
+{
+	zorai_newb_craft_1_step_1_1	[Crafting is more difficult that it might seem, but with willpower everything is possible.]
+}
+
+ZORAI_NEWB_CRAFT_1_STEP_1_2(item boots, int ql)
+{
+	zorai_newb_craft_1_step_1_2	[Let's begin by finding out what you know : make $boots.ia$ $boots$ of quality $ql$. You will need a tool. If you don't already have one, there is a merchant who sell tools in the village.]
+}
+
+ZORAI_NEWB_CRAFT_1_END_1()
+{
+	zorai_newb_craft_1_end_1	[Very good ! To progress, the best means is to practice making items... ]
+}
+
+ZORAI_NEWB_CRAFT_1_END_2()
+{
+	zorai_newb_craft_1_end_2	[...it's only by analysing mistakes made during tests that the quality crafter
+								will develop his or her techniques.]
+}
+
+//mission 2
+ZORAI_NEWB_CRAFT_2_AUTOMENU()
+{
+	zorai_newb_craft_2_automenu 	[I'd like to learn more about crafting.]
+}
+
+ZORAI_NEWB_CRAFT_2_TITLE(bot giver)
+{
+	zorai_newb_craft_2_title		[Initiation to crafting 2]
+}
+
+ZORAI_NEWB_CRAFT_2_DESC(bot giver)
+{
+	zorai_newb_craft_2_desc			[Follow the instructions of $giver$ to continue to progress in crafting.]
+}
+
+ZORAI_NEWB_CRAFT_2_PREREQ (bot target, sbrick zoraigloves)
+{
+	(target.gender = female)
+		zorai_newb_craft_2_prereq_f		[To continue to progress, you need to learn a new crafting plan, $zoraigloves$. Go and see $target$, she can teach you.]
+
+
+		zorai_newb_craft_2_prereq_m		[To continue to progress, you need to learn a new crafting plan, $zoraigloves$. Go and see $target$, he can teach you.]
+}
+
+ZORAI_NEWB_CRAFT_2_CUSTOM_OBJ_1(bot target, bot giver, sbrick zoraigloves)
+{
+ 	zorai_newb_craft_2_custom_obj_1	[Apprendre un nouveau schéma de fabrication, $zoraigloves$, auprès de $target$, et retourner parler à $giver$]
+}
+
+ZORAI_NEWB_CRAFT_2_STEP_1_1()
+{
+ 	zorai_newb_craft_2_step_1_1	[A crafter may get hampered by the quality of materials used.]
+}
+
+ZORAI_NEWB_CRAFT_2_STEP_1_2()
+{
+ 	zorai_newb_craft_2_step_1_2	[So besides training, you need to get yourself a good supplier if you want to make fine objects.]
+}
+
+ZORAI_NEWB_CRAFT_2_STEP_1_3(item gloves, int ql)
+{
+ 	zorai_newb_craft_2_step_1_3	[When you're ready, make $gloves.ia$ $gloves$ of quality $ql$ for me.]
+}
+
+ZORAI_NEWB_CRAFT_2_END()
+{
+	zorai_newb_craft_2_end		[Excellent, here's a little reward for your efforts.
+								And if you're looking for more work, go and see a foreman,
+								they've always got something going.]
+}
+
+//									---------------------------------
+//													TRYKER
+//									---------------------------------
+
+//Mission Welcome Tryker Newbieland -----------------------------------------------------------------------------------------------------------------
+TRYKER_NEWB_WELCOME_AUTOMENU()
+{
+	tryker_newb_welcome_automenu 	[Welcome!]
+}
+
+TRYKER_NEWB_WELCOME_TITLE (bot giver, place place_aubermouth)
+{
+	tryker_newb_welcome_title		[Welcome to $place_aubermouth$.]
+}
+
+TRYKER_NEWB_WELCOME_DESC (bot giver)
+{
+	tryker_newb_welcome_desc		[Follow the indications of $giver$ to find out who can help you and how.]
+}
+
+TRYKER_NEWB_WELCOME_SYSTEM_MSG_1 (bot target)
+{
+	(target.gender = female)
+		tryker_newb_welcome_system_msg_1_f	[&AROUND&$target$, one of the village welcomers, would like to bif you welcome. Go speak to her.]
+
+
+	tryker_newb_welcome_system_msg_1	[&AROUND&$target$, one of the village welcomers, would like to bif you welcome. Go speak to him.]
+}
+
+TRYKER_NEWB_WELCOME_CUSTOM_OBJ_1 (bot target)
+{
+	tryker_newb_welcome_custom_obj_1	[Speak to $target$.]
+}
+
+TRYKER_NEWB_WELCOME_TALKMENU_1 ()
+{
+	tryker_newb_welcome_talkmenu_1	[Hello, I'm new round here.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_1_1 ()
+{
+	tryker_newb_welcome_step_1_1		[I bid you welcome, $self$. It is time for you to start understanding more about your own people.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_1_1b ()
+{
+	tryker_newb_welcome_step_1_1b		[Vast knowledge has been passed down to us from our forefathers, and we intend to use it
+										to restore our Culture. With the right Masters, you too shall acquire this ancient
+										knowledge and before long your destiny will begin to unfold.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_1_1c ()
+{
+	tryker_newb_welcome_step_1_1c		[You are on a small island, not far from the Tryker mainland. We have five small villages on this
+										island, and this is one of them.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_1_1d ()
+{
+	tryker_newb_welcome_step_1_1d		[You are on a small island, not far from the Tryker mainland. We have five small villages on this
+										island, and this is one of them.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_1_2 (bot target, place capital)
+{
+	(target.gender = female)
+		tryker_newb_welcome_step_1_2_f		[But I have said enough. You have yet to meet the highly esteemed
+											personalities of this village.
+											Before you decide to leave for $capital$, the Tryker capital,
+											I want you to meet $target$.]
+
+
+	tryker_newb_welcome_step_1_2_m		[But I have said enough. You have yet to meet the highly esteemed
+										personalities of this village.
+										Before you decide to leave for $capital$, the Tryker capital,
+										I want you to meet $target$.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_1_2b (bot target)
+{
+	(target.gender = female)
+		tryker_newb_welcome_step_1_2b_f		[$target$ is our Fighter Trainer. She will give you coaching in our
+											many deadly techniques...\n
+											You will find her in the hut.]
+
+
+	tryker_newb_welcome_step_1_2b_m		[$target$ is our Fighter Trainer. He will give you coaching in our
+										many deadly techniques...\n
+										You will find him in the hut.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_2_1 (race kitins)
+{
+	tryker_newb_welcome_step_2_1			[Ah ! I was beginning to think you'd already got yourself lost...
+									I wanted to warn you against our greatest enemy, $kitins.da$ $kitins$.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_2_1_b ()
+{
+	tryker_newb_welcome_step_2_1_b		[Never think twice if you come up against one: Strike first or
+										make tracks as fast as you can.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_2_1_c ()
+{
+	tryker_newb_welcome_step_2_1_c		[It is they who wiped out our entire civilization in the old lands.
+										And remember this, it was the Fyros who first provoked their wrath and stirred
+										them from their underground nests!]
+}
+
+TRYKER_NEWB_WELCOME_STEP_2_2 ()
+{
+		tryker_newb_welcome_step_2_2		[But before you find out more about our past on the mainland, you
+										must first develop your skills
+										and equipment to be able to survive.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_2_2_b ()
+{
+		tryker_newb_welcome_step_2_2_b	[I will always be here to help you improve your fighting techniques.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_2_2_c (bot target)
+{
+	(target.gender = female)
+		tryker_newb_welcome_step_2_2_c_f		[For the moment, I want you to meet $target$.
+												She is really something, I can promise you!
+												She always has the right word for a situation.]
+
+
+		tryker_newb_welcome_step_2_2_c_m		[For the moment, I want you to meet $target$.
+												He is really something, I can promise you!
+												He always has the right word for a situation.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_3_1 ()
+{
+	tryker_newb_welcome_step_3_1			[Welcome to our village, I'm really pleased to meet you ! These are such crucial times.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_3_1_b ()
+{
+	tryker_newb_welcome_step_3_1_b			[The Great Tryker people is gathering more and more,
+											and the presence of the Karavan
+											lifts our hearts, as they say, cause it means we can teleport again.
+											Our villages shall swiftly grow in strength.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_3_2 ()
+{
+	tryker_newb_welcome_step_3_2		[When you feel ready to leave our village, the Karavan will guide you. His members
+									are strange, dark individuals, no homin has yet seen their true face. But they are not
+									to be feared, at least that's my feeling.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_3_2_b ()
+{
+	tryker_newb_welcome_step_3_2_b		[As a magician I must warn you that the paths of the Karavan are mysterious and obscure.
+										But there is another way that you will discover soon.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_3_3 ()
+{
+		tryker_newb_welcome_step_3_3		[If you develop your magic skills, you will meet the Kamis and with a little luck,
+										they will open your eyes upon another world. Atys has many faces...]
+}
+
+TRYKER_NEWB_WELCOME_STEP_3_3_b (bot target)
+{
+	(target.gender = female)
+		tryker_newb_welcome_step_3_3_b_f	[But look at me now, I must be getting on ! You had better leave now,
+											but promise me you'll stop by $target$.
+											She's the harvester trainer. Se has traveled widely and knows many secrets!]
+
+
+	tryker_newb_welcome_step_3_3_b_m	[But look at me now, I must be getting on ! You had better leave now,
+										but promise me you'll stop by $target$.
+										He's the harvester trainer. He has traveled widely and knows many secrets!]
+}
+
+
+TRYKER_NEWB_WELCOME_STEP_4_1 (bot current)
+{
+	tryker_newb_welcome_step_4_1		[I am $current$. My father was a great Harvester himself, and I hold all his secrets and
+									many more...]
+}
+
+TRYKER_NEWB_WELCOME_STEP_4_1_b ()
+{
+	tryker_newb_welcome_step_4_1_b	[For unlike him I have traveled all over the world. I have met the proud Fyros,
+									and the mysterious Zoraïs.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_4_1_c ()
+{
+	tryker_newb_welcome_step_4_1_c	[I have spoken with Matis around the Forest Lands and learned some of their secrets.]
+}
+
+
+TRYKER_NEWB_WELCOME_STEP_4_2 ()
+{
+	tryker_newb_welcome_step_4_2		[You too may experience the same freedom if that be your choice.\n
+									You will be able to travel throughout Atys to extract her natural resources,
+									crucial for the life of homins.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_4_2_b ()
+{
+		tryker_newb_welcome_step_4_2_b	[But you must take guard, prospecting and extraction can be dangerous.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_4_2_c (bot target)
+{
+	(target.gender = female)
+		tryker_newb_welcome_step_4_2_c_f	[Now go see $target$, she's our Master Crafter.]
+
+
+	tryker_newb_welcome_step_4_2_c_m		[Now go see $target$, he's our Master Crafter.]
+}
+
+
+TRYKER_NEWB_WELCOME_STEP_5_1 ()
+{
+	tryker_newb_welcome_step_5_1		[Je te salue, jeune $self$. Est-ce le vent qui t'a guidé jusqu'ici ? Car peut-être le sais-tu,
+										le souffle du ciel au-dessus de nos têtes est une force bien surprenante...]
+}
+
+TRYKER_NEWB_WELCOME_STEP_5_1_b ()
+{
+	tryker_newb_welcome_step_5_1_b		[Les autres homins n'y prêtent guère attention, mais nous autres trykers connaissons cette force,
+										et nous savons l'utiliser dans les objets que nous fabriquons.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_5_1_c ()
+{
+	tryker_newb_welcome_step_5_1_c		[The items we make are unique on Atys. As you will see, crafters are at the very heart of homin life.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_5_1_d ()
+{
+	tryker_newb_welcome_step_5_1_d		[Ils créent des objets magnifiques afin de répondre au mieux
+										aux besoins des peuples d'Atys.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_5_2 (bot target)
+{
+	(target.gender = female)
+		tryker_newb_welcome_step_5_2_f	[Now you should pay a visit to $target$, the Merchant. She will sell you everything you will need.]
+
+
+	tryker_newb_welcome_step_5_2_m		[Now you should pay a visit to $target$, the Merchant. He will sell you everything you will need.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_5_2_b (bot target)
+{
+	(target.gender = female)
+		tryker_newb_welcome_step_5_2_b_f	[I first met
+										her down under, in the second layer of the Prime Roots. She's simply the best.\n
+										\n
+										$target$ is near the shop.]
+
+
+	tryker_newb_welcome_step_5_2_b_m		[I first met
+										him down under, in the second layer of the Prime Roots. He's simply the best.\n
+										\n
+										$target$ is near the shop.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_6_1 (bot previous)
+{
+	(previous.gender = female)
+		tryker_newb_welcome_step_6_1_f	[So, $previous$ sent you, did she ? We have worked together many times, she knows I sell nothing but the best...]
+
+
+	tryker_newb_welcome_step_6_1_m	[So, $previous$ sent you, did he ? We have worked together many times, he knows I sell nothing but the best...]
+}
+
+TRYKER_NEWB_WELCOME_STEP_6_1_b ()
+{
+	tryker_newb_welcome_step_6_1_b	[You will need to replace or upgrade your weaponry and equipment
+									as you make progress. The merchants will sell
+									you what you need at a reasonable price.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_6_2 (bot target)
+{
+	(target.gender = female)
+		tryker_newb_welcome_step_6_2_f	[I suggest you go and see $target$, the local supplier.
+										She's always ready to hire keen homins to help her in her work.
+										So go and speak to her.]
+
+
+	tryker_newb_welcome_step_6_2_m	[I suggest you go and see $target$, the local supplier.
+									He's always ready to hire keen homins to help him in his work.
+									So go and speak to him.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_7_1 ()
+{
+	tryker_newb_welcome_step_7_1		[Look's like you're new round here. Well, welcome! When you start looking for work
+									to earn a few dappers, come and see me ! I've always a task or two to propose.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_7_1_b ()
+{
+	tryker_newb_welcome_step_7_1_b		[I mostly deal in trade and escorting goods.
+										If you prefer fighting or foraging, the corporal will give you a mission or two.]
+}
+
+
+TRYKER_NEWB_WELCOME_STEP_7_2 ()
+{
+		tryker_newb_welcome_step_7_2		[If crafting is your line, the foreman will no doubt be interested by your talents.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_7_2_b (bot giver)
+{
+	(giver.gender = female)
+		tryker_newb_welcome_step_7_2_b_f	[You can return to $giver$ now, she most likely has some more advice to give you.]
+
+
+		tryker_newb_welcome_step_7_2_b_m	[You can return to $giver$ now, he most likely has some more advice to give you.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_8_1 ()
+{
+	tryker_newb_welcome_step_8_1		[Good ! Now you know our village a little better.
+									But before facing the dangers on the mainland, you've got to become stronger
+									and increase your knowledge.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_8_1_b ()
+{
+	tryker_newb_welcome_step_8_1_b	[If you want, I can give you a few tasks to do in different fields to help you progress.
+									Tu n'auras qu'à me dire ce qui t'intéresse.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_8_2 ()
+{
+	tryker_newb_welcome_step_8_2		[When you're ready, young $self$,
+									I'll tell you how to join the Tryker capital on the mainland.]
+}
+
+TRYKER_NEWB_WELCOME_TALKMENU_3 ()
+{
+	tryker_newb_welcome_talkmenu_3	[Help me to progress]
+}
+
+TRYKER_NEWB_WELCOME_STEP_8_3 ()
+{
+	tryker_newb_welcome_step_8_3		[Dans quel domaine souhaites-tu progresser ?]
+}
+
+TRYKER_NEWB_WELCOME_TEAM_ANSWER()
+{
+	tryker_newb_welcome_team_answer 	[fighting in team with homins]
+}
+
+TRYKER_NEWB_WELCOME_TEAM_STEP_1 ()
+{
+	tryker_newb_welcome_team_step_1		[Good choice! With the help of others you will progress faster.]
+}
+
+TRYKER_NEWB_WELCOME_TEAM_STEP_2 ()
+{
+	tryker_newb_welcome_team_step_2		[Make a team, then I will give you a fighting mission. ]
+}
+
+TRYKER_NEWB_WELCOME_TEAM_SYSTEM_MSG_1 ()
+{
+		tryker_newb_welcome_team_system_msg_1	[If you're in team, select the team mission in the right-click menu of the welcomer]
+}
+
+TRYKER_NEWB_WELCOME_TALKMENU_4 ()
+{
+	tryker_newb_welcome_talkmenu_4	[Je suis prêt à progresser]
+}
+
+TRYKER_NEWB_WELCOME_DESC_2 (bot giver)
+{
+	tryker_newb_welcome_desc_2		[Progress in your main skill in order to get ready to join the Tryker mainland.]
+}
+
+TRYKER_NEWB_WELCOME_SYSTEM_MSG_3 ()
+{
+		tryker_newb_welcome_system_msg_3	[&AROUND&You must have 20 in the main skill of your choice to finish this mission step.]
+}
+
+TRYKER_NEWB_WELCOME_CUSTOM_OBJ_2 (bot giver)
+{
+	tryker_newb_welcome_custom_obj_2	[Progress in your main skill. You can speak to $giver$ if you want help.]
+}
+
+TRYKER_NEWB_WELCOME_SYSTEM_MSG_2 (bot giver)
+{
+	tryker_newb_welcome_system_msg_2	[&AROUND&You are ready to join the Tryker mainland! Go and speak to $giver$ to find out more.]
+}
+
+TRYKER_NEWB_WELCOME_DESC_3 (bot giver)
+{
+	tryker_newb_welcome_desc_3		[Join the Tryker capital to continue your adventures.]
+}
+
+TRYKER_NEWB_WELCOME_TALKMENU_2 ()
+{
+	tryker_newb_welcome_talkmenu_2	[I would like to leave for the mainland.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_9_1 ()
+{
+	tryker_newb_welcome_step_9_1	[I can see you have progressed well. Congratulations, $self$ ! You are now tough enough to help
+								our Tryker people rebuild our civilization!]
+}
+
+TRYKER_NEWB_WELCOME_STEP_9_1_b (place place_fairhaven)
+{
+	tryker_newb_welcome_step_9_1_b	[The time has come for you to walk the ground of $place_fairhaven$, the capital of the Tryker!
+									Mais attention : tu ne pourras revenir ici après ton départ. Sois donc sûr de ton choix.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_9_1_c ()
+{
+	tryker_newb_welcome_step_9_1_c	[In the village you will find a guide who can lead you
+									to the Karavan who has the power to teleport you to the mainland. When you will be in the capital, talk to the city welcomer.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_9_2 (bot kguide)
+{
+	(kguide.gender = female)
+		tryker_newb_welcome_step_9_2_f	[Go and see $kguide$, on my behalf. She will guide you to the Karavan Teleporter. Tell her I sent you.\n
+								\n
+								May the forces of Atys spread through your veins!]
+
+		tryker_newb_welcome_step_9_2_m	[Go and see $kguide$, on my behalf. He will guide you to the Karavan Teleporter. Tell him I sent you.\n
+								\n
+								May the forces of Atys spread through your veins!]
+}
+
+TRYKER_NEWB_WELCOME_STEP_10_1 (bot previous)
+{
+	tryker_newb_welcome_step_10_1	[Greetings, young Tryker. $previous$ is a good homin. And we are proud to
+									count him among the Children of Jena.
+									We are glad to help him in return for his support.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_10_1_b ()
+{
+	tryker_newb_welcome_step_10_1_b	[Teleportation is among Jena's many talents invested in us which you shall discover
+									in due course.\n
+									But to benefit from her favor you must prove your qualities
+									through faithful offerings or services to her church.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_10_2 (bot target)
+{
+	(target.gender = female)
+		tryker_newb_welcome_step_10_2_f	[You must speak to $target$ for her to show you the way that leads to the mainland.
+										If you don't know where to find her, follow your compass, it will guide you to her.]
+
+	tryker_newb_welcome_step_10_2_m	[You must speak to $target$ for him to show you the way that leads to the mainland.
+										If you don't know where to find him, follow your compass, it will guide you to him.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_11 ()
+{
+	tryker_newb_welcome_step_11	[Si tu souhaites rejoindre la cité tryker, fais-nous une offrande. En retour,
+								nous te donnerons le moyen de voyager grâce à la toute-puissance de Jena.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_11_TEMP ()
+{
+	tryker_newb_welcome_step_11_temp	[Le pouvoir de Jena peut te téléporter. Tu n'as qu'à le demander.]
+}
+
+TRYKER_NEWB_WELCOME_CUSTOM_OBJ_3_1 (item i1, int qt1, int qual1, bot karavan)
+{
+	tryker_newb_welcome_custom_obj_3_1	[Buy $i1$ from $karavan$.]
+}
+
+TRYKER_NEWB_WELCOME_STEP_12 ()
+{
+	tryker_newb_welcome_step_12	[Sers-toi de cet objet pour ton voyage. Mais souviens-toi, il n'y a pas de retour possible.]
+}
+
+TRYKER_NEWB_WELCOME_CUSTOM_OBJ_4 (item i1, place place_fairhaven)
+{
+	tryker_newb_welcome_custom_obj_4	[Use $i1$ to join $place_fairhaven$.]
+}
+
+TRYKER_NEWB_WELCOME_END_1 (place place_fairhaven)
+{
+	tryker_newb_welcome_end_1	[Welcome to $place_fairhaven$, $self$! I'm always glad to see newcomers here. Don't be afraid to visit our great city, there is a lot of wonders to discover.]
+}
+
+TRYKER_NEWB_WELCOME_END_2 (bot barman, place place_fairhaven)
+{
+	(barman.gender = female)
+	tryker_newb_welcome_end_2_f	[$barman$, barman of $place_fairhaven$, has important things to say to you. Go and talk to her. See you soon, $self$!]
+
+	(barman.gender = male)
+	tryker_newb_welcome_end_2_m	[$barman$, barman of $place_fairhaven$, has important things to say to you. Go and talk to him. See you soon, $self$!]
+}
+
+TRYKER_NEWB_WELCOME_SYSTEM_MSG_END (place continent_tryker)
+{
+	tryker_newb_welcome_system_msg_end	[&AROUND&You have finished your training with success. Aventure awaits you
+										in $continent_tryker.da$ $continent_tryker$ !]
+}
+
+//mission temporaire auto teleport karavan ----------------------------------------------------------------------------------------------------------------
+TRYKER_NEWB_TP_KARAVAN_TEMP_AUTOMENU(place place_fairhaven)
+{
+	tryker_newb_tp_karavan_temp_automenu 	[Teleport to $place_fairhaven$.]
+}
+
+TRYKER_NEWB_TP_KARAVAN_TEMP_TITLE(place place_fairhaven)
+{
+	tryker_newb_tp_karavan_temp_title 	[Teleport to $place_fairhaven$.]
+}
+
+
+TRYKER_NEWB_TP_KARAVAN_TEMP_DESC(place place_fairhaven)
+{
+	tryker_newb_tp_karavan_temp_desc 	[Teleport to $place_fairhaven$.]
+}
+
+
+TRYKER_NEWB_TP_KARAVAN_TEMP_1 ()
+{
+	tryker_newb_tp_karavan_temp_1	[You want to join the Tryker city? I can send you there but there is no return,
+									and the Lake lands can be dangerous. Are you sure?]
+}
+
+TRYKER_NEWB_TP_KARAVAN_TEMP_2 ()
+{
+	tryker_newb_tp_karavan_temp_2	[Come back later, when you are ready.]
+}
+
+
+//Fight tutorial missions -------------------------------------------------------------------------------
+
+//mission 1
+TRYKER_NEWB_FIGHT_1_AUTOMENU()
+{
+	tryker_newb_fight_1_automenu 	[I wanna learn how to fight.]
+}
+
+TRYKER_NEWB_FIGHT_ANSWER()
+{
+	tryker_newb_fight_answer 	[Melee fighting.]
+}
+
+TRYKER_NEWB_FIGHT_1_TITLE(bot giver)
+{
+	tryker_newb_fight_1_title		[Initiation to combat 1]
+}
+
+TRYKER_NEWB_FIGHT_1_DESC(bot giver)
+{
+	tryker_newb_fight_1_desc		[Follow the instructions of $giver$ to progress in techniques of combat.]
+}
+
+TRYKER_NEWB_FIGHT_1_STEP_1_1()
+{
+	tryker_newb_fight_1_step_1_1	[Surviving on Atys can be very hard, you need to know how to fight if you want to live long.]
+}
+
+TRYKER_NEWB_FIGHT_1_STEP_1_2(creature_model yubo)
+{
+	tryker_newb_fight_1_step_1_2	[You must start your training by facing an easy opponent : find a small herbivore,
+								$yubo.ia$ $yubo$, and kill it.]
+}
+
+TRYKER_NEWB_FIGHT_1_END(creature_model yubo)
+{
+	tryker_newb_fight_1_end	[Good ! But remember that $yubo$ is an easy prey, the next killings
+							won't be so easy as you will be up against tougher beasts.]
+}
+
+
+//mission 2
+TRYKER_NEWB_FIGHT_2_AUTOMENU()
+{
+	tryker_newb_fight_2_automenu 	[I'd like to learn more about combat.]
+}
+
+TRYKER_NEWB_FIGHT_2_TITLE(bot giver)
+{
+	tryker_newb_fight_2_title		[Initiation to combat 2]
+}
+
+TRYKER_NEWB_FIGHT_2_DESC(bot giver)
+{
+	tryker_newb_fight_2_desc		[Follow the instructions of $giver$ to continue to progress in techniques of combat.]
+}
+
+TRYKER_NEWB_FIGHT_2_PREREQ (bot target, sphrase increasedamage)
+{
+	(target.gender = female)
+		tryker_newb_fight_2_prereq_f		[To continue to progress, you need to learn a new technique of $increasedamage$. Go and see $target$, she can teach you.]
+
+
+		tryker_newb_fight_2_prereq_m		[To continue to progress, you need to learn a new technique of $increasedamage$. Go and see $target$, he can teach you.]
+}
+
+TRYKER_NEWB_FIGHT_2_CUSTOM_OBJ_1(bot giver, bot target, sphrase increasedamage)
+{
+ 	tryker_newb_fight_2_custom_obj_1	[Apprendre une nouvelle technique, $increasedamage$, auprès de $target$, et retourner parler à $giver$]
+}
+
+TRYKER_NEWB_FIGHT_2_STEP_1_1(creature_model ragus)
+{
+	tryker_newb_fight_2_step_1_1	[Now we need to get rid of a few predators. There are too many $ragus$ on our island,
+								and they prey on the herbivores.]
+}
+
+TRYKER_NEWB_FIGHT_2_STEP_1_2()
+{
+ 	tryker_newb_fight_2_step_1_2	[I would be grateful if you managed to kill one by yourself, you shall earn a good deal of experience
+								if you do. But be really careful...]
+}
+
+TRYKER_NEWB_FIGHT_2_END()
+{
+	tryker_newb_fight_2_end		[Good. Here's a tip for you. If you want more fighting tasks, you should go and talk to a corporal.]
+}
+
+
+//Magic tutorial mission -------------------------------------------------------------------------------
+
+//mission 1
+TRYKER_NEWB_MAGIC_1_AUTOMENU()
+{
+	tryker_newb_magic_1_automenu 	[I'd like to learn some magic.]
+}
+
+TRYKER_NEWB_MAGIC_ANSWER()
+{
+	tryker_newb_magic_answer 	[Magic.]
+}
+
+TRYKER_NEWB_MAGIC_1_TITLE(bot giver)
+{
+	tryker_newb_magic_1_title		[Initiation to magic 1]
+}
+
+TRYKER_NEWB_MAGIC_1_DESC(bot giver)
+{
+	tryker_newb_magic_1_desc		[Follow the instructions of $giver$ to progress in magic.]
+}
+
+TRYKER_NEWB_MAGIC_1_PREREQ (sphrase selfheal)
+{
+		tryker_newb_magic_1_prereq		[Pour continuer à progresser, tu as besoin d'apprendre un nouveau sort, $selfheal$.
+										Va voir l'un des trainers afin qu'il te l'enseigne.]
+}
+
+TRYKER_NEWB_MAGIC_1_CUSTOM_OBJ_1(sphrase selfheal, bot giver)
+{
+ 	tryker_newb_magic_1_custom_obj_1	[Apprendre un nouveau sort, $selfheal$, et retourner parler à $giver$]
+}
+
+TRYKER_NEWB_MAGIC_1_STEP_1_1()
+{
+	tryker_newb_magic_1_step_1_1	[Magic training can be long and difficult, but it offers a very good means to survive here.]
+}
+
+TRYKER_NEWB_MAGIC_1_STEP_1_2(sbrick heal)
+{
+	tryker_newb_magic_1_step_1_2	[To start with, show me what you know, cast $heal.ia$ $heal$.]
+}
+
+TRYKER_NEWB_MAGIC_1_END_1()
+{
+	tryker_newb_magic_1_end_1	[Good ! If you want to concentrate on healing spells you'll have to make up a team with some fighters...]
+}
+
+TRYKER_NEWB_MAGIC_1_END_2()
+{
+	tryker_newb_magic_1_end_2	[... they will need your services, it's the best way to progress in this line.]
+}
+
+//mission 2
+TRYKER_NEWB_MAGIC_2_AUTOMENU()
+{
+	tryker_newb_magic_2_automenu 	[I'd like to learn more about magic.]
+}
+
+TRYKER_NEWB_MAGIC_2_TITLE(bot giver)
+{
+	tryker_newb_magic_2_title		[Initiation to magic]
+}
+
+TRYKER_NEWB_MAGIC_2_DESC(bot giver)
+{
+	tryker_newb_magic_2_desc		[Follow the instructions of $giver$ to progress in magic.]
+}
+
+TRYKER_NEWB_MAGIC_2_PREREQ (bot target, sphrase aciddamage)
+{
+	(target.gender = female)
+		tryker_newb_magic_2_prereq_f		[To continue to progress, you need to learn a new spell : $aciddamage$. Go and see $target$, she can teach you.]
+
+
+		tryker_newb_magic_2_prereq_m		[To continue to progress, you need to learn a new spell : $aciddamage$. Go and see $target$, he can teach you.]
+}
+
+TRYKER_NEWB_MAGIC_2_CUSTOM_OBJ_1(bot target, bot giver, sphrase aciddamage)
+{
+ 	tryker_newb_magic_2_custom_obj_1	[Apprendre un nouveau sort, $aciddamage$, auprès de $target$, et retourner parler à $giver$]
+}
+
+TRYKER_NEWB_MAGIC_2_STEP_1_1()
+{
+	tryker_newb_magic_2_step_1_1	[Another use for magic is to combat with it.]
+}
+
+TRYKER_NEWB_MAGIC_2_STEP_1_2(sbrick nuke, creature_model yubo)
+{
+ 	tryker_newb_magic_2_step_1_2	[Let's try : use $nuke.ia$ $nuke$ to kill $yubo.ia$ $yubo$.]
+}
+
+TRYKER_NEWB_MAGIC_2_OBJ_1_1(sbrick nuke, creature_model yubo)
+{
+	tryker_newb_magic_2_obj_1		[Use $nuke.ia$ $nuke$ to kill $yubo.ia$ $yubo$.]
+}
+
+TRYKER_NEWB_MAGIC_2_OBJ_2_1(creature_model yubo, int qt)
+{
+	tryker_newb_magic_2_obj_2		[Kill $yubo.ia$ $yubo$.]
+}
+
+TRYKER_NEWB_MAGIC_2_END()
+{
+	tryker_newb_magic_2_end		[Good job! Magic training can be long and difficult, but it offers a very good means to fight and to survive here.]
+}
+
+TRYKER_NEWB_MAGIC_3_STEP_1_1()
+{
+	tryker_newb_magic_3_step_1_1	[Destructive magic is powerful, but healing spells can be strong too, although
+								to take profit out of them you'll have to make up a team with some fighters.]
+}
+
+TRYKER_NEWB_MAGIC_3_STEP_1_2(sbrick heal)
+{
+	tryker_newb_magic_3_step_1_2	[Fortunately, they will often need your services, so it's the best way to progress in this line. Go fight with others, and cast $heal.ia$ $heal$.]
+}
+
+TRYKER_NEWB_MAGIC_3_END()
+{
+	tryker_newb_magic_3_end		[Healing and helping others is a way leading to victory. Here's a little money for you. And if you're still looking for work, go and see the corporal, he's always got something on.]
+}
+
+
+//Harvest tutorial mission -------------------------------------------------------------------------------
+
+//mission 1
+TRYKER_NEWB_HARVEST_1_AUTOMENU()
+{
+	tryker_newb_harvest_1_automenu 	[I'd like to progress in harvesting.]
+}
+
+TRYKER_NEWB_HARVEST_ANSWER()
+{
+	tryker_newb_harvest_answer 	[Harvesting.]
+}
+
+TRYKER_NEWB_HARVEST_1_TITLE(bot giver)
+{
+	tryker_newb_harvest_1_title		[Initiation to harvesting 1]
+}
+
+TRYKER_NEWB_HARVEST_1_DESC(bot giver)
+{
+	tryker_newb_harvest_1_desc		[Follow the instructions of $giver$ to progress in harvesting.]
+}
+
+TRYKER_NEWB_HARVEST_1_PREREQ (sphrase basicextraction)
+{
+		tryker_newb_harvest_1_prereq		[Pour continuer à progresser, tu as besoin d'apprendre une nouvelle technique, $basicextraction$.
+										Va voir l'un des trainers afin qu'il te l'enseigne.]
+}
+
+TRYKER_NEWB_HARVEST_1_CUSTOM_OBJ_1(sphrase basicextraction, bot giver)
+{
+ 	tryker_newb_harvest_1_custom_obj_1	[Apprendre une nouvelle technique, $basicextraction$, et retourner parler à $giver$]
+}
+
+TRYKER_NEWB_HARVEST_1_STEP_1_1()
+{
+	tryker_newb_harvest_1_step_1_1	[To progress in harvesting, you'll have to learn to locate sources, and extract their contents.]
+}
+
+TRYKER_NEWB_HARVEST_1_STEP_1_2(item rm1, item rm2)
+{
+	tryker_newb_harvest_1_step_1_2	[Let's start with something easy, bring me back $rm1.ia$ $rm1$ and $rm2.ia$ $rm2$
+									which you'll find in the ground in the village.]
+}
+
+TRYKER_NEWB_HARVEST_1_END()
+{
+	tryker_newb_harvest_1_end	[Excellent. But that was easy because here the sources glow above ground and are easy to spot.]
+}
+
+//mission 2
+TRYKER_NEWB_HARVEST_2_AUTOMENU()
+{
+	tryker_newb_harvest_2_automenu 	[I'd like to learn more about harvesting.]
+}
+
+TRYKER_NEWB_HARVEST_2_TITLE(bot giver)
+{
+	tryker_newb_harvest_2_title		[Initiation to harvesting 2]
+}
+
+TRYKER_NEWB_HARVEST_2_DESC(bot giver)
+{
+	tryker_newb_harvest_2_desc		[Follow the instructions of $giver$ to continue to progress in harvesting.]
+}
+
+TRYKER_NEWB_HARVEST_2_PREREQ (sphrase basicprospection, bot target)
+{
+	(target.gender = female)
+		tryker_newb_harvest_2_prereq_f		[To continue to progress, you need to learn a new technique : $basicprospection$. Go and see $target$, she can teach you.]
+
+
+		tryker_newb_harvest_2_prereq_m		[To continue to progress, you need to learn a new technique : $basicprospection$. Go and see $target$, he can teach you.]
+}
+
+TRYKER_NEWB_HARVEST_2_CUSTOM_OBJ_1(sphrase basicprospection, bot target, bot giver)
+{
+ 	tryker_newb_harvest_2_custom_obj_1	[Apprendre une nouvelle technique, $basicprospection$, auprès de $target$, et retourner parler à $giver$]
+}
+
+TRYKER_NEWB_HARVEST_2_STEP_1_1()
+{
+	tryker_newb_harvest_2_step_1_1	[Let's continue then : your ability to extract correctly will have a bearing on the quality of the materials...]
+}
+
+TRYKER_NEWB_HARVEST_2_STEP_1_2()
+{
+	tryker_newb_harvest_2_step_1_2	[...but take great care because it can be dangerous, there are many pockets of gas on Atys.]
+}
+
+TRYKER_NEWB_HARVEST_2_STEP_1_3(item rm3, int ql)
+{
+ 	tryker_newb_harvest_2_step_1_3	[Remember to think about it when you go and fetch me $rm3.ia$ $rm3$ of quality $ql$.
+									Theses will only be found along the cliffs to the south of this region.]
+}
+
+TRYKER_NEWB_HARVEST_2_STEP_1_4()
+{
+ 	tryker_newb_harvest_2_step_1_4	[You'll have to locate the sources by yourself by prospecting else their glow won't become visible.]
+}
+
+TRYKER_NEWB_HARVEST_2_END()
+{
+	tryker_newb_harvest_2_end		[Good, here's a little money for you. And if you're after more work,
+									go and see a corporal, they've always something going.]
+}
+
+//Craft tutorial mission -------------------------------------------------------------------------------
+
+//mission 1
+TRYKER_NEWB_CRAFT_1_AUTOMENU()
+{
+	tryker_newb_craft_1_automenu 	[I'd like to progress in crafting.]
+}
+
+TRYKER_NEWB_CRAFT_ANSWER()
+{
+	tryker_newb_craft_answer 	[Crafting.]
+}
+
+TRYKER_NEWB_CRAFT_1_TITLE(bot giver)
+{
+	tryker_newb_craft_1_title		[Initiation to crafting 1]
+}
+
+TRYKER_NEWB_CRAFT_1_DESC(bot giver)
+{
+	tryker_newb_craft_1_desc			[Follow the instructions of $giver$ to progress in crafting.]
+}
+
+TRYKER_NEWB_CRAFT_1_PREREQ (sphrase trykerarmor)
+{
+		tryker_newb_craft_1_prereq		[Pour continuer à progresser, tu as besoin d'apprendre une nouvelle technique, $trykerarmor$.
+										Va voir l'un des trainers afin qu'il te l'enseigne.]
+}
+
+TRYKER_NEWB_CRAFT_1_CUSTOM_OBJ_1(sphrase trykerarmor, bot giver)
+{
+ 	tryker_newb_craft_1_custom_obj_1	[Apprendre une nouvelle technique, $trykerarmor$, et retourner parler à $giver$]
+}
+
+TRYKER_NEWB_CRAFT_1_STEP_1_1()
+{
+	tryker_newb_craft_1_step_1_1	[Crafting is more difficult that it might seem, but with willpower everything is possible.]
+}
+
+TRYKER_NEWB_CRAFT_1_STEP_1_2(item boots, int ql)
+{
+	tryker_newb_craft_1_step_1_2	[Let's begin by finding out what you know : make $boots.ia$ $boots$ of quality $ql$. You will need a tool. If you don't already have one, there is a merchant who sell tools in the village.]
+}
+
+TRYKER_NEWB_CRAFT_1_END_1()
+{
+	tryker_newb_craft_1_end_1	[Very good ! To progress, the best means is to practice making items... ]
+}
+
+TRYKER_NEWB_CRAFT_1_END_2()
+{
+	tryker_newb_craft_1_end_2	[...it's only by analysing mistakes made during tests that the quality crafter
+								will develop his or her techniques.]
+}
+
+//mission 2
+TRYKER_NEWB_CRAFT_2_AUTOMENU()
+{
+	tryker_newb_craft_2_automenu 	[I'd like to learn more about crafting.]
+}
+
+TRYKER_NEWB_CRAFT_2_TITLE(bot giver)
+{
+	tryker_newb_craft_2_title		[Initiation to crafting 2]
+}
+
+TRYKER_NEWB_CRAFT_2_DESC(bot giver)
+{
+	tryker_newb_craft_2_desc			[Follow the instructions of $giver$ to continue to progress in crafting.]
+}
+
+TRYKER_NEWB_CRAFT_2_PREREQ (bot target, sbrick trykergloves)
+{
+	(target.gender = female)
+		tryker_newb_craft_2_prereq_f		[To continue to progress, you need to learn a new crafting plan, $trykergloves$. Go and see $target$, she can teach you.]
+
+
+		tryker_newb_craft_2_prereq_m		[To continue to progress, you need to learn a new crafting plan, $trykergloves$. Go and see $target$, he can teach you.]
+}
+
+TRYKER_NEWB_CRAFT_2_CUSTOM_OBJ_1(bot target, bot giver, sbrick trykergloves)
+{
+ 	tryker_newb_craft_2_custom_obj_1	[Apprendre un nouveau schéma de fabrication, $trykergloves$, auprès de $target$, et retourner parler à $giver$]
+}
+
+TRYKER_NEWB_CRAFT_2_STEP_1_1()
+{
+ 	tryker_newb_craft_2_step_1_1	[A crafter may get hampered by the quality of materials used.]
+}
+
+TRYKER_NEWB_CRAFT_2_STEP_1_2()
+{
+ 	tryker_newb_craft_2_step_1_2	[So besides training, you need to get yourself a good supplier if you want to make fine objects.]
+}
+
+TRYKER_NEWB_CRAFT_2_STEP_1_3(item gloves, int ql)
+{
+ 	tryker_newb_craft_2_step_1_3	[When you're ready, make $gloves.ia$ $gloves$ of quality $ql$ for me.]
+}
+
+TRYKER_NEWB_CRAFT_2_END()
+{
+	tryker_newb_craft_2_end		[Excellent, here's a little reward for your efforts.
+								And if you're looking for more work, go and see a foreman,
+								they've always got something going.]
+}
+
+//////////////////////////////////////////// mission team nbland ////////////////////////////////////////////////
+
+NEWB_TEAM_FIGHT_AUTOMENU()
+{
+	newb_team_fight_automenu 	[Team mission]
+}
+
+NEWB_TEAM_FIGHT_TITLE()
+{
+	newb_team_fight_title		[Encounter with hominkind's nemesis]
+}
+
+NEWB_TEAM_FIGHT_DESC(creature_model kipee, race kitin)
+{
+	newb_team_fight_desc		[Your team must find and kill some $kipee.p$ to protect the lands from the threat of $kitin.p$ .]
+}
+
+NEWB_TEAM_FIGHT_STEP_1_1(creature_model kipee, race kitin)
+{
+	newb_team_fight_step_1_1	[It looks that some $kipee.p$, of the $kitin$ family, have managed to locate us. It's crucial we take immediate action against them !]
+}
+
+NEWB_TEAM_FIGHT_STEP_1_2(creature_model kipee)
+{
+	newb_team_fight_step_1_2	[$kipee.p$ seem not to be agressive creatures, but let us not forget what they did to our ancestors. They can be extremely dangerous killing machines that hunt homins to death.]
+}
+
+NEWB_TEAM_FIGHT_STEP_1_3()
+{
+	newb_team_fight_step_1_3	[Your team must find two of them and kill them. I warn you, these are vicious monsters, and you should be prepared. Good luck!]
+}
+
+NEWB_TEAM_FIGHT_END_1(faction people)
+{
+	newb_team_fight_end_1	[You did a nice job! $people$ are proud of you. Your fame will grow with this victory!]
+}
+
+NEWB_TEAM_FIGHT_END_2()
+{
+	newb_team_fight_end_2	[Fame is very important to the homins. With a good one, important people will trust you. But if you have bad reputations, you will become undesirables... or worse, you will be treated like enemies. Again, congratulations for your victory!]
+}
+
+
+//////////////////////////////////////////// mission auto karavan guide //////////////////////////////////////////////////////////////////////////////////
+
+NEWB_KARAVAN_GUIDE_AUTOMENU()
+{
+newb_karavan_guide_automenu			[How can I reach the continent?]
+}
+
+NEWB_KARAVAN_GUIDE_TITLE()
+{
+newb_karavan_guide_title		[Finding the Karavan teleporter]
+}
+
+NEWB_KARAVAN_GUIDE_DESC ()
+{
+newb_karavan_guide_desc		[Finding the Karavan teleporter with the compass]
+}
+
+NEWB_KARAVAN_GUIDE_1 (place capitale, bot target)
+{
+newb_karavan_guide_1		[Ainsi, homin, tu souhaites rejoindre $capitale$, la capitale des gens de ton peuple ? La Karavan,
+							grâce à la toute-puissance de Jena, peut t'y mener en te téléportant là-bas. Pour cela, tu dois trouver $target$, qui
+							se tient non loin d'ici. Utilise ta boussole pour te guider.]
+}
+
+NEWB_KARAVAN_GUIDE_SYSTEM_MSG_1 (bot target)
+{
+newb_karavan_guide_system_msg_1		[You can find the entry for $target$ in the mission menu of your compass.]
+}
+
+//////////////////////////////////////////// mission auto kami adept //////////////////////////////////////////////////////////////////////////////////
+
+NEWB_KAMI_ADEPT_AUTOMENU()
+{
+newb_kami_adept_automenu			[How can I reach the continent?]
+}
+
+NEWB_KAMI_ADEPT_TITLE()
+{
+newb_kami_adept_title		[Finding the Kami Preacher]
+}
+
+NEWB_KAMI_ADEPT_DESC ()
+{
+newb_kami_adept_desc		[Finding the Kami Preacher with the compass]
+}
+
+NEWB_KAMI_ADEPT_1 (place capitale, bot target)
+{
+newb_kami_adept_1		[Ainsi, tu souhaites rejoindre $capitale$, la capitale des gens de notre peuple ? La puissante magie
+						des kamis peut t'y transporter par les voies de la téléportation. Pour cela, tu dois trouver $target$, qui
+							se tient non loin d'ici. Utilise ta boussole pour te guider.]
+}
+
+NEWB_KAMI_ADEPT_SYSTEM_MSG_1 (bot target)
+{
+newb_kami_adept_system_msg_1		[You can find the entry for $target$ in the mission menu of your compass.]
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+//*************************			OLD NEWBIELAND MISSIONS		****************
+////////////////////////////////////////////////////////////////////////////////
+
+//////////////////newbie land matis mission/////////////////////////////
+//Mission 01 :
+/*
+reward 25 monnaie
+INSTRUCTOR_MIS_01
+*/
+INSTRUCTOR_MIS_01_TITLE (bot giver)
+{
+	instructor_mis_01_title		[Gather informations.]
+}
+
+INSTRUCTOR_MIS_01_DESC (bot giver)
+{
+	instructor_mis_01_desc		[Follow the indications of $giver$ to learn who can help you, and in which way.]
+}
+
+INSTRUCTOR_MIS_01_STEP_1 (bot current, bot target)
+{
+	instructor_mis_01_step_1	[Now is a good time for you to start understanding more about your own people.
+					 			Vast knowledge has been passed down to us, the true Matis heirs, from our ancestors,
+					 			and we intend to use it to rebuild our noble Kingdom. With the right Masters, you too shall attain
+					 			this ancient knowledge. And soon, your destiny will begin to unfold.{break}\n\n
+					 			But enough talk for now. You have yet to meet some of the highly regarded and well esteemed
+					 			personalities of our outpost. Before you decide to leave for any our villages, I expect you to meet
+					 			with $target$. He is our Fight Master. And he will give you good coaching in our many deadly techniques...\n\n
+					 			You will find him inside our guildhall. Use the elevator.]
+}
+
+INSTRUCTOR_MIS_01_STEP_2 (bot target, race kitins)
+{
+	figh_master_mis_01_step_2	[Ah ! There you are at last. I was beginning to wonder if you'd already lost yourself...
+								I wanted to see you to warn you against our greatest enemy, $kitins.da$ $kitins$. You must never think twice
+				 				if you come up against them: Strike first or flee as fast as you can.{break}\n\n
+								It is they who wiped out our entire Kingdom in the lands of old. And it was the Fyros who first
+					 			provoked their wrath and stirred them from their underground nests. And that you must never forget !\n\n
+					 			Before long you will be joining one of our villages on the mainland where you will be able to find out
+					 			more about our past. But for the time being, I urge you to meet $target$. She is really something,
+					 			I can promise you ! She always has the right word for the right person.\n\n
+					 			Take the elevator, she is in this guildhall as we speak. You really shouldn't miss this one !]
+}
+
+INSTRUCTOR_MIS_01_STEP_3 (bot target)
+{
+	magic_master_mis_01_step_3	[Welcome to our outpost, I'm so pleased to meet you ! These are such critical times.
+					 			The Great Matis people is gathering again and the Karavan has reappeared at last.
+					 			We are going to be able to teleport again. And our villages shall grow in strength rapidly.{break}\n\n
+					 			When you feel ready to leave our outpost simply go to one of the Karavan Guardians.
+					 			They are strange, dark individuals, and no homin has yet seen their true face. But they are not to be
+					 			feared, at least that is my opinion. Follow the Guide and he will lead you to his teleport officer.\n\n
+						 		As a magician I must warn you that the paths of the Karavan are mysterious and obscure.
+					 			But there is another option that you will discover soon. If you develop your magic skills,
+					 			you will meet the Kamis and, with a little luck, they will open your eyes upon another world.
+								Atys has many faces...\n\n
+					 			But look at me now ! I must be getting on ! You had better leave now, but promise me you will
+					 			stop by $target$. He is a moody character, but he has traveled widely and knows many secrets !]
+}
+
+INSTRUCTOR_MIS_01_STEP_4 (bot current, bot target)
+{
+	(target.gender = male)
+		artisan_master_mis_01_step_4_m	[Well, well, well... Look who is here. I am $current$, son of Antochini, and Duke of Doveni.
+					 				My father was a great Artisan himself, and I hold all his secrets and many more. For unlike
+					 				him I have traveled. I have met the proud Fyros, and the mysterious Zoraïs. And of course,
+					 				I have spoken with Trykers around the Lake Lands. I have learned some of their secrets.
+					 				I can craft the great Fyros Axes of Fire, and the best Zoraï Armor.{break}\n\n
+					 				My Art takes me across the world. I have crafted Matis swords for the Fyros, and made good money
+					 				out of it too. Later, I was the one who brought back the Fyros axes to our people and made myself
+					 				a neat little fortune. It was I too who financed this guild. And you shall have the same freedom
+					 				as my good self if that be your choice.\n\n
+					 				You should pay a visit to $target$. I first met him down under, in the second layer of the Prime Roots.
+					 				When it comes to organizing convoys, I trust no one but her. He is simply the best. \n\n
+					 				He is outside if you want to know more about convoys.]
+
+	artisan_master_mis_01_step_4_f	[Well, well, well... Look who is here. I am $current$, son of Antochini, and Duke of Doveni.
+					 				My father was a great Artisan himself, and I hold all his secrets and many more. For unlike
+					 				him I have traveled. I have met the proud Fyros, and the mysterious Zoraïs. And of course,
+					 				I have spoken with Trykers around the Lake Lands. I have learned some of their secrets.
+					 				I can craft the great Fyros Axes of Fire, and the best Zoraï Armor.{break}\n\n
+					 				My Art takes me across the world. I have crafted Matis swords for the Fyros, and made good money
+					 				out of it too. Later, I was the one who brought back the Fyros axes to our people and made myself
+					 				a neat little fortune. It was I too who financed this guild. And you shall have the same freedom
+					 				as my good self if that be your choice.\n\n
+					 				You should pay a visit to $target$. I first met her down under, in the second layer of the Prime Roots.
+					 				When it comes to organizing convoys, I trust no one but her. She is simply the best. \n\n
+					 				She is outside if you want to know more about convoys.]
+}
+
+INSTRUCTOR_MIS_01_STEP_5 (bot previous, bot kguide)
+{
+	merchant_weapons_mis_01_step_5	[So, $previous$ sent you, did he ? Well I have little time to spare, I have a business to run!
+					 				But now that you're here I guess I might as well tell you a thing or two about my "other side"
+					 				as he calls it. Convoys I mean. You know, a lot of people only see merchants as sales people.
+					 				But the truth is that most of us also spend a lot of time planning and organizing convoys.{break}\n\n
+					 				And if you are seeking adventure, I'm telling you, think convoys! Over the past two years alone,
+					 				I have visited the Fyros twice, I was there once in the middle of their stunning summer.\n\n
+					 				I've also seen the jungle dawns on a visit to one of the deepest Zoraï tribes. I've even been
+					 				through the first layer of the Prime Roots where I met a Kami who saved me from a kitin nest.
+					 				I have many friends among other civilizations, a distribution network and reliable information
+					 				sources too.\n\n
+					 				No matter what, never underestimate the merchants, we often have powerful friends.\n\n
+					 				Now, if you don't mind, I have to make some money today, I have a convoy to finance, you know.
+					 				Oh, before you leave, if you are thinking of adventure, let me give you a piece of advice :
+					 				you should at least progress a little an earn a new title. \n\n
+					 				When you make you grade, go see the $kguide$ on my behalf. And may the forces of Atys fill your veins.]
+}
+
+INSTRUCTOR_MIS_01_STEP_6 (bot previous)
+{
+	(previous.gender = male)
+		karavan_guardian_mis_01_step_6_m	[Greetings, young Matis. $previous$ is a good homin. And we are proud to count him among
+					 				the children of Jena. We are glad to help him in return for his support.{break}\n\n
+					 				Teleportation is among Jena's many talents invested in us which you shall discover
+					 				in due course. But to benefit from her favor you must prove your qualities through faithful
+					 				offerings or services to her church.\n\n
+					 				When you are ready to leave this place, I can take you to our Teleporter.]
+
+	karavan_guardian_mis_01_step_6_f	[Greetings, young Matis. $previous$ is a good homin. And we are proud to count her among
+					 				the children of Jena. We are glad to help her in return for her support.{break}\n\n
+					 				Teleportation is among Jena's many talents invested in us which you shall discover
+					 				in due course. But to benefit from her favor you must prove your qualities through faithful
+					 				offerings or services to her church.\n\n
+					 				When you are ready to leave this place, I can take you to our Teleporter.]
+}
+
+INSTRUCTOR_MIS_01_TALKMENU_1 ()
+{
+	instructor_mis_01_talkmenu_1	[Gather informations]
+}
+
+INSTRUCTOR_MIS_01_END ()
+{
+	karavan_teleporter_mis_01_end	[The Church prepares for the coming of Jena the Almighty upon Atys. Bear faith and you shall
+					 				receive her benediction. But remember, young homin, this land is very safe compared to the
+					 				mainland, so before you decide to teleport make sure you have done your utmost to progress
+					 				your skills. For there is no return.]
+}
+
+//Reward 25monnaie
+/*_______________________
+Mission 02 :
+INSTRUCTOR_MIS_02
+*/
+INSTRUCTOR_MIS_02_TITLE (bot giver)
+{
+	instructor_mis_02_title	[Searching for raw material.]
+}
+
+INSTRUCTOR_MIS_02_DESC (bot giver, item rm1, item rm2, item tool)
+{
+	instructor_mis_02_desc	[Learn how to use your foraging skills to extract resources from the ground.]
+}
+
+INSTRUCTOR_MIS_02_STEP_1 (item rm1, item rm2, item tool)
+{
+	instructor_mis_02_step_1	[I would like to show you something about how to use our natural resources. But before I do, I need some special raw material. Can you bring me $rm1.ia$ $rm1$ and $rm2.ia$ $rm2$ ? The best way to find it is to forage around with your $tool$ after having prospected and found sources of raw material. As you will see, there are many resources underground.]
+}
+
+INSTRUCTOR_MIS_02_END ()
+{
+	guard_mis_02_end	[Excellent !  I recommend you not to sell these raw material for now as I can teach you how to use them to craft items later.]
+}
+
+//Reward 25monnaie
+//Mission 03 :
+/*
+INSTRUCTOR_MIS_03
+*/
+INSTRUCTOR_MIS_03_TITLE (bot giver, item rawmat)
+{
+	instructor_mis_03_title	[Find $rawmat.ia$ $rawmat$.]
+}
+
+INSTRUCTOR_MIS_03_DESC (bot giver, item rawmat)
+{
+	instructor_mis_03_desc	[Some raw materials can be a little harder to find, try to harvest a $rawmat$ that can't be found everywhere.]
+}
+
+INSTRUCTOR_MIS_03_STEP_1 (item rawmat)
+{
+	instructor_mis_03_step_1	[Now that you know how to extract resources form the ground, I need you to find $rawmat.ia$ $rawmat$.
+					 			This material is a bit rarer and can only be found around the south coast of our island so you should
+					 			look around there.]
+}
+
+INSTRUCTOR_MIS_03_END ()
+{
+	instructor_mis_03_end	[Good ! You found some. Take this as a reward.]
+}
+
+//Mission 04 :
+/*
+INSTRUCTOR_MIS_04
+*/
+INSTRUCTOR_MIS_04_TITLE (bot giver, item rawmat)
+{
+	instructor_mis_04_title	[Find $rawmat.ia$ $rawmat$.]
+}
+
+INSTRUCTOR_MIS_04_DESC (bot giver, item rawmat, race bul)
+{
+	instructor_mis_04_desc	[Now learn how to extract raw materials from dead animals.]
+}
+
+INSTRUCTOR_MIS_04_STEP_1 (item rawmat, race bul)
+{
+	instructor_mis_04_step_1	[Right, there is another way to collect resources by quartering dead animals. Now then, I need $rawmat.ia$ $rawmat$ that you can only find on $bul.ia$ $bul$. Be very careful, although being peaceful herbivores, $bul.p$ can be very dangerous when they are angry !]
+}
+
+INSTRUCTOR_MIS_04_END (player p)
+{
+	instructor_mis_04_end	[Exactly what I needed, thanks for your help, $p$.]
+}
+
+//Reward 25monnaie
+//Reward 1 SP
+//Mission 05 :
+/*
+INSTRUCTOR_MIS_05
+*/
+INSTRUCTOR_MIS_05_TITLE (bot giver, item boots)
+{
+	instructor_mis_05_title	[Craft a pair of $boots$.]
+}
+
+INSTRUCTOR_MIS_05_DESC (bot giver, item boots, item tool)
+{
+	instructor_mis_05_desc	[Learn how to craft an item out of the raw material you just gathered.]
+}
+
+INSTRUCTOR_MIS_05_STEP_1 (item boots, item tool)
+{
+	instructor_mis_05_step_1	[Now, I want you to use the raw material you just gathered to craft a pair of $boots$. You have a plan in your inventory explaining how to do this. This plan mentions the materials required with their specific properties. Remember to take note of each of the properties needed for each of the raw materials specified. Then you can start crafting the item by simply using your $tool$.]
+}
+
+INSTRUCTOR_MIS_05_END (item boots)
+{
+	instructor_mis_05_end	[You did great ! Your new $boots$ are really nice. And now you know how to create things by your own hands.]
+}
+
+//Reward 25monnaie
+/*Mission 06 :
+
+INSTRUCTOR_MIS_06
+*/
+INSTRUCTOR_MIS_06_TITLE (bot giver, creature_model target)
+{
+	instructor_mis_06_title	[Find and kill $target.ia$ $target$.]
+}
+
+INSTRUCTOR_MIS_06_DESC (bot giver, creature_model target)
+{
+	instructor_mis_06_desc	[Start you fight training with an easy target !]
+}
+
+INSTRUCTOR_MIS_06_STEP_1 (creature_model target)
+{
+	instructor_mis_06_step_1	[Surviving on Atys can be very hard, you need to know how to fight if you want to have a long life.
+					 			You must start your training by facing an easy opponent : find a small herbivore, $target.ia$ $target$,
+					 			and kill it.]
+}
+
+INSTRUCTOR_MIS_06_END (creature_model target)
+{
+	instructor_mis_06_end	[Good ! But remember that  $target$ is an easy target, the next killings won't be so easy as you
+				 			will face tougher beasts.]
+}
+
+//Reward 25monnaie
+/*Mission 07 :
+
+INSTRUCTOR_MIS_07
+*/
+INSTRUCTOR_MIS_07_TITLE (bot giver, creature_model target)
+{
+	instructor_mis_07_title	[Find and kill $target.ia$ $target$.]
+}
+
+INSTRUCTOR_MIS_07_DESC (bot giver, creature_model target, race yubo)
+{
+	instructor_mis_07_desc	[A little harder confrontation. Remember to equip yourself well !]
+}
+
+INSTRUCTOR_MIS_07_STEP_1 (creature_model target, race yubo)
+{
+	instructor_mis_07_step_1	[We need to get rid of a few predators. There are too many $target$ on our island,
+					 			and they prey on the herbivores. I will be grateful if you can manage to kill one by yourself,
+					 			and you shall earn a good deal of experience. But beware, these beasts are more dangerous than $yubo$...]
+}
+
+INSTRUCTOR_MIS_07_END (creature_model target)
+{
+	instructor_mis_07_end	[Good ! $target$ are no longer a danger, please accept a little reward for your hard toil.]
+}
+
+//Reward 25monnaie
+/*Mission 08 :
+
+INSTRUCTOR_MIS_08
+*/
+INSTRUCTOR_MIS_08_TITLE (bot giver, creature_model kipee)
+{
+	instructor_mis_08_title	[Find and kill $kipee.ia$ $kipee$.]
+}
+
+INSTRUCTOR_MIS_08_DESC (bot giver, player p, creature_model kipee, race kitin)
+{
+	instructor_mis_08_desc	[First encounter with hominkind's nemesis...]
+}
+
+INSTRUCTOR_MIS_08_STEP_1 (player p, creature_model kipee, race kitin)
+{
+	instructor_mis_08_step_1[It seems that some $kipee$, of the $kitin$ family, have managed to locate us. We must take immediate
+				 			action against them ! They are extremely dangerous killing machines that hunting all homins across Atys to
+				 			death. {break}\n\n
+							This old enemy recently has recently reappeared. let us not forget what they did to our ancestors.
+				 			You must find them and kill them. But I warn you, $p$, these are vicious monsters, and you should group
+				 			with other warriors to kill them.]
+}
+
+INSTRUCTOR_MIS_08_END (player p)
+{
+	instructor_mis_08_end	[Thanks a lot $p$ you did nice job.]
+}
+
+//Reward 30 monnaie
+/*Mission 09 :
+
+INSTRUCTOR_MIS_09
+*/
+INSTRUCTOR_MIS_09_TITLE (bot giver)
+{
+	instructor_mis_09_title	[Find and kill bandits.]
+}
+
+INSTRUCTOR_MIS_09_DESC (bot giver)
+{
+	instructor_mis_09_desc	[Help $giver$ maintain the order in the village.]
+}
+
+INSTRUCTOR_MIS_09_STEP_1 ()
+{
+	instructor_mis_09_step_1	[Bandits have been spotted nearby. We cannot allow them to feel at home on our land. They are merciless,
+					 			and usually travel in groups of three. I recommend that you team up with others like yourself before you take any
+					 			action against them. Once you have managed to kill them, you should loot them for their equipment.{break}\n\n
+				 				If you don't find anything interesting, don't forget that you can always sell it to the merchants.
+					 			This mission is more dangerous than the others, but it pays well.]
+}
+
+INSTRUCTOR_MIS_09_OBJ ()
+{
+	instructor_mis_09_obj	[Find and kill the bandits that settled around the village.\n
+							You should team up if you don't want to die !]
+}
+
+INSTRUCTOR_MIS_09_TALKMENU_1 ()
+{
+	instructor_mis_09_talkmenu_1	[I killed the bandits]
+}
+
+INSTRUCTOR_MIS_09_END ()
+{
+	instructor_mis_09_end	[Good ! These vermins are no longer a danger for the village.]
+}
+
+//////////////////newbie land zorai mission/////////////////////////////
+//Mission 01 :
+/*
+reward 25 monnaie
+ZORAI_INSTRUCTOR_MIS_01
+*/
+ZORAI_INSTRUCTOR_MIS_01_TITLE (bot giver)
+{
+	zorai_instructor_mis_01_title		[Gather information.]
+}
+
+ZORAI_INSTRUCTOR_MIS_01_DESC (bot giver)
+{
+	zorai_instructor_mis_01_desc		[Follow the indications of $giver$ to find out who can help you, and how.]
+}
+
+ZORAI_INSTRUCTOR_MIS_01_STEP_1 (bot current, bot target)
+{
+	zorai_instructor_mis_01_step_1	[<Le mission officer acceuille le nouveau joueur.> <message de bienvenue et présentation de l'endroit ou il se trouve.>
+									<il conseille au joueur de rencontrer les peronnages importants du village et envoie le joueur vers le fight rolemaster.>
+	 								<You will find him inside our guildhall. Use the elevator.>]
+}
+
+ZORAI_INSTRUCTOR_MIS_01_STEP_2 (bot target, race kitins)
+{
+	zorai_instructor_mis_01_step_2	[<le rolemaster fight averti le joueur du danger que représentent les $kitins.da$ $kitins$.>
+									<il explique tres brievement comment ils sont apparu.>
+									<il explique ensuite son role d'instructeur fight et envoie le joueur vers $target$ le rolemaster magie.>]
+}
+
+ZORAI_INSTRUCTOR_MIS_01_STEP_3 (bot target)
+{
+	zorai_instructor_mis_01_step_3	[<LA rolemaster magie explique brievement le danger que représente la goo pour zorai et que les kamis sont de précieux alliés pour combattre ce fléau.>
+	 								<elle dit au joueur que dans le village se trouve un zorai -kami adept- qui peut guider le joueur vers un kami qui a le pouvoir de teleporter
+	 								vers le	mainland.>
+	 								<explique son role d'instructeur magie et fait une allusion à la karavan.>
+									<elle envoie le joueur vers $target$ le rolemaster craft.]
+}
+
+ZORAI_INSTRUCTOR_MIS_01_STEP_4 (bot current, bot target)
+{
+	zorai_instructor_mis_01_step_4	[<le rolemaster craft se présente et explique le role particulier du craft pour le peuple zorai.>
+									<il dit quelques mots sur les 3 autres peuples d'atys.>
+									<il envoie vers $target$ le marchand.>]
+
+}
+
+ZORAI_INSTRUCTOR_MIS_01_STEP_5 (bot previous, bot kguide)
+{
+	zorai_instructor_mis_01_step_5	[<le marchand précise qu'il connait bien $previous$ le rolemater craft et qu'ils ont l'habitude de travailler ensemble.>
+									<il explique que le materiel du joueur aura besoin d'etre renouvelé au cours de sa progression et que les marchands pourront lui vendre ce
+									dont il aura besoin.>
+									<il rapelle au joueur que quand il sera pret il devra aller voir $kguide$, le -kami adept- qui pourra le guider jusqu'à un kami priest.>]
+}
+
+ZORAI_INSTRUCTOR_MIS_01_END (bot previous)
+{
+	zorai_instructor_mis_01_end		[<le kami adept place un mot sur $previous$ le marchand et précise que sa dévotion envers les kamis est appréciée.>
+	 								<il explique tout le bien dont il pense des kamis.>
+	 								<il demande au joueur de revenir le voir quand il sera pret pour qu'il le conduise pres du kami.>]
+}
+
+ZORAI_INSTRUCTOR_MIS_01_TALKMENU_1 ()
+{
+	zorai_instructor_mis_01_talkmenu_1	[Gather information]
+}
+
+
+//Reward 25monnaie
+/*_______________________
+Mission 02 :
+ZORAI_INSTRUCTOR_MIS_02
+*/
+ZORAI_INSTRUCTOR_MIS_02_TITLE (bot giver)
+{
+	zorai_instructor_mis_02_title	[Searching for raw material.]
+}
+
+ZORAI_INSTRUCTOR_MIS_02_DESC (bot giver, item rm1, item rm2, item tool)
+{
+	zorai_instructor_mis_02_desc	[Learn how to use your foraging skills to extract resources from the ground.]
+}
+
+ZORAI_INSTRUCTOR_MIS_02_STEP_1 (item rm1, item rm2, item tool)
+{
+	zorai_instructor_mis_02_step_1	[I would like to show you how to use our natural resources. But before that, I require some special raw material. Can you bring me $rm1.ia$ $rm1$ and $rm2.ia$ $rm2$ ? The best way to find it is to forage around with your $tool$ after having prospected and found sources of raw material. You will see there are many resources underground.]
+}
+
+ZORAI_INSTRUCTOR_MIS_02_END ()
+{
+	zorai_instructor_mis_02_end	[Excellent !  I recommend you not to sell these raw material for now as I can teach you how to use them to craft items later.]
+}
+
+//Reward 25monnaie
+//Mission 03 :
+/*
+ZORAI_INSTRUCTOR_MIS_03
+*/
+ZORAI_INSTRUCTOR_MIS_03_TITLE (bot giver, item rawmat)
+{
+	zorai_instructor_mis_03_title	[Find $rawmat.ia$ $rawmat$.]
+}
+
+ZORAI_INSTRUCTOR_MIS_03_DESC (bot giver, item rawmat)
+{
+	zorai_instructor_mis_03_desc	[Some raw materials can be a little harder to find, try to harvest a $rawmat$ that can't be found everywhere.]
+}
+
+ZORAI_INSTRUCTOR_MIS_03_STEP_1 (item rawmat)
+{
+	zorai_instructor_mis_03_step_1	[Now that you know how to extract resources from the ground, I need you to find $rawmat.ia$ $rawmat$.
+								This material is a bit rarer and can only be found around the south coast of our island so you should look around there.]
+}
+
+ZORAI_INSTRUCTOR_MIS_03_END ()
+{
+	zorai_instructor_mis_03_end	[Good ! You found some. Take this as a reward.]
+}
+
+//Mission 04 :
+/*
+ZORAI_INSTRUCTOR_MIS_04
+*/
+ZORAI_INSTRUCTOR_MIS_04_TITLE (bot giver, item rawmat)
+{
+	zorai_instructor_mis_04_title	[Find $rawmat.ia$ $rawmat$.]
+}
+
+ZORAI_INSTRUCTOR_MIS_04_DESC (bot giver, item rawmat, race bul)
+{
+	zorai_instructor_mis_04_desc	[Now learn how to extract raw materials from dead animals.]
+}
+
+ZORAI_INSTRUCTOR_MIS_04_STEP_1 (item rawmat, race bul)
+{
+	zorai_instructor_mis_04_step_1	[Listen, young spirit, there is another way of collecting resources, by quartering dead animals. Now I require $rawmat.ia$ $rawmat$ that you can only find on $bul.ia$ $bul$. Be very careful, although being peaceful herbivores, $bul.p$ can be very dangerous when they are angry !]
+}
+
+ZORAI_INSTRUCTOR_MIS_04_END (player p)
+{
+	zorai_instructor_mis_04_end	[Exactly what I needed, thanks for your help, $p$.]
+}
+
+//Reward 25monnaie
+//Reward 1 SP
+//Mission 05 :
+/*
+ZORAI_INSTRUCTOR_MIS_05
+*/
+ZORAI_INSTRUCTOR_MIS_05_TITLE (bot giver, item boots)
+{
+	zorai_instructor_mis_05_title	[Craft a pair of $boots$.]
+}
+
+ZORAI_INSTRUCTOR_MIS_05_DESC (bot giver, item boots, item tool)
+{
+	zorai_instructor_mis_05_desc	[Learn how to craft an item out of the raw material you just gathered.]
+}
+
+ZORAI_INSTRUCTOR_MIS_05_STEP_1 (item boots, item tool)
+{
+	zorai_instructor_mis_05_step_1	[Now, I want you to use the raw material you just gathered to craft a pair of $boots$. You have a plan in your inventory explaining how to do this. This plan mentions the materials required with their specific properties. Remember to take note of each of the properties needed for each of the raw materials specified. Then you can start crafting your boots with by simply using your $tool$.]
+}
+
+ZORAI_INSTRUCTOR_MIS_05_END (item boots)
+{
+	zorai_instructor_mis_05_end	[You did great ! Your new $boots$ are really nice. And now you know how to create things using your own hands.]
+}
+
+//Reward 25monnaie
+/*Mission 06 :
+
+ZORAI_INSTRUCTOR_MIS_06
+*/
+ZORAI_INSTRUCTOR_MIS_06_TITLE (bot giver, creature_model target)
+{
+	zorai_instructor_mis_06_title	[Find and kill $target.ia$ $target$.]
+}
+
+ZORAI_INSTRUCTOR_MIS_06_DESC (bot giver, creature_model target)
+{
+	zorai_instructor_mis_06_desc	[Start you fight training with an easy target !]
+}
+
+ZORAI_INSTRUCTOR_MIS_06_STEP_1 (creature_model target)
+{
+	zorai_instructor_mis_06_step_1	[Surviving on Atys can be very hard, you need to know how to fight if you want to live long.
+								You must start your training by facing an easy opponent : find a small herbivore, $target.ia$ $target$, and kill it.]
+}
+
+ZORAI_INSTRUCTOR_MIS_06_END (creature_model target)
+{
+	zorai_instructor_mis_06_end	[Good ! But remember that $target$ is easy prey, the next killings won't be so easy as you will be up against tougher beasts.]
+}
+
+//Reward 25monnaie
+/*Mission 07 :
+
+ZORAI_INSTRUCTOR_MIS_07
+*/
+ZORAI_INSTRUCTOR_MIS_07_TITLE (bot giver, creature_model target)
+{
+	zorai_instructor_mis_07_title	[Find and kill $target.ia$ $target$.]
+}
+
+ZORAI_INSTRUCTOR_MIS_07_DESC (bot giver, creature_model target, race yubo)
+{
+	zorai_instructor_mis_07_desc	[A little harder confrontation. Remember to equip yourself well !]
+}
+
+ZORAI_INSTRUCTOR_MIS_07_STEP_1 (creature_model target, race yubo)
+{
+	zorai_instructor_mis_07_step_1	[We need to get rid of a few predators. There are too many $target$ on our island, and they prey on the herbivores.
+								I would be grateful if you managed to kill one by yourself, and you shall earn a good deal of experience.
+								But beware, these beasts are more dangerous than $yubo$...]
+}
+
+ZORAI_INSTRUCTOR_MIS_07_END (creature_model target)
+{
+	zorai_instructor_mis_07_end	[Good ! $target$ are no longer a danger, please accept a little reward for your hard toil.]
+}
+
+//Reward 25monnaie
+/*Mission 08 :
+
+ZORAI_INSTRUCTOR_MIS_08
+*/
+ZORAI_INSTRUCTOR_MIS_08_TITLE (bot giver, creature_model kipee)
+{
+	zorai_instructor_mis_08_title	[Find and kill $kipee.ia$ $kipee$.]
+}
+
+ZORAI_INSTRUCTOR_MIS_08_DESC (bot giver, player p, creature_model kipee, race kitin)
+{
+	zorai_instructor_mis_08_desc	[First encounter with hominkind's nemesis...]
+}
+
+ZORAI_INSTRUCTOR_MIS_08_STEP_1 (player p, creature_model kipee, race kitin)
+{
+	zorai_instructor_mis_08_step_1[It seems that some $kipee$, of the $kitin$ family, have managed to locate us. We must take immediate action against them !
+							They are extremely dangerous killing machines that hunting all homins across Atys to death. {break}\n
+							\n
+							This old enemy recently has recently reappeared. Let us not forget what they did to our ancestors.
+							You must find them and kill them. But I warn you, $p$, these are vicious monsters, and you should group
+							with other warriors to kill them.]
+}
+
+ZORAI_INSTRUCTOR_MIS_08_END (player p)
+{
+	zorai_instructor_mis_08_end	[Thanks a lot $p$ you did nice job.]
+}
+
+//Reward 30 monnaie
+/*Mission 09 :
+
+ZORAI_INSTRUCTOR_MIS_09
+*/
+ZORAI_INSTRUCTOR_MIS_09_TITLE (bot giver)
+{
+	zorai_instructor_mis_09_title	[Find and kill bandits.]
+}
+
+ZORAI_INSTRUCTOR_MIS_09_DESC (bot giver)
+{
+	zorai_instructor_mis_09_desc	[Help $giver$ maintain the order in the village.]
+}
+
+ZORAI_INSTRUCTOR_MIS_09_STEP_1 ()
+{
+	zorai_instructor_mis_09_step_1	[Bandits have been spotted nearby. We cannot have them  feel at home on our land. They are merciless,
+								and usually travel in groups of three. I recommend that you team up with others like yourself before you take any
+								action against them. Once you've managed to kill them, you should loot them for their equipment.{break}\n
+								\n
+	  							If you don't find anything of immediate interest, don't forget that you can always sell it to the merchants.
+	  							This mission is more dangerous than the others, but it pays well.]
+}
+
+ZORAI_INSTRUCTOR_MIS_09_OBJ ()
+{
+	zorai_instructor_mis_09_obj	[Find and kill the bandits that settled around the village.\n
+							You should team up if you don't want to die !]
+}
+
+ZORAI_INSTRUCTOR_MIS_09_TALKMENU_1 ()
+{
+	zorai_instructor_mis_09_talkmenu_1	[I killed the bandits]
+}
+
+ZORAI_INSTRUCTOR_MIS_09_END ()
+{
+	zorai_instructor_mis_09_end	[Good ! Such vermin is no longer a danger to the village.]
+}
+
+//////////////////newbie land fyros mission/////////////////////////////
+//Mission 01 :
+/*
+reward 25 monnaie
+FYROS_INSTRUCTOR_MIS_01
+*/
+FYROS_INSTRUCTOR_MIS_01_TITLE (bot giver)
+{
+	fyros_instructor_mis_01_title		[Gather information.]
+}
+
+FYROS_INSTRUCTOR_MIS_01_DESC (bot giver)
+{
+	fyros_instructor_mis_01_desc		[Follow the indications of $giver$ to find out who can help you, and how.]
+}
+
+FYROS_INSTRUCTOR_MIS_01_STEP_1 (bot current, bot target)
+{
+	fyros_instructor_mis_01_step_1	[<Le mission officer acceuille le nouveau joueur.> <message de bienvenue et présentation de l'endroit ou il se trouve.>
+									<il conseille au joueur de rencontrer les peronnages importants du village et envoie le joueur vers le fight rolemaster.>
+	 								<You will find him inside our guildhall.>]
+}
+
+FYROS_INSTRUCTOR_MIS_01_STEP_2 (bot target, race kitins)
+{
+	fyros_instructor_mis_01_step_2	[<le rolemaster fight averti le joueur du danger que représentent les $kitins.da$ $kitins$.>
+									<il explique tres brievement comment ils sont apparu.>
+									<il explique ensuite son role d'instructeur fight et envoie le joueur vers $target$ le rolemaster magie.>]
+}
+
+FYROS_INSTRUCTOR_MIS_01_STEP_3 (bot target)
+{
+	fyros_instructor_mis_01_step_3	[<LA rolemaster magie explique brievement ce que représente les kamis pour les fyros.>
+	 								<elle dit au joueur que dans le village se trouve un fyros -kami adept- qui peut guider le joueur vers un kami qui a le pouvoir de teleporter
+	 								vers le	mainland.>
+	 								<explique son role d'instructeur magie et fait une allusion à la karavan.>
+									<elle envoie le joueur vers $target$ le rolemaster craft.]
+}
+
+FYROS_INSTRUCTOR_MIS_01_STEP_4 (bot current, bot target)
+{
+	fyros_instructor_mis_01_step_4	[<le rolemaster craft se présente et explique le role du craft.>
+									<il dit quelques mots sur les 3 autres peuples d'atys.>
+									<il envoie vers $target$ le marchand.>]
+}
+
+FYROS_INSTRUCTOR_MIS_01_STEP_5 (bot previous, bot kguide)
+{
+	fyros_instructor_mis_01_step_5	[<le marchand précise qu'il connait bien $previous$ le rolemater craft et qu'ils ont l'habitude de travailler ensemble.>
+									<il explique que le materiel du joueur aura besoin d'etre renouvelé au cours de sa progression et que les marchands pourront lui vendre ce
+									dont il aura besoin.>
+									<il rapelle au joueur que quand il sera pret il devra aller voir $kguide$, le -kami adept- qui pourra le guider jusqu'à un kami.>]
+}
+
+FYROS_INSTRUCTOR_MIS_01_END (bot previous)
+{
+	fyros_instructor_mis_01_end	[<le kami adept place un mot sur $previous$ le marchand.>
+	 							<il explique ce que ressentent les fyros pour les kamis: curiosité et respect.>
+	 							< Il explique aussi que les fyros ont apporté la magie au peuple fyros.>
+	 							<il demande au joueur de revenir le voir quand il sera pret pour qu'il le conduise pres du kami.>]
+}
+
+FYROS_INSTRUCTOR_MIS_01_TALKMENU_1 ()
+{
+	fyros_instructor_mis_01_talkmenu_1	[Gather information]
+}
+
+
+//Reward 25monnaie
+/*_______________________
+Mission 02 :
+FYROS_INSTRUCTOR_MIS_02
+*/
+FYROS_INSTRUCTOR_MIS_02_TITLE (bot giver)
+{
+	fyros_instructor_mis_02_title	[Searching for raw material.]
+}
+
+FYROS_INSTRUCTOR_MIS_02_DESC (bot giver, item rm1, item rm2, item tool)
+{
+	fyros_instructor_mis_02_desc	[Learn how to use your foraging skills to extract resources from the ground.]
+}
+
+FYROS_INSTRUCTOR_MIS_02_STEP_1 (item rm1, item rm2, item tool)
+{
+	fyros_instructor_mis_02_step_1	[I would like to show you something about how to use our natural resources. But before I do, I need some special raw material. Can you bring me $rm1.ia$ $rm1$ and $rm2.ia$ $rm2$ ? The best way to find it is to forage around with your $tool$ after having prospected and found sources of raw material. You will soon find out, there are many resources underground.]
+}
+
+FYROS_INSTRUCTOR_MIS_02_END ()
+{
+	fyros_instructor_mis_02_end	[Excellent !  I recommend you not to sell these raw material for now as I can teach you how to use them to craft items later.]
+}
+
+//Reward 25monnaie
+//Mission 03 :
+/*
+FYROS_INSTRUCTOR_MIS_03
+*/
+FYROS_INSTRUCTOR_MIS_03_TITLE (bot giver, item rawmat)
+{
+	fyros_instructor_mis_03_title	[Find $rawmat.ia$ $rawmat$.]
+}
+
+FYROS_INSTRUCTOR_MIS_03_DESC (bot giver, item rawmat)
+{
+	fyros_instructor_mis_03_desc	[Some raw materials can be a little harder to find, try to harvest a $rawmat$ that can't be found everywhere.]
+}
+
+FYROS_INSTRUCTOR_MIS_03_STEP_1 (item rawmat)
+{
+	fyros_instructor_mis_03_step_1	[Now that you know how to extract resources from the ground, I need you to find $rawmat.ia$ $rawmat$.
+								This material is a bit rarer and can only be found around the south coast of our island so you should look around there.]
+}
+
+FYROS_INSTRUCTOR_MIS_03_END ()
+{
+	fyros_instructor_mis_03_end	[Good ! You found some. Take this as a reward.]
+}
+
+//Mission 04 :
+/*
+FYROS_INSTRUCTOR_MIS_04
+*/
+FYROS_INSTRUCTOR_MIS_04_TITLE (bot giver, item rawmat)
+{
+	fyros_instructor_mis_04_title	[Find $rawmat.ia$ $rawmat$.]
+}
+
+FYROS_INSTRUCTOR_MIS_04_DESC (bot giver, item rawmat, race bul)
+{
+	fyros_instructor_mis_04_desc	[Now learn how to extract raw materials from dead animals.]
+}
+
+FYROS_INSTRUCTOR_MIS_04_STEP_1 (item rawmat, race bul)
+{
+	fyros_instructor_mis_04_step_1	[Okay, there is another way of collecting resources by quartering dead animals. Right, now I need $rawmat.ia$ $rawmat$ that you can only find on $bul.ia$ $bul$. Be very careful, although being peaceful herbivores, $bul.p$ can be very dangerous when they are angry !]
+}
+
+FYROS_INSTRUCTOR_MIS_04_END (player p)
+{
+	fyros_instructor_mis_04_end	[Exactly what I needed, thanks for your help, $p$.]
+}
+
+//Reward 25monnaie
+//Reward 1 SP
+//Mission 05 :
+/*
+FYROS_INSTRUCTOR_MIS_05
+*/
+FYROS_INSTRUCTOR_MIS_05_TITLE (bot giver, item boots)
+{
+	fyros_instructor_mis_05_title	[Craft a pair of $boots$.]
+}
+
+FYROS_INSTRUCTOR_MIS_05_DESC (bot giver, item boots, item tool)
+{
+	fyros_instructor_mis_05_desc	[Learn how to craft an item out of the raw material you just gathered.]
+}
+
+FYROS_INSTRUCTOR_MIS_05_STEP_1 (item boots, item tool)
+{
+	fyros_instructor_mis_05_step_1	[Now, I want you to use the raw material you just gathered to craft a pair of $boots$. You have a plan in your inventory explaining how to do this. This plan mentions the materials required with their specific properties. Remember to take note of each of the properties needed for each of the raw materials specified. Then you can start crafting your boots with by simply using your $tool$.]
+}
+
+FYROS_INSTRUCTOR_MIS_05_END (item boots)
+{
+	fyros_instructor_mis_05_end	[You did great ! Your new $boots$ are really nice. And now you know how to create things using your own hands.]
+}
+
+//Reward 25monnaie
+/*Mission 06 :
+
+FYROS_INSTRUCTOR_MIS_06
+*/
+FYROS_INSTRUCTOR_MIS_06_TITLE (bot giver, creature_model target)
+{
+	fyros_instructor_mis_06_title	[Find and kill $target.ia$ $target$.]
+}
+
+FYROS_INSTRUCTOR_MIS_06_DESC (bot giver, creature_model target)
+{
+	fyros_instructor_mis_06_desc	[Start you fight training with an easy target !]
+}
+
+FYROS_INSTRUCTOR_MIS_06_STEP_1 (creature_model target)
+{
+	fyros_instructor_mis_06_step_1	[Surviving on Atys can be very hard, you need to know how to fight if you want to live long.
+								You must start your training by facing an easy opponent : find a small herbivore, $target.ia$ $target$, and kill it.]
+}
+
+FYROS_INSTRUCTOR_MIS_06_END (creature_model target)
+{
+	fyros_instructor_mis_06_end	[Good ! But remember that $target$ is easy prey, the next killings won't be so easy as you will be up against tougher beasts.]
+}
+
+//Reward 25monnaie
+/*Mission 07 :
+
+FYROS_INSTRUCTOR_MIS_07
+*/
+FYROS_INSTRUCTOR_MIS_07_TITLE (bot giver, creature_model target)
+{
+	fyros_instructor_mis_07_title	[Find and kill $target.ia$ $target$.]
+}
+
+FYROS_INSTRUCTOR_MIS_07_DESC (bot giver, creature_model target, race yubo)
+{
+	fyros_instructor_mis_07_desc	[A little harder confrontation. Remember to equip yourself well !]
+}
+
+FYROS_INSTRUCTOR_MIS_07_STEP_1 (creature_model target, race yubo)
+{
+	fyros_instructor_mis_07_step_1	[We need to get rid of a few predators. There are too many $target$ on our island, and they prey on the herbivores.
+								I would be grateful if you managed to kill one by yourself, and you shall earn a good deal of experience.
+								But beware, these beasts are more dangerous than $yubo$...]
+}
+
+FYROS_INSTRUCTOR_MIS_07_END (creature_model target)
+{
+	fyros_instructor_mis_07_end	[Good ! $target$ are no longer a danger, please accept a little reward for your hard toil.]
+}
+
+//Reward 25monnaie
+/*Mission 08 :
+
+FYROS_INSTRUCTOR_MIS_08
+*/
+FYROS_INSTRUCTOR_MIS_08_TITLE (bot giver, creature_model kipee)
+{
+	fyros_instructor_mis_08_title	[Find and kill $kipee.ia$ $kipee$.]
+}
+
+FYROS_INSTRUCTOR_MIS_08_DESC (bot giver, player p, creature_model kipee, race kitin)
+{
+	fyros_instructor_mis_08_desc	[First encounter with hominkind's nemesis...]
+}
+
+FYROS_INSTRUCTOR_MIS_08_STEP_1 (player p, creature_model kipee, race kitin)
+{
+	fyros_instructor_mis_08_step_1[It seems that some $kipee$, of the $kitin$ family, have managed to locate us. We must take immediate action against them !
+							They are extremely dangerous killing machines that hunting all homins across Atys to death. {break}\n
+							\n
+							This old enemy recently has recently reappeared. Let us not forget what they did to our ancestors.
+							You must find them and kill them. But I warn you, $p$, these are vicious monsters, and you should group
+							with other warriors to kill them.]
+}
+
+FYROS_INSTRUCTOR_MIS_08_END (player p)
+{
+	fyros_instructor_mis_08_end	[Thanks a lot $p$ you did nice job.]
+}
+
+//Reward 30 monnaie
+/*Mission 09 :
+
+FYROS_INSTRUCTOR_MIS_09
+*/
+FYROS_INSTRUCTOR_MIS_09_TITLE (bot giver)
+{
+	fyros_instructor_mis_09_title	[Find and kill bandits.]
+}
+
+FYROS_INSTRUCTOR_MIS_09_DESC (bot giver)
+{
+	fyros_instructor_mis_09_desc	[Help $giver$ maintain the order in the village.]
+}
+
+FYROS_INSTRUCTOR_MIS_09_STEP_1 ()
+{
+	fyros_instructor_mis_09_step_1	[Bandits have been spotted nearby. We cannot have them  feel at home on our land. They are merciless,
+								and usually travel in groups of three. I recommend that you team up with others like yourself before you take any
+								action against them. Once you've managed to kill them, you should loot them for their equipment.{break}\n
+								\n
+	  							If you don't find anything of immediate interest, don't forget that you can always sell it to the merchants.
+	  							This mission is more dangerous than the others, but it pays well.]
+}
+
+FYROS_INSTRUCTOR_MIS_09_OBJ ()
+{
+	fyros_instructor_mis_09_obj	[Find and kill the bandits that settled around the village.\n
+							You should team up if you don't want to die !]
+}
+
+FYROS_INSTRUCTOR_MIS_09_TALKMENU_1 ()
+{
+	fyros_instructor_mis_09_talkmenu_1	[I killed the bandits]
+}
+
+FYROS_INSTRUCTOR_MIS_09_END ()
+{
+	fyros_instructor_mis_09_end	[Good ! Such vermin is no longer a danger to the village.]
+}
+
+//////////////////newbie land tryker mission/////////////////////////////
+//Mission 01 :
+/*
+reward 25 monnaie
+TRYKER_INSTRUCTOR_MIS_01
+*/
+TRYKER_INSTRUCTOR_MIS_01_TITLE (bot giver)
+{
+	tryker_instructor_mis_01_title		[Gather information.]
+}
+
+TRYKER_INSTRUCTOR_MIS_01_DESC (bot giver)
+{
+	tryker_instructor_mis_01_desc		[Follow the indications of $giver$ to find out who can help you, and how.]
+}
+
+TRYKER_INSTRUCTOR_MIS_01_STEP_1 (bot current, bot target)
+{
+	tryker_instructor_mis_01_step_1	[Now is a good time for you to start understanding more about your own people.
+								Vast knowledge has been passed down to us from our ancestors, and we intend to use it to rebuild our noble Kingdom.
+								With the right Masters, you too shall acquire this ancient knowledge and before long your destiny will begin to unfold.{break}\n
+								\n
+	 							But enough talk for now. You have yet to meet some of the highly regarded and well esteemed personalities of our outpost.
+	 							Before you decide to leave for one of our villages, I want you to meet $target$. He is our Fight Master.
+	 							And he will give you coaching in our many deadly techniques...\n
+								\n
+	 							You will find him inside our guildhall. Use the elevator.]
+}
+
+TRYKER_INSTRUCTOR_MIS_01_STEP_2 (bot target, race kitins)
+{
+	tryker_instructor_mis_01_step_2	[Ah ! There you are at last. I was beginning to to think you'd already lost yourself...
+								I wanted to see you to warn you against our greatest enemy, $kitins.da$ $kitins$. You must never think twice
+								if you come up against them: Strike first or flee as fast as you can.{break}\n
+								\n
+								It is they who wiped out our entire Kingdom in the lands of old. And never forget, it was the Fyros who first
+								provoked their wrath and stirred them from their underground nests!\n
+								\n
+	 							Before long you will be joining one of our villages on the mainland where you can find out more about our past.
+	 							But for the time being, I urge you to meet $target$. She is really something, I can promise you!
+	 							She always has the right word for the right person.\n
+								\n
+	 							Take the elevator, she is in this guildhall as we speak. You really shouldn't miss this one !]
+}
+
+TRYKER_INSTRUCTOR_MIS_01_STEP_3 (bot target)
+{
+	tryker_instructor_mis_01_step_3	[Welcome to our outpost, I'm so pleased to meet you ! These are such critical times. The Great Matis people is
+								gathering evermore, and the presence of the Karavan bolsters our courage for we are going to be able to teleport again.
+								Our villages shall grow in strength rapidly.{break}\n
+								\n
+	 							When you feel ready to leave our outpost simply go to one of the Karavan Guardians. They are strange, dark individuals,
+	 							no homin has yet seen their true face. But they are not to be feared, at least that is my opinion.
+	 							Follow the Guardian and he will lead you to his teleport officer.\n
+								\n
+	 							As a magician I must warn you that the paths of the Karavan are mysterious and obscure.
+	 							But there is another option that you will discover soon. If you develop your magic skills,
+	 							you will meet the Kamis and, with a little luck, they will open your eyes upon another world.
+	 							Indeed, Atys has many faces.\n
+								\n
+	 							But look at me now, I must be getting on ! You had better leave now, but promise me you'll stop by $target$.
+	 							He's a moody character, but he has traveled widely and knows many secrets !]
+}
+
+TRYKER_INSTRUCTOR_MIS_01_STEP_4 (bot current, bot target)
+{
+	tryker_instructor_mis_01_step_4	[Well, well, well! Look who's here. I am $current$, Duke of Doveni, son of Antochini.
+									My father was a great Craftsman himself, and I hold all his secrets and many more.
+									For unlike him I have traveled. I have met the proud Fyros, and the mysterious Zoraïs.
+									And of course, I have spoken with Trykers around the Lake Lands. I have learned some of their secrets.
+									I can craft the great Fyros Axes of Fire, and the best Zoraï Armor.{break}\n
+									\n
+	 								My art takes me all over the world. I have crafted Matis swords for the Fyros, and made good money out of it too.
+	 								I was the one who brought back the Fyros axes to our people and made myself a neat little fortune.
+	 								It was I too who financed this guild. And you shall have the same freedom as my good self if that be your choice.\n
+									\n
+									You should pay a visit to $target$. I first met her down under, in the second layer of the Prime Roots.
+									When it comes to organizing convoys, I trust no one but her. She is simply the best.\n
+									\n
+	 								She's outside if you want to know more about convoys.]
+}
+
+TRYKER_INSTRUCTOR_MIS_01_STEP_5 (bot previous, bot kguide)
+{
+	tryker_instructor_mis_01_step_5	[So, $previous$ sent you, did he ? Well I have little time to spare, I have a business to run!
+									But now that you're here I guess I might as well tell you a thing or two about my "other side" as he puts it.
+									Convoys I mean. You know, a lot of people only see merchants as sales people.
+									But the truth is that most of us also spend a lot of time planning and organizing convoys.{break}\n
+									\n
+									And if you are seeking adventure, I'm telling you, think convoys! Over the past two years alone,
+									I have visited the Fyros twice, I was there once in the middle of their stunning summer.\n
+									\n
+	 								I've also seen the jungle dawns on a visit to one of the most remote Zoraï tribes.
+	 								I've even been through the first layer of the Prime Roots where I met a Kami who saved me from a kitin nest.
+	 								I have many friends among other civilizations, a distribution network and reliable information sources too.\n
+									\n
+	 								No matter what, never underestimate the merchants, we often have powerful friends.\n
+									\n
+									Now, if you don't mind, I have to make some money today, I have a convoy to finance, you know.
+									Oh, before you leave, if you are thinking of adventure, let me give you a piece of advice :
+									you should at least progress a little an earn a new title. \n
+									\n
+									When you've made you grade, go see the $kguide$ on my behalf. And may the forces of Atys fill your veins.]
+}
+
+TRYKER_INSTRUCTOR_MIS_01_STEP_6 (bot previous)
+{
+	tryker_instructor_mis_01_step_6	[Greetings, young Matis. $previous$ is a good homin. And we are proud to count her among the children of Jena.
+									We are glad to help her in return for her support.{break}\n
+									\n
+	 								Teleportation is among Jena's many talents invested in us which you shall discover
+	 								in due course. But to benefit from her favor you must prove your qualities through faithful offerings or services
+	 								to her church.\n
+									\n
+	 								When you are ready to leave this place, I can take you to our Teleporter.]
+}
+
+TRYKER_INSTRUCTOR_MIS_01_TALKMENU_1 ()
+{
+	tryker_instructor_mis_01_talkmenu_1	[Gather information]
+}
+
+TRYKER_INSTRUCTOR_MIS_01_END ()
+{
+	tryker_instructor_mis_01_end	[The Church prepares for the coming of Jena the Almighty upon Atys. Bear faith and you shall receive her benediction.
+									But remember, young homin, this land is very safe compared to the mainland,
+									so before you decide to teleport make sure you've done all you can to progress your skills.
+									Remember, there is no return.]
+}
+
+//Reward 25monnaie
+/*_______________________
+Mission 02 :
+TRYKER_INSTRUCTOR_MIS_02
+*/
+TRYKER_INSTRUCTOR_MIS_02_TITLE (bot giver)
+{
+	tryker_instructor_mis_02_title	[Searching for raw material.]
+}
+
+TRYKER_INSTRUCTOR_MIS_02_DESC (bot giver, item rm1, item rm2, item tool)
+{
+	tryker_instructor_mis_02_desc	[Learn how to use your foraging skills to extract resources from the ground.]
+}
+
+TRYKER_INSTRUCTOR_MIS_02_STEP_1 (item rm1, item rm2, item tool)
+{
+	tryker_instructor_mis_02_step_1	[I'd like to show you how to use our natural resources. But before I do, I need some special raw material. Can you bring me $rm1.ia$ $rm1$ and $rm2.ia$ $rm2$ ? The best way to find it is to forage around with your $tool$ after having prospected and found sources of raw material. You'll soon see there are many resources underground.]
+}
+
+TRYKER_INSTRUCTOR_MIS_02_END ()
+{
+	tryker_instructor_mis_02_end	[Excellent !  I recommend you not to sell these raw material for now as I can teach you how to use them to craft items later.]
+}
+
+//Reward 25monnaie
+//Mission 03 :
+/*
+TRYKER_INSTRUCTOR_MIS_03
+*/
+TRYKER_INSTRUCTOR_MIS_03_TITLE (bot giver, item rawmat)
+{
+	tryker_instructor_mis_03_title	[Find $rawmat.ia$ $rawmat$.]
+}
+
+TRYKER_INSTRUCTOR_MIS_03_DESC (bot giver, item rawmat)
+{
+	tryker_instructor_mis_03_desc	[Some raw materials can be a little harder to find, try to harvest a $rawmat$ that can't be found everywhere.]
+}
+
+TRYKER_INSTRUCTOR_MIS_03_STEP_1 (item rawmat)
+{
+	tryker_instructor_mis_03_step_1	[Now that you know how to extract resources from the ground, I need you to find $rawmat.ia$ $rawmat$.
+								This material is a bit rarer and can only be found around the south coast of our island so you should look around there.]
+}
+
+TRYKER_INSTRUCTOR_MIS_03_END ()
+{
+	tryker_instructor_mis_03_end	[Good ! You found some. Take this as a reward.]
+}
+
+//Mission 04 :
+/*
+TRYKER_INSTRUCTOR_MIS_04
+*/
+TRYKER_INSTRUCTOR_MIS_04_TITLE (bot giver, item rawmat)
+{
+	tryker_instructor_mis_04_title	[Find $rawmat.ia$ $rawmat$.]
+}
+
+TRYKER_INSTRUCTOR_MIS_04_DESC (bot giver, item rawmat, race bul)
+{
+	tryker_instructor_mis_04_desc	[Now learn how to extract raw materials from dead animals.]
+}
+
+TRYKER_INSTRUCTOR_MIS_04_STEP_1 (item rawmat, race bul)
+{
+	tryker_instructor_mis_04_step_1	[Right, there's another way of collecting resources, by quartering dead animals. Now then, I'll be needing $rawmat.ia$ $rawmat$ that you can only find on $bul.ia$ $bul$. Be very careful, although being peaceful herbivores, $bul.p$ can be very dangerous when they are angry !]
+}
+
+TRYKER_INSTRUCTOR_MIS_04_END (player p)
+{
+	tryker_instructor_mis_04_end	[Exactly what I needed, thanks for your help, $p$.]
+}
+
+//Reward 25monnaie
+//Reward 1 SP
+//Mission 05 :
+/*
+TRYKER_INSTRUCTOR_MIS_05
+*/
+TRYKER_INSTRUCTOR_MIS_05_TITLE (bot giver, item boots)
+{
+	tryker_instructor_mis_05_title	[Craft a pair of $boots$.]
+}
+
+TRYKER_INSTRUCTOR_MIS_05_DESC (bot giver, item boots, item tool)
+{
+	tryker_instructor_mis_05_desc	[Learn how to craft an item out of the raw material you just gathered.]
+}
+
+TRYKER_INSTRUCTOR_MIS_05_STEP_1 (item boots, item tool)
+{
+	tryker_instructor_mis_05_step_1	[Now, I want you to use the raw material you just gathered to craft a pair of $boots$. You have a plan in your inventory explaining how to do this. This plan mentions the materials required with their specific properties. Remember to take note of each of the properties needed for each of the raw materials specified. Then you can start crafting your boots with by simply using your $tool$.]
+}
+
+TRYKER_INSTRUCTOR_MIS_05_END (item boots)
+{
+	tryker_instructor_mis_05_end	[You did great ! Your new $boots$ are really nice. And now you know how to create things using your own hands.]
+}
+
+//Reward 25monnaie
+/*Mission 06 :
+
+TRYKER_INSTRUCTOR_MIS_06
+*/
+TRYKER_INSTRUCTOR_MIS_06_TITLE (bot giver, creature_model target)
+{
+	tryker_instructor_mis_06_title	[Find and kill $target.ia$ $target$.]
+}
+
+TRYKER_INSTRUCTOR_MIS_06_DESC (bot giver, creature_model target)
+{
+	tryker_instructor_mis_06_desc	[Start you fight training with an easy target !]
+}
+
+TRYKER_INSTRUCTOR_MIS_06_STEP_1 (creature_model target)
+{
+	tryker_instructor_mis_06_step_1	[Surviving on Atys can be very hard, you need to know how to fight if you want to live long.
+								You must start your training by facing an easy opponent : find a small herbivore, $target.ia$ $target$, and kill it.]
+}
+
+TRYKER_INSTRUCTOR_MIS_06_END (creature_model target)
+{
+	tryker_instructor_mis_06_end	[Good ! But remember that $target$ is easy prey, the next killings won't be so easy as you will be up against tougher beasts.]
+}
+
+//Reward 25monnaie
+/*Mission 07 :
+
+TRYKER_INSTRUCTOR_MIS_07
+*/
+TRYKER_INSTRUCTOR_MIS_07_TITLE (bot giver, creature_model target)
+{
+	tryker_instructor_mis_07_title	[Find and kill $target.ia$ $target$.]
+}
+
+TRYKER_INSTRUCTOR_MIS_07_DESC (bot giver, creature_model target, race yubo)
+{
+	tryker_instructor_mis_07_desc	[A little harder confrontation. Remember to equip yourself well !]
+}
+
+TRYKER_INSTRUCTOR_MIS_07_STEP_1 (creature_model target, race yubo)
+{
+	tryker_instructor_mis_07_step_1	[We need to get rid of a few predators. There are too many $target$ on our island, and they prey on the herbivores.
+								I would be grateful if you managed to kill one by yourself, and you shall earn a good deal of experience.
+								But beware, these beasts are more dangerous than $yubo$...]
+}
+
+TRYKER_INSTRUCTOR_MIS_07_END (creature_model target)
+{
+	tryker_instructor_mis_07_end	[Good ! $target$ are no longer a danger, please accept a little reward for your hard toil.]
+}
+
+//Reward 25monnaie
+/*Mission 08 :
+
+TRYKER_INSTRUCTOR_MIS_08
+*/
+TRYKER_INSTRUCTOR_MIS_08_TITLE (bot giver, creature_model kipee)
+{
+	tryker_instructor_mis_08_title	[Find and kill $kipee.ia$ $kipee$.]
+}
+
+TRYKER_INSTRUCTOR_MIS_08_DESC (bot giver, player p, creature_model kipee, race kitin)
+{
+	tryker_instructor_mis_08_desc	[First encounter with hominkind's nemesis...]
+}
+
+TRYKER_INSTRUCTOR_MIS_08_STEP_1 (player p, creature_model kipee, race kitin)
+{
+	tryker_instructor_mis_08_step_1[It seems that some $kipee$, of the $kitin$ family, have managed to locate us. We must take immediate action against them !
+							They are extremely dangerous killing machines that hunting all homins across Atys to death. {break}\n
+							\n
+							This old enemy recently has recently reappeared. Let us not forget what they did to our ancestors.
+							You must find them and kill them. But I warn you, $p$, these are vicious monsters, and you should group
+							with other warriors to kill them.]
+}
+
+TRYKER_INSTRUCTOR_MIS_08_END (player p)
+{
+	tryker_instructor_mis_08_end	[Thanks a lot $p$ you did nice job.]
+}
+
+//Reward 30 monnaie
+/*Mission 09 :
+
+TRYKER_INSTRUCTOR_MIS_09
+*/
+TRYKER_INSTRUCTOR_MIS_09_TITLE (bot giver)
+{
+	tryker_instructor_mis_09_title	[Find and kill bandits.]
+}
+
+TRYKER_INSTRUCTOR_MIS_09_DESC (bot giver)
+{
+	tryker_instructor_mis_09_desc	[Help $giver$ maintain the order in the village.]
+}
+
+TRYKER_INSTRUCTOR_MIS_09_STEP_1 ()
+{
+	tryker_instructor_mis_09_step_1	[Bandits have been spotted nearby. We cannot have them  feel at home on our land. They are merciless,
+								and usually travel in groups of three. I recommend that you team up with others like yourself before you take any
+								action against them. Once you've managed to kill them, you should loot them for their equipment.{break}\n
+								\n
+	  							If you don't find anything of immediate interest, don't forget that you can always sell it to the merchants.
+	  							This mission is more dangerous than the others, but it pays well.]
+}
+
+TRYKER_INSTRUCTOR_MIS_09_OBJ ()
+{
+	tryker_instructor_mis_09_obj	[Find and kill the bandits that settled around the village.\n
+							You should team up if you don't want to die !]
+}
+
+TRYKER_INSTRUCTOR_MIS_09_TALKMENU_1 ()
+{
+	tryker_instructor_mis_09_talkmenu_1	[I killed the bandits]
+}
+
+TRYKER_INSTRUCTOR_MIS_09_END ()
+{
+	tryker_instructor_mis_09_end	[Good ! Such vermin is no longer a danger to the village.]
+}
+
+
+//-----------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
+//-------------------------------Mission d'initiation à l'encyclopédie---------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------------
+
+ENCYCLO_TUTORIAL_MIS_TITLE (bot giver)
+{
+	encyclo_tutorial_mis_title	[Discovering the Wisdom Chest]
+}
+
+ENCYCLO_TUTORIAL_MIS_DESC (bot giver)
+{
+	encyclo_tutorial_mis_desc	[En parlant au barman de la capitale, vous allez découvrir le secret de la connaissance.]
+}
+
+ENCYCLO_TUTORIAL_M_T2_BARMAN_1 (bot giver)
+{
+	encyclo_tutorial_m_t2_barman_1	[Vous voulez me voir ?]
+}
+
+ENCYCLO_TUTORIAL_P_T2_BARMAN_1 (bot player)
+{
+	encyclo_tutorial_p_t2_barman_1	[Bienvenue, $player$. J'aime faire la connaissance
+de mes compatriotes. Je mets un point d'honneur
+a étancher toutes les soifs, y compris la soif
+de connaissance. Parlons ensemble quelques
+instants.\n
+J'ai entendu dire que tu avais l'esprit aventureux.
+Nous avons besoin d'homins tels que toi pour
+rebatir notre civilisation, et retrouver ce qui
+a été perdu ! Afin accomplir cette tache noble
+entre toutes, il est bon de connaitre ce nouveau
+monde dans lequel nous vivons, et de se remémorer
+les événements passés qui nous ont amenés ici.
+Il existe un moyen pour acquérir ce savoir si
+précieux : rassembler les cubes d'ambre du
+Coffre de la sagesse.\n
+L'intendant de la cité t'en dira davantage sur
+les cubes et le Coffre, va le voir de ma part.
+Nous nous reverrons, $player$, car je fais partie
+de ceux qui conservent le savoir, et si tu t'en
+montres digne, je serai honoré de te le
+transmettre, comme un héritage.]
+}
+
+ENCYCLO_TUTORIAL_MIS_DESC_2 ()
+{
+	encyclo_tutorial_mis_desc_2	[Vous allez découvrir la tradition des cubes d'ambre et du coffre de la sagesse.]
+}
+
+ENCYCLO_TUTORIAL_P_T2_INTENDANT_1 (bot giver, bot player)
+{
+	encyclo_tutorial_p_t2_intendant_1	[Greetings to you, homin. So you want to know more about the chest of wisdom, eh?\n
+			{break}Well, the chest is the sum of our knowledge, it is the great receptacle that stores the cubes of amber.{break} The magic of the cubes was discovered by homins a long long time ago while they were looking for a way to preserve their knowledge from the trials of time and fire. They learnt to fashion the amber and enclose the knowledge inside like a insect trapped in resin.\n
+			{break}Any homin eager to build up their knowledge must receive or find amber cubes. If $giver$ sent you to me, it means you are one of these homins in search of knowledge.{break} Like other initiated homins, my occupation has made me the possessor of many cubes. I share these cubes with those who pass the trials set by the initiated few. Indeed, knowledge is a precious thing and we must be careful it doesn't fall into unworthy hands.\n
+			{break}If you want to know more about these trials, you must meet the town guard chief. Tell him I sent you. I wish you good fortune in your quest of wisdom, $player$.]
+}
+
+ENCYCLO_TUTORIAL_P_T2_GUARDCHIEF_1 (bot npc_3, bot player)
+{
+	encyclo_tutorial_p_t2_guardchief_1	[So you'd like to find out more about the world, eh? Well, $player$, there's a price to pay for such knowledge, you know?!\n
+			Only trustworthy homins keen to progress may receive amber cubes from the initiated few.{break} To prove their valor and determination, each homin must undergo a rite of passage or carry out an important mission. The deserving homin will then receive a cube of amber, and learn special techniques or gain a particular privilege.\n
+			{break}Before they undertake any rites, homins have to prove their attachment to their community. According to custom, homins must accomplish tasks given by members of the community. These tasks, appelées tâches rituelles, may consist of crafting exercises, fighting, foraging or exploration.\n
+			{break}Les initiés sont toujours heureux de rencontrer un homin qui cherche à s'engager sur la voie de la connaissance. Aussi sommes-nous prêts à te remettre un cube d'ambre pour t'encourager. To obtain this cube, you won't need to undergo any rites. On the other hand, so as to respect tradition, it would be appreciated if you could accomplish a task for our people.{break} Go and find $npc_3$. He'll propose you a number of tasks, choose the one that suits you best. Si tu choisis judicieusement, la tâche que tu accompliras sera également une tâche rituelle, liée à une épreuve demandée par un autre initié. Ainsi progresseras-tu non seulement dans la mission que je te confie, mais également dans la préparation d'un autre rite.]
+}
+
+ENCYCLO_TUTORIAL_O_ANY_MESSENGER_1 (bot npc_3)
+{
+	encyclo_tutorial_o_any_messenger_1	[Do one task given by $npc_3$]
+}
+
+ENCYCLO_TUTORIAL_M_T2_GUARD_CHIEF_1 (bot npc_2)
+{
+	encyclo_tutorial_m_t2_guard_chief_1	[J'ai accompli la tache]
+}
+
+ENCYCLO_TUTORIAL_P_T2_GUARDCHIEF_2 (bot npc_4, place place_1, bot player)
+{
+	encyclo_tutorial_p_t2_guardchief_2	[Well done, $player$! Few homins understand that knowledge is a veritable treasure worth fighting for. And though there may be sacrifices to be made, knowledge will bring great force to those who prove worthy of it.\n
+			{break}I perceive an unshakeable will in you, I've no doubt you will be equal to the trials that lay before you! If you are, it could well be I who shall give you your reward.\n
+			{break}Time has come for you to receive your amber cube. The reverend fellow $npc_4$, sage of $place_1$, will present it to you. See you again, homin!]
+}
+
+ENCYCLO_TUTORIAL_P_T2_SAGE_1 (faction faction_1, bot player)
+{
+	encyclo_tutorial_p_t2_sage_1	[I presume you've already met some other initiated fellows... You have proven your eagerness to explore the avenues of knowledge and I congratulate you.\n
+			{break}As guardian of the knowledge of the $faction_1$, it is my honor to give you this cube as a token of what you have learnt today.\n
+			Good luck, $player$, may you find the pathway to wisdom!]
+}
+

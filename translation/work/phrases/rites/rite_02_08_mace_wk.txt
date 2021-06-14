@@ -1,0 +1,45 @@
+﻿R_02_08_MIS_TITLE (bot giver)
+{
+	r_02_08_mis_title	[La tradition de l'échange]
+}
+
+R_02_08_MIS_DESC (bot giver)
+{
+	r_02_08_mis_desc	[Créer des armes et assurer un échange rituel entre deux tribus]
+}
+
+R_02_08_P_LDC_INTRO (bot chef_tutors, place lieu_havenpurity, faction tribu_tutors)
+{
+	r_02_08_p_ldc_intro	[Bonjour à vous. Vous allez nous servir d'ambassadeur et honorer l'une de nos plus anciennes traditions. Les tribus les plus proches de notre peuple ont pour coutume de s'échanger des objets d'artisanat provenant de leurs régions respectives. Bien que ces échanges ne nous concernent pas directement, nous souhaitons y participer à notre façon. Ainsi nous entretenons les bons rapports qui nous unissent à ces tribus.{break}Je vous propose donc de partir sur le champs et d'aller trouver $chef_tutors$, le chef de la tribu des $tribu_tutors.member$, dans la région de $lieu_havenpurity$. Si vous menez cette mission à bien, je vous récompenserai en vous apprenant à forger une mace spéciale.]
+}
+
+R_02_08_P_T2_PARLER_CHEF_TUTORS (bot chef_tutors, bot givervar)
+{
+	r_02_08_p_t2_parler_chef_tutors	[Bonjour, $givervar$ m'envoie]
+}
+
+R_02_08_P_BC_PARLER_CHEF_TUTORS (bot chef_sacredsap, faction faction, place lieu_fleetinggarden, faction tribu_sacredsap)
+{
+	r_02_08_p_bc_parler_chef_tutors	[Bien, j'apprécie cette contribution. Nous voulons échanger avec la tribu des $tribu_sacredsap.member$ des armes, plus précisément des masses d'arme.{break}Mais si les $faction.member$ veulent vraiment participer à cet échange, alors vous aller aussi nous servir d'artisan. Si cette tâche ne vous convient pas, nous perdons notre temps et je ne vous retiens pas plus longtemps.{break}Sinon, votre mission est simple : créez une dizaine de masses $faction$ et portez les à $chef_sacredsap$, le chef de la tribu des $tribu_sacredsap.member$. Vous les trouverez sur le continent Matis, dans la région de $lieu_fleetinggarden$. Vous pouvez disposer.]
+}
+
+R_02_08_P_BC_PARLER_CHEF_SACREDSAP (bot chef_tutors, faction tribu_tutors)
+{
+	r_02_08_p_bc_parler_chef_sacredsap	[Vous pourrez remercier $chef_tutors$ pour ce présent. Puisque vous vous êtes proposé pour effectuer cet échange rituel, vous n'avez plus qu'à leur rendre la pareil en créant une dizaine de masses d'arme Matis et en les ramenant à $chef_tutors$, chef de la tribu des $tribu_tutors.member$, avec nos plus humbles remerciements. Bon courage.]
+}
+
+R_02_08_P_BC_PARLER_CHEF_TUTORS_2 (bot givervar)
+{
+	r_02_08_p_bc_parler_chef_tutors_2	[Je dois admettre que vous avez honoré votre mission de manière louable. Veuillez accépter mes remerciements et les transmettre à $givervar$. Bonne route.]
+}
+
+R_02_08_P_T2_DEBRIEF (bot givervar)
+{
+	r_02_08_p_t2_debrief	[Ma mission est terminée]
+}
+
+R_02_08_P_BC_DEBRIEF ()
+{
+	r_02_08_p_bc_debrief	[Parfait, vous avez fait du bon travail. Voici votre réompense.]
+}
+

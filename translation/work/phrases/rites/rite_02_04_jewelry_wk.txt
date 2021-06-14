@@ -1,0 +1,105 @@
+﻿R_02_04_MIS_TITLE (bot giver)
+{
+	r_02_04_mis_title	[Le maitre-crafteur aigri]
+}
+
+R_02_04_MIS_DESC (bot giver, place yrkanis)
+{
+	r_02_04_mis_desc	[One of the $yrkanis$ crafters has received a large order and needs assistance. She is prepared to share her knowledge with any apprentice willing to help her honor the order.]
+}
+
+R_02_04_P_LDF_INTRO_1 ()
+{
+	r_02_04_p_ldf_intro_1	[One of the most eminent jewellers in town has difficulty in fulfilling one of her contracts. She is a great expert and demanding with it, but it's a good occasion for you to make progress.{break} Go to South Market and speak to her on my behalf, believe me, she is impatient for help! ]
+}
+
+R_02_04_M_T2_CRAFTER_1 (bot crafter, bot giver)
+{
+	r_02_04_m_t2_crafter_1	[I'm here on behalf of $giver$.]
+}
+
+R_02_04_P_BC_BRIEF_CRAFT_1 (bot player)
+{
+	r_02_04_p_bc_brief_craft_1	[Ah, you've arrived just in time, $player$! Let's not waste any more time, take these tools and materials and set to work immediately. I need a pair of earrings and make it quicke. But careful, I want no flaws!]
+}
+
+R_02_04_P_DC_MP_1 (int mp_price_1)
+{
+	r_02_04_p_dc_mp_1	[Pour gagner du temps je vais vous donner de quoi fabriquer ces boucles d'oreilles, mais je n'ai pas de quoi gacher, alors ne ratez pas votre coup. Par contre, je dois vous demander quelques dappers en garantie, vous n'avez apres tout aucune renommée ici, et je ne veut pas que vous partiez sans remplir votre tache. Donnez moi $mp_price_1$ dappers, je vous les rendrait peut-etre si vous travaillez suffisamment bien.]
+}
+
+R_02_04_P_DA_NO_1 ()
+{
+	r_02_04_p_da_no_1	[Pas question.]
+}
+
+R_02_04_P_DA_GIVE_1 ()
+{
+	r_02_04_p_da_give_1	[Tenez, voici les dappers.]
+}
+
+R_02_04_P_BC_GIVE_1 ()
+{
+	r_02_04_p_bc_give_1	[Très bien, comme ca je suis sur que tu n'essayeras pas de me rouler. Et maintenant au travail, j'ai déjà perdu trop de temps avec toi.]
+}
+
+R_02_04_M_T2_TASK_DONE_1 (bot crafter)
+{
+	r_02_04_m_t2_task_done_1	[J'ai fait ce que vous demandiez]
+}
+
+R_02_04_P_BC_BRIEF_CRAFT_2 ()
+{
+	r_02_04_p_bc_brief_craft_2	[Faites voir votre babiole. Mouais c'est passable, mais vous avez mis tout ce temps ? Il va falloir accélérer la cadence si nous voulons arriver a honorer le contrat. Faites moi un pendentif maintenant, et essayez de vous appliquer un peu !]
+}
+
+R_02_04_P_DC_MP_2 (int mp_price_2)
+{
+	r_02_04_p_dc_mp_2	[Pour la suite, il faut que je vous donne encore quelques matieres premieres. Donnez moi $mp_price_2$ dappers comme garantie.]
+}
+
+R_02_04_P_BC_GIVE_2 ()
+{
+	r_02_04_p_bc_give_2	[Alors au travail !]
+}
+
+R_02_04_P_BC_BRIEF_CRAFT_3 ()
+{
+	r_02_04_p_bc_brief_craft_3	[Hmm, ce pendentif semble convenir, mais si mon client n'est pas satisfait c'est toute ma réputation qui risque d'en patir. Quoi qu'il en soit nous ne pouvons pas perdre plus de temps. Il faut finir la derniere piece, un diademe qui doit etre absolument parfait ! Allez dépeche-toi un peu !]
+}
+
+R_02_04_P_DC_MP_3 (int mp_price_3)
+{
+	r_02_04_p_dc_mp_3	[Cette fois c'est $mp_price_3$ dappers qu'il me faut, dépechez vous un peu !]
+}
+
+R_02_04_P_BC_GIVE_3 ()
+{
+	r_02_04_p_bc_give_3	[Alors dépêchons ...]
+}
+
+R_02_04_P_BC_BRIEF_DELIVERY_1 (place davae, race frahar)
+{
+	r_02_04_p_bc_brief_delivery_1	[Hum, even a blind $frahar$ wouldn't want this lot, but there's no use crying over used sap! Now you've got to deliver it all.{break} The supplier of $davae$ has been expecting the delivery for the last couple of days now, and he'll refuse it if you arrive too late.]
+}
+
+R_02_04_P_BC_ITEM_RECEIVED_1 (bot crafter)
+{
+	r_02_04_p_bc_item_received_1	[Ah, the pieces I've been expecting. You must be $crafter$'s delivery homin. Her creations are among the most renowned in the kingdom.{break} Just look at that! A pure marvel! Such fine finishing is so rare... Congratulate her on my behalf!]
+}
+
+R_02_04_M_T2_DELIVERY_DONE_1 (bot crafter)
+{
+	r_02_04_m_t2_delivery_done_1	[J'ai bien fait la livraison.]
+}
+
+R_02_04_P_BC_DEBRIEF_1 (bot player)
+{
+	r_02_04_p_bc_debrief_1	[Ah, there you are... So, you've made the delivery in time. The order was of capital importance for my business, and you've pulled it off brilliantly!{break} Listen, $player$, I may have been a little harsh on you back there but it was because of the strain. I hope you'll excuse me...{break} You have shown that you are capable of producing jewels of quality, and inspite of the pression. It will have no doubt strengthened your powers of concentration.{break} I shall give you this cube of amber with the hope that the wisdom it contains will encourage you to continue in this line.]
+}
+
+R_02_04_P_BC_FAIL_1 ()
+{
+	r_02_04_p_bc_fail_1	[Et bien tant pis, je ne vois pas pourquoi je te ferais confiance.]
+}
+

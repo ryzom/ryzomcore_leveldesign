@@ -1,0 +1,225 @@
+﻿R_06_08_MIS_TITLE (bot giver)
+{
+	r_06_08_mis_title	[Les kinchers.]
+}
+
+R_06_08_MIS_DESC (bot giver)
+{
+	r_06_08_mis_desc	[L'étude des kinchers.]
+}
+
+R_06_08_INTRO (bot givertask)
+{
+	( self.gender = male )
+		r_06_08_intro_m	[Oren Pyr homin ! Tu es au courant du désastre ? Je suis hors de moi ! Ces satanés kinchers ont encore fait une razzia complète dans un couloir et ils ont blessé quatre de mes homins ! Notre méconnaissance des kitins joue contre nous. Nous devons en apprendre plus sur eux afin de mieux les combattre, pour que ceci ne se reproduise plus.\nVeux-tu bien aller trouver $givertask$, la spécialiste des Kinchers qui se trouve dans les Lagons de Loria, pour en apprendre plus sur eux, puis revenir me faire ton rapport ? Elle a toujours besoin d'aide, elle ne refusera pas.]
+	( self.gender = female )
+		r_06_08_intro_f	[Oren Pyr homine ! Tu es au courant du désastre ? Je suis hors de moi ! Ces satanés kinchers ont encore fait une razzia complète dans un couloir et ils ont blessé quatre de mes homins ! Notre méconnaissance des kitins joue contre nous. Nous devons en apprendre plus sur eux afin de mieux les combattre, pour que ceci ne se reproduise plus.\nVeux-tu bien aller trouver $givertask$, la spécialiste des Kinchers qui se trouve dans les Lagons de Loria, pour en apprendre plus sur eux, puis revenir me faire ton rapport ? Elle a toujours besoin d'aide, elle ne refusera pas.]
+}
+
+R_06_08_HAVE_REPORT_ACTION (bot givervar, bot givertask)
+{
+	r_06_08_have_report_action	[J'ai le rapport de $givertask$.]
+}
+
+R_06_08_ASK_REPORT ()
+{
+	r_06_08_ask_report	[Ah ? Montre-moi ça.]
+}
+
+R_06_08_READ_REPORT ()
+{
+	( self.gender = male )
+		r_06_08_read_report_m	[Voyons voir ce que nous avons là... *Prend le flacon, parcourt le rapport rapidement et hoche la tête.*{break}C'est exactement ce qu'il nous fallait ! Bien, passons à la suite, homin.]
+	( self.gender = female )
+		r_06_08_read_report_f	[Voyons voir ce que nous avons là... *Prend le flacon, parcourt le rapport rapidement et hoche la tête.*{break}C'est exactement ce qu'il nous fallait ! Bien, passons à la suite, homine.]
+}
+
+R_06_08_WHAT_DO_ON_KL (bot player)
+{
+	r_06_08_what_do_on_kl	[*Montre le flacon à $player$*. Nous allons utiliser les matières marquées par Gerder pour attirer les kinchers dans un piège. Avec ce flacon, tu vas aller tout à l'Est où tu trouveras des matières premières.\nVerse le contenu du flacon sur la source.\n\nQuand tu l'auras marquée, éloigne-toi et attends, tout en observant.\nSi tout fonctionne comme prévu, tu verras un Grand Kincher accompagné de plus petits s'approcher de la source. Attaque le Grand Kincher et tue-le. Après reviens me voir pour me faire ton rapport. \nEs-tu prêt ?]
+}
+
+R_06_08_YES_I_CAN ()
+{
+	r_06_08_yes_i_can	[Oui, je suis prêt !]
+}
+
+R_06_08_NO_I_CANT ()
+{
+	r_06_08_no_i_cant	[Heu... ?]
+}
+
+R_06_08_MOVE_TO_KL ()
+{
+	r_06_08_move_to_kl	[Et bien quoi ?! Qu'attends-tu pour y aller ?]
+}
+
+R_06_08_RITE_FINISHED_ACTION (bot givervar)
+{
+	r_06_08_rite_finished_action	[Me revoilà !]
+}
+
+R_06_08_SO_WHAT ()
+{
+	r_06_08_so_what	[Alors, cette observation ?]
+}
+
+R_06_08_I_HAVE_FINISHED ()
+{
+	r_06_08_i_have_finished	[Ma foi... Intéressante !]
+}
+
+R_06_08_I_DONT_HAVE_FINISHED ()
+{
+	r_06_08_i_dont_have_finished	[Euh, et bien, c'est que...]
+}
+
+R_06_08_DONT_LIE ()
+{
+	( self.gender = male )
+		r_06_08_dont_lie_m	[Ne me mens pas ! Retournes-y et vite ! Je n'ai pas besoin d'avoir un homin inutile dans les jambes !]
+	( self.gender = female )
+		r_06_08_dont_lie_f	[Ne me mens pas ! Retournes-y et vite ! Je n'ai pas besoin d'avoir une homin inutile dans les jambes !]
+}
+
+R_06_08_WHAT_DO_YOU_WAIT ()
+{
+	r_06_08_what_do_you_wait	[Tu n'as pas accompli ta mission ? Que fais-tu là alors ? Retournes-y et vite !]
+}
+
+R_06_08_FINISH ()
+{
+	r_06_08_finish	[Félicitations ! Grâce à toi, nous avons fait un pas dans la connaissance des kinchers.  Voici un cube qui contient de précieuses informations !]
+}
+
+R_06_08_THANKS ()
+{
+	r_06_08_thanks	[Merci !]
+}
+
+R_06_08_LORIA_TITLE (bot giver)
+{
+	r_06_08_loria_title	[Le marquage des ressources.]
+}
+
+R_06_08_LORIA_DESC (bot giver)
+{
+	r_06_08_loria_desc	[En savoir plus sur le marquage des ressources par les kinchers.]
+}
+
+R_06_08_LORIA_TALK_TO_GIVER_1 (bot givervar)
+{
+	r_06_08_loria_talk_to_giver_1	[Allez voir $givervar$.]
+}
+
+R_06_08_LORIA_ARE_YOU_FINE (bot givervar)
+{
+	r_06_08_loria_are_you_fine	[Vous allez bien $givervar$ ?]
+}
+
+R_06_08_LORIA_WHO_ARE_YOU ()
+{
+	( self.gender = male )
+		r_06_08_loria_who_are_you_m	[Lordoy l'ami ! Pas tellement, non. Les kinchers ne sont pas passés loin cette fois ! Hum... Au fait, t'es qui, toi ? Et comment tu connais mon nom ?]
+	( self.gender = female )
+		r_06_08_loria_who_are_you_f	[Lordoy l'amie ! Pas tellement, non. Les kinchers ne sont pas passés loin cette fois ! Hum... Au fait, t'es qui, toi ? Et comment tu connais mon nom ?]
+}
+
+R_06_08_LORIA_I_AM (bot givertask, bot player)
+{
+	r_06_08_loria_i_am	[Je suis $player$ et $givertask$ m'a dit que vous pourriez avoir besoin de moi.]
+}
+
+R_06_08_LORIA_WHAT_KNOW_ABOUT_KITINS ()
+{
+	r_06_08_loria_what_know_about_kitins	[*Rit* ! Je pense plutôt que c'est elle qui a besoin de moi ! Mais ce n'est pas demain qu'elle l'avouera ! Mais puisque tu es là, autant que tu profites de mon enseignement, n'est-ce pas ? Je parie que tu ne t'y connais pas en kinchers, pas vrai ?]
+}
+
+R_06_08_LORIA_DONT_KNOW_ANYTHING ()
+{
+	r_06_08_loria_dont_know_anything	[Si si, je sais que ça fait mal quand ça tape...]
+}
+
+R_06_08_LORIA_WHAT_NEED_TODO ()
+{
+	( self.gender = male )
+		r_06_08_loria_what_need_todo_m	[T'es drôle, tu sais ? *Rit puis tousse* \nArrête de me faire rire, j'ai été transpercée par un dard de kincher et ma plaie s'ouvre quand je ris... *Pousse un petit cri de douleur* \nIl y en a beaucoup qui pensent qu'observer les kinchers c'est rester assis à les regarder en buvant de la bière de chez Ba'Naer. Mais oui ! Et c'est comme ça que je me suis presque fait arracher le bras à l'âge de 12 ans ! {break}Mon p'tit, prépares-toi à voir ce qu'est la vraie observation de kinchers. Ici tu es aux Lagons de Loria, une des régions les plus dangereuses d'Atys. Et c'est le lieu idéal pour cela. {break}Un kincher du nom de Gerder se ballade dans la zone, il vient du sud puis fait des allers-retours entre l'est et l'ouest. Je te montre sur la carte l'endroit à l'Est où il a l'habitude de s'arrêter.\nVa te poser là-bas et attends qu'il pointe son dard. Ensuite, suis-le ! {break}Tout le long de son parcours il y a des sources qu'il marque avec une substance spéciale. J'en ai compté douze en tout. Ce qui serait vraiment génial, c'est que tu me récupères 4 échantillons de ces matières marquées dans des fioles que je vais te donner. Fais gaffe, il ne les marque pas toutes, donc ne t'étonnes pas si tu trouves une source mais que tu ne puisses pas récupérer d'échantillon. Et n'oublie surtout pas d'avoir la fiole à la main, sinon ça sert à rien !]
+	( self.gender = female )
+		r_06_08_loria_what_need_todo_f	[T'es drôle, tu sais ? *Rit puis tousse* \nArrête de me faire rire, j'ai été transpercée par un dard de kincher et ma plaie s'ouvre quand je ris... *Pousse un petit cri de douleur* \nIl y en a beaucoup qui pensent qu'observer les kinchers c'est rester assis à les regarder en buvant de la bière de chez Ba'Naer. Mais oui ! Et c'est comme ça que je me suis presque fait arracher le bras à l'âge de 12 ans ! {break}Ma p'tite, prépares-toi à voir ce qu'est la vraie observation de kinchers. Ici tu es aux Lagons de Loria, une des régions les plus dangereuses d'Atys. Et c'est le lieu idéal pour cela. {break}Un kincher du nom de Gerder se ballade dans la zone, il vient du sud puis fait des allers-retours entre l'est et l'ouest. Je te montre sur la carte l'endroit à l'Est où il a l'habitude de s'arrêter.\nVa te poser là-bas et attends qu'il pointe son dard. Ensuite, suis-le ! {break}Tout le long de son parcours il y a des sources qu'il marque avec une substance spéciale. J'en ai compté douze en tout. Ce qui serait vraiment génial, c'est que tu me récupères 4 échantillons de ces matières marquées dans des fioles que je vais te donner. Fais gaffe, il ne les marque pas toutes, donc ne t'étonnes pas si tu trouves une source mais que tu ne puisses pas récupérer d'échantillon. Et n'oublie surtout pas d'avoir la fiole à la main, sinon ça sert à rien !]
+}
+
+R_06_08_LORIA_YES_FINE ()
+{
+	r_06_08_loria_yes_fine	[Ouais, ouais, ça va... Il ne m'a pas loupée, celui d'hier ! J'ai failli y laisser un orteil ! Je disais donc, quand tu auras récolté les 4 échantillons, tue Gerder. \n Non, pas pour le disséquer... Perds pas ton temps, y a rien à voir dedans... C'est juste pour le plaisir de l'entendre pousser un cri de détresse en s'écroulant par terre *Rire sadique*. Bon, tu as tout compris ?]
+}
+
+R_06_08_LORIA_CAN_YOU_REPEAT ()
+{
+	r_06_08_loria_can_you_repeat	[Tu peux réexpliquer s'il te plait ?]
+}
+
+R_06_08_LORIA_REPEAT_OBJ (creature_model gerder, place gerder_food)
+{
+	r_06_08_loria_repeat_obj	[Bien sûr !\n\nIl faut que tu ailles trouver $gerder$ le Kincher qui sème la terreur dans la région. Attends à $gerder_food$ et il viendra à toi, observe-le et suis-le, tu verras qu'il marque certaines matières premières sur son passage.{break}Récolte les matières qu'il marque, mais fais bien attention, il ne marque pas toutes celles qui sont sur son passage. Quand tu auras ces matières, tue-le.]
+}
+
+R_06_08_LORIA_WAITING_FOR_YOU ()
+{
+	r_06_08_loria_waiting_for_you	[Une fois tout ça accompli, reviens me voir le plus vite possible. Allez, ne perds pas de temps !]
+}
+
+R_06_08_LORIA_WAIT_AND_TARGET_1 (creature_model gerder)
+{
+	r_06_08_loria_wait_and_target_1	[Attendez la venue de $gerder$ et ciblez-le.]
+}
+
+R_06_08_LORIA_PASSAGE_2 ()
+{
+	r_06_08_loria_passage_2	[Passage 2]
+}
+
+R_06_08_LORIA_OBJ_VISIT_MP (place gerder_passage_1, item phial, creature_model gerder)
+{
+	r_06_08_loria_obj_visit_mp	[Equipez-vous d'une $phial$ et prélevez le long du chemin de $gerder$ des échantillons des sources marquées.\n\n(Attention ! Toutes les sources ne sont pas marquées, si équiper d'une fiole et prêt de la source rien ne se passe, poursuivez pour en trouvez une autre)]
+}
+
+R_06_08_LORIA_OBJ_TALK_TO_MP (bot marqued_mp_1)
+{
+	r_06_08_loria_obj_talk_to_mp	[Prélevez les matières marquées sur la source.]
+}
+
+R_06_08_LORIA_TALK_TO_MP (bot marqued_mp_1)
+{
+	r_06_08_loria_talk_to_mp	[Prélevez les matières marquées.]
+}
+
+R_06_08_LORIA_TASK_FINISHED_ACTION (bot givervar)
+{
+	r_06_08_loria_task_finished_action	[Voilà ce que tu voulais !]
+}
+
+R_06_08_LORIA_GIVE_ME_PHIALS ()
+{
+	r_06_08_loria_give_me_phials	[Bien bien bien... Passe-moi tout ça.]
+}
+
+R_06_08_LORIA_RETURN_KITINLAIR (bot givertask)
+{
+	r_06_08_loria_return_kitinlair	[*Sourit* Pas mal ! Apporte ce flacon et ce rapport à $givertask$. Elle va adorer ! *Grimace de douleur* Ah... Que ça fait mal...]
+}
+
+R_06_08_KITINIERE_TITLE (bot giver)
+{
+	r_06_08_kitiniere_title	[Les kinchers dans la kitinière.]
+}
+
+R_06_08_KITINIERE_DESC (bot giver)
+{
+	r_06_08_kitiniere_desc	[Tester les nouvelles connaissances sur les kinchers de la kitinière.]
+}
+
+R_06_08_KITINIERE_MARK_MP (bot r_06_08_kitinslair_mp)
+{
+	r_06_08_kitiniere_mark_mp	[Marquer la source]
+}
+

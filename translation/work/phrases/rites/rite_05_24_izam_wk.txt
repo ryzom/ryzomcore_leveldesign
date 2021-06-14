@@ -1,0 +1,51 @@
+﻿R_05_24_MIS_TITLE (bot giver, race izam)
+{
+	r_05_24_mis_title	[L'$izam$ apprivoisé]
+}
+
+R_05_24_MIS_DESC (bot giver, race izam)
+{
+	r_05_24_mis_desc	[Un $izam$ apprivoisé s'est échappé, vous devez le retrouver.]
+}
+
+R_05_24_P_LDF_BRIEF_1 (race izam, place maiden_grove)
+{
+	r_05_24_p_ldf_brief_1	[Mon frère, prospecteur dans la région $maiden_grove$, a perdu l'$izam$ qu'il a domestiqué. Il est trop bouleversé par sa disparition, et n'arrive pas à le retrouver. Ramenez-moi le volatile, et je vous récompenserai en entraînant votre résistance à la fatigue. \n
+			 Allez parler à mon frère, il vous donnera des indications sur le lieu où il a perdu son oiseau.]
+}
+
+R_05_24_M_T2_PROSPECTOR_1 (bot prospector, bot giver)
+{
+	r_05_24_m_t2_prospector_1	[Je vien de la part de $giver$.]
+}
+
+R_05_24_P_BC_PROSPECTOR_BRIEF_1 (bot izam_1, place maiden_grove, item my_bouffe_izam)
+{
+	r_05_24_p_bc_prospector_brief_1	[$izam_1$, mon fidèle compagnon ailé, est introuvable ! Au détour d'un bois, il a entendu le cri d'un congénère et a disparu dans la nature... Je suis désespéré ! Je pense qu'il se trouve dans la partie est de $maiden_grove$, mais je n'ai pas réussi à découvrir où il se cache. Je ne sais plus quoi faire ! Peut-être qu'en lui proposant sa nourriture favorite, des $my_bouffe_izam$, cela le rendra plus docile... Tenez, en voici. Retrouvez-le, je vous en prie !]
+}
+
+R_05_24_O_GI_TO_IZAM_1_1 (item i1, int qt1, int qual1, bot izam_1)
+{
+	r_05_24_o_gi_to_izam_1_1	[Apprivoiser $izam_1$ avec la nourriture]
+}
+
+R_05_24_O_ES_IZAM_1 (bot giver, bot izam_1)
+{
+	r_05_24_o_es_izam_1	[Ramener $izam_1$ à $giver$]
+}
+
+R_05_24_P_SMG_IZAM (bot giver, race izam)
+{
+	r_05_24_p_smg_izam	[&AMB& A présent, prevenez $giver$ que $izam$ attend devant la porte.]
+}
+
+R_05_24_M_ES_END_1 (bot giver, race izam)
+{
+	r_05_24_m_es_end_1	[Voici l'$izam$ de votre frère]
+}
+
+R_05_24_P_BC_DEBRIEF_1 ()
+{
+	r_05_24_p_bc_debrief_1	[Oh vous l'avez retrouvé ! Vous avez réussi à bien comprendre sa nature pour qu'il vous suive de la sorte. Laissez moi vous donner ce cube d'Ambre qui décrit cette espère, ensuite nous allons réaliser un entraînement afin que vous soyez plus résistant à la fatigue.]
+}
+

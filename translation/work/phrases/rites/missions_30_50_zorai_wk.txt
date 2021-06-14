@@ -1,0 +1,505 @@
+﻿CWINTROZORAI_SHOPS_LOW_SYSMES (place shops_low)
+{
+	cwintrozorai_shops_low_sysmes	[&AMB&Vous êtes à $shops_low$. Ici vous pourrez trouver tous les magasins dont vous aurez besoin]
+}
+
+CWINTROZORAI_SHOPS_TRAINERS_OVERLOAD (place trainers)
+{
+	cwintrozorai_shops_trainers_overload	[Rendez-vous à $trainers$]
+}
+
+CWINTROZORAI_TRAINERS_SYSMES (place trainers)
+{
+	cwintrozorai_trainers_sysmes	[&AMB&Vous êtes à $trainers$. Ici vous pourrez trouver les entraineurs qui vous permettront de progresser dans la voie que vous aurez choisi]
+}
+
+CWINTROZORAI_OUTOFROOM_MSG ()
+{
+	cwintrozorai_outofroom_msg	[&SYS&Vous n'avez plus de place dans votre inventaire. Demandez à nouveau l'objet quand vous en aurez fait.]
+}
+
+CWINTROZORAI_OUTOFROOM_OVERLOAD (bot givervar)
+{
+	cwintrozorai_outofroom_overload	[Faites de la place avant de demander à nouveau l'objet.]
+}
+
+CWINTROZORAI_OUTOFROOM_PHRASE (bot givervar)
+{
+	cwintrozorai_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+CWINTROZORAI_OUTOFROOM_BOTCHAT ()
+{
+	cwintrozorai_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+CWZF01_TITLE (bot giver)
+{
+	cwzf01_title	[De la mousse pour l'étable]
+}
+
+CWZF01_DESC (bot giver, place city, bot givervar)
+{
+	cwzf01_desc	[$givervar$ a besoin de mousse pour les Mektoubs de l'étable de $city$]
+}
+
+CWZF01_INSTRUCTIONS (bot player, bot stableboy)
+{
+	cwzf01_instructions	[Vous revoilà $player$. Vous souhaitez rendre service à la communauté ? C'est très serviable de votre part. Et bien, si vous voulez vous rendre utile, vous devriez aller voir $stableboy$, je crois qu'il a besoin d'aide.]
+}
+
+CWZF01_STEP1_OVERLOAD (bot stableboy, bot givervar)
+{
+	cwzf01_step1_overload	[Bonjour, $givervar$ m'envoie pour vous aider]
+}
+
+CWZF01_DIALOG_STABLEBOY (place eaux, creature_model slaveni)
+{
+	cwzf01_dialog_stableboy	[Bonjour. Effectivement, j'aurais bien besoin d'un petit coup de main. Pour un confort optimal pour mes Mektoubs, je mets de la mousse dans l'étable. Le problème c'est que je commence à en manquer. Si vous pouviez aller tuer quelques $slaveni$ et me rapporter leur mousse vous me rendriez bien service. Vous pourrez en trouver autour des $eaux$]
+}
+
+CWZF01_OUTOFROOM_MSG ()
+{
+	cwzf01_outofroom_msg	[&SYS&Vous n'avez plus de place dans votre inventaire. Demandez à nouveau l'objet quand vous en aurez fait.]
+}
+
+CWZF01_OUTOFROOM_OVERLOAD (bot stableboy)
+{
+	cwzf01_outofroom_overload	[Faites de la place avant de demander à nouveau l'objet.]
+}
+
+CWZF01_OUTOFROOM_PHRASE (bot stableboy)
+{
+	cwzf01_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+CWZF01_OUTOFROOM_BOTCHAT ()
+{
+	cwzf01_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+CWZF01_DIALOG_REWARD ()
+{
+	cwzf01_dialog_reward	[Ho merci beaucoup. Avec ça mes Mektoubs seront les mieux lotis de tout Atys. Tenez, prenez ça, vous l'avez bien mérité.]
+}
+
+CWZF02_TITLE (bot giver)
+{
+	cwzf02_title	[Repousser la menace Kitin]
+}
+
+CWZF02_DESC (bot giver)
+{
+	cwzf02_desc	[Les Kitins sont de retour dans la région. Montrez leur qu'ils ne sont pas les bienvenus.]
+}
+
+CWZF02_INSTRUCTIONS (bot chef, bot player)
+{
+	cwzf02_instructions	[$player$, vous tombez bien. $chef$, le chef des gardes a besoin de bras. Allez le voir, il vous en dira plus.]
+}
+
+CWZF02_STEP1_OVERLOAD (bot chef, bot givervar)
+{
+	cwzf02_step1_overload	[Bonjour, $givervar$ m'envoie pour vous aider]
+}
+
+CWZF02_DIALOG_CHEF (place cite)
+{
+	( self.gender = male )
+		cwzf02_dialog_chef_m	[Bonjour. L'heure est grave mon ami. Les Kitins sont de retour, il y en a quelques uns qui se trouvent actuellement ici même, dans les $cite$. Ils ne sont pas agressifs mais leur présence ne laisse rien présager de bon. Nous devons leur montrer que nous sommes capables de nous défendre et qu'ils ne sont pas les bienvenus dans la région. Ainsi je demande à tous les homins désirant servir Atys de participer à l'effort de guerre, car il s'agit bien de celà. Allez donc en tuer quelques un pour leur montrer que les Homins n'ont pas dit leur dernier mot.]
+	( self.gender = female )
+		cwzf02_dialog_chef_f	[Bonjour. L'heure est grave mon amie. Les Kitins sont de retour, il y en a quelques uns qui se trouvent actuellement ici même, dans les $cite$. Ils ne sont pas agressifs mais leur présence ne laisse rien présager de bon. Nous devons leur montrer que nous sommes capables de nous défendre et qu'ils ne sont pas les bienvenus dans la région. Ainsi je demande à tous les homins désirant servir Atys de participer à l'effort de guerre, car il s'agit bien de celà. Allez donc en tuer quelques un pour leur montrer que les Homins n'ont pas dit leur dernier mot.]
+}
+
+CWZF02_STEP3_PHRASE (bot chef)
+{
+	cwzf02_step3_phrase	[J'ai donné une bonne leçon à ces Kitins]
+}
+
+CWZF02_DIALOG_REWARD ()
+{
+	cwzf02_dialog_reward	[Très bien, vous avez fait du bon travail. N'hésitez pas à anéantir les Kitins que vous croiserez. Moins ils seront nombreux, moins leur menace sera dangereuse. Tenez, prenez ça, vous le méritez bien.]
+}
+
+CWZF03_TITLE (bot giver, faction tribu)
+{
+	cwzf03_title	[Une livraison pour les $tribu$]
+}
+
+CWZF03_DESC (bot giver, place city, faction tribu)
+{
+	cwzf03_desc	[La ville de $city$ a besoin que vous livriez un paquet à la tribu des $tribu$]
+}
+
+CWZF03_INSTRUCTIONS (bot chef, bot supplier)
+{
+	cwzf03_instructions	[$chef$ m'a appris que vous aviez mené à bien la mission qu'il vous avait confié. Je savais qu'on pouvait vous faire confiance. Il se trouve justement que $supplier$ aurait besoin d'aide. Si vous avez un moment vous devriez passer le voir.]
+}
+
+CWZF03_STEP1_OVERLOAD (bot supplier, bot givervar)
+{
+	cwzf03_step1_overload	[Bonjour, $givervar$ m'envoie pour vous aider]
+}
+
+CWZF03_DIALOG_SUPPLIER (faction tribu)
+{
+	cwzf03_dialog_supplier	[Ha oui vous tombez bien. Je dois livrer ces matières premières à la tribu des $tribu$ mais je ne peux pas m'y rendre pour le moment. Si vous pouviez le faire pour moi vous me rendriez un grand service.]
+}
+
+CWZF03_DIALOG_ICON_WELCOMER (place chutes)
+{
+	( self.gender = male )
+		cwzf03_dialog_icon_welcomer_m	[Ho merci beaucoup. Je n'espérais plus recevoir cette livraison. Nous autres artisans sommes très dépendants des fournisseurs. Mais, j'y pense, vous me semblez doué pour le combat. Certains de nos éclaireurs nous ont indiqués la présence de créatures anormales près des $chutes$. Si vous avez le temps de mener une petite enquête vous nous rendriez service. Maintenant que nous avons reçu votre livraison, nous allons être trop occupés pour nous en charger.]
+	( self.gender = female )
+		cwzf03_dialog_icon_welcomer_f	[Ho merci beaucoup. Je n'espérais plus recevoir cette livraison. Nous autres artisans sommes très dépendants des fournisseurs. Mais, j'y pense, vous me semblez douée pour le combat. Certains de nos éclaireurs nous ont indiqués la présence de créatures anormales près des $chutes$. Si vous avez le temps de mener une petite enquête vous nous rendriez service. Maintenant que nous avons reçu votre livraison, nous allons être trop occupés pour nous en charger.]
+}
+
+CWZF03_STEP3_OVERLOAD (place place, place chutes)
+{
+	cwzf03_step3_overload	[Menez l'enquête dans les $chutes$ et cherchez des traces de créatures anormales]
+}
+
+CWZF03_STEP4_OVERLOAD (bot icon_welcomer)
+{
+	cwzf03_step4_overload	[Tuez l'animal malade et rapportez une preuve à $icon_welcomer$]
+}
+
+CWZF03_STEP4_FAIL_SYSMES ()
+{
+	cwzf03_step4_fail_sysmes	[&AMB&Vous n'avez trouvé aucune preuve. Revenez plus tard.]
+}
+
+CWZF03_STEP4_SUCCESS_SYSMES ()
+{
+	cwzf03_step4_success_sysmes	[&AMB&Vous trouvez des extraits de Goo sur le cadavre.]
+}
+
+CWZF03_DIALOG_ICON_WELCOMER_GOO (place chutes, place city, bot intendant)
+{
+	cwzf03_dialog_icon_welcomer_goo	[Quoi ?! Vous me dites qu'il y avait un animal atteint par la Goo dans le secteur des $chutes$ ?! Tout ça semble très inquiétant. Vous devez tout de suite prévenir les autorités de $city$. Allez voir $intendant$, c'est une officielle, il faut qu'elle soit informée.]
+}
+
+CWZF03_DIALOG_REWARD (place cite)
+{
+	cwzf03_dialog_reward	[Qu'est-ce que vous me dites ?! Une créature infestée par la Goo dans les $cite$ ?! Cette affaire est de la plus haute importance. Je vous remercie pour l'information, les autorités vont mener l'enquête à ce sujet. Si tous les homins pouvaient être aussi vigilants que vous...]
+}
+
+CWZC01_TITLE (bot giver)
+{
+	cwzc01_title	[Des bottes pour étudier la Goo]
+}
+
+CWZC01_DESC (bot giver, bot intendant)
+{
+	cwzc01_desc	[$intendant$ a besoin de bottes.]
+}
+
+CWZC01_INSTRUCTIONS (bot intendant, bot player)
+{
+	cwzc01_instructions	[Bonjour $player$. Si vous avez des compétences en artisanat vous devriez aller voir $intendant$, je crois qu'elle aurait bien besoin de vos services.]
+}
+
+CWZC01_STEP1_PHRASE (bot intendant, bot givervar)
+{
+	cwzc01_step1_phrase	[Bonjour, $givervar$ m'envoie pour vous aider.]
+}
+
+CWZC01_DIALOG_INTENDANT ()
+{
+	cwzc01_dialog_intendant	[Vous êtes artisan ? Vous tombez bien. Vous n'êtes pas sans savoir que nous autres, Zoraïs, nous dévouons à la protection de notre planète Atys. Il existe un fléau qui ronge et corromp tout ce qu'il touche. Il s'agit de la Goo. Afin de lutter efficacement nous l'étudions. Mais pour nous protéger nous avons besoin de bottes solides lorsque nous traversons des champs infestés. En tant qu'artisan, vous nous rendriez un grand service en nous fournissant des paires de bottes.]
+}
+
+CWZC01_STEP2_OVERLOAD ()
+{
+	cwzc01_step2_overload	[Créez 5 paires de bottes légères de n'importe quel peuple (plan 1) de qualité au moins égale à 10]
+}
+
+CWZC01_STEP3_OVERLOAD (bot intendant)
+{
+	cwzc01_step3_overload	[Donner les bottes à $intendant$]
+}
+
+CWZC01_DIALOG_REWARD ()
+{
+	cwzc01_dialog_reward	[Ha c'est parfait. Avec ça nous allons pouvoir continuer nos études. Merci beaucoup.]
+}
+
+CWZC02_TITLE (bot giver)
+{
+	cwzc02_title	[Des masses pour les apprentis (1/2)]
+}
+
+CWZC02_DESC (bot giver, place city)
+{
+	cwzc02_desc	[La ville de $city$ a besoin de masses pour équiper les apprentis combatants.]
+}
+
+CWZC02_INSTRUCTIONS (bot chef)
+{
+	( self.gender = male )
+		cwzc02_instructions_m	[Ha vous êtes de retour. Je vois que vous êtes doué. Allez voir $chef$, le chef des gardes, je pense que vous pourriez lui être utile.]
+	( self.gender = female )
+		cwzc02_instructions_f	[Ha vous êtes de retour. Je vois que vous êtes douée. Allez voir $chef$, le chef des gardes, je pense que vous pourriez lui être utile.]
+}
+
+CWZC02_STEP1_PHRASE (bot chef)
+{
+	cwzc02_step1_phrase	[Bonjour, vous avez besoin de l'aide d'un artisan ?]
+}
+
+CWZC02_DIALOG_CHEF (faction tribu)
+{
+	cwzc02_dialog_chef	[Bonjour. Hmm, je ne sais pas qui vous a dit ça mais effectivement si vous êtes artisan j'aurais sans doute besoin de vos services. Les Kitins sont toujours là et nous avons sans arrêt besoin de nouvelles recrues. Pour les former nous leur prêtons des armes d'entraînement. Le problème est que nous commençons à en manquer sérieusement, les novices n'arrêtent pas de les casser. Vous pourriez nous en fabriquer quelques unes ?{break}Vous ne savez pas les fabriquer ? Ha c'est embêtant. Peut-être que les $tribu$ sauront vous apprendre la recette. Cette tribu est spécialisée dans l'artisanat. Vous devriez aller les voir.]
+}
+
+CWZC02_STEP2_PHRASE (bot chef_tribu)
+{
+	cwzc02_step2_phrase	[Bonjour, pourriez-vous m'apprendre à fabriquer des armes d'entrainement ?]
+}
+
+CWZC02_DIALOG_CHEF_TRIBU (place chutes)
+{
+	cwzc02_dialog_chef_tribu	[Et bien... Je peux en effet vous apprendre à fabriquer des armes d'entrainement. Toutefois, le savoir se mérite. Allez méditer dans la zone des $chutes$. Rapportez-moi une preuve que vous êtes bien allé là bas et je vous apprendrai ce que vous voulez.]
+}
+
+CWZC02_STEP3_OVERLOAD (place place_chute, place chutes)
+{
+	cwzc02_step3_overload	[Explorez les $chutes$ et méditez]
+}
+
+CWZC02_STEP4_SUCCESS_SYSMES ()
+{
+	cwzc02_step4_success_sysmes	[&AMB&Pendant que vous méditez, une perle violette apparait devant vous]
+}
+
+CWZC02_STEP4_OVERLOAD ()
+{
+	cwzc02_step4_overload	[Méditez sous la cascade]
+}
+
+CWZC02_DIALOG_REWARD ()
+{
+	cwzc02_dialog_reward	[Hmm, si vous avez trouvé une perle c'est que vous avez dû méditer suffisament longtemps sous la cascade. Je pense que vous méritez que je vous apprenne à fabriquer ce que vous souhaitez.]
+}
+
+CWZC02_REWARD_SYSMES ()
+{
+	cwzc02_reward_sysmes	[&AMB&Vous apprenez à fabriquer des masses d'entrainement]
+}
+
+CWZC03_TITLE (bot giver)
+{
+	cwzc03_title	[Des masses pour les apprentis (2/2)]
+}
+
+CWZC03_DESC (bot giver, place city)
+{
+	cwzc03_desc	[La ville de $city$ a besoin de masses pour équiper les apprentis combatants.]
+}
+
+CWZC03_STEP1_ROLEPLAY_1 (item i1, int qt1, int qual1, place city)
+{
+	cwzc03_step1_roleplay_1	[Fabriquer 5 masses d'entrainement à 2 mains pour les apprentis guerriers de $city$]
+}
+
+CWZC03_DIALOG_REWARD ()
+{
+	cwzc03_dialog_reward	[Ha vous revoila. Parfait, ces armes seront tout à fait adaptées à l'entrainement de nos nouvelles recrues.]
+}
+
+CWZH01_TITLE (bot giver)
+{
+	cwzh01_title	[De la mousse pour le vieux Zoraï]
+}
+
+CWZH01_DESC (bot giver, place escarpement, bot vieux)
+{
+	cwzh01_desc	[$vieux$ a besoin de mousse. Allez lui en chercher dans la zone de l'$escarpement$]
+}
+
+CWZH01_INSTRUCTIONS (place place_vieux, bot player)
+{
+	cwzh01_instructions	[Bonjour $player$. Il y a un vieux Zoraï un peu fou qui médite de temps en temps près d'un arbre dans le $place_vieux$. Vous devriez aller lui parler.]
+}
+
+CWZH01_STEP1_PHRASE (bot vieux)
+{
+	cwzh01_step1_phrase	[Bonjour. Vous avez besoin d'aide ?]
+}
+
+CWZH01_DIALOG_VIEUX (place escarpement, bot givervar)
+{
+	( self.gender = male )
+		cwzh01_dialog_vieux_m	[Hmmm... Que me voulez-vous jeune homin ? Ho, $givervar$ vous envoie ? Et bien... Puisque vous êtes-là vous allez peut-être effectivement pouvoir m'aider.{break}Voyez-vous, afin d'élever mon esprit dans les hautes sphères de la pensée cosmique je m'aide parfois de quelques...plantes. J'en aurait bien besoin de quelques unes mais malheureusement je suis bien trop vieux aller en chercher moi-même. Vous êtes jeune et vigoureux vous devriez y arriver sans problème. Vous trouverez de la mousse sur une butte dans la zone de l'$escarpement$]
+	( self.gender = female )
+		cwzh01_dialog_vieux_f	[Hmmm... Que me voulez-vous jeune homine ? Ho, $givervar$ vous envoie ? Et bien... Puisque vous êtes-là vous allez peut-être effectivement pouvoir m'aider.{break}Voyez-vous, afin d'élever mon esprit dans les hautes sphères de la pensée cosmique je m'aide parfois de quelques...plantes. J'en aurait bien besoin de quelques unes mais malheureusement je suis bien trop vieux aller en chercher moi-même. Vous êtes jeune et vigoureuse vous devriez y arriver sans problème. Vous trouverez de la mousse sur une butte dans la zone de l'$escarpement$]
+}
+
+CWZH01_DIALOG_REWARD ()
+{
+	cwzh01_dialog_reward	[Ho parfait parfait. Je vais pouvoir atteindre les plus hautes sphères de la pensée grâce à vous. Comment je fais ? Hmmm vous me semblez un peu trop jeune pour que je vous explique. Revenez dans quelques siècles. Hahaha ! Tenez prenez-ça, vous l'avez bien mérité.]
+}
+
+CWZH02_TITLE (bot giver)
+{
+	cwzh02_title	[Du fertilisant pour les jardins de Zora]
+}
+
+CWZH02_DESC (bot giver, bot jardinier)
+{
+	cwzh02_desc	[$jardinier$, le jardinier de Zora, a besoin de fertilisant.]
+}
+
+CWZH02_INSTRUCTIONS (place city, bot jardinier)
+{
+	cwzh02_instructions	[Vous tombez bien. Je crois que $jardinier$ le jardinier de $city$ aurait besoin de votre aide.]
+}
+
+CWZH02_STEP1_PHRASE (bot jardinier, bot givervar)
+{
+	cwzh02_step1_phrase	[Bonjour. $givervar$ m'envoie.]
+}
+
+CWZH02_DIALOG_JARDINIER (place mare)
+{
+	cwzh02_dialog_jardinier	[Ha bonjour. Vous tombez bien. J'ai vraiment du mal à faire pousser mes plantes en ce moment. J'aurais bien besoin de fertiliser mon écorce. Ca m'embête un peu de vous demander ça...mais pourriez-vous me rapporter...des crottes de Mektoub... Je pourrais demander à l'étable mais celle que l'on trouve dans la nature sont de bien meilleure qualité pour les plantes. Vous devriez chercher autour de la $mare$ c'est là que vous aurez le plus de chance d'en trouver.]
+}
+
+CWZH02_DIALOG_REWARD ()
+{
+	cwzh02_dialog_reward	[Ha très bien. Ces excréments seront parfaits, avec ça mes plantes devraient pousser sans problème. Merci beaucoup.]
+}
+
+CWZH03_TITLE (bot giver)
+{
+	cwzh03_title	[Des perles pour le bijoutier]
+}
+
+CWZH03_DESC (bot giver, bot bijoutier)
+{
+	cwzh03_desc	[$bijoutier$ a beoin de perles pour confectionner des bijoux.]
+}
+
+CWZH03_INSTRUCTIONS (bot bijoutier, bot player)
+{
+	cwzh03_instructions	[Ha $player$ vous tombez bien. Mon ami $bijoutier$ est bijoutier. Il est venu me voir en me disant qu'il avait grand besoin de matières premières. S'il vous plait, pourriez-vous aller le voir ?]
+}
+
+CWZH03_STEP1_PHRASE (bot bijoutier, bot givervar)
+{
+	cwzh03_step1_phrase	[Bonjour. $givervar$ m'envoie.]
+}
+
+CWZH03_DIALOG_BIJOUTIER (place chutes)
+{
+	cwzh03_dialog_bijoutier	[Ha je savais qu'en m'adressant à elle j'aurais vite quelqu'un pour m'aider. Voyez-vous, un riche client vient de me faire une commande de bijoux enchantés. Ces bijoux sont très spéciaux et ils nécessitent l'utilisation de perles que l'on ne trouve que dans les $chutes$. Je ne pourrais pas honorer la commande à moins que vous ne m'en rapportiez suffisament. Attention, la qualité de ces perles doit être de choix, sinon je ne pourrai rien en faire.]
+}
+
+CWZH03_DIALOG_REWARD ()
+{
+	cwzh03_dialog_reward	[Merci beaucoup. Ces perles sont magnifiques ! Mon client sera ravi.]
+}
+
+CWTAMPONZORAI_TITLE (bot giver, place city)
+{
+	cwtamponzorai_title	[Aider les habitants de $city$]
+}
+
+CWTAMPONZORAI_DESC (bot giver, bot givervar)
+{
+	cwtamponzorai_desc	[$givervar$ a sans doute d'autres missions pour vous]
+}
+
+CWTAMPONZORAI_STEP1_OVERLOAD_1 (bot givervar)
+{
+	cwtamponzorai_step1_overload_1	[Retourner voir si $givervar$ a d'autres missions à vous confier]
+}
+
+CWINTROZORAIFIN_TITLE (bot giver, place city)
+{
+	cwintrozoraifin_title	[Arrivé à $city$ (suite...)]
+}
+
+CWINTROZORAIFIN_DESC (bot giver, place city, bot givervar)
+{
+	cwintrozoraifin_desc	[Vous avez bien aidé $city$ et ses habitants. $givervar$ voudrait vous montrer le reste de la ville]
+}
+
+CWINTROZORAIFIN_STEP1_PHRASE (bot givervar)
+{
+	cwintrozoraifin_step1_phrase	[Avez-vous quelque chose d'autre à me faire faire ?]
+}
+
+CWINTROZORAIFIN_DIALOG_WELCOMER (bot player, bot sage)
+{
+	cwintrozoraifin_dialog_welcomer	[Très bien $player$. Vous avez déjà rendu bien des services à notre ville. Il est temps pour vous de rencontrer des personnalités importantes.{break}Vous allez tout d'abord vous rendre chez l'agent chargé des formalités d'admissions à la citoyenneté, puis au maïtre des guildes. Une fois celà fait, vous pourrez aller voir un gardien d'immeuble qui vous offrira la possibilité d'acheter un appartement. Enfin, je vous propose d'aller vous présenter à $sage$ notre Sage. Il connaît les clefs qui mènent à la connaissance et saura vous guider sur le chemin du savoir... Si vous le désirez.]
+}
+
+CWINTROZORAIFIN_STEP2_PHRASE (bot citizen, bot givervar)
+{
+	cwintrozoraifin_step2_phrase	[Bonjour, $givervar$ m'envoie au sujet de la citoyenneté]
+}
+
+CWINTROZORAIFIN_DIALOG_CITIZEN (bot player, race race)
+{
+	( self.gender = male )
+		cwintrozoraifin_dialog_citizen_m	[Ha bonjour $player$. Vous voulez que je vous parle de la citoyenneté ? C'est très simple, une fois que vous avez rendu suffisament de services au peuple $race$ et que vous vous êtes forgé une bonne réputation, vous pouvez passer un test permettant d'obtenir officielement la nationalité $race$. Vous pourrez venir me voir si vous désirez passer ce test lorsque vous serez prêt.]
+	( self.gender = female )
+		cwintrozoraifin_dialog_citizen_f	[Ha bonjour $player$. Vous voulez que je vous parle de la citoyenneté ? C'est très simple, une fois que vous avez rendu suffisament de services au peuple $race$ et que vous vous êtes forgée une bonne réputation, vous pouvez passer un test permettant d'obtenir officielement la nationalité $race$. Vous pourrez venir me voir si vous désirez passer ce test lorsque vous serez prête.]
+}
+
+CWINTROZORAIFIN_POPUP_CITIZEN_TITLE ()
+{
+	cwintrozoraifin_popup_citizen_title	[La citoyenneté]
+}
+
+CWINTROZORAIFIN_POPUP_CITIZEN ()
+{
+	cwintrozoraifin_popup_citizen	[Vous pouvez passer un rite de citoyenneté lorsque votre réputation à atteint le niveau 30 pour un peuple. \n \nVous pouvez prétendre à n'importe quelle citoyenneté quelle que soit votre race (par exemple un Fyros pourra devenir citoyen Tryker si sa réputation est au moins égale à 30 pour cette nation et sous condition de réussite au rite). \n \nUn personnage ne peut avoir qu'une seule nationalité à la fois. S'il désire changer, il doit renoncer à sa citoyenneté actuelle en allant voir le magistrat de sa civilisation d'allégence. \n \nLa citoyenneté offre divers avantage comme la possibilité d'augmenter sa réputation dans sa nation, ou encore accéder à certaines quêtes.]
+}
+
+CWINTROZORAIFIN_STEP3_PHRASE (bot guildmaster, bot givervar)
+{
+	cwintrozoraifin_step3_phrase	[Bonjour, $givervar$ m'envoie pour que vous me parliez des guildes]
+}
+
+CWINTROZORAIFIN_DIALOG_GUILD (bot player)
+{
+	cwintrozoraifin_dialog_guild	[Bonjour $player$. Effectivement, si vous voulez créer une guilde c'est bien ici que ça se passe. Tout ce que vous avez à faire est de choisir un nom et un emblême. Vous pourrez ensuite inviter qui vous voudrez à vous rejoindre. Cependant vous ne pouvez appartenir qu'à une seule guilde à fois. Vous vous rendrez bien vite compte des avantage que vous obtiendrez à faire partie d'une telle communauté.]
+}
+
+CWINTROZORAIFIN_STEP4_OVERLOAD ()
+{
+	cwintrozoraifin_step4_overload	[Parler à l'un des gardiens d'immeuble de la ville]
+}
+
+CWINTROZORAIFIN_POPUP_GUILD_TITLE ()
+{
+	cwintrozoraifin_popup_guild_title	[Les guildes]
+}
+
+CWINTROZORAIFIN_POPUP_GUILD ()
+{
+	cwintrozoraifin_popup_guild	[Les guildes permettent aux joueurs qui en font partie de communiquer plus facilement entre eux grâce à un canal de discussion qui leur est dédié. \n \nMoyennant quelques dappers, une guilde peut également acquérir un appartement qui permettra à ses membres de se retrouver et d'entreposer des objets dans un coffre auquel seuls les officiers ont accès. \n \nEnfin une guilde a également la possibilité de contrôler un ou plusieurs avant-postes d'Atys. Ils permettent de forer certaines matières impossibles à récupérer autrement. Toutefois ces avant-postes sont limités en nombre, et il vous faudra sans doute vous battre contre d'autres guildes pour en obtenir un et le conserver.]
+}
+
+CWINTROZORAIFIN_STEP4_PHRASE (bot caretaker1, bot givervar)
+{
+	cwintrozoraifin_step4_phrase	[Bonjour. $givervar$ m'envoie pour que vous me parliez des appartements]
+}
+
+CWINTROZORAIFIN_STEP4_BOTCHAT (bot player)
+{
+	cwintrozoraifin_step4_botchat	[Bonjour $player$. Je peux vous permettre d'acheter un appartement dans notre ville. Vous pourrez y entreposer de l'équipement et des objets que vous ne voulez pas emporter avec vous lors de vos aventures.{break}Attention vous ne pouvez avoir qu'un seul appartement à fois, si vous voulez changer son emplacement, vous perdrez ce que contient le précédent.]
+}
+
+CWINTROZORAIFIN_STEP5_PHRASE (bot sage, bot givervar, bot player)
+{
+	cwintrozoraifin_step5_phrase	[Bonjour, $givervar$ m'envoie me présenter à vous. Je m'appelle $player$]
+}
+
+CWINTROZORAIFIN_DIALOG_SAGE (place city, bot givervar)
+{
+	cwintrozoraifin_dialog_sage	[Ainsi, vous souhaitez en apprendre plus sur le monde, hein ? Je vais donc vous parler du coffre de la sagesse.{break}Ce coffre représente la somme de nos connaissances, c'est le grand réceptacle de stockage des cubes d'ambre.{break}Il y a bien longtemps maintenant que les homins ont découvert la magie des cubes. C'était alors qu'ils cherchaient un moyen de préserver leurs connaissances du temps et du feu. Ils ont appris à façonner l'ambre et à y intégrer leurs connaissances de la même manière qu'un insecte pris au piège dans la résine.{break}Tout homin souhaitant élever ses connaissances doit recevoir ou trouver des cubes d'ambre. Si $givervar$ vous envoie à moi, cela signifie que vous êtes de ceux qui ont soif de savoir.{break}Tels les homins initiés, mon travail m'a permis de détenir de nombreux cubes. Je les partage avec ceux qui réussissent les épreuves fixées par quelques initiés. Il est vrai que le savoir est un bien précieux et nous devons nous montrer prudents pour qu'ils ne tombent pas entre de mauvaises mains.{break}Vous avez fait preuve de votre désir d'explorer les sentiers du savoir et je vous en félicite.{break}En tant que gardien du savoir de $city$, c'est un honneur pour moi que de vous remettre ce cube en souvenir de ce que vous avez appris aujourd'hui.]
+}
+

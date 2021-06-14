@@ -1,0 +1,55 @@
+﻿R_11_10_MIS_TITLE (bot giver)
+{
+	r_11_10_mis_title	[L'épreuve de Cerakos]
+}
+
+R_11_10_MIS_DESC (bot giver)
+{
+	r_11_10_mis_desc	[Rendez hommage à Cerakos II et au développement de l'artisanat fyros en combattant des kitins dans les Dunes Impériales.]
+}
+
+R_11_10_P_LDC_INTRO_1 (race race_kipee)
+{
+	r_11_10_p_ldc_intro_1	[Bienvenue, homin. Veux-tu prouver ta valeur guerrière et ton attachement au peuple fyros ? Sans doute connais-tu le nom de Cerakos II, l'empereur qui a lutté vaillamment contre les kitins. Il a péri au combat, mais son sacrifice a permis à d'innombrables homins de s'échapper durant le grand Essaim. Grâce à lui, le savoir des enfants du désert a perduré, et les plus grands artisans fyros louent son nom chaque jour. {break} Comme ces artisans, rends hommage à Cerakos. Honore sa mémoire en abattant $race_kipee.pda$ $race_kipee.p$ qui hantent les Dunes impériales. Alors, je te transmettrai un secret de fabrication connu des anciens, secret qui est parvenu jusqu'à nous grâce à l'empereur. {break}Pour t'aider, je te donne les noms de plusieurs chasseurs que tu trouveras dans la cité. Ils ont souvent combattu les kitins. Parle-leur des différentes espèces de $race_kipee.p$ vivant dans la région, ils t'en diront plus à leur sujet.]
+}
+
+R_11_10_P_T2_CHASSEUR_1 (bot chasseur_1, creature_model creature_to_kill_1)
+{
+	r_11_10_p_t2_chasseur_1	[Je souhaite en apprendre plus sur les $creature_to_kill_1.p$.]
+}
+
+R_11_10_P_T2_CHASSEUR_1_1 (creature_model creature_to_kill_1, race race_kipee)
+{
+	r_11_10_p_t2_chasseur_1_1	[La chose la plus importante qu'il te faut savoir, c'est que tous les kitins sont dangereux ! Certains semblent inoffensifs, mais il ne faut pas s'y fier... {break}Parmi les $race_kipee.p$ que l'on peut rencontrer aux alentours, $creature_to_kill_1.da$ $creature_to_kill_1$ est la proie la plus facile. Abats-en au moins un pour estimer ses forces et ses faiblesses.]
+}
+
+R_11_10_P_T2_CHASSEUR_2 (bot chasseur_2, creature_model creature_to_kill_2, bot givervar)
+{
+	r_11_10_p_t2_chasseur_2	[$givervar$ m'envoie discuter avec vous des $creature_to_kill_2.p$.]
+}
+
+R_11_10_P_T2_CHASSEUR_2_1 (creature_model creature_to_kill_2, bot givervar, race race_kipee)
+{
+	r_11_10_p_t2_chasseur_2_1	[Ah ah, si tu es ici, c'est que $givervar$ t'envoie accomplir une chasse aux $race_kipee.p$ ! Ces créatures infestent la région, il faut réagir ! Je vais t'indiquer où on peut trouver des $creature_to_kill_2.p$. Méfie-toi, ils peuvent être difficiles à abattre.]
+}
+
+R_11_10_P_T2_CHASSEUR_3 (bot chasseur_3, creature_model creature_to_kill_3)
+{
+	r_11_10_p_t2_chasseur_3	[Pouvez-vous me parler des $creature_to_kill_3.p$ ?]
+}
+
+R_11_10_P_T2_CHASSEUR_3_1 (bot givervar)
+{
+	r_11_10_p_t2_chasseur_3_1	[Ce sont des adversaires très dangereux. Tu veux les combattre ? Je présume que c'est $givervar$ qui te le demande, afin d'honorer le souvenir de l'empereur Cerakos. Tous mes voeux t'accompagnent ! Fie-toi à ta boussole pour trouver ce que tu recherches. Abats l'une de ces créatures et retourne voir $givervar$.]
+}
+
+R_11_10_P_T2_DEBRIEF_1 (bot giver)
+{
+	r_11_10_p_t2_debrief_1	[Ma chasse est terminée.]
+}
+
+R_11_10_P_BC_REPORT ()
+{
+	r_11_10_p_bc_report	[Je suis impressionné, tu as combattu vaillamment : tu t'es montré digne de la mémoire de Cerakos. Ce que je te donne maintenant est la récompense pour ceux qui ont passé l'épreuve. Apprends le secret de la solidité des objets Fyros. Lorsque tu utiliseras ce savoir, le souvenir inaltérable de l'empereur sera insufflé dans tes créations.]
+}
+

@@ -178,6 +178,41 @@ MIS_CRAFT_6 (item i1, int qt1,int ql1, item i2, int qt2,int ql2, item i3, int qt
 
 }
 
+MIS_CRAFT_NPC_1 (item i, int qt, int ql, int qtt, bot b)
+{
+		mis_craft_npc_1	[Craft:\n
+		- $qt$ $i$ of at least quality $ql$\n
+		Give:\n
+		- $qtt$ $i$ of at least quality $ql$]
+
+}
+
+MIS_CRAFT_NPC_2 (item i1, int qt1, int ql1, int qtt1, item i2, int qt2, int ql2, int qtt2, bot b )
+{
+		mis_craft_npc_2	[Créez :\n
+			- $qt1$ $i1$ of at least quality $ql1$.\n
+			- $qt2$ $i2$ of at least quality $ql2$.\n
+			Donnez :\n
+			- $qtt1$ $i1$ of at least quality $ql1$.\n
+			- $qtt2$ $i2$ of at least quality $ql2$.\n
+			à $b$]
+
+}
+
+MIS_CRAFT_NPC_3 (item i1, int qt1, int ql1, int qtt1, item i2, int qt2, int ql2, int qtt2, item i3, int qt3, int ql3, int qtt3, bot b )
+{
+		mis_craft_npc_3	[Créez :\n
+			- $qt1$ $i1$ of at least quality $ql1$\n
+			- $qt2$ $i2$ of at least quality $ql2$\n
+			- $qt3$ $i3$ of at least quality $ql3$
+			Donnez :\n
+			- $qtt1$ $i1$ of at least quality $ql1$\n
+			- $qtt2$ $i2$ of at least quality $ql2$\n
+			- $qtt3$ $i3$ of at least quality $ql3$\n
+			à $b$]
+
+}
+
 //talk to specific bot---------------------------------------------------------------------------
 MIS_TALK_TO(bot b)
 {
@@ -192,7 +227,7 @@ MIS_TALK_TO_MENU(bot b)
 //kill fauna------------------------------------------------------------------------------------
 MIS_KILL_FAUNA_1(creature_model c1,int q1)
 {
-	(q1 = 1) 
+	(q1 = 1)
 		mis_kill_fauna_1	[Eliminez $q1$ $c1$]
 
 		mis_kill_fauna_1_p	[Eliminez $q1$ $c1.p$]
@@ -1056,7 +1091,7 @@ MIS_BUY_NPC_4(item i1, int q1, int ql1, item i2, int q2, int ql2, item i3, int q
 								 - $q3$ $i3$ of at least quality $ql3$\n
 								 - $q4$ $i4$ of at least quality $ql4$\n
 								 from $b$]
-}	
+}
 
 //escort npc group------------------------------------------------------------------
 MIS_ESCORT()
@@ -1339,7 +1374,7 @@ MIS_WEAR_4(item i1, item i2, item i3, item i4)
 }
 
 /////////////////////////////////MENUS//////////////////////////////////////////////////////
-	
+
 //generic mission teleport menu------------------------------------------------------------
 MIS_TELEPORT(place p)
 {
@@ -1372,7 +1407,7 @@ MIS_RECV_ITEM(item i, int qt, int ql)
 {
 	(qt = 1)
 		mis_recv_item_1 [You received $i.ia$ $i$ of quality $ql$]
-		
+
 	mis_recv_item_some [You received $qt$ $i.p$ of quality $ql$]
 }
 
@@ -1381,7 +1416,7 @@ MIS_RECV_NAMED_ITEM(dyn_string_id id, int qt)
 {
 	(qt = 1)
 		mis_recv_named_item_1 [You received '$id$']
-		
+
 	mis_recv_named_item_some [You received $qt$ '$id$']
 }
 
@@ -1390,7 +1425,7 @@ MIS_DESTROY_ITEM(bot b, item i, int qt, int ql)
 {
 	(qt = 1)
 		mis_destroy_item_1 [$b$ vous a pris $i.ia$ $i$ de qualité $ql$ ou plus]
-		
+
 	mis_destroy_item_some [$b$ vous a pris $qt$ $i.p$ de qualité $ql$ ou plus]
 }
 
@@ -1399,25 +1434,25 @@ MIS_RECV_ITEM_NPC(item i, int qt, int ql, bot b)
 {
 	(qt = 1)
 		mis_recv_item_npc_1 [$b$ gives you $i.ia$ $i$ of quality $ql$]
-		
+
 	mis_recv_item_npc_some [$b$ gives you $qt$ $i.p$ of quality $ql$]
 }
 
 //generic receive action---------------------------------------------------------------------------
 MIS_RECV_ACTION_1(sphrase a1)
-{	
+{
 	mis_recv_action_1	[You learn $a1$]
 }
 
 MIS_RECV_ACTION_2(sphrase a1, sphrase a2)
-{	
+{
 	mis_recv_action_2	[You learn :\n
 						 - $a1$\n
 						 - $a2$]
 }
 
 MIS_RECV_ACTION_3(sphrase a1, sphrase a2, sphrase a3)
-{	
+{
 	mis_recv_action_3	[You learn :\n
 						 - $a1$\n
 						 - $a2$\n
@@ -1425,7 +1460,7 @@ MIS_RECV_ACTION_3(sphrase a1, sphrase a2, sphrase a3)
 }
 
 MIS_RECV_ACTION_4(sphrase a1, sphrase a2, sphrase a3, sphrase a4)
-{	
+{
 	mis_recv_action_4	[You learn :\n
 						 - $a1$\n
 						 - $a2$\n
@@ -1435,19 +1470,19 @@ MIS_RECV_ACTION_4(sphrase a1, sphrase a2, sphrase a3, sphrase a4)
 
 //generic receive action from specific NPC-------------------------------------------------------------
 MIS_RECV_ACTION_NPC_1(sphrase a1, bot b)
-{	
+{
 	mis_recv_action_npc_1	[$b$ teaches you $a1$]
 }
 
 MIS_RECV_ACTION_NPC_2(sphrase a1, sphrase a2, bot b)
-{	
+{
 	mis_recv_action_npc_2	[$b$ teaches you :\n
 							 - $a1$\n
 							 - $a2$]
 }
 
 MIS_RECV_ACTION_NPC_3(sphrase a1, sphrase a2, sphrase a3, bot b)
-{	
+{
 	mis_recv_action_npc_3	[$b$ teaches you :\n
 							 - $a1$\n
 							 - $a2$\n
@@ -1455,7 +1490,7 @@ MIS_RECV_ACTION_NPC_3(sphrase a1, sphrase a2, sphrase a3, bot b)
 }
 
 MIS_RECV_ACTION_NPC_4(sphrase a1, sphrase a2, sphrase a3, sphrase a4, bot b)
-{	
+{
 	mis_recv_action_npc_4	[$b$ teaches you :\n
 							 - $a1$\n
 							 - $a2$\n
@@ -1465,19 +1500,19 @@ MIS_RECV_ACTION_NPC_4(sphrase a1, sphrase a2, sphrase a3, sphrase a4, bot b)
 
 //generic receive brick---------------------------------------------------------------------------
 MIS_RECV_BRICK_1(sbrick b1)
-{	
+{
 	mis_recv_brick_1	[You learn $b1$]
 }
 
 MIS_RECV_BRICK_2(sbrick b1, sbrick b2)
-{	
+{
 	mis_recv_brick_2	[You learn :\n
 						 - $b1$\n
 						 - $b2$]
 }
 
 MIS_RECV_BRICK_3(sbrick b1, sbrick b2, sbrick b3)
-{	
+{
 	mis_recv_brick_3	[You learn :\n
 						 - $b1$\n
 						 - $b2$\n
@@ -1485,7 +1520,7 @@ MIS_RECV_BRICK_3(sbrick b1, sbrick b2, sbrick b3)
 }
 
 MIS_RECV_BRICK_4(sbrick b1, sbrick b2, sbrick b3, sbrick b4)
-{	
+{
 	mis_recv_brick_4	[You learn :\n
 						 - $b1$\n
 						 - $b2$\n
@@ -1493,21 +1528,21 @@ MIS_RECV_BRICK_4(sbrick b1, sbrick b2, sbrick b3, sbrick b4)
 						 - $b4$]
 }
 
-//generic receive action from specific NPC-------------------------------------------------------------
+//generic receive brick from specific NPC-------------------------------------------------------------
 MIS_RECV_BRICK_NPC_1(sbrick b1, bot b)
-{	
+{
 	mis_recv_brick_npc_1	[$b$ teaches you $b1$]
 }
 
 MIS_RECV_BRICK_NPC_2(sbrick b1, sbrick b2, bot b)
-{	
+{
 	mis_recv_brick_npc_2	[$b$ teaches you :\n
 							 - $b1$\n
 							 - $b2$]
 }
 
 MIS_RECV_BRICK_NPC_3(sbrick b1, sbrick b2, sbrick b3, bot b)
-{	
+{
 	mis_recv_brick_npc_3	[$b$ teaches you :\n
 							 - $b1$\n
 							 - $b2$\n
@@ -1515,13 +1550,74 @@ MIS_RECV_BRICK_NPC_3(sbrick b1, sbrick b2, sbrick b3, bot b)
 }
 
 MIS_RECV_BRICK_NPC_4(sbrick b1, sbrick b2, sbrick b3, sbrick b4, bot b)
-{	
+{
 	mis_recv_brick_npc_4	[$b$ teaches you :\n
 							 - $b1$\n
 							 - $b2$\n
 							 - $b3$\n
 							 - $b4$]
 }
+
+//generic remove brick---------------------------------------------------------------------------
+MIS_REMV_BRICK_1(sbrick b1)
+{
+	mis_remv_brick_1	[You unlearn $b1$]
+}
+
+MIS_REMV_BRICK_2(sbrick b1, sbrick b2)
+{
+	mis_remv_brick_2	[You unlearn :\n
+						 - $b1$\n
+						 - $b2$]
+}
+
+MIS_REMV_BRICK_3(sbrick b1, sbrick b2, sbrick b3)
+{
+	mis_remv_brick_3	[You unlearn :\n
+						 - $b1$\n
+						 - $b2$\n
+						 - $b3$]
+}
+
+MIS_REMV_BRICK_4(sbrick b1, sbrick b2, sbrick b3, sbrick b4)
+{
+	mis_remv_brick_4	[You unlearn :\n
+						 - $b1$\n
+						 - $b2$\n
+						 - $b3$\n
+						 - $b4$]
+}
+
+//generic remove brick from specific NPC-------------------------------------------------------------
+MIS_REMV_BRICK_NPC_1(sbrick b1, bot b)
+{
+	mis_remv_brick_npc_1	[$b$ unlearns you $b1$]
+}
+
+MIS_REMV_BRICK_NPC_2(sbrick b1, sbrick b2, bot b)
+{
+	mis_remv_brick_npc_2	[$b$ unlearns you :\n
+							 - $b1$\n
+							 - $b2$]
+}
+
+MIS_REMV_BRICK_NPC_3(sbrick b1, sbrick b2, sbrick b3, bot b)
+{
+	mis_remv_brick_npc_3	[$b$ unlearns you :\n
+							 - $b1$\n
+							 - $b2$\n
+							 - $b3$]
+}
+
+MIS_REMV_BRICK_NPC_4(sbrick b1, sbrick b2, sbrick b3, sbrick b4, bot b)
+{
+	mis_remv_brick_npc_4	[$b$ unlearns you :\n
+							 - $b1$\n
+							 - $b2$\n
+							 - $b3$\n
+							 - $b4$]
+}
+
 //generic receive xp--------------------------------------------------------------------------------
 MIS_RECV_XP(int xp)
 {
@@ -1552,7 +1648,7 @@ MIS_FAIL()
 ********************************************************************************************/
 
 /////////////////////////////////MENUS//////////////////////////////////////////////////////
-	
+
 DEFAULT_KILLED_CREATURE_TALKMENU(bot target, creature_model killed)
 {
 	default_killed_creature_talkmenu	[I killed $killed.ia$ $killed$.]
@@ -1673,6 +1769,10 @@ ANSWER_GROUP_NO ()
 	answer_group_no	[We're not interested.]
 }
 
+ANSWER_THANKS ()
+{
+	answer_thanks [Thank you!]
+}
 
 /////////////////////////////// Charge & outpost related ///////////////////////////////
 MIS_GAIN_CONTROL(place outpost_name)
@@ -1694,4 +1794,9 @@ MIS_CHARGE_POINT (int point_needed, int percent_realized)
 MIS_RECV_CHARGE_POINT (int nb_point)
 {
 	mis_recv_charge_point [Vous avez gagné $nb_point$ point(s) de charge pour votre guilde.]
+}
+
+ANSWER_NO_DISCOUNT ()
+{
+	answer_no_discount [No discount? Never mind, I will come back later.]
 }

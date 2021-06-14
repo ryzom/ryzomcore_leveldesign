@@ -1,0 +1,50 @@
+﻿R_05_21_MIS_TITLE (bot giver, race creature)
+{
+	r_05_21_mis_title	[Le pistage des $creature.p$]
+}
+
+R_05_21_MIS_DESC (bot giver, race creature, place lieu_outlawcanyon)
+{
+	r_05_21_mis_desc	[Pister et localiser de nouveaux troupeaux d'$creature.p$ dans la région de $lieu_outlawcanyon$]
+}
+
+R_05_21_P_LDC_INTRO (bot chasseur, race creature, place lieu_outlawcanyon)
+{
+	r_05_21_p_ldc_intro	[Vous tombez bien, $self$ ! Vous me semblez être une personne d'expérience. J'ai besoin d'un éclaireur qui n'a pas peur de s'aventurer dans les régions sauvages.{break}En fait, nos chasseurs cherchent de nouveaux troupeaux d'$creature.p$ dans la région de $lieu_outlawcanyon$, vous allez donc partir en quête de ces créatures.{break}$creature.pda$ $creature.p$ sont des herbivores, et donc des créatures plutôt pacifiques... mais ils vivent dans des régions particulièrement dangereuses. {break}Je ne vous demande pas de chasser $creature.pia$ $creature.p$, mais juste de repérer leurs troupeaux. S'il vous venait à l'idée de vous attaquer à eux, sachez que $creature.pda$ $creature.p$ sont solidaires les uns des autres. Pire que cela, $creature.pda$ $creature.p$ ont pour habitude de protéger d'autres espèces que la leur, comme certains herbivores ou volatiles.{break}Soyez donc prudent, et ne sous-estimez pas leurs réactions. Quand vous aurez fait votre repérage, allez faire un rapport à $chasseur$, c'est l'une de nos meilleures chasseuses. Vous la trouverez au sud de Pyr, aux alentours de la ville. Vous reviendrez me voir par la suite. En récompense de vos services, je vous apprendrai une technique de défense magique fyros.]
+}
+
+R_05_21_P_T2_RAPPORT_01 (bot chasseur, race creature, place lieu_outlawcanyon)
+{
+	r_05_21_p_t2_rapport_01	[J'ai repéré $creature.pia$ $creature.p$ dans $lieu_outlawcanyon$]
+}
+
+R_05_21_P_BC_RAPPORT_01 (race creature, creature_model creature_04, place lieu_outlawcanyon)
+{
+	r_05_21_p_bc_rapport_01	[Ah, très bien ! Vous avez localisé plusieurs races d'$creature.p$, mais vous n'avez pas repéré celle qui représente la meilleure proie pour un chasseur expérimenté... Il faut que vous pistiez du gibier un peu plus gros !{break}Retournez à $lieu_outlawcanyon$, et débusquez $creature_04.ia$ $creature_04$. Ensuite, revenez me voir. Bonne chance, $self$ !]
+}
+
+R_05_21_P_T2_RAPPORT_02 (bot chasseur, creature_model creature_04, place lieu_outlawcanyon)
+{
+	r_05_21_p_t2_rapport_02	[J'ai repéré $creature_04.ia$ $creature_04$ dans $lieu_outlawcanyon$]
+}
+
+R_05_21_P_BC_RAPPORT_02 (bot givervar)
+{
+	r_05_21_p_bc_rapport_02	[Parfait, du nouveau gibier ! Bon travail, $self$, vous pouvez retourner voir $givervar$ !]
+}
+
+R_05_21_P_OVL_DEBRIEF (bot givervar)
+{
+	r_05_21_p_ovl_debrief	[Retourner voir $givervar$]
+}
+
+R_05_21_P_T2_DEBRIEF (bot givervar)
+{
+	r_05_21_p_t2_debrief	[J'ai accompli ma mission]
+}
+
+R_05_21_P_BC_DEBRIEF (race creature)
+{
+	r_05_21_p_bc_debrief	[Je ne doutais pas de vos compétences, $self$. En plus de la technique magique que je vous ai promise, je vais vous récompenser avec ce cube d'ambre, il vous en apprendra beaucoup sur $creature.pda$ $creature.p$. Que la chance vous accompagne dans vos voyages futurs !]
+}
+

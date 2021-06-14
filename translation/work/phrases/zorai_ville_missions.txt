@@ -1,0 +1,680 @@
+﻿//////////////////Zorai ville missions/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Mission 01 : KNOWLEDGE MISSION
+/*
+ZV_KNOWLEDGE_MIS_01
+*/
+ZV_KNOWLEDGE_MIS_01_TITLE (bot giver)
+{
+	zv_knowledge_mis_01_title	[An unexpected alliance]
+
+}
+
+ZV_KNOWLEDGE_MIS_01_DESC (bot giver)
+{
+	zv_knowledge_mis_01_desc	[Une alliance inattendue entre Karavan et Kamis va vous être contée.]
+
+}
+
+ZV_KNOWLEDGE_MIS_01_STEP_1 (bot target, place place_hoi_cho)
+{
+//Dialogue sage
+	zv_knowledge_mis_01_step_1			[Love the Karavan for their wisdom stem from the initial but elementary teachings of Jena.{break}
+							It is for this reason that they are jealous of the Kami protectors who have been sent with greater
+							spiritual insight and the duty to protect our environment. But if they could come together as
+							sometimes they did during the fight against the kitins, what harmony this would bring to the world!\n
+							$target$ a vécu l'un de ces moments, où Karavan et Kamis se sont rejoints. Va la voir, et demande-lui
+							de te raconter son histoire. Les anciens aiment être dérangés par ceux qui ont soif de connaissance.
+							Elle vit maintenant au village de $place_hoi_cho$.]
+
+}
+
+ZV_KNOWLEDGE_MIS_01_STEP_2 (bot previous)
+{
+//Dialogue vieille femme
+	zv_knowledge_mis_01_step_2			[Oh, comment va $previous$ ? Mieux que moi je l'espère. Ouch ! J'ai attrapé une vilaine fièvre en récoltant
+							des herbes dans la jungle, et j'ai du mal à m'en remettre.{break} Mes articulations me font terriblement souffrir...
+							Ainsi, tu es curieux d'en savoir plus sur ce que j'ai vécu au temps de la grande invasion ?\n
+							I was in a group led by my grandmother in that terrible year of 2481. We were fleeing the kitin
+							armies when we came face to face with a group of three kitin scouts who blocked our path. Our
+							Karavan Guardians who were conducting us to the rainbow struggled to protect us and we were being
+							pushed back towards the main pack...\n
+							Ouch ! Excuse-moi, ces douleurs sont vraiment éprouvantes... où en étais-je ?]
+
+}
+
+ZV_KNOWLEDGE_MIS_01_TALKMENU_1 (bot giver)
+{
+//Menu pour parler à la vieille femme
+	zv_knowledge_mis_01_talkmenu_1			[Vous étiez poussés vers la horde...]
+
+}
+
+ZV_KNOWLEDGE_MIS_01_STEP_3 (player p, bot target)
+{
+//Dialogue vieille femme
+	zv_knowledge_mis_01_step_3			[Ah, oui !\n
+							But then there appeared a Kami who cast a spell of distraction to divert the monsters from the Karavan Guardians
+							allowing them to get a clear shot.{break} Together they got the better of the monsters, but the main pack
+							of the legion was already in sight and moving in fast!\n
+							Aow ! Je suis désolée, mais je ne tiens plus, il me faut une nouvelle dose de mon remède ! $p$, serais-tu assez aimable pour m'en
+							rapporter ? $target$ doit encore en avoir une bouteille, c'est lui qui le fabrique. Tiens, voici de
+							quoi le payer. Grand merci !]
+
+}
+
+ZV_KNOWLEDGE_MIS_01_TALKMENU_2 (bot giver, bot previous)
+{
+//Menu pour parler au marchand
+	zv_knowledge_mis_01_talkmenu_2			[$previous$ m'envoie, pour son remède.]
+
+}
+
+ZV_KNOWLEDGE_MIS_01_STEP_4 (item mdobfblai01)
+{
+//Dialogue marchand
+	zv_knowledge_mis_01_step_4			[Son remède ?.. Hmm, cela tombe mal, je viens de promettre les deux dernières fioles à un autre client malade.
+							Je devrai changer de métier, mon remède devient trop populaire ! Mais
+							pas de panique ! J'ai pratiquement terminé la nouvelle... cuvée.{break} Il me manque juste l'ingrédient qui
+							lui donne ce goût si détestable. Car un bon remède se doit d'avoir un goût épouvantable ! Déniche-moi
+							quelques $mdobfblai01.p$, elles feront mon affaire, et je pourrai donc te vendre une fiole de mon élixir !]
+
+}
+
+ZV_KNOWLEDGE_MIS_01_GIVEMENU_1 (int item_count)
+{
+//Menu pour parler au marchand après avoir trouvé les larves
+	zv_knowledge_mis_01_givemenu_1			[Donner les larves.]
+
+}
+
+ZV_KNOWLEDGE_MIS_01_STEP_5 ()
+{
+//Dialogue marchand
+	zv_knowledge_mis_01_step_5			[Bien ! Parfait ! Sais-tu que, mélangées avec du pollen, ces larves sont un met appréciable ? Une alliance
+							inattendue entre deux ingrédients, qui s'avère fort judicieuse !{break}
+							Ma nouvelle cuvée sera prête d'ici quelques heures. Comme tu m'as aidé, je te vends
+							les deux dernières fioles de remède pour le prix d'une !]
+
+}
+
+ZV_KNOWLEDGE_MIS_01_STEP_6 (player p, bot previous)
+{
+//Dialogue marchand
+	zv_knowledge_mis_01_step_6			[Merci, $p$ ! Voici les fioles. $previous$ sera soulagée, grâce à toi ! Tu la salueras de ma part.
+							Et si à l'avenir, tu as quelques soucis de santé, n'hésite pas à venir me voir !{break} Mes remèdes font des
+							miracles ! Mais il ne faut pas en abuser...]
+
+}
+
+ZV_KNOWLEDGE_MIS_01_GIVEMENU_2 (int item_count)
+{
+//Menu pour parler à la vieille femme après avoir acheté les fioles
+	zv_knowledge_mis_01_givemenu_2			[Donner les deux fioles.]
+
+}
+
+ZV_KNOWLEDGE_MIS_01_END (player p)
+{
+// Dialogue vieille femme
+	zv_knowledge_mis_01_end				[Tu as réussi à avoir deux bouteilles ! Ah, je me sens revivre rien qu'en sentant l'odeur de cet
+							élixir !\n
+							Tu as été très charitable avec moi, $p$. Tu as bien mérité que je te raconte la fin de mon histoire.{break}\n
+							We huddled in the deep jungle vegetation as the three Guardians provoked the kitins to avoid
+							us being attacked. They lured them towards the precipice of the cliff a short distance beyond.
+							This was a clever ploy, for the kami had projected a mirage that bridged the ravine. As the kitins
+							were practically on them, at the last instant the Karavan Guardians teleported back to us and we
+							watched the whole kitin army topple to oblivion over the cliff as do sometimes capryni in the fog.]
+
+}
+
+//reward 1 action knowledge + fame zorai
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Mission group : FIGHT MISSION
+/*
+ZV_GROUP_01
+*/
+ZV_GROUP_01_TITLE (bot giver)
+{
+	zv_group_01_title		[The bandits lair.]
+
+}
+
+ZV_GROUP_01_DESC (bot giver)
+{
+	zv_group_01_desc		[Eliminate the bandits menace.]
+
+}
+
+ZV_GROUP_01_STEP_1 (bot target)
+{
+
+	zv_group_01_step_1		[We are searching for reinforcements to hepl us in our battle versus bandits.{break}
+							It's always a hard decision to have to fight against our fellow homins.\n
+							But even our people which have the stronger willpower on Atys are not always above corruption and covetousness.\n
+							Since few months the number of bandits in our regions is growing days after days.\n
+							According to our informants they have even associated with bandits from other poeple to reinforce their control on our land.\n
+							We must contain this menace!\n
+							For now they only attack and rob convoys and merchants but they could have political ambitions too.\n
+							$target$, the guard chief is making preparations for an expedition to the bandits lair.\n
+							Speak with him, he will tell you more.]
+
+}
+ZV_GROUP_01_STEP_2 (bot target)
+{
+
+	zv_group_01_step_2		[You are going to join us?\n
+							What a good news!{break}
+							A section of guards is about to start, go speak to $target$, he is the leader of the expedition.\n
+							The section is waiting outside the town, at the west entrance.]
+
+}
+ZV_GROUP_01_STEP_3 (bot target)
+{
+
+	zv_group_01_step_3		[Welcome brothers!\n
+							No time to lose, let's go!]
+
+}
+ZV_GROUP_01_STEP_4 (bot target)
+{
+
+	zv_group_01_step_4		[You made good work, the commercial convoys should travel without danger now.\n
+							But your mission is not finish.{break}
+							As you saw, some bandits were Matis ones.\n
+							During your expedition we discovered that their chief is a renegat commander of the great Matis army.\n
+							It seems that he is the kind of person who is prefering his personal enrichment instead of serving his people.\n
+							He was discovered when he was trying to buy a big quantity of weapons here, in our city.\n
+							We try to stop him but he ran away.\n
+							It just happened, he is probably still near the city, find him and make sure that he will be no longer a menace.\n
+							You will easily recognize him, he is dressed with an heavy matis armor.\n
+							He took the north entrance of the city.]
+
+}
+
+ZV_GROUP_01_END (bot target)
+{
+
+	zv_group_01_end			[I will report myself your exploit to our king.\n
+							With your help we were able to stop the bandits menace.{break}
+							Please take these rewards as a compensation for your help.\n
+							Be your spirit blessed.]
+
+}
+
+//rewards zv_group_01 start//
+REWARD_ZV_GROUP_01_HGLOVES ()
+{
+	reward_zv_group_01_hgloves		[Heavy gloves of weaponmaster.]
+
+}
+REWARD_ZV_GROUP_01_HBOOTS ()
+{
+	reward_zv_group_01_hboots		[Heavy boots of weaponmaster.]
+
+}
+REWARD_ZV_GROUP_01_HHELMET ()
+{
+	reward_zv_group_01_hhelmet		[Heavy helmet of weaponmaster.]
+
+}
+REWARD_ZV_GROUP_01_HPANTS ()
+{
+	reward_zv_group_01_hpants		[Heavy pants of weaponmaster.]
+
+}
+REWARD_ZV_GROUP_01_HSLEEVES ()
+{
+	reward_zv_group_01_hsleeves		[Heavy sleeves of weaponmaster.]
+
+}
+REWARD_ZV_GROUP_01_STAFF ()
+{
+	reward_zv_group_01_staff		[Staff of sap.]
+
+}
+REWARD_ZV_GROUP_01_SWORD ()
+{
+	reward_zv_group_01_sword		[Sword of thunder light.]
+
+}
+REWARD_ZV_GROUP_01_SWORD_2 ()
+{
+	reward_zv_group_01_sword_2		[Sword of quickness.]
+
+}
+
+//rewards zv_group_01 end
+
+/*
+ZV_FIGHT_1
+*/
+ZV_FIGHT_1_TITLE (bot giver, race estrasson)
+{
+	zv_fight_1_title	[Goo infected $estrasson.p$ invasion.]
+}
+
+ZV_FIGHT_1_DESC (bot giver, race estrasson, place city)
+{
+	zv_fight_1_desc		[$giver$ reports an invasion of goo infected $estrasson.p$ on the $city$. Kill them all
+						so goo doesn't spread.]
+}
+
+ZV_FIGHT_1_STEP_1 (race estrasson)
+{
+	zv_fight_1_step_1	[Hey, you ! I need help ! We report an invasion of goo infected $estrasson.p$ on the city.
+						my guards are snowed under at each gate ! You seem strong enough to hold the west one.
+						Quick, go there, kill this vermin and you'll be rewarded !]
+}
+
+ZV_FIGHT_1_MESSAGE_1(race estrasson, creature_model boss)
+{
+	zv_fight_1_message_1	[It seems the source of all of this is this big $boss$ that just has appeared.
+							It must have contaminated all the other $estrasson.p$, kill it !]
+}
+
+ZV_FIGHT_1_TALKMENU1 ()
+{
+	zv_fight_1_talkmenu1	[We killed them all]
+}
+
+ZV_FIGHT_1_END ()
+{
+	zv_fight_1_end		[This time we were close to the disaster. Thank you adventurers, I owe you one.
+						Thank you helping us fight this cursed plague. Here is a tip for your pain, and you can
+						also choose an object from this list.]
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+ZV_CRAFT_MIS_01
+*/
+ZV_CRAFT_MIS_01_TITLE (bot giver)
+{
+	zv_craft_mis_01_title		[The express crafter.]
+
+}
+
+ZV_CRAFT_MIS_01_DESC (bot giver)
+{
+	zv_craft_mis_01_desc			[Help $giver$ to craft a complete set of light armor.]
+
+}
+
+ZV_CRAFT_MIS_01_STEP_1 (bot target, player p)
+{
+
+	zv_craft_mis_01_step_1		[Hello $p$, you are exactly the people I need, you are known as a good and serious crafter.{break}
+								I am in a hurry, I have a pressing order to craft for the supplier of our town.\n
+								My assistant is gone to elevate his spirit at the contact of our sages and I am looking for someone to help me.\n
+								You have to know that I must deliver a complet set of armor but unfortunatly I haven't my crafting plans.\n
+								My assistant is gone with it by mistake.\n
+								You first have to find him, his name is $target$ and he is traveling from villages to villages for meating the sages.\n
+								But time is runing versus us and if I don't deliver quickly the armor to the supplier he will probably ask me no more merchandises\n
+								No time to lose, find $target$ now please.]
+
+}
+ZV_CRAFT_MIS_01_STEP_2 ()
+{
+
+	zv_craft_mis_01_step_2		[Oh yes I have got the plans.{break}
+								I am unforgivable, I was so excited with the idea of meating the sages of our civilization that I'm gone with it.\n
+								I am going to give it to you but you don't forget to bring them back once you have finish.]
+
+}
+ZV_CRAFT_MIS_01_STEP_3 (bot target)
+{
+
+	zv_craft_mis_01_step_3		[Thanks, go quicly see $target$ now.]
+
+}
+ZV_CRAFT_MIS_01_END (bot target)
+{
+
+	zv_craft_mis_01_end			[Congratulation! I can come up to the supplier's expectations now.{break}
+								Your help was precious, be sure that I will tell around me.\n
+								Take this nice reward.]
+
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Mission 02 : FIGHT MISSION
+/*
+ZV_FIGHT_MIS_02
+*/
+ZV_FIGHT_MIS_02_TITLE (bot giver)
+{
+	zv_fight_mis_02_title	[A strange disease]
+
+}
+
+ZV_FIGHT_MIS_02_DESC (bot giver)
+{
+	zv_fight_mis_02_desc	[Le groupe doit découvrir la source d'une étrange maladie et aider à la confection d'un remède.]
+
+}
+
+ZV_FIGHT_MIS_02_STEP_1 (bot_name target, place region_groveofumbra, place place_zora, bot stableboy)
+{
+//Dialogue counselor
+	zv_fight_mis_02_step_1				[J'ai besoin des services d'un groupe discret et expérimenté. Il y a un problème au niveau des écuries de
+							la ville, des animaux sont morts d'une maladie inconnue.{break} Certains symptômes semblent liés à la goo.
+							Nous ne savons pas si la maladie peut se transmettre aux homins, aussi devons-nous faire vite pour
+							trouver un remède ; mais les efforts de nos guérisseurs ont pour l'instant été voués à l'échec.
+							Aussi ai-je décidé de faire appel à quelqu'un d'autre... un guérisseur de la tribu du Cercle noir.
+							Il n'est pas dans nos habitudes de collaborer avec cette tribu, mais nous n'avons pas le choix...
+							Je vous demanderai donc de rester discrets. Portez cette lettre à $target$, dans la région de
+							$region_groveofumbra$. S'il accepte de nous aider, assistez-le dans sa tâche.\n
+							Avant de quitter $place_zora$, allez voir $stableboy$, aux écuries de la ville.
+							Il a quelque chose à vous remettre.]
+
+}
+
+ZV_FIGHT_MIS_02_STEP_2 (bot previous)
+{
+//Dialogue stableboy
+	zv_fight_mis_02_step_2				[Oh, ainsi $previous$ vous a engagé ! J'espère qu'avec votre aide, un remède sera découvert, je déteste
+							voir mes bêtes souffrir ! Les premiers animaux sont morts, et de nombreuses montures sont
+							malades...{break} je préfèrerais ne pas avoir à abattre toute mon écurie !
+							Prenez cette fiole, elle contient du sang venant d'une bête infectée. $previous$ m'a dit que cela serait
+							sans doute utile au guérisseur.\n
+							J'ai essayé de savoir quelle pouvait être la source de l'épidémie. Les premiers animaux qui sont morts
+							m'ont été vendus par un vieux Tryker. Il vit dans l'un des villages de notre région, et il
+							entretient des liens commerciaux avec de nombreux marchands. Quand vous en aurez la possibilité, essayez
+							d'en savoir plus à son sujet... mais d'abord, le remède ! Bonne chance !]
+
+}
+
+ZV_FIGHT_MIS_02_STEP_3 (bot counselor)
+{
+//Dialogue guérisseur
+	zv_fight_mis_02_step_3				[Des envoyés de $counselor$ ! Quel honneur... Nous recevons peu de visites ici, ce qui nous convient
+							tout à fait.{break} Peu d'homins comprennent la portée de leurs propres actes, aussi leur est-il impossible
+							de saisir l'ampleur de notre quête. La plupart sont terrorisés par la goo. Ils ne sont pas conscients
+							du pouvoir qu'elle recèle... Mais dites-moi ce qui vous amène.]
+
+}
+
+ZV_FIGHT_MIS_02_GIVEMENU_1 (int item_count)
+{
+//Menu pour donner lettre et fiole au guérisseur
+	zv_fight_mis_02_givemenu_1			[Donner la lettre et la fiole]
+
+}
+
+ZV_FIGHT_MIS_02_STEP_4 (bot counselor, place place_zora, item rm1, item rm2, item rm3)
+{
+//Dialogue guérisseur
+	zv_fight_mis_02_step_4			[Très intéressant. Une maladie inconnue liée à la goo... je comprends que $counselor$ soit inquiet. Imaginez
+							que l'épidémie s'étende à toute la région, et même aux homins...{break} Cela serait certes fascinant, mais
+							également très gênant si aucun remède n'est trouvé pour contrôler le phénomène. Et puis, il est difficile
+							de résister à l'envie de faire du pouvoir en place à $place_zora$ le débiteur de notre tribu. Je vais donc
+							vous aider.\n
+							Je pense pouvoir créer un remède. Mais je vais pour cela avoir besoin de quelques ingrédients. De la
+							$rm1$, $rm2.pia$ $rm2.p$, un peu de $rm3$. Trouvez-moi tout cela dès
+							que possible. Je vais maintenant étudier le sang que vous m'avez apporté.]
+
+}
+
+ZV_FIGHT_MIS_02_CUSTOM_OBJ_1 (item i1, int qt1,int ql1, item i2, int qt2,int ql2, item i3, int qt3,int ql3)
+{
+//Objectif
+	zv_fight_mis_02_custom_obj_1		[Forage :\n
+				 			- $qt1$ $i1$ of at least quality $ql1$\n
+						Loot :\n
+				 			- $qt2$ $i2$ of at least quality $ql2$\n
+				 			- $qt3$ $i3$ of at least quality $ql3$]
+
+}
+
+ZV_FIGHT_MIS_02_GIVEMENU_2 (int item_count)
+{
+//Menu pour donner les ingrédients au guérisseur
+	zv_fight_mis_02_givemenu_2			[Donner les ingrédients]
+
+}
+
+ZV_FIGHT_MIS_02_STEP_5 ()
+{
+//Dialogue guérisseur
+	zv_fight_mis_02_step_5				[Bien, je dois avoir tout ce qu'il me faut pour créer un remède efficace.{break}\n
+							Après avoir examiné le sang contaminé, j'ai de bonnes raisons de penser que cette maladie n'a pas
+							été causée directement par la goo. Des mains d'homins sont derrière cela. Avez-vous des informations
+							quant à l'origine de l'épidémie ?]
+
+}
+
+ZV_FIGHT_MIS_02_TALKMENU_1 (bot giver)
+{
+//Menu pour répondre au guérisseur
+	zv_fight_mis_02_talkmenu_1			[Un Tryker a vendu des bêtes malades]
+
+}
+
+ZV_FIGHT_MIS_02_STEP_6 ()
+{
+//Dialogue guérisseur
+	zv_fight_mis_02_step_6				[Pendant que je fabrique le remède, essayez d'en savoir plus sur ce Tryker.]
+
+}
+
+ZV_FIGHT_MIS_02_CUSTOM_OBJ_2 (bot giver)
+{
+//Objectif
+	zv_fight_mis_02_custom_obj_2			[Parler au négociant tryker.]
+
+}
+
+ZV_FIGHT_MIS_02_TALKMENU_2 (bot giver, bot target)
+{
+//Menu pour parler au Tryker
+	zv_fight_mis_02_talkmenu_2			[Avez-vous vendu des bêtes à $target$ ?]
+
+}
+
+ZV_FIGHT_MIS_02_STEP_7 (bot target)
+{
+//Dialogue Tryker
+	zv_fight_mis_02_step_7				[Disons plutôt que j'ai servi d'intermédiaire pour la transaction... J'ai entendu des rumeurs comme
+							quoi certains animaux seraient malades. Je n'y suis pour rien, les bêtes que j'ai négocié avaient
+							l'air en parfaite santé !{break} Je ne suis pas éleveur !\n
+							Je me suis occupé de la transaction pour un jeune zoraï, qui ne connaissait pas les tarifs en vigueur
+							et ne semblait guère enclin à marchander. Je n'allais pas laisser passer cette occasion... de rendre service !
+							Il voulait vendre tout son troupeau rapidement. Je lui ai donné satisfaction !\n
+							Attendez que je me rappelle... il s'appelait... $target$, oui, c'est ça, $target$. Je crois qu'il venait
+							de l'ouest. C'est tout ce que je sais.]
+
+}
+
+ZV_FIGHT_MIS_02_CUSTOM_OBJ_3 (bot giver, bot target)
+{
+//Objectif
+	zv_fight_mis_02_custom_obj_3			[Retrouver et parler à $target$.]
+
+}
+
+ZV_FIGHT_MIS_02_STEP_8 (place region_knotofdementia)
+{
+//Dialogue Zoraï
+	zv_fight_mis_02_step_8				[Pas... pas du tout. Je ne vois pas de quoi vous parlez ! De quel droit êtes-vous ici, au coeur de
+							$region_knotofdementia$ ?]
+
+}
+
+ZV_FIGHT_MIS_02_SYSTEM_MSG_1 (bot current)
+{
+//Systeme_msg dans le camp du Zoraï et de sa bande
+	zv_fight_mis_02_system_msg_1 			[$current$ échange des regards nerveux avec ses compagnons. Soudain il pousse un hurlement et
+							brandit son arme. Des yeux fous brillent derrière son masque.]
+
+}
+
+ZV_FIGHT_MIS_02_ZORAI_FIGHT ()
+{
+//Dialogue du Zoraï quand il attaque
+	zv_fight_mis_02_zorai_fight 			[A mort les ennemis de la goo ! A moi, mes frères illuminés !]
+
+}
+
+ZV_FIGHT_MIS_02_CUSTOM_OBJ_4 (string_id g1, place p, bot target)
+{
+//Objectif
+	zv_fight_mis_02_custom_obj_4			[Tuer $target$ et ses alliés]
+
+}
+
+ZV_FIGHT_MIS_02_SYSTEM_MSG_2 (bot_name target)
+{
+//Systeme_msg à la mort du groupe du Zoraï
+	zv_fight_mis_02_system_msg_2 			[Vous trouvez une fiole gravée remplie d'un liquide verdâtre sur le corps de $target$.]
+
+}
+
+ZV_FIGHT_MIS_02_GIVEMENU_3 (int item_count)
+{
+//Menu pour donner la fiole de poison au guérisseur
+	zv_fight_mis_02_givemenu_3			[Nous avons trouvé ceci.]
+
+}
+
+ZV_FIGHT_MIS_02_STEP_9 (bot counselor)
+{
+//Dialogue guérisseur
+	zv_fight_mis_02_step_9				[Hmm... le symbole de la tribu des Illuminés est gravé sur cette fiole. Leur but est de répandre la goo
+							dans tout le pays malade. Il n'est donc pas étonnant qu'ils soient derrière cette contamination.{break} Je décèle
+							toutefois une grande magie dans ce liquide, au pouvoir inhabituel...\n
+							Tenez, voici le remède demandé par $counselor$. Portez-le sans tarder au responsable des écuries. Je garde
+							l'autre fiole afin d'en apprendre davantage. Donnez cette lettre à $counselor$. Nous nous reverrons
+							peut-être...]
+
+}
+
+ZV_FIGHT_MIS_02_STEP_10 (bot counselor)
+{
+//Dialogue stableboy
+	zv_fight_mis_02_step_10				[Vous avez un remède ! Magnifique ! Je vais sur-le-champ l'administrer à mes bêtes ! $counselor$
+							va vous féliciter !]
+
+}
+
+ZV_FIGHT_MIS_02_END (bot target)
+{
+// Dialogue counselor
+	zv_fight_mis_02_end				[Parfait, vous avez mené votre mission à bien. Je ferai de nouveau appel à vous, si $target$ apprend
+							quelque chose au sujet de la fiole des Illuminés... et nous fait part de sa découverte. Recevez ceci
+							comme salaire de vos services.]
+
+}
+
+//reward 50000 + fame zorai + fame tribu Cercle noir
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+ZV_SUPPLY_MIS_01
+*/
+ZV_SUPPLY_MIS_01_TITLE (bot giver)
+{
+	zv_supply_mis_01_title			[Merchant's acreditations.]
+
+}
+
+ZV_SUPPLY_MIS_01_DESC (bot giver)
+{
+	zv_supply_mis_01_desc			[Give merchants their acreditations.]
+
+}
+
+ZV_SUPPLY_MIS_01_STEP_1 (player p, bot ishhi, bot yaza, bot safya, bot ychiao, bot gohyfio, place Hoi_cho, place Jen_lai, place Min_cho)
+{
+
+	zv_supply_mis_01_step_1			[Hello $p$, as always I am in hurry, I must find someone to help me for the distribution of acreditations for merchants of our city and villages.{break}
+									I sent someone in emergency but it still left some to distribute.\n
+									If you accept to help me you have to know that you must be quick.\n
+									Their old acreditations will be no more valid in a really short time and merchants must receive the new one before the expiration.\n
+									To succed in this mission you'd better well know roads of the region and if you know short cuts it could be a good idea to take them.\n
+									So listen to the names of merchants you have to meet:\n
+									$ishhi$ and $yaza$ in our city.\n
+									$safya$ in the village of $Hoi_cho$.\n
+									$ychiao$ in the village of $Jen_lai$.\n
+									And $gohyfio$ in the village of $Min_cho$.\n
+									Here the acreditations, good luck and be quick.\n]
+
+}
+ZV_SUPPLY_MIS_01_END (player p)
+{
+
+	zv_supply_mis_01_end			[Very well $p$ you have done very good job.\n
+									All merchants can work now.\n
+									Take this nice reward.]
+
+}
+///dialogues merchants///
+ZV_SUPPLY_MIS_01_MERCHANT_1 ()
+{
+
+	zv_supply_mis_01_merchant_1		[Oh, my acreditation!\n
+									Thanks, I was afraid to never got it at time.]
+
+}
+ZV_SUPPLY_MIS_01_MERCHANT_2 (bot giver)
+{
+
+	zv_supply_mis_01_merchant_2		[Thanks, $giver$ should be happy to have found someone like you for doing this kind of tasks.]
+
+}
+ZV_SUPPLY_MIS_01_MERCHANT_3 (bot giver)
+{
+
+	zv_supply_mis_01_merchant_3		[The new acreditation?\n
+									Oh yes! I totaly forgot about it...well thanks.]
+
+}
+ZV_SUPPLY_MIS_01_MERCHANT_4 (bot giver, race yber)
+{
+
+	zv_supply_mis_01_merchant_4		[The acreditation?\n
+									Thanks, did you know that these documens are written by my own brother?\n
+									No? let me explain you.{break}
+									Well my brother always wanted to be a scribe, I remember when we were chilren he always has a feather with him.\n
+									As far as I can remember I never saw my brother without it.\n
+									He even slept with it.\n
+									In fact in think that he is become a scribe more for the love of his feather than the love of writting.\n
+									Stange isn't it?
+									But I have a theory about this incredible passion for his feather, to understand it you have to know the way he found it.\n
+									Well, listen to that story.\n
+									On a nice sunny day, my brother and me decided to visit the sage of our little village, he was a famous story teller and he always had a lot of listeners.\n
+									But in the road to his house we had to took a little road in the jungle, and for young children jungle could be terrifying.\n
+									In fact in this road there was something that was particularly disturbing: A bush of bamboos.
+									I know, you will tell me what could be disturbing with a bush of bamboos?\n
+									But this one has the particularity to...move!\n
+									Yes, you listen well, one day the bush was on the right side if the road, another day it was on the left side.\n
+									One time we even saw it changing its position from a side to another.\n
+									When it happens we were totaly paralyzed by fear, what to do? approching the bush? bypass the bush? ran back?\n
+									While we try to found a solution, few instants after its first movement, he moved again.\n
+									But this time it was very fast and ran to us! it was even howling! A never heard howling!\n
+									We escaped as fast as we can in the direction of the village, we ran and ran and ran.\n
+									My brother always ran faster than me so he was the first who leaved the little road of jungle.\n
+									At this time I was unable to tell if the bush of bamboos was still behind me, I was too frightened to look behind.\n
+									Whatever I wasn't able to saw behind me, but I was able to see in front of me...and I saw my brother who ran directly on the tamed $yber$ of our village.\n
+									It was the mascot of our village.\n
+									The impact between the $yber$ and my brother was terrible!\n
+									my brother fell on the ground, the $yber$ made three circles in the air and, with the run-up, fell behind me...just on the bush of bamboos.\n
+									The bush screamed and ran away!\n
+									When my brother opened his eyes again, he saw that the bush wasn't here nomore...and a feather of the $yber$, who flew since the impact, land softly on his face.\n
+									Since this day he is convinced that this feather has magic powers...so he found a job that could be done without be separated of his magic feather.\n
+									Interesting isn't it?\n
+									I never tell him the truth about the $yber$, but I never knew what really was this strange moving bush!\n
+									Whatever thanks for the acreditation, I can work now.\n
+									Oh! before you leave...didn't I show you my magical teeth? I made a jewel with it.\n]
+}
+
+ZV_SUPPLY_MIS_01_MERCHANT_5 (bot c)
+{
+
+	zv_supply_mis_01_merchant_5		[I see that you are in a hurry, so let me give you an advice.\n
+									if you have an acreditation to give to $c$ be careful, he is very talkative,
+									you could lost a lot of time if you listen to him.]
+
+}

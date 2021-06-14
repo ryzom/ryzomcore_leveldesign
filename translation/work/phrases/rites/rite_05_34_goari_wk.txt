@@ -1,0 +1,81 @@
+﻿R_05_34_MIS_TITLE (bot giver, race goari)
+{
+	r_05_34_mis_title	[The mad $goari$ lover]
+}
+
+R_05_34_MIS_DESC (bot giver, race goari)
+{
+	r_05_34_mis_desc	[Un jour, un Fyros est parti étudier $goari.pda$ $goari.p$ et n'est jamais revenu. Vous devez le retrouver et le ramener sain et sauf.]
+}
+
+R_05_34_P_LDF_INTRO_1 (race goari, place outpost, place pyr)
+{
+	r_05_34_p_ldf_intro_1	[Un de nos gaillards fyros est parti la semaine dernière pour étudier $goari.pda$ $goari.p$ et nous ne l'avons plus revu depuis. Oh, je vous accorde que cela ne tourne pas rond dans sa tête, mais c'est l'un des nôtres...{break}Faites-moi plaisir, trouvez-le et ramenez-le parmi les siens. La dernière fois que nous l'avons vu, il était à l'avant-poste $outpost$ au sud de $pyr$.{break} Si vous le ramenez sain et sauf, je vous enseignerai une technique de défense fyros, mais faites attention, c'est une mission dangereuse et vous pourriez avoir besoin d'un peu d'aide !]
+}
+
+R_05_34_M_T2_OUTPOSTCHIEF_1 (bot outpost_chief_1)
+{
+	r_05_34_m_t2_outpostchief_1	[Je cherche un fyros étrange]
+}
+
+R_05_34_P_BC_OUTPOSTCHIEF_1 (race goari, place oflovaksoasis)
+{
+	r_05_34_p_bc_outpostchief_1	[Nous avons vu un Fyros qui répond plutôt bien à la description, il était certes bien étrange celui-là... Il étudiait $goari.pda$ $goari.p$ de la région, puis il est parti pour $oflovaksoasis.da$ $oflovaksoasis$ afin d'y poursuivre ses recherches.{break} Tu le trouveras certainement quelque part à l'ouest du lac.]
+}
+
+R_05_34_P_SM_FYROS_1 ()
+{
+	r_05_34_p_sm_fyros_1	[&AMB&Vous entendez une voix Fyros et des bruits de combat au loin.]
+}
+
+R_05_34_O_ES_FOOL_1 ()
+{
+	r_05_34_o_es_fool_1	[Allez sauver le Fyros.]
+}
+
+R_05_34_M_T2_FOOL_1 (bot fool_1)
+{
+	r_05_34_m_t2_fool_1	[Vous allez bien ?]
+}
+
+R_05_34_P_SM_KILLED (bot fool_1)
+{
+	r_05_34_p_sm_killed	[&AMB&$fool_1$ has been killed !]
+}
+
+R_05_34_P_LDC_FOOL_1 (race goari, place pyr)
+{
+	r_05_34_p_ldc_fool_1	[Never felt better, homin. $goari.pda$ $goari.p$ are so fascinating, you know, I could talk with them all day long!... We don't understand each other very well yet, but it'll soon come...{break} Anyway, I've got to get back to $pyr$ to bring 'em back some food, see, they're lookin' a bit peckish...]
+}
+
+R_05_34_P_AD_FOOL_1 ()
+{
+	r_05_34_p_ad_fool_1	[Oui c'est cela, ça va bien se passer]
+}
+
+R_05_34_O_ES_FOOL_2 (place pyr)
+{
+	r_05_34_o_es_fool_2	[Ramenez le Fyros au garde de $pyr$.]
+}
+
+R_05_34_M_T2_GUARD_1 (bot guard_1)
+{
+	r_05_34_m_t2_guard_1	[Je ramene un Fyros égaré]
+}
+
+R_05_34_P_BC_GUARD_1 ()
+{
+	r_05_34_p_bc_guard_1	[- Merci de l'avoir ramené\n
+- Il a l'air fatigué, nous allons nous en occuper.]
+}
+
+R_05_34_M_T2_GIVER_1 (bot giver)
+{
+	r_05_34_m_t2_giver_1	[Le Fyros est de retour dans la cité]
+}
+
+R_05_34_P_BC_DEBRIEF_1 (race goari)
+{
+	r_05_34_p_bc_debrief_1	[Bon travail ! Prenez ce cube d'ambre en dédommagement, il vous en dira plus sur $goari.pda$ $goari.p$.{break} Maintenant, je vais vous enseigner une technique de défense fyros.]
+}
+

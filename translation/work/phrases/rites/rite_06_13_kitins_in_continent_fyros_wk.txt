@@ -1,0 +1,75 @@
+﻿R_06_13_MIS_TITLE (bot giver)
+{
+	r_06_13_mis_title	[Sur les traces des pionniers]
+}
+
+R_06_13_MIS_DESC_1 (bot giver)
+{
+	r_06_13_mis_desc_1	[Suivez la route des pionniers et combattez les kitins.]
+}
+
+R_06_13_P_LDF_INTRO_1 (bot npc_talk_1)
+{
+	r_06_13_p_ldf_intro_1	[Sous le commandement de la régente Leanon, les premiers colons luttèrent contre les Kitins qui hantaient le désert et établirent des routes vers les matières premières indispensables à la reconstruction de notre empire. En accomplissant un rite en la mémoire de ces pionniers, tu suivras leurs traces et rendra honneur à leur sacrifice et à leur détermination. {break}$npc_talk_1$ est la fille de l'un de ces valeureux homins, elle te dira où et comment tu peux prouver ton attachement aux Fyros. Reviens me voir lorsque tu estimeras ta mission accomplie. Que le feu du grand Dragon brûle dans tes veines !]
+}
+
+R_06_13_P_T2_NPCTALK_1 (bot npc_talk_1, bot givervar)
+{
+	r_06_13_p_t2_npctalk_1	[Bonjour, $givervar$ m'envoie.]
+}
+
+R_06_13_P_BC_NPCTALK1 (creature_model creature_to_kill1, bot giver)
+{
+	r_06_13_p_bc_npctalk1	[Oui, oui, oui, sans doute êtes-vous, comme mon défunt père, en quête de connaissance et de gloire. Je peux vous aider. J'ai moi-même accompli ce rite d'initiation.{break} Partez vers l'ouest. Au nord du grand lac se trouve un endroit découvert par les premiers pionniers. En creusant le sol, vous trouverez une ressource particulière. Vous devrez dire à $giver$ de quelle ressource il s'agit, soyez donc attentif lors de votre exploration. Ensuite, pour honorer ceux qui ont combattu les kitins, tuez un $creature_to_kill1$.{break} Un dernier conseil : utilisez votre boussole, elle vous sera très utile pour trouver l'endroit dont je vous ai parlé. Bonne chance à vous.]
+}
+
+R_06_13_O_VISIT_PLACE_1 (place place_to_visit_1)
+{
+	r_06_13_o_visit_place_1	[Trouvez le gisement découvert par les pionniers, et identifiez la ressource]
+}
+
+R_06_13_P_T2_GIVER_3 (bot giver)
+{
+	r_06_13_p_t2_giver_3	[J'ai accompli le rite.]
+}
+
+R_06_13_P_DC_GIVER1 ()
+{
+	r_06_13_p_dc_giver1	[Te voilà de retour ! Eh bien, dis-moi quelle matière première les pionniers ont-ils découvert au bout de leur route ?]
+}
+
+R_06_13_P_DC_ANSWER1 (item mp_false_1)
+{
+	r_06_13_p_dc_answer1	[Les pionniers ont extrait $mp_false_1$ de cet endroit.]
+}
+
+R_06_13_P_DC_ANSWER2 (item mp_false_2)
+{
+	r_06_13_p_dc_answer2	[Les pionniers ont extrait $mp_false_2$ de cet endroit.]
+}
+
+R_06_13_P_DC_ANSWER3 (item mp_right1)
+{
+	r_06_13_p_dc_answer3	[Les pionniers ont extrait $mp_right1$ de cet endroit.]
+}
+
+R_06_13_P_DC_ANSWER4 (item mp_false_3)
+{
+	r_06_13_p_dc_answer4	[Les pionniers ont extrait $mp_false_3$ de cet endroit.]
+}
+
+R_06_13_P_DC_ANSWER5 (item mp_false_4)
+{
+	r_06_13_p_dc_answer5	[Les pionniers ont extrait $mp_false_4$ de cet endroit.]
+}
+
+R_06_13_P_BC_DEBRIEF_1 ()
+{
+	r_06_13_p_bc_debrief_1	[C'est bien cela ! {break} Tu as montré la pugnacité propre aux Fyros, et tes talents de combattant sont dignes de ceux de tes pairs. Tu as mérité de connaître l'une de nos techniques de combat. Reçois également ce cube d'ambre qui contient des informations sur nos ennemis jurés, les kitins.]
+}
+
+R_06_13_P_BC_GIVER_2 (creature_model creature_to_kill1)
+{
+	r_06_13_p_bc_giver_2	[C'est faux ! Soit tu n'as aucune mémoire, soit tu n'as pas accompli la mission que j'attendais de toi. Explore à nouveau la route des pionniers et tue un autre $creature_to_kill1$. J'attends !]
+}
+

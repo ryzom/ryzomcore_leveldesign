@@ -1,0 +1,45 @@
+﻿R_02_12_MIS_TITLE (bot giver)
+{
+	r_02_12_mis_title	[La grande traversée]
+}
+
+R_02_12_MIS_DESC (bot giver)
+{
+	r_02_12_mis_desc	[Faire un pèlerinage de Pyr à Zora en traversant les Primes Racines]
+}
+
+R_02_12_P_LDC_INTRO (bot lesage_pyr, bot lesage_zora)
+{
+	r_02_12_p_ldc_intro	[Bonjour aventurier. Il est grand temps pour vous de nous prouver votre valeur. Pour cela vous allez devoir effectuer un pèlerinage.{break}Vous partirez de la ville de Pyr ou $lesage_pyr$ le sage vous remettra un parchemin à destination de son homologue de Zora. Vous devrez alors faire la grande traversée jusqu'à la ville de Zora sur le continent Zorai. Une fois là bas, $lesage_zora$ le sage vous remettra un présent que vous devrez rapporter à son homologue de la ville de Pyr.{break}Dans un sens aussi bien que dans l'autre, vous ne devrez pas utiliser de téléports et serez obligé, pour rallier ces deux points, d'emprunter la Route du Gouffre.{break}Si vous réussissez, je vous apprendrai à forger une hache spéciale... bon courage.]
+}
+
+R_02_12_P_T2_SAGE_PYR (bot lesage_pyr)
+{
+	r_02_12_p_t2_sage_pyr	[Bonjour, je viens pour le pèlerinage]
+}
+
+R_02_12_P_BC_SAGE_PYR (bot givervar, bot lesage_zora)
+{
+	r_02_12_p_bc_sage_pyr	[Bonjour. J'imagine que $givervar$ a dû vous présenter les conditions de votre pèlerinage. Je n'ai donc rien à ajouté, sinon vous remettre cette lettre à destination de $lesage_zora$, le sage de Zora.{break}Je vous souhaite bonne route.]
+}
+
+R_02_12_P_BC_SAGE_ZORA (bot lesage_pyr)
+{
+	r_02_12_p_bc_sage_zora	[Je vous salue. J'espère que vous avez fait bonne route. Prenez cette hache que vous remettrez à $lesage_pyr$, le sage de Pyr, ainsi que mes amitiés.{break}Bon retour.]
+}
+
+R_02_12_P_BC_SAGE_PYR_RETOUR (bot givervar)
+{
+	r_02_12_p_bc_sage_pyr_retour	[Parfait. Vous avez accompli ce pèlerinage comme il le fallait. Mes félicitations. Vous pouvez retourner voir $givervar$, il vous récompensera.]
+}
+
+R_02_12_P_T2_DEBRIEF (bot givervar)
+{
+	r_02_12_p_t2_debrief	[J'ai effectué mon pèlerinage comme vous me l'aviez demandé.]
+}
+
+R_02_12_P_BC_DEBRIF ()
+{
+	r_02_12_p_bc_debrif	[Très bien, vous etes bien courageux. Voici comme convenu votre récompense.]
+}
+

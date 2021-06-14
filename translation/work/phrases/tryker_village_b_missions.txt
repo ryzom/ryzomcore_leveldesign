@@ -1,0 +1,250 @@
+﻿/*
+TB_FIGHT_MIS_01
+
+*/
+TB_FIGHT_MIS_01_TITLE (bot giver, race cute)
+{
+		tb_fight_mis_01_title		[impoliteness of $cute.p$.]
+
+}
+TB_FIGHT_MIS_01_DESC (bot giver, race cute)
+{
+		tb_fight_mis_01_desc		[find and kill some $cute.p$.]
+}
+
+TB_FIGHT_MIS_01_STEP_1 (bot target, race cute)
+{
+		tb_fight_mis_01_step_1 		[At the occasion of the marriage of his daughter, $target$ has organized a party in a little creek few days ago.{break}
+						It was a nice party until some cutes decided to invite themselves!\n
+						They began to attack everybody and to sack everything!\n
+						$cute.p$ are little and aggressive creatures who are always moving in group.\n
+						They're not really strong but they are dangerous oponents due to their high attack speed and their agility.\n
+						Some says that they could have some kind of primitive intelligence.\n
+						I think they could understand that they must keep us quiet if we give them a good lesson!\n
+						Speak to $target$, he will tell you more about the place where the party was.\n
+						Perhaps there is still some of them in this place.\n
+						If you find some, kill them!]
+}
+
+TB_FIGHT_MIS_01_STEP_2 (race cute)
+{
+		tb_fight_mis_01_step_2 		[Oh, the guarchief has finally decided to to something against $cute.p$?{break}
+						Good decision, but a late decision!\n
+						These ugly creatures have spoiled the marriage of my daughter and as always the guardchief decides to act when it's too late!\n
+						I will tell you the location of the place where the party was, and if there is still left some $cute.p$...Kill them.\n
+						Exit the village by the south gate and follow the beach on the est still you see the clives where guards are patroling.\n
+						A little farther, always in the est direction, you will find the place.\n
+						It's a little creek.\n ]
+}
+
+TB_FIGHT_MIS_01_END (bot taget)
+{
+		tb_fight_mis_01_end 		[Congratulation!\n
+						I hope these creatures are clever enough to understand the lesson!\n
+						Take this reward my friend.]
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+TB_CRAFT_MIS_01
+
+*/
+TB_CRAFT_MIS_01_TITLE (bot giver)
+{
+		tb_craft_mis_01_title		[Foraging could be dangerous.]
+
+}
+TB_CRAFT_MIS_01_DESC (bot giver, item rm1)
+{
+		tb_craft_mis_01_desc		[Find some $rm1$ for the craftman.]
+}
+
+TB_CRAFT_MIS_01_STEP_1 (item rm1, race kitin, bot target)
+// info : the rm needed is some kitin secretion	
+{
+		tb_craft_mis_01_step_1 		[As you certainly saw some raw materials are abundant on Atys and some others are pretty rare.{break}
+									The one I need is very hard to find, you will soon anderstand why.\n
+									To finish an object I need some $rm1$.\n
+									The problem with this material is that a $kitin$ is always nearby.\n
+									In fact, best way to find some $rm1$ is to find a $kitin$ and to forage nearby.\n
+									If you accept to help me I will be generous but don't hesitate to ask help of other homins, it could be dangerous.\n
+									Speak to $target$, the guardchief, he will tell you how to find some $kitin.p$]
+}
+
+TB_CRAFT_MIS_01_TALKMENU (race kitin)
+
+{
+		tb_craft_mis_01_talkmenu 	[Do you know a place where I could find a $kitin$?]
+}
+
+TB_CRAFT_MIS_01_STEP_2 (race kitin)
+{
+		tb_craft_mis_01_step_2 		[A $kitin$!?\n
+									Usualy people ask me how to not find some, not the inverse!{break}
+									Well, I think that you must have a good reason.\n
+									My guards have recently seen a flying $kitin$, I will tell you where if it's what's you want.\n
+									In the extrem south of the region there is an envlaved place surrounded by clives, it's like a cavern but without roof.\n
+									The only way to access this place is to find a crack in the clives.\n
+									Swimming is the only way to reach this crack.\n
+									My guards saw a $kitin$ entering this place.]
+}
+
+TB_CRAFT_MIS_01_END (race kitin)
+{
+		tb_craft_mis_01_end 		[Congratulation, you're not only a good forager but a courageous Homin too.{break}
+									I can tell you now: A dozen of foragers have declined this mission before you.\n
+									They all ran away when I spoke of $kitin.p$.\n
+									Here's a nice reward for the good job you done.]
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//KNOWLEDGE MISSION
+/*
+TB_KNOWLEDGE_MIS_01
+*/
+TB_KNOWLEDGE_MIS_01_TITLE (bot giver)
+{
+	tb_knowledge_mis_01_title		[A View about the Karavan]
+
+}
+
+TB_KNOWLEDGE_MIS_01_DESC (bot giver, race kitin)
+{
+	tb_knowledge_mis_01_desc		[Un vieux Tryker va vous parler de la Karavan... et de la grande invasion des $kitin.p$]
+
+}
+
+TB_KNOWLEDGE_MIS_01_STEP_1 (bot target)
+{
+//sage
+	tb_knowledge_mis_01_step_1		[La connaissance du pass permet aux peuples d'Atys d'largir leur perception du prsent. Mais chaque homin 
+						voit le monde par ses propres yeux, et chacun se forge ses propres opinions. Parfois  l'encontre des croyances 
+						des autres homins...{break} Nous, Trykers, savons regarder les choses sous bien des angles, et nous ne 
+						nous laissons pas blouir par une foi aveuglante. Je connais un vieil homme nomm $target$ qui a une vision claire 
+						de certaines puissances foulant ce monde. Si tu souhaites couter ce qu'il a  te dire sur la Karavan, 
+						va le voir.]
+
+}
+
+TB_KNOWLEDGE_MIS_02_STEP_2 (player p)
+{
+//vieux Tryker
+	tb_knowledge_mis_01_step_2		[Bienvenue, $p$. Ainsi tu t'interroges sur ces tre mystrieux qui constituent la Karavan ? J'ai quelques contacts 
+						avec eux, car je leur fournis parfois certaines matires premires qu'ils recherchent. Je connais bien les environs, 
+						et je n'ai pas mon pareil pour dnicher plantes rares et ingrdients inhabituels.{break}\n
+						Il m'est mme arriv de m'aventurer dans les profondeurs interdites... o j'ai peu de chances de rencontrer 
+						les gardiens de la Karavan ! Tu te demandes pourquoi je parie ?]
+
+}
+
+TB_KNOWLEDGE_MIS_01_TALKMENU_1(bot giver)
+{
+//rponse au vieux Tryker
+	tb_knowledge_mis_01_talkmenu_1		[Hmm oui, en effet, pourquoi cela ?]
+
+}
+
+TB_KNOWLEDGE_MIS_01_STEP_3 (race kitin, bot target)
+{
+//vieux Tryker
+	tb_knowledge_mis_01_step_3		[One place the Karavan wont venture into is the prime roots. Some say theyre just plain scared of the 
+						dragon, others say they fear $kitin.pda$ $kitin.p$. After all, theyre only mortal.{break} Anyway, for all their Jena this 
+						and their Jena that they werent much cop during the $kitin$ swarming in the ancient lands. Those who did try 
+						to intervene with their freaky magic apparently got completely scissored! And then they say the teleporter 
+						beamed some poor bastards right bang in the middle of a pack of $kitin.p$, would you believe?! Some thought 
+						their goose was well and truly cooked, as they say. If the Karavan were powerless against the $kitin$ armies 
+						who was gonna stop the onslaughts?\n
+						Aujourd'hui, il semble difficile  croire que les gardiens de la Karavan aient pu se retrouver impuissants... 
+						Tu sembles sceptique ! Va donc voir le $target$, pour lui apporter ces quelques matires premires de ma part. Et 
+						demande-lui donc de te parler de l'invasion des $kitin.p$...]
+
+}
+
+TB_KNOWLEDGE_MIS_01_GIVE_ITEM_MENU(int item_count, bot previous)
+{
+//Dialogue pour donner les matires premires au Karavan Officer
+	tb_knowledge_mis_01_give_item_menu		[$previous$ m'envoie vous donner ceci.]
+
+}
+
+TB_KNOWLEDGE_MIS_01_STEP_4 (bot previous)
+{
+//Karavan officer
+	tb_knowledge_mis_01_step_4		[Bien, homin. Tu diras  $previous$ que nous sommes satisfaits de lui. Tu peux repartir  prsent. Que 
+						Jena veille sur toi.\n
+						Tu sembles hsiter, il y a autre chose ? Parle sans crainte, homin.]
+
+}
+
+TB_KNOWLEDGE_MIS_01_TALKMENU_2(bot giver, race kitin)
+{
+//rponse au Karavan officer
+	tb_knowledge_mis_01_talkmenu_2		[Parlez-moi de l'invasion des $kitin.p$.]
+
+}
+
+TB_KNOWLEDGE_MIS_01_STEP_5 (race kitin)
+{
+//Karavan officer
+	tb_knowledge_mis_01_step_5		[Hmpf ! Le pass est le pass... Nul besoin de te tourmenter avec ces histoires. $kitin.pda$ $kitin.p$ ont t vaincus, 
+						et ton peuple est en scurit grce  la bienveillance de Jena. Consacre tes efforts  la prosprit d'Atys, 
+						et tu prospreras toi aussi !]
+
+}
+
+TB_KNOWLEDGE_MIS_01_TALKMENU_3 (bot giver, race kitin)
+{
+//rponse au Karavan officer
+	tb_knowledge_mis_01_talkmenu_3		[Mais comment avez-vous dtruit $kitin.pda$ $kitin.p$ ?]
+
+}
+
+TB_KNOWLEDGE_MIS_01_STEP_6 ()
+{
+//Karavan officer (emote en colre)
+	tb_knowledge_mis_01_step_6		[Eh bien... mais grce  nos pouvoirs, et avec la bndiction de Jena ! Douterais-tu de cela ? Tu serais dans ce cas 	
+						bien imprudent... ou inconscient comme beaucoup de jeunes homins !]
+
+}
+
+TB_KNOWLEDGE_MIS_01_TALKMENU_4 (bot giver, race kitin)
+{
+//rponse au Karavan officer
+	tb_knowledge_mis_01_talkmenu_4		[Avez-vous peur des $kitin.p$ ?]
+
+}
+
+TB_KNOWLEDGE_MIS_01_STEP_7 ()
+{
+//Karavan Officer
+	tb_knowledge_mis_01_step_7		[Homin ! J'ai autre chose  faire qu' rpondre  tes questions stupides ! Tu ferais bien de dguerpir 
+						avant que je ne perde patience !]
+
+}
+
+
+TB_KNOWLEDGE_MIS_01_TALKMENU_5 (bot giver, bot previous)
+{
+//rponse au Karavan officer
+	tb_knowledge_mis_01_talkmenu_5		[Le $previous$ n'a pas apprci mes questions.]
+
+}
+
+TB_KNOWLEDGE_MIS_01_END (race kitin, player p)
+{
+//vieux Tryker
+	tb_knowledge_mis_01_end			[H h, il n'est pas agrable de se voir rappeler les checs des siens par un tranger. chec relatif, car 
+						la Karavan a su ragir  l'invasion des $kitin.p$... mais tardivement.{break}\n
+						Jena got her act together with the Kamis and sent in a force of super-duper Karavan guardians to 
+						take care of $kitin.pda$ $kitin.p$ while the Karavan disciples shepherded survivors through the rainbows to the new 
+						lands. Mind, it did take some time for homins to trust em again though. It was like the world had crumbled 
+						from under their feet, just imagine, all your friends and family snapped in two, even your favorite yubo! 
+						But as time went by, seeing the super-duper Karavan guardians in all their flashy gear and $kitin.pda$ $kitin.p$ 
+						progressively losing ground, homins were eventually coaxed out of their hiding in the prime roots. Once the 
+						Karavan had sweetened them up nice they resumed their offerings for the truly wonderful assistance Jena 
+						gave.\n
+						Le pass est important, $p$. N'oublie jamais cela.]
+
+}
+
+//reward 1 action knowledge + fame Tryker
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

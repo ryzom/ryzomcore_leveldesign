@@ -1,0 +1,1423 @@
+﻿DEBUG_VISIT_MIS_TITLE (bot giver)
+{
+	debug_visit_mis_title	[DEBUG VISIT]
+}
+
+DEBUG_VISIT_MIS_DESC (bot giver)
+{
+	debug_visit_mis_desc	[Test de visit place - accessible par menu contextuel]
+}
+
+DEBUG_VISIT_P_MENU_CONTEXT ()
+{
+	debug_visit_p_menu_context	[Visite de place - debug]
+}
+
+DEBUG_VISIT_P_SMG_COMPASS ()
+{
+	debug_visit_p_smg_compass	[Ajout de la place dans le compas]
+}
+
+DEBUG_VISIT_P_SMG_COMPASS2 ()
+{
+	debug_visit_p_smg_compass2	[Retrait de la zone dans le compas]
+}
+
+DEBUG_VISIT_P_OVL_VISIT (place debug_place_visit2)
+{
+	debug_visit_p_ovl_visit	[Overload d'objectif de visit : aller à $debug_place_visit2$]
+}
+
+DEBUG_VISIT_P_SMG_VISIT_TIMED ()
+{
+	debug_visit_p_smg_visit_timed	[Test du timer inside place]
+}
+
+DEBUG_VISIT_P_OVL_VISIT2 (place debug_place_visit)
+{
+	debug_visit_p_ovl_visit2	[Overload d'objectif de visit : aller à $debug_place_visit$]
+}
+
+DEBUG_VISIT_P_T2_GIVER (bot givervar)
+{
+	debug_visit_p_t2_giver	[Suite de la mission ...]
+}
+
+DEBUG_VISIT_P_OVL_VISIT3 (place debug_place_visit2, place place_camp)
+{
+	debug_visit_p_ovl_visit3	[Overload de visit : aller à $place_camp$ OU $debug_place_visit2$]
+}
+
+DEBUG_HANDLE_TEXT_MIS_TITLE (bot giver)
+{
+	debug_handle_text_mis_title	[DEBUG HANDLE-TEXT]
+}
+
+DEBUG_HANDLE_TEXT_MIS_DESC (bot giver)
+{
+	debug_handle_text_mis_desc	[Test texte après despawn]
+}
+
+DEBUG_HANDLE_TEXT_P_MENU_CONTEXT ()
+{
+	debug_handle_text_p_menu_context	[Affichage de texte - debug handle]
+}
+
+DEBUG_HANDLE_TEXT_P_T2_HANDLE_DEBUG (bot pnj_handle)
+{
+	debug_handle_text_p_t2_handle_debug	[Mon temps de despawn de 5s]
+}
+
+DEBUG_HANDLE_TEXT_P_T2_GIVER (bot giver, bot pnj_handle)
+{
+	debug_handle_text_p_t2_giver	[le pnj : $pnj_handle$ doit avoir despawn - test sur le texte]
+}
+
+DEBUG_CRAFT_MIS_TITLE (bot giver)
+{
+	debug_craft_mis_title	[DEBUG CRAFT]
+}
+
+DEBUG_CRAFT_MIS_DESC (bot giver)
+{
+	debug_craft_mis_desc	[Test de la feature de craft - mission mono-instance avec requis de fame matis 50]
+}
+
+DEBUG_CRAFT_P_OVL_CRAFT_1 (item i1, int qt1, int qual1, item item_craft, int qlty_craft, int qty_craft)
+{
+	debug_craft_p_ovl_craft_1	[overload de craft : crafter $qty_craft$ $item_craft$ de qualité $qlty_craft$]
+}
+
+DEBUG_CRAFT_P_OVL_ANY (item item_craft, item item_craft2, item item_craft3, int qlty_craft, int qty_craft)
+{
+	debug_craft_p_ovl_any	[Overload de craft any : crafter $qty_craft$ $item_craft$ de qualité $qlty_craft$ et $qty_craft$ 
+$item_craft2$ de qualité $qlty_craft$ OU $qty_craft$ $item_craft3$ de qualité $qlty_craft$]
+}
+
+DEBUG_LOOT_MIS_TITLE (bot giver)
+{
+	debug_loot_mis_title	[DEBUG LOOT]
+}
+
+DEBUG_LOOT_MIS_DESC (bot giver)
+{
+	debug_loot_mis_desc	[Tester le loot - non abandonnable]
+}
+
+DEBUG_LOOT_P_OVL_LOOT1_1 (item i1, int qt1, int qual1, item item_loot2, item item_loot3, int qlty_loot, int qty_loot)
+{
+	debug_loot_p_ovl_loot1_1	[Overload d'objectif de loot : looter $qty_loot$ $item_loot2$ de qualité $qlty_loot$ et $qty_loot$ $item_loot3$ de qualité $qlty_loot$]
+}
+
+DEBUG_LOOT_P_OVL_LOOT1_2 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item item_loot2, item item_loot3, int qlty_loot, int qty_loot)
+{
+	debug_loot_p_ovl_loot1_2	[Overload d'objectif de loot : looter $qty_loot$ $item_loot2$ de qualité $qlty_loot$ et $qty_loot$ $item_loot3$ de qualité $qlty_loot$]
+}
+
+DEBUG_LOOT_P_SMG_LOOT2 ()
+{
+	debug_loot_p_smg_loot2	[Loot avec variables]
+}
+
+DEBUG_LOOT_P_OVL_LOOT2 (item item_loot, item item_loot2, item item_loot3, int qlty_loot, int qty_loot)
+{
+	debug_loot_p_ovl_loot2	[Overload d'objectif de loot : looter $qty_loot$ $item_loot2$ de qualité $qlty_loot$ et $qty_loot$ $item_loot3$ de qualité $qlty_loot$ OU $qty_loot$ $item_loot$ de qualité $qlty_loot$]
+}
+
+DEBUG_KILL_MIS_TITLE (bot giver)
+{
+	debug_kill_mis_title	[DEBUG KILL]
+}
+
+DEBUG_KILL_MIS_DESC (bot giver)
+{
+	debug_kill_mis_desc	[Test de Kill de créature - rejouable avec un timer de 5 minutes, la mission DEBUG_GIVE ne doit pas etre en cours]
+}
+
+DEBUG_KILL_P_OVL_KILL_ANY_1 (creature_model creature_kill, int q1, place place_kill)
+{
+	debug_kill_p_ovl_kill_any_1	[Overload de kill : tuer un $creature_kill$ dans $place_kill$]
+}
+
+DEBUG_KILL_P_OVL_KILL_GROUP1 (bot_name group_kill)
+{
+	debug_kill_p_ovl_kill_group1	[Overload de kill group : tuer les bestioles]
+}
+
+DEBUG_KILL_P_OVL_KILL_SERIE ()
+{
+	debug_kill_p_ovl_kill_serie	[Tuer les bestiole et bestiole2]
+}
+
+DEBUG_TARGET_MIS_TITLE (bot giver)
+{
+	debug_target_mis_title	[DEBUG DE TARGET]
+}
+
+DEBUG_TARGET_MIS_DESC (bot giver)
+{
+	debug_target_mis_desc	[Test de Target de créatures - demande de porter : icmja (Matis anklet)]
+}
+
+DEBUG_TARGET_P_SMG_TARGET1 ()
+{
+	debug_target_p_smg_target1	[Target de créature simple]
+}
+
+DEBUG_TARGET_P_SMG_TARGET3 ()
+{
+	debug_target_p_smg_target3	[Target de NPC]
+}
+
+DEBUG_TARGET_P_SMG_TARGET2 ()
+{
+	debug_target_p_smg_target2	[Target de créature à l'intérieur d'une place]
+}
+
+DEBUG_TARGET_P_SMG_TARGET4 ()
+{
+	debug_target_p_smg_target4	[Target de créature à l'intérieur d'une place]
+}
+
+DEBUG_TARGET_P_SMG_TARGET5 ()
+{
+	debug_target_p_smg_target5	[Target de NPC]
+}
+
+DEBUG_CAST_MIS_TITLE (bot giver)
+{
+	debug_cast_mis_title	[DEBUG CAST]
+}
+
+DEBUG_CAST_MIS_DESC (bot giver)
+{
+	debug_cast_mis_desc	[Test de cast sur créatures, demande d'avoir chaque branche de skill a 50+]
+}
+
+DEBUG_CAST_PSMG_CAST1 ()
+{
+	debug_cast_psmg_cast1	[Cast de sort simple]
+}
+
+DEBUG_CAST_P_SMG_CAST2 ()
+{
+	debug_cast_p_smg_cast2	[Cast de sort dans une place]
+}
+
+DEBUG_CAST_P_OVL_CASTANY (sbrick spell_cast, sbrick spell_cast2)
+{
+	debug_cast_p_ovl_castany	[Overload de cast any : lancer $spell_cast$ OU $spell_cast2$]
+}
+
+DEBUG_FORAGE_MIS_TITLE (bot giver)
+{
+	debug_forage_mis_title	[DEBUG FORAGE]
+}
+
+DEBUG_FORAGE_MIS_DESC (bot giver)
+{
+	debug_forage_mis_desc	[Test de forage]
+}
+
+DEBUG_FORAGE_P_OVL_FORAGE_1 (item i1, int qt1, int qual1, item mp_forage)
+{
+	debug_forage_p_ovl_forage_1	[Overload d'objectif forage : forage de 3 $mp_forage$ de qualité 20]
+}
+
+DEBUG_GIVE_MIS_TITLE (bot giver)
+{
+	debug_give_mis_title	[DEBUG GIVE]
+}
+
+DEBUG_GIVE_MIS_DESC (bot giver)
+{
+	debug_give_mis_desc	[Test de give item]
+}
+
+DEBUG_TALK_MIS_TITLE (bot giver)
+{
+	debug_talk_mis_title	[DEBUG TALK]
+}
+
+DEBUG_TALK_MIS_DESC (bot giver)
+{
+	debug_talk_mis_desc	[Test de talk npc]
+}
+
+DEBUG_TALK_P_T2_TALK (bot givervar)
+{
+	debug_talk_p_t2_talk	[Phrase de test. suivie d'un bot-chat]
+}
+
+DEBUG_TALK_P_BC_TALK ()
+{
+	debug_talk_p_bc_talk	[Phrase de bot-chat de test]
+}
+
+DEBUG_TALK_P_T2_ANY1 (bot givervar)
+{
+	debug_talk_p_t2_any1	[Phrase de test talk-to any. suivie de bot-chat]
+}
+
+DEBUG_TALK_P_BC_TALK_ANY1 ()
+{
+	debug_talk_p_bc_talk_any1	[Phrase de bot chat de test.]
+}
+
+DEBUG_CHAT_MIS_TITLE (bot giver)
+{
+	debug_chat_mis_title	[DEBUG CHAT]
+}
+
+DEBUG_CHAT_MIS_DESC (bot giver)
+{
+	debug_chat_mis_desc	[Test de dyn-chat]
+}
+
+DEBUG_CHAT_P_OVL_DC (bot givervar)
+{
+	debug_chat_p_ovl_dc	[Overload de l'objectif du talk de Dyn_chat : parler à $givervar$]
+}
+
+DEBUG_CHAT_P_DC_TALK (bot givervar)
+{
+	debug_chat_p_dc_talk	[Test du Dyn_chat]
+}
+
+DEBUG_CHAT_P_DC_TEST ()
+{
+	debug_chat_p_dc_test	[Phrase de dyn_chat de test]
+}
+
+DEBUG_CHAT_P_DA1 ()
+{
+	debug_chat_p_da1	[Reponse de test au dyn_chat. suivie d'un dyn chat continue]
+}
+
+DEBUG_CHAT_P_DA_TALK ()
+{
+	debug_chat_p_da_talk	[Phrase de test suivie d'un step de talk]
+}
+
+DEBUG_CHAT_P_LDC1 ()
+{
+	debug_chat_p_ldc1	[Phrase de test de lyn_dyn_cont]
+}
+
+DEBUG_CHAT_P_T2_LDC (bot givervar)
+{
+	debug_chat_p_t2_ldc	[Phrase de test - step dans un dyn_chat]
+}
+
+DEBUG_MONEY_MIS_TITLE (bot giver)
+{
+	debug_money_mis_title	[DEBUG MONEY]
+}
+
+DEBUG_MONEY_MIS_DESC (bot giver)
+{
+	debug_money_mis_desc	[Test give money]
+}
+
+DEBUG_SELL_MIS_TITLE (bot giver)
+{
+	debug_sell_mis_title	[DEBUG SELL]
+}
+
+DEBUG_SELL_MIS_DESC (bot giver)
+{
+	debug_sell_mis_desc	[Test de sell item]
+}
+
+DEBUG_SELL_P_OVL_SELL_1 (item i1, int qt1, int qual1, bot npc_merchant, item item_sell)
+{
+	debug_sell_p_ovl_sell_1	[Overload de sell : vendre 1 $item_sell$ de qualité 1]
+}
+
+DEBUG_BUY_MIS_TITLE (bot giver)
+{
+	debug_buy_mis_title	[DEBUG BUY]
+}
+
+DEBUG_BUY_MIS_DESC (bot giver)
+{
+	debug_buy_mis_desc	[Test de buy item]
+}
+
+DEBUG_BUY_P_OVL_BUY1_1 (item i1, int qt1, int qual1, bot npc_merchant, item item_buy)
+{
+	debug_buy_p_ovl_buy1_1	[Overload de buy : acheter 1 $item_buy$ de qualité 1]
+}
+
+DEBUG_HANDLE_MIS_TITLE (bot giver)
+{
+	debug_handle_mis_title	[DEBUG HANDLE]
+}
+
+DEBUG_HANDLE_MIS_DESC (bot giver)
+{
+	debug_handle_mis_desc	[Test Handle - 2 gingos spawn et 1 spot de goo spawn pour 20s]
+}
+
+DEBUG_PERMANENT_MIS_TITLE (bot giver)
+{
+	debug_permanent_mis_title	[Permanent]
+}
+
+DEBUG_PERMANENT_MIS_DESC (bot giver)
+{
+	debug_permanent_mis_desc	[Mission permanente ne sert que pour tester un pré-requis.]
+}
+
+DEBUG_SPAWN_DO_MIS_TITLE (bot giver)
+{
+	debug_spawn_do_mis_title	[DEBUG SPAWN-MISSION]
+}
+
+DEBUG_SPAWN_DO_MIS_DESC (bot giver)
+{
+	debug_spawn_do_mis_desc	[Test du spawn et do mission]
+}
+
+DEBUG_SPAWN_DO_P_OVL_DOMISSION (creature_model creature_kill, creature_model creature_kill2)
+{
+	debug_spawn_do_p_ovl_domission	[Overload : remplir les missions liées : tuer $creature_kill$ ET $creature_kill2$ ]
+}
+
+DEBUG_SPAWN_1_MIS_TITLE (bot giver)
+{
+	debug_spawn_1_mis_title	[Title not displayed]
+}
+
+DEBUG_SPAWN_1_MIS_DESC (bot giver)
+{
+	debug_spawn_1_mis_desc	[Not displayed - else bug]
+}
+
+DEBUG_SPAWN_2_MIS_TITLE (bot giver)
+{
+	debug_spawn_2_mis_title	[Title not displayed]
+}
+
+DEBUG_SPAWN_2_MIS_DESC (bot giver)
+{
+	debug_spawn_2_mis_desc	[Not displayed - else bug]
+}
+
+DEBUG_CHAIN_DO_MIS_TITLE (bot giver)
+{
+	debug_chain_do_mis_title	[DEBUG CHAIN]
+}
+
+DEBUG_CHAIN_DO_MIS_DESC (bot giver)
+{
+	debug_chain_do_mis_desc	[Debug : test de chain mission - enchaine sur un give 2000dappers a debugger]
+}
+
+DEBUG_CHAIN_DO_P_OVL_CHAIN (int amount, bot givervar)
+{
+	debug_chain_do_p_ovl_chain	[Action de give, enchaîne sur la mission DEBUG_CHAIN 2]
+}
+
+DEBUG_CHAIN_MIS_TITLE (bot giver)
+{
+	debug_chain_mis_title	[DEBUG CHAIN 2]
+}
+
+DEBUG_CHAIN_MIS_DESC (bot giver)
+{
+	debug_chain_mis_desc	[Mission liée - fais suite à DEBUG CHAIN]
+}
+
+DEBUG_CHAIN_P_OVL_CHAIN (int amount, bot givervar)
+{
+	debug_chain_p_ovl_chain	[Action de give, suite de la mission DEBUG_CHAIN]
+}
+
+DEBUG_FAIL_MIS_TITLE (bot giver)
+{
+	debug_fail_mis_title	[DEBUG FAIL]
+}
+
+DEBUG_FAIL_MIS_DESC (bot giver)
+{
+	debug_fail_mis_desc	[Test de mission fail]
+}
+
+DEBUG_FAIL_P_SMF_FAILURE1 ()
+{
+	debug_fail_p_smf_failure1	[Step de mission failed passage au suivant.]
+}
+
+DEBUG_FAIL_P_SMG_TIMER (creature_model creature_kill)
+{
+	debug_fail_p_smg_timer	[Test de contrainte de temps - 5 sec pour tuer $creature_kill$]
+}
+
+DEBUG_FAIL_P_SMG_PERIODE ()
+{
+	debug_fail_p_smg_periode	[Fail de période - passage au step suivant]
+}
+
+DEBUG_CRASH_MIS_TITLE (bot giver)
+{
+	debug_crash_mis_title	[DEBUG CRASH]
+}
+
+DEBUG_CRASH_MIS_DESC (bot giver)
+{
+	debug_crash_mis_desc	[Test de crash]
+}
+
+DEBUG_CRASH_P_SMG_CRASH2 ()
+{
+	debug_crash_p_smg_crash2	[Crash intercepté - fin de mission]
+}
+
+DEBUG_CRASH_P_SMG_CRASH ()
+{
+	debug_crash_p_smg_crash	[Test de crash, simuler un crash et retour sur un step de kill]
+}
+
+DEBUG_TELEPORT_MIS_TITLE (bot giver)
+{
+	debug_teleport_mis_title	[DEBUG TELEPORT]
+}
+
+DEBUG_TELEPORT_MIS_DESC (bot giver)
+{
+	debug_teleport_mis_desc	[Test de teleport]
+}
+
+DEBUG_TELEPORT_P_T2_TELEPORT (bot givervar)
+{
+	debug_teleport_p_t2_teleport	[Vous allez être téléporté]
+}
+
+DEBUG_DIVERS_MIS_TITLE (bot giver)
+{
+	debug_divers_mis_title	[DEBUG DIVERS]
+}
+
+DEBUG_DIVERS_MIS_DESC (bot giver)
+{
+	debug_divers_mis_desc	[Test recv fame, ]
+}
+
+DEBUG_DIVERS_P_T2_TELEPORT (bot givervar)
+{
+	debug_divers_p_t2_teleport	[Test divers]
+}
+
+DEBUG_AI_MIS_TITLE (bot giver)
+{
+	debug_ai_mis_title	[DEBUG AI MESSAGE]
+}
+
+DEBUG_AI_MIS_DESC (bot giver)
+{
+	debug_ai_mis_desc	[Test AI message]
+}
+
+DEBUG_AI_P_T2_GIVER (bot pnj_ai)
+{
+	debug_ai_p_t2_giver	[Début du test d'ai message]
+}
+
+DEBUG_AI_P_DC_AI ()
+{
+	debug_ai_p_dc_ai	[Envoi de message AI]
+}
+
+DEBUG_AI_P_DA_ASSIS ()
+{
+	debug_ai_p_da_assis	[Ai 0 - s'assieds]
+}
+
+DEBUG_AI_P_DA_DEBOUT ()
+{
+	debug_ai_p_da_debout	[AI 1 - se lève]
+}
+
+DEBUG_AI_P_DA_FIN ()
+{
+	debug_ai_p_da_fin	[Fin du test]
+}
+
+DEBUG_AI_P_OVL_AIDEBUG ()
+{
+	debug_ai_p_ovl_aidebug	[Pipo overload]
+}
+
+DEBUG_AI_P_SMG_AIMSS ()
+{
+	debug_ai_p_smg_aimss	[Réponse ai-message]
+}
+
+DEBUG_ESCORT_NEW_MIS_TITLE (bot giver)
+{
+	debug_escort_new_mis_title	[DEBUG ESCORT NEW]
+}
+
+DEBUG_ESCORT_NEW_MIS_DESC (bot giver)
+{
+	debug_escort_new_mis_desc	[Test escort : spawn d'un bot qui fais le tour du camp, distance d'escorte : 10m.]
+}
+
+DEBUG_ESCORT_NEW_P_OVL_ESCORT (bot pnj_escort)
+{
+	debug_escort_new_p_ovl_escort	[Escorter : $pnj_escort$]
+}
+
+DEBUG_ESCORT_NEW_P_T2_ESCORT (bot pnj_escort)
+{
+	debug_escort_new_p_t2_escort	[Tu peux repartir]
+}
+
+DEBUG_ESCORT_NEW_P_BC_ESCORT ()
+{
+	debug_escort_new_p_bc_escort	[Je reprends ma route]
+}
+
+GROUP_DEBUG_VISIT_MIS_TITLE (bot giver)
+{
+	group_debug_visit_mis_title	[DEBUG VISIT de groupe]
+}
+
+GROUP_DEBUG_VISIT_MIS_DESC (bot giver)
+{
+	group_debug_visit_mis_desc	[Test de visit place - accessible par menu contextuel]
+}
+
+GROUP_DEBUG_VISIT_P_MENU_CONTEXT ()
+{
+	group_debug_visit_p_menu_context	[Visite de place - debug]
+}
+
+GROUP_DEBUG_VISIT_P_SMG_COMPASS ()
+{
+	group_debug_visit_p_smg_compass	[Ajout de la place dans le compas]
+}
+
+GROUP_DEBUG_VISIT_P_SMG_COMPASS2 ()
+{
+	group_debug_visit_p_smg_compass2	[Retrait de la zone dans le compas]
+}
+
+GROUP_DEBUG_VISIT_P_OVL_VISIT (place debug_place_visit2)
+{
+	group_debug_visit_p_ovl_visit	[Overload d'objectif de visit : aller à $debug_place_visit2$]
+}
+
+GROUP_DEBUG_VISIT_P_SMG_VISIT_TIMED ()
+{
+	group_debug_visit_p_smg_visit_timed	[Test du timer inside place]
+}
+
+GROUP_DEBUG_VISIT_P_OVL_VISIT2 (place debug_place_visit)
+{
+	group_debug_visit_p_ovl_visit2	[Overload d'objectif de visit : aller à $debug_place_visit$]
+}
+
+GROUP_DEBUG_VISIT_P_T2_GIVER (bot givervar)
+{
+	group_debug_visit_p_t2_giver	[Suite de la mission ...]
+}
+
+GROUP_DEBUG_VISIT_P_OVL_VISIT3 (place debug_place_visit2, place place_camp)
+{
+	group_debug_visit_p_ovl_visit3	[Overload de visit : aller à $place_camp$ OU $debug_place_visit2$]
+}
+
+GROUP_DEBUG_CRAFT_MIS_TITLE (bot giver)
+{
+	group_debug_craft_mis_title	[DEBUG CRAFT de groupe]
+}
+
+GROUP_DEBUG_CRAFT_MIS_DESC (bot giver)
+{
+	group_debug_craft_mis_desc	[Test de la feature de craft - mission mono-instance avec requis de fame matis 50]
+}
+
+GROUP_DEBUG_CRAFT_P_OVL_CRAFT_1 (item i1, int qt1, int qual1, item item_craft, int qlty_craft, int qty_craft)
+{
+	group_debug_craft_p_ovl_craft_1	[overload de craft : crafter $qty_craft$ $item_craft$ de qualité $qlty_craft$]
+}
+
+GROUP_DEBUG_CRAFT_P_OVL_ANY (item item_craft, item item_craft2, item item_craft3, int qlty_craft, int qty_craft)
+{
+	group_debug_craft_p_ovl_any	[Overload de craft any : crafter $qty_craft$ $item_craft$ de qualité $qlty_craft$ et $qty_craft$ 
+$item_craft2$ de qualité $qlty_craft$ OU $qty_craft$ $item_craft3$ de qualité $qlty_craft$]
+}
+
+GROUP_DEBUG_LOOT_MIS_TITLE (bot giver)
+{
+	group_debug_loot_mis_title	[DEBUG LOOT de groupe]
+}
+
+GROUP_DEBUG_LOOT_MIS_DESC (bot giver)
+{
+	group_debug_loot_mis_desc	[Tester le loot - non abandonnable]
+}
+
+GROUP_DEBUG_LOOT_P_OVL_LOOT1_1 (item i1, int qt1, int qual1, item item_loot2, item item_loot3, int qlty_loot, int qty_loot)
+{
+	group_debug_loot_p_ovl_loot1_1	[Overload d'objectif de loot : looter $qty_loot$ $item_loot2$ de qualité $qlty_loot$ et $qty_loot$ $item_loot3$ de qualité $qlty_loot$]
+}
+
+GROUP_DEBUG_LOOT_P_OVL_LOOT1_2 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item item_loot2, item item_loot3, int qlty_loot, int qty_loot)
+{
+	group_debug_loot_p_ovl_loot1_2	[Overload d'objectif de loot : looter $qty_loot$ $item_loot2$ de qualité $qlty_loot$ et $qty_loot$ $item_loot3$ de qualité $qlty_loot$]
+}
+
+GROUP_DEBUG_LOOT_P_SMG_LOOT2 ()
+{
+	group_debug_loot_p_smg_loot2	[Loot avec variables]
+}
+
+GROUP_DEBUG_LOOT_P_OVL_LOOT2 (item item_loot, item item_loot2, item item_loot3, int qlty_loot, int qty_loot)
+{
+	group_debug_loot_p_ovl_loot2	[Overload d'objectif de loot : looter $qty_loot$ $item_loot2$ de qualité $qlty_loot$ et $qty_loot$ $item_loot3$ de qualité $qlty_loot$ OU $qty_loot$ $item_loot$ de qualité $qlty_loot$]
+}
+
+GROUP_DEBUG_KILL_MIS_TITLE (bot giver)
+{
+	group_debug_kill_mis_title	[DEBUG KILL de groupe]
+}
+
+GROUP_DEBUG_KILL_MIS_DESC (bot giver)
+{
+	group_debug_kill_mis_desc	[Test de Kill de créature - rejouable avec un timer de 5 minutes, la mission DEBUG_GIVE ne doit pas etre en cours]
+}
+
+GROUP_DEBUG_KILL_P_OVL_KILL_ANY_1 (creature_model creature_kill, int q1, place place_kill)
+{
+	group_debug_kill_p_ovl_kill_any_1	[Overload de kill : tuer un $creature_kill$ dans $place_kill$]
+}
+
+GROUP_DEBUG_KILL_P_OVL_KILL_GROUP1 (bot_name group_kill)
+{
+	group_debug_kill_p_ovl_kill_group1	[Overload de kill group : tuer les bestioles]
+}
+
+GROUP_DEBUG_KILL_P_OVL_KILL_SERIE ()
+{
+	group_debug_kill_p_ovl_kill_serie	[Tuer les bestiole et bestiole2]
+}
+
+GROUP_DEBUG_TARGET_MIS_TITLE (bot giver)
+{
+	group_debug_target_mis_title	[DEBUG DE TARGET de groupe]
+}
+
+GROUP_DEBUG_TARGET_MIS_DESC (bot giver)
+{
+	group_debug_target_mis_desc	[Test de Target de créatures - demande de porter : icmja (Matis anklet)]
+}
+
+GROUP_DEBUG_TARGET_P_SMG_TARGET1 ()
+{
+	group_debug_target_p_smg_target1	[Target de créature simple]
+}
+
+GROUP_DEBUG_TARGET_P_SMG_TARGET3 ()
+{
+	group_debug_target_p_smg_target3	[Target de NPC]
+}
+
+GROUP_DEBUG_TARGET_P_SMG_TARGET2 ()
+{
+	group_debug_target_p_smg_target2	[Target de créature à l'intérieur d'une place]
+}
+
+GROUP_DEBUG_TARGET_P_SMG_TARGET4 ()
+{
+	group_debug_target_p_smg_target4	[Target de créature à l'intérieur d'une place]
+}
+
+GROUP_DEBUG_TARGET_P_SMG_TARGET5 ()
+{
+	group_debug_target_p_smg_target5	[Target de NPC]
+}
+
+GROUP_DEBUG_CAST_MIS_TITLE (bot giver)
+{
+	group_debug_cast_mis_title	[DEBUG CAST de groupe]
+}
+
+GROUP_DEBUG_CAST_MIS_DESC (bot giver)
+{
+	group_debug_cast_mis_desc	[Test de cast sur créatures, demande d'avoir chaque branche de skill a 50+]
+}
+
+GROUP_DEBUG_CAST_PSMG_CAST1 ()
+{
+	group_debug_cast_psmg_cast1	[Cast de sort simple]
+}
+
+GROUP_DEBUG_CAST_P_SMG_CAST2 ()
+{
+	group_debug_cast_p_smg_cast2	[Cast de sort dans une place]
+}
+
+GROUP_DEBUG_CAST_P_OVL_CASTANY (sbrick spell_cast, sbrick spell_cast2)
+{
+	group_debug_cast_p_ovl_castany	[Overload de cast any : lancer $spell_cast$ OU $spell_cast2$]
+}
+
+GROUP_DEBUG_FORAGE_MIS_TITLE (bot giver)
+{
+	group_debug_forage_mis_title	[DEBUG FORAGE de groupe]
+}
+
+GROUP_DEBUG_FORAGE_MIS_DESC (bot giver)
+{
+	group_debug_forage_mis_desc	[Test de forage]
+}
+
+GROUP_DEBUG_FORAGE_P_OVL_FORAGE_1 (item i1, int qt1, int qual1, item mp_forage)
+{
+	group_debug_forage_p_ovl_forage_1	[Overload d'objectif forage : forage de 3 $mp_forage$ de qualité 20]
+}
+
+GROUP_DEBUG_GIVE_MIS_TITLE (bot giver)
+{
+	group_debug_give_mis_title	[DEBUG GIVE de groupe]
+}
+
+GROUP_DEBUG_GIVE_MIS_DESC (bot giver)
+{
+	group_debug_give_mis_desc	[Test de give item]
+}
+
+GROUP_DEBUG_MONEY_MIS_TITLE (bot giver)
+{
+	group_debug_money_mis_title	[DEBUG MONEY de groupe]
+}
+
+GROUP_DEBUG_MONEY_MIS_DESC (bot giver)
+{
+	group_debug_money_mis_desc	[Test give money]
+}
+
+GROUP_DEBUG_SELL_MIS_TITLE (bot giver)
+{
+	group_debug_sell_mis_title	[DEBUG SELL de groupe]
+}
+
+GROUP_DEBUG_SELL_MIS_DESC (bot giver)
+{
+	group_debug_sell_mis_desc	[Test de sell item]
+}
+
+GROUP_DEBUG_SELL_P_OVL_SELL_1 (item i1, int qt1, int qual1, bot npc_merchant, item item_sell)
+{
+	group_debug_sell_p_ovl_sell_1	[Overload de sell : vendre 1 $item_sell$ de qualité 1]
+}
+
+GROUP_DEBUG_BUY_MIS_TITLE (bot giver)
+{
+	group_debug_buy_mis_title	[DEBUG BUY de groupe (4 membres mini)]
+}
+
+GROUP_DEBUG_BUY_MIS_DESC (bot giver)
+{
+	group_debug_buy_mis_desc	[Test de buy item]
+}
+
+GROUP_DEBUG_BUY_P_OVL_BUY1_1 (item i1, int qt1, int qual1, bot npc_merchant, item item_buy)
+{
+	group_debug_buy_p_ovl_buy1_1	[Overload de buy : acheter 1 $item_buy$ de qualité 1]
+}
+
+GROUP_DEBUG_SPAWN_DO_MIS_TITLE (bot giver)
+{
+	group_debug_spawn_do_mis_title	[DEBUG SPAWN-MISSION de groupe]
+}
+
+GROUP_DEBUG_SPAWN_DO_MIS_DESC (bot giver)
+{
+	group_debug_spawn_do_mis_desc	[Test du spawn et do mission]
+}
+
+GROUP_DEBUG_SPAWN_DO_P_OVL_DOMISSION (creature_model creature_kill, creature_model creature_kill2)
+{
+	group_debug_spawn_do_p_ovl_domission	[Overload : remplir les missions liées : tuer $creature_kill$ ET $creature_kill2$ ]
+}
+
+GROUP_DEBUG_SPAWN_1_MIS_TITLE (bot giver)
+{
+	group_debug_spawn_1_mis_title	[Title not displayed]
+}
+
+GROUP_DEBUG_SPAWN_1_MIS_DESC (bot giver)
+{
+	group_debug_spawn_1_mis_desc	[Not displayed - else bug]
+}
+
+GROUP_DEBUG_SPAWN_2_MIS_TITLE (bot giver)
+{
+	group_debug_spawn_2_mis_title	[Title not displayed]
+}
+
+GROUP_DEBUG_SPAWN_2_MIS_DESC (bot giver)
+{
+	group_debug_spawn_2_mis_desc	[Not displayed - else bug]
+}
+
+GROUP_DEBUG_TALK_MIS_TITLE (bot giver)
+{
+	group_debug_talk_mis_title	[DEBUG TALK de groupe]
+}
+
+GROUP_DEBUG_TALK_MIS_DESC (bot giver)
+{
+	group_debug_talk_mis_desc	[Test de talk npc]
+}
+
+GROUP_DEBUG_TALK_P_T2_TALK (bot givervar)
+{
+	group_debug_talk_p_t2_talk	[Phrase de test. suivie d'un bot-chat]
+}
+
+GROUP_DEBUG_TALK_P_BC_TALK ()
+{
+	group_debug_talk_p_bc_talk	[Phrase de bot-chat de test]
+}
+
+GROUP_DEBUG_TALK_P_T2_ANY1 (bot givervar)
+{
+	group_debug_talk_p_t2_any1	[Phrase de test talk-to any. suivie de bot-chat]
+}
+
+GROUP_DEBUG_TALK_P_BC_TALK_ANY1 ()
+{
+	group_debug_talk_p_bc_talk_any1	[Phrase de bot chat de test.]
+}
+
+GROUP_DEBUG_CHAIN_MIS_TITLE (bot giver)
+{
+	group_debug_chain_mis_title	[DEBUG CHAIN 2 de groupe]
+}
+
+GROUP_DEBUG_CHAIN_MIS_DESC (bot giver)
+{
+	group_debug_chain_mis_desc	[Mission liée - fais suite à DEBUG CHAIN]
+}
+
+GROUP_DEBUG_CHAIN_P_OVL_CHAIN (int amount, bot givervar)
+{
+	group_debug_chain_p_ovl_chain	[Action de give, suite de la mission DEBUG_CHAIN]
+}
+
+GROUP_DEBUG_CHAIN_DO_MIS_TITLE (bot giver)
+{
+	group_debug_chain_do_mis_title	[DEBUG CHAIN de groupe]
+}
+
+GROUP_DEBUG_CHAIN_DO_MIS_DESC (bot giver)
+{
+	group_debug_chain_do_mis_desc	[Debug : test de chain mission - enchaine sur un give 2000dappers a debugger]
+}
+
+GROUP_DEBUG_CHAIN_DO_P_OVL_CHAIN (int amount, bot givervar)
+{
+	group_debug_chain_do_p_ovl_chain	[Action de give, enchaîne sur la mission DEBUG_CHAIN 2]
+}
+
+GROUP_DEBUG_FAIL_MIS_TITLE (bot giver)
+{
+	group_debug_fail_mis_title	[DEBUG FAIL de groupe]
+}
+
+GROUP_DEBUG_FAIL_MIS_DESC (bot giver)
+{
+	group_debug_fail_mis_desc	[Test de mission fail]
+}
+
+GROUP_DEBUG_FAIL_P_SMF_FAILURE1 ()
+{
+	group_debug_fail_p_smf_failure1	[Step de mission failed passage au suivant.]
+}
+
+GROUP_DEBUG_FAIL_P_SMG_TIMER (creature_model creature_kill)
+{
+	group_debug_fail_p_smg_timer	[Test de contrainte de temps - 5 sec pour tuer $creature_kill$]
+}
+
+GROUP_DEBUG_FAIL_P_SMG_PERIODE ()
+{
+	group_debug_fail_p_smg_periode	[Fail de période - passage au step suivant]
+}
+
+GROUP_DEBUG_CRASH_MIS_TITLE (bot giver)
+{
+	group_debug_crash_mis_title	[DEBUG CRASH de groupe]
+}
+
+GROUP_DEBUG_CRASH_MIS_DESC (bot giver)
+{
+	group_debug_crash_mis_desc	[Test de crash]
+}
+
+GROUP_DEBUG_CRASH_P_SMG_CRASH2 ()
+{
+	group_debug_crash_p_smg_crash2	[Crash intercepté - fin de mission]
+}
+
+GROUP_DEBUG_CRASH_P_SMG_CRASH ()
+{
+	group_debug_crash_p_smg_crash	[Test de crash, simuler un crash et retour sur un step de kill]
+}
+
+GROUP_DEBUG_TELEPORT_MIS_TITLE (bot giver)
+{
+	group_debug_teleport_mis_title	[DEBUG TELEPORT de groupe]
+}
+
+GROUP_DEBUG_TELEPORT_MIS_DESC (bot giver)
+{
+	group_debug_teleport_mis_desc	[Test de teleport]
+}
+
+GROUP_DEBUG_TELEPORT_P_T2_TELEPORT (bot givervar)
+{
+	group_debug_teleport_p_t2_teleport	[Vous allez être téléporté]
+}
+
+GROUP_DEBUG_DIVERS_MIS_TITLE (bot giver)
+{
+	group_debug_divers_mis_title	[DEBUG DIVERS de groupe]
+}
+
+GROUP_DEBUG_DIVERS_MIS_DESC (bot giver)
+{
+	group_debug_divers_mis_desc	[Test recv fame, ]
+}
+
+GROUP_DEBUG_DIVERS_P_T2_TELEPORT (bot givervar)
+{
+	group_debug_divers_p_t2_teleport	[Test divers]
+}
+
+GUILD_DEBUG_DIVERS_MIS_TITLE (bot giver)
+{
+	guild_debug_divers_mis_title	[DEBUG DIVERS de guilde]
+}
+
+GUILD_DEBUG_DIVERS_MIS_DESC (bot giver)
+{
+	guild_debug_divers_mis_desc	[Test recv fame, ]
+}
+
+GUILD_DEBUG_DIVERS_P_T2_TELEPORT (bot givervar)
+{
+	guild_debug_divers_p_t2_teleport	[Test divers]
+}
+
+GUILD_DEBUG_TELEPORT_MIS_TITLE (bot giver)
+{
+	guild_debug_teleport_mis_title	[DEBUG TELEPORT de guilde]
+}
+
+GUILD_DEBUG_TELEPORT_MIS_DESC (bot giver)
+{
+	guild_debug_teleport_mis_desc	[Test de teleport]
+}
+
+GUILD_DEBUG_TELEPORT_P_T2_TELEPORT (bot givervar)
+{
+	guild_debug_teleport_p_t2_teleport	[Vous allez être téléporté]
+}
+
+GUILD_DEBUG_CRASH_MIS_TITLE (bot giver)
+{
+	guild_debug_crash_mis_title	[DEBUG CRASH de guilde]
+}
+
+GUILD_DEBUG_CRASH_MIS_DESC (bot giver)
+{
+	guild_debug_crash_mis_desc	[Test de crash]
+}
+
+GUILD_DEBUG_CRASH_P_SMG_CRASH2 ()
+{
+	guild_debug_crash_p_smg_crash2	[Crash intercepté - fin de mission]
+}
+
+GUILD_DEBUG_CRASH_P_SMG_CRASH ()
+{
+	guild_debug_crash_p_smg_crash	[Test de crash, simuler un crash et retour sur un step de kill]
+}
+
+GUILD_DEBUG_FAIL_MIS_TITLE (bot giver)
+{
+	guild_debug_fail_mis_title	[DEBUG FAIL de guilde]
+}
+
+GUILD_DEBUG_FAIL_MIS_DESC (bot giver)
+{
+	guild_debug_fail_mis_desc	[Test de mission fail]
+}
+
+GUILD_DEBUG_FAIL_P_SMF_FAILURE1 ()
+{
+	guild_debug_fail_p_smf_failure1	[Step de mission failed passage au suivant.]
+}
+
+GUILD_DEBUG_FAIL_P_SMG_TIMER (creature_model creature_kill)
+{
+	guild_debug_fail_p_smg_timer	[Test de contrainte de temps - 5 sec pour tuer $creature_kill$]
+}
+
+GUILD_DEBUG_FAIL_P_SMG_PERIODE ()
+{
+	guild_debug_fail_p_smg_periode	[Fail de période - passage au step suivant]
+}
+
+GUILD_DEBUG_CHAIN_DO_MIS_TITLE (bot giver)
+{
+	guild_debug_chain_do_mis_title	[DEBUG CHAIN de guilde]
+}
+
+GUILD_DEBUG_CHAIN_DO_MIS_DESC (bot giver)
+{
+	guild_debug_chain_do_mis_desc	[Debug : test de chain mission - enchaine sur un give 2000dappers a debugger]
+}
+
+GUILD_DEBUG_CHAIN_DO_P_OVL_CHAIN (int amount, bot givervar)
+{
+	guild_debug_chain_do_p_ovl_chain	[Action de give, enchaîne sur la mission DEBUG_CHAIN 2]
+}
+
+GUILD_DEBUG_CHAIN_MIS_TITLE (bot giver)
+{
+	guild_debug_chain_mis_title	[DEBUG CHAIN 2 de guilde]
+}
+
+GUILD_DEBUG_CHAIN_MIS_DESC (bot giver)
+{
+	guild_debug_chain_mis_desc	[Mission liée - fais suite à DEBUG CHAIN]
+}
+
+GUILD_DEBUG_CHAIN_P_OVL_CHAIN (int amount, bot givervar)
+{
+	guild_debug_chain_p_ovl_chain	[Action de give, suite de la mission DEBUG_CHAIN]
+}
+
+GUILD_DEBUG_TALK_MIS_TITLE (bot giver)
+{
+	guild_debug_talk_mis_title	[DEBUG TALK de guilde]
+}
+
+GUILD_DEBUG_TALK_MIS_DESC (bot giver)
+{
+	guild_debug_talk_mis_desc	[Test de talk npc]
+}
+
+GUILD_DEBUG_TALK_P_T2_TALK (bot givervar)
+{
+	guild_debug_talk_p_t2_talk	[Phrase de test. suivie d'un bot-chat]
+}
+
+GUILD_DEBUG_TALK_P_BC_TALK ()
+{
+	guild_debug_talk_p_bc_talk	[Phrase de bot-chat de test]
+}
+
+GUILD_DEBUG_TALK_P_T2_ANY1 (bot givervar)
+{
+	guild_debug_talk_p_t2_any1	[Phrase de test talk-to any. suivie de bot-chat]
+}
+
+GUILD_DEBUG_TALK_P_BC_TALK_ANY1 ()
+{
+	guild_debug_talk_p_bc_talk_any1	[Phrase de bot chat de test.]
+}
+
+GUILD_DEBUG_SPAWN_2_MIS_TITLE (bot giver)
+{
+	guild_debug_spawn_2_mis_title	[Title not displayed]
+}
+
+GUILD_DEBUG_SPAWN_2_MIS_DESC (bot giver)
+{
+	guild_debug_spawn_2_mis_desc	[Not displayed - else bug]
+}
+
+GUILD_DEBUG_SPAWN_1_MIS_TITLE (bot giver)
+{
+	guild_debug_spawn_1_mis_title	[Title not displayed]
+}
+
+GUILD_DEBUG_SPAWN_1_MIS_DESC (bot giver)
+{
+	guild_debug_spawn_1_mis_desc	[Not displayed - else bug]
+}
+
+GUILD_DEBUG_SPAWN_DO_MIS_TITLE (bot giver)
+{
+	guild_debug_spawn_do_mis_title	[DEBUG SPAWN-MISSION de guilde]
+}
+
+GUILD_DEBUG_SPAWN_DO_MIS_DESC (bot giver)
+{
+	guild_debug_spawn_do_mis_desc	[Test du spawn et do mission]
+}
+
+GUILD_DEBUG_SPAWN_DO_P_OVL_DOMISSION (creature_model creature_kill, creature_model creature_kill2)
+{
+	guild_debug_spawn_do_p_ovl_domission	[Overload : remplir les missions liées : tuer $creature_kill$ ET $creature_kill2$ ]
+}
+
+GUILD_DEBUG_BUY_MIS_TITLE (bot giver)
+{
+	guild_debug_buy_mis_title	[DEBUG BUY de guilde]
+}
+
+GUILD_DEBUG_BUY_MIS_DESC (bot giver)
+{
+	guild_debug_buy_mis_desc	[Test de buy item]
+}
+
+GUILD_DEBUG_BUY_P_OVL_BUY1_1 (item i1, int qt1, int qual1, bot npc_merchant, item item_buy)
+{
+	guild_debug_buy_p_ovl_buy1_1	[Overload de buy : acheter 1 $item_buy$ de qualité 1]
+}
+
+GUILD_DEBUG_SELL_MIS_TITLE (bot giver)
+{
+	guild_debug_sell_mis_title	[DEBUG SELL de guilde]
+}
+
+GUILD_DEBUG_SELL_MIS_DESC (bot giver)
+{
+	guild_debug_sell_mis_desc	[Test de sell item]
+}
+
+GUILD_DEBUG_SELL_P_OVL_SELL_1 (item i1, int qt1, int qual1, bot npc_merchant, item item_sell)
+{
+	guild_debug_sell_p_ovl_sell_1	[Overload de sell : vendre 1 $item_sell$ de qualité 1]
+}
+
+GUILD_DEBUG_MONEY_MIS_TITLE (bot giver)
+{
+	guild_debug_money_mis_title	[DEBUG MONEY de guilde]
+}
+
+GUILD_DEBUG_MONEY_MIS_DESC (bot giver)
+{
+	guild_debug_money_mis_desc	[Test give money]
+}
+
+GUILD_DEBUG_GIVE_MIS_TITLE (bot giver)
+{
+	guild_debug_give_mis_title	[DEBUG GIVE de guilde]
+}
+
+GUILD_DEBUG_GIVE_MIS_DESC (bot giver)
+{
+	guild_debug_give_mis_desc	[Test de give item]
+}
+
+GUILD_DEBUG_FORAGE_MIS_TITLE (bot giver)
+{
+	guild_debug_forage_mis_title	[DEBUG FORAGE de guilde]
+}
+
+GUILD_DEBUG_FORAGE_MIS_DESC (bot giver)
+{
+	guild_debug_forage_mis_desc	[Test de forage]
+}
+
+GUILD_DEBUG_FORAGE_P_OVL_FORAGE_1 (item i1, int qt1, int qual1, item mp_forage)
+{
+	guild_debug_forage_p_ovl_forage_1	[Overload d'objectif forage : forage de 3 $mp_forage$ de qualité 20]
+}
+
+GUILD_DEBUG_CAST_MIS_TITLE (bot giver)
+{
+	guild_debug_cast_mis_title	[DEBUG CAST de guilde]
+}
+
+GUILD_DEBUG_CAST_MIS_DESC (bot giver)
+{
+	guild_debug_cast_mis_desc	[Test de cast sur créatures, demande d'avoir chaque branche de skill a 50+]
+}
+
+GUILD_DEBUG_CAST_PSMG_CAST1 ()
+{
+	guild_debug_cast_psmg_cast1	[Cast de sort simple]
+}
+
+GUILD_DEBUG_CAST_P_SMG_CAST2 ()
+{
+	guild_debug_cast_p_smg_cast2	[Cast de sort dans une place]
+}
+
+GUILD_DEBUG_CAST_P_OVL_CASTANY (sbrick spell_cast, sbrick spell_cast2)
+{
+	guild_debug_cast_p_ovl_castany	[Overload de cast any : lancer $spell_cast$ OU $spell_cast2$]
+}
+
+GUILD_DEBUG_TARGET_MIS_TITLE (bot giver)
+{
+	guild_debug_target_mis_title	[DEBUG DE TARGET de guilde]
+}
+
+GUILD_DEBUG_TARGET_MIS_DESC (bot giver)
+{
+	guild_debug_target_mis_desc	[Test de Target de créatures - demande de porter : icmja (Matis anklet)]
+}
+
+GUILD_DEBUG_TARGET_P_SMG_TARGET1 ()
+{
+	guild_debug_target_p_smg_target1	[Target de créature simple]
+}
+
+GUILD_DEBUG_TARGET_P_SMG_TARGET3 ()
+{
+	guild_debug_target_p_smg_target3	[Target de NPC]
+}
+
+GUILD_DEBUG_TARGET_P_SMG_TARGET2 ()
+{
+	guild_debug_target_p_smg_target2	[Target de créature à l'intérieur d'une place]
+}
+
+GUILD_DEBUG_TARGET_P_SMG_TARGET4 ()
+{
+	guild_debug_target_p_smg_target4	[Target de créature à l'intérieur d'une place]
+}
+
+GUILD_DEBUG_TARGET_P_SMG_TARGET5 ()
+{
+	guild_debug_target_p_smg_target5	[Target de NPC]
+}
+
+GUILD_DEBUG_KILL_MIS_TITLE (bot giver)
+{
+	guild_debug_kill_mis_title	[DEBUG KILL de guilde]
+}
+
+GUILD_DEBUG_KILL_MIS_DESC (bot giver)
+{
+	guild_debug_kill_mis_desc	[Test de Kill de créature - rejouable avec un timer de 5 minutes, la mission DEBUG_GIVE ne doit pas etre en cours]
+}
+
+GUILD_DEBUG_KILL_P_OVL_KILL_ANY_1 (creature_model creature_kill, int q1, place place_kill)
+{
+	guild_debug_kill_p_ovl_kill_any_1	[Overload de kill : tuer un $creature_kill$ dans $place_kill$]
+}
+
+GUILD_DEBUG_KILL_P_OVL_KILL_GROUP1 (bot_name group_kill)
+{
+	guild_debug_kill_p_ovl_kill_group1	[Overload de kill group : tuer les bestioles]
+}
+
+GUILD_DEBUG_KILL_P_OVL_KILL_SERIE ()
+{
+	guild_debug_kill_p_ovl_kill_serie	[Tuer les bestiole et bestiole2]
+}
+
+GUILD_DEBUG_LOOT_MIS_TITLE (bot giver)
+{
+	guild_debug_loot_mis_title	[DEBUG LOOT de guilde]
+}
+
+GUILD_DEBUG_LOOT_MIS_DESC (bot giver)
+{
+	guild_debug_loot_mis_desc	[Tester le loot - non abandonnable]
+}
+
+GUILD_DEBUG_LOOT_P_OVL_LOOT1_1 (item i1, int qt1, int qual1, item item_loot2, item item_loot3, int qlty_loot, int qty_loot)
+{
+	guild_debug_loot_p_ovl_loot1_1	[Overload d'objectif de loot : looter $qty_loot$ $item_loot2$ de qualité $qlty_loot$ et $qty_loot$ $item_loot3$ de qualité $qlty_loot$]
+}
+
+GUILD_DEBUG_LOOT_P_OVL_LOOT1_2 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item item_loot2, item item_loot3, int qlty_loot, int qty_loot)
+{
+	guild_debug_loot_p_ovl_loot1_2	[Overload d'objectif de loot : looter $qty_loot$ $item_loot2$ de qualité $qlty_loot$ et $qty_loot$ $item_loot3$ de qualité $qlty_loot$]
+}
+
+GUILD_DEBUG_LOOT_P_SMG_LOOT2 ()
+{
+	guild_debug_loot_p_smg_loot2	[Loot avec variables]
+}
+
+GUILD_DEBUG_LOOT_P_OVL_LOOT2 (item item_loot, item item_loot2, item item_loot3, int qlty_loot, int qty_loot)
+{
+	guild_debug_loot_p_ovl_loot2	[Overload d'objectif de loot : looter $qty_loot$ $item_loot2$ de qualité $qlty_loot$ et $qty_loot$ $item_loot3$ de qualité $qlty_loot$ OU $qty_loot$ $item_loot$ de qualité $qlty_loot$]
+}
+
+GUILD_DEBUG_CRAFT_MIS_TITLE (bot giver)
+{
+	guild_debug_craft_mis_title	[DEBUG CRAFT de guilde]
+}
+
+GUILD_DEBUG_CRAFT_MIS_DESC (bot giver)
+{
+	guild_debug_craft_mis_desc	[Test de la feature de craft - mission mono-instance avec requis de fame matis 50]
+}
+
+GUILD_DEBUG_CRAFT_P_OVL_CRAFT_1 (item i1, int qt1, int qual1, item item_craft, int qlty_craft, int qty_craft)
+{
+	guild_debug_craft_p_ovl_craft_1	[overload de craft : crafter $qty_craft$ $item_craft$ de qualité $qlty_craft$]
+}
+
+GUILD_DEBUG_CRAFT_P_OVL_ANY (item item_craft, item item_craft2, item item_craft3, int qlty_craft, int qty_craft)
+{
+	guild_debug_craft_p_ovl_any	[Overload de craft any : crafter $qty_craft$ $item_craft$ de qualité $qlty_craft$ et $qty_craft$ 
+$item_craft2$ de qualité $qlty_craft$ OU $qty_craft$ $item_craft3$ de qualité $qlty_craft$]
+}
+
+GUILD_DEBUG_VISIT_MIS_TITLE (bot giver)
+{
+	guild_debug_visit_mis_title	[DEBUG VISIT de guilde]
+}
+
+GUILD_DEBUG_VISIT_MIS_DESC (bot giver)
+{
+	guild_debug_visit_mis_desc	[Test de visit place - accessible par menu contextuel]
+}
+
+GUILD_DEBUG_VISIT_P_MENU_CONTEXT ()
+{
+	guild_debug_visit_p_menu_context	[Visite de place - debug]
+}
+
+GUILD_DEBUG_VISIT_P_SMG_COMPASS ()
+{
+	guild_debug_visit_p_smg_compass	[Ajout de la place dans le compas]
+}
+
+GUILD_DEBUG_VISIT_P_SMG_COMPASS2 ()
+{
+	guild_debug_visit_p_smg_compass2	[Retrait de la zone dans le compas]
+}
+
+GUILD_DEBUG_VISIT_P_OVL_VISIT (place debug_place_visit2)
+{
+	guild_debug_visit_p_ovl_visit	[Overload d'objectif de visit : aller à $debug_place_visit2$]
+}
+
+GUILD_DEBUG_VISIT_P_SMG_VISIT_TIMED ()
+{
+	guild_debug_visit_p_smg_visit_timed	[Test du timer inside place]
+}
+
+GUILD_DEBUG_VISIT_P_OVL_VISIT2 (place debug_place_visit)
+{
+	guild_debug_visit_p_ovl_visit2	[Overload d'objectif de visit : aller à $debug_place_visit$]
+}
+
+GUILD_DEBUG_VISIT_P_T2_GIVER (bot givervar)
+{
+	guild_debug_visit_p_t2_giver	[Suite de la mission ...]
+}
+
+GUILD_DEBUG_VISIT_P_OVL_VISIT3 (place debug_place_visit2, place place_camp)
+{
+	guild_debug_visit_p_ovl_visit3	[Overload de visit : aller à $place_camp$ OU $debug_place_visit2$]
+}
+

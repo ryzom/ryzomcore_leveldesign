@@ -1,0 +1,49 @@
+﻿R_04_03_MIS_TITLE (bot giver)
+{
+	r_04_03_mis_title	[L'étude des ressources de bois]
+}
+
+R_04_03_MIS_DESC (bot giver)
+{
+	r_04_03_mis_desc	[Prospection et collecte de matières premières pour l'armurier]
+}
+
+R_04_03_P_LDF_INTENDANT_INTRO (bot crafter, bot harvester, int qty)
+{
+	r_04_03_p_ldf_intendant_intro	[Bonjour à toi l'ami ! \n
+Nous avons besoin de bois de Motega et d'Abhaya pour l'armurier de la ville. \n
+Le bois de Motega est très peu encombrant et offre des facilités à l'esquive. Le bois d'Abhaya entre lui aussi dans la fabrication des armures, car il est réputé pour sa légèreté.{break}$crafter$ a besoin de $qty$ bûches de chaque pour réaliser les plastrons de la garnison. Cela nécessite forcement d'excellentes matières premières et de grande qualité ; fournis-les et je te récompenserai en te confiant des informations au sujet de certaines ressources.{break}Une dernière chose, commence par aller voir $harvester$ elle pourra te conseiller sur l'endroit où trouver ces materiaux.]
+}
+
+R_04_03_T2_HARVESTER (bot harvester, bot givervar)
+{
+	r_04_03_t2_harvester	[Salutations, $givervar$ m'envois]
+}
+
+R_04_03_P_BC_HARVESTER (bot givervar, place zone)
+{
+	r_04_03_p_bc_harvester	[Salutations, si $givervar$ t'envoie, c'est qu'il a une bonne raison de le faire. Je suis prête à t'aider dans ta tâche.{break}Tu trouveras le bois de Motega à $zone$. Longe la façade de la montagne au nord, à mi-chemin entre les frontières, tu trouveras au sol des protubérances.\n
+Prospecte les environs en automne ou en hiver, de jour, et quand il fait mauvais temps.{break}
+Ensuite, le bois d'Abhaya est à 200 mètres à l'est. Prospecte les environs en automne ou en hiver, de jour, et quand il fait beau.{break}Sur ce, je te souhaite bien du courage.]
+}
+
+R_04_03_SM_RAMENE (bot crafter)
+{
+	r_04_03_sm_ramene	[&AMB&Bravo, vous devez à présent ramener le bois à $crafter$]
+}
+
+R_04_03_P_BC_ENDCRAFTER (bot giver)
+{
+	r_04_03_p_bc_endcrafter	[Merci, je vais a présent pouvoir me mettre au travail, retournez voir $giver$ pour votre récompense.]
+}
+
+R_04_03_T2_GIVERVAR (bot giver, bot crafter)
+{
+	r_04_03_t2_givervar	[J'ai livré le bois à $crafter$.]
+}
+
+R_04_03_P_BC_ENDRITE (place pyr)
+{
+	r_04_03_p_bc_endrite	[Tu as été à la hauteur dans cette difficile prospection. Les artisans de $pyr$ m'ont demandé de te remercier en leurs noms. Voici quelques indications relatives aux ressources de notre région et celles des zoraï.{break}Fais en bon usage.]
+}
+

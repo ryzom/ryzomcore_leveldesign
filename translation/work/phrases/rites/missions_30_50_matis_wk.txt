@@ -1,0 +1,381 @@
+﻿CWINTROMATIS_REPONSE_OFFICE (place city, bot givervar, bot player)
+{
+	cwintromatis_reponse_office	[Bonjour $player$. Si $givervar$ vous envoie c'est que vous venez d'arriver à $city$. Vous ne connaissez sans doute pas encore la ville. Je vais vous donner une liste de lieux à visiter, ainsi vous pourrez vous familiariser avec notre belle citée. N'hésitez pas à venir me voir si vous avez besoin d'indications pour trouver quelqu'un, après tout je suis là pour ça. Lorsque vous aurez terminé votre tour, retournez voir $givervar$, il devrait avoir quelque chose pour vous.]
+}
+
+CWINTROMATIS_SHOPS_LOW_SYSMES (place shops_low)
+{
+	cwintromatis_shops_low_sysmes	[&AMB&Vous êtes à $shops_low$. Ici vous pourrez trouver tous les magasins et les entraineurs dont vous aurez besoin]
+}
+
+CWINTROMATIS_SHOPS_TRAINERS_OVERLOAD (place trainers)
+{
+	cwintromatis_shops_trainers_overload	[Rendez-vous à $trainers$]
+}
+
+CWINTROMATIS_TRAINERS_SYSMES (place trainers)
+{
+	cwintromatis_trainers_sysmes	[&AMB&Vous êtes à $trainers$. Ici vous pourrez trouver les entraineurs qui vous permettront de progresser dans la voie que vous aurez choisi]
+}
+
+CWINTROMATIS_OUTOFROOM_MSG ()
+{
+	cwintromatis_outofroom_msg	[&SYS&Vous n'avez plus de place dans votre inventaire. Demandez à nouveau l'objet quand vous en aurez fait.]
+}
+
+CWINTROMATIS_OUTOFROOM_OVERLOAD (bot givervar)
+{
+	cwintromatis_outofroom_overload	[Faites de la place avant de demander à nouveau l'objet.]
+}
+
+CWINTROMATIS_OUTOFROOM_PHRASE (bot givervar)
+{
+	cwintromatis_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+CWINTROMATIS_OUTOFROOM_BOTCHAT ()
+{
+	cwintromatis_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+CWMF01_TITLE (bot giver)
+{
+	cwmf01_title	[De la peau pour l'artisan royal]
+}
+
+CWMF01_DESC (bot giver)
+{
+	cwmf01_desc	[L'artisan royal a besoin que vous lui rapportiez de la peau de Bodoc.]
+}
+
+CWMF01_INSTRUCTIONS (bot artisan, bot player)
+{
+	cwmf01_instructions	[Bonjour $player$. Si vous souhaitez rendre service à notre grand royaume, vous devriez commencer par aller voir $artisan$ l'artisan royal, je crois qu'il a besoin d'aide. Vous le trouverez dans la serre royale.]
+}
+
+CWMF01_STEP1_PHRASE (bot artisan, bot givervar)
+{
+	cwmf01_step1_phrase	[Bonjour, $givervar$ m'envoie pour vous aider.]
+}
+
+CWMF01_DIALOG_ARTISAN (creature_model bodoc)
+{
+	cwmf01_dialog_artisan	[Bonjour. Vous souhaitez vous intégrer à la vie de notre citée ? Alors sachez que l'une des plus grandes fiertés de notre peuple est son talent pour l'artisanat et son goût de l'esthétique. Je suis moi-même un artisan au service de sa Majesté. Ma prochaine composition nécessite de la peau de Bodoc mais je ne peux pas me permettre de mettre ma vie en danger. J'aimerais que vous m'en rapportiez. Vous pourrez en trouver sur les $bodoc$ au Sud de la ville.]
+}
+
+CWMF01_OUTOFROOM_MSG ()
+{
+	cwmf01_outofroom_msg	[&SYS&Vous n'avez plus de place dans votre inventaire. Demandez à nouveau l'objet quand vous en aurez fait.]
+}
+
+CWMF01_OUTOFROOM_OVERLOAD (bot artisan)
+{
+	cwmf01_outofroom_overload	[Faites de la place avant de demander à nouveau l'objet.]
+}
+
+CWMF01_OUTOFROOM_PHRASE (bot artisan)
+{
+	cwmf01_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+CWMF01_OUTOFROOM_BOTCHAT ()
+{
+	cwmf01_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+CWMF01_DIALOG_REWARD ()
+{
+	cwmf01_dialog_reward	[Très bien, c'est parfait. Les artisans ont besoin des meilleurs matériaux pour parvenir à fabriquer des objets de qualité. L'aide des guerriers nous est donc très utile. Voici un petit quelque chose pour vous remercier car tout travail mérite salaire.]
+}
+
+CWMF02_TITLE (bot giver)
+{
+	cwmf02_title	[Sécuriser la route]
+}
+
+CWMF02_DESC (bot giver, place city)
+{
+	cwmf02_desc	[Aidez les autorités à sécuriser les routes d'accès à $city$]
+}
+
+CWMF02_INSTRUCTIONS (bot chef, bot player)
+{
+	cwmf02_instructions	[$player$ vous tombez bien. $chef$ la chef de la garde royale recherche des homins doués pour le combat. Vous devriez aller la voir pour lui proposer vos services. Vous la reconnaitrez facilement à son armure noire.]
+}
+
+CWMF02_STEP1_PHRASE (bot chef)
+{
+	cwmf02_step1_phrase	[Mes respects. On m'a dit que vous cherchiez des guerriers.]
+}
+
+CWMF02_DIALOG_ARTISAN (bot givervar)
+{
+	( self.gender = male )
+		cwmf02_dialog_artisan_m	[Hmmm qui vous a dit ça ? $givervar$ ? Toujours à chercher à rendre service aux autres celui-là, un vrai Tryker ! Mais la compassion n'a rien à faire sur un champ de bataille ! Quoi qu'il en soit maintenant que vous êtes ici vous pourriez effectivement nous rendre service.{break}Des voyageurs se sont plaints car ils ont été attaqués par quelques carnivores sur les routes d'accès de la ville. Ces faibles ne pouvant pas se défendre seuls on m'a demandé de faire quelque chose mais je me refuse de demander à mes homins d'effectuer une si basse tâche. On peut dire ce que l'on veut de moi, mais je ne suis pas ingrate, vous serez récompensé si vous vous chargez de cette mission pour le compte de la garde.]
+	( self.gender = female )
+		cwmf02_dialog_artisan_f	[Hmmm qui vous a dit ça ? $givervar$ ? Toujours à chercher à rendre service aux autres celui-là, un vrai Tryker ! Mais la compassion n'a rien à faire sur un champ de bataille ! Quoi qu'il en soit maintenant que vous êtes ici vous pourriez effectivement nous rendre service.{break}Des voyageurs se sont plaints car ils ont été attaqués par quelques carnivores sur les routes d'accès de la ville. Ces faibles ne pouvant pas se défendre seuls on m'a demandé de faire quelque chose mais je me refuse de demander à mes homins d'effectuer une si basse tâche. On peut dire ce que l'on veut de moi, mais je ne suis pas ingrate, vous serez récompensée si vous vous chargez de cette mission pour le compte de la garde.]
+}
+
+CWMF02_STEP3_PHRASE (bot chef)
+{
+	cwmf02_step3_phrase	[J'ai rempli ma mission.]
+}
+
+CWMF02_DIALOG_REWARD ()
+{
+	cwmf02_dialog_reward	[Et bien je vois que vous êtes moins faible que vous n'en avez l'air. Tenez, je vous ai dit que je n'étais pas ingrate et je le prouve. Maintenant allez vous-en.]
+}
+
+CWMF03_TITLE (bot giver, faction greenseed)
+{
+	cwmf03_title	[Une course pour les $greenseed$]
+}
+
+CWMF03_DESC (bot giver, place avalae, faction greenseed)
+{
+	cwmf03_desc	[Les $greenseed$ ont un paquet à faire parvenir jusqu'à $avalae$.]
+}
+
+CWMF03_INSTRUCTIONS (bot chef, faction greenseed, bot supplier)
+{
+	cwmf03_instructions	[Alors vous avez fait connaissance avec $chef$ ? Cette femme a un sacré caractère mais elle n'a pas mauvais fond. La prochaine personne que vous allez devoir aider est d'une nature plus agréable. Il s'agit de $supplier$ une membre de la tribu des $greenseed$. Je vous indique leur emplacement sur votre carte.]
+}
+
+CWMF03_STEP1_PHRASE (bot supplier, bot givervar)
+{
+	cwmf03_step1_phrase	[Bonjour, $givervar$ m'envoie.]
+}
+
+CWMF03_DIALOG_SUPPLIER (place avalae, bot givervar, faction greenseed)
+{
+	cwmf03_dialog_supplier	[Ha bonjour. Bienvenue chez les $greenseed$ ! Je vois que $givervar$ sait toujours trouver les homins qu'il faut. J'aurais effectivement un service à vous demander. Je dois livrer ce paquet à $avalae$ mais d'autres affaires m'occupent ici. Pourriez-vous le livrer pour moi ?]
+}
+
+CWMF03_DIALOG_VENDEUR ()
+{
+	cwmf03_dialog_vendeur	[Ha merci bien, j'attendais ce colis avec impatience ! Mais dites moi...peut-être pourriez-vous me rendre un petit service. Des bandits m'ont volé ma recette de la journée. Ils sont partis en direction du cimetière au Sud-Est du village. Je vous serais très reconnaissante si vous arriviez à récupéré mon bien.]
+}
+
+CWMF03_STEP3_OVERLOAD (place cimetiere, place avalae)
+{
+	cwmf03_step3_overload	[Rendez-vous au cimetière d'$avalae$ et trouvez les bandits]
+}
+
+CWMF03_STEP4_FAIL_SYSMES (bot vendeur)
+{
+	cwmf03_step4_fail_sysmes	[&AMB&Vous n'avez pas réussi à mettre la main sur la bourse de $vendeur$. Revenez plus tard.]
+}
+
+CWMF03_STEP4_SUCCESS_SYSMES ()
+{
+	cwmf03_step4_success_sysmes	[&AMB&Vous trouvez une bourse sur la dépouille d'un bandit.]
+}
+
+CWMF03_DIALOG_REWARD ()
+{
+	cwmf03_dialog_reward	[Vous avez réussit à récupérer ma bourse ?! Et bien vous au moins on peut vous faire confiance ! Tenez pour vous remercier.]
+}
+
+CWMC01_TITLE (bot giver)
+{
+	cwmc01_title	[Des bottes pour le palais]
+}
+
+CWMC01_DESC (bot giver, bot artisan)
+{
+	cwmc01_desc	[$artisan$ a besoin de bottes.]
+}
+
+CWMC01_INSTRUCTIONS (bot artisan, bot player)
+{
+	cwmc01_instructions	[Bonjour $player$. Si vous souhaitez rendre service à notre grand royaume, vous devriez commencer par aller voir $artisan$ l'artisan royal, je crois qu'il a besoin d'aide. Vous le trouverez dans la serre royale.]
+}
+
+CWMC01_STEP1_PHRASE (bot artisan, bot givervar)
+{
+	cwmc01_step1_phrase	[Bonjour, $givervar$ m'envoie pour vous aider.]
+}
+
+CWMC01_DIALOG_ARTISAN ()
+{
+	( self.gender = male )
+		cwmc01_dialog_artisan_m	[Bonjour. Vous souhaitez vous intégrer à la vie de notre citée ? Alors sachez que l'une des plus grandes fiertés de notre peuple est son talent pour l'artisanat et son goût de l'esthétique. Je suis moi-même un artisan au service de sa Majesté. Je n'ai cependant pas le temps de m'occuper de tout et je dois parfois déléguer les travaux les moins importants. Il se trouve justement qu'une commande de bottes légères pour le palais viens d'arriver mais je ne peux malheureusement pas m'en occuper pour l'instant. Si vous avez les capacités d'en fabriquer quelques une celà m'avancerait grandement. Bien sûr vous serez récompensé.]
+	( self.gender = female )
+		cwmc01_dialog_artisan_f	[Bonjour. Vous souhaitez vous intégrer à la vie de notre citée ? Alors sachez que l'une des plus grandes fiertés de notre peuple est son talent pour l'artisanat et son goût de l'esthétique. Je suis moi-même un artisan au service de sa Majesté. Je n'ai cependant pas le temps de m'occuper de tout et je dois parfois déléguer les travaux les moins importants. Il se trouve justement qu'une commande de bottes légères pour le palais viens d'arriver mais je ne peux malheureusement pas m'en occuper pour l'instant. Si vous avez les capacités d'en fabriquer quelques une celà m'avancerait grandement. Bien sûr vous serez récompensée.]
+}
+
+CWMC01_STEP2_OVERLOAD ()
+{
+	cwmc01_step2_overload	[Créez 5 paires de bottes légères de n'importe quel peuple (plan 1) de qualité au moins égale à 10]
+}
+
+CWMC01_STEP3_OVERLOAD (bot chef)
+{
+	cwmc01_step3_overload	[Donner les bottes à $chef$]
+}
+
+CWMC01_DIALOG_REWARD ()
+{
+	cwmc01_dialog_reward	[Ho très bon travail. Vous me semblez en bonne voie pour devenir un excellent artisan. Vous m'avez bien aidé. Tenez, prenez ceci, ça pourra vous servir.]
+}
+
+CWMC02_TITLE (bot giver)
+{
+	cwmc02_title	[Des lances pour les apprentis (1/2)]
+}
+
+CWMC02_DESC (bot giver)
+{
+	cwmc02_desc	[Les apprentis guerriers d'Yrkanis ont besoin de lances d'entrainement.]
+}
+
+CWMC02_INSTRUCTIONS (bot artisan, bot chef)
+{
+	cwmc02_instructions	[$artisan$ m'a dit que lui aviez bien rendu service. Je vois qu'on peut vous faire confiance. Vous devriez aller voir $chef$ la chef de la garde. Elle n'a pas très bon caractère mais comme elle a besoin de vos talents elle devrait faire un effort.]
+}
+
+CWMC02_STEP1_PHRASE (bot chef)
+{
+	cwmc02_step1_phrase	[Bonjour, il parrait que vous avez besoin d'un artisan ?]
+}
+
+CWMC02_DIALOG_CHEF (bot artisan, bot givervar)
+{
+	cwmc02_dialog_chef	[Je suppose que c'est $givervar$ qui vous envoie. Il ne sait vraiment pas tenir sa langue. Et bien puisque vous êtes au courant, oui nous avons besoin des services d'artisans. Nos nouvelles recrues cassent trop vite les lances d'entrainement qui leur sont confiées et nos stocks diminuent à vue d'oeil.{break}Quoi ? Vous ne savez pas fabriquer de lance d'entrainement ? Mais quel artisan êtes vous donc ?! Vous me faites perdre mon temps, allez prendre des cours auprès de $artisan$ avant que votre incapacité ne me fasse sortir de mes gonds.]
+}
+
+CWMC02_STEP1_PHRASE2 (bot artisan)
+{
+	cwmc02_step1_phrase2	[Bonjour. Pourriez-vous m'apprendre à fabriquer des lances d'entrainement ?]
+}
+
+CWMC02_DIALOG_ARTISAN (place avalae, bot plante)
+{
+	cwmc02_dialog_artisan	[Bonjour. Je pourrais effectivement vous apprendre à fabriquer ces armes d'entrainement. Mais il serait plus intéressant de l'apprendre par vous même. Leur constitution est inspirée de la Nature. En l'observant attentivement vous devriez trouver vous-même comment parvenir à vos fins.{break}Il existe au Sud d'$avalae$ une plante appelée $plante$. Allez l'observer, étudiez sa constitution, vous devriez rapidement avoir une idée de comment fabriquer une lance.]
+}
+
+CWMC02_STEP3_OVERLOAD (bot plante, place avalae)
+{
+	cwmc02_step3_overload	[Trouvez le $plante$ au Sud d'$avalae$]
+}
+
+CWMC02_STEP3_PHRASE (bot plante)
+{
+	cwmc02_step3_phrase	[Etudier le $plante$]
+}
+
+CWMC02_REWARD_SYSMES (bot plante)
+{
+	cwmc02_reward_sysmes	[&AMB&En observant le $plante$ vous comprenez comment fabriquer une lance d'entrainement]
+}
+
+CWMC03_TITLE (bot giver)
+{
+	cwmc03_title	[Des lances pour les apprentis (2/2)]
+}
+
+CWMC03_DESC (bot giver)
+{
+	cwmc03_desc	[Les apprentis guerriers d'Yrkanis ont besoin de lances d'entrainement.]
+}
+
+CWMC03_STEP1_ROLEPLAY_1 (item i1, int qt1, int qual1, place city)
+{
+	cwmc03_step1_roleplay_1	[Fabriquer 5 piques d'entrainement pour les apprentis guerriers de $city$]
+}
+
+CWMC03_DIALOG_REWARD ()
+{
+	cwmc03_dialog_reward	[Hmmf... Je suppose que je dois vous remercier. Tenez prenez ça, je crois que vous le méritez. Malgré leur faiblesse, les artisans sont les meilleurs amis des guerriers. Chacun dépend de l'autre, vous vous en rendrez bien vite compte.]
+}
+
+CWMH01_TITLE (bot giver)
+{
+	cwmh01_title	[Des os pour l'artisan royal]
+}
+
+CWMH01_DESC (bot giver)
+{
+	cwmh01_desc	[L'artisan royal a besoin d'os pour sa prochaine création.]
+}
+
+CWMH01_INSTRUCTIONS (bot artisan, bot player)
+{
+	cwmh01_instructions	[Bonjour $player$. Vous devez sans doute savoir que la civilisation Matis accorde une grande importance à l'artisanat. $artisan$, l'artisan royal se trouve habituellement dans la Serre. Vous devriez aller le voir et lui proposer votre aide.]
+}
+
+CWMH01_STEP1_PHRASE (bot artisan, bot givervar)
+{
+	cwmh01_step1_phrase	[Bonjour, $givervar$ m'envoie pour vous aider.]
+}
+
+CWMH01_DIALOG_ARTISAN (place arene, bot givervar)
+{
+	cwmh01_dialog_artisan	[Bonjour. $givervar$ sait que j'ai toujours besoin de main d'oeuvre. Les Maîtres artisans font partie des personnes les plus respectées de notre citée. Toutefois, nous ne devons pas oublier qu'un artisan n'est rien sans bons fournisseurs de matières premières. Il se trouve que j'ai justement besoin de certaines matières mais que je manque de temps pour me charger de les récolter moi-même. Avec quelques compétences de forage vous devriez pouvoir me rendre ce service.{break}Allez à l'entrée de l'$arene$. Là bas vous devriez voir un énorme crane gisant sur le sol. Il s'agit du squelette d'une antique créature. En forant autour de ce crane, vous devriez trouver des os. Rapportez-m'en une dizaine et je vous récompenserai comme il se doit.]
+}
+
+CWMH01_DIALOG_REWARD ()
+{
+	cwmh01_dialog_reward	[Merci beaucoup. Ca sera parfait ! Un bon artisan doit toujours pouvoir compter sur un bon foreur. Tenez, prenez ceci en remerciement.]
+}
+
+CWMH02_TITLE (bot giver)
+{
+	cwmh02_title	[Des racines pour le barman]
+}
+
+CWMH02_DESC (bot giver, place city)
+{
+	cwmh02_desc	[Le barman d'$city$ a besoin de racines pour donner du goût à ses boissons.]
+}
+
+CWMH02_INSTRUCTIONS (bot artisan, bot barman, place city)
+{
+	cwmh02_instructions	[Vous avez bien rendu service à $artisan$, je vous félicite. Je crois que $barman$ le barman d'$city$ aurait besoin de l'aide d'un foreur. Vous devriez aller voir si vous pouvez lui rendre service.]
+}
+
+CWMH02_STEP1_PHRASE (bot barman, bot givervar)
+{
+	cwmh02_step1_phrase	[Bonjour, $givervar$ m'envoie pour vous aider.]
+}
+
+CWMH02_DIALOG_BARMAN ()
+{
+	cwmh02_dialog_barman	[Bonjour. Vous tombez bien. Vous avez des compétences en forage ? J'aurais besoin de racines spéciales pour donner du goût à mes boissons. Vous pourrez en trouver en creusant à l'Ouest de la ville, là ou deux racines géantes sortent du sol. Attention j'ai besoin de racines de qualité fine.]
+}
+
+CWMH02_DIALOG_REWARD ()
+{
+	cwmh02_dialog_reward	[Parfait ! Grâce à vous mes clients vont pouvoir se régaler ! Tenez, prenez-ça, c'est pour vous.]
+}
+
+CWMH03_TITLE (bot giver)
+{
+	cwmh03_title	[Des spores pour le médecin]
+}
+
+CWMH03_DESC (bot giver, place city)
+{
+	cwmh03_desc	[Le médecin d'$city$ a besoin de spores pour fabriquer un médicament.]
+}
+
+CWMH03_INSTRUCTIONS (place city, bot medecin, bot player)
+{
+	cwmh03_instructions	[$player$ vous tombez bien. $medecin$ le médecin d'$city$ a besoin de quelqu'un qui pourrait aller lui chercher un ingrédient nécessaire à la préparation d'un remède. Vous devriez aller le voir sans tarder.]
+}
+
+CWMH03_STEP1_PHRASE (bot medecin, bot givervar)
+{
+	cwmh03_step1_phrase	[Bonjour. $givervar$ m'a dit de venir vous aider.]
+}
+
+CWMH03_DIALOG_MEDECIN (place monticule)
+{
+	cwmh03_dialog_medecin	[Jena soit louée. Enfin quelqu'un pour m'aider. J'ai absolument besoin de spores de psykoplas pour fabriquer un remède. On en trouve principalement sur le $monticule$. S'il vous plait, allez-y vite, près du gros arbre au sommet du $monticule$ vous devriez en trouver. Attention ces spores sont de choix.]
+}
+
+CWMH03_DIALOG_REWARD ()
+{
+	cwmh03_dialog_reward	[Merci beaucoup, avec ça je vais pouvoir fabriquer mon remède. Prenez donc ceci, c'est une maigre récompense pour ce que vous venez de faire.]
+}
+

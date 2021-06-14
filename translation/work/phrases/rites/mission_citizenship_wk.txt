@@ -1,0 +1,2198 @@
+﻿CITIZENSHIP_FYROS_P_TITLE (bot giver)
+{
+	citizenship_fyros_p_title	[Rite de citoyenneté Fyros]
+}
+
+CITIZENSHIP_FYROS_P_DESC (bot giver)
+{
+	( self.gender = male )
+		citizenship_fyros_p_desc_m	[En accomplissant ce rite, vous allez devenir un citoyen de l'empire fyros.]
+	( self.gender = female )
+		citizenship_fyros_p_desc_f	[En accomplissant ce rite, vous allez devenir une citoyenne de l'empire fyros.]
+}
+
+CITIZENSHIP_FYROS_P_MENU ()
+{
+	( self.gender = male )
+		citizenship_fyros_p_menu_m	[Devenir un citoyen de l'empire]
+	( self.gender = female )
+		citizenship_fyros_p_menu_f	[Devenir une citoyenne de l'empire]
+}
+
+CITIZENSHIP_FYROS_NO_GUILD_CIV ()
+{
+	( self.gender = male )
+		citizenship_fyros_no_guild_civ_m	[Malheureusement, $self$, pour devenir un citoyen tu dois, soit ne faire partie d'aucune guilde, soit être membre d'une guilde nationale.]
+	( self.gender = female )
+		citizenship_fyros_no_guild_civ_f	[Malheureusement, $self$, pour devenir une citoyenne tu dois, soit ne faire partie d'aucune guilde, soit être membre d'une guilde nationale.]
+}
+
+CITIZENSHIP_FYROS_INTRO_FYROS ()
+{
+	( self.gender = male )
+		citizenship_fyros_intro_fyros_m	[Ainsi, $self$, tu souhaites rejoindre les glorieux rangs de l'Empire ? La sève qui coule dans tes veines brûle du feu de notre peuple. Tu es un Fyros, tu n'as donc pas à passer l'Épreuve d'Intégration. Mais il ne suffit pas d'être un homin du désert pour se voir ouvrir les portes de notre nation. Il te faut passer le rite de citoyenneté. Penses-tu en être digne, $self$ ?]
+	( self.gender = female )
+		citizenship_fyros_intro_fyros_f	[Ainsi, $self$, tu souhaites rejoindre les glorieux rangs de l'Empire ? La sève qui coule dans tes veines brûle du feu de notre peuple. Tu es une Fyros, tu n'as donc pas à passer l'Épreuve d'Intégration. Mais il ne suffit pas d'être une homine du désert pour se voir ouvrir les portes de notre nation. Il te faut passer le rite de citoyenneté. Penses-tu en être digne, $self$ ?]
+}
+
+CITIZENSHIP_FYROS_INTRO_FYROS_YES ()
+{
+	citizenship_fyros_intro_fyros_yes	[Oui, je veux être des vôtres !]
+}
+
+CITIZENSHIP_FYROS_INTRO_FYROS_NO ()
+{
+	citizenship_fyros_intro_fyros_no	[Non, au revoir]
+}
+
+CITIZENSHIP_FYROS_DAPPERS (int contribution)
+{
+	( self.gender = male )
+		citizenship_fyros_dappers_m	[Je serai juge tout au long du rite de ton aptitude à honorer notre pays. Tout d'abord, l'usage veut qu'une contribution financière soit versée au trésor impérial par tout homin désireux d'acquérir le statut de citoyen. Cette contribution se monte à $contribution$ dappers. Es-tu prêt à faire don de cette somme ?]
+	( self.gender = female )
+		citizenship_fyros_dappers_f	[Je serai juge tout au long du rite de ton aptitude à honorer notre pays. Tout d'abord, l'usage veut qu'une contribution financière soit versée au trésor impérial par tout homin désireux d'acquérir le statut de citoyen. Cette contribution se monte à $contribution$ dappers. Es-tu prête à faire don de cette somme ?]
+}
+
+CITIZENSHIP_FYROS_DAPPERS_YES ()
+{
+	citizenship_fyros_dappers_yes	[Oui, tout à fait !]
+}
+
+CITIZENSHIP_FYROS_QUERY_START ()
+{
+	citizenship_fyros_query_start	[Parfait ! Tu me remettras cette somme à la fin du rite, si tu as passé les étapes avec succès. Je vais maintenant te poser quelques questions importantes. Tout citoyen fyros se doit d'en connaître les réponses. Réfléchis bien, car si tu te trompes, le rite sera terminé, et tu auras échoué.]
+}
+
+CITIZENSHIP_FYROS_QUERY_START_YES ()
+{
+	citizenship_fyros_query_start_yes	[Posez vos questions.]
+}
+
+CITIZENSHIP_FYROS_QUERY_START_NO ()
+{
+	citizenship_fyros_query_start_no	[Je reviendrai une autre fois, au revoir]
+}
+
+CITIZENSHIP_FYROS_QUERY_1 ()
+{
+	citizenship_fyros_query_1	[Je vais commencer par une question simple : par qui l'empire fyros est-il dirigé ?]
+}
+
+CITIZENSHIP_FYROS_QUERY_1_LEANON ()
+{
+	citizenship_fyros_query_1_leanon	[Par la Régente Leanon]
+}
+
+CITIZENSHIP_FYROS_QUERY_1_APOCAPS ()
+{
+	citizenship_fyros_query_1_apocaps	[Par l'Empereur Apocaps.]
+}
+
+CITIZENSHIP_FYROS_QUERY_1_YRKANIS ()
+{
+	citizenship_fyros_query_1_yrkanis	[Par le Prince Yrkanis.]
+}
+
+CITIZENSHIP_FYROS_QUERY_1_DEXTON ()
+{
+	citizenship_fyros_query_1_dexton	[Par l'Empereur Dexton.]
+}
+
+CITIZENSHIP_FYROS_QUERY_WRONG ()
+{
+	( self.gender = male )
+		citizenship_fyros_query_wrong_m	[Mauvaise réponse... Tu n'es pas encore prêt à devenir un citoyen. Reviens me voir quand tu connaîtras mieux notre nation. Et n'oublie pas : les échecs nous rendent plus forts !]
+	( self.gender = female )
+		citizenship_fyros_query_wrong_f	[Mauvaise réponse... Tu n'es pas encore prête à devenir une citoyenne. Reviens me voir quand tu connaîtras mieux notre nation. Et n'oublie pas : les échecs nous rendent plus forts !]
+}
+
+CITIZENSHIP_FYROS_QUERY_WRONG_BYE ()
+{
+	citizenship_fyros_query_wrong_bye	[Au revoir.]
+}
+
+CITIZENSHIP_FYROS_QUERY_2 ()
+{
+	citizenship_fyros_query_2	[Tu ne t'es pas trompé. Dexton, fils de Cerakos II, règne sur le Désert Brûlant. C'est un grand guerrier, fidèle à ses devoirs. Sais-tu en quelle année il est monté sur le trône impérial ?]
+}
+
+CITIZENSHIP_FYROS_QUERY_2_2481 ()
+{
+	citizenship_fyros_query_2_2481	[En 2481.]
+}
+
+CITIZENSHIP_FYROS_QUERY_2_2484 ()
+{
+	citizenship_fyros_query_2_2484	[En 2484]
+}
+
+CITIZENSHIP_FYROS_QUERY_2_2502 ()
+{
+	citizenship_fyros_query_2_2502	[En 2502.]
+}
+
+CITIZENSHIP_FYROS_QUERY_2_2514 ()
+{
+	citizenship_fyros_query_2_2514	[En 2514.]
+}
+
+CITIZENSHIP_FYROS_QUERY_3 ()
+{
+	citizenship_fyros_query_3	[En effet, c'est cette année là, à la mort de la Régente Leanon, que Dexton a été proclamé empereur. Tu connais l'histoire de notre peuple, $self$ ! Dexton est le gardien des valeurs fyros, qui sont les piliers de notre peuple. Sais-tu sur combien de piliers repose l'empire ?]
+}
+
+CITIZENSHIP_FYROS_QUERY_3_DEUX ()
+{
+	citizenship_fyros_query_3_deux	[Deux]
+}
+
+CITIZENSHIP_FYROS_QUERY_3_TROIS ()
+{
+	citizenship_fyros_query_3_trois	[Trois]
+}
+
+CITIZENSHIP_FYROS_QUERY_3_QUATRE ()
+{
+	citizenship_fyros_query_3_quatre	[Quatre]
+}
+
+CITIZENSHIP_FYROS_QUERY_3_CINQ ()
+{
+	citizenship_fyros_query_3_cinq	[Cinq]
+}
+
+CITIZENSHIP_FYROS_END_QUERY ()
+{
+	( self.gender = male )
+		citizenship_fyros_end_query_m	[Vérité, Honneur, Discipline, Justice, tels sont les Quatre piliers. Ces valeurs ont soutenu notre peuple tout au long de son histoire. Il est important de ne pas les oublier ! Tu as bien répondu à mes questions, $self$. Le moment est venu de passer à la seconde étape du rite.{break} C'est dans le feu que se forgent les meilleures armes ; c'est aussi dans le feu que sont forgés les citoyens fyros. Prends ce sac de veilleur : il contient une cage à feu, conçue pour retenir les flammes magiques qui crépitent sur les arbres bothaya.{break}Trouve l'un de ces arbres, et ramène-moi son fruit brûlant. Alors tu seras digne de devenir l'un des nôtres !]
+	( self.gender = female )
+		citizenship_fyros_end_query_f	[Vérité, Honneur, Discipline, Justice, tels sont les Quatre piliers. Ces valeurs ont soutenu notre peuple tout au long de son histoire. Il est important de ne pas les oublier ! Tu as bien répondu à mes questions, $self$. Le moment est venu de passer à la seconde étape du rite.{break} C'est dans le feu que se forgent les meilleures armes ; c'est aussi dans le feu que sont forgés les citoyens fyros. Prends ce sac de veilleur : il contient une cage à feu, conçue pour retenir les flammes magiques qui crépitent sur les arbres bothaya.{break}Trouve l'un de ces arbres, et ramène-moi son fruit brûlant. Alors tu seras digne de devenir l'une des nôtres !]
+}
+
+CITIZENSHIP_FYROS_END_QUERY_YES ()
+{
+	citizenship_fyros_end_query_yes	[Je reviendrai avec le feu du désert !]
+}
+
+CITIZENSHIP_FYROS_GIVE_FIRE_OBJ_1 (item i1, int qt1, int qual1, bot tree)
+{
+	citizenship_fyros_give_fire_obj_1	[Trouver un arbre Bothaya et recupérer le Feu Magique.]
+}
+
+CITIZENSHIP_FYROS_GIVE_DAPPERS (int contribution)
+{
+	citizenship_fyros_give_dappers	[Tu as réussi, $self$ ! Ton désir de nous rejoindre est aussi ardent que ce feu magique ! Je te félicite, tu as passé le rite avec succès. Il ne te reste plus qu'à t'acquitter de ta contribution envers le trésor impérial. Elle se monte à $contribution$ dappers.]
+}
+
+CITIZENSHIP_FYROS_BE_CITIZEN ()
+{
+	( self.gender = male )
+		citizenship_fyros_be_citizen_m	[Sois remercié, $self$. Et sois fier, car tu vas maintenant rejoindre la nation fyros. Jures-tu de servir l'empereur, de respecter les lois de l'Empire, de faire prospérer le peuple qui t'accueille ? Jures-tu de défendre notre nation au péril de ta vie ?]
+	( self.gender = female )
+		citizenship_fyros_be_citizen_f	[Sois remerciée, $self$. Et sois fière, car tu vas maintenant rejoindre la nation fyros. Jures-tu de servir l'empereur, de respecter les lois de l'Empire, de faire prospérer le peuple qui t'accueille ? Jures-tu de défendre notre nation au péril de ta vie ?]
+}
+
+CITIZENSHIP_FYROS_BE_CITIZEN_YES ()
+{
+	citizenship_fyros_be_citizen_yes	[Je le jure !]
+}
+
+CITIZENSHIP_FYROS_RESUME_TALK (bot givervar)
+{
+	citizenship_fyros_resume_talk	[Reprendre la conversation]
+}
+
+CITIZENSHIP_FYROS_CONCLUSION ()
+{
+	( self.gender = male )
+		citizenship_fyros_conclusion_m	[Félicitations, $self$. Tu es à présent un digne citoyen de l'empire fyros !]
+	( self.gender = female )
+		citizenship_fyros_conclusion_f	[Félicitations, $self$. Tu es à présent une digne citoyenne de l'empire fyros !]
+}
+
+CITIZENSHIP_FYROS_INTRO_NO_FYROS ()
+{
+	citizenship_fyros_intro_no_fyros	[Ainsi, $self$, tu souhaites rejoindre les glorieux rangs de l'Empire ? La sève qui coule dans tes veines n'est pas de notre peuple, mais si tu prouves ta loyauté, la nation fyros pourra t'accueillir. Il te faut d'abord passer l'Épreuve d'Intégration. Si tu réussis, alors tu pourras accomplir le rite de citoyenneté. Penses-tu être digne des homins du désert, $self$ ?]
+}
+
+CITIZENSHIP_FYROS_START_TRIAL ()
+{
+	citizenship_fyros_start_trial	[Très bien. Prends cette perle. Elle représente la loyauté envers la nation fyros. Lorsqu'un homin dédié à la cause de l'empire l'approche des flammes sacrées, elle se met à briller d'une lumière intense comme le feu du soleil. Si tu passes l'Épreuve, la perle brillera pour toi, $self$.{break}Dans les dunes impériales se trouvent trois des quatres flambeaux sacrés représentant les piliers de la société fyros : les flammes de la Vérité, de l'Honneur et de la Discipline. Trouve-les, et bénis la perle au contact du feu.{break}Reviens ensuite ici pour prêter serment devant le dernier flambeau, celui de la Justice. Hâte-toi, $self$. Explore les lieux-dits de la région, et cherches les trois piliers.]
+}
+
+CITIZENSHIP_FYROS_START_TRIAL_YES ()
+{
+	citizenship_fyros_start_trial_yes	[Je pars sur-le-champ !]
+}
+
+CITIZENSHIP_FYROS_START_TRIAL_NO ()
+{
+	citizenship_fyros_start_trial_no	[J'essaierai une autre fois, au revoir.]
+}
+
+CITIZENSHIP_FYROS_FLAME_TRUTH_OBJ (bot flame_truth)
+{
+	citizenship_fyros_flame_truth_obj	[Trouver la flamme de la Vérité pour bénir la perle de loyauté.]
+}
+
+CITIZENSHIP_FYROS_FLAME_MENU (bot flame_truth)
+{
+	citizenship_fyros_flame_menu	[Approcher la perle de la flamme.]
+}
+
+CITIZENSHIP_FYROS_FLAME_TRUTH_SYSMSG ()
+{
+	citizenship_fyros_flame_truth_sysmsg	[Vous approchez la perle des flammes sacrées. Une brève lueur émane de la pierre, puis disparaît. Le feu de la Vérité semble avoir béni la perle de loyauté.]
+}
+
+CITIZENSHIP_FYROS_FLAME_HONNOR_OBJ (bot flame_honnor)
+{
+	citizenship_fyros_flame_honnor_obj	[Trouver la flamme de l'Honneur pour bénir la perle de loyauté]
+}
+
+CITIZENSHIP_FYROS_FLAME_HONNOR_SYSMSG ()
+{
+	citizenship_fyros_flame_honnor_sysmsg	[Vous approchez la perle des flammes sacrées. Une brève lueur émane de la pierre, puis disparaît. Le feu de l'Honneur semble avoir béni la perle de loyauté.]
+}
+
+CITIZENSHIP_FYROS_FLAME_DISCIPLINE_OBJ (bot flame_discipline)
+{
+	citizenship_fyros_flame_discipline_obj	[Trouver la flamme de la Discipline pour bénir la perle de loyauté]
+}
+
+CITIZENSHIP_FYROS_FLAME_DISCIPLINE_SYSMSG ()
+{
+	citizenship_fyros_flame_discipline_sysmsg	[Vous approchez la perle des flammes sacrées. Une brève lueur émane de la pierre, puis disparaît. Le feu de la Discipline semble avoir béni la perle de loyauté.]
+}
+
+CITIZENSHIP_FYROS_FLAME_JUSTICE_MENU (bot givervar)
+{
+	citizenship_fyros_flame_justice_menu	[J'ai trouvé les trois piliers]
+}
+
+CITIZENSHIP_FYROS_FLAME_JUSTICE_PEARL ()
+{
+	( self.gender = male )
+		citizenship_fyros_flame_justice_pearl_m	[Le moment de vérité est donc arrivé. Près de moi se trouve le quatrième pilier, la flamme de la Justice. Approche la perle du feu. Si tu es loyal envers notre peuple, elle brillera de tout son éclat, et ne s'éteindra pas.]
+	( self.gender = female )
+		citizenship_fyros_flame_justice_pearl_f	[Le moment de vérité est donc arrivé. Près de moi se trouve le quatrième pilier, la flamme de la Justice. Approche la perle du feu. Si tu es loyale envers notre peuple, elle brillera de tout son éclat, et ne s'éteindra pas.]
+}
+
+CITIZENSHIP_FYROS_FLAME_JUSTICE_OBJ_1 (item i1, int qt1, int qual1, bot flame_justice)
+{
+	citizenship_fyros_flame_justice_obj_1	[Bénir la perle de loyauté à la flamme de la Justice]
+}
+
+CITIZENSHIP_FYROS_FLAME_JUSTICE_SYSMSG ()
+{
+	citizenship_fyros_flame_justice_sysmsg	[Vous approchez la perle des flammes sacrées. Une intense lueur émane alors de la pierre. Le feu de la Justice semble avoir béni la perle de loyauté.]
+}
+
+CITIZENSHIP_FYROS_GOTO_RITE ()
+{
+	citizenship_fyros_goto_rite	[Tu as réussi l'Épreuve d'Intégration, $self$ ! Tu peux à présent passer le rite de citoyenneté, si c'est toujours ce que tu souhaites.]
+}
+
+CITIZENSHIP_FYROS_GOTO_RITE_YES ()
+{
+	citizenship_fyros_goto_rite_yes	[Oui, je le veux !]
+}
+
+CITIZENSHIP_FYROS_GOTO_RITE_NO ()
+{
+	citizenship_fyros_goto_rite_no	[Non, au revoir]
+}
+
+CITIZENSHIP_FYROS_END_CONFIRM ()
+{
+	citizenship_fyros_end_confirm	[Attention, si tu pars maintenant, toutes les étapes que tu as passées seront annulées. Il te faudra tout recommencer pour devenir un citoyen.]
+}
+
+CITIZENSHIP_FYROS_END_CONFIRM_YES ()
+{
+	citizenship_fyros_end_confirm_yes	[Finalement, je continue.]
+}
+
+CITIZENSHIP_FYROS_END_CONFIRM_NO ()
+{
+	( self.gender = male )
+		citizenship_fyros_end_confirm_no_m	[Je suis sûr de mon choix, au revoir.]
+	( self.gender = female )
+		citizenship_fyros_end_confirm_no_f	[Je suis sûre de mon choix, au revoir.]
+}
+
+CITIZENSHIP_FYROS_ALREADY_FYROS ()
+{
+	( self.gender = male )
+		citizenship_fyros_already_fyros_m	[Tu es déjà un citoyen, $self$. Tu ne peux pas repasser le rite.]
+	( self.gender = female )
+		citizenship_fyros_already_fyros_f	[Tu es déjà une citoyenne, $self$. Tu ne peux pas repasser le rite.]
+}
+
+CITIZENSHIP_MATIS_P_TITLE (bot giver)
+{
+	citizenship_matis_p_title	[Rite de citoyenneté Matis]
+}
+
+CITIZENSHIP_MATIS_P_DESC (bot giver)
+{
+	( self.gender = male )
+		citizenship_matis_p_desc_m	[En accomplissant ce rite, vous allez devenir un citoyen du royaume matis.]
+	( self.gender = female )
+		citizenship_matis_p_desc_f	[En accomplissant ce rite, vous allez devenir une citoyenne du royaume matis.]
+}
+
+CITIZENSHIP_MATIS_P_MENU ()
+{
+	( self.gender = male )
+		citizenship_matis_p_menu_m	[Devenir un citoyen du royaume]
+	( self.gender = female )
+		citizenship_matis_p_menu_f	[Devenir une citoyenne du royaume]
+}
+
+CITIZENSHIP_MATIS_INTRO_MATIS ()
+{
+	( self.gender = male )
+		citizenship_matis_intro_matis_m	[Bienvenue, $self$. Je vois que la magnificence du royaume forestier a attiré un nouveau prétendant. Tu es de notre sève, et en tant que Matis, tu es dispensé de l'Épreuve d'Intégration. Mais tu vas devoir prouver ta valeur en passant le rite de citoyenneté. Estimes-tu être digne de nous, $self$ ?]
+	( self.gender = female )
+		citizenship_matis_intro_matis_f	[Bienvenue, $self$. Je vois que la magnificence du royaume forestier a attiré une nouvelle prétendante. Tu es de notre sève, et en tant que Matis, tu es dispensée de l'Épreuve d'Intégration. Mais tu vas devoir prouver ta valeur en passant le rite de citoyenneté. Estimes-tu être digne de nous, $self$ ?]
+}
+
+CITIZENSHIP_MATIS_DAPPERS (int contribution)
+{
+	citizenship_matis_dappers	[Tout au long du rite, je serai juge de ton engagement envers notre pays. Pour commencer, sache qu'il est réclamé à tout prétendant une contribution financière destinée au trésor royal. Cette contribution se monte selon l'usage à $contribution$ dappers. Disposes-tu de cette somme, $self$ ?]
+}
+
+CITIZENSHIP_MATIS_QUERY_START ()
+{
+	( self.gender = male )
+		citizenship_matis_query_start_m	[Très bien. La contribution sera versée à la fin du rite... si tu arrives jusque là. À présent, je vais te poser quelques questions. Un citoyen de notre royaume doit en connaître les réponses. Sois sûr de toi : si tu commets une erreur, le rite prendra fin immédiatement, et ta demande sera rejetée]
+	( self.gender = female )
+		citizenship_matis_query_start_f	[Très bien. La contribution sera versée à la fin du rite... si tu arrives jusque là. À présent, je vais te poser quelques questions. Un citoyen de notre royaume doit en connaître les réponses. Sois sûre de toi : si tu commets une erreur, le rite prendra fin immédiatement, et ta demande sera rejetée]
+}
+
+CITIZENSHIP_MATIS_QUERY_1 ()
+{
+	citizenship_matis_query_1	[Allons-y. Je vais commencer par une question enfantine : qui dirige le royaume forestier ?]
+}
+
+CITIZENSHIP_MATIS_QUERY_1_YRKANIS ()
+{
+	citizenship_matis_query_1_yrkanis	[Le roi Yrkanis]
+}
+
+CITIZENSHIP_MATIS_QUERY_1_DEXTON ()
+{
+	citizenship_matis_query_1_dexton	[Le prince Dexton]
+}
+
+CITIZENSHIP_MATIS_QUERY_1_VARELLO ()
+{
+	citizenship_matis_query_1_varello	[Le roi Varello]
+}
+
+CITIZENSHIP_MATIS_QUERY_1_LEA ()
+{
+	citizenship_matis_query_1_lea	[La reine Lea.]
+}
+
+CITIZENSHIP_MATIS_QUERY_2 ()
+{
+	citizenship_matis_query_2	[Tu as donné la réponse que j'attendais. Yrkanis, fils de Yasson, est né durant l'exil, et un nouvel espoir est né avec lui. Notre capital porte son nom. Le roi est un monarque exceptionnel. Peux-tu me dire en quelle année il a été couronné ?]
+}
+
+CITIZENSHIP_MATIS_QUERY_2_2481 ()
+{
+	citizenship_matis_query_2_2481	[En 2481.]
+}
+
+CITIZENSHIP_MATIS_QUERY_2_2484 ()
+{
+	citizenship_matis_query_2_2484	[En 2484]
+}
+
+CITIZENSHIP_MATIS_QUERY_2_2502 ()
+{
+	citizenship_matis_query_2_2502	[En 2502.]
+}
+
+CITIZENSHIP_MATIS_QUERY_2_2514 ()
+{
+	citizenship_matis_query_2_2514	[En 2514.]
+}
+
+CITIZENSHIP_MATIS_QUERY_3 ()
+{
+	( self.gender = male )
+		citizenship_matis_query_3_m	[Cette année marque en effet la fin du tyran Jinovitch et l'avènement du roi légitime des Matis. Tu ne t'es pas trompé, $self$. Yrkanis symbolise à lui seul les valeurs fondamentales de notre peuple. Sais-tu sur combien de valeurs reposent nos traditions ?]
+	( self.gender = female )
+		citizenship_matis_query_3_f	[Cette année marque en effet la fin du tyran Jinovitch et l'avènement du roi légitime des Matis. Tu ne t'es pas trompée, $self$. Yrkanis symbolise à lui seul les valeurs fondamentales de notre peuple. Sais-tu sur combien de valeurs reposent nos traditions ?]
+}
+
+CITIZENSHIP_MATIS_QUERY_3_DEUX ()
+{
+	citizenship_matis_query_3_deux	[Deux]
+}
+
+CITIZENSHIP_MATIS_QUERY_3_TROIS ()
+{
+	citizenship_matis_query_3_trois	[Trois]
+}
+
+CITIZENSHIP_MATIS_QUERY_3_QUATRE ()
+{
+	citizenship_matis_query_3_quatre	[Quatre]
+}
+
+CITIZENSHIP_MATIS_QUERY_3_CINQ ()
+{
+	citizenship_matis_query_3_cinq	[Cinq]
+}
+
+CITIZENSHIP_MATIS_END_QUERY ()
+{
+	citizenship_matis_end_query	[La Loyauté, l'Accomplissement esthétique et la Compétition. Ces valeurs nous définissent et nous portent vers l'excellence. Garde-les toujours à l'esprit, $self$. Tu as répondu correctement à mes questions, je suis impressionné. Mais le rite n'est pas terminé.{break}Comme tu le sais sans doute, les Matis sont les maîtres des plantes. Ils sculptent la nature pour magnifier sa beauté et réaliser de magnifiques oeuvres d'art. L'une de ces artistes, Dame Lira Bravichi, a fait naître une merveille dans le Jardin Majestueux. Une plante exotique aux fleurs somptueuses, que l'on a baptisée rotoa de Bravichi.{break}Trouve cette plante, et ramène-moi l'une de ses fleurs. Elle ornera la salle royale et montrera à tous ton engagement dans la recherche de la beauté.]
+}
+
+CITIZENSHIP_MATIS_END_QUERY_YES ()
+{
+	citizenship_matis_end_query_yes	[Je reviendrai avec cette fleur !]
+}
+
+CITIZENSHIP_MATIS_GET_FLOWER_OBJ (bot tree)
+{
+	citizenship_matis_get_flower_obj	[Trouver la rotoa de Bravichi, et ceuillir une de ses fleurs.]
+}
+
+CITIZENSHIP_MATIS_GET_FLOWER_MENU (bot tree)
+{
+	citizenship_matis_get_flower_menu	[Cueillir une fleur]
+}
+
+CITIZENSHIP_MATIS_FLOWER_GIVED (int contribution)
+{
+	citizenship_matis_flower_gived	[Merci, $self$. La fragrance de cette fleur délicate n'est-elle pas sublime ? Certains esprits chagrins prétendent que son pollen est un poison mortel, mais rassure-toi, leurs théories ont été tournées en ridicule.{break}Permets-moi de te féliciter, car tu as passé le rite avec succès. Il ne te reste plus qu'à t'acquitter de la modeste contribution financière que j'ai évoquée précédemment. Elle se monte à $contribution$ dappers.]
+}
+
+CITIZENSHIP_MATIS_BE_CITIZEN ()
+{
+	citizenship_matis_be_citizen	[Bien, le moment tant attendu est venu. $self$, jures-tu de servir le roi, de respecter les lois du royaume, de faire prospérer le peuple qui t'accueille ? Jures-tu de défendre notre nation au péril de ta vie ?]
+}
+
+CITIZENSHIP_MATIS_CONCLUSION ()
+{
+	( self.gender = male )
+		citizenship_matis_conclusion_m	[Tu peux marcher la tête haute, $self$. Tu es à présent un digne citoyen du royaume matis !]
+	( self.gender = female )
+		citizenship_matis_conclusion_f	[Tu peux marcher la tête haute, $self$. Tu es à présent une digne citoyenne du royaume matis !]
+}
+
+CITIZENSHIP_MATIS_QUERY_WRONG ()
+{
+	( self.gender = male )
+		citizenship_matis_query_wrong_m	[Tu ferais un bien piètre citoyen... Je te conseille d'en apprendre davantage sur notre pays avant de revenir me voir. Ne sois pas trop déçu : tout le monde ne peut pas devenir citoyen du plus grand royaume d'Atys.]
+	( self.gender = female )
+		citizenship_matis_query_wrong_f	[Tu ferais une bien piètre citoyenne... Je te conseille d'en apprendre davantage sur notre pays avant de revenir me voir. Ne sois pas trop déçue : tout le monde ne peut pas devenir citoyen du plus grand royaume d'Atys.]
+}
+
+CITIZENSHIP_MATIS_INTRO_NO_MATIS ()
+{
+	( self.gender = male )
+		citizenship_matis_intro_no_matis_m	[Bienvenue, $self$. Je vois que la magnificence du royaume forestier a attiré un nouveau prétendant. Tu n'es pas de notre sève, aussi te faudra-t-il prouver ta loyauté envers la couronne. Tu devras d'abord passer l'Épreuve d'Intégration. Si tu réussis, tu pourras ensuite accomplir le rite de citoyenneté. Estimes-tu être digne de nous, $self$ ?]
+	( self.gender = female )
+		citizenship_matis_intro_no_matis_f	[Bienvenue, $self$. Je vois que la magnificence du royaume forestier a attiré une nouvelle prétendante. Tu n'es pas de notre sève, aussi te faudra-t-il prouver ta loyauté envers la couronne. Tu devras d'abord passer l'Épreuve d'Intégration. Si tu réussis, tu pourras ensuite accomplir le rite de citoyenneté. Estimes-tu être digne de nous, $self$ ?]
+}
+
+CITIZENSHIP_MATIS_START_TRIAL ()
+{
+	( self.gender = male )
+		citizenship_matis_start_trial_m	[Tu sembles décidé. Dans ce cas, prends cette perle. Elle représente la Loyauté, notre première valeur, envers la nation matis. Lorsqu'un homin fidèle à la cause du royaume prête serment devant un Initié, un gardien de la connaissance, la pierre se met à briller d'une lumière intense. Si tu passes l'Épreuve avec succès, la perle brillera pour toi.de tous ses feux.{break}Chacun des trois villages du Jardin Majestueux est associé à l'une des valeurs de la société matis. Davae représente la Loyauté, Avalae l'Accomplissement esthétique et Natae la Compétition. Rends-toi dans ces villages, et montre la perle à un Initié. Il te demandera de prêter serment.{break}Au troisième serment, ta loyauté sera établie. Tu me ramèneras alors la perle pour terminer l'Épreuve. Tu sais ce qu'il te reste à faire, $self$.]
+	( self.gender = female )
+		citizenship_matis_start_trial_f	[Tu sembles décidée. Dans ce cas, prends cette perle. Elle représente la Loyauté, notre première valeur, envers la nation matis. Lorsqu'un homin fidèle à la cause du royaume prête serment devant un Initié, un gardien de la connaissance, la pierre se met à briller d'une lumière intense. Si tu passes l'Épreuve avec succès, la perle brillera pour toi.de tous ses feux.{break}Chacun des trois villages du Jardin Majestueux est associé à l'une des valeurs de la société matis. Davae représente la Loyauté, Avalae l'Accomplissement esthétique et Natae la Compétition. Rends-toi dans ces villages, et montre la perle à un Initié. Il te demandera de prêter serment.{break}Au troisième serment, ta loyauté sera établie. Tu me ramèneras alors la perle pour terminer l'Épreuve. Tu sais ce qu'il te reste à faire, $self$.]
+}
+
+CITIZENSHIP_MATIS_DAVAE_OBJ (bot davae)
+{
+	citizenship_matis_davae_obj	[Montrer la perle de loyauté au chef des gardes de Davae]
+}
+
+CITIZENSHIP_MATIS_DAVAE_MENU (bot davae)
+{
+	citizenship_matis_davae_menu	[Montrer la perle de loyauté]
+}
+
+CITIZENSHIP_MATIS_DAVAE_PEARL ()
+{
+	( self.gender = male )
+		citizenship_matis_davae_pearl_m	[Ha, peut-être un futur citoyen ! Je suis le gardien de la Loyauté en ce lieu, en tant que défenseur indéfectible du royaume. Fais-tu le serment d'être loyal envers le peuple matis ?]
+	( self.gender = female )
+		citizenship_matis_davae_pearl_f	[Ha, peut-être une future citoyenne ! Je suis le gardien de la Loyauté en ce lieu, en tant que défenseur indéfectible du royaume. Fais-tu le serment d'être loyale envers le peuple matis ?]
+}
+
+CITIZENSHIP_MATIS_DAVAE_PEARL_YES ()
+{
+	citizenship_matis_davae_pearl_yes	[J'en fais le serment !]
+}
+
+CITIZENSHIP_MATIS_DAVAE_PEARL_SYSMSG ()
+{
+	citizenship_matis_davae_pearl_sysmsg	[Une brève lueur émane de la pierre, puis disparaît. La lumière de la Loyauté semble avoir subtilement transformé la perle. L'Initié vous souhaite bonne chance pour la suite de l'Épreuve.]
+}
+
+CITIZENSHIP_MATIS_AVALAE_OBJ (bot avalae)
+{
+	citizenship_matis_avalae_obj	[Montrer la perle de loyauté à l'intendant d'Avalae]
+}
+
+CITIZENSHIP_MATIS_AVALAE_PEARL ()
+{
+	citizenship_matis_avalae_pearl	[Ainsi, tu veux faire partie de notre grand royaume ! En tant que garant du travail des meilleurs artisans, je suis le gardien de l'Accomplissement esthétique en ce lieu. Fais-tu le serment de rechercher la beauté pour en faire profiter le peuple matis ?]
+}
+
+CITIZENSHIP_MATIS_AVALAE_PEARL_SYSMSG ()
+{
+	citizenship_matis_avalae_pearl_sysmsg	[Une brève lueur émane de la pierre, puis disparaît. La lumière de l'Accomplissement esthétique semble avoir subtilement transformé la perle. L'Initié vous souhaite bonne chance pour la suite de l'Épreuve]
+}
+
+CITIZENSHIP_MATIS_NATAE_OBJ_1 (item i1, int qt1, int qual1, bot natae)
+{
+	citizenship_matis_natae_obj_1	[Montrer la perle de loyauté au sage de Natae]
+}
+
+CITIZENSHIP_MATIS_NATAE_PEARL ()
+{
+	citizenship_matis_natae_pearl	[Tu arrives au bout de ton épreuve. Je suis le gardien de la Compétition, car de cette valeur naît la connaissance de soi et des autres, et de cette connaissance naît la sagesse. Fais-tu le serment de te dépasser, trouvant ainsi la force dans tes faiblesses ?]
+}
+
+CITIZENSHIP_MATIS_NATAE_PEARL_SYSMSG ()
+{
+	citizenship_matis_natae_pearl_sysmsg	[Une intense lueur émane de la pierre. La lumière de la Compétition semble avoir transformé la perle, qui brille à présent comme une étoile. L'Initié vous félicite, vous avez réussi l'Épreuve !]
+}
+
+CITIZENSHIP_TRYKER_P_TITLE (bot giver)
+{
+	citizenship_tryker_p_title	[Rite de citoyenneté Tryker]
+}
+
+CITIZENSHIP_TRYKER_P_DESC (bot giver)
+{
+	( self.gender = male )
+		citizenship_tryker_p_desc_m	[En accomplissant ce rite, vous allez devenir un citoyen de la fédération tryker.]
+	( self.gender = female )
+		citizenship_tryker_p_desc_f	[En accomplissant ce rite, vous allez devenir une citoyenne de la fédération tryker.]
+}
+
+CITIZENSHIP_TRYKER_P_MENU ()
+{
+	( self.gender = male )
+		citizenship_tryker_p_menu_m	[Devenir un citoyen de la fédération]
+	( self.gender = female )
+		citizenship_tryker_p_menu_f	[Devenir une citoyenne de la fédération]
+}
+
+CITIZENSHIP_TRYKER_INTRO_TRYKER ()
+{
+	( self.gender = male )
+		citizenship_tryker_intro_tryker_m	[Bienvenue dans notre belle cité ! Tu veux rejoindre les citoyens de la fédération, $self$ ? Tu m'en vois ravi ! Tu n'auras pas besoin de passer l'Épreuve d'Intégration, car tu fais déjà partie de la grande famille des Trykers. Mais tu vas devoir passer un rite de citoyenneté. Te sens-tu prêt pour cela ?]
+	( self.gender = female )
+		citizenship_tryker_intro_tryker_f	[Bienvenue dans notre belle cité ! Tu veux rejoindre les citoyens de la fédération, $self$ ? Tu m'en vois ravi ! Tu n'auras pas besoin de passer l'Épreuve d'Intégration, car tu fais déjà partie de la grande famille des Trykers. Mais tu vas devoir passer un rite de citoyenneté. Te sens-tu prête pour cela ?]
+}
+
+CITIZENSHIP_TRYKER_DAPPERS (int contribution)
+{
+	( self.gender = male )
+		citizenship_tryker_dappers_m	[C'est moi qui serai juge de ton engagement envers notre pays tout au long du rite. Je vais tout d'abord faire appel à ta générosité. En effet, il est d'usage pour chaque futur citoyen de verser une contribution au trésor fédéral. Cette contribution se monte à $contribution$ dappers. Es-tu prêt à offrir cela au peuple des lacs ?]
+	( self.gender = female )
+		citizenship_tryker_dappers_f	[C'est moi qui serai juge de ton engagement envers notre pays tout au long du rite. Je vais tout d'abord faire appel à ta générosité. En effet, il est d'usage pour chaque futur citoyen de verser une contribution au trésor fédéral. Cette contribution se monte à $contribution$ dappers. Es-tu prête à offrir cela au peuple des lacs ?]
+}
+
+CITIZENSHIP_TRYKER_QUERY_START ()
+{
+	citizenship_tryker_query_start	[Parfait. Garde ton argent pour l'instant, tu  me le remettras lorsque tu auras passé les différentes étapes du rite. Je vais maintenant te poser quelques questions. Réfléchis bien avant de me répondre, et ne te trompe pas, sinon ta demande sera rejetée.]
+}
+
+CITIZENSHIP_TRYKER_QUERY_1 ()
+{
+	citizenship_tryker_query_1	[Commençons par une question facile. Qui dirigeait la fédération tryker en 2525 ?]
+}
+
+CITIZENSHIP_TRYKER_QUERY_1_LORIA ()
+{
+	citizenship_tryker_query_1_loria	[La Dame Loria des grands lacs]
+}
+
+CITIZENSHIP_TRYKER_QUERY_1_WYLER ()
+{
+	citizenship_tryker_query_1_wyler	[Le gouverneur Still Wyler]
+}
+
+CITIZENSHIP_TRYKER_QUERY_1_MABREKA ()
+{
+	citizenship_tryker_query_1_mabreka	[Le prince Mabreka]
+}
+
+CITIZENSHIP_TRYKER_QUERY_1_DARGHAN ()
+{
+	citizenship_tryker_query_1_darghan	[Le gouverneur Breggan O'Darghan]
+}
+
+CITIZENSHIP_TRYKER_QUERY_WRONG ()
+{
+	citizenship_tryker_query_wrong	[Hélas, ce n'est pas la bonne réponse... Ne te décourage pas, $self$, ce n'est que partie remise ! Reviens me voir quand tu en sauras davantage sur la Fédération.]
+}
+
+CITIZENSHIP_TRYKER_QUERY_2 ()
+{
+	citizenship_tryker_query_2	[En effet, c'est bien lui ! Still Wyler est un homin remarquable à bien des égards. Il est franc, courageux, et possède un grand sens de l'équité. Il sait aussi faire la fête ! J'ai  une autre question à te poser : en quelle année Wyler a-t-il été élu gouverneur ?]
+}
+
+CITIZENSHIP_TRYKER_QUERY_2_2481 ()
+{
+	citizenship_tryker_query_2_2481	[En 2481.]
+}
+
+CITIZENSHIP_TRYKER_QUERY_2_2484 ()
+{
+	citizenship_tryker_query_2_2484	[En 2484]
+}
+
+CITIZENSHIP_TRYKER_QUERY_2_2508 ()
+{
+	citizenship_tryker_query_2_2508	[En 2508.]
+}
+
+CITIZENSHIP_TRYKER_QUERY_2_2514 ()
+{
+	citizenship_tryker_query_2_2514	[En 2514.]
+}
+
+CITIZENSHIP_TRYKER_QUERY_3 ()
+{
+	citizenship_tryker_query_3	[Bonne réponse, $self$ ! C'est cette année là que l'ancien gouverneur Nimby a démissionné devant la pression populaire. Wyler a été élu haut la main, c'est le cas de le dire ! Il défendait avec ferveur les vertus de la société tryker. À ce propos, connais-tu le nombre des vertus essentielles pour un citoyen de la fédération ?]
+}
+
+CITIZENSHIP_TRYKER_QUERY_3_DEUX ()
+{
+	citizenship_tryker_query_3_deux	[Deux]
+}
+
+CITIZENSHIP_TRYKER_QUERY_3_TROIS ()
+{
+	citizenship_tryker_query_3_trois	[Trois]
+}
+
+CITIZENSHIP_TRYKER_QUERY_3_QUATRE ()
+{
+	citizenship_tryker_query_3_quatre	[Quatre]
+}
+
+CITIZENSHIP_TRYKER_QUERY_3_CINQ ()
+{
+	citizenship_tryker_query_3_cinq	[Cinq]
+}
+
+CITIZENSHIP_TRYKER_END_QUERY ()
+{
+	( self.gender = male )
+		citizenship_tryker_end_query_m	[Liberté, Égalité, Partage : c'est pour ces valeurs que notre peuple vit et se bat. Elles sont aussi importantes que le pain et l'eau qui nous nourrissent !{break}Bravo pour toutes tes réponses, $self$. Je ne doute pas que tu seras bientôt l'un des nôtres ! Passons à la prochaine étape du rite. Tu vas avoir l'occasion de pratiquer l'une de nos vertus fondamentales : le Partage. .{break}Depuis quelques années, un vagabond sillonne les îlots du Lac de la Liberté. Personne ne connaît son nom, d'ailleurs lui-même semble l'avoir oublié. Il est plutôt taciturne, mais dans le fond c'est un brave homin.{break}Il tient à son indépendance et ne semble guère apprécier la compagnie, hormis celle des poissons... en réalité, il apprécie une petite visite de temps à autre, surtout pour partager une bonne bière !{break} Prends cette bouteille de bière lacustre, brassée par le barman d'Avendale. Trouve le vagabond, et buvez ensemble à la santé de tous les Trykers ! Reviens ensuite me voir.]
+	( self.gender = female )
+		citizenship_tryker_end_query_f	[Liberté, Égalité, Partage : c'est pour ces valeurs que notre peuple vit et se bat. Elles sont aussi importantes que le pain et l'eau qui nous nourrissent !{break}Bravo pour toutes tes réponses, $self$. Je ne doute pas que tu seras bientôt l'une des nôtres ! Passons à la prochaine étape du rite. Tu vas avoir l'occasion de pratiquer l'une de nos vertus fondamentales : le Partage. .{break}Depuis quelques années, un vagabond sillonne les îlots du Lac de la Liberté. Personne ne connaît son nom, d'ailleurs lui-même semble l'avoir oublié. Il est plutôt taciturne, mais dans le fond c'est un brave homin.{break}Il tient à son indépendance et ne semble guère apprécier la compagnie, hormis celle des poissons... en réalité, il apprécie une petite visite de temps à autre, surtout pour partager une bonne bière !{break} Prends cette bouteille de bière lacustre, brassée par le barman d'Avendale. Trouve le vagabond, et buvez ensemble à la santé de tous les Trykers ! Reviens ensuite me voir.]
+}
+
+CITIZENSHIP_TRYKER_END_QUERY_YES ()
+{
+	citizenship_tryker_end_query_yes	[C'est avec plaisir que j'accepte cette mission !]
+}
+
+CITIZENSHIP_TRYKER_TALK_VAGAB_OBJ (bot vagabond)
+{
+	citizenship_tryker_talk_vagab_obj	[Trouver le vagabond sur un des ilôts, et buvez ensemble à la santé de tous les Trykers]
+}
+
+CITIZENSHIP_TRYKER_TALK_VAGAB_MENU (bot vagabond)
+{
+	citizenship_tryker_talk_vagab_menu	[Salut à toi !]
+}
+
+CITIZENSHIP_TRYKER_VAGAB ()
+{
+	citizenship_tryker_vagab	[Herm... salut. Que me veux-tu ? Tu troubles ma tranquillité. Sache que je ne retournerai pas à Fairhaven, pour tous les dappers du monde ! Trop de monde et trop de bruit là-bas !]
+}
+
+CITIZENSHIP_TRYKER_VAGAB_BEER ()
+{
+	citizenship_tryker_vagab_beer	[Oh, de la bière lacustre ! Grmbl, je suppose que je peux en boire quelques gorgées en ta compagnie, après tout. ]
+}
+
+CITIZENSHIP_TRYKER_SYSMSG ()
+{
+	citizenship_tryker_sysmsg	[Vous passez un peu de temps avec le vagabond, tout en buvant la fameuse bière lacustre. Vous parlez peu, appréciant chacun à votre manière les vertus du partage et de la liberté.]
+}
+
+CITIZENSHIP_TRYKER_VAGAB_BYE ()
+{
+	( self.gender = male )
+		citizenship_tryker_vagab_bye_m	[Ce n'est pas tout ça, mais j'ai un millier de choses à faire ! Adieu, l'ami. Par Jena, cette bière était vraiment divine !]
+	( self.gender = female )
+		citizenship_tryker_vagab_bye_f	[Ce n'est pas tout ça, mais j'ai un millier de choses à faire ! Adieu, l'amie. Par Jena, cette bière était vraiment divine !]
+}
+
+CITIZENSHIP_TRYKER_TALK_GIVER (bot givervar)
+{
+	citizenship_tryker_talk_giver	[J'ai bu la bière lacustre avec le vagabond]
+}
+
+CITIZENSHIP_TRYKER_BEER_GIVED (int contribution)
+{
+	citizenship_tryker_beer_gived	[Hé hé, je vois à ton teint que tu as apprécié la bière d'Avendale ! Tu as rendu honneur à nos traditions, $self$. Je considère donc que tu as passé le rite avec succès !{break}Il ne te reste plus qu'à me remettre la contribution destinée au trésor fédéral. Je t'en rappelle le montant : $contribution$ dappers.]
+}
+
+CITIZENSHIP_TRYKER_BE_CITIZEN ()
+{
+	citizenship_tryker_be_citizen	[Eh bien, tout est réglé ! $self$, tu vas à présent rejoindre la Fédération. Jures-tu de servir le gouverneur, notre représentant, de respecter les lois de la Fédération, de faire prospérer le peuple qui t'accueille ? Jures-tu de défendre notre nation au péril de ta vie ?]
+}
+
+CITIZENSHIP_TRYKER_CONCLUSION ()
+{
+	( self.gender = male )
+		citizenship_tryker_conclusion_m	[Félicitations, $self$. Tu es à présent un digne citoyen de la fédération tryker !]
+	( self.gender = female )
+		citizenship_tryker_conclusion_f	[Félicitations, $self$. Tu es à présent une digne citoyenne de la fédération tryker !]
+}
+
+CITIZENSHIP_TRYKER_INTRO_NO_TRYKER ()
+{
+	( self.gender = male )
+		citizenship_tryker_intro_no_tryker_m	[Bienvenue dans notre belle cité ! Tu veux rejoindre les citoyens de la fédération, $self$ ? Tu m'en vois ravi ! Tu n'es pas de notre peuple, mais ce n'est pas grave. En passant l'Épreuve d'Intégration, tu sauras nous prouver que nous pouvons te faire confiance. Tu pourras ensuite accomplir le rite de citoyenneté. Te sens-tu prêt pour cela ?]
+	( self.gender = female )
+		citizenship_tryker_intro_no_tryker_f	[Bienvenue dans notre belle cité ! Tu veux rejoindre les citoyens de la fédération, $self$ ? Tu m'en vois ravi ! Tu n'es pas de notre peuple, mais ce n'est pas grave. En passant l'Épreuve d'Intégration, tu sauras nous prouver que nous pouvons te faire confiance. Tu pourras ensuite accomplir le rite de citoyenneté. Te sens-tu prête pour cela ?]
+}
+
+CITIZENSHIP_TRYKER_START_TRIAL ()
+{
+	citizenship_tryker_start_trial	[Dans ce cas, commençons sans tarder ! Prends cette perle de loyauté. Lorsqu'un homin fidèle à la cause de la fédération prête serment devant un Initié, un gardien de la connaissance, la pierre se met à briller d'une lumière intense. Si tu passes l'Épreuve avec succès, la perle brillera pour toi de tous ses feux.{break}Chacun des trois villages du Lac de la Liberté est associé à l'une des vertus de la société tryker. Crystabell représente la Liberté, Windermeer l'Égalité et Avendale le Partage. Rends-toi dans ces villages, et montre la perle à un Initié. Il te demandera de prêter serment.{break}Au troisième serment, ta loyauté sera établie. Tu me ramèneras alors la perle pour terminer l'Épreuve. Que les vents des lacs te guident, $self$.]
+}
+
+CITIZENSHIP_TRYKER_CRYSTABELL_OBJ (bot crystabell)
+{
+	citizenship_tryker_crystabell_obj	[Montrer la perle de loyauté au chef des gardes de Crystabell]
+}
+
+CITIZENSHIP_TRYKER_CRYSTABELL_PEARL ()
+{
+	( self.gender = male )
+		citizenship_tryker_crystabell_pearl_m	[Mais que vois-je, peut-être un futur citoyen ! Je suis le gardien de la Liberté en ce lieu, en tant que défenseur indéfectible de la fédération. Fais-tu le serment de tout faire pour protéger la liberté du peuple tryker ?]
+	( self.gender = female )
+		citizenship_tryker_crystabell_pearl_f	[Mais que vois-je, peut-être une future citoyenne ! Je suis le gardien de la Liberté en ce lieu, en tant que défenseur indéfectible de la fédération. Fais-tu le serment de tout faire pour protéger la liberté du peuple tryker ?]
+}
+
+CITIZENSHIP_TRYKER_CRYSTABELL_PEARL_SYSMSG ()
+{
+	citizenship_tryker_crystabell_pearl_sysmsg	[Une brève lueur émane de la pierre, puis disparaît. La lumière de la Liberté semble avoir subtilement transformé la perle. L'Initié vous souhaite bonne chance pour la suite de l'Épreuve.]
+}
+
+CITIZENSHIP_TRYKER_WINDERMEER_OBJ (bot windermeer)
+{
+	citizenship_tryker_windermeer_obj	[Montrer la perle de loyauté au sage de Windermeer]
+}
+
+CITIZENSHIP_TRYKER_WINDERMEER_PEARL ()
+{
+	citizenship_tryker_windermeer_pearl	[Ainsi, tu souhaites faire partie de la fédération. Chaque citoyen est un homin respectable, qui porte en lui une part de sagesse, et en cela nous sommes tous égaux. Je suis le gardien de l'Égalité dans ce village. Fais-tu le serment de prôner les mêmes droits pour tous les citoyens ?]
+}
+
+CITIZENSHIP_TRYKER_WINDERMEER_PEARL_SYSMSG ()
+{
+	citizenship_tryker_windermeer_pearl_sysmsg	[Une brève lueur émane de la pierre, puis disparaît. La lumière de l'Égalité semble avoir subtilement transformé la perle. L'Initié vous souhaite bonne chance pour la suite de l'Épreuve.]
+}
+
+CITIZENSHIP_TRYKER_AVENDALE_OBJ_1 (item i1, int qt1, int qual1, bot avendale)
+{
+	citizenship_tryker_avendale_obj_1	[Montrer la perle de loyauté à l'intendant d'Avendale]
+}
+
+CITIZENSHIP_TRYKER_AVENDALE_PEARL ()
+{
+	citizenship_tryker_avendale_pearl	[Tu arrives au bout de ton épreuve. En tant que responsable de la répartition des ressources pour tout le village, je suis le gardien du Partage. Fais-tu le serment de veiller à ce que chacun ait de quoi subsister ?]
+}
+
+CITIZENSHIP_TRYKER_AVENDALE_PEARL_SYSMSG ()
+{
+	citizenship_tryker_avendale_pearl_sysmsg	[Une intense lueur émane de la pierre. La lumière du Partage semble avoir transformé la perle, qui brille à présent comme une étoile. L'Initié vous félicite, vous avez réussi l'Épreuve !]
+}
+
+CITIZENSHIP_ZORAI_P_TITLE (bot giver)
+{
+	citizenship_zorai_p_title	[Rite de citoyenneté Zoraï]
+}
+
+CITIZENSHIP_ZORAI_P_DESC (bot giver)
+{
+	( self.gender = male )
+		citizenship_zorai_p_desc_m	[En accomplissant ce rite, vous allez devenir un citoyen de la communauté zoraï.]
+	( self.gender = female )
+		citizenship_zorai_p_desc_f	[En accomplissant ce rite, vous allez devenir une citoyenne de la communauté zoraï.]
+}
+
+CITIZENSHIP_ZORAI_P_MENU ()
+{
+	( self.gender = male )
+		citizenship_zorai_p_menu_m	[Devenir un citoyen de la communauté]
+	( self.gender = female )
+		citizenship_zorai_p_menu_f	[Devenir une citoyenne de la communauté]
+}
+
+CITIZENSHIP_ZORAI_INTRO_ZORAI ()
+{
+	citizenship_zorai_intro_zorai	[Que la nature t'accorde ses bienfaits, $self$. Tu as émis le désir de rejoindre notre communauté. Cela est bien. Tu portes un masque de parenté, nul besoin pour toi de passer l'Épreuve d'Intégration. Il te suffira d'accomplir le rite de citoyenneté. Ton coeur et ton âme sont-ils préparés à cela ?]
+}
+
+CITIZENSHIP_ZORAI_DAPPERS (int contribution)
+{
+	( self.gender = male )
+		citizenship_zorai_dappers_m	[Je serai le témoin et le juge de ton engagement envers notre pays et notre communauté. En premier lieu, il convient d'honorer une ancienne tradition : le futur citoyen se doit de verser au trésor dynastique une contribution de $contribution$ dappers. Es-tu prêt à suivre cette coutume, $self$ ?]
+	( self.gender = female )
+		citizenship_zorai_dappers_f	[Je serai le témoin et le juge de ton engagement envers notre pays et notre communauté. En premier lieu, il convient d'honorer une ancienne tradition : le futur citoyen se doit de verser au trésor dynastique une contribution de $contribution$ dappers. Es-tu prête à suivre cette coutume, $self$ ?]
+}
+
+CITIZENSHIP_ZORAI_QUERY_START ()
+{
+	citizenship_zorai_query_start	[Qu'il en soit ainsi. Tu me remettras la somme lorsque le rite sera accompli. Maintenant, mon rôle est de te poser quelques questions. Prends ton temps, pèse bien chacune de tes réponses. Car si tu te trompes, j'aurai le regret de mettre fin au rite et de refuser ta demande.]
+}
+
+CITIZENSHIP_ZORAI_QUERY_1 ()
+{
+	citizenship_zorai_query_1	[Ma première question est fort simple. Qui est le guide de notre communauté et de la dynastie zoraï ?]
+}
+
+CITIZENSHIP_ZORAI_QUERY_1_CIANG ()
+{
+	citizenship_zorai_query_1_ciang	[Le Grand Sage Nao Ye-Ciang]
+}
+
+CITIZENSHIP_ZORAI_QUERY_1_DEXTON ()
+{
+	citizenship_zorai_query_1_dexton	[Le Grand Sage Dex-Ton]
+}
+
+CITIZENSHIP_ZORAI_QUERY_1_MABREKA ()
+{
+	citizenship_zorai_query_1_mabreka	[Le Grand Sage Mabreka-Cho]
+}
+
+CITIZENSHIP_ZORAI_QUERY_1_FUNG ()
+{
+	citizenship_zorai_query_1_fung	[Le Grand Sage Fung-Tun]
+}
+
+CITIZENSHIP_ZORAI_QUERY_WRONG ()
+{
+	citizenship_zorai_query_wrong	[Je crains que tu ne doives mieux nous connaître avant de nous rejoindre, $self$. Le rite est à présent rompu. Va en paix, et parfais tes connaissances avant notre prochaine rencontre.]
+}
+
+CITIZENSHIP_ZORAI_QUERY_2 ()
+{
+	citizenship_zorai_query_2	[Ta réponse est juste. Mabreka-Cho a pris ce nom afin de rendre hommage à ses maîtres et à la dynastie Cho. Il est notre chef spirituel, la voix de la raison qui guide notre peuple. Peux-tu me dire en quelle année Mabreka est-il devenu le Grand Sage des Zoraïs ?]
+}
+
+CITIZENSHIP_ZORAI_QUERY_2_2481 ()
+{
+	citizenship_zorai_query_2_2481	[En 2481.]
+}
+
+CITIZENSHIP_ZORAI_QUERY_2_2484 ()
+{
+	citizenship_zorai_query_2_2484	[En 2484]
+}
+
+CITIZENSHIP_ZORAI_QUERY_2_2504 ()
+{
+	citizenship_zorai_query_2_2504	[En 2504.]
+}
+
+CITIZENSHIP_ZORAI_QUERY_2_2506 ()
+{
+	citizenship_zorai_query_2_2506	[En 2506.]
+}
+
+CITIZENSHIP_ZORAI_QUERY_3 ()
+{
+	citizenship_zorai_query_3	[En effet, cette année a vu la folie de Fung-Tun éclater au grand jour, et le Conseil des Sages confier à Mabreka la mission de conduire les Zoraïs. Mabreka a toujours été fidèle aux principes de notre communauté, aux pierres angulaires de la Dynastie. Sais-tu combien de principes régissent la société zoraï ?]
+}
+
+CITIZENSHIP_ZORAI_QUERY_3_DEUX ()
+{
+	citizenship_zorai_query_3_deux	[Deux]
+}
+
+CITIZENSHIP_ZORAI_QUERY_3_TROIS ()
+{
+	citizenship_zorai_query_3_trois	[Trois]
+}
+
+CITIZENSHIP_ZORAI_QUERY_3_QUATRE ()
+{
+	citizenship_zorai_query_3_quatre	[Quatre]
+}
+
+CITIZENSHIP_ZORAI_QUERY_3_CINQ ()
+{
+	citizenship_zorai_query_3_cinq	[Cinq]
+}
+
+CITIZENSHIP_ZORAI_END_QUERY ()
+{
+	citizenship_zorai_end_query	[La Sagesse, l'Accomplissement spirituel, le Respect de la Nature, ces trois pierres ambrées sont la fondation de nos temples. Tout citoyen médite quotidiennement sur ces principes. Tu as répondu avec sagesse à mes questions, $self$. Tu es sur la bonne voie. Poursuivons le rite.{break}Le plus grand ennemi des Kamis et des Zoraïs est la Goo, le fléau pourpre, manifestation du Vide. Elle corrompt tout ce qui vit, y compris les homins imprudents. L'une des nôtres a été contaminée par ce mal. La folie ronge son âme. Lenja vit aujourd'hui en recluse dans la jungle, ne voulant pas imposer sa déchéance à ses frères.{break}Nous ne pouvons guérir notre soeur, mais nous pouvons la soulager de sa souffrance pendant de courts instants, grâce à de la sève purifiée par les esprits. Prends cette sève, et fais-la boire à Lenja. Reviens ensuite vers moi.]
+}
+
+CITIZENSHIP_ZORAI_END_QUERY_YES ()
+{
+	citizenship_zorai_end_query_yes	[Je trouverai Lenja !]
+}
+
+CITIZENSHIP_ZORAI_TALK_LENJA_OBJ (bot lenja)
+{
+	citizenship_zorai_talk_lenja_obj	[Trouver Lenja dans la jungle et lui faire boire la sève purifiée.]
+}
+
+CITIZENSHIP_ZORAI_TALK_LENJA_MENU (bot lenja)
+{
+	citizenship_zorai_talk_lenja_menu	[Je viens pour t'aider]
+}
+
+CITIZENSHIP_ZORAI_LENJA ()
+{
+	citizenship_zorai_lenja	[Qui est là ? Qui perce le voile de ma douleur d'une voix cristalline ? Haaa, Est-ce toi, esprit de la jungle ? Es-tu venu mettre un terme à mes tourments ?]
+}
+
+CITIZENSHIP_ZORAI_LENJA_SAP ()
+{
+	citizenship_zorai_lenja_sap	[Le fléau ! Le Vide ronge mon âme toute entière ! Mais qu'est ceci ? Un cadeau des Kamis !]
+}
+
+CITIZENSHIP_ZORAI_SYSMSG ()
+{
+	citizenship_zorai_sysmsg	[Lenja boit le contenu du bol. Après quelques minutes, elle semble plus calme, comme si la douleur s'était apaisée. Des larmes tracent des sillons argentés sur son masque. Elle semble finalement remarquer votre présence]
+}
+
+CITIZENSHIP_ZORAI_LENJA_BYE ()
+{
+	( self.gender = male )
+		citizenship_zorai_lenja_bye_m	[Merci, frère homin ! Je goûte grâce à toi un instant de repos. Sois béni pour ton geste, et garde-toi de la corruption du Vide !]
+	( self.gender = female )
+		citizenship_zorai_lenja_bye_f	[Merci, soeur homin ! Je goûte grâce à toi un instant de repos. Sois bénie pour ton geste, et garde-toi de la corruption du Vide !]
+}
+
+CITIZENSHIP_ZORAI_TALK_GIVER (bot givervar)
+{
+	citizenship_zorai_talk_giver	[J'ai donné la sève purifiée à Lenja]
+}
+
+CITIZENSHIP_ZORAI_SAP_GIVED (int contribution)
+{
+	citizenship_zorai_sap_gived	[Même si ce n'est que pour un bref instant, le pouvoir de la Goo sur l'âme de notre soeur a été vaincu. Par ton acte, $self$, tu t'es montré digne de notre communauté. Tu peux maintenant passer la dernière étape du rite de citoyenneté.{break}Il te suffit de me remettre la contribution destinée au trésor dynastique. $contribution$ dappers, qui seront utilisés à bon escient, sois-en certain.]
+}
+
+CITIZENSHIP_ZORAI_BE_CITIZEN ()
+{
+	( self.gender = male )
+		citizenship_zorai_be_citizen_m	[Au nom de tous les Zoraïs, sois remercié. Les bras de notre communauté s'ouvrent maintenant pour toi, $self$. Jures-tu de servir le Grand Sage, notre guide spirituel, de respecter les lois dynastiques, de faire prospérer le peuple qui t'accueille ? Jures-tu de défendre notre pays au péril de ta vie ?]
+	( self.gender = female )
+		citizenship_zorai_be_citizen_f	[Au nom de tous les Zoraïs, sois remerciée. Les bras de notre communauté s'ouvrent maintenant pour toi, $self$. Jures-tu de servir le Grand Sage, notre guide spirituel, de respecter les lois dynastiques, de faire prospérer le peuple qui t'accueille ? Jures-tu de défendre notre pays au péril de ta vie ?]
+}
+
+CITIZENSHIP_ZORAI_CONCLUSION ()
+{
+	( self.gender = male )
+		citizenship_zorai_conclusion_m	[Félicitations, $self$. Tu es à présent un digne citoyen de la communauté zoraï !]
+	( self.gender = female )
+		citizenship_zorai_conclusion_f	[Félicitations, $self$. Tu es à présent une digne citoyenne de la communauté zoraï !]
+}
+
+CITIZENSHIP_ZORAI_INTRO_NO_ZORAI ()
+{
+	citizenship_zorai_intro_no_zorai	[Que la nature t'accorde ses bienfaits, $self$. Tu as émis le désir de rejoindre notre communauté. Cela est bien. Tu ne portes pas de masque, aussi te faudra-t-il passer l'Épreuve d'Intégration. Ensuite seulement tu pourras accomplir le rite de citoyenneté. Ton coeur et ton âme sont-ils préparés à cela ?]
+}
+
+CITIZENSHIP_ZORAI_START_TRIAL ()
+{
+	citizenship_zorai_start_trial	[Très bien, dans ce cas, commençons. Prends cette perle de loyauté. Lorsqu'un homin fidèle à la cause de la dynastie prête serment devant un Initié, un gardien de la connaissance, la pierre se met à briller d'une lumière intense. Si tu passes l'Épreuve avec succès, la perle brillera pour toi de tous ses feux.{break}Chacun des trois villages des Cités de l'Intuition est associé à l'une des pierres angulaires de la société zoraï. Hoï-Cho représente la Sagesse, Jen-Lai l'Accomplissement spirituel et Min-Cho le Respect de la Nature. Rends-toi dans ces villages, et montre la perle à un Initié. Il te demandera de prêter serment.{break}Au troisième serment, ta loyauté sera établie. Tu me ramèneras alors la perle pour terminer l'Épreuve. Que les esprits de la nature te montrent le chemin, $self$.]
+}
+
+CITIZENSHIP_ZORAI_HOICHO_OBJ (bot hoicho)
+{
+	citizenship_zorai_hoicho_obj	[Montrer la perle de loyauté au sage de Hoï-Cho]
+}
+
+CITIZENSHIP_ZORAI_HOICHO_PEARL ()
+{
+	( self.gender = male )
+		citizenship_zorai_hoicho_pearl_m	[Sois le bienvenu. Je suis le gardien de la Sagesse dans ce village, transmettant mon savoir aux gens de mon peuple. Fais-tu le serment de rechercher la sagesse, afin de mieux te connaître et de mieux connaître le monde qui t'entoure ?]
+	( self.gender = female )
+		citizenship_zorai_hoicho_pearl_f	[Sois la bienvenue. Je suis le gardien de la Sagesse dans ce village, transmettant mon savoir aux gens de mon peuple. Fais-tu le serment de rechercher la sagesse, afin de mieux te connaître et de mieux connaître le monde qui t'entoure ?]
+}
+
+CITIZENSHIP_ZORAI_HOICHO_PEARL_SYSMSG ()
+{
+	citizenship_zorai_hoicho_pearl_sysmsg	[Une brève lueur émane de la pierre, puis disparaît. La lumière de la Sagesse semble avoir subtilement transformé la perle. L'Initié vous souhaite bonne chance pour la suite de l'Épreuve.]
+}
+
+CITIZENSHIP_ZORAI_JENLAI_OBJ (bot jenlai)
+{
+	citizenship_zorai_jenlai_obj	[Montrer la perle de loyauté au chef des gardes de Jen-Lai]
+}
+
+CITIZENSHIP_ZORAI_JENLAI_PEARL ()
+{
+	citizenship_zorai_jenlai_pearl	[Je vois que tu souhaites rejoindre notre communauté. Sache que le mérite menant à l'Illumination s'acquiert parfois dans la bataille, quand il faut préserver les Kamis et Atys toute entière. Je suis le gardien de l'Accomplissement spirituel en ce lieu, le protecteur de l'harmonie. Fais-tu le serment de rechercher l'Illumination par des actes méritants ?]
+}
+
+CITIZENSHIP_ZORAI_JENLAI_PEARL_SYSMSG ()
+{
+	citizenship_zorai_jenlai_pearl_sysmsg	[Une brève lueur émane de la pierre, puis disparaît. La lumière de l'Accomplissement spirituel semble avoir subtilement transformé la perle. L'Initié vous souhaite bonne chance pour la suite de l'Épreuve.]
+}
+
+CITIZENSHIP_ZORAI_MINCHO_OBJ_1 (item i1, int qt1, int qual1, bot mincho)
+{
+	citizenship_zorai_mincho_obj_1	[Montrer la perle de loyauté à l'intendant de Min-Cho]
+}
+
+CITIZENSHIP_ZORAI_MINCHO_PEARL ()
+{
+	citizenship_zorai_mincho_pearl	[Tu arrives au bout de ton épreuve. Je suis le responsable des récolteurs du village, et je veille à ce que la Nature soit traitée avec toute la considération qui lui est due. Je suis le gardien du Respect de la Nature. Fais-tu le serment de prendre soin d'Atys, et de ne jamais prendre plus qu'elle ne peut te donner ?]
+}
+
+CITIZENSHIP_ZORAI_MINCHO_PEARL_SYSMSG ()
+{
+	citizenship_zorai_mincho_pearl_sysmsg	[Une intense lueur émane de la pierre. La lumière du Respect de la Nature semble avoir transformé la perle, qui brille à présent comme une étoile. L'Initié vous félicite, vous avez réussi l'Épreuve !]
+}
+
+CITIZENSHIP_ZORAI_GOTO_RITE ()
+{
+	citizenship_zorai_goto_rite	[Les esprits t'ont guidé, $self$, tu as réussi l'Épreuve d'Intégration ! Tu peux maintenant passer le rite de citoyenneté, si c'est toujours ce que tu souhaites.]
+}
+
+CITIZENSHIP_FYROS_CANCEL_P_DESC (bot giver)
+{
+	( self.gender = male )
+		citizenship_fyros_cancel_p_desc_m	[Vous allez abandonner votre statut de citoyen et devenir un apatride.]
+	( self.gender = female )
+		citizenship_fyros_cancel_p_desc_f	[Vous allez abandonner votre statut de citoyenne et devenir une apatride.]
+}
+
+CITIZENSHIP_FYROS_CANCEL_P_MENU ()
+{
+	citizenship_fyros_cancel_p_menu	[Renoncer à la citoyenneté]
+}
+
+CITIZENSHIP_FYROS_CANCEL_INTRO ()
+{
+	( self.gender = male )
+		citizenship_fyros_cancel_intro_m	[Tu as pris une grave décision, $self$. Tu veux abandonner notre nation, renonçant ainsi à ton statut de citoyen ? C'est ton droit, mais j'espère que tu as pesé toutes les conséquences. Tu vas devenir un apatride, un homin sans nationalité. Tu ne seras plus protégé par nos lois. Es-tu certain de vouloir cela ?]
+	( self.gender = female )
+		citizenship_fyros_cancel_intro_f	[Tu as pris une grave décision, $self$. Tu veux abandonner notre nation, renonçant ainsi à ton statut de citoyenne ? C'est ton droit, mais j'espère que tu as pesé toutes les conséquences. Tu vas devenir une apatride, une homine sans nationalité. Tu ne seras plus protégée par nos lois. Es-tu certaine de vouloir cela ?]
+}
+
+CITIZENSHIP_FYROS_CANCEL_INTRO_YES ()
+{
+	( self.gender = male )
+		citizenship_fyros_cancel_intro_yes_m	[Oui, j'en suis certain]
+	( self.gender = female )
+		citizenship_fyros_cancel_intro_yes_f	[Oui, j'en suis certaine]
+}
+
+CITIZENSHIP_FYROS_CANCEL_INTRO_NO ()
+{
+	citizenship_fyros_cancel_intro_no	[Non, j'ai changé d'avis, au revoir]
+}
+
+CITIZENSHIP_FYROS_CANCEL_CONFIRM ()
+{
+	( self.gender = male )
+		citizenship_fyros_cancel_confirm_m	[Bien, tu es maître de ton destin, $self$. Après m'avoir confirmé ta renonciation, tu seras officiellement un apatride.]
+	( self.gender = female )
+		citizenship_fyros_cancel_confirm_f	[Bien, tu es maître de ton destin, $self$. Après m'avoir confirmé ta renonciation, tu seras officiellement une apatride.]
+}
+
+CITIZENSHIP_FYROS_CANCEL_CONFIRM_YES ()
+{
+	( self.gender = male )
+		citizenship_fyros_cancel_confirm_yes_m	[Je confirme que je renonce à mon statut de citoyen]
+	( self.gender = female )
+		citizenship_fyros_cancel_confirm_yes_f	[Je confirme que je renonce à mon statut de citoyenne]
+}
+
+CITIZENSHIP_FYROS_CANCEL_CONFIRM_NO ()
+{
+	( self.gender = male )
+		citizenship_fyros_cancel_confirm_no_m	[Finalement, je préfère rester un citoyen, au revoir]
+	( self.gender = female )
+		citizenship_fyros_cancel_confirm_no_f	[Finalement, je préfère rester une citoyenne, au revoir]
+}
+
+CITIZENSHIP_FYROS_CANCEL_NOT_CITIZEN ()
+{
+	( self.gender = male )
+		citizenship_fyros_cancel_not_citizen_m	[Tu n'es pas citoyen, $self$.]
+	( self.gender = female )
+		citizenship_fyros_cancel_not_citizen_f	[Tu n'es pas citoyenne, $self$.]
+}
+
+CITIZENSHIP_FYROS_GUILD_P_TITLE (bot giver)
+{
+	citizenship_fyros_guild_p_title	[Rite de citoyenneté fyros pour guilde]
+}
+
+CITIZENSHIP_FYROS_GUILD_P_DESC (bot giver)
+{
+	citizenship_fyros_guild_p_desc	[En accomplissant ce rite, votre guilde va devenir une guilde impériale fyros]
+}
+
+CITIZENSHIP_FYROS_GUILD_P_MENU ()
+{
+	citizenship_fyros_guild_p_menu	[Devenir une guilde impériale]
+}
+
+CITIZENSHIP_FYROS_GUILD_INTRO ()
+{
+	( self.gender = male )
+		citizenship_fyros_guild_intro_m	[Ainsi, $self$, ta guilde souhaites rejoindre les glorieux rangs de l'Empire ? En tant que son représentant, tu vas devoir prouver ta loyauté à la nation fyros. Il te faudra d'abord passer l'Épreuve d'Intégration. Si tu réussis, alors tu pourras accomplir le rite de citoyenneté. Toi et ta guilde, Pensez-vous être dignes des homins du désert, $self$ ?]
+	( self.gender = female )
+		citizenship_fyros_guild_intro_f	[Ainsi, $self$, ta guilde souhaites rejoindre les glorieux rangs de l'Empire ? En tant que sa représentante, tu vas devoir prouver ta loyauté à la nation fyros. Il te faudra d'abord passer l'Épreuve d'Intégration. Si tu réussis, alors tu pourras accomplir le rite de citoyenneté. Toi et ta guilde, Pensez-vous être dignes des homins du désert, $self$ ?]
+}
+
+CITIZENSHIP_FYROS_GUILD_INTRO_YES ()
+{
+	citizenship_fyros_guild_intro_yes	[Oui, nous voulons rejoindre l'empire !]
+}
+
+CITIZENSHIP_FYROS_GUILD_START_TRIAL ()
+{
+	citizenship_fyros_guild_start_trial	[Très bien. Prends cette perle. Elle représente la loyauté envers la nation fyros. Lorsqu'un homin dédié à la cause de l'empire l'approche des flammes sacrées, elle se met à briller d'une lumière intense comme le feu du soleil. Si tu passes l'Épreuve, la perle brillera pour toi et ta guilde, $self$.{break}Dans les dunes impériales se trouvent trois des quatres flambeaux sacrés représentant les piliers de la société fyros : les flammes de la Vérité, de l'Honneur et de la Discipline. Trouve-les, et bénis la perle au contact du feu.{break}Reviens ensuite ici pour prêter serment devant le dernier flambeau, celui de la Justice. Hâte-toi, $self$. Explore les lieux-dits de la région, et cherche les trois piliers.]
+}
+
+CITIZENSHIP_FYROS_GUILD_FLAME_JUSTICE_PEARL ()
+{
+	citizenship_fyros_guild_flame_justice_pearl	[Le moment de vérité est donc arrivé. Près de moi se trouve le quatrième pilier, la flamme de la Justice. Approche la perle du feu. Si toi et ta guilde êtes loyaux envers notre peuple, elle brillera de tout son éclat, et ne s'éteindra pas.]
+}
+
+CITIZENSHIP_FYROS_GUILD_GOTO_RITE ()
+{
+	citizenship_fyros_guild_goto_rite	[Tu as réussi l'Épreuve d'Intégration au nom de ta guilde, $self$ ! Tu peux à présent passer le rite de citoyenneté, si c'est toujours ce que vous souhaitez, toi et les tiens.]
+}
+
+CITIZENSHIP_FYROS_GUILD_DAPPERS (int contribution)
+{
+	citizenship_fyros_guild_dappers	[Je serai juge tout au long du rite de ton aptitude à honorer notre pays. Tout d'abord, l'usage veut qu'une contribution financière soit versée au trésor impérial par toute guilde désirant acquérir le statut de guilde nationale. Cette contribution se monte à $contribution$ dappers. Ta guilde est-elle prête à faire don de cette somme ?]
+}
+
+CITIZENSHIP_FYROS_GUILD_QUERY_START ()
+{
+	citizenship_fyros_guild_query_start	[Parfait ! Tu me remettras cette somme à la fin du rite, si tu as passé les étapes avec succès. Je vais maintenant te poser quelques questions importantes. Tout officiel d'une guilde fyros se doit d'en connaître les réponses. Réfléchis bien, car si tu te trompes, le rite sera terminé, et ta guilde aura échoué.]
+}
+
+CITIZENSHIP_FYROS_GUILD_QUERY_WRONG ()
+{
+	citizenship_fyros_guild_query_wrong	[Mauvaise réponse... Toi et ta guilde n'êtes pas encore prêts. Reviens me voir quand vous connaitrez mieux notre nation. Et n'oublie pas : les échecs nous rendent plus forts !]
+}
+
+CITIZENSHIP_FYROS_GUILD_END_QUERY ()
+{
+	citizenship_fyros_guild_end_query	[Vérité, Honneur, Discipline, Justice, tels sont les Quatre piliers. Ces valeurs ont soutenu notre peuple tout au long de son histoire. Il est important de ne pas les oublier ! Tu as bien répondu à mes questions, $self$. Le moment est venu de passer à la seconde étape du rite.{break} C'est dans le feu que se forgent les meilleures armes ; c'est aussi dans le feu que sont forgés les citoyens fyros. Prends ce sac de veilleur : il contient une cage à feu, conçue pour retenir les flammes magiques qui crépitent sur les arbres bothaya.{break}Trouve l'un de ces arbres, et ramène-moi son fruit brûlant. Alors toi et ta guilde serez dignes de l'empire !]
+}
+
+CITIZENSHIP_FYROS_GUILD_GIVE_DAPPERS (int contribution)
+{
+	citizenship_fyros_guild_give_dappers	[Tu as réussi, $self$ ! Ton désir d'amener ta guilde à rejoindre l'empire est aussi ardent que ce feu magique ! Je te félicite, tu as passé le rite avec succès. Il ne te reste plus qu'à t'acquitter au nom de ta guilde de la contribution envers le trésor impérial. Elle se monte à $contribution$ dappers.]
+}
+
+CITIZENSHIP_FYROS_GUILD_BE_CITIZEN ()
+{
+	citizenship_fyros_guild_be_citizen	[Soyez remerciés, toi et les tiens. Et soyez fiers, car vous allez maintenant rejoindre la nation fyros. Jurez-vous de servir l'empereur, de respecter les lois de l'Empire, de faire prospérer le peuple qui vous accueille ? Jurez-vous de défendre notre nation au péril de vos vies ?]
+}
+
+CITIZENSHIP_FYROS_GUILD_BE_CITIZEN_YES ()
+{
+	citizenship_fyros_guild_be_citizen_yes	[Nous le jurons !]
+}
+
+CITIZENSHIP_FYROS_GUILD_CONCLUSION ()
+{
+	citizenship_fyros_guild_conclusion	[Félicitations, $self$. Ta guilde est à présent une guilde impériale fyros !]
+}
+
+CITIZENSHIP_FYROS_GUILD_END_CONFIRM ()
+{
+	citizenship_fyros_guild_end_confirm	[Attention, si tu pars maintenant, toutes les étapes que tu as passées seront annulées. Il te faudra tout recommencer pour que ta guilde rejoigne l'empire.]
+}
+
+CITIZENSHIP_FYROS_GUILD_NO_FAME ()
+{
+	citizenship_fyros_guild_no_fame	[La réputation de ta guilde est insuffisante pour passer le rite.]
+}
+
+CITIZENSHIP_FYROS_GUILD_ALREADY_FYROS ()
+{
+	citizenship_fyros_guild_already_fyros	[Toi et les tiens êtes déjà citoyens, $self$. Tu ne peux pas repasser le rite.]
+}
+
+CITIZENSHIP_MATIS_GUILD_P_TITLE (bot giver)
+{
+	citizenship_matis_guild_p_title	[Rite de citoyenneté matis pour guilde]
+}
+
+CITIZENSHIP_MATIS_GUILD_P_DESC (bot giver)
+{
+	citizenship_matis_guild_p_desc	[En accomplissant ce rite, votre guilde va devenir une guilde royale matis.]
+}
+
+CITIZENSHIP_MATIS_GUILD_P_MENU ()
+{
+	citizenship_matis_guild_p_menu	[Devenir une guilde royale]
+}
+
+CITIZENSHIP_MATIS_GUILD_INTRO_NO_MATIS ()
+{
+	( self.gender = male )
+		citizenship_matis_guild_intro_no_matis_m	[Ainsi, $self$, ta guilde souhaite faire partie intégrante du royaume matis ? En tant que son représentant, tu vas devoir prouver ta loyauté envers la couronne. Il te faudra d'abord passer l'Épreuve d'Intégration. Si tu réussis, tu pourras ensuite accomplir le rite de citoyenneté. Toi et ta guilde, estimez-vous être dignes de nous, $self$ ?]
+	( self.gender = female )
+		citizenship_matis_guild_intro_no_matis_f	[Ainsi, $self$, ta guilde souhaite faire partie intégrante du royaume matis ? En tant que sa représentate, tu vas devoir prouver ta loyauté envers la couronne. Il te faudra d'abord passer l'Épreuve d'Intégration. Si tu réussis, tu pourras ensuite accomplir le rite de citoyenneté. Toi et ta guilde, estimez-vous être dignes de nous, $self$ ?]
+}
+
+CITIZENSHIP_MATIS_GUILD_START_TRIAL ()
+{
+	( self.gender = male )
+		citizenship_matis_guild_start_trial_m	[Tu sembles décidé. Dans ce cas, prends cette perle. Elle représente la Loyauté, notre première valeur, envers la nation matis. Lorsqu'un homin fidèle à la cause du royaume prête serment devant un Initié, un gardien de la connaissance, la pierre se met à briller d'une lumière intense. Si tu passes l'Épreuve avec succès, la perle brillera pour toi et ta guilde de tous ses feux.{break}Chacun des trois villages du Jardin Majestueux est associé à l'une des valeurs de la société matis. Davae représente la Loyauté, Avalae l'Accomplissement esthétique et Natae la Compétition. Rends-toi dans ces villages, et montre la perle à un Initié. Il te demandera de prêter serment au nom de ta guilde.{break}Au troisième serment, votre loyauté sera établie. Tu me ramèneras alors la perle pour terminer l'Épreuve. Tu sais ce qu'il te reste à faire, $self$.]
+	( self.gender = female )
+		citizenship_matis_guild_start_trial_f	[Tu sembles décidée. Dans ce cas, prends cette perle. Elle représente la Loyauté, notre première valeur, envers la nation matis. Lorsqu'un homin fidèle à la cause du royaume prête serment devant un Initié, un gardien de la connaissance, la pierre se met à briller d'une lumière intense. Si tu passes l'Épreuve avec succès, la perle brillera pour toi et ta guilde de tous ses feux.{break}Chacun des trois villages du Jardin Majestueux est associé à l'une des valeurs de la société matis. Davae représente la Loyauté, Avalae l'Accomplissement esthétique et Natae la Compétition. Rends-toi dans ces villages, et montre la perle à un Initié. Il te demandera de prêter serment au nom de ta guilde.{break}Au troisième serment, votre loyauté sera établie. Tu me ramèneras alors la perle pour terminer l'Épreuve. Tu sais ce qu'il te reste à faire, $self$.]
+}
+
+CITIZENSHIP_MATIS_GUILD_DAVAE_PEARL ()
+{
+	( self.gender = male )
+		citizenship_matis_guild_davae_pearl_m	[Ha, peut-être le représentant d'une future guilde royale ! Je suis le gardien de la Loyauté en ce lieu, en tant que défenseur indéfectible du royaume. Au nom de ta guilde, fais-tu le serment d'être loyal envers le peuple matis ?]
+	( self.gender = female )
+		citizenship_matis_guild_davae_pearl_f	[Ha, peut-être la représentante d'une future guilde royale ! Je suis le gardien de la Loyauté en ce lieu, en tant que défenseur indéfectible du royaume. Au nom de ta guilde, fais-tu le serment d'être loyal envers le peuple matis ?]
+}
+
+CITIZENSHIP_MATIS_GUILD_AVALAE_PEARL ()
+{
+	citizenship_matis_guild_avalae_pearl	[Ainsi, ta guilde veut faire partie de notre grand royaume ! En tant que garant du travail des meilleurs artisans, je suis le gardien de l'Accomplissement esthétique en ce lieu. Au nom de ta guilde, fais-tu le serment de rechercher la beauté pour en faire profiter le peuple matis ?]
+}
+
+CITIZENSHIP_MATIS_GUILD_NATAE_PEARL ()
+{
+	citizenship_matis_guild_natae_pearl	[Tu arrives au bout de ton épreuve. Je suis le gardien de la Compétition, car de cette valeur naît la connaissance de soi et des autres, et de cette connaissance naît la sagesse. Au nom de ta guilde, fais-tu le serment de te dépasser, trouvant ainsi la force dans tes faiblesses ?]
+}
+
+CITIZENSHIP_MATIS_GUILD_DAPPERS (int contribution)
+{
+	citizenship_matis_guild_dappers	[Tout au long du rite, je serai juge de ton engagement envers notre pays. Pour commencer, sache qu'il est réclamé à toute guilde prétendante une contribution financière destinée au trésor royal. Cette contribution se monte selon l'usage à $contribution$ dappers. Disposez-vous de cette somme, $self$ ?]
+}
+
+CITIZENSHIP_MATIS_GUILD_QUERY_START ()
+{
+	( self.gender = male )
+		citizenship_matis_guild_query_start_m	[Très bien. La contribution sera versée à la fin du rite... si tu arrives jusque là. À présent, je vais te poser quelques questions. Tout officiel d'une guilde de notre royaume doit en connaître les réponses. Sois sûr de toi : si tu commets un erreur, le rite prendra fin immédiatement, et la demande de ta guilde sera rejetée.]
+	( self.gender = female )
+		citizenship_matis_guild_query_start_f	[Très bien. La contribution sera versée à la fin du rite... si tu arrives jusque là. À présent, je vais te poser quelques questions. Tout officiel d'une guilde de notre royaume doit en connaître les réponses. Sois sûre de toi : si tu commets un erreur, le rite prendra fin immédiatement, et la demande de ta guilde sera rejetée.]
+}
+
+CITIZENSHIP_MATIS_GUILD_END_QUERY ()
+{
+	citizenship_matis_guild_end_query	[La Loyauté, l'Accomplissement esthétique et la Compétition. Ces valeurs nous définissent et nous portent vers l'excellence. Garde-les toujours à l'esprit, $self$. Tu as répondu correctement à mes questions, je suis impressionné. Mais le rite n'est pas terminé.{break}Comme tu le sais sans doute, les Matis sont les maîtres des plantes. Ils sculptent la nature pour magnifier sa beauté et réaliser de magnifiques oeuvres d'art. L'une de ces artistes, Dame Lira Bravichi, a fait naître une merveille dans le Jardin Majestueux. Une plante exotique aux fleurs somptueuses, que l'on a baptisée rotoa de Bravichi.{break}Trouve cette plante, et ramène-moi l'une de ses fleurs. Elle ornera la salle royale et montrera à tous l'engagement de ta guilde dans la recherche de la beauté.]
+}
+
+CITIZENSHIP_MATIS_GUILD_FLOWER_GIVED (int contribution)
+{
+	citizenship_matis_guild_flower_gived	[Merci, $self$. La fragrance de cette fleur délicate n'est-elle pas sublime ? Certains esprits chagrins prétendent que son pollen est un poison mortel, mais rassure-toi, leurs théories ont été tournées en ridicule.{break}Permets-moi de te féliciter, car tu as passé le rite avec succès. Il ne te reste plus qu'à t'acquitter au nom de ta guilde de la modeste contribution financière que j'ai évoquée précédemment. Elle se monte à $contribution$ dappers.]
+}
+
+CITIZENSHIP_MATIS_GUILD_BE_CITIZEN ()
+{
+	citizenship_matis_guild_be_citizen	[Bien, $self$, le moment tant attendu est venu pour ta guilde. Jurez-vous de servir le roi, de respecter les lois du royaume, de faire prospérer le peuple qui vous accueille ? Jurez-vous de défendre notre nation au péril de vos vies ?]
+}
+
+CITIZENSHIP_MATIS_GUILD_CONCLUSION ()
+{
+	citizenship_matis_guild_conclusion	[Tu peux marcher la tête haute, $self$. Ta guilde est à présent une guilde royale matis !]
+}
+
+CITIZENSHIP_MATIS_GUILD_QUERY_WRONG ()
+{
+	( self.gender = male )
+		citizenship_matis_guild_query_wrong_m	[Tu ferais un bien piètre citoyen... Je te conseille à toi et aux tiens d'en apprendre davantage sur notre pays avant de revenir me voir. Ne soyez pas trop déçus : toutes les guildes ne peuvent pas faire partie du plus grand royaume d'Atys.]
+	( self.gender = female )
+		citizenship_matis_guild_query_wrong_f	[Tu ferais une bien piètre citoyenne... Je te conseille à toi et aux tiens d'en apprendre davantage sur notre pays avant de revenir me voir. Ne soyez pas trop déçus : toutes les guildes ne peuvent pas faire partie du plus grand royaume d'Atys.]
+}
+
+CITIZENSHIP_TRYKER_GUILD_P_TITLE (bot giver)
+{
+	citizenship_tryker_guild_p_title	[Rite de citoyenneté tryker pour guilde]
+}
+
+CITIZENSHIP_TRYKER_GUILD_P_DESC (bot giver)
+{
+	citizenship_tryker_guild_p_desc	[En accomplissant ce rite, votre guilde va devenir une guilde fédérale tryker.]
+}
+
+CITIZENSHIP_TRYKER_GUILD_P_MENU ()
+{
+	citizenship_tryker_guild_p_menu	[Devenir une guilde fédérale]
+}
+
+CITIZENSHIP_TRYKER_GUILD_INTRO_NO_TRYKER ()
+{
+	( self.gender = male )
+		citizenship_tryker_guild_intro_no_tryker_m	[Bienvenue dans notre belle cité ! Ta guilde veut rejoindre la fédération, $self$ ? Tu m'en vois ravi ! En tant que son représentant, tu vas devoir prouver ta loyauté envers le peuple tryker. Il te faudra d'abord passer l'Épreuve d'Intégration. Si tu réussis, tu pourras ensuite accomplir le rite de citoyenneté. Toi et ta guilde, êtes-vous prêts pour cela ?]
+	( self.gender = female )
+		citizenship_tryker_guild_intro_no_tryker_f	[Bienvenue dans notre belle cité ! Ta guilde veut rejoindre la fédération, $self$ ? Tu m'en vois ravi ! En tant que sa représentante, tu vas devoir prouver ta loyauté envers le peuple tryker. Il te faudra d'abord passer l'Épreuve d'Intégration. Si tu réussis, tu pourras ensuite accomplir le rite de citoyenneté. Toi et ta guilde, êtes-vous prêts pour cela ?]
+}
+
+CITIZENSHIP_TRYKER_GUILD_START_TRIAL ()
+{
+	citizenship_tryker_guild_start_trial	[Dans ce cas, commençons sans tarder ! Prends cette perle de loyauté. Lorsqu'un homin fidèle à la cause de la fédération prête serment devant un Initié, un gardien de la connaissance, la pierre se met à briller d'une lumière intense. Si tu passes l'Épreuve avec succès, la perle brillera pour toi et ta guilde de tous ses feux.{break}Chacun des trois villages du Lac de la Liberté est associé à l'une des vertus de la société tryker. Crystabell représente la Liberté, Windermeer l'Égalité et Avendale le Partage. Rends-toi dans ces villages, et montre la perle à un Initié. Il te demandera de prêter serment au nom de ta guilde.{break}Au troisième serment, votre loyauté sera établie. Tu me ramèneras alors la perle pour terminer l'Épreuve. Que les vents des lacs te guident, $self$.]
+}
+
+CITIZENSHIP_TRYKER_GUILD_CRYSTABELL_PEARL ()
+{
+	( self.gender = male )
+		citizenship_tryker_guild_crystabell_pearl_m	[Mais que vois-je, peut-être le représentant d'une future guilde fédérale ! Je suis le gardien de la Liberté en ce lieu, en tant que défenseur indéfectible de la fédération. Au nom de ta guilde, fais-tu le serment de tout faire pour protéger la liberté du peuple tryker ?]
+	( self.gender = female )
+		citizenship_tryker_guild_crystabell_pearl_f	[Mais que vois-je, peut-être la représentante d'une future guilde fédérale ! Je suis le gardien de la Liberté en ce lieu, en tant que défenseur indéfectible de la fédération. Au nom de ta guilde, fais-tu le serment de tout faire pour protéger la liberté du peuple tryker ?]
+}
+
+CITIZENSHIP_TRYKER_GUILD_WINDERMEER_PEARL ()
+{
+	citizenship_tryker_guild_windermeer_pearl	[Ainsi, ta guilde souhaite faire partie de la fédération. Chaque citoyen est un homin respectable, qui porte en lui une part de sagesse, et en cela nous sommes tous égaux. Je suis le gardien de l'Égalité dans ce village. Au nom de ta guilde, fais-tu le serment de prôner les mêmes droits pour tous les citoyens ?]
+}
+
+CITIZENSHIP_TRYKER_GUILD_AVENDALE_PEARL ()
+{
+	citizenship_tryker_guild_avendale_pearl	[Tu arrives au bout de ton épreuve. En tant que responsable de la répartition des ressources pour tout le village, je suis le gardien du Partage. Au nom de ta guilde, fais-tu le serment de veiller à ce que chacun ait de quoi subsister ?]
+}
+
+CITIZENSHIP_TRYKER_GUILD_DAPPERS (int contribution)
+{
+	citizenship_tryker_guild_dappers	[C'est moi qui serai juge de ton engagement envers notre pays tout au long du rite. Je vais tout d'abord faire appel à la générosité de ta guilde. En effet, il est d'usage pour chaque guilde postulante de verser une contribution au trésor fédéral. Cette contribution se monte à $contribution$ dappers. Êtes-vous prêts à offrir cela au peuple des lacs ?]
+}
+
+CITIZENSHIP_TRYKER_GUILD_QUERY_START ()
+{
+	citizenship_tryker_guild_query_start	[Parfait. Garde l'argent de ta guilde pour l'instant, tu me le remettras lorsque tu auras passé les différentes étapes du rite. Je vais maintenant te poser quelques questions. Réfléchis bien avant de me répondre, et ne te trompe pas, sinon la demande de ta guilde sera rejetée.]
+}
+
+CITIZENSHIP_TRYKER_GUILD_QUERY_WRONG ()
+{
+	citizenship_tryker_guild_query_wrong	[Hélas, ce n'est pas la bonne réponse... Ne te décourage pas, $self$, ce n'est que partie remise ! Reviens me voir quand toi et ta guilde en saurez davantage sur la Fédération.]
+}
+
+CITIZENSHIP_TRYKER_GUILD_QUERY_3 ()
+{
+	citizenship_tryker_guild_query_3	[Bonne réponse, $self$ ! C'est cette année là que l'ancien gouverneur Nimby a démissionné devant la pression populaire. Wyler a été élu haut la main, c'est le cas de le dire ! Il défendait avec ferveur les vertus de la société tryker. À ce propos, connais-tu le nombre des vertus essentielles pour une guilde de la fédération ?]
+}
+
+CITIZENSHIP_TRYKER_GUILD_END_QUERY ()
+{
+	citizenship_tryker_guild_end_query	[Liberté, Égalité, Partage : c'est pour ces valeurs que notre peuple vit et se bat. Elles sont aussi importantes que le pain et l'eau qui nous nourrissent !{break}Bravo pour toutes tes réponses, $self$. Je ne doute pas que ta guilde sera bientôt liée à notre nation ! Passons à la prochaine étape du rite. Tu vas avoir l'occasion de pratiquer l'une de nos vertus fondamentales : le Partage.{break}Depuis quelques années, un vagabond sillonne les îlots du Lac de la Liberté. Personne ne connaît son nom, d'ailleurs lui-même semble l'avoir oublié. Il est plutôt taciturne, mais dans le fond c'est un brave homin.{break}Il tient à son indépendance et ne semble guère apprécier la compagnie, hormis celle des poissons... en réalité, il apprécie une petite visite de temps à autre, surtout pour partager une bonne bière !{break} Prends cette bouteille de bière lacustre, brassée par le barman d'Avendale. Trouve le vagabond, et buvez ensemble à la santé de tous les Trykers ! Reviens ensuite me voir.]
+}
+
+CITIZENSHIP_TRYKER_GUILD_BEER_GIVED (int contribution)
+{
+	citizenship_tryker_guild_beer_gived	[Hé hé, je vois à ton teint que tu as apprécié la bière d'Avendale ! Tu as rendu honneur à nos traditions, $self$. Je considère donc que toi et ta guilde avez passé le rite avec succès !{break}Il ne te reste plus qu'à me remettre la contribution de ta guilde destinée au trésor fédéral. Je t'en rappelle le montant : $contribution$ dappers.]
+}
+
+CITIZENSHIP_TRYKER_GUILD_BE_CITIZEN ()
+{
+	citizenship_tryker_guild_be_citizen	[Eh bien, tout est réglé ! $self$, ta guilde va à présent rejoindre la Fédération. Jurez-vous de servir le gouverneur, notre représentant, de respecter les lois de la Fédération, de faire prospérer le peuple qui vous accueille ? Jurez-vous de défendre notre nation au péril de vos vies ?]
+}
+
+CITIZENSHIP_TRYKER_GUILD_CONCLUSION ()
+{
+	citizenship_tryker_guild_conclusion	[Félicitations, $self$. Ta guilde est à présent une guilde fédérale tryker !]
+}
+
+CITIZENSHIP_ZORAI_GUILD_P_TITLE (bot giver)
+{
+	citizenship_zorai_guild_p_title	[Rite de citoyenneté zoraï pour guilde]
+}
+
+CITIZENSHIP_ZORAI_GUILD_P_DESC (bot giver)
+{
+	citizenship_zorai_guild_p_desc	[En accomplissant ce rite, votre guilde va devenir une guilde dynastique zoraï.]
+}
+
+CITIZENSHIP_ZORAI_GUILD_P_MENU ()
+{
+	citizenship_zorai_guild_p_menu	[Devenir une guilde dynastique]
+}
+
+CITIZENSHIP_ZORAI_GUILD_INTRO_NO_ZORAI ()
+{
+	citizenship_zorai_guild_intro_no_zorai	[Que la nature t'accorde ses bienfaits, $self$. Ta guilde a émis le désir de rejoindre notre communauté. En tant que son représentant, tu vas devoir prouver ta loyauté envers le peuple zoraï. Il te faudra d'abord passer l'Épreuve d'Intégration. Si tu réussis, tu pourras ensuite accomplir le rite de citoyenneté. Toi et ta guilde, êtes-vous prêts pour cela ?]
+}
+
+CITIZENSHIP_ZORAI_GUILD_START_TRIAL ()
+{
+	citizenship_zorai_guild_start_trial	[Très bien, dans ce cas, commençons. Prends cette perle de loyauté. Lorsqu'un homin fidèle à la cause de la dynastie prête serment devant un Initié, un gardien de la connaissance, la pierre se met à briller d'une lumière intense. Si tu passes l'Épreuve avec succès, la perle brillera pour toi et ta guilde de tous ses feux.{break}Chacun des trois villages des Cités de l'Intuition est associé à l'une des pierres angulaires de la société zoraï. Hoï-Cho représente la Sagesse, Jen-Lai l'Accomplissement spirituel et Min-Cho le Respect de la Nature. Rends-toi dans ces villages, et montre la perle à un Initié. Il te demandera de prêter serment au nom de ta guilde.{break}Au troisième serment, votre loyauté sera établie. Tu me ramèneras alors la perle pour terminer l'Épreuve. Que les esprits de la nature te montrent le chemin, $self$.]
+}
+
+CITIZENSHIP_ZORAI_GUILD_HOICHO_PEARL ()
+{
+	citizenship_zorai_guild_hoicho_pearl	[Sois le bienvenu. Je suis le gardien de la Sagesse dans ce village, transmettant mon savoir aux gens de mon peuple. Au nom de ta guilde, fais-tu le serment de rechercher la sagesse, afin de mieux te connaître et de mieux connaître le monde qui t'entoure ?]
+}
+
+CITIZENSHIP_ZORAI_GUILD_JENLAI_PEARL ()
+{
+	citizenship_zorai_guild_jenlai_pearl	[Je vois que ta guilde souhaite rejoindre notre communauté. Sache que le mérite menant à l'Illumination s'acquiert parfois dans la bataille, quand il faut préserver les Kamis et Atys toute entière. Je suis le gardien de l'Accomplissement spirituel en ce lieu, le protecteur de l'harmonie. Au nom de ta guilde, fais-tu le serment de rechercher l'Illumination par des actes méritants ?]
+}
+
+CITIZENSHIP_ZORAI_GUILD_MINCHO_PEARL ()
+{
+	citizenship_zorai_guild_mincho_pearl	[Tu arrives au bout de ton épreuve. Je suis le responsable des récolteurs du village, et je veille à ce que la Nature soit traitée avec toute la considération qui lui est due. Je suis le gardien du Respect de la Nature. Au nom de ta guilde, fais-tu le serment de prendre soin d'Atys, et de ne jamais prendre plus qu'elle ne peut te donner ?]
+}
+
+CITIZENSHIP_ZORAI_GUILD_GOTO_RITE ()
+{
+	citizenship_zorai_guild_goto_rite	[Les esprits t'ont guidé, $self$, ta guilde a réussi l'Épreuve d'Intégration ! Tu peux maintenant passer le rite de citoyenneté, si c'est toujours ce que vous souhaitez, toi et les tiens.]
+}
+
+CITIZENSHIP_ZORAI_GUILD_DAPPERS (int contribution)
+{
+	citizenship_zorai_guild_dappers	[Je serai le témoin et le juge de ton engagement envers notre pays et notre communauté. En premier lieu, il convient d'honorer une ancienne tradition : toute guilde désireuse d'épouser la cause de notre peuple se doit de verser au trésor dynastique une contribution de $contribution$ dappers. Êtes-vous prêts à suivre cette coutume, $self$ ?]
+}
+
+CITIZENSHIP_ZORAI_GUILD_QUERY_START ()
+{
+	citizenship_zorai_guild_query_start	[Qu'il en soit ainsi. Tu me remettras la somme lorsque le rite sera accompli. Maintenant, mon rôle est de te poser quelques questions. Prends ton temps, pèse bien chacune de tes réponses. Car si tu te trompes, j'aurai le regret de mettre fin au rite et de refuser la demande de ta guilde.]
+}
+
+CITIZENSHIP_ZORAI_GUILD_QUERY_WRONG ()
+{
+	citizenship_zorai_guild_query_wrong	[Je crains que tu ne doives mieux nous connaître avant que ta guilde puisse nous rejoindre, $self$. Le rite est à présent rompu. Va en paix, et parfais tes connaissances avant notre prochaine rencontre.]
+}
+
+CITIZENSHIP_ZORAI_GUILD_END_QUERY ()
+{
+	citizenship_zorai_guild_end_query	[La Sagesse, l'Accomplissement spirituel, le Respect de la Nature, ces trois pierres ambrées sont la fondation de nos temples. Tout membre d'une guilde dynastique médite quotidiennement sur ces principes. Tu as répondu avec sagesse à mes questions, $self$. Ta guilde est sur la bonne voie. Poursuivons le rite.{break}Le plus grand ennemi des Kamis et des Zoraïs est la Goo, le fléau pourpre, manifestation du Vide. Elle corrompt tout ce qui vit, y compris les homins imprudents. L'une des nôtres a été contaminée par ce mal. La folie ronge son âme. Lenja vit aujourd'hui en recluse dans la jungle, ne voulant pas imposer sa déchéance à ses frères.{break}Nous ne pouvons guérir notre soeur, mais nous pouvons la soulager de sa souffrance pendant de courts instants, grâce à de la sève purifiée par les esprits. Prends cette sève, et fais-la boire à Lenja. Reviens ensuite vers moi.]
+}
+
+CITIZENSHIP_ZORAI_GUILD_SAP_GIVED (int contribution)
+{
+	( self.gender = male )
+		citizenship_zorai_guild_sap_gived_m	[Même si ce n'est que pour un bref instant, le pouvoir de la Goo sur l'âme de notre soeur a été vaincu. Par ton acte, $self$, ta guilde s'est montré digne de notre communauté. Tu peux maintenant passer la dernière étape du rite de citoyenneté.{break}Il te suffit de me remettre la contribution de ta guilde destinée au trésor dynastique. $contribution$ dappers, qui seront utilisés à bon escient, sois-en certain.]
+	( self.gender = female )
+		citizenship_zorai_guild_sap_gived_f	[Même si ce n'est que pour un bref instant, le pouvoir de la Goo sur l'âme de notre soeur a été vaincu. Par ton acte, $self$, ta guilde s'est montré digne de notre communauté. Tu peux maintenant passer la dernière étape du rite de citoyenneté.{break}Il te suffit de me remettre la contribution de ta guilde destinée au trésor dynastique. $contribution$ dappers, qui seront utilisés à bon escient, sois-en certaine.]
+}
+
+CITIZENSHIP_ZORAI_GUILD_BE_CITIZEN ()
+{
+	( self.gender = male )
+		citizenship_zorai_guild_be_citizen_m	[Au nom de tous les Zoraïs, sois remercié. Les bras de notre communauté s'ouvrent maintenant pour toi et ta guilde, $self$. Jurez-vous de servir le Grand Sage, notre guide spirituel, de respecter les lois dynastiques, de faire prospérer le peuple qui vous accueille ? Jurez-vous de défendre notre pays au péril de vos vies ?]
+	( self.gender = female )
+		citizenship_zorai_guild_be_citizen_f	[Au nom de tous les Zoraïs, sois remerciée. Les bras de notre communauté s'ouvrent maintenant pour toi et ta guilde, $self$. Jurez-vous de servir le Grand Sage, notre guide spirituel, de respecter les lois dynastiques, de faire prospérer le peuple qui vous accueille ? Jurez-vous de défendre notre pays au péril de vos vies ?]
+}
+
+CITIZENSHIP_ZORAI_GUILD_CONCLUSION ()
+{
+	citizenship_zorai_guild_conclusion	[Félicitations, $self$. Ta guilde est à présent une guilde dynastique zoraï !]
+}
+
+CITIZENSHIP_FYROS_GUILD_CANCEL_P_DESC (bot giver)
+{
+	citizenship_fyros_guild_cancel_p_desc	[Votre guilde va renoncer à son statut de guilde nationale et devenir une guilde d'apatrides.]
+}
+
+CITIZENSHIP_FYROS_GUILD_CANCEL_P_MENU ()
+{
+	citizenship_fyros_guild_cancel_p_menu	[Renoncer au statut de guilde nationale]
+}
+
+CITIZENSHIP_FYROS_GUILD_CANCEL_INTRO ()
+{
+	citizenship_fyros_guild_cancel_intro	[Ta guilde a pris une décision lourde de conséquence, $self$. Vous voulez renoncer à votre statut de guilde nationale ? C'est votre droit, mais je suis navré de votre choix. Vous allez devenir une guilde d'apatrides, sans nation pour la soutenir. Vous ne serez plus protégés par nos lois. C'est vraiment ce que vous souhaitez ?]
+}
+
+CITIZENSHIP_FYROS_GUILD_CANCEL_INTRO_YES ()
+{
+	citizenship_fyros_guild_cancel_intro_yes	[Oui, nous sommes sûrs de notre décision]
+}
+
+CITIZENSHIP_FYROS_GUILD_CANCEL_INTRO_NO ()
+{
+	citizenship_fyros_guild_cancel_intro_no	[Non, nous avons changé d'avis, au revoir]
+}
+
+CITIZENSHIP_FYROS_GUILD_CANCEL_CONFIRM ()
+{
+	citizenship_fyros_guild_cancel_confirm	[Bien, vous êtes maîtres de votre destin. Après m'avoir confirmé la renonciation, ta guilde sera officiellement une guilde d'apatrides.]
+}
+
+CITIZENSHIP_FYROS_GUILD_CANCEL_CONFIRM_YES ()
+{
+	citizenship_fyros_guild_cancel_confirm_yes	[Je confirme que ma guilde renonce à son statut]
+}
+
+CITIZENSHIP_FYROS_GUILD_CANCEL_CONFIRM_NO ()
+{
+	citizenship_fyros_guild_cancel_confirm_no	[Finalement, ma guilde préfère garder son statut, au revoir]
+}
+
+CITIZENSHIP_FYROS_GUILD_CANCEL_NOT_CITIZEN ()
+{
+	citizenship_fyros_guild_cancel_not_citizen	[Ta guilde n'est pas une guilde citoyenne, $self$.]
+}
+
+CONVERSION_KARAVAN_FYROS_P_TITLE (bot giver)
+{
+	conversion_karavan_fyros_p_title	[Rite de conversion Karavan]
+}
+
+CONVERSION_KARAVAN_FYROS_P_DESC (bot giver)
+{
+	( self.gender = male )
+		conversion_karavan_fyros_p_desc_m	[En accomplissant ce rite, vous allez devenir un converti au culte de Jena, sous la protection de l'Église de la lumière et de la sainte Karavan.]
+	( self.gender = female )
+		conversion_karavan_fyros_p_desc_f	[En accomplissant ce rite, vous allez devenir une convertie au culte de Jena, sous la protection de l'Église de la lumière et de la sainte Karavan.]
+}
+
+CONVERSION_KARAVAN_FYROS_P_MENU ()
+{
+	conversion_karavan_fyros_p_menu	[Se convertir au culte de Jena]
+}
+
+CONVERSION_KARAVAN_FYROS_NO_GUILD_CULT ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_no_guild_cult_m	[Malheureusement, $self$, pour devenir un converti tu dois, soit ne faire partie d'aucune guilde, soit être membre d'une guilde convertie.]
+	( self.gender = female )
+		conversion_karavan_fyros_no_guild_cult_f	[Malheureusement, $self$, pour devenir une convertie tu dois, soit ne faire partie d'aucune guilde, soit être membre d'une guilde convertie.]
+}
+
+CONVERSION_KARAVAN_FYROS_INTRO ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_intro_m	[Sois le bienvenu dans ce temple, $self$. Tu souhaites rejoindre la croisade de la sainte Karavan, qui lutte contre les démons kamis ? Jena est prête à t'accueillir. L'Église de la Lumière sera là pour te guider sur les chemins de la Déesse. Il te suffit de passer le rite de conversion, afin de prouver ton attachement aux préceptes sacrés. Te sens-tu prêt ?]
+	( self.gender = female )
+		conversion_karavan_fyros_intro_f	[Sois la bienvenue dans ce temple, $self$. Tu souhaites rejoindre la croisade de la sainte Karavan, qui lutte contre les démons kamis ? Jena est prête à t'accueillir. L'Église de la Lumière sera là pour te guider sur les chemins de la Déesse. Il te suffit de passer le rite de conversion, afin de prouver ton attachement aux préceptes sacrés. Te sens-tu prête ?]
+}
+
+CONVERSION_KARAVAN_FYROS_INTRO_YES ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_intro_yes_m	[Oui, je veux devenir un fidèle !]
+	( self.gender = female )
+		conversion_karavan_fyros_intro_yes_f	[Oui, je veux devenir une fidèle !]
+}
+
+CONVERSION_KARAVAN_FYROS_INTRO_NO ()
+{
+	conversion_karavan_fyros_intro_no	[Non, au revoir]
+}
+
+CONVERSION_KARAVAN_FYROS_DAPPERS (int offrande)
+{
+	conversion_karavan_fyros_dappers	[Parfait, dans ce cas nous allons commencer. J'ai l'insigne honneur d'être celui qui te fera passer le rite. En premier lieu, sache que tout homin désirant se convertir verse une offrande à l'Église de la Lumière. Il montre ainsi son soutien et sa solidarité en ces temps difficiles. L'offrande est de $offrande$ dappers. Pouvons-nous compter sur ton aide, $self$ ?]
+}
+
+CONVERSION_KARAVAN_FYROS_DAPPERS_YES ()
+{
+	conversion_karavan_fyros_dappers_yes	[Oui, tout à fait !]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_START ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_query_start_m	[Sois remercié pour ta générosité. Tu feras ton offrande lorsque tu auras passé les autres étapes du rite de conversion. À présent, je vais te poser quelques questions simples sur notre culte. Laisse-toi guider par ta foi, et tu répondras avec justesse. Si tu te trompes, je serai obligé de mettre fin au rite.]
+	( self.gender = female )
+		conversion_karavan_fyros_query_start_f	[Sois remerciée pour ta générosité. Tu feras ton offrande lorsque tu auras passé les autres étapes du rite de conversion. À présent, je vais te poser quelques questions simples sur notre culte. Laisse-toi guider par ta foi, et tu répondras avec justesse. Si tu te trompes, je serai obligé de mettre fin au rite.]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_START_YES ()
+{
+	conversion_karavan_fyros_query_start_yes	[Posez vos questions]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_START_NO ()
+{
+	conversion_karavan_fyros_query_start_no	[Je reviendrai une autre fois, au revoir]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_1 ()
+{
+	conversion_karavan_fyros_query_1	[Je vais commencer par une question fondamentale : qui est Jena ?]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_1_NUIT ()
+{
+	conversion_karavan_fyros_query_1_nuit	[L'Impératrice de la Nuit, déesse de l'obscurité]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_1_SOLEIL ()
+{
+	conversion_karavan_fyros_query_1_soleil	[La Mère d'Atys, déesse du soleil]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_1_PLANTES ()
+{
+	conversion_karavan_fyros_query_1_plantes	[La Fille du Grand Arbre, déesse des plantes]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_1_GUERRE ()
+{
+	conversion_karavan_fyros_query_1_guerre	[La Soeur du Dragon, déesse de la guerre]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_WRONG_1 ()
+{
+	conversion_karavan_fyros_query_wrong_1	[Je crains que ton coeur ne soit assombri par le discours impie des Kamistes... Tu as échoué, $self$. Reviens me voir lorsque tu te seras libéré des paroles trompeuses de l'ennemi.]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_WRONG_1_YES ()
+{
+	conversion_karavan_fyros_query_wrong_1_yes	[Au revoir]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_2 ()
+{
+	conversion_karavan_fyros_query_2	[Tu as bien répondu. Jena est la Mère d'Atys et de l'Hominité, et le soleil est son domaine. Pour prendre soin de ses enfants, la Déesse a envoyé ses disciples, les Élus de la Karavan. Ils doivent nous guider vers notre destinée. Quel est l'événement sacré auquel nous devons être préparés ?]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_2_DRACONIQUE ()
+{
+	conversion_karavan_fyros_query_2_draconique	[La Transcendance draconique]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_2_PLENITUDE ()
+{
+	conversion_karavan_fyros_query_2_plenitude	[L'Illumination vers la plénitude ultime]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_2_ESSAIM ()
+{
+	conversion_karavan_fyros_query_2_essaim	[L'Apocalypse du Grand Essaim]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_2_JUDGEMENT ()
+{
+	conversion_karavan_fyros_query_2_judgement	[L'Élévation qui aura lieu le Jour du Jugement]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_3 ()
+{
+	conversion_karavan_fyros_query_3	[C'est en effet ce jour que les fidèles seront jugés. Les vrais croyants s'élèveront vers les étoiles, tandis que les impurs se consumeront dans les flammes du Dragon. Ceux qui ont suivi les commandements de la Déesse vivront dans Sa lumière pour l'éternité. Peux-tu me dire combien de commandements nous guident ?]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_3_SIX ()
+{
+	conversion_karavan_fyros_query_3_six	[Six]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_3_HUIT ()
+{
+	conversion_karavan_fyros_query_3_huit	[Huit]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_3_DIX ()
+{
+	conversion_karavan_fyros_query_3_dix	[Dix]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_3_DOUZE ()
+{
+	conversion_karavan_fyros_query_3_douze	[Douze.]
+}
+
+CONVERSION_KARAVAN_FYROS_END_QUERY ()
+{
+	conversion_karavan_fyros_end_query	[Les Dix Commandements de Jena sont retranscrits sur la colonne du savoir de notre temple. Tout Karavanier les connaît et les suit avec ferveur. Tu as bien répondu à mes questions, $self$, et j'en suis heureux. Passons maintenant à la seconde étape du rite.{break}Comme tu le sais sans doute, une guerre sainte a éclaté. Notre adversaire est le démon Ma-Duk et ses serviteurs les Kamis. Ces créatures maléfiques ont perverti des homins et les ont convaincu de s'en prendre aux biens de notre église.{break}Une bande de voleurs d'offrandes sévit depuis peu dans la région. Ils ne reculent devant rien pour s'emparer des dons de nos fidèles et les dédier à leur faux dieu. Nous ne pouvons tolérer cela.{break}J'attends de toi que tu débusques l'un de ces voleurs et que tu me rapportes son butin, afin que les offrandes puissent à nouveau être consacrées à la Déesse. L'Église de la Lumière compte sur toi, $self$ !]
+}
+
+CONVERSION_KARAVAN_FYROS_END_QUERY_YES ()
+{
+	conversion_karavan_fyros_end_query_yes	[Je reviendrai avec les offrandes volées !]
+}
+
+CONVERSION_KARAVAN_FYROS_LOOT_GIVED (int offrande)
+{
+	( self.gender = male )
+		conversion_karavan_fyros_loot_gived_m	[Au nom de la Déesse, sois remercié, $self$ ! Tu as prouvé ton attachement au culte de Jena. Je te félicite, tu as passé le rite avec succès. Il ne te reste plus qu'à faire ton offrande à l'Église de la Lumière. Le geste demandé est de $offrande$ dappers.]
+	( self.gender = female )
+		conversion_karavan_fyros_loot_gived_f	[Au nom de la Déesse, sois remerciée, $self$ ! Tu as prouvé ton attachement au culte de Jena. Je te félicite, tu as passé le rite avec succès. Il ne te reste plus qu'à faire ton offrande à l'Église de la Lumière. Le geste demandé est de $offrande$ dappers.]
+}
+
+CONVERSION_KARAVAN_FYROS_OFFRANDE_GIVEN ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_offrande_given_m	[Merci à toi. Es-tu prêt, en cet instant solennel, à ouvrir ton coeur et ton âme à la lueur éclatante de la Déesse ? Es-tu prêt à servir Jena, la Karavan et l'Église de la Lumière ? Es-tu prêt à te battre pour faire triompher notre cause face aux démons kamis ?]
+	( self.gender = female )
+		conversion_karavan_fyros_offrande_given_f	[Merci à toi. Es-tu prête, en cet instant solennel, à ouvrir ton coeur et ton âme à la lueur éclatante de la Déesse ? Es-tu prête à servir Jena, la Karavan et l'Église de la Lumière ? Es-tu prête à te battre pour faire triompher notre cause face aux démons kamis ?]
+}
+
+CONVERSION_KARAVAN_FYROS_READY ()
+{
+	conversion_karavan_fyros_ready	[Je suis prêt !]
+}
+
+CONVERSION_KARAVAN_FYROS_RESUME (bot givervar)
+{
+	conversion_karavan_fyros_resume	[Reprendre la conversation]
+}
+
+CONVERSION_KARAVAN_FYROS_CONCLUSION ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_conclusion_m	[Que la bénédiction de Jena soit sur toi, $self$. Tu es à présent un Vrai Karavanier, un converti au culte de la Déesse !]
+	( self.gender = female )
+		conversion_karavan_fyros_conclusion_f	[Que la bénédiction de Jena soit sur toi, $self$. Tu es à présent une Vrai Karavanière, une convertie au culte de la Déesse !]
+}
+
+CONVERSION_KARAVAN_FYROS_QUERY_WRONG ()
+{
+	conversion_karavan_fyros_query_wrong	[Tu te trompes, $self$. Il te faut mieux connaître notre culte avant de te convertir. Prie Jena, renforce ta foi, ensuite tu pourras revenir vers moi. Puisses-tu bientôt voir la Lumière !]
+}
+
+CONVERSION_KARAVAN_FYROS_ALREADY_KARAVAN ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_already_karavan_m	[Tu es déjà un Karavanier converti au culte de la Déesse, $self$ ! Je ne peux rien de plus pour toi. Que la bénédiction de Jena soit sur toi.]
+	( self.gender = female )
+		conversion_karavan_fyros_already_karavan_f	[Tu es déjà une Karavanière convertie au culte de la Déesse, $self$ ! Je ne peux rien de plus pour toi. Que la bénédiction de Jena soit sur toi.]
+}
+
+CONVERSION_KARAVAN_FYROS_CANCEL_P_TITLE (bot giver)
+{
+	conversion_karavan_fyros_cancel_p_title	[Renoncer au culte de Jena]
+}
+
+CONVERSION_KARAVAN_FYROS_CANCEL_P_DESC (bot giver)
+{
+	( self.gender = male )
+		conversion_karavan_fyros_cancel_p_desc_m	[Vous allez abandonner votre statut de converti et devenir un incroyant.]
+	( self.gender = female )
+		conversion_karavan_fyros_cancel_p_desc_f	[Vous allez abandonner votre statut de convertie et devenir une incroyante.]
+}
+
+CONVERSION_KARAVAN_FYROS_CANCEL_INTRO ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_cancel_intro_m	[Ton choix me surprend, $self$. Tu veux renier ta foi et renoncer à ton statut de converti ? Tu es libre de ton destin, mais je t'engage à prendre le temps de la réflexion. Tu vas devenir un incroyant, un homin sans guide spirituel. Tu seras seul, perdu dans l'obscurité, loin de la lumière de la Déesse. Est-ce vraiment ce que tu souhaites ?]
+	( self.gender = female )
+		conversion_karavan_fyros_cancel_intro_f	[Ton choix me surprend, $self$. Tu veux renier ta foi et renoncer à ton statut de convertie ? Tu es libre de ton destin, mais je t'engage à prendre le temps de la réflexion. Tu vas devenir une incroyante, une homine sans guide spirituel. Tu seras seule, perdue dans l'obscurité, loin de la lumière de la Déesse. Est-ce vraiment ce que tu souhaites ?]
+}
+
+CONVERSION_KARAVAN_FYROS_CANCEL_CONFIRM ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_cancel_confirm_m	[Jena te laisse faire tes propres choix, $self$, même si cela lui en coûte. Après m'avoir confirmé ta renonciation, tu seras officiellement un incroyant.]
+	( self.gender = female )
+		conversion_karavan_fyros_cancel_confirm_f	[Jena te laisse faire tes propres choix, $self$, même si cela lui en coûte. Après m'avoir confirmé ta renonciation, tu seras officiellement une incroyante.]
+}
+
+CONVERSION_KARAVAN_FYROS_CANCEL_CONFIRM_YES ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_cancel_confirm_yes_m	[Je confirme que je renonce à mon statut de converti]
+	( self.gender = female )
+		conversion_karavan_fyros_cancel_confirm_yes_f	[Je confirme que je renonce à mon statut de convertie]
+}
+
+CONVERSION_KARAVAN_FYROS_CANCEL_CONFIRM_NO ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_cancel_confirm_no_m	[Finalement, je préfère rester un fidèle, au revoir]
+	( self.gender = female )
+		conversion_karavan_fyros_cancel_confirm_no_f	[Finalement, je préfère rester une fidèle, au revoir]
+}
+
+CONVERSION_KARAVAN_FYROS_CANCEL_NO_CULT ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_cancel_no_cult_m	[Tu n'es pas un converti, $self$.]
+	( self.gender = female )
+		conversion_karavan_fyros_cancel_no_cult_f	[Tu n'es pas une convertie, $self$.]
+}
+
+CONVERSION_KAMI_FYROS_P_TITLE (bot giver)
+{
+	conversion_kami_fyros_p_title	[Rite de conversion Kami]
+}
+
+CONVERSION_KAMI_FYROS_P_DESC (bot giver)
+{
+	( self.gender = male )
+		conversion_kami_fyros_p_desc_m	[En accomplissant ce rite, vous allez devenir un converti au culte de Ma-Duk, sous la protection du Grand Ordre de Ma-Duk et des Kamis.]
+	( self.gender = female )
+		conversion_kami_fyros_p_desc_f	[En accomplissant ce rite, vous allez devenir une convertie au culte de Ma-Duk, sous la protection du Grand Ordre de Ma-Duk et des Kamis.]
+}
+
+CONVERSION_KAMI_FYROS_P_MENU ()
+{
+	conversion_kami_fyros_p_menu	[Se convertir au culte de Ma-Duk]
+}
+
+CONVERSION_KAMI_FYROS_INTRO ()
+{
+	( self.gender = male )
+		conversion_kami_fyros_intro_m	[Sois le bienvenu dans ce sanctuaire, $self$. Ainsi, tu veux rejoindre les Kamis qui luttent pour préserver Atys de l'emprise de la Karavan ? Ma-Duk est prêt à t'accueillir en son sein. Le Grand Ordre sera là pour te guider sur les chemins de l'accomplissement. Il te suffit de passer le rite de conversion, afin de prouver ton attachement aux principes sacrés. Te sens-tu prêt ?]
+	( self.gender = female )
+		conversion_kami_fyros_intro_f	[Sois le bienvenu dans ce sanctuaire, $self$. Ainsi, tu veux rejoindre les Kamis qui luttent pour préserver Atys de l'emprise de la Karavan ? Ma-Duk est prêt à t'accueillir en son sein. Le Grand Ordre sera là pour te guider sur les chemins de l'accomplissement. Il te suffit de passer le rite de conversion, afin de prouver ton attachement aux principes sacrés. Te sens-tu prête ?]
+}
+
+CONVERSION_KAMI_FYROS_INTRO_YES ()
+{
+	( self.gender = male )
+		conversion_kami_fyros_intro_yes_m	[Oui, je veux devenir un adepte !]
+	( self.gender = female )
+		conversion_kami_fyros_intro_yes_f	[Oui, je veux devenir une adepte !]
+}
+
+CONVERSION_KAMI_FYROS_DAPPERS (int offrande)
+{
+	conversion_kami_fyros_dappers	[Parfait, dans ce cas nous allons commencer. J'ai l'insigne honneur d'être celui qui te fera passer le rite. En premier lieu, sache que tout homin désirant se convertir verse une offrande au Grand Ordre de Ma-Duk. Il montre ainsi son soutien et sa solidarité en ces temps difficiles. L'offrande est de $offrande$ dappers. Pouvons-nous compter sur ton aide, $self$ ?]
+}
+
+CONVERSION_KAMI_FYROS_QUERY_1 ()
+{
+	conversion_kami_fyros_query_1	[Je vais commencer par une question fondamentale : qui est Ma-Duk ?]
+}
+
+CONVERSION_KAMI_FYROS_QUERY_1_EAU ()
+{
+	conversion_kami_fyros_query_1_eau	[Le Père des lacs sacrés, créateur de l'eau céleste]
+}
+
+CONVERSION_KAMI_FYROS_QUERY_1_DEMON ()
+{
+	conversion_kami_fyros_query_1_demon	[Le Maître des Kamis, grand démon des profondeurs]
+}
+
+CONVERSION_KAMI_FYROS_QUERY_1_ATYS ()
+{
+	conversion_kami_fyros_query_1_atys	[Le Grand Géniteur, créateur d'Atys]
+}
+
+CONVERSION_KAMI_FYROS_QUERY_1_GOO ()
+{
+	conversion_kami_fyros_query_1_goo	[Le Gardien de la Goo, dieu de la guerre]
+}
+
+CONVERSION_KAMI_FYROS_QUERY_WRONG ()
+{
+	conversion_kami_fyros_query_wrong	[Tu te trompes, $self$. Il te faut mieux connaître notre culte avant de te convertir. Prie Ma-Duk, renforce ta foi, ensuite tu pourras revenir vers moi. Que les Kamis te guident !]
+}
+
+CONVERSION_KAMI_FYROS_QUERY_WRONG_1 ()
+{
+	conversion_kami_fyros_query_wrong_1	[Je crains que ton coeur ne soit assombri par les mensonges de la Karavan... Tu as échoué, $self$. Reviens me voir lorsque tu te seras libéré des paroles trompeuses de l'ennemi.]
+}
+
+CONVERSION_KAMI_FYROS_QUERY_2 ()
+{
+	conversion_kami_fyros_query_2	[Tu as bien répondu. Ma-Duk est le créateur de toute vie. Les Kamis et les homins sont nés de son énergie bienfaitrice. Le Grand Géniteur a créé les Kamis pour protéger Atys et guider les homins vers leur destinée suprême. Quel est cet accomplissement que nous devons tous atteindre ? ]
+}
+
+CONVERSION_KAMI_FYROS_QUERY_2_ILLUMINATION ()
+{
+	conversion_kami_fyros_query_2_illumination	[L'Illumination vers l'Âge Kami]
+}
+
+CONVERSION_KAMI_FYROS_QUERY_2_SPHERE ()
+{
+	conversion_kami_fyros_query_2_sphere	[La Perception universelle des Sphères]
+}
+
+CONVERSION_KAMI_FYROS_QUERY_3 ()
+{
+	conversion_kami_fyros_query_3	[L'Illumination : l'état de plénitude ultime, où les homins ne feront qu'un avec Ma-Duk et obtiendront la connaissance universelle. Pour l'atteindre, les croyants doivent enseigner à tous les paroles sacrées de Ma-Duk. Peux-tu me dire combien de paroles ont été retranscrites dans le Livre des Révélations ?]
+}
+
+CONVERSION_KAMI_FYROS_END_QUERY ()
+{
+	conversion_kami_fyros_end_query	[Les Huit Révélations de Ma-Duk sont retranscrites sur la racine du savoir de notre sanctuaire. Tout Kamiste suit leur enseignement avec sagesse. Tu as bien répondu à mes questions, $self$, et j'en suis heureux. Entamons à présent la seconde étape du rite de conversion.{break}Tu sais sans doute que le conflit est devenu inévitable avec la Karavan. Menés par Jena, l'Impératrice de la Nuit, les envahisseurs ont juré la perte des Kamis et menacent Atys toute entière.  Ils mettent en péril l'équilibre naturel en s'appropriant les bienfaits de notre monde.{break}Des pilleurs de ressources se sont installés dans la région. Ils blessent sans relâche le sol de notre planète sous la pointe de leurs pioches, arrachant de l'humus des matières premières qu'ils remettent ensuite à la Karavan. Par un obscur stratagème, ils sont parvenus à se soustraire à la colère des Kamis. Cela ne peut être toléré.{break}J'attends de toi que tu traques l'un de ces pillards et que tu me rapportes les ressources qu'il s'est approprié. Les Kamis les rendront à Atys. Le Grand Ordre de Ma-Duk compte sur toi, $self$ !]
+}
+
+CONVERSION_KAMI_FYROS_END_QUERY_YES ()
+{
+	conversion_kami_fyros_end_query_yes	[Je reviendrai avec les ressources pillées !]
+}
+
+CONVERSION_KAMI_FYROS_LOOT_GIVED (int offrande)
+{
+	( self.gender = male )
+		conversion_kami_fyros_loot_gived_m	[Au nom du Grand Géniteur et des Kamis, sois remercié, $self$ ! Tu as prouvé ton attachement au culte de Ma-Duk. Je te félicite, tu as passé le rite avec succès. Il ne te reste plus qu'à faire ton offrande au Grand Ordre. Le geste demandé est de $offrande$ dappers.]
+	( self.gender = female )
+		conversion_kami_fyros_loot_gived_f	[Au nom du Grand Géniteur et des Kamis, sois remerciée, $self$ ! Tu as prouvé ton attachement au culte de Ma-Duk. Je te félicite, tu as passé le rite avec succès. Il ne te reste plus qu'à faire ton offrande au Grand Ordre. Le geste demandé est de $offrande$ dappers.]
+}
+
+CONVERSION_KAMI_FYROS_OFFRANDE_GIVEN ()
+{
+	( self.gender = male )
+		conversion_kami_fyros_offrande_given_m	[Merci à toi. Es-tu prêt, en cet instant solennel, à ouvrir ton coeur et ton âme à la sagesse infinie du Grand Géniteur ? Es-tu prêt à servir Ma-Duk, les Kamis et le Grand Ordre de Ma-Duk ? Es-tu prêt à te battre pour faire triompher notre cause face aux envahisseurs de la Karavan ?]
+	( self.gender = female )
+		conversion_kami_fyros_offrande_given_f	[Merci à toi. Es-tu prête, en cet instant solennel, à ouvrir ton coeur et ton âme à la sagesse infinie du Grand Géniteur ? Es-tu prête à servir Ma-Duk, les Kamis et le Grand Ordre de Ma-Duk ? Es-tu prête à te battre pour faire triompher notre cause face aux envahisseurs de la Karavan ?]
+}
+
+CONVERSION_KAMI_FYROS_CONCLUSION ()
+{
+	( self.gender = male )
+		conversion_kami_fyros_conclusion_m	[Que la bénédiction de Ma-Duk soit sur toi, $self$. Tu es à présent un Vrai Kamiste, un converti au culte du Grand Géniteur !]
+	( self.gender = female )
+		conversion_kami_fyros_conclusion_f	[Que la bénédiction de Ma-Duk soit sur toi, $self$. Tu es à présent une Vraie Kamiste, une convertie au culte du Grand Géniteur !]
+}
+
+CONVERSION_KAMI_FYROS_ALREADY_KAMI ()
+{
+	( self.gender = male )
+		conversion_kami_fyros_already_kami_m	[Tu es déjà un Kamiste converti au culte du Grand Géniteur, $self$ ! Je ne peux rien de plus pour toi. Que la bénédiction de Ma-Duk soit sur toi]
+	( self.gender = female )
+		conversion_kami_fyros_already_kami_f	[Tu es déjà une Kamiste convertie au culte du Grand Géniteur, $self$ ! Je ne peux rien de plus pour toi. Que la bénédiction de Ma-Duk soit sur toi]
+}
+
+CONVERSION_KAMI_FYROS_CANCEL_P_TITLE (bot giver)
+{
+	conversion_kami_fyros_cancel_p_title	[Renoncer à sa religion]
+}
+
+CONVERSION_KAMI_FYROS_CANCEL_INTRO ()
+{
+	( self.gender = male )
+		conversion_kami_fyros_cancel_intro_m	[Je suis désolé de ton choix, $self$. Tu veux renier ta foi et renoncer à ton statut de converti ? Tu es bien sûr libre de ton destin, mais je t'engage à prendre le temps de la réflexion. Tu vas devenir un incroyant, un homin sans guide spirituel. Qui te conduira sur les chemins de l'Illumination ? Souhaites-tu vraiment t'éloigner de Ma-Duk ?]
+	( self.gender = female )
+		conversion_kami_fyros_cancel_intro_f	[Je suis désolé de ton choix, $self$. Tu veux renier ta foi et renoncer à ton statut de convertie ? Tu es bien sûr libre de ton destin, mais je t'engage à prendre le temps de la réflexion. Tu vas devenir une incroyante, une homine sans guide spirituel. Qui te conduira sur les chemins de l'Illumination ? Souhaites-tu vraiment t'éloigner de Ma-Duk ?]
+}
+
+CONVERSION_KAMI_FYROS_CANCEL_CONFIRM ()
+{
+	( self.gender = male )
+		conversion_kami_fyros_cancel_confirm_m	[Le Grand Géniteur te laisse faire tes propres choix, $self$, même si cela l'attriste de te voir partir. Après m'avoir confirmé ta renonciation, tu seras officiellement un incroyant.]
+	( self.gender = female )
+		conversion_kami_fyros_cancel_confirm_f	[Le Grand Géniteur te laisse faire tes propres choix, $self$, même si cela l'attriste de te voir partir. Après m'avoir confirmé ta renonciation, tu seras officiellement une incroyante.]
+}
+
+CONVERSION_KAMI_FYROS_CANCEL_NO_CULT ()
+{
+	conversion_kami_fyros_cancel_no_cult	[Tu n'es pas un converti, $self$.]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_P_TITLE (bot giver)
+{
+	conversion_karavan_fyros_guild_p_title	[Rite de conversion Karavan pour guilde]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_P_DESC (bot giver)
+{
+	conversion_karavan_fyros_guild_p_desc	[En accomplissant ce rite, votre guilde va devenir une guilde karavanière, sous la protection de l'Église de la lumière et de la sainte Karavan.]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_P_MENU ()
+{
+	conversion_karavan_fyros_guild_p_menu	[Conversion de la guilde au culte de Jena]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_INTRO ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_guild_intro_m	[Salut à toi, homin. Ainsi ta guilde souhaite rejoindre notre croisade contre les démons kamis ? Jena est prête à vous accueillir. La Karavan et l'Église de la Lumière seront là pour vous guider sur les chemins de la Déesse. En tant que représentant de ta guilde, il te suffit de passer le rite de conversion, afin de prouver ton attachement aux préceptes sacrés. Te sens-tu prêt, homin ?]
+	( self.gender = female )
+		conversion_karavan_fyros_guild_intro_f	[Salut à toi, homine. Ainsi ta guilde souhaite rejoindre notre croisade contre les démons kamis ? Jena est prête à vous accueillir. La Karavan et l'Église de la Lumière seront là pour vous guider sur les chemins de la Déesse. En tant que représentante de ta guilde, il te suffit de passer le rite de conversion, afin de prouver ton attachement aux préceptes sacrés. Te sens-tu prête, homine ?]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_INTRO_YES ()
+{
+	conversion_karavan_fyros_guild_intro_yes	[Oui, nous voulons nous battre pour Jena !]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_DAPPERS (int offrande)
+{
+	conversion_karavan_fyros_guild_dappers	[Parfait, dans ce cas nous allons commencer. Je serai le guide qui te fera passer le rite. En premier lieu, sache que toute guilde désirant se convertir verse une offrande à l'Église de la Lumière. Elle montre ainsi son soutien et sa solidarité en ces temps difficiles. L'offrande est de $offrande$ dappers. Ta guilde est-elle prête à faire cet effort ?]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_QUERY_START ()
+{
+	conversion_karavan_fyros_guild_query_start	[Très bien ! Tu feras ton offrande au nom de ta guilde lorsque tu auras passé les autres étapes du rite de conversion. À présent, je vais te poser quelques questions simples sur le culte de la Déesse. Laisse-toi guider par ta foi, homin, et tu répondras avec justesse. Si tu te trompes, le rite prendra fin, et la demande de ta guilde sera rejetée.]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_QUERY_WRONG_1 ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_guild_query_wrong_1_m	[Tu blasphèmes, homin ! Ton coeur est assombri par le discours impie des Kamistes... Toi et ta guilde avez échoué. Lorsque tu te seras libéré des paroles trompeuses de l'ennemi, reviens me voir.]
+	( self.gender = female )
+		conversion_karavan_fyros_guild_query_wrong_1_f	[Tu blasphèmes, homin ! Ton coeur est assombri par le discours impie des Kamistes... Toi et ta guilde avez échoué. Lorsque tu te seras libérée des paroles trompeuses de l'ennemi, reviens me voir.]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_QUERY_2 ()
+{
+	conversion_karavan_fyros_guild_query_2	[Tu as bien répondu. Jena est la Mère d'Atys et de l'Hominité, et le soleil est son domaine. Pour prendre soin de ses enfants, la Déesse a envoyé ses disciples, les Élus de la Karavan. Notre rôle est de guider les homins vers leur destinée. Quel est l'événement sacré auquel vous devez être préparés ?]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_QUERY_3 ()
+{
+	conversion_karavan_fyros_guild_query_3	[C'est en effet ce jour que les fidèles seront jugés. Les vrais croyants s'élèveront vers les étoiles, tandis que les impurs se consumeront dans les flammes du Dragon. Ceux qui ont suivi les commandements de la Déesse vivront dans Sa lumière pour l'éternité. Peux-tu me dire combien de commandements guident les homins ?]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_END_QUERY ()
+{
+	conversion_karavan_fyros_guild_end_query	[Les Dix Commandements de Jena sont retranscrits sur la colonne du savoir de ce temple. Toute guilde karavanière les connaît et les suit avec ferveur. Tu as bien répondu à mes questions, homin. Passons maintenant à la seconde étape du rite.{break}Comme tu le sais, une guerre sainte a éclaté. Notre adversaire est le démon Ma-Duk et ses serviteurs les Kamis. Ces créatures maléfiques ont perverti des homins et les ont convaincu de s'en prendre aux biens de l'Église de la Lumière.{break}Une bande de voleurs d'offrandes sévit depuis peu dans la région. Ils ne reculent devant rien pour s'emparer des dons des fidèles et les dédier à leur faux dieu. Nous ne pouvons tolérer cela.{break}J'attends de toi que tu débusques l'un de ces voleurs et que tu me rapportes son butin, afin que les offrandes puissent à nouveau être consacrées à la Déesse. La Karavan compte sur toi, homin !]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_LOOT_GIVED (int offrande)
+{
+	( self.gender = male )
+		conversion_karavan_fyros_guild_loot_gived_m	[Tu as fait du bon travail, homin. Tu as prouvé ton attachement et celui de ta guilde au culte de Jena. Je te félicite, tu as passé le rite avec succès. Il ne te reste plus qu'à faire ton offrande au nom de ta guilde. Le geste demandé par l'Église de la Lumière est de $offrande$ dappers.]
+	( self.gender = female )
+		conversion_karavan_fyros_guild_loot_gived_f	[Tu as fait du bon travail, homine. Tu as prouvé ton attachement et celui de ta guilde au culte de Jena. Je te félicite, tu as passé le rite avec succès. Il ne te reste plus qu'à faire ton offrande au nom de ta guilde. Le geste demandé par l'Église de la Lumière est de $offrande$ dappers.]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_OFFRANDE_GIVEN ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_guild_offrande_given_m	[Bien. Es-tu prêt, en cet instant solennel, à faire entrer les membres de ta guilde dans la lueur éclatante de la Déesse ? Êtes-vous prêts à servir Jena, la Karavan et l'Église de la Lumière ? Êtes-vous prêts à vous battre pour faire triompher notre cause face aux démons kamis ?]
+	( self.gender = female )
+		conversion_karavan_fyros_guild_offrande_given_f	[Bien. Es-tu prête, en cet instant solennel, à faire entrer les membres de ta guilde dans la lueur éclatante de la Déesse ? Êtes-vous prêts à servir Jena, la Karavan et l'Église de la Lumière ? Êtes-vous prêts à vous battre pour faire triompher notre cause face aux démons kamis ?]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_CONCLUSION ()
+{
+	conversion_karavan_fyros_guild_conclusion	[Que la bénédiction de Jena soit sur vous. Ta guilde est à présent une guilde karavanière, convertie au culte de la Déesse !]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_QUERY_WRONG ()
+{
+	conversion_karavan_fyros_guild_query_wrong	[Tu te trompes, homin. Il te faut mieux connaître le culte de la Déesse avant de te convertir. Que ta guilde prie Jena, renforce sa foi, ensuite tu pourras revenir vers moi]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_CANCEL_P_TITLE (bot giver)
+{
+	conversion_karavan_fyros_guild_cancel_p_title	[Renoncer au statut de guilde religieuse]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_CANCEL_P_DESC (bot giver)
+{
+	conversion_karavan_fyros_guild_cancel_p_desc	[Votre guilde va renoncer à son statut de guilde karavanière et devenir une guilde d'incroyants.]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_CANCEL_P_MENU ()
+{
+	conversion_karavan_fyros_guild_cancel_p_menu	[Renoncer au statut de guilde karavanière]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_CANCEL_INTRO ()
+{
+	( self.gender = male )
+		conversion_karavan_fyros_guild_cancel_intro_m	[J'ai du mal à y croire, homin... ta guilde a fait un choix lourd de conséquence ! Vous voulez renoncer à votre statut de guilde karavanière ? En faisant cela, vous allez renier les enseignements de l'Église de la Lumière. Vous allez devenir une guilde d'incroyants, détournés de la sainte lumière de Jena. C'est vraiment votre décision ?]
+	( self.gender = female )
+		conversion_karavan_fyros_guild_cancel_intro_f	[J'ai du mal à y croire, homine... ta guilde a fait un choix lourd de conséquence ! Vous voulez renoncer à votre statut de guilde karavanière ? En faisant cela, vous allez renier les enseignements de l'Église de la Lumière. Vous allez devenir une guilde d'incroyants, détournés de la sainte lumière de Jena. C'est vraiment votre décision ?]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_CANCEL_CONFIRM ()
+{
+	conversion_karavan_fyros_guild_cancel_confirm	[Jena vous a accordé le libre arbitre, à toi et aux tiens. Après m'avoir confirmé la renonciation, ta guilde sera donc officiellement une guilde d'incroyants. La Déesse ait pitié de vos âmes !]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_CANCEL_CONFIRM_YES ()
+{
+	conversion_karavan_fyros_guild_cancel_confirm_yes	[Je confirme que ma guilde renonce au culte de Jena]
+}
+
+CONVERSION_KARAVAN_FYROS_GUILD_CANCEL_NO_CULT ()
+{
+	conversion_karavan_fyros_guild_cancel_no_cult	[Ta guilde ne fait pas partie de nos guildes converties.]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_P_TITLE (bot giver)
+{
+	conversion_kami_fyros_guild_p_title	[Rite de conversion kami pour guilde]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_P_DESC (bot giver)
+{
+	conversion_kami_fyros_guild_p_desc	[En accomplissant ce rite, votre guilde va devenir une guilde kamiste, sous la protection du Grand Ordre de Ma-Duk et des Kamis.]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_P_MENU ()
+{
+	conversion_kami_fyros_guild_p_menu	[Conversion de la guilde au culte de Ma-Duk]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_INTRO ()
+{
+	( self.gender = male )
+		conversion_kami_fyros_guild_intro_m	[Sois le bienvenu dans ce sanctuaire, $self$. Ainsi, ta guilde veut rejoindre les Kamis qui luttent pour préserver Atys de l'emprise de la Karavan ? Ma-Duk est prêt à vous accueillir en son sein. Le Grand Ordre sera là pour vous guider sur les chemins de l'accomplissement. Il te suffit de passer le rite de conversion, afin de prouver ton attachement aux principes sacrés. Te sens-tu prêt, toi et les tiens ?]
+	( self.gender = female )
+		conversion_kami_fyros_guild_intro_f	[Sois la bienvenue dans ce sanctuaire, $self$. Ainsi, ta guilde veut rejoindre les Kamis qui luttent pour préserver Atys de l'emprise de la Karavan ? Ma-Duk est prêt à vous accueillir en son sein. Le Grand Ordre sera là pour vous guider sur les chemins de l'accomplissement. Il te suffit de passer le rite de conversion, afin de prouver ton attachement aux principes sacrés. Te sens-tu prête, toi et les tiens ?]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_INTRO_YES ()
+{
+	conversion_kami_fyros_guild_intro_yes	[Oui, nous voulons nous battre pour Ma-Duk !]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_DAPPERS (int offrande)
+{
+	conversion_kami_fyros_guild_dappers	[Parfait, dans ce cas nous allons commencer. J'ai l'insigne honneur d'être celui qui te fera passer le rite. En premier lieu, sache que toute guilde désirant se convertir verse une offrande au Grand Ordre de Ma-Duk. Elle montre ainsi son soutien et sa solidarité en ces temps difficiles. L'offrande est de $offrande$ dappers. Pouvons-nous compter sur votre aide, $self$ ?]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_QUERY_START ()
+{
+	conversion_kami_fyros_guild_query_start	[Soyez remerciés pour votre générosité. Tu feras l'offrande lorsque tu auras passé les autres étapes du rite de conversion. À présent, je vais te poser quelques questions simples sur notre culte. Laisse-toi guider par ta foi, et tu répondras avec justesse. Si tu te trompes, je serai obligé de mettre fin au rite, et la conversion de ta guilde ne sera pas acceptée.]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_QUERY_WRONG ()
+{
+	conversion_kami_fyros_guild_query_wrong	[Tu te trompes, $self$. Il te faut mieux connaître notre culte avant de te convertir. Que ta guilde prie Ma-Duk, renforce sa foi, ensuite tu pourras revenir vers moi. Que les Kamis vous guident !]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_QUERY_WRONG_1 ()
+{
+	conversion_kami_fyros_guild_query_wrong_1	[Je crains que ton coeur ne soit assombri par les mensonges de la Karavan... Tu as échoué, et ta guilde avec toi, $self$. Reviens me voir lorsque tu te seras libéré des paroles trompeuses de l'ennemi.]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_END_QUERY ()
+{
+	conversion_kami_fyros_guild_end_query	[Les Huit Révélations de Ma-Duk sont retranscrites sur la racine du savoir de notre sanctuaire. Toute guilde kamiste suit leur enseignement avec sagesse. Tu as bien répondu à mes questions, $self$, et j'en suis heureux. Entamons à présent la seconde étape du rite de conversion.{break}Tu sais sans doute que le conflit est devenu inévitable avec la Karavan. Menés par Jena, l'Impératrice de la Nuit, les envahisseurs ont juré la perte des Kamis et menacent Atys toute entière.  Ils mettent en péril l'équilibre naturel en s'appropriant les bienfaits de notre monde.{break}Des pilleurs de ressources se sont installés dans la région. Ils blessent sans relâche le sol de notre planète sous la pointe de leurs pioches, arrachant de l'humus des matières premières qu'ils remettent ensuite à la Karavan. Par un obscur stratagème, ils sont parvenus à se soustraire à la colère des Kamis. Cela ne peut être toléré.{break}J'attends de toi que tu traques l'un de ces pillards et que tu me rapportes les ressources qu'il s'est approprié. Les Kamis les rendront à Atys. Le Grand Ordre de Ma-Duk compte sur toi, $self$ !]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_LOOT_GIVED (int offrande)
+{
+	( self.gender = male )
+		conversion_kami_fyros_guild_loot_gived_m	[Au nom du Grand Géniteur et des Kamis, sois remercié, $self$ ! Tu as prouvé ton attachement et celui de ta guilde au culte de Ma-Duk. Je te félicite, tu as passé le rite avec succès. Il ne te reste plus qu'à faire ton offrande au nom de ta guilde. Le geste demandé par le Grand Ordre de Ma-Duk est de $offrande$ dappers.]
+	( self.gender = female )
+		conversion_kami_fyros_guild_loot_gived_f	[Au nom du Grand Géniteur et des Kamis, sois remerciée, $self$ ! Tu as prouvé ton attachement et celui de ta guilde au culte de Ma-Duk. Je te félicite, tu as passé le rite avec succès. Il ne te reste plus qu'à faire ton offrande au nom de ta guilde. Le geste demandé par le Grand Ordre de Ma-Duk est de $offrande$ dappers.]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_OFFRANDE_GIVEN ()
+{
+	conversion_kami_fyros_guild_offrande_given	[Merci à toi et aux tiens. Êtes-vous prêts, en cet instant solennel, à ouvrir vos coeurs et vos âmes à la sagesse infinie du Grand Géniteur ? Êtes-vous prêts à servir Ma-Duk, les Kamis et le Grand Ordre de Ma-Duk ? Êtes-vous prêts à vous battre pour faire triompher notre cause face aux envahisseurs de la Karavan ?]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_CONCLUSION ()
+{
+	conversion_kami_fyros_guild_conclusion	[Que la bénédiction de Ma-Duk soit sur vous. Ta guilde est à présent une guilde kamiste, convertie au culte du Grand Géniteur !]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_CANCEL_P_DESC (bot giver)
+{
+	conversion_kami_fyros_guild_cancel_p_desc	[Votre guilde va renoncer à son statut de guilde kamiste et devenir une guilde d'incroyants.]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_CANCEL_P_MENU ()
+{
+	conversion_kami_fyros_guild_cancel_p_menu	[Renoncer au statut de guilde kamiste]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_CANCEL_INTRO ()
+{
+	conversion_kami_fyros_guild_cancel_intro	[J'ai du mal à y croire, $self$... ta guilde a pris une grave décision. Ainsi vous souhaitez renoncer à votre statut de guilde kamiste ? En faisant cela, vous allez vous éloigner des chemins tracés par le Grand Ordre de Ma-Duk. Vous deviendrez une guilde d'incroyants, livrés à vous-mêmes, seuls face à la Corruption du Vide. C'est vraiment ce que vous voulez ?]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_CANCEL_CONFIRM ()
+{
+	conversion_kami_fyros_guild_cancel_confirm	[Si telle est votre volonté à tous, vous serez libérés de votre engagement spirituel. Après m'avoir confirmé la renonciation, ta guilde sera donc officiellement une guilde d'incroyants. Puisse l'esprit d'Atys vous guider malgré tout !]
+}
+
+CONVERSION_KAMI_FYROS_GUILD_CANCEL_CONFIRM_YES ()
+{
+	conversion_kami_fyros_guild_cancel_confirm_yes	[Je confirme que ma guilde renonce au culte de Ma-Duk]
+}
+

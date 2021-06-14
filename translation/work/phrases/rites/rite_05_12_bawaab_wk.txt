@@ -1,0 +1,20 @@
+﻿R_05_12_MIS_TITLE (bot giver, race creature)
+{
+	r_05_12_mis_title	[La chasse aux $creature.p$]
+}
+
+R_05_12_MIS_DESC (bot giver, race creature)
+{
+	r_05_12_mis_desc	[Les $creature.p$ représentent une menace pour la flore de par leur nombre. A vous de rééquilibrer tout cela.]
+}
+
+R_05_12_P_LDF_INTRO_1 (race creature)
+{
+	r_05_12_p_ldf_intro_1	[Je vous salue, homin. J'ai un problème à résoudre. Les chasseurs et les prospecteurs qui arpentent l'est du continent m'ont rapporté un fait qui peut sembler anodin, mais qui en réalité menace l'équilibre fragile de nos jungles.{break} Il semblerait que les $creature.p$, des herbivores par ailleurs inoffensifs, prolifèrent sans être inquiétés. Leur nombre trop élevé a des conséquences désastreuses sur la flore : les troupeaux de $creature.p$ deviennent un véritable fléau qui dévore toutes les plantes...{break} Nous devons réagir et réduire leur population. Partez en chasse vers les terres de l'est, et rapportez-moi les crânes des $creature.p$ que vous aurez tués en preuve de bonne foi. En récompense de vos services, je vous enseignerai une technique magique de défense zoraï.]
+}
+
+R_05_12_P_BC_DEBRIEF_1 (race creature)
+{
+	r_05_12_p_bc_debrief_1	[Félicitations, vous avez fait vos preuves en tant que chasseur et défenseur de la nature. Prenez ce cube d'ambre avec toute notre gratitude, il contient des informations utiles sur les $creature.p$.{break} Comme promis, vous allez également apprendre un technique de défense zoraï.]
+}
+

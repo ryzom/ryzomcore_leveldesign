@@ -1,0 +1,45 @@
+﻿R_10_12_MIS_TITLE (bot giver)
+{
+	r_10_12_mis_title	[Le rituel de la potion mystique]
+}
+
+R_10_12_MIS_DESC (bot giver)
+{
+	r_10_12_mis_desc	[Le peuple Zoraï est très proches des Kamis et ils font tout pour ne pas les mettre en colère. Aussi lorsqu'ils extraient des matières premières du sol, ils font en sorte de s'attirer les faveurs des Kamis.]
+}
+
+R_10_12_P_LDF_INTRO (item mp_1, place ville_min_cho, place zgou)
+{
+	r_10_12_p_ldf_intro	[Bonjour, jeune homin. Si tu désires être plus en harmonie avec la nature Kamique pour extraire des ressources du sol, je te propose de participer à notre rituel. Il va donc te falloir me rapporter les ingrédients pour créer une potion un peu spéciale. {break} Le premier ingrédient que tu dois me rapporter, c'est $mp_1.pia$ $mp_1.p$. Tu pourras en trouver au sud-est de $ville_min_cho$, à la bordure de la région du $zgou$.]
+}
+
+R_10_12_P_BC_SAGE_1 (item mp_2, place ville_zora)
+{
+	r_10_12_p_bc_sage_1	[Bon, le premier pas est franchi. Pendant que je prépare le début de la potion, va donc chercher $mp_2.pia$ $mp_2.p$. Tu pourras en trouver à environ 150 mètres de $ville_zora$ en direction de l'ouest.]
+}
+
+R_10_12_P_BC_SAGE_2 (item mp_3, place prsources, place ville_zora)
+{
+	r_10_12_p_bc_sage_2	[Tout se passe comme il faut, je vais pouvoir ajouter le deuxième ingrédient. Maintenant il va me falloir $mp_3.pia$ $mp_3.p$. A la lisière du passage vers les $prsources$, à environ 400 mètres au nord-ouest de $ville_zora$, se trouve une petite concentration de cet ingrédient.]
+}
+
+R_10_12_P_BC_SAGE_3 (item mp_4, place souchekod)
+{
+	r_10_12_p_bc_sage_3	[Nous y voilà bientôt. Courage mon ami, j'ai besoin de $mp_4.p$. Tu n'as qu'à aller près du $souchekod$ pour en trouver.]
+}
+
+R_10_12_P_BC_SAGE_4 (item mp_5, place ville_min_cho, place zgou)
+{
+	r_10_12_p_bc_sage_4	[La dernière touche pour la potion arrive bientôt, il s'agit de $mp_5.p$. Tu pourras en trouver au sud-est de $ville_min_cho$, à la bordure de la région du $zgou$.]
+}
+
+R_10_12_P_BC_SAGE_5 (place ville_zora)
+{
+	r_10_12_p_bc_sage_5	[Bravo ! Tu as réuni tous les ingrédients comme il fallait, je vais pouvoir finir la potion mystique. {break} Maintenant qu'elle est prête, il faut que tu ailles l'amener au puit aux offrandes de la ville de $ville_zora$. Viens me la rapporter ensuite pour terminer le rituel.]
+}
+
+R_10_12_P_BC_DEBRIEF ()
+{
+	r_10_12_p_bc_debrief	[Félicitations jeune homin, tu as parfaitement accompli le rituel pour apaiser les Kamis, tu sais désormais extraire des ressources du sol sans trop les mettre en colère. Je tiens également à t'offrir ce cube d'ambre qui t'en apprendra plus sur notre culture de la technologie. Poursuis ton chemin, jeune homin, et que les terres d'Atys soient toujours belles où tu passes.]
+}
+

@@ -1,0 +1,228 @@
+﻿FYROS_KAMI_BONZE_MENU ()
+{
+	fyros_kami_bonze_menu	[Je vous salue au nom de Ma-Duk]
+}
+
+FYROS_KAMI_BONZE_PHRASE_1 (bot player)
+{
+	fyros_kami_bonze_phrase_1	[Je te souhaite la bienvenue dans le sanctuaire de Ma-Duk, $player$. Ici tu es à l'abri de la Karavan et de ses adeptes, car tu es sous la protection des Kamis. En ce lieu sacré, tu trouveras la sérénité propice à la méditation. Si tu es venu ici pour te convertir, je t'accueillerai dans la communauté des Kamistes après le passage d'un rite sacré.]
+}
+
+FYROS_KARAVAN_PRETRE_MENU ()
+{
+	fyros_karavan_pretre_menu	[Je vous salue au nom de Jena]
+}
+
+FYROS_KARAVAN_PRETRE_PHRASE_1 (bot player)
+{
+	fyros_karavan_pretre_phrase_1	[Le temple de Jena t'accueille avec joie, $player$ ! Ici tu es à l'abri des Kamis et de leurs adeptes, car tu es sous la protection de la Déesse. Puisse la lumière de Jena illuminer ton coeur et le remplir de courage, afin que tu puisses accomplir ton destin ! Si tu es venu ici pour te convertir, tu seras accepté parmi les Karavaniers après le passage d'un rite sacré.]
+}
+
+FYROS_KAMI_PREACHER_LORD_PHRASE_1 ()
+{
+	fyros_kami_preacher_lord_phrase_1	[Heureux sont les Kamis, en grand nombre les homins ont suivi le chemin de Ma-Duk ! Nos sanctuaires brillent sur l'Écorce, et rares sont les temples de la Karavan. Atys toute entière sourit.{break}Récompenser les fidèles homins, telle est ma mission. Des objets sacrés je peux leur donner, pour que la voie du Grand Kami les guide à jamais.]
+}
+
+FYROS_KAMI_HIGH_PREACHER_LORD_PHRASE_1 ()
+{
+	fyros_kami_high_preacher_lord_phrase_1	[Les chemins de Ma-Duk, par beaucoup d'homins ont été suivis. Mais dans les sentiers de la Karavan, d'autres homins se sont perdus. Des temples de Jena pèsent sur l'Écorce. Les mensonges de Tryton ont égaré bien des homins. Atys pleure de douleur.{break}Malgré notre tristesse, les mérites des fidèles homins nous reconnaissons. Les récompenser, telle est ma fonction. Des objets sacrés je peux leur donner, pour que la voie du Grand Kami les guide à jamais.]
+}
+
+FYROS_KARAVAN_HIGH_GUIDE_PHRASE_1 ()
+{
+	fyros_karavan_high_guide_phrase_1	[Jena est satisfaite, ses fidèles ont répondu à son appel ! Des temples prestigieux ont été érigés, et les pitoyables sanctuaires des démons kamis sont peu nombreux. La Lumière de Jena brille sur Atys !{break}Au nom de la Déesse et de la Karavan, je vais récompenser les homins qui ont fait progresser notre cause. Puissent-ils porter avec fierté les objets sacrés que je leur remettrai.]
+}
+
+FYROS_KARAVAN_GUIDE_PHRASE_1 ()
+{
+	fyros_karavan_guide_phrase_1	[De nombreux fidèles ont répondu à l'appel de Jena. Hélas, les démons kamis ont exhorté leurs adeptes, et leurs sanctuaires impies obscurcissent la lumière de nos temples. De plus, les mensonges de Tryton ont égaré bien d'autres homins. Les ténèbres de Ma-Duk enveloppent Atys toute entière.{break}Mais les homins fidèles à Jena se sont battus, et ils méritent d'être récompensés. Au nom de la Déesse et de la Karavan, je suis ici pour leur remettre des objets sacrés. Puissent-ils les porter avec fierté !]
+}
+
+FYROS_KAMI_REPRESENTANT_PROLOGUE_MENU ()
+{
+	fyros_kami_representant_prologue_menu	[Bonjour, que se passe-t-il ici ?]
+}
+
+FYROS_KAMI_REPRESENTANT_PROLOGUE_PHRASE_1 (bot npc, bot player)
+{
+	fyros_kami_representant_prologue_phrase_1	[Bonjour à toi, $player$, je suis le $npc$. 
+Sais-tu que la Karavan fait construire des temples pour la déesse Jena ? 
+Il est plus que jamais de notre devoir de protéger nos adeptes en édifiant des sanctuaires de Ma-Duk. 
+La construction de ces sanctuaires est capitale, et tous les homins doivent y participer !
+\n]
+}
+
+FYROS_KAMI_REPRESENTANT_PROLOGUE_ANS_1 ()
+{
+	fyros_kami_representant_prologue_ans_1	[Tout cela est de la plus grande importance, et j'aimerais en savoir plus.]
+}
+
+FYROS_KAMI_REPRESENTANT_PROLOGUE_ANS_2 ()
+{
+	fyros_kami_representant_prologue_ans_2	[Grand merci, mais ça ne m'intéresse pas vraiment]
+}
+
+FYROS_KAMI_REPRESENTANT_PROLOGUE_ANS_1_0 ()
+{
+	fyros_kami_representant_prologue_ans_1_0	[Toi et moi nous trouvons ici-même à l'endroit où doit être édifié l'un de ces sanctuaires de Ma-Duk. \n
+Ce seront des réservoirs du souffle divin de Ma-Duk. \n
+Et c'est la puissance de Ma-Duk qui assemblera les pièces de chaque sanctuaire.
+\n]
+}
+
+FYROS_KAMI_REPRESENTANT_PROLOGUE_ANS_1_1 ()
+{
+	fyros_kami_representant_prologue_ans_1_1	[Pourquoi cet endroit précisément ?]
+}
+
+FYROS_KAMI_REPRESENTANT_PROLOGUE_ANS_1_2 ()
+{
+	fyros_kami_representant_prologue_ans_1_2	[Quels sont mes objectifs  ?]
+}
+
+FYROS_KAMI_REPRESENTANT_PROLOGUE_ANS_1_3 ()
+{
+	fyros_kami_representant_prologue_ans_1_3	[Je veux sauver Atys de l'emprise de Jena. Que puis-je faire ?]
+}
+
+FYROS_KAMI_REPRESENTANT_PROLOGUE_ANS_1_4 ()
+{
+	fyros_kami_representant_prologue_ans_1_4	[Il est temps pour moi de partir en fait.]
+}
+
+FYROS_KAMI_REPRESENTANT_PROLOGUE_ANS_1_1_1 ()
+{
+	fyros_kami_representant_prologue_ans_1_1_1	[Cet endroit a été choisi par les kamis pour être le lieu où sera bâti l'un des quatre sanctuaires de prière et d'apprentissage de Ma-Duk. Chacune des capitales Homins verra s'ériger ces futurs centres d'enseignement kamique non loin de ses murs. De nouveaux pouvoirs pourront y être acquis. Sois prêt, car très bientôt, y débutera la construction des sanctuaires !]
+}
+
+FYROS_KAMI_REPRESENTANT_PROLOGUE_DETAILS ()
+{
+	fyros_kami_representant_prologue_details	[Pour être d'une plus grande aide, j'ai besoin d'avoir plus de détails sur le reste.]
+}
+
+FYROS_KAMI_REPRESENTANT_PROLOGUE_LEAVE ()
+{
+	fyros_kami_representant_prologue_leave	[J'en sais assez, et je préfère partir maintenant]
+}
+
+FYROS_KAMI_REPRESENTANT_PROLOGUE_ANS_1_2_1 (bot player)
+{
+	fyros_kami_representant_prologue_ans_1_2_1	[Sache, $player$, que les récolteurs devront trouver les matières premières nécessaires aux artisans.
+Quant aux magiciens et aux guerriers, ils devront protéger les récolteurs et artisans des attaques des ennemis de Ma-Duk.
+{break}
+De grandes récompenses seront octroyées après la construction des sanctuaires.
+Les homins les plus dévoués auront l'honneur de voir leurs noms ciselés pour l'éternité sur les stèles. En attaquant les chantiers de la Karavan, et les endroits où ils épuisent Atys pour leurs méfaits, $player$, tu aideras également à sauver les homins.]
+}
+
+FYROS_KAMI_REPRESENTANT_PROLOGUE_ANS_1_3_1 ()
+{
+	fyros_kami_representant_prologue_ans_1_3_1	[Le sanctuaire, de part son caractère divin, nécessite d'être élevé en plusieurs étapes à l'aide de matières premières d'exception. Ces matières premières seront de nature différente d'une étape à l'autre de la construction et correspondent à des zones d'exploitation différentes. Nos éclaireurs en ont justement repérées sur les anciennes terres. Des téléporteurs te permettront de t'y rendre.]
+}
+
+FYROS_KAMI_REPRESENTANT_PROLOGUE_ANS_1_4_1 (bot player)
+{
+	fyros_kami_representant_prologue_ans_1_4_1	[Nous comptons sur toi $player$. Ne nous abandonne pas car nous avons besoin de ton aide. Que Ma-Duk te bénisse.]
+}
+
+FYROS_KAMI_REPRESENTANT_ACTEI_ANS_1_1 ()
+{
+	fyros_kami_representant_actei_ans_1_1	[Cet endroit a été choisi par les kamis pour être le lieu où sera bâti l'un des quatre sanctuaires de prière et d'apprentissage de Ma-Duk. Chacune des capitales Homins verra s'ériger ces futurs centres d'enseignement kamique non loin de ses murs. De nouveaux pouvoirs pourront y être acquis.]
+}
+
+FYROS_KAMI_REPRESENTANT_ACTEI_ANS_1_3_1 (place ilot)
+{
+	fyros_kami_representant_actei_ans_1_3_1	[La construction du sanctuaire se fera en plusieurs étapes. Celle-ci est la première. Les matières premières nécessaires à sa construction se trouvent $ilot.pr$ $ilot$, une région des terres anciennes. Il faudra ramener assez de matières premières avant que les gisements ne soient épuisés ! 
+{break}
+Par tous les kamis, ces maudits serviteurs de Jena vont eux aussi s'emparer de ces gisements pour construire leur temple. Comme tu vois, le temps presse, et nous avons un temps très limité pour construire notre sanctuaire !
+Le kami prêcheur peut t'envoyer dans les terres anciennes à la recherche des matières premières nécessaires à la construction du sanctuaire.
+{break}
+Toutes les missions que tu accompliras te rendront honorable. Les plus honorables seront récompensés une fois le sanctuaire construit.
+Tu pourras consulter l'avancement des monuments et ta valeur sur la stèle de valeur.
+{break}
+Le combattant kamiste te dira ce que tu peux faire si tu l'âme d'un combattant.
+L'artisan kamiste te dira ce que tu peux faire si tu l'âme d'un artisan
+Le récolteur kamiste te dira ce que tu peux faire si tu l'âme d'un récolteur]
+}
+
+FYROS_KARAVAN_EMISSARY_PROLOGUE_MENU ()
+{
+	fyros_karavan_emissary_prologue_menu	[Que se passe-t-il ici ?]
+}
+
+FYROS_KARAVAN_EMISSARY_PROLOGUE_PHRASE_1 (bot player)
+{
+	fyros_karavan_emissary_prologue_phrase_1	[L'heure est grave, $player$, car la guerre entre Jena et Ma-Duk va inévitablement éclater ! Ce n'est plus qu'une question de temps... Les Kamis pourchasseront impitoyablement les fidèles de Jena. Mais nous avons trouvé une parade...\n
+$player$ ! Veux-tu apporter ton concours à ce grand projet ?]
+}
+
+FYROS_KARAVAN_EMISSARY_PROLOGUE_ANS_1 ()
+{
+	fyros_karavan_emissary_prologue_ans_1	[Que puis-je faire pour Jena ?]
+}
+
+FYROS_KARAVAN_EMISSARY_PROLOGUE_ANS_2 ()
+{
+	fyros_karavan_emissary_prologue_ans_2	[Tout ceci ne m'intéresse pas !]
+}
+
+FYROS_KARAVAN_EMISSARY_PROLOGUE_ANS_1_0 ()
+{
+	fyros_karavan_emissary_prologue_ans_1_0	[Pour protéger les Karavaniers des attaques des Kamis, nous bâtirons bientôt des temples sur Atys. Ces temples, réceptacles de la force vitale de Jena, vous protégerons des Kamis. Bâtir ces temples est primordial pour les Homins ! Les temples seront également des écoles où nous inculquerons les Enseignements de Jena aux Homins.]
+}
+
+FYROS_KARAVAN_EMISSARY_PROLOGUE_ANS_1_1 ()
+{
+	fyros_karavan_emissary_prologue_ans_1_1	[Où ces temples vont-ils être bâtis ?]
+}
+
+FYROS_KARAVAN_EMISSARY_PROLOGUE_ANS_1_2 ()
+{
+	fyros_karavan_emissary_prologue_ans_1_2	[Quel sera mon but ?]
+}
+
+FYROS_KARAVAN_EMISSARY_PROLOGUE_ANS_1_3 ()
+{
+	fyros_karavan_emissary_prologue_ans_1_3	[Quel sera mon apport à ce grand projet ?]
+}
+
+FYROS_KARAVAN_EMISSARY_PROLOGUE_ANS_1_1_1 (place place)
+{
+	fyros_karavan_emissary_prologue_ans_1_1_1	[Les environs de $place$ ont été choisi par la karavan pour abriter l'un des quatre temples de Jena. Ceux-ci protégeront les cités et dispenseront aux homins la parole de Jena. Le karavanier fervent y acquerra de nouveaux pouvoirs. Un temple sera bâti près de chacune des quatre capitales ! La construction commencera bientôt.]
+}
+
+FYROS_KARAVAN_EMISSARY_PROLOGUE_DETAILS ()
+{
+	fyros_karavan_emissary_prologue_details	[Redites moi encore ce que puis faire pour Jena ? ]
+}
+
+FYROS_KARAVAN_EMISSARY_PROLOGUE_LEAVE ()
+{
+	fyros_karavan_emissary_prologue_leave	[D'autres affaires m'appellent ailleurs.]
+}
+
+FYROS_KARAVAN_EMISSARY_PROLOGUE_ANS_1_2_1 (bot player)
+{
+	fyros_karavan_emissary_prologue_ans_1_2_1	[Afin que la puissance de Jena érige un temple, nous utiliserons des pièces que les artisans construiront à partir des matières premières que les récolteurs rapporteront. Dans leurs recherches, les récolteurs seront escortés des magiciens et des guerriers. Sache $player$ que les plus méritant recevront leurs justes récompenses. Leurs noms seront gravés à jamais dans le bois des temples !]
+}
+
+FYROS_KARAVAN_EMISSARY_PROLOGUE_ANS_1_3_1 (bot player)
+{
+	fyros_karavan_emissary_prologue_ans_1_3_1	[Sache $player$ que la nature divine du temple demande des matières premières particulières que des éclaireurs Karavan ont repérés sur les terres anciennes. Des téléporteurs permettront de s'y rendre. Chacune des étapes de la construction des temples demandera des matières premières différentes correspondant à une zone d'exploitation différente. Prends bien garde $player$ car les Kamis et les Kitins chercheront à te nuire.]
+}
+
+FYROS_KARAVAN_EMISSARY_PROLOGUE_ANS_1_4_1 (bot player)
+{
+	fyros_karavan_emissary_prologue_ans_1_4_1	[Nous comptons sur toi $player$. Ne nous abandonne pas car nous avons besoin de ton aide. Que Jena t'accompagne.]
+}
+
+FYROS_KARAVAN_EMISSARY_ACTEI_ANS_1_3_1 (place ilot, bot player)
+{
+	fyros_karavan_emissary_actei_ans_1_3_1	[Sache $player$ que notre temple se construira en plusieurs étapes et que nous n'en sommes qu'à la première ! Le temps nous est compté. Chacune des étapes de la construction des temples demandera des matières premières différentes correspondant à une zone d'exploitation différente. {break}
+
+La nature divine du temple demande des matières premières particulières que des éclaireurs Karavan ont repérés $ilot.pr$ $ilot$ sur les terres anciennes. Des téléporteurs mis à disposition par la Karavan permettront de s'y rendre. Prends bien garde $player$ car les Kamis et les Kitins chercheront à te nuire.{break}
+
+Les Kamis ont également besoin de ces matières premières pour leurs sanctuaires impies. Alors, rends toi $ilot.pr$ $ilot$ sans tarder car les sbires des Kamis y sont sûrement déjà à pied d'oeuvre là-bas et les gisements ne sont pas inépuisables ! Ramène autant de matière première que tu peux ! Le récolteur karavanier te donnera tous les détails...{break}
+
+Si tu ne souhaites pas récolter, tu peux quand même apporter ta contribution à l'oeuvre de Jena. Si tu es combattant, va voir le combattant karavanier pour en savoir plus. Si tu es artisan, trouve l'artisan karavanier pour qu'il t'en dise plus. Quoi qu'il en soit, $player$, tout ce que tu accompliras te rendra honorable. Les plus honorables seront récompensés une fois le temple construit]
+}
+

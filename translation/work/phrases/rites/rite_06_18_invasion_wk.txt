@@ -1,0 +1,190 @@
+﻿R_06_18_MIS_TITLE (bot giver, race crea_kitin)
+{
+	r_06_18_mis_title	[A la découverte des $crea_kitin.p$]
+}
+
+R_06_18_MIS_DESC (bot giver, race crea_kitin)
+{
+	r_06_18_mis_desc	[Passer des épreuves destinées à mieux connaitre $crea_kitin.pda$ $crea_kitin.p$]
+}
+
+R_06_18_P_LDC_INTRO (bot chasseur, race crea_kitin, place lieu_imperialdunes)
+{
+	r_06_18_p_ldc_intro	[Bonjour. Il est temps pour vous de passer l'épreuve des $crea_kitin.p$. Cette épreuve se déroulera en trois étapes.{break}Dans un premier temps, vous irez voir $chasseur$, l'un de nos meilleurs chasseurs, c'est un expert en ce qui concerne $crea_kitin.pda$ $crea_kitin.p$. Il vous apprendra de nombreuses choses. Soyez très attentif à son enseignement.{break}Dans un deuxième temps vous passerez à la pratique en allant chasser quelque spécimens de $crea_kitin.p$ que vous aurez étudiés et me rapporterez leurs mandibules.{break}Enfin, je vous ferai passer un test oral afin de contrôler vos connaissances.{break}Pour commencer, allez voir $chasseur$, vous le trouverez dans la région de $lieu_imperialdunes$, au sud de Pyr. Si vous réussissez cette mission, je vous entraînerai afin de vous rendre plus résistant.]
+}
+
+R_06_18_P_T2_PARLER_CHASSEUR (bot chasseur, race crea_kitin, bot givervar)
+{
+	r_06_18_p_t2_parler_chasseur	[Bonjour, $givervar$ m'envoie pour l'épreuve des $crea_kitin.p$.]
+}
+
+R_06_18_P_BC_PARLER_CHASSEUR (race crea_kiban, race crea_kidinak, race crea_kincher, race crea_kinrey, race crea_kipee, race crea_kipesta, race crea_kipucka, race crea_kirosta, race crea_kitin, race crea_kizoar, bot givervar, place lieu_scorchedcorridor)
+{
+	r_06_18_p_bc_parler_chasseur	[Très bien, commençons la leçon et soyez attentif car $givervar$ vous fera passer un test sur ce que vous aurez appris.{break}Tout d'abord, vous devez savoir qu'il existe 4 grandes classes de $crea_kitin.p$ : $crea_kitin.pda$ $crea_kitin.p$ ouvriers, $crea_kitin.pda$ $crea_kitin.p$ combattants, $crea_kitin.pda$ $crea_kitin.p$ d'élite et $crea_kitin.pda$ $crea_kitin.p$ royaux.{break}Les ouvriers ont pour fonctions la construction des nids et la collecte de matières premières. On trouve dans cette catégorie : $crea_kipee.pda$ $crea_kipee.p$, $crea_kizoar.pda$ $crea_kizoar.p$ et $crea_kiban.pda$ $crea_kiban.p$. Ces $crea_kitin.p$ ne sont pas de nature agressive mais se défendent si vous les attaquez.{break}Nous avons ensuite les combattants qui eux aussi se trouvent au nombre de 3 : $crea_kincher.pda$ $crea_kincher.p$, $crea_kipesta.pda$ $crea_kipesta.p$ et $crea_kirosta.pda$ $crea_kirosta.p$. $crea_kincher.pda$ $crea_kincher.p$ sont des chasseurs, $crea_kipesta.pda$ $crea_kipesta.p$ des éclaireurs et $crea_kirosta.pda$ $crea_kirosta.p$ sont des guerriers chargés de protéger la colonie. $crea_kitin.pda$ $crea_kitin.p$ combattants sont agressifs, ils attaquent à vue.{break}Enfin, $crea_kitin.pda$ $crea_kitin.p$ royaux assurent la descendance de la race $crea_kitin$ et sont encadrés par $crea_kitin.pda$ $crea_kitin.p$ d'élite qui sont : $crea_kipucka.pda$ $crea_kipucka.p$, $crea_kinrey.pda$ $crea_kinrey.p$ et $crea_kidinak.pda$ $crea_kidinak.p$.{break}Voila, vous connaissez l'essentiel sur $crea_kitin.pda$ $crea_kitin.p$. Allez maintenant combattre $crea_kitin.ia$ $crea_kitin$ de chaque race d'ouvriers et de combattants dans la région de $lieu_scorchedcorridor$ et rapportez leurs mandibules à $givervar$.]
+}
+
+R_06_18_P_BC_RAPPORTER_TROPHEE ()
+{
+	r_06_18_p_bc_rapporter_trophee	[Très bien, il ne vous reste plus qu'à passer l'épreuve orale : je vais vous poser 10 affirmations. A chaque fois, vous devrez me dire si elle est vraie ou fausse. Allons-y.]
+}
+
+R_06_18_P_QUESTION_01 (race crea_kitin)
+{
+	r_06_18_p_question_01	[Très bien, il ne vous reste plus qu'à passer l'épreuve orale : je vais vous poser 10 affirmations. A chaque fois, vous devrez me dire si elle est vraie ou fausse. Allons-y.{break}Il existe 4 grandes classes de $crea_kitin.p$]
+}
+
+R_06_18_P_VRAI_01 ()
+{
+	r_06_18_p_vrai_01	[Vrai]
+}
+
+R_06_18_P_FAUX_01 ()
+{
+	r_06_18_p_faux_01	[Faux]
+}
+
+R_06_18_P_QUESTION_02 (race crea_kipee)
+{
+	r_06_18_p_question_02	[$crea_kipee.pda$ $crea_kipee.p$ font partie de la classe des combattants]
+}
+
+R_06_18_P_VRAI_02 ()
+{
+	r_06_18_p_vrai_02	[Vrai]
+}
+
+R_06_18_P_FAUX_02 ()
+{
+	r_06_18_p_faux_02	[Faux]
+}
+
+R_06_18_P_QUESTION_03 (race crea_kizoar)
+{
+	r_06_18_p_question_03	[$crea_kizoar.pda$ $crea_kizoar.p$ font partie de la classe des combattants]
+}
+
+R_06_18_P_VRAI_03 ()
+{
+	r_06_18_p_vrai_03	[Vrai]
+}
+
+R_06_18_P_FAUX_03 ()
+{
+	r_06_18_p_faux_03	[Faux]
+}
+
+R_06_18_P_QUESTION_04 (race crea_kipesta)
+{
+	r_06_18_p_question_04	[$crea_kipesta.pda$ $crea_kipesta.p$ font partie de la classe des combattants]
+}
+
+R_06_18_P_VRAI_04 ()
+{
+	r_06_18_p_vrai_04	[Vrai]
+}
+
+R_06_18_P_FAUX_04 ()
+{
+	r_06_18_p_faux_04	[Faux]
+}
+
+R_06_18_P_QUESTION_05 (race crea_kipucka)
+{
+	r_06_18_p_question_05	[$crea_kipucka.pda$ $crea_kipucka.p$ font partie de la classe des combattants]
+}
+
+R_06_18_P_VRAI_05 ()
+{
+	r_06_18_p_vrai_05	[Vrai]
+}
+
+R_06_18_P_FAUX_05 ()
+{
+	r_06_18_p_faux_05	[Faux]
+}
+
+R_06_18_P_QUESTION_06 (race crea_kiban, race crea_kipee, race crea_kizoar)
+{
+	r_06_18_p_question_06	[Les ouvriers sont $crea_kipee.pda$ $crea_kipee.p$, $crea_kizoar.pda$ $crea_kizoar.p$ et $crea_kiban.pda$ $crea_kiban.p$]
+}
+
+R_06_18_P_VRAI_06 ()
+{
+	r_06_18_p_vrai_06	[Vrai]
+}
+
+R_06_18_P_FAUX_06 ()
+{
+	r_06_18_p_faux_06	[Faux]
+}
+
+R_06_18_P_QUESTION_07 (race crea_kipesta)
+{
+	r_06_18_p_question_07	[$crea_kipesta.pda$ $crea_kipesta.p$ sont des chasseurs]
+}
+
+R_06_18_P_VRAI_07 ()
+{
+	r_06_18_p_vrai_07	[Vrai]
+}
+
+R_06_18_P_FAUX_07 ()
+{
+	r_06_18_p_faux_07	[Faux]
+}
+
+R_06_18_P_QUESTION_08 (race crea_kipesta)
+{
+	r_06_18_p_question_08	[$crea_kipesta.pda$ $crea_kipesta.p$ sont des éclaireurs]
+}
+
+R_06_18_P_VRAI_08 ()
+{
+	r_06_18_p_vrai_08	[Vrai]
+}
+
+R_06_18_P_FAUX_08 ()
+{
+	r_06_18_p_faux_08	[Faux]
+}
+
+R_06_18_P_QUESTION_09 (race crea_kitin)
+{
+	r_06_18_p_question_09	[Le rôle des $crea_kitin.p$ d'élite est de découvrir de nouveaux territoires]
+}
+
+R_06_18_P_VRAI_09 ()
+{
+	r_06_18_p_vrai_09	[Vrai]
+}
+
+R_06_18_P_FAUX_09 ()
+{
+	r_06_18_p_faux_09	[Faux]
+}
+
+R_06_18_P_QUESTION_10 (race crea_kitin)
+{
+	r_06_18_p_question_10	[Tous $crea_kitin.pda$ $crea_kitin.p$ sans exceptions sont agressifs et attaquent à vue]
+}
+
+R_06_18_P_VRAI_10 ()
+{
+	r_06_18_p_vrai_10	[Vrai]
+}
+
+R_06_18_P_FAUX_10 ()
+{
+	r_06_18_p_faux_10	[Faux]
+}
+
+R_06_18_P_BC_ECHEC ()
+{
+	r_06_18_p_bc_echec	[Visiblement vous n'étiez pas prêt pour ce test. C'est bien dommage ! Mais vous pourrez réessayer quand vous vous sentirez prêt.]
+}
+
+R_06_18_P_BC_DEBRIEF (race crea_kitin)
+{
+	r_06_18_p_bc_debrief	[Très bien. Vous commencez à avoir de bonnes connaissances sur $crea_kitin.pda$ $crea_kitin.p$.{break}Vous avez passé cette épreuve avec succès. Voici maintenant la récompense qui vous est due.]
+}
+

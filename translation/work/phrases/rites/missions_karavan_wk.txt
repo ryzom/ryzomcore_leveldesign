@@ -1,0 +1,168 @@
+﻿MISSION_KARAVAN_01_MIS_TITLE (bot giver)
+{
+	mission_karavan_01_mis_title	[L'étude de la Goo #1]
+}
+
+MISSION_KARAVAN_01_MIS_DESC (bot giver)
+{
+	mission_karavan_01_mis_desc	[Partez en quête de Goo fraîche.]
+}
+
+MISSION_KARAVAN_01_P_LDCC_INTRO (place blight_zone, item mp_goo_fraiche)
+{
+	mission_karavan_01_p_ldcc_intro	[Tu viens nous aider à étudier cette substance envahissante que l'on nomme Goo. Bien. Sache que nous savons faire preuve de reconnaissance envers ceux qui nous servent.{break}Nous savons peu de choses sur la Goo et sur l'origine de ce mal, mais nous savons que sa progression est relativement lente et touche toutes formes de vie sur Atys. Hélas, tu n'es pas sans savoir que tout n'est que vie sur cette planète. Atys se meure donc à petit feu et pour le moment, nous ne savons comment la guérir de cette maladie.{break}Les Kamis craignent la Goo. Tout ce qui peut porter atteinte à l'équilibre naturel de cette planète les fait enrager. Autant te dire que rien ni personne sur Atys ne pourrait les mettre en colère plus que la Goo. A tel point que ça en devient du fanatisme. Leur protectionnisme aveugle de la nature les pousse à combattre la Goo tête baissée, sans élaborer de stratégie, sans même essayer de comprendre ce à quoi ils ont à faire.{break}Heureusement, la Karavan sait faire preuve de pragmatisme. La Goo comme toute forme de maladie doit avoir son remède. Et nous ne pourrons le découvrir que par l'étude du mal que nous voulons éradiquer. De plus, cette étude pourrait nous apprendre bien des choses auxquelles nous ne nous attendions pas.{break}Tu vas donc nous aider dans cette tâche. Je te demanderai dans un premier temps de me ramener plusieurs $mp_goo_fraiche.pia$ $mp_goo_fraiche.p$. Tu en trouveras un peu partout dans la région de $blight_zone$, soit sur des créatures contaminées, soit enfouie dans le sol.]
+}
+
+MISSION_KARAVAN_01_P_OVL_GIVE_1 (item i1, int qt1, int qual1, bot giver, bot givervar)
+{
+	mission_karavan_01_p_ovl_give_1	[Rapportez la Goo que vous avez trouvée à $givervar$]
+}
+
+MISSION_KARAVAN_01_P_LDCC_DEBRIEF ()
+{
+	mission_karavan_01_p_ldcc_debrief	[Très bien. Beau travail, mais nous n'en avons pas fini.]
+}
+
+MISSION_KARAVAN_01_P_TITLE_POPUP_FAME ()
+{
+	mission_karavan_01_p_title_popup_fame	[La renommée]
+}
+
+MISSION_KARAVAN_01_P_POPUP_FAME ()
+{
+	mission_karavan_01_p_popup_fame	[@{W400}Vous venez de gagner un peu de @{F90F}renommée@{FFFF} auprès d'une des factions du jeu. En augmentant encore cette renommée vous arriverez à un point ou vous devrez choisir votre camp (Kami, Karavan ou Neutre). Cela déterminera l'action des personnages non joueur du jeu à votre égard. Cela influe sur les lieux où vous pourrez vous rendre, les prix de certains marchands et également sur le PvP (Player versus Player). En restant sur ces terres vous n'aurez pas la possibilité de faire ce choix.]
+}
+
+MISSION_KARAVAN_02_MIS_TITLE (bot giver)
+{
+	mission_karavan_02_mis_title	[L'étude de la Goo #2]
+}
+
+MISSION_KARAVAN_02_MIS_DESC (bot giver)
+{
+	mission_karavan_02_mis_desc	[Partez en quête de Goo sèche]
+}
+
+MISSION_KARAVAN_02_P_LDCC_INTRO (item mp_goo_seche)
+{
+	mission_karavan_02_p_ldcc_intro	[Je pense qu'il serait bon d'étudier le processus d'assèchement de la Goo. Si nous pouvions trouver le moyen forcer ce processus par nous même, nous aurions gagné une première victoire sur la Goo. Tu vas donc repartir en quête d'échantillons, mais cette fois, tu me rapporteras $mp_goo_seche.ia$ $mp_goo_seche$. Ainsi nous pourrons effectuer une comparaison de ces deux états. Il te sera, je pense, un peu plus difficile de trouver $mp_goo_seche.ia$ $mp_goo_seche$ que $mp_goo_seche.ia$ $mp_goo_seche$. Et comme dans le cas précédant, tu arriveras à tes fins soit par prélèvement sur des créatures contaminées soit en forant.]
+}
+
+MISSION_KARAVAN_02_P_OVL_GIVE_1 (item i1, int qt1, int qual1, bot giver, bot givervar)
+{
+	mission_karavan_02_p_ovl_give_1	[Rapportez la Goo que vous avez trouvée à $givervar$]
+}
+
+MISSION_KARAVAN_02_P_LDCC_DEBRIEF ()
+{
+	mission_karavan_02_p_ldcc_debrief	[Excellent. Nous devrions progresser assez vite dans nos recherches avec ce que tu nous as porté.]
+}
+
+MISSION_KARAVAN_03_MIS_TITLE (bot giver)
+{
+	mission_karavan_03_mis_title	[L'étude de la Goo #3]
+}
+
+MISSION_KARAVAN_03_MIS_DESC (bot giver)
+{
+	mission_karavan_03_mis_desc	[Trouvez de la Goo rare.]
+}
+
+MISSION_KARAVAN_03_P_LDCC_INTRO (item mp_goo_fraiche)
+{
+	mission_karavan_03_p_ldcc_intro	[J'ai une dernière mission à te confier, essentielle mais loin d'être simple. Nous allons avoir besoin d'un dernier échantillon de $mp_goo_fraiche$, de meilleure qualité que celle que tu as pu trouver jusqu'à présent. Là encore les deux précédentes méthodes sont possible : la prélever sur une créature contaminée ou la trouver dans le sol. Hélas, je crains que la seule créature sur laquelle tu puisse en trouver soit l'Ocyx que tu as sûrement aperçu dans la région. Quant aux gisements, ils doivent être rares. Mais tu as déjà fais la preuve de tes compétences et je ne doute absolument pas de ta prochaine réussite. Je te souhaite tout de même bon courage.]
+}
+
+MISSION_KARAVAN_03_P_OVL_GIVE_1 (item i1, int qt1, int qual1, bot giver, bot givervar)
+{
+	mission_karavan_03_p_ovl_give_1	[Rapportez la Goo que vous avez trouvée à $givervar$]
+}
+
+MISSION_KARAVAN_03_P_LDCC_DEBRIEF ()
+{
+	mission_karavan_03_p_ldcc_debrief	[Je savais que tu réussirais. Lorsque je place ma confiance en quelqu'un, je ne me trompe pas. Tu nous as apporté tout ce dont nous avions besoin, il ne me reste donc plus qu'à te remercier et à te remettre cette récompense plus que méritée. Je te souhaite bonne chance pour la suite.]
+}
+
+MISSION_KARAVAN_04_MIS_TITLE (bot giver)
+{
+	mission_karavan_04_mis_title	[Un transport rapide]
+}
+
+MISSION_KARAVAN_04_MIS_DESC (bot giver)
+{
+	mission_karavan_04_mis_desc	[Utiliser les services de la karavan pour voyager.]
+}
+
+MISSION_KARAVAN_04_P_AUTO ()
+{
+	mission_karavan_04_p_auto	[Chiang m'a affirmé que je pouvais utiliser les services de la Karavan.]
+}
+
+MISSION_KARAVAN_04_P_DC_TP ()
+{
+	( self.gender = male )
+		mission_karavan_04_p_dc_tp_m	[Bien Homin, en respect des accords passés, je peux te transporter instantanément vers notre poste avancé. Souhaites-tu partir tout de suite ?]
+	( self.gender = female )
+		mission_karavan_04_p_dc_tp_f	[Bien Homine, en respect des accords passés, je peux te transporter instantanément vers notre poste avancé. Souhaites-tu partir tout de suite ?]
+}
+
+MISSION_KARAVAN_04_P_DA_TP_OUI ()
+{
+	mission_karavan_04_p_da_tp_oui	[S'il vous plait.]
+}
+
+MISSION_KARAVAN_04_P_DA_TP_NON ()
+{
+	mission_karavan_04_p_da_tp_non	[En fait pas tout de suite. Merci.]
+}
+
+MISSION_TRYKER_EMERGENCY_TP_MISSION_TRYKER_EMERGENCY_TP_TITLE (bot giver)
+{
+	mission_tryker_emergency_tp_mission_tryker_emergency_tp_title	[Bring me back to Fairhaven]
+}
+
+MISSION_TRYKER_EMERGENCY_TP_MISSION_TRYKER_EMERGENCY_TP_DESC (bot giver, bot givervar)
+{
+	mission_tryker_emergency_tp_mission_tryker_emergency_tp_desc	[Talk with $givervar$ to finde a way back to Fairhaven]
+}
+
+MISSION_TRYKER_EMERGENCY_TP_TP_FOR_DAPPER_TO_TRYKER ()
+{
+	mission_tryker_emergency_tp_tp_for_dapper_to_tryker	[If you want i will Teleport you to Fairhaven, this will cost you 1000 Dapper , ok?]
+}
+
+MISSION_TRYKER_EMERGENCY_TP_ANSWER_TP_OK ()
+{
+	mission_tryker_emergency_tp_answer_tp_ok	[I have understand, yes pleas]
+}
+
+MISSION_TRYKER_EMERGENCY_TP_ANSWER_TP_NO ()
+{
+	mission_tryker_emergency_tp_answer_tp_no	[No Thanks i will stay here!]
+}
+
+MISSION_MATIS_EMERGENCY_TP_MISSION_MATIS_EMERGENCY_TP_TITLE (bot giver)
+{
+	mission_matis_emergency_tp_mission_matis_emergency_tp_title	[Bring me back to Yirkanis]
+}
+
+MISSION_MATIS_EMERGENCY_TP_MISSION_MATIS_EMERGENCY_TP_DESC (bot giver, bot givervar)
+{
+	mission_matis_emergency_tp_mission_matis_emergency_tp_desc	[Talk with $givervar$ to finde a way back to Yirkanis]
+}
+
+MISSION_MATIS_EMERGENCY_TP_TP_FOR_DAPPER_TO_MATIS ()
+{
+	mission_matis_emergency_tp_tp_for_dapper_to_matis	[If you want i will Teleport you to Yirkanis, this will cost you 1000 Dapper , ok?]
+}
+
+MISSION_MATIS_EMERGENCY_TP_ANSWER_TP_OK ()
+{
+	mission_matis_emergency_tp_answer_tp_ok	[I have understand, yes pleas]
+}
+
+MISSION_MATIS_EMERGENCY_TP_ANSWER_TP_NO ()
+{
+	mission_matis_emergency_tp_answer_tp_no	[No Thanks i will stay here!]
+}
+

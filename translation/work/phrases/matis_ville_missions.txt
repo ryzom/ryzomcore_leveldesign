@@ -1,0 +1,1285 @@
+﻿///MISSIONS MATIS VILLE///
+
+
+////debut texts npcs misson rookie team////
+
+MISSION_ESCORT_ROOKIE_ENGAGE_1()
+{
+mission_escort_rookie_engage_1					[This job is too hard !]
+}
+MISSION_ESCORT_ROOKIE_ENGAGE_2()
+{
+mission_escort_rookie_engage_2					[I wanna go home !]
+}
+MISSION_ESCORT_ROOKIE_ENGAGE_3()
+{
+mission_escort_rookie_engage_3					[We're under attack !]
+}
+MISSION_ESCORT_ROOKIE_ENGAGE_4()
+{
+mission_escort_rookie_engage_4					[Please help us !]
+}
+MISSION_ESCORT_ROOKIE_ENGAGE_5()
+{
+mission_escort_rookie_engage_5					[I don't want to perish here !]
+}
+////fin texts npcs mission rookie team////
+
+///missions///
+/*
+MV_GROUP_1
+
+*/
+
+MV_GROUP_1_TITLE (bot giver)
+{
+		MV_GROUP_1_TITLE	[the lost section.]
+
+}
+MV_GROUP_1_DESC (bot giver)
+{
+		MV_GROUP_1_DESC		[find the lost rookie section.]
+
+}
+MV_GROUP_1_STEP_1 (bot target)
+{
+		mv_group_1_step_1 [Hello proud protectors of our noble people.\n
+							It's seems that $target$ the guard chief of our city has some worries
+							With a section of raw recruits.{break}
+							Actually a complete section of them is missing since few days and
+							our elites soldiers can not abandon the supervision of the city for looking for
+ 							them.\n
+							I am sure that if you could help $target$ he will be eternally grateful,
+							and a success in that kind of mission could be very interesting for you
+ 							to find favors in the royal court's sight.\n
+							Find him, he will tell you more details about this disappearance.]
+
+}
+
+MV_GROUP_1_STEP_2 ()
+{
+		mv_group_1_step_2 [Nice to meet you, let me expose you the facts that makes me asking help from the royal concillor.{break}
+							In our military training program we prepare our future soldiers to be suitable for any situation
+							in any environment.\n
+							For well known reasons, and hostiles neighbours, we long time preferred training in arid environment...you
+							see what I mean.\n
+							It's for this reason that I sent a section of rookies in the region of the hidden source located on north-west
+							of the continent.\n
+							It's a perfect place for this kind of training.\n
+							The problem is that they should came back 3 days ago and we absolutely have no news.\n
+							The thing that make me think that something terrible happens is that they were not alone and a pack
+							of experimented soldiers managed the expedition.\n
+							I hope they are still alive but in the case of they are not I must know what happened to them.\n
+							So, go to the hidden source region and bring them back.]
+
+}
+
+MV_GROUP_1_CUSTOM_OBJ_2 ()
+{
+		mv_group_1_custom_obj_2		[Find and talk to the rookies' trainer.]
+
+}
+
+MV_GROUP_1_CUSTOM_OBJ_1 ()
+{
+		mv_group_1_custom_obj_1		[Escort the rookies to their destination, be careful as they all have to stay alive.]
+
+}
+
+MV_GROUP_1_STEP_3 (bot target)
+{
+		mv_group_1_step_3 [We are safe!\n
+							You did it!\n
+							You saved us!{break}
+							No doubt! You could become excellent Matisian soldiers if you want.\n
+							We are going to stay here for a moment, we need to take a rest.\n
+							Please take this badge of rank and give it to $target$, it's the proof of our safety.]
+
+}
+MV_GROUP_1_END ()
+{
+		mv_group_1_end [Oh, the badge of rank of the rookie section, so you found them!{break}
+							Please accept my gratitude in the name of the great Matis army.\n
+							So Kittins are present in the hidden source region too, it seems that there is no safe places on our kingdom.\n
+							Ohter kingdoms have the same problems as us with kittins, we absolutly must use whatever means we have to erase
+							 this menace, the past must not be repeat!\n
+							After a lot of researches and experiments on dead kittins our scientists found a weakness point on
+							forest kittins.\n
+							Take these nice weapons as reward of your precious help, they were made by our best craftsman and are designed
+							to be very effective against kittins of our kingdom.]
+}
+
+REWARD_MV_GROUP_1_SWORD()
+{
+	reward_mv_group_1_sword		[Great Kittin slasher]
+}
+
+REWARD_MV_GROUP_1_DAGGER()
+{
+	reward_mv_group_1_dagger	[Smart winter dagger]
+}
+
+REWARD_MV_GROUP_1_VEST()
+{
+	reward_mv_group_1_vest		[Vest of resistances]
+}
+
+REWARD_MV_GROUP_1_STAFF()
+{
+	reward_mv_group_1_staff		[Staff of carbonization]
+}
+
+REWARD_MV_GROUP_1_HARMOR()
+{
+	reward_mv_group_1_harmor		[The pain absorber]
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+MV_GROUP_1_AUTO
+
+*/
+MV_GROUP_1_AUTO_TITLE (bot giver)
+{
+		mv_group_1_auto_title	[talk about the lost section.]
+
+}
+
+MV_GROUP_1_AUTO_END (bot previous)
+{
+		mv_group_1_auto_end [$previous$ sent you to save us ? thanks a lot to this holy man!\n
+ 							We were afraid to be abandoned in this inhospitable land.\n
+							We are the only survivors of this terrible expedition.\n
+							We have been attacked by a horde of great kittins and most of us died,
+							so we decided to run away to...hum...protect our back.\n
+							But now, and with your precious help, we could exit this damn place.\n
+							Let's go we can't stay no more here!]
+
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//TRADE MISSION
+/*
+MV_TRADE_MIS_01
+*/
+MV_TRADE_MIS_01_TITLE (bot giver)
+{
+	mv_trade_mis_01_title			[Working for the Supplier]
+
+}
+
+MV_TRADE_MIS_01_DESC (bot giver)
+{
+	mv_trade_mis_01_desc			[Vous devez rapporter au supplier des marchandises collectées dans les villages voisins.]
+
+}
+
+MV_TRADE_MIS_01_STEP_1 (player p, place place_natae, bot target)
+{
+//Supplier
+	mv_trade_mis_01_step_1			[Bienvenue, $p$ ! Ainsi, tu veux travailler pour moi ! Pas de problèmes, je suis toujours
+						à la recherche de coursiers et de convoyeurs courageux pour m'aider dans mon commerce.{break}\n
+						Je pratique des échanges fructueux avec les marchands des villages voisins. J'ai besoin de récupérer
+						quelques marchandises, tu vas donc aller les voir. J'espère que tu connais bien les environs, et que tu sais
+						échapper aux mauvaises rencontres ! Je te confie la liste des articles dont j'ai besoin. Commence par te
+						rendre au village de $place_natae$, et trouve $target$. Tu lui remettras ma liste : elle porte mon sceau,
+						ainsi $target$ saura que c'est moi qui t'envoie, et il te donnera ce qu'il me faut en toute confiance.
+						Mets-toi en route dès que possible, $p$ !]
+
+}
+
+MV_TRADE_MIS_01_STEP_2 (bot supplier, race kitin, player p, bot target, place place_davae)
+{
+//ma heavy armor merchant
+	mv_trade_mis_01_step_2			[Je vois que $supplier$ a recruté un nouveau convoyeur ! Bonne idée, le dernier a été massacré par
+						$kitin.p$... il n'était sans doute pas assez bien protégé. J'espère que tu auras plus de chance, $p$.{break}
+						Voici les marchandises demandées par $supplier$. Sa liste indique que tu dois à présent aller
+						voir $target$, au village de $place_davae$. Bonne route, et attention aux mauvaises rencontres !
+						Si tu veux acheter une bonne armure pour limiter les risques, n'hésite pas.]
+
+}
+
+MV_TRADE_MIS_01_STEP_3 (bot supplier, place place_avalae, bot target, place place_yrkanis)
+{
+//mb range weapon merchant
+	mv_trade_mis_01_step_3			[De quoi s'agit-il ? Ah, c'est $supplier$ qui t'envoie ! Je pensais qu'il m'avait oublié,
+						cela fait plusieurs jours que les pièces qu'il m'a commandé sont disponibles. Eh bien, je suis heureux
+						que tu sois arrivé.{break} Tu lui remettras ce sac. Prends-en soin, je tiens à ce que la commande arrive en bon
+						état. Mais avant, il te faut rejoindre le village de $place_avalae$. D'après la liste, $target$ est le dernier
+						marchand que tu dois voir avant de retourner vers $place_yrkanis$.]
+
+}
+
+MV_TRADE_MIS_01_STEP_4 (bot supplier, item mdoafbsef01, player p)
+{
+//mc raw material merchant
+	mv_trade_mis_01_step_4			[Intéressé par des ingrédients de premier choix ? Fraîcheur garantie ! Oh, mais il semble
+						d'après cette liste que tu travailles pour $supplier$.{break} Voyons voir... hmm, j'ai à peu près tout ce qu'il faut.
+						Il n'y a qu'un ingrédient qui pose problème : $mdoafbsef01.pda$ $mdoafbsef01.p$. J'en manque en ce moment... Si quelqu'un était
+						assez gentil pour m'en apporter, cela me permettrait de boucler la commande.
+						Je peux compter sur toi, $p$ ?]
+
+}
+
+MV_TRADE_MIS_01_STEP_5 (player p, bot supplier)
+{
+//mc raw material merchant
+	mv_trade_mis_01_step_5			[Merci $p$, merci beaucoup ! Tu es très efficace, et tu m'as rendu un fier service.
+						J'ai précisé sur la liste de $supplier$ que tu avais fait de l'excellent travail.{break} Redonne-lui cette liste
+						avec toutes les marchandises qu'il demandait, et nul doute qu'il saura se montrer particulièrement généreux.
+						Je te souhaite un bon voyage de retour, $p$.]
+
+}
+
+MV_TRADE_MIS_01_GIVE_ITEM_MENU(int item_count)
+{
+	mv_trade_mis_01_give_item_menu		[Give the list and all the supplies]
+
+}
+
+MV_TRADE_MIS_01_END (bot previous, player p)
+{
+//Supplier
+	mv_trade_mis_01_end			[Parfait, tout est là ! Et il semble que $previous$ ne tarisse pas d'éloges à ton sujet...
+						J'aimerais que tous mes convoyeurs soient aussi consciencieux !{break} Tu as bien mérité ton salaire, $p$,
+						et j'y ajoute une gratification pour ton efficacité !]
+
+}
+
+//reward 500 money X + fame Matis
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//FIGHT MISSION
+/*
+MV_FIGHT_MIS_02
+*/
+MV_FIGHT_MIS_02_TITLE (bot giver, race kitin)
+{
+	mv_fight_mis_02_title	[Hunting <**$kitin.p$**>]
+
+}
+
+MV_FIGHT_MIS_02_DESC (bot giver, race pucetron)
+{
+	mv_fight_mis_02_desc	[<**Le groupe doit combattre plusieurs variétés de $pucetron.p$.**>]
+
+}
+MV_FIGHT_MIS_02_STEP_1 (race kitin, creature_model ckhfb1)
+{
+//Guard chief
+	mv_fight_mis_02_step_1			[<**$kitin.pda$ $kitin$**> are a terrible pest! I am glad to be able to rely on courageous volonteers to fight
+						them off and rid the forest of their evil presence ! Adjust your <**armors**> and sharpen your reflexes,
+						you'll be needing them.{break} Start by killing some $ckhfb1.p$ that are prowling around our village then come
+						back and see me!]
+
+}
+
+MV_FIGHT_MIS_02_STEP_2 (creature_model ckhfb2)
+{
+//Guard chief
+	mv_fight_mis_02_step_2			[It would seem you have fared well <**>. Let us now see what you are worth against tougher enemies.
+						Find a pack <**$ckhfb2.p$**> and kill <**some of them**>. Be careful not to get outflanked, these creatures
+						can be formidable opponents.]
+
+}
+
+MV_FIGHT_MIS_02_STEP_3 (creature_model ckhfb3)
+{
+//Guard chief
+	mv_fight_mis_02_step_3			[Good, you are still alive! I think you are capable of confronting more dangerous enemies now.
+						<**$ckhfb3.p$**> will be your next target. I want you to send <**some**> of them to kingdom come!]
+
+}
+
+MV_FIGHT_MIS_02_STEP_4 (race kitin, creature_model ckhfc1)
+{
+//Guard chief
+	mv_fight_mis_02_step_4			[I am glad to see you are getting on well. You shall become a formidable menace to <** $kitin.pda$ $kitin$**>!{break}
+						Lastly, you must confront the most dangerous of creatures that prowl in these parts : <**$ckhfc1.da$ $ckhfc1$**>.
+						Unearth one of these despicable creatures and destroy it!]
+
+}
+
+MV_FIGHT_MIS_02_END (race kitin)
+{
+//Guard chief
+	mv_fight_mis_02_end		[I am very satisfied, you have done a good job! If <**$kitin.pda$ $kitin.p$**> multiply and threaten our <**villages**>,
+					you will be among those who can be called upon! May your <**blades**> be forever as keen as your <**hearts**>! ]
+
+}
+
+//reward actions fight & magic + fame Matis
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//KNOWLEDGE MISSION
+/*
+MV_KNOWLEDGE_MIS_03
+*/
+MV_KNOWLEDGE_MIS_03_TITLE (bot giver)
+{
+	mv_knowledge_mis_03_title	[The Story of Angeli]
+
+}
+
+MV_KNOWLEDGE_MIS_03_DESC (bot giver, race kitin)
+{
+	mv_knowledge_mis_03_desc	[<**Vous allez découvrir l'histoire d'Angeli, le premier Matis qui a posé les yeux sur $kitin.ia$ $kitin$.**>]
+
+}
+
+MV_KNOWLEDGE_MIS_03_STEP_1 (race kitin, bot target)
+{
+//Sage
+	mv_knowledge_mis_03_step_1	[Do you want to hear the story of Angeli di Fabrini, the first Matis to have seen <**$kitin.pda$ $kitin$ ?
+					Va trouver $target$. Il l'a fort bien connu, et il te parlera de lui.
+					Mais tu devras te montrer patient et serviable avec lui, car ses souvenirs lui échappent parfois...**>]
+
+}
+
+MV_KNOWLEDGE_MIS_03_STEP_2 (race kitin, item mcpcfbsis01, player p)
+{
+//Old man
+	mv_knowledge_mis_03_step_2		[Well, young $p$, so you would like to find out about the strife and feats of your elders? It is indeed a
+						credit to you.\n
+	 					Would you believe that the first Matis ever to set eyes on $kitin.ia$ $kitin$ lived to tell the tale?{break}\n
+	 					His name was Angeli di Fabrini, of noble stock, second son of a high ranking officer who, having but a small
+						fortune, placed him with the clergy. At fifteen, after the festivities of the three kings that announce the
+						coming of colder days, the young seminarian was sent to the northern front on his first mission to reinstate
+						the word of Jena in the hearts of Fyros villagers residing in the outer limits of the desert who had been
+						victim to the advancement of heresy. Indeed, the song of pagan chants was in danger of resounding in our
+						lands. After the long and gruelling ride to the Matis outpost and a well earned rest, the seminarian was
+						eager to make his first tracks in the desert.\n
+	 					My bones are old, and my memory sometimes escapes me. Be so kind as to fetch $mcpcfbsis01.ia$ $mcpcfbsis01$ for
+						me, <**leur dureté**> will no doubt remind me of the spines of the desert, and with it the adventures of Angeli di Fabrini.]
+
+}
+
+MV_KNOWLEDGE_MIS_03_STEP_3 (player p, bot target, place place_davae)
+{
+//Old man
+	mv_knowledge_mis_03_step_3		[<**Les épines des cactus du désert sont plus dures que cette tige...**> Ah, now I remember the story.{break}\n
+	 					Angeli rode over the hot desert dunes clad in the attire of his station, to which, despite the general
+						agnostic feeling, no Fyros would manifest untoward feeling. At the first Fyros village the young Matis was
+						listened to with polite indifference and entertained by the a minor dignitary who offered him a bed till
+						the imminent storm passed over. But the mayor, not for a second imaging that the young Matis apprentice
+						seminarian could feel any affection other than brotherly love, introduced him to his daughter, Julea.\n
+						Ah, those pretty Fyros. I had a chat with a member of this people a few weeks ago. I forget what we spoke
+						about now... Ah yes, he was looking for seeds of a certaine plants, and as I know some people who work in
+						the gardens, I managed to get hold of some for him. but I'm afraid I forget to send them to him. Blast my
+						blithering memory! It's so annoying. $p$, would you mind doing me a favot? It's difficult to get about at
+						my age... I would like you to take the seeds to $target$, in the village of $place_davae$. On your return
+						I promise I shall continue with my little story.]
+
+}
+
+MV_KNOWLEDGE_MIS_03_STEP_4 ()
+{
+//Fyros
+	mv_knowledge_mis_03_step_4		[<**Ainsi, c'est ce vieil homme qui t'envoie. J'ai cru qu'il m'avait oublié ! Il semble avoir vécu beaucoup
+						de choses pour un Matis, et tous ses souvenirs ont l'air d'embrumer son esprit...{break} Merci à toi de m'avoir
+						apporté ces graînes. Tu remercieras le vieil homme de ma part. Bon retour !**>]
+
+}
+
+MV_KNOWLEDGE_MIS_03_CUSTOM_TALKMENU_1 (bot current, bot previous)
+{
+//On retourne voir le vieil homme après avoir donné les graînes
+	mv_knowledge_mis_03_custom_talkmenu_1		[<**J'ai donné les graînes à $previous$.**>]
+
+}
+
+MV_KNOWLEDGE_MIS_03_STEP_5 (item mdobfbref01, player p)
+{
+//Old man
+	mv_knowledge_mis_03_step_5		[You've done me a real favor, $p$. These days I rarely leave the city... though it hasn't always been
+						so. Anyway, where was I? ah yes.{break}\n
+	 					A strange sensation stabbed Angeli full in the heart as he followed the daughter's argument against the
+						existence of the dragon and even of Jena. Spellbound by Julea's beauty and assurance, Angeli could only
+						stammer his learning and more often than not found himself acquiescing to legitimatize her questions. As
+						for the young Fyros girl, she was at first intrigued then charmed by the boy's natural refined manner and
+						before long love's spell kindled in both their hearts.\n
+						It was on the third evening, sitting out on the silent dunes, that their bare arms first, then their lips
+						touched as natural as the wind caresses the trees or rolls over the desert dunes.\n
+						The perfume of Julea was divine, the slightest whiff of which was enough to send the young Matis to dizzy
+						heights. It was as sweet as the fragrance of <**pollen**>... Bring me a little $mdobfbref01$ from our forest,
+						would you? to help jog my memory...]
+
+}
+
+MV_KNOWLEDGE_MIS_03_STEP_6 ()
+{
+//Old man
+	mv_knowledge_mis_03_step_6		[Mmm, its perfume is so sweet, but the rest of my story will be more bitter.{break}\n
+						The following morning gave no time for embarrassing glances or fumbling words or even a simple gaze
+						of reassurance, for news came of a terrible invasion of monsters and the village chief ordered the
+						immediate evacuation of the village. Not knowing then what was awaiting them, the fighting men sadly
+						rode on to join the capital leaving the elders, women and children to travel further east lest Matis
+						launched an assault in the absence of male protection.\n Angeli was left to rejoin his own people,
+						though he stayed long enough to exchange lockets with Julea, each locket enclosing a lock of hair.
+						And so they parted forever but the novice's adventures were not over by a long chalk.\n
+						It is a terrible thing to abandon all ones possessions especially when the enemy is close on the prowl.
+						I am never thoroughly assured of the safety of our love ones, even here, in our <**city**>.
+						Would you go and check with the <**guard chief**> that everything is well? I thought I heard a screeching.]
+
+}
+
+MV_KNOWLEDGE_MIS_03_STEP_7 (player p)
+{
+//Guard chief
+	mv_knowledge_mis_03_step_7		[I know the old man, he is sometimes haunted by his memories, no doubt he has seen too much.
+						Reassure him, $p$. No one is in danger here. I stand watch with my men.]
+
+}
+
+MV_KNOWLEDGE_MIS_03_CUSTOM_TALKMENU_2 (bot current, bot previous)
+{
+//On retourne voir le vieil homme après avoir vu le chef des gardes
+	mv_knowledge_mis_03_custom_talkmenu_2		[<**J'ai parlé à $previous$, tout va bien.**>]
+
+}
+
+MV_KNOWLEDGE_MIS_03_STEP_8 (race mektoub, race kitin, creature_model ckhfb3)
+{
+//Old man
+	mv_knowledge_mis_03_step_8		[Thank you, I am reassured. Now, where was I? Ah, yes...{break}\n
+						On his way back to the forest lands Angeli was caught in a desert storm and stopped to shelter
+						behind his <**$mektoub$**> packer by an oasis when, hardly fifty yards behind him, he beheld an awful
+						dark mass that stretched tree hundred yards wide and trailed a long way into the distance.
+						The seminarian had set his eyes upon an army of <**$kitin$**> soldiers advancing at a furious speed. It was
+						futile to run, he sat with his prayer book savoring his lost love rememorizing the precious moments as the
+						whole <**$kitin$**> army marched straight past him not thirty yards from where he was praying. But then a number
+						of the creatures broke off from the pack and came to water at the oasis!\n
+						<**$kitin.p$**>, wretched creatures ! There is no good in them, they are a threat to all the peoples of Atys.
+						Just the thought of their prowling round here makes my blood boil. Have you ever fought one of these
+						creatures? It is a trying but necessary experience, to learn to come to terms with ones fear.
+						I want you to kill <**$ckhfb3.ia$ $ckhfb3$**> for me. I will finish my story when you come back victorious.]
+
+}
+
+MV_KNOWLEDGE_MIS_03_END (race mektoub, race kitin)
+{
+//Old man
+	mv_knowledge_mis_03_end		[You have been brave, may every young Matis follow your example. Here is the end of the story
+					of Angeli di Fabrini.{break}\n<**$mektoub.da$ $mektoub$**> was well broken in and under the seminary's firm hold did not jolt.
+					Angeli sat still and studied <**$kitin.pda$ $kitin.p$**> watering barely fifteen feet from his tree. As soon as the dreadful
+					legions had passed he was able to make it back to his outpost to give the alert. The only 'rational' explanation
+					as to why <**$kitin.pda$ $kitin.p$**> had left him 'unattended' was that they were quite simply not yet used to the Matis smell!
+					But what became of the young seminarian?\n No, he never married, his heart remained faithful to Jena thereon.
+					And, thanks to Jena, you are looking at him now, dear young homin. Yes, and between you and me, I still hold
+					the locket close to my heart.]
+
+}
+//reward 1 action knowledge + fame Matis
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//FIGHT MISSION
+/*
+MV_FIGHT_MIS_04
+*/
+MV_FIGHT_MIS_04_TITLE (bot giver)
+{
+	mv_fight_mis_04_title			[The Botanist experiment]
+
+}
+
+MV_FIGHT_MIS_04_DESC (bot giver)
+{
+	mv_fight_mis_04_desc			[Vous devez aider un botaniste à mener à bien l'une de ses expériences, en lui fournissant les ingrédients
+						qu'il recherche.]
+
+}
+
+MV_FIGHT_MIS_04_STEP_1 (player p, bot target)
+{
+//Councillor
+	mv_fight_mis_04_step_1			[Bienvenue à toi, $p$. Ainsi, tu cherches du travail ? L'un de nos plus éminents botanistes a justement
+						besoin d'une personne d'expérience, rompue aux voyages dans les régions éloignées de notre pays.{break}
+						Il se nomme $target$, tu le trouveras près de la greenhouse.]
+
+}
+
+MV_FIGHT_MIS_04_STEP_2 (bot previous, player p, bot target)
+{
+//Botaniste
+	mv_fight_mis_04_step_2			[Peut-être que le pollen jaune imbibé d'huile pourrait accélérer la floraison, qu'en penses-tu ?
+						À moins que des spores de champignons ne soient plus... un instant ! Je ne crois pas te connaître.
+						Comment, c'est $previous$ qui t'envoie ?{break} Eh bien, tu me sembles tout à fait capable. Vois-tu,
+						j'arrive bientôt au terme d'une expérience capitale. J'essaie de créer une variété de plante disons...
+						particulière, et j'ai pour cela désespérément besoin de quelques matières vivantes provenant d'autres
+						végétaux, afin de faire des croisements. Le problème est que les plantes qui m'intéressent ne se laissent
+						généralement pas dépouiller de leurs attraits... et ne poussent pas près de notre belle cité.\n
+						Il me faut donc quelqu'un qui n'ait pas peur de se battre, et qui connaît les régions lointaines.
+						Tu es intéressé, $p$ ? Excellent ! Mon apprenti $target$ te donnera tous les détails. Je l'ai envoyé faire
+						une course pour moi, il ne doit pas être bien loin !]
+
+}
+
+MV_FIGHT_MIS_04_STEP_3 (race spitting_weeds, race phytopsy, race cephaloplant)
+{
+//Apprenti du botaniste
+	mv_fight_mis_04_step_3			[Oh, vous travaillez pour mon maître ? Je... je faisais juste une petite pause près de la taverne,
+						je vais rentrer à présent... Ah, c'est vous qui êtes chargé de ramener à mon maître ce dont il a besoin ?{break}
+						Je suis soulagé, j'ai bien cru qu'il allait m'envoyer lui chercher ces choses au fin fond de la jungle !
+						Je ne suis pas un bien grand voyageur... Mais je vous fais perdre votre temps.\n
+						Vous devez rapporter divers morceaux de $spitting_weeds$, de $phytopsy$ et de $cephaloplant$. D'après le peu que je sais,
+						ces plantes impressionnantes pousseraient dans la jungle du nord... mais vous connaissez sûrement ces régions
+						mieux que moi. Bonne chance !]
+
+}
+
+MV_FIGHT_MIS_04_GIVE_ITEM_MENU (int item_count)
+{
+//Menu pour donner les mps au botaniste
+	mv_fight_mis_04_give_item_menu 		[Give the plants materials]
+
+}
+
+MV_FIGHT_MIS_04_STEP_4 (bot previous, race phytopsy, place region_fleetinggarden, place region_upperbog)
+{
+//Botaniste
+	mv_fight_mis_04_step_4			[Enfin, te voici de retour ! Louée soit la sainte florescence ! Merci pour tout ceci, je vais pouvoir
+						commencer les greffes... mais je vais encore avoir besoin de tes services.{break}
+						J'ai en effet un grave problème : $previous$, mon apprenti, a disparu !\n
+						Après ton départ, je l'ai envoyé vers le sud pour accomplir une mission de la plus haute importance : trouver de l'eau.
+						Et il n'est pas revenu ! J'aurais dû m'en douter, il ne s'est jamais éloigné
+						de la ville. Ah, je te vois hausser les sourcils... mais il ne s'agit pas de n'importe quelle eau : il s'agit
+						d'eau kamique ! Un précieux liquide qui, avec quelques traitements de ma part, va accélérer la croissance
+						de ma plante.\n
+						J'ai donc besoin que tu ailles me chercher un peu de cette eau... et que tu retrouves mon apprenti. Il n'est pas
+						toujours très efficace, mais avec beaucoup de travail, j'arriverai peut-être à faire quelque chose de lui.
+						Qui sait, en lui greffant quelques fibres de $phytopsy$... mais je m'égare.\n
+						Prends la direction du sud. Près de la frontière entre $region_fleetinggarden$ et $region_upperbog$ se trouve une crevasse,
+						au fond de laquelle scintille l'eau qu'il me faut. Prends cette fiole, elle contient un liquide de ma composition.
+						Ajoutes-y un peu d'eau kamique, et rapporte-moi le mélange obtenu.]
+
+}
+
+MV_FIGHT_MIS_04_CUSTOM_OBJ_1 (place p)
+{
+//Texte d'objectif
+	mv_fight_mis_04_custom_obj_1 		[Find the kami pool]
+
+}
+
+MV_FIGHT_MIS_04_SYSTEM_MSG_1 ()
+{
+//Systeme_msg pour spawn du Kami
+	mv_fight_mis_04_system_msg_1 		[Vous prenez la fiole et vous commencez à y ajouter de l'eau... vous entendez alors un rire. Soudain la fiole disparaît
+						comme par enchantement ! Vous sentez les yeux d'un Kami posés sur vous.]
+
+}
+
+MV_FIGHT_MIS_04_TALKMENU_1 (bot current)
+{
+//Menu pour parler au Kami
+	mv_fight_mis_04_talkmenu_1 		[Talk to the Kami about the pool]
+
+}
+
+MV_FIGHT_MIS_04_STEP_5 (bot target)
+{
+//Kami
+	mv_fight_mis_04_step_5			[Bouteille pour moi ! Voleur, voleur ! Toi voler eau des Kamis ! Pour prendre, toi devoir donner...{break}
+						Moi vouloir retrouver frère à moi. <**Frère manque beaucoup à moi, avec lui moi toujours beau !**> Frère volé par méchant
+						magicien $target$ ! Si toi le retrouver, moi donner eau kami à toi. Et te dire ou être autre voleur matis.
+						Lui grand nigaud ! Moi savoir que toi le chercher... Toi dois aller vers marais, magicien $target$ là-bas.
+						Moi attendre ici !]
+
+}
+
+MV_FIGHT_MIS_04_INTRO_FIGHT_MAGICIAN()
+{
+//Magician : dialogue entrée en combat
+	mv_fight_mis_04_intro_fight_magician		[Que vois-je... un futur cadavre à dépouiller !]
+
+}
+
+MV_FIGHT_MIS_04_DEATH_MAGICIAN()
+{
+//Magician : dialogue de mort
+	mv_fight_mis_04_death_magician		[Aaaah... sois maudit ! les Slash and burn me vengeront !]
+
+}
+
+MV_FIGHT_MIS_04_CUSTOM_OBJ_2 (bot target)
+{
+//Texte d'objectif
+	mv_fight_mis_04_custom_obj_2 		[Find the kami brother]
+
+}
+
+MV_FIGHT_MIS_04_LOOT_MIRROR()
+{
+//Loot message
+	mv_fight_mis_04_loot_mirror		[<**Vous fouillez le corps du magicien, et vous trouvez un miroir... le frère du Kami !**>]
+
+}
+
+MV_FIGHT_MIS_04_STEP_6 ()
+{
+//Kami
+	mv_fight_mis_04_step_6			[Frère à moi de retour ! <**Regarde, lui content, car moi content !**> Moi tenir parole et te donner bouteille avec eau kami.
+						Toi trouver matis nigaud près d'arène. Moi perdre lui avec magie... maintenant toi partir.
+						<**Frère aider moi à être beau !**>]
+
+}
+
+MV_FIGHT_MIS_04_CUSTOM_OBJ_3 (bot giver, bot target)
+{
+//Texte d'objectif
+	mv_fight_mis_04_custom_obj_3 		[Find and talk to $target$]
+
+}
+
+MV_FIGHT_MIS_04_TALKMENU_2 (bot current)
+{
+//Menu pour parler à l'apprenti
+	mv_fight_mis_04_talkmenu_2 		[Alors, tu es perdu ?]
+
+}
+
+MV_FIGHT_MIS_04_STEP_7 (place place_yrkanis)
+{
+//Apprenti du botaniste
+	mv_fight_mis_04_step_7			[Louée soit Jena, vous m'avez trouvé ! Je craignais être perdu à jamais, et me changer en vieille
+						souche recouverte de mousse ! J'ai fait une terrible rencontre : un Kami a menacé de faire pousser des
+						champignons sur ma pauvre tête !{break} J'ai l'impression d'avoir tourné en rond... Le maître ne va pas être
+						content, j'ai échoué dans ma mission... Comment, vous avez trouvé de l'eau kamique ? Magnifique !\n
+						Il ne nous reste plus qu'à rentrer à $place_yrkanis$... Dans quelle direction, dites-vous ?
+						Bien sûr, par là ! Eh bien, je n'étais pas si loin après tout !]
+
+}
+
+MV_FIGHT_MIS_04_CUSTOM_OBJ_5 (bot apprentice, place place_yrkanis)
+{
+//Apprenti du botaniste
+	mv_fight_mis_04_custom_obj_5		[Escorter $apprentice$ jusqu'à $place_yrkanis$.]
+}
+
+MV_FIGHT_MIS_04_TALKMENU_3 (bot current)
+{
+//Menu pour parler au botaniste
+	mv_fight_mis_04_talkmenu_3 		[Nous voilà de retour.]
+
+}
+
+MV_FIGHT_MIS_04_STEP_8 (player p, bot previous)
+{
+//Botaniste
+	mv_fight_mis_04_step_8			[Vous voilà ! Magnifique, $p$, tu as retrouvé mon apprenti ! $previous$, il va falloir que je songe à
+						t'inculquer des notions de géographie ! Un savant mélange d'écorces infusées pourrait développer ta mémoire...
+						Hm ! Au fait ! Tu as trouvé de l'eau kamique, $p$ ?]
+
+}
+
+MV_FIGHT_MIS_04_STEP_9 (player p, bot target)
+{
+//Botaniste
+	mv_fight_mis_04_step_9			[Que Jena soit bénie ! Je vais sur-le-champ essayer ce mélange sur ma création ! Suis-moi, $p$,
+						tu as mérité d'être le témoin de ce moment crucial !{break} Quant à toi, $target$, je te donne quartier libre,
+						tu peux faire ce que tu veux, comme te promener près de la taverne, comme tu aimes à le faire !]
+
+}
+
+MV_FIGHT_MIS_04_CUSTOM_OBJ_4 (bot botanist)
+{
+//Botaniste
+	mv_fight_mis_04_custom_obj_4			[Suivre $botanist$ jusqu'au lieu de l'expérience.]
+
+}
+
+MV_FIGHT_MIS_04_STEP_10 ()
+{
+//Botaniste
+	mv_fight_mis_04_step_10			[Nous y voilà ! C'est ici que j'ai installé ma petite merveille ! Le terreau est particulièrement
+						riche en éléments nutritifs de haute qualité, et le taux de parasites est... hmm, je t'en parlerai
+						une autre fois.{break} Dis-moi quand tu seras prêt, à ton signal, je verse le mélange, et
+						nous entrerons dans l'histoire de la botanique !]
+
+}
+
+MV_FIGHT_MIS_04_TALKMENU_4 (bot current)
+{
+//Menu pour parler au botaniste
+	mv_fight_mis_04_talkmenu_4 		[Je suis prêt !]
+
+}
+
+MV_FIGHT_MIS_04_SYSTEM_MSG_2 ()
+{
+//Systeme_msg pour spawn de la plante géante
+	mv_fight_mis_04_system_msg_2 		[Le botaniste vide le contenu de la fiole... Un craquement inquiétant se fait entendre.
+						Une plante géante semble apparaître de nulle part !]
+
+}
+
+MV_FIGHT_MIS_04_SPAWN_PLANT (player p)
+{
+//Botaniste : dialogue quand la plante apparaît
+	mv_fight_mis_04_spawn_plant		[Houla ! Une telle croissance n'était pas prévue... Aaaah ! Elle tente de prendre le contrôle de mon esprit !
+						Tue-la, $p$ ! Aaah... J'ai l'impression que mon crâne va exploser...]
+
+}
+
+MV_FIGHT_MIS_04_MSG_DEATH_PLANT(bot target)
+{
+//Message à la mort de la plante
+	mv_fight_mis_04_msg_death_plant		[$target$ semble reprendre lentement ses esprits...Il vous regarde, l'air incrédule.]
+
+}
+
+MV_FIGHT_MIS_04_TALKMENU_5 (bot current)
+{
+//Menu pour parler au botaniste
+	mv_fight_mis_04_talkmenu_5 		[Vous allez bien ?]
+
+}
+
+MV_FIGHT_MIS_04_STEP_11 (player p, bot target)
+{
+//Botaniste
+	mv_fight_mis_04_step_11			[Huuu... Qu'est-il arrivé ? Ma plante !.. Elle a tenté de... Heureusement que tu étais là, $p$ !
+						Je ne comprends pas ce qui s'est passé... le mélange ne devait pas avoir cet effet.{break}\n
+						Grand merci pour toute l'aide que tu m'as apportée, $p$. Tu as été d'un grand secours !
+						Prends cette lettre de crédit, et donne-la à $target$. Il saura te récompenser.\n
+						Pour ma part, je vais étudier les restes de ma création pour essayer d'en savoir plus. Il ne sera pas dit
+						qu'un Matis baisse les bras devant la nature rebelle et l'inconnu !]
+
+}
+
+MV_FIGHT_MIS_04_MSG_KAMI_LAUGH()
+{
+//Message après le dialogue du botaniste
+	mv_fight_mis_04_msg_kami_laugh		[Vous croyez entendre un rire étouffé porté par le vent... mais ce n'est peut-être que le bruissement des feuilles.]
+
+}
+
+MV_FIGHT_MIS_04_END (bot previous)
+{
+//Councillor
+	mv_fight_mis_04_end			[Eh bien , il semblerait d'après cette lettre que tu aies mené ta mission à bien, et de façon brillante !
+						Tu as mérité une récompense digne de ta valeur... Grâce à ses recherches, $previous$ a permis à nos artisans
+						de créer des objets uniques. Tu peux choisir ce que tu désires.]
+
+}
+
+MV_FIGHT_MIS_04_MENU_REWARD_1 (item icmm1ss)
+{
+//Dialogue de choix de reward
+	mv_fight_mis_04_menu_reward_1		[Je voudrais $icmm1ss.ia$ $icmm1ss$.]
+
+}
+
+MV_FIGHT_MIS_04_MENU_REWARD_2 (item icmr1b)
+{
+//Dialogue de choix de reward
+	mv_fight_mis_04_menu_reward_2		[Je voudrais $icmr1b.ia$ $icmr1b$.]
+
+}
+
+MV_FIGHT_MIS_04_MENU_REWARD_3 (item icmalv)
+{
+//Dialogue de choix de reward
+	mv_fight_mis_04_menu_reward_3		[Je voudrais $icmalv.ia$ $icmalv$.]
+
+}
+
+MV_FIGHT_MIS_04_REWARD_1 ()
+{
+//Nom de l'item reward
+	mv_fight_mis_04_reward_1		[Green Sword of Stunning]
+
+}
+
+MV_FIGHT_MIS_04_REWARD_2 ()
+{
+//Nom de l'item reward
+	mv_fight_mis_04_reward_2		[Green Chains Bowpistol]
+
+}
+
+MV_FIGHT_MIS_04_REWARD_3 ()
+{
+//Nom de l'item reward
+	mv_fight_mis_04_reward_3		[Vest of Green Forgetting]
+
+}
+
+//reward 3 items au choix + fame Matis
+
+/*
+MV_CRAFT_MIS_1
+*/
+
+MV_CRAFT_MIS_1_TITLE (bot giver, item dagger, int ql)
+{
+	mv_craft_mis_1_titre	[Craft <**$dagger.ia$**>  quality <**$ql$ $dagger$**>.]
+
+}
+
+MV_CRAFT_MIS_1_DESC(bot giver, item dagger)
+{
+	mv_craft_mis1_desc		[Follow the indications of $giver$ to craft the special $dagger$ that the guard chief has ordered,
+							and be careful to respect the delay.]
+}
+
+MV_CRAFT_MIS_1_STEP_1 (bot guardchief, item rm1, item rm2, place avalae, player p)
+{
+	mv_craft_mis_1_step_1	[Greetings $p$, I just received a special order from <**$guardchief$**>, our guard chief,
+							and I would appreciate a little help.\n\n{break}
+							He needs a new high quality dagger of pageantry as soon as possible, and none of my usual suppliers
+							can deliver one in time. I would pay well if someone could craft one for me.\n
+							You would have to gather the proper raw materials, the first two are <**$rm1$**> and <**$rm2$**> of good quality.\n
+							They can be easily found in the soil of <**$avalae$**>. Come back to me when you have some.]
+}
+
+MV_CRAFT_MIS_1_STEP_2 (creature_model kipee, item rm)
+{
+	mv_craft_mis_1_step_2	[Mmh, let me see... Yes, this is the right quality, great !\n{break}
+							Now we can move on to the next part, you need some <**$rm$**> of the same quality, but this time youll have
+							to kill a <**$kipee$**> to quarter some out of it. Again, be careful, I need this dagger quickly so I dont want you to die...]
+
+}
+
+
+MV_CRAFT_MIS_1_STEP_3 (item rm1, item rm2, int ql, place davae)
+{
+	mv_craft_mis_1_step3 	[Ah, you're alive ! Was it difficult ? Did you get the <**$rm1$**> ? Fantastic !\n{break}
+							Now go find the last material we need : quality <**$ql$ $rm2$**> which is really hard to find around here.
+							Luckily, I know a very small spot where you can forage, just go west from <**$davae$ weaponshop**> until you reach the big cliff,
+							then turn south, run for a while, and look for an ark shaped root just on the top of the cliff.\n\n
+							Forage under this ark and come back quick with some <**$rm2$**>.]
+
+}
+
+MV_CRAFT_MIS_1_STEP_4 (bot target, int ql, place arena)
+{
+	mv_craft_mis_1_step4	[You found it, excellent ! Finally I will certainly be able to deliver this dagger in time !\n
+							You only need one last thing : the crafting plan for the dagger.\n\n{break}
+							The only man I know who can give you one is an old friend of mine who owes me a favor. His name is $target$,
+							you can find him foraging around <**$arena.da$ $arena$**>, the big structure situated approximatively
+							<**500 metres west**> from here.\n
+							When you have the dagger, give it back to me and you will be paid. But remember, I won't pay you if the dagger
+							is not a quality $ql$ one<**, neither will I if you don't come back in time**> !]
+
+}
+
+MV_CRAFT_MIS_1_STEP_5 (bot giver, item rm, int qt)
+{
+	mv_craft_mis_1_step5 	[You are working for $giver$ ? Hum, it's true I owe him a favor, but a dagger plan is not a small gift.
+							I will give it to you only if you help me gather at least <**$qt$ $rm$**>, my back is really aching and I
+							would appreciate some help. You can find some by foraging around here, that's what I came for.]
+}
+
+MV_CRAFT_MIS_1_STEP_6 (bot giver, player p)
+{
+	mv_craft_mis_1_step6	[Thank you, $p$, my knees are really too old for this toil and I sure should think about changing my job.
+							The plan ? Yes, you can have it. And say hello to $giver$ for me when you see him !]
+}
+
+MV_CRAFT_MIS_1_END (bot guardchief)
+{
+	mv_craft_mis_1_end		[Holy Jena ! This dagger is really splendid ! <**$guardchief$**> will be very pleased !\n Here, take these<**>,
+							you really deserve them. And come back from time to time, I may have some other orders for you as your
+							skills can be relied on !]
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//GROUP FIGHT MISSION
+/*
+MV_FIGHT_MIS_05
+*/
+MV_FIGHT_MIS_05_TITLE (bot giver)
+{
+	mv_fight_mis_05_title			[A Priceless treasure]
+
+}
+
+MV_FIGHT_MIS_05_DESC (bot giver)
+{
+	mv_fight_mis_05_desc			[Le groupe doit retrouver un jeune Matis, parti à la recherche d'un trésor.]
+
+}
+
+MV_FIGHT_MIS_05_STEP_1 (bot juliette)
+{
+//Counselor
+	mv_fight_mis_05_step_1			[J'ai une mission de confiance pour vous. Ma nièce $juliette$ est désespérée, et j'aimerai pouvoir l'aider.{break}
+						Elle veut retrouver l'homme qu'elle aime. Allez la voir, elle vous en dira davantage. Je saurai me montrer
+						généreux si vous vous montrez à la hauteur de ses espérances.]
+
+}
+
+MV_FIGHT_MIS_05_STEP_2 (bot_name romeo, bot_name rodrigo, bot_name marco, bot target)
+{
+//Nièce du counselor
+	mv_fight_mis_05_step_2			[Je suis gré à mon oncle de se soucier de mon malheur... $romeo$ a disparu !{break} Il est parti depuis plusieurs
+						semaines. Il veut m'épouser, mais mon père n'est pas d'accord. Il préfère que je me marie avec $rodrigo$, le fils d'une riche
+						famille... Afin de convaincre mon père et de prouver sa valeur, $romeo$ s'est mis en tête de lui apporter un
+						trésor inestimable. Il est parti avec son ami $marco$ pour des terres étranges et obscures, à la recherche
+						de ce trésor... quelle folie ! Je vous en prie, aidez-moi, et retrouvez $romeo$ !\n
+						Prenez cette bague, $romeo$ me l'a offerte en gage de son amour. Ainsi il saura que c'est moi qui vous
+						envoie... Ramenez l'homme que j'aime, je vous en supplie. Il est le seul trésor  qui compte à mes yeux...\n
+						$romeo$ s'est beaucoup entretenu avec le vieux $target$ avant son départ. Peut-être devriez-vous aller le voir...]
+
+}
+
+MV_FIGHT_MIS_05_SPAWN_PRETENDANT_1 (bot juliette)
+{
+//Prétendant : dialogue quand il arrive près de la nièce du counselor
+	mv_fight_mis_05_spawn_pretendant_1	[Alors, $juliette$, comment vous portez-vous ? Je me fais du souci pour vous... Oh, mais vous avez l'air occupée.
+						J'espère profiter de votre merveilleuse compagnie lorsque vous aurez un peu de temps.]
+
+}
+
+MV_FIGHT_MIS_05_STEP_3 ()
+{
+//Vieux vendeur de cartes
+	mv_fight_mis_05_step_3			[Au secours , ils en ont après moi ! Aidez-moi !]
+
+}
+
+MV_FIGHT_MIS_05_TALKMENU_1 (bot current)
+{
+//Menu pour parler au vieux vendeur de cartes
+	mv_fight_mis_05_talkmenu_1 		[Vous êtes sauf.]
+
+}
+
+MV_FIGHT_MIS_05_CUSTOM_OBJ_0 (bot old_man)
+{
+	mv_fight_mis_05_custom_obj_0 		[Protect $old_man$ by killing the robbers.]
+
+}
+
+MV_FIGHT_MIS_05_STEP_4 (bot juliette, bot_name romeo)
+{
+//Vieux vendeur de cartes
+	mv_fight_mis_05_step_4 			[Merci, merci ! Ainsi, la petite $juliette$ vous a engagé pour retrouver $romeo$ ! J'ai vendu à ce garçon
+						une ancienne carte tryker, qui indiquait le chemin vers une rivière de sève d'une pureté incroyable.{break}
+						Je crois qu'il espérait trouver des cristaux de sève en guise de trésor à sa bien aimée $juliette$...
+						Ah, les illusions de la jeunesse ! Si je me souviens bien, cette rivière se trouverait dans les profondeurs
+						d'Atys.]
+
+}
+
+MV_FIGHT_MIS_05_CUSTOM_OBJ_1 (place p, bot_name romeo)
+{
+//Texte d'objectif
+	mv_fight_mis_05_custom_obj_1 		[Trouver la rivière de sève, et chercher des traces de $romeo$]
+
+}
+
+MV_FIGHT_MIS_05_TRYKER ()
+{
+//Tryker chercheur de cristaux de sève
+	mv_fight_mis_05_tryker			[Hey, qu'est-ce que vous faites là ? Cette rivière m'appartient, j'ai ici un certificat de propriété en bonne et due forme !{break}
+						Allez chercher des cristaux ailleurs, et ne pataugez pas dans la sève ! Mauvaise troupe !]
+
+}
+
+MV_FIGHT_MIS_05_TALKMENU_2 (bot current, bot_name romeo)
+{
+//Menu pour parler au Tryker et au hunter
+	mv_fight_mis_05_talkmenu_2 		[Connaissez-vous $romeo$ ?]
+
+}
+
+MV_FIGHT_MIS_05_STEP_5 (bot_name romeo, bot_name marco, item mcccpeshs01, race hachtaha)
+{
+//Tryker chercheur de cristaux de sève
+	mv_fight_mis_05_step_5			[$romeo$ ? Ah, yes I remember him, and his companion $marco$ ! They had a map showing a way to my river !{break}
+						Jena only knows where they got it... but I offered them something more interesting, so I could get it back.
+						Honest blokes, really. What? Can you say as much? You wanna know what I offered them, eh?  Huh ! Curiosity
+						has a price... <**En prospectant ici, j'ai découvert que $mcccpeshs01.pda$ $mcccpeshs01.p$ étaient très utiles
+						pour fabriquer des outils permettant de manipuler la sève.**> Hunt down some $hachtaha.p$ for me, and I'll tell
+						more about $romeo$ !]
+
+}
+
+MV_FIGHT_MIS_05_GIVEMENU_1 (int item_count)
+{
+//Menu pour donner les raw materials au Tryker
+	mv_fight_mis_05_givemenu_1 		[Give the raw materials.]
+
+}
+
+MV_FIGHT_MIS_05_STEP_6 (race hachtaha, bot_name romeo, bot_name marco, place continent_nexus)
+{
+//Tryker chercheur de cristaux de sève
+	mv_fight_mis_05_step_6			[Bien, je n'aurai plus besoin de tuer des $hachtaha.p$ avant un bon moment ! C'est une bonne nouvelle,
+						ces fichues bestioles ont failli plusieurs fois avoir ma peau !{break} Mais reparlons de $romeo$ et de $marco$...
+						En échange de leur carte, je leur en ai donné une autre ! Un précieux document indiquant la position de
+						ruines Fyros... nul doute que de fabuleux trésors sont enfouis là-bas, pas vrai ? En tout cas, ils le
+						pensaient tous les deux. Je leur ai souhaité bonne chance, et ils sont partis pour $continent_nexus.da$ $continent_nexus$. C'est tout
+						ce que je sais !]
+
+}
+
+MV_FIGHT_MIS_05_CUSTOM_OBJ_2 (place continent_nexus, bot_name romeo)
+{
+//Texte d'objectif
+	mv_fight_mis_05_custom_obj_2 		[Aller au $continent_nexus$, et chercher des traces de $romeo$]
+
+}
+
+MV_FIGHT_MIS_05_STEP_7 ()
+{
+//Hunter
+	mv_fight_mis_05_step_7			[Non. Je devrais ? Que lui voulez-vous ?]
+
+}
+
+MV_FIGHT_MIS_05_CUSTOM_OBJ_3 (item i1, int q1, bot juliette, bot target)
+{
+//Texte d'objectif
+	mv_fight_mis_05_custom_obj_3 		[Montrer la bague de $juliette$ à $target$]
+
+}
+
+MV_FIGHT_MIS_05_GIVEMENU_2 (int item_count, bot juliette)
+{
+//Menu pour montrer la bague de juliette au hunter
+	mv_fight_mis_05_givemenu_2 		[$juliette$ nous envoie, voici sa bague.]
+
+}
+
+MV_FIGHT_MIS_05_STEP_8 ()
+{
+//Hunter
+	mv_fight_mis_05_step_8			[Hmm... dans ce cas, je pense que quelqu'un sera heureux de vous voir. Suivez-moi.]
+
+}
+
+MV_FIGHT_MIS_05_SPAWN_MARCO_1 ()
+{
+//Hunter : dialogue pour que Marco apparaisse
+	mv_fight_mis_05_spawn_marco_1	[Tu peux sortir, ils ont été engagés par la dame dont tu m'as parlé.]
+
+}
+
+MV_FIGHT_MIS_05_SPAWN_MARCO_2 (bot juliette)
+{
+//Marco
+	mv_fight_mis_05_spawn_marco_2			[$juliette$ vous envoie ? Vous avez une preuve de cela ?]
+
+}
+
+MV_FIGHT_MIS_05_GIVEMENU_3 (int item_count, bot juliette)
+{
+//Menu pour montrer la bague de juliette à Marco
+	mv_fight_mis_05_givemenu_3 		[Voici la bague de $juliette$.]
+
+}
+
+MV_FIGHT_MIS_05_STEP_9 (bot juliette, place continent_prime_roots_lands, bot_name romeo, bot_name julio, bot hunter)
+{
+//Marco
+	mv_fight_mis_05_step_9			[Enfin, je désespérais que $juliette$ envoie des gens de confiance à notre recherche !{break}
+						Alors que nous étions en route pour $continent_prime_roots_lands.da$ $continent_prime_roots_lands$, $romeo$ et moi
+						avons été attaqués par une bande de spadassins, menés par un certain $julio$. Les scélérats utilisaient
+						des armes empoisonnées, et m'ont laissé pour mort. Je n'ai eu la vie sauve que grâce à $hunter$, qui m'a
+						soigné durant plusieurs jours et a fini par venir à bout du poison. Je sens encore ses effets courir dans
+						mes veines... si j'étais en état, je partirais sur le champ pour les ruines fyros
+						dans $continent_prime_roots_lands.da$ $continent_prime_roots_lands$ ! Car je suis sûr que $romeo$ a réussi à échapper aux
+						spadassins... Vous devez le retrouver !]
+
+}
+
+MV_FIGHT_MIS_05_CUSTOM_OBJ_4 (place p, bot_name romeo)
+{
+//Texte d'objectif
+	mv_fight_mis_05_custom_obj_4 		[Trouver les ruines fyros, et chercher des traces de $romeo$]
+
+}
+
+MV_FIGHT_MIS_05_SYSTEM_MSG_1 ()
+{
+//Systeme_msg près des ruines fyros
+	mv_fight_mis_05_system_msg_1 		[Alors que vous approchez des ruines, vous entendez une voix forte résonner sous la voûte des primes racines.]
+
+}
+
+MV_FIGHT_MIS_05_DISCOURS_JULIO ()
+{
+//Julio
+	mv_fight_mis_05_discours_julio 		[... vous êtes des incapables ! Comment un homme seul parvient-il à nous échapper ? Il est tout prêt,
+						je le sens ! Il tient trop à trouver un prétendu trésor ici... Mais il se lassera avant moi de ce petit jeu.{break}
+						Et lorsque nous le débusquerons... je me ferai un plaisir de le tuer moi-même ! Notre commanditaire va devoir
+						se montrer patient...]
+
+}
+
+MV_FIGHT_MIS_05_CUSTOM_OBJ_5 (bot_name julio)
+{
+//Texte d'objectif
+	mv_fight_mis_05_custom_obj_5 		[Tuer $julio$ et ses hommes]
+
+}
+
+MV_FIGHT_MIS_05_INTRO_FIGHT_JULIO()
+{
+//Julio : dialogue entrée en combat
+	mv_fight_mis_05_intro_fight_julio	[Aux armes ! Nous sommes attaqués !]
+
+}
+
+MV_FIGHT_MIS_05_SYST_MESSAGE_LETTER(bot_name julio, bot_name romeo, bot rodrigo)
+{
+//Message à la mort de Julio et de ses hommes
+	mv_fight_mis_05_syst_message_letter		[Vous trouvez un document sur le corps de $julio$, ordonnant la mort de $romeo$... et signé de la
+							main de $rodrigo$]
+
+}
+
+MV_FIGHT_MIS_05_STEP_10 (bot_name julio, bot_name marco)
+{
+//Romeo
+	mv_fight_mis_05_step_10			[Merci à vous ! $julio$ et ses sbires ne me laissaient pas en paix... je me cachais non loin d'ici,
+						attendant le moment propice pour agir. Qui que vous soyez, merci encore de votre aide !{break} Mon ami $marco$ est vengé !]
+
+}
+
+MV_FIGHT_MIS_05_CUSTOM_OBJ_6 (item i1, int q1, bot juliette, bot romeo)
+{
+//Texte d'objectif
+	mv_fight_mis_05_custom_obj_6 		[Donner la bague de $juliette$ à $romeo$]
+
+}
+
+MV_FIGHT_MIS_05_GIVEMENU_4 (int item_count, bot juliette)
+{
+//Menu pour donner la bague de juliette à Romeo
+	mv_fight_mis_05_givemenu_4 		[C'est $juliette$ qui nous envoie. Et votre ami est vivant.]
+
+}
+
+MV_FIGHT_MIS_05_STEP_11 (bot juliette, bot_name marco, bot_name julio)
+{
+//Romeo
+	mv_fight_mis_05_step_11			[La bague de $juliette$ ! $marco$ vivant ? Voilà une merveilleuse nouvelle ! Ainsi, ma bien-aimée vous a
+						engagé pour me retrouver.{break} Comment va-t-elle ? Je vais pouvoir me mettre à la recherche du trésor
+						enfoui ici, afin de prouver à son père que je suis digne d'elle ! $julio$ était sans doute un chasseur
+						de trésors sans scrupules, qui ne voulait pas que je découvre quoi que ce soit ]
+
+}
+
+MV_FIGHT_MIS_05_CUSTOM_OBJ_7 (item i1, int q1, bot b, bot_name julio, bot romeo)
+{
+//Texte d'objectif
+	mv_fight_mis_05_custom_obj_7 		[Donner la lettre trouvée sur $julio$ à $romeo$]
+
+}
+
+MV_FIGHT_MIS_05_GIVEMENU_5 (int item_count)
+{
+//Menu pour donner la lettre à Romeo
+	mv_fight_mis_05_givemenu_5 		[Lisez cette lettre]
+
+}
+
+MV_FIGHT_MIS_05_STEP_12 (bot_name rodrigo, place place_yrkanis, bot juliette)
+{
+//Romeo
+	mv_fight_mis_05_step_12			[$rodrigo$, l'infâme crapule ! Il a osé... Je dois rentrer à $place_yrkanis$ au plus vite, $juliette$ est
+						en danger ! Qui sait ce que $rodrigo$ veut lui faire subir !{break} Louée soit Jena, je possède un pacte avec
+						la Karavan. Retrouvez-moi aux abords de la ville.]
+
+}
+
+MV_FIGHT_MIS_05_SYST_MESSAGE_TELEPORT (bot romeo)
+{
+//Message quand Romeo se téléporte
+	mv_fight_mis_05_syst_message_teleport		[L'énergie de la karavan se rassemble autour de $romeo$... qui disparaît.]
+
+}
+
+MV_FIGHT_MIS_05_CUSTOM_OBJ_8 (bot b, bot_name romeo, place place_yrkanis)
+{
+//Texte d'objectif
+	mv_fight_mis_05_custom_obj_8 		[Rejoindre $romeo$ près de $place_yrkanis$]
+
+}
+
+MV_FIGHT_MIS_05_TALKMENU_3 (bot current)
+{
+//Menu pour parler à Romeo
+	mv_fight_mis_05_talkmenu_3 		[Nous sommes prêts.]
+
+}
+
+MV_FIGHT_MIS_05_STEP_13 (bot juliette)
+{
+//Romeo
+	mv_fight_mis_05_step_13			[Enfin vous voilà ! Allons-y, il me tarde de revoir $juliette$ !]
+
+}
+
+MV_FIGHT_MIS_05_SPAWN_PRETENDANT_2 (bot_name romeo, bot juliette, bot_name julio)
+{
+//Rodrigo : dialogue à son spawn
+	mv_fight_mis_05_spawn_pretendant_2	[Ma parole, mais c'est $romeo$ ! Et la petite troupe engagée par $juliette$... Il semblerait
+						que $julio$ ait échoué. Je vais devoir devoir m'occuper de vous moi-même !]
+
+}
+
+MV_FIGHT_MIS_05_CUSTOM_OBJ_9 (bot_name romeo)
+{
+//Texte d'objectif
+	mv_fight_mis_05_custom_obj_9 		[Protéger $romeo$]
+
+}
+
+MV_FIGHT_MIS_05_STEP_14 (bot_name rodrigo)
+{
+//Romeo
+	mv_fight_mis_05_step_14			[L'infâme traître $rodrigo$ est mort ! Soyez remerciés, mes amis ! Dépêchons-nous, ne faisons pas attendre
+						la dame de mes rêves !]
+
+}
+
+MV_FIGHT_MIS_05_ARRIVEE_ROMEO_1 ()
+{
+//Romeo arrive près de Juliette
+	mv_fight_mis_05_arrivee_romeo_1 	[Je suis de retour ! J'ai fait une terrible erreur : je suis parti chercher au loin un trésor inestimable,
+						alors qu'il était près de moi.{break} Je ne t'abandonnerai plus jamais, j'en fais le serment !
+						Et qu'importe ce que pense ton père !]
+
+}
+
+MV_FIGHT_MIS_05_ARRIVEE_ROMEO_2 (bot_name romeo)
+{
+//Réponse de Juliette
+	mv_fight_mis_05_arrivee_romeo_2 	[Oh $romeo$, je suis si heureuse !]
+
+}
+
+MV_FIGHT_MIS_05_TALKMENU_4 (bot current)
+{
+//Menu pour parler à Juliette
+	mv_fight_mis_05_talkmenu_4		[Vous voilà réunis.]
+
+}
+
+MV_FIGHT_MIS_05_STEP_15 (bot_name rodrigo, bot_name romeo, bot counselor)
+{
+//Juliette
+	mv_fight_mis_05_step_15			[Je ne pourrai jamais assez vous remercier. Après la traîtrise de $rodrigo$, je doute que mon père
+						s'oppose à mon union avec $romeo$.{break} Allez voir mon oncle $counselor$, il est déjà au courant de vos hauts
+						faits. Que Jena veille sur vous tous !]
+
+}
+
+MV_FIGHT_MIS_05_TALKMENU_5 (bot current, bot_name romeo)
+{
+//Menu pour parler au counselor
+	mv_fight_mis_05_talkmenu_5		[Votre nièce et $romeo$ sont réunis.]
+
+}
+
+MV_FIGHT_MIS_05_END ()
+{
+//Counselor
+	mv_fight_mis_05_end			[Je tiens à vous féliciter, vous avez fait le bonheur de ma nièce ! En remerciement, je tiens à vous
+						apprendre quelques techniques, puissent-elles vous aider dans vos tâches futures !]
+
+}
+
+//reward 9 actions au choix + fame Matis
+

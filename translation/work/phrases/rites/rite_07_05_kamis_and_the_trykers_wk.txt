@@ -1,0 +1,54 @@
+﻿R_07_05_MIS_TITLE (bot giver)
+{
+	r_07_05_mis_title	[Le Fou de guerre]
+}
+
+R_07_05_MIS_DESC (bot giver, place lieu_fount, place lieu_restingwater)
+{
+	r_07_05_mis_desc	[Sous l'impulsion d'un chef fou furieux, des bandits de $lieu_fount.da$ $lieu_fount$ lancent des raids intenses sur les territoires de $lieu_restingwater$ où ils mettent en péril l'équilibre naturel.]
+}
+
+R_07_05_P_LDF_INTRO_1 (place lieu_fount, place lieu_restingwater)
+{
+	r_07_05_p_ldf_intro_1	[Si un allié des Kamis tu es, de ton aide nous avons besoin.{break}Par des homins fous furieux, l'équilibre naturel est menacé. Des bandits sèment un grand trouble dans $lieu_fount.da$ $lieu_fount$, et avec eux très patients nous avons été. Mais à présent, les ressources et les animaux de $lieu_restingwater$ ils détruisent.{break}Depuis qu'un chef de guerre est à leur tête, très agressifs ils sont devenus. Arrêter ce chef tu dois. Pour ton aide, une bénédiction qui endurcira ton corps tu recevras.{break}Va trouver le Kami $lieu_restingwater.pr$ $lieu_restingwater$, qui veille près de $lieu_fount.da$ $lieu_fount$. Des choses importantes il te dira.]
+}
+
+R_07_05_M_T2_KAMI_1 (bot kami_1)
+{
+	r_07_05_m_t2_kami_1	[Je viens vous aider]
+}
+
+R_07_05_P_BC_KAMI_1 (bot chief_1, place lieu_fount)
+{
+	r_07_05_p_bc_kami_1	[Par la faute d'homins fous ma colère a grandi... Les Kamis t'envoient ici pour l'apaiser. {break}Les bandits de $lieu_fount.da$ $lieu_fount$ par $chief_1$ sont commandés. Une grande haine pour Atys dévore son esprit. Le combattre tu dois. {break}Attention homin, un grand danger je ressens ! Des bandits arrivent ! Pour ta vie il te faut combattre.]
+}
+
+R_07_05_P_OVL_KILL_GROUP_1 ()
+{
+	r_07_05_p_ovl_kill_group_1	[Eliminez le groupe de bandits]
+}
+
+R_07_05_O_T2_KAMI_1A (bot kami_1)
+{
+	r_07_05_o_t2_kami_1a	[Retournez voir $kami_1$]
+}
+
+R_07_05_M_T2_KAMI_1A (bot kami_1)
+{
+	r_07_05_m_t2_kami_1a	[J'ai vaincu les bandits]
+}
+
+R_07_05_P_BC_KAMI_1A (bot chief_1, place lieu_fount)
+{
+	r_07_05_p_bc_kami_1a	[Ta force est grande, homin. À présent, $chief_1$ il te faut affronter.{break}Au sud de $lieu_fount.da$ $lieu_fount$ tu le trouveras.{break}Prends garde, beaucoup d'homins avec lui combattent.]
+}
+
+R_07_05_M_T2_KAMI_1B (bot kami_1)
+{
+	r_07_05_m_t2_kami_1b	[Le chef de guerre est mort]
+}
+
+R_07_05_P_BC_DEBRIEF_1 ()
+{
+	r_07_05_p_bc_debrief_1	[Une grande victoire aux Kamis tu as donné. Atys peut maintenant guérir des blessures infligées par les bandits. Ce cube d'ambre tu as mérité, les liens entre les Trykers et les Kamis il décrit.{break}Reçois notre bénédiction, par la puissance de la terre ton corps sera endurci.]
+}

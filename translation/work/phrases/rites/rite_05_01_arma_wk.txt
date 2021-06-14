@@ -1,0 +1,20 @@
+﻿R_05_01_MIS_TITLE (bot giver, race creature)
+{
+	r_05_01_mis_title	[La chasse à $creature.da$ $creature$]
+}
+
+R_05_01_MIS_DESC (bot giver, race creature, creature_model creature_boss)
+{
+	r_05_01_mis_desc	[Tuer $creature_boss.ia$ $creature_boss$, $creature.ia$ $creature$ exceptionnel, et ramener de la viande d'$creature$]
+}
+
+R_05_01_P_LDC_INTRO (race creature, creature_model creature_boss, place lieu_nord, place lieu_sud)
+{
+	r_05_01_p_ldc_intro	[Bonjour à vous, $self$. J'ai une mission importante à vous confier.{break}Les réserves de nourriture de notre village baissent à vue d'oeil, et nous manquons de chasseurs pour renouveler les stocks. Votre aide pourrait donc nous être précieuse. La viande d'$creature$ est idéale, car nous parvenons à la conserver sans problème.{break}Malheureusement, un $creature$ géant rend la tâche de nos traqueurs difficile : ce monstre est appelé $creature_boss$. Nous l'avons aperçu récemment dans la région du $lieu_sud$.{break}Je vous demanderai donc dans un premier temps de nous débarrasser de cette créature, puis dans un second temps d'aider nos chasseurs en nous ramenant de la viande d'$creature$. Vous en trouverez à profusion dans la région du $lieu_nord$.{break}Pour vous remercier de votre aide, je vous enseignerai une technique de protection magique utilisée par les magiciens matis. Je compte sur vous, $self$ !]
+}
+
+R_05_01_P_BC_DEBRIEF (race creature)
+{
+	r_05_01_p_bc_debrief	[Superbe ! Vous avez fait du bon travail, $self$. En plus de la technique que je vous ai promise, je vous offre ce cube d'ambre qui renferme un précieux savoir sur $creature.pda$ $creature.p$.]
+}
+

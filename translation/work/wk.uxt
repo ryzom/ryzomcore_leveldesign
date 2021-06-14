@@ -753,9 +753,9 @@ uiErrPatchApply	[Error : Patch process ended but the patch has not been successf
 
 uiErrChecking	[Error : Checking for patch files failed]
 
-uiKb	[KB]
+uiKb	[KiB]
 
-uiMb	[MB]
+uiMb	[MiB]
 
 uiLoginGetFile	[Getting File :]
 uiDLFailed	[Download from emergency server failed, patching is aborted]
@@ -1662,6 +1662,10 @@ uigcFrancais	[FRANCAIS]
 
 uigcDeutch	[DEUTCH]
 
+uigcRussian	[RUSSIAN]
+
+uigcSpanish [SPANISH]
+
 uigcRequestReboot	[Ryzom needs to be restarted to apply this modifications]
 
 uigcInput	[INPUTS]
@@ -1672,6 +1676,8 @@ uigcMouse	[MOUSE]
 uigcKeyboard	[KEYBOARD]
 
 uigcSound	[SOUND]
+
+uigcLandmarkColor	[LANDMARKS]
 
 uiFPS	[FPS:]
 
@@ -1943,6 +1949,188 @@ uittChooseInfColor	[Choose color for 'Informations' header]
 uittChooseTraColor	[Choose color for 'Trade' header]
 
 uittChooseBotColor	[Choose color for 'NPC' header]
+
+// interface - LandMarks
+uiLandmarkColors	[Landmarks Colors]
+
+uiLMMiscColor	[Misc]
+
+uiLMTribeColor	[Tribe]
+
+uiLMBanditColor	[Bandit]
+
+uiLMCitizenColor	[Citizen]
+
+uiLMFaunaColor	[Fauna]
+
+uiLMFaunaExcelColor	[Fauna Excel]
+
+uiLMFaunaSupColor	[FaunaSup]
+
+uiLMForageColor	[Forage]
+
+uiLMForageExcelColor	[ForageExcel]
+
+uiLMForageSupColor	[ForageSup]
+
+uiLMSapColor	[Sap]
+
+uiLMAmberColor	[Amber]
+
+uiLMNodeColor	[Node]
+
+uiLMFiberColor	[Fiber]
+
+uiLMBarkColor	[Bark]
+
+uiLMSeedColor	[Seed]
+
+uiLMShellColor	[Shell]
+
+uiLMResinColor	[Resin]
+
+uiLMWoodColor	[Wood]
+
+uiLMOilColor	[Oil]
+
+uiLMMissionColor	[Mission]
+
+uiLMFoodColor	[Food]
+
+uiLMConstructionColor	[Construction]
+
+uiLMGooColor	[Goo]
+
+uiLMInsectColor	[Insect]
+
+uiLMKitinColor	[Kitin]
+
+uiLMNociveColor	[Nocive]
+
+uiLMPreservativeColor	[Preservative]
+
+uiLMPassageColor	[Passage]
+
+uiLMTeleporterColor	[Teleporter]
+
+uiCCDLMMisc	[Misc landmark color]
+
+uiCCDLMTribe	[Tribe landmark color]
+
+uiCCDLMBandit	[Bandit landmark color]
+
+uiCCDLMCitizen	[Citizen landmark color]
+
+uiCCDLMFauna	[Fauna landmark color]
+
+uiCCDLMFaunaExcel	[FaunaExcel landmark color]
+
+uiCCDLMFaunaSup	[FaunaSup landmark color]
+
+uiCCDLMForage	[Forage landmark color]
+
+uiCCDLMForageExcel	[ForageExcel landmark color]
+
+uiCCDLMForageSup	[ForageSup landmark color]
+
+uiCCDLMSap	[Sap landmark color]
+
+uiCCDLMAmber	[Amber landmark color]
+
+uiCCDLMNode	[Node landmark color]
+
+uiCCDLMFiber	[Fiber landmark color]
+
+uiCCDLMBark	[Bark landmark color]
+
+uiCCDLMSeed	[Seed landmark color]
+
+uiCCDLMShell	[Shell landmark color]
+
+uiCCDLMResin	[Resin landmark color]
+
+uiCCDLMWood	[Wood landmark color]
+
+uiCCDLMOil	[Oil landmark color]
+
+uiCCDLMMission	[Mission landmark color]
+
+uiCCDLMFood	[Food landmark color]
+
+uiCCDLMConstruction	[Construction landmark color]
+
+uiCCDLMGoo	[Goo landmark color]
+
+uiCCDLMInsect	[Insect landmark color]
+
+uiCCDLMKitin	[Kitin landmark color]
+
+uiCCDLMNocive	[Nocive landmark color]
+
+uiCCDLMPreservative	[Preservative landmark color]
+
+uiCCDLMPassage	[Passage landmark color]
+
+uiCCDLMTeleporter	[Teleporter landmark color]
+
+uittChooseLMMiscColor	[Choose color for 'Misc' landmark]
+
+uittChooseLMTribeColor	[Choose color for 'Tribe' landmark]
+
+uittChooseLMBanditColor	[Choose color for 'Bandit' landmark]
+
+uittChooseLMCitizenColor	[Choose color for 'Citizen' landmark]
+
+uittChooseLMFaunaColor	[Choose color for 'Fauna' landmark]
+
+uittChooseLMFaunaExcelColor	[Choose color for 'FaunaExcel' landmark]
+
+uittChooseLMFaunaSupColor	[Choose color for 'FaunaSup' landmark]
+
+uittChooseLMForageColor	[Choose color for 'Forage' landmark]
+
+uittChooseLMForageExcelColor	[Choose color for 'ForageExcel' landmark]
+
+uittChooseLMForageSupColor	[Choose color for 'ForageSup' landmark]
+
+uittChooseLMSapColor	[Choose color for 'Sap' landmark]
+
+uittChooseLMAmberColor	[Choose color for 'Amber' landmark]
+
+uittChooseLMNodeColor	[Choose color for 'Node' landmark]
+
+uittChooseLMBarkColor	[Choose color for 'Bark' landmark]
+
+uittChooseLMSeedColor	[Choose color for 'Seed' landmark]
+
+uittChooseLMShellColor	[Choose color for 'Shell' landmark]
+
+uittChooseLMResinColor	[Choose color for 'Resin' landmark]
+
+uittChooseLMWoodColor	[Choose color for 'Wood' landmark]
+
+uittChooseLMOilColor	[Choose color for 'Oil' landmark]
+
+uittChooseLMMissionColor	[Choose color for 'Mission' landmark]
+
+uittChooseLMFoodColor	[Choose color for 'Food' landmark]
+
+uittChooseLMConstructionColor	[Choose color for 'Construction' landmark]
+
+uittChooseLMGooColor	[Choose color for 'Goo' landmark]
+
+uittChooseLMInsectColor	[Choose color for 'Insect' landmark]
+
+uittChooseLMKitinColor	[Choose color for 'Kitin' landmark]
+
+uittChooseLMNociveColor	[Choose color for 'Nocive' landmark]
+
+uittChooseLMPreservativeColor	[Choose color for 'Preservative' landmark]
+
+uittChooseLMPassageColor	[Choose color for 'Passage' landmark]
+
+uittChooseLMTeleporterColor	[Choose color for 'Teleporter' landmark]
+
 
 // Inputs - Mouse
 uiMouseOptions	[Mouse Options]
@@ -2249,7 +2437,7 @@ A chaque round perdu, le @{6F6F}Niveau de Round@{FFFF} diminuera ainsi que le no
 uittOutpostAttackAfterWin
 [
 @{6F6F}Après Attaque@{FFFF}\n
-La guerre continue! \n
+La guerre continue!\n
 Les attaquants ont réussi à dépasser le @{6F6F}Seuil Minimum@{FFFF} fixé par les défenseurs pendant la @{6F6F}Période d'Attaque@{FFFF}.\n
 Il faut attendre la fin de la phase d'attaque pour que les attaquants gagnent l'Avant-Poste.\n
 ]
@@ -2263,7 +2451,7 @@ L'avant-poste sera complètement libéré à la fin de la phase d'attaque.\n
 uittOutpostDefenseBefore
 [
 @{6F6F}Attente Défense@{FFFF}\n
-La guerre continue! \n
+La guerre continue!\n
 Les attaquants ont réussi à dépasser le @{6F6F}Seuil Minimum@{FFFF} fixé par les défenseurs pendant la @{6F6F}Période d'Attaque@{FFFF}.\n
 Ils ont temporairement pris le contrôle des escouades de l'avant poste.\n
 Ces escouades n'apparaîtront que pendant la @{6F6F}Période de Défense@{FFFF}.\n
@@ -2313,7 +2501,7 @@ uittOutpostLvlThreshold
 [
 @{6F6F}Seuil Minimum@{FFFF}\n
 C'est le @{6F6F}Niveau de Round@{FFFF} que les attaquants doivent dépasser lors de leur @{6F6F}Période d'Attaque@{FFFF}.\n
-Ce seuil est calculé en fonction du plus haut @{6F6F}Niveau de Round@{FFFF} atteint lors de la @{6F6F}Période d'Attaque@{FFFF} de la dernière conquête d'un Outpost.\n
+Ce seuil est calculé en fonction du plus haut @{6F6F}Niveau de Round@{FFFF} atteint lors de la @{6F6F}Période d'Attaque@{FFFF} de la dernière conquête d'un avant-poste.\n
 Par la suite, ce seuil décroit régulièrement et assez lentement.
 ]
 uiOutpostLvlMaxAttacker		[Niveau Max. des Attaquants : ]
@@ -2395,13 +2583,13 @@ Cela s'applique aussi pour le @{6F6F}mode automatique@{FFFF}. Ainsi par exemple 
 
 
 uiOutpostDeclareWar	[DECLARER LA GUERRE]
-uittOutpostDeclareWar	[Déclarer la guerre à cet Outpost\nSi votre guilde l'emporte, elle aura alors la garde de l'Outpost.]
+uittOutpostDeclareWar	[Déclarer la guerre à cet avant-poste\nSi votre guilde l'emporte, elle aura alors la garde de l'avant-poste.]
 
 
 uiOutpostWarCost	[COUT DE LA GUERRE : ]
 uiOutpostWarCostDesc
 [
-Déclarer la guerre à un outpost coûte de l'argent à la guilde (il faut notamment payer les escouades lors de la période de défense).\n
+Déclarer la guerre à un avant-poste coûte de l'argent à la guilde (il faut notamment payer les escouades lors de la période de défense).\n
 Cette Somme sera déduite du coffre de votre guilde, ou de votre poche.\n
 ]
 
@@ -2798,6 +2986,10 @@ uiFameFyros	[Fyros]
 uiFameMatis	[Matis]
 uiFameTryker	[Tryker]
 uiFameZorai	[Zorai]
+uiFameHominists	[Tenant]
+uiFameMarauders	[Marauder]
+uiFameAgnos	[Antithe]
+uiFameUrasies	[Gnost]
 
 uiFameAllegianceCult [Allégeance cult: ]
 uiFameAllegianceCiv [Allégeance civilisation: ]
@@ -3086,8 +3278,8 @@ uiPvPEffect_region_thescorchedcorridor_Malus	[@{FE7F}Le foyer du Couloir Brûlé
 //-------------------------------------------------------------------------------------------------------------------------------
 // Spire effects : Zorai
 
-uiPvPEffect_region_knotofdementia_Bonus		[@{FE7F}Le foyer du Nœud de la Démence @{FFFF}:\n  Augmente les résistances magiques de @{2F2F}%p]
-uiPvPEffect_region_knotofdementia_Malus		[@{FE7F}Le foyer du Nœud de la Démence @{FFFF}:\n  Réduit les résistances magiques de @{2F2F}%p]
+uiPvPEffect_region_knotofdementia_Bonus		[@{FE7F}Le foyer du Noeud de la Démence @{FFFF}:\n  Augmente les résistances magiques de @{2F2F}%p]
+uiPvPEffect_region_knotofdementia_Malus		[@{FE7F}Le foyer du Noeud de la Démence @{FFFF}:\n  Réduit les résistances magiques de @{2F2F}%p]
 
 uiPvPEffect_region_havenofpurity_Bonus		[@{FE7F}Le foyer du Havre de Pureté @{FFFF}:\n  Augmente la sagesse de @{2F2F}%n]
 uiPvPEffect_region_havenofpurity_Malus		[@{FE7F}Le foyer du Havre de Pureté @{FFFF}:\n  Réduit la sagesse de @{2F2F}%n]
@@ -3095,15 +3287,15 @@ uiPvPEffect_region_havenofpurity_Malus		[@{FE7F}Le foyer du Havre de Pureté @{F
 uiPvPEffect_region_thevoid_Bonus		[@{FE7F}Le foyer du Vide @{FFFF}:\n  Augmente l'intelligence de @{2F2F}%n]
 uiPvPEffect_region_thevoid_Malus		[@{FE7F}Le foyer du Vide @{FFFF}:\n  Réduit l'intelligence de @{2F2F}%n]
 
-uiPvPEffect_region_citiesofintuition_Bonus	[@{FE7F}Le foyer des Cités de l’Intuition @{FFFF}:\n  Augmente les chances de réussite des artisans de @{2F2F}%p]
-uiPvPEffect_region_citiesofintuition_Malus	[@{FE7F}Le foyer des Cités de l’Intuition @{FFFF}:\n  Réduit les chances de réussite des artisans de @{2F2F}%p]
+uiPvPEffect_region_citiesofintuition_Bonus	[@{FE7F}Le foyer des Cités de l'Intuition @{FFFF}:\n  Augmente les chances de réussite des artisans de @{2F2F}%p]
+uiPvPEffect_region_citiesofintuition_Malus	[@{FE7F}Le foyer des Cités de l'Intuition @{FFFF}:\n  Réduit les chances de réussite des artisans de @{2F2F}%p]
 
 uiPvPEffect_region_maidengrove_Bonus		[@{FE7F}Le foyer du Bosquet Vierge @{FFFF}:\n  Augmente la quantité de matières premières récoltées de @{2F2F}%p]
 
 uiPvPEffect_region_maidengrove_Malus		[@{FE7F}Le foyer du Bosquet Vierge @{FFFF}:\n  Réduit la quantité de matières premières récoltées de @{2F2F}%p]
 
-uiPvPEffect_region_groveofumbra_Bonus		[@{FE7F}Le foyer du Bosquet de l’Ombre @{FFFF}:\n  Augmente les dégâts des sorts offensifs de @{2F2F}%p]
-uiPvPEffect_region_groveofumbra_Malus		[@{FE7F}Le foyer du Bosquet de l’Ombre @{FFFF}:\n  Réduit les dégâts des sorts offensifs de @{2F2F}%p]
+uiPvPEffect_region_groveofumbra_Bonus		[@{FE7F}Le foyer du Bosquet de l'Ombre @{FFFF}:\n  Augmente les dégâts des sorts offensifs de @{2F2F}%p]
+uiPvPEffect_region_groveofumbra_Malus		[@{FE7F}Le foyer du Bosquet de l'Ombre @{FFFF}:\n  Réduit les dégâts des sorts offensifs de @{2F2F}%p]
 
 
 //-------------------------------------------------------------------------------------------------------------------------------
@@ -3112,14 +3304,14 @@ uiPvPEffect_region_groveofumbra_Malus		[@{FE7F}Le foyer du Bosquet de l’Ombre 
 uiPvPEffect_region_libertylake_Bonus		[@{FE7F}Le foyer du Lac de la Liberté @{FFFF}:\n  Augmente les chances de réussite des artisans de @{2F2F}%p]
 uiPvPEffect_region_libertylake_Malus		[@{FE7F}Le foyer du Lac de la Liberté @{FFFF}:\n  Réduit les chances de réussite des artisans de @{2F2F}%p]
 
-uiPvPEffect_region_restingwater_Bonus		[@{FE7F}Le foyer de l’Eau du Repos @{FFFF}:\n  Accorde une protection sous la forme d'un bouclier épineux qui renvoie @{2F2F}%p @{FFFF}des dommages]
-uiPvPEffect_region_restingwater_Malus		[@{FE7F}Le foyer de l’Eau du Repos @{FFFF}:\n  Aucun effet]
+uiPvPEffect_region_restingwater_Bonus		[@{FE7F}Le foyer de l'Eau du Repos @{FFFF}:\n  Accorde une protection sous la forme d'un bouclier épineux qui renvoie @{2F2F}%p @{FFFF}des dommages]
+uiPvPEffect_region_restingwater_Malus		[@{FE7F}Le foyer de l'Eau du Repos @{FFFF}:\n  Aucun effet]
 
 uiPvPEffect_region_dewdrops_Bonus		[@{FE7F}Le foyer des Chutes de la Rosée @{FFFF}:\n  Augmente la volonté de @{2F2F}%n]
 uiPvPEffect_region_dewdrops_Malus		[@{FE7F}Le foyer des Chutes de la Rosée @{FFFF}:\n  Réduit la volonté de @{2F2F}%n]
 
-uiPvPEffect_region_enchantedisle_Bonus		[@{FE7F}Le foyer de l’Ile Enchanté @{FFFF}:\n  Augmente la sagesse de @{2F2F}%n]
-uiPvPEffect_region_enchantedisle_Malus		[@{FE7F}Le foyer de l’Ile Enchanté @{FFFF}:\n  Réduit la sagesse de @{2F2F}%n]
+uiPvPEffect_region_enchantedisle_Bonus		[@{FE7F}Le foyer de l'Ile Enchanté @{FFFF}:\n  Augmente la sagesse de @{2F2F}%n]
+uiPvPEffect_region_enchantedisle_Malus		[@{FE7F}Le foyer de l'Ile Enchanté @{FFFF}:\n  Réduit la sagesse de @{2F2F}%n]
 
 uiPvPEffect_region_thefount_Bonus		[@{FE7F}Le foyer de la Source @{FFFF}:\n  Augmente la dextérité de @{2F2F}%n]
 uiPvPEffect_region_thefount_Malus		[@{FE7F}Le foyer de la Source @{FFFF}:\n  Réduit la dextérité de @{2F2F}%n]
@@ -3127,8 +3319,8 @@ uiPvPEffect_region_thefount_Malus		[@{FE7F}Le foyer de la Source @{FFFF}:\n  Ré
 uiPvPEffect_region_lagoonsofloria_Bonus		[@{FE7F}Le foyer du Lagon de Loria @{FFFF}:\n  Augmente la régénération des matières premières dans toutes les sources de @{2F2F}%p]
 uiPvPEffect_region_lagoonsofloria_Malus		[@{FE7F}Le foyer du Lagon de Loria @{FFFF}:\n  Aucun effet]
 
-uiPvPEffect_region_bountybeaches_Bonus		[@{FE7F}Le foyer des Plages d’Abondance @{FFFF}:\n  Augmente l'attention lors de l'évocation d'un sort de @{2F2F}%p]
-uiPvPEffect_region_bountybeaches_Malus		[@{FE7F}Le foyer des Plages d’Abondance @{FFFF}:\n  Réduit l'attention lors de l'évocation d'un sort de @{2F2F}%p]
+uiPvPEffect_region_bountybeaches_Bonus		[@{FE7F}Le foyer des Plages d'Abondance @{FFFF}:\n  Augmente l'attention lors de l'évocation d'un sort de @{2F2F}%p]
+uiPvPEffect_region_bountybeaches_Malus		[@{FE7F}Le foyer des Plages d'Abondance @{FFFF}:\n  Réduit l'attention lors de l'évocation d'un sort de @{2F2F}%p]
 
 uiPvPEffect_region_windsofmuse_Bonus		[@{FE7F}Le foyer des Vents du Songe @{FFFF}:\n  Augmente la constitution de @{2F2F}%n]
 uiPvPEffect_region_windsofmuse_Malus		[@{FE7F}Le foyer des Vents du Songe @{FFFF}:\n  Réduit la constitution de @{2F2F}%n]
@@ -3156,11 +3348,11 @@ uiPvPEffect_region_upperbog_Malus		[@{FE7F}Le foyer du Marais Supérieur @{FFFF}
 uiPvPEffect_region_hiddensource_Bonus		[@{FE7F}Le foyer de la Source Cachée @{FFFF}:\n  Augmente la parade et l'esquive de @{2F2F}%p]
 uiPvPEffect_region_hiddensource_Malus		[@{FE7F}Le foyer de la Source Cachée @{FFFF}:\n  Réduit la parade et l'esquive de @{2F2F}%p]
 
-uiPvPEffect_region_hereticshovel_Bonus		[@{FE7F}Le foyer de la Masure de l’Hérétique @{FFFF}:\n  Augmente le métabolisme de @{2F2F}%n]
-uiPvPEffect_region_hereticshovel_Malus		[@{FE7F}Le foyer de la Masure de l’Hérétique @{FFFF}:\n  Réduit le métabolisme de @{2F2F}%n]
+uiPvPEffect_region_hereticshovel_Bonus		[@{FE7F}Le foyer de la Masure de l'Hérétique @{FFFF}:\n  Augmente le métabolisme de @{2F2F}%n]
+uiPvPEffect_region_hereticshovel_Malus		[@{FE7F}Le foyer de la Masure de l'Hérétique @{FFFF}:\n  Réduit le métabolisme de @{2F2F}%n]
 
-uiPvPEffect_region_the_abyss_of_ichor_Bonus	[@{FE7F}Le foyer du Gouffre d’Ichor @{FFFF}:\n  Augmente la force de @{2F2F}%n]
-uiPvPEffect_region_the_abyss_of_ichor_Malus	[@{FE7F}Le foyer du Gouffre d’Ichor @{FFFF}:\n  Réduit la force de @{2F2F}%n]
+uiPvPEffect_region_the_abyss_of_ichor_Bonus	[@{FE7F}Le foyer du Gouffre d'Ichor @{FFFF}:\n  Augmente la force de @{2F2F}%n]
+uiPvPEffect_region_the_abyss_of_ichor_Malus	[@{FE7F}Le foyer du Gouffre d'Ichor @{FFFF}:\n  Réduit la force de @{2F2F}%n]
 
 
 //-------------------------------------------------------------------------------------------------------------------------------
@@ -3172,8 +3364,8 @@ uiPvPEffect_region_the_windy_gate_Malus		[@{FE7F}Le foyer de la Portes des Vents
 uiPvPEffect_region_the_elusive_forest_Bonus	[@{FE7F}Le foyer de la Forêt Insaisissable @{FFFF}:\n  Augmente la volonté de @{2F2F}%n]
 uiPvPEffect_region_the_elusive_forest_Malus	[@{FE7F}Le foyer de la Forêt Insaisissable @{FFFF}:\n  Réduit la volonté de @{2F2F}%n]
 
-uiPvPEffect_region_gate_of_obscurity_Bonus	[@{FE7F}Le foyer de la Porte de l’Obscurité @{FFFF}:\n  Augmente la vitesse de déplacement de @{2F2F}%p]
-uiPvPEffect_region_gate_of_obscurity_Malus	[@{FE7F}Le foyer de la Porte de l’Obscurité @{FFFF}:\n  Réduit la vitesse de déplacement de @{2F2F}%p]
+uiPvPEffect_region_gate_of_obscurity_Bonus	[@{FE7F}Le foyer de la Porte de l'Obscurité @{FFFF}:\n  Augmente la vitesse de déplacement de @{2F2F}%p]
+uiPvPEffect_region_gate_of_obscurity_Malus	[@{FE7F}Le foyer de la Porte de l'Obscurité @{FFFF}:\n  Réduit la vitesse de déplacement de @{2F2F}%p]
 
 uiPvPEffect_region_the_trench_of_trials_Bonus	[@{FE7F}Le foyer de la Fosse aux Epreuves @{FFFF}:\n  Augmente les dégâts des armes de mêlée de @{2F2F}%p]
 uiPvPEffect_region_the_trench_of_trials_Malus	[@{FE7F}Le foyer de la Fosse aux Epreuves @{FFFF}:\n  Réduit les dégâts des armes de mêlée de @{2F2F}%p]
@@ -3201,20 +3393,20 @@ uiPvPEffect_region_nexus_Malus			[@{FE7F}Le foyer du Nexus @{FFFF}:\n  Aucun eff
 //-------------------------------------------------------------------------------------------------------------------------------
 // New Descriptions tooltips
 
-uiHPDesc 	[@{6F6F}HP@{FFFF}, \nhit points measure the amount of damage a character can sustains before they pass out.]
-uiStaDesc 	[@{6F6F}Stamina@{FFFF}, \nuse by physical combat actions, stamina measures a character's current state of fatigue.]
-uiSapDesc 	[@{6F6F}Sap@{FFFF}, \nthe energy that allows a character to channel magical power.]
-uiFocDesc 	[@{6F6F}Focus@{FFFF}, \nmeasure the character's ability to concentrate.]
+uiHPDesc 	[@{6F6F}HP@{FFFF},\nhit points measure the amount of damage a character can sustains before they pass out.]
+uiStaDesc 	[@{6F6F}Stamina@{FFFF},\nuse by physical combat actions, stamina measures a character's current state of fatigue.]
+uiSapDesc 	[@{6F6F}Sap@{FFFF},\nthe energy that allows a character to channel magical power.]
+uiFocDesc 	[@{6F6F}Focus@{FFFF},\nmeasure the character's ability to concentrate.]
 
-uiConsDesc 	[@{6F6F}Constitution@{FFFF}, \nmeasure the character's ability to engage in long-term periods of strenuous physical activity.]
-uiIntDesc 	[@{6F6F}Intelligence@{FFFF}, \nthis is a measure of how well a character can focus their mental abilities.]
-uiStrDesc 	[@{6F6F}Strength@{FFFF}, \nstatistic measures the physical strength a character possess.]
-uiDexDesc 	[@{6F6F}Dexterity@{FFFF}, \nmeasure how skilled a character is at doing fine work with their hands.]
+uiConsDesc 	[@{6F6F}Constitution@{FFFF},\nmeasure the character's ability to engage in long-term periods of strenuous physical activity.]
+uiIntDesc 	[@{6F6F}Intelligence@{FFFF},\nthis is a measure of how well a character can focus their mental abilities.]
+uiStrDesc 	[@{6F6F}Strength@{FFFF},\nstatistic measures the physical strength a character possess.]
+uiDexDesc 	[@{6F6F}Dexterity@{FFFF},\nmeasure how skilled a character is at doing fine work with their hands.]
 
-uiMetaDesc 	[@{6F6F}Metabolism@{FFFF}, \nmeasure the rate at which a character's body can recover from injury.]
-uiWisDesc 	[@{6F6F}Wisdom@{FFFF}, \nis a measure of mental control. Wisdom is essential for any that wish to use Magic.]
-uiWBDesc 	[@{6F6F}Well Balanced@{FFFF}, \ncharacters that have a greater control over their physical state will have high Balance scores.]
-uiWillDesc 	[@{6F6F}Will@{FFFF}, \nthe ability to maintain a high level of concentration over longer periods of time is a character's will.]
+uiMetaDesc 	[@{6F6F}Metabolism@{FFFF},\nmeasure the rate at which a character's body can recover from injury.]
+uiWisDesc 	[@{6F6F}Wisdom@{FFFF},\nis a measure of mental control. Wisdom is essential for any that wish to use Magic.]
+uiWBDesc 	[@{6F6F}Well Balanced@{FFFF},\ncharacters that have a greater control over their physical state will have high Balance scores.]
+uiWillDesc 	[@{6F6F}Will@{FFFF},\nthe ability to maintain a high level of concentration over longer periods of time is a character's will.]
 //-------------------------------------------------------------------------------------------------------------------------------
 
 uiValues	[VALUES]
@@ -3554,6 +3746,8 @@ uittFilterWeapon	[Filter @{6F6F}Weapon\n@{FFFF}Right click to select only @{6F6F
 
 uittFilterTool	[Filter @{6F6F}Tool\n@{FFFF}Right click to select only @{6F6F}Tool@{FFFF}.]
 
+uittFilterPet	[Filter @{6F6F}Animal\n@{FFFF}Right click to select only @{6F6F}Animal@{FFFF}.]
+
 uittFilterMP	[Filter @{6F6F}Material\n@{FFFF}Right click to select only @{6F6F}Material@{FFFF}.]
 
 uittFilterMissMP	[Filter @{6F6F}Mission Item or Mission Material\n@{FFFF}Right click to select only @{6F6F}Mission Item or Mission Material@{FFFF}.]
@@ -3865,7 +4059,6 @@ uiKeyF22	[F22]
 
 uiKeyF23	[F23]
 
-
 uiKeyF24	[F24]
 
 uiKeyNUMLOCK	[NUMLOCK]
@@ -3904,10 +4097,9 @@ uiKeyPA1	[PA1]
 
 uiKeyOEM_CLEAR	[OEM CLEAR]
 
-uiKeyCOMMA [,]
+uiKeyCOMMA [COMMA]
 
 uiNumber00	[00]
-
 
 uiNumber01	[01]
 
@@ -4493,6 +4685,7 @@ uimwBars	[MY GAUGE]
 
 uimwBonusMalus	[BONUS/MALUS]
 
+uimwWebIG	[WEB]
 
 uimwBuff	[AFFECTED BY]
 
@@ -5170,7 +5363,7 @@ uihelpItemDefaultFormat	[@{FFF9}@{HuittInfoWeight}Poids :@{H}@{T12}@{FFFF}%weigh
 	\n
 	\n
 	%cansell@{FFFF}%desc
-	%no_rent@{FFFF}%descnr]
+	%no_rent@{FFFF}%descnr%custom_text]
 
 uihelpItemCantSell	[@{F80B}This item can't be sold to a merchant@{FFFF}\n
 	]
@@ -5215,9 +5408,10 @@ uihelpItemArmorFormat	[@{FFF9}@{HuittInfoOrigin}Origine :@{H}@{T12}@{FFFF}%origi
 	@{FFF9}  @{HuittInfoArmorSlash}Max / Cp Tranchant :@{H}@{T12}@{FFFF}%p_slash\n
 	@{FFF9}  @{HuittInfoArmorBlunt}Max / Cp Contondant :@{H}@{T12}@{FFFF}%p_blunt\n
 	@{FFF9}  @{HuittInfoArmorPierc}Max / Cp Perforant :@{H}@{T12}@{FFFF}%p_pierce\n
-	%buffs\n
-	%special_effects\n
-	@{FFFF}%desc]
+	%buffs
+	%special_effects
+	%desc
+	%custom_text]
 
 // HELP - ITEM - Melee Weapon
 // **************
@@ -5240,10 +5434,12 @@ uihelpItemMeleeWeaponFormat	[@{FFF9}@{HuittInfoOrigin}Origine :@{H}@{T12}@{FFFF}
 	@{FFF9}@{HuittInfoTargetDodgeMod}Modif. d'Esquive/Cible :@{H}@{T12}@{FFFF}%adv_dodge\n
 	@{FFF9}@{HuittInfoTargetParryMod}Modif. de Parade/Cible :@{H}@{T12}@{FFFF}%adv_parry\n
 	@{FFF9}@{HuittInfoMalus}Pénalité de l'Action :@{H}@{T12}@{FFFF}+%actmalus\n
-	%magic_bonus%buffs\n
-	%special_effects\n
-	%skill_mod_vs_type\n
-	@{FFFF}%desc\n
+	%magic_bonus
+	%buffs
+	%special_effects
+	%skill_mod_vs_type
+	%desc
+	%custom_text
 	%enchantment]
 
 // HELP - ITEM - Range Weapon
@@ -5266,10 +5462,12 @@ uihelpItemRangeWeaponFormat	[@{FFF9}@{HuittInfoOrigin}Origine :@{H}@{T12}@{FFFF}
 	@{FFF9}@{HuittInfoTargetDodgeMod}Modif. d'Esquive/Cible :@{H}@{T12}@{FFFF}%adv_dodge\n
 	@{FFF9}@{HuittInfoTargetParryMod}Modif. de Parade/Cible :@{H}@{T12}@{FFFF}%adv_parry\n
 	@{FFF9}@{HuittInfoMalus}Pénalité de l'Action :@{H}@{T12}@{FFFF}+%actmalus\n
-	%magic_bonus%buffs\n
-	%special_effects\n
-	%skill_mod_vs_type\n
-	@{FFFF}%desc\n
+	%magic_bonus
+	%buffs
+	%special_effects
+	%skill_mod_vs_type
+	%desc
+	%custom_text
 	%enchantment]
 
 // HELP - ITEM - Ammo
@@ -5286,8 +5484,7 @@ uihelpItemAmmoFormat	[@{FFF9}@{HuittInfoOrigin}Origine :@{H}@{T12}@{FFFF}%origin
 	@{FFF9}@{HuittInfoAmmoDamage}Dégâts :@{H}@{T12}@{FFFF}%dmg (@{T12}@{FFFF}%max_dmg)\n
 	@{FFF9}@{HuittInfoAmmoHitMin}Coups/Minute :@{H}@{T12}@{FFFF}%speed\n
 	@{FFF9}@{HuittInfoAmmoRange}Portée :@{H}@{T12}@{FFFF}%range\n
-	\n
-	@{FFFF}%desc]
+	%desc]
 
 // HELP - ITEM - RawMaterial
 // **************
@@ -5301,7 +5498,7 @@ uihelpItemMPFormat	[@{FFF9}@{HuittInfoMpQuality}Qualité :@{H}@{T12}@{FFFF}%qual
 	@{FFF9}@{HuittInfoMpEco}Ecosystème :@{H}@{T12}@{FFFF}%ecosystem\n
 	@{FFF9}@{HuittInfoMpFam}Famille :@{H}@{T12}@{FFFF}%family\n
 	@{FFF9}@{HuittInfoMpColor}Couleur :@{H}@{T12}@{FFFF}%mpcolor\n
-	@{FFFF}%desc\n
+	%desc
 	%craft]
 
 // HELP - ITEM - Scroll
@@ -5369,7 +5566,9 @@ uihelpItemShieldFormat	[@{FFF9}@{HuittInfoOrigin}Origine :@{H}@{T12}@{FFFF}%orig
 	@{FFF9}  @{HuittInfoArmorPierc}Max / Cp Perforant :@{H}@{T12}@{FFFF}%p_pierce\n
 	%buffs\n
 	%special_effects\n
-	@{FFFF}%desc]
+	Description:\n
+	@{FFFF}%desc\n\n
+	@{FFFF}%custom_text]
 
 // HELP - ITEM - CraftTool
 // **************
@@ -5384,7 +5583,7 @@ uihelpItemCraftingToolFormat	[@{FFF9}@{HuittInfoOrigin}Origine :@{H}@{T12}@{FFFF
 	        %buffs\n
 	%special_effects\n
 	\n
-	@{FFFF}%desc]
+	@{FFFF}%desc%custom_text]
 
 // HELP - ITEM - Harvest Tool
 // **************
@@ -5398,7 +5597,7 @@ uihelpItemHarvestToolFormat	[@{FFF9}@{HuittInfoOrigin}Origine :@{H}@{T12}@{FFFF}
 	%buffs\n
 	%special_effects\n
 	\n
-	@{FFFF}%desc]
+	@{FFFF}%desc%custom_text]
 
 // HELP - ITEM - Taming Tool
 
@@ -5413,7 +5612,7 @@ uihelpItemTamingToolFormat	[@{FFF9}@{HuittInfoOrigin}Origine :@{H}@{T12}@{FFFF}%
 	@{FFF9}Portée Commande :@{T12}@{FFFF}%cmdrange\n
 	@{FFF9}Animaux de Bât Max :@{T12}@{FFFF}%maxpacker\n
 	\n
-	@{FFFF}%desc]
+	@{FFFF}%desc%custom_text]
 
 // HELP - ITEM - Jewelry
 // **************
@@ -5426,7 +5625,9 @@ uihelpItemJewelFormat	[@{FFF9}@{HuittInfoOrigin}Origine :@{H}@{T12}@{FFFF}%origi
 	@{FFF9}@{HuittInfoRequirement}Prérequis :@{H}@{T12}@{FFFF}%caracreq@{FFFF}%skillreq@{FFFF}%skillreq2\n
 	\n
 	%magic_protection%magic_resistance%buffs\n
-	@{FFFF}%desc]
+	Description:\n
+	@{FFFF}%desc\n\n
+	@{FFFF}%custom_text]
 
 // HELP - ITEM - crystalSpell
 // **************
@@ -5440,7 +5641,7 @@ uihelpItemCrystalSpell	[This item can be used to\n
 	\n
 	Note that applying a Spell Crystal wipes out any previous enchantment on the item in the right hand and reduces its current sap load to 0.\n
 	\n
-	%cansell%enchantment]
+	%cansell%enchantment%custom_text]
 
 uihelpItemChargeSpell	[@{FFF9}Sap Load:@{T12}@{FFFF}%quality\n
 	\n
@@ -5452,15 +5653,15 @@ uihelpItemChargeSpell	[@{FFF9}Sap Load:@{T12}@{FFFF}%quality\n
 	Then right-click on this charge, and choose "RELOAD RIGHT HAND".\n
 	\n
 	The curent sap load and maximum charge that the item can hold can be seen by clicking the right mouse button on the item and selecting 'info'.\n
-	%cansell]
+	%cansell%custom_text]
 
 // HELP - ITEM - animals
 // **************
-uihelpItemAnimal	[This item represent one \n
-	of your animal.\n
+uihelpItemAnimal	[This item represents\n
+	your animal #%petnumber.\n
 	\n
 	You can give or sell an animal through this item, but only if your animal's inventory is empty!\n
-	%cansell%desc]
+	%cansell%desc%custom_text]
 
 // HELP - ITEM - misc
 // **************
@@ -5468,7 +5669,7 @@ uihelpItemTeleport	[To use, right-click and choose\n
 	 "USE TELEPORT"\n
 	\n
 	\n
-	%cansell%desc]
+	%cansell%desc%custom_text]
 
 // **************
 // **************
@@ -5655,7 +5856,7 @@ uihelpPhraseCrystalSpellFormat	[@{FFFF}--- Enchantment ---\n
 
 // replaced in %req, where possible
 uihelpPhraseRequirementHeader	[\n
-	@{FFFF}--- Requirements --- \n
+	@{FFFF}--- Requirements ---\n
 	@{FFF9}@{HuittActionSkillPoint}Skill Points Cost:@{H}@{T12}@{FFFF}%sp / %basesp\n
 	@{FFF9}@{HuittActionSkillReq}Skills required:@{H}\n
 	]
@@ -5750,7 +5951,7 @@ uiTitleSkillHeader	[@{FFF9}   Skills  Needed:\n
 uiTitleBrickHeader	[@{FFF9}   Stanzas Needed:\n
 	]
 
-uiTitleSkillOr		[or] // dans le sens ‘ou’
+uiTitleSkillOr		[or] // dans le sens ‘ou'
 
 
 // HELP - PLAN
@@ -5937,6 +6138,8 @@ fct_prangeweapon_merchant	[ (Range Weapon Plan merchant)]
 fct_pmeleeweapon_merchant	[ (Melee Weapon Plan merchant)]
 
 fct_prm_merchant	[ (Raw Material Plan merchant)]
+
+fct_consumable_merchant	[ (Consumable merchant)]
 
 fct_pjewel_merchant	[ (Jewel Plan merchant)]
 
@@ -7087,6 +7290,11 @@ uiGuildDescription	[Description]
 
 uiGuildBlasonDesign	[Flag Design]
 
+uiGuildNameWarning [The name should be no longer than 32 characters. No symbols or numbers.]
+
+uiGuildDescWarning [The description should be no more than 200 characters. No symbols or numbers.]
+
+uiGuildCostInfo [The Cost of creating a guild is 100,000 dappers.]
 
 uiGuildBlasonBack	[Back]
 
@@ -7228,6 +7436,8 @@ uiWebDelMess	[Delete Message]
 uiWebDelTopic	[Delete Selected Topics]
 
 uiWebDelPost	[Delete Selected Posts]
+
+uiWebIG			[Web]
 
 //Help Bubbles
 uiBubbleBR	[BOTTOM RIGHT]
@@ -7803,7 +8013,13 @@ uiPvpLogo	[Logo PvP]
 
 uittPvpLogo	[Afficher le logo pvp au-dessus du personnage]
 
+uiMissionIcon	[Information de mission]
 
+uittMissionIcon	[Afficher l'information sur les missions au-dessus du PNJ]
+
+uiMiniMissionIcon	[Version miniature des icônes]
+
+uittMiniMissionIcon	[Afficher des petites icônes plutot que les grandes sur le radar]
 
 uigcEntityColor	[ENTITY]
 
@@ -8463,7 +8679,7 @@ uiWind	[Wind]
 
 // Continent names
 
-uiContinentIndoors	[]
+uiContinentIndoors	[indoors]
 
 uiContinentRouteGouffre	[the Abyss Road]
 
@@ -8484,10 +8700,6 @@ uiContinentSources	[the Sources]
 uiContinentTerre	[the Forgotten Lands]
 
 uiContinentBagne	[le bagne]
-
-uiContinentKitiniere	[the Kitin Lair]
-
-uiContinentCorruptedMoor	[the Corrupted Moor]
 
 // Season names
 
@@ -10141,7 +10353,7 @@ uittDead	[L'animal est mort.\n@{6F6F}Clic gauche @{FFFF}pour sélectionner.\n@{6
 
 uittDeathTimer	[Temps restant avant que le corps de cet animal ne disparaisse]
 
-uittAnimalDeadPopupToolTip	[Nombre d’heures restantes avant que le premier de vos animaux morts ne disparaisse]
+uittAnimalDeadPopupToolTip	[Nombre d'heures restantes avant que le premier de vos animaux morts ne disparaisse]
 
 uiAnimalSelectNotInVision	[You cannot select this animal because he is too far.]
 
@@ -10490,7 +10702,7 @@ uiWebOnQuit	[FILL THE SURVEY]
 
 uiAppear_Infos_Fyros	[THE FYROS CIVILIZATION\n
 	\n
-	The Fyros are a determined, loyal and fierce civilization who rank themselves among the greatest Atysian warriors. They are the offspring of a once despotic state whose society still rests on a strict code of honour and a common goal, namely the quest for the Great Dragon who has ravaged entire regions and threatens to rear its ugly head again and let loose all its hellfire (according to the sayings of the Karavan). \n
+	The Fyros are a determined, loyal and fierce civilization who rank themselves among the greatest Atysian warriors. They are the offspring of a once despotic state whose society still rests on a strict code of honour and a common goal, namely the quest for the Great Dragon who has ravaged entire regions and threatens to rear its ugly head again and let loose all its hellfire (according to the sayings of the Karavan).\n
 	In their dogged pursuit of this quest, the Fyros readily transgress Jena Law and Karavan interdiction concerning delving down into the bowels of Atys. Indeed, the search for the truth behind the Great Dragon has become a vehicle for their intellectual advancement, leading them to uncover as many mysterious relics as evils.\n
 	They have since rebuilt their towns and villages in the parched desert lands, where it is thought the Dragon is most likely to resurface. From these inhospitable dunes the Fyros strive to protect Atys, restore their Empire and develop their already extensive knowledge of the fabrication of fire-toughened tools and weaponry.\n
 	\n
@@ -10505,7 +10717,7 @@ uiAppear_Infos_Fyros	[THE FYROS CIVILIZATION\n
 	HOW THEY SEE:\n
 	\n
 	The Karavan\n
-	Traditionally, the Karavan are venerated as disciples of Jena and powerful armed forces. But during the Great Swarming, the Fyros realized that the Karavan did not manage to stop the Kitins invasion. The Fyros also believe that the Karavan didn’t do enough to save more homins. Since then, there is much doubt regarding the Karavan’s role on Atys.\n
+	Traditionally, the Karavan are venerated as disciples of Jena and powerful armed forces. But during the Great Swarming, the Fyros realized that the Karavan did not manage to stop the Kitins invasion. The Fyros also believe that the Karavan didn't do enough to save more homins. Since then, there is much doubt regarding the Karavan's role on Atys.\n
 	\n
 	The Kamis\n
 	As with any phenomenon whose mechanism they are unable to grasp, the Fyros behold the Kamis with a wary eye and refuse blind adherence to their teachings. But despite their reticence, the Fyros hold them in awe and are prepared to make pacts with the Kamis in exchange for their esteemed magic.\n
@@ -10515,12 +10727,12 @@ uiAppear_Infos_Fyros	[THE FYROS CIVILIZATION\n
 
 uiAppear_Infos_Matis	[THE MATIS CIVILIZATION\n
 	\n
-	Highly cultivated aesthetes well versed in forest botany, the Matis are both a romantic and domineering race. They staunchly believe that, just as every particle of the universe has a function, every homin must strive for her or his true place in society. Their obsession with genetic mutations has made them Atysian Master Manipulators of plant and animal life. Their weaponry, armor and even familiar household items are living objects. \n
+	Highly cultivated aesthetes well versed in forest botany, the Matis are both a romantic and domineering race. They staunchly believe that, just as every particle of the universe has a function, every homin must strive for her or his true place in society. Their obsession with genetic mutations has made them Atysian Master Manipulators of plant and animal life. Their weaponry, armor and even familiar household items are living objects.\n
 	The Matis have taken root in forest areas of the new lands where they are able to find every living essence needed for experimentation. Their villages are sculpted into the majestic trees and their strange and wonderful gardens are a marvel to behold. They seek to rebuild their majestic kingdom of the ancient lands devastated during the kitin war, but their own intrigues often consume all their energy as each family vies for the crown. Further to this, in their natural concern for environmental quality they forever strive to perfect their knowledge of botany to better nurture plant life to prevent it ever waning.\n
 	\n
 	HISTORY\n
 	\n
-	Early Matis tribes, settling around the wooded region of Matia, came together to form a community headed by tribe leaders. But decision making was slow and quarrelsome leading to discontent among the people. Soon the physically imposing and charismatic leader, Zachini, emerged rallying enough support from prominent community members to step forward as sole leader. The monarchy was born. It was under Zachini rule that the Momos, primitive tribes, were hunted to extermination under the pretext that the inferior creatures menaced the living space of the Matis peoples. The Matis quickly extended their dominions to the extremities of the forest lands where they were kept in check by the Fyros whose audacious emperor, Dyros the Great, secured a water route from the lake lands to the desert through Matis territory. This 'intrusion' on Matis territory triggered the start of the war of civilizations. \n
+	Early Matis tribes, settling around the wooded region of Matia, came together to form a community headed by tribe leaders. But decision making was slow and quarrelsome leading to discontent among the people. Soon the physically imposing and charismatic leader, Zachini, emerged rallying enough support from prominent community members to step forward as sole leader. The monarchy was born. It was under Zachini rule that the Momos, primitive tribes, were hunted to extermination under the pretext that the inferior creatures menaced the living space of the Matis peoples. The Matis quickly extended their dominions to the extremities of the forest lands where they were kept in check by the Fyros whose audacious emperor, Dyros the Great, secured a water route from the lake lands to the desert through Matis territory. This 'intrusion' on Matis territory triggered the start of the war of civilizations.\n
 	\n
 	The intermittent skirmishes went on for over two hundred years coming to a head with the Fire of Coriolis. A great inferno spread across Fyros wastelands preventing Fyros reinforcements from rallying to the defence of outposts positioned along the water route. The Matis king, Aniro III, took advantage of the diversion created by the fire to send in his armies to isolate and capture the Fyros military outposts. They were then able to overrun the lake lands of the Trykers who consequently fell into Matis slavery. But Matis domination was short lived as Fyros reprisals and Tryker rebellion soon made the aristocratic warriors resort back to a defensive strategy to retain their former dominions.\n
 	\n
@@ -10529,10 +10741,10 @@ uiAppear_Infos_Matis	[THE MATIS CIVILIZATION\n
 	HOW THEY SEE:\n
 	\n
 	The Karavan\n
-	The Matis willingly see the Karavan as faithful servants of Jena who collect resources as offerings for the goddess to prepare for the future on a planet of fresh woodlands and pastures new. But most of all, they see them as a useful ally whose arms of power they would all too gladly learn to wield. \n
+	The Matis willingly see the Karavan as faithful servants of Jena who collect resources as offerings for the goddess to prepare for the future on a planet of fresh woodlands and pastures new. But most of all, they see them as a useful ally whose arms of power they would all too gladly learn to wield.\n
 	\n
 	The Kamis\n
-	They are suspicious of these creatures who are opposed to their Karavan Guardians. What is more, the Kamis condemn Matis genetic manipulation of plant life. \n
+	They are suspicious of these creatures who are opposed to their Karavan Guardians. What is more, the Kamis condemn Matis genetic manipulation of plant life.\n
 	\n
 	Elias Tryton\n
 	Some witnessed the 'apparition' of Elias who appeared in a shaft of light from the canopy. Elders claim he is in fact a messenger of Jena who sent him to allow them to take refuge in the Prime Roots from kitin onslaughts of some three generations ago.]
@@ -10545,7 +10757,7 @@ uiAppear_Infos_Tryker	[THE TRYKER CIVILIZATION\n
 	\n
 	HISTORY\n
 	\n
-	The Trykers’ peaceful and idyllic existence became blighted when a great fire, known as the Fire of Coriolis, spread across Atys wastelands to the north so cutting off the water route between desert and lake lands as well as their Fyros protectors. Taking advantage of the calamity in the north to break the Fyro-Tryker alliance, the Matis king, Aniro III, led a lightening campaign to the south invading lake lands and easily reducing surviving Trykers to slavery. But an organized fellowship of rebels led by Loria broke away and took refuge in the depths of Atys.\n
+	The Trykers' peaceful and idyllic existence became blighted when a great fire, known as the Fire of Coriolis, spread across Atys wastelands to the north so cutting off the water route between desert and lake lands as well as their Fyros protectors. Taking advantage of the calamity in the north to break the Fyro-Tryker alliance, the Matis king, Aniro III, led a lightening campaign to the south invading lake lands and easily reducing surviving Trykers to slavery. But an organized fellowship of rebels led by Loria broke away and took refuge in the depths of Atys.\n
 
 	\n
 	Traveling underground through the Prime Roots, these Tryker heroes strove to shatter the shackles binding their brothers and led them across the Bark of Atys braving the worst of dangers. At the same time, realising that without water supplies from the lake lands his empire would crumble, the then aged Abylus the Learned, launched an all out attack on the Matis front in an attempt to re-establish the water route running through Matis territory to the Lake Lands. Matis forces thus engaged in all out warfare were unable to quell the revolt led by the Company of Loria who led their people back to the Lake Lands. Loria masterly divided her people into combat groups, each one led by a member of the Company to exert repeated alternating attacks along the southern front so creating havoc and relieving flagging Fyros forces in the north and west. Faced with Fyro-Tryker pressure, Aniro III eventually took the decision to retreat back to his dominions rather than risk losing them completely.\n
@@ -10571,7 +10783,7 @@ uiAppear_Infos_Zorai	[THE ZORAI CIVILIZATION\n
 	\n
 	HISTORY\n
 	\n
-	The first Zoraïs were a mysterious group of peoples who lived in the ancient jungles in the region known as Zoran south of the river Ti-aïn. It is not known exactly when the Zoraïs settled in the area but it was probably somewhere between 2199 and 2205. The first Zoraïs set up camp in the jungle where a tribe of them came into contact with Kami entities which they came to look upon as disciples of Jena, their Goddess. Given to mysticism, the Zoraïs built up mysterious cities centered around temples to Jena. The goo infested area they had claimed was not prized by other peoples and their civilization was able to quickly expand becoming a force to be reckoned with. Led by a dynasty of spiritual chieftains, they were able to annex jungle land easily fending off sporadic Fyros attacks on their impregnable temple cities. \n
+	The first Zoraïs were a mysterious group of peoples who lived in the ancient jungles in the region known as Zoran south of the river Ti-aïn. It is not known exactly when the Zoraïs settled in the area but it was probably somewhere between 2199 and 2205. The first Zoraïs set up camp in the jungle where a tribe of them came into contact with Kami entities which they came to look upon as disciples of Jena, their Goddess. Given to mysticism, the Zoraïs built up mysterious cities centered around temples to Jena. The goo infested area they had claimed was not prized by other peoples and their civilization was able to quickly expand becoming a force to be reckoned with. Led by a dynasty of spiritual chieftains, they were able to annex jungle land easily fending off sporadic Fyros attacks on their impregnable temple cities.\n
 	\n
 	Under the Cho dynasty they undertook a campaign of territorial expansion to house their ever increasing populations. They began to set up settlements to the north nearer to other homin civilizations. On witnessing what they saw as barbarous acts of cruelty they began the construction of a great wall delimiting their territory to preserve peace and harmony within and to keep undesirables out. This policy enabled them to steer clear of futile and soul destroying acts of violence and to keep out of the scourge of interracial warfare that continuously ravaged the ancient lands.\n
 	\n
@@ -10581,12 +10793,12 @@ uiAppear_Infos_Zorai	[THE ZORAI CIVILIZATION\n
 	HOW THEY SEE:\n
 	\n
 	The Karavan\n
-	 The Zoraïs see the Karavan as disciples of the initial teachings of Jena which did not account for the presence of the goo, hence the unreasonable Karavan interdictions regarding certain areas of the planet where the goo is thought to take its source. \n
+	 The Zoraïs see the Karavan as disciples of the initial teachings of Jena which did not account for the presence of the goo, hence the unreasonable Karavan interdictions regarding certain areas of the planet where the goo is thought to take its source.\n
 	\n
 	The Kamis\n
-	The Zoraïs believe that, created after the Karavan by Jena, the Kamis are the living embodiment of pure energy on Atys and must at all costs be protected. They believe themselves to be the chosen children of the Kamis because among the homins it is they who have most retained the pure energy. The Zoraïs may return to a state of 'purity' through Kamis worship and by endeavoring to keep as much pure energy as possible from leaking from their bodies as well as Atys. \n
+	The Zoraïs believe that, created after the Karavan by Jena, the Kamis are the living embodiment of pure energy on Atys and must at all costs be protected. They believe themselves to be the chosen children of the Kamis because among the homins it is they who have most retained the pure energy. The Zoraïs may return to a state of 'purity' through Kamis worship and by endeavoring to keep as much pure energy as possible from leaking from their bodies as well as Atys.\n
 	\n
-	Elias Tryton \n
+	Elias Tryton\n
 	The apparition of Elias is a manifestation of a great Kamis. He appeared in a halo of light some three generations ago to a chosen few to tell them how to lead homins from the kitin reign of terror through the rainbow to the relative safety of the Prime Roots. ]
 
 // MILKO INTERFACE
@@ -10803,7 +11015,7 @@ uiConfigAboutRyzomConfiguration	[About Ryzom Configuration]
 
 uiConfigRyzomConfigurationVersion	[Ryzom Configuration Version 0.9]
 
-uiConfigCopyright	[Copyright Gameforge France S.A.R.L. (C) 2003]
+uiConfigCopyright	[Copyright Winch Gate Property Limited (C) 2008]
 
 
 uiConfigDescription	[Description : ]
@@ -10900,9 +11112,18 @@ uiBrowseUndoButton	[Prev]
 
 uiBrowseRedoButton	[Next]
 
+uiBrowseRefresh		[Refresh]
+
+uiBrowseHome		[Home]
+
 uittBrowseUndo	[Browse the previous help page]
 
 uittBrowseRedo	[Browse the next help page]
+
+uittBrowseRefresh [Refresh the current page]
+
+uittBrowseHome	[Browse the home page]
+
 
 // Fight Actions weapon restriction
 // Single Skill composition
@@ -11074,52 +11295,53 @@ uiEulaAccept	[ACCEPT]
 
 uiEulaDecline	[DECLINE]
 
-uiEulaContent	[LICENCE RYZOM™\n
+uiEulaContent	[LICENCE RYZOM\n
 	\n
-	AVIS À L'UTILISATEUR : CE DOCUMENT EST UN CONTRAT. AVANT DE CLIQUER SUR LE BOUTON « J'ACCEPTE » CI-DESSOUS ET D'ACHEVER LA PROCÉDURE D'INSTALLATION OU D'ENREGISTREMENT, VEUILLEZ LE LIRE ATTENTIVEMENT.  EN CLIQUANT SUR LE BOUTON « J'ACCEPTE », VOUS ACCEPTEZ LES TERMES DU PRÉSENT CONTRAT ET LES OBLIGATIONS   QU'IL CONTIENT. SI VOUS NE SOUHAITEZ PAS DEVENIR PARTIE AU PRÉSENT CONTRAT OU ÊTRE LIÉ PAR L'ENSEMBLE DE    SES STIPULATIONS, CLIQUEZ SUR LE BOUTON « ANNULER » ET VEUILLEZ NE PAS INSTALLER (OU VEUILLEZ DÉSINSTALLER, SELON LE CAS) LE LOGICIEL, ET NE PAS L'UTILISER. SI VOUS CLIQUEZ SUR LE BOUTON « ANNULER », ET SI VOUS ÊTES L'ACHETEUR D'ORIGINE DU JEU SUR CD-ROM, NOUS VOUS CONSEILLONS DE CONTACTER LE DETAILLANT QUI VOUS A VENDU LE JEU POUR OBTENIR UN REMBOURSEMENT, CONFORMÉMENT À SA POLITIQUE DE RETOURS. EN AUCUN CAS VOUS NE POURREZ OBTENIR UN REMBOURSEMENT DE L'ABONNEMENT EVENTUELLEMENT PAYÉ OU INCLUS DANS LE PRIX DE VENTE DU CD-ROM SI VOUS CLIQUEZ SUR LE BOUTON « ANNULER ». En cas de difficultés relatives à la présente Licence, veuillez contacter le service clients Ryzom à l'adresse suivante support@ryzom.com\n
+	AVIS À L'UTILISATEUR : CE DOCUMENT EST UN CONTRAT. AVANT DE CLIQUER SUR LE BOUTON « J'ACCEPTE » CI-DESSOUS ET D'ACHEVER LA PROCÉDURE D'INSTALLATION OU D'ENREGISTREMENT, VEUILLEZ LE LIRE ATTENTIVEMENT. EN CLIQUANT SUR LE BOUTON « J'ACCEPTE », VOUS ACCEPTEZ LES TERMES DU PRÉSENT CONTRAT ET LES OBLIGATIONS   QU'IL CONTIENT. SI VOUS NESOUHAITEZ PAS DEVENIR PARTIE AU PRÉSENT CONTRAT OU ÊTRE LIÉ PAR L'ENSEMBLE DE SES STIPULATIONS, CLIQUEZ SUR LE BOUTON « ANNULER »ET VEUILLEZ NE PAS INSTALLER (OU VEUILLEZ DÉSINSTALLER, SELON LECAS) LE LOGICIEL, ET NE PAS L'UTILISER. En cas de difficultés relatives à la présente Licence, veuillez contacter le service clients Ryzom à l'adresse suivante support@ryzom.com\n
 	\n
-	1. OBJET. La présente Licence Ryzom (ci-après le « Contrat ») constitue un contrat entre vous et Gameforge France S.A.R.L (ci-après « Gameforge » ou « nous »). Il a pour objet de définir les conditions auxquelles Gameforge concède à l'utilisateur autorisé (tel que défini à l'article 2 ci-après) les services suivants relatifs au jeu massivement multijoueur en ligne Ryzom ™ (ci-après « Ryzom » ou le « Jeu » ou « Ryzom Ring » ), consistant dans l'ouverture et le maintien d'un compte permettant, par l'intermédiaire de l'Internet, de jouer au Jeu, et dans la concession d'une licence d'utilisation du Jeu.\n
+	1. OBJET DU CONTRAT. La présente Licence Ryzom (ci-après le « Contrat ») constitue uncontrat entre vous et Winch Gate Property Limited (ci-après « Winch Gate » ou « nous »). Il a pour objet de définir les conditions auxquelles Winch Gate concède à l'utilisateur autorisé (tel quedéfini à l'article 2 ci-après) les services suivants relatifs aujeu massivement multijoueur en ligne Ryzom (ci-après « Ryzom » ou le « Jeu » ou « Ryzom Arkitect » ), consistant dans l'ouverture et le maintien d'un compte permettant, par l'intermédiaire de l'Internet, de jouer au Jeu, et d'utiliser notre outil en jeu Ryzom Arkitect pour créer du contenu interne au jeu.\n
 	\n
-	2. UTILISATEURS AUTORISÉS. Seules les personnes physiques d'âge adulte peuvent ouvrir un compte leur permettant de jouer à Ryzom, pour leur propre usage ou pour celui de l'un de leurs enfants mineur. Si vous êtes mineur, vos parents doivent s'inscrire eux-mêmes et accepter le présent Contrat. Aux fins du présent Contrat, un « mineur » est une personne qui n'a pas atteint l'âge de la majorité légale dans le pays où elle réside. Les seuls utilisateurs autorisés à jouer à Ryzom sont les utilisateurs qui (a) ont acheté ou autrement obtenu de manière légitime le CD-Rom original du Jeu (ci-après le « CD-Rom »), (b) sont titulaires d'un compte d'accès et d'un abonnement en cours, et (c) disposent d'une connexion à Internet. Les utilisateurs autorisés sont ci-après dénommés les « Utilisateurs ».\n
+	2. UTILISATEURS AUTORISÉS. Seuls, les personnes physiques ayant atteint leur majorité sont autorisées à ouvrir un compte, pour leur utilisation personnelle ou pour celle de leurs enfants mineurs, leur permettant de jouer à Ryzom. Si vous êtes mineur, alors, vos parents doivent souscrire et accepter les termes de ce contrat. Pour l'objet de ce contrat, une personne mineure est une personne n'ayant pas atteint l'âge de la majorité légale dans son pays de résidence. De plus, les seuls utilisateurs autorisés à jouer à Ryzom sont ceux qui un compte gratuit ou payant en cours de validité. Il sera fait référence aux utilisateurs autorisés en tatnt qu"Utilisateurs" dans la suite de ce document.\n
 	\n
-	3.ENREGISTREMENT ET OUVERTURE D'UN COMPTE. Le présent Contrat vous permet de créer, par la procédure d'enregistrement qui vous est proposée, un (1) compte permettant de jouer à Ryzom et/ou Ryzom Ring par l'intermédiaire de l'Internet. La connexion à l'Internet n'est pas fournie par Gameforge, et l'Utilisateur est seul responsable du paiement de tous frais permettant d'obtenir, de maintenir et d'utiliser cette connexion. L'enregistrement nécessite la communication d'informations à Gameforge, notamment relatives à votre identité et au moyen de paiement utilisé. Vous garantissez que l'ensemble des informations que vous serez amené à fournir au cours de la procédure d'enregistrement sont exactes et véridiques, et vous vous engagez à informer Gameforge de tout changement relatif à ces informations en utilisant les moyens de mise à jour qui vous sont offerts dans le cadre de l'utilisation de votre compte.\n
+	3. INSCRIPTION ET OUVERTURE D'UN COMPTE. Ce contrat vous permet d'utiliser la procédure mise en place ppour enregistrer les détails afin de configurer un(1) compte qui vous permettra de jouer à Ryzom et/ou à Ryzom Arkitect sur internet. La connexion internet n'est pas fournie par Winch Gate, et l'utilisateur est complètement responsable du paiment de toutes les charges lui permettant d'obtenir, conserver et utiliser la connexion. L'inscription nécessite que vous envoyiez des informations à Winch Gate, parmi lesquelles des informations sur votre identité et le moyen de paiment utilisé. Vous garantissez que toutes les informations que vous fournissez au cours de votre procédure d'inscription est vrai, et vous vous engagez à informer Winch Gate de tous les changements de cette information, en utilisant la fonction de mise à jour fournie en tant que part de votre compte.\n
 	\n
-	4.CARACTÈRE PERSONNEL DU COMPTE. L'utilisation du compte est strictement personnelle. Le compte ne doit pas être partagé ou autrement concédé à un tiers, gratuitement ou non, même temporairement, ni faire l'objet d'une opération, gratuite ou non, étrangère à l'utilisation normale du Jeu. L'Utilisateur est pleinement responsable de l'utilisation de son compte d'accès ou de l'utilisation faite de son compte par son enfant mineur ou tout tiers qui y aurait accès.\n
+	4. CARACTÈRE PERSONNEL DU COMPTE. L'utilisation du compte est strictement personnelle. Le compte ne doit pas être partagé ou autrement concédé à un tiers, gratuitement ou non, même temporairement, ni faire l'objet d'une opération, gratuite ou non, étrangère à l'utilisation normale du Jeu. L'Utilisateur est pleinement responsable de l'utilisation de son compte d'accès ou de l'utilisation faite de son compte par son enfant mineur ou tout tiers qui y aurait accès.\n
 	\n
-	5.IDENTIFIANT ET MOT DE PASSE. Pour obtenir un compte, vous devrez choisir un identifiant de connexion et un mot de passe, qui vous permettront par la suite d'accéder à ce compte. Cet identifiant et ce mot de passe sont strictement personnels et ne peuvent être utilisés par un tiers. De même, vous ne pouvez utiliser vous-même l'identifiant et le mot de passe d'un autre joueur. Vous êtes pleinement responsable du choix de vos identifiant et mot de passe, du maintien de leur confidentialité, et de l'usage qui pourrait en être fait par un tiers. Gameforge décline toute responsabilité pour tout dommage causé à votre compte par l'utilisation non autorisée de votre identifiant ou mot de passe. En cas de perte l'attribution d'un nouvel identifiant ou d'un nouveau mot de passe pourra être facturée.\n
+	5. IDENTIFIANT ET MOT DE PASSE. Pour obtenir un compte, vous devrez choisir un identifiant de connexion et un mot de passe, qui vous permettront par la suite d'accéder à ce compte. Cet identifiant et ce mot de passe sont strictement personnels et ne peuvent être utilisés par un tiers. De même, vous ne pouvez utiliser vous-même l'identifiant et le mot de passe d'un autre joueur. Vous êtes pleinement responsable du choix de vos identifiant et mot de passe, du maintien de leur confidentialité, et de l'usage qui pourrait en être fait par un tiers. Winch Gate décline toute responsabilité pour tout dommage causé à votre compte par l'utilisation non autorisée de votre identifiant ou mot de passe.\n
 	\n
-	6.ABONNEMENT ET FACTURATION. Les tarifs d'abonnement en vigueur sont indiqués sur le site www.ryzom.com et lors de la procédure d'enregistrement. Ces tarifs pourront être modifiés à tout moment par Gameforge, sous réserve d'en informer au préalable l'Utilisateur par une notice sur le site Internet de Gameforge à l'adresse www.ryzom.com, ou lors de la connexion de l'Utilisateur à son compte ou par un message email adressé à ce dernier. La modification du tarif applicable ne prendra effet qu'à compter du prochain renouvellement de la période d'abonnement. Les prix d'abonnement sont indiqués en euros dans les pays de la zone euro, en livre sterling au Royaume-Uni et en dollars pour les Etats Unis. Le tarif correspond à une durée d'abonnement précise (1 mois, 3 mois, 6 mois,…). L'abonnement est renouvelé tacitement par périodes identiques, sauf résiliation de l'Utilisateur adressée à Gameforge dans les conditions décrites à l'article 18 ci-après. Le paiement de l'abonnement permet à l'Utilisateur d'accéder à Ryzom de manière illimitée pendant la période d'abonnement et ses éventuels renouvellements. Ce paiement n'inclut pas le prix d'achat de Ryzom sur CD-Rom et les coûts associés à la connexion à Internet nécessaire pour souscrire l'abonnement et jouer à Ryzom. Sauf opération commerciale particulière, le premier mois d'abonnement est inclus dans le prix d'achat du CD-Rom de Ryzom vendu dans le commerce. L'abonnement et ses renouvellements éventuels sont payés d'avance et ne sont pas remboursables. L'abonnement est payé par carte bancaire ou par tout autre moyen accepté par Gameforge, selon les procédures indiquées sur le site de Gameforge. Le prix de l'abonnement sera prélevé automatiquement sur votre carte bancaire lors de l'abonnement initial (s'il n'est pas compris dans le prix de vente d'un CD-Rom de Ryzom) ou à la date de chaque renouvellement. Gameforge se réserve le droit de fermer immédiatement le compte d'un Utilisateur en cas d'impossibilité de trai
-ter sa carte bancaire ou son moyen de paiement accepté à une date de renouvellement.\n
+	6. ABONNEMENT ET FACTURATION. Les tarifs d'abonnement actuels sont affichés sur le site web à l'adresse http://ryzom.com/?page=page_why_pay et à nouveaux lors de la procédure d'inscription. Ces tarifs peuvent être changé par Winch Gate à tout moment, sous réserve de prévenir l'Utilisateur avant, soit sur la page http://ryzom.com/?page=page_why_pay, lors de la connexion de l'Utilisateur à son compte, ou par le biais d'un email à l'adresse de l'Utilisateur. Les modifications de tarifs ne prendront effet que lors du prochain renouvellement de l'abonnement. Les traifs d'abonnement sont exprimés en EUROS dans les pays de la zone Euro, en Livres Sterling dans le Royaume Uni et en US Dollars pour les États Unis d'Amérique. Le tarif est indiqué pour une période d'abonnement exacte (1 mois, 3 mois, 6 mois, 1 an). Les abonnements peuvent être, selon le paiement utilisé, soit renouvellées tacitement par périodes identiques, sauf résiliation de l'Utilisateur adressée à Winch Gate comme prévu à l'article 18 ci-dessous, soit renouvelé manuellement par l'Utilisateur. Lorsque le paiment doit être renouvelé par l'Utilisateur, ce dernier est responsabledu rebouvellement de sa souscription avant l'échéance, sinon Winch Gate se réserve le droit de fermer immédiatement le compte. Le paiement des frais de souscription permet à l'Utilisateur d'accéder à Ryzom sans limites durant la durée de la souscription et de tout prolongement par renouevellement. Ce paiment ne couvre pas les coûts associés à la connexion internet nécessaire pour utiliser la souscription et jouer à Ryzom . Les frais de souscription et de tout renouvellement sont payés en avance et non remboursables. La souscription peut être payée par carte de crédit ou de débit, ou tout autre moyen accepté par Winch Gate, en accord avec la procédure affichée sur le site de Winch Gate. Les frais de souscription seront automatiquement prélevés sur votre carte de crédit ou de débit à la date de votre souscription et à celle de chaque renouvellement. Winch Gate se réserve le droit de fermer un immédiatement un compte Utilisateur, à n'importe quelle date de renouvellement, s'il prouve qu'il est impossible de prélever les fonds de manière sécurisée de la carte de crédit ou de débit, ou des autres moyens de paiments agréés.\n
 	\n
-	7.SECURISATION DES PAIEMENTS. : La sécurisation des paiements par carte bancaire est assurée par le système de paiement fourni par la société Bibit Global Payment Services (www.bibit.com), prestataire spécialisé dans la sécurisation des paiements en ligne. Les informations relatives à votre carte bancaire (nom, type de carte, numéro et date d'expiration) sont transmises cryptées sous protocole SSL  directement au serveur de la société BIBIT, qui valide le paiement auprès des Institutions Bancaires. Les informations bancaires fournies seront utilisées à seule fin de procéder au traitement et à la facturation de votre paiement.\n
+	7. SÉCURITÉ DU PAIMENT. La sécurité du paiment par carte de crédit ou de débit est assurée par l'utilisation de différentes compagnies de sytèmes de paiments externes, telles que WorldPay (www.worldpay.com) et PayPal(www.paypal.com), toutes deux fournisseurs spécialisés de transaction de paiment sécurisées en ligne, tout comme en utilisant le système de paiement du portail de Steam (http://store.steampowered.com). Vos données de cartes de crédit ou de débit (nom, type de cartes, numéro et date d'expiration) sont directement chiffrées par les différents serveurs de systèmes de paiment en utilisant le protocole SSL. Les détails bancaires fournis par le souscripteur seront utilisés seulement pour le traitement et la facturation de ses paiements.\n
 	\n
-	8.LICENCE D'UTILISATION DE RYZOM. Le présent Contrat concède à l'Utilisateur un droit limité, non exclusif et révocable d'accéder, au travers d'un compte valide, au serveur du Jeu pour utiliser le Jeu conformément à sa destination et aux conditions des présentes, à l'exclusion de tout autre droit. Le présent Contrat vous autorise à installer et à utiliser une copie du Logiciel présent sur le CD-Rom sur un (1) seul ordinateur. Le Logiciel est « utilisé » sur un ordinateur lorsqu'il est chargé dans la mémoire temporaire (mémoire RAM) ou installé dans la mémoire permanente (par exemple, disque dur, CD-Rom ou autre unité de mémoire). Le logiciel ne peut être partagé ou utilisé concurremment sur différents ordinateurs. En cas d'installation sur un réseau, vous devez obtenir une licence pour chaque ordinateur sur lequel le Jeu est utilisé. Vous pouvez effectuer une (1) copie de sauvegarde ou d'archivage uniquement du CD-Rom, à l'exclusion de toute autre copie, de tout ou partie du CD-Rom ou du Jeu. Sous réserve des restrictions stipulées au présent Contrat, Gameforge accorde à l'Utilisateur une licence non-exclusive et révocable d'utiliser le Jeu uniquement dans le but de jouer à Ryzom et/ou Ryzom Ring dans des conditions légitimes par l'intermédiaire d'un compte autorisé et entièrement payé ou dans le cadre d'une période d'essai valide. Toutes les autres utilisations du compte ou du Jeu sont interdites. En particulier, vous ne pouvez en aucun cas procéder à l'ingénierie inverse, décompiler ou désassembler le ou les logiciels constituant le Jeu. Vous ne pouvez non plus transférer tout ou partie du Jeu à un tiers. Vous ne pouvez louer, prêter ou vendre le Jeu. Tous les droits qui ne sont pas expressément accordés à l'Utilisateur par le présent Contrat sont réservés à Gameforge. \n
+	8. PROTECTION DE LA VIE PRIVÉE ET DES DONNÉES. En acceptant ce contrat, vous confirmez que vous avez lu et compris la politique de confidentialité (http://ryzom.com/?page=privacy_policy) de Winch Gate. En utilisant les produits Winch Gate (« Ryzom » et « www.ryzom.com »), vous acceptez sa politique de confidentialité. Winch Gate respecte la vie privée de ses visiteurs en ligne et reconnaît l'importance de fournir un environnement sécurisé pour les informations qu'elle recueille. Winch Gate peut collecter des données sur votre comportement en jeu, comme votre temps de jeu, à des fins d'analyse statistique. Ces statistiques seront totalement anonymes et ne contiendront aucune donnée personnelle. Toutefois, si Winch Gate recueille des données personnelles à des fins statistiques, Winch Gate en informera l'utilisateur de manière appropriée et demandera son consentement.\n
 	\n
-	9.LICENCE GNU/GPL. Certaines sources du logiciel client de Ryzom (partie du logiciel située sur l'ordinateur de l'Utilisateur) ont été publiées par Gameforge sous une Licence spécifique « GNU General Public License », dont le texte est accessible à l'adresse suivante : http://www.nevrax.org/free/GPL.php3. Leur utilisation est soumise aux termes de cette licence. Les sources concernées sont identifiées sur le site de Gameforge à l'adresse  www.nevrax.org.\n
+	9. LICENCE D'UTILISATION DE RYZOM. Le présent Contrat concède à l'Utilisateur un droit limité, non exclusif et révocable d'accéder, au travers d'un compte valide, au serveur du Jeu pour utiliser le Jeu conformément à sa destination et aux conditions des présentes, à l'exclusion de tout autre droit. Le présent Contrat vous autorise à installer et à utiliser une copie gratuite du Logiciel. Sous réserve des restrictions stipulées au présent Contrat, Winch Gate accorde à l'Utilisateur une licence non-exclusive et révocable d'utiliser le Jeu uniquement dans le but de jouer à Ryzom et/ou d'utiliser les outils de Ryzom Arkitect dans des conditions légitimes par l'intermédiaire d'un compte autorisé gratuit ou entièrement payé. Toutes les autres utilisations du compte ou du Jeu sont interdites. En particulier, vous ne pouvez en aucun cas procéder à l'ingénierie inverse, décompiler ou désassembler le ou les logiciels constituant le Jeu. Vous ne pouvez non plus transférer tout ou partie du Jeu à un tiers. Vous ne pouvez louer, prêter ou vendre le Jeu. Tous les droits qui ne sont pas expressément accordés à l'Utilisateur par le présent Contrat sont réservés à Winch Gate.\n
 	\n
-	10.VERSIONS ULTÉRIEURES – AMÉLIORATIONS. Ni ce Contrat ni votre compte ne vous donnent droit à une quelconque version ultérieure ou extension de Ryzom et/ou Ryzom Ring. Si Gameforge peut mettre à jour ou améliorer le Jeu, Gameforge n'a aucune obligation de vous fournir cette mise à jour ou amélioration. La fourniture gratuite par Gameforge d'une mise à jour ou d'une amélioration ne vous donne aucun droit sur des mises à jour ou améliorations ultérieures.\n
+	10. LICENCE GNU AGPL. Le code source du logiciel client de Ryzom (partie du logiciel sur l'ordinateur de l'utilisateur) a été publié par Winch Gate sous la licence spécifique « GNU Affero General Public License », dont le texte est accessible à cette URL : https://www.gnu.org/licenses/agpl-3.0.fr.html. Son utilisation est soumise aux termes de cette licence. Il peut être téléchargé sur : https://bitbucket.org/ryzom/ryzomcore/.\n
 	\n
-	11.PROPRIÉTÉ DU JEU ET DE SES ÉLÉMENTS. Gameforge est propriétaire exclusif de Ryzom et/ou Ryzom Ring, de l'ensemble des éléments propriétaires destinés à le faire fonctionner, et de l'ensemble des droits de propriété intellectuelle relatifs à ces éléments. Vous reconnaissez que Ryzom et son contenu sont protégés par copyright et par d'autres droits de propriété intellectuelle détenus par Gameforge ou ses fournisseurs, et que vous ne bénéficiez d'aucun droit au delà des droits limités de licence vous sont expressément concédés aux termes de l'article 7 des présentes. Gameforge est également propriétaire exclusif du compte de l'Utilisateur et des éléments créés ou utilisés par l'Utilisateur au travers de son compte, comprenant notamment les personnages, leur apparence, leurs caractéristiques, leur histoire, les objets créés ou fabriqués, les guildes, groupes et titres. L'Utilisateur concède également à Gameforge le droit d'utiliser l'information transmise au serveur au moyen du compte (à l'exception des données personnelles et des messages adressés aux autres Utilisateurs) comme bon lui semble, y compris pour un usage commercial. \n
+	11. VERSION ULTÉRIEURE ET AMÉLIORATIONS. Ni ce contrat ni votre compte ne vous donne le droit à une version ultérieure ou une extension de Ryzom et/ou des outils Ryzom Arkitect. Wich Gate peut mettre àà jour et améliorer le Jeu, mais sans obligation de vous fournir cette mise à jour ou cette amélioration. La fourniture par Winch Gate d'un mise à jour ou amélioration gratuite ne vous donne aucun droit à une mise à jour ou amélioration ultérieure.\n
 	\n
-	12.INFORMATIONS ET DONNÉES TRANSMISES PAR L'UTILISATEUR. Les informations et données communiquées ou transmises par l'Utilisateur dans le cadre de l'utilisation de Ryzom ne doivent pas (a) violer les droits de tiers, y compris leurs droits de propriété intellectuelle, leur droit à l'image et leur droit à la vie privée; (b) violer une loi ou une réglementation quelconque; (c) contenir des propos diffamatoires, indécents, obscènes ou autrement préjudiciables aux mineurs; et (d) contenir des virus, chevaux de Troie, codes invalidants, vers, bombes logiques, ou autres instructions, programmes ou sous-programmes d'ordinateur destinés à causer ou qui causent des dommages aux données ou des interventions non autorisées sur les logiciels ou les serveurs de Ryzom et/ou Ryzom Ring. Nous pourrons prendre toute mesure en urgence sur votre compte (y compris la suspension ou l'annulation de celui-ci) si nous pensons (à notre seule discrétion) que cette utilisation contrevient aux interdictions ci-dessus. \n
+	12. PROPRIÉTÉ DU JEU ET DE SES ÉLÉMENTS. Winch Gate est le seul proprétaire de Ryzom et des outils Ryzom Arkitect, de tous les élémens propriétaires créés pour le faire fonctionner, et de tous les droits de propriété intellectuelle concernant ces éléments. Vous reconnaissez que Ryzom et son contenu sont protégés par le copyright et les autres droits de propriété intellectuelle détenus par Winch Gate ou ses fournisseurs, et que vous n'avez aucun droits au delà de la licence limitée qui vous est expressément accordée à l'article 7 du présent contrat. Winch Gate est également le seul propriétaire du compte de l'Utilisateur et de tout élément, objet, concept ou contenu créé par l'Utilisateur en utilisant ce compte, y compris, mais pas seulement, les personnages, leur apparence, leurs caractéristiques, leur histoire, les objets créés ou manufacturés, les guildes, groupes et titres, et n'importe quel élément, objet, concept ou contenu créé en utilisant les outil Ryzom Arkitect. L'Utilisateur donne également à Winch Gate les pleins droits de propriété afin d'utiliser les informations envoyées au serveur en utilisant le compte et de tout élément, objet, concept, ou contenu créé en utilisant les outils Ryzom Arkitect (à l'expression des données personnelles et des messages adressés aux autres Utilisateurs) comme il l'entend, incluant une exploitation commerciale.\n
 	\n
-	13.RÈGLES DE CONDUITE. Vous reconnaissez que le bon fonctionnement et le succès d'un Jeu de rôle en ligne comme Ryzom et/ou Ryzom Ring résulte d'un équilibre délicat que Gameforge se doit de préserver. En conséquence, il est strictement interdit à l'Utilisateur : (a) d'utiliser un logiciel ou une méthode quelconque pour modifier le contenu ou les fonctionnalités du Jeu ; (b) de provoquer une surcharge du serveur ; (c) d'utiliser tout procédé facilitant la saisie de toute instruction à une cadence accélérée en comparaison avec le déroulement ordinaire de Jeu ; (d) de modifier l'interface utilisateur ou tout autre élément pour obtenir des objets, points d'expérience, devises, attributs de caractère, rangs, etc., ne résultant pas d'une utilisation normale du Jeu ; (e) d'acheter, de vendre ou de transférer des personnages ou des attributs de personnages du Jeu. En outre, l'Utilisateur doit à tout moment respecter le Code de conduite, les Politiques de Courtoisie et la Charte de nommage de Ryzom présents sur son site à l'adresse www.ryzom.com, dont le contenu est incorporé aux présentes par référence. Nous pourrons prendre toute mesure en urgence sur votre compte (y compris la suspension ou l'annulation de celui-ci) si nous pensons (à notre seule discrétion) que cette utilisation contrevient aux interdictions ci-dessus.\n
+	13. INFORMATIONS ET DONNÉES TRANSMISES PAR L'UTILISATEUR. Les informations et données communiquées ou transmises par l'Utilisateur dans le cadre de l'utilisation de Ryzom ne doivent pas (a) violer les droits de tiers, y compris leurs droits de propriété intellectuelle, leur droit à l'image et leur droit à la vie privée; (b) violer une loi ou une réglementation quelconque; (c) contenir des propos diffamatoires, indécents, obscènes ou autrement préjudiciables aux mineurs; et (d) contenir des virus, chevaux de Troie, codes invalidants, vers, bombes logiques, ou autres instructions, programmes ou sous-programmes d'ordinateur destinés à causer ou qui causent des dommages aux données ou des interventions non autorisées sur les logiciels ou les serveurs de Ryzom et/ou les outils Ryzom Arkitect. Nous pourrons prendre toute mesure en urgence sur votre compte (ycompris la suspension ou l'annulation de celui-ci) si nous pensons (à notre seule discrétion) que cette utilisation contrevient aux interdictions ci-dessus.\n
 	\n
-	14.INFORMATIONS PERSONNELLES / UTILISATEUR. Les engagements de Gameforge concernant les données personnelles sont contenues dans la politique de protection des données personnelles présente sur le site Internet de Gameforge à l'adresse www.ryzom.com, qui sont intégrées au présent Contrat par référence. Gameforge n'est pas en mesure de s'assurer que les informations personnelles communiquées par l'Utilisateur à un autre Utilisateur dans le cadre du Jeu ne seront pas révélées aux tiers. Afin de permettre la mise à jour / patching du Jeu, vous autorisez Gameforge (a) à extraire des données de profil de votre matériel informatique ; (b) à extraire de votre ordinateur l'information relative à la localisation du Jeu dans votre système de fichiers et à vos droits d'accès ; et (c) à télécharger des éléments du Jeu et des éléments nécessaires à son installation sur votre ordinateur utilisant votre compte. \n
+	14. RÈGLES DE CONDUITE. Vous reconnaissez que le bon fonctionnement et le succès d'un Jeu de rôle en ligne comme Ryzom et/ou Ryzom Arkitect résulte d'un équilibre délicat que Winch Gate se doit de préserver. En conséquence, il est strictement interdit à l'Utilisateur : (a) d'utiliser un logiciel ou une méthode quelconque pour modifier le contenu ou les fonctionnalités du Jeu ; (b) de provoquer une surcharge du serveur ; (c) d'utiliser tout procédé facilitant la saisie de toute instruction à une cadence accélérée en comparaison avec le déroulement ordinaire de Jeu ; (d) de modifier l'interface utilisateur ou tout autre élément pour obtenir des objets, points d'expérience, devises, attributs de caractère, rangs, etc., ne résultant pas d'une utilisation normale du Jeu ; (e) d'acheter, de vendre ou de transférer des personnages ou des attributs de personnages du Jeu, ou tout élément, objet, concept,  ou tout contenu créé en utilisant les outils Ryzom Arkitect. En outre, l'Utilisateur doit à tout moment respecter le Code de conduite, les Politiques de Courtoisie et la Charte de nommage de Ryzom présents sur le forum du Jeu à l'adresse http://app.ryzom.com/app_forum/index.php?page=topic/view/21885/, dont le contenu est incorporé aux présentes par référence. Nous pourrons prendre toute mesure en urgence sur votre compte (y compris la suspension ou l'annulation de celui-ci) si nous pensons (à notre seule discrétion) que cette utilisation contrevient aux interdictions ci-dessus.\n
 	\n
-	15.GARANTIE / LIMITATION DE RESPONSABILITÉ. Le CD-Rom, le Jeu et les services associés sont fournis « tels quels » par Gameforge, sans autre garantie que les garanties légales d'ordre public minimum applicables au présent Contrat. Toute autre garantie, légale ou conventionnelle, est expressément exclue. Gameforge produira ses meilleurs efforts afin de rendre le compte de l'Utilisateur accessible de manière permanente, sous réserve des interruptions dues à des interventions techniques et de maintenance. Cependant, Gameforge ne saurait garantir un fonctionnement continu et sans erreur de ses services ou du Jeu, ni l'accès permanent des Utilisateurs à leur compte. En tout état de cause, la responsabilité de Gameforge ne saurait être engagée en cas de dommages causés aux matériels et aux logiciels de l'Utilisateur lors de l'Utilisation du Jeu. A ce titre, il est rappelé aux Utilisateurs la nécessité de maintenir une configuration matérielle et logicielle correcte et conforme aux préconisations de Gameforge, de procéder aux mises à jours régulières de leurs logiciels et à des sauvegardes régulières de leurs fichiers importants. Gameforge ne saurait non plus être responsable du contenu des échanges entre joueurs et du comportement de ceux-ci. Si la responsabilité de Gameforge venait à être engagée à un titre quelconque, cette responsabilité ne saurait être supérieure au montant cumulé des abonnements payés par l'Utilisateur.\n
+	15. INFORMATIONS PERSONNELLES / UTILISATEUR. Les engagements de Winch Gate concernant les données personnelles sont contenues dans la politique de protection des données personnelles présente sur le site Internet de Ryzom à l'adresse www.ryzom.com, qui sont intégrées au présent Contrat par référence. Winch Gate n'est pas en mesure de s'assurer que les informations personnelles communiquées par l'Utilisateur à un autre Utilisateur dans le cadre du Jeu ne seront pas révélées aux tiers. Afin de permettre la mise à jour / patching du Jeu, vous autorisez Winch Gate (a) à extraire des données de profil de votre matériel informatique ; (b) à extraire de votre ordinateur l'information relative à la localisation du Jeu dans votre système de fichiers et à vos droits d'accès ; et (c) à télécharger des éléments du Jeu et des éléments nécessaires à son installation sur votre ordinateur utilisant votre compte.\n
 	\n
-	16.CESSATION DE L'EXPLOITATION DU JEU PAR Gameforge. Gameforge ne donne aucune garantie à l'Utilisateur sur la durée d'exploitation du Jeu. Gameforge se réserve le droit de cesser de proposer le Jeu et de maintenir ses services, à sa seule discrétion, notamment lorsque le nombre d'Utilisateurs deviendra ou s'il demeure insuffisant, sous réserve d'en avertir l'Utilisateur au moyen d'une mention lors de l'accès au Jeu, sur son site Internet à l'adresse www.ryzom.com ou par un message email. Les comptes d'exploitation seront alors définitivement fermés.\n
+	16. GARANTIE / LIMITATION DE RESPONSABILITÉ. Le Jeu et les services associés sont fournis « tels quels » par Winch Gate, sans autre garantie que les garanties légales d'ordre public minimum applicables au présent Contrat. Toute autre garantie, légale ou conventionnelle, est expressément exclue. Winch Gate produira ses meilleurs efforts afin de rendre le compte de l'Utilisateur accessible de manière permanente, sous réserve des interruptions dues à des interventions techniques et de maintenance. Cependant, Winch Gate ne saurait garantir un fonctionnement continu et sans erreur de ses services ou du Jeu, ni l'accès permanent des Utilisateurs à leur compte. En tout état de cause, la responsabilité de Winch Gate ne saurait être engagée en cas de dommages causés aux matériels et aux logiciels de l'Utilisateur lors de l'Utilisation du Jeu. A ce titre, il est rappelé aux Utilisateurs la nécessité de maintenir une configuration matérielle et logicielle correcte et conforme aux préconisations de Winch Gate, de procéder aux mises à jours régulières de leurs logiciels et à des sauvegardes régulières de leurs fichiers importants. Winch Gate ne saurait non plus être responsable du contenu des échanges entre joueurs et du comportement de ceux-ci. Si la responsabilité de Winch Gate venait à être engagée à un titre quelconque, cette responsabilité ne saurait être supérieure au montant cumulé des abonnements payés par l'Utilisateur.\n
 	\n
-	17.RÉSILIATION PAR Gameforge. Gameforge pourra résilier le présent Contrat et fermer sans préavis le compte de l'Utilisateur, immédiatement et sans sommation ni préavis, en cas de manquement, par l'Utilisateur, à l'une quelconque des ses obligations au terme du présent Contrat et ou de non respect par l'Utilisateur des conditions imposées par l'un des documents auxquels ce Contrat fait référence. Dans cette hypothèse, aucun remboursement ne sera dû à l'Utilisateur sur la partie de l'abonnement correspondant aux jours restant à courir jusqu'à la date expiration normale de la période d'abonnement en cours.\n
+	17. CESSATION DE L'EXPLOITATION DU JEU PAR WINCH GATE. Winch Gate ne donne aucune garantie à l'Utilisateur sur la durée d'exploitation du Jeu. Winch Gate se réserve le droit de cesser de proposer le Jeu et de maintenir ses services, à sa seule discrétion, notamment lorsque le nombre d'Utilisateurs deviendra ou s'il demeure insuffisant, sous réserve d'en avertir l'Utilisateur au moyen d'une mention lors de l'accès au Jeu, sur son site Internet à l'adresse www.ryzom.com ou par un message email. Les comptes d'exploitation seront alors définitivement fermés.\n
 	\n
-	18.RÉSILIATION PAR L'UTILISATEUR. L'Utilisateur peut mettre fin au présent Contrat et clôturer son compte à tout moment, sur notification adressée Gameforge, par courrier ou dans les conditions indiquées lors de l'accès au compte. La résiliation prendra effet à l'expiration de la période d'abonnement en cours. Les sommes payées en contrepartie de l'abonnement en cours ne pourront être restituées, même si l'Utilisateur n'utilise pas son compte jusqu'à la date de résiliation. \n
+	18. RÉSILIATION PAR WINCH GATE. Winch Gate pourra résilier le présent Contrat et fermer sans préavis le compte de l'Utilisateur, immédiatement et sans sommation ni préavis, en cas de manquement, par l'Utilisateur, à l'une quelconque des ses obligations au terme du présent Contrat et ou de non respect par l'Utilisateur des conditions imposées par l'un des documents auxquels ce Contrat fait référence. Si Winch Gate ferme le compte d'un Utilisateur à cause d'une violation du contrat, Winch Gate se réserve le droit d'exclure l'ordinateur de l'Utilisateur, sa carte de crédit et/ou desésactiver le Logiciel pour un accès ultérieur au Jeu. Si l'ordinateur est sclu ou le logiciel désactivé, aucun autre Utilisateur utilisant le même ordinateur  et/ou logiciel ne pourra se connecter. Si la carte de crédit du compte est bannie, tous les comptes utilisant la même carte de crédit peuvent également être bannis. Dans cette hypothèse, aucun remboursement ne sera dû à l'Utilisateur sur la partie de l'abonnement correspondant aux jours restant à courir jusqu'à la date d'expiration normale de la période d'abonnement en cours.\n
 	\n
-	19.MODIFICATIONS DE LA LICENCE. Gameforge se réserve le droit de modifier les termes du présent Contrat à tout moment. L'Utilisateur sera informé des modifications éventuelles apportées au Contrat lors de l'accès à son compte suivant ce changement. L'accès au Jeu vaudra alors acceptation des conditions du Contrat modifié, qui s'appliqueront immédiatement. \n
+	19. RÉSILIATION PAR L'UTILISATEUR. L'Utilisateur peut mettre fin au présent Contrat et clôturer son compte à tout moment, sur notification adressée Winch Gate, par email à support@ryzom.com ou dans les conditions indiquées lors de l'accès au compte. La résiliation prendra effet à l'expiration de la période d'abonnement en cours. Les sommes payées en contrepartie de l'abonnement en cours ne pourront être restituées, même si l'Utilisateur n'utilise pas son compte jusqu'à la date de résiliation.\n
 	\n
-	20.PRÉCAUTIONS A PRENDRE / ÉPILEPSIE. Gameforge vous rappelle qu'il est nécessaire d'éviter de jouer si vous êtes fatigué ou si vous manquez de sommeil. Assurez-vous que vous jouez dans une pièce bien éclairée en modérant la luminosité de votre écran. Lorsque vous utilisez un jeu vidéo susceptible d'être connecté à un écran, jouez à bonne distance de cet écran de télévision et aussi loin que le permet le cordon de raccordement. En cours d'utilisation, faites des pauses de dix à quinze minutes toutes les heures. De même, nous attirons votre attention sur le fait que certaines personnes sont susceptibles de faire des crises d'épilepsie comportant, le cas échéant, des pertes de conscience à la vue, notamment, de certains types de stimulations lumineuses fortes : succession rapide d'images ou répétition de figures géométriques simples, d'éclairs ou d'explosions. Ces personnes s'exposent à des crises lorsqu'elles jouent à certains jeux vidéo comportant de telles stimulations, alors même qu'elles n'ont pas d'antécédent médical ou n'ont jamais été sujettes elles-mêmes à des crises d'épilepsie. Si vous-même ou un membre de votre famille avez déjà présenté des symptômes liés à l'épilepsie (crise ou perte de conscience) en présence de stimulations lumineuses, consultez votre médecin avant toute utilisation. Les parents se doivent également d'être particulièrement attentifs à leurs enfants lorsqu'ils jouent avec des jeux vidéo. Si vous-même ou votre enfant présentez un des symptômes suivants : vertige, trouble de la vision, contraction des yeux ou des muscles, trouble de l'orientation, mouvement involontaire ou convulsion, perte momentanée de conscience, il faut cesser immédiatement de jouer et consulter un médecin. \n
+	20. MODIFICATIONS DE LA LICENCE. Winch Gate se réserve le droit de modifier les termes du présent Contrat à tout moment. L'Utilisateur sera informé des modifications éventuelles apportées au Contrat lors de l'accès à son compte suivant ce changement. L'accès au Jeu vaudra alors acceptation des conditions du Contrat modifié, qui s'appliqueront immédiatement.\n
 	\n
-	21.LOI APPLICABLE / DIVERS. Le présent Contrat est régi par la loi  française. L'application de la Convention des Nations Unies sur les contrats internationaux de vente de marchandises est expressément écartée. Tout litige relatif au présent Contrat sera soumis à la compétence exclusive des tribunaux compétents de Paris. Si l'une des clauses du présent Contrat venait à être jugée nulle ou non opposable à l'Utilisateur, cette nullité ou non opposabilité n'affecterait pas la validité ou l'opposabilité des autres clauses du Contrat. Le présent Contrat ne peut être cédé ni transféré par l'Utilisateur.]
+	21. PRÉCAUTIONS À PRENDRE / ÉPILEPSIE. Winch Gate vous rappelle qu'il est nécessaire d'éviter de jouer si vous êtes fatigué ou si vous manquez de sommeil. Assurez-vous que vous jouez dans une pièce bien éclairée en modérant la luminosité de votre écran. Lorsque vous utilisez un jeu vidéo susceptible d'être connecté à un écran, jouez à bonne distance de cet écran de télévision et aussi loin que le permet le cordon de raccordement. En cours d'utilisation, faites des pauses de dix à quinze minutes toutes les heures. De même, nous attirons votre attention sur le fait que certaines personnes sont susceptibles de faire des crises d'épilepsie comportant, le cas échéant, des pertes de conscience à la vue, notamment, de certains types de stimulations lumineuses fortes : succession rapide d'images ou répétition de figures géométriques simples, d'éclairs ou d'explosions. Ces personnes s'exposent à des crises lorsqu'elles jouent à certains jeux vidéo comportant de telles stimulations, alors même qu'elles n'ont pas d'antécédent médical ou n'ont jamais été sujettes elles-mêmes à des crises d'épilepsie. Si vous-même ou un membre de votre famille avez déjà présenté des symptômes liés à l'épilepsie (crise ou perte de conscience) en présence de stimulations lumineuses, consultez votre médecin avant toute utilisation. Les parents se doivent également d'être particulièrement attentifs à leurs enfants lorsqu'ils jouent avec des jeux vidéo. Si vous-même ou votre enfant présentez un des symptômes suivants : vertige, trouble de la vision, contraction des yeux ou des muscles, trouble de l'orientation, mouvement involontaire ou convulsion, perte momentanée de conscience, il faut cesser immédiatement de jouer et consulter un médecin.\n
+	\n
+	22. LOI APPLICABLE / DIVERS. Le présent Contrat est régi par la loi chypriote. L'application de la Convention des Nations Unies sur les contrats internationaux de vente de marchandises est expressément écartée. Tout litige relatif au présent Contrat sera soumis à la compétence exclusive des tribunaux compétents de Chypre. Si l'une des clauses du présent Contrat venait à être jugée nulle ou non opposable à l'Utilisateur, cette nullité ou non opposabilité n'affecterait pas la validité ou l'opposabilité des autres clauses du Contrat. Le présent Contrat ne peut être cédé ni transféré par l'Utilisateur.]
 
 gn_apprentice_tracer	[apprentice_tracer]
 
@@ -11674,6 +11896,7 @@ uiFailure	[Echec !]
 uiMP3Prev         [Previous]
 uiMP3Play         [Play]
 uiMP3Pause        [Pause]
+uiMP3Stop         [Stop]
 uiMP3Next         [Next]
 uiMP3Volume				[Volume]
 uiMP3Open         [Open]
@@ -11698,7 +11921,6 @@ uittBadResalePrice			[You have entered a bad resaled price. The resale price mus
 uittWontBuyThis				[I won't buy this]
 
 uiYuboChat					[YUBO CHAT]
-uitabChatYuboChat			[YUBO]
 
 uiCreatorHeader		[Crafter: ]
 uiMouseHardware		[Hardware]
@@ -11816,6 +12038,10 @@ uiFactionPoint_Tryker	[Tryker]
 uiFactionPoint_Zorai	[Zorai]
 uiFactionPointTable	[FACTION POINTS]
 
+// Organizations
+uiOrgPointTable [ORGANIZATION POINTS]
+uittIdentityOrganization [Organization points are gained when you participate in @{6F6F}special events or missions@{FFFF} for the organization: Marauder and Ranger. This points can be traded to get useful and unique items on the capitals.]
+
 uiAFK	[{AFK}]
 
 uiLOGResolution [Game Resolution]
@@ -11904,8 +12130,8 @@ uiDay6		[Samedi]
 uiCancelCreateAccount	[Back to login screen]
 uiSubmitNewAccount		[Submit]
 
-uiSubmitSucces1			[Congratulations!\n\nYou have succeeded in creating a Ryzom account\nA confirmation e-mail has been sent to you at the following address:\n]
-uiSubmitSucces2			[\nPlease click on the link that it contains to activate your new account.\nYou must activate your account before you can log in.]
+uiSubmitSucces1			[Congratulations!\n\nYou have succeeded in creating a Ryzom account\nAn e-mail has been sent to you at the following address:\n]
+uiSubmitSucces2			[\nYou can now click on the CONNECT button below to log in.]
 uiCreateAccountWelcome  [Welcome!\nPlease fill in these fields to get your new Ryzom account.\n]
 uiAcceptTermsOfUse1		[YES, I agree to the]
 uiAcceptTermsOfUse2		[terms of use.]
@@ -11960,13 +12186,13 @@ uiRandomBadParameter	[La chaîne de caractères "%s" n'est pas un paramètre val
 
 //UI Loading Screen
 uiTextCommand1	[*La Conquête des nexus*]
-uiTextCommand2	[Quarante ans avaient passé depuis la fermeture des avant-postes. Sur leurs sites étaient autrefois exploités les nexus qui palpitaient dans les profondeurs d’Atys.\n]
-uiTextCommand3	[Alors que les nouveaux temples accueillaient les homins, les représentants des divinités annoncèrent que le temps était venu de reconquérir les avant-postes : leurs ressources étaient devenues un enjeu dans la guerre qu’allaient se livrer les Puissances.\nLa bataille ne faisait que commencer. Et chacun savait que celui qui contrôlerait les nexus contrôlerait Atys toute entière.]
+uiTextCommand2	[Quarante ans avaient passé depuis la fermeture des avant-postes. Sur leurs sites étaient autrefois exploités les nexus qui palpitaient dans les profondeurs d'Atys.\n]
+uiTextCommand3	[Alors que les nouveaux temples accueillaient les homins, les représentants des divinités annoncèrent que le temps était venu de reconquérir les avant-postes : leurs ressources étaient devenues un enjeu dans la guerre qu'allaient se livrer les Puissances.\nLa bataille ne faisait que commencer. Et chacun savait que celui qui contrôlerait les nexus contrôlerait Atys toute entière.]
 uiTextCommand4  [Extrait des chroniques d'Erlan]
 
 uiTextCommandFT1	[* FT FT La Conquête des nexus*]
-uiTextCommandFT2	[ FT FT Quarante ans avaient passé depuis la fermeture des avant-postes. Sur leurs sites étaient autrefois exploités les nexus qui palpitaient dans les profondeurs d’Atys.\n]
-uiTextCommandFT3	[ FT FT Alors que les nouveaux temples accueillaient les homins, les représentants des divinités annoncèrent que le temps était venu de reconquérir les avant-postes : leurs ressources étaient devenues un enjeu dans la guerre qu’allaient se livrer les Puissances.\nLa bataille ne faisait que commencer. Et chacun savait que celui qui contrôlerait les nexus contrôlerait Atys toute entière.]
+uiTextCommandFT2	[ FT FT Quarante ans avaient passé depuis la fermeture des avant-postes. Sur leurs sites étaient autrefois exploités les nexus qui palpitaient dans les profondeurs d'Atys.\n]
+uiTextCommandFT3	[ FT FT Alors que les nouveaux temples accueillaient les homins, les représentants des divinités annoncèrent que le temps était venu de reconquérir les avant-postes : leurs ressources étaient devenues un enjeu dans la guerre qu'allaient se livrer les Puissances.\nLa bataille ne faisait que commencer. Et chacun savait que celui qui contrôlerait les nexus contrôlerait Atys toute entière.]
 uiTextCommandFT4	[ FT FT Extrait des chroniques d'Erlan]
 //------------
 
@@ -12018,7 +12244,7 @@ uiLoadingString44	[Vacuuming Pyr...]
 uiLoadingString45	[Symphony of light...]
 uiLoadingString46	[Empirical prophecy...]
 uiLoadingString47	[Burrowing a retreat...]
-uiLoadingString48	[Emtombing savage monstrosities…]
+uiLoadingString48	[Emtombing savage monstrosities...]
 uiLoadingString49	[Fleeing almost certain death...]
 uiLoadingString50	[Fleeing malign spirits...]
 uiLoadingString51	[Eternal home...]
@@ -12033,7 +12259,9 @@ uiMouseInverted	[Invert Mouse]
 //------------- Event features ---------------------
 // Scroll editing
 uiItemTextEdition	[Item text]
-uimItemTextEdit		[Read]
+uiItemTextMessageFromCrafter	[@{FFF9}Message from the crafter :\n@{FFFF}]
+uimItemTextEdit		[Write]
+uimItemTextDisplay		[Read]
 
 //--------------------------------------------------
 
@@ -12053,18 +12281,20 @@ uiItemSpecialEffectFlyingTextISE_FORAGE_NO_RISK		[Source sans risque]
 // **************
 // Leave some blanks for Icon on right
 uihelpItemConsumableFormat	[
-	@{FFF9}Temps de consommation(en sec.):@{T21}@{FFFF}%consumption_time\n
-	@{FFF9}Delai avant réutilisation(en min.):@{T21}@{FFFF}%overdose_timer\n
+	@{FFF9}Temps de consommation (en sec.):@{T21}@{FFFF}%consumption_time\n
+	@{FFF9}Delai avant réutilisation (en min.):@{T21}@{FFFF}%overdose_timer\n
 	\n
-        \n
-	@{FFFF}%consumable_effects \n
-	]
+	\n
+	@{FFFF}%consumable_effects%custom_text]
 
-uiItemConsumableEffectChgCharac	[Donne un bonus sur @{2F2F}%charac@{FFFF} de @{2F2F}%bonus@{FFFF} pendant %minutes min et %secondes sec.]
+uiItemConsumableEffectDownCharac	[Gives a malus of @{F22F}%charac@{FFFF} points(s) to your @{F2F}%bonus@{FFFF}\n
+	for %minutes min and %secondes sec.]
+uiItemConsumableEffectUpCharac	[Gives a bonus of @{2F2F}%charac@{FFFF} points(s) to your @2F2F}%bonus@{FFFF}\n
+	for %minutes min and %secondes sec.]
 
 uiItemConsumableEffectModDefenseSuccess	[Modifie vos compétences de Défense de %modifier point(s) pendant %minutes min et %secondes sec.]
 
-uiItemConsumableEffectModDodgeSuccess	[Modifie votre compétence d’Esquive de %modifier point(s) pendant %minutes min et %secondes sec.]
+uiItemConsumableEffectModDodgeSuccess	[Modifie votre compétence d'Esquive de %modifier point(s) pendant %minutes min et %secondes sec.]
 
 uiItemConsumableEffectModParrySuccess	[Modifie votre compétence de Parade de %modifier point(s) pendant %minutes min et %secondes sec.]
 
@@ -12074,7 +12304,7 @@ uiItemConsumableEffectModRangeSuccess	[Modifie votre compétence de Combat à Di
 
 uiItemConsumableEffectModMagicSuccess	[Modifie votre compétence de Magie de %modifier point(s) pendant %minutes min et %secondes sec.]
 
-uiItemConsumableEffectModCraftSuccess	[Modifie votre compétence d’Artisanat de %modifier point(s) pendant %minutes min et %secondes sec.]
+uiItemConsumableEffectModCraftSuccess	[Modifie votre compétence d'Artisanat de %modifier point(s) pendant %minutes min et %secondes sec.]
 
 uiItemConsumableEffectModForageSuccess	[Modifie vos compétences de Récolte de %modifier point(s) pendant %minutes min et %secondes sec.]
 
@@ -12088,18 +12318,24 @@ uiItemConsumableEffectModJungleForageSuccess	[Modifie votre compétence de Réco
 
 uiItemConsumableEffectModPrimaryRootForageSuccess	[Modifie votre compétence de Récolte dans les Prime-Racines de %modifier point(s) pendant %minutes min et %secondes sec.]
 
+uiItemConsumableEffectStaminaAura	[Active an @{2F2F}Aura of Stamina@{FFFF} with bonus of @{2F2F}%modifier@{FFFF} during %minutes min and %secondes sec with radius of %radius.\n
+	Deactivations : Targets = %targetDisableTime sec, User = %userDisableTime sec.]
 
+uiItemConsumableEffectSapAura	[Active an @{2F2F}Aura of Sap@{FFFF} with bonus of @{2F2F}%modifier@{FFFF} during %minutes min and %secondes sec with radius of %radius.\n
+	Deactivations : Targets = %targetDisableTime sec, User = %userDisableTime sec.]
 
+uiItemConsumableEffectLifeAura	[Active an @{2F2F}Aura of Life@{FFFF} with bonus of @{2F2F}%modifier@{FFFF} during %minutes min and %secondes sec with radius of %radius.\n
+	Deactivations : Targets = %targetDisableTime sec, User = %userDisableTime sec.]
 
 uittModMeleeSuccess	[Votre compétence de combat au corps à corps est modifiée de %modifier point(s)]
 
 uittModRangeSuccess	[Votre compétence de combat à distance est modifiée de %modifier point(s)]
 
-uittModCraftSuccess	[Votre compétence d’artisanat est modifiée de %modifier point(s)]
+uittModCraftSuccess	[Votre compétence d'artisanat est modifiée de %modifier point(s)]
 
 uittModDefenseSuccess	[Vos compétences de défense sont modifiées de %modifier point(s)]
 
-uittModDodgeSuccess	[Votre compétence d’esquive est modifiée de %modifier point(s)]
+uittModDodgeSuccess	[Votre compétence d'esquive est modifiée de %modifier point(s)]
 
 uittModParrySuccess	[Votre compétence de parade est modifiée de %modifier point(s)]
 
@@ -12218,6 +12454,7 @@ uiMk_interaction2	[Guilde]
 uiMk_interaction3	[Forum]
 uiMk_interaction4	[Renommée]
 uiMk_interaction5	[Messagerie]
+uiMk_interaction5b	[Web]
 uiMk_interaction6	[Equipe]
 uiMk_interaction7	[Animaux]
 uiMk_interaction8	[Ryzom Ring]
@@ -12399,7 +12636,7 @@ uittActionSuccessRateSF	[@{6F6F}Taux de réussite @{FFFF}:\nLe taux de réussite
 uittActionSuccessRateSM	[@{6F6F}Taux de réussite @{FFFF}:\nLe taux de réussite dépend des compétences des stanzas de magie utilisées.]
 uittActionSuccessRateSC	[@{6F6F}Taux de réussite @{FFFF}:\nLe taux de réussite dépend de votre compétence à créer différents objets.]
 uittActionSuccessRateSH	[@{6F6F}Taux de réussite @{FFFF}:\nLe taux de réussite dépend du lieu de récolte et des stanzas utilisées.]
-uittActionSkillPoint	[@{6F6F}Points de Compétence @{FFFF}:\n@{AAAF}Points manquants / Coût total \n@{FFFF}Quand vous maîtrisez toutes les stanzas d'une action, le premier chiffre est 0 et l'action est dégrisée dans la fenêtre de Progression des Actions.]
+uittActionSkillPoint	[@{6F6F}Points de Compétence @{FFFF}:\n@{AAAF}Points manquants / Coût total\n@{FFFF}Quand vous maîtrisez toutes les stanzas d'une action, le premier chiffre est 0 et l'action est dégrisée dans la fenêtre de Progression des Actions.]
 uittActionSkillReq	[@{6F6F}Compétences requises @{FFFF}:\nIndique précisément les compétences à développer et le niveau à atteindre dans ces compétences.\nLes prérequis non remplis sont en @{F80F}Orange@{FFFF}.]
 uittActionStanzaReq	[@{6F6F}Stanzas requises @{FFFF}:\nVous devez connaître les stanzas qui suivent avant de pouvoir apprendre cette action.\nLes prérequis non remplis sont en @{F80F}Orange@{FFFF}.]
 
@@ -12695,7 +12932,7 @@ uiR2EDApplyScenarioFilters	[Apply]
 uiRingLaunchScenarioTooltip			[Launch an animation session with the scenario that you have chosen.]
 uiRingDescriptionScenarioTooltip	[Describe the scenario that you will launch. It will be visible by all players at each Ring Terminal.]
 
-uiRingWarningFreeTrial				[FREE TRIAL LIMITATIONS:\n\nYou cannot join this Ring adventure with a free trial account.\n\nIn order to gain full access to Ryzom Ring you need to subscribe to Ryzom.\n\nTo upgrade your account see \nwww.ryzom.com\n]
+uiRingWarningFreeTrial				[FREE TRIAL LIMITATIONS:\n\nYou cannot join this Ring adventure with a free trial account.\n\nIn order to gain full access to Ryzom Ring you need to subscribe to Ryzom.\n\nTo upgrade your account see\nwww.ryzom.com\n]
 uiRingWarningInviteFreeTrial		[You cannot invite this player because he has a free trial account and this scenario is not allowed for free trial players.\n]
 
 uiRingWarningNewcomer				[You cannot invite this player because one of you two is a newcomer but not the other one.\n]
@@ -12715,15 +12952,15 @@ uiR2EdPropertyToolTip_LoadScenario_LoadScenario_Level			[@{6F6F}Difficulty\n@{FF
 uiR2EdPropertyToolTip_LoadScenario_LoadScenario_Language		[@{6F6F}Language\n@{FFFF} The language of the scenario, as declared by the scenario author]
 uiR2EdPropertyToolTip_LoadScenario_LoadScenario_RingPointsLevel		[@{6F6F}Requirements\n@{FFFF} Indicates wether you are permitted to load this scenario. One is only permitted to load scenarios that contain content that one has access to. One gains access to additional content by exploring the mainlands of Atys.]
 uiR2EdPropertyToolTip_LoadScenario_LoadScenario_Author			[@{6F6F}Author\n@{FFFF} Author of the selected scenario. Between brackets is the rating given by the author to its own scenario.]
-uiR2EdPropertyToolTip_LoadScenario_LoadScenario_NewbieTreeInfo		[@{6F6F}newbieLand Scenarios \n@{FFFF} WRITE ME]
-uiR2EdPropertyToolTip_LoadScenario_LoadScenario_Fun			[@{6F6F}Fun Rating \n@{FFFF} Fun rating for the selected scenario.]
-uiR2EdPropertyToolTip_LoadScenario_LoadScenario_Difficulty			[@{6F6F}Difficulty Rating \n@{FFFF} Difficulty rating for the selected scenario.]
-uiR2EdPropertyToolTip_LoadScenario_LoadScenario_Accessibility			[@{6F6F}Accessibility Rating \n@{FFFF} Accessibility rating for the selected scenario.]
-uiR2EdPropertyToolTip_LoadScenario_LoadScenario_Originality			[@{6F6F}Originality Rating \n@{FFFF} Originality rating for the selected scenario.]
-uiR2EdPropertyToolTip_LoadScenario_LoadScenario_Direction			[@{6F6F}Direction Rating \n@{FFFF} Direction rating for the selected scenario.]
-uiR2EdPropertyToolTip_LoadScenario_LoadScenario_RRPTotal			[@{6F6F}Ryzom Ring Points Total \n@{FFFF} Ryzom Ring Points Total for the selected scenario.]
+uiR2EdPropertyToolTip_LoadScenario_LoadScenario_NewbieTreeInfo		[@{6F6F}newbieLand Scenarios\n@{FFFF} WRITE ME]
+uiR2EdPropertyToolTip_LoadScenario_LoadScenario_Fun			[@{6F6F}Fun Rating\n@{FFFF} Fun rating for the selected scenario.]
+uiR2EdPropertyToolTip_LoadScenario_LoadScenario_Difficulty			[@{6F6F}Difficulty Rating\n@{FFFF} Difficulty rating for the selected scenario.]
+uiR2EdPropertyToolTip_LoadScenario_LoadScenario_Accessibility			[@{6F6F}Accessibility Rating\n@{FFFF} Accessibility rating for the selected scenario.]
+uiR2EdPropertyToolTip_LoadScenario_LoadScenario_Originality			[@{6F6F}Originality Rating\n@{FFFF} Originality rating for the selected scenario.]
+uiR2EdPropertyToolTip_LoadScenario_LoadScenario_Direction			[@{6F6F}Direction Rating\n@{FFFF} Direction rating for the selected scenario.]
+uiR2EdPropertyToolTip_LoadScenario_LoadScenario_RRPTotal			[@{6F6F}Ryzom Ring Points Total\n@{FFFF} Ryzom Ring Points Total for the selected scenario.]
 
-uiR2EdPropertyToolTip_LoadScenario_LoadScenario_TreeInfo		[@{6F6F}Nevrax Examples\n@{FFFF}Example scenarios supplied with Ryzom. These demonstrate some of the things that can be done with Ryzom Ring.\n@{6F6F}Pioneer Scenarios\n@{FFFF}Provided by other players and customer support, these are not vetted by Nevrax. See ryzom.com/pioneer_program for more details.\n@{6F6F}My Files\n@{FFFF}The files that are in the 'My Scenarios' folder on your computer.]
+uiR2EdPropertyToolTip_LoadScenario_LoadScenario_TreeInfo		[@{6F6F}Winch Gate Examples\n@{FFFF}Example scenarios supplied with Ryzom. These demonstrate some of the things that can be done with Ryzom Ring.\n@{6F6F}Pioneer Scenarios\n@{FFFF}Provided by other players and customer support, these are not vetted by Winch Gate. See ryzom.com/pioneer_program for more details.\n@{6F6F}My Files\n@{FFFF}The files that are in the 'My Scenarios' folder on your computer.]
 
 uiR2EDLoadScenarioWindow		[Load Scenario]
 uiR2EDProp_LoadScenario_Description	[Scenario description]
@@ -12827,7 +13064,7 @@ uiFixedMissionEntry_R2				 [Ryzom ring]
 
 uiCaptionToggle [Title bar on/off]
 
-msgCustomizedEmoteNoAnim	[&CHK& Vous avez demandé de ne jouer que l’animation d’un emote, cependant l’emote demandé n’a pas d’animation.]
+msgCustomizedEmoteNoAnim	[&CHK& Vous avez demandé de ne jouer que l'animation d'un emote, cependant l'emote demandé n'a pas d'animation.]
 
 uiR2WinColors	[Ring header colors]
 
@@ -12934,7 +13171,7 @@ uiCP_KeysetTooltip_bi_wow_alike [For those used to some other MMO Games keybindi
 
 uiAutomaticCamera		[Camera Automatique]
 uiMouseDblClickMode	[Mode Double Clic]
-uiAutoEquipTool		[S’équiper automatiquement de l’arme/outil]
+uiAutoEquipTool		[S'équiper automatiquement de l'arme/outil]
 
 
 msgNoCastWhileMoving		[&CHK&Impossible de jeter un sort lorsque vous vous déplacez.]
@@ -13054,48 +13291,411 @@ uiDeathWarningContent	[Vous êtes dans le coma.\n
 
 uiDeathWarningAvoid	[Ne plus jamais afficher ce message.]
 
-uiNightWarningTitle	[Night]
-uiNightWarningContent	[It is night on Atys.\n
-	\n
-	You can illuminate your surroundings by pressing 'L' (by default) on your keyboard.\n
-	]
-	
-// patcher
-uiTotalPatch [Total files to patch]
-uiRequiredFiles [Required files]
+uiScreenShotPNG	[Screenshot PNG]
 
-// skill trainer
-uitabBuyAll	[All]
-uitabBuyAction	[Actions]
-uitabBuyUpgrade	[Upgrades]
-uitabBuyPower	[Powers/Auras]
-uitabBuyCarac	[Characteristics]
-uiNoTrainingAvailable	[No training available for this category]
-
-uittTabBuyAll	[Show all available training]
-uittTabBuyAction	[New actions]
-uittTabBuyUpgrade	[Upgrades for your skills]
-uittTabBuyPower	[New powers and auras]
-uittTabBuyCarac	[Characteristics improvements]
-
-// skill tooltip display (cooldowns etc.)
-uittSeconds	[ second(s) ]
-uittMinutes	[ minute(s) ]
-uittHours	[ hour(s) ]
-
-uittSecondsShort	[ s ]
-uittMinutesShort	[ m ]
-uittHoursShort	[ h ]
-uittMeters	[ meter(s)]
-
-uittSuccessRate	[Success rate: @{6F6F}]
-uittRegenTime	[Disabled for: @{6F6F}]
-uittDisableTime	[Reuse time: @{FFFF}]
-
-// sysinfo messages
-uiScreenshotSaved	[has been saved in your Ryzom folder.]
-
-// user interface questions
 uiQDeleteAction	[Do you really want to delete this action?]
 uiQDeleteMacro	[Do you really want to delete this macro?]
+
+uiQResetUI	[Do you really want to reset UI ?]
+
+uiCommandNotExists	[Unknown command.]
+
+uiNightWarningTitle	[La nuit]
+
+uiNightWarningContent	[Il fait nuit sur Atys.\n
+	\n
+	Vous pouvez éclairer autour de vous en appuyant sur la touche 'L' (touche par défaut) de votre clavier.\n]
+
+uitabBuyAll [All]
+uitabBuyAction [Actions]
+uitabBuyUpgrade [Upgrades]
+uitabBuyPower [Powers/Auras]
+uitabBuyCarac [Caracteristics]
+
+
+uittConsiderTargetNoSelection [No target selected]
+uittConsiderTargetLevel [@{6F6F}Level@{FFFF} of selected target]
+uittConsiderBoss [This creature is @{6F6F}guild challenging@{FFFF}.]
+uittConsiderBossNpc [This character is @{6F6F}guild challenging@{FFFF}.]
+uittConsiderNamedOrMiniBoss [This creature is @{6F6F}team challenging@{FFFF}.]
+uittConsiderUnknownLevel [The level of the target is @{F00F}too high@{FFFF} compared to your level.\n\n@{888F}Note : You can see the exact level of your target up to 10 levels above your own level. You get a 10 level bonus for each player added in the team.]
+uittConsiderBothPVPToSeeLevel [@{6F6F}Tip :@{FFFF} Both you and your target must be in PVP mode for your to see your opponent level.]
+
+// tooltip for the tab in the trainer window
+uittTabBuyAll 	[Show all available trainings]
+uittTabBuyAction [New actions]
+uittTabBuyUpgrade [Upgrade for your skills]
+uittTabBuyPower [Learn new powers and auras]
+uittTabBuyCarac [Increase your caracteristics]
+
+uittSeconds [ second(s) ] // spell cast time (displayed in the tooltip of actions)
+uittMinutes [ minutes(s) ] 
+uittHours [ hour(s) ]
+
+uittSecondsShort [ s ] // 'seconds' (abreviated)
+uittMinutesShort [ m ]  // 'minutes' (abreviated)
+uittHoursShort [ h ] // 'hours" (abreviated)
+
+uittMeters [ meter(s)] // spell range (displayed in the tooltip of actions)
+
+
+uiNoTrainingAvailable [No training available for this category]
+
+uittSuccessRate [Success rate : @{6F6F}]
+uittRegenTime [Regen. time : @{6F6F}]
+uittDisableTime [Recast. time : @{FFFF}]
+
+uiAtysianCycle1Ordinal [1st]
+uiAtysianCycle2Ordinal [2nd]
+uiAtysianCycle3Ordinal [3rd]
+uiAtysianCycle4Ordinal [4th]
+
+uiScreenshotSaved	[has been saved in Ryzom folder.]
+uiRpJobs	[Jobs]
+uiRpJobsElementary	[Elementary Jobs]
+uiRpJobsAdvanced	[Advanced Jobs]
+uiRpJobsRoleplay	[Roleplay Jobs]
+rpjob_200	[Apprentice Butcher]
+rpjob_201	[Apprentice Florist]
+rpjob_202	[Apprentice Water-Carrier]
+rpjob_203	[Apprentice Magnetic Cartographe]
+rpjob_204	[Apprentice Toolmaker]
+rpjob_205	[Apprentice Rescuer]
+rpjob_206	[Apprentice Larvester]
+rpjob_207	[Apprentice Scrollmaker]
+uiRpjobMaxLevel	[You have reached the maximum level in this occupation.]
+
+uiChapterI	[Chapter I : Changing Times]
+uiChapterII	[Chapter II : Ready to fight]
+uiChapterIII	[Chapter III : Outposts]
+uiChapterIV	[Chapter IV : Elementary Jobs]
+uiChapterV	[Chapter V : The Road to Power]
+uiShowTimesInChatCB	[Show timestamps in chat]
+uittShowTimesInChat [If checked, displays the current time before all chat messages.]
+uiEchelon	[Echelon : ]
+uiShowClock	[Show Clock in Compass]
+uittShowClock	[If checked, displays the current time in the compass.]
+uiUntranslatedToken	[Invalid token: '%s'. No return value and no default specified.]
+uiShow3dItemPreview	[Show 3D Item Preview]
+uittShow3dItemPreview	[If checked, displays a 3D preview of the inspected item.]
+uiShowDynChannelNameInChatCB	[Show name of dynamic chat channels in chat]
+uittShowDynChannelNameInChat	[If checked, the name of the dynamic chat channel is shown in front if the message is displayed in the user tab.]
+uiShowReticle	[Show Target Reticle]
+uittShowReticle	[If checked, show a target reticle on mouseover and selection of target.]
+uiCurrentLocalAndUtcTime	[Current local time is %local, UTC time is %utc.]
+uittContactInfo	[Open friend's profile]
+uiPlayerInfos	[Infos] // need be a short word
+youTellPlayer	[you tell %name]
+uimwHands2	[uimwHands #2]
+uiRunShortcut2	[uiRunShortcutAlt #2]
+uiActions2	[uiActions #2]
+uiKeysActionsTitle2	[uiKeysActionsTitle #2]
+
+uiThousandsSeparator [,]
+uiRaceBold [RACE: ]
+uittFilterTP	[Filter @{6F6F}Teleporter Pacts\n@{FFFF}Right click to select only @{6F6F}Teleporter Pacts@{FFFF}.]
+uiShowOnlineOfflineNotifications	[Show Online/Offline Notifications]
+uittShowOnlineOfflineNotifications	[Show a notification when guildmembers or friends go online or offline.]
+uiPlayerOnline [&ISE&%s has come online.]
+uiPlayerOffline [&ISE&%s has gone offline.]
+uiDynColor0	[Dynamic Channel 0]
+uiCCDDyn0	['Dynamic channel 0' messages color]
+uittChooseDynColor0	[Choose color for messages in dynamic chat channel 0]
+uiDynColor1	[Dynamic Channel 1]
+uiCCDDyn1	['Dynamic channel 1' messages color]
+uittChooseDynColor1	[Choose color for messages in dynamic chat channel 1]
+uiDynColor2	[Dynamic Channel 2]
+uiCCDDyn2	['Dynamic channel 2' messages color]
+uittChooseDynColor2	[Choose color for messages in dynamic chat channel 2]
+uiDynColor3	[Dynamic Channel 3]
+uiCCDDyn3	['Dynamic channel 3' messages color]
+uittChooseDynColor3	[Choose color for messages in dynamic chat channel 3]
+uiDynColor4	[Dynamic Channel 4]
+uiCCDDyn4	['Dynamic channel 4' messages color]
+uittChooseDynColor4	[Choose color for messages in dynamic chat channel 4]
+uiDynColor5	[Dynamic Channel 5]
+uiCCDDyn5	['Dynamic channel 5' messages color]
+uittChooseDynColor5	[Choose color for messages in dynamic chat channel 5]
+uiDynColor6	[Dynamic Channel 6]
+uiCCDDyn6	['Dynamic channel 6' messages color]
+uittChooseDynColor6	[Choose color for messages in dynamic chat channel 6]
+uiDynColor7	[Dynamic Channel 7]
+uiCCDDyn7	['Dynamic channel 7' messages color]
+uittChooseDynColor7	[Choose color for messages in dynamic chat channel 7]
+uiQSetLeader [Are you sure you want to make this member Guild Leader?]
+uimLockItem	[Lock]
+uimUnlockItem	[Unlock]
+uimSetTeamLeader	[Set Leader]
+uiKeyTILDE	[TILDE]
+uiKeySLASH [SLASH]
+uiKeyPERIOD	[PERIOD]
+uiKeyBACKSLASH	[BACKSLASH]
+uiKeyAPOSTROPHE	[APOSTROPHE]
+uiKeySEMICOLON	[SEMICOLON]
+uiKeyRBRACKET	[RBRACKET]
+uiKeyLBRACKET	[LBRACKET]
+uiKeyEQUALS	[EQUALS]
+uiKeyDASH	[DASH]
+uiJoinLeagueProposal [JOIN LEAGUE PROPOSAL]
+uiPvpPoints [PVP POINTS]
+uiPvpTotal [Total]
+uiOrganization [FACTION]
+uiOrganization_5 [Marauders]
+uiOrganization_7 [Ranger]
+uiOrganization_0 [ifUNDEFINED]
+uiPoints [Points:]
+uiOrganizationStatus [Rank:]
+uittOrganization [Organization tooltip]
+uiRpTags [Roleplay tags]
+uittRpTags [Show any Roleplay Tags above the character]
+uimwTaskBar [Task Bar]
+uiWindowNpcName [NPC Name]
+uittNpcName [Show friendly NPC's names above the character]
+uiNpcTitle [NPC Title]
+uittNpcTitle [Show friendly NPC's titles above the character]
+uiHands2	[Actions #2]
+uittChooseLMFiberColor	[Choose color for 'Fiber' landmark]
+uiSelectShortcutBar2	[Select Shortcut Bar #2]
+uiFXAA	[Enable FXAA]
+uiVREnable	[Enable VR]
+uiVRGeneral	[Virtual Reality Options]
+uigcVR	[VIRTUAL REALITY]
+uigcFxAnisotropicFilter	[Anisotropic Filtering:]
+uigcFxAnisotropicFilterNone	[None]
+uiShowIconBuffs [Show item stat and encahnt on item icon]
+uittShowIconBuffs [Show item stat and enchant on item icon]
+uiShowClock12h [Use 12-hour clock]
+uittShowClock12h [If checked, use 12-hour clock in compass and in chat messages.]
+uiRadarUseCamera [Radar follows camera rotation]
+uittRadarUseCamera [If checked, use camera rotation for radar view.]
+uiTotalPatch [TOTAL PATCH]
+uiRequiredFiles [REQUIRED FILES]
+// default value for LOD in login screen
+uiLodValue [NORMAL]
+// option displayed in keys configuration (Debug section)
+uiDebugProfileFillRate [Profile Fillrate]
+// displayed in mission window when continent is unknown
+uiFixedMissionEntry_Mainland_Unknwown [Main land / Unknown]
+// displayed when no files are playing in MP3 player
+uiNoFiles [No Files...]
+// symbol of byte unit
+uiByte [B]
+// names generator title
+uiCP_Name_Generator [Names generator]
+// for the generate button
+uiCP_Name_Generate [Generate]
+// Marauder's nation name
+uiCP_Maraudeur [Marauder]
+// Same as the forum post title
+uiCP_Name_Policy [Naming policy]
+// last name
+uiCP_FirstName [First name]
+// first name
+uiCP_LastName [Last name]
+uiHorizontal [Horizontal]
+uiVertical [Vertical]
+uiKeyMUTE [Mute]
+uiKeyPLAYPAUSE [Play / pause]
+uiKeyVOLUMEDOWN [Volume down]
+uiKeyVOLUMEUP [Volume up]
+uiKeyCALC [Calculator]
+uiKeyPARAGRAPH [Paragraph]
+uiKeyOEM_102 [OEM 102]
+
+// used to format dynamic chats filters
+uiFilterMenuDynamic	[%channel @{T8}/%shortcut]
+// displayed in System/Windows/Communication
+uimwAppZone [AppZone]
+// displayed in keys
+uiAppZone [AppZone]
+// message displayed when player type /playedTime
+uiPlayedTime [You played with this character for %time.]
+uiPlaylistRefresh [Refresh]
+uiFreeViewTablet [Tablet or touchscreen]
+
+// chat popup menu for url
+uiCopy [Copy]
+uiBrowse [Browse]
+
+//Item group commands
+
+
+//createGroup
+cmdCreateGroupUsage1 [createGroup command usage :]
+cmdCreateGroupUsage2 [/createGroup group_name : create a group named group_name with all your equipped items]
+cmdCreateGroupUsage3 [/createGroup group_name true : create a group named group_name with all your equipped items, and create a remove command for every empty slot]
+cmdCreateGroupError [A group named %name already exist, cannot create one with the same name.]
+cmdCreateGroupSuccess1 [Group %name successfully created.]
+cmdCreateGroupSuccess2 [Group %name successfully created with removal for all unequiped items.]
+
+//equipGroup
+cmdEquipGroupUsage1 [equipGroup command usage :]
+cmdEquipGroupUsage2 [/equipGroup group_name : Pull the items from the group group_name from available inventory and equip them.]
+cmdEquipGroupError [Could not equip group %name because no group named like this was found.]
+cmdEquipGroupSuccess [Group %name successfully equipped.]
+
+
+//deleteGroup
+cmdDeleteGroupUsage1 [deleteGroup command usage :]
+cmdDeleteGroupUsage2 [/deleteGroup group_name : Remove the group named group_name if it exists.]
+cmdDeleteGroupError [Cannot delete group %name : no group with this name found.]
+cmdDeleteGroupSuccess [Group %name successfully deleted.]
+
+//moveGroup
+cmdMoveGroupUsage1 [moveGroup command usage :]
+cmdMoveGroupUsage2 [/moveGroup group_name destination : move items from all available inventories to destination]
+cmdMoveGroupUsage3 [destination can be either bag, player_room, guild, pet_animal1, pet_animal2, pet_animal3, pet_animal4]
+cmdMoveGroupError [Could not move group %name to %inventory because no group named like this was found, and/or it wasn't a valid inventory.]
+cmdMoveGroupSuccess [Group %name successfully moved to %inventory.]
+
+//listGroup
+cmdListGroupHeader [Available item groups :]
+cmdListGroupLine [* %name, with %size items inside.]
+
+//interface
+uimGroup [Groups]
+//Macro edition
+uiMacroItemGroupEquip [Equip an item group]
+uiMacroItemGroupName  [Item group name]
+uiMacroItemGroupMove  [Move an item group]
+uiMacroItemGroupDestination [Item group destination]
+
+//map search
+uiMapSearch [Map search]
+uittMapSearch [Map search]
+uiTargetLandmarkCmd [Target map landmark]
+uiTargetLandmarkCmdEntity [Landmark search keywords]
+
+uittInventorySearch [Search]
+
+//macro copy
+uimMacroCopy [COPY]
+uimMCCopy [COPY]
+
+uiSaveUI [Save]
+uiInterfaceScale [Interface scale]
+
+//zigs
+uitabInvPAZig1	[ZIG 1]
+uitabInvPAZig2	[ZIG 2]
+uitabInvPAZig3	[ZIG 3]
+uiPABagTitleMount4	[ZIG 1]
+uiPABagTitleMount5	[ZIG 2]
+uiPABagTitleMount6	[ZIG 3]
+uiPATitleMount5	[Zig 1]
+uiPATitleMount6	[Zig 2]
+uiPATitleMount7	[Zig 3]
+uittInBag	[The animal is in your bag.\n
+	@{6F6F}Right click @{FFFF}to give an order.]
+
+uimEnterBag	[Enter on the bag]
+uimLeaveBag	[Leave from the bag]
+
+//random
+msgRollDiceLocal	[&SYS&@{FF1F}You pulled %roll in a draw between %min and %max.]
+
+//Guild Island new tab at Guild Window
+uiGuildTabIsland	[Island]
+
+// welcome msg
+uiWelcome_around	[Roleplay is one of major interests of Ryzom, and around channel is an important place to practice it.]
+uiWelcome_region	[Chat here with other players having their avatar in the same region as where yours is.]
+uiWelcome_universe	[The Universe Channel is first of all intended for players asking help about the game and for those helping them. It's a friendly channel that also can be used for chatting related to Ryzom.]
+uiWelcome_kami		[Chat here with players having their avatar sharing the same cult as yours.]
+uiWelcome_karavan	[Chat here with players having their avatar sharing the same cult as yours.]
+uiWelcome_fyros 	[Chat here with players having their avatar being also a patriot.]
+uiWelcome_tryker	[Chat here with players having their avatar being also a citizen.]
+uiWelcome_zorai 	[Chat here with players having their avatar being also an initiate.]
+uiWelcome_matis 	[Chat here with players having their avatar being also a vassal.]
+uiWelcome_marauder	[Chat here with players having their avatar being also a marauder.]
+uiWelcome_ranger	[Chat here with players having their avatar being also a ranger.]
+
+// teleport interface
+uiArtefactRestrict  [@{C02F}Your allegiance or level of fame does not allow to use this item.]
+uiArtefactHelp      [Purchase a pact before running out of stock.]
+uimIhideBanner  [Hide faction banner]
+uimIshowBanner  [Show faction banner]
+uimIcloseOnTp   [Teleport close window]
+uimIopenOnTp    [Teleport keep window]
+uimIrefresh     [Refresh]
+uimIcompact     [Toggle compact mode]
+
+//user channels
+uimChanSave 	[Save]
+uiChanSaveCB 	[Save Dynamic Channels]
+uiChanAutoCB 	[Restore Dynamic Channels]
+uittChanSave    [If checked, dynamic chat channels are stored at disconnection or character selection.\nYou can also use the command @{6F6F}/saveChannel@{FFFF} to export channels manually.]
+uittChanAuto    [If checked, your dynamic chat channels will be restored if not already opened.\nWill prevent the loss of channels at reboot or in case of server crash.]
+uiMissionCatalog	 [Mission Catalog]
+uiS2            [La saison en noir contre blanc]
+uiS2E0          [Episode Prologue: Celui où l'on s'informe]
+uimGcmChat		[Bavarder]
+uimGcmBullying	[Interroger (en tentant d'intimider)]
+
+
+// teleport icon labels
+uiitAlmati	[almati]
+uiitRangerCamp	[ranger]
+uiitShatteredRuins	[shattered]
+uiitShiningLake	[shining]
+
+uiitDunesOfExil	[dunes]
+uiitDyron	[dyron]
+uiitFraharTowers	[frahar]
+uiitOflovaksOasis	[oflovak]
+uiitOutlawCanyon	[outlaw]
+uiitPyr	[pyr]
+uiitSavageDunes	[savage]
+uiitSawdustMines	[sawdust]
+uiitScorchedCorridor	[scorched]
+uiitThesos	[thesos]
+
+uiitGroveOfUmbra	[grove]
+uiitHavenOfPurity	[haven]
+uiitHoiCho	[hoicho]
+uiitJenLai	[jenlai]
+uiitKnotOfDementia	[knot]
+uiitMaidenGrove	[maiden]
+uiitMinCho	[mincho]
+uiitVoid	[void]
+uiitZora	[zora]
+
+uiitAbyssOfIchor	[abyss]
+uiitElusiveForest	[elusive]
+uiitForbiddenDepths	[forbidden]
+uiitGateOfObscurity	[gate]
+uiitLandOfContinuity	[land]
+uiitNexus	[nexus]
+uiitSunkenCity	[sunken]
+uiitTrenchOfTrials	[trench]
+uiitUnderSpring	[under]
+uiitWindyGate	[windy]
+
+uiitAvendale	[avendale]
+uiitBountyBeaches	[bounty]
+uiitCrystabell	[crystabell]
+uiitDewDrops	[dewdrop]
+uiitEnchantedIsle	[enchanted]
+uiitFairhaven	[fairhaven]
+uiitFount	[fount]
+uiitLagoonsOfLoria	[lagoon]
+uiitRestingWater	[resting]
+uiitWindermeer	[windermeer]
+uiitWindsOfMuse	[winds]
+
+uiitAvalae	[avalae]
+uiitDavae	[davae]
+uiitFleetingGarden	[fleeting]
+uiitGroveOfConfusion	[grove]
+uiitHereticsHovel	[heretic]
+uiitHiddenSource	[hidden]
+uiitKnollOfDissent	[knoll]
+uiitNatae	[natae]
+uiitUpperBog	[upper]
+uiitYrkanis	[yrkanis]
+
+uiMP3SoundDisabled	[Media player requires sound to be enabled]
+uiWindowSnapDistance	[Window snap distance]
+uiWindowSnapInvert	[Snap only when SHIFT is held down]
+uiWindowSnap	[Window snap]
 

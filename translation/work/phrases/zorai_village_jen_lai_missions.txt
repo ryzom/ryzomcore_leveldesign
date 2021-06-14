@@ -1,0 +1,289 @@
+﻿//////////////////Zorai villageA Jen-Lai missions/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Mission 01 : KNOWLEDGE MISSION
+/*
+ZA_KNOWLEDGE_MIS_01
+*/
+ZA_KNOWLEDGE_MIS_01_TITLE (bot giver)
+{
+	za_knowledge_mis_01_title	[The Fall of Zorae]
+
+}
+
+ZA_KNOWLEDGE_MIS_01_DESC (bot giver)
+{
+	za_knowledge_mis_01_desc	[Rassemblez des offrandes pour les esprits, afin d'écouter l'histoire de la chute de Zorae, l'ancienne capitale du peuple Zoraï.]
+
+}
+
+ZA_KNOWLEDGE_MIS_01_STEP_1 (item iczm1pd, item mchcjbley01, item mckhjbcll01, item mdoaccwbo01)
+{
+//Dialogue sage
+	za_knowledge_mis_01_step_1			[I am from Zorae, the ancient capital of our people.{break} I well recall our beautiful magnificent citie 
+							that spread over miles of jungle, and my house in the old medina where the first Zoraï temple stood 
+							to the glory of the first Kami enlightenment. Morning and evening we would be called to worship by 
+							the chimes of the great syre wood bells whose sound was deep and tender and touched the heartstrings. 
+							One autumn, we were giving thanks for the exceptional harvest when the great bells tolled unexpectedly, 
+							for the last time...\n
+							Je vais te conter la tragique histoire de la fin de Zorae. Mais cela va réveiller d'anciennes douleurs 
+							parmi les esprits, et il te faut rassembler des offrandes pour apaiser leurs souffrances et les 
+							assurer de notre réconfort. Fabrique $iczm1pd.ia$ $iczm1pd$, procure-toi $mchcjbley01.ia$ $mchcjbley01$, 
+							une paire de $mckhjbcll01.p$ et $mdoaccwbo01.ia$ $mdoaccwbo01$. Ensuite reviens me voir.]
+
+}
+
+ZA_KNOWLEDGE_MIS_01_CUSTOM_OBJ (item i1, int qt1,int ql1, item i2, int qt2,int ql2, item i3, int qt3,int ql3, item i4, int qt4,int ql4)
+{
+//Objectif
+	za_knowledge_mis_01_custom_obj		[Craft :\n
+				 			- $qt1$ $i1$ of at least quality $ql1$\n
+						Loot :\n
+				 			- $qt2$ $i2$ of at least quality $ql2$\n
+				 			- $qt3$ $i3$ of at least quality $ql3$\n
+						Forage :\n
+				 			- $qt4$ $i4$ of at least quality $ql4$]
+
+}
+
+ZA_KNOWLEDGE_MIS_01_TALKMENU (bot giver)
+{
+//Talkmenu après avoir trouvé toutes les offrandes
+	za_knowledge_mis_01_talkmenu			[J'ai toutes les offrandes.]
+
+}
+
+ZA_KNOWLEDGE_MIS_01_STEP_2 (player p)
+{
+//Dialogue sage
+	za_knowledge_mis_01_step_2			[Très bien, $p$. Installe-toi, et écoute comment est tombée Zorae.{break}\n
+							So, one autumn, the great bells tolled unexpectedly...\n
+							My father's first fear was that the barbarians in the north had somehow escaped our guards attention, 
+							found a blind spot in the great wall securing our territory and had launched an attack. He swept me 
+							off my feet while my mother took my baby brother and we sped home as the city doors where being 
+							banging shut. When he left us to stand ready with his guild I had a pang in the heart and wouldn't 
+							let go of his leg. He nearly became cross and my mother had to pull me away. I watched him from the 
+							window run down the road toward the main entrance, skinning knife in hand. I had a sinking feeling 
+							I would never see him again.\n
+							Il est temps de faire notre première offrande. Ce sera la dague, en mémoire de tous les guerriers 
+							tombés ce jour-là.]
+
+}
+
+ZA_KNOWLEDGE_MIS_01_GIVE_ITEM_MENU_1 (int item_count)
+{
+//Donner la dague au sage
+	za_knowledge_mis_01_give_item_menu_1		[Give dagger]
+
+}
+
+ZA_KNOWLEDGE_MIS_01_STEP_3 (race kitin, item mchcjbley01)
+{
+//Dialogue sage
+	za_knowledge_mis_01_step_3			[Recevez cette arme créée pour vous, esprits tourmentés. Qu'elle soit un hommage à votre courage... devant la menace 
+							que je vais maintenant évoquer dans mon histoire.{break}\n
+							Outside there was a tremendous crash followed by a sudden movement of the crowd and people started 
+							shouting and screaming that monsters were upon us. There was another sickening bang and a rolling 
+							of dust as the towers and the city wall collapsed.\n
+							We watched the scene from our upper terrace and through the dust we saw the first giant $kitin.p$ 
+							clambering into the city. Mother grabbed me, we ran downstairs, "pour the trapper liquid over 
+							yourself, quick, it'll cover your scent!" she cried as she dowsed my brother and herself. We 
+							poured a whole container over the floor then lifted the cellar trapdoor and descended to where my 
+							father did his skinning, and it was none too late neither.\n
+							Offrons à présent aux esprits $mchcjbley01.ia$ $mchcjbley01$, symbole de vitalité et de protection.]
+
+}
+
+ZA_KNOWLEDGE_MIS_01_GIVE_ITEM_MENU_2 (int item_count)
+{
+//Donner la peau de capryni au sage
+	za_knowledge_mis_01_give_item_menu_2		[Give leather]
+
+}
+
+ZA_KNOWLEDGE_MIS_01_STEP_4 (player p, item mckhjbcll01)
+{
+	za_knowledge_mis_01_step_4			[Puisse cette offrande vous réconforter, esprits des trappeurs, esprits des artisans au 
+							savoir-faire inégalé. Nous ne vous oublions pas, même dans la tempête du sombre destin de Zorae.{break}\n
+							A thousand feet drummed past the upper cellar window that looked onto the street at ground level. 
+							An obnoxious smell then filled the air as on the floor above our heads we heard some dreadful 
+							scratching about. My mother held my hand over my mouth for the first five minutes in anticipation 
+							of my screams, I was petrified. And then the rummaging above our heads got louder...\n
+							My mother made signs for me not to make a sound, and I did my best to swallow my sobs for my father 
+							who must have been killed. Then there was fierce banging on the door and this time I couldn't help 
+							let out a frightened yelp. My mother put her hand over my mouth again as upstairs all movement 
+							ceased, there was a kind of electric sound and I knew the monster was searching the air for sound 
+							vibrations. I swear my heart beat so fast and so loud that I was sure the monster could hear it!\n
+							Les esprits s'agitent, $p$...  $mckhjbcll01.pda$ $mckhjbcll01.p$ seront notre prochaine offrande.]
+
+}
+
+ZA_KNOWLEDGE_MIS_01_GIVE_ITEM_MENU_3 (int item_count)
+{
+	za_knowledge_mis_01_give_item_menu_3		[Give claws]
+
+}
+
+ZA_KNOWLEDGE_MIS_01_STEP_5 (race kitin)
+{
+	za_knowledge_mis_01_step_5			[Nous continuons votre combat contre $kitin.pda$ $kitin.p$, ô esprits. Par ce don, nous nous inclinons 
+							devant vous. Et nous poursuivons le récit...\n
+							But then the sound of rummaging moved away, the creepy-crawly steps were leaving our house, and I 
+							collapsed in my mother's arms. I don't know how long we slept maybe four hours, all I remember is 
+							that outside it was getting dark when I awoke my little brother giggling at a moth. My mother sat 
+							bolt upright from her slumber and hushed him for fear of kitins nearby. But though we couldn't see 
+							out of the window for the dust and dimness, we felt that all was quiet about. We cautiously took 
+							our first steps on the creaky cellar steps leading to the trapdoor in the floor. As my mother 
+							turned the handle there was a sudden awful clamor outside the door and this time I couldn't keep 
+							in my cries. My mother barely had time to sweep both me and my brother up in her arms...\n
+							Voici le temps de la dernière offrande. L'écorce, le rempart de l'arbre contre ses ennemis...]
+
+}
+
+ZA_KNOWLEDGE_MIS_01_GIVE_ITEM_MENU_4 (int item_count)
+{
+	za_knowledge_mis_01_give_item_menu_4		[Give bark]
+
+}
+
+ZA_KNOWLEDGE_MIS_01_END ()
+{
+	za_knowledge_mis_01_end				[Acceptez ce morceau d'écorce, esprits de Zorae. Symbole des murs brisés de l'ancienne capitale. 
+							Avec cette offrande, je termine mon histoire.\n
+							The door was thrust open and there stood a tall silhouette that I knew peering down at us : my father! 
+							He pulled all of us out in one lump and squeezed us in his great arms. It was then on looking round 
+							that I realized that our house and our neighbors' houses, the whole city was in ruins like after a 
+							wild flow of water. He had made it to the house of a fellow guildsman when the kitins broke through 
+							the wall, he pushed the whole family down into the cellar where they were waiting for us now. He 
+							told us how he had done as he had often told my mother to do in case we were besieged by beasts 
+							when we lived in the country. My father told us later that it was the only way to escape as many 
+							had died fleeing at the other end of town where the doors were not wide enough, many were trampled 
+							under foot before the kitins even got to them. It is for this that our villages today have no walls.]
+
+}
+
+//reward 1 action knowledge + fame zorai
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+ZA_FIGHT_01
+*/
+ZA_FIGHT_01_TITLE (bot giver)
+{
+		za_fight_01_title	[Stop the contagion.]
+
+}
+ZA_FIGHT_01_DESC (bot giver)
+{
+		za_fight_01_desc		[Find and kill contagious creatures.]
+}
+
+ZA_FIGHT_01_STEP_1 (race bodoc, bot target)
+{
+		za_fight_01_step_1 [Last night a patrol of guards was attacked by a $bodoc$ and one of the guards has been biten.{break}
+		It's a strange evenement from an herbivore known as a timorous animal.\n
+		Since this bite the injured guard is feverish and his health seems to lower.\n
+		We sent him to our city for examination but we already can tell that he has contact a contagious disease.\n
+		We absolutly must find the origin of this desease and kill all contagious animals.\n
+		Our village is small and a quarantine period will be a calamity.\n
+		Find and speak to $target$ he's a member of the patrol who has been attacked, he will tell you more about the place where it happened.\n]
+}
+ZA_FIGHT_01_STEP_2 (race bodoc)
+{
+		za_fight_01_step_2 [Oh yes, the sick $bodoc$, we are looking for it since this morning in vain.{break}
+		My brother is a great traveler and he told me about a similar case in the Matys continent and it seems that sick animals become 
+		extremely sensitive to day light.\n
+		I think that during the day the sick animal stay hidden in dark places, you should try to find it at night.\n
+		I will indicate you the place where we have been attacked the other night, listen carefuly.\n
+		Leave the village by the south entrance and, once you are at the point of intersection follow the west road.\n
+		Just before entering the valley the road is making an angle, it's the place where we have been attacked, near the little stagnant pool.\n
+		Good luck, may the holy spirit be with you.]
+}
+ZA_FIGHT_01_END (player p)
+{
+		za_fight_01_end [Congratulation $p$, you made a very nice job.\n
+		The village is safe now but I hope that there is no others infected animals.\n
+		My guards will be very attentive to prevent expansion of the illness if they find another case of infection.\n
+		Take this reward for your job $p$.]
+}
+/*
+ZA_FIGHT_02
+*/
+
+ZA_FIGHT_02_TITLE (bot giver)
+{
+		ZA_FIGHT_03_TITLE		[Dangerous roads.]
+
+}
+ZA_FIGHT_02_DESC (bot giver, creature_model target)
+{
+		za_foght_03_desc		[Make sure that $target$ will no longer attack travelers.]
+}
+ZA_FIGHT_02_STEP_1 (player p, creature_model target, place Zora)
+{
+		za_fight_03_step_1 [Hello $p$, merchants reports me that our commercial convoys are constantly under the attack of $target$.{break}
+			These strange creatures seem to possess an extra form of intelligence, they have learnt how to recognize a food convoy.\n
+			The attacks began two weeks ago, in the begining they were pretty rare and we tought that it was entirely by accident.\n
+			But the number of these attacks constantly grew and now it's become impossible to make a safety travel to $Zora$.\n
+			You certainly think that there is enough guards to protect our convoys but unfortunatly they are very busy with 
+			another problem we have with contagious animals.\n
+			I sent a guard to scout and find the resting place of these creatures, speak to him and he will lead you there.]				
+
+}
+
+ZA_FIGHT_02_STEP_2 (bot previous)
+{
+		za_fight_02_step_2 [$previous$ sent you?\n
+			you want to see where these strange creatures are resting?\n
+			Follow me, I will show you the way.]				
+
+}
+ZA_FIGHT_02_END (player p)
+{
+		za_fight_02_end [Very nice! I will give you a nice reward in the name of our village chief.\n
+			You did a lot for the community and we are not going to forget it.]				
+
+}
+ZA_FIGHT_02_ONFOLLOW_1()
+{
+za_fight_02_onfollow_1  				[Let's go!]
+}
+ZA_FIGHT_02_AT_DEST()
+{
+za_fight_02_at_dest 				[We arrived, the resting place of the creatures is on the hill just front of us.\n
+									I will wait here for few minutes and back to the village.\n
+									Good luck.]
+}
+ZA_FIGHT_02_ONFOLLOW_2()
+{
+za_fight_02_onfollow_2  				[I go back to village, let's go!]
+}
+
+/*
+ZA_CRAFT_1
+*/
+ZA_CRAFT_1_TITLE (bot giver, item parasite)
+{
+	za_craft_1_title	[Help $giver$ fight back the $parasite.p$.]
+
+}
+
+ZA_CRAFT_1_DESC (bot giver, item parasite, int qt)
+{
+	za_craft_1_desc		[$giver$ needs help because $parasite.p$ invaded his resources spots. Collect $qt$ of them at least so he can
+						continue his crafting work.]
+}
+
+ZA_CRAFT_1_STEP_1 (item parasite, int qt)
+{
+	za_craft_1_step_1	[As you may have already noticed, we have a lot of $parasite.p$ in the ground aroud here.
+				 		I'm a bit annoyed by this as they eat a large part of the resources I could use to craft
+				 		my items. If you help me fight back by foraging out $qt$ of them, I will pay you.]
+}
+
+ZA_CRAFT_1_TALKMENU1()
+{
+	za_craft_1_talkmenu1	[I've got the parasites]
+}
+	
+ZA_CRAFT_1_END ()
+{
+	za_craft_1_end		[Thanks for your help. Take this as a reward.]
+}

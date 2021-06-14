@@ -1,0 +1,539 @@
+﻿R_13_00_FINISH_RITE_R_13_00_FINISH_RITE_DESC (bot giver, bot givervar)
+{
+		r_13_00_finish_rite_r_13_00_finish_rite_desc	[Talk with $givervar$]
+}
+
+R_13_00_FINISH_RITE_R_13_00_FINISH_RITE_TITLE (bot giver)
+{
+		r_13_00_finish_rite_r_13_00_finish_rite_title	[HELLO?]
+}
+
+R_13_00_HARVESTER_A_ASK_FOR_MATS ()
+{
+		r_13_00_harvester_a_ask_for_mats	[Oh, it's you again. Did you get the stuff I asked for?]
+}
+
+R_13_00_HARVESTER_A_BRING_MATERIALS_TO (bot givervar)
+{
+		r_13_00_harvester_a_bring_materials_to	[Bring the materials to $givervar$]
+}
+
+R_13_00_HARVESTER_A_DIALOG_2 ()
+{
+		r_13_00_harvester_a_dialog_2	[Two weeks ago a bunch of homins came through and beat us all up and stole half our food.  I've been trying to find food and supplies in this area, but it seems to be barren.]
+}
+
+R_13_00_HARVESTER_A_DIALOG_2_ANSWER_A ()
+{
+		r_13_00_harvester_a_dialog_2_answer_a	[We are Rangers on a mission. How can we help you?]
+}
+
+R_13_00_HARVESTER_A_DIALOG_2_ANSWER_B ()
+{
+		r_13_00_harvester_a_dialog_2_answer_b	[Sorry to hear that.  We mean you no harm.]
+}
+
+R_13_00_HARVESTER_A_DIALOG_3 ()
+{
+		r_13_00_harvester_a_dialog_3	[Sure.  I believe that.\n
+			  I believe Jena and Ma-Duk are lovers, too.\n
+			 Pull the other one.]
+}
+
+R_13_00_HARVESTER_A_DIALOG_3_ANSWER_A ()
+{
+		r_13_00_harvester_a_dialog_3_answer_a	[Hey, no need to be hostile. How can we help you?]
+}
+
+R_13_00_HARVESTER_A_DIALOG_3_ANSWER_B ()
+{
+		r_13_00_harvester_a_dialog_3_answer_b	[If you're going to be that way, good bye.]
+}
+
+R_13_00_HARVESTER_A_DIALOG_4 ()
+{
+		r_13_00_harvester_a_dialog_4	[We were told the Road was clear, but it's been nothing but kitins and beasts, and nothing much for the meks to eat, and not much in the way of direction signs.  We pushed through the brush to get here because of the kitins, and then those bandits came and beat us up.  <continue>  Are you sure you're Rangers?   We haven't seen any of those since the Old Lands. If you really want to help, you can find us supplies we need before we can continue on.<continue>   We're hungry and our boots and clothes are all worn out.  I've been looking all over in this refuge and I can't find anything.]
+}
+
+R_13_00_HARVESTER_A_DIALOG_4_ANSWER_A ()
+{
+		r_13_00_harvester_a_dialog_4_answer_a	[Well, we aren't really Rangers yet, but we're training.  What do you need?]
+}
+
+
+R_13_00_HARVESTER_A_DIALOG_4_ANSWER_B ()
+{
+		r_13_00_harvester_a_dialog_4_answer_b	[Yes. We're here to help you. What do you need?]
+}
+
+R_13_00_HARVESTER_A_DIALOG_5 ()
+{
+		r_13_00_harvester_a_dialog_5	[Well, we need food and we need some skin and shell for clothes and boots.  Here,   let me write down a list of what we need.  If you get this, then I'm sure that I could make <name of Leader> calm down and talk to you.  Will you do this for me?]
+}
+
+R_13_00_HARVESTER_A_DIALOG_5_ANSWER_A ()
+{
+		r_13_00_harvester_a_dialog_5_answer_a	[Yes]
+}
+
+R_13_00_HARVESTER_A_DIALOG_5_ANSWER_B ()
+{
+		r_13_00_harvester_a_dialog_5_answer_b	[NO]
+}
+
+R_13_00_HARVESTER_A_DIALOG_6 ()
+{
+		r_13_00_harvester_a_dialog_6	[Harvester:  Fantastic, just take these and go talk to <name of group leader>.  I'll keep on looking for materials near here.  Maybe I'll get lucky]
+}
+
+R_13_00_HARVESTER_A_DIALOG_6_ANSWER_A ()
+{
+		r_13_00_harvester_a_dialog_6_answer_a	[Great Thank you!]
+}
+
+R_13_00_HARVESTER_A_INTRO_1 ()
+{
+		r_13_00_harvester_a_intro_1	[What do you want?  You can see I haven't got anything.  I've found nothing I can harvest here and this pick is halfway worn through.  If you're going to beat me up like the last ones, go ahead, I can't stop you.]
+}
+
+R_13_00_HARVESTER_A_INTRO_1_ANSWER_A ()
+{
+		r_13_00_harvester_a_intro_1_answer_a	[Last ones?]
+}
+
+R_13_00_HARVESTER_A_INTRO_1_ANSWER_B ()
+{
+		r_13_00_harvester_a_intro_1_answer_b	[We mean you no harm.]
+}
+
+R_13_00_HARVESTER_A_INTRO_1_ANSWER_C ()
+{
+		r_13_00_harvester_a_intro_1_answer_c	[We are Rangers on a mission. How can we help you?]
+}
+
+R_13_00_HARVESTER_A_INTRO_1_ANSWER_D ()
+{
+		r_13_00_harvester_a_intro_1_answer_d	[We mean you no harm. We won't bother you. Have a nice day.]
+}
+
+R_13_00_HARVESTER_A_R_13_00_ARK_URL_HARVESTER_A ()
+{
+		r_13_00_harvester_a_r_13_00_ark_url_harvester_a	[WEB : app_arcc action=mScript_Run&script=5018&_hideWindow=1&command=reset_all]
+}
+
+R_13_00_HARVESTER_A_R_13_00_HARVESTER_A_DESC (bot giver, bot givervar)
+{
+		r_13_00_harvester_a_r_13_00_harvester_a_desc	[Talk with $givervar$]
+}
+
+R_13_00_HARVESTER_A_R_13_00_HARVESTER_A_TITLE (bot giver)
+{
+		r_13_00_harvester_a_r_13_00_harvester_a_title	[Supplies for the Refugees.]
+}
+
+R_13_00_HARVESTER_B_ASK_FOR_MATS ()
+{
+		r_13_00_harvester_b_ask_for_mats	[Oh, it's you again. Did you get the stuff I asked for?]
+}
+
+R_13_00_HARVESTER_B_BRING_MATERIALS_TO (bot givervar)
+{
+		r_13_00_harvester_b_bring_materials_to	[Bring the materials to $givervar$]
+}
+
+R_13_00_HARVESTER_B_DIALOG_2 ()
+{
+		r_13_00_harvester_b_dialog_2	[Two weeks ago a bunch of homins came through and beat us all up and stole half our food.  I've been trying to find food and supplies in this area, but it seems to be barren.]
+}
+
+R_13_00_HARVESTER_B_DIALOG_2_ANSWER_A ()
+{
+		r_13_00_harvester_b_dialog_2_answer_a	[We are Rangers on a mission. How can we help you?]
+}
+
+R_13_00_HARVESTER_B_DIALOG_2_ANSWER_B ()
+{
+		r_13_00_harvester_b_dialog_2_answer_b	[Sorry to hear that.  We mean you no harm.]
+}
+
+R_13_00_HARVESTER_B_DIALOG_3 ()
+{
+		r_13_00_harvester_b_dialog_3	[Sure.  I believe that.\n
+			  I believe Jena and Ma-Duk are lovers, too.\n
+			 Pull the other one.]
+}
+
+R_13_00_HARVESTER_B_DIALOG_3_ANSWER_A ()
+{
+		r_13_00_harvester_b_dialog_3_answer_a	[Hey, no need to be hostile. How can we help you?]
+}
+
+R_13_00_HARVESTER_B_DIALOG_3_ANSWER_B ()
+{
+		r_13_00_harvester_b_dialog_3_answer_b	[If you're going to be that way, good bye.]
+}
+
+R_13_00_HARVESTER_B_DIALOG_4 ()
+{
+		r_13_00_harvester_b_dialog_4	[We were told the Road was clear, but it's been nothing but kitins and beasts, and nothing much for the meks to eat, and not much in the way of direction signs.  We pushed through the brush to get here because of the kitins, and then those bandits came and beat us up.  <continue>  Are you sure you're Rangers?   We haven't seen any of those since the Old Lands. If you really want to help, you can find us supplies we need before we can continue on.<continue>   We're hungry and our boots and clothes are all worn out.  I've been looking all over in this refuge and I can't find anything.]
+}
+
+R_13_00_HARVESTER_B_DIALOG_4_ANSWER_A ()
+{
+		r_13_00_harvester_b_dialog_4_answer_a	[Well, we aren't really Rangers yet, but we're training.  What do you need?]
+}
+
+R_13_00_HARVESTER_B_DIALOG_4_ANSWER_B ()
+{
+		r_13_00_harvester_b_dialog_4_answer_b	[Yes. We're here to help you. What do you need?]
+}
+
+R_13_00_HARVESTER_B_DIALOG_5 ()
+{
+		r_13_00_harvester_b_dialog_5	[Well, we need food and we need some skin and shell for clothes and boots.  Here,   let me write down a list of what we need.  If you get this, then I'm sure that I could make <name of Leader> calm down and talk to you.  Will you do this for me?]
+}
+
+R_13_00_HARVESTER_B_DIALOG_5_ANSWER_A ()
+{
+		r_13_00_harvester_b_dialog_5_answer_a	[Yes]
+}
+
+R_13_00_HARVESTER_B_DIALOG_5_ANSWER_B ()
+{
+		r_13_00_harvester_b_dialog_5_answer_b	[NO]
+}
+
+R_13_00_HARVESTER_B_DIALOG_6 ()
+{
+		r_13_00_harvester_b_dialog_6	[Harvester:  Fantastic, just take these and go talk to <name of group leader>.  I'll keep on looking for materials near here.  Maybe I'll get lucky]
+}
+
+R_13_00_HARVESTER_B_DIALOG_6_ANSWER_A ()
+{
+		r_13_00_harvester_b_dialog_6_answer_a	[Great Thank you!]
+}
+
+R_13_00_HARVESTER_B_INTRO_1 ()
+{
+		r_13_00_harvester_b_intro_1	[What do you want?  You can see I haven't got anything.  I've found nothing I can harvest here and this pick is halfway worn through.  If you're going to beat me up like the last ones, go ahead, I can't stop you.]
+}
+
+R_13_00_HARVESTER_B_INTRO_1_ANSWER_A ()
+{
+		r_13_00_harvester_b_intro_1_answer_a	[Last ones?]
+}
+
+R_13_00_HARVESTER_B_INTRO_1_ANSWER_B ()
+{
+		r_13_00_harvester_b_intro_1_answer_b	[We mean you no harm.]
+}
+
+R_13_00_HARVESTER_B_INTRO_1_ANSWER_C ()
+{
+		r_13_00_harvester_b_intro_1_answer_c	[We are Rangers on a mission. How can we help you?]
+}
+
+R_13_00_HARVESTER_B_INTRO_1_ANSWER_D ()
+{
+		r_13_00_harvester_b_intro_1_answer_d	[We mean you no harm. We won't bother you. Have a nice day.]
+}
+
+R_13_00_HARVESTER_B_R_13_00_ARK_URL_HARVESTER_B ()
+{
+		r_13_00_harvester_b_r_13_00_ark_url_harvester_b	[WEB : app_arcc action=mScript_Run&script=5019&_hideWindow=1&command=reset_all]
+}
+
+R_13_00_HARVESTER_B_R_13_00_HARVESTER_B_DESC (bot giver, bot givervar)
+{
+		r_13_00_harvester_b_r_13_00_harvester_b_desc	[Talk with $givervar$]
+}
+
+R_13_00_HARVESTER_B_R_13_00_HARVESTER_B_TITLE (bot giver)
+{
+		r_13_00_harvester_b_r_13_00_harvester_b_title	[HELLO?]
+}
+
+R_13_00_HARVESTER_C_ASK_FOR_MATS ()
+{
+		r_13_00_harvester_c_ask_for_mats	[Oh, it's you again. Did you get the stuff I asked for?]
+}
+
+R_13_00_HARVESTER_C_BRING_MATERIALS_TO (bot givervar)
+{
+		r_13_00_harvester_c_bring_materials_to	[Bring the materials to $givervar$]
+}
+
+R_13_00_HARVESTER_C_DIALOG_2 ()
+{
+		r_13_00_harvester_c_dialog_2	[Two weeks ago a bunch of homins came through and beat us all up and stole half our food.  I've been trying to find food and supplies in this area, but it seems to be barren.]
+}
+
+R_13_00_HARVESTER_C_DIALOG_2_ANSWER_A ()
+{
+		r_13_00_harvester_c_dialog_2_answer_a	[We are Rangers on a mission. How can we help you?]
+}
+
+R_13_00_HARVESTER_C_DIALOG_2_ANSWER_B ()
+{
+		r_13_00_harvester_c_dialog_2_answer_b	[Sorry to hear that.  We mean you no harm.]
+}
+
+R_13_00_HARVESTER_C_DIALOG_3 ()
+{
+		r_13_00_harvester_c_dialog_3	[Sure.  I believe that.\n
+			  I believe Jena and Ma-Duk are lovers, too.\n
+			 Pull the other one.]
+}
+
+R_13_00_HARVESTER_C_DIALOG_3_ANSWER_A ()
+{
+		r_13_00_harvester_c_dialog_3_answer_a	[Hey, no need to be hostile. How can we help you?]
+}
+
+R_13_00_HARVESTER_C_DIALOG_3_ANSWER_B ()
+{
+		r_13_00_harvester_c_dialog_3_answer_b	[If you're going to be that way, good bye.]
+}
+
+R_13_00_HARVESTER_C_DIALOG_4 ()
+{
+		r_13_00_harvester_c_dialog_4	[We were told the Road was clear, but it's been nothing but kitins and beasts, and nothing much for the meks to eat, and not much in the way of direction signs.  We pushed through the brush to get here because of the kitins, and then those bandits came and beat us up.  <continue>  Are you sure you're Rangers?   We haven't seen any of those since the Old Lands. If you really want to help, you can find us supplies we need before we can continue on.<continue>   We're hungry and our boots and clothes are all worn out.  I've been looking all over in this refuge and I can't find anything.]
+}
+
+R_13_00_HARVESTER_C_DIALOG_4_ANSWER_A ()
+{
+		r_13_00_harvester_c_dialog_4_answer_a	[Well, we aren't really Rangers yet, but we're training.  What do you need?]
+}
+
+R_13_00_HARVESTER_C_DIALOG_4_ANSWER_B ()
+{
+		r_13_00_harvester_c_dialog_4_answer_b	[Yes. We're here to help you. What do you need?]
+}
+
+R_13_00_HARVESTER_C_DIALOG_5 ()
+{
+		r_13_00_harvester_c_dialog_5	[Well, we need food and we need some skin and shell for clothes and boots.  Here,   let me write down a list of what we need.  If you get this, then I'm sure that I could make <name of Leader> calm down and talk to you.  Will you do this for me?]
+}
+
+R_13_00_HARVESTER_C_DIALOG_5_ANSWER_A ()
+{
+		r_13_00_harvester_c_dialog_5_answer_a	[Yes]
+}
+
+R_13_00_HARVESTER_C_DIALOG_5_ANSWER_B ()
+{
+		r_13_00_harvester_c_dialog_5_answer_b	[NO]
+}
+
+R_13_00_HARVESTER_C_DIALOG_6 ()
+{
+		r_13_00_harvester_c_dialog_6	[Harvester:  Fantastic, just take these and go talk to <name of group leader>.  I'll keep on looking for materials near here.  Maybe I'll get lucky]
+}
+
+R_13_00_HARVESTER_C_DIALOG_6_ANSWER_A ()
+{
+		r_13_00_harvester_c_dialog_6_answer_a	[Great Thank you!]
+}
+
+R_13_00_HARVESTER_C_INTRO_1 ()
+{
+		r_13_00_harvester_c_intro_1	[What do you want?  You can see I haven't got anything.  I've found nothing I can harvest here and this pick is halfway worn through.  If you're going to beat me up like the last ones, go ahead, I can't stop you.]
+}
+
+R_13_00_HARVESTER_C_INTRO_1_ANSWER_A ()
+{
+		r_13_00_harvester_c_intro_1_answer_a	[Last ones?]
+}
+
+R_13_00_HARVESTER_C_INTRO_1_ANSWER_B ()
+{
+		r_13_00_harvester_c_intro_1_answer_b	[We mean you no harm.]
+}
+
+R_13_00_HARVESTER_C_INTRO_1_ANSWER_C ()
+{
+		r_13_00_harvester_c_intro_1_answer_c	[We are Rangers on a mission. How can we help you?]
+}
+
+R_13_00_HARVESTER_C_INTRO_1_ANSWER_D ()
+{
+		r_13_00_harvester_c_intro_1_answer_d	[We mean you no harm. We won't bother you. Have a nice day.]
+}
+
+R_13_00_HARVESTER_C_R_13_00_ARK_URL_HARVESTER_C ()
+{
+		r_13_00_harvester_c_r_13_00_ark_url_harvester_c	[WEB : app_arcc action=mScript_Run&script=5020&_hideWindow=1&command=reset_all]
+}
+
+R_13_00_HARVESTER_C_R_13_00_HARVESTER_C_DESC (bot giver, bot givervar)
+{
+		r_13_00_harvester_c_r_13_00_harvester_c_desc	[Talk with $givervar$]
+}
+
+R_13_00_HARVESTER_C_R_13_00_HARVESTER_C_TITLE (bot giver)
+{
+		r_13_00_harvester_c_r_13_00_harvester_c_title	[HELLO?]
+}
+
+R_13_00_HARVESTER_D_ASK_FOR_MATS ()
+{
+		r_13_00_harvester_d_ask_for_mats	[Oh, it's you again. Did you get the stuff I asked for?]
+}
+
+R_13_00_HARVESTER_D_BRING_MATERIALS_TO (bot givervar)
+{
+		r_13_00_harvester_d_bring_materials_to	[Bring the materials to $givervar$]
+}
+
+R_13_00_HARVESTER_D_DIALOG_2 ()
+{
+		r_13_00_harvester_d_dialog_2	[Two weeks ago a bunch of homins came through and beat us all up and stole half our food.  I've been trying to find food and supplies in this area, but it seems to be barren.]
+}
+
+R_13_00_HARVESTER_D_DIALOG_2_ANSWER_A ()
+{
+		r_13_00_harvester_d_dialog_2_answer_a	[We are Rangers on a mission. How can we help you?]
+}
+
+R_13_00_HARVESTER_D_DIALOG_2_ANSWER_B ()
+{
+		r_13_00_harvester_d_dialog_2_answer_b	[Sorry to hear that.  We mean you no harm.]
+}
+
+R_13_00_HARVESTER_D_DIALOG_3 ()
+{
+		r_13_00_harvester_d_dialog_3	[Sure.  I believe that.\n
+			  I believe Jena and Ma-Duk are lovers, too.\n
+			 Pull the other one.]
+}
+
+R_13_00_HARVESTER_D_DIALOG_3_ANSWER_A ()
+{
+		r_13_00_harvester_d_dialog_3_answer_a	[Hey, no need to be hostile. How can we help you?]
+}
+
+R_13_00_HARVESTER_D_DIALOG_3_ANSWER_B ()
+{
+		r_13_00_harvester_d_dialog_3_answer_b	[If you're going to be that way, good bye.]
+}
+
+R_13_00_HARVESTER_D_DIALOG_4 ()
+{
+		r_13_00_harvester_d_dialog_4	[We were told the Road was clear, but it's been nothing but kitins and beasts, and nothing much for the meks to eat, and not much in the way of direction signs.  We pushed through the brush to get here because of the kitins, and then those bandits came and beat us up.  <continue>  Are you sure you're Rangers?   We haven't seen any of those since the Old Lands. If you really want to help, you can find us supplies we need before we can continue on.<continue>   We're hungry and our boots and clothes are all worn out.  I've been looking all over in this refuge and I can't find anything.]
+}
+
+R_13_00_HARVESTER_D_DIALOG_4_ANSWER_A ()
+{
+		r_13_00_harvester_d_dialog_4_answer_a	[Well, we aren't really Rangers yet, but we're training.  What do you need?]
+}
+
+R_13_00_HARVESTER_D_DIALOG_4_ANSWER_B ()
+{
+		r_13_00_harvester_d_dialog_4_answer_b	[Yes. We're here to help you. What do you need?]
+}
+
+R_13_00_HARVESTER_D_DIALOG_5 ()
+{
+		r_13_00_harvester_d_dialog_5	[Well, we need food and we need some skin and shell for clothes and boots.  Here,   let me write down a list of what we need.  If you get this, then I'm sure that I could make <name of Leader> calm down and talk to you.  Will you do this for me?]
+}
+
+R_13_00_HARVESTER_D_DIALOG_5_ANSWER_A ()
+{
+		r_13_00_harvester_d_dialog_5_answer_a	[Yes]
+}
+
+R_13_00_HARVESTER_D_DIALOG_5_ANSWER_B ()
+{
+		r_13_00_harvester_d_dialog_5_answer_b	[NO]
+}
+
+R_13_00_HARVESTER_D_DIALOG_6 ()
+{
+		r_13_00_harvester_d_dialog_6	[Harvester:  Fantastic, just take these and go talk to <name of group leader>.  I'll keep on looking for materials near here.  Maybe I'll get lucky]
+}
+
+R_13_00_HARVESTER_D_DIALOG_6_ANSWER_A ()
+{
+		r_13_00_harvester_d_dialog_6_answer_a	[Great Thank you!]
+}
+
+R_13_00_HARVESTER_D_INTRO_1 ()
+{
+		r_13_00_harvester_d_intro_1	[What do you want?  You can see I haven't got anything.  I've found nothing I can harvest here and this pick is halfway worn through.  If you're going to beat me up like the last ones, go ahead, I can't stop you.]
+}
+
+R_13_00_HARVESTER_D_INTRO_1_ANSWER_A ()
+{
+		r_13_00_harvester_d_intro_1_answer_a	[Last ones?]
+}
+
+R_13_00_HARVESTER_D_INTRO_1_ANSWER_B ()
+{
+		r_13_00_harvester_d_intro_1_answer_b	[We mean you no harm.]
+}
+
+R_13_00_HARVESTER_D_INTRO_1_ANSWER_C ()
+{
+		r_13_00_harvester_d_intro_1_answer_c	[We are Rangers on a mission. How can we help you?]
+}
+
+R_13_00_HARVESTER_D_INTRO_1_ANSWER_D ()
+{
+		r_13_00_harvester_d_intro_1_answer_d	[We mean you no harm. We won't bother you. Have a nice day.]
+}
+
+R_13_00_HARVESTER_D_R_13_00_ARK_URL_HARVESTER_D ()
+{
+		r_13_00_harvester_d_r_13_00_ark_url_harvester_d	[WEB : app_arcc action=mScript_Run&script=5021&_hideWindow=1&command=reset_all]
+}
+
+R_13_00_HARVESTER_D_R_13_00_HARVESTER_D_DESC (bot giver, bot givervar)
+{
+		r_13_00_harvester_d_r_13_00_harvester_d_desc	[Talk with $givervar$]
+}
+
+R_13_00_HARVESTER_D_R_13_00_HARVESTER_D_TITLE (bot giver)
+{
+		r_13_00_harvester_d_r_13_00_harvester_d_title	[HELLO?]
+}
+
+R_13_00_START_RITE_1_R_13_00_START_RITE_1_DESC (bot giver, bot givervar)
+{
+		r_13_00_start_rite_1_r_13_00_start_rite_1_desc	[Talk with $givervar$]
+}
+
+R_13_00_START_RITE_1_R_13_00_START_RITE_1_TITLE (bot giver)
+{
+		r_13_00_start_rite_1_r_13_00_start_rite_1_title	[HELLO?]
+}
+
+R_13_00_START_RITE_KILL_R_13_00_ARK_URL_KILL_A_KITIN ()
+{
+		r_13_00_start_rite_kill_r_13_00_ark_url_kill_a_kitin	[WEB : app_arcc action=mScript_Run&script=5292&_hideWindow=1&command=reset_all]
+}
+
+R_13_00_START_RITE_KILL_R_13_00_START_RITE_KILL_DESC (bot giver)
+{
+		r_13_00_start_rite_kill_r_13_00_start_rite_kill_desc	[Kill a Kitin]
+}
+
+R_13_00_START_RITE_KILL_R_13_00_START_RITE_KILL_TITLE (bot giver)
+{
+		r_13_00_start_rite_kill_r_13_00_start_rite_kill_title	[Kill a Kitin]
+}
+
+R_13_00_START_RITE_TP_R_13_00_ARK_URL_24H_FAIL ()
+{
+		r_13_00_start_rite_tp_r_13_00_ark_url_24h_fail	[WEB : app_arcc action=mScript_Run&script=5350&_hideWindow=1&command=reset_all]
+}
+
+R_13_00_START_RITE_TP_R_13_00_START_RITE_TP_DESC (bot giver, bot givervar)
+{
+		r_13_00_start_rite_tp_r_13_00_start_rite_tp_desc	[Talk with $givervar$]
+}
+
+R_13_00_START_RITE_TP_R_13_00_START_RITE_TP_TITLE (bot giver)
+{
+		r_13_00_start_rite_tp_r_13_00_start_rite_tp_title	[HELLO?]
+}
+

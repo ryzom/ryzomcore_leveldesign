@@ -1,0 +1,32 @@
+﻿R_02_02_MIS_TITLE (bot giver)
+{
+	r_02_02_mis_title	[La collection d'armes de tir]
+}
+
+R_02_02_MIS_DESC (bot giver, place fairhaven)
+{
+	r_02_02_mis_desc	[The intendant of $fairhaven$ needs a complete set of range weapons for a demonstration.]
+}
+
+R_02_02_P_LDF_INTRO_1 ()
+{
+	r_02_02_p_ldf_intro_1	[A Fyros envoy is coming for a demonstration of Tryker techniques. I need a complete set of range weapons within two days.]
+}
+
+R_02_02_O_CRAFTAMMO (item item_to_craft_1, int item_to_craft_quality_5, int item_to_craft_quantity_5)
+{
+	r_02_02_o_craftammo	[Craft $item_to_craft_quantity_5$ level $item_to_craft_quality_5$ ammos of any type for $item_to_craft_1.da$ $item_to_craft_1$]
+}
+
+R_02_02_O_GIVESET (bot giver)
+{
+	r_02_02_o_giveset	[Give the full set you just crafted to $giver$]
+}
+
+R_02_02_P_BC_DEBRIEF_1 ()
+{
+	r_02_02_p_bc_debrief_1	[- Félicitations, je pense que cela montrera a l'émissaire fyros l'étendue de notre art\n
+- Voici un cube d'ambre qui t'en apprendra d'avantage sur les armes de tir\n
+- Et un plan de craft de bowrifle alternatif]
+}
+

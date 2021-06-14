@@ -1,0 +1,1895 @@
+﻿RPJOB_MAIN_TITLE (bot giver, item jobitem)
+{
+	( self.gender = male )
+		rpjob_main_title_m	[Occupation $jobitem.da$ $jobitem$]
+	( self.gender = female )
+		rpjob_main_title_f	[Occupation $jobitem.pda$ $jobitem.p$]
+}
+
+RPJOB_MAIN_DESC (bot giver, item jobitem)
+{
+	( self.gender = male )
+		rpjob_main_desc_m	[Become $jobitem.ia$ $jobitem$]
+	( self.gender = female )
+		rpjob_main_desc_f	[Become $jobitem.pia$ $jobitem.p$]
+}
+
+RPJOB_ALLREADY_HAVE_JOB (item jobitem)
+{
+	( self.gender = male )
+		rpjob_allready_have_job_m	[You have reached the maximum number of allowed elementary occupations.\nYou cannot become $jobitem.ia$ $jobitem$.]
+	( self.gender = female )
+		rpjob_allready_have_job_f	[You have reached the maximum number of allowed elementary occupations.\nYou cannot become $jobitem.pia$ $jobitem.p$.]
+}
+
+RPJOB_C_05DAY (int integer)
+{
+	rpjob_c_05day	[$integer$) 1/2 day]
+}
+
+RPJOB_C_0C (int integer)
+{
+	rpjob_c_0c	[$integer$) 0°C]
+}
+
+RPJOB_C_10C (int integer)
+{
+	rpjob_c_10c	[$integer$) 10°C]
+}
+
+RPJOB_C_10MIN (int integer)
+{
+	rpjob_c_10min	[$integer$) 10 min.]
+}
+
+RPJOB_C_10S (int integer)
+{
+	rpjob_c_10s	[$integer$) 10 sec.]
+}
+
+RPJOB_C_11C (int integer)
+{
+	rpjob_c_11c	[$integer$) 11°C]
+}
+
+RPJOB_C_13C (int integer)
+{
+	rpjob_c_13c	[$integer$) 13°C]
+}
+
+RPJOB_C_15C (int integer)
+{
+	rpjob_c_15c	[$integer$) 15°C]
+}
+
+RPJOB_C_17C (int integer)
+{
+	rpjob_c_17c	[$integer$) 17°C]
+}
+
+RPJOB_C_19C (int integer)
+{
+	rpjob_c_19c	[$integer$) 19°C]
+}
+
+RPJOB_C_1DAY (int integer)
+{
+	rpjob_c_1day	[$integer$) 1 day]
+}
+
+RPJOB_C_1HOUR (int integer)
+{
+	rpjob_c_1hour	[$integer$) 1 hour]
+}
+
+RPJOB_C_1INCH (int integer)
+{
+	rpjob_c_1inch	[$integer$) 1 inch]
+}
+
+RPJOB_C_1MIN (int integer)
+{
+	rpjob_c_1min	[$integer$) 1 min]
+}
+
+RPJOB_C_20C (int integer)
+{
+	rpjob_c_20c	[$integer$) 20°C]
+}
+
+RPJOB_C_20INCHES (int integer)
+{
+	rpjob_c_20inches	[$integer$) 20 inches]
+}
+
+RPJOB_C_25INCHES (int integer)
+{
+	rpjob_c_25inches	[$integer$) 25 inches]
+}
+
+RPJOB_C_2DAYS (int integer)
+{
+	rpjob_c_2days	[$integer$) 2 days]
+}
+
+RPJOB_C_2HOURS (int integer)
+{
+	rpjob_c_2hours	[$integer$) 2 hours]
+}
+
+RPJOB_C_2INCHES (int integer)
+{
+	rpjob_c_2inches	[$integer$) 2 inches]
+}
+
+RPJOB_C_30INCHES (int integer)
+{
+	rpjob_c_30inches	[$integer$) 30 inches]
+}
+
+RPJOB_C_30MIN (int integer)
+{
+	rpjob_c_30min	[$integer$) 30 mins]
+}
+
+RPJOB_C_30SEC (int integer)
+{
+	rpjob_c_30sec	[$integer$) 30 secs]
+}
+
+RPJOB_C_35INCHES (int integer)
+{
+	rpjob_c_35inches	[$integer$) 35 inches]
+}
+
+RPJOB_C_37_6C (int integer)
+{
+	rpjob_c_37_6c	[$integer$) 37.6°C]
+}
+
+RPJOB_C_3_DIFFERENT_FLOWERS (int integer)
+{
+	rpjob_c_3_different_flowers	[$integer$) Of 3 different flowers]
+}
+
+RPJOB_C_3_SAME_FLOWERS (int integer)
+{
+	rpjob_c_3_same_flowers	[$integer$) Of 3 identical flowers]
+}
+
+RPJOB_C_3INCHES (int integer)
+{
+	rpjob_c_3inches	[$integer$) 3 inches]
+}
+
+RPJOB_C_40INCHES (int integer)
+{
+	rpjob_c_40inches	[$integer$) 40 inches]
+}
+
+RPJOB_C_45INCHES (int integer)
+{
+	rpjob_c_45inches	[$integer$) 45 inches]
+}
+
+RPJOB_C_4INCHES (int integer)
+{
+	rpjob_c_4inches	[$integer$) 4 inches]
+}
+
+RPJOB_C_50INCHES (int integer)
+{
+	rpjob_c_50inches	[$integer$) 50 inches]
+}
+
+RPJOB_C_5C (int integer)
+{
+	rpjob_c_5c	[$integer$) 5°C]
+}
+
+RPJOB_C_5_DIFFERENT_FLOWERS (int integer)
+{
+	rpjob_c_5_different_flowers	[$integer$) Of 5 different flowers]
+}
+
+RPJOB_C_5_SAME_FLOWERS (int integer)
+{
+	rpjob_c_5_same_flowers	[$integer$) Of 5 identical flowers]
+}
+
+RPJOB_C_5HOURS (int integer)
+{
+	rpjob_c_5hours	[$integer$) 5 hours]
+}
+
+RPJOB_C_5INCHES (int integer)
+{
+	rpjob_c_5inches	[$integer$) 5 inches]
+}
+
+RPJOB_C_5MIN (int integer)
+{
+	rpjob_c_5min	[$integer$) 5 mins]
+}
+
+RPJOB_C_6INCHES (int integer)
+{
+	rpjob_c_6inches	[$integer$) 6 inches]
+}
+
+RPJOB_C_7C (int integer)
+{
+	rpjob_c_7c	[$integer$) 7°C]
+}
+
+RPJOB_C_7INCHES (int integer)
+{
+	rpjob_c_7inches	[$integer$) 7 inches]
+}
+
+RPJOB_C_8HOURS (int integer)
+{
+	rpjob_c_8hours	[$integer$) 8 inches]
+}
+
+RPJOB_C_9C (int integer)
+{
+	rpjob_c_9c	[$integer$) 9°C]
+}
+
+RPJOB_C_9_DIFFERENT_FLOWERS (int integer)
+{
+	rpjob_c_9_different_flowers	[$integer$) Of 9 different flowers]
+}
+
+RPJOB_C_9_SAME_FLOWERS (int integer)
+{
+	rpjob_c_9_same_flowers	[$integer$) Of 9 identical flowers]
+}
+
+RPJOB_C_ADD_PAINTED (int integer)
+{
+	rpjob_c_add_painted	[$integer$) Add painted to petals]
+}
+
+RPJOB_C_AGGLOMERATE_SHEETS (int integer)
+{
+	rpjob_c_agglomerate_sheets	[$integer$) Bind the leaves]
+}
+
+RPJOB_C_AMBER (int integer)
+{
+	rpjob_c_amber	[$integer$) Amber]
+}
+
+RPJOB_C_AMBER_BOX (int integer)
+{
+	rpjob_c_amber_box	[$integer$) Amber box]
+}
+
+RPJOB_C_AROUND_TRUNK (int integer)
+{
+	rpjob_c_around_trunk	[$integer$) Around a trunk]
+}
+
+RPJOB_C_AT_2CM (int integer)
+{
+	rpjob_c_at_2cm	[$integer$) In 2 inches of soil]
+}
+
+RPJOB_C_AT_3CM (int integer)
+{
+	rpjob_c_at_3cm	[$integer$) In 3 inches of soil]
+}
+
+RPJOB_C_AT_5CM (int integer)
+{
+	rpjob_c_at_5cm	[$integer$) In 5 inches of soil]
+}
+
+RPJOB_C_AT_CLOSEST_GROUND (int integer)
+{
+	rpjob_c_at_closest_ground	[$integer$) Closest to the soil]
+}
+
+RPJOB_C_AT_GROUND (int integer)
+{
+	rpjob_c_at_ground	[$integer$) At the soil]
+}
+
+RPJOB_C_AT_MIDWAY (int integer)
+{
+	rpjob_c_at_midway	[$integer$) Midway]
+}
+
+RPJOB_C_ATTACH_LIGAMENTS (int integer)
+{
+	rpjob_c_attach_ligaments	[$integer$) Attach with ligaments]
+}
+
+RPJOB_C_AVERAGE (int integer)
+{
+	rpjob_c_average	[$integer$) Average]
+}
+
+RPJOB_C_AZIMUTHAL (int integer)
+{
+	rpjob_c_azimuthal	[$integer$) Azimuthal]
+}
+
+RPJOB_C_BAG (int integer)
+{
+	rpjob_c_bag	[$integer$) Bag]
+}
+
+RPJOB_C_BARK (int integer)
+{
+	rpjob_c_bark	[$integer$) Bark]
+}
+
+RPJOB_C_BARK_THIN (int integer)
+{
+	rpjob_c_bark_thin	[$integer$) Thin Bark]
+}
+
+RPJOB_C_BARREL (int integer)
+{
+	rpjob_c_barrel	[$integer$) Barrel]
+}
+
+RPJOB_C_BASE_FOR_PEN (int integer)
+{
+	rpjob_c_base_for_pen	[$integer$) Pen Holder]
+}
+
+RPJOB_C_BATHE_IN_SALT (int integer)
+{
+	rpjob_c_bathe_in_salt	[$integer$) Let it bathe]
+}
+
+RPJOB_C_BEER (int integer)
+{
+	rpjob_c_beer	[$integer$) Beer]
+}
+
+RPJOB_C_BIG_BARREL (int integer)
+{
+	rpjob_c_big_barrel	[$integer$) Big Barrel]
+}
+
+RPJOB_C_BLACK (int integer)
+{
+	rpjob_c_black	[$integer$) Black]
+}
+
+RPJOB_C_BLACK_BLUE (int integer)
+{
+	rpjob_c_black_blue	[$integer$) Black and blue]
+}
+
+RPJOB_C_BLUE (int integer)
+{
+	rpjob_c_blue	[$integer$) Blue]
+}
+
+RPJOB_C_BLUE_RED (int integer)
+{
+	rpjob_c_blue_red	[$integer$) Blue and red]
+}
+
+RPJOB_C_BONES (int integer)
+{
+	rpjob_c_bones	[$integer$) Bones]
+}
+
+RPJOB_C_BOX_SCULPT (int integer)
+{
+	rpjob_c_box_sculpt	[$integer$) Sculpted Box]
+}
+
+RPJOB_C_BUDS (int integer)
+{
+	rpjob_c_buds	[$integer$) Buds]
+}
+
+RPJOB_C_BUILDINGS (int integer)
+{
+	rpjob_c_buildings	[$integer$) Apartments and guild halls]
+}
+
+RPJOB_C_BURN (int integer)
+{
+	rpjob_c_burn	[$integer$) Burn]
+}
+
+RPJOB_C_CANVA (int integer)
+{
+	rpjob_c_canva	[$integer$) Canvas]
+}
+
+RPJOB_C_CARAPACE (int integer)
+{
+	rpjob_c_carapace	[$integer$) Carapace]
+}
+
+RPJOB_C_CASE (int integer)
+{
+	rpjob_c_case	[$integer$) Case]
+}
+
+RPJOB_C_CASE_SCULPT (int integer)
+{
+	rpjob_c_case_sculpt	[$integer$) Worked pouch]
+}
+
+RPJOB_C_CHARCOAL (int integer)
+{
+	rpjob_c_charcoal	[$integer$) Charcoal]
+}
+
+RPJOB_C_CHARRIOT_OF_MEKTOUB (int integer)
+{
+	rpjob_c_charriot_of_mektoub	[$integer$) On a chariot pulled by one mektoub]
+}
+
+RPJOB_C_CHARRIOT_OF_MEKTOUBS (int integer)
+{
+	rpjob_c_charriot_of_mektoubs	[$integer$) On a chariot pulled by two mektoubs]
+}
+
+RPJOB_C_CHASSIS (int integer)
+{
+	rpjob_c_chassis	[$integer$) Chassis]
+}
+
+RPJOB_C_CITY_ZORA (int integer)
+{
+	rpjob_c_city_zora	[$integer$) Zora City Council]
+}
+
+RPJOB_C_CLOPPASOA (int integer)
+{
+	rpjob_c_cloppasoa	[$integer$) Cloppasoa]
+}
+
+RPJOB_C_CONSOLIDATE (int integer)
+{
+	rpjob_c_consolidate	[$integer$) Consolidate]
+}
+
+RPJOB_C_CRATCHA_MOUSS (int integer)
+{
+	rpjob_c_cratcha_mouss	[$integer$) Cratcha moss]
+}
+
+RPJOB_C_CRYSTALLIZED_SAP (int integer)
+{
+	rpjob_c_crystallized_sap	[$integer$) Crystallized sap]
+}
+
+RPJOB_C_CUT (int integer)
+{
+	rpjob_c_cut	[$integer$) Cut]
+}
+
+RPJOB_C_DARD (int integer)
+{
+	rpjob_c_dard	[$integer$) Sting]
+}
+
+RPJOB_C_DEHYDRATE (int integer)
+{
+	rpjob_c_dehydrate	[$integer$) Dehydrate]
+}
+
+RPJOB_C_DO_NOTHING (int integer)
+{
+	rpjob_c_do_nothing	[$integer$) Do nothing]
+}
+
+RPJOB_C_DONT_LET_STEM_AND_FLOWER (int integer)
+{
+	rpjob_c_dont_let_stem_and_flower	[$integer$) Just let steam and flower]
+}
+
+RPJOB_C_DRIED_CLAY (int integer)
+{
+	rpjob_c_dried_clay	[$integer$) Dried clay]
+}
+
+RPJOB_C_DRIED_SAP (int integer)
+{
+	rpjob_c_dried_sap	[$integer$) Dried sap]
+}
+
+RPJOB_C_DRIED_SECRETIONS (int integer)
+{
+	rpjob_c_dried_secretions	[$integer$) Dried secretions]
+}
+
+RPJOB_C_DRIED_SKIN (int integer)
+{
+	rpjob_c_dried_skin	[$integer$) Dried skin]
+}
+
+RPJOB_C_DROP_WATER (int integer)
+{
+	rpjob_c_drop_water	[$integer$) Drop of water]
+}
+
+RPJOB_C_DRUM (int integer)
+{
+	rpjob_c_drum	[$integer$) Drum]
+}
+
+RPJOB_C_EGG (int integer)
+{
+	rpjob_c_egg	[$integer$) Egg]
+}
+
+RPJOB_C_ESSENTIAL_OILS (int integer)
+{
+	rpjob_c_essential_oils	[$integer$) Essential oils]
+}
+
+RPJOB_C_EVERYTHING (int integer)
+{
+	rpjob_c_everything	[$integer$) Everything]
+}
+
+RPJOB_C_FABRIC_AND_LIGAMENT (int integer)
+{
+	rpjob_c_fabric_and_ligament	[$integer$) Fiber fabric and Izam ligament]
+}
+
+RPJOB_C_FABRIC_AND_MUSTACHE (int integer)
+{
+	rpjob_c_fabric_and_mustache	[$integer$) Fiber fabric and Lumper mustache]
+}
+
+RPJOB_C_FAGOT_WORKED (int integer)
+{
+	rpjob_c_fagot_worked	[$integer$) Carved fagot]
+}
+
+RPJOB_C_FAIRHAVEN_BAR (int integer)
+{
+	rpjob_c_fairhaven_bar	[$integer$) Fairhaven Bar]
+}
+
+RPJOB_C_FIBER (int integer)
+{
+	rpjob_c_fiber	[$integer$) Fiber]
+}
+
+RPJOB_C_FIBER_FABRIC (int integer)
+{
+	rpjob_c_fiber_fabric	[$integer$) Fiber fabric]
+}
+
+RPJOB_C_FINELY (int integer)
+{
+	rpjob_c_finely	[$integer$) Coarsely ground]
+}
+
+RPJOB_C_FIT (int integer)
+{
+	rpjob_c_fit	[$integer$) Fit]
+}
+
+RPJOB_C_FLAMBE (int integer)
+{
+	rpjob_c_flambe	[$integer$) Flambé]
+}
+
+RPJOB_C_FLESHY (int integer)
+{
+	rpjob_c_fleshy	[$integer$) Fleshy]
+}
+
+RPJOB_C_FLORA (int integer)
+{
+	rpjob_c_flora	[$integer$) Flora]
+}
+
+RPJOB_C_FOAM (int integer)
+{
+	rpjob_c_foam	[$integer$) Moss]
+}
+
+RPJOB_C_FOAM_DRIED_CRUSHED (int integer)
+{
+	rpjob_c_foam_dried_crushed	[$integer$) Dried and crushed Moss]
+}
+
+RPJOB_C_FORCE_ARMS (int integer)
+{
+	rpjob_c_force_arms	[$integer$) At force of arms]
+}
+
+RPJOB_C_FROM_YUBO (int integer)
+{
+	rpjob_c_from_yubo	[$integer$) From yubos]
+}
+
+RPJOB_C_FULL_MOON (int integer)
+{
+	rpjob_c_full_moon	[$integer$) Full moon]
+}
+
+RPJOB_C_GOO (int integer)
+{
+	rpjob_c_goo	[$integer$) Goo]
+}
+
+RPJOB_C_GOURDS (int integer)
+{
+	rpjob_c_gourds	[$integer$) Gourds]
+}
+
+RPJOB_C_GREAT_DRAGON (int integer)
+{
+	rpjob_c_great_dragon	[$integer$) of the Great Dragon]
+}
+
+RPJOB_C_GREEN (int integer)
+{
+	rpjob_c_green	[$integer$) Green]
+}
+
+RPJOB_C_GREEN_BLACK (int integer)
+{
+	rpjob_c_green_black	[$integer$) Green and black]
+}
+
+RPJOB_C_GREEN_BLUE (int integer)
+{
+	rpjob_c_green_blue	[$integer$) Green and blue]
+}
+
+RPJOB_C_GREEN_RED (int integer)
+{
+	rpjob_c_green_red	[$integer$) Green and red]
+}
+
+RPJOB_C_GREENHOUSE_YRKANIS (int integer)
+{
+	rpjob_c_greenhouse_yrkanis	[$integer$) Yrkanis Conservatory]
+}
+
+RPJOB_C_GROSSLY (int integer)
+{
+	rpjob_c_grossly	[$integer$) Sliced]
+}
+
+RPJOB_C_GUM (int integer)
+{
+	rpjob_c_gum	[$integer$) Gum]
+}
+
+RPJOB_C_HALF_MOON (int integer)
+{
+	rpjob_c_half_moon	[$integer$) Half moon]
+}
+
+RPJOB_C_HARDENS_SAP (int integer)
+{
+	rpjob_c_hardens_sap	[$integer$) Hardened sap]
+}
+
+RPJOB_C_HONEY (int integer)
+{
+	rpjob_c_honey	[$integer$) Honey]
+}
+
+RPJOB_C_HOOF (int integer)
+{
+	rpjob_c_hoof	[$integer$) Hoof]
+}
+
+RPJOB_C_HORN (int integer)
+{
+	rpjob_c_horn	[$integer$) Horn]
+}
+
+RPJOB_C_HORNS (int integer)
+{
+	rpjob_c_horns	[$integer$) Horns]
+}
+
+RPJOB_C_HOUSING (int integer)
+{
+	rpjob_c_housing	[$integer$) Housing]
+}
+
+RPJOB_C_HUGE (int integer)
+{
+	rpjob_c_huge	[$integer$) Huge]
+}
+
+RPJOB_C_IZAM_LIGAMENT (int integer)
+{
+	rpjob_c_izam_ligament	[$integer$) Izam ligament]
+}
+
+RPJOB_C_KEEP_HIGHEST_LEAVES (int integer)
+{
+	rpjob_c_keep_highest_leaves	[$integer$) Keep higest leaves]
+}
+
+RPJOB_C_KEEP_MIDHEIGHT_LEAVES (int integer)
+{
+	rpjob_c_keep_midheight_leaves	[$integer$) Keep mid-height leaves]
+}
+
+RPJOB_C_KITIN_SECRETION (int integer)
+{
+	rpjob_c_kitin_secretion	[$integer$) Kitin secretions]
+}
+
+RPJOB_C_LAKES (int integer)
+{
+	rpjob_c_lakes	[$integer$) Water of the Lakes]
+}
+
+RPJOB_C_LEAF_THICK_AMBER (int integer)
+{
+	rpjob_c_leaf_thick_amber	[$integer$) Leaf thick with amber]
+}
+
+RPJOB_C_LEATHER (int integer)
+{
+	rpjob_c_leather	[$integer$) Leathers]
+}
+
+RPJOB_C_LIGAMENTS (int integer)
+{
+	rpjob_c_ligaments	[$integer$) Ligaments]
+}
+
+RPJOB_C_LITTLE (int integer)
+{
+	rpjob_c_little	[$integer$) A pinch]
+}
+
+RPJOB_C_LITTLE_MORE (int integer)
+{
+	rpjob_c_little_more	[$integer$) A big pinch]
+}
+
+RPJOB_C_LITTLE_SPONGES (int integer)
+{
+	rpjob_c_little_sponges	[$integer$) Little sponges]
+}
+
+RPJOB_C_LONG (int integer)
+{
+	rpjob_c_long	[$integer$) Long]
+}
+
+RPJOB_C_LOOP (int integer)
+{
+	rpjob_c_loop	[$integer$) Wood Node]
+}
+
+RPJOB_C_LUMPER_MUSTACHE (int integer)
+{
+	rpjob_c_lumper_mustache	[$integer$) Lumper mustache]
+}
+
+RPJOB_C_M20C (int integer)
+{
+	rpjob_c_m20c	[$integer$) -20°C]
+}
+
+RPJOB_C_M5C (int integer)
+{
+	rpjob_c_m5c	[$integer$) -5°C]
+}
+
+RPJOB_C_MADAKAM_SKIN (int integer)
+{
+	rpjob_c_madakam_skin	[$integer$) Madakam Skin]
+}
+
+RPJOB_C_MAGNETIZE (int integer)
+{
+	rpjob_c_magnetize	[$integer$) Magnetize]
+}
+
+RPJOB_C_MCKNOR_BROTH (int integer)
+{
+	rpjob_c_mcknor_broth	[$integer$) McKnor Broth]
+}
+
+RPJOB_C_MEKOUB_PACK (int integer)
+{
+	rpjob_c_mekoub_pack	[$integer$) On mektoub packer]
+}
+
+RPJOB_C_MINCEMEAT (int integer)
+{
+	rpjob_c_mincemeat	[$integer$) Minced]
+}
+
+RPJOB_C_MIRROR (int integer)
+{
+	rpjob_c_mirror	[$integer$) Mirror]
+}
+
+RPJOB_C_MODERATELY (int integer)
+{
+	rpjob_c_moderately	[$integer$) Cubed]
+}
+
+RPJOB_C_MULTICOLORED (int integer)
+{
+	rpjob_c_multicolored	[$integer$) Multicolored]
+}
+
+RPJOB_C_NATIONAL_RESERVES (int integer)
+{
+	rpjob_c_national_reserves	[$integer$) National reserves]
+}
+
+RPJOB_C_NECTAR_FRUIT (int integer)
+{
+	rpjob_c_nectar_fruit	[$integer$) Fruit nectar]
+}
+
+RPJOB_C_NO_CUT (int integer)
+{
+	rpjob_c_no_cut	[$integer$) Do not cut]
+}
+
+RPJOB_C_NOTHING (int integer)
+{
+	rpjob_c_nothing	[$integer$) Nothing]
+}
+
+RPJOB_C_ON_BACK (int integer)
+{
+	rpjob_c_on_back	[$integer$) On the back]
+}
+
+RPJOB_C_OPEN_PETALS (int integer)
+{
+	rpjob_c_open_petals	[$integer$) Open petals]
+}
+
+RPJOB_C_OUTDOOR_MEKTOUB (int integer)
+{
+	rpjob_c_outdoor_mektoub	[$integer$) On mount mektoub]
+}
+
+RPJOB_C_PAINTING (int integer)
+{
+	rpjob_c_painting	[$integer$) Painting]
+}
+
+RPJOB_C_PARCHMENT_FIBROUS (int integer)
+{
+	rpjob_c_parchment_fibrous	[$integer$) Fibrous parchment]
+}
+
+RPJOB_C_PASTE_AMBER (int integer)
+{
+	rpjob_c_paste_amber	[$integer$) Paste with amber]
+}
+
+RPJOB_C_PASTE_RESIN (int integer)
+{
+	rpjob_c_paste_resin	[$integer$) Paste with resin]
+}
+
+RPJOB_C_PASTE_SAP (int integer)
+{
+	rpjob_c_paste_sap	[$integer$) Paste with red-hot sap]
+}
+
+RPJOB_C_PASTE_SECRETIONS (int integer)
+{
+	rpjob_c_paste_secretions	[$integer$) Paste with secretions]
+}
+
+RPJOB_C_PELVIS (int integer)
+{
+	rpjob_c_pelvis	[$integer$) Pelvis]
+}
+
+RPJOB_C_PINK (int integer)
+{
+	rpjob_c_pink	[$integer$) Pink]
+}
+
+RPJOB_C_POLISHING (int integer)
+{
+	rpjob_c_polishing	[$integer$) Polishing]
+}
+
+RPJOB_C_PULL_ROPE (int integer)
+{
+	rpjob_c_pull_rope	[$integer$) Pull on a rope]
+}
+
+RPJOB_C_PUNCHEST (int integer)
+{
+	rpjob_c_punchest	[$integer$) Don't pull any punches]
+}
+
+RPJOB_C_PURIFY (int integer)
+{
+	rpjob_c_purify	[$integer$) Purify]
+}
+
+RPJOB_C_PYR_BATHS (int integer)
+{
+	rpjob_c_pyr_baths	[$integer$) Pyr Baths]
+}
+
+RPJOB_C_RAINWATER (int integer)
+{
+	rpjob_c_rainwater	[$integer$) Rainwater]
+}
+
+RPJOB_C_RANGER_RESERVE (int integer)
+{
+	rpjob_c_ranger_reserve	[$integer$) Ranger Reserve]
+}
+
+RPJOB_C_RAW_PIGMENTS (int integer)
+{
+	rpjob_c_raw_pigments	[$integer$) Raw pigments]
+}
+
+RPJOB_C_RED (int integer)
+{
+	rpjob_c_red	[$integer$) Red]
+}
+
+RPJOB_C_RED_BLACK (int integer)
+{
+	rpjob_c_red_black	[$integer$) Red and black]
+}
+
+RPJOB_C_REFINE (int integer)
+{
+	rpjob_c_refine	[$integer$) Refine]
+}
+
+RPJOB_C_RELIEFS (int integer)
+{
+	rpjob_c_reliefs	[$integer$) Reliefs]
+}
+
+RPJOB_C_REMOVE_SOME_PETALS (int integer)
+{
+	rpjob_c_remove_some_petals	[$integer$) Remove some petals]
+}
+
+RPJOB_C_ROSTRUM (int integer)
+{
+	rpjob_c_rostrum	[$integer$) Rostrum]
+}
+
+RPJOB_C_S1_170 (int integer)
+{
+	rpjob_c_s1_170	[$integer$) 1/170th]
+}
+
+RPJOB_C_S1_175 (int integer)
+{
+	rpjob_c_s1_175	[$integer$) 1/175th]
+}
+
+RPJOB_C_S1_180 (int integer)
+{
+	rpjob_c_s1_180	[$integer$) 1/180th]
+}
+
+RPJOB_C_S1_195 (int integer)
+{
+	rpjob_c_s1_195	[$integer$) 1/195th]
+}
+
+RPJOB_C_S1_200 (int integer)
+{
+	rpjob_c_s1_200	[$integer$) 1/200th]
+}
+
+RPJOB_C_S_1_185 (int integer)
+{
+	rpjob_c_s_1_185	[$integer$) 1/185th]
+}
+
+RPJOB_C_S_1_190 (int integer)
+{
+	rpjob_c_s_1_190	[$integer$) 1/190th]
+}
+
+RPJOB_C_SAP_TREES (int integer)
+{
+	rpjob_c_sap_trees	[$integer$) Sap trees]
+}
+
+RPJOB_C_SATCHEL (int integer)
+{
+	rpjob_c_satchel	[$integer$) Satchel]
+}
+
+RPJOB_C_SCULPTING (int integer)
+{
+	rpjob_c_sculpting	[$integer$) Sculpting]
+}
+
+RPJOB_C_SEASON (int integer)
+{
+	rpjob_c_season	[$integer$) Season]
+}
+
+RPJOB_C_SHARPENING (int integer)
+{
+	rpjob_c_sharpening	[$integer$) Sharpening]
+}
+
+RPJOB_C_SHOOKI_LEAF (int integer)
+{
+	rpjob_c_shooki_leaf	[$integer$) Shooki Leaf]
+}
+
+RPJOB_C_SHOOKI_LIQUEUR (int integer)
+{
+	rpjob_c_shooki_liqueur	[$integer$) Shooki liquor]
+}
+
+RPJOB_C_SILK (int integer)
+{
+	rpjob_c_silk	[$integer$) Silk]
+}
+
+RPJOB_C_SINGLE_BOX (int integer)
+{
+	rpjob_c_single_box	[$integer$) Box]
+}
+
+RPJOB_C_SINGLE_FLOWER (int integer)
+{
+	rpjob_c_single_flower	[$integer$) Of single flower]
+}
+
+RPJOB_C_SKINS (int integer)
+{
+	rpjob_c_skins	[$integer$) Skins]
+}
+
+RPJOB_C_SLAVENI_JUICE (int integer)
+{
+	rpjob_c_slaveni_juice	[$integer$) Slaveni juice]
+}
+
+RPJOB_C_SOAK_SAP (int integer)
+{
+	rpjob_c_soak_sap	[$integer$) In soak sap]
+}
+
+RPJOB_C_SPECIES_PLANTS (int integer)
+{
+	rpjob_c_species_plants	[$integer$) Species of plant]
+}
+
+RPJOB_C_SPRING_WATER (int integer)
+{
+	rpjob_c_spring_water	[$integer$) Spring water]
+}
+
+RPJOB_C_STINGA_MOUSS (int integer)
+{
+	rpjob_c_stinga_mouss	[$integer$) Stinga moss]
+}
+
+RPJOB_C_TEETH (int integer)
+{
+	rpjob_c_teeth	[$integer$) Teeth]
+}
+
+RPJOB_C_THICK (int integer)
+{
+	rpjob_c_thick	[$integer$) Thick]
+}
+
+RPJOB_C_THORN (int integer)
+{
+	rpjob_c_thorn	[$integer$) Thorn]
+}
+
+RPJOB_C_TIE_FIBER (int integer)
+{
+	rpjob_c_tie_fiber	[$integer$) Tie with fiber]
+}
+
+RPJOB_C_TIGHT_LEATHER (int integer)
+{
+	rpjob_c_tight_leather	[$integer$) Tight leather]
+}
+
+RPJOB_C_TURQUOISE (int integer)
+{
+	rpjob_c_turquoise	[$integer$) Turquoise]
+}
+
+RPJOB_C_VASES (int integer)
+{
+	rpjob_c_vases	[$integer$) Vases]
+}
+
+RPJOB_C_VEGETATION (int integer)
+{
+	rpjob_c_vegetation	[$integer$) Vegetation]
+}
+
+RPJOB_C_VERY_BIG_BARREL (int integer)
+{
+	rpjob_c_very_big_barrel	[$integer$) Very big barrel]
+}
+
+RPJOB_C_VERY_FINELY (int integer)
+{
+	rpjob_c_very_finely	[$integer$) Ground]
+}
+
+RPJOB_C_VERY_GROSSLY (int integer)
+{
+	rpjob_c_very_grossly	[$integer$) Thickly sliced]
+}
+
+RPJOB_C_VERY_LITTLE (int integer)
+{
+	rpjob_c_very_little	[$integer$) A little pinch]
+}
+
+RPJOB_C_VERY_LITTLE_2 (int integer)
+{
+	rpjob_c_very_little_2	[$integer$) Very little]
+}
+
+RPJOB_C_VIOLET (int integer)
+{
+	rpjob_c_violet	[$integer$) Violet]
+}
+
+RPJOB_C_WARM_AMBER (int integer)
+{
+	rpjob_c_warm_amber	[$integer$) Warm amber varnish]
+}
+
+RPJOB_C_WAS (int integer)
+{
+	rpjob_c_was	[$integer$) Was]
+}
+
+RPJOB_C_WATER (int integer)
+{
+	rpjob_c_water	[$integer$) Water]
+}
+
+RPJOB_C_WATER_DEW (int integer)
+{
+	rpjob_c_water_dew	[$integer$) Water dew]
+}
+
+RPJOB_C_WATER_PLANTS (int integer)
+{
+	rpjob_c_water_plants	[$integer$) Water plants]
+}
+
+RPJOB_C_WATER_POND (int integer)
+{
+	rpjob_c_water_pond	[$integer$) Water pond]
+}
+
+RPJOB_C_WELL_WATER (int integer)
+{
+	rpjob_c_well_water	[$integer$) Well water]
+}
+
+RPJOB_C_WILDLIFE (int integer)
+{
+	rpjob_c_wildlife	[$integer$) Fauna]
+}
+
+RPJOB_C_WOOD (int integer)
+{
+	rpjob_c_wood	[$integer$) Wood]
+}
+
+RPJOB_C_WOODEN (int integer)
+{
+	rpjob_c_wooden	[$integer$) Wooden]
+}
+
+RPJOB_C_YUBO_SKIN (int integer)
+{
+	rpjob_c_yubo_skin	[$integer$) Yubo skin]
+}
+
+RPJOB_C_ZERX_LEATHER (int integer)
+{
+	rpjob_c_zerx_leather	[$integer$) Zerx leather]
+}
+
+RPJOB_CANCEL_RECIPE ()
+{
+	rpjob_cancel_recipe	[Cancel]
+}
+
+RPJOB_CANT_WIN_XP ()
+{
+	rpjob_cant_win_xp	[Your level is too high. You do not gain any experience but your materials have not been used.]
+}
+
+RPJOB_FINISH_TASK (item jobitem)
+{
+	( self.gender = male )
+		rpjob_finish_task_m	[&AMB&You have obtained components for your occupation $jobitem.da$ $jobitem$]
+	( self.gender = female )
+		rpjob_finish_task_f	[&AMB&You have obtained components for your occupation $jobitem.pda$ $jobitem.p$]
+}
+
+RPJOB_FX_RESIGN (bot player)
+{
+	rpjob_fx_resign	[<BPFX>$player$ Sp_Neutre_End_Fizzle.ps]
+}
+
+RPJOB_FX_SIGN (bot player)
+{
+	rpjob_fx_sign	[<BPFX>$player$ Sp_Neutre_End_Fumble.ps]
+}
+
+RPJOB_GET_CHEST ()
+{
+	rpjob_get_chest	[Get the contents of the chest]
+}
+
+RPJOB_H_ADD_ELEMENT ()
+{
+	rpjob_h_add_element	[Additional Component]
+}
+
+RPJOB_H_ADDITIONAL_INFORMATIONS ()
+{
+	rpjob_h_additional_informations	[Additional Information]
+}
+
+RPJOB_H_APPLICATION_TIME ()
+{
+	rpjob_h_application_time	[Application Time]
+}
+
+RPJOB_H_ASSEMBLAGE ()
+{
+	rpjob_h_assemblage	[Assembly]
+}
+
+RPJOB_H_BANDAGE_LENGHT ()
+{
+	rpjob_h_bandage_lenght	[Bandage Length]
+}
+
+RPJOB_H_BANDAGE_TYPE ()
+{
+	rpjob_h_bandage_type	[Bandage Type]
+}
+
+RPJOB_H_BANDAGE_WIDTH ()
+{
+	rpjob_h_bandage_width	[Bandage Width]
+}
+
+RPJOB_H_BAUME ()
+{
+	rpjob_h_baume	[Balm]
+}
+
+RPJOB_H_BOX_TYPE ()
+{
+	rpjob_h_box_type	[Type of box]
+}
+
+RPJOB_H_COLORS ()
+{
+	rpjob_h_colors	[Colors]
+}
+
+RPJOB_H_CREATE_BOUQUET ()
+{
+	rpjob_h_create_bouquet	[Create a bouquet]
+}
+
+RPJOB_H_CUT ()
+{
+	rpjob_h_cut	[Cut]
+}
+
+RPJOB_H_DESTINATION ()
+{
+	rpjob_h_destination	[Destination]
+}
+
+RPJOB_H_DRYING_TIME ()
+{
+	rpjob_h_drying_time	[Drying time]
+}
+
+RPJOB_H_FINAL_TREATMENT ()
+{
+	rpjob_h_final_treatment	[Final treatment]
+}
+
+RPJOB_H_HANDLE_MATERIAL ()
+{
+	rpjob_h_handle_material	[Material for handle]
+}
+
+RPJOB_H_INK_COLOR ()
+{
+	rpjob_h_ink_color	[Color of ink]
+}
+
+RPJOB_H_LARVAE_SIZE ()
+{
+	rpjob_h_larvae_size	[Size of larvae]
+}
+
+RPJOB_H_LONG_DISTANCE_CONTAINER ()
+{
+	rpjob_h_long_distance_container	[Containers for long distance transportation]
+}
+
+RPJOB_H_MAIN_MATERIAL ()
+{
+	rpjob_h_main_material	[Material for main component]
+}
+
+RPJOB_H_MARINATE ()
+{
+	rpjob_h_marinate	[Marinate]
+}
+
+RPJOB_H_PACKAGING ()
+{
+	rpjob_h_packaging	[Wrapping]
+}
+
+RPJOB_H_PAPER_TYPE ()
+{
+	rpjob_h_paper_type	[Type of parchment]
+}
+
+RPJOB_H_PREPARING ()
+{
+	rpjob_h_preparing	[Preparing]
+}
+
+RPJOB_H_PROJECTION ()
+{
+	rpjob_h_projection	[Projection]
+}
+
+RPJOB_H_SALT ()
+{
+	rpjob_h_salt	[Salt]
+}
+
+RPJOB_H_SCALE ()
+{
+	rpjob_h_scale	[Scale]
+}
+
+RPJOB_H_SHORT_DISTANCE_MATERIALS ()
+{
+	rpjob_h_short_distance_materials	[Containers for local transportation]
+}
+
+RPJOB_H_SOAKING_LIQUID ()
+{
+	rpjob_h_soaking_liquid	[Soaking liquid]
+}
+
+RPJOB_H_SOAKING_TIME ()
+{
+	rpjob_h_soaking_time	[Soak time]
+}
+
+RPJOB_H_SUPPORT ()
+{
+	rpjob_h_support	[Support]
+}
+
+RPJOB_H_TEMPERATURE ()
+{
+	rpjob_h_temperature	[Temperature]
+}
+
+RPJOB_H_TRANSPORT_METHOD ()
+{
+	rpjob_h_transport_method	[Transportation method]
+}
+
+RPJOB_H_WATER_TYPE ()
+{
+	rpjob_h_water_type	[Type of water]
+}
+
+RPJOB_H_WORKING_HANDLE ()
+{
+	rpjob_h_working_handle	[Work of handle]
+}
+
+RPJOB_H_WORKING_MAIN ()
+{
+	rpjob_h_working_main	[Work of main component]
+}
+
+RPJOB_HAVE_CERTIFS (item certifs)
+{
+	rpjob_have_certifs	[I have won $certifs.p$]
+}
+
+RPJOB_HIGHEST_LEVEL (int echelon)
+{
+	rpjob_highest_level	[Your grade is higher than $echelon$. Do you want continue?]
+}
+
+RPJOB_I_WILL_LOOK_THAT ()
+{
+	rpjob_i_will_look_that	[I'll have a look at that.]
+}
+
+RPJOB_INFORMATION ()
+{
+	rpjob_information	[Information]
+}
+
+RPJOB_NO_ELEMENTS ()
+{
+	rpjob_no_elements	[Sorry, you do not have enough components. I need 4 components.]
+}
+
+RPJOB_NO_ELEMENTS_CONVERT (item element_1, item element_2)
+{
+	rpjob_no_elements_convert	[Sorry, you do not have enough components. I need:\n4 $element_1$\nand\n4 $element_2$.]
+}
+
+RPJOB_NO_JOB (item jobitem)
+{
+	( self.gender = male )
+		rpjob_no_job_m	[You are not $jobitem.ia$ $jobitem$!]
+	( self.gender = female )
+		rpjob_no_job_f	[You are not $jobitem.pia$ $jobitem.p$!]
+}
+
+RPJOB_NO_LEVEL ()
+{
+	rpjob_no_level	[You don't have the required grade to do that.]
+}
+
+RPJOB_NO_WANT ()
+{
+	rpjob_no_want	[No thank you, not just yet.]
+}
+
+RPJOB_RECIPE_RESULT ()
+{
+	rpjob_recipe_result	[xxx]
+}
+
+RPJOB_RECIPE_RESULT_BASIC ()
+{
+	rpjob_recipe_result_basic	[xxx]
+}
+
+RPJOB_RECIPE_RESULT_BOT_CHAT ()
+{
+	rpjob_recipe_result_bot_chat	[The quality of this recipe is]
+}
+
+RPJOB_RECIPE_USED ()
+{
+	rpjob_recipe_used	[xxx]
+}
+
+RPJOB_RECIPE_USED_BOT_CHAT ()
+{
+	rpjob_recipe_used_bot_chat	[You use recipe ]
+}
+
+RPJOB_RESIGN_POPUP (item jobitem)
+{
+	( self.gender = male )
+		rpjob_resign_popup_m	[&AMB&You are no longer $jobitem.ia$ $jobitem$.]
+	( self.gender = female )
+		rpjob_resign_popup_f	[&AMB&You are no longer $jobitem.pia$ $jobitem.p$.]
+}
+
+RPJOB_RESIGN_THIS_RPJOB (item jobitem, item special_item)
+{
+	( self.gender = male )
+		rpjob_resign_this_rpjob_m	[Do you want to resign from being $jobitem.da$ $jobitem$ or do you need another $special_item$?]
+	( self.gender = female )
+		rpjob_resign_this_rpjob_f	[Do you want to resign from being $jobitem.pda$ $jobitem.p$ or do you need another $special_item$?]
+}
+
+RPJOB_SEE_ME_YOUR_WORK ()
+{
+	rpjob_see_me_your_work	[Great! Let me see that.]
+}
+
+RPJOB_SELECT_RECIPE ()
+{
+	rpjob_select_recipe	[Choose between the options and try to obtain the best combination. Better recipes give a higher production yield\n\nThe yield of a recipe is expressed in percents.\n\nPlease note that you need to use a recipe of with a yield of 60% at minimum to be able to move up to the next grade.]
+}
+
+RPJOB_SIGN_POPUP (item jobitem)
+{
+	( self.gender = male )
+		rpjob_sign_popup_m	[&AMB&Congratulations, you are now $jobitem.ia$ $jobitem$!]
+	( self.gender = female )
+		rpjob_sign_popup_f	[&AMB&Congratulations, you are now $jobitem.pia$ $jobitem.p$!]
+}
+
+RPJOB_SIGN_THIS_RPJOB (item jobitem)
+{
+	( self.gender = male )
+		rpjob_sign_this_rpjob_m	[Want to become $jobitem.ia$ $jobitem$?]
+	( self.gender = female )
+		rpjob_sign_this_rpjob_f	[Want to become $jobitem.pia$ $jobitem.p$?]
+}
+
+RPJOB_THANKS ()
+{
+	rpjob_thanks	[Thanks]
+}
+
+RPJOB_TOO_XP_FOR_CERTIFS (item certifs)
+{
+	rpjob_too_xp_for_certifs	[You almost have the maximum experience in this grade. Save your $certifs.p$ for another time.]
+}
+
+RPJOB_TOO_XP_NO_RECIPE ()
+{
+	rpjob_too_xp_no_recipe	[You have the maximum possible experience in this grade but you need find a recipe with 60% of product yield to up to next grade.]
+}
+
+RPJOB_UNDER_UPGRADE ()
+{
+	rpjob_under_upgrade	[Ok! Let's go try to improve your comoponents.]
+}
+
+RPJOB_USE_BASIC_ELEMENTS ()
+{
+	rpjob_use_basic_elements	[Use basic components.]
+}
+
+RPJOB_USE_BOOSTED_ELEMENTS ()
+{
+	rpjob_use_boosted_elements	[Use improved components.]
+}
+
+RPJOB_WANT_LEVEL_UP ()
+{
+	rpjob_want_level_up	[Yes, and I want to up to the next grade.]
+}
+
+RPJOB_WANT_RESIGN (item jobitem)
+{
+	( self.gender = male )
+		rpjob_want_resign_m	[I want to resign from being $jobitem.ia$ $jobitem$.]
+	( self.gender = female )
+		rpjob_want_resign_f	[I want to resign from being $jobitem.pia$ $jobitem.p$.]
+}
+
+RPJOB_WANT_SPECIAL_ITEM (item special_item)
+{
+	rpjob_want_special_item	[I want another $special_item$.]
+}
+
+RPJOB_WANT_WIN_LEVEL ()
+{
+	rpjob_want_win_level	[I have reached the maximum possible experience in this grade.]
+}
+
+RPJOB_WHAT_DO_YOU_WANT ()
+{
+	rpjob_what_do_you_want	[What do you want to do?]
+}
+
+RPJOB_WHAT_DO_YOU_WANT_3_ ()
+{
+	rpjob_what_do_you_want_3_	[You have produced 3 items.\n\nWhat do you want to do?]
+}
+
+RPJOB_WHAT_DO_YOU_WANT_4_ ()
+{
+	rpjob_what_do_you_want_4_	[You have produced 4 items.\n\nWhat do you want to do?]
+}
+
+RPJOB_WHAT_DO_YOU_WANT_6_ ()
+{
+	rpjob_what_do_you_want_6_	[You have produced 6 items.\n\nWhat do you want to do?]
+}
+
+RPJOB_WHAT_DO_YOU_WANT_8_ ()
+{
+	rpjob_what_do_you_want_8_	[You have produced 8 items.\n\nWhat do you want to do?]
+}
+
+RPJOB_WHAT_DO_YOU_WANT_9_ ()
+{
+	rpjob_what_do_you_want_9_	[You have produced 9 items.\n\nWhat do you want to do?]
+}
+
+RPJOB_WHAT_DO_YOU_WANT_12_ ()
+{
+	rpjob_what_do_you_want_12_	[You have produced 12 items.\n\nWhat do you want to do?]
+}
+
+RPJOB_WHAT_DO_YOU_WANT_15_ ()
+{
+	rpjob_what_do_you_want_15_	[You have produced 15 items.\n\nWhat do you want to do?]
+}
+
+RPJOB_WHAT_DO_YOU_WANT_16_ ()
+{
+	rpjob_what_do_you_want_16_	[You have produced 16 items.\n\nWhat do you want to do?]
+}
+
+RPJOB_WHAT_DO_YOU_WANT_18_ ()
+{
+	rpjob_what_do_you_want_18_	[You have produced 18 items.\n\nWhat do you want to do?]
+}
+
+RPJOB_WHAT_DO_YOU_WANT_20_ ()
+{
+	rpjob_what_do_you_want_20_	[You have produced 20 items.\n\nWhat do you want to do?]
+}
+
+RPJOB_WHAT_DO_YOU_WANT_21_ ()
+{
+	rpjob_what_do_you_want_21_	[You have produced 21 items.\n\nWhat do you want to do?]
+}
+
+RPJOB_WHAT_DO_YOU_WANT_24_ ()
+{
+	rpjob_what_do_you_want_24_	[You have produced 24 items.\n\nWhat do you want to do?]
+}
+
+RPJOB_WHAT_DO_YOU_WANT_28_ ()
+{
+	rpjob_what_do_you_want_28_	[You have produced 28 items.\n\nWhat do you want to do?]
+}
+
+RPJOB_WIN_ELEMENTS (item product)
+{
+	rpjob_win_elements	[Keep $product.pda$ $product.p$ for your personal use.]
+}
+
+RPJOB_WIN_LEVEL ()
+{
+	rpjob_win_level	[Congratulations! You have earned an advancement to the next grade.]
+}
+
+RPJOB_WIN_XP_MESSAGE ()
+{
+	rpjob_win_xp_message	[Good job! You are really making progress. Continue like this.]
+}
+
+RPJOB_WIN_XP_MISS_ELEMENTS ()
+{
+	rpjob_win_xp_miss_elements	[You have not gained the necessary experience. Practice some more.]
+}
+
+RPJOB_WIN_XP_SYSTEM_MSG (item jobitem)
+{
+	( self.gender = male )
+		rpjob_win_xp_system_msg_m	[&XP&You gain experience in being $jobitem.ia$ $jobitem$!]
+	( self.gender = female )
+		rpjob_win_xp_system_msg_f	[&XP&You gain experience in being $jobitem.pia$ $jobitem.p$!]
+}
+
+RPJOB_YES_WANT_SIGN (item jobitem)
+{
+	( self.gender = male )
+		rpjob_yes_want_sign_m	[Yes, I want to become $jobitem.ia$ $jobitem$.]
+	( self.gender = female )
+		rpjob_yes_want_sign_f	[Yes, I want to become $jobitem.pia$ $jobitem.p$.]
+}
+
+RPJOB_ROLEPLAY_OBJ ()
+{
+	rpjob_roleplay_obj	[\n(When you have obtained at least 4 components, you can either improve them or practice your craft by using the object near the master of your occupation.\n\nYou can also continue the mission and obtain more components. This mission is never finished, until you log off and back on; then the mission ends once you have completed the step in progress. You can always retake the mission if you so desire.)]
+}
+
+RPJOB_ROLEPLAY_OBJ_1 ()
+{
+	rpjob_roleplay_obj_1	[\n(When you have obtained at least 4 components, you can either improve them or practice your craft by using the object near the master of your occupation.\n\nYou can also continue the mission and obtain more components. This mission is never finished, until you log off and back on; then the mission ends once you have completed the step in progress. You can always retake the mission if you so desire.)]
+}
+
+RPJOB_ROLEPLAY_OBJ_2 ()
+{
+	rpjob_roleplay_obj_2	[\n(When you have obtained at least 4 components, you can either improve them or practice your craft by using the object near the master of your occupation.\n\nYou can also continue the mission and obtain more components. This mission is never finished, until you log off and back on; then the mission ends once you have completed the step in progress. You can always retake the mission if you so desire.)]
+}
+
+RPJOB_ROLEPLAY_OBJ_3 ()
+{
+	rpjob_roleplay_obj_3	[\n(When you have obtained at least 4 components, you can either improve them or practice your craft by using the object near the master of your occupation.\n\nYou can also continue the mission and obtain more components. This mission is never finished, until you log off and back on; then the mission ends once you have completed the step in progress. You can always retake the mission if you so desire.)]
+}
+
+RPJOB_TIME_TO_BREAK ()
+{
+	rpjob_time_to_break	[Why not take a break?]
+}
+
+RPJOB_TIMER_3 ()
+{
+	rpjob_timer_3	[TIMER 3]
+}
+
+RPJOB_UPGRADE_NO_MSG ()
+{
+	rpjob_upgrade_no_msg	[There was a problem. Please try again.]
+}
+
+RPJOB_WAIT_NEW_INSTRUCTIONS (bot givervar)
+{
+	rpjob_wait_new_instructions	[Receiving new instructions from $givervar$...]
+}
+
+RPJOB_WAIT_NEW_INSTRUCTIONS_1 (bot givervar)
+{
+	rpjob_wait_new_instructions_1	[Receiving new instructions from $givervar$...]
+}
+
+RPJOB_NO_INSTRUCTIONS ()
+{
+	rpjob_no_instructions	[(If you did not receive any instructions, please abandon the mission and retake.)]
+}
+
+RPJOB_BAG_FULL (bot givervar)
+{
+	rpjob_bag_full	[@{F55F}You inventory is full!@{FFFF}\n\nPlease make space in your inventory so that $givervar$ can send you a new task.]
+}
+
+RPJOB_WIN_XP (bot givervar, bot master, item product)
+{
+	rpjob_win_xp	[Leave $product.pda$ $product.p$ on $givervar$ to show to $master$ and gain you some experience.]
+}
+
+RPJOB_WIN_DOUBLE_ELEMENTS (item product)
+{
+	rpjob_win_double_elements	[Keep half of $product.pda$ $product.p$ for your personal use and use the other half to gain experience.]
+}
+
+RPJOB_TOO_XP (bot master)
+{
+	rpjob_too_xp	[You have reach the maximum possible experience in this grade, ask $master$ to up you to next grade.]
+}
+
+RPJOB_GET_WATER_SOURCE ()
+{
+	rpjob_get_water_source	[Get water at the source indicated on your radar]
+}
+
+RPJOB_GET_WATER_WELL ()
+{
+	rpjob_get_water_well	[Get water at the well indicated on your radar]
+}
+
+RPJOB_GET_RAINWATER ()
+{
+	rpjob_get_rainwater	[Get rainwater at the location indicated on your radar radar]
+}
+
+RPJOB_GET_WATER_LAKE ()
+{
+	rpjob_get_water_lake	[Get lakewater at the location indicated on your radar]
+}
+
+RPJOB_GET_FERTILIZER ()
+{
+	rpjob_get_fertilizer	[Get fertilizer at the location indicated on your radar]
+}
+
+RPJOB_GET_WATER_ON_BARREL ()
+{
+	rpjob_get_water_on_barrel	[Get water from the right barrel and use it to water the flowers]
+}
+
+RPJOB_GET_FERTILIZER_ON_BARREL ()
+{
+	rpjob_get_fertilizer_on_barrel	[Get fertilizerfomr the left barrel and use it to fertilize the flowers]
+}
+
+RPJOB_RESCUE_NPC ()
+{
+	rpjob_rescue_npc	[Practice basic care at the location indicated on your radar]
+}
+
+RPJOB_DOWNGRADED_EXTRA (item special_amber)
+{
+	rpjob_downgraded_extra	[Your components have not been improved, but your $special_amber$ has preserved them so you have not lost any.]
+}
+
+RPJOB_DOWNGRADED (item special_amber)
+{
+	rpjob_downgraded	[Your components have not been improved and half of them have been lost. You can use $special_amber$ (from the Apprentice Magnetic Cartographer occupation) to make sure all components are preserved in case of a failure.]
+}
+
+RPJOB_UPGRADED (item special_water)
+{
+	rpjob_upgraded	[Good news! You have successfully improved half of your components. With $special_water$ (from Apprentice Water-Carrier occupation) you will be able to improve all components.]
+}
+
+RPJOB_UPGRADED_EXTRA (item special_water)
+{
+	rpjob_upgraded_extra	[Good news! You have successfully improved all of your components using $special_water$.]
+}
+
+RPJOB_FX_RESCUE ()
+{
+	rpjob_fx_rescue	[<BPFX>mag_cur_impact_healhp.ps]
+}
+
+RPJOB_JOB_INFOS (int jobid)
+{
+	rpjob_job_infos	[WEB : jobid=$jobid$&action=infos]
+}
+
+RPJOB_SHOW_ELEMENTS ()
+{
+	rpjob_show_elements	[Improving components is risky! If it fails you may lose half of them.]
+}
+
+RPJOB_SIGN_CHAT (item jobitem, item special_item)
+{
+	( self.gender = male )
+		rpjob_sign_chat_m	[You are now $jobitem.ia$ $jobitem$!\nIn order for you to be operational quickly, I will add two missions to your journal, which will help you obtain the components needed for $jobitem.ia$ $jobitem$.{break}I have given you a book about your occupation.\n(You can read it in the WebIG Occupations app: @{55FF}Shift+W@{FFFF}){break}Also, I will give you $special_item.pia$ $special_item.p$ to help you. If you ever need more, just return to me.\n(Please use same mission, as an option will be added to obtain anothers $special_item.p$){break}Finally, if you want to resign from your occupation, come back to me in 2 days.]
+	( self.gender = female )
+		rpjob_sign_chat_f	[You are now $jobitem.pia$ $jobitem.p$!\nIn order for you to be operational quickly, I will add two missions to your journal, which will help you obtain the components needed for $jobitem.pia$ $jobitem.p$.{break}I have given you a book about your occupation.\n(You can read it in the WebIG Occupations app: @{55FF}Shift+W@{FFFF}){break}Also, I will give you $special_item.pia$ $special_item.p$ to help you. If you ever need more, just return to me.\n(Please use same mission, as an option will be added to obtain anothers $special_item.p$){break}Finally, if you want to resign from your occupation, come back to me in 2 days.]
+}
+
+RPJOB_HAVE_4_ELEMENTS (bot convert, item element)
+{
+	rpjob_have_4_elements	[@{W300}Great! You have obtained @{5F5F}4 $element.p$@{FFFF}.\n\nYou can use @{55FF}$convert$@{FFFF} to try to improve them, or continue to obtain components.\n\n@{F55F}You improve components at your own risk!@{FFFF}. If improving fails for a component, it is destroyed.\n\nThe odds for successfully improving components are low but you with improved components obtaining better products or more experience becomes possible.\n\nDon't forget to continue your mission to obtain more components.]
+}
+
+RPJOB_HAVE_4_4_ELEMENTS (bot convert, item element, item other_element)
+{
+	rpjob_have_4_4_elements	[@{W300}Great! You have obtained @{5F5F}4 $element.p$ and 4 $other_element.p$@{FFFF}.\n\nYou can use @{55FF}$convert$@{FFFF} to practice your chosen occupation or continue to obtain components.\n\nYou can also improve components using @{55FF}$convert$@{FFFF}, but you do so at your own risk! If improving fails for a component, it is destroyed.\nThe odds for successfully improving components are low but with improved components obtaining better products or more experience becomes possible.]
+}
+
+RPJOB_ECHELON_TITLE (bot giver, int echelon, item jobitem)
+{
+	( self.gender = male )
+		rpjob_echelon_title_m	[Pratice your $jobitem.da$ $jobitem$ occupation (Grade $echelon$)]
+	( self.gender = female )
+		rpjob_echelon_title_f	[Pratice your $jobitem.pda$ $jobitem.p$ occupation (Grade $echelon$)]
+}
+
+TASK_RPJOB_TASK_TITLE (bot giver, item element, item jobitem, int version)
+{
+	( self.gender = male )
+		task_rpjob_task_title_m	[Obtain necessities for $jobitem.da$ $jobitem$ ($version$/2) :\n$element.da$ $element.p$]
+	( self.gender = female )
+		task_rpjob_task_title_f	[Obtain necessities for $jobitem.pda$ $jobitem.p$ ($version$/2) :\n$element.da$ $element.p$]
+}
+
+CERTIFS_RPJOB_CERTIFS_TITLE (bot giver, item certifs)
+{
+	certifs_rpjob_certifs_title	[Use your $certifs.p$]
+}
+
+UPGRADE_RPJOB_UPGRADE_TITLE (bot giver, item element, int version)
+{
+	upgrade_rpjob_upgrade_title	[Improve your components ($version$/2) :\n$element.da$ $element.p$]
+}
+

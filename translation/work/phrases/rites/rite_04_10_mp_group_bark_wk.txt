@@ -1,0 +1,45 @@
+﻿R_04_10_MIS_TITLE (bot giver)
+{
+	r_04_10_mis_title	[La grande collecte d'écorces]
+}
+
+R_04_10_MIS_DESC (bot giver)
+{
+	r_04_10_mis_desc	[Réunir des échantillons de tous les types d'écorce existants]
+}
+
+R_04_10_P_LDC_INTRO (place lieu_pyr)
+{
+	r_04_10_p_ldc_intro	[Bonjour. Il est temps pour vous de nous démontrer vos talents de foreur. Mon homologue de la ville de $lieu_pyr$ chapeaute une étude sur les matières premières. Il cherche actuellement un foreur pour lui ramener des matières bien spécifiques.{break}Je n'en sais hélas pas vraiment plus. Je vous invite donc à aller le voir et à en discuter avec lui. Si vous menez cette mission à bien, je vous entraînerai afin de faire progresser votre capacité de concentration.]
+}
+
+R_04_10_P_OVL_RENCONTRER_CHEF_RECHERCHE (bot chef_recherche)
+{
+	r_04_10_p_ovl_rencontrer_chef_recherche	[Rencontrer $chef_recherche$, l'intendant de Pyr]
+}
+
+R_04_10_P_T2_RENCONTRER_CHEF_RECHERCHE (bot chef_recherche, bot givervar)
+{
+	r_04_10_p_t2_rencontrer_chef_recherche	[Bonjour, je viens de la part de $givervar$]
+}
+
+R_04_10_P_BC_RENCONTRER_CHEF_RECHERCHE (faction fact_matis, faction fact_zorai, faction faction, bot givervar)
+{
+	r_04_10_p_bc_rencontrer_chef_recherche	[Bonjour, je suis heureux que $givervar$ ait trouvé quelqu'un pour nous aider dans notre recherche. Je vous préviens, il s'agit d'un travail de longue haleine. Nous travaillons actuellement sur les différents types d'écorce existants.{break}Je voudrais donc que vous réunissiez des échantillons de tous les types d'écorce, des régions $fact_matis$, $faction$ et $fact_zorai$. Mais il nous faut des échantillons fraîchement extraits : vous devrez donc les forer vous-même. Allez-y de suite et bon courage.]
+}
+
+R_04_10_P_BC_RAPPORTER_MP ()
+{
+	r_04_10_p_bc_rapporter_mp	[Parfait, vous avez fait du bon travail !]
+}
+
+R_04_10_P_T2_DEBRIEF (bot givervar)
+{
+	r_04_10_p_t2_debrief	[J'ai terminé ma mission]
+}
+
+R_04_10_P_BC_DEBRIEF ()
+{
+	r_04_10_p_bc_debrief	[Bon travail. Je vais vous entraîner en concentration, comme convenu.]
+}
+

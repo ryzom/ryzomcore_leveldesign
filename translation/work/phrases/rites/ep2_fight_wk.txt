@@ -1,0 +1,120 @@
+﻿MATIS_KARAVAN_FIGHT_ACTE_1_MIS_TITLE (bot giver)
+{
+	matis_karavan_fight_acte_1_mis_title	[Combattre pour Jena !]
+}
+
+MATIS_KARAVAN_FIGHT_ACTE_1_MIS_DESC (bot giver)
+{
+	matis_karavan_fight_acte_1_mis_desc	[Vous devez combattre les homins au service des Kamis. Vous devez aussi assurer la protection des artisans et des récolteurs qui travaillent à la construction du temple de Jena.]
+}
+
+MATIS_KARAVAN_FIGHT_ACTE_1_P_LDC_BRIEFING ()
+{
+	matis_karavan_fight_acte_1_p_ldc_briefing	[Ta foi nous honore, fervent de la déesse. Et ta force nous est indispensable pour la construction du monument sacré dédié à la déesse ! J'ai moi aussi ma place dans l'oeuvre de Jena : j'atttribue les missions aux combattants et aux magiciens. $self$, tu nous es précieux pour défendre ceux qui élèvent le temple.{break}Nous n'aurons de repos tant que les ennemis de Jena poursuivront la construction de leur maudit sanctuaire. Tu te doutes que ces criminels tenteront d'exécuter nos foreurs et nos artisans, occupés d'honorer leur mission sacrée. Il faudra donc que tu fasses partie des braves qui offriront leur soutien pour les protéger. Feras-tu partie de ceux qui s'illustreront au combat pour la gloire de Jena ?]
+}
+
+MATIS_KARAVAN_FIGHT_ACTE_1_P_ANSWER_TELL_MORE_INTRO ()
+{
+	matis_karavan_fight_acte_1_p_answer_tell_more_intro	[Donnez-moi plus de précisions sur ce que je dois faire !]
+}
+
+MATIS_KARAVAN_FIGHT_ACTE_1_P_ANSWER_OK_TO_FIGHT_INTRO ()
+{
+	matis_karavan_fight_acte_1_p_answer_ok_to_fight_intro	[Je le veux !]
+}
+
+MATIS_KARAVAN_FIGHT_ACTE_1_P_ANSWER_NO_THANKS_INTRO ()
+{
+	matis_karavan_fight_acte_1_p_answer_no_thanks_intro	[Non merci...]
+}
+
+MATIS_KARAVAN_FIGHT_ACTE_1_P_LDC_TELL_ME_MORE ()
+{
+	matis_karavan_fight_acte_1_p_ldc_tell_me_more	[Il te faudra donc défaire les artisans ennemis sur leurs propres chantiers et abattre les foreurs dévoués à Ma-Duk. Evidemment, protéger nos artisans sur les chantiers de construction de nos sanctuaires et soutenir nos foreurs sur les gisements de prospection sont une part considérable de ta mission.]
+}
+
+MATIS_KARAVAN_FIGHT_ACTE_1_P_ANSWER_OK_TO_FIGHT_TM ()
+{
+	matis_karavan_fight_acte_1_p_answer_ok_to_fight_tm	[Je veux servir Jena !]
+}
+
+MATIS_KARAVAN_FIGHT_ACTE_1_P_ANSWER_NO_THANKS_TM ()
+{
+	matis_karavan_fight_acte_1_p_answer_no_thanks_tm	[Une autre fois !]
+}
+
+MATIS_KARAVAN_FIGHT_ACTE_1_P_BC_GO_TO_FIGHT ()
+{
+	matis_karavan_fight_acte_1_p_bc_go_to_fight	[Très bien, tu sais ce qui te reste à faire ! Comme tu le vois, tu es irremplaçable dans le combat qui nous oppose aux vils kamis. Et n'oublie pas, $self$, c'est sous le regard de Jena que tu combats !]
+}
+
+MATIS_KARAVAN_FIGHT_ACTE_1_OVL_KILL_FIGHT_1 (bot givervar)
+{
+	matis_karavan_fight_acte_1_ovl_kill_fight_1	[Vaincre des homins adorateurs de Ma-Duk (ces adeptes doivent être des personnages joueurs). Si ces victoires ont lieu sur les chantiers ou sur les gisements des terres anciennes, vous gagnerez des points d'honneur.]
+}
+
+MATIS_KARAVAN_FIGHT_ACTE_1_P_BC_NO_FIGHT ()
+{
+	matis_karavan_fight_acte_1_p_bc_no_fight	[Dommage, nous avons besoin de combattants comme toi, $self$, mais peut-être reviendras-tu me voir quand tu te sentiras plus aguerri !]
+}
+
+MATIS_KAMI_FIGHT_ACTE_1_MIS_TITLE (bot giver)
+{
+	matis_kami_fight_acte_1_mis_title	[Combattre pour la gloire du sage Ma-Duk !]
+}
+
+MATIS_KAMI_FIGHT_ACTE_1_MIS_DESC (bot giver)
+{
+	matis_kami_fight_acte_1_mis_desc	[Vous devez combattre les homins au service de la Karavan. Vous devez aussi assurer la protection des artisans et des récolteurs qui travaillent à la construction du sanctuaire de Ma-Duk.]
+}
+
+MATIS_KAMI_FIGHT_ACTE_1_P_LDC_BRIEFING ()
+{
+	matis_kami_fight_acte_1_p_ldc_briefing	[Toutes les forces sont les bienvenues pour édifier le sanctuaire ! L'inspiration de Ma-Duk a voulu que je donne des missions aux combattants et aux magiciens. Et à toi en particulier, $self$, si tu peux offrir ton courage pour défendre ceux qui construisent ce monument sacré.{break}Il est de ton devoir d'empêcher les ennemis de Ma-Duk d'élever leurs temples dévoués à leur foi impie. Mais tu te doutes qu'ils chercheront aussi à empêcher nos prospecteurs et nos artisans de faire leur juste travail et de participer à la célébration de Ma-Duk par l'édification de nos sanctuaires.]
+}
+
+MATIS_KAMI_FIGHT_ACTE_1_P_ANSWER_TELL_MORE_INTRO ()
+{
+	matis_kami_fight_acte_1_p_answer_tell_more_intro	[Donnez-moi plus de précisions sur ce que je dois faire !]
+}
+
+MATIS_KAMI_FIGHT_ACTE_1_P_ANSWER_OK_TO_FIGHT_INTRO ()
+{
+	matis_kami_fight_acte_1_p_answer_ok_to_fight_intro	[Je le veux !]
+}
+
+MATIS_KAMI_FIGHT_ACTE_1_P_ANSWER_NO_THANKS_INTRO ()
+{
+	matis_kami_fight_acte_1_p_answer_no_thanks_intro	[Non merci...]
+}
+
+MATIS_KAMI_FIGHT_ACTE_1_P_LDC_TELL_ME_MORE ()
+{
+	matis_kami_fight_acte_1_p_ldc_tell_me_more	[Sois prêt à empêcher les artisans ennemis d'agir sur leurs chantiers et à décimer les foreurs dévoués à Jena. Evidemment, soutenir nos artisans sur les chantiers de construction de nos sanctuaires et défendre nos foreurs sur les gisements de prospection sont une part considérable de ta mission. Quel est ton choix, à présent ?]
+}
+
+MATIS_KAMI_FIGHT_ACTE_1_P_ANSWER_OK_TO_FIGHT_TM ()
+{
+	matis_kami_fight_acte_1_p_answer_ok_to_fight_tm	[Je servirai Ma-Duk avec dévouement !]
+}
+
+MATIS_KAMI_FIGHT_ACTE_1_P_ANSWER_NO_THANKS_TM ()
+{
+	matis_kami_fight_acte_1_p_answer_no_thanks_tm	[Une autre fois, peut-être]
+}
+
+MATIS_KAMI_FIGHT_ACTE_1_P_BC_GO_TO_FIGHT ()
+{
+	matis_kami_fight_acte_1_p_bc_go_to_fight	[Bravo, nous sommes heureux de te compter parmi nous ! Comme tu le vois, $self$, la mission est d'importance. Puisse Ma-Duk te donner la force de balayer les ennemis de la foi que nous honorons !]
+}
+
+MATIS_KAMI_FIGHT_ACTE_1_OVL_KILL_FIGHT_1 (bot givervar)
+{
+	matis_kami_fight_acte_1_ovl_kill_fight_1	[Vaincre des homins adorateurs de Jena (ces adeptes doivent être des personnages joueurs). Si ces victoires ont lieu sur les chantiers ou sur les gisements des terres anciennes, vous gagnerez des points d'honneur.]
+}
+
+MATIS_KAMI_FIGHT_ACTE_1_P_BC_NO_FIGHT ()
+{
+	matis_kami_fight_acte_1_p_bc_no_fight	[D'autres que toi ont répondu à l'appel, mais tu nous es indispensable, vois-tu. Reviens-nous voir au plus vite quand tu te sentiras prêt à honorer Ma-Duk de ta bravoure.]
+}
+

@@ -1,0 +1,90 @@
+﻿/** Casino */
+
+CASINO_INSERT_COIN()
+{
+	casino_insert_coin	[Jouer un jeton]
+}
+
+CASINO_OFF()
+{
+	casino_off	[Hors Service]
+}
+
+CASINO_WHEEL()
+{
+	casino_wheel	[&AMB&Vous tentez votre chance...]
+}
+
+CASINO_NOTHING()
+{
+	casino_nothing	[Pas de chance !]
+}
+
+CASINO_LOSE()
+{
+	casino_lose	[&AMB&Vous perdez !]
+}
+
+CASINO_WIN_R2()
+{
+	casino_win_r2	[&AMB&Vous gagnez !]
+}
+
+CASINO_WIN_R3()
+{
+	casino_win_r3	[&AMB&Vous gagnez !]
+}
+
+CASINO_WIN_R4()
+{
+	casino_win_r4	[&AMB&Vous gagnez !]
+}
+
+CASINO_WIN_R5()
+{
+	casino_win_r5	[&AMB&Vous gagnez le gros lot !]
+}
+
+CASINO_WINJACKPOT()
+{
+	casino_winjackpot	[&AMB&Vous gagnez le jackpot !]
+}
+
+CASINO_POPUP()
+{
+	casino_popup	[ ]
+}
+
+CASINO_IGOTTITLETICKET()
+{
+	casino_igottitleticket	[J'ai gagné un bon pour titre. ]
+}
+
+CASINO_JACKPOTGRATS()
+{
+	casino_jackpotgrats	[Quelle chance ! Que vas-tu faire avec cette fortune ?]
+}
+
+CASINO_IGOTJACKTICKET()
+{
+	casino_igotjackticket	[J'ai remporté le jackpot !]
+}
+
+CASINO_TITLE1GRATS()
+{
+	casino_title1grats	[Bravo ! Je vois que tu as de la chance, voici donc un titre qui devrait te convenir. ]
+}
+
+CASINO_TITLE2GRATS()
+{
+	casino_title2grats	[Tu joues beaucoup et ne gagne pas grand chose hein ? tu fais partie d'une grande famille ! la famille des perdants !]
+}
+
+CASINO_TITLE1REPEAT()
+{
+	casino_title1repeat	[Encore ! Décidemment tu as vraiment beaucoup de chance, je t'échange le ticket contre quelques jetons.]
+}
+CASINO_TITLE2REPEAT()
+{
+	casino_title2repeat	[Et oui! Tu portes bien ton titre ! Dommage, je n'ai rien pour toi !]
+}

@@ -1,0 +1,438 @@
+﻿MISSION_FYROS_01_MIS_TITLE (bot giver)
+{
+	mission_fyros_01_mis_title	[Chasseurs et proies #1]
+}
+
+MISSION_FYROS_01_MIS_DESC (bot giver)
+{
+	mission_fyros_01_mis_desc	[Apprendre les bases du combat.]
+}
+
+MISSION_FYROS_01_P_LDC_INTRO (bot givervar, creature_model yubo)
+{
+	( self.gender = male )
+		mission_fyros_01_p_ldc_intro_m	[Bienvenue, Homin. Je suis $givervar$, commandeur de la Lance Ardente, et une fière guerrière Fyros. Si tu ne sais pas ce que cela signifie, nous te l'apprendrons ... Quand tu seras prêt.\nMais tu viens d'arriver, donc nous ne te mettrons pas trop vite à l'épreuve ... Pas encore. Je vois que tu as une arme. Sais-tu t'en servir ? Si tu penses que oui, alors prouve-le moi ! Explores les alentours du campement et montre-nous que tu représentes un plus grand danger pour tes adversaires que pour toi-même. Tue dix $yubo.p$ et reviens quand tes mains seront couvertes de sang.{break}N'oublie pas de dépecer tes victimes, jeune soldat. Je t'envoie aussi là-bas pour t'apprendre à tirer profit de ta chasse.]
+	( self.gender = female )
+		mission_fyros_01_p_ldc_intro_f	[Bienvenue, Homine. Je suis $givervar$, commandeur de la Lance Ardente, et une fière guerrière Fyros. Si tu ne sais pas ce que cela signifie, nous te l'apprendrons ... Quand tu seras prête.\nMais tu viens d'arriver, donc nous ne te mettrons pas trop vite à l'épreuve ... Pas encore. Je vois que tu as une arme. Sais-tu t'en servir ? Si tu penses que oui, alors prouve-le moi ! Explores les alentours du campement et montre-nous que tu représentes un plus grand danger pour tes adversaires que pour toi-même. Tue dix $yubo.p$ et reviens quand tes mains seront couvertes de sang.{break}N'oublie pas de dépecer tes victimes, jeune soldat. Je t'envoie aussi là-bas pour t'apprendre à tirer profit de ta chasse.]
+}
+
+MISSION_FYROS_01_P_TITLEBOX_FIGHT ()
+{
+	mission_fyros_01_p_titlebox_fight	[Combattre avec une arme]
+}
+
+MISSION_FYROS_01_P_MSGBOX_FIGHT ()
+{
+	mission_fyros_01_p_msgbox_fight	[@{W300}Pour combattre un ennemi avec une arme, vous devez dans un premier temps vous en équiper. Cliquez sur votre main droite dans l'Interface des Mains et sélectionnez une arme.\n\nVous devez ensuite sélectionner votre cible avec le bouton gauche de la souris, puis, cliquer sur l'icône de la technique de combat que vous souhaitez utiliser dans l'Interface des Mains (barre située en haut de votre écran). Vous pouvez, par exemple, utiliser la technique de base nommée @{F90F}Attaque par Défaut@{FFFF}. \n\nDouble-Cliquez de nouveau sur ce même icône (ou sur n'importe quel icône de technique de combat) pour frapper votre adversaire de façon automatique.]
+}
+
+MISSION_FYROS_01_P_T2OVL_GIVER (bot givervar)
+{
+	mission_fyros_01_p_t2ovl_giver	[Retournez faire votre rapport à $givervar$]
+}
+
+MISSION_FYROS_01_P_T2_GIVER (bot givervar)
+{
+	mission_fyros_01_p_t2_giver	[Mission accomplie, n'avez-vous rien de plus difficile ?]
+}
+
+MISSION_FYROS_01_P_DC_GIVER ()
+{
+	mission_fyros_01_p_dc_giver	[Bien ! Mais la tâche que tu viens d'accomplir n'avait rien de bien compliquée.\nCela dit, tu sais que la viande de yubo a du goût, et que les artisans trouvent toujours quelque chose à faire avec, mais ce n'est pas un vrai défi pour un guerrier. Pourtant, tout le monde doit apprendre d'une façon ou d'une autre, n'est-ce pas ?{break}Avant de passer à la leçon suivante, je te recommande vivement de passer voir l'Entraîneur de Combattants, il pourra t'enseigner de nouvelles techniques de combat ou bien t'aider à augmenter tes caractéristiques.]
+}
+
+MISSION_FYROS_01_P_DA_TRAINER ()
+{
+	mission_fyros_01_p_da_trainer	[Je vais voir l'entraîneur de ce pas, je reviendrai vous voir par la suite.]
+}
+
+MISSION_FYROS_01_P_DA_QUITE ()
+{
+	mission_fyros_01_p_da_quite	[Merci, mais je n'ai pas besoin d'aller voir un entraîneur, passons à la suite.]
+}
+
+MISSION_FYROS_01_P_T2_TRAINER (bot trainer)
+{
+	mission_fyros_01_p_t2_trainer	[Bonjour, je viens apprendre de nouvelles techniques.]
+}
+
+MISSION_FYROS_02_MIS_TITLE (bot giver)
+{
+	mission_fyros_02_mis_title	[Chasseurs et proies #2]
+}
+
+MISSION_FYROS_02_MIS_DESC (bot giver)
+{
+	mission_fyros_02_mis_desc	[Repérer les proies avant la chasse.]
+}
+
+MISSION_FYROS_02_P_LDC_INTRO ()
+{
+	( self.gender = male )
+		mission_fyros_02_p_ldc_intro_m	[Si tu souhaites poursuivre mon enseignement, Homin, tu dois me prouver que tu peux penser comme un Fyros. Nous ne sommes ni des brutes ni des bandits. Nous ne nous réjouissons pas des massacres. Nous observons, et nous en tirons des leçons. Sache mon ami, que les Fyros possèdent et entretiennent les flammes de la vérité, et cherchent à bannir l'ignorance de ce monde. \nQuand l'armée Fyros et les guerriers de la Lance Ardente dégainent leurs armes, ce n'est pas sans raison, c'est dans le but de faire régner la justice sur ces terres. Souviens-t-en, et retournons à tes leçons.{break}Un combattant qui se jette tête la première sur son ennemi sans se poser la moindre question est un mauvais combattant. Avant de se battre, il faut savoir observer et apprendre à connaître son adversaire. Ce n'est que comme ça que tu pourras élaborer une stratégie fiable. Il est de plus important de connaître la faune des régions dans lesquelles tu chasses. {break} Voilà donc ce que j'attends de toi : tu vas aller dans la région que l'on nomme Terrain de Chasse afin d'y observer la faune. Je ne te demande pas de te servir de ton arme, il s'agit juste d'une mission de repérage. Je veux que tu me repères trois races différentes d'herbivores et une race de carnivores. Maintenant va et reviens me faire ton rapport une fois ta mission accomplie.]
+	( self.gender = female )
+		mission_fyros_02_p_ldc_intro_f	[Si tu souhaites poursuivre mon enseignement, Homine, tu dois me prouver que tu peux penser comme un Fyros. Nous ne sommes ni des brutes ni des bandits. Nous ne nous réjouissons pas des massacres. Nous observons, et nous en tirons des leçons. Sache mon amie, que les Fyros possèdent et entretiennent les flammes de la vérité, et cherchent à bannir l'ignorance de ce monde. \nQuand l'armée Fyros et les guerriers de la Lance Ardente dégainent leurs armes, ce n'est pas sans raison, c'est dans le but de faire régner la justice sur ces terres. Souviens-t-en, et retournons à tes leçons.{break}Un combattant qui se jette tête la première sur son ennemi sans se poser la moindre question est un mauvais combattant. Avant de se battre, il faut savoir observer et apprendre à connaître son adversaire. Ce n'est que comme ça que tu pourras élaborer une stratégie fiable. Il est de plus important de connaître la faune des régions dans lesquelles tu chasses. {break} Voilà donc ce que j'attends de toi : tu vas aller dans la région que l'on nomme Terrain de Chasse afin d'y observer la faune. Je ne te demande pas de te servir de ton arme, il s'agit juste d'une mission de repérage. Je veux que tu me repères trois races différentes d'herbivores et une race de carnivores. Maintenant va et reviens me faire ton rapport une fois ta mission accomplie.]
+}
+
+MISSION_FYROS_02_P_OVL_OOO (creature_model bodoc, creature_model bodoc2, creature_model ragus, creature_model yubos)
+{
+	mission_fyros_02_p_ovl_ooo	[Repérez un $bodoc$, un $bodoc2$, un $yubos$ et un $ragus$ en cliquant sur eux]
+}
+
+MISSION_FYROS_02_P_T2OVL_SCOUT (bot giver, bot givervar)
+{
+	mission_fyros_02_p_t2ovl_scout	[Retournez faire votre rapport à $givervar$.]
+}
+
+MISSION_FYROS_02_P_T2_SCOUT (bot giver)
+{
+	mission_fyros_02_p_t2_scout	[Repérage terminé.]
+}
+
+MISSION_FYROS_02_P_LDC_SCOUT ()
+{
+	mission_fyros_02_p_ldc_scout	[Lors de tes prochains voyages, tu ferais bien de te rappeler ces leçons, et d'observer les bêtes qui t'entourent. \nCertaines se nourrissent d'autres créatures, certaines s'ignorent et d'autres s'entraident... apprends à reconnaître les comportements de chaque espèce.]
+}
+
+MISSION_FYROS_03_MIS_TITLE (bot giver)
+{
+	mission_fyros_03_mis_title	[Chasseurs et proies #3]
+}
+
+MISSION_FYROS_03_MIS_DESC (bot giver)
+{
+	mission_fyros_03_mis_desc	[Récolter les fruits de la chasse.]
+}
+
+MISSION_FYROS_03_P_LDC_INTRO (race race_yubo)
+{
+	mission_fyros_03_p_ldc_intro	[Bien, j'ai une autre mission pour toi. Les provisions du cuisinier du camp s'amaigrissent, il va falloir y remédier. Je compte sur toi pour nourrir nos compagnons. Prépare toi, tu pars à la chasse au Bodoc. Fais attention tout de même, les Bodocs se déplacent en gros troupeaux.\nSi tu ne te sens pas prêt pour cette mission, n'hésite pas à retourner t'entraîner à chasser $race_yubo.pia$ $race_yubo.p$ et à te perfectionner auprès de ton entraîneur. Tu pourras ainsi acquérir de nouvelles techniques de combat ou pouvoirs qui rendront cette mission plus accessible. Rassure toi, nous ne sommes pas pressés, prends ton temps. Une fois ta mission accomplie, rapporte-moi ce que tu auras récolté.]
+}
+
+MISSION_FYROS_03_P_BOXTITLE_ACTIONS_FIGHT ()
+{
+	mission_fyros_03_p_boxtitle_actions_fight	[Manipuler les actions de combat.]
+}
+
+MISSION_FYROS_03_P_MSGBOX_ACTIONS_FIGHT ()
+{
+	mission_fyros_03_p_msgbox_actions_fight	[@{W450}Une action se compose de @{F90F}stanzas@{FFFF}. Les stanzas que vous avez acquises auprès des entraîneurs le sont définitivement et peuvent être utilisées comme bon vous semble pour constituer de nouvelles @{F90F}actions@{FFFF}.\n\n Vous pouvez modifier une action existante en cliquant avec le bouton droit sur son icône dans @{F90F}l'Interface des Mains@{FFFF}, puis en choisissant @{F90F}Editer Action@{FFFF}. Vous pouvez aussi en créer une nouvelle en cliquant avec le bouton droit sur un emplacement libre et en choisissant Nouvelle Action.\n\nObservons ensemble une action existante pour en comprendre le fonctionnement. Si vous avez l'action @{0A0F}Coup Puissant 1@{FFFF}, éditez-la. La fenêtre qui vient de s'ouvrir contient les stanzas qui composent l'action. On remarque deux types de stanzas : les @{F90F}options@{FFFF} et les @{F90F}crédits@{FFFF}.\n\nLes options déterminent la nature, la puissance et les fonctionnalités de votre action. Vous pouvez ajouter des options à votre action à partir de l'icône Ajouter Option. Plus il y'a d'options dans votre action ou plus elles sont puissantes, et plus votre action est coûteuse en points d'options (points inscrits en jaune).\n\nLes crédits permettent d'@{0A0F}équilibrer@{FFFF} une action. Une action qui n'est pas équilibrée ne peut pas fonctionner. Pour que votre action puisse donc fonctionner, vous devez contrebalancer le total de points d'option par le total de points de crédit (points inscrits en @{0A0F}vert@{FFFF}). Le total de points de crédit doit impérativement être supérieur ou égal au total de points d'action.\n\nLes stanzas de crédit sont donc indispensables à l'équilibre d'une action bien qu'il s'agisse de pénalités : le crédit de Cout en Stamina, par exemple, rend votre action consommatrice de points de Force.]
+}
+
+MISSION_FYROS_03_P_LDC_SUITE ()
+{
+	mission_fyros_03_p_ldc_suite	[Bien, je vois que la récolte a été bonne. Ta technique de combat s'améliore et tu sembles plutôt bien parti pour devenir un chasseur digne de ce nom. Sache toutefois qu'un combattant ne peut arriver au terme de son art qu'en apprenant à développer ses propres techniques. Cette tache n'a rien de simple, je te l'accorde, mais elle est d'une importance capitale. Apprends autant de techniques que tu le peux auprès des entraîneurs et sers t'en pour en développer de nouvelles qui soient personnalisées, mieux adaptées à tes besoins. Tu devrais t'y essayer dés maintenant. Reviens me voir dés que tu te sens prêt afin que nous puissions passer à la suite.]
+}
+
+MISSION_FYROS_04_MIS_TITLE (bot giver)
+{
+	mission_fyros_04_mis_title	[Chasseurs et proies #4]
+}
+
+MISSION_FYROS_04_MIS_DESC (bot giver)
+{
+	mission_fyros_04_mis_desc	[Combattre des prédateurs.]
+}
+
+MISSION_FYROS_04_P_OVL_T2_INTRO (bot giver, bot givervar)
+{
+	mission_fyros_04_p_ovl_t2_intro	[Allez voir $givervar$ dés que vous vous sentez prêt pour la suite.]
+}
+
+MISSION_FYROS_04_P_T2_INTRO (bot giver)
+{
+	mission_fyros_04_p_t2_intro	[Je suis prêt pour passer à la suite.]
+}
+
+MISSION_FYROS_04_P_LDC_HUNT ()
+{
+	mission_fyros_04_p_ldc_hunt	[Nous avons un problème. La nuit dernière nos éclaireurs ont trouvé un Bodoc mort, loin de son point de migration habituel. Il semble qu'il ait été traîné là, puis sauvagement massacré. Nous sommes certains que le responsable est une autre bête, les blessures correspondent à la dentition d'un carnivore. La bête responsable de cette attaque semble particulièrement rusée. Il semblerait que d'une manière ou d'une autre, le Bodoc ait été isolé de son troupeau avant d'être mis à mort, puis la carcasse aurait été traînée dans un fossé, à l'abri des regards. Si cette créature est capable de s'attaquer à un Bodoc, elle est aussi capable de s'attaquer à un Homin.{break} Le Bodoc a été trouvé mort sur le bord Est des Terrains de Chasse, pars explorer ces lieux et trouve quel type de créature est la cause de cette attaque.]
+}
+
+MISSION_FYROS_04_P_OVL_TARGET_1 (creature_model ragus)
+{
+	mission_fyros_04_p_ovl_target_1	[Rendez-vous à l'est des Terrains de Chasse et repérez l'un des prédateurs qui a pu tuer le Bodoc.]
+}
+
+MISSION_FYROS_04_P_OVL_TALK_TARGET (bot giver, bot givervar)
+{
+	mission_fyros_04_p_ovl_talk_target	[Retournez voir $givervar$ afin de lui faire votre rapport.]
+}
+
+MISSION_FYROS_04_P_TALK_TARGET (bot giver, race race_ragus)
+{
+	mission_fyros_04_p_talk_target	[Il semblerait que le coupable soit un $race_ragus.ia$ $race_ragus.name$.]
+}
+
+MISSION_FYROS_04_P_LDC_TARGET (race race_ragus)
+{
+	mission_fyros_04_p_ldc_target	[La présence de ces créatures n'a rien de bon. C'est même très préoccupant. Reste sur tes gardes lorsque tu explores cette région, $race_ragus.pda$ $race_ragus.p$ sont des créatures particulièrement dangereuses. Il est fort probable qu'ils aient une tanière dans le coin. Quoi qu'il en soit, il va falloir commencer à endiguer le problème au plus vite avant qu'ils ne prolifèrent trop. Retourne là bas et tues en quelques uns, ce sera déjà ça de gagné.]
+}
+
+MISSION_FYROS_04_P_T2_KILL (bot giver)
+{
+	mission_fyros_04_p_t2_kill	[J'en ai tué 5 !]
+}
+
+MISSION_FYROS_04_P_LDC_END ()
+{
+	mission_fyros_04_p_ldc_end	[Excellent. Le danger que représentent ces bêtes devrait se faire moins pressant à présent. Laisse-moi t'exprimer ma gratitude et accepte cette hache, c'est une arme Fyros traditionnelle de la compagnie de la Lance Ardente. Manie-la, teste sa légèreté, je pense que tu devrais la trouver à ton goût. Quand tu seras prêt, reviens me voir, et nous passerons à la prochaine étape de ton entraînement ! ]
+}
+
+MISSION_FYROS_05_MIS_TITLE (bot giver)
+{
+	mission_fyros_05_mis_title	[Travail d'équipe]
+}
+
+MISSION_FYROS_05_MIS_DESC (bot giver)
+{
+	mission_fyros_05_mis_desc	[Découvrir les particularités des créatures.]
+}
+
+MISSION_FYROS_05_P_OVL_T2_INTRO (bot giver, bot givervar)
+{
+	mission_fyros_05_p_ovl_t2_intro	[Retournez voir $givervar$ dés que vous souhaitez passer à la suite.]
+}
+
+MISSION_FYROS_05_P_T2_INTRO (bot giver)
+{
+	mission_fyros_05_p_t2_intro	[Je suis de retour, prêt à poursuivre votre enseignement.]
+}
+
+MISSION_FYROS_05_P_LDC_TEAM ()
+{
+	mission_fyros_05_p_ldc_team	[Très bien. Je commençais à m'impatienter de ton retour car j'ai besoin au plus vite d'un mercenaire. As-tu vu les ruines au Nord ? Si ce n'est pas le cas tu devrais y aller et les explorer. Les Ruines Dévastées sont un champ de vies brisées et de bâtiments effondrés, les souvenirs tragiques d'une expérience Matis qui a mal tournée et qui s'est retournée contre eux. La zone est à peu prés calme à présent, il reste quelques Yelks inoffensifs qui s'y baladent. Mais les Javings et les Slavenis posent problème. Les zorais veulent y remédier et nous allons les aider à nettoyer la zone.{break}Jusqu'à présent, je t'ai demandé d'oeuvrer en solitaire. Désormais, il va falloir que tu apprennes à travailler en équipe. La force des Fyros réside dans leur capacité à se battre en groupe. Nous ne pouvons prétendre récupérer nos terres avec de simples actions individuelles. Quand l'heure sera venue et que nos forces devront se rassembler, c'est ta capacité à travailler en équipe plus que ton adresse à manier la hache qui nous servira.{break}De nombreuses techniques de combat et pouvoirs sont très intéressants dans le cadre d'un travail de groupe, comme par exemple le pouvoir d'Agacement qui te permet d'attirer ton ennemi dans une embuscade ou encore la technique du Bouclier qui te permet de protéger un allier. Use de telles techniques lorsque tu combats en équipe.{break}Maintenant, va sur les Ruines Dévastées et allie toi avec des apprentis magiciens envoyés par les Zorais ou avec d'autres apprentis combattants afin de réduire le fléau que constituent les Javings.]
+}
+
+MISSION_FYROS_05_P_BOXTITLE_TEAM ()
+{
+	mission_fyros_05_p_boxtitle_team	[Former une équipe]
+}
+
+MISSION_FYROS_05_P_BOX_TEAM ()
+{
+	mission_fyros_05_p_box_team	[@{W500}@{0AFF}Joueur@{FFFF} et @{FFFF}PNJ@{FFFF} se différencient par la couleur de leur nom : les noms de joueurs apparaissent en @{0AFF}bleu@{FFFF} et ceux des PNJ apparaissent en @{FFFF}blanc@{FFFF}.\n\nIl existe trois manières de communiquer avec un autre joueur :\n-@{T5}via @{F90F}le canal alentours@{FFFF} : tous les joueurs se trouvant à proximité de votre personnage pourront alors vous entendre\n-@{T5}via @{F90F}le canal région@{FFFF} : tous les joueurs présents dans la même région que vous pourront vous entendre, notez que ce canal est très intéressant lorsque vous souhaitez passez une annonce, comme par exemple pour rechercher un équipier\n-@{T5}via @{F90F}les messages privés@{FFFF} : seul le joueur auquel vous vous adressez vous entendra, pour se faire, cliquez avec le bouton droit sur un joueur et choisissez Parler.\n\nUne fois que vous vous êtes entendu avec un joueur pour former une équipe, cliquez sur lui avec le bouton droit et choisissez @{F90F}Invitation équipe@{FFFF}, l'autre joueur n'aura alors plus qu'à accepter votre invitation pour que l'équipe soit formée.]
+}
+
+MISSION_FYROS_05_P_OVL_VISIT (place ruines)
+{
+	mission_fyros_05_p_ovl_visit	[Rendez vous sur les Ruines Dévastées au nord du campement.]
+}
+
+MISSION_FYROS_05_P_T2OVL_KILL (bot giver, bot givervar)
+{
+	mission_fyros_05_p_t2ovl_kill	[Retournez voir $givervar$]
+}
+
+MISSION_FYROS_05_P_T2_KILL (bot giver)
+{
+	mission_fyros_05_p_t2_kill	[J'ai éliminé une dizaine de Javings.]
+}
+
+MISSION_FYROS_05_P_LDC_END ()
+{
+	mission_fyros_05_p_ldc_end	[Tu as bien travaillé. Un jour viendra ou les Homins se disputeront tes services. N'oublie jamais qu'en tant que combattant, une lourde responsabilité repose sur tes épaules lorsque tu te bats aux côtés d'autres Homins.\nC'est à toi de protéger tes alliés, notamment les plus faibles. C'est à toi de faire barrage entre l'ennemi et la partie sensible de ton équipe.]
+}
+
+MISSION_FYROS_06_MIS_TITLE (bot giver)
+{
+	mission_fyros_06_mis_title	[Les lames rouges #1]
+}
+
+MISSION_FYROS_06_MIS_DESC (bot giver)
+{
+	mission_fyros_06_mis_desc	[Dispenser la justice.]
+}
+
+MISSION_FYROS_06_P_LDC_INTRO (faction faction_goohead)
+{
+	mission_fyros_06_p_ldc_intro	[Bien, j'ai une mission plus sérieuse et plus périlleuse à te confier. Si tu l'acceptes, je vais te proclamer membre honorifique de la compagnie de la Lance Ardente, afin que tu puisses rendre la justice en notre nom, et préserver la sécurité de ce lieu.{break}\nAu nord des Ruines Dévastées se trouve une tribu de fanatiques qui se font appeler $faction_goohead.mda$ $faction_goohead$. Ils entretiennent des liens étroits avec ce mal qui ronge notre planète : la Goo. La Goo contamine tout sur Atys : créatures et végétaux, et progresse de jour en jour. $faction_goohead.mda$ $faction_goohead$ se servent de la Goo comme d'une drogue, substance qui est devenue leur seule raison d'être. Cette tribu vit isolée de notre civilisation et représente pour nous un danger de taille.{break}Nombreux sont nos frères qui ont péris sous les assauts frénétiques de ces fous. Nous devons absolument savoir ce qu'ils font dans cette région, pourquoi sont ils là, que cherchent-ils ? Ce qui est d'autant plus  étonnant, c'est que cette tribu vit normalement dans la région du Noeud de la Démence, sur le continent Zorai, c'est-à-dire très loin d'ici.{break}Pourquoi une petite faction de leur tribu s'est exilée sur cette île ?\n\nNous devons répondre à ces questions, comprendre la raison de leur présence sur cette île et la nature de leurs desseins. C'est pour cela que vas partir en expédition jusqu'à leur camp. Tues en autant qu'il faudra, mais trouve impérativement un élément qui puisse nous permettre de comprendre leurs plans.]
+}
+
+MISSION_FYROS_06_P_OVL_LOOT_1 (item i1, int qt1, int qual1)
+{
+	mission_fyros_06_p_ovl_loot_1	[Tuez des bandits jusqu'à trouver les informations recherchées.]
+}
+
+MISSION_FYROS_06_P_OVL_GIVE_1 (item i1, int qt1, int qual1, bot giver, bot givervar)
+{
+	mission_fyros_06_p_ovl_give_1	[Rapportez le parchemin à $givervar$.]
+}
+
+MISSION_FYROS_06_P_LDC_END ()
+{
+	mission_fyros_06_p_ldc_end	[Au fil des années, j'ai perdu beaucoup à cause de parasites tels que ceux que tu as abattus.\nQuand j'étais plus jeune, on quadrillait la nature sauvage à la recherche de poches de civilisations. Je n'étais qu'un simple éclaireur pour la Lance Ardente nouvellement reconstituée et je pensais que tous les réfugiés que l'on rencontrait acclameraient notre arrivée. J'ai rencontré un groupe de ce que je croyais simplement être des réfugiés et je les ai menés directement à notre camp. Je les ai fait pénétrer dans notre périmètre, pensant que j'amenais des amis. Au cours du massacre qui a suivi, j'ai perdu mon frère et mon fiancé{break} Cela m'a pris une année pour m'en remettre et retrouver mes esprits… Tu comprendras ainsi à quel point cette affaire me touche.\nPour te remercier de cette première mission, et pour que tu puisses aborder l'étape suivante mieux protégé, prends ceci.]
+}
+
+MISSION_FYROS_07_MIS_TITLE (bot giver)
+{
+	mission_fyros_07_mis_title	[Les lames rouges #2]
+}
+
+MISSION_FYROS_07_MIS_DESC (bot giver)
+{
+	mission_fyros_07_mis_desc	[Combattre le chef des bandits.]
+}
+
+MISSION_FYROS_07_P_LDC_INTRO (bot boss_goo_head, race race_gingo)
+{
+	( self.gender = male )
+		mission_fyros_07_p_ldc_intro_m	[Laisse moi examiner le document que tu viens de me porter... c'est étrange... cela n'a aucun sens. Ces ordres parlent de chargements qui arrivent et partent d'ici, mais c'est impossible. A part pour quelques uns des meilleurs grimpeurs sur Atys, il est impossible d'accéder au plateau depuis l'effondrement des accès de la jungle il y a des dizaines d'années. De plus, ils parlent d'intensifier les attaques sur les troupeaux, pour nous chasser de notre camp ! Serait-il possible que ces bandits aient quelque chose à voir, d'une manière ou d'une autre, avec $race_gingo.pda$ $race_gingo.p$ qui attaquent nos bêtes ?{break}Nous devons absolument faire quelque chose, et tout de suite ! J'ai parlé aux chefs de factions qui nous soutiennent dans cette opération et tu seras fier d'apprendre que j'ai parlé avec insistance de ton sens du devoir et de tes prouesses. J'ai avancé ton nom pour être notre agent chargé d'enquêter et de résoudre cette affaire !{break} Les ordres parlent d'un individu précis - une personne du nom de $boss_goo_head$, qui est apparemment le chef des opérations chez les bandits. Trouve-le, et élimine-le, mais méfie-toi, $boss_goo_head$ est un puissant guerrier qui devrait te donner du fil à retordre. Il est évident que l'affronter seul serait un suicide. Forme une équipe de mages et de guerriers compétents avant de lancer l'assaut. Maintenant va, et que Ma-Duk te protège.]
+	( self.gender = female )
+		mission_fyros_07_p_ldc_intro_f	[Laisse moi examiner le document que tu viens de me porter... c'est étrange... cela n'a aucun sens. Ces ordres parlent de chargements qui arrivent et partent d'ici, mais c'est impossible. A part pour quelques uns des meilleurs grimpeurs sur Atys, il est impossible d'accéder au plateau depuis l'effondrement des accès de la jungle il y a des dizaines d'années. De plus, ils parlent d'intensifier les attaques sur les troupeaux, pour nous chasser de notre camp ! Serait-il possible que ces bandits aient quelque chose à voir, d'une manière ou d'une autre, avec $race_gingo.pda$ $race_gingo.p$ qui attaquent nos bêtes ?{break}Nous devons absolument faire quelque chose, et tout de suite ! J'ai parlé aux chefs de factions qui nous soutiennent dans cette opération et tu seras fière d'apprendre que j'ai parlé avec insistance de ton sens du devoir et de tes prouesses. J'ai avancé ton nom pour être notre agent chargé d'enquêter et de résoudre cette affaire !{break} Les ordres parlent d'un individu précis - une personne du nom de $boss_goo_head$, qui est apparemment le chef des opérations chez les bandits. Trouve-le, et élimine-le, mais méfie-toi, $boss_goo_head$ est un puissant guerrier qui devrait te donner du fil à retordre. Il est évident que l'affronter seul serait un suicide. Forme une équipe de mages et de guerriers compétents avant de lancer l'assaut. Maintenant va, et que Ma-Duk te protège.]
+}
+
+MISSION_FYROS_07_P_OVL_KILL (bot_name boss_goo_head, int qt, faction faction_gooheads)
+{
+	mission_fyros_07_p_ovl_kill	[Trouvez et éliminez $boss_goo_head$ de la tribu $faction_gooheads.mia$ $faction_gooheads$]
+}
+
+MISSION_FYROS_07_P_OVL_T2KILL (bot giver, bot boss_goo_head, bot givervar)
+{
+	mission_fyros_07_p_ovl_t2kill	[$boss_goo_head$ a été éliminé, allez prévenir $givervar$.]
+}
+
+MISSION_FYROS_07_P_T2_KILL (bot giver, bot givervar)
+{
+	mission_fyros_07_p_t2_kill	[Allez faire votre rapport à $givervar$.]
+}
+
+MISSION_FYROS_07_P_LDC_END (race race_bodoc, race race_gingo)
+{
+	mission_fyros_07_p_ldc_end	[On a entendu les hurlements $race_gingo.pia$ $race_gingo.p$ d'ici ! Alors comme ça, le chef de cette vermine était un dresseur de bêtes ? Ceci explique les attaques $race_gingo.pia$ $race_gingo.p$ et le massacre $race_bodoc.pia$ $race_bodoc.p$. En présumant qu'ils entraînaient $race_gingo.pia$ $race_gingo.p$ pour rejoindre les attaques, ils auraient pu massacrer très rapidement tous nos troupeaux, et ainsi supprimer toutes nos provisions de nourriture !{break} Nous n'aurons pas répondu à toutes nos questions mais nous aurons réglé le problème, c'est l'essentiel. Peut-être cherchent-ils quelque chose dans ces ruines. Peut être s'intéressent-ils  aux expériences passées des Matis. Il est fort probable que n'obtenions jamais de réponses.{break}Le conseil m'a chargé de te remettre ceci pour tous les risques que tu as pris. Prends et sache que chaque élève qui passera par ce camp te doit beaucoup.]
+}
+
+MISSION_FYROS_01_GF_NEW_NPE_GF_P_LDC_INTRO (bot givervar, creature_model yubo)
+{
+	( self.gender = male )
+		mission_fyros_01_gf_new_npe_gf_p_ldc_intro_m	[Bienvenue, Homin. Je suis $givervar$, commandeur de la Lance Ardente, et une fière guerrière Fyros, peuple dont la maîtrise du maniement des armes n'est plus à prouver.\n\nTu viens d'arriver ? {break}Ce n'était pas très compliqué à deviner vu l'arme que tu porte sur toi ... Encore faudrait-il que tu saches t'en servir. {break}Je vais t'expliquer rapidement l'art du combat{break}En toute logique, un combattant chassera toujours son arme à la main.\nCertaines armes sont dites 'A une main' et permettent l'utilisation conjointe d'un bouclier ou d'une dague. Il existe aussi des armes à deux mains. {break}Une fois l'arme à la main tu va pouvoir attaquer ta cible. Pour le moment tu ne possèdes que 2 ou 3 actions de combat (dans la fenêtre d'actions en haut).{break}L'Attaque de base :\n\nSimple, elle ne consomme pas de Stamina, la force nécessaire à frapper des coups spéciaux. Par contre, cette attaque est très peu efficace.{break}L'Attaque Précise :\n\nElle permet de toucher son adversaire à presque tous les coups. Plus ton adversaire sera fort, plus ton attaque devera être précise. Sinon, ton adversaire esquivera tes coups.{break} Le Coup Puissant :\n\nIl permet de frapper plus fort. Les dégats que tu infliges sont plus importants. De même que pour l'Attaque Précise, plus ton adversaire est fort, plus ton coup devra être puissant.{break}Tu verras qu'il est possible de combiner une attaque précise et un coup puissant, ainsi que d'autres options en échange d'une consommation de Stamina plus importante. {break}Tu pourras échanger tes points d'expérience en combat (appuie sur 'P' pour voir ta fiche de personnage) contre de nouvelles techniques de combat.\nTu pourras, par exemple, acheter le Coup Puissant si tu ne l'as pas encore.{break}Je ne t'ai pas trop ennuyé avec mes explications ? Alors prouve moi que tu as tout compris ! Explore les alentours du campement et montre-nous que tu représentes un plus grand danger pour tes adversaires que pour toi-même.\n\nTue 3 $yubo.p$, n'oublie pas de les dépecer et reviens me voir quand tu auras fini.]
+	( self.gender = female )
+		mission_fyros_01_gf_new_npe_gf_p_ldc_intro_f	[Bienvenue, Homine. Je suis $givervar$, commandeur de la Lance Ardente, et une fière guerrière Fyros, peuple dont la maîtrise du maniement des armes n'est plus à prouver.\n\nTu viens d'arriver ? {break}Ce n'était pas très compliqué à deviner vu l'arme que tu porte sur toi ... Encore faudrait-il que tu saches t'en servir. {break}Je vais t'expliquer rapidement l'art du combat{break}En toute logique, un combattant chassera toujours son arme à la main.\nCertaines armes sont dites 'A une main' et permettent l'utilisation conjointe d'un bouclier ou d'une dague. Il existe aussi des armes à deux mains. {break}Une fois l'arme à la main tu va pouvoir attaquer ta cible. Pour le moment tu ne possèdes que 2 ou 3 actions de combat (dans la fenêtre d'actions en haut).{break}L'Attaque de base :\n\nSimple, elle ne consomme pas de Stamina, la force nécessaire à frapper des coups spéciaux. Par contre, cette attaque est très peu efficace.{break}L'Attaque Précise :\n\nElle permet de toucher son adversaire à presque tous les coups. Plus ton adversaire sera fort, plus ton attaque devera être précise. Sinon, ton adversaire esquivera tes coups.{break} Le Coup Puissant :\n\nIl permet de frapper plus fort. Les dégats que tu infliges sont plus importants. De même que pour l'Attaque Précise, plus ton adversaire est fort, plus ton coup devra être puissant.{break}Tu verras qu'il est possible de combiner une attaque précise et un coup puissant, ainsi que d'autres options en échange d'une consommation de Stamina plus importante. {break}Tu pourras échanger tes points d'expérience en combat (appuie sur 'P' pour voir ta fiche de personnage) contre de nouvelles techniques de combat.\nTu pourras, par exemple, acheter le Coup Puissant si tu ne l'as pas encore.{break}Je ne t'ai pas trop ennuyé avec mes explications ? Alors prouve moi que tu as tout compris ! Explore les alentours du campement et montre-nous que tu représentes un plus grand danger pour tes adversaires que pour toi-même.\n\nTue 3 $yubo.p$, n'oublie pas de les dépecer et reviens me voir quand tu auras fini.]
+}
+
+MISSION_FYROS_01_GF_NEW_NPE_P_DC_GIVER ()
+{
+	mission_fyros_01_gf_new_npe_p_dc_giver	[Bien ! Mais la tâche que tu viens d'accomplir n'avait rien de bien compliquée.\nCela dit, tu sais que la viande de yubo a du goût, et que les artisans trouvent toujours quelque chose à faire avec, mais ce n'est pas un vrai défi pour un guerrier. Pourtant, tout le monde doit apprendre d'une façon ou d'une autre, n'est-ce pas ?{break}Avant de passer à la leçon suivante, je te recommande vivement de passer voir l'Entraîneur de Combattants, il pourra t'enseigner de nouvelles techniques de combat ou bien t'aider à augmenter tes caractéristiques.]
+}
+
+MISSION_FYROS_01_GF_NEW_NPE_P_T2_TRAINER_TALK ()
+{
+	( self.gender = male )
+		mission_fyros_01_gf_new_npe_p_t2_trainer_talk_m	[Bonjour jeune guerrier ! Je suis ici pour t'aider à progresser. Je vais t'apprendre à développer tes compétences au combat mais également améliorer tes capacités physiques.{break} Plus tu t'entraîneras, plus tu gagneras de points d'expérience. Tu pourras alors les utiliser pour apprendre de nouvelles techniques chez tous les entraîneurs.{break}Je vais te donner quelques conseils qui pourraient t'intéresser. Ecoute attentivement.{break}Constitution:\n\nAugmenter sa constitution fait accroître le nombre de points de Vie. Tu deviendras alors un guerrier plus difficile à tuer.{break}Métabolisme:\n\nIl s'agit de ta capacité à recupérer tes points de Vie. Tu pourras combattre un plus grand nombre d'ennemis en même temps et tenir plus longtemps les combats.{break}Force:\n\nTa quantité de Stamina. Un grand nombre de points de stamina t'assure une bonne série de coup spéciaux. La stamina est indispensable à tout guerrier. La seul attaque qui n'utilise pas de Stamina est l'attaque de base. C'est aussi la plus faible.{break}Equilibre:\n\nIl s'agit de ta capacité à récupérer tes points de stamina. Tout aussi important que le Métabolisme.{break}Je te conseille, dans un premier temps, de prendre ces 4 mises-à-jour dès que tu le peux. Augmenter ta force te permettra aussi de porter des armes de plus haute qualité qui feront plus de dégats.\n\nLis bien toutes les informations que je te propose (en cliquant avec le boutton droit de la souris dessus), elles te seront très utiles.]
+	( self.gender = female )
+		mission_fyros_01_gf_new_npe_p_t2_trainer_talk_f	[Bonjour jeune guerrière ! Je suis ici pour t'aider à progresser. Je vais t'apprendre à développer tes compétences au combat mais également améliorer tes capacités physiques.{break} Plus tu t'entraîneras, plus tu gagneras de points d'expérience. Tu pourras alors les utiliser pour apprendre de nouvelles techniques chez tous les entraîneurs.{break}Je vais te donner quelques conseils qui pourraient t'intéresser. Ecoute attentivement.{break}Constitution:\n\nAugmenter sa constitution fait accroître le nombre de points de Vie. Tu deviendras alors un guerrier plus difficile à tuer.{break}Métabolisme:\n\nIl s'agit de ta capacité à recupérer tes points de Vie. Tu pourras combattre un plus grand nombre d'ennemis en même temps et tenir plus longtemps les combats.{break}Force:\n\nTa quantité de Stamina. Un grand nombre de points de stamina t'assure une bonne série de coup spéciaux. La stamina est indispensable à tout guerrier. La seul attaque qui n'utilise pas de Stamina est l'attaque de base. C'est aussi la plus faible.{break}Equilibre:\n\nIl s'agit de ta capacité à récupérer tes points de stamina. Tout aussi important que le Métabolisme.{break}Je te conseille, dans un premier temps, de prendre ces 4 mises-à-jour dès que tu le peux. Augmenter ta force te permettra aussi de porter des armes de plus haute qualité qui feront plus de dégats.\n\nLis bien toutes les informations que je te propose (en cliquant avec le boutton droit de la souris dessus), elles te seront très utiles.]
+}
+
+MISSION_FYROS_02_GF_NEW_NPE_GF_P_LDC_INTRO ()
+{
+	( self.gender = male )
+		mission_fyros_02_gf_new_npe_gf_p_ldc_intro_m	[Si tu souhaites poursuivre mon enseignement, Homin, tu dois me prouver que tu peux penser comme un Fyros. Nous ne sommes ni des brutes ni des bandits. Nous ne nous réjouissons pas des massacres. Nous observons, et nous en tirons des leçons. Sache mon ami, que les Fyros possèdent et entretiennent les flammes de la vérité, et cherchent à bannir l'ignorance de ce monde. \nQuand l'armée Fyros et les guerriers de la Lance Ardente dégainent leurs armes, ce n'est pas sans raison, c'est dans le but de faire régner la justice sur ces terres. Souviens-t-en, et retournons à tes leçons.{break}Un combattant qui se jette tête la première sur son ennemi sans se poser la moindre question est un mauvais combattant. Avant de se battre, il faut savoir observer et apprendre à connaître son adversaire. Ce n'est que comme ça que tu pourras élaborer une stratégie fiable. Il est de plus important de connaître la faune des régions dans lesquelles tu chasses. {break} Voilà donc ce que j'attends de toi : tu vas aller dans la région que l'on nomme Terrain de Chasse afin d'y observer la faune. Je ne te demande pas de te servir de ton arme, il s'agit juste d'une mission de repérage. Maintenant va et reviens me faire ton rapport une fois ta mission accomplie.]
+	( self.gender = female )
+		mission_fyros_02_gf_new_npe_gf_p_ldc_intro_f	[Si tu souhaites poursuivre mon enseignement, Homine, tu dois me prouver que tu peux penser comme un Fyros. Nous ne sommes ni des brutes ni des bandits. Nous ne nous réjouissons pas des massacres. Nous observons, et nous en tirons des leçons. Sache mon amie, que les Fyros possèdent et entretiennent les flammes de la vérité, et cherchent à bannir l'ignorance de ce monde. \nQuand l'armée Fyros et les guerriers de la Lance Ardente dégainent leurs armes, ce n'est pas sans raison, c'est dans le but de faire régner la justice sur ces terres. Souviens-t-en, et retournons à tes leçons.{break}Un combattant qui se jette tête la première sur son ennemi sans se poser la moindre question est un mauvais combattant. Avant de se battre, il faut savoir observer et apprendre à connaître son adversaire. Ce n'est que comme ça que tu pourras élaborer une stratégie fiable. Il est de plus important de connaître la faune des régions dans lesquelles tu chasses. {break} Voilà donc ce que j'attends de toi : tu vas aller dans la région que l'on nomme Terrain de Chasse afin d'y observer la faune. Je ne te demande pas de te servir de ton arme, il s'agit juste d'une mission de repérage. Maintenant va et reviens me faire ton rapport une fois ta mission accomplie.]
+}
+
+MISSION_FYROS_02_GF_NEW_NPE_GF_FINDMOB1 (place place, creature_model bodoc)
+{
+	mission_fyros_02_gf_new_npe_gf_findmob1	[Suivez l'indication du radar pour repérer des $bodoc.p$]
+}
+
+MISSION_FYROS_02_GF_SYS_MSG_TALEBODOC ()
+{
+	mission_fyros_02_gf_sys_msg_talebodoc	[&AMB&Gros herbivore à peau épaisse, les Bodocs ont l'air paisible mais puissant.]
+}
+
+MISSION_FYROS_02_GF_SYS_MSG_WATCHBODOC ()
+{
+	mission_fyros_02_gf_sys_msg_watchbodoc	[&AMB&Vous commencez à observer les Bodocs]
+}
+
+MISSION_FYROS_02_GF_NEW_NPE_GF_EXAMINECREATURE (place exitplace1)
+{
+	mission_fyros_02_gf_new_npe_gf_examinecreature	[Restez caché dans les buissons]
+}
+
+MISSION_FYROS_02_GF_SYS_MSG_STAYNEAR ()
+{
+	mission_fyros_02_gf_sys_msg_staynear	[&AMB&Restez proche et obvervez les créatures]
+}
+
+MISSION_FYROS_02_GF_NEW_NPE_GF_FINDMOB2 (place place, creature_model yubos)
+{
+	mission_fyros_02_gf_new_npe_gf_findmob2	[Suivez l'indication du radar pour repérer des $yubos.p$]
+}
+
+MISSION_FYROS_02_GF_SYS_MSG_WATCHYUBO ()
+{
+	mission_fyros_02_gf_sys_msg_watchyubo	[&AMB&Vous commencez à observer les yubos]
+}
+
+MISSION_FYROS_02_GF_SYS_MSG_TALEYUBO ()
+{
+	mission_fyros_02_gf_sys_msg_taleyubo	[&AMB&Petit et plutôt lent, les Yubos sont des omnivores, ils ont l'air inoffensifs et succulent.]
+}
+
+MISSION_FYROS_03_GF_SYS_MSG_WARNINGBODOC ()
+{
+	mission_fyros_03_gf_sys_msg_warningbodoc	[&AMB&Ce Bodoc est plus imposant que les autres. Il risquerait de vous tuer.]
+}
+
+MISSION_FYROS_03_GF_SYS_MSG_KILLBODOC ()
+{
+	mission_fyros_03_gf_sys_msg_killbodoc	[&AMB&Ce Bodoc est parfait pour vous. De bons steacks en perspective.]
+}
+
+MISSION_FYROS_04_GF_SYS_MSG_WATCHRAGUS ()
+{
+	mission_fyros_04_gf_sys_msg_watchragus	[&AMB&Il ne reste plus grand chose du Bodoc. Les traces sont encore fraîches ... Le résponsable ne doit pas être loin.]
+}
+
+MISSION_FYROS_04_GF_OBJ_FIND_RAGUS_1 (creature_model ragus)
+{
+	mission_fyros_04_gf_obj_find_ragus_1	[Trouvez quels monstres ont tué le Bodoc.]
+}
+
+MISSION_FYROS_04_GF_SYS_MSG_FOUNDRAGUS ()
+{
+	mission_fyros_04_gf_sys_msg_foundragus	[&AMB&Voilà le responsable !]
+}
+
+MISSION_FYROS_04_GF_OBJ_KILL_RAGUS_1 (creature_model ragus, int q1)
+{
+	mission_fyros_04_gf_obj_kill_ragus_1	[Tuez $q1$ $ragus.p$ qui ne pourrons plus commettre de crimes.]
+}
+
+MISSION_FYROS_04_GF_NEW_NPE_GF_MISSIONRAGUSDONE (bot giver, race race_ragus)
+{
+	mission_fyros_04_gf_new_npe_gf_missionragusdone	[Ce sont $race_ragus.pia$ $race_ragus.p$ les résponsables.]
+}
+
+MISSION_FYROS_05_GF_SYS_MSG_WATCHJAV ()
+{
+	mission_fyros_05_gf_sys_msg_watchjav	[&AMB&Ces bois sont infestés de Javings !]
+}
+
+MISSION_FYROS_06_GF_SYS_MSG_LOOTBANDIT ()
+{
+	mission_fyros_06_gf_sys_msg_lootbandit	[&AMB&Vous avez trouvé un plan sur le bandit.]
+}
+
+MISSION_FYROS_08_MIS_TITLE (bot giver)
+{
+	mission_fyros_08_mis_title	[Essayer une autre profession]
+}
+
+MISSION_FYROS_08_MIS_DESC (bot giver, bot guide)
+{
+	mission_fyros_08_mis_desc	[Retourner voir $guide$]
+}
+
+MISSION_FYROS_08_P_LDC_INTROP (bot guide)
+{
+	mission_fyros_08_p_ldc_introp	[$guide$ t'indiquera ou te rendre]
+}
+
+MISSION_FYROS_08_GOSEEMAYOR_1 (bot guide)
+{
+	mission_fyros_08_goseemayor_1	[Suivez votre radar pour trouver $guide$]
+}
+

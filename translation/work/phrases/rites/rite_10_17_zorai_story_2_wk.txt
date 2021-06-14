@@ -1,0 +1,82 @@
+﻿R_10_17_MIS_TITLE (bot giver, faction shadow_runners)
+{
+	r_10_17_mis_title	[L'aide Zorai aux $shadow_runners$]
+}
+
+R_10_17_MIS_DESC (bot giver, faction shadow_runners)
+{
+	r_10_17_mis_desc	[Les $shadow_runners$ ont tellement extrait de ressources qu'ils ont déclenché la colère des Kamis dans la région.
+Réussir à les calmer serait très bon pour la diplomatie avec les Zorais.]
+}
+
+R_10_17_P_LDF_INTRO_1 (place maiden_grove, faction shadow_runners)
+{
+	r_10_17_p_ldf_intro_1	[Les $shadow_runners$ de la région $maiden_grove$ ont tellement extrait de minerai que des Kamis en colère sont apparus et les empêchent de récupérer de quoi subsister.
+L'intendant voudrait les aider et en profiter pour leur enseigner les façons de respecter Atys.
+Il a besoin d'un prospecteur qui s'intéresse aux façons de calmer les Kamis.]
+}
+
+R_10_17_M_T2_INTENDANT_1 (bot intendant_1)
+{
+	r_10_17_m_t2_intendant_1	[Vous cherchez un prospecteur ?]
+}
+
+R_10_17_P_BC_INTENDANT_1 (place maiden_grove, faction shadow_runners)
+{
+	r_10_17_p_bc_intendant_1	[Les Kamis de $maiden_grove$ sont ulcérés par les actions des $shadow_runners$.
+Nous avons envoyé un sage capable de les calmer, mais il a besoin de certains matériaux rares pour son rituel.
+Retrouvez le à $maiden_grove$, près du campement des $shadow_runners$.]
+}
+
+R_10_17_M_T2_SAGE_1 (bot sage_1)
+{
+	r_10_17_m_t2_sage_1	[Je viens vous assister]
+}
+
+R_10_17_P_BC_SAGE_1 (faction shadow_runners)
+{
+	r_10_17_p_bc_sage_1	[Les Kamis sont survoltés et ne laisseront pas les $shadow_runners$ miner sans notre intervention.
+Mais j'ai besoin de matières premières particulières pour effectuer le rituel.
+Le temps presse car les $shadow_runners$ ont besoin de matières premières pour fabriquer leurs armes.
+Si les Kamis ne sont pas calmés rapidement, cela pourrait mettre en péril notre relation diplomatique avec eux.]
+}
+
+R_10_17_M_T2_SAGE_1A (bot sage_1)
+{
+	r_10_17_m_t2_sage_1a	[J'ai trouvé ce que vous vouliez.]
+}
+
+R_10_17_P_BC_GO_KAMIS_1 ()
+{
+	r_10_17_p_bc_go_kamis_1	[Formidable ! Maintenant, allons maintenant trouver les Kamis]
+}
+
+R_10_17_O_ES_SAGE_1 ()
+{
+	r_10_17_o_es_sage_1	[Accompagner le sage auprès des Kamis]
+}
+
+R_10_17_P_BC_SAGE_2ANSWER_OK ()
+{
+	r_10_17_p_bc_sage_2answer_ok	[Très bien, je vais maintenant pouvoir effectuer le rituel.
+Aide moi à me concentrer.]
+}
+
+R_10_17_P_BC_SAGE_3 (item MP_to_forage_1)
+{
+	r_10_17_p_bc_sage_3	[J'ai besoin de $MP_to_forage_1$.
+Donnez m'en que je puisse effectuer le rituel d'apaisement.]
+}
+
+R_10_17_M_T2_KAMI_1 (bot kind_kami_1)
+{
+	r_10_17_m_t2_kami_1	[Etes-vous satisfait, Kami ?]
+}
+
+R_10_17_P_BC_DEBRIEF_1 ()
+{
+	r_10_17_p_bc_debrief_1	[Grand merci !
+Nous contents maintenant.
+Vous avoir compris importance de Atys.
+Pour récompenser vous, nous enseigner à vous moyen pour être ami avec nous.]
+}

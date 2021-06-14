@@ -1,0 +1,593 @@
+﻿MISSION_ZORAI_01_MIS_TITLE (bot giver)
+{
+	mission_zorai_01_mis_title	[Premiers pas en magie #1]
+}
+
+MISSION_ZORAI_01_MIS_DESC (bot giver)
+{
+	mission_zorai_01_mis_desc	[Apprendre à lancer un sort contre un ennemi]
+}
+
+MISSION_ZORAI_01_P_LDC_STARTING ()
+{
+	( self.gender = male )
+		mission_zorai_01_p_ldc_starting_m	[Salutations étranger, c'est toujours un plaisir de découvrir de nouveaux visages. Mon apparence t'intrigue sûrement : sache que j'appartiens au peuple Zorai. Mon peuple est le premier à avoir connu ces nobles créatures que sont les Kamis et nous en sommes restés très proches. D'ailleurs, le masque que nous portons, moi et mes semblables, est un témoignage de leur enseignement.{break}Tous comme les Kamis, nous les Zorais sommes intimement liés aux forces magiques d'Atys. Si tu as la patience et la volonté d'apprendre à maîtriser ces forces, je me ferai un plaisir de te guider dans ta quête de connaissances. Bien Homin, poursuivons.]
+	( self.gender = female )
+		mission_zorai_01_p_ldc_starting_f	[Salutations étrangére, c'est toujours un plaisir de découvrir de nouveaux visages. Mon apparence t'intrigue sûrement : sache que j'appartiens au peuple Zorai. Mon peuple est le premier à avoir connu ces nobles créatures que sont les Kamis et nous en sommes restés très proches. D'ailleurs, le masque que nous portons, moi et mes semblables, est un témoignage de leur enseignement.{break}Tous comme les Kamis, nous les Zorais sommes intimement liés aux forces magiques d'Atys. Si tu as la patience et la volonté d'apprendre à maîtriser ces forces, je me ferai un plaisir de te guider dans ta quête de connaissances. Bien Homine, poursuivons.]
+}
+
+MISSION_ZORAI_01_P_DCC_SUITE_ANSWER_YES ()
+{
+	mission_zorai_01_p_dcc_suite_answer_yes	[Très bien, commençons ! Tout d'abord, tu dois savoir que les pouvoirs d'un mage se nourrissent de la sève. La sève est l'énergie vitale d'Atys, c'est l'essence même de cette planète. La sève, c'est la vie, et tout sur Atys n'est que vie : toi, moi, l'ami qui combat à tes côtés, l'ennemi que tu pourfends, l'arbre qui te protège de la pluie, le sol que tu foules... tout !{break}Ces notions peuvent te paraître bien abstraites, saches cependant qu'elles sont essentielles. En tant que mage, tu devras apprendre à contrôler la sève pour y puiser tes pouvoirs. Plus forte sera ton emprise sur la sève et plus puissants seront les sorts que tu pourras utiliser.{break}Tu as en toi, comme tous les Homins, un sort inné : le sort de Dégâts d'Acide, qui te permettra de combattre tes ennemis en brûlant leurs chairs. Avant de passer aux choses sérieuses, tu dois maîtriser ce sort élémentaire. Je t'invite donc à aller t'entraîner contre des Yubos, ces petits herbivores ne sont pas agressifs, ce qui ne veut bien entendu pas dire qu'ils ne se défendent pas, reste donc prudent, soigne toi entre deux combats, et évite d'attaquer plus d'un Yubo à la fois.{break}Tu trouveras des Yubos à proximité du campement. Maintenant va, fais bon usage de ces premiers conseils et reviens me voir une fois ta tâche accomplie.]
+}
+
+MISSION_ZORAI_01_TITLE_SM_CAST_SPELL ()
+{
+	mission_zorai_01_title_sm_cast_spell	[Lancer un sort]
+}
+
+MISSION_ZORAI_01_DESC_SM_CAST_SPELL ()
+{
+	mission_zorai_01_desc_sm_cast_spell	[@{W400}Pour lancer un sort il vous suffit de sélectionner votre cible avec le bouton gauche de la souris, puis, de cliquer sur l'icône du sort que vous souhaitez lancer dans l'@{F90F}Interface des Mains@{FFFF} (barre située en haut de votre écran).\nDans le cas présent, sélectionnez un Yubo, puis cliquer sur l'icône représentant une petite flaque verte nommée @{F90F}Dégats d'Acide 1@{FFFF}. Cliquez de nouveau sur l'icône si vous souhaitez relancer ce sort.]
+}
+
+MISSION_ZORAI_01_P_T2_OVL_GIVERVAR (bot givervar)
+{
+	mission_zorai_01_p_t2_ovl_givervar	[Retournez parler à $givervar$]
+}
+
+MISSION_ZORAI_01_P_T2_GIVERVAR (bot givervar)
+{
+	mission_zorai_01_p_t2_givervar	[J'ai terminé ma mission]
+}
+
+MISSION_ZORAI_01_P_DCC_DEBRIEF ()
+{
+	mission_zorai_01_p_dcc_debrief	[Tu viens d'accomplir ta première mission avec succès, je vois que tu es tout à fait apte à aborder des sujets plus complexes. Nous pouvons donc passer à la suite.]
+}
+
+MISSION_ZORAI_02_MIS_TITLE (bot giver)
+{
+	mission_zorai_02_mis_title	[Premiers pas en magie #3]
+}
+
+MISSION_ZORAI_02_MIS_DESC (bot giver)
+{
+	mission_zorai_02_mis_desc	[Apprendre à convertir l'expérience gagnée en nouvelles techniques et pouvoirs]
+}
+
+MISSION_ZORAI_02_P_DC_BRIEF ()
+{
+	mission_zorai_02_p_dc_brief	[Laissons un instant la magie de côté pour aborder un problème plus général. Quelque soit ton domaine de compétences, qu'il s'agisse de la magie, de l'artisanat, du forage ou encore du combat, tu ne pourras progresser que par la pratique. Par exemple, plus tu uses de ton épée en combat, et plus tu gagnes d'expérience dans ce domaine. Une fois que tu as acquis suffisamment d'expérience, tu peux aller voir un entraîneur qui pourra alors t'enseigner de nouvelles techniques ou de nouveaux pouvoirs. Tu trouveras des entraîneurs dans n'importe quelle ville ou village.{break}Tu as d'ailleurs dû gagner de l'expérience en magie pendant la mission que tu viens d'effectuer, je te conseille donc, si ce n'est déjà fait, d'aller voir un entraîneur en magie afin qu'il t'enseigne de nouvelles compétences, tu reviendras me voir par la suite.{break}Si je peux me permettre de te donner un conseil, tu devrais, pour commencer, demander à l'entraîneur qu'il renforce ta constitution et ta capacité en sève, tu en en auras bien besoin. De plus, il serait sage que tu acquières le sort de Régénération de Vie, il te permettra de soigner tes frères Homins. Tu verras bien vite que l'entraide peut s'avérer salutaire sur ces terres hostiles. Maintenant, tu es libre de le suivre ou non mes conseils.]
+}
+
+MISSION_ZORAI_02_P_ANS_YES ()
+{
+	mission_zorai_02_p_ans_yes	[Très bien, je vais voir l'Entraîneur de Magiciens de ce pas, je reviendrai vous voir après.]
+}
+
+MISSION_ZORAI_02_P_ANS_NO ()
+{
+	mission_zorai_02_p_ans_no	[Je suis déjà allé voir l'entraîneur, je souhaite continuer la leçon.]
+}
+
+MISSION_ZORAI_02_P_MSGTITLE_BOX_XP_AND_TRAINERS ()
+{
+	mission_zorai_02_p_msgtitle_box_xp_and_trainers	[Expérience et points de compétence]
+}
+
+MISSION_ZORAI_02_MSG_BOX_XP_AND_TRAINERS ()
+{
+	mission_zorai_02_msg_box_xp_and_trainers	[@{W450}Il est temps pour vous de convertir l'expérience que vous avez gagnée. \nVous avez dû le remarquer, lorsque vous effectuez certaines tâches (en magie, en combat, en artisanat ou en forage) vous gagnez de l'expérience, lorsque vous en avez acquis suffisamment, vous progressez d'un niveau dans la compétence correspondante. \nCe passage d'un niveau à un autre vous est annoncé par une aura brillante entourant votre personnage, accompagnée d'un message. Pour consulter l'état d'avancement de votre expérience et de vos niveaux, allez dans la @{F90F}fenêtre Actions@{FFFF} (@{F90F}touche B@{FFFF}). Chaque fois que vous gagnez un niveau, vous recevez 10 points de compétence. Ce sont ces points de compétence que vous pourrez échanger contre de nouvelles techniques, pouvoirs ou améliorations de caractéristiques, auprès d'un entraîneur.\nPour voir la quantité de points de compétence dont vous disposez, consultez l'encart Points de Compétence de la @{F90F}fenêtre Identité@{FFFF} (@{F90F}touche P@{FFFF}).Chaque entraîneur est spécialisé dans l'un des quatre principaux domaines d'actions (magie, combat, artisanat ou forage) et ne peut convertir que les points que vous avez acquis dans son domaine. \nPlus votre niveau dans l'un de ces domaines est élevé et plus large sera le choix de techniques que vous pourrez acquérir.]
+}
+
+MISSION_ZORAI_02_P_OVLT2_TRAINER (bot trainer)
+{
+	mission_zorai_02_p_ovlt2_trainer	[Passez voir l'entraîneur en magie.]
+}
+
+MISSION_ZORAI_02_P_T2_TRAINER (bot trainer)
+{
+	mission_zorai_02_p_t2_trainer	[Bonjour, je viens m'entraîner.]
+}
+
+MISSION_ZORAI_02_P_MSGTITLE_TRAINERS_MAGIC ()
+{
+	mission_zorai_02_p_msgtitle_trainers_magic	[Les entraîneurs de magie]
+}
+
+MISSION_ZORAI_02_P_MSGBOX_TRAINER_MAGIC ()
+{
+	mission_zorai_02_p_msgbox_trainer_magic	[@{W500}Bien, vous avez trouvé un entraîneur. \nUn entraîneur vous permet de dépenser les points de compétence que vous avez acquis pour acheter de nouvelles stanzas, de nouvelles actions ou des mises à niveau de caractéristiques. \nUne action est composée de plusieurs stanzas, l'achat d'une action équivaut donc à acheter l'ensemble des stanzas qui la compose. {break} Pour accéder aux services de cet entraîneur, cliquez de nouveau sur lui : une liste des éléments qu'il vous propose s'affiche alors. Pour obtenir des informations sur l'un des éléments présents, faites un clic droit sur l'icône correspondant.\nPour exemple, examinons l'élément @{F90F}Dégâts de Froid 1@{FFFF}, il s'agit là d'une action qui se compose de 5 stanzas : \n-@{T5}Plan du sort @{F90F}Missile Atysien@{FFFF}, qui définie l'action comme étant un sort offensif \n-@{T5}Effet du Sort @{F90F}Dégât de Froid 1@{FFFF}, qui définit la nature exacte et la puissance de ce sort offensif (sort de type froid, niveau 1) \n-@{T5}et 3 types différents de @{F90F}crédits@{FFFF}, nous reviendrons ultérieurement sur la notion de crédits, sachez juste pour le moment qu'il s'agit de pénalités indispensables à l'équilibre naturel d'un sort {break} {break} Vous pouvez voir dans cette même liste d'éléments que vous propose l'entraîneur, des mises à niveau de caractéristiques, elles sont de deux types : \n-@{T5}celles dont les icônes représentent deux gouttes sur un fond sombre correspondent à une augmentation du maximum d'une caractéristique (@{F90F}Constitution 1@{FFFF} et @{F90F}Intelligence 1@{FFFF} dans le cas présent) \n-@{T5}celles dont les icônes représentent une goutte à moitié pleine sur fond sombre correspondent à une amélioration de la vitesse de regain d'une caractéristique (@{F90F}Métabolisme 1@{FFFF} et @{F90F}Sagesse 1@{FFFF}) \nVous pouvez maintenant faire vos choix.]
+}
+
+MISSION_ZORAI_02_P_OVL_GIVER (bot giver, bot givervar)
+{
+	mission_zorai_02_p_ovl_giver	[Retournez voir $givervar$]
+}
+
+MISSION_ZORAI_02_P_T2_GIVER (bot giver)
+{
+	mission_zorai_02_p_t2_giver	[J'en ai terminé avec l'entraîneur, passons à la suite.]
+}
+
+MISSION_ZORAI_02_P_LDC_END ()
+{
+	mission_zorai_02_p_ldc_end	[Fort bien ! Nous n'allons pas tarder à passer aux choses sérieuses, mais je crains que tu ne manques encore un peu d'expérience. De plus, le sort de combat que tu utilises actuellement me parait un peu faible. Repars t'entraîner en forêt jusqu'à ce que ton expérience te permette d'acquérir un sort de combat plus puissant. Reviens me voir une fois que tu l'as.]
+}
+
+MISSION_ZORAI_03_MIS_TITLE (bot giver)
+{
+	mission_zorai_03_mis_title	[La naissance d'un mage #1]
+}
+
+MISSION_ZORAI_03_MIS_DESC (bot giver)
+{
+	mission_zorai_03_mis_desc	[Apprendre à manipuler les sorts de plus haut rang.]
+}
+
+MISSION_ZORAI_03_P_T2_OVL_START (bot giver, bot givervar)
+{
+	mission_zorai_03_p_t2_ovl_start	[Entraîne toi en magie jusqu'au niveau 10, procure toi un sort de combat de niveau 2 (Froid ou Acide) puis retourne voir $givervar$]
+}
+
+MISSION_ZORAI_03_P_T2_START (bot giver)
+{
+	mission_zorai_03_p_t2_start	[Je suis prêt, nous pouvons continuer.]
+}
+
+MISSION_ZORAI_03_P_LDC_EXIT_SPELLS ()
+{
+	mission_zorai_03_p_ldc_exit_spells	[Peut être te sens tu suffisamment puissant pour passer à la suite, mais comme je te l'ai déjà dit, tu auras besoin d'un sort de combat de niveau 2. Procures t'en un et reviens me voir par la suite]
+}
+
+MISSION_ZORAI_03_P_LDC_SPELL_OK ()
+{
+	mission_zorai_03_p_ldc_spell_ok	[Bien. Ce que je vais t'enseigner maintenant est d'une importance capitale. \nSache que tu peux développer tes propres techniques et pouvoirs à partir de ce que tu as pu apprendre auprès des entraîneurs. \nUn bon mage se doit de préparer ses propres sorts. {break}Utilise les sorts que t'ont enseignés les entraîneurs, exerce toi à créer tes propres sorts et si tu en sens le besoin, va tester ces nouvelles techniques en forêt, tu pourras ainsi te rendre compte par toi-même de celles qui sont le plus efficaces. Reviens me voir quand tu te sens prêt.]
+}
+
+MISSION_ZORAI_03_P_TITLEBOX_ACTIONS ()
+{
+	mission_zorai_03_p_titlebox_actions	[Créer des actions]
+}
+
+MISSION_ZORAI_03_P_MSGBOX_ACTIONS ()
+{
+	mission_zorai_03_p_msgbox_actions	[@{W500}Les stanzas que vous avez acquises auprès des entraîneurs le sont définitivement et peuvent être utilisées comme bon vous semble pour constituer de nouvelles actions. Vous pouvez modifier une action existante en cliquant avec le bouton droit sur son icône dans la barre des actions, puis en choisissant @{F90F}Editer Action@{FFFF}. Vous pouvez aussi en créer une nouvelle en cliquant avec le bouton droit sur un emplacement libre et en choisissant @{F90F}Nouvelle Action@{FFFF}.\nObservons ensemble une action existante pour en comprendre le fonctionnement. Editez l'action @{F90F}Dégats d'Acide 1@{FFFF}. La fenêtre qui vient de s'ouvrir contient les stanzas qui composent l'action. On remarque deux types de stanzas : les effets et les crédits. Les effets déterminent la nature, la puissance et les fonctionnalités de votre action. Vous pouvez ajouter des effets à votre action à partir de l'icône @{F90F}Ajouter Option@{FFFF}. Plus il y'a d'effets dans votre action ou plus ils sont puissants, et plus votre action est coûteuse en @{FF0F}points d'action@{FFFF} (points inscrits en jaune). \nPour que votre action puisse fonctionner, vous devez contrebalancer le total de points d'action par le total de @{0F0F}points de crédit@{FFFF} (points inscrits en vert). Le total de points de crédit doit impérativement être supérieur ou égal au total de points d'action. \nLes stanzas de crédit sont donc indispensables à l'équilibre d'une action bien qu'il s'agisse de pénalités : le @{F90F}crédit de Portée@{FFFF}, par exemple, réduit la portée du sort, plus son niveau est élevé, plus il introduit de points de crédits dans votre action et plus la portée de votre sort est courte. Vous pouvez rajouter une nouvelle stanza de crédit en cliquant sur l'icône @{F90F}Ajouter Crédit@{FFFF}. Plus vous obtiendrez de stanzas chez les entraîneurs et plus vous aurez de combinaisons possibles pour vos actions. Il est essentiel de bien paramétrer vos actions, votre efficacité en dépend, mais il n'y pas de configuration idéale pour une action, tout dépends de vos besoins et de vos stratégies. Voici un exemple probant : vous pouvez attribuer à un sort d'Acide un puissant crédit de Sève de manière à ce qu'aucun autre type de crédit ne soit nécessaire, votre sort aura  alors une longue portée et un temps d'incantation très court mais sera très couteux en Sève ; inversement, vous pouvez remplacer ce crédit de Sève par un puissant crédit de Portée, votre sort ne pourra alors être utilisé qu'à bout portant mais sera utilisable à l'infini puisque non consommateur de Sève ! ]
+}
+
+MISSION_ZORAI_03_P_OVL_T2_READY (bot giver, bot givervar)
+{
+	mission_zorai_03_p_ovl_t2_ready	[Entraînez-vous à mettre au point vos propres sorts et retournez voir $givervar$ quand vous vous sentez prêt]
+}
+
+MISSION_ZORAI_03_P_T2_READY (bot giver)
+{
+	mission_zorai_03_p_t2_ready	[Je suis prêt pour passer à la suite.]
+}
+
+MISSION_ZORAI_03_P_LDC_END ()
+{
+	mission_zorai_03_p_ldc_end	[Très bien, j'espère que tu auras compris à quel point il est important de savoir développer ses propres techniques. Puisque tu sembles prêt, passons à la suite.]
+}
+
+MISSION_ZORAI_04_MIS_TITLE (bot giver)
+{
+	mission_zorai_04_mis_title	[La naissance d'un mage #2]
+}
+
+MISSION_ZORAI_04_MIS_DESC (bot giver)
+{
+	mission_zorai_04_mis_desc	[Trouver sa place dans l'équipe.]
+}
+
+MISSION_ZORAI_04_P_LDC_START ()
+{
+	mission_zorai_04_p_ldc_start	[Je suis heureux de voir l'intérêt que tu portes à la magie. Sa connaissance peut te conférer de bien puissants pouvoirs. \nCela dit, ne va surtout pas t'imaginer qu'il est facile de devenir mage et que cela soit sans danger. \nPour tirer pleinement partie de la sève, un mage ne doit pas se couvrir d'armures encombrantes, cela amenuiserait considérablement ses pouvoirs magiques, ce qui bien entendu le rend très vulnérable. \nTu découvriras donc bien vite l'utilité d'une escorte de guerriers lorsque tu évolues sur des terres hostiles.{break}Maintenant, à toi de mettre en pratique cette leçon. \nDans la région que l'on nomme Terrain de Chasse se trouvent des créatures bien plus puissantes que les quelques yubos que tu viens de combattre : ce sont les Rendors. \nLeur peau est aussi impénétrable que l'écorce de l'arbre et de leurs pattes puissantes, ils peuvent piétiner leurs adversaires avec violence. \nJe te demanderai donc d'aller en tuer dix. Comme je te l'ai dit, les Rendors sont dangereux, trouve toi donc un ou plusieurs équipiers qui sachent manier l'épée et partez accomplir cette épreuve en équipe. \nReviens me voir une fois ta mission accomplie.]
+}
+
+MISSION_ZORAI_04_P_MSGBOX_TITLE_TEAM ()
+{
+	mission_zorai_04_p_msgbox_title_team	[Former une équipe]
+}
+
+MISSION_ZORAI_04_P_MSGBOX_TEAM ()
+{
+	mission_zorai_04_p_msgbox_team	[@{W400}Joueur et PNJ se différencient par la couleur de leur nom : les noms de joueurs apparaissent en bleu et ceux des PNJ apparaissent en blanc.\nIl existe trois manières de communiquer avec un autre joueur : \n-@{T5}via le @{F90F}canal alentours@{FFFF} : tous les joueurs se trouvant à proximité de votre personnage pourront alors vous entendre \n-@{T5}via le @{F90F}canal région@{FFFF} : tous les joueurs présents dans la même région que vous pourront vous entendre, notez que ce canal est très intéressant lorsque vous souhaitez passez une annonce, comme par exemple pour rechercher un équipier \n-@{T5}via les @{F90F}messages privés@{FFFF} : seul le joueur auquel vous vous adressez vous entendra, pour se faire, cliquez avec le bouton droit sur un joueur et choisissez Parler \n\nUne fois que vous vous êtes entendu avec un joueur pour former une équipe, cliquez sur lui avec le bouton droit et choisissez Invitation équipe, l'autre joueur n'aura alors plus qu'à accepter votre invitation pour que l'équipe soit formée.]
+}
+
+MISSION_ZORAI_04_P_OVL_KILL_1 (creature_model rendor, int q1)
+{
+	mission_zorai_04_p_ovl_kill_1	[Trouvez-vous des équipiers et partez chasser $q1$ $rendor$.]
+}
+
+MISSION_ZORAI_04_P_OVL_TEAM (bot giver, bot givervar)
+{
+	mission_zorai_04_p_ovl_team	[voir $givervar$ pour la suite de votre enseignement.]
+}
+
+MISSION_ZORAI_04_P_T2_TEAM (bot giver)
+{
+	mission_zorai_04_p_t2_team	[Mission accomplie, je suis prêt pour la suite]
+}
+
+MISSION_ZORAI_04_P_LDC_TACHE ()
+{
+	mission_zorai_04_p_ldc_tache	[Je constate avec grand plaisir que tu progresses à grands pas. La tâche que tu viens d'accomplir n'avait rien de simple mais tu t'en es sorti brillamment. Je suis fier de toi. \nNous allons pouvoir continuer ta formation. Je vais maintenant t'apprendre à tisser des liens magiques avec ton ennemi. Tu auras besoin pour cela du sort d'Enracinement.]
+}
+
+MISSION_ZORAI_04_P_OVL_T2_SKILL (bot giver, bot givervar)
+{
+	mission_zorai_04_p_ovl_t2_skill	[Trouvez le sort d'Enracinement, puis retournez voir $givervar$]
+}
+
+MISSION_ZORAI_04_P_T2_SKILL (bot giver)
+{
+	mission_zorai_04_p_t2_skill	[J'ai acquis le sort d'Enracinement, nous pouvons continuer]
+}
+
+MISSION_ZORAI_04_P_LDC_LIE ()
+{
+	mission_zorai_04_p_ldc_lie	[Tu me mens, retourne acquérir ce sort, nous ne pourrons rien faire sans.]
+}
+
+MISSION_ZORAI_04_P_LDC_EXIT ()
+{
+	mission_zorai_04_p_ldc_exit	[Hélas, je vois que tu ne possèdes pas encore le sort d'enracinement. Pars l'acquérir chez l'entraîneur et si tu n'as pas assez de points de compétence, tu sais ce qu'il te reste à faire : repartir t'entraîner en foret. \nTu reviendras me voir une fois que tu l'auras.]
+}
+
+MISSION_ZORAI_04_P_LDC_END_SKILL ()
+{
+	mission_zorai_04_p_ldc_end_skill	[Bien, nous pouvons passer à la suite.]
+}
+
+MISSION_ZORAI_05_MIS_TITLE (bot giver)
+{
+	mission_zorai_05_mis_title	[La naissance d'un mage #3]
+}
+
+MISSION_ZORAI_05_MIS_DESC (bot giver)
+{
+	mission_zorai_05_mis_desc	[L'apprentissage des liens magiques.]
+}
+
+MISSION_ZORAI_05_P_LDC_START ()
+{
+	mission_zorai_05_p_ldc_start	[Nombre de pouvoirs magiques que tu utiliseras impliquent la création de liens mystiques qui vous attachent toi et ta cible. Ces liens sont puissants, mais fragiles, et ne durent que le temps pendant lequel tu te concentres sur ta volonté. Changer ta ligne de conduite, même bouger brise le lien. Rappelle-t-en.{break}Le sort que nous appelons 'enracinement' en est un bon exemple. Ce sort te permet d'invoquer des racines qui, sortant des entrailles d'Atys, agrippent et immobilisent ta cible, ce qui te permet pendant ce temps de lui envoyer des sorts de combat. Lorsque tu fais face à un adversaire dont tu sais que tu ne viendras pas à bout par les armes, use de cette magie, cela le maintiendra à distance le temps qu'il faut et t'évitera un destin funeste. {break}Il existe une créature nommée javing, sur laquelle tu pourrais expérimenter tes nouvelles connaissances, dans les ruines dévastées au Nord. Ces créatures volantes dont les ailes battent avec frénésie et dont les griffes sont promptes à frapper, n'ont pas leur pareil pour désarmer les épéistes les plus expérimentés. Apprends à te servir des liens magiques, aide-nous à débarrasser nos terres de quelques uns de ces dangereux charognards. Bien entendu, il ne t'est pas interdit de faire appel à des coéquipiers.]
+}
+
+MISSION_ZORAI_05_P_OVL_KILL_1 (creature_model javing, int q1)
+{
+	mission_zorai_05_p_ovl_kill_1	[Trouve et élimine des javings en t'aidant de ton sort d'enracinement]
+}
+
+MISSION_ZORAI_05_P_OVL_T2_KILL (bot giver, bot givervar)
+{
+	mission_zorai_05_p_ovl_t2_kill	[Retourne voir $givervar$]
+}
+
+MISSION_ZORAI_05_P_T2_KILL (bot giver)
+{
+	mission_zorai_05_p_t2_kill	[J'ai éliminé les 10 javings comme vous me l'avez demandé.]
+}
+
+MISSION_ZORAI_05_P_LDC_LIENS ()
+{
+	mission_zorai_05_p_ldc_liens	[L'utilisation des liens magiques n'est pas facile, mais ce sont des sorts très utiles surtout lorsque tu t'en sers en équipe. En l'occurrence, le sors d'Enracinement peut te permettre de garder un ennemi à distance des membres les plus vulnérables de ton équipe tels que les guérisseurs ou les mages offensifs. {break}Nous allons maintenant mettre tes compétences au service de notre peuple. Ta mission suivante consistera à nettoyer les ruines de la cité de Silan en éliminant des plantes envahissantes. Pour ce faire, tu auras besoin du sort de Pourriture, tu verras bien vite que ce sort est particulièrement efficace contre toutes formes de plantes.]
+}
+
+MISSION_ZORAI_05_P_OVL_T2_SKILL (bot giver, bot givervar)
+{
+	mission_zorai_05_p_ovl_t2_skill	[Procurez-vous le sort de Pourriture, puis retournez voir $givervar$.]
+}
+
+MISSION_ZORAI_05_P_T2_SKILL (bot giver)
+{
+	mission_zorai_05_p_t2_skill	[J'ai acquis le sort de Pourriture, nous pouvons continuer.]
+}
+
+MISSION_ZORAI_05_P_LDC_LIE ()
+{
+	mission_zorai_05_p_ldc_lie	[Tu me mens, retourne acquérir ce sort, nous ne pourrons rien faire sans.]
+}
+
+MISSION_ZORAI_05_P_LDC_END_SKILL ()
+{
+	mission_zorai_05_p_ldc_end_skill	[Bien, nous pouvons passer à la suite.]
+}
+
+MISSION_ZORAI_06_MIS_TITLE (bot giver)
+{
+	mission_zorai_06_mis_title	[Au service d'un peuple #1]
+}
+
+MISSION_ZORAI_06_MIS_DESC (bot giver)
+{
+	mission_zorai_06_mis_desc	[La variété de la magie.]
+}
+
+MISSION_ZORAI_06_P_LDC_START ()
+{
+	mission_zorai_06_p_ldc_start	[Comme tu peux le constater avec le sort de Pourriture et le sort d'Acide, il existe différentes formes de magies offensives, tu en découvrira d'autres par la suite tels que le Feu ou le Froid. \nTu découvriras de plus, que chacun de tes ennemis a ses propres résistances et faiblesses, les plantes, par exemple, sont sensibles au sort de Pourriture, par contre, la grande majorité des animaux y sont soit peu, soit complètement insensible. Use donc de tes sorts à bon escient.{break}Revenons-en à notre problème principal : la ville de Silan. \nCette ville, anciennement Matis, a été victime de la folie de leurs occupants. Les Matis n'ont que peu de respect pour l'environnement qui les accueille et n'ont aucun scrupule à exploiter et manipuler la nature. \nCe point constitue le principal sujet de discorde entre nos deux peuples. Nous Zorais, au même titre que les Kamis, vénérons la nature et faisons tout ce qui est en notre pouvoir pour la protéger.{break}Il y'a donc bien longtemps, les occupants de la ville de Silan ont tenté de manipuler des plantes afin qu'elles puissent extraire des substances enfouies dans les profondeurs du sol atysien. \nCette expérience s'est retournée contre eux : ils n'ont pas su contrôler ces mutations qui ont donné naissance à des plantes plus agressives et plus envahissantes. Le résultat en a été la destruction de leur ville.{break}Aujourd'hui, les intérêts des Zorais et des Matis se croisent autour de cette tragédie : les Zorais ne veulent pas que cette espèce mutante se propage et bouleverse l'équilibre floral d'Atys, quant aux Matis, ils veulent pouvoir accéder aux ruines de Silan afin d'y récupérer leurs biens. Nous allons donc les aider à éradiquer ces plantes mutantes. {break}Rends toi sur les ruines de Silan et use de ton sort de pourriture pour venir à bout d'une quinzaine de Slavenis. Accomplis ta mission et reviens ensuite me voir. Bon courage !]
+}
+
+MISSION_ZORAI_06_P_OVL_T2_KILL (bot giver, bot givervar)
+{
+	mission_zorai_06_p_ovl_t2_kill	[Retournez voir $givervar$.]
+}
+
+MISSION_ZORAI_06_P_T2_KILL (bot giver)
+{
+	mission_zorai_06_p_t2_kill	[J'ai tué les slavenis comme promis !]
+}
+
+MISSION_ZORAI_06_P_LDC_KILL ()
+{
+	mission_zorai_06_p_ldc_kill	[Bien, mais je voudrais t'inculquer une notion importante et chère au peuple Zorai. Sache qu'un Zorai ne tue ni pour le plaisir ni pour la gloire. \nLe peuple Zorai, comme toute espèce sur Atys, fait partie d'un tout, d'un équilibre fragile. Nous avons notre place en ce monde, et il est naturel que nous la préservions : pour cela, nous chassons afin de manger et luttons pour notre défense. \nMais nous devons préserver nos esprits de toute ambition meurtrière, nous devons rester humbles et comprendre que la domination d'une espèce ou d'un peuple sur un autre ne peut que mener au déséquilibre et la destruction d'Atys.{break}Ceci, les Matis ne l'ont jamais compris, ils ont soif de pouvoir et se pensent supérieurs aux autres espèces d'Atys. Méfie toi d'eux, ne sombre pas dans leur folie et apprend à respecter l'environnement qui te fait vivre. {break} Il est temps de passer à la suite. Pour ta prochaine leçon tu auras besoin du sort de Peur. ]
+}
+
+MISSION_ZORAI_06_P_OVL_T2FEAR (bot giver, bot givervar)
+{
+	mission_zorai_06_p_ovl_t2fear	[Trouvez le sort de Peur, puis retournez voir $givervar$]
+}
+
+MISSION_ZORAI_06_P_T2_FEAR (bot giver)
+{
+	mission_zorai_06_p_t2_fear	[J'ai acquis le sort de Peur, nous pouvons continuer.]
+}
+
+MISSION_ZORAI_06_P_LDC_FEARLIE ()
+{
+	mission_zorai_06_p_ldc_fearlie	[Tu me mens, retourne acquérir ce sort, nous ne pourrons rien faire sans.]
+}
+
+MISSION_ZORAI_06_P_LDC_NOFEAR ()
+{
+	mission_zorai_06_p_ldc_nofear	[Puisque tu ne disposes pas de ce sort, pars l'acquérir chez l'entraîneur et si tu n'as pas assez de points de compétence, tu sais ce qu'il te reste à faire : repartir t'entraîner en foret. Tu reviendras me voir une fois que tu l'auras.]
+}
+
+MISSION_ZORAI_06_P_LDC_FEARTRUE ()
+{
+	mission_zorai_06_p_ldc_feartrue	[Bien, continuons.]
+}
+
+MISSION_ZORAI_07_MIS_TITLE (bot giver)
+{
+	mission_zorai_07_mis_title	[Au service d'un peuple #2]
+}
+
+MISSION_ZORAI_07_MIS_DESC (bot giver)
+{
+	mission_zorai_07_mis_desc	[Utiliser la peur à son avantage.]
+}
+
+MISSION_ZORAI_07_P_LDC_INTRO ()
+{
+	mission_zorai_07_p_ldc_intro	[Nous avons déjà abordé les sorts d'affliction avec le sort d'Enracinement. Aujourd'hui, nous allons en étudier un autre : le sort de Peur. \nLes sorts d'affliction permettent au mage d'handicaper son ennemi : de l'aveugler, de le paralyser, de l'effrayer ou encore, comme on l'a déjà vu, de l'enraciner. {break}Le sort de Peur peut t'être d'un grand secours lorsqu'un combat tourne mal. \nLorsqu'il est lancé sur un ennemi, ce dernier est pris d'une peur effroyable et prend la fuite. Mais le sort ne dure que peu de temps et une fois qu'il s'est estompé tu peux être sûr que ton adversaire reviendra à la charge. \nPendant que le sort fait effet, tu peux en profiter soit pour frapper ton ennemi à distance, soit pour toi-même prendre la fuite. \nC'est donc un sort bien utile lorsque tu es seul.{break}Près des ruines de Silan, tu trouveras des créatures que l'on nomme Yelk dont la chair et leurs excroissances en forme de champignons sont particulièrement nourrissantes. Les Yelks sont omnivores et pacifiques, mais savent très bien se défendre. \nLe véritable danger de ces créatures c'est le gaz toxique qu'elles libèrent lorsqu'elles meurent. Il est donc plus prudent de les maintenir à distance en combat, surtout quand elles sont sur le point de mourir. \nC'est dans ce genre de cas de figure que le sort de peur s'avère utile. Lorsque tu vois que la créature est à l'agonie, utilise ton sort de Peur et achève la à distance. {break}Cette épreuve sera pour nous une occasion de réapprovisionner notre stock de nourriture. Retourne sur les ruines de Silan et rapporte moi une dizaine de ces champignons de Yelk.]
+}
+
+MISSION_ZORAI_07_P_OVL_VISIT (place place_silan)
+{
+	mission_zorai_07_p_ovl_visit	[Rendez vous sur les ruines de Silan.]
+}
+
+MISSION_ZORAI_07_P_LDC_CONTINUE ()
+{
+	mission_zorai_07_p_ldc_continue	[Parfait, tu as fait du bon travail. Tu commences à avoir une bonne vision de notre art, tes compétences en magie se font de plus en plus nombreuses et ton habileté à en user s'affine de jour en jour. \nJe suis heureux de voir que mon enseignement porte ses fruits. Continuons donc sur cette lancée et passons à la leçon suivante.{break}Nous avons étudié les Sorts de Missiles Atysiens, c'est-à-dire les sorts offensifs, qui te permettent de frapper ton ennemi, de plus, nous avons vu les Sorts d'Affliction qui te permettent d'handicaper ton ennemi, voyons maintenant les Sorts de Missiles Célestes.]
+}
+
+MISSION_ZORAI_08_MIS_TITLE (bot giver)
+{
+	mission_zorai_08_mis_title	[Au service d'un peuple #3]
+}
+
+MISSION_ZORAI_08_MIS_DESC (bot giver)
+{
+	mission_zorai_08_mis_desc	[La magie pour soigner ses alliés.]
+}
+
+MISSION_ZORAI_08_P_LDC_INTRO (race race_gingos)
+{
+	mission_zorai_08_p_ldc_intro	[Les Sorts de Missiles Célestes constituent la base de la magie salvatrice. Ils te permettent par exemple d'apporter des soins, de redonner de la vigueur ou encore de ressourcer en sève tes alliés. La magie salvatrice est indispensable au bon fonctionnement d'une équipe. \nLe sort de Régénération de Vie, que tu dois très probablement posséder et dont je t'avais déjà parlé fait partie de cette catégorie de sorts. Il n'est bien entendu pas le seul. La magie salvatrice est une orientation bien noble pour un mage qui devient alors responsable de la santé et du bon fonctionnement de son équipe. C'est une lourde responsabilité.{break}La mission que je vais te confier est particulièrement dangereuse, et il serait suicidaire d'y aller seul. Sers toi de ce que je viens de t'apprendre : constitue un groupe et assure toi qu'il comprenne un mage salvateur, tu peux d'ailleurs, si tu le souhaites et si tu t'en sens capable, assurer toi-même cette fonction.{break}Venons-en aux objectifs de ta mission. Nos mages continuent de défricher les ruines de Silan, hélas ils sont en proie à des attaques régulières de prédateurs venant du nord. Ces créatures, que l'on nomme $race_gingos$, sont particulièrement redoutables, et comme tous leurs semblables prédateurs, elles attaquent les Homins à vue. \nSoyez donc d'une extrême vigilance sinon vous ne tarderez pas à vous retrouver débordés de toutes parts. Tu l'auras donc compris, ton objectif est de frapper un grand coup et d'affaiblir ces meutes enragées. Elimine un dizaine de ces créatures et reviens me voir une fois ton objectif atteint.]
+}
+
+MISSION_ZORAI_08_P_OVL_KILL_RAGUS_1 (creature_model gingo, int q1)
+{
+	mission_zorai_08_p_ovl_kill_ragus_1	[Rendez vous au nord des ruines avec votre équipe et éliminez $q1$ $gingo$.]
+}
+
+MISSION_ZORAI_08_P_T2_END (bot giver, race race_gingos)
+{
+	mission_zorai_08_p_t2_end	[Mission terminée, les attaques de $race_gingos$ devraient s'estomper.]
+}
+
+MISSION_ZORAI_08_P_LDC_END ()
+{
+	mission_zorai_08_p_ldc_end	[En te voyant, mon coeur s'emplit de fierté, tu as su mener à bien toutes les missions que je t'ai proposées. Ton esprit vif a su assimiler les moindres subtilités de l'art de la magie et tu as su en tirer pleinement partie. \n Je pense t'avoir enseigné plus qu'il n'en faut pour devenir un mage, certes la route est encore longue avant de pouvoir affronter les puissances de ce monde, mais je sais aujourd'hui que tu es prêt à voler de tes propres ailes. Tu as encore de nombreuses choses à apprendre sur la magie, et je suis certain que tu y arriveras sans mon aide.{break} A mon sens, tu es prêt à rejoindre le continent. Mais peut-être, qu'auparavant, tu souhaites découvrir l'art du combat, de l'artisanat ou encore du forage, je suis alors certain que mes homologues Matis, Tryker et Fyros - t'accueilleront à bras ouverts.{break} De plus, les Kamis et les Rangers mènent un bien rude combat sur cette île et ton aide pourrait leur être précieuse. Je ne t'en dis pas plus à ce sujet, mais si tu es en quête d'aventures, n'hésite pas à aller les voir. Je n'ai plus qu'à te souhaiter bonne route. Que Ma-Duk te protège !]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_MIS_TITLE (bot giver)
+{
+	mission_zorai_shooting_range_a_mis_title	[Premiers pas en magie #2]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_MIS_DESC (bot giver)
+{
+	mission_zorai_shooting_range_a_mis_desc	[Continuez l'entraînement]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_INTRO ()
+{
+	mission_zorai_shooting_range_a_intro	[Tu a su t'en sortir avec les Yubos. Mais je ne suis pas certain que tu te soit servi de ton amplificateur de magie. Quoi qu'il en soit, les amplificateurs qui se portent comme des gants et permettent d'augmenter la puissance et la vitesse des encantations sont le principal équipement des mages.{break}Tout les amplificateurs n'ont pas les mêmes caractéristiques. Certains sont bon pour la magie offensive, d'autres pour la magie curative, et certains, comme celui que l'on t'as offert, amplifient de la même manière tout les sorts. Bien connaitre son amplificateur (clique droit avec la souris sur l'icone correspondant) est l'une des premières chose que l'on demande à un apprenti.{break}C'est pour cette raison que j'aimerai te voir t'entrainer sur des jarres plus loin. Essaye d'abord à mains nues. Puis compare avec l'utilisation de ton amplificateur.]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_VISIT (place place)
+{
+	mission_zorai_shooting_range_a_visit	[Allez vous exercer dans $place.da$ $place$.]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_SYS_MSG_01 ()
+{
+	mission_zorai_shooting_range_a_sys_msg_01	[&AMB&Détruisez les 4 cibles en 60 secondes]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_SYS_MSG_04 ()
+{
+	mission_zorai_shooting_range_a_sys_msg_04	[&AMB&Vous avez été trop lent. Avez-vous essayer avec des amplificateurs de magie ?]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_SYS_MSG_02 ()
+{
+	mission_zorai_shooting_range_a_sys_msg_02	[&AMB&Bravo !]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_SYS_MSG_03 ()
+{
+	mission_zorai_shooting_range_a_sys_msg_03	[&AMB&Perdu ! Revenez dans la zone de tir.]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_FAKE_TALK (place place, bot givervar)
+{
+	mission_zorai_shooting_range_a_fake_talk	[Parlez à $givervar$]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_SYS_MSG_CRY ()
+{
+	mission_zorai_shooting_range_a_sys_msg_cry	[&AMB&Vous entendez un enfant pleurer...]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_TALK_ABOUT_CRY (bot givervar)
+{
+	mission_zorai_shooting_range_a_talk_about_cry	[J'ai fini.]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_HELP_BOY ()
+{
+	mission_zorai_shooting_range_a_help_boy	[Ha, c'est toi? Désolé, je suis un peu préocupé. On viens de me signaler qu'un enfant pleure mais je n'ai personne qui puisse aller voir ce qu'il se passe. Peux-tu t'en charger ?]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_TALK (bot nethsael)
+{
+	mission_zorai_shooting_range_a_talk	[Allez voir ce qu'il se passe.]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_QUESTION (bot nethsael)
+{
+	mission_zorai_shooting_range_a_question	[Pourquoi pleures-tu?]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_MAINTRO ()
+{
+	mission_zorai_shooting_range_a_maintro	[Des bandits... *snif*... ils m'ont tout pris... *snif* Je n'ai plus rien... donne moi tes habits s'il te plaît... j'ai froid... *snif*]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_COOL1 ()
+{
+	mission_zorai_shooting_range_a_cool1	[Je vais t'en acheter si tu veux ?]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_EVIL1 ()
+{
+	mission_zorai_shooting_range_a_evil1	[Désolé je suis un pressé. Je te ramene au camp ?]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_COOLINTROMAIN ()
+{
+	mission_zorai_shooting_range_a_coolintromain	[Merci... *snif* Tu me donne de l'argent ? Sans de bonnes armes je risque de me faire à nouveau voler tout ce que j'ai... *snif*]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_EVIL2 ()
+{
+	mission_zorai_shooting_range_a_evil2	[Tu n'abuserai pas un peu ?]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_COOL2 ()
+{
+	mission_zorai_shooting_range_a_cool2	[Il devrait me rester assez quelques dappers apres l'achat de tes vêtements. Je te les donnerai.]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_EVILINTROMAIN ()
+{
+	mission_zorai_shooting_range_a_evilintromain	[Je n'ai plus rien... *snif*... et personne ne veux m'aider...]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_COOL3 ()
+{
+	mission_zorai_shooting_range_a_cool3	[D'accord, d'accord. Je vais aller te chercher des habits convenables.]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_EVIL3 ()
+{
+	mission_zorai_shooting_range_a_evil3	[Je suis vraiment désolé. On m'attends.]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_COOLCOOL1 ()
+{
+	mission_zorai_shooting_range_a_coolcool1	[Non je veux ça maintenant ! Ils vont revenir... Donne moi ton arme, tes vêtements et ton argent que j'aille acheter ce dont j'ai besoin.]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_COOLCOOL3 ()
+{
+	mission_zorai_shooting_range_a_coolcool3	[Tu rêve. Tu n'auras rien.]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_COOLCOOL2 ()
+{
+	mission_zorai_shooting_range_a_coolcool2	[Je veux bien t'aider, mais là... tu m'en demande trop]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_EVILEND ()
+{
+	mission_zorai_shooting_range_a_evilend	[Tu ne veux pas me donner ce que tu as ? Tres bien... mes hommes vont venir se servir eux mêmes dans ce cas.]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_HEIN ()
+{
+	mission_zorai_shooting_range_a_hein	[Pardon?]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_EVILLFINISH1 ()
+{
+	mission_zorai_shooting_range_a_evillfinish1	[Faites lui les poches !]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_SYS_MSG_NETHSAELEVIL_TITLE ()
+{
+	mission_zorai_shooting_range_a_sys_msg_nethsaelevil_title	[Attention !]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_SYS_MSG_NETHSAELEVIL ()
+{
+	mission_zorai_shooting_range_a_sys_msg_nethsaelevil	[C'est un piège ! Attaquez les bandits en restant à distance.]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_ENDNETHSU (bot givervar)
+{
+	mission_zorai_shooting_range_a_endnethsu	[Je suis de retour]
+}
+
+MISSION_ZORAI_SHOOTING_RANGE_A_ENDIAG ()
+{
+	mission_zorai_shooting_range_a_endiag	[Des bandits ?... Je vois.\n C'était donc un piège... Je previendrais Chiang, soit tranquille. Et bravo pour le test des jarres. J'espère qu'il t'as permis de voir combien les amplificateurs sont utiles quand ont veux maitriser la magie.]
+}
+
+MISSION_ZORAI_09_MIS_TITLE (bot giver)
+{
+	mission_zorai_09_mis_title	[Essayer une autre profession]
+}
+
+MISSION_ZORAI_09_MIS_DESC (bot giver, bot guide)
+{
+	mission_zorai_09_mis_desc	[Retourner voir $guide$]
+}
+
+MISSION_ZORAI_09_P_LDC_INTROP (bot guide)
+{
+	mission_zorai_09_p_ldc_introp	[$guide$ t'indiquera ou te rendre]
+}
+
+MISSION_ZORAI_09_GOSEEMAYOR_1 (bot guide)
+{
+	mission_zorai_09_goseemayor_1	[Suivez votre radar pour trouver $guide$]
+}
+

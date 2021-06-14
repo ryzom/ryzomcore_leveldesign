@@ -1,0 +1,166 @@
+﻿//Mission fight 1 :
+/*
+MB_FIGHT_1
+*/
+
+MB_FIGHT_1_TITLE (bot giver, race cute)
+{
+	mb_fight_1_title	[Try to teach <**$cute.p$**> who's the boss.]
+}
+
+MB_FIGHT_1_DESC (bot giver, creature_model target, int qt)
+{
+	mb_fight_1_desc		[You have to kill $target.p$, at least $qt$ of them if you want them to understand that they 
+						should move from the neighbourhood of the village.]
+}
+
+MB_FIGHT_1_STEP_1 (creature_model target, int qt)
+{
+	mb_fight_1_step_1	[Okay, we are tired of trouble caused by <**$target.p$**> over these past weeks, we need to take stronger action 
+						because they keep attacking citizens around the village. So I need some strong people to organize a punitive 
+						expedition to teach them a lesson they won't forget.\n{break}You will have to kill at least <**$qt$**> of them. But be careful, 
+						don't let their name and their size fool you, they can be really dangerous monsters if they team up.]
+}
+
+MB_FIGHT_1_END ()
+{
+	//renamed but unchanged !!!
+	mb_fight_1_end		[You killed some ? Fine. I hope they won't forget the lesson this time. Take this for your troubles.]
+}
+
+
+//Mission caft 2 :
+/*
+MB_CRAFT_1
+*/
+	
+MB_CRAFT_1_TITLE (bot giver)
+{
+	//renamed but unchanged !!!
+	mb_craft_1_title	[Find special mushroom spots]
+}
+
+MB_CRAFT_1_DESC(bot giver, bot target, item mushroom1, item mushroom2)
+{
+	mb_craft_1_desc		[Help $giver$ learn where $target$ harvests his $mushroom1.p$ and $mushroom2.p$ but don't harm him.]
+}
+ 
+MB_CRAFT_1_STEP_1 (bot target, item mushroom1, item mushroom2, place arena, place town, player p)
+{
+	mb_craft_1_step_1	[Hello $p$, I've got a "special" job for you, I must admit though, I'm a little embarrassed to ask you this.\n
+	{break}I just want to know where old $target$ harvests his $mushroom1.p$ and $mushroom2.p$. They are impossible to find around here, and I know he doesn't import them, so he must know a place around here where they grow.\n
+	And knowing him like I do, he would never tell me his secret as he thinks I'm not a true mushroom lover because I use them to craft items instead of eating them. Usually you can find him around $arena.da$ $arena$ west of $town$, and please be gentle with him, he's just a stubborn old man.]
+}
+
+MB_CRAFT_1_TALKMENU1 ()
+{
+	mb_craft_1_talkmenu1	[Talk about mushrooms]	
+}
+
+MB_CRAFT_1_STEP_2 (item mushroom, int qt, place arena)
+{
+	mb_craft_1_step_2	[Hello young homin, what do you want ? You want to know more about mushrooms ? Then you are talking to the right man.\n{break}
+						I know everything about them ! But before I share my hard earned knowledge with you, you have to show me you are a true 
+						mushroom lover. First, show me how you gather them: I often come here because there are a lot of <**$mushroom.p$**> 
+						around <**$arena.da$ $arena$**>. Pick <**$qt$**> of them.]
+}
+
+MB_CRAFT_1_STEP_3 (item mushroom, int qt, place davae)
+{
+	mb_craft_1_step_3	[Ok, your technique is good enough. Let's move on to the next step: sometimes the wind can bring spores from other 
+						regions of Atys, it's extremely rare but it does happen.\n{break}
+						Usually, no one notices, but a trained eye as mine can detect when this happens. For example, I know a small patch 
+						of <**$mushroom$**> that can be found in <**$davae$**>, just behind the weapon merchant's building.\n\n
+						Go and harvest <**$qt$**> of them and come back to show me that you can recognize them as well.]
+}
+
+MB_CRAFT_1_STEP_4 (item mushroom, place arena, player p)
+{
+	mb_craft_1_step_4	[Yes, these are indeed $mushroom$. You're quite a good mushroom hunter, $p$ !\n
+	Do you know that there is also another way for mushrooms to spread over the world from their original ecosystem ?\n
+	\n
+	{break}The vector is us, homins ! I recently found another spot of exotic mushrooms in the northwest corner of the terraces, here in $arena.da$ $arena$. I guess the spores were carried there stuck on the shoes of a <**Tryker**> warrior or something. You should go there and harvest some as they are very rare around here.]
+}
+
+MB_CRAFT_1_CUSTOM_OBJ(item rm, int qt,int ql, place arena)
+{
+	mb_craft_1_custom_obj	[Forage in the northwest corner of the terraces of $arena.da$ $arena$ until you find any exotic mushroom.]
+}
+
+MB_CRAFT_1_TALKMENU2 ()
+{
+	mb_craft_3_talkmenu2	[I know the mushroom spots.]	
+}
+
+MB_CRAFT_1_END (player p)
+{
+	mb_craft_1_end		[Excellent ! With this information I'll be able to cut my costs in half on many of my products. 
+						Thank you, $p$, I'll remember you helped me ! Here is your wages.]
+}
+
+
+//Mission know 1 :
+/*
+MB_KNOW_1
+*/
+MB_KNOW_1_TITLE (bot giver)
+{
+	mb_know_1_title		[Help me warn others about kamis !]
+
+}
+
+MB_KNOW_1_DESC (bot giver)
+{
+	mb_know_1_desc		[Sage's talk is always full of wisdom, even if $giver$ looks a little weird. You should follow his instructions and listen
+						to what he has to say about Kamis, it could reveal very useful in the future.]
+}
+
+MB_KNOW_1_STEP_1 (bot target)
+{
+	mb_know_1_step_1	[Take my advice, young homin, be wary of the Kamis. They are deceivingly strong-willed, versatile and very powerful.\n\n{break}
+						If you want to teleport you will always be safer with a Karavan Guardian who, I might add, will not infringe on your 
+						liberty of thinking as will a Kamis. I wouldn't trust a Kami as far as I could throw one. Their excessive concern for 
+						the environment is all for the love of their own well-being. Where were they during the Great Swarming while the Karavan 
+						were doing everything in their power to try to get things back under control ?\n\n
+						By the way, I've heard that $target$ was seen talking to a kami last week. As he's a guard, we mustn't let this incident 
+						bring on the wrath of Jena. Could you please ask him if this is true ?]
+}
+
+MB_KNOW_1_STEP_2 (bot giver)
+{
+	mb_know_1_step_2	[What did you say ? $giver$ wants to know if I was talking with a Kami ? 
+						Why should I do that ? And how does this man dare suspect me ?!]
+}
+
+MB_KNOW_1_TALKMENU1(bot previous)
+{
+	mb_know_1_talkmenu1	[Report about $previous$]
+}
+
+MB_KNOW_1_STEP_3 (bot target, race kitin, place avalae)
+{
+	mb_know_1_step_3	[So he denies it... Mmm, I'll keep an eye on him. Kami lovers really can't be trusted.\n{break}
+						I remember my father telling us how the Kamis stood off at first during the great swarming of <**$kitin.p$**>, 
+						no doubt keeping themselves to themselves till enough of us were slaughtered, but then as soon as the tide of battle 
+						was turning they were everywhere, directing homins through the rainbows, probably so we'd be eternally grateful to them 
+						like that old fool, $target$. Please go and ask him if his Kami friends have cured his rheumatism, he's in <**$avalae$**>.]
+}
+
+MB_KNOW_1_TALKMENU2()
+{
+	mb_know_1_talkmenu2	[Ask about rheumatism]
+}
+
+MB_KNOW_1_STEP_4 (bot giver)
+{
+	mb_know_1_step_4	[What ? My rheumatism ? Ha ! I can tell you come on the advice of $giver$. Go back to him and ask him if his Jena has been 
+						caught doing any miracles lately.]
+}
+
+MB_KNOW_1_END (race yubo)
+{
+	mb_know_1_end		[Huh! I never tire of teasing him, you only have to mention anything about a Kami and he flies off the handle.\n{break}
+						But my guess is the Kamis are preparing something, there are more and more of them nowadays and what worries me is one 
+						of these days they'll be able to impose their stringent laws on the resources. And if it weren't for the presence of the 
+						Karavan they'd be kicking us about like daft <**$yubo.p$**>, getting us to fight the Goo for them for free.]
+}

@@ -1,0 +1,65 @@
+﻿R_05_36_MIS_TITLE (bot giver)
+{
+	r_05_36_mis_title	[La capture du ragus]
+}
+
+R_05_36_MIS_DESC (bot giver, race ragus, place yrkanis)
+{
+	r_05_36_mis_desc	[The guard chief of $yrkanis$ needs a $ragus$ to help him train his animals.]
+}
+
+R_05_36_P_LDF_INTRO_1 (bot_name prospector_1_name, race ragus)
+{
+	r_05_36_p_ldf_intro_1	[$ragus.p$ are becoming a pest. But they could be useful if only we could domesticate them... Now, if you manage to bring one back here, we'll teach you a Matis magic defense technique.{break} Take this bait, and go and find $prospector_1_name$ who travels round the region. He'll tell you a good place where to find them. Be careful, this is a dangerous mission and you may need a little help.]
+}
+
+R_05_36_P_T2_PROSPECTOR_1 (bot prospector_1, race ragus)
+{
+	r_05_36_p_t2_prospector_1	[I've come to hunt $ragus$.]
+}
+
+R_05_36_P_BC_BRIEF_1 (place lieudit, race ragus)
+{
+	r_05_36_p_bc_brief_1	[Hmm, on vous envoie pour chasser $ragus.ia$ $ragus$ et le ramener au chef de la garde, c'est bien ça ?{break} Bien, je pense pouvoir vous dire où en trouver un sans trop de risques. Vous localiserez sa position sur votre boussole, il se cache souvent dans un vieux chariot en ruine près de $lieudit$.]
+}
+
+R_05_36_O_VISIT_1 (place place_hunting_1)
+{
+	r_05_36_o_visit_1	[Go to the place indicated]
+}
+
+R_05_36_O_VP_PLACE_HUNTING_1 (place place_hunting_2, bot_name ragus_2_name)
+{
+	r_05_36_o_vp_place_hunting_1	[Catch $ragus_2_name$]
+}
+
+R_05_36_O_GI_BAIT_1_1 (item i1, int qt1, int qual1, bot ragus_2, item bait_1, race ragus)
+{
+	r_05_36_o_gi_bait_1_1	[Essayez d'amadouer $ragus.da$ $ragus$ avec $bait_1.da$ $bait_1$.]
+}
+
+R_05_36_P_SM_BAIT_MISSED_1 ()
+{
+	r_05_36_p_sm_bait_missed_1	[&AMB&Raté !]
+}
+
+R_05_36_P_SM_RAGUS_1 (bot ragus_2)
+{
+	r_05_36_p_sm_ragus_1	[&AMB&$ragus_2$ seems exhausted.]
+}
+
+R_05_36_P_SM_RAGUS_2 (bot_name ragus_2_name)
+{
+	r_05_36_p_sm_ragus_2	[&AMB&The $ragus_2_name$ is tamed and will go with you to the city.]
+}
+
+R_05_36_O_ES_RAGUS_1 (bot giver, race ragus)
+{
+	r_05_36_o_es_ragus_1	[Take $ragus.da$ $ragus$ back to $giver$.]
+}
+
+R_05_36_P_BC_DEBRIEF_1 (race ragus)
+{
+	r_05_36_p_bc_debrief_1	[Bien, vous voilà de retour ! Quel beau spécimen ! Je vois que vous avez réussi à le dresser également. Je veux dire, il ne mord pas ?...{break} Parfait, nous pouvons donc essayer de le dresser sans trop de risques. Prenez ce cube d'ambre, il contient des informations sur $ragus.da$ $ragus.p$. Je vais maintenant vous enseigner une technique spéciale de défense.]
+}
+

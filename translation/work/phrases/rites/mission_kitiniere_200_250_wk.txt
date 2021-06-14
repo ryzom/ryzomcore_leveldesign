@@ -1,0 +1,2770 @@
+﻿LOCALISER_SALLE_REINE_LOCALISER_SALLE_REINE_TITRE (bot giver)
+{
+	localiser_salle_reine_localiser_salle_reine_titre	[Trouver la salle de la reine.]
+}
+
+LOCALISER_SALLE_REINE_LOCALISER_SALLE_REINE_DESCRIPTION (bot giver)
+{
+	localiser_salle_reine_localiser_salle_reine_description	[Localiser la salle de la reine dans les méandres de la kitinière.]
+}
+
+LOCALISER_SALLE_REINE_LOCALISER_SALLE_REINE_INTRO ()
+{
+	localiser_salle_reine_localiser_salle_reine_intro	[Puis-je vous aider ?]
+}
+
+LOCALISER_SALLE_REINE_K01_INSTRUCTIONS (bot givervar)
+{
+	( self.gender = male )
+		localiser_salle_reine_k01_instructions_m	[Bonjour jeune homin je me prénomme $givervar$, je suis le capitaine de ce camp de rangers. Saches qu'ici tu es à la lisière du monde que nous affrontons depuis des lustres pour notre survie et notre dignité d'homin. \n\nA quelques pas d'ici se trouve le coeur du pouvoir kitin, dans ce dédale de couloirs siège en effet l'élite de la race kitin ainsi que la reine elle même. \n\nNous recherchons de valeureux homins afin de nous aider à livrer l'ultime bataille contre cette nemesis qu'il nous faudra à tout prix anihiler. Notre avenir en dépend... {break}Si tu souhaites te joindre à nous dans notre lutte contre ce fléau que sont les kitins, saches que tu es le bienvenu. \n\nNous avons besoin d'alliés tels que toi à nos côtés. Comme tu le sais sûrement, nous nous préparons à mener des assauts au sein même de leur antre. \n\nMais il serait suicidaire de se lancer dans de telles entreprises sans en savoir plus sur notre ennemi et sans connaître le terrain sur lequel se dérouleront les affrontements.{break}C'est pourquoi nous allons commencer par envoyer plusieurs expéditions de reconnaissance, dont celle que je te propose : localiser la salle de la reine. \n\nCette expédition risque fort de s'avérer dangereuse, je te conseille donc vivement de bien la préparer. \n\nMais rappelle-toi qu'il ne s'agit en aucun cas d'un assaut, évites donc tant que cela se peut les affrontements. \n\nPeut être existe-t-il un moyen d'accéder à cette salle tout en évitant le gros de leurs troupes...]
+	( self.gender = female )
+		localiser_salle_reine_k01_instructions_f	[Bonjour jeune homine je me prénomme $givervar$, je suis le capitaine de ce camp de rangers. Saches qu'ici tu es à la lisière du monde que nous affrontons depuis des lustres pour notre survie et notre dignité d'homin. \n\nA quelques pas d'ici se trouve le coeur du pouvoir kitin, dans ce dédale de couloirs siège en effet l'élite de la race kitin ainsi que la reine elle même. \n\nNous recherchons de valeureux homins afin de nous aider à livrer l'ultime bataille contre cette nemesis qu'il nous faudra à tout prix anihiler. Notre avenir en dépend... {break}Si tu souhaites te joindre à nous dans notre lutte contre ce fléau que sont les kitins, saches que tu es la bienvenue. \n\nNous avons besoin d'alliées telles que toi à nos côtés. Comme tu le sais sûrement, nous nous préparons à mener des assauts au sein même de leur antre. \n\nMais il serait suicidaire de se lancer dans de telles entreprises sans en savoir plus sur notre ennemi et sans connaître le terrain sur lequel se dérouleront les affrontements.{break}C'est pourquoi nous allons commencer par envoyer plusieurs expéditions de reconnaissance, dont celle que je te propose : localiser la salle de la reine. \n\nCette expédition risque fort de s'avérer dangereuse, je te conseille donc vivement de bien la préparer. \n\nMais rappelle-toi qu'il ne s'agit en aucun cas d'un assaut, évites donc tant que cela se peut les affrontements. \n\nPeut être existe-t-il un moyen d'accéder à cette salle tout en évitant le gros de leurs troupes...]
+}
+
+LOCALISER_SALLE_REINE_KM01_OVERLOAD ()
+{
+	localiser_salle_reine_km01_overload	[Aventurez-vous dans l'antre des kitins et localisez la salle de la reine.]
+}
+
+LOCALISER_SALLE_REINE_KM01_OK ()
+{
+	localiser_salle_reine_km01_ok	[Vous avez trouvé la salle de la reine !]
+}
+
+LOCALISER_SALLE_REINE_KM02_OK ()
+{
+	localiser_salle_reine_km02_ok	[Vous avez trouvé la salle de la reine !]
+}
+
+LOCALISER_SALLE_REINE_KM03_OK ()
+{
+	localiser_salle_reine_km03_ok	[Vous avez trouvé la salle de la reine !]
+}
+
+LOCALISER_SALLE_REINE_KM01_2_OVERLOAD (bot givervar)
+{
+	localiser_salle_reine_km01_2_overload	[Maintenant que vous avez localisé la salle de la reine, retournez voir $givervar$ pour lui faire votre rapport.]
+}
+
+LOCALISER_SALLE_REINE_KM01_PHRASE (bot givervar)
+{
+	localiser_salle_reine_km01_phrase	[J'ai trouvé la salle de la reine.]
+}
+
+LOCALISER_SALLE_REINE_KM01_FINIE ()
+{
+	localiser_salle_reine_km01_finie	[Excellent ! Ce n'était qu'une des premières étapes, mais cela s'annonce plutôt bien. Leurs lignes de défense sont nombreuses et fournies mais je n'ai aucun doute sur le courage dont feront preuve les homins lors de l'affrontement final. \n\nVoici ta récompense pour tes efforts. Evidemment, nous ne sommes pas au bout de nos peines, alors n'hésite pas à revenir me voir pour d'autres missions.]
+}
+
+LOCALISER_SALLE_REINE_P_REPERAGE_FAILED (bot givervar)
+{
+	localiser_salle_reine_p_reperage_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+LOCALISER_SALLE_REINE_P_REPERAGE_FAILED_RECEIVE (bot givervar)
+{
+	localiser_salle_reine_p_reperage_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+LOCALISER_SALLE_REINE_P_REPERAGE_INVENTORY_OK ()
+{
+	localiser_salle_reine_p_reperage_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+LE_TROUPEAU_DES_KITINS_KM02_TITLE (bot giver)
+{
+	le_troupeau_des_kitins_km02_title	[Le troupeau des kitins.]
+}
+
+LE_TROUPEAU_DES_KITINS_KM02_DESC (bot giver)
+{
+	le_troupeau_des_kitins_km02_desc	[Explorer l'antre des kitins et trouver leur réserve de nourriture.]
+}
+
+LE_TROUPEAU_DES_KITINS_KM02_INSTRUCTIONS ()
+{
+	le_troupeau_des_kitins_km02_instructions	[Les kitins de l'antre sont nombreux et puissants. Il est fort probable qu'ils aient un troupeau de bétail, qu'ils utilisent pour se nourrir. \n\nD'ailleurs, les kitins qui partent à la chasse, ceux qu'on appelle les kinchers, ont des périodes de repos lors desquelles ils ne sortent pas : il est donc impossible que l'antre puisse survivre en autarcie sans une réserve de nourriture.{break}Il serait bon que nous puissions vérifier l'existence de ce troupeau. \n\nTa mission est d'explorer la kitinière pour trouver ce troupeau. \nNous pensons qu'il n'est pas loin de l'entrée...]
+}
+
+LE_TROUPEAU_DES_KITINS_KM02_OVERLOAD (place visite_salle_troupeau)
+{
+	le_troupeau_des_kitins_km02_overload	[Confirmer l'existence d'un troupeau servant de nourriture aux kitins, en recherchant la salle où celui-ci est entreposé.]
+}
+
+LE_TROUPEAU_DES_KITINS_KM02_COMPLETE ()
+{
+	le_troupeau_des_kitins_km02_complete	[Vous avez trouvé le troupeau des kitins.]
+}
+
+LE_TROUPEAU_DES_KITINS_KM02_FINISH_OVERLOAD (bot givervar)
+{
+	le_troupeau_des_kitins_km02_finish_overload	[Retournez voir $givervar$ pour lui apprendre l'existence du garde-manger kitin.]
+}
+
+LE_TROUPEAU_DES_KITINS_KM02_FINISH_PHRASE (bot givervar)
+{
+	le_troupeau_des_kitins_km02_finish_phrase	[J'ai trouvé le troupeau des kitins. Voici sa localisation...]
+}
+
+LE_TROUPEAU_DES_KITINS_KM2_FINISH_REWARD (bot player)
+{
+	le_troupeau_des_kitins_km2_finish_reward	[Il existe donc bien un garde-manger ? Bien joué $player$, tu viens de mettre au jour l'un de leur point faible... \n\nNous allons peut-être pouvoir frapper les kitins à partir de ce point. Voici une récompense bien méritée...]
+}
+
+LA_SALLE_DES_OEUFS_KM03_TITLE (bot giver)
+{
+	la_salle_des_oeufs_km03_title	[La salle des oeufs.]
+}
+
+LA_SALLE_DES_OEUFS_KM03_DESC (bot giver)
+{
+	la_salle_des_oeufs_km03_desc	[Pénétrer dans la kitinière et trouver la salle où sont entreposés les oeufs kitins.]
+}
+
+LA_SALLE_DES_OEUFS_KM03_INSTRUCTIONS ()
+{
+	la_salle_des_oeufs_km03_instructions	[Les kitins naissent à partir d'oeufs; il est très probable que leur antre dispose d'une salle spécialement réservée à la garde de ces rejetons. \n\nTa mission est de localiser cette salle, car détruire ces oeufs serait un moyen efficace d'affaiblir les kitins.]
+}
+
+LA_SALLE_DES_OEUFS_KM03_OVERLOAD (place visite_salle_oeufs)
+{
+	la_salle_des_oeufs_km03_overload	[Trouvez la salle des oeufs dans l'antre des kitins.]
+}
+
+LA_SALLE_DES_OEUFS_KM03_OVERLOAD1_1 (creature_model oeuf, place visite_salle_oeufs)
+{
+	la_salle_des_oeufs_km03_overload1_1	[Ciblez un oeuf.]
+}
+
+LA_SALLE_DES_OEUFS_KM03_COMPLETE ()
+{
+	la_salle_des_oeufs_km03_complete	[C'est bien un oeuf de Kitin. Ceci est donc bien la salle des oeufs...]
+}
+
+LA_SALLE_DES_OEUFS_KM03_FINISHOVERLOAD (bot givervar)
+{
+	la_salle_des_oeufs_km03_finishoverload	[Retournez voir $givervar$ pour l'informer de la localisation de la salle des oeufs.]
+}
+
+LA_SALLE_DES_OEUFS_KM03_FINISHPHRASE (bot givervar)
+{
+	la_salle_des_oeufs_km03_finishphrase	[J'ai trouvé l'emplacement de la salle des oeufs.]
+}
+
+LA_SALLE_DES_OEUFS_KM03_REWARD ()
+{
+	la_salle_des_oeufs_km03_reward	[Voilà une bonne chose de faite. Nous allons bientôt pouvoir agir, maintenant que nous savons où se cache notre cible. Bon travail ! {break}Reçois ce crystal catalyseur, il pourra sûrement t'être utile au sein de l'antre.]
+}
+
+LA_SALLE_DES_OEUFS_P_REPERAGE_FAILED (bot givervar)
+{
+	la_salle_des_oeufs_p_reperage_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+LA_SALLE_DES_OEUFS_P_REPERAGE_FAILED_RECEIVE (bot givervar)
+{
+	la_salle_des_oeufs_p_reperage_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+LA_SALLE_DES_OEUFS_P_REPERAGE_INVENTORY_OK ()
+{
+	la_salle_des_oeufs_p_reperage_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+LES_MINES_KITIN_KM04_TITLE (bot giver)
+{
+	les_mines_kitin_km04_title	[Les mines de la kitinière.]
+}
+
+LES_MINES_KITIN_KM04_DESC (bot giver)
+{
+	les_mines_kitin_km04_desc	[Trouver une mine dans l'antre des kitins et en ramener des matières premières.]
+}
+
+LES_MINES_KITIN_KM04_INSTRUCTIONS ()
+{
+	les_mines_kitin_km04_instructions	[Ils ne fabriquent peut-être pas d'objet, mais les kitins utilisent les ressources du sol d'Atys à leur façon. Et nous soupçonnons l'existence d'une mine dans leur antre. \n\nLes matériaux qu'il renferme peuvent nous aider à fabriquer de nouveaux objets plus solides dont des armures plus puissantes. Ton objectif est de trouver cette mine, celle-ci d'après nos informations se situerait à l'Est de leur antre. \n\nBien sûr, il faudra aussi s'occuper des gardes de la mine, ceux-ci doivent jalousement la garder. Donc ça risque de ne pas être une partie de plaisir.]
+}
+
+LES_MINES_KITIN_KM04_OVERLOAD (place visite_salle_anciennes_mines)
+{
+	les_mines_kitin_km04_overload	[Trouvez les mines des Kitins.]
+}
+
+LES_MINES_KITIN_KM04_COMPLETE ()
+{
+	les_mines_kitin_km04_complete	[On dirait bien une mine. Maintenant, vous devez effectuer un forage pour trouver des ressources.]
+}
+
+LES_MINES_KITIN_KM04_STEP2_OVERLOAD ()
+{
+	les_mines_kitin_km04_step2_overload	[Effectuez un forage près de l'entrée de la mine.]
+}
+
+LES_MINES_KITIN_KM04_FINISH_OVERLOAD (bot givervar)
+{
+	les_mines_kitin_km04_finish_overload	[Apporter les ressources forées dans la mine des kitins à $givervar$.]
+}
+
+LES_MINES_KITIN_KM04_SPAWNMISSION ()
+{
+	les_mines_kitin_km04_spawnmission	[Ainsi, les kitins ont également une mine dans leur antre. Cela nous offre de nouvelles possibilités! bon travail...{break}Cependant, pour completer ta mission tu vas devoir me ramener des echantillons de la mine que tu as decouverte. \n\nEchantillons qui nous permettront de jauger du potentiel de la mine...]
+}
+
+DETRUIRE_LE_GARDE_MANGER_KM05_TITLE (bot giver)
+{
+	detruire_le_garde_manger_km05_title	[Détruire le garde-manger.]
+}
+
+DETRUIRE_LE_GARDE_MANGER_KM05_DESC (bot giver)
+{
+	detruire_le_garde_manger_km05_desc	[Eliminer le bétail du garde-manger kitin ainsi que ses gardes.]
+}
+
+DETRUIRE_LE_GARDE_MANGER_KM05_INSTRUCTIONS ()
+{
+	detruire_le_garde_manger_km05_instructions	[Ah te revoila, après nous avoir aidé à découvrir le fonctionnement de la kitinière en dévoilant l'existence d'un garde-manger...\nTu vas enfin pouvoir contribuer directement à l'effort de guerre. \n\nLe prochain objectif est simple : exterminer le troupeau et les kipees qui en ont la garde. Cette salle n'est pas la plus difficile d'accès, cependant je te conseille de prendre garde toi et tes acolytes pourriez très facilement tomber dans une embuscade. \n\nForme une équipe solide et pensez à vous armer comme il faut.]
+}
+
+DETRUIRE_LE_GARDE_MANGER_KM05_OVERLOAD (place visite_salle_troupeau)
+{
+	detruire_le_garde_manger_km05_overload	[Retourner dans le garde-manger de la kitinière pour y tuer le troupeau.]
+}
+
+DETRUIRE_LE_GARDE_MANGER_KM05_STEP2_OVERLOAD ()
+{
+	detruire_le_garde_manger_km05_step2_overload	[Tuez le troupeau de bétail ainsi que ses gardes.]
+}
+
+DETRUIRE_LE_GARDE_MANGER_KM05_COMPLETE ()
+{
+	detruire_le_garde_manger_km05_complete	[Vous avez éliminé les kitins et le bétail du garde-manger.]
+}
+
+DETRUIRE_LE_GARDE_MANGER_KM05_FINISH_OVERLOAD (bot givervar)
+{
+	detruire_le_garde_manger_km05_finish_overload	[Retournez voir $givervar$ afin de lui faire votre rapport concernant l'anéantissement du troupeau.]
+}
+
+DETRUIRE_LE_GARDE_MANGER_KM05_FINISH_PHRASE (bot givervar)
+{
+	detruire_le_garde_manger_km05_finish_phrase	[J'ai exterminé le troupeau et ses gardiens.]
+}
+
+DETRUIRE_LE_GARDE_MANGER_KM05_REWARD ()
+{
+	detruire_le_garde_manger_km05_reward	[Beau travail ! Les kitins devraient se montrer moins combatifs avec le ventre vide. \nEt voici la récompense qui t'est due. \n\nSurtout, n'hésite pas à revenir me voir pour d'autres missions; nous avons toujours besoin de volontaires.]
+}
+
+DETRUIRE_LE_GARDE_MANGER_P_REPERAGE_FAILED (bot givervar)
+{
+	detruire_le_garde_manger_p_reperage_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+DETRUIRE_LE_GARDE_MANGER_P_REPERAGE_FAILED_RECEIVE (bot givervar)
+{
+	detruire_le_garde_manger_p_reperage_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+DETRUIRE_LE_GARDE_MANGER_P_REPERAGE_INVENTORY_OK ()
+{
+	detruire_le_garde_manger_p_reperage_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+LA_DESTRUCTION_DES_OEUFS_KM03_TITLE (bot giver)
+{
+	la_destruction_des_oeufs_km03_title	[Détruire les oeufs.]
+}
+
+LA_DESTRUCTION_DES_OEUFS_KM03_DESC (bot giver)
+{
+	la_destruction_des_oeufs_km03_desc	[Détruire les oeufs entreposés dans la salle précédemment découverte.]
+}
+
+LA_DESTRUCTION_DES_OEUFS_KM06_INSTRUCTIONS ()
+{
+	la_destruction_des_oeufs_km06_instructions	[A quoi bon exterminer des kitins si leur descendance est prête à prendre la relève ? \nLes oeufs, eux, sont faciles à détruire. Nous devons nous concentrer sur les oeufs avant de frapper les adultes : ce sera ta prochaine mission. \n\nBien sûr, il faudra pénétrer dans la salle des oeufs qui est bien gardée, alors ce ne sera pas facile.]
+}
+
+LA_DESTRUCTION_DES_OEUFS_KM06_OVERLOAD (place visite_salle_oeufs)
+{
+	la_destruction_des_oeufs_km06_overload	[Retrouvez la salle des oeufs de la kitinière et détruisez les oeufs s'y trouvant.]
+}
+
+LA_DESTRUCTION_DES_OEUFS_KM06_STEP2_OVERLOAD_1 (creature_model oeuf, int q1)
+{
+	la_destruction_des_oeufs_km06_step2_overload_1	[Détruisez les oeufs.]
+}
+
+LA_DESTRUCTION_DES_OEUFS_KM06_FINISH_OVERLOAD (bot givervar)
+{
+	la_destruction_des_oeufs_km06_finish_overload	[Retournez voir $givervar$ pour lui confirmer que votre mission est remplie..]
+}
+
+LA_DESTRUCTION_DES_OEUFS_KM06_FINISH_PHRASE (bot givervar)
+{
+	la_destruction_des_oeufs_km06_finish_phrase	[Tous les oeufs de la salle ont été détruits.]
+}
+
+LA_DESTRUCTION_DES_OEUFS_KM06_FINISH_REWARD ()
+{
+	la_destruction_des_oeufs_km06_finish_reward	[J'ai dans l'idée que la prochaine génération de kitins aura un peu de retard ! \nTrès bon travail, voici ta récompense.]
+}
+
+LA_DESTRUCTION_DES_OEUFS_P_REPERAGE_FAILED (bot givervar)
+{
+	la_destruction_des_oeufs_p_reperage_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+LA_DESTRUCTION_DES_OEUFS_P_REPERAGE_FAILED_RECEIVE (bot givervar)
+{
+	la_destruction_des_oeufs_p_reperage_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+LA_DESTRUCTION_DES_OEUFS_P_REPERAGE_INVENTORY_OK ()
+{
+	la_destruction_des_oeufs_p_reperage_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+LA_NOUVELLE_MINE_KM4_TITLE (bot giver)
+{
+	la_nouvelle_mine_km4_title	[La nouvelle mine de la kitinière.]
+}
+
+LA_NOUVELLE_MINE_KM7_DESC (bot giver)
+{
+	la_nouvelle_mine_km7_desc	[Rechercher la mine obscure de l'antre des kitins et y effectuer un forage.]
+}
+
+LA_NOUVELLE_MINE_KM07_INSTRUCTIONS ()
+{
+	la_nouvelle_mine_km07_instructions	[La mine que nous avons déjà découverte est très peu exploitée, et les matières premières y sont rares. \n\nIl est certain que les kitins ont accès à une autre mine, beaucoup plus riche. Nos éclaireurs nous ont parlé d'un dédale de galeries au delà de la salle des oeufs... \n\nTa mission consiste à trouver cette mine et à en ramener des ressources.]
+}
+
+LA_NOUVELLE_MINE_KM07_OVERLOAD (place visite_salle_nouvelles_mines)
+{
+	la_nouvelle_mine_km07_overload	[Trouvez la nouvelle mine de la kitinière.]
+}
+
+LA_NOUVELLE_MINE_KM07_COMPLETE ()
+{
+	la_nouvelle_mine_km07_complete	[Cela semble bien être la nouvelle mine. Il faudrait maintenant trouver un endroit où forer.]
+}
+
+LA_NOUVELLE_MINE_KM07_STEP2_OVERLOAD_1 (item i1, int qt1, int qual1)
+{
+	la_nouvelle_mine_km07_step2_overload_1	[Effectuez un forage près de l'entrée des mines obscures.]
+}
+
+LA_NOUVELLE_MINE_KM07_FINISH_OVERLOAD (bot givervar)
+{
+	la_nouvelle_mine_km07_finish_overload	[Apporter l'échantillon de la nouvelle mine des kitins à $givervar$.]
+}
+
+LA_NOUVELLE_MINE_KM07_FINISH_PHRASE (bot givervar)
+{
+	la_nouvelle_mine_km07_finish_phrase	[J'ai trouvé la nouvelle mine de l'antre des kitins. Voici le résultat d'un forage.]
+}
+
+LA_NOUVELLE_MINE_KM07_FINISH_REWARD (bot player)
+{
+	la_nouvelle_mine_km07_finish_reward	[Intéressant. Il y a donc beaucoup plus de kitins ouvriers que dans l'ancienne ? Logique, elle est bien plus riche. Je te remercie pour ces informations, $player$, prends ces quelques ressources de qualité.]
+}
+
+CARTOGRAPHIER_AILE_EST_KM08_TITLE (bot giver)
+{
+	cartographier_aile_est_km08_title	[Cartographier l'aile Est.]
+}
+
+CARTOGRAPHIER_AILE_EST_KM08_DESC (bot giver)
+{
+	cartographier_aile_est_km08_desc	[Etablir une carte de toute l'aile Est de la kitinière.]
+}
+
+CARTOGRAPHIER_AILE_EST_KM08_INSTRUCTIONS ()
+{
+	cartographier_aile_est_km08_instructions	[Nous allons passer aux choses sérieuses. Nous allons très prochainement pouvoir mener des assauts meurtriers au coeur même de l'antre des kitins. \n\nMais d'abord, il nous faut un repérage précis et complet de cet antre. \n\nNous allons nous occuper en premier lieu de la partie Est, qui semble être le principal chemin vers la salle de la Reine.{break}Tu dois impérativement constituer une équipe solide et lourdement armée, car vous affronterez des kitins très féroces. \n\nIgnore cet avertissement et je t'assure que toi et tes camarades n'en reviendrez pas vivants. \n\nPrend ce parchemin pour y dessiner la carte.]
+}
+
+CARTOGRAPHIER_AILE_EST_P_1DEFENSES_FAILED (bot givervar)
+{
+	cartographier_aile_est_p_1defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+CARTOGRAPHIER_AILE_EST_P_1DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	cartographier_aile_est_p_1defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+CARTOGRAPHIER_AILE_EST_P_1DEFENSES_INVENTORY_OK ()
+{
+	cartographier_aile_est_p_1defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+CARTOGRAPHIER_AILE_EST_KM08_OVERLOAD ()
+{
+	cartographier_aile_est_km08_overload	[Visitez la zone Est de la kitinière dans ses moindres recoins, afin d'en produire une carte précise.]
+}
+
+CARTOGRAPHIER_AILE_EST_KM08_REPERE1 ()
+{
+	cartographier_aile_est_km08_repere1	[Vous avez situé le garde-manger sur votre parchemin.]
+}
+
+CARTOGRAPHIER_AILE_EST_KM08_REPERE2 ()
+{
+	cartographier_aile_est_km08_repere2	[Vous avez situé l'ancienne mine sur votre parchemin.]
+}
+
+CARTOGRAPHIER_AILE_EST_KM08_REPERE3 ()
+{
+	cartographier_aile_est_km08_repere3	[Vous avez situé la salle des princes sur votre parchemin.]
+}
+
+CARTOGRAPHIER_AILE_EST_KM08_REPERE4 ()
+{
+	cartographier_aile_est_km08_repere4	[Vous avez situé la salle de la reine sur votre parchemin.]
+}
+
+CARTOGRAPHIER_AILE_EST_KM08_REPERE5 ()
+{
+	cartographier_aile_est_km08_repere5	[Vous avez établi une carte fidèle du Sud de la mine.]
+}
+
+CARTOGRAPHIER_AILE_EST_KM08_REPERE6 ()
+{
+	cartographier_aile_est_km08_repere6	[Vous avez établi une carte fidèle du Nord de la mine.]
+}
+
+CARTOGRAPHIER_AILE_EST_KM08_COMPLETE ()
+{
+	cartographier_aile_est_km08_complete	[Vous avez établi une carte convenable de l'aile Est de la kitinière.]
+}
+
+CARTOGRAPHIER_AILE_EST_KM08_OVRLOADTALK (bot giver)
+{
+	cartographier_aile_est_km08_ovrloadtalk	[J'ai quadrillé toute la partie Est de la kitinière.]
+}
+
+CARTOGRAPHIER_AILE_EST_P_T2_SCROLL_LOST (bot givervar)
+{
+	cartographier_aile_est_p_t2_scroll_lost	[J'ai maladroitement égaré le parchemin pour tracer la carte de la kitinière.]
+}
+
+CARTOGRAPHIER_AILE_EST_P_LDC_SCROLL_LOST ()
+{
+	cartographier_aile_est_p_ldc_scroll_lost	[Je vois ... Bien, en voici un autre, fais attention cette fois.]
+}
+
+CARTOGRAPHIER_AILE_EST_KM08_FINISH_PHRASE_1 (item i1, int qt1, int qual1, bot givervar)
+{
+	cartographier_aile_est_km08_finish_phrase_1	[Retournez voir $givervar$ afin de lui remettre le parchemin contenant la carte.]
+}
+
+CARTOGRAPHIER_AILE_EST_KM08_FINISH_REWARD (bot player)
+{
+	cartographier_aile_est_km08_finish_reward	[Nos connaissances concernant la kitinière grandissent de jour en jour grâce à toi $player$. \n\nNous pourrons bientôt envisager un assaut direct contre les kitins. Merci pour ton aide, prends ces quelques ressources tu l'as bien mérité.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_TITLE (bot giver)
+{
+	cartographier_integralite_km09_title	[Cartographier la kitinière.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_DESC (bot giver)
+{
+	cartographier_integralite_km09_desc	[Etablir une carte de l'intégralité de la kitinière.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_INSTRUCTIONS ()
+{
+	cartographier_integralite_km09_instructions	[Nous avons pu dresser des cartes des différentes parties de l'antre des kitins et en connaissons donc l'essentiel, mais il reste des zones d'ombre quant au fonctionnement exact de notre ennemi. \n\nNous devons donc envoyer une équipe afin de cartographier l'intégralité de cet antre.{break}Autant te dire que cette mission sera des plus dangereuses. Seuls les homins les plus forts et les plus courageux d'entre nous pourraient assurer une telle expédition. \n\nBien qu'il ne s'agisse pas d'une offensive, l'affrontement est inévitable, c'est une certitude. Entoure-toi des meilleurs guerriers que tu puisses trouver et armez-vous jusqu'aux dents. \n\nJe ne suis pas sûr que cela suffise, mais sans ça, vous n'avez pas la moindre chance.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_P_1DEFENSES_FAILED (bot givervar)
+{
+	cartographier_integralite_p_1defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_P_1DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	cartographier_integralite_p_1defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+CARTOGRAPHIER_INTEGRALITE_P_1DEFENSES_INVENTORY_OK ()
+{
+	cartographier_integralite_p_1defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_OVERLOAD ()
+{
+	cartographier_integralite_km09_overload	[Explorez la kitinière dans ses moindres recoins pour en établir une carte fiable.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_REPERE1 ()
+{
+	cartographier_integralite_km09_repere1	[Vous avez situé le garde-manger sur votre parchemin.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_REPERE2 ()
+{
+	cartographier_integralite_km09_repere2	[Vous avez situé l'ancienne mine sur votre parchemin.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_REPERE3 ()
+{
+	cartographier_integralite_km09_repere3	[Vous avez situé la salle des princes sur votre parchemin.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_REPERE4 ()
+{
+	cartographier_integralite_km09_repere4	[Vous avez situé les mines obscures sur votre parchemin.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_REPERE5 ()
+{
+	cartographier_integralite_km09_repere5	[Vous avez situé la salle des oeufs sur votre parchemin.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_REPERE6 ()
+{
+	cartographier_integralite_km09_repere6	[Vous avez situé la salle de la reine sur votre parchemin.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_REPERE7 ()
+{
+	cartographier_integralite_km09_repere7	[Vous avez établi une carte fidèle du côté Est de la salle de la reine.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_REPERE8 ()
+{
+	cartographier_integralite_km09_repere8	[Vous avez établi une carte fidèle du Sud de la mine.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_REPERE9 ()
+{
+	cartographier_integralite_km09_repere9	[Vous avez établi une carte fidèle du Nord de la mine.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_REPERE10 ()
+{
+	cartographier_integralite_km09_repere10	[Vous avez établi une carte fidèle de l'Est des mines obscures.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_REPERE11 ()
+{
+	cartographier_integralite_km09_repere11	[Vous avez établi une carte fidèle de l'Ouest des mines obscures.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_REPERE12 ()
+{
+	cartographier_integralite_km09_repere12	[Vous avez établi une carte fidèle du Sud des mines obscures.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_REPERE13 ()
+{
+	cartographier_integralite_km09_repere13	[Vous avez établi une carte fidèle de l'entrée de la kitinière.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_COMPLETE ()
+{
+	cartographier_integralite_km09_complete	[Vous avez établi une carte de la kitinière toute entière.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_OVRLOADTALK (bot giver)
+{
+	cartographier_integralite_km09_ovrloadtalk	[J'ai quadrillé l'ensemble de la kitinière.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM08_FINISH_PHRASE_1 (item i1, int qt1, int qual1, bot givervar)
+{
+	cartographier_integralite_km08_finish_phrase_1	[Retournez voir $givervar$ afin de lui remettre le parchemin contenant la carte.]
+}
+
+CARTOGRAPHIER_INTEGRALITE_KM09_FINISH_REWARD (bot player)
+{
+	cartographier_integralite_km09_finish_reward	[Excellent, $player$ ! Maintenant que nous savons tout sur les salles de la kitinière, il va être temps de passer à l'attaque bien que nous manquions encore d'informations sur les gardes de cet antre. {break}Reçois ces points de faction karavan en signe de notre gratitude.]
+}
+
+ANALYSER_MOUVEMENTS_KM10_TITLE (bot giver)
+{
+	analyser_mouvements_km10_title	[Repérage dans la kitinière.]
+}
+
+ANALYSER_MOUVEMENTS_KM10_DESC (bot giver)
+{
+	analyser_mouvements_km10_desc	[Effectuer un repérage des mouvements des patrouilles kitins.]
+}
+
+ANALYSER_MOUVEMENTS_KM10_INSTRUCTIONS ()
+{
+	analyser_mouvements_km10_instructions	[Après avoir repérer le coeur névralgique de la kitnière, à savoir la salle de la reine. Nous allons analyser les mouvements des gardes kitins, en vue de lancer une grande attaque. \n\nNous pensons qu'il existe au sein de la kitinière un chef des gardes : l'éliminer nous permettrait d'affaiblir les défenses de la reine. \n\nPour le moment, la mission consiste à le trouver et à analyser le chemin qu'il traverse.]
+}
+
+ANALYSER_MOUVEMENTS_KM10_OVERLOAD_1 (creature_model kinkoo, place place)
+{
+	analyser_mouvements_km10_overload_1	[Trouvez le chef des gardes des kitins et analysez ses mouvements.]
+}
+
+ANALYSER_MOUVEMENTS_KM10_WAIT_OVERLOAD (bot_name givervar, int qt, creature_model kinkoo)
+{
+	analyser_mouvements_km10_wait_overload	[Continuez à analyser les mouvements de $kinkoo$ pendant un moment.]
+}
+
+ANALYSER_MOUVEMENTS_KM10_STEP2_OVERLOAD_1 (creature_model kinkoo, place place)
+{
+	analyser_mouvements_km10_step2_overload_1	[Ciblez $kinkoo$ une dernière fois pour vous assurer de son trajet.]
+}
+
+ANALYSER_MOUVEMENTS_KM10_FINISH_OVERLOAD (bot givervar, creature_model kinkoo)
+{
+	analyser_mouvements_km10_finish_overload	[Allez faire votre rapport concernant $kinkoo$ à $givervar$.]
+}
+
+ANALYSER_MOUVEMENTS_KM10_PHRASE_FINISH (bot givervar)
+{
+	analyser_mouvements_km10_phrase_finish	[J'ai trouvé le chef des gardes de la kitinière...]
+}
+
+ANALYSER_MOUVEMENTS_KM10_FINISH_REWARD ()
+{
+	( self.gender = male )
+		analyser_mouvements_km10_finish_reward_m	[Parfait ! Nous allons bientôt tenter de l'éliminer pour affaiblir l'antre des kitins, nous aurons d'ailleurs grand besoin de valeureux homins dans ton genre. \n\nEn attendant, je t'offre ces ressources de qualité en guise de récompense.]
+	( self.gender = female )
+		analyser_mouvements_km10_finish_reward_f	[Parfait ! Nous allons bientôt tenter de l'éliminer pour affaiblir l'antre des kitins, nous aurons d'ailleurs grand besoin de valeureuses homines dans ton genre. \n\nEn attendant, je t'offre ces ressources de qualité en guise de récompense.]
+}
+
+ANALYSER_MOUVEMENTS_P_REPERAGE_FAILED (bot givervar)
+{
+	analyser_mouvements_p_reperage_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+ANALYSER_MOUVEMENTS_P_REPERAGE_FAILED_RECEIVE (bot givervar)
+{
+	analyser_mouvements_p_reperage_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+ANALYSER_MOUVEMENTS_P_REPERAGE_INVENTORY_OK ()
+{
+	analyser_mouvements_p_reperage_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+ELIMINER_KINKOO_KM11_TITLE (bot giver)
+{
+	eliminer_kinkoo_km11_title	[Eliminer le chef des gardes.]
+}
+
+ELIMINER_KINKOO_KM11_DESC (bot giver, creature_model kinkoo)
+{
+	eliminer_kinkoo_km11_desc	[Retrouver et éliminer le chef des gardes de la kitinière, $kinkoo$.]
+}
+
+ELIMINER_KINKOO_KM11_INSTRUCTIONS (creature_model kinkoo)
+{
+	eliminer_kinkoo_km11_instructions	[Il est maintenant temps d'utiliser les informations que tu as collectées et de les mettre à profit dans notre offensive contre la kitinière. \nPour cela, nous allons éliminer son chef des gardes, $kinkoo$. \n\nTâche de trouver le meilleur endroit pour le tuer. Il faudrait essayer de l'isoler, lui et son escorte, afin de ne pas attirer l'attention d'autres gardes.]
+}
+
+ELIMINER_KINKOO_KM11_OVERLOAD_1 (creature_model kinkoo, int q1)
+{
+	eliminer_kinkoo_km11_overload_1	[Tuez Kinkoo, le chef des gardes de l'antre.]
+}
+
+ELIMINER_KINKOO_KM11_FINISH_OVERLOAD (bot givervar, creature_model kinkoo)
+{
+	eliminer_kinkoo_km11_finish_overload	[Signalez à $givervar$ que vous avez réussi à tuer $kinkoo$.]
+}
+
+ELIMINER_KINKOO_KM11_PHRASE_FINISH (bot givervar, creature_model kinkoo)
+{
+	eliminer_kinkoo_km11_phrase_finish	[$kinkoo$ a été abattu.]
+}
+
+ELIMINER_KINKOO_KM11_FINISH_REWARD (bot player)
+{
+	eliminer_kinkoo_km11_finish_reward	[Nous avançons chaque jour davantage. L'heure de la vengeance des peuples homins approche enfin... \n\nLe moment du grand assaut est imminent, la fébrilité est palpable mais l'envie d'en découdre avec les kitins l'est encore plus. \n\nTu nous es d'une grande aide, $player$, cette récompense est à la hauteur de tes exploits.]
+}
+
+ELIMINER_KINKOO_P_KINKOO_FAILED (bot givervar)
+{
+	eliminer_kinkoo_p_kinkoo_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+ELIMINER_KINKOO_P_KINKOO_FAILED_RECEIVE (bot givervar)
+{
+	eliminer_kinkoo_p_kinkoo_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+ELIMINER_KINKOO_P_KINKOO_INVENTORY_OK ()
+{
+	eliminer_kinkoo_p_kinkoo_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+TUER_LES_PRINCES_KM12_TITLE (bot giver)
+{
+	tuer_les_princes_km12_title	[Tuer les princes de la kitinière.]
+}
+
+TUER_LES_PRINCES_KM12_DESC (bot giver)
+{
+	tuer_les_princes_km12_desc	[Vaincre les princes kitins de l'antre.]
+}
+
+TUER_LES_PRINCES_KM12_INSTRUCTIONS (bot player)
+{
+	tuer_les_princes_km12_instructions	[Nos plans se déroulent à merveille grâce à nos nouvelles recrues, dont tu fais partie $player$. Les princes et princesses kitins sont un danger pour nous. \n\nMême si la reine meurt, ils pourront prendre la relève. De plus, ils occupent un rôle très important au sein de l'antre. \nC'est pourquoi nous devons absolument les tuer, maintenant que leur première ligne de defense à été défaite. {break}Mais ce ne sera pas une tâche facile. Les princes sont très puissants, mais en plus, ils ont chacun leur escorte personnelle. \n\nSi tu décides de les attaquer, il te faudra de nombreux alliés et beaucoup de courage et d'astuce.]
+}
+
+TUER_LES_PRINCES_KM12_OVERLOAD ()
+{
+	tuer_les_princes_km12_overload	[Tuez les princes de la kitinière. Ils se trouvent autour de la salle des princes, loin dans l'antre.]
+}
+
+TUER_LES_PRINCES_KM12_FINISH_OVERLOAD (bot givervar)
+{
+	tuer_les_princes_km12_finish_overload	[Annoncez votre succès à $givervar$.]
+}
+
+TUER_LES_PRINCES_KM12_PHRASE_FINISH (bot givervar)
+{
+	tuer_les_princes_km12_phrase_finish	[Les princes de la kitinière ne sont plus.]
+}
+
+TUER_LES_PRINCES_KM12_FINISH_REWARD (bot player)
+{
+	tuer_les_princes_km12_finish_reward	[La route est donc ouverte. L'affrontement décisif va enfin avoir lieu. \n\nTes exploits nous impressionnent beaucoup, $player$. \nVoici une récompense qui honore ton exploit à tout jamais gravé dans nos mémoires]
+}
+
+TUER_LES_PRINCES_P_PRINCES_FAILED (bot givervar)
+{
+	tuer_les_princes_p_princes_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+TUER_LES_PRINCES_P_PRINCES_FAILED_RECEIVE (bot givervar)
+{
+	tuer_les_princes_p_princes_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+TUER_LES_PRINCES_P_PRINCE_INVENTORY_OK ()
+{
+	tuer_les_princes_p_prince_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+TUER_LA_REINE_KM13_TITLE (bot giver)
+{
+	tuer_la_reine_km13_title	[La chute de la reine.]
+}
+
+TUER_LA_REINE_KM13_DESC (bot giver)
+{
+	tuer_la_reine_km13_desc	[Vaincre la reine de la kitinière.]
+}
+
+TUER_LA_REINE_KM13_INSTRUCTIONS ()
+{
+	tuer_la_reine_km13_instructions	[Après les princes, nous ne devons absolument pas relacher notre pression sur les kitins. Voici donc notre assaut final... \nTuer leur reine empêchera la venue au monde de nouveaux oeufs, au moins pour un moment. \n\nMais la reine est extrêmement bien protégée, non seulement elle se situe tout au fond de l'antre, mais en plus elle dispose de nombreux gardes. \n\nPour espérer la vaincre, il te faudra traverser une grande partie de l'antre avant de te frotter à elle et son escorte.{break}Ensuite, il faudra détruire les oeufs royaux afin d'empêcher qu'une nouvelle reine ne puisse naître. \n\nPour cette mission, tu dois absolument avoir d'excellents alliés, capables de te donner toute l'aide dont tu auras fatalement besoin.]
+}
+
+TUER_LA_REINE_KM13_STEP_1_OVERLOAD_1 (creature_model reine_kitin, int q1)
+{
+	tuer_la_reine_km13_step_1_overload_1	[Vaincre la reine et ses gardes. Elle se trouve tout au fond de la kitinière, au-delà de la salle des princes.]
+}
+
+TUER_LA_REINE_KM13_STEP_2_OVERLOAD_1 (creature_model oeuf, int q1, place queenroom)
+{
+	tuer_la_reine_km13_step_2_overload_1	[Détruire les oeufs de la salle de la reine.]
+}
+
+TUER_LA_REINE_KM13_FINISH_OVERLOAD (bot givervar)
+{
+	tuer_la_reine_km13_finish_overload	[Retournez voir $givervar$ pour lui faire part du succès de la mission.]
+}
+
+TUER_LA_REINE_KM13_PHRASE_FINISH (bot givervar)
+{
+	tuer_la_reine_km13_phrase_finish	[J'ai éliminé la reine et détruit ses oeufs.]
+}
+
+TUER_LA_REINE_KM13_FINISH_REWARD (bot player)
+{
+	tuer_la_reine_km13_finish_reward	[Incroyable ! Tu as fais bien davantage qu'on ne pouvait l'espérer, $player$. \nTes actions ne seront jamais oubliées, je te le garantis. Félicitations !{break}Tous les homins massacrés par ces créatures ont enfin été vengés ! \nPour ceux qui restent, ils doivent savoir que cet acte fondateur sonne le glas de la terreur que les kitins repandent depuis bien trop longtemps sur Atys. \n\nPrends cette récompense amplement méritée et va dire à tes frères et soeurs homins que les kitins ne sont plus invincibles!]
+}
+
+TUER_LA_REINE_KM14_FINISH_REWARD (bot giver, bot givervar)
+{
+	tuer_la_reine_km14_finish_reward	[Adresse-toi à $givervar$ pour connaitre ta récompense.]
+}
+
+TUER_LA_REINE_P_26_INVENTORY (bot giver)
+{
+	tuer_la_reine_p_26_inventory	[Quelle est ma récompense ?]
+}
+
+TUER_LA_REINE_KM15_FINISH_REWARD ()
+{
+	tuer_la_reine_km15_finish_reward	[Voici un titre que je t'offre, il n'est pas usurpé.]
+}
+
+TUER_LA_REINE_KM14_FAME_REWARD (bot player)
+{
+	tuer_la_reine_km14_fame_reward	[Ta réputation te précédera aux quatres coins d'Atys $player$, mais auprès de quel peuple veux-tu faire valloir tes hauts faits :]
+}
+
+TUER_LA_REINE_KM14_FAMEF_GIVE ()
+{
+	tuer_la_reine_km14_famef_give	[Les fyros ?]
+}
+
+TUER_LA_REINE_KM14_FAMEM_GIVE ()
+{
+	tuer_la_reine_km14_famem_give	[Les matis ?]
+}
+
+TUER_LA_REINE_KM14_FAMEZ_GIVE ()
+{
+	tuer_la_reine_km14_famez_give	[Les zorais ?]
+}
+
+TUER_LA_REINE_KM14_FAMET_GIVE ()
+{
+	tuer_la_reine_km14_famet_give	[Les tryker ?]
+}
+
+TUER_LA_REINE_KM14_FAMEF_REWARD ()
+{
+	tuer_la_reine_km14_famef_reward	[Ta gloire rayonnera dans toute l'Histoire des peuples homins.]
+}
+
+TUER_LA_REINE_KM14_FAMEM_REWARD ()
+{
+	tuer_la_reine_km14_famem_reward	[Ta gloire rayonnera dans toute l'Histoire des peuples homins.]
+}
+
+TUER_LA_REINE_KM14_FAMEZ_REWARD ()
+{
+	tuer_la_reine_km14_famez_reward	[Ta gloire rayonnera dans toute l'Histoire des peuples homins.]
+}
+
+TUER_LA_REINE_KM14_FAMET_REWARD ()
+{
+	tuer_la_reine_km14_famet_reward	[Ta gloire rayonnera dans toute l'Histoire des peuples homins.]
+}
+
+TUER_LA_REINE_KM13_GEN_CHOIX (bot player)
+{
+	tuer_la_reine_km13_gen_choix	[Une autre récompense t'attend $player$, au choix une pièce de l'armure légendaire de la kitinière, lourde ou légère...]
+}
+
+TUER_LA_REINE_KMN13_1_ARMURE_CHOICE ()
+{
+	tuer_la_reine_kmn13_1_armure_choice	[La légendaire armure légère de la kitinière.]
+}
+
+TUER_LA_REINE_KMN13_21_ARMURE_CHOICE ()
+{
+	tuer_la_reine_kmn13_21_armure_choice	[La légendaire armure lourde de la kitinière.]
+}
+
+TUER_LA_REINE_KM13_L_SS_CHOIX (bot player)
+{
+	tuer_la_reine_km13_l_ss_choix	[Fais ton choix, tu ne peux prendre qu'une seule pièce à la fois $player$ :]
+}
+
+TUER_LA_REINE_KMN13_1_CHOICE ()
+{
+	tuer_la_reine_kmn13_1_choice	[Gants de la légendaire armure légère de la kitinière.]
+}
+
+TUER_LA_REINE_KMN13_2_CHOICE ()
+{
+	tuer_la_reine_kmn13_2_choice	[Veste de la légendaire armure légère de la kitinière.]
+}
+
+TUER_LA_REINE_KMN13_3_CHOICE ()
+{
+	tuer_la_reine_kmn13_3_choice	[Manches de la légendaire armure légère de la kitinière.]
+}
+
+TUER_LA_REINE_KMN13_4_CHOICE ()
+{
+	tuer_la_reine_kmn13_4_choice	[Jambières de la légendaire armure légère de la kitinière.]
+}
+
+TUER_LA_REINE_KMN13_5_CHOICE ()
+{
+	tuer_la_reine_kmn13_5_choice	[Bottes de la légendaire armure légère de la kitinière.]
+}
+
+TUER_LA_REINE_P_1_FAILED (bot givervar)
+{
+	tuer_la_reine_p_1_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+TUER_LA_REINE_P_1_FAILED_RECEIVE (bot givervar)
+{
+	tuer_la_reine_p_1_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+TUER_LA_REINE_P_1_INVENTORY_OK ()
+{
+	tuer_la_reine_p_1_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+TUER_LA_REINE_P_2_FAILED (bot givervar)
+{
+	tuer_la_reine_p_2_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+TUER_LA_REINE_P_2_FAILED_RECEIVE (bot givervar)
+{
+	tuer_la_reine_p_2_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+TUER_LA_REINE_P_2_INVENTORY_OK ()
+{
+	tuer_la_reine_p_2_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+TUER_LA_REINE_P_3_FAILED (bot givervar)
+{
+	tuer_la_reine_p_3_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+TUER_LA_REINE_P_3_FAILED_RECEIVE (bot givervar)
+{
+	tuer_la_reine_p_3_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+TUER_LA_REINE_P_3_INVENTORY_OK ()
+{
+	tuer_la_reine_p_3_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+TUER_LA_REINE_P_4_FAILED (bot givervar)
+{
+	tuer_la_reine_p_4_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+TUER_LA_REINE_P_4_FAILED_RECEIVE (bot givervar)
+{
+	tuer_la_reine_p_4_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+TUER_LA_REINE_P_4_INVENTORY_OK ()
+{
+	tuer_la_reine_p_4_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+TUER_LA_REINE_P_5_FAILED (bot givervar)
+{
+	tuer_la_reine_p_5_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+TUER_LA_REINE_P_5_FAILED_RECEIVE (bot givervar)
+{
+	tuer_la_reine_p_5_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+TUER_LA_REINE_P_5_INVENTORY_OK ()
+{
+	tuer_la_reine_p_5_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+TUER_LA_REINE_KM13_H_SS_CHOIX (bot player)
+{
+	tuer_la_reine_km13_h_ss_choix	[Fais ton choix, tu ne peux prendre qu'une seule pièce à la fois $player$ :]
+}
+
+TUER_LA_REINE_KMN13_21_CHOICE ()
+{
+	tuer_la_reine_kmn13_21_choice	[Gants de la légendaire armure lourde de la kitinière.]
+}
+
+TUER_LA_REINE_KMN13_22_CHOICE ()
+{
+	tuer_la_reine_kmn13_22_choice	[Veste de la légendaire armure lourde de la kitinière.]
+}
+
+TUER_LA_REINE_KMN13_23_CHOICE ()
+{
+	tuer_la_reine_kmn13_23_choice	[Manches de la légendaire armure lourde de la kitinière.]
+}
+
+TUER_LA_REINE_KMN13_24_CHOICE ()
+{
+	tuer_la_reine_kmn13_24_choice	[Pantalon de la légendaire armure lourde de la kitinière.]
+}
+
+TUER_LA_REINE_KMN13_25_CHOICE ()
+{
+	tuer_la_reine_kmn13_25_choice	[Bottes de la légendaire armure lourde de la kitinière.]
+}
+
+TUER_LA_REINE_KMN13_26_CHOICE ()
+{
+	tuer_la_reine_kmn13_26_choice	[Casque de la légendaire armure lourde de la kitinière.]
+}
+
+TUER_LA_REINE_P_21_FAILED (bot givervar)
+{
+	tuer_la_reine_p_21_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+TUER_LA_REINE_P_21_FAILED_RECEIVE (bot givervar)
+{
+	tuer_la_reine_p_21_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+TUER_LA_REINE_P_21_INVENTORY_OK ()
+{
+	tuer_la_reine_p_21_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+TUER_LA_REINE_P_22_FAILED (bot givervar)
+{
+	tuer_la_reine_p_22_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+TUER_LA_REINE_P_22_FAILED_RECEIVE (bot givervar)
+{
+	tuer_la_reine_p_22_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+TUER_LA_REINE_P_22_INVENTORY_OK ()
+{
+	tuer_la_reine_p_22_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+TUER_LA_REINE_P_23_FAILED (bot givervar)
+{
+	tuer_la_reine_p_23_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+TUER_LA_REINE_P_23_FAILED_RECEIVE (bot givervar)
+{
+	tuer_la_reine_p_23_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+TUER_LA_REINE_P_23_INVENTORY_OK ()
+{
+	tuer_la_reine_p_23_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+TUER_LA_REINE_P_24_FAILED (bot givervar)
+{
+	tuer_la_reine_p_24_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+TUER_LA_REINE_P_24_FAILED_RECEIVE (bot givervar)
+{
+	tuer_la_reine_p_24_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+TUER_LA_REINE_P_24_INVENTORY_OK ()
+{
+	tuer_la_reine_p_24_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+TUER_LA_REINE_P_25_FAILED (bot givervar)
+{
+	tuer_la_reine_p_25_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+TUER_LA_REINE_P_25_FAILED_RECEIVE (bot givervar)
+{
+	tuer_la_reine_p_25_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+TUER_LA_REINE_P_25_INVENTORY_OK ()
+{
+	tuer_la_reine_p_25_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+TUER_LA_REINE_P_26_FAILED (bot givervar)
+{
+	tuer_la_reine_p_26_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+TUER_LA_REINE_P_26_FAILED_RECEIVE (bot givervar)
+{
+	tuer_la_reine_p_26_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+TUER_LA_REINE_P_26_INVENTORY_OK ()
+{
+	tuer_la_reine_p_26_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+LARVES_KITINS_KM14_TITLE (bot giver)
+{
+	larves_kitins_km14_title	[Le plus précieux des matériaux.]
+}
+
+LARVES_KITINS_KM14_DESC (bot giver)
+{
+	larves_kitins_km14_desc	[Mener une expédition dans l'antre des kitins afin de récolter des larves de kitins.]
+}
+
+LARVES_KITINS_KM14_INSTRUCTIONS ()
+{
+	larves_kitins_km14_instructions	[Nous avons besoin de foreurs expérimentés pour nous rapporter des larves de kitins. \nIl existe différentes qualités de larves et il semblerait qu'elles ne soient pas localisées aux mêmes endroits. \n\nVraisemblablement, celles-ci doivent se trouver dans les endroits les plus difficilement accessibles de la kitnière...{break}Evidemment, plus la qualité des larves que tu nous ramèneras sera bonne et plus grande sera la récompense. \n\nCes matériaux étant particulièrement précieux, je me contenterai d'une vingtaine d'échantillons. \n\nBien entendu, une escorte te sera indispensable, et si possible, une escorte expérimentée et lourdement armée.]
+}
+
+LARVES_KITINS_KP14_FORAGE_OVERLOAD ()
+{
+	larves_kitins_kp14_forage_overload	[Trouvez une vingtaine de larves kitins de la meilleure qualité]
+}
+
+LARVES_KITINS_KP14_SYSMSG (bot givervar)
+{
+	larves_kitins_kp14_sysmsg	[Vous avez trouvé les larves que $givervar$ convoite, allez les lui apporter pour obtenir votre récompense]
+}
+
+LARVES_KITINS_KP14_TELL100 ()
+{
+	larves_kitins_kp14_tell100	[Très bien, tu as fait du bon travail, prends cet argent...]
+}
+
+LARVES_KITINS_KP14_TELL150 ()
+{
+	larves_kitins_kp14_tell150	[Très bien, tu as fait de l'excellent travail, prends cet argent...]
+}
+
+LARVES_KITINS_KP14_TELL200 ()
+{
+	larves_kitins_kp14_tell200	[Excellent, je ne pensais pas que tu me rapporterais des larves de si bonne qualité, prends cet argent, tu l'as bien mérité...]
+}
+
+LARVES_KITINS_KP14_TELL250 ()
+{
+	larves_kitins_kp14_tell250	[Le plus précieux des matériaux et d'une qualité parfaite, c'est incroyable ! J'espère que cette récompense saura honorer ton inestimable présent. Tout d'abord prends cet argent...]
+}
+
+LARVES_KITINS_KP14_FAMEK1_OVERLOAD (bot givervar)
+{
+	larves_kitins_kp14_famek1_overload	[Fais le choix de la fame que tu recevras en récompense.]
+}
+
+LARVES_KITINS_KP14_FAMEK1_MENU (bot givervar)
+{
+	larves_kitins_kp14_famek1_menu	[Je veux faire le choix de ma fame.]
+}
+
+LARVES_KITINS_KP14_FAMEK1_PHRASE ()
+{
+	larves_kitins_kp14_famek1_phrase	[En plus de cette somme, tu recevras de la fame via une lettre de recommandation que je vais te donner. \n\nTu devras la transmettre au sage de la capitale du peuple que tu as choisis.]
+}
+
+LARVES_KITINS_KP14_FAMEK1_FYROS_CHOICE ()
+{
+	larves_kitins_kp14_famek1_fyros_choice	[De la fame auprès du fier peuple fyros ?]
+}
+
+LARVES_KITINS_KP14_FAMEK1_MATIS_CHOICE ()
+{
+	larves_kitins_kp14_famek1_matis_choice	[De la fame auprès de l'orgueilleux peuple matis ?]
+}
+
+LARVES_KITINS_KP14_FAMEK1_ZORAI_CHOICE ()
+{
+	larves_kitins_kp14_famek1_zorai_choice	[De la fame auprès du mystique peuple zorai ?]
+}
+
+LARVES_KITINS_KP14_FAMEK1_TRYKER_CHOICE ()
+{
+	larves_kitins_kp14_famek1_tryker_choice	[De la fame auprès du malicieux peuple tryker ?]
+}
+
+LARVES_KITINS_KP14_FAMEK1_FYROS_RECV (bot player)
+{
+	larves_kitins_kp14_famek1_fyros_recv	[Rends-toi à Pyr la capitale fyros et remets cette missive au sage de ces lieux. Tu y recevras ton tribut $player$, bonne route.]
+}
+
+LARVES_KITINS_P_2DEFENSES_FAILED (bot givervar)
+{
+	larves_kitins_p_2defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+LARVES_KITINS_P_2DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	larves_kitins_p_2defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+LARVES_KITINS_P_2DEFENSES_INVENTORY_OK ()
+{
+	larves_kitins_p_2defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+LARVES_KITINS_KP14_FAMEK1_FYROS_GIVE_1 (item i1, int qt1, int qual1, bot sage_fyros, bot givervar)
+{
+	larves_kitins_kp14_famek1_fyros_give_1	[Remets la lettre de recommandation émise par $givervar$ au sage de Pyr.]
+}
+
+LARVES_KITINS_KP14_FAMEK1_FYROS_BOTCHAT (bot player)
+{
+	larves_kitins_kp14_famek1_fyros_botchat	[Sois le bienvenu jeune $player$, j'ai eu vent de tes exploits sur le front de la kitinière et je suis très impressionné. Nul doute que ce n'est pas la dernière fois que j'entendrais parler de toi... En attendant accepte ces points de fame. Toutes mes félicitations.]
+}
+
+LARVES_KITINS_KP14_FAMEK1_MATIS_RECV (bot player)
+{
+	larves_kitins_kp14_famek1_matis_recv	[Rends-toi à Yrkanis la capitale matis et remets cette missive au sage de ces lieux. Tu y recevras ton tribut $player$, bonne route.]
+}
+
+LARVES_KITINS_KP14_FAMEK1_MATIS_GIVE_1 (item i1, int qt1, int qual1, bot sage_matis, bot givervar)
+{
+	larves_kitins_kp14_famek1_matis_give_1	[Remets la lettre de recommandation émise par $givervar$ au sage d'Yrkanis.]
+}
+
+LARVES_KITINS_KP14_FAMEK1_MATIS_BOTCHAT (bot player)
+{
+	larves_kitins_kp14_famek1_matis_botchat	[Sois le bienvenu jeune $player$, j'ai eu vent de tes exploits sur le front de la kitinière et je suis très impressionné. Nul doute que ce n'est pas la dernière fois que j'entendrais parler de toi... En attendant accepte ces points de fame. Toutes mes félicitations.]
+}
+
+LARVES_KITINS_KP14_FAMEK1_ZORAI_RECV (bot player)
+{
+	larves_kitins_kp14_famek1_zorai_recv	[Rends-toi à Zora la capitale zorai et remets cette missive au sage de ces lieux. Tu y recevras ton tribut $player$, bonne route.]
+}
+
+LARVES_KITINS_KP14_FAMEK1_ZORAI_GIVE_1 (item i1, int qt1, int qual1, bot sage_zorai)
+{
+	larves_kitins_kp14_famek1_zorai_give_1	[Remets la lettre de recommandation émise par Lano Fergoto au sage de la capitale Zorai.]
+}
+
+LARVES_KITINS_KP14_FAMEK1_ZORAI_BOTCHAT (bot player)
+{
+	larves_kitins_kp14_famek1_zorai_botchat	[Sois le bienvenu jeune $player$, j'ai eu vent de tes exploits sur le front de la kitinière et je suis très impressionné. Nul doute que ce n'est pas la dernière fois que j'entendrais parler de toi... En attendant accepte ces points de fame. Toutes mes félicitations.]
+}
+
+LARVES_KITINS_KP14_FAMEK1_TRYKER_RECV (bot player)
+{
+	larves_kitins_kp14_famek1_tryker_recv	[Rends-toi à Fairhaven la capitale tryker et remets cette missive au sage de ces lieux. Tu y recevras ton tribut $player$, bonne route.]
+}
+
+LARVES_KITINS_KP14_FAMEK1_TRYKER_GIVE_1 (item i1, int qt1, int qual1, bot sage_tryker, bot givervar)
+{
+	larves_kitins_kp14_famek1_tryker_give_1	[Remets la lettre de recommandation émise par $givervar$ au sage de la capitale Tryker.]
+}
+
+LARVES_KITINS_KP14_FAMEK1_TRYKER_BOTCHAT (bot player)
+{
+	larves_kitins_kp14_famek1_tryker_botchat	[Sois le bienvenu jeune $player$, j'ai eu vent de tes exploits sur le front de la kitinière et je suis très impressionné. Nul doute que ce n'est pas la dernière fois que j'entendrais parler de toi... En attendant accepte ces points de fame. Toutes mes félicitations.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_TITLE (bot giver)
+{
+	affaiblir_defenses_km15_title	[Affaiblir les défenses des kitins.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_DESC (bot giver)
+{
+	affaiblir_defenses_km15_desc	[Tuer les guerriers kitins pour affaiblir leur première ligne de défense.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_INSTRUCTIONS ()
+{
+	( self.gender = male )
+		affaiblir_defenses_km15_instructions_m	[Nous allons semer la zizanie aux portes du pouvoir kitin, il faut les désorienter et les frapper là où ils ne s'y attendent pas. \n\nC'est-à-dire au coeur même de l'antre, dans l'antichambre de la reine. Pour le moment nous n'avons effectué que des attaques sporadiques sur la kitinière, et ce afin de rassembler toutes nos forces pour l'assaut final. \n\nSi tu te sens de taille, prépare-toi à un combat farouche. Car tu devra affronter l'élite des soldats kitin dans une lutte à mort, il s'agira de porter haut la gloire d'Atys jeune homin.]
+	( self.gender = female )
+		affaiblir_defenses_km15_instructions_f	[Nous allons semer la zizanie aux portes du pouvoir kitin, il faut les désorienter et les frapper là où ils ne s'y attendent pas. \n\nC'est-à-dire au coeur même de l'antre, dans l'antichambre de la reine. Pour le moment nous n'avons effectué que des attaques sporadiques sur la kitinière, et ce afin de rassembler toutes nos forces pour l'assaut final. \n\nSi tu te sens de taille, prépare-toi à un combat farouche. Car tu devra affronter l'élite des soldats kitin dans une lutte à mort, il s'agira de porter haut la gloire d'Atys jeune homine.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_LOOT_OVRLOAD ()
+{
+	affaiblir_defenses_km15_loot_ovrload	[Tuez un certain nombre des kinchers présents dans l'antichambre jusqu'à obtenir :\n
+10 fragments de dard fin d'une qualité au moins égale à 200.\n
+10 fragments de mandibule fine d'une qualité au moins égale à 200.\n
+10 fragments de carapace fine d'une qualité au moins égale à 200.\n
+10 fragments de queue fine d'une qualité au moins égale à 200.\n
+10 sécrétions fines d'une qualité au moins égale à 200.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_SYSMSG1 ()
+{
+	affaiblir_defenses_km15_sysmsg1	[Vous avez accumulé suffisamment de dards fins.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_SYSMSG2 ()
+{
+	affaiblir_defenses_km15_sysmsg2	[Vous avez accumulé suffisamment de mandibules fines.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_SYSMSG3 ()
+{
+	affaiblir_defenses_km15_sysmsg3	[Vous avez accumulé suffisamment de carapaces fines.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_SYSMSG4 ()
+{
+	affaiblir_defenses_km15_sysmsg4	[Vous avez accumulé suffisamment de sécrétions fines.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_SYSMSG5 ()
+{
+	affaiblir_defenses_km15_sysmsg5	[Vous avez accumuler suffisamment de queues fines.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_GIVE_OVRLOAD_1 (item i1, int qt1, int qual1, bot giver, bot givervar)
+{
+	affaiblir_defenses_km15_give_ovrload_1	[Donnez le fruit de votre chasse à $givervar$.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_GIVE_OVRLOAD_2 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, bot giver, bot givervar)
+{
+	affaiblir_defenses_km15_give_ovrload_2	[Donnez le fruit de votre chasse à $givervar$.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_GIVE_OVRLOAD_3 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, bot giver, bot givervar)
+{
+	affaiblir_defenses_km15_give_ovrload_3	[Donnez le fruit de votre chasse à $givervar$.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_GIVE_OVRLOAD_4 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, item i4, int qt4, int qual4, bot giver, bot givervar)
+{
+	affaiblir_defenses_km15_give_ovrload_4	[Donnez le fruit de votre chasse à $givervar$.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_GIVE_OVRLOAD_5 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, item i4, int qt4, int qual4, item i5, int qt5, int qual5, bot giver, bot givervar)
+{
+	affaiblir_defenses_km15_give_ovrload_5	[Donnez le fruit de votre chasse à $givervar$.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_FINISH_REWARD (bot player)
+{
+	affaiblir_defenses_km15_finish_reward	[Bravo, nous venons de remporter une bataille, importante certes, mais pas la guerre. Les kitins doivent avoir perdu toute organisation. \n\nBien sûr, de nouveaux guerriers vont probablement apparaître, mais en attendant, les kitins sont considérablement affaiblis. \n\nC'est du très bon travail $player$, félicitations !]
+}
+
+AFFAIBLIR_DEFENSES_KM15_END_OVERLOAD (bot givervar)
+{
+	affaiblir_defenses_km15_end_overload	[Faites le choix de votre tribut.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_TALKTO (bot givervar)
+{
+	affaiblir_defenses_km15_talkto	[Je désire faire le choix de ma récompense.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_TELLFIN ()
+{
+	affaiblir_defenses_km15_tellfin	[Afin de rendre hommage à ta bravoure comme il se doit, je te propose de choisir parmi ces deux offrandes. \n\nSaches qu'elles sont toutes à la mesure de tes hauts faits d'arme.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_CHOIX1 ()
+{
+	affaiblir_defenses_km15_choix1	[Veux-tu choisir une pièce d'armure qui sera la marque intangible de ton courage ?]
+}
+
+AFFAIBLIR_DEFENSES_KP_15_STEP_3_CHOIX2 ()
+{
+	affaiblir_defenses_kp_15_step_3_choix2	[Ou recevoir 10 larves kitins suprêmes de qualité 250 ?]
+}
+
+AFFAIBLIR_DEFENSES_KM15_CHOIX1_CHOIXPIECE ()
+{
+	affaiblir_defenses_km15_choix1_choixpiece	[Fais le choix de la pièce que tu désires :]
+}
+
+AFFAIBLIR_DEFENSES_KM15_CHOIX1_VEST ()
+{
+	affaiblir_defenses_km15_choix1_vest	[La veste de bravoure de la kitinière.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_CHOIX1_BOOTS ()
+{
+	affaiblir_defenses_km15_choix1_boots	[Les bottes de bravoure de la kitinière.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_CHOIX1_GLOVES ()
+{
+	affaiblir_defenses_km15_choix1_gloves	[Les gants de bravoure de la kitinière.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_CHOIX1_PANTS ()
+{
+	affaiblir_defenses_km15_choix1_pants	[Le pantalon de bravoure de la kitinière.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_CHOIX1_SLEEVES ()
+{
+	affaiblir_defenses_km15_choix1_sleeves	[Les manches de bravoure de la kitinière.]
+}
+
+AFFAIBLIR_DEFENSES_P_1DEFENSES_FAILED (bot givervar)
+{
+	affaiblir_defenses_p_1defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+AFFAIBLIR_DEFENSES_P_1DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	affaiblir_defenses_p_1defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+AFFAIBLIR_DEFENSES_P_1DEFENSES_INVENTORY_OK ()
+{
+	affaiblir_defenses_p_1defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+AFFAIBLIR_DEFENSES_P_2DEFENSES_FAILED (bot givervar)
+{
+	affaiblir_defenses_p_2defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+AFFAIBLIR_DEFENSES_P_2DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	affaiblir_defenses_p_2defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+AFFAIBLIR_DEFENSES_P_2DEFENSES_INVENTORY_OK ()
+{
+	affaiblir_defenses_p_2defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+AFFAIBLIR_DEFENSES_P_3DEFENSES_FAILED (bot givervar)
+{
+	affaiblir_defenses_p_3defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+AFFAIBLIR_DEFENSES_P_3DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	affaiblir_defenses_p_3defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+AFFAIBLIR_DEFENSES_P_3DEFENSES_INVENTORY_OK ()
+{
+	affaiblir_defenses_p_3defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+AFFAIBLIR_DEFENSES_P_4DEFENSES_FAILED (bot givervar)
+{
+	affaiblir_defenses_p_4defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+AFFAIBLIR_DEFENSES_P_4DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	affaiblir_defenses_p_4defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+AFFAIBLIR_DEFENSES_P_4DEFENSES_INVENTORY_OK ()
+{
+	affaiblir_defenses_p_4defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+AFFAIBLIR_DEFENSES_P_5DEFENSES_FAILED (bot givervar)
+{
+	affaiblir_defenses_p_5defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+AFFAIBLIR_DEFENSES_P_5DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	affaiblir_defenses_p_5defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+AFFAIBLIR_DEFENSES_P_5DEFENSES_INVENTORY_OK ()
+{
+	affaiblir_defenses_p_5defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+AFFAIBLIR_DEFENSES_KP_15_STEP_4_CHOIX2 (bot player)
+{
+	affaiblir_defenses_kp_15_step_4_choix2	[Encore bravo $player$, cette récompense est largement méritée.]
+}
+
+AFFAIBLIR_DEFENSES_P_REPERAGE_FAILED (bot givervar)
+{
+	affaiblir_defenses_p_reperage_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+AFFAIBLIR_DEFENSES_P_REPERAGE_FAILED_RECEIVE (bot givervar)
+{
+	affaiblir_defenses_p_reperage_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+AFFAIBLIR_DEFENSES_P_REPERAGE_INVENTORY_OK ()
+{
+	affaiblir_defenses_p_reperage_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+AFFAIBLIR_DEFENSES_KM15_NOREPONSE ()
+{
+	affaiblir_defenses_km15_noreponse	[Tu n'as pas encore choisi ta récompense ?]
+}
+
+MAGIES_MINIERES_KMN01_TITLE (bot giver)
+{
+	magies_minieres_kmn01_title	[Magies minières.]
+}
+
+MAGIES_MINIERES_KMN01_DESC (bot giver)
+{
+	magies_minieres_kmn01_desc	[Enquêter sur la magie des mines kitins.]
+}
+
+MAGIES_MINIERES_KMN01_INTRO ()
+{
+	magies_minieres_kmn01_intro	[Oui, tu as entendu parler de ça ? Les anciennes mines de la kitinière semblent imprégnées d'une étrange source magique ! \n\nNous aimerions en apprendre davantage. Veux-tu nous aider dans cette tâche ? \n\nTu devras probablement constituer un groupe et t'aventurer dans la kitinière, alors cela risque d'être dangereux.]
+}
+
+MAGIES_MINIERES_KMN01_OUI ()
+{
+	magies_minieres_kmn01_oui	[J'irai enquêter sur cette source magique.]
+}
+
+MAGIES_MINIERES_KMN01_NON ()
+{
+	magies_minieres_kmn01_non	[Non merci, pas pour le moment.]
+}
+
+MAGIES_MINIERES_KMN01_ACCEPT (bot NPC2, bot player)
+{
+	magies_minieres_kmn01_accept	[Je n'en attendais pas moins de toi, $player$ ! Cependant, je ne sais pas comment procéder, car je ne connais pas grand-chose sur cette magie. \n\nVa voir $NPC2$, il pourra t'en dire davantage.]
+}
+
+MAGIES_MINIERES_KMN01_STEP1_PHRASE (bot NPC2)
+{
+	magies_minieres_kmn01_step1_phrase	[J'aimerais en apprendre davantage sur la source magique de la kitinière.]
+}
+
+MAGIES_MINIERES_KMN01_STEP1_ANSWER ()
+{
+	magies_minieres_kmn01_step1_answer	[Ah, la source magique de la kitinière. Tout le monde en parle, en ce moment. La première chose à faire, c'est de vérifier si la rumeur est exacte, et quel type de magie produit cette source. \n\nPour cela, c'est très simple si j'ose dire : aller tuer des Kibans, les mineurs de la kitinière. \nOn peut les trouver dans les anciennes mines ou dans les mines obscures. \n\nRécupére des fragments magiques sur eux, et apporte-les moi.]
+}
+
+MAGIES_MINIERES_KMN01_OVRLOAD_1 (item i1, int qt1, int qual1)
+{
+	magies_minieres_kmn01_ovrload_1	[Prélevez 5 fragments de source magique de la kitinière de niveau 200 sur des kibans.]
+}
+
+MAGIES_MINIERES_KMN01_STEP3_OVERLOAD_1 (item i1, int qt1, int qual1, bot NPC2)
+{
+	magies_minieres_kmn01_step3_overload_1	[Donner les fragments à $NPC2$.]
+}
+
+MAGIES_MINIERES_KMN01_CONCLUSION (bot NPC3)
+{
+	magies_minieres_kmn01_conclusion	[Ah ! Très intéressant. Je vais les envoyer à $NPC3$ pour qu'il les analyse. \n\nTu pourra aller le voir plus tard, il te donnera les résultats et te proposera peut-être autre chose à faire. \nEn attendant, voici ta récompense : ce qu'il peut y avoir de plus précieux dans cet endroit.]
+}
+
+MAGIES_MINIERES_P_3DEFENSES_FAILED (bot NPC2)
+{
+	magies_minieres_p_3defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $NPC2$. Faites de la place et parlez lui.]
+}
+
+MAGIES_MINIERES_P_3DEFENSES_FAILED_RECEIVE (bot NPC2)
+{
+	magies_minieres_p_3defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+MAGIES_MINIERES_P_3DEFENSES_INVENTORY_OK ()
+{
+	magies_minieres_p_3defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+MAGIES_MINIERES_KMN01_ABANDON ()
+{
+	magies_minieres_kmn01_abandon	[Dommage. Mais c'est vrai, il vaut mieux s'entraîner avant de partir pour une mission si dangereuse.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KMN02_TITLE (bot giver)
+{
+	un_echantillon_de_la_kitiniere_kmn02_title	[Un échantillon de la kitinière.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KMN02_DESC (bot giver)
+{
+	un_echantillon_de_la_kitiniere_kmn02_desc	[Continuer l'enquête sur la magie des mines kitin.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KMN02_INTRO (bot player)
+{
+	( self.gender = male )
+		un_echantillon_de_la_kitiniere_kmn02_intro_m	[Ah, $player$ ! Je viens de finir d'analyser les fragments que tu nous as apporté. C'est fascinant. D'après les analyses, nous pourrions avoir mis la main sur quelque chose de très important... ou bien de totalement inutile. \n\nMais nous devons absolument vérifier sur place. Es-tu partant  pour cette mission ? {break}J'ai peur qu'elle ne soit encore plus difficile que celles que tu as déjà accomplies, mais cela ne devrait pas te faire peur, n'est-ce pas ?]
+	( self.gender = female )
+		un_echantillon_de_la_kitiniere_kmn02_intro_f	[Ah, $player$ ! Je viens de finir d'analyser les fragments que tu nous as apporté. C'est fascinant. D'après les analyses, nous pourrions avoir mis la main sur quelque chose de très important... ou bien de totalement inutile. \n\nMais nous devons absolument vérifier sur place. Es-tu partante  pour cette mission ? {break}J'ai peur qu'elle ne soit encore plus difficile que celles que tu as déjà accomplies, mais cela ne devrait pas te faire peur, n'est-ce pas ?]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KMN02_OUI ()
+{
+	un_echantillon_de_la_kitiniere_kmn02_oui	[Je vais vous aider à terminer ces recherches.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KMN02_NON ()
+{
+	un_echantillon_de_la_kitiniere_kmn02_non	[Pas pour cette fois.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_P_1DEFENSES_FAILED (bot givervar)
+{
+	un_echantillon_de_la_kitiniere_p_1defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_P_1DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	un_echantillon_de_la_kitiniere_p_1defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_P_1DEFENSES_INVENTORY_OK ()
+{
+	un_echantillon_de_la_kitiniere_p_1defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KMN02_ACCEPT (bot NPC2)
+{
+	un_echantillon_de_la_kitiniere_kmn02_accept	[Alors va porter cette lettre à $NPC2$, il t'expliquera ta nouvelle mission. Et... bonne chance.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KM8_FINISH_PHRASE_1 (item i1, int qt1, int qual1, bot NPC2, bot givervar)
+{
+	un_echantillon_de_la_kitiniere_km8_finish_phrase_1	[Allez voir $NPC2$ afin de lui remettre la lettre transmise par $givervar$.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KMN02_STEP2_ANSWER ()
+{
+	( self.gender = male )
+		un_echantillon_de_la_kitiniere_kmn02_step2_answer_m	[Une lettre ? Bien, ce sont les résultats de l'analyse des fragments, n'est-ce pas ? \nVoyons... je vois. Tu vas devoir retourner dans la kitinière. Apparemment, les fragments provenaient directement de la source de magie, et nous avons pu identifier où elle se situe. \n\nElle est dans les mines obscures : tu dois la trouver, en prélever un échantillon et me le rapporter. \nMais les mines obscures sont bien protégées, tu dois être parfaitement préparé au combat.]
+	( self.gender = female )
+		un_echantillon_de_la_kitiniere_kmn02_step2_answer_f	[Une lettre ? Bien, ce sont les résultats de l'analyse des fragments, n'est-ce pas ? \nVoyons... je vois. Tu vas devoir retourner dans la kitinière. Apparemment, les fragments provenaient directement de la source de magie, et nous avons pu identifier où elle se situe. \n\nElle est dans les mines obscures : tu dois la trouver, en prélever un échantillon et me le rapporter. \nMais les mines obscures sont bien protégées, tu dois être parfaitement préparée au combat.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KMN07_STEP3_SYSMSG ()
+{
+	un_echantillon_de_la_kitiniere_kmn07_step3_sysmsg	[Faites de la place dans votre inventaire]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KMN02_OVERLOAD (place source)
+{
+	un_echantillon_de_la_kitiniere_kmn02_overload	[Trouvez la source magique dans les mines obscures et prélevez un échantillon.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KMN02_SYSTEM ()
+{
+	un_echantillon_de_la_kitiniere_kmn02_system	[Vous avez prélevé un échantillon de la source magique.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KMN02_GIVEITEM_1 (item i1, int qt1, int qual1, bot NPC2)
+{
+	un_echantillon_de_la_kitiniere_kmn02_giveitem_1	[Donnez le fruit de votre prospection à $NPC2$.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KMN02_GIVEITEM (bot NPC3)
+{
+	un_echantillon_de_la_kitiniere_kmn02_giveitem	[Excellent. Nous allons bientôt savoir si cette source est réellement intéressante. Je vais immédiatement envoyer cet échantillon à $NPC3$ : il saura quoi en faire. \n\nTu devrais aller le voir, il te donnera certainement une récompense.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KMN02_STEP4_CONCLUSION (bot NPC3, bot NPC2)
+{
+	un_echantillon_de_la_kitiniere_kmn02_step4_conclusion	[Je viens de la part de $NPC2$.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KMN02_STEP4_END ()
+{
+	un_echantillon_de_la_kitiniere_kmn02_step4_end	[Tu es celui qui nous a apporté l'échantillon ? Malheureusement, nous n'avons pas pu identifier la magie qu'il contient, et je crains que nous ne puissions pas en faire grand-chose. \n\nC'est dommage. Mais tu as fait de l'excellent travail - voici ta récompense.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_P_3DEFENSES_FAILED (bot givervar)
+{
+	un_echantillon_de_la_kitiniere_p_3defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_P_3DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	un_echantillon_de_la_kitiniere_p_3defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_P_3DEFENSES_INVENTORY_OK ()
+{
+	un_echantillon_de_la_kitiniere_p_3defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+UN_ECHANTILLON_DE_LA_KITINIERE_KMN02_ABANDON ()
+{
+	un_echantillon_de_la_kitiniere_kmn02_abandon	[Tant pis. Peut-être une autre fois, alors ?]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_TITLE (bot giver)
+{
+	encore_plus_solide_kmn06_title	[Encore plus solide.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_DESC (bot giver)
+{
+	encore_plus_solide_kmn06_desc	[Récupérer des morceaux de carapace, de dard et de queue de kinreys dans la kitinière.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_INTRO ()
+{
+	( self.gender = male )
+		encore_plus_solide_kmn06_intro_m	[Du nouveau ? Oui, du nouveau. Les résidus d'oeufs n'étaient pas formidables, mais une nouvelle idée a été émise : certains kitins auraient des carapaces très résistantes, et on pourrait en faire de très bonnes armures. \nTu es partant  ?]
+	( self.gender = female )
+		encore_plus_solide_kmn06_intro_f	[Du nouveau ? Oui, du nouveau. Les résidus d'oeufs n'étaient pas formidables, mais une nouvelle idée a été émise : certains kitins auraient des carapaces très résistantes, et on pourrait en faire de très bonnes armures. \nTu es partante  ?]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_OUI ()
+{
+	encore_plus_solide_kmn06_oui	[Certainement.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_NON ()
+{
+	encore_plus_solide_kmn06_non	[Non merci.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP1_INSTRUCTIONS ()
+{
+	encore_plus_solide_kmn06_step1_instructions	[Bien ! Les kitins en question s'appellent les kinreys. Quelques fragments suffiront pour l'instant.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN02_SYSMSG ()
+{
+	encore_plus_solide_kmn02_sysmsg	[Faites de la place dans votre inventaire pour continuer la mission.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP2_OVERLOAD1_1 (item i1, int qt1, int qual1)
+{
+	encore_plus_solide_kmn06_step2_overload1_1	[Trouvez 10 carapaces de base de kinrey d'une qualité au moins égale à 100.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP3_OVERLOAD1_1 (item i1, int qt1, int qual1)
+{
+	encore_plus_solide_kmn06_step3_overload1_1	[Trouvez 10 queues de base de kinrey d'une qualité au moins égale à 100.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP4_OVERLOAD1_1 (item i1, int qt1, int qual1)
+{
+	encore_plus_solide_kmn06_step4_overload1_1	[Trouvez 10 dards de base de kinrey d'une qualité au moins égale à 100.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP5_OVERLOAD_1 (item i1, int qt1, int qual1, bot giver, bot givervar)
+{
+	encore_plus_solide_kmn06_step5_overload_1	[Donnez le fruit de votre chasse à $givervar$.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP5_OVERLOAD_2 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, bot giver, bot givervar)
+{
+	encore_plus_solide_kmn06_step5_overload_2	[Donnez le fruit de votre chasse à $givervar$.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP5_OVERLOAD_3 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, bot giver, bot givervar)
+{
+	encore_plus_solide_kmn06_step5_overload_3	[Donnez le fruit de votre chasse à $givervar$.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP2_BOTCHAT (bot NPC2, bot player)
+{
+	encore_plus_solide_kmn06_step2_botchat	[C'est parfait, $player$ ! Si ces créatures sont aussi solides que nous le pensons, elles permettront de faire une bonne armure. Je vais demander à nos artisans de les analyser. \n\nVa voir $NPC2$ de ma part dans quelques temps : il devrait avoir une petite surprise pour toi.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP3_OVERLOAD_1 (bot givervar, bot NPC2)
+{
+	encore_plus_solide_kmn06_step3_overload_1	[Attendez que les Rangers aient fini d'analyser les carapaces, puis aller voir $NPC2$.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP4_NPC2DIAL (bot NPC2, bot givervar)
+{
+	encore_plus_solide_kmn06_step4_npc2dial	[Bonjour, $givervar$ m'envoie pour récupérer ma récompense.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP5_NPC2DIAL (bot player)
+{
+	encore_plus_solide_kmn06_step5_npc2dial	[Ah, $player$... les carapaces se sont avérées assez efficaces. Nous avons pu en faire une armure, et comme vous êtes celui qui est allé les chercher, nous tenons à vous en offrir une pièce.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP6_OVRLOAD (bot NPC2)
+{
+	encore_plus_solide_kmn06_step6_ovrload	[Faites le choix de la partie d'armure que vous souhaitez prendre.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP6_TLKTO (bot NPC2)
+{
+	encore_plus_solide_kmn06_step6_tlkto	[Je souhaite faire le choix de la pièce d'armure.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP6_PHRASERWARD ()
+{
+	encore_plus_solide_kmn06_step6_phraserward	[Choisissez parmi ces pièces d'armure :]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP7_PANTS ()
+{
+	encore_plus_solide_kmn06_step7_pants	[Le pantalon.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP7_BOOTS ()
+{
+	encore_plus_solide_kmn06_step7_boots	[Les bottes.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP7_VEST ()
+{
+	encore_plus_solide_kmn06_step7_vest	[La veste.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP7_SLEEVES ()
+{
+	encore_plus_solide_kmn06_step7_sleeves	[Les manches.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_STEP7_GLOVES ()
+{
+	encore_plus_solide_kmn06_step7_gloves	[Les gants.]
+}
+
+ENCORE_PLUS_SOLIDE_P_4DEFENSES_FAILED (bot givervar)
+{
+	encore_plus_solide_p_4defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+ENCORE_PLUS_SOLIDE_P_4DEFENSES_FAILED_RECEIVE (bot NPC2)
+{
+	encore_plus_solide_p_4defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+ENCORE_PLUS_SOLIDE_P_4DEFENSES_INVENTORY_OK ()
+{
+	encore_plus_solide_p_4defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+ENCORE_PLUS_SOLIDE_P_2DEFENSES_FAILED (bot givervar)
+{
+	encore_plus_solide_p_2defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+ENCORE_PLUS_SOLIDE_P_2DEFENSES_FAILED_RECEIVE (bot NPC2)
+{
+	encore_plus_solide_p_2defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+ENCORE_PLUS_SOLIDE_P_2DEFENSES_INVENTORY_OK ()
+{
+	encore_plus_solide_p_2defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+ENCORE_PLUS_SOLIDE_P_1DEFENSES_FAILED (bot givervar)
+{
+	encore_plus_solide_p_1defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+ENCORE_PLUS_SOLIDE_P_1DEFENSES_FAILED_RECEIVE (bot NPC2)
+{
+	encore_plus_solide_p_1defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+ENCORE_PLUS_SOLIDE_P_1DEFENSES_INVENTORY_OK ()
+{
+	encore_plus_solide_p_1defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+ENCORE_PLUS_SOLIDE_P_5DEFENSES_FAILED (bot givervar)
+{
+	encore_plus_solide_p_5defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+ENCORE_PLUS_SOLIDE_P_5DEFENSES_FAILED_RECEIVE (bot NPC2)
+{
+	encore_plus_solide_p_5defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+ENCORE_PLUS_SOLIDE_P_5DEFENSES_INVENTORY_OK ()
+{
+	encore_plus_solide_p_5defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+ENCORE_PLUS_SOLIDE_P_3DEFENSES_FAILED (bot givervar)
+{
+	encore_plus_solide_p_3defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+ENCORE_PLUS_SOLIDE_P_3DEFENSES_FAILED_RECEIVE (bot NPC2)
+{
+	encore_plus_solide_p_3defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+ENCORE_PLUS_SOLIDE_P_3DEFENSES_INVENTORY_OK ()
+{
+	encore_plus_solide_p_3defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+ENCORE_PLUS_SOLIDE_KMN06_ABANDON ()
+{
+	( self.gender = male )
+		encore_plus_solide_kmn06_abandon_m	[Je vois...timoré  et pas téméraire.]
+	( self.gender = female )
+		encore_plus_solide_kmn06_abandon_f	[Je vois...timorée  et pas téméraire.]
+}
+
+QUESTION_DE_FORCE_KMN03_TITLE (bot giver)
+{
+	question_de_force_kmn03_title	[Question de force]
+}
+
+QUESTION_DE_FORCE_KMN03_DESC (bot giver)
+{
+	question_de_force_kmn03_desc	[Trouver la source de la puissance des kitins.]
+}
+
+QUESTION_DE_FORCE_KMN03_INTRO ()
+{
+	question_de_force_kmn03_intro	[La source de la force exceptionnelle des kitins est un mystère pour nous. \n\nLeur corps est-il naturellement puissant, ou bien tirent-ils leur force d'autre chose ? Nous avons récemment pensé qu'ils pouvaient utiliser une substance pour se renforcer. {break}Si nous pouvions nous approprier cette substance, notre force en serait décuplée ! \nIl faut aller sur le terrain et enquêter. \n\nEs-tu des nôtres ?]
+}
+
+QUESTION_DE_FORCE_KMN03_OUI ()
+{
+	question_de_force_kmn03_oui	[Je vais enquêter pour vous et trouver cette substance.]
+}
+
+QUESTION_DE_FORCE_KMN03_NON ()
+{
+	question_de_force_kmn03_non	[Je préfère ne pas y aller.]
+}
+
+QUESTION_DE_FORCE_KMN03_STEP1_AIGUILLAGENPC2 (bot NPC2)
+{
+	question_de_force_kmn03_step1_aiguillagenpc2	[Va trouver $NPC2$. Il est dans les parages, il connaît mieux la kitinière que moi et pourra t'indiquer quel genre de chose tu recherches.]
+}
+
+QUESTION_DE_FORCE_KMN03_STEP2_INFO (bot NPC2)
+{
+	question_de_force_kmn03_step2_info	[Parlez-moi de la substance produite par les kitins.]
+}
+
+QUESTION_DE_FORCE_KMN03_STEP2_ANSWER ()
+{
+	question_de_force_kmn03_step2_answer	[Cette chose visqueuse ? \nLes kitins la gardent précieusement, mais on peut en trouver des extraits chez les kibans de l'ancienne mine. \n\nTu devras faire très attention, même si les kibans ne sont que des mineurs, s'en prendre à l'un d'eux peut s'avérer risqué donc reste sur tes gardes...]
+}
+
+QUESTION_DE_FORCE_KMN02_SYSMSG ()
+{
+	question_de_force_kmn02_sysmsg	[Faites de la place dans votre inventaire pour continuer la mission.]
+}
+
+QUESTION_DE_FORCE_KMN02_OVRLOAD_1 (item i1, int qt1, int qual1)
+{
+	question_de_force_kmn02_ovrload_1	[Allez dans l'ancienne mine et prélevez 10 extraits de substance de force de niveau 200 sur des kibans.]
+}
+
+QUESTION_DE_FORCE_KMN03_SYSTEM ()
+{
+	question_de_force_kmn03_system	[Vous avez trouvé suffisamment d'extrait de la substance des kitins.]
+}
+
+QUESTION_DE_FORCE_KMN03_GIVEITEM_1 (item i1, int qt1, int qual1, bot givervar)
+{
+	question_de_force_kmn03_giveitem_1	[Donnez le fruit de votre chasse à $givervar$.]
+}
+
+QUESTION_DE_FORCE_KMN03_GIVEITEM (bot NPC3)
+{
+	question_de_force_kmn03_giveitem	[Ah, tu en as trouvé ! \nJe vais l'envoyer à $NPC3$ pour qu'il fasse des tests. \nTu pourras aller le voir pour lui demander ce que ça a donné. \nVoici ta récompense.]
+}
+
+QUESTION_DE_FORCE_P_2DEFENSES_FAILED (bot givervar)
+{
+	question_de_force_p_2defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+QUESTION_DE_FORCE_P_2DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	question_de_force_p_2defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+QUESTION_DE_FORCE_P_2DEFENSES_INVENTORY_OK ()
+{
+	question_de_force_p_2defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+QUESTION_DE_FORCE_KMN03_ABANDON ()
+{
+	question_de_force_kmn03_abandon	[Je te comprends, peut-être après un entrainement plus poussé...]
+}
+
+LA_SUBSTANCE_ROYALE_KMN04_TITLE (bot giver)
+{
+	la_substance_royale_kmn04_title	[La substance royale]
+}
+
+LA_SUBSTANCE_ROYALE_KMN04_DESC (bot giver)
+{
+	la_substance_royale_kmn04_desc	[Trouver la substance à l'origine de la force des kitins.]
+}
+
+LA_SUBSTANCE_ROYALE_KMN04_INTRO ()
+{
+	( self.gender = male )
+		la_substance_royale_kmn04_intro_m	[Ah, c'est donc à toi qu'on doit cette maudite substance ? Je l'ai essayée, et au lieu de me donner de la force, elle m'a donnée des boutons ! \n\nOn dirait que ça ne marche pas sur les homins, à moins qu'on ne se trompe depuis le début. Mais il nous reste de l'espoir. \nNous pensons que les kitins royaux utilisent une substance différente, qui pourrait bien fonctionner sur nous. \n\nEs-tu partant pour retourner dans la kitinière ?]
+	( self.gender = female )
+		la_substance_royale_kmn04_intro_f	[Ah, c'est donc à toi qu'on doit cette maudite substance ? Je l'ai essayée, et au lieu de me donner de la force, elle m'a donnée des boutons ! \n\nOn dirait que ça ne marche pas sur les homins, à moins qu'on ne se trompe depuis le début. Mais il nous reste de l'espoir. \nNous pensons que les kitins royaux utilisent une substance différente, qui pourrait bien fonctionner sur nous. \n\nEs-tu partante pour retourner dans la kitinière ?]
+}
+
+LA_SUBSTANCE_ROYALE_KMN04_OUI ()
+{
+	la_substance_royale_kmn04_oui	[S'il s'agit de me rendre plus fort ? Toujours !]
+}
+
+LA_SUBSTANCE_ROYALE_KMN04_NON ()
+{
+	la_substance_royale_kmn04_non	[Je dois y réfléchir.]
+}
+
+LA_SUBSTANCE_ROYALE_KMN04_STEP1_AIGUILLAGENPC2 ()
+{
+	( self.gender = male )
+		la_substance_royale_kmn04_step1_aiguillagenpc2_m	[La substance royale est plus rare et plus difficile à trouver. \nTu vas sans doute devoir pénétrer plus profondément dans la kitinière, d'après nos informations il semblerait que tu puisses en trouver sur les grand kinchers de l'antichambre. \n\nAssure-toi d'être préparé avant d'y entrer.]
+	( self.gender = female )
+		la_substance_royale_kmn04_step1_aiguillagenpc2_f	[La substance royale est plus rare et plus difficile à trouver. \nTu vas sans doute devoir pénétrer plus profondément dans la kitinière, d'après nos informations il semblerait que tu puisses en trouver sur les grand kinchers de l'antichambre. \n\nAssure-toi d'être préparée avant d'y entrer.]
+}
+
+LA_SUBSTANCE_ROYALE_P_MSG_FULL ()
+{
+	la_substance_royale_p_msg_full	[Faites de la place dans votre inventaire et retourner récupérer de la substance_royale.]
+}
+
+LA_SUBSTANCE_ROYALE_KM04_LOOT_1 (item i1, int qt1, int qual1)
+{
+	la_substance_royale_km04_loot_1	[Trouvez 10 extraits de substance kitin royale de qualité égale à 200.]
+}
+
+LA_SUBSTANCE_ROYALE_KMN04_SYSTEM (bot givervar)
+{
+	la_substance_royale_kmn04_system	[Vous avez trouvé suffisamment d'extraits pour les rapporter à $givervar$.]
+}
+
+LA_SUBSTANCE_ROYALE_KMN04_GIVEITEM_1 (item i1, int qt1, int qual1, bot givervar)
+{
+	la_substance_royale_kmn04_giveitem_1	[Donnez le fruit de votre chasse à $givervar$.]
+}
+
+LA_SUBSTANCE_ROYALE_KMN04_STEP3_RECEIVEITEM ()
+{
+	la_substance_royale_kmn04_step3_receiveitem	[Bon, j'espère qu'elle ne va pas avoir un résultat... différent de celui qu'on attend, cette fois. Attend un instant, je vais vérifier tout de suite.]
+}
+
+LA_SUBSTANCE_ROYALE_KMN04_STEP4_GOSEENPC2 (bot NPC2)
+{
+	la_substance_royale_kmn04_step4_goseenpc2	[C'est bon ! Je sens ma force augmenter. Ca marche ! Mais apparemment, il faut pas mal de substance pour obtenir un effet convenable. \n\nVa voir $NPC2$, je vais lui envoyer tout ça, et elle pourra en faire quelque chose qui te sera utile.]
+}
+
+LA_SUBSTANCE_ROYALE_KMN04_STEP5_CONCLUSION (bot NPC2, bot givervar)
+{
+	la_substance_royale_kmn04_step5_conclusion	[$givervar$ m'envoie au sujet de la substance.]
+}
+
+LA_SUBSTANCE_ROYALE_KMN04_STEP5_THEEND ()
+{
+	la_substance_royale_kmn04_step5_theend	[Oui, nous avons pu en faire des potions. Une gorgée augmentera tes capacités de combat pour un bon moment. Dommage qu'on n'ait pas pu en faire davantage...]
+}
+
+LA_SUBSTANCE_ROYALE_P_5DEFENSES_FAILED (bot NPC2)
+{
+	la_substance_royale_p_5defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $NPC2$. Faites de la place et parlez lui.]
+}
+
+LA_SUBSTANCE_ROYALE_P_5DEFENSES_FAILED_RECEIVE (bot NPC2)
+{
+	la_substance_royale_p_5defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+LA_SUBSTANCE_ROYALE_P_5DEFENSES_INVENTORY_OK ()
+{
+	la_substance_royale_p_5defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+LA_SUBSTANCE_ROYALE_KMN04_ABANDON ()
+{
+	la_substance_royale_kmn04_abandon	[Je te laisse le temps de la reflexion, ces décisions ne sont pas à prendre à la légère.]
+}
+
+RESIDUS_DOEUFS_KMN05_TITLE (bot giver)
+{
+	residus_doeufs_kmn05_title	[Résidus d'oeufs]
+}
+
+RESIDUS_DOEUFS_KMN05_DESC (bot giver)
+{
+	residus_doeufs_kmn05_desc	[Récupérer des résidus d'oeufs dans la kitinière.]
+}
+
+RESIDUS_DOEUFS_KMN05_INTRO ()
+{
+	residus_doeufs_kmn05_intro	[Des nouvelles très intéressantes ! Il parait que certains résidus d'oeufs de la kitinière ont d'excellentes propriétés pour la fabrique d'armure. \nEst-ce que ça t'intéresserait de partir en chercher quelques-uns ?]
+}
+
+RESIDUS_DOEUFS_KMN05_OUI ()
+{
+	residus_doeufs_kmn05_oui	[Avec plaisir.]
+}
+
+RESIDUS_DOEUFS_KMN05_NON ()
+{
+	residus_doeufs_kmn05_non	[Sans moi, désolé.]
+}
+
+RESIDUS_DOEUFS_KMN05_STEP1_VISITINFO ()
+{
+	residus_doeufs_kmn05_step1_visitinfo	[Bien, bien ! Il me semble qu'une des salles de l'antre est spécialement réservée à la conservation de ces oeufs...]
+}
+
+RESIDUS_DOEUFS_KMN02_SYSMSG ()
+{
+	residus_doeufs_kmn02_sysmsg	[Faites de la place dans votre inventaire pour continuer la mission.]
+}
+
+RESIDUS_DOEUFS_KMN05_STEP2_OVERLOAD (place place_oeuf)
+{
+	residus_doeufs_kmn05_step2_overload	[Récupérez des résidus d'oeuf dans la salle des oeufs de la kitinière.]
+}
+
+RESIDUS_DOEUFS_KMN05_SYSTEM ()
+{
+	residus_doeufs_kmn05_system	[Vous récupérez un résidu d'oeuf.]
+}
+
+RESIDUS_DOEUFS_KMN05_OVRLOAD_GIVEITEM_1 (item i1, int qt1, int qual1, bot givervar)
+{
+	residus_doeufs_kmn05_ovrload_giveitem_1	[Donnez le fruit de votre prospection à $givervar$.]
+}
+
+RESIDUS_DOEUFS_KMN05_STEP3_RECEIVEITEM ()
+{
+	residus_doeufs_kmn05_step3_receiveitem	[Ah ! Nous allons pouvoir confirmer cette théorie. Nous allons faire quelques tests sur ces résidus... \n\nOn pourra peut-être en faire bon usage. Voici pour toi, et n'hésite pas à revenir si tu veux faire d'autres recherches.]
+}
+
+RESIDUS_DOEUFS_KMN05_ABANDON ()
+{
+	residus_doeufs_kmn05_abandon	[Ma foi je te comprends, il faudrait être fou pour accepter...]
+}
+
+LA_NOUVELLE_ARMURE_KMN07_TITLE (bot giver)
+{
+	la_nouvelle_armure_kmn07_title	[La nouvelle armure]
+}
+
+LA_NOUVELLE_ARMURE_KMN07_DESC (bot giver, bot givervar)
+{
+	la_nouvelle_armure_kmn07_desc	[Récupérer des matériaux pour l'armure de $givervar$]
+}
+
+LA_NOUVELLE_ARMURE_KM07_INTRO ()
+{
+	la_nouvelle_armure_km07_intro	[Hum. J'ai besoin de matériaux pour ma prochaine armure, mais le dernier explorateur que j'ai envoyé dans la kitinière n'a pas eu beaucoup de chance. \n\nOn n'a retrouvé de lui qu'un parchemin sur lequel il avait noté les endroits où on peut trouver ce que je recherche. {break}Ca te dirait de prendre sa place ? Si tu penses pouvoir mieux t'en sortir que lui, bien sûr...]
+}
+
+LA_NOUVELLE_ARMURE_KMN07_OUI ()
+{
+	la_nouvelle_armure_kmn07_oui	[Je me sens de taille.]
+}
+
+LA_NOUVELLE_ARMURE_KMN07_NON ()
+{
+	la_nouvelle_armure_kmn07_non	[Plus tard, peut-être.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_INSTRUCTIONS ()
+{
+	la_nouvelle_armure_km07_instructions	[Bien. Alors voilà les indications que j'ai pu récupérer, toutes les matières nécessaires se trouvent dans les mines obscures par delà la salle des oeufs. \n\nLes informations sont parcellaires mais suffisantes : Va tout de suite à l'Ouest en sortant de la salle des oeufs... Ensuite, de là, suis le long couloir te menant à l'opposée jusqu'à un cul-de-sac... {break}Et enfin, de cet endroit rendez-toi à l'extrême Nord-Est de la mine. \n\nVoilà, tu dois aller à ces trois endroits et récupérer les matériaux qui y sont... enfin, qui devraient y être]
+}
+
+LA_NOUVELLE_ARMURE_KM07_SYSMSG ()
+{
+	la_nouvelle_armure_km07_sysmsg	[Faites de la place dans votre inventaire]
+}
+
+LA_NOUVELLE_ARMURE_KM07_GOAL (bot givervar)
+{
+	la_nouvelle_armure_km07_goal	[Rendez-vous dans les mines obscrures aux endroits indiqués par $givervar$, et forez :\n10 huiles de koorin excellentes de qualité au moins égale à 100.\n10 écorces de oath excellentes de qualité au moins égale à 100.\n10 sèves ardentes excellentes de qualité au moins égale à 100.\n10 huiles irin excellentes de qualité au moins égale à 100.\n10 boucles de bois scrath excellentes de qualité au moins égale à 100.\n10 résines de lune excellentes de qualité au moins égale à 100.\n10 fibres shu excellentes de qualité au moins égale à 100.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_SYSDONE1 ()
+{
+	la_nouvelle_armure_km07_sysdone1	[Vous avez récolté toutes les huiles koorin nécessaires.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_SYSDONE2 ()
+{
+	la_nouvelle_armure_km07_sysdone2	[Vous avez récolté toutes les écorces de oath nécessaires.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_SYSDONE3 ()
+{
+	la_nouvelle_armure_km07_sysdone3	[Vous avez récolté toutes les sèves ardentes nécessaires.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_SYSDONE4 ()
+{
+	la_nouvelle_armure_km07_sysdone4	[Vous avez récolté toutes les huiles irin nécessaires.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_SYSDONE5 ()
+{
+	la_nouvelle_armure_km07_sysdone5	[Vous avez récolté toutes les boucles de bois scrath nécessaires.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_SYSDONE6 ()
+{
+	la_nouvelle_armure_km07_sysdone6	[Vous avez récolté toutes les résines de lune nécessaires.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_SYSDONE7 ()
+{
+	la_nouvelle_armure_km07_sysdone7	[Vous avez récolté toutes les fibres shu nécessaires.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_SYSMSG1 (bot givervar)
+{
+	la_nouvelle_armure_km07_sysmsg1	[Vous avez trouvé tous les matériaux demandés par $givervar$.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_OVRLOAD_1 (item i1, int qt1, int qual1, bot giver, bot givervar)
+{
+	la_nouvelle_armure_km07_ovrload_1	[Allez apporter le fruit de vos forages à $givervar$.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_OVRLOAD_2 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, bot giver, bot givervar)
+{
+	la_nouvelle_armure_km07_ovrload_2	[Allez apporter le fruit de vos forages à $givervar$.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_OVRLOAD_3 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, bot giver, bot givervar)
+{
+	la_nouvelle_armure_km07_ovrload_3	[Allez apporter le fruit de vos forages à $givervar$.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_OVRLOAD_4 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, item i4, int qt4, int qual4, bot giver, bot givervar)
+{
+	la_nouvelle_armure_km07_ovrload_4	[Allez apporter le fruit de vos forages à $givervar$.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_OVRLOAD_5 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, item i4, int qt4, int qual4, item i5, int qt5, int qual5, bot giver, bot givervar)
+{
+	la_nouvelle_armure_km07_ovrload_5	[Allez apporter le fruit de vos forages à $givervar$.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_OVRLOAD_6 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, item i4, int qt4, int qual4, item i5, int qt5, int qual5, item i6, int qt6, int qual6, bot giver, bot givervar)
+{
+	la_nouvelle_armure_km07_ovrload_6	[Allez apporter le fruit de vos forages à $givervar$.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_OVRLOAD_7 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, item i4, int qt4, int qual4, item i5, int qt5, int qual5, item i6, int qt6, int qual6, item i7, int qt7, int qual7, bot giver, bot givervar)
+{
+	la_nouvelle_armure_km07_ovrload_7	[Allez apporter le fruit de vos forages à $givervar$.]
+}
+
+LA_NOUVELLE_ARMURE_KMN07_STEP3_BOTCHAT ()
+{
+	la_nouvelle_armure_kmn07_step3_botchat	[Hmm. Tu as donc réussi. Tu sembles efficace... peut-être que je vais avoir autre chose à te confier, prochainement.{break}En attendant, je vais te faire profiter de mes talents. \n\nGrâce aux matériaux que tu m'as ramenés je vais pouvoir te faire une armure sur mesure. \nReviens me voir d'ici peu afin de récupérer ta récompense.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_WAITOVRLOAD_1 (bot givervar)
+{
+	la_nouvelle_armure_km07_waitovrload_1	[Vous devez attendre le temps imparti avant de revenir vers $givervar$.]
+}
+
+LA_NOUVELLE_ARMURE_KMN07_STEP3_TALKTO (bot givervar)
+{
+	la_nouvelle_armure_kmn07_step3_talkto	[Retournez voir $givervar$ pour récupérer votre récompense.]
+}
+
+LA_NOUVELLE_ARMURE_KMN07_STEP5_OVERLOAD (bot givervar)
+{
+	la_nouvelle_armure_kmn07_step5_overload	[Je viens récupérer mon armure.]
+}
+
+LA_NOUVELLE_ARMURE_KMN07_STEP4_BOTCHAT ()
+{
+	la_nouvelle_armure_kmn07_step4_botchat	[Voilà, j'ai fini mon ouvrage. Choisis la pièce qui te sied.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_RWARD ()
+{
+	la_nouvelle_armure_km07_rward	[Choisis une pièce d'armure je te prie :]
+}
+
+LA_NOUVELLE_ARMURE_KM07_CHOIX1 ()
+{
+	la_nouvelle_armure_km07_choix1	[La veste précieuse de la kitinière.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_CHOIX2 ()
+{
+	la_nouvelle_armure_km07_choix2	[Les manches précieuses de la kitinière.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_CHOIX3 ()
+{
+	la_nouvelle_armure_km07_choix3	[Le pantalon précieux de la kitinière.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_CHOIX4 ()
+{
+	la_nouvelle_armure_km07_choix4	[Les gants précieux de la kitinière.]
+}
+
+LA_NOUVELLE_ARMURE_KM07_CHOIX5 ()
+{
+	la_nouvelle_armure_km07_choix5	[Les bottes précieuses de la kitinière.]
+}
+
+LA_NOUVELLE_ARMURE_P_1DEFENSES_FAILED (bot givervar)
+{
+	la_nouvelle_armure_p_1defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+LA_NOUVELLE_ARMURE_P_1DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	la_nouvelle_armure_p_1defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+LA_NOUVELLE_ARMURE_P_1DEFENSES_INVENTORY_OK ()
+{
+	la_nouvelle_armure_p_1defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+LA_NOUVELLE_ARMURE_P_5DEFENSES_FAILED (bot givervar)
+{
+	la_nouvelle_armure_p_5defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+LA_NOUVELLE_ARMURE_P_5DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	la_nouvelle_armure_p_5defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+LA_NOUVELLE_ARMURE_P_5DEFENSES_INVENTORY_OK ()
+{
+	la_nouvelle_armure_p_5defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+LA_NOUVELLE_ARMURE_P_4DEFENSES_FAILED (bot givervar)
+{
+	la_nouvelle_armure_p_4defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+LA_NOUVELLE_ARMURE_P_4DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	la_nouvelle_armure_p_4defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+LA_NOUVELLE_ARMURE_P_4DEFENSES_INVENTORY_OK ()
+{
+	la_nouvelle_armure_p_4defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+LA_NOUVELLE_ARMURE_P_3DEFENSES_FAILED (bot givervar)
+{
+	la_nouvelle_armure_p_3defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+LA_NOUVELLE_ARMURE_P_3DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	la_nouvelle_armure_p_3defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+LA_NOUVELLE_ARMURE_P_3DEFENSES_INVENTORY_OK ()
+{
+	la_nouvelle_armure_p_3defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+LA_NOUVELLE_ARMURE_P_2DEFENSES_FAILED (bot givervar)
+{
+	la_nouvelle_armure_p_2defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+LA_NOUVELLE_ARMURE_P_2DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	la_nouvelle_armure_p_2defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+LA_NOUVELLE_ARMURE_P_2DEFENSES_INVENTORY_OK ()
+{
+	la_nouvelle_armure_p_2defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+LA_NOUVELLE_ARMURE_KMN07_ABANDON ()
+{
+	la_nouvelle_armure_kmn07_abandon	[C'est entendu, plus tard peut être...]
+}
+
+ENCORE_PLUS_RESISTANTE_KMN08_TITLE (bot giver)
+{
+	encore_plus_resistante_kmn08_title	[Encore plus résistante !]
+}
+
+ENCORE_PLUS_RESISTANTE_KMN08_DESC (bot giver, bot givervar)
+{
+	encore_plus_resistante_kmn08_desc	[Récupérer des matériaux pour $givervar$]
+}
+
+ENCORE_PLUS_RESISTANTE_KMN08_INTRO ()
+{
+	( self.gender = male )
+		encore_plus_resistante_kmn08_intro_m	[J'ai besoin de plus de matériaux, mes stocks s'épuisent à vue d'oeil. \nJ'aurai besoin d'un certain nombre de matériaux nobles, et comme tu dois sûrement le deviner on ne trouve ces ressources que dans la kitinière, mais cela risque d'être encore plus difficile qu'auparavant. \nEs-tu intéressé ?]
+	( self.gender = female )
+		encore_plus_resistante_kmn08_intro_f	[J'ai besoin de plus de matériaux, mes stocks s'épuisent à vue d'oeil. \nJ'aurai besoin d'un certain nombre de matériaux nobles, et comme tu dois sûrement le deviner on ne trouve ces ressources que dans la kitinière, mais cela risque d'être encore plus difficile qu'auparavant. \nEs-tu intéressée ?]
+}
+
+ENCORE_PLUS_RESISTANTE_KMN08_OUI ()
+{
+	encore_plus_resistante_kmn08_oui	[Je vais y aller.]
+}
+
+ENCORE_PLUS_RESISTANTE_KMN08_NON ()
+{
+	encore_plus_resistante_kmn08_non	[Sans façon.]
+}
+
+ENCORE_PLUS_RESISTANTE_KMN08_STEP1_INSTRUCTIONS ()
+{
+	encore_plus_resistante_kmn08_step1_instructions	[Les ressources dont j'ai besoin se trouvent dans les mines obscures, mais les plus rares se trouvent dans l'antichambre de la reine. \n\nSi ça peut t'aider, je crois que les kitins ont pour habitude de les placer sur le bord de la salle. \n\nNe me demande pas pourquoi, ces créatures ont des raisons que nous ignorons...]
+}
+
+ENCORE_PLUS_RESISTANTE_KM07_SYSMSG ()
+{
+	encore_plus_resistante_km07_sysmsg	[Faites de la place dans votre inventaire]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_SYSDONE1 ()
+{
+	encore_plus_resistante_km08_sysdone1	[Vous avez récolté toutes les écorces beckers nécessaires.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_SYSDONE2 ()
+{
+	encore_plus_resistante_km08_sysdone2	[Vous avez récolté toutes les huiles gulatch nécessaires.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_SYSDONE3 ()
+{
+	encore_plus_resistante_km08_sysdone3	[Vous avez récolté toutes les fibres buo nécessaires.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_SYSDONE4 ()
+{
+	encore_plus_resistante_km08_sysdone4	[Vous avez récolté toutes les fibres d'anete nécessaires.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_SYSDONE5 ()
+{
+	encore_plus_resistante_km08_sysdone5	[Vous avez récolté toutes les ambres pha nécessaires.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_SYSDONE6 ()
+{
+	encore_plus_resistante_km08_sysdone6	[Vous avez récolté toutes les résines fung nécessaires.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_SYSDONE7 ()
+{
+	encore_plus_resistante_km08_sysdone7	[Vous avez récolté toutes les larves de kitin nécessaires.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_SYSMSG (bot givervar)
+{
+	encore_plus_resistante_km08_sysmsg	[Vous avez récupéré tous les matériaux demandés par $givervar$.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_OVRLOAD_1 (item i1, int qt1, int qual1, bot giver, bot givervar)
+{
+	encore_plus_resistante_km08_ovrload_1	[Allez apporter le fruit de vos forages à $givervar$.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_OVRLOAD_2 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, bot giver, bot givervar)
+{
+	encore_plus_resistante_km08_ovrload_2	[Allez apporter le fruit de vos forages à $givervar$.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_OVRLOAD_3 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, bot giver, bot givervar)
+{
+	encore_plus_resistante_km08_ovrload_3	[Allez apporter le fruit de vos forages à $givervar$.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_OVRLOAD_4 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, item i4, int qt4, int qual4, bot giver, bot givervar)
+{
+	encore_plus_resistante_km08_ovrload_4	[Allez apporter le fruit de vos forages à $givervar$.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_OVRLOAD_5 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, item i4, int qt4, int qual4, item i5, int qt5, int qual5, bot giver, bot givervar)
+{
+	encore_plus_resistante_km08_ovrload_5	[Allez apporter le fruit de vos forages à $givervar$.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_OVRLOAD_6 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, item i4, int qt4, int qual4, item i5, int qt5, int qual5, item i6, int qt6, int qual6, bot giver, bot givervar)
+{
+	encore_plus_resistante_km08_ovrload_6	[Allez apporter le fruit de vos forages à $givervar$.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_OVRLOAD_7 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, item i4, int qt4, int qual4, item i5, int qt5, int qual5, item i6, int qt6, int qual6, item i7, int qt7, int qual7, bot giver, bot givervar)
+{
+	encore_plus_resistante_km08_ovrload_7	[Allez apporter le fruit de vos forages à $givervar$.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_BOTCHAT (bot player)
+{
+	encore_plus_resistante_km08_botchat	[Efficace, comme toujours. Tu m'en as même rapporté davantage que je ne pensais... \n\nJe vais enfin pouvoir renflouer mes stocks, un grand merci $player$. \nReviens me voir dans quelques temps, je te prépare une surprise...]
+}
+
+ENCORE_PLUS_RESISTANTE_KM07_WAITOVRLOAD_1 (bot givervar)
+{
+	encore_plus_resistante_km07_waitovrload_1	[Vous devez attendre le temps imparti avant de revenir vers $givervar$.]
+}
+
+ENCORE_PLUS_RESISTANTE_KMN07_STEP3_TALKTO (bot givervar)
+{
+	encore_plus_resistante_kmn07_step3_talkto	[Retournez voir $givervar$ pour récupérer votre récompense.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM08_RWARDOVERLOAD (bot givervar)
+{
+	encore_plus_resistante_km08_rwardoverload	[Je viens récupérer ma surprise.]
+}
+
+ENCORE_PLUS_RESISTANTE_KMN07_STEP4_BOTCHAT ()
+{
+	encore_plus_resistante_kmn07_step4_botchat	[Voilà, j'ai fini mon ouvrage. je t'ai confectionné une très belle armure légère. Choisis ta pièce.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM07_RWARD ()
+{
+	encore_plus_resistante_km07_rward	[Choisis une pièce d'armure je te prie :]
+}
+
+ENCORE_PLUS_RESISTANTE_KM07_CHOIX1 ()
+{
+	encore_plus_resistante_km07_choix1	[La veste magique de la kitinière.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM07_CHOIX2 ()
+{
+	encore_plus_resistante_km07_choix2	[Les manches magiques de la kitinière.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM07_CHOIX3 ()
+{
+	encore_plus_resistante_km07_choix3	[La toge magique de la kitinière.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM07_CHOIX4 ()
+{
+	encore_plus_resistante_km07_choix4	[Les gants magiques de la kitinière.]
+}
+
+ENCORE_PLUS_RESISTANTE_KM07_CHOIX5 ()
+{
+	encore_plus_resistante_km07_choix5	[Les bottes magiques de la kitinière.]
+}
+
+ENCORE_PLUS_RESISTANTE_P_1DEFENSES_FAILED (bot givervar)
+{
+	encore_plus_resistante_p_1defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+ENCORE_PLUS_RESISTANTE_P_1DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	encore_plus_resistante_p_1defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+ENCORE_PLUS_RESISTANTE_P_1DEFENSES_INVENTORY_OK ()
+{
+	encore_plus_resistante_p_1defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+ENCORE_PLUS_RESISTANTE_P_5DEFENSES_FAILED (bot givervar)
+{
+	encore_plus_resistante_p_5defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+ENCORE_PLUS_RESISTANTE_P_5DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	encore_plus_resistante_p_5defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+ENCORE_PLUS_RESISTANTE_P_5DEFENSES_INVENTORY_OK ()
+{
+	encore_plus_resistante_p_5defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+ENCORE_PLUS_RESISTANTE_P_4DEFENSES_FAILED (bot givervar)
+{
+	encore_plus_resistante_p_4defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+ENCORE_PLUS_RESISTANTE_P_4DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	encore_plus_resistante_p_4defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+ENCORE_PLUS_RESISTANTE_P_4DEFENSES_INVENTORY_OK ()
+{
+	encore_plus_resistante_p_4defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+ENCORE_PLUS_RESISTANTE_P_3DEFENSES_FAILED (bot givervar)
+{
+	encore_plus_resistante_p_3defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+ENCORE_PLUS_RESISTANTE_P_3DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	encore_plus_resistante_p_3defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+ENCORE_PLUS_RESISTANTE_P_3DEFENSES_INVENTORY_OK ()
+{
+	encore_plus_resistante_p_3defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+ENCORE_PLUS_RESISTANTE_P_2DEFENSES_FAILED (bot givervar)
+{
+	encore_plus_resistante_p_2defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+ENCORE_PLUS_RESISTANTE_P_2DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	encore_plus_resistante_p_2defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+ENCORE_PLUS_RESISTANTE_P_2DEFENSES_INVENTORY_OK ()
+{
+	encore_plus_resistante_p_2defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+ENCORE_PLUS_RESISTANTE_KMN08_ABANDON ()
+{
+	encore_plus_resistante_kmn08_abandon	[Dommage, je vais devoir faire le deuil de mes beaux objets confectionnés avec amour... ]
+}
+
+PROSPECTER_MINES_KMADD_TITLE (bot giver)
+{
+	prospecter_mines_kmadd_title	[Etudier la mine nouvellement decouverte.]
+}
+
+PROSPECTER_MINES_KMADD_SPWMISSION (bot giver)
+{
+	prospecter_mines_kmadd_spwmission	[Prospecter la mine nouvellement decouverte afin de jauger sa qualite.]
+}
+
+PROSPECTER_MINES_KMADD_INSTRUCTIONS ()
+{
+	prospecter_mines_kmadd_instructions	[Pour ce faire tu vas devoir couvrir un large rayon de la mine, en tout cas suffisamment pour avoir une vision exacte des quantités et qualités des ressources qui s'y trouvent. \n\nPrends garde aux rondes des kitins, comme tu as pu t'en rendre compte ceux-ci patrouillent en groupe.]
+}
+
+PROSPECTER_MINES_KMADD_1_OVERLOAD_1 (item i1, int qt1, int qual1)
+{
+	prospecter_mines_kmadd_1_overload_1	[Forez pour obtenir une graine sarina suprême de qualité au moins égale à 50]
+}
+
+PROSPECTER_MINES_KMADD_2_OVERLOAD_1 (item i1, int qt1, int qual1)
+{
+	prospecter_mines_kmadd_2_overload_1	[Une graine silvio suprême de qualité au moins égale à 50.]
+}
+
+PROSPECTER_MINES_KMADD_3_OVERLOAD_1 (item i1, int qt1, int qual1)
+{
+	prospecter_mines_kmadd_3_overload_1	[Un fagot de bois d'etoya suprême de qualité au moins égale à 50.]
+}
+
+PROSPECTER_MINES_KMADD_4_OVERLOAD_1 (item i1, int qt1, int qual1)
+{
+	prospecter_mines_kmadd_4_overload_1	[De l'ambre soo suprême de qualité au moins égale à 50.]
+}
+
+PROSPECTER_MINES_KMADD_5_OVERLOAD_1 (item i1, int qt1, int qual1)
+{
+	prospecter_mines_kmadd_5_overload_1	[Une graine saurona suprême de qualité au moins égale à 50.]
+}
+
+PROSPECTER_MINES_KMADD_6_OVERLOAD_1 (item i1, int qt1, int qual1)
+{
+	prospecter_mines_kmadd_6_overload_1	[Un fagot de bois de kachine suprême de qualité au moins égale à 50.]
+}
+
+PROSPECTER_MINES_KMADD_COMPLETE_SYSMSG (bot givervar)
+{
+	prospecter_mines_kmadd_complete_sysmsg	[Vous avez rempli avec succès votre mission de prospection, retournez voir $givervar$.]
+}
+
+PROSPECTER_MINES_STEP6_COMPLETE_1 (item i1, int qt1, int qual1, bot givervar)
+{
+	prospecter_mines_step6_complete_1	[Donnez le fruit de votre prospection à $givervar$.]
+}
+
+PROSPECTER_MINES_STEP6_COMPLETE_2 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, bot givervar)
+{
+	prospecter_mines_step6_complete_2	[Donnez le fruit de votre prospection à $givervar$.]
+}
+
+PROSPECTER_MINES_STEP6_COMPLETE_3 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, bot givervar)
+{
+	prospecter_mines_step6_complete_3	[Donnez le fruit de votre prospection à $givervar$.]
+}
+
+PROSPECTER_MINES_STEP6_COMPLETE_4 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, item i4, int qt4, int qual4, bot givervar)
+{
+	prospecter_mines_step6_complete_4	[Donnez le fruit de votre prospection à $givervar$.]
+}
+
+PROSPECTER_MINES_STEP6_COMPLETE_5 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, item i4, int qt4, int qual4, item i5, int qt5, int qual5, bot givervar)
+{
+	prospecter_mines_step6_complete_5	[Donnez le fruit de votre prospection à $givervar$.]
+}
+
+PROSPECTER_MINES_STEP6_COMPLETE_6 (item i1, int qt1, int qual1, item i2, int qt2, int qual2, item i3, int qt3, int qual3, item i4, int qt4, int qual4, item i5, int qt5, int qual5, item i6, int qt6, int qual6, bot givervar)
+{
+	prospecter_mines_step6_complete_6	[Donnez le fruit de votre prospection à $givervar$.]
+}
+
+PROSPECTER_MINES_KMADD_END (bot player)
+{
+	prospecter_mines_kmadd_end	[Bravo, les informations que nous allons retirer de ta prospection vont nous être très utiles... \n\nAux dernières nouvelles il semblerait que cette mine ne servirait que d'appoint, il y en aurait une autre ! \nDonc ne t'éloigne pas trop nous pourrions, encore, avoir besoin de tes services $player$.]
+}
+
+PROSPECTER_MINES_KMADD_OVERLOAD1 (bot givervar)
+{
+	prospecter_mines_kmadd_overload1	[Fais le choix de ta récompense.]
+}
+
+PROSPECTER_MINES_KMADD_TALKTO (bot givervar)
+{
+	prospecter_mines_kmadd_talkto	[Je souhaite choisir ma récompense.]
+}
+
+PROSPECTER_MINES_KMADD_REWARD (bot player)
+{
+	prospecter_mines_kmadd_reward	[En attendant voici ton tribut, tu l'as largement mérité $player$. Tu as le choix entre quatre types de consommables :]
+}
+
+PROSPECTER_MINES_KP_15_STEP_3_CHOIX1 ()
+{
+	prospecter_mines_kp_15_step_3_choix1	[Un consommable qui augmente ton niveau de sève.]
+}
+
+PROSPECTER_MINES_KP_15_STEP_4_CHOIX2 ()
+{
+	prospecter_mines_kp_15_step_4_choix2	[Un consommable améliorant ta force.]
+}
+
+PROSPECTER_MINES_KP_15_STEP_5_CHOIX3 ()
+{
+	prospecter_mines_kp_15_step_5_choix3	[Un consommable améliorant ta concentration.]
+}
+
+PROSPECTER_MINES_KP_15_STEP_6_CHOIX4 ()
+{
+	prospecter_mines_kp_15_step_6_choix4	[Un consommable améliorant ta constitution.]
+}
+
+PROSPECTER_MINES_KP_15_STEP_4_CHOIX1 (bot player)
+{
+	prospecter_mines_kp_15_step_4_choix1	[Et encore bravo, tu nous a été d'un grand secours $player$.]
+}
+
+PROSPECTER_MINES_P_1DEFENSES_FAILED (bot givervar)
+{
+	prospecter_mines_p_1defenses_failed	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parlez lui.]
+}
+
+PROSPECTER_MINES_P_1DEFENSES_FAILED_RECEIVE (bot givervar)
+{
+	prospecter_mines_p_1defenses_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+PROSPECTER_MINES_P_1DEFENSES_INVENTORY_OK ()
+{
+	prospecter_mines_p_1defenses_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+

@@ -1,0 +1,30 @@
+﻿R_11_08_MIS_TITLE (bot giver)
+{
+	r_11_08_mis_title	[Le grand essaim]
+}
+
+R_11_08_MIS_DESC (bot giver)
+{
+	r_11_08_mis_desc	[La guerre contre les Kitins fut le plus grand conflit qu'a connu le peuple Fyros. Le combat n'est pas fini pour autant et les Fyros luttent toujours contre leur grand ennemi. Participez vous aussi à ce combat.]
+}
+
+R_11_08_P_LDF_INTRO (place region_fft, place village_dyron, place ville_pyr)
+{
+	r_11_08_p_ldf_intro	[Salutations à toi, aventurier. Tu as probablement envie d'en savoir plus sur cette guerre incessante que nous menons contre les Kitins. C'est une longue histoire mais je n'ai pas envie de t'ennuyer avec des discours vieillissants. Si tu veux réellement connaître la nature de ce combat, il te faudra monter toi aussi au créneau. {break} A mi-chemin entre notre bonne vieille capitale de $ville_pyr$ et le village exposé de $village_dyron$ se trouve la région $region_fft$. Rends-y toi et mesure-toi aux dangereuses créatures que tu y rencontreras.]
+}
+
+R_11_08_M_T2_SAGE_1 (bot giver)
+{
+	r_11_08_m_t2_sage_1	[J'ai tué les kitins.]
+}
+
+R_11_08_P_BC_SAGE_1 (place region_fsm)
+{
+	r_11_08_p_bc_sage_1	[On peut dire que tu sais te battre. Nos rangs pourraient parfois avoir besoin de combattants fougueux tels que toi. Mais ceci n'était qu'un préliminaire, lors des grandes guerres kitins, nos guerriers ont affronté des nuées d'ennemis que tu viens de terrasser mais également quelques créatures beaucoup plus fortes. {break}Tu as peut-être aperçu dans la région $region_fsm$ un Kitin très spécial, ton défi sera maintenant d'aller l'affronter pour vivre les situations qu'ont connus nos valeureux guerriers. Mais je te conseille de recruter quelques amis car un groupe d'aventuriers ne serait pas de trop contre un tel monstre.{break}N'oublie pas de me ramener une preuve de ton succès.]
+}
+
+R_11_08_P_BC_DEBRIEF ()
+{
+	r_11_08_p_bc_debrief	[Félicitations jeune homin, tu as survécu aux terribles kitins. Tu n'auras donc pas connu le sort de nombre de mes frères Fyros. Mais les dangers que tu as affrontés sont loin d'être de la hauteur de ceux rencontrés par nos guerriers pendant les terribles guerres kitins.{break}En tout cas tu as bien mérité ce cube d'ambre qui te contera toute l'histoire.]
+}
+

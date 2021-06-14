@@ -1,0 +1,484 @@
+﻿CWINTROFYROS_SHOPS_LOW_SYSMES (place shops_low)
+{
+	cwintrofyros_shops_low_sysmes	[&AMB&Vous êtes à $shops_low$. Ici vous pourrez trouver tous les magasins et les entraineurs dont vous aurez besoin]
+}
+
+CWINTROFYROS_SHOPS_TRAINERS_OVERLOAD (place trainers)
+{
+	cwintrofyros_shops_trainers_overload	[Rendez-vous à $trainers$]
+}
+
+CWINTROFYROS_TRAINERS_SYSMES (place trainers)
+{
+	cwintrofyros_trainers_sysmes	[&AMB&Vous êtes à $trainers$. A l'intérieur vous trouverez les entraineurs qui vous permettront de progresser dans la voie que vous aurez choisi]
+}
+
+CWINTROFYROS_OUTOFROOM_MSG ()
+{
+	cwintrofyros_outofroom_msg	[&SYS&Vous n'avez plus de place dans votre inventaire. Demandez à nouveau l'objet quand vous en aurez fait.]
+}
+
+CWINTROFYROS_OUTOFROOM_OVERLOAD (bot givervar)
+{
+	cwintrofyros_outofroom_overload	[Faites de la place avant de demander à nouveau l'objet.]
+}
+
+CWINTROFYROS_OUTOFROOM_PHRASE (bot givervar)
+{
+	cwintrofyros_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+CWINTROFYROS_OUTOFROOM_BOTCHAT ()
+{
+	cwintrofyros_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+CWFF01_TITLE (bot giver)
+{
+	cwff01_title	[Le garde et les izams]
+}
+
+CWFF01_DESC (bot giver)
+{
+	cwff01_desc	[Les chef de la garde a besoin de vous pour se débarasser des izams]
+}
+
+CWFF01_INSTRUCTIONS (bot chef, place city)
+{
+	( self.gender = male )
+		cwff01_instructions_m	[Bien, je vois que vous êtes un homin courageux et prêt à donner de son temps et de sa sève pour la gloire de notre citée. Allez voir $chef$, le chef de la garde de $city$, il devrait avoir du travail pour vous.]
+	( self.gender = female )
+		cwff01_instructions_f	[Bien, je vois que vous êtes une homine courageuse et prête à donner de son temps et de sa sève pour la gloire de notre citée. Allez voir $chef$, le chef de la garde de $city$, il devrait avoir du travail pour vous.]
+}
+
+CWFF01_STEP1_PHRASE (bot chef, bot givervar)
+{
+	cwff01_step1_phrase	[Bonjour, $givervar$ m'envoie]
+}
+
+CWFF01_DIALOG_CHEF ()
+{
+	cwff01_dialog_chef	[Encore une nouvelle recrue ? Qu'est ce que vous avez à tous vous prendre pour des héros ? Vous voulez vous rendre utile ? Et bien...Pourquoi pas après tout. La tour de garde au Nord-Est de la ville est envahie par les izams. Si vous voulez nous rendre service et me prouver que vous valez quelque chose, allez m'en débarasser.]
+}
+
+CWFF01_STEP2_ROLEPLAY_1 (creature_model izam, int q1, place city)
+{
+	cwff01_step2_roleplay_1	[Tuez les izams autour de la tour de gardes au Nord-Est de $city$]
+}
+
+CWFF01_STEP3_PHRASE (bot chef)
+{
+	cwff01_step3_phrase	[Ca y est j'ai tué des izams !]
+}
+
+CWFF01_OUTOFROOM_MSG ()
+{
+	cwff01_outofroom_msg	[&SYS&Vous n'avez plus de place dans votre inventaire. Demandez à nouveau l'objet quand vous en aurez fait.]
+}
+
+CWFF01_OUTOFROOM_OVERLOAD (bot chef)
+{
+	cwff01_outofroom_overload	[Faites de la place avant de demander à nouveau l'objet.]
+}
+
+CWFF01_OUTOFROOM_PHRASE (bot chef)
+{
+	cwff01_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+CWFF01_OUTOFROOM_BOTCHAT ()
+{
+	cwff01_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+CWFF01_DIALOG_REWARD ()
+{
+	cwff01_dialog_reward	[Et bien, je vois que vous ne vous débrouillez pas si mal que ça. On pourra peut-être faire quelque chose de vous. Tenez, prenez ça, je suis peut être un peu rude mais je sais être reconaissant.]
+}
+
+CWFF02_TITLE (bot giver)
+{
+	cwff02_title	[Eliminer les kitins]
+}
+
+CWFF02_DESC (bot giver, place city)
+{
+	cwff02_desc	[Trop de kitins sont présents autour de $city$. Aidez les autorités à les éliminer.]
+}
+
+CWFF02_INSTRUCTIONS (bot chef, bot player)
+{
+	cwff02_instructions	[$player$ ! Ca fait plaisir de vous voir. $chef$ m'a dit que vous aviez rempli la mission qu'il vous avait donné avec succès. Il n'en a pas l'air comme ça mais sous ses airs bourrus il sait reconnaître la valeur des gens...Et je crois qu'il vous aime bien ! Il me semble d'ailleurs qu'il aurait un autre service à vous demander. Vous devriez aller le voir.]
+}
+
+CWFF02_STEP1_PHRASE (bot chef)
+{
+	cwff02_step1_phrase	[Bonjour, vous avez de nouveau besoin de mes services ?]
+}
+
+CWFF02_DIALOG_CHEF (bot player)
+{
+	cwff02_dialog_chef	[Bonjour $player$. Effectivement votre aide est la bienvenue. Même si la Guerre des Kitins a eu lieu il y a des années, la menace plane toujours sur nos peuples. Les Kamis nous protègent mais nous devons savoir nous défendre par nous même. De plus en plus de Kitins apparaissent ces derniers temps et même s'ils ne sont pas agressifs, cela ne laisse rien présager de bon. Nous devons montrer à ces Kitins que le peuple Fyros n'a rien perdu de sa force. Je vous demande donc de tuer un maximum de ces sales bêtes pour leur faire passer l'envie d'envahir notre citée.]
+}
+
+CWFF02_STEP3_OVERLOAD (bot chef)
+{
+	cwff02_step3_overload	[Faites votre rapport à $chef$]
+}
+
+CWFF02_STEP3_PHRASE (bot chef, creature_model kitin)
+{
+	cwff02_step3_phrase	[J'ai tué une bonne partie des $kitin$]
+}
+
+CWFF02_DIALOG_REWARD (bot givervar, bot player)
+{
+	cwff02_dialog_reward	[Bien joué $player$. Je vois que $givervar$ avait raison de vous faire confiance. Vous pourriez bien être utile à l'Empire Fyros si vous continuez dans cette voie.]
+}
+
+CWFF03_TITLE (bot giver)
+{
+	cwff03_title	[Un oeuf pour l'empereur]
+}
+
+CWFF03_DESC (bot giver)
+{
+	cwff03_desc	[Cherchez un oeuf pour le cusinier de l'empereur.]
+}
+
+CWFF03_INSTRUCTIONS (bot chef, bot cuisinier)
+{
+	cwff03_instructions	[Vous avez été à la hauteur de mes espérances en aidant $chef$ à se débarasser des Kitins. Vous tombez à pic, je connais quelqu'un qui aurait encore besoin de vos services. Il s'agit de $cuisinier$, le chef cuisinier impérial. Il me semble qu'il a besoin de l'aide d'un guerrier, je pense que vous feriez très bien l'affaire.]
+}
+
+CWFF03_STEP1_PHRASE (bot cuisinier, bot givervar)
+{
+	cwff03_step1_phrase	[Bonjour, $givervar$ m'envoie]
+}
+
+CWFF03_DIALOG_CHEF (bot chasseur, place dunes)
+{
+	cwff03_dialog_chef	[Ha vous me sauvez d'un grand pétrin (pour un cuisinier c'est un comble). Figurez-vous que l'Empereur Dexton raffole des oeufs de Goari au petit déjeuné. Par malheur, un apprenti a cassé les derniers que nous avions (il va passer un mauvais quart d'heure celui-là).{break}Je suis vraiment trop débordé pour pouvoir en chercher un. Vous me rendriez un grand service en m'en rapportant (et surtout ça m'évitera les foudres de l'Empereur). Allez voir $chasseur$ dans les $dunes$, elle vous expliquera comment en trouver.]
+}
+
+CWFF03_STEP2_OVERLOAD (bot chasseur)
+{
+	cwff03_step2_overload	[Trouver $chasseur$ et demandez-lui comment trouver un oeuf de Goari]
+}
+
+CWFF03_STEP2_PHRASE (bot chasseur)
+{
+	cwff03_step2_phrase	[Bonjour, il parrait que vous savez comment trouver un oeuf de Goari ?]
+}
+
+CWFF03_DIALOG_CHASSEUR ()
+{
+	( self.gender = male )
+		cwff03_dialog_chasseur_m	[Bonjour, vous cherchez un oeuf de Goari ? Vous êtes sois très fort sois complètement inconscient... Ha c'est pour l'Empereur... Bien, je vais vous dire comment faire pour en trouver mais soyez prudent.{break}Il faut savoir que les mères porteuses Goari raffolent des termites. Le moyen le plus simple pour en trouver une est donc de vous rendre dans une termitière. En excitant ces petites bêtes vous attirerez sans doute l'attention de l'une d'elles. Il vous suffira alors de la tuer pour récupérer son oeuf. Mais soyez prudent, elles sont encore plus aggressives et violentes que les autres Goaris. Bonne chance à vous.]
+	( self.gender = female )
+		cwff03_dialog_chasseur_f	[Bonjour, vous cherchez un oeuf de Goari ? Vous êtes sois très forte sois complètement inconsciente... Ha c'est pour l'Empereur... Bien, je vais vous dire comment faire pour en trouver mais soyez prudente.{break}Il faut savoir que les mères porteuses Goari raffolent des termites. Le moyen le plus simple pour en trouver une est donc de vous rendre dans une termitière. En excitant ces petites bêtes vous attirerez sans doute l'attention de l'une d'elles. Il vous suffira alors de la tuer pour récupérer son oeuf. Mais soyez prudente, elles sont encore plus aggressives et violentes que les autres Goaris. Bonne chance à vous.]
+}
+
+CWFF03_STEP3_OVERLOAD (bot termitiere)
+{
+	cwff03_step3_overload	[Trouvez une termitière et excitez les termites pour attirer une mère porteuse Goari]
+}
+
+CWFF03_STEP3_PHRASE (bot termitiere)
+{
+	cwff03_step3_phrase	[Fouiller la $termitiere$]
+}
+
+CWFF03_STEP3_SYSMES ()
+{
+	cwff03_step3_sysmes	[&AMB&Vous dérangez les termites...Quand vous entendez quelque chose arriver...]
+}
+
+CWFF03_STEP4_OVERLOAD (bot goari)
+{
+	cwff03_step4_overload	[Tuez la $goari$ et récupérez son oeuf]
+}
+
+CWFF03_STEP4_SYSMES ()
+{
+	cwff03_step4_sysmes	[&AMB&Vous trouvez un oeuf sur la Mère porteuse Goari]
+}
+
+CWFF03_STEP4_FAIL_SYSMES ()
+{
+	cwff03_step4_fail_sysmes	[&AMB&Vous n'avez pas réussi. Essayez de nouveau d'exciter les termites]
+}
+
+CWFF03_OUTOFROOM_MSG ()
+{
+	cwff03_outofroom_msg	[&SYS&Vous n'avez plus de place dans votre inventaire. Demandez à nouveau l'objet quand vous en aurez fait.]
+}
+
+CWFF03_OUTOFROOM_OVERLOAD (bot chef)
+{
+	cwff03_outofroom_overload	[Faites de la place avant de demander à nouveau l'objet.]
+}
+
+CWFF03_OUTOFROOM_PHRASE (bot chef)
+{
+	cwff03_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+CWFF03_OUTOFROOM_BOTCHAT ()
+{
+	cwff03_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+CWFF03_DIALOG_REWARD ()
+{
+	cwff03_dialog_reward	[Ha voici l'oeuf ! Merci bien, je vais enfin pouvoir servir un petit déjeuné décent à l'Empereur. Ha tenez, voilà pour vous (mon apprentit était un peu trop porté sur la bouteille, vous en ferez surement meilleur usage que lui).]
+}
+
+CWFC01_TITLE (bot giver)
+{
+	cwfc01_title	[Des bottes pour les novices]
+}
+
+CWFC01_DESC (bot giver)
+{
+	cwfc01_desc	[Les nouvelles recrues de Pyr ont besoin d'équipement.]
+}
+
+CWFC01_INSTRUCTIONS (bot chef, bot player)
+{
+	cwfc01_instructions	[Bonjour $player$. Vous tombez bien. Vous avez sans doute du apprendre à fabriquer des bottes. Il se trouve justement que la garde de Pyr a besoin de renouveler son stock. Vous devriez aller voir $chef$, il vous expliquera ce dont il a besoin.]
+}
+
+CWFC01_STEP1_PHRASE (bot chef, bot givervar)
+{
+	cwfc01_step1_phrase	[Bonjour, $givervar$ m'envoie au sujet des bottes]
+}
+
+CWFC01_DIALOG_CHEF (bot givervar)
+{
+	cwfc01_dialog_chef	[Ha, j'ai cru un instant que vous étiez encore une nouvelle recrue. Je n'en peux plus d'accueillir les bleus. Oui c'est une bonne chose pour Pyr d'avoir des jeunes homins motivés mais ils sont souvent bien trop indisciplinés, de vrais Trykers !{break}Bref, $givervar$ vous envoie au sujet des bottes ? Vous tombez très bien. Comme je vous l'ai dit, nous avons de plus en plus de nouvelles recrues et bien sur nous devons essayer de les équiper un minimum. Nous commençons à manquer de bottes. Vous serviriez d'une manière exemplaire notre belle citée de Pyr en nous fabriquant quelques une. Peu importe leur origine, c'est pour l'entrainement, mais il faut qu'elles soient légères, les novices se fatigueraient trop vite avec des bottes lourdes.]
+}
+
+CWFC01_STEP2_OVERLOAD ()
+{
+	cwfc01_step2_overload	[Créez 5 paires de bottes légères de n'importe quel peuple (plan 1) de qualité au moins égale à 10]
+}
+
+CWFC01_STEP3_OVERLOAD (bot chef)
+{
+	cwfc01_step3_overload	[Donner les bottes à $chef$]
+}
+
+CWFC01_DIALOG_REWARD ()
+{
+	cwfc01_dialog_reward	[Ha parfait ! Vous vous débrouillez bien avec une aiguille à ce que je vois. Comme quoi il n'y a pas qu'en maniant la hache que l'on peut servir son peuple. Souvenez-vous bien de ça. Tenez, pour vous remercier.]
+}
+
+CWFC02_TITLE (bot giver)
+{
+	cwfc02_title	[Des haches pour les apprentis (1/2)]
+}
+
+CWFC02_DESC (bot giver)
+{
+	cwfc02_desc	[Les apprentis guerriers ont besoin de haches pour s'entrainer.]
+}
+
+CWFC02_INSTRUCTIONS (bot chef)
+{
+	cwfc02_instructions	[$chef$ m'a dit que vous avez été largement à la hauteur de ses espérences. Je crois qu'il aurait de nouveau besoin de vos services, vous devriez passer le voir à l'occasion.]
+}
+
+CWFC02_STEP1_PHRASE (bot chef, bot givervar)
+{
+	cwfc02_step1_phrase	[Bonjour, $givervar$ m'envoie. Vous avez encore besoin d'un artisan ?]
+}
+
+CWFC02_DIALOG_CHEF (bot barman, place city, bot player)
+{
+	cwfc02_dialog_chef	[Ha bonjour $player$. Effectivement, vous vous êtes très bien débrouillé la dernière fois et je me suis demandé si vous ne pourriez pas nous fabriquer également des armes d'entrainement. Vous ne savez pas les fabriquer ? Ha...Laissez tomber alors...A moins que...Si ça vous dit d'apprendre, je sais qu'il existe quelqu'un dans $city$ qui connait la recette. Je ne me rappelle plus son nom mais il me semble que c'était un ami de $barman$ le barman. Vous devriez aller lui en toucher deux mots.]
+}
+
+CWFC02_STEP2_PHRASE (bot barman)
+{
+	cwfc02_step2_phrase	[Bonjour, il parrait que vous connaissez quelqu'un qui sait fabriquer des armes d'entrainement ?]
+}
+
+CWFC02_DIALOG_BARMAN (bot crafteur, faction taxeurs)
+{
+	cwfc02_dialog_barman	[Hmmm vous devez parler de $crafteur$... En effet je le connaissais... Il y a longtemps. Nous nous sommes perdus de vue suite à une dispute puérile. La dernière fois que j'ai eu de ses nouvelles, il s'engageait dans la tribu des $taxeurs$. Je ne l'ai plus jamais revu depuis. Vous devriez aller les voir, ils en sauront sans doute plus que moi.]
+}
+
+CWFC02_STEP3_PHRASE (bot chef_taxeurs, bot crafteur)
+{
+	cwfc02_step3_phrase	[Bonjour, connaissez-vous un certain $crafteur$ ?]
+}
+
+CWFC02_DIALOG_CHEF_TAXEURS (place city, place place_crafteur)
+{
+	cwfc02_dialog_chef_taxeurs	[Ha ça pour le connaître nous le connaissons. Mais vous ne trouverez pas ce déserteur ici. Il est retourné vivre sa petite vie misérable à $city$. Vous le trouverez peut-être dans la $place_crafteur$. Allez-vous en maintenant, je ne veux plus entendre parler de lui.]
+}
+
+CWFC02_STEP4_OVERLOAD (bot crafteur, place city, place place_crafteur)
+{
+	cwfc02_step4_overload	[Trouvez $crafteur$ dans la $place_crafteur$ à $city$]
+}
+
+CWFC02_STEP4_PHRASE (bot crafteur)
+{
+	cwfc02_step4_phrase	[Bonjour. Vous êtes $crafteur$ ?]
+}
+
+CWFC02_DIALOG_CRAFTEUR (bot barman)
+{
+	cwfc02_dialog_crafteur	[Oui c'est bien moi, que voulez-vous ?{break}Je vois... En effet je sais fabriquer des armes d'entrainement. Je peux vous apprendre à faire de même mais avant j'aurais un service à vous demander.{break}Puisque vous semblez être au courant de ma dispute avec $barman$ j'aimerais que vous lui portiez cette lettre de ma part. Je voudrais arranger les choses mais je n'ose pas aller le voir. Donnez lui juste cette lettre et je vous apprendrai à fabriquer les armes que vous désirez.]
+}
+
+CWFC02_DIALOG_BARMAN_FIN (bot crafteur)
+{
+	cwfc02_dialog_barman_fin	[Qu'est ce que c'est ? Une lettre ? Pour moi ?{break}Hahaha, ce sacré $crafteur$. Il croit encore que je lui en veut pour cette stupide histoire d'arme égarée ? Dites lui que tout est oublié et qu'il peut venir trinquer avec moi en souvenir de notre amitié quand il le voudra !]
+}
+
+CWFC02_STEP6_OVERLOAD (bot crafteur, bot barman)
+{
+	cwfc02_step6_overload	[Retournez annoncer à $crafteur$ que $barman$ ne lui en veut pas]
+}
+
+CWFC02_STEP6_PHRASE (bot crafteur, bot barman)
+{
+	cwfc02_step6_phrase	[$barman$ ne vous en veut pas du tout !]
+}
+
+CWFC02_DIALOG_REWARD ()
+{
+	cwfc02_dialog_reward	[C'est vrai ? Il ne m'en veut pas ? C'est magnifique ! Il faut absolument que j'aille le voir alors, nous avons tant de temps à rattraper ! Mais avant ça je dois vous remercier, une promesse est une promesse, jevais vous apprendre à fabriquer des haches d'entrainement.]
+}
+
+CWFC02_REWARD_SYSMES ()
+{
+	cwfc02_reward_sysmes	[&AMB&Vous apprenez à fabriquer des haches d'entrainement]
+}
+
+CWFC03_TITLE (bot giver)
+{
+	cwfc03_title	[Des haches pour les apprentis (2/2)]
+}
+
+CWFC03_DESC (bot giver)
+{
+	cwfc03_desc	[Les apprentis guerriers ont besoin de haches pour s'entrainer.]
+}
+
+CWFC03_STEP1_ROLEPLAY_1 (item i1, int qt1, int qual1, place city)
+{
+	cwfc03_step1_roleplay_1	[Fabriquer 5 haches d'entrainement pour les apprentis guerriers de $city$]
+}
+
+CWFC03_DIALOG_REWARD ()
+{
+	cwfc03_dialog_reward	[Parfait. Je vois que vous avez finalement réussi à apprendre à les fabriquer. La tenacité est la qualité principale d'un bon artisan et vous me semblez en bonne voie pour devenir un maître dans votre domaine. Continuez ainsi.]
+}
+
+CWFH01_TITLE (bot giver)
+{
+	cwfh01_title	[Ramassage des ordures]
+}
+
+CWFH01_DESC (bot giver, place city)
+{
+	cwfh01_desc	[Aidez $city$ en ramassant les ordures autour de la ville]
+}
+
+CWFH01_INSTRUCTIONS (place city, bot intendant, bot player)
+{
+	cwfh01_instructions	[Bonjour $player$. Si vous voulez rendre service à notre ville, je vous propose d'aller voir $intendant$ l'intendante de $city$. Je crois qu'elle a besoin de bras pour l'aider.]
+}
+
+CWFH01_STEP1_PHRASE (bot intendant, bot givervar)
+{
+	cwfh01_step1_phrase	[Bonjour, $givervar$ m'envoie. Vous avez besoin d'aide ?]
+}
+
+CWFH01_DIALOG_INTENDANT (place city)
+{
+	( self.gender = male )
+		cwfh01_dialog_intendant_m	[Bonjour. Vous êtes nouveau ici ? Peut importe. J'ai effectivement besoin d'un peu d'aide. Nos guerriers sont peut-être forts, mais ce sont de vrais yubos ! Ils laissent leurs déchets n'importe où ! Je vous charge donc d'aller nettoyer les alentours de $city$, si bien sûr vous avez vraiment envie de nous aider.]
+	( self.gender = female )
+		cwfh01_dialog_intendant_f	[Bonjour. Vous êtes nouvelles ici ? Peut importe. J'ai effectivement besoin d'un peu d'aide. Nos guerriers sont peut-être forts, mais ce sont de vrais yubos ! Ils laissent leurs déchets n'importe où ! Je vous charge donc d'aller nettoyer les alentours de $city$, si bien sûr vous avez vraiment envie de nous aider.]
+}
+
+CWFH01_STEP3_PHRASE (bot intendant)
+{
+	cwfh01_step3_phrase	[Ca y est, j'ai ramassé les ordures.]
+}
+
+CWFH01_DIALOG_INTENDANT_2 ()
+{
+	cwfh01_dialog_intendant_2	[Mais... Qu'est ce que vous voulez que je fasse de ça ? Je ne suis pas là pour recycler les déchets ! Portez donc ces ordures à la forge, ils sauront quoi en faire.]
+}
+
+CWFH01_DIALOG_REWARD ()
+{
+	cwfh01_dialog_reward	[Bonjour. Encore des ordures ? Vous êtes le troisième aujourd'hui. L'intendante sait y faire pour confier les travaux désagréables à de pauvres aventuriers désirant se rendre utiles. Quoi qu'il en soit merci à vous, nous allons nous en servir en combustible.]
+}
+
+CWFH02_TITLE (bot giver)
+{
+	cwfh02_title	[Les fossiles des dunes]
+}
+
+CWFH02_DESC (bot giver, bot archeologue)
+{
+	cwfh02_desc	[$archeologue$ a besoin de vous pour déterrer des os fossilisés]
+}
+
+CWFH02_INSTRUCTIONS (bot archeologue, bot intendant)
+{
+	cwfh02_instructions	[Vous avez fait ce que $intendant$ vous a demandé ? Elle se débrouille toujours pour se débarasser du sale travail. Bien quoi qu'il en soit, quelqu'un d'autre a besoin de l'aide d'un foreur. Il s'agit de $archeologue$, un éminant archéologue. Vous le trouverez au palais Impérial.]
+}
+
+CWFH02_STEP1_PHRASE (bot archeologue, bot givervar)
+{
+	cwfh02_step1_phrase	[Bonjour, $givervar$ m'envoie. Vous avez besoin d'aide ?]
+}
+
+CWFH02_DIALOG_ARCHEOLOGUE (place city, bot givervar)
+{
+	cwfh02_dialog_archeologue	[Ha bonjour, si $givervar$ vous envoie c'est que vous devez avoir des compétences en forage.{break}Il existe une zone au Sud de $city$ où se trouvent des carcasses d'animaux aujourd'hui disparus. J'aimerais que vous fassiez des fouilles à cet endroit et que vous me rapportiez des os afin que je puisse les examiner. Attention, ces fossiles sont de qualité fine.]
+}
+
+CWFH02_DIALOG_REWARD ()
+{
+	cwfh02_dialog_reward	[Ha parfait, merci bien. Je vais pouvoir les analyser. Ils sont en parfait état, vous avez fait du très bon travail. Prenez ça c'est pour vous.]
+}
+
+CWFH03_TITLE (bot giver)
+{
+	cwfh03_title	[De la boue pour les bains]
+}
+
+CWFH03_DESC (bot giver, place city)
+{
+	cwfh03_desc	[Le responsable des bains de $city$ a besoin de boue pour les soins de ses clients]
+}
+
+CWFH03_INSTRUCTIONS (bot archeologue, place city)
+{
+	cwfh03_instructions	[Parfait, $archeologue$ avait l'air très content de vos découvertes. Cette fois-ci le cadre de votre mission devrait être très agréable. Rendez-vous aux bains de $city$, son responsable a besoin d'aide.]
+}
+
+CWFH03_STEP1_PHRASE (bot resp_bains, bot givervar)
+{
+	cwfh03_step1_phrase	[Bonjour, $givervar$ m'envoie. Vous avez besoin d'aide ?]
+}
+
+CWFH03_DIALOG_RESP_BAINS ()
+{
+	cwfh03_dialog_resp_bains	[Ha bonjour, vous tombez bien. J'ai effectivement besoin d'aide. Nous commençons à manquer de boue pour les soins. Je ne peux pas me permettre de décevoir ma clientelle, j'ai toujours offert un service de qualité. Si vous pouviez me rapporter de la boue je vous en serais très reconaissant. Attention, la boue dont j'ai besoin doit être de choix, je ne peux pas me permettre de donner n'importe quoi à mes clients. Et méfiez-vous des Goaris sur la route.]
+}
+
+CWFH03_DIALOG_REWARD ()
+{
+	cwfh03_dialog_reward	[Ha merci beaucoup ! Mes clients seront ravis, la boue que vous m'avez rapportée sera parfaite. Tenez pour vous récompenser.]
+}
+

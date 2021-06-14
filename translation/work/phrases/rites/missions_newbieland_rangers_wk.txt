@@ -1,0 +1,1019 @@
+﻿NEWBIELAND_ARENA_WELCOMER_P_MIS_TITLE (bot giver)
+{
+	newbieland_arena_welcomer_p_mis_title	[Se battre contre d'autres Homins]
+}
+
+NEWBIELAND_ARENA_WELCOMER_P_MIS_DESC (bot giver)
+{
+	newbieland_arena_welcomer_p_mis_desc	[Connaître le fonctionnement des zones PvP]
+}
+
+NEWBIELAND_ARENA_WELCOMER_AUTO_MENU ()
+{
+	newbieland_arena_welcomer_auto_menu	[En savoir plus sur l'arène de combat]
+}
+
+NEWBIELAND_ARENA_WELCOMER_INTRO ()
+{
+	newbieland_arena_welcomer_intro	[Bonjour, $self$. Si tu le veux je peux t'en apprendre plus sur cette arène et son utilité.]
+}
+
+NEWBIELAND_ARENA_WELCOMER_CHOICE ()
+{
+	newbieland_arena_welcomer_choice	[Que veux tu savoir ?]
+}
+
+NEWBIELAND_ARENA_WELCOMER_HOWTO ()
+{
+	newbieland_arena_welcomer_howto	[Que dois-je faire dans cette arène ?]
+}
+
+NEWBIELAND_ARENA_WELCOMER_FIGHT ()
+{
+	newbieland_arena_welcomer_fight	[Je ne fais pas le poids face aux autres combattants.]
+}
+
+NEWBIELAND_ARENA_WELCOMER_DIE ()
+{
+	( self.gender = male )
+		newbieland_arena_welcomer_die_m	[Que se passe-t-il si je suis battu ?]
+	( self.gender = female )
+		newbieland_arena_welcomer_die_f	[Que se passe-t-il si je suis battue ?]
+}
+
+NEWBIELAND_ARENA_WELCOMER_XP ()
+{
+	newbieland_arena_welcomer_xp	[Gagner dans l'arène me fait-il gagner de l'expérience ?]
+}
+
+NEWBIELAND_ARENA_WELCOMER_EXIT ()
+{
+	newbieland_arena_welcomer_exit	[Rien, merci.]
+}
+
+NEWBIELAND_ARENA_WELCOMER_HOWTO_ANS ()
+{
+	( self.gender = male )
+		newbieland_arena_welcomer_howto_ans_m	[L'arène permet à ceux qui le souhaitent de pouvoir s'affronter au combat.\n Que vous soyez magiciens ou guerriers, vous pouvez affronter qui vous voulez librement dans cette arène.\nIl n'y a aucune règle tu es livré à toi même là dedans.]
+	( self.gender = female )
+		newbieland_arena_welcomer_howto_ans_f	[L'arène permet à ceux qui le souhaitent de pouvoir s'affronter au combat.\n Que vous soyez magiciens ou guerriers, vous pouvez affronter qui vous voulez librement dans cette arène.\nIl n'y a aucune règle tu es livrée à toi même là dedans.]
+}
+
+NEWBIELAND_ARENA_WELCOMER_FIGHT_ANS ()
+{
+	newbieland_arena_welcomer_fight_ans	[As-tu pensé à éditer tes actions de combat ou de magie ?\nLes autres combattants l'ont surement fait c'est pour cela qu'il te dominent.\nSi tu ne sais pas comment faire je te conseille d'aller voir les Fyros et les Zorais pour qu'ils t'apprennent à personnaliser tes actions de combat ou de magie.]
+}
+
+NEWBIELAND_ARENA_WELCOMER_DIE_ANS ()
+{
+	newbieland_arena_welcomer_die_ans	[Ne t'iniquiète pas. Si tu te fais vaincre, tu n'auras pas à t'acquitter d'une pénalité de décès.]
+}
+
+NEWBIELAND_ARENA_WELCOMER_XP_ANS ()
+{
+	newbieland_arena_welcomer_xp_ans	[Non, tu ne peux pas gagner d'expérience en combattant dans l'arène.]
+}
+
+NEWBIELAND_ARENA_WELCOMER_OTHER_QUESTION ()
+{
+	newbieland_arena_welcomer_other_question	[As-tu une autre question ?]
+}
+
+NEWBIELAND_ARENA_WELCOMER_YES ()
+{
+	newbieland_arena_welcomer_yes	[Oui.]
+}
+
+NEWBIELAND_ARENA_WELCOMER_NO ()
+{
+	newbieland_arena_welcomer_no	[Non.]
+}
+
+NEWBIELAND_RANGER_INTRO_P_MIS_TITLE (bot giver)
+{
+	newbieland_ranger_intro_p_mis_title	[Apprendre à connaître ce nouveau territoire.]
+}
+
+NEWBIELAND_RANGER_INTRO_P_MIS_DESC (bot giver, bot givervar)
+{
+	newbieland_ranger_intro_p_mis_desc	[Ecoutez les informations de $givervar$ au sujet de ce campement et des alentours.]
+}
+
+NEWBIELAND_RANGER_INTRO_P_AUTO_MENU ()
+{
+	newbieland_ranger_intro_p_auto_menu	[En savoir plus sur cet endroit]
+}
+
+NEWBIELAND_RANGER_INTRO_OBJ_INTRO (bot givervar)
+{
+	newbieland_ranger_intro_obj_intro	[Trouver $givervar$, commandant des Rangers et lui parler.]
+}
+
+NEWBIELAND_RANGER_INTRO_T2_INTRO (bot givervar)
+{
+	newbieland_ranger_intro_t2_intro	[Bonjour, je viens d'arriver ici...]
+}
+
+NEWBIELAND_RANGER_INTRO_P_INTRO_1 ()
+{
+	( self.gender = male )
+		newbieland_ranger_intro_p_intro_1_m	[Bonjour Homin. Heureux de voir que tu t'en es sorti vivant.\n Nos éclaireurs nous ont prévenu de ton arrivée et étaient très impressionnés que tu décides de quitter ton village pour traverser les terres à la recherche de quelque chose de mieux qu'une vie de réfugié.{break}Je sais que tu es comme tous les autres ici : né réfugié, succédant à tes ancêtres survivants des invasions Kitin.]
+	( self.gender = female )
+		newbieland_ranger_intro_p_intro_1_f	[Bonjour Homine. Heureux de voir que tu t'en es sortie vivante.\n Nos éclaireurs nous ont prévenu de ton arrivée et étaient très impressionnés que tu décides de quitter ton village pour traverser les terres à la recherche de quelque chose de mieux qu'une vie de réfugié.{break}Je sais que tu es comme tous les autres ici : née réfugiée, succédant à tes ancêtres survivants des invasions Kitin.]
+}
+
+NEWBIELAND_RANGER_INTRO_P_INTRO_2 ()
+{
+	newbieland_ranger_intro_p_intro_2	[Mais les Kitins ne nous ont pas tous tués, et maintenant la plupart d'entre nous se sont jurés de les anéantir. \nNous sommes les Rangers, et nous avons construit ce camp. Nous ne sommes pas nombreux, et la plupart de nos membres sont occupés dans les Primes Racines à faire la guerre à l'ennemi.{break}C'est pourquoi nous avons permis à des représentants des principaux peuples de s'établir ici. \nChacun a sa raison d'être ici, bien sûr, mais ils vous en parleront mieux que moi. Ce qu'ils reconstruisent est semblable à ce pourquoi nous combattons, la possibilité pour nos cultures et nos nations de s'élever à nouveau, plus fortes que jamais.\nVa les voir, parle leur, écoutes les, et apprends d'eux.]
+}
+
+NEWBIELAND_RANGER_INTRO_P_INTRO_3 ()
+{
+	newbieland_ranger_intro_p_intro_3	[Ils ne sont pas toujours d'accord entre eux, et pour certains, et bien, c'est notre présence qui les empêche de s'entretuer. \nIl y a des endroits où les nations d'homins que tu vois ici cohabiter, sont au bord de la guerre raciale. \nMais ce n'est pas le cas ici, et ils ont tous quelque chose à enseigner, donc profite de cet endroit, et apprends tout ce que tu peux.]
+}
+
+NEWBIELAND_RANGER_INTRO_P_INTRO_4 ()
+{
+	newbieland_ranger_intro_p_intro_4	[Quand tu penses avoir appris tout ce dont tu as besoin, reviens me voir. Il y a une tâche pour laquelle tu pourras nous être utile, quand tu seras bien plus fort.]
+}
+
+NEWBIELAND_RANGER_WELCOME_P_MIS_TITLE (bot giver)
+{
+	newbieland_ranger_welcome_p_mis_title	[Les protagonistes d'Atys.]
+}
+
+NEWBIELAND_RANGER_WELCOME_P_MIS_DESC (bot giver)
+{
+	newbieland_ranger_welcome_p_mis_desc	[En apprendre un peu plus sur les différents peuples d'Atys.]
+}
+
+NEWBIELAND_RANGER_WELCOME_P_AUTO_MENU ()
+{
+	newbieland_ranger_welcome_p_auto_menu	[J'ai quelque chose à vous demander.]
+}
+
+NEWBIELAND_RANGER_WELCOME_QUESTION ()
+{
+	newbieland_ranger_welcome_question	[Bien, que veux tu savoir ?]
+}
+
+NEWBIELAND_RANGER_WELCOME_FYROS ()
+{
+	newbieland_ranger_welcome_fyros	[Parlez moi des Fyros]
+}
+
+NEWBIELAND_RANGER_WELCOME_ZORAI ()
+{
+	newbieland_ranger_welcome_zorai	[Parlez moi des Zorais]
+}
+
+NEWBIELAND_RANGER_WELCOME_MATIS ()
+{
+	newbieland_ranger_welcome_matis	[Parlez moi des Matis]
+}
+
+NEWBIELAND_RANGER_WELCOME_TRYKER ()
+{
+	newbieland_ranger_welcome_tryker	[Parlez moi des Trykers]
+}
+
+NEWBIELAND_RANGER_WELCOME_KAMI ()
+{
+	newbieland_ranger_welcome_kami	[Parlez moi des Kami]
+}
+
+NEWBIELAND_RANGER_WELCOME_KARAVAN ()
+{
+	newbieland_ranger_welcome_karavan	[Parlez moi des Karavan]
+}
+
+NEWBIELAND_RANGER_WELCOME_BYE ()
+{
+	newbieland_ranger_welcome_bye	[Je n'ai plus de questions, merci.]
+}
+
+NEWBIELAND_RANGER_WELCOME_ANS_FYROS ()
+{
+	newbieland_ranger_welcome_ans_fyros	[Chacun sur Atys doit savoir, au moins, comment utiliser une dague. J'ai connu des guerriers Matis, entre autre, d'une force impressionnante.\n Mais si tu veux parler à un peuple où presque tout le monde sait manier l'épée avant de savoir marcher, c'est les Fyros que tu dois aller voir.{break} Ne fais pas l'erreur de les considérer comme des barbares, ou de penser qu'ils sont comme les bandits que tu as pu voir dans les terres lointaines.\nLes Fyros ont plus de valeur en eux que ce qu'il y paraît. \nParle leur, et rends t'en compte par toi même.]
+}
+
+NEWBIELAND_RANGER_WELCOME_ANS_ZORAI ()
+{
+	newbieland_ranger_welcome_ans_zorai	[Mon peuple peut être difficile à comprendre pour un étranger, et quelque fois même pour nous. \nJ'ai vécu avec assez de peuples pour savoir comment nous paraissons à leurs yeux. Mais c'est toujours difficile de décrire un peuple qui s'identifie si fort à une autre espèce qu'ils portent des masques pour symboliser la force de leur obligation. \nLes Kami ont toujours été les alliés de mon peuple, et nous avons été les premiers à recevoir l'enseignement de la Magie. {break}Surtout, sache que tout Zorai est bien sûr un homin, mais aussi, à travers son esprit, une partie du flot vital d'Atys. \nEt parfois nous voyons les choses différemment.]
+}
+
+NEWBIELAND_RANGER_WELCOME_ANS_MATIS ()
+{
+	newbieland_ranger_welcome_ans_matis	[Avant les Kitins, chacun avait ses villes, mais c'était celles des Matis qui étaient les plus vastes, les plus élégantes, et qui s'élevèrent le plus haut. \nDe par leur culture, ils sont maîtres en construction, expérimentant sans cesse les nouvelles plantes et les nouveaux matériaux pour accomplir un plus bel et plus efficace artisanat.{break}Ce n'est pas un secret que tous, même les Zorais, ont copié certains des travaux des maîtres Matis.\nPeut être est-ce pour cela qu'ils travaillent si étroitement avec la Karavan : Ils veulent l'accès aux incroyables outils et matériaux qu'ils ont en abondance.]
+}
+
+NEWBIELAND_RANGER_WELCOME_ANS_TRYKER ()
+{
+	newbieland_ranger_welcome_ans_tryker	[Ah, les Trykers sont les coeurs optimistes d'Atys. \nQuand l'invasion Kitin était à son apogée, il y avait toujours un Tryker pas loin essayant de convaincre les homins de ne pas céder au défaitisme, inspirant l'espoir, et ravitaillant les villages de nourriture et matériaux nécessaires à leur survie. {break}Vraiment, c'est une chose pour laquelle ils ont toujours excellé. \nLes Trykers semblent avoir un talent pour se rendre ici et là, pour trouver une utilité à toute chose, pour découvrir les secrets d'Atys. \nComme nous récupérons les pièces de notre passé à travers les vestiges du présent, il est bon de savoir que les Trykers seront là pour faire en sorte que chaque pièce soit retrouvée.]
+}
+
+NEWBIELAND_RANGER_WELCOME_ANS_KAMI ()
+{
+	newbieland_ranger_welcome_ans_kami	[Voici la vérité sur les Kami : \nJe ne sais pas ce qu'ils sont, ou pourquoi ils font ce qu'ils font. Certains disent qu'ils ne font pas confiance à la Karavan à cause du masque qu'ils portent. Ils ont peut être raison, mais eux au moins ont l'air d'être homins. {break}Les Kami, peu importe ce qu'ils sont, sont quelque chose de complètement différent, et lorsqu'ils nous aidaient dans la guerre contre les Kitins, ils ne sont pas intervenus avant le dernier moment, et n'ont pas l'air pressé de montrer leur pouvoir que nous avons pu constaté lors de la Reconstruction. \nIls nous ont appris la magie, et ils nous aident de temps en temps, mais je sais que je ne suis pas encore prêt à suivre leur cause.]
+}
+
+NEWBIELAND_RANGER_WELCOME_ANS_KARAVAN ()
+{
+	newbieland_ranger_welcome_ans_karavan	[La Karavan est complexe. \nJ'ai vu leurs armes pendant la guerre Kitin, et elles sont aussi puissantes que la magie Kami, mais d'une manière totalement différente. \nPour être honnête, je ne sais pas quoi penser d'eux. Jena est le soleil, et les Rangers travaillent dans l'ombre, dans les profondeurs des racines, où nous n'avons pas vraiment le temps de penser au ciel.{break}Il ne fait pas de doute qu'ils ont du pouvoir, et qu'ils veulent nous le faire partager, mais seulement sous leurs conditions. \nParle leur, et prends tout ce que tu peux d'eux, mais attention, garde tes opinions pour toi.]
+}
+
+NEWBIELAND_RANGER_WELCOME_ANS_BYE ()
+{
+	newbieland_ranger_welcome_ans_bye	[Très bien. Souviens toi, mon ami, qu'il y a des exceptions pour chaque chose que je t'ai dit. \nJe suis Zorai, mais j'utilise peu la magie, par contre je pourrais me mesurer à n'importe quel Fyros à la hache ! \nChacun peut apprendre ce qu'il veut, mais certaines de nos cultures sont plus aptes à certaines choses que d'autres.]
+}
+
+NEWBIELAND_RANGER_WELCOME_ANS_BYE_2 ()
+{
+	( self.gender = male )
+		newbieland_ranger_welcome_ans_bye_2_m	[Tu peux revenir quand tu veux si tu as d'autres questions, ou si tu trouves quelque chose... d'inhabituel. \nAtys est grande et étrange, et on ne peut jamais savoir sur quoi on va tomber. \nPrends soin de toi, mon ami.]
+	( self.gender = female )
+		newbieland_ranger_welcome_ans_bye_2_f	[Tu peux revenir quand tu veux si tu as d'autres questions, ou si tu trouves quelque chose... d'inhabituel. \nAtys est grande et étrange, et on ne peut jamais savoir sur quoi on va tomber. \nPrends soin de toi, mon amie.]
+}
+
+NEWBIELAND_RANGER_WELCOME_ANS_BYE_WARN ()
+{
+	( self.gender = male )
+		newbieland_ranger_welcome_ans_bye_warn_m	[Sache que je te recommande très fortement de rester ici et de profiter de ce que l'on a à t'apprendre. \nPar contre si tu penses ne pas avoir besoin de nos enseignements ou que tu sais déjà comment survivre sur Atys, tu peux être téléporté dans la capitale de ton peuple. \nSi c'est ce que tu décides, alors reviens me parler et je t'indiquerais comment faire. \nMais je te le répète, tu ferais mieux de rester ici et d'apprendre à survivre avant de t'aventurer sur le continent.]
+	( self.gender = female )
+		newbieland_ranger_welcome_ans_bye_warn_f	[Sache que je te recommande très fortement de rester ici et de profiter de ce que l'on a à t'apprendre. \nPar contre si tu penses ne pas avoir besoin de nos enseignements ou que tu sais déjà comment survivre sur Atys, tu peux être téléportée dans la capitale de ton peuple. \nSi c'est ce que tu décides, alors reviens me parler et je t'indiquerais comment faire. \nMais je te le répète, tu ferais mieux de rester ici et d'apprendre à survivre avant de t'aventurer sur le continent.]
+}
+
+NEWBIELAND_RANGER_WELCOME_P_T2_RESUME (bot givervar)
+{
+	newbieland_ranger_welcome_p_t2_resume	[J'ai encore quelques questions concernant la région et ses habitants.]
+}
+
+NEWBIELAND_RANGER_INTRO_GF_P_MIS_TITLE (bot giver)
+{
+	newbieland_ranger_intro_gf_p_mis_title	[L'arrivée au camp]
+}
+
+NEWBIELAND_RANGER_INTRO_GF_P_MIS_DESC (bot giver, bot givervar)
+{
+	newbieland_ranger_intro_gf_p_mis_desc	[Ecoutez les informations de $givervar$ au sujet de ce campement et des alentours.]
+}
+
+NEWBIELAND_RANGER_INTRO_GF_P_AUTO_MENU ()
+{
+	newbieland_ranger_intro_gf_p_auto_menu	[En savoir plus sur cet endroit]
+}
+
+NEWBIELAND_RANGER_INTRO_GF_OBJ_INTRO (bot givervar)
+{
+	newbieland_ranger_intro_gf_obj_intro	[Trouver $givervar$, commandant des Rangers et lui parler.]
+}
+
+NEWBIELAND_RANGER_INTRO_GF_T2_INTRO (bot givervar)
+{
+	newbieland_ranger_intro_gf_t2_intro	[Bonjour, je viens d'arriver ici...]
+}
+
+NEWBIELAND_RANGER_INTRO_GF_P_INTRO_1 ()
+{
+	( self.gender = male )
+		newbieland_ranger_intro_gf_p_intro_1_m	[Bonjour Homin. Heureux de voir que tu t'en es sorti vivant.\n Nos éclaireurs nous ont prévenu de ton arrivée et étaient très impressionnés que tu décides de quitter ton village pour traverser les terres à la recherche de quelque chose de mieux qu'une vie de réfugié.\n\nJe sais que tu es comme tous les autres ici : né réfugié, succédant à tes ancêtres survivants des invasions Kitin.\nMais au fait, quel est ton nom ?]
+	( self.gender = female )
+		newbieland_ranger_intro_gf_p_intro_1_f	[Bonjour Homine. Heureux de voir que tu t'en es sortie vivante.\n Nos éclaireurs nous ont prévenu de ton arrivée et étaient très impressionnés que tu décides de quitter ton village pour traverser les terres à la recherche de quelque chose de mieux qu'une vie de réfugié.\n\nJe sais que tu es comme tous les autres ici : née réfugiée, succédant à tes ancêtres survivants des invasions Kitin.\nMais au fait, quel est ton nom ?]
+}
+
+NEWBIELAND_RANGER_INTRO_GF_P_ANSWNAME (bot player)
+{
+	newbieland_ranger_intro_gf_p_answname	[Je m'appelle $player$]
+}
+
+NEWBIELAND_RANGER_INTRO_GF_P_INTRO_4 (bot player)
+{
+	newbieland_ranger_intro_gf_p_intro_4	[Très bien, $player$...\nIl va falloir que tu commences ton entraînement. Va voir Unnoirin, elle t'aideras à faire tes premiers pas dans la région\nQuand tu penses avoir appris tout ce dont tu as besoin, reviens me voir. Il y a une tâche pour laquelle tu pourras nous être utile, quand tu seras bien plus fort.]
+}
+
+NEWBIELAND_RANGER_INTRO_GF_TEMP_PROTORE ()
+{
+	newbieland_ranger_intro_gf_temp_protore	[J'y vais de suite]
+}
+
+NEWBIELAND_RANGER_INTRO_GF_P_POPUPTITLE ()
+{
+	newbieland_ranger_intro_gf_p_popuptitle	[Info]
+}
+
+NEWBIELAND_RANGER_INTRO_GF_P_POPUP2 ()
+{
+	newbieland_ranger_intro_gf_p_popup2	[Une direction vient d'être ajoutée à votre compas.\nOrientez-vous en plaçant la flèche vers le haut et avancez jusqu'à votre destination.]
+}
+
+NEWBIELAND_RANGER_INTRO_GF_P_TALKTOMAYOR (bot guide)
+{
+	newbieland_ranger_intro_gf_p_talktomayor	[Je viens pour l'entraînement...]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_P_MIS_TITLE (bot giver)
+{
+	newbieland_ranger_welcome_gf_p_mis_title	[L'arrivée au camp]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_P_MIS_DESC (bot giver)
+{
+	newbieland_ranger_welcome_gf_p_mis_desc	[Trouver un instructeur pour progresser dans l'art de votre choix]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_P_AUTO_MENU ()
+{
+	newbieland_ranger_welcome_gf_p_auto_menu	[J'ai quelque chose à vous demander.]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_QUESTIONK (bot player)
+{
+	newbieland_ranger_welcome_gf_questionk	[Comment puis je t'aider $player$ ?\nSi tu cherches un entraîneur, il te suffit de me dire dans quel art tu veux travailler et je te guiderais vers lui.]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_FYROSP ()
+{
+	newbieland_ranger_welcome_gf_fyrosp	[Combat]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_ZORAIP ()
+{
+	newbieland_ranger_welcome_gf_zoraip	[Magie]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_MATISP ()
+{
+	newbieland_ranger_welcome_gf_matisp	[Artisanat]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_TRYKERP ()
+{
+	newbieland_ranger_welcome_gf_trykerp	[Récolte]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_DUMMYP ()
+{
+	newbieland_ranger_welcome_gf_dummyp	[]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_MOREP ()
+{
+	newbieland_ranger_welcome_gf_morep	[Parlez moi des peuples]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_BYEP ()
+{
+	newbieland_ranger_welcome_gf_byep	[Je dois y aller]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_COMEAGAINTY (bot fyrosnpc, bot player)
+{
+	newbieland_ranger_welcome_gf_comeagainty	[Prêt pour l'entraînement de combat, $player$?\n$fyrosnpc$ t'attends chez les Fyros dans la partie nord du camp.\nReviens me voir quand tu voudra essayer une autre profession]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_COMEAGAINTY2 (bot zorainpc)
+{
+	newbieland_ranger_welcome_gf_comeagainty2	[Tu cherches à maîtriser la magie, alors tu dois parler à $zorainpc$ le sage, il se trouve juste à coté d'ici à l'est.\nReviens me voir quand tu voudra essayer une autre profession]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_COMEAGAINTY3 (bot matisnpc)
+{
+	newbieland_ranger_welcome_gf_comeagainty3	[Va voir $matisnpc$ le maître artisan, mais je te previens, il n'a pas l'air de bonne humeur. Il se trouve dans le camp Matis au sud-est.\nReviens me voir quand tu voudra essayer une autre profession]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_COMEAGAINTY4 (bot trykernpc)
+{
+	newbieland_ranger_welcome_gf_comeagainty4	[C'est $trykernpc$ qui se charge de former les recolteurs. Tu peux la trouver proche du camp Tryker au sud-ouest.\nReviens me voir quand tu voudra essayer une autre profession]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_QUESTION ()
+{
+	newbieland_ranger_welcome_gf_question	[Comme tu peux le voir, je suis Zorai, mais j'utilise peu la magie, par contre je pourrais me mesurer à n'importe quel Fyros à la hache ! \nChacun peut apprendre ce qu'il veut, mais certaines de nos cultures sont plus aptes à certaines choses que d'autres.\nBien, que veux tu savoir ?]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_FYROS ()
+{
+	newbieland_ranger_welcome_gf_fyros	[Parlez moi des Fyros]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_ZORAI ()
+{
+	newbieland_ranger_welcome_gf_zorai	[Parlez moi des Zorais]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_MATIS ()
+{
+	newbieland_ranger_welcome_gf_matis	[Parlez moi des Matis]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_TRYKER ()
+{
+	newbieland_ranger_welcome_gf_tryker	[Parlez moi des Trykers]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_KAMI ()
+{
+	newbieland_ranger_welcome_gf_kami	[Parlez moi des Kami]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_KARAVAN ()
+{
+	newbieland_ranger_welcome_gf_karavan	[Parlez moi des Karavan]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_BYE ()
+{
+	newbieland_ranger_welcome_gf_bye	[Je n'ai plus de questions, merci.]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_ANS_FYROS ()
+{
+	newbieland_ranger_welcome_gf_ans_fyros	[Chacun sur Atys doit savoir, au moins, comment utiliser une dague. J'ai connu des guerriers Matis, entre autre, d'une force impressionnante.\n Mais si tu veux parler à un peuple où presque tout le monde sait manier l'épée avant de savoir marcher, c'est les Fyros que tu dois aller voir.{break} Ne fais pas l'erreur de les considérer comme des barbares, ou de penser qu'ils sont comme les bandits que tu as pu voir dans les terres lointaines.\nLes Fyros ont plus de valeur en eux que ce qu'il y paraît. \nParle leur, et rends t'en compte par toi même.]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_ANS_ZORAI ()
+{
+	newbieland_ranger_welcome_gf_ans_zorai	[Mon peuple peut être difficile à comprendre pour un étranger, et quelque fois même pour nous. \nJ'ai vécu avec assez de peuples pour savoir comment nous paraissons à leurs yeux. Mais c'est toujours difficile de décrire un peuple qui s'identifie si fort à une autre espèce qu'ils portent des masques pour symboliser la force de leur obligation. \nLes Kami ont toujours été les alliés de mon peuple, et nous avons été les premiers à recevoir l'enseignement de la Magie. {break}Surtout, sache que tout Zorai est bien sûr un homin, mais aussi, à travers son esprit, une partie du flot vital d'Atys. \nEt parfois nous voyons les choses différemment.]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_ANS_MATIS ()
+{
+	newbieland_ranger_welcome_gf_ans_matis	[Avant les Kitins, chacun avait ses villes, mais c'était celles des Matis qui étaient les plus vastes, les plus élégantes, et qui s'élevèrent le plus haut. \nDe par leur culture, ils sont maîtres en construction, expérimentant sans cesse les nouvelles plantes et les nouveaux matériaux pour accomplir un plus bel et plus efficace artisanat.{break}Ce n'est pas un secret que tous, même les Zorais, ont copié certains des travaux des maîtres Matis.\nPeut être est-ce pour cela qu'ils travaillent si étroitement avec la Karavan : Ils veulent l'accès aux incroyables outils et matériaux qu'ils ont en abondance.]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_ANS_TRYKER ()
+{
+	newbieland_ranger_welcome_gf_ans_tryker	[Ah, les Trykers sont les coeurs optimistes d'Atys. \nQuand l'invasion Kitin était à son apogée, il y avait toujours un Tryker pas loin essayant de convaincre les homins de ne pas céder au défaitisme, inspirant l'espoir, et ravitaillant les villages de nourriture et matériaux nécessaires à leur survie. {break}Vraiment, c'est une chose pour laquelle ils ont toujours excellé. \nLes Trykers semblent avoir un talent pour se rendre ici et là, pour trouver une utilité à toute chose, pour découvrir les secrets d'Atys. \nComme nous récupérons les pièces de notre passé à travers les vestiges du présent, il est bon de savoir que les Trykers seront là pour faire en sorte que chaque pièce soit retrouvée.]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_ANS_KAMI ()
+{
+	newbieland_ranger_welcome_gf_ans_kami	[Voici la vérité sur les Kami : \nJe ne sais pas ce qu'ils sont, ou pourquoi ils font ce qu'ils font. Certains disent qu'ils ne font pas confiance à la Karavan à cause du masque qu'ils portent. Ils ont peut être raison, mais eux au moins ont l'air d'être homins. {break}Les Kami, peu importe ce qu'ils sont, sont quelque chose de complètement différent, et lorsqu'ils nous aidaient dans la guerre contre les Kitins, ils ne sont pas intervenus avant le dernier moment, et n'ont pas l'air pressé de montrer leur pouvoir que nous avons pu constaté lors de la Reconstruction. \nIls nous ont appris la magie, et ils nous aident de temps en temps, mais je sais que je ne suis pas encore prêt à suivre leur cause.]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_ANS_KARAVAN ()
+{
+	newbieland_ranger_welcome_gf_ans_karavan	[La Karavan est complexe. \nJ'ai vu leurs armes pendant la guerre Kitin, et elles sont aussi puissantes que la magie Kami, mais d'une manière totalement différente. \nPour être honnête, je ne sais pas quoi penser d'eux. Jena est le soleil, et les Rangers travaillent dans l'ombre, dans les profondeurs des racines, où nous n'avons pas vraiment le temps de penser au ciel.{break}Il ne fait pas de doute qu'ils ont du pouvoir, et qu'ils veulent nous le faire partager, mais seulement sous leurs conditions. \nParle leur, et prends tout ce que tu peux d'eux, mais attention, garde tes opinions pour toi.]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_P_T2_RESUMJE (bot givervar)
+{
+	newbieland_ranger_welcome_gf_p_t2_resumje	[J'ai encore quelques questions ...]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_FOLLOWRADARFYROS_1 (bot fyrosnpc)
+{
+	newbieland_ranger_welcome_gf_followradarfyros_1	[Suivez l'indicateur sur le radar pour parler à $fyrosnpc$]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_FOLLOWRADARTRYKER_1 (bot trykernpc)
+{
+	newbieland_ranger_welcome_gf_followradartryker_1	[Suivez l'indicateur sur le radar pour parler à $trykernpc$]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_FOLLOWRADARZORAI_1 (bot zorainpc)
+{
+	newbieland_ranger_welcome_gf_followradarzorai_1	[Suivez l'indicateur sur le radar pour parler à $zorainpc$]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_FOLLOWRADARMATIS_1 (bot matisnpc)
+{
+	newbieland_ranger_welcome_gf_followradarmatis_1	[Suivez l'indicateur sur le radar pour parler à $matisnpc$]
+}
+
+NEWBIELAND_RANGER_WELCOME_GF_ANS_BYE_2 ()
+{
+	newbieland_ranger_welcome_gf_ans_bye_2	[Tu peux revenir quand tu veux si tu as d'autres questions, ou si tu trouves quelque chose... d'inhabituel. \nAtys est grande et étrange, et on ne peut jamais savoir sur quoi on va tomber.]
+}
+
+NEWBIELAND_GRAVESTSIN1_MISG_TITLE (bot giver)
+{
+	newbieland_gravestsin1_misg_title	[Enquête chez les bandits.]
+}
+
+NEWBIELAND_GRAVESTSIN1_MISC_DESC (bot giver)
+{
+	newbieland_gravestsin1_misc_desc	[Forcer les bandits à dévoiler leurs plans.]
+}
+
+NEWBIELAND_GRAVESTSIN1_P_LDC_ENQUETE ()
+{
+	newbieland_gravestsin1_p_ldc_enquete	[Ta réputation commence à s'étendre. Comme tu as beaucoup travaillé pour les différents chefs de peuple ici, je sais pouvoir te confier une tâche plus sensible.{break}Dans tes pérégrinations, tu as sûrement croisé des bandits autour du lac. Ordinairement nous arrivons à les contenir car leurs activités se limitent à quelques rapines.\nToutefois, depuis quelques temps, ils font preuve d'un regain d'activité. Rends moi service et essaie de voir ce qu'ils trament. Ah oui, ce sont des criminels, ne te sens pas coupables, si quelques-uns disparaissent.]
+}
+
+NEWBIELAND_GRAVESTSIN1_P_OVL_LOOT_BANDIT_1 (item i1, int qt1, int qual1)
+{
+	newbieland_gravestsin1_p_ovl_loot_bandit_1	[Les bandits ont un secret, découvrez-le.]
+}
+
+NEWBIELAND_GRAVESTSIN2_MIS_TITLE (bot giver)
+{
+	newbieland_gravestsin2_mis_title	[Le plus grand péché #1]
+}
+
+NEWBIELAND_GRAVESTSIN2_MIS_DESC (bot giver)
+{
+	newbieland_gravestsin2_mis_desc	[Trouver ce que cache l'appareil trouvé sur le bandit]
+}
+
+NEWBIELAND_GRAVESTSIN2_T2CHIANG_OBJ (bot givervar)
+{
+	newbieland_gravestsin2_t2chiang_obj	[Montrer l'appareil trouvé à $givervar$]
+}
+
+NEWBIELAND_GRAVESTSIN2_T2CHIANG_T2 (bot givervar)
+{
+	newbieland_gravestsin2_t2chiang_t2	[J'ai trouvé cet appareil sur un bandit]
+}
+
+NEWBIELAND_GRAVESTSIN2_DEVICE_CHIANG (bot sivaldo)
+{
+	( self.gender = male )
+		newbieland_gravestsin2_device_chiang_m	[Hmm qu'as-tu là mon ami? Oh, ça ressemble à un outil qu'utilisent les Matis pour la culture des plantes.\nTu dis que tu l'as trouvé sur un Tryker hostile dans le champ de cratcha ?\nIl se peut que notre problème de bandits ne soit pas encore réglé, c'est très embêtant.\nMontre ça à $sivaldo$, et voit ce qu'il peut y trouver.]
+	( self.gender = female )
+		newbieland_gravestsin2_device_chiang_f	[Hmm qu'as-tu là mon amie? Oh, ça ressemble à un outil qu'utilisent les Matis pour la culture des plantes.\nTu dis que tu l'as trouvé sur un Tryker hostile dans le champ de cratcha ?\nIl se peut que notre problème de bandits ne soit pas encore réglé, c'est très embêtant.\nMontre ça à $sivaldo$, et voit ce qu'il peut y trouver.]
+}
+
+NEWBIELAND_GRAVESTSIN2_DEVICE_SIVALDO (bot zhashon)
+{
+	newbieland_gravestsin2_device_sivaldo	[Bien sûr que je reconnais cet appareil ! \nC'est un outil utilisé pour modifier la nature des plantes, en y greffant des parties d'autres plantes. \nC'est une technique appelée la 'Micro greffe'. \nLes Matis utilisent cette technique depuis des années de différentes façons, mais ici à Silan, ils ont réussi à repousser les limites de cette technique !\nC'est cette méthode et ces outils qui ont permis de créer des espèces uniques comme certaines ici ...{break}Tu as trouvé ça sur un bandit ? \nBon sang ! Ce barbare n'avait sûrement aucune idée de ce qu'était en fait ce joli couteau qu'il a volé dans les ruines. \nMais, il a l'air d'être en état de fonctionnement, et c'est étrange. \nOn dirait qu'il contient un échantillon de greffe à l'intérieur.... \nMais qu'est-ce que c'est ?{break}Attends .... Mais ! \nCa ne peut pas être ... de la Goo !! \nIls greffent de la goo pure dans les plantes ? \nApporte ceci immédiatement à Maître $zhashon$ le Zorai! Je veux la confirmation qu'il s'agit bien de Goo, Vite !]
+}
+
+NEWBIELAND_GRAVESTSIN2_DEVICE_ZHASHON (bot keally)
+{
+	newbieland_gravestsin2_device_zhashon	[Puis-je t'aider mon enfant ? \nMais je sens ... Tu as l'odeur de la Goo partout sur toi ! Es-tu infecté ou ...?\nOh, je vois. C'est cet appareil qui en contient. \nC'est ce que tu voulais savoir ? Hé bien tu as ta réponse,  et c'est un échantillon très pur et concentré ! \nOù as tu eu une telle chose ?{break}Sur un tryker ? \nPar les racines! \nCes fous essaieraient ils d'accélérer la propagation de la Goo ? \nIls ont du être sévèrement exposé, leur santé mentale est détruite ! \nC'est incroyable! Chiang sait il ça ? \nAs-tu demandé à $keally$ si elle savait que ses frères font ça ? \nNon ? Alors vas-y je vais prévenir les autres !]
+}
+
+NEWBIELAND_GRAVESTSIN2_DEVICE_KEALLY (bot apollya)
+{
+	newbieland_gravestsin2_device_keally	[Un bandit Tryker près du Fléau ? Qui touchent aux cratchas ? Et il avait ca ?\nOh.\nOhhhhhh non. Oh non. C'est vraiment, vraiment pas bon ! \nOK. Ecoute. Je dois parler à... euuu, tout le monde. C'est mauvais. \nHmm. J'entends ni cris ni injures ni menaces de morts et de mutilations, donc j'imagine que $apollya$ n'est pas encore au courant n'est-ce pas ? {break}Bien, c'est ce que je pensais. OK, devine à qui tu vas devoir aller expliquer se qui ce passe ? Oui. Elle. \nDis lui que je crois savoir ce qu'il se passe, et que ces bandits sont sûrement les 'Chlorogoos' et ensuite ... et bien mets toi à l'abris. Enfuis toi. Ca risque de barder, la colère d'une Fyros fait peur à voir.]
+}
+
+NEWBIELAND_GRAVESTSIN2_DEVICE_APOLLYA (faction chlorogoo, bot keally, bot sivaldo, bot zhashon)
+{
+	( self.gender = male )
+		newbieland_gravestsin2_device_apollya_m	[Je peux voir à ton regard que maître $zhashon$ a confirmé les craintes de $sivaldo$, et que $keally$ a confirmé les miennes. \nOui, je suis déjà au courant de tes découvertes. \nTrès bien. Tu nous as assez rendu de services pour être tenu au courant.{break}Apparemment un groupe de Tryker a totalement perdu la tête.\nNous avons à faire à ceux qui s'appellent entre eux $chlorogoo.mda$ $chlorogoo.member$. Ce sont des êtres dangereux et fous qui ont apparemment fait une religion de la Goo et surtout de la drogue créée à partir d'extraits de Goo.  \nTout le monde est d'accord pour dire que tout ce qui est touché par la Goo est mauvais et une menace pour ce que nous essayons de construire.\n\nSoyons clairs. Si nous voyons juste, nous allons devoir tuer tout ce qui bouge et qui ressemble à un tryker infecté. \nQuand tu seras prêt, et assez fort pour nous aider, parles à Chiang, et il te diras quoi faire]
+	( self.gender = female )
+		newbieland_gravestsin2_device_apollya_f	[Je peux voir à ton regard que maître $zhashon$ a confirmé les craintes de $sivaldo$, et que $keally$ a confirmé les miennes. \nOui, je suis déjà au courant de tes découvertes. \nTrès bien. Tu nous as assez rendu de services pour être tenue au courant.{break}Apparemment un groupe de Tryker a totalement perdu la tête.\nNous avons à faire à ceux qui s'appellent entre eux $chlorogoo.mda$ $chlorogoo.member$. Ce sont des êtres dangereux et fous qui ont apparemment fait une religion de la Goo et surtout de la drogue créée à partir d'extraits de Goo.  \nTout le monde est d'accord pour dire que tout ce qui est touché par la Goo est mauvais et une menace pour ce que nous essayons de construire.\n\nSoyons clairs. Si nous voyons juste, nous allons devoir tuer tout ce qui bouge et qui ressemble à un tryker infecté. \nQuand tu seras prète, et assez forte pour nous aider, parles à Chiang, et il te diras quoi faire]
+}
+
+NEWBIELAND_GRAVESTSIN3_MIS_TITLE (bot giver)
+{
+	newbieland_gravestsin3_mis_title	[Le plus grand péché #2]
+}
+
+NEWBIELAND_GRAVESTSIN3_MIS_DESC (bot giver)
+{
+	newbieland_gravestsin3_mis_desc	[Révéler les plans des bandits.]
+}
+
+NEWBIELAND_GRAVESTSIN3_T2CHIANG_T2 (bot givervar)
+{
+	newbieland_gravestsin3_t2chiang_t2	[J'ai découvert que les Chlorogoos essayaient de répandre la Goo plus vite.]
+}
+
+NEWBIELAND_GRAVESTSIN3_P_BC_NO_SKILLS ()
+{
+	newbieland_gravestsin3_p_bc_no_skills	[Tu n'es pas encore suffisamment aguerri pour affronter ce qui vit là-bas. Renforces tes talents pour mettre toutes les chances de ton côté.]
+}
+
+NEWBIELAND_GRAVESTSIN3_OBJ_NOSKILLS (bot givervar)
+{
+	newbieland_gravestsin3_obj_noskills	[Augmenter votre niveau en combat ou en magie à 25. Puis parlez à $givervar$.]
+}
+
+NEWBIELAND_GRAVESTSIN3_P_T2_SKILL25 (bot givervar)
+{
+	newbieland_gravestsin3_p_t2_skill25	[Je pense être maintenant suffisamment habile.]
+}
+
+NEWBIELAND_GRAVESTSIN3_T2_CHIANG ()
+{
+	( self.gender = male )
+		newbieland_gravestsin3_t2_chiang_m	[Tu as vite progressé, si vite ! \nTu es passé  d'un simple réfugié sans défense à un brave homin qui mène le combat pour la défense de notre culture. \nTu peux être fier de toi.{break}Je suis d'accord avec les autres leaders. \nCes bandits les Chlorogoos, il faut s'en occuper vite fait bien fait. \nIl y a un Kami au sud du lac, qui observe la situation. \nIl devrait pouvoir confirmer ou réfuter nos accusations sur ces bandits, et surtout s'ils sont infectés ou non par la Goo. \nS'il confirme nos craintes, il n'y a qu'une seule solution possible. Tu dois tuer leur chef, pour forcer les bandits à se rendre ou à fuir.{break}Je te conseille de parler aux autres avant de partir, ils ont peut être plus d'informations pour toi. \nAussi, je me suis arrangé avec la Karavan pour qu'elle puisse nous accorder des transports dans certaines circonstances. \nDis leur que tu viens de ma part, et ils devraient accepter de te téléporter vers un de leur poste avancé, au sud ouest des ruines de Silan.]
+	( self.gender = female )
+		newbieland_gravestsin3_t2_chiang_f	[Tu as vite progressé, si vite ! \nTu es passée  d'une simple réfugiée sans défense à une brave homin qui mène le combat pour la défense de notre culture. \nTu peux être fière de toi.{break}Je suis d'accord avec les autres leaders. \nCes bandits les Chlorogoos, il faut s'en occuper vite fait bien fait. \nIl y a un Kami au sud du lac, qui observe la situation. \nIl devrait pouvoir confirmer ou réfuter nos accusations sur ces bandits, et surtout s'ils sont infectés ou non par la Goo. \nS'il confirme nos craintes, il n'y a qu'une seule solution possible. Tu dois tuer leur chef, pour forcer les bandits à se rendre ou à fuir.{break}Je te conseille de parler aux autres avant de partir, ils ont peut être plus d'informations pour toi. \nAussi, je me suis arrangé avec la Karavan pour qu'elle puisse nous accorder des transports dans certaines circonstances. \nDis leur que tu viens de ma part, et ils devraient accepter de te téléporter vers un de leur poste avancé, au sud ouest des ruines de Silan.]
+}
+
+NEWBIELAND_GRAVESTSIN3_SYSMSG_UNLOCKTP ()
+{
+	newbieland_gravestsin3_sysmsg_unlocktp	[Vous pouvez désormais utiliser le téléporteur de la Karavan, parlez à l'officier Karavan du camp de départ pour vous téléporter.]
+}
+
+NEWBIELAND_GRAVESTSIN3BIS_MIS_TITLE (bot giver)
+{
+	newbieland_gravestsin3bis_mis_title	[Le plus grand péché #3]
+}
+
+NEWBIELAND_GRAVESTSIN3BIS_MIS_DESC (bot giver)
+{
+	newbieland_gravestsin3bis_mis_desc	[Vaincre les Chlorogoo]
+}
+
+NEWBIELAND_GRAVESTSIN3BIS_T2_KAMI_OBJ (bot kami)
+{
+	newbieland_gravestsin3bis_t2_kami_obj	[Parlez au Kami du lac pour en savoir plus sur les Chlorogoo.]
+}
+
+NEWBIELAND_GRAVESTSIN3BIS_T2_KAMI_T2 (bot kami)
+{
+	newbieland_gravestsin3bis_t2_kami_t2	[Chiang m'envoie chercher des informations sur les Chlorogoo.]
+}
+
+NEWBIELAND_GRAVESTSIN3BIS_KAMI_TALK ()
+{
+	( self.gender = male )
+		newbieland_gravestsin3bis_kami_talk_m	[Je t'attendais. \nComme Chiang le Zorai m'avoir dit : Homins derrière le lac, polluent les cratcha et autres fruits des racines avec ce que vous appelez Goo, le Vide va se propager encore plus. \nQuand Goo a pourri plantes de l'intérieur, ils récoltent et s'en nourrissent pendant rituels effrayants. \nLe Vide ronge leur esprit, et ils croient devenir comme Ma-Duk. \nDans chacun d'eux, Vide s'est incrusté. Ils ne peuvent pas être sauvés, juste nettoyés et soulagés de souffrance.{break}Ami, ce que Homins du lac font est blasphème pour Atys et Ma-Duk. \nLibère les de l'emprise du Vide, ou Kami devoir le faire sinon. Et ça ne plaira pas à toi et autres homins de la région. \nPour te montrer importance de ta mission, les Kami t'accordent faveur. \nTon esprit maintenant lié à cet endroit. \nSi tu tombes au combat, tu pourras ressusciter dans ce sanctuaire, au lieu de camp Kami loin d'ici. \nMaintenant il faut partir et faire ce que tu dois.{break}Autre chose je sens, plus fort, plus grave. Avec mes frères nous allons chercher ce qu'il en est ...]
+	( self.gender = female )
+		newbieland_gravestsin3bis_kami_talk_f	[Je t'attendais. \nComme Chiang le Zorai m'avoir dit : Homins derrière le lac, polluent les cratcha et autres fruits des racines avec ce que vous appelez Goo, le Vide va se propager encore plus. \nQuand Goo a pourri plantes de l'intérieur, ils récoltent et s'en nourrissent pendant rituels effrayants. \nLe Vide ronge leur esprit, et ils croient devenir comme Ma-Duk. \nDans chacun d'eux, Vide s'est incrusté. Ils ne peuvent pas être sauvés, juste nettoyés et soulagés de souffrance.{break}Amie, ce que Homins du lac font est blasphème pour Atys et Ma-Duk. \nLibère les de l'emprise du Vide, ou Kami devoir le faire sinon. Et ça ne plaira pas à toi et autres homins de la région. \nPour te montrer importance de ta mission, les Kami t'accordent faveur. \nTon esprit maintenant lié à cet endroit. \nSi tu tombes au combat, tu pourras ressusciter dans ce sanctuaire, au lieu de camp Kami loin d'ici. \nMaintenant il faut partir et faire ce que tu dois.{break}Autre chose je sens, plus fort, plus grave. Avec mes frères nous allons chercher ce qu'il en est ...]
+}
+
+NEWBIELAND_GRAVESTSIN3BIS_SYSMSG_RESPAWN ()
+{
+	newbieland_gravestsin3bis_sysmsg_respawn	[Un nouveau point de respawn vient d'être ajouté à votre carte, si vous mourrez vous pourrez choisir de ressusciter chez les Kami du lac.]
+}
+
+NEWBIELAND_GRAVESTSIN3BIS_KILL_BOSS_OBJ (bot_name npc, int qt)
+{
+	newbieland_gravestsin3bis_kill_boss_obj	[Vaincre le leader des Chlorogoo]
+}
+
+NEWBIELAND_GRAVESTSIN3BIS_BOSS_KILLED_T2 (bot givervar)
+{
+	newbieland_gravestsin3bis_boss_killed_t2	[J'ai vaincu le leader des Chlorogoo]
+}
+
+NEWBIELAND_GRAVESTSIN3BIS_BOSS_KILLED ()
+{
+	( self.gender = male )
+		newbieland_gravestsin3bis_boss_killed_m	[Tu as fait acte de bravoure. Que tu penses avoir commis un péché ou que tu te sois senti fier dans la bataille, sache que tes actes ont permis de préserver la sécurité de ce sanctuaire et de tous les nouveaux arrivants.\nJe te remercie mon ami pour ce service rendu à la communauté, et sache que tu auras toujours des amis chez les Rangers. \nRepose toi mon ami, et si tu en as l'envie, fête ta victoire. Nous avons repoussé la tempête !{break}Il y a encore un petit détail avant que ceci ne soit vraiment fini. \nLe Kami du lac, m'a envoyé un message pendant que tu te battais, disant qu'il restait un point sur lequel il fallait enquêter, quelque chose résultant des activités des Chlorogoos. \nSi tu pouvais lui parler après t'être reposé, j'apprécierais ce dernier coup de main. \nEspérons que ce n'est qu'un petit problème rapidement solvable.]
+	( self.gender = female )
+		newbieland_gravestsin3bis_boss_killed_f	[Tu as fait acte de bravoure. Que tu penses avoir commis un péché ou que tu te sois senti fière dans la bataille, sache que tes actes ont permis de préserver la sécurité de ce sanctuaire et de tous les nouveaux arrivants.\nJe te remercie mon amie pour ce service rendu à la communauté, et sache que tu auras toujours des amis chez les Rangers. \nRepose toi mon amie, et si tu en as l'envie, fête ta victoire. Nous avons repoussé la tempête !{break}Il y a encore un petit détail avant que ceci ne soit vraiment fini. \nLe Kami du lac, m'a envoyé un message pendant que tu te battais, disant qu'il restait un point sur lequel il fallait enquêter, quelque chose résultant des activités des Chlorogoos. \nSi tu pouvais lui parler après t'être reposé, j'apprécierais ce dernier coup de main. \nEspérons que ce n'est qu'un petit problème rapidement solvable.]
+}
+
+NEWBIELAND_GRAVESTSIN3BIS_RET2_KAMI_OBJ (bot kami)
+{
+	newbieland_gravestsin3bis_ret2_kami_obj	[Allez voir ce qu'a découvert le Kami du lac.]
+}
+
+NEWBIELAND_GRAVESTSIN3BIS_RET2_KAMI_T2 (bot kami)
+{
+	newbieland_gravestsin3bis_ret2_kami_t2	[Chiang m'envoie vous aider.]
+}
+
+NEWBIELAND_GRAVESTSIN4_MIS_TITLE (bot giver)
+{
+	newbieland_gravestsin4_mis_title	[Le plus grand péché #4]
+}
+
+NEWBIELAND_GRAVESTSIN4_MIS_DESC (bot giver)
+{
+	newbieland_gravestsin4_mis_desc	[Découvrir les conséquences des expériences des Chlorogoo.]
+}
+
+NEWBIELAND_GRAVESTSIN4_KAMI_KITINS ()
+{
+	( self.gender = male )
+		newbieland_gravestsin4_kami_kitins_m	[Homin devoir prouver sa foi à Ma-Duk !! Car Kami craindre que actes des Chlorogoos ont maudits tous les homins.\n\nTout Atys est connecté, homin. Lac nourri par eau sous la terre, toi savoir ça. Mais tu sais où eau aller ?\nHomins du lac infectés par Goo, ils ont laissé leur plantes et traces de Goo polluer lac. Eau du lac pas statique, elle coule, très loin et très profond dans coeur d'Atys dans Primes Racines. \nDans profondeurs Atys, des choses dorment, mais elles réveillées par corruption et Goo emenées chez eux par eau du lac.{break}Toi voir par toi même, homin. \nDans coin sud ouest du lac, Kami découvert petit tunnel dans l'eau. Nage dans tunnel et découvre ce qui s'est réveillé. Après préviens homins de fin de cette région et de fin des homins qui ne s'enfuient pas d'ici]
+	( self.gender = female )
+		newbieland_gravestsin4_kami_kitins_f	[Homin devoir prouver sa foi à Ma-Duk !! Car Kami craindre que actes des Chlorogoos ont maudits tous les homins.\n\nTout Atys est connecté, homin. Lac nourri par eau sous la terre, toi savoir ça. Mais tu sais où eau aller ?\nHomins du lac infectés par Goo, ils ont laissé leur plantes et traces de Goo polluer lac. Eau du lac pas statique, elle coule, très loin et très profond dans coeur d'Atys dans Primes Racines. \nDans profondeurs Atys, des choses dorment, mais elles réveillées par corruption et Goo emenées chez eux par eau du lac.{break}Toi voir par toi même, homine. \nDans coin sud ouest du lac, Kami découvert petit tunnel dans l'eau. Nage dans tunnel et découvre ce qui s'est réveillé. Après préviens homins de fin de cette région et de fin des homins qui ne s'enfuient pas d'ici]
+}
+
+NEWBIELAND_GRAVESTSIN4_TARGET_KITINS_OBJ ()
+{
+	newbieland_gravestsin4_target_kitins_obj	[Trouver et explorer le tunnel décrit par le Kami, et découvrez ce qui s'est réveillé des profondeurs. Repérez les différentes créatures qui ont réapparues.]
+}
+
+NEWBIELAND_GRAVESTSIN4_REPORT_CHIANG_OBJ (bot givervar)
+{
+	newbieland_gravestsin4_report_chiang_obj	[Retourner raconter ce que vous avez vu à $givervar$]
+}
+
+NEWBIELAND_GRAVESTSIN4_REPORT_CHIANG_T2 (bot givervar)
+{
+	newbieland_gravestsin4_report_chiang_t2	[J'ai vu des monstres horribles dans la jungle derrière le lac.]
+}
+
+NEWBIELAND_GRAVESTSIN4_CHIANG_KITINS ()
+{
+	newbieland_gravestsin4_chiang_kitins	[Quoi ?!!! C'est impossible !! Ils n'ont pas pu ...\nOh Non... pas les kitins...\n\n Grrrrrrr !!!]
+}
+
+NEWBIELAND_KITINVALLEY_MIS_TITLE (bot giver)
+{
+	newbieland_kitinvalley_mis_title	[Affrontez la menace Kitin.]
+}
+
+NEWBIELAND_KITINVALLEY_MIS_DESC (bot giver)
+{
+	newbieland_kitinvalley_mis_desc	[Combattre les Kitins sur leur territoire.]
+}
+
+NEWBIELAND_KITINVALLEY_OBJ_NOSKILLS (bot givervar)
+{
+	newbieland_kitinvalley_obj_noskills	[Augmenter votre niveau en combat ou en magie à 30. Puis parlez à $givervar$.]
+}
+
+NEWBIELAND_KITINVALLEY_P_T2_SKILLS30 (bot givervar)
+{
+	newbieland_kitinvalley_p_t2_skills30	[Cette fois je suis prêt et peux vous aider.]
+}
+
+NEWBIELAND_KITINVALLEY_INTRO ()
+{
+	newbieland_kitinvalley_intro	[Les Kitins !!!. \nSaisis tu la conséquence de ce que tu m'apprends ? \nCa veut dire que les agissements des psychotiques Chlorogoo ont réveillé des choses des profondeurs, qui la dernière fois qu'ils sont apparus, ont réduit presque toute forme de vie sur Atys. \nIls ont rasé nos villes, massacrés nos armées, et c'est seulement avec l'aide des Kamis et Karavans que nous avons pu les repousser. \nEst-ce que tu saisis l'importance du problème ? {break}Le fait qu'ils ne nous aient pas encore envahis signifie qu'ils n'ont pas encore fini d'explorer la jungle que tu m'as décrite. \nMais ne te méprends pas - si nous agissons, ils vont nous trouver, et ils viendront. \nLes kitins sont méthodiques et infatigables. Ils chasseront leur proie jusqu'au bout et ils détruiront même cette jungle pour suivre une piste éventuelle. \nNous avons encore une chance, mais elle est désespérée{break}Ils cherchent quelque chose à détruire pour compenser la pollution de leur repère. \nNous devons leur donner une cible pendant que quelqu'un efface nos traces vers ici. Si les Kitins sont proches du tunnel comme tu me l'as dit alors ce n'est qu'une question de temps avant qu'ils nous trouvent ! \nSeul mes Rangers expérimentés sont assez rapides et efficaces pour les attirer vers les Primes Racines, mais nous avons besoin de temps !]
+}
+
+NEWBIELAND_KITINVALLEY_READY ()
+{
+	newbieland_kitinvalley_ready	[Quelqu'un doit s'occuper des kitins qui sont déjà là. \nPourrais tu faire ça ? Gagneras tu du temps pour mes Rangers ?]
+}
+
+NEWBIELAND_KITINVALLEY_YES ()
+{
+	newbieland_kitinvalley_yes	[Oui, je vous aiderais...]
+}
+
+NEWBIELAND_KITINVALLEY_NO ()
+{
+	newbieland_kitinvalley_no	[Non, je ne me sens pas...]
+}
+
+NEWBIELAND_KITINVALLEY_NOTREADY_COMEBACK ()
+{
+	newbieland_kitinvalley_notready_comeback	[Nous comptons vraiment sur toi, réfléchis y encore et reviens me voir plus tard.]
+}
+
+NEWBIELAND_KITINVALLEY_P_OVL_READY (bot givervar)
+{
+	( self.gender = male )
+		newbieland_kitinvalley_p_ovl_ready_m	[Dès que vous vous sentez prêt, allez voir $givervar$]
+	( self.gender = female )
+		newbieland_kitinvalley_p_ovl_ready_f	[Dès que vous vous sentez prête, allez voir $givervar$]
+}
+
+NEWBIELAND_KITINVALLEY_P_NOTREADY (bot givervar)
+{
+	newbieland_kitinvalley_p_notready	[Le combat m'appele, je suis prêt maintenant.]
+}
+
+NEWBIELAND_KITINVALLEY_GOKILL ()
+{
+	newbieland_kitinvalley_gokill	[Je savais que l'on pouvait compter sur toi. \nJe vais rassembler mes Rangers, et nous nous dirigerons vers les Primes Racines pour intercepter les Kitins. \nJe pense que nous pouvons utiliser les restes de plantes infectées par la Goo pour les attirer loin de la surface. \nCa peut marcher, seulement si avant on les empêche de trouver la source de l'infection vers le lac. \nTu dois gagner du temps en détournant l'attention des kitins dans la jungle{break}Pour faire ça, tu dois t'introduire prudemment dans la jungle, et chercher le gros kitin appelé Kirosta, reconnaissable par ses grosses mandibules. \nCe sont les éclaireurs des Kitins. Ils sont toujours en tête lors des invasions, et laissent derrière eux une piste de substance qu'ils sécrètent pour que le reste de la horde les suivent.{break}Trois choses doivent être faites. \nQuelqu'un de doué en récolte doit trouver les traces laissées par le Kirosta et s'en emparer. \nPuis, le Kirosta lui-même doit être éliminé. Ce sont des créatures puissantes, et ce sera une bataille difficile. \nMéfie toi de ces bêtes, et sache que parfois elles réagissent au son d'agonie de leurs compagnons travailleurs les kipees{break}Je sais que c'est difficile. \nJ'aimerais qu'il y ait une autre solution. Mais ce n'est pas le cas. \nPars, entoure toi de compagnons, et n'oublie pas de te servir de tout ce que tu as pu apprendre chez nous, c'est la clef pour réussir cette mission !]
+}
+
+NEWBIELAND_KITINVALLEY_T2_GIVER_OBJ (bot givervar)
+{
+	newbieland_kitinvalley_t2_giver_obj	[Retournez parler à $givervar$ pour lui rapporter votre victoire, et savoir si la diversion a marché.]
+}
+
+NEWBIELAND_KITINVALLEY_T2_GIVER_T2 (bot givervar)
+{
+	newbieland_kitinvalley_t2_giver_t2	[J'ai réussi, j'ai vaincu les kitins !]
+}
+
+NEWBIELAND_KITINVALLEY_WELLDONE (bot fyros_leader, bot matis_leader, bot tryker_leader, bot zorai_leader)
+{
+	newbieland_kitinvalley_welldone	[Victoire! \nLes kitins en profondeur ont mordus à l'hameçon, et après s'être défoulés sur une partie isolée des Primes Racines où nous les avions attirés, ils se sont calmés et sont retournés dans leur kitinière. \nMais en tout cas, nous savons que ça n'aurait jamais pu marcher sans toi, et que tes actes étaient beaucoup plus braves que les notres.{break}Les kitins des Primes Racines sont beaucoup plus forts que ceux de la jungle, et c'est à ce type d'ennemis que les Rangers sont préparés à faire face. \nToi par contre, tu as fais face à la plus grande terreur d'Atys avec le seul entraînement que nous t'avons donné ici, et tu as vaincu. \nSans toi, nous n'aurions pas pu réussir, merci {break}Nous te sommes tous redevables, et pour te montrer notre gratitude, accepte ce modeste présent. \nCette armure a été conçue par $fyros_leader$, les matériaux pour la construire ont été récoltés par $tryker_leader$ et assemblés par $matis_leader$, et enfin $zorai_leader$ l'a enchantée.]
+}
+
+NEWBIELAND_KITINVALLEY_LEAVE ()
+{
+	( self.gender = male )
+		newbieland_kitinvalley_leave_m	[Tu as exploré ce territoire de long en large, tu as rencontré chaque créature, fais face à tous les challenges, et apparemment appris tout ce qu'il y avait à apprendre. \nJe pense, mon ami, qu'il est temps pour toi de nous quitter, et d'exporter tes compétences dans le grand monde, où elles seront très utiles !\n\nLes Kamis et les Karavans peuvent téléporter les homins vers le continent, tu devras aller voir l'un d'entre eux pour pouvoir te rendre dans la capitale de ton peuple.\nJe te souhaite bonne chance pour tes voyages suivants, et je suis confiant quant à la progression de tes compétences et ton évolution dans le monde d'Atys]
+	( self.gender = female )
+		newbieland_kitinvalley_leave_f	[Tu as exploré ce territoire de long en large, tu as rencontré chaque créature, fais face à tous les challenges, et apparemment appris tout ce qu'il y avait à apprendre. \nJe pense, mon amie, qu'il est temps pour toi de nous quitter, et d'exporter tes compétences dans le grand monde, où elles seront très utiles !\n\nLes Kamis et les Karavans peuvent téléporter les homins vers le continent, tu devras aller voir l'un d'entre eux pour pouvoir te rendre dans la capitale de ton peuple.\nJe te souhaite bonne chance pour tes voyages suivants, et je suis confiant quant à la progression de tes compétences et ton évolution dans le monde d'Atys]
+}
+
+NEWBIELAND_START_MIS_TITLE (bot giver)
+{
+	newbieland_start_mis_title	[mission de respawn points]
+}
+
+NEWBIELAND_START_MIS_DESC (bot giver)
+{
+	newbieland_start_mis_desc	[mission de respawn points]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_MIS_TITLE (bot giver)
+{
+	newbieland_ranger_xleavetheland_2_mis_title	[Partir vers la capitale]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_MISS_DESC (bot giver)
+{
+	newbieland_ranger_xleavetheland_2_miss_desc	[Trouver comment partir pour la capitale]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_P_T2_LEAVE_THE_LAND (bot givervar)
+{
+	newbieland_ranger_xleavetheland_2_p_t2_leave_the_land	[Comment puis-je quitter cet endroit ?]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_RUSURE ()
+{
+	( self.gender = male )
+		newbieland_ranger_xleavetheland_2_rusure_m	[Quoi, tu veux quitter cet endroit ? \nJe te recommande fortement de ne pas faire ça. Avant de partir d'ici tu dois avoir appris à combattre, à comprendre la vie sur Atys, et tu dois surtout avoir finis tout ce que tu as commencé à faire chez nous.{break}Penses-tu avoir appris tout ce qu'il y avait à apprendre ici ? As-tu résolu tous les mystères que tu avais découvert ?\n Est-ce vraiment ton dernier mot ? Es-tu sûr de vouloir partir ?]
+	( self.gender = female )
+		newbieland_ranger_xleavetheland_2_rusure_f	[Quoi, tu veux quitter cet endroit ? \nJe te recommande fortement de ne pas faire ça. Avant de partir d'ici tu dois avoir appris à combattre, à comprendre la vie sur Atys, et tu dois surtout avoir finis tout ce que tu as commencé à faire chez nous.{break}Penses-tu avoir appris tout ce qu'il y avait à apprendre ici ? As-tu résolu tous les mystères que tu avais découvert ?\n Est-ce vraiment ton dernier mot ? Es-tu sure de vouloir partir ?]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_RUSURE_YES ()
+{
+	( self.gender = male )
+		newbieland_ranger_xleavetheland_2_rusure_yes_m	[Oui, je suis sûr de vouloir partir, j'ai pris ma décision.]
+	( self.gender = female )
+		newbieland_ranger_xleavetheland_2_rusure_yes_f	[Oui, je suis sure de vouloir partir, j'ai pris ma décision.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_RUSURE_NO ()
+{
+	newbieland_ranger_xleavetheland_2_rusure_no	[Je vais y réfléchir encore ...]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_P_LDC_QUIT ()
+{
+	newbieland_ranger_xleavetheland_2_p_ldc_quit	[Bien, je ne peux m'opposer à ta décision mais je souhaite que tu me rendes un petit service avant de t'en aller. Cela ne sera pas long et peut aussi t'être profitable.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_P_LDC_QUIT2 ()
+{
+	newbieland_ranger_xleavetheland_2_p_ldc_quit2	[Voilà, je veux juste que tu ailles parler aux différents chefs de peuple. Tu pourras ainsi te rendre compte qu'ils ont énormément de choses à t'apprendre]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_P_T2_FYROS_LEADER (bot leader_fyros, bot giver)
+{
+	newbieland_ranger_xleavetheland_2_p_t2_fyros_leader	[Mes respects, $giver$ m'a affirmé que vous aviez des missions à proposer à une fine lame.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_P_LDC_FYROS_LEADER ()
+{
+	( self.gender = male )
+		newbieland_ranger_xleavetheland_2_p_ldc_fyros_leader_m	[Et il t'a dit vrai. Salut à toi jeune Homin. Effectivement, sous l'apparente douceur de la vie dans ce campement se cache des problèmes qu'il faut avoir le courage d'affronter. Je vois de nombreux prétendus combattants mais seuls certains sont réellement capables de hauts faits d'armes. Si tu penses faire partie de cette poignée d'Homins exceptionnels alors oui j'ai des missions pour toi. {break}Je commencerai par t'envoyer accomplir des tâches faciles. Et quand, au fil de tes succès tu m'auras prouvé ta valeur je confierai les tâches les plus ardues. Alors si tu te montre encore une fois victorieux, en récompense de tout ceci, te remettrai-je une arme qui m'a longtemps servi. Une lame exceptionnelle à la grandeur des combattants Fyros. Va maintenant et reviens quand tu te sens prêt pour les défis dont je t'ai parlé.]
+	( self.gender = female )
+		newbieland_ranger_xleavetheland_2_p_ldc_fyros_leader_f	[Et il t'a dit vrai. Salut à toi jeune Homine. Effectivement, sous l'apparente douceur de la vie dans ce campement se cache des problèmes qu'il faut avoir le courage d'affronter. Je vois de nombreux prétendus combattants mais seuls certains sont réellement capables de hauts faits d'armes. Si tu penses faire partie de cette poignée d'Homins exceptionnels alors oui j'ai des missions pour toi. {break}Je commencerai par t'envoyer accomplir des tâches faciles. Et quand, au fil de tes succès tu m'auras prouvé ta valeur je confierai les tâches les plus ardues. Alors si tu te montre encore une fois victorieux, en récompense de tout ceci, te remettrai-je une arme qui m'a longtemps servi. Une lame exceptionnelle à la grandeur des combattants Fyros. Va maintenant et reviens quand tu te sens prêt pour les défis dont je t'ai parlé.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_P_T2_MATIS_LEADER (bot leader_matis, bot givervar)
+{
+	newbieland_ranger_xleavetheland_2_p_t2_matis_leader	[Mes salutations, $givervar$ m'envoie vers vous.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_P_LDC_MATIS_LEADER (bot givervar)
+{
+	newbieland_ranger_xleavetheland_2_p_ldc_matis_leader	[Ah oui ? Il m'envoie encore un réfugié qui rêve de grandeur. J'en ai plus qu'assez de contempler la médiocrité qui nous entoure. Et que veux tu ? que je t'enseigne le noble art Matis. Ce n'est pas aussi simple que de me présenter tes ... salutations ... {break}Bon, c'est en respect envers ce qu'on fait pour nous $givervar$ et ses hommes. Je te conseille de revenir quand tu seras prêt car je ne confie pas mon savoir au premier venu. Tu vas devoir le mériter. Vas-maintenant, j'ai à faire.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_P_T2_TRYKER_LEADER (bot leader_tryker, bot givervar)
+{
+	newbieland_ranger_xleavetheland_2_p_t2_tryker_leader	[Mes respects seigneur Tryker ! $givervar$ m'envoie pour que je vous rende service.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_P_LDC_TRYKER_LEADER (bot givervar, bot leader_matis)
+{
+	newbieland_ranger_xleavetheland_2_p_ldc_tryker_leader	[Seigneur Tryker ? Ah ah ah, je vois, ah ah ah. Toi tu as certainement parlé avec $leader_matis$. Elle est un peu, comment dire, hautaine. Mais bon pas de ça avec moi. $givervar$ t'envoie ? eh bien, ça me suffit. Si tu veux participer avec tous les autres à améliorer notre campement, alors bienvenue ! Visites, profites de ce que tu peux trouver autour de toi ici et quand tu en auras envie, reviens me rendre visite, j'aurai surement deux ou trois babioles à te confier. Que Jena veille sur toi.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_P_T2_LEADER_ZORAI (bot leader_zorai, bot givervar)
+{
+	newbieland_ranger_xleavetheland_2_p_t2_leader_zorai	[Mes respects, $givervar$ m'envoie vers vous.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_P_LDC_ZORAI_LEADER (bot givervar)
+{
+	newbieland_ranger_xleavetheland_2_p_ldc_zorai_leader	[Oui j'avais vu que tu me rendrais visite. $givervar$ t'envoie tu me dis. Ce n'est pas aussi simple que cela, il est, comme nous tous, qu'un pion dans le jeu de MA-DUK. Et si tu as été envoyé vers moi c'est qu'un grand dessein t'échoies. Et pour que tu puisses accomplir tout ce qui doit l'être, je dois te montrer la voie de l'art. Prends quelques instants pour penser à cela et alors je serai celui qui t'apprendra comment exploiter ton potentiel. Vas, Atys t'appelle !]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_P_T2_BACK_CHIANG (bot givervar)
+{
+	newbieland_ranger_xleavetheland_2_p_t2_back_chiang	[J'ai parlé aux dirigeants des peuples.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_2_P_LDC_OK_LEAVE ()
+{
+	newbieland_ranger_xleavetheland_2_p_ldc_ok_leave	[Très bien, je sais que tu as rendu au moins quelques services pour notre campement. J'espère cependant que tu ne vas pas regretter nous quitter si tôt. Le continent est tellement différent. Puisse ce que tu as acquis ici te servir pour plus tard. Mes voeux t'accompagnent.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_MIS_TITLE (bot giver)
+{
+	newbieland_ranger_xleavetheland_mis_title	[Partir vers la capitale]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_MISS_DESC (bot giver)
+{
+	newbieland_ranger_xleavetheland_miss_desc	[Trouver comment partir pour la capitale]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_P_AUTO_MENU ()
+{
+	newbieland_ranger_xleavetheland_p_auto_menu	[Je veux quitter ces terres.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_GOKAMI ()
+{
+	newbieland_ranger_xleavetheland_gokami	[Bien, dans ce cas va voir le Maître Kami dans le camp au nord, il pourra t'aider.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_OBJ_KAMI (bot kami)
+{
+	newbieland_ranger_xleavetheland_obj_kami	[Parler à $kami$ dans le camp au nord pour savoir comment partir]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_T2_KAMI (bot kami)
+{
+	newbieland_ranger_xleavetheland_t2_kami	[Je veux quitter ces terres]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_KAMI_QUES ()
+{
+	( self.gender = male )
+		newbieland_ranger_xleavetheland_kami_ques_m	[A quitter ce continent je peux t'aider. \nMagie Kami téléporte homins vers grosses villes homines. \nMais continents très dangereux pour petits homins ! Entraînement important avant de partir ...\nHomin sûr de partir d'ici ?]
+	( self.gender = female )
+		newbieland_ranger_xleavetheland_kami_ques_f	[A quitter ce continent je peux t'aider. \nMagie Kami téléporte homins vers grosses villes homines. \nMais continents très dangereux pour petits homins ! Entraînement important avant de partir ...\nHomin sure de partir d'ici ?]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_KAMI_QUES_NO ()
+{
+	newbieland_ranger_xleavetheland_kami_ques_no	[Non, je vais y réflechir ...]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_POPUP_TITLE_CHOOSE_DEST_WARNING ()
+{
+	newbieland_ranger_xleavetheland_popup_title_choose_dest_warning	[Attention]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_POPUP_CHOOSE_DEST_WARNING ()
+{
+	newbieland_ranger_xleavetheland_popup_choose_dest_warning	[Nous vous conseillons de vous rendre à la ville de votre peuple (premier choix).\n\nLes joueurs expérimentés ou désirant rejoindre des amis peuvent néanmoins choisir leur destination.\n\nVoyager d'une capitale à l'autre pour un joueur débutant est un trajet très dangereux, choisissez donc avec précaution.\n\nCe choix n'a pas d'impact sur les possibilités d'évolution de votre personnage, vous restez libre de choisir votre citoyenneté en vous rendant par vos propres moyens dans une autre capitale.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_KARA_QUES_CHOOSE_DEST_NONE ()
+{
+	newbieland_ranger_xleavetheland_kara_ques_choose_dest_none	[Je n'ai pas fait mon choix finalement]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_KAMI_QUES_YES ()
+{
+	newbieland_ranger_xleavetheland_kami_ques_yes	[{ros_exit}Oui, téléportez moi...]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_GOKARA ()
+{
+	newbieland_ranger_xleavetheland_gokara	[Bien, dans ce cas va voir l'officier de la Karavan dans le camp au sud, il pourra t'aider.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_OBJ_KARA (bot karavan)
+{
+	newbieland_ranger_xleavetheland_obj_kara	[Parler à $karavan$ dans le camp au sud pour savoir comment partir]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_KARA_QUES ()
+{
+	newbieland_ranger_xleavetheland_kara_ques	[Je peux t'aider à quitter ce continent. \nLa prêtresse Jena, grâce son pouvoir, nous permets de vous téléporter vers la capitale de votre peuple. \nMais attention, les régions capitales sont très dangereuses pour un nouveau venu ! Un entraînement est crucial avant de quitter ces terres...\nHomin, veux tu vraiment partir d'ici ?]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_P_TRIAL_TITLE ()
+{
+	newbieland_ranger_xleavetheland_p_trial_title	[Compte d'essai gratuit.]
+}
+
+NEWBIELAND_RANGER_XLEAVETHELAND_P_POPUP_TRIAL ()
+{
+	newbieland_ranger_xleavetheland_p_popup_trial	[@{W300}Pour aller plus avant dans le monde d'Atys, vous devez posséder un abonnement payant. Vous pouvez changer votre compte gratuit et abonnement payant en allant sur : @{F90F}https://secure.ryzom.com/payment_profile/@{FFFF}]
+}
+
+NEWBIELAND_SLAUGHTER_WEEK_INFO_P_MIS_TITLE (bot giver)
+{
+	newbieland_slaughter_week_info_p_mis_title	[]
+}
+
+NEWBIELAND_SLAUGHTER_WEEK_INFO_P_MIS_DESC (bot giver)
+{
+	newbieland_slaughter_week_info_p_mis_desc	[]
+}
+
+NEWBIELAND_SLAUGHTER_WEEK_INFO_AUTO_MENU ()
+{
+	newbieland_slaughter_week_info_auto_menu	[Que se passe-t-il ?]
+}
+
+NEWBIELAND_SLAUGHTER_WEEK_INFO_INTRO ()
+{
+	newbieland_slaughter_week_info_intro	[Des Kitins !\nDes centaines de Kitins!\nNon, des milliers de Kitins !\nLes territoires sont envahis, on me rapporte des armées entières de Kitins amassées dans le désert Fyros, dans la jungle Zoraï, dans les forêts Matis et même autour des grands lacs Tryker.\nNous ne savons pas pourquoi autant de Kitins ont subitement surgi des profondeurs d'Atys, mais une chose est sûre... Il va falloir combattre !\nNous avons besoin de jeunes homins bien entraînés pour aider nos plus braves combattants dans cette guerre.\nJe compte sur vous $self$, rejoignez votre patrie au plus vite !  ]
+}
+
+NEWBIELAND_SLAUGHTER_WEEK_SHOUT_P_MIS_TITLE (bot giver)
+{
+	newbieland_slaughter_week_shout_p_mis_title	[]
+}
+
+NEWBIELAND_SLAUGHTER_WEEK_SHOUT_P_MIS_DESC (bot giver)
+{
+	newbieland_slaughter_week_shout_p_mis_desc	[]
+}
+
+NEWBIELAND_SLAUGHTER_WEEK_SHOUT_AUTO_MENU ()
+{
+	newbieland_slaughter_week_shout_auto_menu	[tu as fini de hurler ?]
+}
+

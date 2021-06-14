@@ -1,0 +1,222 @@
+﻿//////////////////Zorai villageC Hoi-Cho missions/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Mission 01 : KNOWLEDGE MISSION
+/*
+ZC_KNOWLEDGE_MIS_01
+*/
+ZC_KNOWLEDGE_MIS_01_TITLE (bot giver)
+{
+	zc_knowledge_mis_01_title	[Letters to a few barbarians]
+
+}
+
+ZC_KNOWLEDGE_MIS_01_DESC (bot giver)
+{
+	zc_knowledge_mis_01_desc	[Vous allez porter des messages pour un vieil homme qui souhaite rassembler quelques amis, et écouter une histoire 
+					pleine de sagesse.]
+
+}
+
+ZC_KNOWLEDGE_MIS_01_STEP_1 (player p, bot target, place place_min_cho)
+{
+//Dialogue sage
+	zc_knowledge_mis_01_step_1		[J'ai besoin de tes services, $p$. Je souhaite inviter de vieux amis à moi, pour la plupart des 
+						'barbarians', comme on les appelait dans l'ancien temps.{break} J'aimerais partager un repas avec eux, ici, 
+						dans mon village. Il me faut un messager, qui les contactera pour moi, et recueillera leur réponse 
+						à mon invitation. Je suis trop vieux pour courir la jungle. Rassure-toi, ils vivent tous dans la région. 
+						Je te paierai bien, et je te raconterai une histoire à propos de ces fameux 'barbarians'.\n
+						Up until three generations ago very few Zoraïs had ever set eyes upon the 'barbarians' as we used 
+						to call them, except on horrible drawings representing them in savage warfare sketched by artists 
+						venturing beyond the great wall built to keep barbarians out. It was during the terrible swarming 
+						of kitins that I came face to face with them for the first time.\n
+						Voici la première lettre, porte-la à $target$, une charmante dame matis qui vit au village de $place_min_cho$.]
+
+}
+
+ZC_KNOWLEDGE_MIS_01_STEP_2 (bot previous)
+{
+//Dialogue vieille femme matis
+	zc_knowledge_mis_01_step_2		[Oh, c'est très aimable à $previous$ de m'inviter à ce repas ! Voilà plusieurs mois 
+						que je ne l'ai pas vu. Tu lui diras que je viendrai.{break} J'espère avoir le temps de préparer un plat matis 
+						pour l'occasion. Pour $previous$, cette cuisine a une saveur toute spéciale, comme il te le racontera peut-être.]
+
+}
+
+ZC_KNOWLEDGE_MIS_01_TALKMENU (bot giver, bot previous)
+{
+//Talkmenu après avoir parlé à la vieille femme matis
+	zc_knowledge_mis_01_talkmenu		[$previous$ viendra à votre repas.]
+
+}
+
+ZC_KNOWLEDGE_MIS_01_STEP_3 (bot target, place place_jen_lai)
+{
+//Dialogue sage
+	zc_knowledge_mis_01_step_3		[J'en suis très heureux ! Je vais te raconter la suite de mon histoire pendant que je prépare 
+						la deuxième lettre.{break}\n
+						I was just a boy with my elder sister and about twenty others from my village. We'd been marching 
+						for many weeks guided by a Kami who instructed us where we'd find a rainbow to the east which would 
+						take us to safety. At last we came to the ridge of a valley where we could make out the beautiful 
+						rainbow. But instead of pushing on quickly, for there were signs of kitin presence, our chief put 
+						up his hand for us to halt and stood watching the rainbow from behind the trees.\n
+						La lettre est prête. Porte-la à $target$, au village de $place_jen_lai$. Tu le reconnaîtras facilement à 
+						son allure typiquement tryker.]
+
+}
+
+ZC_KNOWLEDGE_MIS_01_STEP_4 (bot previous, player p)
+{
+//Dialogue vieux tryker
+	zc_knowledge_mis_01_step_4		[Ah ah, une lettre de ce vieux $previous$ ! Que devient-il donc ? Eh bien je le saurai bientôt ma foi, 
+						il m'invite à un banquet de retrouvailles ! Voyons voir, suis-je libre à cette date ?{break} Hmm, en reportant mon repas 
+						hebdomadaire avec les marchands locaux, ça devrait aller ! Ce vieux $previous$ passe avant tout ! Tu peux lui 
+						confirmer ma venue, $p$ !]
+
+}
+
+ZC_KNOWLEDGE_MIS_01_STEP_5 (bot target, place place_zora)
+{
+//Dialogue sage
+	zc_knowledge_mis_01_step_5		[Excellente nouvelle ! Je craignais qu'il ne soit occupé, il est toujours en affaires avec quelqu'un.{break} 
+						Je termine la troisième lettre, où en étais-je de mon histoire ? Ah, oui...\n
+						The Kami urged us to hurry but our chief invited us to all look on. There we saw a company of 
+						about thirty barbarians of mixed races passing through the rainbow. Despite  our chief's troubled 
+						brow the Kamis again urged us to hurry on but many of us were reluctant. Then there came the 
+						distinct smell on the breeze and we heard the horrible sound of kitins crawling up from the rear. 
+						We ran to the side of slim hope rather than face certain death and so through the rainbow we all went. 
+						I closed my eyes and held my sister's hand as we passed through. We all knew that we would be 
+						passing into strange and perhaps hostile lands.\n
+						Voici la troisième lettre. Son destinataire est $target$, un Fyros peu bavard. Tu le trouveras dans notre 
+						belle cité de $place_zora$.]
+
+}
+
+ZC_KNOWLEDGE_MIS_01_STEP_6 ()
+{
+//Dialogue vieux fyros
+	zc_knowledge_mis_01_step_6		[Je viendrai.]
+
+}
+
+ZC_KNOWLEDGE_MIS_01_STEP_7 (player p, bot target)
+{
+//Dialogue sage
+	zc_knowledge_mis_01_step_7		[Bien ! Il ne reste plus qu'une lettre à porter. Tu fais de l'excellent travail, $p$. Mais tu dois te demander 
+						ce que j'ai trouvé derrière l'arc-en-ciel...{break}\n
+						I will never forget the sensation, a tingling feeling all over like diving into a cool lagoon 
+						on a hot summer's day. I knew that we'd arrived by the extra clasp of my sister's hand as she gave 
+						a start. I opened my eyes and beheld six barbarian ladies, two Trykers hardly any taller than me, 
+						two Fyros and two Matis and then, to the general relief, two Zoraïs ladies who offered us welcome 
+						and words of kindness to sooth our startled and anguished spirits. But there were too many of us 
+						for them to cater for, and I let myself be led with my sister by a comely Matis matron who gave us 
+						food, clothing and tenderness, for we'd lost our parents and were forlorn. With such kindness and 
+						solidarity my heart gave way and I found myself weeping into to her soft bosom.\n
+						Prends la dernière lettre. Il te faut la donner à $target$. Il chasse souvent au nord. je compte sur toi pour 
+						le trouver !]
+
+}
+
+ZC_KNOWLEDGE_MIS_01_STEP_8 (bot previous, player p)
+{
+//Dialogue chasseur Zoraï
+	zc_knowledge_mis_01_step_8		[C'est un honneur pour moi que d'accepter l'invitation de $previous$. Il m'a appris beaucoup de choses, 
+						ainsi qu'à tous les gens de son entourage. Merci à toi de m'avoir apporté son message, $p$.]
+
+}
+
+ZC_KNOWLEDGE_MIS_01_END (player p)
+{
+//Dialogue sage
+	zc_knowledge_mis_01_end			[Je n'en espérais pas tant, tous mes invités seront présents ! Merci grandement pour ton aide, $p$ ! 
+						Prends ceci comme salaire dûment gagné.{break} Écoute aussi la fin de mon histoire.\n
+						I often went to visit my Matis matron while we were in the Prime Roots and she taught me some of 
+						her cooking ways. But after two years the day came when we were to leave to make our new lives in 
+						our separate lands. I still regret those good days of solidarity and mutual understanding, I made 
+						many friends with children of the other races. My old bones tell me now as my tender soul taught me 
+						then that in unity are we homins best armed against war, poverty and strife. Some may not have 
+						liked confinement, but I loved it! The word barbarian has since gone completely out of fashion.]
+
+}
+
+//reward 1 action knowledge + fame zorai
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+ZC_FIGHT_1
+*/
+ZC_FIGHT_1_TITLE (bot giver)
+{
+	zc_fight_1_title	[Examine local fauna to check if it is infected by goo.]
+}
+
+ZC_FIGHT_1_DESC (bot giver, player p, creature_model c1, creature_model c2, creature_model c3)
+{
+	zc_fight_1_desc		[$giver$ wants you to check if the local fauna is infected by goo by examining the meat of 
+						$c1.ia$ $c1$, $c2.ia$ $c2$, and $c3.ia$ $c3$. Of course you will have to kill them first.]
+}
+
+ZC_FIGHT_1_STEP_1 (player p, creature_model c1, creature_model c2, creature_model c3)
+{
+	zc_fight_1_step_1	[Good day, $p$, if you have some time to spare, I've got some work for you.\n
+				 		As you should already know, goo can infect animals as well as plants, and we have to
+				 		fight it hard because it can spread very fast once it appears. That's why periodically we examine the 
+				 		local fauna to check if it is contaminated. So I will pay you well if you accept to kill
+				 		$c1.ia$ $c1$ $c2.ia$ $c2$, and $c3.ia$ $c3$, then quarter them and bring me back their meat to see if they are infected.]
+}
+
+ZC_FIGHT_1_OBJ_1(creature_model c1, creature_model c2, creature_model c3)
+{
+	zc_fight_1_obj_1	[Kill $c1.ia$ $c1$, $c2.ia$ $c2$, $c3.ia$ $c3$ and quarter their meat.]
+}
+
+ZC_FIGHT_1_TALKMENU1()
+{
+	zc_fight_1_talkmenu1	[There's no sign of goo...]
+}
+
+ZC_FIGHT_1_END ()
+{
+	zc_fight_1_end		[So you didn't find any goo traces on these beasts ? Good ! It would be a pain if our herds
+				 		became infected. I really thank you for reassuring me about that. Take this for your work, and you can
+						also keep the meat you harvested.]
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+ZC_CRAFT_MIS_1
+*/
+ZC_CRAFT_MIS_1_TITLE (bot giver)
+{
+	zc_craft_mis_1_title		[The three Ambers.]
+}
+ZC_CRAFT_MIS_1_DESC (bot giver)
+{
+	zc_craft_mis_1_desc			[Help $giver$ to finish his statuette.]
+}
+ZC_CRAFT_MIS_1_STEP_1 (player p, bot target)
+{
+	zc_craft_mis_1_step_1		[Hello $p$, crafting is an exciting job, when foraging we often discovering some real wonders.{break}
+								It's like the nature let them here to remind us, Homins, her great power.\n
+								We must be be respectful of ressources that the nature give us.\n
+								We venerate the Kamis because these superior being are an integral part of the nature.\n
+								I am actually working at the creation of a wonderful object of veneration for the Kamis.\n
+								It's a statuette constitued of three kind of different ambers.\n
+								Unfortunatly I made a bad estimation of the quantity I need and I will soon be in lack of ambers.\n
+								I'd like you to help me to find some, go speak to $target$ the raw material merchant of our village, she will you where to find what I need.]
+}
+ZC_CRAFT_MIS_1_STEP_2 (bot previous, item rm1, item rm2, item rm3)
+{
+	zc_craft_mis_1_step_2		[$previous$ need more ambers?{break}
+								I am not surprised, he is a crafting maniac and when he works on an object of veneration he always add more and more details.\n
+								He never has enough ressources to finish his realisations.\n
+								But results are always exceptional and he really merits his fame.\n
+								Well, $previous$ needs some $rm1$, some $rm2$ and some $rm3$.\n
+								These ambers can't be found anywhere.\n
+								Try to search near water plants around villages and you should find what $previous$ needs.]
+}
+ZC_CRAFT_MIS_1_END()
+{
+	zc_craft_mis_1_end			[Thanks a lot, they are wonderful, the Kamis will feel flattered.\n
+								And when Kamis are happy we are also.\n
+								I have to finish my work now, take this reward for your precious help.]
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

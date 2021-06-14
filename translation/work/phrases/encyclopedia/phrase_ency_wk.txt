@@ -1,24 +1,36 @@
 ﻿
 #include "phrase_ency_alb_00_wk.txt"
+#include "phrase_ency_alb_01_wk.txt"
+#include "phrase_ency_alb_02_wk.txt"
+#include "phrase_ency_alb_03_wk.txt"
+#include "phrase_ency_alb_04_wk.txt"
+#include "phrase_ency_alb_05_wk.txt"
+#include "phrase_ency_alb_06_wk.txt"
+#include "phrase_ency_alb_07_wk.txt"
+#include "phrase_ency_alb_08_wk.txt"
+#include "phrase_ency_alb_09_wk.txt"
+#include "phrase_ency_alb_10_wk.txt"
+#include "phrase_ency_alb_11_wk.txt"
+#include "phrase_ency_alb_12_wk.txt"
 
 /** this file contains encyclopedia texts for all albums */
 
 ENCY_THM_PREREQ_NO ()
 {
-	[You must carry out certain tasks before you can accomplish the mission linked to this theme.]
+	[Vous devez remplir certaines tâches avant de pouvoir accomplir la mission liée à ce thème.]
 }
 
 ENCY_THM_PREREQ_YES ()
 {
-	[You are ready to accomplish the mission linked to this theme.]
+	[Vous êtes prêt à accomplir la mission liée à ce thème.]
 }
 
 ENCY_ALB_PREREQ_NO()
 {
-	[You have to discover all of the themes of this album to complete it.]
+	[Vous devez découvrir tous les thèmes de cet album pour le compléter.]
 }
 
 ENCY_THEMA_FINISHED()
 {
-	[&THM& You have finished a theme of the encyclopaedia.]
+	[&THM& Vous avez fini un thème de l'encyclopédie.]
 }

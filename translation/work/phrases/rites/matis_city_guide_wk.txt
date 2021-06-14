@@ -1,0 +1,468 @@
+﻿YRKANIS_CITY_WELCOMER_1_MIS_TITLE (bot giver)
+{
+	yrkanis_city_welcomer_1_mis_title	[Suivez le guide]
+}
+
+YRKANIS_CITY_WELCOMER_1_MIS_DESC (bot giver)
+{
+	yrkanis_city_welcomer_1_mis_desc	[Suivez les indications notées sur votre carte pour trouver les personnages importants que vous recherchez dans la ville.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_AUTO_GUIDE1 ()
+{
+	yrkanis_city_welcomer_1_p_auto_guide1	[Je recherche des personnes dans la ville.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_WELCOMER_1 ()
+{
+	yrkanis_city_welcomer_1_p_bc_welcomer_1	[Bien sûr, je suis là pour ça. Que voulez-vous savoir exactement ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DC_WELCOMER_1 ()
+{
+	yrkanis_city_welcomer_1_p_dc_welcomer_1	[Je peux vous diriger vers plusieurs personnes. Qui voulez-vous voir ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_TRAINER_C_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_trainer_c_1	[Où puis-je trouver un maître artisan ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_TRAINER_H_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_trainer_h_1	[Où puis-je trouver un entraîneur de récolteurs ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_TRAINER_M_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_trainer_m_1	[Où puis-je trouver un entraineur de magiciens ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_TRAINER_F_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_trainer_f_1	[Où puis-je trouver un instructeur de combattants ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_MERCHANT_LA_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_merchant_la_1	[Où puis-je trouver un marchand d'armure légères ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_MERCHANT_MA_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_merchant_ma_1	[Où puis-je trouver un marchand d'armure moyenne ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_MERCHANT_HA_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_merchant_ha_1	[Où puis-je trouver un marchand d'armures lourdes ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_MORE_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_more_1	[Je cherche autre chose.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DC_CHOICE_TRAINER_C1 ()
+{
+	yrkanis_city_welcomer_1_p_dc_choice_trainer_c1	[Dans quel district voulez-vous vous rendre ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_DISTRICT_C11 (place district_1)
+{
+	yrkanis_city_welcomer_1_p_da_district_c11	[Je veux voir les entraîneurs $district_1.pr$ $district_1$.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_C_1 (bot trainer_c_1)
+{
+	( trainer_c_1.gender = male )
+		yrkanis_city_welcomer_1_p_bc_answer_c_1_m	[$trainer_c_1$ entraîne les artisans de notre ville, je vous indique où le trouver sur votre carte.]
+	( trainer_c_1.gender = female )
+		yrkanis_city_welcomer_1_p_bc_answer_c_1_f	[$trainer_c_1$ entraîne les artisans de notre ville, je vous indique où la trouver sur votre carte.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_H_11 (bot trainer_h_1)
+{
+	( trainer_h_1.gender = male )
+		yrkanis_city_welcomer_1_p_bc_answer_h_11_m	[$trainer_h_1$ entraîne les récolteurs de notre ville, je vous indique où le trouver sur votre carte.]
+	( trainer_h_1.gender = female )
+		yrkanis_city_welcomer_1_p_bc_answer_h_11_f	[$trainer_h_1$ entraîne les récolteurs de notre ville, je vous indique où la trouver sur votre carte.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_M_11 (bot trainer_m_1)
+{
+	( trainer_m_1.gender = male )
+		yrkanis_city_welcomer_1_p_bc_answer_m_11_m	[$trainer_m_1$ entraîne les magiciens de notre ville, je vous indique où le trouver sur votre carte.]
+	( trainer_m_1.gender = female )
+		yrkanis_city_welcomer_1_p_bc_answer_m_11_f	[$trainer_m_1$ entraîne les magiciens de notre ville, je vous indique où la trouver sur votre carte.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_F_11 (bot trainer_f_1)
+{
+	( trainer_f_1.gender = male )
+		yrkanis_city_welcomer_1_p_bc_answer_f_11_m	[$trainer_f_1$ entraîne les combattants de notre ville, je vous indique où le trouver sur votre carte.]
+	( trainer_f_1.gender = female )
+		yrkanis_city_welcomer_1_p_bc_answer_f_11_f	[$trainer_f_1$ entraîne les combattants de notre ville, je vous indique où la trouver sur votre carte.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_LA_1 (bot merchant_la, bot merchant_lah)
+{
+	yrkanis_city_welcomer_1_p_bc_answer_la_1	[Comme vendeurs d'armures légères, nous avons $merchant_la$ et $merchant_lah$, je vous les indique.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_MA_1 (bot merchant_ma, bot merchant_mah)
+{
+	yrkanis_city_welcomer_1_p_bc_answer_ma_1	[Comme vendeurs d'armures moyennes, nous avons $merchant_ma$ et $merchant_mah$, je vous les indique.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_HA_1 (bot merchant_ha, bot merchant_hah)
+{
+	yrkanis_city_welcomer_1_p_bc_answer_ha_1	[Comme vendeurs d'armures lourdes, nous avons $merchant_ha$ et $merchant_hah$, je vous les indique.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DC_WELCOMER_MORE_1 ()
+{
+	yrkanis_city_welcomer_1_p_dc_welcomer_more_1	[Je vous écoute, que recherchez-vous ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_MERCHANT_RG_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_merchant_rg_1	[Où puis-je trouver une marchand d'armes à distance ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_MERCHANT_MK_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_merchant_mk_1	[Où puis-je acheter un mektoub ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_MERCHANT_TO_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_merchant_to_1	[Où puis-je trouver un marchand d'outils ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_MERCHANT_JW_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_merchant_jw_1	[Où puis-je trouver un marchand de bijous ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_MERCHANT_LRW_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_merchant_lrw_1	[Où puis-je trouver un marchand de matières premières ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_MERCHANT_LM_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_merchant_lm_1	[Où puis-je trouver un marchand d'armes de mêlée à une main ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_MERCHANT_HM_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_merchant_hm_1	[Où puis-je trouver un marchand d'armes à deux mains ?]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_MORE_2 ()
+{
+	yrkanis_city_welcomer_1_p_da_more_2	[Non, ce n'est toujours pas ce que je recherche.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_RG_1 (bot merchant_rg, bot merchant_rgh)
+{
+	yrkanis_city_welcomer_1_p_bc_answer_rg_1	[Comme vendeurs d'armes à distance, nous avons $merchant_rg$ et $merchant_rgh$, je vous les indique.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_MK_1 (bot merchant_mk)
+{
+	( merchant_mk.gender = male )
+		yrkanis_city_welcomer_1_p_bc_answer_mk_1_m	[Nous avons un marchand de montures, $merchant_mk$, je vous le note sur votre carte.]
+	( merchant_mk.gender = female )
+		yrkanis_city_welcomer_1_p_bc_answer_mk_1_f	[Nous avons un marchand de montures, $merchant_mk$, je vous la note sur votre carte.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_TO_1 (bot merchant_to, bot merchant_toh)
+{
+	yrkanis_city_welcomer_1_p_bc_answer_to_1	[Comme vendeurs d'outils, nous avons $merchant_to$ et $merchant_toh$, je vous les indique.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_JW_1 (bot merchant_jw, bot merchant_jwh)
+{
+	yrkanis_city_welcomer_1_p_bc_answer_jw_1	[Comme vendeurs de bijoux, nous avons $merchant_jw$ et $merchant_jwh$, je vous les indique.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_RW_1 (bot merchant_rw1, bot merchant_rw1h, bot merchant_rw2, bot merchant_rw2h)
+{
+	yrkanis_city_welcomer_1_p_bc_answer_rw_1	[Comme vendeurs de matières premières, nous avons $merchant_rw1$, $merchant_rw2$, $merchant_rw1h$ et $merchant_rw2h$, je vous les indique.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_LM_1 (bot merchant_lm, bot merchant_lmh)
+{
+	yrkanis_city_welcomer_1_p_bc_answer_lm_1	[Comme vendeurs d'armes à une main, nous avons $merchant_lm$ et $merchant_lmh$, je vous les indique.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_HM_1 (bot merchant_hm, bot merchant_hmh)
+{
+	yrkanis_city_welcomer_1_p_bc_answer_hm_1	[Comme vendeurs d'armes lourdes à deux mains, nous avons $merchant_hm$ et $merchant_hmh$, je vous les indique.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DC_WELCOMER_MORE_2 ()
+{
+	yrkanis_city_welcomer_1_p_dc_welcomer_more_2	[Non ? eh bien, continuons à chercher ensemble.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_MERCHANT_TT ()
+{
+	yrkanis_city_welcomer_1_p_da_merchant_tt	[Je cherche un tatooeur.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_MERCHANT_HD ()
+{
+	yrkanis_city_welcomer_1_p_da_merchant_hd	[Je cherche un coiffeur.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_OTHERS_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_others_1	[Non, je recherche plutôt les officiels de la ville.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_ABANDON_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_abandon_1	[Non, en fait, je vais me débrouiller seul. Au-revoir.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_DA_BACK_1 ()
+{
+	yrkanis_city_welcomer_1_p_da_back_1	[Redites-moi ce que l'on peut trouver ici.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_TT_1 (bot merchant_tt_1, bot merchant_tt_2)
+{
+	yrkanis_city_welcomer_1_p_bc_answer_tt_1	[Comme tatoueurs, nous avons $merchant_tt_1$ et $merchant_tt_2$, je vous les indique.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_HD_1 (bot merchant_hd_1, bot merchant_hd_2)
+{
+	yrkanis_city_welcomer_1_p_bc_answer_hd_1	[Comme coiffeurs, nous avons $merchant_hd_1$ et $merchant_hd_2$, je vous les indique.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ANSWER_OTHERS_1 (bot guide_officiels)
+{
+	( guide_officiels.gender = male )
+		yrkanis_city_welcomer_1_p_bc_answer_others_1_m	[Dans ce cas, allez voir $guide_officiels$, il sera plus à même de vous aider.]
+	( guide_officiels.gender = female )
+		yrkanis_city_welcomer_1_p_bc_answer_others_1_f	[Dans ce cas, allez voir $guide_officiels$, elle sera plus à même de vous aider.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_BC_ABANDON_1 ()
+{
+	yrkanis_city_welcomer_1_p_bc_abandon_1	[Bonne chance à vous alors.]
+}
+
+YRKANIS_CITY_WELCOMER_1_P_T2_WELCOMER (bot givervar)
+{
+	yrkanis_city_welcomer_1_p_t2_welcomer	[Je recherche d'autres personnes dans la ville.]
+}
+
+YRKANIS_CITY_WELCOMER_2_MIS_TITLE (bot giver)
+{
+	yrkanis_city_welcomer_2_mis_title	[Trouver les officiels.]
+}
+
+YRKANIS_CITY_WELCOMER_2_MIS_DESC (bot giver)
+{
+	yrkanis_city_welcomer_2_mis_desc	[Trouver les officiels.]
+}
+
+YRKANIS_CITY_WELCOMER_2_YRKANIS_CITY_WELCOMER_2_P_AUTO_GUIDE1 ()
+{
+	yrkanis_city_welcomer_2_yrkanis_city_welcomer_2_p_auto_guide1	[Je recherche un officiel d'Yrkanis.]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_BC_WELCOMER2_1 ()
+{
+	yrkanis_city_welcomer_2_p_bc_welcomer2_1	[Oui, je peux vous aider. Qui recherchez-vous exactement ?]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_DC_INFO_WELCOMER2 ()
+{
+	yrkanis_city_welcomer_2_p_dc_info_welcomer2	[Je peux vous dirirger vers plusieurs personnes. Qui voulez-vous voir ?]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_DA_SAGE_1 ()
+{
+	yrkanis_city_welcomer_2_p_da_sage_1	[Où se trouve le sage de la ville ?]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_DA_BARMAN_1 ()
+{
+	yrkanis_city_welcomer_2_p_da_barman_1	[Où puis-je trouver le barman ?]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_DA_INTENDANT_1 ()
+{
+	yrkanis_city_welcomer_2_p_da_intendant_1	[Où puis-je trouver l'intendant de la ville ?]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_DA_GUARDCHIEF_1 ()
+{
+	yrkanis_city_welcomer_2_p_da_guardchief_1	[Où puis-je trouver le capitaine des gardes ?]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_DA_KARAVAN_OFFICER_1 ()
+{
+	yrkanis_city_welcomer_2_p_da_karavan_officer_1	[Où puis-je trouver un représentant de le Karavan ?]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_DA_KAMI_MASTER_1 ()
+{
+	yrkanis_city_welcomer_2_p_da_kami_master_1	[Où puis-je trouver un représentant des Kamis ?]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_DA_WELCOMER1 ()
+{
+	yrkanis_city_welcomer_2_p_da_welcomer1	[En fait je souhaite trouver des marchands, entraîneurs ou ce genre de personnes.]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_DA_ABANDON_1 ()
+{
+	yrkanis_city_welcomer_2_p_da_abandon_1	[Non, en fait je vais me débrouiller seul. Au-revoir.]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_BC_SAGE_1 (bot yrkanis_sage)
+{
+	( yrkanis_sage.gender = male )
+		yrkanis_city_welcomer_2_p_bc_sage_1_m	[Je vais indiquer sur votre carte où trouver $yrkanis_sage$, le sage de notre ville.]
+	( yrkanis_sage.gender = female )
+		yrkanis_city_welcomer_2_p_bc_sage_1_f	[Je vais indiquer sur votre carte où trouver $yrkanis_sage$, la sage de notre ville.]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_BC_BARMAN_1 (bot yrkanis_barman)
+{
+	( yrkanis_barman.gender = male )
+		yrkanis_city_welcomer_2_p_bc_barman_1_m	[Je vais indiquer sur votre carte où trouver $yrkanis_barman$, le barman de notre ville.]
+	( yrkanis_barman.gender = female )
+		yrkanis_city_welcomer_2_p_bc_barman_1_f	[Je vais indiquer sur votre carte où trouver $yrkanis_barman$, la barmaid de notre ville.]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_BC_INTENDANT_1 (bot yrkanis_intendant)
+{
+	( yrkanis_intendant.gender = male )
+		yrkanis_city_welcomer_2_p_bc_intendant_1_m	[Je vais indiquer sur votre carte où trouver $yrkanis_intendant$,l'intendant de notre ville.]
+	( yrkanis_intendant.gender = female )
+		yrkanis_city_welcomer_2_p_bc_intendant_1_f	[Je vais indiquer sur votre carte où trouver $yrkanis_intendant$,l'intendante de notre ville.]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_BC_GUARD_CHIEF_1 (bot yrkanis_guard_chief)
+{
+	( yrkanis_guard_chief.gender = male )
+		yrkanis_city_welcomer_2_p_bc_guard_chief_1_m	[Je vais indiquer sur votre carte où trouver $yrkanis_guard_chief$, le capitaine des gardes de notre ville.]
+	( yrkanis_guard_chief.gender = female )
+		yrkanis_city_welcomer_2_p_bc_guard_chief_1_f	[Je vais indiquer sur votre carte où trouver $yrkanis_guard_chief$, la capitaine des gardes de notre ville.]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_BC_KARAVAN_OFFICER_1 (bot yrkanis_karavan_officer)
+{
+	yrkanis_city_welcomer_2_p_bc_karavan_officer_1	[Oui je vais vous indiquer où trouver sur votre carte $yrkanis_karavan_officer$, l'officier de la Karavan.]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_BC_KAMI_MASTER_1 (bot yrkanis_kami_master)
+{
+	yrkanis_city_welcomer_2_p_bc_kami_master_1	[Oui je vais vous indiquer sur votre carte où trouver $yrkanis_kami_master$, le représentant des Kamis.]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_BC_WELCOMER_1 (bot welcomer_1)
+{
+	( welcomer_1.gender = male )
+		yrkanis_city_welcomer_2_p_bc_welcomer_1_m	[Oui je vais vous indiquer où trouver sur votre carte $welcomer_1$, le guide de la ville.]
+	( welcomer_1.gender = female )
+		yrkanis_city_welcomer_2_p_bc_welcomer_1_f	[Oui je vais vous indiquer où trouver sur votre carte $welcomer_1$, la guide de la ville.]
+}
+
+YRKANIS_CITY_WELCOMER_2_P_T2_WELCOMER2 (bot givervar)
+{
+	yrkanis_city_welcomer_2_p_t2_welcomer2	[Je recherche d'autres officiels d'Yrkanis.]
+}
+
+NATAE_CITY_WELCOMER_1_P_BC_ANSWER_LA_1 (bot merchant_la)
+{
+	natae_city_welcomer_1_p_bc_answer_la_1	[$merchant_la$ vend des armures légères, je vous indique où le trouver sur votre carte.]
+}
+
+NATAE_CITY_WELCOMER_1_P_BC_ANSWER_MA_1 (bot merchant_ma)
+{
+	natae_city_welcomer_1_p_bc_answer_ma_1	[$merchant_ma$ vend des armures moyennes, je vous indique où le trouver sur votre carte.]
+}
+
+NATAE_CITY_WELCOMER_1_P_BC_ANSWER_HA_1 (bot merchant_ha)
+{
+	natae_city_welcomer_1_p_bc_answer_ha_1	[$merchant_ha$ vend des armures lourdes, je vous indique où le trouver sur votre carte.]
+}
+
+NATAE_CITY_WELCOMER_1_P_DC_WELCOMER_MORE_1 ()
+{
+	natae_city_welcomer_1_p_dc_welcomer_more_1	[Je vous écoute, que recherchez-vous ?]
+}
+
+NATAE_CITY_WELCOMER_1_P_BC_ANSWER_RG_1 (bot merchant_rg)
+{
+	natae_city_welcomer_1_p_bc_answer_rg_1	[$merchant_rg$ vend des armes à distance, je vous indique où le trouver sur votre carte.]
+}
+
+NATAE_CITY_WELCOMER_1_P_BC_ANSWER_TO_1 (bot merchant_to)
+{
+	natae_city_welcomer_1_p_bc_answer_to_1	[$merchant_to$ vend des outils, je vous indique où le trouver sur votre carte.]
+}
+
+NATAE_CITY_WELCOMER_1_P_BC_ANSWER_JW_1 (bot merchant_jw)
+{
+	natae_city_welcomer_1_p_bc_answer_jw_1	[$merchant_jw$ vend des bijoux, je vous indique où le trouver sur votre carte.]
+}
+
+NATAE_CITY_WELCOMER_1_P_BC_ANSWER_RW_1 (bot merchant_rw1)
+{
+	natae_city_welcomer_1_p_bc_answer_rw_1	[$merchant_rw1$ vend des matières premières, je vous indique où le trouver sur votre carte.]
+}
+
+NATAE_CITY_WELCOMER_1_P_BC_ANSWER_LM_1 (bot merchant_lm)
+{
+	natae_city_welcomer_1_p_bc_answer_lm_1	[$merchant_lm$ vend des armes de mêlée à une main, je vous indique où le trouver sur votre carte.]
+}
+
+NATAE_CITY_WELCOMER_1_P_BC_ANSWER_HM_1 (bot merchant_hm)
+{
+	natae_city_welcomer_1_p_bc_answer_hm_1	[$merchant_hm$ vend des armes de combat à deux mains, je vous indique où le trouver sur votre carte.]
+}
+
+NATAE_CITY_WELCOMER_1_P_T2_WELCOMER (bot givervar)
+{
+	natae_city_welcomer_1_p_t2_welcomer	[Je recherche d'autres personnes dans la ville.]
+}
+
+DAVAE_CITY_WELCOMER_1_P_T2_WELCOMER (bot givervar)
+{
+	davae_city_welcomer_1_p_t2_welcomer	[Je recherche d'autres personnes dans la ville.]
+}
+
+AVALAE_CITY_WELCOMER_1_P_BC_ANSWER_C_1 (bot trainer_c_1)
+{
+	avalae_city_welcomer_1_p_bc_answer_c_1	[$trainer_c_1$ est l'entraîneur d'artisants de notre ville, je l'indique sur votre carte.]
+}
+
+AVALAE_CITY_WELCOMER_1_P_BC_ANSWER_H_11 (bot trainer_h_1)
+{
+	avalae_city_welcomer_1_p_bc_answer_h_11	[$trainer_h_1$ est l'entraîneur de récolteurs de notre ville, je l'indique sur votre carte.]
+}
+
+AVALAE_CITY_WELCOMER_1_P_BC_ANSWER_M_11 (bot trainer_m_1)
+{
+	avalae_city_welcomer_1_p_bc_answer_m_11	[$trainer_m_1$ est l'entraîneur de magiciens de notre ville, je l'indique sur votre carte.]
+}
+
+AVALAE_CITY_WELCOMER_1_P_BC_ANSWER_F_11 (bot trainer_f_1)
+{
+	avalae_city_welcomer_1_p_bc_answer_f_11	[$trainer_f_1$ est l'entraîneur de combattants de notre ville, je l'indique sur votre carte.]
+}
+
+AVALAE_CITY_WELCOMER_1_P_T2_WELCOMER (bot givervar)
+{
+	avalae_city_welcomer_1_p_t2_welcomer	[Je recherche d'autres personnes dans la ville.]
+}
+

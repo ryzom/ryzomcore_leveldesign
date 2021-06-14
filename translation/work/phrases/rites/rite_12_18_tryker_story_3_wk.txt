@@ -1,0 +1,123 @@
+﻿R_12_18_MIS_TITLE ()
+{
+	r_12_18_mis_title	[L'apprentissage de la tolérance]
+}
+
+R_12_18_MIS_DESC ()
+{
+	r_12_18_mis_desc	[Un marchand Zoraï qui est bloqué par les Smugglers dans The Fount. Il faut le sortir de là et l'escorter à windermeer.]
+}
+
+R_12_18_P_LDF_INTRO_1 ()
+{
+	r_12_18_p_ldf_intro_1	[Par Jena ! Les affaires vont tellement bien que je vais bientôt manquer d'alcool ! Ce qui m'embête le plus c'est qu'un de mes associés tarde à revenir avec les herbes nécessaires à en fabriquer d'avantage. D'après les messages que j'ai reçu, il est retenu par les Smugglers dans la région de The Fount. Ils l'empêchent de passer sous prétexte qu'un Zoraï qui veut faire commerce en passant sur leurs terres doit payer des taxes.
+
+Si vous réussissez à atténuer les tensions et à escorter mon associé et sa précieuse cargaison jusqu'ici, je vous ferais goûter une breuvage qui vous rendra plus vigoureux.
+]
+}
+
+R_12_18_O_T2_TRIBE_CHIEF_1 (bot traveler_1)
+{
+	r_12_18_o_t2_tribe_chief_1	[Parlez à $traveler_1$ dans Smuggler's spot]
+}
+
+R_12_18_M_T2_TRAVELER_1 (bot traveler_1)
+{
+	r_12_18_m_t2_traveler_1	[Je suis venu vous aider.]
+}
+
+R_12_18_P_BC_BRIEF_1 (bot giver)
+{
+	r_12_18_p_bc_brief_1	[Ah c'est $giver$ qui vous envoie à mon secours ? Heureusement que vous êtes arrivé, je ne sais pas si j'aurais tenu beaucoup plus longtemps en présence de ces brutes. Ils refusent de me laisser passer si je ne m'acquitte pas d'une taxe complètement farfelue. La seule personne à convaincre est le chef de leur tribu, si vous y parvenez, nous pourrons partir et quitter ces terres barbares.]
+}
+
+R_12_18_M_T2_TRIBE_CHIEF_1 (bot tribe_chief_1)
+{
+	r_12_18_m_t2_tribe_chief_1	[J'ai à vous parler]
+}
+
+R_12_18_P_DC_TRIBE_CHIEF_1 ()
+{
+	r_12_18_p_dc_tribe_chief_1	[Vous voulez prendre la défense de ce marchand Zoraï ? Personne ici ne l'aime, il ne sait que nous mépriser et voudrait en plus que nous acceptions qu'il nous fasse concurrence ? Non vraiment, à moins qu'il ne montre un peu de respect pour nous, je ne vois pas de raison de le laisser faire. Nous avons bien d'autres problèmes à régler, surtout en ce moment !]
+}
+
+R_12_18_P_DA_PROBLEMS_1 ()
+{
+	r_12_18_p_da_problems_1	[Quels problèmes ?]
+}
+
+R_12_18_P_DA_ZORAI_CAN_HELP_1 ()
+{
+	r_12_18_p_da_zorai_can_help_1	[Peut-être que le Zoraï peut vous aider.]
+}
+
+R_12_18_M_T2_TRAVELER_2 (bot traveler_1)
+{
+	r_12_18_m_t2_traveler_2	[J'ai parlé au chef de la tribu]
+}
+
+R_12_18_P_LDC_TRAVELER_1 ()
+{
+	r_12_18_p_ldc_traveler_1	[Vous avez compris ? Ces barbares sont complètement butés, et ne veulent rien comprendre.]
+}
+
+R_12_18_P_LDC_TRAVELER_2 ()
+{
+	r_12_18_p_ldc_traveler_2	[Les aider ? Mais pourquoi donc ? Je ne leur dois rien à ces arriérés. Vous pensez de plus qu'ils acceptent par la suite de nous laisser passer ?]
+}
+
+R_12_18_P_BC_GO_KAMI_1 ()
+{
+	r_12_18_p_bc_go_kami_1	[Hum, après tout, si cela peut nous permettre de leur faire comprendre que je ne leur veux pas de mal, nous pouvons essayer. Allons parler à ces kamis.]
+}
+
+R_12_18_O_ES_TO_KAMI_1 (bot traveler_1)
+{
+	r_12_18_o_es_to_kami_1	[Accompagner $traveler_1$ auprès du Kami.]
+}
+
+R_12_18_P_BC_KAMI_OK_1 ()
+{
+	r_12_18_p_bc_kami_ok_1	[Nous faire confiance à vous et nous laisser tribu marchands tranquille. Mais eux devoir respecter nature d'avantage sinon nous revenir pour la protéger.]
+}
+
+R_12_18_O_ES_TO_TRIBE_1 (bot traveler_1, bot tribe_chief_1)
+{
+	r_12_18_o_es_to_tribe_1	[Accompagner $traveler_1$ aupres de $tribe_chief_1$]
+}
+
+R_12_18_P_BC_EXPL_ZORAI_1 ()
+{
+	r_12_18_p_bc_expl_zorai_1	[Nous avons pu calmer les Kamis qui vous laisseront maintenant tranquilles.]
+}
+
+R_12_18_P_BC_EXPL_TRIBE_CHIEF_1 ()
+{
+	r_12_18_p_bc_expl_tribe_chief_1	[C'est une très bonne nouvelle. Nous ne pouvions pas rester très longtemps dans cette situation.]
+}
+
+R_12_18_P_BC_EXPL_ZORAI_2 ()
+{
+	r_12_18_p_bc_expl_zorai_2	[Ceci dit, je vous conseille de faire plus attention à ne pas abuser des ressources d'Atys, sinon ils reviendront pour les protéger.]
+}
+
+R_12_18_P_BC_EXPL_TRIBE_CHIEF_2 ()
+{
+	r_12_18_p_bc_expl_tribe_chief_2	[Nous ferons notre possible pour ne plus les faire enrager. Quoi qu'il en soit nous vous remercions de nous avoir aidé. Vous pouvez partir quand bon vous semble.]
+}
+
+R_12_18_O_ES_BACK_1 (bot traveler_1)
+{
+	r_12_18_o_es_back_1	[Ramener $traveler_1$ à Windermeer]
+}
+
+R_12_18_M_T2_DONE_1 (bot giver)
+{
+	r_12_18_m_t2_done_1	[J'ai ramené le Zorai à bon port]
+}
+
+R_12_18_P_BC_DEBRIEF_1 ()
+{
+	r_12_18_p_bc_debrief_1	[Ah, vous voila tout les deux ! Et avec la cargaison en plus . Je vois que tu as fait du bon travail en accordant les deux parties. Tu as amplement gagné le droit de goûter à cette merveille. Trempes-y tes lèvres, tu sentiras affluer une vigueur nouvelle ! Je te donnerais ensuite un cube d'ambre qui te contera une histoire qui rappelle les liens que les différents peuples ont tissés au cours du temps.]
+}
+

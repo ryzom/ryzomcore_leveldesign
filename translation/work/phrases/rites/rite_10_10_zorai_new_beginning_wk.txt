@@ -1,0 +1,40 @@
+﻿R_10_10_MIS_TITLE (bot giver)
+{
+	r_10_10_mis_title	[L'Ombre de la goo]
+}
+
+R_10_10_MIS_DESC (bot giver)
+{
+	r_10_10_mis_desc	[Abattre des créatures contaminées par la goo avant qu'elles ne répandent leur mal.]
+}
+
+R_10_10_P_LDF_INTRO_1 (bot hunter)
+{
+	r_10_10_p_ldf_intro_1	[Écoute mes paroles, $self$. Lors de la sortie des Primes Racines, alors que nous cherchions à nous installer dans la région, nous avons du faire face à la nature pervertie par la goo. Cette substance maléfique avait en effet pris sous son joug de nombreuses créatures qui mettaient en péril notre entreprise de reconstruction.{break}Seuls, nous étions désarmés, mais Ma-Duk, le Grand Géniteur, nous a inondé de sa lumière, et nous a montré le chemin de l'illumination. Il nous a donné le courage d'affronter la corruption de la goo, et depuis lors, nous nous battons pour l'équilibre de notre terre et d'Atys toute entière. {break}De nos jours, la goo a été repoussée aux frontières, mais des créatures infectées rôdent encore, et le mal peut s'étendre à tout moment. Si tu parviens à l'affronter avec succès, tu seras digne d'en apprendre plus sur l'histoire des Zoraïs et sur les révélations de Ma-Duk, sans compter que cette expérience endurcira ton corps.{break} Trouve $hunter$, il chasse dans la région et pourra te dire s'il a repéré des animaux malades.]
+}
+
+R_10_10_P_T2_HUNTER_1 (bot hunter)
+{
+	r_10_10_p_t2_hunter_1	[Avez-vous aperçu des créatures corrompues ?]
+}
+
+R_10_10_P_BC_HUNTER_1 (bot givervar, place village)
+{
+	r_10_10_p_bc_hunter_1	[Hélas oui, l'influence néfaste de la goo s'étend jusqu'aux portes de nos cités... $givervar$ pense que vous pourrez venir à bout de ces abominations ? J'espère que vous vous montrerez digne de sa confiance. {break}J'ai repéré des traces de créatures infectées au nord de $village$. Prenez garde et bonne chasse !]
+}
+
+R_10_10_P_OVL_KILL_GROUP_GOO ()
+{
+	r_10_10_p_ovl_kill_group_goo	[Tuer les créatures contaminées]
+}
+
+R_10_10_P_T2_DEBRIEF_1 (bot givervar)
+{
+	r_10_10_p_t2_debrief_1	[J'ai vaincu les créatures corrompues.]
+}
+
+R_10_10_P_BC_DEBRIEF ()
+{
+	r_10_10_p_bc_debrief	[Que Ma-Duk te bénisse, $self$. Reçois ce cube d'ambre, qui te contera comment le Grand Géniteur s'est révélé à notre peuple. Reçois également ce don particulier, qui affermira ton endurance et t'aidera dans tes combats futurs.]
+}
+

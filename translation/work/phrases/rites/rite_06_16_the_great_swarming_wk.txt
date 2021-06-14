@@ -1,0 +1,55 @@
+﻿MISSION_TREE_1_MIS_TITLE (bot giver, race crea_kitin)
+{
+	mission_tree_1_mis_title	[L'étude des $crea_kitin.p$]
+}
+
+MISSION_TREE_1_MIS_DESC (bot giver, race crea_kitin)
+{
+	mission_tree_1_mis_desc	[Apprenez à mieux connaitre les $crea_kitin.p$]
+}
+
+MISSION_TREE_1_P_LDC_INTRO (bot chasseur_fleeting, bot chasseur_majestic, race crea_kitin, place lieu_majesticgarden)
+{
+	mission_tree_1_p_ldc_intro	[Bonjour. Il est temps pour vous de compléter vos connaissances sur $crea_kitin.pda$ $crea_kitin.p$. $chasseur_majestic$ et $chasseur_fleeting$ sont deux de nos plus vaillants chasseurs. Je vais donc m'en remettre à eux pour parfaire votre formation.{break}Dans un premier temps, allez voir $chasseur_majestic$, il vous guidera dans votre apprentissage. Vous le trouverez dans la région de $lieu_majesticgarden$. Menez cette mission à bien et je vous entraînerai afin d'acroitre votre endurence.]
+}
+
+MISSION_TREE_1_P_T2_RENCONTRE_CHASSEUR_MAJESTIC (bot chasseur_majestic, bot givervar)
+{
+	mission_tree_1_p_t2_rencontre_chasseur_majestic	[Bonjour, $givervar$ m'envoie.]
+}
+
+MISSION_TREE_1_P_BC_RENCONTRE_CHASSEUR_MAJESTIC (bot chasseur_fleeting, race crea_kepee, race crea_kiban, race crea_kitin, race crea_kizoar)
+{
+	mission_tree_1_p_bc_rencontre_chasseur_majestic	[Bonjour. J'espère que vous êtes prêt à aller titiller du $crea_kitin$. Le but de cette formation n'est pas de s'entraîner à massacrer du $crea_kitin$, mais de mieux comprendre ce qu'ils sont.{break}Commençons... Il existe quatre grandes catégories de $crea_kitin.p$ : les ouvriers, que vous allez étudier avec moi, les combattants, que vous verrez avec $chasseur_fleeting$, $crea_kitin.pda$ $crea_kitin.p$ d'élite et enfin $crea_kitin.pda$ $crea_kitin.p$ royaux. Rassurez-vous, ces derniers, qui sont particulièrement difficiles à approcher, ne sont pas à l'ordre du jour.{break}Voyons donc les ouvriers... On trouve dans cette catégorie : $crea_kepee.pda$ $crea_kepee.p$, $crea_kizoar.pda$ $crea_kizoar.p$ et $crea_kiban.pda$ $crea_kiban.p$. Ils ont pour rôle la collecte de ressources, la construction des nids ou encore la surveillance des larves.{break}Vous l'aurez donc compris, cette catégorie de $crea_kitin.p$ n'est pas agressive. Bien entendu, ils savent se défendre, mais si vous ne les attaquez pas, ils vous laisseront tranquille.{break}Vous allez maintenant passer aux travaux pratiques : vous allez affronter chacune des trois espèces dont je vous ai parlé et me ramener une paire de mandibules pour chacune. Profitez-en pour observer leurs faiblesses et leurs points fort.{break}Si je peux vous donner un conseil, prenez différentes armes, par exemple : une arme tranchante telle qu'une épée, une arme perforante comme une lance et une arme contondante, une masse par exemple. Essayez ces différentes armes sur chaque type de $crea_kitin.p$ et vous verrez que certaines sont plus efficaces que d'autre en fonction de l'espèce que vous combattez. Maintenant allez y et bon courage.]
+}
+
+MISSION_TREE_1_P_BC_DEBRIEF_CHASSEUR_MAJESTIC (bot chasseur_fleeting, race crea_kitin, place lieu_fleetinggarden)
+{
+	mission_tree_1_p_bc_debrief_chasseur_majestic	[Très bien. J'espère que ces travaux pratiques ont été enrichissants pour vous.{break}Avez-vous observé les mandibules que vous avez ramassées ? Ne leur voyez vous pas un point commun ? En effet, tous $crea_kitin.pda$ $crea_kitin.p$, sans exceptions, ont cette particularité d'avoir des mandibules en pointes, qui constituent des armes perforantes redoutable. Pensez-y lorsque vous achetez une armure !{break}Maintenant, vous pouvez aller voir mon confrère $chasseur_fleeting$ pour la suite de la leçon. Vous le trouverez dans la région de $lieu_fleetinggarden$... Bonne continuation !]
+}
+
+MISSION_TREE_1_P_T2_RENCONTRE_CHASSEUR_FLEETING (bot chasseur_fleeting, bot chasseur_majestic)
+{
+	mission_tree_1_p_t2_rencontre_chasseur_fleeting	[Bonjour, $chasseur_majestic$ m'envoie.]
+}
+
+MISSION_TREE_1_P_BC_RENCONTRE_CHASSEUR_FLEETING (bot chasseur_majestic, race crea_kincher, race crea_kipesta, race crea_kipucka, race crea_kirosta, race crea_kitin)
+{
+	mission_tree_1_p_bc_rencontre_chasseur_fleeting	[Je vous attendais. Avec $chasseur_majestic$, vous avez dû étudier $crea_kitin.pda$ $crea_kitin.p$ ouvriers. Passons à quelque chose de plus épineux : $crea_kitin.pda$ $crea_kitin.p$ guerriers.{break}Ils sont là encore au nombre de trois : $crea_kincher.pda$ $crea_kincher.p$, qui sont des chasseurs, $crea_kipesta.pda$ $crea_kipesta.p$ qui sont des éclaireurs et enfin $crea_kirosta.pda$ $crea_kirosta.p$.{break}Soyez particulièrement prudent avec ces derniers. $crea_kirosta.pda$ $crea_kirosta.p$ sont de véritables soldats : ils sont robustes, violents, rapides et ont une vue particulièrement perçante. Ils veillent avec attention et protègent tous types de $crea_kitin.p$ présents dans leur champ visuel.{break}Sachez que tous $crea_kitin.pda$ $crea_kitin.p$ guerriers vous attaqueront à vue. Comme tous $crea_kitin.pda$ $crea_kitin.p$, $crea_kitin.pda$ $crea_kitin.p$ guerriers ont leurs points faibles, n'hésitez donc pas à essayer différentes techniques de combat contre eux afin de trouver la plus adaptée.{break}Vous allez maintenant passer à la pratique : rapportez moi une paire de mandibules pour chaque espèces que nous venons d'étudier, plus une paire de mandibules de $crea_kipucka$... je sais que nous n'avons pas encore examiné cette espèce, mais nous en parlerons brièvement à votre retour.{break}Je vous conseille cette fois de ne pas partir en chasse seul compte tenu des dangers auxquels vous allez vous retrouver confronté... Bonne chasse.]
+}
+
+MISSION_TREE_1_P_BC_DEBRIEF_CHASSEUR_FLEETING (race crea_kidinak, race crea_kinrey, race crea_kipucka, race crea_kitin)
+{
+	mission_tree_1_p_bc_debrief_chasseur_fleeting	[Beau travail. Je vois que vous avez réussit à tuer $crea_kipucka.ia$ $crea_kipucka$. $crea_kipucka.pda$ $crea_kipucka.p$ font partie d'une troisième catégorie de $crea_kitin.p$ sur laquelle je ne m'étendrai pas longtemps : $crea_kitin.pda$ $crea_kitin.p$ d'élite.{break}Généralement, vous trouverez ces derniers aux abords des kitinières. Ils jouent différents rôles ayant attrait aux nids et donc à la descendance de leur race. Dans cette même catégorie se trouvent $crea_kidinak.pda$ $crea_kidinak.p$ et $crea_kinrey.pda$ $crea_kinrey.p$. Le meilleur conseil que je puisse vous donner à leur sujet est de les éviter autant que possible.{break}Voila, nous en avons fini avec l'étude des $crea_kitin.p$. Je vous souhaite une bonne continuation.]
+}
+
+MISSION_TREE_1_P_T2_DEBRIEF (bot givervar)
+{
+	mission_tree_1_p_t2_debrief	[Ma formation est achevée.]
+}
+
+MISSION_TREE_1_P_BC_DEBRIEF ()
+{
+	mission_tree_1_p_bc_debrief	[Très bien, j'espère que cet enseignement vous servira. Et voici votre récompense comme prévu.]
+}
+

@@ -1,0 +1,210 @@
+﻿R_06_09_MIS_TITLE (bot giver)
+{
+	r_06_09_mis_title	[Les kizoars.]
+}
+
+R_06_09_MIS_DESC (bot giver)
+{
+	r_06_09_mis_desc	[L'étude des kizoars.]
+}
+
+R_06_09_INTRO (bot givertask)
+{
+	r_06_09_intro	[Oren Pyr ! Entends-tu le bourdonnement des kizoars au loin ? Les kizoars m'intriguent, j'aimerais en apprendre plus sur eux... Je connais un homin qui est devenu spécialiste de cette race, il devait m'enseigner ses connaissances d'ailleurs. Mais pour cela, il faudrait que je parte d'ici et pour l'instant, je ne peux pas. Veux-tu m'aider, homine ? Va voir $givertask$, le spécialiste des kizoars, et offre-lui tes services ! Apprends pour moi puis reviens me faire ton rapport ! Par contre, attention, $givertask$ est assez... hum, tu verras bien...]
+}
+
+R_06_09_ACTION_TALK_GIVERTASK (bot givertask)
+{
+	r_06_09_action_talk_givertask	[Bonjour !]
+}
+
+R_06_09_INTRO_GIVERTASK ()
+{
+	r_06_09_intro_givertask	[*Sursaute* Hum ? Oui, c'est pour quoi ?]
+}
+
+R_06_09_ANSW_1 (bot givervar, bot player)
+{
+	r_06_09_answ_1	[Je suis $player$ et c'est $givervar$ qui m'envoie pour en apprendre plus sur les kizoars.]
+}
+
+R_06_09_DYN_CHAT_2 (bot givervar)
+{
+	r_06_09_dyn_chat_2	[*Fait un mouvement de recul et se met à crier* Ahhh ! Jena ! A l'aide !!! $givervar$ m'envoie un kitin pour qu'il me dévore ! *Hurlant de plus belle* A l'aide ! Au secours !]
+}
+
+R_06_09_ANSW_2 (bot givervar, bot player)
+{
+	r_06_09_answ_2	[Hé ! Calmez-vous ! *Parle plus fort* Je suis unehomine, je m'appelle $player$ et je viens vous voir de la part de $givervar$ !]
+}
+
+R_06_09_DYN_CHAT_3 (bot givertask, bot player)
+{
+	r_06_09_dyn_chat_3	[Ah, ah bon... Hem... *Se calme avant de toiser $player$*Bien, dans ce cas, je me présente : je m'appelle $givertask$ et je suis le plus grand, le plus illustre des spécialistes des Kizoars ! Et je suppose que vous venez apprendre une parcelle de mon immense savoir en ce domaine ? Dites-moi, que savez-vous sur les kizoars ?]
+}
+
+R_06_09_ANSW_3 ()
+{
+	r_06_09_answ_3	[Pas grand chose à vrai dire...]
+}
+
+R_06_09_DYN_CHAT_5 (bot player)
+{
+	r_06_09_dyn_chat_5	[J'aurais dû m'en douter... Bon, nous allons essayer de réparer ça ! Aimez-vous voyager, $player$ ? Parce que je vais devoir vous envoyer un peu partout dans le monde pour acquérir ces nouvelles connaissances ! Le kizoar est un migrateur, alors migrateur vous devrez devenir...{break}Vous verrez, c'est simple. Je vais vous confier 5 missions, une par continent. Pour chaque mission vous devrez vous rendre aux 6 positions indiquées sur la carte que je vous donnerai.\nA chaque fois, vous trouverez un ou plusieurs kizoars. Observez-les bien. De temps à autres, nous en trouverez un qui attirera votre attention. Ce sont ces kizoars particuliers que vous devrez tuer. Basez-vous sur un kizoar à tuer par continent, ça me semble une estimation correcte. {break} Vous avez bien compris jusqu'ici ?]
+}
+
+R_06_09_ANSW_5A ()
+{
+	r_06_09_answ_5a	[Oui, je dois tuer un kizoar différent des autres par continent. Que dois-je savoir d'autre ?]
+}
+
+R_06_09_ANSW_5B ()
+{
+	r_06_09_answ_5b	[Rien du tout...]
+}
+
+R_06_09_DYN_CHAT_6 ()
+{
+	r_06_09_dyn_chat_6	[Il vous faut tuer un kizoar particulier : un kizoar contaminé par la goo. Mais attention, il n'est jamais au même endroit ! Cependant, il préfère certaines zones, celles qui sont mentionnées sur les cartes. A chaque fois, pour prouver vos exploits, vous devrez récupérer une aile de ce kizoar-là et me les apporter toutes les 5 quand vous aurez tout fini. Visitez les régions dans l'ordre que vous voulez.]
+}
+
+R_06_09_TASK_FINISHED_ACTION (bot givertask)
+{
+	r_06_09_task_finished_action	[Me revoilà, j'ai les 5 ailes de kizoars contaminés par la goo !]
+}
+
+R_06_09_GIVE_ME_PHIALS (bot player)
+{
+	r_06_09_give_me_phials	[*Mouvement de recul* Ahhh ! Jena, à l'aide ! Pitié, Ser Kizoar... Pitié !\n*Reprend ses esprits* Oh, c'est vous, $player$ ? Je vois que vous avez les ailes ! Parfait... C'est parfait ! Donnez-les moi !]
+}
+
+R_06_09_RETURN_KITINLAIR (bot givervar)
+{
+	r_06_09_return_kitinlair	[A présent, prenez ce rapport et donnez-le à $givervar$. Je suis certain que ça l'intéressera.]
+}
+
+R_06_09_HAVE_REPORT_ACTION (bot givervar)
+{
+	r_06_09_have_report_action	[Me revoilà ! J'ai appris quelque chose d'intéressant sur les kizoars.]
+}
+
+R_06_09_ASK_REPORT (bot givertask)
+{
+	r_06_09_ask_report	[Ah, te voilà enfin ! J'espère que $givertask$ n'a pas été trop... enfin tu vois... Montre-moi donc ce rapport, je suis impatiente d'en prendre connaissance !]
+}
+
+R_06_09_READ_REPORT ()
+{
+	r_06_09_read_report	[Merci ! *Le parcourt des yeux* Hum, hum, inquiétant... Je crois que je vais encore avoir besoin de toi.]
+}
+
+R_06_09_WHAT_DO_ON_KL ()
+{
+	r_06_09_what_do_on_kl	[Vas donc observer les kizoars de la kitinière, ce qui arrive à certains continentaux ne me plaît guère. Reviens me voir après t'être assuré qu'ils n'agressent pas les homins, ceux-là.]
+}
+
+R_06_09_YES_I_CAN ()
+{
+	r_06_09_yes_i_can	[J'y vais de ce pas !]
+}
+
+R_06_09_NO_I_CANT ()
+{
+	r_06_09_no_i_cant	[Et bien c'est que, euh...]
+}
+
+R_06_09_MOVE_TO_KL ()
+{
+	r_06_09_move_to_kl	[Encore là ?! Mais dépêche-toi donc un peu !]
+}
+
+R_06_09_RITE_FINISHED_ACTION (bot givervar)
+{
+	r_06_09_rite_finished_action	[Je suis de retour !]
+}
+
+R_06_09_SO_WHAT ()
+{
+	r_06_09_so_what	[Alors, as-tu accompli ta mission ?]
+}
+
+R_06_09_I_HAVE_FINISHED ()
+{
+	r_06_09_i_have_finished	[Oui, c'était vraiment trop facile ! Par contre, j'ai une mauvaise nouvelle : certains kizoars sont devenus agressifs !]
+}
+
+R_06_09_I_DONT_HAVE_FINISHED ()
+{
+	r_06_09_i_dont_have_finished	[Qu'est-ce que je dois faire, déjà ?]
+}
+
+R_06_09_DONT_LIE ()
+{
+	r_06_09_dont_lie	[Quelque chose dans ton regard me dit que tu mens ! Retourne donc chercher des kizoars dans la kitinière et reviens me dire s'ils sont eux aussi devenus agressifs !]
+}
+
+R_06_09_WHAT_DO_YOU_WAIT ()
+{
+	r_06_09_what_do_you_wait	[Exercer ta mémoire déjà... *Soupire* Cherche des kizoars dans la kitinière et reviens me dire s'ils sont agressifs ou non. Et dépêche-toi donc ! Tu ne sauveras jamais le monde à ce rythme !]
+}
+
+R_06_09_FINISH ()
+{
+	r_06_09_finish	[C'est très inquiétant... Il va falloir observer tout cela et comprendre comment des kizoars à goo ont pu apparaître ainsi ! Il ne faudrait pas qu'une épidémie s'installe !]
+}
+
+R_06_09_THANKS ()
+{
+	r_06_09_thanks	[Oui !]
+}
+
+R_06_09_TRYKER_TITLE (bot giver)
+{
+	r_06_09_tryker_title	[Les kizoars chez les trykers.]
+}
+
+R_06_09_TRYKER_DESC (bot giver)
+{
+	r_06_09_tryker_desc	[Etudier les kizoars des lacs.]
+}
+
+R_06_09_MATIS_TITLE (bot giver)
+{
+	r_06_09_matis_title	[Les kizoars chez les matis.]
+}
+
+R_06_09_MATIS_DESC (bot giver)
+{
+	r_06_09_matis_desc	[Etudier les kizoars de la forêt.]
+}
+
+R_06_09_FYROS_TITLE (bot giver)
+{
+	r_06_09_fyros_title	[Les kizoars chez les fyros.]
+}
+
+R_06_09_FYROS_DESC (bot giver)
+{
+	r_06_09_fyros_desc	[Etudier les kizoars du desert.]
+}
+
+R_06_09_ZORAI_TITLE (bot giver)
+{
+	r_06_09_zorai_title	[Les kizoars chez les zorai.]
+}
+
+R_06_09_ZORAI_DESC (bot giver)
+{
+	r_06_09_zorai_desc	[Etudier les kizoars de la jungle.]
+}
+
+R_06_09_PRIMES_TITLE (bot giver)
+{
+	r_06_09_primes_title	[Les kizoars des profondeurs.]
+}
+
+R_06_09_PRIMES_DESC (bot giver)
+{
+	r_06_09_primes_desc	[Etudier les kizoars des primes racines.]
+}
+

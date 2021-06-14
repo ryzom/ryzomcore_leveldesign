@@ -1,0 +1,534 @@
+﻿CWINTROTRYKERCHAIN_STEP1_OVERLOAD_1 (bot givervar, place city)
+{
+	cwintrotrykerchain_step1_overload_1	[Vous venez d'arriver à $city$, présentez vous à $givervar$]
+}
+
+CWINTROTRYKER_CITYTOUR_TITLE (bot giver, place city)
+{
+	cwintrotryker_citytour_title	[Arrivé à $city$]
+}
+
+CWINTROTRYKER_DESC (bot giver)
+{
+	cwintrotryker_desc	[Se présenter aux personnes importantes de la ville]
+}
+
+CWINTROTRYKER_CITYTOUR_AUTO_MENU (place city, bot player)
+{
+	cwintrotryker_citytour_auto_menu	[Bonjour, je m'appelle $player$, je viens d'arriver à $city$]
+}
+
+CWINTROTRYKER_INSTRUCTIONS (place city, bot givervar, bot player)
+{
+	cwintrotryker_instructions	[Bienvenue à $city$ $player$. Je m'appelle $givervar$ et je suis en charge de l'accueil des nouveaux arrivants. Je vous propose de faire un tour de notre belle ville et de visiter les endroits qui pourraient vous être utiles.]
+}
+
+CWINTROTRYKER_FIRST_STEP (bot office)
+{
+	cwintrotryker_first_step	[Dans un premier temps, vous devriez vous présenter à $office$, elle saura vous indiquer les lieux à visiter.]
+}
+
+CWINTROTRYKER_STEP1_OVERLOAD (bot office, place city)
+{
+	cwintrotryker_step1_overload	[Présentez vous à $office$ à l'entrée de $city$]
+}
+
+CWINTROTRYKER_STEP1_PHRASE (bot office, bot givervar, bot player)
+{
+	cwintrotryker_step1_phrase	[Bonjour, je m'appelle $player$, $givervar$ m'envoie]
+}
+
+CWINTROTRYKER_REPONSE_OFFICE (place city, bot givervar, bot player)
+{
+	cwintrotryker_reponse_office	[Bonjour $player$. Si $givervar$ vous envoie c'est que vous venez d'arriver à $city$. Vous ne connaissez sans doute pas encore la ville. Je vais vous donner une liste de lieux à visiter, ainsi vous pourrez vous familiariser avec notre belle citée. N'hésitez pas à venir me voir si vous avez besoin d'indications pour trouver quelqu'un, après tout je suis là pour ça. Lorsque vous aurez terminé votre tour, retournez voir $givervar$, elle devrait avoir quelque chose pour vous.]
+}
+
+CWINTROTRYKER_SHOPS_LOW_OVERLOAD (place shops_low)
+{
+	cwintrotryker_shops_low_overload	[Rendez-vous à $shops_low$]
+}
+
+CWINTROTRYKER_SHOPS_LOW_SYSMES (place shops_low)
+{
+	cwintrotryker_shops_low_sysmes	[&AMB&Vous êtes à $shops_low$. Ici vous pourrez trouver tous les magasins dont vous aurez besoin]
+}
+
+CWINTROTRYKER_SHOPS_TRAINERS_OVERLOAD (place trainers)
+{
+	cwintrotryker_shops_trainers_overload	[Rendez-vous à $trainers$]
+}
+
+CWINTROTRYKER_TRAINERS_SYSMES (place trainers)
+{
+	cwintrotryker_trainers_sysmes	[&AMB&Vous êtes à $trainers$. Ici vous pourrez trouver les entraineurs qui vous permettront de progresser dans la voie que vous aurez choisi]
+}
+
+CWINTROTRYKER_STEP2_STABLEBOY_OVERLOAD (bot stable_boy, place city)
+{
+	cwintrotryker_step2_stableboy_overload	[Présentez vous à $stable_boy$ le palefrenier de $city$]
+}
+
+CWINTROTRYKER_STEP2_PHRASE (bot stable_boy, bot player)
+{
+	cwintrotryker_step2_phrase	[Bonjour, je me présente, je m'appelle $player$. J'aimerais savoir qui vous êtes.]
+}
+
+CWINTROTRYKER_STEP3_OVERLOAD (bot givervar)
+{
+	cwintrotryker_step3_overload	[Retournez voir $givervar$ pour lui dire que vous avez fait le tour de la ville]
+}
+
+CWINTROTRYKER_STEP3_PHRASE (bot givervar)
+{
+	cwintrotryker_step3_phrase	[Ca y est, j'ai fait le tour de la ville]
+}
+
+CWINTROTRYKER_OUTOFROOM_MSG ()
+{
+	cwintrotryker_outofroom_msg	[&SYS&Vous n'avez plus de place dans votre inventaire. Demandez à nouveau l'objet quand vous en aurez fait.]
+}
+
+CWINTROTRYKER_OUTOFROOM_OVERLOAD (bot givervar)
+{
+	cwintrotryker_outofroom_overload	[Faites de la place avant de demander à nouveau l'objet.]
+}
+
+CWINTROTRYKER_OUTOFROOM_PHRASE (bot givervar)
+{
+	cwintrotryker_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+CWINTROTRYKER_OUTOFROOM_BOTCHAT ()
+{
+	cwintrotryker_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+CWINTROTRYKER_TP_REWARD (bot autel, place city, item tp)
+{
+	cwintrotryker_tp_reward	[Ha parfait ! Les quartiers que vous avez visité vous seront très utiles dans votre vie d'homin. Pour vous féliciter d'avoir pris le temps de faire ce petit tour de $city$ je vous remets ce $tp$. Il vous permettra de revenir à $city$ quand vous voudrez. Mais prenez garde, il ne peut être utilisé qu'une seule fois. Si vous en voulez d'autres, il vous faudra aller en acheter à l'$autel$.]
+}
+
+CWINTROTRYKER_TICKET_TITLE ()
+{
+	cwintrotryker_ticket_title	[Les tickets de téléportation]
+}
+
+CWINTROTRYKER_TICKET_POPUP ()
+{
+	cwintrotryker_ticket_popup	[Les tickets de téléportation permettent aux homins de se rendre à l'autel auquel ils sont liés. \n \nCe service n'est en général pas gratuit, il faut acheter les tickets auprès des autels Kami ou Karavan. Une fois le ticket en poche, il suffit de l'utiliser avec un clic droit pour que votre personnage soit téléporté à l'endroit choisi. \n \nEtant donné que ce sont les deux grandes puissances qui permettent aux homins de se téléporter, certains tickets ne seront disponible que si votre personnage a prêté allégeance à l'une ou l'autre des factions.]
+}
+
+CWINTROTRYKER_FIN (place city)
+{
+	cwintrotryker_fin	[Bien, maintenant que vous connaissez un peu mieux $city$, que diriez-vous de rendre quelques services à la ville ? Les habitants vous en seront très reconnaissants. J'ai justement quelques missions à vous confier.]
+}
+
+CWTF01_TITLE (bot giver)
+{
+	cwtf01_title	[Evaluer la menace Kitin]
+}
+
+CWTF01_DESC (bot giver)
+{
+	cwtf01_desc	[Les Kitins sont de retour ! Aidez les autorités de Fairhaven à évaluer le danger]
+}
+
+CWTF01_INSTRUCTIONS (place city, bot gardchief, bot player)
+{
+	( self.gender = male )
+		cwtf01_instructions_m	[Ha $player$ ! Je savais que vous étiez un homin prêt à rendre des services. Si vous voulez vous rendre utile, je crois que $gardchief$ le chef des gardes de $city$ cherche justement de nouvelles recrues. Si vous voulez vraiment aider le peuple Tryker, vous devriez aller lui parler.]
+	( self.gender = female )
+		cwtf01_instructions_f	[Ha $player$ ! Je savais que vous étiez une homine prête à rendre des services. Si vous voulez vous rendre utile, je crois que $gardchief$ le chef des gardes de $city$ cherche justement de nouvelles recrues. Si vous voulez vraiment aider le peuple Tryker, vous devriez aller lui parler.]
+}
+
+CWTF01_STEP1_PHRASE (bot gardchief, bot givervar)
+{
+	cwtf01_step1_phrase	[Bonjour, $givervar$ m'envoie. Il parraît que vous avez besoin de nouvelles recrues ?]
+}
+
+CWTF01_REPONSE_CHEF (place city, bot givervar, bot player)
+{
+	cwtf01_reponse_chef	[Ha, bien le bonjour $player$. Je vois que $givervar$ est toujours aussi attentive aux besoin des habitants de $city$. C'est un exemple pour tout bon Tryker digne de ce nom. L'entraide fait partie de notre mode de vie, ne l'oublie pas.{break}Bien, tu n'es pas sans savoir que le Grand Essaim a causé de nombreux dégâts et que notre civilisation se remet à peine de ses blessures. Mais l'heure du repos n'est pas encore arrivée, mes frères ne s'en rendent peut être pas compte mais la menace Kitin est toujours là. C'est pourquoi j'aurais besoin de tes services. Fais moi un rapport sur l'activité Kitin aux alentours de la ville. Reviens me voir au moindre signe de danger.]
+}
+
+CWTF01_STEP3_OVERLOAD (bot gardchief)
+{
+	cwtf01_step3_overload	[Faites votre rapport à $gardchief$]
+}
+
+CWTF01_STEP3_PHRASE (bot gardchief, place city, creature_model kitin)
+{
+	cwtf01_step3_phrase	[Chef, j'ai trouvé des $kitin$ près de $city$ !]
+}
+
+CWTF01_REPONSE_CHEF_SUITE (creature_model kitin)
+{
+	cwtf01_reponse_chef_suite	[Hmmm vous avez bien fait de me prévenir. Les $kitin.p$ ne sont pas agressifs, mais leur présence montre que les Kitins sont en train de refaire surface. Si vous pouviez en tuer une partie, cela permettrait de repousser la menace, du moins pour un temps.]
+}
+
+CWTF01_STEP4_ROLEPLAY_1 (creature_model kitin, int q1, place city)
+{
+	cwtf01_step4_roleplay_1	[Tuer des $kitin$ afin de limiter la menace qui pèse sur $city$]
+}
+
+CWTF01_OUTOFROOM_MSG ()
+{
+	cwtf01_outofroom_msg	[&SYS&Vous n'avez plus de place dans votre inventaire. Demandez à nouveau l'objet quand vous en aurez fait.]
+}
+
+CWTF01_OUTOFROOM_OVERLOAD (bot gardchief)
+{
+	cwtf01_outofroom_overload	[Faites de la place avant de demander à nouveau l'objet.]
+}
+
+CWTF01_OUTOFROOM_PHRASE (bot gardchief)
+{
+	cwtf01_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+CWTF01_OUTOFROOM_BOTCHAT ()
+{
+	cwtf01_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+CWTF01_FIN_CHEF (bot player)
+{
+	( self.gender = male )
+		cwtf01_fin_chef_m	[Ha très bien $player$. Tu as fait du bon travail, et même si la menace Kitin n'est pas éliminée, ton geste à participé à la protection des Lacs. Tu peux être fier de toi car c'est par des actions de ce type que nous pourrons enfin rebatir la nation de paix dont tout Tryker rêve.]
+	( self.gender = female )
+		cwtf01_fin_chef_f	[Ha très bien $player$. Tu as fait du bon travail, et même si la menace Kitin n'est pas éliminée, ton geste à participé à la protection des Lacs. Tu peux être fiere de toi car c'est par des actions de ce type que nous pourrons enfin rebatir la nation de paix dont tout Tryker rêve.]
+}
+
+CWTF01_DIALOG_REWARD (bot givervar)
+{
+	( self.gender = male )
+		cwtf01_dialog_reward_m	[Pour te remercier je te remets ces cristaux. En les utilisant tu progresseras plus vite dans tes différentes activités. Ainsi tu deviendras plus fort et pourras nous aider à vivre enfin dans la paix en défendant notre peuple. Tu devrais retourner voir $givervar$, elle aura sans doute d'autres taches pour toi.]
+	( self.gender = female )
+		cwtf01_dialog_reward_f	[Pour te remercier je te remets ces cristaux. En les utilisant tu progresseras plus vite dans tes différentes activités. Ainsi tu deviendras plus forte et pourras nous aider à vivre enfin dans la paix en défendant notre peuple. Tu devrais retourner voir $givervar$, elle aura sans doute d'autres taches pour toi.]
+}
+
+CWTF02_TITLE (bot giver, place city)
+{
+	cwtf02_title	[Ravitailler le bar de $city$]
+}
+
+CWTF02_DESC (bot giver, bot barman, place city)
+{
+	cwtf02_desc	[Aidez $barman$ en lui rapportant les ingrédients nécessaires à la préparation des boissons du bar de $city$]
+}
+
+CWTF02_INSTRUCTIONS (bot barman, bot gardchief, bot player)
+{
+	cwtf02_instructions	[Ha bonjour $player$. $gardchief$ m'a dit que vous aviez fait du très bon travail pour lui, je savais que je pouvais vous faire confiance. Si vous désirez toujours aider notre belle ville, je crois que $barman$ notre barman a quelques soucis en ce moment. Peut-être pourriez-vous l'aider...]
+}
+
+CWTF02_STEP1_PHRASE (bot barman, bot givervar)
+{
+	cwtf02_step1_phrase	[Bonjour. $givervar$ m'a dit que vous aviez besoin d'aide ?]
+}
+
+CWTF02_DEMANDE_BARMAN (bot player)
+{
+	cwtf02_demande_barman	[Ha vous tombez bien $player$ ! C'est une catastrophe ! J'ai eu plus de monde que prévu hier soir et je n'ai presque plus de boisson ! En plus une soirée importante est prévue pour demain et je dois tout organiser. Je ne peux pas laisser des dizaines de Trykers le verre vide tout de même ! Si vous voulez vraiment être utile au peuple Tryker, il faut absolument que vous m'aidiez à rassembler les ingrédients nécessaires à la préparation de nos boissons préférées.]
+}
+
+CWTF02_LISTE_MPS (creature_model clopper, place eaux, creature_model stinga, place vertval)
+{
+	cwtf02_liste_mps	[Vous acceptez ? Vraiment ? Vous me sauvez la vie ! Hmm voyons voir... Tout d'abord je vais avoir besoin de mousse de Stinga, le jus qu'on en tire est délicieux. Vous trouverez des $stinga$ sur la presqu'île juste avant les $eaux$.{break}J'aurais également besoin de sécrétion de Clopper. Ne me regardez pas comme ça ! Vous n'avez jamais bu de Cloppasoa ?! Bref, vous trouverez des $clopper$ autour du $vertval$. Faites attention ces bestioles aiment se balader en groupe.]
+}
+
+CWTF02_STEP2_OVERLOAD (bot barman)
+{
+	cwtf02_step2_overload	[Rapporter la mousse et les sécrétions à $barman$]
+}
+
+CWTF02_MERCI (bot player)
+{
+	cwtf02_merci	[Ha $player$ ! Je n'y croyais plus ! Merci beaucoup, grâce à vous je vais éviter un fiasco ! Et une fête ratée est le pire des affronts pour un tryker. Tenez, vous méritez bien ça pour ce que vous avez fait pour moi.]
+}
+
+CWTF03_TITLE (bot giver)
+{
+	cwtf03_title	[La dette des Trykers]
+}
+
+CWTF03_DESC (bot giver)
+{
+	cwtf03_desc	[Aidez le peuple Tryker à rembourser sa dette envers la tribu des Corsaires]
+}
+
+CWTF03_INSTRUCTIONS (bot intendant, bot player)
+{
+	cwtf03_instructions	[Bonjour $player$. Vos récents succès sont parvenus aux oreilles de $intendant$ notre intendant. Il se trouve qu'il a besoin d'une personne de confiance pour une mission délicate. Vous devriez aller le voir sans tarder. ]
+}
+
+CWTF03_STEP1_PHRASE (bot intendant, bot givervar)
+{
+	cwtf03_step1_phrase	[Bonjour. $givervar$ m'a dit que vous aviez besoin d'aide ?]
+}
+
+CWTF03_DIALOG_INTENDANT (bot chef, place city, faction corsaires, bot givervar)
+{
+	cwtf03_dialog_intendant	[Hmm... Bonjour. Si $givervar$ vous envoie c'est qu'elle doit avoir confiance en vous. J'aurais effectivement une mission...délicate à vous confier.{break}Vous n'êtes pas sans savoir que la tribu des $corsaires$ nous a énormément soutenus au cours de la Bataille des Lagons de Loria qui nous opposait au peuple Matis alors sous le joug du tyran Jinovitch. Seulement... Cette aide n'était pas gratuite ! Peu de mes frères le savent mais à ce jour nous sommes encore en dette envers cette tribu de mercenaires. En tant qu'intendant je suis chargé du remboursement de cette dette. Je ne veux cependant pas que cette affaire s'ébruite, c'est pourquoi je fais appel à des homins en qui je peux avoir confiance pour apporter régulièrement de quoi effacer notre ardoise.{break}Je pense que vous avez compris l'importance de cette mission, je vous demande donc de bien vouloir prendre cette bourse et la remettre à $chef$ le chef de la tribu des $corsaires$ dans la plus grande discrétion. Les autorités de $city$ vous en seront reconaissantes.]
+}
+
+CWTF03_OUTOFROOM2_OVERLOAD (bot coffre)
+{
+	cwtf03_outofroom2_overload	[Faites de la place dans votre inventaire avant de rouvir le coffre]
+}
+
+CWTF03_OUTOFROOM2_PHRASE (bot coffre)
+{
+	cwtf03_outofroom2_phrase	[Ouvrir le coffre]
+}
+
+CWTF03_ACCUEIL_CHEF (place landes)
+{
+	cwtf03_accueil_chef	[Ha, voici le dernier coursier de Fairhaven. Merci bien.{break}Mais, c'est une blague ?! Ils croient vraiment que ça va suffire ?! Avec de si petits remboursements mes arrière arrière arrière petits enfants seront morts de vieillesse quand ils auront couvert leur dette !{break}Hmm... Je crois que vous allez devoir faire un petit geste pour aider les autorités de Fairhaven. Il se trouve justement que nous avons un léger problème qui demande à être règlé. Un ancien membre de notre tribu nous a trahi, il s'est enfuis en emportant avec lui une perle d'une extrême valeur. Si vous nous la rapportez je considèrerai que le remboursement est suffisant pour cette fois-ci. La dernière fois qu'il a été vu, le traître se trouvait dans les $landes$. L'entrée se trouve au Nord d'ici. Dépèchez-vous avant que je ne change d'avis.]
+}
+
+CWTF03_STEP3_OVERLOAD (bot coffre, faction corsaires, place landes)
+{
+	cwtf03_step3_overload	[Explorer les $landes$ et trouver où le traître a caché la perle des $corsaires$]
+}
+
+CWTF03_STEP3_PHRASE (bot coffre)
+{
+	cwtf03_step3_phrase	[Ouvrir le coffre]
+}
+
+CWTF03_REWARDPRE_SYSMES ()
+{
+	cwtf03_rewardpre_sysmes	[&AMB&Vous trouvez la perle dans le coffre]
+}
+
+CWTF03_STEP4_OVERLOAD_1 (item i1, int qt1, int qual1, bot chef)
+{
+	cwtf03_step4_overload_1	[Rapporter la perle à $chef$]
+}
+
+CWTF03_MERCI (faction corsaires, place landes)
+{
+	cwtf03_merci	[Ha vous revoilà ! Cette perle n'a pas vraiment de valeur marchande mais c'est un précieux souvenir pour nous les $corsaires$. Elle fut trouvée par Still Wyler, ancien gouverneur Tryker assassiné alors qu'il venait de signer le Traité de Quatre Peuples. Il avait mis la main dessus pendant une des batailles des Lagons alors qu'il était à la tête de notre tribu. Depuis nous la conservons comme une relique pour honorer sa mémoire.{break}Comme vous avez pu le voir les $landes$ commencent à être envahies par la goo et une nouvelle espèce de stinga aggressive a fait son apparition. Nous devons nous méfier de cette avancée et la combattre afin d'éviter que le fléau ne se propage. A présent je sais que je peux compter sur vous, je n'hésiterai pas à faire appel à vous en cas de problème.{break}A présent vous devriez retourner voir l'intendant pour lui annoncer que votre mission a été un succès et que nous acceptons sa...maigre donation.]
+}
+
+CWTF03_STEP5_OVERLOAD (bot intendant)
+{
+	cwtf03_step5_overload	[Faites votre rapport à $intendant$]
+}
+
+CWTF03_STEP5_PHRASE (bot intendant, faction corsaires)
+{
+	cwtf03_step5_phrase	[Mission accomplie, les $corsaires$ ont accepté votre don]
+}
+
+CWTF03_DIALOG_REWARD (place landes)
+{
+	cwtf03_dialog_reward	[Mais j'espère bien qu'ils l'ont accepté ! S'ils s'imaginent que c'est si facile de récolter tous ces dappers pour une ville civilisée. C'est sur que le pillage rapporte d'avantage... Mais nous ne nous rabaissons pas à ce genre de pratiques !{break}En ce qui concerne cette histoire de goo dans les $landes$ nous en sommes informés et nous allons tout mettre en oeuvre pour empêcher la veine qui a éclaté de faire d'avantage de dégats. Pour l'instant votre mission est terminée, les autorités de Fairhaven vous sont reconaissantes pour ce que vous venez d'accomplir. Acceptez ceci en remerciement.]
+}
+
+CWTC01_TITLE (bot giver)
+{
+	cwtc01_title	[Les bottes de la messagère]
+}
+
+CWTC01_DESC (bot giver, bot messager)
+{
+	cwtc01_desc	[$messager$ a besoin de bottes.]
+}
+
+CWTC01_INSTRUCTIONS (place city, bot messager, bot player)
+{
+	cwtc01_instructions	[Ha $player$ vous tombez bien. Vous avez sans doute quelques talents en artisanat ? Il se trouve que justement $messager$ aurait besoin d'aide. Vous devriez aller la voir pour lui proposer un coup de main. C'est une messagère de $city$, je vais vous indiquer sa position sur votre carte.]
+}
+
+CWTC01_STEP1_PHRASE (bot messager, bot givervar)
+{
+	cwtc01_step1_phrase	[Bonjour, $givervar$ m'envoie pour vous aider.]
+}
+
+CWTC01_DIALOG_MESSAGER (place city, bot messager)
+{
+	cwtc01_dialog_messager	[Ha bonjour. Je me présente, $messager$, messagère de $city$. Je dois parcourir toute la région afin d'apporter différents messages et paquets. J'ai tellement de travail que je dois parfois demander à des homins de m'aider. Mon travail me demande de marcher sans arrêt, je ne vais pas me plaindre, j'adore ça !{break}Le problème c'est juste que j'use mes bottes à une vitesse incroyable ! Il ne m'en reste presque plus et j'ai tellement de colis à livrer que je n'aurais pas le temps d'en acheter avant un bon moment. Si vous pouviez m'en fabriquer quelques une d'avance vous seriez adorable. En revanche attention, il me faut des bottes légères, je me fatiguerais bien trop avec des bottes lourdes.]
+}
+
+CWTC01_STEP2_OVERLOAD ()
+{
+	cwtc01_step2_overload	[Créez 5 paires de bottes légères de n'importe quel peuple (plan 1) de qualité au moins égale à 10]
+}
+
+CWTC01_STEP3_OVERLOAD (bot messager)
+{
+	cwtc01_step3_overload	[Donner les bottes à $messager$]
+}
+
+CWTC01_DIALOG_REWARD ()
+{
+	cwtc01_dialog_reward	[Ho merci bien. Ces bottes seront parfaites. Tenez, pour vous remercier, ça pourra vous être utile.]
+}
+
+CWTC02_TITLE (bot giver)
+{
+	cwtc02_title	[Des épées pour les apprentis (1/2)]
+}
+
+CWTC02_DESC (bot giver, place city)
+{
+	cwtc02_desc	[La ville de $city$ a besoin d'épées pour équiper les apprentis combatants.]
+}
+
+CWTC02_INSTRUCTIONS (bot gardchief, bot messager, bot player)
+{
+	cwtc02_instructions	[Bonjour $player$. $messager$ m'a dit que vous l'aviez bien aidée. Je pense que vous pourriez rendre un grand service à la ville. $gardchief$, le chef des gardes cherche justement un artisan pour l'aider. Vous devriez aller lui rendre visite.]
+}
+
+CWTC02_STEP1_PHRASE (bot gardchief, bot givervar)
+{
+	cwtc02_step1_phrase	[Bonjour, $givervar$ m'envoie. Vous avez besoin d'un artisan ?]
+}
+
+CWTC02_DIALOG_CHEF (bot artisan, place avendale)
+{
+	cwtc02_dialog_chef	[Bonjour. En effet, de plus en plus de nouvelles recrues arrivent chaque jour. C'est plutôt positif, mais cela pose tout de même un problème... Notre stock d'épées d'entrainement diminue à vue d'oeil et nous serons bientôt en rupture. Si vous êtes artisan pourriez-vous aller voir $artisan$ l'entraineur d'$avendale$. Elle sait comment les fabriquer, peut-être pourra-t-elle vous apprendre.]
+}
+
+CWTC02_STEP2_PHRASE (bot artisan)
+{
+	cwtc02_step2_phrase	[Bonjour, je voudrais apprendre à fabriquer des épées d'entrainement]
+}
+
+CWTC02_DIALOG_ARTISAN (place ferme)
+{
+	cwtc02_dialog_artisan	[Hmmm, tu voudrais apprendre ? Les épées d'entrainement sont la base, et tu ne sais pas les fabriquer ? Quel artisan es-tu pour te lancer sans même maîtriser les rudiments ? Bon, tu as déjà fait la démarche de venir me voir, c'est que tu as envie de t'améliorer, c'est toujours ça.{break}L'artisan qui a créé ces armes d'entrainement a vu sa graine flétrir il y a de ça des cycles. Sentant sa fin arriver, il voulut laisser une trace de son passage sur Atys et ainsi permettre à ses disciples de conserver son savoir. Il érigea donc un monument sur lequel il grava les informations nécessaires à la création des épées d'entrainement.{break}Ce monument se trouve quelque part au Sud de la $ferme$. A toi de le trouver, je ne vais pas non plus te mâcher le travail ! ]
+}
+
+CWTC02_STEP3_OVERLOAD (bot stele, place ferme)
+{
+	cwtc02_step3_overload	[Trouver le monument du vieil artisan au Sud de la $ferme$]
+}
+
+CWTC02_STEP3_PHRASE (bot stele)
+{
+	cwtc02_step3_phrase	[Lire les inscriptions sur le monument]
+}
+
+CWTC02_STEP3_SYSMES ()
+{
+	cwtc02_step3_sysmes	[&AMB&Sur le monument se trouve le plan permettant de créer des épées d'entrainement]
+}
+
+CWTC02_REWARD_SYSMES ()
+{
+	cwtc02_reward_sysmes	[&AMB&Vous apprenez à fabriquer des épées d'entrainement]
+}
+
+CWTC03_TITLE (bot giver)
+{
+	cwtc03_title	[Des épées pour les apprentis (2/2)]
+}
+
+CWTC03_DESC (bot giver, place city)
+{
+	cwtc03_desc	[La ville de $city$ a besoin d'épées pour équiper les apprentis combatants.]
+}
+
+CWTC03_STEP1_ROLEPLAY_1 (item i1, int qt1, int qual1, place city)
+{
+	cwtc03_step1_roleplay_1	[Fabriquer 5 épées d'entrainement pour les apprentis guerriers de $city$]
+}
+
+CWTC03_DIALOG_REWARD (place city, bot player)
+{
+	cwtc03_dialog_reward	[Ha merci $player$ vous arrivez à temps, encore un peu et je ne sais pas comment nous aurions fait pour fournir nos nouveaux apprentis. La ville de $city$ vous doit une fière chandelle. Acceptez ceci, vous le méritez bien.]
+}
+
+CWTH01_TITLE (bot giver)
+{
+	cwth01_title	[Le collier de coquillages]
+}
+
+CWTH01_DESC (bot giver, bot barman)
+{
+	cwth01_desc	[$barman$ a besoin de vous pour ramasser des coquillages.]
+}
+
+CWTH01_INSTRUCTIONS (bot barman, place city, bot player)
+{
+	cwth01_instructions	[Bonjour $player$. Je crois que $barman$, l'un des barmans de $city$ a quelques problèmes...personnels. Peut-être pourriez-vous lui proposer votre aide.]
+}
+
+CWTH01_STEP1_PHRASE (bot barman)
+{
+	cwth01_step1_phrase	[Bonjour. Vous me semblez soucieux, vous avez besoin d'aide ?]
+}
+
+CWTH01_DIALOG_BARMAN (place city, bot femme1, bot femme2)
+{
+	cwth01_dialog_barman	[Ho bonjour. Désolé, je ne vous avais pas vu, j'étais perdu dans mes pensées. Ho mais vous tombez bien ! Je vous explique : $femme1$ m'a surpris pendant que je parlais avec $femme2$. Forcément elle l'a mal pris... Pour me racheter je voudrais lui offrir un collier de coquillages. Le problème c'est que je ne peux pas m'absenter de mon bar pour aller en chercher. Si vous pouviez m'en rapporter vous me rendriez un énorme service. Vous pourrez en trouver autour du lac au Nord de $city$.]
+}
+
+CWTH01_DIALOG_REWARD ()
+{
+	cwth01_dialog_reward	[Parfait. Ils sont magnifiques ! Je vais pouvoir lui fabriquer un superbe collier, elle me tombera dans les bras ! Ho, j'allais oublier de vous récompenser. Tenez et... S'il vous plait, ne parler pas trop de cette histoire autour de vous...]
+}
+
+CWTH02_TITLE (bot giver)
+{
+	cwth02_title	[Du colorant pour les cheveux]
+}
+
+CWTH02_DESC (bot giver, bot coiffeur)
+{
+	cwth02_desc	[$coiffeur$ a besoin de tourbe pour faire du colorant pour cheveux.]
+}
+
+CWTH02_INSTRUCTIONS (place city, bot coiffeur, bot player)
+{
+	cwth02_instructions	[Ha vous voila de retour $player$. Je crois que la coiffeuse de $city$, $coiffeur$, aurait besoin d'aide. Vous devriez aller la voir.]
+}
+
+CWTH02_STEP1_PHRASE (bot coiffeur, bot givervar)
+{
+	cwth02_step1_phrase	[Bonjour, $givervar$ m'envoie pour vous aider]
+}
+
+CWTH02_DIALOG_COIFFEUSE (place eaux)
+{
+	cwth02_dialog_coiffeuse	[Vous tombez bien ! La coiffure d'une homine est le reflet de sa personnalité. Ne devons toujours faire attention à la façon dont nous nous coiffons. La couleur des cheveux fait partie de ces choses qui imperceptiblement vous rendent attirante ou non. Nous autres coiffeurs offrons donc un service de teinture. Cette teinture est faite à partir d'une recette que nous tenons secrète, toutefois, elle nécessite un ingrédient dont je vais commencer à manquer. Vous seriez adorable de me rapporter de la tourbe des $eaux$. Attention il me faut de la qualité fine.]
+}
+
+CWTH02_DIALOG_REWARD ()
+{
+	cwth02_dialog_reward	[Très bien, je devrais en avoir assez pour tenir un moment. Je pense que de nombreuses Trykettes vous doivent une fière chandelle. Tenez, pour vous remercier.]
+}
+
+CWTH03_TITLE (bot giver)
+{
+	cwth03_title	[Des racines pour une livraison]
+}
+
+CWTH03_DESC (bot giver, bot supplier)
+{
+	cwth03_desc	[$supplier$ a besoin de racines pour une livraison chez les Matis.]
+}
+
+CWTH03_INSTRUCTIONS (bot supplier)
+{
+	cwth03_instructions	[Vous revoila. Vous tombez bien. $supplier$ a besoin d'aide. Vous devriez aller la voir.]
+}
+
+CWTH03_STEP1_PHRASE (bot supplier, bot givervar)
+{
+	cwth03_step1_phrase	[Bonjour, $givervar$ m'envoie pour vous aider]
+}
+
+CWTH03_DIALOG_SUPPLIER (faction corsaires)
+{
+	cwth03_dialog_supplier	[Bonjour, vous tombez bien. J'ai absolument besoin de récupérer des racines pour une livraison que je dois effectuer pour les Matis. Et ils ne sont pas très commodes au sujet des délais de livraison... Si vous pouviez m'en rapporter ça me rendrait un grand service car je suis pour l'instant bloquée ici. Vous pourrez en trouver sous la racine géante au Nord du camp des $corsaires$. Attention, il me faut des racines de choix, je ne peux pas me permettre de livrer des matières de basse qualité à mes clients, surtout aux Matis...]
+}
+
+CWTH03_DIALOG_REWARD ()
+{
+	cwth03_dialog_reward	[Merci, ces racines seront parfaites ! Je préfère éviter de déclancher la colère d'un artisan Matis mécontent...ils me font vraiment peur...]
+}
+

@@ -1,0 +1,50 @@
+﻿R_01_19_MIS_TITLE (bot giver)
+{
+	r_01_19_mis_title	[La route de la soif]
+}
+
+R_01_19_MIS_DESC (bot giver, race gingo)
+{
+	r_01_19_mis_desc	[A delivery of water is held up by a pack of hungry $gingo.p$. The convoy has to be escorted to its destination.]
+}
+
+R_01_19_P_LDF_INTRO_1 (race gingo, place place_1, place pyr)
+{
+	r_01_19_p_ldf_intro_1	[Hail, homin. Looks like you're someone with an inquiring mind and a thirst for knowledge! Well, speaking of thirst, I'm waiting for my weekly delivery of water. The merchant who supplies me is waiting for someone to escort him to $pyr$.{break} Since he got attacked by a pack of $gingo.p$ some time back, he refuses to make the journey alone. He's at the westernmost part of the region, at the fork called $place_1$.{break} If you bring him and his packer back to me safe and sound, I'll tell you a secret or two about the region. The journey may be long and tough-going, but it will sure harden your character! Be careful, this is a dangerous mission and you may need a little help.]
+}
+
+R_01_19_O_T2_MERCHANT_1 (place place_1, bot_name merchant_name)
+{
+	r_01_19_o_t2_merchant_1	[<**Find**> $merchant_name$ at the crossroads called $place_1$.]
+}
+
+R_01_19_M_T2_MERCHANT_1 (bot merchant)
+{
+	r_01_19_m_t2_merchant_1	[Le barman m'envoit vous aider.]
+}
+
+R_01_19_P_BC_BRIEF_ESCORT_1 (bot giver)
+{
+	r_01_19_p_bc_brief_escort_1	[Ah ! Vous devez surement être la personne envoyée par $giver$ ! C'est que vous en avez mis du temps, vous vous êtes perdu en cours de route ou quoi ? (mais pourquoi m'envoit-il toujours des traînes-savates ce barman ?) Bon allons-y, il ne faut pas perdre de temps. Restez à côté de moi, soyez attentif et vigilant, il y a des saletés qui traînent alentours.]
+}
+
+R_01_19_O_ESCORT_1 (bot_name merchant_name, place pyr)
+{
+	r_01_19_o_escort_1	[Escort $merchant_name$ to the bar of $pyr$.]
+}
+
+R_01_19_P_BC_MERCHANT_1 ()
+{
+	r_01_19_p_bc_merchant_1	[Merci de m'avoir mené a bon port, allez parler au barman, pendant que je décharge le mektoub.]
+}
+
+R_01_19_M_ITEM_HERE_1 (bot giver)
+{
+	r_01_19_m_item_here_1	[J'ai ramené la cargaison d'eau.]
+}
+
+R_01_19_P_BC_DEBRIEF_1 (place imperialdunes)
+{
+	r_01_19_p_bc_debrief_1	[Back already?! Well done! Take this cube of amber for your troubles. It'll give you precious information about the region of $imperialdunes$.]
+}
+

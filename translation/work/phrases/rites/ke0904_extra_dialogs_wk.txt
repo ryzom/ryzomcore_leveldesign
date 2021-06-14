@@ -1,0 +1,59 @@
+﻿KE0904_CONSTRUCTION_WORKING (bot b, int available, int count, int percent)
+{
+	ke0904_construction_working	[&bbl&La construction du campement est en cours.\n\nNotre dernier inventaire indique $available$ paquets de matériaux en attente de livraison et $count$ paquets déjà parvenus à destination.\nSelon nos estimations, le campement serait réalisé à $percent$%.]
+}
+
+KE0904_CONSTRUCTION_DONE (bot b, player a, player z, int t)
+{
+	ke0904_construction_done	[&bbl&Le camp dont la construction à été initié par $a$ viens de s'achever grâce à $z$ au terme de $t$ jours d'intense travail.\nFélicitation à tous les réfugiés ayant contribuer.\n\nVous pouvez continuer à fournir des matières premières en vue d'éventuelles améliorations ou réparations, mais cela n'est plus prioritaire. Je vous encourage à vous adresser à mes confrères, d'autres camps pourraient avoir davantage besoin de votre aide.]
+}
+
+KE0904_NEED_EAT (bot b, int available, int kitin_count)
+{
+	ke0904_need_eat	[&bbl&La construction du campement s'est achevée avec succès!\n\nMais le camp est déjà assiégé par les kitins, nous devons l'approvisionner au plus vite, sans quoi nos gardes n'auront pas la force de repousser l'ennemi. Nos stocks de vivres sont actuellement au plus bas et nous craignons de devoir faire évacuer le campement.\nNotre dernier inventaire indique $available$ paquets de matériaux en attente de livraison.\nSeul $kitin_count$% des kitins ont été repoussés.]
+}
+
+KE0904_UNFINISH_NEED_EAT (bot b, int available, int kitin_count)
+{
+	ke0904_unfinish_need_eat	[&bbl&Le campement n'a pas été terminé à temps, nous avons été prit de court par des hordes de kitins.\n\nNous devons tout de même l'approvisionner au plus vite, seul notre Chef de camp est resté sur place, mais de valeureux guerriers y passent chaque jour pour se ravitailler. Nos stocks de vivres sont actuellement au plus bas et nous craignons de devoir abandonner définitivement le campement.\nNotre dernier inventaire indique $available$ paquets de matériaux en attente de livraison.\nSeul $kitin_count$% des kitins ont été repoussés.]
+}
+
+KE0904_NO_NEED (bot b, int available, int count, int kitin_count)
+{
+	ke0904_no_need	[&bbl&La construction du campement s'est achevée avec succès!\n\nDe courageux homins se chargent d'y apporter régulièrement les provisions nécessaires à la survie de nos Gardes. Nous estimons les réserves pleines à $count$%, mais nous ne devons pas faiblir !\nNotre dernier inventaire indique $available$ paquets de provisions en attente de livraison.\nSeul $kitin_count$% des kitins ont été repoussés.]
+}
+
+KE0904_UNFINISH_NO_NEED (bot b, int available, int count, int kitin_count)
+{
+	ke0904_unfinish_no_need	[&bbl&Le campement n'a pas été terminé à temps, nous avons été pris de court par des hordes de kitins.\n\nDe courageux homins se chargent tout de même d'y apporter régulièrement les provisions nécessaires à la survie des valeureux guerriers qui défendent la région. Nous estimons les réserves pleines à $count$%, mais nous ne devons pas faiblir !\nNotre dernier inventaire indique $available$ paquets de provisions en attente de livraison.\nSeul $kitin_count$% des kitins ont été repoussés.]
+}
+
+KE0904_NO_MORE_KITINS (bot b)
+{
+	ke0904_no_more_kitins	[&bbl&Excellente nouvelle! Nos efforts ont permit de chasser les kitins hors de la région, tout au moins au-delà des limites du camp. Mais adressez-vous à mes confrères, d'autres camps pourraient avoir besoin votre aide. Nous n'avons pas encore repoussé l'invasion !]
+}
+
+KE0904_TOKEN_DESC (bot giver, place placename)
+{
+	ke0904_token_desc [Tuer des Kitins afin de limiter la menace qui pèse sur $placename$]
+}
+
+KE0904_TOKEN_TITLE (bot giver, bot campchief)
+{
+	ke0904_token_title [Allez faire votre rapport à $campchief$]
+}
+
+WANT_ABANDON_MISSION ()
+{
+	want_abandon_mission [Souhaitez-vous vraiment abandonner cette mission ?]
+}
+
+SYSINFO_GIVE_ITEM (int q1, item i1, bot b)
+{
+	sysinfo_give_item [&AMB&Donnez $q1$ $i1$ à $b$]
+}
+
+KE0904_USE_MEKTOUB ()
+{
+	ke0904_use_mektoub [Chargez les marchandises sur un mektoub.]
+}

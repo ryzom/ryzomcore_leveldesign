@@ -1,0 +1,662 @@
+﻿/*
+TV_SUPPLY_MIS_01
+
+*/
+TV_SUPPLY_MIS_01_TITLE (bot giver)
+{
+		tv_supply_mis_01_title		[The crooked messenger.]
+
+}
+TV_SUPPLY_MIS_01_DESC (bot giver)
+{
+		tv_supply_mis_01_desc		[Find the stolen acreditations.]
+}
+
+TV_SUPPLY_MIS_01_STEP_1 (player p, bot target)
+{
+		tv_supply_mis_01_step_1 	[Hello $p$, I have a serious problem!{break}
+						Yesturday I engaged a messenger for delivering acreditations to merchants of our city and villages.\n
+						For this kind of tasks I have the habit to engage young people who wants to make themself some little money.\n
+						But I wasn't enough carefuly.\n
+						The one I engaged has disappear with all the acreditations and merchants haven't been delivered!\n
+						I don't know his names but I already saw him some times with $target$ in town.\n
+						You should speak to her.\n
+						But you have to be very quick, if merchants haven't got their acreditations soon, I will lose their trust.\n
+						Take some money, you may need it.]
+}
+
+TV_SUPPLY_MIS_01_TALKMENU (bot giver)
+{		
+		tv_supply_mis_01_talkmenu	[Do you know the man that $giver$ engaged?]
+}
+
+
+TV_SUPPLY_MIS_01_STEP_2 ()
+{
+		tv_supply_mis_01_step_2 	[Of course I know him, I even know him well if you wanna know.{break}
+						He's a very smart and resourceful boy with a great adventurer's spirit.\n
+						Even more since he joined the tribe of the corsairs...\n
+						Oups! I spoke too much!\n
+						I'm always too talkative when I speak about my strong and beautiful corsair.\n
+						Leave me alone now!]
+}
+
+TV_SUPPLY_MIS_01_TALKMENU_2 ()
+{		
+		tv_supply_mis_01_talkmenu_2	[The man you're looking for is a corsair!]
+}
+
+TV_SUPPLY_MIS_01_STEP_3 (bot target)
+{
+		tv_supply_mis_01_step_3 	[A corsair!\n
+						I understand everything now!{break}
+						He certainly hope to have a ransom for the acreditations he has stolen!\n
+						Or perhaps he will give it to members of his tribe, with these documents they will be able to legaly become merchants and
+						they could sell some poor quality items to travellers!\n
+						They even could sell illegal matrials!\n
+						$target$ certainly knows how to find him.\n
+						If she is so close with corsairs she certainly has the same weak point!\n
+						It will be easy to corrupt her...take some money and try to make her more talkative.]
+}
+
+TV_SUPPLY_MIS_01_STEP_4 ()
+{
+		tv_supply_mis_01_step_4 	[Oh thanks!\n
+						It's nice, I will find a good way to spend it.]
+}
+
+TV_SUPPLY_MIS_01_STEP_5 ()
+{
+		tv_supply_mis_01_step_5 	[You're a very generous homin, thanks a lot.]
+}
+
+TV_SUPPLY_MIS_01_STEP_6 (bot rtyk)
+{
+		tv_supply_mis_01_step_6 	[Hum...I'm wondering if you're not trying to corrupt me...\n
+						But if you're looking for $rtyk$ I will not tell you how to find him.]
+}
+
+TV_SUPPLY_MIS_01_STEP_7 (bot rtyk)
+{
+		tv_supply_mis_01_step_7 	[You're very persuasive.\n
+						So, I will tell you how to find $rtyk$ but don't be rude with him, he's not a bad boy.{break}
+						Listen carefuly:\n
+						Exit the city and take the est direction.\n
+						Not very far of the town you will see an enclave surrounded by clives.\n
+						You will recognize it easyly, there is some green grass in the enclave, it's pretty rare on our beaches.\n
+						You will find $rtyk$ here, he's never very far of the city for his business.\n
+						Now leave me alone, I have to think about the best way to spend all the money you gave me.]
+}
+
+TV_SUPPLY_MIS_01_TALKMENU_3 ()
+{		
+		tv_supply_mis_01_talkmenu_3	[I am here to recover the merchant's acreditation!]
+}
+
+TV_SUPPLY_MIS_01_STEP_8 ()
+{
+		tv_supply_mis_01_step_8 	[Why will I give it to you?\n
+						I worked hard to get it, I can sell it to you but I will certainly not give it to you!]
+}
+
+TV_SUPPLY_MIS_01_STEP_9 ()
+{
+		tv_supply_mis_01_step_9 	[It' really a pleasure to to business with you.\n
+						Take these acreditations.]
+}
+
+TV_SUPPLY_MIS_01_SET_OBJ (bot oehe, bot eocno, place Fairhaven, bot honte, place Avendale, bot honeen, place Crystabell)
+{
+		tv_supply_mis_01_set_obj 	[Give their list to $oehe$ and $eocno$ in $Fairhaven$, to $honte$ ine $Avendale$ and to $honeen$ in $Crystabell$.]
+}
+
+TV_SUPPLY_MIS_01_MERCHANT_1 ()
+{
+		tv_supply_mis_01_merchant_1 	[Oh, my acreditation, thanks.\n
+						I totally forgot that the old one have expired.]
+}
+
+TV_SUPPLY_MIS_01_MERCHANT_2 ()
+{
+		tv_supply_mis_01_merchant_2 	[Thanks! As always it's late.]
+}
+
+TV_SUPPLY_MIS_01_MERCHANT_3 ()
+{
+		tv_supply_mis_01_merchant_3 	[The new acreditation, nice, I just lost the old one.]
+}
+
+TV_SUPPLY_MIS_01_MERCHANT_4 ()
+{
+		tv_supply_mis_01_merchant_4 	[Thanks but aren't you in advance?]
+}
+
+TV_SUPPLY_MIS_01_END ()
+{
+		tv_supply_mis_01_end 		[Congratulation, your help was very precious.{break}
+						I will take more care about the deliverers I engage now.\n
+						This incident cost me a lot of money but take this reward.]
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//KNOWLEDGE MISSION
+/*
+TV_KNOWLEDGE_MIS_01
+*/
+TV_KNOWLEDGE_MIS_01_TITLE (bot giver)
+{
+	tv_knowledge_mis_01_title		[A Tryker play : The Audacity of Luria, act one]
+
+}
+
+TV_KNOWLEDGE_MIS_01_DESC (bot giver)
+{
+	tv_knowledge_mis_01_desc		[Vous allez assister  un spectacle mettant en scne le personnage de Luria, la clbre hrone tryker.]
+
+}
+
+TV_KNOWLEDGE_MIS_01_STEP_1 (player p, bot target)
+{
+//sage
+	tv_knowledge_mis_01_step_1		[Tu apprécies le théatre, $p$ ? La petite troupe de $target$ donne des reprsentations sur l'histoire de 
+						Luria. Ils vont bientt jouer le premier acte, tu devrais aller profiter du spectacle ! 
+						N'oublie pas de prendre de quoi les payer en retour.]
+
+}
+
+TV_KNOWLEDGE_MIS_01_TALKMENU_1(bot giver)
+{
+//parler au chef de la troupe
+	tv_knowledge_mis_01_talkmenu_1		[Je viens voir la reprsentation.]
+
+}
+
+TV_KNOWLEDGE_MIS_01_STEP_2 (player p, race yubo)
+{
+//chef de la troupe
+	tv_knowledge_mis_01_step_2		[Bienvenue, $p$ ! Tu arrives juste  temps, nous allons commencer !{break}\n
+						Approchez-vous tous, et assistez  la reprsentation du premier acte de l'Histoire de Luria !\n
+						Luria was the only girl born into a humble family of beachcombers. All day long she would play and watch 
+						her brothers spinning the logs down at the river instead of doing chores for her mother in the lodging. 
+						Despite her mothers scolding she always ended up down at the waterside. Bright and breezy and free as the 
+						wind, was Luria, skipping after $yubo$ and shooting the rapids better than any boy.]
+
+}
+
+TV_KNOWLEDGE_MIS_01_TARGET_NPC_1(bot target)
+{
+//texte d'objectif
+	tv_knowledge_mis_01_target_npc_1	[Regarder Luria en la ciblant]
+
+}
+
+TV_KNOWLEDGE_MIS_01_STEP_3 ()
+{
+//chef de la troupe
+	tv_knowledge_mis_01_step_3		[One fine summers day, as she was hopping over stepping stones around Barley Bay she stumbled upon a loose 
+						stone and uncovered a pothole about two feet wide just big enough for a child of twelve to wiggle through.{break}\n
+						She ventured inside and climbed down a great sprouting root and to her surprise came upon a cavern of 
+						ancient ruins. With a pocketful of white coral pebbles she had picked along the lake shore, she set off all 
+						afternoon in exploration of the great chambers using the beautiful luminous flowers there to light her way.]
+
+}
+
+TV_KNOWLEDGE_MIS_01_LURIA()
+{
+//Texte dit par l'actrice jouant Luria
+	tv_knowledge_mis_01_luria		[Quel endroit trange ! Il faut que j'en parle aux anciens !]
+
+}
+
+TV_KNOWLEDGE_MIS_01_TARGET_NPC_2(bot target)
+{
+//texte d'objectif
+	tv_knowledge_mis_01_target_npc_2	[Regarder un ancien en le ciblant]
+
+}
+
+TV_KNOWLEDGE_MIS_01_STEP_4 ()
+{
+//chef de la troupe
+	tv_knowledge_mis_01_step_4		[The following morning, instead of going to the school house she ran along to the temple and amused the elders 
+						with stories of caverns and strange luminous plants.{break} The old sages laughed at her wild imagination but 
+						the following day she had a surprise for them.]
+
+}
+
+//Le PJ doit cibler Luria  nouveau
+TV_KNOWLEDGE_MIS_01_STEP_5 ()
+{
+//chef de la troupe
+	tv_knowledge_mis_01_step_5		[Vexed by the elders mocking, the next day Luria took three beautiful plants to the temple.]
+
+}
+
+//Le PJ doit cibler un sage  nouveau
+TV_KNOWLEDGE_MIS_01_STEP_6 ()
+{
+//chef de la troupe
+	tv_knowledge_mis_01_step_6		[The elders could hardly believe their eyes and asked Luria to show them this cavern. On coming to the 
+						pothole the old men drew back aghast in the knowledge that she had ventured into the forbidden prime roots 
+						so transgressing the law of Jena, whose disciples would be down on her like a ton of bricks if they knew.]
+
+}
+
+//Le PJ doit cibler Luria  nouveau
+TV_KNOWLEDGE_MIS_01_STEP_7 ()
+{
+//chef de la troupe
+	tv_knowledge_mis_01_step_7		[Luria was banned from going out for twenty days and the entrance was sealed with silt and clay.{break} 
+						Her confinement taught Luria a valuable lesson and she didnt go to that pothole again, nor did she 
+						say anything when she discovered another... but that's another tale!]
+
+}
+
+TV_KNOWLEDGE_MIS_01_TARGET_NPC_3(bot target)
+{
+//texte d'objectif : Le PJ doit cibler le chef de la troupe
+	tv_knowledge_mis_01_target_npc_3	[Regarder $target$ en le ciblant]
+
+}
+
+TV_KNOWLEDGE_MIS_01_STEP_8 ()
+{
+//chef de la troupe
+	tv_knowledge_mis_01_step_8		[Ici prend fin le premier tableau de la vie de Luria ! Merci de votre prsence  tous ! Et merci d'avance 
+						pour votre gnrosit...  votre bon coeur !]
+
+}
+
+TV_KNOWLEDGE_MIS_01_END ()
+{
+//chef de la troupe
+	tv_knowledge_mis_01_end			[Sois remerci,  public ! Dans quelques temps, nous donnerons une reprsentation du deuxime acte de la 
+						vie de Luria... Nous esprons vous revoir trs bientt !]
+
+}
+
+//reward 1 action knowledge + fame Tryker
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+TV_GROUP_MIS_01
+
+*/
+TV_GROUP_MIS_01_TITLE (bot giver)
+{
+		tv_group_mis_01_title		[Freedom for all.]
+
+}
+TV_GROUP_MIS_01_DESC (bot giver)
+{
+		tv_group_mis_01_desc		[Find what happens to the missing foragers.]
+}
+
+TV_GROUP_MIS_01_STEP_1 ()
+{
+		tv_group_mis_01_step_1 		[Some strange disparitions happened few days ago.{break}
+									An entire group of citizens has disappear while they were gone to forage.\n
+									They were in a place near the city known to be a safe place...strange.\n
+									We first thought that they decided to rest for the night.\n
+									Nights are pleasant in this season.\n
+									But, at this day, they are not still here.\n
+									I sent a patrol of guards in the place they have disappear to check it and find clues.\n
+									They didn't found them but they found all their foraging tools.\n
+									They were never abandoned their tools withtout a serious reason!\n
+									People in town are now begin to hesitate to forage in the neighbourhood and crazy rumors are propagating.\n
+									We must discover what happens!\n
+									Your help will be welcome to solve this mystery...Moreover you have a reputation of great adventurers.\n
+									If you accept to help us speak to the guardchief, he will tell you more about the clues that his men found.] 
+}
+TV_GROUP_MIS_01_STEP_2 ()
+{
+		tv_group_mis_01_step_2 		[The concellor send you?\n
+									Nice, some help is always welcome.{break}
+									When we arrived, we saw some fightning traces on the sand and all the tools of the missing foragers were scattedred on the ground.\n
+									We didn't found their bodies, so we think that they are still alive...they probably hav been kidnapped!.\n
+									Certainly for a ransom.\n
+									You should go to check the place one more time, perhaps there is some clues we didn't saw.\n
+									There is an outpost est of the city, the place of the disparition is just south of this outpost.] 
+}
+
+TV_GROUP_MIS_01_SETOBJ ()
+{
+		tv_group_mis_01_setobj 		[Find the place of the disparition, south of the outpost nearby the city.] 
+}
+
+TV_GROUP_MIS_01_AMBIENT_MSG ()
+{
+		tv_group_mis_01_ambient_msg 		[When you approach the place that the guardchief told you about, you see a Matis people who seems to search something.\n
+											He seems to be disturbed by your presence and stop his activities.] 
+}
+
+TV_GROUP_MIS_01_TALKMENU1 ()
+{
+		tv_group_mis_01_talkmenu1 		[What are searching for?] 
+}
+
+TV_GROUP_MIS_01_STEP_3 ()
+{
+		tv_group_mis_01_step_3 		[Nothing special! it's not your business!] 
+}
+
+TV_GROUP_MIS_01_TALKMENU2 (bot slaver)
+{
+		tv_group_mis_01_talkmenu2 		[We saw $slaver$, a matis with a strange behaviour.]
+}			
+			
+TV_GROUP_MIS_01_STEP_4 (place Bounty_beaches)
+{
+		tv_group_mis_01_step_4 		[This Matis is not unknown, we already have to suspect him!{break}
+									We suspect this man to make business with the tribe of slavers but we never could prove it.\n
+									I will not be surprised to heard that the missing foragers were kidnapped by the slaver!\n
+									Try to check in the region of $Bounty_beaches$ that's the resting place of this tribe.\n
+									Some says that the Trikers kidnapped by the slavers are prisoners near the main lake of the region.\n
+									Find this place, but be quick, slavers are known to never keep their prisoners long time in the same place.\n
+									If you find them do your best to free them.] 
+} 
+
+TV_GROUP_MIS_01_SETOBJ2 ()
+{
+		tv_group_mis_01_setobj2 		[Find the prisoners of the slavers and free them.] 
+}
+
+TV_GROUP_MIS_01_SLAVER()
+{
+		tv_group_mis_01_slaver 		[These slaves are ours! get out or you will die!] 
+}
+
+TV_GROUP_MIS_01_TALKMENU3 ()
+{
+		tv_group_mis_01_talkmenu3 		[We are here to save you!]
+}
+
+TV_GROUP_MIS_01_STEP_5 ()
+{
+		tv_group_mis_01_step_5 		[Thanks, we were began to think that we could never see again our wounderful country!{break}
+									I hope that your intervention is at last a sign of determination from the concellor to fight against these barbarians!\n
+									We are free again now, you will be amways on our minds my friends.\n
+									Go back to the city, the concellor will be generous.] 
+}
+
+TV_GROUP_MIS_01_END ()
+{
+		tv_group_mis_01_end 		[Congratulation, you acted for the common good of all the Trykers.{break}
+									I will make everyyhing possible to fight against the slavers.\n
+									But it's not an easy task, they have a lot of relations and they corrupt a lot of Homins.\n
+									Take this nice rewards my friends] 
+}
+
+REWARD_TV_GROUP_MIS_01_SWORD ()
+{
+	reward_tv_group_mis_01_sword	[The wind slasher.]
+}
+
+REWARD_TV_GROUP_MIS_01_HARPOON ()
+{
+	reward_tv_group_mis_01_harpoon	[The fisherman's friend.]
+}
+
+REWARD_TV_GROUP_MIS_01_PISTOL ()
+{
+	reward_tv_group_mis_01_pistol	[The pistol of quickness.]
+}
+
+REWARD_TV_GROUP_MIS_01_STAFF ()
+{
+	reward_tv_group_mis_01_staff	[The sap made staff.]
+}
+
+REWARD_TV_GROUP_MIS_01_LBOOTS ()
+{
+	reward_tv_group_mis_01_lboots	[The boots of regeneration.]
+}
+
+REWARD_TV_GROUP_MIS_01_LGLOVES ()
+{
+	reward_tv_group_mis_01_lgloves	[The gloves of the tireless.]
+}
+	
+	
+
+//FIGHT MISSION
+/*
+TV_FIGHT_MIS_01
+*/
+TV_FIGHT_MIS_01_TITLE (bot giver, race regus)
+{
+	tv_fight_mis_01_title		[Hunting $regus.p$ pack]
+
+}
+
+TV_FIGHT_MIS_01_DESC (bot giver, race regus)
+{
+	tv_fight_mis_01_desc		[Votre groupe doit chasser une meute de dangereux $regus.p$ afin de rendre la rgion plus sre.]
+
+}
+
+TV_FIGHT_MIS_01_STEP_1 (race regus)
+{
+//guardchief
+	tv_fight_mis_01_step_1		[Vous cherchez du travail ? Voil qui tombe plutt bien, les marchands de la cit m'ont charg d'engager quelques 
+					chasseurs qui n'ont pas froid aux yeux !{break}\n
+					Plusieurs colporteurs se sont fait attaquer sur le chemin des villages par une meute de $regus.p$. Un claireur les 
+					a repr au au nord-ouest de la cit. Ces prdateurs sont de plus en plus nombreux et agressifs, il est temps de 
+					faire quelque chose ! Formez un groupe solide, et dbusquez le meneur de la meute.\n 
+					Attention, il a l'air trs dangereux ! Vous devrez sans doute tuer galement une bonne partie de ses congnres. 
+					Prenez garde  vous ! J'ai vu beaucoup de chasseurs imprudents devenir les proies de leur prtendu 
+					gibier...]
+
+}
+
+TV_FIGHT_MIS_01_TALKMENU(bot current)
+{
+	tv_fight_mis_01_talkmenu	[Nous avons tu le chef de la meute.]
+
+}
+
+TV_FIGHT_MIS_01_END ()
+{
+//guardchief
+	tv_fight_mis_01_end		[La chasse a t bonne ? Bravo ! Des chemins plus srs sont de bonnes voies pour le commerce, les marchands de la ville 
+					apprcient vos efforts  leur juste valeur. Ils vous offrent cette rcompense : prenez-la, vous l'avez bien mrit !]
+
+}
+
+//reward 5000 money + fame Tryker
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+TV_CRAFT_MIS_01
+*/
+TV_CRAFT_MIS_01_TITLE (bot giver)
+{
+	tv_craft_mis_01_title		[Fight and forage.]
+
+}
+
+TV_CRAFT_MIS_01_DESC (bot giver)
+{
+	tv_craft_mis_01_desc		[Find all the materials that $giver$ needs.]
+
+}
+
+TV_CRAFT_MIS_01_STEP_1 (player p, item rm1, item rm2, place Lagoons_of_Loria, place Winds_of_Muse, item rm3, item rm4 )
+{
+	tv_craft_mis_01_step_1		[Hello $p$, you have the reputation of a great craftsman, that's exactly what I need.{break}
+								I'm searching for nice quality materials.\n
+								Some could be find by foraging, others by quartering creatures.\n
+								If you accept to help me you will have to kill creatures to quarter them, so I need someone who is able to forage and fight.\n
+								Let's begin by the materials that could be find in the underground:\n
+								I need some $rm1$ and some $rm2$, you could find it ine the region of $Lagoons_of_Loria$ and the region of $Winds_of_Muse$ near wet zones.\n
+								I also need some $rm3$ and some $rm4$, you could fint it on creatures.]
+
+}
+
+TV_CRAFT_MIS_01_END (player p)
+{
+	tv_craft_mis_01_end			[Thanks $p$, you did it well.\n
+								Accept this reward and have a nice day.]
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//FIGHT MISSION
+/*
+TV_FIGHT_MIS_03
+*/
+TV_FIGHT_MIS_03_TITLE (bot giver)
+{
+	tv_fight_mis_03_title		[The Stolen book]
+
+}
+
+TV_FIGHT_MIS_03_DESC (bot giver, place place_fairhaven)
+{
+	tv_fight_mis_03_desc		[Votre groupe doit retrouver un livre ancien volé et le rapporter au sage de $place_fairhaven$]
+
+}
+
+TV_FIGHT_MIS_03_STEP_1 (bot target)
+{
+//counselor
+	tv_fight_mis_03_step_1		[Je viens de recevoir la visite de $target$, le sage de notre ville. L'un de nos livres sacrés a disparu ! Il semblerait 
+					qu'il ait été volé, mais nous ignorons qui est le coupable. Nous devons absolument retrouver cet ouvrage !{break} Il contient 
+					de précieux témoignages des temps anciens, que nous nous devons de transmettre à nos enfants. J'ai entendu parler de 
+					vous. Si vous êtes à la hauteur de votre réputation, vous accepterez cette mission. Ramenez-nous le livre, et 
+					nous saurons vous récompenser !\n
+					Allez voir $target$ de ma part, peut-être pourra-t-il vous fournir quelques pistes pour commencer vos recherches.]
+
+}
+
+TV_FIGHT_MIS_03_STEP_2 (bot barman)
+{
+//sage
+	tv_fight_mis_03_step_2		[Oh, vous êtes les personnes chargées de retrouver le manuscrit volé ? J'ai malheureusement peu de choses à vous apprendre... 
+					Le livre a été dérobé la nuit dernière, nous avons constaté sa disparition ce matin.{break} Nous avons tout fouillé, à la 
+					recherche du moindre indice laissé par les auteurs de ce sacrilège... tout ce que nous avons pu trouver, c'est ce 
+					morceau d'étoffe, accroché au bastingage qui entoure le bâtiment : le voleur a dû déchirer sa tunique 
+					en sautant de la plate-forme. Il y a un motif brodé dessus, mais je ne connais pas sa signification.\n
+					En revanche, $barman$ en saura certainement plus à ce sujet. Elle connait beaucoup de monde... et pas toujours des plus 
+					recommandables. C'est dans ce genre de cas que mon humble sagesse montre ses limites... j'espère que vous parviendrez 
+					à en apprendre davantage.]
+
+}
+
+TV_FIGHT_MIS_03_CUSTOM_OBJ_1 (item i, int qt, bot target)
+{
+//Objectif
+	tv_fight_mis_03_custom_obj_1			[Montrer $i$ à $target$]
+
+}
+
+TV_FIGHT_MIS_03_GIVE_ITEM_MENU_1(int item_count)
+{
+	tv_fight_mis_03_give_item_menu_1		[Montrer le morceau de tissu]
+
+}
+
+TV_FIGHT_MIS_03_STEP_3 (bot counselor)
+{
+//barman
+	tv_fight_mis_03_step_3		[Ha ha, je me doutais bien que je ne tarderais pas à voir débarquer ici des envoyés de $counselor$ ! Ainsi, vous aimeriez 
+					savoir à qui peut bien appartenir ce bout de tissu.{break} Il se peut que j'ai mon idée là-dessus... mais tout renseignement 
+					a un prix. Si vous êtes disposés à faire un petit effort financier, la mémoire pourrait me revenir...]
+
+}
+
+TV_FIGHT_MIS_03_GIVE_MONEY_MENU(int amount)
+{
+//donner monnaie x au barman pour obtenir des informations
+	tv_fight_mis_03_give_money_menu		[Prenez cette petite contribution.]
+
+}
+
+TV_FIGHT_MIS_03_STEP_4 (bot target)
+{
+//barman
+	tv_fight_mis_03_step_4		[Merci bien, grands seigneurs !{break}\n
+					Je connais le motif brodé sur le tissu. C'est la marque d'une petite bande de voleurs et autres coupe-jarrets qui 
+					sévit dans le coin. Leur chef se nomme $target$. Ils m'ont déjà causé quelques ennuis, je n'ai donc aucun scrupule 
+					à vous dire où les trouver. Ils 
+					se rassemblent souvent à la nuit tombée dans la région sud. Avec un peu de chance, vous devriez tomber sur eux... 
+					à moins que ce ne soit le contraire.]
+
+}
+
+TV_FIGHT_MIS_03_CUSTOM_OBJ_2 (bot target, place region_restingwater)
+{
+//Objectif
+	tv_fight_mis_03_custom_obj_2			[Retrouver la bande de $target$, et combattre les voleurs qui se cachent dans la région de $region_restingwater$]
+
+}
+
+TV_FIGHT_MIS_03_SYST_MESSAGE_LETTER()
+{
+//Message à la mort des bandits
+	tv_fight_mis_03_syst_message_letter		[Vous trouvez un document sur le corps de l'un des voleurs. Il est écrit dans un langage que vous 
+							ne parvenez pas à déchiffrer.]
+
+}
+
+TV_FIGHT_MIS_03_GIVE_ITEM_MENU_2(int item_count)
+{
+	tv_fight_mis_03_give_item_menu_2		[Montrer la lettre]
+
+}
+
+TV_FIGHT_MIS_03_STEP_5 (place lagoonsofloria)
+{
+//sage
+	tv_fight_mis_03_step_5		[Vous avez découvert quelque chose ? Cette lettre ? Hmm, le texte semble codé... je connais ce langage. Voyons voir...{break}\n
+					Eh bien, il semblerait que le porteur de cette lettre ait agi pour des commanditaires. Et l'identité de ces derniers ne 
+					fait pas de doute à la lecture de ce message. Ce sont les Frères de la lagune qui possèdent le livre désormais !\n
+					Ces frères forment une tribu de pirates sans foi ni loi. Ils vouent une adoration sans bornes envers les reliques 
+					du passé, et sont prêts à tout pour s'en emparer ! Ils contrôlent $lagoonsofloria.da$ $lagoonsofloria$. Vous allez devoir 
+					vous rendre sur leur île. Le texte de la lettre fait mention d'un point de rendez-vous, à l'ouest d'un grand lac. 
+					Je compte sur vous pour nous ramener le livre ! Si vous trouvez autre chose dans le butin des pirates, vous pourrez le 
+					conserver.]
+
+}
+
+TV_FIGHT_MIS_03_CUSTOM_OBJ_3 ()
+{
+//Objectif
+	tv_fight_mis_03_custom_obj_3			[Combattre les pirates pour retrouver le livre]
+
+}
+
+TV_FIGHT_MIS_03_SYST_MESSAGE_BOOK()
+{
+//Message à la mort des pirates
+	tv_fight_mis_03_syst_message_book		[Vous fouillez le camp des pirates, et vous découvrez un petit coffre enfoui dans le sable... 
+							à l'intérieur, de nombreux cristaux de sève... et le livre que vous cherchez !]
+
+}
+
+//reward 100000 money
+TV_FIGHT_MIS_03_GIVE_ITEM_MENU_3(int item_count)
+{
+	tv_fight_mis_03_give_item_menu_3		[Donner le livre]
+
+}
+
+TV_FIGHT_MIS_03_STEP_6 ()
+{
+//sage
+	tv_fight_mis_03_step_6		[Vous avez réussi ! Louée soit Jena ! Cet ouvrage ancien va pouvoir reprendre sa place dans notre bibliothèque. 	
+					Soyez mille fois remerciés ! Je fais prévenir sur-le-champ le conseiller, afin qu'il vous récompense comme 
+					il se doit !]
+
+}
+
+TV_FIGHT_MIS_03_END ()
+{
+//counselor
+	tv_fight_mis_03_end		[Félicitations ! Votre réputation est bien fondée ! Grâce à vous, une parcelle du savoir de notre peuple pourra 
+					à nouveau être transmise librement. En récompense, je vous offre une autre parcelle de ce savoir. Nous pouvons 
+					vous enseigner quelques techniques dans les domaines de votre choix.]
+
+}
+
+//reward actions de différents types + fame Tryker
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////:

@@ -1,0 +1,69 @@
+﻿R_11_17_MIS_TITLE (bot giver)
+{
+	r_11_17_mis_title	[L'épreuve d'Oflovak]
+}
+
+R_11_17_MIS_DESC (bot giver)
+{
+	r_11_17_mis_desc	[Une vieille tradition Fyros subsiste depuis le Great Swarming qui s'est transformé en une sorte de marathon au travers du désert.
+A vous de la faire revivre.]
+}
+
+R_11_17_P_LDF_INTRO_1 (faction faction_water)
+{
+	r_11_17_p_ldf_intro_1	[$faction_water.mda$ $faction_water$ sont les organisateurs d'une ancienne tradition fyros. Il s'agit d'une sorte de course dans le désert commémorant les épreuves de nos ancêtres lors des jours sombres du Grand Essaim.{break} Si vous sortez victorieux de cette épreuve, ils vous récompenseront en vous enseignant une technique artisanale qui offre plus de résistance aux objets.]
+}
+
+R_11_17_M_T2_TRIBECHIEF_1 (bot tribe_chief_1)
+{
+	r_11_17_m_t2_tribechief_1	[Je viens pour l'épreuve]
+}
+
+R_11_17_P_BC_TRIBECHIEF_1 ()
+{
+	r_11_17_p_bc_tribechief_1	[- La région est nommée d'après un très grand Fyros qui a sauvé de nombreux homins pendant le great swarming.\n
+- Pour glorifier sa mémoire nous vous proposons une épreuve.\n
+- Il s'agit de traverser la région, en passant dans les différents outposts et fabriquer un objet à chaque fois.\n
+- Il faudra ensuite revenir ici avant le levé du soleil et me remettre le fruit de ton travail.]
+}
+
+R_11_17_P_BC_CRAFT_1 ()
+{
+	r_11_17_p_bc_craft_1	[Oflovak, sauveur des homins, a parcouru Atys pour mener les fuyards vers les arcs-en-ciel de Tryton.\n
+Pour symboliser les trajets qu'il du faire, tu devras fabriquer une paire de bottes.]
+}
+
+R_11_17_P_BC_NEXT_1 ()
+{
+	r_11_17_p_bc_next_1	[Bien, tu dois maintenant continuer vers le prochain outpost.]
+}
+
+R_11_17_P_BC_CRAFT_2 ()
+{
+	r_11_17_p_bc_craft_2	[Oflovak, a du se protéger des kitins alors qu'il parcourait les terres.
+Pour symboliser sa lutte, tu devras fabriquer un plastron.]
+}
+
+R_11_17_P_BC_CRAFT_3 ()
+{
+	r_11_17_p_bc_craft_3	[Oflovak, a du combattre bien des kitins pendant la grande invasion.
+Pour commémorer ses combats, tu devras fabriquer une épée.]
+}
+
+R_11_17_P_BC_BACK_1 ()
+{
+	r_11_17_p_bc_back_1	[Il ne vous reste plus qu'à retourner à campement et parler à notre chef.]
+}
+
+R_11_17_M_T2_DEBRIEF_1 (bot tribe_chief_1)
+{
+	r_11_17_m_t2_debrief_1	[j'ai terminé l'épreuve]
+}
+
+R_11_17_P_BC_DEBRIEF_1 ()
+{
+	r_11_17_p_bc_debrief_1	[- Tu as fait revivre une partie de notre histoire\n
+- Voici un cube d'ambre qui te contera en détail l'épisode durant lequel Oflovak Rydon a sauvé tant d'Homins.\n
+- Je vais de suite t'enseigner une technique Fyros qui permet de fabriquer des objets tres résistants.\n]
+}
+

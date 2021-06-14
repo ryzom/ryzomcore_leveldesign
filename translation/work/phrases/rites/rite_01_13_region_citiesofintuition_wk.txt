@@ -1,0 +1,129 @@
+﻿R_01_13_MIS_TITLE (bot giver)
+{
+	r_01_13_mis_title	[L'énigme d'une vieille Zorai]
+}
+
+R_01_13_MIS_DESC (bot giver)
+{
+	r_01_13_mis_desc	[Repondre aux questions du vieux journeyman donnera la connaissance de ces contrées.]
+}
+
+R_01_13_P_DLF_INTRO_1 (place citiesofintuition)
+{
+	r_01_13_p_dlf_intro_1	[I know a venerable traveler from the lands of $citiesofintuition$ who'd be only too pleased to tell you more about our region. This Zorai's a bit of an odd fellow and always speaks in riddles.{break} I suppose you'd call him 'unconventional' but they say that those who follow his teaching will reach a state of harmony with nature and improve their maditation capacities.]
+}
+
+R_01_13_M_T2_JOURNEYMAN_1 (bot journeyman)
+{
+	r_01_13_m_t2_journeyman_1	[Speak to $journeyman$]
+}
+
+R_01_13_P_T2_BARMEN_1 ()
+{
+	r_01_13_p_t2_barmen_1	[Qui vient me voir ?
+Est-ce un de ces ignorants ?
+Non, il me semble qu'il soit simplement en quête de savoir.
+S'il désire réellement comprendre, saura-t-il se renseigner sur la région auprès de ses habitants et répondre à mes questions ?
+Revenez me voir lorsque vous aurez parlé aux barmans de chaque ville.
+Sauront-ils vous renseigner ?
+A vous de percer le mystère.]
+}
+
+R_01_13_O_T2_BARMEN_1 ()
+{
+	r_01_13_o_t2_barmen_1	[Speak with each village's barman]
+}
+
+R_01_13_SUB_HOI_CHO_P_BC_HOI_CHO (place hoicho, place jenlai, place mincho, place zora)
+{
+	r_01_13_sub_hoi_cho_p_bc_hoi_cho	[The four towns were bult by survivors of the Great Swarming who resurfaced from the Prime Roots many years ago. $zora$ was named in memory of the old Zorai capital of Zoran.{break} The towns of $hoicho$ and $mincho$ were named after the great spiritual leaders who led our people successively before and after the Great Swarming. $jenlai$ was built to the glory of Jena.]
+}
+
+R_01_13_SUB_MIN_CHO_P_BC_MIN_CHO (place mincho)
+{
+	r_01_13_sub_min_cho_p_bc_min_cho	[Our beautiful town of $mincho$ was founded shortly after homins resurfaced from the Prime Roots.{break} It takes its name from our great leader who lost his life during the Great Swarming while trying to drive as many Zorais through the rainbow to safety in the Prime Roots of the newfound lands.]
+}
+
+R_01_13_SUB_JEN_LAI_P_BC_JEN_LAI ()
+{
+	r_01_13_sub_jen_lai_p_bc_jen_lai	[Que je vous parle de notre belle région ? Et bien sachez que cette grande jungle fut choisie par notre peuple peu apres la fin de l'exil dans les Primes Racines. La région n'est pas colonisée par la goo, mais il faut rester vigilant pour que cela n'arrive pas.]
+}
+
+R_01_13_P_DC_QUESTION_1 (place citiesofintuition)
+{
+	r_01_13_p_dc_question_1	[Good, you should now be set to answer my first question. What does $citiesofintuition$ represent for the Zorai people?]
+}
+
+R_01_13_P_DA_1_4 ()
+{
+	r_01_13_p_da_1_4	[La terre promise du peuple Zoraï]
+}
+
+R_01_13_P_DA_1_3 ()
+{
+	r_01_13_p_da_1_3	[Le territoire sacré hérité de nos ancètres]
+}
+
+R_01_13_P_DA_1_2 ()
+{
+	r_01_13_p_da_1_2	[La terre de pénitence où Jena teste notre ferveur]
+}
+
+R_01_13_P_DA_1_1 ()
+{
+	r_01_13_p_da_1_1	[Le premier territoire colonisé après l'exil dans les Primes Racines]
+}
+
+R_01_13_P_DC_QUESTION_2 ()
+{
+	r_01_13_p_dc_question_2	[Bonne réponse, pouvez vous faire aussi bien avec la deuxieme question ?
+
+D'ou vient le nom des villes de la région ?
+]
+}
+
+R_01_13_P_DA_2_4 ()
+{
+	r_01_13_p_da_2_4	[Des noms de la famille royale du peuple Zoraï]
+}
+
+R_01_13_P_DA_2_3 ()
+{
+	r_01_13_p_da_2_3	[De la transcriptions de noms Kamis]
+}
+
+R_01_13_P_DA_2_2 ()
+{
+	r_01_13_p_da_2_2	[Des dieux ancestraux et de leur descendance]
+}
+
+R_01_13_P_DA_2_1 ()
+{
+	r_01_13_p_da_2_1	[De notre ancienne capitale, des grands sages Zoraï et du nom de Jena]
+}
+
+R_01_13_P_BC_RETRY_1 ()
+{
+	r_01_13_p_bc_retry_1	[Malheureusement, as-tu seulement su répondre ?
+Les dieux sont témoins du contraire.
+
+Veux-tu que je te repose les questions, ou préferes-tu questionner les barmen a nouveau ?]
+}
+
+R_01_13_ANSWER_REGO_BARMEN ()
+{
+	r_01_13_answer_rego_barmen	[je vais les questionner]
+}
+
+R_01_13_ANSWER_REASK_QUESTIONS ()
+{
+	r_01_13_answer_reask_questions	[Reposez_moi les questions]
+}
+
+R_01_13_P_BC_DEBRIEF_1 ()
+{
+	r_01_13_p_bc_debrief_1	[Par tout nos ancetres, vous etes un véritable érudit !
+Vais-je vous remettre ce cube d'ambre ? Je pense que vous en etes digne.
+Que Jena veille sur vous.]
+}
+

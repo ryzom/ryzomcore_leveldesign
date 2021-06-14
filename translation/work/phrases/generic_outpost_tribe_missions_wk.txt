@@ -1,0 +1,327 @@
+﻿/*********************************************************************************************************************************************************
+*********************************						FORAGE AND QUARTER						**********************************************************
+********************************************************************************************************************************************************/
+/*
+OUTPOST_TRIBE_FORAGE_1
+
+*/
+OUTPOST_TRIBE_FORAGE_1_TITLE (bot giver)
+{
+		outpost_tribe_forage_1_title		[Foraging for the tribe.]
+
+}
+OUTPOST_TRIBE_FORAGE_1_DESC (bot giver, item rm1, item rm2)
+{
+		outpost_tribe_forage_1_desc		[Find some $rm1$ and some $rm2$ for the tribe.]
+}
+
+OUTPOST_TRIBE_FORAGE_1_STEP_1 (item rm1, item rm2)
+{
+		outpost_tribe_forage_1_step_1 		[My tribe needs an important quantity of materials for their craftsmen.{break}
+											If you could help us to find it we will be very grateful.\n
+											For now we need some $rm1$ and some $rm2$.]
+}
+
+OUTPOST_TRIBE_FORAGE_1_END ()
+{
+		outpost_tribe_forage_1_end 		[Nice, you are in the right way, you have to continue in the same way.]
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+OUTPOST_TRIBE_QUARTER_1
+
+*/
+OUTPOST_TRIBE_QUARTER_1_TITLE (bot giver)
+{
+		outpost_tribe_quarter_1_title		[Quartering for the tribe]
+
+}
+OUTPOST_TRIBE_QUARTER_1_DESC (bot giver, item rm1)
+{
+		outpost_tribe_quarter_1_desc		[quarter some $rm1$ for the tribe.]
+}
+
+OUTPOST_TRIBE_QUARTER_1_STEP_1 (item rm1)
+{
+		outpost_tribe_quarter_1_step_1 		[The $rm1$ is very useful for our tribe, with it we can craft some clothes for hard seasons.{break}
+											erudites of the tribe have forecasted a really rude winter by watching nature and stars.\n
+											We must start to caft some clothes as fast as possible.\n
+											To do this we need a high quantity of $rm1$, I will ask you to quarter some for us.\n
+											But time is couting down, you will have to be quick.\n
+											More you give us some $rm1$ more your reward will be nice.]
+}
+
+OUTPOST_TRIBE_QUARTER_1_END ()
+{
+		outpost_tribe_quarter_1_end 		[This is exactly what we need, thanks.]
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+OUTPOST_TRIBE_QUARTER_2
+
+*/
+OUTPOST_TRIBE_QUARTER_2_TITLE (bot giver)
+{
+		outpost_tribe_quarter_2_title		[Quartering food]
+
+}
+OUTPOST_TRIBE_QUARTER_2_DESC (bot giver, item rm1)
+{
+		outpost_tribe_quarter_2_desc		[Quarter some $rm1$ for the tribe.]
+}
+
+OUTPOST_TRIBE_QUARTER_2_STEP_1 (creature_model animal)
+{
+		outpost_tribe_quarter_2_step_1 		[Nos stocks de nourriture se réduisent, nous devons d'urgence les reconstituer.
+											Tuez quelques $animal$ et ramenez-nous leur viande.]
+}
+
+OUTPOST_TRIBE_QUARTER_2_END ()
+{
+		outpost_tribe_quarter_2_end 		[Merci, avec ça nous pourrons tenir un peu plus longtemps.]
+}
+
+/*********************************************************************************************************************************************************
+*********************************								CRAFT							**********************************************************
+********************************************************************************************************************************************************/
+/*
+OUTPOST_TRIBE_CRAFT_1
+
+*/
+OUTPOST_TRIBE_CRAFT_1_TITLE (bot giver)
+{
+		outpost_tribe_craft_1_title		[Crafting some jewelry for the tribe.]
+
+}
+OUTPOST_TRIBE_CRAFT_1_DESC (bot giver, item icmalg, item icmalb)
+{
+		outpost_tribe_craft_1_desc		[Craft some $icmalg$ and some $icmalb$ for the tribe.]
+}
+
+OUTPOST_TRIBE_CRAFT_1_STEP_1 (item icmalg, item icmalb)
+{
+		outpost_tribe_craft_1_step_1 		[Craftsmen of the tribe are very busy, they are unable to supply everybody.{break}
+											If you could help us the relation between you and my tribe will be a lot better.\n
+											For this time we need some $icmalg$ and some $icmalb$]
+}
+
+OUTPOST_TRIBE_CRAFT_1_END ()
+{
+		outpost_tribe_craft_1_end 		[You did a great job, these items are nice.\n
+										Thanks, in the name of my tribe.]
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+OUTPOST_TRIBE_CRAFT_2
+
+*/
+OUTPOST_TRIBE_CRAFT_2_TITLE (bot giver)
+{
+		outpost_tribe_craft_2_title		[Crafting some weapons for the tribe.]
+
+}
+OUTPOST_TRIBE_CRAFT_2_DESC (bot giver, item icmm1ss, item icmss)
+{
+		outpost_tribe_craft_2_desc		[Craft some $icmm1ss$ and $icmss$ for the tribe.]
+}
+
+OUTPOST_TRIBE_CRAFT_2_STEP_1 (item icmm1ss, item icmss)
+{
+		outpost_tribe_craft_2_step_1 		[Fighters of our tribe wants new equipment.{break}
+											Some safety problems stop our crafters to craft with serenity.\n
+											They can't supply enough weapons for our fighters, so our fighters can't protect effectively our crafters!.\n
+											I will ask you to craft some $icmm1ss$ and some $icmss$ for our fighters.]
+}
+
+OUTPOST_TRIBE_CRAFT_2_END ()
+{
+		outpost_tribe_craft_2_end 		[It's some nice equipment, thanks.]
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+OUTPOST_TRIBE_CRAFT_3
+*/
+OUTPOST_TRIBE_CRAFT_3_TITLE (bot giver, item vetement)
+{
+	outpost_tribe_craft_3_title			[Crafting some $vetement.p$]
+
+}
+
+OUTPOST_TRIBE_CRAFT_3_DESC (bot giver, item vetement)
+{
+	outpost_tribe_craft_3_desc		[La tribu a toujours besoin de vêtement solides et de bonne qualité : utilisez vos talents d'artisan 
+									pour fabriquer quelques $vetement.p$.]
+
+}
+
+OUTPOST_TRIBE_CRAFT_3_STEP_1 (item vetement)
+{
+//Tribu outpost mission giver
+	outpost_tribe_craft_3_step_1	[Les bons artisans sont plutôt rares. Nous en comptons plusieurs parmi notre tribu, et ils ont 
+									beaucoup de travail.{break} De par notre vie dans la nature, nous n'avons pas besoin d'habits faits de tissus fins 
+									et de broderies futiles, mais plutôt de vêtements solides et fonctionnels, qui ne se déchirent pas facilement. 
+									Aussi apprécions-nous le travail de qualité. Si tu peux fabriquer quelques $vetement.p$ de bonne facture, 
+									ils nous seraient très utiles.]
+
+}
+
+OUTPOST_TRIBE_CRAFT_3_END ()
+{
+//Tribu outpost mission giver
+	outpost_tribe_craft_3_end		[C'est du très bon travail ! Les artisans de notre tribu vont être admiratifs !]					 		
+
+}
+
+/*********************************************************************************************************************************************************
+*********************************								FIGHT							**********************************************************
+********************************************************************************************************************************************************/
+/*
+OUTPOST_TRIBE_FIGHT_1
+
+*/
+OUTPOST_TRIBE_FIGHT_1_TITLE (bot giver)
+{
+		outpost_tribe_fight_1_title		[Fighting for the tribe.]
+
+}
+OUTPOST_TRIBE_FIGHT_1_DESC (race ragus)
+{
+		outpost_tribe_fight_1_desc		[Help the tribe to make the vicinity safe by killing some $ragus$.]
+}
+
+OUTPOST_TRIBE_FIGHT_1_STEP_1 (race ragus)
+{
+		outpost_tribe_fight_1_step_1 		[As you could have seen, our members have a lot of difficulties to travel.{break}
+											The main difficulty is the presence of $ragus.p$.\n
+											these animals are agressive and attack our members!\n
+											Your help will be welcome.\n
+											Can you kill enough $ragus.p$ to make some safe places for our members?]
+}
+
+OUTPOST_TRIBE_FIGHT_1_END ()
+{
+		outpost_tribe_fight_1_end 		[Thanks, the roads are a little more safe now.]
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+OUTPOST_TRIBE_FIGHT_2
+*/
+OUTPOST_TRIBE_FIGHT_2_TITLE (bot giver, race kitin)
+{
+		outpost_tribe_fight_2_title		[The $kitin.p$: An universal menace.]
+
+}
+OUTPOST_TRIBE_FIGHT_2_DESC (bot giver, race kitin)
+{
+		outpost_tribe_fight_2_desc		[kill some $kitin.p$ for the safety of the tribe.]
+}
+
+OUTPOST_TRIBE_FIGHT_2_STEP_1 (race kitin)
+{
+		outpost_tribe_fight_2_step_1 		[$kitin.p$ are an universal menace, not only for our tribe but for all homins.{break}
+											Those who have to travel a lot are often some preys for $kitin.p$!\n
+											We have to do large detours to not cross their ways.\n
+											And when we unfortunatly have to encounter $kitin.p$ it's not rare to fight for saving our lives.\n
+											For the safety of our tribe and the safety of every Homin, kill some $kitin.p$!]
+}
+
+OUTPOST_TRIBE_FIGHT_2_END ()
+{
+		outpost_tribe_fight_2_end 		[Nice job! I hope that one day Atys will get rid of this menace.]
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+OUTPOST_TRIBE_FIGHT_3
+*/
+OUTPOST_TRIBE_FIGHT_3_TITLE (bot giver, race animal)
+{
+	outpost_tribe_fight_3_title			[War against $animal.p$]
+
+}
+
+OUTPOST_TRIBE_FIGHT_3_DESC (bot giver, race animal)
+{
+	outpost_tribe_fight_3_desc		[Rassemblez les gens de votre guilde, afin de combattre $animal.pda$ $animal.p$ qui pullulent dans la région 
+									et attaquent les membres de la tribu.]
+
+}
+
+OUTPOST_TRIBE_FIGHT_3_STEP_1 (race animal)
+{
+//Tribu outpost mission giver
+	outpost_tribe_fight_3_step_1	[La tribu rencontre un grand problème. Des meutes de $animal.p$ rôdent dans la région 
+									et attaquent ceux qui s'éloignent des campements.{break} Nos foragers prennent de grands risques pour trouver 
+									les produits naturels nécessaires à nos besoins. Ta guilde peut nous aider. Rassemblez vos forces, et combattez 
+									ces animaux féroces qui menacent notre tribu.]
+
+}
+
+OUTPOST_TRIBE_FIGHT_3_TALKMENU (bot current)
+{
+	outpost_tribe_fight_3_talkmenu	[Nous avons accompli notre tâche.]
+
+}
+
+OUTPOST_TRIBE_FIGHT_3_END ()
+{
+//Tribu outpost mission giver
+	outpost_tribe_fight_3_end		[Notre tribu vous remercie, toi et ta guilde, pour votre aide. Nous saurons nous en souvenir.]					 		
+
+}
+
+/*********************************************************************************************************************************************************
+*********************************								ESCORT							**********************************************************
+********************************************************************************************************************************************************/
+/*
+OUTPOST_TRIBE_ESCORT_1
+*/
+OUTPOST_TRIBE_ESCORT_1_TITLE (bot giver)
+{
+	outpost_tribe_escort_1_title			[Escort a tribe member to the outpost]
+
+}
+
+OUTPOST_TRIBE_ESCORT_1_DESC (bot giver)
+{
+	outpost_tribe_escort_1_desc		[Un membre de la tribu se trouvant dans un village doit revenir de toute urgence à l'avant-poste : 
+												vous allez l'escorter sur le chemin du retour.]
+
+}
+
+OUTPOST_TRIBE_ESCORT_1_STEP_1 (bot target, place village)
+{
+//Tribu outpost mission giver
+	outpost_tribe_escort_1_step_1	[Un membre de notre tribu, $target$, a dû se rendre au village de $village$, et il doit rentrer de toute 
+												urgence.{break} Mais les routes ne sont pas sûres, et nous craignons qu'il ne lui arrive malheur 
+												en chemin. Tu sembles digne de confiance. Peux-tu te rendre là-bas et l'escorter jusqu'ici ? 
+												Sois prompt, $target$ doit être de retour dans les plus brefs délais.]
+
+}
+
+OUTPOST_TRIBE_ESCORT_1_STEP_2 (bot target)
+{
+//Membre de la tribu
+	outpost_tribe_escort_1_step_2	[Vous êtes envoyé par la tribu ? Très bien, partons sans tarder !]
+
+}
+
+OUTPOST_TRIBE_ESCORT_CUSTOM_OBJ_1 (bot target)
+{
+	outpost_tribe_escort_custom_obj_1	[Escorter $target$ jusqu'à l'avant-poste]
+
+}
+
+OUTPOST_TRIBE_ESCORT_1_END (bot target)
+{
+//Tribu outpost mission giver
+	outpost_tribe_escort_1_end		[Tu as été rapide, et $target$ est arrivé sain et sauf. Toi et les tiens grandissez dans notre estime.]					 		
+
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

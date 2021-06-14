@@ -1,0 +1,50 @@
+﻿R_10_11_MIS_TITLE (bot giver)
+{
+	r_10_11_mis_title	[L'Apprentissage de la foi]
+}
+
+R_10_11_MIS_DESC (bot giver)
+{
+	r_10_11_mis_desc	[Vous allez accomplir une cérémonie Kami pour prouver votre foi.]
+}
+
+R_10_11_P_LDF_INTRO (bot kami_master, bot player)
+{
+	r_10_11_p_ldf_intro	[Salut à toi, $player$ ! Comme tu le sais, nous, Zoraïs, vénérons et respectons la parole des Kamis. Nous avons rejeté Jena et la Karavan depuis longtemps. Nous proclamons notre foi envers les Kamis non seulement dans chacun de nos actes, mais aussi en accomplissant des cérémonies d'offrande. Si ton souhait est de prouver ton attachement envers le peuple zoraï et les Kamis, alors ta ferveur pourra s'exprimer à travers l'une de ces cérémonies sacrées. À l'issue du rituel, tu seras prêt à recevoir la bénédiction des Kamis, pour que la sève qui t'habite grandisse à l'image de ta foi. Je te donnerai moi-même un cube d'ambre, qui t'enseignera les bases de notre religion. Pour en savoir plus sur la cérémonie, cherche conseil auprès du $kami_master$. Que Ma-Duk te guide, $player$ !]
+}
+
+R_10_11_P_T2_INTRO (bot kami_master)
+{
+	r_10_11_p_t2_intro	[J'aimerais accomplir le rituel d'offrande aux Kamis]
+}
+
+R_10_11_P_BC_RITUEL (bot marchand_2hm)
+{
+	r_10_11_p_bc_rituel	[De voir les homins suivre leurs préceptes, les Kamis sont heureux. Des gants de magicien il te faut créer, puis avec ces gants de la sève tu dois déverser, avant de m'en faire don. Alors hommage à la magie des Kamis tu auras rendu. {break} $marchand_2hm$ sait comment fabriquer les gants, aller le voir tu devrais.]
+}
+
+R_10_11_P_T2_LEARN (bot marchand_2hm)
+{
+	r_10_11_p_t2_learn	[Comment fabriquer des gants de mage ?]
+}
+
+R_10_11_P_BC_LEARN (item item_to_loot, item mp_to_forage_1, item mp_to_forage_2, item mp_to_forage_3, place place_op_08, place place_op_11, place place_op_14, int qty_forage_1, int qty_forage_2, int qty_forage_3, int qty_loot, place region_maiden)
+{
+	r_10_11_p_bc_learn	[Si vous suivez mes instructions, vous pourrez trouver rapidement les matières dont vous aurez besoin. Il vous faut récolter $qty_forage_1$ $mp_to_forage_1$ et $qty_forage_2$ $mp_to_forage_2$. Enfin, vous aurez besoin de $qty_forage_3$ $mp_to_forage_3$, ou bien de récupérer $qty_loot$ $item_to_loot$. {break} Toutes ces matières se trouvent dans $region_maiden$. Vous trouverez un gisement de $mp_to_forage_1$ à environ cent mètres à l'est de $place_op_11$. J'ai déjà vu un gisement de $mp_to_forage_2$ au sud-est de $place_op_14$, peut-être à cent ou cent cinquante mètres. {break} Le dernier filon de $mp_to_forage_3$ que j'ai exploité se trouvait à cent mètres au nord de $place_op_08$. C'est tout ce que je peux vous apprendre, je vous souhaite bonne chance dans vos recherches !]
+}
+
+R_10_11_P_BC_GIVE (bot givervar)
+{
+	r_10_11_p_bc_give	[Ta dévotion est grande, $self$. Les Kamis ton offrande acceptent. Maintenant, aller parler à $givervar$ tu dois.]
+}
+
+R_10_11_P_T2_DEBRIEF (bot giver)
+{
+	r_10_11_p_t2_debrief	[J'ai accompli le rituel]
+}
+
+R_10_11_P_BC_DEBRIEF (bot player)
+{
+	r_10_11_p_bc_debrief	[J'en suis heureux, $player$. Les Kamis et moi-même sommes ravis de constater que le temps n'a pas altéré ta foi. Tu as bien mérité de partager avec moi l'histoire de notre religion. Prends le temps de consulter ce cube d'ambre. Reçois aussi la bénédiction des Kamis, que ta sève soit purifiée et grandisse comme un jeune arbre plein de vie.]
+}
+

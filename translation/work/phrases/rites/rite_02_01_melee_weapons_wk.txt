@@ -1,0 +1,40 @@
+﻿R_02_01_MIS_TITLE (bot giver)
+{
+	r_02_01_mis_title	[L'art de la forge des armes de melée]
+}
+
+R_02_01_MIS_DESC (bot giver)
+{
+	r_02_01_mis_desc	[Aprennez a forger toutes les armes de melée.]
+}
+
+R_02_01_P_LDF_INTRO_1 (place forge, bot forgeron_1)
+{
+	r_02_01_p_ldf_intro_1	[The Fyros are very skilled at forging axes that are so powerful they can fell a tree in just one blow.{break} If you train with the master smiths, you can learn how to make a real Fyros axe. Your first trainer goes by the name of $forgeron_1$. You'll find him in $forge.da$ $forge$.]
+}
+
+R_02_01_P_BC_FORGERON_1 ()
+{
+	r_02_01_p_bc_forgeron_1	[Tu viens pour apprendre les arts de la forge Fyros ? Encore faut-il commencer par la base. Si tu connais la manière de fabriquer un hache, montre moi ce que tu sais faire.]
+}
+
+R_02_01_P_BC_FORGERON_1A ()
+{
+	r_02_01_p_bc_forgeron_1a	[Très bien effectué. Montre moi maintenant si tu sais fabriquer une épée à deux mains correctement.]
+}
+
+R_02_01_P_BC_FORGERON_1B (place forge, bot forgeron_2)
+{
+	r_02_01_p_bc_forgeron_1b	[Nice job. Looks like you're ready to meet the most eminent smithy in town. Go and see $forgeron_2$ from me. She's the only one capable to train you as you deserve. She's somewhere in $forge.da$ $forge$.]
+}
+
+R_02_01_P_BC_FORGERON_2 (bot forgeron_1)
+{
+	r_02_01_p_bc_forgeron_2	[Tu viens de la part de $forgeron_1$ ? S'il t'envoie à moi c'est que tu en es digne de connaître les techniques de fabrications de nos armes ancestrales. Néanmoins, pour bien les comprendre, il faut maîtriser la forge des haches à deux mains. Es-tu capable d'en fabriquer une d'assez bonne facture ?]
+}
+
+R_02_01_P_BC_DEBRIEF_1 ()
+{
+	r_02_01_p_bc_debrief_1	[Cette arme est très tranchante et bien équilibrée. Tu es à meme de comprendre mon enseignement. Puisses-tu l'utiliser dans le respect et l'honneur de nos traditions.]
+}
+

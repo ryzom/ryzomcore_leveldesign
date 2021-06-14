@@ -1,0 +1,90 @@
+﻿R_12_11_MIS_TITLE (bot giver)
+{
+	r_12_11_mis_title	[Une offrande pour la grande cérémonie]
+}
+
+R_12_11_MIS_DESC (bot giver, faction fact_karavan)
+{
+	r_12_11_mis_desc	[Réunir les éléments nécéssaires pour une offrande à $fact_karavan.da$ $fact_karavan$]
+}
+
+R_12_11_P_LDCF_INTRO (faction fact_karavan, faction fact_matis, place lieu_fairhaven, place lieu_lorias_place)
+{
+	r_12_11_p_ldcf_intro	[Je vous salue ! Un grand événement se prépare, mais j'imagine que vous devez être au courant : la grande cérémonie d'offrande à la $fact_karavan$. Nous devons honorer les émissaires de notre Déesse Jena comme ils le méritent. Surpassons-nous, montrons leur qu'il n'y pas plus fervents adorateurs que nous, pas même les $fact_matis.member$. Prouvons-leur notre complète fidélité.{break}Pour cela, je vous confie la lourde tache de réunir tous les éléments d'une offrande digne de leur rang. Je vous conseille vivement d'aller dans le quartier de $lieu_lorias_place$ à $lieu_fairhaven$, c'est là que se font les cérémonies, vous y trouverez de nombreux fidèles qui ont pour habitude de faire régulièrement des offrandes à la $fact_karavan$. Ils pourront vous renseigner sur le type de dons que vous pourrez réunir.{break}Une fois que vous aurez réuni tous les éléments nécessaires, apportez-les à l'intendant de $lieu_fairhaven$, c'est lui qui se charge d'organiser la cérémonie.{break}Menez cette mission à bien et je vous enseignerai une technique pour forger des armes moins encombrantes.]
+}
+
+R_12_11_P_OVL_RENSEIGNEMENTS (place lieu_fairhaven, place lieu_lorias_place)
+{
+	r_12_11_p_ovl_renseignements	[Glaner des informations auprès des habitants dans le quartier de $lieu_lorias_place$ à $lieu_fairhaven$]
+}
+
+R_12_11_P_T2_PROM_MATIS (bot promeneur_matis, faction fact_karavan)
+{
+	r_12_11_p_t2_prom_matis	[Bonjour, on ma chargé de préparer la cérémonie pour la $fact_karavan$]
+}
+
+R_12_11_P_BC_PROM_MATIS (faction fact_karavan)
+{
+	r_12_11_p_bc_prom_matis	[On vous a chargé d'une mission bien noble. J'espère que vous la mènerez à bien, avec dignité.{break}Si je peux me permettre de vous conseiller, votre peuple peut se vanter d'avoir d'excellents orfèvres, profitez-en ! La $fact_karavan$ ne pourra qu'apprécier des bijoux de grande valeur.]
+}
+
+R_12_11_P_T2_PROM_ZORAI (bot promeneur_zorai, faction fact_karavan)
+{
+	r_12_11_p_t2_prom_zorai	[Bonjour, on ma chargé de préparer la cérémonie pour la $fact_karavan$]
+}
+
+R_12_11_P_BC_PROM_ZORAI (faction fact_kami, faction fact_karavan)
+{
+	r_12_11_p_bc_prom_zorai	[Comment pouvez-vous être fidèles à la $fact_karavan$ ?{break}Ces êtres profitent de votre naïveté et de leurs avancées technologiques pour vous asservir. Je ne connais pas leurs desseins à long terme, mais je ne pense pas qu'ils se préoccupent vraiment du bien être de notre patrimoine naturel.{break}De plus, l'autel ici présent, qui était autrefois un lieu de culte $fact_kami$, a été injustement annexé par la $fact_karavan$, prouvant ainsi leur intolérance et leurs habitudes belliqueuses.{break}Si vous ne savez pas quoi leur offrir, donnez-leur du poison.]
+}
+
+R_12_11_P_T2_PROM_TRYKER_01 (bot promeneur_tryker_01, faction fact_karavan)
+{
+	r_12_11_p_t2_prom_tryker_01	[Bonjour, on ma chargé de préparer la cérémonie pour la $fact_karavan$]
+}
+
+R_12_11_P_BC_PROM_TRYKER_01 (faction fact_karavan, place lieu_enchanted_isle)
+{
+	r_12_11_p_bc_prom_tryker_01	[Je viens souvent ici faire des offrandes à la $fact_karavan$. Pour ma part, j'ai pris pour habitude de leur apporter des mets fins.{break}Mais si vous me parlez d'une grande cérémonie, je vous conseille de vous aventurer dans la région de $lieu_enchanted_isle$, il faut être un chasseur aguerri, mais vous y trouverez du gibier de choix.]
+}
+
+R_12_11_P_T2_PROM_TRYKER_02 (bot promeneur_tryker_02, faction fact_karavan)
+{
+	r_12_11_p_t2_prom_tryker_02	[Bonjour, on ma chargé de préparer la cérémonie pour la $fact_karavan$]
+}
+
+R_12_11_P_BC_PROM_TRYKER_02 ()
+{
+	r_12_11_p_bc_prom_tryker_02	[Les émissaires de Jena apprécient grandement notre artisanat, vous savez ? Nous pouvons être fiers de la finesse de nos bijoux.{break}Si vous n'ètes pas vous même artisan, achetez en, les bijoutiers sont nombreux dans la région.]
+}
+
+R_12_11_P_OVL_ORGANISATEUR (bot organisateur, place lieu_fairhaven)
+{
+	r_12_11_p_ovl_organisateur	[Ramener les éléments de l'offrande à $organisateur$, l'intendant de $lieu_fairhaven$]
+}
+
+R_12_11_P_T2_ORGANISATEUR (bot organisateur)
+{
+	r_12_11_p_t2_organisateur	[Bonjour, je vous apporte les éléments de l'offrande]
+}
+
+R_12_11_P_BC_ORGANISATEUR ()
+{
+	r_12_11_p_bc_organisateur	[C'est parfait, merci bien ! Vous avez fait du bon travail.]
+}
+
+R_12_11_P_T2_DEBRIEF (bot givervar, place lieu_windermeer)
+{
+	r_12_11_p_t2_debrief	[Retourner voir $givervar$, le sage de $lieu_windermeer$]
+}
+
+R_12_11_P_T2_DEBRIEF (bot givervar)
+{
+	r_12_11_p_t2_debrief	[Bonjour, j'ai accompli ma mission.]
+}
+
+R_12_11_P_BC_DEBRIEF (faction fact_karavan)
+{
+	r_12_11_p_bc_debrief	[Très bien, la $fact_karavan$ devrait être satisfaite de nos efforts. Et voici votre récompense.]
+}
+

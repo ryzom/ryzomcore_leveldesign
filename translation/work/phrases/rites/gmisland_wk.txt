@@ -1,0 +1,317 @@
+﻿CIV_CULT_GIVER_MISSION_1_P_MIS_TITLE (bot giver)
+{
+	civ_cult_giver_mission_1_p_mis_title	[Changement culte ou citoyenneté]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_MIS_DESC (bot giver)
+{
+	civ_cult_giver_mission_1_p_mis_desc	[Vous permet de changer de culte ou citoyenneté.]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_MIS_MENU ()
+{
+	civ_cult_giver_mission_1_p_mis_menu	[Je désire changer de culte ou de citoyenneté]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_CHOOSE_CIV ()
+{
+	civ_cult_giver_mission_1_p_choose_civ	[Ainsi, tu souhaites changer de culte ou de citoyenneté ? Eh bien, fait ton choix.]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_CHOOSE_CIV_FYROS_ASW ()
+{
+	civ_cult_giver_mission_1_p_choose_civ_fyros_asw	[Fyros]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_CHOOSE_CIV_MATIS_ASW ()
+{
+	civ_cult_giver_mission_1_p_choose_civ_matis_asw	[Matis]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_CHOOSE_CIV_TRYKER_ASW ()
+{
+	civ_cult_giver_mission_1_p_choose_civ_tryker_asw	[Tryker]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_CHOOSE_CIV_ZORAI_ASW ()
+{
+	civ_cult_giver_mission_1_p_choose_civ_zorai_asw	[Zoraï]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_CHOOSE_NEUTRAL_CIV_ASW ()
+{
+	civ_cult_giver_mission_1_p_choose_neutral_civ_asw	[Apatride]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_CHOOSE_FAME_KAMI_ASW ()
+{
+	civ_cult_giver_mission_1_p_choose_fame_kami_asw	[Kami]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_CHOOSE_FAME_KARAVAN_ASW ()
+{
+	civ_cult_giver_mission_1_p_choose_fame_karavan_asw	[Karavan]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_CHOOSE_NEUTRAL_CULT_ASW ()
+{
+	civ_cult_giver_mission_1_p_choose_neutral_cult_asw	[Neutre]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_BE_FYROS ()
+{
+	civ_cult_giver_mission_1_p_be_fyros	[Confirmes-tu ton choix de devenir patriote Fyros ?]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_BE_YES_ASW ()
+{
+	civ_cult_giver_mission_1_p_be_yes_asw	[Oui]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_END_FYROS ()
+{
+	( self.gender = male )
+		civ_cult_giver_mission_1_p_end_fyros_m	[Félicitations, $self$. Tu es à présent un patriote Fyros !]
+	( self.gender = female )
+		civ_cult_giver_mission_1_p_end_fyros_f	[Félicitations, $self$. Tu es à présent une patriote Fyros !]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_BE_MATIS ()
+{
+	( self.gender = male )
+		civ_cult_giver_mission_1_p_be_matis_m	[Confirmes-tu ton choix de devenir sujet Matis ?]
+	( self.gender = female )
+		civ_cult_giver_mission_1_p_be_matis_f	[Confirmes-tu ton choix de devenir sujette Matis ?]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_END_MATIS ()
+{
+	( self.gender = male )
+		civ_cult_giver_mission_1_p_end_matis_m	[Félicitations, $self$. Tu es à présent un sujet Matis !]
+	( self.gender = female )
+		civ_cult_giver_mission_1_p_end_matis_f	[Félicitations, $self$. Tu es à présent une sujette Matis !]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_BE_TRYKER ()
+{
+	( self.gender = male )
+		civ_cult_giver_mission_1_p_be_tryker_m	[Confirmes-tu ton choix de devenir citoyen Tryker ?]
+	( self.gender = female )
+		civ_cult_giver_mission_1_p_be_tryker_f	[Confirmes-tu ton choix de devenir citoyenne Tryker ?]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_END_TRYKER ()
+{
+	( self.gender = male )
+		civ_cult_giver_mission_1_p_end_tryker_m	[Félicitations, $self$. Tu es à présent un citoyen Tryker !]
+	( self.gender = female )
+		civ_cult_giver_mission_1_p_end_tryker_f	[Félicitations, $self$. Tu es à présent une citoyenne Tryker !]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_BE_ZORAI ()
+{
+	( self.gender = male )
+		civ_cult_giver_mission_1_p_be_zorai_m	[Confirmes-tu ton choix de devenir initié Zoraï ?]
+	( self.gender = female )
+		civ_cult_giver_mission_1_p_be_zorai_f	[Confirmes-tu ton choix de devenir initiée Zoraï ?]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_END_ZORAI ()
+{
+	( self.gender = male )
+		civ_cult_giver_mission_1_p_end_zorai_m	[Félicitations, $self$. Tu es à présent un initié Zoraï !]
+	( self.gender = female )
+		civ_cult_giver_mission_1_p_end_zorai_f	[Félicitations, $self$. Tu es à présent une initiée Zoraï !]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_BE_NEUTRAL_CIV ()
+{
+	civ_cult_giver_mission_1_p_be_neutral_civ	[Confirmes-tu ton choix de devenir apatride ?]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_END_NEUTRAL_CIV ()
+{
+	civ_cult_giver_mission_1_p_end_neutral_civ	[Félicitations, $self$. Tu es à présent apatride !]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_BE_KAMI ()
+{
+	civ_cult_giver_mission_1_p_be_kami	[Confirmes-tu ton choix de devenir kamiste ?]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_END_KAMI ()
+{
+	civ_cult_giver_mission_1_p_end_kami	[Félicitations, $self$. Tu es à présent kamiste !]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_BE_KARAVAN ()
+{
+	( self.gender = male )
+		civ_cult_giver_mission_1_p_be_karavan_m	[Confirmes-tu ton choix de devenir karavanier ?]
+	( self.gender = female )
+		civ_cult_giver_mission_1_p_be_karavan_f	[Confirmes-tu ton choix de devenir karavanière ?]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_END_KARAVAN ()
+{
+	( self.gender = male )
+		civ_cult_giver_mission_1_p_end_karavan_m	[Félicitations, $self$. Tu es à présent karavanier !]
+	( self.gender = female )
+		civ_cult_giver_mission_1_p_end_karavan_f	[Félicitations, $self$. Tu es à présent karavanière !]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_BE_NEUTRAL_CULT ()
+{
+	civ_cult_giver_mission_1_p_be_neutral_cult	[Confirmes-tu ton choix de devenir neutre ?]
+}
+
+CIV_CULT_GIVER_MISSION_1_P_END_NEUTRAL_CULT ()
+{
+	civ_cult_giver_mission_1_p_end_neutral_cult	[Félicitations, $self$. Tu es à présent neutre !]
+}
+
+GUILDCIVCULT_MISSION_1_P_MIS_TITLE (bot giver)
+{
+	guildcivcult_mission_1_p_mis_title	[Change guild cult or citizenship]
+}
+
+GUILDCIVCULT_MISSION_1_P_MIS_DESC (bot giver)
+{
+	guildcivcult_mission_1_p_mis_desc	[Lets you change your guild's cult or citizenship.]
+}
+
+GUILDCIVCULT_MISSION_1_P_MIS_MENU ()
+{
+	guildcivcult_mission_1_p_mis_menu	[I want to change my guild's cult or citizenship]
+}
+
+GUILDCIVCULT_MISSION_1_P_CHOOSE_CIV ()
+{
+	guildcivcult_mission_1_p_choose_civ	[If you want to change your guild's cult or citizenship, you've come to the right place.]
+}
+
+GUILDCIVCULT_MISSION_1_P_CHOOSE_CIV_FYROS_ASW ()
+{
+	guildcivcult_mission_1_p_choose_civ_fyros_asw	[Fyros]
+}
+
+GUILDCIVCULT_MISSION_1_P_CHOOSE_CIV_MATIS_ASW ()
+{
+	guildcivcult_mission_1_p_choose_civ_matis_asw	[Matis]
+}
+
+GUILDCIVCULT_MISSION_1_P_CHOOSE_CIV_TRYKER_ASW ()
+{
+	guildcivcult_mission_1_p_choose_civ_tryker_asw	[Tryker]
+}
+
+GUILDCIVCULT_MISSION_1_P_CHOOSE_CIV_ZORAI_ASW ()
+{
+	guildcivcult_mission_1_p_choose_civ_zorai_asw	[Zoraï]
+}
+
+GUILDCIVCULT_MISSION_1_P_CHOOSE_NEUTRAL_CIV_ASW ()
+{
+	guildcivcult_mission_1_p_choose_neutral_civ_asw	[Neutral citizenship]
+}
+
+GUILDCIVCULT_MISSION_1_P_CHOOSE_FAME_KAMI_ASW ()
+{
+	guildcivcult_mission_1_p_choose_fame_kami_asw	[Kami]
+}
+
+GUILDCIVCULT_MISSION_1_P_CHOOSE_FAME_KARAVAN_ASW ()
+{
+	guildcivcult_mission_1_p_choose_fame_karavan_asw	[Karavan]
+}
+
+GUILDCIVCULT_MISSION_1_P_CHOOSE_NEUTRAL_CULT_ASW ()
+{
+	guildcivcult_mission_1_p_choose_neutral_cult_asw	[Neutral cult]
+}
+
+GUILDCIVCULT_MISSION_1_P_BE_FYROS ()
+{
+	guildcivcult_mission_1_p_be_fyros	[Are you sure you want your guild to be a Fyros guild?]
+}
+
+GUILDCIVCULT_MISSION_1_GBE_YES_ASW ()
+{
+	guildcivcult_mission_1_gbe_yes_asw	[Yes]
+}
+
+GUILDCIVCULT_MISSION_1_P_END_FYROS ()
+{
+	guildcivcult_mission_1_p_end_fyros	[Alright, $self$, your guild is now a Fyros guild.]
+}
+
+GUILDCIVCULT_MISSION_1_P_BE_MATIS ()
+{
+	guildcivcult_mission_1_p_be_matis	[Are you sure you want your guild to be a Matis guild?]
+}
+
+GUILDCIVCULT_MISSION_1_P_END_MATIS ()
+{
+	guildcivcult_mission_1_p_end_matis	[Alright, $self$, your guild is now a Matis guild.]
+}
+
+GUILDCIVCULT_MISSION_1_P_BE_TRYKER ()
+{
+	guildcivcult_mission_1_p_be_tryker	[Are you sure you want your guild to be a Tryker guild?]
+}
+
+GUILDCIVCULT_MISSION_1_P_END_TRYKER ()
+{
+	guildcivcult_mission_1_p_end_tryker	[Alright, $self$, your guild is now a Tryker guild.]
+}
+
+GUILDCIVCULT_MISSION_1_P_BE_ZORAI ()
+{
+	guildcivcult_mission_1_p_be_zorai	[Are you sure you want your guild to be a Zoraï guild?]
+}
+
+GUILDCIVCULT_MISSION_1_P_END_ZORAI ()
+{
+	guildcivcult_mission_1_p_end_zorai	[Alright, $self$, your guild is now a Zoraï guild.]
+}
+
+GUILDCIVCULT_MISSION_1_P_BE_NEUTRAL_CIV ()
+{
+	guildcivcult_mission_1_p_be_neutral_civ	[Are you sure you want your guild to have no citizenship?]
+}
+
+GUILDCIVCULT_MISSION_1_P_END_NEUTRAL_CIV ()
+{
+	guildcivcult_mission_1_p_end_neutral_civ	[Alright, $self$, your guild is now of no citizenship.]
+}
+
+GUILDCIVCULT_MISSION_1_P_BE_KAMI ()
+{
+	guildcivcult_mission_1_p_be_kami	[Are you sure you want your guild to be a Kami guild?]
+}
+
+GUILDCIVCULT_MISSION_1_P_END_KAMI ()
+{
+	guildcivcult_mission_1_p_end_kami	[Alright, $self$, your guild is now a Kami guild.]
+}
+
+GUILDCIVCULT_MISSION_1_P_BE_KARAVAN ()
+{
+	guildcivcult_mission_1_p_be_karavan	[Are you sure you want your guild to be a Karavan guild?]
+}
+
+GUILDCIVCULT_MISSION_1_P_END_KARAVAN ()
+{
+	guildcivcult_mission_1_p_end_karavan	[Alright, $self$, your guild is now a Karavan guild.]
+}
+
+GUILDCIVCULT_MISSION_1_P_BE_NEUTRAL_CULT ()
+{
+	guildcivcult_mission_1_p_be_neutral_cult	[Are you sure you want your guild to have no cult?]
+}
+
+GUILDCIVCULT_MISSION_1_P_END_NEUTRAL_CULT ()
+{
+	guildcivcult_mission_1_p_end_neutral_cult	[Alright, $self$, your guild is now of no cult.]
+}
+

@@ -1,0 +1,683 @@
+﻿MISSION_MATIS_01_MIS_TITLE (bot giver)
+{
+	mission_matis_01_mis_title	[Un futur artisan #1]
+}
+
+MISSION_MATIS_01_MIS_DESC (bot giver)
+{
+	mission_matis_01_mis_desc	[Apprendre les bases en fabriquant des bottes.]
+}
+
+MISSION_MATIS_01_P_LDC_INTRO (faction faction_fyros, faction faction_matis, faction faction_tryker, faction faction_zorai, bot givervar)
+{
+	( self.gender = male )
+		mission_matis_01_p_ldc_intro_m	[Qu'avons-nous là ? Un nouvel arrivant. Je me présente : mon nom est $givervar$, je suis le représentant du peuple Matis sur cette île maudite. Regarde autour de toi le misérable campement dans lequel nous nous entassons, logés à la même enseigne que les autres peuplades Homines. Prisonnier de cette île, je suis obligé de côtoyer $faction_fyros.mda$ $faction_fyros.member$, barbares du désert qui ne jurent que par les armes, $faction_tryker.mda$ $faction_tryker.member$, sous race autrefois esclaves $faction_matis.mia$ $faction_matis.member$ et $faction_zorai.mda$ $faction_zorai.member$, fous mystiques adeptes de Ma-Duk. {break}Mais mon peuple, le fier peuple $faction_matis.name$, m'a assigné la lourde tâche d'enseigner l'artisanat à tout Homin qui le désire, et ce, quelque soit sa race. Si tu penses que l'on peut rebâtir une civilisation par la simple force de l'épée, alors je ne peux rien faire pour toi, tu te trompes d'interlocuteur. Mais si tu es bien là pour apprendre l'artisanat, je me ferais un devoir de te former. Les Matis ont su prouver aux autres peuples leur supériorité par leur raffinement et leur intelligence. Nous sommes de grands bâtisseurs et savons mieux que quiconque nous servir de nos mains pour faire de la matière brute des objets civilisés.{break}Allons-y ! Je te préviens, je n'aime pas perdre mon temps, il te faudra être assidu.]
+	( self.gender = female )
+		mission_matis_01_p_ldc_intro_f	[Qu'avons-nous là ? Une nouvelle arrivante. Je me présente : mon nom est $givervar$, je suis le représentant du peuple Matis sur cette île maudite. Regarde autour de toi le misérable campement dans lequel nous nous entassons, logés à la même enseigne que les autres peuplades Homines. Prisonnier de cette île, je suis obligé de côtoyer $faction_fyros.mda$ $faction_fyros.member$, barbares du désert qui ne jurent que par les armes, $faction_tryker.mda$ $faction_tryker.member$, sous race autrefois esclaves $faction_matis.mia$ $faction_matis.member$ et $faction_zorai.mda$ $faction_zorai.member$, fous mystiques adeptes de Ma-Duk. {break}Mais mon peuple, le fier peuple $faction_matis.name$, m'a assigné la lourde tâche d'enseigner l'artisanat à tout Homin qui le désire, et ce, quelque soit sa race. Si tu penses que l'on peut rebâtir une civilisation par la simple force de l'épée, alors je ne peux rien faire pour toi, tu te trompes d'interlocuteur. Mais si tu es bien là pour apprendre l'artisanat, je me ferais un devoir de te former. Les Matis ont su prouver aux autres peuples leur supériorité par leur raffinement et leur intelligence. Nous sommes de grands bâtisseurs et savons mieux que quiconque nous servir de nos mains pour faire de la matière brute des objets civilisés.{break}Allons-y ! Je te préviens, je n'aime pas perdre mon temps, il te faudra être assidu.]
+}
+
+MISSION_MATIS_01_P_LDC_CONTINUE ()
+{
+	mission_matis_01_p_ldc_continue	[Avant de traiter de choses compliquées, montre moi que tu es capable du plus simple : fabrique moi une paire de bottes, tu as l'outil qu'il te faut et même le plus stupide des Homins en a la capacité. Prends ces matières premières, elles sont de piètre qualité mais ont l'avantage de servir pour absolument tout type d'objet. Accomplis cette tâche et reviens me voir par la suite.]
+}
+
+MISSION_MATIS_01_P_OVL_ANY_BOTTES ()
+{
+	mission_matis_01_p_ovl_any_bottes	[Fabriquez une paire de bottes de qualité 5]
+}
+
+MISSION_MATIS_01_P_BOXTITLE_CRAFT ()
+{
+	mission_matis_01_p_boxtitle_craft	[Fabriquer un objet]
+}
+
+MISSION_MATIS_01_P_MSGBOX_CRAFT ()
+{
+	mission_matis_01_p_msgbox_craft	[@{W400}Pour fabriquer un objet, vous devez tout d'abord placer l'outil adéquat dans votre main droite. Pour ce faire, faites un clic gauche sur l'emplacement le plus à droite de votre Barre d'Actions. Puis sélectionnez l'outil souhaité parmi ceux dont vous disposez.\n\nDans le cas présent, vous devez créer une paire de bottes, cet élément étant une pièce d'armure, vous devez sélectionner @{F90F}l'Outil de Création d'Armure@{FFFF}.\n\nMaintenant que vous vous êtes muni de votre outil, vous devez lancer une action de fabrication. Vos actions se trouvent au centre de la Barre d'actions.\n\nPour créer une paire de bottes, cliquez sur @{F90F}l'action Création d'Armures@{FFFF}. Dans la fenêtre @{F90F}Créer un Objet@{FFFF} qui vient d'apparaître, cliquez sur le petit encart en haut à gauche et sélectionnez le plan correspondant à l'objet que vous voulez fabriquer. Attribuez ensuite des matériaux aux différentes parties de votre objet en cliquant successivement sur tous les encarts correspondants (exemple : doublure, rembourrage, etc). Lorsque tous les encarts sont remplis, vous n'avez plus qu'à cliquer sur l'icône @{F90F}Fabriquer l'Objet@{FFFF} située en bas à droite.\n\nAttention : il se peut que votre tentative de créer l'objet échoue. S'il s'agit d'un échec partiel, vos matières premières sont consommées et l'objet obtenu est de moindre qualité. Si l'échec est total, vous ne perdez rien et ne recevez rien, il ne vous reste alors plus qu'à recommencer.]
+}
+
+MISSION_MATIS_01_P_OVL_ANY_GIVE_BOOTS (bot givervar)
+{
+	mission_matis_01_p_ovl_any_give_boots	[Donnez la paire de bottes à $givervar$.]
+}
+
+MISSION_MATIS_01_P_LDC_BOTTES ()
+{
+	mission_matis_01_p_ldc_bottes	[Bien, mais il n'y a pas vraiment de quoi pavoiser, la couture est grossière et la qualité globale de l'objet est vraiment médiocre. Cela dit, il faut bien débuter un jour, tu en es encore à tes premiers pas et je ne m'attendais pas à mieux pour un premier essai. Nous allons pouvoir commencer ta formation.]
+}
+
+MISSION_MATIS_01_P_MSG_FAILED_MPS (bot givervar)
+{
+	mission_matis_01_p_msg_failed_mps	[Vous n'avez pas assez de place dans votre inventaire pour recevoir les objets de $givervar$. Faites de la place et parler lui.]
+}
+
+MISSION_MATIS_01_P_T2_FAILED_RECEIVE (bot givervar)
+{
+	mission_matis_01_p_t2_failed_receive	[J'ai libéré un peu mon inventaire]
+}
+
+MISSION_MATIS_01_P_BC_INVENTORY_OK ()
+{
+	mission_matis_01_p_bc_inventory_ok	[Bien, voilà ce que je tenais à te donner.]
+}
+
+MISSION_MATIS_02_MIS_TITLE (bot giver)
+{
+	mission_matis_02_mis_title	[Un futur artisan #2]
+}
+
+MISSION_MATIS_02_MIS_DESC (bot giver)
+{
+	mission_matis_02_mis_desc	[Acheter des matières premières et les utiliser pour crafter des bottes.]
+}
+
+MISSION_MATIS_02_P_LDC_INTRO ()
+{
+	mission_matis_02_p_ldc_intro	[Pour fabriquer un objet de bonne qualité, il ne te suffit pas d'avoir l'outil approprié ni même la compétence. Le premier souci de tout artisan est de trouver les bonnes matières premières. Il faut bien évidemment qu'elles correspondent au type d'objet que l'on souhaite fabriquer : par exemple, pour créer le rembourrage d'une pièce d'armure tu peux utiliser de l'huile, mais en aucun cas du bois ou de l'écorce ne te seront utiles pour cette opération. Assure toi donc, avant de te lancer dans la fabrication d'un objet, d'avoir réuni les matériaux nécessaires. Il existe trois manières d'acquérir des matières premières : en te rendant chez un marchand spécialisé, en dépeçant des créatures que tu as chassées ou en creusant le sol.{break} Voyons déjà si tu es capable de réunir les matières premières nécessaires à la création d'un objet donné. Puisque tu as prouvé que tu savais fabriquer des bottes, nous allons continuer sur cette lancée. Prends cet argent, va voir un marchand de matières premières et achète lui ce qu'il faut pour fabriquer une paire de bottes. Créé ces bottes et rapporte les moi. C'est simple non ? Je t'attends.]
+}
+
+MISSION_MATIS_02_P_OVL_ANY_BOTTES ()
+{
+	mission_matis_02_p_ovl_any_bottes	[Fabriquez une paire de bottes.]
+}
+
+MISSION_MATIS_02_P_OVL_ANY_GIVE_BOOTS (bot givervar)
+{
+	mission_matis_02_p_ovl_any_give_boots	[Donnez la paire de bottes à $givervar$.]
+}
+
+MISSION_MATIS_02_P_LDC_VANNE (bot maitre_tryker)
+{
+	( self.gender = male )
+		mission_matis_02_p_ldc_vanne_m	[Tu sembles plus dégourdi que je ne le pensais. Tu as su réunir les bons matériaux. Ne néglige jamais cette étape, elle est essentielle. Apprends à différencier les matériaux, teste les, observe les résultats. Et garde bien en tête que les propriétés d'une même matière première diffèrent selon sa provenance : l'huile Pilan n'a pas les mêmes propriétés que l'huile de Gulatch, de même, un os de Yubo n'a pas les mêmes propriétés qu'un os de Capryni. Cette notion est très importante.{break}Bien, passons à la suite. Comme je te l'ai dit précédemment, il existe trois méthodes pour se procurer des matières premières : les acheter, les trouver dans le sol ou les prélever sur des créatures mortes. Il est temps pour toi d'aborder la seconde méthode : le forage, car je ne pense pas qu'un artisan puisse travailler correctement sans avoir la moindre notion dans ce domaine. Je te propose donc, avant de poursuivre ta formation, d'aller voir mon homologue Tryker : $maitre_tryker$, afin qu'il t'enseigne les bases du forage, à savoir, la prospection et l'extraction. Rassure-toi, cela ne devrait pas te prendre beaucoup de temps. Tu reviendras me voir par la suite.]
+	( self.gender = female )
+		mission_matis_02_p_ldc_vanne_f	[Tu sembles plus dégourdie que je ne le pensais. Tu as su réunir les bons matériaux. Ne néglige jamais cette étape, elle est essentielle. Apprends à différencier les matériaux, teste les, observe les résultats. Et garde bien en tête que les propriétés d'une même matière première diffèrent selon sa provenance : l'huile Pilan n'a pas les mêmes propriétés que l'huile de Gulatch, de même, un os de Yubo n'a pas les mêmes propriétés qu'un os de Capryni. Cette notion est très importante.{break}Bien, passons à la suite. Comme je te l'ai dit précédemment, il existe trois méthodes pour se procurer des matières premières : les acheter, les trouver dans le sol ou les prélever sur des créatures mortes. Il est temps pour toi d'aborder la seconde méthode : le forage, car je ne pense pas qu'un artisan puisse travailler correctement sans avoir la moindre notion dans ce domaine. Je te propose donc, avant de poursuivre ta formation, d'aller voir mon homologue Tryker : $maitre_tryker$, afin qu'il t'enseigne les bases du forage, à savoir, la prospection et l'extraction. Rassure-toi, cela ne devrait pas te prendre beaucoup de temps. Tu reviendras me voir par la suite.]
+}
+
+MISSION_MATIS_02_P_BOXTITLE_MP ()
+{
+	mission_matis_02_p_boxtitle_mp	[Les matières premières.]
+}
+
+MISSION_MATIS_02_P_MSGBOX_MP ()
+{
+	mission_matis_02_p_msgbox_mp	[@{W450}Chaque matière première se caractérise par 3 principaux critères : son @{F90F}type@{FFFF}, sa @{F90F}qualité@{FFFF} et sa @{F90F}provenance@{FFFF}. \nLe type d'une matière première va déterminer son utilité, c'est-à-dire les éléments constitutifs d'un objet qu'elle permet de produire. Prenons un exemple : une dent, quelle que soit la créature dont elle provient, servira toujours à fabriquer soit l'enveloppe d'un projectile, soit le revêtement intérieur d'une armure. \nLa qualité d'une matière première, déterminera la qualité de l'objet final qu'elle aura servit à fabriquer, et est définie par une double échelle : \n-@{T5}une échelle de @{F90F}qualité@{FFFF}, comportant 5 états, dans l'ordre croissant : Basic, Fin, de Choix, Excellent et Suprême.\n-@{T5}et une échelle de @{F90F}niveau@{FFFF} chiffrée, graduée de 1 à 250.\n La qualité la plus basse qui soit sera donc Basique de niveau 1, et la meilleure sera Suprême de niveau 250. Entre ces 2 extrêmes, toutes les combinaisons sont possibles. \n\nLa provenance d'une matière première va déterminer ses propriétés. Et bien entendu, les propriétés d'une matière première vont se répercuter sur l'objet final. Reprenons l'exemple de la dent : une dent de Rendor permettra de créer des projectiles plus solides et de portée accrue, tandis qu'une dent de Raspal permettra de créer des projectiles plus rapides et plus légers.\n\nRemarque : votre niveau de compétence en artisanat ne limite ni le type, ni la provenance, ni même la qualité des matières premières que vous pouvez utiliser. Cependant, ce même niveau de compétence limite la qualité de l'objet que vous allez produire. Il faut de plus savoir que la qualité de l'objet que vous allez créer ne pourra pas dépasser la qualité de la matière première la plus faible que vous emploierez.]
+}
+
+MISSION_MATIS_02_GF_MIS_TITLE (bot giver)
+{
+	mission_matis_02_gf_mis_title	[Un futur artisan #2]
+}
+
+MISSION_MATIS_02_GF_MIS_DESC (bot giver)
+{
+	mission_matis_02_gf_mis_desc	[Acheter des matières premières et les utiliser pour crafter des bottes.]
+}
+
+MISSION_MATIS_02_GF_P_LDC_INTRO ()
+{
+	mission_matis_02_gf_p_ldc_intro	[Pour fabriquer un objet de bonne qualité, il ne te suffit pas d'avoir l'outil approprié ni même la compétence. Le premier souci de tout artisan est de trouver les bonnes matières premières. Il faut bien évidemment qu'elles correspondent au type d'objet que l'on souhaite fabriquer : par exemple, pour créer le rembourrage d'une pièce d'armure tu peux utiliser de l'huile, mais en aucun cas du bois ou de l'écorce ne te seront utiles pour cette opération. Assure toi donc, avant de te lancer dans la fabrication d'un objet, d'avoir réuni les matériaux nécessaires. Il existe trois manières d'acquérir des matières premières : en te rendant chez un marchand spécialisé, en dépeçant des créatures que tu as chassées ou en creusant le sol.{break} Voyons déjà si tu es capable de réunir les matières premières nécessaires à la création d'un objet donné. Puisque tu as prouvé que tu savais fabriquer des bottes, nous allons continuer sur cette lancée. Prends cet argent, va voir un marchand de matières premières et achète lui ce qu'il faut pour fabriquer une paire de bottes. Créé ces bottes et rapporte les moi. C'est simple non ? Je t'attends.]
+}
+
+MISSION_MATIS_02_GF_P_OVL_ANY_BOTTES ()
+{
+	mission_matis_02_gf_p_ovl_any_bottes	[Fabriquez une paire de bottes.]
+}
+
+MISSION_MATIS_02_GF_P_OVL_ANY_GIVE_BOOTS (bot givervar)
+{
+	mission_matis_02_gf_p_ovl_any_give_boots	[Donnez la paire de bottes à $givervar$.]
+}
+
+MISSION_MATIS_02_GF_P_LDC_VANNE (bot maitre_tryker)
+{
+	( self.gender = male )
+		mission_matis_02_gf_p_ldc_vanne_m	[Tu sembles plus dégourdi que je ne le pensais. Tu as su réunir les bons matériaux. Ne néglige jamais cette étape, elle est essentielle. Apprends à différencier les matériaux, teste les, observe les résultats. Et garde bien en tête que les propriétés d'une même matière première diffèrent selon sa provenance : l'huile Pilan n'a pas les mêmes propriétés que l'huile de Gulatch, de même, un os de Yubo n'a pas les mêmes propriétés qu'un os de Capryni. Cette notion est très importante.{break}Bien, passons à la suite. Comme je te l'ai dit précédemment, il existe trois méthodes pour se procurer des matières premières : les acheter, les trouver dans le sol ou les prélever sur des créatures mortes. Il est temps pour toi d'aborder la seconde méthode : le forage, car je ne pense pas qu'un artisan puisse travailler correctement sans avoir la moindre notion dans ce domaine. Je te propose donc, avant de poursuivre ta formation, d'aller voir mon homologue Tryker : $maitre_tryker$, afin qu'il t'enseigne les bases du forage, à savoir, la prospection et l'extraction. Rassure-toi, cela ne devrait pas te prendre beaucoup de temps. Tu reviendras me voir par la suite.]
+	( self.gender = female )
+		mission_matis_02_gf_p_ldc_vanne_f	[Tu sembles plus dégourdie que je ne le pensais. Tu as su réunir les bons matériaux. Ne néglige jamais cette étape, elle est essentielle. Apprends à différencier les matériaux, teste les, observe les résultats. Et garde bien en tête que les propriétés d'une même matière première diffèrent selon sa provenance : l'huile Pilan n'a pas les mêmes propriétés que l'huile de Gulatch, de même, un os de Yubo n'a pas les mêmes propriétés qu'un os de Capryni. Cette notion est très importante.{break}Bien, passons à la suite. Comme je te l'ai dit précédemment, il existe trois méthodes pour se procurer des matières premières : les acheter, les trouver dans le sol ou les prélever sur des créatures mortes. Il est temps pour toi d'aborder la seconde méthode : le forage, car je ne pense pas qu'un artisan puisse travailler correctement sans avoir la moindre notion dans ce domaine. Je te propose donc, avant de poursuivre ta formation, d'aller voir mon homologue Tryker : $maitre_tryker$, afin qu'il t'enseigne les bases du forage, à savoir, la prospection et l'extraction. Rassure-toi, cela ne devrait pas te prendre beaucoup de temps. Tu reviendras me voir par la suite.]
+}
+
+MISSION_MATIS_02_GF_P_BOXTITLE_MP ()
+{
+	mission_matis_02_gf_p_boxtitle_mp	[Les matières premières.]
+}
+
+MISSION_MATIS_02_GF_P_MSGBOX_MP ()
+{
+	mission_matis_02_gf_p_msgbox_mp	[@{W450}Chaque matière première se caractérise par 3 principaux critères : son @{F90F}type@{FFFF}, sa @{F90F}qualité@{FFFF} et sa @{F90F}provenance@{FFFF}. \nLe type d'une matière première va déterminer son utilité, c'est-à-dire les éléments constitutifs d'un objet qu'elle permet de produire. Prenons un exemple : une dent, quelle que soit la créature dont elle provient, servira toujours à fabriquer soit l'enveloppe d'un projectile, soit le revêtement intérieur d'une armure. \nLa qualité d'une matière première, déterminera la qualité de l'objet final qu'elle aura servit à fabriquer, et est définie par une double échelle : \n-@{T5}une échelle de @{F90F}qualité@{FFFF}, comportant 5 états, dans l'ordre croissant : Basic, Fin, de Choix, Excellent et Suprême.\n-@{T5}et une échelle de @{F90F}niveau@{FFFF} chiffrée, graduée de 1 à 250.\n La qualité la plus basse qui soit sera donc Basique de niveau 1, et la meilleure sera Suprême de niveau 250. Entre ces 2 extrêmes, toutes les combinaisons sont possibles. \n\nLa provenance d'une matière première va déterminer ses propriétés. Et bien entendu, les propriétés d'une matière première vont se répercuter sur l'objet final. Reprenons l'exemple de la dent : une dent de Rendor permettra de créer des projectiles plus solides et de portée accrue, tandis qu'une dent de Raspal permettra de créer des projectiles plus rapides et plus légers.\n\nRemarque : votre niveau de compétence en artisanat ne limite ni le type, ni la provenance, ni même la qualité des matières premières que vous pouvez utiliser. Cependant, ce même niveau de compétence limite la qualité de l'objet que vous allez produire. Il faut de plus savoir que la qualité de l'objet que vous allez créer ne pourra pas dépasser la qualité de la matière première la plus faible que vous emploierez.]
+}
+
+MISSION_MATIS_02_GF_TALK_TRYKER (bot maitre_tryker)
+{
+	mission_matis_02_gf_talk_tryker	[Je viens apprendre le forage]
+}
+
+MISSION_MATIS_03_MIS_TITLE (bot giver)
+{
+	mission_matis_03_mis_title	[Reconstruire l'avenir #1]
+}
+
+MISSION_MATIS_03_MIS_DESC (bot giver)
+{
+	mission_matis_03_mis_desc	[Apprendre à récupérer des matériaux en chassant ou exploitant les ressources d'Atys.]
+}
+
+MISSION_MATIS_03_P_T2_START (bot givervar)
+{
+	mission_matis_03_p_t2_start	[J'ai appris à prospecter et à extraire des matières premières, nous pouvons continuer.]
+}
+
+MISSION_MATIS_03_P_DC_TRAINER ()
+{
+	mission_matis_03_p_dc_trainer	[Ces connaissances ne te seront pas inutiles, loin de là. Tu vas désormais pouvoir acquérir les matières premières nécessaires à tes travaux sans avoir à dépenser d'argent et sans dépendre des autres. La dernière méthode, je te le redis, passe par la chasse. D'ailleurs, je te recommande vivement de développer tes compétences en combat, que ce soit par la magie ou par le maniement des armes. \nMes homologues Fyros et Zorai sont là pour te former. Au delà du fait que la chasse te permettra d'acquérir de nouvelles matières premières, être compétent en combat assurera ta survie sur ces terres hostiles. Libre à toi de suivre ce conseil, si tu es suicidaire, c'est ton problème. A vrai dire, je m'en lave les mains.{break}Bien, passons à la suite. Tu possèdes la compétence te permettant de fabriquer des pièces d'armure et c'est une bonne chose. Tu devrais donc pouvoir fabriquer des pantalons. Mais cela j'en doute fort, à moins que tu aies eu la présence d'esprit de te procurer un Plan de Pantalon auprès d'un entraîneur. Car tu l'auras compris, la technique ne suffit pas, il faut aussi posséder le plan correspondant à l'objet que tu veux créer.{break}Il est grand temps de mettre tes compétences à profit, et justement nous allons avoir besoin d'artisans capables de fabriquer des pantalons. Je vais donc te demander de te procurer ce Plan de Pantalon auprès d'un entraîneur en artisanat. Il est fort probable que tu n'aies pas l'expérience nécessaire pour faire cette acquisition, tu devras alors t'entraîner à fabriquer ce que tu peux, des bottes par exemple. Pour les matières premières, débrouille-toi, tu sais désormais comment faire. Reviens me voir avec le plan et je te présenterai ta mission.]
+}
+
+MISSION_MATIS_03_P_DA_TRAINER ()
+{
+	mission_matis_03_p_da_trainer	[Très bien, je vais aller voir l'entraîneur.]
+}
+
+MISSION_MATIS_03_P_DA_TRAINER_NO ()
+{
+	mission_matis_03_p_da_trainer_no	[J'ai déjà le Plan de Pantalon.]
+}
+
+MISSION_MATIS_03_P_TITLEBOX_XP_TRAINER ()
+{
+	mission_matis_03_p_titlebox_xp_trainer	[Expérience et points de compétence.]
+}
+
+MISSION_MATIS_03_P_MSGBOX_XP_TRAINER ()
+{
+	mission_matis_03_p_msgbox_xp_trainer	[@{W400}Il est temps pour vous de convertir l'expérience que vous avez gagnée.\nVous avez dû le remarquer, lorsque vous effectuez certaines tâches (en magie, en combat, en artisanat ou en forage) vous gagnez de @{F90F}l'expérience@{FFFF}, lorsque vous en avez acquis suffisamment, vous progressez d'un niveau dans la compétence correspondante. Ce passage d'un niveau à un autre vous est annoncé par une aura brillante entourant votre personnage, accompagnée d'un message. Pour consulter l'état d'avancement de votre expérience et de vos niveaux, allez dans la @{F90F}fenêtre Actions@{FFFF} (touche @{F90F}B@{FFFF}).\nA chaque fois que vous gagnez un niveau, vous recevez 10 points de compétence. Ce sont ces points de compétence que vous pourrez échanger contre de nouvelles techniques, pouvoirs ou améliorations de caractéristiques, auprès d'un entraîneur. Pour voir la quantité de points de compétence dont vous disposez, consultez l'encart @{F90F}Points de Compétence@{FFFF} de la fenêtre @{F90F}Identité@{FFFF} (touche @{F90F}P@{FFFF}).\n\n Chaque entraîneur est spécialisé dans l'un des quatre principaux domaines d'actions (magie, combat, artisanat ou forage) et ne peux convertir que les points que vous avez acquis dans son domaine. Plus votre niveau dans l'un de ces domaines est élevé et plus large sera le choix de techniques que vous pourrez acquérir.]
+}
+
+MISSION_MATIS_03_P_T2OVL_TRAINER (bot maitre_matis, bot givervar)
+{
+	mission_matis_03_p_t2ovl_trainer	[Allez voir l'entraîneur en artisanat afin qu'il vous fournisse le Plan de Pantalon, puis retournez voir $givervar$.]
+}
+
+MISSION_MATIS_03_P_T2_TRAINER (bot maitre_matis)
+{
+	mission_matis_03_p_t2_trainer	[Bonjour, je viens m'entraîner.]
+}
+
+MISSION_MATIS_03_P_BOXTITLE_CRAFT ()
+{
+	mission_matis_03_p_boxtitle_craft	[Les entraîneurs des artisans.]
+}
+
+MISSION_MATIS_03_P_MSGBOX_CRAFT ()
+{
+	mission_matis_03_p_msgbox_craft	[@{W450}Bien, vous avez trouvez un entraîneur.\nUn entraîneur vous permet de dépenser les points de compétence que vous avez acquis pour acheter de nouvelles @{F90F}stanzas@{FFFF}, de nouvelles @{F90F}actions@{FFFF}, des mises à niveau de @{F90F}caractéristiques@{FFFF} ou encore de nouveau @{F90F}plans de fabrication@{FFFF}. Une action est composée de plusieurs stanzas, l'achat d'une action équivaut donc à acheter l'ensemble des stanzas qui la compose.\n\nPour accéder aux services de cet entraîneur, cliquez de nouveau sur lui : une liste des éléments qu'il vous propose s'affiche alors. Pour obtenir des informations sur l'un des éléments présents, faites un clic droit sur l'icône correspondant.\n\nVous pouvez voir dans cette liste des mises à niveau de caractéristiques, elles sont de deux types :\n-@{T5}celles dont les icônes représentent deux gouttes sur un fond sombre correspondent à une augmentation du maximum d'une caractéristique (Constitution 1 et Dextérité 1 dans le cas présent)\n-@{T5}celles dont les icônes représentent une goutte à moitié pleine sur fond sombre correspondent à une amélioration de la vitesse de regain d'une caractéristique (Métabolisme 1 et Volonté 1).\n\nVous avez ensuite les plans qui vous permettent de fabriquer de nouveaux objets tels que des gilets ou des pantalons et les actions de créations qui vous ouvrent de nouveaux champs de compétence en artisanat tels que la fabrication de bijoux ou encore la fabrication d'armes de mêlée.\nL'apprentissage d'une action de création vous débloquera les plans correspondants. Exemple, si vous apprenez l'action Création d'Armes de Mêlée, l'entraîneur vous proposera les Plans vous permettant de créer des épées, des masses ou encore des lances.\nEnfin, vous trouverez des options qui vous permettront d'associer des pouvoirs aux objets que vous créez.\nVous pouvez maintenant apprendre le Plan de Pantalon.]
+}
+
+MISSION_MATIS_03_P_OVL_T2_BACK_GIVER (bot giver)
+{
+	mission_matis_03_p_ovl_t2_back_giver	[Allez prendre de nouvelles directives auprès de $giver$]
+}
+
+MISSION_MATIS_03_P_T2_BACK_GIVER (bot giver)
+{
+	mission_matis_03_p_t2_back_giver	[J'ai le plan de pantalon !]
+}
+
+MISSION_MATIS_03_P_LDC_MENSONGE ()
+{
+	mission_matis_03_p_ldc_mensonge	[Tu me mens, retourne l'acquérir, nous ne pourrons rien faire sans.]
+}
+
+MISSION_MATIS_03_P_LDC_SUITE ()
+{
+	mission_matis_03_p_ldc_suite	[Tu n'es pas sans savoir que nous sommes en train de rebâtir notre civilisation. La stupidité des Fyros a jadis attiré sur nous ce fléau que sont les Kitins, tu n'as pas connu cet épisode sombre de notre histoire, tu es bien trop jeune. Les Homins qui ont échappé au carnage se sont réfugiés dans les Primes Racines. Les moins chanceux ont survécus ont errés en quête d'une terre d'accueil. \nAujourd'hui nous refaisons surface sur ces nouvelles terres afin de reconstituer ce que nous avons perdu. Et c'est dans ce camp que nous formons les futurs bâtisseurs.{break} Nos armées ont constamment besoin d'armes et d'armures, tu n'es hélas pas encore suffisamment compétant pour soutenir notre effort de guerre. Mais ça viendra, du moins je l'espère. En attendant, tu vas nous aider à produire les équipements nécessaires aux réfugiés qui comme toi refont surface. Exploitons donc ce que tu sais faire : des bottes et des pantalons.\nFabrique 5 paires de bottes et 5 paires de pantalons, et apporte-les moi. Pour les matières premières, je vais te fournir ce qu'il faut. Si jamais cela ne suffit pas, tu sais comment compléter tes stocks.]
+}
+
+MISSION_MATIS_03_P_OVL_CRAFT_PARTS ()
+{
+	mission_matis_03_p_ovl_craft_parts	[Fabriquez 5 paires de bottes et 5 paires de pantalons de qualité 10 en utilisant votre nouvelle option.]
+}
+
+MISSION_MATIS_03_P_LDC_END ()
+{
+	mission_matis_03_p_ldc_end	[Bien, c'est un bon début, je commence vraiment à penser que tu es quelqu'un de valable. Nous allons pouvoir passer à la vitesse supérieure.]
+}
+
+MISSION_MATIS_03_GF_MIS_TITLE (bot giver)
+{
+	mission_matis_03_gf_mis_title	[Reconstruire l'avenir #1]
+}
+
+MISSION_MATIS_03_GF_MIS_DESC (bot giver)
+{
+	mission_matis_03_gf_mis_desc	[Apprendre à récupérer des matériaux en chassant ou exploitant les ressources d'Atys.]
+}
+
+MISSION_MATIS_03_GF_P_T2_START (bot givervar)
+{
+	mission_matis_03_gf_p_t2_start	[J'ai appris à prospecter et à extraire des matières premières, nous pouvons continuer.]
+}
+
+MISSION_MATIS_03_GF_P_DC_TRAINER ()
+{
+	mission_matis_03_gf_p_dc_trainer	[Ces connaissances ne te seront pas inutiles, loin de là. Tu vas désormais pouvoir acquérir les matières premières nécessaires à tes travaux sans avoir à dépenser d'argent et sans dépendre des autres. La dernière méthode, je te le redis, passe par la chasse. D'ailleurs, je te recommande vivement de développer tes compétences en combat, que ce soit par la magie ou par le maniement des armes.{break}Mes homologues Fyros et Zorai sont là pour te former. Au delà du fait que la chasse te permettra d'acquérir de nouvelles matières premières, être compétent en combat assurera ta survie sur ces terres hostiles. Libre à toi de suivre ce conseil, si tu es suicidaire, c'est ton problème. A vrai dire, je m'en lave les mains.{break}Bien, passons à la suite. Tu possèdes la compétence te permettant de fabriquer des pièces d'armure et c'est une bonne chose. Tu devrais donc pouvoir fabriquer des pantalons. Mais cela j'en doute fort, à moins que tu aies eu la présence d'esprit de te procurer un Plan de Pantalon auprès d'un entraîneur. Car tu l'auras compris, la technique ne suffit pas, il faut aussi posséder le plan correspondant à l'objet que tu veux créer.{break}Il est grand temps de mettre tes compétences à profit, et justement nous allons avoir besoin d'artisans capables de fabriquer des pantalons. Je vais donc te demander de te procurer ce Plan de Pantalon auprès d'un entraîneur en artisanat. Il est fort probable que tu n'aies pas l'expérience nécessaire pour faire cette acquisition, tu devras alors t'entraîner à fabriquer ce que tu peux, des bottes par exemple. Pour les matières premières, débrouille-toi, tu sais désormais comment faire. Reviens me voir avec le plan et je te présenterai ta mission.]
+}
+
+MISSION_MATIS_03_GF_P_DA_TRAINER ()
+{
+	mission_matis_03_gf_p_da_trainer	[Très bien, je vais aller voir l'entraîneur.]
+}
+
+MISSION_MATIS_03_GF_P_DA_TRAINER_NO ()
+{
+	mission_matis_03_gf_p_da_trainer_no	[J'ai déjà le Plan de Pantalon.]
+}
+
+MISSION_MATIS_03_GF_P_TITLEBOX_XP_TRAINER ()
+{
+	mission_matis_03_gf_p_titlebox_xp_trainer	[Expérience et points de compétence.]
+}
+
+MISSION_MATIS_03_GF_P_MSGBOX_XP_TRAINER ()
+{
+	mission_matis_03_gf_p_msgbox_xp_trainer	[@{W400}Il est temps pour vous de convertir l'expérience que vous avez gagnée.\nVous avez dû le remarquer, lorsque vous effectuez certaines tâches (en magie, en combat, en artisanat ou en forage) vous gagnez de @{F90F}l'expérience@{FFFF}, lorsque vous en avez acquis suffisamment, vous progressez d'un niveau dans la compétence correspondante. Ce passage d'un niveau à un autre vous est annoncé par une aura brillante entourant votre personnage, accompagnée d'un message. Pour consulter l'état d'avancement de votre expérience et de vos niveaux, allez dans la @{F90F}fenêtre Actions@{FFFF} (touche @{F90F}B@{FFFF}).\nA chaque fois que vous gagnez un niveau, vous recevez 10 points de compétence. Ce sont ces points de compétence que vous pourrez échanger contre de nouvelles techniques, pouvoirs ou améliorations de caractéristiques, auprès d'un entraîneur. Pour voir la quantité de points de compétence dont vous disposez, consultez l'encart @{F90F}Points de Compétence@{FFFF} de la fenêtre @{F90F}Identité@{FFFF} (touche @{F90F}P@{FFFF}).\n\n Chaque entraîneur est spécialisé dans l'un des quatre principaux domaines d'actions (magie, combat, artisanat ou forage) et ne peux convertir que les points que vous avez acquis dans son domaine. Plus votre niveau dans l'un de ces domaines est élevé et plus large sera le choix de techniques que vous pourrez acquérir.]
+}
+
+MISSION_MATIS_03_GF_P_T2OVL_TRAINER (bot maitre_matis, bot givervar)
+{
+	mission_matis_03_gf_p_t2ovl_trainer	[Allez voir l'entraîneur en artisanat afin qu'il vous fournisse le Plan de Pantalon, puis retournez voir $givervar$.]
+}
+
+MISSION_MATIS_03_GF_P_T2_TRAINER (bot maitre_matis)
+{
+	mission_matis_03_gf_p_t2_trainer	[Bonjour, je viens m'entraîner.]
+}
+
+MISSION_MATIS_03_GF_P_BOXTITLE_CRAFT ()
+{
+	mission_matis_03_gf_p_boxtitle_craft	[Les entraîneurs des artisans.]
+}
+
+MISSION_MATIS_03_GF_P_MSGBOX_CRAFT ()
+{
+	mission_matis_03_gf_p_msgbox_craft	[@{W450}Bien, vous avez trouvez un entraîneur.\nUn entraîneur vous permet de dépenser les points de compétence que vous avez acquis pour acheter de nouvelles @{F90F}stanzas@{FFFF}, de nouvelles @{F90F}actions@{FFFF}, des mises à niveau de @{F90F}caractéristiques@{FFFF} ou encore de nouveau @{F90F}plans de fabrication@{FFFF}. Une action est composée de plusieurs stanzas, l'achat d'une action équivaut donc à acheter l'ensemble des stanzas qui la compose.\n\nPour accéder aux services de cet entraîneur, cliquez de nouveau sur lui : une liste des éléments qu'il vous propose s'affiche alors. Pour obtenir des informations sur l'un des éléments présents, faites un clic droit sur l'icône correspondant.\n\nVous pouvez voir dans cette liste des mises à niveau de caractéristiques, elles sont de deux types :\n-@{T5}celles dont les icônes représentent deux gouttes sur un fond sombre correspondent à une augmentation du maximum d'une caractéristique (Constitution 1 et Dextérité 1 dans le cas présent)\n-@{T5}celles dont les icônes représentent une goutte à moitié pleine sur fond sombre correspondent à une amélioration de la vitesse de regain d'une caractéristique (Métabolisme 1 et Volonté 1).\n\nVous avez ensuite les plans qui vous permettent de fabriquer de nouveaux objets tels que des gilets ou des pantalons et les actions de créations qui vous ouvrent de nouveaux champs de compétence en artisanat tels que la fabrication de bijoux ou encore la fabrication d'armes de mêlée.\nL'apprentissage d'une action de création vous débloquera les plans correspondants. Exemple, si vous apprenez l'action Création d'Armes de Mêlée, l'entraîneur vous proposera les Plans vous permettant de créer des épées, des masses ou encore des lances.\nEnfin, vous trouverez des options qui vous permettront d'associer des pouvoirs aux objets que vous créez.\nVous pouvez maintenant apprendre le Plan de Pantalon.]
+}
+
+MISSION_MATIS_03_GF_P_OVL_T2_BACK_GIVER (bot giver)
+{
+	mission_matis_03_gf_p_ovl_t2_back_giver	[Allez prendre de nouvelles directives auprès de $giver$]
+}
+
+MISSION_MATIS_03_GF_P_T2_BACK_GIVER (bot giver)
+{
+	mission_matis_03_gf_p_t2_back_giver	[J'ai le plan de pantalon !]
+}
+
+MISSION_MATIS_03_GF_P_LDC_MENSONGE ()
+{
+	mission_matis_03_gf_p_ldc_mensonge	[Tu me mens, retourne l'acquérir, nous ne pourrons rien faire sans.]
+}
+
+MISSION_MATIS_03_GF_P_LDC_SUITE ()
+{
+	mission_matis_03_gf_p_ldc_suite	[Tu n'es pas sans savoir que nous sommes en train de rebâtir notre civilisation. La stupidité des Fyros a jadis attiré sur nous ce fléau que sont les Kitins, tu n'as pas connu cet épisode sombre de notre histoire, tu es bien trop jeune. Les Homins qui ont échappé au carnage se sont réfugiés dans les Primes Racines. Les moins chanceux ont survécus ont errés en quête d'une terre d'accueil. \nAujourd'hui nous refaisons surface sur ces nouvelles terres afin de reconstituer ce que nous avons perdu. Et c'est dans ce camp que nous formons les futurs bâtisseurs.{break} Nos armées ont constamment besoin d'armes et d'armures, tu n'es hélas pas encore suffisamment compétant pour soutenir notre effort de guerre. Mais ça viendra, du moins je l'espère. En attendant, tu vas nous aider à produire les équipements nécessaires aux réfugiés qui comme toi refont surface. Exploitons donc ce que tu sais faire : des bottes et des pantalons.\nFabrique 5 paires de bottes et 5 paires de pantalons, et apporte-les moi. Pour les matières premières, je vais te fournir ce qu'il faut. Si jamais cela ne suffit pas, tu sais comment compléter tes stocks.]
+}
+
+MISSION_MATIS_03_GF_P_LDC_END ()
+{
+	mission_matis_03_gf_p_ldc_end	[Bien, c'est un bon début, je commence vraiment à penser que tu es quelqu'un de valable. Nous allons pouvoir passer à la vitesse supérieure.]
+}
+
+MISSION_MATIS_04_MIS_TITLE (bot giver)
+{
+	mission_matis_04_mis_title	[Reconstruire l'avenir #2]
+}
+
+MISSION_MATIS_04_MIS_DESC (bot giver)
+{
+	mission_matis_04_mis_desc	[Apprendre à donner des particularités à ses créations.]
+}
+
+MISSION_MATIS_04_P_LDC_START ()
+{
+	mission_matis_04_p_ldc_start	[Nous allons continuer à exploiter tes compétences. Mais dans un premier temps, tu vas te procurer auprès d'un entraîneur d'artisans l'Option Potion de Vie 1. Je t'expliquerai son utilité une fois que tu l'auras. Si tu n'as pas l'expérience nécessaire pour acquérir cette option, tu sais ce qu'il te reste à faire : entraîne-toi.\n Reviens me voir une fois que tu l'as.]
+}
+
+MISSION_MATIS_04_P_T2_OVL_INTRO (bot giver)
+{
+	mission_matis_04_p_t2_ovl_intro	[Procurez-vous auprès d'un entraîneur l'Option de Création / Potion de Vie 1]
+}
+
+MISSION_MATIS_04_P_T2_INTRO (bot giver)
+{
+	mission_matis_04_p_t2_intro	[J'ai acquis l'option que vous m'avez demandée.]
+}
+
+MISSION_MATIS_04_P_LDC_FALSE ()
+{
+	mission_matis_04_p_ldc_false	[Tu me mens, retourne l'acquérir, nous ne pourrons rien faire sans.]
+}
+
+MISSION_MATIS_04_P_LDC_TRUE ()
+{
+	mission_matis_04_p_ldc_true	[C'est parfait. L'option que tu viens de te procurer peut être utilisée en même temps que n'importe quelle technique de fabrication et confère à l'objet que tu crées un pouvoir supplémentaire : celui de renforcer la constitution de quiconque s'en sert. Tu peux donc désormais créer des bottes ou des pantalon dotés de ce pouvoir.{break} Tu vas d'ailleurs t'en servir pour créer de nouvelles paires de bottes et de nouvelles paires de pantalons. Mais cette fois, tu te chargeras toi-même de faire bénéficier la communauté de ta création en allant les vendre chez un marchand. Cela te permettra de plus de découvrir par toi-même l'aspect lucratif de l'artisanat. Va et reviens me voir une fois que tout est fait.]
+}
+
+MISSION_MATIS_04_P_OVL_CRAFT_PARTS ()
+{
+	mission_matis_04_p_ovl_craft_parts	[Fabriquez 5 paires de bottes et 5 paires de pantalons de qualité 10 en utilisant votre nouvelle option.]
+}
+
+MISSION_MATIS_04_P_OVL_SELL ()
+{
+	mission_matis_04_p_ovl_sell	[Vendez le fruit de votre travail au marchand d'armure légère.]
+}
+
+MISSION_MATIS_04_P_OVL_END (bot giver, bot givervar)
+{
+	mission_matis_04_p_ovl_end	[Retournez voir $givervar$.]
+}
+
+MISSION_MATIS_04_P_T2_END (bot giver)
+{
+	mission_matis_04_p_t2_end	[Mission accomplie.]
+}
+
+MISSION_MATIS_04_P_LDC_END ()
+{
+	mission_matis_04_p_ldc_end	[Je t'ai vraiment sous-estimé. Tu fais du bon travail et tu sembles maîtriser les bases de l'artisanat. De là à ce que tu deviennes un maître en la matière, la route est encore longue. Mais je suis sûr que ta détermination te permettra d'en atteindre le bout.]
+}
+
+MISSION_MATIS_05_MIS_TITLE (bot giver)
+{
+	mission_matis_05_mis_title	[Les secrets de Silan #1]
+}
+
+MISSION_MATIS_05_MIS_DESC (bot giver)
+{
+	mission_matis_05_mis_desc	[Récolter des matériaux en quantité.]
+}
+
+MISSION_MATIS_05_P_LDC_START ()
+{
+	mission_matis_05_p_ldc_start	[Le temps est venu de t'impliquer un peu plus dans nos affaires. Je pense pouvoir placer ma confiance en toi. Maintenant, à toi de voir si tu souhaites oeuvrer pour le peuple Matis.]
+}
+
+MISSION_MATIS_05_P_OVL_DEVOTION (bot giver, bot givervar)
+{
+	mission_matis_05_p_ovl_devotion	[Déclarez votre dévouement envers le peuple Matis auprès de $givervar$.]
+}
+
+MISSION_MATIS_05_P_T2_DEVOTION (bot giver)
+{
+	mission_matis_05_p_t2_devotion	[Vous pouvez me faire confiance, je vous servirai loyalement.]
+}
+
+MISSION_MATIS_05_P_LDC_HARVEST ()
+{
+	mission_matis_05_p_ldc_harvest	[Je savais que je pouvais compter sur toi. Je pense que nous allons pouvoir faire de grandes choses ensemble. Jusque là, nous avons oeuvré à la réinsertion des réfugiés qui occupent ce camp. Il est grand temps de laisser cette tâche ingrate aux débutants et de nous consacrer à la reconstruction de la grande civilisation Matis.{break}Je vais te parler de la cité de Silan dont les ruines gisent ici, sur cette île. Lorsque les Homins ont commencé à remonter vers ces nouvelles terres, quittant leurs caches des Primes Racines, nombre d'entre eux tremblaient encore. \nLa peur de revivre cet affrontement sanglant qui les décima les paralysaient. Ils s'étaient cachés des années durant et ne savaient plus faire que ça. Nombreux sont ceux qui avaient perdu leur combativité et leur fierté. Cette faiblesse des plus méprisables est aux antipodes de la nature des Matis.{break}Je t'accorde cependant que parmi ces faibles se trouvaient aussi des Matis, qui ont d'ailleurs prouvé, à cette occasion, qu'ils n'étaient pas dignes de servir notre civilisation. Le seul tombeau que nous puissions leur accorder est celui de l'oubli.{break} En arrivant sur cette île, les Matis ont donc laissé les faibles à leurs sanglots et ont commencé à rebâtir une cité : Silan. Mais ayant voulu trop bien faire, nous avons tenté de manipuler des plantes afin d'en faire des extracteurs de matières premières naturels. \nUne idée absolument brillante qui s'est soldée par un fiasco : des mutations auxquelles nous ne nous attendions pas sont apparues. Les plantes n'arrivaient pas à extraire de quantités satisfaisantes et étaient devenues incontrôlables, agressives et destructrices. Et nous n'étions pas suffisamment nombreux pour endiguer le fléau et avons dû abandonner notre cité.{break} Aujourd'hui, Silan n'est plus que ruines et les plantes qui en sont responsables sont toujours là, moins nombreuses qu'avant mais toujours présentes. \nLes Zorais se sont associés avec nous pour reprendre le contrôle de ces ruines. Leur objectif est d'éradiquer cette espèce mutante, le nôtre est de pouvoir accéder à ces ruines pour y récupérer nos biens. C'est aussi simple que ça, tout le monde s'y retrouve.{break}Tout ça pour en venir à ta prochaine mission. La technique la plus efficace pour venir à bout de ces plantes est le sort de Pourriture. Les plus aptes à remplir cette mission sont donc les mages. Et pour qu'un mage soit efficace, il lui faut des amplificateurs magiques.{break} Nous allons donc commencer par récolter les matières premières nécessaires à leur fabrication. Dans un premier temps, nous allons nous concentrer sur le premier élément constitutif d'un Gant, que l'on nomme Flèche, pour cela, je te conseille de trouver soit de l'écorce, soit des os de Javing. Dans les deux cas, tu trouveras ce qu'il faut autour des ruines. Mais méfie toi des Javing, ce sont des créatures dangereuses : si tu choisis cette voie, peut être a tu intérêt à te trouver des coéquipiers.]
+}
+
+MISSION_MATIS_05_P_OVL_ANY (item mitexi_bark, race race_javing)
+{
+	mission_matis_05_p_ovl_any	[Récoltez 15 $mitexi_bark$ ou tuez $race_javing.pia$ $race_javing.p$ pour récupérez une quinzaine de leurs os.]
+}
+
+MISSION_MATIS_05_P_OVL_MITEXI_1 (item i1, int qt1, int qual1, item mitexi_bark)
+{
+	mission_matis_05_p_ovl_mitexi_1	[ - Récoltez $qt1$ $mitexi_bark$]
+}
+
+MISSION_MATIS_05_P_OVL_JAVING_1 (item i1, int qt1, int qual1, race race_javing)
+{
+	mission_matis_05_p_ovl_javing_1	[ou\n - Tuez $race_javing.pia$ $race_javing.p$ pour récupérez $qt1$ de leurs os.]
+}
+
+MISSION_MATIS_05_P_OVL_END (bot giver, bot givervar)
+{
+	mission_matis_05_p_ovl_end	[Rapporte ce que tu as trouvé à $givervar$.]
+}
+
+MISSION_MATIS_05_P_T2_END (bot giver)
+{
+	mission_matis_05_p_t2_end	[ J'ai trouvé ce qu'il faut.]
+}
+
+MISSION_MATIS_05_P_LDC_END ()
+{
+	mission_matis_05_p_ldc_end	[Très bien, mets tout ça de côté, tu auras à t'en servir très prochainement. Tu travailles vite et bien, alors ne traînons pas, passons à l'étape suivante.]
+}
+
+MISSION_MATIS_05_GF_MIS_TITLE (bot giver)
+{
+	mission_matis_05_gf_mis_title	[Les secrets de Silan #1]
+}
+
+MISSION_MATIS_05_GF_MIS_DESC (bot giver)
+{
+	mission_matis_05_gf_mis_desc	[Récolter des matériaux en quantité.]
+}
+
+MISSION_MATIS_05_GF_P_LDC_START ()
+{
+	mission_matis_05_gf_p_ldc_start	[Le temps est venu de t'impliquer un peu plus dans nos affaires. Je pense pouvoir placer ma confiance en toi. Maintenant, à toi de voir si tu souhaites oeuvrer pour le peuple Matis.]
+}
+
+MISSION_MATIS_05_GF_P_OVL_DEVOTION (bot giver, bot givervar)
+{
+	mission_matis_05_gf_p_ovl_devotion	[Déclarez votre dévouement envers le peuple Matis auprès de $givervar$.]
+}
+
+MISSION_MATIS_05_GF_P_T2_DEVOTION (bot giver)
+{
+	mission_matis_05_gf_p_t2_devotion	[Vous pouvez me faire confiance, je vous servirai loyalement.]
+}
+
+MISSION_MATIS_05_GF_P_LDC_HARVEST ()
+{
+	mission_matis_05_gf_p_ldc_harvest	[Je savais que je pouvais compter sur toi. Je pense que nous allons pouvoir faire de grandes choses ensemble. Jusque là, nous avons oeuvré à la réinsertion des réfugiés qui occupent ce camp. Il est grand temps de laisser cette tâche ingrate aux débutants et de nous consacrer à la reconstruction de la grande civilisation Matis.{break}Je vais te parler de la cité de Silan dont les ruines gisent ici, sur cette île. Lorsque les Homins ont commencé à remonter vers ces nouvelles terres, quittant leurs caches des Primes Racines, nombre d'entre eux tremblaient encore. \nLa peur de revivre cet affrontement sanglant qui les décima les paralysaient. Ils s'étaient cachés des années durant et ne savaient plus faire que ça. Nombreux sont ceux qui avaient perdu leur combativité et leur fierté. Cette faiblesse des plus méprisables est aux antipodes de la nature des Matis.{break}Je t'accorde cependant que parmi ces faibles se trouvaient aussi des Matis, qui ont d'ailleurs prouvé, à cette occasion, qu'ils n'étaient pas dignes de servir notre civilisation. Le seul tombeau que nous puissions leur accorder est celui de l'oubli.{break} En arrivant sur cette île, les Matis ont donc laissé les faibles à leurs sanglots et ont commencé à rebâtir une cité : Silan. Mais ayant voulu trop bien faire, nous avons tenté de manipuler des plantes afin d'en faire des extracteurs de matières premières naturels. \nUne idée absolument brillante qui s'est soldée par un fiasco : des mutations auxquelles nous ne nous attendions pas sont apparues. Les plantes n'arrivaient pas à extraire de quantités satisfaisantes et étaient devenues incontrôlables, agressives et destructrices. Et nous n'étions pas suffisamment nombreux pour endiguer le fléau et avons dû abandonner notre cité.{break} Aujourd'hui, Silan n'est plus que ruines et les plantes qui en sont responsables sont toujours là, moins nombreuses qu'avant mais toujours présentes. \nLes Zorais se sont associés avec nous pour reprendre le contrôle de ces ruines. Leur objectif est d'éradiquer cette espèce mutante, le nôtre est de pouvoir accéder à ces ruines pour y récupérer nos biens. C'est aussi simple que ça, tout le monde s'y retrouve.{break}Tout ça pour en venir à ta prochaine mission. La technique la plus efficace pour venir à bout de ces plantes est le sort de Pourriture. Les plus aptes à remplir cette mission sont donc les mages. Et pour qu'un mage soit efficace, il lui faut des amplificateurs magiques.{break} Nous allons donc commencer par récolter les matières premières nécessaires à leur fabrication. Dans un premier temps, nous allons nous concentrer sur le premier élément constitutif d'un Gant, que l'on nomme Flèche, pour cela, je te conseille de trouver soit de l'écorce, soit des os de Javing. Dans les deux cas, tu trouveras ce qu'il faut autour des ruines. Mais méfie toi des Javing, ce sont des créatures dangereuses : si tu choisis cette voie, peut être a tu intérêt à te trouver des coéquipiers.]
+}
+
+MISSION_MATIS_05_GF_P_OVL_MITEXI_1 (item i1, int qt1, int qual1, item mitexi_bark)
+{
+	mission_matis_05_gf_p_ovl_mitexi_1	[ou\n - Récoltez $qt1$ $mitexi_bark$]
+}
+
+MISSION_MATIS_05_GF_P_OVL_JAVING_1 (item i1, int qt1, int qual1, race race_javing)
+{
+	mission_matis_05_gf_p_ovl_javing_1	[ - Tuez $race_javing.pia$ $race_javing.p$ pour récupérez $qt1$ de leurs os.]
+}
+
+MISSION_MATIS_05_GF_P_OVL_END (bot giver, bot givervar)
+{
+	mission_matis_05_gf_p_ovl_end	[Rapporte ce que tu as trouvé à $givervar$.]
+}
+
+MISSION_MATIS_05_GF_P_T2_END (bot giver)
+{
+	mission_matis_05_gf_p_t2_end	[ J'ai trouvé ce qu'il faut.]
+}
+
+MISSION_MATIS_05_GF_P_LDC_END ()
+{
+	mission_matis_05_gf_p_ldc_end	[Très bien, mets tout ça de côté, tu auras à t'en servir très prochainement. Tu travailles vite et bien, alors ne traînons pas, passons à l'étape suivante.]
+}
+
+MISSION_MATIS_06_MIS_TITLE (bot giver)
+{
+	mission_matis_06_mis_title	[Les secrets de Silan #2]
+}
+
+MISSION_MATIS_06_MIS_DESC (bot giver)
+{
+	mission_matis_06_mis_desc	[Continuer à récupérer des matériaux.]
+}
+
+MISSION_MATIS_06_P_LDC_START ()
+{
+	mission_matis_06_p_ldc_start	[Les deux autres éléments constitutifs d'un gant magique sont ce que nous appelons la Prise et la Concentration Magique. Pour la prise, je te recommande de trouver soit de la peau de Yelk, soit de la fibre.\n Quant à la concentration magique, tu as le choix entre des champignons de Yelk et de l'ambre, et ça, il t'en faudra en plus grosse quantité que le reste.{break} Pour ton information et dans le cas où tu choisirais la voie de la chasse pour te procurer ces matières premières, les Yelks sont des créatures omnivores qui, à vrai dire, ramassent un peu tout et n'importe quoi. Leur solide carapace abrite toute une micro végétation dont les champignons qui peuvent nous intéresser.\n Méfie toi des Yelks, certes ils ne sont pas agressifs mais ils te réservent une bien mauvaise surprise. En effet, un Yelk, lorsqu'il meurt, dégage un nuage toxique. Lorsque tu tues un Yelk, attends donc que ce nuage ce soit dissipé pour le dépecer, et tu comprendras donc qu'il est préférable de les attaquer à distance. Pars maintenant, trouver ce que je t'ai demandé.]
+}
+
+MISSION_MATIS_06_P_OVL_END (bot giver, bot givervar)
+{
+	mission_matis_06_p_ovl_end	[Rapporte ce que tu as trouvé à $givervar$.]
+}
+
+MISSION_MATIS_06_P_T2_END (bot giver)
+{
+	mission_matis_06_p_t2_end	[ J'ai trouvé ce qu'il faut.]
+}
+
+MISSION_MATIS_06_P_LDC_END ()
+{
+	mission_matis_06_p_ldc_end	[C'est parfait, tu as maintenant tout ce qu'il faut du point de vue matériaux pour créer des amplifieurs magiques. La dernière étape, tu t'en doutes, sera de les fabriquer.]
+}
+
+MISSION_MATIS_07_MIS_TITLE (bot giver)
+{
+	mission_matis_07_mis_title	[Les secrets de Silan #3]
+}
+
+MISSION_MATIS_07_MIS_DESC (bot giver)
+{
+	mission_matis_07_mis_desc	[Fabriquer des objets de plus haute qualité.]
+}
+
+MISSION_MATIS_07_P_LDC_START (bot vendeur_outils)
+{
+	mission_matis_07_p_ldc_start	[Mais il te manque peut être la compétence pour, si c'est le cas, tu sais comment faire, gagner de l'expérience par le travail et acquérir les techniques voulues chez un entraîneur. \nPour information, la création d'amplifieurs magiques requiert un outil de Création d'Armes de Mêlée que tu peux obtenir chez $vendeur_outils$, d'une compétence de Création d'Armes de Mêlée, et le Plan d'Amplifieurs Magiques. Va maintenant, et rapporte m'en trois paires.]
+}
+
+MISSION_MATIS_07_P_OVL_CRAFT (bot givervar)
+{
+	mission_matis_07_p_ovl_craft	[Fabriquez les amplificateurs magiques de qualité 15 que vous a commandé $givervar$]
+}
+
+MISSION_MATIS_07_P_OVL_CRAFT_END (bot giver, bot givervar)
+{
+	mission_matis_07_p_ovl_craft_end	[Montrez à $givervar$ ce que vous avez créé.]
+}
+
+MISSION_MATIS_07_P_T2_CRAFT_END (bot giver)
+{
+	mission_matis_07_p_t2_craft_end	[Voilà le fruit de mon travail.]
+}
+
+MISSION_MATIS_07_P_LDC_END ()
+{
+	mission_matis_07_p_ldc_end	[Fort bien. Trois paires de gants peuvent te paraîtrent peu, mais si tous mes disciples s'avèrent aussi efficaces que toi, nous aurons vite de quoi causer bien des malheurs à ces plantes parasites. D'ailleurs, j'ai une dernière mission à te confier mon cher et fidèle apprenti.]
+}
+
+MISSION_MATIS_07_GF_MIS_TITLE (bot giver)
+{
+	mission_matis_07_gf_mis_title	[Les secrets de Silan #3]
+}
+
+MISSION_MATIS_07_GF_MIS_DESC (bot giver)
+{
+	mission_matis_07_gf_mis_desc	[Fabriquer des objets de plus haute qualité.]
+}
+
+MISSION_MATIS_07_GF_START_TALK (bot givervar)
+{
+	mission_matis_07_gf_start_talk	[Je suis prêt à crafter des aplificateurs.]
+}
+
+MISSION_MATIS_07_GF_P_LDC_START (bot vendeur_outils)
+{
+	mission_matis_07_gf_p_ldc_start	[Il te manque peut être la compétence pour, si c'est le cas, tu sais comment faire, gagner de l'expérience par le travail et acquérir les techniques voulues chez un entraîneur. \nPour information, la création d'amplifieurs magiques requiert un outil de Création d'Armes de Mêlée que tu peux obtenir chez $vendeur_outils$, d'une compétence de Création d'Armes de Mêlée, et le Plan d'Amplifieurs Magiques. Va maintenant, et rapporte m'en une paire.]
+}
+
+MISSION_MATIS_07_GF_TRAINER_TALK (bot maitre_matis)
+{
+	mission_matis_07_gf_trainer_talk	[J'aimerais acquérir de nouvelles compétences.]
+}
+
+MISSION_MATIS_07_GF_P_OVL_CRAFT_END (bot giver, bot givervar)
+{
+	mission_matis_07_gf_p_ovl_craft_end	[Montrez à $givervar$ ce que vous avez créé.]
+}
+
+MISSION_MATIS_07_GF_P_T2_CRAFT_END (bot giver)
+{
+	mission_matis_07_gf_p_t2_craft_end	[Voilà le fruit de mon travail.]
+}
+
+MISSION_MATIS_07_GF_P_LDC_END ()
+{
+	mission_matis_07_gf_p_ldc_end	[Fort bien. Une paire de gants peut te paraître peu, mais si tous mes disciples s'avèrent aussi efficaces que toi, nous aurons vite de quoi causer bien des malheurs à ces plantes parasites. D'ailleurs, j'ai une dernière mission à te confier mon cher et fidèle apprenti.]
+}
+
+MISSION_MATIS_08_MIS_TITLE (bot giver)
+{
+	mission_matis_08_mis_title	[Les secrets de Silan #4]
+}
+
+MISSION_MATIS_08_MIS_DESC (bot giver)
+{
+	mission_matis_08_mis_desc	[Aider à comprendre la nature de l'ennemi.]
+}
+
+MISSION_MATIS_08_P_LDC_START ()
+{
+	mission_matis_08_p_ldc_start	[Je pense que la meilleure méthode pour vaincre son ennemi est d'apprendre à le connaître dans un premier temps. Si nous pouvions analyser quelques échantillons de ces plantes, nous pourrions trouver un moyen efficace de les éradiquer. \nTelle sera donc ta mission : me ramener des échantillons. Si tu ne te sens pas de taille pour affronter des Slavenis, n'hésite pas à t'associer avec d'autres Homins. Je pense que, près des ruines, tu n'auras aucun mal à trouver des mages au service du Maître Zorai pour t'aider.]
+}
+
+MISSION_MATIS_08_P_OVL_GIVE_LOOT (bot giver, bot givervar)
+{
+	mission_matis_08_p_ovl_give_loot	[Rapporter les échantillons que vous avez ramassés à $givervar$]
+}
+
+MISSION_MATIS_08_P_T2_LOOT (bot giver)
+{
+	mission_matis_08_p_t2_loot	[Je vous ramène les échantillons.]
+}
+
+MISSION_MATIS_08_P_LDC_SUCCESS (bot passeur)
+{
+	mission_matis_08_p_ldc_success	[Magnifique, tu auras été un disciples modèle jusqu'au bout. Tu as toute ma gratitude ainsi que celle du peuple Matis. Si tu continues sur cette voie, tu pourrais devenir un puissant allié de notre peuple.{break}Ces échantillons sont d'une valeur inestimable pour nous. Certes nous pourrions nous en servir pour éradiquer ce fléau auquel nous avons donné naissance. Mais les Zorais semblent avoir la situation bien en main et je leur fait confiance pour en venir à bout sans notre aide, ils ont tellement peur que ces Slavenis mutants ne se propagent que leur combativité en est décuplée.{break} Je réserve un bien meilleur destin à ces échantillons que tu as vaillamment acquis. Leur analyse permettra aux scientifiques de mon peuple de reprendre leurs travaux en évitant les erreurs du passé. Rassures-toi, nous ferons preuve d'une extrême vigilance et tu peux être sûr que cette fois, nous arriverons au résultat escompté : créer une plante docile et productive.{break} Ces échantillons doivent vite partir pour Yrkanis. Trouve $passeur$ dans le campement, il est des nôtres et effectue régulièrement des allers-retours vers notre capitale. Donne lui ce que tu as ramassé, il se chargera de le remettre à nos chercheurs. Mais surtout, assure-toi que le Maître Zorai ne l'apprenne pas, nous devons continuer de lui faire croire que nous poursuivons le même but. Vas vite maintenant.]
+}
+
+MISSION_MATIS_08_P_OVL_TRAITOR (bot maitre_zorai, bot passeur)
+{
+	mission_matis_08_p_ovl_traitor	[Vous pouvez soit apporter les échantillons à $passeur$, soit informer $maitre_zorai$ des manigances des Matis.]
+}
+
+MISSION_MATIS_08_P_T2_PASSEUR (bot passeur)
+{
+	mission_matis_08_p_t2_passeur	[Vous devez apporter ces échantillons à Yrkanis]
+}
+
+MISSION_MATIS_08_P_T2_ZORAI (bot maitre_zorai)
+{
+	mission_matis_08_p_t2_zorai	[Les Matis veulent se servir de ces échantillons pour reprendre leurs expériences]
+}
+
+MISSION_MATIS_08_P_LDC_PASSEUR ()
+{
+	mission_matis_08_p_ldc_passeur	[Bien, puisque tels sont les ordres. Pour ma part, je crains que nous ne soyons en train de répéter les erreurs du passé. Je n'aime vraiment pas ces manigances. \n Mais peut être que je me fais du souci pour rien. Dans tous les cas, je n'ai pas à remettre en cause la volonté de mes supérieurs, je m'exécuterai donc. Il en est de même pour toi, tu as fais ton devoir, tu as servis le peuple Matis avec dévouement et tu ne peux qu'en être fier. Donne-moi ces échantillons et prends cette récompense pour tes bons et loyaux services.]
+}
+
+MISSION_MATIS_08_P_LDC_ZORAI ()
+{
+	mission_matis_08_p_ldc_zorai	[Tu as préféré me les apporter plutôt que de soutenir cette folle entreprise ! La sagesse et le courage dont tu as fait preuve t'honorent. Je crains hélas que les Matis n'arrivent à leurs fins. Tu as eu la force d'esprit de t'opposer à eux mais tu n'es pas le seul à les avoir servi et d'autres n'ont peut être pas fait le même choix que toi.{break}Mais cela, tu n'y peux rien. Sois fier de ton acte et sois assuré de l'amitié des Zorais à ton égard. Je ne jette pas la pierre aux Matis, je sais qu'ils ne sont pas tous perfides, comme je sais que tous les Zorais ne sont pas sages. Ainsi va Atys ! Nous n'y pouvons rien. Maintenant, donne moi ces échantillons afin que je les détruise et prends ceci, c'est un gage de respect de notre peuple. Reprends ta route et que Ma-Duk te protège.]
+}
+
+MISSION_MATIS_09_MIS_TITLE (bot giver)
+{
+	mission_matis_09_mis_title	[Essayer une autre profession]
+}
+
+MISSION_MATIS_09_MIS_DESC (bot giver, bot guide)
+{
+	mission_matis_09_mis_desc	[Retourner voir $guide$]
+}
+
+MISSION_MATIS_09_P_LDC_INTROP (bot guide)
+{
+	mission_matis_09_p_ldc_introp	[$guide$ t'indiquera ou te rendre]
+}
+
+MISSION_MATIS_09_GOSEEMAYOR_1 (bot guide)
+{
+	mission_matis_09_goseemayor_1	[Suivez votre radar pour trouver $guide$]
+}

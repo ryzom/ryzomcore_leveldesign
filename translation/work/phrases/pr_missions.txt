@@ -1,0 +1,294 @@
+﻿///////////////////////////MISSIONS PRIME ROOTS//////////////////////////////////////////
+
+///missions///
+
+/*
+PR_GROUP_1
+*/
+
+PR_GROUP_1_TITLE (bot giver)
+{
+		pr_group_1_title	[The captive Kamis ]
+
+}
+PR_GROUP_1_DESC (bot giver)
+{
+		pr_group_1_desc		[Find and free the prisoners]
+
+}
+PR_GROUP_1_STEP_1 ()
+{
+		pr_group_1_step_1 	[Kami happy to see valorous homins.\n
+					Me need help from valorous homins.{break}
+					Brother of me prisoner of bad peoples.\n
+					Homins call them Kawawan.\n
+					Kawawan catch brother of me, brother prisoner in a cave.\n
+					Valorous homins help Kami?\n
+					Kami give homins strange black object.\n
+					When black object near Kawawan flying house, Kawawan angry.]
+
+}
+PR_GROUP_1_STEP_2 ()
+{
+		pr_group_1_step_2 	[Kami no more prisoner.\n
+   					Kami happy but Kami sad.{break}
+   					Me sad because me not only Kami prisoner of bad black people.\n
+   					Kawawan make experiment on kittin and kittin become friend of kawawan.\n
+   					Other Kami prisoner in cave, no get out of cave, kittin friend of kawawan keeps brother prisoner.\n
+   					Cave south, homins help?]
+
+}
+PR_GROUP_1_END ()
+{
+		pr_group_1_end		[Homins killed kittin friend of black people.\n
+   					Kami thanks homins.{break}
+   					Black people catch kittin and go flying house.\n
+   					Kawawan open head of kittin and put magic in head.\n    
+   					When kittin back, kittin friend of kawawan.\n
+   					Me saw, kawawan not want me to see, Kawawan catch me and brother of me.\n
+   					Kami discreet, Kami observe black people, Kami know a lot about Kawawan.\n
+   					Homins helped Kami, Kami give nice objects to homins.]
+
+}
+
+///TXT NPC MISSION PR_GROUP_1///
+
+PR_GROUP_1_KARAVAN_ENGAGE_1 ()
+{
+		pr_group_1_karavan_engage_1	[Get out homins!]
+
+}
+PR_GROUP_1_KARAVAN_ENGAGE_2 ()
+{
+		pr_group_1_karavan_engage_2	[You are not allowed to stay here!]
+
+}
+PR_GROUP_1_KARAVAN_ENGAGE_3 ()
+{
+		pr_group_1_karavan_engage_3	[By Jena!\n
+									you will die!]
+
+}
+PR_GROUP_1_KARAVAN_ENGAGE_4 ()
+{
+		pr_group_1_karavan_engage_4	[Fools!\n
+									you will regret that affront!]
+
+}
+PR_GROUP_1_SET_OBJ_1 ()
+{
+		pr_group_1_set_obj_1		[Find a way to free the Kami captured by the Karavan.]
+
+}
+BEWARE ()
+{
+		beware		[This place is too dangerous, there is too much Karavan guardians.\n
+					Find a way to make them leave the cave.]
+
+}
+VIBRATIONS ()
+{
+		vibrations		[When approaching the black vehicle of the Karavan, the ring at your finger is begining to vibe.\n
+						It seems that the ring is setting off a mechanism inside the vehicle.\n
+						Beware, the Karavan will certainly come to see closer.]
+
+}
+REWARD_PR_GROUP_1_SWORD()
+{
+		reward_pr_group_1_sword	[Thunder blade.]
+}
+REWARD_PR_GROUP_1_RIFFLE()
+{
+		reward_pr_group_1_riffle	[The horizon riffle.]
+}
+REWARD_PR_GROUP_1_SHIELD()
+{
+		reward_pr_group_1_shield	[The black protector.]
+}
+REWARD_PR_GROUP_1_LAUNCHER()
+{
+		reward_pr_group_1_launcher	[The ardent launcher.]
+}
+REWARD_PR_GROUP_1_LBOOTS()
+{
+		reward_pr_group_1_lboots	[The boots of wind.]
+}
+REWARD_PR_GROUP_1_GLOVES()
+{
+		reward_pr_group_1_gloves	[The gloves of wind.]
+}
+REWARD_PR_GROUP_1_MACE()
+{
+		reward_pr_group_1_mace	[The head crusher.]
+}		
+
+
+/*
+PR_SOLO_1
+*/
+	
+PR_SOLO_1_TITLE (bot giver, bot_name kami)
+{
+	pr_solo_1_title		[Find a way to capture the $kami$.]
+}
+
+PR_SOLO_1_DESC(bot giver, bot_name kami, place wasteland)
+{
+	//"the" because giver is called "Karavan officer"
+	pr_solo_1_desc		[The $giver$ wants you to find a way to capture the $kami$ that lives in the
+						northwestern tunnels of the $wasteland$. This kami is very fast and elusive and his men 
+						didn't manage to approach it at all.]
+}
+
+PR_SOLO_1_STEP_1 ()
+{
+	pr_solo_1_step_1	[Greetings homin. You seem fast and clever, you could be of some help.\n\n
+						We desperately need to capture a particular kami and interrogate it as he could be part
+						of something that may be dangerous for Jena's light. Unfortunately my men didn't manage 
+						to put a hand on it as he flees very fast each time we try to approach.\n\n
+						You can see it where it lives : in a small tunnel network, 500 meters to the northwest.\n
+						If you manage to catch it and bring it to me, you may become one of the happy few that
+						Jena would consider as one of his high servants. You have three days, if you don't manage in this time,
+						I'll have to ask someone else.]
+}
+
+PR_SOLO_1_OBJ_1 (bot kami)
+{
+	pr_solo_1_obj_1		[Find the $kami$ and try to catch it.]
+}
+
+PR_SOLO_1_KAMI_TAUNT_1 ()
+{
+	pr_solo_1_kami_taunt_1	[Catch kami if you can !]
+}
+
+PR_SOLO_1_KAMI_TAUNT_2 ()
+{
+	pr_solo_1_kami_taunt_2	[You never catch kami !]
+}
+
+PR_SOLO_1_KAMI_TAUNT_3 ()
+{
+	pr_solo_1_kami_taunt_3	[Kami here, then kami not !]
+}
+
+PR_SOLO_1_KAMI_TAUNT_4 ()
+{
+	pr_solo_1_kami_taunt_4	[Homin tenacious but sooo slooooow !]
+}
+
+PR_SOLO_1_KAMI_TAUNT_5 ()
+{
+	pr_solo_1_kami_taunt_5	[Kami never get caught !]
+}
+
+PR_SOLO_1_OBJ_2 (bot kami)
+{
+	pr_solo_1_obj_2			[Find a way to corner and capture the $kami$.]
+}
+
+PR_SOLO_1_OBJ_3 (bot kami)
+{
+	pr_solo_1_obj_3			[It seems that you really have turned the $kami$ upset, give it a lesson.]
+}
+
+PR_SOLO_1_ANGRY_KAMI ()
+{
+	pr_solo_1_angry_kami	[KAMI ANGRY ! Never ever do that in kami home ! Now kami punish bad homin !]
+}
+
+PR_SOLO_1_KAMI_DIE ()
+{
+	pr_solo_1_kami_die		[Bad homin really strong. Kami surrender.]
+}
+
+PR_SOLO_1_OBJ_4 (bot kami)
+{
+	pr_solo_1_obj_4			[Go see the $kami$ in its home.]
+}
+
+PR_SOLO_1_KAMI_SURRENDER ()
+{
+	pr_solo_1_kami_surrender	[Kami tired fighting. Kami surrender. Wait for bad guys come get him, 
+								kami hear them.]
+}
+
+PR_SOLO_1_OBJ_5 ()
+{
+	pr_solo_1_obj_5			[Wait until the Karavan unit comes and takes the kami.]
+}
+		
+PR_SOLO_1_KARAVAN_END ()
+{
+	pr_solo_1_karavan_end	[Follow us with no resistance, little thing. You're now our prisonner.\n]
+}
+
+PR_SOLO_1_KAMI_END ()
+{
+	pr_solo_1_kami_end		[Kami follow you. Bad homin too strong. Kami don't want die.]
+}
+
+PR_SOLO_1_CAPTURED_KAMI ()
+{
+	pr_solo_1_captured_kami		[Now, you've got your kami]
+}
+
+PR_SOLO_1_STEP_2 (place bagne)
+{
+	pr_solo_1_step_2		[Wait a second, homin, I'm coordinating the evacuation of the prisonner...\n\n
+							Officer to carrier ship, do you copy ?\n
+							Authorization granted, load the cargo right now.]
+}
+
+PR_SOLO_1_OBJ_6 (bot giver)
+{
+	//"the" because giver is called "Karavan officer"
+	pr_solo_1_obj_6			[Wait until the $giver$ is ready to talk to you again.]
+}
+
+PR_SOLO_1_TAKEOFF_1 ()
+{
+	pr_solo_1_takeoff_1		[Officer to carrier ship, you have takeoff clearance.]
+}
+
+PR_SOLO_1_TAKEOFF_2 ()
+{
+	//obligé de passer le nom en dur dans ce cas-là (botsay sur machine à état)
+	pr_solo_1_takeoff_2		[Officer to carrier ship, the cargo must be delivered to our base in 
+							the Abyss of Ichor. Over.]
+}
+
+PR_SOLO_1_END ()
+{
+	pr_solo_1_end			[Good work, homin. Really, i'm impressed. And jena will too when I report these events.\n
+							When we'll need someone for a task, we now know we can count on your skills.\n
+							Here, take your reward and now if you excuse me, I have a lot of work that awaits.\n\n
+							So long, homin.]
+}
+
+//missions auto associées
+PR_SOLO_1_AUTO_TITLE(bot_name kami)
+{
+	pr_solo_1_auto_title	[Ask more about the $kami$]
+}
+
+PR_SOLO_1_AUTO_1(bot_name kami)
+{
+	pr_solo_1_auto_1		[I really would like to help you more, but my best men were helpless against this $kami$,
+							that's why I hired you. Maybe you can gather information that we can't access... By questionning
+							Zoraïs for example, they look very close to the kamis. We couldn't really as we are not welcome on their land, 
+							but maybe you would ?]
+}
+
+PR_SOLO_1_AUTO_2(bot_name kami)
+{
+	pr_solo_1_auto_2		[Yes, I once heard about this sort of $kami$. They are very shy and elusive, nobody has seen them angry
+							except one person, my grandfather, who was a bit unlucky : he accidentally cast an acid damage spell near
+							the rest place of one of these kamis when its owner was in sight, this turned the kami totally mad, rushing towards him,
+							and leaving him near dead. After that he refused to talk to a kami again...]
+}
+
+PR_SOLO_1_AUTO_3()
+{
+	pr_solo_1_auto_3		[Sorry, I've never heard about a kami acting like you describe, I can't help you.]
+}

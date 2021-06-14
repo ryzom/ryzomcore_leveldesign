@@ -1,0 +1,20 @@
+﻿R_06_10_MIS_TITLE (bot giver)
+{
+	r_06_10_mis_title	[L'observation de l'ennemi.]
+}
+
+R_06_10_MIS_DESC (bot giver, place lieu_jen_lai, race race_kitin)
+{
+	r_06_10_mis_desc	[Le chef des gardes de $lieu_jen_lai$ est toujours en quête d'informations concernant l'envahisseur $race_kitin$.]
+}
+
+R_06_10_P_LDF_INTRO (race creature_race_1, race creature_race_2, creature_model creature_target_1, creature_model creature_target_2, creature_model creature_target_3, creature_model creature_target_4, race race_kitin, place region_haven)
+{
+	r_06_10_p_ldf_intro	[J'aime mieux vous prévenir tout de suite, ce que je demande comporte de nombreux dangers. Si vous acceptez, vous devrez vous approchez des spécimens les plus dangereux de $region_haven$.{break}Dans un premier temps, vous devrez simplement observer 4 de ces créatures : $creature_target_1.ia$ $creature_target_1$, $creature_target_2.ia$ $creature_target_2$, $creature_target_3.ia$ $creature_target_3$ et $creature_target_4.ia$ $creature_target_4$. Je ne vous demande donc pas de les combattre, mais sachez que certaines vous attaqueront à vue si elles vous repèrent.{break}Dans un second temps, je vous demanderai de me rapporter des échantillons de chair de $creature_race_1$ et de $creature_race_2$, et bien entendu, là vous serez bien obligé de les combattre.{break}Les informations que vous me rapporterez seront précieuses à nos troupes pour repousser les hordes de $race_kitin.p$ qui assaillent régulièrement nos villes. Pour vous récompenser de vos services, je vous enseignerai une technique de magicien permettant de rester concentré en cas d'attaque. Sur ce, je vous souhaite bon courage.]
+}
+
+R_06_10_P_BC_DEBRIEF ()
+{
+	r_06_10_p_bc_debrief	[Très bien, vous venez de m'apporter des éléments particulièrement intéressants. Nous sauront en faire bon usage et nous vous sommes reconnaissants pour vos efforts. Voici donc la récompense que je vous avais promise.]
+}
+

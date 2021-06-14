@@ -4,23 +4,891 @@ MENUS PHRASES
 
 MENU_WHOAMI(player p, bot b)
 {
-		menu_who_am_i			[Who are you?]	
+		menu_who_am_i			[Who are you?]
 }
 
 MENU_WHOISKARAVAN(player p, bot b)
 {
 (b.race = karavan)
-menu_who_is_karavan				[What is the Karavan?]	
+menu_who_is_karavan				[What is the karavan?]
+}
+
+/**************************************************************************************************************************
+WHOAMI PHRASES KARAVAN NPCs
+**************************************************************************************************************************/
+
+WHOAMI_KARAVANGUARD(player p, bot b)
+{
+(b.race = karavan)
+menu_who_am_i_kguard				[I'm a Karavan Guardian. <**My duty is to fight the enemies of Jena.**>]
+}
+
+WHOAMI_KARAVANTELEPORTER(player p, bot b)
+{
+	whoami_karavanteleporter		[I am a Karavan Teleporter, <**and I have the power to teleport you to the capital of your people.**> You should think about it before as you won't be able to come back here.]
+}
+
+WHOAMI_KARAVANGUIDE(player p, bot b)
+{
+	whoami_karavanguide		[I'm a Karavan Guide and I am here to help you find the Karavan Teleporter.]
+}
+
+WHOIS_KARAVAN(player p, bot b)
+{
+(b.race = karavan)
+who_is_karavan					[The Karavan is invested with invincible authority by the Goddess, Jena. To them you must render services in order to obtain her favors.]
+}
+
+WHOAMI_TASK_KARAVAN_AMBASSADOR()
+{
+	whoami_task_karavan_ambassador	[<bullet points>
+						- se trouve sur les campements de tribus
+						- est l'interface entre la karavan et la tribu, reflète l'alignement de la tribu dans le conflit kami/karavan
+						- donne des tâches pour aider à subvenir aux besoins courants de la tribu
+						- offre la reconnaissance de la tribu et de la karavan en retour (fame)
+					]
+}
+
+WHOAMI_TASK_KARAVAN_WELCOMER()
+{
+	whoami_task_karavan_welcomer	[<bullet points>
+						- se trouve près des autels de teleport karavan
+						- donne des tâches pour le compte de la karavan directement (fame)
+						- les tâches sont basées sur l'exploitation de la nature (forage, quarter, craft) et la surveillance de la région
+					]
+}
+
+WHOAMI_KARAVAN_OFFICER()
+{
+	whoami_karavan_officer		[Je suis un officier de la puissante Karavan, détentrice de la puissance de la Déesse Jena. Par mon intermédiaire, la Déesse a la bonté de récompenser les homins qui se montrent dignes de sa confiance. J'offre ainsi des cubes d'ambre aux adeptes qui passent avec succès les épreuves dictées par Jena. Ces cubes sont le réceptacle d'un savoir inestimable.]
+}
+
+/**************************************************************************************************************************
+WHOAMI PHRASES KAMI NPCs
+**************************************************************************************************************************/
+
+
+WHOAMI_KAMI_PRIEST(player p, bot b)
+{
+	whoami_kami_priest	[Me Kami Preacher, friend of your people.]
+}
+
+WHOAMI_FYROS_KAMI_GUID(player p, bot b)
+{
+	whoami_fyros_kami_guid	[Me Kami Preacher, friend of your people.]
+}
+WHOAMI_KAMI_SENTINEL()
+{
+	whoami_kami_sentinel	[Me Kami Sentinel, guardian of nature.]
+}
+
+WHOAMI_TASK_KAMI_AMBASSADOR()
+{
+	whoami_task_kami_ambassador	[I represent Kamis here in this tribe. I offer tasks for general needs of tribe to faithful homins so they gain gratitude from Kamis and tribe.<**Remarque sur le texte du NPC : attention, c'est un kami et non un homin qui parle**>]
+}
+
+WHOAMI_TASK_KAMI_WELCOMER()
+{
+	whoami_task_kami_welcomer	[I stand here, homin, to offer tasks to faithful homins who want to gain Kami love. These tasks may consist of supplying objects, clearing land, killing harmful entities and watching over surrounding area.<**Remarque sur le texte du NPC : attention, c'est un kami et non un homin qui parle**>]
+}
+
+WHOAMI_KAMI_MASTER()
+{
+	whoami_kami_master		[Moi Kami Master. Moi ici pour apprendre choses à homins. Choses secrètes, choses qui rendent plus sage. Mais homins devoir prouver fidélité aux Kamis et passer épreuves avant de connaître ces choses.]
+}
+
+/**************************************************************************************************************************
+WHOAMI PHRASES HOMINS NPCs
+**************************************************************************************************************************/
+
+//////////////////////////////////////////// NEWBIELAND KAMI ADEPTS ///////////////////////////////////////////////////////////////////
+WHOAMI_KAMI_ADEPT(player p, bot b)
+{
+	whoami_kami_adept	[I am a faithful servitor of the Kamis. Follow me and I will lead you to one.]
+}
+
+WHOAMI_FYROS_KAMI_ADEPT(player p, bot b)
+{
+	whoami_fyros_kami_adept	[I am a faithful servitor of the Kamis.]
 }
 
 ////////////////////////////////////////////// NEWBIELAND GUARDS /////////////////////////////////////////////////////////////////////////
 WHOAMI_NEWBGUARD 		(player p, bot b)
 {
-	whoami_newbguard	[Greetings, young homin. If you get into bother come and find me and I shall rally to your defense.]
+	whoami_newbguard	[Greetings, young <**homin**>. If you get into bother come and find me and I shall rally to your defense.]
+}
+
+WHOAMI_NEWB_ZORAI_GUARD 		(player p, bot b)
+{
+	whoami_newb_zorai_guard	[Hail young Zoraï. <**>If you get into bother come and find me and I shall rally to your defense.]
+}
+
+WHOAMI_NEWB_FYROS_GUARD 		(player p, bot b)
+{
+	whoami_newb_fyros_guard	[Hail young Fyros. <**>If you get into bother come and find me and I shall rally to your defense.]
+}
+
+WHOAMI_NEWB_TRYKER_GUARD 		(player p, bot b)
+{
+	whoami_newb_tryker_guard	[Hallo, friend. <**> If you get into bother come and find me and I'll run to your defense.]
 }
 
 ////////////////////////////////////////////// NEWBIELAND MERCHANTS ///////////////////////////////////////////////////////////////////////////
 WHOAMI_NEWBMERCHANT_WEAPON 	()
 {
-whoami_newbmerchant_weapon	[Greetings, young newcomer ! I sell a terrific selection of hand weapons. You'll need a weapon to fight the dangerous animals roaming the area!]
+whoami_newbmerchant_weapon	[Greetings, young newcomer ! I sell <**the better selection of hand weapons in this place. You will need a weapon for fighting the dangerous creatures roaming around!**>]
 }
+
+WHOAMI_NEWBMERCHANT_CLOTHES	()
+{
+whoami_newbmerchant_clothes	[Greetings, friend. Don't be taken in by talk of weapons<**>, enjoy your new life and get rid of those shabby clothes. <**For your protection, I can sell bucklers too.**>]
+}
+
+WHOAMI_NEWB_MERCHANT_RM()
+{
+	whoami_newb_merchant_rm	[Good day, friend. I sell materials for crafters. Unfortunately my stock has never been lower...]
+}
+
+WHOAMI_NEWBMERCHANT_TOOL()
+{
+	whoami_newbmerchant_tool	[Good day, newcomer. If you need tools for crafting or harvesting, I can help you.]
+}
+
+WHOAMI_NEWB_FYROS_MERCHANT_WEAPON 	()
+{
+whoami_newb_fyros_merchant_weapon	[Warm greetings, young newcomer ! I sell <**the better selection of hand weapons in this place. You will need a weapon for fighting the dangerous creatures roaming around!**>]
+}
+
+WHOAMI_NEWB_FYROS_MERCHANT_CLOTHES	()
+{
+whoami_newb_fyros_merchant_clothes	[Young traveler, don't waste your time with weapons<**>, enjoy your new existence and get rid of those shabby clothes. <**For your protection, I can sell bucklers too.**>]
+}
+
+WHOAMI_NEWBIE_FYROS_MERCHANT_HARMOR	()
+{
+whoami_newbie_fyros_merchant_harmor	[Salut Homin, Maleureusement, je n'ai pas reçu d'armures de qualité suffisante à vendre. Mais, si par chance, des artisants m'en forge quelques unes, je serai plus que ravie de commercer avec eux.]
+}
+
+WHOAMI_NEWB_FYROS_MERCHANT_RM()
+{
+	whoami_newb_fyros_merchant_rm	[<**Bonjour, cher ami. Je vends quelques matières premières pour les artisans. Malheureusement ces derniers temps mon stock est au plus bas...**>]
+}
+
+///////////////////////////////////////////////////// NEWBIELAND WELCOMERS //////////////////////////////////////////////////////////////////////////
+WHOAMI_MISSION_OFFICER_NBLAND(player p, bot b)
+{
+	whoami_mission_officer_nbland	[I am a <**welcomer**>. This means I can help you discover your environment and learn more about Atys.<**>]
+}
+
+////////////////////////////////////////////////////// TRAINERS ///////////////////////////////////////////////////////////////////////////
+WHOAMI_NEWBINSTRUCTOR_CRAFT	()
+{
+whoami_newbinstructor_craft	[Good day, young <**Homin**>. Crafting is my talent, and it shall be yours too if you let me teach you.]
+}
+
+WHOAMI_NEWBINSTRUCTOR_MAGIE	()
+{
+whoami_newbinstructor_magie	[Approchez, jeune novice... La magie d'Atys est entourée de mystère. Mais si vous avez la volonté, je peux vous transmettre cet art.]
+}
+
+WHOAMI_NEWBINSTRUCTOR_HARVEST	()
+{
+whoami_newbinstructor_harvest	[<**Hello, young Homin. Our planet's ground is an endless source of goods for the one with a trained eye. I can teach you a thing or two...**>]
+}
+
+WHOAMI_NEWB_ZORAI_INSTRUCTOR_FIGHT	()
+{
+whoami_newb_zorai_instructor_fight	[Young Zoraï, I see you are a newcomer here. With me, you will learn how to fight, and become a true Zoraï fighter !]
+}
+
+WHOAMI_NEWB_ZORAI_INSTRUCTOR_CRAFT	()
+{
+whoami_newb_zorai_instructor_craft	[Ah, a young Zoraï. Crafting is my talent, and it shall be yours too if you let me teach you.]
+}
+
+WHOAMI_NEWB_ZORAI_INSTRUCTOR_MAGIE	()
+{
+whoami_newb_zorai_instructor_magie	[Listen, young newcomer... Magic is part of every Zoraï. If you have the will, I can help you tame it.]
+}
+
+WHOAMI_NEWB_ZORAI_INSTRUCTOR_HARVEST	()
+{
+whoami_newb_zorai_instructor_harvest	[<**Hello, young Homin. Our planet's ground is an endless source of goods for the one with a trained eye. I can teach you a thing or two...**>]
+}
+
+WHOAMI_NEWB_FYROS_INSTRUCTOR_FIGHT	()
+{
+whoami_newb_fyros_instructor_fight	[Young Zoraï, I see you are a newcomer here. With me, you will learn how to fight, and become a true Zoraï fighter !]
+}
+
+WHOAMI_NEWB_FYROS_INSTRUCTOR_CRAFT	()
+{
+whoami_newb_fyros_instructor_craft	[Ah, a young Zoraï. Crafting is my talent, and it shall be yours too if you let me teach you.]
+}
+
+WHOAMI_NEWB_FYROS_INSTRUCTOR_MAGIE	()
+{
+whoami_newb_fyros_instructor_magie	[Listen, young newcomer... Magic is part of every Homin. If you have the will, I can help you tame it.]
+}
+
+WHOAMI_NEWB_FYROS_INSTRUCTOR_HARVEST	()
+{
+whoami_newb_fyros_instructor_harvest	[<**Hello, young Homin. Our planet's ground is an endless source of goods for the one with a trained eye. I can teach you a thing or two...**>]
+}
+
+WHOAMI_NEWB_TRYKER_INSTRUCTOR_FIGHT	()
+{
+whoami_newb_tryker_instructor_fight	[Young Zoraï, I see you are a newcomer here. With me, you will learn how to fight, and become a true Zoraï fighter !]
+}
+
+WHOAMI_NEWB_TRYKER_INSTRUCTOR_CRAFT	()
+{
+whoami_newb_tryker_instructor_craft	[Ah, a young Zoraï. Crafting is my talent, and it shall be yours too if you let me teach you.]
+}
+
+WHOAMI_NEWB_TRYKER_INSTRUCTOR_MAGIE	()
+{
+whoami_newb_tryker_instructor_magie	[Listen, young newcomer... Magic is part of every Zoraï. If you have the will, I can help you tame it.]
+}
+
+WHOAMI_NEWB_TRYKER_INSTRUCTOR_HARVEST	()
+{
+whoami_newb_tryker_instructor_harvest	[<**Hello, young Homin. Our planet's ground is an endless source of goods for the one with a trained eye. I can teach you a thing or two...**>]
+}
+
+//////////////////////////////////////////// CARETAKERS ///////////////////////////////////////////////////////////////////
+WHOAMI_CARETAKER()
+{
+	whoami_caretaker	[Mon rôle, en tant que Caretaker, est de proposer des appartements aux homins désireux de s'installer ici. Il est bon de se reposer entre deux voyages, et un intérieur confortable est un bien très apprécié.]
+}
+
+WHOAMI_GUILD_CARETAKER()
+{
+	whoami_guild_caretaker	[Ma fonction fait de moi l'un des interlocuteurs privilégiés des guildes d'homins. Je leur propose différentes possibilités de développement, comme de somptueux appartements où elles peuvent se réunir, ou encore les services de trainers attitrés.]
+}
+
+//////////////////////////////////////////// GUILD CLERKS fct_registar ///////////////////////////////////////////////////////////////////
+WHOAMI_GUILD_CLERK()
+{
+	whoami_guild_clerk	[Lorsque des homins souhaitent créer une guilde, c'est à moi qu'ils doivent s'adresser. Je suis mandaté par les autorités pour enregistrer toute candidature, et valider les demandes remplissant les critères officiels. Les guildes permettent aux homins de se rassembler pour une cause commune, elles sont une force avec laquelle il faut compter.]
+}
+
+//////////////////////////////////////////// OUTPOST OFFICERS ///////////////////////////////////////////////////////////////////
+WHOAMI_OUTPOST_OFFICER()
+{
+	whoami_outpost_officer	[Les autorités cherchent à établir des avants-postes dans les régions sauvages, dominées par l'influence des tribus. Elles
+s'appuient pour cela sur les guildes, qui peuvent retirer de grands avantages en assumant la charge des avants-postes. Mon rôle est de confier ces
+charges aux guildes méritantes.]
+}
+
+WHOAMI_TRIBE_OUTPOST_OFFICER()
+{
+	whoami_tribe_outpost_officer	[Je suis chargé par ma tribu de veiller sur les avants-postes présents sur notre territoire. Parfois, nous confions
+à une guilde amie le soin d'entretenir temporairement l'un d'entre eux. Mais si des ennemis tentent de prendre ce qui nous appartient, nos combattants seront sans pitié !]
+}
+
+//////////////////////////////////////////// STABLEBOYS ///////////////////////////////////////////////////////////////////
+WHOAMI_STABLEBOY()
+{
+	whoami_stableboy	[Je suis le responsable des étables. Je prends soin des montures et des bêtes de bât laissées ici par les voyageurs. Je peux également vendre des animaux, que j'ai sélectionné moi-même parmi les bêtes proposées par les meilleurs éleveurs et dresseurs de la région.]
+}
+
+//////////////////////////////////////////////////// TASKGIVERS //////////////////////////////////////////////////////////////////////////////////////
+
+WHOAMI_TASK_SCOUT()
+{
+	whoami_task_scout	[<bullet points>
+					- se trouve en pleine nature
+					- éclaireur pour le compte de sa civilisation
+					- fait des rapports sur l'état de la région ou il se trouve
+					- donne divers types de tasks d'autosubsistance, de rassemblement d'informations
+						et d'entretien de sa région
+				]
+}
+
+WHOAMI_TASK_AMBASSADOR()
+{
+	whoami_task_ambassador	[<bullet points>
+					- se trouve dans les capitales, proche des centres de pouvoir
+					- représente sa civilisation à l'étranger
+					- recherche des ressources et des objets du continent où il est en service
+					- rassemble aussi des renseignements pour les transmettre à ses supérieurs
+				]
+}
+
+WHOAMI_TASK_CORPORAL()
+{
+	whoami_task_corporal	[<bullet points>
+					- se trouve dans les villes et les villages
+					- assure le maintien de l'ordre
+					- assure le contrôle de la faune
+					- grade faible, s'adresse à des joueurs petits levels
+				]
+}
+
+WHOAMI_TASK_SERGENT()
+{
+	whoami_task_sergent	[<bullet points>
+					- se trouve dans les villes et les villages
+					- assure le maintien de l'ordre
+					- assure le contrôle de la faune
+					- grade moyen, s'adresse à des joueurs moyen levels
+					- s'occupe de régions distantes, les tâches se dérouleront loin du point de départ
+				]
+}
+
+WHOAMI_TASK_CAPTAIN()
+{
+	whoami_task_captain	[<bullet points>
+					- se trouve dans les villes et les villages
+					- assure le maintien de l'ordre
+					- assure le contrôle de la faune
+					- haut gradé, s'adresse à des joueurs de haut levels
+					- s'occupe de régions distantes, les tâches se dérouleront loin du point de départ
+				]
+}
+
+WHOAMI_TASK_CITY_WELCOMER()
+{
+	whoami_task_city_welcomer	[<bullet points>
+						- se trouve à l'entrée des capitales
+						- assure les tâches courantes de la ville
+						- connait tout le monde de par sa position clé (donne de la fame)
+					]
+}
+
+WHOAMI_TASK_VILLAGE_WELCOMER()
+{
+	whoami_task_welcomer	[<bullet points>
+					- se trouve à l'entrée des villages
+					- assure les tâches courantes du village
+					- connaît tout le monde de par sa position clé (donne de la fame)
+					- s'adresse à des joueurs moyen et haut levels (les tâches se situent loin de leur point de départ)
+				]
+}
+
+WHOAMI_TASK_FOREMAN_APPRENTICE()
+{
+	whoami_task_foreman_apprentice	[<bullet points>
+						- se trouve dans les villes, les villages et les campements de tribus
+						- élève artisan
+						- donne des tâches de craft car il y a trop de travail pour lui tout seul
+						- s'adresse à des joueurs petits levels
+						- agit pour le compte de sa civilisation ou sa tribu
+					]
+}
+
+WHOAMI_TASK_FOREMAN()
+{
+	whoami_task_foreman	[<bullet points>
+					- se trouve dans les villes, les villages et les campements de tribus
+					- artisan professionnel
+					- donne des tâches de craft car il a besoin de main d'oeuvre pour développer son commerce, pour honorer des commandes
+					- s'adresse à des joueurs moyens levels
+					- agit pour le compte de sa civilisation ou sa tribu
+				]
+}
+
+WHOAMI_TASK_FOREMAN_MASTER()
+{
+	whoami_task_foreman_master	[<bullet points>
+						- se trouve dans les villes, les villages et les campements de tribus
+						- maître artisan
+						- donne des tâches de craft pour honorer des commandes spéciales
+						- s'adresse à des joueurs hauts levels
+						- agit pour le compte de sa civilisation ou sa tribu
+					]
+}
+
+WHOAMI_TASK_HAWKER()
+{
+	whoami_task_hawker	[<bullet points>
+					- se trouve aux alentours des outposts et des campements de tribus, ou à l'entrée des villes et villages
+					- commerçant itinérant toujours en mouvement
+					- vend des objets qu'il a rassemblés sur les autres continents pendant ses voyages
+					- achète certains objets et matières premières du continent où il se trouve
+				]
+}
+
+WHOAMI_TASK_HUNTER()
+{
+	whoami_task_hunter	[<bullet points>
+					- se trouve en plein nature sur des points de chasse ou à l'entrée des villes et villages
+					- chasseur professionnel pour sa civilisation ou sa tribu
+					- demande de l'aide pour rassembler des matières premières, se renseigner
+						sur la faune alentours ou protéger son territoire de chasse
+					- agit pour le compte de sa civilisation ou sa tribu
+				]
+}
+
+WHOAMI_TASK_JOURNEYMAN()
+{
+	whoami_task_journeyman	[<bullet points>
+					- se trouve près des outposts, des campements de tibus, près de l'entrée des villes et villages,
+						et plus rarement dans des zones de prospection
+					- artisan itinérant, demande de l'aide pour rassembler des matières premières
+					- demande de l'iade pour fabriquer des objets pour honorer des commandes, certains pouvant être
+						d'une civilisation différente de celle du continent sur lequel il se trouve
+				]
+}
+
+WHOAMI_TASK_KARAVAN_AGENT()
+{
+	whoami_task_karavan_agent	[<bullet points>
+						- se trouve sur les campements de tribus et des bornes de téléport karavan dans les prime roots
+						- homin membre de la kuilde, représentant officiel de la karavan dans les prime roots ou celle ci ne peut pas descendre
+						- donne des tâches pour subvenir aux besoins courants de la tribu ou de la karavan, principalement
+							des tâches d'exploitation de la nature (forage, quarter, craft)
+						- donne en retour de la fame karavan et tribu s'il est associé à un campement. Dans ce dernier cas,
+							il est l'interface entre la karavan et la tribu, reflète l'alignement de la tribu dans le conflit kami/karavan
+					]
+}
+
+WHOAMI_TASK_LOCAL_MESSENGER()
+{
+	whoami_task_local_messenger	[<bullet points>
+						- se trouve dans les villes et les villages
+						- donne des tâches de communication de messages
+						- gère service postal entre les villages / ville de la région (régions petits levels)
+					]
+}
+
+WHOAMI_TASK_FRONTIERS_MESSENGER()
+{
+	whoami_task_frontiers_messenger	[<bullet points>
+						- se trouve dans les villes et les villages
+						- donne des tâches de communication de messages
+						- gère service postal pour les régions moyens levels
+					]
+}
+
+WHOAMI_TASK_OUTLANDS_MESSENGER()
+{
+	whoami_task_outlands_messenger	[<bullet points>
+						- se trouve dans les villes et les villages
+						- donne des tâches de communication de messages
+						- gère service postal pour les régions hauts levels
+					]
+}
+
+WHOAMI_TASK_PATROLMAN()
+{
+	whoami_task_patrolman	[<bullet points>
+					- se trouve autour des outposts et des entrées de villages
+					- garde itinérant en patrouille
+					- donne des tâches de maintien de l'ordre, de surveillance, de protection
+						ainsi que quelques tâches liées à ses besoins propres (munitions...)
+				]
+}
+
+WHOAMI_TASK_PROSPECTOR()
+{
+	whoami_task_prospector	[<bullet points>
+					- se trouve en pleine nature, sur des spots de prospection ou près de l'entrée des villes et des villages
+					- récolteur de ressource professionnel pour le compte de son peuple ou de sa tribu
+					- demande de l'aide pour rassembler plus de MP ou pour nettoyer ses terres des MP indésirables
+				]
+}
+
+WHOAMI_TASK_TRIBE_WELCOMER()
+{
+	whoami_task_tribe_welcomer	[<bullet points>
+						- se trouve sur les campements de tribu
+						- gère les tâches courantes et les besoins de la tribu
+						- offre en retour la reconnaissance de cette dernière
+					]
+}
+
+WHOAMI_TASK_LOCAL_SUPPLIER()
+{
+	whoami_task_local_supplier	[Je gagne ma vie en gérant un réseau de distribution local pour les marchands et les artisans. Je suis également autorisé à attribuer des tâches de livraison de colis aux homins débutants. Ces tâches impliquent souvent la formation d'un convoi pour voyager dans la région.]
+}
+
+WHOAMI_TASK_FRONTIERS_SUPPLIER()
+{
+	whoami_task_frontiers_supplier	[Je gère un réseau de distribution pour les marchands et les artisans. J'ai également une licence pour confier des tâches de livraison de colis aux homins talentueux. Ces tâches nécessitent souvent la mise en place d'un convoi pour voyager dans les régions dangereuses.]
+}
+
+WHOAMI_TASK_OUTLANDS_SUPPLIER()
+{
+	whoami_task_outlands_supplier	[Je supervise un réseau de distribution pour les marchands et les artisans. J'ai également été nommé pour confier des tâches de livraison de colis à des homins chevronnés. Ces tâches entraînent souvent la mise en place d'un convoi pour voyager dans les régions hostiles.]
+}
+
+WHOAMI_TASK_OUTPOST_STEWARD_TRIBE()
+{
+	whoami_task_outpost_steward_tribe	[<bullet points>
+							- se trouve sur les outposts
+							- ne donne des tasks que si la guilde du joueur s'est vue attribuer officiellement la charge de l'outpost
+							- ces tasks concernent l'entretin courant de l'outpost lié à ses besoins spécifiques suivant le type de l'outpost
+							- travaille pour le bénéfice de sa tribu, si la guilde lui rend suffisamment service,
+								la tribu lui cèdera l'oupost sans se battre
+						]
+}
+
+WHOAMI_TASK_OUTPOST_STEWARD()
+{
+	whoami_task_outpost_steward	[<bullet points>
+						- se trouve sur les outposts
+						- n'apparait que si une guilde a une charge en cours sur l'outpost et a réussi à le conquérir
+						- ne donne des tasks que si la guilde du joueur s'est vue attribuer officiellement la charge de l'outpost
+						- ces tasks concernent l'entretin courant de l'outpost lié à ses besoins spécifiques suivant le type de l'outpost
+						- travaille pour le bénéfice de son peuple (représentant officiel du pouvoir en place) : si la guilde remplit suffisamment
+							de tâches liées à l'outpost, la charge sera considérée comme accomplie et elle recevra une grosse récompense
+						- permet aussi d'ordonner la construction des bâtiments sur commande d'un haut gradé de la guilde ayant la charge
+					]
+}
+
+//////////////////////////////////////////// RITEGIVERS ///////////////////////////////////////////////////////////////////
+WHOAMI_SAGE()
+{
+	whoami_sage	[Je suis le plus ancien des initiés, et le gardien du savoir en cet endroit. Les connaissances contenues dans
+les cubes d'ambre du Coffre de la sagesse sont infiniment précieuses, aussi ne puis-je les dispenser sans retenue. Les homins qui souhaitent accroître leur savoir doivent passer des épreuves pour se voir récompensés ; en tant que sage, je suis l'initiateur de certaines d'entre elles.]
+}
+
+WHOAMI_BARMAN()
+{
+	whoami_barman	[Qui suis-je ? Mais le meilleur ami de tous les homins qui passent la porte de mon bar ! J'apaise toutes les soifs, physiques ou spirituelles, réelles ou imaginaires. J'entends bien des choses dans mon établissement, rumeurs, histoires incroyables, récits de voyage dans les pays lointains, que j'ai souvent moi-même parcouru à une époque. Je fais partie des initiés, et en tant que tel, je peux offrir des cubes de la connaissance à ceux qui passent les épreuves avec succès, comme le veut la tradition.]
+}
+
+WHOAMI_INTENDANT()
+{
+	whoami_intendant	[Mon rôle est vaste : je suis responsable de la bonne marche de cet endroit. Je dois m'assurer que les habitants ne manquent de rien, que les artisans travaillent dans les meilleures conditions, que le commerce soit florissant et lucratif ! Je suis également un initié. Si tu souhaites acquérir des cubes d'ambre, il te faudra d'abord réussir des épreuves pour prouver ta valeur.]
+}
+
+WHOAMI_GUARD_CHIEF()
+{
+	whoami_guard_chief	[Comme mon titre l'indique, je suis le chef de la garde ! Capitaines, sergents, hommes d'armes sont sous mon commandement. Les ennemis de mon peuple sont nombreux, il est donc important de ne pas faillir et d'être toujours prêt au combat. Je ne suis pas seulement un soldat, mais aussi un initié, familier du Coffre de la connaissance. Les épreuves auxquelles je soumets les homins qui veulent obtenir des cubes d'ambre peuvent paraître difficiles, mais elles sont nécessaires : le savoir peut être une arme redoutable, qu'il est bon de ne laisser qu'entre des mains expérimentées.]
+}
+
+WHOAMI_TRIBE_CHIEF()
+{
+	whoami_tribe_chief	[Je suis le bras, le coeur et l'âme de ma tribu. Je veille sur les miens afin qu'ils ne manquent de rien. En cas de conflit, j'ai la charge de rendre la justice en accord avec nos coutumes. Les homins qui veulent avoir l'honneur d'être considérés comme nos frères doivent d'abord passer les épreuves sacrées. Je suis le gardien des connaissances de mon peuple, et si un homin valeureux sort victorieux de ces épreuves, je partagerai avec lui un peu de ce savoir. ]
+}
+
+WHOAMI_TRIBE_CHIEF_FRAHAR()
+{
+	whoami_tribe_chief_frahar	[Moi chef Frraiders ! Rroumpf ! Toi Grrramouk, rrrrreste ami avec les Frrrraiders ! Sinon moi boirrre dans ton crrrâne ! Grrarr ! ]
+}
+
+WHOAMI_TRIBE_CHIEF_GIBBAI()
+{
+	whoami_tribe_chief_gibbai	[Esprit de ma tribu, yark, j'ai pour mission de protéger les miens et de garder la mémoire, hempf. ]
+}
+
+WHOAMI_TRIBE_CHIEF_CUTE()
+{
+	whoami_tribe_chief_cute 	[Je suiiiiis... chef des Cuzans. Keeehk... Je défends la triiiibu.....Sheeeeesh. ]
+}
+
+WHOAMI_LEVIERS_DOUANIER_1()
+{
+whoami_leviers_douanier_1	[Les marchandises Fyros sont de trop bonne qualité pour être vendues aux autres peuples. Nous empêchons qu'elles ne s'exportent à l'étranger en imposant une taxe aux exporteurs. ]
+}
+
+WHOAMI_LEVIERS_DOUANIER_2()
+{
+whoami_leviers_douanier_2	[Le gouvernement impérial ne fait rien face à l'exportation de nos produits. Les Fyros, seuls, mérite la marchandise Fyros. ]
+}
+
+WHOAMI_KARAVAN_EMISSARY_EPISODE2()
+{
+	[Je suis un membre de la Karavan chargé de guider les homins vers Jena et son église.]
+}
+
+WHOAMI_LODGE_MASTER()
+{
+	[Je suis un maître artisan dirigeant une loge locale des Compagnons de la Foreuse. Ma guilde a pour rôle de faire perdurer l'artisanat des avant-postes créé à la fin du XXVe siècle et de transmettre ce savoir aux autres homins.]
+}
+
+WHOAMI_ARTISAN_TREPANS()
+{
+	[Je suis un artisan membre de la guilde des Compagnons de la Foreuse. Je transmets mon savoir en proposant des plans de fabrication spéciaux. Ces plans permettent la création d'objets fabriqués avec des matériaux modifiés, extraits par les grands trépans karavan.]
+}
+
+WHOAMI_ARTISAN_ARBRES_VRILLES()
+{
+	[Je suis un artisan membre de la guilde des Compagnons de la Foreuse. Je transmets mon savoir en proposant des plans de fabrication spéciaux. Ces plans permettent la création d'objets fabriqués avec des matériaux purifiés, extraits par les arbres-vrille kami.]
+}
+
+WHOAMI_JENA_PRIEST()
+{
+	[J'appartiens à l'Église de la Lumière. Mon rôle est d'accueillir les fidèles, et de convertir les homins qui souhaitent honorer Jena dans les règles de notre église. Puisse la Déesse nous honorer de sa Lumière !]
+}
+
+WHOAMI_MADUK_BONZE()
+{
+	[Je suis membre du Grand Ordre de Ma-Duk. J'accueille les adeptes en ce lieu sacré, et je convertis les homins qui veulent prier Ma-Duk selon les préceptes du Grand Ordre. Que le Grand Kami nous guide tous vers la plénitude suprême !.]
+}
+
+WHOAMI_MADUK_BONZE_SUP()
+{
+	[Ma mission est de recueillir les demandes des guildes qui souhaitent se convertir au culte de Ma-Duk. Si elles passent avec succès le rite sacré, ces guildes deviendront des guildes kamistes, dévouées à la protection d'Atys.]
+}
+
+WHOAMI_KARAVAN_AUMONIER()
+{
+	[Sache, homin, que je suis envoyé par la sainte Karavan pour convertir les guildes à la cause sacrée de la Déesse. Jena m'a donné le pouvoir d'accorder le statut de guilde karavanière aux corporations homines que je juge méritantes.]
+}
+
+WHOAMI_MAGISTRAT()
+{
+	[En tant que magistrat et représentant des autorités de ce pays, j'ai le pouvoir d'accorder la citoyenneté aux homins qui m'en font la demande.]
+}
+
+WHOAMI_MAGISTRAT_GUILD()
+{
+	[Mon rôle est d'examiner les demandes des guildes qui veulent acquérir le statut de guilde nationale. Je suis mandaté par les autorités officielles pour faire passer les rites de citoyenneté.]
+}
+///////////////////////////EPISODE 2///////////////////////
+
+WHOAMI_KAMI_PREACHER_LORD_SANCTUARY ()
+{
+        whoami_kami_preacher_lord_sanctuary    [Un envoyé du Grand Kami je suis. Récompenser les adeptes méritants, après la victoire des Kamistes lors de l'édification des sanctuaires, telle est ma mission.]
+
+}
+
+WHOAMI_KAMI_HIGH_PREACHER_SANCTUARY ()
+{
+        whoami_kami_high_preacher_sanctuary    [Récompenser les adeptes méritants, après l'édification des sanctuaires du Grand Kami, telle est ma mission.]
+
+}
+
+WHOAMI_KARAVAN_GUIDE_TEMPLE ()
+{
+        whoami_karavan_guide_temple    [Je suis ici pour récompenser les homins qui se sont battus pour ériger les temples de Jena.]
+
+}
+
+WHOAMI_KARAVAN_HIGH_GUIDE_TEMPLE ()
+{
+        whoami_karavan_high_guide_temple    [Je suis un Haut Guide, responsable d'un Office au sein de la Karavan. Je suis ici pour récompenser les fidèles méritants, après la victoire des Karavaniers lors de l'édification des temples de Jena.]
+
+}
+//////////////////////////////////////////////////// INSTRUCTOR //////////////////////////////////////////////////////////////////////////////////////
+WHOAMI_INSTRUCTOR_MAGIE	()
+{
+whoami_instructor_magie	[La magie d'Atys est entourée de mystères mais, semble-t-il, vous avez la volonté de les maîtriser. Je peux, si vous le désirez, vous transmettre mon savoir relatif à cet art.]
+}
+
+WHOAMI_INSTRUCTOR_HARVEST	()
+{
+whoami_instructor_harvest	[Les matières premières sont faciles à dénicher pour l'oeil averti. Le sol de notre planète en recèle une quantité presque infinie pour qui sait l'exploiter correctement. Je peux, si vous le désirez, vous enseigner une chose ou deux sur le sujet.]
+}
+
+WHOAMI_NEWBINSTRUCTOR_FIGHT ()
+{
+		whoami_instructor_fight	[Avec mes connaissances les homins perfectionnent leurs techniques de combat. Les actions que j'enseigne vous permettront de briller lors de vos futures batailles et d'en sortir la tête haute. ]
+}
+
+WHOAMI_INSTRUCTOR_CRAFT ()
+{
+		whoami_instructor_craft	[Chacun d'entre nous excelle dans un art. Pour certains il s'agit du combat, pour d'autres c'est la magie ou encore la récolte. Pour ma part l'Artisanat est mon chemin de vie. S'il est aussi le vôtre, je me ferai un honneur de vous transmettre le savoir et les techniques élaborées par nos anciens.]
+}
+//////////////////////////////////////////////////// MERCHANT //////////////////////////////////////////////////////////////////////////////////////
+
+WHOAMI_MERCHANT_CLOTHES ()
+{
+		whoami_merchant_clothes	[J'ai à vous proposer de nombreux vêtements pour la pratique de la magie ainsi qu'un grand choix d'armures légères.]
+}
+
+WHOAMI_MERCHANT_ARMOR ()
+{
+		whoami_merchant_armor	[J'ai de belles armures à vous vendre ainsi que de solides boucliers. Jetez donc un oeil à ma marchandise, vous le ne regrettez pas !]
+}
+
+WHOAMI_MERCHANT_WEAPON_1H ()
+{
+		whoami_merchant_weapon_1h	[J'ai un choix impressionnant d'armes à vendre. Elles sont légères et se manient avec une seule main. Vous en aurez besoin pour combattre les animaux dangereux qui rôdent dans le coin ! En fouillant bien, vous trouverez aussi des gants amplificateurs de magie si vous la pratiquez.]
+}
+
+WHOAMI_MERCHANT_WEAPON_2H ()
+{
+		whoami_merchant_weapon_2h	[J'ai un choix impressionnant d'armes à deux mains à vendre. Elles sont particulièrement destructrices, vous en aurez besoin pour combattre les animaux dangereux qui rôdent dans le coin !]
+}
+
+
+WHOAMI_MERCHANT_RM ()
+{
+		whoami_merchant_rm	[Je vends et j'achète des matières premières pour les artisans. Grâce à moi ils peuvent réaliser leurs chefs d'oeuvre sans avoir à voyager trop loin dans les terres sauvages.]
+}
+
+WHOAMI_MERCHANT_TOOL ()
+{
+		whoami_merchant_tool	[Si vous avez besoin d'outils pour l'artisanat ou les récoltes, je peux vous aider.]
+}
+
+//////////////////////////////////////////////////// TRIBE //////////////////////////////////////////////////////////////////////////////////////
+WHOAMI_TASK_FOREMAN_APPRENTICE_TRIBE ()
+{
+		whoami_task_foreman_apprentice_tribe	[Je ne suis peut-être que le contremaître des apprentis artisans de notre tribu, mais le travail ici ne manque pas. Il y en a tellement que j'accueille volontiers quelqu'un à qui je peux confier une tâche ou deux. Le travail n'est pas très difficile et convient tout à fait à un homin débutant.]
+}
+
+WHOAMI_TASK_FOREMAN_MASTER_TRIBE ()
+{
+		whoami_task_foreman_master_tribe	[Je suis contremaître expert, et je suis très fier d'offrir mon savoir-faire en matière d'artisanat pour l'évolution de ma tribu. Je cherche des homins chevronnés pour réaliser quelques tâches et commandes spéciales faites à notre tribu.] }
+
+WHOAMI_TASK_FOREMAN_TRIBE ()
+{
+		whoami_task_foreman_tribe	[Je gagne ma vie en supervisant la fabrication des objets pour ma tribu. Je cherche toujours des homins pour réaliser une tâche ou deux qui m'aideraient bien à remplir mes commandes.]
+}
+
+
+
+WHOAMI_TASK_HUNTER_TRIBE ()
+{
+		whoami_task_hunter_tribe	[Chasser est autant un plaisir qu'une nécessité pour alimenter la tribu. J'ai souvent besoin de personnes motivées pour collecter des matériaux, réunir des informations sur la faune locale et prospecter ces terres de chasse pour la prospérité de mes pairs.]
+}
+
+WHOAMI_TASK_PROSPECTOR_TRIBE ()
+{
+		whoami_task_prospector_tribe	[Je suis le prospecteur le plus compétent de ma tribu. Je n'ai jamais un moment de libre, je cours toujours à droite à gauche, collectant des ressources pour la prospérité de mon peuple. Étant toujours débordé, je cherche continuellement des homins méritants pour m'aider à réunir les matières dont j'ai besoin et à nettoyer le sol des ressources indésirables.]
+}
+//////////////////////////////////////////////////// PRIMITIFS //////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////// CUTE //////////////////////////////////////////////////////////////////////////////////////
+WHOAMI_TASK_FOREMAN_MASTER_CUTE ()
+{
+		whoami_task_foreman_master_cute	[Je suuiiiiis le contremaîiitre des Cuuuzans ... Shhhhh... Je cherche des homiiins compétents pouvaaant accompliiir quelques tâaaaches pour aiiider notre triiibu... Shhh !] }
+
+WHOAMI_TASK_HUNTER_CUTE ()
+{
+		whoami_task_hunter_cute	[Keeehk ! Je dois chaaaassseer de la nourriiiture pour la triiibu... Shhhhh...J'ai besoooin d'aiiide pour collecter de nombreuuuses choses... Sheeeeeesh...  utiiiles pour nous.]
+}
+
+WHOAMI_TASK_PROSPECTOR_CUTE ()
+{
+		whoami_task_prospector_cute	[Je suis le prospecteuuur de notre triiiibu... Shhhhh... Beaucoup de travail iciiii ! ...Sheeeeeesh... Je cherche des homiiins méritaants pour m'aider à rempliiir nos stocks... Shhhhh... et nettoyer le sol des ressssouuurces indésiiirables.]
+}
+
+WHOAMI_TASK_OUTLANDS_SUPPLIER_CUTE ()
+{
+		whoami_task_outlands_supplier_cute	[...Sheeeeeesh... Je suiiiis le fourniiisssseur de la triiibu, je m'occupe d'envoyer et de recevoiiiir toutes sortes de choses... Shhhhh... Je peux aiiinsi attriiibuer des tâches de livraiiison à des homiiiins chevronnés... Sheeeeeesh... Ces tâaaaches impliquent soouvent des voyaaages dans des régiiions hostiles.]
+}
+//////////////////////////////////////////////////// GIBBAIS //////////////////////////////////////////////////////////////////////////////////////
+WHOAMI_TASK_FOREMAN_MASTER_GIB ()
+{
+		whoami_task_foreman_master_gib	[Je suis le contremaître des Gibads, yeehck ! Je suis très fier de superviser le travail des artisans de ma tribu, hempf ! Je cherche des artisans chevronnés pour réaliser quelques tâches pour notre tribu.] }
+
+WHOAMI_TASK_HUNTER_GIB ()
+{
+		whoami_task_hunter_gib	[Yark ! Chasser est une nécessité pour alimenter la tribu. J'ai besoin de personnes pour collecter des matériaux, yeehck !.. pour réunir des informations sur la faune locale, et pour prospecter ces terres afin d'assurer la prospérité de mes pairs.]
+}
+
+WHOAMI_TASK_PROSPECTOR_GIB ()
+{
+		whoami_task_prospector_gib	[Je suis le prospecteur de notre tribu. Beaucoup de travail par ici... yeehck ! Je cherche des homins méritants pour m'aider à remplir nos stocks et à nettoyer le sol des ressources indésirables.]
+}
+
+WHOAMI_TASK_OUTLANDS_SUPPLIER_GIB ()
+{
+		whoami_task_outlands_supplier_gib	[Yark ! Je fournis toutes sortes de choses aux marchands et aux artisans de ma tribu, ainsi qu'à nos alliés. Ouuuk ! Je peux ainsi attribuer des tâches de livraison à des homins chevronnés. Yeehck ! Ces tâches impliquent souvent des voyages dans des régions hostiles.]
+}
+//////////////////////////////////////////////////// FRAHARS //////////////////////////////////////////////////////////////////////////////////////
+WHOAMI_TASK_FOREMAN_MASTER_FRAH ()
+{
+		whoami_task_foreman_master_frah	[Moi contrremaîtrrre ! Rroumpf ! Moi surrrveiller trrravail artisans de ma tribu ! Grrrarr ! Moi cherrrche amis arrrrtisans ! Rrréaliserr tâches pour trrribu ! Rroumpf !] }
+
+WHOAMI_TASK_HUNTER_FRAH ()
+{
+		whoami_task_hunter_frah	[Rroumpf ! Moi Chasseurr ! Moi nourrrirr trrribu ! Grrrarr ! Toi aider trrribu ?  Toi aider moi ! ]
+}
+
+WHOAMI_TASK_PROSPECTOR_FRAH ()
+{
+		whoami_task_prospector_frah	[Moi prrrospecteurr ! Grrrarr ! Beaucoup trrravail ici ! Moi cherrrcherr homin pour trrravail. Rroumpf ! Toi aider moi ?  ]
+}
+
+WHOAMI_TASK_OUTLANDS_SUPPLIER_FRAH ()
+{
+		whoami_task_outlands_supplier_frah	[Grrrarr ! Moi m'occuper de commerrrce ! Moi livrrrer marrrchands ! Moi livrrrer arrrtisans ! Moi orrrganiser convois ! Rroumpf ! Toi fort ? Toi vouloirr livrer pourr moi ? Toi avoir choses pour moi ?]
+}
+
+WHOAMI_RING ()
+{
+		whoami_ring	[Bienvenue Homin ! \nJe suppose que tu te demandes qui je suis et pourquoi je me tiens près de ce nouveau terminal ? Eh bien, je suis censé te renseigner sur son utilité. Comme tu le sais probablement, il y a eu plusieurs expéditions envoyées dans les terres anciennes par les quatre nations homines  il y a peu de temps.{break} Ces expéditions étaient chargées de trouver des chemins menant à certaines parties des Terres Anciennes, inaccessibles aux Homins depuis le Grand Essaim. \nCes expéditions ont fait face à de nombreux dangers, et pas seulement aux Kitins foncièrement hostiles des terres anciennes, pour nous ramener des informations. Nous avons maintenant mis en place une façon beaucoup plus sûre de voyager vers ces terres anciennes. Bien sûr, cela ne signifie pas que c'est moins dangereux là-bas, mais le trajet est plus tranquille avec ces terminaux. \nDonc, si tu penses être suffisamment courageux pour y aller, n'hésites pas! Mais ne viens pas me dire que je ne t'ai pas mis en garde contre les dangers qui menacent là-bas. {break}Je ne sais pas exactement ce qui t'attend de l'autre côté. Bonne chance !]
+}
+
+WHOAMI_NEWB_TRYKER_MERCHANT_JEWEL	()
+{
+whoami_newb_tryker_merchant_jewel	[Listen, young newcomer... Magic is part of every Homin. If you have the will, I can help you tame it.]
+}
+
+
+WHOAMI_NEWBIE_ZORAI_INSTRUCTOR	()
+{
+	whomai_newbie_zorai_instructor	[Je suis un élu des dieux. Ils m'ont accordés leurs faveurs. Et par eux, j'ai accès à un pouvoir défiant notre compréhension. Je peux t'enseigner à utiliser le don divin.]
+}
+
+WHOAMI_NEWBIE_TRYKER_MERCHANT_JEWEL	()
+{
+whoami_newbie_tryker_merchant_jewel	[Tu souhaites savoir qui je suis ? C'est très simple, je suis un commerçant. Je vends tous types de bijoux, anneaux, diadèmes, colliers, pendentifs en tout genre. Qu'ils soient magiques ou simplement ornementaux, je les ai tous. Jettes un oeil à mes marchandises et fais ton choix. Si pendant ton séjour ici tu mets la main sur d'autres bijoux, je peux les revendre pour toi.]
+}
+
+WHOAMI_NEWBIE_FYROS_INSTRUCTOR_MAGIE	()
+{
+whoami_newbie_fyros_instructor_magie	[Je rempli ici une fonction bien précise. J'ai la responsabilité de l'apprentissage de la magie aux jeunes Homins comme toi. C'est une tâche délicate car si nombreux sont ceux qui peuvent manipuler la magie, peu sont ceux qui vraiment la comprennent vraiment.]
+}
+
+
+WHOAMI_NEWBIE_KARAVAN_OFFICER	()
+{
+whoami_newbie_karavan_officer	[Salut à toi. Je suis un conseiller de la toute puissante Karavan. J'apporte aide et conseils aux dirigeants de cette communauté. Les membres les plus méritants peuvent bénéficier des services de la Karavan. Nous aurons sûrement l'occasion de nous revoir, surtout lorsque tu souhaiteras quitter ces terres pour le continent de ton peuple.]
+}
+
+WHOAMI_NEWBIE_HARVEST_INSTRUCTOR	()
+{
+whoami_newbie_harvest_instructor	[Qui je suis et ce que je fais ici sont intimement liés. Je suis le maître récolteur, j'enseigne à tous la puissance d'Atys et leur montre cette voie parfois méconnue, parfois rejetée mais toujours respectée. Nous autres, récolteurs sommes la pierre angulaire de toutes les autres activités et je peux t'enseigner comment profiter d'Atys sans piller ses trésors.]
+}
+
+WHOAMI_ARTISAN_RESTAURATEUR1	()
+{
+whoami_artisan_restaurateur1	[Salutations,\nJe me prénomme Essembeh, Artisan restaurateur, pour vous servir.\nJe touche un peu à tout et m'intéresse particulièrement à la restauration d'ouvrages anciens.\nSi vous avez besoin de reconstituer un document abîmé, venez me voir avec tous les morceaux que vous avez et je ferai de mon mieux. Mes services peuvent sembler onéreux mais je suis le meilleur et surtout le seul...]
+}
+
+WHOAMI_ARTISAN_RESTAURATEUR2	()
+{
+whoami_artisan_restaurateur2	[Salutations,\nJe me prénomme Jubet, Artisan restaurateur, pour vous servir.\nJe touche un peu à tout et m'intéresse particulièrement à la restauration d'ouvrages anciens.\nSi vous avez besoin de reconstituer un document abîmé, venez me voir avec tous les morceaux que vous avez et je ferai de mon mieux. Mes services peuvent sembler onéreux mais je suis le meilleur et surtout le seul...]
+}
+WHOAMI_ARTISAN_RESTAURATEUR3	()
+{
+whoami_artisan_restaurateur3	[Salutations,\nJe me prénomme Bataille, Artisan restaurateur, pour vous servir.\nJe touche un peu à tout et m'intéresse particulièrement à la restauration d'ouvrages anciens.\nSi vous avez besoin de reconstituer un document abîmé, venez me voir avec tous les morceaux que vous avez et je ferai de mon mieux. Mes services peuvent sembler onéreux mais je suis le meilleur et surtout le seul... ]
+}
+WHOAMI_ARTISAN_RESTAURATEUR4	()
+{
+whoami_artisan_restaurateur4	[Salutations,\nJe me prénomme Fontaine, Artisan restaurateur, pour vous servir.\nJe touche un peu à tout et m'intéresse particulièrement à la restauration d'ouvrages anciens.\nSi vous avez besoin de reconstituer un document abîmé, venez me voir avec tous les morceaux que vous avez et je ferai de mon mieux. Mes services peuvent sembler onéreux mais je suis le meilleur et surtout le seul... ]
+}
+WHOAMI_ARTISAN_RESTAURATEUR5	()
+{
+whoami_artisan_restaurateur5	[Salutations,\nJe me prénomme Abyrius, Artisan restaurateur, pour vous servir.\nJe touche un peu à tout et m'intéresse particulièrement à la restauration d'ouvrages anciens.\nSi vous avez besoin de reconstituer un document abîmé, venez me voir avec tous les morceaux que vous avez et je ferai de mon mieux. Mes services peuvent sembler onéreux mais je suis le meilleur et surtout le seul... ]
+}
+WHOAMI_KITINIERE_COORD		()
+{
+whoami_kitiniere_coord		[Ma fonction présente consiste à organiser les recherches sur ce site. \nDes explorateurs nous ont relatés cet affaissement de terrain. Celui-ci se révèle être l'entrée des tunnels d'Almati, le grand alchimiste royal Matis. Ce fou a permi aux Kitins de trouver un chemin vers la surface. De plus, nous autres Rangers n'avons pas les troupes nécessaires pour endiguer cette menace.\n Seule la détermination des Homins les plus courageux nous permettra de faire face. Ce petit poste avancé servira de base de départ de toutes nos opérations au sein de cette kitinière.]
+}
+WHOAMI_KITINIERE_RANGER ()
+{
+whoami_kitiniere_ranger [Ma fonction présente consiste à observer, evaluer et transmettre les informations concernant les kitins à la base d'Almati.\nLa kitinière n'est pas un lieu sûr, mais je suis heureuse de voir tant de courageux homins venir lutter contre cette menace.\nJ'aurais peut-être des missions à vous confiez.\nRevenez me voir à l'occasion.]
+}
+
+//////////////////////////////////////////////////// CIV //////////////////////////////////////////////////////////////////////////////////////
+
+FYROS_CIV_SHOP_WHOAMI ()
+{
+	fyros_civ_shop_whoami	[Mon rôle est de récompenser tout ceux qui aident le peuple fyros.]
+}
+
+TRYKER_CIV_SHOP_WHOAMI ()
+{
+	tryker_civ_shop_whoami	[Mon rôle est de récompenser tout ceux qui aident le peuple tryker.]
+}
+
+MATIS_CIV_SHOP_WHOAMI ()
+{
+	matis_civ_shop_whoami	[Mon rôle est de récompenser tout ceux qui aident le peuple matis.]
+}
+
+ZORAI_CIV_SHOP_WHOAMI ()
+{
+	zorai_civ_shop_whoami	[Mon rôle est de récompenser tout ceux qui aident le peuple zoraï.]
+}
+

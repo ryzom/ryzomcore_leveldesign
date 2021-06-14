@@ -1,0 +1,41 @@
+﻿R_05_29_MIS_TITLE (bot giver, race race_slaveni)
+{
+	r_05_29_mis_title	[L'étude des $race_slaveni.p$.]
+}
+
+R_05_29_MIS_DESC (bot giver, race race_slaveni)
+{
+	r_05_29_mis_desc	[Aider l'intendante dans ses recherches sur $race_slaveni.pda$ $race_slaveni.p$.]
+}
+
+R_05_29_P_LDF_INTRO (race race_slaveni)
+{
+	r_05_29_p_ldf_intro	[Bienvenue $self$, Si vous cherchez à aider notre communauté, j'ai une mission à vous confier.\n
+Depuis quelques temps déjà, je mène des recherches sur les plantes intelligentes des environs. $race_slaveni.pda$ $race_slaveni.p$ sont particulièrement actifs dans la région, et j'en ignore la raison. J'ai peur que leur prolifération ne devienne inquiétante.{break} Pour continuer mes recherches, j'ai besoin de morceaux de $race_slaveni.p$. Malheureusement, la meilleure façon de s'en procurer reste de tuer quelques specimens. Je répugne à vous demander cela, mais lorsque l'équilibre est menacé, il faut prendre des décisions draconiennes... Je compte donc sur vous pour faire ce qui doit être fait.{break} Je ne sors pas souvent d'ici en raison de mes nombreux travaux, j'ai donc l'habitude de me tenir informée de la prolifération des plantes grâce à deux prospecteurs de ma connaissance. {break} Trouvez-les et parlez-leur du problème, ils sauront vous renseigner.]
+}
+
+R_05_29_P_T2_PROSPECTOR1 (bot prospector_1, race race_slaveni)
+{
+	r_05_29_p_t2_prospector1	[On m'a dit que vous en saviez long sur $race_slaveni.pda$ $race_slaveni.p$]
+}
+
+R_05_29_P_BC_PROSPECTOR1 (bot givervar, place place_spot_1, bot prospector_2, creature_model slaveni_1, creature_model slaveni_2, creature_model slaveni_4)
+{
+	r_05_29_p_bc_prospector1	[Et on vous a bien renseigné. Il y aurait beaucoup à dire sur ces plantes intelligentes. Comme de nombreuses autres plantes sur Atys, elles cherchent les terres gorgées d'eau et exposées au vent pour disséminer leurs graines. {break} Allez voir aux alentours de $place_spot_1$, vous pourrez les observer par vous-même. Il existe plusieurs espèces dans la région, $slaveni_1.pia$ $slaveni_1.p$, $slaveni_2.pia$ $slaveni_2.p$ et les $slaveni_4.pia$ $slaveni_4.p$. Un petit conseil : ce sont des plantes, aussi ne vous attendez pas à les voir fuir face à des sorts de terreur... {break} Si, comme je le pense, $givervar$ vous envoie, je vous conseille de rencontrer $prospector_2$. Elle pourra vous éclairer sur les matériaux qu'il vous faut récupérer.]
+}
+
+R_05_29_P_T2_PROSPECTOR2 (bot prospector_2, bot givervar, race race_slaveni)
+{
+	r_05_29_p_t2_prospector2	[J'ai un petit travail à faire pour $givervar$ et j'ai besoin de plus d'informations sur $race_slaveni.pda$ $race_slaveni.p$]
+}
+
+R_05_29_P_LDC_PROSPECTOR2 (bot givervar, item mp_loot_1, item mp_loot_2, item mp_loot_3, item mp_loot_4)
+{
+	r_05_29_p_ldc_prospector2	[Ainsi, $givervar$ continue toujours ses recherches... Elle est très soucieuse de l'équilibre naturel de la région. Je sais ce qu'il lui faut pour ses travaux. {break} Apportez-lui $mp_loot_1.pia$ $mp_loot_1.p$, $mp_loot_2.pia$ $mp_loot_2.p$, $mp_loot_3.pia$ $mp_loot_3.p$ et $mp_loot_4.pia$ $mp_loot_4.p$. Ne tardez pas, $givervar$ compte sur vous !]
+}
+
+R_05_29_P_BC_GIVE (race race_slaveni)
+{
+	r_05_29_p_bc_give	[Merci, $self$, c'est tout à fait ce que je cherchais. J'imagine que ça n'a pas été facile. Je ne suis pas une ingrate, et je vais vous récompenser à la hauteur de vos efforts. Je vais partager avec vous mon modeste savoir et vous apprendre une technique de défense magique. J'ajouterai à cela un cube d'ambre contenant de précieuse connaissances sur $race_slaveni.pda$ $race_slaveni.p$.]
+}
+

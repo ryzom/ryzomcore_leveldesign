@@ -1,0 +1,388 @@
+﻿/*
+TA_FIGHT_MIS_01
+*/
+TA_FIGHT_MIS_01_TITLE (bot giver)
+{
+		ta_fight_mis_01_title		[The charlatan.]
+
+}
+TA_FIGHT_MIS_01_DESC (bot giver, bot onwe)
+{
+		ta_fight_mis_01_desc		[Help $giver$ to find what's $onwe$ saw.]
+}
+
+TA_FIGHT_MIS_01_STEP_1 (bot target)
+{
+		ta_fight_mis_01_step_1 		[$target$, the daughter of the armor merchant spoke to me about the presence of a strange animal in the proximity.{break}
+									We have to discover if there is a real menace for our village.\n
+									I sent a patrol of guards to verify the words of $target$ but I'm afraid that, one more time, they haven't take this task seriously.\n
+									Try to speak to her, she will tell you more about what she saw.\n
+									She is in the village.]
+}
+TA_FIGHT_MIS_01_STEP_2 ()
+{
+		ta_fight_mis_01_step_2 		[You want to know more about the disturbing encounter I made?{break}
+									I like to have picnic in quiet places each time I have some free time.\n
+									One of my favorite places is a little creek est of the village.\n
+									But yesturday I saw a very srange animal in this place, it was scaring.\n
+									Please can you check this creek to see if the beast is gone?\n
+									to find this place you have to follow the beach in the direction of est.\n
+									After few minutes you will find an enclave formed by two clives.\n
+									This enclave is the entrance of the creek.]
+}
+TA_FIGHT_MIS_01_OBJ ()
+{		
+		ta_fight_mis_01_obj			[Find the little creek, beyound the enclave, est of the village.]
+}
+
+TA_FIGHT_MIS_01_MES_SYSTEM_1 (bot onwe)
+{	
+		ta_fight_mis_01_mes_system_1		[You are in the little creek that $onwe$ likes to have picnic but there is nothing strange.\n
+											You check the place and you finally find spoors of an animal, but it's no longer here.]
+}
+
+TA_FIGHT_MIS_01_STEP_3 (race bodoc, bot target)
+{
+		ta_fight_mis_01_step_3 		[You didn't found the animal?\n
+									It's stange, I'm sur to have seen a $bodoc$.\n
+									But it wa not an ordinary $bodoc$, this one was grunting in a very disturbing way.\n
+									Moreover it slobbed  and I think that it was about to attack me when I ran away.\n
+									A very strang behaviour for an herbivore.\n
+									That's make me think that $target$, a Matis specialized in the breeding of $bodoc.p$ is actually in the village.\n
+									Rumors tell that he sells contagious animals and that they have contamined others in the Matis continent.\n
+									The $bodoc$ I saw seems to be sick, $target$ could be the responsable.\n
+									You should speak to him.]
+}
+
+TA_FIGHT_MIS_01_MENU_1 ()
+{
+		ta_fight_mis_01_menu_1 		[Someone told me that your animals are sick!]
+}
+
+TA_FIGHT_MIS_01_STEP_4 (race bodoc, bot target)
+{
+		ta_fight_mis_01_step_4 		[My animals? sick?\n
+									Well...hum...you are making a mistake!{break}
+									My $bodoc.p$ are healthy!\n
+									Moreover I selt the three last to $target$.\n
+									He certainly did not bought them if they were sick!\n
+									Ask him if you don't thrust me! he is just outside the village.\n
+									Now, stop boring me! get out!]
+}
+
+TA_FIGHT_MIS_01_STEP_5 (bot previous, race bodoc)
+{
+		ta_fight_mis_01_step_5 		[$previous$? He's a charlatan!{break}
+									I bought him three $bodoc.p$.\n
+									I thought it was a good business because of the low price but I know now the reason of this price!\n
+									Since last night they began to grunting and slobbing and finally they ran away!\n
+									One of them even try to bite me!\n
+									I search for them all day long but I think that their disease bound them to stay hidden during the day.\n
+									Last time I saw them they were not very far of this place.\n
+									Take the south-est direction then, at the outpost, take south.\n
+									Perhaps you will find them here at night.\n
+									If you find them, kill them! They mustn't contaminate our village.]
+}
+
+TA_FIGHT_MIS_01_END ()
+{
+		ta_fight_mis_01_end 		[It was contagious animals?{break}
+									Congratulation, you have stop the contagion and probably save the village.\n
+									We will speak to this matis!\n
+									Please accept this reward for your help.]
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+TA_CRAFT_MIS_01
+*/
+TA_CRAFT_MIS_01_TITLE (bot giver)
+{
+		ta_craft_mis_01_title		[Quick job but good job.]
+
+}
+TA_CRAFT_MIS_01_DESC (bot giver)
+{
+		ta_craft_mis_01_desc		[Craft some full sets of light armors.]
+}
+
+TA_CRAFT_MIS_01_STEP_1 (player p)
+{
+		ta_craft_mis_01_step_1 		[Hello $p$, I'm looking for someone who could help me in crafting some light armors.{break}
+									I have an important order to craft and I will not be able to finish it without help.\n
+									If you want help me you must have enough knowledge to craft a complete set of light Tryker armor.\n
+									If not your help will be useless.\n
+									If you accept to help, me find all the materials you need for the preparation a full set and come back to me once you got it.\n]
+}
+
+TA_CRAFT_MIS_01_SETOBJ ()
+{
+		ta_craft_mis_01_setobj 		[Find all the materials needed for crafting a complete set of light Tryker armor.]
+}
+
+TA_CRAFT_MIS_01_MENU_1 ()
+{
+		ta_craft_mis_01_menu_1 		[I have all the materials.]
+}
+
+TA_CRAFT_MIS_01_STEP_2 ()
+{
+		ta_craft_mis_01_step_2 		[Nice, now I must check your quickness to see of will be able to help me.{break}
+									Craft a full set of light Tryker armor, but beware...time is couting down!]
+}
+
+TA_CRAFT_MIS_01_STEP_3 (bot hojojeo, bot neocwe, place Fairhaven)
+{
+		ta_craft_mis_01_step_3 		[Very nice, you're a good crafter, I think you're able to help me.{break}
+									$hojojeo$ and $neocwe$ the light armors merchants of $Fairhaven$ have an urgent need of a complet set.\n
+									I will give you some money for you to buy all the materials you need for this job.\n
+									Craft the two sets and deliver it to $hojojeo$ and $neocwe$.\n
+									Be quick, time is still counting down.]
+}
+
+TA_CRAFT_MIS_01_MERCHANT_1 ()
+{
+		ta_craft_mis_01_merchant_1 		[Thanks a lot my friend.]
+}
+
+TA_CRAFT_MIS_01_MERCHANT_2 ()
+{
+		ta_craft_mis_01_merchant_2 		[Very nice set of armor, thanks.]
+}
+
+TA_CRAFT_MIS_01_END (player p)
+{
+		ta_craft_mis_01_end 		[You're a great crafter $p$, you did a very nice job.\n
+									take this reward my friend.]
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//KNOWLEDGE MISSION
+/*
+TA_KNOWLEDGE_MIS_01
+*/
+TA_KNOWLEDGE_MIS_01_TITLE (bot giver)
+{
+	ta_knowledge_mis_01_title		[The fisherman and the kami]
+
+}
+
+TA_KNOWLEDGE_MIS_01_DESC (bot giver)
+{
+	ta_knowledge_mis_01_desc		[Une jeune fille va vous raconter l'histoire de Wiksie le pcheur et sa rencontre avec un kami.]
+
+}
+
+TA_KNOWLEDGE_MIS_01_STEP_1 (bot target)
+{
+//sage
+	ta_knowledge_mis_01_step_1		[Tu souhaites entendre une histoire de kami ? Eh bien dans ce cas, tu devrais parler  $target$. Cette jeune fille 
+						est obsde par les kamis depuis qu'on lui a racont l'histoire de Wiksie le pcheur, et elle s'est mise en tte 
+						de rencontrer l'une de ces tranges cratures !{break} $target$ doit se trouver dans les environs du village, 
+						va donc discuter avec elle.]
+
+}
+
+TA_KNOWLEDGE_MIS_01_SYSTEM_MSG_1 (bot target)
+{
+//Systeme_msg en parlant  la jeune fille
+	ta_knowledge_mis_01_system_msg_1 	[$target$ sursaute et se tourne vers vous en murmurant.]
+
+}
+
+TA_KNOWLEDGE_MIS_02_STEP_2 ()
+{
+//jeune fille
+	ta_knowledge_mis_01_step_2		[Chut, ne fais pas de bruit ! Tu vas effrayer l'esprit qui vit dans ces arbres ! Voici plusieurs jours que 
+						j'essaie de l'apercevoir, mais il semble trs timide !.. Tu cherches toi aussi  le voir ? Attendons ensemble 
+						dans ce cas !{break}\n
+						Alors, tu t'intresses toi aussi aux kamis ? Tu dois connatre l'histoire de Wiksie... Non ?! 
+						Je te la raconte alors !\n
+						A long long time ago, when Atys had just gone into her peaceful slumber after her laborious rising, 
+						a Tryker fella named Wiksie was about to fall into a fishing-doze when, there on a hillock across the water, 
+						he saw a funny looking specimen hed never seen before. He gave his eyes a good rub and took up his drawing 
+						pad by his fishing rod, but in a twinkling of an eye the creature literally vanished without so much as a 
+						squeak! The young Tryker set his mind to work and attempted to sketch the creature from memory when 
+						he felt a strange presence over his shoulder\n
+						coute ! Tu as entendu ? Un bruit bizarre, comme un petit rire !]
+
+}
+
+TA_KNOWLEDGE_MIS_01_TALKMENU_1(bot giver)
+{
+//rponse  la jeune fille
+	ta_knowledge_mis_01_talkmenu_1		[Hmm non, je n'ai rien entendu.]
+
+}
+
+TA_KNOWLEDGE_MIS_01_STEP_3 (race bul)
+{
+//jeune fille
+	ta_knowledge_mis_01_step_3		[J'aurais pourtant jur... a doit tre mon imagination ! Je continue mon histoire...{break}\n
+						There, perched on a branch not five yards from him was the creature staring wide-eyed at the drawing as 
+						blithe as a sunny afternoon. Wiksie introduced himself and the creature pointed at the drawing while 
+						looking down from his fuzzy belly to the fish in Wiksies keep net by a tree saying Kami, hungry. 
+						Wiksie laughed and told the Kami that dinner would be ready in a jiffy.\n
+						Tu te rends compte ? Un kami lui a parl ! Moi, je voudrais juste en voir un... mais on dirait qu'il ne veut 
+						pas se montrer.\n
+						Oh, mais on pourrait peut-tre dposer quelque chose  manger, pour le faire venir !.. Tiens, de la bonne viande 
+						de $bul$ par exemple ! Tu pourrais nous trouver a ?]
+
+}
+
+TA_KNOWLEDGE_MIS_01_SYSTEM_MSG_2 (bot target)
+{
+//Systeme_msg aprs avoir donn la viande  la jeune fille
+	ta_knowledge_mis_01_system_msg_2 	[$target$ pose le morceau de viande au pied de l'arbre. Vous attendez quelques minutes... rien ne se passe.]
+
+}
+
+TA_KNOWLEDGE_MIS_01_TALKMENU_2(bot giver)
+{
+//rponse  la jeune fille
+	ta_knowledge_mis_01_talkmenu_2		[On dirait que le kami n'a pas faim...]
+
+}
+
+TA_KNOWLEDGE_MIS_01_STEP_4 ()
+{
+//jeune fille
+	ta_knowledge_mis_01_step_4		[a n'a pas l'air de marcher... On en est quittes pour attendre, il finira 
+						bien par se montrer ! O en tais-je de mon histoire ? Ah oui !{break}\n
+						So off into the woods went Wiksie to gather some firewood, then placed the fish on a spit and lit the 
+						campfire. All of a sudden the Kami jumped up and down in a wicked temper with eyes as moody as stormy 
+						weather. No sooner had Wiksie realized that it was the flames that had given grief to the Kami than the 
+						furry creature was waving a hand and the fire was stone cold out.\n
+						J'ai une ide ! Peut-tre que si on ramasse des plantes dans le coin, il se manifestera. J'ai entendu dire 
+						que a pouvait dranger les kamis... mais moins qu'un feu tout de mme, je n'ai pas envie de trop l'nerver ! 
+						Aide-moi, ramasse des tiges, il y en a plein par ici !]
+
+}
+
+MIS_INSIDE_ARBRE_KAMI(place p)
+{
+	mis_inside_arbre_kami			[Vous devez retourner prs de l'arbre du kami !]
+}
+
+TA_KNOWLEDGE_MIS_01_STEP_5 ()
+{
+//jeune fille
+	ta_knowledge_mis_01_step_5		[J'ai l'impression que a ne sert  rien... dcidment !{break} Wiksie le pcheur a t bien chanceux ! 
+						Mais il n'a pas vraiment su s'y prendre avec le kami. Je vais te dire pourquoi.\n
+						In another wave of the hand the Kamis had sizzled the fish to a tee. Joyously the Tryker took up the spit 
+						and lobbed a fish to the Kamis muzzle but the Kami just watched it soar past its nose and splatter on the 
+						ground. Wiksie took another fish and this time in a more civilized manner handed it to the Kami. But the 
+						Kami immediately dropped the fish and pulled a cross face when Wiksie gave it a pat on the head. In fact, 
+						Wiksie was guilty of over-familiarity, hed judged the Kami by just its cuddly looks. Soon, however, 
+						Wiksie would come to appreciate the Kami force behind the falsely innocent appearance.\n
+						Hmm... a me fait penser... je me demande si...]
+
+}
+
+TA_KNOWLEDGE_MIS_01_TALKMENU_3 (bot giver)
+{
+//rponse  la jeune fille
+	ta_knowledge_mis_01_talkmenu_3		[Tu as une autre ide ?]
+
+}
+
+TA_KNOWLEDGE_MIS_01_STEP_6 (bot target)
+{
+//jeune fille
+	ta_knowledge_mis_01_step_6		[Le kami n'a pas faim, il ne se montre pas mme si on ramasse des plantes prs de son sanctuaire... on pourrait 
+						lui faire une offrande, afin de rendre hommage  sa puissance ! Il ne pourrait pas nous accuser de familiarit !\n
+						C'est  moi de faire cette offrande.{break} Je vais lui donner ce que j'ai de plus prcieux : un pendentif, hritage 
+						de ma tante Aedgie. Peux-tu aller le chercher au village ? C'est $target$ qui l'a, je lui ai confi afin qu'il ajoute 
+						un clat d'ambre au mdaillon. Je surveille pendant ce temps-l, au cas o le kami se dciderait  montrer le bout 
+						de son nez !]
+
+}
+
+TA_KNOWLEDGE_MIS_01_STEP_7 (bot previous)
+{
+//craftsman
+	ta_knowledge_mis_01_step_7		[Oh, tu viens pour rcuprer le pendentif de $previous$ ? Le voici, prends-le. J'y ai inscrust comme prvu un 
+						splendide morceau d'ambre taille. $previous$ devrait tre satisfaite !]
+
+}
+
+TA_KNOWLEDGE_MIS_01_GIVE_ITEM_MENU(int item_count)
+{
+//Dialogue pour donner le pendentif  la jeune fille
+	ta_knowledge_mis_01_give_item_menu		[Voici ton pendentif.]
+
+}
+
+TA_KNOWLEDGE_MIS_01_STEP_8 (player p)
+{
+//jeune fille
+	ta_knowledge_mis_01_step_8		[Merci, $p$ ! Toujours pas de signe du kami... Esprons que mon cadeau saura le satisfaire !]
+
+}
+
+TA_KNOWLEDGE_MIS_01_OFFRANDE ()
+{
+//La jeune fille s'agenouille devant l'arbre (emote) et fait l'offrande
+	ta_knowledge_mis_01_offrande 	[O grand Kami, accepte en offrande ce bijou, symbole du respect et de la dfrence que j'ai pour toi ! Puissant kami, 
+					je t'en prie, daigne apparatre devant ton humble servante !]
+
+}
+
+TA_KNOWLEDGE_MIS_01_TALKMENU_4 (bot giver)
+{
+//parler  la jeune fille aprs son offrande
+	ta_knowledge_mis_01_talkmenu_4		[Le kami se fait attendre...]
+
+}
+
+TA_KNOWLEDGE_MIS_01_STEP_9 ()
+{
+//jeune fille
+	ta_knowledge_mis_01_step_9		[Plutt oui ! Je commence  me demander s'il existe vraiment... J'aimerais tellement qu'un kami veille sur moi, 
+						comme le kami a veill sur Wiksie ! Mais c'est vrai que tu ne connais pas l'histoire...{break}\n
+						One day Wiksie and a company of mates were out mushrooming when a pack of gingos picked up their trail and 
+						before they knew it they were surrounded on the ledge of a precipice. The predators were about to move in 
+						for the kill when Wiksies Kami appeared. The blithe creature held up a hand and the whole bloodthirsty pack 
+						suddenly freaked out and scampered away as though theyd just bumped into a whopping pack of kitins! 
+						Wiksie and his mates fell to their knees in thanks.\n
+						Bouh... je crois que le kami ne m'aime pas ! Pourtant, j'ai toujours essay de bien me conduire... Ce n'est 
+						pas juste ! Snif !]
+
+}
+
+TA_KNOWLEDGE_MIS_01_TALKMENU_5 (bot giver)
+{
+//parler  la jeune fille alors qu'elle pleure (emote, un kami est apparu non loin de l'arbre
+	ta_knowledge_mis_01_talkmenu_5		[Regarde ! Le voil !]
+
+}
+
+TA_KNOWLEDGE_MIS_01_APPARITION_KAMI ()
+{
+//jeune fille
+	ta_knowledge_mis_01_apparition_kami 	[Oh ! O est-il ?.. a y est, je le vois !]
+
+}
+
+TA_KNOWLEDGE_MIS_01_TALKMENU_6 (bot giver)
+{
+//parler  la jeune fille aprs le dpart du kami, qui a fait un petit salut (emote) avant de disparatre
+	ta_knowledge_mis_01_talkmenu_6		[Tu as russi, tu as vu le kami.]
+
+}
+
+TA_KNOWLEDGE_MIS_01_END (player p)
+{
+//jeune fille
+	ta_knowledge_mis_01_end			[Je suis si heureuse ! C'est grce  toi, $p$, merci, merci pour ton aide !{break}\n
+						Je me sens comme Wiksie le pcheur  prsent. Sais-tu ce qui est arriv aprs son aventure ?\n 
+						Trykers quickly learnt to humble themselves before the Kamis who were placed on an equal par as the 
+						venerated Karavan. But as time went by the Kamis began to favor the weird jungle lands of the weirder Zoras, 
+						birds of a feather eh?! Though still today the Kamis more often than not cast a smiling eye upon their 
+						Tryker friends.\n
+						 bientt, $p$ ! J'espre que les kamis veilleront toujours sur toi !]
+
+}
+
+//reward 1 action knowledge + fame Tryker
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

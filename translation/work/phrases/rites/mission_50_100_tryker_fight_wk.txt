@@ -1,0 +1,740 @@
+﻿TF50_TITLE (bot giver)
+{
+	tf50_title	[(La Dague des Lagons) La Bataille des Lagons]
+}
+
+TF50_DESC (bot giver, place lagons)
+{
+	tf50_desc	[Se renseigner sur la Bataille des $lagons$]
+}
+
+TF50_TF50_AUTO_MENU (bot givervar, bot player)
+{
+	tf50_tf50_auto_menu	[Bonjour $givervar$ je me présente, $player$, et je suis un réfugié.]
+}
+
+TF50_PROPOSITION (place lagons, bot player)
+{
+	( self.gender = male )
+		tf50_proposition_m	[Bonjour, $player$. Je vois que tu es un combattant ; utilises-tu une dague pour tes batailles ? C'est une arme incroyable. Légère, discrète, rapide. Tellement rapide que l'esquive est très facile quand on en utilise une.{break}On dit même que, lors de la bataille des $lagons$ menée par Still Wyler, certains guerriers Trykers avaient une dague magique qui leur permettait de distribuer les attaques à une vitesse impressionnante. Aurais-je éveillé ton intérêt ? Je ne suis pas bien au courant des détails, mais je connais quelqu'un qui en sait davantage.]
+	( self.gender = female )
+		tf50_proposition_f	[Bonjour, $player$. Je vois que tu es une combattante ; utilises-tu une dague pour tes batailles ? C'est une arme incroyable. Légère, discrète, rapide. Tellement rapide que l'esquive est très facile quand on en utilise une.{break}On dit même que, lors de la bataille des $lagons$ menée par Still Wyler, certains guerriers Trykers avaient une dague magique qui leur permettait de distribuer les attaques à une vitesse impressionnante. Aurais-je éveillé ton intérêt ? Je ne suis pas bien au courant des détails, mais je connais quelqu'un qui en sait davantage.]
+}
+
+TF50_OUI ()
+{
+	tf50_oui	[Qui donc ?]
+}
+
+TF50_NON ()
+{
+	tf50_non	[Ca ne m'intéresse pas.]
+}
+
+TF50_INSTRUCTIONS (bot NPC2)
+{
+	tf50_instructions	[$NPC2$, l'un des barmans de la ville. Il pourra t'en dire davantage sur cette bataille et sur ces fameuses dagues.]
+}
+
+TF50_SI_OUBLI ()
+{
+	tf50_si_oubli	[Ah, une dernière chose : cette mission risque d'être assez longue. Si tu oublies qui tu dois aller voir pour la suite, n'hésite pas à venir me le demander.]
+}
+
+TF50_STEP1_OVERLOAD (bot NPC2, place lagons)
+{
+	tf50_step1_overload	[Parlez au barman de Fairhaven, $NPC2$, pour en apprendre plus sur la bataille des $lagons$.]
+}
+
+TF50_STEP1_PHRASE (bot NPC2, place lagons)
+{
+	tf50_step1_phrase	[Que pouvez-vous me dire à propos de la Bataille des $lagons$ ?]
+}
+
+TF50_STEP1_BOTCHAT (bot NPC3, place WoM, place lagons, faction ss)
+{
+	tf50_step1_botchat	[La bataille des $lagons$... oui, je me souviens de cette histoire. Les Trykers étaient commandés par Still Wyler, et ils combattaient les Matis pour la possession des Lagons. Heureusement qu'Yrkanis, le prince Matis, nous a offert son aide. Sans ces dagues, ils n'auraient peut-être pas tenu suffisamment longtemps. {break}Tu voudrais en récupérer une ? Je ne sais pas si c'est possible, mais... je connais quelqu'un qui pourrait avoir une idée. Son nom est $NPC3$. Il se trouve $WoM.ppr$ $WoM.name$ et fait partie de la tribu des $ss.name$. Elle se trouve au Nord $WoM.ppr$ $WoM.name$, à l'Ouest d'une grande falaise.]
+}
+
+TF50_STEP2_OVERLOAD (bot NPC3, place WoM, faction ss)
+{
+	tf50_step2_overload	[Renseignez-vous auprès de $NPC3$, de la tribu des $ss.name$, $WoM.ppr$ $WoM.name$.]
+}
+
+TF50_STEP2_PHRASE (bot NPC3, place lagons)
+{
+	tf50_step2_phrase	[Savez-vous quelque chose sur la bataille des $lagons$ ?]
+}
+
+TF50_STEP_2_BOTCHAT (creature_model izam, place lagons)
+{
+	tf50_step_2_botchat	[Une dague enchantée de la bataille des $lagons$ ? Oui, je peux t'aider, mais je veux que tu nous rendes d'abord un service. Ces maudits $izam.p$ nous volent constamment nos réserves de nourriture. Tues-en une dizaine, et je verrai ce que je peux faire pour toi.]
+}
+
+TF50_STEP3_ROLEPLAY_1 (creature_model izam, int q1, faction ss)
+{
+	tf50_step3_roleplay_1	[Tuer des $izam$ autour du lac au Sud du village des $ss$]
+}
+
+TF50_FINISH_OVERLOAD (bot NPC3)
+{
+	tf50_finish_overload	[Retournez voir $NPC3$.]
+}
+
+TF50_FINISH_PHRASE (bot NPC3, creature_model izam)
+{
+	tf50_finish_phrase	[J'ai tué les $izam.p$.]
+}
+
+TF50_REFUS ()
+{
+	tf50_refus	[Quel dommage. Tu aurais peut-être pu en retrouver une...]
+}
+
+TF50_FINISH_REWARD ()
+{
+	tf50_finish_reward	[Je te remercie, tu as été très efficace. En ce qui concerne ton histoire...]
+}
+
+TF60_TITLE (bot giver)
+{
+	tf60_title	[(La Dague des Lagons) L'asociale]
+}
+
+TF60_DESC (bot giver)
+{
+	tf60_desc	[Continuer la recherche de la dague des Lagons]
+}
+
+TF60_TF60_AUTO_MENU ()
+{
+	tf60_tf60_auto_menu	[Bonjour, pouvez-vous me parler des dagues des Lagons ?]
+}
+
+TF60_PAS_ASSEZ_FORT ()
+{
+	tf60_pas_assez_fort	[Progresse encore en combat et je t'en parlerai.]
+}
+
+TF60_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	tf60_step0_no_overload_1	[Passer le niveau 60 en combat avant d'aller voir $givervar$]
+}
+
+TF60_STEP0_OVERLOAD (bot givervar)
+{
+	tf60_step0_overload	[Parler à $givervar$]
+}
+
+TF60_STEP0_PHRASE (bot givervar)
+{
+	tf60_step0_phrase	[Au sujet des dagues...]
+}
+
+TF60_INSTRUCTIONS (bot NPC4, creature_model kizoar)
+{
+	tf60_instructions	[Il y a quelques temps, une Trykette du nom de $NPC4$ qui vit à Windermeer a vu un phénomène qui va beaucoup t'intéresser. Mais il y a un problème... si je me souviens bien, elle ne supporte pas les contacts. Je ne sais pas si elle va accepter de t'en parler... Je vais t'aider à... l'amadouer. Nous allons lui préparer son plat préféré, des ailes de Kizoar grillées. Tue des $kizoar$ et récupère leurs ailes. Ensuite, ce sera peut-être un peu plus délicat...]
+}
+
+TF60_STEP4_OVERLAD_1 (item i1, int qt1, int qual1, bot givervar, item ailes_kizoar)
+{
+	tf60_step4_overlad_1	[Récupérez 10 $ailes_kizoar$ de qualité 50 minimum et les apporter à $givervar$.]
+}
+
+TF60_STEP4_BOTCHAT (item ailes_kizoar_grillees, item huile_kizoar)
+{
+	tf60_step4_botchat	[Bon, j'espère que tu n'as pas peur du danger car pour préparer les $ailes_kizoar_grillees$ j'ai besoin de $huile_kizoar$. Tu pourras en trouver sur les cloppers qui grouillent autour du lac au sud de notre camp. Je te souhaite bon courage car tu vas en avoir besoin...]
+}
+
+TF60_STEP5_OVERLAD_1 (item i1, int qt1, int qual1, bot givervar, item huile_kizoar)
+{
+	tf60_step5_overlad_1	[Récupérez 5 $huile_kizoar$ de niveau 50 minimum et les apporter à $givervar$.]
+}
+
+TF60_STEP6_BOTCHAT (bot NPC4)
+{
+	tf60_step6_botchat	[Ah, mais tu en as trouvé ! C'est parfait, je vais préparer ces ailes... tiens, les voilà ! Apporte-les vite à $NPC4$ avant qu'elles ne refroidissent...]
+}
+
+TF60_STEP7_OVERLOAD_1 (item i1, int qt1, bot NPC4)
+{
+	tf60_step7_overload_1	[Apporter les ailes de Kizoar grillees à $NPC4$, à Windermeer, avant qu'elles ne refroidissent.]
+}
+
+TF60_FAIL_SYSMES (bot givervar)
+{
+	tf60_fail_sysmes	[&AMB&Votre plat a refroidi, retournez voir $givervar$ pour en préparer un autre]
+}
+
+TF60_OUTOFROOM_MSG ()
+{
+	tf60_outofroom_msg	[&SYS&Vous n'avez plus de place dans votre inventaire. Demandez à nouveau l'objet quand vous en aurez fait.]
+}
+
+TF60_OUTOFROOM_OVERLOAD (bot givervar)
+{
+	tf60_outofroom_overload	[Faites de la place avant de demander à nouveau l'objet.]
+}
+
+TF60_OUTOFROOM_PHRASE (bot givervar)
+{
+	tf60_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+TF60_OUTOFROOM_BOTCHAT ()
+{
+	tf60_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+TF60_FINISH_BOTCHAT ()
+{
+	tf60_finish_botchat	[Oh, des ailes de... c'est pour moi !? Excuse-moi pour mon impolitesse, je suis d'humeur difficile en ce moment. Tu voudrais me parler des dagues de la bataille des Lagons ?]
+}
+
+TF60_REWARD_SYSMES (bot NPC4)
+{
+	tf60_reward_sysmes	[&AMB&$NPC4$ vous remet quelques dappers en remerciement]
+}
+
+TF70_TITLE (bot giver)
+{
+	tf70_title	[(La Dague des Lagons) Une dague dans un estomac]
+}
+
+TF70_TF70_AUTO_MENU ()
+{
+	tf70_tf70_auto_menu	[Bonjour, je voudrais que vous me parliez des dagues des Lagons]
+}
+
+TF70_PAS_ASSEZ_FORT ()
+{
+	tf70_pas_assez_fort	[Progresse encore en combat et je t'en parlerai.]
+}
+
+TF70_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	tf70_step0_no_overload_1	[Passer le niveau 70 en combat avant d'aller voir $givervar$]
+}
+
+TF70_STEP0_OVERLOAD (bot givervar)
+{
+	tf70_step0_overload	[Parler à $givervar$]
+}
+
+TF70_STEP0_PHRASE (bot givervar)
+{
+	tf70_step0_phrase	[Au sujet des dagues...]
+}
+
+TF70_INSTRUCTIONS (place WoM, creature_model capryni)
+{
+	tf70_instructions	[Il y a plusieurs mois, alors que je me baladais dans les $WoM$, j'ai vu un Capryni bizarre. On aurait dit qu'il dégageait une étrange aura. Ce n'est que bien plus tard que j'ai réalisé ce que c'était réellement : j'ignore comment elle s'y est prise, mais la bête a avalé une dague enchantée des batailles des Lagons !{break}Si tu pouvais trouver cette bête et la tuer, peut-être que la dague s'y trouverait encore. C'était un $capryni$, ils se trouvent au Nord-Est dans les $WoM$. Par contre, s'il est encore vivant, je ne sais pas s'il dégage toujours cette aura. Dans le doute, tu devrais tuer tous les $capryni.p$ que tu rencontres... l'un d'eux est peut-être celui que tu recherches.]
+}
+
+TF70_STEP1_OVERLOAD_1 (creature_model capryni, int q1, place WoM)
+{
+	tf70_step1_overload_1	[Tuez des $capryni.p$ au Nord-Est des $WoM$ jusqu'à trouver la dague avalée.]
+}
+
+TF70_SYSTEM_MSG_DAGUE (item dague_tordue)
+{
+	tf70_system_msg_dague	[&AMB&Vous trouvez une $dague_tordue$.]
+}
+
+TF70_STEP2_OVERLOAD_1 (item i1, int qt1, bot givervar, item dague_tordue)
+{
+	tf70_step2_overload_1	[Montrez $dague_tordue$ à $givervar$.]
+}
+
+TF70_STEP2_BOTCHAT (bot NPC5)
+{
+	tf70_step2_botchat	[Ah... c'est cette dague que tu as trouvé dans l'estomac du Capryni ? Laisse-moi voir... oui, je crois que c'est bien une des dagues enchantées. Mais comme tu peux le voir, elle est totalement inutilisable... et en plus, elle a perdu son aura magique.{break}C'est vraiment dommage... hmmm... en fait... non, c'est impossible... enfin... on peut essayer.{break}L'une des marchandes d'arme d'Avendale est une amie. Peu le savent, mais c'est une forgeronne remarquable. Cette dague ne pourra jamais être réparée, mais... elle sera peut-être capable d'identifier ses composants, et qui sait, d'en faire une nouvelle ! Ca vaut le coût d'essayer. Va la voir, son nom est $NPC5$.]
+}
+
+TF70_STEP3_OVERLOAD_1 (item i1, int qt1, bot NPC5)
+{
+	tf70_step3_overload_1	[Montrez la dague tordue à $NPC5$, une marchande d'armes d'Avendale.]
+}
+
+TF70_OUTOFROOM_OVERLOAD (bot NPC5)
+{
+	tf70_outofroom_overload	[Faites de la place avant d'aller parler à $NPC5$.]
+}
+
+TF70_OUTOFROOM_PHRASE (bot NPC5)
+{
+	tf70_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+TF70_OUTOFROOM_BOTCHAT ()
+{
+	tf70_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+TF70_FINISH_BOTCHAT ()
+{
+	tf70_finish_botchat	[Une dague ? C'est... c'est vraiment une dague de la bataille des Lagons ? Et tu veux que j'en fasse une nouvelle !?{break}Oui, je crois que je vais pouvoir identifier les matériaux. Merci, cette dague va m'être très utile ; prend ce cadeau en remerciement. Pour ce qui est d'en faire une nouvelle... je ne sais pas. C'est possible que je réussisse. Mais en tout cas, ce sera ardu de récupérer les matériaux.]
+}
+
+TF80_TITLE (bot giver)
+{
+	tf80_title	[(La Dague des Lagons) Reforger la dague]
+}
+
+TF80_TF80_AUTO_MENU ()
+{
+	tf80_tf80_auto_menu	[Alors, vous avez du nouveau au sujet de la dague ?]
+}
+
+TF80_PAS_ASSEZ_FORT ()
+{
+	tf80_pas_assez_fort	[Progresse encore en combat et je t'en parlerai.]
+}
+
+TF80_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	tf80_step0_no_overload_1	[Passer le niveau 80 en combat avant d'aller voir $givervar$]
+}
+
+TF80_STEP0_OVERLOAD (bot givervar)
+{
+	tf80_step0_overload	[Parler à $givervar$]
+}
+
+TF80_STEP0_PHRASE (bot givervar)
+{
+	tf80_step0_phrase	[Au sujet des dagues...]
+}
+
+TF80_INSTRUCTIONS (place water)
+{
+	tf80_instructions	[Je pense avoir identifié les matériaux de la dague. Le premier se trouve sur des monstres, pour le second...Nous verrons plus tard. Pour ce qui est des monstres, la chose ne va pas être aisée car il s'agit de prélever des griffes à des crays. Attention il me faut des griffes récentes, tu devras donc les récupérer toi-même et pas les acheter chez le marchand. On peut trouver ces animaux à l'entrée des $water$ mais méfie toi, la région est dangereuse. ]
+}
+
+TF80_STEP1_ROLEPLAY_1 (item i1, int qt1, int qual1, creature_model clopper, place water)
+{
+	tf80_step1_roleplay_1	[Vous trouverez des $clopper$ à l'entrée des $water$]
+}
+
+TF80_STEP2_OVERLOAD_1 (item i1, int qt1, int qual1, bot givervar)
+{
+	tf80_step2_overload_1	[Donnez 5 griffes à $givervar$.]
+}
+
+TF80_STEP2_BOTCHAT (bot NPC3, faction ss)
+{
+	tf80_step2_botchat	[Ca fera l'affaire. Pour la seconde partie, il va te falloir retournez chez les $ss$. En effet eux seuls savent où trouver le matériau dont nous avons besoin. Allez voir $NPC3$ et demandez lui de la poudre de vase.]
+}
+
+TF80_STEP3_OVERLOAD (bot NPC3, faction ss)
+{
+	tf80_step3_overload	[Rendez-vous au camp des $ss$ et parlez à $NPC3$]
+}
+
+TF80_STEP3_PHRASE (bot NPC3)
+{
+	tf80_step3_phrase	[Savez-vous où je pourrais trouver de la poudre de vase ?]
+}
+
+TF80_STEP3_BOTCHAT ()
+{
+	tf80_step3_botchat	[De la poudre de vase ? Et bien... Nous en avons oui. Cependant, bien que je n'aime pas faire de chantage, avant de vous la donner j'aimerais que vous nous rendiez un service. Les Muse Muggers sont des bandits qui ont leur campement au Sud-Ouest d'ici. Ils deviennent de plus en plus importants et nous craignons qu'ils ne viennent tôt ou tard piller notre village. Vous qui êtes fort, vous devriez pouvoir leur donner une bonne leçon et leur faire passer l'envie de mettre les pieds ici. Vous aurez peut-être besoin de compagnons car ils sont nombreux. Si vous faites ça pour nous je vous donnerai gratuitement de la poudre de vase.]
+}
+
+TF80_STEP_3_2_OVERLOAD (bot_name group_name)
+{
+	tf80_step_3_2_overload	[Aller dans le camp des Muse Muggers et exterminez les.]
+}
+
+TF80_STEP3_2_SYSMES ()
+{
+	tf80_step3_2_sysmes	[&AMB&Vous avez donné une bonne leçon aux Muse Muggers]
+}
+
+TF80_STEP_3_3_OVERLOAD (bot NPC3)
+{
+	tf80_step_3_3_overload	[Retourner voir $NPC3$ pour obtenir la poudre de vase.]
+}
+
+TF80_STEP_3_3_PHRASE (bot NPC3)
+{
+	tf80_step_3_3_phrase	[Les Muse Muggers ne risquent pas de venir vous piller avant un moment.]
+}
+
+TF80_STEP3_3_FIN_BOTCHAT (bot givervar)
+{
+	tf80_step3_3_fin_botchat	[Vous avez réussi ? Ha ha, très bien, vous ne m'avez pas déçu. Pour être honnête je m'attendais à votre réussite et j'ai déjà envoyé un messager apporter la poudre à $givervar$. Je pense qu'elle doit déjà l'avoir à l'heure qu'il est.]
+}
+
+TF80_STEP_3_4_OVERLOAD (bot givervar)
+{
+	tf80_step_3_4_overload	[Retourner voir $givervar$.]
+}
+
+TF80_STEP3_4_BOTCHAT (bot givervar, bot NPC3)
+{
+	tf80_step3_4_botchat	[Avez-vous reçu la poudre de vase de la part de $NPC3$ ?]
+}
+
+TF80_STEP3_FIN_BOTCHAT (bot NPC6)
+{
+	tf80_step3_fin_botchat	[Tout à fait, vous venez d'ailleurs de croiser le messager. Je vais maintenant pouvoir créer cette dague. J'en tremble d'impatience ! Ah, mais j'oubliais... j'ai ce colis à livrer... ça te dérangerait de t'en charger pendant que je fabrique ta dague ? La destinataire est... $NPC6$, c'est ça. A Crystabell.]
+}
+
+TF80_STEP4_OVERLOAD_1 (item i1, int qt1, bot NPC6)
+{
+	tf80_step4_overload_1	[Apportez le colis à $NPC6$, à Crystabell.]
+}
+
+TF80_STEP4_BOTCHAT (bot givervar)
+{
+	tf80_step4_botchat	[Ah, mes matériaux ! Merci beaucoup. Faites passer mes remerciements à $givervar$ !]
+}
+
+TF80_STEP5_OVERLOAD (bot givervar)
+{
+	tf80_step5_overload	[Demandez à $givervar$ si elle a terminé la dague.]
+}
+
+TF80_STEP5_PHRASE (bot givervar)
+{
+	tf80_step5_phrase	[As-tu terminé ?]
+}
+
+TF80_STEP5_BOTCHAT (bot NPC7, bot NPC8, bot NPC9)
+{
+	tf80_step5_botchat	[J'ai fini... mais il y a un problème. J'ai peut-être pu fabriquer la dague, mais elle n'est pas enchantée ! La vitesse de frappe de son porteur n'est pas affecté... et je n'ai aucune compétence en magie... que faire ? Voyons... je connais bien quelques personnes qui pourraient nous aider...{break}Oui, $NPC7$ pourrait... non, plutôt $NPC8$... ou bien $NPC9$ ? Je ne sais pas... il va falloir que tu leur demandes. $NPC7$ habite à Crystabell, $NPC8$ à Windermeer, et $NPC9$ est à Fairhaven... Ce sont trois entraîneurs de magie.]
+}
+
+TF80_STEP6_OVERLOAD (bot NPC7, bot NPC8, bot NPC9, bot givervar)
+{
+	tf80_step6_overload	[Trouvez quelqu'un qui puisse enchanter la dague. $givervar$ a mentionné $NPC7$ à Crystabell, $NPC8$ à Windermeer, et $NPC9$ à Fairhaven.]
+}
+
+TF80_STEP6_PHRASE (bot NPC7)
+{
+	tf80_step6_phrase	[Peux-tu m'aider à enchanter cette dague ?]
+}
+
+TF80_STEP6_BOTCHAT1 ()
+{
+	tf80_step6_botchat1	[Tu veux que j'enchante cette dague ? C'est... une réplique des dagues enchantées de la bataille des Lagons ? Très intéressant... je vais t'aider. Mais ça va être très difficile. Pour enchanter la dague, il me faut un cristal comme ceux qui ont été utilisés dans le temps... Dans un premier temps donne moi la dague s'il te plaît.]
+}
+
+TF80_STEP6_PHRASE2 (bot NPC8)
+{
+	tf80_step6_phrase2	[Peux-tu m'aider à enchanter cette dague ?]
+}
+
+TF80_STEP6_BOTCHAT2 ()
+{
+	tf80_step6_botchat2	[Enchanter une arme ? Tu ne t'adresses pas à la bonne personne. Je ne suis pas du tout spécialiste là-dedans !]
+}
+
+TF80_STEP6_PHRASE3 (bot NPC9)
+{
+	tf80_step6_phrase3	[Peux-tu m'aider à enchanter cette dague ?]
+}
+
+TF80_STEP6_BOTCHAT3 ()
+{
+	tf80_step6_botchat3	[Ca fait bien longtemps que je n'enchante plus d'objets. Cherche quelqu'un d'autre.]
+}
+
+TF80_FINISH_OVERLOAD_1 (item i1, int qt1, bot NPC7)
+{
+	tf80_finish_overload_1	[Donner la dague à $NPC7$.]
+}
+
+TF80_FINISH_BOTCHAT ()
+{
+	tf80_finish_botchat	[Intéressant. Très intéressant... Tiens, prends, c'est pour toi.]
+}
+
+TF90_TITLE (bot giver)
+{
+	tf90_title	[(La Dague des Lagons) Test de force]
+}
+
+TF90_TF90_AUTO_MENU ()
+{
+	tf90_tf90_auto_menu	[Bonjour, je voudrais vous parler des dagues des Lagons.]
+}
+
+TF90_PAS_ASSEZ_FORT ()
+{
+	tf90_pas_assez_fort	[Progresse encore en combat et reviens me voir.]
+}
+
+TF90_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	tf90_step0_no_overload_1	[Passer le niveau 90 en combat avant d'aller voir $givervar$]
+}
+
+TF90_STEP0_OVERLOAD (bot givervar)
+{
+	tf90_step0_overload	[Parler à $givervar$]
+}
+
+TF90_STEP0_PHRASE (bot givervar)
+{
+	tf90_step0_phrase	[Bonjour, comment peux-t-on enchanter les dagues ?]
+}
+
+TF90_INSTRUCTIONS (bot NPC10, place WoM, place lagons, faction ss)
+{
+	( self.gender = male )
+		tf90_instructions_m	[Je te le dis tout de suite, ce sera difficile, très difficile. Le cristal dont nous avons besoin ne se trouve qu'à un seul endroit, celui où a eu lieu la bataille menée par Still Wyler... dans les $lagons$ ! Et cet endroit grouille de créatures beaucoup trop puissantes pour toi.{break}Tu vas d'abord devoir me prouver que tu es digne de cette mission. Va voir $NPC10$, il te mettra à l'épreuve. Il se trouve dans les $WoM$. Ah, tu es déjà allé dans ce camp ? Ca te facilitera les choses... pour le moment. Si tu as oublié, le camp $ss.cc$ $ss.name$ se trouve au nord des $WoM$, à l'ouest de la grande falaise.]
+	( self.gender = female )
+		tf90_instructions_f	[Je te le dis tout de suite, ce sera difficile, très difficile. Le cristal dont nous avons besoin ne se trouve qu'à un seul endroit, celui où a eu lieu la bataille menée par Still Wyler... dans les $lagons$ ! Et cet endroit grouille de créatures beaucoup trop puissantes pour toi.{break}Tu vas d'abord devoir me prouver que tu es digne de cette mission. Va voir $NPC10$, il te mettra à l'épreuve. Il se trouve dans les $WoM$. Ah, tu es déjà allée dans ce camp ? Ca te facilitera les choses... pour le moment. Si tu as oublié, le camp $ss.cc$ $ss.name$ se trouve au nord des $WoM$, à l'ouest de la grande falaise.]
+}
+
+TF90_STEP1_OVERLOAD (bot NPC10, place WoM, faction ss)
+{
+	tf90_step1_overload	[Parlez au chef des $ss$, dans les $WoM$.]
+}
+
+TF90_STEP1_PHRASE (bot NPC10, bot givervar)
+{
+	tf90_step1_phrase	[$givervar$ m'envoie pour passer une épreuve.]
+}
+
+TF90_STEP1_BOTCHAT (creature_model clopper1, creature_model clopper2)
+{
+	( self.gender = male )
+		tf90_step1_botchat_m	[Tu viens pour l'épreuve ? Elle est très simple. Tu dois combiner puissance et vitesse : il te faut vaincre une série de cloppers en un temps limité. Voyons... pour toi, les règles seront les suivantes : tue cinq $clopper1$ et trois $clopper2$ en moins de quinze minutes. Les cloppers se trouvent juste à l'ouest de ce camp, longeant la falaise nord. Parle-moi lorsque tu seras prêt.]
+	( self.gender = female )
+		tf90_step1_botchat_f	[Tu viens pour l'épreuve ? Elle est très simple. Tu dois combiner puissance et vitesse : il te faut vaincre une série de cloppers en un temps limité. Voyons... pour toi, les règles seront les suivantes : tue cinq $clopper1$ et trois $clopper2$ en moins de quinze minutes. Les cloppers se trouvent juste à l'ouest de ce camp, longeant la falaise nord. Parle-moi lorsque tu seras prête.]
+}
+
+TF90_STEP2_OVERLOAD (bot NPC10)
+{
+	( self.gender = male )
+		tf90_step2_overload_m	[Parler à nouveau à $NPC10$ quand vous serez prêt.]
+	( self.gender = female )
+		tf90_step2_overload_f	[Parler à nouveau à $NPC10$ quand vous serez prête.]
+}
+
+TF90_STEP2_PHRASE (bot NPC10)
+{
+	tf90_step2_phrase	[Je peux commencer maintenant.]
+}
+
+TF90_STEP2_BOTCHAT ()
+{
+	tf90_step2_botchat	[Alors, c'est parti !]
+}
+
+TF90_FAILURE1_MSG ()
+{
+	tf90_failure1_msg	[Le temps est écoulé. Vous allez devoir recommencer l'épreuve.]
+}
+
+TF90_STEP4_OVERLOAD (bot NPC10)
+{
+	tf90_step4_overload	[Allez trouver $NPC10$ pour lui annoncer votre succès.]
+}
+
+TF90_STEP4_PHRASE (bot NPC10)
+{
+	tf90_step4_phrase	[J'ai terminé.]
+}
+
+TF90_STEP4_BOTCHAT ()
+{
+	tf90_step4_botchat	[Tu as réussi. Je te remets cet insigne. Il montre que tu as réussi l'épreuve. Cela peut paraître étonnant que nous autres, artisans, donnions ce genre d'épreuve... mais il n'est guère facile de survivre ici, alors nous avons aussi besoin de force !]
+}
+
+TF90_STEP6_OVERLOAD_1 (item i1, int qt1, bot givervar, faction ss)
+{
+	tf90_step6_overload_1	[Donnez l'insigne à $givervar$ pour lui montrer que vous avez réussi l'épreuve $ss.cc$ $ss.name$.]
+}
+
+TF90_STEP6_BOTCHAT (bot NPC5)
+{
+	tf90_step6_botchat	[Tu as réussi... alors, je vais tenir ma promesse. Peut-être es-tu capable de récupérer ce cristal. Mais j'ai une dernière chose à te demander avant. Pour utiliser le cristal et enchanter la dague, je vais avoir besoin d'un outil particulier. Je crois que $NPC5$ en a un. Va lui demander, elle verra de quoi je parle.]
+}
+
+TF90_STEP7_OVERLOAD (bot NPC5)
+{
+	tf90_step7_overload	[Demandez à $NPC5$ son outil spécial.]
+}
+
+TF90_STEP7_PHRASE (bot NPC5)
+{
+	tf90_step7_phrase	[Nous avons besoin d'un de tes outils.]
+}
+
+TF90_STEP7_BOTCHAT (bot givervar, bot player)
+{
+	tf90_step7_botchat	[Ah, $player$ ! Où en est ta dague ? $givervar$ peut t'aider ? Excellent ! Ah, mais il lui faut un outil particulier ? Oui, je vois... je m'en sers de temps en temps. Tiens, le voilà. Passe-lui le bonjour de ma part ! Oh, et n'oublie pas de me ramener mon outil quand vous aurez terminé.]
+}
+
+TF90_FINISH_OVERLOAD_1 (item i1, int qt1, bot givervar)
+{
+	tf90_finish_overload_1	[Donner l'outil à $givervar$.]
+}
+
+TF90_OUTOFROOM_OVERLOAD (bot givervar)
+{
+	tf90_outofroom_overload	[Faites de la place avant d'aller parler à $givervar$.]
+}
+
+TF90_OUTOFROOM_PHRASE (bot givervar)
+{
+	tf90_outofroom_phrase	[Je n'avais plus de place pour prendre l'objet.]
+}
+
+TF90_OUTOFROOM_BOTCHAT ()
+{
+	tf90_outofroom_botchat	[Ce n'est pas grave, le voici.]
+}
+
+TF90_FINISH_BOTCHAT ()
+{
+	tf90_finish_botchat	[Tu as l'outil. Les Lagons sont encore plus dangereux qu'avant. Si des créatures te repèrent, tu ne pourras pas supporter plus de deux ou trois coups. Nous en aurons bientôt terminé avec cette dague, mais je dois d'abord m'assurer que tu pourras survivre là-bas... voici des pièces d'équipement pour t'aider.]
+}
+
+TF100_TITLE (bot giver)
+{
+	tf100_title	[(La Dague des Lagons) Le Cristal des Lagons]
+}
+
+TF100_TF100_AUTO_MENU ()
+{
+	tf100_tf100_auto_menu	[Bonjour, je voudrais partir à la recherche du crital pour enchanter une dague des Lagons.]
+}
+
+TF100_PAS_ASSEZ_FORT ()
+{
+	tf100_pas_assez_fort	[Progresse encore en combat et reviens me voir, je t'enverrai chercher le cristal.]
+}
+
+TF100_STEP0_NO_OVERLOAD_1 (skill s1, int level1, bot givervar)
+{
+	tf100_step0_no_overload_1	[Passer le niveau 100 en combat avant d'aller voir $givervar$]
+}
+
+TF100_STEP0_OVERLOAD (bot givervar)
+{
+	tf100_step0_overload	[Parler à $givervar$]
+}
+
+TF100_STEP0_PHRASE (bot givervar)
+{
+	tf100_step0_phrase	[Bonjour, je suis prêt à partir à la recherche du cristal.]
+}
+
+TF100_INSTRUCTIONS (place WoM, place lagons)
+{
+	tf100_instructions	[C'est ta dernière tâche. Pars pour les $lagons$. Tu peux y accéder par le tunnel partant au Nord-Est des $WoM$. Je crois qu'une bataille a eu lieu près de la sortie du tunnel, à côté d'un oasis... avec un peu de chance, un cristal y a été laissé.{break}Mais surtout, fais très attention aux créatures. Elles sont beaucoup trop puissantes pour toi. Si tu as un ami très expérimenté, tu devrais lui demander de t'accompagner. Si un carnivore te barre la route, peut-être pourrais-tu attendre qu'il attaque un herbivore... enfin... bonne chance, tu vas en avoir besoin.]
+}
+
+TF100_STEP1_OVERLOAD (place endroit_bataille, place WoM, place lagons)
+{
+	tf100_step1_overload	[Trouvez un cristal de la Bataille des Lagons, dans les $lagons$. Empruntez un tunnel au Nord-Est des $WoM$ pour s'y rendre. Il devrait y avoir des cristaux près de la sortie, à côté d'un oasis.]
+}
+
+TF100_OUTOFROOM_PLACE_MSG ()
+{
+	tf100_outofroom_place_msg	[Vous avez trouvé l'objet recherché, mais vous n'avez plus de place pour le prendre. Faites de la place dans votre inventaire avant de revenir à cet endroit.]
+}
+
+TF100_STEP2_MSG (bot givervar)
+{
+	tf100_step2_msg	[&AMB&Vous découvrez un cristal. Serait-ce celui que vous recherchez ? \n Vous devriez le rapportez à $givervar$]
+}
+
+TF100_STEP3_OVERLOAD_1 (item i1, int qt1, bot givervar)
+{
+	tf100_step3_overload_1	[Apportez le cristal à $givervar$.]
+}
+
+TF100_STEP3_BOTCHAT ()
+{
+	tf100_step3_botchat	[Le cristal ! Tu as un cristal ! Oh, c'est incroyable... je vais pouvoir enchanter cette dague. Elle sera exactement identique à celles qu'ont utilisé les guerriers de Still Wyler ! Attend juste un instant, je vais m'en occuper...]
+}
+
+TF100_STEP4_OVERLOAD_1 (bot givervar)
+{
+	tf100_step4_overload_1	[Attendez un instant que $givervar$ enchante la dague.]
+}
+
+TF100_FINISH_BOTCHAT ()
+{
+	tf100_finish_botchat	[Et voilà, c'est terminé. Cette dague est si efficace que j'aurais bien aimé la garder. Mais au fait...]
+}
+
+TF100_PROPOSITION_NOANSWER_PHRASE (bot givervar)
+{
+	tf100_proposition_noanswer_phrase	[Je vais choisir maintenant.]
+}
+
+TF100_PROPOSITION_BOTCHAT ()
+{
+	( self.gender = male )
+		tf100_proposition_botchat_m	[J'ai ce pistolet à t'échanger contre elle. C'est ma plus belle pièce, il est d'une valeur équivalente. Serais-tu intéressé ?]
+	( self.gender = female )
+		tf100_proposition_botchat_f	[J'ai ce pistolet à t'échanger contre elle. C'est ma plus belle pièce, il est d'une valeur équivalente. Serais-tu intéressée ?]
+}
+
+TF100_PROPOSITION_DAGUE ()
+{
+	tf100_proposition_dague	[Non merci, je vais garder la dague.]
+}
+
+TF100_PROPOSITION_PISTOLET ()
+{
+	tf100_proposition_pistolet	[Oui, je prends le pistolet.]
+}
+
+TFBONUS_TITLE (bot giver)
+{
+	tfbonus_title	[(La Dague des Lagons) L'oubli]
+}
+
+TFBONUS_DESC (bot giver, bot NPC5)
+{
+	tfbonus_desc	[Ramener son outil à $NPC5$.]
+}
+
+TFBONUS_PHRASE_AUTO ()
+{
+	tfbonus_phrase_auto	[Nous avons oublié l'outil de ton amie !]
+}
+
+TFBONUS_INSTRUCTIONS ()
+{
+	tfbonus_instructions	[Ah, mais oui ! J'avais oublié... merci de me le rappeler ! Tiens, prend-le. J'espère qu'il ne lui a pas manqué !]
+}
+
+TFBONUS_STEP2_OVERLOAD_1 (item i1, int qt1, bot NPC5)
+{
+	tfbonus_step2_overload_1	[Rendez son outil à $NPC5$.]
+}
+
+TFBONUS_STEP2_BOTCHAT ()
+{
+	tfbonus_step2_botchat	[Mon outil ! Merci, j'ai cru que vous m'aviez oubliée. Je vais te remercier pour ça. Voici quelque chose qui devrait te plaire !]
+}
+
+TF_ORIENTATION_SAGE_TITLE (bot giver)
+{
+	tf_orientation_sage_title	[Orientation]
+}
+
+TF_ORIENTATION_SAGE_AUTO_MENU ()
+{
+	tf_orientation_sage_auto_menu	[Qui dois-je aller voir pour la suite de (La Dague des Lagons) ?]
+}
+
+TF_ORIENTATION_SAGE_SAGE_ORIENTE (bot 100)
+{
+	tf_orientation_sage_sage_oriente	[La personne que tu recherches est $100$. Je vais t'indiquer où la trouver.]
+}
+
+TF_ORIENTATION_SAGE_ORIENTATION_OVERLOAD_1 (bot 100, bot givervar)
+{
+	tf_orientation_sage_orientation_overload_1	[Trouvez la personne indiquée par $givervar$ pour continuer votre mission.]
+}
+

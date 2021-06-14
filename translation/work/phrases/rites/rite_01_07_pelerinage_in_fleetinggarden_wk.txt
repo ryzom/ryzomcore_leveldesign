@@ -1,0 +1,80 @@
+﻿R_01_07_MIS_TITLE (bot giver)
+{
+	r_01_07_mis_title	[La Piste du chasseur]
+}
+
+R_01_07_MIS_DESC (bot giver, place region_f)
+{
+	r_01_07_mis_desc	[Parcourez la région $region_f$ à la recherche d'un chasseur matis.]
+}
+
+R_01_07_P_LDF_BARMAN_INTRO (bot hunter, place region_f)
+{
+	r_01_07_p_ldf_barman_intro	[Je vous souhaite la bienvenue ! Connaissez-vous bien notre magnifique pays, homin ? $region_f.da$ $region_f$ est l'une de nos plus belles régions. Si vous souhaitez la découvrir, vous devez absolument rencontrer $hunter$. {break}$hunter$ est un chasseur qui vit là-bas la pupart du temps. Il passe régulièrement près des avant-postes de la région. Trouvez-le et dites-lui que je vous envoie. À votre retour, passez me voir, je vous enseignerai une technique de cartographie très pratique.]
+}
+
+R_01_07_P_SMG_HUNTER (bot hunter)
+{
+	r_01_07_p_smg_hunter	[&AMB&Vous avez trouvé la piste de $hunter$, il est maintenant indiqué sur votre boussole.]
+}
+
+R_01_07_P_DC_T2_HELLO_HUNTER (bot hunter)
+{
+	r_01_07_p_dc_t2_hello_hunter	[Bonjour, je...]
+}
+
+R_01_07_P_DC_MATIS_HUNTER_M1 ()
+{
+	r_01_07_p_dc_matis_hunter_m1	[Holà, pourquoi viens-tu me troubler en pleine partie de chasse ?]
+}
+
+R_01_07_P_DA_LEARN (bot giver)
+{
+	r_01_07_p_da_learn	[$giver$ m'envoie, je souhaite en apprendre plus sur la région.]
+}
+
+R_01_07_P_DC_HUNTER_1_1 ()
+{
+	r_01_07_p_dc_hunter_1_1	[Hum... C'est bien joli, mais il faut que tu comprennes qu'il y a un temps pour la chasse et un temps pour palabrer. Pour l'instant je chasse, alors bon vent !]
+}
+
+R_01_07_DA_COOL ()
+{
+	r_01_07_da_cool	[Attendez ! Je peux vous aider à terminer votre chasse, accepteriez-vous en échange de partager votre savoir ?]
+}
+
+R_01_07_DA_BADBOY ()
+{
+	r_01_07_da_badboy	[Hey, vieil homin ! Ce ne sont pas des manières de parler à un combattant émérite !]
+}
+
+R_01_07_BC_HUNTER_COOL (race bodoc, int qty)
+{
+	r_01_07_bc_hunter_cool	[Soit ! Trouve-moi $qty$ crânes de $bodoc$, et je t'accorderai un peu de temps.]
+}
+
+R_01_07_BC_HUNTER_BADBOY (race bodoc, int qty)
+{
+	r_01_07_bc_hunter_badboy	[Ah oui ? Tu serais donc émérite et combattant à la fois ? Voilà qui me laisse sans voix ! Au lieu de faire le bravache, prouve donc ta valeur en me ramenant $qty$ crânes de $bodoc$, je te laisse une demi-heure ! Si tu es suffisamment rapide, tu auras tes informations.]
+}
+
+R_01_07_P_TT_HUNTER_CRANE (bot hunter, item crane_bodoc)
+{
+	r_01_07_p_tt_hunter_crane	[Voilà vos $crane_bodoc.p$.]
+}
+
+R_01_07_BC_HUNTER_FINAL_1 (race bodoc, bot givervar, race mektoub, race race_h1, place region_f, faction tribe_sacred_sap, faction tribe_siblings_of_the_weeds)
+{
+	r_01_07_bc_hunter_final_1	[Bien ! nous allons pouvoir discuter... Tu veux donc tout connaître du $region_f$ ? La région fut la seconde à être colonisée par les Matis lors de notre retour à la surface. {break} Dans la partie est se trouve un grand cercle entouré de deux monts de racines, c'est en fait un sanctuaire kamique. La tribu des $tribe_sacred_sap$, des Zoraïs protecteurs des esprits d'Atys, surveille les environs du sanctuaire, afin que les Kamis qui s'y rassemblent ne soient pas inquiétés. Ils n'aiment guère les Matis, j'essaie donc de les éviter.{break} La seconde tribu présente dans la région est celle des $tribe_siblings_of_the_weeds$. Il n'y a pas grand-chose à craindre d'eux, ils ne pensent qu'à prendre soin des plantes intelligentes qui vivent parmi eux. {break} La région est giboyeuse et compte de nombreux troupeaux de $bodoc.p$, de $mektoub.p$ et autres $race_h1.p$... il y a moins de chasseurs qu'aux alentours de la capitale, et les animaux sont moins dangereux que dans les régions éloignées. Voilà pourquoi je me plais ici ! {break} Je ne suis pas très loin des villages, où je peux revendre le produit de ma chasse. Et je ne suis pas dérangé... enfin, la plupart du temps. À présent, retourne voir $givervar$, et laisse-moi reprendre ma traque.]
+}
+
+R_01_07_P_TT_FINAL (bot giver, bot hunter)
+{
+	r_01_07_p_tt_final	[J'ai rencontré $hunter$...]
+}
+
+R_01_07_P_BC_END ()
+{
+	r_01_07_p_bc_end	[J'espère qu'il va bien ! Il est un peu grognon, mais quand on sait s'y prendre avec lui, c'est un homin d'une grande sagesse. Vous avez fait vos preuves, je vais donc vous apprendre ma fameuse technique de cartographie. Prenez aussi ce cube d'ambre, il vous apprendra bien des choses sur la région que vous avez explorée.]
+}
+

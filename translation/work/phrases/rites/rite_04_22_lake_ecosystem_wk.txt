@@ -1,0 +1,28 @@
+﻿R_04_22_MIS_TITLE (bot giver)
+{
+	r_04_22_mis_title	[Le forage en milieu lacustre]
+}
+
+R_04_22_MIS_DESC (bot giver, place fairhaven)
+{
+	r_04_22_mis_desc	[The intendant of $fairhaven$ knows a special foraging technique. He only teaches it to homins who show a real interest in the region.]
+}
+
+R_04_22_P_LDF_INTRO_1 ()
+{
+	r_04_22_p_ldf_intro_1	[- L'écosystème lacustre comporte de nombreuses matières premières que nous utilisons dans notre artisanat.\n
+- Pour mieux le connaître, ramènes-moi un peu de chacune des matières premières caractéristiques.\n
+- En retour je t'enseignerais une technique de forage typique de notre peuple]
+}
+
+R_04_22_P_BC_NEXT_1 (bot player)
+{
+	r_04_22_p_bc_next_1	[Good on ya, $player$, you've found some of our basic resources. Now, over the years, our crafters have developed a shockwave resistance technique based on the use of amber.{break} I want you to fetch me some of the precious material.]
+}
+
+R_04_22_P_BC_DEBRIEF_1 ()
+{
+	r_04_22_p_bc_debrief_1	[- Tu as prouvé que tu comprenais les finesses de notre écosysteme\n
+- Recois ce cube d'ambre et la technique de forage Tryker.]
+}
+

@@ -1,0 +1,216 @@
+﻿//////////////////Matis villageC Avalae missions/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Mission 01 : CRAFT MISSION
+/*
+MC_CRAFT_MIS_01
+*/
+MC_CRAFT_MIS_01_TITLE (bot giver)
+{
+	mc_craft_mis_01_title			[Harvesting for a craftsman Master]
+
+}
+
+MC_CRAFT_MIS_01_DESC (bot giver)
+{
+	mc_craft_mis_01_desc			[Le groupe doit trouver des matières premières fraîches en un temps limité.]
+
+}
+
+MC_CRAFT_MIS_01_STEP_1 (item mdobfbruf01, item mdoafbmof01, item mducfboif01)
+{
+//Craftsman
+	mc_craft_mis_01_step_1			[J'ai un problème urgent à résoudre, et vous pouvez m'aider.\n
+						L'un de nos maître artisans expérimente actuellement une nouvelle création.{break} 
+						Il aborde une phase délicate de la fabrication, et pour la mener à bien, il a un besoin impératif 
+						d'un certain nombre d'ingrédients de première fraîcheur. Il ne saurait travailler avec des matières 
+						desséchées par le temps s'il veut obtenir la meilleure qualité possible ! Le problème est que nous ne 
+						disposons plus des ingrédients qu'il veut utiliser... nous devons les lui procurer le plus vite possible, 
+						sans quoi notre artisan devra reprendre son travail depuis le début !\n
+						J'ai donc besoin que vous trouviez rapidement ces ingrédients dans la région. Il me faut 
+						des $mdobfbruf01.p$, des $mdoafbmof01.p$ et des $mducfboif01.p$. 
+						Apportez-moi cela dès que possible !]
+
+}
+
+MC_CRAFT_MIS_01_GIVE_ITEM_MENU(int item_count)
+{
+	mc_craft_mis_01_give_item_menu		[Give foraged materials]
+}
+
+MC_CRAFT_MIS_01_STEP_2 (item mduafcfif01)
+{
+//Craftsman
+	mc_craft_mis_01_step_2			[Perfect, this will enable our craftsman to get on! But don't go yet, I still need you...{break} 
+						Our craftman says he'll be needing some $mduafcfif01.p$ of the finest quality for the final phase. 
+						<**>I'm counting on you to bring several samples 
+						back to us before he reaches the last stage of his creation!]
+
+}
+
+MC_CRAFT_MIS_01_END ()
+{
+//Craftsman
+	mc_craft_mis_01_end			[Excellent ! Grâce à votre aide, notre artisan a toutes les chances d'arriver à ses fins. 
+						Partagez-vous cette somme en remerciement, et bravo pour votre efficacité !]					 		
+
+}
+
+//reward 1000 money X + fame Matis
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Mission 02 : KNOWLEDGE MISSION
+/*
+MC_KNOWLEDGE_MIS_02
+*/
+MC_KNOWLEDGE_MIS_02_TITLE (bot giver)
+{
+	mc_knowledge_mis_02_title		[The Company of Lenardi Bravichi]
+
+}
+
+MC_KNOWLEDGE_MIS_02_DESC (bot giver)
+{
+	mc_knowledge_mis_02_desc		[<**Les sages vont vous conter l'histoire de Lenardi Bravichi et de sa compagnie, formée dans les Primes racines.**>]
+
+}
+
+MC_KNOWLEDGE_MIS_02_STEP_1 (bot target, player p, place place_davae)
+{
+//mc_sage
+	mc_knowledge_mis_02_step_1		[The force of knowledge is such that it can shatter the barriers dividing peoples. $p$, listen 
+						to the story of the company that came about in the depths of the Prime Roots.{break}\nWhen the great Matis 
+						artisan, Lenardi Bravichi, came to the Prime Roots that had become home to the homin peoples following 
+						the terrible swarming, he could hardly contain his emotion. On seeing the weird and wonderful flora there, 
+						he set out on perhaps his greatest work to make living there so much more soulful.\n
+						<**Veux-tu en savoir plus sur ce fameux travail ? $target$, le sage du village de $place_davae$, 
+						adore raconter cette histoire. Va donc le voir de ma part, cela lui fera plaisir. C'est un homme charmant, 
+						et il appréciera ta visite.**>]
+
+}
+
+MC_KNOWLEDGE_MIS_02_STEP_2 (bot previous)
+{
+//mb_sage
+	mc_knowledge_mis_02_step_2		[So, Lenardi Bravichi arouses your interest? That is good, and in that case I shall go on with the story 
+						where you say the good $previous$ left off.{break}\nIn a frenzy of creation Bravichi set about working on patterns 
+						and prototypes that would serve as furniture for the time the homins would reside in the Prime Roots. 
+						Once a pattern was worked out he would impart the process of creation to another master craftsman who would 
+						then dispense the knowledge to other craftsmen so enabling the rapid production of furniture to comfortably 
+						furnish the caverns before the winter set in.\nOne of his greatest creations was his colored lamps made of 
+						living luminous flowers which served to light up the high and otherwise gloomy corridors. To help him in 
+						his great work of the beautification of the Prime Roots, Bravichi formed a company of homins, all masters 
+						in their field and from every race.\n
+						So this story amuses you? <**Dans ce cas, pourquoi ne pas retourner voir $previous$, elle se fera 
+						une joie de t'en conter la suite. Et offre-lui cette fleur de ma part. Dis-lui qu'à l'instar des fleurs de 
+						Bravichi, sa beauté est lumineuse, et qu'elle éclaire le chemin des êtres misérables tels que moi !**>]
+
+}
+
+MC_KNOWLEDGE_MIS_02_STEP_3 (bot previous, player p)
+{
+//mc_sage
+	mc_knowledge_mis_02_step_3		[<**Cette fleur est magnifique... $previous$ est un homme si romantique ! Et avec un grand sens de l'humour, 
+						ce qui est rare chez une personne de qualité. Mais revenons à la compagnie de Bravichi.{break} Où m'as-tu dit 
+						que $previous$ avait arrêté son récit ?  Ah oui, the company of homins...**>\n
+						The Company was comprised of experts from every race. A team of Fyros miners led by Gaylus 
+						Cetheus specialized in digging out the trenches and chambers in such a way that only once was there an 
+						accident of subsidence, despite the many miles of excavated galleries and caverns. A Tryker by the name of 
+						Dally Baily devised ingenious engines to enhance air flow. <**A Zoraï with extraordinary magnetic powers, 
+						whose name escapes me now, implemented an intrusion alarm system as well as a communication system 
+						consisting of a series of magnetic rods and wooden tubes allowing homins to communicate from one chamber 
+						to the next without having to displace themselves.\nWhere can this place be found?\n
+						Je ne le sais pas. $previous$, qui connait maintes et maintes choses, te le dira peut-être. 
+						Il concluera cette histoire pour moi. Peux-tu lui remettre cette lettre, en remerciement de son cadeau 
+						si attentionné ? Puisse ta quête de savoir éclairer ton chemin, $p$.**>]
+
+}
+
+MC_KNOWLEDGE_MIS_02_END (bot previous)
+{
+//mb_sage
+	mc_knowledge_mis_02_end			[<**Oh, une lettre de $previous$ ? Ce jour est béni par Jena ! N'est-ce pas merveilleux de ressentir 
+						les frissons de la passion à nos âges ? Je me sens déjà rajeunir... Mais je m'égare.{break} Car tu me dis que 
+						la douce $previous$ souhaite que je réponde à la grande question que tu te poses...\n
+						Where can this place be found?**>\n
+						Well, too few people are able to cast their minds back to those times of peace, solidarity and mutual understanding 
+						which, I feel, is a dreadful shame. It was indeed a truly beautiful place whose many resources contained 
+						exceptional properties for healing and regeneration and what-have-you. I believe now the Karavan has condemned 
+						the place. If I were younger I should strive to have it refurbished as an example of homin intelligence.]
+
+}
+
+//reward 1 action knowledge + fame Matis
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Mission 03 : FIGHT MISSION
+/*
+MC_FIGHT_MIS_03
+*/
+MC_FIGHT_MIS_03_TITLE (bot giver)
+{
+	mc_fight_mis_03_title	[The Infected predators]
+
+}
+
+MC_FIGHT_MIS_03_DESC (bot giver)
+{
+	mc_fight_mis_03_desc	[Vous devez débusquer et abattre des prédateurs infectés par le goo.]
+
+}
+
+MC_FIGHT_MIS_03_STEP_1 (bot target, player p)
+{
+//Guard chief
+	mc_fight_mis_03_step_1			[Je suis soucieux, $p$. La nuit dernière, un voyageur a été attaqué sur la route des villages par 
+						des animaux d'une férocité exceptionnelle !{break} Le pauvre diable a été tué et en partie dévoré ; c'est l'une 
+						de mes recrues qui a trouvé le corps gisant dans les fourrés. $target$ a également découvert des traces de 
+						goo, laissées par les prédateurs... Il faut agir ! La première battue n'a rien donné. 
+						Tu me sembles compétent... Tu dois en apprendre plus sur ces bêtes, afin de les débusquer et de les tuer. 
+						Va voir $target$ de ma part, il te dira ce qu'il sait. Il patrouille sur la route.]
+
+}
+
+MC_FIGHT_MIS_03_STEP_2 (bot target)
+{
+//Guard
+	mc_fight_mis_03_step_2			[Quelle horrible histoire ! J'ai trouvé la victime près de la croisée des chemins, à l'est du village 
+						de Davae...  Le voyageur a essayé de se défendre, mais les animaux infectées par le goo sont de 
+						véritables bêtes enragées.{break} J'ai pu repérer quelques traces, elles partaient vers le nord. J'ai fait un 
+						croquis d'une empreinte de patte sur ce parchemin. Peut-être pourrais-tu le montrer à $target$, il connaît bien 
+						la faune de la région.]
+
+}
+
+MC_FIGHT_MIS_03_STEP_3 (race chonari)
+{
+//Stableboy
+	mc_fight_mis_03_step_3			[Qu'est-ce donc ? Hmm... Il me semble reconnaître une empreinte de patte de $chonari$. 
+						Je connais bien ces animaux, ils sont plutôt malins. J'en ai dressé quelques-uns. 
+						Tu cherches à en débusquer ?{break} Je peux peut-être t'aider... Prends ce sifflet, je l'utilisais pour 
+						appeler $chonari.pda$ $chonari.p$ que je dressais. Je l'ai sculpté dans une épine. Il y a des chances pour 
+						que les animaux que tu cherches réagissent lorsqu'ils l'entendront... mais ils seront sans doute moins 
+						affectueux que mes $chonari.p$ domestiqués !]
+
+}
+
+MC_FIGHT_MIS_03_CUSTOM_OBJ_1(place p)
+{
+//message d'objectif pour rejoindre la zone de spawn des chonaris
+	mc_fight_mis_03_custom_obj_1 		[Go to the north of the crossroads]
+
+}
+
+MC_FIGHT_MIS_03_SYSTEM_MSG_1 (race chonari)
+{
+//Systeme_msg pour spawn des chonaris
+	mc_fight_mis_03_system_msg_1 		[Vous distinguez des traces de $chonari.p$ parmi la végétation. Vous utilisez le sifflet... des
+						ricanements inquiétants parviennent à vos oreilles.]
+
+}
+
+MC_FIGHT_MIS_03_END (player p)
+{
+//Guard chief
+	mc_fight_mis_03_end			[Bien, $p$, tu as accompli ta mission ! Voici ta récompense pour prix de ton courage.]
+
+}
+
+//reward 300 money X + fame Matis
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
