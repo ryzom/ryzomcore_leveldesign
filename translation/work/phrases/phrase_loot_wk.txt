@@ -90,3 +90,13 @@ HARVEST_LOOT_ALREADY_IN_PROGRESS_OTHER(entity creature, entity harvester)
 	harvest_loot_already_in_progress_other	[&CHK&$creature.da$ $creature$ is already being looted by $harvester$.]
 }
 
+EGS_ITEM_ALREADY_BEING_LOOTED_E (entity e)
+{
+	[&CHK&This bag is already being looted by $e$.]
+}
+
+EGS_LOOT_MONEY (money m)
+{
+	[&ITM&You loot $m$ dappers.]
+}
+

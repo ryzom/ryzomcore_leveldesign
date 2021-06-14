@@ -4,39 +4,116 @@ LITERAL ( literal lit )
 	[$lit$]
 }
 
-SHOPKEEPER_NO_SELL(bot b)
+MELEESTATE1 ()
 {
-	shopkeeper_no_sell	[I have nothing to sell right now, come back later.]
+	meleestate1	[Come buy a sword. Best quality on the market!]
+}
+
+MELEESTATE2 ()
+{
+	meleestate2	[Need a new mace ? We got what you want.]
+}
+
+MELEESTATE3 ()
+{
+	meleestate3	[Get a weapon, get a sword. Best prices here!]
+}
+
+MELEESTATE4 ()
+{
+	meleestate4	[Axes and two handed swords at best price.]
+}
+
+MELEESTATE5 ()
+{
+	meleestate5	[Staffs and daggers, nice quality. Make sure you check 'em out!]
+}
+
+MELEESTATE6 ()
+{
+	meleestate6	[Lances, swords, maces, only the best weapons at low prices.]
+}
+
+MENU_HOF()
+{
+	[Consulter la Stèle de Valeur]
+}
+
+MENU_STELE()
+{
+	[Lire l'inscription]
 }
 
 
-TOO_ENCUMBERED()
+P_EPISODE2_KARAVAN_FORMATION_LEADER_1()
 {
-	too_encumbered [&CHK& You are too encumbered.]
+	[Soyez prêts à donner votre vie pour la Déesse !]
 }
 
-ROOM_TOO_ENCUMBERED ()
+P_EPISODE2_KARAVAN_FORMATION_LEADER_2()
 {
-	[&CHK& Your appartment is too encumbered.]
+	[Section, en formation !]
 }
 
-ANIMAL_PACKER_TOO_ENCUMBERED ()
+P_EPISODE2_KARAVAN_FORMATION_LEADER_3()
 {
-	[&CHK& Your mektoub is too encumbered.]
+	[Les Kamistes seront sans pitié, préparez vous à un long combat !]
 }
 
-TELEPORT_USED ( int i )
+P_EPISODE2_KARAVAN_FORMATION_LEADER_4()
 {
-	[&SYS& You will be teleported in $i$ seconds.]
+	[Serrez les rangs !]
 }
 
-TELEPORT_CANCELED()
+P_EPISODE2_KARAVAN_FORMATION_LEADER_5()
 {
-	[&SYS&Teleportation has been canceled.]
+	[Pour Jena !]
 }
 
-//*************************************************
-//*************************************************
+P_LEVIERS_DOUANE_PYR_1()
+{
+	[Toute marchandise Fyros qui sort du pays sera taxée.]
+}
+
+P_LEVIERS_DOUANE_PYR_2()
+{
+	[Ne faites pas confiance aux marchands étrangers !]
+}
+
+RANGESTATE1 ()
+{
+	rangestate1	[Good range weapons, have a look!]
+}
+
+RANGESTATE2 ()
+{
+	rangestate2	[Don't want a sword ? Come check our goods!]
+}
+
+RANGESTATE3 ()
+{
+	rangestate3	[Guns and Ammo, bows and arrows, feel free to check 'em out!]
+}
+
+RANGESTATE4 ()
+{
+	rangestate4	[Best guns of Natae, come take a look!]
+}
+
+RANGESTATE5 ()
+{
+	rangestate5	[New bowpistols and bowguns !]
+}
+
+RANGESTATE6 ()
+{
+	rangestate6	[Best launcher on the market, get yours now!]
+}
+
+RANGESTATE7 ()
+{
+	rangestate7	[Large variety of range weapons, feel free to check 'em out.]
+}
 
 
 // 4 july
@@ -130,8 +207,49 @@ CIVILSTATE6 ()
      civilstate6   [Ack ! I always get lost in this city!]
 }
 
+SHOPKEEPER_NO_SELL(bot b)
+{
+	shopkeeper_no_sell	[I have nothing to sell right now, come back later.]
+}
 
 
+TOO_ENCUMBERED()
+{
+	too_encumbered [&CHK& You are too encumbered.]
+}
+
+ROOM_TOO_ENCUMBERED ()
+{
+	[&CHK& Your appartment is too encumbered.]
+}
+
+ANIMAL_PACKER_TOO_ENCUMBERED ()
+{
+	[&CHK& Your mektoub is too encumbered.]
+}
+
+TELEPORT_USED ( int i )
+{
+	[&SYS& You will be teleported in $i$ seconds.]
+}
+
+TELEPORT_CANCELED()
+{
+	[&SYS&Teleportation has been canceled.]
+}
+
+//*************************************************
+//*************************************************
+
+ABANDON_TEAM_MISSION_REFUSED()
+{
+	abandon_team_mission_refused [&CHK& only leaders can abandon a team mission.]
+}
+
+NO_ACTION_WHILE_EQUIPPING()
+{
+	[&CHK&you cannot use an action while equipping.]
+}
 
 GMOTD (literal s)
 {
@@ -463,84 +581,9 @@ CSR_UNIVERSE_MUTE_ENDS()
 }
 
 
-RANGESTATE1 ()
-{
-     rangestate1   [Good range weapon, have a look.]
-}
-
-RANGESTATE2 ()
-{
-     rangestate2   [Don't want a sword ? Come check our goods!]
-}
-
-RANGESTATE3 ()
-{
-     rangestate3   [Ammo and gun, arrow and bow, feel free to check.]
-}
-
-RANGESTATE4 ()
-{
-     rangestate4   [Best gun of Natae, get a look!]
-}
-
-RANGESTATE5 ()
-{
-     rangestate5   [New pistolarc and bowgun!]
-}
-
-RANGESTATE6 ()
-{
-     rangestate6   [Best launcher on market, get yours now!]
-}
-
-RANGESTATE7 ()
-{
-     rangestate7   [Large variety of range weapon, feel free to check.]
-}
-
-MELEESTATE1 ()
-{
-     meleestate1   [You have a hand ? Come buy a sword. Best quality on market!]
-}
-
-MELEESTATE2 ()
-{
-     meleestate2   [Need a new mace ? We got what you want.]
-}
-
-MELEESTATE3 ()
-{
-     meleestate3   [Get a weapon, get a sword. Best prices!]
-}
-
-MELEESTATE4 ()
-{
-     meleestate4   [Axe and two hand sword at best price.]
-}
-
-MELEESTATE5 ()
-{
-     meleestate5   [Staff and dagger nice quality. Be sure to check!]
-}
-
-MELEESTATE6 ()
-{
-     meleestate6   [Lance, sword, mace, only best weapon at low price.]
-}
-
-UNEFFICENT_RANGE ()
-{
-	[&SYS&Vous êtes trop loin pour toucher efficacement cette cible.]
-}
-
 OPS_TEAM_MAX_SIZE_REACHED ()
 {
 	[&CHK&The team has reached its size limit and cannot accept anymore players.]
-}
-
-EGS_ACTOR_VAMPIRISE_EI (entity target, int vampirise)
-{
-	[&SPLM&You vampirise $vampirise$ from $target$]
 }
 
 EGS_CANT_SELL_ANYTHING ()
@@ -556,17 +599,6 @@ EGS_CANT_CONSTRUCT_ANYTHING ()
 OPS_WELCOME ()
 {
 	[&AROUND&Welcome to Ryzom !]
-}
-
-EGS_ITEM_ALREADY_BEING_LOOTED_E (entity e)
-{
-	[&CHK&This bag is already being looted by $e$.]
-}
-
-
-EGS_LOOT_MONEY (money m)
-{
-	[&ITM&You loot $m$ dappers.]
 }
 
 EGS_USE_LAST_AMMO ()
@@ -587,47 +619,6 @@ EGS_NOT_ENOUGHT_SP ()
 OPS_PACT_GAIN_U (int i)
 {
 	[&SYS&You have won a survival pact of level $i$.]
-}
-
-OPS_EXCHANGE_IMPOSSIBLE ()
-{
-	[&CHK&You can't invite someone to exchange if you are already trading]
-}
-
-// death messages
-OPS_DEATH_KAMI_RESURECT ()
-{
-	[&SYS&The Kamis honor the pact:  Sap flows through you once again as you resuscitate.]
-}
-
-OPS_DEATH_CARAVAN_RESURECT ()
-{
-	[&SYS&The Karavan works its craft and you exist once more.]
-}
-
-OPS_DEATH_PERMANENT_KILLED ()
-{
-	[&CHK&You no longer have a valid resurrection pact. You return to the humus from which you first emerged.]
-}
-
-INVALID_TARGET()
-{
-	[&CHK&Invalid Target.]
-}
-
-EGS_PVP_NOT_ALLOWED ()
-{
-	[&CHKCB&You connat use offensive action against this player character.]
-}
-
-BS_TARGET_NOT_ATTACKABLE ()
-{
-	[&CHKCB&You cannot use offensive action against your current target.]
-}
-
-MAGIC_CANNOT_CAST_ON_PVP ()
-{
-	[&CHKCB&You cannot cast this spell on an opponent.]
 }
 
 EGS_NOT_ENOUGH_AMMO ()
@@ -816,186 +807,6 @@ TP_FORBIDEN_IN_RING_INSTANCE()
 	[&CHK&Vous ne pouvez pas utiliser un ticket de TP pendant une aventure Ring ou une session d'edition Ring.]
 }
 
-ANIMAL_HUNGRY()
-{
-	[&CHK&Your mektoub is hungry, and can't run any longer.]
-}
-
-ANIMAL_HAS_EATEN()
-{
-	[&ITM&Your mektoub has eaten some food from his inventory, and can now run.]
-}
-
-ANIMAL_FOLLOW_TOO_FAR()
-{
-	[&CHK&Your following mektoub is too far from you and can't follow you any longer.]
-}
-
-MISSION_PREREQ_TEAM()
-{
-	[Vous devez être membre d'une équipe.]
-}
-
-MISSION_PREREQ_TEAM_LEADER()
-{
-	[Vous devez être le chef de votre équipe.]
-}
-
-MISSION_PREREQ_TEAM_SIZE(int n)
-{
-	[Votre équipe doit comporter au moins $n$ membres.]
-}
-
-MISSION_PREREQ_NEED_ITEM_BAG(item item)
-{
-	[Vous devez posséder $item.ia$ $item$ dans votre sac.]
-}
-
-MISSION_PREREQ_NEED_ITEM_WORN(item item)
-{
-	[Vous devez être équipé avec $item.ia$ $item$.]
-}
-
-MISSION_PREREQ_SKILL_LEVEL(skill skill, int min, int max)
-{
- (max >= 250)
-	[Votre niveau dans la compétence '$skill$' doit être supérieur à $min$.]
- (min = 0)
-	[Votre niveau dans la compétence '$skill$' doit être inférieur à $max$.]
-
-    [Votre niveau dans la compétence '$skill$' doit être supérieur à $min$ et inférieur à $max$.]
-}
-
-MISSION_PREREQ_EVENT_FACTION (event_faction ef)
-{
-	[Your must be in event faction '$ef$'.]
-}
-
-MISSION_PREREQ_FAME_FACTION (faction f, int level)
-{
-	[Votre réputation auprès de la faction "$f$" doit être au moins égale à $level$.]
-}
-
-MISSION_PREREQ_KAMI ()
-{
-	[Votre réputation auprès des Kamis doit être supérieure à votre réputation auprès de la Karavan.]
-}
-
-MISSION_PREREQ_KARAVAN ()
-{
-	[Votre réputation auprès de la Karavan doit être supérieure à votre réputation auprès des Kamis.]
-}
-
-MISSION_PREREQ_SEASON_SPRING()
-{
-	[Cette mission n'est disponible qu'au printemps.]
-}
-MISSION_PREREQ_SEASON_SUMMER()
-{
-	[Cette mission n'est disponible qu'en été.]
-}
-MISSION_PREREQ_SEASON_AUTUMN()
-{
-	[Cette mission n'est disponible qu'en automne.]
-}
-MISSION_PREREQ_SEASON_WINTER()
-{
-	[Cette mission n'est disponible qu'en hiver.]
-}
-
-MISSION_PREREQ_ACTION(sbrick s)
-{
-	[Cette mission nécessite que vous connaissiez la stanza "$s$".]
-}
-
-MISSION_PREREQ_MISSION_DONE (dyn_string_id str)
-{
-	[Cette mission nécessite la réussite de la mission '$str$'.]
-}
-
-MISSION_PREREQ_MISSION_RUNNING (dyn_string_id str)
-{
-	[Cette mission nécessite la prise de la mission '$str$'.]
-}
-
-MISSION_PREREQ_MISSION_NOTDONE (dyn_string_id str)
-{
-	[Cette mission nécessite que la mission '$str$' ne soit pas accomplie.]
-}
-
-MISSION_PREREQ_MISSION_NOTRUNNING (dyn_string_id str)
-{
-	[Cette mission nécessite que la mission '$str$' ne soit pas en cours.]
-}
-
-MISSION_PREREQ_CAN_NO_LONGER_TAKE ()
-{
-	[Vous ne pouvez plus prendre cette mission.]
-}
-
-MISSION_PREREQ_TIMER (int days, int h, int m)
-{
-	(days > 0 )
-		mission_prereq_timer_dhm [Cette mission sera disponible dans $days$ jours, $h$ heures et $m$ minutes.]
-	(days = 0 & h > 0 )
-		mission_prereq_timer_hm	[Cette mission sera disponible dans $h$ heures et $m$ minutes.]
-
-	mission_prereq_timer_m	[Cette mission sera disponible dans $m$ minutes.]
-}
-
-MISSION_PREREQ_ALREADY_DONE()
-{
-	[Cette mission ne peut être prise qu'une seule fois.]
-}
-
-MISSION_PREREQ_MONO()
-{
-	[Cette mission ne peut être prise pour le moment, revenez plus tard.]
-}
-
-MISSION_PREREQ_ENCYCLO_ALL_DONE (dyn_string_id thema, dyn_string_id album)
-{
-	[Toutes les tâches rituelles relatives au thème "$thema$" dans l'album "$album$" doivent avoir été réussies.]
-}
-
-MISSION_PREREQ_TITLE (title title)
-{
-	[Vous devez afficher le titre "$title$".]
-}
-
-MISSION_ENTER_CRITITAL_PART_TIMEOUT(dyn_string_id str)
-{
-	[Vous n'avez pas répondu assez vite, vous etes maintenant en mode sommeil pour la mission $str$.]
-}
-
-MISSION_QUEUE_WAIT(int nbWaiters, int onlineWaiters, int days, int hours, int m)
-{
-	(nbWaiters = 0 & days > 0)
-		[Vous etes en tête de la file d'attente pour cette mission. Temps d'attende estimé : $days$ jours $hours$ heures et $m$ minutes.]
-	(nbWaiters = 0 & hours > 0)
-		[Vous etes en tête de la file d'attente pour cette mission. Temps d'attende estimé : $hours$ heures et $m$ minutes.]
-	(nbWaiters = 0)
-		[Vous etes en tête de la file d'attente pour cette mission. Temps d'attende estimé : $m$ minutes.]
-
-	(days>0)
-		[Il y a devant vous $nbWaiters$ personnes (dont $onlineWaiters$ online) dans la file d'attente pour cette mission. Temps d'attende estimé : $days$ jours $hours$ heures et $m$ minutes.]
-
-	(hours > 0)
-		[Il y a devant vous $nbWaiters$ personnes (dont $onlineWaiters$ online) dans la file d'attente pour cette mission. Temps d'attende estimé : $hours$ heures et $m$ minutes.]
-
-	[Il y a devant vous $nbWaiters$ personnes (dont $onlineWaiters$ online) dans la file d'attente pour cette mission. Temps d'attende estimé : $m$ minutes.]
-}
-
-MISSION_ENTER_CRITITAL_PART_DECLINE(dyn_string_id str)
-{
-	[Vous avez décliné la proposition, vous etes maintenant en mode sommeil pour la mission $str$.]
-}
-
-MISSION_ENTER_CRITITAL_PART_PROPOSAL(dyn_string_id str)
-{
-	[Voulez vous entrer dans la partie critique de la mission $str$ ?]
-}
-
 MOUNT_CANT_WHILE_TP()
 {
 	[&CHK&Vous ne pouvez pas monter sur votre monture pendant une téléportation.]
@@ -1051,229 +862,6 @@ XP_CATALYSER_PROGRESS_NORMAL_GAIN(skill s, int i, int j)
 XP_CATALYSER_CONSUME(int i, int j)
 {
 	[&SYS&Vous consommez $i$ catalyseurs d'expérience de niveau $j$.]
-}
-
-P_EPISODE2_KARAVAN_FORMATION_LEADER_1()
-{
-	[Soyez prêts à donner votre vie pour la Déesse !]
-}
-
-P_EPISODE2_KARAVAN_FORMATION_LEADER_2()
-{
-	[Section, en formation !]
-}
-
-P_EPISODE2_KARAVAN_FORMATION_LEADER_3()
-{
-	[Les Kamistes seront sans pitié, préparez vous à un long combat !]
-}
-
-P_EPISODE2_KARAVAN_FORMATION_LEADER_4()
-{
-	[Serrez les rangs !]
-}
-
-P_EPISODE2_KARAVAN_FORMATION_LEADER_5()
-{
-	[Pour Jena !]
-}
-MENU_HOF()
-{
-	[Consulter la Stèle de Valeur]
-}
-
-MENU_STELE()
-{
-	[Lire l'inscription]
-}
-
-MENU_HELLO()
-{
-	[Hello!]
-}
-
-MENU_ROOM_ACCESS()
-{
-	[Old apartment and Guild Hall access]
-}
-
-P_LEVIERS_DOUANE_PYR_1()
-{
-	[Toute marchandise Fyros qui sort du pays sera taxée.]
-}
-
-P_LEVIERS_DOUANE_PYR_2()
-{
-	[Ne faites pas confiance aux marchands étrangers !]
-}
-
-// Si pas d'erreur inutile de le préciser (à priori).
-OUTPOST_ERROR_NONE()
-{
-	[]
-}
-
-OUTPOST_ERROR_INVALID_USER()
-{
-	[Votre id de joueur n'est pas valide (bug).]
-}
-
-OUTPOST_ERROR_INVALID_OUTPOST()
-{
-	[Cet outpost n'est pas valide (bug).]
-}
-
-OUTPOST_ERROR_NO_GUILD_MODULE()
-{
-	[Vous devez faire partie d'une guilde pour attaquer un outpost.]
-}
-
-OUTPOST_ERROR_BAD_GUILD_GRADE()
-{
-	[Vous n'avez pas le grade nécessaire au sein de votre guilde pour attaquer cet outpost.]
-}
-
-
-OUTPOST_ERROR_BAD_MEMBER_LEVEL()
-{
-	[Vous devez avoir un joueur en ligne dans la guilde d'un niveau et d'une ancienneté suffisante pour défier cet avant-poste. Le niveau requis ainsi que l'ancienneté dépendent du niveau de l'avant-poste.]
-}
-
-OUTPOST_ERROR_NOT_ENOUGH_MONEY()
-{
-	[Vous et votre guilde n'avez pas assez d'argent pour attaquer cet outpost.]
-}
-
-OUTPOST_ERROR_ALREADY_ATTACKED()
-{
-	[Cet outpost fait déjà l'objet d'une attaque.]
-}
-
-OUTPOST_ERROR_ALREADY_OWNED()
-{
-	[Vous possédez déjà cet outpost.]
-}
-
-OUTPOST_ERROR_TIME_PERIOD_ESTIMATION_CHANGED()
-{
-	[La période d'attaque estimée a changé depuis l'ouverture de la fenêtre.]
-}
-
-OUTPOST_ERROR_TOO_MANY_GUILD_OUTPOSTS()
-{
-	[Votre guilde ne peut pas acquérir plus d'avant-postes.]
-}
-
-OUTPOST_ERROR_UNKNOWN()
-{
-	[Erreur d'outpost inconnue (bug).]
-}
-
-// side: 0=owner, 1=attacker
-// guild_owner: 0=no (tribe owner), 1=yes (guild owner)
-OUTPOST_BCP_UNKNOWN_TITLE(outpost o, int side) { [Erreur : message d'outpost inconnu] }
-OUTPOST_BCP_UNKNOWN(outpost o, int side) { [Ce message ne devrait pas être visible. Merci de signaler ce bug.] }
-OUTPOST_BCM_UNKNOWN(outpost o, int side) { [&OSM&Erreur : message d'outpost inconnu.] }
-
-OUTPOST_BCM_ROUND_NEAR_END(outpost o, int side) { [&OSM&Le round va se terminer dans une minute.] }
-OUTPOST_BCM_ROUND_LOST(outpost o, int side) { [&OSM&Vous avez perdu le round.] }
-OUTPOST_BCM_ROUND_WON(outpost o, int side) { [&OSM&Vous avez gagné le round.] }
-OUTPOST_BCM_LAST_ROUND_LOST(outpost o, int side) { [&OSM&Vous avez perdu le round.] }
-OUTPOST_BCM_LAST_ROUND_WON(outpost o, int side) { [&OSM&Vous avez gagné le round.] }
-
-OUTPOST_BCP_ATTACK_FAILED_TITLE(outpost o, int side)
-{
-	(side = 0)
-		[Victoire !]
-	(side = 1)
-		[Echec !]
-	[Fin de l'attaque]
-}
-OUTPOST_BCP_ATTACK_FAILED(outpost o, int side)
-{
-	(side = 0)
-		[L'attaque de l'avant-poste $o.name$ a échoué, vous conservez le contrôle de l'outpost.]
-	(side = 1)
-		[L'attaque de l'avant-poste $o.name$ a échoué, votre tentive de prise de l'outpost a échoué.]
-	[L'attaque de l'outpost a échoué.]
-}
-OUTPOST_BCP_ATTACK_SUCCEEDED_TITLE(outpost o, int side)
-{
-	(side = 0)
-		[Echec !]
-	(side = 1)
-		[Victoire !]
-	[Fin de l'attaque]
-}
-OUTPOST_BCP_ATTACK_SUCCEEDED(outpost o, int side, int guild_owner)
-{
-	(guild_owner = 1)
-		[L'attaque de l'avant-poste $o.name$ a réussi, préparez vous pour la phase de défense.]
-	(guild_owner = 0 and side = 1)
-		[L'attaque de l'avant-poste $o.name$ a réussi, vous allez gagner le contrôle de l'outpost.]
-	[L'attaque de l'outpost a réussi.]
-}
-OUTPOST_BCP_DEFENSE_FAILED_TITLE(outpost o, int side)
-{
-	(side = 0)
-		[Echec !]
-	(side = 1)
-		[Victoire !]
-	[Fin de la défense]
-}
-OUTPOST_BCP_DEFENSE_FAILED(outpost o, int side)
-{
-	(side = 0)
-		[La défense de l'avant-poste $o.name$ a échoué, vous allez perdre le contrôle de l'outpost.]
-	(side = 1)
-		[La défense de l'avant-poste $o.name$ a échoué, vous allez gagner le contrôle de l'outpost.]
-	[La défense de l'outpost a échoué.]
-}
-OUTPOST_BCP_DEFENSE_SUCEEDED_TITLE(outpost o, int side)
-{
-	(side = 0)
-		[Victoire !]
-	(side = 1)
-		[Echec !]
-	[Fin de la défense]
-}
-OUTPOST_BCP_DEFENSE_SUCEEDED(outpost o, int side)
-{
-	(side = 0)
-		[La défense de l'avant-poste $o.name$ a réussi, vous conservez le contrôle de l'outpost.]
-	(side = 1)
-		[La défense de l'avant-poste $o.name$ a réussi, votre tentive de prise de l'outpost a échoué.]
-	[La défense de l'outpost a réussi.]
-}
-OUTPOST_BCP_ATTACK_ROUNDS_TITLE(outpost o, int side)
-{
-	[Début de la période d'attaque]
-}
-OUTPOST_BCP_ATTACK_ROUNDS(outpost o, int side)
-{
-	(side = 0)
-		[La période d'attaque contre votre avant-poste $o.name$ a commencé !]
-	[La période d'attaque contre l'avant-poste $o.name$ a commencé !]
-}
-OUTPOST_BCP_DEFENSE_ROUNDS_TITLE(outpost o, int side)
-{
-	[Début de la période de défense]
-}
-OUTPOST_BCP_DEFENSE_ROUNDS(outpost o, int side)
-{
-	(side = 0)
-		[La période de défense de votre avant-poste $o.name$ a commencé !]
-	[La période de défense de l'avant-poste $o.name$ a commencé !]
-}
-OUTPOST_BCP_WAR_DECLARED_TITLE(outpost o, int side)
-{
-	[La guerre est déclarée]
-}
-OUTPOST_BCP_WAR_DECLARED(outpost o, int side)
-{
-	(side = 0)
-		[La guerre est déclarée sur votre avant-poste $o.name$.]
-	[Votre guilde a déclaré la guerre à l'avant-poste $o.name$.]
 }
 
 COMBAT_PROC_VAMPIRISM_ATTACKER(entity defender, int drain)
@@ -1424,41 +1012,6 @@ TRAITRE_CORSAIRE_ARRIVE()
 	[Que faites-vous ici ?! Voleur ! Laissez cette perle là où elle est !]
 }
 
-INFORMATION()
-{
-	[INFORMATION]
-}
-
-MENU_FIND_IT ()
-{
-		menu_find_it	[Montrez votre trouvaille]
-}
-
-MENU_GET_FLOWER ()
-{
-		menu_get_flower	[Cueillir une fleur]
-}
-
-EGS_CANT_BUY_PACKER_IS_TRIAL_PLAYER()
-{
-	[&CHK&You cannot buy a mektoub packer because you are in free trial. You must upgrade your account to be able to do that.]
-}
-
-EGS_CANT_USE_GUILD_INV_IS_TRIAL_PLAYER()
-{
-	[&CHK&You cannot take items from the guild inventory because you are in free trial. You must upgrade your account to be able to do that.]
-}
-
-EGS_CANT_USE_ROOM_INV_IS_TRIAL_PLAYER()
-{
-	[&CHK&You cannot use your room inventory because you are in free trial. You must upgrade your account to be able to do that.]
-}
-
-EGS_CANT_EQUIP_ITEM_IS_TRIAL_PLAYER()
-{
-	[&CHK&You cannot equip this item because you are in free trial. You must upgrade your account to be able to do that.]
-}
-
 EGS_CHANNEL_INVALID_NAME (literal name)
 {
 	[&SYS&Invalid channel name "$name$".]
@@ -1472,221 +1025,6 @@ EGS_CHANNEL_NO_RIGHTS (literal name)
 WHO_CHANNEL_INTRO(literal name)
 {
 	[&SYS&Characters in channel "$name$":]
-}
-
-FACTION_EN()
-{
-	[English Uni]
-}
-
-FACTION_FR()
-{
-	[Uni Français]
-}
-
-FACTION_DE()
-{
-	[Deutsch Uni]
-}
-
-FACTION_ES()
-{
-	[Español Uni]
-}
-
-FACTION_RU()
-{
-	[русский Uni]
-}
-OPEN_SILAN_ANNOUNCE_TEXT()
-{
-	[Did you know we can reach Silan over the bark ? It seems that Rangers are maintaining a path whose entrance is at grove of confusion’s very end.]
-}
-
-MENU_HELLO_LEADER()
-{
-	[Hello?]
-}
-MENU_AN_OPENING()
-{
-	[An Opening?]
-}
-MENU_OPEN_CHEST()
-{
-	[Open the Chest]
-}
-MENU_HELPER_NPC()
-{
-	[Hello]
-}
-MENU_RESCUE_TEAM_1()
-{
-	[kami'ata]
-}
-MENU_RESCUE_TEAM_2()
-{
-	[deles silam]
-}
-MENU_RESCUE_TEAM_3()
-{
-	[oren pyr]
-}
-MENU_RESCUE_TEAM_4()
-{
-	[lordoy]
-}
-MENU_RESCUE_TEAM_5()
-{
-	[lordoy]
-}
-MENU_SCENARIO_EDITOR_TP()
-{
-	[Open the Scenario Editor.]
-}
-MENU_OREN_PYR()
-{
-	[oren pyr !]
-}
-MENU_GLOWING_COAL()
-{
-	[Glowing Coal]
-}
-MENU_MATISPOETRY()
-{
-	[Collection of Matis poetry.]
-}
-MENU_BUY_PVP()
-{
-	[Buy Special Items]
-}
-MENU_CASINO_INSERT_COIN()
-{
-	[Play a token]
-}
-MENU_TRADE()
-{
-	[EXCHANGE]
-}
-
-MENU_LIGHT_UP()
-{
-	[Light]
-}
-
-MENU_SIT()
-{
-	[Sit down]
-}
-MENU_BUY_NATION_ITEMS()
-{
-	[Buy Nation Items]
-}
-
-MENU_USE_PA()
-{
-	[use your involvement]
-}
-MENU_HAVE_MISSION()
-{
-	[Do you have any mission to assign me?]
-}
-MENU_CAN_I_HELP_YOU()
-{
-	[Can you help me?]
-}
-MENU_HAVE_SOMETHINH_FOR_ME()
-{
-	[Have you something for me?]
-}
-MENU_NEED_SOME_INFORMATIONS()
-{
-	[I need some informations...]
-}
-
-FACTION_RF()
-{
-	[Forge]
-}
-
-MENU_ZIGA()
-{
-	[Caress Ari.]
-}
-MENU_ZIGB()
-{
-	[Caress Tynee.]
-}
-MENU_OPEN_IT()
-{
-	[Open it!]
-}
-MENU_WOHA()
-{
-	[Woha]
-}
-MENU_LORDOY()
-{
-	[Lordoy]
-}
-MENU_DELES_SILAM()
-{
-	[Deles Silam]
-}
-MENU_BANARC()
-{
-	[Banarc]
-}
-MENU_WOREN_SILOY()
-{
-	[Woren Siloy]
-}
-
-MENU_DANGER()
-{
-	[Danger]
-}
-
-MENU_KAMIA_ATA()
-{
-	[Kamia'ata]
-}
-
-FACTION_USR_EN()
-{
-	[EN]
-}
-
-FACTION_USR_FR()
-{
-	[FR]
-}
-
-FACTION_USR_DE()
-{
-	[DE]
-}
-
-FACTION_USR_ES()
-{
-	[ES]
-}
-
-FACTION_USR_RU()
-{
-	[RU]
-}
-
-ALLEGORY_EFFECT_TRIGGERED (sbrick s)
-{
-	[&ISE2&The Allegorical "$s$" effect has been triggered]
-
-}
-
-
-JEWEL_WITH_ALLEGORIES ()
-{
-	[&CHK&You can't exchange a piece of jewelry with an Allegorical power engraved on it]
-
 }
 
 

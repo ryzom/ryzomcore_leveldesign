@@ -402,6 +402,21 @@ FACTION_ZORAI()
 	[Faction Zorai]
 }
 
+EGS_PVP_NOT_ALLOWED ()
+{
+	[&CHKCB&You connat use offensive action against this player character.]
+}
+
+BS_TARGET_NOT_ATTACKABLE ()
+{
+	[&CHKCB&You cannot use offensive action against your current target.]
+}
+
+MAGIC_CANNOT_CAST_ON_PVP ()
+{
+	[&CHKCB&You cannot cast this spell on an opponent.]
+}
+
 FACTION_HOMINISTS()
 {
 	[Tenant]
@@ -411,6 +426,7 @@ FACTION_MARAUDERS()
 {
 	[Marauder]
 }
+
 FACTION_RANGER()
 {
 	[Ranger]

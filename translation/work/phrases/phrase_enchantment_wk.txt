@@ -1,5 +1,4 @@
 ﻿
-
 ////////////////////////////////////////////////////////////////////////////////////
 // enchantment related messages
 ////////////////////////////////////////////////////////////////////////////////////
@@ -51,15 +50,4 @@ CANT_BE_ENCHANTED ()
 ITEM_IS_RECHARGED (item it, int current, int max )
 {
 	item_is_recharged [&ITM&Item $it$ is now recharged. Sap load is $current$ on $max$.]
-}
-
-
-ABANDON_TEAM_MISSION_REFUSED()
-{
-	abandon_team_mission_refused [&CHK& only leaders can abandon a team mission.]
-}
-
-NO_ACTION_WHILE_EQUIPPING()
-{
-	[&CHK&you cannot use an action while equipping.]
 }

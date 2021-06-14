@@ -43,3 +43,18 @@ ANIMAL_DISEAPER (int number)
 {
 	[&SYS&Votre animal #$number$ à disparu car cela fait trois jour qu'il est mort, tout ce qu'il contenait encore dans son inventaire à disparu avec lui.]
 }
+
+ANIMAL_HUNGRY()
+{
+	[&CHK&Your mektoub is hungry, and can't run any longer.]
+}
+
+ANIMAL_HAS_EATEN()
+{
+	[&ITM&Your mektoub has eaten some food from his inventory, and can now run.]
+}
+
+ANIMAL_FOLLOW_TOO_FAR()
+{
+	[&CHK&Your following mektoub is too far from you and can't follow you any longer.]
+}

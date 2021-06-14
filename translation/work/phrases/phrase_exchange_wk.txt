@@ -1,5 +1,5 @@
 ﻿
-///////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
 // exchange related messages
 ////////////////////////////////////////////////////////////////////////////////////
 
@@ -76,7 +76,7 @@ INVALID_EXCHANGE_IN_RING()
 	[&CHK&ECHANGE REFUSE : Certains de ces items ne peuvent être échangé entre serveurs.]
 }
 
-EGS_ANSWER_WHERE (place c, place r, place p)
+OPS_EXCHANGE_IMPOSSIBLE ()
 {
-	egs_answer_where [&ZON&You are in the continent $c$ in the region $r$ in place $p$.]
+	[&CHK&You can't invite someone to exchange if you are already trading]
 }

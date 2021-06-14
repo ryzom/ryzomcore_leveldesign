@@ -175,9 +175,6 @@ GUILD_IS_PROXY()
 	[&CHK&Vous ne pouvez executer cette action qu'à partir du teritoire du jeu, hors vous êtes dans une instance.]
 }
 
-
-
-
 SOLE_PLACE( place p )
 {
         place_lonely_param[$p$]
@@ -293,4 +290,14 @@ CHARGE_APPLY(dyn_string_id str)
 CANT_ACCESS_GUILD_INVENTORY()
 {
 	[&SYS&Vous devez être dans le bâtiment ou prêt d'un avant poste de votre guilde pour pouvoir accéder à son inventaire.]
+}
+
+GUILD_GAIN_CHARGE_POINT (int points)
+{
+	[&SYS&Your guild gained $points$ charge points]
+}
+
+GUILD_XP_GAIN ()
+{
+	[&XP&Your guild gained experience points]
 }

@@ -302,8 +302,6 @@ FORAGE_CARE_XP_NEEDS_TEAM()
 	forage_care_xp_needs_team	[&XP&You must team with the extractor to earn XP from care actions.]
 }
 
-
-
 // harvest messages
 WOS_HARVEST_FOUND_NOTHING ()
 {
@@ -329,3 +327,4 @@ WOS_HARVEST_FAILED ()
 {
 	[&CHK&You failed to take the ressources you were trying to harvest.]
 }
+

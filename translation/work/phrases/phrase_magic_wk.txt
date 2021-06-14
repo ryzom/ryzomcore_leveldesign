@@ -591,3 +591,13 @@ EGS_MAGIC_BAD_TARGET ()
 {
 	[&CHKCB&Target missing or invalid.]
 }
+
+UNEFFICENT_RANGE ()
+{
+	[&SYS&Vous êtes trop loin pour toucher efficacement cette cible.]
+}
+
+EGS_ACTOR_VAMPIRISE_EI (entity target, int vampirise)
+{
+	[&SPLM&You vampirise $vampirise$ from $target$]
+}

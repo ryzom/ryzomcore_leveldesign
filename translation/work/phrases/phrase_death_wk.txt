@@ -1,4 +1,5 @@
 ﻿
+
 /////////////////////////////////////////////////////////////////////////
 // sentences related to entity's death
 /////////////////////////////////////////////////////////////////////////
@@ -45,3 +46,20 @@ DEATH_SPECTATORS(entity killer, entity victim)
 {
 	death_spectators	[&SYS&$victim.da$ $victim$ have been killed by $killer.da$ $killer$.]
 }
+
+// death messages
+OPS_DEATH_KAMI_RESURECT ()
+{
+	[&SYS&The Kamis honor the pact:  Sap flows through you once again as you resuscitate.]
+}
+
+OPS_DEATH_CARAVAN_RESURECT ()
+{
+	[&SYS&The Karavan works its craft and you exist once more.]
+}
+
+OPS_DEATH_PERMANENT_KILLED ()
+{
+	[&CHK&You no longer have a valid resurrection pact. You return to the humus from which you first emerged.]
+}
+
