@@ -1,1 +1,0 @@
-This directory contains all .sound_group files.
