@@ -1,13 +1,126 @@
 <?xml version="1.0"?>
-<FORM Revision="" State="modified">
+<FORM Revision="$Revision: 1.4 $" State="modified">
   <STRUCT>
     <ARRAY Name="emot_list">
+      <ATOM Name="afk" Value="afk"/>
+      <ATOM Name="agree" Value="agree"/>
+      <ATOM Name="alert" Value="alert"/>
+      <ATOM Name="angry" Value="angry"/>
+      <ATOM Name="apologize" Value="apologize"/>
+      <ATOM Name="applaud" Value="applaud"/>
+      <ATOM Name="ashamed_disgusted_desillusioned_loathing_pitying" Value="ashamed_disgusted_desillusioned_loathing_pitying"/>
+      <ATOM Name="blush" Value="blush"/>
+      <ATOM Name="bow" Value="bow"/>
+      <ATOM Name="brave_great" Value="brave_great"/>
+      <ATOM Name="burp" Value="burp"/>
+      <ATOM Name="bye" Value="bye"/>
+      <ATOM Name="calm" Value="calm"/>
+      <ATOM Name="cheer" Value="cheer"/>
+      <ATOM Name="cold_contemptuous_disdainful_haughty_megalomaniac_obnoxious" Value="cold_contemptuous_disdainful_haughty_megalomaniac_obnoxious"/>
+      <ATOM Name="cry" Value="cry"/>
+      <ATOM Name="curious" Value="curious"/>
+      <ATOM Name="dance" Value="dance"/>
+      <ATOM Name="disagree" Value="disagree"/>
+      <ATOM Name="discreet_hardsilence" Value="discreet_hardsilence"/>
+      <ATOM Name="doubtful" Value="doubtful"/>
+      <ATOM Name="dramatic" Value="dramatic"/>
+      <ATOM Name="drunk" Value="drunk"/>
+      <ATOM Name="exercise" Value="exercise"/>
+      <ATOM Name="fearful_insecure_nervous_panic_scared" Value="fearful_insecure_nervous_panic_scared"/>
+      <ATOM Name="FBT" Value="FBT"/>
+      <ATOM Name="firm" Value="firm"/>
+      <ATOM Name="follow" Value="follow"/>
+      <ATOM Name="forgive" Value="forgive"/>
+      <ATOM Name="gesture" Value="gesture"/>
+      <ATOM Name="giggle" Value="giggle"/>
+      <ATOM Name="go_away" Value="go_away"/>
+      <ATOM Name="guilty" Value="guilty"/>
+      <ATOM Name="heroic" Value="heroic"/>
+      <ATOM Name="hungry" Value="hungry"/>
+      <ATOM Name="impatient" Value="impatient"/>
+      <ATOM Name="indifferent_neutral_noclue_resigned" Value="indifferent_neutral_noclue_resigned"/>
+      <ATOM Name="interested" Value="interested"/>
+      <ATOM Name="kiss" Value="kiss"/>
+      <ATOM Name="kneel" Value="kneel"/>
+      <ATOM Name="laugh" Value="laugh"/>
+      <ATOM Name="lol" Value="lol"/>
+      <ATOM Name="none" Value="none"/>
+      <ATOM Name="over" Value="over"/>
+      <ATOM Name="petulant" Value="petulant"/>
+      <ATOM Name="playful" Value="playful"/>
+      <ATOM Name="point" Value="point"/>
+      <ATOM Name="pointback" Value="pointback"/>
+      <ATOM Name="pointleft" Value="pointleft"/>
+      <ATOM Name="pointright" Value="pointright"/>
+      <ATOM Name="pompous" Value="pompous"/>
+      <ATOM Name="praying" Value="praying"/>
+      <ATOM Name="puzzled_thoughtful_troubled" Value="puzzled_thoughtful_troubled"/>
+      <ATOM Name="relaxed" Value="relaxed"/>
+      <ATOM Name="relieved_sigh" Value="relieved_sigh"/>
+      <ATOM Name="revengeful_spitful" Value="revengeful_spitful"/>
+      <ATOM Name="rice" Value="rice"/>
+      <ATOM Name="righteous" Value="righteous"/>
+      <ATOM Name="roar" Value="roar"/>
+      <ATOM Name="sad" Value="sad"/>
+      <ATOM Name="serious" Value="serious"/>
+      <ATOM Name="shifty" Value="shifty"/>
+      <ATOM Name="shocked" Value="shocked"/>
+      <ATOM Name="silly" Value="silly"/>
+      <ATOM Name="sincerely" Value="sincerely"/>
+      <ATOM Name="sleepy_yawn_tired" Value="sleepy_yawn_tired"/>
+      <ATOM Name="smack" Value="smack"/>
+      <ATOM Name="smile" Value="smile"/>
+      <ATOM Name="squeamish" Value="squeamish"/>
+      <ATOM Name="surprised" Value="surprised"/>
+      <ATOM Name="suspicious" Value="suspicious"/>
+      <ATOM Name="thank" Value="thank"/>
+      <ATOM Name="thirsty" Value="thirsty"/>
+      <ATOM Name="unhappy" Value="unhappy"/>
+      <ATOM Name="unwilling" Value="unwilling"/>
+      <ATOM Name="victory" Value="victory"/>
+      <ATOM Name="wait" Value="wait"/>
+      <ATOM Name="wave" Value="wave"/>
+      <ATOM Name="wicked" Value="wicked"/>
+      <ATOM Name="youandme" Value="youandme"/>
+      <ATOM Name="firework_01" Value="firework_01"/>
+      <ATOM Name="firework_02" Value="firework_02"/>
+      <ATOM Name="firework_03" Value="firework_03"/>
+      <ATOM Name="firework_04" Value="firework_04"/>
+      <ATOM Name="firework_05" Value="firework_05"/>
+      <ATOM Name="firework_06" Value="firework_06"/>
+      <ATOM Name="firework_07" Value="firework_07"/>
+      <ATOM Name="firework_08" Value="firework_08"/>
+      <ATOM Name="firework_09" Value="firework_09"/>
+      <ATOM Name="firework_10" Value="firework_10"/>
+      <ATOM Name="firework_11" Value="firework_11"/>
+      <ATOM Name="firework_12" Value="firework_12"/>
+      <ATOM Name="firework_13" Value="firework_13"/>
+      <ATOM Name="firework_14" Value="firework_14"/>
+      <ATOM Name="firework_15" Value="firework_15"/>
+      <ATOM Name="firework_16" Value="firework_16"/>
+      <ATOM Name="firework_17" Value="firework_17"/>
+      <ATOM Name="firework_18" Value="firework_18"/>
+      <ATOM Name="firework_19" Value="firework_19"/>
+      <ATOM Name="firework_20" Value="firework_20"/>
+      <ATOM Name="firework_21" Value="firework_21"/>
+      <ATOM Name="firework_22" Value="firework_22"/>
+      <ATOM Name="firework_23" Value="firework_23"/>
+      <ATOM Name="firework_24" Value="firework_24"/>
+      <ATOM Name="firework_25" Value="firework_25"/>
+      <ATOM Name="firework_26" Value="firework_26"/>
+      <ATOM Name="firework_27" Value="firework_27"/>
+      <ATOM Name="firework_28" Value="firework_28"/>
+      <ATOM Name="firework_29" Value="firework_29"/>
+      <ATOM Name="firework_30" Value="firework_30"/>
+      <ATOM Name="breakdance" Value="breakdance"/>
     </ARRAY>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
-  <LOG>
-  </LOG>
+  <LOG>Mon Feb 17 16:26:34 2003 (puzin)
+Thu May 03 15:08:07 2007 (coutelas) .emot_list[110] = breakdance
+Thu May 03 15:08:07 2007 (coutelas) .emot_list[110] Renamed = breakdance
+Thu May 03 15:08:07 2007 (coutelas) formName Resized = 111</LOG>
 </FORM>
