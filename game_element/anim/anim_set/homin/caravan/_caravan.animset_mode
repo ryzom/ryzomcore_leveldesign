@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.6 $" State="modified">
+<FORM Version="0.1" State="modified">
   <PARENT Filename="_homin.animset_mode"/>
   <STRUCT>
     <STRUCT Name="combat">
@@ -133,6 +133,9 @@
     <STRUCT Name="mount_swim">
       <ATOM Name="__" Value="false"/>
     </STRUCT>
+    <STRUCT Name="rest">
+      <ATOM Name="__" Value="false"/>
+    </STRUCT>
     <STRUCT Name="sit">
       <ATOM Name="__" Value="false"/>
       <ATOM Name="__s" Value="false"/>
@@ -239,5 +242,6 @@ Wed Aug 11 19:12:42 2004 (puzin) .default._1hsw_s = false
 Mon Aug 16 12:27:20 2004 (puzin) .swim.__ = false
 Mon Aug 16 12:27:23 2004 (puzin) .swim_death.__ = false
 Thu Apr 14 10:56:27 2005 (puzin) .death._g_ = true
-Thu Apr 14 10:56:27 2005 (puzin) .default._g_ = true</LOG>
+Thu Apr 14 10:56:27 2005 (puzin) .default._g_ = true
+Sat Apr 18 11:21:29 2020 (Kaetemi) .rest.__ = false</LOG>
 </FORM>

@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.2 $" State="modified">
+<FORM Version="0.1" State="modified">
   <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
     <STRUCT Name="idle">
       <ARRAY Name="animations">
         <STRUCT>
@@ -209,5 +210,6 @@ Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[1].next1 weight = 10
 Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[1].next2 = 2
 Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[2].next1 = 0
 Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[2].next1 weight = 10
-Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[2].next2 = 1</LOG>
+Thu Jan 25 17:32:47 2007 (nouveau) .idle.animations[2].next2 = 1
+Sat Apr 18 11:41:01 2020 (Kaetemi) .defaultHeadControl = false</LOG>
 </FORM>

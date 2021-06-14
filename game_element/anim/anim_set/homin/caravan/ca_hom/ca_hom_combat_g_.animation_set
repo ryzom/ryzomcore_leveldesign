@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.5 $" State="modified">
+<FORM Version="0.1" State="modified">
   <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
     <STRUCT Name="idle">
       <ARRAY Name="animations">
         <STRUCT>
@@ -275,5 +276,6 @@ Fri Jan 02 14:55:07 2004 (gatto) .attack1.animations[0].fx_set.FX0.StickMode.Use
 Fri Jan 02 14:55:07 2004 (gatto) .attack1.animations[0].fx_set.FX1.PSName = ran_ca_hom_shoot_left.ps
 Fri Jan 02 14:55:07 2004 (gatto) .attack1.animations[0].fx_set.FX1.StickMode.StickMode = UserBone
 Fri Jan 02 14:55:07 2004 (gatto) .attack1.animations[0].fx_set.FX1.StickMode.UserBone = bip01 L forearm
-Wed May 19 17:44:10 2004 (beaume) formName Resized = 0</LOG>
+Wed May 19 17:44:10 2004 (beaume) formName Resized = 0
+Sat Apr 18 11:40:48 2020 (Kaetemi) .defaultHeadControl = false</LOG>
 </FORM>

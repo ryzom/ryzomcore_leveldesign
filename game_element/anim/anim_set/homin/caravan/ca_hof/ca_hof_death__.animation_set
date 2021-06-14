@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.1 $" State="modified">
+<FORM Version="0.1" State="modified">
   <PARENT Filename="_homin_death__.animation_set"/>
   <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
     <STRUCT Name="idle">
       <ARRAY Name="animations">
         <STRUCT>
@@ -39,5 +40,6 @@ Thu Dec 19 10:32:24 2002 (beaume) .walk.animations[0].filename = CA_HOF_marche.a
 Thu Dec 19 10:32:24 2002 (beaume) formName Resized = 1
 Tue Jun 10 11:47:13 2003 (beaume) .idle.LodCharacterAnimation = CA_HOF_mort_idle.anim
 Tue Jun 10 11:47:13 2003 (beaume) .idle.animations[0].filename = CA_HOF_mort_idle.anim
-Tue Jun 10 11:47:13 2003 (beaume) formName Resized = 0</LOG>
+Tue Jun 10 11:47:13 2003 (beaume) formName Resized = 0
+Sat Apr 18 11:41:08 2020 (Kaetemi) .defaultHeadControl = false</LOG>
 </FORM>

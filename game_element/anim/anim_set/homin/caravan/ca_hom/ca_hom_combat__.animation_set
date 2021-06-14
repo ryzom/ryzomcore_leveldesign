@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.2 $" State="modified">
+<FORM Version="0.1" State="modified">
   <STRUCT>
+    <ATOM Name="defaultHeadControl" Value="false"/>
     <STRUCT Name="idle">
       <ARRAY Name="animations">
         <STRUCT>
@@ -258,5 +259,6 @@ Wed Jul 09 17:28:29 2003 (beaume) .stun_end.animations[0].filename = CA_HOM_Co_s
 Wed Jul 09 17:28:29 2003 (beaume) .stun_loop.animations[0].filename = CA_HOM_Co_stun_loop.anim
 Wed Jul 09 17:28:29 2003 (beaume) .walk atk.animations[0].filename = CA_HOM_Co_marche_frappe.anim
 Wed Jul 09 17:28:29 2003 (beaume) .walk.animations[0].filename = CA_HOM_Co_marche.anim
-Wed Jul 09 17:28:29 2003 (beaume) formName Resized = 1</LOG>
+Wed Jul 09 17:28:29 2003 (beaume) formName Resized = 1
+Sat Apr 18 11:40:52 2020 (Kaetemi) .defaultHeadControl = false</LOG>
 </FORM>
