@@ -1,0 +1,331 @@
+﻿
+////////////////////////////////////////////////////////////////////////////////////
+/// sentences related to natural events (forage risks)
+////////////////////////////////////////////////////////////////////////////////////
+
+SOURCE_TOXIC_CLOUD()
+{
+	source_toxic_cloud	[&SPL&The forage source released a toxic cloud!]
+}
+
+SOURCE_EXPLOSION()
+{
+	source_explosion	[&SPL&The forage source blew up!]
+}
+
+SOURCE_DMG_REDUX_MISSED()
+{
+	source_dmg_redux_early	[&CHK&Damage reduction was done too early.]
+}
+
+SOURCE_EXPLOSION_DEFENDER_HIT(int damage, int maxDamage, int reduction)
+{
+	(reduction=0)
+		source_explosion_defender_hit	[&DMG&An explosion hits you for $damage$ ($maxDamage$) damage.]
+	source_explosion_defender_reducted_hit	[&DMG&An explosion hits you for $damage$ ($maxDamage$) damage (reduced by $reduction$).]
+}
+
+TOXIC_CLOUD_DEFENDER_HIT(int damage, int reduction)
+{
+	toxic_cloud_defender_hit	[&DMG&A toxic cloud hits you for $damage$ damage.]
+}
+
+
+HEAL_CLOUD_HIT(score s, int v)
+{
+	heal_cloud_hit	[&SPLM&You feel the effects of benevolent magic and get a bonus of $s$ of $v$.]
+}
+
+
+SOURCE_EXPLOSION_SPECTATOR_HIT(entity defender, int damage)
+{
+	source_explosion_spectator_hit	[&SYS&An explosion hits $defender$ for $damage$ damage.]
+}
+
+TOXIC_CLOUD_SPECTATOR_HIT(entity defender, int damage)
+{
+	toxic_cloud_spectator_hit	[&SYS&A toxic cloud hits $defender$ for $damage$ damage.]
+}
+
+KAMI_ANGER_DEFENDER_HIT(int damage, int reduction)
+{
+	kami_anger_defender_hit		[&DMG&A Kami punishes you for $damage$ damage.]
+}
+
+KAMI_ANGER_SPECTATOR_HIT(entity defender, int damage)
+{
+	kami_anger_spectator_hit	[&SYS&A Kami punishes $defender$ for $damage$ damage.]
+}
+
+FORAGE_ABSORB_DMG(int damage)
+{
+	forage_absorb_dmg	[&DMG&You absorb raw material source damage for $damage$ damage.]
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
+// these sentences are related to forage
+////////////////////////////////////////////////////////////////////////////////////
+
+CANT_FORAGE_ENGAGED_IN_MELEE()
+{
+	cant_forage_engaged_in_melee	[&CHKCB&You can't forage when you are engaged in melee fight! Forage action aborted!]
+}
+
+INVALID_FORAGE_TOOL()
+{
+	invalid_forage_tool	[&CHK&You don't have a forage tool in hand.]
+}
+
+FORAGE_INVALID_PLACE()
+{
+	forage_invalid_place	[&CHK&You can't forage for raw materials in this place.]
+}
+
+
+FORAGE_DEPOSIT_DISTANCE(int distance)
+{
+	(distance=0)
+		forage_deposit_distance_0 [&FORLD&Deposit at less than 1 m]
+	forage_deposit_distance	[&FORLD&Deposit at $distance$ m]
+}
+
+FORAGE_DEPOSIT_LOCATED()
+{
+	forage_deposit_located		[&FORLD&A deposit is very close, thus the raw material you are searching for is in the surrounding area.]
+}
+
+FORAGE_DEP_TRACKG_STOPPED()
+{
+	forage_dep_trackg_stopped	[&FORLD&End of prospection]
+}
+
+FORAGE_FOUND_SOURCES(int n)
+{
+	(n=0)
+		forage_nothing_found	[&ITMF&You found nothing.]
+	(n=1)
+		forage_found_source	[&ITM&You found a raw material source.]
+	forage_found_sources	[&ITM&You found $n$ raw material sources.]
+}
+
+FORAGE_SOURCE_OBSTACLE()
+{
+	forage_source_obstacle	[&ITMF&You couldn't find a raw material source due to some obstacle.]
+}
+
+FORAGE_EXTRACTION_NEEDS_TARGET_SOURCE()
+{
+	forage_extraction_needs_target_source	[&CHK&You need to target a forage source to begin an extraction.]
+}
+
+FORAGE_ONLY_ONE_EXTRACTOR()
+{
+	forage_only_one_extractor	[&CHK&Someone is already extracting this forage source, you may apply only care actions.]
+}
+
+FORAGE_NO_CARE_FIRST()
+{
+	forage_no_care_first		[&CHK&You can't begin an extraction with a care action.]
+}
+
+
+FORAGE_TOO_FAR_FROM_SOURCE()
+{
+	forage_too_far_from_source	[&CHK&You are too far from the source to forage.]
+}
+
+FORAGE_DEPOSIT_IS_EMPTY()
+{
+	forage_deposit_is_empty	[&ITMF&There are no more raw materials in this deposit.]
+}
+
+FORAGE_QUALITY_TOO_LOW()
+{
+	forage_too_low			[&CHK&Your quality stanza is too low to be used on this forage source.]
+}
+
+FORAGE_TOOL_QUALITY_TOO_LOW()
+{
+	forage_tool_quality_too_low			[&CHK&Your quality pick is too low to be used on this forage source.]
+}
+
+CRAFT_NEED_RECOMMENDED_CRAFTING_TOOL()
+{
+	craft_need_recommended_crafting_tool			[&CHK&Your quality crafting tool is too low to craft this item.]
+}
+
+FORAGE_SOURCE_DEPLETED()
+{
+	forage_source_depleted	[&ITMF&The forage source was prematurely destroyed.]
+}
+
+FORAGE_SOURCE_SITE_DEPLETED()
+{
+	forage_source_site_depleted	[&ITMF&The forage source was prematurely destroyed and the area is exhausted!]
+}
+
+FORAGE_SOURCE_MAXLEVEL(int l)
+{
+	forage_source_maxlevel		[&SYS&The optimal quality available in this source is $l$.]
+}
+
+FORAGE_SOURCE_IMPACT_MODE(int m)
+{
+	forage_source_impact_mode0	[&SYS&The source mode is $m$.]
+}
+
+FORAGE_MISS()
+{
+	forage_miss			[&ITMF&Hard luck, part of your forage action failed!]
+}
+
+FORAGE_DROP_QUANTITY()
+{
+	forage_drop_quantity	[&ITMF&You failed to catch the material!]
+}
+
+FORAGE_DROP_QUALITY()
+{
+	forage_drop_quality	[&ITMF&You spoiled the quality of the material!]
+}
+
+FORAGE_FAIL()
+{
+	forage_fail			[&ITMF&You didn't manage to get any entire piece of raw material.]
+}
+
+FORAGE_NO_DEPOSIT_HERE()
+{
+	forage_no_deposit_here	[&ITMF&No raw materials were detected in this area.]
+}
+
+FORAGE_NO_DEPOSIT_IN_SEASON()
+{
+	forage_no_deposit_in_season	[&ITMF&No specified raw materials are present in the area in this season.]
+}
+
+FORAGE_NO_DEPOSIT_IN_WEATHER()
+{
+	forage_no_deposit_in_weather	[&ITMF&No specified raw materials are present in the area in these weather conditions.]
+}
+
+FORAGE_NO_DEPOSIT_IN_CONTEXT()
+{
+	forage_no_deposit_in_context	[&ITMF&No specified raw materials are present in the area at the moment.]
+}
+FORAGE_ECOTYPE_SPEC_NOT_MATCHING()
+{
+	forage_ecotype_spec_not_matching	[&CHK&The terrain specialization cannot be used here.]
+}
+
+FORAGE_MATERIAL_SPEC_NOT_MATCHING()
+{
+	forage_material_spec_not_matching	[&CHK&The material specialization does not match the material source.]
+}
+
+FORAGE_NO_DEPOSIT_MATERIAL_FILTER()
+{
+	forage_no_deposit_material_filter	[&ITMF&No specified raw materials are present in the area.]
+}
+
+FORAGE_NO_LOCAL_RM_MATERIAL_FILTER()
+{
+	forage_no_local_rm_material_filter	[&ITMF&Some specified raw materials were detected near by, though.]
+}
+
+FORAGE_NO_DEPOSIT_STATQUALITY()
+{
+	forage_no_deposit_statquality		[&ITMF&You could detect the presence of raw materials, but they have a higher class than your current prospecting action allows to find.]
+}
+
+FORAGE_NO_LOCAL_RM_STATQUALITY()
+{
+	forage_no_local_rm_statquality		[&ITMF&Some raw materials were detected here, but they have a higher class than your current prospecting action allows to find. Some lower class materials were detected near by, though.]
+}
+
+FORAGE_NO_DEPOSIT_EXACT_STATQUALITY()
+{
+	forage_no_deposit_exact_statquality	[&ITMF&You could detect the presence of raw materials, but they have a different class than the materials searched by your current prospecting action.]
+}
+
+FORAGE_NO_LOCAL_RM_EXACT_STATQUALITY()
+{
+	forage_no_local_rm_exact_statquality	[&ITMF&Some raw materials were detected here, but they have a different class than the materials searched by your current prospecting action. Some matching materials were detected near by, though.]
+}
+
+FORAGE_SITE_DEPLETED()
+{
+	forage_site_depleted	[&ITMF&Some raw materials used to be present here, but the place seems exhausted.]
+}
+
+FORAGE_DEPOSIT_DEPLETED()
+{
+	forage_deposit_depleted	[&ITMF&Some raw materials used to be present here, but all have been pulled out and the deposit is now empty for a while.]
+}
+
+FORAGE_CANT_ADD_SOURCE()
+{
+	forage_cant_add_source	[&ITMF&No more forage sources can be seen at the moment.]
+}
+
+FORAGE_KAMI_ANGER_WARNING()
+{
+	forage_kami_anger_warning	[&SYS&A Kami warns you: you steal the resources of this land. His anger is growing! Beware!]
+}
+
+FORAGE_KAMI_ANGER_PUNISH()
+{
+	forage_kami_anger_punish	[&SYS&A Kami tells you: I'm very angry! Take this!]
+}
+
+FORAGE_KAMI_OFFERING_NOT_ENOUGH_ITEMS()
+{
+	forage_kami_offering_not_enough_items	[&CHK&You don't have enough items to offer.]
+}
+
+FORAGE_KAMI_OFFERING_ITEM(item i)
+{
+	forage_kami_offering_item	[&SYS&You offer some $i$ to lower the kami anger.]
+}
+
+FORAGE_XP_PROSPECTION(int i)
+{
+	(i=0)
+		forage_xp_prospection_0		[&XP&This XP includes the prospecting.]
+	forage_xp_prospection_1		[&XP&This XP is for your useful prospecting.]
+}
+
+FORAGE_CARE_XP_NEEDS_TEAM()
+{
+	forage_care_xp_needs_team	[&XP&You must team with the extractor to earn XP from care actions.]
+}
+
+
+
+// harvest messages
+WOS_HARVEST_FOUND_NOTHING ()
+{
+	[&CHK&You found nothing.]
+}
+
+WOS_HARVEST_SEARCHING ()
+{
+	[&SYS&Looking for resources ...]
+}
+
+WOS_HARVEST_FOUND_MP ()
+{
+	[&SYS&You found resources.]
+}
+
+WOS_HARVEST_FOUND_MP_S (item i)
+{
+	[&ITM&You found $i$.]
+}
+
+WOS_HARVEST_FAILED ()
+{
+	[&CHK&You failed to take the ressources you were trying to harvest.]
+}

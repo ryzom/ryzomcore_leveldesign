@@ -1,0 +1,296 @@
+﻿
+////////////////////////////////////////////////////////////////////////////////////
+// guild related messages
+////////////////////////////////////////////////////////////////////////////////////
+
+GUILD_PLAYER_BAG_FULL ()
+{
+	[You cannot take this item from your guild : your bag is full]
+}
+
+
+GUILD_NAME_ALREADY_EXISTS ()
+{
+	[&CHK&This Name is already used. Please choose another One]
+}
+
+
+GUILD_NAME_BAD_SIZE()
+{
+	[&CHK&Guild names must have a length of at least three characters, and no more than fifty.]
+}
+
+GUILD_NAME_BAD_CHAR()
+{
+	[&CHK&Guild names must contains only alphabetic characters and blanks. Names cant start or end with a Blank.]
+}
+
+
+GUILD_DESC_BAD_SIZE()
+{
+	[&CHK&Guild descriptions length cant exceed two hundred characters]
+}
+
+GUILD_DESC_BAD_CHAR()
+{
+	[&CHK&Guild descriptions must contains only alphabetic characters and blanks. Descriptions cannot start or end with a Blank. A blank cannot follow another one]
+}
+
+
+GUILD_NAME_BAD_WORD()
+{
+	[&CHK&The name you chose contains forbidden words]
+}
+
+GUILD_DESCRIPTION_BAD_WORD()
+{
+	[&CHK&The description you chose contains forbidden words]
+}
+
+GUILD_INVITED_CHARACTER_MUST_BE_ONLINE()
+{
+	[&CHK&Invited character must be online.]
+}
+
+GUILD_INVITE_ONLY_LOCAL_GUILD()
+{
+	[&CHK&Vous ne pouvez pas inviter quelqu'un dans votre guilde si vous n'êtes pas sur le continent.]
+}
+
+GUILD_ALREADY_IN_A_GUILD()
+{
+	[&CHK&You are already in a guild.]
+}
+GUILD_INVALID_NAME ()
+{
+	[&CHK&Invalid guild name.]
+}
+GUILD_INVALID_DESCRIPTION ()
+{
+	[&CHK&Invalid guild description.]
+}
+GUILD_NOT_ENOUGH_MONEY (int m)
+{
+	[&CHK&You need $m$ seeds to create a guild.]
+}
+GUILD_CREATED ()
+{
+	[&AROUND&Vous avez réussi à créer une guilde.]
+}
+GUILD_DESTROYED()
+{
+	[&SYS& you were the last member of your guild. So it is destroyed.]
+}
+GUILD_BAD_SESSION ()
+{
+	[&CHK&Please retry this operation : guild parameters have just been modified by someone.]
+}
+GUILD_INSUFFICIENT_GRADE ()
+{
+	[&CHK&You dont have a sufficient grade in your guild.]
+}
+GUILD_SET_GRADE_OFFICER(player a, string_id b, string_id str)
+{
+	[&SYS&$a$ named $b$ officer of your guild $str$.]
+}
+GUILD_SET_GRADE_HIGHOFFICER(player a, string_id b, string_id str)
+{
+	[&SYS&$a$ named $b$ high officer of your guild $str$.]
+}
+GUILD_SET_GRADE_MEMBER(player a, string_id b, string_id str)
+{
+	[&SYS&$a$ degraded $b$ as member of your guild $str$.]
+}
+GUILD_SET_LEADER(player a, string_id b, string_id str)
+{
+	[&SYS&$a$ named $b$ leader of your guild $str$.]
+}
+GUILD_GRADE_FULL (string_id p)
+{
+	[&CHK&There are not enough members in your guild to change the grade of $p$ to the one you chose.]
+}
+GUILD_ALREADY_HAS_JOIN_PROPOSAL (player p)
+{
+	[&CHK&$p$ already has a guild join proposal.]
+}
+GUILD_ALREADY_MEMBER(player p)
+{
+	[&CHK&$p$ is already member of a guild.]
+}
+GUILD_JOIN_PROPOSAL (player p, string_id g)
+{
+	[$p$ invites you to join the guild $g$.]
+}
+GUILD_REFUSE_JOIN(player a)
+{
+	[&AROUND&$a$ refuse de rejoindre votre guilde.]
+}
+GUILD_YOU_JOIN(string_id str)
+{
+	[&AROUND&Vous rejoignez la guilde $str$.]
+}
+GUILD_JOIN(player a)
+{
+	[&AROUND&$a$ rejoint votre guilde.]
+}
+GUILD_NEW_LEADER(string_id a)
+{
+	[&SYS&$a$ is now the new leader of your guild.]
+}
+GUILD_KICK_MEMBER(player a, string_id b)
+{
+	[&AROUND&$a$ a chassé $b$ de votre guilde.]
+}
+GUILD_QUIT(player a)
+{
+	[&AROUND&$a$ a quitté votre guilde.]
+}
+GUILD_YOU_QUIT(string_id str)
+{
+	[&AROUND&Vous quittez la guilde $str$.]
+}
+GUILD_MAX_MEMBER_COUNT ( int i )
+{
+	[&CHK&Votre guilde a atteint le nombre maximum de membres ($i$).]
+}
+GUILD_MAX_MEMBER_COUNT_INVITE ( int i )
+{
+	[&CHK&Votre guilde a déjà atteint le nombre maximum de membres ($i$).]
+}
+GUILD_INCOMPATIBLE_ALLEGIANCE( player p, faction b)
+{
+	[&CHK&Le joueur $p$ a une allegeance $b$ incompatible avec les allegeances de votre guilde.]
+}
+
+GUILD_NOT_MEMBER ()
+{
+	[&SYS&You are not member of any guild.]
+}
+GUILD_USER_DELETED ( player a )
+{
+	[&SYS&$a$ was deleted by its player.]
+}
+GUILD_IS_PROXY()
+{
+	[&CHK&Vous ne pouvez executer cette action qu'à partir du teritoire du jeu, hors vous êtes dans une instance.]
+}
+
+
+
+
+SOLE_PLACE( place p )
+{
+        place_lonely_param[$p$]
+}
+
+SOLE_STRING_ID( string_id i )
+{
+	[$i$]
+}
+
+GUILD_ROOM( string_id i )
+{
+	[To Guild "$i$".]
+}
+
+PLAYER_ROOM( player p )
+{
+	[Apartment of "$p$".]
+}
+
+TELEPORT_NO_PET ()
+{
+	[&CHK&You must put all your animals in a stable before using this teleport.]
+}
+
+TELEPORT_BAD_SESSION ()
+{
+	[&CHK&The destinations of this teleporter have been updated. Please re-enter this teleport.]
+}
+
+GUILD_BUILDING_BAD_GRADE()
+{
+	[&CHK&Your guild grade is not sufficient to perform this action.]
+}
+
+GUILD_BUILDING_ALREADY_BOUGHT()
+{
+	[&CHK&Your guild already has a building.]
+}
+
+GUILD_RM_ALREADY_BOUGHT()
+{
+	[&CHK&Your guild already bought this rolemaster.]
+}
+
+GUILD_BUILDING_NEEDED()
+{
+	[&CHK&You need a guild building to perform this action.]
+}
+
+PLAYER_BUILDING_BAD_FAME( int i, race r )
+{
+	[&CHK&To buy a building here, you need a fame of $i$ toward the $r$ people .]
+}
+
+GUILD_BUILDING_BAD_FAME( int i, race r )
+{
+	[&CHK&To buy a building here, your guild need a fame of $i$ toward the $r$ people .]
+}
+GUILD_BUILDING_BAD_MONEY( int i )
+{
+	[&CHK&To buy a building here, you need $i$ seeds.]
+}
+
+
+CHARGE_BAD_GRADE ()
+{
+	[&CHK&You don't have a sufficient guild grade to perform this operation.]
+}
+
+CHARGE_END (dyn_string_id id)
+{
+	[&SYS&Your guild lose control of charge $id$.]
+}
+
+CHARGE_GOT (dyn_string_id id)
+{
+	[&SYS&Your guild was selected for the following charge : $id$.]
+}
+
+MAX_CHARGE_REACHED ()
+{
+	[&CHK&your guild has already applied for the maximum number of charges.]
+}
+
+GUILD_ITEM_CANT_BE_PUT()
+{
+	[&CHK&This item cannot be put in the guild inventory.]
+}
+
+GUILD_ITEM_BAD_SESSION()
+{
+	[&CHK&Someone is manipulating this item. Please retry.]
+}
+
+GUILD_ITEM_DONT_HAVE_RIGHTS()
+{
+	[&CHK&you are not allowed to perform that action]
+}
+
+
+GUILD_ITEM_MAX_BULK()
+{
+	[&CHK&The guild warehouse id full.]
+}
+
+
+CHARGE_APPLY(dyn_string_id str)
+{
+	[&SYS&  your guild applied for the charge "$str$".]
+}
+
+CANT_ACCESS_GUILD_INVENTORY()
+{
+	[&SYS&Vous devez être dans le bâtiment ou prêt d'un avant poste de votre guilde pour pouvoir accéder à son inventaire.]
+}

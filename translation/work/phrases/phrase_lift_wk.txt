@@ -1,0 +1,24 @@
+﻿
+////////////////////////////////////////////////////////////////////////////////////
+// Lifts related messages
+////////////////////////////////////////////////////////////////////////////////////
+
+LIFT_BOT_CRAFT (bot_name b)
+{
+	lift_bot_craft [$b$$$fct_guild_rm_craft$$]
+}
+
+LIFT_BOT_MAGIC (bot_name b)
+{
+	lift_bot_magic [$b$$$fct_guild_rm_magic$$]
+}
+
+LIFT_BOT_FIGHT (bot_name b)
+{
+	lift_bot_fight [$b$$$fct_guild_rm_fight$$]
+}
+
+LIFT_EXIT ()
+{
+	lift_exit [Exit$$exit$$]
+}

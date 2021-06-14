@@ -1,0 +1,44 @@
+﻿
+////////////////////////////////////////////////////////////////////////////////////
+// phrases management
+////////////////////////////////////////////////////////////////////////////////////
+PHRASE_BUY(sphrase s, int cost)
+{
+	(cost>1)
+		phrase_buy	[&ITM&You have just learnt "$s$" for $cost$ skill points.]
+	phrase_buy_1	[&ITM&You have just learnt "$s$" for one skill point.]
+}
+PHRASE_BUY_COMBAT(sphrase s, int cost)
+{
+	(cost>1)
+		phrase_buy_combat	[&ITM&You learn the "$s$" combat action for $cost$ skill points.]
+	phrase_buy_combat_1	[&ITM&You learn the "$s$" combat action for one skill point.]
+}
+PHRASE_BUY_MAGIC(sphrase s, int cost)
+{
+	(cost>1)
+		phrase_buy_magic	[&ITM&You learn the "$s$" spell for $cost$ skill points.]
+	phrase_buy_magic_1	[&ITM&You learn the "$s$" spell for one skill point.]
+}
+PHRASE_BUY_FABER(sphrase s, int cost)
+{
+	(cost>1)
+		phrase_buy_faber	[&ITM&You learn the "$s$" craft plan for $cost$ skill points.]
+	phrase_buy_faber_1	[&ITM&You learn the "$s$" craft plan for one skill point.]
+}
+PHRASE_CHARAC_BUY(characteristic c, int value, int cost)
+{
+	phrase_characteristic_buy	[&ITM&You increase your $c$ at $value$ for $cost$ skill points.]
+}
+PHRASE_USE_PREDEF(sphrase s)
+{
+	phrase_use_predef	[&SPLM&You use $s$.]
+}
+PHRASE_NOT_ENOUGH_CREDIT()
+{
+	phrase_missing_credit	[&CHKCB&Not enough credit to validate the action.]
+}
+PHRASE_NOT_ENOUGH_FOCUS()
+{
+	phrase_not_enough_focus [&CHKCB&Not enough focus to validate the action.]
+}

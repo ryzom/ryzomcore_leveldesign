@@ -1,0 +1,194 @@
+﻿
+
+// // Obsolete stuff
+//
+//GUILD_OUTPOST_VICTORY()
+//{
+//	[&SYS&Your guild won an outpost after a bloody war.]
+//}
+//
+//GUILD_OUTPOST_DEFEAT()
+//{
+//	[&SYS&Your guild was humiliated by a tribe and could not gain the aimed outpost!]
+//}
+//
+//GUILD_OUTPOST_PEACE_WON()
+//{
+//	[&SYS&Your guild successfully took control of an outpost!]
+//}
+//GUILD_DECLARE_WAR()
+//{
+//	[&SYS&Your guild declared war to the tribe owning the aimed outpost.]
+//}
+//GUILD_OUTPOST_CONTROL ()
+//{
+//	[&TSK&Your guild gained control of an outpost]
+//}
+//GUILD_OUTPOST_BUILDING ()
+//{
+//	[&ITM&Your guild gained an outpost building]
+//}
+
+OUTPOST_EVENT_Challenged()
+{
+	[&SYS&The outpost is challenged.]
+}
+OUTPOST_EVENT_OwnerVanished()
+{
+	[&SYS&The owner of the outpost has vanished.]
+}
+OUTPOST_EVENT_AttackerVanished()
+{
+	[&SYS&The attacker of the outpost has vanished.]
+}
+OUTPOST_EVENT_TimerEnd()
+{
+	[&SYS&The time is elapsed in the outpost.]
+}
+OUTPOST_EVENT_AttackerGiveUp()
+{
+	[&SYS&The attacker of the outpost gave up.]
+}
+OUTPOST_EVENT_OwnerGiveUp()
+{
+	[&SYS&The owner of the outpost gave up.]
+}
+OUTPOST_EVENT_AllSquadsKilled()
+{
+	[&SYS&All the squads of the outpost have been killed.]
+}
+
+OUTPOST_STATE_Peace()
+{
+	[&SYS&The outpost is now peaceful.]
+}
+OUTPOST_STATE_WarDeclaration()
+{
+	[&SYS&A conflict is now declared in the outpost.]
+}
+OUTPOST_STATE_Attack()
+{
+	[&SYS&The outpost is now sustaining an attack.]
+}
+OUTPOST_STATE_WarTransition()
+{
+	[&SYS&A counterattack will begin soon in the outpost...]
+}
+OUTPOST_STATE_CounterAttack()
+{
+	[&SYS&The outpost is now sustaining a counterattack.]
+}
+
+OUTPOST_OWNER(string_id str)
+{
+	[&SYS&$str$ owns the outpost now.]
+}
+
+OUTPOST_ATTACKER(string_id str)
+{
+	[&SYS&$str$ attacks the outpost now.]
+}
+
+NEED_MORE_GUILD_MONEY()
+{
+	[&CHK&Your guild does not have enough money.]
+}
+
+OUTPOST_CANT_PAY_SQUAD_WAGE(string_id str)
+{
+	[&CHK&$str$ n'a pas assez d'argent pour payer le salaire de l'escouade. Celle-ci quitte l'avant-poste !]
+}
+
+OUTPOST_CANT_FREE_LAST_SQUAD()
+{
+	[&CHK&Vous ne pouvez pas supprimer la dernière escouade sinon l'avant-poste sera perdu.]
+}
+
+GUILD_CHALLENGE_OUTPOST_ALREADY_ATTACKED()
+{
+	[&CHK&The outpost is already under attack.]
+}
+
+GUILD_GIVEUP_OUTPOST_ATTACK_NOT_ATTACKED()
+{
+	[&CHK&The outpost is not under attack.]
+}
+
+OUTPOST_SQUAD_RECRUITED()
+{
+	[&SYS&A new squad was recruited.]
+}
+
+OUTPOST_VERSION_NOT_SYNC()
+{
+	[&CHK&Votre action sur l'outpost a été rejetée car une autre action était en cours.]
+}
+
+OUTPOST_EDITING_CONCURRENCY_ISSUE(player p)
+{
+	[&CHK&$p$ est en train d'éditer l'avant-poste, réessayez dans un moment.]
+}
+
+OUTPOST_NO_MORE_IN_CONFLICT()
+{
+	[&SYS&Vous n'êtes plus engagé dans un conflit d'outpost.]
+}
+
+OUTPOST_IN_CONFLICT()
+{
+	[&SYS&Vous participez au conflit sur cet outpost.]
+}
+
+OUTPOST_CANT_PARTICIPATE()
+{
+	[&CHK&Vous êtes banni de cet outpost, vous ne pouvez pas participer au conflit en cours.]
+}
+
+OUTPOST_CANT_PARTICIPATE_ATTACK()
+{
+	[&CHK&Vous êtes banni de cet outpost, vous ne pouvez pas participer à l'attaque en cours.]
+}
+
+OUTPOST_CANT_PARTICIPATE_DEFENSE()
+{
+	[&CHK&Vous êtes banni de cet outpost, vous ne pouvez pas participer la defense de celui-ci.]
+}
+
+OUTPOST_PLAYER_BANISHED_ATTACK()
+{
+	[&SYS&Vous venez d'être banni de l'attack de cet outpost.]
+}
+
+OUTPOST_PLAYER_BANISHED_DEFENSE()
+{
+	[&SYS&Vous venez d'être banni de la defense de cet outpost.]
+}
+
+OUTPOST_GUILD_BANISHED_ATTACK()
+{
+	[&SYS&Votre guilde vient d'être banni de l'attaque de cet outpost.]
+}
+
+OUTPOST_GUILD_BANISHED_DEFENSE()
+{
+	[&SYS&Votre guilde vient d'être banni de la defense de cet outpost.]
+}
+
+OUTPOST_CANNOT_BUY_SQUADS_A(int n)
+{
+	[&CHK&$n$ escouades n'ont pas pu être achetées et ont été remplacées par des gratuites.]
+}
+
+OUTPOST_CANNOT_BUY_SQUADS_B()
+{
+	[&CHK&L'escouade n'a pas pu être achetée et a été remplacée par une gratuite.]
+}
+
+GUILD_GAIN_CHARGE_POINT (int points)
+{
+	[&SYS&Your guild gained $points$ charge points]
+}
+GUILD_XP_GAIN ()
+{
+	[&XP&Your guild gained experience points]
+}

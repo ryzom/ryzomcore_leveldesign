@@ -1,0 +1,427 @@
+﻿
+////////////////////////////////////////////////////////////////////////////////////
+// PVP
+////////////////////////////////////////////////////////////////////////////////////
+
+PVP_CHALLENGE_DISABLED()
+{
+	[&CHK&PvP challenge has been disabled.]
+}
+
+PVP_DUEL_DISABLED()
+{
+	[&CHK&PvP duel has been disabled.]
+}
+
+CHALLENGE_YOU_AGGRO()
+{
+	[&CHK&You cant propose any challenge if you are attacked by a creature.]
+}
+
+CHALLENGE_TEAM_AGGRO(player p)
+{
+	[&CHK&You cant propose any challenge because $p$, your team mate is under attack by a creature.]
+}
+
+CHALLENGE_OTHER_TEAM_AGGRO()
+{
+	[&CHK&You cant propose any challenge because a member of the opponent team is under attack by a creature.]
+}
+
+CHALLENGE_TARGET_AGGRO(player p)
+{
+	[&CHK&You cant challenge $p$, because this player is under attack by a creature.]
+}
+
+
+CHALLENGE_LOST()
+{
+	[&CHK&You lose the challenge.]
+}
+
+CHALLENGE_WON()
+{
+	[&CHK&You won the challenge.]
+}
+CHALLENGE_ACCEPTED( player p )
+{
+	[&CHK&$p$and you are now in a PVP challenge.]
+}
+
+CHALLENGE_STARTS()
+{
+	[&CHK&You are now in a challenge versus other players. You will be teleported back when the challenge is over.]
+}
+
+CHALLENGE_YOU_ABANDON( player p )
+{
+	[&CHK&$p$ abandonned the challenge.]
+}
+
+CHALLENGE_HE_ABANDON( player p )
+{
+	[&CHK&$p$ abandonned the challenge.]
+}
+
+CHALLENGE_ABANDON_NOT_LEADER()
+{
+	[&CHK&You must be team leader to abandon the challenge.]
+}
+
+CHALLENGE_SAME_TEAM( player p )
+{
+	[&CHK&$p$ is your teammate, you cant challenge him.]
+}
+
+PVP_CHALLENGE_INVITATION( player p )
+{
+	[$p$ and his team challenges you and your team.]
+}
+
+DUEL_YOU_ALREADY_IN_PVP(player p)
+{
+	[&CHK& You cant fight $p$ as you are already engaged against other players.]
+}
+
+CHALLENGE_TEAM_MEMBER_ALREADY_IN_PVP(player p)
+{
+	[&CHK& $p$, your teammate, is already engaged in combat against other players.]
+}
+
+DUEL_TARGET_ALREADY_IN_PVP(player p)
+{
+	[&CHK& You cant fight $p$ as this player is already engaged against other players.]
+}
+
+DUEL_TARGET_TEAM_ALREADY_IN_PVP (player p)
+{
+	[&CHK& You cant start a challenge because $p$, a member of the opponent team is already in combat against other players.]
+}
+
+DUEL_FORBIDDEN_PLACE()
+{
+	[&CHK& Vous ne pouvez pas vous battre ici.]
+}
+
+DUEL_YOU_CANCEL_INVITATION(player p)
+{
+	[&SYS&By proposing a duel, you have canceled the duel proposed to $p$.]
+}
+
+DUEL_CANCEL_INVITATION(player p)
+{
+	[&SYS&$p$ cancel his duel proposition.]
+}
+
+DUEL_ALREADY_INVITED(player p)
+{
+	[&CHK&you are already invited to duel.]
+}
+
+DUEL_TARGET_ALREADY_INVITED(player p)
+{
+	[&CHK&$p$ is already invited to duel by someone else.]
+}
+
+DUEL_ACCEPTED(player p)
+{
+	[&SYS&you are now in duel with $p$.]
+}
+
+DUEL_REFUSE_INVITATION (player p)
+{
+	[&SYS&$p$ refuses your duel.]
+}
+
+DUEL_INVITATION(player p)
+{
+	[$p$ invites you to duel. Do you accept?]
+}
+
+DUEL_DISCONNECT ()
+{
+	[&SYS&Your duel opponant has disconnected.]
+}
+
+DUEL_LOST ()
+{
+	[&SYS&Your have lost the duel.]
+}
+DUEL_WON()
+{
+	[&SYS&Your have won a duel.]
+}
+
+DUEL_YOU_TELEPORT()
+{
+	[&SYS&Your have lost your duel because you have teleported yourself.]
+}
+DUEL_TELEPORT()
+{
+	[&SYS&Your have won a duel because your opponant has teleported himself.]
+}
+
+DUEL_YOU_ENTER_PVP_ZONE()
+{
+	[&SYS&Your have lost your duel because you have entered a PVP zone.]
+}
+
+DUEL_ENTER_PVP_ZONE()
+{
+	[&SYS&Your have won your duel because your opponant has entered a PVP zone.]
+}
+
+DUEL_YOU_ABANDON()
+{
+	[&SYS&Your have abandonned your duel.]
+}
+
+DUEL_ABANDON()
+{
+	[&SYS&Your have won the duel because your opponant has abandonned.]
+}
+
+DUEL_INVITATION_EXPIRE()
+{
+	[&SYS&L'invitation au duel a expiré.]
+}
+
+PVP_FREE_ZONE_ENTER()
+{
+	[&CHK&You are now in a Free PVP Zone : no rules there.. be careful!]
+}
+
+PVP_VERSUS_ZONE_ENTER()
+{
+	[&CHK&You are now in a Versus PVP Zone : your clan is determined by your factions.]
+}
+
+PVP_GUILD_ZONE_ENTER()
+{
+	[&CHK&You are now in a Guild PVP Zone : there guilds can confront each other.]
+}
+
+PVP_ZONE_CANNOT_ENTER()
+{
+	[&CHK&You cannot fight in this PVP Zone : you are in another PVP mode.]
+}
+
+PVP_ZONE_ENTER_TIME(int time)
+{
+	[&CHK&You will be attackable in $time$ seconds.]
+}
+
+PVP_ZONE_ENTER_TIME_REPEAT(int time)
+{
+	[&PVPTM&You will be attackable in $time$ seconds.]
+}
+
+PVP_ZONE_ENTER_TIMEOUT()
+{
+	[&CHK&Now you are attackable , be careful.]
+}
+
+PVP_ZONE_LEAVE_TIME(int time)
+{
+	[&CHK&You left the PVP Zone. You are still attackable for $time$ seconds.]
+}
+
+PVP_ZONE_LEAVE_TIME_REPEAT(int time)
+{
+	[&PVPTM&You are still attackable for $time$ seconds.]
+}
+
+PVP_ZONE_LEAVE_TIMEOUT()
+{
+	[&CHK&Now you are safe.]
+}
+
+PVP_ZONE_ENTER_BACK()
+{
+	[&CHK&You are back in the PVP Zone.]
+}
+
+PVP_ZONE_LEAVE_BEFORE_TIMEOUT()
+{
+	[&CHK&You left the PVP Zone before timeout. Now you are safe.]
+}
+
+PVP_SAFE_ZONE()
+{
+	[&CHK&Vous tes dans une zone protg du pvp, tant que vous y restez ou que vous n'initiez pas d'action pvp si vous la quitez, vous restez proteg.]
+}
+
+PVP_CANT_HELP_ENEMY()
+{
+	[&CHKCB&Vous ne pouvez pas aider un enemie.]
+}
+
+PVP_CANT_HELP_NEUTRAL_PVP()
+{
+	[&CHKCB&Vous ne pouvez pas aider un personnage joueur qui est impliqué dans un conflit PVP qui ne vous concerne pas.]
+}
+
+PVP_CANT_HELP_UNKNOWN()
+{
+	[&CHKCB&Vous ne pouvez pas aider cette entité.]
+}
+
+PVP_CANT_ATTACK_ALLY()
+{
+	[&CHKCB&Vous ne pouvez pas attaquer votre allié.]
+}
+
+PVP_CANT_ATTACK_NEUTRAL()
+{
+	[&CHKCB&Vous ne pouvez pas attaquer un personnage neutre.]
+}
+
+PVP_TP_FORBIDEN()
+{
+	[&CHK&Vous ne pouvez pas vous teleporter alors que vous avez été impliqué dans des actions de PVP faction recement.]
+}
+
+PVP_TP_ENEMY_REGION_FORBIDEN()
+{
+	[&CHK&Vous ne pouvez pas vous teleporter dans une region controlée par une faction enemie.]
+}
+
+CHARACTER_MADE_THE_FINAL_BLOW(player p)
+{
+	[Vous avez porté le coup fatal au personnage joueur $p$.]
+}
+
+
+PVP_FLAG_ALREADY_IN_THIS_MODE( int i )
+{
+	(i = 0)
+		[&CHK&Vous avez déjà désactivé votre tag pvp.]
+	(i != 0)
+		[&CHK&Vous avez déjà activé votre tag pvp.]
+}
+
+PVP_FLAG_WAIT_FOR_TIMER( int i )
+{
+	(i = 0)
+		[&CHK&Vous avez déjà demandé à desactiver votre tag pvp, vous devez attendre la fin du timer pour que ce soit effectif.]
+	(i != 0)
+		[&CHK&Vous avez déjà demandé à activer votre tag pvp, vous devez attendre la fin du timer pour que ce soit effectif.]
+}
+
+PVP_TAG_PVP_NEED_ALLEGIANCE()
+{
+	[&CHK&Vous ne pouvez pas activer le mode PVP sans avoir au moins une renommée supérieure ou égale à 25 ou inférieure ou égale a -25.]
+}
+
+PVP_FLAG_RESET_TAG_MINIMAL_TIME( time totalTimer, time timerLeft )
+{
+	[&CHK&Vous ne pouvez pas enlever votre tag PvP car il à été activé il y a moins de $totalTimer$ secondes. Il vous reste $timerLeft$ secondes avant de pouvoir enlever votre tag.]
+}
+
+PVP_FLAG_RESET_NEED_NO_RECENT_PVP_ACTION( time totalTimer, time timerLeft )
+{
+	[&CHK&Vous ne pouvez pas enlever votre tag PvP car vous avez fait un action PvP de faction il y a moins de $totalTimer$ secondes. Il vous reste $timerLeft$ secondes avant de pouvoir enlever votre tag.]
+}
+
+
+PVP_SPIRE_START_BUILDING(place region_name, faction f, int m, int s)
+{
+	(s != 0)
+		[&ZON&Une spire $f$ apparaîtra dans $region_name.da$ $region_name$ dans $m$ minutes $s$ secondes.]
+	(s = 0)
+		[&ZON&Une spire $f$ apparaîtra dans $region_name.da$ $region_name$ dans $m$ minutes.]
+}
+
+PVP_SPIRE_BUILD_FINISHED(place region_name, faction f, int audience)
+{
+	(audience = 0) //channel system & plein ecrant
+		[&ZON&Une spire $f$ est apparue dans $region_name.da$ $region_name$. Désormais la faction $f$ domine $region_name.da$ $region_name$ et a recruté des gardiens pour veiller sur sa spire.]
+	(audience = 1) //channel faction
+		[&SYS&Une spire $f$ est apparue dans $region_name.da$ $region_name$. Désormais la faction $f$ domine $region_name.da$ $region_name$ et a recruté des gardiens pour veiller sur sa spire.]
+}
+
+PVP_SPIRE_DESTROYED(place region_name, faction f, int audience)
+{
+	(audience = 0) //channel system & plein ecrant
+		[&ZON&Une spire $f$ a été détruite dans $region_name.da$ $region_name$. Désormais la faction $f$ ne domine plus $region_name.da$ $region_name$.]
+	(audience = 1) // channel faction
+		[&SYS&Une spire $f$ a été détruite dans $region_name.da$ $region_name$. Désormais la faction $f$ ne domine plus $region_name.da$ $region_name$.]
+}
+
+PVP_SPIRE_REBUILD_DELAY(int m, int s)
+{
+	(m > 0)
+		[&CHK&Une nouvelle spire ne peut être invoquée sur ce socle par votre faction avant $m$ minutes $s$ seconds.]
+	(m = 0)
+		[&CHK&Une nouvelle spire ne peut être invoquée sur ce socle par votre faction avant $s$ secondes.]
+}
+
+PVP_SPIRE_SPEND_FACTION_POINT(int q)
+{
+	[&SYS&Vous sacrifiez $q$ points de faction pour invoquer une spire.]
+}
+
+PVP_SPIRE_FACTION_POINT(int q)
+{
+	[&XP&Vous avez détruit une spire ennemie ! Vous gagnez $q$ points de faction.]
+}
+
+PVP_SPIRE_ATTACKED(place region_name, faction faction)
+{
+	[&SYS&La spire $faction$ dans $region_name.da$ $region_name$ est attaquée !.]
+}
+
+
+FACTION_KAMI()
+{
+	[Faction Kami]
+}
+
+FACTION_KARAVAN()
+{
+	[Faction Karavan]
+}
+
+FACTION_FYROS()
+{
+	[Faction Fyros]
+}
+
+FACTION_MATIS()
+{
+	[Faction Matis]
+}
+
+FACTION_TRYKER()
+{
+	[Faction Tryker]
+}
+
+FACTION_ZORAI()
+{
+	[Faction Zorai]
+}
+
+FACTION_HOMINISTS()
+{
+	[Tenant]
+}
+
+FACTION_MARAUDERS()
+{
+	[Marauder]
+}
+FACTION_RANGER()
+{
+	[Ranger]
+}
+
+FACTION_AGNOS()
+{
+	[Antithe]
+}
+
+FACTION_URASIES()
+{
+	[Gnost]
+}

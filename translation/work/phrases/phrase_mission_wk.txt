@@ -1,0 +1,58 @@
+﻿
+////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
+
+
+MISSION_FAILED ()
+{
+	mission_failed	[&TSK&You failed in a mission.]
+}
+
+ABANDON_MISSION ()
+{
+	abandon_mission	[&TSK&You have abandonned a mission.]
+}
+
+
+
+// Mission message
+
+REQ_LEADER_TO_ABANDON_MISSION ()
+{
+	[&CHK& You must be the leader of your team to abandon or finish a team mission.]
+}
+
+ABANDON_GROUP_MISSION ()
+{
+	[&SYS& The leader of your team has abandoned a team mission.]
+}
+
+MISSION_MAX_SOLO_REACHED ()
+{
+	[&CHK&You have already picked the maximum number of solo missions]
+}
+
+MISSION_MAX_GROUP_REACHED ()
+{
+	[&CHK&You have already picked the maximum number of group missions]
+}
+
+EGS_MISSION_SUCCESS ()
+{
+	[&TSK&You have completed a mission]
+}
+
+EGS_MISSION_STEP_SUCCESS ()
+{
+	[&TSK&You have finished a mission step]
+}
+
+EGS_TASK_ENCYCLO_SUCCESS ()
+{
+	[&TSK&Task successfull.Check your encyclopedia.]
+}
+
+EGS_UNLOCK_ENCYCLO ()
+{
+	[&TSK&Thema unlocked.Check your encyclopedia.]
+}

@@ -1,0 +1,84 @@
+﻿
+////////////////////////////////////////////////////////////////////////////////////
+// these sentences are used in the craft system
+////////////////////////////////////////////////////////////////////////////////////
+ONLY_ONE_ROOT_FABER()
+{
+	only_one_root_faber	[&CHK&Only one root brick is permitted in craft sentence, crafting action aborted!]
+}
+UNKNOWN_CRAFTED_ITEM()
+{
+	unknown_crafted_item	[&CHK&Item crafted by sentence is unknown by server! Crafting action aborted! Please report this bug with exact sentence used. Thanks!]
+}
+ONE_FABER_PLAN_ALLOWED_PER_SENTENCE()
+{
+	one_faber_plan_allowed_per_sentence	[&CHK&Only one craft plan (mandatory bricks) is allowed in craft sentence! Crafting action aborted!]
+}
+CRAFT_SENTENCE_INCORRECT()
+{
+	craft_sentence_incorrect	[&CHK&Craft sentence is incorrect! Crafting action aborted!]
+}
+CANT_CRAFT_ENGAGED_IN_MELEE()
+{
+	cant_craft_engaged_melee	[&CHK&You can't craft when you are engaged in melee fight! Crafting action aborted!]
+}
+CANT_CRAFT_WHEN_DEAD()
+{
+	cant_craft_when_dead	[&CHKCB&You died during crafting! Crafting action aborted!]
+}
+CANT_FOUND_RM()
+{
+	cant_found_rm		[&CHK&Toutes les matiéres premiéres selectionnées n'ont pu être trouvées dans le bag! l'action de craft est annulée!]
+}
+CANT_LOCK_RM()
+{
+	cant_lock_rm		[&CHK&Can't reserve all raw material you chose for crafting! Some of this is certainly already reserved for other usage or are inaccessible. Crafting action aborted!]
+}
+CANT_CRAFT_NOT_ENOUGHT_FOCUS()
+{
+	[&CHK& Can't craft this item now because you don't have enought focus energy!]
+}
+FABER_CANCEL()
+{
+	faber_cancel		[&ITMF&Your crafting action has been interrupted!]
+}
+ROOT_FABER_NOT_FIRST()
+{
+	root_faber_not_first	[&CHK&Root craft bricks must be in first position in sentence! Please report this bug with exact sentence used. Thanks!]
+}
+PLAN_FABER_NOT_SECOND()
+{
+	plan_faber_not_second	[&CHK&Craft plan bricks must be in second position in sentence! Please report this bug with exact sentence used. Thanks!]
+}
+FABER_FUMBLE()
+{
+	faber_fumble		[&ITMF&Your crafting action is a complete failure, you may lose some of the raw materials used for crafting!]
+}
+FABER_MISS()
+{
+	faber_miss		[&CHK&Your crafting action is a failure!, you may lose some of the raw materials used for crafting!]
+}
+FABER_PARTIAL_SUCCESS()
+{
+	faber_partial_sucess	[&ITMF&Your crafting action is a partial success! Crafted item is degraded!]
+}
+FABER_CRITICAL_SUCCESS()
+{
+ faber_critical_sucess	[&ITM&Your crafting action is a critical success! Crafted item is exceptional for this action and selected raw materials!]
+}
+FABER_SUCCESS()
+{
+	faber_sucess		[&ITM&Your crafting action is a success! Crafted item corresponding to your action and raw materials selected!]
+}
+FABER_CREATE_STACK_ITEM_FAIL()
+{
+	faber_stack_fail	[&CHK&Craft system failure: can't create stack item! Please report this bug with exact sentence used. Thanks!]
+}
+FABER_CREATE_ITEM_FAIL()
+{
+	faber_item_fail		[&CHK&Craft system failure: can't create crafted item! Please report this bug with exact sentence used. Thanks!]
+}
+FABER_TEMP_INVENTORY_FULL()
+{
+	[&CHK&Can't create crafted item! Your temporary inventory is full!]
+}

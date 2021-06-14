@@ -1,0 +1,65 @@
+﻿
+
+////////////////////////////////////////////////////////////////////////////////////
+// enchantment related messages
+////////////////////////////////////////////////////////////////////////////////////
+RIGHT_HAND_EMPTY ()
+{
+	right_hand_empty [&CHK&You must carry an item in your right hand to enchant it]
+}
+
+ITEM_IS_NOT_CRYSTALLIZED_ACTION (item i)
+{
+	item_is_not_crystallized_action [&CHK&item $i$ is not an action cristal]
+}
+
+CANT_FOUND_ITEM (int i)
+{
+	cant_found_item [&CHK&item in slot $i$ was not found.]
+}
+
+WEAPONS_ONLY_CAN_BEEN_ENCHANTED()
+{
+	weapons_only_can_been_enchanted [&CHK&Only weapons can be enchanted.]
+}
+
+ITEM_IS_NOW_ENCHANTED(item i)
+{
+	item_is_now_enchanted [&SPLM&You have enchanted item $i$.]
+}
+
+ITEM_IS_NOT_CRYSTALLIZED_SAPLOAD_RECHARGE(item i)
+{
+	item_is_not_crystallized_sapload_recharge [&CHK&Item $i$ is not a recharge cristal.]
+}
+
+WEAPONS_ONLY_CAN_BEEN_RECHARGED ()
+{
+	weapons_only_can_been_recharged [&CHK&Only weapons can be recharged.]
+}
+
+ITEM_IN_RIGHT_HAND_HAVE_NOT_EBOUGHT_SAP ()
+{
+	item_in_right_hand_have_not_ebought_sap [&CHK&The item in your right hand has not enough sap.]
+}
+CANT_BE_ENCHANTED ()
+{
+	[&CHK&This item cant be enchanted.]
+}
+
+
+ITEM_IS_RECHARGED (item it, int current, int max )
+{
+	item_is_recharged [&ITM&Item $it$ is now recharged. Sap load is $current$ on $max$.]
+}
+
+
+ABANDON_TEAM_MISSION_REFUSED()
+{
+	abandon_team_mission_refused [&CHK& only leaders can abandon a team mission.]
+}
+
+NO_ACTION_WHILE_EQUIPPING()
+{
+	[&CHK&you cannot use an action while equipping.]
+}

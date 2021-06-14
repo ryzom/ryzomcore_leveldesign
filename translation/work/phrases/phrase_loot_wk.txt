@@ -1,0 +1,92 @@
+﻿
+
+////////////////////////////////////////////////////////////////////////////////////
+// these sentences are used during harvest/loot
+////////////////////////////////////////////////////////////////////////////////////
+HARVEST_NOTHING_TO_QUARTER(entity e)
+{
+	harvest_nothing_to_quarter	[&ITMF&There is nothing to quarter on $e.da$ $e$.]
+}
+HARVEST_NOTHING_TO_LOOT(entity e)
+{
+	harvest_nothing_to_loot	[&ITMF&There is nothing to loot on $e.da$ $e$.]
+}
+
+YOU_NOT_HAVE_LOOT_RIGHT()
+{
+	you_not_have_loot_right [&CHK&Vous n'avez pas le droit de looter ce corps pour le moment. ]
+}
+
+YOU_NOT_HAVE_QUARTER_RIGHT()
+{
+	you_not_have_quarter_right [&CHK&Vous n'avez pas le droit de dépecer ce corps pour le moment. ]
+}
+
+AUTO_LOOT_LEVEL_TOO_LOW()
+{
+	auto_loot_level_too_low	[&ITMF&For your mission, you need a material of higher quality.]
+}
+
+AUTO_LOOT_SUCCESS (int nb, item i, int level)
+{
+	(nb > 1)
+		auto_loot_success_pl	[&ITM&You obtain $nb$ $i.p$ of quality $level$ for your mission]
+	(nb = 1)
+		auto_loot_success_1	[&ITM&You obtain one $i$ of quality $level$ for your mission]
+}
+
+LOOT_SUCCESS (int nb, item item, int quality)
+{
+	(nb > 1)
+		loot_success_pl	[&ITM&You obtain $nb$ $item.p$ of quality $quality$.]
+	(nb = 1)
+		loot_success_1	[&ITM&You obtain one $item$ of quality $quality$.]
+}
+
+LOOT_SUCCESS_OTHER (player p, int nb, item item, int quality)
+{
+	(nb > 1)
+		loot_success_other_pl	[&ITMO&$p$ obtains $nb$ $item.p$ of quality $quality$.]
+	(nb = 1)
+		loot_success_other_1	[&ITMO&$p$ obtains one $item$ of quality $quality$.]
+}
+
+//R2LOOT_SUCCESS (int nb, literal lit, int quality)
+//{
+//	(nb > 1)
+//		r2loot_success_pl	[&ITM&You obtain $nb$ $lit$ of quality $quality$.]
+//	(nb = 1)
+//		r2loot_success_1	[&ITM&You obtain one $lit$ of quality $quality$.]
+//}
+
+HARVEST_SUCCESS (int nb, item item, int quality)
+{
+	(nb > 1)
+		harvest_success_pl	[&ITM&You obtain $nb$ $item.p$ of quality $quality$.]
+	(nb = 1)
+		harvest_success_1	[&ITM&You obtain one $item$ of quality $quality$.]
+}
+
+HARVEST_SUCCESS_OTHER (player p, int nb, item item, int quality)
+{
+	(nb > 1)
+		harvest_success_other_pl	[&ITMO&$p$ obtains $nb$ $item.p$ of quality $quality$.]
+	(nb = 1)
+		harvest_success_other_1		[&ITMO&$p$ obtains one $item$ of quality $quality$.]
+}
+
+HARVEST_QUARTER_ALREADY_IN_PROGRESS_OTHER(entity creature, entity harvester)
+{
+	harvest_quarter_already_in_progress_other	[&CHK&$creature.da$ $creature$ is already being quartered by $harvester$.]
+}
+
+HARVEST_QUARTER_ALREADY_IN_PROGRESS_SELF(entity e)
+{
+	harvest_quarter_already_in_progress_self	[&CHK&You are already quartering $e.da$ $e$.]
+}
+
+HARVEST_LOOT_ALREADY_IN_PROGRESS_OTHER(entity creature, entity harvester)
+{
+	harvest_loot_already_in_progress_other	[&CHK&$creature.da$ $creature$ is already being looted by $harvester$.]
+}
+

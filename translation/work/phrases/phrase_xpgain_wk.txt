@@ -1,0 +1,76 @@
+﻿
+////////////////////////////////////////////////////////////////////////////////////
+// these sentences are used in the xp gain system
+////////////////////////////////////////////////////////////////////////////////////
+PROGRESS_NO_GAIN(skill s)
+{
+	progress_no_gain [&CHK&You don't gain experience in '$s$', this actions is too easy.]
+}
+//PROGRESS_LITTLE_GAIN(skill s)
+//{
+//	progress_little_gain [&XP&You gain a little experience in '$s$'.]
+//}
+PROGRESS_NORMAL_GAIN(skill s, int i)
+{
+	(i > 1)
+		progress_normal_gain_p [&XP&You gain $i$ experience points in '$s$'.]
+	(i = 1)
+		progress_normal_gain_1 [&XP&You gain 1 experience point in '$s$'.]
+
+	progress_normal_gain_0 [&XP&You gain no experience in '$s$'.]
+}
+
+PROGRESS_DEATH_PENALTY_PAYBACK(int i, skill s, int j, int k)
+{
+	progress_death_penalty_payback [&XP&You gain $i$ experience points in '$s$', which amounts to $j$ death penalty points. Your death penalty is now of $k$ points.]
+}
+
+PROGRESS_DEATH_PENALTY_COMPLETE()
+{
+	progress_death_penalty_complete [&XP&You no longer have a death experience penalty !]
+}
+
+PROGRESS_FREE_TRIAL_LIMIT(skill s)
+{
+	progress_free_trial_limit [&XP&You gain no experience in '$s$' because you have reached the free trial limit. To progress further in this skill you must upgrade your account.]
+}
+
+//*PROGRESS_MUCH_GAIN(skill s)
+//{
+//	progress_much_gain [&XP&You gain much experience in '$s$'.]
+//}
+PROGRESS_MISSION_GAIN(skill s)
+{
+	progress_mission_gain [&TSK&The success of this mission has given you experience for the '$s$' skill.]
+}
+
+PROGRESS_SKILL(skill s, int i)
+{
+	progress_skill	[&XP&Your '$s$' skill improves to $i$ points.]
+}
+PROGRESS_HP()
+{
+	progress_hp	[&XP&Your life force increases.]
+}
+PROGRESS_SAP()
+{
+	progress_sap	[&XP&Your Sap increases.]
+}
+PROGRESS_STA()
+{
+	progress_sta	[&XP&Your endurance increases.]
+}
+//PROGRESS_RESIST(??)
+//{
+//	progress_resist	[&XP&]
+//}
+PROGRESS_UNLOCK_SKILL(skill s, int i)
+{
+	progress_unlock_skill	[&XP&Well done! You gain the new advanced skill '$s$' starting to $i$ points.]
+}
+
+PROGRESS_MAX_DAMAGE_TRANSFERED(entity e)
+{
+	[&XP&The way you killed $e.da$ $e$ was too easy. You don't gain experience for that behaviour.]
+}
+

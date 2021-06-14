@@ -1,0 +1,99 @@
+﻿
+////////////////////////////////////////////////////////////////////////////////////
+// Powers related messages
+////////////////////////////////////////////////////////////////////////////////////
+POWER_DISABLED(powertype p, int m, int s)
+{
+	(s > 0 & m > 0)
+		power_still_disabled_ms	[&CHKCB&Your "$p$" power is still disabled for $m$ minutes and $s$ seconds.]
+	(s = 0 & m > 0)
+		power_still_disabled_m	[&CHKCB&Your "$p$" power is still disabled for $m$ minutes.]
+	(s > 0 & m = 0)
+		power_still_disabled_s	[&CHKCB&Your "$p$" power is still disabled for $s$ seconds.]
+}
+
+
+POWER_TAUNT_LEVEL_TOO_HIGH(entity e)
+{
+	power_taunt_level_too_high	[&CHKCB&$e.da$ $e$ is too strong to be impressed by your action.]
+}
+POWER_TAUNT_TARGET_TOO_FAR(entity e)
+{
+	power_taunt_target_too_far	[&CHKCB&$e.da$ $e$ is too far away to be taunted by you.]
+}
+POWER_TAUNT_TARGET_NOT_ATTACKABLE()
+{
+	power_taunt_target_not_attackable	[&CHKCB&You can only taunt attackable creatures or npcs.]
+}
+
+POWER_TAUNT(entity e)
+{
+	power_taunt	[&SPLM&You taunt $e.da$ $e$.]
+}
+POWER_TAUNT_FAILED(entity e)
+{
+	power_taunt_failed	[&MISM&You failed to taunt $e.da$ $e$.]
+}
+
+POWER_AURA_ACTIVATE(powertype p)
+{
+	power_aura_activate	[&SPLM&Vous activez votre pouvoir "$p$".]
+}
+POWER_AURA_ACTIVATE_SPECTATORS(entity e, powertype p)
+{
+	power_aura_activate_spectators	[&SYS&$e.da$ $e$ active le pouvoir "$p$".]
+}
+
+POWER_USE_ON_TARGET(entity e, powertype p)
+{
+	power_use_on_target	[&SPLM&You use your power "$p$" on $e.da$ $e$.]
+}
+POWER_USE_ON_TARGET_FAILED(entity e, powertype p)
+{
+	power_use_on_target_failed	[&MISM&Your power "$p$" had no effect on $e.da$ $e$.]
+}
+POWER_USE_ON_TARGET_TARGET(entity user, powertype p)
+{
+	power_use_on_target_target	[&SYS&$user.da$ $user$ utilise le pouvoir "$p$" sur vous.]
+}
+POWER_USE_ON_TARGET_SPECTATORS(entity user, entity target, powertype p)
+{
+	power_use_on_target_spectators	[&SYS&$user.da$ $user$ utilise le pouvoir "$p$" sur $target.da$ $target$.]
+}
+
+POWER_USE(powertype p)
+{
+	power_use	[&SPLM&Vous utilisez le pouvoir "$p$".]
+}
+POWER_USE_SPECTATORS(entity e, powertype p)
+{
+	power_use_spectators	[&SYS&$e.da$ $e$ utilise le pouvoir "$p$".]
+}
+
+POWER_EFFECT_ENDS(powertype p)
+{
+	power_effect_ends	[&SPLM&The power "$p$" effects end.]
+}
+
+AURA_EFFECT_BEGIN(powertype p)
+{
+	aura_effect_begin	[&SPL&You begin to feel the effects of the $p$.]
+}
+AURA_EFFECT_END(powertype p)
+{
+	aura_effect_end		[&SPL&The $p$ effects have vanished.]
+}
+
+POWER_BALANCE_ACTOR ( powertype p, score s, int newVal )
+{
+	power_balance_actor [&SPLM&You use "$p$" power and affected members of your team now have $newVal$% of their max $s.points$.]
+}
+POWER_BALANCE_OTHERS ( entity e, powertype p,score s, int newVal )
+{
+	power_balance_others [&SYS&$e.da$ $e$ uses the power "$p$" and you now have $newVal$% of your $s.points$.]
+}
+
+POWER_BALANCE_NO_TEAM()
+{
+	power_balance_no_team	[&CHK&You must be in a team to use the Balance power.]
+}

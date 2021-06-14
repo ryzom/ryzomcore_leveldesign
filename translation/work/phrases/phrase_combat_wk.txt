@@ -1,0 +1,402 @@
+﻿
+
+/////////////////////////////////////////////////////////////////////////
+// sentences related to combat
+/////////////////////////////////////////////////////////////////////////
+COMBAT_ACTOR_HIT(entity e, int damage, int maxDamage)
+{
+	(maxDamage = 0 & damage > 1)
+		combat_actor_hit_p	[&DGM&You inflict $damage$ damage points on $e.da$ $e$.]
+	(maxDamage = 0 & damage=1)
+		combat_actor_hit_1	[&DGM&You inflict one damage point on $e$.]
+	(maxDamage = 0 & damage=0)
+		combat_actor_hit_0	[&DGM&You hit $e$ but do no damage.]
+
+	(damage>1)
+		combat_actor_hit_pm	[&DGM&You inflict $damage$ ($maxDamage$) damage points on $e.da$ $e$.]
+	(damage=1)
+		combat_actor_hit_1m	[&DGM&You inflict one damage ($maxDamage$) point on $e.da$ $e$.]
+	(damage=0)
+		combat_actor_hit_0m	[&DGM&You hit $e.da$ $e$ but do no damage ($maxDamage$).]
+}
+
+COMBAT_ACTOR_HIT_LOC(entity e, int damage, int maxDamage, bodypart b)
+{
+	(maxDamage = 0 & damage > 1)
+		combat_actor_hit_test_loc_p	[&DGM&You hit $e.da$ $e$'s $b$ for $damage$ points of damage.]
+	(maxDamage = 0 & damage = 1)
+		combat_actor_hit_test_loc_1	[&DGM&You You hit $e.da$ $e$'s $b$ for 1 point of damage.]
+	(maxDamage = 0 & damage = 0)
+		combat_actor_hit_test_loc_0	[&DGM&You You hit $e.da$ $e$'s $b$ but inflict no damage.]
+
+	(damage>1)
+		combat_actor_hit_test_loc_pm	[&DGM&You hit $e.da$ $e$'s $b$ for $damage$ ($maxDamage$) points of damage.]
+	(damage=1)
+		combat_actor_hit_test_loc_1m	[&DGM&You You hit $e.da$ $e$'s $b$ for 1 ($maxDamage$) point of damage.]
+	(damage=0)
+		combat_actor_hit_test_loc_0m	[&DGM&You You hit $e.da$ $e$'s $b$ but inflict no damage ($maxDamage$).]
+}
+
+
+COMBAT_DEFENDER_HIT(entity e, int damage, int maxDamage)
+{
+	(maxDamage = 0 & damage > 0)
+		combat_defender_hit	[&DG&$e.da$ $e$ hits you for $damage$ damage.]
+	(maxDamage = 0 & damage = 0)
+		combat_defender_hit_0	[&DG&$e.da$ $e$ hits you but does no damage.]
+
+	(damage>0)
+		combat_defender_hit_m	[&DG&$e.da$ $e$ hits you for $damage$ ($maxDamage$) damage.]
+	(damage=0)
+		combat_defender_hit_0m	[&DG&$e.da$ $e$ hits you but does no damage ($maxDamage$).]
+}
+
+COMBAT_DEFENDER_HIT_LOC(entity e, int damage, int maxDamage, bodypart b)
+{
+	(maxDamage = 0 & damage>0)
+		combat_defender_hit_loc	[&DG&$e.da$ $e$ hits your $b$ for $damage$ damage.]
+	(maxDamage = 0 & damage=0)
+		combat_defender_hit_loc_0	[&DG&$e.da$ $e$ hits your $b$ but does no damage.]
+
+	(damage>0)
+		combat_defender_hit_loc_m	[&DG&$e.da$ $e$ hits your $b$ for $damage$ ($maxDamage$) damage.]
+	(damage=0)
+		combat_defender_hit_loc_0m	[&DG&$e.da$ $e$ hits your $b$ but does no damage ($maxDamage$).]
+}
+
+COMBAT_SPECTATOR_HIT(entity actor, entity defender, int damage, int maxDamage)
+{
+	(maxDamage = 0 & damage>0)
+		combat_spectator_hit	[&SYS&$actor.da$ $actor$ hits $defender.da$ $defender$ for $damage$ damage.]
+	(maxDamage = 0 & damage=0)
+		combat_spectator_hit_0	[&SYS&$actor.da$ $actor$ hits $defender.da$ $defender$ but does no damage.]
+
+	(damage>0)
+		combat_spectator_hit_m	[&SYS&$actor.da$ $actor$ hits $defender.da$ $defender$ for $damage$ ($maxDamage$) damage.]
+	(damage=0)
+		combat_spectator_hit_0m	[&SYS&$actor.da$ $actor$ hits $defender.da$ $defender$ but does no damage ($maxDamage$).]
+}
+
+COMBAT_ACTOR_HIT_SELF(int damage, int maxDamage)
+{
+	(maxDamage = 0 & damage > 1)
+		combat_actor_hit_self_p		[&DG&Vous vous blessez, infligeant $damage$ points de dégâts.]
+
+	(maxDamage = 0 & damage = 1)
+		combat_actor_hit_self_1		[&DG&Vous vous blessez, infligeant 1 point de dégâts.]
+
+	(maxDamage = 0 & damage = 0)
+		combat_actor_hit_self_0		[&DG&Vous vous blessez mais n'infligez pas de dégâts.]
+
+	(damage>1)
+		combat_actor_hit_self_pm	[&DG&Vous vous blessez, infligeant $damage$ ($maxDamage$) points de dégâts.]
+
+	(damage=1)
+		combat_actor_hit_self_1m	[&DG&Vous vous blessez, infligeant 1 ($maxDamage$) point de dégâts.]
+
+	(damage=0)
+		combat_actor_hit_self_0m	[&DG&Vous vous blessez mais n'infligez pas de dégâts ($maxDamage$).]
+}
+
+COMBAT_SPECTATOR_HIT_SELF_CREATURE(creature e, int damage)
+{
+	(damage>0)
+		combat_spectator_hit_self_creature	[&DGM&$e$ hits itself for $damage$ damage.]
+	(damage=0)
+		combat_spectator_hit_self_creature_0	[&DGM&$e$ hits itself but does no damage.]
+}
+COMBAT_SPECTATOR_HIT_SELF_PLAYER(player p, int damage)
+{
+	(damage>0 & p.gender = male)
+		combat_spectator_hit_self_player_m	[&DGM&$p$ hits himself for $damage$ damage.]
+	(damage>0 & p.gender = female)
+		combat_spectator_hit_self_player_f	[&DGM&$p$ hits herself for $damage$ damage.]
+	(damage=0 & p.gender = male)
+		combat_spectator_hit_self_player_0_m	[&DGM&$p$ hits himself but does no damage.]
+	(damage=0 & p.gender = female)
+		combat_spectator_hit_self_player_0_f	[&DGM&$p$ hits herself but does no damage.]
+}
+COMBAT_SPECTATOR_HIT_SELF_NPC(bot p, int damage)
+{
+	(damage>0 & p.gender = male)
+		combat_spectator_hit_self_bot_m	[&DGM&$p$ hits himself for $damage$ damage.]
+	(damage>0 & p.gender = female)
+		combat_spectator_hit_self_bot_f	[&DGM&$p$ hits herself for $damage$ damage.]
+	(damage=0 & p.gender = male)
+		combat_spectator_hit_self_bot_0_m	[&DGM&$p$ hits himself but does no damage.]
+	(damage=0 & p.gender = female)
+		combat_spectator_hit_self_bot_0_f	[&DGM&$p$ hits herself but does no damage.]
+}
+
+COMBAT_LOSE_STA_ACTOR(entity e, int i)
+{
+	combat_lose_sta_actor [&SPLM&You make $e.da$ $e$ lose $i$ stamina points.]
+}
+COMBAT_LOSE_STA_TARGET(entity e, int i)
+{
+	combat_lose_sta_target [&SPL&$e.da$ $e$ makes you lose $i$ stamina points.]
+}
+COMBAT_LOSE_STA_SPECTATORS(entity actor, entity target, int i)
+{
+	combat_lose_sta_spectators [&SYS&$actor.da$ $actor$ makes $target.da$ $target$ lose $i$ stamina points.]
+}
+COMBAT_LOSE_STA_SELF(int i)
+{
+	combat_lose_sta_self [&SPL&You make yourself lose $i$ stamina points.]
+}
+COMBAT_LOSE_STA_SELF_SPECTATORS_PLAYER(player p, int i)
+{
+	(p.gender = male)
+		combat_lose_sta_self_spectators_pm [&SPLM&$p$ makes himself lose $i$ stamina points.]
+	(p.gender = female)
+		combat_lose_sta_self_spectators_pf [&SPLM&$p$ makes herself lose $i$ stamina points.]
+}
+COMBAT_LOSE_STA_SELF_SPECTATORS_NPC(bot b, int i)
+{
+	(b.gender = male)
+		combat_lose_sta_self_spectators_bm [&SPLM&$b.da$ $b$ makes himself lose $i$ stamina points.]
+	(b.gender = female)
+		combat_lose_sta_self_spectators_bf [&SPLM&$b.da$ $b$ makes herself lose $i$ stamina points.]
+}
+COMBAT_LOSE_STA_SELF_SPECTATORS_CREATURE(creature c, int i)
+{
+	combat_lose_sta_self_spectators_c [&SPLM&$c.da$ $c$ makes itself lose $i$ stamina points.]
+}
+
+COMBAT_LOSE_SAP_ACTOR(entity e, int i)
+{
+	combat_lose_sap_actor [&SPLM&You make $e.da$ $e$ lose $i$ sap points.]
+}
+COMBAT_LOSE_SAP_TARGET(entity e, int i)
+{
+	combat_lose_sap_target [&SPL&$e.da$ $e$ makes you lose $i$ sap points.]
+}
+COMBAT_LOSE_SAP_SPECTATORS(entity actor, entity target, int i)
+{
+	combat_lose_sap_spectators [&SYS&$actor.da$ $actor$ makes $target.da$ $target$ lose $i$ sap points.]
+}
+COMBAT_LOSE_SAP_SELF(int i)
+{
+	combat_lose_sap_self [&SPL&You make yourself lose $i$ sap points.]
+}
+COMBAT_LOSE_SAP_SELF_SPECTATORS_PLAYER(player p, int i)
+{
+	(p.gender = male)
+		combat_lose_sap_self_spectators_pm [&SPLM&$p$ makes himself lose $i$ sap points.]
+	(p.gender = female)
+		combat_lose_sap_self_spectators_pf [&SPLM&$p$ makes herself lose $i$ sap points.]
+}
+COMBAT_LOSE_SAP_SELF_SPECTATORS_NPC(bot b, int i)
+{
+	(b.gender = male)
+		combat_lose_sap_self_spectators_bm [&SPLM&$b.da$ $b$ makes himself lose $i$ sap points.]
+	(b.gender = female)
+		combat_lose_sap_self_spectators_bf [&SPLM&$b.da$ $b$ makes herself lose $i$ sap points.]
+}
+COMBAT_LOSE_SAP_SELF_SPECTATORS_CREATURE(creature c, int i)
+{
+	combat_lose_sap_self_spectators_c [&SPLM&$c.da$ $c$ makes itself lose $i$ sap points.]
+}
+
+COMBAT_ACTOR_MISS(entity e)
+{
+	combat_actor_miss	[&MISM&You miss $e$.]
+}
+
+COMBAT_DEFENDER_MISS(entity e)
+{
+	combat_defender_miss	[&MIS&$e$ misses you.]
+}
+
+COMBAT_SPECTATOR_MISS(entity actor, entity defender)
+{
+	combat_spectator_miss	[&SYS&$actor$ misses $defender$.]
+}
+
+COMBAT_ACTOR_CRITICAL_HIT(entity e)
+{
+	combat_actor_critical_hit	[&SPLM&You perform a critical strike on $e$.]
+}
+
+COMBAT_DEFENDER_CRITICAL_HIT(entity e)
+{
+	combat_defender_critical_hit	[&SPL&$e$ performs a critical strike on you.]
+}
+
+COMBAT_SPECTATOR_CRITICAL_HIT(entity actor, entity defender)
+{
+	combat_spectator_critical_hit	[&SYS&$actor$ performs a critical strike on $defender$.]
+}
+
+COMBAT_ACTOR_FUMBLE()
+{
+	combat_actor_fumble	[&MISM&You fumble.]
+}
+
+COMBAT_DEFENDER_FUMBLE(entity e)
+{
+	combat_defender_fumble	[&MIS&$e$ fumbles.]
+}
+
+COMBAT_SPECTATOR_FUMBLE(entity actor)
+{
+	combat_spectator_fumble	[&MIS&$actor$ fumbles.]
+}
+
+COMBAT_ATTACK_ACTOR(entity e)
+{
+	combat_attack_actor	[&SYS&You attack $e$.]
+}
+
+COMBAT_ATTACK_DEFENDER(entity e)
+{
+	combat_attack_defender	[&SYS&$e$ attacks you.]
+}
+
+COMBAT_ATTACK_SPECTATOR(entity actor, entity defender)
+{
+	combat_attack_spectator	[&SYS&$actor$ attacks $defender$.]
+}
+
+COMBAT_LEAVE_ACTOR(entity e)
+{
+	combat_leave_actor	[&SYS&You stop attacking $e$.]
+}
+
+COMBAT_LEAVE_DEFENDER(entity e)
+{
+	combat_leave_defender	[&SYS&$e$ leaves combat.]
+}
+
+COMBAT_LEAVE_SPECTATOR(entity actor, entity defender)
+{
+	combat_leave_spectator	[&SYS&$actor$ stops attacking $defender$.]
+}
+
+COMBAT_DODGE_ATTACKER(entity e)
+{
+	combat_dodge_attacker	[&MISM&$e.da$ $e$ has dodged your attack.]
+}
+
+COMBAT_DODGE_DEFENDER(entity e)
+{
+	combat_dodge_defender	[&MIS&You dodged $e.da$ $e$'s attack.]
+}
+
+COMBAT_DODGE_SPECTATOR(entity actor, entity defender)
+{
+	combat_dodge_spectator	[&SYS&$defender.ia$ $defender$ has dodged $actor.ia$ $actor$'s attack.]
+}
+
+COMBAT_PARRY_ATTACKER(entity e)
+{
+	combat_parry_attacker	[&MISM&$e.da$ $e$ has parried your attack.]
+}
+
+COMBAT_PARRY_DEFENDER(entity e)
+{
+	combat_parry_defender	[&MIS&You parry $e.da$ $e$'s attack.]
+}
+
+COMBAT_PARRY_SPECTATOR(entity actor, entity defender)
+{
+	combat_parry_spectator	[&SYS&$defender.ia$ $defender$ has parried $actor.ia$ $actor$'s attack.]
+}
+
+COMBAT_MISS_ATTACKER(entity e)
+{
+	combat_miss_attacker	[&MISM& Vous avez raté $e.da$ $e$.]
+}
+
+COMBAT_MISS_DEFENDER(entity e)
+{
+	combat_miss_defender	[&MIS&$e.da$ $e$ vous a raté.]
+}
+
+COMBAT_MISS_SPECTATOR(entity actor, entity defender)
+{
+	combat_miss_spectator	[&SYS&$actor.ia$ $actor$ a raté  $defender.ia$ $defender$.]
+}
+
+// damage shield related
+COMBAT_DMG_SHIELD_ATTACKER(entity defender, int damage, int drain)
+{
+	(drain > 0)
+		combat_dmg_shield_attacker [&DMG&$defender.da$ $defender$'s damage shield inflicts you $damage$ damage points and $defender.da$ $defender$ gains $drain$ hit points.]
+ 	combat_dmg_shield_attacker_0 [&DMG&$defender.da$ $defender$'s damage shield inflicts you $damage$ damage points.]
+}
+
+COMBAT_DMG_SHIELD_DEFENDER(entity attacker, int damage, int drain)
+{
+	(drain > 0)
+		combat_dmg_shield_defender [&DGM&Your damage shield inflicts $damage$ damage points to $attacker.da$ $attacker$ and you gain $drain$ hit points.]
+ 	combat_dmg_shield_defender_0 [&DGM&Your damage shield inflicts $damage$ damage points to $attacker.da$ $attacker$.]
+}
+
+COMBAT_DMG_SHIELD_SPECTATORS(entity defender, entity attacker, int damage, int drain)
+{
+	(drain > 0)
+		combat_dmg_shield_spectators [&SYS&$defender.da$ $defender$'s damage shield inflicts $damage$ damage points to $attacker.da$ $attacker$ and $defender.da$ $defender$ gains $drain$ hit points.]
+ 	combat_dmg_shield_spectators_0 [&SYS&$defender.da$ $defender$'s damage shield inflicts $damage$ damage points to $attacker.da$ $attacker$.]
+}
+
+//Disarm
+COMBAT_DISARM_NO_ITEM(player p)
+{
+	(p.gender = male)
+		combat_disarm_no_item_m	[&CHKCB&$p$ has no weapon equiped, so you cannot disarm him.]
+	combat_disarm_no_item_f	[&CHKCB&$p$ has no weapon equiped, so you cannot disarm her.]
+}
+
+COMBAT_DISARM_ATTACKER(player p)
+{
+	combat_disarm_attacker	[&SPLM&You have disarmed $p$.]
+}
+COMBAT_DISARM_DEFENDER(entity e)
+{
+	combat_disarm_defender	[&SPL&$e.pa$ $e$ disarmed you.]
+}
+
+// Feint
+COMBAT_FEINT_ACTOR(entity e)
+{
+	combat_feint_actor	[&SPLM&You make a successful feint against $e.da$ $e$.]
+}
+
+COMBAT_FEINT_TARGET(entity e)
+{
+	combat_feint_target 	[&SPL&$e.da$ $e$ makes a successful feint against you.]
+}
+
+COMBAT_FEINT_INVALID(entity e)
+{
+	combat_feint_invalid 	[&CHKCB&$e.da$ $e$ is not attacking you in melee combat, you cannot feint.]
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////
+/// sentences used as error codes in combat system
+////////////////////////////////////////////////////////////////////////////////////
+COMBAT_INVALID_TARGET()
+{
+	combat_invalid_target	[&CHKCB&Invalid target.]
+}
+COMBAT_NOT_AN_ENEMY()
+{
+	combat_not_an_enemy	[&CHKCB&You can only enter combat with your enemies.]
+}
+COMBAT_NOT_ENOUGH_STA()
+{
+	combat_not_enough_sta	[&CHKCB&You do not have enough stamina for this action.]
+}
+
+COMBAT_CANNOT_USE_ACTION_YET()
+{
+	combat_use_action_yet	[&CHKCB&You cannot use a combat action yet.]
+}
+
+COMBAT_NOT_A_WEAPON()
+{
+	combat_not_a_weapon	[&CHKCB&You cannot fight with this item in your hand.]
+}
+

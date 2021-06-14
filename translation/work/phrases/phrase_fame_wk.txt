@@ -1,0 +1,67 @@
+﻿
+
+EGS_TRADE_BAD_FAME( bot b )
+{
+	// I have included a bot in this phrase cause it is a bot chat ( variation according the bot race and so on,...)
+	[I dont want to trade with you because your réputation is too bad.]
+}
+
+FAME_GAIN_CHAR (faction faction, int propagation_type)
+{
+	(propagation_type = 0)
+		fame_gain_char		[You gain fame with $faction.da$ $faction$]
+	(propagation_type = 1)
+		fame_gain_char_ally	[You gain fame with their allies $faction.da$ $faction$]
+	(propagation_type = 2)
+		fame_gain_char_enemy	[You gain fame with their enemies $faction.da$ $faction$]
+}
+
+FAME_LOST_CHAR (faction faction, int propagation_type)
+{
+	(propagation_type = 0)
+		fame_lost_char		[You lost fame with $faction.da$ $faction$]
+	(propagation_type = 1)
+		fame_lost_char_ally	[You lost fame with their allies $faction.da$ $faction$]
+	(propagation_type = 2)
+		fame_lost_char_enemy	[You lost fame with their enemies $faction.da$ $faction$]
+}
+
+FAME_GAIN_GUILD (faction faction, int propagation_type)
+{
+	(propagation_type = 0)
+		fame_gain_guild		[Your guild gain fame with $faction.da$ $faction$]
+	(propagation_type = 1)
+		fame_gain_guild_ally	[Your guild gain fame with their allies $faction.da$ $faction$]
+	(propagation_type = 2)
+		fame_gain_guild_enemy	[Your guild gain fame with their enemies $faction.da$ $faction$]
+}
+
+FAME_LOST_GUILD (faction faction, int propagation_type)
+{
+	(propagation_type = 0)
+		fame_lost_guild		[Your guild lost fame with $faction.da$ $faction$]
+	(propagation_type = 1)
+		fame_lost_guild_ally	[Your guild lost fame with their allies $faction.da$ $faction$]
+	(propagation_type = 2)
+		fame_lost_guild_enemy	[Your guild lost fame with their enemies $faction.da$ $faction$]
+}
+
+FAME_LOW_WARNING_FOR_ALLIANCE(faction faction)
+{
+	[&CHK&Your fame is almost too low for membership with the $faction.member$.  You may be removed if your fame continues to drop.]
+}
+
+FAME_TOO_LOW_FOR_ALLEGIANCE(faction faction)
+{
+	[&SYS&The $faction.member$ no longer accept you due to your low fame.]
+}
+
+FAME_CULT_NOT_GOOD_FOR_GUILD()
+{
+	[&CHK&Vous ne pouvez pas vous declarer d'un cult en contradiction avec l'allegeance de votre guilde.]
+}
+
+FAME_CIV_NOT_GOOD_FOR_GUILD()
+{
+	[&CHK&Vous ne pouvez pas vous declarer d'une civilisation en contradiction avec l'allegeance de votre guilde.]
+}

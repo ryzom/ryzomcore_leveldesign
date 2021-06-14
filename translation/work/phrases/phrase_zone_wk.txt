@@ -1,0 +1,55 @@
+﻿
+
+////////////////////////////////////////////////////////////////////////////////////
+// zone management messages
+////////////////////////////////////////////////////////////////////////////////////
+EGS_ANSWER_WHERE_NO_PLACE (place c, place r)
+{
+	egs_answer_where_no_place [&ZON&You are in the continent $c$ in the region $r$.]
+}
+
+EGS_LEAVE_PLACE (place p)
+{
+	egs_leave_place  [&ZON&You have left $p$.]
+}
+
+EGS_LEAVE_NEUTRAL_REGION(place region_name)
+{
+	[&ZON&Vous quittez $region_name.da$ $region_name$. Vous sortez d'une région neutre.]
+}
+
+EGS_LEAVE_FACTION_REGION(place region_name, faction f)
+{
+	[&ZON&Vous quittez $region_name.da$ $region_name$. Vous sortez d'une région dominée par la faction $f$.]
+}
+
+EGS_LEAVE_CONTINENT (place p)
+{
+	egs_leave_continent  [&ZON&You have left $p$.]
+}
+
+EGS_ENTER_PLACE (place p)
+{
+	egs_enter_place  [&ZON&You have entered $p$.]
+}
+
+EGS_ENTER_NEUTRAL_REGION(place region_name)
+{
+	[&ZON&Vous êtes dans $region_name.da$ $region_name$. Cette région est neutre.]
+}
+
+EGS_ENTER_FACTION_REGION(place region_name, faction f)
+{
+	[&ZON&Vous êtes dans $region_name.da$ $region_name$. Cette région est dominée par la faction $f$.]
+}
+
+EGS_ENTER_CONTINENT (place p)
+{
+	egs_enter_continent  [&ZON&You have entered $p$.]
+}
+
+// Location place
+START_LOCATION( place cont, place region )
+{
+    start_location [&ZON&You are in the region of $region$ on the continent of $cont$.]
+}
