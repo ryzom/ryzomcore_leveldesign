@@ -377,13 +377,13 @@ _CF9EF5874F0F7D3D	place_outpost_pr_10	Alleyways Bluff Stronghold	\d
 _946219632AAAB87C	place_outpost_pr_11	High Henge Research Center	\d
 _AAEC841D2EAA3907	place_outpost_pr_12	Lowhills Stronghold	\d
 _E9D34584471079BA	place_outpost_pr_13	Lowhills Research Center	\d
-_58F7A636B023ED3F	place_outpost_nexus_01	Outpost of the Northern Nexus ((Experimental and Unstable))	\d
-_18910A55823C680F	place_outpost_nexus_02	Karavan Observation Camp	\d
-_BF8095041987976A	place_outpost_nexus_03	Outpost of the Western Nexus ((Experimental and Unstable))	\d
-_263C57F8056069A2	place_outpost_nexus_04	Outpost of the Eastern Nexus ((Experimental and Unstable))	\d
-_3DF09127326D24EB	place_outpost_nexus_05	Kamist Observation Camp	\d
-_3EE16D0918E65F7D	place_outpost_nexus_06	Marauder Observation Camp	\d
-_7D07A2802AA970CF	place_outpost_nexus_07	Outpost of the Southern Nexus ((Experimental and unstable))	\d
+_6EBC62447B326E70	place_outpost_nexus_01	Outpost of the Northern Nexus ((Experimental and Unstable))	\d
+_D805E1AF811AD445	place_outpost_nexus_02	Karavan Observation Camp	\d
+_F3AA551DFF27BF1A	place_outpost_nexus_03	Outpost of the Western Nexus ((Experimental and Unstable))	\d
+_F3AA551DFFE77B1A	place_outpost_nexus_04	Outpost of the Eastern Nexus ((Experimental and Unstable))	\d
+_5BF7C24E85ACB00D	place_outpost_nexus_05	Kamist Observation Camp	\d
+_10F2529F3B00D545	place_outpost_nexus_06	Marauder Observation Camp	\d
+_6EBC624444329A70	place_outpost_nexus_07	Outpost of the Southern Nexus ((Experimental and unstable))	\d
 _9A62193E9DCCD68A	place_outpost_pr_01	West Saprun Research Center	\d
 _7DEC8005D64D3D17	place_outpost_pr_02	East Saprun Workshop	\d
 _BAFC701971E1D9CD	place_outpost_pr_03	Nexusgate Stronghold	\d
@@ -715,8 +715,8 @@ _13D97FAB68F4205D	Kami_Enclave	Kami Enclave	the
 _710627533E632FDF	place_hunting_grounds_gingo_lair	Ragus Lair	the
 _CC0CE3C65B7FA15A	mission_place_tryker_02	Prospection Zone	the
 _CC0CE3C65B8FA15A	mission_place_tryker_03	Prospection Zone	the
-_AADAC0B4A615B39C	mission_place_ranger_01
-_AADAC0B4A625B39C	mission_place_ranger_02
+_AADAC0B4A615B39C	mission_place_ranger_01		
+_AADAC0B4A625B39C	mission_place_ranger_02		
 _A35A89087EC54678	mission_place_ilot	experimentation terrain	the
 _C2EB1553A7B1C119	newbieland	Controlled Lands	the
 _FB2D817EC31E3E85	region_newbieland	Lands to Explore	the
@@ -742,7 +742,7 @@ _729FB81B15BB49D6	place_tcm_karavan_raid_ceremony_trigger	Karavan Experimentatio
 _2B9C66C11C4631ED	place_tcm_karavan_raid_ceremony_target	Karavan Experimentation Camp	the
 _0CF23F6CE22867E1	place_tcm_company_raid_ceremony_trigger	Kami Mission	the
 _72621C2FB0575EE1	place_tcm_company_raid_ceremony_target	Kami Mission	the
-_2454F9A3756BE489	place_tcm_shaman_tent	If you see this text, it's a bug: place_tcm_shaman_tent
+_2454F9A3756BE489	place_tcm_shaman_tent	If you see this text, it's a bug: place_tcm_shaman_tent	
 _7086751EB6C58F8F	place_tcm_rock_fall	Former Karavan Depot	the
 _D986F2FBCC9A5D45	place_tcm_karavan_outpost	Karavan Outpost	the
 _57B18A7D7106EFE2	kitiniere_cattle_room	Cattle Room	the
@@ -754,7 +754,6 @@ _44F20D1B6CB6931E	kitiniere_princes_room	Princes' Room	the
 _ED795F15E6D9C493	kitiniere_queen_room	Queen's Room	the
 _2959ECAE0CB888AF	kitiniere	Kitins' Lair	the
 _9701C07FF26F0E41	continent_kitiniere	Kitins' Lair	the
-_9701C07FF26F0E41	cont_kitiniere	Kitins' Lair	the
 _7556019ACD0C07D7	place_mission_fyros_01_yubo	Yubo Garden	\d
 _46BF61EE6B3E0F09	place_mission_fyros_02_huntingground_t1	Group of Bodocs	the
 _2DED2FD120F0B5AB	place_mission_fyros_02_huntingground_t1exit	Place pipo	\d
@@ -800,7 +799,6 @@ _E438DC9DA9C9AC6E	region_matis_island_3		\d
 _DFD4F60155444143	continent_matis_island	Old Lands	the
 _5FE21E8487AF99BC	boss_tryker_light_island_zone	Dante's Camp	\d
 _4DF006937CDFE456	place_matis_island_1	Almati Wood	\d
-_4DF006937CDFE456	cont_newbieland	Silan	
 _D31864B75FE9A0B2	place_matis_island_3		\d
 _FCB64A9225573F9D	boss_zorai_light_maincamp	Pei-Ruz's Secret Camp	\d
 _0A052D7DE3336174	boss_zorai_light_startcamp	Pei-Ruz's Camp	\d
@@ -822,11 +820,68 @@ _5193CA370C64AE7D	mission_ff60_emplacement_message	Messages Location	the
 _4C9B80A7A9B7946E	place_marauder_camp	Marauder Camp	the
 _3FEFB69CBBDF4DAB	place_lieudit_marauder_arena	Marauder Arena	the
 _A59A81E8140A6CA7	marauder_stable	Marauder Stables	the
-_29AC391EC68F71FC	continent_r2_forest	Leewind Lands	the
+_57463173B760CD4A	matis_island_episode2	<GEN>matis_island_episode2	
+_BDD20A48B95DB109	tp_matis_island_ep 2	<GEN>tp_matis_island_ep 2	
+_CF940F5F63EE5F2A	mission_visiter_salle_reine_1	<GEN>mission_visiter_salle_reine_1	
+_CF940F5F63FE5F2B	mission_visiter_salle_reine_2	<GEN>mission_visiter_salle_reine_2	
+_CF940F5F630E5F2C	mission_visiter_salle_reine_3	<GEN>mission_visiter_salle_reine_3	
+_A1E2868C0CA45969	mission_cartographie_1	<GEN>mission_cartographie_1	
+_A1E2868D0CA45D69	mission_cartographie_2	<GEN>mission_cartographie_2	
+_A1E2868E0CA46169	mission_cartographie_3	<GEN>mission_cartographie_3	
+_A1E2868F0CA46569	mission_cartographie_4	<GEN>mission_cartographie_4	
+_A1E286900CA46969	mission_cartographie_5	<GEN>mission_cartographie_5	
+_A1E286910CA46D69	mission_cartographie_6	<GEN>mission_cartographie_6	
+_A1E286920CA47169	mission_cartographie_7	<GEN>mission_cartographie_7	
+_63D26EBF92132E80	mission_source_magique	<GEN>mission_source_magique	
+_320BAEF35BCC66DC	mission_extrait_substance	<GEN>mission_extrait_substance	
+_77FA6FD61874DEBB	mission_substance_royale	<GEN>mission_substance_royale	
+_FBC64678F35C09ED	endroit_residu_oeuf	<GEN>endroit_residu_oeuf	
+_9F37556335100544	emplacement_materiau1	<GEN>emplacement_materiau1	
+_9F37556335200545	emplacement_materiau2	<GEN>emplacement_materiau2	
+_9F37556335300546	emplacement_materiau3	<GEN>emplacement_materiau3	
+_8E98F7790EB4E232	emplacement_2_materiau1	<GEN>emplacement_2_materiau1	
+_8EA8F7790EC4E232	emplacement_2_materiau2	<GEN>emplacement_2_materiau2	
+_8EB8F7790ED4E232	emplacement_2_materiau3	<GEN>emplacement_2_materiau3	
+_59A1B61B17A17B7A	episode2_temple_karavan_fyros	<GEN>episode2_temple_karavan_fyros	
+_3028D356E46523B9	episode2_temple_kami_fyros	<GEN>episode2_temple_kami_fyros	
+_0612CA4DB87C8909	mission_ff70_camp_wb	<GEN>mission_ff70_camp_wb	
+_19126F7C56BF1592	r_11_19_cure_1	<GEN>r_11_19_cure_1	
+_0C1502601B64BE5C	place_r_07_17	<GEN>place_r_07_17	
+_D231562217A1637C	episode2_temple_karavan_matis	<GEN>episode2_temple_karavan_matis	
+_3028D350E404DFC0	episode2_temple_kami_matis	<GEN>episode2_temple_kami_matis	
+_2578DEE8A11BBAB3	place_shooting_range_fail	<GEN>place_shooting_range_fail	
+_AE199493A1E77C92	ragusrespawn	<GEN>ragusrespawn	
+_6D7AE4932228447D	ruinerespawn	<GEN>ruinerespawn	
+_CEF0908C4C6DC044	place_arrival_from_matis_bagne	<GEN>place_arrival_from_matis_bagne	
+_0EF0C0904D3ED048	place_arrival_from_nexus_bagne	<GEN>place_arrival_from_nexus_bagne	
+_CF940F5F631E5F2D	mission_visiter_salle_reine_4	<GEN>mission_visiter_salle_reine_4	
+_F1AF7842BBCEB55F	endroit_rÃ©sidu_oeuf	<GEN>endroit_rÃ©sidu_oeuf	
+_504FD48D8B1ED457	place_arrival_from_bagne_nexus	<GEN>place_arrival_from_bagne_nexus	
+_889B526000FE6232	place_arrival_from_route_gouffre_nexus	<GEN>place_arrival_from_route_gouffre_nexus	
+_D54FE4988C80005B	place_arrival_from_terre_nexus	<GEN>place_arrival_from_terre_nexus	
+_04AC3A5E49991E59	place_arrival_from_fyros_route_gouffre	<GEN>place_arrival_from_fyros_route_gouffre	
+_06AC5264447A3645	place_arrival_from_nexus_route_gouffre	<GEN>place_arrival_from_nexus_route_gouffre	
+_090B025E44FA1E4F	place_arrival_from_zorai_route_gouffre	<GEN>place_arrival_from_zorai_route_gouffre	
+_B8B2D38F38CEBE48	place_arrival_from_tryker_route_gouffre	<GEN>place_arrival_from_tryker_route_gouffre	
+_DE03E98B973114C4	place_arrival_from_fyros_sources	<GEN>place_arrival_from_fyros_sources	
+_6003C19F155114B0	place_arrival_from_zorai_sources	<GEN>place_arrival_from_zorai_sources	
+_D48FB88A4E6FC868	place_arrival_from_zorai_terre	<GEN>place_arrival_from_zorai_terre	
+_D13008904EEFE05E	place_arrival_from_nexus_terre	<GEN>place_arrival_from_nexus_terre	
 _77FF328F086049B2	continent_r2_roots	Unexplored Prims	the
 _CD28268946CD000E	continent_r2_desert	Unexplored Desert	the
 _77FF3278876F21B2	continent_r2_lakes	Unexplored Lakes	the
+_29AC391EC68F71FC	continent_r2_forest	Leewind Lands	the
 _09D61686092E180E	continent_r2_jungle	Unexplored Jungle	the
+_2BBAB48365760082	fyros_island	<GEN>fyros_island	
+_779E4E70F55C19FB	tp_fyros_island_ep2	<GEN>tp_fyros_island_ep2	
+_E123929812F0357F	tryker_island_episode2	<GEN>tryker_island_episode2	
+_4DF5F16C7970784D	tp_tryker_island_ep 7	<GEN>tp_tryker_island_ep 7	
+_0BAA9C9039BB3F1B	mission_tf100_endroit_bataille	<GEN>mission_tf100_endroit_bataille	
+_69023A2A63BA8D7B	boss_tryker_light_start_spawn_place	<GEN>boss_tryker_light_start_spawn_place	
+_31D25834118A3BC3	episode2_temple_kami_tryker	<GEN>episode2_temple_kami_tryker	
+_909AFC8BF82E7871	episode2_temple_karavan_tryker	<GEN>episode2_temple_karavan_tryker	
+_3028AB3E61C44BCD	episode2_temple_kami_zorai	<GEN>episode2_temple_kami_zorai	
+_53E28E2F17004370	episode2_temple_karavan_zorai	<GEN>episode2_temple_karavan_zorai	
 _BAA17AACA3D42E1E	region_zorai_islands	Oflovak Road -- Jungle	the
 _C3D3C8B1555AC85E	uiR2_Jungle30	Great Dale	the
 _6AF70C1CB1909CCB	uiR2_Jungle47	Range of the Brave	the
@@ -1024,5 +1079,3 @@ _21DA6911ACFA50CE	uiR2_Primes24	Kitin Desolation	the
 _66F91C1DEB1D7CE3	uiR2_Primes07	Ruins of the Past	the
 _56003123638648DA	uiR2_Primes11	Valley of Spores	the
 _92D80067274BA75E	uiR2_Primes12	The Hive	the
-_	place_marauder_camp_restingwater	Marauder Camp	the
-_	marauder_camp_stable	Marauder Stables	the
