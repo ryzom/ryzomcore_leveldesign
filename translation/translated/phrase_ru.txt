@@ -182,6 +182,13 @@ ANSWER_NO ()
 
 }
 
+// HASH_VALUE 7EFC12A90EF88F85
+ANSWER_NO_DISCOUNT ()
+{
+		answer_no_discount	[No discount? Never mind, I will come back later.]
+
+}
+
 // HASH_VALUE AB3950B1A2380081
 ANSWER_OK ()
 {
@@ -287,7 +294,7 @@ BAG_FULL (int qty)
 
 }
 
-// HASH_VALUE 6CEDB3B27CF4AFA7
+// HASH_VALUE EDC0CB6DC5EA60A9
 BOSS_MAINLAND_CRAFTPART1A_DIAG1 ()
 {
 		boss_mainland_craftpart1a_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -300,6 +307,13 @@ BOSS_MAINLAND_CRAFTPART1A_DIAG2 ()
 		boss_mainland_craftpart1a_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4404EC37DC0
+BOSS_MAINLAND_CRAFTPART1A_DIAGLEVEL ()
+{
+		boss_mainland_craftpart1a_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -324,7 +338,7 @@ BOSS_MAINLAND_CRAFTPART1A_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B37CF4AFA7
+// HASH_VALUE EDC0CB6EC5EA60A9
 BOSS_MAINLAND_CRAFTPART1B_DIAG1 ()
 {
 		boss_mainland_craftpart1b_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -337,6 +351,13 @@ BOSS_MAINLAND_CRAFTPART1B_DIAG2 ()
 		boss_mainland_craftpart1b_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4414EC37DC0
+BOSS_MAINLAND_CRAFTPART1B_DIAGLEVEL ()
+{
+		boss_mainland_craftpart1b_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -361,7 +382,7 @@ BOSS_MAINLAND_CRAFTPART1B_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B47CF4AFA7
+// HASH_VALUE EDC0CB6FC5EA60A9
 BOSS_MAINLAND_CRAFTPART1C_DIAG1 ()
 {
 		boss_mainland_craftpart1c_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -374,6 +395,13 @@ BOSS_MAINLAND_CRAFTPART1C_DIAG2 ()
 		boss_mainland_craftpart1c_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4424EC37DC0
+BOSS_MAINLAND_CRAFTPART1C_DIAGLEVEL ()
+{
+		boss_mainland_craftpart1c_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -398,7 +426,7 @@ BOSS_MAINLAND_CRAFTPART1C_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B57CF4AFA7
+// HASH_VALUE EDC0CB70C5EA60A9
 BOSS_MAINLAND_CRAFTPART1D_DIAG1 ()
 {
 		boss_mainland_craftpart1d_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -411,6 +439,13 @@ BOSS_MAINLAND_CRAFTPART1D_DIAG2 ()
 		boss_mainland_craftpart1d_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4434EC37DC0
+BOSS_MAINLAND_CRAFTPART1D_DIAGLEVEL ()
+{
+		boss_mainland_craftpart1d_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -435,7 +470,51 @@ BOSS_MAINLAND_CRAFTPART1D_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B2BCF4AFA7
+// HASH_VALUE EDC0CB71C5EA60A9
+BOSS_MAINLAND_CRAFTPART1E_DIAG1 ()
+{
+		boss_mainland_craftpart1e_diag1	[If you pay me and give me all pieces I'll go to work right away. The task is complex and worth 15M dappers. No refund once I've started]
+
+}
+
+// HASH_VALUE 7C494A1BB69A1FDD
+BOSS_MAINLAND_CRAFTPART1E_DIAG2 ()
+{
+		boss_mainland_craftpart1e_diag2	[Laissez moi voir... J'ai déjà vu un exemplaire semblable il y a peu de temps.\n
+			C'est un plan d'armure du Maraudeur ! Rare... D'une grande valeur...\n
+			 Le voici restauré ! Je peux maintenant vous apprendre à fabriquer cette armure.]
+
+}
+
+// HASH_VALUE 6B04C4444EC37DC0
+BOSS_MAINLAND_CRAFTPART1E_DIAGLEVEL ()
+{
+		boss_mainland_craftpart1e_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
+
+}
+
+// HASH_VALUE C42AA51D05819410
+BOSS_MAINLAND_CRAFTPART1E_MISSION_INTRO ()
+{
+		boss_mainland_craftpart1e_mission_intro	[Restaurer le plan des bottes]
+
+}
+
+// HASH_VALUE 060288778F2D8048
+BOSS_MAINLAND_CRAFTPART1E_P_MIS_DESC (bot giver)
+{
+		boss_mainland_craftpart1e_p_mis_desc	[Effectuez le paiement]
+
+}
+
+// HASH_VALUE EF0A7421355B07F5
+BOSS_MAINLAND_CRAFTPART1E_P_MIS_TITLE (bot giver)
+{
+		boss_mainland_craftpart1e_p_mis_title	[Restauration]
+
+}
+
+// HASH_VALUE EDC0CB6D05EA60A9
 BOSS_MAINLAND_CRAFTPART2A_DIAG1 ()
 {
 		boss_mainland_craftpart2a_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -448,6 +527,13 @@ BOSS_MAINLAND_CRAFTPART2A_DIAG2 ()
 		boss_mainland_craftpart2a_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4408EC37DC0
+BOSS_MAINLAND_CRAFTPART2A_DIAGLEVEL ()
+{
+		boss_mainland_craftpart2a_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -472,7 +558,7 @@ BOSS_MAINLAND_CRAFTPART2A_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B3BCF4AFA7
+// HASH_VALUE EDC0CB6E05EA60A9
 BOSS_MAINLAND_CRAFTPART2B_DIAG1 ()
 {
 		boss_mainland_craftpart2b_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -485,6 +571,13 @@ BOSS_MAINLAND_CRAFTPART2B_DIAG2 ()
 		boss_mainland_craftpart2b_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4418EC37DC0
+BOSS_MAINLAND_CRAFTPART2B_DIAGLEVEL ()
+{
+		boss_mainland_craftpart2b_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -509,7 +602,7 @@ BOSS_MAINLAND_CRAFTPART2B_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B4BCF4AFA7
+// HASH_VALUE EDC0CB6F05EA60A9
 BOSS_MAINLAND_CRAFTPART2C_DIAG1 ()
 {
 		boss_mainland_craftpart2c_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -522,6 +615,13 @@ BOSS_MAINLAND_CRAFTPART2C_DIAG2 ()
 		boss_mainland_craftpart2c_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4428EC37DC0
+BOSS_MAINLAND_CRAFTPART2C_DIAGLEVEL ()
+{
+		boss_mainland_craftpart2c_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -546,7 +646,7 @@ BOSS_MAINLAND_CRAFTPART2C_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B5BCF4AFA7
+// HASH_VALUE EDC0CB7005EA60A9
 BOSS_MAINLAND_CRAFTPART2D_DIAG1 ()
 {
 		boss_mainland_craftpart2d_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -559,6 +659,13 @@ BOSS_MAINLAND_CRAFTPART2D_DIAG2 ()
 		boss_mainland_craftpart2d_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4438EC37DC0
+BOSS_MAINLAND_CRAFTPART2D_DIAGLEVEL ()
+{
+		boss_mainland_craftpart2d_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -583,7 +690,51 @@ BOSS_MAINLAND_CRAFTPART2D_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B2FCF4AFA7
+// HASH_VALUE EDC0CB7105EA60A9
+BOSS_MAINLAND_CRAFTPART2E_DIAG1 ()
+{
+		boss_mainland_craftpart2e_diag1	[If you pay me and give me all pieces I'll go to work right away. The task is complex and worth 15M dappers. No refund once I've started]
+
+}
+
+// HASH_VALUE 7C494A1BF69A1FDD
+BOSS_MAINLAND_CRAFTPART2E_DIAG2 ()
+{
+		boss_mainland_craftpart2e_diag2	[Laissez moi voir... J'ai déjà vu un exemplaire semblable il y a peu de temps.\n
+			C'est un plan d'armure du Maraudeur ! Rare... D'une grande valeur...\n
+			 Le voici restauré ! Je peux maintenant vous apprendre à fabriquer cette armure.]
+
+}
+
+// HASH_VALUE 6B04C4448EC37DC0
+BOSS_MAINLAND_CRAFTPART2E_DIAGLEVEL ()
+{
+		boss_mainland_craftpart2e_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
+
+}
+
+// HASH_VALUE C4F3DD1DC3A1A810
+BOSS_MAINLAND_CRAFTPART2E_MISSION_INTRO ()
+{
+		boss_mainland_craftpart2e_mission_intro	[Restaurer le plan des gants]
+
+}
+
+// HASH_VALUE 060288788F2D8048
+BOSS_MAINLAND_CRAFTPART2E_P_MIS_DESC (bot giver)
+{
+		boss_mainland_craftpart2e_p_mis_desc	[Effectuez le paiement]
+
+}
+
+// HASH_VALUE EF0A7422355B07F5
+BOSS_MAINLAND_CRAFTPART2E_P_MIS_TITLE (bot giver)
+{
+		boss_mainland_craftpart2e_p_mis_title	[Restauration]
+
+}
+
+// HASH_VALUE EDC0CB6D45EA60A9
 BOSS_MAINLAND_CRAFTPART3A_DIAG1 ()
 {
 		boss_mainland_craftpart3a_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -596,6 +747,13 @@ BOSS_MAINLAND_CRAFTPART3A_DIAG2 ()
 		boss_mainland_craftpart3a_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C440CEC37DC0
+BOSS_MAINLAND_CRAFTPART3A_DIAGLEVEL ()
+{
+		boss_mainland_craftpart3a_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -620,7 +778,7 @@ BOSS_MAINLAND_CRAFTPART3A_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B3FCF4AFA7
+// HASH_VALUE EDC0CB6E45EA60A9
 BOSS_MAINLAND_CRAFTPART3B_DIAG1 ()
 {
 		boss_mainland_craftpart3b_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -633,6 +791,13 @@ BOSS_MAINLAND_CRAFTPART3B_DIAG2 ()
 		boss_mainland_craftpart3b_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C441CEC37DC0
+BOSS_MAINLAND_CRAFTPART3B_DIAGLEVEL ()
+{
+		boss_mainland_craftpart3b_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -657,7 +822,7 @@ BOSS_MAINLAND_CRAFTPART3B_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B4FCF4AFA7
+// HASH_VALUE EDC0CB6F45EA60A9
 BOSS_MAINLAND_CRAFTPART3C_DIAG1 ()
 {
 		boss_mainland_craftpart3c_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -670,6 +835,13 @@ BOSS_MAINLAND_CRAFTPART3C_DIAG2 ()
 		boss_mainland_craftpart3c_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C442CEC37DC0
+BOSS_MAINLAND_CRAFTPART3C_DIAGLEVEL ()
+{
+		boss_mainland_craftpart3c_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -694,7 +866,7 @@ BOSS_MAINLAND_CRAFTPART3C_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B5FCF4AFA7
+// HASH_VALUE EDC0CB7045EA60A9
 BOSS_MAINLAND_CRAFTPART3D_DIAG1 ()
 {
 		boss_mainland_craftpart3d_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -707,6 +879,13 @@ BOSS_MAINLAND_CRAFTPART3D_DIAG2 ()
 		boss_mainland_craftpart3d_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C443CEC37DC0
+BOSS_MAINLAND_CRAFTPART3D_DIAGLEVEL ()
+{
+		boss_mainland_craftpart3d_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -731,7 +910,51 @@ BOSS_MAINLAND_CRAFTPART3D_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B23DF4AFA7
+// HASH_VALUE EDC0CB7145EA60A9
+BOSS_MAINLAND_CRAFTPART3E_DIAG1 ()
+{
+		boss_mainland_craftpart3e_diag1	[If you pay me and give me all pieces I'll go to work right away. The task is complex and worth 15M dappers. No refund once I've started]
+
+}
+
+// HASH_VALUE 7C494A1B369A1FDD
+BOSS_MAINLAND_CRAFTPART3E_DIAG2 ()
+{
+		boss_mainland_craftpart3e_diag2	[Laissez moi voir... J'ai déjà vu un exemplaire semblable il y a peu de temps.\n
+			C'est un plan d'armure du Maraudeur ! Rare... D'une grande valeur...\n
+			 Le voici restauré ! Je peux maintenant vous apprendre à fabriquer cette armure.]
+
+}
+
+// HASH_VALUE 6B04C444CEC37DC0
+BOSS_MAINLAND_CRAFTPART3E_DIAGLEVEL ()
+{
+		boss_mainland_craftpart3e_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
+
+}
+
+// HASH_VALUE F0F4A51EC4C29053
+BOSS_MAINLAND_CRAFTPART3E_MISSION_INTRO ()
+{
+		boss_mainland_craftpart3e_mission_intro	[Restaurer le plan du casque]
+
+}
+
+// HASH_VALUE 060288798F2D8048
+BOSS_MAINLAND_CRAFTPART3E_P_MIS_DESC (bot giver)
+{
+		boss_mainland_craftpart3e_p_mis_desc	[Effectuez le paiement]
+
+}
+
+// HASH_VALUE EF0A7423355B07F5
+BOSS_MAINLAND_CRAFTPART3E_P_MIS_TITLE (bot giver)
+{
+		boss_mainland_craftpart3e_p_mis_title	[Restauration]
+
+}
+
+// HASH_VALUE EDC0CB6D86EA60A9
 BOSS_MAINLAND_CRAFTPART4A_DIAG1 ()
 {
 		boss_mainland_craftpart4a_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -744,6 +967,13 @@ BOSS_MAINLAND_CRAFTPART4A_DIAG2 ()
 		boss_mainland_craftpart4a_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4400FC37DC0
+BOSS_MAINLAND_CRAFTPART4A_DIAGLEVEL ()
+{
+		boss_mainland_craftpart4a_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -768,7 +998,7 @@ BOSS_MAINLAND_CRAFTPART4A_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B33DF4AFA7
+// HASH_VALUE EDC0CB6E86EA60A9
 BOSS_MAINLAND_CRAFTPART4B_DIAG1 ()
 {
 		boss_mainland_craftpart4b_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -781,6 +1011,13 @@ BOSS_MAINLAND_CRAFTPART4B_DIAG2 ()
 		boss_mainland_craftpart4b_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4410FC37DC0
+BOSS_MAINLAND_CRAFTPART4B_DIAGLEVEL ()
+{
+		boss_mainland_craftpart4b_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -805,7 +1042,7 @@ BOSS_MAINLAND_CRAFTPART4B_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B43DF4AFA7
+// HASH_VALUE EDC0CB6F86EA60A9
 BOSS_MAINLAND_CRAFTPART4C_DIAG1 ()
 {
 		boss_mainland_craftpart4c_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -818,6 +1055,13 @@ BOSS_MAINLAND_CRAFTPART4C_DIAG2 ()
 		boss_mainland_craftpart4c_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4420FC37DC0
+BOSS_MAINLAND_CRAFTPART4C_DIAGLEVEL ()
+{
+		boss_mainland_craftpart4c_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -842,7 +1086,7 @@ BOSS_MAINLAND_CRAFTPART4C_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B53DF4AFA7
+// HASH_VALUE EDC0CB7086EA60A9
 BOSS_MAINLAND_CRAFTPART4D_DIAG1 ()
 {
 		boss_mainland_craftpart4d_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -855,6 +1099,13 @@ BOSS_MAINLAND_CRAFTPART4D_DIAG2 ()
 		boss_mainland_craftpart4d_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4430FC37DC0
+BOSS_MAINLAND_CRAFTPART4D_DIAGLEVEL ()
+{
+		boss_mainland_craftpart4d_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -879,7 +1130,51 @@ BOSS_MAINLAND_CRAFTPART4D_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B27DF4AFA7
+// HASH_VALUE EDC0CB7186EA60A9
+BOSS_MAINLAND_CRAFTPART4E_DIAG1 ()
+{
+		boss_mainland_craftpart4e_diag1	[If you pay me and give me all pieces I'll go to work right away. The task is complex and worth 15M dappers. No refund once I've started]
+
+}
+
+// HASH_VALUE 7C494A1B779A1FDD
+BOSS_MAINLAND_CRAFTPART4E_DIAG2 ()
+{
+		boss_mainland_craftpart4e_diag2	[Laissez moi voir... J'ai déjà vu un exemplaire semblable il y a peu de temps.\n
+			C'est un plan d'armure du Maraudeur ! Rare... D'une grande valeur...\n
+			 Le voici restauré ! Je peux maintenant vous apprendre à fabriquer cette armure.]
+
+}
+
+// HASH_VALUE 6B04C4440FC37DC0
+BOSS_MAINLAND_CRAFTPART4E_DIAGLEVEL ()
+{
+		boss_mainland_craftpart4e_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
+
+}
+
+// HASH_VALUE 8BEAC10AC6719060
+BOSS_MAINLAND_CRAFTPART4E_MISSION_INTRO ()
+{
+		boss_mainland_craftpart4e_mission_intro	[Restaurer le plan du pantalon]
+
+}
+
+// HASH_VALUE 0602887A8F2D8048
+BOSS_MAINLAND_CRAFTPART4E_P_MIS_DESC (bot giver)
+{
+		boss_mainland_craftpart4e_p_mis_desc	[Effectuez le paiement]
+
+}
+
+// HASH_VALUE EF0A7424355B07F5
+BOSS_MAINLAND_CRAFTPART4E_P_MIS_TITLE (bot giver)
+{
+		boss_mainland_craftpart4e_p_mis_title	[Restauration]
+
+}
+
+// HASH_VALUE EDC0CB6DC6EA60A9
 BOSS_MAINLAND_CRAFTPART5A_DIAG1 ()
 {
 		boss_mainland_craftpart5a_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -892,6 +1187,13 @@ BOSS_MAINLAND_CRAFTPART5A_DIAG2 ()
 		boss_mainland_craftpart5a_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4404FC37DC0
+BOSS_MAINLAND_CRAFTPART5A_DIAGLEVEL ()
+{
+		boss_mainland_craftpart5a_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -916,7 +1218,7 @@ BOSS_MAINLAND_CRAFTPART5A_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B37DF4AFA7
+// HASH_VALUE EDC0CB6EC6EA60A9
 BOSS_MAINLAND_CRAFTPART5B_DIAG1 ()
 {
 		boss_mainland_craftpart5b_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -929,6 +1231,13 @@ BOSS_MAINLAND_CRAFTPART5B_DIAG2 ()
 		boss_mainland_craftpart5b_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4414FC37DC0
+BOSS_MAINLAND_CRAFTPART5B_DIAGLEVEL ()
+{
+		boss_mainland_craftpart5b_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -953,7 +1262,7 @@ BOSS_MAINLAND_CRAFTPART5B_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B47DF4AFA7
+// HASH_VALUE EDC0CB6FC6EA60A9
 BOSS_MAINLAND_CRAFTPART5C_DIAG1 ()
 {
 		boss_mainland_craftpart5c_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -966,6 +1275,13 @@ BOSS_MAINLAND_CRAFTPART5C_DIAG2 ()
 		boss_mainland_craftpart5c_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4424FC37DC0
+BOSS_MAINLAND_CRAFTPART5C_DIAGLEVEL ()
+{
+		boss_mainland_craftpart5c_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -990,7 +1306,7 @@ BOSS_MAINLAND_CRAFTPART5C_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B57DF4AFA7
+// HASH_VALUE EDC0CB70C6EA60A9
 BOSS_MAINLAND_CRAFTPART5D_DIAG1 ()
 {
 		boss_mainland_craftpart5d_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -1003,6 +1319,13 @@ BOSS_MAINLAND_CRAFTPART5D_DIAG2 ()
 		boss_mainland_craftpart5d_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4434FC37DC0
+BOSS_MAINLAND_CRAFTPART5D_DIAGLEVEL ()
+{
+		boss_mainland_craftpart5d_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -1027,7 +1350,51 @@ BOSS_MAINLAND_CRAFTPART5D_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B2BDF4AFA7
+// HASH_VALUE EDC0CB71C6EA60A9
+BOSS_MAINLAND_CRAFTPART5E_DIAG1 ()
+{
+		boss_mainland_craftpart5e_diag1	[If you pay me and give me all pieces I'll go to work right away. The task is complex and worth 15M dappers. No refund once I've started]
+
+}
+
+// HASH_VALUE 7C494A1BB79A1FDD
+BOSS_MAINLAND_CRAFTPART5E_DIAG2 ()
+{
+		boss_mainland_craftpart5e_diag2	[Laissez moi voir... J'ai déjà vu un exemplaire semblable il y a peu de temps.\n
+			C'est un plan d'armure du Maraudeur ! Rare... D'une grande valeur...\n
+			 Le voici restauré ! Je peux maintenant vous apprendre à fabriquer cette armure.]
+
+}
+
+// HASH_VALUE 6B04C4444FC37DC0
+BOSS_MAINLAND_CRAFTPART5E_DIAGLEVEL ()
+{
+		boss_mainland_craftpart5e_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
+
+}
+
+// HASH_VALUE A049B10C84A1C010
+BOSS_MAINLAND_CRAFTPART5E_MISSION_INTRO ()
+{
+		boss_mainland_craftpart5e_mission_intro	[Restaurer le plan des manches]
+
+}
+
+// HASH_VALUE 0602887B8F2D8048
+BOSS_MAINLAND_CRAFTPART5E_P_MIS_DESC (bot giver)
+{
+		boss_mainland_craftpart5e_p_mis_desc	[Effectuez le paiement]
+
+}
+
+// HASH_VALUE EF0A7425355B07F5
+BOSS_MAINLAND_CRAFTPART5E_P_MIS_TITLE (bot giver)
+{
+		boss_mainland_craftpart5e_p_mis_title	[Restauration]
+
+}
+
+// HASH_VALUE EDC0CB6D06EA60A9
 BOSS_MAINLAND_CRAFTPART6A_DIAG1 ()
 {
 		boss_mainland_craftpart6a_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -1040,6 +1407,13 @@ BOSS_MAINLAND_CRAFTPART6A_DIAG2 ()
 		boss_mainland_craftpart6a_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4408FC37DC0
+BOSS_MAINLAND_CRAFTPART6A_DIAGLEVEL ()
+{
+		boss_mainland_craftpart6a_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -1064,7 +1438,7 @@ BOSS_MAINLAND_CRAFTPART6A_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B3BDF4AFA7
+// HASH_VALUE EDC0CB6E06EA60A9
 BOSS_MAINLAND_CRAFTPART6B_DIAG1 ()
 {
 		boss_mainland_craftpart6b_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -1077,6 +1451,13 @@ BOSS_MAINLAND_CRAFTPART6B_DIAG2 ()
 		boss_mainland_craftpart6b_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4418FC37DC0
+BOSS_MAINLAND_CRAFTPART6B_DIAGLEVEL ()
+{
+		boss_mainland_craftpart6b_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -1101,7 +1482,7 @@ BOSS_MAINLAND_CRAFTPART6B_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B4BDF4AFA7
+// HASH_VALUE EDC0CB6F06EA60A9
 BOSS_MAINLAND_CRAFTPART6C_DIAG1 ()
 {
 		boss_mainland_craftpart6c_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -1114,6 +1495,13 @@ BOSS_MAINLAND_CRAFTPART6C_DIAG2 ()
 		boss_mainland_craftpart6c_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4428FC37DC0
+BOSS_MAINLAND_CRAFTPART6C_DIAGLEVEL ()
+{
+		boss_mainland_craftpart6c_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -1138,7 +1526,7 @@ BOSS_MAINLAND_CRAFTPART6C_P_MIS_TITLE (bot giver)
 
 }
 
-// HASH_VALUE 6CEDB3B5BDF4AFA7
+// HASH_VALUE EDC0CB7006EA60A9
 BOSS_MAINLAND_CRAFTPART6D_DIAG1 ()
 {
 		boss_mainland_craftpart6d_diag1	[Если вы предоставите мне все необходимое и оплатите мои услуги, я готов немедленно приступить к работе.]
@@ -1151,6 +1539,13 @@ BOSS_MAINLAND_CRAFTPART6D_DIAG2 ()
 		boss_mainland_craftpart6d_diag2	[Посмотрим... Я и раньше встречал подобное, но это было слишком давно...\n
 			Это ремесленные чертежи Мародеров... Редкие... и чрезвычайно ценные!\n
 			Теперь чертежи восстановлены! Хотите, я научу вас работать по ним?]
+
+}
+
+// HASH_VALUE 6B04C4438FC37DC0
+BOSS_MAINLAND_CRAFTPART6D_DIAGLEVEL ()
+{
+		boss_mainland_craftpart6d_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
 
 }
 
@@ -1172,6 +1567,50 @@ BOSS_MAINLAND_CRAFTPART6D_P_MIS_DESC (bot giver)
 BOSS_MAINLAND_CRAFTPART6D_P_MIS_TITLE (bot giver)
 {
 		boss_mainland_craftpart6d_p_mis_title	[Восстановление]
+
+}
+
+// HASH_VALUE EDC0CB7106EA60A9
+BOSS_MAINLAND_CRAFTPART6E_DIAG1 ()
+{
+		boss_mainland_craftpart6e_diag1	[If you pay me and give me all pieces I'll go to work right away. The task is complex and worth 15M dappers. No refund once I've started]
+
+}
+
+// HASH_VALUE 7C494A1BF79A1FDD
+BOSS_MAINLAND_CRAFTPART6E_DIAG2 ()
+{
+		boss_mainland_craftpart6e_diag2	[Laissez moi voir... J'ai déjà vu un exemplaire semblable il y a peu de temps.\n
+			C'est un plan d'armure du Maraudeur ! Rare... D'une grande valeur...\n
+			 Le voici restauré ! Je peux maintenant vous apprendre à fabriquer cette armure.]
+
+}
+
+// HASH_VALUE 6B04C4448FC37DC0
+BOSS_MAINLAND_CRAFTPART6E_DIAGLEVEL ()
+{
+		boss_mainland_craftpart6e_diaglevel	[You don't look experienced enough to understand what I'm trying to teach you. Come back when you have more experience in crafting armor!]
+
+}
+
+// HASH_VALUE 493ADD0EC68D905C
+BOSS_MAINLAND_CRAFTPART6E_MISSION_INTRO ()
+{
+		boss_mainland_craftpart6e_mission_intro	[Restaurer le plan de la veste]
+
+}
+
+// HASH_VALUE 0602887C8F2D8048
+BOSS_MAINLAND_CRAFTPART6E_P_MIS_DESC (bot giver)
+{
+		boss_mainland_craftpart6e_p_mis_desc	[Effectuez le paiement]
+
+}
+
+// HASH_VALUE EF0A7426355B07F5
+BOSS_MAINLAND_CRAFTPART6E_P_MIS_TITLE (bot giver)
+{
+		boss_mainland_craftpart6e_p_mis_title	[Restauration]
 
 }
 
@@ -1933,13 +2372,6 @@ CASINO_WIN_R4 ()
 CASINO_WIN_R5 ()
 {
 		casino_win_r5	[&AMB&Вы выиграли главный приз!]
-
-}
-
-// HASH_VALUE BDA110CA8613A3A0
-CERTIFS_RPJOB_CERTIFS_TITLE (bot giver, item certifs)
-{
-		certifs_rpjob_certifs_title	[Использовать ваши $certifs.p$]
 
 }
 
@@ -6339,6 +6771,13 @@ CONVERSION_KARAVAN_FYROS_RESUME (bot givervar)
 CRAFT_NEED_CRAFTING_TOOL ()
 {
 			[&CHK&Для изготовления этого предмета требуется соответствующий инструмент.]
+
+}
+
+// HASH_VALUE F5B43331E6ACE67F
+CRAFT_NEED_RECOMMENDED_CRAFTING_TOOL ()
+{
+		craft_need_recommended_crafting_tool	[&CHK&Your quality crafting tool is too low to craft this item.]
 
 }
 
@@ -12298,6 +12737,13 @@ EGS_CANT_BUY_PACKER_IS_TRIAL_PLAYER ()
 EGS_CANT_CONSTRUCT_ANYTHING ()
 {
 			[&CHK&Здесь больше нельзя ничего строить.]
+
+}
+
+// HASH_VALUE 93B34BCF07C4FF13
+EGS_CANT_EQUIP_ITEM_IS_TRIAL_PLAYER ()
+{
+			[&CHK&You cannot equip this item because you are in free trial. You must upgrade your account to be able to do that.]
 
 }
 
@@ -27487,6 +27933,34 @@ FACTION_AGNOS ()
 
 }
 
+// HASH_VALUE 5B26C071D86687AE
+FACTION_DE ()
+{
+			[Deutsch Uni]
+
+}
+
+// HASH_VALUE 9DA4C47498F58FAD
+FACTION_EN ()
+{
+			[English Uni]
+
+}
+
+// HASH_VALUE D9BEBC79FB85A33E
+FACTION_ES ()
+{
+			[Español Uni]
+
+}
+
+// HASH_VALUE 87D8C0D71A58D0C8
+FACTION_FR ()
+{
+			[Uni Français]
+
+}
+
 // HASH_VALUE EBB7DC6F5729C05F
 FACTION_FYROS ()
 {
@@ -27581,6 +28055,27 @@ FACTION_POINT_LOSE (faction faction, int fp)
 		faction_points_lose_1	[&XP&Вы потеряли 1 очко лояльности $faction.memberdat$.]
 
 		faction_points_lose_0	[&XP&Вы не потеряли очков лояльности.]
+
+}
+
+// HASH_VALUE A64770772586B48A
+FACTION_RANGER ()
+{
+			[Ranger]
+
+}
+
+// HASH_VALUE A9F73481E1D70884
+FACTION_RF ()
+{
+			[Forge]
+
+}
+
+// HASH_VALUE C94F0F2605804A3C
+FACTION_RU ()
+{
+			[русский Uni]
 
 }
 
@@ -29090,6 +29585,13 @@ FORAGE_SOURCE_OBSTACLE ()
 FORAGE_SOURCE_SITE_DEPLETED ()
 {
 		forage_source_site_depleted	[&ITMF&Месторождение ресурсов преждевременно уничтожено, все месторождения поблизости истощились!]
+
+}
+
+// HASH_VALUE EC777BA0970DF7B6
+FORAGE_TOOL_QUALITY_TOO_LOW ()
+{
+		forage_tool_quality_too_low	[&CHK&Your quality pick is too low to be used on this forage source.]
 
 }
 
@@ -32369,6 +32871,209 @@ GUARD_NEWB_ZORAI_KILL_2 ()
 
 }
 
+// HASH_VALUE 8ADCC112AA16D3FA
+GUILDCIVCULT_MISSION_1_GBE_YES_ASW ()
+{
+		guildcivcult_mission_1_gbe_yes_asw	[Yes]
+
+}
+
+// HASH_VALUE 5305D43F31FA38D8
+GUILDCIVCULT_MISSION_1_P_BE_FYROS ()
+{
+		guildcivcult_mission_1_p_be_fyros	[Are you sure you want your guild to be a Fyros guild?]
+
+}
+
+// HASH_VALUE B18FCB8EFD1967DA
+GUILDCIVCULT_MISSION_1_P_BE_KAMI ()
+{
+		guildcivcult_mission_1_p_be_kami	[Are you sure you want your guild to be a Kami guild?]
+
+}
+
+// HASH_VALUE 531F86C2D8BB0583
+GUILDCIVCULT_MISSION_1_P_BE_KARAVAN ()
+{
+		guildcivcult_mission_1_p_be_karavan	[Are you sure you want your guild to be a Karavan guild?]
+
+}
+
+// HASH_VALUE 4D75D43FB01AC0E1
+GUILDCIVCULT_MISSION_1_P_BE_MATIS ()
+{
+		guildcivcult_mission_1_p_be_matis	[Are you sure you want your guild to be a Matis guild?]
+
+}
+
+// HASH_VALUE 6D5DF325F153D397
+GUILDCIVCULT_MISSION_1_P_BE_NEUTRAL_CIV ()
+{
+		guildcivcult_mission_1_p_be_neutral_civ	[Are you sure you want your guild to have no citizenship?]
+
+}
+
+// HASH_VALUE 66EF2BD69E159140
+GUILDCIVCULT_MISSION_1_P_BE_NEUTRAL_CULT ()
+{
+		guildcivcult_mission_1_p_be_neutral_cult	[Are you sure you want your guild to have no cult?]
+
+}
+
+// HASH_VALUE ABC6495C8B115038
+GUILDCIVCULT_MISSION_1_P_BE_TRYKER ()
+{
+		guildcivcult_mission_1_p_be_tryker	[Are you sure you want your guild to be a Tryker guild?]
+
+}
+
+// HASH_VALUE D046D435AEC1D8EC
+GUILDCIVCULT_MISSION_1_P_BE_ZORAI ()
+{
+		guildcivcult_mission_1_p_be_zorai	[Are you sure you want your guild to be a Zoraï guild?]
+
+}
+
+// HASH_VALUE 2797965C179FC53C
+GUILDCIVCULT_MISSION_1_P_CHOOSE_CIV ()
+{
+		guildcivcult_mission_1_p_choose_civ	[If you want to change your guild's cult or citizenship, you've come to the right place.]
+
+}
+
+// HASH_VALUE 6155CBE1E335D16E
+GUILDCIVCULT_MISSION_1_P_CHOOSE_CIV_FYROS_ASW ()
+{
+		guildcivcult_mission_1_p_choose_civ_fyros_asw	[Fyros]
+
+}
+
+// HASH_VALUE 6155CBDBE3D48D75
+GUILDCIVCULT_MISSION_1_P_CHOOSE_CIV_MATIS_ASW ()
+{
+		guildcivcult_mission_1_p_choose_civ_matis_asw	[Matis]
+
+}
+
+// HASH_VALUE 798AF7DDE2537978
+GUILDCIVCULT_MISSION_1_P_CHOOSE_CIV_TRYKER_ASW ()
+{
+		guildcivcult_mission_1_p_choose_civ_tryker_asw	[Tryker]
+
+}
+
+// HASH_VALUE 6155BDC96094F982
+GUILDCIVCULT_MISSION_1_P_CHOOSE_CIV_ZORAI_ASW ()
+{
+		guildcivcult_mission_1_p_choose_civ_zorai_asw	[Zoraï]
+
+}
+
+// HASH_VALUE E3C4DED422A3AD67
+GUILDCIVCULT_MISSION_1_P_CHOOSE_FAME_KAMI_ASW ()
+{
+		guildcivcult_mission_1_p_choose_fame_kami_asw	[Kami]
+
+}
+
+// HASH_VALUE FAEBBFAEE5AA8AC5
+GUILDCIVCULT_MISSION_1_P_CHOOSE_FAME_KARAVAN_ASW ()
+{
+		guildcivcult_mission_1_p_choose_fame_karavan_asw	[Karavan]
+
+}
+
+// HASH_VALUE DC737DA4C8ED8F2A
+GUILDCIVCULT_MISSION_1_P_CHOOSE_NEUTRAL_CIV_ASW ()
+{
+		guildcivcult_mission_1_p_choose_neutral_civ_asw	[Neutral citizenship]
+
+}
+
+// HASH_VALUE 2212B01E283A62D4
+GUILDCIVCULT_MISSION_1_P_CHOOSE_NEUTRAL_CULT_ASW ()
+{
+		guildcivcult_mission_1_p_choose_neutral_cult_asw	[Neutral cult]
+
+}
+
+// HASH_VALUE 42B4F90FB30A5079
+GUILDCIVCULT_MISSION_1_P_END_FYROS ()
+{
+		guildcivcult_mission_1_p_end_fyros	[Alright, $self$, your guild is now a Fyros guild.]
+
+}
+
+// HASH_VALUE 3916F0DB68D694BA
+GUILDCIVCULT_MISSION_1_P_END_KAMI ()
+{
+		guildcivcult_mission_1_p_end_kami	[Alright, $self$, your guild is now a Kami guild.]
+
+}
+
+// HASH_VALUE 8BBC0EEB3CCBD1A7
+GUILDCIVCULT_MISSION_1_P_END_KARAVAN ()
+{
+		guildcivcult_mission_1_p_end_karavan	[Alright, $self$, your guild is now a Karavan guild.]
+
+}
+
+// HASH_VALUE 425401F1F6896C79
+GUILDCIVCULT_MISSION_1_P_END_MATIS ()
+{
+		guildcivcult_mission_1_p_end_matis	[Alright, $self$, your guild is now a Matis guild.]
+
+}
+
+// HASH_VALUE 33168FFC134A3C8B
+GUILDCIVCULT_MISSION_1_P_END_NEUTRAL_CIV ()
+{
+		guildcivcult_mission_1_p_end_neutral_civ	[Alright, $self$, your guild is now of no citizenship.]
+
+}
+
+// HASH_VALUE D860942EAFD7721E
+GUILDCIVCULT_MISSION_1_P_END_NEUTRAL_CULT ()
+{
+		guildcivcult_mission_1_p_end_neutral_cult	[Alright, $self$, your guild is now of no cult.]
+
+}
+
+// HASH_VALUE 747D6531BEA50400
+GUILDCIVCULT_MISSION_1_P_END_TRYKER ()
+{
+		guildcivcult_mission_1_p_end_tryker	[Alright, $self$, your guild is now a Tryker guild.]
+
+}
+
+// HASH_VALUE 61D4D1F7B869A079
+GUILDCIVCULT_MISSION_1_P_END_ZORAI ()
+{
+		guildcivcult_mission_1_p_end_zorai	[Alright, $self$, your guild is now a Zoraï guild.]
+
+}
+
+// HASH_VALUE 7D43FB3017F11774
+GUILDCIVCULT_MISSION_1_P_MIS_DESC (bot giver)
+{
+		guildcivcult_mission_1_p_mis_desc	[Lets you change your guild's cult or citizenship.]
+
+}
+
+// HASH_VALUE D5806033BF7E511D
+GUILDCIVCULT_MISSION_1_P_MIS_MENU ()
+{
+		guildcivcult_mission_1_p_mis_menu	[I want to change my guild's cult or citizenship]
+
+}
+
+// HASH_VALUE 5641813403063593
+GUILDCIVCULT_MISSION_1_P_MIS_TITLE (bot giver)
+{
+		guildcivcult_mission_1_p_mis_title	[Change guild cult or citizenship]
+
+}
+
 // HASH_VALUE 7AF5DE1D3A433E5B
 GUILD_ALREADY_HAS_JOIN_PROPOSAL (player p)
 {
@@ -33906,6 +34611,13 @@ INVALID_FORAGE_TOOL ()
 
 }
 
+// HASH_VALUE DA5EDB3D405644F0
+INVALID_LEAGUE_TARGET ()
+{
+			[&CHK& Your target cant be invited in a league]
+
+}
+
 // HASH_VALUE 13477814241634CD
 INVALID_TARGET ()
 {
@@ -34851,6 +35563,58 @@ KE0904_ZORAI_INSTRUCTIONS_PHASE_1_P_END_WHO_PAY_ME_NO_CIV (bot reward_giver)
 KILLED_BY_GOO ()
 {
 			[&CHKCB&Вас убило гуу!]
+
+}
+
+// HASH_VALUE B67C9EB34FD34518
+LEAGUE_ALREADY_INVITED ()
+{
+			[&CHK& Your target is already being invited in a league]
+
+}
+
+// HASH_VALUE 82285BD5310E1028
+LEAGUE_ALREADY_IN_LEAGUE ()
+{
+			[&CHK& Your target is already in a league]
+
+}
+
+// HASH_VALUE A9ED208557AC96A3
+LEAGUE_DECLINE (player p)
+{
+		league_decline	[&AROUND&$p$ declines your offer to join your league.]
+
+}
+
+// HASH_VALUE D1860FFE53B20E1D
+LEAGUE_INVITE (player p)
+{
+		legaue_invite	[&AROUND&You offer $p$ to join your league.]
+
+}
+
+// HASH_VALUE 63A36830DF0F4729
+LEAGUE_INVITOR_NOT_LEADER ()
+{
+			[&CHK& You must be team leader to create or invite someone in your league]
+
+}
+
+// HASH_VALUE 8FD6CB6B10B80ED5
+LEAGUE_PROPOSAL (player p)
+{
+	(p.gender = male)
+		league_proposal_m	[$p$ offers you to join his league.]
+
+		league_proposal_f	[$p$ offers you to join her league.]
+
+}
+
+// HASH_VALUE 99ACE380C198B7A2
+LEAGUE_YOU_DECLINE (player p)
+{
+		league_you_decline	[&SYS&You refuse to join the league of $p$.]
 
 }
 
@@ -37628,10 +38392,59 @@ MELEESTATE6 ()
 
 }
 
+// HASH_VALUE 17924C34EAD4B6B3
+MENU_AN_OPENING ()
+{
+			[An Opening?]
+
+}
+
+// HASH_VALUE E0171C64E0552494
+MENU_BANARC ()
+{
+			[Banarc]
+
+}
+
+// HASH_VALUE B4321C626C3A3484
+MENU_BUY_NATION_ITEMS ()
+{
+			[Buy Nation Items]
+
+}
+
+// HASH_VALUE 89CA0881E5FA04DC
+MENU_BUY_PVP ()
+{
+			[Buy Special Items]
+
+}
+
+// HASH_VALUE 48583456AE5AE432
+MENU_CAN_I_HELP_YOU ()
+{
+			[Can you help me?]
+
+}
+
+// HASH_VALUE 7484942F337068FF
+MENU_CASINO_INSERT_COIN ()
+{
+			[Play a token]
+
+}
+
 // HASH_VALUE A666705B25C4B47C
 MENU_DANGER ()
 {
 			[Опасность]
+
+}
+
+// HASH_VALUE 8D69FC3CE7958B8C
+MENU_DELES_SILAM ()
+{
+			[Deles Silam]
 
 }
 
@@ -37649,6 +38462,48 @@ MENU_GET_FLOWER ()
 
 }
 
+// HASH_VALUE DD78D83A08F8E05C
+MENU_GLOWING_COAL ()
+{
+			[Glowing Coal]
+
+}
+
+// HASH_VALUE F36778F4031518EB
+MENU_HAVE_MISSION ()
+{
+			[Do you have any mission to assign me?]
+
+}
+
+// HASH_VALUE A5E3EB3B7080146A
+MENU_HAVE_SOMETHINH_FOR_ME ()
+{
+			[Have you something for me?]
+
+}
+
+// HASH_VALUE D7065F6B15C44E92
+MENU_HELLO ()
+{
+			[Hello!]
+
+}
+
+// HASH_VALUE 5E06D76B9CC43E92
+MENU_HELLO_LEADER ()
+{
+			[Hello?]
+
+}
+
+// HASH_VALUE 6A662488A196248F
+MENU_HELPER_NPC ()
+{
+			[Hello]
+
+}
+
 // HASH_VALUE E905678DC7D93B3D
 MENU_HOF ()
 {
@@ -37663,10 +38518,94 @@ MENU_KAMIA_ATA ()
 
 }
 
+// HASH_VALUE 6A5644916017488F
+MENU_LIGHT_UP ()
+{
+			[Light]
+
+}
+
+// HASH_VALUE 6B08F0792DA5189C
+MENU_LORDOY ()
+{
+			[Lordoy]
+
+}
+
+// HASH_VALUE CEE1009828377BAA
+MENU_MATISPOETRY ()
+{
+			[Collection of Matis poetry.]
+
+}
+
+// HASH_VALUE D034A258ECA4C057
+MENU_NEED_SOME_INFORMATIONS ()
+{
+			[I need some informations...]
+
+}
+
+// HASH_VALUE 2E151C3CE0D2F84A
+MENU_OPEN_CHEST ()
+{
+			[Open the Chest]
+
+}
+
+// HASH_VALUE 6C58043C201C9480
+MENU_OPEN_IT ()
+{
+			[Open it!]
+
+}
+
+// HASH_VALUE 1BE5D728EFE5C714
+MENU_OREN_PYR ()
+{
+			[oren pyr !]
+
+}
+
 // HASH_VALUE 1B78F408E6E6BC27
 MENU_OUTPOST ()
 {
 			[Осмотреть знамя заставы]
+
+}
+
+// HASH_VALUE 685814AC601C149C
+MENU_RESCUE_TEAM_1 ()
+{
+			[kami'ata]
+
+}
+
+// HASH_VALUE 95697C5CE7998BAC
+MENU_RESCUE_TEAM_2 ()
+{
+			[deles silam]
+
+}
+
+// HASH_VALUE 6C5824BC705C0480
+MENU_RESCUE_TEAM_3 ()
+{
+			[oren pyr]
+
+}
+
+// HASH_VALUE 6B0AF0B92DA918BC
+MENU_RESCUE_TEAM_4 ()
+{
+			[lordoy]
+
+}
+
+// HASH_VALUE 6B0AF0B92DA918BC
+MENU_RESCUE_TEAM_5 ()
+{
+			[lordoy]
 
 }
 
@@ -37684,10 +38623,31 @@ MENU_ROOM_ACCESS ()
 
 }
 
+// HASH_VALUE 66E7CB0C69EAA765
+MENU_SCENARIO_EDITOR_TP ()
+{
+			[Open the Scenario Editor.]
+
+}
+
+// HASH_VALUE 201C944C6CDCF490
+MENU_SIT ()
+{
+			[Sit down]
+
+}
+
 // HASH_VALUE 2B07D050EB51D05E
 MENU_STELE ()
 {
 			[Прочесть письмена]
+
+}
+
+// HASH_VALUE 48D0841444D0E404
+MENU_TRADE ()
+{
+			[EXCHANGE]
 
 }
 
@@ -37713,6 +38673,34 @@ MENU_WHOISKARAVAN (player p, bot b)
 {
 	(b.race = karavan)
 		menu_who_is_karavan	[Что такое Караван?]
+
+}
+
+// HASH_VALUE 6018F45C6018F45C
+MENU_WOHA ()
+{
+			[Woha]
+
+}
+
+// HASH_VALUE 513A5C55ABC6D39F
+MENU_WOREN_SILOY ()
+{
+			[Woren Siloy]
+
+}
+
+// HASH_VALUE A1543F9ADEB3535D
+MENU_ZIGA ()
+{
+			[Caress Ari.]
+
+}
+
+// HASH_VALUE 12E8C386E6355467
+MENU_ZIGB ()
+{
+			[Caress Tynee.]
 
 }
 
@@ -39702,6 +40690,41 @@ MISSION_FYROS_08_P_LDC_INTROP (bot guide)
 
 }
 
+// HASH_VALUE D96D0B8575125801
+MISSION_FYROS_EMERGENCY_TP_ANSWER_TP_NO ()
+{
+		mission_fyros_emergency_tp_answer_tp_no	[No Thanks i will stay here!]
+
+}
+
+// HASH_VALUE 561BCC338344D663
+MISSION_FYROS_EMERGENCY_TP_ANSWER_TP_OK ()
+{
+		mission_fyros_emergency_tp_answer_tp_ok	[I have understand, yes pleas]
+
+}
+
+// HASH_VALUE 111C66415C2DE2C2
+MISSION_FYROS_EMERGENCY_TP_MISSION_FYROS_EMERGENCY_TP_DESC (bot giver, bot givervar)
+{
+		mission_fyros_emergency_tp_mission_fyros_emergency_tp_desc	[Talk with $givervar$ to finde a way back to Pyr]
+
+}
+
+// HASH_VALUE C6580984E79477DC
+MISSION_FYROS_EMERGENCY_TP_MISSION_FYROS_EMERGENCY_TP_TITLE (bot giver)
+{
+		mission_fyros_emergency_tp_mission_fyros_emergency_tp_title	[Bring me back to Pyr]
+
+}
+
+// HASH_VALUE DE1F1BB177DA4DAF
+MISSION_FYROS_EMERGENCY_TP_TP_FOR_DAPPER_TO_FYROS ()
+{
+		mission_fyros_emergency_tp_tp_for_dapper_to_fyros	[If you want i will Teleport you to Pyr, this will cost you 1000 Dapper , ok?]
+
+}
+
 // HASH_VALUE E908D049289AAE56
 MISSION_GOAL_STEP_ANY_OR (dyn_string_id id)
 {
@@ -41267,6 +42290,41 @@ MISSION_MATIS_09_P_LDC_INTROP (bot guide)
 
 }
 
+// HASH_VALUE 588DAB8C75125801
+MISSION_MATIS_EMERGENCY_TP_ANSWER_TP_NO ()
+{
+		mission_matis_emergency_tp_answer_tp_no	[No Thanks i will stay here!]
+
+}
+
+// HASH_VALUE D53B6C3A8344D663
+MISSION_MATIS_EMERGENCY_TP_ANSWER_TP_OK ()
+{
+		mission_matis_emergency_tp_answer_tp_ok	[I have understand, yes pleas]
+
+}
+
+// HASH_VALUE 6512F3941E2CEE37
+MISSION_MATIS_EMERGENCY_TP_MISSION_MATIS_EMERGENCY_TP_DESC (bot giver, bot givervar)
+{
+		mission_matis_emergency_tp_mission_matis_emergency_tp_desc	[Talk with $givervar$ to finde a way back to Yirkanis]
+
+}
+
+// HASH_VALUE A1BDAAEF66B33B50
+MISSION_MATIS_EMERGENCY_TP_MISSION_MATIS_EMERGENCY_TP_TITLE (bot giver)
+{
+		mission_matis_emergency_tp_mission_matis_emergency_tp_title	[Bring me back to Yirkanis]
+
+}
+
+// HASH_VALUE AB7CAF8F015B5102
+MISSION_MATIS_EMERGENCY_TP_TP_FOR_DAPPER_TO_MATIS ()
+{
+		mission_matis_emergency_tp_tp_for_dapper_to_matis	[If you want i will Teleport you to Yirkanis, this will cost you 1000 Dapper , ok?]
+
+}
+
 // HASH_VALUE CF0BAC5D4564E2D4
 MISSION_MAX_GROUP_REACHED ()
 {
@@ -42202,6 +43260,41 @@ MISSION_TRYKER_10_P_LDC_INTROP (bot guide)
 
 }
 
+// HASH_VALUE F8E23C6594601F5C
+MISSION_TRYKER_EMERGENCY_TP_ANSWER_TP_NO ()
+{
+		mission_tryker_emergency_tp_answer_tp_no	[No Thanks i will stay here!]
+
+}
+
+// HASH_VALUE B1E5F3995958A852
+MISSION_TRYKER_EMERGENCY_TP_ANSWER_TP_OK ()
+{
+		mission_tryker_emergency_tp_answer_tp_ok	[I have understand, yes pleas]
+
+}
+
+// HASH_VALUE 95ED00F971825FE1
+MISSION_TRYKER_EMERGENCY_TP_MISSION_TRYKER_EMERGENCY_TP_DESC (bot giver, bot givervar)
+{
+		mission_tryker_emergency_tp_mission_tryker_emergency_tp_desc	[Talk with $givervar$ to finde a way back to Tryker]
+
+}
+
+// HASH_VALUE CA1C40F1DEEC1307
+MISSION_TRYKER_EMERGENCY_TP_MISSION_TRYKER_EMERGENCY_TP_TITLE (bot giver)
+{
+		mission_tryker_emergency_tp_mission_tryker_emergency_tp_title	[Bring me back to Tryker]
+
+}
+
+// HASH_VALUE 555D2EA918A2FA8D
+MISSION_TRYKER_EMERGENCY_TP_TP_FOR_DAPPER_TO_TRYKER ()
+{
+		mission_tryker_emergency_tp_tp_for_dapper_to_tryker	[If you want i will Teleport you to Tryker, this will cost you 1000 Dapper , ok?]
+
+}
+
 // HASH_VALUE 506091CD6185BF67
 MISSION_ZORAI_01_DESC_SM_CAST_SPELL ()
 {
@@ -43018,6 +44111,41 @@ MISSION_ZORAI_09_MIS_TITLE (bot giver)
 MISSION_ZORAI_09_P_LDC_INTROP (bot guide)
 {
 		mission_zorai_09_p_ldc_introp	[$guide$ объяснит вам, что делать дальше]
+
+}
+
+// HASH_VALUE 566DE399751258F7
+MISSION_ZORAI_EMERGENCY_TP_ANSWER_TP_NO ()
+{
+		mission_zorai_emergency_tp_answer_tp_no	[No Thanks i will stay here!]
+
+}
+
+// HASH_VALUE D31BA4478344D659
+MISSION_ZORAI_EMERGENCY_TP_ANSWER_TP_OK ()
+{
+		mission_zorai_emergency_tp_answer_tp_ok	[I have understand, yes pleas]
+
+}
+
+// HASH_VALUE 0C7D669861EBD2C2
+MISSION_ZORAI_EMERGENCY_TP_MISSION_ZORAI_EMERGENCY_TP_DESC (bot giver, bot givervar)
+{
+		mission_zorai_emergency_tp_mission_zorai_emergency_tp_desc	[Talk with $givervar$ to finde a way back to Zora]
+
+}
+
+// HASH_VALUE C6B759DB64F34FE2
+MISSION_ZORAI_EMERGENCY_TP_MISSION_ZORAI_EMERGENCY_TP_TITLE (bot giver)
+{
+		mission_zorai_emergency_tp_mission_zorai_emergency_tp_title	[Bring me back to Zora]
+
+}
+
+// HASH_VALUE DD7D696F6D8466C8
+MISSION_ZORAI_EMERGENCY_TP_TP_FOR_DAPPER_TO_ZORAI ()
+{
+		mission_zorai_emergency_tp_tp_for_dapper_to_zorai	[If you want i will Teleport you to Zora, this will cost you 1000 Dapper , ok?]
 
 }
 
@@ -48578,6 +49706,13 @@ NO_ACTION_WHILE_MOUNTED ()
 
 }
 
+// HASH_VALUE 0F44E2995F70DB87
+NO_ACTION_WHILE_PVP ()
+{
+		no_action_while_pvp	[&CHK&You cannot use actions if you have recently been involved in PvP actions.]
+
+}
+
 // HASH_VALUE 1AFC08A4DE04C0A9
 NO_ACTION_WHILE_SWIMMING ()
 {
@@ -49286,6 +50421,20 @@ ONLY_ENCHANTED_ITEMS_CAN_BE_RECHARGED ()
 ONLY_ONE_ROOT_FABER ()
 {
 		only_one_root_faber	[&CHK&В действии по изготовлению предмета может использоваться только одна корневая станза, действие прервано!]
+
+}
+
+// HASH_VALUE 836776B260515361
+OPEN_SILAN_ANNOUNCE_TEXT ()
+{
+			[Did you know we can reach Silan ove the bark ? It seems that Rangers are maintaining a path whose entrance is at grove of confusion's very end.]
+
+}
+
+// HASH_VALUE 11B9ACA166796C0B
+OPERATION_NOTEXIST ()
+{
+			[&CHK&That character does not exist.]
 
 }
 
@@ -51132,6 +52281,13 @@ REQUIRED_EQUIP ()
 
 }
 
+// HASH_VALUE C6227D1011568C6A
+REQUIRED_EQUIP_CIV_CULT_ORGA ()
+{
+			[&CHK&You haven't requipred Civilisation/Cult/Organization for wear this item.]
+
+}
+
 // Mission message
 // HASH_VALUE 845DAFAE3E3E7ACC
 REQ_LEADER_TO_ABANDON_MISSION ()
@@ -51241,2699 +52397,6 @@ ROOM_YOU_INVITE (player p)
 ROOT_FABER_NOT_FIRST ()
 {
 		root_faber_not_first	[&CHK&Корневые ремесленные станзы должны находиться в начале действия! Пожалуйста, сообщите об этой ошибке, в точности указав использованное действие. Спасибо!]
-
-}
-
-// HASH_VALUE D6ACD69A046293D6
-RPJOB_ALLREADY_HAVE_JOB (item jobitem)
-{
-	( self.gender = male )
-		rpjob_allready_have_job_m	[Вы освоили максимально допустимое количество простых занятий.\n
-			Вы не можете работать в качестве $jobitem.twogen$.]
-
-	( self.gender = female )
-		rpjob_allready_have_job_f	[Вы освоили максимально допустимое количество простых занятий.\n
-			Вы не можете работать в качестве $jobitem.twogen$.]
-
-}
-
-// HASH_VALUE 3A4BE6874BFC8788
-RPJOB_BAG_FULL (bot givervar)
-{
-		rpjob_bag_full	[@{F55F}Ваш инвентарь переполнен!@{FFFF}\n
-			\n
-			Освободите место в вашем инвентаре, чтобы у $givervar$ была возможность дать вам очередное поручение.]
-
-}
-
-// HASH_VALUE 6059D8B561B78891
-RPJOB_CANCEL_RECIPE ()
-{
-		rpjob_cancel_recipe	[Отменить]
-
-}
-
-// HASH_VALUE F3EFA2C4D57B0429
-RPJOB_CANT_WIN_XP ()
-{
-		rpjob_cant_win_xp	[Ваш уровень слишком высок. Вы не получили опыта, но и не истратили материалы.]
-
-}
-
-// HASH_VALUE 194B09D804AB58A2
-RPJOB_C_05DAY (int integer)
-{
-		rpjob_c_05day	[$integer$) 1/2 дня]
-
-}
-
-// HASH_VALUE 090D32D3946582AE
-RPJOB_C_0C (int integer)
-{
-		rpjob_c_0c	[$integer$) 0°C]
-
-}
-
-// HASH_VALUE F5BC70BD95C1B8B1
-RPJOB_C_10C (int integer)
-{
-		rpjob_c_10c	[$integer$) 10°C]
-
-}
-
-// HASH_VALUE 594BDCE582FF349E
-RPJOB_C_10MIN (int integer)
-{
-		rpjob_c_10min	[$integer$) 10 мин]
-
-}
-
-// HASH_VALUE D1BC70BD20F78DE1
-RPJOB_C_10S (int integer)
-{
-		rpjob_c_10s	[$integer$) 10 сек]
-
-}
-
-// HASH_VALUE F5CC70BD95C1B8B2
-RPJOB_C_11C (int integer)
-{
-		rpjob_c_11c	[$integer$) 11°C]
-
-}
-
-// HASH_VALUE F5EC70BD95C1B8B4
-RPJOB_C_13C (int integer)
-{
-		rpjob_c_13c	[$integer$) 13°C]
-
-}
-
-// HASH_VALUE F50C70BD95C1B8B6
-RPJOB_C_15C (int integer)
-{
-		rpjob_c_15c	[$integer$) 15°C]
-
-}
-
-// HASH_VALUE F52C70BD95C1B8B8
-RPJOB_C_17C (int integer)
-{
-		rpjob_c_17c	[$integer$) 17°C]
-
-}
-
-// HASH_VALUE F54C70BD95C1B8BA
-RPJOB_C_19C (int integer)
-{
-		rpjob_c_19c	[$integer$) 19°C]
-
-}
-
-// HASH_VALUE 51BD14C103920108
-RPJOB_C_1DAY (int integer)
-{
-		rpjob_c_1day	[$integer$) 1 день]
-
-}
-
-// HASH_VALUE 594B24E986E05DC6
-RPJOB_C_1HOUR (int integer)
-{
-		rpjob_c_1hour	[$integer$) 1 час]
-
-}
-
-// HASH_VALUE 594B24DF7FAF5DC7
-RPJOB_C_1INCH (int integer)
-{
-		rpjob_c_1inch	[$integer$) 1 см]
-
-}
-
-// HASH_VALUE 51BD14C10330411A
-RPJOB_C_1MIN (int integer)
-{
-		rpjob_c_1min	[$integer$) 1 мин]
-
-}
-
-// HASH_VALUE 35BC74BD95C1B8B1
-RPJOB_C_20C (int integer)
-{
-		rpjob_c_20c	[$integer$) 20°C]
-
-}
-
-// HASH_VALUE 1AA7AA1E2EC4D503
-RPJOB_C_20INCHES (int integer)
-{
-		rpjob_c_20inches	[$integer$) 20 см]
-
-}
-
-// HASH_VALUE 1AA7AA1E6FC4D508
-RPJOB_C_25INCHES (int integer)
-{
-		rpjob_c_25inches	[$integer$) 25 см]
-
-}
-
-// HASH_VALUE D94B24EAC74015C2
-RPJOB_C_2DAYS (int integer)
-{
-		rpjob_c_2days	[$integer$) 2 дня]
-
-}
-
-// HASH_VALUE D3C2C489C19034E7
-RPJOB_C_2HOURS (int integer)
-{
-		rpjob_c_2hours	[$integer$) 2 часа]
-
-}
-
-// HASH_VALUE 2D6DFE673ECBB443
-RPJOB_C_2INCHES (int integer)
-{
-		rpjob_c_2inches	[$integer$) 2 см]
-
-}
-
-// HASH_VALUE 5AA7AA1E2ED4D503
-RPJOB_C_30INCHES (int integer)
-{
-		rpjob_c_30inches	[$integer$) 30 см]
-
-}
-
-// HASH_VALUE 594BF1E582FF349E
-RPJOB_C_30MIN (int integer)
-{
-		rpjob_c_30min	[$integer$) 30 мин]
-
-}
-
-// HASH_VALUE 594BF1DABE204C9E
-RPJOB_C_30SEC (int integer)
-{
-		rpjob_c_30sec	[$integer$) 30 сек]
-
-}
-
-// HASH_VALUE 5AA7AA1E6FD4D508
-RPJOB_C_35INCHES (int integer)
-{
-		rpjob_c_35inches	[$integer$) 35 см]
-
-}
-
-// HASH_VALUE 594B24BA915934AC
-RPJOB_C_37_6C (int integer)
-{
-		rpjob_c_37_6c	[$integer$) 37.6°C]
-
-}
-
-// HASH_VALUE 6D6DFE673ECBB843
-RPJOB_C_3INCHES (int integer)
-{
-		rpjob_c_3inches	[$integer$) 3 см]
-
-}
-
-// HASH_VALUE 7C09855B29105C7A
-RPJOB_C_3_DIFFERENT_FLOWERS (int integer)
-{
-		rpjob_c_3_different_flowers	[$integer$) Из 3 разных цветов]
-
-}
-
-// HASH_VALUE 20399B6C3E2EC844
-RPJOB_C_3_SAME_FLOWERS (int integer)
-{
-		rpjob_c_3_same_flowers	[$integer$) Из 3 одинаковых цветов]
-
-}
-
-// HASH_VALUE 9BA7AA1E2EE4D503
-RPJOB_C_40INCHES (int integer)
-{
-		rpjob_c_40inches	[$integer$) 40 см]
-
-}
-
-// HASH_VALUE 9BA7AA1E6FE4D508
-RPJOB_C_45INCHES (int integer)
-{
-		rpjob_c_45inches	[$integer$) 45 см]
-
-}
-
-// HASH_VALUE AE6DFE673ECBBC43
-RPJOB_C_4INCHES (int integer)
-{
-		rpjob_c_4inches	[$integer$) 4 см]
-
-}
-
-// HASH_VALUE DBA7AA1E2EF4D503
-RPJOB_C_50INCHES (int integer)
-{
-		rpjob_c_50inches	[$integer$) 50 см]
-
-}
-
-// HASH_VALUE 4A0D32D8946582AE
-RPJOB_C_5C (int integer)
-{
-		rpjob_c_5c	[$integer$) 5°C]
-
-}
-
-// HASH_VALUE 94C2C489C19034EA
-RPJOB_C_5HOURS (int integer)
-{
-		rpjob_c_5hours	[$integer$) 5 часов]
-
-}
-
-// HASH_VALUE EE6DFE673ECBC043
-RPJOB_C_5INCHES (int integer)
-{
-		rpjob_c_5inches	[$integer$) 5 см]
-
-}
-
-// HASH_VALUE 52FD14C1DF30411A
-RPJOB_C_5MIN (int integer)
-{
-		rpjob_c_5min	[$integer$) 5 мин]
-
-}
-
-// HASH_VALUE FD09855B29105C7C
-RPJOB_C_5_DIFFERENT_FLOWERS (int integer)
-{
-		rpjob_c_5_different_flowers	[$integer$) Из 5 одинаковых цветов]
-
-}
-
-// HASH_VALUE A1399B6CBF2EC844
-RPJOB_C_5_SAME_FLOWERS (int integer)
-{
-		rpjob_c_5_same_flowers	[$integer$) Из 5 разных цветов]
-
-}
-
-// HASH_VALUE 2E6DFE673ECBC443
-RPJOB_C_6INCHES (int integer)
-{
-		rpjob_c_6inches	[$integer$) 6 см]
-
-}
-
-// HASH_VALUE CA0D32DA946582AE
-RPJOB_C_7C (int integer)
-{
-		rpjob_c_7c	[$integer$) 7°C]
-
-}
-
-// HASH_VALUE 6E6DFE673ECBC843
-RPJOB_C_7INCHES (int integer)
-{
-		rpjob_c_7inches	[$integer$) 7 см]
-
-}
-
-// HASH_VALUE 31E19C7781A034ED
-RPJOB_C_8HOURS (int integer)
-{
-		rpjob_c_8hours	[$integer$) 8 часов]
-
-}
-
-// HASH_VALUE 4B0D32DC946582AE
-RPJOB_C_9C (int integer)
-{
-		rpjob_c_9c	[$integer$) 9°C]
-
-}
-
-// HASH_VALUE FE09855B29105C80
-RPJOB_C_9_DIFFERENT_FLOWERS (int integer)
-{
-		rpjob_c_9_different_flowers	[$integer$) Из 9 разных цветов]
-
-}
-
-// HASH_VALUE A2399B6CC02EC844
-RPJOB_C_9_SAME_FLOWERS (int integer)
-{
-		rpjob_c_9_same_flowers	[$integer$) Из 9 разных цветов]
-
-}
-
-// HASH_VALUE 7C82BCFC13C2ACB3
-RPJOB_C_ADD_PAINTED (int integer)
-{
-		rpjob_c_add_painted	[$integer$) Раскрасить лепестки]
-
-}
-
-// HASH_VALUE 3B92F0DAA4DD1A2F
-RPJOB_C_AGGLOMERATE_SHEETS (int integer)
-{
-		rpjob_c_agglomerate_sheets	[$integer$) Проклеенные листья]
-
-}
-
-// HASH_VALUE 694B2477C53F1118
-RPJOB_C_AMBER (int integer)
-{
-		rpjob_c_amber	[$integer$) Янтарь]
-
-}
-
-// HASH_VALUE 52058A601871BDAE
-RPJOB_C_AMBER_BOX (int integer)
-{
-		rpjob_c_amber_box	[$integer$) Янтарная шкатулка]
-
-}
-
-// HASH_VALUE AA071645913D1708
-RPJOB_C_AROUND_TRUNK (int integer)
-{
-		rpjob_c_around_trunk	[$integer$) Предвечный ствол]
-
-}
-
-// HASH_VALUE DCBA94B60EF053CD
-RPJOB_C_ATTACH_LIGAMENTS (int integer)
-{
-		rpjob_c_attach_ligaments	[$integer$) Скрепить сухожилиями]
-
-}
-
-// HASH_VALUE 5373399DB6D567E1
-RPJOB_C_AT_2CM (int integer)
-{
-		rpjob_c_at_2cm	[$integer$) Срезать цветок на расстоянии 2 см от корня]
-
-}
-
-// HASH_VALUE 5373399DF6E567E1
-RPJOB_C_AT_3CM (int integer)
-{
-		rpjob_c_at_3cm	[$integer$) Срезать цветок на расстоянии 3 см от корня]
-
-}
-
-// HASH_VALUE 5373399D770567E1
-RPJOB_C_AT_5CM (int integer)
-{
-		rpjob_c_at_5cm	[$integer$) Срезать цветок на расстоянии 5 см от корня]
-
-}
-
-// HASH_VALUE 007308B68D0AF6E1
-RPJOB_C_AT_CLOSEST_GROUND (int integer)
-{
-		rpjob_c_at_closest_ground	[$integer$) Срезать цветок ближе к корню]
-
-}
-
-// HASH_VALUE CBE67EE0D5D2A8FA
-RPJOB_C_AT_GROUND (int integer)
-{
-		rpjob_c_at_ground	[$integer$) Срезать цветок у самого корня]
-
-}
-
-// HASH_VALUE 4E46E661BBFB280E
-RPJOB_C_AT_MIDWAY (int integer)
-{
-		rpjob_c_at_midway	[$integer$) Срезать цветок посередине стебля]
-
-}
-
-// HASH_VALUE F95DBE6D7B21CDDD
-RPJOB_C_AVERAGE (int integer)
-{
-		rpjob_c_average	[$integer$) Средняя]
-
-}
-
-// HASH_VALUE 10A5BE82D611F10F
-RPJOB_C_AZIMUTHAL (int integer)
-{
-		rpjob_c_azimuthal	[$integer$) По азимуту]
-
-}
-
-// HASH_VALUE EECFB5BD95C1C89F
-RPJOB_C_BAG (int integer)
-{
-		rpjob_c_bag	[$integer$) Сумка]
-
-}
-
-// HASH_VALUE EDCE14C1031A6D13
-RPJOB_C_BARK (int integer)
-{
-		rpjob_c_bark	[$integer$) Кора]
-
-}
-
-// HASH_VALUE 7B35BE70D402F9C4
-RPJOB_C_BARK_THIN (int integer)
-{
-		rpjob_c_bark_thin	[$integer$) Тонкая кора]
-
-}
-
-// HASH_VALUE DF8BAC723F0145F0
-RPJOB_C_BARREL (int integer)
-{
-		rpjob_c_barrel	[$integer$) Бочонок]
-
-}
-
-// HASH_VALUE 612C6293B524D97F
-RPJOB_C_BASE_FOR_PEN (int integer)
-{
-		rpjob_c_base_for_pen	[$integer$) Держатель для пера]
-
-}
-
-// HASH_VALUE 9B57494A5D37C7EB
-RPJOB_C_BATHE_IN_SALT (int integer)
-{
-		rpjob_c_bathe_in_salt	[$integer$) Вымочить]
-
-}
-
-// HASH_VALUE EECE14C1038B550A
-RPJOB_C_BEER (int integer)
-{
-		rpjob_c_beer	[$integer$) Пиво]
-
-}
-
-// HASH_VALUE F6768FABC881A462
-RPJOB_C_BIG_BARREL (int integer)
-{
-		rpjob_c_big_barrel	[$integer$) Большая бочка]
-
-}
-
-// HASH_VALUE E94B247741FF0916
-RPJOB_C_BLACK (int integer)
-{
-		rpjob_c_black	[$integer$) Черный]
-
-}
-
-// HASH_VALUE E5DB2AA809B11CFC
-RPJOB_C_BLACK_BLUE (int integer)
-{
-		rpjob_c_black_blue	[$integer$) Черный и синий]
-
-}
-
-// HASH_VALUE B0CE14C103BA6121
-RPJOB_C_BLUE (int integer)
-{
-		rpjob_c_blue	[$integer$) Синий]
-
-}
-
-// HASH_VALUE A6D22BE2D8000145
-RPJOB_C_BLUE_RED (int integer)
-{
-		rpjob_c_blue_red	[$integer$) Синий и красный]
-
-}
-
-// HASH_VALUE E94B2477453F711C
-RPJOB_C_BONES (int integer)
-{
-		rpjob_c_bones	[$integer$) Кость]
-
-}
-
-// HASH_VALUE EAECDB7989B0349E
-RPJOB_C_BOX_SCULPT (int integer)
-{
-		rpjob_c_box_sculpt	[$integer$) Резная шкатулка]
-
-}
-
-// HASH_VALUE F2CE14C1039B5519
-RPJOB_C_BUDS (int integer)
-{
-		rpjob_c_buds	[$integer$) Бутоны]
-
-}
-
-// HASH_VALUE 74B2E7BC0C0DEACF
-RPJOB_C_BUILDINGS (int integer)
-{
-		rpjob_c_buildings	[$integer$) Апартаменты и залы собрания]
-
-}
-
-// HASH_VALUE F2CE14C1034A7927
-RPJOB_C_BURN (int integer)
-{
-		rpjob_c_burn	[$integer$) Обжиг]
-
-}
-
-// HASH_VALUE 694B24EA3D617100
-RPJOB_C_CANVA (int integer)
-{
-		rpjob_c_canva	[$integer$) Холст]
-
-}
-
-// HASH_VALUE E6E78269BECEF92F
-RPJOB_C_CARAPACE (int integer)
-{
-		rpjob_c_carapace	[$integer$) Хитин]
-
-}
-
-// HASH_VALUE 2DDE14C103BA5914
-RPJOB_C_CASE (int integer)
-{
-		rpjob_c_case	[$integer$) Футляр]
-
-}
-
-// HASH_VALUE E45D53A0745D5EE2
-RPJOB_C_CASE_SCULPT (int integer)
-{
-		rpjob_c_case_sculpt	[$integer$) Кожаный кошелек]
-
-}
-
-// HASH_VALUE 6986BE663CDFD134
-RPJOB_C_CHARCOAL (int integer)
-{
-		rpjob_c_charcoal	[$integer$) Уголь]
-
-}
-
-// HASH_VALUE 0B955B362867F0EC
-RPJOB_C_CHARRIOT_OF_MEKTOUB (int integer)
-{
-		rpjob_c_charriot_of_mektoub	[$integer$) На повозке с одним мектубом]
-
-}
-
-// HASH_VALUE 48E7420026372912
-RPJOB_C_CHARRIOT_OF_MEKTOUBS (int integer)
-{
-		rpjob_c_charriot_of_mektoubs	[$integer$) На повозке с двумя мектубами]
-
-}
-
-// HASH_VALUE FC7D3E70FE50C5CF
-RPJOB_C_CHASSIS (int integer)
-{
-		rpjob_c_chassis	[$integer$) Обод]
-
-}
-
-// HASH_VALUE D5EC0B9DF499AE3B
-RPJOB_C_CITY_ZORA (int integer)
-{
-		rpjob_c_city_zora	[$integer$) Городской совет Зоры]
-
-}
-
-// HASH_VALUE 8CB60261522235EE
-RPJOB_C_CLOPPASOA (int integer)
-{
-		rpjob_c_cloppasoa	[$integer$) Клоппазоа]
-
-}
-
-// HASH_VALUE A13CE38DCABE3694
-RPJOB_C_CONSOLIDATE (int integer)
-{
-		rpjob_c_consolidate	[$integer$) Закалка]
-
-}
-
-// HASH_VALUE 1F422E47198FAB00
-RPJOB_C_CRATCHA_MOUSS (int integer)
-{
-		rpjob_c_cratcha_mouss	[$integer$) Мох кратчи]
-
-}
-
-// HASH_VALUE 1CA0044878CB8724
-RPJOB_C_CRYSTALLIZED_SAP (int integer)
-{
-		rpjob_c_crystallized_sap	[$integer$) Сухой сэп]
-
-}
-
-// HASH_VALUE 7210B9BD95C1FCB3
-RPJOB_C_CUT (int integer)
-{
-		rpjob_c_cut	[$integer$) Резьба]
-
-}
-
-// HASH_VALUE 33DF14C10320790A
-RPJOB_C_DARD (int integer)
-{
-		rpjob_c_dard	[$integer$) Жало]
-
-}
-
-// HASH_VALUE CB979E6B9103D1F8
-RPJOB_C_DEHYDRATE (int integer)
-{
-		rpjob_c_dehydrate	[$integer$) Высушить]
-
-}
-
-// HASH_VALUE 10BC1EDFA99AA9A8
-RPJOB_C_DONT_LET_STEM_AND_FLOWER (int integer)
-{
-		rpjob_c_dont_let_stem_and_flower	[$integer$) Оставить только стебель и соцветие]
-
-}
-
-// HASH_VALUE 4C716BC9C9D1D090
-RPJOB_C_DO_NOTHING (int integer)
-{
-		rpjob_c_do_nothing	[$integer$) Ничего не делать]
-
-}
-
-// HASH_VALUE C735ABA7C8F1A79A
-RPJOB_C_DRIED_CLAY (int integer)
-{
-		rpjob_c_dried_clay	[$integer$) Глина]
-
-}
-
-// HASH_VALUE 8E25EA6554911DB3
-RPJOB_C_DRIED_SAP (int integer)
-{
-		rpjob_c_dried_sap	[$integer$) Высушенный сэп]
-
-}
-
-// HASH_VALUE 8AF35C32F59B3730
-RPJOB_C_DRIED_SECRETIONS (int integer)
-{
-		rpjob_c_dried_secretions	[$integer$) Клейкие выделения]
-
-}
-
-// HASH_VALUE C925BFAF87F2A78F
-RPJOB_C_DRIED_SKIN (int integer)
-{
-		rpjob_c_dried_skin	[$integer$) Высушенная кожа]
-
-}
-
-// HASH_VALUE E45D43D573D2FCC1
-RPJOB_C_DROP_WATER (int integer)
-{
-		rpjob_c_drop_water	[$integer$) Капля воды]
-
-}
-
-// HASH_VALUE B2EE14C1033A8127
-RPJOB_C_DRUM (int integer)
-{
-		rpjob_c_drum	[$integer$) Барабан]
-
-}
-
-// HASH_VALUE AF2FC1BD95C1C8A5
-RPJOB_C_EGG (int integer)
-{
-		rpjob_c_egg	[$integer$) Яичный]
-
-}
-
-// HASH_VALUE 13373E62B3CCCED0
-RPJOB_C_ESSENTIAL_OILS (int integer)
-{
-		rpjob_c_essential_oils	[$integer$) Масляный]
-
-}
-
-// HASH_VALUE 8DC587CA4C12E8A1
-RPJOB_C_EVERYTHING (int integer)
-{
-		rpjob_c_everything	[$integer$) Все вместе]
-
-}
-
-// HASH_VALUE F50C6DB5980FB9FF
-RPJOB_C_FABRIC_AND_LIGAMENT (int integer)
-{
-		rpjob_c_fabric_and_ligament	[$integer$) Волокнистая ткань и сухожилия изама]
-
-}
-
-// HASH_VALUE B4BDD1DD36625514
-RPJOB_C_FABRIC_AND_MUSTACHE (int integer)
-{
-		rpjob_c_fabric_and_mustache	[$integer$) Волокнистая ткань и усы ломпера]
-
-}
-
-// HASH_VALUE 63EA8A4039F6D3ED
-RPJOB_C_FAGOT_WORKED (int integer)
-{
-		rpjob_c_fagot_worked	[$integer$) Папирус]
-
-}
-
-// HASH_VALUE 21F7D639F90DDB7F
-RPJOB_C_FAIRHAVEN_BAR (int integer)
-{
-		rpjob_c_fairhaven_bar	[$integer$) Бар в Фэйрхевене]
-
-}
-
-// HASH_VALUE EB4B2477C53F1110
-RPJOB_C_FIBER (int integer)
-{
-		rpjob_c_fiber	[$integer$) Волокно]
-
-}
-
-// HASH_VALUE 244A3286A71747E6
-RPJOB_C_FIBER_FABRIC (int integer)
-{
-		rpjob_c_fiber_fabric	[$integer$) Волокнистая ткань]
-
-}
-
-// HASH_VALUE 3E974902DC460A19
-RPJOB_C_FINELY (int integer)
-{
-		rpjob_c_finely	[$integer$) Порубить]
-
-}
-
-// HASH_VALUE 334FC5BD95C1FCA7
-RPJOB_C_FIT (int integer)
-{
-		rpjob_c_fit	[$integer$) Подгонка]
-
-}
-
-// HASH_VALUE E08BA2683D9F2DFF
-RPJOB_C_FLAMBE (int integer)
-{
-		rpjob_c_flambe	[$integer$) Опалить]
-
-}
-
-// HASH_VALUE E08BE08240403DFF
-RPJOB_C_FLESHY (int integer)
-{
-		rpjob_c_fleshy	[$integer$) Мясистая]
-
-}
-
-// HASH_VALUE EB4B24773DE17916
-RPJOB_C_FLORA (int integer)
-{
-		rpjob_c_flora	[$integer$) Флора]
-
-}
-
-// HASH_VALUE 717E14C1033A4922
-RPJOB_C_FOAM (int integer)
-{
-		rpjob_c_foam	[$integer$) Мох]
-
-}
-
-// HASH_VALUE 1895CF88FB0D9ECE
-RPJOB_C_FOAM_DRIED_CRUSHED (int integer)
-{
-		rpjob_c_foam_dried_crushed	[$integer$) Высушенный мох]
-
-}
-
-// HASH_VALUE 9268836322A7DDFD
-RPJOB_C_FORCE_ARMS (int integer)
-{
-		rpjob_c_force_arms	[$integer$) В руках]
-
-}
-
-// HASH_VALUE BCB50AF251213D0C
-RPJOB_C_FROM_YUBO (int integer)
-{
-		rpjob_c_from_yubo	[$integer$) Проекция юбо]
-
-}
-
-// HASH_VALUE 7C75E67611E11903
-RPJOB_C_FULL_MOON (int integer)
-{
-		rpjob_c_full_moon	[$integer$) Полнолуние]
-
-}
-
-// HASH_VALUE 31AFC9BD95C1E8AD
-RPJOB_C_GOO (int integer)
-{
-		rpjob_c_goo	[$integer$) Гуу]
-
-}
-
-// HASH_VALUE 208BC878FF318903
-RPJOB_C_GOURDS (int integer)
-{
-		rpjob_c_gourds	[$integer$) Тыква]
-
-}
-
-// HASH_VALUE FB6447B28AE8EB08
-RPJOB_C_GREAT_DRAGON (int integer)
-{
-		rpjob_c_great_dragon	[$integer$) Великий Дракон]
-
-}
-
-// HASH_VALUE 6B4B2477C33F2922
-RPJOB_C_GREEN (int integer)
-{
-		rpjob_c_green	[$integer$) Зеленый]
-
-}
-
-// HASH_VALUE 9ED9F5862BF00268
-RPJOB_C_GREENHOUSE_YRKANIS (int integer)
-{
-		rpjob_c_greenhouse_yrkanis	[$integer$) Консерватория Ирканиса]
-
-}
-
-// HASH_VALUE 9FA8E38A624FABE4
-RPJOB_C_GREEN_BLACK (int integer)
-{
-		rpjob_c_green_black	[$integer$) Зеленый и черный]
-
-}
-
-// HASH_VALUE A71B42ADCAD12C05
-RPJOB_C_GREEN_BLUE (int integer)
-{
-		rpjob_c_green_blue	[$integer$) Зеленый и синий]
-
-}
-
-// HASH_VALUE E6BB9F859361C5B3
-RPJOB_C_GREEN_RED (int integer)
-{
-		rpjob_c_green_red	[$integer$) Зеленый и красный]
-
-}
-
-// HASH_VALUE 212D1E6300903DD9
-RPJOB_C_GROSSLY (int integer)
-{
-		rpjob_c_grossly	[$integer$) Ломтями]
-
-}
-
-// HASH_VALUE B110C9BD95C1E0B3
-RPJOB_C_GUM (int integer)
-{
-		rpjob_c_gum	[$integer$) Ластик]
-
-}
-
-// HASH_VALUE FD15E662928119EF
-RPJOB_C_HALF_MOON (int integer)
-{
-		rpjob_c_half_moon	[$integer$) Ущербная луна]
-
-}
-
-// HASH_VALUE 67FB1A8F47ED4AD4
-RPJOB_C_HARDENS_SAP (int integer)
-{
-		rpjob_c_hardens_sap	[$integer$) Застывший сэп]
-
-}
-
-// HASH_VALUE ED4B2477493F711C
-RPJOB_C_HONEY (int integer)
-{
-		rpjob_c_honey	[$integer$) Медовый]
-
-}
-
-// HASH_VALUE F22E14C103CA4D1E
-RPJOB_C_HOOF (int integer)
-{
-		rpjob_c_hoof	[$integer$) Копыто]
-
-}
-
-// HASH_VALUE F22E14C1034A7921
-RPJOB_C_HORN (int integer)
-{
-		rpjob_c_horn	[$integer$) Рог]
-
-}
-
-// HASH_VALUE ED4B2477455F911C
-RPJOB_C_HORNS (int integer)
-{
-		rpjob_c_horns	[$integer$) Рога]
-
-}
-
-// HASH_VALUE 3BCDE67581C029D6
-RPJOB_C_HOUSING (int integer)
-{
-		rpjob_c_housing	[$integer$) Постройки]
-
-}
-
-// HASH_VALUE 742E14C103BA291C
-RPJOB_C_HUGE (int integer)
-{
-		rpjob_c_huge	[$integer$) Огромная]
-
-}
-
-// HASH_VALUE 1D376E4FA60B330C
-RPJOB_C_IZAM_LIGAMENT (int integer)
-{
-		rpjob_c_izam_ligament	[$integer$) Сухожилие изама]
-
-}
-
-// HASH_VALUE 84093D6EF5EB8BFD
-RPJOB_C_KEEP_HIGHEST_LEAVES (int integer)
-{
-		rpjob_c_keep_highest_leaves	[$integer$) Сохранить верхние листья]
-
-}
-
-// HASH_VALUE 469FBCA0946AC19B
-RPJOB_C_KEEP_MIDHEIGHT_LEAVES (int integer)
-{
-		rpjob_c_keep_midheight_leaves	[$integer$) Сохранить средние листья]
-
-}
-
-// HASH_VALUE 7135883F352D531A
-RPJOB_C_KITIN_SECRETION (int integer)
-{
-		rpjob_c_kitin_secretion	[$integer$) Китинный]
-
-}
-
-// HASH_VALUE 126766E30D951EE7
-RPJOB_C_LAKES (int integer)
-{
-		rpjob_c_lakes	[$integer$) Вода из озера]
-
-}
-
-// HASH_VALUE E306B14F0A10C20B
-RPJOB_C_LEAF_THICK_AMBER (int integer)
-{
-		rpjob_c_leaf_thick_amber	[$integer$) Просмоленный лист]
-
-}
-
-// HASH_VALUE FF3D0E6D3C30E93F
-RPJOB_C_LEATHER (int integer)
-{
-		rpjob_c_leather	[$integer$) Кожи]
-
-}
-
-// HASH_VALUE 9216CE62588201EF
-RPJOB_C_LIGAMENTS (int integer)
-{
-		rpjob_c_ligaments	[$integer$) Сухожилия]
-
-}
-
-// HASH_VALUE 62118874BF0148F7
-RPJOB_C_LITTLE (int integer)
-{
-		rpjob_c_little	[$integer$) С щепотку]
-
-}
-
-// HASH_VALUE 25C7E78BCC0A2E82
-RPJOB_C_LITTLE_MORE (int integer)
-{
-		rpjob_c_little_more	[$integer$) Большая щепотка]
-
-}
-
-// HASH_VALUE 5AC4DA4AB49DE3E1
-RPJOB_C_LITTLE_SPONGES (int integer)
-{
-		rpjob_c_little_sponges	[$integer$) Губка]
-
-}
-
-// HASH_VALUE F36E14C103DA4D1D
-RPJOB_C_LONG (int integer)
-{
-		rpjob_c_long	[$integer$) Длинный]
-
-}
-
-// HASH_VALUE F375A530966D451E
-RPJOB_C_LOOP (int integer)
-{
-		rpjob_c_loop	[$integer$) Узел]
-
-}
-
-// HASH_VALUE 216AD83F733EBFBC
-RPJOB_C_LUMPER_MUSTACHE (int integer)
-{
-		rpjob_c_lumper_mustache	[$integer$) Усы ломпера]
-
-}
-
-// HASH_VALUE E47C14C103CE79A2
-RPJOB_C_M20C (int integer)
-{
-		rpjob_c_m20c	[$integer$) -20°C]
-
-}
-
-// HASH_VALUE 040C60BD95C1B8B6
-RPJOB_C_M5C (int integer)
-{
-		rpjob_c_m5c	[$integer$) -5°C]
-
-}
-
-// HASH_VALUE 66A8498F35166BD9
-RPJOB_C_MADAKAM_SKIN (int integer)
-{
-		rpjob_c_madakam_skin	[$integer$) Шкура мадакама]
-
-}
-
-// HASH_VALUE 4D46BA6913B2EDF6
-RPJOB_C_MAGNETIZE (int integer)
-{
-		rpjob_c_magnetize	[$integer$) Намагнитить]
-
-}
-
-// HASH_VALUE A7CB9A537AC6CFD1
-RPJOB_C_MCKNOR_BROTH (int integer)
-{
-		rpjob_c_mcknor_broth	[$integer$) Похлебка МакКнор]
-
-}
-
-// HASH_VALUE 40CC04F3E9A39FE3
-RPJOB_C_MEKOUB_PACK (int integer)
-{
-		rpjob_c_mekoub_pack	[$integer$) На вьючном мектубе]
-
-}
-
-// HASH_VALUE 1105C66ABA5B64EE
-RPJOB_C_MINCEMEAT (int integer)
-{
-		rpjob_c_mincemeat	[$integer$) Нашинковать]
-
-}
-
-// HASH_VALUE A28BC482C1016503
-RPJOB_C_MIRROR (int integer)
-{
-		rpjob_c_mirror	[$integer$) Зеркало]
-
-}
-
-// HASH_VALUE CC55164730BB1397
-RPJOB_C_MODERATELY (int integer)
-{
-		rpjob_c_moderately	[$integer$) Грубый помол]
-
-}
-
-// HASH_VALUE 2C3A829335879FF8
-RPJOB_C_MULTICOLORED (int integer)
-{
-		rpjob_c_multicolored	[$integer$) Разноцветный]
-
-}
-
-// HASH_VALUE C2A23C47B90E6FD4
-RPJOB_C_NATIONAL_RESERVES (int integer)
-{
-		rpjob_c_national_reserves	[$integer$) Запасы государства]
-
-}
-
-// HASH_VALUE EDAA26A1633997F0
-RPJOB_C_NECTAR_FRUIT (int integer)
-{
-		rpjob_c_nectar_fruit	[$integer$) Фруктовый нектар]
-
-}
-
-// HASH_VALUE BCCDE66A410F3DD6
-RPJOB_C_NOTHING (int integer)
-{
-		rpjob_c_nothing	[$integer$) Ничего]
-
-}
-
-// HASH_VALUE BA8DCC8442EB0275
-RPJOB_C_NO_CUT (int integer)
-{
-		rpjob_c_no_cut	[$integer$) Не срезать цветок]
-
-}
-
-// HASH_VALUE 2B3DF26B04D57237
-RPJOB_C_ON_BACK (int integer)
-{
-		rpjob_c_on_back	[$integer$) На спине]
-
-}
-
-// HASH_VALUE E5CD03A1C5AE0D88
-RPJOB_C_OPEN_PETALS (int integer)
-{
-		rpjob_c_open_petals	[$integer$) Раскрыть лепестки]
-
-}
-
-// HASH_VALUE 76298450E1DC6E17
-RPJOB_C_OUTDOOR_MEKTOUB (int integer)
-{
-		rpjob_c_outdoor_mektoub	[$integer$) На ездовом мектубе]
-
-}
-
-// HASH_VALUE 2C47E268BF6FDD3A
-RPJOB_C_PAINTING (int integer)
-{
-		rpjob_c_painting	[$integer$) Раскраска]
-
-}
-
-// HASH_VALUE 4A531C3D8AD96FC3
-RPJOB_C_PARCHMENT_FIBROUS (int integer)
-{
-		rpjob_c_parchment_fibrous	[$integer$) Волокнистый пергамент]
-
-}
-
-// HASH_VALUE 152B43F724300BD9
-RPJOB_C_PASTE_AMBER (int integer)
-{
-		rpjob_c_paste_amber	[$integer$) Склеить смолой]
-
-}
-
-// HASH_VALUE 59AB87F32541DBEE
-RPJOB_C_PASTE_RESIN (int integer)
-{
-		rpjob_c_paste_resin	[$integer$) Склеить каучуком]
-
-}
-
-// HASH_VALUE 8274123073880976
-RPJOB_C_PASTE_SAP (int integer)
-{
-		rpjob_c_paste_sap	[$integer$) Склеить сэпом]
-
-}
-
-// HASH_VALUE 8AFA4D66C9A53727
-RPJOB_C_PASTE_SECRETIONS (int integer)
-{
-		rpjob_c_paste_secretions	[$integer$) Склеить выделениями]
-
-}
-
-// HASH_VALUE 638BC87D41E03D02
-RPJOB_C_PELVIS (int integer)
-{
-		rpjob_c_pelvis	[$integer$) Тазовые кости]
-
-}
-
-// HASH_VALUE 73AF14C1031A5D17
-RPJOB_C_PINK (int integer)
-{
-		rpjob_c_pink	[$integer$) Розовый]
-
-}
-
-// HASH_VALUE 1135CE6BD7A101F8
-RPJOB_C_POLISHING (int integer)
-{
-		rpjob_c_polishing	[$integer$) Полировка]
-
-}
-
-// HASH_VALUE D97CAF9B51ED156A
-RPJOB_C_PULL_ROPE (int integer)
-{
-		rpjob_c_pull_rope	[$integer$) Волоком]
-
-}
-
-// HASH_VALUE 1454FFECF51BEA70
-RPJOB_C_PUNCHEST (int integer)
-{
-		rpjob_c_punchest	[$integer$) Просолить]
-
-}
-
-// HASH_VALUE 638BE0803D709512
-RPJOB_C_PURIFY (int integer)
-{
-		rpjob_c_purify	[$integer$) Отбелить]
-
-}
-
-// HASH_VALUE C841126E96A045FB
-RPJOB_C_PYR_BATHS (int integer)
-{
-		rpjob_c_pyr_baths	[$integer$) Бани Пайра]
-
-}
-
-// HASH_VALUE 55F5EE561B6121E3
-RPJOB_C_RAINWATER (int integer)
-{
-		rpjob_c_rainwater	[$integer$) Дождевая вода]
-
-}
-
-// HASH_VALUE D0B4D653B58C97D8
-RPJOB_C_RANGER_RESERVE (int integer)
-{
-		rpjob_c_ranger_reserve	[$integer$) Запасы рейнджеров]
-
-}
-
-// HASH_VALUE E5FB66917997F2FA
-RPJOB_C_RAW_PIGMENTS (int integer)
-{
-		rpjob_c_raw_pigments	[$integer$) Пигмент]
-
-}
-
-// HASH_VALUE 320FF5BD95C1BCA3
-RPJOB_C_RED (int integer)
-{
-		rpjob_c_red	[$integer$) Красный]
-
-}
-
-// HASH_VALUE E82713D1D21CCDF4
-RPJOB_C_RED_BLACK (int integer)
-{
-		rpjob_c_red_black	[$integer$) Красный и черный]
-
-}
-
-// HASH_VALUE E38B90743FAF2504
-RPJOB_C_REFINE (int integer)
-{
-		rpjob_c_refine	[$integer$) Очистить]
-
-}
-
-// HASH_VALUE C04D06633E7F2DCC
-RPJOB_C_RELIEFS (int integer)
-{
-		rpjob_c_reliefs	[$integer$) Рельеф]
-
-}
-
-// HASH_VALUE 7252D59A8199F676
-RPJOB_C_REMOVE_SOME_PETALS (int integer)
-{
-		rpjob_c_remove_some_petals	[$integer$) Удалить некоторые лепестки]
-
-}
-
-// HASH_VALUE 3F3E227D42D049D6
-RPJOB_C_ROSTRUM (int integer)
-{
-		rpjob_c_rostrum	[$integer$) Клюв]
-
-}
-
-// HASH_VALUE 2311CC01E4D930AF
-RPJOB_C_S1_170 (int integer)
-{
-		rpjob_c_s1_170	[$integer$) 1 к 170]
-
-}
-
-// HASH_VALUE 2311CC0BE4D930AF
-RPJOB_C_S1_175 (int integer)
-{
-		rpjob_c_s1_175	[$integer$) 1 к 175]
-
-}
-
-// HASH_VALUE 2311CC0166D930AF
-RPJOB_C_S1_180 (int integer)
-{
-		rpjob_c_s1_180	[$integer$) 1 к 180]
-
-}
-
-// HASH_VALUE 2311CC0BE6D930AF
-RPJOB_C_S1_195 (int integer)
-{
-		rpjob_c_s1_195	[$integer$) 1 к 195]
-
-}
-
-// HASH_VALUE 2311CC0162F930AF
-RPJOB_C_S1_200 (int integer)
-{
-		rpjob_c_s1_200	[$integer$) 1 к 200]
-
-}
-
-// HASH_VALUE 1511CE67DB7001F4
-RPJOB_C_SAP_TREES (int integer)
-{
-		rpjob_c_sap_trees	[$integer$) Древесный]
-
-}
-
-// HASH_VALUE 3F3DF65C01DF51C8
-RPJOB_C_SATCHEL (int integer)
-{
-		rpjob_c_satchel	[$integer$) Мешок]
-
-}
-
-// HASH_VALUE 1165F26BD7D125F8
-RPJOB_C_SCULPTING (int integer)
-{
-		rpjob_c_sculpting	[$integer$) Отливка]
-
-}
-
-// HASH_VALUE 238BB47E01001105
-RPJOB_C_SEASON (int integer)
-{
-		rpjob_c_season	[$integer$) Завялить]
-
-}
-
-// HASH_VALUE 108567C90A729C8A
-RPJOB_C_SHARPENING (int integer)
-{
-		rpjob_c_sharpening	[$integer$) Заточка]
-
-}
-
-// HASH_VALUE 261B0B72774D2E76
-RPJOB_C_SHOOKI_LEAF (int integer)
-{
-		rpjob_c_shooki_leaf	[$integer$) Лист шукки]
-
-}
-
-// HASH_VALUE 98531D59374CEFE2
-RPJOB_C_SHOOKI_LIQUEUR (int integer)
-{
-		rpjob_c_shooki_liqueur	[$integer$) Настойка шукки]
-
-}
-
-// HASH_VALUE 33DF14C1031A5515
-RPJOB_C_SILK (int integer)
-{
-		rpjob_c_silk	[$integer$) Шелк]
-
-}
-
-// HASH_VALUE B486AA4AAFDB3B2C
-RPJOB_C_SINGLE_BOX (int integer)
-{
-		rpjob_c_single_box	[$integer$) Коробка]
-
-}
-
-// HASH_VALUE E49ED3C1795CAE9C
-RPJOB_C_SINGLE_FLOWER (int integer)
-{
-		rpjob_c_single_flower	[$integer$) Единственный цветок]
-
-}
-
-// HASH_VALUE 714B2477455F4914
-RPJOB_C_SKINS (int integer)
-{
-		rpjob_c_skins	[$integer$) Шкуры]
-
-}
-
-// HASH_VALUE A5426E53F1CD5300
-RPJOB_C_SLAVENI_JUICE (int integer)
-{
-		rpjob_c_slaveni_juice	[$integer$) Сок словини]
-
-}
-
-// HASH_VALUE EA87C2991405A045
-RPJOB_C_SOAK_SAP (int integer)
-{
-		rpjob_c_soak_sap	[$integer$) Вымочить в сэпе]
-
-}
-
-// HASH_VALUE 649DE24EB5276BEB
-RPJOB_C_SPECIES_PLANTS (int integer)
-{
-		rpjob_c_species_plants	[$integer$) Цветочный]
-
-}
-
-// HASH_VALUE 6A6C6E487707C3FB
-RPJOB_C_SPRING_WATER (int integer)
-{
-		rpjob_c_spring_water	[$integer$) Вода из ручья]
-
-}
-
-// HASH_VALUE ADAB464234F72205
-RPJOB_C_STINGA_MOUSS (int integer)
-{
-		rpjob_c_stinga_mouss	[$integer$) Мох стинги]
-
-}
-
-// HASH_VALUE 3E2E4C04627ABBC6
-RPJOB_C_S_1_185 (int integer)
-{
-		rpjob_c_s_1_185	[$integer$) 1/185-ая]
-
-}
-
-// HASH_VALUE 3E2E2406627ABBC6
-RPJOB_C_S_1_190 (int integer)
-{
-		rpjob_c_s_1_190	[$integer$) 1/190-ая]
-
-}
-
-// HASH_VALUE F34B2477C1212908
-RPJOB_C_TEETH (int integer)
-{
-		rpjob_c_teeth	[$integer$) Зубы]
-
-}
-
-// HASH_VALUE F34B247741FF490E
-RPJOB_C_THICK (int integer)
-{
-		rpjob_c_thick	[$integer$) Толстая]
-
-}
-
-// HASH_VALUE F34B2477C3E1790E
-RPJOB_C_THORN (int integer)
-{
-		rpjob_c_thorn	[$integer$) Шип]
-
-}
-
-// HASH_VALUE 2F373BCCC4A01165
-RPJOB_C_TIE_FIBER (int integer)
-{
-		rpjob_c_tie_fiber	[$integer$) Подвязать волокном]
-
-}
-
-// HASH_VALUE A3F786F6FF4B7BF8
-RPJOB_C_TIGHT_LEATHER (int integer)
-{
-		rpjob_c_tight_leather	[$integer$) Выделанная кожа]
-
-}
-
-// HASH_VALUE 1307E678D9731905
-RPJOB_C_TURQUOISE (int integer)
-{
-		rpjob_c_turquoise	[$integer$) Лазурь]
-
-}
-
-// HASH_VALUE F34B2477453F9900
-RPJOB_C_VASES (int integer)
-{
-		rpjob_c_vases	[$integer$) Ваза]
-
-}
-
-// HASH_VALUE CEE58FC90B02A492
-RPJOB_C_VEGETATION (int integer)
-{
-		rpjob_c_vegetation	[$integer$) Растительность]
-
-}
-
-// HASH_VALUE 31D9434631CD5A95
-RPJOB_C_VERY_BIG_BARREL (int integer)
-{
-		rpjob_c_very_big_barrel	[$integer$) Очень большая бочка]
-
-}
-
-// HASH_VALUE 4EC66E236C9E9284
-RPJOB_C_VERY_FINELY (int integer)
-{
-		rpjob_c_very_finely	[$integer$) Фарш]
-
-}
-
-// HASH_VALUE AB1C5DA10E9E8BEA
-RPJOB_C_VERY_GROSSLY (int integer)
-{
-		rpjob_c_very_grossly	[$integer$) Крупно]
-
-}
-
-// HASH_VALUE AC09D68E8725E7E6
-RPJOB_C_VERY_LITTLE (int integer)
-{
-		rpjob_c_very_little	[$integer$) Чуть-чуть]
-
-}
-
-// HASH_VALUE 2DD96E4FF8B6BBE0
-RPJOB_C_VERY_LITTLE_2 (int integer)
-{
-		rpjob_c_very_little_2	[$integer$) Крохотная]
-
-}
-
-// HASH_VALUE E48BCC7ABE6F590C
-RPJOB_C_VIOLET (int integer)
-{
-		rpjob_c_violet	[$integer$) Фиолетовый]
-
-}
-
-// HASH_VALUE 2B2814335DF7999F
-RPJOB_C_WARM_AMBER (int integer)
-{
-		rpjob_c_warm_amber	[$integer$) Янтарный лак]
-
-}
-
-// HASH_VALUE 36CF09BD95C1F89F
-RPJOB_C_WAS (int integer)
-{
-		rpjob_c_was	[$integer$) Сосуд]
-
-}
-
-// HASH_VALUE 734B2477C53FA100
-RPJOB_C_WATER (int integer)
-{
-		rpjob_c_water	[$integer$) Вода]
-
-}
-
-// HASH_VALUE 9665DA545CD10DA2
-RPJOB_C_WATER_DEW (int integer)
-{
-		rpjob_c_water_dew	[$integer$) Роса]
-
-}
-
-// HASH_VALUE 25FB8690A718FBF7
-RPJOB_C_WATER_PLANTS (int integer)
-{
-		rpjob_c_water_plants	[$integer$) Цветочный сок]
-
-}
-
-// HASH_VALUE CE1647C70BC2D382
-RPJOB_C_WATER_POND (int integer)
-{
-		rpjob_c_water_pond	[$integer$) Вода из пруда]
-
-}
-
-// HASH_VALUE 4EE653D688411042
-RPJOB_C_WELL_WATER (int integer)
-{
-		rpjob_c_well_water	[$integer$) Колодезная вода]
-
-}
-
-// HASH_VALUE 93F6C274BD2E4CD4
-RPJOB_C_WILDLIFE (int integer)
-{
-		rpjob_c_wildlife	[$integer$) Фауна]
-
-}
-
-// HASH_VALUE B51F14C103AA451E
-RPJOB_C_WOOD (int integer)
-{
-		rpjob_c_wood	[$integer$) Дерево]
-
-}
-
-// HASH_VALUE 248BB474BCEF7113
-RPJOB_C_WOODEN (int integer)
-{
-		rpjob_c_wooden	[$integer$) Дерево]
-
-}
-
-// HASH_VALUE 4145AE7CD6B1E109
-RPJOB_C_YUBO_SKIN (int integer)
-{
-		rpjob_c_yubo_skin	[$integer$) Шкура юбо]
-
-}
-
-// HASH_VALUE 2BAC2E92F514FFE4
-RPJOB_C_ZERX_LEATHER (int integer)
-{
-		rpjob_c_zerx_leather	[$integer$) Кожа зеркса]
-
-}
-
-// HASH_VALUE 97FFF82275A44FCF
-RPJOB_DOWNGRADED (item special_amber)
-{
-		rpjob_downgraded	[Вам не удалось улучшить свои компоненты, при этом половина из них была утрачена. Вы можете использовать $special_amber$ (полученный во время работы в качестве Ученика картографа) для того, чтобы обеспечить сохранность компонентов даже в случае неудачи.]
-
-}
-
-// HASH_VALUE 4AC5A2A11287557C
-RPJOB_DOWNGRADED_EXTRA (item special_amber)
-{
-		rpjob_downgraded_extra	[Вам не удалось улучшить свои компоненты, но ваш $special_amber$ сохранил их в целости.]
-
-}
-
-// HASH_VALUE 0472E431767F3D17
-RPJOB_ECHELON_TITLE (bot giver, int echelon, item jobitem)
-{
-	( self.gender = male )
-		rpjob_echelon_title_m	[Работайте в качестве $jobitem.twogen$ (Разряд $echelon$)]
-
-	( self.gender = female )
-		rpjob_echelon_title_f	[Работайте в качестве $jobitem.twogen$ (Разряд $echelon$)]
-
-}
-
-// HASH_VALUE B24B4D19F7B5AFD8
-RPJOB_FINISH_TASK (item jobitem)
-{
-	( self.gender = male )
-		rpjob_finish_task_m	[&AMB&Вы приобрели компоненты, необходимые для работы в качестве $jobitem.twogen$]
-
-	( self.gender = female )
-		rpjob_finish_task_f	[&AMB&Вы приобрели компоненты, необходимые для работы в качестве $jobitem.twogen$]
-
-}
-
-// HASH_VALUE 5CE0A63B3DBE413D
-RPJOB_FX_RESCUE ()
-{
-		rpjob_fx_rescue	[<BPFX>mag_cur_impact_healhp.ps]
-
-}
-
-// HASH_VALUE B9AC2F3D15D978E1
-RPJOB_FX_RESIGN (bot player)
-{
-		rpjob_fx_resign	[<BPFX>$player$ Sp_Neutre_End_Fizzle.ps]
-
-}
-
-// HASH_VALUE 029B14E0EA8AB9D2
-RPJOB_FX_SIGN (bot player)
-{
-		rpjob_fx_sign	[<BPFX>$player$ Sp_Neutre_End_Fumble.ps]
-
-}
-
-// HASH_VALUE A55EF691E2F84505
-RPJOB_GET_CHEST ()
-{
-		rpjob_get_chest	[Достать из сундука содержимое]
-
-}
-
-// HASH_VALUE 2F0015298709B009
-RPJOB_GET_FERTILIZER ()
-{
-		rpjob_get_fertilizer	[Добудьте удобрения там, куда указывает ваш компас]
-
-}
-
-// HASH_VALUE C212BF5E35249422
-RPJOB_GET_FERTILIZER_ON_BARREL ()
-{
-		rpjob_get_fertilizer_on_barrel	[Используйте удобрения из бочки для того, чтобы удобрить цветы]
-
-}
-
-// HASH_VALUE EA57826120548512
-RPJOB_GET_RAINWATER ()
-{
-		rpjob_get_rainwater	[Добудьте дождевую воду там, куда указывает ваш компас]
-
-}
-
-// HASH_VALUE 85986313D3C5B15A
-RPJOB_GET_WATER_LAKE ()
-{
-		rpjob_get_water_lake	[Добудьте воду из озера там, куда указывает ваш компас]
-
-}
-
-// HASH_VALUE 792F92CF4E62DBD8
-RPJOB_GET_WATER_ON_BARREL ()
-{
-		rpjob_get_water_on_barrel	[Используйте воду из бочки для того, чтобы полить цветы]
-
-}
-
-// HASH_VALUE 2A9204E2183DBBCF
-RPJOB_GET_WATER_SOURCE ()
-{
-		rpjob_get_water_source	[Добудьте воду из источника, указанного компасом]
-
-}
-
-// HASH_VALUE ABB313B57ECEE7F4
-RPJOB_GET_WATER_WELL ()
-{
-		rpjob_get_water_well	[Добудьте воду из колодца, указанного компасом]
-
-}
-
-// HASH_VALUE 59D1002DC8301E2A
-RPJOB_HAVE_4_4_ELEMENTS (bot convert, item element, item other_element)
-{
-		rpjob_have_4_4_elements	[@{W300}Отлично! Теперь у вас есть @{5F5F}4 $element.twogen$ и 4 $other_element.twogen$@{FFFF}.\n
-			\n
-			Вы можете использовать @{55FF}$convert$@{FFFF}, для изготовления предметов, или продолжить приобретение компонентов.\n
-			\n
-			Вы можете попытаться улучшить компоненты, рядом есть @{55FF}$convert$@{FFFF}, но это рискованный процесс! Если улучшить компонент не удается, он приходит в негодность.\n
-			Вероятность успешного улучшения компонентов не столь велика, но если вы преуспеете, у вас появится возможность изготовить более совершенные предметы и получить больше опыта.]
-
-}
-
-// HASH_VALUE 5C5D9FC97CD053D6
-RPJOB_HAVE_4_ELEMENTS (bot convert, item element)
-{
-		rpjob_have_4_elements	[@{W300}Отлично! Теперь у вас есть @{5F5F}4 $element.twogen$@{FFFF}.\n
-			\n
-			Вы можете попытаться улучшить их, рядом есть @{55FF}$convert$@{FFFF}, или продолжить приобретение компонентов.\n
-			\n
-			@{F55F}Улучшение компонентов - рискованный процесс!@{FFFF}. Если улучшить компонент не удается, он приходит в негодность.\n
-			\n
-			Вероятность успешного улучшения компонентов не столь велика, но если вы преуспеете, у вас появится возможность изготовить более совершенные предметы и получить больше опыта.\n
-			\n
-			Не забудьте: чтобы получить еще больше компонентов, нужно выполнять задания снова и снова.]
-
-}
-
-// HASH_VALUE A42D899F8B115E00
-RPJOB_HAVE_CERTIFS (item certifs)
-{
-		rpjob_have_certifs	[Мне удалось выиграть $certifs.p$]
-
-}
-
-// HASH_VALUE F54A85B981CF0294
-RPJOB_HIGHEST_LEVEL (int echelon)
-{
-		rpjob_highest_level	[Ваш текущий разряд превышает $echelon$. Хотите продолжить?]
-
-}
-
-// HASH_VALUE 7CE86AD211B6EEF0
-RPJOB_H_ADDITIONAL_INFORMATIONS ()
-{
-		rpjob_h_additional_informations	[Дополнительная информация]
-
-}
-
-// HASH_VALUE F50F890E2AEDF8FC
-RPJOB_H_ADD_ELEMENT ()
-{
-		rpjob_h_add_element	[Дополнительный компонент]
-
-}
-
-// HASH_VALUE F080BDE6C35EE1FC
-RPJOB_H_APPLICATION_TIME ()
-{
-		rpjob_h_application_time	[Необходимое время]
-
-}
-
-// HASH_VALUE 2C1808A69E4858AC
-RPJOB_H_ASSEMBLAGE ()
-{
-		rpjob_h_assemblage	[Сборка]
-
-}
-
-// HASH_VALUE C0CF091C5FC46B90
-RPJOB_H_BANDAGE_LENGHT ()
-{
-		rpjob_h_bandage_lenght	[Длина бинта]
-
-}
-
-// HASH_VALUE 55E9C8A920C98459
-RPJOB_H_BANDAGE_TYPE ()
-{
-		rpjob_h_bandage_type	[Тип бинта]
-
-}
-
-// HASH_VALUE 6A4811236288804B
-RPJOB_H_BANDAGE_WIDTH ()
-{
-		rpjob_h_bandage_width	[Ширина бинта]
-
-}
-
-// HASH_VALUE 2D1A98A064B5A4A3
-RPJOB_H_BAUME ()
-{
-		rpjob_h_baume	[Бальзам]
-
-}
-
-// HASH_VALUE A7BB208AD0E9C866
-RPJOB_H_BOX_TYPE ()
-{
-		rpjob_h_box_type	[Упаковка]
-
-}
-
-// HASH_VALUE 6919B8A36826C8A9
-RPJOB_H_COLORS ()
-{
-		rpjob_h_colors	[Цвета]
-
-}
-
-// HASH_VALUE 4671B918A3B139C0
-RPJOB_H_CREATE_BOUQUET ()
-{
-		rpjob_h_create_bouquet	[Собрать букет]
-
-}
-
-// HASH_VALUE 9F6A60B32B898CB1
-RPJOB_H_CUT ()
-{
-		rpjob_h_cut	[Подготовка]
-
-}
-
-// HASH_VALUE 630A98AD6A0ABC9F
-RPJOB_H_DESTINATION ()
-{
-		rpjob_h_destination	[Место назначения]
-
-}
-
-// HASH_VALUE A0DABFA6AB3894AF
-RPJOB_H_DRYING_TIME ()
-{
-		rpjob_h_drying_time	[Время засушивания]
-
-}
-
-// HASH_VALUE 02BF75075D3B55C1
-RPJOB_H_FINAL_TREATMENT ()
-{
-		rpjob_h_final_treatment	[Окончательная обработка]
-
-}
-
-// HASH_VALUE 345F3A6EA6EDA108
-RPJOB_H_HANDLE_MATERIAL ()
-{
-		rpjob_h_handle_material	[Материал рукояти]
-
-}
-
-// HASH_VALUE 68E807B32755CC9F
-RPJOB_H_INK_COLOR ()
-{
-		rpjob_h_ink_color	[Цвет туши]
-
-}
-
-// HASH_VALUE 6725C81B1338C48D
-RPJOB_H_LARVAE_SIZE ()
-{
-		rpjob_h_larvae_size	[Тип личинки]
-
-}
-
-// HASH_VALUE D683B160223974C0
-RPJOB_H_LONG_DISTANCE_CONTAINER ()
-{
-		rpjob_h_long_distance_container	[Контейнеры для дальних перевозок]
-
-}
-
-// HASH_VALUE 59450D8AE1003570
-RPJOB_H_MAIN_MATERIAL ()
-{
-		rpjob_h_main_material	[Материал для основного компонента]
-
-}
-
-// HASH_VALUE 6A9A8C9E609A04A0
-RPJOB_H_MARINATE ()
-{
-		rpjob_h_marinate	[Маринад]
-
-}
-
-// HASH_VALUE A70A6CB027A764A2
-RPJOB_H_PACKAGING ()
-{
-		rpjob_h_packaging	[Оболочка]
-
-}
-
-// HASH_VALUE EA40141D6B551CB6
-RPJOB_H_PAPER_TYPE ()
-{
-		rpjob_h_paper_type	[Тип пергамента]
-
-}
-
-// HASH_VALUE 6C4A68B7A369889D
-RPJOB_H_PREPARING ()
-{
-		rpjob_h_preparing	[Отрезать]
-
-}
-
-// HASH_VALUE AC97E8C5E4C974A8
-RPJOB_H_PROJECTION ()
-{
-		rpjob_h_projection	[Проекция]
-
-}
-
-// HASH_VALUE F0D88CCAE898046A
-RPJOB_H_SALT ()
-{
-		rpjob_h_salt	[Соль]
-
-}
-
-// HASH_VALUE EA1A60B9DA383892
-RPJOB_H_SCALE ()
-{
-		rpjob_h_scale	[Масштаб]
-
-}
-
-// HASH_VALUE 5AF3A5B451AC2404
-RPJOB_H_SHORT_DISTANCE_MATERIALS ()
-{
-		rpjob_h_short_distance_materials	[Материалы для местных перевозок]
-
-}
-
-// HASH_VALUE C6FFA523E3F7479B
-RPJOB_H_SOAKING_LIQUID ()
-{
-		rpjob_h_soaking_liquid	[Жидкость для вымачивания]
-
-}
-
-// HASH_VALUE 6928F4792219BC83
-RPJOB_H_SOAKING_TIME ()
-{
-		rpjob_h_soaking_time	[Время вымачивания]
-
-}
-
-// HASH_VALUE A9DA14C4242B94AB
-RPJOB_H_SUPPORT ()
-{
-		rpjob_h_support	[Основа]
-
-}
-
-// HASH_VALUE 6919A4CD69CA909E
-RPJOB_H_TEMPERATURE ()
-{
-		rpjob_h_temperature	[Температура]
-
-}
-
-// HASH_VALUE 9F752687836A598F
-RPJOB_H_TRANSPORT_METHOD ()
-{
-		rpjob_h_transport_method	[Способ транспортировки]
-
-}
-
-// HASH_VALUE EAA95BBFACF624B8
-RPJOB_H_WATER_TYPE ()
-{
-		rpjob_h_water_type	[Тип воды]
-
-}
-
-// HASH_VALUE 027B4131E1F74B9D
-RPJOB_H_WORKING_HANDLE ()
-{
-		rpjob_h_working_handle	[Отделка рукояти]
-
-}
-
-// HASH_VALUE B3BF1E047C9F35FF
-RPJOB_H_WORKING_MAIN ()
-{
-		rpjob_h_working_main	[Отделка рабочей части]
-
-}
-
-// HASH_VALUE 6AA948BAA9A8D8A4
-RPJOB_INFORMATION ()
-{
-		rpjob_information	[Информация]
-
-}
-
-// HASH_VALUE 1FC29495DB5A5653
-RPJOB_I_WILL_LOOK_THAT ()
-{
-		rpjob_i_will_look_that	[Я взгляну на это.]
-
-}
-
-// HASH_VALUE 36C20FCD79EA2E74
-RPJOB_JOB_INFOS (int jobid)
-{
-		rpjob_job_infos	[WEB : app_rpjobs jobid=$jobid$&action=infos]
-
-}
-
-// HASH_VALUE FDD8CE7993254409
-RPJOB_MAIN_DESC (bot giver, item jobitem)
-{
-	( self.gender = male )
-		rpjob_main_desc_m	[Приступить к работе в качестве $jobitem.twogen$]
-
-	( self.gender = female )
-		rpjob_main_desc_f	[Приступить к работе в качестве $jobitem.twogen$]
-
-}
-
-// HASH_VALUE 7C453688EF7F4B48
-RPJOB_MAIN_TITLE (bot giver, item jobitem)
-{
-	( self.gender = male )
-		rpjob_main_title_m	[Работа: $jobitem$]
-
-	( self.gender = female )
-		rpjob_main_title_f	[Работа: $jobitem$]
-
-}
-
-// HASH_VALUE 1F5390460DDC06D2
-RPJOB_NO_ELEMENTS ()
-{
-		rpjob_no_elements	[К сожалению, у вас нет достаточного количества компонентов. Мне нужны 4 компонента.]
-
-}
-
-// HASH_VALUE 297A4B58B8AD070D
-RPJOB_NO_ELEMENTS_CONVERT (item element_1, item element_2)
-{
-		rpjob_no_elements_convert	[К сожалению, у вас нет достаточного количества компонентов. Мне нужны:\n
-			4 $element_1.twogen$\n
-			и\n
-			4 $element_2.twogen$.]
-
-}
-
-// HASH_VALUE A1AF6B9275162F68
-RPJOB_NO_INSTRUCTIONS ()
-{
-		rpjob_no_instructions	[(Если вы не получили никаких инструкций, вам придется прервать задание и взять его заново.)]
-
-}
-
-// HASH_VALUE 6934540200E7FC5C
-RPJOB_NO_JOB (item jobitem)
-{
-	( self.gender = male )
-		rpjob_no_job_m	[Вы не $jobitem$!]
-
-	( self.gender = female )
-		rpjob_no_job_f	[Вы не $jobitem$!]
-
-}
-
-// HASH_VALUE BD594E07920C519A
-RPJOB_NO_LEVEL ()
-{
-		rpjob_no_level	[Ваш разряд недостаточен для осуществления этого действия.]
-
-}
-
-// HASH_VALUE B41BBC2FE3BC9C29
-RPJOB_NO_WANT ()
-{
-		rpjob_no_want	[Нет, спасибо, пока не надо.]
-
-}
-
-// HASH_VALUE 291AD4B4ABDABCAB
-RPJOB_RECIPE_RESULT ()
-{
-		rpjob_recipe_result	[xxx]
-
-}
-
-// HASH_VALUE 297BF8AD6A5A8C95
-RPJOB_RECIPE_RESULT_BASIC ()
-{
-		rpjob_recipe_result_basic	[xxx]
-
-}
-
-// HASH_VALUE BA58BB727EEAAFB8
-RPJOB_RECIPE_RESULT_BOT_CHAT ()
-{
-		rpjob_recipe_result_bot_chat	[Качество этого рецепта -]
-
-}
-
-// HASH_VALUE AB5BC49BE60BB896
-RPJOB_RECIPE_USED ()
-{
-		rpjob_recipe_used	[xxx]
-
-}
-
-// HASH_VALUE 438F341F01F2F40D
-RPJOB_RECIPE_USED_BOT_CHAT ()
-{
-		rpjob_recipe_used_bot_chat	[Вы используете рецепт ]
-
-}
-
-// HASH_VALUE C9CBAA6EE9E17FAD
-RPJOB_RESCUE_NPC ()
-{
-		rpjob_rescue_npc	[Практикуйтесь в оказании первой помощи там, куда указывает ваш компас]
-
-}
-
-// HASH_VALUE 52D304F05F25711D
-RPJOB_RESIGN_POPUP (item jobitem)
-{
-	( self.gender = male )
-		rpjob_resign_popup_m	[&AMB&Вы больше не $jobitem$.]
-
-	( self.gender = female )
-		rpjob_resign_popup_f	[&AMB&Вы больше не $jobitem$.]
-
-}
-
-// HASH_VALUE 6C007935F952C3F1
-RPJOB_RESIGN_THIS_RPJOB (item jobitem, item special_item)
-{
-	( self.gender = male )
-		rpjob_resign_this_rpjob_m	[Ты больше не хочешь работать в качестве $jobitem.twogen$ или тебе нужен еще один $special_item$?]
-
-	( self.gender = female )
-		rpjob_resign_this_rpjob_f	[Вы больше не хотите работать в качестве $jobitem.twogen$ или тебе нужен еще один $special_item$?]
-
-}
-
-// HASH_VALUE B90D76302FC44FF8
-RPJOB_ROLEPLAY_OBJ ()
-{
-		rpjob_roleplay_obj	[\n
-			(Если у вас есть 4 компонента, вы можете сделать эти компоненты лучше, или изготовить из них предмет, при помощи стола, или другого объекта возле вашего инструктора.\n
-			\n
-			Вы можете и дальше выполнять это задание, получая дополнительные компоненты. Это задание завершается только после того, как вы вышли из игры и подключились к игре повторно. При желании, вы можете в любой момент получить это задание снова.]
-
-}
-
-// HASH_VALUE B8A1E7D8758CB038
-RPJOB_ROLEPLAY_OBJ_1 ()
-{
-		rpjob_roleplay_obj_1	[\n
-			(Если у вас есть 4 компонента, вы можете сделать эти компоненты лучше, или изготовить из них предмет, при помощи стола, или другого объекта возле вашего инструктора.\n
-			\n
-			Вы можете и дальше выполнять это задание, получая дополнительные компоненты. Это задание завершается только после того, как вы вышли из игры и подключились к игре повторно. При желании, вы можете в любой момент получить это задание снова.]
-
-}
-
-// HASH_VALUE F8A1E7D8758CB038
-RPJOB_ROLEPLAY_OBJ_2 ()
-{
-		rpjob_roleplay_obj_2	[\n
-			(Если у вас есть 4 компонента, вы можете сделать эти компоненты лучше, или изготовить из них предмет, при помощи стола, или другого объекта возле вашего инструктора.\n
-			\n
-			Вы можете и дальше выполнять это задание, получая дополнительные компоненты. Это задание завершается только после того, как вы вышли из игры и подключились к игре повторно. При желании, вы можете в любой момент получить это задание снова.]
-
-}
-
-// HASH_VALUE 38A1E7D8758CB038
-RPJOB_ROLEPLAY_OBJ_3 ()
-{
-		rpjob_roleplay_obj_3	[\n
-			(Если у вас есть 4 компонента, вы можете сделать эти компоненты лучше, или изготовить из них предмет, при помощи стола, или другого объекта возле вашего инструктора.\n
-			\n
-			Вы можете и дальше выполнять это задание, получая дополнительные компоненты. Это задание завершается только после того, как вы вышли из игры и подключились к игре повторно. При желании, вы можете в любой момент получить это задание снова.]
-
-}
-
-// HASH_VALUE 7CA69642774DD5F4
-RPJOB_SEE_ME_YOUR_WORK ()
-{
-		rpjob_see_me_your_work	[Отлично! Позволь-ка взглянуть.]
-
-}
-
-// HASH_VALUE D72724BFB0CC4163
-RPJOB_SELECT_RECIPE ()
-{
-		rpjob_select_recipe	[Делайте выбор из доступных действий, составляя наилучшую комбинацию методом проб и ошибок. Чем выше качество изделия, которое вам удастся изготовить, тем больше будет его ценность\n
-			\n
-			Ценность предмета выражается в процентах.\n
-			\n
-			Помните, для того, чтобы получить следующий разряд, вам нужно изготовить предмет, ценность которого составляет не менее 60%.]
-
-}
-
-// HASH_VALUE 97A4517C60F7E907
-RPJOB_SHOW_ELEMENTS ()
-{
-		rpjob_show_elements	[Улучшение компонентов - рискованное занятие! Если улучшить компоненты не удастся, половина компонентов будет утрачена.]
-
-}
-
-// HASH_VALUE 668A8DF5559D7B3F
-RPJOB_SIGN_CHAT (item jobitem, item special_item)
-{
-	( self.gender = male )
-		rpjob_sign_chat_m	[Теперь ты - $jobitem$!\n
-			Для того, чтобы ты мог развивать свое искуство как можно быстрее, я дам тебе два задания, в процессе выполнения которых ты без труда получишь компоненты, необходимые для работы в качестве $jobitem.twogen$.{break}Помимо этого, я даю тебе книгу о твоей новой профессии.\n
-			(Вы можете прочесть ее в веб-приложении "Занятия": Shift+W){break}Тебе понадобится $special_item.name$. Если тебе когда либо нужно будет получить этот предмет снова, обращайся ко мне.\n
-			(Старайтесь не прерывать выполнение миссии, поскольку в процессе у вас появится возможность получать дополнительные $special_item.p$){break}Наконец, если ты хочешь отказаться от выбранного занятия, приходи ко мне по истечении 2 дней.]
-
-	( self.gender = female )
-		rpjob_sign_chat_f	[Теперь ты - $jobitem$!\n
-			Для того, чтобы ты могла развивать свое искуство как можно быстрее, я дам тебе два задания, в процессе выполнения которых ты без труда получишь компоненты, необходимые для работы в качестве $jobitem.twogen$.{break}Помимо этого, я даю тебе книгу о твоей новой профессии.\n
-			(Вы можете прочесть ее в веб-приложении "Занятия": Shift+W){break}Тебе понадобится $special_item.name$. Если тебе когда либо нужно будет получить этот предмет снова, обращайся ко мне.\n
-			(Старайтесь не прерывать выполнение миссии, поскольку в процессе у вас появится возможность получать дополнительные $special_item.p$){break}Наконец, если ты хочешь отказаться от выбранного занятия, приходи ко мне по истечении 2 дней.]
-
-}
-
-// HASH_VALUE 3A522FDBAD4E3D64
-RPJOB_SIGN_POPUP (item jobitem)
-{
-	( self.gender = male )
-		rpjob_sign_popup_m	[&AMB&Поздравляем, теперь вы - $jobitem$!]
-
-	( self.gender = female )
-		rpjob_sign_popup_f	[&AMB&Поздравляем, теперь вы - $jobitem$!]
-
-}
-
-// HASH_VALUE 56D09440118D4C0E
-RPJOB_SIGN_THIS_RPJOB (item jobitem)
-{
-	( self.gender = male )
-		rpjob_sign_this_rpjob_m	[Хотите работать в качестве $jobitem.twogen$?]
-
-	( self.gender = female )
-		rpjob_sign_this_rpjob_f	[Хотите работать в качестве $jobitem.twogen$?]
-
-}
-
-// HASH_VALUE 6E99E8B2A6C8A88B
-RPJOB_THANKS ()
-{
-		rpjob_thanks	[Спасибо]
-
-}
-
-// HASH_VALUE D8161C865FA82474
-RPJOB_TIMER_3 ()
-{
-		rpjob_timer_3	[ОТСЧЕТ 3]
-
-}
-
-// HASH_VALUE 86792C14687B11FF
-RPJOB_TIME_TO_BREAK ()
-{
-		rpjob_time_to_break	[Почему бы не сделать перерыв?]
-
-}
-
-// HASH_VALUE 9C2059501536C29C
-RPJOB_TOO_XP (bot master)
-{
-		rpjob_too_xp	[Вы получили максимально допустимое количество опыта для вашего разряда, попросите $master$ повысить вас.]
-
-}
-
-// HASH_VALUE 9F2DCF7FE7A747FC
-RPJOB_TOO_XP_FOR_CERTIFS (item certifs)
-{
-		rpjob_too_xp_for_certifs	[Вы почти достигли максимального уровня опыта для вашего разряда, поберегите ваши $certifs.p$ для следующего раза.]
-
-}
-
-// HASH_VALUE 7E2B1B484E4E99B2
-RPJOB_TOO_XP_NO_RECIPE ()
-{
-		rpjob_too_xp_no_recipe	[Вы получили максимально допустимое количество опыта для вашего разряда, но для того, чтобы повысить разряд, вам необходимо изготовить предмет, ценность которого составляет 60%.]
-
-}
-
-// HASH_VALUE A560D45C70D63F1D
-RPJOB_UNDER_UPGRADE ()
-{
-		rpjob_under_upgrade	[Отлично! Попробуем удучшить твои компоненты.]
-
-}
-
-// HASH_VALUE FAE5C571A4DFB05C
-RPJOB_UPGRADED (item special_water)
-{
-		rpjob_upgraded	[Хорошие новости! Вам удалось улучшить половину ваших компонентов. Если у вас будет $special_water$ (полученная во время работы подмастерьем водоноса) вы сможете улучшить все компоненты, которыми располагаете.]
-
-}
-
-// HASH_VALUE 7B236B64AF803286
-RPJOB_UPGRADED_EXTRA (item special_water)
-{
-		rpjob_upgraded_extra	[Отлично! При помощи $special_water$ вам удалось улучшить все свои компоненты.]
-
-}
-
-// HASH_VALUE 1EBD4A0F88EB1ABC
-RPJOB_UPGRADE_NO_MSG ()
-{
-		rpjob_upgrade_no_msg	[Действие не удалось. Попробуйте еще раз.]
-
-}
-
-// HASH_VALUE 4DF5F55984012137
-RPJOB_USE_BASIC_ELEMENTS ()
-{
-		rpjob_use_basic_elements	[Использовать базовые компоненты.]
-
-}
-
-// HASH_VALUE 2574BE012072A56E
-RPJOB_USE_BOOSTED_ELEMENTS ()
-{
-		rpjob_use_boosted_elements	[Использовать улучшенные компоненты.]
-
-}
-
-// HASH_VALUE 3FC26907F45A3A0A
-RPJOB_WAIT_NEW_INSTRUCTIONS (bot givervar)
-{
-		rpjob_wait_new_instructions	[Получите у $givervar$ новые инструкции...]
-
-}
-
-// HASH_VALUE AC9E420D484DE268
-RPJOB_WAIT_NEW_INSTRUCTIONS_1 (bot givervar)
-{
-		rpjob_wait_new_instructions_1	[Получите у $givervar$ новые инструкции...]
-
-}
-
-// HASH_VALUE 9649EC004FDA6178
-RPJOB_WANT_LEVEL_UP ()
-{
-		rpjob_want_level_up	[Да, к тому же я хочу повысить свой разряд.]
-
-}
-
-// HASH_VALUE 3C5F1789687BAFA8
-RPJOB_WANT_RESIGN (item jobitem)
-{
-	( self.gender = male )
-		rpjob_want_resign_m	[Я хочу отказаться от работы $jobitem.twogen$.]
-
-	( self.gender = female )
-		rpjob_want_resign_f	[Я хочу отказаться от работы $jobitem.twogen$.]
-
-}
-
-// HASH_VALUE 63EA4C96FAB9642A
-RPJOB_WANT_SPECIAL_ITEM (item special_item)
-{
-		rpjob_want_special_item	[Мне нужен другой экземпляр $special_item.twogen$.]
-
-}
-
-// HASH_VALUE CDCD824F7265E00A
-RPJOB_WANT_WIN_LEVEL ()
-{
-		rpjob_want_win_level	[Я достиг максимального опыта, доступного моему разряду.]
-
-}
-
-// HASH_VALUE 98D1E08D071C1C5B
-RPJOB_WHAT_DO_YOU_WANT ()
-{
-		rpjob_what_do_you_want	[Чем бы вы хотели заняться?]
-
-}
-
-// HASH_VALUE 251062128BBA6AB9
-RPJOB_WHAT_DO_YOU_WANT_12_ ()
-{
-		rpjob_what_do_you_want_12_	[Вы изготовили 12 предметов.\n
-			\n
-			Чем бы вы хотели заняться?]
-
-}
-
-// HASH_VALUE 251062158BBA76B9
-RPJOB_WHAT_DO_YOU_WANT_15_ ()
-{
-		rpjob_what_do_you_want_15_	[Вы изготовили 15 предметов.\n
-			\n
-			Чем бы вы хотели заняться?]
-
-}
-
-// HASH_VALUE 251062168BBA7AB9
-RPJOB_WHAT_DO_YOU_WANT_16_ ()
-{
-		rpjob_what_do_you_want_16_	[Вы изготовили 16 предметов.\n
-			\n
-			Чем бы вы хотели заняться?]
-
-}
-
-// HASH_VALUE 251062188BBA82B9
-RPJOB_WHAT_DO_YOU_WANT_18_ ()
-{
-		rpjob_what_do_you_want_18_	[Вы изготовили 18 предметов.\n
-			\n
-			Чем бы вы хотели заняться?]
-
-}
-
-// HASH_VALUE 25106210CBBA62BA
-RPJOB_WHAT_DO_YOU_WANT_20_ ()
-{
-		rpjob_what_do_you_want_20_	[Вы изготовили 20 предметов.\n
-			\n
-			Чем бы вы хотели заняться?]
-
-}
-
-// HASH_VALUE 25106211CBBA66BA
-RPJOB_WHAT_DO_YOU_WANT_21_ ()
-{
-		rpjob_what_do_you_want_21_	[Вы изготовили 21 предмет.\n
-			\n
-			Чем бы вы хотели заняться?]
-
-}
-
-// HASH_VALUE 25106214CBBA72BA
-RPJOB_WHAT_DO_YOU_WANT_24_ ()
-{
-		rpjob_what_do_you_want_24_	[Вы изготовили 24 предмета.\n
-			\n
-			Чем бы вы хотели заняться?]
-
-}
-
-// HASH_VALUE 25106218CBBA82BA
-RPJOB_WHAT_DO_YOU_WANT_28_ ()
-{
-		rpjob_what_do_you_want_28_	[Вы изготовили 28 предметов.\n
-			\n
-			Чем бы вы хотели заняться?]
-
-}
-
-// HASH_VALUE D84540921F7A648C
-RPJOB_WHAT_DO_YOU_WANT_3_ ()
-{
-		rpjob_what_do_you_want_3_	[Вы изготовили 3 предмета.\n
-			\n
-			Чем бы вы хотели заняться?]
-
-}
-
-// HASH_VALUE 19454092607A648C
-RPJOB_WHAT_DO_YOU_WANT_4_ ()
-{
-		rpjob_what_do_you_want_4_	[Вы изготовили 4 предмета.\n
-			\n
-			Чем бы вы хотели заняться?]
-
-}
-
-// HASH_VALUE 99454092E07A648C
-RPJOB_WHAT_DO_YOU_WANT_6_ ()
-{
-		rpjob_what_do_you_want_6_	[Вы изготовили 6 предметов.\n
-			\n
-			Чем бы вы хотели заняться?]
-
-}
-
-// HASH_VALUE 1A454092617A648C
-RPJOB_WHAT_DO_YOU_WANT_8_ ()
-{
-		rpjob_what_do_you_want_8_	[Вы изготовили 8 предметов.\n
-			\n
-			Чем бы вы хотели заняться?]
-
-}
-
-// HASH_VALUE 5A454092A17A648C
-RPJOB_WHAT_DO_YOU_WANT_9_ ()
-{
-		rpjob_what_do_you_want_9_	[Вы изготовили 9 предметов.\n
-			\n
-			Чем бы вы хотели заняться?]
-
-}
-
-// HASH_VALUE 1B569668A6024267
-RPJOB_WIN_DOUBLE_ELEMENTS (item product)
-{
-		rpjob_win_double_elements	[Оставить половину $product.somgen$ для личного пользования и употребить вторую половину для получения опыта.]
-
-}
-
-// HASH_VALUE 9E7EB507763981B6
-RPJOB_WIN_ELEMENTS (item product)
-{
-		rpjob_win_elements	[Сохранить $product.name$ для личного пользования.]
-
-}
-
-// HASH_VALUE F306B90218977926
-RPJOB_WIN_LEVEL ()
-{
-		rpjob_win_level	[Превосходно! Вы заработали повышение.]
-
-}
-
-// HASH_VALUE ABC24F989FD09232
-RPJOB_WIN_XP (bot givervar, bot master, item product)
-{
-		rpjob_win_xp	[Оставить $product.p$ здесь для демонстрации $master$ и получения опыта.]
-
-}
-
-// HASH_VALUE 690E692908572335
-RPJOB_WIN_XP_MESSAGE ()
-{
-		rpjob_win_xp_message	[Отличная работа! Вы делаете успехи, продолжайте в том же духе.]
-
-}
-
-// HASH_VALUE 10C1DBB88D5EE872
-RPJOB_WIN_XP_MISS_ELEMENTS ()
-{
-		rpjob_win_xp_miss_elements	[У вас недостаточно опыта, практикуйтесь еще.]
-
-}
-
-// HASH_VALUE 111F1C70BE0DAF9F
-RPJOB_WIN_XP_SYSTEM_MSG (item jobitem)
-{
-	( self.gender = male )
-		rpjob_win_xp_system_msg_m	[&XP&Вы получаете опыт работы в качестве $jobitem.twogen$!]
-
-	( self.gender = female )
-		rpjob_win_xp_system_msg_f	[&XP&Вы получаете опыт работы в качестве $jobitem.twogen$!]
-
-}
-
-// HASH_VALUE 4FF2788C8AEF6318
-RPJOB_YES_WANT_SIGN (item jobitem)
-{
-	( self.gender = male )
-		rpjob_yes_want_sign_m	[Да, я хочу получить работу $jobitem.twogen$.]
-
-	( self.gender = female )
-		rpjob_yes_want_sign_f	[Да, я хочу получить работу $jobitem.twogen$.]
 
 }
 
@@ -59184,6 +57647,756 @@ R_12_18_P_LDF_INTRO_1 ()
 
 }
 
+// HASH_VALUE 4A1D9C63EFD85402
+R_13_00_FINISH_RITE_R_13_00_FINISH_RITE_DESC (bot giver, bot givervar)
+{
+		r_13_00_finish_rite_r_13_00_finish_rite_desc	[Talk with $givervar$]
+
+}
+
+// HASH_VALUE 172C10ECCD468B9F
+R_13_00_FINISH_RITE_R_13_00_FINISH_RITE_TITLE (bot giver)
+{
+		r_13_00_finish_rite_r_13_00_finish_rite_title	[HELLO?]
+
+}
+
+// HASH_VALUE 77B8D94119C9090C
+R_13_00_HARVESTER_A_ASK_FOR_MATS ()
+{
+		r_13_00_harvester_a_ask_for_mats	[Oh, it's you again. Did you get the stuff I asked for?]
+
+}
+
+// HASH_VALUE E2ACDD49A1EFA53A
+R_13_00_HARVESTER_A_BRING_MATERIALS_TO (bot givervar)
+{
+		r_13_00_harvester_a_bring_materials_to	[Bring the materials to $givervar$]
+
+}
+
+// HASH_VALUE F49EDC7CA9BF671B
+R_13_00_HARVESTER_A_DIALOG_2 ()
+{
+		r_13_00_harvester_a_dialog_2	[Two weeks ago a bunch of homins came through and beat us all up and stole half our food.  I've been trying to find food and supplies in this area, but it seems to be barren.]
+
+}
+
+// HASH_VALUE 9E2178246E061428
+R_13_00_HARVESTER_A_DIALOG_2_ANSWER_A ()
+{
+		r_13_00_harvester_a_dialog_2_answer_a	[We are Rangers on a mission. How can we help you?]
+
+}
+
+// HASH_VALUE AD9200B3DA45F6C2
+R_13_00_HARVESTER_A_DIALOG_2_ANSWER_B ()
+{
+		r_13_00_harvester_a_dialog_2_answer_b	[Sorry to hear that.  We mean you no harm.]
+
+}
+
+// HASH_VALUE 2C7397B6E1552CD9
+R_13_00_HARVESTER_A_DIALOG_3 ()
+{
+		r_13_00_harvester_a_dialog_3	[Sure.  I believe that.\n
+			  I believe Jena and Ma-Duk are lovers, too.\n
+			 Pull the other one.]
+
+}
+
+// HASH_VALUE F812518A287AED58
+R_13_00_HARVESTER_A_DIALOG_3_ANSWER_A ()
+{
+		r_13_00_harvester_a_dialog_3_answer_a	[Hey, no need to be hostile. How can we help you?]
+
+}
+
+// HASH_VALUE 0B68AD57F3E11C68
+R_13_00_HARVESTER_A_DIALOG_3_ANSWER_B ()
+{
+		r_13_00_harvester_a_dialog_3_answer_b	[If you're going to be that way, good bye.]
+
+}
+
+// HASH_VALUE 856E38E1512239C5
+R_13_00_HARVESTER_A_DIALOG_4 ()
+{
+		r_13_00_harvester_a_dialog_4	[We were told the Road was clear, but it's been nothing but kitins and beasts, and nothing much for the meks to eat, and not much in the way of direction signs.  We pushed through the brush to get here because of the kitins, and then those bandits came and beat us up.  <continue>  Are you sure you're Rangers?   We haven't seen any of those since the Old Lands. If you really want to help, you can find us supplies we need before we can continue on.<continue>   We're hungry and our boots and clothes are all worn out.  I've been looking all over in this refuge and I can't find anything.]
+
+}
+
+// HASH_VALUE 6565BCA573206ABE
+R_13_00_HARVESTER_A_DIALOG_4_ANSWER_A ()
+{
+		r_13_00_harvester_a_dialog_4_answer_a	[Well, we aren't really Rangers yet, but we're training.  What do you need?]
+
+}
+
+// HASH_VALUE E7CDEC32E2C6EC26
+R_13_00_HARVESTER_A_DIALOG_4_ANSWER_B ()
+{
+		r_13_00_harvester_a_dialog_4_answer_b	[Yes. We're here to help you. What do you need?]
+
+}
+
+// HASH_VALUE B7B19B26E852CDA8
+R_13_00_HARVESTER_A_DIALOG_5 ()
+{
+		r_13_00_harvester_a_dialog_5	[Well, we need food and we need some skin and shell for clothes and boots.  Here,   let me write down a list of what we need.  If you get this, then I'm sure that I could make <name of Leader> calm down and talk to you.  Will you do this for me?]
+
+}
+
+// HASH_VALUE 646CB132039C1CE8
+R_13_00_HARVESTER_A_DIALOG_5_ANSWER_A ()
+{
+		r_13_00_harvester_a_dialog_5_answer_a	[Yes]
+
+}
+
+// HASH_VALUE 646CB132273AF0E9
+R_13_00_HARVESTER_A_DIALOG_5_ANSWER_B ()
+{
+		r_13_00_harvester_a_dialog_5_answer_b	[NO]
+
+}
+
+// HASH_VALUE 820C4CE4CEC64FE2
+R_13_00_HARVESTER_A_DIALOG_6 ()
+{
+		r_13_00_harvester_a_dialog_6	[Harvester:  Fantastic, just take these and go talk to <name of group leader>.  I'll keep on looking for materials near here.  Maybe I'll get lucky]
+
+}
+
+// HASH_VALUE 166467B35A535971
+R_13_00_HARVESTER_A_DIALOG_6_ANSWER_A ()
+{
+		r_13_00_harvester_a_dialog_6_answer_a	[Great Thank you!]
+
+}
+
+// HASH_VALUE 54E2A530392B2BCA
+R_13_00_HARVESTER_A_INTRO_1 ()
+{
+		r_13_00_harvester_a_intro_1	[What do you want?  You can see I haven't got anything.  I've found nothing I can harvest here and this pick is halfway worn through.  If you're going to beat me up like the last ones, go ahead, I can't stop you.]
+
+}
+
+// HASH_VALUE C83E8240C6FF804D
+R_13_00_HARVESTER_A_INTRO_1_ANSWER_A ()
+{
+		r_13_00_harvester_a_intro_1_answer_a	[Last ones?]
+
+}
+
+// HASH_VALUE D14007F397F71ABF
+R_13_00_HARVESTER_A_INTRO_1_ANSWER_B ()
+{
+		r_13_00_harvester_a_intro_1_answer_b	[We mean you no harm.]
+
+}
+
+// HASH_VALUE 7CD5AFD1A418ACE4
+R_13_00_HARVESTER_A_INTRO_1_ANSWER_C ()
+{
+		r_13_00_harvester_a_intro_1_answer_c	[We are Rangers on a mission. How can we help you?]
+
+}
+
+// HASH_VALUE 42FADE822C4D6971
+R_13_00_HARVESTER_A_INTRO_1_ANSWER_D ()
+{
+		r_13_00_harvester_a_intro_1_answer_d	[We mean you no harm. We won't bother you. Have a nice day.]
+
+}
+
+// HASH_VALUE F83FA9D8A7E82961
+R_13_00_HARVESTER_A_R_13_00_ARK_URL_HARVESTER_A ()
+{
+		r_13_00_harvester_a_r_13_00_ark_url_harvester_a	[WEB : app_arcc action=mScript_Run&script=5018&_hideWindow=1&command=reset_all]
+
+}
+
+// HASH_VALUE 8A1DF0512FD8A8F0
+R_13_00_HARVESTER_A_R_13_00_HARVESTER_A_DESC (bot giver, bot givervar)
+{
+		r_13_00_harvester_a_r_13_00_harvester_a_desc	[Talk with $givervar$]
+
+}
+
+// HASH_VALUE DE36F6E4D71176D1
+R_13_00_HARVESTER_A_R_13_00_HARVESTER_A_TITLE (bot giver)
+{
+		r_13_00_harvester_a_r_13_00_harvester_a_title	[Supplies for the Refugees.]
+
+}
+
+// HASH_VALUE 77C8D94119C9090C
+R_13_00_HARVESTER_B_ASK_FOR_MATS ()
+{
+		r_13_00_harvester_b_ask_for_mats	[Oh, it's you again. Did you get the stuff I asked for?]
+
+}
+
+// HASH_VALUE E2ACDD49A1FFA53A
+R_13_00_HARVESTER_B_BRING_MATERIALS_TO (bot givervar)
+{
+		r_13_00_harvester_b_bring_materials_to	[Bring the materials to $givervar$]
+
+}
+
+// HASH_VALUE F4AEDC7CA9BF671B
+R_13_00_HARVESTER_B_DIALOG_2 ()
+{
+		r_13_00_harvester_b_dialog_2	[Two weeks ago a bunch of homins came through and beat us all up and stole half our food.  I've been trying to find food and supplies in this area, but it seems to be barren.]
+
+}
+
+// HASH_VALUE 9E3178246E061428
+R_13_00_HARVESTER_B_DIALOG_2_ANSWER_A ()
+{
+		r_13_00_harvester_b_dialog_2_answer_a	[We are Rangers on a mission. How can we help you?]
+
+}
+
+// HASH_VALUE ADA200B3DA45F6C2
+R_13_00_HARVESTER_B_DIALOG_2_ANSWER_B ()
+{
+		r_13_00_harvester_b_dialog_2_answer_b	[Sorry to hear that.  We mean you no harm.]
+
+}
+
+// HASH_VALUE 2C8397B6E1552CD9
+R_13_00_HARVESTER_B_DIALOG_3 ()
+{
+		r_13_00_harvester_b_dialog_3	[Sure.  I believe that.\n
+			  I believe Jena and Ma-Duk are lovers, too.\n
+			 Pull the other one.]
+
+}
+
+// HASH_VALUE F822518A287AED58
+R_13_00_HARVESTER_B_DIALOG_3_ANSWER_A ()
+{
+		r_13_00_harvester_b_dialog_3_answer_a	[Hey, no need to be hostile. How can we help you?]
+
+}
+
+// HASH_VALUE 0B78AD57F3E11C68
+R_13_00_HARVESTER_B_DIALOG_3_ANSWER_B ()
+{
+		r_13_00_harvester_b_dialog_3_answer_b	[If you're going to be that way, good bye.]
+
+}
+
+// HASH_VALUE 857E38E1512239C5
+R_13_00_HARVESTER_B_DIALOG_4 ()
+{
+		r_13_00_harvester_b_dialog_4	[We were told the Road was clear, but it's been nothing but kitins and beasts, and nothing much for the meks to eat, and not much in the way of direction signs.  We pushed through the brush to get here because of the kitins, and then those bandits came and beat us up.  <continue>  Are you sure you're Rangers?   We haven't seen any of those since the Old Lands. If you really want to help, you can find us supplies we need before we can continue on.<continue>   We're hungry and our boots and clothes are all worn out.  I've been looking all over in this refuge and I can't find anything.]
+
+}
+
+// HASH_VALUE 6575BCA573206ABE
+R_13_00_HARVESTER_B_DIALOG_4_ANSWER_A ()
+{
+		r_13_00_harvester_b_dialog_4_answer_a	[Well, we aren't really Rangers yet, but we're training.  What do you need?]
+
+}
+
+// HASH_VALUE E7DDEC32E2C6EC26
+R_13_00_HARVESTER_B_DIALOG_4_ANSWER_B ()
+{
+		r_13_00_harvester_b_dialog_4_answer_b	[Yes. We're here to help you. What do you need?]
+
+}
+
+// HASH_VALUE B7C19B26E852CDA8
+R_13_00_HARVESTER_B_DIALOG_5 ()
+{
+		r_13_00_harvester_b_dialog_5	[Well, we need food and we need some skin and shell for clothes and boots.  Here,   let me write down a list of what we need.  If you get this, then I'm sure that I could make <name of Leader> calm down and talk to you.  Will you do this for me?]
+
+}
+
+// HASH_VALUE 647CB132039C1CE8
+R_13_00_HARVESTER_B_DIALOG_5_ANSWER_A ()
+{
+		r_13_00_harvester_b_dialog_5_answer_a	[Yes]
+
+}
+
+// HASH_VALUE 647CB132273AF0E9
+R_13_00_HARVESTER_B_DIALOG_5_ANSWER_B ()
+{
+		r_13_00_harvester_b_dialog_5_answer_b	[NO]
+
+}
+
+// HASH_VALUE 821C4CE4CEC64FE2
+R_13_00_HARVESTER_B_DIALOG_6 ()
+{
+		r_13_00_harvester_b_dialog_6	[Harvester:  Fantastic, just take these and go talk to <name of group leader>.  I'll keep on looking for materials near here.  Maybe I'll get lucky]
+
+}
+
+// HASH_VALUE 167467B35A535971
+R_13_00_HARVESTER_B_DIALOG_6_ANSWER_A ()
+{
+		r_13_00_harvester_b_dialog_6_answer_a	[Great Thank you!]
+
+}
+
+// HASH_VALUE 54F2A530392B2BCA
+R_13_00_HARVESTER_B_INTRO_1 ()
+{
+		r_13_00_harvester_b_intro_1	[What do you want?  You can see I haven't got anything.  I've found nothing I can harvest here and this pick is halfway worn through.  If you're going to beat me up like the last ones, go ahead, I can't stop you.]
+
+}
+
+// HASH_VALUE C84E8240C6FF804D
+R_13_00_HARVESTER_B_INTRO_1_ANSWER_A ()
+{
+		r_13_00_harvester_b_intro_1_answer_a	[Last ones?]
+
+}
+
+// HASH_VALUE D15007F397F71ABF
+R_13_00_HARVESTER_B_INTRO_1_ANSWER_B ()
+{
+		r_13_00_harvester_b_intro_1_answer_b	[We mean you no harm.]
+
+}
+
+// HASH_VALUE 7CE5AFD1A418ACE4
+R_13_00_HARVESTER_B_INTRO_1_ANSWER_C ()
+{
+		r_13_00_harvester_b_intro_1_answer_c	[We are Rangers on a mission. How can we help you?]
+
+}
+
+// HASH_VALUE 420ADE822C4D6971
+R_13_00_HARVESTER_B_INTRO_1_ANSWER_D ()
+{
+		r_13_00_harvester_b_intro_1_answer_d	[We mean you no harm. We won't bother you. Have a nice day.]
+
+}
+
+// HASH_VALUE 384FA9D8A7F82961
+R_13_00_HARVESTER_B_R_13_00_ARK_URL_HARVESTER_B ()
+{
+		r_13_00_harvester_b_r_13_00_ark_url_harvester_b	[WEB : app_arcc action=mScript_Run&script=5019&_hideWindow=1&command=reset_all]
+
+}
+
+// HASH_VALUE 8A1DF4512FD8ACF0
+R_13_00_HARVESTER_B_R_13_00_HARVESTER_B_DESC (bot giver, bot givervar)
+{
+		r_13_00_harvester_b_r_13_00_harvester_b_desc	[Talk with $givervar$]
+
+}
+
+// HASH_VALUE 9D0B04EC53257F9F
+R_13_00_HARVESTER_B_R_13_00_HARVESTER_B_TITLE (bot giver)
+{
+		r_13_00_harvester_b_r_13_00_harvester_b_title	[HELLO?]
+
+}
+
+// HASH_VALUE 77D8D94119C9090C
+R_13_00_HARVESTER_C_ASK_FOR_MATS ()
+{
+		r_13_00_harvester_c_ask_for_mats	[Oh, it's you again. Did you get the stuff I asked for?]
+
+}
+
+// HASH_VALUE E2ACDD49A10FA53A
+R_13_00_HARVESTER_C_BRING_MATERIALS_TO (bot givervar)
+{
+		r_13_00_harvester_c_bring_materials_to	[Bring the materials to $givervar$]
+
+}
+
+// HASH_VALUE F4BEDC7CA9BF671B
+R_13_00_HARVESTER_C_DIALOG_2 ()
+{
+		r_13_00_harvester_c_dialog_2	[Two weeks ago a bunch of homins came through and beat us all up and stole half our food.  I've been trying to find food and supplies in this area, but it seems to be barren.]
+
+}
+
+// HASH_VALUE 9E4178246E061428
+R_13_00_HARVESTER_C_DIALOG_2_ANSWER_A ()
+{
+		r_13_00_harvester_c_dialog_2_answer_a	[We are Rangers on a mission. How can we help you?]
+
+}
+
+// HASH_VALUE ADB200B3DA45F6C2
+R_13_00_HARVESTER_C_DIALOG_2_ANSWER_B ()
+{
+		r_13_00_harvester_c_dialog_2_answer_b	[Sorry to hear that.  We mean you no harm.]
+
+}
+
+// HASH_VALUE 2C9397B6E1552CD9
+R_13_00_HARVESTER_C_DIALOG_3 ()
+{
+		r_13_00_harvester_c_dialog_3	[Sure.  I believe that.\n
+			  I believe Jena and Ma-Duk are lovers, too.\n
+			 Pull the other one.]
+
+}
+
+// HASH_VALUE F832518A287AED58
+R_13_00_HARVESTER_C_DIALOG_3_ANSWER_A ()
+{
+		r_13_00_harvester_c_dialog_3_answer_a	[Hey, no need to be hostile. How can we help you?]
+
+}
+
+// HASH_VALUE 0B88AD57F3E11C68
+R_13_00_HARVESTER_C_DIALOG_3_ANSWER_B ()
+{
+		r_13_00_harvester_c_dialog_3_answer_b	[If you're going to be that way, good bye.]
+
+}
+
+// HASH_VALUE 858E38E1512239C5
+R_13_00_HARVESTER_C_DIALOG_4 ()
+{
+		r_13_00_harvester_c_dialog_4	[We were told the Road was clear, but it's been nothing but kitins and beasts, and nothing much for the meks to eat, and not much in the way of direction signs.  We pushed through the brush to get here because of the kitins, and then those bandits came and beat us up.  <continue>  Are you sure you're Rangers?   We haven't seen any of those since the Old Lands. If you really want to help, you can find us supplies we need before we can continue on.<continue>   We're hungry and our boots and clothes are all worn out.  I've been looking all over in this refuge and I can't find anything.]
+
+}
+
+// HASH_VALUE 6585BCA573206ABE
+R_13_00_HARVESTER_C_DIALOG_4_ANSWER_A ()
+{
+		r_13_00_harvester_c_dialog_4_answer_a	[Well, we aren't really Rangers yet, but we're training.  What do you need?]
+
+}
+
+// HASH_VALUE E7EDEC32E2C6EC26
+R_13_00_HARVESTER_C_DIALOG_4_ANSWER_B ()
+{
+		r_13_00_harvester_c_dialog_4_answer_b	[Yes. We're here to help you. What do you need?]
+
+}
+
+// HASH_VALUE B7D19B26E852CDA8
+R_13_00_HARVESTER_C_DIALOG_5 ()
+{
+		r_13_00_harvester_c_dialog_5	[Well, we need food and we need some skin and shell for clothes and boots.  Here,   let me write down a list of what we need.  If you get this, then I'm sure that I could make <name of Leader> calm down and talk to you.  Will you do this for me?]
+
+}
+
+// HASH_VALUE 648CB132039C1CE8
+R_13_00_HARVESTER_C_DIALOG_5_ANSWER_A ()
+{
+		r_13_00_harvester_c_dialog_5_answer_a	[Yes]
+
+}
+
+// HASH_VALUE 648CB132273AF0E9
+R_13_00_HARVESTER_C_DIALOG_5_ANSWER_B ()
+{
+		r_13_00_harvester_c_dialog_5_answer_b	[NO]
+
+}
+
+// HASH_VALUE 822C4CE4CEC64FE2
+R_13_00_HARVESTER_C_DIALOG_6 ()
+{
+		r_13_00_harvester_c_dialog_6	[Harvester:  Fantastic, just take these and go talk to <name of group leader>.  I'll keep on looking for materials near here.  Maybe I'll get lucky]
+
+}
+
+// HASH_VALUE 168467B35A535971
+R_13_00_HARVESTER_C_DIALOG_6_ANSWER_A ()
+{
+		r_13_00_harvester_c_dialog_6_answer_a	[Great Thank you!]
+
+}
+
+// HASH_VALUE 5402A530392B2BCA
+R_13_00_HARVESTER_C_INTRO_1 ()
+{
+		r_13_00_harvester_c_intro_1	[What do you want?  You can see I haven't got anything.  I've found nothing I can harvest here and this pick is halfway worn through.  If you're going to beat me up like the last ones, go ahead, I can't stop you.]
+
+}
+
+// HASH_VALUE C85E8240C6FF804D
+R_13_00_HARVESTER_C_INTRO_1_ANSWER_A ()
+{
+		r_13_00_harvester_c_intro_1_answer_a	[Last ones?]
+
+}
+
+// HASH_VALUE D16007F397F71ABF
+R_13_00_HARVESTER_C_INTRO_1_ANSWER_B ()
+{
+		r_13_00_harvester_c_intro_1_answer_b	[We mean you no harm.]
+
+}
+
+// HASH_VALUE 7CF5AFD1A418ACE4
+R_13_00_HARVESTER_C_INTRO_1_ANSWER_C ()
+{
+		r_13_00_harvester_c_intro_1_answer_c	[We are Rangers on a mission. How can we help you?]
+
+}
+
+// HASH_VALUE 421ADE822C4D6971
+R_13_00_HARVESTER_C_INTRO_1_ANSWER_D ()
+{
+		r_13_00_harvester_c_intro_1_answer_d	[We mean you no harm. We won't bother you. Have a nice day.]
+
+}
+
+// HASH_VALUE F66FA9D8A7082961
+R_13_00_HARVESTER_C_R_13_00_ARK_URL_HARVESTER_C ()
+{
+		r_13_00_harvester_c_r_13_00_ark_url_harvester_c	[WEB : app_arcc action=mScript_Run&script=5020&_hideWindow=1&command=reset_all]
+
+}
+
+// HASH_VALUE 8A1DF8512FD8B0F0
+R_13_00_HARVESTER_C_R_13_00_HARVESTER_C_DESC (bot giver, bot givervar)
+{
+		r_13_00_harvester_c_r_13_00_harvester_c_desc	[Talk with $givervar$]
+
+}
+
+// HASH_VALUE DD0B04EC93257F9F
+R_13_00_HARVESTER_C_R_13_00_HARVESTER_C_TITLE (bot giver)
+{
+		r_13_00_harvester_c_r_13_00_harvester_c_title	[HELLO?]
+
+}
+
+// HASH_VALUE 77E8D94119C9090C
+R_13_00_HARVESTER_D_ASK_FOR_MATS ()
+{
+		r_13_00_harvester_d_ask_for_mats	[Oh, it's you again. Did you get the stuff I asked for?]
+
+}
+
+// HASH_VALUE E2ACDD49A11FA53A
+R_13_00_HARVESTER_D_BRING_MATERIALS_TO (bot givervar)
+{
+		r_13_00_harvester_d_bring_materials_to	[Bring the materials to $givervar$]
+
+}
+
+// HASH_VALUE F4CEDC7CA9BF671B
+R_13_00_HARVESTER_D_DIALOG_2 ()
+{
+		r_13_00_harvester_d_dialog_2	[Two weeks ago a bunch of homins came through and beat us all up and stole half our food.  I've been trying to find food and supplies in this area, but it seems to be barren.]
+
+}
+
+// HASH_VALUE 9E5178246E061428
+R_13_00_HARVESTER_D_DIALOG_2_ANSWER_A ()
+{
+		r_13_00_harvester_d_dialog_2_answer_a	[We are Rangers on a mission. How can we help you?]
+
+}
+
+// HASH_VALUE ADC200B3DA45F6C2
+R_13_00_HARVESTER_D_DIALOG_2_ANSWER_B ()
+{
+		r_13_00_harvester_d_dialog_2_answer_b	[Sorry to hear that.  We mean you no harm.]
+
+}
+
+// HASH_VALUE 2CA397B6E1552CD9
+R_13_00_HARVESTER_D_DIALOG_3 ()
+{
+		r_13_00_harvester_d_dialog_3	[Sure.  I believe that.\n
+			  I believe Jena and Ma-Duk are lovers, too.\n
+			 Pull the other one.]
+
+}
+
+// HASH_VALUE F842518A287AED58
+R_13_00_HARVESTER_D_DIALOG_3_ANSWER_A ()
+{
+		r_13_00_harvester_d_dialog_3_answer_a	[Hey, no need to be hostile. How can we help you?]
+
+}
+
+// HASH_VALUE 0B98AD57F3E11C68
+R_13_00_HARVESTER_D_DIALOG_3_ANSWER_B ()
+{
+		r_13_00_harvester_d_dialog_3_answer_b	[If you're going to be that way, good bye.]
+
+}
+
+// HASH_VALUE 859E38E1512239C5
+R_13_00_HARVESTER_D_DIALOG_4 ()
+{
+		r_13_00_harvester_d_dialog_4	[We were told the Road was clear, but it's been nothing but kitins and beasts, and nothing much for the meks to eat, and not much in the way of direction signs.  We pushed through the brush to get here because of the kitins, and then those bandits came and beat us up.  <continue>  Are you sure you're Rangers?   We haven't seen any of those since the Old Lands. If you really want to help, you can find us supplies we need before we can continue on.<continue>   We're hungry and our boots and clothes are all worn out.  I've been looking all over in this refuge and I can't find anything.]
+
+}
+
+// HASH_VALUE 6595BCA573206ABE
+R_13_00_HARVESTER_D_DIALOG_4_ANSWER_A ()
+{
+		r_13_00_harvester_d_dialog_4_answer_a	[Well, we aren't really Rangers yet, but we're training.  What do you need?]
+
+}
+
+// HASH_VALUE E7FDEC32E2C6EC26
+R_13_00_HARVESTER_D_DIALOG_4_ANSWER_B ()
+{
+		r_13_00_harvester_d_dialog_4_answer_b	[Yes. We're here to help you. What do you need?]
+
+}
+
+// HASH_VALUE B7E19B26E852CDA8
+R_13_00_HARVESTER_D_DIALOG_5 ()
+{
+		r_13_00_harvester_d_dialog_5	[Well, we need food and we need some skin and shell for clothes and boots.  Here,   let me write down a list of what we need.  If you get this, then I'm sure that I could make <name of Leader> calm down and talk to you.  Will you do this for me?]
+
+}
+
+// HASH_VALUE 649CB132039C1CE8
+R_13_00_HARVESTER_D_DIALOG_5_ANSWER_A ()
+{
+		r_13_00_harvester_d_dialog_5_answer_a	[Yes]
+
+}
+
+// HASH_VALUE 649CB132273AF0E9
+R_13_00_HARVESTER_D_DIALOG_5_ANSWER_B ()
+{
+		r_13_00_harvester_d_dialog_5_answer_b	[NO]
+
+}
+
+// HASH_VALUE 823C4CE4CEC64FE2
+R_13_00_HARVESTER_D_DIALOG_6 ()
+{
+		r_13_00_harvester_d_dialog_6	[Harvester:  Fantastic, just take these and go talk to <name of group leader>.  I'll keep on looking for materials near here.  Maybe I'll get lucky]
+
+}
+
+// HASH_VALUE 169467B35A535971
+R_13_00_HARVESTER_D_DIALOG_6_ANSWER_A ()
+{
+		r_13_00_harvester_d_dialog_6_answer_a	[Great Thank you!]
+
+}
+
+// HASH_VALUE 5412A530392B2BCA
+R_13_00_HARVESTER_D_INTRO_1 ()
+{
+		r_13_00_harvester_d_intro_1	[What do you want?  You can see I haven't got anything.  I've found nothing I can harvest here and this pick is halfway worn through.  If you're going to beat me up like the last ones, go ahead, I can't stop you.]
+
+}
+
+// HASH_VALUE C86E8240C6FF804D
+R_13_00_HARVESTER_D_INTRO_1_ANSWER_A ()
+{
+		r_13_00_harvester_d_intro_1_answer_a	[Last ones?]
+
+}
+
+// HASH_VALUE D17007F397F71ABF
+R_13_00_HARVESTER_D_INTRO_1_ANSWER_B ()
+{
+		r_13_00_harvester_d_intro_1_answer_b	[We mean you no harm.]
+
+}
+
+// HASH_VALUE 7C05AFD1A418ACE4
+R_13_00_HARVESTER_D_INTRO_1_ANSWER_C ()
+{
+		r_13_00_harvester_d_intro_1_answer_c	[We are Rangers on a mission. How can we help you?]
+
+}
+
+// HASH_VALUE 422ADE822C4D6971
+R_13_00_HARVESTER_D_INTRO_1_ANSWER_D ()
+{
+		r_13_00_harvester_d_intro_1_answer_d	[We mean you no harm. We won't bother you. Have a nice day.]
+
+}
+
+// HASH_VALUE 367FA9D8A7182961
+R_13_00_HARVESTER_D_R_13_00_ARK_URL_HARVESTER_D ()
+{
+		r_13_00_harvester_d_r_13_00_ark_url_harvester_d	[WEB : app_arcc action=mScript_Run&script=5021&_hideWindow=1&command=reset_all]
+
+}
+
+// HASH_VALUE 8A1DFC512FD8B4F0
+R_13_00_HARVESTER_D_R_13_00_HARVESTER_D_DESC (bot giver, bot givervar)
+{
+		r_13_00_harvester_d_r_13_00_harvester_d_desc	[Talk with $givervar$]
+
+}
+
+// HASH_VALUE 1E0B04ECD4257F9F
+R_13_00_HARVESTER_D_R_13_00_HARVESTER_D_TITLE (bot giver)
+{
+		r_13_00_harvester_d_r_13_00_harvester_d_title	[HELLO?]
+
+}
+
+// HASH_VALUE C76AFF9D3B67327D
+R_13_00_START_RITE_1_R_13_00_START_RITE_1_DESC (bot giver, bot givervar)
+{
+		r_13_00_start_rite_1_r_13_00_start_rite_1_desc	[Talk with $givervar$]
+
+}
+
+// HASH_VALUE 96CE92D5A7CA5F97
+R_13_00_START_RITE_1_R_13_00_START_RITE_1_TITLE (bot giver)
+{
+		r_13_00_start_rite_1_r_13_00_start_rite_1_title	[HELLO?]
+
+}
+
+// HASH_VALUE 06A565CD19334F5C
+R_13_00_START_RITE_KILL_R_13_00_ARK_URL_KILL_A_KITIN ()
+{
+		r_13_00_start_rite_kill_r_13_00_ark_url_kill_a_kitin	[WEB : app_arcc action=mScript_Run&script=5292&_hideWindow=1&command=reset_all]
+
+}
+
+// HASH_VALUE E2D79CFC54C05D35
+R_13_00_START_RITE_KILL_R_13_00_START_RITE_KILL_DESC (bot giver)
+{
+		r_13_00_start_rite_kill_r_13_00_start_rite_kill_desc	[Kill a Kitin]
+
+}
+
+// HASH_VALUE 7303C6F7562D4D13
+R_13_00_START_RITE_KILL_R_13_00_START_RITE_KILL_TITLE (bot giver)
+{
+		r_13_00_start_rite_kill_r_13_00_start_rite_kill_title	[Kill a Kitin]
+
+}
+
+// HASH_VALUE 3DB96BD34295469B
+R_13_00_START_RITE_TP_R_13_00_ARK_URL_24H_FAIL ()
+{
+		r_13_00_start_rite_tp_r_13_00_ark_url_24h_fail	[WEB : app_arcc action=mScript_Run&script=5350&_hideWindow=1&command=reset_all]
+
+}
+
+// HASH_VALUE 6F9B25700E51F254
+R_13_00_START_RITE_TP_R_13_00_START_RITE_TP_DESC (bot giver, bot givervar)
+{
+		r_13_00_start_rite_tp_r_13_00_start_rite_tp_desc	[Talk with $givervar$]
+
+}
+
+// HASH_VALUE E4FE7F4082693FBA
+R_13_00_START_RITE_TP_R_13_00_START_RITE_TP_TITLE (bot giver)
+{
+		r_13_00_start_rite_tp_r_13_00_start_rite_tp_title	[HELLO?]
+
+}
+
 // HASH_VALUE 72B10B643852B04C
 SENTENCE_1 ()
 {
@@ -60985,19 +60198,6 @@ TARGET_SELF ()
 
 }
 
-// HASH_VALUE 27B602B4FAC97007
-TASK_RPJOB_TASK_TITLE (bot giver, item element, item jobitem, int version)
-{
-	( self.gender = male )
-		task_rpjob_task_title_m	[Предмет для работы в качестве $jobitem.twogen$ ($version$/2):\n
-			$element.p$]
-
-	( self.gender = female )
-		task_rpjob_task_title_f	[Предмет для работы в качестве $jobitem.twogen$ ($version$/2):\n
-			$element.p$]
-
-}
-
 // HASH_VALUE 80023D784006C1F6
 TEAM_ACCEPT (player p)
 {
@@ -61089,6 +60289,13 @@ TEAM_INVITE (player p)
 TEAM_INVITED_CHARACTER_MUST_BE_ONLINE ()
 {
 			[&CHK&Персонаж, приглашенный в группу, должен быть в игре.]
+
+}
+
+// HASH_VALUE AA5A11E6349DC1E4
+TEAM_JOIN_LEAGUE ()
+{
+		team_join_league	[&AROUND&You join a league.]
 
 }
 
@@ -61186,6 +60393,13 @@ TEAM_PVP_HELPER_KICKED (player a, player v)
 TEAM_PVP_HELPER_KICKED_YOU (player v)
 {
 			[&SYS&Вы помогаете $v$, члену дружественной фракции. Вы не можете принадлежать к этой группе.]
+
+}
+
+// HASH_VALUE 73347AEEB1AEE1A1
+TEAM_QUIT_LEAGUE ()
+{
+		team_quit_league	[&AROUND&You left the league.]
 
 }
 
@@ -67498,7 +66712,7 @@ TEST_2_TALK_TO_8 ()
 
 }
 
-// HASH_VALUE 41FE9E2532909E6A
+// HASH_VALUE D65251AACDB206EC
 TEST_2_TALK_TO_9 ()
 {
 			[dire ceci permet de ne jamais echoue dans la mission mais de la recommencer en cas d'echec]
@@ -70685,14 +69899,6 @@ UNLOCK_RITE_P_INTRO ()
 
 }
 
-// HASH_VALUE A60AA2BDF62183B9
-UPGRADE_RPJOB_UPGRADE_TITLE (bot giver, item element, int version)
-{
-		upgrade_rpjob_upgrade_title	[Постарайтесь улучшить компоненты ($version$/2) :\n
-			$element.p$]
-
-}
-
 // HASH_VALUE E08519CFD3BE3303
 WANT_ABANDON_MISSION ()
 {
@@ -70758,6 +69964,16 @@ WHOAMI_ARTISAN_RESTAURATEUR4 ()
 			Меня зовут Эссембе, я специалист по сохранению и восстановлению предметов.\n
 			Каждый по-своему одарен, просто мой дар более ценный, чем то, что могут предложить остальные...\n
 			Если тебе нужно отремонтировать какой-либо предмет, принеси мне его обломки и я приложу все усилия к тому, чтобы собрать его заново. Мои услуги недешевы, но я лучший... и единственный специалист в округе.]
+
+}
+
+// HASH_VALUE 7F70DECABFFE095E
+WHOAMI_ARTISAN_RESTAURATEUR5 ()
+{
+		whoami_artisan_restaurateur5	[Salutations,\n
+			Je me prénomme Abyrius, Artisan restaurateur, pour vous servir.\n
+			Je touche un peu à tout et m'intéresse particulièrement à la restauration d'ouvrages anciens.\n
+			Si vous avez besoin de reconstituer un document abîmé, venez me voir avec tous les morceaux que vous avez et je ferai de mon mieux. Mes services peuvent sembler onéreux mais je suis le meilleur et surtout le seul... ]
 
 }
 
@@ -71760,6 +70976,13 @@ WHOIS_KARAVAN (player p, bot b)
 {
 	(b.race = karavan)
 		who_is_karavan	[Караван - представители высшей власти, могущества богини Джены. Если ты хочешь добиться благосклонности богини, оказывай услуги Каравану.]
+
+}
+
+// HASH_VALUE 08D63EF1E7B7513D
+WHO_CHANNEL_INTRO (literal name)
+{
+			[&SYS&Characters in channel "$name$":]
 
 }
 
@@ -77035,6 +76258,258 @@ frosttouch3 ()
 
 }
 
+// HASH_VALUE 83C2D83D97820738
+genesis_free_basic_ampli ()
+{
+			[Be'Gen-am]
+
+}
+
+// HASH_VALUE DCEF784C1DBE1046
+genesis_free_basic_axe ()
+{
+			[Be'Gen-axi]
+
+}
+
+// HASH_VALUE 83332C521A820738
+genesis_free_basic_boots ()
+{
+			[Be'Gen-ot]
+
+}
+
+// HASH_VALUE 99F5FB4DE6D1DF5C
+genesis_free_basic_gloves ()
+{
+			[Be'Gen-oves]
+
+}
+
+// HASH_VALUE 83D2DC3E97820738
+genesis_free_basic_pants ()
+{
+			[Be'Gen-an]
+
+}
+
+// HASH_VALUE 83530C4A98820738
+genesis_free_basic_sleeves ()
+{
+			[Be'Gen-ev]
+
+}
+
+// HASH_VALUE A09FB4471EBE3C41
+genesis_free_basic_vest ()
+{
+			[Be'Gen-est]
+
+}
+
+// HASH_VALUE 8803283D9782074C
+genesis_pay_basic_ampli ()
+{
+			[By'Gen-am]
+
+}
+
+// HASH_VALUE E1EFC84C22BE6046
+genesis_pay_basic_axe ()
+{
+			[By'Gen-axi]
+
+}
+
+// HASH_VALUE 88747C521A82074C
+genesis_pay_basic_boots ()
+{
+			[By'Gen-ot]
+
+}
+
+// HASH_VALUE 99F54B4DEBD1DF70
+genesis_pay_basic_gloves ()
+{
+			[By'Gen-oves]
+
+}
+
+// HASH_VALUE 88132C3E9782074C
+genesis_pay_basic_pants ()
+{
+			[By'Gen-an]
+
+}
+
+// HASH_VALUE 88945C4A9882074C
+genesis_pay_basic_sleeves ()
+{
+			[By'Gen-ev]
+
+}
+
+// HASH_VALUE A59F044723BE8C41
+genesis_pay_basic_vest ()
+{
+			[By'Gen-est]
+
+}
+
+// HASH_VALUE 06D354581A82073C
+genesis_premium_hi_boots ()
+{
+			[Hi'Gen-ot]
+
+}
+
+// HASH_VALUE 1BF50B53E731DF60
+genesis_premium_hi_gloves ()
+{
+			[Hi'Gen-oves]
+
+}
+
+// HASH_VALUE 06520C469882073C
+genesis_premium_hi_helmet ()
+{
+			[Hi'Gen-el]
+
+}
+
+// HASH_VALUE 067204449782073C
+genesis_premium_hi_pants ()
+{
+			[Hi'Gen-an]
+
+}
+
+// HASH_VALUE 06F334509882073C
+genesis_premium_hi_sleeves ()
+{
+			[Hi'Gen-ev]
+
+}
+
+// HASH_VALUE A1FFC44D1F1E4C47
+genesis_premium_hi_vest ()
+{
+			[Hi'Gen-est]
+
+}
+
+// HASH_VALUE 88737C5C1A820742
+genesis_premium_lo_boots ()
+{
+			[Lo'Gen-ot]
+
+}
+
+// HASH_VALUE 1CF523576871DF66
+genesis_premium_lo_gloves ()
+{
+			[Lo'Gen-oves]
+
+}
+
+// HASH_VALUE 88122C4897820742
+genesis_premium_lo_pants ()
+{
+			[Lo'Gen-an]
+
+}
+
+// HASH_VALUE 88935C5498820742
+genesis_premium_lo_sleeves ()
+{
+			[Lo'Gen-ev]
+
+}
+
+// HASH_VALUE 223FDC51A05E644B
+genesis_premium_lo_vest ()
+{
+			[Lo'Gen-est]
+
+}
+
+// HASH_VALUE C883805D1A820742
+genesis_premium_mo_boots ()
+{
+			[Mo'Gen-ot]
+
+}
+
+// HASH_VALUE 5CF523586881DF66
+genesis_premium_mo_gloves ()
+{
+			[Mo'Gen-oves]
+
+}
+
+// HASH_VALUE C822304997820742
+genesis_premium_mo_pants ()
+{
+			[Mo'Gen-an]
+
+}
+
+// HASH_VALUE C8A3605598820742
+genesis_premium_mo_sleeves ()
+{
+			[Mo'Gen-ev]
+
+}
+
+// HASH_VALUE 224FDC52A06E644C
+genesis_premium_mo_vest ()
+{
+			[Mo'Gen-est]
+
+}
+
+// HASH_VALUE 06D354581A82073C
+genesis_winner_hi_boots ()
+{
+			[Hi'Gen-ot]
+
+}
+
+// HASH_VALUE 1BF50B53E731DF60
+genesis_winner_hi_gloves ()
+{
+			[Hi'Gen-oves]
+
+}
+
+// HASH_VALUE 06520C469882073C
+genesis_winner_hi_helmet ()
+{
+			[Hi'Gen-el]
+
+}
+
+// HASH_VALUE 067204449782073C
+genesis_winner_hi_pants ()
+{
+			[Hi'Gen-an]
+
+}
+
+// HASH_VALUE 06F334509882073C
+genesis_winner_hi_sleeves ()
+{
+			[Hi'Gen-ev]
+
+}
+
+// HASH_VALUE A1FFC44D1F1E4C47
+genesis_winner_hi_vest ()
+{
+			[Hi'Gen-est]
+
+}
+
 // HASH_VALUE EF196461D0F7FB21
 gibbai_dbfe8_anklet ()
 {
@@ -77602,6 +77077,111 @@ magic_dress_ep2_karavan50_2 ()
 
 }
 
+// HASH_VALUE 9BA2C34FA73AACB6
+magic_dress_mar_100 ()
+{
+			[Confirmed Marauder Dress]
+
+}
+
+// HASH_VALUE D2A50485AEC90882
+magic_dress_mar_150 ()
+{
+			[Inititated Marauder Dress]
+
+}
+
+// HASH_VALUE A94A38125E070FBF
+magic_dress_mar_200 ()
+{
+			[Marauder Expert Dress]
+
+}
+
+// HASH_VALUE 69D958129867DBCE
+magic_dress_mar_250 ()
+{
+			[Marauder Master Dress]
+
+}
+
+// HASH_VALUE E9684B94D3A3E7AA
+magic_dress_mar_50 ()
+{
+			[Major Marauder Apprentice Dress]
+
+}
+
+// HASH_VALUE E8B707361D9718B3
+magic_dress_pvp_100 ()
+{
+			[Confirmed Dress]
+
+}
+
+// HASH_VALUE 5C30945CF29ACCB6
+magic_dress_pvp_150 ()
+{
+			[Inititated Dress]
+
+}
+
+// HASH_VALUE 9F47286E5742189B
+magic_dress_pvp_200 ()
+{
+			[Expert Dress]
+
+}
+
+// HASH_VALUE 27A768711B72AC89
+magic_dress_pvp_250 ()
+{
+			[Master Dress]
+
+}
+
+// HASH_VALUE D74A1C476925B39A
+magic_dress_pvp_50 ()
+{
+			[Major Apprentice Dress]
+
+}
+
+// HASH_VALUE E6C8E735D8A6C8B7
+magic_dress_pvp_ranger_100 ()
+{
+			[Confirmed Ranger Dress]
+
+}
+
+// HASH_VALUE A7236F8E210ADCA3
+magic_dress_pvp_ranger_150 ()
+{
+			[Inititated Ranger Dress]
+
+}
+
+// HASH_VALUE 27C793A163E397AA
+magic_dress_pvp_ranger_200 ()
+{
+			[Ranger Expert Dress]
+
+}
+
+// HASH_VALUE 1E389F8AE412D3AB
+magic_dress_pvp_ranger_250 ()
+{
+			[Ranger Master Dress]
+
+}
+
+// HASH_VALUE 703880711698476E
+magic_dress_pvp_ranger_50 ()
+{
+			[Major Ranger Apprentice Dress]
+
+}
+
 // HASH_VALUE 25A4D09952A1886E
 mc100_reward ()
 {
@@ -78089,6 +77669,111 @@ shield_ep2_karavan50_2 ()
 shield_kitiniere_kinkoo_dead ()
 {
 			[TODO : Bouclier de bravoure de la kitinière]
+
+}
+
+// HASH_VALUE 60B21370E8AA98A9
+shield_mar_100 ()
+{
+			[Confirmed Marauder Shield]
+
+}
+
+// HASH_VALUE A3522776AA0A54B7
+shield_mar_150 ()
+{
+			[Initiated Marauder Shield]
+
+}
+
+// HASH_VALUE E69BC0324D73B4AB
+shield_mar_200 ()
+{
+			[Marauder Expert Shield]
+
+}
+
+// HASH_VALUE A62AE0324F5380BA
+shield_mar_250 ()
+{
+			[Marauder Master Shield]
+
+}
+
+// HASH_VALUE 67594B949932AFAE
+shield_mar_50 ()
+{
+			[Major Marauder Apprentice Shield]
+
+}
+
+// HASH_VALUE 66367A4EE438BCA4
+shield_pvp_100 ()
+{
+			[Confirmed Shield]
+
+}
+
+// HASH_VALUE 6E96725AE41A34A4
+shield_pvp_150 ()
+{
+			[Initiated Shield]
+
+}
+
+// HASH_VALUE 9AF8E07E66461C99
+shield_pvp_200 ()
+{
+			[Expert Shield]
+
+}
+
+// HASH_VALUE 98885095A504708F
+shield_pvp_250 ()
+{
+			[Master Shield]
+
+}
+
+// HASH_VALUE 6C78443EE497DB6B
+shield_pvp_50 ()
+{
+			[Major Apprentice Shield]
+
+}
+
+// HASH_VALUE A5F74336DEC8CCAE
+shield_pvp_ranger_100 ()
+{
+			[Confirmed Ranger Shield]
+
+}
+
+// HASH_VALUE 29882B3B6039A49D
+shield_pvp_ranger_150 ()
+{
+			[Initiated Ranger Shield]
+
+}
+
+// HASH_VALUE DF04A498E0738FA3
+shield_pvp_ranger_200 ()
+{
+			[Ranger Expert Shield]
+
+}
+
+// HASH_VALUE 9EF5B0819F649B8A
+shield_pvp_ranger_250 ()
+{
+			[Ranger Master Shield]
+
+}
+
+// HASH_VALUE ED785880D456A367
+shield_pvp_ranger_50 ()
+{
+			[Major Ranger Apprentice Shield]
 
 }
 
