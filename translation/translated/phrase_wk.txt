@@ -62423,67 +62423,31 @@ TEST12_PAS_MISSION ()
 
 }
 
-/* OLD VALUE : [
-	TEST12_PAS_SKILL (skill s, int i)
-	{
-				[ vous n'avez pas $s$ à au moins $i$ ]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 754DDD6BB0EA93EE
+// HASH_VALUE 2F4DDD6BB0EA93EE
 TEST12_PAS_SKILL (skill s, int i)
 {
-			[ vous n'avez pas $s$ � au moins $i$ ]
+			[ vous n'avez pas $s$ à au moins $i$ ]
 
 }
 
-/* OLD VALUE : [
-	TEST12_SKILL (skill s, int i)
-	{
-				[ vous avez $s$ à au moins $i$ ]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 2C02DCBBA6C8AD76
+// HASH_VALUE 2C02DCBBA6C83A76
 TEST12_SKILL (skill s, int i)
 {
-			[ vous avez $s$ � au moins $i$ ]
+			[ vous avez $s$ à au moins $i$ ]
 
 }
 
-/* OLD VALUE : [
-	TEST_10_A1 ()
-	{
-				[ retour au début de la mission(1) ]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 98E57C33CC029C46
+// HASH_VALUE 98E57C33CC029C33
 TEST_10_A1 ()
 {
-			[ retour au d�but de la mission(1) ]
+			[ retour au début de la mission(1) ]
 
 }
 
-/* OLD VALUE : [
-	TEST_10_A2 ()
-	{
-				[ retour au début de la mission(2) ]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 98E57C330C029C46
+// HASH_VALUE 98E57C330C029C33
 TEST_10_A2 ()
 {
-			[ retour au d�but de la mission(2) ]
+			[ retour au début de la mission(2) ]
 
 }
 
@@ -62494,61 +62458,26 @@ TEST_10_A3 ()
 
 }
 
-/* OLD VALUE : [
-	TEST_10_B1 ()
-	{
-				[ retour au début de la mission(1) ]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 98E57C33CC029C46
+// HASH_VALUE 98E57C33CC029C33
 TEST_10_B1 ()
 {
-			[ retour au d�but de la mission(1) ]
+			[ retour au début de la mission(1) ]
 
 }
 
-/* OLD VALUE : [
-	TEST_10_B2 ()
-	{
-				[ Changement du texte de descriptionretour au début de la mission(2) ]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 8771C7E685452FC1
+// HASH_VALUE 8771C7E685052FC1
 TEST_10_B2 ()
 {
-			[ Changement du texte de descriptionretour au d�but de la mission(2) ]
+			[ Changement du texte de descriptionretour au début de la mission(2) ]
 
 }
 
-/* OLD VALUE : [
-	TEST_10_B3 ()
-	{
-				[On recoit un item avec les propriétés suivantes Attention : l'item a un nom custom: \n
-				fiche : icmm2sa.sitem \n
-				 qualité :  16\n
-				 Durability :  1 \n
-				 Speed 10; \n
-				 Range 0.9 \n
-				 enchantement\n
-				 abm_ml_fire_00140\n
-				 ]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE D3EA31BE50798611
+// HASH_VALUE CBEAE2BE50798611
 TEST_10_B3 ()
 {
-			[On recoit un item avec les propri�t�s suivantes Attention : l'item a un nom custom: \n
+			[On recoit un item avec les propriétés suivantes Attention : l'item a un nom custom: \n
 			fiche : icmm2sa.sitem \n
-			 qualit� :  16\n
+			 qualité :  16\n
 			 Durability :  1 \n
 			 Speed 10; \n
 			 Range 0.9 \n
@@ -62558,19 +62487,10 @@ TEST_10_B3 ()
 
 }
 
-/* OLD VALUE : [
-	TEST_10_DESC (bot dummy)
-	{
-				[ Mission faite pour tester dyn chat , items spéciaux et changement de description. Global replay timer de 300 ticks ]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 56E70967FAE1E020
+// HASH_VALUE 56E70967F6E1E020
 TEST_10_DESC (bot dummy)
 {
-			[ Mission faite pour tester dyn chat , items sp�ciaux et changement de description. Global replay timer de 300 ticks ]
+			[ Mission faite pour tester dyn chat , items spéciaux et changement de description. Global replay timer de 300 ticks ]
 
 }
 
@@ -62581,19 +62501,10 @@ TEST_10_DESC_NEW ( bot b)
 
 }
 
-/* OLD VALUE : [
-	TEST_10_DYN ()
-	{
-				[ Choisis une réponse il y en a 3 ]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 28F91B48CC3CC0C9
+// HASH_VALUE 28F91B48CCFCC0C9
 TEST_10_DYN ()
 {
-			[ Choisis une r�ponse il y en a 3 ]
+			[ Choisis une réponse il y en a 3 ]
 
 }
 
@@ -62612,19 +62523,10 @@ TEST_10_TITLE (bot b)
 
 }
 
-/* OLD VALUE : [
-	TEST_11_DESC (bot dummy)
-	{
-				[ On ne peut remplir le premier objectif que l'été de 17h30 à 23h30. On ne peut faire la mission qu'une fois et elle ne peut etre prise que par un joueur.  Player replay timer de 300 ticks. Apres le 2eme objectif, la mission est un échec au bout de 20 secondes ]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE E4E2C4D90A280D0F
+// HASH_VALUE E4E275C606280DF3
 TEST_11_DESC (bot dummy)
 {
-			[ On ne peut remplir le premier objectif que l'�t� de 17h30 � 23h30. On ne peut faire la mission qu'une fois et elle ne peut etre prise que par un joueur.  Player replay timer de 300 ticks. Apres le 2eme objectif, la mission est un �chec au bout de 20 secondes ]
+			[ On ne peut remplir le premier objectif que l'été de 17h30 à 23h30. On ne peut faire la mission qu'une fois et elle ne peut etre prise que par un joueur.  Player replay timer de 300 ticks. Apres le 2eme objectif, la mission est un échec au bout de 20 secondes ]
 
 }
 
@@ -62650,35 +62552,17 @@ TEST_11_TALK_TO_3 ()
 }
 
 ////TEST 11
-/* OLD VALUE : [
-	TEST_11_TITLE (bot b)
-	{
-				[TEST11 : temporalité]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE C946CB1F9B760B1D
+// HASH_VALUE C946CB0C9B760B1D
 TEST_11_TITLE (bot b)
 {
-			[TEST11 : temporalit�]
+			[TEST11 : temporalité]
 
 }
 
-/* OLD VALUE : [
-	TEST_12_DESC (bot dummy)
-	{
-				[ au moment ou on prend la missionon a des messages sur l'état du joueur (skill /mission / brick). Verifier qu'ils sont vrais. changer skill /mission / brick pour voir si les messages changent quand on prend la mission ]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 1CFB45DA4FDDB4D1
+// HASH_VALUE 1CBB45DA4FDDB4D1
 TEST_12_DESC (bot dummy)
 {
-			[ au moment ou on prend la missionon a des messages sur l'�tat du joueur (skill /mission / brick). Verifier qu'ils sont vrais. changer skill /mission / brick pour voir si les messages changent quand on prend la mission ]
+			[ au moment ou on prend la missionon a des messages sur l'état du joueur (skill /mission / brick). Verifier qu'ils sont vrais. changer skill /mission / brick pour voir si les messages changent quand on prend la mission ]
 
 }
 
@@ -62697,35 +62581,17 @@ TEST_12_TALK_TO_2 ()
 }
 
 ////TEST 12
-/* OLD VALUE : [
-	TEST_12_TITLE (bot b)
-	{
-				[TEST112 : conditions / teleportation / ojectif caché / compass]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 2B3AE947890A2F00
+// HASH_VALUE 2B3AE934890A2F00
 TEST_12_TITLE (bot b)
 {
-			[TEST112 : conditions / teleportation / ojectif cach� / compass]
+			[TEST112 : conditions / teleportation / ojectif caché / compass]
 
 }
 
-/* OLD VALUE : [
-	TEST_13_DESC (bot dummy, int i, int ql, int qu, item it)
-	{
-				[on doit d'abord rester dans Aegus, sinon echec de la mission au bout de 30 secondes. Parler au bot annule la condition. On doit ensuite rester hors de Aegus sinon echec apres 60 sec., TEST de variable de prix: $qu$ $it$ de qualité $ql$ =  $i$ dappers ]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE C8DEDBFCE566E6FA
+// HASH_VALUE C8DEDBFCE526E6FA
 TEST_13_DESC (bot dummy, int i, int ql, int qu, item it)
 {
-			[on doit d'abord rester dans Aegus, sinon echec de la mission au bout de 30 secondes. Parler au bot annule la condition. On doit ensuite rester hors de Aegus sinon echec apres 60 sec., TEST de variable de prix: $qu$ $it$ de qualit� $ql$ =  $i$ dappers ]
+			[on doit d'abord rester dans Aegus, sinon echec de la mission au bout de 30 secondes. Parler au bot annule la condition. On doit ensuite rester hors de Aegus sinon echec apres 60 sec., TEST de variable de prix: $qu$ $it$ de qualité $ql$ =  $i$ dappers ]
 
 }
 
@@ -62758,19 +62624,10 @@ TEST_13_TITLE (bot b)
 
 }
 
-/* OLD VALUE : [
-	TEST_14_DESC (bot dummy, int i, int ql, int qu, item it)
-	{
-				[mission assignée à tout nouveau personnage]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 6E58BEF9B537AC58
+// HASH_VALUE 6E88BEF9B137AC58
 TEST_14_DESC (bot dummy, int i, int ql, int qu, item it)
 {
-			[mission assign�e � tout nouveau personnage]
+			[mission assignée à tout nouveau personnage]
 
 }
 
@@ -62789,19 +62646,10 @@ TEST_14_TITLE (bot b)
 
 }
 
-/* OLD VALUE : [
-	TEST_15_DESC (bot dummy, int i, int ql, int qu, item it)
-	{
-				[parler au bot pour acquérir automatiquement une mission. Lui reparler pour acquérir une autre mission et arreter cette mission]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 072BBA80B27F2EF6
+// HASH_VALUE 072BBA5AB27F2EF6
 TEST_15_DESC (bot dummy, int i, int ql, int qu, item it)
 {
-			[parler au bot pour acqu�rir automatiquement une mission. Lui reparler pour acqu�rir une autre mission et arreter cette mission]
+			[parler au bot pour acquérir automatiquement une mission. Lui reparler pour acquérir une autre mission et arreter cette mission]
 
 }
 
@@ -62812,36 +62660,18 @@ TEST_15_TALK_TO_1 ()
 
 }
 
-/* OLD VALUE : [
-	TEST_15_TALK_TO_2 ()
-	{
-				[TEST 15 : spawner une autre mission et réussir celle ci]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 11FC213E0E20ED41
+// HASH_VALUE 11FC212B0E20ED41
 TEST_15_TALK_TO_2 ()
 {
-			[TEST 15 : spawner une autre mission et r�ussir celle ci]
+			[TEST 15 : spawner une autre mission et réussir celle ci]
 
 }
 
 ////TEST 15
-/* OLD VALUE : [
-	TEST_15_TITLE (bot b)
-	{
-				[TEST15 : missions chainées.]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 86C6D39191633306
+// HASH_VALUE 86C6D391916333F3
 TEST_15_TITLE (bot b)
 {
-			[TEST15 : missions chain�es.]
+			[TEST15 : missions chainées.]
 
 }
 
@@ -62953,15 +62783,6 @@ TEST_2_TALK_TO_8 ()
 
 }
 
-/* OLD VALUE : [
-	TEST_2_TALK_TO_9 ()
-	{
-				[dire ceci permet de ne jamais Ã©chouÃ© dans la mission mais de la recommencer en cas d'echec]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
 // HASH_VALUE D65251AACDB206EC
 TEST_2_TALK_TO_9 ()
 {
@@ -63021,19 +62842,10 @@ TEST_4_TITLE (bot b)
 
 }
 
-/* OLD VALUE : [
-	TEST_5_DESC (bot dummy)
-	{
-				[ Mission faite pour tester des objectifs généraux ]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 351DF984130CA095
+// HASH_VALUE 311DF984130C5195
 TEST_5_DESC (bot dummy)
 {
-			[ Mission faite pour tester des objectifs g�n�raux ]
+			[ Mission faite pour tester des objectifs généraux ]
 
 }
 
@@ -63052,19 +62864,10 @@ TEST_5_TITLE (bot b)
 
 }
 
-/* OLD VALUE : [
-	TEST_6_DESC (bot dummy)
-	{
-				[ Mission faite pour tester des objectifs généraux ]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 351DF984130CA095
+// HASH_VALUE 311DF984130C5195
 TEST_6_DESC (bot dummy)
 {
-			[ Mission faite pour tester des objectifs g�n�raux ]
+			[ Mission faite pour tester des objectifs généraux ]
 
 }
 
@@ -63083,46 +62886,17 @@ TEST_6_TITLE (bot b)
 
 }
 
-/* OLD VALUE : [
-	TEST_7_CHAT ()
-	{
-				[TEST7 : je te réponds]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE D91F43826274FA2F
+// HASH_VALUE D91F43825E74FA2F
 TEST_7_CHAT ()
 {
-			[TEST7 : je te r�ponds]
+			[TEST7 : je te réponds]
 
 }
 
-/* OLD VALUE : [
-	TEST_7_DESC (bot dummy)
-	{
-				[ Mission faite pour tester les actions. A chaque fois que l'on parle au bot une nouvelle action est déclenchée. Liste des actions : recv_item\n
-				learn_action\n
-				learn_brick\n
-				recv_money : 10000\n
-				recv_fame : tribe_green_seed 1000\n
-				bot_chat : tell\n
-				bot_chat : say\n
-				bot_chat : shout\n
-				system message\n
-				add_compass_npc\n
-				add_compass_place\n
-				 ]
-	
-	}
-	
-] */
-// Clause 0 : text changed.
-// HASH_VALUE 841FBB2C6C155F60
+// HASH_VALUE 841FBB2C6CD51060
 TEST_7_DESC (bot dummy)
 {
-			[ Mission faite pour tester les actions. A chaque fois que l'on parle au bot une nouvelle action est d�clench�e. Liste des actions : recv_item\n
+			[ Mission faite pour tester les actions. A chaque fois que l'on parle au bot une nouvelle action est déclenchée. Liste des actions : recv_item\n
 			learn_action\n
 			learn_brick\n
 			recv_money : 10000\n

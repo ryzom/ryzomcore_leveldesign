@@ -126,7 +126,7 @@ TEST_5_TITLE (bot b)
 
 TEST_5_DESC (bot dummy) 
 {
-	[ Mission faite pour tester des objectifs généraux ]
+	[ Mission faite pour tester des objectifs gÃ©nÃ©raux ]
 }
 
 TEST_5_MISSION_DONE ()
@@ -142,7 +142,7 @@ TEST_6_TITLE (bot b)
 
 TEST_6_DESC (bot dummy) 
 {
-	[ Mission faite pour tester des objectifs généraux ]
+	[ Mission faite pour tester des objectifs gÃ©nÃ©raux ]
 }
 
 TEST_6_TALK_TO () 
@@ -164,12 +164,12 @@ TEST_7_NEXT ()
 
 TEST_7_CHAT ()
 {
-	[TEST7 : je te réponds]
+	[TEST7 : je te rÃ©ponds]
 }
 
 TEST_7_DESC (bot dummy) 
 {
-	[ Mission faite pour tester les actions. A chaque fois que l'on parle au bot une nouvelle action est déclenchée. Liste des actions : recv_item\nlearn_action\nlearn_brick\nrecv_money : 10000\nrecv_fame : tribe_green_seed 1000\nbot_chat : tell\nbot_chat : say\nbot_chat : shout\nsystem message\nadd_compass_npc\nadd_compass_place\n ]
+	[ Mission faite pour tester les actions. A chaque fois que l'on parle au bot une nouvelle action est dÃ©clenchÃ©e. Liste des actions : recv_item\nlearn_action\nlearn_brick\nrecv_money : 10000\nrecv_fame : tribe_green_seed 1000\nbot_chat : tell\nbot_chat : say\nbot_chat : shout\nsystem message\nadd_compass_npc\nadd_compass_place\n ]
 }
 
 
@@ -181,20 +181,20 @@ TEST_10_TITLE (bot b)
 
 TEST_10_DESC (bot dummy) 
 {
-	[ Mission faite pour tester dyn chat , items spéciaux et changement de description. Global replay timer de 300 ticks ]
+	[ Mission faite pour tester dyn chat , items spÃ©ciaux et changement de description. Global replay timer de 300 ticks ]
 }
 
 TEST_10_DYN () 
 {
-	[ Choisis une réponse il y en a 3 ]
+	[ Choisis une rÃ©ponse il y en a 3 ]
 }
 TEST_10_A1 () 
 {
-	[ retour au début de la mission(1) ]
+	[ retour au dÃ©but de la mission(1) ]
 }
 TEST_10_A2 () 
 {
-	[ retour au début de la mission(2) ]
+	[ retour au dÃ©but de la mission(2) ]
 }
 TEST_10_A3() 
 {
@@ -203,15 +203,15 @@ TEST_10_A3()
 
 TEST_10_B1 () 
 {
-	[ retour au début de la mission(1) ]
+	[ retour au dÃ©but de la mission(1) ]
 }
 TEST_10_B2 () 
 {
-	[ Changement du texte de descriptionretour au début de la mission(2) ]
+	[ Changement du texte de descriptionretour au dÃ©but de la mission(2) ]
 }
 TEST_10_B3() 
 {
-	[On recoit un item avec les propriétés suivantes Attention : l'item a un nom custom: \nfiche : icmm2sa.sitem \n qualité :  16\n Durability :  1 \n Speed 10; \n Range 0.9 \n enchantement\n abm_ml_fire_00140\n ]
+	[On recoit un item avec les propriÃ©tÃ©s suivantes Attention : l'item a un nom custom: \nfiche : icmm2sa.sitem \n qualitÃ© :  16\n Durability :  1 \n Speed 10; \n Range 0.9 \n enchantement\n abm_ml_fire_00140\n ]
 }
 
 TEST_10_DESC_NEW( bot b)
@@ -229,12 +229,12 @@ TEST_10_ITEM ()
 ////TEST 11
 TEST_11_TITLE (bot b)
 {
-	[TEST11 : temporalité]
+	[TEST11 : temporalitÃ©]
 }
 
 TEST_11_DESC (bot dummy) 
 {
-	[ On ne peut remplir le premier objectif que l'été de 17h30 à 23h30. On ne peut faire la mission qu'une fois et elle ne peut etre prise que par un joueur.  Player replay timer de 300 ticks. Apres le 2eme objectif, la mission est un échec au bout de 20 secondes ]
+	[ On ne peut remplir le premier objectif que l'Ã©tÃ© de 17h30 Ã  23h30. On ne peut faire la mission qu'une fois et elle ne peut etre prise que par un joueur.  Player replay timer de 300 ticks. Apres le 2eme objectif, la mission est un Ã©chec au bout de 20 secondes ]
 }
 
 TEST_11_TALK_TO_1 ()
@@ -255,12 +255,12 @@ TEST_11_TALK_TO_3 ()
 ////TEST 12
 TEST_12_TITLE (bot b)
 {
-	[TEST112 : conditions / teleportation / ojectif caché / compass]
+	[TEST112 : conditions / teleportation / ojectif cachÃ© / compass]
 }
 
 TEST_12_DESC (bot dummy) 
 {
-	[ au moment ou on prend la missionon a des messages sur l'état du joueur (skill /mission / brick). Verifier qu'ils sont vrais. changer skill /mission / brick pour voir si les messages changent quand on prend la mission ]
+	[ au moment ou on prend la missionon a des messages sur l'Ã©tat du joueur (skill /mission / brick). Verifier qu'ils sont vrais. changer skill /mission / brick pour voir si les messages changent quand on prend la mission ]
 }
 
 TEST12_HIDE_OBJ ()
@@ -302,13 +302,13 @@ TEST12_MISSION ()
 
 TEST12_SKILL (skill s, int i)
 {
-	[ vous avez $s$ à au moins $i$ ]
+	[ vous avez $s$ Ã  au moins $i$ ]
 }
 
 
 TEST12_PAS_SKILL (skill s, int i)
 {
-	[ vous n'avez pas $s$ à au moins $i$ ]
+	[ vous n'avez pas $s$ Ã  au moins $i$ ]
 }
 
 
@@ -321,7 +321,7 @@ TEST_13_TITLE (bot b)
 
 TEST_13_DESC (bot dummy, int i, int ql, int qu, item it) 
 {
-	[on doit d'abord rester dans Aegus, sinon echec de la mission au bout de 30 secondes. Parler au bot annule la condition. On doit ensuite rester hors de Aegus sinon echec apres 60 sec., TEST de variable de prix: $qu$ $it$ de qualité $ql$ =  $i$ dappers ]
+	[on doit d'abord rester dans Aegus, sinon echec de la mission au bout de 30 secondes. Parler au bot annule la condition. On doit ensuite rester hors de Aegus sinon echec apres 60 sec., TEST de variable de prix: $qu$ $it$ de qualitÃ© $ql$ =  $i$ dappers ]
 }
 
 TEST_13_TALK_TO_1 ()
@@ -348,7 +348,7 @@ TEST_14_TITLE (bot b)
 
 TEST_14_DESC (bot dummy, int i, int ql, int qu, item it) 
 {
-	[mission assignée à tout nouveau personnage]
+	[mission assignÃ©e Ã  tout nouveau personnage]
 }
 
 TEST_14_TALK_TO_1 ()
@@ -361,12 +361,12 @@ TEST_14_TALK_TO_1 ()
 ////TEST 15
 TEST_15_TITLE (bot b)
 {
-	[TEST15 : missions chainées.]
+	[TEST15 : missions chainÃ©es.]
 }
 
 TEST_15_DESC (bot dummy, int i, int ql, int qu, item it) 
 {
-	[parler au bot pour acquérir automatiquement une mission. Lui reparler pour acquérir une autre mission et arreter cette mission]
+	[parler au bot pour acquÃ©rir automatiquement une mission. Lui reparler pour acquÃ©rir une autre mission et arreter cette mission]
 }
 
 TEST_15_TALK_TO_1 ()
@@ -376,7 +376,7 @@ TEST_15_TALK_TO_1 ()
 
 TEST_15_TALK_TO_2 ()
 {
-	[TEST 15 : spawner une autre mission et réussir celle ci]
+	[TEST 15 : spawner une autre mission et rÃ©ussir celle ci]
 }
 
 SPAWN_MISSION_TITLE(bot b)
