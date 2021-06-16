@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <ATOM Name="Plant Name" Value="moortreeA"/>
+    <STRUCT Name="3D">
+      <ATOM Name="Shape" Value="moortree_A.shape"/>
+      <ATOM Name="Shadow Shape" Value="moortree_A.shape"/>
+      <ATOM Name="Bounding Radius" Value="10"/>
+      <ATOM Name="Collision Radius" Value="5"/>
+      <STRUCT Name="SpringFX">
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value="5"/>
+        <ATOM Name="StartHourMax" Value="4.9"/>
+      </STRUCT>
+      <STRUCT Name="SummerFX">
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value="5"/>
+        <ATOM Name="StartHourMax" Value="4.9"/>
+      </STRUCT>
+      <STRUCT Name="AutomnFX">
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value="10"/>
+        <ATOM Name="StartHourMax" Value="9.9"/>
+      </STRUCT>
+      <STRUCT Name="WinterFX">
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value="24"/>
+        <ATOM Name="StartHourMax" Value="4.9"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Aug 28 14:33:11 2003 (delord) .3D.Shadow Shape = fo_S1_arbreagrelot
+Thu Aug 28 14:33:11 2003 (delord) .3D.Shape = fo_s1_arbreagrelot
+Thu Aug 28 15:26:21 2003 (delord) .3D.Bounding Radius = 5
+Thu Aug 28 16:50:35 2003 (delord) .3D.Bounding Radius = 10
+Thu Aug 28 16:50:35 2003 (delord) .3D.Collision Radius = 5
+Thu Aug 28 16:50:46 2003 (delord) .3D.Shadow Shape = fo_S1_arbreagrelot.shape
+Thu Aug 28 16:50:46 2003 (delord) .3D.Shape = fo_s1_arbreagrelot.shape
+Mon Sep 08 10:22:30 2003 (mauduit) .3D.Shadow Shape = fo_S1_arbragrelot.shape
+Mon Sep 08 10:22:30 2003 (mauduit) .3D.Shape = fo_s1_arbragrelot.shape
+Tue Nov 18 16:11:13 2003 (firroloni) .3D.WinterFX.CycleDuration = 24
+Tue Nov 18 16:11:13 2003 (firroloni) .3D.WinterFX.StartHourMax = 12
+Tue Nov 18 16:11:13 2003 (firroloni) .3D.WinterFX.StartHourMin = 5
+Tue Nov 18 16:11:13 2003 (firroloni) formName Pasted = 
+Wed Nov 19 14:16:59 2003 (firroloni) .3D.AutomnFX.CycleDuration = 10
+Wed Nov 19 14:16:59 2003 (firroloni) .3D.AutomnFX.StartHourMax = 9.9
+Wed Nov 19 14:16:59 2003 (firroloni) .3D.SpringFX.CycleDuration = 5
+Wed Nov 19 14:16:59 2003 (firroloni) .3D.SpringFX.FXName = Ju_Fo_BirdsC.ps
+Wed Nov 19 14:16:59 2003 (firroloni) .3D.SpringFX.StartHourMax = 4.9
+Wed Nov 19 14:16:59 2003 (firroloni) .3D.WinterFX.CycleDuration = 24
+Wed Nov 19 14:16:59 2003 (firroloni) formName Pasted = 
+Thu Jul 06 14:44:22 2006 (mauduit) .3D.AutomnFX.FXName = 
+Thu Jul 06 14:44:22 2006 (mauduit) .3D.Shadow Shape = moortree_A.shape
+Thu Jul 06 14:44:22 2006 (mauduit) .3D.Shape = moortree_A.shape
+Thu Jul 06 14:44:22 2006 (mauduit) .3D.SpringFX.FXName = 
+Thu Jul 06 14:44:22 2006 (mauduit) .3D.SummerFX.FXName = 
+Thu Jul 06 14:44:22 2006 (mauduit) .3D.WinterFX.FXName = 
+Thu Jul 06 14:46:28 2006 (mauduit) .Plant Name = moortreeA</LOG>
+</FORM>

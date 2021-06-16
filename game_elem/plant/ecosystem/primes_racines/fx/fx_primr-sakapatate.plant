@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <ATOM Name="Plant Name" Value="Leaves"/>
+    <ATOM Name="Comment" Value="This is an FX"/>
+    <STRUCT Name="3D">
+      <ATOM Name="Bounding Radius" Value="0.5"/>
+      <ATOM Name="LOD 0 min"/>
+      <ATOM Name="Collision Radius" Value="0.5"/>
+      <STRUCT Name="SpringFX">
+        <ATOM Name="FXName" Value="pr_fx_sakapatate.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="CycleDuration" Value="24"/>
+        <ATOM Name="StartHourMin" Value="10"/>
+        <ATOM Name="StartHourMax" Value="12"/>
+        <ATOM Name="EndHourMin" Value="20"/>
+        <ATOM Name="EndHourMax" Value="22"/>
+      </STRUCT>
+      <STRUCT Name="SummerFX">
+        <ATOM Name="FXName" Value="pr_fx_sakapatate.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="CycleDuration" Value="24"/>
+        <ATOM Name="StartHourMin" Value="10"/>
+        <ATOM Name="StartHourMax" Value="12"/>
+        <ATOM Name="EndHourMin" Value="20"/>
+        <ATOM Name="EndHourMax" Value="22"/>
+      </STRUCT>
+      <STRUCT Name="AutomnFX">
+        <ATOM Name="FXName" Value="pr_fx_sakapatate.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="CycleDuration" Value="24"/>
+        <ATOM Name="StartHourMin" Value="15"/>
+        <ATOM Name="StartHourMax" Value="16"/>
+        <ATOM Name="EndHourMin" Value="12"/>
+        <ATOM Name="EndHourMax" Value="13"/>
+      </STRUCT>
+      <STRUCT Name="WinterFX">
+        <ATOM Name="FXName" Value="pr_fx_sakapatate.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="CycleDuration" Value="24"/>
+        <ATOM Name="StartHourMin" Value="15"/>
+        <ATOM Name="StartHourMax" Value="16"/>
+        <ATOM Name="EndHourMin" Value="12"/>
+        <ATOM Name="EndHourMax" Value="13"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:17:30 2002 (corvazier) File converted from old format
+Wed Nov 19 18:41:35 2003 (firroloni) .3D.Shape = 
+Wed Nov 19 18:41:35 2003 (firroloni) .3D.SpringFX.CycleDuration = .2
+Wed Nov 19 18:41:35 2003 (firroloni) .3D.SpringFX.FXName = PrimR-BugsA.ps
+Wed Nov 19 18:41:35 2003 (firroloni) .3D.SpringFX.Mode = Spawn
+Wed Nov 19 18:41:35 2003 (firroloni) .3D.SpringFX.StartHourMax = .19
+Wed Nov 19 18:41:35 2003 (firroloni) formName Pasted = 
+Mon Nov 24 14:15:57 2003 (firroloni) .3D.AutomnFX.FXName = pr_fx_sakapatate.ps
+Mon Nov 24 14:15:57 2003 (firroloni) .3D.SpringFX.FXName = pr_fx_sakapatate.ps
+Mon Nov 24 14:15:57 2003 (firroloni) .3D.SummerFX.FXName = pr_fx_sakapatate.ps
+Mon Nov 24 14:15:57 2003 (firroloni) .3D.WinterFX.FXName = pr_fx_sakapatate.ps
+Mon Nov 24 14:15:57 2003 (firroloni) formName Pasted = 
+Tue Nov 25 15:34:50 2003 (firroloni) .3D.AutomnFX.EndHourMax = 13
+Tue Nov 25 15:34:50 2003 (firroloni) .3D.AutomnFX.EndHourMin = 12
+Tue Nov 25 15:34:50 2003 (firroloni) .3D.AutomnFX.StartHourMax = 16
+Tue Nov 25 15:34:50 2003 (firroloni) .3D.AutomnFX.StartHourMin = 15
+Tue Nov 25 15:34:50 2003 (firroloni) formName Pasted = </LOG>
+</FORM>

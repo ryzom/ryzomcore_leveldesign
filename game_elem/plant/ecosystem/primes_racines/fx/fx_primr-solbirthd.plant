@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.1 $" State="modified">
+  <STRUCT>
+    <ATOM Name="Plant Name" Value="Leaves"/>
+    <ATOM Name="Comment" Value="This is an FX"/>
+    <STRUCT Name="3D">
+      <ATOM Name="Bounding Radius" Value="0.5"/>
+      <ATOM Name="LOD 0 min"/>
+      <ATOM Name="Collision Radius" Value="0.5"/>
+      <STRUCT Name="SpringFX">
+        <ATOM Name="FXName" Value="PrimR-SolBirthD.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="StartHourMin" Value="20"/>
+        <ATOM Name="StartHourMax" Value="21"/>
+        <ATOM Name="EndHourMin" Value="10"/>
+        <ATOM Name="EndHourMax" Value="15"/>
+      </STRUCT>
+      <STRUCT Name="SummerFX">
+        <ATOM Name="FXName" Value="PrimR-SolBirthD.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="StartHourMin" Value="18"/>
+        <ATOM Name="StartHourMax" Value="22"/>
+        <ATOM Name="EndHourMin" Value="16"/>
+        <ATOM Name="EndHourMax" Value="17"/>
+      </STRUCT>
+      <STRUCT Name="AutomnFX">
+        <ATOM Name="FXName" Value="PrimR-SolBirthD.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="StartHourMin" Value="23"/>
+        <ATOM Name="StartHourMax" Value="23.5"/>
+        <ATOM Name="EndHourMin" Value="4"/>
+        <ATOM Name="EndHourMax" Value="4.5"/>
+      </STRUCT>
+      <STRUCT Name="WinterFX">
+        <ATOM Name="FXName" Value="PrimR-SolBirthD.ps"/>
+        <ATOM Name="Mode" Value="UseEndHour"/>
+        <ATOM Name="StartHourMin" Value="15"/>
+        <ATOM Name="StartHourMax" Value="16"/>
+        <ATOM Name="EndHourMin" Value="10"/>
+        <ATOM Name="EndHourMax" Value="13"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:17:31 2002 (corvazier) File converted from old format
+Wed Nov 19 18:45:01 2003 (firroloni) .3D.Shape = 
+Wed Nov 19 18:45:01 2003 (firroloni) .3D.SpringFX.FXName = PrimR-SolBirthB.ps
+Wed Nov 19 18:45:01 2003 (firroloni) formName Pasted = 
+Mon Nov 24 10:19:09 2003 (firroloni) .3D.SpringFX.EndHourMax = 17
+Mon Nov 24 10:19:09 2003 (firroloni) .3D.SpringFX.EndHourMin = 15
+Mon Nov 24 10:19:09 2003 (firroloni) .3D.SpringFX.Mode = UseEndHour
+Mon Nov 24 10:19:09 2003 (firroloni) .3D.SpringFX.StartHourMax = 11
+Mon Nov 24 10:19:09 2003 (firroloni) .3D.SpringFX.StartHourMin = 10
+Mon Nov 24 10:19:09 2003 (firroloni) .3D.SummerFX.EndHourMax = 21
+Mon Nov 24 10:19:09 2003 (firroloni) .3D.SummerFX.EndHourMin = 20
+Mon Nov 24 10:19:09 2003 (firroloni) .3D.SummerFX.StartHourMax = 9
+Mon Nov 24 10:19:09 2003 (firroloni) .3D.SummerFX.StartHourMin = 8
+Mon Nov 24 10:19:09 2003 (firroloni) formName Pasted = 
+Mon Nov 24 10:45:29 2003 (firroloni) .3D.AutomnFX.FXName = PrimR-SolBirthD.ps
+Mon Nov 24 10:45:29 2003 (firroloni) .3D.SpringFX.FXName = PrimR-SolBirthD.ps
+Mon Nov 24 10:45:29 2003 (firroloni) .3D.SummerFX.FXName = PrimR-SolBirthD.ps
+Mon Nov 24 10:45:29 2003 (firroloni) .3D.WinterFX.FXName = PrimR-SolBirthD.ps
+Mon Nov 24 10:46:04 2003 (firroloni) .3D.AutomnFX.FXName = PrimR-SolBirthD.ps
+Mon Nov 24 10:46:04 2003 (firroloni) .3D.SpringFX.FXName = PrimR-SolBirthD.ps
+Mon Nov 24 10:46:04 2003 (firroloni) .3D.SummerFX.FXName = PrimR-SolBirthD.ps
+Mon Nov 24 10:46:04 2003 (firroloni) .3D.WinterFX.FXName = PrimR-SolBirthD.ps
+Mon Nov 24 11:36:35 2003 (firroloni) .3D.AutomnFX.FXName = PrimR-SolBirthB.ps
+Mon Nov 24 11:36:35 2003 (firroloni) .3D.SpringFX.FXName = PrimR-SolBirthB.ps
+Mon Nov 24 11:36:35 2003 (firroloni) .3D.SummerFX.FXName = PrimR-SolBirthB.ps
+Mon Nov 24 11:36:35 2003 (firroloni) .3D.WinterFX.FXName = PrimR-SolBirthB.ps
+Tue Nov 25 13:58:15 2003 (firroloni) .3D.AutomnFX.FXName = PrimR-SolBirthD.ps
+Tue Nov 25 13:58:15 2003 (firroloni) .3D.SpringFX.FXName = PrimR-SolBirthD.ps
+Tue Nov 25 13:58:15 2003 (firroloni) .3D.SummerFX.FXName = PrimR-SolBirthD.ps
+Tue Nov 25 13:58:15 2003 (firroloni) .3D.WinterFX.FXName = PrimR-SolBirthD.ps
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.AutomnFX.EndHourMax = 4.5
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.AutomnFX.EndHourMin = 4
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.AutomnFX.StartHourMax = 23.5
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.AutomnFX.StartHourMin = 23
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.SpringFX.EndHourMax = 15
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.SpringFX.EndHourMin = 10
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.SpringFX.StartHourMax = 21
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.SpringFX.StartHourMin = 20
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.SummerFX.EndHourMax = 17
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.SummerFX.EndHourMin = 16
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.SummerFX.StartHourMax = 22
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.SummerFX.StartHourMin = 18
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.WinterFX.EndHourMax = 13
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.WinterFX.EndHourMin = 10
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.WinterFX.StartHourMax = 16
+Tue Nov 25 15:28:18 2003 (firroloni) .3D.WinterFX.StartHourMin = 15</LOG>
+</FORM>

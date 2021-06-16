@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <STRUCT>
+    <ATOM Name="Plant Name" Value="Leaves"/>
+    <ATOM Name="Comment" Value="This is an FX"/>
+    <STRUCT Name="3D">
+      <ATOM Name="Bounding Radius" Value="0.5"/>
+      <ATOM Name="LOD 0 min"/>
+      <ATOM Name="Collision Radius" Value="0.5"/>
+      <STRUCT Name="SpringFX">
+        <ATOM Name="FXName" Value="PrimR-BugsA.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value=".2"/>
+        <ATOM Name="StartHourMax" Value=".19"/>
+      </STRUCT>
+      <STRUCT Name="SummerFX">
+        <ATOM Name="FXName" Value="PrimR-BugsA.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value=".2"/>
+        <ATOM Name="StartHourMax" Value=".19"/>
+      </STRUCT>
+      <STRUCT Name="AutomnFX">
+        <ATOM Name="FXName" Value="PrimR-BugsA.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value=".2"/>
+        <ATOM Name="StartHourMax" Value=".19"/>
+      </STRUCT>
+      <STRUCT Name="WinterFX">
+        <ATOM Name="FXName" Value="PrimR-BugsA.ps"/>
+        <ATOM Name="Mode" Value="Spawn"/>
+        <ATOM Name="CycleDuration" Value=".2"/>
+        <ATOM Name="StartHourMax" Value=".19"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <COMMENTS>Converted from old format</COMMENTS>
+  <LOG>Fri May 17 15:17:30 2002 (corvazier) File converted from old format
+Wed Nov 19 18:41:35 2003 (firroloni) .3D.Shape = 
+Wed Nov 19 18:41:35 2003 (firroloni) .3D.SpringFX.CycleDuration = .2
+Wed Nov 19 18:41:35 2003 (firroloni) .3D.SpringFX.FXName = PrimR-BugsA.ps
+Wed Nov 19 18:41:35 2003 (firroloni) .3D.SpringFX.Mode = Spawn
+Wed Nov 19 18:41:35 2003 (firroloni) .3D.SpringFX.StartHourMax = .19
+Wed Nov 19 18:41:35 2003 (firroloni) formName Pasted = </LOG>
+</FORM>
