@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.2 $" State="modified">
+  <STRUCT>
+    <ARRAY Name="Objects">
+      <STRUCT>
+        <STRUCT Name="StdVersion">
+          <ATOM Name="ShapeName" Value="sky_dome"/>
+          <STRUCT Name="ConstantColor0">
+            <ATOM Name="MapName" Value="stars_appears.tga"/>
+            <ATOM Name="ColorMode" Value="BitmapColor"/>
+          </STRUCT>
+          <STRUCT Name="ConstantColor2">
+            <ATOM Name="MapName" Value="stars_appears.tga"/>
+            <ATOM Name="ColorMode" Value="Unused"/>
+          </STRUCT>
+          <STRUCT Name="ColorGradient">
+            <ATOM Name="TargetTextureStage" Value="2"/>
+            <ARRAY Name="WeatherToGradient">
+              <ATOM Value="skydome.tga"/>
+              <ATOM Value="skydome2.tga"/>
+            </ARRAY>
+          </STRUCT>
+          <ATOM Name="RefColor" Value="DiffuseColor"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="StdVersion">
+          <ATOM Name="ShapeName" Value="sun fx"/>
+          <ATOM Name="TransparencyPriority" Value="1"/>
+          <STRUCT Name="DiffuseColor">
+            <ATOM Name="MapName" Value="sun_appear.tga"/>
+            <ATOM Name="ColorMode" Value="BitmapColor"/>
+          </STRUCT>
+          <ATOM Name="RefColor" Value="DiffuseColor"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT>
+        <STRUCT Name="StdVersion">
+          <ATOM Name="ShapeName" Value="clouds"/>
+          <STRUCT Name="DiffuseColor">
+            <ATOM Name="ColorMode" Value="BitmapColor"/>
+          </STRUCT>
+          <ATOM Name="RefColor" Value="None"/>
+          <ATOM Name="PannerU0" Value="10"/>
+        </STRUCT>
+      </STRUCT>
+    </ARRAY>
+    <ATOM Name="InstanceGroupName" Value="sky_scene.ig"/>
+    <ATOM Name="AnimationName" Value="sky.anim"/>
+    <ATOM Name="AnimLengthInSeconds" Value="3"/>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Tue Mar 23 17:55:30 2004 (vizerie) .InstanceGroupName = sky_scene.ig
+Tue Mar 23 18:00:13 2004 (vizerie) .Objects[0].StdVersion.ShapeName = sky_dome
+Tue Mar 23 18:00:13 2004 (vizerie) .Objects[1].StdVersion.ShapeName = sun_fx
+Tue Mar 23 18:00:13 2004 (vizerie) .Objects[1].StdVersion.TransparencyPriority = 1
+Tue Mar 23 18:00:13 2004 (vizerie) formName Resized = 2
+Tue Mar 23 18:14:32 2004 (vizerie) .Objects[0].StdVersion.DuskSetup.ColorGradient.WeatherToGradient[0] = sky_dome.tga
+Tue Mar 23 18:14:32 2004 (vizerie) .Objects[0].StdVersion.DuskSetup.ConstantColor0.ColorMode = BitmapColor
+Tue Mar 23 18:14:32 2004 (vizerie) .Objects[0].StdVersion.DuskSetup.ConstantColor0.MapName = black_to_white.tga
+Tue Mar 23 18:14:32 2004 (vizerie) formName Pasted = 
+Tue Mar 23 18:14:32 2004 (vizerie) formName Resized = 1
+Tue Mar 23 18:18:09 2004 (vizerie) .Objects[0].StdVersion.ShapeName = sky_dome.shape
+Tue Mar 23 18:18:09 2004 (vizerie) .Objects[1].StdVersion.ShapeName = sun_fx.ps
+Tue Mar 23 18:18:09 2004 (vizerie) formName Pasted = 
+Tue Mar 23 18:47:22 2004 (vizerie) .Objects[1].StdVersion.DuskSetup.DiffuseColor.MapName = black_to_white.tga
+Wed Mar 24 12:24:07 2004 (vizerie) .Objects[0].StdVersion.ShapeName = sky_dome
+Wed Mar 24 12:24:07 2004 (vizerie) .Objects[1].StdVersion.ShapeName = sun_fx
+Wed Mar 24 12:25:28 2004 (vizerie) .Objects[1].StdVersion.ShapeName = sun fx
+Wed Mar 24 15:40:03 2004 (vizerie) .Objects[0].StdVersion.DuskSetup.ConstantColor0.ColorMode = Unused
+Wed Mar 24 15:40:03 2004 (vizerie) .Objects[0].StdVersion.DuskSetup.ConstantColor0.MapName = 
+Wed Mar 24 15:40:03 2004 (vizerie) formName Pasted = 
+Wed Mar 24 15:41:51 2004 (vizerie) formName Pasted = 
+Wed Mar 24 15:59:07 2004 (vizerie) .Objects[0].StdVersion.DawnSetup.ColorGradient.TargetTextureStage = 3
+Wed Mar 24 15:59:07 2004 (vizerie) .Objects[0].StdVersion.DawnSetup.ConstantColor2.ColorMode = Unused
+Wed Mar 24 15:59:07 2004 (vizerie) .Objects[0].StdVersion.DawnSetup.ConstantColor2.MapName = 
+Wed Mar 24 15:59:07 2004 (vizerie) formName Pasted = 
+Wed Mar 24 16:22:50 2004 (vizerie) .Objects[0].StdVersion.DawnSetup.ColorGradient.TargetTextureStage = 2
+Wed Mar 24 16:22:50 2004 (vizerie) .Objects[0].StdVersion.DuskSetup.ColorGradient.TargetTextureStage = 2
+Wed Mar 24 19:31:59 2004 (vizerie) .Objects[0].StdVersion.ConstantColor2.ColorMode = BitmapColor
+Wed Mar 24 19:31:59 2004 (vizerie) .Objects[0].StdVersion.ConstantColor2.MapName = stars_appears.tga
+Wed Mar 24 19:37:49 2004 (vizerie) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[0] = skydome.tga
+Thu Mar 25 10:29:50 2004 (vizerie) .Objects[1].StdVersion.DiffuseColor.MapName = sun_appear.tga
+Thu Mar 25 10:34:06 2004 (vizerie) .Objects[1].StdVersion.DiffuseColor.ColorMode = BitmapColor
+Thu Mar 25 11:32:12 2004 (vizerie) .Objects[0].StdVersion.ConstantColor0.ColorMode = Unused
+Thu Mar 25 11:32:12 2004 (vizerie) .Objects[0].StdVersion.ConstantColor0.MapName = 
+Thu Mar 25 11:32:58 2004 (vizerie) .Objects[0].StdVersion.ConstantColor2.ColorMode = Unused
+Thu Mar 25 11:32:58 2004 (vizerie) formName Pasted = 
+Thu Mar 25 12:15:13 2004 (vizerie) .Objects[1].StdVersion.RefColor = DiffuseColor
+Thu Mar 25 17:51:38 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 1.0
+Thu Mar 25 17:51:38 2004 (vizerie) .Objects[2].StdVersion.ShapeName = clouds
+Thu Mar 25 17:51:38 2004 (vizerie) formName Resized = 3
+Thu Mar 25 17:52:00 2004 (vizerie) .Objects[2].StdVersion.RefColor = None
+Thu Mar 25 18:11:31 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 2.0
+Thu Mar 25 18:11:42 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 10
+Thu Mar 25 18:12:01 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 20
+Thu Mar 25 18:15:26 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 10
+Thu Mar 25 18:16:21 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 20
+Thu Mar 25 18:16:27 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 100
+Thu Mar 25 18:22:20 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 1
+Thu Mar 25 18:22:40 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 10
+Thu Mar 25 18:23:46 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 1
+Thu Mar 25 18:25:30 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 10
+Thu Mar 25 18:25:53 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 1
+Thu Mar 25 18:29:05 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 0.1
+Thu Mar 25 18:39:37 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 10
+Thu Mar 25 18:43:47 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 10.4154
+Fri Mar 26 12:18:37 2004 (vizerie) .AnimSpeedFactor = 0.01
+Fri Mar 26 12:18:37 2004 (vizerie) .AnimationName = sky.anim
+Fri Mar 26 14:18:50 2004 (vizerie) .AnimSpeedFactor = 1
+Fri Mar 26 14:50:53 2004 (vizerie) .AnimSpeedFactor = 1000
+Fri Mar 26 14:51:13 2004 (vizerie) .AnimSpeedFactor = 100
+Fri Mar 26 14:54:59 2004 (vizerie) .AnimSpeedFactor = 3
+Fri Mar 26 15:17:17 2004 (vizerie) .AnimLengthInSeconds = 30
+Fri Mar 26 15:55:47 2004 (vizerie) .AnimLengthInSeconds = 3
+Fri Mar 26 16:00:43 2004 (vizerie) .Objects[0].StdVersion.RefColor = DiffuseColor
+Fri Mar 26 16:00:43 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 1
+Fri Mar 26 16:00:50 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 100
+Fri Mar 26 16:00:59 2004 (vizerie) .Objects[2].StdVersion.PannerU0 = 10
+Fri Mar 26 16:07:06 2004 (vizerie) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[1] = skydome2.tga
+Fri Mar 26 16:07:06 2004 (vizerie) .Objects[2].StdVersion.DiffuseColor.ColorMode = BitmapColor
+Fri Mar 26 16:07:06 2004 (vizerie) formName Resized = 2</LOG>
+</FORM>

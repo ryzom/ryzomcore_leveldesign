@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<FORM Revision="$Revision: 1.7 $" State="modified">
+  <STRUCT>
+    <ATOM Name="WeatherBackgroundNight" Value="sky_matis_night_thunder.tga"/>
+    <ATOM Name="WeatherBackgroundDusk" Value="sky_matis_dusk_thunder.tga"/>
+    <ATOM Name="WeatherBackgroundDay" Value="sky_matis_day_thunder.tga"/>
+    <ATOM Name="Lighting" Value="1"/>
+    <ATOM Name="WindIntensity" Value="0.2"/>
+    <ATOM Name="FXRatio" Value="1"/>
+    <ATOM Name="FogRatio" Value="1"/>
+    <ATOM Name="FogColorDay" Value="0,0,0"/>
+    <ATOM Name="FogColorDusk" Value="0,0,0"/>
+    <ATOM Name="FogColorNight" Value="0,0,0"/>
+    <ATOM Name="FogNear" Value="50"/>
+    <ATOM Name="FogFar" Value="200"/>
+    <ATOM Name="FogCanopyNear" Value="300"/>
+    <ATOM Name="FogCanopyFar" Value="400"/>
+    <ATOM Name="CloudsAmbientDay" Value="46,46,37"/>
+    <ATOM Name="CloudsDiffuseDay" Value="103,103,84"/>
+    <ATOM Name="CloudsAmbientDusk" Value="220,153,82"/>
+    <ATOM Name="CloudsAmbientNight" Value="36,34,68"/>
+    <ATOM Name="CloudsDiffuseNight" Value="107,122,163"/>
+    <ATOM Name="CloudsNumber" Value="0"/>
+    <ATOM Name="CloudsDiffusionSpeed" Value="0"/>
+    <ATOM Name="SetupName" Value="Thunderseve"/>
+    <ATOM Name="ThunderIntensity" Value="1"/>
+    <ATOM Name="ThunderColor" Value="242,227,45"/>
+    <ATOM Name="LocalizedName" Value="uiSapThundery"/>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG>Thu Oct 24 18:34:30 2002 (Nicolas Vizerie) .FogCanopeeFar = 400.0
+Thu Oct 24 18:34:30 2002 (Nicolas Vizerie) .FogCanopeeNear = 300.0
+Thu Oct 24 18:34:30 2002 (Nicolas Vizerie) .FogColorDay = 255,255,255
+Thu Oct 24 18:34:30 2002 (Nicolas Vizerie) .FogColorNight = 255,255,255
+Thu Oct 24 18:34:30 2002 (Nicolas Vizerie) .FogFar = 200
+Thu Oct 24 18:34:30 2002 (Nicolas Vizerie) .FogNear = 100
+Thu Oct 24 18:34:30 2002 (Nicolas Vizerie) .FogRatio = 1
+Mon Oct 28 18:19:56 2002 (Nicolas Vizerie) .WindIntensity = 1.00
+Tue Oct 29 18:22:39 2002 (Nicolas Vizerie) .CloudsAmbientDay = 39,39,39
+Tue Oct 29 18:22:39 2002 (Nicolas Vizerie) .CloudsAmbientNight = 36,34,68
+Tue Oct 29 18:22:39 2002 (Nicolas Vizerie) .CloudsDiffuseDay = 140,140,140
+Tue Oct 29 18:22:39 2002 (Nicolas Vizerie) .CloudsDiffuseNight = 95,36,134
+Tue Oct 29 18:22:39 2002 (Nicolas Vizerie) .CloudsDiffusionSpeed = 15
+Tue Oct 29 18:22:39 2002 (Nicolas Vizerie) .CloudsNumber = 200
+Tue Oct 29 19:08:29 2002 (Nicolas Vizerie) .CloudsAmbientDay = 47,32,40
+Tue Oct 29 19:08:29 2002 (Nicolas Vizerie) .CloudsDiffuseDay = 182,99,112
+Tue Nov 05 18:03:42 2002 (Nicolas Vizerie) .SetupName = Thunder
+Fri Nov 15 14:35:11 2002 (Nicolas Vizerie) .ThunderIntensity = 1
+Thu Nov 21 16:10:02 2002 (gatto) .FogColorDay = 108,107,77
+Thu Nov 21 16:10:02 2002 (gatto) .FogColorNight = 61,62,84
+Thu Nov 21 16:10:02 2002 (gatto) .FogFar = 80
+Thu Nov 21 16:10:02 2002 (gatto) .FogNear = 20
+Thu Nov 21 16:10:53 2002 (gatto) .CloudsAmbientDay = 27,27,33
+Thu Nov 21 16:10:53 2002 (gatto) .CloudsDiffuseDay = 90,84,107
+Thu Nov 21 16:10:53 2002 (gatto) .CloudsNumber = 300
+Thu Nov 21 16:10:53 2002 (gatto) .FogCanopyFar = 200
+
+Thu Nov 21 16:10:53 2002 (gatto) .FogCanopyNear = 100
+Thu Nov 21 16:32:27 2002 (gatto) .WeatherBackgroundDay = sky_matis_thunder.tga
+Thu Nov 21 16:57:04 2002 (gatto) .CloudsDiffuseNight = 107,122,163
+Thu Nov 21 16:57:04 2002 (gatto) .FogColorDay = 97,96,88
+Thu Nov 21 17:03:00 2002 (gatto) .CloudsNumber = 256
+Thu Nov 21 17:57:07 2002 (gatto) .FogColorDay = 24,24,22
+Thu Nov 21 17:57:51 2002 (gatto) .CloudsAmbientDay = 70,70,57
+Thu Nov 21 17:57:51 2002 (gatto) .CloudsDiffuseDay = 103,103,84
+Thu Nov 21 17:57:51 2002 (gatto) .FogColorDay = 70,70,57
+Thu Nov 21 17:58:13 2002 (gatto) .CloudsAmbientDay = 46,46,37
+Thu Nov 21 18:55:29 2002 (gatto) .Lighting = 0.7
+Fri Nov 22 10:10:17 2002 (gatto) .CloudsNumber = 220
+Fri Nov 22 10:10:26 2002 (gatto) .CloudsNumber = 250
+Fri Nov 22 11:58:48 2002 (gatto) .FogColorDay = 80,80,80
+Fri Nov 22 11:59:20 2002 (gatto) .FogColorDay = 59,59,59
+Fri Nov 22 11:59:36 2002 (gatto) .FogColorDay = 69,69,69
+Fri Nov 22 14:35:26 2002 (gatto) .WeatherBackgroundNight = sky_matis_thunder.tga
+Fri Nov 22 14:48:26 2002 (gatto) .WeatherBackgroundNight = sky_matis_night_thunder.tga
+Fri Nov 22 14:48:51 2002 (gatto) .FogColorNight = 14,14,18
+Fri Nov 22 14:49:20 2002 (gatto) .FogFar = 60
+Mon Nov 25 10:05:40 2002 (gatto) .FXName = Env-Pollen.ps
+Mon Nov 25 10:17:56 2002 (gatto) .FXName = Env-Pollen.ps
+Mon Nov 25 11:41:36 2002 (gatto) .FXName = Env-snow.ps
+Mon Nov 25 12:13:43 2002 (gatto) .FXName = Env-Pluie.ps
+Mon Nov 25 12:13:43 2002 (gatto) .FXRatio = 1
+Mon Nov 25 12:20:11 2002 (gatto) .FXName = Env-Pluie.ps
+Mon Nov 25 12:20:11 2002 (gatto) .FXRatio = 1
+Mon Nov 25 13:47:51 2002 (gatto) .FXName = Env-snow.ps
+Mon Nov 25 13:55:04 2002 (gatto) .FXName = Env-snow.ps
+Mon Nov 25 13:57:37 2002 (gatto) .FXName = Env-Pollen.ps
+Mon Nov 25 13:59:49 2002 (gatto) .FXName = Env-snow.ps
+Mon Nov 25 17:41:41 2002 (gatto) .SetupName = Thunder4
+Mon Nov 25 18:55:45 2002 (gatto) Form Parents = 
+Tue Nov 26 10:09:52 2002 (gatto) .WeatherBackgroundDay = sky_matis_day_thunder.tga
+Tue Nov 26 10:09:52 2002 (gatto) .WeatherBackgroundDusk = sky_matis_dusk_thunder.tga
+Tue Nov 26 10:48:03 2002 (gatto) .CloudsAmbientDusk = 220,153,82
+Tue Nov 26 10:48:03 2002 (gatto) .FogColorDusk = 220,153,82
+Thu Nov 28 15:33:15 2002 (gatto) .FogCanopyFar = 800
+Thu Nov 28 15:33:20 2002 (gatto) .FogCanopyNear = 500
+Fri Jan 03 12:27:03 2003 (gatto) .FogCanopyFar = 500
+Fri Jan 03 12:27:03 2003 (gatto) .FogCanopyNear = 650
+Fri Jan 03 12:27:07 2003 (gatto) .FogCanopyNear = 650
+Fri Jan 03 12:27:11 2003 (gatto) .FogCanopyNear = 350
+Fri Jan 03 12:28:36 2003 (gatto) .FXName = 
+Fri Jan 03 12:28:36 2003 (gatto) .ThunderColor = 242,227,45
+Fri Jan 03 12:28:41 2003 (gatto) .SetupName = Thunder1
+Fri Jan 03 12:28:49 2003 (gatto) .SetupName = Thunderseve
+Fri Jan 03 13:35:45 2003 (gatto) .FogColorDay = 0,0,0
+Fri Jan 03 13:35:45 2003 (gatto) .FogColorDusk = 0,0,0
+Fri Jan 03 13:35:45 2003 (gatto) .FogColorNight = 0,0,0
+Fri Jan 03 13:35:59 2003 (gatto) .FogFar = 200
+Fri Jan 03 13:35:59 2003 (gatto) .FogNear = 50
+Fri Jan 03 14:15:42 2003 (gatto) .WindIntensity = 0.2
+Thu Feb 27 11:43:46 2003 (gatto) .Lighting = 1
+Thu Feb 27 11:46:20 2003 (gatto) .CloudsDiffusionSpeed = 1
+Thu Feb 27 11:46:20 2003 (gatto) .CloudsNumber = 1
+Tue Mar 18 11:58:57 2003 (gatto) .FogCanopyFar = 400
+Tue Mar 18 11:58:57 2003 (gatto) .FogCanopyNear = 300
+Wed Mar 19 17:49:51 2003 (gatto) .CloudsNumber = 0
+Wed Mar 19 18:04:49 2003 (gatto) .CloudsNumber = 1
+Wed Mar 19 18:06:58 2003 (gatto) .CloudsNumber = 0
+Wed Mar 19 18:17:22 2003 (gatto) .CloudsNumber = 1
+Thu Mar 20 11:01:59 2003 (gatto) .CloudsDiffusionSpeed = 0
+Thu Mar 20 11:01:59 2003 (gatto) .CloudsNumber = 0
+Wed Nov 12 14:02:11 2003 (corvazier) .LocalizedName = uiSapThunder
+Wed Feb 18 12:02:08 2004 (corvazier) .LocalizedName = uiSapThundery</LOG>
+</FORM>

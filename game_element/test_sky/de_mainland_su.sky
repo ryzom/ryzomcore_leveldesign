@@ -4,29 +4,29 @@
     <ARRAY Name="Objects">
       <STRUCT Name="sky_dome">
         <STRUCT Name="StdVersion">
-          <ATOM Name="ShapeName" Value="fo_sky_dome"/>
+          <ATOM Name="ShapeName" Value="de_sky_dome"/>
           <ATOM Name="TransparencyPriority" Value="0"/>
           <STRUCT Name="ConstantColor0">
-            <ATOM Name="MapName" Value="fo_wi_stars_dome_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_stars_dome_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ConstantColor2">
-            <ATOM Name="MapName" Value="fo_wi_stars_dome_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_stars_dome_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ConstantColor3">
-            <ATOM Name="MapName" Value="fo_wi_sun_dome_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_sun_dome_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ColorGradient">
             <ATOM Name="TargetTextureStage" Value="2"/>
             <ARRAY Name="WeatherToGradient">
-              <ATOM Value="fo_wi_sky_dome_gradient_fair.tga"/>
-              <ATOM Value="fo_wi_sky_dome_gradient_fair.tga"/>
-              <ATOM Value="fo_wi_sky_dome_gradient_fair.tga"/>
-              <ATOM Value="fo_wi_sky_dome_gradient_clouds.tga"/>
-              <ATOM Value="fo_wi_sky_dome_gradient_clouds.tga"/>
-              <ATOM Value="fo_wi_sky_dome_gradient_storm.tga"/>
+              <ATOM Value="de_su_sky_dome_gradient_fair.tga"/>
+              <ATOM Value="de_su_sky_dome_gradient_fair.tga"/>
+              <ATOM Value="de_su_sky_dome_gradient_fair.tga"/>
+              <ATOM Value="de_su_sky_dome_gradient_clouds.tga"/>
+              <ATOM Value="de_su_sky_dome_gradient_clouds.tga"/>
+              <ATOM Value="de_su_sky_dome_gradient_storm.tga"/>
             </ARRAY>
           </STRUCT>
           <ATOM Name="RefColor" Value="DiffuseColor"/>
@@ -36,10 +36,10 @@
           <ATOM Name="PannerV1" Value="0.5"/>
         </STRUCT>
         <STRUCT Name="FallbackPass0">
-          <ATOM Name="ShapeName" Value="fo_sky_dome_fallbackpass0"/>
+          <ATOM Name="ShapeName" Value="de_sky_dome_fallbackpass0"/>
           <ATOM Name="TransparencyPriority" Value="0"/>
           <STRUCT Name="ConstantColor0">
-            <ATOM Name="MapName" Value="fo_wi_stars_dome_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_stars_dome_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ConstantColor1">
@@ -54,12 +54,12 @@
           <STRUCT Name="ColorGradient">
             <ATOM Name="TargetTextureStage" Value="1"/>
             <ARRAY Name="WeatherToGradient">
-              <ATOM Value="fo_wi_sky_dome_gradient_fair.tga"/>
-              <ATOM Value="fo_wi_sky_dome_gradient_fair.tga"/>
-              <ATOM Value="fo_wi_sky_dome_gradient_fair.tga"/>
-              <ATOM Value="fo_wi_sky_dome_gradient_clouds.tga"/>
-              <ATOM Value="fo_wi_sky_dome_gradient_clouds.tga"/>
-              <ATOM Value="fo_wi_sky_dome_gradient_storm.tga"/>
+              <ATOM Value="de_su_sky_dome_gradient_fair.tga"/>
+              <ATOM Value="de_su_sky_dome_gradient_fair.tga"/>
+              <ATOM Value="de_su_sky_dome_gradient_fair.tga"/>
+              <ATOM Value="de_su_sky_dome_gradient_clouds.tga"/>
+              <ATOM Value="de_su_sky_dome_gradient_clouds.tga"/>
+              <ATOM Value="de_su_sky_dome_gradient_storm.tga"/>
             </ARRAY>
           </STRUCT>
           <ATOM Name="RefColor" Value="DiffuseColor"/>
@@ -69,13 +69,13 @@
       </STRUCT>
       <STRUCT Name="clouds_dome_altitude">
         <STRUCT Name="StdVersion">
-          <ATOM Name="ShapeName" Value="fo_clouds_dome_altitude"/>
+          <ATOM Name="ShapeName" Value="de_clouds_dome_altitude"/>
           <ATOM Name="TransparencyPriority" Value="2"/>
           <STRUCT Name="DiffuseColor">
             <ATOM Name="ColorMode" Value="0"/>
           </STRUCT>
           <STRUCT Name="ConstantColor0">
-            <ATOM Name="MapName" Value="fo_wi_clouds_dome_altitude_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_clouds_dome_altitude_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ColorGradient">
@@ -86,13 +86,13 @@
           <ATOM Name="PannerU1" Value="2"/>
         </STRUCT>
         <STRUCT Name="FallbackPass0">
-          <ATOM Name="ShapeName" Value="fo_clouds_dome_altitude_fallbackpass0"/>
+          <ATOM Name="ShapeName" Value="de_clouds_dome_altitude_fallbackpass0"/>
           <ATOM Name="TransparencyPriority" Value="2"/>
           <STRUCT Name="DiffuseColor">
             <ATOM Name="ColorMode" Value="0"/>
           </STRUCT>
           <STRUCT Name="ConstantColor0">
-            <ATOM Name="MapName" Value="fo_wi_clouds_dome_altitude_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_clouds_dome_altitude_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ColorGradient">
@@ -105,17 +105,17 @@
       </STRUCT>
       <STRUCT Name="clouds_dome_light">
         <STRUCT Name="StdVersion">
-          <ATOM Name="ShapeName" Value="fo_clouds_dome_light"/>
+          <ATOM Name="ShapeName" Value="de_clouds_dome_light"/>
           <ATOM Name="TransparencyPriority" Value="1"/>
           <STRUCT Name="DiffuseColor">
             <ATOM Name="ColorMode" Value="0"/>
           </STRUCT>
           <STRUCT Name="ConstantColor0">
-            <ATOM Name="MapName" Value="fo_wi_clouds_dome_light_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_clouds_dome_light_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ConstantColor2">
-            <ATOM Name="MapName" Value="fo_wi_clouds_dome_light_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_clouds_dome_light_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ColorGradient">
@@ -126,17 +126,17 @@
           <ATOM Name="PannerU1" Value="2"/>
         </STRUCT>
         <STRUCT Name="FallbackPass0">
-          <ATOM Name="ShapeName" Value="fo_clouds_dome_light_fallbackpass0"/>
+          <ATOM Name="ShapeName" Value="de_clouds_dome_light_fallbackpass0"/>
           <ATOM Name="TransparencyPriority" Value="1"/>
           <STRUCT Name="DiffuseColor">
             <ATOM Name="ColorMode" Value="0"/>
           </STRUCT>
           <STRUCT Name="ConstantColor0">
-            <ATOM Name="MapName" Value="fo_wi_clouds_dome_light_appear_fallback.tga"/>
+            <ATOM Name="MapName" Value="de_su_clouds_dome_light_appear_fallback.tga"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ConstantColor2">
-            <ATOM Name="MapName" Value="fo_wi_clouds_dome_light_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_clouds_dome_light_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ColorGradient">
@@ -149,18 +149,18 @@
       </STRUCT>
       <STRUCT Name="clouds_dome_heavy">
         <STRUCT Name="StdVersion">
-          <ATOM Name="ShapeName" Value="fo_clouds_dome_heavy"/>
+          <ATOM Name="ShapeName" Value="de_clouds_dome_heavy"/>
           <ATOM Name="TransparencyPriority" Value="2"/>
           <STRUCT Name="DiffuseColor">
-            <ATOM Name="MapName" Value="fo_wi_clouds_dome_heavy_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_clouds_dome_heavy_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ConstantColor0">
-            <ATOM Name="MapName" Value="fo_wi_clouds_dome_heavy_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_clouds_dome_heavy_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ConstantColor1">
-            <ATOM Name="MapName" Value="fo_wi_clouds_dome_heavy_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_clouds_dome_heavy_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ColorGradient">
@@ -172,18 +172,18 @@
           <ATOM Name="PannerU3" Value="4"/>
         </STRUCT>
         <STRUCT Name="FallbackPass0">
-          <ATOM Name="ShapeName" Value="fo_clouds_dome_heavy_fallbackpass0"/>
+          <ATOM Name="ShapeName" Value="de_clouds_dome_heavy_fallbackpass0"/>
           <ATOM Name="TransparencyPriority" Value="2"/>
           <STRUCT Name="DiffuseColor">
-            <ATOM Name="MapName" Value="fo_wi_clouds_dome_heavy_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_clouds_dome_heavy_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ConstantColor0">
-            <ATOM Name="MapName" Value="fo_wi_clouds_dome_heavy_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_clouds_dome_heavy_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ConstantColor1">
-            <ATOM Name="MapName" Value="fo_wi_clouds_dome_heavy_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_clouds_dome_heavy_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ColorGradient">
@@ -197,7 +197,7 @@
       </STRUCT>
       <STRUCT Name="horizom_dome">
         <STRUCT Name="StdVersion">
-          <ATOM Name="ShapeName" Value="fo_horizon_dome"/>
+          <ATOM Name="ShapeName" Value="de_horizon_dome"/>
           <ATOM Name="TransparencyPriority" Value="2"/>
           <STRUCT Name="DiffuseColor">
             <ATOM Name="ColorMode" Value="Unused"/>
@@ -206,85 +206,85 @@
             <ATOM Name="ColorMode" Value="FogColor"/>
           </STRUCT>
           <STRUCT Name="ConstantColor1">
-            <ATOM Name="MapName" Value="fo_wi_fog_color.tga"/>
+            <ATOM Name="MapName" Value="de_su_fog_color.tga"/>
             <ATOM Name="ColorMode" Value="FogColor"/>
           </STRUCT>
           <ATOM Name="RefColor" Value="None"/>
           <ATOM Name="PannerU0" Value="0"/>
           <ATOM Name="OffsetFactorV0" Value="1"/>
-          <ATOM Name="OffsetVBitmap1" Value="fo_wi_fog_dome_appear.tga"/>
+          <ATOM Name="OffsetVBitmap1" Value="de_su_fog_dome_appear.tga"/>
           <ATOM Name="OffsetFactorU1" Value="1"/>
           <ATOM Name="OffsetFactorV1" Value="2"/>
         </STRUCT>
       </STRUCT>
       <STRUCT Name="sun">
         <STRUCT Name="StdVersion">
-          <ATOM Name="ShapeName" Value="fo_sky_ps_sun"/>
+          <ATOM Name="ShapeName" Value="de_sky_ps_sun"/>
           <ATOM Name="TransparencyPriority" Value="2"/>
           <STRUCT Name="DiffuseColor">
-            <ATOM Name="MapName" Value="fo_wi_sun_ps_appear.tga"/>
+            <ATOM Name="MapName" Value="de_su_sun_ps_appear.tga"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <ATOM Name="RefColor" Value="DiffuseColor"/>
-          <ATOM Name="UserParam0" Value="fo_wi_sun_ps_up0.tga"/>
-          <ATOM Name="UserParam1" Value="fo_wi_sun_ps_up1.tga"/>
+          <ATOM Name="UserParam0" Value="de_su_sun_ps_up0.tga"/>
+          <ATOM Name="UserParam1" Value="de_su_sun_ps_up1.tga"/>
         </STRUCT>
       </STRUCT>
       <STRUCT Name="moon01">
         <STRUCT Name="StdVersion">
-          <ATOM Name="ShapeName" Value="fo_sky_ps_moon01"/>
+          <ATOM Name="ShapeName" Value="de_sky_ps_moon01"/>
           <ATOM Name="TransparencyPriority" Value="0"/>
           <STRUCT Name="DiffuseColor">
-            <ATOM Name="MapName" Value="fo_wi_moon_ps_appear.tga"/>
+            <ATOM Name="MapName" Value="de_su_moon_ps_appear.tga"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <ATOM Name="RefColor" Value="DiffuseColor"/>
           <ATOM Name="PannerU0" Value="0"/>
           <ATOM Name="PannerU1" Value="0"/>
-          <ATOM Name="UserParam0" Value="fo_wi_moon01_ps_up.tga"/>
-          <ATOM Name="UserParam1" Value="fo_wi_moon01_ps_up.tga"/>
-          <ATOM Name="UserParam2" Value="fo_wi_moon01_ps_up.tga"/>
+          <ATOM Name="UserParam0" Value="de_su_moon01_ps_up.tga"/>
+          <ATOM Name="UserParam1" Value="de_su_moon01_ps_up.tga"/>
+          <ATOM Name="UserParam2" Value="de_su_moon01_ps_up.tga"/>
         </STRUCT>
       </STRUCT>
       <STRUCT Name="moon02">
         <STRUCT Name="StdVersion">
-          <ATOM Name="ShapeName" Value="fo_sky_ps_moon02"/>
+          <ATOM Name="ShapeName" Value="de_sky_ps_moon02"/>
           <ATOM Name="TransparencyPriority" Value="0"/>
           <STRUCT Name="DiffuseColor">
-            <ATOM Name="MapName" Value="fo_wi_moon_ps_appear.tga"/>
+            <ATOM Name="MapName" Value="de_su_moon_ps_appear.tga"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <ATOM Name="RefColor" Value="DiffuseColor"/>
           <ATOM Name="PannerU0" Value="0"/>
           <ATOM Name="PannerU1" Value="0"/>
-          <ATOM Name="UserParam0" Value="fo_wi_moon02_ps_up.tga"/>
+          <ATOM Name="UserParam0" Value="de_su_moon02_ps_up.tga"/>
         </STRUCT>
       </STRUCT>
       <STRUCT Name="moon03">
         <STRUCT Name="StdVersion">
-          <ATOM Name="ShapeName" Value="fo_sky_ps_moon03"/>
+          <ATOM Name="ShapeName" Value="de_sky_ps_moon03"/>
           <ATOM Name="TransparencyPriority" Value="0"/>
           <STRUCT Name="DiffuseColor">
-            <ATOM Name="MapName" Value="fo_wi_moon_ps_appear.tga"/>
+            <ATOM Name="MapName" Value="de_su_moon_ps_appear.tga"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <ATOM Name="RefColor" Value="DiffuseColor"/>
           <ATOM Name="PannerU0" Value="0"/>
           <ATOM Name="PannerU1" Value="0"/>
-          <ATOM Name="UserParam0" Value="fo_wi_moon03_ps_up.tga"/>
-          <ATOM Name="UserParam1" Value="fo_wi_moon03_ps_up.tga"/>
-          <ATOM Name="UserParam2" Value="fo_wi_moon03_ps_up.tga"/>
+          <ATOM Name="UserParam0" Value="de_su_moon03_ps_up.tga"/>
+          <ATOM Name="UserParam1" Value="de_su_moon03_ps_up.tga"/>
+          <ATOM Name="UserParam2" Value="de_su_moon03_ps_up.tga"/>
         </STRUCT>
       </STRUCT>
       <STRUCT Name="lightning">
         <STRUCT Name="StdVersion">
-          <ATOM Name="ShapeName" Value="fo_sky_ps_lighting01"/>
+          <ATOM Name="ShapeName" Value="de_sky_ps_lighting01"/>
           <ATOM Name="TransparencyPriority" Value="3"/>
           <STRUCT Name="DiffuseColor">
             <ATOM Name="ColorMode" Value="Unused"/>
           </STRUCT>
           <STRUCT Name="ParticleEmitters">
-            <ATOM Name="MapName" Value="fo_wi_lightning_ps_appear.tga"/>
+            <ATOM Name="MapName" Value="de_su_lightning_ps_appear.tga"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <STRUCT Name="ConstantColor0">
@@ -296,35 +296,35 @@
       </STRUCT>
       <STRUCT Name="shootingstar">
         <STRUCT Name="StdVersion">
-          <ATOM Name="ShapeName" Value="fo_sky_ps_shootingstar01"/>
+          <ATOM Name="ShapeName" Value="de_sky_ps_shootingstar01"/>
           <ATOM Name="TransparencyPriority" Value="3"/>
           <STRUCT Name="DiffuseColor">
-            <ATOM Name="MapName" Value="fo_wi_stars_dome_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_stars_dome_appear.TGA"/>
             <ATOM Name="ColorMode" Value="Unused"/>
           </STRUCT>
           <STRUCT Name="ParticleEmitters">
-            <ATOM Name="MapName" Value="fo_wi_stars_dome_appear.TGA"/>
+            <ATOM Name="MapName" Value="de_su_stars_dome_appear.TGA"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
           <ATOM Name="RefColor" Value="ParticleEmittersColors"/>
         </STRUCT>
         <ATOM Name="VisibleInEnvMap" Value="false"/>
       </STRUCT>
-      <STRUCT>
+      <STRUCT Name="lensflare">
         <STRUCT Name="StdVersion">
-          <ATOM Name="ShapeName" Value="fo_sun_flare"/>
+          <ATOM Name="ShapeName" Value="de_sun_flare"/>
           <ATOM Name="TransparencyPriority" Value="4"/>
           <STRUCT Name="DiffuseColor">
-            <ATOM Name="MapName" Value="fo_wi_sun_flare_appear.tga"/>
+            <ATOM Name="MapName" Value="de_su_sun_flare_appear.tga"/>
             <ATOM Name="ColorMode" Value="BitmapColor"/>
           </STRUCT>
         </STRUCT>
       </STRUCT>
     </ARRAY>
-    <ATOM Name="InstanceGroupName" Value="fo_sky_dome.ig"/>
-    <ATOM Name="AnimationName" Value="fo_sky_dome.anim"/>
+    <ATOM Name="InstanceGroupName" Value="de_sky_dome.ig"/>
+    <ATOM Name="AnimationName" Value="de_sky_dome.anim"/>
     <ATOM Name="AnimLengthInSeconds" Value="3"/>
-    <ATOM Name="FogColorBitmap" Value="fo_wi_fog_color.tga"/>
+    <ATOM Name="FogColorBitmap" Value="de_su_fog_color.tga"/>
     <ATOM Name="WaterEnvMapAlpha" Value="50"/>
   </STRUCT>
   <STRUCT/>
@@ -627,6 +627,7 @@ Thu Apr 01 15:59:24 2004 (gatto) .Objects[6].StdVersion.DiffuseColor.ColorMode =
 Thu Apr 01 15:59:24 2004 (gatto) .Objects[6].StdVersion.DiffuseColor.MapName = clouds_dome_heavy_appear.TGA
 Thu Apr 01 15:59:24 2004 (gatto) .Objects[6].StdVersion.RefColor = DiffuseColor
 Thu Apr 01 16:00:51 2004 (gatto) .Objects[6].StdVersion.RefColor = Constant1
+
 Thu Apr 01 16:01:05 2004 (gatto) .Objects[6].StdVersion.DiffuseColor.ColorMode = 0
 Thu Apr 01 16:01:05 2004 (gatto) .Objects[6].StdVersion.DiffuseColor.MapName = 
 Thu Apr 01 16:18:37 2004 (gatto) .Objects[2].StdVersion.ShapeName = clouds_dome_light
@@ -723,32 +724,32 @@ Wed Apr 14 16:25:40 2004 (gatto) .Objects[5].StdVersion.ConstantColor0.ColorMode
 Wed Apr 14 16:25:40 2004 (gatto) .Objects[5].StdVersion.DiffuseColor.ColorMode = Unused
 Thu Apr 15 17:04:19 2004 (gatto) .FogColorBitmap = sky_dome_gradient_fair.tga
 Thu Apr 15 17:16:19 2004 (gatto) .FogColorBitmap = fog_color.tga
-Fri Apr 16 15:16:39 2004 (gatto) .AnimationName = fo_sky_dome.anim
-Fri Apr 16 15:16:39 2004 (gatto) .InstanceGroupName = fo_sky_dome.ig
-Fri Apr 16 15:22:34 2004 (gatto) .Objects[0].StdVersion.ShapeName = fo_sky_dome
-Fri Apr 16 15:24:09 2004 (gatto) .Objects[10].StdVersion.ShapeName = fo_sky_ps_lighting01
-Fri Apr 16 15:24:09 2004 (gatto) .Objects[11].StdVersion.ShapeName = fo_sky_ps_shootingstar01
-Fri Apr 16 15:24:09 2004 (gatto) .Objects[1].StdVersion.ShapeName = fo_clouds_dome_altitude
-Fri Apr 16 15:24:09 2004 (gatto) .Objects[2].StdVersion.ShapeName = fo_clouds_dome_light
-Fri Apr 16 15:24:09 2004 (gatto) .Objects[3].StdVersion.ShapeName = fo_clouds_dome_lightbottom
-Fri Apr 16 15:24:09 2004 (gatto) .Objects[4].StdVersion.ShapeName = fo_clouds_dome_heavy
-Fri Apr 16 15:24:09 2004 (gatto) .Objects[5].StdVersion.ShapeName = fo_horizon_dome
-Fri Apr 16 15:24:09 2004 (gatto) .Objects[6].StdVersion.ShapeName = fo_sky_ps_sun
-Fri Apr 16 15:24:09 2004 (gatto) .Objects[8].StdVersion.ShapeName = fo_sky_ps_moon02
-Fri Apr 16 15:24:09 2004 (gatto) .Objects[9].StdVersion.ShapeName = fo_sky_ps_moon03
-Fri Apr 16 15:59:18 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[0] = fo_sky_dome_gradient_fair.tga
-Fri Apr 16 15:59:18 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[1] = fo_sky_dome_gradient_fair.tga
-Fri Apr 16 15:59:18 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[2] = fo_sky_dome_gradient_fair.tga
-Fri Apr 16 15:59:18 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[3] = fo_sky_dome_gradient_clouds.tga
-Fri Apr 16 15:59:18 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[4] = fo_sky_dome_gradient_clouds.tga
-Fri Apr 16 15:59:18 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[5] = fo_sky_dome_gradient_storm.tga
-Fri Apr 16 15:59:18 2004 (gatto) .Objects[1].StdVersion.ConstantColor0.MapName = fo_clouds_dome_altitude_appear.TGA
+Fri Apr 16 15:16:39 2004 (gatto) .AnimationName = de_sky_dome.anim
+Fri Apr 16 15:16:39 2004 (gatto) .InstanceGroupName = de_sky_dome.ig
+Fri Apr 16 15:22:34 2004 (gatto) .Objects[0].StdVersion.ShapeName = de_sky_dome
+
+Fri Apr 16 15:24:09 2004 (gatto) .Objects[10].StdVersion.ShapeName = de_sky_ps_lighting01
+Fri Apr 16 15:24:09 2004 (gatto) .Objects[11].StdVersion.ShapeName = de_sky_ps_shootingstar01
+Fri Apr 16 15:24:09 2004 (gatto) .Objects[1].StdVersion.ShapeName = de_clouds_dome_altitude
+Fri Apr 16 15:24:09 2004 (gatto) .Objects[2].StdVersion.ShapeName = de_clouds_dome_light
+Fri Apr 16 15:24:09 2004 (gatto) .Objects[3].StdVersion.ShapeName = de_clouds_dome_lightbottom
+Fri Apr 16 15:24:09 2004 (gatto) .Objects[4].StdVersion.ShapeName = de_clouds_dome_heavy
+Fri Apr 16 15:24:09 2004 (gatto) .Objects[5].StdVersion.ShapeName = de_horizon_dome
+Fri Apr 16 15:24:09 2004 (gatto) .Objects[6].StdVersion.ShapeName = de_sky_ps_sun
+Fri Apr 16 15:24:09 2004 (gatto) .Objects[8].StdVersion.ShapeName = de_sky_ps_moon02
+Fri Apr 16 15:24:09 2004 (gatto) .Objects[9].StdVersion.ShapeName = de_sky_ps_moon03
+Fri Apr 16 15:59:18 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[0] = de_sky_dome_gradient_fair.tga
+Fri Apr 16 15:59:18 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[1] = de_sky_dome_gradient_fair.tga
+Fri Apr 16 15:59:18 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[2] = de_sky_dome_gradient_fair.tga
+Fri Apr 16 15:59:18 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[3] = de_sky_dome_gradient_clouds.tga
+Fri Apr 16 15:59:18 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[4] = de_sky_dome_gradient_clouds.tga
+Fri Apr 16 15:59:18 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[5] = de_sky_dome_gradient_storm.tga
+Fri Apr 16 15:59:18 2004 (gatto) .Objects[1].StdVersion.ConstantColor0.MapName = de_clouds_dome_altitude_appear.TGA
 Fri Apr 16 15:59:39 2004 (gatto) .Objects[1].StdVersion.ConstantColor0.MapName = clouds_dome_altitude_appear.TGA
 Fri Apr 16 16:00:31 2004 (gatto) .Objects[5].StdVersion.ConstantColor0.MapName = fog_color.tga
 Fri Apr 16 16:00:31 2004 (gatto) .Objects[5].StdVersion.ConstantColor1.MapName = fog_color.tga
-
-Fri Apr 16 16:15:50 2004 (gatto) .Objects[6].StdVersion.DiffuseColor.MapName = fo_win_ps_appear.tga
-Fri Apr 16 16:16:48 2004 (gatto) .Objects[0].StdVersion.ConstantColor3.MapName = fo_win_dome_appear.TGA
+Fri Apr 16 16:15:50 2004 (gatto) .Objects[6].StdVersion.DiffuseColor.MapName = de_sun_ps_appear.tga
+Fri Apr 16 16:16:48 2004 (gatto) .Objects[0].StdVersion.ConstantColor3.MapName = de_sun_dome_appear.TGA
 Fri Apr 16 16:17:10 2004 (gatto) .Objects[6].StdVersion.DiffuseColor.MapName = sun_ps_appear.tga
 Fri Apr 16 16:18:41 2004 (gatto) .Objects[5].StdVersion.TransparencyPriority = 1
 Fri Apr 16 16:19:17 2004 (gatto) .Objects[11].StdVersion.TransparencyPriority = 1
@@ -784,46 +785,46 @@ Wed Apr 21 17:24:53 2004 (gatto) .Objects[5].StdVersion.OffsetFactorV1 = 1.5
 Thu Apr 22 11:58:20 2004 (gatto) .Objects[5].StdVersion.OffsetFactorV1 = .Objects[5].StdVersion.OffsetFactorV1
 Thu Apr 22 13:59:32 2004 (gatto) .Objects[4].StdVersion.PannerU3 = 3
 Thu Apr 22 14:00:52 2004 (gatto) .Objects[4].StdVersion.PannerU3 = 4
-Mon Apr 26 10:35:19 2004 (gatto) .FogColorBitmap = fo_wi_fog_color.tga
-Mon Apr 26 10:35:19 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[0] = fo_wi_sky_dome_gradient_fair.tga
-Mon Apr 26 10:35:19 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[1] = fo_wi_sky_dome_gradient_fair.tga
-Mon Apr 26 10:35:19 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[2] = fo_wi_sky_dome_gradient_fair.tga
-Mon Apr 26 10:35:19 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[3] = fo_wi_sky_dome_gradient_clouds.tga
-Mon Apr 26 10:35:19 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[4] = fo_wi_sky_dome_gradient_clouds.tga
-Mon Apr 26 10:35:19 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[5] = fo_wi_sky_dome_gradient_storm.tga
+Mon Apr 26 10:35:19 2004 (gatto) .FogColorBitmap = de_su_fog_color.tga
+Mon Apr 26 10:35:19 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[0] = de_su_sky_dome_gradient_fair.tga
+Mon Apr 26 10:35:19 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[1] = de_su_sky_dome_gradient_fair.tga
+Mon Apr 26 10:35:19 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[2] = de_su_sky_dome_gradient_fair.tga
+Mon Apr 26 10:35:19 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[3] = de_su_sky_dome_gradient_clouds.tga
+Mon Apr 26 10:35:19 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[4] = de_su_sky_dome_gradient_clouds.tga
+Mon Apr 26 10:35:19 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[5] = de_su_sky_dome_gradient_storm.tga
 Mon Apr 26 10:35:19 2004 (gatto) .Objects[0].StdVersion.ShapeName = sky_dome
-Mon Apr 26 10:35:19 2004 (gatto) .Objects[1].StdVersion.ConstantColor0.MapName = fo_wi_clouds_dome_altitude_appear.TGA
+Mon Apr 26 10:35:19 2004 (gatto) .Objects[1].StdVersion.ConstantColor0.MapName = de_su_clouds_dome_altitude_appear.TGA
 Mon Apr 26 10:35:19 2004 (gatto) .Objects[1].StdVersion.ShapeName = clouds_dome_altitude
-Mon Apr 26 10:44:43 2004 (gatto) .Objects[2].StdVersion.ConstantColor0.MapName = fo_wi_clouds_dome_light_appear.TGA
-Mon Apr 26 10:44:43 2004 (gatto) .Objects[2].StdVersion.ConstantColor2.MapName = fo_wi_clouds_dome_light_appear.TGA
+Mon Apr 26 10:44:43 2004 (gatto) .Objects[2].StdVersion.ConstantColor0.MapName = de_su_clouds_dome_light_appear.TGA
+Mon Apr 26 10:44:43 2004 (gatto) .Objects[2].StdVersion.ConstantColor2.MapName = de_su_clouds_dome_light_appear.TGA
 Mon Apr 26 10:44:43 2004 (gatto) .Objects[2].StdVersion.ShapeName = clouds_dome_light
-Mon Apr 26 10:44:43 2004 (gatto) .Objects[3].StdVersion.ConstantColor0.MapName = fo_wi_clouds_dome_heavy_appear.TGA
-Mon Apr 26 10:44:43 2004 (gatto) .Objects[3].StdVersion.ConstantColor1.MapName = fo_wi_clouds_dome_heavy_appear.TGA
+Mon Apr 26 10:44:43 2004 (gatto) .Objects[3].StdVersion.ConstantColor0.MapName = de_su_clouds_dome_heavy_appear.TGA
+Mon Apr 26 10:44:43 2004 (gatto) .Objects[3].StdVersion.ConstantColor1.MapName = de_su_clouds_dome_heavy_appear.TGA
 Mon Apr 26 10:44:43 2004 (gatto) .Objects[3].StdVersion.ShapeName = clouds_dome_heavy
 Mon Apr 26 10:44:43 2004 (gatto) .Objects[4].StdVersion.ShapeName = horizon_dome
 Mon Apr 26 10:44:43 2004 (gatto) formName Deleted = 
 Mon Apr 26 10:44:45 2004 (gatto) .Objects[4].StdVersion.ShapeName = .Objects[4].StdVersion.ShapeName
-Mon Apr 26 10:44:58 2004 (gatto) .Objects[4].StdVersion.ConstantColor1.MapName = fo_wi_fog_color.tga
-Mon Apr 26 10:48:03 2004 (gatto) .Objects[5].StdVersion.DiffuseColor.MapName = fo_wi_sun_ps_appear.tga
-Mon Apr 26 10:48:03 2004 (gatto) .Objects[5].StdVersion.UserParam0 = fo_wi_sun_ps_up0.tga
-Mon Apr 26 10:48:03 2004 (gatto) .Objects[5].StdVersion.UserParam1 = fo_wi_sun_ps_up1.tga
-Mon Apr 26 10:48:03 2004 (gatto) .Objects[6].StdVersion.DiffuseColor.MapName = fo_wi_moon_ps_appear.tga
-Mon Apr 26 10:48:03 2004 (gatto) .Objects[6].StdVersion.ShapeName = fo_sky_ps_moon01
-Mon Apr 26 10:48:03 2004 (gatto) .Objects[7].StdVersion.DiffuseColor.MapName = fo_wi_moon_ps_appear.tga
-Mon Apr 26 10:48:03 2004 (gatto) .Objects[7].StdVersion.UserParam0 = fo_wi_moon02_ps_up.tga
-Mon Apr 26 10:48:03 2004 (gatto) .Objects[8].StdVersion.UserParam0 = fo_wi_moon_ps_up.tga
-Mon Apr 26 10:48:03 2004 (gatto) .Objects[8].StdVersion.UserParam1 = fo_wi_moon_ps_up.tga
-Mon Apr 26 10:48:03 2004 (gatto) .Objects[8].StdVersion.UserParam2 = fo_wi_moon_ps_up.tga
-Mon Apr 26 11:04:46 2004 (gatto) .Objects[10].StdVersion.DiffuseColor.MapName = fo_wi_stars_dome_appear.TGA
-Mon Apr 26 11:04:46 2004 (gatto) .Objects[10].StdVersion.ParticleEmitters.MapName = fo_wi_stars_dome_appear.TGA
-Mon Apr 26 11:04:46 2004 (gatto) .Objects[8].StdVersion.DiffuseColor.MapName = fo_wi_moon_ps_appear.tga
-Mon Apr 26 11:04:46 2004 (gatto) .Objects[9].StdVersion.ParticleEmitters.MapName = fo_wi_lightning_ps_appear.tga
-Mon Apr 26 11:27:08 2004 (gatto) .Objects[0].StdVersion.ConstantColor0.MapName = fo_wi_stars_dome_appear.TGA
-Mon Apr 26 11:27:08 2004 (gatto) .Objects[0].StdVersion.ConstantColor2.MapName = fo_wi_stars_dome_appear.TGA
-Mon Apr 26 11:27:08 2004 (gatto) .Objects[0].StdVersion.ConstantColor3.MapName = fo_wi_sun_dome_appear.TGA
-Mon Apr 26 11:36:01 2004 (gatto) .Objects[3].StdVersion.DiffuseColor.MapName = fo_wi_clouds_dome_heavy_appear.TGA
+Mon Apr 26 10:44:58 2004 (gatto) .Objects[4].StdVersion.ConstantColor1.MapName = de_su_fog_color.tga
+Mon Apr 26 10:48:03 2004 (gatto) .Objects[5].StdVersion.DiffuseColor.MapName = de_su_sun_ps_appear.tga
+Mon Apr 26 10:48:03 2004 (gatto) .Objects[5].StdVersion.UserParam0 = de_su_sun_ps_up0.tga
+Mon Apr 26 10:48:03 2004 (gatto) .Objects[5].StdVersion.UserParam1 = de_su_sun_ps_up1.tga
+Mon Apr 26 10:48:03 2004 (gatto) .Objects[6].StdVersion.DiffuseColor.MapName = de_su_moon_ps_appear.tga
+Mon Apr 26 10:48:03 2004 (gatto) .Objects[6].StdVersion.ShapeName = de_sky_ps_moon01
+Mon Apr 26 10:48:03 2004 (gatto) .Objects[7].StdVersion.DiffuseColor.MapName = de_su_moon_ps_appear.tga
+Mon Apr 26 10:48:03 2004 (gatto) .Objects[7].StdVersion.UserParam0 = de_su_moon02_ps_up.tga
+Mon Apr 26 10:48:03 2004 (gatto) .Objects[8].StdVersion.UserParam0 = de_su_moon_ps_up.tga
+Mon Apr 26 10:48:03 2004 (gatto) .Objects[8].StdVersion.UserParam1 = de_su_moon_ps_up.tga
+Mon Apr 26 10:48:03 2004 (gatto) .Objects[8].StdVersion.UserParam2 = de_su_moon_ps_up.tga
+Mon Apr 26 11:04:46 2004 (gatto) .Objects[10].StdVersion.DiffuseColor.MapName = de_su_stars_dome_appear.TGA
+Mon Apr 26 11:04:46 2004 (gatto) .Objects[10].StdVersion.ParticleEmitters.MapName = de_su_stars_dome_appear.TGA
+Mon Apr 26 11:04:46 2004 (gatto) .Objects[8].StdVersion.DiffuseColor.MapName = de_su_moon_ps_appear.tga
+Mon Apr 26 11:04:46 2004 (gatto) .Objects[9].StdVersion.ParticleEmitters.MapName = de_su_lightning_ps_appear.tga
+Mon Apr 26 11:27:08 2004 (gatto) .Objects[0].StdVersion.ConstantColor0.MapName = de_su_stars_dome_appear.TGA
+Mon Apr 26 11:27:08 2004 (gatto) .Objects[0].StdVersion.ConstantColor2.MapName = de_su_stars_dome_appear.TGA
+Mon Apr 26 11:27:08 2004 (gatto) .Objects[0].StdVersion.ConstantColor3.MapName = de_su_sun_dome_appear.TGA
+Mon Apr 26 11:36:01 2004 (gatto) .Objects[3].StdVersion.DiffuseColor.MapName = de_su_clouds_dome_heavy_appear.TGA
 Tue Apr 27 15:47:23 2004 (gatto) .Objects[11] Renamed = canope
-Tue Apr 27 15:47:23 2004 (gatto) .Objects[11].StdVersion.ShapeName = fo_sky_canope
+Tue Apr 27 15:47:23 2004 (gatto) .Objects[11].StdVersion.ShapeName = de_sky_canope
 Tue Apr 27 15:47:23 2004 (gatto) formName Pasted = 
 Tue Apr 27 15:47:23 2004 (gatto) formName Resized = 12
 Tue Apr 27 15:47:38 2004 (gatto) .Objects[11].StdVersion.DiffuseColor.MapName = 
@@ -834,49 +835,45 @@ Tue Apr 27 16:17:43 2004 (gatto) .Objects[11].StdVersion.TransparencyPriority = 
 Tue Apr 27 16:17:46 2004 (gatto) .Objects[11].StdVersion.TransparencyPriority = 0
 Tue Apr 27 16:25:51 2004 (gatto) .Objects[11].StdVersion.ParticleEmitters.ColorMode = Unused
 Tue Apr 27 17:48:08 2004 (gatto) .Objects[11].StdVersion.ConstantColor0.ColorMode = FogColor
-Tue Apr 27 17:48:08 2004 (gatto) .Objects[11].StdVersion.ConstantColor0.MapName = fo_wi_fog_color.tga
+Tue Apr 27 17:48:08 2004 (gatto) .Objects[11].StdVersion.ConstantColor0.MapName = de_su_fog_color.tga
 Tue Apr 27 18:11:32 2004 (gatto) formName Pasted = 
-Mon May 17 12:13:00 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[0] = fo_sky_dome_gradient_fair.tga
-Mon May 17 12:13:00 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[1] = fo_sky_dome_gradient_fair.tga
-Mon May 17 12:13:00 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[2] = fo_sky_dome_gradient_fair.tga
-Mon May 17 12:13:00 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[3] = fo_sky_dome_gradient_clouds.tga
-Mon May 17 12:13:00 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[4] = fo_sky_dome_gradient_clouds.tga
-Mon May 17 12:13:00 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[5] = fo_sky_dome_gradient_storm.tga
-Mon May 17 16:27:30 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[0] = fo_wi_sky_dome_gradient_fair.tga
-Mon May 17 16:27:30 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[1] = fo_wi_sky_dome_gradient_fair.tga
-Mon May 17 16:27:30 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[2] = fo_wi_sky_dome_gradient_fair.tga
-Mon May 17 16:27:30 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[3] = fo_wi_sky_dome_gradient_clouds.tga
-Mon May 17 16:27:30 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[4] = fo_wi_sky_dome_gradient_clouds.tga
-Mon May 17 16:27:30 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[5] = fo_wi_sky_dome_gradient_storm.tga
-Tue May 18 11:05:30 2004 (gatto) .Objects[0].StdVersion.ShapeName = fo_sky_dome
-Tue May 18 11:05:30 2004 (gatto) .Objects[1].StdVersion.ShapeName = fo_clouds_dome_altitude
-Tue May 18 11:05:30 2004 (gatto) .Objects[2].StdVersion.ShapeName = fo_clouds_dome_light
-Tue May 18 11:05:30 2004 (gatto) .Objects[3].StdVersion.ShapeName = fo_clouds_dome_heavy
-Fri May 21 11:00:47 2004 (gatto) .Objects[0].FallbackPass0.ShapeName = fo_sky_dome_fallbackpass0
-Fri May 21 11:00:47 2004 (gatto) .Objects[1].FallbackPass0.ShapeName = fo_clouds_dome_altitude_fallbackpass0
-Fri May 21 11:00:47 2004 (gatto) .Objects[2].FallbackPass0.ShapeName = fo_clouds_dome_light_fallbackpass0
-Fri May 21 11:00:47 2004 (gatto) .Objects[3].FallbackPass0.ShapeName = fo_clouds_dome_heavy_fallbackpass0
-Fri May 21 11:00:47 2004 (gatto) formName Pasted = 
-Fri May 21 11:40:25 2004 (gatto) .Objects[4].StdVersion.OffsetVBitmap1 = fo_wi_fog_dome_appear.tga
-Fri May 21 11:41:13 2004 (gatto) formName Pasted = 
-Fri May 21 12:38:28 2004 (gatto) .Objects[0].FallbackPass0.ColorGradient.TargetTextureStage = 1
-Fri May 21 12:38:28 2004 (gatto) .Objects[0].FallbackPass0.ConstantColor1.ColorMode = Unused
-Fri May 21 12:38:28 2004 (gatto) .Objects[0].FallbackPass0.ConstantColor2.ColorMode = Unused
-Fri May 21 12:38:28 2004 (gatto) .Objects[0].FallbackPass0.ConstantColor2.MapName = 
-Fri May 21 12:38:28 2004 (gatto) .Objects[0].FallbackPass0.ConstantColor3.ColorMode = Unused
-Fri May 21 12:38:28 2004 (gatto) .Objects[0].FallbackPass0.ConstantColor3.MapName = 
-Fri May 21 12:38:28 2004 (gatto) .Objects[0].FallbackPass0.PannerU1 = 
-Fri May 21 12:38:28 2004 (gatto) .Objects[0].FallbackPass0.PannerV1 = 
-Tue May 25 18:05:18 2004 (gatto) .Objects[10].StdVersion.TransparencyPriority = 3
-Tue May 25 18:05:18 2004 (gatto) formName Deleted = 
-Mon Jul 05 12:23:59 2004 (gatto) .Objects[11].StdVersion.DiffuseColor.MapName = fo_wi_sun_flare_appear.tga
-Mon Jul 05 12:23:59 2004 (gatto) .Objects[11].StdVersion.ShapeName = fo_sun_flare
-Mon Jul 05 12:23:59 2004 (gatto) formName Pasted = 
-Mon Jul 05 12:23:59 2004 (gatto) formName Resized = 12
-Fri Aug 20 11:29:13 2004 (gatto) .Objects[3].FallbackPass0.ShapeName = fo_clouds_dome_heavy_fallbackpass0
-Fri Aug 20 11:29:13 2004 (gatto) formName Pasted = 
-Tue Aug 24 16:03:41 2004 (gatto) .WaterEnvMapAlpha = 50
-Tue Aug 24 16:03:50 2004 (gatto) .Objects[10].VisibleInEnvMap = false
-Tue Aug 24 16:03:50 2004 (gatto) .Objects[9].VisibleInEnvMap = false
-Fri Sep 24 18:28:34 2004 (gatto) .Objects[2].FallbackPass0.ConstantColor0.MapName = fo_wi_clouds_dome_light_appear_fallback.tga</LOG>
+Mon May 17 16:29:21 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[0] = de_su_sky_dome_gradient_fair.tga
+Mon May 17 16:29:26 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[1] = de_su_sky_dome_gradient_fair.tga
+Mon May 17 16:29:32 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[2] = de_su_sky_dome_gradient_fair.tga
+Mon May 17 16:29:36 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[3] = de_su_sky_dome_gradient_clouds.tga
+Mon May 17 16:29:41 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[4] = de_su_sky_dome_gradient_clouds.tga
+Mon May 17 16:29:46 2004 (gatto) .Objects[0].StdVersion.ColorGradient.WeatherToGradient[5] = de_su_sky_dome_gradient_storm.tga
+Tue May 18 11:02:56 2004 (gatto) .Objects[0].StdVersion.ShapeName = de_sky_dome
+Tue May 18 11:03:12 2004 (gatto) .Objects[1].StdVersion.ShapeName = de_clouds_dome_altitude
+Tue May 18 11:03:12 2004 (gatto) .Objects[2].StdVersion.ShapeName = de_clouds_dome_light
+Tue May 18 11:03:12 2004 (gatto) .Objects[3].StdVersion.ShapeName = de_clouds_dome_heavy
+Fri May 21 11:04:32 2004 (gatto) .Objects[0].FallbackPass0.ShapeName = de_sky_dome_fallbackpass0
+Fri May 21 11:04:32 2004 (gatto) .Objects[1].FallbackPass0.ShapeName = de_clouds_dome_altitude_fallbackpass0
+Fri May 21 11:04:32 2004 (gatto) .Objects[2].FallbackPass0.ShapeName = de_clouds_dome_light_fallbackpass0
+Fri May 21 11:04:32 2004 (gatto) .Objects[3].FallbackPass0.ShapeName = de_clouds_dome_heavy_fallbackpass0
+Fri May 21 11:04:32 2004 (gatto) formName Pasted = 
+Fri May 21 11:54:54 2004 (gatto) .Objects[4].StdVersion.OffsetVBitmap1 = de_su_fog_dome_appear.tga
+Fri May 21 11:54:54 2004 (gatto) formName Pasted = 
+Fri May 21 12:34:49 2004 (gatto) .Objects[0].FallbackPass0.ColorGradient.TargetTextureStage = 1
+Fri May 21 12:34:49 2004 (gatto) .Objects[0].FallbackPass0.ConstantColor1.ColorMode = Unused
+Fri May 21 12:34:49 2004 (gatto) .Objects[0].FallbackPass0.ConstantColor2.ColorMode = Unused
+Fri May 21 12:34:49 2004 (gatto) .Objects[0].FallbackPass0.ConstantColor2.MapName = 
+Fri May 21 12:34:49 2004 (gatto) .Objects[0].FallbackPass0.ConstantColor3.ColorMode = Unused
+Fri May 21 12:34:49 2004 (gatto) .Objects[0].FallbackPass0.ConstantColor3.MapName = 
+Fri May 21 12:34:49 2004 (gatto) .Objects[0].FallbackPass0.PannerU1 = 
+Fri May 21 12:34:49 2004 (gatto) .Objects[0].FallbackPass0.PannerV1 = 
+Fri May 21 17:08:13 2004 (gatto) formName Deleted = 
+Tue May 25 18:05:45 2004 (gatto) .Objects[10].StdVersion.TransparencyPriority = 3
+Mon Jul 05 10:49:33 2004 (gatto) .Objects[11] Renamed = lensflare
+Mon Jul 05 10:49:33 2004 (gatto) .Objects[11].StdVersion.ShapeName = de_sun_flare
+Mon Jul 05 10:49:33 2004 (gatto) formName Resized = 12
+Mon Jul 05 10:57:14 2004 (gatto) .Objects[11].StdVersion.TransparencyPriority = 4
+Mon Jul 05 11:11:45 2004 (gatto) .Objects[11].StdVersion.DiffuseColor.MapName = de_su_sun_flare_appear.tga
+Mon Jul 05 11:18:46 2004 (gatto) .Objects[11].StdVersion.DiffuseColor.ColorMode = BitmapColor
+Fri Aug 20 09:50:25 2004 (gatto) .Objects[3].FallbackPass0.ShapeName = de_clouds_dome_heavy_fallbackpass0
+Fri Aug 20 09:50:25 2004 (gatto) formName Pasted = 
+Tue Aug 24 16:01:57 2004 (gatto) .WaterEnvMapAlpha = 50
+Tue Aug 24 16:02:07 2004 (gatto) .Objects[10].VisibleInEnvMap = false
+Tue Aug 24 16:02:07 2004 (gatto) .Objects[9].VisibleInEnvMap = false
+Fri Sep 24 18:29:35 2004 (gatto) .Objects[2].FallbackPass0.ConstantColor0.MapName = de_su_clouds_dome_light_appear_fallback.tga</LOG>
 </FORM>
