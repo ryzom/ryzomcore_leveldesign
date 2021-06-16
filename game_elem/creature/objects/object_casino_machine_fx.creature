@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<FORM Revision="4.0" State="modified">
+  <PARENT Filename="_parent_botobject.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="ge_mission_fortuna_wheel_fx.ps"/>
+        </STRUCT>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="DisplayOSD" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="Collision">
+      <ATOM Name="CollisionRadius" Value="0"/>
+      <ATOM Name="Length" Value="0"/>
+      <ATOM Name="Width" Value="&quot;Collision.CollisionRadius&quot;*2"/>
+      <ATOM Name="Height" Value="0"/>
+      <ATOM Name="NotTraversable" Value="false"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

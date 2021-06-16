@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<FORM Revision="4.0" State="modified">
+  <PARENT Filename="_parent_botobject.creature"/>
+  <STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="DisplayOSD" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="Collision">
+      <ATOM Name="CollisionRadius" Value="1.0"/>
+      <ATOM Name="NotTraversable" Value="false"/>
+      <ATOM Name="ClipRadius" Value="10"/>
+      <ATOM Name="ClipHeight" Value="15"/>
+    </STRUCT>
+    <STRUCT Name="Properties">
+      <ATOM Name="Selectable" Value="false"/>
+      <ATOM Name="SelectableBySpace" Value="false"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>
