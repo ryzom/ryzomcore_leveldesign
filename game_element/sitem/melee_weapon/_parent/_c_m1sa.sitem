@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.9 $" State="modified">
+<FORM Revision="4.0" State="modified">
   <STRUCT>
     <STRUCT Name="basics">
-      <ATOM Name="name" Value="axe"/>
+      <ATOM Name="name" Value="one-handed slashing axe"/>
       <ATOM Name="family" Value="melee weapon"/>
       <ATOM Name="ItemType" Value="Axe"/>
       <STRUCT Name="EquipmentInfo">
         <ARRAY Name="EquipmentSlots">
-          <ATOM Name="right hand" Value="Right Hand"/>
+          <ATOM Name="right_hand" Value="Right Hand"/>
         </ARRAY>
         <ATOM Name="WearEquipmentMalus" Value="0.3"/>
       </STRUCT>
@@ -26,7 +26,7 @@
       <ATOM Name="type" Value="Sharpener"/>
     </STRUCT>
     <STRUCT Name="3d">
-      <ATOM Name="icon" Value="MW_axe.tga"/>
+      <ATOM Name="icon" Value="mw_axe.png"/>
       <ATOM Name="anim_set" Value="1H"/>
     </STRUCT>
   </STRUCT>

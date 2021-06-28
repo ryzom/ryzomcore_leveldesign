@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.13 $" State="modified">
+<FORM Revision="4.0" State="modified">
   <STRUCT>
     <STRUCT Name="basics">
-      <ATOM Name="name" Value="magician gloves"/>
+      <ATOM Name="name" Value="two-handed magic amplifier gloves"/>
       <ATOM Name="family" Value="melee weapon"/>
       <ATOM Name="ItemType" Value="Magician Staff"/>
       <STRUCT Name="EquipmentInfo">
         <ARRAY Name="EquipmentSlots">
-          <ATOM Name="right hand" Value="Two Hands"/>
+          <ATOM Name="two_hands" Value="Two Hands"/>
         </ARRAY>
         <ATOM Name="WearEquipmentMalus" Value="0.0"/>
       </STRUCT>
@@ -26,9 +26,7 @@
       <ATOM Name="type" Value="Sharpener"/>
     </STRUCT>
     <STRUCT Name="3d">
-      <ATOM Name="shape" Value="GE_HOM_Acc_Gauntlet.shape"/>
-      <ATOM Name="shape_female" Value="GE_HOF_Acc_Gauntlet.shape"/>
-      <ATOM Name="icon" Value="MG_Glove.tga"/>
+      <ATOM Name="icon" Value="mg_glove.png"/>
       <ATOM Name="never hide when equiped" Value="true"/>
     </STRUCT>
   </STRUCT>

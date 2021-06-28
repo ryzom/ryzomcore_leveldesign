@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.11 $" State="modified">
+<FORM Revision="4.0" State="modified">
   <STRUCT>
     <STRUCT Name="basics">
-      <ATOM Name="name" Value="dagger"/>
+      <ATOM Name="name" Value="one-handed piercing dagger"/>
       <ATOM Name="family" Value="melee weapon"/>
       <ATOM Name="ItemType" Value="Dagger"/>
       <ATOM Name="sack_type" Value="1"/>
@@ -29,7 +29,7 @@
       <ATOM Name="type" Value="Sharpener"/>
     </STRUCT>
     <STRUCT Name="3d">
-      <ATOM Name="icon" Value="MW_dagger.tga"/>
+      <ATOM Name="icon" Value="mw_dagger.png"/>
       <ATOM Name="anim_set" Value="Dagger"/>
     </STRUCT>
   </STRUCT>
