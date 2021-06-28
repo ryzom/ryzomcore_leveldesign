@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<FORM Revision="4.0" State="modified">
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="buckler shield"/>
+      <ATOM Name="family" Value="shield"/>
+      <ATOM Name="ItemType" Value="Buckler"/>
+      <STRUCT Name="EquipmentInfo">
+        <ARRAY Name="EquipmentSlots">
+          <ATOM Name="left_hand" Value="Left Hand"/>
+        </ARRAY>
+        <ATOM Name="WearEquipmentMalus" Value="0.01"/>
+      </STRUCT>
+      <ATOM Name="Bulk" Value="6"/>
+      <ATOM Name="Time to Equip In Ticks" Value="20"/>
+    </STRUCT>
+    <STRUCT Name="shield">
+      <ATOM Name="Category" Value="small shield"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="icon" Value="sh_buckler.png"/>
+      <ATOM Name="anim_set" Value="Shield"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

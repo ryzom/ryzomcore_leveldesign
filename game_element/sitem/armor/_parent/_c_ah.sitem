@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<FORM Revision="4.0" State="modified">
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="heavy armor"/>
+      <ATOM Name="family" Value="armor"/>
+      <STRUCT Name="EquipmentInfo">
+        <ATOM Name="WearEquipmentMalus" Value="0.02"/>
+      </STRUCT>
+      <ATOM Name="Bulk" Value="8"/>
+      <ATOM Name="Time to Equip In Ticks" Value="30"/>
+    </STRUCT>
+    <STRUCT Name="armor">
+      <ATOM Name="Armor category" Value="Heavy"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="icon overlay" Value="pw_heavy.png"/>
+      <ATOM Name="color" Value="UserColor"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>
