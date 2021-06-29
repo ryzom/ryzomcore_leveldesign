@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<FORM Revision="4.0" State="modified">
+  <PARENT Filename="_c_ah.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="tryker heavy vest"/>
+      <ATOM Name="ItemType" Value="Heavy vest"/>
+      <STRUCT Name="EquipmentInfo">
+        <ARRAY Name="EquipmentSlots">
+          <ATOM Value="Chest"/>
+        </ARRAY>
+      </STRUCT>
+      <ATOM Name="CraftPlan" Value="bctahv.sbrick"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="tr_hom_armor01_gilet.shape"/>
+      <ATOM Name="shape_female" Value="tr_hof_armor01_gilet.shape"/>
+      <ATOM Name="icon" Value="ar_gilet.png"/>
+      <ATOM Name="icon background" Value="bk_tryker.png"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

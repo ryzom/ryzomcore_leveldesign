@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<FORM Revision="4.0" State="modified">
+  <PARENT Filename="_c_am.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="matis medium boots"/>
+      <ATOM Name="ItemType" Value="Medium boots"/>
+      <STRUCT Name="EquipmentInfo">
+        <ARRAY Name="EquipmentSlots">
+          <ATOM Value="Feet"/>
+        </ARRAY>
+      </STRUCT>
+      <ATOM Name="CraftPlan" Value="bcmamb.sbrick"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="ma_hom_armor00_bottes.shape"/>
+      <ATOM Name="shape_female" Value="ma_hof_armor00_bottes.shape"/>
+      <ATOM Name="icon" Value="ar_botte.png"/>
+      <ATOM Name="icon background" Value="bk_matis.png"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<FORM Revision="4.0" State="modified">
+  <PARENT Filename="_c_am.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="tryker medium pants"/>
+      <ATOM Name="ItemType" Value="Medium pants"/>
+      <STRUCT Name="EquipmentInfo">
+        <ARRAY Name="EquipmentSlots">
+          <ATOM Value="Legs"/>
+        </ARRAY>
+      </STRUCT>
+      <ATOM Name="CraftPlan" Value="bctamp.sbrick"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="tr_hom_armor00_pantabottes.shape"/>
+      <ATOM Name="shape_female" Value="tr_hof_armor00_pantabottes.shape"/>
+      <ATOM Name="icon" Value="ar_pantabotte.png"/>
+      <ATOM Name="icon background" Value="bk_tryker.png"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

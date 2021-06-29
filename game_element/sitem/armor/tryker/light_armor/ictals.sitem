@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<FORM Revision="4.0" State="modified">
+  <PARENT Filename="_c_al.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="tryker light sleeves"/>
+      <ATOM Name="ItemType" Value="Light Sleeves"/>
+      <STRUCT Name="EquipmentInfo">
+        <ARRAY Name="EquipmentSlots">
+          <ATOM Value="Arms"/>
+        </ARRAY>
+      </STRUCT>
+      <ATOM Name="CraftPlan" Value="bctals.sbrick"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="tr_hom_civil01_armpad.shape"/>
+      <ATOM Name="shape_female" Value="tr_hof_civil01_armpad.shape"/>
+      <ATOM Name="icon" Value="ar_armpad.png"/>
+      <ATOM Name="icon background" Value="bk_tryker.png"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<FORM Revision="4.0" State="modified">
+  <PARENT Filename="_c_al.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="zorai caster pants"/>
+      <ATOM Name="ItemType" Value="Light pants"/>
+      <STRUCT Name="EquipmentInfo">
+        <ARRAY Name="EquipmentSlots">
+          <ATOM Value="Legs"/>
+        </ARRAY>
+      </STRUCT>
+      <ATOM Name="CraftPlan" Value="bczacp_2.sbrick"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="zo_hom_caster01_pantabottes.shape"/>
+      <ATOM Name="shape_female" Value="zo_hof_caster01_pantabottes.shape"/>
+      <ATOM Name="map_variant" Value="Medium Quality"/>
+      <ATOM Name="icon" Value="ar_pantabotte.png"/>
+      <ATOM Name="icon background" Value="bk_zorai.png"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>
