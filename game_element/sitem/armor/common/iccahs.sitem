@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<FORM Revision="4.0" State="modified">
+  <PARENT Filename="_c_ah.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="common heavy sleeves"/>
+      <ATOM Name="ItemType" Value="Heavy Sleeves"/>
+      <STRUCT Name="EquipmentInfo">
+        <ARRAY Name="EquipmentSlots">
+          <ATOM Value="Arms"/>
+        </ARRAY>
+      </STRUCT>
+      <ATOM Name="CraftPlan" Value="bccahs.sbrick"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="ge_hom_armor04_armpad.shape"/>
+      <ATOM Name="shape_female" Value="ge_hof_armor04_armpad.shape"/>
+      <ATOM Name="icon" Value="ar_armpad.png"/>
+      <ATOM Name="icon background" Value="bk_generic.png"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

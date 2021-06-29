@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<FORM Revision="4.0" State="modified">
+  <PARENT Filename="_c_ah.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="common heavy boots"/>
+      <ATOM Name="ItemType" Value="Heavy boots"/>
+      <STRUCT Name="EquipmentInfo">
+        <ARRAY Name="EquipmentSlots">
+          <ATOM Value="Feet"/>
+        </ARRAY>
+      </STRUCT>
+      <ATOM Name="CraftPlan" Value="bccahb.sbrick"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="ge_hom_armor04_bottes.shape"/>
+      <ATOM Name="shape_female" Value="ge_hof_armor04_bottes.shape"/>
+      <ATOM Name="icon" Value="ar_botte.png"/>
+      <ATOM Name="icon background" Value="bk_generic.png"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>
