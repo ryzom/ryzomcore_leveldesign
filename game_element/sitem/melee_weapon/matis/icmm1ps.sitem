@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_c_m1ps.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="matis one-handed piercing spear"/>
+      <ATOM Name="origin" Value="matis"/>
+      <ATOM Name="CraftPlan" Value="bcmmea19_mm1ps.sbrick"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="ma_wea_lance1m.shape"/>
+      <ATOM Name="shape_female" Value="ma_wea_lance1m.shape"/>
+      <ATOM Name="icon background" Value="bk_matis.png"/>
+      <STRUCT Name="fx">
+        <ATOM Name="Trail" Value="ma_wea_lance1m_trail_00.shape"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+</FORM>

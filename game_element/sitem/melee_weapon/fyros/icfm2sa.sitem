@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_c_m2sa.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="fyros two-handed slashing axe"/>
+      <ATOM Name="origin" Value="fyros"/>
+      <ATOM Name="CraftPlan" Value="bcfmea01_fm2sa.sbrick"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="fy_wea_hache2m.shape"/>
+      <ATOM Name="shape_female" Value="fy_wea_hache2m.shape"/>
+      <ATOM Name="icon background" Value="bk_fyros.png"/>
+      <STRUCT Name="fx">
+        <ATOM Name="Trail" Value="fy_wea_hache2m_trail_00.shape"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+</FORM>
