@@ -3,24 +3,21 @@
   <STRUCT>
     <STRUCT Name="StartEquipment1">
       <STRUCT Name="Body">
-        <ATOM Name="Item" Value="icrave.sitem"/>
+        <ATOM Name="Item" Value="icralv.sitem"/>
         <ATOM Name="Quality" Value="1"/>
       </STRUCT>
       <STRUCT Name="Legs">
-        <ATOM Name="Item" Value="icrape.sitem"/>
+        <ATOM Name="Item" Value="icralp.sitem"/>
         <ATOM Name="Quality" Value="1"/>
       </STRUCT>
       <STRUCT Name="Arms">
-        <ATOM Name="Item" Value="icrase.sitem"/>
-        <ATOM Name="Quality" Value="1"/>
+        <ATOM Name="Quality" Value="0"/>
       </STRUCT>
       <STRUCT Name="Hands">
-        <ATOM Name="Item" Value="icrage.sitem"/>
-        <ATOM Name="Quality" Value="1"/>
+        <ATOM Name="Quality" Value="0"/>
       </STRUCT>
       <STRUCT Name="Feet">
-        <ATOM Name="Item" Value="icrabe.sitem"/>
-        <ATOM Name="Quality" Value="1"/>
+        <ATOM Name="Quality" Value="0"/>
       </STRUCT>
       <STRUCT Name="Head">
         <ATOM Name="Quality" Value="0"/>
