@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_fyros_female.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="icfahv_2.sitem"/>
+          <ATOM Name="Texture" Value="Desert/Medium Quality/Normal"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Legs">
+          <ATOM Name="Item" Value="icfahp_2.sitem"/>
+          <ATOM Name="Texture" Value="Desert/Medium Quality/Normal"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Arms">
+          <ATOM Name="Item" Value="icfahs_2.sitem"/>
+          <ATOM Name="Texture" Value="Desert/Medium Quality/Normal"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Hands">
+          <ATOM Name="Item" Value="icfahg_2.sitem"/>
+          <ATOM Name="Texture" Value="Desert/Medium Quality/Normal"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Feet">
+          <ATOM Name="Item" Value="icfahb_2.sitem"/>
+          <ATOM Name="Texture" Value="Desert/Medium Quality/Normal"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Face">
+          <ATOM Name="Item" Value="fy_visage.sitem"/>
+          <ATOM Name="Texture" Value="Lacustre/Low Quality/Young"/>
+          <ATOM Name="Color" Value="Beige"/>
+        </STRUCT>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="HairColor" Value="Color 6"/>
+      <ATOM Name="EyesColor" Value="Color 8"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

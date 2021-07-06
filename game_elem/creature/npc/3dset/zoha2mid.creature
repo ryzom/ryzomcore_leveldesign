@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_zorai_female.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="iczahv_2.sitem"/>
+          <ATOM Name="Texture" Value="Desert/Medium Quality/Normal"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Legs">
+          <ATOM Name="Item" Value="iczahp_2.sitem"/>
+          <ATOM Name="Texture" Value="Desert/Medium Quality/Normal"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Arms">
+          <ATOM Name="Item" Value="iczahs_2.sitem"/>
+          <ATOM Name="Texture" Value="Desert/Medium Quality/Normal"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Hands">
+          <ATOM Name="Item" Value="iczahg_2.sitem"/>
+          <ATOM Name="Texture" Value="Desert/Medium Quality/Normal"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Feet">
+          <ATOM Name="Item" Value="iczahb_2.sitem"/>
+          <ATOM Name="Texture" Value="Desert/Medium Quality/Normal"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Face">
+          <ATOM Name="Item" Value="zo_visage.sitem"/>
+          <ATOM Name="Texture" Value="Desert/Medium Quality/Normal"/>
+          <ATOM Name="Color" Value="Beige"/>
+        </STRUCT>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="HairColor" Value="Color 4"/>
+      <ATOM Name="EyesColor" Value="Color 3"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>
