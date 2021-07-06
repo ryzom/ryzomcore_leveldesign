@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <FORM Revision="$Revision: 1.1 $" State="modified">
   <PARENT Filename="fmftm1.creature"/>
-  <PARENT Filename="_fame_none.creature"/>
   <PARENT Filename="drill_zohc3.creature"/>
   <STRUCT>
     <STRUCT Name="Basics">
+      <ATOM Name="Fame" Value="none"/>
       <ATOM Name="Level" Value="5"/>
       <ATOM Name="PlayerSkillLevel" Value="50"/>
       <ATOM Name="NbPlayers" Value="1"/>

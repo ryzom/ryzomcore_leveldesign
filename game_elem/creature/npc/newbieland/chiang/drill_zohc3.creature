@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <FORM Revision="$Revision: 1.2 $" State="modified">
   <PARENT Filename="_zorai_male.creature"/>
-  <PARENT Filename="_fame_zorai.creature"/>
   <STRUCT>
     <STRUCT Name="Basics">
+      <ATOM Name="Fame" Value="zorai"/>
       <STRUCT Name="Equipment">
         <STRUCT Name="Body">
           <ATOM Name="Item" Value="tr_civil01_gilet.item"/>
