@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_tryker_female.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Fame" Value="tryker"/>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="ictahv_3.sitem"/>
+          <ATOM Name="Texture" Value="Jungle/High Quality/Old"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Legs">
+          <ATOM Name="Item" Value="ictahp_3.sitem"/>
+          <ATOM Name="Texture" Value="Jungle/High Quality/Old"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Arms">
+          <ATOM Name="Item" Value="ictahs_3.sitem"/>
+          <ATOM Name="Texture" Value="Jungle/High Quality/Old"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Hands">
+          <ATOM Name="Item" Value="ictahg_3.sitem"/>
+          <ATOM Name="Texture" Value="Jungle/High Quality/Old"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Feet">
+          <ATOM Name="Item" Value="ictahb_3.sitem"/>
+          <ATOM Name="Texture" Value="Jungle/High Quality/Old"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Face">
+          <ATOM Name="Item" Value="tr_visage.sitem"/>
+          <ATOM Name="Texture" Value="Desert/Medium Quality/Normal"/>
+          <ATOM Name="Color" Value="Beige"/>
+        </STRUCT>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="HairColor" Value="Color 1"/>
+      <ATOM Name="EyesColor" Value="Color 4"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_tryker_female.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Fame" Value="tryker"/>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="ictalv.sitem"/>
+          <ATOM Name="Texture" Value="Lacustre/Low Quality/Young"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Legs">
+          <ATOM Name="Item" Value="ictacp.sitem"/>
+          <ATOM Name="Texture" Value="Lacustre/Low Quality/Young"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Arms">
+          <ATOM Name="Item" Value="ictals.sitem"/>
+          <ATOM Name="Texture" Value="Lacustre/Low Quality/Young"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Hands">
+          <ATOM Name="Item" Value="ictalg.sitem"/>
+          <ATOM Name="Texture" Value="Lacustre/Low Quality/Young"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Feet">
+          <ATOM Name="Item" Value="ictalb.sitem"/>
+          <ATOM Name="Texture" Value="Lacustre/Low Quality/Young"/>
+          <ATOM Name="Color" Value="White"/>
+        </STRUCT>
+        <STRUCT Name="Face">
+          <ATOM Name="Item" Value="tr_visage.sitem"/>
+          <ATOM Name="Texture" Value="Lacustre/Low Quality/Young"/>
+          <ATOM Name="Color" Value="Beige"/>
+        </STRUCT>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="HairColor" Value="Color 1"/>
+      <ATOM Name="EyesColor" Value="Color 3"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

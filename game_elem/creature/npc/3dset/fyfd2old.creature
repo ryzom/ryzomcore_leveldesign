@@ -3,6 +3,7 @@
   <PARENT Filename="_fyros_female.creature"/>
   <STRUCT>
     <STRUCT Name="Basics">
+      <ATOM Name="Fame" Value="fyros"/>
       <STRUCT Name="Equipment">
         <STRUCT Name="Body">
           <ATOM Name="Item" Value="icfalv_2.sitem"/>
@@ -37,7 +38,7 @@
       </STRUCT>
     </STRUCT>
     <STRUCT Name="3d data">
-      <ATOM Name="HairColor" Value="Color 1"/>
+      <ATOM Name="HairColor" Value="Color 3"/>
       <ATOM Name="EyesColor" Value="Color 2"/>
     </STRUCT>
   </STRUCT>
