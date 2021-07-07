@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.10 $" State="modified">
+<FORM Version="0.1" State="modified">
   <PARENT Filename="_homin_attack.creature"/>
   <STRUCT>
     <STRUCT Name="Basics">
@@ -21,16 +21,16 @@
       <ATOM Name="Skin" Value="tryker"/>
       <ARRAY Name="HairItem">
         <STRUCT Name="long">
-          <ATOM Name="Item" Value="tr_cheveux_long01.item"/>
+          <ATOM Name="Item" Value="tr_hom_hair_artistic01.sitem"/>
         </STRUCT>
         <STRUCT Name="medium">
-          <ATOM Name="Item" Value="tr_cheveux_medium01.item"/>
+          <ATOM Name="Item" Value="tr_hom_hair_basic03.sitem"/>
         </STRUCT>
         <STRUCT Name="shave">
-          <ATOM Name="Item" Value="tr_cheveux_shave01.item"/>
+          <ATOM Name="Item" Value="tr_hom_hair_basic01.sitem"/>
         </STRUCT>
         <STRUCT Name="short">
-          <ATOM Name="Item" Value="tr_cheveux_short01.item"/>
+          <ATOM Name="Item" Value="tr_hom_hair_style01.sitem"/>
         </STRUCT>
       </ARRAY>
     </STRUCT>
@@ -57,5 +57,9 @@ Fri Sep 06 12:09:18 2002 (mauduit) .3d data.LodCharacterName = TR_HOM_LOD
 Tue Mar 18 13:56:47 2003 (mauduit) .Properties.Talkable = true
 Thu Mar 20 17:14:12 2003 (puzin) formName Pasted = 
 Tue Aug 19 15:13:02 2003 (mory) .Basics.MovementSpeeds.WalkSpeed = 1.66
-Thu Mar 18 19:50:50 2004 (nouveau) Form Parents = </LOG>
+Thu Mar 18 19:50:50 2004 (nouveau) Form Parents = 
+Wed Jul  7 08:37:03 2021 (Kaetemi) .3d data.HairItem[0].Item = tr_hom_hair_artistic01.sitem
+Wed Jul  7 08:37:03 2021 (Kaetemi) .3d data.HairItem[1].Item = tr_hom_hair_basic03.sitem
+Wed Jul  7 08:37:03 2021 (Kaetemi) .3d data.HairItem[2].Item = tr_hom_hair_basic01.sitem
+Wed Jul  7 08:37:03 2021 (Kaetemi) .3d data.HairItem[3].Item = tr_hom_hair_style01.sitem</LOG>
 </FORM>

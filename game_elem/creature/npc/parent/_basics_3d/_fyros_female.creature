@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.12 $" State="modified">
+<FORM Version="0.2" State="modified">
   <PARENT Filename="_homin_attack.creature"/>
   <STRUCT>
     <STRUCT Name="Basics">
@@ -21,16 +21,16 @@
       <ATOM Name="Skin" Value="fyros"/>
       <ARRAY Name="HairItem">
         <STRUCT Name="long">
-          <ATOM Name="Item" Value="fy_cheveux_long01.item"/>
+          <ATOM Name="Item" Value="fy_hof_hair_style03.sitem"/>
         </STRUCT>
         <STRUCT Name="medium">
-          <ATOM Name="Item" Value="fy_cheveux_medium01.item"/>
+          <ATOM Name="Item" Value="fy_hof_hair_basic02.sitem"/>
         </STRUCT>
         <STRUCT Name="shave">
-          <ATOM Name="Item" Value="fy_cheveux_shave01.item"/>
+          <ATOM Name="Item" Value="fy_hof_hair_basic01.sitem"/>
         </STRUCT>
         <STRUCT Name="short">
-          <ATOM Name="Item" Value="fy_cheveux_short01.item"/>
+          <ATOM Name="Item" Value="fy_hof_hair_style01.sitem"/>
         </STRUCT>
       </ARRAY>
     </STRUCT>
@@ -65,5 +65,13 @@ Thu Mar 20 17:03:49 2003 (puzin) .3d data.HairItem[3] Renamed = short
 Thu Mar 20 17:03:49 2003 (puzin) .3d data.HairItem[3].Item = fy_cheveux_short01.item
 Thu Mar 20 17:03:49 2003 (puzin) formName Resized = 4
 Tue Aug 19 15:11:28 2003 (mory) .Basics.MovementSpeeds.WalkSpeed = 1.66
-Thu Mar 18 19:51:00 2004 (nouveau) Form Parents = </LOG>
+Thu Mar 18 19:51:00 2004 (nouveau) Form Parents = 
+Wed Jul  7 08:31:31 2021 (Kaetemi) .3d data.HairItem[0].Item = fy_hom_hair_style03.sitem
+Wed Jul  7 08:31:31 2021 (Kaetemi) .3d data.HairItem[1].Item = fy_hom_hair_style02.sitem
+Wed Jul  7 08:31:31 2021 (Kaetemi) .3d data.HairItem[2].Item = fy_hom_hair_basic01.sitem
+Wed Jul  7 08:31:31 2021 (Kaetemi) .3d data.HairItem[3].Item = fy_hom_hair_basic02.sitem
+Wed Jul  7 08:33:47 2021 (Kaetemi) .3d data.HairItem[0].Item = fy_hof_hair_style03.sitem
+Wed Jul  7 08:33:47 2021 (Kaetemi) .3d data.HairItem[1].Item = fy_hof_hair_basic02.sitem
+Wed Jul  7 08:33:47 2021 (Kaetemi) .3d data.HairItem[2].Item = fy_hof_hair_basic01.sitem
+Wed Jul  7 08:33:47 2021 (Kaetemi) .3d data.HairItem[3].Item = fy_hof_hair_style01.sitem</LOG>
 </FORM>
