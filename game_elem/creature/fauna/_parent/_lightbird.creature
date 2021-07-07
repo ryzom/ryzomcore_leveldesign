@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_ai_predateur.creature"/>
+  <PARENT Filename="_light_slashing_armor_set.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Race" Value="lightbird"/>
+      <ATOM Name="Size" Value="small"/>
+      <ATOM Name="Profile" Value="melee fighter"/>
+      <STRUCT Name="Scores">
+        <ATOM Name="HitPoints" Value="very low"/>
+        <ATOM Name="Sap" Value="default"/>
+        <ATOM Name="Stamina" Value="low"/>
+      </STRUCT>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="lightbird_light_slashing_chest.item"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="MovementSpeeds">
+        <ATOM Name="WalkSpeed" Value="&quot;3d data.Scale&quot;*4.300829"/>
+        <ATOM Name="RunSpeed" Value="&quot;3d data.Scale&quot;*4.300829"/>
+      </STRUCT>
+      <ATOM Name="type" Value="herbivore"/>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="Skel" Value="TR_MO_lightbird.skel"/>
+      <ATOM Name="AnimSetBaseName" Value="lightbird"/>
+      <ATOM Name="LodCharacterName" Value="TR_MO_lightbird_LOD"/>
+      <ATOM Name="LodCharacterDistance" Value="50"/>
+      <ATOM Name="NamePosZLow" Value="2.5"/>
+      <ATOM Name="NamePosZNormal" Value="2.5"/>
+    </STRUCT>
+    <ATOM Name="attack_list1" Value="lightbird.attack_list"/>
+    <ARRAY Name="melee_cfg">
+      <ATOM Value="lightbird_attack.actionlist"/>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

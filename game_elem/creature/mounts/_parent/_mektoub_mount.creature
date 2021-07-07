@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_ai_herbivore_craintif.creature"/>
+  <PARENT Filename="_medium_slashing_armor_set.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Race" Value="mektoub mount"/>
+      <ATOM Name="DamageLocalisationTable" Value="quadruped"/>
+      <STRUCT Name="Scores">
+        <ATOM Name="HitPoints" Value="default"/>
+        <ATOM Name="Sap" Value="default"/>
+        <ATOM Name="Stamina" Value="default"/>
+      </STRUCT>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="mektoub_mount_medium_slashing_chest.item"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="type" Value="pet"/>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="Skel" Value="TR_MO_mektoub_selle.skel"/>
+      <ATOM Name="AnimSetBaseName" Value="mektoubmount"/>
+      <STRUCT Name="Shadow">
+        <ATOM Name="Shadow Bone 0" Value="Bip01 L Foot"/>
+        <ATOM Name="Shadow Size 0" Value="2.0"/>
+        <ATOM Name="Shadow Bone 1" Value="Bip01 R Foot"/>
+        <ATOM Name="Shadow Size 1" Value="2.0"/>
+        <ATOM Name="Shadow Bone 2" Value="Bip01 L Hand"/>
+        <ATOM Name="Shadow Size 2" Value="2.0"/>
+        <ATOM Name="Shadow Bone 3" Value="Bip01 R Hand"/>
+        <ATOM Name="Shadow Size 3" Value="2.0"/>
+        <ATOM Name="Shadow Bone 4" Value="Bip01 Spine1"/>
+        <ATOM Name="Shadow Size 4" Value="2.0"/>
+        <ATOM Name="Shadow Bone 5" Value="Bip01 Spine"/>
+        <ATOM Name="Shadow Size 5" Value="3.0"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="Collision">
+      <ATOM Name="CollisionRadius" Value="1.13"/>
+    </STRUCT>
+    <STRUCT Name="Properties">
+      <ATOM Name="Attackable" Value="false"/>
+      <ATOM Name="Curativable" Value="false"/>
+      <ATOM Name="Mountable" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="animal_bag">
+      <ATOM Name="bag" Value="steed_inventory.sitem"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

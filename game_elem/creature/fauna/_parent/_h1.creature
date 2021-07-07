@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_heavy_slashing_piercing_armor_set.creature"/>
+  <PARENT Filename="_ai_herbivore_craintif.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Race" Value="race_h1"/>
+      <ATOM Name="DamageLocalisationTable" Value="quadruped"/>
+      <ATOM Name="Size" Value="homin"/>
+      <ATOM Name="Profile" Value="caster buffer"/>
+      <STRUCT Name="Scores">
+        <ATOM Name="HitPoints" Value="very low"/>
+        <ATOM Name="Sap" Value="very low"/>
+        <ATOM Name="Stamina" Value="low"/>
+      </STRUCT>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="h1_heavy_slashing_piercing_chest.item"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="MovementSpeeds">
+        <ATOM Name="WalkSpeed" Value="&quot;3d data.Scale&quot;*3.28775"/>
+        <ATOM Name="RunSpeed" Value="&quot;3d data.Scale&quot;*10.751748"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="Skel" Value="TR_MO_H01.skel"/>
+      <ATOM Name="AnimSetBaseName" Value="h01"/>
+      <ATOM Name="LodCharacterName" Value="TR_MO_H01_LOD"/>
+      <ATOM Name="LodCharacterDistance" Value="50.0"/>
+      <STRUCT Name="Shadow">
+        <ATOM Name="Shadow Bone 0" Value="Bip01 L Foot"/>
+        <ATOM Name="Shadow Size 0" Value="2.0"/>
+        <ATOM Name="Shadow Bone 1" Value="Bip01 R Foot"/>
+        <ATOM Name="Shadow Size 1" Value="2.0"/>
+        <ATOM Name="Shadow Bone 2" Value="Bip01 L Hand"/>
+        <ATOM Name="Shadow Size 2" Value="2.0"/>
+        <ATOM Name="Shadow Bone 3" Value="Bip01 R Hand"/>
+        <ATOM Name="Shadow Size 3" Value="2.0"/>
+        <ATOM Name="Shadow Bone 4" Value="Bip01 Spine1"/>
+        <ATOM Name="Shadow Size 4" Value="2.0"/>
+        <ATOM Name="Shadow Bone 5" Value="Bip01 Spine"/>
+        <ATOM Name="Shadow Size 5" Value="3.0"/>
+      </STRUCT>
+      <ATOM Name="NamePosZLow" Value="2.0"/>
+      <ATOM Name="NamePosZNormal" Value="2.0"/>
+    </STRUCT>
+    <ARRAY Name="melee_cfg">
+      <ATOM Value="h1_attack.actionlist"/>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_ai_herbivore_craintif.creature"/>
+  <PARENT Filename="_medium_blunt_slashing_armor_set.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Race" Value="race_h9"/>
+      <ATOM Name="DamageLocalisationTable" Value="quadruped"/>
+      <ATOM Name="Profile" Value="caster buffer"/>
+      <STRUCT Name="Scores">
+        <ATOM Name="Sap" Value="high"/>
+        <ATOM Name="Stamina" Value="very low"/>
+      </STRUCT>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="h9_medium_slashing_blunt_chest.item"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="MovementSpeeds">
+        <ATOM Name="WalkSpeed" Value="&quot;3d data.Scale&quot;*1.638462"/>
+        <ATOM Name="RunSpeed" Value="&quot;3d data.Scale&quot;*3.5625"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="Skel" Value="TR_MO_H09.skel"/>
+      <ATOM Name="AnimSetBaseName" Value="h09"/>
+      <ATOM Name="LodCharacterName" Value="TR_MO_H09_LOD"/>
+      <ATOM Name="LodCharacterDistance" Value="50.0"/>
+      <ATOM Name="CharacterScalePos" Value="1"/>
+      <STRUCT Name="Shadow">
+        <ATOM Name="Shadow Bone 0" Value="Bip01 L Foot"/>
+        <ATOM Name="Shadow Size 0" Value="3.0"/>
+        <ATOM Name="Shadow Bone 1" Value="Bip01 R Foot"/>
+        <ATOM Name="Shadow Size 1" Value="3.0"/>
+        <ATOM Name="Shadow Bone 2" Value="Bip01 L Hand"/>
+        <ATOM Name="Shadow Size 2" Value="3.0"/>
+        <ATOM Name="Shadow Bone 3" Value="Bip01 R Hand"/>
+        <ATOM Name="Shadow Size 3" Value="3.0"/>
+        <ATOM Name="Shadow Bone 4" Value="Bip01 Spine1"/>
+        <ATOM Name="Shadow Size 4" Value="4.0"/>
+        <ATOM Name="Shadow Bone 5" Value="Bip01 Spine"/>
+        <ATOM Name="Shadow Size 5" Value="4.0"/>
+      </STRUCT>
+      <ATOM Name="NamePosZLow" Value="3.4"/>
+      <ATOM Name="NamePosZNormal" Value="3.1"/>
+    </STRUCT>
+    <ATOM Name="attack_list1" Value="h9.attack_list"/>
+    <ARRAY Name="melee_cfg">
+      <ATOM Value="h9_attack.actionlist"/>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

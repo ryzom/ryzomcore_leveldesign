@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_creature_armor.item"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <STRUCT Name="EquipmentInfo">
+        <ARRAY Name="EquipmentSlots">
+          <ATOM Name="chest" Value="Chest"/>
+        </ARRAY>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="armor">
+      <ATOM Name="Armor category" Value="Heavy"/>
+      <ARRAY Name="protection type">
+        <ATOM Name="piercing" Value="Piercing"/>
+        <ATOM Name="slashing" Value="Slashing"/>
+      </ARRAY>
+      <ATOM Name="protection" Value="Heavy"/>
+      <ATOM Name="max protection" Value="heavy"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="go_mo_cococlaw.shape"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

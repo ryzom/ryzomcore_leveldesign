@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_ai_herbivore_craintif.creature"/>
+  <PARENT Filename="_heavy_slashing_armor_set.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Race" Value="estrasson"/>
+      <ATOM Name="DamageLocalisationTable" Value="quadruped"/>
+      <ATOM Name="Profile" Value="caster healer"/>
+      <STRUCT Name="Scores">
+        <ATOM Name="Sap" Value="default"/>
+        <ATOM Name="Stamina" Value="very low"/>
+      </STRUCT>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="estrasson_heavy_slashing_chest.item"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="MovementSpeeds">
+        <ATOM Name="WalkSpeed" Value="&quot;3d data.Scale&quot;*1.638462"/>
+        <ATOM Name="RunSpeed" Value="&quot;3d data.Scale&quot;*3.59393"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="Skel" Value="TR_MO_estrasson.skel"/>
+      <ATOM Name="AnimSetBaseName" Value="estrasson"/>
+      <ATOM Name="LodCharacterName" Value="TR_MO_estrasson_LOD"/>
+      <ATOM Name="LodCharacterDistance" Value="50"/>
+      <ATOM Name="NamePosZLow" Value="1.4"/>
+      <ATOM Name="NamePosZNormal" Value="1.4"/>
+    </STRUCT>
+    <ATOM Name="attack_list1" Value="estrasson.attack_list"/>
+    <ARRAY Name="melee_cfg">
+      <ATOM Value="estrasson_attack.actionlist"/>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

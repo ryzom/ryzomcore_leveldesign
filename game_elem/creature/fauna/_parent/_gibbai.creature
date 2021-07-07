@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_ai_predateur.creature"/>
+  <PARENT Filename="_medium_blunt_armor_set.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Race" Value="gibbai"/>
+      <ATOM Name="DamageLocalisationTable" Value="homin"/>
+      <ATOM Name="Profile" Value="caster attack"/>
+      <STRUCT Name="Scores">
+        <ATOM Name="Sap" Value="high"/>
+        <ATOM Name="Stamina" Value="default"/>
+      </STRUCT>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="gibbai_medium_blunt_chest.item"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="MovementSpeeds">
+        <ATOM Name="WalkSpeed" Value="&quot;3d data.Scale&quot;*1.655486"/>
+        <ATOM Name="RunSpeed" Value="&quot;3d data.Scale&quot;*3.61"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="Skel" Value="zo_mo_gibbai.skel"/>
+      <ATOM Name="AnimSetBaseName" Value="gibbai"/>
+      <ATOM Name="LodCharacterName" Value="ZO_MO_Gibbai_LOD"/>
+      <ATOM Name="LodCharacterDistance" Value="50"/>
+      <ATOM Name="NamePosZLow" Value="0.9"/>
+      <ATOM Name="NamePosZNormal" Value="2.0"/>
+    </STRUCT>
+    <ATOM Name="attack_list1" Value="gibbai.attack_list"/>
+    <ARRAY Name="melee_cfg">
+      <ATOM Value="gibbai_attack.actionlist"/>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

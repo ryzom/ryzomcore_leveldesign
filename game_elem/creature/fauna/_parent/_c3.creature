@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_ai_herbivore_craintif.creature"/>
+  <PARENT Filename="_medium_slashing_armor_set.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Race" Value="race_c3"/>
+      <ATOM Name="DamageLocalisationTable" Value="quadruped"/>
+      <ATOM Name="Profile" Value="melee fighter"/>
+      <STRUCT Name="Scores">
+        <ATOM Name="HitPoints" Value="default"/>
+        <ATOM Name="Sap" Value="default"/>
+        <ATOM Name="Stamina" Value="default"/>
+      </STRUCT>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="c3_medium_slashing_chest.item"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="MovementSpeeds">
+        <ATOM Name="WalkSpeed" Value="&quot;3d data.Scale&quot;*3.111915"/>
+        <ATOM Name="RunSpeed" Value="&quot;3d data.Scale&quot;*10.153125"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="Skel" Value="TR_MO_C03.skel"/>
+      <ATOM Name="AnimSetBaseName" Value="c03"/>
+      <ATOM Name="LodCharacterName" Value="TR_MO_C03_LOD"/>
+      <ATOM Name="LodCharacterDistance" Value="50"/>
+      <STRUCT Name="Shadow">
+        <ATOM Name="Shadow Bone 0" Value="Bip01 L Foot"/>
+        <ATOM Name="Shadow Size 0" Value="2.0"/>
+        <ATOM Name="Shadow Bone 1" Value="Bip01 R Foot"/>
+        <ATOM Name="Shadow Size 1" Value="2.0"/>
+        <ATOM Name="Shadow Bone 2" Value="Bip01 L Hand"/>
+        <ATOM Name="Shadow Size 2" Value="2.0"/>
+        <ATOM Name="Shadow Bone 3" Value="Bip01 R Hand"/>
+        <ATOM Name="Shadow Size 3" Value="2.0"/>
+        <ATOM Name="Shadow Bone 4" Value="Bip01 Spine1"/>
+        <ATOM Name="Shadow Size 4" Value="2.0"/>
+        <ATOM Name="Shadow Bone 5" Value="Bip01 Spine"/>
+        <ATOM Name="Shadow Size 5" Value="3.0"/>
+      </STRUCT>
+      <ATOM Name="NamePosZLow" Value="2.6"/>
+      <ATOM Name="NamePosZNormal" Value="2.6"/>
+    </STRUCT>
+    <ATOM Name="attack_list1" Value="c3.attack_list"/>
+    <ARRAY Name="melee_cfg">
+      <ATOM Value="c3_attack.actionlist"/>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

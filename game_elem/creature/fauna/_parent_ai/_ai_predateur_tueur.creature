@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_formuli.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="type" Value="predator"/>
+    </STRUCT>
+    <STRUCT Name="Combat">
+      <ATOM Name="AggroThreshold" Value="10"/>
+      <ATOM Name="AttackThreshold" Value="15"/>
+      <ATOM Name="FleeThreshold" Value="190"/>
+      <ATOM Name="CriticalInjury" Value="35"/>
+      <ATOM Name="DangerThreshold" Value="180"/>
+      <ATOM Name="InitialSurvival" Value="5"/>
+      <ATOM Name="Solidarity" Value="10"/>
+      <ATOM Name="InitialAggro" Value="5"/>
+      <ATOM Name="AggroRadiusNotHungry" Value="10"/>
+      <ATOM Name="AggroRadiusHungry" Value="20"/>
+      <ATOM Name="AggroRadiusHunting" Value="40"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

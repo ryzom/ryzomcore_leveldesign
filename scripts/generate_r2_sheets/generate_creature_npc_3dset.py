@@ -1,7 +1,7 @@
 
 import os, zlib
 
-folder = r"R:\leveldesign\game_elem\creature\npc\3dset"
+folder = r"R:\leveldesign\game_elem\creature\npc\_parent_3dset"
 if not os.path.isdir(folder):
 	os.makedirs(folder)
 

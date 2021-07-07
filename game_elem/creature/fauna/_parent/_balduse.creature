@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_ai_predateur.creature"/>
+  <PARENT Filename="_light_blunt_armor_set.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Race" Value="balduse"/>
+      <ATOM Name="DamageLocalisationTable" Value="other"/>
+      <ATOM Name="Profile" Value="caster attack"/>
+      <STRUCT Name="Scores">
+        <ATOM Name="HitPoints" Value="low"/>
+        <ATOM Name="Sap" Value="high"/>
+        <ATOM Name="Stamina" Value="default"/>
+      </STRUCT>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="balduse_light_blunt_chest.item"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="MovementSpeeds">
+        <ATOM Name="WalkSpeed" Value="&quot;3d data.Scale&quot;*1.3"/>
+        <ATOM Name="RunSpeed" Value="&quot;3d data.Scale&quot;*6"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="Skel" Value="TR_MO_balduse.skel"/>
+      <ATOM Name="AnimSetBaseName" Value="ryzetacee"/>
+      <ATOM Name="LodCharacterName" Value="TR_MO_ryzetacee_LOD"/>
+      <ATOM Name="LodCharacterDistance" Value="50"/>
+    </STRUCT>
+    <ATOM Name="attack_list1" Value="balduse.attack_list"/>
+    <ARRAY Name="melee_cfg">
+      <ATOM Value="balduse_attack.actionlist"/>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

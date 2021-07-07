@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_formuli.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="type" Value="predator_plant"/>
+    </STRUCT>
+    <VSTRUCT DfnName="_ai_model_creature.dfn" Name="AI">
+      <STRUCT Name="Behaviours">
+        <STRUCT Name="Chase">
+          <ATOM Name="Active" Value="false"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="Fame">
+        <STRUCT Name="Player">
+          <ATOM Name="Weight" Value="100"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="Foods">
+        <STRUCT Name="Herbe">
+          <ATOM Name="Weight" Value="100"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="Lairs">
+        <STRUCT Name="Herbivore">
+          <ATOM Name="Weight" Value="100"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="Motivations">
+        <STRUCT Name="Explore">
+          <ATOM Name="RelativePower" Value="1"/>
+        </STRUCT>
+        <STRUCT Name="Hunger">
+          <ATOM Name="RelativePower" Value="100"/>
+          <ATOM Name="Faim" Value="60"/>
+          <ATOM Name="Tres faim" Value="80"/>
+          <ATOM Name="Affame" Value="100"/>
+        </STRUCT>
+        <STRUCT Name="Health">
+          <ATOM Name="RelativePower" Value="1"/>
+        </STRUCT>
+        <STRUCT Name="Fatigue">
+          <ATOM Name="RelativePower" Value="1"/>
+          <ATOM Name="Faim" Value="180"/>
+          <ATOM Name="Tres faim" Value="200"/>
+          <ATOM Name="Affame" Value="220"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="IsA">
+        <VSTRUCT DfnName="_ai_combatif.dfn" Name="combatif">
+          <ATOM Name="rancune_initiale" Value="5"/>
+          <ATOM Name="seuil_belliqueux" Value="60"/>
+          <ATOM Name="seuil_attaque" Value="80"/>
+          <ATOM Name="survie_initiale" Value="30"/>
+          <ATOM Name="seuil_danger" Value="70.0"/>
+          <ATOM Name="seuil_fuite" Value="90"/>
+          <ATOM Name="blessure_critique" Value="10.0"/>
+        </VSTRUCT>
+      </STRUCT>
+    </VSTRUCT>
+    <STRUCT Name="Combat">
+      <ATOM Name="AggroThreshold" Value="60"/>
+      <ATOM Name="AttackThreshold" Value="80"/>
+      <ATOM Name="FleeThreshold" Value="90"/>
+      <ATOM Name="CriticalInjury" Value="10"/>
+      <ATOM Name="DangerThreshold" Value="70"/>
+      <ATOM Name="InitialSurvival" Value="30"/>
+      <ATOM Name="InitialAggro" Value="5"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

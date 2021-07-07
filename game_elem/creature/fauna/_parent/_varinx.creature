@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_ai_predateur_tueur.creature"/>
+  <PARENT Filename="_medium_blunt_slashing_armor_set.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Race" Value="varinx"/>
+      <ATOM Name="DamageLocalisationTable" Value="quadruped"/>
+      <ATOM Name="Profile" Value="melee fighter"/>
+      <STRUCT Name="Scores">
+        <ATOM Name="HitPoints" Value="high"/>
+        <ATOM Name="Sap" Value="high"/>
+        <ATOM Name="Stamina" Value="high"/>
+      </STRUCT>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="varinx_medium_slashing_blunt_chest.item"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="MovementSpeeds">
+        <ATOM Name="WalkSpeed" Value="&quot;3d data.Scale&quot;*1.548387"/>
+        <ATOM Name="RunSpeed" Value="&quot;3d data.Scale&quot;*7.116667"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="Skel" Value="TR_MO_varinx.skel"/>
+      <ATOM Name="AnimSetBaseName" Value="Varinx"/>
+      <ATOM Name="LodCharacterName" Value="TR_MO_varinx_LOD"/>
+      <ATOM Name="LodCharacterDistance" Value="50.0"/>
+      <ATOM Name="CharacterScalePos" Value="1.27"/>
+      <STRUCT Name="Shadow">
+        <ATOM Name="Shadow Bone 0" Value="Bip01 L Foot"/>
+        <ATOM Name="Shadow Size 0" Value="1.5"/>
+        <ATOM Name="Shadow Bone 1" Value="Bip01 R Foot"/>
+        <ATOM Name="Shadow Size 1" Value="1.5"/>
+        <ATOM Name="Shadow Bone 4" Value="Bip01 Spine1"/>
+        <ATOM Name="Shadow Size 4" Value="3.0"/>
+        <ATOM Name="Shadow Bone 5" Value="Bip01 Spine"/>
+        <ATOM Name="Shadow Size 5" Value="3.0"/>
+        <ATOM Name="Shadow Bone 6" Value="Bip01 L UpperArm"/>
+        <ATOM Name="Shadow Size 6" Value="1.5"/>
+        <ATOM Name="Shadow Bone 7" Value="Bip01 L UpperArm"/>
+        <ATOM Name="Shadow Size 7" Value="2.0"/>
+      </STRUCT>
+      <ATOM Name="SoundFamily" Value="3"/>
+      <ATOM Name="NamePosZLow" Value="1.2"/>
+      <ATOM Name="NamePosZNormal" Value="2.0"/>
+    </STRUCT>
+    <ATOM Name="attack_list1" Value="varinx.attack_list"/>
+    <ARRAY Name="melee_cfg">
+      <ATOM Value="varinx_attack.actionlist"/>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

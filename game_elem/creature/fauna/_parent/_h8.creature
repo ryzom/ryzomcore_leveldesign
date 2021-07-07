@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_ai_herbivore_hargneux.creature"/>
+  <PARENT Filename="_heavy_blunt_piercing_slashing_armor_set.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Race" Value="race_h8"/>
+      <ATOM Name="DamageLocalisationTable" Value="quadruped"/>
+      <ATOM Name="Size" Value="big"/>
+      <ATOM Name="Profile" Value="harvester"/>
+      <ATOM Name="Level" Value="$filename"/>
+      <STRUCT Name="Scores">
+        <ATOM Name="HitPoints" Value="high"/>
+        <ATOM Name="Sap" Value="very low"/>
+        <ATOM Name="Stamina" Value="high"/>
+      </STRUCT>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="h8_heavy_blunt_slashing_piercing_chest.item"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="MovementSpeeds">
+        <ATOM Name="WalkSpeed" Value="&quot;3d data.Scale&quot;*0.901592"/>
+        <ATOM Name="RunSpeed" Value="&quot;3d data.Scale&quot;*3.420276"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="Skel" Value="TR_MO_H08.skel"/>
+      <ATOM Name="AnimSetBaseName" Value="h08"/>
+      <ATOM Name="LodCharacterName" Value="TR_MO_H08_LOD"/>
+      <ATOM Name="LodCharacterDistance" Value="50"/>
+      <ATOM Name="Scale" Value="int((&quot;Basics.Level&quot;+4)/5)*0.4"/>
+      <ATOM Name="NamePosZLow" Value="1.9"/>
+      <ATOM Name="NamePosZNormal" Value="2.1"/>
+    </STRUCT>
+    <ARRAY Name="melee_cfg">
+      <ATOM Value="h8_attack.actionlist"/>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

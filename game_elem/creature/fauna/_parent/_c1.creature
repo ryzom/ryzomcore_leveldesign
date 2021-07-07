@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_ai_predateur.creature"/>
+  <PARENT Filename="_light_slashing_armor_set.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Race" Value="race_c1"/>
+      <ATOM Name="Size" Value="small"/>
+      <ATOM Name="Profile" Value="melee fighter"/>
+      <STRUCT Name="Scores">
+        <ATOM Name="HitPoints" Value="very low"/>
+        <ATOM Name="Sap" Value="default"/>
+        <ATOM Name="Stamina" Value="low"/>
+      </STRUCT>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="c1_light_slashing_chest.item"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="MovementSpeeds">
+        <ATOM Name="WalkSpeed" Value="&quot;3d data.Scale&quot;*4.300829"/>
+        <ATOM Name="RunSpeed" Value="&quot;3d data.Scale&quot;*4.300829"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="Skel" Value="TR_MO_C01.skel"/>
+      <ATOM Name="AnimSetBaseName" Value="c01"/>
+      <ATOM Name="LodCharacterName" Value="TR_MO_C01_LOD"/>
+      <ATOM Name="LodCharacterDistance" Value="50"/>
+      <ATOM Name="NamePosZLow" Value="2.5"/>
+      <ATOM Name="NamePosZNormal" Value="2.5"/>
+    </STRUCT>
+    <ARRAY Name="melee_cfg">
+      <ATOM Value="c1_attack.actionlist"/>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

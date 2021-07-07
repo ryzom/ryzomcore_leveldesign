@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_ai_plante_craintive.creature"/>
+  <PARENT Filename="_heavy_blunt_piercing_slashing_armor_set.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Race" Value="phytopsy"/>
+      <ATOM Name="DamageLocalisationTable" Value="plant"/>
+      <ATOM Name="Size" Value="big"/>
+      <ATOM Name="Profile" Value="caster buffer"/>
+      <ATOM Name="Level" Value="$filename"/>
+      <STRUCT Name="Scores">
+        <ATOM Name="HitPoints" Value="high"/>
+        <ATOM Name="Sap" Value="default"/>
+        <ATOM Name="Stamina" Value="default"/>
+      </STRUCT>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="phytopsy_heavy_blunt_piercing_chest.item"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="MovementSpeeds">
+        <ATOM Name="WalkSpeed" Value="0.0"/>
+        <ATOM Name="RunSpeed" Value="0.0"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="Skel" Value="PR_MO_phytopsy.skel"/>
+      <ATOM Name="AnimSetBaseName" Value="phytopsy"/>
+      <ATOM Name="LodCharacterName" Value="PR_MO_phytopsy_LOD"/>
+      <ATOM Name="LodCharacterDistance" Value="50"/>
+    </STRUCT>
+    <STRUCT Name="Collision">
+      <ATOM Name="Dist Bip01 to back" Value="-&quot;Collision.Length&quot;+&quot;Collision.Dist Bip01 to front&quot;"/>
+      <ATOM Name="NotTraversable" Value="true"/>
+    </STRUCT>
+    <ATOM Name="attack_list1" Value="phytopsy.attack_list"/>
+    <ARRAY Name="range_cfg">
+      <ATOM Value="phytopsy_attack.actionlist"/>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_ai_herbivore_craintif.creature"/>
+  <PARENT Filename="_light_slashing_armor_set.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Race" Value="dag"/>
+      <ATOM Name="DamageLocalisationTable" Value="quadruped"/>
+      <ATOM Name="Size" Value="small"/>
+      <ATOM Name="Profile" Value="caster healer"/>
+      <STRUCT Name="Scores">
+        <ATOM Name="HitPoints" Value="very low"/>
+        <ATOM Name="Sap" Value="default"/>
+        <ATOM Name="Stamina" Value="very low"/>
+      </STRUCT>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Item" Value="dag_light_slashing_chest.item"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="MovementSpeeds">
+        <ATOM Name="WalkSpeed" Value="&quot;3d data.Scale&quot;*1.1"/>
+        <ATOM Name="RunSpeed" Value="&quot;3d data.Scale&quot;*3.536918"/>
+      </STRUCT>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="Skel" Value="TR_MO_Dag.skel"/>
+      <ATOM Name="AnimSetBaseName" Value="dag"/>
+      <ATOM Name="LodCharacterName" Value="TR_MO_dag_LOD"/>
+      <ATOM Name="LodCharacterDistance" Value="50.0"/>
+      <ATOM Name="NamePosZLow" Value="0.5"/>
+      <ATOM Name="NamePosZNormal" Value="0.7"/>
+    </STRUCT>
+    <ATOM Name="attack_list1" Value="dag.attack_list"/>
+    <ARRAY Name="melee_cfg">
+      <ATOM Value="dag_attack.actionlist"/>
+    </ARRAY>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <LOG></LOG>
+</FORM>
