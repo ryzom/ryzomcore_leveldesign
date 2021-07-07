@@ -69,27 +69,27 @@ def getForceLevel(level):
 # desert, jungle, forest, lakes, prime roots, goo, invasion
 
 attackOffset = {
-	"d": 0, "j": 0, "f": 0, "l": 0, "p": 0, "g": 4, "i": -6
+	"d": 0, "j": 0, "f": 0, "l": 0, "p": 0, "g": 4, "i": -6, "r": -3,
 }
 
 defenseOffset = {
-	"d": 0, "j": 0, "f": 0, "l": 0, "p": 0, "g": -4, "i": -6
+	"d": 0, "j": 0, "f": 0, "l": 0, "p": 0, "g": -4, "i": -6, "r": -3,
 }
 
 levelOffset = {
-	"d": 0, "j": 0, "f": 0, "l": 0, "p": 2, "g": 2, "i": 0
+	"d": 0, "j": 0, "f": 0, "l": 0, "p": 2, "g": 2, "i": 0, "r": 0,
 }
 
 xpGain = {
-	"d": 1.0, "j": 1.0, "f": 1.0, "l": 1.0, "p": 1.0, "g": 1.5, "i": 0.25
+	"d": 1.0, "j": 1.0, "f": 1.0, "l": 1.0, "p": 1.0, "g": 1.5, "i": 0.25, "r": 0.75
 }
 
 hpFactor = {
-	"d": 1.0, "j": 1.0, "f": 1.0, "l": 1.0, "p": 1.0, "g": 0.5, "i": 0.25
+	"d": 1.0, "j": 1.0, "f": 1.0, "l": 1.0, "p": 1.0, "g": 0.5, "i": 0.25, "i": 0.5
 }
 
 attackFactor = {
-	"d": 1.0, "j": 1.0, "f": 1.0, "l": 1.0, "p": 1.0, "g": 2.0, "i": 0.25
+	"d": 1.0, "j": 1.0, "f": 1.0, "l": 1.0, "p": 1.0, "g": 2.0, "i": 0.25, "i": 1.0
 }
 
 levelVariance = [ -3, 3 ] # excluding upper bound, also applies to attack and defense
