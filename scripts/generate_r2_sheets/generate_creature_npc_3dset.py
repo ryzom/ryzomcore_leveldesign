@@ -42,13 +42,13 @@ for race in matrix[0]:
 					hairColor = randomValue(6, "HairColor_" + setName) + 1
 					eyesColor = randomValue(8, "EyesColor_" + setName) + 1
 					parentName = "_" + matrix[0][race] + "_" + matrix[1][gender] + ".creature"
-					with open(folder + "\\" + setName, "w") as f:
+					with open(folder + "\\_" + setName, "w") as f:
 						f.write("<?xml version=\"1.0\"?>\n")
 						f.write("<FORM Version=\"4.0\" State=\"modified\">\n")
 						f.write("  <PARENT Filename=\"" + parentName + "\"/>\n")
 						f.write("  <STRUCT>\n")
 						f.write("    <STRUCT Name=\"Basics\">\n")
-						f.write("      <ATOM Name=\"Fame\" Value=\"" + matrix[0][race] + "\"/>\n")
+						# f.write("      <ATOM Name=\"Fame\" Value=\"" + matrix[0][race] + "\"/>\n")
 						f.write("      <STRUCT Name=\"Equipment\">\n")
 						f.write("        <STRUCT Name=\"Body\">\n")
 						f.write("          <ATOM Name=\"Item\" Value=\"" + itemPrefix + "v" + itemSuffix + "\"/>\n")

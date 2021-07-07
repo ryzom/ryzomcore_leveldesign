@@ -36,16 +36,16 @@ if not os.path.isdir(folder):
 # resists are all same as level, varied using level variance
 
 types = {
-	"ring_civil_light_melee":   { "action": "combat_melee",     "levelOffset":  0, "attackOffset":  0, "defenseOffset":  0, "xpGain": 1.0, "hpFactor": 0.5, "attackFactor": 0.5,  "meleeProtection": 20, "magicProtection": 20, "parent": "fyhc3.creature" }, # civilian
-	"ring_guard_melee_tank":    { "action": "combat_melee",     "levelOffset": 20, "attackOffset":  0, "defenseOffset":  0, "xpGain": 2.0, "hpFactor": 4.0, "attackFactor": 2.0,  "meleeProtection": 60, "magicProtection": 60, "parent": "fyha3.creature" }, # guard
+	"ring_civil_light_melee":   { "action": "combat_melee",     "levelOffset":  0, "attackOffset":  0, "defenseOffset":  0, "xpGain": 1.0, "hpFactor": 0.5, "attackFactor": 0.5,  "meleeProtection": 20, "magicProtection": 20, "parent": "_fyhc3.creature" }, # civilian
+	"ring_guard_melee_tank":    { "action": "combat_melee",     "levelOffset": 20, "attackOffset":  0, "defenseOffset":  0, "xpGain": 2.0, "hpFactor": 4.0, "attackFactor": 2.0,  "meleeProtection": 60, "magicProtection": 60, "parent": "_fyha3.creature" }, # guard
 
-	"ring_light_melee":         { "action": "combat_melee",     "levelOffset":  0, "attackOffset":  0, "defenseOffset":  0, "xpGain": 1.0, "hpFactor": 1.0, "attackFactor": 1.0,  "meleeProtection": 20, "magicProtection": 20, "parent": "fyhc3.creature" }, # milicia
-	"ring_melee_damage_dealer": { "action": "combat_melee",     "levelOffset":  0, "attackOffset":  6, "defenseOffset": -6, "xpGain": 1.5, "hpFactor": 0.5, "attackFactor": 2.0,  "meleeProtection": 40, "magicProtection": 20, "parent": "fyhb3.creature" }, # armsman
-	"ring_melee_tank":          { "action": "combat_melee",     "levelOffset":  0, "attackOffset": -6, "defenseOffset":  6, "xpGain": 2.0, "hpFactor": 4.0, "attackFactor": 0.25, "meleeProtection": 60, "magicProtection": 20, "parent": "fyha3.creature" }, # warrior
+	"ring_light_melee":         { "action": "combat_melee",     "levelOffset":  0, "attackOffset":  0, "defenseOffset":  0, "xpGain": 1.0, "hpFactor": 1.0, "attackFactor": 1.0,  "meleeProtection": 20, "magicProtection": 20, "parent": "_fyhc3.creature" }, # milicia
+	"ring_melee_damage_dealer": { "action": "combat_melee",     "levelOffset":  0, "attackOffset":  6, "defenseOffset": -6, "xpGain": 1.5, "hpFactor": 0.5, "attackFactor": 2.0,  "meleeProtection": 40, "magicProtection": 20, "parent": "_fyhb3.creature" }, # armsman
+	"ring_melee_tank":          { "action": "combat_melee",     "levelOffset":  0, "attackOffset": -6, "defenseOffset":  6, "xpGain": 2.0, "hpFactor": 4.0, "attackFactor": 0.25, "meleeProtection": 60, "magicProtection": 20, "parent": "_fyha3.creature" }, # warrior
 
-	"ring_magic_damage_dealer": { "action": "magic_damage",     "levelOffset":  0, "attackOffset":  0, "defenseOffset":  0, "xpGain": 1.5, "hpFactor": 1.0 / boosts["magic"],     "meleeProtection": 20, "magicProtection": 40, "parent": "fyhd3.creature" }, # elementalist
-	"ring_magic_aoe":           { "action": "magic_aoe",        "levelOffset":  0, "attackOffset":  0, "defenseOffset":  0, "xpGain": 1.0, "hpFactor": 1.0 / boosts["magic"],     "meleeProtection": 20, "magicProtection": 20, "parent": "fyhd3.creature" }, # devastator
-	"ring_magic_curser":        { "action": "magic_affliction", "levelOffset":  0, "attackOffset":  0, "defenseOffset":  0, "xpGain": 2.0, "hpFactor": 1.0 / boosts["magic"],     "meleeProtection": 20, "magicProtection": 60, "parent": "fyhd3.creature" }, # illusionist, tormentor
+	"ring_magic_damage_dealer": { "action": "magic_damage",     "levelOffset":  0, "attackOffset":  0, "defenseOffset":  0, "xpGain": 1.5, "hpFactor": 1.0 / boosts["magic"],     "meleeProtection": 20, "magicProtection": 40, "parent": "_fyhd3.creature" }, # elementalist
+	"ring_magic_aoe":           { "action": "magic_aoe",        "levelOffset":  0, "attackOffset":  0, "defenseOffset":  0, "xpGain": 1.0, "hpFactor": 1.0 / boosts["magic"],     "meleeProtection": 20, "magicProtection": 20, "parent": "_fyhd3.creature" }, # devastator
+	"ring_magic_curser":        { "action": "magic_affliction", "levelOffset":  0, "attackOffset":  0, "defenseOffset":  0, "xpGain": 2.0, "hpFactor": 1.0 / boosts["magic"],     "meleeProtection": 20, "magicProtection": 60, "parent": "_fyhd3.creature" }, # illusionist, tormentor
 }
 
 xpVariance = 0.1
