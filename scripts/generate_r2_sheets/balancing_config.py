@@ -80,12 +80,16 @@ levelOffset = {
 	"d": 0, "j": 0, "f": 0, "l": 0, "p": 2, "g": 2, "i": 0
 }
 
+xpGain = {
+	"d": 1.0, "j": 1.0, "f": 1.0, "l": 1.0, "p": 1.0, "g": 1.5, "i": 0.25
+}
+
 hpFactor = {
-	"d": 1.0, "j": 1.0, "f": 1.0, "l": 1.0, "p": 1.0, "g": 1.0, "i": 0.25
+	"d": 1.0, "j": 1.0, "f": 1.0, "l": 1.0, "p": 1.0, "g": 0.5, "i": 0.25
 }
 
 attackFactor = {
-	"d": 1.0, "j": 1.0, "f": 1.0, "l": 1.0, "p": 1.0, "g": 1.0, "i": 0.25
+	"d": 1.0, "j": 1.0, "f": 1.0, "l": 1.0, "p": 1.0, "g": 2.0, "i": 0.25
 }
 
 levelVariance = [ -3, 3 ] # excluding upper bound, also applies to attack and defense
