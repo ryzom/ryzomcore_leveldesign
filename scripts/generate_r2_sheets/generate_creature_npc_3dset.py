@@ -75,6 +75,12 @@ for race in matrix[0]:
 						f.write("          <ATOM Name=\"Texture\" Value=\"" + itemTexture + "\"/>\n")
 						f.write("          <ATOM Name=\"Color\" Value=\"White\"/>\n")
 						f.write("        </STRUCT>\n")
+						if armor == "a":
+							f.write("        <STRUCT Name=\"Head\">\n")
+							f.write("          <ATOM Name=\"Item\" Value=\"" + itemPrefix + "h" + itemSuffix + "\"/>\n")
+							f.write("          <ATOM Name=\"Texture\" Value=\"" + itemTexture + "\"/>\n")
+							f.write("          <ATOM Name=\"Color\" Value=\"White\"/>\n")
+							f.write("        </STRUCT>\n")
 						f.write("        <STRUCT Name=\"Face\">\n")
 						f.write("          <ATOM Name=\"Item\" Value=\"" + visageName + "\"/>\n")
 						f.write("          <ATOM Name=\"Texture\" Value=\"" + visageTexture + "\"/>\n")
