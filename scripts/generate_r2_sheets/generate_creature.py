@@ -17,7 +17,25 @@ def loadTsvWithHeaders(filename):
 				table[name] = entry
 	return table;
 
+def loadTsvWithHeadersNoEmpty(filename):
+	table = {}
+	columns = None
+	with open(filename, "r") as f:
+		for l in f:
+			if not columns:
+				columns = l.strip().split("\t")
+			else:
+				row = l.strip().split("\t")
+				name = row[0]
+				entry = {}
+				for i in range(1, len(row)):
+					if len(row[i]) > 0:
+						entry[columns[i]] = row[i]
+				table[name] = entry
+	return table;
+
 creatureFauna = loadTsvWithHeaders("creature_fauna.tsv")
+creatureScale = loadTsvWithHeadersNoEmpty("creature_scale.tsv")
 
 generate = {}
 
@@ -97,7 +115,7 @@ groupAssist = {
 # Don't aggro ecosystem when specified by _ wildcard
 dontAggroAssistEs = [ "g" ]
 
-with open("creature_missing.txt", "r") as f:
+with open("creature_list.txt", "r") as f:
 	for l in f:
 		c = l.split(".")[0]
 		if c.startswith("c") and len(c) == 6:
@@ -209,3 +227,22 @@ for sheet in creatureFauna:
 			for lvl in gen[eco]:
 				name = "c" + id + eco + lvl
 				# print(entry["name"] + " " + suffix[es] + " " + eco + " " + lvl + " " + name + " " + parent)
+				mpDir = "R:/leveldesign/game_elem/creature/" + entry["folder"] + "/_parent_mp/" + folders[eco]
+				if not os.path.isdir(mpDir):
+					os.makedirs(mpDir)
+				sheetDir = "R:/leveldesign/game_elem/creature/" + entry["folder"] + "/" + folders[eco]
+				if not os.path.isdir(mpDir):
+					os.makedirs(mpDir)
+				mpFile = mpDir + "/_" + name + "_mp.creature"
+				if not os.path.isfile(mpFile):
+					with open(mpFile, "w") as f:
+						f.write("<?xml version=\"1.0\"?>\n")
+						f.write("<FORM Version=\"4.0\" State=\"modified\">\n")
+						f.write("  <STRUCT>\n")
+						f.write("    <STRUCT Name=\"Harvest\">\n")
+						f.write("      <STRUCT Name=\"MP1\">\n")
+						f.write("        <ATOM Name=\"AssociatedItem\" Value=\"system_mp_basic.sitem\"/>\n")
+						f.write("      </STRUCT>\n")
+						f.write("    </STRUCT>\n")
+						f.write("  </STRUCT>\n")
+						f.write("</FORM>\n")
