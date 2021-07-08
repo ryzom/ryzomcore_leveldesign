@@ -1,68 +1,68 @@
-sheet	model	alternate	id	name	category	type	folder	attack	i	r	e	aggro	groupAggro	assist	groupAssist	gooAggro	gooAssist	levelOffset	attackOffset	defenseOffset	xpGain	hpFactor	attackFactor	slashingProtection	bluntProtection	piercingProtection	acidProtection	rotProtection	coldProtection	poisonProtection	fireProtection	electricityProtection	shockwaveProtection
-balduse	ryzetacee		aa	Baldusa	aquatic	aquatic	fauna	_special				15	zp	5	aa_	20		0	0	0	1	1	1	10	10	10	40	40	0	0	80	40	0
-clapclap			ab	Prakker	aquatic	aquatic	fauna	_special				15	zp	5	ab_	20		0	0	0	1	1	1	10	10	10	40	40	0	0	80	0	40
-kazoar			ba	Igara	birds	bird	fauna	slashing		g		15			"ba_,hb_"	15		1	0	0	1	1.2	1	10	0	0	10	80	0	0	0	30	60
-lightbird			bb	Izam	birds	bird	fauna	piercing				15			bb_	15		0	0	0	1	1	1	0	10	0	10	80	0	0	0	30	60
-yber			bc	Yber	birds	bird	fauna	blunt		g		15			"bc_,bb_"	15		0	0	0	1	0.8	1	0	0	10	0	80	0	0	0	30	60
-chonari	chorani		ca	Gingo	dogs	carnivore	fauna	slashing	j	g		15	"b_,h_,zp"		ca_	20		2	2	0	1.35	1.3	2	10	0	0	10	80	40	0	0	0	30
-cococlaw			cb	Clopper	crustace	carnivore	fauna	piercing		g		15	"b_,h_,zp"	5	cb_	20		0	2	0	1.35	1.3	2	10	20	10	20	40	0	0	30	30	0
-hachtaha			cc	Goari	crustace	carnivore	fauna	slashing		g		15	"b_,h_,zp"		"hp_,hb_,hh_"	20		0	2	0	1.35	1.3	2	10	20	10	20	40	0	0	30	30	0
-jungler			cd	Torbak	dogs	carnivore	fauna	piercing		g	g	15	"b_,h_,zp"		"cd_,ca_,ci_"	20		4	2	0	1.35	1.3	2	10	0	0	10	80	40	0	0	0	30
-regus			ce	Ragus	dogs	carnivore	fauna	slashing		g		15	"b_,h_,zp"		ce_	20		3	2	0	1.35	1.3	2	10	0	0	10	80	40	0	0	0	30
-ryzerb			cf	Najab	great ryzomians	carnivore	fauna	blunt		g		15	"b_,h_,zp"	5	"cf_,cd_"	20		4	2	0	1.35	1	2	0	0	0	0	40	10	30	30	0	0
-ryzoholok			cg	Vorax	great ryzomians	carnivore	fauna	slashing		g		15	"b_,h_,zp"		cg_	20		3	2	0	1.35	1.4	2	40	20	20	40	80	40	30	0	30	0
-varinx			ch	Varinx	dogs	carnivore	fauna	slashing		g	g	15	"b_,h_,zp"	5	"ch_,ci_"	20		1	2	0	1.35	1.4	2	10	0	0	10	80	40	0	0	0	30
-zerx			ci	Zerx	ryzomians	carnivore	fauna	blunt				15	"b_,h_,zp"		"ci_,ch_"	20		2	2	0	1.35	1.2	2	0	0	0	0	80	0	30	30	0	0
-c1	c01	pyrinax	cj	Javing	birds	carnivore	fauna	piercing				15	"b_,h_,zp"		cj_	20		2	2	0	1.35	1	2	0	0	0	0	80	0	0	0	30	60
-c2	c02	cuttle	ck	Cuttler	dogs	carnivore	fauna	piercing				15	"b_,h_,zp"		"ck_,ci_"	20		3	2	0	1.35	1.2	2	20	20	10	20	80	0	0	30	0	0
-c3	c03	osyx	cl	Ocyx	horses	carnivore	fauna	piercing				15	"b_,h_,zp"	5	"cl_,ch_"	20		2	2	0	1.35	1	2	20	20	10	20	80	10	0	30	30	0
-c4	c04	nobi	cm	Jugula	ryzomians	carnivore	fauna	slashing		g		15	"b_,h_,zp"		"cm_,co_"	20		1	2	0	1.35	1	2	0	0	0	0	80	0	30	0	0	30
-diranak			cn	Horncher	crustace	carnivore	fauna	piercing	l			15	"b_,h_,zp"		"cn_,ci_"	20		3	2	0	1.35	1.4	2	40	20	20	40	40	0	0	30	30	0
-c6	c06	peloedith	co	Tyrancha	great ryzomians	carnivore	fauna	blunt				15	"b_,h_,zp"		"co_,ck_"	20		3	2	0	1.35	1.4	2	20	20	0	20	80	10	30	30	0	0
-c7	c07		cp	Yetin	dogs	carnivore	fauna	slashing				15	"b_,h_,zp"	5	"cp_,cf_"	20		0	2	0	1.35	1.2	2	10	10	0	10	80	40	0	0	0	30
-cute			da	Cute	degenerated	degen	fauna	blunt		g	g	15	zp	5	da_	20		1	1	-1	1	1	1	0	0	10	10	80	10	0	0	0	20
-gibbai			db	Gibbai	degenerated	degen	fauna	blunt		g	g	15	zp	5	db_	20		1	1	-1	1	1	1	10	0	0	10	80	40	0	0	20	0
-frahar			dc	Frahar	degenerated	degen	fauna	blunt		g	g	15	zp	5	dc_	20		1	1	-1	1	1	1	0	10	0	10	80	20	0	20	0	0
-arma			ha	Arma	pachiderms	herbivore	fauna	blunt				15			"ha_,hb_,hh_"	15		1	0	2	1.2	1.5	0.8	20	20	0	20	80	20	0	30	0	0
-bul			hb	Bodoc	pachiderms	herbivore	fauna	blunt				15		5	"hb_,ha_"	15		0	0	2	1.2	1.5	0.8	20	0	0	20	80	20	30	0	0	0
-capryni			hc	Capryni	runners	herbivore	fauna	piercing				15			hc_	15		1	0	2	1	1	1	10	0	0	0	80	0	0	0	30	0
-dag			hd	Yubo	dogs	herbivore	fauna	slashing	p			15			hd_	15		-3	0	0	1	1	1	0	0	0	0	80	10	0	0	0	0
-estrasson			he	Cray	crustace	herbivore	fauna	piercing		g		15			"he_,hb_"	15		1	1	2	1	1	1.2	20	20	40	40	40	0	30	0	0	0
-filin			hf	Messab	runners	herbivore	fauna	blunt		g		15		5	"hf_,hc_"	15		1	0	2	1	1	1	10	0	0	0	80	0	0	0	0	30
-kakty			hg	Lumper	ryzomians	herbivore	fauna	blunt		g		15			hg_	15		2	0	2	1.1	1.2	1	0	10	0	10	80	10	0	0	30	0
-mektoub			hh	Mektoub	horses	herbivore	fauna	blunt				15		5	"hh_,ba_"	15		3	0	2	1.1	1.2	1	0	0	10	10	80	10	0	0	0	0
-mektoub_mount	mektoub_selle	mektoubselle	hi	Mektoub Mount	horses	herbivore	mounts	_inherit				15			hi_	15		6	0	2	1.1	1.2	1	0	0	10	10	80	10	0	0	0	0
-mektoub_packer	mektoub_pack	mektoubpack	hj	Mektoub Packer	horses	herbivore	packers	_inherit				15			hj_	15		6	0	2	1.1	1.2	1	0	0	10	10	80	10	0	0	0	0
-ryzoholo			hk	Timari	ryzomians	herbivore	fauna	slashing		g		15			"hk_,ht_,bb_"	15		-1	0	2	1	1	1	0	0	10	10	80	10	0	30	0	0
-vampignon			hl	Yelk	pachiderms	herbivore	fauna	blunt		g	g	15		5	"hl_,hk_"	15		0	0	2	1.5	2	0.8	20	20	20	40	0	40	30	0	0	0
-h1	h01		hm	Raspal	runners	herbivore	fauna	piercing				15			"hm_,hh_"	15		0	0	2	1	1	1.2	0	0	0	0	80	10	0	0	0	30
-h2	h02		hn	Bawaab	ryzomians	herbivore	fauna	blunt				15			"hn_,hf_"	15		0	0	2	1	1.2	1	0	10	10	10	80	10	0	0	30	0
-h3	h03	bini	ho	Frippo	dogs	herbivore	fauna	slashing		g		15			"ho_,hm"	15		1	0	2	1	1	1	0	0	0	0	80	0	0	0	0	0
-h4	h04	rondor	hp	Rendor	runners	herbivore	fauna	blunt				15			"hh_,hp_,ba_"	15		0	0	2	1	1.2	0.8	20	10	10	20	80	10	0	30	0	0
-h5	h05	schnoof	hq	Gnoof	horses	herbivore	fauna	blunt				15			"hq_,ha_"	15		1	0	2	1	1.2	0.8	20	10	10	20	80	10	30	0	0	0
-h6	h06		hr	Bolobi	ryzomians	herbivore	fauna	piercing				15			"hr_,hq_"	15		0	0	-5	6	6	1	20	10	0	0	80	0	30	0	30	0
-h7	h07		hs	Shalah	great ryzomians	herbivore	fauna	slashing				15			"hs_,hk_"	15		0	0	-5	6	6	1	20	0	10	10	80	40	0	0	30	30
-h8	h08	plodos	ht	Ploderos	pachiderms	herbivore	fauna	blunt				15			"ht_,hk_"	15		0	0	-5	6	6	1	0	20	10	10	80	20	30	30	0	0
-h9	h09	kiwai	hu	Wombai	ryzomians	herbivore	fauna	piercing				15		5	"hu_,hb_,he_"	15		3	0	2	1	1	1	0	10	20	10	80	20	0	0	0	30
-h10			hv	Madakam	pachiderms	herbivore	fauna	blunt				15			"hv_,hb_"	15		0	0	-5	6	6	1	10	0	20	20	80	20	30	30	0	0
-h11			hw	Arana	great ryzomians	herbivore	fauna	piercing				15			"hw_,ht_,bb_"	15		1	0	2	1	1.5	0.8	20	10	0	40	40	40	30	0	30	0
-h12		wooah	hx	Gubani	horses	herbivore	fauna	blunt				15		5	"hx_,ha_,ba_"	15		2	0	2	1	1	1.2	10	0	0	10	80	40	0	0	0	0
-dag_xmas			hy	Christmas Yubo	dogs	herbivore	fauna	_inherit				15			hy_	15		-3	0	0	1	1	1	0	0	0	10	80	10	30	0	0	0
-c5	c05	rahley	ka	Kidinak	crustace	kitin	fauna	slashing	p	g	p	15	"b_,h_,zp"		"ka_,kb_,kc_"	20		3	3	0	1.5	1.5	1.5	80	40	60	40	80	20	20	20	20	20
-kitihank			kb	Kinrey	walking kitins	kitin	fauna	piercing	p	g	p	25	"b_,h_,zp"	5	"ka_,kb_,kc_"	20		7	5	3	6	5	3	40	20	60	40	80	20	20	20	20	20
-kitiharak	kitinarak		kc	Kizarak	walking kitins	kitin	fauna	piercing	f	g	f	15	"b_,h_,zp"	5	"ka_,kb_,kc_"	20		2	5	1	3	2	1.5	40	20	60	40	80	20	20	20	20	20
-kitimandib			kd	Kincher	walking kitins	kitin	fauna	piercing	d	g	d	15	"b_,h_,zp"	5	kd_	20		4	5	2	2	2	2	60	30	60	40	80	20	20	20	20	20
-kitinagan			ke	Kipucka	walking kitins	kitin	fauna	piercing	p	g	p	15	"b_,h_,zp"		ke_	20		3	5	2	1.5	2	2.5	80	40	60	40	80	20	20	20	20	20
-kitinega			kf	Kirosta	walking kitins	kitin	fauna	piercing	d	d	d	15	"b_,h_,zp"	10	k_	20		1	0	2	1.5	1.5	2.5	40	40	60	40	80	20	20	20	20	20
-kitinokto			kg	Kiban	walking kitins	kitin	fauna	piercing	p	g	p			5	kg_	15		2	0	0	1.5	1.5	1.2	40	20	60	40	80	20	20	20	20	20
-pucetron			kh	Kipee	walking kitins	kitin	fauna	piercing	p	p	p			5	kh_	15		0	0	0	1.5	2.5	1.2	40	20	60	40	80	0	20	20	20	20
-kitifly			ki	Kizoar	flying kitins	kitin	fauna	piercing	p	g	p			5	ki_	15		2	0	0	1.5	1.2	1.7	20	0	60	40	80	0	20	20	30	60
-kitikil			kj	Kipesta	flying kitins	kitin	fauna	piercing	p	g	p	15	"b_,h_,zp"	5	k_	20		1	1	0	1	1	1	0	20	0	10	80	0	20	20	30	60
-cephaloplant	endrobouchea	endrobouch	pa	Jubla	carnivore plants	plant	flora	_special		g				5	pa_	15	5	2	0	0	1	1	1	40	0	0	60	0	60	40	0	60	0
-electroalgs	electroalg		pb	Stinga	carnivore plants	plant	flora	_special		g	g			5	pb_	15	5	1	0	0	1	1	1	0	0	40	60	0	60	40	0	60	0
-phytopsy			pc	Psykopla	carnivore plants	plant	flora	_special		g				5	pc_	15	5	0	0	0	1	1	1	0	40	0	60	0	60	40	0	0	60
-sap_enslaver	sapenslaver		pd	Slaveni	carnivore plants	plant	flora	_special		g	g			5	pd_	15	5	3	0	0	1	1	1	40	0	0	60	0	60	40	0	60	60
-spitting_weeds	carnitree		pe	Cratcha	carnivore plants	plant	flora	_special		g				5	pe_	15	5	1	0	0	1	1	1	0	0	40	60	0	60	40	0	60	60
-swarmplants	swarmplant		pf	Shooki	carnivore plants	plant	flora	_special		g				5	pf_	15	5	0	0	0	1	1	1	0	40	0	60	0	60	40	0	60	0
-easter_egg			pg	Easter Egg	chest	plant	chests	_none										0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0
-present			ph	Present	chest	plant	chests	_none										0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0
+sheet	model	alternate	id	name	category	type	folder	attack	i	r	e	defenseMode	aggro	groupAggro	assist	groupAssist	gooAggro	gooAssist	levelOffset	attackOffset	defenseOffset	xpGain	hpFactor	attackFactor	slashingProtection	bluntProtection	piercingProtection	acidProtection	rotProtection	coldProtection	poisonProtection	fireProtection	electricityProtection	shockwaveProtection
+balduse	ryzetacee		aa	Baldusa	aquatic	aquatic	fauna	_special				dodge	15	zp	5	aa_	20		0	0	0	1	1	1	10	10	10	40	40	0	0	80	40	0
+clapclap			ab	Prakker	aquatic	aquatic	fauna	_special				parry	15	zp	5	ab_	20		0	0	0	1	1	1	10	10	10	40	40	0	0	80	0	40
+kazoar			ba	Igara	birds	bird	fauna	slashing		g		parry	15			"ba_,hb_"	15		1	0	0	1	1.2	1	10	0	0	10	80	0	0	0	30	60
+lightbird			bb	Izam	birds	bird	fauna	piercing				dodge	15			bb_	15		0	0	0	1	1	1	0	10	0	10	80	0	0	0	30	60
+yber			bc	Yber	birds	bird	fauna	blunt		g		dodge	15			"bc_,bb_"	15		0	0	0	1	0.8	1	0	0	10	0	80	0	0	0	30	60
+chonari	chorani		ca	Gingo	dogs	carnivore	fauna	slashing	j	g		dodge	15	"b_,h_,zp"		ca_	20		2	2	0	1.35	1.3	2	10	0	0	10	80	40	0	0	0	30
+cococlaw			cb	Clopper	crustace	carnivore	fauna	piercing		g		parry	15	"b_,h_,zp"	5	cb_	20		0	2	0	1.35	1.3	2	10	20	10	20	40	0	0	30	30	0
+hachtaha			cc	Goari	crustace	carnivore	fauna	slashing		g		parry	15	"b_,h_,zp"		"hp_,hb_,hh_"	20		0	2	0	1.35	1.3	2	10	20	10	20	40	0	0	30	30	0
+jungler			cd	Torbak	dogs	carnivore	fauna	piercing		g	g	parry	15	"b_,h_,zp"		"cd_,ca_,ci_"	20		4	2	0	1.35	1.3	2	10	0	0	10	80	40	0	0	0	30
+regus			ce	Ragus	dogs	carnivore	fauna	slashing		g		dodge	15	"b_,h_,zp"		ce_	20		3	2	0	1.35	1.3	2	10	0	0	10	80	40	0	0	0	30
+ryzerb			cf	Najab	great ryzomians	carnivore	fauna	blunt		g		dodge	15	"b_,h_,zp"	5	"cf_,cd_"	20		4	2	0	1.35	1	2	0	0	0	0	40	10	30	30	0	0
+ryzoholok			cg	Vorax	great ryzomians	carnivore	fauna	slashing		g		parry	15	"b_,h_,zp"		cg_	20		3	2	0	1.35	1.4	2	40	20	20	40	80	40	30	0	30	0
+varinx			ch	Varinx	dogs	carnivore	fauna	slashing		g	g	dodge	15	"b_,h_,zp"	5	"ch_,ci_"	20		1	2	0	1.35	1.4	2	10	0	0	10	80	40	0	0	0	30
+zerx			ci	Zerx	ryzomians	carnivore	fauna	blunt				dodge	15	"b_,h_,zp"		"ci_,ch_"	20		2	2	0	1.35	1.2	2	0	0	0	0	80	0	30	30	0	0
+c1	c01	pyrinax	cj	Javing	birds	carnivore	fauna	piercing				parry	15	"b_,h_,zp"		cj_	20		2	2	0	1.35	1	2	0	0	0	0	80	0	0	0	30	60
+c2	c02	cuttle	ck	Cuttler	dogs	carnivore	fauna	piercing				dodge	15	"b_,h_,zp"		"ck_,ci_"	20		3	2	0	1.35	1.2	2	20	20	10	20	80	0	0	30	0	0
+c3	c03	osyx	cl	Ocyx	horses	carnivore	fauna	piercing				dodge	15	"b_,h_,zp"	5	"cl_,ch_"	20		2	2	0	1.35	1	2	20	20	10	20	80	10	0	30	30	0
+c4	c04	nobi	cm	Jugula	ryzomians	carnivore	fauna	slashing		g		dodge	15	"b_,h_,zp"		"cm_,co_"	20		1	2	0	1.35	1	2	0	0	0	0	80	0	30	0	0	30
+diranak			cn	Horncher	crustace	carnivore	fauna	piercing	l			parry	15	"b_,h_,zp"		"cn_,ci_"	20		3	2	0	1.35	1.4	2	40	20	20	40	40	0	0	30	30	0
+c6	c06	peloedith	co	Tyrancha	great ryzomians	carnivore	fauna	blunt				dodge	15	"b_,h_,zp"		"co_,ck_"	20		3	2	0	1.35	1.4	2	20	20	0	20	80	10	30	30	0	0
+c7	c07		cp	Yetin	dogs	carnivore	fauna	slashing				dodge	15	"b_,h_,zp"	5	"cp_,cf_"	20		0	2	0	1.35	1.2	2	10	10	0	10	80	40	0	0	0	30
+cute			da	Cute	degenerated	degen	fauna	blunt		g	g	dodge	15	zp	5	da_	20		1	1	-1	1	1	1	0	0	10	10	80	10	0	0	0	20
+gibbai			db	Gibbai	degenerated	degen	fauna	blunt		g	g	dodge	15	zp	5	db_	20		1	1	-1	1	1	1	10	0	0	10	80	40	0	0	20	0
+frahar			dc	Frahar	degenerated	degen	fauna	blunt		g	g	dodge	15	zp	5	dc_	20		1	1	-1	1	1	1	0	10	0	10	80	20	0	20	0	0
+arma			ha	Arma	pachiderms	herbivore	fauna	blunt				parry	15			"ha_,hb_,hh_"	15		1	0	2	1.2	1.5	0.8	20	20	0	20	80	20	0	30	0	0
+bul			hb	Bodoc	pachiderms	herbivore	fauna	blunt				parry	15		5	"hb_,ha_"	15		0	0	2	1.2	1.5	0.8	20	0	0	20	80	20	30	0	0	0
+capryni			hc	Capryni	runners	herbivore	fauna	piercing				dodge	15			hc_	15		1	0	2	1	1	1	10	0	0	0	80	0	0	0	30	0
+dag			hd	Yubo	dogs	herbivore	fauna	slashing	p			dodge	15			hd_	15		-3	0	0	1	1	1	0	0	0	0	80	10	0	0	0	0
+estrasson			he	Cray	crustace	herbivore	fauna	piercing		g		parry	15			"he_,hb_"	15		1	1	2	1	1	1.2	20	20	40	40	40	0	30	0	0	0
+filin			hf	Messab	runners	herbivore	fauna	blunt		g		dodge	15		5	"hf_,hc_"	15		1	0	2	1	1	1	10	0	0	0	80	0	0	0	0	30
+kakty			hg	Lumper	ryzomians	herbivore	fauna	blunt		g		dodge	15			hg_	15		2	0	2	1.1	1.2	1	0	10	0	10	80	10	0	0	30	0
+mektoub			hh	Mektoub	horses	herbivore	fauna	blunt				dodge	15		5	"hh_,ba_"	15		3	0	2	1.1	1.2	1	0	0	10	10	80	10	0	0	0	0
+mektoub_mount	mektoub_selle	mektoubselle	hi	Mektoub Mount	horses	herbivore	mounts	_inherit				dodge	15			hi_	15		6	0	2	1.1	1.2	1	0	0	10	10	80	10	0	0	0	0
+mektoub_packer	mektoub_pack	mektoubpack	hj	Mektoub Packer	horses	herbivore	packers	_inherit				dodge	15			hj_	15		6	0	2	1.1	1.2	1	0	0	10	10	80	10	0	0	0	0
+ryzoholo			hk	Timari	ryzomians	herbivore	fauna	slashing		g		parry	15			"hk_,ht_,bb_"	15		-1	0	2	1	1	1	0	0	10	10	80	10	0	30	0	0
+vampignon			hl	Yelk	pachiderms	herbivore	fauna	blunt		g	g	parry	15		5	"hl_,hk_"	15		0	0	2	1.5	2	0.8	20	20	20	40	0	40	30	0	0	0
+h1	h01		hm	Raspal	runners	herbivore	fauna	piercing				dodge	15			"hm_,hh_"	15		0	0	2	1	1	1.2	0	0	0	0	80	10	0	0	0	30
+h2	h02		hn	Bawaab	ryzomians	herbivore	fauna	blunt				dodge	15			"hn_,hf_"	15		0	0	2	1	1.2	1	0	10	10	10	80	10	0	0	30	0
+h3	h03	bini	ho	Frippo	dogs	herbivore	fauna	slashing		g		dodge	15			"ho_,hm"	15		1	0	2	1	1	1	0	0	0	0	80	0	0	0	0	0
+h4	h04	rondor	hp	Rendor	runners	herbivore	fauna	blunt				parry	15			"hh_,hp_,ba_"	15		0	0	2	1	1.2	0.8	20	10	10	20	80	10	0	30	0	0
+h5	h05	schnoof	hq	Gnoof	horses	herbivore	fauna	blunt				parry	15			"hq_,ha_"	15		1	0	2	1	1.2	0.8	20	10	10	20	80	10	30	0	0	0
+h6	h06		hr	Bolobi	ryzomians	herbivore	fauna	piercing				dodge	15			"hr_,hq_"	15		0	0	-5	6	6	1	20	10	0	0	80	0	30	0	30	0
+h7	h07		hs	Shalah	great ryzomians	herbivore	fauna	slashing				parry	15			"hs_,hk_"	15		0	0	-5	6	6	1	20	0	10	10	80	40	0	0	30	30
+h8	h08	plodos	ht	Ploderos	pachiderms	herbivore	fauna	blunt				parry	15			"ht_,hk_"	15		0	0	-5	6	6	1	0	20	10	10	80	20	30	30	0	0
+h9	h09	kiwai	hu	Wombai	ryzomians	herbivore	fauna	piercing				dodge	15		5	"hu_,hb_,he_"	15		3	0	2	1	1	1	0	10	20	10	80	20	0	0	0	30
+h10			hv	Madakam	pachiderms	herbivore	fauna	blunt				parry	15			"hv_,hb_"	15		0	0	-5	6	6	1	10	0	20	20	80	20	30	30	0	0
+h11			hw	Arana	great ryzomians	herbivore	fauna	piercing				parry	15			"hw_,ht_,bb_"	15		1	0	2	1	1.5	0.8	20	10	0	40	40	40	30	0	30	0
+h12		wooah	hx	Gubani	horses	herbivore	fauna	blunt				dodge	15		5	"hx_,ha_,ba_"	15		2	0	2	1	1	1.2	10	0	0	10	80	40	0	0	0	0
+dag_xmas			hy	Christmas Yubo	dogs	herbivore	fauna	_inherit				dodge	15			hy_	15		-3	0	0	1	1	1	0	0	0	10	80	10	30	0	0	0
+c5	c05	rahley	ka	Kidinak	crustace	kitin	fauna	slashing	p	g	p	parry	15	"b_,h_,zp"		"ka_,kb_,kc_"	20		3	3	0	1.5	1.5	1.5	80	40	60	40	80	20	20	20	20	20
+kitihank			kb	Kinrey	walking kitins	kitin	fauna	piercing	p	g	p	parry	25	"b_,h_,zp"	5	"ka_,kb_,kc_"	20		7	5	3	6	5	3	40	20	60	40	80	20	20	20	20	20
+kitiharak	kitinarak		kc	Kizarak	walking kitins	kitin	fauna	piercing	f	g	f	parry	15	"b_,h_,zp"	5	"ka_,kb_,kc_"	20		2	5	1	3	2	1.5	40	20	60	40	80	20	20	20	20	20
+kitimandib			kd	Kincher	walking kitins	kitin	fauna	piercing	d	g	d	parry	15	"b_,h_,zp"	5	kd_	20		4	5	2	2	2	2	60	30	60	40	80	20	20	20	20	20
+kitinagan			ke	Kipucka	walking kitins	kitin	fauna	piercing	p	g	p	parry	15	"b_,h_,zp"		ke_	20		3	5	2	1.5	2	2.5	80	40	60	40	80	20	20	20	20	20
+kitinega			kf	Kirosta	walking kitins	kitin	fauna	piercing	d	d	d	parry	15	"b_,h_,zp"	10	k_	20		1	0	2	1.5	1.5	2.5	40	40	60	40	80	20	20	20	20	20
+kitinokto			kg	Kiban	walking kitins	kitin	fauna	piercing	p	g	p	parry			5	kg_	15		2	0	0	1.5	1.5	1.2	40	20	60	40	80	20	20	20	20	20
+pucetron			kh	Kipee	walking kitins	kitin	fauna	piercing	p	p	p	parry			5	kh_	15		0	0	0	1.5	2.5	1.2	40	20	60	40	80	0	20	20	20	20
+kitifly			ki	Kizoar	flying kitins	kitin	fauna	piercing	p	g	p	dodge			5	ki_	15		2	0	0	1.5	1.2	1.7	20	0	60	40	80	0	20	20	30	60
+kitikil			kj	Kipesta	flying kitins	kitin	fauna	piercing	p	g	p	dodge	15	"b_,h_,zp"	5	k_	20		1	1	0	1	1	1	0	20	0	10	80	0	20	20	30	60
+cephaloplant	endrobouchea	endrobouch	pa	Jubla	carnivore plants	plant	flora	_special		g		parry			5	pa_	15	5	2	0	0	1	1	1	40	0	0	60	0	60	40	0	60	0
+electroalgs	electroalg		pb	Stinga	carnivore plants	plant	flora	_special		g	g	parry			5	pb_	15	5	1	0	0	1	1	1	0	0	40	60	0	60	40	0	60	0
+phytopsy			pc	Psykopla	carnivore plants	plant	flora	_special		g		parry			5	pc_	15	5	0	0	0	1	1	1	0	40	0	60	0	60	40	0	0	60
+sap_enslaver	sapenslaver		pd	Slaveni	carnivore plants	plant	flora	_special		g	g	parry			5	pd_	15	5	3	0	0	1	1	1	40	0	0	60	0	60	40	0	60	60
+spitting_weeds	carnitree		pe	Cratcha	carnivore plants	plant	flora	_special		g		parry			5	pe_	15	5	1	0	0	1	1	1	0	0	40	60	0	60	40	0	60	60
+swarmplants	swarmplant		pf	Shooki	carnivore plants	plant	flora	_special		g		parry			5	pf_	15	5	0	0	0	1	1	1	0	40	0	60	0	60	40	0	60	0
+easter_egg			pg	Easter Egg	chest	plant	chests	_none				dodge							0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0
+present			ph	Present	chest	plant	chests	_none				dodge							0	0	0	1	1	1	0	0	0	0	0	0	0	0	0	0
