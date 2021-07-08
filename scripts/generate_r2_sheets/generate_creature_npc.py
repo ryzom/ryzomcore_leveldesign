@@ -104,7 +104,7 @@ def writeNpcCreature(name, type, level, spec, actionlist):
 	avgLevel = int(round((attackLevel + defenseLevel) / 2, 0))
 	xpLevel = int(round((baseLevel + attackLevel + defenseLevel) / 3, 0))
 	playerHpLevel = int(getScore(baseLevel) / 100.0)
-	hp = round(varyFloat(getScore(baseLevel), hpVariance, "life" + name) * types[type]["hpFactor"], 0)
+	hp = round(varyFloat(getScore(defenseLevel), hpVariance, "life" + name) * types[type]["hpFactor"], 0)
 	regen = varyFloat(hp / regenTimeAi, hpVariance, "LifeRegen" + name)
 	totalTime = round(varyFloat(attackTime, attackTimeVariance, "AttackSpeed" + name), 1)
 	boost = boosts["melee"]
@@ -113,7 +113,7 @@ def writeNpcCreature(name, type, level, spec, actionlist):
 	attackFactor = 1.0
 	if "attackFactor" in types[type]:
 		attackFactor = types[type]["attackFactor"]
-	totalDamage = (getScore(baseLevel) * totalTime * boost * attackFactor) / combatTime
+	totalDamage = (getScore(attackLevel) * totalTime * boost * attackFactor) / combatTime
 	totalDamage = varyFloat(totalDamage, attackVariance, "NbHitToKillPlayer" + name)
 	hitsToKill = (playerHpLevel * 100.0) / totalDamage
 	with open(folder + "\\" + name + ".creature", "w") as f:

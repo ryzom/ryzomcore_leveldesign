@@ -77,7 +77,7 @@ defenseOffset = {
 }
 
 levelOffset = {
-	"d": 0, "j": 0, "f": 0, "l": 0, "p": 2, "g": 2, "i": 0, "r": 0,
+	"d": 0, "j": 0, "f": 0, "l": 0, "p": 2, "g": 2, "i": 4, "r": 6,
 }
 
 xpGain = {
