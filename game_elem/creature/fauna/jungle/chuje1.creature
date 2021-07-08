@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_h9_jun.creature"/>
+  <PARENT Filename="_chuje1_mp.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="NbPlayers" Value="1"/>
+      <ATOM Name="PlayerHpLevel" Value="103"/>
+      <ATOM Name="NbHitToKillPlayer" Value="2.73655509559"/>
+      <STRUCT Name="Characteristics">
+        <ATOM Name="DynamicEnergyValue" Value="0.00125"/>
+      </STRUCT>
+      <STRUCT Name="MovementSpeeds">
+        <ATOM Name="GroupDispersion" Value="0.86"/>
+      </STRUCT>
+      <ATOM Name="life" Value="10586"/>
+      <ATOM Name="AttackSpeed" Value="3.0"/>
+      <ATOM Name="LifeRegen" Value="57.286139"/>
+      <ATOM Name="AttackLevel" Value="165"/>
+      <ATOM Name="DefenseLevel" Value="166"/>
+      <ATOM Name="XPLevel" Value="164"/>
+      <ATOM Name="TauntLevel" Value="164"/>
+      <ATOM Name="MeleeReachValue" Value="1"/>
+      <ATOM Name="RegionForce" Value="5"/>
+      <ATOM Name="ForceLevel" Value="1"/>
+      <ATOM Name="LocalCode" Value="1"/>
+      <ATOM Name="DodgeAsDefense" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="Scale" Value="0.6"/>
+    </STRUCT>
+    <STRUCT Name="Properties">
+      <ATOM Name="LootHarvestState" Value="Harvestable"/>
+      <ATOM Name="XPGainCoef" Value="0.94"/>
+    </STRUCT>
+    <STRUCT Name="Combat">
+      <ATOM Name="AggroRadiusNotHungry" Value="12"/>
+      <ATOM Name="AggroRadiusHungry" Value="16"/>
+      <ATOM Name="AggroRadiusHunting" Value="19"/>
+      <ATOM Name="DistModulator" Value="0.2"/>
+      <ATOM Name="TargetModulator" Value="0.23"/>
+      <ATOM Name="LifeLevelModulator" Value="0.01"/>
+      <ATOM Name="CourageModulator" Value="0.86"/>
+      <ATOM Name="GroupCohesionModulator" Value="0.01"/>
+      <ATOM Name="AssistDist" Value="5"/>
+    </STRUCT>
+    <STRUCT Name="Protections">
+      <ATOM Name="PiercingFactor" Value="21"/>
+      <ATOM Name="SlashingFactor" Value="0"/>
+      <ATOM Name="BluntFactor" Value="10"/>
+      <ATOM Name="RotFactor" Value="82"/>
+      <ATOM Name="AcidFactor" Value="10"/>
+      <ATOM Name="ColdFactor" Value="20"/>
+      <ATOM Name="FireFactor" Value="0"/>
+      <ATOM Name="PoisonFactor" Value="0"/>
+      <ATOM Name="ElectricityFactor" Value="0"/>
+      <ATOM Name="ShockFactor" Value="30"/>
+    </STRUCT>
+    <STRUCT Name="Resists">
+      <ATOM Name="Fear" Value="165"/>
+      <ATOM Name="Sleep" Value="164"/>
+      <ATOM Name="Stun" Value="164"/>
+      <ATOM Name="Root" Value="167"/>
+      <ATOM Name="Blind" Value="167"/>
+      <ATOM Name="Snare" Value="163"/>
+      <ATOM Name="Slow" Value="163"/>
+      <ATOM Name="Acid" Value="165"/>
+      <ATOM Name="Cold" Value="167"/>
+      <ATOM Name="Electricity" Value="165"/>
+      <ATOM Name="Fire" Value="164"/>
+      <ATOM Name="Poison" Value="163"/>
+      <ATOM Name="Rot" Value="163"/>
+    </STRUCT>
+    <STRUCT Name="Damage Shield">
+      <ATOM Name="Damage" Value="0"/>
+      <ATOM Name="Drained HP" Value="0"/>
+    </STRUCT>
+    <ATOM Name="category" Value="H"/>
+    <ATOM Name="race_code" Value="U"/>
+    <ATOM Name="group_assist" Value="hb,he,hu"/>
+    <ATOM Name="creature_level" Value="165"/>
+    <ATOM Name="group_id" Value="HU"/>
+  </STRUCT>
+</FORM>
