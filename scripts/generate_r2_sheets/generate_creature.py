@@ -69,6 +69,34 @@ ecosystem = {
 	"e": "Event",
 }
 
+# Override specified group assist (use gooAggro range if this exists)
+groupAggro = {
+	"g": {
+		# Goo attacks all non-goo
+		"a": [ "a_,zp" ],
+		"b": [ "b_,c_,h_,p_,zp" ],
+		"c": [ "b_,c_,h_,p_,zp" ],
+		"h": [ "b_,c_,h_,p_,zp" ],
+		"k": [ "k_,b_,c_,h_,p_,zp" ],
+		"p": [ "b_,c_,h_,zp" ],
+	},
+	"i": { "a": [ "zp" ], "b": [ "zp" ], "c": [ "b_,h_,zp" ], "h": [ "zp" ], "k": [ "b_,h_,zp" ], "p": [ "zp" ] },
+	"r": { "a": [ "zp" ], "b": [ "zp" ], "c": [ "b_,h_,zp" ], "h": [ "zp" ], "k": [ "b_,h_,zp" ], "p": [ "zp" ] },
+	"e": { "a": [ "zp" ], "b": [ "zp" ], "c": [ "b_,h_,zp" ], "h": [ "zp" ], "k": [ "b_,h_,zp" ], "p": [ "zp" ] },
+}
+
+# Override specified group assist (use gooAssist range if this exists)
+groupAssist = {
+	"g": {
+		# Goo plants defend plants and themselves
+		"a": [ "@" ], "b": [ "@" ], "c": [ "@" ], "h": [ "@" ], "k": [ "@" ],
+		"p": [ "@,p_,p_g" ]
+	},
+}
+
+# Don't aggro ecosystem when specified by _ wildcard
+dontAggroAssistEs = [ "g" ]
+
 with open("creature_missing.txt", "r") as f:
 	for l in f:
 		c = l.split(".")[0]
@@ -84,6 +112,50 @@ with open("creature_missing.txt", "r") as f:
 			g = g[es]
 			if lvl not in g:
 				g += [ lvl ]
+
+groups = []
+for sheet in creatureFauna:
+	entry = creatureFauna[sheet]
+	id = entry["id"]
+	if not id in groups:
+		groups += [ id ]
+	if id in generate:
+		gen = generate[id]
+		for eco in gen:
+			if eco in groupAggro and not id + eco in groups:
+				groups += [ id + eco ]
+groups.sort()
+print(groups)
+def extendGroup(group, me):
+	groupv = group.lower().strip().split(",")
+	res = []
+	for g in groupv:
+		print(g)
+		if g == "@" and not me in res:
+			res += [ me ]
+		elif len(g) == 2:
+			if g[1] == "_":
+				for rg in groups:
+					if rg[0] == g[0] and (len(rg) == 2 or not rg[2] in dontAggroAssistEs) and not rg in res:
+						res += [ rg ]
+			elif not g in res:
+				res += [ g ]
+		elif len(g) == 3:
+			if g[1] == "_":
+				for rg in groups:
+					if len(rg) == 3 and rg[0] == g[0] and rg[2] == g[2] and not rg in res:
+						res += [ rg ]
+			elif g[2] == "_":
+				for rg in groups:
+					if g[0] == rg[0] and g[1] == rg[1] and (len(rg) == 2 or rg[2] not in dontAggroAssistEs) and not rg in res:
+						res += [ rg ]
+			elif not g in res:
+				res += [ g ]
+	res.sort()
+	return ",".join(res)
+print(extendGroup("b_,h_,zp", "ca"))
+print(extendGroup("@,p_,p_g", "pa"))
+print(extendGroup("ka_,kb_,kc_", "ka"))
 
 generatedParents = {}
 def generateParent(sheet, eco):
@@ -136,4 +208,4 @@ for sheet in creatureFauna:
 				es = entry[eco]
 			for lvl in gen[eco]:
 				name = "c" + id + eco + lvl
-				print(entry["name"] + " " + suffix[es] + " " + eco + " " + lvl + " " + name + " " + parent)
+				# print(entry["name"] + " " + suffix[es] + " " + eco + " " + lvl + " " + name + " " + parent)
