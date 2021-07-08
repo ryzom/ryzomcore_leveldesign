@@ -48,6 +48,9 @@
     <ARRAY Name="melee_cfg">
       <ATOM Value="h12_attack.actionlist"/>
     </ARRAY>
+    <ARRAY Name="special_comp">
+      <ATOM Value="SELECT(ON_UPDATE,EVERY_SEC(60,SEND_ACTION(mass_dispel_effect.aiaction)))"/>
+    </ARRAY>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>

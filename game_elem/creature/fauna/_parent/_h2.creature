@@ -48,6 +48,9 @@
     <ARRAY Name="melee_cfg">
       <ATOM Value="h2_attack.actionlist"/>
     </ARRAY>
+    <ARRAY Name="special_comp">
+      <ATOM Value="SELECT(ON_UPDATE,RANDOM(0.1,SEND_SELF_ACTION(redirect_attacks_effect.aiaction)))"/>
+    </ARRAY>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>

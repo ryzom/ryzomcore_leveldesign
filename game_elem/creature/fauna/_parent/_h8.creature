@@ -36,6 +36,9 @@
     <ARRAY Name="melee_cfg">
       <ATOM Value="h8_attack.actionlist"/>
     </ARRAY>
+    <ARRAY Name="special_comp">
+      <ATOM Value="SELECT(ON_UPDATE,RANDOM(0.2,AGGRO_CHANGE()))"/>
+    </ARRAY>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>

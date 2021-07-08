@@ -49,6 +49,9 @@
     <ARRAY Name="melee_cfg">
       <ATOM Value="c7_attack.actionlist"/>
     </ARRAY>
+    <ARRAY Name="special_comp">
+      <ATOM Value="SELECT(ON_UPDATE,EVERY_SEC(60,MULT(SET_RANDOM_TARGET(),AGGRO_BLOCK(15))))"/>
+    </ARRAY>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>

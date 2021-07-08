@@ -48,6 +48,9 @@
     <ARRAY Name="melee_cfg">
       <ATOM Value="h1_attack.actionlist"/>
     </ARRAY>
+    <ARRAY Name="special_comp">
+      <ATOM Value="SELECT(ON_UPDATE,HP%LESS(0.15,ONCE(SEND_SELF_ACTION(hp_heal_spell_c.aiaction))))"/>
+    </ARRAY>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>

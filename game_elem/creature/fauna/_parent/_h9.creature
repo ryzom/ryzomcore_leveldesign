@@ -48,6 +48,9 @@
     <ARRAY Name="melee_cfg">
       <ATOM Value="h9_attack.actionlist"/>
     </ARRAY>
+    <ARRAY Name="special_comp">
+      <ATOM Value="SELECT(ON_UPDATE,EVERY_SEC(30,SEND_ACTION(h9_attack.aiaction)))"/>
+    </ARRAY>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>

@@ -49,6 +49,9 @@
     <ARRAY Name="melee_cfg">
       <ATOM Value="c2_attack.actionlist"/>
     </ARRAY>
+    <ARRAY Name="special_comp">
+      <ATOM Value="SELECT(ON_UPDATE,HP%LESS(0.20,ONCE(DAMAGE_SPEED_COEF(2))))"/>
+    </ARRAY>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>

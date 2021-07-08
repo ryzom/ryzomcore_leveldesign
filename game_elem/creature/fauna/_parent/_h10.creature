@@ -37,6 +37,9 @@
     <ARRAY Name="melee_cfg">
       <ATOM Value="h10_attack.actionlist"/>
     </ARRAY>
+    <ARRAY Name="special_comp">
+      <ATOM Value="SELECT(ON_UPDATE,RANDOM(0.10,SEND_SELF_ACTION(reflect_damage_effect.aiaction)))"/>
+    </ARRAY>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>

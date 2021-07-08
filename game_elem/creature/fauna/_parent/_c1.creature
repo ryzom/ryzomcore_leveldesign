@@ -33,6 +33,9 @@
     <ARRAY Name="melee_cfg">
       <ATOM Value="c1_attack.actionlist"/>
     </ARRAY>
+    <ARRAY Name="special_comp">
+      <ATOM Value="SELECT(ON_UPDATE,RANDOM(0.1,SEND_ACTION(c1_attack.aiaction)))"/>
+    </ARRAY>
   </STRUCT>
   <STRUCT/>
   <STRUCT/>
