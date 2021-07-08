@@ -40,7 +40,7 @@ boosts = {
 }
 
 newbieLevels = {
-#	"a1": 1,
+	"a1": 1, "a2": 5, "a3": 10, "a4": 15,
 }
 
 levels = {
@@ -85,14 +85,15 @@ xpGain = {
 }
 
 hpFactor = {
-	"d": 1.0, "j": 1.0, "f": 1.0, "l": 1.0, "p": 1.0, "g": 0.5, "i": 0.25, "i": 0.5
+	"d": 1.0, "j": 1.0, "f": 1.0, "l": 1.0, "p": 1.0, "g": 0.5, "i": 0.25, "r": 0.5
 }
 
 attackFactor = {
-	"d": 1.0, "j": 1.0, "f": 1.0, "l": 1.0, "p": 1.0, "g": 2.0, "i": 0.25, "i": 1.0
+	"d": 1.0, "j": 1.0, "f": 1.0, "l": 1.0, "p": 1.0, "g": 2.0, "i": 0.25, "r": 1.0
 }
 
 levelVariance = [ -3, 3 ] # excluding upper bound, also applies to attack and defense
+newbieLevelVariance = [ -2, 2 ] # excluding upper bound, also applies to attack and defense
 
 #oldLevels = {
 #	"b": { "a": 10, "b": 30, "c": 50 },
