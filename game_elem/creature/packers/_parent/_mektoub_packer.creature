@@ -18,8 +18,8 @@
         </STRUCT>
       </STRUCT>
       <STRUCT Name="MovementSpeeds">
-        <ATOM Name="WalkSpeed" Value="&quot;3d data.Scale&quot;*1.4"/>
-        <ATOM Name="RunSpeed" Value="&quot;3d data.Scale&quot;*3.111915"/>
+        <ATOM Name="WalkSpeed" Value="&quot;3d data.Scale&quot;*3.111915"/>
+        <ATOM Name="RunSpeed" Value="&quot;3d data.Scale&quot;*10.153125"/>
       </STRUCT>
       <ATOM Name="type" Value="pet"/>
     </STRUCT>
@@ -44,6 +44,7 @@
       </STRUCT>
       <ATOM Name="NamePosZLow" Value="2.7"/>
       <ATOM Name="NamePosZNormal" Value="2.7"/>
+      <ATOM Name="ForceDisplayCreatureName" Value="true"/>
     </STRUCT>
   </STRUCT>
   <STRUCT/>

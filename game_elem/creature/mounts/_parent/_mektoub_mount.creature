@@ -16,6 +16,10 @@
           <ATOM Name="Item" Value="mektoub_mount_medium_slashing_chest.item"/>
         </STRUCT>
       </STRUCT>
+      <STRUCT Name="MovementSpeeds">
+        <ATOM Name="WalkSpeed" Value="&quot;3d data.Scale&quot;*3.111915"/>
+        <ATOM Name="RunSpeed" Value="&quot;3d data.Scale&quot;*10.153125"/>
+      </STRUCT>
       <ATOM Name="type" Value="pet"/>
     </STRUCT>
     <STRUCT Name="3d data">
@@ -35,6 +39,7 @@
         <ATOM Name="Shadow Bone 5" Value="Bip01 Spine"/>
         <ATOM Name="Shadow Size 5" Value="3.0"/>
       </STRUCT>
+      <ATOM Name="ForceDisplayCreatureName" Value="true"/>
     </STRUCT>
     <STRUCT Name="Collision">
       <ATOM Name="CollisionRadius" Value="1.13"/>
