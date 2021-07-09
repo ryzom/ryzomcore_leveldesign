@@ -3,11 +3,11 @@
   <STRUCT>
     <STRUCT Name="Basics">
       <ATOM Name="FamilyId" Value="BCBMEA"/>
-      <ATOM Name="IndexInFamily" Value="41"/>
+      <ATOM Name="IndexInFamily" Value="46"/>
       <ATOM Name="SPCost" Value="5"/>
       <ATOM Name="LearnRequiresOneOfSkills" Value="SC 0"/>
       <ATOM Name="Action Nature" Value="CRAFT"/>
-      <ATOM Name="Skill" Value="SCM1SEM"/>
+      <ATOM Name="Skill" Value="SCM1PEM"/>
       <ATOM Name="CivRestriction" Value="common"/>
     </STRUCT>
     <STRUCT Name="Client">
@@ -18,14 +18,14 @@
     <STRUCT Name="faber">
       <ATOM Name="Tool type" Value="MeleeWeaponTool"/>
       <STRUCT Name="Create">
-        <ATOM Name="Crafted Item" Value="ichbm1ss.sitem"/>
+        <ATOM Name="Crafted Item" Value="ichbm1ps_3.sitem"/>
         <ATOM Name="Nb built items" Value="1"/>
         <ATOM Name="MP 1" Value="Raw Material for Point"/>
-        <ATOM Name="Quantity 1" Value="6"/>
+        <ATOM Name="Quantity 1" Value="10"/>
         <ATOM Name="MP 2" Value="Raw Material for Shaft"/>
-        <ATOM Name="Quantity 2" Value="10"/>
+        <ATOM Name="Quantity 2" Value="7"/>
         <ATOM Name="MP 3" Value="Raw Material for Grip"/>
-        <ATOM Name="Quantity 3" Value="6"/>
+        <ATOM Name="Quantity 3" Value="12"/>
         <ATOM Name="MP 4"/>
         <ATOM Name="Quantity 4" Value="0"/>
         <ATOM Name="MP 5"/>

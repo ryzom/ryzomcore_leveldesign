@@ -835,13 +835,16 @@ def generateSitems():
 		if "magic" in tags:
 			minMat += 3
 			randMat += 6
-		if "mq" in tags:
+		if "mq" in tags and not "tribe" in tags:
 			minMat += 1
 			randMat += 2
-		if "hq" in tags:
+		if "hq" in tags and not "tribe" in tags:
 			minMat += 2
 			randMat += 4
 		if "advantage" in tags:
+			minMat += 3
+			randMat += 6
+		if "tribe" in tags or "boss" in tags:
 			minMat += 3
 			randMat += 6
 		minMat *= 3
