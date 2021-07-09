@@ -563,7 +563,7 @@ def generateSitems():
 		
 		origin = "common" # item_origine.typ
 		iconBackground = ""
-		if "refugee" in tags:
+		if "starter" in tags:
 			origin = "refugee"
 			iconBackground = "bk_generic.png"
 		elif "tribe" in tags:
@@ -670,7 +670,7 @@ def generateSitems():
 			###print shapeMale
 			folder = "armor\\" + subfolder
 			if "refugee" in tags:
-				pass
+				folder += "\\refugee_armor"
 			elif "caster" in tags:
 				folder += "\\caster_armor"
 			elif "light" in tags:
