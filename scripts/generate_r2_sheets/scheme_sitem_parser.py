@@ -65,6 +65,7 @@ scheme = {
 		{
 			"_2": "mq",
 			"_3": "hq",
+			"_b": "b",
 			"e": "electric advantage",
 			"b": "burning advantage",
 			"w": "waving advantage",
@@ -73,6 +74,7 @@ scheme = {
 		{
 			"_2": "mq",
 			"_3": "hq",
+			"_b": "b",
 			"e": "electric advantage",
 			"b": "burning advantage",
 			"w": "waving advantage",
@@ -81,6 +83,7 @@ scheme = {
 		{
 			"_2": "mq",
 			"_3": "hq",
+			"_b": "b",
 			"e": "electric advantage",
 			"b": "burning advantage",
 			"w": "waving advantage",

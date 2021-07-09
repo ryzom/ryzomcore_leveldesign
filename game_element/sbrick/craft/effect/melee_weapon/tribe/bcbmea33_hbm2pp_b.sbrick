@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="FamilyId" Value="BCBMEA"/>
+      <ATOM Name="IndexInFamily" Value="33"/>
+      <ATOM Name="SPCost" Value="5"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SC 0"/>
+      <ATOM Name="Action Nature" Value="CRAFT"/>
+      <ATOM Name="Skill" Value="SCM2PEM"/>
+      <ATOM Name="CivRestriction" Value="common"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="IconBack" Value="bk_generic_brick.png"/>
+      <ATOM Name="IconOver" Value="fp_over.png"/>
+      <ATOM Name="IconOver2"/>
+    </STRUCT>
+    <STRUCT Name="faber">
+      <ATOM Name="Tool type" Value="MeleeWeaponTool"/>
+      <STRUCT Name="Create">
+        <ATOM Name="Crafted Item" Value="ichbm2pp_b.sitem"/>
+        <ATOM Name="Nb built items" Value="1"/>
+        <ATOM Name="MP 1" Value="Raw Material for Point"/>
+        <ATOM Name="Quantity 1" Value="8"/>
+        <ATOM Name="MP 2" Value="Raw Material for Shaft"/>
+        <ATOM Name="Quantity 2" Value="11"/>
+        <ATOM Name="MP 3" Value="Raw Material for Grip"/>
+        <ATOM Name="Quantity 3" Value="10"/>
+        <ATOM Name="MP 4"/>
+        <ATOM Name="Quantity 4" Value="0"/>
+        <ATOM Name="MP 5"/>
+        <ATOM Name="Quantity 5" Value="0"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+</FORM>
