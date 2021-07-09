@@ -17,7 +17,7 @@ scheme = {
 		{
 			"acc_": "accessory",
 			"wea_": "weapon",
-			"wea_trib_": "weapon tribe",
+			"wea_trib_": "weapon regular tribe",
 			"wea_high_": "weapon high tribe",
 			"hom_": "male",
 			"hof_": "female",

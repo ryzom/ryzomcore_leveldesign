@@ -463,14 +463,14 @@ bcfmea09	Fyros Staff Craft Pattern		a	the				Brick Craftman's plan for fyros sta
 bcfmea16_fm1pd	Fyros Dagger Craft Pattern		a	the				Brick Craftman's plan for fyros dagger		
 bcfmea19_fm1ps	Fyros Lance Craft Pattern		a	the				Brick Craftman's plan for fyros lance		
 bcfmea13_fm1sa	Fyros Axe Craft Pattern		a	the				Brick Craftman's plan for fyros axe		
-bcfmea11	Burning Axe Craft Pattern		a	the				Brick Craftman's plan for burning axe		
+bcfmea31_fm1sab	Burning Axe Craft Pattern		a	the				Brick Craftman's plan for burning axe		
 bcfmea28_fm1ss	Fyros Sword Craft Pattern		a	the				Brick Craftman's plan for fyros sword		
 bcfmea07_fm2bm	Fyros Long Mace Craft Pattern		a	the				Brick Craftman's plan for fyros long mace		
 bcfmea04_fm2pp	Fyros Pike Craft Pattern		a	the				Brick Craftman's plan for fyros pike		
 bcfmea01_fm2sa	Fyros Long Axe Craft Pattern		a	the				Brick Craftman's plan for fyros long axe		
-bcfmea13	Burning Long Axe Craft Pattern		a	the				Brick Craftman's plan for burning long axe		
+bcfmea33_fm2sab	Burning Long Axe Craft Pattern		a	the				Brick Craftman's plan for burning long axe		
 bcfmea10_fm2ss	Fyros Long Sword Craft Pattern		a	the				Brick Craftman's plan for fyros long sword		
-bcfmea12	Burning Long Sword Craft Pattern		a	the				Brick Craftman's plan for burning long sword		
+bcfmea32_fm2ssb	Burning Long Sword Craft Pattern		a	the				Brick Craftman's plan for burning long sword		
 bcmmea22_mm1bm	Matis Mace Craft Pattern		a	the				Brick Craftman's plan for matis mace		
 bcmmea09	Matis Staff Craft Pattern		a	the				Brick Craftman's plan for matis staff		
 bcmmea16_mm1pd	Matis Dagger Craft Pattern		a	the				Brick Craftman's plan for matis dagger		
@@ -546,7 +546,7 @@ bczrea08	Electric Launcher Craft Pattern		a	the				Brick Craftman's plan for ele
 bczrea06	Zoraï Rifle Craft Pattern		a	the				Brick Craftman's plan for zorai rifle		
 bcfsea01_fsb	Fyros Buckler Craft Pattern		a	the				Brick Craftman's plan for fyros buckler		
 bcfsea04_fss	Fyros Shield Craft Pattern		a	the				Brick Craftman's plan for fyros shield		
-bcfsea03	Burning Buckler Craft Pattern		a	the				Brick Craftman's plan for burning buckler		
+bcfsea07_fsbb	Burning Buckler Craft Pattern		a	the				Brick Craftman's plan for burning buckler		
 bcmsea01_msb	Matis Buckler Craft Pattern		a	the				Brick Craftman's plan for matis buckler		
 bcmsea04_mss	Matis Shield Craft Pattern		a	the				Brick Craftman's plan for matis shield		
 bcmsea03	Living Buckler Craft Pattern		a	the				Brick Craftman's plan for living buckler		
@@ -2426,13 +2426,13 @@ BMSTMT00250	Self Stamina Gift 15		a	the			the	Permet de récupérer $1MA_HEAL po
 BCPA25	melee weapons		a	the			the	Brick Craft Root Melee Weapons		
 BCPA26	range weapons		a	the			the	Brick Craft Root Range Weapons		
 BCPA27	ammo		a	the			the	Brick Craft Root Ammo		
-bccmea01	Long Axe Craft Pattern		a	the				Brick Craftman's plan for long axe		
-bccmea02	Pike Craft Pattern		a	the				Brick Craftman's plan for pike		
-bccmea03	Long Mace Craft Pattern		a	the				Brick Craftman's plan for long mace		
+bccmea01_cm2sa	Long Axe Craft Pattern		a	the				Brick Craftman's plan for long axe		
+bccmea02_cm2pp	Pike Craft Pattern		a	the				Brick Craftman's plan for pike		
+bccmea03_cm2bm	Long Mace Craft Pattern		a	the				Brick Craftman's plan for long mace		
 bccmea04_cm2ss	Long Sword Craft Pattern		a	the				Brick Craftman's plan for long sword		
 bccmea05_cm1sa	Axe Craft Pattern		a	the				Brick Craftman's plan for axe		
 bccmea06_cm1pd	Dagger Craft Pattern		a	the				Brick Craftman's plan for dagger		
-bccmea07	Lance Craft Pattern		a	the				Brick Craftman's plan for lance		
+bccmea07_cm1ps	Lance Craft Pattern		a	the				Brick Craftman's plan for lance		
 bccmea08_cm1bm	Mace Craft Pattern		a	the				Brick Craftman's plan for mace		
 bccmea09	Staff Craft Pattern		a	the				Brick Craftman's plan for staff		
 bccmea10_cm1ss	Sword Craft Pattern		a	the				Brick Craftman's plan for sword		
@@ -3732,34 +3732,34 @@ bsfml03	Lightning Wall Power 3		a	the				Crée pendant $1SP_LIGHTNING_WALL_AURA 
 bsfml04	Lightning Wall Power 4		a	the				Crée pendant $1SP_LIGHTNING_WALL_AURA secondes une barrière électrique autour de vous qui diminue provisoirement de $|4SP_LIGHTNING_WALL_AURA niveaux les compétences d'attaque de tous les ennemis qui vous atteignent au corps à corps.		
 bsfml05	Lightning Wall Power 5		a	the				Crée pendant $1SP_LIGHTNING_WALL_AURA secondes une barrière électrique autour de vous qui diminue provisoirement de $|4SP_LIGHTNING_WALL_AURA niveaux les compétences d'attaque de tous les ennemis qui vous atteignent au corps à corps.		
 bccrea02	Generic Bowrifle Craft Pattern		a	the				Brick Craftman's plan for Generic Bowrifle		
-bcbmea01	Plan de Création/Hache à 2M des Percécorces		un	le				Plan de Création/Hache à 2M des Percécorces		
-bcbmea01_2	Plan de Création/Hache à 2M des Pillards du Désert		un	le				Plan de Création/Hache à 2M des Pillards du Désert		
-bcbmea01_3	Plan de Création/Hache à 2M des Veilleurs		un	le				Plan de Création/Hache à 2M des Veilleurs		
-bcbmea02	Plan de Création/Pique des Gardes-frontières		un	le				Plan de Création/Pique des Gardes-frontières		
-bcbmea02_2	Plan de Création/Pique des Kitiniers		un	le				Plan de Création/Pique des Kitiniers		
-bcbmea02_3	Plan de Création/Pique des Dryades		un	le				Plan de Création/Pique des Dryades		
-bcbmea03	Plan de Création/Massue à 2M des Tuteurs		un	le				Plan de Création/Massue à 2M des Tuteurs		
-bcbmea03_2	Plan de Création/Massue à 2M des Recycleurs		un	le				Plan de Création/Massue à 2M des Recycleurs		
-bcbmea04	Plan de Création/Epée à 2M des Sculpteurs de Vase		un	le				Plan de Création/Epée à 2M des Sculpteurs de Vase		
-bcbmea04_2	Plan de Création/Epée à 2M des Embourbés		un	le				Plan de Création/Epée à 2M des Embourbés		
-bcbmea05	Plan de Création/Hache des Taxeurs		un	le				Plan de Création/Hache des Taxeurs		
-bcbmea05_2	Plan de Création/Hache des Renegades		un	le				Plan de Création/Hache des Renegades		
-bcbmea05_3	Plan de Création/Hache des Fraiders		un	le				Plan de Création/Hache des Fraiders		
-bcbmea06	Plan de Création/Dague des Corsaires		un	le				Plan de Création/Dague des Corsaires		
-bcbmea06_2	Plan de Création/Dague des Illuminés		un	le				Plan de Création/Dague des Illuminés		
-bcbmea06_3	Plan de Création/Dague des Cuzans		un	le				Plan de Création/Dague des Cuzans		
-bcbmea07	Plan de Création/Lance des Amazones		un	le				Plan de Création/Lance des Amazones		
-bcbmea07_2	Plan de Création/Lance des Matisec		un	le				Plan de Création/Lance des Matisec		
-bcbmea07_3	Plan de Création/Lance des Esclaves de la sève		un	le				Plan de Création/Lance des Esclaves de la sève		
-bcbmea08	Plan de Création/Massue des Zokamis		un	le				Plan de Création/Massue des Zokamis		
-bcbmea08_2	Plan de Création/Massue du Cercle noir		un	le				Plan de Création/Massue du Cercle noir		
-bcbmea08_3	Plan de Création/Massue des Gibads		un	le				Plan de Création/Massue des Gibads		
+bcbmea01_bm2sa	Plan de Création/Hache à 2M des Percécorces		un	le				Plan de Création/Hache à 2M des Percécorces		
+bcbmea02_bm2sa_2	Plan de Création/Hache à 2M des Pillards du Désert		un	le				Plan de Création/Hache à 2M des Pillards du Désert		
+bcbmea03_bm2sa_3	Plan de Création/Hache à 2M des Veilleurs		un	le				Plan de Création/Hache à 2M des Veilleurs		
+bcbmea04_bm2pp	Plan de Création/Pique des Gardes-frontières		un	le				Plan de Création/Pique des Gardes-frontières		
+bcbmea05_bm2pp_2	Plan de Création/Pique des Kitiniers		un	le				Plan de Création/Pique des Kitiniers		
+bcbmea06_bm2pp_3	Plan de Création/Pique des Dryades		un	le				Plan de Création/Pique des Dryades		
+bcbmea07_bm2bm	Plan de Création/Massue à 2M des Tuteurs		un	le				Plan de Création/Massue à 2M des Tuteurs		
+bcbmea08_bm2bm_2	Plan de Création/Massue à 2M des Recycleurs		un	le				Plan de Création/Massue à 2M des Recycleurs		
+bcbmea10_bm2ss	Plan de Création/Epée à 2M des Sculpteurs de Vase		un	le				Plan de Création/Epée à 2M des Sculpteurs de Vase		
+bcbmea11_bm2ss_2	Plan de Création/Epée à 2M des Embourbés		un	le				Plan de Création/Epée à 2M des Embourbés		
+bcbmea13_bm1sa	Plan de Création/Hache des Taxeurs		un	le				Plan de Création/Hache des Taxeurs		
+bcbmea14_bm1sa_2	Plan de Création/Hache des Renegades		un	le				Plan de Création/Hache des Renegades		
+bcbmea15_bm1sa_3	Plan de Création/Hache des Fraiders		un	le				Plan de Création/Hache des Fraiders		
+bcbmea16_bm1pd	Plan de Création/Dague des Corsaires		un	le				Plan de Création/Dague des Corsaires		
+bcbmea17_bm1pd_2	Plan de Création/Dague des Illuminés		un	le				Plan de Création/Dague des Illuminés		
+bcbmea18_bm1pd_3	Plan de Création/Dague des Cuzans		un	le				Plan de Création/Dague des Cuzans		
+bcbmea19_bm1ps	Plan de Création/Lance des Amazones		un	le				Plan de Création/Lance des Amazones		
+bcbmea20_bm1ps_2	Plan de Création/Lance des Matisec		un	le				Plan de Création/Lance des Matisec		
+bcbmea21_bm1ps_3	Plan de Création/Lance des Esclaves de la sève		un	le				Plan de Création/Lance des Esclaves de la sève		
+bcbmea22_bm1bm	Plan de Création/Massue des Zokamis		un	le				Plan de Création/Massue des Zokamis		
+bcbmea23_bm1bm_2	Plan de Création/Massue du Cercle noir		un	le				Plan de Création/Massue du Cercle noir		
+bcbmea24_bm1bm_3	Plan de Création/Massue des Gibads		un	le				Plan de Création/Massue des Gibads		
 bcbmea09	Plan de Création/Bâton de l'Arbre éternel		un	le				Plan de Création/Bâton de l'Arbre éternel		
 bcbmea09_2	Plan de Création/Bâton des Sèves sèches		un	le				Plan de Création/Bâton des Sèves sèches		
 bcbmea09_3	Plan de Création/Bâton des Maîtres de la goo		un	le				Plan de Création/Bâton des Maîtres de la goo		
-bcbmea10	Plan de Création/Epée des Contrebandiers		un	le				Plan de Création/Epée des Contrebandiers		
-bcbmea10_2	Plan de Création/Epée des Mercenaires écarlates		un	le				Plan de Création/Epée des Mercenaires écarlates		
-bcbmea10_3	Plan de Création/Epée des Frères de la lagune		un	le				Plan de Création/Epée des Frères de la lagune		
+bcbmea42_bm1ss	Plan de Création/Epée des Contrebandiers		un	le				Plan de Création/Epée des Contrebandiers		
+bcbmea28_bm1ss_2	Plan de Création/Epée des Mercenaires écarlates		un	le				Plan de Création/Epée des Mercenaires écarlates		
+bcbmea29_bm1ss_3	Plan de Création/Epée des Frères de la lagune		un	le				Plan de Création/Epée des Frères de la lagune		
 bcbrea01	Plan de Création/Mitrailleuse des Façonneurs nocturnes		un	le				Plan de Création/Mitrailleuse des Façonneurs nocturnes		
 bcbrea01_2	Plan de Création/Mitrailleuse des Sauvages		un	le				Plan de Création/Mitrailleuse des Sauvages		
 bcbrea01_3	Plan de Création/Mitrailleuse des Sanguins		un	le				Plan de Création/Mitrailleuse des Sanguins		
@@ -4178,8 +4178,8 @@ bccaeb28_camv	<GEN>bccaeb28_camv
 bccmea15	<GEN>bccmea15									
 bccmea16	<GEN>bccmea16									
 bccmea17	<GEN>bccmea17									
-bcbmea03_3	<GEN>bcbmea03_3									
-bcbmea04_3	<GEN>bcbmea04_3									
+bcbmea09_bm2bm_3	<GEN>bcbmea09_bm2bm_3									
+bcbmea12_bm2ss_3	<GEN>bcbmea12_bm2ss_3									
 bcbrea03_3	<GEN>bcbrea03_3									
 bccrea01	<GEN>bccrea01									
 bccrea03	<GEN>bccrea03									

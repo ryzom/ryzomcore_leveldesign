@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_c_m1ps.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="tribe one-handed piercing spear"/>
+      <ATOM Name="origin" Value="tribe"/>
+      <ATOM Name="CraftPlan" Value="bcbmea20_bm1ps_2.sbrick"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="ge_ma_wea_trib_lance1m.shape"/>
+      <ATOM Name="shape_female" Value="ge_ma_wea_trib_lance1m.shape"/>
+      <ATOM Name="map_variant" Value="Medium Quality"/>
+      <ATOM Name="icon background" Value="bk_generic.png"/>
+      <STRUCT Name="fx">
+        <ATOM Name="Trail" Value="ge_ma_wea_trib_lance1m_trail_gen.shape"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+</FORM>

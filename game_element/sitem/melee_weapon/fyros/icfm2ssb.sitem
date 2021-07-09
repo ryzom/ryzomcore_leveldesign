@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_c_m2ss.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="fyros two-handed slashing sword burning"/>
+      <ATOM Name="origin" Value="fyros"/>
+      <ATOM Name="CraftPlan" Value="bcfmea32_fm2ssb.sbrick"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="fy_wea_epee2m.shape"/>
+      <ATOM Name="shape_female" Value="fy_wea_epee2m.shape"/>
+      <ATOM Name="map_variant" Value="High Quality"/>
+      <ATOM Name="icon background" Value="bk_fyros.png"/>
+      <STRUCT Name="fx">
+        <ATOM Name="Trail" Value="fy_wea_epee2m_trail_00.shape"/>
+        <ATOM Name="AdvantageFX" Value="fy_wea_epee2m.ps"/>
+      </STRUCT>
+      <ATOM Name="has_fx" Value="true"/>    </STRUCT>
+  </STRUCT>
+</FORM>

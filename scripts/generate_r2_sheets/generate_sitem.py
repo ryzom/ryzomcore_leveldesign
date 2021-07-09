@@ -555,6 +555,10 @@ def generateSitems():
 			strippedTags.remove("color")
 		if "advantage" in strippedTags:
 			strippedTags.remove("advantage")
+		if "regular" in strippedTags:
+			strippedTags.remove("regular")
+		if "colored" in strippedTags:
+			strippedTags.remove("colored")
 		displayName = " ".join(strippedTags)
 		
 		origin = "common" # item_origine.typ
@@ -590,7 +594,7 @@ def generateSitems():
 		mapVariant = "Default"
 		if "mq" in tags:
 			mapVariant = "Medium Quality"
-		elif "hq" in tags:
+		elif "hq" in tags or "advantage" in tags:
 			mapVariant = "High Quality"
 		
 		itemType = "undefined"
@@ -718,7 +722,9 @@ def generateSitems():
 		
 		parent = findSitemParent(tags)
 		if not parent:
-			print("No parent for sitem: " + name + ", tags: " + tags)
+			print("No parent for sitem: " + name + ", tags: " + str(tags))
+			print(parentTags)
+			exit(1)
 		
 		fxTrail = None
 		if "kami" in tags and shapeMale + "_trail_kam" in sfxShape:
@@ -833,6 +839,9 @@ def generateSitems():
 		if "hq" in tags:
 			minMat += 2
 			randMat += 4
+		if "advantage" in tags:
+			minMat += 3
+			randMat += 6
 		minMat *= 3
 		randMat *= 3
 		# rand0 = zlib.crc32(name + brickFamily + skill) & 0xffffffff

@@ -530,11 +530,11 @@ ge_acc_pre_order_item		common	accessory	incomplete	_pre_order_item
 ge_acc_winch_a		common	accessory	incomplete	_winch_a
 ge_acc_woodpiece		common	accessory	incomplete	_woodpiece
 ge_feudecamp		common	incomplete	_feudecamp
-ge_fy_wea_trib_gattling		common	fyros	weapon	tribe	ranged	two-handed	autolauncher
-ge_fy_wea_trib_grand_bouclier		common	fyros	weapon	tribe	large	shield
-ge_fy_wea_trib_hache1m		common	fyros	weapon	tribe	melee	one-handed	slashing	axe
-ge_fy_wea_trib_hache2m		common	fyros	weapon	tribe	melee	two-handed	slashing	axe
-ge_fy_wea_trib_launcher		common	fyros	weapon	tribe	ranged	two-handed	launcher
+ge_fy_wea_trib_gattling		common	fyros	weapon	regular	tribe	ranged	two-handed	autolauncher
+ge_fy_wea_trib_grand_bouclier		common	fyros	weapon	regular	tribe	large	shield
+ge_fy_wea_trib_hache1m		common	fyros	weapon	regular	tribe	melee	one-handed	slashing	axe
+ge_fy_wea_trib_hache2m		common	fyros	weapon	regular	tribe	melee	two-handed	slashing	axe
+ge_fy_wea_trib_launcher		common	fyros	weapon	regular	tribe	ranged	two-handed	launcher
 ge_hof_acc_gauntlet		common	female	accessory	magic	amplifier	gloves
 ge_hof_acc_gauntlet_gen		common	female	accessory	magic	amplifier	gloves	generic
 ge_hof_acc_gauntlet_kami		common	female	accessory	magic	amplifier	gloves	kami
@@ -562,9 +562,9 @@ ge_kwj_ciseau_a		common	incomplete	_kwj_ciseau_a
 ge_kwj_ciseau_o		common	incomplete	_kwj_ciseau_o
 ge_kwj_tube_a		common	incomplete	_kwj_tube_a
 ge_livre		common	incomplete	_livre
-ge_ma_wea_trib_lance1m		common	matis	weapon	tribe	melee	one-handed	piercing	spear
-ge_ma_wea_trib_lance2m		common	matis	weapon	tribe	melee	two-handed	piercing	pike
-ge_ma_wea_trib_pistolet		common	matis	weapon	tribe	ranged	one-handed	pistol
+ge_ma_wea_trib_lance1m		common	matis	weapon	regular	tribe	melee	one-handed	piercing	spear
+ge_ma_wea_trib_lance2m		common	matis	weapon	regular	tribe	melee	two-handed	piercing	pike
+ge_ma_wea_trib_pistolet		common	matis	weapon	regular	tribe	ranged	one-handed	pistol
 ge_pvp_spire_kami		common	incomplete	_pvp_spire_kami
 ge_pvp_spire_karavan		common	incomplete	_pvp_spire_karavan
 ge_pvp_spire_socle		common	incomplete	_pvp_spire_socle
@@ -577,11 +577,11 @@ ge_treasure_box_gen		common	incomplete	_treasure_box_gen
 ge_treasure_box_ma		common	incomplete	_treasure_box_ma
 ge_treasure_box_tr		common	incomplete	_treasure_box_tr
 ge_treasure_box_zo		common	incomplete	_treasure_box_zo
-ge_tr_wea_trib_dague		common	tryker	weapon	tribe	melee	one-handed	piercing	dagger
-ge_tr_wea_trib_epee1m		common	tryker	weapon	tribe	melee	one-handed	slashing	sword
-ge_tr_wea_trib_epee2m		common	tryker	weapon	tribe	melee	two-handed	slashing	sword
-ge_tr_wea_trib_fusil		common	tryker	weapon	tribe	ranged	two-handed	rifle
-ge_tr_wea_trib_pistolarc		common	tryker	weapon	tribe	ranged	one-handed	bowpistol
+ge_tr_wea_trib_dague		common	tryker	weapon	regular	tribe	melee	one-handed	piercing	dagger
+ge_tr_wea_trib_epee1m		common	tryker	weapon	regular	tribe	melee	one-handed	slashing	sword
+ge_tr_wea_trib_epee2m		common	tryker	weapon	regular	tribe	melee	two-handed	slashing	sword
+ge_tr_wea_trib_fusil		common	tryker	weapon	regular	tribe	ranged	two-handed	rifle
+ge_tr_wea_trib_pistolarc		common	tryker	weapon	regular	tribe	ranged	one-handed	bowpistol
 ge_wea_baton		common	weapon	melee	one-handed	blunt	staff
 ge_wea_dague		common	weapon	melee	one-handed	piercing	dagger
 ge_wea_epee1m		common	weapon	melee	one-handed	slashing	sword
@@ -614,12 +614,12 @@ ge_wea_petit_bouclier		common	weapon	buckler	shield
 ge_wea_pistolarc		common	weapon	ranged	one-handed	bowpistol
 ge_wea_pistolet		common	weapon	ranged	one-handed	pistol
 ge_xmas_baniere		common	incomplete	_xmas_baniere
-ge_zo_wea_trib_baton		common	zorai	weapon	tribe	melee	one-handed	blunt	staff
-ge_zo_wea_trib_fusarc		common	zorai	weapon	tribe	ranged	two-handed	bowrifle
-ge_zo_wea_trib_grand_bouclier		common	zorai	weapon	tribe	large	shield
-ge_zo_wea_trib_masse1m		common	zorai	weapon	tribe	melee	one-handed	blunt	mace
-ge_zo_wea_trib_masse2m		common	zorai	weapon	tribe	melee	two-handed	blunt	mace
-ge_zo_wea_trib_petit_bouclier		common	zorai	weapon	tribe	buckler	shield
+ge_zo_wea_trib_baton		common	zorai	weapon	regular	tribe	melee	one-handed	blunt	staff
+ge_zo_wea_trib_fusarc		common	zorai	weapon	regular	tribe	ranged	two-handed	bowrifle
+ge_zo_wea_trib_grand_bouclier		common	zorai	weapon	regular	tribe	large	shield
+ge_zo_wea_trib_masse1m		common	zorai	weapon	regular	tribe	melee	one-handed	blunt	mace
+ge_zo_wea_trib_masse2m		common	zorai	weapon	regular	tribe	melee	two-handed	blunt	mace
+ge_zo_wea_trib_petit_bouclier		common	zorai	weapon	regular	tribe	buckler	shield
 gun01		incomplete	_gun01
 ma_acc_baniere		matis	accessory	event	banner
 ma_baniere		matis	incomplete	_baniere

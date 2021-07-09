@@ -463,14 +463,14 @@ _BE1F5DFB23814368	bcfmea09	Staff - Basic Quality	a	the				Crafting plan for Fyro
 _252AE2FD475E4B04	bcfmea16_fm1pd	Dagger - Basic Quality	a	the				Crafting plan for Fyros daggers.	
 _BE0F4D0520DF2768	bcfmea19_fm1ps	Spear - Basic Quality	a	the				Crafting plan for Fyros spears.	
 _D3B427EE34FDBC7E	bcfmea13_fm1sa	Axe - Basic Quality	a	the				Crafting plan for Fyros axes.	
-_FCFF91E50B8D4CAC	bcfmea11	Burning Axe	a	the				Crafting plan for burning axes.	
+_FCFF91E50B8D4CAC	bcfmea31_fm1sab	Burning Axe	a	the				Crafting plan for burning axes.	
 _BEFF851524C14368	bcfmea28_fm1ss	Sword - Basic Quality	a	the				Crafting plan for Fyros swords.	
 _8487C609871FCB2C	bcfmea07_fm2bm	Long Mace - Basic Quality	a	the				Crafting plan for Fyros two-handed maces.	
 _D76E8F40E0546763	bcfmea04_fm2pp	Pike - Basic Quality	a	the				Crafting plan for Fyros pikes.	
 _000B899D212FA79D	bcfmea01_fm2sa	Long Axe - Basic Quality	a	the				Crafting plan for Fyros two-handed axes.	
-_3A4123327DE726DD	bcfmea13	Burning Long Axe	a	the				Crafting plan for burning two-handed axes.	
+_3A4123327DE726DD	bcfmea33_fm2sab	Burning Long Axe	a	the				Crafting plan for burning two-handed axes.	
 _084D12B994E19544	bcfmea10_fm2ss	Long Sword - Basic Quality	a	the				Crafting plan for Fyros two-handed swords.	
-_DFB5D1FD034385E7	bcfmea12	Burning Long Sword	a	the				Crafting plan for burning two-handed swords.	
+_DFB5D1FD034385E7	bcfmea32_fm2ssb	Burning Long Sword	a	the				Crafting plan for burning two-handed swords.	
 _56FE17415A134760	bcmmea22_mm1bm	Mace - Basic Quality	a	the				Crafting plan for Matis maces.	
 _3D4F05EAE5814368	bcmmea09	Staff - Basic Quality	a	the				Crafting plan for Matis staffs.	
 _23DA220B475E4B04	bcmmea16_mm1pd	Dagger - Basic Quality	a	the				Crafting plan for Matis daggers.	
@@ -546,7 +546,7 @@ _8A95E1831DFA423D	bczrea08	Electric Launcher	an	the				Crafting plan for electri
 _FA704910E5C03FE4	bczrea06	Rifle - Basic Quality	a	the				Crafting plan for Zoraï rifles.	
 _F4EFCEAE864E8390	bcfsea01_fsb	Buckler - Basic Quality	a	the				Crafting plan for Fyros bucklers.	
 _A00AD201CA404B04	bcfsea04_fss	Shield - Basic Quality	a	the				Crafting plan for Fyros shields.	
-_48C70E29F5721937	bcfsea03	Burning Buckler	a	the				Crafting plan for burning bucklers.	
+_48C70E29F5721937	bcfsea07_fsbb	Burning Buckler	a	the				Crafting plan for burning bucklers.	
 _F4FE8AB5864E838A	bcmsea01_msb	Buckler - Basic Quality	a	the				Crafting plan for Matis bucklers.	
 _9EBA120FCA404B04	bcmsea04_mss	Shield - Basic Quality	a	the				Crafting plan for Matis shields.	
 _C640055E6AEB0CD4	bcmsea03	Living Buckler	a	the				Crafting plan for Living bucklers.	
@@ -2426,13 +2426,13 @@ _5E493998A83DF331	BMSTMT00250	Self Stamina Gift 15	a	the				Allows you to recove
 _9024E757AA5985CF	BCPA25	Melee Weapon	a	the				Crafting stanza for root melee weapons.	
 _D124EF59A9CA91CB	BCPA26	Range Weapon	a	the				Crafting stanza for root range weapons.	
 _3FBCD8FA2055248A	BCPA27	Ammo	an	the				Crafting stanza for root ammo.	
-_977495875A3A9812	bccmea01	Long Axe	a	the				Crafting plan for long axes.	
-_E96C284396D44B1E	bccmea02	Pike	a	the				Crafting plan for pikes.	
-_D117B2EC6C5E8916	bccmea03	Long Mace	a	the				Crafting plan for long maces.	
+_977495875A3A9812	bccmea01_cm2sa	Long Axe	a	the				Crafting plan for long axes.	
+_E96C284396D44B1E	bccmea02_cm2pp	Pike	a	the				Crafting plan for pikes.	
+_D117B2EC6C5E8916	bccmea03_cm2bm	Long Mace	a	the				Crafting plan for long maces.	
 _A9C843491F974C17	bccmea04_cm2ss	Long Sword	a	the				Crafting plan for long swords.	
 _07C2F32E6C05F6D5	bccmea05_cm1sa	Axe	an	the				Crafting plan for axes.	
 _CF22CFC1C203B6EC	bccmea06_cm1pd	Dagger	a	the				Crafting plan for daggers.	
-_FB814CDC1228029F	bccmea07	Spear	a	the				Crafting plan for spears.	
+_FB814CDC1228029F	bccmea07_cm1ps	Spear	a	the				Crafting plan for spears.	
 _E96CE83D18D44B1E	bccmea08_cm1bm	Mace	a	the				Crafting plan for maces.	
 _79E2B4E3932806A3	bccmea09	Staff	a	the				Crafting plan for staffs.	
 _FFF2C0E35138FEAD	bccmea10_cm1ss	Sword	a	the				Crafting plan for swords.	
@@ -3732,34 +3732,34 @@ _832028F4AEBA19EC	bsfml03	Lightning Wall Power 3	a	the				For $1SP_LIGHTNING_WAL
 _832028F4AECA19ED	bsfml04	Lightning Wall Power 4	a	the				For $1SP_LIGHTNING_WALL_AURA seconds a wall of electricity is created around you that temporarily reduces the attack skill level by $|4SP_LIGHTNING_WALL_AURA of any enemy in hand to hand.	
 _832028F4AEDA19EE	bsfml05	Lightning Wall Power 5	a	the				For $1SP_LIGHTNING_WALL_AURA seconds a wall of electricity is created around you that temporarily reduces the attack skill level by $|4SP_LIGHTNING_WALL_AURA of any enemy in hand to hand.	
 _FC60E37FBE2666EA	bccrea02	Generic Bowrifle	a	the				Crafting plan for Generic Bowrifle.	
-_358C96196EF37F16	bcbmea01	Crafting Plan / Long Axe of the Barkers	un	le				Crafting Plan / Long Axe of the Barkers.	
-_363C5DC3F83A8AB8	bcbmea01_2	Crafting Plan / Long Axe of the Woven Bridles	un	le				Crafting Plan / Long Axe of the Woven Bridles.	
-_D9E9E95AF253A630	bcbmea01_3	Crafting Plan / Long Axe of the Watchers	un	le				Crafting Plan / Long Axe of the Watchers.	
-_8B369766C37FD88C	bcbmea02	Crafting Plan / Pike of the Matisian Border Guards	un	le				Crafting Plan / Pike of the Matisian Border Guards.	
-_5B54F0E7F9C67FEF	bcbmea02_2	Crafting Plan / Pike of the Kitin Gatherers	un	le				Crafting Plan / Pike of the Kitin Gatherers.	
-_3E4909A2E4F40228	bcbmea02_3	Crafting Plan / Pike of the Ancient Dryads	un	le				Crafting Plan / Pike of the Ancient Dryads.	
-_564F37256E6676B3	bcbmea03	Crafting Plan / Long Mace of the Tutors	un	le				Crafting Plan / Long Mace of the Tutors.	
-_88C752B6A9B1AA0C	bcbmea03_2	Crafting Plan / Long Mace of the Recoverers	un	le				Crafting Plan / Long Mace of the Recoverers.	
-_9AA547822E3AB7A2	bcbmea04	Crafting Plan / Long Sword of the Silt Sculptors	un	le				Crafting Plan / Long Sword of the Silt Sculptors.	
-_D8BD3BC7EF4300D7	bcbmea04_2	Crafting Plan / Long Sword of the Ecowarriors	un	le				Crafting Plan / Long Sword of the Ecowarriors.	
-_C02EDEC6E74F6587	bcbmea05	Crafting Plan / Axe of the Leviers	un	le				Crafting Plan / Axe of the Leviers.	
-_D754B8DFB6A447C5	bcbmea05_2	Crafting Plan / Axe of the Renegades	un	le				Crafting Plan / Axe of the Renegades.	
-_AACCE8D92227F91B	bcbmea05_3	Crafting Plan / Axe of the Fraiders	un	le				Crafting Plan / Axe of the Fraiders.	
-_4B6ACF820ED366CA	bcbmea06	Crafting Plan / Dagger of the Corsairs	un	le				Crafting Plan / Dagger of the Corsairs.	
-_D954E8FFF6261FCD	bcbmea06_2	Crafting Plan / Dagger of the Goo Heads	un	le				Crafting Plan / Dagger of the Goo Heads.	
-_3B840DABDB64754A	bcbmea06_3	Crafting Plan / Dagger of the Cuzans	un	le				Crafting Plan / Dagger of the Cuzans.	
-_EE1F98F9077241CA	bcbmea07	Crafting Plan / Spear of the Hamazans	un	le				Crafting Plan / Spear of the Hamazans.	
-_BAC9F1AAA74206FD	bcbmea07_2	Crafting Plan / Spear of The Arid Matis	un	le				Crafting Plan / Spear of The Arid Matis.	
-_EA0094FA44A04114	bcbmea07_3	Crafting Plan / Spear of the Sap Slaves	un	le				Crafting Plan / Spear of the Sap Slaves.	
-_2693C1EE34B192E5	bcbmea08	Crafting plan / Spear of the Sacred Sap	un	le				Crafting Plan / Spear of the Sacred saps.	
-_E98B15A790215E29	bcbmea08_2	Crafting plan / Spear of the Black Circle	un	le				Crafting Plan / Spear of the Black Circles.	
-_71DEA8E694857946	bcbmea08_3	Crafting Plan / Spear of the Gibads	un	le				Crafting Plan / Spear of the Gibads.	
+_358C96196EF37F16	bcbmea01_bm2sa	Crafting Plan / Long Axe of the Barkers	un	le				Crafting Plan / Long Axe of the Barkers.	
+_363C5DC3F83A8AB8	bcbmea02_bm2sa_2	Crafting Plan / Long Axe of the Woven Bridles	un	le				Crafting Plan / Long Axe of the Woven Bridles.	
+_D9E9E95AF253A630	bcbmea03_bm2sa_3	Crafting Plan / Long Axe of the Watchers	un	le				Crafting Plan / Long Axe of the Watchers.	
+_8B369766C37FD88C	bcbmea04_bm2pp	Crafting Plan / Pike of the Matisian Border Guards	un	le				Crafting Plan / Pike of the Matisian Border Guards.	
+_5B54F0E7F9C67FEF	bcbmea05_bm2pp_2	Crafting Plan / Pike of the Kitin Gatherers	un	le				Crafting Plan / Pike of the Kitin Gatherers.	
+_3E4909A2E4F40228	bcbmea06_bm2pp_3	Crafting Plan / Pike of the Ancient Dryads	un	le				Crafting Plan / Pike of the Ancient Dryads.	
+_564F37256E6676B3	bcbmea07_bm2bm	Crafting Plan / Long Mace of the Tutors	un	le				Crafting Plan / Long Mace of the Tutors.	
+_88C752B6A9B1AA0C	bcbmea08_bm2bm_2	Crafting Plan / Long Mace of the Recoverers	un	le				Crafting Plan / Long Mace of the Recoverers.	
+_9AA547822E3AB7A2	bcbmea10_bm2ss	Crafting Plan / Long Sword of the Silt Sculptors	un	le				Crafting Plan / Long Sword of the Silt Sculptors.	
+_D8BD3BC7EF4300D7	bcbmea11_bm2ss_2	Crafting Plan / Long Sword of the Ecowarriors	un	le				Crafting Plan / Long Sword of the Ecowarriors.	
+_C02EDEC6E74F6587	bcbmea13_bm1sa	Crafting Plan / Axe of the Leviers	un	le				Crafting Plan / Axe of the Leviers.	
+_D754B8DFB6A447C5	bcbmea14_bm1sa_2	Crafting Plan / Axe of the Renegades	un	le				Crafting Plan / Axe of the Renegades.	
+_AACCE8D92227F91B	bcbmea15_bm1sa_3	Crafting Plan / Axe of the Fraiders	un	le				Crafting Plan / Axe of the Fraiders.	
+_4B6ACF820ED366CA	bcbmea16_bm1pd	Crafting Plan / Dagger of the Corsairs	un	le				Crafting Plan / Dagger of the Corsairs.	
+_D954E8FFF6261FCD	bcbmea17_bm1pd_2	Crafting Plan / Dagger of the Goo Heads	un	le				Crafting Plan / Dagger of the Goo Heads.	
+_3B840DABDB64754A	bcbmea18_bm1pd_3	Crafting Plan / Dagger of the Cuzans	un	le				Crafting Plan / Dagger of the Cuzans.	
+_EE1F98F9077241CA	bcbmea19_bm1ps	Crafting Plan / Spear of the Hamazans	un	le				Crafting Plan / Spear of the Hamazans.	
+_BAC9F1AAA74206FD	bcbmea20_bm1ps_2	Crafting Plan / Spear of The Arid Matis	un	le				Crafting Plan / Spear of The Arid Matis.	
+_EA0094FA44A04114	bcbmea21_bm1ps_3	Crafting Plan / Spear of the Sap Slaves	un	le				Crafting Plan / Spear of the Sap Slaves.	
+_2693C1EE34B192E5	bcbmea22_bm1bm	Crafting plan / Spear of the Sacred Sap	un	le				Crafting Plan / Spear of the Sacred saps.	
+_E98B15A790215E29	bcbmea23_bm1bm_2	Crafting plan / Spear of the Black Circle	un	le				Crafting Plan / Spear of the Black Circles.	
+_71DEA8E694857946	bcbmea24_bm1bm_3	Crafting Plan / Spear of the Gibads	un	le				Crafting Plan / Spear of the Gibads.	
 _DB628D381E72EB3C	bcbmea09	Crafting plan / Staff of the Company of the Eternal Tree	un	le				Crafting Plan / Staff of the Company of the Eternal Trees.	
 _E60E13861ED58D63	bcbmea09_2	Crafting Plan / Staff of the Sap Gleaners	un	le				Crafting Plan / Staff of the Sap Gleaners.	
 _0BD81ED58BB0A91B	bcbmea09_3	Crafting Plan / Staff of the Masters of the Goo	un	le				Crafting Plan / Staff of the Masters of the Goo.	
-_46A1F63E9EC835CC	bcbmea10	Crafting Plan / Sword of the Smugglers	un	le				Crafting Plan / Sword of the Smugglers.	
-_78068B9DB857FA73	bcbmea10_2	Crafting plan / Sword of The Slash and Burn	un	le				Crafting Plan / Sword of The Slash and Burns.	
-_48314EAC0405DC4D	bcbmea10_3	Crafting Plan / Sword of the Lagoon Brothers	un	le				Crafting Plan / Sword of the Lagoon Brothers.	
+_46A1F63E9EC835CC	bcbmea42_bm1ss	Crafting Plan / Sword of the Smugglers	un	le				Crafting Plan / Sword of the Smugglers.	
+_78068B9DB857FA73	bcbmea28_bm1ss_2	Crafting plan / Sword of The Slash and Burn	un	le				Crafting Plan / Sword of The Slash and Burns.	
+_48314EAC0405DC4D	bcbmea29_bm1ss_3	Crafting Plan / Sword of the Lagoon Brothers	un	le				Crafting Plan / Sword of the Lagoon Brothers.	
 _7C3E55C696FAEA8E	bcbrea01	Crafting Plan / Autolauncher of the Night Turners	un	le				Crafting Plan / Autolauncher of the Night Turners.	
 _277A02C90524B335	bcbrea01_2	Crafting Plan / Autolauncher of the Dune Riders	un	le				Crafting Plan / Autolauncher of the Dune Riders.	
 _270A0EE6C2F4772E	bcbrea01_3	Crafting Plan / Autolauncher of the Firebrands	un	le				Crafting Plan / Autolauncher of the Firebrands.	
@@ -4178,8 +4178,8 @@ _83B6D4608EF3870F	bccaeb28_camv	<GEN>bccaeb28_camv
 _86B6D4784EF3870D	bccmea15	<GEN>bccmea15							
 _86B6D4788EF3870F	bccmea16	<GEN>bccmea16							
 _86B6D478CEF38711	bccmea17	<GEN>bccmea17							
-_1DF56B57472F1378	bcbmea03_3	<GEN>bcbmea03_3							
-_1DF56B57883F1378	bcbmea04_3	<GEN>bcbmea04_3							
+_1DF56B57472F1378	bcbmea09_bm2bm_3	<GEN>bcbmea09_bm2bm_3							
+_1DF56B57883F1378	bcbmea12_bm2ss_3	<GEN>bcbmea12_bm2ss_3							
 _5E466B57472F137D	bcbrea03_3	<GEN>bcbrea03_3							
 _47B6D4824DE38705	bccrea01	<GEN>bccrea01							
 _47B6D482CDE38709	bccrea03	<GEN>bccrea03							
