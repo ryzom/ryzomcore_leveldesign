@@ -143,6 +143,8 @@ def findBrickFamily(tags):
 		t.remove("ranged")
 	if "caster" in t and "light" in t:
 		t.remove("light")
+	if "common" in t and "starter" in t:
+		t.remove("common")
 	res = findTreeEntry(brickFamilyTree, t)
 	return res
 

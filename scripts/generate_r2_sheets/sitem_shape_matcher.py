@@ -17,7 +17,7 @@ boostTags = {
 	"sleeves": 2,
 	"helmet": 2,
 	"boots": 2,
-	"refugee": 2,
+	"refugee": 3,
 #	"hands": 2,
 }
 
