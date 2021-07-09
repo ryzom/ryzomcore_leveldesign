@@ -146,6 +146,8 @@ def findBrickFamily(tags):
 	if "common" in t and "starter" in t:
 		t.remove("common")
 	res = findTreeEntry(brickFamilyTree, t)
+	if res == "BCBSEA":
+		res = "BCBREA" # Bug workaround, tribe shields are under tribe range crafting family. FIXME
 	return res
 
 sbrickIndex = loadTsv("sbrick_index.tsv")
