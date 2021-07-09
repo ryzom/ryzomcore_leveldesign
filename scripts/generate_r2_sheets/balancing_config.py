@@ -59,12 +59,25 @@ bossLevels = {
 	"f5": 250, "f6": 260, "f7": 270, "f8": 260,
 }
 
+def getBaseLevel(level):
+	if level in newbieLevels:
+		return newbieLevels[level]
+	if level in levels:
+		return levels[level]
+	if level in bossLevels:
+		return bossLevels[level]
+	return 1
+
 def getRegionForce(level):
 	map = { "a": 1, "b": 2, "c": 3, "d": 4 , "e": 5, "f": 6 }
 	return map[level[0]]
 
-def getForceLevel(level):
-	return int(level[1])
+def getForceLevel(level, baseLevel):
+	if not baseLevel:
+		return int(level[1])
+	refLevel = getBaseLevel(level[0] + "1")
+	diff = baseLevel - refLevel
+	return int(round(diff * 0.1, 0)) + 1
 
 # desert, jungle, forest, lakes, prime roots, goo, invasion
 

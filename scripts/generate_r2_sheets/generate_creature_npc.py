@@ -162,7 +162,8 @@ def writeNpcCreature(name, type, level, spec, actionlist):
 		f.write("      <ATOM Name=\"XPLevel\" Value=\"" + str(xpLevel) + "\"/>\n")
 		f.write("      <ATOM Name=\"TauntLevel\" Value=\"" + str(varyLevel(baseLevel, "TauntLevel" + name)) + "\"/>\n")
 		f.write("      <ATOM Name=\"RegionForce\" Value=\"" + str(getRegionForce(level)) + "\"/>\n")
-		f.write("      <ATOM Name=\"ForceLevel\" Value=\"" + str(getForceLevel(level)) + "\"/>\n") # TODO
+		f.write("      <ATOM Name=\"ForceLevel\" Value=\"" + str(getForceLevel(level, avgLevel)) + "\"/>\n")
+		f.write("      <ATOM Name=\"LocalCode\" Value=\"" + str(getForceLevel(level, None)) + "\"/>\n")
 		if "magic" in type:
 			f.write("      <ATOM Name=\"DodgeAsDefense\" Value=\"true\"/>\n")
 		else:

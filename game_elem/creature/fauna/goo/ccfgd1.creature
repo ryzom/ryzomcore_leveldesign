@@ -5,24 +5,24 @@
   <STRUCT>
     <STRUCT Name="Basics">
       <ATOM Name="NbPlayers" Value="1"/>
-      <ATOM Name="PlayerHpLevel" Value="75"/>
-      <ATOM Name="NbHitToKillPlayer" Value="0.622406494379"/>
+      <ATOM Name="PlayerHpLevel" Value="78"/>
+      <ATOM Name="NbHitToKillPlayer" Value="0.623678566046"/>
       <STRUCT Name="Characteristics">
         <ATOM Name="DynamicEnergyValue" Value="0.00125"/>
       </STRUCT>
       <STRUCT Name="MovementSpeeds">
         <ATOM Name="GroupDispersion" Value="0.83"/>
       </STRUCT>
-      <ATOM Name="life" Value="3882"/>
+      <ATOM Name="life" Value="4046"/>
       <ATOM Name="AttackSpeed" Value="3.3"/>
-      <ATOM Name="LifeRegen" Value="18.581193"/>
-      <ATOM Name="AttackLevel" Value="122"/>
-      <ATOM Name="DefenseLevel" Value="109"/>
-      <ATOM Name="XPLevel" Value="115"/>
-      <ATOM Name="TauntLevel" Value="115"/>
+      <ATOM Name="LifeRegen" Value="19.366179"/>
+      <ATOM Name="AttackLevel" Value="127"/>
+      <ATOM Name="DefenseLevel" Value="114"/>
+      <ATOM Name="XPLevel" Value="120"/>
+      <ATOM Name="TauntLevel" Value="120"/>
       <ATOM Name="MeleeReachValue" Value="1"/>
       <ATOM Name="RegionForce" Value="4"/>
-      <ATOM Name="ForceLevel" Value="1"/>
+      <ATOM Name="ForceLevel" Value="2"/>
       <ATOM Name="LocalCode" Value="1"/>
       <ATOM Name="DodgeAsDefense" Value="true"/>
     </STRUCT>
@@ -57,19 +57,19 @@
       <ATOM Name="ShockFactor" Value="0"/>
     </STRUCT>
     <STRUCT Name="Resists">
-      <ATOM Name="Fear" Value="108"/>
-      <ATOM Name="Sleep" Value="109"/>
-      <ATOM Name="Stun" Value="107"/>
-      <ATOM Name="Root" Value="110"/>
-      <ATOM Name="Blind" Value="110"/>
-      <ATOM Name="Snare" Value="110"/>
-      <ATOM Name="Slow" Value="106"/>
-      <ATOM Name="Acid" Value="110"/>
-      <ATOM Name="Cold" Value="110"/>
-      <ATOM Name="Electricity" Value="110"/>
-      <ATOM Name="Fire" Value="111"/>
-      <ATOM Name="Poison" Value="106"/>
-      <ATOM Name="Rot" Value="108"/>
+      <ATOM Name="Fear" Value="113"/>
+      <ATOM Name="Sleep" Value="114"/>
+      <ATOM Name="Stun" Value="112"/>
+      <ATOM Name="Root" Value="115"/>
+      <ATOM Name="Blind" Value="115"/>
+      <ATOM Name="Snare" Value="115"/>
+      <ATOM Name="Slow" Value="111"/>
+      <ATOM Name="Acid" Value="115"/>
+      <ATOM Name="Cold" Value="115"/>
+      <ATOM Name="Electricity" Value="115"/>
+      <ATOM Name="Fire" Value="116"/>
+      <ATOM Name="Poison" Value="111"/>
+      <ATOM Name="Rot" Value="113"/>
     </STRUCT>
     <STRUCT Name="Damage Shield">
       <ATOM Name="Damage" Value="0"/>
@@ -79,7 +79,7 @@
     <ATOM Name="race_code" Value="F"/>
     <ATOM Name="group_assist" Value="cfg"/>
     <ATOM Name="group_attack" Value="ba,bb,bc,ca,cb,cc,cd,ce,cf,cg,ch,ci,cj,ck,cl,cm,cn,co,cp,da,db,dc,ha,hb,hc,hd,he,hf,hg,hh,hi,hj,hk,hl,hm,hn,ho,hp,hq,hr,hs,ht,hu,hv,hw,hx,hy,pa,pb,pc,pd,pe,pf,pg,ph,zp"/>
-    <ATOM Name="creature_level" Value="115"/>
+    <ATOM Name="creature_level" Value="120"/>
     <ATOM Name="group_id" Value="CFG"/>
   </STRUCT>
 </FORM>

@@ -334,9 +334,12 @@ for sheet in creatureFauna:
 				elif lvl in newbieLevels:
 					refLevel = newbieLevels[lvl]
 					newbie = True
-				baseLevel = varyLevel(refLevel + levelOffset[eco] + int(entry["levelOffset"]), "Level_" + name, newbie)
-				attackLevel = varyLevel(baseLevel + attackOffset[eco] + int(entry["attackOffset"]), "Attack_" + name, newbie)
-				defenseLevel = varyLevel(baseLevel + defenseOffset[eco] + int(entry["defenseOffset"]), "Defense_" + name, newbie)
+				offsetFactor = 1.0
+				if newbie:
+					offsetFactor = float(newbieLevels["a3"] - newbieLevels["a2"]) / float(levels["b3"] - levels["b2"])
+				baseLevel = varyLevel(refLevel + int(round((levelOffset[eco] + int(entry["levelOffset"])) * offsetFactor, 0)), "Level_" + name, newbie)
+				attackLevel = varyLevel(baseLevel + int(round((attackOffset[eco] + int(entry["attackOffset"])) * offsetFactor, 0)), "Attack_" + name, newbie)
+				defenseLevel = varyLevel(baseLevel + int(round((defenseOffset[eco] + int(entry["defenseOffset"])) * offsetFactor, 0)), "Defense_" + name, newbie)
 				avgLevel = int(round((attackLevel + defenseLevel) / 2, 0))
 				xpLevel = int(round((baseLevel + attackLevel + defenseLevel) / 3, 0))
 				playerHpLevel = int(getScore(baseLevel) / 100.0)
@@ -412,8 +415,8 @@ for sheet in creatureFauna:
 					f.write("      <ATOM Name=\"TauntLevel\" Value=\"" + str(varyLevel(baseLevel, "TauntLevel" + name, newbie)) + "\"/>\n")
 					f.write("      <ATOM Name=\"MeleeReachValue\" Value=\"1\"/>\n") # TODO
 					f.write("      <ATOM Name=\"RegionForce\" Value=\"" + str(getRegionForce(lvl)) + "\"/>\n")
-					f.write("      <ATOM Name=\"ForceLevel\" Value=\"" + str(getForceLevel(lvl)) + "\"/>\n")
-					f.write("      <ATOM Name=\"LocalCode\" Value=\"" + str(getForceLevel(lvl)) + "\"/>\n")
+					f.write("      <ATOM Name=\"ForceLevel\" Value=\"" + str(getForceLevel(lvl, avgLevel)) + "\"/>\n")
+					f.write("      <ATOM Name=\"LocalCode\" Value=\"" + str(getForceLevel(lvl, None)) + "\"/>\n")
 					if entry["defenseMode"].lower() == "dodge":
 						f.write("      <ATOM Name=\"DodgeAsDefense\" Value=\"true\"/>\n")
 					else:
