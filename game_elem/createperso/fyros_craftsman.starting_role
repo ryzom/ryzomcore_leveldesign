@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.8 $" State="modified">
+<FORM Version="0.2" State="modified">
   <PARENT Filename="_craftsman.starting_role"/>
   <PARENT Filename="_fyros.starting_role"/>
   <PARENT Filename="_parent.starting_role"/>
@@ -188,7 +188,20 @@
         <ATOM Name="Sabrina Phrase" Value="abcfaea04_falg.sphrase"/>
       </STRUCT>
     </ARRAY>
-
+    <STRUCT Name="StartEquipment2">
+      <STRUCT Name="Body">
+        <ATOM Name="Item" Value="icfalv.sitem"/>
+        <ATOM Name="Quality" Value="10"/>
+      </STRUCT>
+      <STRUCT Name="Legs">
+        <ATOM Name="Item" Value="icfalp.sitem"/>
+        <ATOM Name="Quality" Value="10"/>
+      </STRUCT>
+      <STRUCT Name="Arms">
+        <ATOM Name="Item" Value="icfals.sitem"/>
+        <ATOM Name="Quality" Value="10"/>
+      </STRUCT>
+    </STRUCT>
     <ARRAY Name="PreMemorizedSentences3">
 	  <!-- Boot Patterns -->
       <STRUCT Name="Fyros Boot Pattern">
@@ -297,5 +310,11 @@ Mon Feb 23 15:11:06 2004 (puzin) .PreMemorizedSentences1[0] Renamed = default at
 Mon Feb 23 15:11:58 2004 (puzin) .PreMemorizedSentences1[1] Renamed = power
 Mon Feb 23 15:11:58 2004 (puzin) .PreMemorizedSentences1[1].Sabrina Phrase = abe_use_item_power.sphrase
 Mon Feb 23 15:11:58 2004 (puzin) formName Resized = 2
-Mon Feb 23 16:45:39 2004 (puzin) Form Parents = </LOG>
+Mon Feb 23 16:45:39 2004 (puzin) Form Parents = 
+Fri Jul  9 20:06:30 2021 (Kaetemi) .StartEquipment2.Arms.Item = icfals.sitem
+Fri Jul  9 20:06:30 2021 (Kaetemi) .StartEquipment2.Body.Item = icfalv.sitem
+Fri Jul  9 20:06:30 2021 (Kaetemi) .StartEquipment2.Legs.Item = icfalp.sitem
+Fri Jul  9 20:19:51 2021 (Kaetemi) .StartEquipment2.Arms.Quality = 10
+Fri Jul  9 20:19:51 2021 (Kaetemi) .StartEquipment2.Body.Quality = 10
+Fri Jul  9 20:19:51 2021 (Kaetemi) .StartEquipment2.Legs.Quality = 10</LOG>
 </FORM>

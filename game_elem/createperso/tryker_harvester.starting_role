@@ -1,9 +1,24 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.3 $" State="modified">
+<FORM Version="0.2" State="modified">
   <PARENT Filename="_harvester.starting_role"/>
   <PARENT Filename="_tryker.starting_role"/>
   <PARENT Filename="_parent.starting_role"/>
-  <STRUCT/>
+  <STRUCT>
+    <STRUCT Name="StartEquipment2">
+      <STRUCT Name="Body">
+        <ATOM Name="Item" Value="ictalv.sitem"/>
+        <ATOM Name="Quality" Value="10"/>
+      </STRUCT>
+      <STRUCT Name="Legs">
+        <ATOM Name="Item" Value="ictalp.sitem"/>
+        <ATOM Name="Quality" Value="10"/>
+      </STRUCT>
+      <STRUCT Name="Feet">
+        <ATOM Name="Item" Value="ictalb.sitem"/>
+        <ATOM Name="Quality" Value="10"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
   <STRUCT/>
   <STRUCT/>
   <STRUCT/>
@@ -14,5 +29,11 @@ Mon Feb 23 15:11:06 2004 (puzin) .PreMemorizedSentences1[0] Renamed = default at
 Mon Feb 23 15:11:58 2004 (puzin) .PreMemorizedSentences1[1] Renamed = power
 Mon Feb 23 15:11:58 2004 (puzin) .PreMemorizedSentences1[1].Sabrina Phrase = abe_use_item_power.sphrase
 Mon Feb 23 15:11:58 2004 (puzin) formName Resized = 2
-Mon Feb 23 16:45:31 2004 (puzin) Form Parents = </LOG>
+Mon Feb 23 16:45:31 2004 (puzin) Form Parents = 
+Fri Jul  9 20:09:38 2021 (Kaetemi) .StartEquipment2.Body.Item = ictalv.sitem
+Fri Jul  9 20:09:38 2021 (Kaetemi) .StartEquipment2.Feet.Item = ictalb.sitem
+Fri Jul  9 20:09:38 2021 (Kaetemi) .StartEquipment2.Legs.Item = ictalp.sitem
+Fri Jul  9 20:31:47 2021 (Kaetemi) .StartEquipment2.Body.Quality = 10
+Fri Jul  9 20:31:47 2021 (Kaetemi) .StartEquipment2.Feet.Quality = 10
+Fri Jul  9 20:31:47 2021 (Kaetemi) .StartEquipment2.Legs.Quality = 10</LOG>
 </FORM>

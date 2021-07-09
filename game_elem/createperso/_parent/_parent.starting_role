@@ -1,14 +1,12 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.4 $" State="modified">
+<FORM Version="0.1" State="modified">
   <STRUCT>
     <STRUCT Name="StartEquipment1">
       <STRUCT Name="Body">
-        <ATOM Name="Item" Value="icralv.sitem"/>
-        <ATOM Name="Quality" Value="1"/>
+        <ATOM Name="Quality" Value="0"/>
       </STRUCT>
       <STRUCT Name="Legs">
-        <ATOM Name="Item" Value="icralp.sitem"/>
-        <ATOM Name="Quality" Value="1"/>
+        <ATOM Name="Quality" Value="0"/>
       </STRUCT>
       <STRUCT Name="Arms">
         <ATOM Name="Quality" Value="0"/>
@@ -264,5 +262,9 @@ Mon Aug 16 15:23:41 2004 (puzin) .StartEquipment3.Headdress.Quality = 0
 Mon Aug 16 15:23:41 2004 (puzin) .StartEquipment3.Legs.Quality = 0
 Mon Aug 16 15:23:41 2004 (puzin) .StartEquipment3.Neck.Quality = 0
 Mon Aug 16 15:23:41 2004 (puzin) .StartEquipment3.WristL.Quality = 0
-Mon Aug 16 15:23:41 2004 (puzin) .StartEquipment3.WristR.Quality = 0</LOG>
+Mon Aug 16 15:23:41 2004 (puzin) .StartEquipment3.WristR.Quality = 0
+Fri Jul  9 20:19:28 2021 (Kaetemi) .StartEquipment1.Body.Item = 
+Fri Jul  9 20:19:28 2021 (Kaetemi) .StartEquipment1.Body.Quality = 0
+Fri Jul  9 20:19:28 2021 (Kaetemi) .StartEquipment1.Legs.Item = 
+Fri Jul  9 20:19:28 2021 (Kaetemi) .StartEquipment1.Legs.Quality = 0</LOG>
 </FORM>

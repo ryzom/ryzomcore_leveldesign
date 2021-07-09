@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.16 $" State="modified">
+<FORM Version="0.1" State="modified">
   <STRUCT>
     <ATOM Name="Role" Value="Caster"/>
     <ARRAY Name="PreMemorizedSentences1">
@@ -90,8 +90,7 @@
     </ARRAY>
     <STRUCT Name="StartEquipment1">
       <STRUCT Name="HandR">
-        <ATOM Name="Item" Value="icrm2ms.sitem"/>
-        <ATOM Name="Quality" Value="10"/>
+        <ATOM Name="Quality" Value="0"/>
       </STRUCT>
     </STRUCT>
     <ARRAY Name="PreMemorizedSentences2">
@@ -184,6 +183,12 @@
         <ATOM Name="Memory Type" Value="EmptyHand"/>
       </STRUCT>
     </ARRAY>
+    <STRUCT Name="StartEquipment2">
+      <STRUCT Name="HandR">
+        <ATOM Name="Item" Value="icrm2ms.sitem"/>
+        <ATOM Name="Quality" Value="10"/>
+      </STRUCT>
+    </STRUCT>
     <ARRAY Name="PreMemorizedSentences3">
       <STRUCT Name="Fyros Boot Pattern">
         <ATOM Name="Sabrina Phrase" Value="abcfaea01_falb.sphrase"/>
@@ -381,5 +386,9 @@ Fri Aug 13 19:19:54 2004 (puzin) .StartEquipment2.HandR.Quality =
 Fri Aug 13 19:19:54 2004 (puzin) .StartEquipment3.HandR.Item = 
 Fri Aug 13 19:19:54 2004 (puzin) .StartEquipment3.HandR.Quality = 
 Thu Feb 02 18:52:50 2006 (berenguier) .PreMemorizedSentences2[26] Renamed = fear
-Thu Feb 02 18:52:50 2006 (berenguier) .PreMemorizedSentences2[26].Sabrina Phrase = abm_ml_fear_00010.sphrase</LOG>
+Thu Feb 02 18:52:50 2006 (berenguier) .PreMemorizedSentences2[26].Sabrina Phrase = abm_ml_fear_00010.sphrase
+Fri Jul  9 20:40:52 2021 (Kaetemi) .StartEquipment1.HandR.Item = 
+Fri Jul  9 20:40:52 2021 (Kaetemi) .StartEquipment1.HandR.Quality = 0
+Fri Jul  9 20:40:52 2021 (Kaetemi) .StartEquipment2.HandR.Item = icrm2ms.sitem
+Fri Jul  9 20:40:52 2021 (Kaetemi) .StartEquipment2.HandR.Quality = 10</LOG>
 </FORM>
