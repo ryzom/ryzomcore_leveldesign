@@ -58,70 +58,26 @@ CopyDatabaseSourceFiles = [ ]
 # *** SPECIAL SOURCES ***
 
 # Sign files
-SignExeDllFiles = [ ]
+ExeDllFiles = [ ]
 
-SignExeDllFiles += [ "nel_drv_direct3d_win_r.dll" ]
-SignExeDllFiles += [ "nel_drv_dsound_win_r.dll" ]
-SignExeDllFiles += [ "nel_drv_fmod_win_r.dll" ]
-SignExeDllFiles += [ "nel_drv_openal_win_r.dll" ]
-SignExeDllFiles += [ "nel_drv_opengl_win_r.dll" ]
-SignExeDllFiles += [ "nel_drv_opengl3_win_r.dll" ]
-SignExeDllFiles += [ "nel_drv_xaudio2_win_r.dll" ]
+ExeDllFiles += [ "nel_drv_direct3d_win_r.dll" ]
+ExeDllFiles += [ "nel_drv_dsound_win_r.dll" ]
+ExeDllFiles += [ "nel_drv_fmod_win_r.dll" ]
+ExeDllFiles += [ "nel_drv_openal_win_r.dll" ]
+ExeDllFiles += [ "nel_drv_opengl_win_r.dll" ]
+ExeDllFiles += [ "nel_drv_opengl3_win_r.dll" ]
+ExeDllFiles += [ "nel_drv_xaudio2_win_r.dll" ]
 
-# SignExeDllFiles += [ "nel_drv_direct3d.dll" ]
-# SignExeDllFiles += [ "nel_drv_dsound.dll" ]
-# SignExeDllFiles += [ "nel_drv_fmod.dll" ]
-# SignExeDllFiles += [ "nel_drv_openal.dll" ]
-# SignExeDllFiles += [ "nel_drv_opengl.dll" ]
-# SignExeDllFiles += [ "nel_drv_opengl3.dll" ]
-# SignExeDllFiles += [ "nel_drv_xaudio2.dll" ]
-
-# SignExeDllFiles += [ "client_ryzom_r.exe" ]
-SignExeDllFiles += [ "ryzom_client_r.exe" ]
-# SignExeDllFiles += [ "client_ryzom.exe" ]
-# SignExeDllFiles += [ "ryzom_client.exe" ]
-# SignExeDllFiles += [ "ryzom.exe" ]
-# SignExeDllFiles += [ "ryzom_configuration_r.exe" ]
+ExeDllFiles += [ "ryzom_client_r.exe" ]
+ExeDllFiles += [ "ryzom_client_patcher.exe" ]
+ExeDllFiles += [ "ryzom_configuration_qt_r.exe" ]
+ExeDllFiles += [ "crash_report.exe" ]
 
 
 # Copy dir directories
-CopyWindowsExeDllCfgSourceFiles = [ ]
+CopyExeDllCfgSourceFiles = [ ]
 
-# CopyWindowsExeDllCfgSourceFiles += [ "Microsoft.VC90.CRT.manifest" ]
-# CopyWindowsExeDllCfgSourceFiles += [ "msvcp90.dll" ]
-# CopyWindowsExeDllCfgSourceFiles += [ "msvcr90.dll" ]
-
-# CopyWindowsExeDllCfgSourceFiles += [ "Microsoft.VC100.CRT.manifest" ]
-# CopyWindowsExeDllCfgSourceFiles += [ "msvcp100.dll" ]
-# CopyWindowsExeDllCfgSourceFiles += [ "msvcr100.dll" ]
-
-# CopyWindowsExeDllCfgSourceFiles += [ "stlport.5.2.dll" ]
-
-CopyWindowsExeDllCfgSourceFiles += [ "fmod.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "expat.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "freetype.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "libogg.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "ogg.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "libpng.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "libpng16.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "libvorbis.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "libvorbisfile.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "vorbis.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "vorbisfile.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "libiconv.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "libcharset.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "libxml2.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "zlib.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "libcurl.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "ssleay32.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "libeay32.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "libcrypto-1_1-x64.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "libssl-1_1-x64.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "jpeg62.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "lua.dll" ]
-CopyWindowsExeDllCfgSourceFiles += [ "luabind.dll" ]
-
-CopyWindowsExeDllCfgSourceFiles += [ "client_default.cfg" ]
+CopyExeDllCfgSourceFiles += [ "client_default.cfg" ]
 
 
 # *** EXPORT DIRECTORIES ***
@@ -140,6 +96,10 @@ SignedExeDllDirectory = CommonPath + "/signed_exe_dll"
 
 # Copy
 CopyInstallDirectory = CommonName
+
+# Lib
+# LibInstallDirectory = CommonName + "_lib"
+LibInstallDirectory = CommonName
 
 # Sign
 SignInstallDirectory = CommonName

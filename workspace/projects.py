@@ -25,6 +25,7 @@
 # 
 
 
+from scripts import *
 from buildsite_local import *
 import os
 
@@ -745,6 +746,13 @@ ICR2["Packages"] += [ [ "r2_forest_shapes", [ ] ] ]
 ICR2["Packages"] += [ [ "r2_desert_shapes", [ ] ] ]
 ICR2["Refs"] = [ ]
 InstallClientData += [ ICR2 ]
+
+
+if NeLConfigDir:
+	configWorkspaceDir = os.path.join(NeLConfigDir, "workspace")
+	sys.path.append(configWorkspaceDir)
+	if os.path.isfile(os.path.join(configWorkspaceDir, "projects_exedll.py")):
+		from projects_exedll import *
 
 
 # end of file

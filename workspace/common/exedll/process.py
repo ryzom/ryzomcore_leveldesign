@@ -28,7 +28,7 @@
 
 # *** PROCESS CONFIG ***
 ProcessToComplete = [ ]
-ProcessToComplete += [ "sign", "copy" ]
+ProcessToComplete += [ "sign", "lib", "copy" ]
 
 
 # *** COMMON NAMES AND PATHS ***

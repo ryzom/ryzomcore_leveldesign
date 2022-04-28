@@ -58,22 +58,22 @@ CopyDatabaseSourceFiles = [ ]
 # *** SPECIAL SOURCES ***
 
 # Copy dir directories
-CopyWindowsExeDllCfgSourceFiles = [ ]
+CopyExeDllCfgSourceFiles = [ ]
 
-CopyWindowsExeDllCfgSourceFiles += [ "client_cpu_1.cfg" ]
-CopyWindowsExeDllCfgSourceFiles += [ "client_cpu_2.cfg" ]
-CopyWindowsExeDllCfgSourceFiles += [ "client_cpu_3.cfg" ]
-CopyWindowsExeDllCfgSourceFiles += [ "client_cpu_4.cfg" ]
-CopyWindowsExeDllCfgSourceFiles += [ "client_gpu_1.cfg" ]
-CopyWindowsExeDllCfgSourceFiles += [ "client_gpu_2.cfg" ]
-CopyWindowsExeDllCfgSourceFiles += [ "client_gpu_3.cfg" ]
-CopyWindowsExeDllCfgSourceFiles += [ "client_gpu_4.cfg" ]
-CopyWindowsExeDllCfgSourceFiles += [ "client_ram_256.cfg" ]
-CopyWindowsExeDllCfgSourceFiles += [ "client_ram_512.cfg" ]
-CopyWindowsExeDllCfgSourceFiles += [ "client_sound_buffer.cfg" ]
-CopyWindowsExeDllCfgSourceFiles += [ "client_vram_32.cfg" ]
-CopyWindowsExeDllCfgSourceFiles += [ "client_vram_64.cfg" ]
-CopyWindowsExeDllCfgSourceFiles += [ "client_vram_128.cfg" ]
+CopyExeDllCfgSourceFiles += [ "client_cpu_1.cfg" ]
+CopyExeDllCfgSourceFiles += [ "client_cpu_2.cfg" ]
+CopyExeDllCfgSourceFiles += [ "client_cpu_3.cfg" ]
+CopyExeDllCfgSourceFiles += [ "client_cpu_4.cfg" ]
+CopyExeDllCfgSourceFiles += [ "client_gpu_1.cfg" ]
+CopyExeDllCfgSourceFiles += [ "client_gpu_2.cfg" ]
+CopyExeDllCfgSourceFiles += [ "client_gpu_3.cfg" ]
+CopyExeDllCfgSourceFiles += [ "client_gpu_4.cfg" ]
+CopyExeDllCfgSourceFiles += [ "client_ram_256.cfg" ]
+CopyExeDllCfgSourceFiles += [ "client_ram_512.cfg" ]
+CopyExeDllCfgSourceFiles += [ "client_sound_buffer.cfg" ]
+CopyExeDllCfgSourceFiles += [ "client_vram_32.cfg" ]
+CopyExeDllCfgSourceFiles += [ "client_vram_64.cfg" ]
+CopyExeDllCfgSourceFiles += [ "client_vram_128.cfg" ]
 
 
 # *** INSTALL DIRECTORIES IN THE CLIENT DATA ***
