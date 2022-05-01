@@ -74,6 +74,10 @@ ExeDllFiles += [ "ryzom_configuration_qt_r.exe" ]
 ExeDllFiles += [ "crash_report.exe" ]
 
 
+# Lib folders
+LibSourceDirectories = [ ]
+
+
 # Copy dir directories
 CopyExeDllCfgSourceFiles = [ ]
 
@@ -84,6 +88,10 @@ CopyExeDllCfgSourceFiles += [ "client_default.cfg" ]
 
 # Sign
 UnsignedExeDllDirectory = CommonPath + "/unsigned_exe_dll"
+
+# Lib
+LibExeDllDirectory = CommonPath + "/lib_exe_dll"
+LibTagDirectory = CommonPath + "/lib_tag"
 
 
 # *** BUILD DIRECTORIES ***
