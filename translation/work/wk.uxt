@@ -13706,3 +13706,23 @@ uiWindowSnapDistance	[Window snap distance]
 uiWindowSnapInvert	[Snap only when SHIFT is held down]
 uiWindowSnap	[Window snap]
 
+uiQuicNoResponse	[The server did not answer on its secure connection port (UDP %port).]
+
+uiQuicUnreachable	[The server's secure connection port (UDP %port) could not be reached.]
+
+uiQuicRefused	[The server refused the secure connection.]
+
+uiQuicCertificate	[The server's identity could not be verified (certificate rejected).]
+
+uiQuicProtocol	[The server does not support this client's connection protocol.]
+
+uiQuicFailed	[The secure connection to the server failed (%status).]
+
+uiQuicHintNetwork	[The server may be offline, or a firewall may be blocking that port.]
+
+uiQuicHintCertificate	[Check your computer's date and time, or contact the server team.]
+
+uiQuicHintLater	[Please try again later.]
+
+uiQuicHintUpdate	[The client or the server needs to be updated.]
+
