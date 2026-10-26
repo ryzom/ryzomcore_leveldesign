@@ -57607,10 +57607,10 @@ TELL_PLAYER_AFK ( player p )
 
 }
 
-// HASH_VALUE B108E60E1ECBC9B4
-TELL_PLAYER_UNKNOWN ( literal name )
+// HASH_VALUE 8B6607A3C8105184
+TELL_PLAYER_UNKNOWN ()
 {
-			[&SYS&$name$ ist unbekannt oder nicht online. Ihre Nachricht kann nicht weiter geleitet werden.]
+			[&SYS&Dieser Spieler ist unbekannt oder nicht online. Ihre Nachricht kann nicht weitergeleitet werden.]
 
 }
 

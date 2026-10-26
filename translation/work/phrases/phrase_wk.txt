@@ -339,9 +339,9 @@ TELL_PLAYER_AFK( player p )
 	[&SYS&$p$ is "away from keybord".]
 }
 
-TELL_PLAYER_UNKNOWN( literal name )
+TELL_PLAYER_UNKNOWN()
 {
-	[&SYS&$name$ is unknown or not online. Your message cannot be delivered.]
+	[&SYS&This player is unknown or not online. Your message cannot be delivered.]
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
