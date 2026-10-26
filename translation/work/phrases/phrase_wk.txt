@@ -344,6 +344,11 @@ TELL_PLAYER_UNKNOWN()
 	[&SYS&This player is unknown or not online. Your message cannot be delivered.]
 }
 
+CHAT_TOO_FAST()
+{
+	[&SYS&You are sending messages too fast. Your message was not sent.]
+}
+
 ////////////////////////////////////////////////////////////////////////////////////
 // compass related messages
 ////////////////////////////////////////////////////////////////////////////////////
