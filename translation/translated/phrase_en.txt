@@ -10839,6 +10839,13 @@ DUEL_TARGET_TEAM_ALREADY_IN_PVP (player p)
 
 }
 
+// HASH_VALUE 3A282DBB8BA71C79
+DUEL_TEAM_MEMBER_ALREADY_IN_PVP (player p)
+{
+			[&CHK&You cannot start a challenge because $p$, a member of your team, is already in combat against other players.]
+
+}
+
 // HASH_VALUE 782E8920AB97B8D2
 DUEL_TELEPORT ()
 {

@@ -98,6 +98,11 @@ DUEL_TARGET_TEAM_ALREADY_IN_PVP (player p)
 	[&CHK& You cant start a challenge because $p$, a member of the opponent team is already in combat against other players.]
 }
 
+DUEL_TEAM_MEMBER_ALREADY_IN_PVP (player p)
+{
+	[&CHK&You cannot start a challenge because $p$, a member of your team, is already in combat against other players.]
+}
+
 DUEL_FORBIDDEN_PLACE()
 {
 	[&CHK& Vous ne pouvez pas vous battre ici.]
