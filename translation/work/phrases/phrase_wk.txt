@@ -349,6 +349,16 @@ CHAT_TOO_FAST()
 	[&SYS&You are sending messages too fast. Your message was not sent.]
 }
 
+BOTCHAT_TOO_FAR (bot b)
+{
+	[&CHK&You are too far away from $b$.]
+}
+
+BOTCHAT_NOT_OFFERED (bot b)
+{
+	[&CHK&$b$ does not offer this service.]
+}
+
 ////////////////////////////////////////////////////////////////////////////////////
 // compass related messages
 ////////////////////////////////////////////////////////////////////////////////////

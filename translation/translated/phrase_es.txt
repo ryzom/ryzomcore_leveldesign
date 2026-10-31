@@ -57106,6 +57106,20 @@ CHAT_TOO_FAST ()
 
 }
 
+// HASH_VALUE A30F12F62AF406CB
+BOTCHAT_TOO_FAR (bot b)
+{
+			[&CHK&Estás demasiado lejos de $b$.]
+
+}
+
+// HASH_VALUE 3018F350FA989387
+BOTCHAT_NOT_OFFERED (bot b)
+{
+			[&CHK&$b$ no ofrece este servicio.]
+
+}
+
 // HASH_VALUE 07E49CEFA8AC8ADD
 TEMPLATE_TASK_CRAFT_0_TITLE (bot giver, int random, faction f)
 {

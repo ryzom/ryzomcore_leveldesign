@@ -52127,6 +52127,20 @@ CHAT_TOO_FAST ()
 
 }
 
+// HASH_VALUE A30F12F62AF406CB
+BOTCHAT_TOO_FAR (bot b)
+{
+			[&CHK&Você está longe demais de $b$.]
+
+}
+
+// HASH_VALUE 3018F350FA989387
+BOTCHAT_NOT_OFFERED (bot b)
+{
+			[&CHK&$b$ não oferece este serviço.]
+
+}
+
 // DIFF ADD
 ///////////////////tasks missions//////////////////////
 /**************************************************************************************************************************
