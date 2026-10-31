@@ -43431,6 +43431,9 @@ MIS_INSIDE_WARN ( place p, int i)
 // HASH_VALUE 6B22ADFB0F2CFC8F
 MIS_KILL_FACTION (faction f, int qt)
 {
+	(qt = 1)
+		mis_kill_faction_1	[Kill $qt$ $f.member$.]
+
 		mis_kill_faction	[Kill $qt$ $f$.]
 
 }
@@ -43438,6 +43441,9 @@ MIS_KILL_FACTION (faction f, int qt)
 // HASH_VALUE 5FE0A2614879B0CA
 MIS_KILL_FACTION_LOC (faction f, int qt, place p)
 {
+	(qt = 1)
+		mis_kill_faction_loc_1	[Kill $qt$ $f.member$ in $p$.]
+
 		mis_kill_faction_loc	[Kill $qt$ $f$ in $p$.]
 
 }
