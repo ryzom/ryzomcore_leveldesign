@@ -43838,6 +43838,13 @@ MIS_LOOT_MP_4 (item i1, int qt1, int ql1, item i2, int qt2, int ql2, item i3, in
 
 }
 
+// HASH_VALUE 8D126CB8F3CEFEE2
+MIS_OPTION_NOT_NOW (bot b)
+{
+			[&CHK&$b$ cannot help you with this now. Come back at another time.]
+
+}
+
 //generic outside place constraint 3d message
 // HASH_VALUE F27B563FF2F14B35
 MIS_OUTSIDE (place p)
