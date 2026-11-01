@@ -139,6 +139,16 @@ OUTPOST_IN_CONFLICT()
 	[&SYS&Vous participez au conflit sur cet outpost.]
 }
 
+OUTPOST_SIDE_ATTACKER(outpost o)
+{
+	[&SYS&You are on the attackers' side in the battle for outpost $o.name$.]
+}
+
+OUTPOST_SIDE_DEFENDER(outpost o)
+{
+	[&SYS&You are on the defenders' side in the battle for outpost $o.name$.]
+}
+
 OUTPOST_CANT_PARTICIPATE()
 {
 	[&CHK&Vous êtes banni de cet outpost, vous ne pouvez pas participer au conflit en cours.]

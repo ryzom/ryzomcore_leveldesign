@@ -47996,6 +47996,20 @@ OUTPOST_PLAYER_BANISHED_DEFENSE ()
 
 }
 
+// HASH_VALUE ED59AF0B37FE908A
+OUTPOST_SIDE_ATTACKER (outpost o)
+{
+			[&SYS&Estás del lado de los atacantes en la batalla por el puesto $o.name$.]
+
+}
+
+// HASH_VALUE EDE9DB0FB30D9C8A
+OUTPOST_SIDE_DEFENDER (outpost o)
+{
+			[&SYS&Estás del lado de los defensores en la batalla por el puesto $o.name$.]
+
+}
+
 // HASH_VALUE A943DC1D1550341C
 OUTPOST_SQUAD_RECRUITED ()
 {
