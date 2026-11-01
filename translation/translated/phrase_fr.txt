@@ -12389,6 +12389,13 @@ EGS_CANT_SELL_ANYTHING ()
 
 }
 
+// HASH_VALUE 8A3FB601B2451DBE
+EGS_CANT_TAKE_GUILD_MONEY_IS_TRIAL_PLAYER ()
+{
+			[&CHK&Vous ne pouvez pas prendre d'argent de l'inventaire de guilde car vous êtes en période d'essai. Vous devez mettre à niveau votre compte pour être en mesure de le faire.]
+
+}
+
 // HASH_VALUE 8A3F9E0970960DBE
 EGS_CANT_USE_GUILD_INV_IS_TRIAL_PLAYER ()
 {
