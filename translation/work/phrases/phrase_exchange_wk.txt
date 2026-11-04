@@ -64,11 +64,11 @@ EXCHANGE_TEMP_INVENTORY_MUST_EMPTY()
 }
 TOO_ENCUMBERED_FOR_EXCHANGE()
 {
-	[&CHK&You are too encumbered for made this exchange.]
+	[&CHK&You are too encumbered to make this exchange.]
 }
 INTERLOCUTOR_TOO_ENCUMBERED_FOR_EXCHANGE(player p)
 {
-	[&CHK&Character $p$ are to encumbered for made this exchange.]
+	[&CHK&$p$ is too encumbered to make this exchange.]
 }
 
 INVALID_EXCHANGE_IN_RING()
