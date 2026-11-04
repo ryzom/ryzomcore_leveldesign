@@ -11,7 +11,7 @@ for the facts they compare against. Folders named `_unpublished_` are skipped.
 | `craft_titles.py PRIMITIVESDIR [--fix]` | Craft tasks whose nation title (`TEMPLATE_TASK_CRAFT_11..14_TITLE`) does not match the nation of the crafted items. |
 | `dup_titles.py PRIMITIVESDIR` | Givers that list two missions under the same title (same title phrase and parameters). Hand-written missions shown one at a time through prerequisites appear here too. |
 | `dedup_titles.py ROOT [--fix]` | Gives duplicate generated tasks (`TEMPLATE_TASK_*_TITLE`) unused title variants, and moves the intro variant along where it matched. Variants with the same text in a language still read the same there. |
-| `ammo_scan.py ROOT [--cap BULK] [--fix]` | Craft steps whose built items exceed the bag bulk (300 by default); with `--fix`, lowers the heavy items to whole crafts that fit. |
+| `ammo_scan.py ROOT [--cap BULK] [--fix]` | Craft steps whose built items exceed the bag bulk (300 by default); with `--fix`, lowers the heavy items to whole crafts that fit, and scales their item-priced money (`decl_price`, `recv_money`) by the same ratio. |
 | `mission_givers.py FILE...` | Lists the kill and target race missions per giver bot. |
 
 Run without `--fix` first and read the list; the fixes edit the primitives in place.

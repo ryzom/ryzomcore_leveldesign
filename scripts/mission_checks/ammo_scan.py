@@ -4,7 +4,9 @@ Item bulk comes from the sitem sheets (through PARENT sheets), the number built 
 ('Nb built items'), so a craft step for N items builds ceil(N / per craft) * per craft of them. With --fix the
 quantity of every heavy item (bulk >= 1) in the craft, give_item and mission_desc lines is lowered to the largest
 multiple of its per-craft count, all heavy items of a step by the same factor, so that the step's bulk stays within
-the cap with its light items counted as they are."""
+the cap with its light items counted as they are. The item-priced money of the mission (the decl_price variable the
+intro shows and the recv_money reward, '<item> <quality> <factor>') follows: the factor of a lowered item is scaled by
+the same ratio as its quantity."""
 import sys, os, re, math, collections
 
 root = sys.argv[1]
@@ -33,6 +35,20 @@ def atom(name, key, depth=0):
 		if r is not None:
 			return r
 	return None
+
+
+def c_atof(s):
+	"""atof in the "C" numeric locale the services run with: '30,48' reads as 30."""
+	m = re.match(r'\s*[+-]?(\d+\.?\d*|\.\d+)([eE][+-]?\d+)?', s)
+	return float(m.group(0)) if m else 0.0
+
+
+def scale_price(line, item, q, nq):
+	"""Scales the factor of item in a decl_price or recv_money line by nq / q."""
+	def sub(m):
+		f = c_atof(m.group(3)) * nq / q
+		return m.group(1) + m.group(2) + ('%.2f' % f).rstrip('0').rstrip('.')
+	return re.sub(r'(\b%s\s+)(\d+\s+)([0-9.,]+)' % re.escape(item), sub, line)
 
 
 per_craft = {}
@@ -95,7 +111,7 @@ for dp, dn, fn in os.walk(prim):
 			print('%s:%d\t%s\tbulk %g -> %g' % (os.path.relpath(path, prim).replace(os.sep, '/'), i + 1,
 				'; '.join('%s %d->%d' % (it, q, nq) for it, (q, nq) in new.items()), total, newtotal))
 			if fix:
-				# craft line, then give_item and mission_desc of the same mission script property
+				# craft line, then give_item, mission_desc and the money lines of the same mission script property
 				st = i
 				while st > 0 and '<NAME>script</NAME>' not in lines[st]:
 					st -= 1
@@ -105,9 +121,11 @@ for dp, dn, fn in os.walk(prim):
 				for j in range(st, en):
 					t = lines[j]
 					for it, (q, nq) in new.items():
-						if not re.search(r'<STRING>\s*(craft|give_item|mission_desc)\b', t):
+						if nq == q or not re.search(r'<STRING>\s*(craft|give_item|mission_desc|decl_price|recv_money)\b', t):
 							continue
-						if re.search(r'<STRING>\s*mission_desc\b', t):
+						if re.search(r'<STRING>\s*(decl_price|recv_money)\b', t):
+							t2 = scale_price(t, it, q, nq)
+						elif re.search(r'<STRING>\s*mission_desc\b', t):
 							t2 = re.sub(r'(;\s*%s;\s*)%d(;)' % (re.escape(it), q), r'\g<1>%d\2' % nq, t)
 						else:
 							t2 = re.sub(r'(\b%s\s+)%d(\s)' % (re.escape(it), q), r'\g<1>%d\2' % nq, t)
