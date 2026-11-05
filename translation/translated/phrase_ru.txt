@@ -60863,7 +60863,7 @@ TEMPLATE_TASK_CRAFT_17_TITLE (bot giver, int random, faction f)
 		template_task_craft_17_title_7	[$f.name$, друзья $giver$, хотят получить новые украшения]
 
 	(random = 8)
-		template_task_craft_17_title_8	[$f.name$, друзья $giver$, нуждаются в помощи ювелира]
+		template_task_craft_17_title_8	[$f.name$, друзья $giver$, ищут ювелира]
 
 	(random = 9)
 		template_task_craft_17_title_9	[Заказ на украшения для друзей $giver$ - $f.membergen$]
@@ -61733,13 +61733,13 @@ TEMPLATE_TASK_FORAGE_2_TITLE (bot giver, int random, faction f)
 		template_task_forage_2_title_5	[Искорените следы жизнедеятельности китинов в полях, принадлежащих $giver$]
 
 	(random = 6)
-		template_task_forage_2_title_6	[Устраните следы жизнедеятельности китинов с полей, принадлежащих $giver$]
+		template_task_forage_2_title_6	[Расчистите поля, принадлежащие $giver$, от следов жизнедеятельности китинов]
 
 	(random = 7)
 		template_task_forage_2_title_7	[$giver$ нужен кто-то, кто мог бы устранить следы жизнедеятельности китинов в его полях]
 
 	(random = 8)
-		template_task_forage_2_title_8	[$giver$ нужен кто-то, кто мог бы устранить следы китинов с его полей]
+		template_task_forage_2_title_8	[$giver$ нужен кто-то, кто мог бы расчистить его поля от следов китинов]
 
 	(random = 9)
 		template_task_forage_2_title_9	[$giver$ просит, чтобы его поля были очищены от следов китинов]
@@ -61768,18 +61768,18 @@ TEMPLATE_TASK_FORAGE_3_TITLE (bot giver, int random, faction f)
 		template_task_forage_3_title_5	[Искорените следы жизнедеятельности гуу в полях, принадлежащих $giver$]
 
 	(random = 6)
-		template_task_forage_3_title_6	[Очистите поля, принадлежащие $giver$, которые были заражены гуу]
+		template_task_forage_3_title_6	[Избавьте поля, принадлежащие $giver$, от заражения гуу]
 
 	(random = 7)
-		template_task_forage_3_title_7	[$giver$ нужен кто-то, кто мог бы устранить следы жизнедеятельности китинов в его полях]
+		template_task_forage_3_title_7	[$giver$ нужен кто-то, кто мог бы устранить следы жизнедеятельности гуу в его полях]
 
 	(random = 8)
 		template_task_forage_3_title_8	[$giver$ нужен кто-то, кто мог бы очистить его поля, которые были заражены гуу]
 
 	(random = 9)
-		template_task_forage_3_title_9	[$giver$ просит, чтобы его поля были очищены от следов китинов]
+		template_task_forage_3_title_9	[$giver$ просит, чтобы его поля были очищены от следов гуу]
 
-		template_task_forage_3_title_10	[$giver$ просит, чтобы кто-то устранил следы жизнедеятельности китинов в его полях]
+		template_task_forage_3_title_10	[$giver$ просит, чтобы кто-то устранил следы жизнедеятельности гуу в его полях]
 
 }
 
@@ -61838,7 +61838,7 @@ TEMPLATE_TASK_FORAGE_5_TITLE (bot giver, int random, faction f)
 		template_task_forage_5_title_5	[Искорените следы жизнедеятельности китинов в полях]
 
 	(random = 6)
-		template_task_forage_5_title_6	[Устраните следы китинов с полей]
+		template_task_forage_5_title_6	[Расчистите поля от следов китинов]
 
 	(random = 7)
 		template_task_forage_5_title_7	[$giver$ нужно, чтобы кто-то искоренил следы жизнедеятельности китинов в его полях]
@@ -61978,7 +61978,7 @@ TEMPLATE_TASK_FORAGE_9_TITLE (bot giver, int random, faction f)
 		template_task_forage_9_title_5	[Искорените следы заражения гуу для $f.membergen$]
 
 	(random = 6)
-		template_task_forage_9_title_6	[Очистите поля, принадлежащие $f.membergen$, которые были заражены гуу]
+		template_task_forage_9_title_6	[Избавьте поля, принадлежащие $f.membergen$, от заражения гуу]
 
 	(random = 7)
 		template_task_forage_9_title_7	[$f.memberdat$ нужен кто-то, кто мог бы искоренить следы заражения гуу в их полях]
@@ -62057,7 +62057,7 @@ TEMPLATE_TASK_FORAGE_GIVE_10_TITLE (bot giver, int random, faction f)
 		template_task_forage_give_10_title_8	[$f.memberdat$ нужен кто-то, кто мог бы достать останки китинов для проведения исследований]
 
 	(random = 9)
-		template_task_forage_give_10_title_9	[Обеспечьте $f.name$ останками китинов для проведения исследований]
+		template_task_forage_give_10_title_9	[Доставьте $f.memberdat$ останки китинов для проведения исследований]
 
 		template_task_forage_give_10_title_10	[$f.memberdat$ нужно, чтобы кто-то добыл останки китинов для проведения исследований]
 
@@ -62092,7 +62092,7 @@ TEMPLATE_TASK_FORAGE_GIVE_11_TITLE (bot giver, int random, faction f)
 		template_task_forage_give_11_title_8	[$f.memberdat$ нужен кто-то, кто мог бы достать останки гуу для проведения исследований]
 
 	(random = 9)
-		template_task_forage_give_11_title_9	[Обеспечьте $f.name$ останками гуу для проведения исследований]
+		template_task_forage_give_11_title_9	[Доставьте $f.memberdat$ останки гуу для проведения исследований]
 
 		template_task_forage_give_11_title_10	[$f.memberdat$ нужно, чтобы кто-то добыл останки гуу для проведения исследований]
 
@@ -62121,7 +62121,7 @@ TEMPLATE_TASK_FORAGE_GIVE_12_TITLE (bot giver, int random, faction f)
 		template_task_forage_give_12_title_6	[Заказ на поставку консервантов для $f.membergen$]
 
 	(random = 7)
-		template_task_forage_give_12_title_7	[Найдите немного консервантов для $f.membergen$]
+		template_task_forage_give_12_title_7	[Соберите немного консервантов для $f.membergen$]
 
 	(random = 8)
 		template_task_forage_give_12_title_8	[$f.memberdat$ нужен кто-то, кто мог бы достать немного консервантов]
@@ -62129,7 +62129,7 @@ TEMPLATE_TASK_FORAGE_GIVE_12_TITLE (bot giver, int random, faction f)
 	(random = 9)
 		template_task_forage_give_12_title_9	[Достаньте $f.memberdat$ немного консервантов]
 
-		template_task_forage_give_12_title_10	[$f.memberdat$ нужен кто-то, кто мог бы достать немного консервантов]
+		template_task_forage_give_12_title_10	[$f.memberdat$ нужен кто-то, кто мог бы собрать немного консервантов]
 
 }
 
@@ -62404,7 +62404,7 @@ TEMPLATE_TASK_FORAGE_GIVE_1_TITLE (bot giver, int random, faction f)
 		template_task_forage_give_1_title_7	[Добыча стройматериалов]
 
 	(random = 8)
-		template_task_forage_give_1_title_8	[Добыча стройматериалов]
+		template_task_forage_give_1_title_8	[Сбор стройматериалов]
 
 	(random = 9)
 		template_task_forage_give_1_title_9	[$giver$ необходимы стройматериалы]
@@ -64425,10 +64425,10 @@ TEMPLATE_TASK_KILL_SPECIES_3_TITLE (bot giver, place region, int random, faction
 		template_task_kill_species_3_title_6	[$giver$ нужно, чтобы кто-то уничтожил разумные растения, вторгающиеся в окрестности $region.placegen$]
 
 	(random = 7)
-		template_task_kill_species_3_title_7	[$giver$ нужно, чтобы кто-то уничтожил разумные растения, вторгающиеся в окрестности $region.placegen$]
+		template_task_kill_species_3_title_7	[$giver$ нужно, чтобы кто-то уничтожил разумные растения, разросшиеся в окрестностях $region.placegen$]
 
 	(random = 8)
-		template_task_kill_species_3_title_8	[$giver$ нужно, чтобы кто-то избавился от разумные растения, вторгающиеся в окрестности $region.placegen$]
+		template_task_kill_species_3_title_8	[$giver$ нужно, чтобы кто-то избавился от разумных растений, вторгающихся в окрестности $region.placegen$]
 
 	(random = 9)
 		template_task_kill_species_3_title_9	[$giver$ хочет истребить разумные растения, вторгающиеся в окрестности $region.placegen$]
@@ -64619,7 +64619,7 @@ TEMPLATE_TASK_LOOT_GIVE_0_TITLE (bot giver, int random, faction f)
 		template_task_loot_give_0_title_6	[Соберите немного сырья животного происхождения]
 
 	(random = 7)
-		template_task_loot_give_0_title_7	[$giver$ needs немного сырья животного происхождения]
+		template_task_loot_give_0_title_7	[$giver$ нужно немного сырья животного происхождения]
 
 	(random = 8)
 		template_task_loot_give_0_title_8	[$giver$ требуется кто-то, кто мог бы достать нужное количество сырья животного происхождения]
@@ -64870,7 +64870,7 @@ TEMPLATE_TASK_LOOT_GIVE_20_TITLE (bot giver, int random, faction f)
 		template_task_loot_give_20_title_8	[Караван ищет кого-нибудь, кто мог бы обеспечить им нужное количество крови]
 
 	(random = 9)
-		template_task_loot_give_20_title_9	[Каравану требуется охотник, чтобы пополнить запас of крови]
+		template_task_loot_give_20_title_9	[Каравану требуется охотник, чтобы пополнить запас крови]
 
 		template_task_loot_give_20_title_10	[Каравану необходимо пополнить запас крови]
 
@@ -64931,7 +64931,7 @@ TEMPLATE_TASK_LOOT_GIVE_22_TITLE (bot giver, int random, faction f)
 		template_task_loot_give_22_title_5	[$giver$ требуется помощь; нужно собрать немного меха]
 
 	(random = 6)
-		template_task_loot_give_22_title_6	[Помогите $giver$ собрать немного меха]
+		template_task_loot_give_22_title_6	[Помогите $giver$ набрать немного меха]
 
 	(random = 7)
 		template_task_loot_give_22_title_7	[$giver$ нужна помощь, чтобы добыть немного меха]
@@ -65007,7 +65007,7 @@ TEMPLATE_TASK_LOOT_GIVE_27_TITLE (bot giver, int random, faction f)
 		template_task_loot_give_27_title_7	[$giver$ нужна помощь, чтобы собрать немного фрагментов разумных растений]
 
 	(random = 8)
-		template_task_loot_give_27_title_8	[$giver$ needs a hand собрать немного фрагментов разумных растений]
+		template_task_loot_give_27_title_8	[$giver$ нужно, чтобы кто-то добыл немного фрагментов разумных растений]
 
 	(random = 9)
 		template_task_loot_give_27_title_9	[$giver$ необходима услуга; помогите собрать немного фрагментов разумных растений]
@@ -65106,7 +65106,7 @@ TEMPLATE_TASK_LOOT_GIVE_31_TITLE (bot giver, int random, faction f)
 		template_task_loot_give_31_title_5	[$giver$ требуется помощь; нужно собрать немного мяса для друзей из $f$]
 
 	(random = 6)
-		template_task_loot_give_31_title_6	[Помогите добыть немного мяса для $f$, друзей $giver$]
+		template_task_loot_give_31_title_6	[Помогите набрать немного мяса для $f$, друзей $giver$]
 
 	(random = 7)
 		template_task_loot_give_31_title_7	[$giver$ нужна помощь, чтобы собрать немного мяса для друзей из $f$]
@@ -65179,7 +65179,7 @@ TEMPLATE_TASK_LOOT_GIVE_33_TITLE (bot giver, int random, faction f)
 		template_task_loot_give_33_title_6	[Помогите раздобыть немного костей для $f$, друзей $giver$]
 
 	(random = 7)
-		template_task_loot_give_33_title_7	[$giver$ нужна помощь, чтобы to достать немного костей для друзей из $f$]
+		template_task_loot_give_33_title_7	[$giver$ нужна помощь, чтобы собрать немного костей для друзей из $f$]
 
 	(random = 8)
 		template_task_loot_give_33_title_8	[$giver$ нужна помощь, чтобы достать немного костей для друзей из $f$]
@@ -65211,13 +65211,13 @@ TEMPLATE_TASK_LOOT_GIVE_34_TITLE (bot giver, int random, faction f)
 		template_task_loot_give_34_title_5	[$giver$ требуется помощь; нужно собрать немного крови для друзей из $f$]
 
 	(random = 6)
-		template_task_loot_give_34_title_6	[Помогите collect up немного крови для $f$, друзей $giver$]
+		template_task_loot_give_34_title_6	[Помогите набрать немного крови для $f$, друзей $giver$]
 
 	(random = 7)
 		template_task_loot_give_34_title_7	[$giver$ нужна помощь, чтобы собрать немного крови для друзей из $f$]
 
 	(random = 8)
-		template_task_loot_give_34_title_8	[$giver$ требуется помощь; собрать немного крови для друзей из $f$]
+		template_task_loot_give_34_title_8	[$giver$ нужно, чтобы кто-то добыл немного крови для друзей из $f$]
 
 	(random = 9)
 		template_task_loot_give_34_title_9	[$giver$ необходима услуга; помогите собрать немного крови для друзей из $f$]
