@@ -2,6 +2,8 @@
 
 phrase_edit.py text FILE ID CLAUSE_INDEX OLD_TEXT NEW_TEXT
 	replaces the (unescaped) text of one clause; OLD_TEXT must match the parsed text exactly.
+phrase_edit.py texts FILE EDITS.tsv
+	the same for many clauses, named by their identifier: rows ID<TAB>CLAUSE_IDENTIFIER<TAB>OLD_TEXT<TAB>NEW_TEXT.
 phrase_edit.py rehash ID OLDHASH NEWHASH FILE...
 	replaces the HASH_VALUE comment preceding phrase ID.
 phrase_edit.py hash FILE ID
@@ -36,6 +38,49 @@ if cmd == 'text' and len(sys.argv) == 7:
 		ryi18n.fail('%s: check failed' % path)
 	ryi18n.write_text(path, s, bom)
 	print(path, pid, 'clause', idx, 'set')
+elif cmd == 'texts' and len(sys.argv) == 4:
+	path, tsv = sys.argv[2], sys.argv[3]
+	rows = []
+	for line in open(tsv, encoding='utf-8-sig'):
+		line = line.rstrip('\r\n')
+		if line:
+			f = line.split('\t')
+			if len(f) != 4:
+				ryi18n.fail('%s: expected 4 fields: %r' % (tsv, line))
+			rows.append(f)
+	s, bom = ryi18n.read_text(path)
+	phrases = {}
+	for p in ryi18n.parse_phrases(s):
+		phrases.setdefault(p['id'], []).append(p)
+	edits = []
+	seen = set()
+	for pid, ident, old, new in rows:
+		if len(phrases.get(pid, [])) != 1:
+			ryi18n.fail('%s: %d phrases named %s' % (path, len(phrases.get(pid, [])), pid))
+		p = phrases[pid][0]
+		idx = [i for i, c in enumerate(p['clauses']) if c[1] == ident]
+		if (pid, ident) in seen:
+			ryi18n.fail('%s: clause %s of %s is in the TSV twice' % (tsv, ident, pid))
+		if len(idx) != 1:
+			ryi18n.fail('%s: clause %s of %s found %d times' % (path, ident, pid, len(idx)))
+		seen.add((pid, ident))
+		if p['clauses'][idx[0]][2] != old:
+			ryi18n.fail('%s: clause %s of %s is %r' % (path, ident, pid, p['clauses'][idx[0]][2]))
+		edits.append((p['spans'][idx[0]], pid, ident, new))
+	for (a, b), pid, ident, new in sorted(edits, reverse=True):
+		s = s[:a] + '[' + ryi18n.escape(new) + ']' + s[b:]
+	after = {}
+	for p in ryi18n.parse_phrases(s):
+		after.setdefault(p['id'], []).append(p)
+	if sorted(after) != sorted(phrases):
+		ryi18n.fail('%s: check failed, phrase list changed' % path)
+	for _, pid, ident, new in edits:
+		q = after[pid][0]
+		if [c[1] for c in q['clauses']] != [c[1] for c in phrases[pid][0]['clauses']] or \
+				[c[2] for c in q['clauses'] if c[1] == ident] != [new]:
+			ryi18n.fail('%s: check failed for %s' % (path, ident))
+	ryi18n.write_text(path, s, bom)
+	print(path, len(edits), 'clauses set')
 elif cmd == 'rehash' and len(sys.argv) >= 6:
 	pid, old, new = sys.argv[2], sys.argv[3], sys.argv[4]
 	for path in sys.argv[5:]:

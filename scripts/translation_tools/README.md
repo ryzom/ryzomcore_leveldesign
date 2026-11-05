@@ -37,6 +37,7 @@ reverts the phrase.
 | `uxt_rehash.py KEY OLD NEW FILE...` | Replaces the `HASH_VALUE` of one key. |
 | `uxt_tokens.py TRANSLATEDDIR LANG KEYS.tsv [--fix-trailing OUT.tsv]` | Compares placeholders, colour codes, newlines and trailing spaces of the listed keys with en; `--fix-trailing` writes OUT.tsv with the trailing spaces of en, for `uxt_set.py`. |
 | `phrase_edit.py text FILE ID INDEX OLD NEW` | Replaces the text of one clause of a phrase. |
+| `phrase_edit.py texts FILE EDITS.tsv` | The same for many clauses at once, from `ID<TAB>CLAUSE_IDENTIFIER<TAB>OLD<TAB>NEW` rows; with `uxt_set.py` on `clause_<lang>.txt` for the clause copies. |
 | `phrase_edit.py hash FILE ID` | Prints the computed hash of a phrase (meaningful in work files) and the one stored before it. |
 | `phrase_edit.py rehash ID OLD NEW FILE...` | Replaces the `HASH_VALUE` of one phrase. |
 | `words_edit.py set/setcell/renameid/hash/rehash ...` | The same for the `*_words_*.txt` sheets. |
