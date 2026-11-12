@@ -173,6 +173,7 @@ InstallShardDataExecutables += [ [ "service_tick_service", [ "tick_service", "ry
 InstallShardDataExecutables += [ [ "service_mirror_service", [ "mirror_service", "ryzom_mirror_service" ], [ "mirror_service.cfg" ], [ ] + psDatasets ] ]
 InstallShardDataExecutables += [ [ "service_input_output_service", [ "input_output_service", "ryzom_ios_service" ], [ "input_output_service.cfg" ], [ ] + psDatasets + psIOS ] ]
 InstallShardDataExecutables += [ [ "service_gpm_service", [ "gpm_service", "ryzom_gpm_service" ], [ "gpm_service.cfg" ], [ ] + psDatasets + psGPMS + psContinents ] ]
+InstallShardDataExecutables += [ [ "service_monitor_service", [ "monitor_service", "ryzom_monitor_service" ], [ "monitor_service.cfg" ], [ ] + psDatasets ] ]
 InstallShardDataExecutables += [ [ "service_session_browser_server", [ "session_browser_server", "ryzom_session_browser_service" ], [ ], [ ] ] ]
 InstallShardDataExecutables += [ [ "service_entities_game_service", [ "entities_game_service", "ryzom_entities_game_service" ], [ "entities_game_service.cfg" ], [ "data_shard/shop_category.cfg", "data_shard/client_commands_privileges.txt", "data_shard/client_commands_privileges_open.txt", "data_shard/named_items.txt", "data_shard/mission_queues.txt", "data_shard/game_event.txt" ] + psEGS + psDatasets + psLightCycles ] ]
 InstallShardDataExecutables += [ [ "service_ai_service", [ "ai_service", "ryzom_ai_service" ], [ "ai_service.cfg" ], [ "data_shard/shop_category.cfg" ] + psAIS + psDatasets + psLightCycles ] ]
