@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <FORM Revision="4.0" State="modified">
-  <PARENT Filename="_parent_botobject.creature"/>
+  <PARENT Filename="_parent_fx.creature"/>
   <STRUCT>
     <STRUCT Name="Basics">
       <STRUCT Name="Equipment">
@@ -10,7 +10,6 @@
       </STRUCT>
     </STRUCT>
     <STRUCT Name="Collision">
-      <ATOM Name="CollisionRadius" Value="0.5"/>
       <ATOM Name="BoundingRadius" Value="0.5"/>
     </STRUCT>
   </STRUCT>
