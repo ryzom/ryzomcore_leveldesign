@@ -2487,6 +2487,13 @@ CHALLENGE_YOU_AGGRO ()
 
 }
 
+// HASH_VALUE 44909A5E8EE9A6FA
+CHALLENGE_YOU_INVITE (player p)
+{
+			[&SYS&You propose a PvP challenge to $p$.]
+
+}
+
 // HASH_VALUE AF1522BE9FD7E67C
 CHANT_1 ()
 {
@@ -10891,6 +10898,13 @@ DUEL_YOU_CANCEL_INVITATION (player p)
 DUEL_YOU_ENTER_PVP_ZONE ()
 {
 			[&SYS&Your have lost your duel because you have entered a PVP zone.]
+
+}
+
+// HASH_VALUE 2FD6014ADAD710E0
+DUEL_YOU_INVITE (player p)
+{
+			[&SYS&You propose a duel to $p$.]
 
 }
 
@@ -56712,6 +56726,13 @@ TEAM_INVITED_CHARACTER_MUST_BE_ONLINE ()
 
 }
 
+// HASH_VALUE 783B416DD31ED9BB
+TEAM_INVITE_EXPIRED (player p)
+{
+			[&SYS&Your team invitation to $p$ has expired.]
+
+}
+
 // HASH_VALUE AA5A11E6349DC1E4
 TEAM_JOIN_LEAGUE ()
 {
@@ -56792,6 +56813,20 @@ TEAM_PROPOSAL (player p)
 		team_proposal_m	[$p$ offers you to join his team.]
 
 		team_proposal_f	[$p$ offers you to join her team.]
+
+}
+
+// HASH_VALUE 7D2B4B260D5DE1F5
+TEAM_PROPOSAL_EXPIRED (player p)
+{
+			[&SYS&The team invitation of $p$ has expired.]
+
+}
+
+// HASH_VALUE 62278327CCDCD127
+TEAM_PROPOSAL_WITHDRAWN (player p)
+{
+			[&SYS&The team invitation of $p$ is withdrawn.]
 
 }
 

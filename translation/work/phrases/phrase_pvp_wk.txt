@@ -78,6 +78,11 @@ PVP_CHALLENGE_INVITATION( player p )
 	[$p$ and his team challenges you and your team.]
 }
 
+CHALLENGE_YOU_INVITE(player p)
+{
+	[&SYS&You propose a PvP challenge to $p$.]
+}
+
 DUEL_YOU_ALREADY_IN_PVP(player p)
 {
 	[&CHK& You cant fight $p$ as you are already engaged against other players.]
@@ -141,6 +146,11 @@ DUEL_REFUSE_INVITATION (player p)
 DUEL_INVITATION(player p)
 {
 	[$p$ invites you to duel. Do you accept?]
+}
+
+DUEL_YOU_INVITE(player p)
+{
+	[&SYS&You propose a duel to $p$.]
 }
 
 DUEL_DISCONNECT ()

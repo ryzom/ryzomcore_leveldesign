@@ -32,6 +32,18 @@ TEAM_PROPOSAL(player p)
 		team_proposal_m	[$p$ offers you to join his team.]
 	team_proposal_f	[$p$ offers you to join her team.]
 }
+TEAM_INVITE_EXPIRED(player p)
+{
+	[&SYS&Your team invitation to $p$ has expired.]
+}
+TEAM_PROPOSAL_EXPIRED(player p)
+{
+	[&SYS&The team invitation of $p$ has expired.]
+}
+TEAM_PROPOSAL_WITHDRAWN(player p)
+{
+	[&SYS&The team invitation of $p$ is withdrawn.]
+}
 TEAM_ACCEPT(player p)
 {
 	team_accept	[&AROUND&$p$ joins your team.]

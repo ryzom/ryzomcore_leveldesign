@@ -2483,6 +2483,13 @@ CHALLENGE_YOU_AGGRO ()
 
 }
 
+// HASH_VALUE 44909A5E8EE9A6FA
+CHALLENGE_YOU_INVITE (player p)
+{
+			[&SYS&Propuesta de reto JcJ enviada a $p$.]
+
+}
+
 // HASH_VALUE AF1522BE9FD7E67C
 CHANT_1 ()
 {
@@ -10885,6 +10892,13 @@ DUEL_YOU_CANCEL_INVITATION (player p)
 DUEL_YOU_ENTER_PVP_ZONE ()
 {
 			[&SYS&Has perdido el duelo porque has entrado en la zona JcJ.]
+
+}
+
+// HASH_VALUE 2FD6014ADAD710E0
+DUEL_YOU_INVITE (player p)
+{
+			[&SYS&Propuesta de duelo enviada a $p$.]
 
 }
 
@@ -56932,6 +56946,13 @@ TEAM_INVITED_CHARACTER_MUST_BE_ONLINE ()
 
 }
 
+// HASH_VALUE 783B416DD31ED9BB
+TEAM_INVITE_EXPIRED (player p)
+{
+			[&SYS&La invitación a $p$ para unirse al equipo ha expirado.]
+
+}
+
 // HASH_VALUE AA5A11E6349DC1E4
 TEAM_JOIN_LEAGUE ()
 {
@@ -57005,6 +57026,20 @@ TEAM_PROPOSAL (player p)
 		team_proposal_m	[$p$ te invita a formar parte de su equipo.]
 
 		team_proposal_f	[$p$ te invita a formar parte de su equipo.]
+
+}
+
+// HASH_VALUE 7D2B4B260D5DE1F5
+TEAM_PROPOSAL_EXPIRED (player p)
+{
+			[&SYS&La invitación de $p$ para unirse a su equipo ha expirado.]
+
+}
+
+// HASH_VALUE 62278327CCDCD127
+TEAM_PROPOSAL_WITHDRAWN (player p)
+{
+			[&SYS&La invitación de $p$ para unirse a su equipo ha sido retirada.]
 
 }
 
