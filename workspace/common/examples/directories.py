@@ -25,6 +25,7 @@
 # 
 
 from buildsite import *
+import os
 
 # *** COMMON NAMES AND PATHS ***
 CommonName = "examples"
@@ -35,8 +36,14 @@ CommonPath = "common/" + CommonName
 
 # The example scenarios and the NPC name lists of the Ring editor
 CopyDirectSourceDirectories = [ ]
-CopyDirectSourceDirectories += [ ExamplesDirectory ]
 CopyDirectSourceFiles = [ ]
+for fileName in sorted(os.listdir(ExamplesDirectory)):
+	# Left out for now: the feature list of the Ring editor also comes with data_common, with the
+	# Dev features, and a loose copy in examples would replace the one in the bnp of a packed client
+	if fileName == "r2_features_loaded.lua":
+		continue
+	if os.path.isfile(ExamplesDirectory + "/" + fileName):
+		CopyDirectSourceFiles += [ ExamplesDirectory + "/" + fileName ]
 
 
 # *** SOURCE DIRECTORIES IN LEVELDESIGN ***
