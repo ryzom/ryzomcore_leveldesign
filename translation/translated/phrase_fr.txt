@@ -35849,7 +35849,7 @@ MAGIC_HEAL_FOCUS_TARGET (entity e, int i)
 // HASH_VALUE 45C80D68F2E0B3D1
 MAGIC_HEAL_FULL_SCORE_ACTOR (entity e, score s)
 {
-		magic_heal_full_score_actor	[&SYS&$e.da$ $e$ est maintenant au maximum $s$ et n'a plus besoin de sorts de guérison $s$.]
+		magic_heal_full_score_actor	[&SYS&$e.da$ $e$ a maintenant ses $s.points$ au maximum et n'a plus besoin de sorts de soin.]
 
 }
 
@@ -35859,7 +35859,7 @@ MAGIC_HEAL_FULL_SCORE_TARGET (score s)
 	(s.score_ID = hit_points)
 		magic_heal_full_score_target_hp	[&SYS&Vous êtes maintenant en pleine forme et n'avez plus besoin de soin.]
 
-		magic_heal_full_score_target	[&SYS&Vous êtes au maximum $s$.]
+		magic_heal_full_score_target	[&SYS&Vos $s.points$ sont au maximum.]
 
 }
 
