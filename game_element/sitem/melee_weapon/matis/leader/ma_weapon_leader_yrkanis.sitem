@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_c_m2pp.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="matis two-handed piercing pike leader"/>
+      <ATOM Name="origin" Value="matis"/>
+      <ATOM Name="Drop or Sell" Value="false"/>
+      <ATOM Name="Saleable" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="ge_mission_chef_wea_ma.shape"/>
+      <ATOM Name="shape_female" Value="ge_mission_chef_wea_ma.shape"/>
+      <ATOM Name="icon background" Value="bk_matis.png"/>
+      <STRUCT Name="fx">
+        <ATOM Name="AdvantageFX" Value="ge_mission_chef_wea_ma.ps"/>
+        <ARRAY Name="StaticFXs">
+          <STRUCT>
+            <ATOM Name="Name" Value="ge_mission_chef_wea_ma.ps"/>
+            <ATOM Name="Bone" Value="box_arme"/>
+          </STRUCT>
+        </ARRAY>
+      </STRUCT>
+      <ATOM Name="has_fx" Value="true"/>    </STRUCT>
+  </STRUCT>
+</FORM>

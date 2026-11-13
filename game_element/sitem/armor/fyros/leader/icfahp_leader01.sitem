@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_c_ah.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="fyros heavy pants leader"/>
+      <ATOM Name="origin" Value="fyros"/>
+      <ATOM Name="ItemType" Value="Heavy pants"/>
+      <STRUCT Name="EquipmentInfo">
+        <ARRAY Name="EquipmentSlots">
+          <ATOM Value="Legs"/>
+        </ARRAY>
+      </STRUCT>
+      <ATOM Name="CraftPlan" Value="bcfaec10_fahp.sbrick"/>
+      <ATOM Name="Drop or Sell" Value="false"/>
+      <ATOM Name="Saleable" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="fy_hom_armor01_lead_pantabottes.shape"/>
+      <ATOM Name="shape_female" Value="fy_hom_armor01_lead_pantabottes.shape"/>
+      <ATOM Name="map_variant" Value="Low Quality"/>
+      <ATOM Name="icon" Value="ar_pantabotte.png"/>
+      <ATOM Name="icon background" Value="bk_fyros.png"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>
