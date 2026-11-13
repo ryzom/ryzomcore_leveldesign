@@ -29696,3 +29696,143 @@ uiR2EDDrawArrayTooltip	[Help to draw an array of objects. Useful to draw a succe
 // INDEX 6917
 uiR2EdAllEquipment	[Alle Ausrüstung]
 
+// HASH_VALUE 378F0551643C79AB
+// INDEX 6918
+uiR2EDVersionUpdatedFile	[Dieses Szenario wurde mit einer früheren Version des Editors erstellt. Es wurde auf den aktuellen Stand gebracht; die Datei bleibt, wie sie ist, bis Sie das Szenario speichern.]
+
+// HASH_VALUE CE1CF2DD3FC08B83
+// INDEX 6919
+uiR2EDVersionUpdatedSession	[Dieses Szenario wurde mit einer früheren Version des Editors erstellt. Es wurde auf den aktuellen Stand gebracht und an den Server gesendet; das Szenario in seinem vorherigen Zustand ist in '%1' gespeichert.]
+
+// HASH_VALUE 46B3092D88ADB6AA
+// INDEX 6920
+uiR2EDVersionUpdatedTest	[Dieses Szenario wurde mit einer früheren Version des Editors erstellt. Es wurde für den Test auf den aktuellen Stand gebracht.]
+
+// HASH_VALUE 4610C3D8E30C80A4
+// INDEX 6921
+uiR2EDVersionUpdateFailedFile	[Dieses Szenario wurde mit einer früheren Version des Editors erstellt und konnte nicht auf den aktuellen Stand gebracht werden (Klasse '%1', Version %2 auf %3). Es wurde nicht geladen.]
+
+// HASH_VALUE A3A234FF909B85D3
+// INDEX 6922
+uiR2EDVersionUpdateFailedSession	[Dieses Szenario wurde mit einer früheren Version des Editors erstellt und konnte nicht auf den aktuellen Stand gebracht werden (Klasse '%1', Version %2 auf %3). Es wird so angezeigt, wie es auf dem Server vorliegt.]
+
+// HASH_VALUE EE5AD25B49B8F46F
+// INDEX 6923
+uiR2EDVersionUpdateFailedTest	[Dieses Szenario wurde mit einer früheren Version des Editors erstellt und konnte nicht auf den aktuellen Stand gebracht werden (Klasse '%1', Version %2 auf %3). Der Test startet nicht.]
+
+// HASH_VALUE 6BB4AA3614F8C0E5
+// INDEX 6924
+uiR2EDVersionUnknownClassFile	[Dieses Szenario gehört zur Klasse '%1', die dieser Editor nicht hat. Es wurde nicht geladen.]
+
+// HASH_VALUE 1843AF65718A310C
+// INDEX 6925
+uiR2EDVersionUnknownClassSession	[Dieses Szenario gehört zur Klasse '%1', die dieser Editor nicht hat. Es wird so angezeigt, wie es auf dem Server vorliegt.]
+
+// HASH_VALUE D1601E01BC42CF68
+// INDEX 6926
+uiR2EDVersionUnknownClassTest	[Dieses Szenario gehört zur Klasse '%1', die dieser Editor nicht hat. Der Test startet nicht.]
+
+// HASH_VALUE 2B9859A12BB660F2
+// INDEX 6927
+uiR2EDVersionUnknownClassInFile	[Das Attribut '%2' einer Komponente der Klasse '%3' in diesem Szenario gehört zur Klasse '%1', die dieser Editor nicht hat. Das Szenario wurde nicht geladen.]
+
+// HASH_VALUE 7161F85765CE1C67
+// INDEX 6928
+uiR2EDVersionUnknownClassInSession	[Das Attribut '%2' einer Komponente der Klasse '%3' in diesem Szenario gehört zur Klasse '%1', die dieser Editor nicht hat. Das Szenario wird so angezeigt, wie es auf dem Server vorliegt.]
+
+// HASH_VALUE 51D6663ADA888B98
+// INDEX 6929
+uiR2EDVersionUnknownClassInTest	[Das Attribut '%2' einer Komponente der Klasse '%3' in diesem Szenario gehört zur Klasse '%1', die dieser Editor nicht hat. Der Test startet nicht.]
+
+// HASH_VALUE 91BA80E4CF144DD0
+// INDEX 6930
+uiR2EDVersionUpdateErrorFile	[Dieses Szenario konnte wegen eines Fehlers im Editor nicht auf den aktuellen Stand gebracht werden. Es wurde nicht geladen.]
+
+// HASH_VALUE EE4CF10B7CA352FF
+// INDEX 6931
+uiR2EDVersionUpdateErrorSession	[Dieses Szenario konnte wegen eines Fehlers im Editor nicht auf den aktuellen Stand gebracht werden. Es wird so angezeigt, wie es auf dem Server vorliegt.]
+
+// HASH_VALUE 39048F6735C0C19B
+// INDEX 6932
+uiR2EDVersionUpdateErrorTest	[Dieses Szenario konnte wegen eines Fehlers im Editor nicht auf den aktuellen Stand gebracht werden. Der Test startet nicht.]
+
+// HASH_VALUE 75E2512BFE7C2BC2
+// INDEX 6933
+uiR2EDVersionNewer	[Dieses Szenario enthält Komponenten einer späteren Version des Editors (%1). Es funktioniert möglicherweise nicht so, wie sein Autor es beabsichtigt hat.]
+
+// HASH_VALUE E1B629CCF919C6A9
+// INDEX 6934
+uiR2EDVersionNoteEmptyGroups	[%1 Gruppe(n) ohne Mitglied wurde(n) aus dem Szenario entfernt.]
+
+// HASH_VALUE 19D7633ECEEB4DA5
+// INDEX 6935
+uiR2EDVersionNoteFirstAct	[Das Szenario hatte nur den permanenten Akt. Ein leerer erster Akt wurde hinzugefügt: Ein Test startet in einem Akt, der nicht der permanente ist.]
+
+// HASH_VALUE 1DDDB466E3142C5D
+// INDEX 6936
+uiR2EDVersionNoteIslandUnknown	[Die Insel dieses Szenarios ist nicht bekannt (Ortsnummer '%1'). Das Szenario wurde auf '%2' platziert: Prüfen Sie den Ort seiner Akte.]
+
+// HASH_VALUE 28AF550BB45D8DDA
+// INDEX 6937
+uiR2EDVersionNoteIslandMismatch	[Die Ortsnummer dieses Szenarios nennt die Insel '%1', und sein Inhalt befindet sich auf '%2'. Das Szenario wurde auf '%2' platziert.]
+
+// HASH_VALUE A7A95714859E4371
+// INDEX 6938
+uiR2EDVersionNoteChatSequences	[%1 Chatsequenz(en) von NPCs wurde(n) jeweils zu einem Dialog, der in der Nähe seines NPCs platziert ist. Was eine Sequenz gestartet hat, startet jetzt deren Dialog und stoppt die anderen Dialoge dieses NPCs, der immer nur eine Sequenz auf einmal abgespielt hat. Ein so gestoppter Dialog ist deaktiviert, und nur das, was seine Sequenz gestartet hat, aktiviert ihn wieder: Eine Aktion, die Sie an anderer Stelle hinzufügen, um einen solchen Dialog zu starten, braucht davor eine Aktion, die den Dialog aktiviert.]
+
+// HASH_VALUE 8480F24D7E495FFE
+// INDEX 6939
+uiR2EDVersionNoteEmptyChatSequences	[%1 Chatsequenz(en) von NPCs hatte(n) keinen Schritt und wurde(n) entfernt.]
+
+// HASH_VALUE 396D49DB35DCF9E9
+// INDEX 6940
+uiR2EDVersionNoteLostChatSequences	[%1 Verweis(e) auf eine Chatsequenz, die das Szenario nicht hat, wurde(n) entfernt: Chats von Aktivitätsschritten, Aktionen sowie Event-Handler, die auf eine solche Sequenz gewartet oder sie geprüft haben.]
+
+// HASH_VALUE A1F705742E8159B2
+// INDEX 6941
+uiR2EDVersionNoteChatTimeLimits	[%1 Aktivitätsschritt(e) dauerte(n) so lange wie eine Chatsequenz und konnte(n) diese Dauer nicht behalten. Ein Schritt, dessen Sequenz keine Dauer hat oder nicht im Szenario ist, hat jetzt kein Zeitlimit; ein Schritt, dessen Sequenz länger dauert als das längste Zeitlimit (10 Stunden 59 Minuten 59 Sekunden), hat dieses Zeitlimit.]
+
+// HASH_VALUE 8CBD9ACB4DC61248
+// INDEX 6942
+uiR2EDVersionNoteChatSequenceConditions	[%1 Bedingung(en) prüfte(n), ob ein NPC in einer Chatsequenz war, was auch nach dem Ende der Sequenz wahr blieb. Eine solche Bedingung prüft jetzt, ob der Dialog der Sequenz läuft, was nur wahr ist, solange er läuft.]
+
+// HASH_VALUE DBD0AFDCE8580457
+// INDEX 6943
+uiR2EDVersionNoteChatStepEvents	[%1 Event-Handler wartete(n) auf das Ende eines Schritts einer Chatsequenz. Ein solcher Handler wartet jetzt auf das Ende des Chats, zu dem dieser Schritt in seinem Dialog geworden ist: Prüfen Sie sein Timing.]
+
+// HASH_VALUE 06D2FB550CD92807
+// INDEX 6944
+uiR2EDVersionNoteChatSequenceEnds	[%1 Event-Handler für das Ende einer Chatsequenz, die ein Aktivitätsschritt wiederholt. Der früheste Editor hat einen solchen Handler nicht ausgeführt, solange sich die Sequenz wiederholte. Jetzt wird ein solcher Handler am Ende jedes Durchlaufs ihres Dialogs ausgeführt, solange der Dialog nicht vor diesem Ende gestoppt wird, was ein folgender Aktivitätsschritt tut, wenn er einen anderen Dialog des NPCs startet: Prüfen Sie, was der Handler tut.]
+
+// HASH_VALUE 5891D277B65D550D
+// INDEX 6945
+uiR2EDVersionNoteConvertedClasses	[%1 Komponente(n) aus Klassen früherer Editoren (Timer, Banditenlager) wurde(n) jeweils in die Komponente umgewandelt, die dieser Editor dafür hat.]
+
+// HASH_VALUE B8313353222394E5
+// INDEX 6946
+uiR2EDVersionNoteBanditCampCycle	[%1 Banditenlager hatte(n) keinen Zyklus: Die Banditen gingen nicht zwischen dem Lager und ihrer Zone hin und her. Die Lager dieses Editors haben eine Sitzdauer und eine Spazierdauer von mindestens 10 Sekunden: Ein solches Lager hat die Sitz- und die Spazierdauer eines neuen Lagers erhalten.]
+
+// HASH_VALUE C950B0CCD88E8E48
+// INDEX 6947
+uiR2EDVersionNoteRemovedClasses	[Dieses Szenario hatte Komponenten aus Klassen, die dieser Editor nicht hat: %1. Sie wurden zusammen mit dem, was sie enthielten, entfernt.]
+
+// HASH_VALUE 0291B5CC9859CA2A
+// INDEX 6948
+uiR2EDVersionNoteRemovedClassReferences	[%1 Aktion(en), Event-Handler oder Attribut(e) mit Verweis auf die entfernten Komponenten wurde(n) entfernt oder geleert.]
+
+// HASH_VALUE 0FF8FC1E79270990
+// INDEX 6949
+uiR2EDVersionNoteLostMovements	[%1 NPC(s) bewegte(n) sich in einer Zone oder entlang einer Route, die das Szenario nicht hat. Ein solcher NPC bleibt jetzt stehen.]
+
+// HASH_VALUE 59C7C9005579AA10
+// INDEX 6950
+uiR2EDVersionNoteEntryPoints	[%1 Ort(e) nannte(n) einen Eingangspunkt, den es auf der zugehörigen Insel nicht gibt. Ein solcher Ort beginnt am ersten Eingangspunkt der Insel, wo der Server ihn platziert hat: Prüfen Sie den Eingangspunkt jedes Ortes.]
+
+// HASH_VALUE 88D05761884B877E
+// INDEX 6951
+uiR2EDScenarioUploadRefused	[Der Server hat das Szenario abgelehnt. Der Editor behält das Szenario, das er hat.]
+
+// HASH_VALUE C3786D73553F8205
+// INDEX 6952
+uiR2EDTranslateUnknownSheet	[Der NPC '%1' verwendet das Sheet '%2', das dieser Client nicht kennt: Er kommt ohne sein Aussehen in den Test.]
+

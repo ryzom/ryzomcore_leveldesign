@@ -29708,3 +29708,143 @@ uiR2EDDrawArrayTooltip	[Ayuda a elaborar una serie de objetos. Útil para dibuja
 // INDEX 6917
 uiR2EdAllEquipment	[Todo el equipamiento]
 
+// HASH_VALUE 378F0551643C79AB
+// INDEX 6918
+uiR2EDVersionUpdatedFile	[Este escenario se creó con una versión anterior del editor. Se ha actualizado; el archivo permanece como está hasta que guardes el escenario.]
+
+// HASH_VALUE CE1CF2DD3FC08B83
+// INDEX 6919
+uiR2EDVersionUpdatedSession	[Este escenario se creó con una versión anterior del editor. Se ha actualizado y enviado al servidor; el escenario tal como estaba queda guardado en '%1'.]
+
+// HASH_VALUE 46B3092D88ADB6AA
+// INDEX 6920
+uiR2EDVersionUpdatedTest	[Este escenario se creó con una versión anterior del editor. Se ha actualizado para la prueba.]
+
+// HASH_VALUE 4610C3D8E30C80A4
+// INDEX 6921
+uiR2EDVersionUpdateFailedFile	[Este escenario se creó con una versión anterior del editor y no se ha podido actualizar (clase '%1', versión %2 a %3). No se ha cargado.]
+
+// HASH_VALUE A3A234FF909B85D3
+// INDEX 6922
+uiR2EDVersionUpdateFailedSession	[Este escenario se creó con una versión anterior del editor y no se ha podido actualizar (clase '%1', versión %2 a %3). Se muestra tal como lo tiene el servidor.]
+
+// HASH_VALUE EE5AD25B49B8F46F
+// INDEX 6923
+uiR2EDVersionUpdateFailedTest	[Este escenario se creó con una versión anterior del editor y no se ha podido actualizar (clase '%1', versión %2 a %3). La prueba no se inicia.]
+
+// HASH_VALUE 6BB4AA3614F8C0E5
+// INDEX 6924
+uiR2EDVersionUnknownClassFile	[Este escenario es de la clase '%1', que este editor no tiene. No se ha cargado.]
+
+// HASH_VALUE 1843AF65718A310C
+// INDEX 6925
+uiR2EDVersionUnknownClassSession	[Este escenario es de la clase '%1', que este editor no tiene. Se muestra tal como lo tiene el servidor.]
+
+// HASH_VALUE D1601E01BC42CF68
+// INDEX 6926
+uiR2EDVersionUnknownClassTest	[Este escenario es de la clase '%1', que este editor no tiene. La prueba no se inicia.]
+
+// HASH_VALUE 2B9859A12BB660F2
+// INDEX 6927
+uiR2EDVersionUnknownClassInFile	[El atributo '%2' de un componente de la clase '%3' de este escenario es de la clase '%1', que este editor no tiene. El escenario no se ha cargado.]
+
+// HASH_VALUE 7161F85765CE1C67
+// INDEX 6928
+uiR2EDVersionUnknownClassInSession	[El atributo '%2' de un componente de la clase '%3' de este escenario es de la clase '%1', que este editor no tiene. El escenario se muestra tal como lo tiene el servidor.]
+
+// HASH_VALUE 51D6663ADA888B98
+// INDEX 6929
+uiR2EDVersionUnknownClassInTest	[El atributo '%2' de un componente de la clase '%3' de este escenario es de la clase '%1', que este editor no tiene. La prueba no se inicia.]
+
+// HASH_VALUE 91BA80E4CF144DD0
+// INDEX 6930
+uiR2EDVersionUpdateErrorFile	[Este escenario no se ha podido actualizar debido a un error en el editor. No se ha cargado.]
+
+// HASH_VALUE EE4CF10B7CA352FF
+// INDEX 6931
+uiR2EDVersionUpdateErrorSession	[Este escenario no se ha podido actualizar debido a un error en el editor. Se muestra tal como lo tiene el servidor.]
+
+// HASH_VALUE 39048F6735C0C19B
+// INDEX 6932
+uiR2EDVersionUpdateErrorTest	[Este escenario no se ha podido actualizar debido a un error en el editor. La prueba no se inicia.]
+
+// HASH_VALUE 75E2512BFE7C2BC2
+// INDEX 6933
+uiR2EDVersionNewer	[Este escenario tiene componentes de una versión posterior del editor (%1). Puede que no funcione como su autor pretendía.]
+
+// HASH_VALUE E1B629CCF919C6A9
+// INDEX 6934
+uiR2EDVersionNoteEmptyGroups	[%1 grupo(s) sin miembros se ha(n) eliminado del escenario.]
+
+// HASH_VALUE 19D7633ECEEB4DA5
+// INDEX 6935
+uiR2EDVersionNoteFirstAct	[El escenario solo tenía el acto permanente. Se ha añadido un primer acto vacío: una prueba se inicia en un acto que no es el permanente.]
+
+// HASH_VALUE 1DDDB466E3142C5D
+// INDEX 6936
+uiR2EDVersionNoteIslandUnknown	[La isla de este escenario no se conoce (número de sitio '%1'). El escenario se ha colocado en '%2': comprueba el sitio de sus actos.]
+
+// HASH_VALUE 28AF550BB45D8DDA
+// INDEX 6937
+uiR2EDVersionNoteIslandMismatch	[El número de sitio de este escenario indica la isla '%1' y su contenido está en '%2'. El escenario se ha colocado en '%2'.]
+
+// HASH_VALUE A7A95714859E4371
+// INDEX 6938
+uiR2EDVersionNoteChatSequences	[%1 secuencia(s) de chat de NPC se ha(n) convertido en diálogo(s), colocado(s) cerca de su NPC. Lo que iniciaba una secuencia inicia su diálogo y detiene los demás diálogos de ese NPC, que reproducía una sola secuencia a la vez. Un diálogo detenido de este modo queda desactivado, y solo lo que iniciaba su secuencia lo activa de nuevo: una acción que añadas en otro lugar para iniciar un diálogo así necesita antes otra acción que active el diálogo.]
+
+// HASH_VALUE 8480F24D7E495FFE
+// INDEX 6939
+uiR2EDVersionNoteEmptyChatSequences	[%1 secuencia(s) de chat de NPC no tenía(n) ningún paso y se ha(n) eliminado.]
+
+// HASH_VALUE 396D49DB35DCF9E9
+// INDEX 6940
+uiR2EDVersionNoteLostChatSequences	[%1 referencia(s) a una secuencia de chat que el escenario no tiene se ha(n) eliminado: chats de pasos de actividad, acciones, así como manejadores de eventos que esperaban o comprobaban una secuencia así.]
+
+// HASH_VALUE A1F705742E8159B2
+// INDEX 6941
+uiR2EDVersionNoteChatTimeLimits	[%1 paso(s) de actividad duraba(n) lo mismo que una secuencia de chat y no ha(n) podido conservar esa duración. Un paso cuya secuencia no tiene duración o no está en el escenario ya no tiene límite de tiempo; un paso cuya secuencia dura más que el límite de tiempo más largo (10 horas 59 minutos 59 segundos) tiene ese límite de tiempo.]
+
+// HASH_VALUE 8CBD9ACB4DC61248
+// INDEX 6942
+uiR2EDVersionNoteChatSequenceConditions	[%1 condición(es) comprobaba(n) si un NPC estaba en una secuencia de chat, lo que seguía siendo cierto después de terminar la secuencia. Ahora una condición así comprueba si el diálogo de la secuencia se está reproduciendo, lo que solo es cierto mientras se reproduce.]
+
+// HASH_VALUE DBD0AFDCE8580457
+// INDEX 6943
+uiR2EDVersionNoteChatStepEvents	[%1 manejador(es) de eventos esperaba(n) el final de un paso de una secuencia de chat. Ahora un manejador así espera el final del chat en que ese paso se ha convertido dentro de su diálogo: comprueba su temporización.]
+
+// HASH_VALUE 06D2FB550CD92807
+// INDEX 6944
+uiR2EDVersionNoteChatSequenceEnds	[%1 manejador(es) de eventos espera(n) el final de una secuencia de chat que un paso de actividad repite. El editor más antiguo no ejecutaba un manejador así mientras la secuencia se repetía. Ahora se ejecuta al final de cada pasada del diálogo de la secuencia, siempre que el diálogo no se detenga antes de ese final, cosa que hace un paso de actividad posterior cuando inicia otro diálogo del NPC: comprueba lo que hace el manejador.]
+
+// HASH_VALUE 5891D277B65D550D
+// INDEX 6945
+uiR2EDVersionNoteConvertedClasses	[%1 componente(s) de clases de editores anteriores (cronómetros, campamentos de bandidos) se ha(n) convertido en el componente que este editor tiene para ellos.]
+
+// HASH_VALUE B8313353222394E5
+// INDEX 6946
+uiR2EDVersionNoteBanditCampCycle	[%1 campamento(s) de bandidos no tenía(n) ciclo: sus bandidos no iban y venían entre el campamento y su zona. Los campamentos de este editor tienen una duración de sentado y una duración de vagancia de al menos 10 segundos: un campamento así ha recibido las duraciones de un campamento nuevo.]
+
+// HASH_VALUE C950B0CCD88E8E48
+// INDEX 6947
+uiR2EDVersionNoteRemovedClasses	[Este escenario tenía componentes de clases que este editor no tiene: %1. Se han eliminado junto con lo que contenían.]
+
+// HASH_VALUE 0291B5CC9859CA2A
+// INDEX 6948
+uiR2EDVersionNoteRemovedClassReferences	[%1 acción(es), manejador(es) de eventos o atributo(s) que hacía(n) referencia a los componentes eliminados se ha(n) eliminado o vaciado.]
+
+// HASH_VALUE 0FF8FC1E79270990
+// INDEX 6949
+uiR2EDVersionNoteLostMovements	[%1 NPC(s) se movía(n) en una zona o por una ruta que el escenario no tiene. Ahora un NPC así permanece quieto.]
+
+// HASH_VALUE 59C7C9005579AA10
+// INDEX 6950
+uiR2EDVersionNoteEntryPoints	[%1 sitio(s) indicaba(n) un punto de entrada que su isla no tiene. Un sitio así comienza en el primer punto de entrada de la isla, donde el servidor lo colocaba: comprueba el punto de entrada de cada sitio.]
+
+// HASH_VALUE 88D05761884B877E
+// INDEX 6951
+uiR2EDScenarioUploadRefused	[El servidor ha rechazado el escenario. El editor conserva el escenario que tiene.]
+
+// HASH_VALUE C3786D73553F8205
+// INDEX 6952
+uiR2EDTranslateUnknownSheet	[El NPC '%1' usa la hoja '%2', que este cliente no conoce: entra en la prueba sin su apariencia.]
+

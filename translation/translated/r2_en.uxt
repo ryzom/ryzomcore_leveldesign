@@ -29713,3 +29713,143 @@ uiR2EDDrawArrayTooltip	[Help to draw an array of objects. Useful to draw a succe
 // INDEX 6917
 uiR2EdAllEquipment	[All Equipment]
 
+// HASH_VALUE 378F0551643C79AB
+// INDEX 6918
+uiR2EDVersionUpdatedFile	[This scenario was made with an earlier version of the editor. It has been brought up to date; the file stays as it is until you save the scenario.]
+
+// HASH_VALUE CE1CF2DD3FC08B83
+// INDEX 6919
+uiR2EDVersionUpdatedSession	[This scenario was made with an earlier version of the editor. It has been brought up to date and sent to the server; the scenario as it was is saved in '%1'.]
+
+// HASH_VALUE 46B3092D88ADB6AA
+// INDEX 6920
+uiR2EDVersionUpdatedTest	[This scenario was made with an earlier version of the editor. It has been brought up to date for the test.]
+
+// HASH_VALUE 4610C3D8E30C80A4
+// INDEX 6921
+uiR2EDVersionUpdateFailedFile	[This scenario was made with an earlier version of the editor and could not be brought up to date (class '%1', version %2 to %3). It has not been loaded.]
+
+// HASH_VALUE A3A234FF909B85D3
+// INDEX 6922
+uiR2EDVersionUpdateFailedSession	[This scenario was made with an earlier version of the editor and could not be brought up to date (class '%1', version %2 to %3). It is shown as the server has it.]
+
+// HASH_VALUE EE5AD25B49B8F46F
+// INDEX 6923
+uiR2EDVersionUpdateFailedTest	[This scenario was made with an earlier version of the editor and could not be brought up to date (class '%1', version %2 to %3). The test does not start.]
+
+// HASH_VALUE 6BB4AA3614F8C0E5
+// INDEX 6924
+uiR2EDVersionUnknownClassFile	[This scenario is of the class '%1', which this editor does not have. It has not been loaded.]
+
+// HASH_VALUE 1843AF65718A310C
+// INDEX 6925
+uiR2EDVersionUnknownClassSession	[This scenario is of the class '%1', which this editor does not have. It is shown as the server has it.]
+
+// HASH_VALUE D1601E01BC42CF68
+// INDEX 6926
+uiR2EDVersionUnknownClassTest	[This scenario is of the class '%1', which this editor does not have. The test does not start.]
+
+// HASH_VALUE 2B9859A12BB660F2
+// INDEX 6927
+uiR2EDVersionUnknownClassInFile	[The '%2' of a component of the class '%3' in this scenario is of the class '%1', which this editor does not have. It has not been loaded.]
+
+// HASH_VALUE 7161F85765CE1C67
+// INDEX 6928
+uiR2EDVersionUnknownClassInSession	[The '%2' of a component of the class '%3' in this scenario is of the class '%1', which this editor does not have. It is shown as the server has it.]
+
+// HASH_VALUE 51D6663ADA888B98
+// INDEX 6929
+uiR2EDVersionUnknownClassInTest	[The '%2' of a component of the class '%3' in this scenario is of the class '%1', which this editor does not have. The test does not start.]
+
+// HASH_VALUE 91BA80E4CF144DD0
+// INDEX 6930
+uiR2EDVersionUpdateErrorFile	[This scenario could not be brought up to date because of an error in the editor. It has not been loaded.]
+
+// HASH_VALUE EE4CF10B7CA352FF
+// INDEX 6931
+uiR2EDVersionUpdateErrorSession	[This scenario could not be brought up to date because of an error in the editor. It is shown as the server has it.]
+
+// HASH_VALUE 39048F6735C0C19B
+// INDEX 6932
+uiR2EDVersionUpdateErrorTest	[This scenario could not be brought up to date because of an error in the editor. The test does not start.]
+
+// HASH_VALUE 75E2512BFE7C2BC2
+// INDEX 6933
+uiR2EDVersionNewer	[This scenario has components of a later version of the editor (%1). It may not work as its author meant.]
+
+// HASH_VALUE E1B629CCF919C6A9
+// INDEX 6934
+uiR2EDVersionNoteEmptyGroups	[%1 group(s) without a member were removed from the scenario.]
+
+// HASH_VALUE 19D7633ECEEB4DA5
+// INDEX 6935
+uiR2EDVersionNoteFirstAct	[The scenario had the permanent act only. An empty first act was added: a test starts in an act that is not the permanent one.]
+
+// HASH_VALUE 1DDDB466E3142C5D
+// INDEX 6936
+uiR2EDVersionNoteIslandUnknown	[The island of this scenario is not known (location number '%1'). It was put on '%2': check the location of its acts.]
+
+// HASH_VALUE 28AF550BB45D8DDA
+// INDEX 6937
+uiR2EDVersionNoteIslandMismatch	[The location number of this scenario names the island '%1' and its content stands on '%2'. It was put on '%2'.]
+
+// HASH_VALUE A7A95714859E4371
+// INDEX 6938
+uiR2EDVersionNoteChatSequences	[%1 chat sequence(s) of npcs are dialogs now, placed near their npc. What started a sequence starts its dialog and stops the other dialogs of that npc, which played one sequence at a time. A dialog stopped this way is deactivated, and only what started its sequence activates it again: an action you add elsewhere to start such a dialog needs one that activates the dialog before it.]
+
+// HASH_VALUE 8480F24D7E495FFE
+// INDEX 6939
+uiR2EDVersionNoteEmptyChatSequences	[%1 chat sequence(s) of npcs had no step and were removed.]
+
+// HASH_VALUE 396D49DB35DCF9E9
+// INDEX 6940
+uiR2EDVersionNoteLostChatSequences	[%1 reference(s) to a chat sequence the scenario does not have were removed: chats of activity steps, actions, and event handlers that waited for or tested such a sequence.]
+
+// HASH_VALUE A1F705742E8159B2
+// INDEX 6941
+uiR2EDVersionNoteChatTimeLimits	[%1 activity step(s) lasted as long as a chat sequence and could not keep that duration. A step whose sequence has no duration or is not in the scenario has no time limit now; a step whose sequence lasts longer than the longest time limit (10 hours 59 minutes 59 seconds) has that time limit.]
+
+// HASH_VALUE 8CBD9ACB4DC61248
+// INDEX 6942
+uiR2EDVersionNoteChatSequenceConditions	[%1 condition(s) tested whether an npc was in a chat sequence, which stayed true after the sequence had ended. They test whether its dialog plays now, which is true only while it plays.]
+
+// HASH_VALUE DBD0AFDCE8580457
+// INDEX 6943
+uiR2EDVersionNoteChatStepEvents	[%1 event handler(s) waited for the end of a step of a chat sequence. They wait for the end of the chat that step became in its dialog: check their timing.]
+
+// HASH_VALUE 06D2FB550CD92807
+// INDEX 6944
+uiR2EDVersionNoteChatSequenceEnds	[%1 event handler(s) wait for the end of a chat sequence that an activity step repeats. The earliest editor did not run them while the sequence repeated. They run at the end of each pass of its dialog now, as long as the dialog is not stopped before that end, which a following activity step does when it starts another dialog of the npc: check what they do.]
+
+// HASH_VALUE 5891D277B65D550D
+// INDEX 6945
+uiR2EDVersionNoteConvertedClasses	[%1 component(s) of classes of earlier editors (timers, bandit camps) are the components this editor has for them now.]
+
+// HASH_VALUE B8313353222394E5
+// INDEX 6946
+uiR2EDVersionNoteBanditCampCycle	[%1 bandit camp(s) had no cycle: their bandits did not go between the camp and their zone. The camps of this editor have a sit and a wander duration of at least 10 seconds: these camps got the durations of a new camp.]
+
+// HASH_VALUE C950B0CCD88E8E48
+// INDEX 6947
+uiR2EDVersionNoteRemovedClasses	[This scenario had components of classes this editor does not have: %1. They were removed with what they held.]
+
+// HASH_VALUE 0291B5CC9859CA2A
+// INDEX 6948
+uiR2EDVersionNoteRemovedClassReferences	[%1 action(s), event handler(s) or attribute(s) that named the removed components were removed or emptied.]
+
+// HASH_VALUE 0FF8FC1E79270990
+// INDEX 6949
+uiR2EDVersionNoteLostMovements	[%1 npc(s) moved in a zone or along a road the scenario does not have. They stand still now.]
+
+// HASH_VALUE 59C7C9005579AA10
+// INDEX 6950
+uiR2EDVersionNoteEntryPoints	[%1 location(s) named an entry point their island does not have. They start at the first entry point of the island, where the server placed them: check the entry point of each location.]
+
+// HASH_VALUE 88D05761884B877E
+// INDEX 6951
+uiR2EDScenarioUploadRefused	[The server refused the scenario. The editor keeps the scenario it has.]
+
+// HASH_VALUE C3786D73553F8205
+// INDEX 6952
+uiR2EDTranslateUnknownSheet	[The npc '%1' uses the sheet '%2', which this client does not know: it goes into the test without its look.]
+

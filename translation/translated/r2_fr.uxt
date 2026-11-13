@@ -29711,3 +29711,143 @@ uiR2EDDrawArrayTooltip	[Aide à dessiner une ligne d'objets. Utile pour dessiner
 // INDEX 6917
 uiR2EdAllEquipment	[Tout l'équipement]
 
+// HASH_VALUE 378F0551643C79AB
+// INDEX 6918
+uiR2EDVersionUpdatedFile	[Ce scénario a été créé avec une version antérieure de l'éditeur. Il a été mis à jour ; le fichier reste tel quel jusqu'à ce que vous sauvegardiez le scénario.]
+
+// HASH_VALUE CE1CF2DD3FC08B83
+// INDEX 6919
+uiR2EDVersionUpdatedSession	[Ce scénario a été créé avec une version antérieure de l'éditeur. Il a été mis à jour et envoyé au serveur ; le scénario tel qu'il était est sauvegardé dans '%1'.]
+
+// HASH_VALUE 46B3092D88ADB6AA
+// INDEX 6920
+uiR2EDVersionUpdatedTest	[Ce scénario a été créé avec une version antérieure de l'éditeur. Il a été mis à jour pour le test.]
+
+// HASH_VALUE 4610C3D8E30C80A4
+// INDEX 6921
+uiR2EDVersionUpdateFailedFile	[Ce scénario a été créé avec une version antérieure de l'éditeur et n'a pas pu être mis à jour (classe '%1', version %2 vers %3). Il n'a pas été chargé.]
+
+// HASH_VALUE A3A234FF909B85D3
+// INDEX 6922
+uiR2EDVersionUpdateFailedSession	[Ce scénario a été créé avec une version antérieure de l'éditeur et n'a pas pu être mis à jour (classe '%1', version %2 vers %3). Il est affiché tel qu'il est sur le serveur.]
+
+// HASH_VALUE EE5AD25B49B8F46F
+// INDEX 6923
+uiR2EDVersionUpdateFailedTest	[Ce scénario a été créé avec une version antérieure de l'éditeur et n'a pas pu être mis à jour (classe '%1', version %2 vers %3). Le test ne démarre pas.]
+
+// HASH_VALUE 6BB4AA3614F8C0E5
+// INDEX 6924
+uiR2EDVersionUnknownClassFile	[Ce scénario est de la classe '%1', que cet éditeur n'a pas. Il n'a pas été chargé.]
+
+// HASH_VALUE 1843AF65718A310C
+// INDEX 6925
+uiR2EDVersionUnknownClassSession	[Ce scénario est de la classe '%1', que cet éditeur n'a pas. Il est affiché tel qu'il est sur le serveur.]
+
+// HASH_VALUE D1601E01BC42CF68
+// INDEX 6926
+uiR2EDVersionUnknownClassTest	[Ce scénario est de la classe '%1', que cet éditeur n'a pas. Le test ne démarre pas.]
+
+// HASH_VALUE 2B9859A12BB660F2
+// INDEX 6927
+uiR2EDVersionUnknownClassInFile	[L'attribut '%2' d'un composant de la classe '%3' de ce scénario est de la classe '%1', que cet éditeur n'a pas. Le scénario n'a pas été chargé.]
+
+// HASH_VALUE 7161F85765CE1C67
+// INDEX 6928
+uiR2EDVersionUnknownClassInSession	[L'attribut '%2' d'un composant de la classe '%3' de ce scénario est de la classe '%1', que cet éditeur n'a pas. Le scénario est affiché tel qu'il est sur le serveur.]
+
+// HASH_VALUE 51D6663ADA888B98
+// INDEX 6929
+uiR2EDVersionUnknownClassInTest	[L'attribut '%2' d'un composant de la classe '%3' de ce scénario est de la classe '%1', que cet éditeur n'a pas. Le test ne démarre pas.]
+
+// HASH_VALUE 91BA80E4CF144DD0
+// INDEX 6930
+uiR2EDVersionUpdateErrorFile	[Ce scénario n'a pas pu être mis à jour à cause d'une erreur dans l'éditeur. Il n'a pas été chargé.]
+
+// HASH_VALUE EE4CF10B7CA352FF
+// INDEX 6931
+uiR2EDVersionUpdateErrorSession	[Ce scénario n'a pas pu être mis à jour à cause d'une erreur dans l'éditeur. Il est affiché tel qu'il est sur le serveur.]
+
+// HASH_VALUE 39048F6735C0C19B
+// INDEX 6932
+uiR2EDVersionUpdateErrorTest	[Ce scénario n'a pas pu être mis à jour à cause d'une erreur dans l'éditeur. Le test ne démarre pas.]
+
+// HASH_VALUE 75E2512BFE7C2BC2
+// INDEX 6933
+uiR2EDVersionNewer	[Ce scénario contient des composants d'une version plus récente de l'éditeur (%1). Il se peut qu'il ne fonctionne pas comme son auteur l'a voulu.]
+
+// HASH_VALUE E1B629CCF919C6A9
+// INDEX 6934
+uiR2EDVersionNoteEmptyGroups	[%1 groupe(s) sans membre supprimé(s) du scénario.]
+
+// HASH_VALUE 19D7633ECEEB4DA5
+// INDEX 6935
+uiR2EDVersionNoteFirstAct	[Le scénario n'avait que l'acte permanent. Un premier acte vide a été ajouté : un test démarre dans un acte qui n'est pas l'acte permanent.]
+
+// HASH_VALUE 1DDDB466E3142C5D
+// INDEX 6936
+uiR2EDVersionNoteIslandUnknown	[L'île de ce scénario n'est pas connue (numéro de région '%1'). Le scénario a été placé sur '%2' : vérifiez la région de ses actes.]
+
+// HASH_VALUE 28AF550BB45D8DDA
+// INDEX 6937
+uiR2EDVersionNoteIslandMismatch	[Le numéro de région de ce scénario désigne l'île '%1' et son contenu se trouve sur '%2'. Le scénario a été placé sur '%2'.]
+
+// HASH_VALUE A7A95714859E4371
+// INDEX 6938
+uiR2EDVersionNoteChatSequences	[%1 séquence(s) de chat de PNJ devenue(s) dialogue(s), chaque dialogue étant placé près de son PNJ. Ce qui lançait une séquence lance son dialogue et arrête les autres dialogues de ce PNJ, qui jouait une seule séquence à la fois. Un dialogue arrêté de cette façon est désactivé, et seul ce qui lançait sa séquence l'active de nouveau : une action que vous ajoutez ailleurs pour lancer un tel dialogue doit être précédée d'une action qui active le dialogue.]
+
+// HASH_VALUE 8480F24D7E495FFE
+// INDEX 6939
+uiR2EDVersionNoteEmptyChatSequences	[%1 séquence(s) de chat de PNJ sans étape supprimée(s).]
+
+// HASH_VALUE 396D49DB35DCF9E9
+// INDEX 6940
+uiR2EDVersionNoteLostChatSequences	[%1 référence(s) à une séquence de chat que le scénario n'a pas, supprimée(s) : chats d'étapes d'activité, actions, ainsi que gestionnaires d'événements qui attendaient ou testaient une telle séquence.]
+
+// HASH_VALUE A1F705742E8159B2
+// INDEX 6941
+uiR2EDVersionNoteChatTimeLimits	[%1 étape(s) d'activité dont la durée, celle d'une séquence de chat, n'a pas pu être conservée. Une étape dont la séquence n'a pas de durée ou n'est pas dans le scénario n'a plus de limite de temps ; une étape dont la séquence dure plus longtemps que la limite de temps la plus longue (10 heures 59 minutes 59 secondes) a cette limite de temps.]
+
+// HASH_VALUE 8CBD9ACB4DC61248
+// INDEX 6942
+uiR2EDVersionNoteChatSequenceConditions	[%1 condition(s) testant si un PNJ était dans une séquence de chat, ce qui restait vrai après la fin de la séquence. Une telle condition teste maintenant si le dialogue de la séquence est en cours, ce qui n'est vrai que pendant qu'il est joué.]
+
+// HASH_VALUE DBD0AFDCE8580457
+// INDEX 6943
+uiR2EDVersionNoteChatStepEvents	[%1 gestionnaire(s) d'événements en attente de la fin d'une étape d'une séquence de chat. Un tel gestionnaire attend maintenant la fin du chat que cette étape est devenue dans son dialogue : vérifiez son minutage.]
+
+// HASH_VALUE 06D2FB550CD92807
+// INDEX 6944
+uiR2EDVersionNoteChatSequenceEnds	[%1 gestionnaire(s) d'événements en attente de la fin d'une séquence de chat qu'une étape d'activité répète. L'éditeur le plus ancien n'exécutait pas un tel gestionnaire tant que la séquence se répétait. Ce gestionnaire est maintenant exécuté à la fin de chaque passage du dialogue de la séquence, tant que le dialogue n'est pas arrêté avant cette fin, ce que fait une étape d'activité suivante lorsqu'elle lance un autre dialogue du PNJ : vérifiez ce que fait le gestionnaire.]
+
+// HASH_VALUE 5891D277B65D550D
+// INDEX 6945
+uiR2EDVersionNoteConvertedClasses	[%1 composant(s) de classes d'éditeurs antérieurs (minuteurs, camps de bandits) converti(s) dans le composant que cet éditeur a pour eux.]
+
+// HASH_VALUE B8313353222394E5
+// INDEX 6946
+uiR2EDVersionNoteBanditCampCycle	[%1 camp(s) de bandits sans cycle, dont les bandits ne circulaient pas entre le camp et leur zone. Les camps de cet éditeur ont une durée de siège et une durée de déplacement d'au moins 10 secondes : un tel camp a reçu les durées d'un nouveau camp.]
+
+// HASH_VALUE C950B0CCD88E8E48
+// INDEX 6947
+uiR2EDVersionNoteRemovedClasses	[Ce scénario avait des composants de classes que cet éditeur n'a pas : %1. Ils ont été supprimés avec ce qu'ils contenaient.]
+
+// HASH_VALUE 0291B5CC9859CA2A
+// INDEX 6948
+uiR2EDVersionNoteRemovedClassReferences	[%1 action(s), gestionnaire(s) d'événements ou attribut(s) désignant les composants supprimés : supprimé(s) ou vidé(s).]
+
+// HASH_VALUE 0FF8FC1E79270990
+// INDEX 6949
+uiR2EDVersionNoteLostMovements	[%1 PNJ(s) en déplacement dans une zone ou le long d'une route que le scénario n'a pas. Un tel PNJ reste maintenant immobile.]
+
+// HASH_VALUE 59C7C9005579AA10
+// INDEX 6950
+uiR2EDVersionNoteEntryPoints	[%1 région(s) désignant un point d'entrée que l'île de la région n'a pas. Une telle région commence au premier point d'entrée de l'île, là où le serveur la plaçait : vérifiez le point d'entrée de chaque région.]
+
+// HASH_VALUE 88D05761884B877E
+// INDEX 6951
+uiR2EDScenarioUploadRefused	[Le serveur a refusé le scénario. L'éditeur garde le scénario qu'il a.]
+
+// HASH_VALUE C3786D73553F8205
+// INDEX 6952
+uiR2EDTranslateUnknownSheet	[Le PNJ '%1' utilise la fiche '%2', que ce client ne connaît pas : il entre dans le test sans son apparence.]
+
