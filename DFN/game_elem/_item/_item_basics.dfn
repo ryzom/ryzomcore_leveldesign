@@ -4,7 +4,7 @@
   <ELEMENT Name="origin" Type="Type" Filename="item_origine.typ"/>
   <ELEMENT Name="family" Type="Type" Filename="item_family.typ"/>
   <ELEMENT Name="ItemType" Type="Type" Filename="item_type.typ"/>
-  <ELEMENT Name="sack_type" Type="Type" Filename="filename.typ" Default="bag.item"/>
+  <ELEMENT Name="sack_type" Type="Type" Filename="filename.typ" Default="bag.sitem"/>
   <ELEMENT Name="stackable" Type="Type" Filename="int.typ" Default="1"/>
   <ELEMENT Name="quality" Type="Type" Filename="int.typ"/>
   <ELEMENT Name="ShardExchangeable" Type="Type" Filename="boolean.typ" Default="true"/>
