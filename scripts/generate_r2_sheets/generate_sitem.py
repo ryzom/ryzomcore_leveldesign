@@ -69,7 +69,7 @@ brickFamilyTree = { "B": { "tags": [ "*" ], "entries": {} } }
 
 def buildTagTree(tree, table):
 	for entry in table:
-		e = filter(None, entry)
+		e = list(filter(None, entry))
 		name = e[0]
 		#print(name)
 		tags = e[1:]
@@ -180,6 +180,24 @@ for sitem in sitemParsed:
 	sitemTags[sitem[0]] = sitem[2:]
 for sitem in sitemParents:
 	sitemTags[sitem[0]] = sitem[2:]
+
+# The equipment of the nation leaders (sitem_leaders.tsv): unique items on their own shapes, each a variant of a
+# systematic item, which gives its tags (so its parent, type and slot) and, if the table says so, its craft plan
+leaderCraftPlanBase = {}
+for leader in loadTsv("sitem_leaders.tsv"):
+	if len(leader) < 5 or leader[0].startswith(";"):
+		continue
+	name, base, craftPlan, shapeMale, shapeFemale = leader[0:5]
+	if not base in sitemTags:
+		print("Unknown base item " + base + " for the leader item " + name)
+		exit(1)
+	if craftPlan != "base" and craftPlan != "none":
+		print("Craft plan of the leader item " + name + " must be base or none, not " + craftPlan)
+		exit(1)
+	sitemTags[name] = sitemTags[base] + [ "leader" ]
+	if craftPlan == "base":
+		leaderCraftPlanBase[name] = base
+	matchSitemShape += [ [ name, shapeMale, shapeFemale ] ]
 
 def generateParents():
 	for sitem in sitemParents:
@@ -598,6 +616,8 @@ def generateSitems():
 			mapVariant = "Medium Quality"
 		elif "hq" in tags or "advantage" in tags:
 			mapVariant = "High Quality"
+		if "leader" in tags and "armor" in tags:
+			mapVariant = "Low Quality" # the variant the lead textures were made for, as in the original leader sheets
 		
 		itemType = "undefined"
 		armorSlot = "Undefined" # item_slot_type.typ
@@ -683,6 +703,8 @@ def generateSitems():
 				folder += "\\heavy_armor"
 		elif "shield" in tags:
 			folder = "shield\\" + subfolder
+		if "leader" in tags:
+			folder = folder.split("\\")[0] + "\\" + subfolder + "\\leader"
 		
 		dir = sitemPath + "\\" + folder
 		if not os.path.isdir(dir):
@@ -704,23 +726,34 @@ def generateSitems():
 		
 		brickFamily = findBrickFamily(tags)
 		
-		sbrickEntry = None
-		if name in sbrickLookup:
-			sbrickEntry = sbrickLookup[name]
+		if "leader" in tags:
+			# a leader item gets no brick of its own: it uses the craft plan of its base item, or none
+			sbrickName = None
+			if name in leaderCraftPlanBase:
+				base = leaderCraftPlanBase[name]
+				if not base in sbrickLookup:
+					print("No craft plan for the base item " + base + " of the leader item " + name)
+					exit(1)
+				baseEntry = sbrickLookup[base]
+				sbrickName = baseEntry[0].lower() + str(int(baseEntry[1], 10)).zfill(2) + "_" + base[2:]
 		else:
-			print("New sbrick entry: " + name + ", Family: " + brickFamily)
-		if sbrickEntry and sbrickEntry[0] != brickFamily:
-			print("Brick family changed: " + name + ", New: " + brickFamily + ", Old: " + sbrickEntry[0])
 			sbrickEntry = None
-		sbrickIndex = None
-		if sbrickEntry:
-			sbrickIndex = int(sbrickEntry[1], 10)
-		else:
-			sbrickIndex = allocFamilyIndex(brickFamily)
-			if sbrickIndex:
-				sbrickEntry = [ brickFamily, str(sbrickIndex) ]
-				print(sbrickEntry)
-		sbrickName = brickFamily.lower() + str(sbrickIndex).zfill(2) + "_" + name[2:];
+			if name in sbrickLookup:
+				sbrickEntry = sbrickLookup[name]
+			else:
+				print("New sbrick entry: " + name + ", Family: " + brickFamily)
+			if sbrickEntry and sbrickEntry[0] != brickFamily:
+				print("Brick family changed: " + name + ", New: " + brickFamily + ", Old: " + sbrickEntry[0])
+				sbrickEntry = None
+			sbrickIndex = None
+			if sbrickEntry:
+				sbrickIndex = int(sbrickEntry[1], 10)
+			else:
+				sbrickIndex = allocFamilyIndex(brickFamily)
+				if sbrickIndex:
+					sbrickEntry = [ brickFamily, str(sbrickIndex) ]
+					print(sbrickEntry)
+			sbrickName = brickFamily.lower() + str(sbrickIndex).zfill(2) + "_" + name[2:];
 		
 		parent = findSitemParent(tags)
 		if not parent:
@@ -741,6 +774,11 @@ def generateSitems():
 		fxAdvantage = None
 		if "advantage" in tags and shapeMale in sfxPs:
 			fxAdvantage = shapeMale
+		fxStatic = None
+		if "leader" in tags and shapeMale in sfxPs:
+			# the glow of a leader weapon, always on, and as its advantage fx, as in the original leader sheets
+			fxAdvantage = shapeMale
+			fxStatic = shapeMale
 		
 		print(path)
 		with open(path, "w") as f:
@@ -761,7 +799,12 @@ def generateSitems():
 				f.write("          <ATOM Value=\"" + armorSlot + "\"/>\n")
 				f.write("        </ARRAY>\n")
 				f.write("      </STRUCT>\n")
-			f.write("      <ATOM Name=\"CraftPlan\" Value=\"" + sbrickName + ".sbrick\"/>\n") # TODO: extract sbrick ids
+			if sbrickName:
+				f.write("      <ATOM Name=\"CraftPlan\" Value=\"" + sbrickName + ".sbrick\"/>\n") # TODO: extract sbrick ids
+			if "leader" in tags:
+				# unique items: no trade
+				f.write("      <ATOM Name=\"Drop or Sell\" Value=\"false\"/>\n")
+				f.write("      <ATOM Name=\"Saleable\" Value=\"false\"/>\n")
 			f.write("    </STRUCT>\n")
 			f.write("    <STRUCT Name=\"3d\">\n")
 			f.write("      <ATOM Name=\"shape\" Value=\"" + shapeMale + ".shape\"/>\n")
@@ -780,6 +823,13 @@ def generateSitems():
 					f.write("        <ATOM Name=\"Trail\" Value=\"" + fxTrail + ".shape\"/>\n")
 				if fxAdvantage:
 					f.write("        <ATOM Name=\"AdvantageFX\" Value=\"" + fxAdvantage + ".ps\"/>\n")
+				if fxStatic:
+					f.write("        <ARRAY Name=\"StaticFXs\">\n")
+					f.write("          <STRUCT>\n")
+					f.write("            <ATOM Name=\"Name\" Value=\"" + fxStatic + ".ps\"/>\n")
+					f.write("            <ATOM Name=\"Bone\" Value=\"box_arme\"/>\n")
+					f.write("          </STRUCT>\n")
+					f.write("        </ARRAY>\n")
 				f.write("      </STRUCT>\n")
 				if fxAdvantage:
 					f.write("      <ATOM Name=\"has_fx\" Value=\"true\"/>")
@@ -789,6 +839,9 @@ def generateSitems():
 			f.flush()
 		#print(brickFamily)
 		
+		if "leader" in tags:
+			continue # no brick or phrase of its own
+
 		# Generate the sbrick
 		sbrickRoot = "R:\\leveldesign\\game_element\\sbrick\\craft\\effect"
 		sbrickFolder = sbrickRoot + "\\" + folder
@@ -850,11 +903,11 @@ def generateSitems():
 		minMat *= 3
 		randMat *= 3
 		# rand0 = zlib.crc32(name + brickFamily + skill) & 0xffffffff
-		rand1 = zlib.crc32(name + skill + brickFamily) & 0xffffffff
-		rand2 = zlib.crc32(skill + name + brickFamily) & 0xffffffff
-		rand3 = zlib.crc32(skill + brickFamily + name) & 0xffffffff
-		rand4 = zlib.crc32(brickFamily + name + skill) & 0xffffffff
-		rand5 = zlib.crc32(brickFamily + skill + name) & 0xffffffff
+		rand1 = zlib.crc32((name + skill + brickFamily).encode("ascii")) & 0xffffffff
+		rand2 = zlib.crc32((skill + name + brickFamily).encode("ascii")) & 0xffffffff
+		rand3 = zlib.crc32((skill + brickFamily + name).encode("ascii")) & 0xffffffff
+		rand4 = zlib.crc32((brickFamily + name + skill).encode("ascii")) & 0xffffffff
+		rand5 = zlib.crc32((brickFamily + skill + name).encode("ascii")) & 0xffffffff
 		mp1 = minMat + (rand1 % randMat)
 		mp2 = minMat + (rand2 % randMat)
 		mp3 = minMat + (rand3 % randMat)

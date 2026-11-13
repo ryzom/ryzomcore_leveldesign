@@ -22,7 +22,7 @@ texture = [
 # ic t ah b _2
 
 def randomValue(mod, seed):
-	rv = zlib.crc32(seed) & 0xffffffff
+	rv = zlib.crc32(seed.encode("ascii")) & 0xffffffff
 	return rv % mod
 
 for race in matrix[0]:
@@ -95,3 +95,52 @@ for race in matrix[0]:
 						f.write("  </STRUCT>\n")
 						f.write("</FORM>\n")
 						f.flush()
+
+# The nation leaders: their own equipment (sitem_leaders.tsv), their haircut, and the color of their nation, the one
+# their equipment and hair textures exist in. Their NPC sheets, with the stats and the weapon, come from
+# generate_creature_npc.py leaders
+colorNames = [ "Red", "Beige", "Green", "Turquoise", "Blue", "Violet", "White", "Black" ]
+leaders = [
+	# set name, race, item prefix, color index, haircut
+	( "leader_dexton", "fy", "icfah", 0, "fy_leader_01.sitem" ),
+	( "leader_yrkanis", "ma", "icmah", 2, "ma_leader_01.sitem" ),
+	( "leader_still_wyler", "tr", "ictam", 4, "tr_leader_01.sitem" ),
+	# TODO: the haircut does not show: the export of zo_hom_cheveux_lead.shape has no skin, the asset needs fixing
+	( "leader_mabreka", "zo", "iczac", 5, "zo_leader_01.sitem" ),
+]
+leaderTexture = texture[0] # the lead textures exist in the first variant only
+for setName, race, itemPrefix, color, haircut in leaders:
+	parentName = "_" + matrix[0][race] + "_male.creature"
+	eyesColor = randomValue(8, "EyesColor_" + setName) + 1
+	with open(folder + "\\_" + setName + ".creature", "w") as f:
+		f.write("<?xml version=\"1.0\"?>\n")
+		f.write("<FORM Version=\"4.0\" State=\"modified\">\n")
+		f.write("  <PARENT Filename=\"" + parentName + "\"/>\n")
+		f.write("  <STRUCT>\n")
+		f.write("    <STRUCT Name=\"Basics\">\n")
+		f.write("      <STRUCT Name=\"Equipment\">\n")
+		for slot, piece in [ ( "Body", "v" ), ( "Legs", "p" ), ( "Arms", "s" ), ( "Feet", "b" ) ]:
+			f.write("        <STRUCT Name=\"" + slot + "\">\n")
+			f.write("          <ATOM Name=\"Item\" Value=\"" + itemPrefix + piece + "_leader01.sitem\"/>\n")
+			f.write("          <ATOM Name=\"Texture\" Value=\"" + leaderTexture + "\"/>\n")
+			f.write("          <ATOM Name=\"Color\" Value=\"" + colorNames[color] + "\"/>\n")
+			f.write("        </STRUCT>\n")
+		f.write("        <STRUCT Name=\"Face\">\n")
+		f.write("          <ATOM Name=\"Item\" Value=\"" + race + "_visage.sitem\"/>\n")
+		f.write("          <ATOM Name=\"Texture\" Value=\"" + texture[1] + "\"/>\n")
+		f.write("          <ATOM Name=\"Color\" Value=\"Beige\"/>\n")
+		f.write("        </STRUCT>\n")
+		f.write("      </STRUCT>\n")
+		f.write("    </STRUCT>\n")
+		f.write("    <STRUCT Name=\"3d data\">\n")
+		f.write("      <ARRAY Name=\"HairItem\">\n")
+		f.write("        <STRUCT Name=\"leader\">\n")
+		f.write("          <ATOM Name=\"Item\" Value=\"" + haircut + "\"/>\n")
+		f.write("        </STRUCT>\n")
+		f.write("      </ARRAY>\n")
+		f.write("      <ATOM Name=\"HairColor\" Value=\"Color " + str(color + 1) + "\"/>\n")
+		f.write("      <ATOM Name=\"EyesColor\" Value=\"Color " + str(eyesColor) + "\"/>\n")
+		f.write("    </STRUCT>\n")
+		f.write("  </STRUCT>\n")
+		f.write("</FORM>\n")
+		f.flush()

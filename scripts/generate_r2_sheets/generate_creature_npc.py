@@ -1,5 +1,5 @@
 
-import os, zlib
+import os, sys, zlib
 
 from balancing_config import *
 
@@ -57,11 +57,11 @@ attackTimeVariance = 0.2
 attackVariance = 0.1
 
 def randomValue(mod, seed):
-	rv = zlib.crc32(seed) & 0xffffffff
+	rv = zlib.crc32(seed.encode("ascii")) & 0xffffffff
 	return rv % mod
 
 def randomFloat(seed):
-	rv = zlib.crc32(seed) & 0xffffffff
+	rv = zlib.crc32(seed.encode("ascii")) & 0xffffffff
 	return ((rv % 2000) * 1.0) / 2000.0
 
 def varyFloat(value, variance, seed):
@@ -70,7 +70,7 @@ def varyFloat(value, variance, seed):
 	return value + (value * rv)
 
 def varyLevel(level, seed):
-	rv = zlib.crc32("Level_" + seed + "_Level") & 0xffffffff
+	rv = zlib.crc32(("Level_" + seed + "_Level").encode("ascii")) & 0xffffffff
 	vrange = levelVariance[1] - levelVariance[0]
 	rv = rv % vrange
 	vmin = levelVariance[0]
@@ -81,7 +81,7 @@ def varyLevel(level, seed):
 	return res
 
 def varyProtection(protection, seed):
-	rv = zlib.crc32("Protection_" + seed + "_Protection") & 0xffffffff
+	rv = zlib.crc32(("Protection_" + seed + "_Protection").encode("ascii")) & 0xffffffff
 	rv = rv % 10
 	rv = rv - 5
 	res = int(round(protection + (protection * rv * 0.01), 0))
@@ -92,11 +92,11 @@ def varyProtection(protection, seed):
 	return res
 
 def randomMagic(seed):
-	rv = zlib.crc32("Magic_" + seed + "_Magic") & 0xffffffff
+	rv = zlib.crc32(("Magic_" + seed + "_Magic").encode("ascii")) & 0xffffffff
 	rv = rv % len(specialization["magic"])
 	return specialization["magic"][rv]
 
-def writeNpcCreature(name, type, level, spec, actionlist):
+def writeNpcCreature(name, type, level, spec, actionlist, outFolder=folder, parent=None, color="0", itemRight=None):
 	baseLevel = levels[level] + types[type]["levelOffset"]
 	baseLevel = varyLevel(baseLevel, "Level_" + name)
 	attackLevel = varyLevel(baseLevel + types[type]["attackOffset"], "Attack_" + name)
@@ -116,10 +116,10 @@ def writeNpcCreature(name, type, level, spec, actionlist):
 	totalDamage = (getScore(attackLevel) * totalTime * boost * attackFactor) / combatTime
 	totalDamage = varyFloat(totalDamage, attackVariance, "NbHitToKillPlayer" + name)
 	hitsToKill = (playerHpLevel * 100.0) / totalDamage
-	with open(folder + "\\" + name + ".creature", "w") as f:
+	with open(outFolder + "\\" + name + ".creature", "w") as f:
 		f.write("<?xml version=\"1.0\"?>\n")
 		f.write("<FORM Version=\"4.0\" State=\"modified\">\n")
-		f.write("  <PARENT Filename=\"" + types[type]["parent"] + "\"/>\n")
+		f.write("  <PARENT Filename=\"" + (parent or types[type]["parent"]) + "\"/>\n")
 		f.write("  <STRUCT>\n")
 		f.write("    <STRUCT Name=\"Basics\">\n")
 		f.write("      <ATOM Name=\"Fame\" Value=\"none\"/>\n")
@@ -132,22 +132,22 @@ def writeNpcCreature(name, type, level, spec, actionlist):
 		f.write("      </STRUCT>\n")
 		f.write("      <STRUCT Name=\"Equipment\">\n")
 		f.write("        <STRUCT Name=\"Body\">\n")
-		f.write("          <ATOM Name=\"Color\" Value=\"0\"/>\n")
+		f.write("          <ATOM Name=\"Color\" Value=\"" + color + "\"/>\n")
 		f.write("        </STRUCT>\n")
 		f.write("        <STRUCT Name=\"Legs\">\n")
-		f.write("          <ATOM Name=\"Color\" Value=\"0\"/>\n")
+		f.write("          <ATOM Name=\"Color\" Value=\"" + color + "\"/>\n")
 		f.write("        </STRUCT>\n")
 		f.write("        <STRUCT Name=\"Arms\">\n")
-		f.write("          <ATOM Name=\"Color\" Value=\"0\"/>\n")
+		f.write("          <ATOM Name=\"Color\" Value=\"" + color + "\"/>\n")
 		f.write("        </STRUCT>\n")
 		f.write("        <STRUCT Name=\"Hands\">\n")
-		f.write("          <ATOM Name=\"Color\" Value=\"0\"/>\n")
+		f.write("          <ATOM Name=\"Color\" Value=\"" + color + "\"/>\n")
 		f.write("        </STRUCT>\n")
 		f.write("        <STRUCT Name=\"Feet\">\n")
-		f.write("          <ATOM Name=\"Color\" Value=\"0\"/>\n")
+		f.write("          <ATOM Name=\"Color\" Value=\"" + color + "\"/>\n")
 		f.write("        </STRUCT>\n")
 		f.write("        <STRUCT Name=\"Head\">\n")
-		f.write("          <ATOM Name=\"Color\" Value=\"0\"/>\n")
+		f.write("          <ATOM Name=\"Color\" Value=\"" + color + "\"/>\n")
 		f.write("        </STRUCT>\n")
 		f.write("      </STRUCT>\n")
 		f.write("      <STRUCT Name=\"MovementSpeeds\">\n")
@@ -215,9 +215,31 @@ def writeNpcCreature(name, type, level, spec, actionlist):
 			f.write("      <ATOM Value=\"" + actionlist + "\"/>\n")
 			f.write("    </ARRAY>\n")
 		f.write("    <ATOM Name=\"creature_level\" Value=\"" + str(avgLevel) + "\"/>\n")
+		if itemRight:
+			f.write("    <ATOM Name=\"item_right\" Value=\"" + itemRight + "\"/>\n")
 		f.write("  </STRUCT>\n")
 		f.write("</FORM>\n")
 		f.flush()
+
+# The nation leaders, on their looks from generate_creature_npc_3dset.py: guards of the highest level, in the color of
+# their nation (also the color of their hair, which is the head color), holding their weapon (sitem_leaders.tsv)
+leaderFolder = r"R:\leveldesign\game_elem\creature\npc\leader"
+if not os.path.isdir(leaderFolder):
+	os.makedirs(leaderFolder)
+leaders = [
+	# name, melee specialization of the weapon, color index, weapon
+	( "leader_dexton", "slashing", "0", "fy_weapon_leader_dexton.sitem" ),
+	( "leader_yrkanis", "piercing", "2", "ma_weapon_leader_yrkanis.sitem" ),
+	( "leader_still_wyler", "piercing", "4", "tr_weapon_leader_still_wyler.sitem" ),
+	( "leader_mabreka", "blunt", "5", "zo_weapon_leader_mabreka.sitem" ),
+]
+for name, spec, color, weapon in leaders:
+	writeNpcCreature(name, "ring_guard_melee_tank", "f4", spec, "combat_melee.actionlist", leaderFolder, "_" + name + ".creature", color, weapon)
+
+# With the argument leaders, only the leaders: the ring sheets were generated with Python 2, whose integer division and
+# float formatting differ, so a run with Python 3 would rewrite all of them
+if len(sys.argv) > 1 and sys.argv[1] == "leaders":
+	sys.exit(0)
 
 for type in types:
 	for level in levels:
