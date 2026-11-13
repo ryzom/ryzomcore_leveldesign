@@ -105,7 +105,8 @@ leaders = [
 	( "leader_dexton", "fy", "icfah", 0, "fy_leader_01.sitem" ),
 	( "leader_yrkanis", "ma", "icmah", 2, "ma_leader_01.sitem" ),
 	( "leader_still_wyler", "tr", "ictam", 4, "tr_leader_01.sitem" ),
-	# TODO: the haircut does not show: the export of zo_hom_cheveux_lead.shape has no skin, the asset needs fixing
+	# TODO: the haircut shows only from a skinned export of zo_hom_cheveux_lead.max; zo_hom_civil01_lead.max holds a
+	# skinless copy of the node, which the pipeline exports first, and the copy needs removing from that file
 	( "leader_mabreka", "zo", "iczac", 5, "zo_leader_01.sitem" ),
 ]
 leaderTexture = texture[0] # the lead textures exist in the first variant only
