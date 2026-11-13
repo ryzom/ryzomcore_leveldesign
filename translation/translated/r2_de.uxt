@@ -29824,9 +29824,9 @@ uiR2EDVersionNoteRemovedClassReferences	[%1 Aktion(en), Event-Handler oder Attri
 // INDEX 6949
 uiR2EDVersionNoteLostMovements	[%1 NPC(s) bewegte(n) sich in einer Zone oder entlang einer Route, die das Szenario nicht hat. Ein solcher NPC bleibt jetzt stehen.]
 
-// HASH_VALUE 59C7C9005579AA10
+// HASH_VALUE 11A9E17F344D0FCA
 // INDEX 6950
-uiR2EDVersionNoteEntryPoints	[%1 Ort(e) nannte(n) einen Eingangspunkt, den es auf der zugehörigen Insel nicht gibt. Ein solcher Ort beginnt am ersten Eingangspunkt der Insel, wo der Server ihn platziert hat: Prüfen Sie den Eingangspunkt jedes Ortes.]
+uiR2EDVersionNoteEntryPoints	[%1 Ort(e) nannte(n) einen Eingangspunkt aus einer früheren Liste von Eingangspunkten. Die Zuordnung erfolgte nach der Position: Ein solcher Ort beginnt an dem Eingangspunkt seiner Insel, der der Stelle am nächsten liegt, an der der alte lag.]
 
 // HASH_VALUE 88D05761884B877E
 // INDEX 6951
@@ -29835,4 +29835,24 @@ uiR2EDScenarioUploadRefused	[Der Server hat das Szenario abgelehnt. Der Editor b
 // HASH_VALUE C3786D73553F8205
 // INDEX 6952
 uiR2EDTranslateUnknownSheet	[Der NPC '%1' verwendet das Sheet '%2', das dieser Client nicht kennt: Er kommt ohne sein Aussehen in den Test.]
+
+// HASH_VALUE 56BF82405D592186
+// INDEX 6953
+uiR2EDVersionNoteEntryPointsFar	[%1 Ort(e) nannte(n) einen Eingangspunkt aus einer früheren Liste von Eingangspunkten, den es auf der zugehörigen Insel nicht mehr gibt: Der nächstgelegene Eingangspunkt ist mehr als %2 m von der Stelle entfernt, an der der alte lag. Ein solcher Ort beginnt an diesem nächstgelegenen Eingangspunkt: Prüfen Sie den Eingangspunkt jedes Ortes.]
+
+// HASH_VALUE DF9F37D1C1E0D56A
+// INDEX 6954
+uiR2EDVersionNoteEntryPointsUncertain	[%1 Ort(e) nannte(n) einen Eingangspunkt, den zwei frühere Listen von Eingangspunkten an verschiedenen Stellen hatten. Ein solcher Ort beginnt an dem Eingangspunkt, der der Stelle aus der ersten dieser Listen am nächsten liegt: Prüfen Sie den Eingangspunkt jedes Ortes.]
+
+// HASH_VALUE FE465A5A32BBE02E
+// INDEX 6955
+uiR2EDVersionNoteEntryPointsUnknown	[%1 Ort(e) nannte(n) einen Eingangspunkt, dessen Stelle nicht bekannt ist: Die Liste von Eingangspunkten, aus der er stammt, ist verloren. Ein solcher Ort beginnt am ersten Eingangspunkt seiner Insel: Prüfen Sie den Eingangspunkt jedes Ortes.]
+
+// HASH_VALUE 4F92717FBCB713E6
+// INDEX 6956
+uiR2EDVersionNoteIslandMissing	[Ein Ort dieses Szenarios liegt auf der Insel '%1', die dieser Editor nicht hat. Das Szenario kann dort nicht starten: Wählen Sie eine andere Insel für die Akte dieses Ortes.]
+
+// HASH_VALUE C62CEC631BF1A55A
+// INDEX 6957
+uiR2EntryPointAlpha01	[Eingangspunkt 01 (Alpha)]
 

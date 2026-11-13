@@ -29841,9 +29841,9 @@ uiR2EDVersionNoteRemovedClassReferences	[%1 action(s), event handler(s) or attri
 // INDEX 6949
 uiR2EDVersionNoteLostMovements	[%1 npc(s) moved in a zone or along a road the scenario does not have. They stand still now.]
 
-// HASH_VALUE 59C7C9005579AA10
+// HASH_VALUE 11A9E17F344D0FCA
 // INDEX 6950
-uiR2EDVersionNoteEntryPoints	[%1 location(s) named an entry point their island does not have. They start at the first entry point of the island, where the server placed them: check the entry point of each location.]
+uiR2EDVersionNoteEntryPoints	[%1 location(s) named an entry point of an earlier list of entry points. They were matched by position: each starts at the entry point of its island that is nearest to the place the old one had.]
 
 // HASH_VALUE 88D05761884B877E
 // INDEX 6951
@@ -29852,4 +29852,24 @@ uiR2EDScenarioUploadRefused	[The server refused the scenario. The editor keeps t
 // HASH_VALUE C3786D73553F8205
 // INDEX 6952
 uiR2EDTranslateUnknownSheet	[The npc '%1' uses the sheet '%2', which this client does not know: it goes into the test without its look.]
+
+// HASH_VALUE 56BF82405D592186
+// INDEX 6953
+uiR2EDVersionNoteEntryPointsFar	[%1 location(s) named an entry point of an earlier list of entry points that their island no longer has: the nearest entry point is more than %2 m from the place the old one had. They start at that nearest entry point: check the entry point of each location.]
+
+// HASH_VALUE DF9F37D1C1E0D56A
+// INDEX 6954
+uiR2EDVersionNoteEntryPointsUncertain	[%1 location(s) named an entry point that two earlier lists of entry points had at different places. They start at the entry point nearest to the place of the first of those lists: check the entry point of each location.]
+
+// HASH_VALUE FE465A5A32BBE02E
+// INDEX 6955
+uiR2EDVersionNoteEntryPointsUnknown	[%1 location(s) named an entry point whose place is not known: the list of entry points it comes from is lost. They start at the first entry point of their island: check the entry point of each location.]
+
+// HASH_VALUE 4F92717FBCB713E6
+// INDEX 6956
+uiR2EDVersionNoteIslandMissing	[A location of this scenario is on the island '%1', which this editor does not have. The scenario can not start there: choose another island for the acts of that location.]
+
+// HASH_VALUE C62CEC631BF1A55A
+// INDEX 6957
+uiR2EntryPointAlpha01	[Entry Point 01 (Alpha)]
 

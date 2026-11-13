@@ -29839,9 +29839,9 @@ uiR2EDVersionNoteRemovedClassReferences	[%1 action(s), gestionnaire(s) d'événe
 // INDEX 6949
 uiR2EDVersionNoteLostMovements	[%1 PNJ(s) en déplacement dans une zone ou le long d'une route que le scénario n'a pas. Un tel PNJ reste maintenant immobile.]
 
-// HASH_VALUE 59C7C9005579AA10
+// HASH_VALUE 11A9E17F344D0FCA
 // INDEX 6950
-uiR2EDVersionNoteEntryPoints	[%1 région(s) désignant un point d'entrée que l'île de la région n'a pas. Une telle région commence au premier point d'entrée de l'île, là où le serveur la plaçait : vérifiez le point d'entrée de chaque région.]
+uiR2EDVersionNoteEntryPoints	[%1 région(s) désignant un point d'entrée d'une liste antérieure de points d'entrée. La correspondance a été faite par position : une telle région commence au point d'entrée de son île le plus proche de l'endroit qu'occupait l'ancien.]
 
 // HASH_VALUE 88D05761884B877E
 // INDEX 6951
@@ -29850,4 +29850,24 @@ uiR2EDScenarioUploadRefused	[Le serveur a refusé le scénario. L'éditeur garde
 // HASH_VALUE C3786D73553F8205
 // INDEX 6952
 uiR2EDTranslateUnknownSheet	[Le PNJ '%1' utilise la fiche '%2', que ce client ne connaît pas : il entre dans le test sans son apparence.]
+
+// HASH_VALUE 56BF82405D592186
+// INDEX 6953
+uiR2EDVersionNoteEntryPointsFar	[%1 région(s) désignant un point d'entrée d'une liste antérieure de points d'entrée, point que l'île de la région n'a plus : le point d'entrée le plus proche est à plus de %2 m de l'endroit qu'occupait l'ancien. Une telle région commence à ce point d'entrée le plus proche : vérifiez le point d'entrée de chaque région.]
+
+// HASH_VALUE DF9F37D1C1E0D56A
+// INDEX 6954
+uiR2EDVersionNoteEntryPointsUncertain	[%1 région(s) désignant un point d'entrée que deux listes antérieures de points d'entrée avaient à des endroits différents. Une telle région commence au point d'entrée le plus proche de l'endroit qu'il occupait dans la première de ces listes : vérifiez le point d'entrée de chaque région.]
+
+// HASH_VALUE FE465A5A32BBE02E
+// INDEX 6955
+uiR2EDVersionNoteEntryPointsUnknown	[%1 région(s) désignant un point d'entrée dont l'endroit n'est pas connu : la liste de points d'entrée dont il provient est perdue. Une telle région commence au premier point d'entrée de son île : vérifiez le point d'entrée de chaque région.]
+
+// HASH_VALUE 4F92717FBCB713E6
+// INDEX 6956
+uiR2EDVersionNoteIslandMissing	[Une région de ce scénario se trouve sur l'île '%1', que cet éditeur n'a pas. Le scénario ne peut pas y commencer : choisissez une autre île pour les actes de cette région.]
+
+// HASH_VALUE C62CEC631BF1A55A
+// INDEX 6957
+uiR2EntryPointAlpha01	[Point d'entrée 01 (Alpha)]
 

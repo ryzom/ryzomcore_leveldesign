@@ -29836,9 +29836,9 @@ uiR2EDVersionNoteRemovedClassReferences	[%1 acción(es), manejador(es) de evento
 // INDEX 6949
 uiR2EDVersionNoteLostMovements	[%1 NPC(s) se movía(n) en una zona o por una ruta que el escenario no tiene. Ahora un NPC así permanece quieto.]
 
-// HASH_VALUE 59C7C9005579AA10
+// HASH_VALUE 11A9E17F344D0FCA
 // INDEX 6950
-uiR2EDVersionNoteEntryPoints	[%1 sitio(s) indicaba(n) un punto de entrada que su isla no tiene. Un sitio así comienza en el primer punto de entrada de la isla, donde el servidor lo colocaba: comprueba el punto de entrada de cada sitio.]
+uiR2EDVersionNoteEntryPoints	[%1 sitio(s) indicaba(n) un punto de entrada de una lista anterior de puntos de entrada. La correspondencia se ha hecho por posición: un sitio así comienza en el punto de entrada de su isla más cercano al lugar que ocupaba el antiguo.]
 
 // HASH_VALUE 88D05761884B877E
 // INDEX 6951
@@ -29847,4 +29847,24 @@ uiR2EDScenarioUploadRefused	[El servidor ha rechazado el escenario. El editor co
 // HASH_VALUE C3786D73553F8205
 // INDEX 6952
 uiR2EDTranslateUnknownSheet	[El NPC '%1' usa la hoja '%2', que este cliente no conoce: entra en la prueba sin su apariencia.]
+
+// HASH_VALUE 56BF82405D592186
+// INDEX 6953
+uiR2EDVersionNoteEntryPointsFar	[%1 sitio(s) indicaba(n) un punto de entrada, de una lista anterior de puntos de entrada, que su isla ya no tiene: el punto de entrada más cercano está a más de %2 m del lugar que ocupaba el antiguo. Un sitio así comienza en ese punto de entrada más cercano: comprueba el punto de entrada de cada sitio.]
+
+// HASH_VALUE DF9F37D1C1E0D56A
+// INDEX 6954
+uiR2EDVersionNoteEntryPointsUncertain	[%1 sitio(s) indicaba(n) un punto de entrada que dos listas anteriores de puntos de entrada tenían en lugares distintos. Un sitio así comienza en el punto de entrada más cercano al lugar que tenía en la primera de esas listas: comprueba el punto de entrada de cada sitio.]
+
+// HASH_VALUE FE465A5A32BBE02E
+// INDEX 6955
+uiR2EDVersionNoteEntryPointsUnknown	[%1 sitio(s) indicaba(n) un punto de entrada cuyo lugar no se conoce: la lista de puntos de entrada de la que procede se ha perdido. Un sitio así comienza en el primer punto de entrada de su isla: comprueba el punto de entrada de cada sitio.]
+
+// HASH_VALUE 4F92717FBCB713E6
+// INDEX 6956
+uiR2EDVersionNoteIslandMissing	[Un sitio de este escenario está en la isla '%1', que este editor no tiene. El escenario no puede comenzar allí: elige otra isla para los actos de ese sitio.]
+
+// HASH_VALUE C62CEC631BF1A55A
+// INDEX 6957
+uiR2EntryPointAlpha01	[Punto de Entrada 01 (Alpha)]
 
