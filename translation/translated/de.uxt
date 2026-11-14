@@ -25136,7 +25136,7 @@ uiCP_InRingSession	[Das Ringszenario, das dieser Charakter gestartet hat, ist we
 
 // HASH_VALUE AC8AB07F995277AD
 // INDEX 5971
-uiCharSel_ResumeSession	[Szenario abbrechen]
+uiCharSel_ResumeSession	[Szenario wiederaufnehmen]
 
 // HASH_VALUE 03CB9065A10C297C
 // INDEX 5972
@@ -27991,4 +27991,16 @@ uiQConfirmMissionAbandon	[Willst du diese Mission wirklich abbrechen?]
 // HASH_VALUE F1AA751A0392F931
 // INDEX 6664
 uiSoundDeviceNotFound	[Der Ton ist aus: Der Soundtreiber hat kein Gerät mit dem Namen '%device'. Leere den Schlüssel SoundDevice in client.cfg, um das Standardgerät zu verwenden, oder trage dort einen der Gerätenamen ein, die in client.log aufgelistet sind.]
+
+// HASH_VALUE 5BF800786AB57B64
+// INDEX 6665
+uiCharSel_CloseSession	[Szenario schließen]
+
+// HASH_VALUE 8B307EF1BEEDCE43
+// INDEX 6666
+uiCharSel_CloseSessionConfirm	[Das Ringszenario schließen, das dieser Charakter weiterlaufen ließ? Die Spieler, die noch darin sind, werden auf das Hauptland zurückgeschickt, und das Szenario kann nicht wiederaufgenommen werden.]
+
+// HASH_VALUE ABB3820ECB840533
+// INDEX 6667
+uiCharSel_CloseSessionFailed	[Das Ringszenario konnte nicht geschlossen werden. Bitte versuch es später noch einmal.]
 
