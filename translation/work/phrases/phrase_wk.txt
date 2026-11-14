@@ -1007,6 +1007,10 @@ RING_TRE()
 {
 	[Ring Channel tre.]
 }
+RING_CHANNEL (literal name)
+{
+	[Ring Channel $name$]
+}
 YES()
 {
 	[Oui.]
