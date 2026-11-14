@@ -10238,12 +10238,12 @@ uihelpItemNoRent	[@{F80B}Objeto Sin Renta: @{FFFF}]
 uihelpItemNoRentDesc	[@{F80B}Este objeto será destruído pocos minutos después de desconectarte.@{FFFF}\n
 	]
 
-// HASH_VALUE 68DDFECD9FC79CEE
+// HASH_VALUE DF1BF85CDB87CC3D
 // INDEX 2471
 uihelpItemCosmetic	[\n
 	\n
 	%cansell\n
-	@{FFFF}%desc]
+	@{FFFF}%desc%custom_text]
 
 // HASH_VALUE EA125F4DF699651A
 // INDEX 2472
@@ -10310,7 +10310,7 @@ uihelpItemRangeWeaponFormat	[@{FFF9}@{HuittInfoOrigin}Orígen:@{H}@{T10}@{FFFF}%
 	@{FFF9}@{HuittInfoMalus}Malus de Acción:@{H}@{T20}@{FFFF}+%actmalus\n
 	%magic_bonus%buffs%special_effects%skill_mod_vs_type%desc%custom_text%enchantment]
 
-// HASH_VALUE 1589D2AD17955FDD
+// HASH_VALUE EC5F8F2110738176
 // INDEX 2475
 uihelpItemAmmoFormat	[@{FFF9}@{HuittInfoOrigin}Orígen:@{H}@{T10}@{FFFF}%origin\n
 	@{FFF9}@{HuittInfoWeaponQuality}Calidad:@{H}@{T10}@{FFFF}%quality\n
@@ -10326,9 +10326,9 @@ uihelpItemAmmoFormat	[@{FFF9}@{HuittInfoOrigin}Orígen:@{H}@{T10}@{FFFF}%origin\
 	@{FFF9}@{HuittInfoAmmoHitMin}Golpe/Minuto:@{H}@{T14}@{FFFF}%speed\n
 	@{FFF9}@{HuittInfoAmmoRange}Alcance:@{H}@{T14}@{FFFF}%range\n
 	\n
-	@{FFFF}%desc]
+	@{FFFF}%desc%custom_text]
 
-// HASH_VALUE 83398662F7CD3D0A
+// HASH_VALUE 196C9FDD6D7A3FE9
 // INDEX 2476
 uihelpItemMPFormat	[@{FFF9}@{HuittInfoMpQuality}Calidad:@{H}@{T10}@{FFFF}%quality\n
 	@{FFF9}@{HuittInfoWeight}Peso:@{H}@{T10}@{FFFF}%weight Kg\n
@@ -10337,17 +10337,17 @@ uihelpItemMPFormat	[@{FFF9}@{HuittInfoMpQuality}Calidad:@{H}@{T10}@{FFFF}%qualit
 	@{FFF9}@{HuittInfoMpEco}Ecosistema:@{H}@{T10}@{FFFF}%ecosystem\n
 	@{FFF9}@{HuittInfoMpFam}Familia:@{H}@{T10}@{FFFF}%family\n
 	@{FFF9}@{HuittInfoMpColor}Color:@{H}@{T10}@{FFFF}%mpcolor\n
-	@{FFFF}%desc\n
+	@{FFFF}%desc%custom_text\n
 	%craft]
 
 // HASH_VALUE 9634984ED277B4A5
 // INDEX 2477
 uihelpItemScroll	[%custom_text]
 
-// HASH_VALUE 65AC42BD4923A2E4
+// HASH_VALUE 3C82FF314201C47D
 // INDEX 2478
 uihelpItemScrollR2	[@{ffff}%r2_description_text\n
-	@{ffff}%r2_comment_text]
+	@{ffff}%r2_comment_text%custom_text]
 
 // HASH_VALUE 4FA97D2A655ED26E
 // INDEX 2479
@@ -28001,4 +28001,16 @@ uiGPUSkinning	[Activar Skinning por GPU]
 // HASH_VALUE 23E40F9C5AE72B85
 // INDEX 6661
 uigcSoundDriver	[Controlador de Sonido:]
+
+// HASH_VALUE 2A26C4626A34987D
+// INDEX 6662
+uiGuildMemberEnterDate	[Ingreso]
+
+// HASH_VALUE CC055250000D222E
+// INDEX 6663
+uiQConfirmMissionAbandon	[¿Deseas realmente abandonar esta misión?]
+
+// HASH_VALUE F1AA751A0392F931
+// INDEX 6664
+uiSoundDeviceNotFound	[El sonido está apagado: el controlador de sonido no tiene ningún dispositivo llamado '%device'. Vacía la clave SoundDevice de client.cfg para usar el dispositivo predeterminado, o pon en ella uno de los nombres de dispositivo que aparecen en client.log.]
 
