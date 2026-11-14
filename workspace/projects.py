@@ -50,6 +50,7 @@ ProjectsToProcess += [ "common/sound" ]
 # Common client data and leveldesign projects
 ProjectsToProcess += [ "common/fonts" ]
 ProjectsToProcess += [ "common/gamedev" ]
+ProjectsToProcess += [ "common/examples" ]
 ProjectsToProcess += [ "common/leveldesign" ]
 ProjectsToProcess += [ "common/data_common" ]
 ProjectsToProcess += [ "common/exedll" ]
