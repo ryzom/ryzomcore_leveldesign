@@ -10234,13 +10234,13 @@ uihelpItemNoRent	[@{F80B}Gegenstand nicht mietbar: @{FFFF}]
 uihelpItemNoRentDesc	[@{F80B}Dieser Gegenstand wird bei Trennung der Verbindung zerstört.@{FFFF}\n
 	]
 
-// HASH_VALUE 68DDFECD9FC79CEE
+// HASH_VALUE DF1BF85CDB87CC3D
 // INDEX 2471
 uihelpItemCosmetic	[\n
 	\n
 	\n
 	\n
-	%cansell@{FFFF}%desc]
+	%cansell@{FFFF}%desc%custom_text]
 
 // HASH_VALUE EA125F4DF699651A
 // INDEX 2472
@@ -10305,7 +10305,7 @@ uihelpItemRangeWeaponFormat	[@{FFF9}@{HuittInfoOrigin}Design: @{H}@{T12}@{FFFF}%
 	%magic_bonus%buffs%special_effects%skill_mod_vs_type%desc@{FFFF}%custom_text\n
 	%enchantment]
 
-// HASH_VALUE 1589D2AD17955FDD
+// HASH_VALUE EC5F8F2110738176
 // INDEX 2475
 uihelpItemAmmoFormat	[@{FFF9}@{HuittInfoOrigin}Design: @{H}@{T12}@{FFFF}%origin\n
 	@{FFF9}@{HuittInfoWeaponQuality}Qualität: @{H}@{T12}@{FFFF}%quality\n
@@ -10321,9 +10321,9 @@ uihelpItemAmmoFormat	[@{FFF9}@{HuittInfoOrigin}Design: @{H}@{T12}@{FFFF}%origin\
 	@{FFF9}@{HuittInfoAmmoHitMin}Treffer/Minute: @{H}@{T12}@{FFFF}%speed\n
 	@{FFF9}@{HuittInfoAmmoRange}Reichweite: @{H}@{T12}@{FFFF}%range\n
 	\n
-	@{FFFF}%desc]
+	@{FFFF}%desc%custom_text]
 
-// HASH_VALUE 83398662F7CD3D0A
+// HASH_VALUE 196C9FDD6D7A3FE9
 // INDEX 2476
 uihelpItemMPFormat	[@{FFF9}@{HuittInfoMpQuality}Qualität: @{H}@{T12}@{FFFF}%quality\n
 	@{FFF9}@{HuittInfoWeight}Gewicht: @{H}@{T12}@{FFFF}%weight kg\n
@@ -10332,17 +10332,17 @@ uihelpItemMPFormat	[@{FFF9}@{HuittInfoMpQuality}Qualität: @{H}@{T12}@{FFFF}%qua
 	@{FFF9}@{HuittInfoMpEco}Ökosystem: @{H}@{T12}@{FFFF}%ecosystem\n
 	@{FFF9}@{HuittInfoMpFam}Art: @{H}@{T12}@{FFFF}%family\n
 	@{FFF9}@{HuittInfoMpColor}Farbe: @{H}@{T12}@{FFFF}%mpcolor\n
-	@{FFFF}%desc\n
+	@{FFFF}%desc%custom_text\n
 	%craft]
 
 // HASH_VALUE 9634984ED277B4A5
 // INDEX 2477
 uihelpItemScroll	[%custom_text]
 
-// HASH_VALUE 65AC42BD4923A2E4
+// HASH_VALUE 3C82FF314201C47D
 // INDEX 2478
 uihelpItemScrollR2	[@{ffff}%r2_description_text\n
-	 @{ffff}%r2_comment_text]
+	 @{ffff}%r2_comment_text%custom_text]
 
 // HASH_VALUE 4FA97D2A655ED26E
 // INDEX 2479
