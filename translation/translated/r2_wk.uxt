@@ -29853,23 +29853,134 @@ uiR2EDScenarioUploadRefused	[The server refused the scenario. The editor keeps t
 // INDEX 6952
 uiR2EDTranslateUnknownSheet	[The npc '%1' uses the sheet '%2', which this client does not know: it goes into the test without its look.]
 
-// HASH_VALUE 56BF82405D592186
+// HASH_VALUE D41239CB7008F7F0
 // INDEX 6953
+uiR2EDMaxVisibleEntityCountExceeded	[Too many entities nearby: only the closest ones are shown.]
+
+// HASH_VALUE B360E14735C0FB45
+// INDEX 6954
+uiR2EDTimerDescription	[This component can trigger some events after a certain amount of time.]
+
+// HASH_VALUE 999A6F198994F541
+// INDEX 6955
+uiR2EDTriggerZoneDescription	[This component can trigger one or more events when a player enters or exits an attached zone.]
+
+// HASH_VALUE 5158B18E4E7D8211
+// INDEX 6956
+uiR2EdUserTriggerDescription	[This component allows the Adventure Master to trigger any associated event at runtime.]
+
+// HASH_VALUE 2D59434624756F49
+// INDEX 6957
+uiR2EdStandOnStartPoint	[Stand at Start Point]
+
+// HASH_VALUE 1DF89B8616A188BB
+// INDEX 6958
+uiR2EdGoToStartPoint	[Return to Start Point]
+
+// HASH_VALUE 2C018F7EDB11A344
+// INDEX 6959
+uiR2EdGoToZone	[Go to Zone]
+
+// HASH_VALUE F5E1A90D9CBB0387
+// INDEX 6960
+uiR2EdPropertyToolTip_ActionType_ValueString	[@{6F6F}Value\n@{FFFF}Additional value of the action, for example the number of seconds to add to a timer or the number of points to add to the scenario.]
+
+// HASH_VALUE 8F093339112E0630
+// INDEX 6961
+uiR2EdPropertyToolTip_ActivityStep_RoadCountLimit	[@{6F6F}Repetition\n@{FFFF}Maximum number of times the NPC follows the route in a "Patrol" or "Repeat Route" activity. 0 means no limit.]
+
+// HASH_VALUE AFDDD579DE14169B
+// INDEX 6962
+uiR2EdPropertyToolTip_BasePrimitive_Name	[@{6F6F}Name\n@{FFFF}Name of the route or place. Use an explicit name.]
+
+// HASH_VALUE FAEEEF04B1F7640B
+// INDEX 6963
+uiR2EdPropertyToolTip_ChatAction_WhoNoEntity	[@{6F6F}Who (no NPC)\n@{FFFF}Used when no NPC says this line: the text is either broadcast to the players or sent as a message to the Adventure Master.]
+
+// HASH_VALUE 120F867B85985649
+// INDEX 6964
+uiR2EdPropertyToolTip_EventType_ValueString	[@{6F6F}Value\n@{FFFF}Additional value of the event, for example the number of the user event.]
+
+// HASH_VALUE 91F9CF9C50FCF386
+// INDEX 6965
+uiR2EdPropertyToolTip_MapDescription_CreationDate	[@{6F6F}Creation Date\n@{FFFF}Date when the scenario was created.]
+
+// HASH_VALUE 4FD97C314C97B3E7
+// INDEX 6966
+uiR2EdPropertyToolTip_MapDescription_Creator	[@{6F6F}Author\n@{FFFF}Name of the character who created the scenario.]
+
+// HASH_VALUE 9285E53A3D578938
+// INDEX 6967
+uiR2EdPropertyToolTip_MapDescription_CreatorMD5	[@{6F6F}Author ID\n@{FFFF}Encoded identifier of the author's character, used to recognize the author of the scenario.]
+
+// HASH_VALUE 6206BD35E791658C
+// INDEX 6968
+uiR2EdPropertyToolTip_MapDescription_NevraxScenario	[@{6F6F}Nevrax Scenario\n@{FFFF}Official scenario: it is saved with Ring(Nevrax) as its author. Only developers can set this.]
+
+// HASH_VALUE 397FF928A5AA2029
+// INDEX 6969
+uiR2EdPropertyToolTip_MapDescription_OtherCharAccess	[@{6F6F}Access\n@{FFFF}What other characters may do with this scenario: run and edit it, or only run it.]
+
+// HASH_VALUE 0F24E9ED0DE8FD68
+// INDEX 6970
+uiR2EdPropertyToolTip_MapDescription_ScenarioTag	[@{6F6F}Scenario Tag\n@{FFFF}Tag saved in the header of an official (Nevrax) scenario.]
+
+// HASH_VALUE 2DB23CA307B96F86
+// INDEX 6971
+uiR2EdPropertyToolTip_MapDescription_TrialAllowed	[@{6F6F}Enable for FreeTrial\n@{FFFF}Indicates if the scenario can be launched by Free-Trial clients.]
+
+// HASH_VALUE E7612EB8CDF03AA2
+// INDEX 6972
+uiR2EdPropertyToolTip_SaveUserComponent_Name	[@{6F6F}User Component Name\n@{FFFF}The exported component will have this name.]
+
+// HASH_VALUE 1C1DEF60A90EF0B0
+// INDEX 6973
+uiR2EdPropertyToolTip_UnloadUserComponent_ComponentName	[@{6F6F}User Component Name\n@{FFFF}This component will be unloaded and removed from the interface.]
+
+// HASH_VALUE ED22E4228313E706
+// INDEX 6974
+uiR2EdPropertyToolTip_UserComponentHolder_Description	[@{6F6F}Description\n@{FFFF}Describes what this user component does.]
+
+// HASH_VALUE 21FD9D7CB3C316ED
+// INDEX 6975
+uiR2EdPropertyToolTip_UserComponentHolder_Name	[@{6F6F}Name\n@{FFFF}Name of the user component. Use an explicit name.]
+
+// HASH_VALUE A68670542554B475
+// INDEX 6976
+uiR2EDequipment_iccm1pd	[Dagger]
+
+// HASH_VALUE 64D8143464D81434
+// INDEX 6977
+uiR2EDequipment_iccm1bm	[Mace]
+
+// HASH_VALUE 17475C5FE5051096
+// INDEX 6978
+uiR2EDequipment_iccm1sa	[Axe]
+
+// HASH_VALUE 6DC978A028E88498
+// INDEX 6979
+uiR2EDequipment_iccm1ss	[Sword]
+
+// HASH_VALUE 5FE5BC7115176FA0
+// INDEX 6980
+uiR2EDequipment_icravr	[Refugee Top]
+// HASH_VALUE 56BF82405D592186
+// INDEX 6981
 uiR2EDVersionNoteEntryPointsFar	[%1 location(s) named an entry point of an earlier list of entry points that their island no longer has: the nearest entry point is more than %2 m from the place the old one had. They start at that nearest entry point: check the entry point of each location.]
 
 // HASH_VALUE DF9F37D1C1E0D56A
-// INDEX 6954
+// INDEX 6982
 uiR2EDVersionNoteEntryPointsUncertain	[%1 location(s) named an entry point that two earlier lists of entry points had at different places. They start at the entry point nearest to the place of the first of those lists: check the entry point of each location.]
 
 // HASH_VALUE FE465A5A32BBE02E
-// INDEX 6955
+// INDEX 6983
 uiR2EDVersionNoteEntryPointsUnknown	[%1 location(s) named an entry point whose place is not known: the list of entry points it comes from is lost. They start at the first entry point of their island: check the entry point of each location.]
 
 // HASH_VALUE 4F92717FBCB713E6
-// INDEX 6956
+// INDEX 6984
 uiR2EDVersionNoteIslandMissing	[A location of this scenario is on the island '%1', which this editor does not have. The scenario can not start there: choose another island for the acts of that location.]
 
 // HASH_VALUE C62CEC631BF1A55A
-// INDEX 6957
+// INDEX 6985
 uiR2EntryPointAlpha01	[Entry Point 01 (Alpha)]
 
