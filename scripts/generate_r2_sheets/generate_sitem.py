@@ -199,6 +199,25 @@ for leader in loadTsv("sitem_leaders.tsv"):
 		leaderCraftPlanBase[name] = base
 	matchSitemShape += [ [ name, shapeMale, shapeFemale ] ]
 
+# The plot items of the Ring (sitem_plot_items.tsv): the items a scenario author picks from to make a plot item of
+# the scenario. They differ in their icon only, which the table gives
+plotItems = []
+plotItemNames = {}
+for plotItem in loadTsv("sitem_plot_items.tsv"):
+	if plotItem[0] == "" or plotItem[0].startswith(";"):
+		continue
+	if len(plotItem) != 3:
+		print("A line of sitem_plot_items.tsv must be item, icon, icon background: " + str(plotItem))
+		exit(1)
+	if not plotItem[0].startswith("r2_"):
+		print("The name of the plot item " + plotItem[0] + " must start with r2_")
+		exit(1)
+	if plotItem[0] in plotItemNames:
+		print("The plot item " + plotItem[0] + " is in sitem_plot_items.tsv twice")
+		exit(1)
+	plotItemNames[plotItem[0]] = True
+	plotItems += [ plotItem ]
+
 def generateParents():
 	for sitem in sitemParents:
 		name = sitem[0]
@@ -1036,5 +1055,45 @@ def generateSitems():
 			f.write("</FORM>\n")
 			f.flush()
 
+def generatePlotItems():
+	# What a plot item is, the same for all of them: an item of the family the client and the services know a plot
+	# item by (SCROLL_R2 in the code), in stacks of up to 99, of bulk and weight 1, not saleable. The name,
+	# description and comment a player sees are those the author gave it in the scenario
+	family = "scroll R2, book R2, letter R2" # item_family.typ
+	stackable = 99
+	bulk = 1
+	weight = 1
+
+	dir = sitemPath + "\\scroll"
+	if not os.path.isdir(dir):
+		os.makedirs(dir)
+
+	for plotItem in plotItems:
+		name, icon, iconBackground = plotItem
+		displayName = "ring " + name[3:].replace("_", " ")
+		path = dir + "\\" + name + ".sitem"
+
+		print(path)
+		with open(path, "w") as f:
+			f.write("<?xml version=\"1.0\"?>\n")
+			f.write("<FORM Version=\"4.0\" State=\"modified\">\n")
+			f.write("  <STRUCT>\n")
+			f.write("    <STRUCT Name=\"basics\">\n")
+			f.write("      <ATOM Name=\"name\" Value=\"" + displayName + "\"/>\n")
+			f.write("      <ATOM Name=\"family\" Value=\"" + family + "\"/>\n")
+			f.write("      <ATOM Name=\"stackable\" Value=\"" + str(stackable) + "\"/>\n")
+			f.write("      <ATOM Name=\"Bulk\" Value=\"" + str(bulk) + "\"/>\n")
+			f.write("      <ATOM Name=\"Weight\" Value=\"" + str(weight) + "\"/>\n")
+			f.write("      <ATOM Name=\"Saleable\" Value=\"false\"/>\n")
+			f.write("    </STRUCT>\n")
+			f.write("    <STRUCT Name=\"3d\">\n")
+			f.write("      <ATOM Name=\"icon\" Value=\"" + icon + "\"/>\n")
+			f.write("      <ATOM Name=\"icon background\" Value=\"" + iconBackground + "\"/>\n")
+			f.write("    </STRUCT>\n")
+			f.write("  </STRUCT>\n")
+			f.write("</FORM>\n")
+			f.flush()
+
 generateParents()
 generateSitems()
+generatePlotItems()

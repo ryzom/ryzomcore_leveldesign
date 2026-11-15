@@ -6,7 +6,18 @@
 - Run scheme_shape_parser.py to generate shape_parsed from shape_list.txt excluding _mission_ shapes
 - Run sitem_shape_matcher.py to generate match_sitem_shape.tsv from shape_parsed.tsv and sitem_parsed.tsv
 - Run extract_sbrick.py to generate the sbrick_index.tsv to ensure indices are correctly reused
-- Run generate_sitem.py to generate sitems from the tsv, and the nation leader items from sitem_leaders.tsv
+- Run generate_sitem.py to generate sitems from the tsv, the nation leader items from sitem_leaders.tsv, and the plot
+  items of the Ring from sitem_plot_items.tsv
+
+# Generate the plot items of the Ring
+- Run generate_sitem.py (sitem_plot_items.tsv: item, icon, icon background; it writes sitem\scroll\r2_*.sitem)
+- They are the items the scenario editor offers to make a plot item of: the client lists every item sheet with
+  r2_plot_item in its name (200 at most, r2ed_max_num_plot_item_sheets), the scenario service takes r2_plot_item_0 to
+  r2_plot_item_184 by name (CRingAccess::init), and a scenario holds the number of the sheet from sheet_id.bin
+- So an item keeps its name, its number in sheet_id.bin and its icon for good. A new icon is a new line with the next
+  number, which the scenario service must be told of
+- The textures are in the interface atlas of the client (texture_interfaces_*.txt in interfaces.bnp). The generator
+  does not check them: look a new one up there
 
 # Generate the nation leaders
 - Run generate_sitem.py for their items (sitem_leaders.tsv: each a variant of a systematic item, on its own shape)
