@@ -13748,3 +13748,5 @@ uiCharSel_CloseSessionFailed	[The Ring Scenario could not be closed. Please try 
 
 uiPatchNotWritable	[The patcher can't write to '%dir'. It keeps its files in the directory that holds client_default.cfg and never writes anywhere else: the downloads in unpack, the game data in data, the program files in the directory itself. Make that directory writable for your account, or install the game in a directory you can write to. If the game files are updated in another way, set PatchWanted = 0 in client.cfg.]
 
+uiDLRetry	[New attempt in %delay s (attempt %attempt of %max)]
+
