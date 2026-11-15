@@ -28010,3 +28010,7 @@ uiCharSel_CloseSessionConfirm	[Fermer le scénario du Ring que ce personnage a l
 // INDEX 6667
 uiCharSel_CloseSessionFailed	[Le scénario du Ring n'a pas pu être fermé. Veuillez réessayer plus tard.]
 
+// HASH_VALUE 6328DD4EC97F68CA
+// INDEX 6668
+uiPatchNotWritable	[Le programme de mise à jour ne peut pas écrire dans '%dir'. Il conserve ses fichiers dans le répertoire qui contient client_default.cfg et n'écrit jamais ailleurs : les téléchargements dans unpack, les données du jeu dans data, les fichiers du programme dans le répertoire lui-même. Rendez ce répertoire accessible en écriture pour votre compte, ou installez le jeu dans un répertoire où vous pouvez écrire. Si les fichiers du jeu sont mis à jour d'une autre manière, mettez PatchWanted = 0 dans client.cfg.]
+
