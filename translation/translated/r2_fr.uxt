@@ -30042,11 +30042,15 @@ uiR2EDActStartUnknown	[L'acte %1 ne peut pas être démarré car cet acte n'exis
 // INDEX 7003
 uiR2EDVersionNotePlotItemIcon	[L'objet de mission '%1' avait pour icône un objet du jeu, avec lequel un scénario ne peut pas commencer. L'icône d'objet de mission identique a été choisie pour lui.]
 
-// HASH_VALUE AEA67B7FD8C8B4CE
+// HASH_VALUE C402D7D616C0F4CF
 // INDEX 7004
-uiR2EDVersionNotePlotItemIconTaken	[L'objet de mission '%1' a pour icône un objet du jeu, avec lequel un scénario ne peut pas commencer. L'icône d'objet de mission identique est celle de l'objet de mission '%2' : choisissez une autre icône pour '%1'.]
+uiR2EDVersionNotePlotItemIconTaken	[L'objet de mission '%1' avait pour icône un objet du jeu, avec lequel un scénario ne peut pas commencer. L'icône d'objet de mission identique est déjà celle de l'objet de mission '%2' : une autre icône a donc été choisie pour '%1', du même genre lorsqu'il en restait une de libre. Vous pouvez en choisir une autre dans l'onglet Objets de la fenêtre Scénario.]
 
-// HASH_VALUE CF229E457431DA3A
+// HASH_VALUE 5B1D4368F422C512
 // INDEX 7005
-uiR2EDVersionNotePlotItemUnknown	[L'objet de mission '%1' a une icône qui n'est pas une icône d'objet de mission (numéro de fiche %2), avec laquelle un scénario ne peut pas commencer. Aucune icône d'objet de mission identique n'est connue : choisissez une icône pour '%1'.]
+uiR2EDVersionNotePlotItemUnknown	[L'objet de mission '%1' a une icône qui n'est pas une icône d'objet de mission (numéro de fiche %2), avec laquelle un scénario ne peut pas commencer. Aucune icône n'a été choisie pour lui : choisissez-en une dans l'onglet Objets de la fenêtre Scénario.]
+
+// HASH_VALUE BB3DBE82258E7E94
+// INDEX 7006
+uiR2EDVersionNotePlotItemIconNone	[L'objet de mission '%1' avait pour icône un objet du jeu, avec lequel un scénario ne peut pas commencer. Aucune icône d'objet de mission n'est identique : une autre icône a donc été choisie pour lui, du même genre lorsqu'il en restait une de libre. Vous pouvez en choisir une autre dans l'onglet Objets de la fenêtre Scénario.]
 

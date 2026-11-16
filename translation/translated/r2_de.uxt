@@ -30027,11 +30027,15 @@ uiR2EDActStartUnknown	[Akt %1 kann nicht gestartet werden, weil es diesen Akt ni
 // INDEX 7003
 uiR2EDVersionNotePlotItemIcon	[Das Plot-Item '%1' hatte einen Gegenstand des Spiels als Ikone, mit dem ein Szenario nicht starten kann. Für dieses Plot-Item wurde die Plot-Item-Ikone gewählt, die gleich aussieht.]
 
-// HASH_VALUE AEA67B7FD8C8B4CE
+// HASH_VALUE C402D7D616C0F4CF
 // INDEX 7004
-uiR2EDVersionNotePlotItemIconTaken	[Das Plot-Item '%1' hat einen Gegenstand des Spiels als Ikone, mit dem ein Szenario nicht starten kann. Die Plot-Item-Ikone, die gleich aussieht, gehört zum Plot-Item '%2': Wählen Sie eine andere Ikone für '%1'.]
+uiR2EDVersionNotePlotItemIconTaken	[Das Plot-Item '%1' hatte einen Gegenstand des Spiels als Ikone, mit dem ein Szenario nicht starten kann. Die Plot-Item-Ikone, die gleich aussieht, gehört bereits zum Plot-Item '%2'. Deshalb wurde für '%1' eine andere Ikone gewählt, von der gleichen Art, sofern eine frei war. Sie können im Plot-Item-Tab des Szenariofensters eine andere wählen.]
 
-// HASH_VALUE CF229E457431DA3A
+// HASH_VALUE 5B1D4368F422C512
 // INDEX 7005
-uiR2EDVersionNotePlotItemUnknown	[Das Plot-Item '%1' hat eine Ikone, die keine Plot-Item-Ikone ist (Sheet-Nummer %2) und mit der ein Szenario nicht starten kann. Es ist keine Plot-Item-Ikone bekannt, die gleich aussieht: Wählen Sie eine Ikone für '%1'.]
+uiR2EDVersionNotePlotItemUnknown	[Das Plot-Item '%1' hat eine Ikone, die keine Plot-Item-Ikone ist (Sheet-Nummer %2) und mit der ein Szenario nicht starten kann. Für dieses Plot-Item wurde keine Ikone gewählt: Wählen Sie eine im Plot-Item-Tab des Szenariofensters.]
+
+// HASH_VALUE BB3DBE82258E7E94
+// INDEX 7006
+uiR2EDVersionNotePlotItemIconNone	[Das Plot-Item '%1' hatte einen Gegenstand des Spiels als Ikone, mit dem ein Szenario nicht starten kann. Keine Plot-Item-Ikone sieht gleich aus. Deshalb wurde für dieses Plot-Item eine andere Ikone gewählt, von der gleichen Art, sofern eine frei war. Sie können im Plot-Item-Tab des Szenariofensters eine andere wählen.]
 

@@ -30039,11 +30039,15 @@ uiR2EDActStartUnknown	[El acto %1 no se puede iniciar porque este acto no existe
 // INDEX 7003
 uiR2EDVersionNotePlotItemIcon	[El objeto de la parcela '%1' tenía como icono un objeto del juego, con el que un escenario no puede comenzar. Se ha elegido para él el icono de objeto de la parcela que tiene el mismo aspecto.]
 
-// HASH_VALUE AEA67B7FD8C8B4CE
+// HASH_VALUE C402D7D616C0F4CF
 // INDEX 7004
-uiR2EDVersionNotePlotItemIconTaken	[El objeto de la parcela '%1' tiene como icono un objeto del juego, con el que un escenario no puede comenzar. El icono de objeto de la parcela que tiene el mismo aspecto es el del objeto de la parcela '%2': elige otro icono para '%1'.]
+uiR2EDVersionNotePlotItemIconTaken	[El objeto de la parcela '%1' tenía como icono un objeto del juego, con el que un escenario no puede comenzar. El icono de objeto de la parcela que tiene el mismo aspecto ya es el del objeto de la parcela '%2', así que se ha elegido otro icono para '%1', del mismo tipo si quedaba alguno libre. Puedes elegir otro en la ficha de objetos de la ventana del escenario.]
 
-// HASH_VALUE CF229E457431DA3A
+// HASH_VALUE 5B1D4368F422C512
 // INDEX 7005
-uiR2EDVersionNotePlotItemUnknown	[El objeto de la parcela '%1' tiene un icono que no es un icono de objeto de la parcela (número de hoja %2), con el que un escenario no puede comenzar. No se conoce ningún icono de objeto de la parcela con el mismo aspecto: elige un icono para '%1'.]
+uiR2EDVersionNotePlotItemUnknown	[El objeto de la parcela '%1' tiene un icono que no es un icono de objeto de la parcela (número de hoja %2), con el que un escenario no puede comenzar. No se ha elegido ningún icono para él: elige uno en la ficha de objetos de la ventana del escenario.]
+
+// HASH_VALUE BB3DBE82258E7E94
+// INDEX 7006
+uiR2EDVersionNotePlotItemIconNone	[El objeto de la parcela '%1' tenía como icono un objeto del juego, con el que un escenario no puede comenzar. Ningún icono de objeto de la parcela tiene el mismo aspecto, así que se ha elegido otro icono para él, del mismo tipo si quedaba alguno libre. Puedes elegir otro en la ficha de objetos de la ventana del escenario.]
 
