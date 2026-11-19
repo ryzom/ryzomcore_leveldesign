@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<FORM Version="0.0" State="modified">
+  <PARENT Filename="_mf.sitem"/>
+  <PARENT Filename="_m0623.sitem"/>
+  <STRUCT>
+    <STRUCT Name="mp">
+      <ATOM Name="MpColor" Value="Blue"/>
+      <STRUCT Name="MpParam">
+        <STRUCT Name="D MpM (Shaft)">
+          <ATOM Name="Durability" Value="45"/>
+          <ATOM Name="Weight" Value="65"/>
+          <ATOM Name="SapLoad" Value="65"/>
+          <ATOM Name="DMG" Value="45"/>
+          <ATOM Name="Speed" Value="65"/>
+          <ATOM Name="DodgeModifier" Value="100"/>
+          <ATOM Name="ParryModifier" Value="65"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="65"/>
+          <ATOM Name="AdversaryParryModifier" Value="65"/>
+          <ATOM Name="CraftCivSpec" Value="matis"/>
+        </STRUCT>
+        <STRUCT Name="L MpPR (Ammo bullet)">
+          <ATOM Name="Durability" Value="45"/>
+          <ATOM Name="Weight" Value="67"/>
+          <ATOM Name="DMG" Value="100"/>
+          <ATOM Name="Speed" Value="67"/>
+          <ATOM Name="Range" Value="45"/>
+          <ATOM Name="CraftCivSpec" Value="matis"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="MaxQuality" Value="200"/>
+      <ATOM Name="StatEnergy" Value="65"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+</FORM>

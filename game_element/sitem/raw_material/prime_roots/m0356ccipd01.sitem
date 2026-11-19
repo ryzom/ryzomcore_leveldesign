@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<FORM Version="0.0" State="modified">
+  <PARENT Filename="_mp.sitem"/>
+  <PARENT Filename="_m0356.sitem"/>
+  <PARENT Filename="_mcci.sitem"/>
+  <STRUCT>
+    <STRUCT Name="mp">
+      <ATOM Name="MpColor" Value="Black"/>
+      <STRUCT Name="MpParam">
+        <STRUCT Name="J MpE (Explosive)">
+          <ATOM Name="Durability" Value="45"/>
+          <ATOM Name="Weight" Value="67"/>
+          <ATOM Name="DMG" Value="45"/>
+          <ATOM Name="Speed" Value="67"/>
+          <ATOM Name="Range" Value="100"/>
+          <ATOM Name="CraftCivSpec" Value="common"/>
+        </STRUCT>
+        <STRUCT Name="O MpRE (Armor interieur stuffing)">
+          <ATOM Name="Durability" Value="45"/>
+          <ATOM Name="Weight" Value="66"/>
+          <ATOM Name="DodgeModifier" Value="66"/>
+          <ATOM Name="ParryModifier" Value="45"/>
+          <ATOM Name="ProtectionFactor" Value="100"/>
+          <ATOM Name="MaxSlashingProtection" Value="66"/>
+          <ATOM Name="MaxBluntProtection" Value="66"/>
+          <ATOM Name="MaxPiercingProtection" Value="66"/>
+          <ATOM Name="CraftCivSpec" Value="common"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="MaxQuality" Value="250"/>
+      <ATOM Name="StatEnergy" Value="65"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+</FORM>

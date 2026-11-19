@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<FORM Version="0.0" State="modified">
+  <PARENT Filename="_mj.sitem"/>
+  <PARENT Filename="_m0345.sitem"/>
+  <PARENT Filename="_mchk.sitem"/>
+  <STRUCT>
+    <STRUCT Name="mp">
+      <ATOM Name="MpColor" Value="Red"/>
+      <STRUCT Name="MpParam">
+        <STRUCT Name="K MpEN (Ammo jacket)">
+          <ATOM Name="Durability" Value="100"/>
+          <ATOM Name="Weight" Value="60"/>
+          <ATOM Name="Speed" Value="100"/>
+          <ATOM Name="Range" Value="60"/>
+          <ATOM Name="CraftCivSpec" Value="zorai"/>
+        </STRUCT>
+        <STRUCT Name="N MpRI (Armor interior coating)">
+          <ATOM Name="Durability" Value="84"/>
+          <ATOM Name="Weight" Value="60"/>
+          <ATOM Name="DodgeModifier" Value="84"/>
+          <ATOM Name="ParryModifier" Value="100"/>
+          <ATOM Name="ProtectionFactor" Value="84"/>
+          <ATOM Name="MaxSlashingProtection" Value="60"/>
+          <ATOM Name="MaxBluntProtection" Value="84"/>
+          <ATOM Name="MaxPiercingProtection" Value="84"/>
+          <ATOM Name="CraftCivSpec" Value="zorai"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="MaxQuality" Value="250"/>
+      <ATOM Name="StatEnergy" Value="80"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+</FORM>

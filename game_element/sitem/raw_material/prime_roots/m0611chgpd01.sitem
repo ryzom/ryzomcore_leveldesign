@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<FORM Version="0.0" State="modified">
+  <PARENT Filename="_mp.sitem"/>
+  <PARENT Filename="_m0611.sitem"/>
+  <PARENT Filename="_mchg.sitem"/>
+  <STRUCT>
+    <STRUCT Name="mp">
+      <ATOM Name="MpColor" Value="White"/>
+      <STRUCT Name="MpParam">
+        <STRUCT Name="R MpED (Jewel stone)">
+          <ATOM Name="Durability" Value="85"/>
+          <ATOM Name="Weight" Value="45"/>
+          <ATOM Name="CraftCivSpec" Value="common"/>
+        </STRUCT>
+        <STRUCT Name="Z MpMF (Magic Focus)">
+          <ATOM Name="Durability" Value="65"/>
+          <ATOM Name="Weight" Value="65"/>
+          <ATOM Name="SapLoad" Value="65"/>
+          <ATOM Name="ElementalCastingTimeFactor" Value="45"/>
+          <ATOM Name="ElementalPowerFactor" Value="65"/>
+          <ATOM Name="OffensiveAfflictionCastingTimeFactor" Value="65"/>
+          <ATOM Name="OffensiveAfflictionPowerFactor" Value="100"/>
+          <ATOM Name="HealCastingTimeFactor" Value="45"/>
+          <ATOM Name="HealPowerFactor" Value="65"/>
+          <ATOM Name="DefensiveAfflictionCastingTimeFactor" Value="65"/>
+          <ATOM Name="DefensiveAfflictionPowerFactor" Value="65"/>
+          <ATOM Name="CraftCivSpec" Value="common"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="MaxQuality" Value="250"/>
+      <ATOM Name="StatEnergy" Value="65"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+</FORM>

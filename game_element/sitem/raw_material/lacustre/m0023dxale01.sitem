@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<FORM Version="0.0" State="modified">
+  <PARENT Filename="_ml.sitem"/>
+  <PARENT Filename="_m0023.sitem"/>
+  <STRUCT>
+    <STRUCT Name="mp">
+      <ATOM Name="MpColor" Value="Blue"/>
+      <STRUCT Name="MpParam">
+        <STRUCT Name="G MpGA (Trigger)">
+          <ATOM Name="Durability" Value="45"/>
+          <ATOM Name="Weight" Value="100"/>
+          <ATOM Name="SapLoad" Value="66"/>
+          <ATOM Name="Speed" Value="66"/>
+          <ATOM Name="DodgeModifier" Value="45"/>
+          <ATOM Name="ParryModifier" Value="66"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="66"/>
+          <ATOM Name="AdversaryParryModifier" Value="66"/>
+          <ATOM Name="CraftCivSpec" Value="tryker"/>
+        </STRUCT>
+        <STRUCT Name="Q MpSU (Jewel stone support)">
+          <ATOM Name="Durability" Value="45"/>
+          <ATOM Name="Weight" Value="85"/>
+          <ATOM Name="CraftCivSpec" Value="tryker"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="MaxQuality" Value="200"/>
+      <ATOM Name="StatEnergy" Value="65"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+</FORM>

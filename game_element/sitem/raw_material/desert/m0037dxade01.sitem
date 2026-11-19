@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<FORM Version="0.0" State="modified">
+  <PARENT Filename="_md.sitem"/>
+  <PARENT Filename="_m0037.sitem"/>
+  <STRUCT>
+    <STRUCT Name="mp">
+      <ATOM Name="MpColor" Value="Red"/>
+      <STRUCT Name="MpParam">
+        <STRUCT Name="E MpG (Grip)">
+          <ATOM Name="Durability" Value="66"/>
+          <ATOM Name="Weight" Value="66"/>
+          <ATOM Name="SapLoad" Value="45"/>
+          <ATOM Name="Speed" Value="66"/>
+          <ATOM Name="DodgeModifier" Value="66"/>
+          <ATOM Name="ParryModifier" Value="66"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="100"/>
+          <ATOM Name="AdversaryParryModifier" Value="45"/>
+          <ATOM Name="CraftCivSpec" Value="fyros"/>
+        </STRUCT>
+        <STRUCT Name="Y MpVE (Clothes)">
+          <ATOM Name="Durability" Value="66"/>
+          <ATOM Name="Weight" Value="66"/>
+          <ATOM Name="DodgeModifier" Value="45"/>
+          <ATOM Name="ParryModifier" Value="66"/>
+          <ATOM Name="ProtectionFactor" Value="66"/>
+          <ATOM Name="MaxSlashingProtection" Value="66"/>
+          <ATOM Name="MaxBluntProtection" Value="45"/>
+          <ATOM Name="MaxPiercingProtection" Value="100"/>
+          <ATOM Name="CraftCivSpec" Value="fyros"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="MaxQuality" Value="200"/>
+      <ATOM Name="StatEnergy" Value="65"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+</FORM>
