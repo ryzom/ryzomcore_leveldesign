@@ -19,6 +19,16 @@
 - The textures are in the interface atlas of the client (texture_interfaces_*.txt in interfaces.bnp). The generator
   does not check them: look a new one up there
 
+# Generate the craft actions
+- Run generate_craft_actions.py (Python 3). It writes the craft actions that the starting roles and missions teach, as
+  sphrase\craft\recommended\abc?aca*.sphrase, each the root brick of a civilisation and category
+  (sbrick\craft\root\bcpa*.sbrick) and the credit brick of its level (sbrick\craft\credit\recommended\bc?aca*.sbrick)
+- The craft window of an action only offers the plans of the families listed in its root brick: the civilisation's own,
+  plus the common and refugee ones. A character needs the Tryker armor action to use a Tryker armor plan
+- The table holds the armor actions of level 1 for the four civilisations. Other categories and levels get their rows
+  once their families and root indices are known
+- Then mark the new bricks as present in sbrick_index.tsv (extract_sbrick.py does that, but runs on Python 2 only)
+
 # Generate the nation leaders
 - Run generate_sitem.py for their items (sitem_leaders.tsv: each a variant of a systematic item, on its own shape)
 - Run generate_creature_npc_3dset.py for their looks (_parent_3dset/_leader_*.creature)

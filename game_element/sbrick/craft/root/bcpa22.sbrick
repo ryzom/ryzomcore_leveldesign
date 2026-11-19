@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.11 $" State="modified">
+<FORM Version="4.0" State="modified">
   <STRUCT>
     <STRUCT Name="Basics">
       <ATOM Name="FamilyId" Value="BCPA"/>
@@ -10,9 +10,9 @@
       <ATOM Name="Skill" Value="SCA"/>
     </STRUCT>
     <STRUCT Name="Client">
-      <ATOM Name="Icon" Value="FP_Armor.tga"/>
-      <ATOM Name="IconBack" Value="BK_zorai_brick.tga"/>
-      <ATOM Name="IconOver" Value="FP_Over.tga"/>
+      <ATOM Name="Icon" Value="fp_armor.png"/>
+      <ATOM Name="IconBack" Value="bk_zorai_brick.png"/>
+      <ATOM Name="IconOver" Value="fp_over.png"/>
     </STRUCT>
     <STRUCT Name="Optional">
       <ATOM Name="f0" Value="BCOA"/>
@@ -27,9 +27,4 @@
       <ATOM Name="Tool type" Value="ArmorTool"/>
     </STRUCT>
   </STRUCT>
-  <STRUCT/>
-  <STRUCT/>
-  <STRUCT/>
-  <STRUCT/>
-  <LOG>Wed Mar 18 17:24:09 2009 (kervala) .Basics.Property 0 = FPLAN: BCZAEA BCZAEB BCZAEC BCZAED BCCAEA BCCAEB BCCAEC BCCAED BCRAEA</LOG>
 </FORM>
