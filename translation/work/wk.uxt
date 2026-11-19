@@ -13796,3 +13796,53 @@ uiRAP_HowToJoinEdit	[You are invited to edit this Ring Scenario with its owner. 
 
 uiRingInviteEditNotification	[<R2_INVITE>You've been invited to edit a Ring scenario with its owner. If you select the editing session at a Ring Terminal you will be able to join it directly.]
 
+uigcNetwork	[NETWORK]
+
+uigcNetworkTitle	[Network Options]
+
+uigcConnection	[Connection]
+
+uigcConnectionUdp	[UDP (Unencrypted)]
+
+uigcConnectionQuicDatagrams	[QUIC (Datagram only)]
+
+uigcConnectionQuicStreams	[QUIC (Recommended)]
+
+uigcConnectionCurrent	[Current connection:]
+
+uigcConnectionCurrentNone	[not connected]
+
+uigcConnectionCurrentUdp	[UDP (unencrypted)]
+
+uigcConnectionCurrentQuicDatagrams	[QUIC (datagrams only)]
+
+uigcConnectionCurrentQuicStreams	[QUIC (datagrams and streams)]
+
+uigcConnectionType	[Connection type]
+
+uigcConnectionTypeAuto	[Automatic]
+
+uigcConnectionType56K	[56K modem]
+
+uigcConnectionTypeIsdn	[ISDN]
+
+uigcConnectionType512K	[512 kbit/s]
+
+uigcConnectionType1M	[1 Mbit/s]
+
+uigcConnectionType2M	[2 Mbit/s]
+
+uigcConnectionType6M	[6 Mbit/s]
+
+uigcConnectionType16M	[16 Mbit/s]
+
+uigcConnectionType50M	[50 Mbit/s]
+
+uigcConnectionType100M	[100 Mbit/s or more]
+
+uigcConnectionTypeCustom	[Custom (%rate bit/s)]
+
+uigcConnectionTypeNote	[Tells the server how fast your connection is, so that large data (texts, the Ring) arrives quickly without delaying the game. "Automatic" lets the server find out.]
+
+uigcConnectionRestartNote	[Changes take effect after the client is restarted.]
+

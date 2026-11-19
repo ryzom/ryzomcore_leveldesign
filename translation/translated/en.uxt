@@ -28126,3 +28126,103 @@ uiRAP_HowToJoinEdit	[You are invited to edit this Ring Scenario with its owner. 
 // INDEX 6692
 uiRingInviteEditNotification	[<R2_INVITE>You've been invited to edit a Ring scenario with its owner. If you select the editing session at a Ring Terminal you will be able to join it directly.]
 
+// HASH_VALUE 0ED3003ECE31C43A
+// INDEX 6693
+uigcNetwork	[NETWORK]
+
+// HASH_VALUE ED9BF872C7D3FCBE
+// INDEX 6694
+uigcNetworkTitle	[Network Options]
+
+// HASH_VALUE 6B57A88BA8B7BC85
+// INDEX 6695
+uigcConnection	[Connection]
+
+// HASH_VALUE 16A6AC5166D88731
+// INDEX 6696
+uigcConnectionUdp	[UDP (Unencrypted)]
+
+// HASH_VALUE 0EE52B539F502F46
+// INDEX 6697
+uigcConnectionQuicDatagrams	[QUIC (Datagram only)]
+
+// HASH_VALUE 5BB54B6A57C31B3B
+// INDEX 6698
+uigcConnectionQuicStreams	[QUIC (Recommended)]
+
+// HASH_VALUE DFB21C83149BC8AE
+// INDEX 6699
+uigcConnectionCurrent	[Current connection:]
+
+// HASH_VALUE D76A6858B0488BA9
+// INDEX 6700
+uigcConnectionCurrentNone	[not connected]
+
+// HASH_VALUE 16A6AC5166DA0731
+// INDEX 6701
+uigcConnectionCurrentUdp	[UDP (unencrypted)]
+
+// HASH_VALUE E35213778BE86B0B
+// INDEX 6702
+uigcConnectionCurrentQuicDatagrams	[QUIC (datagrams only)]
+
+// HASH_VALUE BE87488789387B45
+// INDEX 6703
+uigcConnectionCurrentQuicStreams	[QUIC (datagrams and streams)]
+
+// HASH_VALUE 6F15AF8FE067B4B1
+// INDEX 6704
+uigcConnectionType	[Connection type]
+
+// HASH_VALUE A5E80C812A29C8C5
+// INDEX 6705
+uigcConnectionTypeAuto	[Automatic]
+
+// HASH_VALUE B440F66BA8141F0E
+// INDEX 6706
+uigcConnectionType56K	[56K modem]
+
+// HASH_VALUE 4C1034244C103424
+// INDEX 6707
+uigcConnectionTypeIsdn	[ISDN]
+
+// HASH_VALUE 4DFEEB3809C29A01
+// INDEX 6708
+uigcConnectionType512K	[512 kbit/s]
+
+// HASH_VALUE 605000C470C844A4
+// INDEX 6709
+uigcConnectionType1M	[1 Mbit/s]
+
+// HASH_VALUE 605000C870C844A4
+// INDEX 6710
+uigcConnectionType2M	[2 Mbit/s]
+
+// HASH_VALUE 605000D870C844A4
+// INDEX 6711
+uigcConnectionType6M	[6 Mbit/s]
+
+// HASH_VALUE 34AF2547DAD7E305
+// INDEX 6712
+uigcConnectionType16M	[16 Mbit/s]
+
+// HASH_VALUE B48F1D4BDAD7E3FF
+// INDEX 6713
+uigcConnectionType50M	[50 Mbit/s]
+
+// HASH_VALUE CB0AF33B9867460F
+// INDEX 6714
+uigcConnectionType100M	[100 Mbit/s or more]
+
+// HASH_VALUE 8E860F4B9E75D33C
+// INDEX 6715
+uigcConnectionTypeCustom	[Custom (%rate bit/s)]
+
+// HASH_VALUE 6809EA5FA73D3478
+// INDEX 6716
+uigcConnectionTypeNote	[Tells the server how fast your connection is, so that large data (texts, the Ring) arrives quickly without delaying the game. "Automatic" lets the server find out.]
+
+// HASH_VALUE 507715CD7698B1CE
+// INDEX 6717
+uigcConnectionRestartNote	[Changes take effect after the client is restarted.]
+
