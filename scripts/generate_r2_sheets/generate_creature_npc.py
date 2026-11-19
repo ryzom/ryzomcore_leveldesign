@@ -116,7 +116,7 @@ def writeNpcCreature(name, type, level, spec, actionlist, outFolder=folder, pare
 	totalDamage = (getScore(attackLevel) * totalTime * boost * attackFactor) / combatTime
 	totalDamage = varyFloat(totalDamage, attackVariance, "NbHitToKillPlayer" + name)
 	hitsToKill = (playerHpLevel * 100.0) / totalDamage
-	with open(outFolder + "\\" + name + ".creature", "w") as f:
+	with open(outFolder + "\\" + name + ".creature", "w", newline="\n") as f:
 		f.write("<?xml version=\"1.0\"?>\n")
 		f.write("<FORM Version=\"4.0\" State=\"modified\">\n")
 		f.write("  <PARENT Filename=\"" + (parent or types[type]["parent"]) + "\"/>\n")
@@ -236,8 +236,32 @@ leaders = [
 for name, spec, color, weapon in leaders:
 	writeNpcCreature(name, "ring_guard_melee_tank", "f4", spec, "combat_melee.actionlist", leaderFolder, "_" + name + ".creature", color, weapon)
 
-# With the argument leaders, only the leaders: the ring sheets were generated with Python 2, whose integer division and
-# float formatting differ, so a run with Python 3 would rewrite all of them
+# The people of the Tryker Story 4 sample (encyclopedia theme 12/19, the Loria play) at Barkdell on the Tryker
+# newbieland: civilians on the systematic looks of generate_creature_npc_3dset.py (the play's own where it named them:
+# trhc2old, trha2old, trhc3old, trfc1, trhc2, trfc1old), each in a color of its own
+storyFolder = r"R:\leveldesign\game_elem\creature\npc\newbieland"
+if not os.path.isdir(storyFolder):
+	os.makedirs(storyFolder)
+story4 = [
+	# name, look, color index, held item
+	( "tryker_story4_sage", "_trhc2old", "4", None ),
+	( "tryker_story4_narrator", "_trha2old", "1", None ),
+	( "tryker_story4_actress", "_trfc1", "6", None ),
+	( "tryker_story4_elder_1", "_trhc3old", "1", None ),
+	( "tryker_story4_elder_2", "_trhc3old", "2", None ),
+	( "tryker_story4_spectator_1", "_trfc1", "3", None ),
+	( "tryker_story4_spectator_2", "_trhc2", "0", None ),
+	( "tryker_story4_spectator_3", "_trfc1old", "5", None ),
+	( "tryker_story4_spectator_4", "_trhc2", "7", None ),
+	( "tryker_story4_beachcomber", "_trfb1mid", "3", None ),
+	( "tryker_story4_hunter", "_trhc2mid", "7", "icrm1pd.sitem" ),
+	( "tryker_story4_wardrobe", "_trfd1mid", "5", None ),
+]
+for name, look, color, item in story4:
+	writeNpcCreature(name, "ring_civil_light_melee", "b1", "blunt", "combat_melee.actionlist", storyFolder, look + ".creature", color, item)
+
+# With the argument leaders, only the leaders and the other NPCs of their own above: the ring sheets were generated
+# with Python 2, whose integer division and float formatting differ, so a run with Python 3 would rewrite all of them
 if len(sys.argv) > 1 and sys.argv[1] == "leaders":
 	sys.exit(0)
 

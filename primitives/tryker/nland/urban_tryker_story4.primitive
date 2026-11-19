@@ -1,0 +1,2674 @@
+<?xml version="1.0"?>
+<PRIMITIVES VERSION="1">
+  <ROOT_PRIMITIVE TYPE="CPrimNode">
+    <ALIAS LAST_GENERATED="65"/>
+    <CHILD TYPE="CPrimZone">
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>npc_manager</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>tryker_story4</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimAlias">
+        <ALIAS VALUE="1"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>alias</STRING>
+        </PROPERTY>
+      </CHILD>
+      <CHILD TYPE="CPrimZone">
+        <PROPERTY TYPE="string">
+          <NAME>ai_movement</NAME>
+          <STRING>stand_on_start_point</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>npc_zone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>story4_people</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="2"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_group</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_sage</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="3"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_group_parameters</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>parameters</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimPoint">
+            <PT X="22161.000000" Y="-33826.000000" Z="0.000000"/>
+            <ANGLE VALUE="-2.312744"/>
+            <PROPERTY TYPE="string_array">
+              <NAME>chat_parameters</NAME>
+              <STRING>menu: MENU_WHOAMI TRYKER_STORY4_GREET_SAGE</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_bot</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>ejootle$fct_sage$</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>sheet_client</NAME>
+              <STRING>tryker_story4_sage</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="4"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>mission</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>TRYKER_STORY4_INTRO</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>script</NAME>
+                <STRING># script generated from 'missions_tryker_story4.primitive'</STRING>
+                <STRING></STRING>
+                <STRING>#mission tags and pre-requisites</STRING>
+                <STRING>solo</STRING>
+                <STRING></STRING>
+                <STRING>#Variables declaration</STRING>
+                <STRING>decl : bot : giver</STRING>
+                <STRING>decl : bot : player</STRING>
+                <STRING>decl : bot : ejootle</STRING>
+                <STRING>decl : bot : noeh</STRING>
+                <STRING>decl : bot : story4_beachcomber</STRING>
+                <STRING>decl : bot : story4_hunter</STRING>
+                <STRING>decl : bot : story4_wardrobe</STRING>
+                <STRING>decl : place : place_barkdell</STRING>
+                <STRING></STRING>
+                <STRING>#pre-requisites</STRING>
+                <STRING></STRING>
+                <STRING>#script</STRING>
+                <STRING>mission_title : TRYKER_STORY4_INTRO_TITLE</STRING>
+                <STRING>mission_desc : TRYKER_STORY4_INTRO_DESC; ejootle; noeh; place_barkdell</STRING>
+                <STRING># offer</STRING>
+                <STRING>dyn_chat : ejootle : TRYKER_STORY4_INTRO_OFFER; noeh; player : offer_resp TRYKER_STORY4_INTRO_ACCEPT</STRING>
+                <STRING>fail</STRING>
+                <STRING>jump_point : offer_resp</STRING>
+                <STRING># meet_the_troupe</STRING>
+                <STRING>add_compass_npc : noeh</STRING>
+                <STRING>set_obj : TRYKER_STORY4_INTRO_OBJ_TALK; place_barkdell</STRING>
+                <STRING>talk_to : noeh : TRYKER_STORY4_INTRO_TALK</STRING>
+                <STRING>remove_compass_npc : noeh</STRING>
+                <STRING>bot_chat : tell : noeh : TRYKER_STORY4_INTRO_NOEH; story4_beachcomber; story4_hunter; story4_wardrobe</STRING>
+                <STRING>encyclo_unlock : 12 19</STRING>
+                <STRING></STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="61"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>mission</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>R_12_19</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>script</NAME>
+                <STRING># script generated from 'missions_tryker_story4.primitive'</STRING>
+                <STRING></STRING>
+                <STRING>#mission tags and pre-requisites</STRING>
+                <STRING>mono</STRING>
+                <STRING>solo</STRING>
+                <STRING></STRING>
+                <STRING>#Variables declaration</STRING>
+                <STRING>decl : bot : giver</STRING>
+                <STRING>decl : bot : player</STRING>
+                <STRING>decl : bot : ejootle</STRING>
+                <STRING>decl : bot : noeh</STRING>
+                <STRING>decl : bot : luria</STRING>
+                <STRING>decl : bot : elder</STRING>
+                <STRING>decl : bot : elder_2</STRING>
+                <STRING>decl : bot : story4_actress</STRING>
+                <STRING>decl : bot : story4_actors</STRING>
+                <STRING>decl : bot : story4_spectators</STRING>
+                <STRING>decl : faction : tryker</STRING>
+                <STRING>decl : place : place_barkdell</STRING>
+                <STRING></STRING>
+                <STRING>#pre-requisites</STRING>
+                <STRING>req_encyclo_thema : 12 19</STRING>
+                <STRING></STRING>
+                <STRING>#script</STRING>
+                <STRING>mission_title : R_12_19_TITLE</STRING>
+                <STRING>mission_desc : R_12_19_DESC</STRING>
+                <STRING># offer</STRING>
+                <STRING>dyn_chat : ejootle : R_12_19_OFFER; noeh; player : offer_resp R_12_19_ACCEPT</STRING>
+                <STRING>fail</STRING>
+                <STRING>jump_point : offer_resp</STRING>
+                <STRING># failure</STRING>
+                <STRING>failure</STRING>
+                <STRING>	ai_event : story4_actress; 9</STRING>
+                <STRING>	ai_event : story4_actors; 9</STRING>
+                <STRING>	bot_chat : say : noeh : R_12_19_FAIL</STRING>
+                <STRING>/failure</STRING>
+                <STRING># reconnect</STRING>
+                <STRING>player_reconnect</STRING>
+                <STRING>fail</STRING>
+                <STRING>/player_reconnect</STRING>
+                <STRING># crash</STRING>
+                <STRING>crash : tryker_newbie</STRING>
+                <STRING>	fail</STRING>
+                <STRING>/crash</STRING>
+                <STRING># arrival</STRING>
+                <STRING>timer : 6000</STRING>
+                <STRING>add_compass_npc : noeh</STRING>
+                <STRING>set_obj : R_12_19_OBJ_TALK</STRING>
+                <STRING>talk_to : noeh : R_12_19_TALK</STRING>
+                <STRING>remove_compass_npc : noeh</STRING>
+                <STRING>bot_chat : say : noeh : R_12_19_SCENE_1; player</STRING>
+                <STRING>ai_event : story4_actress; 0</STRING>
+                <STRING># scene_1_wait</STRING>
+                <STRING>set_obj : R_12_19_OBJ_WATCH_1</STRING>
+                <STRING>wait_msg : story4_bowed</STRING>
+                <STRING># scene_1</STRING>
+                <STRING>set_obj : R_12_19_OBJ_TARGET_1</STRING>
+                <STRING>target_npc : luria</STRING>
+                <STRING>bot_chat : say : noeh : R_12_19_SCENE_2</STRING>
+                <STRING>ai_event : story4_actress; 1</STRING>
+                <STRING># scene_2_wait</STRING>
+                <STRING>set_obj : R_12_19_OBJ_WATCH_2</STRING>
+                <STRING>wait_msg : story4_at_cavern</STRING>
+                <STRING># scene_2</STRING>
+                <STRING>set_obj : R_12_19_OBJ_TARGET_2</STRING>
+                <STRING>target_npc : elder</STRING>
+                <STRING>bot_chat : say : noeh : R_12_19_SCENE_3</STRING>
+                <STRING>ai_event : story4_actress; 2</STRING>
+                <STRING># scene_3_wait</STRING>
+                <STRING>set_obj : R_12_19_OBJ_WATCH_3</STRING>
+                <STRING>wait_msg : story4_home</STRING>
+                <STRING># scene_3</STRING>
+                <STRING>set_obj : R_12_19_OBJ_TARGET_3</STRING>
+                <STRING>target_npc : luria</STRING>
+                <STRING>bot_chat : say : noeh : R_12_19_SCENE_4</STRING>
+                <STRING>ai_event : story4_actress; 3</STRING>
+                <STRING># scene_4_wait</STRING>
+                <STRING>set_obj : R_12_19_OBJ_WATCH_4</STRING>
+                <STRING>wait_msg : story4_flowers</STRING>
+                <STRING># scene_4</STRING>
+                <STRING>set_obj : R_12_19_OBJ_TARGET_4</STRING>
+                <STRING>target_npc : elder</STRING>
+                <STRING>bot_chat : say : noeh : R_12_19_SCENE_5</STRING>
+                <STRING>ai_event : story4_actress; 4</STRING>
+                <STRING>ai_event : story4_actors; 2</STRING>
+                <STRING># scene_5_wait</STRING>
+                <STRING>set_obj : R_12_19_OBJ_WATCH_5</STRING>
+                <STRING>wait_msg : story4_pothole</STRING>
+                <STRING># scene_5</STRING>
+                <STRING>set_obj : R_12_19_OBJ_TARGET_5</STRING>
+                <STRING>target_npc : luria</STRING>
+                <STRING>bot_chat : say : noeh : R_12_19_SCENE_6</STRING>
+                <STRING>ai_event : story4_actress; 5</STRING>
+                <STRING>ai_event : story4_actors; 3</STRING>
+                <STRING># scene_6_wait</STRING>
+                <STRING>set_obj : R_12_19_OBJ_WATCH_6</STRING>
+                <STRING>wait_msg : story4_sealed</STRING>
+                <STRING># scene_6</STRING>
+                <STRING>set_obj : R_12_19_OBJ_TARGET_6</STRING>
+                <STRING>target_npc : noeh</STRING>
+                <STRING>bot_chat : say : noeh : R_12_19_CURTAIN</STRING>
+                <STRING>bot_emot : luria bow</STRING>
+                <STRING>bot_emot : elder bow</STRING>
+                <STRING>bot_emot : elder_2 bow</STRING>
+                <STRING>ai_event : story4_spectators; 0</STRING>
+                <STRING># pay_the_troupe</STRING>
+                <STRING>set_obj : R_12_19_OBJ_PAY</STRING>
+                <STRING>give_money : 50 : noeh</STRING>
+                <STRING>bot_chat : say : noeh : R_12_19_END</STRING>
+                <STRING>bot_emot : noeh bow</STRING>
+                <STRING>ai_event : story4_actress; 9</STRING>
+                <STRING>ai_event : story4_actors; 9</STRING>
+                <STRING>recv_money : 200</STRING>
+                <STRING>recv_fame : tryker 300</STRING>
+                <STRING>bot_chat : tell : ejootle : R_12_19_END_SAGE; player</STRING>
+                <STRING></STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="65"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_group</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_wardrobe</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="5"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_group_parameters</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>parameters</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimPoint">
+            <PT X="22133.000000" Y="-33846.000000" Z="0.000000"/>
+            <PROPERTY TYPE="string_array">
+              <NAME>chat_parameters</NAME>
+              <STRING>menu: MENU_WHOAMI TRYKER_STORY4_GREET_WARDROBE</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_bot</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>story4_wardrobe</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>sheet_client</NAME>
+              <STRING>tryker_story4_wardrobe</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="6"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>mission</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>TRYKER_STORY4_TASK_CRAFT</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>script</NAME>
+                <STRING># script generated from 'missions_tryker_story4.primitive'</STRING>
+                <STRING></STRING>
+                <STRING>#mission tags and pre-requisites</STRING>
+                <STRING>solo</STRING>
+                <STRING></STRING>
+                <STRING>#Variables declaration</STRING>
+                <STRING>decl : bot : giver</STRING>
+                <STRING>decl : bot : player</STRING>
+                <STRING>decl : bot : story4_wardrobe</STRING>
+                <STRING>decl : bot : noeh</STRING>
+                <STRING>decl : place : place_barkdell</STRING>
+                <STRING>decl : item : ictalb</STRING>
+                <STRING>decl : item : itrtar</STRING>
+                <STRING>decl : item : m0152chdca01</STRING>
+                <STRING>decl : item : m0692chdca01</STRING>
+                <STRING>decl : item : m0103dxacb01</STRING>
+                <STRING>decl : item : m0109dxacb01</STRING>
+                <STRING></STRING>
+                <STRING>#pre-requisites</STRING>
+                <STRING></STRING>
+                <STRING>#script</STRING>
+                <STRING>mission_title : TRYKER_STORY4_TASK_CRAFT_TITLE</STRING>
+                <STRING>mission_desc : TRYKER_STORY4_TASK_CRAFT_DESC; ictalb; story4_wardrobe</STRING>
+                <STRING># offer</STRING>
+                <STRING>dyn_chat : story4_wardrobe : TRYKER_STORY4_TASK_CRAFT_OFFER : offer_resp TRYKER_STORY4_TASK_CRAFT_ACCEPT</STRING>
+                <STRING>fail</STRING>
+                <STRING>jump_point : offer_resp</STRING>
+                <STRING># craft_the_boots</STRING>
+                <STRING>recv_item : itrtar 1 10 : story4_wardrobe</STRING>
+                <STRING>recv_item : m0152chdca01 3 10 : story4_wardrobe</STRING>
+                <STRING>recv_item : m0692chdca01 3 10 : story4_wardrobe</STRING>
+                <STRING>recv_item : m0103dxacb01 2 10 : story4_wardrobe</STRING>
+                <STRING>recv_item : m0109dxacb01 1 10 : story4_wardrobe</STRING>
+                <STRING>learn_action : abctaea01_talb : story4_wardrobe</STRING>
+                <STRING>set_obj : TRYKER_STORY4_TASK_CRAFT_OBJ_CRAFT; ictalb; story4_wardrobe</STRING>
+                <STRING>craft : ictalb 1 1</STRING>
+                <STRING># give_the_boots</STRING>
+                <STRING>set_obj : TRYKER_STORY4_TASK_CRAFT_OBJ_GIVE; ictalb</STRING>
+                <STRING>give_item : ictalb 1 1 : story4_wardrobe</STRING>
+                <STRING>bot_chat : tell : story4_wardrobe : TRYKER_STORY4_TASK_CRAFT_END</STRING>
+                <STRING>recv_money : 30</STRING>
+                <STRING></STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="64"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_group</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_beachcomber</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="7"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_group_parameters</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>parameters</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimPoint">
+            <PT X="22120.000000" Y="-33902.000000" Z="0.000000"/>
+            <ANGLE VALUE="1.570796"/>
+            <PROPERTY TYPE="string_array">
+              <NAME>chat_parameters</NAME>
+              <STRING>menu: MENU_WHOAMI TRYKER_STORY4_GREET_BEACHCOMBER</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_bot</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>story4_beachcomber</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>sheet_client</NAME>
+              <STRING>tryker_story4_beachcomber</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="8"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>mission</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>TRYKER_STORY4_TASK_FORAGE</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>script</NAME>
+                <STRING># script generated from 'missions_tryker_story4.primitive'</STRING>
+                <STRING></STRING>
+                <STRING>#mission tags and pre-requisites</STRING>
+                <STRING>solo</STRING>
+                <STRING></STRING>
+                <STRING>#Variables declaration</STRING>
+                <STRING>decl : bot : giver</STRING>
+                <STRING>decl : bot : player</STRING>
+                <STRING>decl : bot : story4_beachcomber</STRING>
+                <STRING>decl : bot : noeh</STRING>
+                <STRING>decl : place : place_barkdell</STRING>
+                <STRING>decl : item : m0053dxacb01</STRING>
+                <STRING>decl : item : itrtfo</STRING>
+                <STRING></STRING>
+                <STRING>#pre-requisites</STRING>
+                <STRING></STRING>
+                <STRING>#script</STRING>
+                <STRING>mission_title : TRYKER_STORY4_TASK_FORAGE_TITLE</STRING>
+                <STRING>mission_desc : TRYKER_STORY4_TASK_FORAGE_DESC; story4_beachcomber; place_barkdell; m0053dxacb01; 5</STRING>
+                <STRING># offer</STRING>
+                <STRING>dyn_chat : story4_beachcomber : TRYKER_STORY4_TASK_FORAGE_OFFER; noeh; player; m0053dxacb01; 5 : offer_resp TRYKER_STORY4_TASK_FORAGE_ACCEPT</STRING>
+                <STRING>fail</STRING>
+                <STRING>jump_point : offer_resp</STRING>
+                <STRING># forage_the_shell</STRING>
+                <STRING>recv_item : itrtfo 1 10 : story4_beachcomber</STRING>
+                <STRING>learn_action : abhfepa01 : story4_beachcomber</STRING>
+                <STRING>set_obj : TRYKER_STORY4_TASK_FORAGE_OBJ_FORAGE; story4_beachcomber; m0053dxacb01; 5</STRING>
+                <STRING>forage : m0053dxacb01 5 1</STRING>
+                <STRING># bring_the_shell</STRING>
+                <STRING>set_obj : TRYKER_STORY4_TASK_FORAGE_OBJ_GIVE; m0053dxacb01</STRING>
+                <STRING>give_item : m0053dxacb01 5 1 : story4_beachcomber</STRING>
+                <STRING>bot_chat : tell : story4_beachcomber : TRYKER_STORY4_TASK_FORAGE_END</STRING>
+                <STRING>recv_money : 30</STRING>
+                <STRING></STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="62"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_group</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_hunter</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="9"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_group_parameters</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>parameters</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimPoint">
+            <PT X="22072.000000" Y="-33830.000000" Z="0.000000"/>
+            <ANGLE VALUE="3.141593"/>
+            <PROPERTY TYPE="string_array">
+              <NAME>chat_parameters</NAME>
+              <STRING>menu: MENU_WHOAMI TRYKER_STORY4_GREET_HUNTER</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_bot</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>story4_hunter</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>sheet_client</NAME>
+              <STRING>tryker_story4_hunter</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="10"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>mission</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>TRYKER_STORY4_TASK_LOOT</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>script</NAME>
+                <STRING># script generated from 'missions_tryker_story4.primitive'</STRING>
+                <STRING></STRING>
+                <STRING>#mission tags and pre-requisites</STRING>
+                <STRING>solo</STRING>
+                <STRING></STRING>
+                <STRING>#Variables declaration</STRING>
+                <STRING>decl : bot : giver</STRING>
+                <STRING>decl : bot : player</STRING>
+                <STRING>decl : bot : story4_hunter</STRING>
+                <STRING>decl : bot : noeh</STRING>
+                <STRING>decl : place : place_barkdell</STRING>
+                <STRING>decl : item : m0692chdca01</STRING>
+                <STRING>decl : item : icrm1pd</STRING>
+                <STRING>decl : creature_model : chdla1</STRING>
+                <STRING></STRING>
+                <STRING>#pre-requisites</STRING>
+                <STRING></STRING>
+                <STRING>#script</STRING>
+                <STRING>mission_title : TRYKER_STORY4_TASK_LOOT_TITLE</STRING>
+                <STRING>mission_desc : TRYKER_STORY4_TASK_LOOT_DESC; story4_hunter; place_barkdell; m0692chdca01; 4</STRING>
+                <STRING># offer</STRING>
+                <STRING>dyn_chat : story4_hunter : TRYKER_STORY4_TASK_LOOT_OFFER; player; m0692chdca01; 4 : offer_resp TRYKER_STORY4_TASK_LOOT_ACCEPT</STRING>
+                <STRING>fail</STRING>
+                <STRING>jump_point : offer_resp</STRING>
+                <STRING># hunt_the_yubos</STRING>
+                <STRING>recv_item : icrm1pd 1 10 : story4_hunter</STRING>
+                <STRING>set_obj : TRYKER_STORY4_TASK_LOOT_OBJ_LOOT; place_barkdell; m0692chdca01; 4; chdla1</STRING>
+                <STRING>loot_mp : m0692chdca01 4 1</STRING>
+                <STRING># bring_the_teeth</STRING>
+                <STRING>set_obj : TRYKER_STORY4_TASK_LOOT_OBJ_GIVE; m0692chdca01</STRING>
+                <STRING>give_item : m0692chdca01 4 1 : story4_hunter</STRING>
+                <STRING>bot_chat : tell : story4_hunter : TRYKER_STORY4_TASK_LOOT_END</STRING>
+                <STRING>recv_money : 30</STRING>
+                <STRING></STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="63"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>npc_folder</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>story4_stage</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="11"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PROPERTY TYPE="string">
+            <NAME>ai_movement</NAME>
+            <STRING>stand_on_start_point</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_storyteller_zone</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="12"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_group</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>story4_storyteller</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="13"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_parameters</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>parameters</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimPoint">
+              <PT X="22052.500000" Y="-33911.601562" Z="0.000000"/>
+              <ANGLE VALUE="-1.570796"/>
+              <PROPERTY TYPE="string_array">
+                <NAME>chat_parameters</NAME>
+                <STRING>menu: MENU_WHOAMI TRYKER_STORY4_GREET_NOEH</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_bot</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>noeh</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>sheet_client</NAME>
+                <STRING>tryker_story4_narrator</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="14"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PROPERTY TYPE="string">
+            <NAME>ai_movement</NAME>
+            <STRING>stand_on_start_point</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_spectators_zone</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="15"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_group</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>story4_spectators</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="16"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_parameters</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>parameters</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimPoint">
+              <PT X="22047.900391" Y="-33914.601562" Z="0.000000"/>
+              <ANGLE VALUE="1.570796"/>
+              <PROPERTY TYPE="string_array">
+                <NAME>chat_parameters</NAME>
+                <STRING>menu: MENU_WHOAMI TRYKER_STORY4_GREET_SPECTATOR_1</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_bot</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>blo</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>sheet_client</NAME>
+                <STRING>tryker_story4_spectator_1</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="17"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimPoint">
+              <PT X="22048.800781" Y="-33916.000000" Z="0.000000"/>
+              <ANGLE VALUE="1.570796"/>
+              <PROPERTY TYPE="string_array">
+                <NAME>chat_parameters</NAME>
+                <STRING>menu: MENU_WHOAMI TRYKER_STORY4_GREET_SPECTATOR_2</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_bot</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>ehct</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>sheet_client</NAME>
+                <STRING>tryker_story4_spectator_2</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="18"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimPoint">
+              <PT X="22052.800781" Y="-33916.800781" Z="0.000000"/>
+              <ANGLE VALUE="1.570796"/>
+              <PROPERTY TYPE="string_array">
+                <NAME>chat_parameters</NAME>
+                <STRING>menu: MENU_WHOAMI TRYKER_STORY4_GREET_SPECTATOR_3</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_bot</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>hetk</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>sheet_client</NAME>
+                <STRING>tryker_story4_spectator_3</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="19"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimPoint">
+              <PT X="22051.199219" Y="-33916.800781" Z="0.000000"/>
+              <ANGLE VALUE="1.570796"/>
+              <PROPERTY TYPE="string_array">
+                <NAME>chat_parameters</NAME>
+                <STRING>menu: MENU_WHOAMI TRYKER_STORY4_GREET_SPECTATOR_4</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_bot</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>jebo</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>sheet_client</NAME>
+                <STRING>tryker_story4_spectator_4</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="20"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_event_handler</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event</NAME>
+                <STRING>user_event_0</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="21"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>emot</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>applaud</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="22048.500000" Y="-33906.500000" Z="0.000000"/>
+          <PT X="22051.500000" Y="-33906.500000" Z="0.000000"/>
+          <PT X="22051.500000" Y="-33903.500000" Z="0.000000"/>
+          <PT X="22048.500000" Y="-33903.500000" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>ai_movement</NAME>
+            <STRING>stand_on_start_point</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_actress_home</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="22"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>autoSpawn</NAME>
+              <STRING>false</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_group</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>story4_actress</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="23"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_parameters</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>parameters</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimPoint">
+              <PT X="22050.000000" Y="-33905.000000" Z="0.000000"/>
+              <ANGLE VALUE="-1.570796"/>
+              <PROPERTY TYPE="string_array">
+                <NAME>chat_parameters</NAME>
+                <STRING>menu: MENU_WHOAMI TRYKER_STORY4_GREET_ACTRESS</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_bot</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>luria$fct_actress$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>sheet_client</NAME>
+                <STRING>tryker_story4_actress</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="24"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_event_handler</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event</NAME>
+                <STRING>user_event_0</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="25"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>multi_actions</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <CHILD TYPE="CPrimNode">
+                  <PROPERTY TYPE="string">
+                    <NAME>action</NAME>
+                    <STRING>begin_state</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string">
+                    <NAME>class</NAME>
+                    <STRING>npc_event_handler_action</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string_array">
+                    <NAME>parameters</NAME>
+                    <STRING>story4_actress_home</STRING>
+                  </PROPERTY>
+                </CHILD>
+                <CHILD TYPE="CPrimNode">
+                  <PROPERTY TYPE="string">
+                    <NAME>action</NAME>
+                    <STRING>trigger_event_9</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string">
+                    <NAME>class</NAME>
+                    <STRING>npc_event_handler_action</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string_array">
+                    <NAME>parameters</NAME>
+                    <STRING>story4_actors</STRING>
+                  </PROPERTY>
+                </CHILD>
+                <CHILD TYPE="CPrimNode">
+                  <PROPERTY TYPE="string">
+                    <NAME>action</NAME>
+                    <STRING>spawn</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string">
+                    <NAME>class</NAME>
+                    <STRING>npc_event_handler_action</STRING>
+                  </PROPERTY>
+                </CHILD>
+                <CHILD TYPE="CPrimNode">
+                  <PROPERTY TYPE="string">
+                    <NAME>action</NAME>
+                    <STRING>set_timer_t0</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string">
+                    <NAME>class</NAME>
+                    <STRING>npc_event_handler_action</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string_array">
+                    <NAME>parameters</NAME>
+                    <STRING>40</STRING>
+                  </PROPERTY>
+                </CHILD>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_event_handler</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event</NAME>
+                <STRING>timer_t0_triggered</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="26"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>multi_actions</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <CHILD TYPE="CPrimNode">
+                  <PROPERTY TYPE="string">
+                    <NAME>action</NAME>
+                    <STRING>emot</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string">
+                    <NAME>class</NAME>
+                    <STRING>npc_event_handler_action</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string_array">
+                    <NAME>parameters</NAME>
+                    <STRING>bow</STRING>
+                  </PROPERTY>
+                </CHILD>
+                <CHILD TYPE="CPrimNode">
+                  <PROPERTY TYPE="string">
+                    <NAME>action</NAME>
+                    <STRING>send_message</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string">
+                    <NAME>class</NAME>
+                    <STRING>npc_event_handler_action</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string_array">
+                    <NAME>parameters</NAME>
+                    <STRING>EGS</STRING>
+                    <STRING>R_12_19</STRING>
+                    <STRING>story4_bowed</STRING>
+                  </PROPERTY>
+                </CHILD>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_event_handler</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event</NAME>
+                <STRING>user_event_1</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="27"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>begin_state</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>story4_actress_to_cavern</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_event_handler</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event</NAME>
+                <STRING>user_event_2</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="28"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>begin_state</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>story4_actress_run_home</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_event_handler</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event</NAME>
+                <STRING>user_event_3</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="29"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>multi_actions</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <CHILD TYPE="CPrimNode">
+                  <PROPERTY TYPE="string">
+                    <NAME>action</NAME>
+                    <STRING>emot</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string">
+                    <NAME>class</NAME>
+                    <STRING>npc_event_handler_action</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string_array">
+                    <NAME>parameters</NAME>
+                    <STRING>unhappy</STRING>
+                  </PROPERTY>
+                </CHILD>
+                <CHILD TYPE="CPrimNode">
+                  <PROPERTY TYPE="string">
+                    <NAME>action</NAME>
+                    <STRING>begin_state</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string">
+                    <NAME>class</NAME>
+                    <STRING>npc_event_handler_action</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string_array">
+                    <NAME>parameters</NAME>
+                    <STRING>story4_actress_flowers</STRING>
+                  </PROPERTY>
+                </CHILD>
+                <CHILD TYPE="CPrimNode">
+                  <PROPERTY TYPE="string">
+                    <NAME>action</NAME>
+                    <STRING>trigger_event_9</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string">
+                    <NAME>class</NAME>
+                    <STRING>npc_event_handler_action</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string_array">
+                    <NAME>parameters</NAME>
+                    <STRING>story4_actors</STRING>
+                  </PROPERTY>
+                </CHILD>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_event_handler</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event</NAME>
+                <STRING>user_event_4</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="30"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>begin_state</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>story4_actress_lead</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_event_handler</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event</NAME>
+                <STRING>user_event_5</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="31"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>begin_state</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>story4_actress_walk_home</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_event_handler</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event</NAME>
+                <STRING>user_event_9</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="32"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>multi_actions</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <CHILD TYPE="CPrimNode">
+                  <PROPERTY TYPE="string">
+                    <NAME>action</NAME>
+                    <STRING>despawn</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string">
+                    <NAME>class</NAME>
+                    <STRING>npc_event_handler_action</STRING>
+                  </PROPERTY>
+                </CHILD>
+                <CHILD TYPE="CPrimNode">
+                  <PROPERTY TYPE="string">
+                    <NAME>action</NAME>
+                    <STRING>begin_state</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string">
+                    <NAME>class</NAME>
+                    <STRING>npc_event_handler_action</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string_array">
+                    <NAME>parameters</NAME>
+                    <STRING>story4_actress_home</STRING>
+                  </PROPERTY>
+                </CHILD>
+              </CHILD>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimPath">
+          <PT X="22050.599609" Y="-33905.199219" Z="0.000000"/>
+          <PT X="22054.599609" Y="-33905.199219" Z="0.000000"/>
+          <PT X="22054.699219" Y="-33909.101562" Z="0.000000"/>
+          <PT X="22059.099609" Y="-33909.601562" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>ai_activity</NAME>
+            <STRING>no_change</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>ai_movement</NAME>
+            <STRING>follow_route</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_route</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_actress_to_cavern</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="33"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_state_event_handler</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>event</NAME>
+              <STRING>destination_reached</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="34"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>action</NAME>
+                <STRING>begin_state</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_event_handler_action</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>parameters</NAME>
+                <STRING>story4_actress_cavern</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="22057.599609" Y="-33911.101562" Z="0.000000"/>
+          <PT X="22060.599609" Y="-33911.101562" Z="0.000000"/>
+          <PT X="22060.599609" Y="-33908.101562" Z="0.000000"/>
+          <PT X="22057.599609" Y="-33908.101562" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>ai_movement</NAME>
+            <STRING>wait</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_actress_cavern</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="35"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_state_event_handler</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>event</NAME>
+              <STRING>start_of_state</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="36"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>action</NAME>
+                <STRING>multi_actions</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_event_handler_action</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>say</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>say:TRYKER_STORY4_ACTRESS_1</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>trigger_event_0</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>story4_actors</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>send_message</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>EGS</STRING>
+                  <STRING>R_12_19</STRING>
+                  <STRING>story4_at_cavern</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimPath">
+          <PT X="22059.699219" Y="-33908.898438" Z="0.000000"/>
+          <PT X="22051.000000" Y="-33904.699219" Z="0.000000"/>
+          <PT X="22050.000000" Y="-33905.000000" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>ai_movement</NAME>
+            <STRING>follow_route</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string_array">
+            <NAME>ai_profile_params</NAME>
+            <STRING>running</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_route</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_actress_run_home</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="37"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_state_event_handler</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>event</NAME>
+              <STRING>destination_reached</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="38"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>action</NAME>
+                <STRING>multi_actions</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_event_handler_action</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>begin_state</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>story4_actress_home</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>trigger_event_1</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>story4_actors</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>send_message</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>EGS</STRING>
+                  <STRING>R_12_19</STRING>
+                  <STRING>story4_home</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimPath">
+          <PT X="22050.699219" Y="-33906.199219" Z="0.000000"/>
+          <PT X="22055.099609" Y="-33907.898438" Z="0.000000"/>
+          <PT X="22057.900391" Y="-33908.898438" Z="0.000000"/>
+          <PT X="22059.000000" Y="-33907.898438" Z="0.000000"/>
+          <PT X="22056.000000" Y="-33906.199219" Z="0.000000"/>
+          <PT X="22049.000000" Y="-33904.601562" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>ai_movement</NAME>
+            <STRING>follow_route</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string_array">
+            <NAME>ai_profile_params</NAME>
+            <STRING>running</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_route</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_actress_flowers</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="39"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_state_event_handler</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>event</NAME>
+              <STRING>destination_reached</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="40"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>action</NAME>
+                <STRING>multi_actions</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_event_handler_action</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>begin_state</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>story4_actress_temple</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>trigger_event_0</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>story4_actors</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>say</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>say:TRYKER_STORY4_ACTRESS_2</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>send_message</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>EGS</STRING>
+                  <STRING>R_12_19</STRING>
+                  <STRING>story4_flowers</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="22048.000000" Y="-33905.601562" Z="0.000000"/>
+          <PT X="22050.000000" Y="-33905.601562" Z="0.000000"/>
+          <PT X="22050.000000" Y="-33903.601562" Z="0.000000"/>
+          <PT X="22048.000000" Y="-33903.601562" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>ai_movement</NAME>
+            <STRING>wait</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_actress_temple</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="41"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimPath">
+          <PT X="22051.500000" Y="-33906.000000" Z="0.000000"/>
+          <PT X="22055.099609" Y="-33907.898438" Z="0.000000"/>
+          <PT X="22059.400391" Y="-33909.398438" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>ai_movement</NAME>
+            <STRING>follow_route</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string_array">
+            <NAME>ai_profile_params</NAME>
+            <STRING>running</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_route</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_actress_lead</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="42"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_state_event_handler</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>event</NAME>
+              <STRING>destination_reached</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="43"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>action</NAME>
+                <STRING>multi_actions</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_event_handler_action</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>begin_state</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>story4_actress_pothole</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>emot</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>point</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="22058.400391" Y="-33910.398438" Z="0.000000"/>
+          <PT X="22060.400391" Y="-33910.398438" Z="0.000000"/>
+          <PT X="22060.400391" Y="-33908.398438" Z="0.000000"/>
+          <PT X="22058.400391" Y="-33908.398438" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>ai_movement</NAME>
+            <STRING>wait</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_actress_pothole</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="44"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimPath">
+          <PT X="22057.900391" Y="-33908.898438" Z="0.000000"/>
+          <PT X="22054.699219" Y="-33907.000000" Z="0.000000"/>
+          <PT X="22050.000000" Y="-33905.000000" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>ai_movement</NAME>
+            <STRING>follow_route</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_route</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_actress_walk_home</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="45"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_state_event_handler</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>event</NAME>
+              <STRING>destination_reached</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="46"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>action</NAME>
+                <STRING>multi_actions</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_event_handler_action</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>begin_state</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>story4_actress_home</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>emot</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>sad</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>send_message</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>EGS</STRING>
+                  <STRING>R_12_19</STRING>
+                  <STRING>story4_sealed</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="22045.800781" Y="-33905.000000" Z="0.000000"/>
+          <PT X="22048.800781" Y="-33905.000000" Z="0.000000"/>
+          <PT X="22048.800781" Y="-33902.000000" Z="0.000000"/>
+          <PT X="22045.800781" Y="-33902.000000" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>ai_movement</NAME>
+            <STRING>stand_on_start_point</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_actors_temple</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="47"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>autoSpawn</NAME>
+              <STRING>false</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_group</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>story4_actors</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="48"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_parameters</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>parameters</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimPoint">
+              <PT X="22047.800781" Y="-33903.398438" Z="0.000000"/>
+              <ANGLE VALUE="-1.570796"/>
+              <PROPERTY TYPE="string_array">
+                <NAME>chat_parameters</NAME>
+                <STRING>menu: MENU_WHOAMI TRYKER_STORY4_GREET_ELDER</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_bot</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>elder$fct_actor$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>sheet_client</NAME>
+                <STRING>tryker_story4_elder_1</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="49"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimPoint">
+              <PT X="22046.699219" Y="-33903.699219" Z="0.000000"/>
+              <ANGLE VALUE="-1.570796"/>
+              <PROPERTY TYPE="string_array">
+                <NAME>chat_parameters</NAME>
+                <STRING>menu: MENU_WHOAMI TRYKER_STORY4_GREET_ELDER</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_bot</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>elder_2$fct_actor$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>sheet_client</NAME>
+                <STRING>tryker_story4_elder_2</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="50"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_event_handler</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event</NAME>
+                <STRING>user_event_0</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="51"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>spawn</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_event_handler</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event</NAME>
+                <STRING>user_event_1</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="52"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>emot</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>laugh</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_event_handler</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event</NAME>
+                <STRING>user_event_2</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="53"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>begin_state</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>story4_actors_to_pothole</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_event_handler</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event</NAME>
+                <STRING>user_event_3</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="54"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>begin_state</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>story4_actors_back</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_group_event_handler</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event</NAME>
+                <STRING>user_event_9</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimAlias">
+                <ALIAS VALUE="55"/>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>name</NAME>
+                  <STRING>alias</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>multi_actions</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <CHILD TYPE="CPrimNode">
+                  <PROPERTY TYPE="string">
+                    <NAME>action</NAME>
+                    <STRING>despawn</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string">
+                    <NAME>class</NAME>
+                    <STRING>npc_event_handler_action</STRING>
+                  </PROPERTY>
+                </CHILD>
+                <CHILD TYPE="CPrimNode">
+                  <PROPERTY TYPE="string">
+                    <NAME>action</NAME>
+                    <STRING>begin_state</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string">
+                    <NAME>class</NAME>
+                    <STRING>npc_event_handler_action</STRING>
+                  </PROPERTY>
+                  <PROPERTY TYPE="string_array">
+                    <NAME>parameters</NAME>
+                    <STRING>story4_actors_temple</STRING>
+                  </PROPERTY>
+                </CHILD>
+              </CHILD>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimPath">
+          <PT X="22049.000000" Y="-33904.500000" Z="0.000000"/>
+          <PT X="22053.000000" Y="-33906.500000" Z="0.000000"/>
+          <PT X="22056.500000" Y="-33908.000000" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>ai_movement</NAME>
+            <STRING>follow_route</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_route</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_actors_to_pothole</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="56"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_state_event_handler</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>event</NAME>
+              <STRING>destination_reached</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="57"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>action</NAME>
+                <STRING>multi_actions</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_event_handler_action</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>begin_state</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>story4_actors_pothole</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>emot</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>disagree</STRING>
+                </PROPERTY>
+              </CHILD>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>action</NAME>
+                  <STRING>send_message</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>npc_event_handler_action</STRING>
+                </PROPERTY>
+                <PROPERTY TYPE="string_array">
+                  <NAME>parameters</NAME>
+                  <STRING>EGS</STRING>
+                  <STRING>R_12_19</STRING>
+                  <STRING>story4_pothole</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimZone">
+          <PT X="22055.000000" Y="-33909.500000" Z="0.000000"/>
+          <PT X="22058.000000" Y="-33909.500000" Z="0.000000"/>
+          <PT X="22058.000000" Y="-33906.500000" Z="0.000000"/>
+          <PT X="22055.000000" Y="-33906.500000" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>ai_movement</NAME>
+            <STRING>wait</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_zone</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_actors_pothole</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="58"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimPath">
+          <PT X="22053.000000" Y="-33906.000000" Z="0.000000"/>
+          <PT X="22049.000000" Y="-33904.199219" Z="0.000000"/>
+          <PT X="22047.300781" Y="-33903.500000" Z="0.000000"/>
+          <PROPERTY TYPE="string">
+            <NAME>ai_movement</NAME>
+            <STRING>follow_route</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>npc_route</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>story4_actors_back</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimAlias">
+            <ALIAS VALUE="59"/>
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>alias</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>npc_state_event_handler</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>event</NAME>
+              <STRING>destination_reached</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimAlias">
+              <ALIAS VALUE="60"/>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>alias</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>action</NAME>
+                <STRING>begin_state</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>npc_event_handler_action</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>parameters</NAME>
+                <STRING>story4_actors_temple</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+      </CHILD>
+    </CHILD>
+  </ROOT_PRIMITIVE>
+</PRIMITIVES>

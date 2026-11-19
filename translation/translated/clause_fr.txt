@@ -40296,3 +40296,282 @@ zo_kami_walking_5	[Nous devons aller lutter ensemble contre la terrible maladie 
 // INDEX 9457
 zo_kami_walking_6	[Parfois, les Kamis nous honorent en nous demandant notre aide. N'hésitez pas à proposer votre aide si vous en voyez un.]
 
+// HASH_VALUE 7D63F375C2946C8D
+// INDEX 9458
+tryker_story4_intro_title	[Un conte des terres anciennes]
+
+// HASH_VALUE EB4323A611B9CAC1
+// INDEX 9459
+tryker_story4_intro_desc	[$givervar$, le Sage de $place$, souhaite que tu rencontres la troupe qui joue le conte de Loria. Parle à $noeh$ sur la scène, à l'extérieur du village.]
+
+// HASH_VALUE 5E44C1A74D6CAA07
+// INDEX 9460
+tryker_story4_intro_offer	[Chaque homin qui débarque sur cette île apporte quelque chose. Des outils, une lame, une rancune. Et toi, qu'apportes-tu, $player$ ?{break}Notre peuple a fui les terres anciennes presque les mains vides. Mais nous avons gardé nos contes. Les contes ne pèsent rien, et ils nourrissent bien du monde.{break}Il en est un sur Loria, notre grande héroïne, quand elle n'était encore qu'une gamine. La troupe de $noeh$ le joue ici.{break}Va saluer $noeh$ sur la scène, sur le sable, juste à l'extérieur du village. Dis-lui que c'est le Sage qui t'envoie.]
+
+// HASH_VALUE 07E8E73F1B399FF6
+// INDEX 9461
+tryker_story4_intro_accept	[Je vais aller rencontrer la troupe.]
+
+// HASH_VALUE 0B50D91CF7E903A6
+// INDEX 9462
+tryker_story4_intro_obj_talk	[Parler à $noeh$ sur la scène, à l'extérieur de $place$.]
+
+// HASH_VALUE 55693F07E6642355
+// INDEX 9463
+tryker_story4_intro_talk	[C'est le Sage qui m'envoie.]
+
+// HASH_VALUE 938F17CDA3B98035
+// INDEX 9464
+tryker_story4_intro_noeh	[Un public ! Enfin ! Assieds-toi, assieds... non. Non, attends. Nous ne pouvons pas jouer. Regarde dans quel état nous sommes !{break}Notre Loria n'a plus de cailloux pour sa poche. Les aînés ont perdu leurs dents. Et ses bottes ! Ne me parle pas de ses bottes.{break}La coutume veut qu'un homin prête main-forte à la communauté avant d'entendre le conte. Trois des miens auraient bien besoin de tes mains.{break}$beach$ est sur la rive, $hunter$ surveille la prairie aux yubos, et $wardrobe$ garde le coffre à costumes au village. Aide-les dans l'ordre qui te plaira.{break}Quand tous trois seront satisfaits, retourne voir le Sage. Il te renverra vers moi, et tu auras la meilleure place sur le sable !]
+
+// HASH_VALUE D8279B5C96D2E49C
+// INDEX 9465
+tryker_story4_task_forage_title	[Une poche pleine de cailloux]
+
+// HASH_VALUE 6E796E0B6D43F67B
+// INDEX 9466
+tryker_story4_task_forage_desc	[$givervar$ s'occupe des accessoires de la pièce de la troupe. Récolte $shell_qt$ $shell.p$ sur la rive près de $place$ et apporte-les-lui.]
+
+// HASH_VALUE EAB698820E0D050B
+// INDEX 9467
+tryker_story4_task_forage_offer	[Ohé, $player$ ! Tu cherches du travail ? Parfait. Les miens sont des rafteurs, comme ceux de Loria. Nous vivons de ce que le lac laisse sur la rive.{break}Dans le conte, Loria remplit sa poche de cailloux de corail blanc. Dans la pièce, notre Loria en perd la moitié dans le sable. À chaque représentation !{break}Le corail coûte des dappers. Le coquillage est gratuit, et du dernier rang personne ne voit la différence. Ne dis pas à $noeh$ que je te l'ai dit.{break}Prends cette pioche. Suis le bord de l'eau jusqu'à voir une source, puis extrais-en la matière. Vas-y doucement, la source durera plus longtemps.{break}Rapporte-moi $shell_qt$ $shell.p$, les plus blancs que tu trouveras.]
+
+// HASH_VALUE AF49318C690030DA
+// INDEX 9468
+tryker_story4_task_forage_accept	[Je vais remplir mes poches.]
+
+// HASH_VALUE 27AFC62A997122FA
+// INDEX 9469
+tryker_story4_task_forage_obj_forage_1	[Récolter $shell_qt$ $shell.p$ sur la rive près de $givervar$.]
+
+// HASH_VALUE D8816760DA25ABB5
+// INDEX 9470
+tryker_story4_task_forage_obj_give_1	[Apporter les $shell.p$ à $givervar$.]
+
+// HASH_VALUE AA54E97AF4912708
+// INDEX 9471
+tryker_story4_task_forage_end	[Blancs comme le corail ! Enfin, assez blancs. Notre Loria va cliqueter en marchant.{break}Garde la pioche. Et prends ces dappers : la troupe fait passer le chapeau après la pièce, et c'est mal élevé de regarder sans payer.]
+
+// HASH_VALUE EED8605868E4A048
+// INDEX 9472
+tryker_story4_task_loot_title	[Gambader après les yubos]
+
+// HASH_VALUE 4931405E4EC86B7D
+// INDEX 9473
+tryker_story4_task_loot_desc	[$givervar$ remplit le coffre à costumes de la troupe. Chasse les yubos près de $place$, dépèce-les et rapporte-lui $tooth_qt$ $tooth.p$.]
+
+// HASH_VALUE E18194F2B36086F2
+// INDEX 9474
+tryker_story4_task_loot_offer	[Holà, $player$. Tu vois ces yubos dans l'herbe ? Gras, lents, et sans le moindre souci sur Atys.{break}Dans le conte, la petite Loria gambadait après les yubos toute la journée. Sans jamais en attraper un, si tu veux mon avis.{break}Il va falloir faire mieux. Sur scène, un aîné porte un collier de dents de yubo, et nos colliers n'arrêtent pas de casser.{break}Prends cette dague. Abats un yubo, puis dépèce-le : cible le corps et prends ce qu'il donne.{break}Il me faut $tooth_qt$ $tooth.p$. Et si quelque chose de plus gros qu'un yubo te regarde de travers, fuis. Il n'y a pas de honte à ça.]
+
+// HASH_VALUE D3C8924B5C16C365
+// INDEX 9475
+tryker_story4_task_loot_accept	[Je gambaderai plus vite que Loria.]
+
+// HASH_VALUE ACC81E4D88A93603
+// INDEX 9476
+tryker_story4_task_loot_obj_loot_1	[Chasser des $yubo.p$ près de $place$ et les dépecer pour obtenir $tooth_qt$ $tooth.p$.]
+
+// HASH_VALUE 19816760D9A6D3BC
+// INDEX 9477
+tryker_story4_task_loot_obj_give_1	[Apporter les $tooth.p$ à $givervar$.]
+
+// HASH_VALUE EACA193FE553023F
+// INDEX 9478
+tryker_story4_task_loot_end	[De belles dents. Avec un collier de celles-là autour du cou, un aîné a l'air deux fois plus sage et moitié moins aimable.{break}La dague est à toi. Tiens, quelques dappers pour ta peine. Garde-en pour le chapeau de la troupe.]
+
+// HASH_VALUE 590A53872D4E139A
+// INDEX 9479
+tryker_story4_task_craft_title	[Les corvées de la maison]
+
+// HASH_VALUE 2DA47CD2CE832013
+// INDEX 9480
+tryker_story4_task_craft_desc	[$givervar$ s'occupe des costumes de la troupe. Fabrique $boots.ia$ $boots$ pour l'actrice qui joue Loria et donne-les à $givervar$.]
+
+// HASH_VALUE BA108A7EB74C4177
+// INDEX 9481
+tryker_story4_task_craft_offer	[Attention, c'est épinglé ! Oh. Une nouvelle paire de mains. Bien, j'en ai besoin.{break}Tout le monde sait que Loria ne faisait jamais ses corvées à la maison. Personne ne demande jamais qui les faisait à sa place.{break}Notre Loria saute sur les pierres de gué à chaque représentation, et ses bottes sont encore trouées au bout.{break}Alors aujourd'hui, la corvée est pour toi. Voici le patron d'une paire de bottes légères, l'outil, et de quoi les faire.{break}Ouvre tes actions d'artisanat, choisis les bottes et place chaque matériau là où le patron le demande. Une paire suffira.]
+
+// HASH_VALUE 0415A649AD08346F
+// INDEX 9482
+tryker_story4_task_craft_accept	[Une paire de bottes, c'est comme si c'était fait.]
+
+// HASH_VALUE 8F6A7BF869D431AA
+// INDEX 9483
+tryker_story4_task_craft_obj_craft_1	[Fabriquer $boots.ia$ $boots$ avec l'outil et les matériaux de $givervar$.]
+
+// HASH_VALUE 94EACFECD035CF25
+// INDEX 9484
+tryker_story4_task_craft_obj_give_1	[Donner les $boots$ à $givervar$.]
+
+// HASH_VALUE E7FAC265B45CE41B
+// INDEX 9485
+tryker_story4_task_craft_end	[Des points réguliers ! Loria elle-même n'a jamais fait une couture aussi droite. Elle était toujours à la rivière.{break}Garde l'outil, et le patron est à toi pour de bon. Tiens, quelques dappers. La troupe fait passer le chapeau, tu sais.]
+
+// HASH_VALUE 3F30F01574863F67
+// INDEX 9486
+r_12_19_title	[Une pièce tryker : L'Audace de Loria, premier acte]
+
+// HASH_VALUE CCA36550236F000A
+// INDEX 9487
+r_12_19_desc	[Tu vas assister à un spectacle mettant en scène Loria, la célèbre héroïne tryker.]
+
+// HASH_VALUE 0BE86FF03F9D27D7
+// INDEX 9488
+r_12_19_offer	[Tu as prêté tes mains à la communauté, $player$. La coutume est satisfaite, et moi aussi.{break}Tu aimes le théâtre, $player$ ? La petite troupe de $noeh$ donne des représentations de l'histoire de Loria.{break}Ils vont bientôt jouer le premier acte. Tu devrais aller profiter du spectacle ! N'oublie pas de prendre de quoi les payer en retour.]
+
+// HASH_VALUE 87B68D8111B65367
+// INDEX 9489
+r_12_19_accept	[Je vais aller voir ça.]
+
+// HASH_VALUE C455B57CFA57927B
+// INDEX 9490
+r_12_19_fail	[Halte, halte ! Notre invité s'est éclipsé. En place, tout le monde ! Nous recommencerons quand le Sage nous en enverra un autre.]
+
+// HASH_VALUE A9B4A74818920366
+// INDEX 9491
+r_12_19_obj_talk	[Parler à $noeh$ sur la scène.]
+
+// HASH_VALUE 582628E56B1C9CC4
+// INDEX 9492
+r_12_19_talk	[Je viens voir la représentation.]
+
+// HASH_VALUE 78A399BE170387E7
+// INDEX 9493
+r_12_19_scene_1	[Bienvenue, $player$ ! Tu arrives juste à temps, nous allons commencer !{break}Approchez-vous tous, et assistez à la représentation du premier acte de l'Histoire de Loria !{break}Loria était la seule fille élevée par une humble famille de rafteurs.{break}Toute la journée, elle jouait et regardait ses cousins pousser les bûches jusqu'à la rivière au lieu d'aider sa tante aux tâches quotidiennes de la maison.{break}Malgré les réprimandes de celle-ci, elle finissait toujours au bord de la rivière.{break}Éveillée, gaie et libre comme le vent, telle était Loria, gambadant après les yubos et franchissant les rapides mieux qu'un garçon.]
+
+// HASH_VALUE 654A973DA024EE62
+// INDEX 9494
+r_12_19_obj_watch_1	[Regarder la pièce.]
+
+// HASH_VALUE DEBDC658D169A4E2
+// INDEX 9495
+r_12_19_obj_target_1_1	[Regarder $luria$, qui joue Loria, en la ciblant.]
+
+// HASH_VALUE C24F607254B671E6
+// INDEX 9496
+r_12_19_scene_2	[Un beau jour d'été, alors qu'elle sautait à cloche-pied sur les pierres de gué autour de Barley Bay, elle trébucha sur une pierre branlante et découvrit une crevasse d'environ deux pieds de large, juste assez grande pour qu'un enfant de onze ans puisse s'y faufiler.{break}Elle s'aventura à l'intérieur, descendit le long d'une grande racine sortant du sol et arriva à sa grande surprise dans une caverne de ruines anciennes.{break}La poche pleine de pierres de corail blanches qu'elle avait récupérées le long de la rive du lac, elle explora tout l'après-midi les grandes salles en utilisant les belles fleurs lumineuses qu'elle y trouva pour éclairer son chemin.]
+
+// HASH_VALUE 654A973DA024EE62
+// INDEX 9497
+r_12_19_obj_watch_2	[Regarder la pièce.]
+
+// HASH_VALUE D8B34A97CBDE9F3F
+// INDEX 9498
+r_12_19_obj_target_2_1	[Regarder $elder$, qui joue un aîné, en le ciblant.]
+
+// HASH_VALUE 5D92ABF957A6BEB0
+// INDEX 9499
+r_12_19_scene_3	[Le lendemain matin, au lieu d'aller à l'école, elle courut au temple et amusa les aînés avec des histoires de cavernes et d'étranges plantes lumineuses.{break}Les vieux sages plaisantèrent sur son imagination débordante mais le lendemain, elle leur réserva une surprise.]
+
+// HASH_VALUE 654A973DA024EE62
+// INDEX 9500
+r_12_19_obj_watch_3	[Regarder la pièce.]
+
+// HASH_VALUE DEBDC658D169A4E2
+// INDEX 9501
+r_12_19_obj_target_3_1	[Regarder $luria$, qui joue Loria, en la ciblant.]
+
+// HASH_VALUE E443335390F1DF84
+// INDEX 9502
+r_12_19_scene_4	[Le jour suivant, vexée par les moqueries des aînés, Loria apporta trois belles plantes au temple.]
+
+// HASH_VALUE 654A973DA024EE62
+// INDEX 9503
+r_12_19_obj_watch_4	[Regarder la pièce.]
+
+// HASH_VALUE D8B34A97CBDE9F3F
+// INDEX 9504
+r_12_19_obj_target_4_1	[Regarder $elder$, qui joue un aîné, en le ciblant.]
+
+// HASH_VALUE 04DE839AC5BD53FB
+// INDEX 9505
+r_12_19_scene_5	[Les aînés pouvaient à peine en croire leurs yeux et demandèrent à Loria de leur montrer cette grotte.{break}À l'approche de la crevasse, les anciens reculèrent, consternés d'apprendre qu'elle s'était aventurée dans les Primes Racines interdites, transgressant ainsi la Loi de Jena, dont les disciples s'abattraient sur elle comme une tonne de briques s'ils l'apprenaient.]
+
+// HASH_VALUE 654A973DA024EE62
+// INDEX 9506
+r_12_19_obj_watch_5	[Regarder la pièce.]
+
+// HASH_VALUE DEBDC658D169A4E2
+// INDEX 9507
+r_12_19_obj_target_5_1	[Regarder $luria$, qui joue Loria, en la ciblant.]
+
+// HASH_VALUE 3DC54E6462031C56
+// INDEX 9508
+r_12_19_scene_6	[Loria fut privée de sortie pendant vingt jours et l'entrée fut scellée avec de la boue et de l'argile.{break}Cet emprisonnement enseigna à Loria une leçon précieuse : elle ne retourna pas à cette crevasse et ne dit rien lorsqu'elle en découvrit une autre... mais ça, c'est une autre histoire !]
+
+// HASH_VALUE 654A973DA024EE62
+// INDEX 9509
+r_12_19_obj_watch_6	[Regarder la pièce.]
+
+// HASH_VALUE 147A1FA196E4925A
+// INDEX 9510
+r_12_19_obj_target_6_1	[Regarder $noeh$ en le ciblant.]
+
+// HASH_VALUE E4CB522FD13F2E0A
+// INDEX 9511
+r_12_19_curtain	[Ici prend fin le premier tableau de la vie de Loria ! Merci de votre présence à tous !{break}Et merci d'avance pour votre générosité... À votre bon cœur !]
+
+// HASH_VALUE F51DE7D69DDEAFD4
+// INDEX 9512
+r_12_19_obj_pay	[Donner 50 dappers à $noeh$ pour la troupe.]
+
+// HASH_VALUE F4DE3C60F8DB44EF
+// INDEX 9513
+r_12_19_end	[Soyez remercié, ô public ! Dans quelque temps, nous donnerons une représentation du deuxième acte de la vie de Loria... Nous espérons vous revoir très bientôt !]
+
+// HASH_VALUE BCDE8838F9FFC1ED
+// INDEX 9514
+r_12_19_end_sage	[Le cube d'ambre du conte de Loria est à toi, $player$. La pièce s'arrête au premier acte ; le cube raconte la suite. Regarde dans ton encyclopédie.]
+
+// HASH_VALUE F488A971A8652FF4
+// INDEX 9515
+tryker_story4_greet_sage	[Bienvenue, jeune homin. Je garde les contes de notre peuple dans ce village. Un peuple qui perd ses contes perd bientôt son chemin.]
+
+// HASH_VALUE DD7383D0FA7A7AF7
+// INDEX 9516
+tryker_story4_greet_noeh	[Conteur, comédien et passeur de chapeau, à ton service ! Nous jouons quand le Sage nous envoie un public. Va lui dire un mot au village.]
+
+// HASH_VALUE 34B792D5249CE3E8
+// INDEX 9517
+tryker_story4_greet_actress	[Je joue Loria. Vingt jours enfermée, à chaque représentation ! À sa place, je serais redescendue dans cette crevasse avant le dîner.]
+
+// HASH_VALUE 254A1CEE31CF4485
+// INDEX 9518
+tryker_story4_greet_elder	[C'est le costume. J'ai quarante ans, pas un jour de plus.]
+
+// HASH_VALUE 283C4D7991897565
+// INDEX 9519
+tryker_story4_greet_spectator_1	[Chut ! Enfin, pas encore. Mais dès que ça commencera : chut !]
+
+// HASH_VALUE AE8597B6C8A2031A
+// INDEX 9520
+tryker_story4_greet_spectator_2	[J'ai vu le premier acte six fois. J'espère toujours que c'est aujourd'hui qu'ils joueront le deuxième.]
+
+// HASH_VALUE F045826EBE27ECE6
+// INDEX 9521
+tryker_story4_greet_spectator_3	[Ma grand-mère m'a raconté ce conte dans les Primes Racines, quand nous nous cachions des kitins. Quel endroit pour ça !]
+
+// HASH_VALUE EE708D380DBE66BA
+// INDEX 9522
+tryker_story4_greet_spectator_4	[Assieds-toi où tu veux. Le sable est gratuit. La pièce coûte cinquante dappers.]
+
+// HASH_VALUE 40E97316943C3245
+// INDEX 9523
+tryker_story4_greet_beachcomber	[Attention où tu mets les pieds, homin. La moitié de cette rive est mon gagne-pain, et l'autre moitié mon dîner.]
+
+// HASH_VALUE 4BD9D65BF0B9CF5E
+// INDEX 9524
+tryker_story4_greet_hunter	[Doucement, maintenant. Un yubo a plus d'oreille que de cervelle.]
+
+// HASH_VALUE 38A6F3FCDCABBD6A
+// INDEX 9525
+tryker_story4_greet_wardrobe	[Si c'est épinglé, n'y touche pas. Si ce n'est pas épinglé, donne-le-moi.]
+
+// HASH_VALUE 7E09AAE9116AF4C1
+// INDEX 9526
+tryker_story4_actress_1	[Quel endroit étrange ! Il faut que j'en parle aux aînés !]
+
+// HASH_VALUE A53B4C3E64B5DB6B
+// INDEX 9527
+tryker_story4_actress_2	[Trois fleurs de mon imagination débordante, sages aînés ! Attention à vos yeux, elles brillent.]

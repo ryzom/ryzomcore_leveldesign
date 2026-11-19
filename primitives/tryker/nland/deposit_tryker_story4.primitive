@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<PRIMITIVES VERSION="1">
+  <ROOT_PRIMITIVE TYPE="CPrimNode">
+    <ALIAS LAST_GENERATED="1"/>
+    <CHILD TYPE="CPrimNode">
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>depositzone_list</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>tryker_story4</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimZone">
+        <PT X="22098.000000" Y="-33897.000000" Z="0.000000"/>
+        <PT X="22138.000000" Y="-33897.000000" Z="0.000000"/>
+        <PT X="22138.000000" Y="-33902.000000" Z="0.000000"/>
+        <PT X="22098.000000" Y="-33902.000000" Z="0.000000"/>
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>depositzone</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>story4_shore_shell</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string_array">
+          <NAME>exact_mp_item</NAME>
+          <STRING>m0053dxacb01</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>deposit_max_quality_250</NAME>
+          <STRING>20</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>auto_spawn_sources</NAME>
+          <STRING>true</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>auto_spawn_average_period_s</NAME>
+          <STRING>30</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>auto_spawn_lifetime_s</NAME>
+          <STRING>900</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>can_prospect</NAME>
+          <STRING>false</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>can_have_depletion_risk</NAME>
+          <STRING>false</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="1"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+      </CHILD>
+    </CHILD>
+  </ROOT_PRIMITIVE>
+</PRIMITIVES>

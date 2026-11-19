@@ -74129,3 +74129,492 @@ zm80_reward ()
 
 }
 
+// HASH_VALUE DBF16F1472EA60CF
+TRYKER_STORY4_INTRO_TITLE (bot giver)
+{
+		tryker_story4_intro_title	[A Tale from the Old Lands]
+
+}
+
+// HASH_VALUE E1A352DEEF46376C
+TRYKER_STORY4_INTRO_DESC (bot giver, bot givervar, bot noeh, place place)
+{
+		tryker_story4_intro_desc	[$givervar$, the Sage of $place$, wants you to meet the troupe that plays the tale of Loria. Speak to $noeh$ at the stage outside the village.]
+
+}
+
+// HASH_VALUE 4FD544ACA2965018
+TRYKER_STORY4_INTRO_OFFER (bot noeh, bot player)
+{
+		tryker_story4_intro_offer	[Every homin who lands on this island carries something. Tools, a blade, a grudge. What do you carry, $player$?{break}Our people fled the old lands with next to nothing. But we kept our tales. Tales weigh nothing, and they feed many.{break}There is one about Loria, our great heroine, when she was only a slip of a girl. $noeh$'s troupe plays it here.{break}Go and greet $noeh$ at the stage on the sand, just outside the village. Say the Sage sent you.]
+
+}
+
+// HASH_VALUE ACB72E121F9B5197
+TRYKER_STORY4_INTRO_ACCEPT ()
+{
+		tryker_story4_intro_accept	[I'll go and meet the troupe.]
+
+}
+
+// HASH_VALUE 0D18858EB91C29A6
+TRYKER_STORY4_INTRO_OBJ_TALK (bot noeh, place place)
+{
+		tryker_story4_intro_obj_talk	[Speak to $noeh$ at the stage outside $place$.]
+
+}
+
+// HASH_VALUE BAA77A601DF38D42
+TRYKER_STORY4_INTRO_TALK (bot noeh)
+{
+		tryker_story4_intro_talk	[The Sage sent me.]
+
+}
+
+// HASH_VALUE 8B1FBBEE9DEE41AF
+TRYKER_STORY4_INTRO_NOEH (bot beach, bot hunter, bot wardrobe)
+{
+		tryker_story4_intro_noeh	[An audience! At last! Sit down, sit... no. No, wait. We cannot play. Look at the state of us!{break}Our Loria has no pebbles left for her pocket. The elders have lost their teeth. And her boots! Don't ask about her boots.{break}Custom says a homin lends a hand to the community before the tale is told. Three of mine could use your hands.{break}$beach$ is down on the shore, $hunter$ watches the yubo meadow, and $wardrobe$ keeps the costume chest in the village. Help them in any order you please.{break}When all three are content, go back to the Sage. He will send you to me, and you shall have the best seat on the sand!]
+
+}
+
+// HASH_VALUE F4009F1B2FC8AB51
+TRYKER_STORY4_TASK_FORAGE_TITLE (bot giver)
+{
+		tryker_story4_task_forage_title	[A Pocketful of Pebbles]
+
+}
+
+// HASH_VALUE 8F0228E841B95367
+TRYKER_STORY4_TASK_FORAGE_DESC (bot giver, bot givervar, place place, item shell, int shell_qt)
+{
+		tryker_story4_task_forage_desc	[$givervar$ keeps the props for the troupe's play. Forage $shell_qt$ $shell.p$ on the shore near $place$ and bring them to her.]
+
+}
+
+// HASH_VALUE C2C83391DD06D898
+TRYKER_STORY4_TASK_FORAGE_OFFER (bot noeh, bot player, item shell, int shell_qt)
+{
+		tryker_story4_task_forage_offer	[Yo, $player$! Looking for work? Good. My folk are beachcombers, like Loria's were. We live on what the lake leaves on the shore.{break}In the tale, Loria fills her pocket with white coral pebbles. In the play, our Loria loses half of hers in the sand. Every show!{break}Coral costs dappers. Shell is free, and from the back row nobody can tell the difference. Don't tell $noeh$ I said so.{break}Take this pick. Follow the waterline until you see a source, then extract from it. Go gently, and the source lasts longer.{break}Bring me $shell_qt$ $shell.p$, the whitest you can find.]
+
+}
+
+// HASH_VALUE FEAC61E01DE5FED9
+TRYKER_STORY4_TASK_FORAGE_ACCEPT ()
+{
+		tryker_story4_task_forage_accept	[I'll fill my pockets.]
+
+}
+
+// HASH_VALUE D8FD432320308A33
+TRYKER_STORY4_TASK_FORAGE_OBJ_FORAGE_1 (item i1, int qt1, int qual1, bot givervar, item shell, int shell_qt)
+{
+		tryker_story4_task_forage_obj_forage_1	[Forage $shell_qt$ $shell.p$ on the shore near $givervar$.]
+
+}
+
+// HASH_VALUE 5EB3E3624C778623
+TRYKER_STORY4_TASK_FORAGE_OBJ_GIVE_1 (item i1, int qt1, int qual1, bot givervar, item shell)
+{
+		tryker_story4_task_forage_obj_give_1	[Bring the $shell.p$ to $givervar$.]
+
+}
+
+// HASH_VALUE C6E0E581792D0A53
+TRYKER_STORY4_TASK_FORAGE_END ()
+{
+		tryker_story4_task_forage_end	[White as coral! Well, white enough. Our Loria will rattle when she walks.{break}Keep the pick. And take these dappers: the troupe passes the hat after the play, and it's poor manners to watch for free.]
+
+}
+
+// HASH_VALUE EC0D5C4534075EB1
+TRYKER_STORY4_TASK_LOOT_TITLE (bot giver)
+{
+		tryker_story4_task_loot_title	[Skipping after Yubos]
+
+}
+
+// HASH_VALUE 6A7A9D5D58E3C8D3
+TRYKER_STORY4_TASK_LOOT_DESC (bot giver, bot givervar, place place, item tooth, int tooth_qt)
+{
+		tryker_story4_task_loot_desc	[$givervar$ fills the troupe's costume chest. Hunt the yubos near $place$, quarter them, and bring him $tooth_qt$ $tooth.p$.]
+
+}
+
+// HASH_VALUE 61BF8B4E4FDFAA4E
+TRYKER_STORY4_TASK_LOOT_OFFER (bot player, item tooth, int tooth_qt)
+{
+		tryker_story4_task_loot_offer	[Hoy, $player$. See those yubos out on the grass? Fat, slow, and not a care on Atys.{break}In the tale, little Loria skipped after yubos all day long. Never caught one, if you ask me.{break}You will have to do better. On stage, an elder wears a string of yubo teeth, and our strings keep snapping.{break}Take this dagger. Bring a yubo down, then quarter it: target the body and take what it gives.{break}I need $tooth_qt$ $tooth.p$. And if anything bigger than a yubo looks at you twice, run. There's no shame in it.]
+
+}
+
+// HASH_VALUE 074EFB575347B7F8
+TRYKER_STORY4_TASK_LOOT_ACCEPT ()
+{
+		tryker_story4_task_loot_accept	[I'll skip faster than Loria did.]
+
+}
+
+// HASH_VALUE 938B60D8DC3F2BDA
+TRYKER_STORY4_TASK_LOOT_OBJ_LOOT_1 (item i1, int qt1, int qual1, place place, item tooth, int tooth_qt, creature_model yubo)
+{
+		tryker_story4_task_loot_obj_loot_1	[Hunt $yubo.p$ near $place$ and quarter them for $tooth_qt$ $tooth.p$.]
+
+}
+
+// HASH_VALUE 4DA00E64F2252121
+TRYKER_STORY4_TASK_LOOT_OBJ_GIVE_1 (item i1, int qt1, int qual1, bot givervar, item tooth)
+{
+		tryker_story4_task_loot_obj_give_1	[Bring the $tooth.p$ to $givervar$.]
+
+}
+
+// HASH_VALUE 1DAA737B5238E84A
+TRYKER_STORY4_TASK_LOOT_END ()
+{
+		tryker_story4_task_loot_end	[Good teeth, these. With a string of them round his neck, an elder looks twice as wise and half as kind.{break}The dagger is yours. Here, a few dappers for your trouble. Keep some for the troupe's hat.]
+
+}
+
+// HASH_VALUE BEF4DC0B6A7B35B5
+TRYKER_STORY4_TASK_CRAFT_TITLE (bot giver)
+{
+		tryker_story4_task_craft_title	[Chores in the Lodging]
+
+}
+
+// HASH_VALUE 72A0E31F3DD2A37A
+TRYKER_STORY4_TASK_CRAFT_DESC (bot giver, item boots, bot givervar)
+{
+		tryker_story4_task_craft_desc	[$givervar$ looks after the troupe's costumes. Craft $boots$ for the actress who plays Loria and give them to $givervar$.]
+
+}
+
+// HASH_VALUE 39E7043557E36990
+TRYKER_STORY4_TASK_CRAFT_OFFER ()
+{
+		tryker_story4_task_craft_offer	[Careful, that's pinned! Oh. A new pair of hands. Good, I can use those.{break}Everybody knows Loria never did her chores in the lodging. Nobody ever asks who did them for her.{break}Our Loria hops over stepping stones every show, and her boots are through at the toes again.{break}So today the chore is yours. Here is the pattern for a pair of light boots, the tool, and the makings.{break}Open your crafting actions, choose the boots, and place each material where the pattern asks. One pair will do.]
+
+}
+
+// HASH_VALUE 022A3BE3E13D93AD
+TRYKER_STORY4_TASK_CRAFT_ACCEPT ()
+{
+		tryker_story4_task_craft_accept	[One pair of boots, coming up.]
+
+}
+
+// HASH_VALUE 46CE0B954D6830C2
+TRYKER_STORY4_TASK_CRAFT_OBJ_CRAFT_1 (item i1, int qt1, int qual1, item boots, bot givervar)
+{
+		tryker_story4_task_craft_obj_craft_1	[Craft $boots$ with the tool and the makings from $givervar$.]
+
+}
+
+// HASH_VALUE AD052BA7E5972103
+TRYKER_STORY4_TASK_CRAFT_OBJ_GIVE_1 (item i1, int qt1, int qual1, bot givervar, item boots)
+{
+		tryker_story4_task_craft_obj_give_1	[Give the $boots$ to $givervar$.]
+
+}
+
+// HASH_VALUE DDF5ACD5389C8D70
+TRYKER_STORY4_TASK_CRAFT_END ()
+{
+		tryker_story4_task_craft_end	[Even stitches! Loria herself never sewed a seam this straight. She was always down at the river.{break}Keep the tool, and the pattern is yours for good. Here, a few dappers. The troupe passes a hat, you know.]
+
+}
+
+// HASH_VALUE 93656864E5E91C6C
+R_12_19_TITLE (bot giver)
+{
+		r_12_19_title	[A Tryker play: The Audacity of Loria, act one]
+
+}
+
+// HASH_VALUE F7AA48723E286995
+R_12_19_DESC (bot giver)
+{
+		r_12_19_desc	[You are going to watch a play that brings to the stage Loria, the famous Tryker heroine.]
+
+}
+
+// HASH_VALUE 2C77C6F6B8CAD419
+R_12_19_OFFER (bot noeh, bot player)
+{
+		r_12_19_offer	[You have lent your hands to the community, $player$. Custom is satisfied, and so am I.{break}Do you enjoy the theatre, $player$? $noeh$'s little troupe is giving performances of the story of Loria.{break}They are about to play the first act. You should go and enjoy the show! Don't forget to take something to pay them with in return.]
+
+}
+
+// HASH_VALUE 16C23BA3C6C3A2B2
+R_12_19_ACCEPT ()
+{
+		r_12_19_accept	[I'll go and watch.]
+
+}
+
+// HASH_VALUE A10094539BE879DB
+R_12_19_FAIL ()
+{
+		r_12_19_fail	[Hold, hold! Our guest has slipped away. Places, everyone! We begin again when the Sage sends us another.]
+
+}
+
+// HASH_VALUE 14B46A8B8A3ABCA7
+R_12_19_OBJ_TALK (bot noeh)
+{
+		r_12_19_obj_talk	[Speak to $noeh$ at the stage.]
+
+}
+
+// HASH_VALUE D93C5B0C490FA9B2
+R_12_19_TALK (bot noeh)
+{
+		r_12_19_talk	[I have come to see the performance.]
+
+}
+
+// HASH_VALUE 89A135DBE51D092C
+R_12_19_SCENE_1 (bot player)
+{
+		r_12_19_scene_1	[Welcome, $player$! You are just in time, we are about to begin!{break}Gather round, all of you, and watch the first act of the Story of Loria!{break}Loria was the only girl raised by a humble family of beachcombers.{break}All day long she would play and watch her cousins spinning the logs down at the river instead of doing chores for her aunty in the lodging.{break}Despite her aunt's scolding she always ended up down at the waterside.{break}Bright and breezy and free as the wind, was Loria, skipping after yubo and shooting the rapids better than any boy.]
+
+}
+
+// HASH_VALUE 91520CE221D6DB57
+R_12_19_OBJ_WATCH_1 ()
+{
+		r_12_19_obj_watch_1	[Watch the play.]
+
+}
+
+// HASH_VALUE BDE0C4F9D8567716
+R_12_19_OBJ_TARGET_1_1 (bot luria)
+{
+		r_12_19_obj_target_1_1	[Watch $luria$, who plays Loria, by targeting her.]
+
+}
+
+// HASH_VALUE CD8779EE5CFA8852
+R_12_19_SCENE_2 ()
+{
+		r_12_19_scene_2	[One fine summer's day, as she was hopping over stepping stones around Barley Bay she stumbled upon a loose stone and uncovered a pothole about two feet wide just big enough for a child of eleven to wiggle through.{break}She ventured inside and climbed down a great sprouting root and to her surprise came upon a cavern of ancient ruins.{break}With a pocketful of white coral pebbles she had picked along the lake shore, she set off all afternoon in exploration of the great chambers using the beautiful luminous flowers there to light her way.]
+
+}
+
+// HASH_VALUE 91620CE221D6DB57
+R_12_19_OBJ_WATCH_2 ()
+{
+		r_12_19_obj_watch_2	[Watch the play.]
+
+}
+
+// HASH_VALUE 145E412BA7F470CF
+R_12_19_OBJ_TARGET_2_1 (bot elder)
+{
+		r_12_19_obj_target_2_1	[Watch $elder$, who plays an elder, by targeting him.]
+
+}
+
+// HASH_VALUE 49F51C094B50D96D
+R_12_19_SCENE_3 ()
+{
+		r_12_19_scene_3	[The following morning, instead of going to the school house she ran along to the temple and amused the elders with stories of caverns and strange luminous plants.{break}The old sages laughed at her wild imagination but the following day she had a surprise for them.]
+
+}
+
+// HASH_VALUE 91720CE221D6DB57
+R_12_19_OBJ_WATCH_3 ()
+{
+		r_12_19_obj_watch_3	[Watch the play.]
+
+}
+
+// HASH_VALUE BDE0C4F9D8567718
+R_12_19_OBJ_TARGET_3_1 (bot luria)
+{
+		r_12_19_obj_target_3_1	[Watch $luria$, who plays Loria, by targeting her.]
+
+}
+
+// HASH_VALUE 069F54AFA977B73A
+R_12_19_SCENE_4 ()
+{
+		r_12_19_scene_4	[Vexed by the elders' mocking, the next day Loria took three beautiful plants to the temple.]
+
+}
+
+// HASH_VALUE 91820CE221D6DB57
+R_12_19_OBJ_WATCH_4 ()
+{
+		r_12_19_obj_watch_4	[Watch the play.]
+
+}
+
+// HASH_VALUE 145E412BA7F470D1
+R_12_19_OBJ_TARGET_4_1 (bot elder)
+{
+		r_12_19_obj_target_4_1	[Watch $elder$, who plays an elder, by targeting him.]
+
+}
+
+// HASH_VALUE 9BDF2C3DF1CE1AD0
+R_12_19_SCENE_5 ()
+{
+		r_12_19_scene_5	[The elders could hardly believe their eyes and asked Loria to show them this cavern.{break}On coming to the pothole the old men drew back aghast in the knowledge that she had ventured into the forbidden Prime Roots so transgressing the Law of Jena, whose disciples would be down on her like a ton of bricks if they knew.]
+
+}
+
+// HASH_VALUE 91920CE221D6DB57
+R_12_19_OBJ_WATCH_5 ()
+{
+		r_12_19_obj_watch_5	[Watch the play.]
+
+}
+
+// HASH_VALUE BDE0C4F9D856771A
+R_12_19_OBJ_TARGET_5_1 (bot luria)
+{
+		r_12_19_obj_target_5_1	[Watch $luria$, who plays Loria, by targeting her.]
+
+}
+
+// HASH_VALUE B3AC28F2E785F045
+R_12_19_SCENE_6 ()
+{
+		r_12_19_scene_6	[Loria was banned from going out for twenty days and the entrance was sealed with silt and clay.{break}Her confinement taught Loria a valuable lesson and she didn't go to that pothole again, nor did she say anything when she discovered another... but that's another tale!]
+
+}
+
+// HASH_VALUE 91A20CE221D6DB57
+R_12_19_OBJ_WATCH_6 ()
+{
+		r_12_19_obj_watch_6	[Watch the play.]
+
+}
+
+// HASH_VALUE 40A9F35EDB38BCA6
+R_12_19_OBJ_TARGET_6_1 (bot noeh)
+{
+		r_12_19_obj_target_6_1	[Watch $noeh$ by targeting him.]
+
+}
+
+// HASH_VALUE 246D39E599E86EC7
+R_12_19_CURTAIN ()
+{
+		r_12_19_curtain	[Here ends the first tableau of the life of Loria! Thank you all for coming!{break}And thank you in advance for your generosity... Whatever your good hearts can spare!]
+
+}
+
+// HASH_VALUE F5EF44BF3BB2FC1D
+R_12_19_OBJ_PAY (int amount, bot noeh)
+{
+		r_12_19_obj_pay	[Give 50 dappers to $noeh$ for the troupe.]
+
+}
+
+// HASH_VALUE 1D50E3264DCA332B
+R_12_19_END ()
+{
+		r_12_19_end	[Our thanks to you, O audience! Before long we shall perform the second act of the life of Loria... We hope to see you again very soon!]
+
+}
+
+// HASH_VALUE 9FA27DB2CA6D073D
+R_12_19_END_SAGE (bot player)
+{
+		r_12_19_end_sage	[The amber cube of Loria's tale is yours, $player$. The play stops at the first act; the cube tells the rest. Look in your encyclopedia.]
+
+}
+
+// HASH_VALUE B3F8CA8947C19254
+TRYKER_STORY4_GREET_SAGE (player p, bot b)
+{
+		tryker_story4_greet_sage	[Welcome, young homin. I keep the tales of our people in this village. A people that loses its tales soon loses its way.]
+
+}
+
+// HASH_VALUE 7231C27F5F050D34
+TRYKER_STORY4_GREET_NOEH (player p, bot b)
+{
+		tryker_story4_greet_noeh	[Storyteller, player and passer of the hat, at your service! We play when the Sage sends us an audience. Have a word with him in the village.]
+
+}
+
+// HASH_VALUE AA25F77AD176AEC3
+TRYKER_STORY4_GREET_ACTRESS (player p, bot b)
+{
+		tryker_story4_greet_actress	[I play Loria. Twenty days shut indoors, every single show! In her place I'd have been back down that pothole by supper.]
+
+}
+
+// HASH_VALUE 1DC8CCD07CAB389B
+TRYKER_STORY4_GREET_ELDER (player p, bot b)
+{
+		tryker_story4_greet_elder	[It's the costume. I'm not a day over forty.]
+
+}
+
+// HASH_VALUE 9CD92025E071D220
+TRYKER_STORY4_GREET_SPECTATOR_1 (player p, bot b)
+{
+		tryker_story4_greet_spectator_1	[Shh! Well, not yet. But once it starts: shh!]
+
+}
+
+// HASH_VALUE 944295A8A25367C0
+TRYKER_STORY4_GREET_SPECTATOR_2 (player p, bot b)
+{
+		tryker_story4_greet_spectator_2	[I've seen act one six times. I keep hoping this is the day they play act two.]
+
+}
+
+// HASH_VALUE 421DC8D371DCF818
+TRYKER_STORY4_GREET_SPECTATOR_3 (player p, bot b)
+{
+		tryker_story4_greet_spectator_3	[My grandmother told me this tale down in the Prime Roots, when we hid from the kitins. Of all places!]
+
+}
+
+// HASH_VALUE CC3D7B77E36DB482
+TRYKER_STORY4_GREET_SPECTATOR_4 (player p, bot b)
+{
+		tryker_story4_greet_spectator_4	[Sit where you like. The sand is free. The play is fifty dappers.]
+
+}
+
+// HASH_VALUE 5FD599207B5A3384
+TRYKER_STORY4_GREET_BEACHCOMBER (player p, bot b)
+{
+		tryker_story4_greet_beachcomber	[Mind where you step, homin. Half of this shore is my living, and the other half is my supper.]
+
+}
+
+// HASH_VALUE 23E7221AF5179A4E
+TRYKER_STORY4_GREET_HUNTER (player p, bot b)
+{
+		tryker_story4_greet_hunter	[Quiet, now. A yubo has better ears than brains.]
+
+}
+
+// HASH_VALUE 39891FBFA5589106
+TRYKER_STORY4_GREET_WARDROBE (player p, bot b)
+{
+		tryker_story4_greet_wardrobe	[If it's pinned, don't touch it. If it isn't pinned, hand it here.]
+
+}
+
+// HASH_VALUE C331CD05ADE09B08
+TRYKER_STORY4_ACTRESS_1 ()
+{
+		tryker_story4_actress_1	[What a strange place! I must tell the elders about it!]
+
+}
+
+// HASH_VALUE AC3997ED40032B41
+TRYKER_STORY4_ACTRESS_2 ()
+{
+		tryker_story4_actress_2	[Three flowers from my wild imagination, wise elders! Mind your eyes, they shine.]
+
+}

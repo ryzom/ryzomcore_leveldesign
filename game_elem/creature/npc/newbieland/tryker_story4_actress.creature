@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_trfc1.creature"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="Fame" Value="none"/>
+      <ATOM Name="NbPlayers" Value="1"/>
+      <ATOM Name="PlayerHpLevel" Value="10"/>
+      <ATOM Name="NbHitToKillPlayer" Value="5.788846051428108"/>
+      <STRUCT Name="Characteristics">
+        <ATOM Name="DynamicEnergyValue" Value="0.002777778"/>
+      </STRUCT>
+      <STRUCT Name="Equipment">
+        <STRUCT Name="Body">
+          <ATOM Name="Color" Value="6"/>
+        </STRUCT>
+        <STRUCT Name="Legs">
+          <ATOM Name="Color" Value="6"/>
+        </STRUCT>
+        <STRUCT Name="Arms">
+          <ATOM Name="Color" Value="6"/>
+        </STRUCT>
+        <STRUCT Name="Hands">
+          <ATOM Name="Color" Value="6"/>
+        </STRUCT>
+        <STRUCT Name="Feet">
+          <ATOM Name="Color" Value="6"/>
+        </STRUCT>
+        <STRUCT Name="Head">
+          <ATOM Name="Color" Value="6"/>
+        </STRUCT>
+      </STRUCT>
+      <STRUCT Name="MovementSpeeds">
+        <ATOM Name="WalkSpeed" Value="1.66"/>
+        <ATOM Name="RunSpeed" Value="6"/>
+      </STRUCT>
+      <ATOM Name="life" Value="380"/>
+      <ATOM Name="AttackSpeed" Value="2.8"/>
+      <ATOM Name="LifeRegen" Value="1.75427"/>
+      <ATOM Name="AttackLevel" Value="8"/>
+      <ATOM Name="DefenseLevel" Value="4"/>
+      <ATOM Name="XPLevel" Value="6"/>
+      <ATOM Name="TauntLevel" Value="8"/>
+      <ATOM Name="RegionForce" Value="2"/>
+      <ATOM Name="ForceLevel" Value="1"/>
+      <ATOM Name="LocalCode" Value="1"/>
+      <ATOM Name="DodgeAsDefense" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="3d data">
+      <ATOM Name="Scale" Value="1"/>
+      <ATOM Name="ForceDisplayCreatureName" Value="false"/>
+    </STRUCT>
+    <STRUCT Name="Properties">
+      <ATOM Name="LootHarvestState" Value="NONE"/>
+      <ATOM Name="XPGainCoef" Value="0.91"/>
+    </STRUCT>
+    <STRUCT Name="Protections">
+      <ATOM Name="PiercingFactor" Value="20"/>
+      <ATOM Name="SlashingFactor" Value="20"/>
+      <ATOM Name="BluntFactor" Value="19"/>
+      <ATOM Name="RotFactor" Value="20"/>
+      <ATOM Name="AcidFactor" Value="20"/>
+      <ATOM Name="ColdFactor" Value="21"/>
+      <ATOM Name="FireFactor" Value="21"/>
+      <ATOM Name="PoisonFactor" Value="19"/>
+      <ATOM Name="ElectricityFactor" Value="21"/>
+      <ATOM Name="ShockFactor" Value="20"/>
+    </STRUCT>
+    <STRUCT Name="Resists">
+      <ATOM Name="Fear" Value="3"/>
+      <ATOM Name="Sleep" Value="2"/>
+      <ATOM Name="Stun" Value="6"/>
+      <ATOM Name="Root" Value="1"/>
+      <ATOM Name="Blind" Value="2"/>
+      <ATOM Name="Snare" Value="5"/>
+      <ATOM Name="Slow" Value="3"/>
+      <ATOM Name="Acid" Value="6"/>
+      <ATOM Name="Cold" Value="6"/>
+      <ATOM Name="Electricity" Value="3"/>
+      <ATOM Name="Fire" Value="6"/>
+      <ATOM Name="Poison" Value="3"/>
+      <ATOM Name="Rot" Value="5"/>
+    </STRUCT>
+    <ATOM Name="action_cfg" Value="1000f"/>
+    <ARRAY Name="melee_cfg">
+      <ATOM Value="combat_melee.actionlist"/>
+    </ARRAY>
+    <ATOM Name="creature_level" Value="6"/>
+  </STRUCT>
+</FORM>

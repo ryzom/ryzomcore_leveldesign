@@ -78247,3 +78247,492 @@ zm80_reward ()
 
 }
 
+// HASH_VALUE DBF16F1472EA60CF
+TRYKER_STORY4_INTRO_TITLE (bot giver)
+{
+		tryker_story4_intro_title	[Сказание прежних земель]
+
+}
+
+// HASH_VALUE E1A352DEEF46376C
+TRYKER_STORY4_INTRO_DESC (bot giver, bot givervar, bot noeh, place place)
+{
+		tryker_story4_intro_desc	[$givervar$, мудрец из $place.placegen$, хочет познакомить тебя с труппой, которая играет сказание о Лории. Поговори с $noeh$ на сцене за деревней.]
+
+}
+
+// HASH_VALUE 4FD544ACA2965018
+TRYKER_STORY4_INTRO_OFFER (bot noeh, bot player)
+{
+		tryker_story4_intro_offer	[Каждый хомин, ступивший на этот остров, что-то приносит с собой. Инструменты, клинок, обиду. А что несешь с собой ты, $player$?{break}Наш народ бежал из прежних земель почти ни с чем. Но мы сохранили наши сказания. Сказания ничего не весят, а кормят многих.{break}Есть одно о Лории, нашей великой героине, когда она была еще совсем девчонкой. Труппа $noeh$ играет его здесь.{break}Ступай и поприветствуй $noeh$ на сцене, на песке, сразу за деревней. Скажи, что тебя прислал мудрец.]
+
+}
+
+// HASH_VALUE ACB72E121F9B5197
+TRYKER_STORY4_INTRO_ACCEPT ()
+{
+		tryker_story4_intro_accept	[Я пойду познакомлюсь с труппой.]
+
+}
+
+// HASH_VALUE 0D18858EB91C29A6
+TRYKER_STORY4_INTRO_OBJ_TALK (bot noeh, place place)
+{
+		tryker_story4_intro_obj_talk	[Поговори с $noeh$ на сцене за пределами $place.placegen$.]
+
+}
+
+// HASH_VALUE BAA77A601DF38D42
+TRYKER_STORY4_INTRO_TALK (bot noeh)
+{
+		tryker_story4_intro_talk	[Меня прислал мудрец.]
+
+}
+
+// HASH_VALUE 8B1FBBEE9DEE41AF
+TRYKER_STORY4_INTRO_NOEH (bot beach, bot hunter, bot wardrobe)
+{
+		tryker_story4_intro_noeh	[Публика! Наконец-то! Садись, садись... нет. Нет, подожди. Мы не можем играть. Посмотри, в каком мы виде!{break}У нашей Лории не осталось камушков для кармана. Старейшины растеряли зубы. А ее ботинки! Даже не спрашивай о ее ботинках.{break}Обычай велит хомину помочь общине, прежде чем ему расскажут сказание. Троим моим людям твои руки очень пригодятся.{break}$beach$ на берегу, $hunter$ сторожит луг с юбо, а $wardrobe$ хранит сундук с костюмами в деревне. Помоги им в любом порядке.{break}Когда все трое будут довольны, возвращайся к мудрецу. Он пришлет тебя ко мне, и тебе достанется лучшее место на песке!]
+
+}
+
+// HASH_VALUE F4009F1B2FC8AB51
+TRYKER_STORY4_TASK_FORAGE_TITLE (bot giver)
+{
+		tryker_story4_task_forage_title	[Полный карман камушков]
+
+}
+
+// HASH_VALUE 8F0228E841B95367
+TRYKER_STORY4_TASK_FORAGE_DESC (bot giver, bot givervar, place place, item shell, int shell_qt)
+{
+		tryker_story4_task_forage_desc	[$givervar$ отвечает за реквизит для спектакля труппы. Добудь $shell_qt$ $shell.somgen$ на берегу у $place.placegen$ и принеси ей.]
+
+}
+
+// HASH_VALUE C2C83391DD06D898
+TRYKER_STORY4_TASK_FORAGE_OFFER (bot noeh, bot player, item shell, int shell_qt)
+{
+		tryker_story4_task_forage_offer	[Эй, $player$! Ищешь работу? Отлично. Мои родные собирают плавник, как и семья Лории. Мы живем тем, что озеро оставляет на берегу.{break}В сказании Лория набивает карман белыми коралловыми камушками. В спектакле наша Лория теряет половину из них в песке. На каждом представлении!{break}Кораллы стоят дэпперов. Ракушки ничего не стоят, а с последнего ряда разницы никто не заметит. Только не говори $noeh$, что это я тебе сказала.{break}Возьми эту кирку. Иди вдоль кромки воды, пока не увидишь источник, и добывай из него. Действуй бережно, и источник продержится дольше.{break}Принеси мне $shell_qt$ $shell.somgen$, самых белых, какие найдешь.]
+
+}
+
+// HASH_VALUE FEAC61E01DE5FED9
+TRYKER_STORY4_TASK_FORAGE_ACCEPT ()
+{
+		tryker_story4_task_forage_accept	[Набью карманы.]
+
+}
+
+// HASH_VALUE D8FD432320308A33
+TRYKER_STORY4_TASK_FORAGE_OBJ_FORAGE_1 (item i1, int qt1, int qual1, bot givervar, item shell, int shell_qt)
+{
+		tryker_story4_task_forage_obj_forage_1	[Добудь $shell_qt$ $shell.somgen$ на берегу рядом с $givervar$.]
+
+}
+
+// HASH_VALUE 5EB3E3624C778623
+TRYKER_STORY4_TASK_FORAGE_OBJ_GIVE_1 (item i1, int qt1, int qual1, bot givervar, item shell)
+{
+		tryker_story4_task_forage_obj_give_1	[Отнеси $shell.p$ $givervar$.]
+
+}
+
+// HASH_VALUE C6E0E581792D0A53
+TRYKER_STORY4_TASK_FORAGE_END ()
+{
+		tryker_story4_task_forage_end	[Белые, как коралл! Ну, достаточно белые. Наша Лория будет бренчать на ходу.{break}Оставь кирку себе. И возьми эти дэпперы: после спектакля труппа пускает шляпу по кругу, а смотреть бесплатно невежливо.]
+
+}
+
+// HASH_VALUE EC0D5C4534075EB1
+TRYKER_STORY4_TASK_LOOT_TITLE (bot giver)
+{
+		tryker_story4_task_loot_title	[В погоне за юбо]
+
+}
+
+// HASH_VALUE 6A7A9D5D58E3C8D3
+TRYKER_STORY4_TASK_LOOT_DESC (bot giver, bot givervar, place place, item tooth, int tooth_qt)
+{
+		tryker_story4_task_loot_desc	[$givervar$ пополняет сундук с костюмами труппы. Охоться на юбо у $place.placegen$, освежуй их и принеси ему $tooth_qt$ $tooth.twogen$.]
+
+}
+
+// HASH_VALUE 61BF8B4E4FDFAA4E
+TRYKER_STORY4_TASK_LOOT_OFFER (bot player, item tooth, int tooth_qt)
+{
+		tryker_story4_task_loot_offer	[Привет, $player$. Видишь тех юбо на траве? Толстые, медлительные и ни о чем на Атисе не тревожатся.{break}В сказании маленькая Лория целыми днями гонялась за юбо. И ни одного не поймала, если хочешь знать мое мнение.{break}Тебе придется постараться получше. На сцене один из старейшин носит ожерелье из зубов юбо, а наши ожерелья все время рвутся.{break}Возьми этот кинжал. Добудь юбо, а потом освежуй его: выбери тушу целью и забери то, что она даст.{break}Мне нужно $tooth_qt$ $tooth.twogen$. И если на тебя дважды посмотрит кто-то крупнее юбо, беги. В этом нет ничего постыдного.]
+
+}
+
+// HASH_VALUE 074EFB575347B7F8
+TRYKER_STORY4_TASK_LOOT_ACCEPT ()
+{
+		tryker_story4_task_loot_accept	[Я буду бегать быстрее Лории.]
+
+}
+
+// HASH_VALUE 938B60D8DC3F2BDA
+TRYKER_STORY4_TASK_LOOT_OBJ_LOOT_1 (item i1, int qt1, int qual1, place place, item tooth, int tooth_qt, creature_model yubo)
+{
+		tryker_story4_task_loot_obj_loot_1	[Охоться на $yubo.creagen$ у $place.placegen$ и свежуй их, чтобы добыть $tooth_qt$ $tooth.twogen$.]
+
+}
+
+// HASH_VALUE 4DA00E64F2252121
+TRYKER_STORY4_TASK_LOOT_OBJ_GIVE_1 (item i1, int qt1, int qual1, bot givervar, item tooth)
+{
+		tryker_story4_task_loot_obj_give_1	[Отнеси $tooth.p$ $givervar$.]
+
+}
+
+// HASH_VALUE 1DAA737B5238E84A
+TRYKER_STORY4_TASK_LOOT_END ()
+{
+		tryker_story4_task_loot_end	[Хорошие зубы. С таким ожерельем на шее старейшина выглядит вдвое мудрее и вдвое менее добрым.{break}Кинжал твой. Вот, немного дэпперов за труды. Оставь часть для шляпы труппы.]
+
+}
+
+// HASH_VALUE BEF4DC0B6A7B35B5
+TRYKER_STORY4_TASK_CRAFT_TITLE (bot giver)
+{
+		tryker_story4_task_craft_title	[Домашние хлопоты]
+
+}
+
+// HASH_VALUE 72A0E31F3DD2A37A
+TRYKER_STORY4_TASK_CRAFT_DESC (bot giver, item boots, bot givervar)
+{
+		tryker_story4_task_craft_desc	[$givervar$ следит за костюмами труппы. Изготовь $boots$ для актрисы, которая играет Лорию, и отдай их $givervar$.]
+
+}
+
+// HASH_VALUE 39E7043557E36990
+TRYKER_STORY4_TASK_CRAFT_OFFER ()
+{
+		tryker_story4_task_craft_offer	[Осторожно, это заколото! О. Новая пара рук. Хорошо, они мне пригодятся.{break}Все знают, что Лория никогда не выполняла домашних поручений. И никто никогда не спрашивает, кто делал их за нее.{break}Наша Лория на каждом представлении прыгает по камням, и ее ботинки опять протерлись на носках.{break}Так что сегодня это поручение твое. Вот выкройка легких ботинок, инструмент и материалы.{break}Открой свои ремесленные действия, выбери ботинки и положи каждый материал туда, куда велит выкройка. Одной пары хватит.]
+
+}
+
+// HASH_VALUE 022A3BE3E13D93AD
+TRYKER_STORY4_TASK_CRAFT_ACCEPT ()
+{
+		tryker_story4_task_craft_accept	[Пара ботинок, будет сделано.]
+
+}
+
+// HASH_VALUE 46CE0B954D6830C2
+TRYKER_STORY4_TASK_CRAFT_OBJ_CRAFT_1 (item i1, int qt1, int qual1, item boots, bot givervar)
+{
+		tryker_story4_task_craft_obj_craft_1	[Изготовь $boots$ с помощью инструмента и материалов от $givervar$.]
+
+}
+
+// HASH_VALUE AD052BA7E5972103
+TRYKER_STORY4_TASK_CRAFT_OBJ_GIVE_1 (item i1, int qt1, int qual1, bot givervar, item boots)
+{
+		tryker_story4_task_craft_obj_give_1	[Отдай $boots$ $givervar$.]
+
+}
+
+// HASH_VALUE DDF5ACD5389C8D70
+TRYKER_STORY4_TASK_CRAFT_END ()
+{
+		tryker_story4_task_craft_end	[Ровные стежки! Сама Лория никогда не шила такой прямой шов. Она вечно пропадала у реки.{break}Оставь инструмент себе, а выкройка теперь твоя навсегда. Вот, немного дэпперов. Труппа ведь пускает шляпу по кругу.]
+
+}
+
+// HASH_VALUE 93656864E5E91C6C
+R_12_19_TITLE (bot giver)
+{
+		r_12_19_title	[Трайкерская пьеса: Отвага Лории, первое действие]
+
+}
+
+// HASH_VALUE F7AA48723E286995
+R_12_19_DESC (bot giver)
+{
+		r_12_19_desc	[Ты увидишь спектакль о Лории, знаменитой трайкерской героине.]
+
+}
+
+// HASH_VALUE 2C77C6F6B8CAD419
+R_12_19_OFFER (bot noeh, bot player)
+{
+		r_12_19_offer	[Твои руки послужили общине, $player$. Обычай соблюден, и я доволен.{break}Любишь театр, $player$? Маленькая труппа $noeh$ играет историю Лории.{break}Скоро они сыграют первое действие. Тебе стоит сходить на спектакль! Не забудь взять с собой, чем им заплатить.]
+
+}
+
+// HASH_VALUE 16C23BA3C6C3A2B2
+R_12_19_ACCEPT ()
+{
+		r_12_19_accept	[Я пойду посмотрю.]
+
+}
+
+// HASH_VALUE A10094539BE879DB
+R_12_19_FAIL ()
+{
+		r_12_19_fail	[Стоп, стоп! Наш гость улизнул. Все по местам! Начнем снова, когда мудрец пришлет нам другого.]
+
+}
+
+// HASH_VALUE 14B46A8B8A3ABCA7
+R_12_19_OBJ_TALK (bot noeh)
+{
+		r_12_19_obj_talk	[Поговори с $noeh$ на сцене.]
+
+}
+
+// HASH_VALUE D93C5B0C490FA9B2
+R_12_19_TALK (bot noeh)
+{
+		r_12_19_talk	[Хочу посмотреть представление.]
+
+}
+
+// HASH_VALUE 89A135DBE51D092C
+R_12_19_SCENE_1 (bot player)
+{
+		r_12_19_scene_1	[Добро пожаловать, $player$! Ты как раз вовремя, мы вот-вот начнем!{break}Подходите все и смотрите первое действие Истории Лории!{break}Лория была единственной девочкой в скромной семье собирателей плавника.{break}Каждый день, вместо того чтобы помогать тете по хозяйству, она наблюдала, как ее двоюродные братья сплавляют бревна вниз по реке.{break}Несмотря на ворчание тетушки, ее всегда тянуло к воде.{break}Лория была легкой и свободной как ветер, гонялась за юбо и преодолевала пороги лучше любого мальчишки.]
+
+}
+
+// HASH_VALUE 91520CE221D6DB57
+R_12_19_OBJ_WATCH_1 ()
+{
+		r_12_19_obj_watch_1	[Смотри спектакль.]
+
+}
+
+// HASH_VALUE BDE0C4F9D8567716
+R_12_19_OBJ_TARGET_1_1 (bot luria)
+{
+		r_12_19_obj_target_1_1	[Посмотри на $luria$, которая играет Лорию, выбрав ее целью.]
+
+}
+
+// HASH_VALUE CD8779EE5CFA8852
+R_12_19_SCENE_2 ()
+{
+		r_12_19_scene_2	[Как-то раз, погожим летним днем, Лория скакала по камням в Ячменной бухте и наткнулась на расшатавшийся камень, скрывающий отверстие, в которое вполне мог пролезть одиннадцатилетний ребенок.{break}Она проникла внутрь, спустилась по огромному корневищу и с удивлением обнаружила, что оказалась в пещере, полной древних развалин.{break}С карманом, полным белых коралловых камушков, собранных на берегу озера, девочка весь день исследовала просторные пещеры, освещая себе путь прекрасными светящимися цветами.]
+
+}
+
+// HASH_VALUE 91620CE221D6DB57
+R_12_19_OBJ_WATCH_2 ()
+{
+		r_12_19_obj_watch_2	[Смотри спектакль.]
+
+}
+
+// HASH_VALUE 145E412BA7F470CF
+R_12_19_OBJ_TARGET_2_1 (bot elder)
+{
+		r_12_19_obj_target_2_1	[Посмотри на $elder$, который играет старейшину, выбрав его целью.]
+
+}
+
+// HASH_VALUE 49F51C094B50D96D
+R_12_19_SCENE_3 ()
+{
+		r_12_19_scene_3	[На следующее утро, вместо того чтобы отправиться в школу, она побежала в храм и рассказала старейшинам о пещерах и чудесных светящихся растениях.{break}Старые мудрецы посмеялись над ее разыгравшимся воображением, не подозревая, какой сюрприз она преподнесет им на следующий день.]
+
+}
+
+// HASH_VALUE 91720CE221D6DB57
+R_12_19_OBJ_WATCH_3 ()
+{
+		r_12_19_obj_watch_3	[Смотри спектакль.]
+
+}
+
+// HASH_VALUE BDE0C4F9D8567718
+R_12_19_OBJ_TARGET_3_1 (bot luria)
+{
+		r_12_19_obj_target_3_1	[Посмотри на $luria$, которая играет Лорию, выбрав ее целью.]
+
+}
+
+// HASH_VALUE 069F54AFA977B73A
+R_12_19_SCENE_4 ()
+{
+		r_12_19_scene_4	[Раззадоренная насмешками старейшин, на следующий день Лория принесла в храм три прекрасных растения.]
+
+}
+
+// HASH_VALUE 91820CE221D6DB57
+R_12_19_OBJ_WATCH_4 ()
+{
+		r_12_19_obj_watch_4	[Смотри спектакль.]
+
+}
+
+// HASH_VALUE 145E412BA7F470D1
+R_12_19_OBJ_TARGET_4_1 (bot elder)
+{
+		r_12_19_obj_target_4_1	[Посмотри на $elder$, который играет старейшину, выбрав его целью.]
+
+}
+
+// HASH_VALUE 9BDF2C3DF1CE1AD0
+R_12_19_SCENE_5 ()
+{
+		r_12_19_scene_5	[Не веря своим глазам, старейшины попросили девочку показать им эту пещеру.{break}Увидев дыру в земле, старейшины в ужасе отшатнулись, понимая, что Лория проникла в запретные Изначальные Корни, презрев закон Джены, чьи последователи не дали бы ей спуску, если бы узнали об этом.]
+
+}
+
+// HASH_VALUE 91920CE221D6DB57
+R_12_19_OBJ_WATCH_5 ()
+{
+		r_12_19_obj_watch_5	[Смотри спектакль.]
+
+}
+
+// HASH_VALUE BDE0C4F9D856771A
+R_12_19_OBJ_TARGET_5_1 (bot luria)
+{
+		r_12_19_obj_target_5_1	[Посмотри на $luria$, которая играет Лорию, выбрав ее целью.]
+
+}
+
+// HASH_VALUE B3AC28F2E785F045
+R_12_19_SCENE_6 ()
+{
+		r_12_19_scene_6	[Лории запретили выходить из дома двадцать дней, а вход замазали илом и глиной.{break}Заточение многому научило Лорию: она больше не возвращалась к той дыре и никому ничего не сказала, когда нашла другую... но это уже другая история!]
+
+}
+
+// HASH_VALUE 91A20CE221D6DB57
+R_12_19_OBJ_WATCH_6 ()
+{
+		r_12_19_obj_watch_6	[Смотри спектакль.]
+
+}
+
+// HASH_VALUE 40A9F35EDB38BCA6
+R_12_19_OBJ_TARGET_6_1 (bot noeh)
+{
+		r_12_19_obj_target_6_1	[Посмотри на $noeh$, выбрав его целью.]
+
+}
+
+// HASH_VALUE 246D39E599E86EC7
+R_12_19_CURTAIN ()
+{
+		r_12_19_curtain	[Здесь заканчивается первая картина из жизни Лории! Спасибо всем, что пришли!{break}И заранее спасибо за вашу щедрость... Сколько не жалко вашему доброму сердцу!]
+
+}
+
+// HASH_VALUE F5EF44BF3BB2FC1D
+R_12_19_OBJ_PAY (int amount, bot noeh)
+{
+		r_12_19_obj_pay	[Отдай $noeh$ 50 дэпперов для труппы.]
+
+}
+
+// HASH_VALUE 1D50E3264DCA332B
+R_12_19_END ()
+{
+		r_12_19_end	[Благодарим вас, о зрители! Вскоре мы сыграем второе действие из жизни Лории... Надеемся очень скоро увидеть вас снова!]
+
+}
+
+// HASH_VALUE 9FA27DB2CA6D073D
+R_12_19_END_SAGE (bot player)
+{
+		r_12_19_end_sage	[Янтарный куб со сказанием о Лории теперь твой, $player$. Пьеса заканчивается на первом действии, а куб расскажет остальное. Загляни в свою энциклопедию.]
+
+}
+
+// HASH_VALUE B3F8CA8947C19254
+TRYKER_STORY4_GREET_SAGE (player p, bot b)
+{
+		tryker_story4_greet_sage	[Добро пожаловать, хомин. Я храню сказания нашего народа в этой деревне. Народ, потерявший свои сказания, вскоре сбивается с пути.]
+
+}
+
+// HASH_VALUE 7231C27F5F050D34
+TRYKER_STORY4_GREET_NOEH (player p, bot b)
+{
+		tryker_story4_greet_noeh	[Рассказчик, актер и тот, кто пускает шляпу по кругу, к твоим услугам! Мы играем, когда мудрец присылает нам публику. Поговори с ним в деревне.]
+
+}
+
+// HASH_VALUE AA25F77AD176AEC3
+TRYKER_STORY4_GREET_ACTRESS (player p, bot b)
+{
+		tryker_story4_greet_actress	[Я играю Лорию. Двадцать дней взаперти, на каждом представлении! На ее месте я бы снова спустилась в ту дыру еще до ужина.]
+
+}
+
+// HASH_VALUE 1DC8CCD07CAB389B
+TRYKER_STORY4_GREET_ELDER (player p, bot b)
+{
+		tryker_story4_greet_elder	[Это все костюм. Мне сорок, и ни днем больше.]
+
+}
+
+// HASH_VALUE 9CD92025E071D220
+TRYKER_STORY4_GREET_SPECTATOR_1 (player p, bot b)
+{
+		tryker_story4_greet_spectator_1	[Тсс! Ну, пока еще нет. Но как только начнется - тсс!]
+
+}
+
+// HASH_VALUE 944295A8A25367C0
+TRYKER_STORY4_GREET_SPECTATOR_2 (player p, bot b)
+{
+		tryker_story4_greet_spectator_2	[Я видел первое действие шесть раз. Все надеюсь, что сегодня они наконец сыграют второе.]
+
+}
+
+// HASH_VALUE 421DC8D371DCF818
+TRYKER_STORY4_GREET_SPECTATOR_3 (player p, bot b)
+{
+		tryker_story4_greet_spectator_3	[Бабушка рассказала мне это сказание в Изначальных Корнях, когда мы прятались от китинов. Нашла же место!]
+
+}
+
+// HASH_VALUE CC3D7B77E36DB482
+TRYKER_STORY4_GREET_SPECTATOR_4 (player p, bot b)
+{
+		tryker_story4_greet_spectator_4	[Садись где хочешь. Песок бесплатный. Спектакль стоит пятьдесят дэпперов.]
+
+}
+
+// HASH_VALUE 5FD599207B5A3384
+TRYKER_STORY4_GREET_BEACHCOMBER (player p, bot b)
+{
+		tryker_story4_greet_beachcomber	[Смотри под ноги, хомин. Половина этого берега - мой заработок, а другая половина - мой ужин.]
+
+}
+
+// HASH_VALUE 23E7221AF5179A4E
+TRYKER_STORY4_GREET_HUNTER (player p, bot b)
+{
+		tryker_story4_greet_hunter	[Тише. У юбо уши лучше, чем мозги.]
+
+}
+
+// HASH_VALUE 39891FBFA5589106
+TRYKER_STORY4_GREET_WARDROBE (player p, bot b)
+{
+		tryker_story4_greet_wardrobe	[Если заколото, не трогай. Если не заколото, давай сюда.]
+
+}
+
+// HASH_VALUE C331CD05ADE09B08
+TRYKER_STORY4_ACTRESS_1 ()
+{
+		tryker_story4_actress_1	[Какое странное место! Я должна рассказать о нем старейшинам!]
+
+}
+
+// HASH_VALUE AC3997ED40032B41
+TRYKER_STORY4_ACTRESS_2 ()
+{
+		tryker_story4_actress_2	[Три цветка из моего разыгравшегося воображения, мудрые старейшины! Берегите глаза: цветы светятся.]
+
+}

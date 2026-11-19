@@ -1,0 +1,3389 @@
+<?xml version="1.0"?>
+<PRIMITIVES VERSION="1">
+  <ROOT_PRIMITIVE TYPE="CPrimNode">
+    <ALIAS LAST_GENERATED="5"/>
+    <CHILD TYPE="CPrimNode">
+      <PROPERTY TYPE="string">
+        <NAME>class</NAME>
+        <STRING>missions_editor</STRING>
+      </PROPERTY>
+      <PROPERTY TYPE="string">
+        <NAME>name</NAME>
+        <STRING>tryker_story4</STRING>
+      </PROPERTY>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>mission_tree</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>TRYKER_STORY4_INTRO</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>mission_giver</NAME>
+          <STRING>$givervar@fullname$</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>giver_primitive</NAME>
+          <STRING>urban_tryker_story4.primitive</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string_array">
+          <NAME>mission_title</NAME>
+          <STRING>"A Tale from the Old Lands" TITLE</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string_array">
+          <NAME>mission_description</NAME>
+          <STRING>"$givervar$, the Sage of $place$, wants you to meet the troupe that plays the tale of Loria. Speak to $noeh$ at the stage outside the village." DESC</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>need_validation</NAME>
+          <STRING>false</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="1"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>pre_requisite</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>pre_requisite</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>variables</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>variables</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>givervar</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>givervar</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>ejootle</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_function</NAME>
+              <STRING>fct_sage</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>noeh</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>noeh</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>noeh</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>beach</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>beach</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>story4_beachcomber</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>hunter</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>hunter</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>story4_hunter</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>wardrobe</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>wardrobe</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>story4_wardrobe</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_place</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>place</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>place</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>place_name</NAME>
+              <STRING>place_barkdell</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>linear_dyn_chat_fail</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>offer</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>npc_name</NAME>
+            <STRING>$givervar$</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string_array">
+            <NAME>phrase</NAME>
+            <STRING>"Every homin who lands on this island carries something. Tools, a blade, a grudge. What do you carry, $player$?{break}Our people fled the old lands with next to nothing. But we kept our tales. Tales weigh nothing, and they feed many.{break}There is one about Loria, our great heroine, when she was only a slip of a girl. $noeh$'s troupe plays it here.{break}Go and greet $noeh$ at the stage on the sand, just outside the village. Say the Sage sent you." OFFER</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string_array">
+            <NAME>phrase_yes</NAME>
+            <STRING>"I'll go and meet the troupe." ACCEPT</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>meet_the_troupe</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>add_compass</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_to_add</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>talk_to</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"The Sage sent me." TALK</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Speak to $noeh$ at the stage outside $place$." OBJ_TALK</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>remove_compass</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_to_remove</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_chat</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"An audience! At last! Sit down, sit... no. No, wait. We cannot play. Look at the state of us!{break}Our Loria has no pebbles left for her pocket. The elders have lost their teeth. And her boots! Don't ask about her boots.{break}Custom says a homin lends a hand to the community before the tale is told. Three of mine could use your hands.{break}$beach$ is down on the shore, $hunter$ watches the yubo meadow, and $wardrobe$ keeps the costume chest in the village. Help them in any order you please.{break}When all three are content, go back to the Sage. He will send you to me, and you shall have the best seat on the sand!" NOEH</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>encyclo_unlock</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>album_thema</NAME>
+                <STRING>12 19</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>mission_tree</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>TRYKER_STORY4_TASK_FORAGE</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>mission_giver</NAME>
+          <STRING>$givervar@fullname$</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>giver_primitive</NAME>
+          <STRING>urban_tryker_story4.primitive</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string_array">
+          <NAME>mission_title</NAME>
+          <STRING>"A Pocketful of Pebbles" TITLE</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string_array">
+          <NAME>mission_description</NAME>
+          <STRING>"$givervar$ keeps the props for the troupe's play. Forage $shell_qt$ $shell.p$ on the shore near $place$ and bring them to her." DESC</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>need_validation</NAME>
+          <STRING>false</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="2"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>pre_requisite</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>pre_requisite</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>variables</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>variables</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>givervar</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>givervar</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>story4_beachcomber</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>noeh</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>noeh</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>noeh</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_place</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>place</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>place</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>place_name</NAME>
+              <STRING>place_barkdell</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_item</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>shell</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>shell</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>item_sheet</NAME>
+              <STRING>m0053dxacb01</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quantity</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>shell_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>shell_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quantity</NAME>
+              <STRING>5</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quality</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>shell_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>shell_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quality</NAME>
+              <STRING>1</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_item</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pick</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>pick</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>item_sheet</NAME>
+              <STRING>itrtfo</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quantity</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pick_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>pick_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quantity</NAME>
+              <STRING>1</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quality</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pick_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>pick_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quality</NAME>
+              <STRING>10</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>linear_dyn_chat_fail</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>offer</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>npc_name</NAME>
+            <STRING>$givervar$</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string_array">
+            <NAME>phrase</NAME>
+            <STRING>"Yo, $player$! Looking for work? Good. My folk are beachcombers, like Loria's were. We live on what the lake leaves on the shore.{break}In the tale, Loria fills her pocket with white coral pebbles. In the play, our Loria loses half of hers in the sand. Every show!{break}Coral costs dappers. Shell is free, and from the back row nobody can tell the difference. Don't tell $noeh$ I said so.{break}Take this pick. Follow the waterline until you see a source, then extract from it. Go gently, and the source lasts longer.{break}Bring me $shell_qt$ $shell.p$, the whitest you can find." OFFER</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string_array">
+            <NAME>phrase_yes</NAME>
+            <STRING>"I'll fill my pockets." ACCEPT</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>forage_the_shell</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>recv_item</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$givervar$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>item/quantity/quality</NAME>
+                <STRING>$pick$ $pick_qt$ $pick_ql$</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>learn_action</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$givervar$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>actions</NAME>
+                <STRING>abhfepa01</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>forage</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>item/quantity/quality</NAME>
+                <STRING>$shell$ $shell_qt$ $shell_ql$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Forage $shell_qt$ $shell.p$ on the shore near $givervar$." OBJ_FORAGE</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>bring_the_shell</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>give_item</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$givervar$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>item/quantity/quality</NAME>
+                <STRING>$shell$ $shell_qt$ $shell_ql$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Bring the $shell.p$ to $givervar$." OBJ_GIVE</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_chat</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$givervar$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"White as coral! Well, white enough. Our Loria will rattle when she walks.{break}Keep the pick. And take these dappers: the troupe passes the hat after the play, and it's poor manners to watch for free." END</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>recv_money</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>amount</NAME>
+                <STRING>30</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>mission_tree</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>TRYKER_STORY4_TASK_LOOT</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>mission_giver</NAME>
+          <STRING>$givervar@fullname$</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>giver_primitive</NAME>
+          <STRING>urban_tryker_story4.primitive</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string_array">
+          <NAME>mission_title</NAME>
+          <STRING>"Skipping after Yubos" TITLE</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string_array">
+          <NAME>mission_description</NAME>
+          <STRING>"$givervar$ fills the troupe's costume chest. Hunt the yubos near $place$, quarter them, and bring him $tooth_qt$ $tooth.p$." DESC</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>need_validation</NAME>
+          <STRING>false</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="3"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>pre_requisite</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>pre_requisite</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>variables</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>variables</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>givervar</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>givervar</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>story4_hunter</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>noeh</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>noeh</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>noeh</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_place</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>place</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>place</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>place_name</NAME>
+              <STRING>place_barkdell</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_item</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>tooth</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>tooth</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>item_sheet</NAME>
+              <STRING>m0692chdca01</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quantity</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>tooth_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>tooth_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quantity</NAME>
+              <STRING>4</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quality</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>tooth_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>tooth_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quality</NAME>
+              <STRING>1</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_item</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>dagger</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>dagger</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>item_sheet</NAME>
+              <STRING>icrm1pd</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quantity</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>dagger_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>dagger_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quantity</NAME>
+              <STRING>1</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quality</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>dagger_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>dagger_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quality</NAME>
+              <STRING>10</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_creature</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>yubo</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>yubo</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>creature_sheet</NAME>
+              <STRING>chdla1</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>linear_dyn_chat_fail</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>offer</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>npc_name</NAME>
+            <STRING>$givervar$</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string_array">
+            <NAME>phrase</NAME>
+            <STRING>"Hoy, $player$. See those yubos out on the grass? Fat, slow, and not a care on Atys.{break}In the tale, little Loria skipped after yubos all day long. Never caught one, if you ask me.{break}You will have to do better. On stage, an elder wears a string of yubo teeth, and our strings keep snapping.{break}Take this dagger. Bring a yubo down, then quarter it: target the body and take what it gives.{break}I need $tooth_qt$ $tooth.p$. And if anything bigger than a yubo looks at you twice, run. There's no shame in it." OFFER</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string_array">
+            <NAME>phrase_yes</NAME>
+            <STRING>"I'll skip faster than Loria did." ACCEPT</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>hunt_the_yubos</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>recv_item</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$givervar$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>item/quantity/quality</NAME>
+                <STRING>$dagger$ $dagger_qt$ $dagger_ql$</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>loot</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>item/quantity/quality</NAME>
+                <STRING>$tooth$ $tooth_qt$ $tooth_ql$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Hunt $yubo.p$ near $place$ and quarter them for $tooth_qt$ $tooth.p$." OBJ_LOOT</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>bring_the_teeth</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>give_item</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$givervar$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>item/quantity/quality</NAME>
+                <STRING>$tooth$ $tooth_qt$ $tooth_ql$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Bring the $tooth.p$ to $givervar$." OBJ_GIVE</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_chat</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$givervar$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"Good teeth, these. With a string of them round his neck, an elder looks twice as wise and half as kind.{break}The dagger is yours. Here, a few dappers for your trouble. Keep some for the troupe's hat." END</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>recv_money</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>amount</NAME>
+                <STRING>30</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>mission_tree</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>TRYKER_STORY4_TASK_CRAFT</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>mission_giver</NAME>
+          <STRING>$givervar@fullname$</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>giver_primitive</NAME>
+          <STRING>urban_tryker_story4.primitive</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string_array">
+          <NAME>mission_title</NAME>
+          <STRING>"Chores in the Lodging" TITLE</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string_array">
+          <NAME>mission_description</NAME>
+          <STRING>"$givervar$ looks after the troupe's costumes. Craft $boots$ for the actress who plays Loria and give them to $givervar$." DESC</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>need_validation</NAME>
+          <STRING>false</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="4"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>pre_requisite</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>pre_requisite</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>variables</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>variables</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>givervar</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>givervar</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>story4_wardrobe</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>noeh</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>noeh</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>noeh</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_place</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>place</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>place</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>place_name</NAME>
+              <STRING>place_barkdell</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_item</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>boots</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>boots</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>item_sheet</NAME>
+              <STRING>ictalb</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quantity</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>boots_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>boots_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quantity</NAME>
+              <STRING>1</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quality</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>boots_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>boots_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quality</NAME>
+              <STRING>1</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_item</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>tool</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>tool</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>item_sheet</NAME>
+              <STRING>itrtar</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quantity</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>tool_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>tool_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quantity</NAME>
+              <STRING>1</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quality</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>tool_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>tool_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quality</NAME>
+              <STRING>10</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_item</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>skin</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>skin</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>item_sheet</NAME>
+              <STRING>m0152chdca01</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quantity</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>skin_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>skin_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quantity</NAME>
+              <STRING>3</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quality</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>skin_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>skin_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quality</NAME>
+              <STRING>10</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_item</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>teeth</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>teeth</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>item_sheet</NAME>
+              <STRING>m0692chdca01</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quantity</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>teeth_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>teeth_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quantity</NAME>
+              <STRING>3</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quality</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>teeth_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>teeth_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quality</NAME>
+              <STRING>10</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_item</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>oil</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>oil</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>item_sheet</NAME>
+              <STRING>m0103dxacb01</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quantity</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>oil_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>oil_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quantity</NAME>
+              <STRING>2</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quality</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>oil_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>oil_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quality</NAME>
+              <STRING>10</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_item</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>sap</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>sap</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>item_sheet</NAME>
+              <STRING>m0109dxacb01</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quantity</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>sap_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>sap_qt</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quantity</NAME>
+              <STRING>1</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_quality</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>sap_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>sap_ql</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>quality</NAME>
+              <STRING>10</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>linear_dyn_chat_fail</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>offer</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>npc_name</NAME>
+            <STRING>$givervar$</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string_array">
+            <NAME>phrase</NAME>
+            <STRING>"Careful, that's pinned! Oh. A new pair of hands. Good, I can use those.{break}Everybody knows Loria never did her chores in the lodging. Nobody ever asks who did them for her.{break}Our Loria hops over stepping stones every show, and her boots are through at the toes again.{break}So today the chore is yours. Here is the pattern for a pair of light boots, the tool, and the makings.{break}Open your crafting actions, choose the boots, and place each material where the pattern asks. One pair will do." OFFER</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string_array">
+            <NAME>phrase_yes</NAME>
+            <STRING>"One pair of boots, coming up." ACCEPT</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>craft_the_boots</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>recv_item</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$givervar$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>item/quantity/quality</NAME>
+                <STRING>$tool$ $tool_qt$ $tool_ql$</STRING>
+                <STRING>$skin$ $skin_qt$ $skin_ql$</STRING>
+                <STRING>$teeth$ $teeth_qt$ $teeth_ql$</STRING>
+                <STRING>$oil$ $oil_qt$ $oil_ql$</STRING>
+                <STRING>$sap$ $sap_qt$ $sap_ql$</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>learn_action</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$givervar$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>actions</NAME>
+                <STRING>abctaea01_talb</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>craft</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>item/quantity/quality</NAME>
+                <STRING>$boots$ $boots_qt$ $boots_ql$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Craft $boots$ with the tool and the makings from $givervar$." OBJ_CRAFT</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>give_the_boots</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>give_item</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$givervar$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>item/quantity/quality</NAME>
+                <STRING>$boots$ $boots_qt$ $boots_ql$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Give the $boots$ to $givervar$." OBJ_GIVE</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_chat</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$givervar$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"Even stitches! Loria herself never sewed a seam this straight. She was always down at the river.{break}Keep the tool, and the pattern is yours for good. Here, a few dappers. The troupe passes a hat, you know." END</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>recv_money</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>amount</NAME>
+                <STRING>30</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+      </CHILD>
+      <CHILD TYPE="CPrimNode">
+        <PROPERTY TYPE="string">
+          <NAME>class</NAME>
+          <STRING>mission_tree</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>name</NAME>
+          <STRING>R_12_19</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>mission_giver</NAME>
+          <STRING>$givervar@fullname$</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>giver_primitive</NAME>
+          <STRING>urban_tryker_story4.primitive</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string_array">
+          <NAME>mission_title</NAME>
+          <STRING>"A Tryker play: The Audacity of Loria, act one" TITLE</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string_array">
+          <NAME>mission_description</NAME>
+          <STRING>"You are going to watch a play that brings to the stage Loria, the famous Tryker heroine." DESC</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>need_validation</NAME>
+          <STRING>false</STRING>
+        </PROPERTY>
+        <PROPERTY TYPE="string">
+          <NAME>mono_instance</NAME>
+          <STRING>true</STRING>
+        </PROPERTY>
+        <CHILD TYPE="CPrimAlias">
+          <ALIAS VALUE="5"/>
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>alias</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>pre_requisite</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>pre_requisite</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>require_encyclo_thema</NAME>
+            <STRING>12 19</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>variables</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>variables</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>givervar</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>givervar</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>ejootle</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_function</NAME>
+              <STRING>fct_sage</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>noeh</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>noeh</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>noeh</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>luria</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>luria</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>luria</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_function</NAME>
+              <STRING>fct_actress</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>elder</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>elder</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>elder</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_function</NAME>
+              <STRING>fct_actor</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_npc</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>elder_2</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>elder_2</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_name</NAME>
+              <STRING>elder_2</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>npc_function</NAME>
+              <STRING>fct_actor</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_group</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>actress</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>actress</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>group_name</NAME>
+              <STRING>story4_actress</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_group</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>actors</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>actors</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>group_name</NAME>
+              <STRING>story4_actors</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_group</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>spectators</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>spectators</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>group_name</NAME>
+              <STRING>story4_spectators</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_faction</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>tryker</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>tryker</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>faction_name</NAME>
+              <STRING>tryker</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>var_place</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>place</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>var_name</NAME>
+              <STRING>place</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>place_name</NAME>
+              <STRING>place_barkdell</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>linear_dyn_chat_fail</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>offer</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>npc_name</NAME>
+            <STRING>$givervar$</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string_array">
+            <NAME>phrase</NAME>
+            <STRING>"You have lent your hands to the community, $player$. Custom is satisfied, and so am I.{break}Do you enjoy the theatre, $player$? $noeh$'s little troupe is giving performances of the story of Loria.{break}They are about to play the first act. You should go and enjoy the show! Don't forget to take something to pay them with in return." OFFER</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string_array">
+            <NAME>phrase_yes</NAME>
+            <STRING>"I'll go and watch." ACCEPT</STRING>
+          </PROPERTY>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step_failure</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>failure</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>ai_event</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>group_name</NAME>
+                <STRING>$actress$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event_number</NAME>
+                <STRING>9</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>ai_event</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>group_name</NAME>
+                <STRING>$actors$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event_number</NAME>
+                <STRING>9</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_chat</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>chat_type</NAME>
+                <STRING>say</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"Hold, hold! Our guest has slipped away. Places, everyone! We begin again when the Sage sends us another." FAIL</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step_player_reconnect</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>reconnect</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>step</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>reconnect_fail</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>actions</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>pre_actions</STRING>
+              </PROPERTY>
+              <CHILD TYPE="CPrimNode">
+                <PROPERTY TYPE="string">
+                  <NAME>class</NAME>
+                  <STRING>fail</STRING>
+                </PROPERTY>
+              </CHILD>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>mission_objectives</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>objectives</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>actions</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>name</NAME>
+                <STRING>post_actions</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step_crash</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>crash</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string_array">
+            <NAME>ai_instances</NAME>
+            <STRING>tryker_newbie</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>fail</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>arrival</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>set_constrains</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>timer</NAME>
+                <STRING>6000</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>add_compass</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_to_add</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>talk_to</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"I have come to see the performance." TALK</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Speak to $noeh$ at the stage." OBJ_TALK</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>remove_compass</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_to_remove</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_chat</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>chat_type</NAME>
+                <STRING>say</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"Welcome, $player$! You are just in time, we are about to begin!{break}Gather round, all of you, and watch the first act of the Story of Loria!{break}Loria was the only girl raised by a humble family of beachcombers.{break}All day long she would play and watch her cousins spinning the logs down at the river instead of doing chores for her aunty in the lodging.{break}Despite her aunt's scolding she always ended up down at the waterside.{break}Bright and breezy and free as the wind, was Loria, skipping after yubo and shooting the rapids better than any boy." SCENE_1</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>ai_event</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>group_name</NAME>
+                <STRING>$actress$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event_number</NAME>
+                <STRING>0</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>scene_1_wait</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>wait_ai_msg</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>msg_content</NAME>
+                <STRING>story4_bowed</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Watch the play." OBJ_WATCH_1</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>scene_1</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>target</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>npcs_to_target</NAME>
+                <STRING>$luria$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Watch $luria$, who plays Loria, by targeting her." OBJ_TARGET_1</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_chat</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>chat_type</NAME>
+                <STRING>say</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"One fine summer's day, as she was hopping over stepping stones around Barley Bay she stumbled upon a loose stone and uncovered a pothole about two feet wide just big enough for a child of eleven to wiggle through.{break}She ventured inside and climbed down a great sprouting root and to her surprise came upon a cavern of ancient ruins.{break}With a pocketful of white coral pebbles she had picked along the lake shore, she set off all afternoon in exploration of the great chambers using the beautiful luminous flowers there to light her way." SCENE_2</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>ai_event</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>group_name</NAME>
+                <STRING>$actress$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event_number</NAME>
+                <STRING>1</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>scene_2_wait</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>wait_ai_msg</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>msg_content</NAME>
+                <STRING>story4_at_cavern</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Watch the play." OBJ_WATCH_2</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>scene_2</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>target</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>npcs_to_target</NAME>
+                <STRING>$elder$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Watch $elder$, who plays an elder, by targeting him." OBJ_TARGET_2</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_chat</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>chat_type</NAME>
+                <STRING>say</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"The following morning, instead of going to the school house she ran along to the temple and amused the elders with stories of caverns and strange luminous plants.{break}The old sages laughed at her wild imagination but the following day she had a surprise for them." SCENE_3</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>ai_event</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>group_name</NAME>
+                <STRING>$actress$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event_number</NAME>
+                <STRING>2</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>scene_3_wait</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>wait_ai_msg</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>msg_content</NAME>
+                <STRING>story4_home</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Watch the play." OBJ_WATCH_3</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>scene_3</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>target</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>npcs_to_target</NAME>
+                <STRING>$luria$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Watch $luria$, who plays Loria, by targeting her." OBJ_TARGET_3</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_chat</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>chat_type</NAME>
+                <STRING>say</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"Vexed by the elders' mocking, the next day Loria took three beautiful plants to the temple." SCENE_4</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>ai_event</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>group_name</NAME>
+                <STRING>$actress$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event_number</NAME>
+                <STRING>3</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>scene_4_wait</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>wait_ai_msg</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>msg_content</NAME>
+                <STRING>story4_flowers</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Watch the play." OBJ_WATCH_4</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>scene_4</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>target</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>npcs_to_target</NAME>
+                <STRING>$elder$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Watch $elder$, who plays an elder, by targeting him." OBJ_TARGET_4</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_chat</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>chat_type</NAME>
+                <STRING>say</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"The elders could hardly believe their eyes and asked Loria to show them this cavern.{break}On coming to the pothole the old men drew back aghast in the knowledge that she had ventured into the forbidden Prime Roots so transgressing the Law of Jena, whose disciples would be down on her like a ton of bricks if they knew." SCENE_5</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>ai_event</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>group_name</NAME>
+                <STRING>$actress$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event_number</NAME>
+                <STRING>4</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>ai_event</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>group_name</NAME>
+                <STRING>$actors$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event_number</NAME>
+                <STRING>2</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>scene_5_wait</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>wait_ai_msg</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>msg_content</NAME>
+                <STRING>story4_pothole</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Watch the play." OBJ_WATCH_5</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>scene_5</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>target</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>npcs_to_target</NAME>
+                <STRING>$luria$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Watch $luria$, who plays Loria, by targeting her." OBJ_TARGET_5</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_chat</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>chat_type</NAME>
+                <STRING>say</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"Loria was banned from going out for twenty days and the entrance was sealed with silt and clay.{break}Her confinement taught Loria a valuable lesson and she didn't go to that pothole again, nor did she say anything when she discovered another... but that's another tale!" SCENE_6</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>ai_event</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>group_name</NAME>
+                <STRING>$actress$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event_number</NAME>
+                <STRING>5</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>ai_event</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>group_name</NAME>
+                <STRING>$actors$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event_number</NAME>
+                <STRING>3</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>scene_6_wait</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>wait_ai_msg</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>msg_content</NAME>
+                <STRING>story4_sealed</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Watch the play." OBJ_WATCH_6</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>scene_6</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>target</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>npcs_to_target</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Watch $noeh$ by targeting him." OBJ_TARGET_6</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_chat</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>chat_type</NAME>
+                <STRING>say</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"Here ends the first tableau of the life of Loria! Thank you all for coming!{break}And thank you in advance for your generosity... Whatever your good hearts can spare!" CURTAIN</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_emote</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$luria$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>emote</NAME>
+                <STRING>bow</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_emote</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$elder$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>emote</NAME>
+                <STRING>bow</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_emote</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$elder_2$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>emote</NAME>
+                <STRING>bow</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>ai_event</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>group_name</NAME>
+                <STRING>$spectators$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event_number</NAME>
+                <STRING>0</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+        <CHILD TYPE="CPrimNode">
+          <PROPERTY TYPE="string">
+            <NAME>class</NAME>
+            <STRING>step</STRING>
+          </PROPERTY>
+          <PROPERTY TYPE="string">
+            <NAME>name</NAME>
+            <STRING>pay_the_troupe</STRING>
+          </PROPERTY>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>pre_actions</STRING>
+            </PROPERTY>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>mission_objectives</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>objectives</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>give_money</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>amount</NAME>
+                <STRING>50</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>overload_objective</NAME>
+                <STRING>"Give 50 dappers to $noeh$ for the troupe." OBJ_PAY</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+          <CHILD TYPE="CPrimNode">
+            <PROPERTY TYPE="string">
+              <NAME>class</NAME>
+              <STRING>actions</STRING>
+            </PROPERTY>
+            <PROPERTY TYPE="string">
+              <NAME>name</NAME>
+              <STRING>post_actions</STRING>
+            </PROPERTY>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_chat</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>chat_type</NAME>
+                <STRING>say</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"Our thanks to you, O audience! Before long we shall perform the second act of the life of Loria... We hope to see you again very soon!" END</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_emote</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$noeh$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>emote</NAME>
+                <STRING>bow</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>ai_event</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>group_name</NAME>
+                <STRING>$actress$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event_number</NAME>
+                <STRING>9</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>ai_event</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>group_name</NAME>
+                <STRING>$actors$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>event_number</NAME>
+                <STRING>9</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>recv_money</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>amount</NAME>
+                <STRING>200</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>recv_fame</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>faction</NAME>
+                <STRING>$tryker$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>value</NAME>
+                <STRING>300</STRING>
+              </PROPERTY>
+            </CHILD>
+            <CHILD TYPE="CPrimNode">
+              <PROPERTY TYPE="string">
+                <NAME>class</NAME>
+                <STRING>bot_chat</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string">
+                <NAME>npc_name</NAME>
+                <STRING>$givervar$</STRING>
+              </PROPERTY>
+              <PROPERTY TYPE="string_array">
+                <NAME>phrase</NAME>
+                <STRING>"The amber cube of Loria's tale is yours, $player$. The play stops at the first act; the cube tells the rest. Look in your encyclopedia." END_SAGE</STRING>
+              </PROPERTY>
+            </CHILD>
+          </CHILD>
+        </CHILD>
+      </CHILD>
+    </CHILD>
+  </ROOT_PRIMITIVE>
+</PRIMITIVES>
