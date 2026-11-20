@@ -27,7 +27,17 @@
   plus the common and refugee ones. A character needs the Tryker armor action to use a Tryker armor plan
 - The table holds the armor actions of level 1 for the four civilisations. Other categories and levels get their rows
   once their families and root indices are known
-- Then mark the new bricks as present in sbrick_index.tsv (extract_sbrick.py does that, but runs on Python 2 only)
+- It writes into R:\leveldesign (leveldesignRoot at the top of the script) and checks everything before the first sheet
+  is written: the folders it writes into exist, no other file in game_elem, game_element or world has the name of one of
+  its sheets, every sheet has its row in the sbrick or sphrase words of translation\work and of every language in
+  translation\translated, and every brick has its row in sbrick_index.tsv (family, index, sheet name). A failed check
+  names the file and what to do, and nothing is written
+- Each sheet is reported as new, changed or unchanged, and only new and changed ones are written. The sheets come from
+  the table: change the table, not the sheets
+- A brick with a new index needs its row in sbrick_index.tsv before the run: add it by hand, the error gives the line.
+  After the run the generator lists the rows of its bricks that are still marked __missing: remove those marks by hand.
+  extract_sbrick.py would clear them too, but it runs on Python 2 only and rewrites every row that no longer matches the
+  tree, such as the BIF rows that are marked __missing though their sheets exist, so its output is a change of its own
 
 # Generate the nation leaders
 - Run generate_sitem.py for their items (sitem_leaders.tsv: each a variant of a systematic item, on its own shape)
