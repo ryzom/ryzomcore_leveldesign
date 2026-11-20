@@ -6875,6 +6875,13 @@ CSR_IS_UNROOTED_BY ( player p )
 
 }
 
+// HASH_VALUE B412C7989BE49CA8
+CSR_MISSION_MONITORED ()
+{
+			[&CHK&<CSR COMMAND ERROR>Die Missionen dieses Spielers werden bereits betrachtet.]
+
+}
+
 // HASH_VALUE 83235F1E1F570FD6
 CSR_MUTE_ENDS ()
 {
@@ -6946,6 +6953,20 @@ CSR_OFFLINE_PLAYER (literal p)
 CSR_PENDING_CHARACTER_LOG ()
 {
 			[&SYS&<CSR COMMAND PENDING> Das Ziel wurde nicht gefunden, Dein Befehl wurde gespeichert und wird später ausgeführt, wenn das Ziel online ist.]
+
+}
+
+// HASH_VALUE A13CB9B162561137
+CSR_POS_FLAG_EXISTS ()
+{
+			[&CHK&<CSR COMMAND ERROR>Diese Positionsmarkierung existiert bereits.]
+
+}
+
+// HASH_VALUE 118191BCD1961927
+CSR_POS_FLAG_NOT_EXISTS ()
+{
+			[&CHK&<CSR COMMAND ERROR>Diese Positionsmarkierung existiert nicht.]
 
 }
 
