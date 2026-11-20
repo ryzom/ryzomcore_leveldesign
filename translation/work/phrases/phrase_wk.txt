@@ -460,6 +460,21 @@ CSR_BAD_MISSION ()
 	[&CHK&<CSR COMMAND ERROR>The chosen mission is invalid.]
 }
 
+CSR_MISSION_MONITORED ()
+{
+	[&CHK&<CSR COMMAND ERROR>The missions of this player are already monitored.]
+}
+
+CSR_POS_FLAG_EXISTS ()
+{
+	[&CHK&<CSR COMMAND ERROR>This position flag already exists.]
+}
+
+CSR_POS_FLAG_NOT_EXISTS ()
+{
+	[&CHK&<CSR COMMAND ERROR>This position flag does not exist.]
+}
+
 CSR_BAD_RIGHTS()
 {
 	[&CHK&<CSR COMMAND ERROR>You dont have the right to affect this player.]

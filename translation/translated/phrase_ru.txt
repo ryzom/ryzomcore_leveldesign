@@ -6974,6 +6974,13 @@ CSR_IS_UNROOTED_BY ( player p )
 
 }
 
+// HASH_VALUE B412C7989BE49CA8
+CSR_MISSION_MONITORED ()
+{
+			[&CHK&<CSR COMMAND ERROR> Задания этого игрока уже отслеживаются.]
+
+}
+
 // HASH_VALUE 83235F1E1F570FD6
 CSR_MUTE_ENDS ()
 {
@@ -7041,6 +7048,20 @@ CSR_OFFLINE_PLAYER (literal p)
 CSR_PENDING_CHARACTER_LOG ()
 {
 			[&SYS&<CSR COMMAND PENDING> Target not found, your command is forwarded, pending later execution when your target next logs in.]
+
+}
+
+// HASH_VALUE A13CB9B162561137
+CSR_POS_FLAG_EXISTS ()
+{
+			[&CHK&<CSR COMMAND ERROR> Такая метка позиции уже существует.]
+
+}
+
+// HASH_VALUE 118191BCD1961927
+CSR_POS_FLAG_NOT_EXISTS ()
+{
+			[&CHK&<CSR COMMAND ERROR> Такой метки позиции не существует.]
 
 }
 
