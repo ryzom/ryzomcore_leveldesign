@@ -7,23 +7,30 @@
     <STRUCT Name="mp">
       <ATOM Name="MpColor" Value="Red"/>
       <STRUCT Name="MpParam">
-        <STRUCT Name="R MpED (Jewel stone)">
-          <ATOM Name="Durability" Value="85"/>
-          <ATOM Name="Weight" Value="45"/>
-          <ATOM Name="CraftCivSpec" Value="matis"/>
-        </STRUCT>
         <STRUCT Name="Z MpMF (Magic Focus)">
           <ATOM Name="Durability" Value="45"/>
-          <ATOM Name="Weight" Value="65"/>
-          <ATOM Name="SapLoad" Value="45"/>
-          <ATOM Name="ElementalCastingTimeFactor" Value="65"/>
-          <ATOM Name="ElementalPowerFactor" Value="65"/>
-          <ATOM Name="OffensiveAfflictionCastingTimeFactor" Value="65"/>
+          <ATOM Name="Weight" Value="66"/>
+          <ATOM Name="SapLoad" Value="66"/>
+          <ATOM Name="ElementalCastingTimeFactor" Value="66"/>
+          <ATOM Name="ElementalPowerFactor" Value="66"/>
+          <ATOM Name="OffensiveAfflictionCastingTimeFactor" Value="66"/>
           <ATOM Name="OffensiveAfflictionPowerFactor" Value="65"/>
-          <ATOM Name="HealCastingTimeFactor" Value="65"/>
+          <ATOM Name="HealCastingTimeFactor" Value="45"/>
           <ATOM Name="HealPowerFactor" Value="100"/>
           <ATOM Name="DefensiveAfflictionCastingTimeFactor" Value="65"/>
           <ATOM Name="DefensiveAfflictionPowerFactor" Value="65"/>
+          <ATOM Name="CraftCivSpec" Value="matis"/>
+        </STRUCT>
+        <STRUCT Name="R MpED (Jewel stone)">
+          <ATOM Name="Durability" Value="65"/>
+          <ATOM Name="Weight" Value="65"/>
+          <ATOM Name="AcidProtection" Value="65"/>
+          <ATOM Name="ColdProtection" Value="85"/>
+          <ATOM Name="FireProtection" Value="45"/>
+          <ATOM Name="RotProtection" Value="65"/>
+          <ATOM Name="ShockWaveProtection" Value="65"/>
+          <ATOM Name="PoisonProtection" Value="65"/>
+          <ATOM Name="ElectricityProtection" Value="65"/>
           <ATOM Name="CraftCivSpec" Value="matis"/>
         </STRUCT>
       </STRUCT>

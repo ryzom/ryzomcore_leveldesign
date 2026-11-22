@@ -7,22 +7,24 @@
       <ATOM Name="Saleable" Value="true"/>
     </STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Violet"/>
+      <ATOM Name="MpColor" Value="Beige"/>
       <STRUCT Name="MpParam">
-        <STRUCT Name="G MpGA (Trigger)">
-          <ATOM Name="Durability" Value="15"/>
-          <ATOM Name="Weight" Value="75"/>
-          <ATOM Name="SapLoad" Value="35"/>
-          <ATOM Name="Speed" Value="35"/>
-          <ATOM Name="DodgeModifier" Value="15"/>
-          <ATOM Name="ParryModifier" Value="35"/>
-          <ATOM Name="AdversaryDodgeModifier" Value="35"/>
-          <ATOM Name="AdversaryParryModifier" Value="35"/>
+        <STRUCT Name="L MpPR (Ammo bullet)">
+          <ATOM Name="Durability" Value="35"/>
+          <ATOM Name="Weight" Value="15"/>
+          <ATOM Name="DMG" Value="75"/>
+          <ATOM Name="Speed" Value="15"/>
+          <ATOM Name="Range" Value="35"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
         <STRUCT Name="Q MpSU (Jewel stone support)">
-          <ATOM Name="Durability" Value="15"/>
-          <ATOM Name="Weight" Value="55"/>
+          <ATOM Name="Durability" Value="35"/>
+          <ATOM Name="Weight" Value="35"/>
+          <ATOM Name="DesertResistance" Value="55"/>
+          <ATOM Name="ForestResistance" Value="35"/>
+          <ATOM Name="LacustreResistance" Value="15"/>
+          <ATOM Name="JungleResistance" Value="35"/>
+          <ATOM Name="PrimaryRootResistance" Value="35"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
       </STRUCT>

@@ -5,30 +5,31 @@
   <PARENT Filename="_mccb.sitem"/>
   <STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Turquoise"/>
+      <ATOM Name="MpColor" Value="Beige"/>
       <STRUCT Name="MpParam">
         <STRUCT Name="H MpPE (Firing pin)">
+          <ATOM Name="Durability" Value="1"/>
+          <ATOM Name="Weight" Value="20"/>
+          <ATOM Name="SapLoad" Value="20"/>
+          <ATOM Name="DMG" Value="0"/>
+          <ATOM Name="Speed" Value="20"/>
+          <ATOM Name="Range" Value="60"/>
+          <ATOM Name="DodgeModifier" Value="20"/>
+          <ATOM Name="ParryModifier" Value="20"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="20"/>
+          <ATOM Name="AdversaryParryModifier" Value="20"/>
+          <ATOM Name="CraftCivSpec" Value="common"/>
+        </STRUCT>
+        <STRUCT Name="D MpM (Shaft)">
           <ATOM Name="Durability" Value="20"/>
           <ATOM Name="Weight" Value="20"/>
           <ATOM Name="SapLoad" Value="20"/>
           <ATOM Name="DMG" Value="20"/>
           <ATOM Name="Speed" Value="20"/>
-          <ATOM Name="Range" Value="60"/>
-          <ATOM Name="DodgeModifier" Value="20"/>
-          <ATOM Name="ParryModifier" Value="0"/>
-          <ATOM Name="AdversaryDodgeModifier" Value="20"/>
-          <ATOM Name="AdversaryParryModifier" Value="0"/>
-          <ATOM Name="CraftCivSpec" Value="common"/>
-        </STRUCT>
-        <STRUCT Name="P MpAT (Armor clip)">
-          <ATOM Name="Durability" Value="20"/>
-          <ATOM Name="Weight" Value="20"/>
           <ATOM Name="DodgeModifier" Value="0"/>
-          <ATOM Name="ParryModifier" Value="20"/>
-          <ATOM Name="ProtectionFactor" Value="20"/>
-          <ATOM Name="MaxSlashingProtection" Value="60"/>
-          <ATOM Name="MaxBluntProtection" Value="20"/>
-          <ATOM Name="MaxPiercingProtection" Value="0"/>
+          <ATOM Name="ParryModifier" Value="40"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="20"/>
+          <ATOM Name="AdversaryParryModifier" Value="20"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
       </STRUCT>

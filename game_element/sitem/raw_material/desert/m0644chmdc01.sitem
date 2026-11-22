@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<FORM Version="0.0" State="modified">
+  <PARENT Filename="_md.sitem"/>
+  <PARENT Filename="_m0644.sitem"/>
+  <PARENT Filename="_mchm.sitem"/>
+  <STRUCT>
+    <STRUCT Name="mp">
+      <ATOM Name="MpColor" Value="Blue"/>
+      <STRUCT Name="MpParam">
+        <STRUCT Name="G MpGA (Trigger)">
+          <ATOM Name="Durability" Value="50"/>
+          <ATOM Name="Weight" Value="30"/>
+          <ATOM Name="SapLoad" Value="50"/>
+          <ATOM Name="Speed" Value="50"/>
+          <ATOM Name="DodgeModifier" Value="90"/>
+          <ATOM Name="ParryModifier" Value="30"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="50"/>
+          <ATOM Name="AdversaryParryModifier" Value="50"/>
+          <ATOM Name="CraftCivSpec" Value="fyros"/>
+        </STRUCT>
+        <STRUCT Name="Q MpSU (Jewel stone support)">
+          <ATOM Name="Durability" Value="50"/>
+          <ATOM Name="Weight" Value="50"/>
+          <ATOM Name="DesertResistance" Value="70"/>
+          <ATOM Name="ForestResistance" Value="50"/>
+          <ATOM Name="LacustreResistance" Value="30"/>
+          <ATOM Name="JungleResistance" Value="50"/>
+          <ATOM Name="PrimaryRootResistance" Value="50"/>
+          <ATOM Name="CraftCivSpec" Value="fyros"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="MaxQuality" Value="250"/>
+      <ATOM Name="StatEnergy" Value="50"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+</FORM>

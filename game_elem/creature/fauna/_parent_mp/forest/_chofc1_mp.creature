@@ -3,28 +3,44 @@
   <STRUCT>
     <STRUCT Name="Harvest">
       <STRUCT Name="MP1">
-        <ATOM Name="AssociatedItem" Value="m0536choca01.sitem"/>
+        <ATOM Name="MinQuality" Value="60"/>
+        <ATOM Name="MaxQuality" Value="60"/>
+        <ATOM Name="AssociatedItem" Value="m0436chofc01.sitem"/>
       </STRUCT>
       <STRUCT Name="MP2">
-        <ATOM Name="AssociatedItem" Value="m0538choca01.sitem"/>
+        <ATOM Name="MinQuality" Value="60"/>
+        <ATOM Name="MaxQuality" Value="60"/>
+        <ATOM Name="AssociatedItem" Value="m0536chocb01.sitem"/>
       </STRUCT>
       <STRUCT Name="MP3">
-        <ATOM Name="AssociatedItem" Value="m0539choca01.sitem"/>
-      </STRUCT>
-      <STRUCT Name="MP4">
-        <ATOM Name="AssociatedItem" Value="m0380choca01.sitem"/>
-      </STRUCT>
-      <STRUCT Name="MP5">
-        <ATOM Name="AssociatedItem" Value="m0540choca01.sitem"/>
-      </STRUCT>
-      <STRUCT Name="MP6">
+        <ATOM Name="MinQuality" Value="60"/>
+        <ATOM Name="MaxQuality" Value="60"/>
         <ATOM Name="AssociatedItem" Value="m0396chofc01.sitem"/>
       </STRUCT>
+      <STRUCT Name="MP4">
+        <ATOM Name="MinQuality" Value="60"/>
+        <ATOM Name="MaxQuality" Value="60"/>
+        <ATOM Name="AssociatedItem" Value="m0538chocb01.sitem"/>
+      </STRUCT>
+      <STRUCT Name="MP5">
+        <ATOM Name="MinQuality" Value="60"/>
+        <ATOM Name="MaxQuality" Value="60"/>
+        <ATOM Name="AssociatedItem" Value="m0539chocb01.sitem"/>
+      </STRUCT>
+      <STRUCT Name="MP6">
+        <ATOM Name="MinQuality" Value="60"/>
+        <ATOM Name="MaxQuality" Value="60"/>
+        <ATOM Name="AssociatedItem" Value="m0380chocb01.sitem"/>
+      </STRUCT>
       <STRUCT Name="MP7">
+        <ATOM Name="MinQuality" Value="60"/>
+        <ATOM Name="MaxQuality" Value="60"/>
         <ATOM Name="AssociatedItem" Value="m0416chofc01.sitem"/>
       </STRUCT>
       <STRUCT Name="MP8">
-        <ATOM Name="AssociatedItem" Value="m0436chofc01.sitem"/>
+        <ATOM Name="MinQuality" Value="60"/>
+        <ATOM Name="MaxQuality" Value="60"/>
+        <ATOM Name="AssociatedItem" Value="m0540chocb01.sitem"/>
       </STRUCT>
     </STRUCT>
   </STRUCT>

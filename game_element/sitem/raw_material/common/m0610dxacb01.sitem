@@ -4,25 +4,27 @@
   <PARENT Filename="_m0610.sitem"/>
   <STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Turquoise"/>
+      <ATOM Name="MpColor" Value="Violet"/>
       <STRUCT Name="MpParam">
         <STRUCT Name="J MpE (Explosive)">
-          <ATOM Name="Durability" Value="20"/>
+          <ATOM Name="Durability" Value="40"/>
           <ATOM Name="Weight" Value="0"/>
-          <ATOM Name="DMG" Value="60"/>
+          <ATOM Name="DMG" Value="20"/>
           <ATOM Name="Speed" Value="20"/>
-          <ATOM Name="Range" Value="0"/>
+          <ATOM Name="Range" Value="20"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
-        <STRUCT Name="O MpRE (Armor interieur stuffing)">
+        <STRUCT Name="H MpPE (Firing pin)">
           <ATOM Name="Durability" Value="20"/>
           <ATOM Name="Weight" Value="20"/>
+          <ATOM Name="SapLoad" Value="20"/>
+          <ATOM Name="DMG" Value="20"/>
+          <ATOM Name="Speed" Value="20"/>
+          <ATOM Name="Range" Value="20"/>
           <ATOM Name="DodgeModifier" Value="20"/>
-          <ATOM Name="ParryModifier" Value="0"/>
-          <ATOM Name="ProtectionFactor" Value="20"/>
-          <ATOM Name="MaxSlashingProtection" Value="0"/>
-          <ATOM Name="MaxBluntProtection" Value="20"/>
-          <ATOM Name="MaxPiercingProtection" Value="60"/>
+          <ATOM Name="ParryModifier" Value="20"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="40"/>
+          <ATOM Name="AdversaryParryModifier" Value="0"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
       </STRUCT>

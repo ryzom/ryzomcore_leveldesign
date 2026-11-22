@@ -8,22 +8,22 @@
       <ATOM Name="MpColor" Value="Blue"/>
       <STRUCT Name="MpParam">
         <STRUCT Name="J MpE (Explosive)">
-          <ATOM Name="Durability" Value="100"/>
+          <ATOM Name="Durability" Value="60"/>
           <ATOM Name="Weight" Value="90"/>
           <ATOM Name="DMG" Value="60"/>
           <ATOM Name="Speed" Value="90"/>
-          <ATOM Name="Range" Value="60"/>
+          <ATOM Name="Range" Value="100"/>
           <ATOM Name="CraftCivSpec" Value="zorai"/>
         </STRUCT>
-        <STRUCT Name="O MpRE (Armor interieur stuffing)">
-          <ATOM Name="Durability" Value="84"/>
+        <STRUCT Name="N MpRI (Armor interior coating)">
+          <ATOM Name="Durability" Value="80"/>
           <ATOM Name="Weight" Value="60"/>
-          <ATOM Name="DodgeModifier" Value="84"/>
-          <ATOM Name="ParryModifier" Value="84"/>
-          <ATOM Name="ProtectionFactor" Value="60"/>
-          <ATOM Name="MaxSlashingProtection" Value="100"/>
-          <ATOM Name="MaxBluntProtection" Value="84"/>
-          <ATOM Name="MaxPiercingProtection" Value="84"/>
+          <ATOM Name="DodgeModifier" Value="80"/>
+          <ATOM Name="ParryModifier" Value="80"/>
+          <ATOM Name="ProtectionFactor" Value="100"/>
+          <ATOM Name="MaxSlashingProtection" Value="80"/>
+          <ATOM Name="MaxBluntProtection" Value="80"/>
+          <ATOM Name="MaxPiercingProtection" Value="80"/>
           <ATOM Name="CraftCivSpec" Value="zorai"/>
         </STRUCT>
       </STRUCT>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bcmmea.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="31"/>
+      <ATOM Name="SPCost" Value="9"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SCM1 90"/>
+      <ATOM Name="Skill" Value="SCM1MEM"/>
+      <ATOM Name="Level" Value="100"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="mw_mace.png"/>
+    </STRUCT>
+    <STRUCT Name="faber">
+      <STRUCT Name="Create">
+        <ATOM Name="Crafted Item" Value="icmm1bm_3.sitem"/>
+        <ATOM Name="Nb built items" Value="1"/>
+        <ATOM Name="MP 1" Value="Raw Material for Hammer"/>
+        <ATOM Name="Quantity 1" Value="6"/>
+        <ATOM Name="MP 2" Value="Raw Material for Shaft"/>
+        <ATOM Name="Quantity 2" Value="5"/>
+        <ATOM Name="MP 3" Value="Raw Material for Grip"/>
+        <ATOM Name="Quantity 3" Value="3"/>
+        <ATOM Name="MP 4" Value="Raw Material for Counterweight"/>
+        <ATOM Name="Quantity 4" Value="2"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+</FORM>

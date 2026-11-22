@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<FORM Version="0.0" State="modified">
+  <PARENT Filename="_mj.sitem"/>
+  <PARENT Filename="_m0640.sitem"/>
+  <PARENT Filename="_mcpc.sitem"/>
+  <STRUCT>
+    <STRUCT Name="mp">
+      <ATOM Name="MpColor" Value="Blue"/>
+      <STRUCT Name="MpParam">
+        <STRUCT Name="O MpRE (Armor interieur stuffing)">
+          <ATOM Name="Durability" Value="30"/>
+          <ATOM Name="Weight" Value="50"/>
+          <ATOM Name="DodgeModifier" Value="50"/>
+          <ATOM Name="ParryModifier" Value="50"/>
+          <ATOM Name="ProtectionFactor" Value="50"/>
+          <ATOM Name="MaxSlashingProtection" Value="50"/>
+          <ATOM Name="MaxBluntProtection" Value="90"/>
+          <ATOM Name="MaxPiercingProtection" Value="30"/>
+          <ATOM Name="CraftCivSpec" Value="zorai"/>
+        </STRUCT>
+        <STRUCT Name="N MpRI (Armor interior coating)">
+          <ATOM Name="Durability" Value="50"/>
+          <ATOM Name="Weight" Value="50"/>
+          <ATOM Name="DodgeModifier" Value="50"/>
+          <ATOM Name="ParryModifier" Value="50"/>
+          <ATOM Name="ProtectionFactor" Value="50"/>
+          <ATOM Name="MaxSlashingProtection" Value="50"/>
+          <ATOM Name="MaxBluntProtection" Value="70"/>
+          <ATOM Name="MaxPiercingProtection" Value="30"/>
+          <ATOM Name="CraftCivSpec" Value="zorai"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="MaxQuality" Value="250"/>
+      <ATOM Name="StatEnergy" Value="50"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+</FORM>

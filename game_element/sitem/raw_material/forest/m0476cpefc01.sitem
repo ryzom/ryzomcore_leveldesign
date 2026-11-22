@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<FORM Version="0.0" State="modified">
+  <PARENT Filename="_mf.sitem"/>
+  <PARENT Filename="_m0476.sitem"/>
+  <PARENT Filename="_mcpe.sitem"/>
+  <STRUCT>
+    <STRUCT Name="mp">
+      <ATOM Name="MpColor" Value="Red"/>
+      <STRUCT Name="MpParam">
+        <STRUCT Name="Z MpMF (Magic Focus)">
+          <ATOM Name="Durability" Value="30"/>
+          <ATOM Name="Weight" Value="50"/>
+          <ATOM Name="SapLoad" Value="50"/>
+          <ATOM Name="ElementalCastingTimeFactor" Value="50"/>
+          <ATOM Name="ElementalPowerFactor" Value="50"/>
+          <ATOM Name="OffensiveAfflictionCastingTimeFactor" Value="50"/>
+          <ATOM Name="OffensiveAfflictionPowerFactor" Value="50"/>
+          <ATOM Name="HealCastingTimeFactor" Value="50"/>
+          <ATOM Name="HealPowerFactor" Value="50"/>
+          <ATOM Name="DefensiveAfflictionCastingTimeFactor" Value="30"/>
+          <ATOM Name="DefensiveAfflictionPowerFactor" Value="90"/>
+          <ATOM Name="CraftCivSpec" Value="matis"/>
+        </STRUCT>
+        <STRUCT Name="J MpE (Explosive)">
+          <ATOM Name="Durability" Value="50"/>
+          <ATOM Name="Weight" Value="50"/>
+          <ATOM Name="DMG" Value="70"/>
+          <ATOM Name="Speed" Value="30"/>
+          <ATOM Name="Range" Value="50"/>
+          <ATOM Name="CraftCivSpec" Value="matis"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="MaxQuality" Value="250"/>
+      <ATOM Name="StatEnergy" Value="50"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+</FORM>

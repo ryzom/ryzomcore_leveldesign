@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bccpea.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="16"/>
+      <ATOM Name="SPCost" Value="5"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SC 0"/>
+      <ATOM Name="Skill" Value="SCR2REM"/>
+      <ATOM Name="Level" Value="10"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="rw_rifle.png"/>
+      <ATOM Name="IconOver2" Value="am_logo.png"/>
+    </STRUCT>
+    <STRUCT Name="faber">
+      <STRUCT Name="Create">
+        <ATOM Name="Crafted Item" Value="iccp2rb.sitem"/>
+        <ATOM Name="Nb built items" Value="50"/>
+        <ATOM Name="MP 1" Value="Raw Material for Ammo jacket"/>
+        <ATOM Name="Quantity 1" Value="1"/>
+        <ATOM Name="MP 2" Value="Raw Material for Ammo bullet"/>
+        <ATOM Name="Quantity 2" Value="2"/>
+        <ATOM Name="MP 3" Value="Raw Material for Explosive"/>
+        <ATOM Name="Quantity 3" Value="1"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+</FORM>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bcmaeb.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="3"/>
+      <ATOM Name="SPCost" Value="9"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SCAM 90"/>
+      <ATOM Name="Skill" Value="SCAMBEM"/>
+      <ATOM Name="Level" Value="100"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ar_botte.png"/>
+    </STRUCT>
+    <STRUCT Name="faber">
+      <STRUCT Name="Create">
+        <ATOM Name="Crafted Item" Value="icmamb_3.sitem"/>
+        <ATOM Name="Nb built items" Value="1"/>
+        <ATOM Name="MP 1" Value="Raw Material for Armor shell"/>
+        <ATOM Name="Quantity 1" Value="5"/>
+        <ATOM Name="MP 2" Value="Raw Material for Armor interior coating"/>
+        <ATOM Name="Quantity 2" Value="5"/>
+        <ATOM Name="MP 3" Value="Raw Material for Armor interior stuffing"/>
+        <ATOM Name="Quantity 3" Value="4"/>
+        <ATOM Name="MP 4" Value="Raw Material for Armor clip"/>
+        <ATOM Name="Quantity 4" Value="4"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+</FORM>

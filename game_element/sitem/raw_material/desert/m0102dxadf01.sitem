@@ -7,22 +7,29 @@
       <ATOM Name="MpColor" Value="Red"/>
       <STRUCT Name="MpParam">
         <STRUCT Name="R MpED (Jewel stone)">
-          <ATOM Name="Durability" Value="60"/>
-          <ATOM Name="Weight" Value="100"/>
+          <ATOM Name="Durability" Value="84"/>
+          <ATOM Name="Weight" Value="60"/>
+          <ATOM Name="AcidProtection" Value="100"/>
+          <ATOM Name="ColdProtection" Value="84"/>
+          <ATOM Name="FireProtection" Value="83"/>
+          <ATOM Name="RotProtection" Value="83"/>
+          <ATOM Name="ShockWaveProtection" Value="83"/>
+          <ATOM Name="PoisonProtection" Value="60"/>
+          <ATOM Name="ElectricityProtection" Value="83"/>
           <ATOM Name="CraftCivSpec" Value="fyros"/>
         </STRUCT>
         <STRUCT Name="Z MpMF (Magic Focus)">
-          <ATOM Name="Durability" Value="82"/>
-          <ATOM Name="Weight" Value="100"/>
-          <ATOM Name="SapLoad" Value="60"/>
-          <ATOM Name="ElementalCastingTimeFactor" Value="82"/>
-          <ATOM Name="ElementalPowerFactor" Value="60"/>
-          <ATOM Name="OffensiveAfflictionCastingTimeFactor" Value="82"/>
-          <ATOM Name="OffensiveAfflictionPowerFactor" Value="82"/>
-          <ATOM Name="HealCastingTimeFactor" Value="82"/>
-          <ATOM Name="HealPowerFactor" Value="82"/>
-          <ATOM Name="DefensiveAfflictionCastingTimeFactor" Value="82"/>
-          <ATOM Name="DefensiveAfflictionPowerFactor" Value="82"/>
+          <ATOM Name="Durability" Value="80"/>
+          <ATOM Name="Weight" Value="80"/>
+          <ATOM Name="SapLoad" Value="80"/>
+          <ATOM Name="ElementalCastingTimeFactor" Value="80"/>
+          <ATOM Name="ElementalPowerFactor" Value="80"/>
+          <ATOM Name="OffensiveAfflictionCastingTimeFactor" Value="60"/>
+          <ATOM Name="OffensiveAfflictionPowerFactor" Value="100"/>
+          <ATOM Name="HealCastingTimeFactor" Value="80"/>
+          <ATOM Name="HealPowerFactor" Value="80"/>
+          <ATOM Name="DefensiveAfflictionCastingTimeFactor" Value="80"/>
+          <ATOM Name="DefensiveAfflictionPowerFactor" Value="80"/>
           <ATOM Name="CraftCivSpec" Value="fyros"/>
         </STRUCT>
       </STRUCT>

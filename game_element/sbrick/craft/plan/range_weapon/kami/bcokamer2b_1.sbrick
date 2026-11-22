@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bcokamr01.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="4"/>
+      <ATOM Name="SPCost" Value="9"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SCR2 90"/>
+      <ATOM Name="Skill" Value="SCR2REM"/>
+      <ATOM Name="Level" Value="100"/>
+      <ATOM Name="Faction" Value="kami"/>
+      <ATOM Name="Minimum fame" Value="180000"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="rw_bowgun.png"/>
+    </STRUCT>
+    <STRUCT Name="faber">
+      <STRUCT Name="Create">
+        <ATOM Name="Crafted Item" Value="icokamr2b_1.sitem"/>
+        <ATOM Name="Nb built items" Value="1"/>
+        <ATOM Name="MP 1" Value="Raw Material for Barrel"/>
+        <ATOM Name="Quantity 1" Value="7"/>
+        <ATOM Name="MP 2" Value="Raw Material for Firing pin"/>
+        <ATOM Name="Quantity 2" Value="5"/>
+        <ATOM Name="MP 3" Value="Raw Material for Trigger"/>
+        <ATOM Name="Quantity 3" Value="4"/>
+        <ATOM Name="MP 4" Value="Raw Material for Grip"/>
+        <ATOM Name="Quantity 4" Value="3"/>
+        <ATOM Name="MP 5" Value="Raw Material for Shaft"/>
+        <ATOM Name="Quantity 5" Value="5"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+</FORM>

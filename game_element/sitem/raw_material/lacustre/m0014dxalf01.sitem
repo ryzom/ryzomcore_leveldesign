@@ -4,26 +4,24 @@
   <PARENT Filename="_m0014.sitem"/>
   <STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Blue"/>
+      <ATOM Name="MpColor" Value="Red"/>
       <STRUCT Name="MpParam">
-        <STRUCT Name="D MpM (Shaft)">
-          <ATOM Name="Durability" Value="83"/>
+        <STRUCT Name="M MpCR (Armor shell)">
+          <ATOM Name="Durability" Value="60"/>
           <ATOM Name="Weight" Value="60"/>
-          <ATOM Name="SapLoad" Value="100"/>
-          <ATOM Name="DMG" Value="83"/>
-          <ATOM Name="Speed" Value="83"/>
-          <ATOM Name="DodgeModifier" Value="60"/>
-          <ATOM Name="ParryModifier" Value="83"/>
-          <ATOM Name="AdversaryDodgeModifier" Value="83"/>
-          <ATOM Name="AdversaryParryModifier" Value="83"/>
+          <ATOM Name="DodgeModifier" Value="84"/>
+          <ATOM Name="ParryModifier" Value="84"/>
+          <ATOM Name="ProtectionFactor" Value="100"/>
+          <ATOM Name="MaxSlashingProtection" Value="84"/>
+          <ATOM Name="MaxBluntProtection" Value="84"/>
+          <ATOM Name="MaxPiercingProtection" Value="84"/>
           <ATOM Name="CraftCivSpec" Value="tryker"/>
         </STRUCT>
-        <STRUCT Name="L MpPR (Ammo bullet)">
-          <ATOM Name="Durability" Value="90"/>
-          <ATOM Name="Weight" Value="90"/>
-          <ATOM Name="DMG" Value="100"/>
-          <ATOM Name="Speed" Value="60"/>
-          <ATOM Name="Range" Value="60"/>
+        <STRUCT Name="K MpEN (Ammo jacket)">
+          <ATOM Name="Durability" Value="80"/>
+          <ATOM Name="Weight" Value="60"/>
+          <ATOM Name="Speed" Value="80"/>
+          <ATOM Name="Range" Value="100"/>
           <ATOM Name="CraftCivSpec" Value="tryker"/>
         </STRUCT>
       </STRUCT>

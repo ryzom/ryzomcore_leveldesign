@@ -6,24 +6,22 @@
     <STRUCT Name="mp">
       <ATOM Name="MpColor" Value="Red"/>
       <STRUCT Name="MpParam">
-        <STRUCT Name="D MpM (Shaft)">
+        <STRUCT Name="M MpCR (Armor shell)">
           <ATOM Name="Durability" Value="50"/>
           <ATOM Name="Weight" Value="30"/>
-          <ATOM Name="SapLoad" Value="50"/>
-          <ATOM Name="DMG" Value="90"/>
-          <ATOM Name="Speed" Value="50"/>
-          <ATOM Name="DodgeModifier" Value="50"/>
+          <ATOM Name="DodgeModifier" Value="90"/>
           <ATOM Name="ParryModifier" Value="30"/>
-          <ATOM Name="AdversaryDodgeModifier" Value="50"/>
-          <ATOM Name="AdversaryParryModifier" Value="50"/>
+          <ATOM Name="ProtectionFactor" Value="50"/>
+          <ATOM Name="MaxSlashingProtection" Value="50"/>
+          <ATOM Name="MaxBluntProtection" Value="50"/>
+          <ATOM Name="MaxPiercingProtection" Value="50"/>
           <ATOM Name="CraftCivSpec" Value="tryker"/>
         </STRUCT>
-        <STRUCT Name="L MpPR (Ammo bullet)">
-          <ATOM Name="Durability" Value="30"/>
-          <ATOM Name="Weight" Value="90"/>
-          <ATOM Name="DMG" Value="50"/>
+        <STRUCT Name="K MpEN (Ammo jacket)">
+          <ATOM Name="Durability" Value="50"/>
+          <ATOM Name="Weight" Value="30"/>
           <ATOM Name="Speed" Value="50"/>
-          <ATOM Name="Range" Value="30"/>
+          <ATOM Name="Range" Value="70"/>
           <ATOM Name="CraftCivSpec" Value="tryker"/>
         </STRUCT>
       </STRUCT>

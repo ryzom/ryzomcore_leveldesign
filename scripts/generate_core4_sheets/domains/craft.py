@@ -11,14 +11,15 @@
 # tool in hand, or the client greys the action (CSPhraseManager::updateMemoryCtrlState); the server never reads it.
 #
 # The plans (the role E families: civilisation, common, refugee and tribe plans, the kami and karavan faction plans
-# BCOKA*, the construction plans BCKAMMI and BCKARMI) and their phrases are not made here: generate_sitem.py writes
-# most of them, and they move to the generator with the materials work. Their ids are excluded with that reason, and
-# the folders they live in are not owned.
+# BCOKA*, the construction plans BCKAMMI and BCKARMI) and their phrases are made by domains/plans.py; this domain
+# offers their families in the roots' FPLAN and reads their family rule from there.
 
 import os, re
 import framework
 from balancing import common
 from balancing import craft as B
+import plan_items as PI
+from domains.plans import planFamily, isPlan, skill as skillOfItem
 
 OWNS = [
 	"sbrick/craft/root",         # the 33 roots and their parents (generate_craft_actions.py wrote six roots here)
@@ -103,50 +104,6 @@ OTHER_DOMAIN_STARTS = re.compile(r"^abc(_magic_start|fepa01)$")
 
 ATLASES = [ "texture_interfaces_dxtc.txt", "texture_interfaces_v3.txt" ] # in pipeline/install/interfaces
 
-# ------------------------------------------------------------------------------------------------------------- plans
-def planFamily(sheetId):
-	"""the family of a craft plan id, as its sheets give it: mostly the letters before its number, with the families that
-	hold other names (survey_translations.md 6.2)"""
-	m = re.match(r"^bcoka([mr])e([mrt]).*_([12])$", sheetId)
-	if m: # faction items: bcoka<kami or karavan>e<melee, range or tool><item>_<tier>
-		return "BCOKA" + m.group(1).upper() + m.group(2).upper() + "0" + m.group(3)
-	if re.match(r"^bcka[mr]sea", sheetId): # kami and karavan shields sit with the common shields
-		return "BCCSEA"
-	if sheetId.startswith("bcbah"): # the tribe heavy armor plans sit with the common heavy armor
-		return "BCCAEC"
-	m = re.match(r"^bc([fmtz])aea(1[7-9]|2[01])(_|$)", sheetId) # caster armor plans named as light armor
-	if m:
-		return "BC" + m.group(1).upper() + "AED"
-	m = re.match(r"^([a-z]+)", sheetId)
-	return m.group(1).upper() if m else None
-
-def isPlan(sheetId):
-	"""a plan brick id: one of a mandatory faber family, or a role E id of a family the code lacks (bcraeb, bccjea)"""
-	family = planFamily(sheetId)
-	if family in framework.FAMILIES and framework.familyIs(family, "mandatory") and framework.brickType(family) == "FABER":
-		return True
-	return re.match(r"^bc[a-z]{2}e[a-d]\d", sheetId) is not None
-
-def existingSheets():
-	"""the .sbrick and .sphrase names under game_element (lower case, without extension), and the FamilyId of each plan
-	sheet in sbrick/craft/effect"""
-	names = set()
-	planFamilies = {}
-	for root, dirs, files in os.walk(framework.GAME_ELEMENT):
-		for f in files:
-			fl = f.lower()
-			if fl.endswith(".sbrick") or fl.endswith(".sphrase"):
-				names.add(os.path.splitext(fl)[0])
-	effect = os.path.join(framework.GAME_ELEMENT, "sbrick", "craft", "effect")
-	for root, dirs, files in os.walk(effect):
-		for f in files:
-			if f.lower().endswith(".sbrick"):
-				with open(os.path.join(root, f), "r", encoding="utf-8", errors="replace") as fh:
-					m = re.search(r"Name=\"FamilyId\" Value=\"([^\"]+)\"", fh.read())
-				if m:
-					planFamilies.setdefault(m.group(1), []).append(f)
-	return names, planFamilies
-
 # ----------------------------------------------------------------------------------------------------------- checks
 def loadAtlas(gen):
 	folder = os.path.normpath(os.path.join(framework.LEVELDESIGN, "..", "pipeline", "install", "interfaces"))
@@ -217,7 +174,6 @@ def gradeIds(gen, family):
 # --------------------------------------------------------------------------------------------------------- generate
 def generate(gen):
 	atlas = loadAtlas(gen)
-	existing, planSheetFamilies = existingSheets()
 	translatedPlanFamilies = set(planFamily(i) for i in gen.sbrickWords.ids(r"^bc") if isPlan(i))
 	made = [] # the bricks and parents of this domain, for the icon and text checks
 	offered = {} # plan family: the roots that list it
@@ -374,24 +330,27 @@ def generate(gen):
 				gen.error("craft: " + s.name + " " + k + " " + v + " is in no interface atlas (" + ", ".join(ATLASES) + ")")
 		if not s.isParent:
 			checkText(gen, s)
-	missing = sorted(f for f in offered if f not in planSheetFamilies)
-	if missing:
-		gen.note("craft: the craft windows offer plan families that have no plan sheet yet (they come with the plan work): " + ", ".join(missing))
+	# every plan family is offered by a root, and the skill of each plan it offers lies in the root's branch (the skill
+	# the client checks the tool against and the learn gates name): read from the plan ids, so it holds whichever domain
+	# runs first
+	rootSkills = { n: gen.bricks[n].effective()[0].get("Skill", "") for names in offered.values() for n in names if n in gen.bricks }
+	for p, item in PI.plans()[0].items():
+		family = planFamily(p)
+		if family not in offered:
+			gen.error("craft: no root offers the plan family " + family + " of " + p + " (FPLAN)")
+			continue
+		planSkill = skillOfItem(PI.itemType(item))
+		for rootName in offered[family]:
+			if rootName in rootSkills and not planSkill.startswith(rootSkills[rootName]):
+				gen.error("craft: the root " + rootName + " offers " + family + ", whose plan " + p + " trains " + planSkill
+					+ ", outside the root's branch " + rootSkills[rootName])
 
-	# ---- the plans, and anything else of the craft prefix that this domain does not make
-	kept = "plan: its sheet stays outside the generator (generate_sitem.py or hand-kept) until the plans move to the generator"
-	later = "plan: no sheet yet, made when the plans move to the generator"
+	# ---- anything else of the craft prefix: the plans and their phrases are the plans domain's (domains/plans.py)
 	for i in gen.sbrickWords.ids(r"^bc"):
-		if i in gen.bricks or ("sbrick", i) in gen.excluded:
+		if i in gen.bricks or ("sbrick", i) in gen.excluded or isPlan(i):
 			continue
-		if isPlan(i):
-			gen.exclude("sbrick", i, kept if i in existing else later)
-		else:
-			gen.error("craft: the translation id " + i + " has the craft prefix, but the craft domain has no rule for it")
+		gen.error("craft: the translation id " + i + " has the craft prefix, but neither the craft nor the plans domain has a rule for it")
 	for i in gen.sphraseWords.ids(r"^abc"):
-		if i in gen.phrases or ("sphrase", i) in gen.excluded or OTHER_DOMAIN_STARTS.match(i):
+		if i in gen.phrases or ("sphrase", i) in gen.excluded or OTHER_DOMAIN_STARTS.match(i) or isPlan(i[1:]):
 			continue
-		if isPlan(i[1:]):
-			gen.exclude("sphrase", i, kept if i in existing else later)
-		else:
-			gen.error("craft: the translation id " + i + " has the craft prefix, but the craft domain has no rule for it")
+		gen.error("craft: the translation id " + i + " has the craft prefix, but neither the craft nor the plans domain has a rule for it")

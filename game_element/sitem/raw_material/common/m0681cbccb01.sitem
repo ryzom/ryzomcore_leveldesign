@@ -5,30 +5,28 @@
   <PARENT Filename="_mcbc.sitem"/>
   <STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Beige"/>
+      <ATOM Name="MpColor" Value="Turquoise"/>
       <STRUCT Name="MpParam">
-        <STRUCT Name="H MpPE (Firing pin)">
-          <ATOM Name="Durability" Value="35"/>
-          <ATOM Name="Weight" Value="15"/>
-          <ATOM Name="SapLoad" Value="15"/>
-          <ATOM Name="DMG" Value="35"/>
-          <ATOM Name="Speed" Value="35"/>
-          <ATOM Name="Range" Value="35"/>
+        <STRUCT Name="P MpAT (Armor clip)">
+          <ATOM Name="Durability" Value="15"/>
+          <ATOM Name="Weight" Value="35"/>
           <ATOM Name="DodgeModifier" Value="35"/>
-          <ATOM Name="ParryModifier" Value="75"/>
-          <ATOM Name="AdversaryDodgeModifier" Value="35"/>
-          <ATOM Name="AdversaryParryModifier" Value="35"/>
+          <ATOM Name="ParryModifier" Value="35"/>
+          <ATOM Name="ProtectionFactor" Value="35"/>
+          <ATOM Name="MaxSlashingProtection" Value="15"/>
+          <ATOM Name="MaxBluntProtection" Value="35"/>
+          <ATOM Name="MaxPiercingProtection" Value="75"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
-        <STRUCT Name="P MpAT (Armor clip)">
-          <ATOM Name="Durability" Value="75"/>
+        <STRUCT Name="G MpGA (Trigger)">
+          <ATOM Name="Durability" Value="35"/>
           <ATOM Name="Weight" Value="35"/>
-          <ATOM Name="DodgeModifier" Value="15"/>
-          <ATOM Name="ParryModifier" Value="35"/>
-          <ATOM Name="ProtectionFactor" Value="15"/>
-          <ATOM Name="MaxSlashingProtection" Value="35"/>
-          <ATOM Name="MaxBluntProtection" Value="35"/>
-          <ATOM Name="MaxPiercingProtection" Value="35"/>
+          <ATOM Name="SapLoad" Value="35"/>
+          <ATOM Name="Speed" Value="35"/>
+          <ATOM Name="DodgeModifier" Value="55"/>
+          <ATOM Name="ParryModifier" Value="15"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="35"/>
+          <ATOM Name="AdversaryParryModifier" Value="35"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
       </STRUCT>

@@ -7,28 +7,29 @@
     <STRUCT Name="mp">
       <ATOM Name="MpColor" Value="Green"/>
       <STRUCT Name="MpParam">
-        <STRUCT Name="A MpL (Blade)">
+        <STRUCT Name="C MpP (Point)">
           <ATOM Name="Durability" Value="35"/>
-          <ATOM Name="Weight" Value="35"/>
+          <ATOM Name="Weight" Value="15"/>
           <ATOM Name="SapLoad" Value="35"/>
-          <ATOM Name="DMG" Value="15"/>
-          <ATOM Name="Speed" Value="35"/>
-          <ATOM Name="DodgeModifier" Value="15"/>
-          <ATOM Name="ParryModifier" Value="75"/>
+          <ATOM Name="DMG" Value="75"/>
+          <ATOM Name="Speed" Value="15"/>
+          <ATOM Name="DodgeModifier" Value="35"/>
+          <ATOM Name="ParryModifier" Value="35"/>
           <ATOM Name="AdversaryDodgeModifier" Value="35"/>
           <ATOM Name="AdversaryParryModifier" Value="35"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
-        <STRUCT Name="C MpP (Point)">
+        <STRUCT Name="H MpPE (Firing pin)">
           <ATOM Name="Durability" Value="35"/>
           <ATOM Name="Weight" Value="35"/>
-          <ATOM Name="SapLoad" Value="15"/>
-          <ATOM Name="DMG" Value="35"/>
-          <ATOM Name="Speed" Value="35"/>
-          <ATOM Name="DodgeModifier" Value="15"/>
+          <ATOM Name="SapLoad" Value="35"/>
+          <ATOM Name="DMG" Value="55"/>
+          <ATOM Name="Speed" Value="15"/>
+          <ATOM Name="Range" Value="35"/>
+          <ATOM Name="DodgeModifier" Value="35"/>
           <ATOM Name="ParryModifier" Value="35"/>
           <ATOM Name="AdversaryDodgeModifier" Value="35"/>
-          <ATOM Name="AdversaryParryModifier" Value="75"/>
+          <ATOM Name="AdversaryParryModifier" Value="35"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
       </STRUCT>

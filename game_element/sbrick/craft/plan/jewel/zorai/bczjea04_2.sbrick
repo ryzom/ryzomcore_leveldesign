@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bczjea.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="11"/>
+      <ATOM Name="SPCost" Value="7"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SCJ 40"/>
+      <ATOM Name="Skill" Value="SCJEAEM"/>
+      <ATOM Name="Level" Value="50"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="pa_earring.png"/>
+    </STRUCT>
+    <STRUCT Name="faber">
+      <STRUCT Name="Create">
+        <ATOM Name="Crafted Item" Value="iczje_2.sitem"/>
+        <ATOM Name="Nb built items" Value="1"/>
+        <ATOM Name="MP 1" Value="Raw Material for Jewel stone support"/>
+        <ATOM Name="Quantity 1" Value="3"/>
+        <ATOM Name="MP 2" Value="Raw Material for Jewel stone"/>
+        <ATOM Name="Quantity 2" Value="3"/>
+      </STRUCT>
+      <ATOM Name="Acid Protection Factor" Value="0.9"/>
+      <ATOM Name="Cold Protection Factor" Value="0.9"/>
+      <ATOM Name="Desert Resistance Factor" Value="0.9"/>
+      <ATOM Name="Durability Factor" Value="0.9"/>
+      <ATOM Name="Electricity Protection Factor" Value="0.9"/>
+      <ATOM Name="Fire Protection Factor" Value="0.9"/>
+      <ATOM Name="Forest Resistance Factor" Value="0.9"/>
+      <ATOM Name="Jungle Resistance Factor" Value="0.9"/>
+      <ATOM Name="Lacustre Resistance Factor" Value="0.9"/>
+      <ATOM Name="Poison Protection Factor" Value="0.9"/>
+      <ATOM Name="PrimaryRoot Resistance Factor" Value="0.9"/>
+      <ATOM Name="Rot Protection Factor" Value="0.9"/>
+      <ATOM Name="ShockWave Protection Factor" Value="0.9"/>
+      <ATOM Name="Weight Factor" Value="0.9"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

@@ -13,7 +13,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import framework
 
-DOMAINS = [ "fight", "magic", "forage", "craft", "powers", "misc" ]
+DOMAINS = [ "fight", "magic", "forage", "craft", "plans", "powers", "misc" ] # plans after craft: it checks the roots that offer its families
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--write", action="store_true")

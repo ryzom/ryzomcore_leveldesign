@@ -3,22 +3,34 @@
   <STRUCT>
     <STRUCT Name="Harvest">
       <STRUCT Name="MP1">
-        <ATOM Name="AssociatedItem" Value="m0521ccbcb01.sitem"/>
+        <ATOM Name="MinQuality" Value="95"/>
+        <ATOM Name="MaxQuality" Value="95"/>
+        <ATOM Name="AssociatedItem" Value="m0460ccbdc01.sitem"/>
       </STRUCT>
       <STRUCT Name="MP2">
-        <ATOM Name="AssociatedItem" Value="m0336ccbcb01.sitem"/>
+        <ATOM Name="MinQuality" Value="95"/>
+        <ATOM Name="MaxQuality" Value="95"/>
+        <ATOM Name="AssociatedItem" Value="m0521ccbcb01.sitem"/>
       </STRUCT>
       <STRUCT Name="MP3">
-        <ATOM Name="AssociatedItem" Value="m0523ccbcb01.sitem"/>
-      </STRUCT>
-      <STRUCT Name="MP4">
+        <ATOM Name="MinQuality" Value="95"/>
+        <ATOM Name="MaxQuality" Value="95"/>
         <ATOM Name="AssociatedItem" Value="m0522ccbcb01.sitem"/>
       </STRUCT>
+      <STRUCT Name="MP4">
+        <ATOM Name="MinQuality" Value="95"/>
+        <ATOM Name="MaxQuality" Value="95"/>
+        <ATOM Name="AssociatedItem" Value="m0336ccbcb01.sitem"/>
+      </STRUCT>
       <STRUCT Name="MP5">
-        <ATOM Name="AssociatedItem" Value="m0524ccbcb01.sitem"/>
+        <ATOM Name="MinQuality" Value="95"/>
+        <ATOM Name="MaxQuality" Value="95"/>
+        <ATOM Name="AssociatedItem" Value="m0523ccbcb01.sitem"/>
       </STRUCT>
       <STRUCT Name="MP6">
-        <ATOM Name="AssociatedItem" Value="m0460ccbdc01.sitem"/>
+        <ATOM Name="MinQuality" Value="95"/>
+        <ATOM Name="MaxQuality" Value="95"/>
+        <ATOM Name="AssociatedItem" Value="m0524ccbcb01.sitem"/>
       </STRUCT>
     </STRUCT>
   </STRUCT>

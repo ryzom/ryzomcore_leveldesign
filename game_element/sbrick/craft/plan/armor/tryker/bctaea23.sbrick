@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bctaea.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="17"/>
+      <ATOM Name="SPCost" Value="5"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SC 0"/>
+      <ATOM Name="Skill" Value="SCALVEM"/>
+      <ATOM Name="Level" Value="10"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ar_gilet.png"/>
+    </STRUCT>
+    <STRUCT Name="faber">
+      <STRUCT Name="Create">
+        <ATOM Name="Crafted Item" Value="ictauwv.sitem"/>
+        <ATOM Name="Nb built items" Value="1"/>
+        <ATOM Name="MP 1" Value="Raw Material for Clothes"/>
+        <ATOM Name="Quantity 1" Value="4"/>
+      </STRUCT>
+      <ATOM Name="Blunt Protection Factor" Value="0.8"/>
+      <ATOM Name="Dodge Factor" Value="0.8"/>
+      <ATOM Name="Durability Factor" Value="0.8"/>
+      <ATOM Name="Parry Factor" Value="0.8"/>
+      <ATOM Name="Piercing Protection Factor" Value="0.8"/>
+      <ATOM Name="Protection Factor" Value="0.8"/>
+      <ATOM Name="Slashing Protection Factor" Value="0.8"/>
+      <ATOM Name="Weight Factor" Value="0.8"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

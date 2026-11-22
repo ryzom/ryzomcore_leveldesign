@@ -5,25 +5,26 @@
   <PARENT Filename="_mcco.sitem"/>
   <STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Black"/>
+      <ATOM Name="MpColor" Value="White"/>
       <STRUCT Name="MpParam">
-        <STRUCT Name="J MpE (Explosive)">
-          <ATOM Name="Durability" Value="60"/>
-          <ATOM Name="Weight" Value="90"/>
-          <ATOM Name="DMG" Value="90"/>
-          <ATOM Name="Speed" Value="100"/>
-          <ATOM Name="Range" Value="60"/>
-          <ATOM Name="CraftCivSpec" Value="common"/>
-        </STRUCT>
-        <STRUCT Name="O MpRE (Armor interieur stuffing)">
+        <STRUCT Name="A MpL (Blade)">
           <ATOM Name="Durability" Value="84"/>
           <ATOM Name="Weight" Value="60"/>
-          <ATOM Name="DodgeModifier" Value="60"/>
-          <ATOM Name="ParryModifier" Value="84"/>
-          <ATOM Name="ProtectionFactor" Value="84"/>
-          <ATOM Name="MaxSlashingProtection" Value="100"/>
-          <ATOM Name="MaxBluntProtection" Value="84"/>
-          <ATOM Name="MaxPiercingProtection" Value="84"/>
+          <ATOM Name="SapLoad" Value="84"/>
+          <ATOM Name="DMG" Value="83"/>
+          <ATOM Name="Speed" Value="83"/>
+          <ATOM Name="DodgeModifier" Value="83"/>
+          <ATOM Name="ParryModifier" Value="83"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="60"/>
+          <ATOM Name="AdversaryParryModifier" Value="100"/>
+          <ATOM Name="CraftCivSpec" Value="common"/>
+        </STRUCT>
+        <STRUCT Name="L MpPR (Ammo bullet)">
+          <ATOM Name="Durability" Value="80"/>
+          <ATOM Name="Weight" Value="80"/>
+          <ATOM Name="DMG" Value="100"/>
+          <ATOM Name="Speed" Value="60"/>
+          <ATOM Name="Range" Value="80"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
       </STRUCT>

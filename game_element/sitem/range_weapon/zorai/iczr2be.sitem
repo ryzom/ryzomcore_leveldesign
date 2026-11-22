@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_c_r2b.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="zorai two-handed bowrifle electric"/>
+      <ATOM Name="origin" Value="zorai"/>
+      <ATOM Name="CraftPlan" Value="bczrea07.sbrick"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="zo_wea_fusarc.shape"/>
+      <ATOM Name="shape_female" Value="zo_wea_fusarc.shape"/>
+      <ATOM Name="map_variant" Value="High Quality"/>
+      <ATOM Name="icon background" Value="bk_zorai.png"/>
+      <STRUCT Name="fx">
+        <ATOM Name="AdvantageFX" Value="zo_wea_fusarc.ps"/>
+      </STRUCT>
+      <ATOM Name="has_fx" Value="true"/>    </STRUCT>
+  </STRUCT>
+</FORM>

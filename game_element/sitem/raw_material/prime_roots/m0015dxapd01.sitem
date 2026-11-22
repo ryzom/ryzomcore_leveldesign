@@ -4,24 +4,31 @@
   <PARENT Filename="_m0015.sitem"/>
   <STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Black"/>
+      <ATOM Name="MpColor" Value="White"/>
       <STRUCT Name="MpParam">
         <STRUCT Name="R MpED (Jewel stone)">
-          <ATOM Name="Durability" Value="30"/>
-          <ATOM Name="Weight" Value="70"/>
+          <ATOM Name="Durability" Value="50"/>
+          <ATOM Name="Weight" Value="30"/>
+          <ATOM Name="AcidProtection" Value="50"/>
+          <ATOM Name="ColdProtection" Value="30"/>
+          <ATOM Name="FireProtection" Value="90"/>
+          <ATOM Name="RotProtection" Value="50"/>
+          <ATOM Name="ShockWaveProtection" Value="50"/>
+          <ATOM Name="PoisonProtection" Value="50"/>
+          <ATOM Name="ElectricityProtection" Value="50"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
         <STRUCT Name="Z MpMF (Magic Focus)">
           <ATOM Name="Durability" Value="50"/>
-          <ATOM Name="Weight" Value="30"/>
+          <ATOM Name="Weight" Value="50"/>
           <ATOM Name="SapLoad" Value="50"/>
-          <ATOM Name="ElementalCastingTimeFactor" Value="50"/>
-          <ATOM Name="ElementalPowerFactor" Value="50"/>
+          <ATOM Name="ElementalCastingTimeFactor" Value="30"/>
+          <ATOM Name="ElementalPowerFactor" Value="70"/>
           <ATOM Name="OffensiveAfflictionCastingTimeFactor" Value="50"/>
           <ATOM Name="OffensiveAfflictionPowerFactor" Value="50"/>
           <ATOM Name="HealCastingTimeFactor" Value="50"/>
-          <ATOM Name="HealPowerFactor" Value="30"/>
-          <ATOM Name="DefensiveAfflictionCastingTimeFactor" Value="90"/>
+          <ATOM Name="HealPowerFactor" Value="50"/>
+          <ATOM Name="DefensiveAfflictionCastingTimeFactor" Value="50"/>
           <ATOM Name="DefensiveAfflictionPowerFactor" Value="50"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>

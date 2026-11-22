@@ -3,7 +3,14 @@
   <STRUCT>
     <STRUCT Name="Harvest">
       <STRUCT Name="MP1">
-        <ATOM Name="AssociatedItem" Value="system_mp_basic.sitem"/>
+        <ATOM Name="MinQuality" Value="250"/>
+        <ATOM Name="MaxQuality" Value="250"/>
+        <ATOM Name="AssociatedItem" Value="m0474cpcpe01.sitem"/>
+      </STRUCT>
+      <STRUCT Name="MP2">
+        <ATOM Name="MinQuality" Value="250"/>
+        <ATOM Name="MaxQuality" Value="250"/>
+        <ATOM Name="AssociatedItem" Value="m0640cpcpe01.sitem"/>
       </STRUCT>
     </STRUCT>
   </STRUCT>

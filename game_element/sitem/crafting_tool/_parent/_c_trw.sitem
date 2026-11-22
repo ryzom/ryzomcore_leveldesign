@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="crafting tool rangeweapontool"/>
+      <ATOM Name="family" Value="crafting tool"/>
+      <ATOM Name="ItemType" Value="RangeWeaponTool"/>
+      <STRUCT Name="EquipmentInfo">
+        <ARRAY Name="EquipmentSlots">
+          <ATOM Name="right_hand_exclusive_hand" Value="Right hand exclusive Hand"/>
+        </ARRAY>
+      </STRUCT>
+      <ATOM Name="Bulk" Value="10"/>
+      <ATOM Name="Price" Value="1000"/>
+      <ATOM Name="Time to Equip In Ticks" Value="20"/>
+    </STRUCT>
+    <STRUCT Name="crafting tool">
+      <ATOM Name="type" Value="RangeWeaponTool"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="icon" Value="to_range.png"/>
+      <ATOM Name="anim_set" Value="Hollow Out"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

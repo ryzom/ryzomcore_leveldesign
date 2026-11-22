@@ -4,22 +4,24 @@
   <PARENT Filename="_m0113.sitem"/>
   <STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Red"/>
+      <ATOM Name="MpColor" Value="Blue"/>
       <STRUCT Name="MpParam">
-        <STRUCT Name="G MpGA (Trigger)">
-          <ATOM Name="Durability" Value="84"/>
-          <ATOM Name="Weight" Value="84"/>
-          <ATOM Name="SapLoad" Value="100"/>
-          <ATOM Name="Speed" Value="60"/>
-          <ATOM Name="DodgeModifier" Value="84"/>
-          <ATOM Name="ParryModifier" Value="84"/>
-          <ATOM Name="AdversaryDodgeModifier" Value="60"/>
-          <ATOM Name="AdversaryParryModifier" Value="84"/>
+        <STRUCT Name="L MpPR (Ammo bullet)">
+          <ATOM Name="Durability" Value="90"/>
+          <ATOM Name="Weight" Value="60"/>
+          <ATOM Name="DMG" Value="60"/>
+          <ATOM Name="Speed" Value="90"/>
+          <ATOM Name="Range" Value="100"/>
           <ATOM Name="CraftCivSpec" Value="zorai"/>
         </STRUCT>
         <STRUCT Name="Q MpSU (Jewel stone support)">
-          <ATOM Name="Durability" Value="60"/>
-          <ATOM Name="Weight" Value="100"/>
+          <ATOM Name="Durability" Value="80"/>
+          <ATOM Name="Weight" Value="80"/>
+          <ATOM Name="DesertResistance" Value="80"/>
+          <ATOM Name="ForestResistance" Value="100"/>
+          <ATOM Name="LacustreResistance" Value="80"/>
+          <ATOM Name="JungleResistance" Value="60"/>
+          <ATOM Name="PrimaryRootResistance" Value="80"/>
           <ATOM Name="CraftCivSpec" Value="zorai"/>
         </STRUCT>
       </STRUCT>

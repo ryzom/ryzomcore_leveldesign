@@ -7,25 +7,23 @@
       <ATOM Name="Saleable" Value="true"/>
     </STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Turquoise"/>
+      <ATOM Name="MpColor" Value="Green"/>
       <STRUCT Name="MpParam">
-        <STRUCT Name="D MpM (Shaft)">
-          <ATOM Name="Durability" Value="1"/>
-          <ATOM Name="Weight" Value="60"/>
-          <ATOM Name="SapLoad" Value="20"/>
-          <ATOM Name="DMG" Value="0"/>
-          <ATOM Name="Speed" Value="20"/>
+        <STRUCT Name="M MpCR (Armor shell)">
+          <ATOM Name="Durability" Value="20"/>
+          <ATOM Name="Weight" Value="0"/>
           <ATOM Name="DodgeModifier" Value="20"/>
           <ATOM Name="ParryModifier" Value="20"/>
-          <ATOM Name="AdversaryDodgeModifier" Value="20"/>
-          <ATOM Name="AdversaryParryModifier" Value="20"/>
+          <ATOM Name="ProtectionFactor" Value="20"/>
+          <ATOM Name="MaxSlashingProtection" Value="60"/>
+          <ATOM Name="MaxBluntProtection" Value="0"/>
+          <ATOM Name="MaxPiercingProtection" Value="20"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
-        <STRUCT Name="L MpPR (Ammo bullet)">
+        <STRUCT Name="K MpEN (Ammo jacket)">
           <ATOM Name="Durability" Value="20"/>
-          <ATOM Name="Weight" Value="60"/>
-          <ATOM Name="DMG" Value="0"/>
-          <ATOM Name="Speed" Value="0"/>
+          <ATOM Name="Weight" Value="0"/>
+          <ATOM Name="Speed" Value="40"/>
           <ATOM Name="Range" Value="20"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>

@@ -8,19 +8,24 @@
       <ATOM Name="MpColor" Value="White"/>
       <STRUCT Name="MpParam">
         <STRUCT Name="G MpGA (Trigger)">
-          <ATOM Name="Durability" Value="100"/>
-          <ATOM Name="Weight" Value="84"/>
+          <ATOM Name="Durability" Value="84"/>
+          <ATOM Name="Weight" Value="60"/>
           <ATOM Name="SapLoad" Value="84"/>
-          <ATOM Name="Speed" Value="60"/>
+          <ATOM Name="Speed" Value="84"/>
           <ATOM Name="DodgeModifier" Value="60"/>
-          <ATOM Name="ParryModifier" Value="84"/>
+          <ATOM Name="ParryModifier" Value="100"/>
           <ATOM Name="AdversaryDodgeModifier" Value="84"/>
           <ATOM Name="AdversaryParryModifier" Value="84"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
         <STRUCT Name="Q MpSU (Jewel stone support)">
-          <ATOM Name="Durability" Value="100"/>
-          <ATOM Name="Weight" Value="60"/>
+          <ATOM Name="Durability" Value="80"/>
+          <ATOM Name="Weight" Value="80"/>
+          <ATOM Name="DesertResistance" Value="60"/>
+          <ATOM Name="ForestResistance" Value="80"/>
+          <ATOM Name="LacustreResistance" Value="80"/>
+          <ATOM Name="JungleResistance" Value="80"/>
+          <ATOM Name="PrimaryRootResistance" Value="100"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
       </STRUCT>

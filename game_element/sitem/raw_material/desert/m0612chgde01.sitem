@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<FORM Version="0.0" State="modified">
+  <PARENT Filename="_md.sitem"/>
+  <PARENT Filename="_m0612.sitem"/>
+  <PARENT Filename="_mchg.sitem"/>
+  <STRUCT>
+    <STRUCT Name="mp">
+      <ATOM Name="MpColor" Value="Blue"/>
+      <STRUCT Name="MpParam">
+        <STRUCT Name="B MpH (Hammer)">
+          <ATOM Name="Durability" Value="84"/>
+          <ATOM Name="Weight" Value="60"/>
+          <ATOM Name="SapLoad" Value="84"/>
+          <ATOM Name="DMG" Value="83"/>
+          <ATOM Name="Speed" Value="83"/>
+          <ATOM Name="DodgeModifier" Value="83"/>
+          <ATOM Name="ParryModifier" Value="83"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="60"/>
+          <ATOM Name="AdversaryParryModifier" Value="100"/>
+          <ATOM Name="CraftCivSpec" Value="fyros"/>
+        </STRUCT>
+        <STRUCT Name="F MpC (Counterweight)">
+          <ATOM Name="Durability" Value="80"/>
+          <ATOM Name="Weight" Value="80"/>
+          <ATOM Name="SapLoad" Value="80"/>
+          <ATOM Name="Speed" Value="80"/>
+          <ATOM Name="DodgeModifier" Value="100"/>
+          <ATOM Name="ParryModifier" Value="60"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="80"/>
+          <ATOM Name="AdversaryParryModifier" Value="80"/>
+          <ATOM Name="CraftCivSpec" Value="fyros"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="MaxQuality" Value="250"/>
+      <ATOM Name="StatEnergy" Value="80"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+</FORM>

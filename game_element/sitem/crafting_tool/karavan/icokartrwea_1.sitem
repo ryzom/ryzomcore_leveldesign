@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_c_trw.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="karavan faction crafting tool rangeweapontool"/>
+      <ATOM Name="origin" Value="karavan"/>
+      <ATOM Name="CraftPlan" Value="bcokaretrwea_1.sbrick"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="ge_kwj_ciseau_o.shape"/>
+      <ATOM Name="shape_female" Value="ge_kwj_ciseau_o.shape"/>
+      <ATOM Name="map_variant" Value="Medium Quality"/>
+      <ATOM Name="icon background" Value="bk_karavan.png"/>
+      <STRUCT Name="fx">
+        <ATOM Name="AdvantageFX" Value="outpost_karavan_type.ps"/>
+      </STRUCT>
+      <ATOM Name="has_fx" Value="true"/>    </STRUCT>
+  </STRUCT>
+</FORM>

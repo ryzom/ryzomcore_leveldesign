@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bcokarr01.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="1"/>
+      <ATOM Name="SPCost" Value="9"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SCR1 90"/>
+      <ATOM Name="Skill" Value="SCR1PEM"/>
+      <ATOM Name="Level" Value="100"/>
+      <ATOM Name="Faction" Value="karavan"/>
+      <ATOM Name="Minimum fame" Value="180000"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="rw_pistolarc.png"/>
+    </STRUCT>
+    <STRUCT Name="faber">
+      <STRUCT Name="Create">
+        <ATOM Name="Crafted Item" Value="icokarr1b_1.sitem"/>
+        <ATOM Name="Nb built items" Value="1"/>
+        <ATOM Name="MP 1" Value="Raw Material for Barrel"/>
+        <ATOM Name="Quantity 1" Value="5"/>
+        <ATOM Name="MP 2" Value="Raw Material for Firing pin"/>
+        <ATOM Name="Quantity 2" Value="3"/>
+        <ATOM Name="MP 3" Value="Raw Material for Trigger"/>
+        <ATOM Name="Quantity 3" Value="3"/>
+        <ATOM Name="MP 4" Value="Raw Material for Grip"/>
+        <ATOM Name="Quantity 4" Value="5"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+</FORM>

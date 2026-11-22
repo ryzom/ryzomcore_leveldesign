@@ -5,30 +5,30 @@
   <PARENT Filename="_mcki.sitem"/>
   <STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Beige"/>
+      <ATOM Name="MpColor" Value="Green"/>
       <STRUCT Name="MpParam">
+        <STRUCT Name="M MpCR (Armor shell)">
+          <ATOM Name="Durability" Value="35"/>
+          <ATOM Name="Weight" Value="15"/>
+          <ATOM Name="DodgeModifier" Value="35"/>
+          <ATOM Name="ParryModifier" Value="35"/>
+          <ATOM Name="ProtectionFactor" Value="35"/>
+          <ATOM Name="MaxSlashingProtection" Value="15"/>
+          <ATOM Name="MaxBluntProtection" Value="35"/>
+          <ATOM Name="MaxPiercingProtection" Value="75"/>
+          <ATOM Name="CraftCivSpec" Value="common"/>
+        </STRUCT>
         <STRUCT Name="I MpCA (Barrel)">
           <ATOM Name="Durability" Value="35"/>
           <ATOM Name="Weight" Value="35"/>
           <ATOM Name="SapLoad" Value="35"/>
           <ATOM Name="DMG" Value="15"/>
-          <ATOM Name="Speed" Value="75"/>
-          <ATOM Name="Range" Value="15"/>
+          <ATOM Name="Speed" Value="35"/>
+          <ATOM Name="Range" Value="55"/>
           <ATOM Name="DodgeModifier" Value="35"/>
           <ATOM Name="ParryModifier" Value="35"/>
           <ATOM Name="AdversaryDodgeModifier" Value="35"/>
           <ATOM Name="AdversaryParryModifier" Value="35"/>
-          <ATOM Name="CraftCivSpec" Value="common"/>
-        </STRUCT>
-        <STRUCT Name="M MpCR (Armor shell)">
-          <ATOM Name="Durability" Value="35"/>
-          <ATOM Name="Weight" Value="35"/>
-          <ATOM Name="DodgeModifier" Value="35"/>
-          <ATOM Name="ParryModifier" Value="75"/>
-          <ATOM Name="ProtectionFactor" Value="35"/>
-          <ATOM Name="MaxSlashingProtection" Value="35"/>
-          <ATOM Name="MaxBluntProtection" Value="15"/>
-          <ATOM Name="MaxPiercingProtection" Value="15"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
       </STRUCT>

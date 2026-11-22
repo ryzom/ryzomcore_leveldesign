@@ -5,24 +5,30 @@
   <PARENT Filename="_mchu.sitem"/>
   <STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Blue"/>
+      <ATOM Name="MpColor" Value="Red"/>
       <STRUCT Name="MpParam">
-        <STRUCT Name="K MpEN (Ammo jacket)">
-          <ATOM Name="Durability" Value="100"/>
-          <ATOM Name="Weight" Value="60"/>
-          <ATOM Name="Speed" Value="60"/>
+        <STRUCT Name="I MpCA (Barrel)">
+          <ATOM Name="Durability" Value="60"/>
+          <ATOM Name="Weight" Value="83"/>
+          <ATOM Name="SapLoad" Value="83"/>
+          <ATOM Name="DMG" Value="60"/>
+          <ATOM Name="Speed" Value="83"/>
           <ATOM Name="Range" Value="100"/>
+          <ATOM Name="DodgeModifier" Value="83"/>
+          <ATOM Name="ParryModifier" Value="83"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="83"/>
+          <ATOM Name="AdversaryParryModifier" Value="82"/>
           <ATOM Name="CraftCivSpec" Value="tryker"/>
         </STRUCT>
-        <STRUCT Name="N MpRI (Armor interior coating)">
-          <ATOM Name="Durability" Value="84"/>
-          <ATOM Name="Weight" Value="60"/>
-          <ATOM Name="DodgeModifier" Value="60"/>
-          <ATOM Name="ParryModifier" Value="100"/>
-          <ATOM Name="ProtectionFactor" Value="84"/>
-          <ATOM Name="MaxSlashingProtection" Value="84"/>
-          <ATOM Name="MaxBluntProtection" Value="84"/>
-          <ATOM Name="MaxPiercingProtection" Value="84"/>
+        <STRUCT Name="M MpCR (Armor shell)">
+          <ATOM Name="Durability" Value="80"/>
+          <ATOM Name="Weight" Value="80"/>
+          <ATOM Name="DodgeModifier" Value="80"/>
+          <ATOM Name="ParryModifier" Value="80"/>
+          <ATOM Name="ProtectionFactor" Value="80"/>
+          <ATOM Name="MaxSlashingProtection" Value="60"/>
+          <ATOM Name="MaxBluntProtection" Value="80"/>
+          <ATOM Name="MaxPiercingProtection" Value="100"/>
           <ATOM Name="CraftCivSpec" Value="tryker"/>
         </STRUCT>
       </STRUCT>

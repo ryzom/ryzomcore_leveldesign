@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bcmaed.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="12"/>
+      <ATOM Name="SPCost" Value="9"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SCAL 90"/>
+      <ATOM Name="Skill" Value="SCALVEM"/>
+      <ATOM Name="Level" Value="100"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ar_gilet.png"/>
+    </STRUCT>
+    <STRUCT Name="faber">
+      <STRUCT Name="Create">
+        <ATOM Name="Crafted Item" Value="icmacv_3.sitem"/>
+        <ATOM Name="Nb built items" Value="1"/>
+        <ATOM Name="MP 1" Value="Raw Material for Clothes"/>
+        <ATOM Name="Quantity 1" Value="12"/>
+        <ATOM Name="MP 2" Value="Raw Material for Armor interior coating"/>
+        <ATOM Name="Quantity 2" Value="4"/>
+        <ATOM Name="MP 3" Value="Raw Material for Armor clip"/>
+        <ATOM Name="Quantity 3" Value="4"/>
+      </STRUCT>
+    </STRUCT>
+  </STRUCT>
+</FORM>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bctmea.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="35"/>
+      <ATOM Name="SPCost" Value="7"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SCM 40"/>
+      <ATOM Name="Skill" Value="SCMCAEM"/>
+      <ATOM Name="Level" Value="50"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="mg_glove.png"/>
+    </STRUCT>
+    <STRUCT Name="faber">
+      <STRUCT Name="Create">
+        <ATOM Name="Crafted Item" Value="ictm2ms_2.sitem"/>
+        <ATOM Name="Nb built items" Value="1"/>
+        <ATOM Name="MP 1" Value="Raw Material for Magic Focus"/>
+        <ATOM Name="Quantity 1" Value="8"/>
+        <ATOM Name="MP 2" Value="Raw Material for Grip"/>
+        <ATOM Name="Quantity 2" Value="4"/>
+        <ATOM Name="MP 3" Value="Raw Material for Shaft"/>
+        <ATOM Name="Quantity 3" Value="3"/>
+      </STRUCT>
+      <ATOM Name="Adversary Dodge Modifier Factor" Value="0.9"/>
+      <ATOM Name="Adversary Parry Modifier Factor" Value="0.9"/>
+      <ATOM Name="DMG Factor" Value="0.9"/>
+      <ATOM Name="Defensive Affliction Casting Time Factor" Value="0.9"/>
+      <ATOM Name="Defensive Affliction Power Factor" Value="0.9"/>
+      <ATOM Name="Dodge Factor" Value="0.9"/>
+      <ATOM Name="Durability Factor" Value="0.9"/>
+      <ATOM Name="Elemental Casting Time Factor" Value="0.9"/>
+      <ATOM Name="Elemental Power Factor" Value="0.9"/>
+      <ATOM Name="Heal Casting Time Factor" Value="0.9"/>
+      <ATOM Name="Heal Power Factor" Value="0.9"/>
+      <ATOM Name="Offensive Affliction Casting Time Factor" Value="0.9"/>
+      <ATOM Name="Offensive Affliction Power Factor" Value="0.9"/>
+      <ATOM Name="Parry Factor" Value="0.9"/>
+      <ATOM Name="SapLoad Factor" Value="0.9"/>
+      <ATOM Name="Speed Factor" Value="0.9"/>
+      <ATOM Name="Weight Factor" Value="0.9"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

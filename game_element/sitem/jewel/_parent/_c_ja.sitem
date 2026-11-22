@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="jewel anklet"/>
+      <ATOM Name="family" Value="jewelry"/>
+      <ATOM Name="ItemType" Value="Anklet"/>
+      <STRUCT Name="EquipmentInfo">
+        <ARRAY Name="EquipmentSlots">
+          <ATOM Name="ankle" Value="Ankle"/>
+        </ARRAY>
+      </STRUCT>
+      <ATOM Name="Bulk" Value="1"/>
+      <ATOM Name="Time to Equip In Ticks" Value="10"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="icon" Value="pa_anklet.png"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

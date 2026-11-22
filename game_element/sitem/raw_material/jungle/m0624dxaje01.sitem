@@ -4,24 +4,28 @@
   <PARENT Filename="_m0624.sitem"/>
   <STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Red"/>
+      <ATOM Name="MpColor" Value="Blue"/>
       <STRUCT Name="MpParam">
-        <STRUCT Name="K MpEN (Ammo jacket)">
-          <ATOM Name="Durability" Value="45"/>
-          <ATOM Name="Weight" Value="100"/>
-          <ATOM Name="Speed" Value="45"/>
-          <ATOM Name="Range" Value="70"/>
-          <ATOM Name="CraftCivSpec" Value="zorai"/>
-        </STRUCT>
-        <STRUCT Name="N MpRI (Armor interior coating)">
+        <STRUCT Name="P MpAT (Armor clip)">
           <ATOM Name="Durability" Value="66"/>
-          <ATOM Name="Weight" Value="66"/>
-          <ATOM Name="DodgeModifier" Value="100"/>
+          <ATOM Name="Weight" Value="45"/>
+          <ATOM Name="DodgeModifier" Value="66"/>
           <ATOM Name="ParryModifier" Value="66"/>
-          <ATOM Name="ProtectionFactor" Value="45"/>
+          <ATOM Name="ProtectionFactor" Value="66"/>
           <ATOM Name="MaxSlashingProtection" Value="45"/>
           <ATOM Name="MaxBluntProtection" Value="66"/>
-          <ATOM Name="MaxPiercingProtection" Value="66"/>
+          <ATOM Name="MaxPiercingProtection" Value="100"/>
+          <ATOM Name="CraftCivSpec" Value="zorai"/>
+        </STRUCT>
+        <STRUCT Name="G MpGA (Trigger)">
+          <ATOM Name="Durability" Value="65"/>
+          <ATOM Name="Weight" Value="65"/>
+          <ATOM Name="SapLoad" Value="65"/>
+          <ATOM Name="Speed" Value="65"/>
+          <ATOM Name="DodgeModifier" Value="65"/>
+          <ATOM Name="ParryModifier" Value="65"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="85"/>
+          <ATOM Name="AdversaryParryModifier" Value="45"/>
           <ATOM Name="CraftCivSpec" Value="zorai"/>
         </STRUCT>
       </STRUCT>

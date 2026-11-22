@@ -1,9 +1,9 @@
 # The brick and phrase generator
 
 Every brick (`.sbrick`) and phrase (`.sphrase`) of the player actions comes from here: fight, magic, forage and
-harvest, the craft actions, powers and auras, and the rest (interface bricks, timed actions, the item power
-enchantment, training, characteristic upgrades, bonuses, titles), for every level up to 250. Change the tables and the
-balancing, never the sheets.
+harvest, the craft actions and the craft plans, powers and auras, and the rest (interface bricks, timed actions, the
+item power enchantment, training, characteristic upgrades, bonuses, titles), for every level up to 250. Change the
+tables and the balancing, never the sheets.
 
 Run it with Python 3 from this folder:
 
@@ -16,7 +16,9 @@ python generate.py --complete      # also require every translation id, the shee
                                    # starting roles, missions and items name
 ```
 
-Then build the data (the leveldesign processes of build_gamedata, which make the sheet ids and pack the sheets).
+Run `../generate_r2_sheets/generate_sitem.py` first: it writes the items, among them the items the craft plans make,
+and the plans domain checks that every plan's item exists. Then build the data (the leveldesign processes of
+build_gamedata, which make the sheet ids and pack the sheets).
 
 ## What decides what
 
@@ -41,7 +43,11 @@ check (`CPhraseManager::checkPhraseValidity`, replicated with its 16-bit sums) w
 exists elsewhere in the folders the sheet ids are made from. The domains add their own: icons against the interface
 atlases, the `$` tokens of the texts against the properties, levels and credits against what the texts state.
 
-## Not here yet
+## The craft plans and their items
 
-The craft plans (the role-E families) are written by `../generate_r2_sheets/generate_sitem.py` and the hand-kept
-copies beside them; they move here with the raw materials and the plan material needs.
+`plan_items.py` says which item each plan id makes and what kind of item an id is. The plans domain
+(`domains/plans.py`, `balancing/plans.py`) writes a plan brick for every plan of the translation, with the components
+its item takes, and `../generate_r2_sheets/generate_sitem.py` writes the items and names in each item the plan that
+makes it (`CraftPlan`); both read the same table, so a plan and its item point at each other. The plans domain also
+checks that the raw materials (`game_element/sitem/raw_material`, from mp_generator) serve every component a plan asks
+for, and that the craft task of the Barkdell rite gives what its boots plan asks for.

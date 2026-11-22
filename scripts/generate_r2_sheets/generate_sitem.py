@@ -1,5 +1,23 @@
 
-import os, zlib
+# Writes the items of game_element\sitem from the tables of this folder (run it with this folder as the working
+# directory): the items of the Ring palette (match_sitem_shape.tsv), the craft items no palette has
+# (sitem_craft_items.tsv), the nation leaders' equipment (sitem_leaders.tsv), their parents (sitem_parents.tsv) and the
+# plot items of the Ring (sitem_plot_items.tsv). The craft plans themselves are the sheet generator's
+# (../generate_core4_sheets, plans domain).
+# Usage: generate_sitem.py [leveldesign folder], R:\leveldesign by default (R: is the subst of the data root)
+
+import os, re, sys
+
+scriptDir = os.path.dirname(os.path.abspath(__file__))
+
+# The item each craft plan makes and the plan each item names, shared with the plans domain of the sheet generator: one
+# table for both keeps a plan and its item pointing at each other
+sys.path.insert(0, os.path.join(scriptDir, "..", "generate_core4_sheets"))
+import plan_items
+
+def fail(message):
+	print(message)
+	sys.exit(1)
 
 def loadTsv(filename):
 	table = []
@@ -8,44 +26,47 @@ def loadTsv(filename):
 			table += [ l.strip().split("\t") ]
 	return table;
 
-# brick family
-# BC brick craft
-# BCB tribe
-# BCBM melee
-# BCBME effect (item)
-# BCBMEA *
-# BCBR ranged
-# BCBREA *
-# BCCA armor
-# BCCAEA light
-# BCCAEB medium
-# BCCAEC heavy
-# BCCAED caster
-# BCCP ammo
-# BCCPEA *
-# BCCS shield
-# BCCSEA *
-# BCFJ jewelry
-# BCFJC craft
-# BCFJE effect (item)
-# BCFJEA *
+if len(sys.argv) > 2:
+	fail("Usage: generate_sitem.py [leveldesign folder]")
+leveldesignPath = "R:\\leveldesign"
+if len(sys.argv) == 2:
+	leveldesignPath = sys.argv[1]
+if not os.path.isdir(leveldesignPath):
+	fail("The leveldesign folder " + leveldesignPath + " does not exist: name the leveldesign folder to write into (or a copy of it for a test run)")
+sitemPath = os.path.join(leveldesignPath, "game_element", "sitem")
 
-# also generate its sphrase under sphrase\craft\melee_weapon etc, 
-# name add 'a' to the start, containing just sbrick and castable false
+# The labels of the item types (item_type.typ, the sheets write the label) and the code's names for them (the value)
+itemTypeValues = {}
+itemTypePath = os.path.join(scriptDir, "..", "..", "DFN", "game_elem", "_item", "item_type.typ")
+if not os.path.isfile(itemTypePath):
+	fail("The item types " + itemTypePath + " are missing: generate_sitem.py reads them from the leveldesign it is in")
+with open(itemTypePath, "r") as f:
+	for label, value in re.findall(r"<DEFINITION Label=\"([^\"]*)\" Value=\"([^\"]*)\"", f.read()):
+		itemTypeValues[label] = value
 
-# brick skill
-# SC skill craft (LearnRequiresOneOfSkills "SC 0")
-# SCJ jewelry
-# SCJR ring
-# SCJRAEM *
-# SCAMBEM skill craft armor medium boots
-# SCAMGEM skill craft armor medium gloves
-# SCAMPEM skill craft armor medium pants
-# SCAMSEM skill craft armor medium sleeves
-# SCAMVEM skill craft armor medium vest
-# SCAH heavy
-# SCAL light (and caster)
+# The icons the client has: the names of its interface atlases (the client reads a .png name as its .tga). Every icon
+# an item gets must be one of them, or the client shows its default icon
+atlasIcons = {}
+for atlas in [ "texture_interfaces_dxtc.txt", "texture_interfaces_v3.txt" ]:
+	atlasPath = os.path.join(scriptDir, "..", "..", "..", "pipeline", "install", "interfaces", atlas)
+	if not os.path.isfile(atlasPath):
+		fail("The interface atlas " + atlasPath + " is missing: the icons are checked against it")
+	with open(atlasPath, "r") as f:
+		for l in f:
+			if l.strip():
+				atlasIcons[l.split()[0].lower()] = True
 
+def checkIcon(icon, sheet):
+	if icon != "" and not icon.lower() in atlasIcons:
+		fail("The icon " + icon + " of " + sheet + " is not in the interface atlas (texture_interfaces_*.txt)")
+
+shapeList = {}
+for entry in loadTsv("shape_list.txt"):
+	shapeList[entry[0].lower()] = True
+
+def checkShape(shape, sheet):
+	if not (shape + ".shape").lower() in shapeList:
+		fail("The shape " + shape + " of " + sheet + " is not in shape_list.txt (run extract_shapes.py if it is new)")
 
 sitemParents = loadTsv("sitem_parents.tsv")
 sitemParsed = loadTsv("sitem_parsed.tsv")
@@ -61,125 +82,38 @@ for entry in sfxPsParsed:
 for entry in sfxShapeParsed:
 	sfxShape[entry[0]] = filter(None, entry[1:])
 
-skills = loadTsv("skills.tsv")
-skillTree = { "S": { "tags": [ "*" ], "entries": {} } }
-
-brickFamilies = loadTsv("brick_families.tsv")
-brickFamilyTree = { "B": { "tags": [ "*" ], "entries": {} } }
-
-def buildTagTree(tree, table):
-	for entry in table:
-		e = list(filter(None, entry))
-		name = e[0]
-		#print(name)
-		tags = e[1:]
-		nb = 0
-		branch = tree
-		if len(tags) > 0:
-			for c in name:
-				nb += 1
-				if nb >= len(name):
-					break
-				branch = branch[c]["entries"]
-			branch[name[-1]] = { "tags": tags, "entries": {} }
-	#print(tree)
-
-buildTagTree(skillTree, skills)
-buildTagTree(brickFamilyTree, brickFamilies)
-
-def findTreeEntry(tree, tags):
-	res = ""
-	branch = tree
-	while True:
-		ok = False
-		if len(branch) == 0:
-			break
-		for entry in branch:
-			#print(entry)
-			for tag in branch[entry]["tags"]:
-				if tag != "*" and tag in tags:
-					ok = True
-					break
-			if ok:
-				res += entry
-				branch = branch[entry]["entries"]
-				break
-		if not ok:
-			for entry in branch:
-				#print(entry)
-				#print(branch[entry]["tags"])
-				for tag in branch[entry]["tags"]:
-					if tag == "*":
-						ok = True
-						break
-				if ok:
-					res += entry
-					branch = branch[entry]["entries"]
-					break
-		if not ok:
-			break
-	return res
-
-def findSkill(tags):
-	t = tags[:]
-	if "ammo" in t and "ranged" in t:
-		t.remove("ranged")
-	if "magic" in t and "two-handed" in t:
-		t.remove("two-handed")
-	if "refugee" in t and not "heavy" in t and not "medium" in t and not "light" in t:
-		t += [ "light" ]
-	if "shield" in t:
-		t += [ "armor" ]
-	res = findTreeEntry(skillTree, t)
-	if len(res) == 7:
-		return res
-	print("Skill: " + res + ", tags: ")
-	print(tags)
-	return ""
-
-def findBrickFamily(tags):
-	t = tags[:]
-	if "ammo" in t and "ranged" in t:
-		t.remove("ranged")
-	if "caster" in t and "light" in t:
-		t.remove("light")
-	if "common" in t and "starter" in t:
-		t.remove("common")
-	res = findTreeEntry(brickFamilyTree, t)
-	if res == "BCBSEA":
-		res = "BCBREA" # Bug workaround, tribe shields are under tribe range crafting family. FIXME
-	return res
-
-sbrickIndex = loadTsv("sbrick_index.tsv")
-sbrickLookup = {}
-sbrickAlloc = {}
-
-for entry in sbrickIndex:
-	names = entry[2:]
-	for name in names:
-		sbrickLookup[name] = entry
-	family = entry[0]
-	index = int(entry[1], 10)
-	if not family in sbrickAlloc:
-		sbrickAlloc[family] = {}
-	sbrickAlloc[family][index] = True
-
-def allocFamilyIndex(family):
-	for i in range(1, 64):
-		if not i in sbrickAlloc[family]:
-			sbrickAlloc[family][i] = True
-			return i
-	return None
+itemPlans = plan_items.itemPlans()
 
 sitemTags = {}
-sitemPath = "R:\\leveldesign\\game_element\\sitem"
 
-parentTags = {}
+# the parents an item can have, in the order of sitem_parents.tsv, with the tags an item must have for each
+parentTagList = []
 
 for sitem in sitemParsed:
 	sitemTags[sitem[0]] = sitem[2:]
 for sitem in sitemParents:
 	sitemTags[sitem[0]] = sitem[2:]
+
+# The craft items no palette has (sitem_craft_items.tsv): each named by its translation id, with its shapes and tags
+translatedItems = {}
+for itemId, row in plan_items.readWords("item"):
+	translatedItems[itemId] = True
+craftItemNames = {}
+for craftItem in loadTsv("sitem_craft_items.tsv"):
+	if craftItem[0] == "" or craftItem[0].startswith(";"):
+		continue
+	if len(craftItem) < 4:
+		fail("A line of sitem_craft_items.tsv must be item, shape male, shape female, tags: " + str(craftItem))
+	name, shapeMale, shapeFemale = craftItem[0:3]
+	if not name in translatedItems:
+		fail("The craft item " + name + " is not an item of the translation (item_words_wk.txt)")
+	if name in sitemTags or name in craftItemNames:
+		fail("The craft item " + name + " is in sitem_craft_items.tsv twice, or also in sitem_parsed.tsv")
+	if (shapeMale == "-") != (shapeFemale == "-"):
+		fail("The craft item " + name + " has a shape for one gender only")
+	craftItemNames[name] = True
+	sitemTags[name] = craftItem[3:]
+	matchSitemShape += [ [ name, shapeMale, shapeFemale ] ]
 
 # The equipment of the nation leaders (sitem_leaders.tsv): unique items on their own shapes, each a variant of a
 # systematic item, which gives its tags (so its parent, type and slot) and, if the table says so, its craft plan
@@ -189,11 +123,9 @@ for leader in loadTsv("sitem_leaders.tsv"):
 		continue
 	name, base, craftPlan, shapeMale, shapeFemale = leader[0:5]
 	if not base in sitemTags:
-		print("Unknown base item " + base + " for the leader item " + name)
-		exit(1)
+		fail("Unknown base item " + base + " for the leader item " + name)
 	if craftPlan != "base" and craftPlan != "none":
-		print("Craft plan of the leader item " + name + " must be base or none, not " + craftPlan)
-		exit(1)
+		fail("Craft plan of the leader item " + name + " must be base or none, not " + craftPlan)
 	sitemTags[name] = sitemTags[base] + [ "leader" ]
 	if craftPlan == "base":
 		leaderCraftPlanBase[name] = base
@@ -207,16 +139,174 @@ for plotItem in loadTsv("sitem_plot_items.tsv"):
 	if plotItem[0] == "" or plotItem[0].startswith(";"):
 		continue
 	if len(plotItem) != 3:
-		print("A line of sitem_plot_items.tsv must be item, icon, icon background: " + str(plotItem))
-		exit(1)
+		fail("A line of sitem_plot_items.tsv must be item, icon, icon background: " + str(plotItem))
 	if not plotItem[0].startswith("r2_"):
-		print("The name of the plot item " + plotItem[0] + " must start with r2_")
-		exit(1)
+		fail("The name of the plot item " + plotItem[0] + " must start with r2_")
 	if plotItem[0] in plotItemNames:
-		print("The plot item " + plotItem[0] + " is in sitem_plot_items.tsv twice")
-		exit(1)
+		fail("The plot item " + plotItem[0] + " is in sitem_plot_items.tsv twice")
 	plotItemNames[plotItem[0]] = True
 	plotItems += [ plotItem ]
+
+def oneOf(tags, kinds, what):
+	"""the one tag of tags that is a key of kinds; an item with none or several is an error"""
+	found = [ tag for tag in tags if tag in kinds ]
+	if len(found) != 1:
+		fail("The tags " + " ".join(tags) + " must name one " + what + " of " + ", ".join(sorted(kinds.keys())))
+	return found[0]
+
+# Range weapons and their ammunition, by the weapon. The code has one skill per kind of shot (skills.h): a bowpistol
+# fires as a pistol and a bowrifle as a rifle, so their ammunition fits those too (an ammo fits the weapons of its skill)
+RANGE_KINDS = {
+	# kind: item type, ammo item type, skill, icon, anim set, category (item_category.typ, the weight class the item's
+	# tooltip names: the one-handed guns light, the rifles medium, the launchers heavy)
+	"pistol": ("Pistol", "Pistol ammo", "SFR1APM", "rw_pistol.png", "Gun", "light"),
+	"bowpistol": ("Bowpistol", "Bowpistol ammo", "SFR1APM", "rw_pistolarc.png", "Gun", "light"),
+	"autolauncher": ("Autolauch", "Autolaunch ammo", "SFR2AAM", "rw_autolaunch.png", "Gatling", "Heavy"),
+	"bowrifle": ("Bowrifle", "Bowrifle ammo", "SFR2ARM", "rw_bowgun.png", "Bow Rifle", "medium"),
+	"launcher": ("Launcher", "Launcher ammo", "SFR2ALM", "rw_launcher.png", "ShotGun", "Heavy"),
+	"rifle": ("Rifle", "Rifle ammo", "SFR2ARM", "rw_rifle.png", "ShotGun", "medium"),
+}
+# The launcher's shot bursts (RANGE_WEAPON_TYPE::Missile): the disc of the Ring creatures' bomb attacks
+# (generate_aiaction.py), with the edge factor of the bomb spells (generate_core4_sheets/balancing/magic.py)
+LAUNCHER_RADIUS = 4 # TODO: Calibrate
+LAUNCHER_EDGE_FACTOR = 0.5 # TODO: Calibrate
+# Range weapons ask for a characteristic as the melee weapons do (their original parents, Strength): aiming is balance
+RANGE_CHARAC = "WellBalanced"
+# A crafted stack of ammunition holds two crafts of the ammunition plans (50 rounds each)
+AMMO_STACK = 100 # TODO: Calibrate
+# Jewels: item type, slot, icon
+JEWEL_KINDS = {
+	"anklet": ("Anklet", "Ankle", "pa_anklet.png"),
+	"bracelet": ("Bracelet", "Wrist", "pa_bracelet.png"),
+	"diadem": ("Diadem", "Headdress", "pa_diadem.png"),
+	"earring": ("Earing", "Ears", "pa_earring.png"),
+	"pendant": ("Pendant", "Necklace", "pa_pendant.png"),
+	"ring": ("Ring", "Fingers", "pa_ring.png"),
+}
+# Crafting tools: item type (and crafting tool type), icon, anim set. The icons show the tools' shapes (to_ammo is
+# the pair of chisels of the melee weapon tool, to_pestle the ammunition tool's mortar, to_melee the tool maker's
+# mallet)
+TOOL_KINDS = {
+	"ammotool": ("AmmoTool", "to_pestle.png", "Mix"),
+	"armortool": ("ArmorTool", "to_armor.png", "Make Clothes"),
+	"jewelrytool": ("JewelryTool", "to_jewels.png", "Cut"),
+	"meleeweapontool": ("MeleeWeaponTool", "to_ammo.png", "Sharpen"),
+	"rangeweapontool": ("RangeWeaponTool", "to_range.png", "Hollow Out"),
+	"toolmaker": ("ToolMaker", "to_melee.png", "Make Tools"), # the tool plans need it in hand
+}
+# The construction pieces of the kami and karavan, by their kind: the icons of the building materials. The kami's
+# living pieces take the karavan material that does their part (bark the wall, a trunk the column, fibers the filling)
+CONSTRUCTION_ICONS = [
+	("justice", "mp_batiment_colonne_justice.png"), # before column
+	("maduk", "mp_batiment_noyau_maduk.png"),
+	("brick", "mp_batiment_brique.png"), ("bark", "mp_batiment_brique.png"),
+	("column", "mp_batiment_colonne.png"), ("trunk", "mp_batiment_colonne.png"),
+	("ornament", "mp_batiment_ornement.png"), ("bud", "mp_batiment_ornement.png"),
+	("cover", "mp_batiment_revetement.png"), ("moss", "mp_batiment_revetement.png"),
+	("pedestal", "mp_batiment_socle.png"), ("root", "mp_batiment_socle.png"),
+	("statue", "mp_batiment_statue.png"), ("symbol", "mp_batiment_statue.png"),
+	("conglomerate", "mp_batiment_comble.png"), ("fibers", "mp_batiment_comble.png"),
+]
+
+def itemFamily(tags):
+	"""item_family.typ"""
+	if "ammo" in tags:
+		return "ammo"
+	elif "shield" in tags:
+		return "shield"
+	elif "ranged" in tags:
+		return "range weapon"
+	elif "melee" in tags:
+		return "melee weapon"
+	elif "armor" in tags:
+		return "armor"
+	elif "jewel" in tags:
+		return "jewelry"
+	elif "crafting" in tags and "tool" in tags:
+		return "crafting tool"
+	elif "harvest" in tags and "tool" in tags:
+		return "harvest tool"
+	elif "mission" in tags:
+		return "mission item"
+	return "undefined"
+
+def itemTypeLabel(tags):
+	"""the label of item_type.typ for an item or parent of these tags, undefined when they name no type"""
+	itemType = "undefined"
+	if "mission" in tags:
+		itemType = "undefined" # the code crafts an undefined item type as a mission item (faber_action.cpp)
+	elif "jewel" in tags:
+		itemType = JEWEL_KINDS[oneOf(tags, JEWEL_KINDS, "jewel")][0]
+	elif "tool" in tags:
+		if "harvest" in tags:
+			itemType = "Shears" # the forage pick
+		else:
+			itemType = TOOL_KINDS[oneOf(tags, TOOL_KINDS, "crafting tool")][0]
+	elif "ammo" in tags:
+		itemType = RANGE_KINDS[oneOf(tags, RANGE_KINDS, "range weapon")][1]
+	elif "ranged" in tags:
+		itemType = RANGE_KINDS[oneOf(tags, RANGE_KINDS, "range weapon")][0]
+	elif "magic" in tags:
+		if "amplifier" in tags:
+			if "gloves" in tags:
+				itemType = "Magician Staff"
+	elif "melee" in tags:
+		if "one-handed" in tags:
+			if "dagger" in tags:
+				itemType = "Dagger"
+			elif "sword" in tags:
+				itemType = "Sword"
+			elif "mace" in tags:
+				itemType = "Mace"
+			elif "axe" in tags:
+				itemType = "Axe"
+			elif "spear" in tags:
+				itemType = "Spear"
+			elif "staff" in tags:
+				itemType = "Staff"
+		if "two-handed" in tags:
+			if "sword" in tags:
+				itemType = "Two Hand Sword"
+			elif "axe" in tags:
+				itemType = "Two Hand Axe"
+			elif "pike" in tags:
+				itemType = "Pike"
+			elif "mace" in tags:
+				itemType = "Two Hand Mace"
+	elif "shield" in tags:
+		if "buckler" in tags:
+			itemType = "Buckler"
+		elif "large" in tags:
+			itemType = "Shield"
+	elif "armor" in tags:
+		if "refugee" in tags:
+			itemType = "Light "
+		elif "light" in tags:
+			itemType = "Light "
+		elif "medium" in tags:
+			itemType = "Medium "
+		elif "heavy" in tags:
+			itemType = "Heavy "
+		if "boots" in tags:
+			itemType += "boots"
+		elif "gloves" in tags:
+			itemType += "gloves"
+		elif "pants" in tags:
+			itemType += "pants"
+		elif "sleeves" in tags:
+			itemType += "Sleeves"
+		elif "vest" in tags:
+			itemType += "vest"
+		elif "helmet" in tags and "heavy" in tags:
+			itemType += "helmet"
+		else:
+			itemType = "undefined"
+	if not itemType in itemTypeValues:
+		fail("The item type " + itemType + " of the tags " + " ".join(tags) + " is not in item_type.typ")
+	return itemType
+
+def slotAtom(slot):
+	return "<ATOM Name=\"" + slot.lower().replace(" ", "_") + "\" Value=\"" + slot + "\"/>"
 
 def generateParents():
 	for sitem in sitemParents:
@@ -243,20 +333,10 @@ def generateParents():
 		if "light" in strippedTags and "refugee" in strippedTags:
 			strippedTags.remove("light")
 		if "shared" in tags:
-			parentTags[name] = strippedTags
+			parentTagList.append((name, strippedTags))
 		displayName = " ".join(strippedTags)
 		
-		family = "undefined" # item_family.typ
-		if "ammo" in tags:
-			family = "ammo"
-		elif "shield" in tags:
-			family = "shield"
-		elif "ranged" in tags:
-			family = "range weapon"
-		elif "melee" in tags:
-			family = "melee weapon"
-		elif "armor" in tags:
-			family = "armor"
+		family = itemFamily(tags) # item_family.typ
 		
 		origin = "common" # item_origine.typ
 		if "refugee" in tags:
@@ -303,111 +383,90 @@ def generateParents():
 			iconOverlay = "pw_medium.png"
 		elif "heavy" in tags:
 			iconOverlay = "pw_heavy.png"
+		elif "ammo" in tags:
+			iconOverlay = "am_logo.png"
 		
 		neverHide = False
 		icon = ""
 		animSet = ""
-		itemType = "undefined" # item_type.typ
-		leftHandSlot = "Undefined" # item_slot_type.typ
-		rightHandSlot = "Undefined" # item_slot_type.typ
+		itemType = itemTypeLabel(tags) # item_type.typ
+		slots = [] # item_slot_type.typ
+		skill = ""
 		if "magic" in tags:
 			if "amplifier" in tags:
 				if "gloves" in tags:
-					itemType = "Magician Staff"
 					icon = "mg_glove.png"
 					neverHide = True
-					rightHandSlot = "Two Hands"
+					slots = [ "Two Hands" ]
+		elif "ammo" in tags:
+			kind = RANGE_KINDS[oneOf(tags, RANGE_KINDS, "range weapon")]
+			skill = kind[2]
+			icon = kind[3]
+			slots = [ "Ammo" ]
 		elif "melee" in tags:
 			if "one-handed" in tags:
 				animSet = "1H"
-				rightHandSlot = "Right Hand"
+				slots = [ "Right Hand" ]
 				if "dagger" in tags:
-					itemType = "Dagger"
 					animSet = "Dagger"
 					icon = "mw_dagger.png"
-					leftHandSlot = "Left Hand"
+					slots += [ "Left Hand" ]
 				elif "sword" in tags:
-					itemType = "Sword"
 					animSet = "1H Sword"
 					icon = "mw_sword.png"
 				elif "mace" in tags:
-					itemType = "Mace"
 					icon = "mw_mace.png"
 				elif "axe" in tags:
-					itemType = "Axe"
 					icon = "mw_axe.png"
 				elif "spear" in tags:
-					itemType = "Spear"
 					icon = "mw_lance.png"
 				elif "staff" in tags:
-					itemType = "Staff"
 					icon = "mw_staff.png"
 			if "two-handed" in tags:
 				animSet = "2H"
-				rightHandSlot = "Two Hands"
+				slots = [ "Two Hands" ]
 				if "sword" in tags:
-					itemType = "Two Hand Sword"
 					animSet = "2H Sword"
 					icon = "mw_2h_sword.png"
 				elif "axe" in tags:
-					itemType = "Two Hand Axe"
 					icon = "mw_2h_axe.png"
 				elif "pike" in tags:
-					itemType = "Pike"
 					animSet = "2HLance"
 					icon = "mw_2h_lance.png"
 				elif "mace" in tags:
-					itemType = "Two Hand Mace"
 					icon = "mw_2h_mace.png"
 		elif "ranged" in tags:
-			if "autolauncher" in tags:
-				itemType = "Autolauch"
-			elif "bowrifle" in tags:
-				itemType = "Bowrifle"
-			elif "launcher" in tags:
-				itemType = "Launcher"
-			elif "pistol" in tags:
-				itemType = "Pistol"
-			elif "bowpistol" in tags:
-				itemType = "Bowpistol"
-			elif "rifle" in tags:
-				itemType = "Rifle"
-			elif "harpoon" in tags:
-				itemType = "Harpoon"
-			if "ammo" in tags and itemType != "undefined":
-				itemType += " ammo"
+			kind = RANGE_KINDS[oneOf(tags, RANGE_KINDS, "range weapon")]
+			skill = kind[2]
+			icon = kind[3]
+			animSet = kind[4]
+			weaponCategory = kind[5]
+			# a one-handed range weapon leaves the left hand to its ammunition only
+			if "one-handed" in tags:
+				slots = [ "Right hand exclusive Hand" ]
+			elif "two-handed" in tags:
+				slots = [ "Two Hands" ]
 		elif "shield" in tags:
-			leftHandSlot = "Left Hand"
+			slots = [ "Left Hand" ]
 			animSet = "Shield"
 			if "buckler" in tags:
 				icon = "sh_buckler.png"
-				itemType = "Buckler"
 			elif "large" in tags:
 				icon = "sh_large_shield.png"
-				itemType = "Shield"
-		elif "armor" in tags:
-			if "refugee" in tags:
-				itemType = "Light "
-			elif "light" in tags:
-				itemType = "Light "
-			elif "medium" in tags:
-				itemType = "Medium "
-			elif "heavy" in tags:
-				itemType = "Heavy "
-			if "boots" in tags:
-				itemType += "boots"
-			elif "gloves" in tags:
-				itemType += "gloves"
-			elif "pants" in tags:
-				itemType += "pants"
-			elif "sleeves" in tags:
-				itemType += "Sleeves"
-			elif "vest" in tags:
-				itemType += "vest"
-			elif "helmet" in tags and "heavy" in tags:
-				itemType += "helmet"
+		elif "jewel" in tags:
+			kind = JEWEL_KINDS[oneOf(tags, JEWEL_KINDS, "jewel")]
+			slots = [ kind[1] ]
+			icon = kind[2]
+		elif "tool" in tags:
+			slots = [ "Right hand exclusive Hand" ]
+			if "harvest" in tags:
+				skill = "SH" # the forage skill, as the refugee forage tool
+				icon = "to_forage.png"
+				animSet = "Pickaxe"
 			else:
-				itemType = "undefined"
+				kind = TOOL_KINDS[oneOf(tags, TOOL_KINDS, "crafting tool")]
+				icon = kind[1]
+				animSet = kind[2]
 		
 		damageType = "undefined" # item_damage_type.typ
 		if "piercing" in tags:
@@ -416,10 +475,6 @@ def generateParents():
 			damageType = "Slashing"
 		elif "blunt" in tags or "magic" in tags:
 			damageType = "Blunt"
-		
-		# craftingTool = "None" # item_crafting_tool_type.typ
-		# if "armor" in tags:
-		# 	craftingTool = "ArmorTool"
 		
 		folder = "_"
 		if "ammo" in tags:
@@ -432,40 +487,75 @@ def generateParents():
 			folder = "armor"
 		elif "shield" in tags:
 			folder = "shield"
+		elif "jewel" in tags:
+			folder = "jewel"
+		elif family == "crafting tool":
+			folder = "crafting_tool"
+		elif family == "harvest tool":
+			folder = "harvesting_tool"
+		elif "mission" in tags:
+			folder = "mission_item"
 		
+		# the melee parents are the original sheets, which this script does not write
 		if "shared" in tags and not "melee" in tags:
 			malus = 0
 			bulk = 4 # TODO: Calibrate
 			equipTicks = 10 # TODO: Calibrate
-			if "one-handed" in tags:
-				malus += 0.01 # TODO: Calibrate
-				bulk += 2 # TODO: Calibrate
-				equipTicks += 10 # TODO: Calibrate
-			if "two-handed" in tags:
-				malus += 0.02 # TODO: Calibrate
-				bulk += 4 # TODO: Calibrate
-				equipTicks += 20 # TODO: Calibrate
-			if "medium" in tags:
-				malus += 0.01 # TODO: Calibrate
-				bulk += 2 # TODO: Calibrate
-				equipTicks += 10 # TODO: Calibrate
-			if "heavy" in tags:
-				malus += 0.02 # TODO: Calibrate
-				bulk += 4 # TODO: Calibrate
-				equipTicks += 20 # TODO: Calibrate
-			if "buckler" in tags:
-				malus += 0.01 # TODO: Calibrate
-				bulk += 2 # TODO: Calibrate
-				equipTicks += 10 # TODO: Calibrate
-			if "large" in tags:
-				malus += 0.02 # TODO: Calibrate
-				bulk += 4 # TODO: Calibrate
-				equipTicks += 20 # TODO: Calibrate
-			if "magic" in tags:
-				malus = 0
-				bulk += 2 # TODO: Calibrate
-				equipTicks += 10 # TODO: Calibrate
+			stackable = 1
+			price = 0
+			saleable = True
+			if "ammo" in tags:
+				# a round: a craft makes a stack of them, so a stack of a craft weighs about as much as a weapon
+				bulk = 0.05 # TODO: Calibrate
+				if "two-handed" in tags:
+					bulk = 0.1 # TODO: Calibrate
+				stackable = AMMO_STACK
+			elif "jewel" in tags:
+				bulk = 1 # TODO: Calibrate
+			elif "tool" in tags:
+				# as the refugee tools of the original data (itrtar, itrtfo)
+				bulk = 10
+				equipTicks = 20
+				price = 1000
+			elif "mission" in tags:
+				# pieces of a construction, carried by the stack to the mission and worth nothing to a merchant
+				bulk = 2 # TODO: Calibrate
+				equipTicks = None
+				stackable = 99
+				saleable = False
+			else:
+				if "one-handed" in tags:
+					malus += 0.01 # TODO: Calibrate
+					bulk += 2 # TODO: Calibrate
+					equipTicks += 10 # TODO: Calibrate
+				if "two-handed" in tags:
+					malus += 0.02 # TODO: Calibrate
+					bulk += 4 # TODO: Calibrate
+					equipTicks += 20 # TODO: Calibrate
+				if "medium" in tags:
+					malus += 0.01 # TODO: Calibrate
+					bulk += 2 # TODO: Calibrate
+					equipTicks += 10 # TODO: Calibrate
+				if "heavy" in tags:
+					malus += 0.02 # TODO: Calibrate
+					bulk += 4 # TODO: Calibrate
+					equipTicks += 20 # TODO: Calibrate
+				if "buckler" in tags:
+					malus += 0.01 # TODO: Calibrate
+					bulk += 2 # TODO: Calibrate
+					equipTicks += 10 # TODO: Calibrate
+				if "large" in tags:
+					malus += 0.02 # TODO: Calibrate
+					bulk += 4 # TODO: Calibrate
+					equipTicks += 20 # TODO: Calibrate
+				if "magic" in tags:
+					malus = 0
+					bulk += 2 # TODO: Calibrate
+					equipTicks += 10 # TODO: Calibrate
 			comments = "TODO: WearEquipmentMalus, Bulk, Time to Equip In Ticks"
+
+			checkIcon(icon, name)
+			checkIcon(iconOverlay, name)
 			
 			dir = sitemPath + "\\" + folder + "\\_parent"
 			if not os.path.isdir(dir):
@@ -487,25 +577,51 @@ def generateParents():
 					f.write("      <ATOM Name=\"Drop or Sell\" Value=\"false\"/>\n")
 				if itemType != "undefined":
 					f.write("      <ATOM Name=\"ItemType\" Value=\"" + itemType + "\"/>\n")
-				if "armor" not in tags or malus != 0:
+				if stackable != 1:
+					f.write("      <ATOM Name=\"stackable\" Value=\"" + str(stackable) + "\"/>\n")
+				if len(slots) > 0 or malus != 0:
 					f.write("      <STRUCT Name=\"EquipmentInfo\">\n")
-					if "armor" not in tags:
+					if len(slots) > 0:
 						f.write("        <ARRAY Name=\"EquipmentSlots\">\n")
-						if rightHandSlot != "Undefined":
-							f.write("          <ATOM Name=\"" + rightHandSlot.lower().replace(" ", "_") + "\" Value=\"" + rightHandSlot + "\"/>\n")
-						if leftHandSlot != "Undefined":
-							f.write("          <ATOM Name=\"" + leftHandSlot.lower().replace(" ", "_") + "\" Value=\"" + leftHandSlot + "\"/>\n")
+						for slot in slots:
+							f.write("          " + slotAtom(slot) + "\n")
 						f.write("        </ARRAY>\n")
 					if malus != 0:
 						f.write("        <ATOM Name=\"WearEquipmentMalus\" Value=\"" + str(malus) + "\"/>\n")
 					f.write("      </STRUCT>\n")
 				f.write("      <ATOM Name=\"Bulk\" Value=\"" + str(bulk) + "\"/>\n")
-				f.write("      <ATOM Name=\"Time to Equip In Ticks\" Value=\"" + str(equipTicks) + "\"/>\n")
+				if not saleable:
+					f.write("      <ATOM Name=\"Saleable\" Value=\"false\"/>\n")
+				if price != 0:
+					f.write("      <ATOM Name=\"Price\" Value=\"" + str(price) + "\"/>\n")
+				if equipTicks != None:
+					f.write("      <ATOM Name=\"Time to Equip In Ticks\" Value=\"" + str(equipTicks) + "\"/>\n")
+				if family == "range weapon":
+					# as the original melee parents ask for their characteristic
+					f.write("      <ATOM Name=\"RequiredCharac\" Value=\"" + RANGE_CHARAC + "\"/>\n")
+					f.write("      <ATOM Name=\"RequiredCharacQualityFactor\" Value=\"1\"/>\n")
+					f.write("      <ATOM Name=\"RequiredCharacQualityOffset\" Value=\"-10\"/>\n")
 				f.write("    </STRUCT>\n")
 				if "melee" in tags and damageType != "undefined":
 					f.write("    <STRUCT Name=\"melee weapon\">\n")
 					if damageType != "undefined":
 						f.write("      <ATOM Name=\"damage type\" Value=\"" + damageType + "\">\n")
+					f.write("    </STRUCT>\n")
+				if family == "range weapon":
+					f.write("    <STRUCT Name=\"range weapon\">\n")
+					f.write("      <ATOM Name=\"category\" Value=\"" + weaponCategory + "\"/>\n")
+					f.write("      <ATOM Name=\"skill\" Value=\"" + skill + "\"/>\n")
+					if "launcher" in tags:
+						f.write("      <ATOM Name=\"RangeWeaponType\" Value=\"Missile\"/>\n")
+						f.write("      <ATOM Name=\"MissileRadius\" Value=\"" + str(LAUNCHER_RADIUS) + "\"/>\n")
+						f.write("      <ATOM Name=\"MissileMinFactor\" Value=\"" + str(LAUNCHER_EDGE_FACTOR) + "\"/>\n")
+					else:
+						f.write("      <ATOM Name=\"RangeWeaponType\" Value=\"Generic\"/>\n")
+					f.write("    </STRUCT>\n")
+				if family == "ammo":
+					# the ammunition fits the weapons of its skill (CCharacter::checkIfAmmoCompatibleWithWeapon)
+					f.write("    <STRUCT Name=\"ammo\">\n")
+					f.write("      <ATOM Name=\"weapon type\" Value=\"" + skill + "\"/>\n")
 					f.write("    </STRUCT>\n")
 				if "armor" in tags and armorCategory != "unknown":
 					f.write("    <STRUCT Name=\"armor\">\n")
@@ -517,6 +633,14 @@ def generateParents():
 						f.write("      <ATOM Name=\"Category\" Value=\"large shield\"/>\n")
 					else:
 						f.write("      <ATOM Name=\"Category\" Value=\"small shield\"/>\n")
+					f.write("    </STRUCT>\n")
+				if family == "crafting tool":
+					f.write("    <STRUCT Name=\"crafting tool\">\n")
+					f.write("      <ATOM Name=\"type\" Value=\"" + itemType + "\"/>\n")
+					f.write("    </STRUCT>\n")
+				if family == "harvest tool":
+					f.write("    <STRUCT Name=\"harvest tool\">\n")
+					f.write("      <ATOM Name=\"skill\" Value=\"" + skill + "\"/>\n")
 					f.write("    </STRUCT>\n")
 				f.write("    <STRUCT Name=\"3d\">\n")
 				if icon != "":
@@ -547,16 +671,22 @@ def generateParents():
 		# 		f.flush()
 
 def findSitemParent(tags):
-	for parent in parentTags:
-		pt = parentTags[parent]
-		all = len(pt) > 0
+	"""the parent whose tags the item has, the one with the most of them (an ammo is also of its weapon's kind); of two
+	as specific, the first of sitem_parents.tsv"""
+	best = None
+	bestCount = 0
+	for parent, pt in parentTagList:
+		if len(pt) <= bestCount:
+			continue
+		all = True
 		for tag in pt:
 			if not tag in tags:
 				all = False
 				break
 		if all:
-			return parent
-	return None
+			best = parent
+			bestCount = len(pt)
+	return best
 
 def generateSitems():
 	for match in matchSitemShape:
@@ -600,6 +730,15 @@ def generateSitems():
 			strippedTags.remove("colored")
 		displayName = " ".join(strippedTags)
 		
+		if "armor" in tags and "refugee" in tags and "color" in tags:
+			# the refugee colours are the original sheets of armor\refugee\default, which name their craft plans
+			print("Not written: " + name + ", one of the original refugee colour sheets")
+			continue
+
+		family = itemFamily(tags) # item_family.typ
+		if family == "undefined":
+			fail("No family for the item " + name + ", tags: " + str(tags))
+
 		origin = "common" # item_origine.typ
 		iconBackground = ""
 		if "starter" in tags:
@@ -642,40 +781,32 @@ def generateSitems():
 		armorSlot = "Undefined" # item_slot_type.typ
 		icon = ""
 		if "armor" in tags:
-			if "refugee" in tags:
-				itemType = "Light "
-			elif "light" in tags:
-				itemType = "Light "
-			elif "medium" in tags:
-				itemType = "Medium "
-			elif "heavy" in tags:
-				itemType = "Heavy "
+			itemType = itemTypeLabel(tags)
 			if "boots" in tags:
-				itemType += "boots"
 				armorSlot = "Feet"
 				icon = "ar_botte.png"
 			elif "gloves" in tags:
-				itemType += "gloves"
 				armorSlot = "Hands"
 				icon = "ar_hand.png"
 			elif "pants" in tags:
-				itemType += "pants"
 				armorSlot = "Legs"
 				icon = "ar_pantabotte.png"
 			elif "sleeves" in tags:
-				itemType += "Sleeves"
 				armorSlot = "Arms"
 				icon = "ar_armpad.png"
 			elif "vest" in tags:
-				itemType += "vest"
 				armorSlot = "Chest"
 				icon = "ar_gilet.png"
 			elif "helmet" in tags and "heavy" in tags:
-				itemType += "helmet"
 				armorSlot = "Head"
 				icon = "ar_helmet.png"
-			else:
-				itemType = "undefined"
+		elif "mission" in tags:
+			for kind, kindIcon in CONSTRUCTION_ICONS:
+				if kind in tags:
+					icon = kindIcon
+					break
+			if icon == "":
+				fail("No icon for the construction piece " + name + ", tags: " + str(tags))
 		
 		color = ""
 		if "red" in tags:
@@ -694,6 +825,10 @@ def generateSitems():
 			color = "Violet"
 		elif "white" in tags:
 			color = "White"
+
+		damageType = "" # item_damage_type.typ, of an ammunition
+		if family == "ammo":
+			damageType = { "blunt": "Blunt", "piercing": "Piercing", "slashing": "Slashing" }[oneOf(tags, { "blunt": 1, "piercing": 1, "slashing": 1 }, "damage type")]
 		
 		subfolder = origin
 		###print tags
@@ -722,6 +857,14 @@ def generateSitems():
 				folder += "\\heavy_armor"
 		elif "shield" in tags:
 			folder = "shield\\" + subfolder
+		elif "jewel" in tags:
+			folder = "jewel\\" + subfolder
+		elif family == "crafting tool":
+			folder = "crafting_tool\\" + subfolder
+		elif family == "harvest tool":
+			folder = "harvesting_tool\\" + subfolder
+		elif "mission" in tags:
+			folder = "mission_item\\" + subfolder
 		if "leader" in tags:
 			folder = folder.split("\\")[0] + "\\" + subfolder + "\\leader"
 		
@@ -735,50 +878,38 @@ def generateSitems():
 		# print(shapeFemale)
 		# print(tags)
 		
-		if not "armor" in tags and not "shield" in tags and not "melee" in tags:
-			continue
-		
-		if "armor" in tags and "caster" in tags and not "pants" in tags:
-			continue # Only include caster pants
-		if "armor" in tags and "refugee" in tags and "color" in tags:
-			continue # No need to generate these for now
-		
-		brickFamily = findBrickFamily(tags)
-		
+		# The craft plan that makes the item (plan_items.py), the same table the plans domain writes the plans from. A
+		# leader item takes the plan of its base item, or none
+		craftPlan = None
 		if "leader" in tags:
-			# a leader item gets no brick of its own: it uses the craft plan of its base item, or none
-			sbrickName = None
 			if name in leaderCraftPlanBase:
 				base = leaderCraftPlanBase[name]
-				if not base in sbrickLookup:
-					print("No craft plan for the base item " + base + " of the leader item " + name)
-					exit(1)
-				baseEntry = sbrickLookup[base]
-				sbrickName = baseEntry[0].lower() + str(int(baseEntry[1], 10)).zfill(2) + "_" + base[2:]
-		else:
-			sbrickEntry = None
-			if name in sbrickLookup:
-				sbrickEntry = sbrickLookup[name]
-			else:
-				print("New sbrick entry: " + name + ", Family: " + brickFamily)
-			if sbrickEntry and sbrickEntry[0] != brickFamily:
-				print("Brick family changed: " + name + ", New: " + brickFamily + ", Old: " + sbrickEntry[0])
-				sbrickEntry = None
-			sbrickIndex = None
-			if sbrickEntry:
-				sbrickIndex = int(sbrickEntry[1], 10)
-			else:
-				sbrickIndex = allocFamilyIndex(brickFamily)
-				if sbrickIndex:
-					sbrickEntry = [ brickFamily, str(sbrickIndex) ]
-					print(sbrickEntry)
-			sbrickName = brickFamily.lower() + str(sbrickIndex).zfill(2) + "_" + name[2:];
+				if not base in itemPlans:
+					fail("No craft plan for the base item " + base + " of the leader item " + name)
+				craftPlan = itemPlans[base]
+		elif name in itemPlans:
+			craftPlan = itemPlans[name]
+			# the plan's craft action is the one of the crafted item's type (faber_action.cpp), so the type the item
+			# has must be the one its plan is made for
+			kind = plan_items.itemType(name)
+			label = itemTypeLabel(tags)
+			if itemTypeValues[label] != kind:
+				fail("The item " + name + " is a " + label + " (" + itemTypeValues[label] + ") by its tags, its plan " + craftPlan + " makes a " + str(kind))
 		
 		parent = findSitemParent(tags)
 		if not parent:
-			print("No parent for sitem: " + name + ", tags: " + str(tags))
-			print(parentTags)
-			exit(1)
+			fail("No parent for sitem: " + name + ", tags: " + str(tags))
+
+		# An item a character shows has its shapes; jewels and ammunition sit in hidden slots and the construction
+		# pieces have none, so they have no shape
+		if shapeMale == "-":
+			if family != "jewelry" and family != "ammo" and family != "mission item":
+				fail("The item " + name + " has no shape, but a character shows a " + family)
+		else:
+			checkShape(shapeMale, name)
+			checkShape(shapeFemale, name)
+		checkIcon(icon, name)
+		checkIcon(iconBackground, name)
 		
 		fxTrail = None
 		if "kami" in tags and shapeMale + "_trail_kam" in sfxShape:
@@ -791,8 +922,15 @@ def generateSitems():
 			fxTrail = shapeMale + "_trail_gen"
 
 		fxAdvantage = None
-		if "advantage" in tags and shapeMale in sfxPs:
+		if "advantage" in tags:
+			if not shapeMale in sfxPs:
+				fail("No advantage fx " + shapeMale + ".ps for the item " + name)
 			fxAdvantage = shapeMale
+		if "faction" in tags:
+			# the kami and karavan faction items glow with their faction's light
+			fxAdvantage = "outpost_" + origin + "_type"
+			if not fxAdvantage in sfxPs:
+				fail("No faction fx " + fxAdvantage + ".ps for the item " + name)
 		fxStatic = None
 		if "leader" in tags and shapeMale in sfxPs:
 			# the glow of a leader weapon, always on, and as its advantage fx, as in the original leader sheets
@@ -818,16 +956,24 @@ def generateSitems():
 				f.write("          <ATOM Value=\"" + armorSlot + "\"/>\n")
 				f.write("        </ARRAY>\n")
 				f.write("      </STRUCT>\n")
-			if sbrickName:
-				f.write("      <ATOM Name=\"CraftPlan\" Value=\"" + sbrickName + ".sbrick\"/>\n") # TODO: extract sbrick ids
+			if craftPlan:
+				f.write("      <ATOM Name=\"CraftPlan\" Value=\"" + craftPlan + ".sbrick\"/>\n")
 			if "leader" in tags:
 				# unique items: no trade
 				f.write("      <ATOM Name=\"Drop or Sell\" Value=\"false\"/>\n")
 				f.write("      <ATOM Name=\"Saleable\" Value=\"false\"/>\n")
+			elif origin == "refugee" and not "refugee" in sitemTags[parent]:
+				# the refugee items stay with their owner, as the refugee parent and the original refugee sheets have it
+				f.write("      <ATOM Name=\"Drop or Sell\" Value=\"false\"/>\n")
 			f.write("    </STRUCT>\n")
+			if family == "ammo":
+				f.write("    <STRUCT Name=\"ammo\">\n")
+				f.write("      <ATOM Name=\"damage type\" Value=\"" + damageType + "\"/>\n")
+				f.write("    </STRUCT>\n")
 			f.write("    <STRUCT Name=\"3d\">\n")
-			f.write("      <ATOM Name=\"shape\" Value=\"" + shapeMale + ".shape\"/>\n")
-			f.write("      <ATOM Name=\"shape_female\" Value=\"" + shapeFemale + ".shape\"/>\n")
+			if shapeMale != "-":
+				f.write("      <ATOM Name=\"shape\" Value=\"" + shapeMale + ".shape\"/>\n")
+				f.write("      <ATOM Name=\"shape_female\" Value=\"" + shapeFemale + ".shape\"/>\n")
 			if mapVariant != "Default":
 				f.write("      <ATOM Name=\"map_variant\" Value=\"" + mapVariant + "\"/>\n")
 			if icon != "":
@@ -836,6 +982,9 @@ def generateSitems():
 				f.write("      <ATOM Name=\"icon background\" Value=\"" + iconBackground + "\"/>\n")
 			if color != "":
 				f.write("      <ATOM Name=\"color\" Value=\"" + color + "\"/>\n")
+			if "preorder" in tags:
+				# the Armlet of Atys is worn on the arm: it shows out of combat too
+				f.write("      <ATOM Name=\"never hide when equiped\" Value=\"true\"/>\n")
 			if fxTrail or fxAdvantage:
 				f.write("      <STRUCT Name=\"fx\">\n")
 				if fxTrail:
@@ -853,204 +1002,6 @@ def generateSitems():
 				if fxAdvantage:
 					f.write("      <ATOM Name=\"has_fx\" Value=\"true\"/>")
 			f.write("    </STRUCT>\n")
-			f.write("  </STRUCT>\n")
-			f.write("</FORM>\n")
-			f.flush()
-		#print(brickFamily)
-		
-		if "leader" in tags:
-			continue # no brick or phrase of its own
-
-		# Generate the sbrick
-		sbrickRoot = "R:\\leveldesign\\game_element\\sbrick\\craft\\effect"
-		sbrickFolder = sbrickRoot + "\\" + folder
-		sbrickFile = sbrickFolder + "\\" + sbrickName + ".sbrick"
-		print(sbrickFile)
-		
-		skill = findSkill(tags)
-		# if "magic" in tags:
-		# 	print("TODO: Double check magic")
-		# 	print(skill)
-		# 	print(tags)
-		
-		sbrickIcon = icon # ar_botte
-		sbrickIconBack = "bk_generic_brick.png" # bk_zorai_brick
-		if "fyros" in tags:
-			sbrickIconBack = "bk_fyros_brick.png"
-		elif "matis" in tags:
-			sbrickIconBack = "bk_matis_brick.png"
-		elif "tryker" in tags:
-			sbrickIconBack = "bk_tryker_brick.png"
-		elif "zorai" in tags:
-			sbrickIconBack = "bk_zorai_brick.png"
-		
-		minMat = 2
-		randMat = 4
-		if "one-handed" in tags:
-			minMat += 1
-			randMat += 2
-		if "two-handed" in tags:
-			minMat += 2
-			randMat += 4
-		if "medium" in tags:
-			minMat += 2
-			randMat += 4
-		if "heavy" in tags:
-			minMat += 4
-			randMat += 8
-		if "buckler" in tags:
-			minMat += 1
-			randMat += 3
-		if "large" in tags:
-			minMat += 2
-			randMat += 6
-		if "magic" in tags:
-			minMat += 3
-			randMat += 6
-		if "mq" in tags and not "tribe" in tags:
-			minMat += 1
-			randMat += 2
-		if "hq" in tags and not "tribe" in tags:
-			minMat += 2
-			randMat += 4
-		if "advantage" in tags:
-			minMat += 3
-			randMat += 6
-		if "tribe" in tags or "boss" in tags:
-			minMat += 3
-			randMat += 6
-		minMat *= 3
-		randMat *= 3
-		# rand0 = zlib.crc32(name + brickFamily + skill) & 0xffffffff
-		rand1 = zlib.crc32((name + skill + brickFamily).encode("ascii")) & 0xffffffff
-		rand2 = zlib.crc32((skill + name + brickFamily).encode("ascii")) & 0xffffffff
-		rand3 = zlib.crc32((skill + brickFamily + name).encode("ascii")) & 0xffffffff
-		rand4 = zlib.crc32((brickFamily + name + skill).encode("ascii")) & 0xffffffff
-		rand5 = zlib.crc32((brickFamily + skill + name).encode("ascii")) & 0xffffffff
-		mp1 = minMat + (rand1 % randMat)
-		mp2 = minMat + (rand2 % randMat)
-		mp3 = minMat + (rand3 % randMat)
-		mp4 = minMat + (rand4 % randMat)
-		mp5 = minMat + (rand5 % randMat)
-		
-		if not os.path.isdir(sbrickFolder):
-			os.makedirs(sbrickFolder)
-		with open(sbrickFile, "w") as f:
-			f.write("<?xml version=\"1.0\"?>\n")
-			f.write("<FORM Version=\"4.0\" State=\"modified\">\n")
-			f.write("  <STRUCT>\n")
-			f.write("    <STRUCT Name=\"Basics\">\n")
-			f.write("      <ATOM Name=\"FamilyId\" Value=\"" + brickFamily + "\"/>\n")
-			f.write("      <ATOM Name=\"IndexInFamily\" Value=\"" + str(sbrickIndex) + "\"/>\n")
-			f.write("      <ATOM Name=\"SPCost\" Value=\"5\"/>\n")
-			f.write("      <ATOM Name=\"LearnRequiresOneOfSkills\" Value=\"SC 0\"/>\n")
-			f.write("      <ATOM Name=\"Action Nature\" Value=\"CRAFT\"/>\n")
-			f.write("      <ATOM Name=\"Skill\" Value=\"" + skill + "\"/>\n")
-			# f.write("      <ATOM Name=\"LearnRequiresBricks\" Value=\"bcpa01.sbrick\"/>\n") # TODO: Craft actions
-			f.write("      <ATOM Name=\"CivRestriction\" Value=\"common\"/>\n")
-			f.write("    </STRUCT>\n")
-			f.write("    <STRUCT Name=\"Client\">\n")
-			if sbrickIcon != "":
-				f.write("      <ATOM Name=\"Icon\" Value=\"" + sbrickIcon + "\"/>\n")
-			if sbrickIconBack != "":
-				f.write("      <ATOM Name=\"IconBack\" Value=\"" + sbrickIconBack + "\"/>\n")
-			f.write("      <ATOM Name=\"IconOver\" Value=\"fp_over.png\"/>\n")
-			f.write("      <ATOM Name=\"IconOver2\"/>\n")
-			f.write("    </STRUCT>\n")
-			if "armor" in tags or "shield" in tags or "melee" in tags or "magic" in tags:
-				f.write("    <STRUCT Name=\"faber\">\n")
-				if "armor" in tags or "shield" in tags:
-					f.write("      <ATOM Name=\"Tool type\" Value=\"ArmorTool\"/>\n")
-				elif "melee" in tags or "magic" in tags:
-					f.write("      <ATOM Name=\"Tool type\" Value=\"MeleeWeaponTool\"/>\n")
-				# f.write("      <ATOM Name=\"Durability Factor\" Value=\"1\"/>\n")
-				f.write("      <STRUCT Name=\"Create\">\n")
-				f.write("        <ATOM Name=\"Crafted Item\" Value=\"" + name + ".sitem\"/>\n")
-				f.write("        <ATOM Name=\"Nb built items\" Value=\"1\"/>\n")
-				if "armor" in tags:
-					if "light" in tags:
-						f.write("        <ATOM Name=\"MP 1\" Value=\"Raw Material for Clothes\"/>\n")
-					else:
-						f.write("        <ATOM Name=\"MP 1\" Value=\"Raw Material for Armor shell\"/>\n")
-					f.write("        <ATOM Name=\"Quantity 1\" Value=\"" + str(int(mp1 / 4)) + "\"/>\n")
-					f.write("        <ATOM Name=\"MP 2\" Value=\"Raw Material for Armor interior coating\"/>\n")
-					f.write("        <ATOM Name=\"Quantity 2\" Value=\"" + str(int(mp2 / 4)) + "\"/>\n")
-					f.write("        <ATOM Name=\"MP 3\" Value=\"Raw Material for Armor interior stuffing\"/>\n")
-					f.write("        <ATOM Name=\"Quantity 3\" Value=\"" + str(int(mp3 / 4)) + "\"/>\n")
-					f.write("        <ATOM Name=\"MP 4\" Value=\"Raw Material for Armor clip\"/>\n")
-					f.write("        <ATOM Name=\"Quantity 4\" Value=\"" + str(int(mp4 / 4)) + "\"/>\n")
-				elif "shield" in tags:
-					f.write("        <ATOM Name=\"MP 1\" Value=\"Raw Material for Armor shell\"/>\n")
-					f.write("        <ATOM Name=\"Quantity 1\" Value=\"" + str(int(mp1 / 2)) + "\"/>\n")
-					f.write("        <ATOM Name=\"MP 2\" Value=\"Raw Material for Armor clip\"/>\n")
-					f.write("        <ATOM Name=\"Quantity 2\" Value=\"" + str(int(mp2 / 2)) + "\"/>\n")
-					f.write("        <ATOM Name=\"MP 3\"/>\n")
-					f.write("        <ATOM Name=\"Quantity 3\" Value=\"0\"/>\n")
-					f.write("        <ATOM Name=\"MP 4\"/>\n")
-					f.write("        <ATOM Name=\"Quantity 4\" Value=\"0\"/>\n")
-				elif "magic" in tags:
-					f.write("        <ATOM Name=\"MP 1\" Value=\"Raw Material for Shaft\"/>\n")
-					f.write("        <ATOM Name=\"Quantity 1\" Value=\"" + str(int(mp1 / 3)) + "\"/>\n")
-					f.write("        <ATOM Name=\"MP 2\" Value=\"Raw Material for Grip\"/>\n")
-					f.write("        <ATOM Name=\"Quantity 2\" Value=\"" + str(int(mp2 / 3)) + "\"/>\n")
-					f.write("        <ATOM Name=\"MP 3\" Value=\"Raw Material for Magic Focus\"/>\n")
-					f.write("        <ATOM Name=\"Quantity 3\" Value=\"" + str(int(mp3 / 3)) + "\"/>\n")
-					f.write("        <ATOM Name=\"MP 4\"/>\n")
-					f.write("        <ATOM Name=\"Quantity 4\" Value=\"0\"/>\n")
-				elif "melee" in tags:
-					if "staff" in tags:
-						f.write("        <ATOM Name=\"MP 1\" Value=\"Raw Material for Shaft\"/>\n")
-						f.write("        <ATOM Name=\"Quantity 1\" Value=\"" + str(int(mp1 / 2)) + "\"/>\n")
-						f.write("        <ATOM Name=\"MP 2\" Value=\"Raw Material for Grip\"/>\n")
-						f.write("        <ATOM Name=\"Quantity 2\" Value=\"" + str(int(mp2 / 2)) + "\"/>\n")
-						f.write("        <ATOM Name=\"MP 3\"/>\n")
-						f.write("        <ATOM Name=\"Quantity 3\" Value=\"0\"/>\n")
-						f.write("        <ATOM Name=\"MP 4\"/>\n")
-						f.write("        <ATOM Name=\"Quantity 4\" Value=\"0\"/>\n")
-					else:
-						divider = 4
-						if "mace" in tags:
-							f.write("        <ATOM Name=\"MP 1\" Value=\"Raw Material for Hammer\"/>\n")
-						elif "pike" or "spear" in tags:
-							f.write("        <ATOM Name=\"MP 1\" Value=\"Raw Material for Point\"/>\n")
-							divider = 3
-						else:
-							f.write("        <ATOM Name=\"MP 1\" Value=\"Raw Material for Blade\"/>\n")
-						f.write("        <ATOM Name=\"Quantity 1\" Value=\"" + str(int(mp1 / divider)) + "\"/>\n")
-						f.write("        <ATOM Name=\"MP 2\" Value=\"Raw Material for Shaft\"/>\n")
-						f.write("        <ATOM Name=\"Quantity 2\" Value=\"" + str(int(mp2 / divider)) + "\"/>\n")
-						f.write("        <ATOM Name=\"MP 3\" Value=\"Raw Material for Grip\"/>\n")
-						f.write("        <ATOM Name=\"Quantity 3\" Value=\"" + str(int(mp3 / divider)) + "\"/>\n")
-						if "pike" or "spear" in tags:
-							f.write("        <ATOM Name=\"MP 4\"/>\n")
-							f.write("        <ATOM Name=\"Quantity 4\" Value=\"0\"/>\n")
-						else:
-							f.write("        <ATOM Name=\"MP 4\" Value=\"Raw Material for Counterweight\"/>\n")
-							f.write("        <ATOM Name=\"Quantity 4\" Value=\"" + str(int(mp4 / divider)) + "\"/>\n")
-				f.write("        <ATOM Name=\"MP 5\"/>\n")
-				f.write("        <ATOM Name=\"Quantity 5\" Value=\"0\"/>\n")
-				f.write("      </STRUCT>\n")
-				f.write("    </STRUCT>\n")
-			f.write("  </STRUCT>\n")
-			f.write("</FORM>\n")
-			f.flush()
-			
-		sphraseName = "a" + sbrickName;
-		sphraseRoot = "R:\\leveldesign\\game_element\\sphrase\\craft\\effect"
-		sphraseFolder = sphraseRoot + "\\" + folder
-		sphraseFile = sphraseFolder + "\\" + sphraseName + ".sphrase"
-		print(sphraseFile)
-		
-		if not os.path.isdir(sphraseFolder):
-			os.makedirs(sphraseFolder)
-		with open(sphraseFile, "w") as f:
-			f.write("<?xml version=\"1.0\"?>\n")
-			f.write("<FORM Version=\"4.0\" State=\"modified\">\n")
-			f.write("  <STRUCT>\n")
-			f.write("    <ATOM Name=\"brick 0\" Value=\"" + sbrickName + ".sbrick\"/>\n")
-			f.write("    <ATOM Name=\"castable\" Value=\"false\"/>\n")
-			if "fyros" not in tags and "matis" not in tags and "zorai" not in tags and "tryker" not in tags:
-				f.write("    <ATOM Name=\"ShowInAPOnlyIfLearnt\" Value=\"true\"/>\n")
 			f.write("  </STRUCT>\n")
 			f.write("</FORM>\n")
 			f.flush()
@@ -1094,6 +1045,18 @@ def generatePlotItems():
 			f.write("</FORM>\n")
 			f.flush()
 
+def checkCraftedItems():
+	"""every item a craft plan makes has a sheet: this script's, or an original one (the refugee colours and weapons)"""
+	sheets = {}
+	for root, dirs, files in os.walk(sitemPath):
+		for f in files:
+			if f.lower().endswith(".sitem"):
+				sheets[f[:-6].lower()] = True
+	missing = [ item for item in sorted(itemPlans.keys()) if not item in sheets ]
+	if len(missing) > 0:
+		fail("Items of craft plans without a sheet (add them to sitem_craft_items.tsv): " + ", ".join(missing))
+
 generateParents()
 generateSitems()
 generatePlotItems()
+checkCraftedItems()

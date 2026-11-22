@@ -183,11 +183,23 @@
         <STRUCT Name="Q MpSU (Jewel stone support)">
           <ATOM Name="Durability" Value="80"/>
           <ATOM Name="Weight" Value="80"/>
+          <ATOM Name="DesertResistance" Value="80"/>
+          <ATOM Name="ForestResistance" Value="80"/>
+          <ATOM Name="LacustreResistance" Value="80"/>
+          <ATOM Name="JungleResistance" Value="80"/>
+          <ATOM Name="PrimaryRootResistance" Value="80"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
         <STRUCT Name="R MpED (Jewel stone)">
           <ATOM Name="Durability" Value="80"/>
           <ATOM Name="Weight" Value="80"/>
+          <ATOM Name="AcidProtection" Value="80"/>
+          <ATOM Name="ColdProtection" Value="80"/>
+          <ATOM Name="FireProtection" Value="80"/>
+          <ATOM Name="RotProtection" Value="80"/>
+          <ATOM Name="ShockWaveProtection" Value="80"/>
+          <ATOM Name="PoisonProtection" Value="80"/>
+          <ATOM Name="ElectricityProtection" Value="80"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
         <STRUCT Name="Y MpVE (Clothes)">

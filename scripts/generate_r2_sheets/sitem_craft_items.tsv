@@ -1,0 +1,521 @@
+; The craft items generate_sitem.py writes besides those of match_sitem_shape.tsv: every item a craft plan of the
+; translation makes that had no sheet (generate_core4_sheets/plan_items.py, plans()), and the crafting and harvest
+; tools of the translation that had none: the refugee ones (the starting roles give itrtmw), the common ones and the
+; tool maker ittool, which the tool plans need in hand. The plans domain of the sheet generator reads the first column
+; to know which items will exist
+; item	shape male	shape female	tags
+; item: the translation id (translation/work/item_words_wk.txt), which is the sheet name
+; shapes: from the pipeline (shape_list.txt); - for an item no character shows, whose slot is hidden (jewels, ammo)
+;   or which has none (construction pieces)
+; tags: the words generate_sitem.py reads, as in sitem_parsed.tsv: origin (fyros, matis, tryker, zorai, common, tribe,
+;   kami, karavan; starter for refugee), family (melee, ranged, ammo, shield, armor, jewel, crafting tool, harvest
+;   tool, mission construction), kind (the parent's words: one-handed pistol, light caster armor boots...), damage type
+;   of ammo (blunt, piercing, slashing), mq and hq for the medium and high texture sets, advantage with the word of
+;   its advantage, faction for the kami and karavan faction items (their glow)
+; melee weapons (the staffs, the named advantage weapons, the common magic amplifier, the refugee sword, the candy cane and the kami and karavan faction weapons)
+ic_candy_stick	ge_xmas_baniere	ge_xmas_baniere	common	melee	one-handed	blunt	staff	candy
+icbm1bs	ge_zo_wea_trib_baton	ge_zo_wea_trib_baton	tribe	melee	one-handed	blunt	staff
+icbm1bs_2	ge_zo_wea_trib_baton	ge_zo_wea_trib_baton	tribe	melee	one-handed	blunt	staff	mq
+icbm1bs_3	ge_zo_wea_trib_baton	ge_zo_wea_trib_baton	tribe	melee	one-handed	blunt	staff	hq
+iccm1bs	ge_wea_baton	ge_wea_baton	common	melee	one-handed	blunt	staff
+iccm2ms	ge_hom_acc_gauntlet	ge_hof_acc_gauntlet	common	melee	two-handed	magic	amplifier	gloves
+icfm1bs	fy_wea_baton	fy_wea_baton	fyros	melee	one-handed	blunt	staff
+icfm1bs_2	fy_wea_baton	fy_wea_baton	fyros	melee	one-handed	blunt	staff	mq
+icfm1bs_3	fy_wea_baton	fy_wea_baton	fyros	melee	one-handed	blunt	staff	hq
+icmm1bs	ma_wea_baton	ma_wea_baton	matis	melee	one-handed	blunt	staff
+icmm1bs_2	ma_wea_baton	ma_wea_baton	matis	melee	one-handed	blunt	staff	mq
+icmm1bs_3	ma_wea_baton	ma_wea_baton	matis	melee	one-handed	blunt	staff	hq
+icmm1pdl	ma_wea_dague	ma_wea_dague	matis	melee	one-handed	piercing	dagger	living	advantage
+icmm1psl	ma_wea_lance1m	ma_wea_lance1m	matis	melee	one-handed	piercing	spear	living	advantage
+icmm2ppl	ma_wea_lance2m	ma_wea_lance2m	matis	melee	two-handed	piercing	pike	living	advantage
+icmm2ssl	ma_wea_epee2m	ma_wea_epee2m	matis	melee	two-handed	slashing	sword	living	advantage
+icokamm1bm_1	ge_zo_wea_trib_masse1m	ge_zo_wea_trib_masse1m	kami	faction	melee	one-handed	blunt	mace	mq
+icokamm1bm_2	ge_zo_wea_trib_masse1m	ge_zo_wea_trib_masse1m	kami	faction	melee	one-handed	blunt	mace	hq
+icokamm1bs_1	ge_zo_wea_trib_baton	ge_zo_wea_trib_baton	kami	faction	melee	one-handed	blunt	staff	mq
+icokamm1bs_2	ge_zo_wea_trib_baton	ge_zo_wea_trib_baton	kami	faction	melee	one-handed	blunt	staff	hq
+icokamm1pd_1	ge_tr_wea_trib_dague	ge_tr_wea_trib_dague	kami	faction	melee	one-handed	piercing	dagger	mq
+icokamm1pd_2	ge_tr_wea_trib_dague	ge_tr_wea_trib_dague	kami	faction	melee	one-handed	piercing	dagger	hq
+icokamm1ps_1	ge_ma_wea_trib_lance1m	ge_ma_wea_trib_lance1m	kami	faction	melee	one-handed	piercing	spear	mq
+icokamm1ps_2	ge_ma_wea_trib_lance1m	ge_ma_wea_trib_lance1m	kami	faction	melee	one-handed	piercing	spear	hq
+icokamm1sa_1	ge_fy_wea_trib_hache1m	ge_fy_wea_trib_hache1m	kami	faction	melee	one-handed	slashing	axe	mq
+icokamm1sa_2	ge_fy_wea_trib_hache1m	ge_fy_wea_trib_hache1m	kami	faction	melee	one-handed	slashing	axe	hq
+icokamm1ss_1	ge_tr_wea_trib_epee1m	ge_tr_wea_trib_epee1m	kami	faction	melee	one-handed	slashing	sword	mq
+icokamm1ss_2	ge_tr_wea_trib_epee1m	ge_tr_wea_trib_epee1m	kami	faction	melee	one-handed	slashing	sword	hq
+icokamm2bm_1	ge_zo_wea_trib_masse2m	ge_zo_wea_trib_masse2m	kami	faction	melee	two-handed	blunt	mace	mq
+icokamm2bm_2	ge_zo_wea_trib_masse2m	ge_zo_wea_trib_masse2m	kami	faction	melee	two-handed	blunt	mace	hq
+icokamm2ms_1	ge_hom_acc_gauntlet_kami	ge_hof_acc_gauntlet_kami	kami	faction	melee	two-handed	magic	amplifier	gloves	mq
+icokamm2ms_2	ge_hom_acc_gauntlet_kami	ge_hof_acc_gauntlet_kami	kami	faction	melee	two-handed	magic	amplifier	gloves	hq
+icokamm2pp_1	ge_ma_wea_trib_lance2m	ge_ma_wea_trib_lance2m	kami	faction	melee	two-handed	piercing	pike	mq
+icokamm2pp_2	ge_ma_wea_trib_lance2m	ge_ma_wea_trib_lance2m	kami	faction	melee	two-handed	piercing	pike	hq
+icokamm2sa_1	ge_fy_wea_trib_hache2m	ge_fy_wea_trib_hache2m	kami	faction	melee	two-handed	slashing	axe	mq
+icokamm2sa_2	ge_fy_wea_trib_hache2m	ge_fy_wea_trib_hache2m	kami	faction	melee	two-handed	slashing	axe	hq
+icokamm2ss_1	ge_tr_wea_trib_epee2m	ge_tr_wea_trib_epee2m	kami	faction	melee	two-handed	slashing	sword	mq
+icokamm2ss_2	ge_tr_wea_trib_epee2m	ge_tr_wea_trib_epee2m	kami	faction	melee	two-handed	slashing	sword	hq
+icokarm1bm_1	ge_zo_wea_trib_masse1m	ge_zo_wea_trib_masse1m	karavan	faction	melee	one-handed	blunt	mace	mq
+icokarm1bm_2	ge_zo_wea_trib_masse1m	ge_zo_wea_trib_masse1m	karavan	faction	melee	one-handed	blunt	mace	hq
+icokarm1bs_1	ge_zo_wea_trib_baton	ge_zo_wea_trib_baton	karavan	faction	melee	one-handed	blunt	staff	mq
+icokarm1bs_2	ge_zo_wea_trib_baton	ge_zo_wea_trib_baton	karavan	faction	melee	one-handed	blunt	staff	hq
+icokarm1pd_1	ge_tr_wea_trib_dague	ge_tr_wea_trib_dague	karavan	faction	melee	one-handed	piercing	dagger	mq
+icokarm1pd_2	ge_tr_wea_trib_dague	ge_tr_wea_trib_dague	karavan	faction	melee	one-handed	piercing	dagger	hq
+icokarm1ps_1	ge_ma_wea_trib_lance1m	ge_ma_wea_trib_lance1m	karavan	faction	melee	one-handed	piercing	spear	mq
+icokarm1ps_2	ge_ma_wea_trib_lance1m	ge_ma_wea_trib_lance1m	karavan	faction	melee	one-handed	piercing	spear	hq
+icokarm1sa_1	ge_fy_wea_trib_hache1m	ge_fy_wea_trib_hache1m	karavan	faction	melee	one-handed	slashing	axe	mq
+icokarm1sa_2	ge_fy_wea_trib_hache1m	ge_fy_wea_trib_hache1m	karavan	faction	melee	one-handed	slashing	axe	hq
+icokarm1ss_1	ge_tr_wea_trib_epee1m	ge_tr_wea_trib_epee1m	karavan	faction	melee	one-handed	slashing	sword	mq
+icokarm1ss_2	ge_tr_wea_trib_epee1m	ge_tr_wea_trib_epee1m	karavan	faction	melee	one-handed	slashing	sword	hq
+icokarm2bm_1	ge_zo_wea_trib_masse2m	ge_zo_wea_trib_masse2m	karavan	faction	melee	two-handed	blunt	mace	mq
+icokarm2bm_2	ge_zo_wea_trib_masse2m	ge_zo_wea_trib_masse2m	karavan	faction	melee	two-handed	blunt	mace	hq
+icokarm2ms_1	ca_hom_acc_gauntlet	ca_hof_acc_gauntlet	karavan	faction	melee	two-handed	magic	amplifier	gloves	mq
+icokarm2ms_2	ca_hom_acc_gauntlet	ca_hof_acc_gauntlet	karavan	faction	melee	two-handed	magic	amplifier	gloves	hq
+icokarm2pp_1	ge_ma_wea_trib_lance2m	ge_ma_wea_trib_lance2m	karavan	faction	melee	two-handed	piercing	pike	mq
+icokarm2pp_2	ge_ma_wea_trib_lance2m	ge_ma_wea_trib_lance2m	karavan	faction	melee	two-handed	piercing	pike	hq
+icokarm2sa_1	ge_fy_wea_trib_hache2m	ge_fy_wea_trib_hache2m	karavan	faction	melee	two-handed	slashing	axe	mq
+icokarm2sa_2	ge_fy_wea_trib_hache2m	ge_fy_wea_trib_hache2m	karavan	faction	melee	two-handed	slashing	axe	hq
+icokarm2ss_1	ge_tr_wea_trib_epee2m	ge_tr_wea_trib_epee2m	karavan	faction	melee	two-handed	slashing	sword	mq
+icokarm2ss_2	ge_tr_wea_trib_epee2m	ge_tr_wea_trib_epee2m	karavan	faction	melee	two-handed	slashing	sword	hq
+icrm1ss	ge_wea_epee1m	ge_wea_epee1m	common	starter	refugee	melee	one-handed	slashing	sword
+ictm1bs	tr_wea_baton	tr_wea_baton	tryker	melee	one-handed	blunt	staff
+ictm1bs_2	tr_wea_baton	tr_wea_baton	tryker	melee	one-handed	blunt	staff	mq
+ictm1bs_3	tr_wea_baton	tr_wea_baton	tryker	melee	one-handed	blunt	staff	hq
+ictm1pdw	tr_wea_dague	tr_wea_dague	tryker	melee	one-handed	piercing	dagger	waving	advantage
+ictm1ssw	tr_wea_epee1m	tr_wea_epee1m	tryker	melee	one-handed	slashing	sword	waving	advantage
+ictm2ssw	tr_wea_epee2m	tr_wea_epee2m	tryker	melee	two-handed	slashing	sword	waving	advantage
+iczm1bme	zo_wea_masse1m	zo_wea_masse1m	zorai	melee	one-handed	blunt	mace	electric	advantage
+iczm1bs	zo_wea_baton	zo_wea_baton	zorai	melee	one-handed	blunt	staff
+iczm1bs_2	zo_wea_baton	zo_wea_baton	zorai	melee	one-handed	blunt	staff	mq
+iczm1bs_3	zo_wea_baton	zo_wea_baton	zorai	melee	one-handed	blunt	staff	hq
+iczm1pse	zo_wea_lance1m	zo_wea_lance1m	zorai	melee	one-handed	piercing	spear	electric	advantage
+iczm2bme	zo_wea_masse2m	zo_wea_masse2m	zorai	melee	two-handed	blunt	mace	electric	advantage
+; range weapons (civilisation, common, tribe, the named advantage ones, kami and karavan)
+icbr1b	ge_tr_wea_trib_pistolarc	ge_tr_wea_trib_pistolarc	tribe	ranged	one-handed	bowpistol
+icbr1b_2	ge_tr_wea_trib_pistolarc	ge_tr_wea_trib_pistolarc	tribe	ranged	one-handed	bowpistol	mq
+icbr1b_3	ge_tr_wea_trib_pistolarc	ge_tr_wea_trib_pistolarc	tribe	ranged	one-handed	bowpistol	hq
+icbr1p	ge_ma_wea_trib_pistolet	ge_ma_wea_trib_pistolet	tribe	ranged	one-handed	pistol
+icbr1p_2	ge_ma_wea_trib_pistolet	ge_ma_wea_trib_pistolet	tribe	ranged	one-handed	pistol	mq
+icbr1p_3	ge_ma_wea_trib_pistolet	ge_ma_wea_trib_pistolet	tribe	ranged	one-handed	pistol	hq
+icbr2a	ge_fy_wea_trib_gattling	ge_fy_wea_trib_gattling	tribe	ranged	two-handed	autolauncher
+icbr2a_2	ge_fy_wea_trib_gattling	ge_fy_wea_trib_gattling	tribe	ranged	two-handed	autolauncher	mq
+icbr2a_3	ge_fy_wea_trib_gattling	ge_fy_wea_trib_gattling	tribe	ranged	two-handed	autolauncher	hq
+icbr2b	ge_zo_wea_trib_fusarc	ge_zo_wea_trib_fusarc	tribe	ranged	two-handed	bowrifle
+icbr2b_2	ge_zo_wea_trib_fusarc	ge_zo_wea_trib_fusarc	tribe	ranged	two-handed	bowrifle	mq
+icbr2b_3	ge_zo_wea_trib_fusarc	ge_zo_wea_trib_fusarc	tribe	ranged	two-handed	bowrifle	hq
+icbr2l	ge_fy_wea_trib_launcher	ge_fy_wea_trib_launcher	tribe	ranged	two-handed	launcher
+icbr2l_2	ge_fy_wea_trib_launcher	ge_fy_wea_trib_launcher	tribe	ranged	two-handed	launcher	mq
+icbr2l_3	ge_fy_wea_trib_launcher	ge_fy_wea_trib_launcher	tribe	ranged	two-handed	launcher	hq
+icbr2r	ge_tr_wea_trib_fusil	ge_tr_wea_trib_fusil	tribe	ranged	two-handed	rifle
+icbr2r_2	ge_tr_wea_trib_fusil	ge_tr_wea_trib_fusil	tribe	ranged	two-handed	rifle	mq
+icbr2r_3	ge_tr_wea_trib_fusil	ge_tr_wea_trib_fusil	tribe	ranged	two-handed	rifle	hq
+iccr1b	ge_wea_pistolarc	ge_wea_pistolarc	common	ranged	one-handed	bowpistol
+iccr1p	ge_wea_pistolet	ge_wea_pistolet	common	ranged	one-handed	pistol
+iccr2a	ge_wea_gatling	ge_wea_gatling	common	ranged	two-handed	autolauncher
+iccr2b	ge_wea_fusarc	ge_wea_fusarc	common	ranged	two-handed	bowrifle
+iccr2l	ge_wea_lanceroquette	ge_wea_lanceroquette	common	ranged	two-handed	launcher
+iccr2r	ge_wea_fusil	ge_wea_fusil	common	ranged	two-handed	rifle
+icfr1b	fy_wea_pistolarc	fy_wea_pistolarc	fyros	ranged	one-handed	bowpistol
+icfr1b_2	fy_wea_pistolarc	fy_wea_pistolarc	fyros	ranged	one-handed	bowpistol	mq
+icfr1b_3	fy_wea_pistolarc	fy_wea_pistolarc	fyros	ranged	one-handed	bowpistol	hq
+icfr1p	fy_wea_pistolet	fy_wea_pistolet	fyros	ranged	one-handed	pistol
+icfr1p_2	fy_wea_pistolet	fy_wea_pistolet	fyros	ranged	one-handed	pistol	mq
+icfr1p_3	fy_wea_pistolet	fy_wea_pistolet	fyros	ranged	one-handed	pistol	hq
+icfr2a	fy_wea_gatling	fy_wea_gatling	fyros	ranged	two-handed	autolauncher
+icfr2a_2	fy_wea_gatling	fy_wea_gatling	fyros	ranged	two-handed	autolauncher	mq
+icfr2a_3	fy_wea_gatling	fy_wea_gatling	fyros	ranged	two-handed	autolauncher	hq
+icfr2ab	fy_wea_gatling	fy_wea_gatling	fyros	ranged	two-handed	autolauncher	burning	advantage
+icfr2b	fy_wea_fusarc	fy_wea_fusarc	fyros	ranged	two-handed	bowrifle
+icfr2b_2	fy_wea_fusarc	fy_wea_fusarc	fyros	ranged	two-handed	bowrifle	mq
+icfr2b_3	fy_wea_fusarc	fy_wea_fusarc	fyros	ranged	two-handed	bowrifle	hq
+icfr2l	fy_wea_lanceroquette	fy_wea_lanceroquette	fyros	ranged	two-handed	launcher
+icfr2l_2	fy_wea_lanceroquette	fy_wea_lanceroquette	fyros	ranged	two-handed	launcher	mq
+icfr2l_3	fy_wea_lanceroquette	fy_wea_lanceroquette	fyros	ranged	two-handed	launcher	hq
+icfr2lb	fy_wea_lanceroquette	fy_wea_lanceroquette	fyros	ranged	two-handed	launcher	burning	advantage
+icfr2r	fy_wea_fusil	fy_wea_fusil	fyros	ranged	two-handed	rifle
+icfr2r_2	fy_wea_fusil	fy_wea_fusil	fyros	ranged	two-handed	rifle	mq
+icfr2r_3	fy_wea_fusil	fy_wea_fusil	fyros	ranged	two-handed	rifle	hq
+icmr1b	ma_wea_pistolarc	ma_wea_pistolarc	matis	ranged	one-handed	bowpistol
+icmr1b_2	ma_wea_pistolarc	ma_wea_pistolarc	matis	ranged	one-handed	bowpistol	mq
+icmr1b_3	ma_wea_pistolarc	ma_wea_pistolarc	matis	ranged	one-handed	bowpistol	hq
+icmr1p	ma_wea_pistolet	ma_wea_pistolet	matis	ranged	one-handed	pistol
+icmr1p_2	ma_wea_pistolet	ma_wea_pistolet	matis	ranged	one-handed	pistol	mq
+icmr1p_3	ma_wea_pistolet	ma_wea_pistolet	matis	ranged	one-handed	pistol	hq
+icmr1pl	ma_wea_pistolet	ma_wea_pistolet	matis	ranged	one-handed	pistol	living	advantage
+icmr2a	ma_wea_gatling	ma_wea_gatling	matis	ranged	two-handed	autolauncher
+icmr2a_2	ma_wea_gatling	ma_wea_gatling	matis	ranged	two-handed	autolauncher	mq
+icmr2a_3	ma_wea_gatling	ma_wea_gatling	matis	ranged	two-handed	autolauncher	hq
+icmr2b	ma_wea_fusarc	ma_wea_fusarc	matis	ranged	two-handed	bowrifle
+icmr2b_2	ma_wea_fusarc	ma_wea_fusarc	matis	ranged	two-handed	bowrifle	mq
+icmr2b_3	ma_wea_fusarc	ma_wea_fusarc	matis	ranged	two-handed	bowrifle	hq
+icmr2l	ma_wea_lanceroquette	ma_wea_lanceroquette	matis	ranged	two-handed	launcher
+icmr2l_2	ma_wea_lanceroquette	ma_wea_lanceroquette	matis	ranged	two-handed	launcher	mq
+icmr2l_3	ma_wea_lanceroquette	ma_wea_lanceroquette	matis	ranged	two-handed	launcher	hq
+icmr2r	ma_wea_fusil	ma_wea_fusil	matis	ranged	two-handed	rifle
+icmr2r_2	ma_wea_fusil	ma_wea_fusil	matis	ranged	two-handed	rifle	mq
+icmr2r_3	ma_wea_fusil	ma_wea_fusil	matis	ranged	two-handed	rifle	hq
+icmr2rl	ma_wea_fusil	ma_wea_fusil	matis	ranged	two-handed	rifle	living	advantage
+icokamr1b_1	ge_tr_wea_trib_pistolarc	ge_tr_wea_trib_pistolarc	kami	faction	ranged	one-handed	bowpistol	mq
+icokamr1b_2	ge_tr_wea_trib_pistolarc	ge_tr_wea_trib_pistolarc	kami	faction	ranged	one-handed	bowpistol	hq
+icokamr1p_1	ge_ma_wea_trib_pistolet	ge_ma_wea_trib_pistolet	kami	faction	ranged	one-handed	pistol	mq
+icokamr1p_2	ge_ma_wea_trib_pistolet	ge_ma_wea_trib_pistolet	kami	faction	ranged	one-handed	pistol	hq
+icokamr2a_1	ge_fy_wea_trib_gattling	ge_fy_wea_trib_gattling	kami	faction	ranged	two-handed	autolauncher	mq
+icokamr2a_2	ge_fy_wea_trib_gattling	ge_fy_wea_trib_gattling	kami	faction	ranged	two-handed	autolauncher	hq
+icokamr2b_1	ge_zo_wea_trib_fusarc	ge_zo_wea_trib_fusarc	kami	faction	ranged	two-handed	bowrifle	mq
+icokamr2b_2	ge_zo_wea_trib_fusarc	ge_zo_wea_trib_fusarc	kami	faction	ranged	two-handed	bowrifle	hq
+icokamr2l_1	ge_fy_wea_trib_launcher	ge_fy_wea_trib_launcher	kami	faction	ranged	two-handed	launcher	mq
+icokamr2l_2	ge_fy_wea_trib_launcher	ge_fy_wea_trib_launcher	kami	faction	ranged	two-handed	launcher	hq
+icokamr2r_1	ge_tr_wea_trib_fusil	ge_tr_wea_trib_fusil	kami	faction	ranged	two-handed	rifle	mq
+icokamr2r_2	ge_tr_wea_trib_fusil	ge_tr_wea_trib_fusil	kami	faction	ranged	two-handed	rifle	hq
+icokarr1b_1	ge_tr_wea_trib_pistolarc	ge_tr_wea_trib_pistolarc	karavan	faction	ranged	one-handed	bowpistol	mq
+icokarr1b_2	ge_tr_wea_trib_pistolarc	ge_tr_wea_trib_pistolarc	karavan	faction	ranged	one-handed	bowpistol	hq
+icokarr1p_1	ge_ma_wea_trib_pistolet	ge_ma_wea_trib_pistolet	karavan	faction	ranged	one-handed	pistol	mq
+icokarr1p_2	ge_ma_wea_trib_pistolet	ge_ma_wea_trib_pistolet	karavan	faction	ranged	one-handed	pistol	hq
+icokarr2a_1	ge_fy_wea_trib_gattling	ge_fy_wea_trib_gattling	karavan	faction	ranged	two-handed	autolauncher	mq
+icokarr2a_2	ge_fy_wea_trib_gattling	ge_fy_wea_trib_gattling	karavan	faction	ranged	two-handed	autolauncher	hq
+icokarr2b_1	ge_zo_wea_trib_fusarc	ge_zo_wea_trib_fusarc	karavan	faction	ranged	two-handed	bowrifle	mq
+icokarr2b_2	ge_zo_wea_trib_fusarc	ge_zo_wea_trib_fusarc	karavan	faction	ranged	two-handed	bowrifle	hq
+icokarr2l_1	ge_fy_wea_trib_launcher	ge_fy_wea_trib_launcher	karavan	faction	ranged	two-handed	launcher	mq
+icokarr2l_2	ge_fy_wea_trib_launcher	ge_fy_wea_trib_launcher	karavan	faction	ranged	two-handed	launcher	hq
+icokarr2r_1	ge_tr_wea_trib_fusil	ge_tr_wea_trib_fusil	karavan	faction	ranged	two-handed	rifle	mq
+icokarr2r_2	ge_tr_wea_trib_fusil	ge_tr_wea_trib_fusil	karavan	faction	ranged	two-handed	rifle	hq
+ictr1b	tr_wea_pistolarc	tr_wea_pistolarc	tryker	ranged	one-handed	bowpistol
+ictr1b_2	tr_wea_pistolarc	tr_wea_pistolarc	tryker	ranged	one-handed	bowpistol	mq
+ictr1b_3	tr_wea_pistolarc	tr_wea_pistolarc	tryker	ranged	one-handed	bowpistol	hq
+ictr1bw	tr_wea_pistolarc	tr_wea_pistolarc	tryker	ranged	one-handed	bowpistol	waving	advantage
+ictr1p	tr_wea_pistolet	tr_wea_pistolet	tryker	ranged	one-handed	pistol
+ictr1p_2	tr_wea_pistolet	tr_wea_pistolet	tryker	ranged	one-handed	pistol	mq
+ictr1p_3	tr_wea_pistolet	tr_wea_pistolet	tryker	ranged	one-handed	pistol	hq
+ictr2a	tr_wea_gatling	tr_wea_gatling	tryker	ranged	two-handed	autolauncher
+ictr2a_2	tr_wea_gatling	tr_wea_gatling	tryker	ranged	two-handed	autolauncher	mq
+ictr2a_3	tr_wea_gatling	tr_wea_gatling	tryker	ranged	two-handed	autolauncher	hq
+ictr2b	tr_wea_fusarc	tr_wea_fusarc	tryker	ranged	two-handed	bowrifle
+ictr2b_2	tr_wea_fusarc	tr_wea_fusarc	tryker	ranged	two-handed	bowrifle	mq
+ictr2b_3	tr_wea_fusarc	tr_wea_fusarc	tryker	ranged	two-handed	bowrifle	hq
+ictr2l	tr_wea_lanceroquette	tr_wea_lanceroquette	tryker	ranged	two-handed	launcher
+ictr2l_2	tr_wea_lanceroquette	tr_wea_lanceroquette	tryker	ranged	two-handed	launcher	mq
+ictr2l_3	tr_wea_lanceroquette	tr_wea_lanceroquette	tryker	ranged	two-handed	launcher	hq
+ictr2r	tr_wea_fusil	tr_wea_fusil	tryker	ranged	two-handed	rifle
+ictr2r_2	tr_wea_fusil	tr_wea_fusil	tryker	ranged	two-handed	rifle	mq
+ictr2r_3	tr_wea_fusil	tr_wea_fusil	tryker	ranged	two-handed	rifle	hq
+iczr1b	zo_wea_pistolarc	zo_wea_pistolarc	zorai	ranged	one-handed	bowpistol
+iczr1b_2	zo_wea_pistolarc	zo_wea_pistolarc	zorai	ranged	one-handed	bowpistol	mq
+iczr1b_3	zo_wea_pistolarc	zo_wea_pistolarc	zorai	ranged	one-handed	bowpistol	hq
+iczr1p	zo_wea_pistolet	zo_wea_pistolet	zorai	ranged	one-handed	pistol
+iczr1p_2	zo_wea_pistolet	zo_wea_pistolet	zorai	ranged	one-handed	pistol	mq
+iczr1p_3	zo_wea_pistolet	zo_wea_pistolet	zorai	ranged	one-handed	pistol	hq
+iczr2a	zo_wea_gatling	zo_wea_gatling	zorai	ranged	two-handed	autolauncher
+iczr2a_2	zo_wea_gatling	zo_wea_gatling	zorai	ranged	two-handed	autolauncher	mq
+iczr2a_3	zo_wea_gatling	zo_wea_gatling	zorai	ranged	two-handed	autolauncher	hq
+iczr2b	zo_wea_fusarc	zo_wea_fusarc	zorai	ranged	two-handed	bowrifle
+iczr2b_2	zo_wea_fusarc	zo_wea_fusarc	zorai	ranged	two-handed	bowrifle	mq
+iczr2b_3	zo_wea_fusarc	zo_wea_fusarc	zorai	ranged	two-handed	bowrifle	hq
+iczr2be	zo_wea_fusarc	zo_wea_fusarc	zorai	ranged	two-handed	bowrifle	electric	advantage
+iczr2l	zo_wea_lanceroquette	zo_wea_lanceroquette	zorai	ranged	two-handed	launcher
+iczr2l_2	zo_wea_lanceroquette	zo_wea_lanceroquette	zorai	ranged	two-handed	launcher	mq
+iczr2l_3	zo_wea_lanceroquette	zo_wea_lanceroquette	zorai	ranged	two-handed	launcher	hq
+iczr2le	zo_wea_lanceroquette	zo_wea_lanceroquette	zorai	ranged	two-handed	launcher	electric	advantage
+iczr2r	zo_wea_fusil	zo_wea_fusil	zorai	ranged	two-handed	rifle
+iczr2r_2	zo_wea_fusil	zo_wea_fusil	zorai	ranged	two-handed	rifle	mq
+iczr2r_3	zo_wea_fusil	zo_wea_fusil	zorai	ranged	two-handed	rifle	hq
+; ammunition: one per weapon kind and damage type (b blunt, the texts' smashing; p piercing; s slashing)
+iccp1bb	-	-	common	ammo	ranged	one-handed	bowpistol	blunt
+iccp1bp	-	-	common	ammo	ranged	one-handed	bowpistol	piercing
+iccp1bs	-	-	common	ammo	ranged	one-handed	bowpistol	slashing
+iccp1pb	-	-	common	ammo	ranged	one-handed	pistol	blunt
+iccp1pp	-	-	common	ammo	ranged	one-handed	pistol	piercing
+iccp1ps	-	-	common	ammo	ranged	one-handed	pistol	slashing
+iccp2ab	-	-	common	ammo	ranged	two-handed	autolauncher	blunt
+iccp2ap	-	-	common	ammo	ranged	two-handed	autolauncher	piercing
+iccp2as	-	-	common	ammo	ranged	two-handed	autolauncher	slashing
+iccp2bb	-	-	common	ammo	ranged	two-handed	bowrifle	blunt
+iccp2bp	-	-	common	ammo	ranged	two-handed	bowrifle	piercing
+iccp2bs	-	-	common	ammo	ranged	two-handed	bowrifle	slashing
+iccp2lb	-	-	common	ammo	ranged	two-handed	launcher	blunt
+iccp2lp	-	-	common	ammo	ranged	two-handed	launcher	piercing
+iccp2ls	-	-	common	ammo	ranged	two-handed	launcher	slashing
+iccp2rb	-	-	common	ammo	ranged	two-handed	rifle	blunt
+iccp2rp	-	-	common	ammo	ranged	two-handed	rifle	piercing
+iccp2rs	-	-	common	ammo	ranged	two-handed	rifle	slashing
+icfp1bb	-	-	fyros	ammo	ranged	one-handed	bowpistol	blunt
+icfp1bp	-	-	fyros	ammo	ranged	one-handed	bowpistol	piercing
+icfp1bs	-	-	fyros	ammo	ranged	one-handed	bowpistol	slashing
+icfp1pb	-	-	fyros	ammo	ranged	one-handed	pistol	blunt
+icfp1pp	-	-	fyros	ammo	ranged	one-handed	pistol	piercing
+icfp1ps	-	-	fyros	ammo	ranged	one-handed	pistol	slashing
+icfp2ab	-	-	fyros	ammo	ranged	two-handed	autolauncher	blunt
+icfp2ap	-	-	fyros	ammo	ranged	two-handed	autolauncher	piercing
+icfp2as	-	-	fyros	ammo	ranged	two-handed	autolauncher	slashing
+icfp2bb	-	-	fyros	ammo	ranged	two-handed	bowrifle	blunt
+icfp2bp	-	-	fyros	ammo	ranged	two-handed	bowrifle	piercing
+icfp2bs	-	-	fyros	ammo	ranged	two-handed	bowrifle	slashing
+icfp2lb	-	-	fyros	ammo	ranged	two-handed	launcher	blunt
+icfp2lp	-	-	fyros	ammo	ranged	two-handed	launcher	piercing
+icfp2ls	-	-	fyros	ammo	ranged	two-handed	launcher	slashing
+icfp2rb	-	-	fyros	ammo	ranged	two-handed	rifle	blunt
+icfp2rp	-	-	fyros	ammo	ranged	two-handed	rifle	piercing
+icfp2rs	-	-	fyros	ammo	ranged	two-handed	rifle	slashing
+icmp1bb	-	-	matis	ammo	ranged	one-handed	bowpistol	blunt
+icmp1bp	-	-	matis	ammo	ranged	one-handed	bowpistol	piercing
+icmp1bs	-	-	matis	ammo	ranged	one-handed	bowpistol	slashing
+icmp1pb	-	-	matis	ammo	ranged	one-handed	pistol	blunt
+icmp1pp	-	-	matis	ammo	ranged	one-handed	pistol	piercing
+icmp1ps	-	-	matis	ammo	ranged	one-handed	pistol	slashing
+icmp2ab	-	-	matis	ammo	ranged	two-handed	autolauncher	blunt
+icmp2ap	-	-	matis	ammo	ranged	two-handed	autolauncher	piercing
+icmp2as	-	-	matis	ammo	ranged	two-handed	autolauncher	slashing
+icmp2bb	-	-	matis	ammo	ranged	two-handed	bowrifle	blunt
+icmp2bp	-	-	matis	ammo	ranged	two-handed	bowrifle	piercing
+icmp2bs	-	-	matis	ammo	ranged	two-handed	bowrifle	slashing
+icmp2lb	-	-	matis	ammo	ranged	two-handed	launcher	blunt
+icmp2lp	-	-	matis	ammo	ranged	two-handed	launcher	piercing
+icmp2ls	-	-	matis	ammo	ranged	two-handed	launcher	slashing
+icmp2rb	-	-	matis	ammo	ranged	two-handed	rifle	blunt
+icmp2rp	-	-	matis	ammo	ranged	two-handed	rifle	piercing
+icmp2rs	-	-	matis	ammo	ranged	two-handed	rifle	slashing
+ictp1bb	-	-	tryker	ammo	ranged	one-handed	bowpistol	blunt
+ictp1bp	-	-	tryker	ammo	ranged	one-handed	bowpistol	piercing
+ictp1bs	-	-	tryker	ammo	ranged	one-handed	bowpistol	slashing
+ictp1pb	-	-	tryker	ammo	ranged	one-handed	pistol	blunt
+ictp1pp	-	-	tryker	ammo	ranged	one-handed	pistol	piercing
+ictp1ps	-	-	tryker	ammo	ranged	one-handed	pistol	slashing
+ictp2ab	-	-	tryker	ammo	ranged	two-handed	autolauncher	blunt
+ictp2ap	-	-	tryker	ammo	ranged	two-handed	autolauncher	piercing
+ictp2as	-	-	tryker	ammo	ranged	two-handed	autolauncher	slashing
+ictp2bb	-	-	tryker	ammo	ranged	two-handed	bowrifle	blunt
+ictp2bp	-	-	tryker	ammo	ranged	two-handed	bowrifle	piercing
+ictp2bs	-	-	tryker	ammo	ranged	two-handed	bowrifle	slashing
+ictp2lb	-	-	tryker	ammo	ranged	two-handed	launcher	blunt
+ictp2lp	-	-	tryker	ammo	ranged	two-handed	launcher	piercing
+ictp2ls	-	-	tryker	ammo	ranged	two-handed	launcher	slashing
+ictp2rb	-	-	tryker	ammo	ranged	two-handed	rifle	blunt
+ictp2rp	-	-	tryker	ammo	ranged	two-handed	rifle	piercing
+ictp2rs	-	-	tryker	ammo	ranged	two-handed	rifle	slashing
+iczp1bb	-	-	zorai	ammo	ranged	one-handed	bowpistol	blunt
+iczp1bp	-	-	zorai	ammo	ranged	one-handed	bowpistol	piercing
+iczp1bs	-	-	zorai	ammo	ranged	one-handed	bowpistol	slashing
+iczp1pb	-	-	zorai	ammo	ranged	one-handed	pistol	blunt
+iczp1pp	-	-	zorai	ammo	ranged	one-handed	pistol	piercing
+iczp1ps	-	-	zorai	ammo	ranged	one-handed	pistol	slashing
+iczp2ab	-	-	zorai	ammo	ranged	two-handed	autolauncher	blunt
+iczp2ap	-	-	zorai	ammo	ranged	two-handed	autolauncher	piercing
+iczp2as	-	-	zorai	ammo	ranged	two-handed	autolauncher	slashing
+iczp2bb	-	-	zorai	ammo	ranged	two-handed	bowrifle	blunt
+iczp2bp	-	-	zorai	ammo	ranged	two-handed	bowrifle	piercing
+iczp2bs	-	-	zorai	ammo	ranged	two-handed	bowrifle	slashing
+iczp2lb	-	-	zorai	ammo	ranged	two-handed	launcher	blunt
+iczp2lp	-	-	zorai	ammo	ranged	two-handed	launcher	piercing
+iczp2ls	-	-	zorai	ammo	ranged	two-handed	launcher	slashing
+iczp2rb	-	-	zorai	ammo	ranged	two-handed	rifle	blunt
+iczp2rp	-	-	zorai	ammo	ranged	two-handed	rifle	piercing
+iczp2rs	-	-	zorai	ammo	ranged	two-handed	rifle	slashing
+; shields (common, the named advantage bucklers, the kami and karavan shields, the Armlet of Atys)
+iccsb	ge_wea_petit_bouclier	ge_wea_petit_bouclier	common	buckler	shield
+iccss	ge_wea_grand_bouclier	ge_wea_grand_bouclier	common	large	shield
+ickamss_ep2_1	ge_mission_reward_kami_bigshield	ge_mission_reward_kami_bigshield	kami	large	shield
+ickamss_ep2_2	ge_mission_reward_kami_bigshield	ge_mission_reward_kami_bigshield	kami	large	shield	mq
+ickamss_ep2_3	ge_mission_reward_kami_bigshield	ge_mission_reward_kami_bigshield	kami	large	shield	hq
+ickarss_ep2_1	ge_mission_reward_karavan_bigshield	ge_mission_reward_karavan_bigshield	karavan	large	shield
+ickarss_ep2_2	ge_mission_reward_karavan_bigshield	ge_mission_reward_karavan_bigshield	karavan	large	shield	mq
+ickarss_ep2_3	ge_mission_reward_karavan_bigshield	ge_mission_reward_karavan_bigshield	karavan	large	shield	hq
+icmsbl	ma_wea_petit_bouclier	ma_wea_petit_bouclier	matis	buckler	shield	living	advantage
+ictsbw	tr_wea_petit_bouclier	tr_wea_petit_bouclier	tryker	buckler	shield	waving	advantage
+iczsbe	zo_wea_petit_bouclier	zo_wea_petit_bouclier	zorai	buckler	shield	electric	advantage
+pre_order	ge_acc_pre_order_item	ge_acc_pre_order_item	common	buckler	shield	preorder
+; armor (caster pieces, Erouk'an's heavy armor, refugee light pieces; the underwear plans make the palette's ic?auwp and
+;   ic?auwv of match_sitem_shape.tsv)
+iccahb_b	ge_hom_armor04_bottes	ge_hof_armor04_bottes	common	heavy	armor	boots	eroukan	hq
+iccahg_b	ge_hom_armor04_hand	ge_hof_armor04_hand	common	heavy	armor	gloves	eroukan	hq
+iccahh_b	ge_hom_casque01	ge_hof_casque01	common	heavy	armor	helmet	eroukan	hq
+iccahp_b	ge_hom_armor04_pantabottes	ge_hof_armor04_pantabottes	common	heavy	armor	pants	eroukan	hq
+iccahs_b	ge_hom_armor04_armpad	ge_hof_armor04_armpad	common	heavy	armor	sleeves	eroukan	hq
+iccahv_b	ge_hom_armor04_gilet	ge_hof_armor04_gilet	common	heavy	armor	vest	eroukan	hq
+icfacb	fy_hom_civil01_bottes	fy_hof_civil01_bottes	fyros	light	caster	armor	boots
+icfacb_2	fy_hom_civil01_bottes	fy_hof_civil01_bottes	fyros	light	caster	armor	boots	mq
+icfacb_3	fy_hom_civil01_bottes	fy_hof_civil01_bottes	fyros	light	caster	armor	boots	hq
+icfacg	tr_hom_underwear_hand	tr_hof_underwear_hand	fyros	light	caster	armor	gloves
+icfacg_2	tr_hom_underwear_hand	tr_hof_underwear_hand	fyros	light	caster	armor	gloves	mq
+icfacg_3	tr_hom_underwear_hand	tr_hof_underwear_hand	fyros	light	caster	armor	gloves	hq
+icfacs	fy_hom_civil01_armpad	fy_hof_civil01_armpad	fyros	light	caster	armor	sleeves
+icfacs_2	fy_hom_civil01_armpad	fy_hof_civil01_armpad	fyros	light	caster	armor	sleeves	mq
+icfacs_3	fy_hom_civil01_armpad	fy_hof_civil01_armpad	fyros	light	caster	armor	sleeves	hq
+icfacv	fy_hom_civil01_gilet	fy_hof_civil01_gilet	fyros	light	caster	armor	vest
+icfacv_2	fy_hom_civil01_gilet	fy_hof_civil01_gilet	fyros	light	caster	armor	vest	mq
+icfacv_3	fy_hom_civil01_gilet	fy_hof_civil01_gilet	fyros	light	caster	armor	vest	hq
+icmacb	ma_hom_civil01_bottes	ma_hof_civil01_bottes	matis	light	caster	armor	boots
+icmacb_2	ma_hom_civil01_bottes	ma_hof_civil01_bottes	matis	light	caster	armor	boots	mq
+icmacb_3	ma_hom_civil01_bottes	ma_hof_civil01_bottes	matis	light	caster	armor	boots	hq
+icmacg	tr_hom_underwear_hand	tr_hof_underwear_hand	matis	light	caster	armor	gloves
+icmacg_2	tr_hom_underwear_hand	tr_hof_underwear_hand	matis	light	caster	armor	gloves	mq
+icmacg_3	tr_hom_underwear_hand	tr_hof_underwear_hand	matis	light	caster	armor	gloves	hq
+icmacs	ma_hom_civil01_armpad	ma_hof_civil01_armpad	matis	light	caster	armor	sleeves
+icmacs_2	ma_hom_civil01_armpad	ma_hof_civil01_armpad	matis	light	caster	armor	sleeves	mq
+icmacs_3	ma_hom_civil01_armpad	ma_hof_civil01_armpad	matis	light	caster	armor	sleeves	hq
+icmacv	ma_hom_civil01_gilet	ma_hof_civil01_gilet	matis	light	caster	armor	vest
+icmacv_2	ma_hom_civil01_gilet	ma_hof_civil01_gilet	matis	light	caster	armor	vest	mq
+icmacv_3	ma_hom_civil01_gilet	ma_hof_civil01_gilet	matis	light	caster	armor	vest	hq
+icralb	tr_hom_underwear_bottes	tr_hof_underwear_bottes	common	starter	refugee	armor	boots
+icralg	tr_hom_underwear_hand	tr_hof_underwear_hand	common	starter	refugee	armor	gloves
+icrals	tr_hom_refugee_armpad	tr_hof_underwear_armpad	common	starter	refugee	armor	sleeves
+ictacb	tr_hom_civil01_bottes	tr_hof_civil01_bottes	tryker	light	caster	armor	boots
+ictacb_2	tr_hom_civil01_bottes	tr_hof_civil01_bottes	tryker	light	caster	armor	boots	mq
+ictacb_3	tr_hom_civil01_bottes	tr_hof_civil01_bottes	tryker	light	caster	armor	boots	hq
+ictacg	tr_hom_civil01_hand	tr_hof_civil01_hand	tryker	light	caster	armor	gloves
+ictacg_2	tr_hom_civil01_hand	tr_hof_civil01_hand	tryker	light	caster	armor	gloves	mq
+ictacg_3	tr_hom_civil01_hand	tr_hof_civil01_hand	tryker	light	caster	armor	gloves	hq
+ictacs	tr_hom_civil01_armpad	tr_hof_civil01_armpad	tryker	light	caster	armor	sleeves
+ictacs_2	tr_hom_civil01_armpad	tr_hof_civil01_armpad	tryker	light	caster	armor	sleeves	mq
+ictacs_3	tr_hom_civil01_armpad	tr_hof_civil01_armpad	tryker	light	caster	armor	sleeves	hq
+ictacv	tr_hom_civil01_gilet	tr_hof_civil01_gilet	tryker	light	caster	armor	vest
+ictacv_2	tr_hom_civil01_gilet	tr_hof_civil01_gilet	tryker	light	caster	armor	vest	mq
+ictacv_3	tr_hom_civil01_gilet	tr_hof_civil01_gilet	tryker	light	caster	armor	vest	hq
+iczacb	zo_hom_civil01_bottes	zo_hof_civil01_bottes	zorai	light	caster	armor	boots
+iczacb_2	zo_hom_civil01_bottes	zo_hof_civil01_bottes	zorai	light	caster	armor	boots	mq
+iczacb_3	zo_hom_civil01_bottes	zo_hof_civil01_bottes	zorai	light	caster	armor	boots	hq
+iczacg	tr_hom_underwear_hand	tr_hof_underwear_hand	zorai	light	caster	armor	gloves
+iczacg_2	tr_hom_underwear_hand	tr_hof_underwear_hand	zorai	light	caster	armor	gloves	mq
+iczacg_3	tr_hom_underwear_hand	tr_hof_underwear_hand	zorai	light	caster	armor	gloves	hq
+iczacs	zo_hom_civil01_armpad	zo_hof_civil01_armpad	zorai	light	caster	armor	sleeves
+iczacs_2	zo_hom_civil01_armpad	zo_hof_civil01_armpad	zorai	light	caster	armor	sleeves	mq
+iczacs_3	zo_hom_civil01_armpad	zo_hof_civil01_armpad	zorai	light	caster	armor	sleeves	hq
+iczacv	zo_hom_civil01_gilet	zo_hof_civil01_gilet	zorai	light	caster	armor	vest
+iczacv_2	zo_hom_civil01_gilet	zo_hof_civil01_gilet	zorai	light	caster	armor	vest	mq
+iczacv_3	zo_hom_civil01_gilet	zo_hof_civil01_gilet	zorai	light	caster	armor	vest	hq
+; jewels
+icfja	-	-	fyros	jewel	anklet
+icfja_2	-	-	fyros	jewel	anklet	mq
+icfja_3	-	-	fyros	jewel	anklet	hq
+icfjb	-	-	fyros	jewel	bracelet
+icfjb_2	-	-	fyros	jewel	bracelet	mq
+icfjb_3	-	-	fyros	jewel	bracelet	hq
+icfjd	-	-	fyros	jewel	diadem
+icfjd_2	-	-	fyros	jewel	diadem	mq
+icfjd_3	-	-	fyros	jewel	diadem	hq
+icfje	-	-	fyros	jewel	earring
+icfje_2	-	-	fyros	jewel	earring	mq
+icfje_3	-	-	fyros	jewel	earring	hq
+icfjp	-	-	fyros	jewel	pendant
+icfjp_2	-	-	fyros	jewel	pendant	mq
+icfjp_3	-	-	fyros	jewel	pendant	hq
+icfjr	-	-	fyros	jewel	ring
+icfjr_2	-	-	fyros	jewel	ring	mq
+icfjr_3	-	-	fyros	jewel	ring	hq
+icmja	-	-	matis	jewel	anklet
+icmja_2	-	-	matis	jewel	anklet	mq
+icmja_3	-	-	matis	jewel	anklet	hq
+icmjb	-	-	matis	jewel	bracelet
+icmjb_2	-	-	matis	jewel	bracelet	mq
+icmjb_3	-	-	matis	jewel	bracelet	hq
+icmjd	-	-	matis	jewel	diadem
+icmjd_2	-	-	matis	jewel	diadem	mq
+icmjd_3	-	-	matis	jewel	diadem	hq
+icmje	-	-	matis	jewel	earring
+icmje_2	-	-	matis	jewel	earring	mq
+icmje_3	-	-	matis	jewel	earring	hq
+icmjp	-	-	matis	jewel	pendant
+icmjp_2	-	-	matis	jewel	pendant	mq
+icmjp_3	-	-	matis	jewel	pendant	hq
+icmjr	-	-	matis	jewel	ring
+icmjr_2	-	-	matis	jewel	ring	mq
+icmjr_3	-	-	matis	jewel	ring	hq
+ictja	-	-	tryker	jewel	anklet
+ictja_2	-	-	tryker	jewel	anklet	mq
+ictja_3	-	-	tryker	jewel	anklet	hq
+ictjb	-	-	tryker	jewel	bracelet
+ictjb_2	-	-	tryker	jewel	bracelet	mq
+ictjb_3	-	-	tryker	jewel	bracelet	hq
+ictjd	-	-	tryker	jewel	diadem
+ictjd_2	-	-	tryker	jewel	diadem	mq
+ictjd_3	-	-	tryker	jewel	diadem	hq
+ictje	-	-	tryker	jewel	earring
+ictje_2	-	-	tryker	jewel	earring	mq
+ictje_3	-	-	tryker	jewel	earring	hq
+ictjp	-	-	tryker	jewel	pendant
+ictjp_2	-	-	tryker	jewel	pendant	mq
+ictjp_3	-	-	tryker	jewel	pendant	hq
+ictjr	-	-	tryker	jewel	ring
+ictjr_2	-	-	tryker	jewel	ring	mq
+ictjr_3	-	-	tryker	jewel	ring	hq
+iczja	-	-	zorai	jewel	anklet
+iczja_2	-	-	zorai	jewel	anklet	mq
+iczja_3	-	-	zorai	jewel	anklet	hq
+iczjb	-	-	zorai	jewel	bracelet
+iczjb_2	-	-	zorai	jewel	bracelet	mq
+iczjb_3	-	-	zorai	jewel	bracelet	hq
+iczjd	-	-	zorai	jewel	diadem
+iczjd_2	-	-	zorai	jewel	diadem	mq
+iczjd_3	-	-	zorai	jewel	diadem	hq
+iczje	-	-	zorai	jewel	earring
+iczje_2	-	-	zorai	jewel	earring	mq
+iczje_3	-	-	zorai	jewel	earring	hq
+iczjp	-	-	zorai	jewel	pendant
+iczjp_2	-	-	zorai	jewel	pendant	mq
+iczjp_3	-	-	zorai	jewel	pendant	hq
+iczjr	-	-	zorai	jewel	ring
+iczjr_2	-	-	zorai	jewel	ring	mq
+iczjr_3	-	-	zorai	jewel	ring	hq
+; crafting and harvest tools (kami and karavan, the refugee and common tools, and the tool maker)
+icokamtammo_1	ge_kapo_pilon_o	ge_kapo_pilon_o	kami	faction	crafting	tool	ammotool	mq
+icokamtammo_2	ge_kapo_pilon_o	ge_kapo_pilon_o	kami	faction	crafting	tool	ammotool	hq
+icokamtarmor_1	ge_kcou_aiguille_o	ge_kcou_aiguille_o	kami	faction	crafting	tool	armortool	mq
+icokamtarmor_2	ge_kcou_aiguille_o	ge_kcou_aiguille_o	kami	faction	crafting	tool	armortool	hq
+icokamtforage_1	ge_acc_pick_o	ge_acc_pick_o	kami	faction	harvest	tool	pick	mq
+icokamtforage_2	ge_acc_pick_o	ge_acc_pick_o	kami	faction	harvest	tool	pick	hq
+icokamtjewel_1	ge_kbij_marteau_o	ge_kbij_marteau_o	kami	faction	crafting	tool	jewelrytool	mq
+icokamtjewel_2	ge_kbij_marteau_o	ge_kbij_marteau_o	kami	faction	crafting	tool	jewelrytool	hq
+icokamtmwea_1	ge_kwc_ciseau_o	ge_kwc_ciseau_o	kami	faction	crafting	tool	meleeweapontool	mq
+icokamtmwea_2	ge_kwc_ciseau_o	ge_kwc_ciseau_o	kami	faction	crafting	tool	meleeweapontool	hq
+icokamtrwea_1	ge_kwj_ciseau_o	ge_kwj_ciseau_o	kami	faction	crafting	tool	rangeweapontool	mq
+icokamtrwea_2	ge_kwj_ciseau_o	ge_kwj_ciseau_o	kami	faction	crafting	tool	rangeweapontool	hq
+icokartammo_1	ge_kapo_pilon_o	ge_kapo_pilon_o	karavan	faction	crafting	tool	ammotool	mq
+icokartammo_2	ge_kapo_pilon_o	ge_kapo_pilon_o	karavan	faction	crafting	tool	ammotool	hq
+icokartarmor_1	ge_kcou_aiguille_o	ge_kcou_aiguille_o	karavan	faction	crafting	tool	armortool	mq
+icokartarmor_2	ge_kcou_aiguille_o	ge_kcou_aiguille_o	karavan	faction	crafting	tool	armortool	hq
+icokartforage_1	ge_acc_pick_o	ge_acc_pick_o	karavan	faction	harvest	tool	pick	mq
+icokartforage_2	ge_acc_pick_o	ge_acc_pick_o	karavan	faction	harvest	tool	pick	hq
+icokartjewel_1	ge_kbij_marteau_o	ge_kbij_marteau_o	karavan	faction	crafting	tool	jewelrytool	mq
+icokartjewel_2	ge_kbij_marteau_o	ge_kbij_marteau_o	karavan	faction	crafting	tool	jewelrytool	hq
+icokartmwea_1	ge_kwc_ciseau_o	ge_kwc_ciseau_o	karavan	faction	crafting	tool	meleeweapontool	mq
+icokartmwea_2	ge_kwc_ciseau_o	ge_kwc_ciseau_o	karavan	faction	crafting	tool	meleeweapontool	hq
+icokartrwea_1	ge_kwj_ciseau_o	ge_kwj_ciseau_o	karavan	faction	crafting	tool	rangeweapontool	mq
+icokartrwea_2	ge_kwj_ciseau_o	ge_kwj_ciseau_o	karavan	faction	crafting	tool	rangeweapontool	hq
+itammo	ge_kapo_pilon_a_1	ge_kapo_pilon_a_1	common	crafting	tool	ammotool
+itarmor	ge_kcou_aiguille_a	ge_kcou_aiguille_a	common	crafting	tool	armortool
+itforage	ge_acc_pick_a	ge_acc_pick_a	common	harvest	tool	pick
+itjewel	ge_kbij_marteau_a	ge_kbij_marteau_a	common	crafting	tool	jewelrytool
+itmwea	ge_kwc_ciseau_a	ge_kwc_ciseau_a	common	crafting	tool	meleeweapontool
+itrwea	ge_kwj_ciseau_a	ge_kwj_ciseau_a	common	crafting	tool	rangeweapontool
+ittool	ge_acc_maillet_a_1	ge_acc_maillet_a_1	common	crafting	tool	toolmaker
+itrtam	ge_kapo_pilon_a_1	ge_kapo_pilon_a_1	common	starter	refugee	crafting	tool	ammotool
+itrtje	ge_kbij_marteau_a	ge_kbij_marteau_a	common	starter	refugee	crafting	tool	jewelrytool
+itrtmw	ge_kwc_ciseau_a	ge_kwc_ciseau_a	common	starter	refugee	crafting	tool	meleeweapontool
+itrtrw	ge_kwj_ciseau_a	ge_kwj_ciseau_a	common	starter	refugee	crafting	tool	rangeweapontool
+; construction pieces of the kami and karavan constructions, crafted as mission items
+ep2_high_brick	-	-	karavan	mission	construction	high	brick
+ep2_large_bark_splinter	-	-	kami	mission	construction	big	bark
+ep2_large_bud	-	-	kami	mission	construction	big	bud
+ep2_large_conglomerate	-	-	karavan	mission	construction	big	conglomerate
+ep2_large_fibers	-	-	kami	mission	construction	big	fibers
+ep2_large_moss_patch	-	-	kami	mission	construction	big	moss
+ep2_large_patch_cover	-	-	karavan	mission	construction	big	cover
+ep2_large_root_piece	-	-	kami	mission	construction	big	root
+ep2_large_trunk	-	-	kami	mission	construction	big	trunk
+ep2_low_brick	-	-	karavan	mission	construction	low	brick
+ep2_major_column	-	-	karavan	mission	construction	major	column
+ep2_major_justice_column	-	-	karavan	mission	construction	major	justice	column
+ep2_major_maduk_core	-	-	kami	mission	construction	major	maduk	core
+ep2_major_ornament	-	-	karavan	mission	construction	major	ornament
+ep2_major_pedestal	-	-	karavan	mission	construction	major	pedestal
+ep2_major_statue_part	-	-	karavan	mission	construction	major	statue
+ep2_major_symbol_part	-	-	kami	mission	construction	major	symbol
+ep2_minor_column	-	-	karavan	mission	construction	minor	column
+ep2_minor_justice_column	-	-	karavan	mission	construction	minor	justice	column
+ep2_minor_maduk_core	-	-	kami	mission	construction	minor	maduk	core
+ep2_minor_ornament	-	-	karavan	mission	construction	minor	ornament
+ep2_minor_pedestal	-	-	karavan	mission	construction	minor	pedestal
+ep2_minor_statue_part	-	-	karavan	mission	construction	minor	statue
+ep2_minor_symbol_part	-	-	kami	mission	construction	minor	symbol
+ep2_small_bark_splinter	-	-	kami	mission	construction	small	bark
+ep2_small_bud	-	-	kami	mission	construction	small	bud
+ep2_small_conglomerate	-	-	karavan	mission	construction	small	conglomerate
+ep2_small_fibers	-	-	kami	mission	construction	small	fibers
+ep2_small_moss_patch	-	-	kami	mission	construction	small	moss
+ep2_small_patch_cover	-	-	karavan	mission	construction	small	cover
+ep2_small_root_piece	-	-	kami	mission	construction	small	root
+ep2_small_trunk	-	-	kami	mission	construction	small	trunk

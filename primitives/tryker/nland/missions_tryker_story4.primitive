@@ -1412,15 +1412,15 @@
             </PROPERTY>
             <PROPERTY TYPE="string">
               <NAME>name</NAME>
-              <STRING>teeth</STRING>
+              <STRING>resin</STRING>
             </PROPERTY>
             <PROPERTY TYPE="string">
               <NAME>var_name</NAME>
-              <STRING>teeth</STRING>
+              <STRING>resin</STRING>
             </PROPERTY>
             <PROPERTY TYPE="string">
               <NAME>item_sheet</NAME>
-              <STRING>m0692chdca01</STRING>
+              <STRING>m0046dxacb01</STRING>
             </PROPERTY>
           </CHILD>
           <CHILD TYPE="CPrimNode">
@@ -1430,15 +1430,15 @@
             </PROPERTY>
             <PROPERTY TYPE="string">
               <NAME>name</NAME>
-              <STRING>teeth_qt</STRING>
+              <STRING>resin_qt</STRING>
             </PROPERTY>
             <PROPERTY TYPE="string">
               <NAME>var_name</NAME>
-              <STRING>teeth_qt</STRING>
+              <STRING>resin_qt</STRING>
             </PROPERTY>
             <PROPERTY TYPE="string">
               <NAME>quantity</NAME>
-              <STRING>3</STRING>
+              <STRING>1</STRING>
             </PROPERTY>
           </CHILD>
           <CHILD TYPE="CPrimNode">
@@ -1448,65 +1448,11 @@
             </PROPERTY>
             <PROPERTY TYPE="string">
               <NAME>name</NAME>
-              <STRING>teeth_ql</STRING>
+              <STRING>resin_ql</STRING>
             </PROPERTY>
             <PROPERTY TYPE="string">
               <NAME>var_name</NAME>
-              <STRING>teeth_ql</STRING>
-            </PROPERTY>
-            <PROPERTY TYPE="string">
-              <NAME>quality</NAME>
-              <STRING>10</STRING>
-            </PROPERTY>
-          </CHILD>
-          <CHILD TYPE="CPrimNode">
-            <PROPERTY TYPE="string">
-              <NAME>class</NAME>
-              <STRING>var_item</STRING>
-            </PROPERTY>
-            <PROPERTY TYPE="string">
-              <NAME>name</NAME>
-              <STRING>oil</STRING>
-            </PROPERTY>
-            <PROPERTY TYPE="string">
-              <NAME>var_name</NAME>
-              <STRING>oil</STRING>
-            </PROPERTY>
-            <PROPERTY TYPE="string">
-              <NAME>item_sheet</NAME>
-              <STRING>m0103dxacb01</STRING>
-            </PROPERTY>
-          </CHILD>
-          <CHILD TYPE="CPrimNode">
-            <PROPERTY TYPE="string">
-              <NAME>class</NAME>
-              <STRING>var_quantity</STRING>
-            </PROPERTY>
-            <PROPERTY TYPE="string">
-              <NAME>name</NAME>
-              <STRING>oil_qt</STRING>
-            </PROPERTY>
-            <PROPERTY TYPE="string">
-              <NAME>var_name</NAME>
-              <STRING>oil_qt</STRING>
-            </PROPERTY>
-            <PROPERTY TYPE="string">
-              <NAME>quantity</NAME>
-              <STRING>2</STRING>
-            </PROPERTY>
-          </CHILD>
-          <CHILD TYPE="CPrimNode">
-            <PROPERTY TYPE="string">
-              <NAME>class</NAME>
-              <STRING>var_quality</STRING>
-            </PROPERTY>
-            <PROPERTY TYPE="string">
-              <NAME>name</NAME>
-              <STRING>oil_ql</STRING>
-            </PROPERTY>
-            <PROPERTY TYPE="string">
-              <NAME>var_name</NAME>
-              <STRING>oil_ql</STRING>
+              <STRING>resin_ql</STRING>
             </PROPERTY>
             <PROPERTY TYPE="string">
               <NAME>quality</NAME>
@@ -1546,7 +1492,7 @@
             </PROPERTY>
             <PROPERTY TYPE="string">
               <NAME>quantity</NAME>
-              <STRING>1</STRING>
+              <STRING>2</STRING>
             </PROPERTY>
           </CHILD>
           <CHILD TYPE="CPrimNode">
@@ -1621,8 +1567,7 @@
                 <NAME>item/quantity/quality</NAME>
                 <STRING>$tool$ $tool_qt$ $tool_ql$</STRING>
                 <STRING>$skin$ $skin_qt$ $skin_ql$</STRING>
-                <STRING>$teeth$ $teeth_qt$ $teeth_ql$</STRING>
-                <STRING>$oil$ $oil_qt$ $oil_ql$</STRING>
+                <STRING>$resin$ $resin_qt$ $resin_ql$</STRING>
                 <STRING>$sap$ $sap_qt$ $sap_ql$</STRING>
               </PROPERTY>
             </CHILD>

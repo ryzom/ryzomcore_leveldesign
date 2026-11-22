@@ -5,30 +5,30 @@
   <PARENT Filename="_mckd.sitem"/>
   <STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Blue"/>
+      <ATOM Name="MpColor" Value="Red"/>
       <STRUCT Name="MpParam">
-        <STRUCT Name="I MpCA (Barrel)">
-          <ATOM Name="Durability" Value="45"/>
-          <ATOM Name="Weight" Value="65"/>
-          <ATOM Name="SapLoad" Value="65"/>
-          <ATOM Name="DMG" Value="65"/>
-          <ATOM Name="Speed" Value="65"/>
-          <ATOM Name="Range" Value="65"/>
-          <ATOM Name="DodgeModifier" Value="65"/>
-          <ATOM Name="ParryModifier" Value="100"/>
-          <ATOM Name="AdversaryDodgeModifier" Value="45"/>
-          <ATOM Name="AdversaryParryModifier" Value="65"/>
-          <ATOM Name="CraftCivSpec" Value="zorai"/>
-        </STRUCT>
         <STRUCT Name="M MpCR (Armor shell)">
-          <ATOM Name="Durability" Value="100"/>
-          <ATOM Name="Weight" Value="66"/>
+          <ATOM Name="Durability" Value="45"/>
+          <ATOM Name="Weight" Value="45"/>
           <ATOM Name="DodgeModifier" Value="66"/>
           <ATOM Name="ParryModifier" Value="66"/>
-          <ATOM Name="ProtectionFactor" Value="66"/>
-          <ATOM Name="MaxSlashingProtection" Value="45"/>
+          <ATOM Name="ProtectionFactor" Value="100"/>
+          <ATOM Name="MaxSlashingProtection" Value="66"/>
           <ATOM Name="MaxBluntProtection" Value="66"/>
-          <ATOM Name="MaxPiercingProtection" Value="45"/>
+          <ATOM Name="MaxPiercingProtection" Value="66"/>
+          <ATOM Name="CraftCivSpec" Value="zorai"/>
+        </STRUCT>
+        <STRUCT Name="I MpCA (Barrel)">
+          <ATOM Name="Durability" Value="65"/>
+          <ATOM Name="Weight" Value="65"/>
+          <ATOM Name="SapLoad" Value="65"/>
+          <ATOM Name="DMG" Value="45"/>
+          <ATOM Name="Speed" Value="65"/>
+          <ATOM Name="Range" Value="85"/>
+          <ATOM Name="DodgeModifier" Value="65"/>
+          <ATOM Name="ParryModifier" Value="65"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="65"/>
+          <ATOM Name="AdversaryParryModifier" Value="65"/>
           <ATOM Name="CraftCivSpec" Value="zorai"/>
         </STRUCT>
       </STRUCT>

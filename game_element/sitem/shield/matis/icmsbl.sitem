@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_c_sb.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="matis buckler shield living"/>
+      <ATOM Name="origin" Value="matis"/>
+      <ATOM Name="CraftPlan" Value="bcmsea03.sbrick"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="ma_wea_petit_bouclier.shape"/>
+      <ATOM Name="shape_female" Value="ma_wea_petit_bouclier.shape"/>
+      <ATOM Name="map_variant" Value="High Quality"/>
+      <ATOM Name="icon background" Value="bk_matis.png"/>
+      <STRUCT Name="fx">
+        <ATOM Name="AdvantageFX" Value="ma_wea_petit_bouclier.ps"/>
+      </STRUCT>
+      <ATOM Name="has_fx" Value="true"/>    </STRUCT>
+  </STRUCT>
+</FORM>

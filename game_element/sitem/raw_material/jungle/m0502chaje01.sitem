@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<FORM Version="0.0" State="modified">
+  <PARENT Filename="_mj.sitem"/>
+  <PARENT Filename="_m0502.sitem"/>
+  <PARENT Filename="_mcha.sitem"/>
+  <STRUCT>
+    <STRUCT Name="mp">
+      <ATOM Name="MpColor" Value="Red"/>
+      <STRUCT Name="MpParam">
+        <STRUCT Name="R MpED (Jewel stone)">
+          <ATOM Name="Durability" Value="60"/>
+          <ATOM Name="Weight" Value="84"/>
+          <ATOM Name="AcidProtection" Value="84"/>
+          <ATOM Name="ColdProtection" Value="60"/>
+          <ATOM Name="FireProtection" Value="100"/>
+          <ATOM Name="RotProtection" Value="83"/>
+          <ATOM Name="ShockWaveProtection" Value="83"/>
+          <ATOM Name="PoisonProtection" Value="83"/>
+          <ATOM Name="ElectricityProtection" Value="83"/>
+          <ATOM Name="CraftCivSpec" Value="zorai"/>
+        </STRUCT>
+        <STRUCT Name="Z MpMF (Magic Focus)">
+          <ATOM Name="Durability" Value="80"/>
+          <ATOM Name="Weight" Value="80"/>
+          <ATOM Name="SapLoad" Value="80"/>
+          <ATOM Name="ElementalCastingTimeFactor" Value="80"/>
+          <ATOM Name="ElementalPowerFactor" Value="80"/>
+          <ATOM Name="OffensiveAfflictionCastingTimeFactor" Value="80"/>
+          <ATOM Name="OffensiveAfflictionPowerFactor" Value="80"/>
+          <ATOM Name="HealCastingTimeFactor" Value="60"/>
+          <ATOM Name="HealPowerFactor" Value="100"/>
+          <ATOM Name="DefensiveAfflictionCastingTimeFactor" Value="80"/>
+          <ATOM Name="DefensiveAfflictionPowerFactor" Value="80"/>
+          <ATOM Name="CraftCivSpec" Value="zorai"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="MaxQuality" Value="250"/>
+      <ATOM Name="StatEnergy" Value="80"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+</FORM>

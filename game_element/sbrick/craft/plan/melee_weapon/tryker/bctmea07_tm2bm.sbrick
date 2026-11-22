@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bctmea.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="7"/>
+      <ATOM Name="SPCost" Value="5"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SC 0"/>
+      <ATOM Name="Skill" Value="SCM2MEM"/>
+      <ATOM Name="Level" Value="10"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="mw_2h_mace.png"/>
+    </STRUCT>
+    <STRUCT Name="faber">
+      <STRUCT Name="Create">
+        <ATOM Name="Crafted Item" Value="ictm2bm.sitem"/>
+        <ATOM Name="Nb built items" Value="1"/>
+        <ATOM Name="MP 1" Value="Raw Material for Hammer"/>
+        <ATOM Name="Quantity 1" Value="5"/>
+        <ATOM Name="MP 2" Value="Raw Material for Shaft"/>
+        <ATOM Name="Quantity 2" Value="4"/>
+        <ATOM Name="MP 3" Value="Raw Material for Grip"/>
+        <ATOM Name="Quantity 3" Value="2"/>
+        <ATOM Name="MP 4" Value="Raw Material for Counterweight"/>
+        <ATOM Name="Quantity 4" Value="1"/>
+      </STRUCT>
+      <ATOM Name="Adversary Dodge Modifier Factor" Value="0.8"/>
+      <ATOM Name="Adversary Parry Modifier Factor" Value="0.8"/>
+      <ATOM Name="DMG Factor" Value="0.8"/>
+      <ATOM Name="Dodge Factor" Value="0.8"/>
+      <ATOM Name="Durability Factor" Value="0.8"/>
+      <ATOM Name="Parry Factor" Value="0.8"/>
+      <ATOM Name="SapLoad Factor" Value="0.8"/>
+      <ATOM Name="Speed Factor" Value="0.8"/>
+      <ATOM Name="Weight Factor" Value="0.8"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

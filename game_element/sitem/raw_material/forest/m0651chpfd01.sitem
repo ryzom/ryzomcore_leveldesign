@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<FORM Version="0.0" State="modified">
+  <PARENT Filename="_mf.sitem"/>
+  <PARENT Filename="_m0651.sitem"/>
+  <PARENT Filename="_mchp.sitem"/>
+  <STRUCT>
+    <STRUCT Name="mp">
+      <ATOM Name="MpColor" Value="Blue"/>
+      <STRUCT Name="MpParam">
+        <STRUCT Name="Q MpSU (Jewel stone support)">
+          <ATOM Name="Durability" Value="67"/>
+          <ATOM Name="Weight" Value="45"/>
+          <ATOM Name="DesertResistance" Value="100"/>
+          <ATOM Name="ForestResistance" Value="66"/>
+          <ATOM Name="LacustreResistance" Value="45"/>
+          <ATOM Name="JungleResistance" Value="66"/>
+          <ATOM Name="PrimaryRootResistance" Value="66"/>
+          <ATOM Name="CraftCivSpec" Value="matis"/>
+        </STRUCT>
+        <STRUCT Name="L MpPR (Ammo bullet)">
+          <ATOM Name="Durability" Value="65"/>
+          <ATOM Name="Weight" Value="65"/>
+          <ATOM Name="DMG" Value="85"/>
+          <ATOM Name="Speed" Value="45"/>
+          <ATOM Name="Range" Value="65"/>
+          <ATOM Name="CraftCivSpec" Value="matis"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="MaxQuality" Value="250"/>
+      <ATOM Name="StatEnergy" Value="65"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+</FORM>

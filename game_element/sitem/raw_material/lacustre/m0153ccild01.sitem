@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<FORM Version="0.0" State="modified">
+  <PARENT Filename="_ml.sitem"/>
+  <PARENT Filename="_m0153.sitem"/>
+  <PARENT Filename="_mcci.sitem"/>
+  <STRUCT>
+    <STRUCT Name="mp">
+      <ATOM Name="MpColor" Value="Red"/>
+      <STRUCT Name="MpParam">
+        <STRUCT Name="D MpM (Shaft)">
+          <ATOM Name="Durability" Value="66"/>
+          <ATOM Name="Weight" Value="45"/>
+          <ATOM Name="SapLoad" Value="66"/>
+          <ATOM Name="DMG" Value="66"/>
+          <ATOM Name="Speed" Value="66"/>
+          <ATOM Name="DodgeModifier" Value="100"/>
+          <ATOM Name="ParryModifier" Value="45"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="66"/>
+          <ATOM Name="AdversaryParryModifier" Value="65"/>
+          <ATOM Name="CraftCivSpec" Value="tryker"/>
+        </STRUCT>
+        <STRUCT Name="P MpAT (Armor clip)">
+          <ATOM Name="Durability" Value="65"/>
+          <ATOM Name="Weight" Value="65"/>
+          <ATOM Name="DodgeModifier" Value="85"/>
+          <ATOM Name="ParryModifier" Value="45"/>
+          <ATOM Name="ProtectionFactor" Value="65"/>
+          <ATOM Name="MaxSlashingProtection" Value="65"/>
+          <ATOM Name="MaxBluntProtection" Value="65"/>
+          <ATOM Name="MaxPiercingProtection" Value="65"/>
+          <ATOM Name="CraftCivSpec" Value="tryker"/>
+        </STRUCT>
+      </STRUCT>
+      <ATOM Name="MaxQuality" Value="250"/>
+      <ATOM Name="StatEnergy" Value="65"/>
+    </STRUCT>
+  </STRUCT>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+  <STRUCT/>
+</FORM>

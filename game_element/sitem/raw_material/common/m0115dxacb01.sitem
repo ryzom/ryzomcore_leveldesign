@@ -4,22 +4,24 @@
   <PARENT Filename="_m0115.sitem"/>
   <STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Green"/>
+      <ATOM Name="MpColor" Value="Turquoise"/>
       <STRUCT Name="MpParam">
-        <STRUCT Name="G MpGA (Trigger)">
-          <ATOM Name="Durability" Value="1"/>
-          <ATOM Name="Weight" Value="20"/>
-          <ATOM Name="SapLoad" Value="20"/>
-          <ATOM Name="Speed" Value="20"/>
-          <ATOM Name="DodgeModifier" Value="60"/>
-          <ATOM Name="ParryModifier" Value="20"/>
-          <ATOM Name="AdversaryDodgeModifier" Value="0"/>
-          <ATOM Name="AdversaryParryModifier" Value="20"/>
+        <STRUCT Name="L MpPR (Ammo bullet)">
+          <ATOM Name="Durability" Value="20"/>
+          <ATOM Name="Weight" Value="0"/>
+          <ATOM Name="DMG" Value="0"/>
+          <ATOM Name="Speed" Value="60"/>
+          <ATOM Name="Range" Value="20"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
         <STRUCT Name="Q MpSU (Jewel stone support)">
-          <ATOM Name="Durability" Value="1"/>
-          <ATOM Name="Weight" Value="40"/>
+          <ATOM Name="Durability" Value="20"/>
+          <ATOM Name="Weight" Value="20"/>
+          <ATOM Name="DesertResistance" Value="0"/>
+          <ATOM Name="ForestResistance" Value="20"/>
+          <ATOM Name="LacustreResistance" Value="40"/>
+          <ATOM Name="JungleResistance" Value="20"/>
+          <ATOM Name="PrimaryRootResistance" Value="20"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
       </STRUCT>

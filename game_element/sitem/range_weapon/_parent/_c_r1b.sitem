@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="one-handed bowpistol"/>
+      <ATOM Name="family" Value="range weapon"/>
+      <ATOM Name="ItemType" Value="Bowpistol"/>
+      <STRUCT Name="EquipmentInfo">
+        <ARRAY Name="EquipmentSlots">
+          <ATOM Name="right_hand_exclusive_hand" Value="Right hand exclusive Hand"/>
+        </ARRAY>
+        <ATOM Name="WearEquipmentMalus" Value="0.01"/>
+      </STRUCT>
+      <ATOM Name="Bulk" Value="6"/>
+      <ATOM Name="Time to Equip In Ticks" Value="20"/>
+      <ATOM Name="RequiredCharac" Value="WellBalanced"/>
+      <ATOM Name="RequiredCharacQualityFactor" Value="1"/>
+      <ATOM Name="RequiredCharacQualityOffset" Value="-10"/>
+    </STRUCT>
+    <STRUCT Name="range weapon">
+      <ATOM Name="category" Value="light"/>
+      <ATOM Name="skill" Value="SFR1APM"/>
+      <ATOM Name="RangeWeaponType" Value="Generic"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="icon" Value="rw_pistolarc.png"/>
+      <ATOM Name="anim_set" Value="Gun"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

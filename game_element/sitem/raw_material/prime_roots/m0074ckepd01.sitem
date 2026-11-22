@@ -5,30 +5,30 @@
   <PARENT Filename="_mcke.sitem"/>
   <STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Black"/>
+      <ATOM Name="MpColor" Value="White"/>
       <STRUCT Name="MpParam">
-        <STRUCT Name="H MpPE (Firing pin)">
+        <STRUCT Name="B MpH (Hammer)">
+          <ATOM Name="Durability" Value="66"/>
+          <ATOM Name="Weight" Value="45"/>
+          <ATOM Name="SapLoad" Value="66"/>
+          <ATOM Name="DMG" Value="66"/>
+          <ATOM Name="Speed" Value="66"/>
+          <ATOM Name="DodgeModifier" Value="66"/>
+          <ATOM Name="ParryModifier" Value="65"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="100"/>
+          <ATOM Name="AdversaryParryModifier" Value="45"/>
+          <ATOM Name="CraftCivSpec" Value="common"/>
+        </STRUCT>
+        <STRUCT Name="D MpM (Shaft)">
           <ATOM Name="Durability" Value="65"/>
           <ATOM Name="Weight" Value="65"/>
           <ATOM Name="SapLoad" Value="65"/>
           <ATOM Name="DMG" Value="65"/>
           <ATOM Name="Speed" Value="65"/>
-          <ATOM Name="Range" Value="65"/>
           <ATOM Name="DodgeModifier" Value="45"/>
-          <ATOM Name="ParryModifier" Value="45"/>
+          <ATOM Name="ParryModifier" Value="85"/>
           <ATOM Name="AdversaryDodgeModifier" Value="65"/>
-          <ATOM Name="AdversaryParryModifier" Value="100"/>
-          <ATOM Name="CraftCivSpec" Value="common"/>
-        </STRUCT>
-        <STRUCT Name="P MpAT (Armor clip)">
-          <ATOM Name="Durability" Value="66"/>
-          <ATOM Name="Weight" Value="66"/>
-          <ATOM Name="DodgeModifier" Value="66"/>
-          <ATOM Name="ParryModifier" Value="45"/>
-          <ATOM Name="ProtectionFactor" Value="66"/>
-          <ATOM Name="MaxSlashingProtection" Value="100"/>
-          <ATOM Name="MaxBluntProtection" Value="66"/>
-          <ATOM Name="MaxPiercingProtection" Value="45"/>
+          <ATOM Name="AdversaryParryModifier" Value="65"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
       </STRUCT>

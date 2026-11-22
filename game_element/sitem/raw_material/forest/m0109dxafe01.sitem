@@ -4,30 +4,28 @@
   <PARENT Filename="_m0109.sitem"/>
   <STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Blue"/>
+      <ATOM Name="MpColor" Value="Red"/>
       <STRUCT Name="MpParam">
-        <STRUCT Name="H MpPE (Firing pin)">
-          <ATOM Name="Durability" Value="65"/>
-          <ATOM Name="Weight" Value="100"/>
-          <ATOM Name="SapLoad" Value="45"/>
-          <ATOM Name="DMG" Value="65"/>
-          <ATOM Name="Speed" Value="65"/>
-          <ATOM Name="Range" Value="65"/>
-          <ATOM Name="DodgeModifier" Value="65"/>
-          <ATOM Name="ParryModifier" Value="65"/>
-          <ATOM Name="AdversaryDodgeModifier" Value="45"/>
-          <ATOM Name="AdversaryParryModifier" Value="65"/>
-          <ATOM Name="CraftCivSpec" Value="matis"/>
-        </STRUCT>
-        <STRUCT Name="P MpAT (Armor clip)">
-          <ATOM Name="Durability" Value="66"/>
-          <ATOM Name="Weight" Value="100"/>
+        <STRUCT Name="N MpRI (Armor interior coating)">
+          <ATOM Name="Durability" Value="45"/>
+          <ATOM Name="Weight" Value="45"/>
           <ATOM Name="DodgeModifier" Value="66"/>
           <ATOM Name="ParryModifier" Value="66"/>
-          <ATOM Name="ProtectionFactor" Value="66"/>
-          <ATOM Name="MaxSlashingProtection" Value="45"/>
+          <ATOM Name="ProtectionFactor" Value="100"/>
+          <ATOM Name="MaxSlashingProtection" Value="66"/>
           <ATOM Name="MaxBluntProtection" Value="66"/>
-          <ATOM Name="MaxPiercingProtection" Value="45"/>
+          <ATOM Name="MaxPiercingProtection" Value="66"/>
+          <ATOM Name="CraftCivSpec" Value="matis"/>
+        </STRUCT>
+        <STRUCT Name="O MpRE (Armor interieur stuffing)">
+          <ATOM Name="Durability" Value="65"/>
+          <ATOM Name="Weight" Value="45"/>
+          <ATOM Name="DodgeModifier" Value="65"/>
+          <ATOM Name="ParryModifier" Value="65"/>
+          <ATOM Name="ProtectionFactor" Value="85"/>
+          <ATOM Name="MaxSlashingProtection" Value="65"/>
+          <ATOM Name="MaxBluntProtection" Value="65"/>
+          <ATOM Name="MaxPiercingProtection" Value="65"/>
           <ATOM Name="CraftCivSpec" Value="matis"/>
         </STRUCT>
       </STRUCT>

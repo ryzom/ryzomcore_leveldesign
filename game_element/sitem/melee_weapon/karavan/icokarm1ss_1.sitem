@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_c_m1ss.sitem"/>
+  <STRUCT>
+    <STRUCT Name="basics">
+      <ATOM Name="name" Value="karavan faction one-handed slashing sword"/>
+      <ATOM Name="origin" Value="karavan"/>
+      <ATOM Name="CraftPlan" Value="bcokarem1ss_1.sbrick"/>
+    </STRUCT>
+    <STRUCT Name="3d">
+      <ATOM Name="shape" Value="ge_tr_wea_trib_epee1m.shape"/>
+      <ATOM Name="shape_female" Value="ge_tr_wea_trib_epee1m.shape"/>
+      <ATOM Name="map_variant" Value="Medium Quality"/>
+      <ATOM Name="icon background" Value="bk_karavan.png"/>
+      <STRUCT Name="fx">
+        <ATOM Name="Trail" Value="ge_tr_wea_trib_epee1m_trail_car.shape"/>
+        <ATOM Name="AdvantageFX" Value="outpost_karavan_type.ps"/>
+      </STRUCT>
+      <ATOM Name="has_fx" Value="true"/>    </STRUCT>
+  </STRUCT>
+</FORM>

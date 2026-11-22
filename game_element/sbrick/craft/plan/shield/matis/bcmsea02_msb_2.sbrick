@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bcmsea.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="2"/>
+      <ATOM Name="SPCost" Value="7"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SCA 40"/>
+      <ATOM Name="Skill" Value="SCASBEM"/>
+      <ATOM Name="Level" Value="50"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="sh_buckler.png"/>
+    </STRUCT>
+    <STRUCT Name="faber">
+      <STRUCT Name="Create">
+        <ATOM Name="Crafted Item" Value="icmsb_2.sitem"/>
+        <ATOM Name="Nb built items" Value="1"/>
+        <ATOM Name="MP 1" Value="Raw Material for Armor shell"/>
+        <ATOM Name="Quantity 1" Value="7"/>
+        <ATOM Name="MP 2" Value="Raw Material for Armor clip"/>
+        <ATOM Name="Quantity 2" Value="3"/>
+        <ATOM Name="MP 3" Value="Raw Material for Armor interior coating"/>
+        <ATOM Name="Quantity 3" Value="2"/>
+      </STRUCT>
+      <ATOM Name="Blunt Protection Factor" Value="0.9"/>
+      <ATOM Name="Dodge Factor" Value="0.9"/>
+      <ATOM Name="Durability Factor" Value="0.9"/>
+      <ATOM Name="Parry Factor" Value="0.9"/>
+      <ATOM Name="Piercing Protection Factor" Value="0.9"/>
+      <ATOM Name="Protection Factor" Value="0.9"/>
+      <ATOM Name="Slashing Protection Factor" Value="0.9"/>
+      <ATOM Name="Weight Factor" Value="0.9"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

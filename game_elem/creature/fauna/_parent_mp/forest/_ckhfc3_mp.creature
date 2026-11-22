@@ -3,25 +3,39 @@
   <STRUCT>
     <STRUCT Name="Harvest">
       <STRUCT Name="MP1">
-        <ATOM Name="AssociatedItem" Value="m0590ckhca01.sitem"/>
+        <ATOM Name="MinQuality" Value="90"/>
+        <ATOM Name="MaxQuality" Value="90"/>
+        <ATOM Name="AssociatedItem" Value="m0291ckhfc01.sitem"/>
       </STRUCT>
       <STRUCT Name="MP2">
-        <ATOM Name="AssociatedItem" Value="m0072ckhca01.sitem"/>
-      </STRUCT>
-      <STRUCT Name="MP3">
-        <ATOM Name="AssociatedItem" Value="m0496ckhca01.sitem"/>
-      </STRUCT>
-      <STRUCT Name="MP4">
-        <ATOM Name="AssociatedItem" Value="m0591ckhca01.sitem"/>
-      </STRUCT>
-      <STRUCT Name="MP5">
-        <ATOM Name="AssociatedItem" Value="m0592ckhca01.sitem"/>
-      </STRUCT>
-      <STRUCT Name="MP6">
+        <ATOM Name="MinQuality" Value="90"/>
+        <ATOM Name="MaxQuality" Value="90"/>
         <ATOM Name="AssociatedItem" Value="m0281ckhfc01.sitem"/>
       </STRUCT>
+      <STRUCT Name="MP3">
+        <ATOM Name="MinQuality" Value="90"/>
+        <ATOM Name="MaxQuality" Value="90"/>
+        <ATOM Name="AssociatedItem" Value="m0590ckhcb01.sitem"/>
+      </STRUCT>
+      <STRUCT Name="MP4">
+        <ATOM Name="MinQuality" Value="90"/>
+        <ATOM Name="MaxQuality" Value="90"/>
+        <ATOM Name="AssociatedItem" Value="m0591ckhcb01.sitem"/>
+      </STRUCT>
+      <STRUCT Name="MP5">
+        <ATOM Name="MinQuality" Value="90"/>
+        <ATOM Name="MaxQuality" Value="90"/>
+        <ATOM Name="AssociatedItem" Value="m0072ckhcb01.sitem"/>
+      </STRUCT>
+      <STRUCT Name="MP6">
+        <ATOM Name="MinQuality" Value="90"/>
+        <ATOM Name="MaxQuality" Value="90"/>
+        <ATOM Name="AssociatedItem" Value="m0496ckhcb01.sitem"/>
+      </STRUCT>
       <STRUCT Name="MP7">
-        <ATOM Name="AssociatedItem" Value="m0291ckhfc01.sitem"/>
+        <ATOM Name="MinQuality" Value="90"/>
+        <ATOM Name="MaxQuality" Value="90"/>
+        <ATOM Name="AssociatedItem" Value="m0592ckhcb01.sitem"/>
       </STRUCT>
     </STRUCT>
   </STRUCT>

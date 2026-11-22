@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bczaea.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="1"/>
+      <ATOM Name="SPCost" Value="5"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SC 0"/>
+      <ATOM Name="Skill" Value="SCALBEM"/>
+      <ATOM Name="Level" Value="10"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ar_botte.png"/>
+    </STRUCT>
+    <STRUCT Name="faber">
+      <STRUCT Name="Create">
+        <ATOM Name="Crafted Item" Value="iczalb.sitem"/>
+        <ATOM Name="Nb built items" Value="1"/>
+        <ATOM Name="MP 1" Value="Raw Material for Clothes"/>
+        <ATOM Name="Quantity 1" Value="3"/>
+        <ATOM Name="MP 2" Value="Raw Material for Armor interior coating"/>
+        <ATOM Name="Quantity 2" Value="1"/>
+        <ATOM Name="MP 3" Value="Raw Material for Armor interior stuffing"/>
+        <ATOM Name="Quantity 3" Value="1"/>
+        <ATOM Name="MP 4" Value="Raw Material for Armor clip"/>
+        <ATOM Name="Quantity 4" Value="1"/>
+      </STRUCT>
+      <ATOM Name="Blunt Protection Factor" Value="0.8"/>
+      <ATOM Name="Dodge Factor" Value="0.8"/>
+      <ATOM Name="Durability Factor" Value="0.8"/>
+      <ATOM Name="Parry Factor" Value="0.8"/>
+      <ATOM Name="Piercing Protection Factor" Value="0.8"/>
+      <ATOM Name="Protection Factor" Value="0.8"/>
+      <ATOM Name="Slashing Protection Factor" Value="0.8"/>
+      <ATOM Name="Weight Factor" Value="0.8"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

@@ -5,18 +5,18 @@
   <PARENT Filename="_mchd.sitem"/>
   <STRUCT>
     <STRUCT Name="mp">
-      <ATOM Name="MpColor" Value="Green"/>
+      <ATOM Name="MpColor" Value="Turquoise"/>
       <STRUCT Name="MpParam">
         <STRUCT Name="B MpH (Hammer)">
-          <ATOM Name="Durability" Value="1"/>
-          <ATOM Name="Weight" Value="20"/>
+          <ATOM Name="Durability" Value="20"/>
+          <ATOM Name="Weight" Value="0"/>
           <ATOM Name="SapLoad" Value="20"/>
-          <ATOM Name="DMG" Value="20"/>
-          <ATOM Name="Speed" Value="20"/>
+          <ATOM Name="DMG" Value="60"/>
+          <ATOM Name="Speed" Value="0"/>
           <ATOM Name="DodgeModifier" Value="20"/>
-          <ATOM Name="ParryModifier" Value="60"/>
+          <ATOM Name="ParryModifier" Value="20"/>
           <ATOM Name="AdversaryDodgeModifier" Value="20"/>
-          <ATOM Name="AdversaryParryModifier" Value="0"/>
+          <ATOM Name="AdversaryParryModifier" Value="20"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
         <STRUCT Name="F MpC (Counterweight)">
@@ -24,10 +24,10 @@
           <ATOM Name="Weight" Value="20"/>
           <ATOM Name="SapLoad" Value="20"/>
           <ATOM Name="Speed" Value="20"/>
-          <ATOM Name="DodgeModifier" Value="20"/>
+          <ATOM Name="DodgeModifier" Value="40"/>
           <ATOM Name="ParryModifier" Value="0"/>
-          <ATOM Name="AdversaryDodgeModifier" Value="0"/>
-          <ATOM Name="AdversaryParryModifier" Value="60"/>
+          <ATOM Name="AdversaryDodgeModifier" Value="20"/>
+          <ATOM Name="AdversaryParryModifier" Value="20"/>
           <ATOM Name="CraftCivSpec" Value="common"/>
         </STRUCT>
       </STRUCT>
