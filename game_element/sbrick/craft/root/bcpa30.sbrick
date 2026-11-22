@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bcpa_tool.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="30"/>
+      <ATOM Name="Property 0" Value="FPLAN: BCOKAMT01 BCOKAMT02 BCOKART01 BCOKART02"/>
+      <ATOM Name="CivRestriction" Value="fyros"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="IconBack" Value="bk_fyros_brick.png"/>
+    </STRUCT>
+    <STRUCT Name="Parameter">
+      <ATOM Name="f0" Value="BCFTCA"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

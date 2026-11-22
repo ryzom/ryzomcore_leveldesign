@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bhfpmb.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="16"/>
+      <ATOM Name="SabrinaCost" Value="28"/>
+      <ATOM Name="SPCost" Value="9"/>
+      <ATOM Name="Property 0" Value="FG_RMGRP_FILT: 12"/>
+      <ATOM Name="Property 1" Value="FG_ATTEMPTS: 10"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SHF 100"/>
+      <ATOM Name="Level" Value="110"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="mp_seed.png"/>
+    </STRUCT>
+    <STRUCT Name="Parameter">
+      <ATOM Name="f0" Value="BHFPRMFMF"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

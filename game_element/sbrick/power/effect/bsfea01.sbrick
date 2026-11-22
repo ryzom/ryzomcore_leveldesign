@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bsxea.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="1"/>
+      <ATOM Name="SPCost" Value="5"/>
+      <ATOM Name="Property 0" Value="NEEDED_BRICK_FLAG: Taunt"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SF 0"/>
+      <ATOM Name="Level" Value="1"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ico_taunt.png"/>
+    </STRUCT>
+    <STRUCT Name="Parameter">
+      <ATOM Name="f0" Value="BSFMA"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

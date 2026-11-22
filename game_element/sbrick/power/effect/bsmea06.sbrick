@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bsxea.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="6"/>
+      <ATOM Name="SPCost" Value="7"/>
+      <ATOM Name="Property 0" Value="NEEDED_BRICK_FLAG: BalanceHp"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SMDH 40"/>
+      <ATOM Name="Level" Value="50"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ico_balance_hp.png"/>
+    </STRUCT>
+    <STRUCT Name="Parameter">
+      <ATOM Name="f0" Value="BSMMC"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

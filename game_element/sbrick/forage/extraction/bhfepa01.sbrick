@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
-<FORM Revision="$Revision: 1.8 $" State="modified">
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bhfepa.sbrick"/>
   <STRUCT>
     <STRUCT Name="Basics">
-      <ATOM Name="FamilyId" Value="BHFEPA"/>
       <ATOM Name="IndexInFamily" Value="1"/>
-      <ATOM Name="SPCost" Value="15"/>
+      <ATOM Name="SabrinaCost" Value="0"/>
+      <ATOM Name="SPCost" Value="5"/>
       <ATOM Name="LearnRequiresOneOfSkills" Value="SH 0"/>
-      <ATOM Name="Skill" Value="SHF"/>
+      <ATOM Name="Level" Value="10"/>
     </STRUCT>
     <STRUCT Name="Client">
-      <ATOM Name="Icon" Value="ICO_Extracting.tga"/>
-      <ATOM Name="IconBack" Value="FO_Back.tga"/>
+      <ATOM Name="Icon" Value="ico_extracting.png"/>
     </STRUCT>
     <STRUCT Name="Mandatory">
       <ATOM Name="f0" Value="BHFEEA"/>
@@ -26,9 +26,4 @@
       <ATOM Name="f0" Value="BHFECA"/>
     </STRUCT>
   </STRUCT>
-  <STRUCT/>
-  <STRUCT/>
-  <STRUCT/>
-  <STRUCT/>
-  <LOG>Mon Jun 21 11:39:36 2004 (coutelas) .Basics.LearnRequiresOneOfSkills = SH 0</LOG>
 </FORM>

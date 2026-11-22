@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="FamilyId" Value="BFCE"/>
+      <ATOM Name="Property 0" Value="OPENING_1: CriticalHit"/>
+      <ATOM Name="Skill" Value="SF"/>
+      <ATOM Name="ForbiddenDef" Value="OPENING"/>
+      <ATOM Name="ForbiddenExclude" Value="OPENING"/>
+      <ATOM Name="AvoidCyclic" Value="true"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ico_opening_hit.png"/>
+      <ATOM Name="IconBack" Value="cp_back.png"/>
+      <ATOM Name="IconOver" Value="cp_over_opening.png"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

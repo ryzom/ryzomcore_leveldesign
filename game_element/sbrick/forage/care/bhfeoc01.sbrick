@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bhfe_option.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="FamilyId" Value="BHFEOC"/>
+      <ATOM Name="IndexInFamily" Value="1"/>
+      <ATOM Name="SabrinaCost" Value="0"/>
+      <ATOM Name="SPCost" Value="5"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SH 0"/>
+      <ATOM Name="Level" Value="10"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ico_preservation.png"/>
+      <ATOM Name="IconOver" Value="op_over_more.png"/>
+    </STRUCT>
+    <STRUCT Name="Parameter">
+      <ATOM Name="f0" Value="BHFEMC"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

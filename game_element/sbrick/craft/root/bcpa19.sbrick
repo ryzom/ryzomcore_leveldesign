@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bcpa_melee_weapon.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="19"/>
+      <ATOM Name="Property 0" Value="FPLAN: BCZMEA BCCMEA BCRMEA BCBMEA BCOKAMM01 BCOKAMM02 BCOKARM01 BCOKARM02"/>
+      <ATOM Name="CivRestriction" Value="zorai"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="IconBack" Value="bk_zorai_brick.png"/>
+    </STRUCT>
+    <STRUCT Name="Parameter">
+      <ATOM Name="f0" Value="BCZMCA"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bcpa.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SCR 0"/>
+      <ATOM Name="Skill" Value="SCR"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="fp_ammo.png"/>
+      <ATOM Name="IconOver2" Value="am_logo.png"/>
+    </STRUCT>
+    <STRUCT Name="faber">
+      <ATOM Name="Tool type" Value="AmmoTool"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

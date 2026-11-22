@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bsxea.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="4"/>
+      <ATOM Name="SPCost" Value="7"/>
+      <ATOM Name="Property 0" Value="NEEDED_BRICK_FLAG: Invulnerability"/>
+      <ATOM Name="Property 1" Value="BYPASS_CHECK: Fear"/>
+      <ATOM Name="Property 2" Value="BYPASS_CHECK: Sleep"/>
+      <ATOM Name="Property 3" Value="BYPASS_CHECK: Stun"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SF 40:SM 40:SC 40:SH 40"/>
+      <ATOM Name="Level" Value="50"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ico_invulnerability.png"/>
+    </STRUCT>
+    <STRUCT Name="Parameter">
+      <ATOM Name="f0" Value="BSXMB"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

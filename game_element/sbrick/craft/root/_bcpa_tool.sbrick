@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bcpa.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SC 0"/>
+      <ATOM Name="Skill" Value="SC"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="fp_tools.png"/>
+    </STRUCT>
+    <STRUCT Name="faber">
+      <ATOM Name="Tool type" Value="ToolMaker"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

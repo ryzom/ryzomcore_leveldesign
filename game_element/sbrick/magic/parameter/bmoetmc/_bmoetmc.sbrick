@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_magic.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="FamilyId" Value="BMOETMC"/>
+      <ATOM Name="Property 0" Value="MA:moet"/>
+      <ATOM Name="Property 1" Value="MA_DMG_TYPE:COLD"/>
+      <ATOM Name="Property 2" Value="SET_BEHAVIOUR:CAST_COLD"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ico_cold.png"/>
+      <ATOM Name="IconBack" Value="pa_back.png"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

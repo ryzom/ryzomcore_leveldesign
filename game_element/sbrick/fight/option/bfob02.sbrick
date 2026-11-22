@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bfob.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="2"/>
+      <ATOM Name="Property 0" Value="DEFINE_FLAG: Feint"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SFM 40"/>
+      <ATOM Name="Skill" Value="SFM"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ico_feint.png"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_magic.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="FamilyId" Value="BMOALMD"/>
+      <ATOM Name="Property 0" Value="MA:moal"/>
+      <ATOM Name="Property 1" Value="MA_EFFECT:Madness"/>
+      <ATOM Name="Property 2" Value="MA_EFFECT_MOD:75"/>
+      <ATOM Name="Property 3" Value="SET_BEHAVIOUR:CAST_MAD"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ico_madness.png"/>
+      <ATOM Name="IconBack" Value="pa_back.png"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

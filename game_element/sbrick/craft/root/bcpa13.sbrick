@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bcpa_melee_weapon.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="13"/>
+      <ATOM Name="Property 0" Value="FPLAN: BCTMEA BCCMEA BCRMEA BCBMEA BCOKAMM01 BCOKAMM02 BCOKARM01 BCOKARM02"/>
+      <ATOM Name="CivRestriction" Value="tryker"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="IconBack" Value="bk_tryker_brick.png"/>
+    </STRUCT>
+    <STRUCT Name="Parameter">
+      <ATOM Name="f0" Value="BCTMCA"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

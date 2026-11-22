@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_magic.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="FamilyId" Value="BMOH"/>
+      <ATOM Name="ForbiddenDef" Value="MagicArea"/>
+      <ATOM Name="ForbiddenExclude" Value="MagicArea:MagicVampirism"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ico_spray.png"/>
+      <ATOM Name="IconBack" Value="op_back.png"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

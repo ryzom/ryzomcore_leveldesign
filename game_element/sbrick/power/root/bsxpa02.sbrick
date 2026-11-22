@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bsxpa.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="2"/>
+      <ATOM Name="SPCost" Value="5"/>
+      <ATOM Name="Property 0" Value="NEEDED_BRICK_FLAG: Aura"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SF 0:SM 0:SC 0:SH 0"/>
+      <ATOM Name="Level" Value="10"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="bk_aura.png"/>
+      <ATOM Name="IconBack" Value="bk_aura.png"/>
+    </STRUCT>
+    <STRUCT Name="Mandatory">
+      <ATOM Name="f0" Value="BSXEB"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_magic.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="FamilyId" Value="BMOELMP"/>
+      <ATOM Name="Property 0" Value="MA:moel"/>
+      <ATOM Name="Property 1" Value="MA_DMG_TYPE:POISON"/>
+      <ATOM Name="Property 2" Value="SET_BEHAVIOUR:CAST_POISON"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ico_poison.png"/>
+      <ATOM Name="IconBack" Value="pa_back.png"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

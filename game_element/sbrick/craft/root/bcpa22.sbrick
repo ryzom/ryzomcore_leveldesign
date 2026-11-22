@@ -1,30 +1,17 @@
 <?xml version="1.0"?>
 <FORM Version="4.0" State="modified">
+  <PARENT Filename="_bcpa_armor.sbrick"/>
   <STRUCT>
     <STRUCT Name="Basics">
-      <ATOM Name="FamilyId" Value="BCPA"/>
       <ATOM Name="IndexInFamily" Value="22"/>
       <ATOM Name="Property 0" Value="FPLAN: BCZAEA BCZAEB BCZAEC BCZAED BCCAEA BCCAEB BCCAEC BCCAED BCRAEA"/>
-      <ATOM Name="LearnRequiresOneOfSkills" Value="SC 0"/>
-      <ATOM Name="Action Nature" Value="CRAFT"/>
-      <ATOM Name="Skill" Value="SCA"/>
+      <ATOM Name="CivRestriction" Value="zorai"/>
     </STRUCT>
     <STRUCT Name="Client">
-      <ATOM Name="Icon" Value="fp_armor.png"/>
       <ATOM Name="IconBack" Value="bk_zorai_brick.png"/>
-      <ATOM Name="IconOver" Value="fp_over.png"/>
-    </STRUCT>
-    <STRUCT Name="Optional">
-      <ATOM Name="f0" Value="BCOA"/>
-      <ATOM Name="f1" Value="BCOB"/>
-      <ATOM Name="f2" Value="BCOC"/>
-      <ATOM Name="f3" Value="BCOD"/>
     </STRUCT>
     <STRUCT Name="Parameter">
       <ATOM Name="f0" Value="BCZACA"/>
-    </STRUCT>
-    <STRUCT Name="faber">
-      <ATOM Name="Tool type" Value="ArmorTool"/>
     </STRUCT>
   </STRUCT>
 </FORM>

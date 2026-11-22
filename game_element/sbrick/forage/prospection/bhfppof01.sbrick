@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bhfp_option.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="FamilyId" Value="BHFPPOF"/>
+      <ATOM Name="IndexInFamily" Value="1"/>
+      <ATOM Name="SabrinaCost" Value="0"/>
+      <ATOM Name="SPCost" Value="5"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SH 0"/>
+      <ATOM Name="Level" Value="10"/>
+      <ATOM Name="ForbiddenDef" Value="fg_spot"/>
+      <ATOM Name="ForbiddenExclude" Value="fg_locate"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ico_source_knowledge.png"/>
+      <ATOM Name="IconOver" Value="op_over_more.png"/>
+    </STRUCT>
+    <STRUCT Name="Parameter">
+      <ATOM Name="f0" Value="BHFPMF"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>

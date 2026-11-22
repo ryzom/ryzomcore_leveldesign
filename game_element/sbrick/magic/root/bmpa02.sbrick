@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<FORM Version="4.0" State="modified">
+  <PARENT Filename="_bmpa.sbrick"/>
+  <STRUCT>
+    <STRUCT Name="Basics">
+      <ATOM Name="IndexInFamily" Value="2"/>
+      <ATOM Name="SabrinaCost" Value="0"/>
+      <ATOM Name="SPCost" Value="6"/>
+      <ATOM Name="LearnRequiresOneOfSkills" Value="SM 20"/>
+      <ATOM Name="Action Nature" Value="OFFENSIVE_MAGIC"/>
+      <ATOM Name="MinCastTime" Value="20"/>
+      <ATOM Name="MaxRange" Value="30"/>
+    </STRUCT>
+    <STRUCT Name="Client">
+      <ATOM Name="Icon" Value="ico_atysian.png"/>
+      <ATOM Name="IconBack" Value="mp_back_offensive.png"/>
+      <ATOM Name="IconOver" Value="mp_over_link.png"/>
+    </STRUCT>
+    <STRUCT Name="Mandatory">
+      <ATOM Name="f0" Value="BMOELEA"/>
+    </STRUCT>
+    <STRUCT Name="Optional">
+      <ATOM Name="f0" Value="BMOF"/>
+      <ATOM Name="f1" Value="BMOG"/>
+      <ATOM Name="f2" Value="BMOH"/>
+      <ATOM Name="f3" Value="BMOR"/>
+    </STRUCT>
+    <STRUCT Name="Credit">
+      <ATOM Name="f0" Value="BMCA"/>
+      <ATOM Name="f1" Value="BMCP"/>
+      <ATOM Name="f2" Value="BMCC"/>
+      <ATOM Name="f3" Value="BMCR"/>
+    </STRUCT>
+  </STRUCT>
+</FORM>
