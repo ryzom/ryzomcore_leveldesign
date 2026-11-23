@@ -106,12 +106,10 @@ OTHER_DOMAINS = r"^abhf[fmtz]aca01$|^abhf_magic_start$"
 
 # ------------------------------------------------------------------------------------------------- reading core4 data
 def readTyp(path):
-	with open(path, "r", encoding="utf-8", errors="replace") as f:
-		return { m.group(1).lower(): int(m.group(2)) for m in re.finditer(r'Label="([^"]*)" Value="([^"]*)"', f.read()) }
+	return { m.group(1).lower(): int(m.group(2)) for m in re.finditer(r'Label="([^"]*)" Value="([^"]*)"', framework.readText(path)) }
 
 def readAtoms(path):
-	with open(path, "r", encoding="utf-8", errors="replace") as f:
-		text = f.read().split("<LOG>")[0]
+	text = framework.readText(path).split("<LOG>")[0]
 	return re.findall(r'<PARENT Filename="([^"]+)"', text), dict(re.findall(r'<ATOM Name="([^"]+)" Value="([^"]*)"', text)), \
 		re.findall(r'<STRUCT Name="([A-Z]) Mp[A-Za-z]+ \(', text)
 

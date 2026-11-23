@@ -12,7 +12,8 @@
 #
 # Both defaults are found from this script's place: the code checkout beside the leveldesign that holds it
 # (<leveldesign>/../code) and the interface atlas lists of the pipeline beside it (<leveldesign>/../pipeline/install/
-# interfaces, texture_interfaces_dxtc.txt and texture_interfaces_v3.txt), which the icons are checked against.
+# interfaces, texture_interfaces_dxtc.txt and texture_interfaces_v3.txt), which the icons are checked against; the
+# sheet generator's ../generate_core4_sheets/interface_atlas.py reads them.
 
 import argparse, collections, os, re, sys
 
@@ -23,8 +24,9 @@ DFN = os.path.join(LEVELDESIGN, "DFN", "game_elem", "_item")
 WORK = os.path.join(LEVELDESIGN, "translation", "work")
 CREATURES = os.path.join(LEVELDESIGN, "game_elem", "creature")
 DEFAULT_CODE = os.path.normpath(os.path.join(LEVELDESIGN, "..", "code"))
-DEFAULT_ATLAS = os.path.normpath(os.path.join(LEVELDESIGN, "..", "pipeline", "install", "interfaces"))
-ATLAS_LISTS = [ "texture_interfaces_dxtc.txt", "texture_interfaces_v3.txt" ]
+# The interface atlas lists, read by the sheet generator's reader (its default: the pipeline beside the leveldesign)
+sys.path.insert(0, os.path.join(LEVELDESIGN, "scripts", "generate_core4_sheets"))
+import interface_atlas
 
 # What to do when an input of the leveldesign is missing: it is read from the leveldesign that holds this script
 IN_LEVELDESIGN = ("this script reads it from the leveldesign that holds it (" + LEVELDESIGN + "), which must have it: to make the tables "
@@ -349,15 +351,14 @@ def readTsv(path):
 	return rows
 
 def readAtlas(folder):
-	"""the names of the interface atlases (the client reads a .png name as its .tga): every icon must be one of them"""
-	remedy = ("the icons are checked against the interface atlas lists of the pipeline (" + folder + "; by default the one beside the "
-		+ "leveldesign, " + DEFAULT_ATLAS + "): build the interfaces, or pass --atlas <folder of the lists> to name another")
-	names = set()
-	for f in ATLAS_LISTS:
-		for line in readText(os.path.join(folder, f), remedy).splitlines():
-			if line.strip():
-				names.add(line.split()[0].lower())
-	return names
+	"""the names of the interface atlases (the client reads a .png name as its .tga): every icon must be one of them; a
+	list that is missing stops the script with its path and the --atlas option (interface_atlas.py)"""
+	if folder:
+		interface_atlas.setFolder(folder)
+	try:
+		return interface_atlas.names()
+	except interface_atlas.Missing as e:
+		fail(str(e))
 
 def creatureSheets():
 	"""code: { ecosystem letter: number of creature sheets } of the creatures of core4 (c<code><eco><zone><digit>) in
@@ -375,8 +376,8 @@ def creatureSheets():
 def main():
 	parser = argparse.ArgumentParser(description="write Ryzom Core's raw material tables for mp_generator")
 	parser.add_argument("--code", default=DEFAULT_CODE, help="the code checkout, for rm_family.h/.cpp (default: " + DEFAULT_CODE + ")")
-	parser.add_argument("--atlas", default=DEFAULT_ATLAS, help="the folder of the interface atlas lists " + " and ".join(ATLAS_LISTS)
-		+ " (default: " + DEFAULT_ATLAS + ")")
+	parser.add_argument("--atlas", help="the folder of the interface atlas lists " + " and ".join(interface_atlas.LISTS)
+		+ " (default: " + interface_atlas.DEFAULT_FOLDER + ")")
 	args = parser.parse_args()
 	readCode(os.path.normpath(os.path.abspath(args.code)))
 
@@ -386,7 +387,7 @@ def main():
 	groups = readTyp("item_mp_group.typ")
 	itemWords = readWords("item_words_wk.txt")
 	sbrickWords = readWords("sbrick_words_wk.txt")
-	atlas = readAtlas(os.path.normpath(os.path.abspath(args.atlas)))
+	atlas = readAtlas(args.atlas)
 	sheets = creatureSheets()
 
 	def checkFamily(name):

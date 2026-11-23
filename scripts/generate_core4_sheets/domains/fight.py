@@ -135,8 +135,7 @@ def loadSkillTree(gen):
 	if not os.path.isfile(path):
 		gen.error("fight: " + path + " does not exist, so the learn gates cannot be put on the skills of their branch")
 		return tree
-	with open(path, "r", encoding="utf-8", errors="replace") as f:
-		text = f.read()
+	text = framework.readText(path)
 	for chunk in text.split("<STRUCT Name=\"")[1:]:
 		code = re.search(r"<ATOM Name=\"SkillCode\" Value=\"([^\"]+)\"", chunk)
 		value = re.search(r"<ATOM Name=\"MaxSkillValue\" Value=\"(\d+)\"", chunk)

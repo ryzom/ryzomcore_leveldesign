@@ -63,7 +63,9 @@ class Stop(Exception):
 	pass
 
 def readText(path):
-	"""a whole text file of the leveldesign, UTF-8 as it is stored: one that is not stops the run, naming it"""
+	"""a whole text file of the leveldesign, UTF-8 as it is stored: one that is missing or is not stops the run, naming it"""
+	if not os.path.isfile(path):
+		raise Stop(path + " not found: the generator reads the leveldesign that holds it (" + LEVELDESIGN + "), which must have it")
 	try:
 		with open(path, "r", encoding="utf-8-sig") as f:
 			return f.read()
@@ -121,9 +123,21 @@ class WordsRow:
 		self.description = description
 		self.description2 = description2
 
-def readWordsFile(path):
+def readTranslation(path):
+	"""a whole file of the translation, its bytes as UTF-8 (line ends kept): one that is missing or is not UTF-8 stops
+	the run, naming it"""
+	if not os.path.isfile(path):
+		raise Stop(path + " not found: the generator reads the translation of the leveldesign that holds it (" + TRANSLATION
+			+ "), which must have it")
 	with open(path, "rb") as f:
-		lines = f.read().decode("utf-8-sig").split("\n")
+		data = f.read()
+	try:
+		return data.decode("utf-8-sig")
+	except UnicodeDecodeError as e:
+		raise Stop(path + " is not UTF-8 text (" + str(e) + "): correct the file")
+
+def readWordsFile(path):
+	lines = readTranslation(path).split("\n")
 	header = lines[0].rstrip("\r").split("\t")
 	rows = []
 	for l in lines[1:]:
@@ -157,8 +171,7 @@ class Words:
 			en = english.get(sheetId.lower(), {})
 			self.rows[sheetId.lower()] = WordsRow(sheetId, en.get("name", row.get("name", "")), en.get("description", ""),
 				en.get("description2", ""))
-		with open(os.path.join(TRANSLATION, "languages.txt"), "r", encoding="utf-8") as f:
-			languages = [ l.strip() for l in f if l.strip() and l.strip() != "wk" ]
+		languages = [ l.strip() for l in readTranslation(os.path.join(TRANSLATION, "languages.txt")).split("\n") if l.strip() and l.strip() != "wk" ]
 		for language in languages:
 			path = os.path.join(TRANSLATION, "translated", sheetType + "_words_" + language + ".txt")
 			ids = set(row[column].lower() for row in readWordsFile(path)[1] if row.get(column))
@@ -674,17 +687,35 @@ class Generator:
 			# every file is written beside its target first, and nothing changes before the first rename: a write that
 			# fails until then leaves the sheets as they were; a stop after it names what was done, and running the
 			# write again completes it
-			temporaries = []
+			temporaries, made = [], []
 			current = None
 			try:
 				for path, data in changes:
+					# the folders missing above the sheet, made one by one and noted, so that a failure removes them
+					missing = []
+					folder = os.path.dirname(path)
+					while not os.path.isdir(folder):
+						missing.insert(0, folder)
+						folder = os.path.dirname(folder)
+					for folder in missing:
+						current = folder
+						os.mkdir(folder)
+						made.append(folder)
 					current = path + TEMPORARY_SUFFIX
-					os.makedirs(os.path.dirname(path), exist_ok=True)
 					temporaries.append(current)
 					with open(current, "wb") as f:
 						f.write(data)
 			except BaseException as e:
 				state = "no sheet was changed or removed, " + deleteTemporaries(temporaries, "the files written so far beside them were deleted")
+				folderLeft = []
+				for folder in reversed(made):
+					try:
+						if os.path.isdir(folder) and not os.listdir(folder):
+							os.rmdir(folder)
+					except OSError as removal:
+						folderLeft.append(folder + " (" + str(removal) + ")")
+				if folderLeft:
+					state += "; these folders made for them could not be removed: " + ", ".join(folderLeft)
 				if not isinstance(e, OSError):
 					sys.stderr.write("error: the write was stopped while writing " + str(current) + ", " + state + "\n")
 					raise
