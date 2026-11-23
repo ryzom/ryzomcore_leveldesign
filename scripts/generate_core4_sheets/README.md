@@ -48,6 +48,12 @@ atlases, the `$` tokens of the texts against the properties, levels and credits 
 `plan_items.py` says which item each plan id makes and what kind of item an id is. The plans domain
 (`domains/plans.py`, `balancing/plans.py`) writes a plan brick for every plan of the translation, with the components
 its item takes, and `../generate_r2_sheets/generate_sitem.py` writes the items and names in each item the plan that
-makes it (`CraftPlan`); both read the same table, so a plan and its item point at each other. The plans domain also
-checks that the raw materials (`game_element/sitem/raw_material`, from mp_generator) serve every component a plan asks
-for, and that the craft task of the Barkdell rite gives what its boots plan asks for.
+makes it (`CraftPlan`); both read the same table, so a plan and its item point at each other, and the plans domain
+checks that every plan's item has its sheet and names that plan. A plan id that no rule of `plan_items.py` reads is an
+error. The plans domain also checks that the raw materials (`game_element/sitem/raw_material`, from mp_generator) serve
+every component a plan asks for up to quality 250, by the server's craft rule of the default build: a material counts
+when the `CraftCivSpec` of its part for that component type is common or the origin of the plan's item, or that item
+is common (the rule of the plan's `CivRestriction` against the material's ecosystem is that of `RYZOM_FORGE` builds).
+Parts with a durability of 0 and the families only special items make (the kitin lairs' larva) do not count. And it
+checks that the craft task of the Barkdell rite gives three whole sets of what its boots plan asks for (one to craft,
+two spare), each counting for the boots.

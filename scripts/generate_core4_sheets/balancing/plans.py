@@ -11,8 +11,10 @@
 #   (Durability Factor, DMG Factor ...; 1.0 when the plan does not set it; the result may go above 1). Every stat is
 #   better higher (weight too: CGameItem::weight takes 2 - stat).
 # - The XP of a craft is scaled by the units used over NBMeanCraftRawMaterials (10): a bigger plan pays more XP.
-# - A plan of a civilisation (CivRestriction) refuses materials of another civilisation's ecosystem (desert Fyros,
-#   forest Matis, lacustre Tryker, jungle Zorai); common and prime roots materials go into every plan.
+# - A material counts for a component when the CraftCivSpec of its part for that type is common or the origin of the
+#   item the plan makes, or that item is common (the craft check of the default build): the common and prime roots
+#   materials go into every item, desert ones into Fyros items, forest Matis, lakes Tryker, jungle Zorai. (RYZOM_FORGE
+#   builds check the plan's CivRestriction against the material's ecosystem instead.)
 
 import math
 from balancing import common
@@ -64,30 +66,39 @@ def factionFame(tier):
 
 # ---------------------------------------------------------------------------------------------- learning
 # The skill trains to the plan's item (its master leaf, as SCAHBEM heavy boots); the gate is the level of the tier ten
-# levels early (common.learnGate), on the ancestor of that skill a crafter is training at that value: the craft root SC
-# to 20, the category (SCA, three letters) to 50, the class (SCAH) to 100, then one letter more per 50 levels. The
-# rolemaster check reads the highest value the character reached in exactly that skill (MaxLvlReached), so the gate must
-# name a skill the crafter has at that point, not the leaf. A plan whose skill is shallower than that depth (the tools
-# and constructions train SC, SCA ...) is gated on every skill of that depth below its own: one of them is enough.
-SKILL_DEPTH_CAPS = [ (2, 20), (3, 50), (4, 100), (5, 150), (6, 200), (7, 250) ]
+# levels early (common.learnGate), on the ancestor of that skill a crafter is training at that value: the first skill on
+# the way from the craft root SC to the leaf whose maximum is above the gate (skills.skill_tree, MaxSkillValue: SC to
+# 20, the category SCA to 50, the class SCAH to 100 ...). The rolemaster check reads the highest value the character
+# reached in exactly that skill (MaxLvlReached), so the gate must name a skill the crafter has at that point, not the
+# leaf. A plan whose own skill stops at or below the gate (the tools and constructions train SC, SCA ...) is gated on
+# the first skills below its own whose maximum is above it: one of them is enough. The tree is the domain's reading of
+# skills.skill_tree: {skill: (MaxSkillValue, parent skill or None)}.
+
+def skillCap(skill, tree):
+	return tree[skill][0]
 
 # A plan's level never passes the cap of its own skill: the success roll compares that skill with min(the materials'
 # quality, the action's grade) (faber_action.cpp rollSuccessFactor), and a skill stops at its cap, so a plan of a
 # higher level would be learnt for qualities its crafter cannot make. It holds the plans whose skill is shallow: the
 # constructions and the pick train SC (to 20), the crafting tools their category (SCA, SCJ, SCM, SCR, to 50).
-def skillCap(skill):
-	return [ cap for length, cap in SKILL_DEPTH_CAPS if length >= len(skill) ][0]
+def planLevel(tier, skill, tree):
+	return min(tierLevel(tier), skillCap(skill, tree))
 
-def planLevel(tier, skill):
-	return min(tierLevel(tier), skillCap(skill))
-
-def gateSkills(skill, level, skills):
-	"""([skill codes], value) for LearnRequiresOneOfSkills; skills is the code's skill list"""
+def gateSkills(skill, level, tree):
+	"""([skill codes], value) for LearnRequiresOneOfSkills"""
 	gate = common.learnGate(level)
-	length = [ l for l, cap in SKILL_DEPTH_CAPS if gate < cap ][0]
-	if length <= len(skill):
-		return [ skill[:length] ], gate
-	return sorted(s for s in skills if len(s) == length and s.startswith(skill)), gate
+	chain = []
+	k = skill
+	while k:
+		chain.insert(0, k)
+		k = tree[k][1]
+	for k in chain:
+		if gate < tree[k][0]:
+			return [ k ], gate
+	below = [ skill ]
+	while below and all(tree[s][0] <= gate for s in below):
+		below = sorted(s for s, (cap, parent) in tree.items() if parent in below)
+	return below, gate
 
 def spCost(level):
 	return common.spCost(level)

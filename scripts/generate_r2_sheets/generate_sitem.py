@@ -1,12 +1,32 @@
 
-# Writes the items of game_element\sitem from the tables of this folder (run it with this folder as the working
-# directory): the items of the Ring palette (match_sitem_shape.tsv), the craft items no palette has
-# (sitem_craft_items.tsv), the nation leaders' equipment (sitem_leaders.tsv), their parents (sitem_parents.tsv) and the
-# plot items of the Ring (sitem_plot_items.tsv). The craft plans themselves are the sheet generator's
-# (../generate_core4_sheets, plans domain).
-# Usage: generate_sitem.py [leveldesign folder], R:\leveldesign by default (R: is the subst of the data root)
+# Writes the items of game_element\sitem from the tables of this folder: the items of the Ring palette
+# (match_sitem_shape.tsv), the craft items no palette has (sitem_craft_items.tsv), the nation leaders' equipment
+# (sitem_leaders.tsv), their parents (sitem_parents.tsv) and the plot items of the Ring (sitem_plot_items.tsv). The
+# craft plans themselves are the sheet generator's (../generate_core4_sheets, plans domain).
+# Usage: generate_sitem.py [--remove-stale [--code <code folder>]] [leveldesign folder]
+#   The leveldesign is by default the one that holds this script; a folder given (a copy, for a test run) is written
+#   instead. The tables are read beside the script, whatever the working directory. Python 3.3 or later.
+#
+# Every row is made and checked first, and nothing is written when a check fails, nor when a run that was stopped left
+# a file beside any sheet this run makes. Then the sheets whose content changes are written, LF as the leveldesign
+# stores them: each beside its sheet first, then, once all are written, each renamed over it; a failure or an
+# interruption deletes what was written beside them, names what could not be deleted, and says how many were replaced.
+#
+# Stale sheets: a sheet under sitem that starts with the header this script writes (<FORM Version="4.0"
+# State="modified">), that no row of this run makes and that no table of this folder names may be the sheet of a row
+# that is gone, or a copy someone made of a generated sheet (a copy, or "save as" in Georges, keeps the header). By
+# default the script lists them and removes nothing. With --remove-stale it removes those that nothing names, and lists
+# the ones it keeps with the file that names each. It looks for each by its whole name, with or without .sitem, in the
+# leveldesign and in the data folders of the code checkout that name item sheets (ryzom/common/data_common and
+# ryzom/client/data of <leveldesign>/../code, found from this script's place; --code names another checkout); a stale
+# sheet it keeps is then read in turn for the stale sheets it names. It does not read translation/ (every item has word
+# rows), the build's sheet lists (game_elem/sheets.txt, sheet_id.bin), the players' inventories or the saved
+# scenarios: an item only those name is removed.
 
 import os, re, sys
+
+if sys.version_info < (3, 3):
+	sys.exit("generate_sitem.py needs Python 3.3 or later: it replaces each sheet in one step (os.replace)")
 
 scriptDir = os.path.dirname(os.path.abspath(__file__))
 
@@ -20,20 +40,83 @@ def fail(message):
 	sys.exit(1)
 
 def loadTsv(filename):
+	"""a table of this folder, by its name: read beside the script"""
 	table = []
-	with open(filename, "r") as f:
+	path = os.path.join(scriptDir, filename)
+	if not os.path.isfile(path):
+		fail("The table " + path + " is missing: generate_sitem.py reads its tables beside itself")
+	with open(path, "r") as f:
 		for l in f:
 			table += [ l.strip().split("\t") ]
 	return table;
 
-if len(sys.argv) > 2:
-	fail("Usage: generate_sitem.py [leveldesign folder]")
-leveldesignPath = "R:\\leveldesign"
-if len(sys.argv) == 2:
-	leveldesignPath = sys.argv[1]
+USAGE = "Usage: generate_sitem.py [--remove-stale [--code <code folder>]] [leveldesign folder]"
+# What the reference scan of --remove-stale reads besides the leveldesign: the data folders of the code checkout that
+# name item sheets
+CODE_DATA = [ ( "ryzom", "common", "data_common" ), ( "ryzom", "client", "data" ) ]
+arguments = sys.argv[1:]
+removeStale = False
+codePath = os.path.normpath(os.path.join(scriptDir, "..", "..", "..", "code"))
+codeGiven = False
+rest = []
+while arguments:
+	a = arguments.pop(0)
+	if a == "--remove-stale":
+		removeStale = True
+	elif a == "--code":
+		if not arguments:
+			fail(USAGE)
+		codePath = arguments.pop(0)
+		codeGiven = True
+	elif a.startswith("-"):
+		fail(USAGE)
+	else:
+		rest.append(a)
+if len(rest) > 1 or (codeGiven and not removeStale):
+	fail(USAGE)
+if removeStale:
+	# the reference scan reads the code checkout's data folders too: they must be there
+	for parts in CODE_DATA:
+		if not os.path.isdir(os.path.join(codePath, *parts)):
+			fail("The folder " + os.path.join(codePath, *parts) + " does not exist: --remove-stale looks for the stale sheets in the "
+				+ "data folders of the code checkout too, by default the one beside the leveldesign (" + codePath + "); pass --code "
+				+ "<code folder> to name another")
+leveldesignPath = os.path.normpath(os.path.join(scriptDir, "..", ".."))
+if len(rest) == 1:
+	leveldesignPath = rest[0]
 if not os.path.isdir(leveldesignPath):
 	fail("The leveldesign folder " + leveldesignPath + " does not exist: name the leveldesign folder to write into (or a copy of it for a test run)")
 sitemPath = os.path.join(leveldesignPath, "game_element", "sitem")
+if not os.path.isdir(sitemPath):
+	fail("The item folder " + sitemPath + " does not exist: " + leveldesignPath + " is no leveldesign")
+
+# The header of every sheet this script writes: how a sheet of a row that is gone is known as this script's
+SHEET_HEADER = "<?xml version=\"1.0\"?>\n<FORM Version=\"4.0\" State=\"modified\">\n"
+
+# The sheets this run makes: normalized path: (path, content). Nothing is written until every row is made and checked
+outputs = {}
+
+class sheet(object):
+	"""what the run writes to an item sheet, kept until every row is checked (writeSheets)"""
+	def __init__(self, path):
+		self.path = path
+		self.parts = []
+	def __enter__(self):
+		return self
+	def __exit__(self, kind, value, traceback):
+		if kind is None:
+			content = "".join(self.parts)
+			if not content.startswith(SHEET_HEADER):
+				fail("The sheet " + self.path + " does not start with the header of this script's sheets")
+			key = os.path.normcase(os.path.normpath(self.path))
+			if key in outputs and outputs[key][1] != content:
+				fail("The sheet " + self.path + " would be made twice with different contents: two rows of the tables have its name")
+			outputs[key] = (self.path, content)
+		return False
+	def write(self, text):
+		self.parts.append(text)
+	def flush(self):
+		pass
 
 # The labels of the item types (item_type.typ, the sheets write the label) and the code's names for them (the value)
 itemTypeValues = {}
@@ -558,12 +641,9 @@ def generateParents():
 			checkIcon(iconOverlay, name)
 			
 			dir = sitemPath + "\\" + folder + "\\_parent"
-			if not os.path.isdir(dir):
-				os.makedirs(dir)
 			path = dir + "\\" + name + ".sitem"
-			
-			print(path)
-			with open(path, "w") as f:
+
+			with sheet(path) as f:
 				f.write("<?xml version=\"1.0\"?>\n")
 				f.write("<FORM Version=\"4.0\" State=\"modified\">\n")
 				f.write("  <STRUCT>\n")
@@ -869,10 +949,8 @@ def generateSitems():
 			folder = folder.split("\\")[0] + "\\" + subfolder + "\\leader"
 		
 		dir = sitemPath + "\\" + folder
-		if not os.path.isdir(dir):
-			os.makedirs(dir)
 		path = dir + "\\" + name + ".sitem"
-		
+
 		# print(name)
 		# print(shapeMale)
 		# print(shapeFemale)
@@ -936,9 +1014,8 @@ def generateSitems():
 			# the glow of a leader weapon, always on, and as its advantage fx, as in the original leader sheets
 			fxAdvantage = shapeMale
 			fxStatic = shapeMale
-		
-		print(path)
-		with open(path, "w") as f:
+
+		with sheet(path) as f:
 			f.write("<?xml version=\"1.0\"?>\n")
 			f.write("<FORM Version=\"4.0\" State=\"modified\">\n")
 			if parent:
@@ -1016,16 +1093,13 @@ def generatePlotItems():
 	weight = 1
 
 	dir = sitemPath + "\\scroll"
-	if not os.path.isdir(dir):
-		os.makedirs(dir)
 
 	for plotItem in plotItems:
 		name, icon, iconBackground = plotItem
 		displayName = "ring " + name[3:].replace("_", " ")
 		path = dir + "\\" + name + ".sitem"
 
-		print(path)
-		with open(path, "w") as f:
+		with sheet(path) as f:
 			f.write("<?xml version=\"1.0\"?>\n")
 			f.write("<FORM Version=\"4.0\" State=\"modified\">\n")
 			f.write("  <STRUCT>\n")
@@ -1045,18 +1119,213 @@ def generatePlotItems():
 			f.write("</FORM>\n")
 			f.flush()
 
-def checkCraftedItems():
-	"""every item a craft plan makes has a sheet: this script's, or an original one (the refugee colours and weapons)"""
+def readBytes(path):
+	with open(path, "rb") as f:
+		return f.read()
+
+def findStaleSheets():
+	"""the stale sheets: under sitem, with this script's header, made by no row of this run and named by no table of this
+	folder (an original sheet a table names stays, the refugee colours). The sheet of a row that is gone, or a copy of a
+	generated sheet: which one, the reference scan (findReferences) and the --remove-stale option decide"""
+	named = {}
+	for table in [ "sitem_parsed.tsv", "match_sitem_shape.tsv", "sitem_craft_items.tsv", "sitem_leaders.tsv", "sitem_parents.tsv",
+			"sitem_plot_items.tsv" ]:
+		for row in loadTsv(table):
+			if row and row[0]:
+				named[row[0].lower()] = True
+	header = SHEET_HEADER.encode("ascii")
+	headerCrlf = SHEET_HEADER.replace("\n", "\r\n").encode("ascii")
+	stale = []
+	for root, dirs, files in os.walk(sitemPath):
+		for f in sorted(files):
+			if not f.lower().endswith(".sitem"):
+				continue
+			path = os.path.join(root, f)
+			if os.path.normcase(os.path.normpath(path)) in outputs or f[:-6].lower() in named:
+				continue
+			start = readBytes(path)[:len(headerCrlf)]
+			if start.startswith(header) or start.startswith(headerCrlf):
+				stale.append(path)
+	return sorted(stale)
+
+def checkCraftedItems(stale):
+	"""every item a craft plan makes has a sheet after the run: this script's, or an original one (the refugee colours
+	and weapons)"""
 	sheets = {}
+	gone = dict((os.path.normcase(os.path.normpath(p)), True) for p in stale)
 	for root, dirs, files in os.walk(sitemPath):
 		for f in files:
-			if f.lower().endswith(".sitem"):
+			if f.lower().endswith(".sitem") and not os.path.normcase(os.path.normpath(os.path.join(root, f))) in gone:
 				sheets[f[:-6].lower()] = True
+	for key in outputs:
+		sheets[os.path.basename(outputs[key][0])[:-6].lower()] = True
 	missing = [ item for item in sorted(itemPlans.keys()) if not item in sheets ]
 	if len(missing) > 0:
 		fail("Items of craft plans without a sheet (add them to sitem_craft_items.tsv): " + ", ".join(missing))
 
+# What the reference scan does not read, which the listing says
+NOT_SCANNED = ("translation/ (every item has word rows), the build's sheet lists (game_elem/sheets.txt, sheet_id.bin), "
+	"the players' inventories and the saved scenarios")
+
+def sheetName(path):
+	"""the name of a sheet without .sitem, lower case, as bytes for the scan: any name, not only ASCII"""
+	return os.path.basename(path)[:-6].lower().encode("utf-8", "surrogateescape")
+
+def findReferences(stale):
+	"""{stale sheet: the first file that names it}, by the sheet's whole name as a word of letters, digits and
+	underscores (so with or without .sitem), in any case, in the leveldesign and the data folders of the code checkout
+	(CODE_DATA). Not read, as in mp_generator: the translation (its word rows name every item), the build's sheet lists
+	(game_elem/sheets.txt and sheet_id.bin), git's and Python's folders, and at first the stale sheets themselves: a
+	stale sheet that something names is kept, and then read in turn for the stale sheets it names (a kept copy of an
+	item keeps the stale parent it names), until no more are kept"""
+	if not stale:
+		return {}
+	# a sheet name is unique across the folders the sheet ids are made from: two stale sheets of one name cannot both be
+	# kept or removed by what names them
+	byName = {}
+	for p in stale:
+		if sheetName(p) in byName:
+			fail("Two stale sheets have the name " + os.path.basename(p) + ": " + byName[sheetName(p)] + " and " + p + "; sheet names must be unique, remove or rename one before --remove-stale")
+		byName[sheetName(p)] = p
+	pattern = re.compile(b"(?<![A-Za-z0-9_])(" + b"|".join(re.escape(n) for n in sorted(byName)) + b")(?![A-Za-z0-9_])", re.I)
+	staleKeys = set(os.path.normcase(os.path.normpath(p)) for p in stale)
+	skipped = set(os.path.normcase(os.path.normpath(os.path.join(leveldesignPath, "game_elem", f))) for f in ( "sheets.txt", "sheet_id.bin" ))
+	found = {}
+	def scan(path):
+		"""the stale sheets not yet kept that a file names, other than itself: noted with the file"""
+		kept = []
+		for m in pattern.finditer(readBytes(path)):
+			sheetPath = byName.get(m.group(1).lower())
+			if sheetPath and sheetPath not in found and os.path.normcase(os.path.normpath(sheetPath)) != os.path.normcase(os.path.normpath(path)):
+				found[sheetPath] = path
+				kept.append(sheetPath)
+		return kept
+	for top, isLeveldesign in [ ( leveldesignPath, True ) ] + [ ( os.path.join(codePath, *parts), False ) for parts in CODE_DATA ]:
+		topKey = os.path.normcase(os.path.normpath(top))
+		for root, dirs, files in os.walk(top):
+			dirs[:] = sorted(d for d in dirs if d not in ( ".git", "__pycache__" )
+				and not (isLeveldesign and os.path.normcase(os.path.normpath(root)) == topKey and d == "translation"))
+			for f in sorted(files):
+				path = os.path.join(root, f)
+				key = os.path.normcase(os.path.normpath(path))
+				if key not in skipped and key not in staleKeys:
+					scan(path)
+	# the kept stale sheets, read in turn, until no more are kept
+	pending = sorted(found)
+	while pending:
+		kept = []
+		for path in pending:
+			kept += scan(path)
+		pending = sorted(kept)
+	return found
+
+TEMPORARY_SUFFIX = ".generate_sitem_tmp"
+
+def deleteAll(paths):
+	"""delete the files that exist of these, each removal guarded so that the stop or interruption being handled is the
+	one reported; the ones that could not be deleted"""
+	left = []
+	for path in paths:
+		try:
+			if os.path.exists(path):
+				os.remove(path)
+		except OSError:
+			left.append(path)
+	return left
+
+def leftover(left, done):
+	"""done, or which files and folders could not be deleted"""
+	return done if not left else "these could not be deleted, remove them before running again: " + ", ".join(left)
+
+def writeSheets(remove):
+	"""the sheets whose content changes, LF as the leveldesign stores them (.gitattributes eol=lf): each written beside
+	its sheet, then, once all are, renamed over it; then the removal of the stale sheets to remove"""
+	changes = []
+	for key in sorted(outputs.keys()):
+		path, content = outputs[key]
+		# what a stopped run left beside any sheet this run makes, whether it changes this time or not
+		if os.path.exists(path + TEMPORARY_SUFFIX):
+			fail(path + TEMPORARY_SUFFIX + " is what a run that was stopped wrote beside " + path + ": remove it, then run again (nothing was written)")
+		data = content.encode("utf-8")
+		if not (os.path.isfile(path) and readBytes(path) == data):
+			changes.append((path, data))
+	# every change beside its sheet: a failure or an interruption deletes what was written and the folders made for it
+	made, temporaries, current = [], [], None
+	try:
+		for path, data in changes:
+			missing = []
+			folder = os.path.dirname(path)
+			while not os.path.isdir(folder):
+				missing.insert(0, folder)
+				folder = os.path.dirname(folder)
+			for folder in missing:
+				current = "the folder " + folder
+				os.mkdir(folder)
+				made.append(folder)
+			current = path + TEMPORARY_SUFFIX
+			temporaries.append(current)
+			with open(current, "wb") as f:
+				f.write(data)
+	except BaseException as e:
+		left = deleteAll(temporaries)
+		for folder in reversed(made):
+			try:
+				if os.path.isdir(folder) and not os.listdir(folder):
+					os.rmdir(folder)
+			except OSError:
+				left.append(folder)
+		state = "no sheet was changed or removed, " + leftover(left, "what was written beside them is deleted")
+		if not isinstance(e, OSError):
+			print("Stopped while making " + str(current) + ", " + state)
+			raise
+		fail("Cannot make " + str(current) + " (" + str(e) + "): " + state)
+	# then each over its sheet
+	replaced = 0
+	try:
+		for path, data in changes:
+			os.replace(path + TEMPORARY_SUFFIX, path)
+			print("written: " + path)
+			replaced += 1
+	except BaseException as e:
+		left = deleteAll([ path + TEMPORARY_SUFFIX for path, data in changes[replaced:] ])
+		state = ("%d of the %d changed sheets were replaced before it, no stale sheet was removed, " % (replaced, len(changes))
+			+ leftover(left, "what was written beside the others is deleted") + ": run again once the cause is fixed")
+		if not isinstance(e, OSError):
+			print("Stopped while replacing " + changes[replaced][0] + ", " + state)
+			raise
+		fail("Cannot replace " + changes[replaced][0] + " (" + str(e) + "): " + state)
+	done = 0
+	try:
+		for path in remove:
+			os.remove(path)
+			print("removed, nothing names it: " + path)
+			done += 1
+	except BaseException as e:
+		state = "every sheet is written and %d of the %d stale sheets to remove were removed before it: run again" % (done, len(remove))
+		if not isinstance(e, OSError):
+			print("Stopped while removing " + remove[done] + ", " + state)
+			raise
+		fail("Cannot remove " + remove[done] + " (" + str(e) + "): " + state)
+	print("%d sheets made, %d written (the others are as they were), %d removed" % (len(outputs), len(changes), len(remove)))
+
 generateParents()
 generateSitems()
 generatePlotItems()
-checkCraftedItems()
+staleSheets = findStaleSheets()
+removedSheets = []
+if staleSheets and not removeStale:
+	for path in staleSheets:
+		print("stale, not removed: " + path + " (no row makes it and no table names it; --remove-stale removes it if nothing names it)")
+elif staleSheets:
+	references = findReferences(staleSheets)
+	for path in staleSheets:
+		if path in references:
+			print("stale, kept: " + path + " (named by " + references[path] + ")")
+		else:
+			removedSheets.append(path)
+	print("the stale sheets were looked for in " + leveldesignPath + " and in " + ", ".join(os.path.join(codePath, *p) for p in CODE_DATA)
+		+ "; not read: " + NOT_SCANNED + ", so an item only those name is removed")
+checkCraftedItems(removedSheets)
+writeSheets(removedSheets)
+if staleSheets:
+	print("%d stale sheets: %d removed, %d kept" % (len(staleSheets), len(removedSheets), len(staleSheets) - len(removedSheets)))

@@ -30,6 +30,18 @@ def isFileName(pattern, name):
 # a sheet is written beside its target under this suffix, then renamed over it
 TEMPORARY_SUFFIX = ".generating"
 
+def deleteTemporaries(paths, done):
+	"""delete the temporary files that exist of these, each removal guarded so that the stop or interruption being
+	handled is the one reported: done when all went, or which could not be deleted"""
+	left = []
+	for path in paths:
+		try:
+			if os.path.exists(path):
+				os.remove(path)
+		except OSError:
+			left.append(path)
+	return done if not left else "these temporary files could not be deleted, remove them: " + ", ".join(left)
+
 # keywords only the client reads (sbrick_manager.cpp compiles every KEY: it finds), which the server skips
 CLIENT_ONLY_KEYWORDS = { "fplan", "info", "bhfeca_tag" }
 
@@ -657,23 +669,20 @@ class Generator:
 					with open(current, "wb") as f:
 						f.write(data)
 			except BaseException as e:
-				for temporary in temporaries:
-					if os.path.exists(temporary):
-						os.remove(temporary)
+				state = "no sheet was changed or removed, " + deleteTemporaries(temporaries, "the files written so far beside them were deleted")
 				if not isinstance(e, OSError):
+					sys.stderr.write("error: the write was stopped while writing " + str(current) + ", " + state + "\n")
 					raise
-				raise Stop("writing " + current + " failed (" + str(e) + "): no sheet was changed or removed, the files written so far beside them were deleted")
+				raise Stop("writing " + current + " failed (" + str(e) + "): " + state)
 			replaced = 0
 			try:
 				for path, data in changes:
 					os.replace(path + TEMPORARY_SUFFIX, path)
 					replaced += 1
 			except BaseException as e:
-				for path, data in changes[replaced:]:
-					if os.path.exists(path + TEMPORARY_SUFFIX):
-						os.remove(path + TEMPORARY_SUFFIX)
-				state = ("with " + str(replaced) + " of " + str(len(changes)) + " sheets replaced before it and no stale sheet removed: "
-					+ "run the write again to complete it")
+				left = deleteTemporaries([ path + TEMPORARY_SUFFIX for path, data in changes[replaced:] ], "")
+				state = ("with " + str(replaced) + " of " + str(len(changes)) + " sheets replaced before it and no stale sheet removed"
+					+ ("; " + left if left else "") + ": run the write again to complete it")
 				if not isinstance(e, OSError):
 					sys.stderr.write("error: the write was stopped while replacing " + changes[replaced][0] + ", " + state + "\n")
 					raise

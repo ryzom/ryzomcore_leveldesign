@@ -3,7 +3,7 @@
 # ../generate_r2_sheets/generate_sitem.py, which writes the items and names in each item the plan that makes it
 # (CraftPlan). One table for both keeps a plan and its item pointing at each other.
 #
-# Python 2 and 3 (generate_sitem.py runs under both), no imports beyond the standard library.
+# No imports beyond the standard library: generate_sitem.py imports it from its own folder.
 #
 # The plan ids follow the craft grammar of the translation (survey_translations.md 2.3): BC + origin + category + E +
 # variant + number, and for most of them the item code after an underscore (bcfaec01_fahb makes icfahb). The ids
@@ -61,9 +61,17 @@ REFUGEE_PIECES = { "boots": "b", "gloves": "g", "pants": "p", "sleeves": "s", "v
 REFUGEE_COLOURS = { "black": "a", "beige": "e", "green": "g", "red": "r", "turquoise": "t", "blue": "u", "violet": "v", "white": "w" }
 REFUGEE_LIGHT = { 7: "b", 8: "g", 10: "s" }
 
-# Plans that make no item, with the reason (the plans domain excludes them with it)
+# Plans that make no item, with the reason. A known reason (the code has no item type for it, a placeholder without a
+# text) is excluded by the plans domain with it; an id no rule of this file reads is an error there (Reason.known)
+class Reason(str):
+	"""why a plan makes no item; known is False where this file has no rule for the id"""
+	def __new__(cls, text, known):
+		reason = str.__new__(cls, text)
+		reason.known = known
+		return reason
+
 NO_ITEM_TYPE = "the code has no item type for it (item_type.h has no %s), so no item can be crafted"
-DUPLICATE = "a second plan for %s, which %s makes; this one is a <GEN> placeholder without text"
+PLACEHOLDER = "a <GEN> placeholder without a text: neither its name nor its number says which item it makes"
 
 def readWords(sheetType):
 	"""the (id, row) pairs of the work file of a sheet type, ids lower case, in file order"""
@@ -110,13 +118,14 @@ def planItem(planId, englishName):
 	if p in NAMED:
 		return NAMED[p], None
 	if p == "bccmea17":
-		return None, DUPLICATE % ("the common staff iccm1bs", "bccmea09 (Staff)")
+		# the translation's only text for it is <GEN>bccmea17, and number 17 of the common melee plans names nothing
+		return None, Reason(PLACEHOLDER, True)
 	m = re.match(r"^bc[fmtzcbr][mrpajs]e[a-d]\d\d_([a-z][a-z0-9]*(_[a-z0-9]+)?)$", p) # the item code after the number (_2, _b ...)
 	if m:
 		return "ic" + m.group(1), None
 	m = re.match(r"^bc([fmtzcbr])([mrpajs])e([a-d])(\d\d)(_[23])?$", p)
 	if not m:
-		return None, "the plan id follows no rule of plan_items.py"
+		return None, Reason("the plan id follows no rule of plan_items.py", False)
 	origin, category, variant, number, quality = m.group(1), m.group(2), m.group(3), int(m.group(4)), m.group(5) or ""
 	code = None
 	if origin == "r" and category == "a":
@@ -125,7 +134,7 @@ def planItem(planId, englishName):
 			return "icra" + REFUGEE_PIECES[words[2]] + REFUGEE_COLOURS[words[1]], None
 		if variant == "b" and number in REFUGEE_LIGHT:
 			return "icral" + REFUGEE_LIGHT[number], None
-		return None, "the refugee plan's name \"" + englishName + "\" names no colour and piece plan_items.py knows"
+		return None, Reason("the refugee plan's name \"" + englishName + "\" names no colour and piece plan_items.py knows", False)
 	if (origin + category, number) in SPECIAL:
 		code = category + SPECIAL[(origin + category, number)]
 	elif category == "j" and 1 <= number <= len(JEWELS):
@@ -141,11 +150,11 @@ def planItem(planId, englishName):
 	elif category == "a" and number in UNDERWEAR:
 		code = UNDERWEAR[number]
 	if code is None:
-		return None, "the plan number %d of %s follows no rule of plan_items.py" % (number, p)
+		return None, Reason("the plan number %d of %s follows no rule of plan_items.py" % (number, p), False)
 	item = "ic" + origin + code + quality
 	kind = itemType(item)
 	if kind in ("HARPOON", "GRENADE_AMMO", "HARPOON_AMMO"):
-		return None, NO_ITEM_TYPE % { "HARPOON": "harpoon", "GRENADE_AMMO": "grenade ammunition", "HARPOON_AMMO": "harpoon ammunition" }[kind]
+		return None, Reason(NO_ITEM_TYPE % { "HARPOON": "harpoon", "GRENADE_AMMO": "grenade ammunition", "HARPOON_AMMO": "harpoon ammunition" }[kind], True)
 	return item, None
 
 def plans():

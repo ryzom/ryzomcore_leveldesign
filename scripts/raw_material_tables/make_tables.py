@@ -5,9 +5,14 @@
 # Sources: the translation (which families exist, which creature gives which body part, which deposit families the
 # forage filters name), the code (which stats each component type carries, rm_family.cpp), and the creatures of the
 # Ring generator (../generate_r2_sheets/creature_fauna.tsv: attack, defence and protections, which the materials of a
-# creature take after). No value comes from Nevrax's tables.
+# creature take after). No value comes from Nevrax's tables; the identification columns of the families (group,
+# location, icon) agree with the old rm_fam_prop.csv kept beside the tool.
 #
-#   python make_tables.py [--code <code folder>]     (default: the code checkout beside the leveldesign, ../code)
+#   python make_tables.py [--code <code folder>] [--atlas <interface folder>]
+#
+# Both defaults are found from this script's place: the code checkout beside the leveldesign that holds it
+# (<leveldesign>/../code) and the interface atlas lists of the pipeline beside it (<leveldesign>/../pipeline/install/
+# interfaces, texture_interfaces_dxtc.txt and texture_interfaces_v3.txt), which the icons are checked against.
 
 import argparse, collections, os, re, sys
 
@@ -17,7 +22,13 @@ R2 = os.path.join(LEVELDESIGN, "scripts", "generate_r2_sheets")
 DFN = os.path.join(LEVELDESIGN, "DFN", "game_elem", "_item")
 WORK = os.path.join(LEVELDESIGN, "translation", "work")
 CREATURES = os.path.join(LEVELDESIGN, "game_elem", "creature")
-ATLAS = os.path.join(LEVELDESIGN, "..", "pipeline", "install", "interfaces")
+DEFAULT_CODE = os.path.normpath(os.path.join(LEVELDESIGN, "..", "code"))
+DEFAULT_ATLAS = os.path.normpath(os.path.join(LEVELDESIGN, "..", "pipeline", "install", "interfaces"))
+ATLAS_LISTS = [ "texture_interfaces_dxtc.txt", "texture_interfaces_v3.txt" ]
+
+# What to do when an input of the leveldesign is missing: it is read from the leveldesign that holds this script
+IN_LEVELDESIGN = ("this script reads it from the leveldesign that holds it (" + LEVELDESIGN + "), which must have it: to make the tables "
+	+ "of another leveldesign, run the copy of the script there")
 
 errors = []
 def error(message):
@@ -27,11 +38,15 @@ def fail(message):
 	print("ERROR: " + message, file=sys.stderr)
 	sys.exit(1)
 
-def readText(path):
+def readText(path, remedy=IN_LEVELDESIGN):
+	"""a whole input file, UTF-8 (with or without its mark); a missing or undecodable file stops the script"""
 	if not os.path.isfile(path):
-		fail(path + " not found")
-	with open(path, "r", encoding="utf-8-sig", errors="replace") as f:
-		return f.read()
+		fail(path + " not found: " + remedy)
+	try:
+		with open(path, "r", encoding="utf-8-sig") as f:
+			return f.read()
+	except UnicodeDecodeError as e:
+		fail(path + " is not UTF-8 text (" + str(e) + "): the inputs are read as they are written, correct the file")
 
 # ------------------------------------------------------------------------------------------------------ the code
 STAT_NAMES = None # RM_FABER_STAT_TYPE in enum order: the DFN atom names, which the tool and the sheets use
@@ -42,8 +57,10 @@ RELEVANT = None # letter: the stats the code adds up for a material in that slot
 def readCode(code):
 	global STAT_NAMES, TYPE_NAMES, TYPE_ENTRIES, RELEVANT
 	folder = os.path.join(code, "ryzom", "common", "src", "game_share")
-	header = readText(os.path.join(folder, "rm_family.h"))
-	source = readText(os.path.join(folder, "rm_family.cpp"))
+	remedy = ("the stats and component types are read from the code checkout (" + code + "; by default the one beside the leveldesign, "
+		+ DEFAULT_CODE + "): pass --code <code folder> to name another")
+	header = readText(os.path.join(folder, "rm_family.h"), remedy)
+	source = readText(os.path.join(folder, "rm_family.cpp"), remedy)
 	m = re.search(r"enum TRMStatType\s*\{(.*?)NumRMStatType", header, re.S)
 	STAT_NAMES = re.findall(r"^\s*(\w+)\s*(?:=\s*0)?\s*,", m.group(1), re.M)
 	m = re.search(r"enum TRMFType\s*\{(.*?)Unknown", header, re.S)
@@ -331,10 +348,13 @@ def readTsv(path):
 		rows.append(dict(zip(header, cols + [ "" ] * (len(header) - len(cols)))))
 	return rows
 
-def readAtlas():
+def readAtlas(folder):
+	"""the names of the interface atlases (the client reads a .png name as its .tga): every icon must be one of them"""
+	remedy = ("the icons are checked against the interface atlas lists of the pipeline (" + folder + "; by default the one beside the "
+		+ "leveldesign, " + DEFAULT_ATLAS + "): build the interfaces, or pass --atlas <folder of the lists> to name another")
 	names = set()
-	for f in ( "texture_interfaces_dxtc.txt", "texture_interfaces_v3.txt" ):
-		for line in readText(os.path.join(ATLAS, f)).splitlines():
+	for f in ATLAS_LISTS:
+		for line in readText(os.path.join(folder, f), remedy).splitlines():
 			if line.strip():
 				names.add(line.split()[0].lower())
 	return names
@@ -354,15 +374,19 @@ def creatureSheets():
 # ------------------------------------------------------------------------------------------------------- tables
 def main():
 	parser = argparse.ArgumentParser(description="write Ryzom Core's raw material tables for mp_generator")
-	parser.add_argument("--code", default=os.path.join(LEVELDESIGN, "..", "code"), help="the code checkout (for rm_family.h/.cpp)")
+	parser.add_argument("--code", default=DEFAULT_CODE, help="the code checkout, for rm_family.h/.cpp (default: " + DEFAULT_CODE + ")")
+	parser.add_argument("--atlas", default=DEFAULT_ATLAS, help="the folder of the interface atlas lists " + " and ".join(ATLAS_LISTS)
+		+ " (default: " + DEFAULT_ATLAS + ")")
 	args = parser.parse_args()
-	readCode(os.path.normpath(args.code))
+	readCode(os.path.normpath(os.path.abspath(args.code)))
 
+	if not os.path.isdir(CREATURES):
+		fail("the creature sheets " + CREATURES + " not found: " + IN_LEVELDESIGN)
 	families = readTyp("item_mp_family.typ")
 	groups = readTyp("item_mp_group.typ")
 	itemWords = readWords("item_words_wk.txt")
 	sbrickWords = readWords("sbrick_words_wk.txt")
-	atlas = readAtlas()
+	atlas = readAtlas(os.path.normpath(os.path.abspath(args.atlas)))
 	sheets = creatureSheets()
 
 	def checkFamily(name):
@@ -493,7 +517,14 @@ def main():
 	for name, group, location, icon in GOO_FAMILIES:
 		row(name, group, "", location, icon)
 
-	# ---- every component type of a plan has deposit and creature materials
+	# ---- every component type of a plan has deposit and creature materials. That is enough for the items of every
+	# origin: a material counts for an item when the CraftCivSpec of its part for the component type is common or the
+	# item's origin, or the item is common (the server's craft check of the default build; the ecosystem against the
+	# plan's CivRestriction is the rule of RYZOM_FORGE builds). mp_generator writes a CraftCivSpec by the ecosystem of
+	# the sheet (common and prime roots common, desert fyros, forest matis, jungle zorai, lakes tryker), and makes every
+	# deposit family Basic and Fine in the common ecosystem and Choice, Excellent and Supreme in prime roots too: so a
+	# type a deposit family serves has common materials of every class, which every item takes, up to quality 250
+	# (domains/plans.py of generate_core4_sheets checks each plan against the sheets)
 	served = collections.defaultdict(set)
 	for cells in rows:
 		if cells[5] in ( "D", "C" ) and cells[18] != "x":
@@ -515,11 +546,15 @@ def main():
 			print("ERROR: " + e, file=sys.stderr)
 		sys.exit(1)
 
-	# ---- write
+	# ---- the four tables, made in memory, then written (writeTables)
+	tables = [] # (table file, content)
 	def write(name, lines):
-		with open(os.path.join(HERE, name), "w", encoding="ascii", newline="\n") as f:
-			for line in lines:
-				f.write(";".join(line) + "\n")
+		content = "".join(";".join(line) + "\n" for line in lines)
+		try:
+			data = content.encode("ascii")
+		except UnicodeEncodeError as e:
+			fail(name + " would hold a character other than ASCII (" + str(e) + "): no table was changed")
+		tables.append(( os.path.join(HERE, name), data ))
 
 	header = [ "", "Group", "Craft parts", "Attributes", "", "Location", "Icon", "", "", "", "BestA", "WorstA1", "WorstA2",
 		"BestB", "WorstB1", "WorstB2", "Color", "", "Special only", "Special items" ]
@@ -530,12 +565,66 @@ def main():
 	# The class of a creature's craft materials by its level code (zone letter, then 1-4 for the four strengths of a zone
 	# and 5-8 for its bosses): the zones follow the bands of fifty levels the deposits' classes cover (a and b up to 50
 	# Basic, c up to 100 Fine, d up to 150 Choice, e up to 200 Excellent, f up to 250 Supreme), and a boss gives the next
-	# class
+	# class. Local level 6 gets none (-): the server never quarters a craft material from a creature of that level
+	# (egs_static_harvestable.cpp gives it no quantity), so its materials would be sheets nobody gets
 	classes = [ "Basic", "Fine", "Choice", "Excellent", "Supreme" ]
-	write("rm_creature_classes.csv", [ [ "Level", "Class" ] ] + [ [ zone + str(digit),
-		classes[min(len(classes) - 1, max(0, "abcdef".index(zone) - 1) + (1 if digit >= 5 else 0))] ]
+	def creatureClass(zone, digit):
+		if digit == 6:
+			return "-"
+		return classes[min(len(classes) - 1, max(0, "abcdef".index(zone) - 1) + (1 if digit >= 5 else 0))]
+	write("rm_creature_classes.csv", [ [ "Level", "Class" ] ] + [ [ zone + str(digit), creatureClass(zone, digit) ]
 		for zone in "abcdef" for digit in range(1, 9) ])
+	writeTables(tables)
 	print("%d families (%d creature models), written to %s" % (len(rows), len(models), HERE))
+
+TEMPORARY_SUFFIX = ".make_tables_tmp"
+
+def deleteAll(paths):
+	"""delete the files that exist of these, each removal guarded so that the stop or interruption being handled is the
+	one reported; the ones that could not be deleted"""
+	left = []
+	for path in paths:
+		try:
+			if os.path.exists(path):
+				os.remove(path)
+		except OSError:
+			left.append(path)
+	return left
+
+def deleted(left):
+	return "the temporary files are deleted" if not left else "these temporary files could not be deleted, remove them: " + ", ".join(left)
+
+def writeTables(tables):
+	"""each table to a temporary file beside it, then, once all four are written, each renamed over its table (a step the
+	file system does at once). A failure or an interruption before the renames deletes the temporary files and leaves
+	the tables as they were; one during the renames deletes those not renamed yet and says how many were replaced."""
+	for path, data in tables:
+		if os.path.exists(path + TEMPORARY_SUFFIX):
+			fail(path + TEMPORARY_SUFFIX + " is the temporary file of a run that was stopped: remove it, then run again (no table was changed)")
+	written = []
+	try:
+		for path, data in tables:
+			written.append(path + TEMPORARY_SUFFIX)
+			with open(path + TEMPORARY_SUFFIX, "wb") as f:
+				f.write(data)
+	except BaseException as e:
+		state = "no table was changed, " + deleted(deleteAll(written))
+		if not isinstance(e, OSError):
+			print("ERROR: stopped while writing " + written[-1] + ", " + state, file=sys.stderr)
+			raise
+		fail("cannot write " + written[-1] + " (" + str(e) + "): " + state)
+	replaced = 0
+	try:
+		for path, data in tables:
+			os.replace(path + TEMPORARY_SUFFIX, path)
+			replaced += 1
+	except BaseException as e:
+		left = deleteAll([ path + TEMPORARY_SUFFIX for path, data in tables[replaced:] ])
+		state = "%d of the %d tables were replaced before it, %s: run again" % (replaced, len(tables), deleted(left))
+		if not isinstance(e, OSError):
+			print("ERROR: stopped while replacing " + tables[replaced][0] + ", " + state, file=sys.stderr)
+			raise
+		fail("cannot rename " + tables[replaced][0] + TEMPORARY_SUFFIX + " over " + tables[replaced][0] + " (" + str(e) + "): " + state)
 
 if __name__ == "__main__":
 	main()

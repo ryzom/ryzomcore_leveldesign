@@ -4,7 +4,8 @@ The tables `mp_generator` (`code/ryzom/tools/leveldesign/mp_generator`) makes th
 and stats, which component types of a craft plan each family serves, the creature models and what each gives when
 quartered. `make_tables.py` writes them from the rules below, which are Ryzom Core's own balancing; no value is taken
 from Nevrax's tables (the old `rm_fam_prop.csv`, `rm_item_parts.csv` and `creature_models.csv` beside the tool are no
-longer read).
+longer read). The identification columns of the families (group, location, icon) agree with the old `rm_fam_prop.csv`
+kept beside mp_generator.
 
 ## Running
 
@@ -15,8 +16,20 @@ python component_sources.py           # component_sources.tsv and the generated 
 python ../generate_core4_sheets/generate.py --domain forage   # the forage filters still find their materials
 ```
 
-`make_tables.py` reads the code's `ryzom/common/src/game_share/rm_family.h` and `rm_family.cpp` from the code checkout
-beside the leveldesign (`--code` names another). The tool writes, in the leveldesign: the raw material sheets
+`make_tables.py` reads, besides the leveldesign that holds it (the DFN types `item_mp_family.typ` and
+`item_mp_group.typ`, the translation's `item_words_wk.txt` and `sbrick_words_wk.txt`, the creature sheets and
+`../generate_r2_sheets/creature_fauna.tsv`):
+
+- the code's `ryzom/common/src/game_share/rm_family.h` and `rm_family.cpp`, from the code checkout beside the
+  leveldesign (`<leveldesign>/../code`; `--code` names another);
+- the interface atlas lists `texture_interfaces_dxtc.txt` and `texture_interfaces_v3.txt`, which every icon must be in,
+  from the pipeline beside the leveldesign (`<leveldesign>/../pipeline/install/interfaces`; `--atlas` names another).
+
+Both defaults come from the script's own place, not the working folder. A missing input stops it with its path and the
+option to pass; it writes the four tables only when every check has passed, each to a temporary file first, then renames
+them over the tables.
+
+The tool writes, in the leveldesign: the raw material sheets
 (`game_element/sitem/raw_material`, and removes the ones the tables no longer make), the quartering tables of the
 creatures (`_<creature>_mp.creature` below `game_elem/creature`), the deposit family list of the World Editor
 (`game_element/deposit_system/mps`), the family icons (`_ic_families.forage_source`) and the English names of new
@@ -24,8 +37,19 @@ sheets (`translation/work/item_words_wk.txt`).
 
 What the tool owns, and what stops it:
 
-- It makes everything in memory and checks it first; only when every check has passed does it write the files whose
-  content changes and remove the stale ones. A stop leaves the leveldesign as it was.
+- It makes everything in memory and checks it first. Only when every check has passed does it write the files whose
+  content changes, each whole to a temporary file beside it (`<file>.mp_generator_tmp`, every write and the close
+  checked); once all of them are written it renames each over its file, then removes the stale ones. A stop before the
+  renames, a failed write included, leaves the leveldesign as it was (the temporary files go); a failed rename or
+  removal stops the run naming the file, with the files before it done: run again once the cause is fixed. A
+  temporary file that a stopped run left beside any file this run makes stops the run before anything is written,
+  naming it.
+- Its own folders (`raw_material/_parent`, `common`, `desert`, `forest`, `jungle`, `lacustre`, `prime_roots` and
+  `deposit_system/mps`) hold only files of the names it gives (`m<family><code><ecosystem><class><variant>.sitem`
+  with the folder's ecosystem letter; `_m<family>.sitem`, `_m<ecosystem>.sitem`, `_mc<model>.sitem`;
+  `<family>_<number>.mp`). It removes only those, and a file of any other name there, or a folder, stops the run before
+  anything is written. On Windows the folder listing does not see files with the system attribute (`desktop.ini`,
+  `Thumbs.db`): those are neither checked nor removed.
 - In a creature's quartering table it owns the materials of the creature models of its tables (`m<family>c<model>...`):
   those of an earlier run give way to this run's. Every other entry (a hand-placed invasion or deposit item, anything
   else) stays as it is, in front; its own entries are recognised in any case, with or without `.sitem`. A creature's
@@ -35,22 +59,25 @@ What the tool owns, and what stops it:
   (all but its own outputs, its tables, the translation and the build's sheet lists) and `raw_material_generation.cfg`
   for that name, with or without its extension, and stops if anything names it. The cfg's CustomizedProperties must
   name sheets the run makes.
-- It stops on a table it cannot read as written, naming the table, the line and the rule: duplicate columns, lines or
-  codes (a family twice in any case of its letters), a line with too few cells, a family or group not in the DFN types,
-  a family name with other characters than letters, digits, space, ' and -, a craft part twice, a specialty without a
-  weakness, a weakness without a specialty or equal to it, stats for a part a family does not serve, a location, an
-  attribute or a special-only mark it does not know, a colour that is not a number up to 999, a creature family no
-  model has, a model with no creatures, a creature of zone g to j, a creature sheet that does not name its quartering
-  table as parent, two creature sheets of one name, a special item with bad letters or the name of a sheet its family
-  already makes. Cells are read without their surrounding blanks, and blank lines are skipped in every table.
+- It stops on a table it cannot read as written, naming the table, the line and the rule: a header that is not the one
+  `make_tables.py` writes, duplicate columns, lines or codes (a family twice in any case of its letters), a line with an
+  empty first cell after the header, a family line with too few cells, an item part or level code line without a cell
+  per column, a family or group not in the DFN types, a family number that is not 0 to 9999, a family name with other
+  characters than letters, digits, space, ' and -, a craft part twice, a specialty without a weakness, a weakness
+  without a specialty or equal to it, stats for a part a family does not serve, a location, an attribute or a
+  special-only mark it does not know, a colour that is not a number up to 999, a creature family no model has, a model
+  with no creatures, a creature of zone g to j, a creature sheet that does not name its quartering table as parent, two
+  creature sheets of one name, a special item that is not six fields with none empty but the article, one given twice,
+  with bad letters or with the name of a sheet its family already makes. Cells are read without their surrounding
+  blanks, and blank lines are skipped in every table. It also stops on a quartering table entry or a family icon file
+  (`_ic_families.forage_source`) it cannot read as written, naming the file and the line or the rule.
 - The folders of the creatures and of their quartering tables must exist; the tool creates only the folders of its
   own outputs, when it writes them.
 
 ## The tables
 
-All four are `;`-separated, and blank lines are skipped. In `rm_fam_prop.csv` and `creature_models.csv` a line whose
-first cell is empty is a header or a comment; `rm_item_parts.csv` and `rm_creature_classes.csv` have their header as
-their first line, and every other line is data.
+All four are `;`-separated, and blank lines are skipped. Each has its header as its first line (in `rm_fam_prop.csv`
+and `creature_models.csv` its first cell is empty), and every other line is data: there are no comment lines.
 
 ### rm_fam_prop.csv: the families
 
@@ -71,7 +98,7 @@ One line per raw material family (the names are those of `item_mp_family.typ`, t
 | 17 Color | An index into the colours the tool gives a class and ecosystem (common Basic and Fine: Beige, Green, Turquoise, Violet; the regions' Choice and above: Red, Blue; prime roots: White, Black). |
 | 18 | Not read. |
 | 19 Special only | `x` or `X`: the family has only the special items of column 20 on. |
-| 20 on | Special items: `<ecosystem><class letter>/singular/article/definite article/plural/plural article`. |
+| 20 on | Special items: `<ecosystem><class letter>/singular/article/definite article/plural/plural article`; only the article may be empty. |
 
 ### rm_item_parts.csv: the stats of each component type
 
@@ -89,7 +116,8 @@ families' names), category. These are the models of the Ring's creature table
 ### rm_creature_classes.csv: the class of a creature's materials
 
 The level code of a creature sheet (zone letter and digit: 1 to 4 the four strengths of a zone, 5 to 8 its bosses) and
-the class of its craft materials.
+the class of its craft materials, or `-` for none: local level 6 gets none, as the server never quarters a craft
+material from a creature of that level (`egs_static_harvestable.cpp`).
 
 ## The model
 
@@ -187,9 +215,10 @@ material weak in durability has 1 there, a point above its class. The tables say
   and Supreme (250) in each of the five regions. A class covers a band of fifty qualities.
 - **Creatures** (`rm_creature_classes.csv`): the class follows the zone of the creature, in the same bands of fifty
   levels (zones a and b up to level 50 Basic, c Fine, d Choice, e Excellent, f Supreme), and a zone's bosses give the
-  next class. Basic and Fine materials are common, Choice and above carry the creature's ecosystem (the tool). Only
-  creatures of the common ecosystem and the five regions get materials; the goo and invasion creatures keep what they
-  have (the degenerated bosses, whose parts are all mission materials, keep their placeholder too).
+  next class (local level 6, which the server never quarters for craft materials, none). Basic and Fine materials are
+  common, Choice and above carry the creature's ecosystem (the tool). Only creatures of the common ecosystem and the
+  five regions get materials; the goo and invasion creatures keep what they have (the degenerated bosses, whose parts
+  are all mission materials, keep their placeholder too).
 - **Quality**: a quartered material has the creature's level as its quality (`Basics.XPLevel`, up to 250): the tool
   writes it as the `MinQuality`/`MaxQuality` of each entry of the creature's quartering table, which is what
   `CCharacter::harvest` gives (without it every quartered material came out at quality 5). Mission materials go by
@@ -208,11 +237,14 @@ A plan slot (`Create.MP n`, `Quantity n`) names a component type of `RM_FABER_TY
   `deposit_max_quality_250` of its deposit primitive, and the sheet's `MaxQuality` (the class band above) only where
   the deposit gives none (-1, `harvest_source.cpp`); a quartered one has the creature's level.
 - **Class** is the stat level, not a quality limit: a q200 item made of Basic materials has weak stats.
-- **Civilisation**: a plan with a `CivRestriction` takes common and prime roots materials and those of its own
-  ecosystem only (Fyros desert, Matis forest, Tryker lakes, Zorai jungle; `faber_phrase.cpp`). Common plans take any.
-  Basic and Fine materials are all common, so the restriction only bites from Choice up, where every region has every
-  component type (deposits) and its own creatures. The client's craft window follows the plan's civilisation the same
-  way (Jan's decision of 2026-11-23, with the client change).
+- **Civilisation**: a material counts for a component when the `CraftCivSpec` of its part for that component type is
+  `common` or the origin of the item the plan makes, or that item is of common origin (the server's craft check of the
+  default build, `faber_phrase.cpp`, and the client's craft window; the rule of the plan's `CivRestriction` against the
+  material's ecosystem is that of `RYZOM_FORGE` builds). The tool writes the `CraftCivSpec` by the sheet's ecosystem:
+  common and prime roots `common`, desert `fyros`, forest `matis`, jungle `zorai`, lakes `tryker`. So a Fyros item
+  takes the common, prime roots and desert materials; a tribe, refugee, kami or karavan item the common and prime roots
+  ones only; a common item any. Basic and Fine materials are all common, and every deposit family has Choice,
+  Excellent and Supreme sheets in prime roots: every item can be made of every class from deposits.
 - **Mission materials** (no craft part: construction, food, insects, meat, skulls ...) can only be asked for by sheet,
   in `MP formula n` slots.
 - **Where they are**: the material sheets exist for every creature sheet of core4 and every deposit class, but the
@@ -228,35 +260,36 @@ A plan slot (`Create.MP n`, `Quantity n`) names a component type of `RM_FABER_TY
   setting, Ammo bullet); the zone-b boss (`chdfb5`) gives the Fine ones (`m0688chdcb01` ...). The Basic common deposit
   sheets are `m<family>dxacb01`.
 - `component_sources.tsv` lists every material sheet with each component type it serves, its family and group, class,
-  ecosystem, quality (deposits: up to the sheet's max; creatures: the levels of the creatures that give it), the stat
-  it is best in there, and how many creature sheets give it.
+  ecosystem, the `CraftCivSpec` of that part, quality (deposits: up to the sheet's max; creatures: the levels of the
+  creatures that give it), the stat it is best in there, and how many creature sheets give it.
 
-Per component type and class, the materials there are (deposits: their max quality and ecosystems; creatures: the
-number of families and the qualities they come at). The kitin lairs' larva, Supreme for every type, is not counted.
+Per component type and class, the materials there are (deposits: their max quality and the `CraftCivSpec` of their
+parts, common for the common ecosystem and prime roots; creatures: the number of families and the qualities they come
+at). The kitin lairs' larva, Supreme for every type, is not counted.
 
 <!-- generated by component_sources.py -->
 | Type | Name | Basic | Fine | Choice | Excellent | Supreme |
 | --- | --- | --- | --- | --- | --- | --- |
-| A MpL | Blade | deposits q50 (common); 7 creature families q2-50 | deposits q100 (common); 10 creature families q62-103 | deposits q150 (desert, forest, jungle, lakes, prime roots); 21 creature families q108-159 | deposits q200 (desert, forest, jungle, lakes, prime roots); 32 creature families q148-211 | deposits q250 (desert, forest, jungle, lakes, prime roots); 41 creature families q197-250 |
-| B MpH | Hammer | deposits q50 (common); 5 creature families q1-42 | deposits q100 (common); 12 creature families q47-95 | deposits q150 (desert, forest, jungle, lakes, prime roots); 11 creature families q97-145 | deposits q200 (desert, forest, jungle, lakes, prime roots); 19 creature families q149-208 | deposits q250 (desert, forest, jungle, lakes, prime roots); 16 creature families q195-250 |
-| C MpP | Point | deposits q50 (common); 9 creature families q1-50 | deposits q100 (common); 13 creature families q49-103 | deposits q150 (desert, forest, jungle, lakes, prime roots); 20 creature families q98-159 | deposits q200 (desert, forest, jungle, lakes, prime roots); 27 creature families q148-211 | deposits q250 (desert, forest, jungle, lakes, prime roots); 31 creature families q197-250 |
-| D MpM | Shaft | deposits q50 (common); 12 creature families q1-50 | deposits q100 (common); 14 creature families q62-103 | deposits q150 (desert, forest, jungle, lakes, prime roots); 25 creature families q108-159 | deposits q200 (desert, forest, jungle, lakes, prime roots); 37 creature families q148-211 | deposits q250 (desert, forest, jungle, lakes, prime roots); 42 creature families q197-250 |
-| E MpG | Grip | deposits q50 (common); 6 creature families q1-47 | deposits q100 (common); 7 creature families q62-101 | deposits q150 (desert, forest, jungle, lakes, prime roots); 10 creature families q108-150 | deposits q200 (desert, forest, jungle, lakes, prime roots); 10 creature families q153-202 | deposits q250 (desert, forest, jungle, lakes, prime roots); 13 creature families q203-250 |
-| F MpC | Counterweight | deposits q50 (common); 5 creature families q1-42 | deposits q100 (common); 12 creature families q47-95 | deposits q150 (desert, forest, jungle, lakes, prime roots); 11 creature families q97-145 | deposits q200 (desert, forest, jungle, lakes, prime roots); 18 creature families q149-196 | deposits q250 (desert, forest, jungle, lakes, prime roots); 15 creature families q195-250 |
-| G MpGA | Trigger | deposits q50 (common); 11 creature families q1-47 | deposits q100 (common); 18 creature families q47-101 | deposits q150 (desert, forest, jungle, lakes, prime roots); 20 creature families q97-150 | deposits q200 (desert, forest, jungle, lakes, prime roots); 27 creature families q149-202 | deposits q250 (desert, forest, jungle, lakes, prime roots); 27 creature families q195-250 |
-| H MpPE | Firing pin | deposits q50 (common); 6 creature families q2-50 | deposits q100 (common); 8 creature families q62-103 | deposits q150 (desert, forest, jungle, lakes, prime roots); 15 creature families q111-159 | deposits q200 (desert, forest, jungle, lakes, prime roots); 22 creature families q148-211 | deposits q250 (desert, forest, jungle, lakes, prime roots); 24 creature families q197-250 |
-| I MpCA | Barrel | deposits q50 (common); 5 creature families q1-50 | deposits q100 (common); 8 creature families q57-103 | deposits q150 (desert, forest, jungle, lakes, prime roots); 11 creature families q102-159 | deposits q200 (desert, forest, jungle, lakes, prime roots); 19 creature families q148-211 | deposits q250 (desert, forest, jungle, lakes, prime roots); 20 creature families q197-250 |
-| J MpE | Explosive | deposits q50 (common); 7 creature families q2-50 | deposits q100 (common); 7 creature families q58-100 | deposits q150 (desert, forest, jungle, lakes, prime roots); 11 creature families q108-159 | deposits q200 (desert, forest, jungle, lakes, prime roots); 15 creature families q148-211 | deposits q250 (desert, forest, jungle, lakes, prime roots); 18 creature families q197-250 |
-| K MpEN | Ammo jacket | deposits q50 (common); 5 creature families q1-46 | deposits q100 (common); 7 creature families q57-103 | deposits q150 (desert, forest, jungle, lakes, prime roots); 8 creature families q102-154 | deposits q200 (desert, forest, jungle, lakes, prime roots); 7 creature families q153-204 | deposits q250 (desert, forest, jungle, lakes, prime roots); 6 creature families q200-250 |
-| L MpPR | Ammo bullet | deposits q50 (common); 10 creature families q1-47 | deposits q100 (common); 18 creature families q47-101 | deposits q150 (desert, forest, jungle, lakes, prime roots); 20 creature families q97-150 | deposits q200 (desert, forest, jungle, lakes, prime roots); 27 creature families q149-202 | deposits q250 (desert, forest, jungle, lakes, prime roots); 27 creature families q195-250 |
-| M MpCR | Armor shell | deposits q50 (common); 10 creature families q1-50 | deposits q100 (common); 13 creature families q60-103 | deposits q150 (desert, forest, jungle, lakes, prime roots); 19 creature families q103-159 | deposits q200 (desert, forest, jungle, lakes, prime roots); 28 creature families q148-211 | deposits q250 (desert, forest, jungle, lakes, prime roots); 32 creature families q197-250 |
-| N MpRI | Lining | deposits q50 (common); 12 creature families q1-50 | deposits q100 (common); 19 creature families q47-100 | deposits q150 (desert, forest, jungle, lakes, prime roots); 23 creature families q97-159 | deposits q200 (desert, forest, jungle, lakes, prime roots); 33 creature families q148-211 | deposits q250 (desert, forest, jungle, lakes, prime roots); 33 creature families q195-250 |
-| O MpRE | Stuffing | deposits q50 (common); 8 creature families q1-46 | deposits q100 (common); 10 creature families q49-103 | deposits q150 (desert, forest, jungle, lakes, prime roots); 13 creature families q108-154 | deposits q200 (desert, forest, jungle, lakes, prime roots); 11 creature families q154-204 | deposits q250 (desert, forest, jungle, lakes, prime roots); 12 creature families q199-250 |
-| P MpAT | Armor clip | deposits q50 (common); 12 creature families q1-47 | deposits q100 (common); 13 creature families q62-101 | deposits q150 (desert, forest, jungle, lakes, prime roots); 19 creature families q108-150 | deposits q200 (desert, forest, jungle, lakes, prime roots); 21 creature families q153-202 | deposits q250 (desert, forest, jungle, lakes, prime roots); 27 creature families q203-250 |
-| Q MpSU | Jewel setting | deposits q50 (common); 9 creature families q1-42 | deposits q100 (common); 19 creature families q47-95 | deposits q150 (desert, forest, jungle, lakes, prime roots); 17 creature families q97-145 | deposits q200 (desert, forest, jungle, lakes, prime roots); 28 creature families q149-196 | deposits q250 (desert, forest, jungle, lakes, prime roots); 22 creature families q195-250 |
-| R MpED | Jewel | deposits q50 (common); 5 creature families q1-42 | deposits q100 (common); 12 creature families q47-95 | deposits q150 (desert, forest, jungle, lakes, prime roots); 11 creature families q97-145 | deposits q200 (desert, forest, jungle, lakes, prime roots); 18 creature families q149-196 | deposits q250 (desert, forest, jungle, lakes, prime roots); 15 creature families q195-250 |
-| Y MpVE | Clothes | deposits q50 (common); 5 creature families q1-42 | deposits q100 (common); 12 creature families q47-95 | deposits q150 (desert, forest, jungle, lakes, prime roots); 11 creature families q97-145 | deposits q200 (desert, forest, jungle, lakes, prime roots); 17 creature families q149-196 | deposits q250 (desert, forest, jungle, lakes, prime roots); 14 creature families q195-250 |
-| Z MpMF | Magic focus | deposits q50 (common); 9 creature families q1-43 | deposits q100 (common); 16 creature families q47-95 | deposits q150 (desert, forest, jungle, lakes, prime roots); 16 creature families q97-145 | deposits q200 (desert, forest, jungle, lakes, prime roots); 22 creature families q149-197 | deposits q250 (desert, forest, jungle, lakes, prime roots); 21 creature families q195-250 |
+| A MpL | Blade | deposits q50 (common); 7 creature families q2-50 | deposits q100 (common); 10 creature families q62-103 | deposits q150 (common, fyros, matis, tryker, zorai); 21 creature families q108-159 | deposits q200 (common, fyros, matis, tryker, zorai); 32 creature families q148-211 | deposits q250 (common, fyros, matis, tryker, zorai); 41 creature families q197-250 |
+| B MpH | Hammer | deposits q50 (common); 5 creature families q1-42 | deposits q100 (common); 12 creature families q47-95 | deposits q150 (common, fyros, matis, tryker, zorai); 11 creature families q97-145 | deposits q200 (common, fyros, matis, tryker, zorai); 19 creature families q149-208 | deposits q250 (common, fyros, matis, tryker, zorai); 16 creature families q195-250 |
+| C MpP | Point | deposits q50 (common); 9 creature families q1-50 | deposits q100 (common); 13 creature families q49-103 | deposits q150 (common, fyros, matis, tryker, zorai); 20 creature families q98-159 | deposits q200 (common, fyros, matis, tryker, zorai); 27 creature families q148-211 | deposits q250 (common, fyros, matis, tryker, zorai); 31 creature families q197-250 |
+| D MpM | Shaft | deposits q50 (common); 12 creature families q1-50 | deposits q100 (common); 14 creature families q62-103 | deposits q150 (common, fyros, matis, tryker, zorai); 25 creature families q108-159 | deposits q200 (common, fyros, matis, tryker, zorai); 37 creature families q148-211 | deposits q250 (common, fyros, matis, tryker, zorai); 42 creature families q197-250 |
+| E MpG | Grip | deposits q50 (common); 6 creature families q1-47 | deposits q100 (common); 7 creature families q62-101 | deposits q150 (common, fyros, matis, tryker, zorai); 10 creature families q108-150 | deposits q200 (common, fyros, matis, tryker, zorai); 10 creature families q153-202 | deposits q250 (common, fyros, matis, tryker, zorai); 13 creature families q203-250 |
+| F MpC | Counterweight | deposits q50 (common); 5 creature families q1-42 | deposits q100 (common); 12 creature families q47-95 | deposits q150 (common, fyros, matis, tryker, zorai); 11 creature families q97-145 | deposits q200 (common, fyros, matis, tryker, zorai); 18 creature families q149-196 | deposits q250 (common, fyros, matis, tryker, zorai); 15 creature families q195-250 |
+| G MpGA | Trigger | deposits q50 (common); 11 creature families q1-47 | deposits q100 (common); 18 creature families q47-101 | deposits q150 (common, fyros, matis, tryker, zorai); 20 creature families q97-150 | deposits q200 (common, fyros, matis, tryker, zorai); 27 creature families q149-202 | deposits q250 (common, fyros, matis, tryker, zorai); 27 creature families q195-250 |
+| H MpPE | Firing pin | deposits q50 (common); 6 creature families q2-50 | deposits q100 (common); 8 creature families q62-103 | deposits q150 (common, fyros, matis, tryker, zorai); 15 creature families q111-159 | deposits q200 (common, fyros, matis, tryker, zorai); 22 creature families q148-211 | deposits q250 (common, fyros, matis, tryker, zorai); 24 creature families q197-250 |
+| I MpCA | Barrel | deposits q50 (common); 5 creature families q1-50 | deposits q100 (common); 8 creature families q57-103 | deposits q150 (common, fyros, matis, tryker, zorai); 11 creature families q102-159 | deposits q200 (common, fyros, matis, tryker, zorai); 19 creature families q148-211 | deposits q250 (common, fyros, matis, tryker, zorai); 20 creature families q197-250 |
+| J MpE | Explosive | deposits q50 (common); 7 creature families q2-50 | deposits q100 (common); 7 creature families q58-100 | deposits q150 (common, fyros, matis, tryker, zorai); 11 creature families q108-159 | deposits q200 (common, fyros, matis, tryker, zorai); 15 creature families q148-211 | deposits q250 (common, fyros, matis, tryker, zorai); 18 creature families q197-250 |
+| K MpEN | Ammo jacket | deposits q50 (common); 5 creature families q1-46 | deposits q100 (common); 7 creature families q57-103 | deposits q150 (common, fyros, matis, tryker, zorai); 8 creature families q102-154 | deposits q200 (common, fyros, matis, tryker, zorai); 7 creature families q153-204 | deposits q250 (common, fyros, matis, tryker, zorai); 6 creature families q200-250 |
+| L MpPR | Ammo bullet | deposits q50 (common); 10 creature families q1-47 | deposits q100 (common); 18 creature families q47-101 | deposits q150 (common, fyros, matis, tryker, zorai); 20 creature families q97-150 | deposits q200 (common, fyros, matis, tryker, zorai); 27 creature families q149-202 | deposits q250 (common, fyros, matis, tryker, zorai); 27 creature families q195-250 |
+| M MpCR | Armor shell | deposits q50 (common); 10 creature families q1-50 | deposits q100 (common); 13 creature families q60-103 | deposits q150 (common, fyros, matis, tryker, zorai); 19 creature families q103-159 | deposits q200 (common, fyros, matis, tryker, zorai); 28 creature families q148-211 | deposits q250 (common, fyros, matis, tryker, zorai); 32 creature families q197-250 |
+| N MpRI | Lining | deposits q50 (common); 12 creature families q1-50 | deposits q100 (common); 19 creature families q47-100 | deposits q150 (common, fyros, matis, tryker, zorai); 23 creature families q97-159 | deposits q200 (common, fyros, matis, tryker, zorai); 33 creature families q148-211 | deposits q250 (common, fyros, matis, tryker, zorai); 33 creature families q195-250 |
+| O MpRE | Stuffing | deposits q50 (common); 8 creature families q1-46 | deposits q100 (common); 10 creature families q49-103 | deposits q150 (common, fyros, matis, tryker, zorai); 13 creature families q108-154 | deposits q200 (common, fyros, matis, tryker, zorai); 11 creature families q154-204 | deposits q250 (common, fyros, matis, tryker, zorai); 12 creature families q199-250 |
+| P MpAT | Armor clip | deposits q50 (common); 12 creature families q1-47 | deposits q100 (common); 13 creature families q62-101 | deposits q150 (common, fyros, matis, tryker, zorai); 19 creature families q108-150 | deposits q200 (common, fyros, matis, tryker, zorai); 21 creature families q153-202 | deposits q250 (common, fyros, matis, tryker, zorai); 27 creature families q203-250 |
+| Q MpSU | Jewel setting | deposits q50 (common); 9 creature families q1-42 | deposits q100 (common); 19 creature families q47-95 | deposits q150 (common, fyros, matis, tryker, zorai); 17 creature families q97-145 | deposits q200 (common, fyros, matis, tryker, zorai); 28 creature families q149-196 | deposits q250 (common, fyros, matis, tryker, zorai); 22 creature families q195-250 |
+| R MpED | Jewel | deposits q50 (common); 5 creature families q1-42 | deposits q100 (common); 12 creature families q47-95 | deposits q150 (common, fyros, matis, tryker, zorai); 11 creature families q97-145 | deposits q200 (common, fyros, matis, tryker, zorai); 18 creature families q149-196 | deposits q250 (common, fyros, matis, tryker, zorai); 15 creature families q195-250 |
+| Y MpVE | Clothes | deposits q50 (common); 5 creature families q1-42 | deposits q100 (common); 12 creature families q47-95 | deposits q150 (common, fyros, matis, tryker, zorai); 11 creature families q97-145 | deposits q200 (common, fyros, matis, tryker, zorai); 17 creature families q149-196 | deposits q250 (common, fyros, matis, tryker, zorai); 14 creature families q195-250 |
+| Z MpMF | Magic focus | deposits q50 (common); 9 creature families q1-43 | deposits q100 (common); 16 creature families q47-95 | deposits q150 (common, fyros, matis, tryker, zorai); 16 creature families q97-145 | deposits q200 (common, fyros, matis, tryker, zorai); 22 creature families q149-197 | deposits q250 (common, fyros, matis, tryker, zorai); 21 creature families q195-250 |
 <!-- end of the generated part -->
 
 ## Translations

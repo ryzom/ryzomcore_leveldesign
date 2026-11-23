@@ -10,10 +10,14 @@
 # lists in FPLAN (domains/craft.py); the plan brick carries the item it makes (faber.Create.Crafted Item, an item whose
 # ITEM_TYPE has a faber action), its components (MP 1..5 with Quantity 1..5, contiguous from 1: the client stops at
 # the first empty slot), the skill that gains the XP and whose value is compared with the material quality
-# (Basics.Skill), the civilisation whose ecosystem's materials it takes (CivRestriction), and the stat factors. The
-# plan's tool type is shown in its help; the server checks the tool of the root. A plan phrase only teaches its brick
-# (not castable): rolemasters sell the nations' plans, missions teach the others (MISSIONS_ONLY_ORIGINS below), by
-# the phrase (learn_action) or the brick (learn_brick).
+# (Basics.Skill), its civilisation (CivRestriction: in RYZOM_FORGE builds the ecosystems whose materials it takes),
+# and the stat factors. Which materials go into a plan is decided by the item it makes (the server's craft check of
+# the default build): a material counts for a component when the CraftCivSpec of its part for that component type is
+# common or the item's origin, or the item is common (Materials.counts). The plan's tool type is shown in its help, and
+# the client makes a craft action usable only with that tool in hand (CSPhraseManager, the faber plan's tool type); the
+# server checks only that a crafting tool is in hand (faber_phrase.cpp). A plan phrase only teaches its brick (not
+# castable): rolemasters sell the nations' plans, missions teach the others (MISSIONS_ONLY_ORIGINS below), by the
+# phrase (learn_action) or the brick (learn_brick).
 
 import collections, os, re
 import framework
@@ -68,7 +72,6 @@ def planFamily(sheetId):
 	return m.group(1).upper() if m else None
 
 CIVS = { "f": "fyros", "m": "matis", "t": "tryker", "z": "zorai" }
-CIV_ECOSYSTEM = { "fyros": "desert", "matis": "forest", "tryker": "lacustre", "zorai": "jungle" }
 
 def origin(planId):
 	"""(origin folder, civilisation letter or None) of a plan"""
@@ -216,52 +219,113 @@ def components(itemType, item):
 MISSIONS_ONLY_ORIGINS = ( "common", "refugee", "tribe", "kami", "karavan" )
 
 # ------------------------------------------------------------------------------------------------- reading core4 data
+def readText(path):
+	"""a whole file, UTF-8 as the leveldesign stores it: a missing or undecodable one stops the run"""
+	try:
+		with open(path, "r", encoding="utf-8-sig") as f:
+			return f.read()
+	except FileNotFoundError:
+		raise framework.Stop("plans: " + path + " not found")
+	except UnicodeDecodeError as e:
+		raise framework.Stop("plans: " + path + " is not UTF-8 text (" + str(e) + "): correct the file")
+
 def readTyp(path):
-	with open(path, "r", encoding="utf-8", errors="replace") as f:
-		return dict(re.findall(r'Label="([^"]*)" Value="([^"]*)"', f.read()))
+	return dict(re.findall(r'Label="([^"]*)" Value="([^"]*)"', readText(path)))
+
+def typDefault(path):
+	"""the Default of a type file: the value the services read where a sheet gives none"""
+	m = re.search(r'<TYPE [^>]*Default="([^"]*)"', readText(path))
+	if not m:
+		raise framework.Stop("plans: " + path + " gives no Default, which a sheet that leaves the value out reads")
+	return m.group(1)
 
 def readDfnElements(path):
-	with open(path, "r", encoding="utf-8", errors="replace") as f:
-		return re.findall(r'<ELEMENT Name="([^"]+)"', f.read())
+	return re.findall(r'<ELEMENT Name="([^"]+)"', readText(path))
 
 def readAtoms(path):
-	with open(path, "r", encoding="utf-8", errors="replace") as f:
-		text = f.read().split("<LOG>")[0]
+	text = readText(path).split("<LOG>")[0]
 	return re.findall(r'<PARENT Filename="([^"]+)"', text), dict(re.findall(r'<ATOM Name="([^"]+)" Value="([^"]*)"', text)), \
 		re.findall(r'<STRUCT Name="[A-Z] (Mp[A-Za-z]+) \(', text)
+
+def readMaterialParts(path):
+	"""the item parts of a raw material sheet: {faber type (MpL ...): (CraftCivSpec or None where the part gives none,
+	Durability or 0)}. The server takes a part for absent when its Durability is 0 (egs_static_game_item.cpp)"""
+	text = readText(path).split("<LOG>")[0]
+	parts = {}
+	for faberType, body in re.findall(r'<STRUCT Name="[A-Z] (Mp[A-Za-z]+) \([^"]*\)">(.*?)</STRUCT>', text, re.S):
+		atoms = dict(re.findall(r'<ATOM Name="([^"]+)" Value="([^"]*)"', body))
+		durability = atoms.get("Durability", "0")
+		parts[faberType] = (atoms.get("CraftCivSpec"), int(durability) if durability.isdigit() else 0)
+	return parts
+
+# The raw material tables of mp_generator (scripts/raw_material_tables): the families that only special items make
+FAMILY_TABLE = os.path.join(framework.LEVELDESIGN, "scripts", "raw_material_tables", "rm_fam_prop.csv")
+
+def specialOnlyFamilies():
+	"""the families of rm_fam_prop.csv marked special only (the kitin lairs' larva, the invasion and goo rewards): their
+	sheets are special items, found only where a deposit or a creature names one, not materials a crafter can gather"""
+	lines = [ l for l in readText(FAMILY_TABLE).split("\n") if l.strip() ]
+	header = lines[0].split(";") if lines else []
+	if len(header) < 19 or header[1] != "Group" or header[18] != "Special only":
+		raise framework.Stop("plans: " + FAMILY_TABLE + " does not start with the header make_tables.py writes (;Group;...;Special only;...)")
+	return set(cells[0].strip() for cells in (l.split(";") for l in lines[1:]) if len(cells) > 18 and cells[18].strip().lower() == "x")
 
 CREATURES = os.path.join(framework.LEVELDESIGN, "game_elem", "creature")
 PRIMITIVES = os.path.join(framework.LEVELDESIGN, "primitives")
 
 class Materials:
 	"""The raw materials of core4 (mp_generator's sheets under sitem/raw_material): for each sheet, the component types
-	it serves, its ecosystem, and the highest quality it comes at:
+	it can serve with the CraftCivSpec of each of those parts, its ecosystem, and the highest quality it comes at:
 	- a deposit material ('d' in its name, CREATURE_OR_DEPOSIT_MP_CHAR) at its sheet's MaxQuality, what a deposit
 	  of that quality gives;
 	- a quartered material ('c') at the highest level of the creatures that give it: the quality of its entry in a
 	  creature's quartering table (_<creature>_mp.creature, MinQuality and MaxQuality, the creature's level, which
 	  CCharacter::harvest gives), counted for every creature sheet under game_elem/creature that has that table as a
 	  parent, placed in the world or not. The material sheets' own MaxQuality (250 for all of them) does not limit them.
+	A sheet of a family that only special items make (rm_fam_prop.csv, the kitin lairs' larva) counts for nothing, nor
+	does a part whose Durability is 0, which the server takes for absent. A parent a sheet names must exist.
 	And what the world gives today: the quartered materials of the creature sheets the primitives name, and the exact
 	materials of the deposit zones up to their deposit_max_quality_250."""
 	def __init__(self, gen):
 		base = os.path.join(framework.GAME_ELEMENT, "sitem", "raw_material")
+		# a part that names no CraftCivSpec reads the Default of its type, as an item that names no origin
+		self.defaultCivSpec = typDefault(os.path.join(DFN, "item_origine.typ"))
+		special = specialOnlyFamilies()
 		parents = {}
 		for f in os.listdir(os.path.join(base, "_parent")):
-			parents[f.lower()] = readAtoms(os.path.join(base, "_parent", f))[1]
-		self.sheets = {} # sheet name: (component types it serves, ecosystem, sheet MaxQuality, 'c' or 'd')
+			parentParents, atoms, parentParts = readAtoms(os.path.join(base, "_parent", f))
+			if parentParts:
+				gen.error("plans: the raw material parent " + f + " has item parts (" + ", ".join(parentParts) + "): this check reads the "
+					+ "parts of each sheet itself, as mp_generator writes them")
+			parents[f.lower()] = atoms
+		self.sheets = {} # sheet name: ({component type: CraftCivSpec of the part}, ecosystem, sheet MaxQuality, 'c' or 'd')
+		self.allSheets = set() # every raw material sheet, the special items included
+		self.specialSheets = 0
 		for root, dirs, files in os.walk(base):
 			if os.path.basename(root) == "_parent":
 				continue
 			for f in files:
 				if not (f.endswith(".sitem") and len(f) > 6 and f[0] == "m" and f[5] in "cd"):
 					continue
-				sheetParents, atoms, parts = readAtoms(os.path.join(root, f))
+				path = os.path.join(root, f)
+				self.allSheets.add(f[:-6].lower())
+				sheetParents, atoms, names = readAtoms(path)
 				merged = {}
 				for p in sheetParents:
-					merged.update(parents.get(p.lower(), {}))
+					if p.lower() not in parents:
+						gen.error("plans: the raw material " + f + " names the parent " + p + ", which is not in " + os.path.join(base, "_parent")
+							+ ": run mp_generator, which writes the parents")
+						continue
+					merged.update(parents[p.lower()])
 				merged.update(atoms)
-				self.sheets[f[:-6].lower()] = (set(parts), merged.get("Ecosystem", "").lower(), int(merged.get("MaxQuality", "0")), f[5])
+				if merged.get("Family", "") in special:
+					self.specialSheets += 1
+					continue
+				parts = {}
+				for faberType, (civSpec, durability) in readMaterialParts(path).items():
+					if durability > 0:
+						parts[faberType] = (civSpec or self.defaultCivSpec).lower()
+				self.sheets[f[:-6].lower()] = (parts, merged.get("Ecosystem", "").lower(), int(merged.get("MaxQuality", "0")), f[5])
 		if not self.sheets:
 			raise framework.Stop("no raw material sheet under " + base + ": run mp_generator first")
 		# the quartering tables, and the creature sheets that use them
@@ -271,8 +335,7 @@ class Materials:
 				fl = f.lower()
 				if not fl.endswith(".creature"):
 					continue
-				with open(os.path.join(root, f), "r", encoding="utf-8", errors="replace") as fh:
-					text = fh.read().split("<LOG>")[0]
+				text = readText(os.path.join(root, f)).split("<LOG>")[0]
 				if fl.startswith("_") and fl.endswith("_mp.creature"):
 					tables[fl] = [ (m.group(3).lower(), int(m.group(2))) for m in re.finditer(r'MinQuality" Value="(\d+)"/>\s*<ATOM Name="MaxQuality" '
 						r'Value="(\d+)"/>\s*<ATOM Name="AssociatedItem" Value="([^".]+)\.sitem"', text) ]
@@ -295,8 +358,7 @@ class Materials:
 			for f in files:
 				if not f.endswith(".primitive"):
 					continue
-				with open(os.path.join(root, f), "r", encoding="utf-8", errors="replace") as fh:
-					text = fh.read()
+				text = readText(os.path.join(root, f))
 				placed.update(c for c in re.findall(r"<STRING>([a-z0-9_]+)</STRING>", text) if creatureTables.get(c)) # with a quartering table
 				if "depositzone" in text:
 					for n in primNodes(text):
@@ -310,18 +372,24 @@ class Materials:
 			if sheet in self.sheets:
 				self.reachable[sheet] = max(self.reachable.get(sheet, 0), min(q, self.sheets[sheet][2]))
 
-	def accepts(self, sheet, civ):
-		"""the server's rule (faber_phrase.cpp): a plan of a civilisation refuses another civilisation's ecosystem"""
-		ecosystem = self.sheets[sheet][1]
-		return not (civ and ecosystem in CIV_ECOSYSTEM.values() and ecosystem != CIV_ECOSYSTEM[civ])
+	def serves(self, sheet, faberType):
+		"""whether a material has a part for a component type (one the server reads: Durability above 0)"""
+		return faberType in self.sheets[sheet][0]
 
-	def best(self, faberType, civ, today=False):
-		"""the highest quality of the materials a plan of this civilisation (None: common) accepts for a component type:
+	def counts(self, sheet, faberType, origin):
+		"""the server's craft check of the default build: a material counts for a component of a plan when the
+		CraftCivSpec of its part for that type is common or the origin of the item the plan makes, or the item is common
+		(the rule of a plan's CivRestriction against the material's ecosystem is that of RYZOM_FORGE builds)"""
+		civSpec = self.sheets[sheet][0].get(faberType)
+		return civSpec is not None and (civSpec == "common" or civSpec == origin or origin == "common")
+
+	def best(self, faberType, origin, today=False):
+		"""the highest quality of the materials that count for a component type of a plan whose item has this origin:
 		of all the materials (deposits at their sheet's maximum, quartered ones at their creatures' levels), or of those
 		the world gives today"""
 		q = 0
 		for sheet, (parts, ecosystem, maxq, kind) in self.sheets.items():
-			if faberType in parts and self.accepts(sheet, civ):
+			if self.counts(sheet, faberType, origin):
 				if today:
 					q = max(q, self.reachable.get(sheet, 0))
 				else:
@@ -339,48 +407,64 @@ def itemSheets():
 				sheets[f[:-6].lower()] = os.path.join(root, f)
 	return sheets
 
+class Item:
+	"""an item sheet resolved through its parents: its ItemType value, stackable, origin (the label, lower case; the
+	Default of item_origine.typ where no sheet gives one), the plan it names (CraftPlan, or ""), and what keeps its
+	parents from being read (a parent that does not exist, a chain of parents deeper than 8)"""
+	def __init__(self, itemType, stackable, origin, craftPlan, broken):
+		self.type, self.stackable, self.origin, self.craftPlan, self.broken = itemType, stackable, origin, craftPlan, broken
+
 def readItems(sheets=None):
-	"""({item id: (ItemType value, stackable)} of the item sheets, resolved through their parents, {item ids of
-	generate_sitem.py's craft table})"""
+	"""({item id: Item} of the item sheets, {item ids of generate_sitem.py's craft table})"""
 	typ = readTyp(os.path.join(DFN, "item_type.typ"))
+	defaultOrigin = typDefault(os.path.join(DFN, "item_origine.typ"))
 	sheets = sheets or itemSheets()
 	cache = {}
 	def atoms(name, depth=0):
-		"""the atoms of an item sheet over those of its parents"""
+		"""(the atoms of an item sheet over those of its parents, what keeps its parents from being read, whether the
+		depth limit cut the chain). A result the depth cut is not cached: the same sheet reached nearer the item reads
+		its whole chain"""
 		if name in cache:
-			return cache[name]
+			return cache[name] + (False,)
+		if depth > 8:
+			return {}, [ name + " is a parent more than 8 deep (a loop of parents?)" ], True
 		path = sheets.get(name)
-		if not path or depth > 8:
-			return {}
+		if not path:
+			return {}, [ "the parent " + name + ".sitem does not exist" ], False
 		parents, own, parts = readAtoms(path)
-		merged = {}
+		merged, broken, cut = {}, [], False
 		for p in parents:
-			merged.update(atoms(p.lower().replace(".sitem", ""), depth + 1))
+			a, b, c = atoms(p.lower().replace(".sitem", ""), depth + 1)
+			merged.update(a)
+			broken += b
+			cut = cut or c
 		merged.update(own)
-		cache[name] = merged
-		return merged
+		if not cut:
+			cache[name] = (merged, broken)
+		return merged, broken, cut
 	items = {}
 	for name in sheets:
 		if not name.startswith("_"):
-			a = atoms(name)
+			a, broken, cut = atoms(name)
 			# no ItemType reads as UNDEFINED (item_type.cpp: the conversion's value for an unknown name)
-			items[name] = (typ.get(a["ItemType"], a["ItemType"]) if a.get("ItemType") else "UNDEFINED", int(a.get("stackable", "1") or "1"))
+			items[name] = Item(typ.get(a["ItemType"], a["ItemType"]) if a.get("ItemType") else "UNDEFINED", int(a.get("stackable", "1") or "1"),
+				(a.get("origin") or defaultOrigin).lower(), a.get("CraftPlan", ""), broken)
 	table = set()
 	if os.path.isfile(ITEM_TABLE):
-		with open(ITEM_TABLE, "r", encoding="utf-8") as f:
-			for l in f:
-				cells = l.rstrip("\r\n").split("\t")
-				if cells and cells[0] and not cells[0].startswith(";") and not cells[0].startswith("#"):
-					table.add(cells[0].lower())
+		for l in readText(ITEM_TABLE).split("\n"):
+			cells = l.rstrip("\r").split("\t")
+			if cells and cells[0] and not cells[0].startswith(";") and not cells[0].startswith("#"):
+				table.add(cells[0].lower())
 	return items, table
 
-# The missions that teach a plan and give the materials for one craft of it: what they give must be what the plan asks
-# for (Jan, 2026-11-21: "the Barkdell rite's craft task gives what the boots plan asks for"), so a change of the plan
+# The missions that teach a plan and give the materials for crafts of it: what they give must be whole sets of what the
+# plan asks for (Jan, 2026-11-21: "the Barkdell rite's craft task gives what the boots plan asks for"; 2026-11-23: two
+# spare sets beyond the one the plan needs, as a failed craft can destroy the materials), so a change of the plan
 # shows here. The mission primitive, the primitive that holds its compiled script (the mission compiler's output, which
-# the service reads), the plan phrase its craft task teaches.
+# the service reads), the plan phrase its craft task teaches, and the number of sets it gives.
 CRAFT_TASKS = [
 	# Tryker Story 4, the Barkdell rite
-	( "primitives/tryker/nland/missions_tryker_story4.primitive", "primitives/tryker/nland/urban_tryker_story4.primitive", "abctaea01_talb" ),
+	( "primitives/tryker/nland/missions_tryker_story4.primitive", "primitives/tryker/nland/urban_tryker_story4.primitive", "abctaea01_talb", 3 ),
 ]
 
 def primNodes(text):
@@ -393,12 +477,12 @@ def primNodes(text):
 		nodes.append(props)
 	return nodes
 
-def checkCraftTask(gen, path, compiled, phrase, plan, faberLabels, materials):
-	"""the materials the mission's recv_item gives, by component type of the plan, against the plan's quantities, and the
-	compiled script against the mission"""
+def checkCraftTask(gen, path, compiled, phrase, sets, plan, faberLabels, materials):
+	"""the materials the mission's recv_item gives, by component type of the plan, against the plan's quantities times
+	the sets it gives, each counting for the plan's item by the server's rule, and the compiled script against the
+	mission"""
 	where = "plans: the craft task of " + path + " teaching " + phrase
-	with open(os.path.join(framework.LEVELDESIGN, *path.split("/")), "r", encoding="utf-8", errors="replace") as f:
-		text = f.read()
+	text = readText(os.path.join(framework.LEVELDESIGN, *path.split("/")))
 	missions = [ m for m in text.split("<STRING>mission_tree</STRING>")[1:] if re.search(r"<STRING>" + re.escape(phrase) + r"</STRING>", m) ]
 	if len(missions) != 1:
 		gen.error(where + ": " + str(len(missions)) + " missions of the file teach it, the check expects one")
@@ -406,7 +490,7 @@ def checkCraftTask(gen, path, compiled, phrase, plan, faberLabels, materials):
 	nodes = primNodes(missions[0])
 	items = { n["name"][0]: n["item_sheet"][0].lower() for n in nodes if n.get("class") == [ "var_item" ] and n.get("item_sheet") }
 	counts = { n["name"][0]: int(n["quantity"][0]) for n in nodes if n.get("class") == [ "var_quantity" ] and n.get("quantity") }
-	wanted = collections.OrderedDict((faberLabels[c], q) for c, q in plan["components"])
+	wanted = collections.OrderedDict((faberLabels[c], q * sets) for c, q in plan["components"])
 	given = [] # (sheet, quantity, the plan's component types it serves)
 	for n in nodes:
 		if n.get("class") != [ "recv_item" ]:
@@ -416,19 +500,27 @@ def checkCraftTask(gen, path, compiled, phrase, plan, faberLabels, materials):
 			if len(words) < 2 or words[0].strip("$") not in items:
 				continue
 			sheet = items[words[0].strip("$")]
+			if sheet in materials.allSheets and sheet not in materials.sheets:
+				gen.error(where + ": it gives " + sheet + ", a special item of a family that only special items make, which counts for no plan here")
+				continue
 			if sheet not in materials.sheets:
 				continue # the tool, not a material
 			quantity = counts.get(words[1].strip("$"))
-			types = [ t for t in wanted if t in materials.sheets[sheet][0] ]
+			types = [ t for t in wanted if materials.serves(sheet, t) ]
+			# judged by the origin of the item the plan makes, as the server does (not the folder of the plan id)
+			refused = [ t for t in types if not materials.counts(sheet, t, plan["itemOrigin"]) ]
 			if not types:
 				gen.error(where + ": it gives " + sheet + ", which serves none of the plan's components " + ", ".join(wanted))
-			elif not materials.accepts(sheet, plan["civ"]):
-				gen.error(where + ": it gives " + sheet + " of the " + materials.sheets[sheet][1] + " ecosystem, which a " + plan["civ"] + " plan refuses")
+			elif refused:
+				gen.error(where + ": it gives " + sheet + ", whose part for " + ", ".join(refused) + " is of the CraftCivSpec "
+					+ ", ".join(materials.sheets[sheet][0][t] for t in refused) + ", which an item of origin " + plan["itemOrigin"] + " (" + plan["item"]
+					+ ") does not take: give a material whose parts are common or " + plan["itemOrigin"])
 			elif quantity is None:
 				gen.error(where + ": it gives " + sheet + " without a quantity variable")
 			else:
 				given.append((sheet, quantity, types))
-	# the crafter places every unit in a slot it serves: the units given must fill the plan's slots exactly
+	# the crafter places every unit in a slot it serves: the units given must fill the plan's slots, times the sets,
+	# exactly
 	def fits(i, left):
 		if i == len(given):
 			return all(v == 0 for v in left.values())
@@ -447,11 +539,10 @@ def checkCraftTask(gen, path, compiled, phrase, plan, faberLabels, materials):
 		return spread(0, quantity, left)
 	if not fits(0, dict(wanted)):
 		gen.error(where + ": it gives " + ", ".join("%s %d (%s)" % (s, q, "/".join(t)) for s, q, t in given) + ", which cannot fill "
-			+ "the slots of the plan " + phrase[1:] + " exactly: " + ", ".join("%s %d" % kv for kv in wanted.items()))
+			+ "the slots of the plan " + phrase[1:] + " " + str(sets) + " times exactly: " + ", ".join("%s %d" % kv for kv in wanted.items()))
 	# the compiled script gives the same materials (recv_item : <sheet> <quantity> <quality> : <npc>)
-	with open(os.path.join(framework.LEVELDESIGN, *compiled.split("/")), "r", encoding="utf-8", errors="replace") as f:
-		scripts = [ s for s in re.findall(r"<NAME>script</NAME>(.*?)</PROPERTY>", f.read(), re.S)
-			if re.search(r"learn_action :[^<]*\b" + re.escape(phrase) + r"\b", s) ]
+	scripts = [ s for s in re.findall(r"<NAME>script</NAME>(.*?)</PROPERTY>", readText(os.path.join(framework.LEVELDESIGN, *compiled.split("/"))), re.S)
+		if re.search(r"learn_action :[^<]*\b" + re.escape(phrase) + r"\b", s) ]
 	if len(scripts) != 1:
 		gen.error(where + ": " + str(len(scripts)) + " compiled scripts in " + compiled + " teach it, the check expects one")
 		return
@@ -474,11 +565,26 @@ def loadAtlas(gen):
 		if not os.path.isfile(path):
 			gen.error("plans: the interface atlas list " + path + " does not exist, so the icons cannot be checked: build the interfaces or fix the path")
 			continue
-		with open(path, "r", encoding="utf-8", errors="replace") as f:
-			for l in f:
-				if l.strip():
-					names.add(l.split()[0].lower())
+		for l in readText(path).split("\n"):
+			if l.strip():
+				names.add(l.split()[0].lower())
 	return names
+
+def loadSkillTree(gen):
+	"""{skill: (MaxSkillValue, parent skill or None)} of game_element/xp_table/skills.skill_tree, the caps the plan
+	levels and learn gates follow"""
+	path = os.path.join(framework.GAME_ELEMENT, "xp_table", "skills.skill_tree")
+	tree = {}
+	for chunk in readText(path).split("<STRUCT Name=\"")[1:]:
+		code = re.search(r"<ATOM Name=\"SkillCode\" Value=\"([^\"]+)\"", chunk)
+		value = re.search(r"<ATOM Name=\"MaxSkillValue\" Value=\"(\d+)\"", chunk)
+		if code and value:
+			parent = re.search(r"<ATOM Name=\"ParentSkill\" Value=\"([^\"]+)\"", chunk)
+			tree[code.group(1)] = (int(value.group(1)), parent.group(1) if parent else None)
+	for s, (cap, parent) in sorted(tree.items()):
+		if parent is not None and parent not in tree:
+			raise framework.Stop("plans: the skill " + s + " of " + path + " names the parent " + parent + ", which the tree does not have")
+	return tree
 
 # --------------------------------------------------------------------------------------------------------- generate
 def generate(gen):
@@ -486,6 +592,8 @@ def generate(gen):
 	atlas = loadAtlas(gen)
 	materials = Materials(gen)
 	items, itemTable = readItems()
+	itemPlans = PI.itemPlans()
+	tree = loadSkillTree(gen)
 	faberLabels = readTyp(os.path.join(DFN, "item_mp_faber_type.typ"))
 	faberCode = set(framework.table("rm_family:TRMFType:stringTable"))
 	faberFields = set(readDfnElements(os.path.join(DFN, "_item_faber.dfn")))
@@ -548,8 +656,10 @@ def generate(gen):
 		parent = familyParents[e["family"]]
 		parentBasics, parentProps, parentClient, parentGrammar, parentFaber = parent.effective()
 		skillName = skill(e["type"])
-		level = B.planLevel(e["tier"], skillName)
-		gateSkills, gate = B.gateSkills(skillName, level, framework.SKILLS)
+		if skillName not in tree:
+			raise framework.Stop("plans: " + p + ": the skill " + skillName + " of its item is not in skills.skill_tree, which gives its cap")
+		level = B.planLevel(e["tier"], skillName, tree)
+		gateSkills, gate = B.gateSkills(skillName, level, tree)
 		basics = { "IndexInFamily": e["index"], "Level": level, "SPCost": B.spCost(level),
 			"LearnRequiresOneOfSkills": ":".join("%s %d" % (s, gate) for s in gateSkills), "Skill": skillName }
 		if not gateSkills or any(s not in framework.SKILLS for s in gateSkills):
@@ -585,8 +695,12 @@ def generate(gen):
 			gen.phrase(phrase, "sphrase/craft/plan/" + e["category"] + "/" + e["origin"], [ p ], "plan phrase " + p, castable=False,
 				showInAPOnlyIfLearnt=e["origin"] in MISSIONS_ONLY_ORIGINS)
 
-	# ---- the plans that make no item, and the plan phrases that have no plan
+	# ---- the plans that make no item, and the plan phrases that have no plan. An id plan_items.py has no rule for is an
+	# error: a new plan id of the translation needs its rule, or it would get no brick unseen
 	for p, reason in unmade.items():
+		if not reason.known:
+			gen.error("plans: " + p + " makes no item: " + reason + ": give plan_items.py a rule for it")
+			continue
 		gen.exclude("sbrick", p, "plan: " + reason)
 		if gen.sphraseWords.get("a" + p):
 			gen.exclude("sphrase", "a" + p, "plan phrase: its plan makes no item: " + reason)
@@ -602,36 +716,8 @@ def generate(gen):
 			gen.error("plans: the phrase " + i + " names the plan " + i[1:] + ", which this domain neither makes nor excludes")
 
 	# ---- checks of this domain
-	pending = 0
 	for p, e in info.items():
 		where = p + " (plan of " + e["item"] + ")"
-		# the item the plan makes: a sheet whose item type is the plan's, or one generate_sitem.py's table will write
-		if e["item"] in items:
-			itemType, stackable = items[e["item"]]
-			if itemType != e["type"]:
-				gen.error("plans: " + where + ": the item sheet's ItemType is " + str(itemType) + ", plan_items.py says " + e["type"])
-			built = e["brick"].effective()[4]["Create"]["Nb built items"]
-			if built > 1 and stackable < built:
-				gen.error("plans: " + where + " makes %d at a time, the item stacks to %d (basics.stackable)" % (built, stackable))
-		elif e["item"] in itemTable:
-			pending += 1
-		else:
-			gen.error("plans: " + where + ": no item sheet and no row in " + ITEM_TABLE + " (generate_sitem.py makes the items)")
-		# components: a label of the type file whose value the code knows, served by materials the plan accepts
-		for component, quantity in e["components"]:
-			value = faberLabels.get(component)
-			if value is None or value not in faberCode:
-				gen.error("plans: " + where + ": component " + component + " is not a label of item_mp_faber_type.typ the code knows")
-				continue
-			best = materials.best(value, e["civ"])
-			if not best:
-				gen.error("plans: " + where + ": no raw material serves " + component + " (" + value + ") for a " + (e["civ"] or "common")
-					+ " plan (sitem/raw_material, at a creature's level or a deposit's)")
-			elif best < common.MAX_LEVEL:
-				gen.error("plans: " + where + ": the materials that serve " + component + " (" + value + ") for a " + (e["civ"] or "common")
-					+ " plan stop at quality %d, below %d" % (best, common.MAX_LEVEL))
-			today = materials.best(value, e["civ"], today=True)
-			e["today"] = min(e.get("today", common.MAX_LEVEL), today)
 		basics, properties, client, grammar, faber = e["brick"].effective()
 		for k in faber:
 			if k not in faberFields:
@@ -641,16 +727,71 @@ def generate(gen):
 				gen.error("plans: " + where + ": faber.Create." + k + " is not a field of _item_faber_plan.dfn")
 		if basics.get("Skill") not in framework.SKILLS:
 			gen.error("plans: " + where + ": skill " + str(basics.get("Skill")) + " is not a skill of the code")
+		# the item the plan makes: a sheet whose item type is the plan's and which names the plan (CraftPlan, the one
+		# plan_items.py gives the item: generate_sitem.py writes it, a hand-kept sheet must say the same), its parents
+		# all there. Its origin decides which materials the plan takes, so it must exist: generate_sitem.py writes the
+		# items of its table, and runs first
+		if e["item"] in items:
+			it = items[e["item"]]
+			if it.type != e["type"]:
+				gen.error("plans: " + where + ": the item sheet's ItemType is " + str(it.type) + ", plan_items.py says " + e["type"])
+			built = e["brick"].effective()[4]["Create"]["Nb built items"]
+			if built > 1 and it.stackable < built:
+				gen.error("plans: " + where + " makes %d at a time, the item stacks to %d (basics.stackable)" % (built, it.stackable))
+			if it.broken:
+				gen.error("plans: " + where + ": the item sheet's parents cannot be read (" + "; ".join(it.broken) + "), so its origin is unknown")
+			if it.craftPlan.lower() != itemPlans[e["item"]] + ".sbrick":
+				gen.error("plans: " + where + ": the item sheet names the plan " + (it.craftPlan or "none") + " (CraftPlan), plan_items.py says "
+					+ itemPlans[e["item"]] + " makes it: correct the sheet" + ("" if e["item"] not in itemTable else ", which generate_sitem.py writes"))
+			e["itemOrigin"] = it.origin
+		elif e["item"] in itemTable:
+			gen.error("plans: " + where + ": the item has no sheet yet, and its origin decides which materials the plan takes: run "
+				+ "../generate_r2_sheets/generate_sitem.py first, which writes it from " + os.path.basename(ITEM_TABLE))
+			continue
+		else:
+			gen.error("plans: " + where + ": no item sheet and no row in " + ITEM_TABLE + " (generate_sitem.py makes the items)")
+			continue
+		# components: a label of the type file whose value the code knows, served by materials that count for the item
+		for component, quantity in e["components"]:
+			value = faberLabels.get(component)
+			if value is None or value not in faberCode:
+				gen.error("plans: " + where + ": component " + component + " is not a label of item_mp_faber_type.typ the code knows")
+				continue
+			best = materials.best(value, e["itemOrigin"])
+			if not best:
+				gen.error("plans: " + where + ": no raw material serves " + component + " (" + value + ") for an item of origin " + e["itemOrigin"]
+					+ " (a part of CraftCivSpec common or " + e["itemOrigin"] + ", Durability above 0, of a family not only of special items; "
+					+ "sitem/raw_material, at a creature's level or a deposit's)")
+			elif best < common.MAX_LEVEL:
+				gen.error("plans: " + where + ": the materials that serve " + component + " (" + value + ") for an item of origin " + e["itemOrigin"]
+					+ " stop at quality %d, below %d" % (best, common.MAX_LEVEL))
+			e.setdefault("best", common.MAX_LEVEL)
+			e["best"] = min(e["best"], best)
+			today = materials.best(value, e["itemOrigin"], today=True)
+			e["today"] = min(e.get("today", common.MAX_LEVEL), today)
 	for s in madeSheets:
 		for k in ( "Icon", "IconBack", "IconOver", "IconOver2" ):
 			v = s.client.get(k)
 			if v and atlas and v.lower() not in atlas:
 				gen.error("plans: " + s.name + " " + k + " " + v + " is in no interface atlas (" + ", ".join(ATLASES) + ")")
-	for path, compiled, phrase in CRAFT_TASKS:
-		if phrase[1:] not in info:
-			gen.error("plans: the craft task of " + path + " teaches " + phrase + ", whose plan this domain does not make")
+	for path, compiled, phrase, sets in CRAFT_TASKS:
+		if phrase[1:] not in info or "itemOrigin" not in info[phrase[1:]]:
+			gen.error("plans: the craft task of " + path + " teaches " + phrase + ", whose plan this domain does not make, or whose item has no sheet")
 		else:
-			checkCraftTask(gen, path, compiled, phrase, info[phrase[1:]], faberLabels, materials)
+			checkCraftTask(gen, path, compiled, phrase, sets, info[phrase[1:]], faberLabels, materials)
+	# the plans that can be made from the materials, by the origin of their item: every component served, by materials
+	# that count for that origin, up to the quality the materials reach (all of them up to the cap, or the checks above
+	# say which not)
+	byOrigin = collections.OrderedDict()
+	for e in info.values():
+		if "itemOrigin" in e:
+			counts = byOrigin.setdefault(e["itemOrigin"], [ 0, 0 ])
+			counts[0] += 1
+			if e.get("best", 0) >= common.MAX_LEVEL:
+				counts[1] += 1
+	gen.note("plans: by the origin of the item they make, the plans whose every component the raw materials serve up to quality %d "
+		"(a part of CraftCivSpec common or that origin, any for a common item; %d sheets of families only of special items not counted): %s"
+		% (common.MAX_LEVEL, materials.specialSheets, ", ".join("%s %d of %d" % (o, c[1], c[0]) for o, c in sorted(byOrigin.items()))))
 	# what today's world gives: the plans whose every component a placed creature or a deposit zone serves, and the
 	# highest quality they can be made at from it (a note: the world is being built, the check above is what the
 	# materials can give)
@@ -660,7 +801,4 @@ def generate(gen):
 		% (len(materials.placed), materials.creatureCount, ", ".join(materials.placed) or "none",
 		", ".join("%s to %d" % kv for kv in sorted(materials.deposits.items())) or "none",
 		len(makeable), len(info), max(makeable) if makeable else 0))
-	if pending:
-		gen.note("plans: %d plans make items that generate_sitem.py's next run writes (%s): run it before writing the sheets"
-			% (pending, os.path.basename(ITEM_TABLE)))
 	# that a craft root offers every plan family, with the plans' skills in its branch, is checked by domains/craft.py
