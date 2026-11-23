@@ -893,11 +893,11 @@ uiR2EDbotObjSpotKitin	[キティンの塚]
 
 // HASH_VALUE 20D8F49C74D804CC
 // INDEX 221
-uiR2EDbotObjSpotGoo	[グーだまり]
+uiR2EDbotObjSpotGoo	[グー溜まり]
 
 // HASH_VALUE C648F861DB48FC6D
 // INDEX 222
-uiR2EDbotObjSpotGooOff	[不活性なグーだまり]
+uiR2EDbotObjSpotGooOff	[不活性なグー溜まり]
 
 // HASH_VALUE 59CBA47329CADBA6
 // INDEX 223
@@ -1017,27 +1017,27 @@ uiR2EDbotObjTreeFyBaobabC	[ボトガ III]
 
 // HASH_VALUE AAF7EB2C1649DCAC
 // INDEX 252
-uiR2EDbotObjTreeFyBurnedTreeA	[ボサヤ I]
+uiR2EDbotObjTreeFyBurnedTreeA	[ボタヤ I]
 
 // HASH_VALUE 4F17476D5B996880
 // INDEX 253
-uiR2EDbotObjTreeFyBurnedTreeB	[ボサヤ II]
+uiR2EDbotObjTreeFyBurnedTreeB	[ボタヤ II]
 
 // HASH_VALUE 62F308988D565B7A
 // INDEX 254
-uiR2EDbotObjTreeFyBurnedTreeC	[ボサヤ III]
+uiR2EDbotObjTreeFyBurnedTreeC	[ボタヤ III]
 
 // HASH_VALUE 92177B6D5B999C80
 // INDEX 255
-uiR2EDbotObjTreeFyBurnedTreeD	[ボサヤ IV]
+uiR2EDbotObjTreeFyBurnedTreeD	[ボタヤ IV]
 
 // HASH_VALUE EE7A0C92B4300CAA
 // INDEX 256
-uiR2EDbotObjTreeFyBurnedTreeGrowthA	[ボサヤの若木 I]
+uiR2EDbotObjTreeFyBurnedTreeGrowthA	[ボタヤの若木 I]
 
 // HASH_VALUE EF5AAC32BA35DCB4
 // INDEX 257
-uiR2EDbotObjTreeFyBurnedTreeGrowthB	[ボサヤの若木 II]
+uiR2EDbotObjTreeFyBurnedTreeGrowthB	[ボタヤの若木 II]
 
 // HASH_VALUE 50D5A4AF2A661340
 // INDEX 258
@@ -21530,7 +21530,7 @@ uiR2EDProp_TaskStep5Id	[タスク5]
 
 // HASH_VALUE 5529B08C5F38403A
 // INDEX 5148
-uiR2EDProp_TaskNumber	[タスク参照]
+uiR2EDProp_TaskNumber	[タスクの参照]
 
 // HASH_VALUE 2DD7AB861896ABA6
 // INDEX 5149
@@ -21575,7 +21575,7 @@ uiR2EDRewardProvider	[報酬提供者]
 
 // HASH_VALUE 1D46947F96D1909F
 // INDEX 5159
-uiR2EDProp_RewardGiver	[報酬授与者]
+uiR2EDProp_RewardGiver	[報酬提供者]
 
 // HASH_VALUE 27E41F3711B3E88F
 // INDEX 5160
@@ -22759,7 +22759,7 @@ uiR2EDProp_NoRespawn	[再出現なし]
 
 // HASH_VALUE 2927FC899EF62889
 // INDEX 5454
-uiR2EDProp_Aggro	[敵対]
+uiR2EDProp_Aggro	[索敵範囲]
 
 // HASH_VALUE E7E8348CA2D83481
 // INDEX 5455
@@ -23069,7 +23069,7 @@ uiR2EDProp_Item3Id	[アイテム3]
 
 // HASH_VALUE E055F07ED9E7CC6E
 // INDEX 5530
-uiR2EDProp_ItemNumber	[アイテム数]
+uiR2EDProp_ItemNumber	[アイテムの種類数]
 
 // HASH_VALUE 9A73C78353E13350
 // INDEX 5531
@@ -23365,7 +23365,7 @@ uiR2EDNewProximityDialogAction	[新しい近接会話を作成]
 
 // HASH_VALUE A2CCB11E46AD35E1
 // INDEX 5604
-uiR2EDNewFaunaCreatureAction	[野生動物システムの新しい動物パーツを作成]
+uiR2EDNewFaunaCreatureAction	[野生動物システムの新しいクリーチャーパーツを作成]
 
 /////////////////////
 // ROLLOUT TITLES  //
@@ -23392,7 +23392,7 @@ uiR2EDRollout_LifeCyclesInSeconds	[生活サイクル（秒）]
 
 // HASH_VALUE 7458240C709C54D0
 // INDEX 5610
-uiR2EDRollout_Critters	[動物]
+uiR2EDRollout_Critters	[クリーチャー]
 
 // HASH_VALUE 2A761440EC22F037
 // INDEX 5611
@@ -23488,7 +23488,7 @@ uiR2EDRollout_RewardChest	[報酬宝箱]
 
 // HASH_VALUE 2D48846C0CC2E3A6
 // INDEX 5634
-uiR2EDRollout_SceneryObjectRemover	[小道具除去]
+uiR2EDRollout_SceneryObjectRemover	[小道具の除去]
 
 // HASH_VALUE 678A08989D536F9F
 // INDEX 5635
@@ -23973,7 +23973,7 @@ uiR2EDNewRewardProviderFeatureAction	[報酬提供者パーツを作成]
 
 // HASH_VALUE 7DEF85E2DBA63331
 // INDEX 5753
-uiR2EDNewSceneryObjectRemoverFeatureAction	[小道具除去パーツを作成]
+uiR2EDNewSceneryObjectRemoverFeatureAction	[「小道具の除去」パーツを作成]
 
 // HASH_VALUE BC36D54FB8248C2A
 // INDEX 5754
@@ -24265,7 +24265,7 @@ uiR2EDRunOnly	[実行のみ]
 
 // HASH_VALUE 20D4F4487818E4BC
 // INDEX 5826
-uiR2EDRoSOnly	[シラン遺跡のみ]
+uiR2EDRoSOnly	[シランの遺跡のみ]
 
 // HASH_VALUE DD30BC92D770AC92
 // INDEX 5827
@@ -24301,7 +24301,7 @@ uiR2EdPropertyToolTip_Scenario_AccessRules	[@{6F6F}アクセスルール\n@{F00F
 //TOOLTIP_PROXIMITY_DIALOG
 // HASH_VALUE 7D79297ECC564687
 // INDEX 5834
-uiR2EdPropertyToolTip_ProximityDialog_TriggerOn	[@{6F6F}発動条件\n@{FFFF}プレイヤーがエリアに入ったときと出たときのどちらで会話を始めるかを指定します。]
+uiR2EdPropertyToolTip_ProximityDialog_TriggerOn	[@{6F6F}発動条件（プレイヤー）\n@{FFFF}プレイヤーがエリアに入ったときと出たときのどちらで会話を始めるかを指定します。]
 
 //TOOLTIP_HIDDEN_CHEST
 // HASH_VALUE 641E851EC0CC921B
@@ -24318,7 +24318,7 @@ uiR2EdPropertyToolTip_HiddenChest_Angle	[@{6F6F}角度\n@{FFFF}宝箱の向き�
 
 // HASH_VALUE BA7E113F8BE51691
 // INDEX 5838
-uiR2EdPropertyToolTip_HiddenChest_TriggerOn	[@{6F6F}発動条件\n@{FFFF}プレイヤーがエリアに入ったときと出たときのどちらで宝箱を出現させるかを指定します。]
+uiR2EdPropertyToolTip_HiddenChest_TriggerOn	[@{6F6F}発動条件（プレイヤー）\n@{FFFF}プレイヤーがエリアに入ったときと出たときのどちらで宝箱を出現させるかを指定します。]
 
 //TOOLTIP_GIVE_ITEM
 // HASH_VALUE 8BCABE1F367601B6
@@ -24375,7 +24375,7 @@ uiR2EdPropertyToolTip_GiveItem_MissionSucceedText	[@{6F6F}ミッション達成�
 
 // HASH_VALUE 883ABAD7EE845C97
 // INDEX 5852
-uiR2EdPropertyToolTip_GiveItem_ItemNumber	[@{6F6F}アイテム数\n@{FFFF}依頼人が渡すアイテムの種類の数を指定します。]
+uiR2EdPropertyToolTip_GiveItem_ItemNumber	[@{6F6F}アイテムの種類数\n@{FFFF}依頼人が渡すアイテムの種類の数を指定します。]
 
 // HASH_VALUE 8A5AC3F3C1339EBE
 // INDEX 5853
@@ -24545,7 +24545,7 @@ uiR2EdPropertyToolTip_RtNpcEventHandlerAction_Weight	[@{6F6F}重み\n@{F00F}]
 
 // HASH_VALUE 5A8DFC6B03F44CF1
 // INDEX 5894
-uiR2EdPropertyToolTip_ChatAction_Who	[@{6F6F}話者\n@{F00F}]
+uiR2EdPropertyToolTip_ChatAction_Who	[@{6F6F}誰が\n@{F00F}]
 
 // HASH_VALUE 7BA6E0177D3FAB6A
 // INDEX 5895
@@ -24785,27 +24785,27 @@ uiR2EdPropertyToolTip_Creature_Name	[@{6F6F}名前\n@{FFFF}群れの名前です
 
 // HASH_VALUE 0A8550FF870A6233
 // INDEX 5953
-uiR2EdPropertyToolTip_Creature_CrittersCount	[@{6F6F}クリーチャーの数\n@{FFFF}群れの動物の数です。]
+uiR2EdPropertyToolTip_Creature_CrittersCount	[@{6F6F}クリーチャーの数\n@{FFFF}群れのクリーチャーの数です。]
 
 // HASH_VALUE 71CB521FE41C15EC
 // INDEX 5954
-uiR2EdPropertyToolTip_Creature_RaceName	[@{6F6F}種族名\n@{FFFF}動物の種族です。]
+uiR2EdPropertyToolTip_Creature_RaceName	[@{6F6F}種族名\n@{FFFF}クリーチャーの種族です。]
 
 // HASH_VALUE A6C09B0D1FE5E4D7
 // INDEX 5955
-uiR2EdPropertyToolTip_Creature_SleepZone	[@{6F6F}休息エリア\n@{FFFF}動物たちはこのエリアで眠ります。野生動物システムを作成するとエリアが1つ作成されますが、別のエリアを選ぶこともできます。その場合は「指定」ボタンをクリックし、シナリオ内の任意のエリアを選択してください。]
+uiR2EdPropertyToolTip_Creature_SleepZone	[@{6F6F}休息エリア\n@{FFFF}クリーチャーはこのエリアで眠ります。野生動物システムを作成するとエリアが1つ作成されますが、別のエリアを選ぶこともできます。その場合は「指定」ボタンをクリックし、シナリオ内の任意のエリアを選択してください。]
 
 // HASH_VALUE E9B1322B7E3AE4A6
 // INDEX 5956
-uiR2EdPropertyToolTip_Creature_FoodZone	[@{6F6F}採食エリア\n@{FFFF}動物たちはこのエリアを歩き回ります。肉食動物の場合、このエリアは草食動物の休息エリアにあたり、出会った草食動物を捕食します。野生動物システムを作成するとエリアが1つ作成されますが、別のエリアを選ぶこともできます。その場合は「指定」ボタンをクリックし、シナリオ内の任意のエリアを選択してください。]
+uiR2EdPropertyToolTip_Creature_FoodZone	[@{6F6F}採食エリア\n@{FFFF}クリーチャーはこのエリアを歩き回ります。肉食動物の場合、このエリアは草食動物の休息エリアにあたり、出会った草食動物を捕食します。野生動物システムを作成するとエリアが1つ作成されますが、別のエリアを選ぶこともできます。その場合は「指定」ボタンをクリックし、シナリオ内の任意のエリアを選択してください。]
 
 // HASH_VALUE 6751D3A61226719A
 // INDEX 5957
-uiR2EdPropertyToolTip_Creature_FoodDuration	[@{6F6F}採食時間\n@{FFFF}動物たちが採食エリアを歩き回って過ごす時間（秒）です。]
+uiR2EdPropertyToolTip_Creature_FoodDuration	[@{6F6F}採食時間\n@{FFFF}クリーチャーが採食エリアを歩き回って過ごす時間（秒）です。]
 
 // HASH_VALUE 64E53D871DA5CA02
 // INDEX 5958
-uiR2EdPropertyToolTip_Creature_SleepDuration	[@{6F6F}休息時間\n@{FFFF}動物たちが眠って過ごす時間（秒）です。]
+uiR2EdPropertyToolTip_Creature_SleepDuration	[@{6F6F}休息時間\n@{FFFF}クリーチャーが眠って過ごす時間（秒）です。]
 
 // HASH_VALUE CBD911C2A3E921A8
 // INDEX 5959
@@ -25045,7 +25045,7 @@ uiR2EdPropertyToolTip_Npc_NoRespawn	[@{6F6F}再出現なし\n@{F00F}]
 
 // HASH_VALUE 1BC5630D4D18A4E7
 // INDEX 6017
-uiR2EdPropertyToolTip_Npc_Aggro	[@{6F6F}敵対\n@{F00F}]
+uiR2EdPropertyToolTip_Npc_Aggro	[@{6F6F}索敵範囲\n@{F00F}]
 
 // HASH_VALUE 7B74B0173C3F735E
 // INDEX 6018
@@ -25086,7 +25086,7 @@ uiR2EdPropertyToolTip_EasterEgg_Item3Id	[@{6F6F}アイテム3\n@{FFFF}「シナ�
 
 // HASH_VALUE 8CC0EF2BC3751EC2
 // INDEX 6027
-uiR2EdPropertyToolTip_EasterEgg_ItemNumber	[@{6F6F}アイテム数\n@{FFFF}宝箱に入っているアイテムの種類の数を指定します。最大3種類まで使えます。]
+uiR2EdPropertyToolTip_EasterEgg_ItemNumber	[@{6F6F}アイテムの種類数\n@{FFFF}宝箱に入っているアイテムの種類の数を指定します。最大3種類まで使えます。]
 
 // HASH_VALUE 9964BC2ACBB7A4EE
 // INDEX 6028
@@ -25289,7 +25289,7 @@ uiR2EdPropertyToolTip_DeliveryTask_MissionSucceedText	[@{6F6F}ミッション達
 
 // HASH_VALUE A9EBF71CCF8DD3C4
 // INDEX 6077
-uiR2EdPropertyToolTip_DeliveryTask_ItemNumber	[@{6F6F}アイテム数\n@{FFFF}プレイヤーがミッションのターゲットに届けなければならないアイテムの種類の数を指定します。]
+uiR2EdPropertyToolTip_DeliveryTask_ItemNumber	[@{6F6F}アイテムの種類数\n@{FFFF}プレイヤーがミッションのターゲットに届けなければならないアイテムの種類の数を指定します。]
 
 // HASH_VALUE 52CCD30DA9168A36
 // INDEX 6078
@@ -25310,7 +25310,7 @@ uiR2EdPropertyToolTip_DeliveryTask_BroadcastText	[@{6F6F}全体通知テキス�
 //TOOLTIP_FAUNA_SYSTEM
 // HASH_VALUE 94F46CA9CEFA0EAF
 // INDEX 6082
-uiR2EdPropertyToolTip_Fauna_CarnivoresCount	[@{6F6F}数\n@{FFFF}肉食動物の群れに含まれる動物の数です。]
+uiR2EdPropertyToolTip_Fauna_CarnivoresCount	[@{6F6F}数\n@{FFFF}肉食動物の群れに含まれるクリーチャーの数です。]
 
 // HASH_VALUE 1E78AD2A5EBAE5B5
 // INDEX 6083
@@ -25322,7 +25322,7 @@ uiR2EdPropertyToolTip_Fauna_Name	[@{6F6F}名前\n@{FFFF}野生動物システム
 
 // HASH_VALUE 58744CAD10FA0EA8
 // INDEX 6085
-uiR2EdPropertyToolTip_Fauna_HerbivoresCount	[@{6F6F}数\n@{FFFF}草食動物の群れに含まれる動物の数です。]
+uiR2EdPropertyToolTip_Fauna_HerbivoresCount	[@{6F6F}数\n@{FFFF}草食動物の群れに含まれるクリーチャーの数です。]
 
 // HASH_VALUE 1EB8AD2EA0BAE5B5
 // INDEX 6086
@@ -25330,7 +25330,7 @@ uiR2EdPropertyToolTip_Fauna_HerbivoreRace	[@{6F6F}種族\n@{FFFF}草食動物の
 
 // HASH_VALUE 76D407C8F81E46C0
 // INDEX 6087
-uiR2EdPropertyToolTip_Fauna_Active	[@{6F6F}有効\n@{FFFF}野生動物システムが有効な場合、動物はシナリオの開始時に出現します。無効な場合は、ユーザートリガーやその他のトリガー系パーツを使って、野生動物システムを手動で有効化できます。]
+uiR2EdPropertyToolTip_Fauna_Active	[@{6F6F}有効\n@{FFFF}野生動物システムが有効な場合、クリーチャーはシナリオの開始時に出現します。無効な場合は、ユーザートリガーやその他のトリガー系パーツを使って、野生動物システムを手動で有効化できます。]
 
 // HASH_VALUE 81D5BC2FBE3F7361
 // INDEX 6088
@@ -25387,7 +25387,7 @@ uiR2EdPropertyToolTip_EventHandlerEntry_InstanceId	[@{6F6F}インスタンスID\
 
 // HASH_VALUE 5A8DFC6B03F44CF1
 // INDEX 6101
-uiR2EdPropertyToolTip_EventHandlerEntry_Who	[@{6F6F}対象\n@{F00F}]
+uiR2EdPropertyToolTip_EventHandlerEntry_Who	[@{6F6F}誰が\n@{F00F}]
 
 // HASH_VALUE DA110A405CA81379
 // INDEX 6102
@@ -25452,7 +25452,7 @@ uiR2EdPropertyToolTip_RtNpc_Name	[@{6F6F}名前\n@{F00F}]
 
 // HASH_VALUE D203035396A80B87
 // INDEX 6117
-uiR2EdPropertyToolTip_RtNpc_ChatParameters	[@{6F6F}会話パラメーター\n@{F00F}]
+uiR2EdPropertyToolTip_RtNpc_ChatParameters	[@{6F6F}会話の設定\n@{F00F}]
 
 // HASH_VALUE 8B106C6414B2E05C
 // INDEX 6118
@@ -25472,7 +25472,7 @@ uiR2EdPropertyToolTip_RtNpc_SheetClient	[@{6F6F}クライアントシート\n@{F
 
 // HASH_VALUE 56D02F56D3281398
 // INDEX 6122
-uiR2EdPropertyToolTip_RtNpc_BotVerticalPos	[@{6F6F}垂直位置\n@{F00F}]
+uiR2EdPropertyToolTip_RtNpc_BotVerticalPos	[@{6F6F}BotVerticalPos\n@{F00F}]
 
 // HASH_VALUE 99646314CBB7A4EE
 // INDEX 6123
@@ -25484,7 +25484,7 @@ uiR2EdPropertyToolTip_RtNpc_DmProperty	[@{6F6F}DMプロパティ\n@{F00F}]
 
 // HASH_VALUE 1BC5630D4D18A4E7
 // INDEX 6125
-uiR2EdPropertyToolTip_NpcCustom_Aggro	[@{6F6F}敵対\n@{F00F}]
+uiR2EdPropertyToolTip_NpcCustom_Aggro	[@{6F6F}索敵範囲\n@{F00F}]
 
 // HASH_VALUE DDF45B160F479CF0
 // INDEX 6126
@@ -25677,11 +25677,11 @@ uiR2EdPropertyToolTip_RequestItem_MissionGiver	[@{6F6F}依頼人\n@{FFFF}「指�
 
 // HASH_VALUE 0C73B8BCF3F47F28
 // INDEX 6173
-uiR2EdPropertyToolTip_RequestItem_Active	[@{6F6F}有効\n@{FFFF}有効な場合、依頼人はプレイヤーにミッションを与えます。無効な場合は与えません。ユーザートリガーやその他のトリガー系パーツを使って、ミッションを手動で有効化できます。]
+uiR2EdPropertyToolTip_RequestItem_Active	[@{6F6F}有効\n@{FFFF}有効にすると、依頼人がプレイヤーにミッションを与えます。無効の場合は与えません。ユーザートリガーやその他のトリガー系パーツを使って、ミッションを手動で有効化できます。]
 
 // HASH_VALUE 41C0099150B78E7F
 // INDEX 6174
-uiR2EdPropertyToolTip_RequestItem_Repeatable	[@{6F6F}繰り返し可能\n@{FFFF}ミッションが繰り返し可能な場合、依頼人は話しかけてきたどのプレイヤーにも毎回ミッションを与えます。繰り返し可能でない場合、ミッションは一度だけ与えられます。 ]
+uiR2EdPropertyToolTip_RequestItem_Repeatable	[@{6F6F}繰り返し可能\n@{FFFF}繰り返し可能なミッションの場合、依頼人は話しかけてきたどのプレイヤーにも毎回ミッションを与えます。繰り返し不可の場合、ミッションは一度だけ与えられます。 ]
 
 // HASH_VALUE B8A0FF4977539A29
 // INDEX 6175
@@ -25713,7 +25713,7 @@ uiR2EdPropertyToolTip_RequestItem_ContextualText	[@{6F6F}メニューテキス�
 
 // HASH_VALUE 99DB52688F4C5DA0
 // INDEX 6182
-uiR2EdPropertyToolTip_RequestItem_MissionText	[@{6F6F}ミッションテキスト\n@{FFFF}依頼人がプレイヤーにミッションを持ちかけるときのセリフです。]
+uiR2EdPropertyToolTip_RequestItem_MissionText	[@{6F6F}ミッションテキスト\n@{FFFF}依頼人がプレイヤーにミッションを持ちかけるときに話すテキストです。]
 
 // HASH_VALUE 3C673DA4F554F225
 // INDEX 6183
@@ -25725,7 +25725,7 @@ uiR2EdPropertyToolTip_RequestItem_MissionSucceedText	[@{6F6F}ミッション達�
 
 // HASH_VALUE C5DBA2D7EE843497
 // INDEX 6185
-uiR2EdPropertyToolTip_RequestItem_ItemNumber	[@{6F6F}アイテム数\n@{FFFF}依頼人が要求するアイテムの種類の数を設定します。]
+uiR2EdPropertyToolTip_RequestItem_ItemNumber	[@{6F6F}アイテムの種類数\n@{FFFF}依頼人が要求するアイテムの種類の数を設定します。]
 
 // HASH_VALUE 8A5AC3F3C1339EBE
 // INDEX 6186
@@ -25817,7 +25817,7 @@ uiR2EdPropertyToolTip_Ambush_Mob5Id	[@{6F6F}敵5\n@{FFFF}待ち伏せが発動�
 
 // HASH_VALUE FF34CE019CAB58AB
 // INDEX 6207
-uiR2EdPropertyToolTip_Ambush_TriggerOn	[@{6F6F}発動条件\n@{FFFF}プレイヤーがエリアに入ったときと、エリアから出たときのどちらで待ち伏せを開始するかを設定します。]
+uiR2EdPropertyToolTip_Ambush_TriggerOn	[@{6F6F}発動条件（プレイヤー）\n@{FFFF}プレイヤーがエリアに入ったときと、エリアから出たときのどちらで待ち伏せを開始するかを設定します。]
 
 // HASH_VALUE 6C6CB8E1AA8003A4
 // INDEX 6208
@@ -25966,39 +25966,39 @@ uiR2EdPropertyToolTip_SceneryObjectInteraction_ContextualText	[@{6F6F}メニュ�
 //TOOLTIP_REWARD_PROVIDER
 // HASH_VALUE F7BC3856CBBE374A
 // INDEX 6243
-uiR2EdPropertyToolTip_RewardProvider_ContextualText	[@{6F6F}メニューテキスト\n@{FFFF}プレイヤーがマウスカーソルで報酬授与者を選択したときに、コンテキストメニューに表示されるテキストです。]
+uiR2EdPropertyToolTip_RewardProvider_ContextualText	[@{6F6F}メニューテキスト\n@{FFFF}プレイヤーがマウスカーソルで報酬提供者を選択したときに、コンテキストメニューに表示されるテキストです。]
 
 // HASH_VALUE E500A0C3E1DC3787
 // INDEX 6244
-uiR2EdPropertyToolTip_RewardProvider_OnTargetText	[@{6F6F}ターゲット時のテキスト\n@{FFFF}これから報酬を渡すことをプレイヤーに告げる、報酬授与者のセリフです。]
+uiR2EdPropertyToolTip_RewardProvider_OnTargetText	[@{6F6F}ターゲット時のテキスト\n@{FFFF}これから報酬を渡すことをプレイヤーに告げる、報酬提供者のセリフです。]
 
 // HASH_VALUE 687498BDD297242F
 // INDEX 6245
-uiR2EdPropertyToolTip_RewardProvider_RewardText	[@{6F6F}報酬授与テキスト\n@{FFFF}報酬授与者がプレイヤーに報酬を渡すときのセリフです。]
+uiR2EdPropertyToolTip_RewardProvider_RewardText	[@{6F6F}報酬授与テキスト\n@{FFFF}報酬提供者がプレイヤーに報酬を渡すときのセリフです。]
 
 // HASH_VALUE 5A069CB34408D8E7
 // INDEX 6246
-uiR2EdPropertyToolTip_RewardProvider_RareRewardText	[@{6F6F}レア報酬授与テキスト\n@{FFFF}報酬授与者がプレイヤーにレア報酬を渡すときのセリフです。]
+uiR2EdPropertyToolTip_RewardProvider_RareRewardText	[@{6F6F}レア報酬授与テキスト\n@{FFFF}報酬提供者がプレイヤーにレア報酬を渡すときのセリフです。]
 
 // HASH_VALUE 1B3EF0B561F7BAE1
 // INDEX 6247
-uiR2EdPropertyToolTip_RewardProvider_InventoryFullText	[@{6F6F}所持品満杯テキスト\n@{FFFF}プレイヤーの所持品にこれ以上アイテムが入らないときの、報酬授与者のセリフです。]
+uiR2EdPropertyToolTip_RewardProvider_InventoryFullText	[@{6F6F}所持品満杯テキスト\n@{FFFF}プレイヤーの所持品にこれ以上アイテムが入らないときの、報酬提供者のセリフです。]
 
 // HASH_VALUE 67EAC29EB00BE53B
 // INDEX 6248
-uiR2EdPropertyToolTip_RewardProvider_NotEnoughPointsText	[@{6F6F}ポイント不足テキスト\n@{FFFF}プレイヤーのポイントが報酬を受け取るのに足りないときの、報酬授与者のセリフです。]
+uiR2EdPropertyToolTip_RewardProvider_NotEnoughPointsText	[@{6F6F}ポイント不足テキスト\n@{FFFF}プレイヤーのポイントが報酬を受け取るのに足りないときの、報酬提供者のセリフです。]
 
 // HASH_VALUE DE0CB81BE42019E4
 // INDEX 6249
-uiR2EdPropertyToolTip_RewardProvider_RewardGiver	[@{6F6F}報酬授与者\n@{FFFF} 「指定」ボタンをクリックし、シナリオ内のNPCを選択してください。プレイヤーがこのNPCを選択すると、報酬が渡されます。グループに属するNPCは指定できません。]
+uiR2EdPropertyToolTip_RewardProvider_RewardGiver	[@{6F6F}報酬提供者\n@{FFFF} 「指定」ボタンをクリックし、シナリオ内のNPCを選択してください。プレイヤーがこのNPCを選択すると、報酬が渡されます。グループに属するNPCは指定できません。]
 
 // HASH_VALUE B194171746F71607
 // INDEX 6250
-uiR2EdPropertyToolTip_RewardProvider_Active	[@{6F6F}有効\n@{FFFF}有効な場合、プレイヤーが報酬授与者を選択すると、報酬授与者はプレイヤーに報酬を渡します。]
+uiR2EdPropertyToolTip_RewardProvider_Active	[@{6F6F}有効\n@{FFFF}有効な場合、プレイヤーが報酬提供者を選択すると、報酬提供者はプレイヤーに報酬を渡します。]
 
 // HASH_VALUE 783E0A2A5C7A9908
 // INDEX 6251
-uiR2EdPropertyToolTip_RewardProvider_Name	[@{6F6F}名前\n@{FFFF}報酬提供者の名前です。]
+uiR2EdPropertyToolTip_RewardProvider_Name	[@{6F6F}名前\n@{FFFF}「報酬提供者」パーツの名前です。]
 
 //TOOLTIP_GET_ITEM_FROM_SCENERY_OBJECT
 // HASH_VALUE 56B899FAE394C69F
@@ -26047,7 +26047,7 @@ uiR2EdPropertyToolTip_GetItemFromSceneryObject_Item3Id	[@{6F6F}アイテム3\n@{
 
 // HASH_VALUE DB09A6BDAA655CD0
 // INDEX 6263
-uiR2EdPropertyToolTip_GetItemFromSceneryObject_ItemNumber	[@{6F6F}アイテム数\n@{FFFF}小道具から入手できるアイテムの種類の数を設定します。]
+uiR2EdPropertyToolTip_GetItemFromSceneryObject_ItemNumber	[@{6F6F}アイテムの種類数\n@{FFFF}小道具から入手できるアイテムの種類の数を設定します。]
 
 //TOOLTIP_SCENERY_OBJECT_INTERACTION_TASK
 // HASH_VALUE 1CFEA73106EC9EAE
@@ -26076,7 +26076,7 @@ uiR2EdPropertyToolTip_SceneryObjectInteractionTaskStep_ContextualText	[@{6F6F}�
 
 // HASH_VALUE FF16BEA23C1EC968
 // INDEX 6270
-uiR2EdPropertyToolTip_SceneryObjectInteractionTaskStep_MissionText	[@{6F6F}ミッションテキスト\n@{FFFF}依頼人がプレイヤーにミッションを持ちかけるときのセリフです。]
+uiR2EdPropertyToolTip_SceneryObjectInteractionTaskStep_MissionText	[@{6F6F}ミッションテキスト\n@{FFFF}依頼人がプレイヤーにミッションを持ちかけるときに話すテキストです。]
 
 // HASH_VALUE F64BA83738ED75AD
 // INDEX 6271
@@ -26101,7 +26101,7 @@ uiR2EdPropertyToolTip_GetItemFromSceneryObjectTaskStep_ContextualText	[@{6F6F}�
 
 // HASH_VALUE FF16BEA23C1EC968
 // INDEX 6276
-uiR2EdPropertyToolTip_GetItemFromSceneryObjectTaskStep_MissionText	[@{6F6F}ミッションテキスト\n@{FFFF}依頼人がプレイヤーにミッションを持ちかけるときのセリフです。]
+uiR2EdPropertyToolTip_GetItemFromSceneryObjectTaskStep_MissionText	[@{6F6F}ミッションテキスト\n@{FFFF}依頼人がプレイヤーにミッションを持ちかけるときに話すテキストです。]
 
 // HASH_VALUE 04D3F9A5D0A29662
 // INDEX 6277
@@ -26153,7 +26153,7 @@ uiR2EdPropertyToolTip_GetItemFromSceneryObjectTaskStep_Item3Id	[@{6F6F}アイテ
 
 // HASH_VALUE DB09A6BDAA655CD0
 // INDEX 6289
-uiR2EdPropertyToolTip_GetItemFromSceneryObjectTaskStep_ItemNumber	[@{6F6F}アイテム数\n@{FFFF}小道具から入手できるアイテムの種類の数を設定します。]
+uiR2EdPropertyToolTip_GetItemFromSceneryObjectTaskStep_ItemNumber	[@{6F6F}アイテムの種類数\n@{FFFF}小道具から入手できるアイテムの種類の数を設定します。]
 
 // HASH_VALUE 8A5AC3F3C1339EBE
 // INDEX 6290
@@ -26206,7 +26206,7 @@ uiR2EdPropertyToolTip_RandomChest_Item3Weight	[@{6F6F}アイテム3の重み\n@{
 
 // HASH_VALUE 41887A49376F2A76
 // INDEX 6302
-uiR2EdPropertyToolTip_RandomChest_ItemNumber	[@{6F6F}アイテム数\n@{FFFF}宝箱に入る可能性のあるアイテムの種類の数を設定します。]
+uiR2EdPropertyToolTip_RandomChest_ItemNumber	[@{6F6F}アイテムの種類数\n@{FFFF}宝箱に入る可能性のあるアイテムの種類の数を設定します。]
 
 //QUEST
 // HASH_VALUE 3134C887A27FF4F9
@@ -26231,7 +26231,7 @@ uiR2EdPropertyToolTip_Quest_TaskStep5Id	[@{6F6F}タスク5\n@{FFFF}クエスト�
 
 // HASH_VALUE F0B59DDED8111C01
 // INDEX 6308
-uiR2EdPropertyToolTip_Quest_TaskNumber	[@{6F6F}タスク参照\n@{FFFF}クエストを構成するタスクまたはタスクステップの数を設定します。]
+uiR2EdPropertyToolTip_Quest_TaskNumber	[@{6F6F}タスクの参照\n@{FFFF}クエストを構成するタスクまたはタスクステップの数を設定します。]
 
 // HASH_VALUE E0C9E9CB8893506D
 // INDEX 6309
@@ -26631,7 +26631,7 @@ uiR2EdFauna_HelpTitle	[野生動物システム - 説明]
 
 // HASH_VALUE D7DAED9A778E9766
 // INDEX 6407
-uiR2EdFauna_HelpText	[@{FFFF}このパーツでは、自律して動く野生動物システムを作成できます。\n\n @{FF0F}基本操作：\n @{FFFF}- 2つの動物の群れ（草食動物と肉食動物）で構成されます。\n - それぞれの群れの頭数を選べます。肉食動物が多すぎると草食動物はたやすく全滅してしまうので、注意してください。\n - 動物の種族は、生態系とレベルに応じて選べます。\n\n @{FF0F}応用操作：\n @{FFFF}- それぞれの群れは、休息エリアと採食エリアの間を移動します。\n - 肉食動物は、自分の採食エリアで出会った草食動物をすべて襲います。\n - デフォルトでは、肉食動物の採食エリアは草食動物の休息エリアですが、マウスカーソルで任意のエリアを指定することもできます。それには、プロパティウィンドウの「指定」ボタンをクリックし、シナリオ内のエリアを選択してください。\n - 採食時間と休息時間はデフォルトで30秒です。変更することもできますが、動物があるエリアから別のエリアへ移動するのにかかる時間を考慮するのを忘れないでください。\n - システム全体、肉食動物の群れ、草食動物の群れの名前は、それぞれ変更できます。\n]
+uiR2EdFauna_HelpText	[@{FFFF}このパーツでは、自律して動く野生動物システムを作成できます。\n\n @{FF0F}基本操作：\n @{FFFF}- 2つのクリーチャーの群れ（草食動物と肉食動物）で構成されます。\n - それぞれの群れの頭数を選べます。肉食動物が多すぎると草食動物はたやすく全滅してしまうので、注意してください。\n - クリーチャーの種族は、生態系とレベルに応じて選べます。\n\n @{FF0F}応用操作：\n @{FFFF}- それぞれの群れは、休息エリアと採食エリアの間を移動します。\n - 肉食動物は、自分の採食エリアで出会った草食動物をすべて襲います。\n - デフォルトでは、肉食動物の採食エリアは草食動物の休息エリアですが、マウスカーソルで任意のエリアを指定することもできます。それには、プロパティウィンドウの「指定」ボタンをクリックし、シナリオ内のエリアを選択してください。\n - 採食時間と休息時間はデフォルトで30秒です。変更することもできますが、クリーチャーがあるエリアから別のエリアへ移動するのにかかる時間を考慮するのを忘れないでください。\n - システム全体、肉食動物の群れ、草食動物の群れの名前は、それぞれ変更できます。\n]
 
 // HASH_VALUE DB754A91DE7A482F
 // INDEX 6408
@@ -26807,7 +26807,7 @@ uiR2EdUserComponent_HelpTitle	[ユーザーパーツ - 説明]
 
 // HASH_VALUE 95337D260AE65580
 // INDEX 6451
-uiR2EdUserComponent_HelpText	[@{FFFF}このパーツは、独自のユーザーパーツを作成するために使います。シナリオに挿入した時点ではこのパーツは空ですが、どんなオブジェクトやエンティティでもサブパーツとして追加できます。\n\n @{FF0F}基本操作：\n @{FFFF} - ユーザーパーツにオブジェクトやエンティティを追加するには、ユーザーパーツを選択し、コンテキストツールバーの「エンティティ追加」ボタンをクリックします。次に、シナリオ内のエンティティかオブジェクトを左クリックします。対象は、シナリオ内でもシナリオウィンドウでも選択できます。どんな種類のエンティティでも追加できます。\n - ユーザーパーツからサブパーツを取り除くには、ユーザーパーツを選択し、コンテキストツールバーの「エンティティ削除」ボタンをクリックします。次に、以前に追加したエンティティを左クリックします。そのエンティティはユーザーパーツのサブパーツから取り除かれ、独立したエンティティとしてシナリオに戻されます。対象は、シナリオ内でもシナリオウィンドウでも選択できます。\n - パーツを保存するには、ユーザーパーツを選択して「保存」ボタンをクリックします。パーツを保存するファイル名と、パーツの名前を入力する必要があります。保存したパーツは、パレットの「パーツ」タブの「ユーザーパーツ>読み込み済みパーツ」の項目に自動的に追加されます。読み込んだパーツは、通常のパーツと同じように使えます。パーツを収めたファイルは、ryzom/examplesディレクトリに保存されます。\n\n @{FF0F}応用操作：\n@{FFFF}- パーツのファイルを読み込むには、目的のファイルをryzom/examplesディレクトリに置き、パレットの「パーツ」タブにある「読み込み」ボタンをクリックします。ファイルを選択して、「OK」ボタンをクリックしてください。パーツは「パーツ」タブの「ユーザーパーツ>読み込み済みパーツ」の項目に自動的に追加されます。クライアントの終了時に読み込まれていたパーツは、クライアントの再起動時に再び読み込まれます。\n - パーツの読み込みを解除するには、「読み込み解除」ボタンをクリックし、解除したいパーツを選択します。読み込みを解除したパーツは、インターフェースから取り除かれます。\n\n]
+uiR2EdUserComponent_HelpText	[@{FFFF}このパーツは、独自のユーザーパーツを作成するために使います。シナリオに挿入した時点ではこのパーツは空ですが、どんなオブジェクトやエンティティでもサブパーツとして追加できます。\n\n @{FF0F}基本操作：\n @{FFFF} - ユーザーパーツにオブジェクトやエンティティを追加するには、ユーザーパーツを選択し、コンテキストツールバーの「ユーザーパーツにエンティティを追加」ボタンをクリックします。次に、シナリオ内のエンティティかオブジェクトを左クリックします。対象は、シナリオ内でもシナリオウィンドウでも選択できます。どんな種類のエンティティでも追加できます。\n - ユーザーパーツからサブパーツを取り除くには、ユーザーパーツを選択し、コンテキストツールバーの「ユーザーパーツからエンティティを削除」ボタンをクリックします。次に、以前に追加したエンティティを左クリックします。そのエンティティはユーザーパーツのサブパーツから取り除かれ、独立したエンティティとしてシナリオに戻されます。対象は、シナリオ内でもシナリオウィンドウでも選択できます。\n - パーツを保存するには、ユーザーパーツを選択して「保存」ボタンをクリックします。パーツを保存するファイル名と、パーツの名前を入力する必要があります。保存したパーツは、パレットの「パーツ」タブの「ユーザーパーツ>読み込み済みパーツ」の項目に自動的に追加されます。読み込んだパーツは、通常のパーツと同じように使えます。パーツを収めたファイルは、ryzom/examplesディレクトリに保存されます。\n\n @{FF0F}応用操作：\n@{FFFF}- パーツのファイルを読み込むには、目的のファイルをryzom/examplesディレクトリに置き、パレットの「パーツ」タブにある「読み込み」ボタンをクリックします。ファイルを選択して、「OK」ボタンをクリックしてください。パーツは「パーツ」タブの「ユーザーパーツ>読み込み済みパーツ」の項目に自動的に追加されます。クライアントの終了時に読み込まれていたパーツは、クライアントの再起動時に再び読み込まれます。\n - パーツの読み込みを解除するには、「読み込み解除」ボタンをクリックし、解除したいパーツを選択します。読み込みを解除したパーツは、インターフェースから取り除かれます。\n\n]
 
 // HASH_VALUE CE96D4949F23C626
 // INDEX 6452
@@ -26815,7 +26815,7 @@ uiR2EdNpc_HelpTitle	[NPC - 説明]
 
 // HASH_VALUE 88D893270F5C57ED
 // INDEX 6453
-uiR2EdNpc_HelpText	[@{FFFF}NPC（ノンプレイヤーキャラクター）とは、アドベンチャーに追加して使うことのできる人物です。\n\n @{FF0F}プロパティ：\n @{FFFF} -敵対：敵対的なNPCが、プレイヤーやほかのNPCに自分から攻撃を仕掛ける距離です。この値は、0m（挑発されない限り、NPCは決して攻撃しません）から、プレイヤーの視界とほぼ同じ距離である120mまでの間で調整できます。\n - 速度：戦闘をしていないときに、NPCが活動する速さです。「走る」と「歩く」から選べます。\n - レベル：NPCのレベルを決めるための調整値です。「弱い」「普通」「強い」「非常に強い」の選択は、パレットウィンドウの上部に表示されたレベル帯のプレイヤーを基準にしています。あるレベル帯の「非常に強い」NPCは、1つ上のレベル帯の「弱い」NPCと同じくらいになることがあります。\n - プレイヤーと戦闘：このプロパティをオンにすると、NPCはプレイヤーと戦えるようになります。NPCはそれぞれの本来の性質に従い続けるので、たとえば民間人は、挑発されない限りプレイヤーを攻撃しません。このプロパティがオフの場合、NPCは盗賊であっても決してプレイヤーを攻撃しません。\n - 自動出現：このプロパティをオンにすると、NPCは所属する幕が始まるとすぐに出現します。オフの場合、「イベント」で出現させない限り、NPCは出現しません。\n - 再出現なし：このプロパティをオンにすると、倒されたNPCは死んだままになります。オフの場合は、死亡してからしばらくすると自動的に再出現します。\n - 外見の変更：NPCの体型、服装、装備を変更できます。服装の選択はNPCの能力値にまったく影響しませんが、武器の選択によって、NPCが与えるダメージの種類が変わります。\n\n @{FF0F}行動：\n@{FFFF}NPCには1つまたは複数の行動を与え、シーケンスとして並べることができます。ほとんどの行動には時間を設定でき、その時間が経過すると、NPCはシーケンスの次の行動に移ります。\n - 徘徊：NPCは指定されたエリアへ行き、制限時間になるまでその中を歩き回ります。\n - ルートをたどる：NPCはあらかじめ設定したルートの始点へ行き、ルートを終点までたどります。この行動には制限時間がありません。\n - 巡回：NPCはあらかじめ設定したルートの始点へ行き、制限時間になるまで、端で折り返しながらルートを行き来します。\n - ルートを繰り返す：NPCはあらかじめ設定したルートの始点へ行き、制限時間になるまでルートをたどり続けます。ルートの終点に着くたびに始点へ直接戻り、またたどり続けます。\n\n @{FF0F}イベント：\n @{FFFF}NPCにさまざまなことが起きたときに、イベントを発動させることができます。\n - 出現/消滅：NPCが現れたとき/消えたときにイベントが発動します（「再出現なし」プロパティがオフの場合は、再び現れるたび、再び消えるたびにも発動します）。\n - 行動の開始/終了：特定の行動シーケンスの中の、特定の行動の開始時または終了時にイベントが発動します。\n - シーケンスの開始/終了：NPCが特定の行動シーケンスを開始または終了したときに、イベントが発動します。\n - プレイヤーがターゲット：NPCがプレイヤーにターゲットされたときに、イベントが発動します。\n\n @{FF0F}アクション：\n @{FFFF}ゲーム中のさまざまなイベントが発動したときに、NPCにいろいろなアクションを適用できます。\n - 出現/消滅：NPCを出現または消滅させます（出現している途中のNPCを消滅させたり、消えている途中のNPCを出現させたりすることはできません）。\n - 死亡：NPCを死亡させます。\n - 行動開始：新しい行動シーケンスを始めます。\n - NPCとの戦闘を許可/禁止：「NPCと戦闘」プロパティの状態を変更します。このプロパティが変わったときに戦闘中だったNPCは、戦闘が終わるまで変更を反映しません。\n - プレイヤーとの戦闘を許可/禁止：「プレイヤーと戦闘」プロパティの状態を変更します。「NPCとの戦闘を許可/禁止」と同様に、この変更は、戦闘中のNPCが敵を追うのをやめるまで反映されません。\n - 歩く/走る：「速度」プロパティの状態を変更します。\n\n @{FF0F}グループ化：\n @{FFFF}NPCをまとめてグループにできます。グループは、メンバーとリーダーを結ぶ地面の矢印で見分けられます。グループのNPCはみなリーダーにならい、プロパティ、行動、イベントを共有します。\n]
+uiR2EdNpc_HelpText	[@{FFFF}NPC（ノンプレイヤーキャラクター）とは、アドベンチャーに追加して使うことのできる人物です。\n\n @{FF0F}プロパティ：\n @{FFFF} -索敵範囲：敵対的なNPCが、プレイヤーやほかのNPCに自分から攻撃を仕掛ける距離です。この値は、0m（挑発されない限り、NPCは決して攻撃しません）から、プレイヤーの視界とほぼ同じ距離である120mまでの間で調整できます。\n - 速度：戦闘をしていないときに、NPCが活動する速さです。「走る」と「歩く」から選べます。\n - レベル：NPCのレベルを決めるための調整値です。「弱い」「普通」「強い」「非常に強い」の選択は、パレットウィンドウの上部に表示されたレベル帯のプレイヤーを基準にしています。あるレベル帯の「非常に強い」NPCは、1つ上のレベル帯の「弱い」NPCと同じくらいになることがあります。\n - プレイヤーと戦闘：このプロパティをオンにすると、NPCはプレイヤーと戦えるようになります。NPCはそれぞれの本来の性質に従い続けるので、たとえば民間人は、挑発されない限りプレイヤーを攻撃しません。このプロパティがオフの場合、NPCは盗賊であっても決してプレイヤーを攻撃しません。\n - 自動出現：このプロパティをオンにすると、NPCは所属する幕が始まるとすぐに出現します。オフの場合、「イベント」で出現させない限り、NPCは出現しません。\n - 再出現なし：このプロパティをオンにすると、倒されたNPCは死んだままになります。オフの場合は、死亡してからしばらくすると自動的に再出現します。\n - 外見の変更：NPCの体型、服装、装備を変更できます。服装の選択はNPCの能力値にまったく影響しませんが、武器の選択によって、NPCが与えるダメージの種類が変わります。\n\n @{FF0F}行動：\n@{FFFF}NPCには1つまたは複数の行動を与え、シーケンスとして並べることができます。ほとんどの行動には時間を設定でき、その時間が経過すると、NPCはシーケンスの次の行動に移ります。\n - 徘徊：NPCは指定されたエリアへ行き、制限時間になるまでその中を歩き回ります。\n - ルートをたどる：NPCはあらかじめ設定したルートの始点へ行き、ルートを終点までたどります。この行動には制限時間がありません。\n - 巡回：NPCはあらかじめ設定したルートの始点へ行き、制限時間になるまで、端で折り返しながらルートを行き来します。\n - ルートを繰り返す：NPCはあらかじめ設定したルートの始点へ行き、制限時間になるまでルートをたどり続けます。ルートの終点に着くたびに始点へ直接戻り、またたどり続けます。\n\n @{FF0F}イベント：\n @{FFFF}NPCにさまざまなことが起きたときに、イベントを発動させることができます。\n - 出現/消滅：NPCが現れたとき/消えたときにイベントが発動します（「再出現なし」プロパティがオフの場合は、再び現れるたび、再び消えるたびにも発動します）。\n - 行動の開始/終了：特定の行動シーケンスの中の、特定の行動の開始時または終了時にイベントが発動します。\n - シーケンスの開始/終了：NPCが特定の行動シーケンスを開始または終了したときに、イベントが発動します。\n - プレイヤーにターゲットされた：NPCがプレイヤーにターゲットされたときに、イベントが発動します。\n\n @{FF0F}アクション：\n @{FFFF}ゲーム中のさまざまなイベントが発動したときに、NPCにいろいろなアクションを適用できます。\n - 出現/消滅：NPCを出現または消滅させます（出現している途中のNPCを消滅させたり、消えている途中のNPCを出現させたりすることはできません）。\n - 死亡：NPCを死亡させます。\n - 行動開始：新しい行動シーケンスを始めます。\n - NPCとの戦闘を許可/禁止：「NPCと戦闘」プロパティの状態を変更します。このプロパティが変わったときに戦闘中だったNPCは、戦闘が終わるまで変更を反映しません。\n - プレイヤーとの戦闘を許可/禁止：「プレイヤーと戦闘」プロパティの状態を変更します。「NPCとの戦闘を許可/禁止」と同様に、この変更は、戦闘中のNPCが敵を追うのをやめるまで反映されません。\n - 歩く/走る：「速度」プロパティの状態を変更します。\n\n @{FF0F}グループ化：\n @{FFFF}NPCをまとめてグループにできます。グループは、メンバーとリーダーを結ぶ地面の矢印で見分けられます。グループのNPCはみなリーダーにならい、プロパティ、行動、イベントを共有します。\n]
 
 // HASH_VALUE 6CC6F33B9844C070
 // INDEX 6454
@@ -26835,27 +26835,27 @@ uiR2EdGetItemFromSceneryObjectTaskStep_HelpText	[@{FFFF}このパーツでは、
 
 // HASH_VALUE 5DE0F7A627DF6913
 // INDEX 6458
-uiR2EdSceneryObjectInteractionTaskStep_HelpTitle	[小道具インタラクションタスクステップ - 説明]
+uiR2EdSceneryObjectInteractionTaskStep_HelpTitle	[小道具操作タスクステップ - 説明]
 
 // HASH_VALUE A68BD873F16B57D7
 // INDEX 6459
-uiR2EdSceneryObjectInteractionTaskStep_HelpText	[@{FFFF}このパーツでは、プレイヤー向けのタスクを作成できます。このタスクの目的は、小道具を見つけてターゲットすることです。このパーツをほかのタスクパーツと組み合わせて、クエストを作成できます。\n\n @{FF0F}基本操作：\n @{FFFF}- プレイヤーにタスクを与えるNPCを選べます。プロパティウィンドウの「指定」ボタンをクリックし、シナリオ内のNPCを選択してください。\n - プレイヤーがターゲットすべき小道具を選べます。プロパティウィンドウの「指定」ボタンをクリックし、シナリオ内の小道具を選択してください。\n\n @{FF0F}応用操作：\n @{FFFF}- 小道具インタラクションタスクステップは、初期状態で有効です。無効の場合は、ユーザートリガーやほかのトリガー系パーツを使って、プレイ中に有効化・無効化できます。\n - ミッションテキスト：依頼人がプレイヤーにタスクを与えるときに話すテキストです。\n- 確認待ちテキスト：タスクを引き受けたプレイヤーが、小道具をターゲットしないまま再び依頼人に話しかけたときに、依頼人が話すテキストです。\n- メニューテキスト：プレイヤーがマウスカーソルで小道具を選択したときに、コンテキストメニューに表示されるテキストです。\n- タスクを繰り返し可能にするかどうかを設定できます。\n- タスク名を変更することもできます。\n\n]
+uiR2EdSceneryObjectInteractionTaskStep_HelpText	[@{FFFF}このパーツでは、プレイヤー向けのタスクを作成できます。このタスクの目的は、小道具を見つけてターゲットすることです。このパーツをほかのタスクパーツと組み合わせて、クエストを作成できます。\n\n @{FF0F}基本操作：\n @{FFFF}- プレイヤーにタスクを与えるNPCを選べます。プロパティウィンドウの「指定」ボタンをクリックし、シナリオ内のNPCを選択してください。\n - プレイヤーがターゲットすべき小道具を選べます。プロパティウィンドウの「指定」ボタンをクリックし、シナリオ内の小道具を選択してください。\n\n @{FF0F}応用操作：\n @{FFFF}- 小道具操作タスクステップは、初期状態で有効です。無効の場合は、ユーザートリガーやほかのトリガー系パーツを使って、プレイ中に有効化・無効化できます。\n - ミッションテキスト：依頼人がプレイヤーにタスクを与えるときに話すテキストです。\n- 確認待ちテキスト：タスクを引き受けたプレイヤーが、小道具をターゲットしないまま再び依頼人に話しかけたときに、依頼人が話すテキストです。\n- メニューテキスト：プレイヤーがマウスカーソルで小道具を選択したときに、コンテキストメニューに表示されるテキストです。\n- タスクを繰り返し可能にするかどうかを設定できます。\n- タスク名を変更することもできます。\n\n]
 
 // HASH_VALUE F7EA69E22B2CDDBD
 // INDEX 6460
-uiR2EdSceneryObjectInteraction_HelpTitle	[小道具インタラクション - 説明]
+uiR2EdSceneryObjectInteraction_HelpTitle	[小道具操作 - 説明]
 
 // HASH_VALUE 7B44073F78D8D920
 // INDEX 6461
-uiR2EdSceneryObjectInteraction_HelpText	[@{FFFF}このパーツでは、小道具とのインタラクションによってイベントを発動させることができます。\n\n @{FF0F}基本操作：\n @{FFFF}- プレイヤーがインタラクションする小道具を選べます。プロパティウィンドウの「指定」ボタンをクリックし、シナリオ内の小道具を選択してください。\n\n @{FF0F}応用操作：\n @{FFFF}- メニューテキスト：プレイヤーがマウスカーソルで小道具を選択したときに、コンテキストメニューに表示されるテキストです。\n- 繰り返し可能にするかどうかを設定できます。\n - トリガー名を変更することもできます。\n\n]
+uiR2EdSceneryObjectInteraction_HelpText	[@{FFFF}このパーツでは、小道具の操作によってイベントを発動させることができます。\n\n @{FF0F}基本操作：\n @{FFFF}- プレイヤーが操作する小道具を選べます。プロパティウィンドウの「指定」ボタンをクリックし、シナリオ内の小道具を選択してください。\n\n @{FF0F}応用操作：\n @{FFFF}- メニューテキスト：プレイヤーがマウスカーソルで小道具を選択したときに、コンテキストメニューに表示されるテキストです。\n- 繰り返し可能にするかどうかを設定できます。\n - トリガー名を変更することもできます。\n\n]
 
 // HASH_VALUE 083E819B03312C90
 // INDEX 6462
-uiR2EdSceneryObjectRemover_HelpTitle	[小道具除去 - 説明]
+uiR2EdSceneryObjectRemover_HelpTitle	[小道具の除去 - 説明]
 
 // HASH_VALUE C5F7AE689AABF950
 // INDEX 6463
-uiR2EdSceneryObjectRemover_HelpText	[@{FFFF}このパーツでは、小道具を除去できます。\n\n @{FF0F}基本操作：\n @{FFFF}- 小道具を少なくとも1つ指定する必要があります。\n\n @{FF0F}応用操作：\n @{FFFF}- 小道具除去は初期状態で有効です。無効の場合は、ユーザートリガーやほかのトリガー系パーツを使って、プレイ中に有効化・無効化できます。\n- ユーザートリガーを発動アクションに結びつけると、いつでも小道具除去を発動できます。\n- 小道具除去の名前を変更することもできます。\n\n]
+uiR2EdSceneryObjectRemover_HelpText	[@{FFFF}このパーツでは、小道具を除去できます。\n\n @{FF0F}基本操作：\n @{FFFF}- 小道具を少なくとも1つ指定する必要があります。\n\n @{FF0F}応用操作：\n @{FFFF}- 「小道具の除去」パーツは初期状態で有効です。無効の場合は、ユーザートリガーやほかのトリガー系パーツを使って、プレイ中に有効化・無効化できます。\n- ユーザートリガーを発動アクションに結びつけると、いつでも「小道具の除去」パーツを発動できます。\n- 「小道具の除去」パーツの名前を変更することもできます。\n\n]
 
 // HASH_VALUE E6B8A36153A6FCB7
 // INDEX 6464
@@ -27536,11 +27536,11 @@ uiR2EdFaunaFeatureNode	[野生動物システム]
 //Dev components (tmp)
 // HASH_VALUE 2D48846C0CC2E3A6
 // INDEX 6628
-uiR2EdSceneryObjectRemoverFeatureNode	[小道具除去]
+uiR2EdSceneryObjectRemoverFeatureNode	[小道具の除去]
 
 // HASH_VALUE 6887A07F5036E08E
 // INDEX 6629
-uiR2EdSceneryObjectInteractionFeatureNode	[小道具インタラクション]
+uiR2EdSceneryObjectInteractionFeatureNode	[小道具操作]
 
 // HASH_VALUE 678A08989D536F9F
 // INDEX 6630
@@ -27548,7 +27548,7 @@ uiR2EdRewardProviderNode	[報酬提供者]
 
 // HASH_VALUE C1AA71D2BC96F48A
 // INDEX 6631
-uiR2EdSceneryObjectInteractionTaskStepNode	[小道具インタラクションタスクステップ]
+uiR2EdSceneryObjectInteractionTaskStepNode	[小道具操作タスクステップ]
 
 // HASH_VALUE D1B360719C67008F
 // INDEX 6632
@@ -27995,7 +27995,7 @@ uiR2Event1BeginOfActivitySeq	[が行動シーケンスを開始したら：]
 
 // HASH_VALUE DAB8E08FE245748E
 // INDEX 6740
-uiR2Event0TargetedByPlayer	[プレイヤーがターゲット]
+uiR2Event0TargetedByPlayer	[プレイヤーにターゲットされた]
 
 // HASH_VALUE D555A37028F5E0AE
 // INDEX 6741
@@ -28904,7 +28904,7 @@ uiR2EdPropertyToolTip_BasePrimitive_Name	[@{6F6F}名前\n@{FFFF}ルートまた�
 
 // HASH_VALUE FAEEEF04B1F7640B
 // INDEX 6963
-uiR2EdPropertyToolTip_ChatAction_WhoNoEntity	[@{6F6F}話者（NPCなし）\n@{FFFF}この台詞をNPCが話さない場合に使います。テキストはプレイヤー全員に表示されるか、アドベンチャーマスターへのメッセージとして送られます。]
+uiR2EdPropertyToolTip_ChatAction_WhoNoEntity	[@{6F6F}誰が（NPCなし）\n@{FFFF}この台詞をNPCが話さない場合に使います。テキストはプレイヤー全員に表示されるか、アドベンチャーマスターへのメッセージとして送られます。]
 
 // HASH_VALUE 120F867B85985649
 // INDEX 6964
@@ -28940,11 +28940,11 @@ uiR2EdPropertyToolTip_MapDescription_TrialAllowed	[@{6F6F}無料体験で利用�
 
 // HASH_VALUE E7612EB8CDF03AA2
 // INDEX 6972
-uiR2EdPropertyToolTip_SaveUserComponent_Name	[@{6F6F}ユーザーパーツ名\n@{FFFF}エクスポートされるパーツにこの名前が付きます。]
+uiR2EdPropertyToolTip_SaveUserComponent_Name	[@{6F6F}ユーザーパーツ名\n@{FFFF}エクスポートしたパーツにはこの名前が付けられます。]
 
 // HASH_VALUE 1C1DEF60A90EF0B0
 // INDEX 6973
-uiR2EdPropertyToolTip_UnloadUserComponent_ComponentName	[@{6F6F}ユーザーパーツ名\n@{FFFF}このパーツの読み込みが解除され、インターフェースから取り除かれます。]
+uiR2EdPropertyToolTip_UnloadUserComponent_ComponentName	[@{6F6F}ユーザーパーツ名\n@{FFFF}このパーツの読み込みを解除し、インターフェースから削除します。]
 
 // HASH_VALUE ED22E4228313E706
 // INDEX 6974
