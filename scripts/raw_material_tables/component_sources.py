@@ -33,24 +33,32 @@ SPECIAL_DEPOSITS = [ "Kitin Larva" ]
 
 errors = []
 
+def stop(message):
+	print("ERROR: " + message, file=sys.stderr)
+	sys.exit(1)
+
+# What to do about an input that is missing: the script reads the leveldesign that holds it
+IN_LEVELDESIGN = ("this script reads it from the leveldesign that holds it (" + LEVELDESIGN + "), which must have it (mp_generator writes "
+	"the raw materials and quartering tables, make_tables.py the tables)")
+
 def readText(path):
-	"""a whole file, UTF-8: one that is not stops the script"""
+	"""a whole file, UTF-8: one that is missing or is not stops the script, naming it"""
+	if not os.path.isfile(path):
+		stop(path + " not found: " + IN_LEVELDESIGN)
 	try:
 		with open(path, "r", encoding="utf-8-sig") as f:
 			return f.read()
 	except UnicodeDecodeError as e:
-		print("ERROR: " + path + " is not UTF-8 text (" + str(e) + "): correct the file", file=sys.stderr)
-		sys.exit(1)
+		stop(path + " is not UTF-8 text (" + str(e) + "): correct the file")
 
 def readForm(path):
 	text = readText(path)
 	return text, re.findall(r'<PARENT Filename="([^"]+)"', text), dict(re.findall(r'<ATOM Name="([^"]+)" Value="([^"]*)"', text))
 
 def main():
-	for folder in ( MATERIALS, CREATURES ):
+	for folder in ( MATERIALS, os.path.join(MATERIALS, "_parent"), CREATURES ):
 		if not os.path.isdir(folder):
-			print("ERROR: " + folder + " not found: this script reads the leveldesign that holds it (" + LEVELDESIGN + ")", file=sys.stderr)
-			sys.exit(1)
+			stop(folder + " not found: " + IN_LEVELDESIGN)
 	# the families and groups of the parents
 	parents = {}
 	for f in os.listdir(os.path.join(MATERIALS, "_parent")):

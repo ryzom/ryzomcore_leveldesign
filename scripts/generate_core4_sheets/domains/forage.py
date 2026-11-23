@@ -190,18 +190,10 @@ def classOfEnergy(energy):
 	return len(CLASSES) - 1
 
 class Atlas:
-	"""the icon names of the interface atlases the client loads"""
+	"""the icon names of the interface atlases the client loads (framework.atlasNames: a list that is missing stops the
+	run, naming its path and the --atlas option of generate.py)"""
 	def __init__(self):
-		folder = os.path.join(framework.LEVELDESIGN, "..", "pipeline", "install", "interfaces")
-		self.names = set()
-		for f in ( "texture_interfaces_dxtc.txt", "texture_interfaces_v3.txt" ):
-			path = os.path.join(folder, f)
-			if not os.path.isfile(path):
-				raise framework.Stop("the interface atlas list " + path + " is missing: the icons cannot be checked")
-			with open(path, "r", encoding="utf-8", errors="replace") as fh:
-				for line in fh:
-					if line.strip():
-						self.names.add(line.split()[0].lower())
+		self.names = framework.atlasNames()
 
 	def has(self, name):
 		return name.lower() in self.names

@@ -73,11 +73,24 @@ class Reason(str):
 NO_ITEM_TYPE = "the code has no item type for it (item_type.h has no %s), so no item can be crafted"
 PLACEHOLDER = "a <GEN> placeholder without a text: neither its name nor its number says which item it makes"
 
+class Missing(Exception):
+	"""a translation file that cannot be read, with its path and the remedy: the plans domain and generate_sitem.py stop
+	on it"""
+
+def readLines(path):
+	"""the lines of a translation file of the leveldesign that holds this script"""
+	if not os.path.isfile(path):
+		raise Missing(path + " not found: plan_items.py reads the translation of the leveldesign that holds it (" + TRANSLATION
+			+ "), which must have it")
+	try:
+		with io.open(path, "r", encoding="utf-8-sig") as f:
+			return f.read().split("\n")
+	except UnicodeDecodeError as e:
+		raise Missing(path + " is not UTF-8 text (" + str(e) + "): correct the file")
+
 def readWords(sheetType):
 	"""the (id, row) pairs of the work file of a sheet type, ids lower case, in file order"""
-	path = os.path.join(TRANSLATION, "work", sheetType + "_words_wk.txt")
-	with io.open(path, "r", encoding="utf-8-sig") as f:
-		lines = f.read().split("\n")
+	lines = readLines(os.path.join(TRANSLATION, "work", sheetType + "_words_wk.txt"))
 	header = lines[0].rstrip("\r").split("\t")
 	rows = []
 	for l in lines[1:]:
@@ -89,9 +102,7 @@ def readWords(sheetType):
 	return rows
 
 def englishNames(sheetType):
-	path = os.path.join(TRANSLATION, "translated", sheetType + "_words_en.txt")
-	with io.open(path, "r", encoding="utf-8-sig") as f:
-		lines = f.read().split("\n")
+	lines = readLines(os.path.join(TRANSLATION, "translated", sheetType + "_words_en.txt"))
 	header = lines[0].rstrip("\r").split("\t")
 	names = {}
 	for l in lines[1:]:

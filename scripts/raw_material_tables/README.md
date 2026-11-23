@@ -41,9 +41,10 @@ What the tool owns, and what stops it:
   content changes, each whole to a temporary file beside it (`<file>.mp_generator_tmp`, every write and the close
   checked); once all of them are written it renames each over its file, then removes the stale ones. A stop before the
   renames, a failed write included, leaves the leveldesign as it was (the temporary files go); a failed rename or
-  removal stops the run naming the file, with the files before it done: run again once the cause is fixed. A
-  temporary file that a stopped run left beside any file this run makes stops the run before anything is written,
-  naming it.
+  removal stops the run naming the file and the system's reason, with the files before it done: run again once the
+  cause is fixed. Temporary files a stopped run left anywhere below the folders of `raw_material_generation.cfg` stop
+  the next run before it reads anything, with their count and the first of them: that run may have replaced part of
+  its files, and removing the temporaries and running again completes it.
 - Its own folders (`raw_material/_parent`, `common`, `desert`, `forest`, `jungle`, `lacustre`, `prime_roots` and
   `deposit_system/mps`) hold only files of the names it gives (`m<family><code><ecosystem><class><variant>.sitem`
   with the folder's ecosystem letter; `_m<family>.sitem`, `_m<ecosystem>.sitem`, `_mc<model>.sitem`;

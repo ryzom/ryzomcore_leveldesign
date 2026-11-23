@@ -106,18 +106,9 @@ ATLASES = [ "texture_interfaces_dxtc.txt", "texture_interfaces_v3.txt" ] # in pi
 
 # ----------------------------------------------------------------------------------------------------------- checks
 def loadAtlas(gen):
-	folder = os.path.normpath(os.path.join(framework.LEVELDESIGN, "..", "pipeline", "install", "interfaces"))
-	names = set()
-	for a in ATLASES:
-		path = os.path.join(folder, a)
-		if not os.path.isfile(path):
-			gen.error("craft: the interface atlas list " + path + " does not exist, so the icons cannot be checked: build the interfaces or fix the path")
-			continue
-		with open(path, "r", encoding="utf-8", errors="replace") as f:
-			for l in f:
-				if l.strip():
-					names.add(l.split()[0].lower())
-	return names
+	"""the icon names of the interface atlases (framework.atlasNames: a list that is missing stops the run, naming its
+	path and the --atlas option of generate.py)"""
+	return framework.atlasNames()
 
 def checkText(gen, brick):
 	"""every $ token of the brick's texts names a property the brick has, with an argument it has"""

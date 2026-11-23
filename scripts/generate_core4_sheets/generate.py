@@ -6,12 +6,16 @@
 #   python generate.py --complete     also require a sheet or a stated reason for every translation id, and the sheets
 #                                     the code names
 #   python generate.py --coverage     list the translation ids that have no sheet yet, by family prefix
+#   python generate.py --atlas <dir>  read the interface atlas lists the icons are checked against from that folder, not
+#                                     from the pipeline beside the leveldesign (interface_atlas.py)
 
 import argparse, collections, importlib, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import framework
+import interface_atlas
+import plan_items
 
 DOMAINS = [ "fight", "magic", "forage", "craft", "plans", "powers", "misc" ] # plans after craft: it checks the roots that offer its families
 
@@ -20,7 +24,11 @@ parser.add_argument("--write", action="store_true")
 parser.add_argument("--complete", action="store_true")
 parser.add_argument("--coverage", action="store_true")
 parser.add_argument("--domain", action="append")
+parser.add_argument("--atlas", help="the folder of the interface atlas lists " + " and ".join(interface_atlas.LISTS)
+	+ " (default: " + interface_atlas.DEFAULT_FOLDER + ")")
 args = parser.parse_args()
+if args.atlas:
+	interface_atlas.setFolder(args.atlas)
 
 try:
 	gen = framework.Generator()
@@ -33,7 +41,7 @@ try:
 		module.generate(gen)
 	gen.domain = None
 	gen.check(args.complete)
-except framework.Stop as e:
+except (framework.Stop, plan_items.Missing) as e:
 	sys.stderr.write("error: " + str(e) + "\n")
 	sys.exit(1)
 

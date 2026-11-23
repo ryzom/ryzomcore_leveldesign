@@ -8,24 +8,28 @@
 - Run generate_sitem.py to generate sitems from the tsv, the craft items no palette has from sitem_craft_items.tsv, the
   nation leader items from sitem_leaders.tsv, and the plot items of the Ring from sitem_plot_items.tsv. It writes into
   the leveldesign that holds it, or into the leveldesign folder its argument names (a copy, for a test run), and reads
-  its tables beside itself, whatever the working directory:
-  generate_sitem.py [--remove-stale [--code <code folder>]] [leveldesign folder]
+  its tables beside itself (UTF-8), whatever the working directory:
+  generate_sitem.py [--atlas <folder>] [--remove-stale [--code <code folder>]] [leveldesign folder]
+- The icons are checked against the interface atlas lists of the pipeline beside the leveldesign
+  (<leveldesign>/../pipeline/install/interfaces), read by ../generate_core4_sheets/interface_atlas.py as the sheet
+  generator reads them; --atlas names another folder, and a missing list stops it naming that option
 - It makes and checks every row first and writes nothing on a failure, nor when a run that was stopped left a file
-  beside any sheet it makes (<sheet>.generate_sitem_tmp). Then it writes the sheets whose content changes (LF, as the
-  leveldesign stores them): each beside its sheet first, then, once all are written, each renamed over its sheet; a
-  failure or an interruption deletes what was written beside them, names what it could not delete, and says how many
-  sheets were replaced
+  anywhere under game_element/sitem (<sheet>.generate_sitem_tmp). Then it writes the sheets whose content changes (LF,
+  as the leveldesign stores them): each beside its sheet first, then, once all are written, each renamed over its
+  sheet; a failure or an interruption deletes what was written beside them, names what it could not delete, and says
+  how many sheets were replaced
 - Stale sheets are those under sitem that start with its header (<FORM Version="4.0" State="modified">), that no row
   makes and that no table of this folder names: the sheet of a row that is gone, or a copy someone made of a generated
   sheet (a copy, or "save as" in Georges, keeps the header). By default it lists them and removes nothing. With
   --remove-stale it removes those that nothing names and lists the ones it keeps with the file that names each. It
-  looks for them by their whole name, with or without .sitem, in the leveldesign and in the data folders of the code
-  checkout that name item sheets (ryzom/common/data_common and ryzom/client/data of <leveldesign>/../code, found from
-  the script's place; --code <code folder> names another, and a missing one stops it), and reads a stale sheet it keeps
-  in turn for the stale sheets it names. It does not read translation/ (every item has word rows), the build's sheet
-  lists (game_elem/sheets.txt, sheet_id.bin), the players' inventories or the saved scenarios: an item only those name
-  is removed. An original sheet a table names (the refugee colours) and a sheet saved without its header are never
-  stale
+  looks for them by their whole name, with or without .sitem, in the leveldesign and in the folders of the code
+  checkout that name item sheets (ryzom/common/data_common, ryzom/client/data and the C++ sources ryzom/server/src,
+  ryzom/client/src and ryzom/common/src of <leveldesign>/../code, found from the script's place; --code <code folder>
+  names another, and a missing one stops it), and reads a stale sheet it keeps in turn for the stale sheets it names.
+  It does not read translation/ (every item has word rows), the build's sheet lists (game_elem/sheets.txt,
+  sheet_id.bin), the shard's configuration and data outside these folders, the players' inventories, the saved
+  scenarios or names built at run time: an item only those name is removed. An original sheet a table names (the
+  refugee colours) and a sheet saved without its header are never stale
 
 # Craft items
 - generate_sitem.py writes the items only. The craft plans that make them are the plans domain of

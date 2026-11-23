@@ -558,17 +558,9 @@ def checkCraftTask(gen, path, compiled, phrase, sets, plan, faberLabels, materia
 			+ ", the mission " + ", ".join("%s %d" % kv for kv in sorted(sourceGiven.items())) + ": compile the mission again")
 
 def loadAtlas(gen):
-	folder = os.path.normpath(os.path.join(framework.LEVELDESIGN, "..", "pipeline", "install", "interfaces"))
-	names = set()
-	for a in ATLASES:
-		path = os.path.join(folder, a)
-		if not os.path.isfile(path):
-			gen.error("plans: the interface atlas list " + path + " does not exist, so the icons cannot be checked: build the interfaces or fix the path")
-			continue
-		for l in readText(path).split("\n"):
-			if l.strip():
-				names.add(l.split()[0].lower())
-	return names
+	"""the icon names of the interface atlases (framework.atlasNames: a list that is missing stops the run, naming its
+	path and the --atlas option of generate.py)"""
+	return framework.atlasNames()
 
 def loadSkillTree(gen):
 	"""{skill: (MaxSkillValue, parent skill or None)} of game_element/xp_table/skills.skill_tree, the caps the plan

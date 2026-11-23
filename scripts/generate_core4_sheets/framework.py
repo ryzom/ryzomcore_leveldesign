@@ -62,6 +62,24 @@ GRAMMAR_GROUPS = [ ("Mandatory", 12), ("Optional", 32), ("Parameter", 4), ("Cred
 class Stop(Exception):
 	pass
 
+def readText(path):
+	"""a whole text file of the leveldesign, UTF-8 as it is stored: one that is not stops the run, naming it"""
+	try:
+		with open(path, "r", encoding="utf-8-sig") as f:
+			return f.read()
+	except UnicodeDecodeError as e:
+		raise Stop(path + " is not UTF-8 text (" + str(e) + "): correct the file")
+
+import interface_atlas
+
+def atlasNames():
+	"""the icon names of the interface atlases (interface_atlas.py: the pipeline beside the leveldesign, or the folder
+	generate.py's --atlas names); a list that is missing stops the run with its path and that option"""
+	try:
+		return interface_atlas.names()
+	except interface_atlas.Missing as e:
+		raise Stop(str(e))
+
 # ---------------------------------------------------------------------------------------------------------------- code
 FAMILIES = set(CT.FAMILIES)
 SKILLS = set(CT.SKILLS)
@@ -302,24 +320,21 @@ def referencedSheets():
 	for root, dirs, files in os.walk(createperso):
 		for f in files:
 			if f.endswith(".starting_role"):
-				with open(os.path.join(root, f), "r", encoding="utf-8", errors="replace") as fh:
-					text = fh.read().split("<LOG>")[0] # the edit history names long gone phrases
+				text = readText(os.path.join(root, f)).split("<LOG>")[0] # the edit history names long gone phrases
 				for n in re.findall(r"Name=\"Sabrina Phrase\" Value=\"([^\"]+)\.sphrase\"", text, re.I):
 					found.append(("sphrase", n.lower(), "starting role " + f))
 	for root, dirs, files in os.walk(os.path.join(LEVELDESIGN, "primitives")):
 		for f in files:
 			if f.endswith(".primitive"):
-				with open(os.path.join(root, f), "r", encoding="utf-8", errors="replace") as fh:
-					for m in re.finditer(r"learn_action\s*:\s*([^:<\n]+)", fh.read()):
-						for n in m.group(1).split(";"):
-							if n.strip():
-								found.append(("sphrase", n.strip().lower(), "mission learn_action in " + f))
+				for m in re.finditer(r"learn_action\s*:\s*([^:<\n]+)", readText(os.path.join(root, f))):
+					for n in m.group(1).split(";"):
+						if n.strip():
+							found.append(("sphrase", n.strip().lower(), "mission learn_action in " + f))
 	for root, dirs, files in os.walk(os.path.join(GAME_ELEMENT, "sitem")):
 		for f in files:
 			if f.endswith(".sitem"):
-				with open(os.path.join(root, f), "r", encoding="utf-8", errors="replace") as fh:
-					for n in re.findall(r"Name=\"CraftPlan\" Value=\"([^\"]+)\.sbrick\"", fh.read(), re.I):
-						found.append(("sbrick", n.lower(), "item " + f))
+				for n in re.findall(r"Name=\"CraftPlan\" Value=\"([^\"]+)\.sbrick\"", readText(os.path.join(root, f)), re.I):
+					found.append(("sbrick", n.lower(), "item " + f))
 	return found
 
 # ---------------------------------------------------------------------------------------------------------- generator
@@ -709,9 +724,17 @@ class Generator:
 				raise
 			raise Stop("removing " + removed[done] + " failed (" + str(e) + "), " + state + " (close what holds the file first)")
 		if not dryRun:
+			# the folders left empty go; one that cannot go is named, everything else being done
+			left = []
 			for folder in self.owned:
 				base = os.path.join(GAME_ELEMENT, *folder.split("/"))
 				for root, dirs, files in sorted(os.walk(base, topdown=False), key=lambda w: -len(w[0])):
-					if not os.listdir(root) and root != base:
-						os.rmdir(root)
+					try:
+						if not os.listdir(root) and root != base:
+							os.rmdir(root)
+					except OSError as e:
+						left.append(root + " (" + str(e) + ")")
+			if left:
+				sys.stderr.write("warning: every sheet is written and every stale sheet removed, but these empty folders could not be removed: "
+					+ ", ".join(left) + "\n")
 		return counts, removed

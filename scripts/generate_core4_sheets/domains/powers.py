@@ -144,18 +144,9 @@ def learn(skills, level):
 	return { "LearnRequiresOneOfSkills": common.learnRequires(skills, level), "SPCost": B.spCost(level) }
 
 def loadAtlas(gen):
-	folder = os.path.normpath(os.path.join(framework.LEVELDESIGN, "..", "pipeline", "install", "interfaces"))
-	names = set()
-	for a in ATLASES:
-		path = os.path.join(folder, a)
-		if not os.path.isfile(path):
-			gen.error("powers: the interface atlas list " + path + " does not exist, so the icons cannot be checked: build the interfaces or fix the path")
-			continue
-		with open(path, "r", encoding="utf-8", errors="replace") as f:
-			for l in f:
-				if l.strip():
-					names.add(l.split()[0].lower())
-	return names
+	"""the icon names of the interface atlases (framework.atlasNames: a list that is missing stops the run, naming its
+	path and the --atlas option of generate.py)"""
+	return framework.atlasNames()
 
 def textNumber(gen, sheetId, pattern, what):
 	"""a number the English text of a brick states, which is the spec of the value"""

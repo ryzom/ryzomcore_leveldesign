@@ -14,7 +14,13 @@ python generate.py --domain magic  # one domain (its references to other domains
 python generate.py --coverage      # the translation ids with no sheet yet, and the reasons of the excluded ones
 python generate.py --complete      # also require every translation id, the sheets the code names, and what the
                                    # starting roles, missions and items name
+python generate.py --atlas <dir>   # the interface atlas lists from that folder
 ```
+
+The icons are checked against the interface atlas lists (`texture_interfaces_dxtc.txt`, `texture_interfaces_v3.txt`)
+of the pipeline beside the leveldesign, `<leveldesign>/../pipeline/install/interfaces`, found from the script's place;
+`--atlas` names another folder, and a missing list stops the run with its path and that option (`interface_atlas.py`,
+which `../generate_r2_sheets/generate_sitem.py` uses too).
 
 Run `../generate_r2_sheets/generate_sitem.py` first: it writes the items, among them the items the craft plans make,
 and the plans domain checks that every plan's item exists. Then build the data (the leveldesign processes of
