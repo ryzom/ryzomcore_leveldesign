@@ -20,8 +20,13 @@ TRANSLATION = os.path.join(LEVELDESIGN, "translation")
 # the folders the sheet ids are made from (build_gamedata, process sheet_id): a sheet name must be unique across them
 SHEET_ID_FOLDERS = [ os.path.join(LEVELDESIGN, "game_elem"), GAME_ELEMENT, os.path.join(LEVELDESIGN, "world") ]
 # what a sheet name (a parent starts with _) and a folder under game_element may hold: they are joined into paths
-SHEET_NAME = re.compile(r"^_?[a-z0-9][a-z0-9_]*$")
-FOLDER_NAME = re.compile(r"^[a-z0-9_]+$")
+SHEET_NAME = re.compile(r"_?[a-z0-9][a-z0-9_]*")
+FOLDER_NAME = re.compile(r"[a-z0-9_]+")
+# names Windows keeps for devices, whatever their extension (both patterns are matched whole, with fullmatch)
+RESERVED_NAMES = set(["con", "prn", "aux", "nul"] + [ "com%d" % i for i in range(1, 10) ] + [ "lpt%d" % i for i in range(1, 10) ])
+
+def isFileName(pattern, name):
+	return pattern.fullmatch(name) is not None and name not in RESERVED_NAMES
 # a sheet is written beside its target under this suffix, then renamed over it
 TEMPORARY_SUFFIX = ".generating"
 
@@ -528,13 +533,13 @@ class Generator:
 		self.errors += self.sbrickWords.problems + self.sphraseWords.problems
 		# the names come from the translation and make paths: they stay file names inside their folder
 		for s in list(self.parents.values()) + list(self.bricks.values()) + list(self.phrases.values()):
-			if not SHEET_NAME.match(s.name):
-				self.error("the sheet name '" + s.name + "' (" + s.source + ") has other characters than a-z, 0-9 and _: it cannot be a file name in its folder")
-			if not all(FOLDER_NAME.match(part) for part in s.folder.split("/")):
-				self.error("the folder '" + s.folder + "' of " + s.name + " (" + s.source + ") is not a path of names of a-z, 0-9 and _")
+			if not isFileName(SHEET_NAME, s.name):
+				self.error("the sheet name '" + s.name + "' (" + s.source + ") has other characters than a-z, 0-9 and _, or is a device name of Windows: it cannot be a file name in its folder")
+			if not all(isFileName(FOLDER_NAME, part) for part in s.folder.split("/")):
+				self.error("the folder '" + s.folder + "' of " + s.name + " (" + s.source + ") is not a path of names of a-z, 0-9 and _ (and no device name of Windows)")
 		for folder in self.owned:
-			if not all(FOLDER_NAME.match(part) for part in folder.split("/")):
-				self.error("the owned folder '" + folder + "' is not a path of names of a-z, 0-9 and _")
+			if not all(isFileName(FOLDER_NAME, part) for part in folder.split("/")):
+				self.error("the owned folder '" + folder + "' is not a path of names of a-z, 0-9 and _ (and no device name of Windows)")
 		for b in self.bricks.values():
 			if b.name.startswith("_"):
 				self.error(b.name + " (" + b.source + "): a brick name cannot start with _, such a file gets no sheet id")
@@ -634,9 +639,14 @@ class Generator:
 				for root, dirs, files in os.walk(os.path.join(GAME_ELEMENT, *folder.split("/"))):
 					for f in files:
 						if f.endswith(TEMPORARY_SUFFIX):
-							os.remove(os.path.join(root, f))
+							try:
+								os.remove(os.path.join(root, f))
+							except OSError as e:
+								raise Stop("removing " + os.path.join(root, f) + ", the leftover of a write that stopped, failed (" + str(e) + "): nothing was changed")
 							counts["leftovers of a stopped write removed"] += 1
-			# every file is written beside its target first: a write that fails leaves the sheets as they were
+			# every file is written beside its target first, and nothing changes before the first rename: a write that
+			# fails until then leaves the sheets as they were; a stop after it names what was done, and running the
+			# write again completes it
 			temporaries = []
 			current = None
 			try:
@@ -662,10 +672,12 @@ class Generator:
 				for path, data in changes[replaced:]:
 					if os.path.exists(path + TEMPORARY_SUFFIX):
 						os.remove(path + TEMPORARY_SUFFIX)
+				state = ("with " + str(replaced) + " of " + str(len(changes)) + " sheets replaced before it and no stale sheet removed: "
+					+ "run the write again to complete it")
 				if not isinstance(e, OSError):
+					sys.stderr.write("error: the write was stopped while replacing " + changes[replaced][0] + ", " + state + "\n")
 					raise
-				raise Stop("replacing " + changes[replaced][0] + " failed (" + str(e) + "), with " + str(replaced) + " of " + str(len(changes))
-					+ " sheets replaced before it and nothing removed: close what holds the file and run the write again")
+				raise Stop("replacing " + changes[replaced][0] + " failed (" + str(e) + "), " + state + " (close what holds the file first)")
 		removed = []
 		for folder in self.owned:
 			base = os.path.join(GAME_ELEMENT, *folder.split("/"))
@@ -674,10 +686,19 @@ class Generator:
 					path = os.path.join(root, f)
 					if (f.endswith(".sbrick") or f.endswith(".sphrase")) and os.path.normcase(path) not in wanted:
 						removed.append(path)
-		for path in removed:
-			counts["removed"] += 1
-			if not dryRun:
-				os.remove(path)
+		done = 0
+		try:
+			for path in removed:
+				counts["removed"] += 1
+				if not dryRun:
+					os.remove(path)
+					done += 1
+		except BaseException as e:
+			state = "with every sheet written and " + str(done) + " of " + str(len(removed)) + " stale sheets removed before it: run the write again to complete it"
+			if not isinstance(e, OSError):
+				sys.stderr.write("error: the write was stopped while removing " + removed[done] + ", " + state + "\n")
+				raise
+			raise Stop("removing " + removed[done] + " failed (" + str(e) + "), " + state + " (close what holds the file first)")
 		if not dryRun:
 			for folder in self.owned:
 				base = os.path.join(GAME_ELEMENT, *folder.split("/"))
