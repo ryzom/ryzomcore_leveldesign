@@ -1077,3 +1077,8 @@ WHO_CHANNEL_INTRO(literal name)
 }
 
 
+EGS_ACTION_BROKEN ()
+{
+	[&CHK&This action is broken on this shard and cannot be used.]
+}
+
