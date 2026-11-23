@@ -56,7 +56,11 @@ if gen.errors:
 		sys.stderr.write("error: " + e + "\n")
 	sys.stderr.write(str(len(gen.errors)) + " errors, nothing was written\n")
 	sys.exit(1)
-counts, removed = gen.write(not args.write)
+try:
+	counts, removed = gen.write(not args.write)
+except framework.Stop as e:
+	sys.stderr.write("error: " + str(e) + "\n")
+	sys.exit(1)
 print("%s: %d bricks, %d parents, %d phrases from %s; %s" % ("written" if args.write else "dry run", len(gen.bricks), len(gen.parents),
 	len(gen.phrases), ", ".join(domains), ", ".join("%d %s" % (n, k) for k, n in sorted(counts.items()))))
 if removed and not args.write:

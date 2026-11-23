@@ -101,12 +101,31 @@ if not skills:
 # ---- brick properties: the $* comments of addParam give each keyword its structure and arguments, and the parser
 # generated from them (egs_static_brick.cpp.h) the argument counts it accepts
 brickSource = read(os.path.join(egs, "egs_sheets", "egs_static_brick.cpp"))
-body = brickSource[brickSource.index("void addParam("):brickSource.index("} // addParam //")]
+addParamStart = re.search(r"\b(?:void|bool)\s+addParam\(", brickSource)
+if not addParamStart or "} // addParam //" not in brickSource:
+	sys.exit("addParam and its end mark '} // addParam //' are not in egs_static_brick.cpp")
+body = brickSource[addParamStart.start():brickSource.index("} // addParam //")]
 generated = read(os.path.join(egs, "egs_sheets", "egs_static_brick.cpp.h"))
+
+def refusesCount(condition, n):
+	"""whether a parse check of the generated parser refuses n arguments: comparisons of args.size() with a number,
+	joined by && or || (the text comes from a C++ file and is read, never evaluated)"""
+	def compare(term):
+		m = re.match(r"^\s*args\.size\(\)\s*(==|!=|<=|>=|<|>)\s*(\d+)\s*$", term)
+		if not m:
+			sys.exit("The parse check '" + condition + "' in egs_static_brick.cpp.h is not a comparison of args.size() with a number")
+		value = int(m.group(2))
+		return { "==": n == value, "!=": n != value, "<=": n <= value, ">=": n >= value, "<": n < value, ">": n > value }[m.group(1)]
+	if "&&" in condition and "||" in condition:
+		sys.exit("The parse check '" + condition + "' in egs_static_brick.cpp.h mixes && and ||")
+	if "||" in condition:
+		return any(compare(t) for t in condition.split("||"))
+	return all(compare(t) for t in condition.split("&&"))
 structChecks = {}
 structArgs = {} # the arguments as the parser reads them: index -> (field type, field name)
 for sm in re.finditer(r"struct\s+(CSBrickParam\w+)\s*:\s*public\s+TBrickParam::IId\s*\{(.*?)\n\};", generated, re.S):
-	structChecks[sm.group(1)] = re.findall(r"if\s*\(([^)]*args\.size\(\)[^)]*)\)\s*\n?\s*return\s+\*this", sm.group(2))
+	# a check can compare args.size() twice (args.size()!=4 && args.size()!=5): the condition runs to the ) before return
+	structChecks[sm.group(1)] = re.findall(r"if\s*\((.*?args\.size\(\).*?)\)\s*\n?\s*return\s+\*this", sm.group(2))
 	fields = dict((n, t) for t, n in re.findall(r"^\s*((?:unsigned\s+|signed\s+)?[\w:<>]+)\s+(\w+)\s*;", sm.group(2), re.M))
 	reads = {}
 	for am in re.finditer(r"fromString\(\s*args\[(\d+)\]\s*,\s*(\w+)\s*\)|(\w+)\s*=\s*\(\w+\)\s*ato[fil]+\(\s*args\[(\d+)\]|(\w+)\s*=\s*args\[(\d+)\]", sm.group(2)):
@@ -140,7 +159,7 @@ for case in re.split(r"\n\s*case\s+TBrickParam::", body)[1:]:
 			kind = "f" if ("float" in cType or "double" in cType) else ("s" if "string" in cType else "i")
 			args.append((kind, cType, name, described.get(name, "")))
 	# the parse is refused when one of these holds; keep them as the accepted argument counts
-	accepted = [ n for n in range(0, 12) if not any(eval(c.replace("args.size()", str(n)).replace("&&", " and ").replace("||", " or ")) for c in checks) ]
+	accepted = [ n for n in range(0, 12) if not any(refusesCount(c, n) for c in checks) ]
 	properties[keyword.lower()] = { "keyword": keyword, "struct": sm.group(1), "args": args, "counts": accepted }
 
 # ---- the magic action types of the files the service builds (CMakeLists removes some of the globbed ones)

@@ -19,6 +19,11 @@ GAME_ELEMENT = os.path.join(LEVELDESIGN, "game_element")
 TRANSLATION = os.path.join(LEVELDESIGN, "translation")
 # the folders the sheet ids are made from (build_gamedata, process sheet_id): a sheet name must be unique across them
 SHEET_ID_FOLDERS = [ os.path.join(LEVELDESIGN, "game_elem"), GAME_ELEMENT, os.path.join(LEVELDESIGN, "world") ]
+# what a sheet name (a parent starts with _) and a folder under game_element may hold: they are joined into paths
+SHEET_NAME = re.compile(r"^_?[a-z0-9][a-z0-9_]*$")
+FOLDER_NAME = re.compile(r"^[a-z0-9_]+$")
+# a sheet is written beside its target under this suffix, then renamed over it
+TEMPORARY_SUFFIX = ".generating"
 
 # keywords only the client reads (sbrick_manager.cpp compiles every KEY: it finds), which the server skips
 CLIENT_ONLY_KEYWORDS = { "fplan", "info", "bhfeca_tag" }
@@ -521,6 +526,15 @@ class Generator:
 
 	def check(self, complete):
 		self.errors += self.sbrickWords.problems + self.sphraseWords.problems
+		# the names come from the translation and make paths: they stay file names inside their folder
+		for s in list(self.parents.values()) + list(self.bricks.values()) + list(self.phrases.values()):
+			if not SHEET_NAME.match(s.name):
+				self.error("the sheet name '" + s.name + "' (" + s.source + ") has other characters than a-z, 0-9 and _: it cannot be a file name in its folder")
+			if not all(FOLDER_NAME.match(part) for part in s.folder.split("/")):
+				self.error("the folder '" + s.folder + "' of " + s.name + " (" + s.source + ") is not a path of names of a-z, 0-9 and _")
+		for folder in self.owned:
+			if not all(FOLDER_NAME.match(part) for part in folder.split("/")):
+				self.error("the owned folder '" + folder + "' is not a path of names of a-z, 0-9 and _")
 		for b in self.bricks.values():
 			if b.name.startswith("_"):
 				self.error(b.name + " (" + b.source + "): a brick name cannot start with _, such a file gets no sheet id")
@@ -570,6 +584,11 @@ class Generator:
 			self.error("the code names " + fl + ", which a write would remove and this run does not make")
 		# bricks no phrase teaches: nothing in the game reaches them (the interface families are shown, not learnt)
 		taught = set(b for p in self.phrases.values() for b in p.bricks)
+		# the known bricks of a family are one 64-bit field of the character's database
+		for b in self.bricks.values():
+			index = b.effective()[0].get("IndexInFamily")
+			if b.name in taught and index is not None and int(index) > 64:
+				self.error(b.name + " (" + b.source + ") is taught by a phrase and has index " + str(index) + " in its family: a family has 64 known bricks at most")
 		untaught = collections.Counter(b.family() for b in self.bricks.values() if b.name not in taught
 			and b.family() in FAMILIES and b.family() not in ("BIF", "BIG") and not familyIs(b.family(), "root"))
 		if untaught:
@@ -598,6 +617,7 @@ class Generator:
 			wanted[os.path.normcase(s.path())] = (s.path(), brickData(s))
 		for p in self.phrases.values():
 			wanted[os.path.normcase(p.path())] = (p.path(), phraseData(p))
+		changes = []
 		for key, (path, data) in sorted(wanted.items()):
 			if not os.path.isfile(path):
 				state = "new"
@@ -605,10 +625,47 @@ class Generator:
 				with open(path, "rb") as f:
 					state = "unchanged" if f.read() == data else "changed"
 			counts[state] += 1
-			if state != "unchanged" and not dryRun:
-				os.makedirs(os.path.dirname(path), exist_ok=True)
-				with open(path, "wb") as f:
-					f.write(data)
+			if state != "unchanged":
+				changes.append((path, data))
+		if not dryRun:
+			# a file of this suffix in an owned folder is the leftover of a write that stopped: process sheet_id would
+			# give it an id
+			for folder in self.owned:
+				for root, dirs, files in os.walk(os.path.join(GAME_ELEMENT, *folder.split("/"))):
+					for f in files:
+						if f.endswith(TEMPORARY_SUFFIX):
+							os.remove(os.path.join(root, f))
+							counts["leftovers of a stopped write removed"] += 1
+			# every file is written beside its target first: a write that fails leaves the sheets as they were
+			temporaries = []
+			current = None
+			try:
+				for path, data in changes:
+					current = path + TEMPORARY_SUFFIX
+					os.makedirs(os.path.dirname(path), exist_ok=True)
+					temporaries.append(current)
+					with open(current, "wb") as f:
+						f.write(data)
+			except BaseException as e:
+				for temporary in temporaries:
+					if os.path.exists(temporary):
+						os.remove(temporary)
+				if not isinstance(e, OSError):
+					raise
+				raise Stop("writing " + current + " failed (" + str(e) + "): no sheet was changed or removed, the files written so far beside them were deleted")
+			replaced = 0
+			try:
+				for path, data in changes:
+					os.replace(path + TEMPORARY_SUFFIX, path)
+					replaced += 1
+			except BaseException as e:
+				for path, data in changes[replaced:]:
+					if os.path.exists(path + TEMPORARY_SUFFIX):
+						os.remove(path + TEMPORARY_SUFFIX)
+				if not isinstance(e, OSError):
+					raise
+				raise Stop("replacing " + changes[replaced][0] + " failed (" + str(e) + "), with " + str(replaced) + " of " + str(len(changes))
+					+ " sheets replaced before it and nothing removed: close what holds the file and run the write again")
 		removed = []
 		for folder in self.owned:
 			base = os.path.join(GAME_ELEMENT, *folder.split("/"))
