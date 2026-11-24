@@ -1082,3 +1082,18 @@ EGS_ACTION_BROKEN ()
 	[&CHK&This action is broken on this shard and cannot be used.]
 }
 
+EGS_ACTION_UNKNOWN_STANZA ()
+{
+	[&CHK&You do not know all the stanzas of this action, it cannot be used.]
+}
+
+EGS_ACTION_INVALID ()
+{
+	[&CHK&The stanzas of this action do not make a valid action, it cannot be used. Edit or delete it.]
+}
+
+EGS_ENCHANTMENT_INVALID ()
+{
+	[&CHK&The enchantment of this item is not a valid action, it cannot be used.]
+}
+

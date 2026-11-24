@@ -74849,3 +74849,24 @@ EGS_ACTION_BROKEN ()
 			[&CHK&This action is broken on this shard and cannot be used.]
 
 }
+
+// HASH_VALUE 4AC574E49D11BD08
+EGS_ACTION_UNKNOWN_STANZA ()
+{
+			[&CHK&You do not know all the stanzas of this action, it cannot be used.]
+
+}
+
+// HASH_VALUE 5B81C89EDE8AC8B7
+EGS_ACTION_INVALID ()
+{
+			[&CHK&The stanzas of this action do not make a valid action, it cannot be used. Edit or delete it.]
+
+}
+
+// HASH_VALUE D9DF69C88FC86480
+EGS_ENCHANTMENT_INVALID ()
+{
+			[&CHK&The enchantment of this item is not a valid action, it cannot be used.]
+
+}

@@ -74824,3 +74824,24 @@ EGS_ACTION_BROKEN ()
 			[&CHK&Esta acción está defectuosa en este servidor y no se puede usar.]
 
 }
+
+// HASH_VALUE 4AC574E49D11BD08
+EGS_ACTION_UNKNOWN_STANZA ()
+{
+			[&CHK&No conoces todas las estrofas de esta acción, no se puede usar.]
+
+}
+
+// HASH_VALUE 5B81C89EDE8AC8B7
+EGS_ACTION_INVALID ()
+{
+			[&CHK&Las estrofas de esta acción no forman una acción válida, no se puede usar. Edítala o elimínala.]
+
+}
+
+// HASH_VALUE D9DF69C88FC86480
+EGS_ENCHANTMENT_INVALID ()
+{
+			[&CHK&El encantamiento de este objeto no es una acción válida, no se puede usar.]
+
+}

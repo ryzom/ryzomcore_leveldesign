@@ -75366,3 +75366,24 @@ EGS_ACTION_BROKEN ()
 			[&CHK&Diese Aktion ist auf diesem Server fehlerhaft und kann nicht verwendet werden.]
 
 }
+
+// HASH_VALUE 4AC574E49D11BD08
+EGS_ACTION_UNKNOWN_STANZA ()
+{
+			[&CHK&Du kennst nicht alle Formeln dieser Aktion, sie kann nicht verwendet werden.]
+
+}
+
+// HASH_VALUE 5B81C89EDE8AC8B7
+EGS_ACTION_INVALID ()
+{
+			[&CHK&Die Formeln dieser Aktion ergeben keine gültige Aktion, sie kann nicht verwendet werden. Bearbeite oder lösche sie.]
+
+}
+
+// HASH_VALUE D9DF69C88FC86480
+EGS_ENCHANTMENT_INVALID ()
+{
+			[&CHK&Die Verzauberung dieses Gegenstands ist keine gültige Aktion, sie kann nicht verwendet werden.]
+
+}

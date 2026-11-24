@@ -76742,3 +76742,24 @@ EGS_ACTION_BROKEN ()
 			[&CHK&Cette action est défectueuse sur ce serveur et ne peut pas être utilisée.]
 
 }
+
+// HASH_VALUE 4AC574E49D11BD08
+EGS_ACTION_UNKNOWN_STANZA ()
+{
+			[&CHK&Vous ne connaissez pas toutes les formules de cette action, elle ne peut pas être utilisée.]
+
+}
+
+// HASH_VALUE 5B81C89EDE8AC8B7
+EGS_ACTION_INVALID ()
+{
+			[&CHK&Les formules de cette action ne forment pas une action valide, elle ne peut pas être utilisée. Modifiez-la ou supprimez-la.]
+
+}
+
+// HASH_VALUE D9DF69C88FC86480
+EGS_ENCHANTMENT_INVALID ()
+{
+			[&CHK&L'enchantement de cet objet n'est pas une action valide, il ne peut pas être utilisé.]
+
+}
