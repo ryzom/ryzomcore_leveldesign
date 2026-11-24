@@ -12,7 +12,7 @@
 #   pay its cost exactly, and whose cost is not above the skill, stands at 0 too; every point of cost above the skill
 #   takes a level off, and credit beyond the largest brick adds one. So the Sabrina cost of a brick is the skill at which
 #   its phrase is as sure as the default attack: its level, times what its effect is worth (the weights below).
-# - The credits only balance the cost at memorize (checkPhraseValidity); the stamina and HP they take are checked at
+# - The credits only balance the cost at memorize (checkPhraseBalance); the stamina and HP they take are checked at
 #   execution (checkPhraseCost). Those amounts are what an action really costs the player.
 #
 # The player meets the Ring creatures of his level (balancing_config.py, generate_creature.py): a level L creature has

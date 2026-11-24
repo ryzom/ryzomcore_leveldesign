@@ -45,7 +45,7 @@ build_gamedata, which make the sheet ids and pack the sheets).
 Every sheet has its translation row (and every language has it); families, property keywords, argument counts and
 types, skills, action natures, civilisations and grammar families are those of the code; family indices are 1 to 64
 and unique (the interface families BIF and BIG excepted); every castable phrase passes the server's grammar and cost
-check (`CPhraseManager::checkPhraseValidity`, replicated with its 16-bit sums) with its root first; no generated name
+check (`CPhraseManager::checkPhraseGrammar` and `checkPhraseBalance`, replicated) with its root first; no generated name
 exists elsewhere in the folders the sheet ids are made from. The domains add their own: icons against the interface
 atlases, the `$` tokens of the texts against the properties, levels and credits against what the texts state.
 

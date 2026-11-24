@@ -11,7 +11,7 @@ import balancing_config as creatures
 
 MAX_LEVEL = 250
 
-# ---- the Sabrina point scale (CPhraseManager::checkPhraseValidity: cost may not exceed credit)
+# ---- the Sabrina point scale (CPhraseManager::checkPhraseBalance: cost may not exceed credit)
 # The translation states the credits ("gives 6 credits", "a magic credit of 250"): a credit brick gives the points its
 # text says. A brick that costs gives points on the same scale, its level: a level L action needs credits worth L, so one
 # credit brick of the action's level pays for it, and options and stronger parameters ask for more credits.

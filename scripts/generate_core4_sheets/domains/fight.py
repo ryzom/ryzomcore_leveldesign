@@ -6,7 +6,7 @@
 #
 # What the code does with them (survey_server.md 1, phrase_manager/combat_phrase.cpp): the first brick picks the combat
 # phrase class; addBrick reads every brick the same way, by its properties and the sign of its Sabrina value, and never
-# looks at a family; the families only make the grammar that checkPhraseValidity applies at memorize. The skill trained
+# looks at a family; the families only make the grammar that checkPhraseGrammar applies at memorize. The skill trained
 # is the weapon's, so the bricks' Skill trains nothing, but the client reads it: a combat phrase is usable with a weapon
 # only when the skills of all its bricks lie on that weapon's branch (CSPhraseManager::skillCompatibleWithCombatPhrase),
 # the composer offers only options whose skills stay on one branch and drops options without a skill

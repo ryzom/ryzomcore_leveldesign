@@ -9,7 +9,7 @@
 #   with less focus than that cannot start.
 # - CR_HP, CR_SAP, CR_STA and CR_FOCUS are summed and added to the item's score buffs, scaled by the success factor
 #   and by min(material quality, recommended) / the action's nominal level, so materials below it give less boost.
-# - The Sabrina cost of the options must not exceed the credit (checkPhraseValidity at memorize).
+# - The Sabrina cost of the options must not exceed the credit (checkPhraseBalance at memorize).
 
 from balancing import common
 

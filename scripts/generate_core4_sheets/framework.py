@@ -111,10 +111,6 @@ def tableHas(key, value, caseSensitive=False):
 	values = table(key)
 	return value in values if caseSensitive else value.lower() in [ v.lower() for v in values ]
 
-def wrap16(v):
-	v = int(v) & 0xFFFF
-	return v - 0x10000 if v >= 0x8000 else v
-
 # -------------------------------------------------------------------------------------------------------- translation
 class WordsRow:
 	def __init__(self, sheetId, name, description, description2):
@@ -496,16 +492,72 @@ class Generator:
 				self.error(where + ": " + k + " " + str(basics[k]) + " is not a whole number")
 
 	def phraseValidity(self, phrase):
-		"""CPhraseManager::checkPhraseValidity: None when valid, else why not"""
-		mandatory, allowed, found = set(), set(), set()
+		"""CPhraseManager::checkPhraseGrammar, then checkPhraseBalance: None when valid, else why not"""
+		names = phrase.bricks
+		effective = [ self.bricks.get(name).effective() for name in names ]
+		families = [ e[0]["FamilyId"] for e in effective ]
+		grammars = [ e[3] for e in effective ]
+
+		# the grammar: the root brick, one brick for each of its mandatory families in their order, then options and
+		# credits of the families the root lists; each brick is followed at once by one brick for each of its parameter
+		# families, and each of those by its own
+		if not familyIs(families[0], "root"):
+			return "its first brick " + names[0] + " of family " + families[0] + " is no root brick"
+		pos = [ 1 ]
+		def parameters(owner):
+			due = list(reversed(grammars[owner]["Parameter"]))
+			while due:
+				family = due.pop()
+				if pos[0] >= len(names):
+					return "it ends where a parameter of family " + family + " is due"
+				if families[pos[0]] != family:
+					return names[pos[0]] + " of family " + families[pos[0]] + " stands where a parameter of family " + family + " is due"
+				due.extend(reversed(grammars[pos[0]]["Parameter"]))
+				pos[0] += 1
+			return None
+		why = parameters(0)
+		if why:
+			return why
+		root = grammars[0]
+		mainBricks = set()
+		for family in root["Mandatory"]:
+			if pos[0] >= len(names):
+				return "it ends where the mandatory brick of family " + family + " is due"
+			at = pos[0]
+			if families[at] != family:
+				return names[at] + " of family " + families[at] + " stands where the mandatory brick of family " + family + " is due"
+			mainBricks.add(names[at])
+			pos[0] += 1
+			why = parameters(at)
+			if why:
+				return why
+		# a credit family comes once; an option family comes once too, except in a combat or power phrase, where no
+		# brick comes twice
+		optionFamilyOnce = brickType(families[0]) not in ("COMBAT", "SPECIAL_POWER")
+		seenFamilies = set()
+		while pos[0] < len(names):
+			at = pos[0]
+			family = families[at]
+			credit = family in root["Credit"]
+			if not credit and family not in root["Optional"]:
+				return names[at] + " of family " + family + " is no option or credit of the root brick " + names[0]
+			newFamily = family not in seenFamilies
+			newBrick = names[at] not in mainBricks
+			seenFamilies.add(family)
+			mainBricks.add(names[at])
+			if (not newFamily) if (credit or optionFamilyOnce) else (not newBrick):
+				return names[at] + " of family " + family + " comes after " + ("another brick of its family" if newBrick else "the same brick")
+			pos[0] += 1
+			why = parameters(at)
+			if why:
+				return why
+
+		# the balance: no brick excludes another one, and the credit covers the cost
 		forbiddenDef, forbiddenExclude = set(), set()
 		cost = credit = 0
 		relCost = relCredit = 1.0
-		for name in phrase.bricks:
-			b = self.bricks.get(name)
-			basics, properties, client, grammar, faber = b.effective()
-			mandatory.update(grammar["Mandatory"] + grammar["Parameter"])
-			allowed.update(grammar["Optional"] + grammar["Credit"])
+		for name, e in zip(names, effective):
+			basics = e[0]
 			defWords = [ w for w in str(basics.get("ForbiddenDef", "")).split(":") if w ]
 			excWords = [ w for w in str(basics.get("ForbiddenExclude", "")).split(":") if w ]
 			for w in defWords:
@@ -516,29 +568,20 @@ class Generator:
 					return name + " excludes the flag " + w + " of an earlier brick"
 			forbiddenDef.update(defWords)
 			forbiddenExclude.update(excWords)
-			family = basics["FamilyId"]
-			if not familyIs(family, "root"):
-				found.add(family)
 			sabrina = int(basics.get("SabrinaCost", 0))
 			if sabrina > 0:
-				cost = wrap16(cost + sabrina)
+				cost += sabrina
 			else:
-				credit = wrap16(credit - sabrina)
+				credit -= sabrina
 			rel = float(basics.get("SabrinaRelativeValue", 0.0))
 			if rel > 0:
 				relCost += rel
 			else:
 				relCredit -= rel
-		totalCost = wrap16(math.trunc(cost * relCost))
-		totalCredit = wrap16(math.trunc(credit * relCredit))
+		totalCost = math.trunc(cost * relCost)
+		totalCredit = math.trunc(credit * relCredit)
 		if totalCost > totalCredit:
 			return "its cost " + str(totalCost) + " is above its credit " + str(totalCredit)
-		missing = [ f for f in mandatory if f not in found ]
-		if missing:
-			return "the mandatory families " + ", ".join(sorted(missing)) + " are missing"
-		extra = [ f for f in found if f not in mandatory and f not in allowed ]
-		if extra:
-			return "the families " + ", ".join(sorted(extra)) + " are neither mandatory nor allowed"
 		return None
 
 	def checkPhrase(self, p):
@@ -556,7 +599,7 @@ class Generator:
 				self.error(where + ": its first brick " + p.bricks[0] + " is not of a root family, and the first brick chooses the action")
 			why = self.phraseValidity(p)
 			if why:
-				self.error(where + ": the server refuses it at memorize (checkPhraseValidity): " + why)
+				self.error(where + ": the server refuses it at memorize (checkPhraseGrammar, checkPhraseBalance): " + why)
 		if p.usableByPlayer and not p.showInAPOnlyIfLearnt and not re.match(r"^.(bf|bm|bc|bhf|bpp[cmspbiwdl]|bs[fmgxd])", p.name):
 			self.note(where + ": no rolemaster sells it (the name after its first letter has none of the rolemaster prefixes)")
 

@@ -8,7 +8,7 @@
 # every brick makes one power, which checks and sets its own disable time (forbidPower, by POWERS type) or, for an aura,
 # the user's aura disable time and the targets'. SP_RECAST_TIME (the BSXCA credits) is read by the heal power only, so
 # only the self heals pay with a credit; the other powers cost no points and carry their disable time themselves.
-# The grammar still counts at memorize (checkPhraseValidity), and the composer offers what the roots list.
+# The grammar still counts at memorize (checkPhraseGrammar), and the composer offers what the roots list.
 #
 # The client greys a power phrase while the power is disabled, and draws its recast, from the brick flags its bricks
 # name with NEEDED_BRICK_FLAG (client_sheets/sbrick_sheet.cpp, sphrase_manager.cpp getRegenTickRange): the server sets
